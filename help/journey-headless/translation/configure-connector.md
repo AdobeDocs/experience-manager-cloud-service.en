@@ -1,9 +1,10 @@
 ---
 title: Configure the Translation Connector
 description: Learn how to connect AEM to a translation service.
-index: no
-hide: yes
-hidefromtoc: yes
+index: yes
+hide: no
+hidefromtoc: no
+exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 ---
 # Configure the Translation Connector {#configure-connector}
 
