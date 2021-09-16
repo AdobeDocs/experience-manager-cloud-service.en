@@ -11,10 +11,6 @@ Within Adobe Experience Manager as a Cloud Service a content fragment extends a 
 
 * [Managing Assets](/help/assets/manage-digital-assets.md) for further information about standard assets.
 
-<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
-* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
--->
-
 ## Architecture {#architecture}
 
 The basic [constituent parts](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) of a content fragment are:
@@ -128,7 +124,7 @@ Content fragments can be integrated with:
 
 * **Translations**
 
-  Content Fragments are fully integrated with the AEM translation workflow. On an architectural level, this means:
+  Content Fragments are fully integrated with the [AEM translation workflow](/help/sites-cloud/administering/translation/overview.md). On an architectural level, this means:
 
   * The individual translations of a content fragment are actually separate fragments; for example:
 
