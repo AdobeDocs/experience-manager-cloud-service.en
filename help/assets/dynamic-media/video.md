@@ -5,7 +5,7 @@ feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 ---
-# Video{#video}
+# Video {#video}
 
 This section describes working with video in Dynamic Media.
 
@@ -30,7 +30,6 @@ The following step-by-step workflow description is designed to help you get up a
     * Associate the video processing profile to one or more folders where you are going to upload your primary source videos.
 
         * [Apply a video profile to folders](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-        * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
         * Learn more about [Organize digital assets](/help/assets/organize-assets.md).
 
     * Upload your primary source videos to the folders. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
@@ -47,8 +46,6 @@ The following step-by-step workflow description is designed to help you get up a
     * Organize, browse, and search video assets
 
         * [Organize digital assets](/help/assets/organize-assets.md)
-          Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/dynamic-media/best-practices-for-file-management.md)
-
         * [Search video assets](/help/assets/search-assets.md#custompredicates) or [Searching assets](/help/assets/manage-digital-assets.md#search-assets)
 
     * Preview and publish video assets
@@ -57,19 +54,10 @@ The following step-by-step workflow description is designed to help you get up a
           [Preview videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) or [Preview assets](/help/assets/dynamic-media/previewing-assets.md)
           [Manage video renditions](/help/assets/manage-digital-assets.md#managing-renditions)
 
-<!-- Commented video-renditions.md as the file is not published yet and will lead to broken link.
-        * View the source video and encoded renditions of the video along with its associated thumbnails:
-          [Previewing videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
-          [Viewing video renditions](/help/assets/video-renditions.md)
-          [Managing video renditions](/help/assets/manage-digital-assets.md#managing-renditions) -->
-
         * [Manage viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md)
         * [Publishing assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
     * Work with video metadata
-
-<!--      * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:
-          [Viewing video rendition properties](/help/assets/video-renditions.md) -->
 
         * Edit the properties of video such as the title, description, and tags, custom metadata fields:
           [Editing video properties](/help/assets/manage-digital-assets.md#editing-properties)
@@ -83,11 +71,6 @@ The following step-by-step workflow description is designed to help you get up a
 
         * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
         * [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
-
-<!-- Removing assets-workflow.md file link as it is not applicable anymore. Workflows are replaced by processing profiles.
-        * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
-        * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
--->
 
         * [Review folder assets](/help/assets/bulk-approval.md)
         * [Projects](/help/sites-cloud/authoring/projects/overview.md)
@@ -1006,7 +989,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 

@@ -12,8 +12,9 @@ role: Developer, Architect
 + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
 + Using Cloud Manager {#using-cloud-manager}
   + Release Notes for Cloud Manager {#release-notes-cloud-manager}
-    + [Current Release Notes (2021.8.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Current Release Notes (2021.9.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2021 {#2021}
+      + [Release Notes for 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
       + [Release Notes for 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
       + [Release Notes for 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
       + [Release Notes for 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
@@ -49,6 +50,13 @@ role: Developer, Architect
     + [Setting up your Project](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
     + [Understanding the Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
   + [Managing Environments](cloud-manager/manage-environments.md)
+  + Managing your Code {#managing-code}
+    + [Maven Project Version Handling](cloud-manager/managing-code/project-version-handling.md)
+    + [Repositories in Cloud Manager](cloud-manager/managing-code/cloud-manager-repositories.md)
+    + [Accessing Repositories](cloud-manager/managing-code/accessing-repos.md)
+    + [Integrating Git with Adobe Cloud Manager](cloud-manager/managing-code/integrating-with-git.md)
+    + [Working with Multiple Source Git Repositories](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+    + [Enterprise Team Development Setup for AEM as a Cloud Service](cloud-manager/managing-code/enterprise-team-dev-setup.md)
   + [Configuring your CI/CD Pipeline](cloud-manager/configure-pipeline.md)
   + [Deploying your Code](cloud-manager/deploy-code.md)
   + Understanding your Test Results {#test-results}
@@ -88,13 +96,6 @@ role: Developer, Architect
     + [Deleting an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
     + [Checking an IP Allow List Status](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
   + [Cloud Manager FAQs](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
-+ Managing your Code {#managing-code}
-  + [Maven Project Version Handling](cloud-manager/project-version-handling.md)
-  + [Repositories in Cloud Manager](cloud-manager/cloud-manager-repositories.md)
-  + [Accessing Repositories](cloud-manager/accessing-repos.md)
-  + [Integrating Git with Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
-  + [Working with Multiple Source Git Repositories](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
-  + [Enterprise Team Development Setup for AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + Developing for AEM as a Cloud Service {#developing}
   + [AEM Project Structure](developing/introduction/aem-project-content-package-structure.md)
   + [AEM Project Repository Structure Package](developing/introduction/repository-structure-package.md)
@@ -164,7 +165,7 @@ role: Developer, Architect
       + [AEM GraphQL API with Content Fragments - Sample Content and Queries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
       + [Authentication for Remote AEM GraphQL Queries on Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)    
   + Hybrid and SPA AEM Development {#hybrid}
-    + [Hybrid and SPA with AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+    + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
     + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
     + [SPA Introduction and Walkthrough](developing/hybrid/introduction.md)
     + [SPA WKND Tutorial](developing/hybrid/wknd-tutorial.md)

@@ -35,6 +35,7 @@ solution: Experience Manager, Experience Manager as a Cloud Service, Experience 
   + [Metadata profiles](metadata-profiles.md)
   + [Metadata schema](metadata-schemas.md)
   + [Manage video assets](manage-video-assets.md)
+  + [Reuse assets using MSM](reuse-assets-using-msm.md)
   + [Download assets](download-assets-from-aem.md)
   + [Check-in and check-out assets to edit](check-out-and-submit-assets.md)
   + [Digital Rights Management for assets](drm.md)
@@ -52,7 +53,7 @@ solution: Experience Manager, Experience Manager as a Cloud Service, Experience 
   + [Authentication for Remote GraphQL Queries on Content Fragments](content-fragments/graphql-authentication-content-fragments.md)
   + [GraphQL API with Content Fragments - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
   + [Connected Assets](use-assets-across-connected-assets-instances.md)
-  + [Generate FPO renditions for Adobe InDesign](configure-fpo-renditions.md)
+  + [Generate For Placement Only renditions](configure-fpo-renditions.md)
   + [Asset reports](asset-reports.md)
   + [Cascading metadata](cascading-metadata.md)
   + [XMP metadata](xmp-metadata.md)
@@ -61,7 +62,7 @@ solution: Experience Manager, Experience Manager as a Cloud Service, Experience 
 + Share and distribute assets {#brand-portal}
   + [Configure [!DNL Assets] with [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
   + [Publish assets to [!DNL Brand Portal]](publish-to-brand-portal.md)
-  + [Publish assets from [!DNL Brand Portal] to [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
+  + [Publish assets from [!DNL Brand Portal] to [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
 + Content Fragments {#content-fragments}
   + [Working with Content Fragments](content-fragments/content-fragments.md)
   + [Headless Delivery with Content Fragments and GraphQL](content-fragments/content-fragments-graphql.md)
@@ -84,7 +85,6 @@ solution: Experience Manager, Experience Manager as a Cloud Service, Experience 
   + [Accessibility in Dynamic Media](dynamic-media/accessibility-dm.md)
   + [Managing Dynamic Media assets](dynamic-media/managing-assets.md)
   + [Best practices for optimizing the quality of your images](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
-  + [Best practices for file management](dynamic-media/best-practices-for-file-management.md)
   + [Image Profiles](dynamic-media/image-profiles.md)
   + [Video Profiles](dynamic-media/video-profiles.md)
   + [Manage Dynamic Media Image Presets](dynamic-media/managing-image-presets.md)

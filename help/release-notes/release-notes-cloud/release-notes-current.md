@@ -93,7 +93,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
    See [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) for more details.
 
 * Thumbnail Support for videos in now supported in Screens as a Cloud Service. A content author can define a thumbnail for videos so that the image can be used as a placeholder and properly test content playback and targeting, while the actual video is being finalized by the appropriate team. The image can also be used, in case the playback of the video fails.
-   See [Thumbnail Support for Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=en) for more details.
+   See [Thumbnail Support for Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) for more details.
 
 ### Bug Fixes {#bug-fixes-screens}
 
@@ -116,12 +116,35 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ## Cloud Manager {#cloud-manager}
 
-This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.8.0 and 2021.7.0.
+This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.9.0 and 2021.8.0.
+
+## Release Date {#release-date-cm-sept}
+
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.9.0 is September 09, 2021.
+The next release is planned for October 07, 2021.
+
+### What's New {#what-is-new-cm-sept}
+
+* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 30.
+
+* The program cards on Cloud Manager landing page and the associated experience has been refreshed.
+
+* The Code Quality Step Log now includes verbose logging information on the OakPal scanning process.
+
+* The Activity page menu options will now include an option to **Download Log** for completed Code Generator executions. Selecting this will download the log of the build step.
+
+* Clicking directly on the Program card will now navigate to Cloud Manager Overview page.
+
+
+### Bug Fixes {#bug-fixes-sept}
+
+* User will now see a more comprehensible message when trying to add a new IP Allow List in a program that has reached the maximum allowed number of IP Allow Lists that can be configured.
+
+* Wrong URL was copied when selecting the copy URL menu option from Repositories screen. 
 
 ## Release Date {#release-date-cm-aug}
 
 The Release Date for Cloud Manager in AEM as a Cloud Service 2021.8.0 is August 12, 2021.
-The next release is planned for September 09, 2021.
 
 ### What's New {#what-is-new-aug}
 
@@ -163,4 +186,20 @@ The Release Date for Content Transfer Tool v1.5.6 is August 11, 2021.
 * The **Stop Ingestion** button was being disabled during ingestion to the Publish instance. This is not necessary because there is no mongo restore step during Publish ingestion. 
 
 * CTT did not clean up the `/tmp` directory after a successful extraction. This sometimes led to disk space issues. 
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### Release Date {#release-date-bpa-latest}
+
+The Release Date for Best Practices Analyzer v2.1.18 is September 02, 2021.
+
+### What's New {#what-is-new}
+
+* Ability to detect and report on total node count.
+
+* Ability to detect and report on the node store type and size.
+
+### Bug Fixes {#bug-fixes-bpa}
+
+* BPA was falsely detecting presence of Commerce Integration Framework.
 
