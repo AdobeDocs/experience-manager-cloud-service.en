@@ -70,3 +70,10 @@ CIF supports customers with standardized integration patterns based on best prac
   * Need for real-time product data and experiences
 * A growing digital maturity results in a need for experience management. CIF comes with product experience management capabilities that can be incorporated incrementally without additional IT effort.
 * Ready for omnichannel: CIF supports a variety of touchpoint technologies (server-side, hybrid, client-side) with patterns, accelerators and core components.
+
+## Journey
+
+If you are following a Commerce Journey, please go to the next step:
+
+* The [AEM Content Author journey](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+* The [AEM Developer journey](/help/commerce-cloud/commerce-journeys/aem-commerce-developer/getting-started.md)
