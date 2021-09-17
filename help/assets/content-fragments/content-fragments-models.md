@@ -7,6 +7,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 ---
 # Content Fragment Models {#content-fragment-models}
 
+>[!NOTE]
+>
+>The [Locked (Published) Content Fragment Models](#locked-published-content-fragment-models) feature is in beta.
+
 Content Fragment Models in AEM define the structure of content for your [content fragments,](/help/assets/content-fragments/content-fragments.md) serving as a foundation of your headless content.
 
 To use Content Fragment Models you:
@@ -424,6 +428,10 @@ The message will suggest that you check the [References](/help/sites-cloud/autho
 ![Content Fragment Model in References](assets/cfm-model-references.png)
 
 ## Locked (Published) Content Fragment Models {#locked-published-content-fragment-models}
+
+>[!NOTE]
+>
+>The Locked (Published) Content Fragment Models feature is in beta.
 
 This feature provides governance for Content Fragment Models that have been published. 
 
