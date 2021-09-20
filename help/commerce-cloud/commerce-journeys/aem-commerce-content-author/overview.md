@@ -14,9 +14,9 @@ Start here for a guided journey through AEM Content and Commerce to learn how to
 This guide leads you through the most important AEM Content and Commerce authoring topics so that on completion you:
 
 * Learn the AEM Content and Commerce basics
-* Get started with AEM CIF Authoring basics
-* Manage product catalog pages and template
-* Manage product experiences
+* Get started AEM CIF authoring basics
+* Create product catalog experiences with individual templates and content
+* Enrich product data with content using Product Experience Management Tools
 
 ## AEM Documentation Journeys {#documentation-journeys}
 
@@ -32,7 +32,6 @@ This journey is designed for the AEM Commerce content author. This journey lays 
 
 Information in this journey can of course be useful to other personas, but some information will be superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
 
-
 ## The Journey {#the-journey}
 
 You will explore many topics in this journey. The following articles give you foundational knowledge and link out to detailed technical documentation.
@@ -43,12 +42,10 @@ Although you can go directly to a particular part of the journey, many concepts 
 |---|---|---|
 |0|AEM Content and Commerce Developer Journey|This document|
 |1|[Learn about AEM Content and Commerce](/help/commerce-cloud/introduction.md)|Learn concepts and basics about AEM Content and Commerce.|
-|2|[Getting Started with AEM CIF authoring basics](getting-started.md)|Get to know about AEM CIF authoring.|
-|3|[Manage product catalog pages and template](catalog-templates.md)|Get to know how to manage product catalog and templates.|
-|4|[Building Product Experiences](product-experience-management.md)|Learn how to manage product experiences.|
-
+|2|[Getting Started with AEM CIF authoring basics](getting-started.md)|Learn how to access and use product data for your authoring use-cases.|
+|3|[Manage product catalog pages and template](catalog-templates.md)|Learn how to create a typical product catalog experience.|
+|4|[Building Product Experiences](product-experience-management.md)|Get to know how to augment product data with immersive content in AEM.|
 
 ## What's Next {#what-is-next}
 
 You are now ready to get started on your AEM Content and Commerce Developement journey. We encourage you to continue on to the next part of the journey and read the article [Learn about AEM Content and Commerce](/help/commerce-cloud/introduction.md).
-
