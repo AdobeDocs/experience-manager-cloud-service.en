@@ -108,11 +108,23 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ### What is New {#what-is-new-cif}
 
-* New Category Picker UI for improved user experience, increased efficiency and better support for complex product catalog
+* New "associated commerce content" tab in Sites editor increases author efficiency by quickly getting access to relevant AEM  product content for the current context
 
-  ![New Category Picker](/help/assets/CIF/category-picker.png)
+  ![Associated commerce content](/help/assets/CIF/associated-commerce-content.png)
 
-* Better A11Y support for CIF Core Components
+* Improved product picker UI for better user experience, increased efficiency and support for complex product catalog
+
+  ![New Product Picker](/help/assets/CIF/product-picker.png)
+
+* Respect "include_in_menu" property in navigation component
+
+### Bug Fixes {#bug-fixes-cif}
+
+* Menu cache flush is not working as expected
+
+* JS errors during AEM CS deployment step and when not using clientside components
+
+* Cannot create CIF cloud config in folders that have a sling:configs node
 
 ## Cloud Manager {#cloud-manager}
 
