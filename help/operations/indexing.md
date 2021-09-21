@@ -29,7 +29,9 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 1. Customers can see whether the indexing job is complete on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
 
-1. Limitations: currently, index management on AEM as a Cloud Service is only supported for indexes of type lucene.
+1. Limitations:
+* Currently, index management on AEM as a Cloud Service is only supported for indexes of type lucene.
+* Only standard analyzers are supported (that is, those that are shipped with the product). Custom analyzers are not supported.
 
 ## How to Use {#how-to-use}
 
