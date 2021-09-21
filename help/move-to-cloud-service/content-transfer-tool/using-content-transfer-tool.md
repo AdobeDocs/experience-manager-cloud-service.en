@@ -280,6 +280,23 @@ Follow the steps below:
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
 
+
+## Running the Content Transfer Tool on a Publish instance {#running-ctt-on-publish}
+
+It is recommended that while moving content to a Publish instance, CTT be installed on the source Publish instance to move content to the target Publish instance. Follow the recommended approach as described below:
+
+* Use the same version of the CTT which was used on the Author instance.
+
+* Only a single publish node needs to be migrated. It should be removed from the load balancer prior to beginning the extraction.
+
+* When creating the migration set, use the URL of the author AEMaaCS environment.
+
+* During ingestion to publish, the publish tier will NOT be scaled down (unlike the author). As a precaution, please avoid any user initiated write operations such as:
+
+  * Content distribution from AEMaaCS Author to Publish in that environment
+  * User Sync between publish instances
+
+
 ## Troubleshooting {#troubleshooting}
 
 ### Missing Blob IDs {#missing-blobs}

@@ -202,3 +202,12 @@ If an index is to be removed in a later version of the application, you can defi
 ```
 
 If it is no longer needed to have a customization of an out-of-the-box index, then you must copy the out-of-the-box index definition. For example, if you have already deployed `damAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetLucene-8` index, then you must add an index `damAssetLucene-8-custom-4` that contains the index definition of `damAssetLucene-8`.
+
+## Index optimizations
+
+Apache Jackrabbit Oak enables flexible index configurations to efficiently handle search queries. Indexes are especially important for larger repositories. Non-optimized indexes and fallback indexes should be avoided as much as possible. Please ensure that all queries are backed by an appropriate index. Queries without a suitable index may read thousands of nodes, which is then logged as a warning. Such queries should be identified by analysing the log files, so that index definitions can be optimized. Please see [this page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) for more information.
+
+### Lucene full text index on AEM as a Cloud Service
+
+The fulltext index `/oak:index/lucene-2` can become very large because it indexes all the nodes in the AEM repository by default. The Lucene full-text index has been internally deprecated and will no longer be deployed in AEM as a Cloud Service from September 2021. As such, it is no longer used on the product side in AEM as a Cloud Service and it should not be required to run customer code. For AEM as a Cloud Service environments with common Lucene Indexes, Adobe is working with customers individually for a coordinated approach to compensate for this index and to use better, optimized indexes. If this index is required for custom queries, as a temporary solution, a copy of this index should be created, using a different name, for example, `/oak:index/acme.lucene-1-custom-1`, as described [here](/help/operations/indexing.md).
+This optimization does not apply to other AEM environments, which are hosted on-premise or managed by Adobe Managed Services, unless otherwise advised by Adobe.
