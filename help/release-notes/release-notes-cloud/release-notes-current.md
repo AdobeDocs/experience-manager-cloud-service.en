@@ -52,6 +52,12 @@ Have a look at the [August 2021 Release Overview](https://video.tv.adobe.com/v/3
 * When a member of the contributor group navigates to the [!DNL Assets] Console, an extra `POST` request is generated to try and create a Collection. This request is not required, it fails due to permissions issues, and creates a lot of errors in the logs. (CQ-4328856)
 * When users view an asset and select the [!UICONTROL Timeline] from the popup menu in the left panel, an error is displayed. In the logs, many warnings are logged due to a bad query. (CQ-4328919)
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### New feature in the [!DNL Sites] prerelease channel {#sites-prerelease-features}
+
+* Content Fragment models are now automatically set in read-only state once they are published, to avoid unintentially breaking live API queries after re-publishing an edited model. Users are prompted with a warning when attempting to edit a published model. Editing is possible upon accepting the warning. 
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}
