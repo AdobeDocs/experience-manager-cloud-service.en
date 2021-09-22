@@ -33,9 +33,24 @@ Follow the steps below to view and manage repositories in Cloud Manager:
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-1. You can select the repository and click on the menu options from the far right of the table to **Copy Repository URL**, **View & Update** or **Delete** your repository, as shown in the  figure below.
+1. You can select the repository and click on the menu options from the far right of the table to **Copy Repository URL** or **View & Update** or **Delete** your repository, as shown in the  figure below.
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+
+## Deleting a Repository {#delete-repo}
+
+Follow the steps below to delete a repository in Cloud Manager:
+>[!NOTE]
+>Deleting a repository will:
+>1. Make the deleted repository name unusable for new repositories that may be created in the future. An error message as shown below will be seen in this case:
+>*Repository name should be unique within organization.*
+>1. Make the deleted repository unavailable in Cloud Manager and therefore, cannot be linked to a pipeline.
+
+1. From the **Program Overview** page, click on **Repositories** tab and navigate to the **Repositories** page.
+
+1. Select the repository and click on the menu options from the far right of the table. Click on **Delete** to delete the repository, as shown in the  figure below.
+
+   ![](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 
 ## Git Submodule Support {#git-submodule-support}
