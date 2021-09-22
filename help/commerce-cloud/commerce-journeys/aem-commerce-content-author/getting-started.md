@@ -65,16 +65,16 @@ From the main menu, click on commerce to see a list of all attached product cata
 ![commerce menu item](assets/commerce-menu-item.png)
 
 This shows a list of all connect product catalogs. More information on how to [configuring stores and catalogs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=en#catalog)
-![commerce menu item](assets/cockpit-Integrated-catalogs.png)
+![cockpit integrated catalogs](assets/cockpit-Integrated-catalogs.png)
 
 The product catalog shows per default all 1st level categories with all products. Clicking on a category will open that category with all related products and sub categories including their products.
-![commerce menu item](assets/cockpit-Integrated-catalogs.png)
+![cockpit product catalog](assets/cockpit-product-catalog.png)
 
 You can open the product properties by clicking on the property icon. The icon appears by hovering over a product tile.
-![commerce menu item](assets/cockpit-properties.png)
+![cockpit product properties](assets/cockpit-properties.png)
 
 All the product properties are read-only because the data gets loaded in real-time from the connected backend. Changing product properties need to be done in the backend system which is the system of record. The tab 'Variants' will only appear if the product has variations. Clicking on the tab will display all variations with its attributes.
-![commerce menu item](assets/cockpit-properties-variants.png)
+![cockpit product variants](assets/cockpit-properties-variants.png)
 
 The remaining tabs show all AEM content that is associated with the product. We will discuss these tabs in one of the next modules.
 
