@@ -43,7 +43,7 @@ Follow the steps below to delete a repository in Cloud Manager:
 >[!NOTE]
 >Deleting a repository will:
 >1. Make the deleted repository name unusable for new repositories that may be created in the future. An error message as shown below will be seen in this case:
-*Repository name should be unique within organization.*
+>*Repository name should be unique within organization.*
 >1. Make the deleted repository unavailable in Cloud Manager and therefore, cannot be linked to a pipeline.
 
 1. From the **Program Overview** page, click on **Repositories** tab and navigate to the **Repositories** page.
