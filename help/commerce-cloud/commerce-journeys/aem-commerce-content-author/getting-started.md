@@ -27,8 +27,6 @@ This document helps you understand how to use CIF for Content and Commerce speci
 
 CIF extends the Universal Editor with capabilities to access the real-time product data without leaving the context:
 
-### Using product data in the side panel
-
 Open the side panel and select 'Products' from the dropdown.
 ![Select product type](assets/asset-finder-overview.png)
 
@@ -37,7 +35,7 @@ You can  browse the product catalog or use the full-text search field to find pr
 
 Products can be droppen on components that support product drops (example product teaser, product carousel) on directly on the page which automatically creates a product teaser component.
 
-### Product & Category pickers
+## Product & Category pickers
 
 If product and category data is required in commerce components or AEM back-office dialogs, AEM authors can use pickers which are UI elements to comfortably search and select product catalog data.
 
@@ -58,6 +56,34 @@ Works like a product picker. Clicking on the folder icon will open picker modal 
 
 Browse the catalog structure on the left and select the category.
 ![category picker](assets/category-picker-folders.png)
+
+## Product cockpit
+
+The product cockpit is a central place to quickly access product catalog with all its enriched content. You will learn in one of the next modules how to enrich product data with content. For now, let's focus on accessing product data.
+
+From the main menu, click on commerce to see a list of all attached product catalogs.
+![commerce menu item](assets/commerce-menu-item.png)
+
+This shows a list of all connect product catalogs. More information on how to [configuring stores and catalogs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=en#catalog)
+![commerce menu item](assets/cockpit-Integrated-catalogs.png)
+
+The product catalog shows per default all 1st level categories with all products. Clicking on a category will open that category with all related products and sub categories including their products.
+![commerce menu item](assets/cockpit-Integrated-catalogs.png)
+
+You can open the product properties by clicking on the property icon. The icon appears by hovering over a product tile.
+![commerce menu item](assets/cockpit-properties.png)
+
+All the product properties are read-only because the data gets loaded in real-time from the connected backend. Changing product properties need to be done in the backend system which is the system of record. The tab 'Variants' will only appear if the product has variations. Clicking on the tab will display all variations with its attributes.
+![commerce menu item](assets/cockpit-properties-variants.png)
+
+The remaining tabs show all AEM content that is associated with the product. We will discuss these tabs in one of the next modules.
+
+## AEM Omnisearch
+
+Using Omnisearch is an easy way to find AEM content using full-text search. CIF extends Omnisearch with full-text search of product catalogs with its associated AEM content.
+![commerce menu item](assets/omnisearch.png)
+
+Omnisearch will run a full-text search in the commerce backend to find all related products. The result is listed under "View All Products". Omnisearch will also search AEM for content that is associated to the searched product. The results will be listed under the respective AEM categories. In this example, one Content Fragment is related to the product.
 
 ## What's Next {#what-is-next}
 
