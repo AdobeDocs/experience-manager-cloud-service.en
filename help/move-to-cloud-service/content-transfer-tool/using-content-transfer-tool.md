@@ -212,7 +212,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
    >[!IMPORTANT]
    >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
    Additionally, click on **Customer Care** to log a ticket, as shown in the figure above. Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) to learn more.
 
