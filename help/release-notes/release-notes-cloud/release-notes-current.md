@@ -52,6 +52,12 @@ Have a look at the [August 2021 Release Overview](https://video.tv.adobe.com/v/3
 * When a member of the contributor group navigates to the [!DNL Assets] Console, an extra `POST` request is generated to try and create a Collection. This request is not required, it fails due to permissions issues, and creates a lot of errors in the logs. (CQ-4328856)
 * When users view an asset and select the [!UICONTROL Timeline] from the popup menu in the left panel, an error is displayed. In the logs, many warnings are logged due to a bad query. (CQ-4328919)
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### New feature in the [!DNL Sites] prerelease channel {#sites-prerelease-features}
+
+* Content Fragment models are now automatically set in read-only state once they are published, to avoid unintentially breaking live API queries after re-publishing an edited model. Users are prompted with a warning when attempting to edit a published model. Editing is possible upon accepting the warning. 
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}
@@ -108,11 +114,23 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ### What is New {#what-is-new-cif}
 
-* New Category Picker UI for improved user experience, increased efficiency and better support for complex product catalog
+* New "associated commerce content" tab in Sites editor increases author efficiency by quickly getting access to relevant AEM  product content for the current context
 
-  ![New Category Picker](/help/assets/CIF/category-picker.png)
+  ![Associated commerce content](/help/assets/CIF/associated-commerce-content.png)
 
-* Better A11Y support for CIF Core Components
+* Improved product picker UI for better user experience, increased efficiency and support for complex product catalog
+
+  ![New Product Picker](/help/assets/CIF/product-picker.png)
+
+* Respect "include_in_menu" property in navigation component
+
+### Bug Fixes {#bug-fixes-cif}
+
+* Menu cache flush is not working as expected
+
+* JS errors during AEM CS deployment step and when not using clientside components
+
+* Cannot create CIF cloud config in folders that have a sling:configs node
 
 ## Cloud Manager {#cloud-manager}
 
