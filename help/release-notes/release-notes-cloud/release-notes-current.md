@@ -26,6 +26,20 @@ The following release (2021.10.0) is on October 28, 2021.
 
 Have a look at the [August 2021 Release Overview](https://video.tv.adobe.com/v/336277) video for a summary of the features added.
 
+## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
+
+### New features in [!DNL Experience Manager as a Cloud Service] {foundation-features}
+
+**Advanced Networking**
+
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] now offers several types of advanced networking capabilities, including:
+
+* Flexible Port egress to egress traffic out of non-standard ports. Now possible without contacting Adobe Support.
+* Dedicated egress IP address to egress traffic out of AEM as a Cloud Service from a unique IP, now supporting all ports.
+* VPN to secure traffic between your infrastructure and AEM as a Cloud Service.
+
+Read the [documentation](/help/security/configuring-advanced-networking.md) for more information, including how to self serve provision advanced networking using Cloud Manager APIs. 
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
