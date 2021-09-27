@@ -185,7 +185,7 @@ This corresponds to any of:
 * Egress traffic with a host name in Adobe's network. For example, connections to another Adobe product
 * Egress traffic with a host name in Azure.
 
-<span style="text-decoration: underline">**Custom Code**</ins>
+<span style="text-decoration: underline">**Custom Code**</span>
 
 Http/s protocol traffic sent out via custom code that respects standard Java proxy settings will automatically route through the private network as VPN traffic.
 
@@ -237,7 +237,7 @@ ProxyPass "/somepath" "https://example.com"
 ProxyPassReverse "/somepath" "https://example.com"
 ```
 
-<span style="text-decoration: underline">**Locking Down AEM to Traffic Ingressing Through VPN Only**</ins>
+<span style="text-decoration: underline">**Locking Down AEM to Traffic Ingressing Through VPN Only**</span>
 
 If you want to allow only VPN access to AEM, environment allowlists can be configured in Cloud Manager so only the IP defined by `p{PROGRAM_ID}.external.adobeaemcloud.com` is allowed to talk to the environment. This can be done the same way as any other IP-based allowlist in Cloud Manager.
 
