@@ -28,7 +28,7 @@ Have a look at the [August 2021 Release Overview](https://video.tv.adobe.com/v/3
 
 ## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
-### New features in [!DNL Experience Manager as a Cloud Service] {foundation-features}
+### New features in [!DNL Experience Manager as a Cloud Service] {#foundation-features}
 
 **Advanced Networking**
 
