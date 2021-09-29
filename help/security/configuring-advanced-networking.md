@@ -141,6 +141,34 @@ It also allows Connecting to SaaS vendors such as a CRM vendor that supports VPN
 
 Most VPN devices with IPSec technology are supported. Consult the list of devices at [this page](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable), based on the information in the **RouteBased configuration instructions** column. Configure the device as described in the table.
 
+### Creation {#vpn-creation}
+
+Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked, passing in a payload of configuration information including: the value of "vpn" for the `kind` parameter, region, address space (list of CIDRs - note that this cannot be modified later), DNS resolvers (for resolving names in the customer's network), and VPN connection information such as gateway configuration, shared VPN key, and the IP Security policy. The endpoint responds with the `network_id`, as well as other information including the status. The full set of parameters and exact syntax should be referenced in the API documentation.
+
+Once called, it will typically take between 45 and 60 minutes for the networking infrastructure to be provisioned. The API's GET method can be called to return the current status, which will eventually flip from `creating` to `ready`. Consult the API documentation for all states).
+
+If the program-scoped VPN configuration in ready, the PUT `/program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint must be invoked per environment to enable networking at the environment level and to declare any routing rules. Parameters are configurable per environment in order to offer flexibility. For example, the production environment may route to a data store on a different IP address than the dev or staging environments.
+
+Routing rules should be declared for any non-http/s protocol TCP traffic that should be routed through the VPN by specifying the set of destination hosts (names or IP, and with ports). For each destination host, customers must map the intended destination port to a port from 50000 to 59999, where the values must be unique across environments in the program. Customers can also list a set of url in the `nonProxyHosts` parameter, which declares URL for which traffic should bypass VPN routing, but instead through a shared IP range. It follows the patterns of `example.com` or `*.example.com`, where the wildcard is only supported at the start of the domain.
+
+The API should respond in just a few seconds, indicating a status of `updating` and after about 10 minutes, a call to the Cloud Manager's environment GET endpoint would show a status of `ready`, indicating that the update to the environment has been applied.
+
+Note that the even if there's no environment traffic routing rules (hosts or bypasses), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` must still be called, just with an empty payload.
+
+### Updating the VPN {#updating-the-vpn}
+
+The program-level VPN configuration can be updated by invoking the `PUT /api/program/<program_id>/network/<network_id>` endpoint.
+
+Note that the address space cannot be changed after the initial VPN provisioning. If this is necessary, contact customer support. In addition, the `kind` parameter (like `VPN` or `dedicatedEgressIP`) cannot be modified. Contact customer support for assistance, describing what has already been created and the reason for the change.
+
+The per-environment routing rules can be updated by again invoking the `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` endpoint, making sure to include the full set of configuration parameter, rather than a subset.
+
+### Deleting or Disabling the VPN {#deleting-or-disabling-the-vpn}
+
+To delete the network infrastructure, submit a customer support ticket, describing what has been created and why it needs to be deleted.
+
+To disable VPN for a particular environment, invoke `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`.
+
 ### General Considerations {#general-vpn-considerations}
 
 * Support is limited to a single VPN connection
@@ -253,3 +281,55 @@ Deny from all
 Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
+
+## Transitioning Between Advanced Networking Types {#transitioning-between-advanced-networking-types}
+
+Since the `kind` parameter parameter cannot be modified, please contact customer support for assistance, describing what has already been created and the reason for the change. 
+
+>[!NOTE]
+>
+>Customers can choose either VPN or dedicated egress IP address, but not both.
+
+## Email {#email}
+
+### Sending Email {#sending-email}
+
+AEM as a Cloud Service requires outbound mail to be encrypted. The sections below describe how to request, configure, and send email.
+
+>[!NOTE]
+>
+>The Mail Service can be configured with OAuth2 support. For more information, see [OAuth2 Support for the Mail Service](/help/security/oauth2-support-for-mail-service.md).
+
+**Enabling Outbound Email**
+
+By default, outbound email is disabled. To activate it, configure advanced networking link, making sure to set for each needed environment the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint's routing rules so traffic can go through port 465 (if supported by the mail server) or port 587 (if the mail server requires it and also enforces TLS on that port).
+
+It is recommended to configure advanced networking with a `kind` parameter set to `flexiblePortEgress` since Adobe can optimize performance of the flexible port egress' traffic. If a unique egress IP address is necessary, choose a `kind` parameter of `dedicatedEgressIp`. If you have already configured VPN for other reasons, you can use the unique IP address provided by that advanced networking variation as well.
+
+You must send email through a mail server rather than directly to email clients.
+
+**Sending Emails**
+
+The Day [CQ Mail Service OSGI service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=en#configuring-the-mail-service) should be used and emails must be sent to the mail server indicated in the support request rather than directly to recipients.
+
+>[!NOTE]
+>
+>AEM as a Cloud Service requires mail to be sent out through port 465. If a mail server does not support port 465, port 587 can be used, as long as the TLS option is enabled.
+
+**Configuration**
+
+E-mails in AEM should be sent using the [Day CQ Mail Service OSGi service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=en#configuring-the-mail-service).
+
+See the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) for details around configuring email settings. For AEM as a Cloud Service, the following adjustments must be made to `the com.day.cq.mailer.DefaultMailService` OSGI service:
+
+If port 465 has been requested:
+
+* set `smtp.port` to `465`
+* set `smtp.ssl` to `true`
+
+If port 587 has been requested (only allowed if the mail server does not support port 465):
+
+* set `smtp.port` to `587`
+* set `smtp.ssl` to `false`
+
+The `smtp.starttls` property will automatically be set by AEM as a Cloud Service at runtime to an appropriate value. Thus, if `smtp.tls` is set to `true`, `smtp.startls` is ignored. If `smtp.ssl` is set to `false`, `smtp.starttls` is set to `true`. This is regardless of the `smtp.starttls` values set in your OSGI configuration.
