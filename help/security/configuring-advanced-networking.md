@@ -31,7 +31,7 @@ This advanced networking feature allows you to configure AEM as a Cloud Service 
 
 Flexible port egress is the recommended choice if you don't need VPN and don't need a dedicated egress IP address since traffic that doesn't rely on a dedicated egress can achieve higher throughput.
 
-### Configuring the Provision {#configuring-flexible-port-egress-provision}
+### Configuration {#configuring-flexible-port-egress-provision}
 
 Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked, simply passing the value of `flexiblePortEgress` for the `kind` parameter and region. The endpoint responds with the `network_id`, as well as other information including the status. The full set of parameters and exact syntax should be referenced in the API docs.
 
@@ -43,7 +43,7 @@ Routing rules should be declared for any ports other than 80/443 by specifying t
 
 The API should respond in just a few seconds, indicating a status of updating and after about 10 minutes, the endpoint's `GET` method should indicate that advanced networking is enabled.
 
-### Updating the Provision {#updating-flexible-port-egress-provision}
+### Updates {#updating-flexible-port-egress-provision}
 
 The program level configuration can be updated by invoking the `PUT /api/program/<program_id>/network/<network_id>` endpoint.
 
@@ -53,7 +53,7 @@ The program level configuration can be updated by invoking the `PUT /api/program
 
 The per environment routing rules can be updated by again invoking the `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` endpoint, making sure to include the full set of configuration parameters, rather than a subset.
 
-### Deleting or Disabling the Provision {#deleting-disabling-flexible-port-egress-provision}
+### Deleting or Disabling Flexible Port Egress {#deleting-disabling-flexible-port-egress-provision}
 
 In order to **delete** the network infrastructure, submit a customer support ticket, describing what has been created and why it needs to be deleted.
 
@@ -63,9 +63,9 @@ In order to **disable** flexible port egress from a particular environment, invo
 
 >[!NOTE]
 >
->If you have been provisioned with a dedicated egress IP before 2021.09.30, please reference the [Legacy Dedicated Egress Address Customers](#legacy-dedicated-egress-address-customers).
+>If you have been provisioned with a dedicated egress IP before the September 2021 release (10/4/21), please reference the [Legacy Dedicated Egress Address Customers](#legacy-dedicated-egress-address-customers).
 
-Upon request, AEM as a Cloud Service will provision a static, dedicated, IP address for HTTP (port 80) and HTTPS (port 443) outbound traffic programmed in Java code. 
+<!-- Upon request, AEM as a Cloud Service will provision a static, dedicated, IP address for HTTP (port 80) and HTTPS (port 443) outbound traffic programmed in Java code. -->
 
 ### Benefits {#benefits}
 
@@ -73,7 +73,7 @@ This dedicated IP address can enhance security when integrating with SaaS vendor
 
 Without the dedicated IP address feature enabled, traffic coming out of AEM as a Cloud Service flows through a set of IPs shared with other customers.
 
-### Configuring the Provision {#configuring-dedicated-egress-provision}
+### Configuration {#configuring-dedicated-egress-provision}
 
 Configuring dedicated egress IP address is identical to [flexible port egress](#configuring-flexible-port-egress-provision).
 
@@ -83,7 +83,7 @@ When deciding between flexible port egress and dedicated egress IP address, cust
 
 ## Legacy Dedicated Egress Address Customers {#legacy-dedicated-egress-address-customers}
 
-To enable a dedicated IP address, submit a request to Customer Support, who will provide the IP address information. The request should specify each environment and additional requests should be made if new environments need the feature after the initial request. Sandbox program environments are not supported.
+If you have been provisioned with a dedicated egress IP before 2021.09.30, your dedicated egress IP feature will work as described below.
 
 ### Feature Usage {#feature-usage}
 
