@@ -24,7 +24,7 @@ The following release (2021.10.0) is on October 28, 2021.
 
 ## Release Video {#release-video}
 
-Have a look at the [August 2021 Release Overview](https://video.tv.adobe.com/v/336277) video for a summary of the features added.
+Have a look at the [September 2021 Release Overview](https://video.tv.adobe.com/v/336277) video for a summary of the features added.
 
 ## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
@@ -115,7 +115,6 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 * Associated tag entries were not removed when removing playlist(s).
 
-
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
@@ -159,57 +158,11 @@ The next release is planned for October 07, 2021.
 
 * Clicking directly on the Program card will now navigate to Cloud Manager Overview page.
 
-
 ### Bug Fixes {#bug-fixes-sept}
 
 * User will now see a more comprehensible message when trying to add a new IP Allow List in a program that has reached the maximum allowed number of IP Allow Lists that can be configured.
 
 * Wrong URL was copied when selecting the copy URL menu option from Repositories screen. 
-
-## Release Date {#release-date-cm-aug}
-
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.8.0 is August 12, 2021.
-
-### What's New {#what-is-new-aug}
-
-* Cloud Service customers can now view Service Level Agreement (SLA) reports in Cloud Manager. This will be made available progressively over the next few months.
-   See [SLA Reporting](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) to learn more.
-
-* The type and severity of the IndexType and `IndexDamAssetLucene` quality rules has been changed. These are now both Bugs of Blocker *serverity*.
-
-* New Oak index quality rules have been introduced to cover asynchronous and tika configurations.
-
-* Increase max SSL certs per program to 50.
-
-* Self-service capability to allow users to create and manage multiple repositories via Cloud Manager UI.
-
-* SonarQube was unnecessarily reading Git history data. On large code bases, this could lead to an unnecessary build performance penalty.
-
-* There is now an API available to invalidate the Maven dependency cache per pipeline.
- 
-* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 29. 
-
-### Bug Fixes {#bug-fixes-aug}
-
-* Update Available status should not be displayed when the latest release is less than the current release.
-
-* Initial onboarding was failing for new organizations with very long names.
-
-* Occasionally, when a pipeline is triggered twice for some reason, it results in one of the executions failing with *cannot update pipeline execution status* error. 
-
-## Content Transfer Tool {#content-transfer-tool}
-
-### Release Date {#release-date-ctt-latest}
-
-The Release Date for Content Transfer Tool v1.5.6 is August 11, 2021.
-
-### Bug Fixes {#bug-fixes-ctt}
-
-* In some cases not all users were migrated to the target instance. To get this fix CTT v1.5.6 is required along with aem-ethos-tools 1.2.354 or later version on the target AEM as a Cloud Service instance.
-
-* The **Stop Ingestion** button was being disabled during ingestion to the Publish instance. This is not necessary because there is no mongo restore step during Publish ingestion. 
-
-* CTT did not clean up the `/tmp` directory after a successful extraction. This sometimes led to disk space issues. 
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
@@ -226,4 +179,3 @@ The Release Date for Best Practices Analyzer v2.1.18 is September 02, 2021.
 ### Bug Fixes {#bug-fixes-bpa}
 
 * BPA was falsely detecting presence of Commerce Integration Framework.
-
