@@ -40,6 +40,12 @@ Have a look at the [September 2021 Release Overview](https://video.tv.adobe.com/
 
 Read the [documentation](/help/security/configuring-advanced-networking.md) for more information, including how to self serve provision advanced networking using Cloud Manager APIs. 
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### New feature in the [!DNL Sites] prerelease channel {#sites-prerelease-features}
+
+* Content Fragment models are now automatically set in read-only state once they are published, to avoid unintentially breaking live API queries after re-publishing an edited model. Users are prompted with a warning when attempting to edit a published model. Editing is possible upon accepting the warning. 
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
@@ -66,12 +72,6 @@ Read the [documentation](/help/security/configuring-advanced-networking.md) for 
 * When a member of the contributor group navigates to the [!DNL Assets] Console, an extra `POST` request is generated to try and create a Collection. This request is not required, it fails due to permissions issues, and creates a lot of errors in the logs. (CQ-4328856)
 * When users view an asset and select the [!UICONTROL Timeline] from the popup menu in the left panel, an error is displayed. In the logs, many warnings are logged due to a bad query. (CQ-4328919)
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### New feature in the [!DNL Sites] prerelease channel {#sites-prerelease-features}
-
-* Content Fragment models are now automatically set in read-only state once they are published, to avoid unintentially breaking live API queries after re-publishing an edited model. Users are prompted with a warning when attempting to edit a published model. Editing is possible upon accepting the warning. 
-
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### What is new in [!DNL Forms] {#what-is-new-forms-sep-2021}
@@ -97,24 +97,6 @@ Read the [documentation](/help/security/configuring-advanced-networking.md) for 
 
 You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
-## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens} 
-
-### What is New {#what-is-new-screens}
-
-* Screens as a Cloud Service now supports basic playback monitoring. The player will now report various playback metrics with each ping (defaults to 30 seconds). Based on the metrics, it provides the ability to detect various edge cases (stuck experience, blank screen, scheduling problem, etc.). This feature allows the team to remotely monitor if a player is properly playing content, improves reactivity to blank screens or broken experiences in the field, and decreases the risk of showing a broken experience to the end user.
-   See [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) for more details.
-
-* Thumbnail Support for videos in now supported in Screens as a Cloud Service. A content author can define a thumbnail for videos so that the image can be used as a placeholder and properly test content playback and targeting, while the actual video is being finalized by the appropriate team. The image can also be used, in case the playback of the video fails.
-   See [Thumbnail Support for Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) for more details.
-
-### Bug Fixes {#bug-fixes-screens}
-
-* Player could not show content from Embedded page and this issue is now fixed.
-
-* After a successful login, navigating to the default page (channels) ended up in a Internal Server Error page.
-
-* Associated tag entries were not removed when removing playlist(s).
-
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
@@ -136,6 +118,24 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 * JS errors during AEM CS deployment step and when not using clientside components
 
 * Cannot create CIF cloud config in folders that have a sling:configs node
+
+## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens} 
+
+### What is New {#what-is-new-screens}
+
+* Screens as a Cloud Service now supports basic playback monitoring. The player will now report various playback metrics with each ping (defaults to 30 seconds). Based on the metrics, it provides the ability to detect various edge cases (stuck experience, blank screen, scheduling problem, etc.). This feature allows the team to remotely monitor if a player is properly playing content, improves reactivity to blank screens or broken experiences in the field, and decreases the risk of showing a broken experience to the end user.
+   See [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) for more details.
+
+* Thumbnail Support for videos in now supported in Screens as a Cloud Service. A content author can define a thumbnail for videos so that the image can be used as a placeholder and properly test content playback and targeting, while the actual video is being finalized by the appropriate team. The image can also be used, in case the playback of the video fails.
+   See [Thumbnail Support for Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) for more details.
+
+### Bug Fixes {#bug-fixes-screens}
+
+* Player could not show content from Embedded page and this issue is now fixed.
+
+* After a successful login, navigating to the default page (channels) ended up in a Internal Server Error page.
+
+* Associated tag entries were not removed when removing playlist(s).
 
 ## Cloud Manager {#cloud-manager}
 
