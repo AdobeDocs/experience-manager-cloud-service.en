@@ -47,7 +47,7 @@ The API should respond in just a few seconds, indicating a status of updating an
 
 The program level configuration can be updated by invoking the `PUT /api/program/<program_id>/network/<network_id>` endpoint.
 
->[NOTE!]
+>[!NOTE]
 >
 > The "kind" parameter (VPN, dedicatedEgressIP) cannot be modified. Contact customer support for assistance, describing what has already been created and the reason for the change.
 
