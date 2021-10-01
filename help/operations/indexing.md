@@ -213,3 +213,9 @@ Apache Jackrabbit Oak enables flexible index configurations to efficiently handl
 
 The fulltext index `/oak:index/lucene-2` can become very large because it indexes all the nodes in the AEM repository by default. The Lucene full-text index has been internally deprecated and will no longer be deployed in AEM as a Cloud Service from September 2021. As such, it is no longer used on the product side in AEM as a Cloud Service and it should not be required to run customer code. For AEM as a Cloud Service environments with common Lucene Indexes, Adobe is working with customers individually for a coordinated approach to compensate for this index and to use better, optimized indexes. If this index is required for custom queries, as a temporary solution, a copy of this index should be created, using a different name, for example, `/oak:index/acme.lucene-1-custom-1`, as described [here](/help/operations/indexing.md).
 This optimization does not apply to other AEM environments, which are hosted on-premise or managed by Adobe Managed Services, unless otherwise advised by Adobe.
+
+## Query optimizations
+
+The "Query Performance" tool allows you to observe both popular and slow JCR queries. Additionally it is able to analyze queries and display various information about, most notably if an index is being used for this query or not.
+
+Unlike in AEM6, AEM as a Cloud Service does not display the "Query Performance" tool in the UI anymore. Instead it is now available via the Developer Console (in Cloud Manager) in the tab "Queries".
