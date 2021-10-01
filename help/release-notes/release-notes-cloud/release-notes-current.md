@@ -24,7 +24,7 @@ The following release (2021.10.0) is on October 28, 2021.
 
 ## Release Video {#release-video}
 
-Have a look at the [September 2021 Release Overview](https://video.tv.adobe.com/v/336277) video for a summary of the features added.
+Have a look at the [September 2021 Release Overview](https://video.tv.adobe.com/v/337381) video for a summary of the features added.
 
 ## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
