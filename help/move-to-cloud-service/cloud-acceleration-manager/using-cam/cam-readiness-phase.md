@@ -48,6 +48,9 @@ Follow the steps below to use Best Practices Analysis card:
 1. Click on **Upload new report** to upload BPA report in CAM.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
+   
+   >[!IMPORTANT]
+   >Report cannot be uploaded if you are in the browser's Incognito mode.
 
 1. Once you have uploaded a new report, you will see the Best Practices Analysis report.
 
