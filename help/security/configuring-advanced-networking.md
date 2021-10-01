@@ -290,7 +290,7 @@ Since the `kind` parameter parameter cannot be modified, please contact customer
 >
 >Customers can choose either VPN or dedicated egress IP address, but not both.
 
-## Email {#email}
+<!-- ## Email {#email}
 
 ### Sending Email {#sending-email}
 
@@ -332,4 +332,4 @@ If port 587 has been requested (only allowed if the mail server does not support
 * set `smtp.port` to `587`
 * set `smtp.ssl` to `false`
 
-The `smtp.starttls` property will automatically be set by AEM as a Cloud Service at runtime to an appropriate value. Thus, if `smtp.tls` is set to `true`, `smtp.startls` is ignored. If `smtp.ssl` is set to `false`, `smtp.starttls` is set to `true`. This is regardless of the `smtp.starttls` values set in your OSGI configuration.
+The `smtp.starttls` property will automatically be set by AEM as a Cloud Service at runtime to an appropriate value. Thus, if `smtp.tls` is set to `true`, `smtp.startls` is ignored. If `smtp.ssl` is set to `false`, `smtp.starttls` is set to `true`. This is regardless of the `smtp.starttls` values set in your OSGI configuration. -->
