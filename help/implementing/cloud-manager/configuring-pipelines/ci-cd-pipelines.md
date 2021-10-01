@@ -8,8 +8,8 @@ index: no
 
 In Cloud Manager, there are two types of Pipeline:
 
-* **Production Pipeline**
-* **Non-Production Pipeline**
+* [Production Pipeline](#prod-pipeline)
+* [Non-Production Pipeline](#non-prod-pipeline)
 
 ## Production Pipeline {#prod-pipeline}
 
