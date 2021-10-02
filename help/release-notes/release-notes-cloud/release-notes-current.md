@@ -57,14 +57,17 @@ Read the [documentation](/help/security/configuring-advanced-networking.md) for 
 
 * To programmatically invoke processing using asset microservices, a new API is introduced. Developers can now apply an existing folder-level processing profile on one or more specific assets in a folder. The processing profile gets applied based on custom metadata properties updates. See `AssetProcessor` in the [[!DNL Experience Manager] API reference](https://www.adobe.io/experience-manager/reference-materials/). As before, it is possible to [use asset microservices from the user interface](/help/assets/asset-microservices-configure-and-use.md).
 
-<!-- TBD:
+<!-- Leave this commented.
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
+Apparently, no new Assets features in Sep beta channel.
+A/V transcription feature via CQ-4303854 has moved to Oct beta now.
 
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
-Mention CQ-4328183 if engineering confirms it is worth mentioning.
+No customer-reported bugs fixed in Sep release.
+CQ-4328183 was not reported on CS so not documented here.
 -->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
