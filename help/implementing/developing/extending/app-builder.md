@@ -9,18 +9,33 @@ description: Extending [!DNL Adobe Experience Manager] as a Cloud Service using 
 
 The new Adobe Developer App Builder provides an extensibility framework for a developer to easily extend AEM as a Cloud Service functionalities. 
 
-App Builder helps customers work within their existing infrastructure to build integrations and custom applications that work seamlessly with AEM. With a modern, cloud-native technology stack, App Builder provides a set of APIs to extend AEM, into customers’ existing infrastructure and apply unique parameters to make the UI look and feel unique for their organizations.
+App Builder provides a unified third-party extensibility framework for integrating and creating custom experiences that extend Adobe Experience Manager. With this complete extensibility framework, built on Adobe's infrastructure, developers can build custom microservices, extend, and integrate Adobe Experience Manager across Adobe solutions and the rest of the IT stack.
+App Builder provides a way for customers to easily extend Adobe Experience Manager in various use cases:
+
+#### Middleware Extensibility
+
+Connect external systems with Adobe applications building custom connectors or leverage a suite of pre-built integrations
+
+#### Core Services Extensibility
+
+Extend core application capabilities by extending the default behavior with custom features & business logic 
+
+#### User Experience Extensibility
+
+Extend core experience to support business requirements or build customer-specific digital properties, storefronts & back-office apps.
+
+App Builder (previously known as Project Firefly) has been available to enterprise customers and partners via our Developer Preview since Summer 2020. General availability (GA) of App Builder is scheduled for December 2021. We welcome developers to try out App Builder through our [Trial Program](http://adobe.ly/appbuilder-trial).
 
 ## Architecture {#architecture}
 
-Instead of an out-of-the-box solution, Adobe Developer App Builder provides a common, consistent, standardized development platform for extending Adobe Cloud solutions such as AEM including​:
+Instead of an out-of-the-box solution, Adobe Developer App Builder provides a common, consistent, standardized development platform for extending Adobe Cloud solutions such as AEM including:
 
-* A cloud native development stack
-* A unified Development framework across AEM applications which provides a consistent developer experience to accelerate integrations, innovate experiences and customizations
-* To achieve Software as a Service (SaaS) like upgradability reducing maintenance/upgrade costs
-* To provide prebuilt extensions and integrations on Adobe.io.
+* Adobe Developer Console — For custom microservice and extension development, letting developers build and manage projects while accessing all the tools and APIs they need to create plugins and integrations. 
+* Developer Tools — Open-source tools, SDKs, and libraries to allow developers to easily build custom extensions and integrations. Use  React Spectrum (Adobe’s UI toolkit) to have one common UI for all Adobe apps. 
+* Services — I/O Runtime for hosting infrastructure on our serverless platform, and I/O Events for event-based integrations. We also provide out-of-the-box support for storing data and files. 
+* Adobe Experience Cloud — Developers can submit extensions and integrations to be published within their Experience Cloud Org. System admins can then review, manage, and approve these extensions. Once published, your custom App Builder extensions and tools can be found alongside other Adobe Experience Cloud apps.
 
-The following diagram illustrates how App Builder fits into the development stack.
+The following diagram illustrates how a standard application built on App Builder leverages these functionalities:
 
 ![Architecture](/help/implementing/developing/extending/assets/firefly-architecture.jpg)
 
@@ -28,18 +43,23 @@ For more details about the App Builder architecture, have a look at [Architectur
 
 ## Get Started with App Builder {#additional-resources}
 
-To help you get started with App Builder we created a series of videos to describe how to use App Builder:
+To help you get started with App Builder we created a series of documentation to help you start:
 
-* [App Builder videos](https://www.youtube.com/watch?v=AwL0QRxH9JQ&list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
+[App Builder Getting Started](https://www.adobe.io/project-firefly/docs/getting_started/)
 
 ## Continue learning with Documentation {#appbuilder-documentation}
 
-App Buider provides a complete documentation set for developer's including guides, reference documentation, and tools to help you begin developing your own custom applications.
+App Builder provides videos and documentation for developers including guides, and reference documentation to help you begin developing your own custom applications:
 
-* [App Builder documentation](https://www.adobe.io/project-firefly/docs/overview/)
+[App Builder documentation](https://www.adobe.io/project-firefly/docs/overview/)
+[App Builder videos](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
 
-## Start Developing with App Builder Code Samples {#appbuilder-codesamples}
+## Try Out One of the Sample Applications {#appbuilder-codesamples}
 
-Ready to start developing? We have lots of sample code to help you get going quickly:
+Ready to start developing? We have lots of sample applications to help you get going quickly:
 
-* [App Builder code samples on Adobe.io](https://www.adobe.io/project-firefly/docs/resources/)
+[App Builder Code Labs on Adobe Developer Website](https://www.adobe.io/project-firefly/docs/resources/)
+
+## Support {Support}
+
+For developer support type of requests, we encourage developers to use our [Experience League forum](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly).
