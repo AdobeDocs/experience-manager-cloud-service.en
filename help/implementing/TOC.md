@@ -186,6 +186,7 @@ role: Developer, Architect
     + [Launch Integration](developing/hybrid/launch-integration.md)
     + [SPA Reference Documents](developing/hybrid/reference-materials.md)
 + Developer Tools {#developer-tools}
+  + [Developer Mode](/help/implementing/developing/tools/developer-mode.md)
   + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
   + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
   + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
@@ -203,6 +204,7 @@ role: Developer, Architect
   + [Integrating with Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
   + [Configuring Segmentation with ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
 + Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
+  + [Extending AEM using Adobe Developer App Builder](developing/extending/app-builder.md)
   + [Extending Experience Fragments](developing/extending/experience-fragments.md)
   + [Customizing and Extending Content Fragments](developing/extending/content-fragments-customizing.md)
   + [Content Fragments Configuring Components for Rendering](developing/extending/content-fragments-configuring-components-rendering.md)
