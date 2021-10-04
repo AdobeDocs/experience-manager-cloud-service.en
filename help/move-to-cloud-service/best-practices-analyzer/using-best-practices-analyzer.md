@@ -86,6 +86,18 @@ Follow this section to learn how to view the Best Practices Analyzer report:
    
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
+1. Click on **Print Preview** icon, as shown below for easy shareability.
+
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+
+1. Clicking on **Print Preview** opens a new tab with the reports displayed in a printable preview. Click on **Print** to print the report to a PDF format for easy shareability.
+
+   >[!IMPORTANT]
+   >* The option **Save as PDF** is recommended and supported for the above functionality.
+   >* If the browser's print button is used, it will print only one page. 
+
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
+
 
 #### Using Filters in the Best Practices Analyzer Report {#bpa-filters}
 
