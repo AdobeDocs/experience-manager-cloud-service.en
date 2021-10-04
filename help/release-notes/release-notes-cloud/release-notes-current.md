@@ -19,26 +19,12 @@ The following section outlines the general Release Notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2021.9.0) is October 4, 2021.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2021.9.0) is October 6, 2021.
 The following release (2021.10.0) is on October 28, 2021.
 
 ## Release Video {#release-video}
 
 Have a look at the [September 2021 Release Overview](https://video.tv.adobe.com/v/337381) video for a summary of the features added.
-
-## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
-
-### New features in [!DNL Experience Manager as a Cloud Service] {#foundation-features}
-
-**Advanced Networking**
-
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] now offers several types of advanced networking capabilities, including:
-
-* Flexible Port egress to egress traffic out of non-standard ports. Now possible without contacting Adobe Support.
-* Dedicated egress IP address to egress traffic out of AEM as a Cloud Service from a unique IP, now supporting all ports.
-* VPN to secure traffic between your infrastructure and AEM as a Cloud Service.
-
-Read the [documentation](/help/security/configuring-advanced-networking.md) for more information, including how to self serve provision advanced networking using Cloud Manager APIs. 
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -134,6 +120,20 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 * After a successful login, navigating to the default page (channels) ended up in a Internal Server Error page.
 
 * Associated tag entries were not removed when removing playlist(s).
+
+## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
+
+### New features in [!DNL Experience Manager as a Cloud Service] {#foundation-features}
+
+**Advanced Networking**
+
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] now offers several types of advanced networking capabilities, including:
+
+* Flexible Port egress to egress traffic out of non-standard ports. Now possible without contacting Adobe Support.
+* Dedicated egress IP address to egress traffic out of AEM as a Cloud Service from a unique IP, now supporting all ports.
+* VPN to secure traffic between your infrastructure and AEM as a Cloud Service.
+
+Read the [documentation](/help/security/configuring-advanced-networking.md) for more information, including how to self serve provision advanced networking using Cloud Manager APIs. 
 
 ## Cloud Manager {#cloud-manager}
 
