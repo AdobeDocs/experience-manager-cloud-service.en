@@ -61,11 +61,11 @@ Follow the steps below to use Best Practices Analysis card:
    >[!NOTE]
    >Uploading a new report resets all the assessments.
 
-1. Click on **Print Preview** icon, as shown below for easy shareability.
+1. Click on **Print Preview** icon, as shown below.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Clicking on **Print Preview** opens a new tab with the reports displayed in a printable preview. Click on **Print** to print the report to a PDF format for easy shareability.
+1. Clicking on **Print Preview** opens a new tab with the report displayed in a printable preview. Click on **Print** to print the report to a PDF format for easy shareability.
 
    >[!IMPORTANT]
    >* The option **Save as PDF** is recommended and supported for the above functionality.
