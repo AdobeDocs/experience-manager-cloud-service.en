@@ -204,6 +204,7 @@ role: Developer, Architect
   + [Integrating with Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
   + [Configuring Segmentation with ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
 + Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
+  + [Extending AEM using Adobe Developer App Builder](developing/extending/app-builder.md)
   + [Extending Experience Fragments](developing/extending/experience-fragments.md)
   + [Customizing and Extending Content Fragments](developing/extending/content-fragments-customizing.md)
   + [Content Fragments Configuring Components for Rendering](developing/extending/content-fragments-configuring-components-rendering.md)
