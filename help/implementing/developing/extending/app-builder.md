@@ -53,6 +53,6 @@ Ready to start developing? We have lots of sample applications to help you get g
 
 * [App Builder Code Labs on Adobe Developer Website](https://www.adobe.io/project-firefly/docs/resources/)
 
-## Support {Support}
+## Support {#support}
 
 For developer support type of requests, we encourage developers to use our [Experience League forum](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly).
