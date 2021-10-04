@@ -12,8 +12,8 @@ The new Adobe Developer App Builder provides an extensibility framework for a de
 App Builder provides a unified third-party extensibility framework for integrating and creating custom experiences that extend Adobe Experience Manager. With this complete extensibility framework, built on Adobe's infrastructure, developers can build custom microservices, extend, and integrate Adobe Experience Manager across Adobe solutions and the rest of the IT stack.
 App Builder provides a way for customers to easily extend Adobe Experience Manager in various use cases:
 
-* Middleware Extensibility - Connect external systems with Adobe applications building custom connectors or leverage a suite of pre-built integrations
-* Core Services Extensibility - Extend core application capabilities by extending the default behavior with custom features & business logic 
+* Middleware Extensibility - Connect external systems with Adobe applications building custom connectors or leverage a suite of pre-built integrations.
+* Core Services Extensibility - Extend core application capabilities by extending the default behavior with custom features & business logic.
 * User Experience Extensibility - Extend core experience to support business requirements or build customer-specific digital properties, storefronts & back-office apps.
 
 App Builder (previously known as Project Firefly) has been available to enterprise customers and partners via our Developer Preview since Summer 2020. General availability (GA) of App Builder is scheduled for December 2021. We welcome developers to try out App Builder through our [Trial Program](http://adobe.ly/appbuilder-trial).
