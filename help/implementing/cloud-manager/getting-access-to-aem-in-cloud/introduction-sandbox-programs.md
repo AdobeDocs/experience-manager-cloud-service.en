@@ -15,7 +15,10 @@ The environments created in a Sandbox are not configured for auto-scaling. There
 
 Sandbox programs include [!DNL Sites] and [!DNL Assets] and are auto-populated with a Git repository, a Development environment, and a non-production pipeline.  The Git repository is populated with a sample project based on the AEM Project archetype.
 
-Refer to Understanding Programs and Program Types to learn more about the Program Types.
+>[!NOTE]
+>Custom Domains and IP Allow Lists are not available in sandbox programs.
+
+Refer to [Understanding Programs and Program Types](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=en) to learn more about the Program Types.
 
 ### Attributes of Sandbox Programs {#attributes-sandbox}
 
