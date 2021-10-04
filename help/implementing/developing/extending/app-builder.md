@@ -10,6 +10,7 @@ description: Extending [!DNL Adobe Experience Manager] as a Cloud Service using 
 The new Adobe Developer App Builder provides an extensibility framework for a developer to easily extend AEM as a Cloud Service functionalities. 
 
 App Builder provides a unified third-party extensibility framework for integrating and creating custom experiences that extend Adobe Experience Manager. With this complete extensibility framework, built on Adobe's infrastructure, developers can build custom microservices, extend, and integrate Adobe Experience Manager across Adobe solutions and the rest of the IT stack.
+
 App Builder provides a way for customers to easily extend Adobe Experience Manager in various use cases:
 
 * Middleware Extensibility - Connect external systems with Adobe applications building custom connectors or leverage a suite of pre-built integrations.
