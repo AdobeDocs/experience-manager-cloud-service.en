@@ -186,6 +186,7 @@ role: Developer, Architect
     + [Launch Integration](developing/hybrid/launch-integration.md)
     + [SPA Reference Documents](developing/hybrid/reference-materials.md)
 + Developer Tools {#developer-tools}
+  + [Developer Mode](/help/implementing/developing/tools/developer-mode.md)
   + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
   + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
   + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
