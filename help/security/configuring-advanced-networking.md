@@ -104,7 +104,7 @@ The table below describes traffic routing:
 </thead>
 <tbody>
   <tr>
-    <td><b>http or https protocol</b></td>
+    <td><b>Http or https protocol</b></td>
     <td>Standard http/s traffic</td>
     <td>80 or 443</td>
     <td>Allowed</td>
@@ -128,7 +128,7 @@ The table below describes traffic routing:
   </tr>
   <tr>
     <td><b>Non-http or non-https</b></td>
-    <td>Client connects to the <code>AEM_PROXY_HOST</code> environment variable using a <code>portOrig</code> declared in the portForwards API parameter.</td>
+    <td>Client connects to the <code>AEM_PROXY_HOST</code> environment variable using a <code>portOrig</code> declared in the <cide>portForwards</code> API parameter.</td>
     <td>Any</td>
     <td>Allowed</td>
     <td><code>mysql.example.com:3306</code></td>
@@ -142,6 +142,24 @@ The table below describes traffic routing:
   </tr>
 </tbody>
 </table>
+
+**Apache / Dispatcher configuration**
+
+The AEM Cloud Service Apache/Dispatcher tier's `mod_proxy` directive can be configured a proxy using the properties described above.
+
+```
+ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:${AEM_HTTP_PROXY_PORT}"
+ProxyPass "/somepath" "http://example.com"
+ProxyPassReverse "/somepath" "http://example.com"
+```
+
+```
+SSLProxyEngine on //needed for https backends
+ 
+ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:${AEM_HTTPS_PROXY_PORT}"
+ProxyPass "/somepath" "https://example.com:8443"
+ProxyPassReverse "/somepath" "https://example.com:8443"
+```
 
 ## Dedicated Egress IP Address {#dedicated-egress-IP-address}
 
@@ -164,6 +182,78 @@ Configuring dedicated egress IP address is identical to [flexible port egress](#
 The only difference is that traffic will always egress from a dedicated, unique IP. To find that IP, use a DNS resolver to identify the IP address associated with `p{PROGRAM_ID}.external.adobeaemcloud.com`. The IP address is not expected to change, but if it must change in the future advanced notification will be provided.
 
 When deciding between flexible port egress and dedicated egress IP address, customers should choose flexible port egress if a specific IP address is not required since Adobe can optimize performance of flexible port egress traffic.
+
+### Traffic Routing {#dedcated-egress-ip-traffic-routing}
+
+<table>
+<thead>
+  <tr>
+    <th>Traffic</th>
+    <th>Destination condition</th>
+    <th>Port</th>
+    <th>Connection</th>
+    <th>Example</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><b>Http or https protocol</b></td>
+    <td>Traffic to Azure or Adobe services</td>
+    <td>Any</td>
+    <td>Through the shared cluster IPs (not the dedicated IP)</td>
+    <td>adobe.io<br>api.windows.net</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Host matching the <code>nonProxyHosts</code> parameter</td>
+    <td>80 or 443</td>
+    <td>Through the shared cluster IPs</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Host matching the <code>nonProxyHosts</code> parameter</td>
+    <td>Ports outside 80 or 443</td>
+    <td>Blocked</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Through http proxy configuration, configured by default for http/s traffic using standard Java HTTP client library</td>
+    <td>Any</td>
+    <td>Through the dedicated egress IP</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Ignores http proxy configuration (for exampple, if explicitly removed from standard Java HTTP client library or if a Java library that ignores standard proxy configuration is used)</td>
+    <td>80 or 443</td>
+    <td>Through the shared cluster IPs</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Ignores http proxy configuration (for exampple, if explicitly removed from standard Java HTTP client library or if a Java library that ignores standard proxy configuration is used)</td>
+    <td>Ports outside 80 or 443</td>
+    <td>Blocked</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><u>Non-http or non-https</u></td>
+    <td>The client connects to <code>AEM_PROXY_HOST</code> env variable using a <code>portOrig</code> declared in the <code>portForwards</code> API parameter</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Anything else</td>
+    <td></td>
+    <td>Blocked</td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
 
 ## Legacy Dedicated Egress Address Customers {#legacy-dedicated-egress-address-customers}
 
@@ -225,6 +315,11 @@ It also allows Connecting to SaaS vendors such as a CRM vendor that supports VPN
 
 Most VPN devices with IPSec technology are supported. Consult the list of devices at [this page](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable), based on the information in the **RouteBased configuration instructions** column. Configure the device as described in the table.
 
+### General Considerations {#general-vpn-considerations}
+
+* Support is limited to a single VPN connection
+* The Splunk forwarding capability is not possible over a VPN connection.
+
 ### Creation {#vpn-creation}
 
 Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked, passing in a payload of configuration information including: the value of "vpn" for the `kind` parameter, region, address space (list of CIDRs - note that this cannot be modified later), DNS resolvers (for resolving names in the customer's network), and VPN connection information such as gateway configuration, shared VPN key, and the IP Security policy. The endpoint responds with the `network_id`, as well as other information including the status. The full set of parameters and exact syntax should be referenced in the API documentation.
@@ -253,12 +348,144 @@ To delete the network infrastructure, submit a customer support ticket, describi
 
 To disable VPN for a particular environment, invoke `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`.
 
-### General Considerations {#general-vpn-considerations}
+### Traffic Routing {#vpn-traffic-routing}
 
-* Support is limited to a single VPN connection
-* The Splunk forwarding capability is not possible over a VPN connection.
+The table below describes traffic routing. The first matching condition applies. 
 
-### Development Considerations {#development-vpn-considerations}
+<table>
+<thead>
+  <tr>
+    <th>Traffic</th>
+    <th>Destination Condition</th>
+    <th>Port</th>
+    <th>Connection</th>
+    <th>Example</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><b>Http or https protocol</b></td>
+    <td>Traffic to Azure or Adobe services</td>
+    <td>Any</td>
+    <td>Through the shared cluster IPs (not the dedicated IP)</td>
+    <td>adobe.io<br>api.windows.net</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Host matching the <code>nonProxyHosts</code> parameter</td>
+    <td>80 or 443</td>
+    <td>Through the shared cluster IPs</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Host matching the <code>nonProxyHosts</code> parameter</td>
+    <td>Ports outside 80 or 443</td>
+    <td>Blocked</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>If the IP falls in the <i>VPN gateway address</i> space range, and through http proxy configuration (configured by default for http/s traffic using standard Java HTTP client library)</td>
+    <td>Any</td>
+    <td>Through the VPN</td>
+    <td><code>10.0.0.1:443</code><br>It can be a hostname as well.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>If the IP doesn't fall in the <i>VPN gateway address space</i> range, and through http proxy configuration (configured by default for http/s traffic using standard Java HTTP client library)</td>
+    <td>Any</td>
+    <td>Through the dedicated egress IP</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Ignores http proxy configuration (for example, if explicitly removed from standard Java HTTP client library or if using Java library that ignores standard proxy configuration)
+</td>
+    <td>80 or 443</td>
+    <td>Through the shared cluster IPs</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Ignores http proxy configuration (for example, if explicitly removed from standard Java HTTP client library or if using Java library that ignores standard proxy configuration)</td>
+    <td>Ports outside 80 or 443</td>
+    <td>Blocked</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Non-http or non-https</b></td>
+    <td>If the IP falls in the <i>VPN gateway address space</i> range and the client connects to <code>AEM_PROXY_HOST</code> env variable using a <code>portOrig</code> declared in the <code>portForwards</code> API parameter</td>
+    <td>Any</td>
+    <td>Through the VPN</td>
+    <td><code>10.0.0.1:3306</code><br>It can be a hostname as well.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>If the IP doesn't fall in the <i>VPN gateway address space</i> range and client connects to <code>AEM_PROXY_HOST</code> env variable using a <code>portOrig</code> declared in the <code>portForwards</code> API parameter</td>
+    <td>Any</td>
+    <td>Through the dedicated egress IP</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Anything else</td>
+    <td>Any</td>
+    <td>Blocked</td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+### Domains Useful for Configuration {#vpn-domains-useful-for-configuration}
+
+The diagram below provides a visual representation of a set of domains and associated IPs that are useful for configuration and development. The table below it describes those domains and IPs.
+
+![VPN Domain Configuration](/help/security/assets/AdvancedNetworking.jpg)
+
+<table>
+<thead>
+  <tr>
+    <th>Domain pattern</th>
+    <th>Egress (from AEM) meaning</th>
+    <th>Ingress (to AEM) meaning</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><code>p{PROGRAM_ID}.external.adobeaemcloud.com</code></td>
+    <td>Dedicated egress IP address for traffic going to the Internet rather than through private networks </td>
+    <td>Connections from the VPN would show at the CDN as coming from this IP. To only allow connections from the VPN to go into AEM, configure Cloud Manager to only allow this IP and block everything else. See the "Restrict ingress to VPN connections" section for more details.</td>
+  </tr>
+  <tr>
+    <td><code>p{PROGRAM_ID}-gateway.external.adobeaemcloud.com</code></td>
+    <td>N/A</td>
+    <td>The IP of the VPN gateway on the AEM side. A customer's network engineering team can use this to allow only VPN connections to their VPN gateway from a specific IP address. </td>
+  </tr>
+  <tr>
+    <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
+    <td>The IP of traffic coming from the AEM side of the VPN to the customer side. This can be allowlisted in the customer's configuration to ensure that connections can only be made from AEM.</td>
+    <td>If customer wants to allow only VPN access to AEM, they should configure CNAME DNS entries to map <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code>  and/or <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> to this.</td>
+  </tr>
+</tbody>
+</table>
+
+### Restrict VPN to Ingress Connections {#restrict-vpn-to-ingress-connections}
+
+If you want to allow only VPN access to AEM, environment allowlists can be configured in Cloud Manager so that only the IP defined by `p{PROGRAM_ID}.external.adobeaemcloud.com` is allowed to talk to the environment. This can be done the same way as any other IP based allowlist in Cloud Manager.
+
+If rules must be path-based, use standard http directives at the dispatcher level to deny or allow certain IPs. They should ensure that the desired paths are also not cacheable at the CDN so that the request always gets to origin.
+
+**Httpd Config Example**
+
+```
+Order deny,allow
+Deny from all
+Allow from 192.168.0.1
+Header always set Cache-Control private
+```
+
+<!-- ### Development Considerations {#development-vpn-considerations}
 
 <u>**Traffic Types**</u>
 
@@ -365,6 +592,7 @@ Deny from all
 Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
+-->
 
 ## Transitioning Between Advanced Networking Types {#transitioning-between-advanced-networking-types}
 
