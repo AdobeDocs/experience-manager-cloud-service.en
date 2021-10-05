@@ -128,7 +128,7 @@ The table below describes traffic routing:
   </tr>
   <tr>
     <td><b>Non-http or non-https</b></td>
-    <td>Client connects to the <code>AEM_PROXY_HOST</code> environment variable using a <code>portOrig</code> declared in the <cide>portForwards</code> API parameter.</td>
+    <td>Client connects to the <code>AEM_PROXY_HOST</code> environment variable using a <code>portOrig</code> declared in the <code>portForwards</code> API parameter.</td>
     <td>Any</td>
     <td>Allowed</td>
     <td><code>mysql.example.com:3306</code></td>
