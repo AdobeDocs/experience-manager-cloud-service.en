@@ -127,6 +127,10 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 **Advanced Networking**
 
+>[!INFO]
+>
+>The advanced networking feature is part of the 2021.9.0 release and will be rolled out soon.
+
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] now offers several types of advanced networking capabilities, including:
 
 * Flexible Port egress to egress traffic out of non-standard ports. Now possible without contacting Adobe Support.
