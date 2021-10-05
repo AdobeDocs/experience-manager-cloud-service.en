@@ -171,20 +171,19 @@ AEM as a Cloud Service requires outbound mail to be encrypted. The sections belo
 >
 >The Mail Service can be configured with OAuth2 support. For more information, see [OAuth2 Support for the Mail Service](/help/security/oauth2-support-for-mail-service.md).
 
-### Requesting Access {#requesting-access}
+### Enabling Outbound Email {#enabling-outbound-email}
 
-By default, outbound email is disabled. To activate it, submit a support ticket with:
+By default, ports used to send are disabled. To activate it, configure [advanced networking](/help/security/configuring-advanced-networking.md), making sure to set for each needed environment the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint's port forwarding rules so traffic can go through port 465 (if supported by the mail server) or port 587 (if the mail server requires it and also enforces TLS on that port).
 
-1. The fully qualified domain name for the mail server (for example `smtp.sendgrid.net`)
-1. The port to be used. It should be port 465 if supported by the mail server, otherwise port 587. Note that port 587 can only be used if the mail server requires and enforces TLS on that port
-1. The program ID and environment ID for the environments they would like to mail out of
-1. Whether SMTP access is needed on author, publish, or both.
+It is recommended to configure advanced networking with a `kind` parameter set to `flexiblePortEgress` since Adobe can optimize performance of flexible port egress traffic. If a unique egress IP address is necessary, choose a `kind` parameter of `dedicatedEgressIp`. If you have already configured VPN for other reasons, you can use the unique IP address provided by that advanced networking variation as well. 
+
+You must send email through a mail server rather than directly to email clients. Otherwise, the emails may be blocked.
 
 ### Sending Emails {#sending-emails}
 
 The [Day CQ Mail Service OSGI service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) should be used and emails must be sent to the mail server indicated in the support request rather than directly to recipients.
 
-AEM CS requires mail to be sent out through port 465. If a mail server does not support port 465, port 587 can be used, as long as the TLS option is enabled.
+AEM as a Cloud Service requires mail to be sent through port 465. If a mail server does not support port 465, port 587 can be used, as long as the TLS option is enabled.
 
 >[!NOTE]
 >
@@ -207,6 +206,8 @@ If port 587 has been requested (only allowed if the mail server does not support
 * set `smtp.ssl` to `false`
 
 The `smtp.starttls` property will automatically be set by AEM as a Cloud Service at runtime to an appropriate value. Thus, if `smtp.tls` is set to true, `smtp.startls` is ignored. If `smtp.ssl` is set to false, `smtp.starttls` is set to true. This is regardless of the `smtp.starttls` values set in your OSGI configuration.
+
+The Mail Service can optionally be configured with OAuth2 support. For more information, see [OAuth2 Support for the Mail Service](/help/security/oauth2-support-for-mail-service.md).
 
 ## [!DNL Assets] development guidelines and use cases {#use-cases-assets}
 
