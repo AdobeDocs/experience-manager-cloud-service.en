@@ -45,7 +45,7 @@ The API should respond in just a few seconds, indicating a status of updating an
 
 ### Updates {#updating-flexible-port-egress-provision}
 
-The program level configuration can be updated by invoking the `PUT /api/program/<program_id>/network/<network_id>` endpoint.
+The program level configuration can be updated by invoking the `PUT /api/program/<program_id>/network/<network_id>` endpoint and will take effect within a few minutes.
 
 >[!NOTE]
 >
@@ -58,6 +58,90 @@ The per environment routing rules can be updated by again invoking the `PUT /pro
 In order to **delete** the network infrastructure, submit a customer support ticket, describing what has been created and why it needs to be deleted.
 
 In order to **disable** flexible port egress from a particular environment, invoke `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`.
+
+### Traffic Routing {#flexible-port-egress-traffic-routing}
+
+Http or https traffic going to destinations through ports 80 or 443 will go through a preconfigured proxy, assuming the standard Java networking library is used. For http or https traffic going through other ports a proxy should be configured using the following properties.
+
+* `AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST`
+* `AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT`
+
+For example, here's sample code to send a request to `www.example.com:8443`:
+
+```java
+HttpsHost target = new HttpsHost("example.com", 8443, "https");
+ 
+HttpHost proxy = new HttpHost(System.getenv("AEM_HTTPS_PROXY_HOST"),
+                              Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT")),
+                              "https");
+ 
+RequestConfig config = RequestConfig.custom().setProxy(proxy).build();
+ 
+HttpGet request = new HttpGet("/");
+request.setConfig(config);
+CloseableHttpResponse response = httpclient.execute(target, request);
+```
+
+If using non-standard Java networking libraries, configure proxies using the properties above, for all traffic.
+
+Non-http/s traffic with destinations through ports declared in the `portForwards` parameter should reference a property called `AEM_PROXY_HOST`, along with the mapped port. For example:
+
+```java
+DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
+```
+
+The table below describes traffic routing:
+
+<table>
+<thead>
+  <tr>
+    <th>Traffic</th>
+    <th>Detination condition</th>
+    <th>Port</th>
+    <th>Connection</th>
+    <th>Example</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><b>http or https protocol</b></td>
+    <td>Standard http/s traffic</td>
+    <td>80 or 443</td>
+    <td>Allowed</td>
+    <td></td>
+  </tr> 
+  <tr>
+    <td></td>
+    <td>Non-standard traffic (on other ports outside 80 or 443) through http proxy configured using these environment variables:<br><ul>
+     <li>AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST</li>
+     <li>AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT</li>
+    </ul>
+    <td>Ports outside 80 or 443</td>
+    <td>Allowed</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Non-standard traffic (on other ports outside of ports 80 or 443) not using http proxy</td>
+    <td>Ports outside 80 or 443</td>
+    <td>Blocked</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Non-http or non-https</b></td>
+    <td>Client connects to the <code>AEM_PROXY_HOST</code> environment variable using a <code>portOrig</code> declared in the portForwards API parameter.</td>
+    <td>Any</td>
+    <td>Allowed</td>
+    <td><code>mysql.example.com:3306</code></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Everything else</td>
+    <td>Any</td>
+    <td>Blocked</td>
+    <td><code>db.example.com:5555</code></td>
+  </tr>
+</tbody>
+</table>
 
 ## Dedicated Egress IP Address {#dedicated-egress-IP-address}
 
@@ -161,7 +245,7 @@ The program-level VPN configuration can be updated by invoking the `PUT /api/pro
 
 Note that the address space cannot be changed after the initial VPN provisioning. If this is necessary, contact customer support. In addition, the `kind` parameter (like `VPN` or `dedicatedEgressIP`) cannot be modified. Contact customer support for assistance, describing what has already been created and the reason for the change.
 
-The per-environment routing rules can be updated by again invoking the `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` endpoint, making sure to include the full set of configuration parameter, rather than a subset.
+The per-environment routing rules can be updated by again invoking the `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` endpoint, making sure to include the full set of configuration parameter, rather than a subset. Environment updates typically take 5-10 minutes to be applied.
 
 ### Deleting or Disabling the VPN {#deleting-or-disabling-the-vpn}
 
