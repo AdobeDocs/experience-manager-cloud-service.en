@@ -5,6 +5,10 @@ description: Learn how to configure advanced networking features like VPN or ded
 
 # Configuring Advanced Networking for AEM as a Cloud Service {#configuring-advanced-networking}
 
+>[!INFO]
+>
+>The advanced networking feature is part of the 2021.9.0 release and will be rolled out soon.
+
 AEM as a Cloud Service offers several types of advanced networking capabilities, which can be configured by customers using Cloud Manager APIs. These include:
 
 * Flexible Port egress - configure AEM CS to allow outbound traffic out of non-standard ports
