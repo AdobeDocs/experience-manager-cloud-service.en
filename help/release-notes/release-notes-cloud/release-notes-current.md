@@ -20,7 +20,7 @@ The following section outlines the general Release Notes for the current (latest
 ## Release Date {#release-date}
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2021.8.0) is August 26, 2021.
-The following release (2021.9.0) is on September 30, 2021.
+The following release (2021.9.0) is on October 6, 2021.
 
 ## Release Video {#release-video}
 
@@ -173,19 +173,35 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.8.0 is August 
 
 * Occasionally, when a pipeline is triggered twice for some reason, it results in one of the executions failing with *cannot update pipeline execution status* error. 
 
+
+## Cloud Acceleration Manager {#cam}
+
+### Release Date {#release-date-october-cam}
+
+The Release Date for Cloud Acceleration Manager is October 04, 2021.
+ 
+### What is New {#what-is-new-cam}
+
+* Cloud Acceleration Manager now provides users with the ability to view the BPA reports in a printable preview, allowing simple printing or printing to PDF for easy shareability. Refer to Step 6 and 7 in [Using Best Practices Analysis Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+
+
 ## Content Transfer Tool {#content-transfer-tool}
 
 ### Release Date {#release-date-ctt-latest}
 
-The Release Date for Content Transfer Tool v1.5.6 is August 11, 2021.
+The Release Date for Content Transfer Tool v1.6.0 is October 04, 2021.
 
-### Bug Fixes {#bug-fixes-ctt}
+### What's New {#what-is-new-ctt}
 
-* In some cases not all users were migrated to the target instance. To get this fix CTT v1.5.6 is required along with aem-ethos-tools 1.2.354 or later version on the target AEM as a Cloud Service instance.
+* Improved User Mapping with a simplified User Experience, including the following features listed below. For more details, refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+  * Test connection to the User Management API before running the User Mapping
+  * Gracefully skip errors and continue with the User Mapping activity
+  * User Mapping no longer fails if Access Token expires (after 24 hours). User Mapping can be re-run from where it last stopped.
 
-* The **Stop Ingestion** button was being disabled during ingestion to the Publish instance. This is not necessary because there is no mongo restore step during Publish ingestion. 
+* To increase CTT robustness, content can be ingested to either Author instance or Publish instance at a time. 
 
-* CTT did not clean up the `/tmp` directory after a successful extraction. This sometimes led to disk space issues. 
+* When versions are included, the path `/var/audit` is automatically included to migrate audit events.
+
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
