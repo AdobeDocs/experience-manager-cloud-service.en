@@ -72,7 +72,7 @@ Wherein, the Tenant id is the IMS org.
 
 Perform the following steps if you are not sure of the Brand Portal URL:
 
-1. Log in to [Admin Console](http://adminconsole.adobe.com/) and navigate to **[!UICONTROL Products]**.
+1. Log in to [Admin Console](https://adminconsole.adobe.com/) and navigate to **[!UICONTROL Products]**.
 1. From the left rail, select **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]**.
 1. Click on **[!UICONTROL Go to Brand Portal]** to directly open Brand Portal in the browser.
 
@@ -173,7 +173,7 @@ Along with the automation workflow to activate Brand Portal on AEM Assets as a [
 
 >[!NOTE]
 >
->Contact Adobe Support if you are facing any problem while activating your Brand Portal tenant.
+>Contact Customer Support if you are facing any problem while activating your Brand Portal tenant.
 
 ## Manual configuration using Adobe Developer Console {#manual-configuration}
 
