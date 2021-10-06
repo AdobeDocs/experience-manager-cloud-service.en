@@ -20,7 +20,8 @@ You must have Administrator rights to create, edit, and delete Dynamic Media Ima
 
 After you create your Image Profile or Video Profile, you assign it to one or more folders that you use for newly uploaded Dynamic Media assets.
 
-See also [Best Practices for Organizing your Digital Assets for using Image Profiles or Video Profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
+See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/organize-assets.md).
+
 
 >[!NOTE]
 >
