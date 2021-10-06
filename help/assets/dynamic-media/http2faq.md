@@ -64,13 +64,13 @@ To use HTTP/2, you must meet the following requirements:
 
      Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media domain, you can request moving over to your own custom domain as part of this transition.
 
-     1. Technical Support adds you to the HTTP/2 customer waitlist based on the order in which requests were submitted.
-     1. When Adobe is ready to handle your request, Customer Care contacts you to coordinate the transition and set a target date.
+     1. Customer Support adds you to the HTTP/2 customer waitlist based on the order in which requests were submitted.
+     1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate the transition and set a target date.
      1. You will be notified after completion and can verify a successful transition over to HTTP2.
 
 ## When can I expect to be transitioned over to HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Requests are processed in the order that they are received by Technical Support.
+Requests are processed in the order that they are received by Customer Support.
 
 >[!NOTE]
 >
