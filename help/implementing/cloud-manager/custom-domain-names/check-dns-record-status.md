@@ -15,7 +15,7 @@ Cloud Manager performs a DNS lookup for your domain name and displays one of the
    DNS status will not be detected until your custom domain name has been successfully verified and deployed. This status is also observed when your Custom Domain name is in the process of deletion.
 
 * **DNS Resolves Incorrectly** 
-   This indicates that either DNS records configuration has not resolved/pointed over yet or is erroneous. An Adobe representative will be notified automatically.
+   This indicates that either DNS records configuration has not resolved/pointed over yet or is erroneous.
 
    >[!NOTE]
    >You must configure either a `CNAME` or `A-record` by following the corresponding instructions. Refer to Configuring DNS Settings to learn more. When ready, you must select the **resolve again** icon next to the status.
