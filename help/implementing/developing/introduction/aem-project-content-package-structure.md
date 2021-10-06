@@ -64,7 +64,7 @@ The recommended application deployment structure is as follows:
     + `/apps/settings`
   + ACLs (permissions)
     + Any `rep:policy` for any path under `/apps`
-  + [Precompiled bundled scripts](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/using/developing/archetype/precompiled-bundled-scripts.html)
+  + [Precompiled bundled scripts](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
  
 + The `ui.config` package, contains all [OSGi configurations](/help/implementing/deploying/configuring-osgi.md):
     + Organizational folder containing run mode specific OSGi config definitions
@@ -264,7 +264,7 @@ Simply add the `<filter root="/apps/<my-app>-packages"/>` entries for any 2nd-le
 
 ## Embedding 3rd-party Packages {#embedding-3rd-party-packages}
 
-All packages must be available via the [Adobe's public Maven artifact repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) or an accessible public, referenceable 3rd party Maven artifact repository.
+All packages must be available via the [Adobe's public Maven artifact repository](https://repo1.maven.org/maven2/com/adobe/) or an accessible public, referenceable 3rd party Maven artifact repository.
 
 If the 3rd party packages are in **Adobe's public Maven artifact repository**, no further configuration is needed for Adobe Cloud Manager to resolve the artifacts.
 
