@@ -19,12 +19,12 @@ The following section outlines the general Release Notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2021.9.0) is October 6, 2021.
-The following release (2021.10.0) is on October 28, 2021.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2021.10.0) is October 28, 2021.
+The following release (2021.11.0) is on November 25, 2021.
 
 ## Release Video {#release-video}
 
-Have a look at the [September 2021 Release Overview](https://video.tv.adobe.com/v/337381) video for a summary of the features added.
+Have a look at the [October 2021 Release Overview](https://video.tv.adobe.com/v/337381) video for a summary of the features added.
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
