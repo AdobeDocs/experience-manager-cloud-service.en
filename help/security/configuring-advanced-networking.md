@@ -7,7 +7,7 @@ description: Learn how to configure advanced networking features like VPN or ded
 
 >[!INFO]
 >
->The advanced networking feature is part of the 2021.9.0 release and will be rolled out soon.
+>The advanced networking feature is part of the 2021.9.0 release, and will be enabled for customers in mid-October.
 
 AEM as a Cloud Service offers several types of advanced networking capabilities, which can be configured by customers using Cloud Manager APIs. These include:
 
