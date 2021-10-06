@@ -64,6 +64,7 @@ The recommended application deployment structure is as follows:
     + `/apps/settings`
   + ACLs (permissions)
     + Any `rep:policy` for any path under `/apps`
+  + [Precompiled bundled scripts](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
  
 + The `ui.config` package, contains all [OSGi configurations](/help/implementing/deploying/configuring-osgi.md):
     + Organizational folder containing run mode specific OSGi config definitions

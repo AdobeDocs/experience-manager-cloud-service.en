@@ -9,7 +9,7 @@ exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] brings many new features and possibilities to manage your Experience Manager projects. There are many differences between [!DNL Experience Manager Assets] on-premise or hosted as Adobe Managed Service as compared to [!DNL Experience Manager] as a [!DNL Cloud Service]. This article highlights the important differences for [!DNL Assets] capabilities.
 
-The main differences as compared to [Experience Manager] 6.5 are in the following areas:
+The main differences as compared to [!DNL Experience Manager] 6.5 are in the following areas:
 
 * [Asset ingestion, upload, and processing](#asset-ingestion).
 * [Asset microservices for cloud-native processing](#asset-microservices).
@@ -68,7 +68,7 @@ To do an end-to-end validation of the code and process including asset ingestion
 >* [List of deprecated and removed features](/help/release-notes/deprecated-removed-features.md)
 >* [An introduction](/help/overview/introduction.md)
 >* [What is new and different](/help/overview/what-is-new-and-different.md)
->* [The architecture](/help/core-concepts/architecture.md)
+>* [The architecture](/help/overview/architecture.md)
 >* [Notable changes](/help/release-notes/aem-cloud-changes.md)
 >* [Notable changes [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [Video tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
