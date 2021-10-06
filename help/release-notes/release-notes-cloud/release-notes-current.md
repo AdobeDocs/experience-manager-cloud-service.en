@@ -129,7 +129,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 >[!INFO]
 >
->The advanced networking feature is part of the 2021.9.0 release and will be rolled out soon.
+>The advanced networking feature is part of the 2021.9.0 release, and will be enabled for customers in mid-October.
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] now offers several types of advanced networking capabilities, including:
 
