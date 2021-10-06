@@ -383,7 +383,8 @@ The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asse
 
 **To update the Granite Transient Workflow queue:**
 
-1. Navigate to [https://&lt;server&gt;/system/console/configMgr](https://localhost:4502/system/console/configMgr) and search for **Queue: Granite Transient Workflow Queue**.
+1. Navigate to the **Adobe Experience Manager Web Console Configuration** at `http://<host>:<port>/system/console/configMgr`
+1. Search for **Queue: Granite Transient Workflow Queue**.
 
    >[!NOTE]
    >
