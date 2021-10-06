@@ -207,15 +207,13 @@ The Release Date for Content Transfer Tool v1.6.0 is October 04, 2021.
 
 ### Release Date {#release-date-bpa-latest}
 
-The Release Date for Best Practices Analyzer v2.1.18 is September 02, 2021.
+The Release Date for Best Practices Analyzer v2.1.20 is October 05, 2021.
 
 ### What's New {#what-is-new}
 
-* Ability to detect and report on total node count.
+* Ability to detect and report on node name length.
 
-* Ability to detect and report on the node store type and size.
+* Ability to detect and report on the total Index size.
 
-### Bug Fixes {#bug-fixes-bpa}
-
-* BPA was falsely detecting presence of Commerce Integration Framework.
+* Ability to detect and report on assets that are missing their original rendition.
 
