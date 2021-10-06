@@ -19,6 +19,10 @@ App Builder provides a way for customers to easily extend Adobe Experience Manag
 
 App Builder (previously known as Project Firefly) has been available to enterprise customers and partners via our Developer Preview since Summer 2020. General availability (GA) of App Builder is scheduled for December 2021. We welcome developers to try out App Builder through our [Trial Program](http://adobe.ly/appbuilder-trial).
 
+>[!NOTE]
+>
+> For AEM 6.5 customers who want to leverage the App Builder, please go to [Extending Adobe Experience Manager 6.5 using Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
+
 ## Architecture {#architecture}
 
 Instead of an out-of-the-box solution, Adobe Developer App Builder provides a common, consistent, standardized development platform for extending Adobe Cloud solutions such as AEM including:
@@ -32,26 +36,26 @@ The following diagram illustrates how a standard application built on App Builde
 
 ![Architecture](/help/implementing/developing/extending/assets/firefly-architecture.jpg)
 
-For more details about the App Builder architecture, have a look at [Architecture Overview](https://www.adobe.io/project-firefly/docs/guides/).
+For more details about the App Builder architecture, have a look at [Architecture Overview](https://www.adobe.io/app-builder/docs/guides/).
 
 ## Get Started with App Builder {#additional-resources}
 
 To help you get started with App Builder we created a series of documentation to help you start:
 
-* [App Builder Getting Started](https://www.adobe.io/project-firefly/docs/getting_started/)
+* [App Builder Getting Started](https://www.adobe.io/app-builder/docs/getting_started/)
 
 ## Continue learning with Documentation {#appbuilder-documentation}
 
 App Builder provides videos and documentation for developers including guides, and reference documentation to help you begin developing your own custom applications:
 
-* [App Builder documentation](https://www.adobe.io/project-firefly/docs/overview/)
+* [App Builder documentation](https://www.adobe.io/app-builder/docs/overview/)
 * [App Builder videos](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
 
 ## Try Out One of the Sample Applications {#appbuilder-codesamples}
 
 Ready to start developing? We have lots of sample applications to help you get going quickly:
 
-* [App Builder Code Labs on Adobe Developer Website](https://www.adobe.io/project-firefly/docs/resources/)
+* [App Builder Code Labs on Adobe Developer Website](https://www.adobe.io/app-builder/docs/resources/)
 
 ## Support {#support}
 
