@@ -29,3 +29,7 @@ The following specific cases will be logged:
 * If the target AEM Cloud Service instance has a user with a different user name but same email address as one of the users on the source AEM instance, and User Mapping is enabled, an error message will be written in the logs, and the source AEM user will not be transferred, as only one user with a given email address is allowed on the target system.
 
 * If two users on the source AEM instance have the same email address, and User Mapping is enabled, an error message will be written in the logs and one of the source AEM users will not be transferred, as only one user with a given email address is allowed on the target system.
+
+### What’s Next {#whats-next}
+
+Once you have learned the important considerations and exceptional cases, you are now ready to use the tool. See [Using User Mapping Tool](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md) for more details.
