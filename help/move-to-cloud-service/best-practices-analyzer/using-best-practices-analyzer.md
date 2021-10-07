@@ -87,7 +87,6 @@ Follow this section to learn how to view the Best Practices Analyzer report:
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
 
-
 #### Using Filters in the Best Practices Analyzer Report {#bpa-filters}
 
 To filter out findings related to [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), follow the steps below:
