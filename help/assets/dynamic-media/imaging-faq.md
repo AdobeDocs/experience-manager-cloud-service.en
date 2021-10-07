@@ -206,10 +206,10 @@ By default, Smart Imaging DPR and network optimization is disabled (turned off) 
        Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media Classic domain, you can request moving over to your own custom domain as part of this transition.
     1. Indicate if you want it to work over HTTP/2.
 
-1. Adobe Customer Care adds you to the Smart Imaging customer Wait List based on the order in which requests are submitted.
-1. When Adobe is ready to handle your request, Customer Care contacts you to coordinate and set a target date.
+1. Adobe Customer Support adds you to the Smart Imaging customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date.
 1. **Optional**: You can optionally test Smart Imaging in Staging before Adobe pushes the new feature to production.
-1. You are notified after completion by Customer Care.
+1. You are notified after completion by Customer Support.
 1. To maximize the performance improvements of Smart Imaging, Adobe recommends setting the Time To Live (TTL) to 24 hours or longer. The TTL defines how long assets are cached by the CDN. To change this setting:
 
     1. If you use Dynamic Media Classic, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
@@ -217,7 +217,7 @@ By default, Smart Imaging DPR and network optimization is disabled (turned off) 
 
 ## When can I expect my account to be enabled with Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-Requests are processed in the order in which they are received by Customer Care, according to the Wait List.
+Requests are processed in the order in which they are received by Customer Support, according to the Wait List.
 
 >[!NOTE]
 >
