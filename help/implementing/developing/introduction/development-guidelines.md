@@ -163,68 +163,6 @@ Customers will not have access to developer tooling for staging and production e
 
 Adobe monitors application performance and takes measures to address if deterioration is observed. At this time, application metrics can not be obeserved.
 
-## Dedicated Egress IP Address {#dedicated-egress-ip-address}
-
-Upon request, AEM as a Cloud Service will provision a static, dedicated, IP address for HTTP (port 80) and HTTPS (port 443) outbound traffic programmed in Java code. 
-
-### Benefits {#benefits}
-
-This dedicated IP address can enhance security when integrating with SaaS vendors (like a CRM vendor) or other integrations outside of AEM as a Cloud Service that offer an allowlist of IP addresses. By adding the dedicated IP address to the allowlist, it ensures that only traffic from the customer's AEM Cloud Service will be permitted to flow into the external service. This is in addition to traffic from any other IPs allowed. 
-
-Without the dedicated IP address feature enabled, traffic coming out of AEM as a Cloud Service flows through a set of IPs shared with other customers.
-
-### Configuration {#configuration}
-
-To enable a dedicated IP address, submit a request to Customer Support, who will provide the IP address information. The request should specify each environment and additional requests should be made if new environments need the feature after the initial request. Sandbox program environments are not supported.
-
-### Feature Usage {#feature-usage}
-
-The feature is compatible with Java code or libraries that result in outbound traffic, provided they use standard Java system properties for proxy configurations. In practice, this should include most common libraries. 
-
-Below is a code sample:
-
-```java
-public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
-  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
-  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
-  URLConnection connection = finalUrl.openConnection();
-  connection.addRequestProperty("Accept", "application/json");
-  connection.addRequestProperty("X-API-KEY", apiKey);
-
-  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
-    return new JSONObject(new JSONTokener(responseReader));
-  }
-}
-```
-
-Some libraries require explicit configuration to use standard Java system properties for proxy configurations.
-
-An example using Apache HttpClient, that requires explicit calls to
-[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) or use
-[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
-
-```java
-public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
-  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
-  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
-
-  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
-  HttpGet request = new HttpGet(finalUrl.toURI());
-  request.setHeader("Accept", "application/json");
-  request.setHeader("X-API-KEY", apiKey);
-  HttpResponse response = httpClient.execute(request);
-  String result = EntityUtils.toString(response.getEntity());
-}
-```
-
-The same dedicated IP is applied to all of a customer's programs in their Adobe Organization and for all environments in each of their programs. It applies to both author and publish services.
-
-Only HTTP and HTTPS ports are supported. This includes HTTP/1.1, as well as HTTP/2 when encrypted.
-
-### Debugging Considerations {#debugging-considerations}
-
-In order to validate that traffic is indeed outgoing on the expected dedicated IP address, check logs in the destination service, if available. Otherwise, it may be useful to call out to a debugging service such as [https://ifconfig.me/ip](https://ifconfig.me/ip), which will return the calling IP address.
-
 ## Sending Email {#sending-email}
 
 AEM as a Cloud Service requires outbound mail to be encrypted. The sections below describe how to request, configure, and send email.
@@ -233,20 +171,19 @@ AEM as a Cloud Service requires outbound mail to be encrypted. The sections belo
 >
 >The Mail Service can be configured with OAuth2 support. For more information, see [OAuth2 Support for the Mail Service](/help/security/oauth2-support-for-mail-service.md).
 
-### Requesting Access {#requesting-access}
+### Enabling Outbound Email {#enabling-outbound-email}
 
-By default, outbound email is disabled. To activate it, submit a support ticket with:
+By default, ports used to send are disabled. To activate it, configure [advanced networking](/help/security/configuring-advanced-networking.md), making sure to set for each needed environment the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint's port forwarding rules so traffic can go through port 465 (if supported by the mail server) or port 587 (if the mail server requires it and also enforces TLS on that port).
 
-1. The fully qualified domain name for the mail server (for example `smtp.sendgrid.net`)
-1. The port to be used. It should be port 465 if supported by the mail server, otherwise port 587. Note that port 587 can only be used if the mail server requires and enforces TLS on that port
-1. The program ID and environment ID for the environments they would like to mail out of
-1. Whether SMTP access is needed on author, publish, or both.
+It is recommended to configure advanced networking with a `kind` parameter set to `flexiblePortEgress` since Adobe can optimize performance of flexible port egress traffic. If a unique egress IP address is necessary, choose a `kind` parameter of `dedicatedEgressIp`. If you have already configured VPN for other reasons, you can use the unique IP address provided by that advanced networking variation as well. 
+
+You must send email through a mail server rather than directly to email clients. Otherwise, the emails may be blocked.
 
 ### Sending Emails {#sending-emails}
 
 The [Day CQ Mail Service OSGI service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) should be used and emails must be sent to the mail server indicated in the support request rather than directly to recipients.
 
-AEM CS requires mail to be sent out through port 465. If a mail server does not support port 465, port 587 can be used, as long as the TLS option is enabled.
+AEM as a Cloud Service requires mail to be sent through port 465. If a mail server does not support port 465, port 587 can be used, as long as the TLS option is enabled.
 
 >[!NOTE]
 >
@@ -269,6 +206,8 @@ If port 587 has been requested (only allowed if the mail server does not support
 * set `smtp.ssl` to `false`
 
 The `smtp.starttls` property will automatically be set by AEM as a Cloud Service at runtime to an appropriate value. Thus, if `smtp.tls` is set to true, `smtp.startls` is ignored. If `smtp.ssl` is set to false, `smtp.starttls` is set to true. This is regardless of the `smtp.starttls` values set in your OSGI configuration.
+
+The Mail Service can optionally be configured with OAuth2 support. For more information, see [OAuth2 Support for the Mail Service](/help/security/oauth2-support-for-mail-service.md).
 
 ## [!DNL Assets] development guidelines and use cases {#use-cases-assets}
 
