@@ -45,7 +45,7 @@ To use HTTP/2, you must meet the following requirements:
 
 ## What is the process for enabling HTTP/2 for my Dynamic Media account? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-[Use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) and request to switch over to HTTP/2; it is not automatically done for you.
+[Use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) and request to switch over to HTTP/2; it is not automatically done for you.
 
 1. Provide the following information in your support case:
 
@@ -64,13 +64,13 @@ To use HTTP/2, you must meet the following requirements:
 
      Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media domain, you can request moving over to your own custom domain as part of this transition.
 
-     1. Customer Support adds you to the HTTP/2 customer waitlist based on the order in which requests were submitted.
-     1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate the transition and set a target date.
+     1. Technical Support adds you to the HTTP/2 customer waitlist based on the order in which requests were submitted.
+     1. When Adobe is ready to handle your request, Customer Care contacts you to coordinate the transition and set a target date.
      1. You will be notified after completion and can verify a successful transition over to HTTP2.
 
 ## When can I expect to be transitioned over to HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Requests are processed in the order that they are received by Customer Support.
+Requests are processed in the order that they are received by Technical Support.
 
 >[!NOTE]
 >
