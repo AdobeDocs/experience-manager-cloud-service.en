@@ -173,7 +173,7 @@ Along with the automation workflow to activate Brand Portal on AEM Assets as a [
 
 >[!NOTE]
 >
->Contact Adobe Support if you are facing any problem while activating your Brand Portal tenant.
+>Contact Customer Support if you are facing any problem while activating your Brand Portal tenant.
 
 ## Manual configuration using Adobe Developer Console {#manual-configuration}
 
