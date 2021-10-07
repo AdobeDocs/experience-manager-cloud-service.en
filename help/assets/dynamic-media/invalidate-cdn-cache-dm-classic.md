@@ -23,7 +23,7 @@ See also [Cache overview in Dynamic Media Classic](https://helpx.adobe.com/exper
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
-      Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
+      Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Customer Support.
 
 1. Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.
 1. On the Application General Settings page, under the Servers group heading, locate the **[!UICONTROL CDN Invalidation Template]** text box.
