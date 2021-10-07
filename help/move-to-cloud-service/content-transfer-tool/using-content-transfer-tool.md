@@ -45,6 +45,8 @@ Follow the section below to understand the important considerations while runnin
 
 * If you intend to do top ups, it is essential that the content structure of existing content is not changed from the time the initial extraction is taken to when the top-up extraction is run. Top-ups cannot be run on content whose structure has been changed since the initial extraction. Please ensure you restrict this during the migration process.
 
+* If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
+
 ## Availability {#availability}
 
 >[!CONTEXTUALHELP]
@@ -114,6 +116,9 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
    1. **Parameters**: Select the following parameters to create the migration set:
 
       1. **Include Version**: Select as required. When versions are included, the path `/var/audit` is automatically included to migrate audit events.
+
+      >[!NOTE]
+      >If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
 
       1. **Include Mapping from IMS Users and Groups**: Select the option to include mapping from IMS Users and Groups. 
       Refer to [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
