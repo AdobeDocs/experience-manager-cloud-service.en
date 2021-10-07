@@ -7,10 +7,6 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 ---
 # Content Fragment Models {#content-fragment-models}
 
->[!NOTE]
->
->The [Locked (Published) Content Fragment Models](#locked-published-content-fragment-models) feature is in beta.
-
 Content Fragment Models in AEM define the structure of content for your [content fragments,](/help/assets/content-fragments/content-fragments.md) serving as a foundation of your headless content.
 
 To use Content Fragment Models you:
@@ -419,23 +415,12 @@ To unpublish a content fragment model:
 1. Select your model, followed by **Unpublish** from the toolbar.
    The published status will be indicated in the console. 
 
-If you try to unpublish a model that is currently used by one or more fragments, then an error warning will inform you of this: 
-
-![Content Fragment Model error message when unpublishing a model that is in use](assets/cfm-model-unpublish-error.png)
-
-The message will suggest that you check the [References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) panel to investigate further:
-
-![Content Fragment Model in References](assets/cfm-model-references.png)
-
-## Locked (Published) Content Fragment Models {#locked-published-content-fragment-models}
-
->[!NOTE]
->
->The Locked (Published) Content Fragment Models feature is in beta.
+<!--
+## Locked Content Fragment Models {#locked-content-fragment-models}
 
 This feature provides governance for Content Fragment Models that have been published. 
 
-### The Challenge {#the-challenge}
+The challenge:
 
 * Content Fragment Models determine the schema for GraphQL queries in AEM. 
 
@@ -447,56 +432,11 @@ This feature provides governance for Content Fragment Models that have been publ
 
 * Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
 
-### The Requirements {#the-requirements}
+The solution:
 
-* To make users aware of the risks when editing models that are already used for live content delivery - in other words, models that have been published). 
+* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
 
-* Also, to avoid unintended changes. 
+* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
 
-Either of these might break queries if the modified models are re-published. 
-
-### The Solution {#the-solution}
-
-To address these issues, Content Fragment Models are *locked* into a READ-ONLY mode on author - as soon as they have been published. This is indicated by **Locked**: 
-
-  ![Card of locked Content Fragment Model](assets/cfm-model-locked.png)
-
-When the model is **Locked** (in READ-ONLY mode), you can see the contents and structure of models but you cannot edit them. 
-
-You can manage **Locked** models from either the console, or the model editor:
-
-* Console
-
-  From the console, you can manage the READ-ONLY mode with the **Unlock** and **Lock** actions in the toolbar: 
-
-  ![Toolbar of locked Content Fragment Model](assets/cfm-model-locked.png)
-
-  * You can **Unlock** a model to enable edits.
-  
-    If you select **Unlock** a warning will be shown, and you must confirm the **Unlock** action:
-    ![Message when unlocking Content Fragment Model](assets/cfm-model-unlock-message.png)
-
-    You can then open the model for editing.
-    
-  * You can also **Lock** the model afterwards.
-  * Re-publishing the model will immediately put it back into **Locked** (READ-ONLY) mode.
-
-* Model Editor
-
-  * When you open a model that is locked you will be warned, and presented with three actions: **Cancel**, **View Read Only**, **Edit**:
-
-    ![Message when viewing a locked Content Fragment Model](assets/cfm-model-editor-lock-message.png)
-
-  * If you select **View Read Only** you can see the content and structure of the model:
-
-    ![View Read Only - locked Content Fragment Model](assets/cfm-model-editor-locked-view-only.png)
-
-  * If you select **Edit** you can edit and save your updates: 
-  
-    ![Edit - locked Content Fragment Model](assets/cfm-model-editor-locked-edit.png)
-
-    >[!NOTE]
-    >
-    >There may still a warning at the top, but that is when the model is already in use by existing Content Fragments. 
-
-  * **Cancel** will return you to the console.
+* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
+-->
