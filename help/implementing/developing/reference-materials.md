@@ -29,7 +29,7 @@ AEM relies on a number of additional open-source APIs.
 |---|---|
 |[Apache Sling](https://sling.apache.org/apidocs/sling11/)|Web framework that uses a Java Content Repository (JCR) to store and manage content|
 |[Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html)|Implementation a scalable and high-performance hierarchical Java Content Repository (JCR) for use as the foundation of modern world-class web sites|
-|[Java Content Repository](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)|Specification for the JCR Version 2.0|
+|[Java Content Repository](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)|Specification for the JCR Version 2.0|
 |[Apache Felix](https://felix.apache.org)|Implementation of the Open Services Gateway initiative (OSGi) framework and service platform|
 
 ## API Preference Guidelines {#guidelines}
