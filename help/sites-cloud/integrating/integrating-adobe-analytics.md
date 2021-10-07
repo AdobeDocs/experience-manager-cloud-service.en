@@ -10,7 +10,7 @@ exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 Integrating Adobe Analytics and AEM as a Cloud Service allows you to track your web page activity. The integration requires:
 
 * using the Touch UI to create an Analytics configuration in AEM as a Cloud Service.
-* adding and configuring Adobe Analytics as an extension in [Adobe Launch](#analytics-launch). For more details about Adobe Launch, see [this page](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
+* adding and configuring Adobe Analytics as an extension in [Adobe Launch](#analytics-launch). For more details about Adobe Launch, see [this page](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html).
 
 Compared to previous versions of AEM, framework support is not provided in the Analytics Configuration in AEM as a Cloud Service. Instead, it is now done through Adobe Launch, which is the defacto tool for instrumenting an AEM site with Analytics capabilities (JS libraries). In Adobe Launch, a property is created where the Adobe Analytics extension can be configured and rules are created to send data to Adobe Analytics. Adobe Launch has replaced the task of analytics provided by the sitecatalyst.
 
