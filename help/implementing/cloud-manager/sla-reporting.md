@@ -1,6 +1,7 @@
 ---
 title: SLA Reporting - Cloud Service
 description: SLA Reporting - Cloud Service
+exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 ---
 # SLA Reporting {#sla-reporting} 
 
