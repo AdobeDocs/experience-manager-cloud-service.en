@@ -185,10 +185,6 @@ The [Day CQ Mail Service OSGI service](https://experienceleague.adobe.com/docs/e
 
 AEM as a Cloud Service requires mail to be sent through port 465. If a mail server does not support port 465, port 587 can be used, as long as the TLS option is enabled.
 
->[!NOTE]
->
->Note that Adobe does not support SMTP egressing over a unique dedicated IP address. 
-
 ### Configuration {#email-configuration}
 
 E-mails in AEM should be sent using the [Day CQ Mail Service OSGi service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
