@@ -7,7 +7,7 @@ feature: Deploying
 role: Architect, Developer
 ---
 
-# Moving to AEM as a Cloud Service Guide {#moving}
+# AEM as a Cloud Service Migration Journey {#moving}
 
 <!-- + [Moving to AEM as a Cloud Service](/help/journey-migration/home.md)
 + Phases of Transition Journey {#phases}
