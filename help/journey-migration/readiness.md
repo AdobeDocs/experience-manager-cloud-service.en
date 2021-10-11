@@ -1,17 +1,29 @@
 ---
-title: Readiness Phase
-description: Readiness Phase
-exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
+title: How to Determine if your Deployment is Ready to be Moved to AEM as a Cloud Service 
+description: Learn about the steps you need to take in order to make sure that your AEM installation is ready to be moved to the cloud
 ---
-# Readiness {#readiness-phase}
+# How to Determine if your Deployment is Ready to be Moved to AEM as a Cloud Service  {#readiness-phase}
+
+In this part of the AEM as a Cloud Service Migration Journey you will you will familiarize yourself with AEM as a Cloud Service and review the notable changes that it has introduced.
+
+## The Store So Far {#story-so-far}
+
+In the prevuious document of the journey, [Getting Started with Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md), you learned what are the benefits of moving to AEM as a Cloud Service, as well as an overview of the steps needed to do so.
+
+<!-- Alexandru: to review if this is still needed
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_planning"
 >title="Planning your Transition"
 >abstract="Before beginning your transition journey to Cloud Service, you should familiarize yourself with AEM as a Cloud Service and review the notable changes that have been made to it and also review the features that have been replaced or deprecated."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices Analyzer"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices Analyzer" -->
 
-Before beginning your transition journey to Cloud Service, you should familiarize yourself with AEM as a Cloud Service and review the notable changes that have been made to it and also review the features that have been replaced or deprecated.
+## Objective {#objective}
+
+This document helps you understand what factors you need to take into account in order to make sure your AEM installation is ready to be moved to the cloud:
+
+* Learn about notable changes and deprecated features
+* Understand the planning phase of the migration
 
 ## Notable Changes {#notable-changes}
 
@@ -53,3 +65,11 @@ Once you have estimated the level of effort that will be required to move to Clo
 If you have not established Key Performance Indicators (KPIs) previously, it is recommended to establish KPIs for your Adobe Experience Manager (AEM) implementation to help your team focus on what matters the most. 
 
 Refer to [Developing KPIs](https://guided.adobe.com/welcome/aem/part6.html) to learn how to choose the right KPIs for your business objectives.
+
+## What's Next {#what-is-next}
+
+What's next text stub.
+
+## Additional Resources {#additional-resources}
+
+This is where additional resources should be.
