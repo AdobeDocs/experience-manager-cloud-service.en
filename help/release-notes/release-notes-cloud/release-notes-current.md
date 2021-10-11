@@ -65,17 +65,16 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Use Adobe Sign roles in an Adaptive Form**: Adobe Sign for business and enterprise service levels have the option to expand the roles for Agreement recipients, beyond just the Signer, to better match their workflow requirements. You can now [enable each recipient of agreement to configure their role in an Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), with Signer being the default role.
 
-* **Analytics for Adaptive Forms**: You can now capture and track end user behavior via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
+* **Analytics for Adaptive Forms**: You can now capture and [track end user behavior via Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-aem-forms-with-adobe-analytics.html) for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
 
 * **Easily connect AEM Forms with Microsoft Dynamics and Salesforce**: The service provides out of the box data source configuration and data models for Microsoft Dynamics and Salesforce, making it [faster and easier for developers to configure Microsoft Dynamics and Salesforce as data sources for an adaptive form](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
 
-* **E-Sign an adaptive form using DocuSign:** You can use DocuSign to e-sign an adaptive form. The service provides a custom submit action to use DocuSign with an adaptive form. You can install the package available on Software Distribution to import the submit action.
+* **E-Sign an adaptive form using DocuSign:** [You can use DocuSign to e-sign an adaptive form](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-docusign-adaptive-forms.html). The service provides a custom submit action to use DocuSign with an adaptive form.
 
 ### Beta features of [!DNL Forms]  {#sep-what-is-new-forms-prerelease}
 
-* **Unified Storage Connector:** Use Unified Storage Connector to externalize in-process data in customer-managed repositories. For example, you can
-  * Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository. 
-  * Store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) in a customer-managed repository.  
+* **Unified Storage Connector:** Use Unified Storage Connector to externalize in-process data in customer-managed repositories. For example, you can store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) in a customer-managed repository.
+  <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->  
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) help you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
   * Generate documents by populating template files with XML data.
