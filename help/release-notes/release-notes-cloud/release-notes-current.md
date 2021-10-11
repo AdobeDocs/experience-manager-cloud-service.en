@@ -65,11 +65,11 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Use Adobe Sign roles in an Adaptive Form**: Adobe Sign for business and enterprise service levels have the option to expand the roles for Agreement recipients, beyond just the Signer, to better match their workflow requirements. You can now [enable each recipient of agreement to configure their role in an Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), with Signer being the default role.
 
-* **Analytics for Adaptive Forms**: You can now capture and track end user behavior via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
+* **Analytics for Adaptive Forms**: You can now capture and [track end user behavior via Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-aem-forms-with-adobe-analytics.html) for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
 
 * **Easily connect AEM Forms with Microsoft Dynamics and Salesforce**: The service provides out of the box data source configuration and data models for Microsoft Dynamics and Salesforce, making it [faster and easier for developers to configure Microsoft Dynamics and Salesforce as data sources for an adaptive form](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
 
-* **E-Sign an adaptive form using DocuSign:** You can use DocuSign to e-sign an adaptive form. The service provides a custom submit action to use DocuSign with an adaptive form.
+* **E-Sign an adaptive form using DocuSign:** [You can use DocuSign to e-sign an adaptive form](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-docusign-adaptive-forms.html). The service provides a custom submit action to use DocuSign with an adaptive form.
 
 ### Beta features of [!DNL Forms]  {#sep-what-is-new-forms-prerelease}
 
