@@ -246,7 +246,7 @@ Usage can differ depending on whether you are using an AEM author or publish env
 
 >[!NOTE]
 >
->For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html). 
+>For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html). 
 
 ### Read/Delivery {#read-delivery}
 
@@ -370,7 +370,7 @@ The following status codes can be seen in the relevant circumstances:
 
 See here for detailed API references:
 
-* [Adobe Experience Manager Assets API - Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
