@@ -9,7 +9,7 @@ role: Architect, Developer
 
 # Moving to AEM as a Cloud Service Guide {#moving}
 
-<!-- + [Moving to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
++ [Moving to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + Phases of Transition Journey {#phases}
   + [Readiness](/help/move-to-cloud-service/migration-readiness.md)
   + [Implementation](/help/move-to-cloud-service/migration-implementation.md)
@@ -44,4 +44,4 @@ role: Architect, Developer
   + [Asset Workflow Migration](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
   + [AEM Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
   + [AEM Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
-+ [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/move-to-cloud-service/getting-started.md) -->
++ [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/move-to-cloud-service/getting-started.md)
