@@ -65,6 +65,10 @@ The User Mapping Tool is integrated into the Content Transfer Tool. You can down
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
+1. Click on **Start** from the the dialog box to start the User Mapping process.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
 1. Once User Mapping is complete, click on **Results** to view the summary.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
@@ -80,4 +84,22 @@ If the User Mapping process is stopped due to any of the following reasons:
 * the access token expired during the process or,
 * some other reason
 
-   The progress is saved from where the process stopped. Review the User Mapping log to check the saved progress. Click on the **Start User Mapping** button again to resume from where it left off. Ensure before restarting that the access token is still valid or has been refreshed.
+   >[!NOTE]
+   >The progress is saved from where the process stopped. 
+   
+Follow the steps below to resume the User mapping process:
+
+1. Click on **View Log** to review the User Mapping log to check the saved progress.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
+
+1. Click on the **Start User Mapping** button again to resume from where it left off. 
+
+   >[!NOTE]
+   >Ensure before restarting that the access token is still valid or has been refreshed.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
+
+1. Click on **Start** from the the dialog box to resume the User Mapping process.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
