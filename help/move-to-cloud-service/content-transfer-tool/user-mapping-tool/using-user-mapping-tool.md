@@ -80,4 +80,4 @@ If the User Mapping process is stopped due to any of the following reasons:
 * the access token expired during the process or,
 * some other reason
 
-The progress is saved from where the process stopped. Review the User Mapping log to check the saved progress. Click on the **Start User Mapping** button again to resume from where it left off. Ensure before restarting that the access token is still valid or has been refreshed.
+   The progress is saved from where the process stopped. Review the User Mapping log to check the saved progress. Click on the **Start User Mapping** button again to resume from where it left off. Ensure before restarting that the access token is still valid or has been refreshed.
