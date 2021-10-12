@@ -16,6 +16,7 @@ This guide leads you through the most important AEM Content and Commerce authori
 * Learn the AEM Content and Commerce basics
 * Get started AEM CIF authoring basics
 * Create product catalog experiences with individual templates and content
+* Manage staged product catalog experiences
 * Enrich product data with content using Product Experience Management Tools
 
 ## AEM Documentation Journeys {#documentation-journeys}
@@ -44,7 +45,8 @@ Although you can go directly to a particular part of the journey, many concepts 
 |1|[Learn about AEM Content and Commerce](/help/commerce-cloud/introduction.md)|Learn concepts and basics about AEM Content and Commerce.|
 |2|[Getting Started with AEM CIF authoring basics](getting-started.md)|Learn how to access and use product data for your authoring use-cases.|
 |3|[Manage product catalog pages and template](catalog-templates.md)|Learn how to create a typical product catalog experience.|
-|4|[Building Product Experiences](product-experience-management.md)|Get to know how to augment product data with immersive content in AEM.|
+|4|[Manage staged product catalog experiences](staged-catalog.md)|Learn how to create future product catalog experience with staged data and AEM Launches.|
+|5|[Building Product Experiences](product-experience-management.md)|Get to know how to augment product data with immersive content in AEM.|
 
 ## What's Next {#what-is-next}
 

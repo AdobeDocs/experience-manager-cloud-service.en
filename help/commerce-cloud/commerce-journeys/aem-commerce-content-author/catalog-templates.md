@@ -31,7 +31,6 @@ Clicking on a category will open the category page (or product list page).
 Catalog pages are built dynamically using an AEM CIF catalog template. Real-time product data is requested from the commerce backend whenever needed.
 ![catalog structure](assets/catalog-structure.png)
 
-
 ## What's Next {#what-is-next}
 
 Now that you have completed this part of the journey you should:
@@ -42,6 +41,6 @@ Build on this knowledge and continue your journey by next reviewing the document
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the journey by reviewing the document [Building Product Experiences](product-experience-management.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+While it is recommended that you move on to the next part of the journey by reviewing the document [Manage staged product catalog experiences](staged-catalog.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [Migration guide for the Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - How to migrate to the AEM Commerce Integration Framework (CIF) add-on from an old version
