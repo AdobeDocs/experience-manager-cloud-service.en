@@ -72,12 +72,12 @@ The User Mapping Tool is integrated into the Content Transfer Tool. You can down
    >[!IMPORTANT]
    >* Once User Mapping is complete, you can navigate back to Content Migration page using the breadcrumb. The User Mapping card displays the status and timestamp. Click on **Content Transfer** to create a migration Set to run extraction. Refer to [Running the Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) for more details.
 
-### Resuming the User Mapping Process {#resume-user-mapping}
+### Resuming the User Mapping Process {#resume-user-mapping-process}
 
 If the User Mapping process is stopped due to any of the following reasons:
 
 * The user selected **Stop User Mapping**
 * the access token expired during the process or,
-* some other reason.
+* some other reason
 
 The progress is saved from where the process stopped. Review the User Mapping log to check the saved progress. Click on the **Start User Mapping** button again to resume from where it left off. Ensure before restarting that the access token is still valid or has been refreshed.
