@@ -190,12 +190,12 @@ The Release Date for Content Transfer Tool v1.6.0 is October 04, 2021.
 
 ### What's New {#what-is-new-ctt}
 
-* Improved User Mapping with a simplified User Experience, including the following features listed below. For more details, refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
+* Improved User Mapping Tool with a simplified User Experience, including the following features listed below. For more details, refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
   * Test connection to the User Management API before running the User Mapping
   * Gracefully skip errors and continue with the User Mapping activity
-  * User Mapping no longer fails if Access Token expires (after 24 hours). User Mapping can be re-run from where it last stopped.
+  * User Mapping no longer fails if **Access Token** expires after 24 hours. User Mapping can be re-run from where it last stopped.
 
-* To increase CTT robustness, content can be ingested to either Author instance or Publish instance at a time. 
+* To increase the Content Transfer Tool robustness, content can be ingested to either Author instance or Publish instance at a time. See [Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en) for more details.
 
 * When versions are included, the path `/var/audit` is automatically included to migrate audit events.
 
