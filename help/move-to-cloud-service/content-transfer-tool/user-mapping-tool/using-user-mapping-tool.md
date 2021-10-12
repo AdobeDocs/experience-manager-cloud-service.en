@@ -92,7 +92,7 @@ If the User Mapping process is stopped due to any of the following reasons:
    >[!NOTE]
    >The progress is saved from where the process stopped. 
    
-Follow the steps below to resume the User mapping process:
+Follow the steps below to resume the User Mapping process:
 
 1. Click on **View Log** to review the User Mapping log to check the saved progress.
 
@@ -108,3 +108,7 @@ Follow the steps below to resume the User mapping process:
 1. Click on **Start** from the the dialog box to resume the User Mapping process.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   Once the User Mapping process completes, you will view the **Status** as **FINISHED** for that specific configuration.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)   
