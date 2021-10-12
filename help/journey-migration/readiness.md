@@ -1,12 +1,12 @@
 ---
-title: How to Determine if your Deployment is Ready to be Moved to AEM as a Cloud Service 
+title: Determining if your Deployment is Ready to be Moved to AEM as a Cloud Service 
 description: Learn about the steps you need to take in order to make sure that your AEM installation is ready to be moved to the cloud
 ---
-# How to Determine if your Deployment is Ready to be Moved to AEM as a Cloud Service  {#readiness-phase}
+# Determining if your Deployment is Ready to be Moved to AEM as a Cloud Service  {#determining-if-your-deployment-is-ready}
 
-In this part of the AEM as a Cloud Service Migration Journey you will you will familiarize yourself with AEM as a Cloud Service and review the notable changes that it has introduced.
+In this part of the AEM as a Cloud Service Migration Journey you will you will familiarize yourself with AEM as a Cloud Service, review the notable changes that it has introduced and understand what it takes to plan for a successful migration to the cloud.
 
-## The Store So Far {#story-so-far}
+## The Story So Far {#story-so-far}
 
 In the prevuious document of the journey, [Getting Started with Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md), you learned what are the benefits of moving to AEM as a Cloud Service, as well as an overview of the steps needed to do so.
 
@@ -68,7 +68,7 @@ Refer to [Developing KPIs](https://guided.adobe.com/welcome/aem/part6.html) to l
 
 ## What's Next {#what-is-next}
 
-What's next text stub.
+Once you understand the scope of the changes required to move to AEM as a Cloud Service, it's time to [Make your code and content cloud ready](/help/journey-migration/making-your-code-and-content-cloud-ready.md) before actually performing the migration.
 
 ## Additional Resources {#additional-resources}
 

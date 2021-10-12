@@ -21,10 +21,10 @@ With AEM as a Cloud Service, your teams can focus on innovating instead of plann
 
 ## Understanding the Transition to AEM as a Cloud Service {#understanding-transition-to-aem-as-a-cloud-service}
 
-The transition journey to Cloud Service involves the following phases:
+The migration journey to Cloud Service involves the following phases:
 
-* [Readiness](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-readiness.html?lang=en)
-* [Implementation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-implementation.html?lang=en)
+* [Determining if your Deployment is Ready to be Moved to AEM as a Cloud Service](/help/journey-migration/readiness.md)
+* [Making your Code and Content Cloud Ready](/help/journey-migration/making-your-code-and-content-cloud-ready.md)
 * [Go Live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-go-live.html?lang=en)
 * [Post Go Live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-post-go-live.html?lang=en)
 
