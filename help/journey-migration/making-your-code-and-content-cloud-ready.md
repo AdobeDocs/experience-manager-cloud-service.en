@@ -13,7 +13,7 @@ In the previous parts of the journey you've went through [getting familiar with 
 
 This article continues on with advice on how to execute the migration using Adobe provided tools.
 
-# Objective {#objective}
+## Objective {#objective}
 
 This document aims to:
 
@@ -23,7 +23,7 @@ This document aims to:
 
 ## Using Cloud Manager {#using-cloud-manager}
 
-Before you start the Execution phase, you need to familiarize yourself with Cloud Manager since it is the sole mechanism for deploying code to AEM as a Cloud Service. 
+Before you start, you need to familiarize yourself with Cloud Manager since it is the sole mechanism for deploying code to AEM as a Cloud Service. 
 
 Cloud Manager enables organizations to self-manage AEM in the Cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security. 
 
