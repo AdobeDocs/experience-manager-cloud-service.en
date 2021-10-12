@@ -1,11 +1,29 @@
 ---
-title: Implementation Phase
-description: Implementation Phase
+title: Making your Code and Content Cloud Ready
+description: Making sure your code and content are ready for the migration to the cloud
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
 ---
-# Implementation {#implementation-phase}
+# Making your Code and Content Cloud Ready {#making-your-code-and-content-cloud-ready}
 
-Before you start the Execution phase, you should be on-boarded to Cloud Service. You also need to familiarize yourself with Cloud Manager since it is the sole mechanism for deploying code to AEM Cloud Service. 
+In this step of the journey, you will explore the tools through which you can make your code and content ready to be moved over to AEM as a Cloud Service.
+
+## The Story So Far {#story-so-far}
+
+In the previous parts of the journey you've went through [getting familiar with the changes in AEM as a Cloud Service](/help/journey-migration/getting-started.md), as well as [determining if your deployment is ready to be moved to the cloud](/help/journey-migration/readiness.md).
+
+This article continues on with advice on how to execute the migration using Adobe provided tools.
+
+# Objective {#objective}
+
+This document aims to:
+
+* Introduce you to Cloud Manager, AEM's continuous integration and delivery framework used to deploy code to AEM as a Cloud Service
+* Get you up to speed with the content transfer tool
+* Describe the code refactoring tools you will have to use in order to modernize your code for AEM as a Cloud Service
+
+## Using Cloud Manager {#using-cloud-manager}
+
+Before you start the Execution phase, you need to familiarize yourself with Cloud Manager since it is the sole mechanism for deploying code to AEM as a Cloud Service. 
 
 Cloud Manager enables organizations to self-manage AEM in the Cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security. 
 
@@ -17,14 +35,15 @@ Refer to the following resources below for more details:
 
 * [Adobe Experience as a Cloud Service Configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#aem-configuration) to learn about Managing Products and User Access in Admin Console.
 
-
-## Introduction {#introduction}
+## Understanding the Execution Phase of the Migration {#execution-phase}
 
 The exact steps of your transition to Cloud Service depends on the systems you have purchased and the software development life-cycle practices you follow.
 
 The following figure shows the main steps involved in the Execution phase:
 
 ![image](/help/move-to-cloud-service/assets/exec-image1.png)
+
+Below you will find information about the tools you need to leverage in order to achieve this.
 
 ## Content Transfer {#content-transfer}
 
@@ -42,7 +61,7 @@ Refer to [Content Transfer Tool](/help/move-to-cloud-service/content-transfer-to
 
 ## Code Refactoring {#code-refactor}
 
-Developing and running code in AEM as a Cloud Service requires a change in the mind-set. It should be noted that code must be resilient, especially as an instance might be stopped at any time. Code running in Cloud Service must be aware of the fact that it is always running in a cluster. This means that there is always more than one instance running.
+Developing and running code in AEM as a Cloud Service requires a change in the mindset. It should be noted that code must be resilient, especially as an instance might be stopped at any time. Code running in Cloud Service must be aware of the fact that it is always running in a cluster. This means that there is always more than one instance running.
 
 Certain changes are required to AEM Maven projects to be compatible with AEM as a Cloud Service. AEM as a Cloud Service requires a separation of *content* and *code* into discrete packages for deployment into AEM.  
 
@@ -104,4 +123,10 @@ Follow the resources below to learn how to use Cloud Manager to manage and deplo
 
 * [Deploying your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
 
+## What's Next {#what-is-next}
 
+What is next text stub.
+
+## Additional Resources {#additional-resources}
+
+This is where additional resources should be.
