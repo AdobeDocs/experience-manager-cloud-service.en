@@ -69,6 +69,11 @@ The User Mapping Tool is integrated into the Content Transfer Tool. You can down
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
+   It displays the **Status** as **RUNNING**.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
+
+
 1. Once User Mapping is complete, click on **Results** to view the summary.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
