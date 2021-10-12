@@ -25,20 +25,25 @@ Follow the steps below to set this up:
 
 The User Mapping Tool is integrated into the Content Transfer Tool. You can download the Content Transfer Tool from [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). For more details on the latest version, refer to the [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **User Mapping**.
+1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Content Migration**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing1.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
+
+1. Click on **User Mapping** card.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access2.png)
 
 1. Click on **Create User Mapping Config**.
 
    >[!NOTE]
    >If you skip this step, users and groups mapping will be skipped during the Extraction phase.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing2.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access5.png)
 
    Populate the fields in **User Management API Configuration**, as described below.
 
-    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing3.png)
+    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
+
 
    * **Org ID**:  Enter the Adobe Identity Management System (IMS) Org ID for the organization the users are being migrated.  
 
@@ -53,6 +58,8 @@ The User Mapping Tool is integrated into the Content Transfer Tool. You can down
       >The Access Token expires every 24 hours and a new one needs to be created. To create a new token, go back into [Adobe Developer Console](https://console.adobe.io), choose your project, click on **User Management API** and paste the same private key into the box.
 
 1. After populating the fields, click on **Test Configuration** to test the connection to the User Management API service. If the connection is successful, you will be able to click on **Save** to save the configuration. 
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
 1. After saving the configuration, select the configuration and click on **Start User Mapping**.
 
