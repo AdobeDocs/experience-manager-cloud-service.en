@@ -1,9 +1,9 @@
 ---
-title: Guideline and  Best Practices for using Content Transfer Tool
-description: Guideline and  Best Practices for using Content Transfer Tool
+title: Guidelines and  Best Practices for using Content Transfer Tool
+description: Guidelines and  Best Practices for using Content Transfer Tool
 ---
 
-# Guideline and  Best Practices for using Content Transfer Tool {#guidelines}
+# Guidelines and  Best Practices for using Content Transfer Tool {#guidelines}
 
 ## Guidelines and Best Practices {#best-practices}
 
@@ -75,3 +75,7 @@ Follow the section below to understand the important considerations while runnin
 * If you intend to do top ups, it is essential that the content structure of existing content is not changed from the time the initial extraction is taken to when the top-up extraction is run. Top-ups cannot be run on content whose structure has been changed since the initial extraction. Please ensure you restrict this during the migration process.
 
 * If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
+
+## What's Next {#whats-next}
+
+Once you have learned the guidelines, best practices, and the important considerations for using Content Transfer Tool, you are now ready to install and use the tool, starting with creation of a migration set. See [Getting Started with Content Transfer Too](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) to learn more.
