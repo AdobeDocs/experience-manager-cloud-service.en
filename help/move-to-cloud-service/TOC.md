@@ -38,7 +38,8 @@ role: Architect, Developer
     + [Ingesting Content into Target in Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
     + [Viewing Logs for a Migration Set](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
     + [Deleting a Migration Set](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
-    + [Using Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
+    + [Running the Content Transfer Tool on a Publish Instance](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
+    + [Troubleshooting Content Transfer Too](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
     + User Mapping Tool {#user-mapping-tool}
       + [Overview](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
       + [Important Considerations](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
