@@ -77,26 +77,24 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
 1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Content Migration**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. Select the **Content Transfer** option from **Content Migration** wizard.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. The console below appears when you create the first migration set. Click on **Create Migration Set** to create a new migration set. 
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
-   
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
    
    >[!NOTE]
    >If you have existing migration sets, the console will display the list of existing migration sets with their current status.
 
-   Additionally, click on **Create User Mapping Config** to access the [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
 
 1. Populate the fields in **Create Migration Set** screen, as described below.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
    
    1. **Name**: Enter the name of the migration set.
       >[!NOTE]
@@ -117,6 +115,8 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
       1. **Include Version**: Select as required. When versions are included, the path `/var/audit` is automatically included to migrate audit events.
 
+      ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+
       >[!NOTE]
       >If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
 
@@ -131,6 +131,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
          >* `/libs`
          >* `/home`
          >* `/etc` (some `/etc` paths are allowed to be selected in CTT)
+
 
 1. Click **Save** after you populate all the fields in the **Create Migration Set** details screen.
 
