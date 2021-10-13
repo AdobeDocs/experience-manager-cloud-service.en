@@ -27,7 +27,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
-   Additionally, click on **Customer Care** to log a ticket, as shown in the figure above. Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) to learn more.
+   Additionally, click on **Customer Care** to log a ticket, as shown in the figure above. Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status updates to **FINISHED**.
 
