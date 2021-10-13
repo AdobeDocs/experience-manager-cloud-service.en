@@ -18,3 +18,8 @@ role: Developer, Architect
   + [Configure translation rules](translation/translation-rules.md)
   + [Translate content](translation/translate-content.md)
   + [Publish translated content](translation/publish-content.md)
++ AEM Quick Site Creation Journey {#quick-site}
+  + [Understand Cloud Manager](quick-site/cloud-manager.md)
+  + [Set up your pipeline](quick-site/pipeline-setup.md)
+  + [Customize the site theme](quick-site/customize-theme.md)
+  + [Deploy your customized theme](quick-site/deploy-theme.md)
