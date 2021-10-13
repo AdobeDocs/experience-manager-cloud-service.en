@@ -16,11 +16,11 @@ The Content Transfer Tool (CTT) does not perform any kind of content analysis be
 
 Follow the recommended approach as described below:
 
-* Use the same version of the CTT which was used on the Author instance.
+* Use the same version of the Content Transfer Tool which was used on the Author instance.
 
 * Only a single publish node needs to be migrated. It should be removed from the load balancer prior to beginning the extraction.
 
-* When creating the migration set, use the URL of the author AEMaaCS environment.
+* When creating the migration set, use the URL of the author AEM as a Cloud Service environment.
 
 * During ingestion to publish, the publish tier will NOT be scaled down (unlike the author). As a precaution, please avoid any user initiated write operations such as:
 
