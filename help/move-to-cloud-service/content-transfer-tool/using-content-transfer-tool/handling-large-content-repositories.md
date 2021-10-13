@@ -169,3 +169,7 @@ Final Job Status: CompletedWithSkipped
  
 *************** Completed AzCopy pre-copy phase ***************
 ```
+
+## What's Next {#whats-next}
+
+Once you have learned Handling Large Content Repositories to significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service, you are now ready to learn the Extraction Process in Content Transfer Tool. See [Extracting Content from Source in Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) to learn how to extract your migration set from the Content Transfer Tool.
