@@ -17,7 +17,7 @@ exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 
 >[!NOTE]
 >
->IMS login for AEM as a Cloud Service does not support nested groups in the Admin Console.
+>AEM currently does not support assigning groups to profiles. Users should be added individually instead.
 
 ## Key Highlights {#key-highlights}
 
