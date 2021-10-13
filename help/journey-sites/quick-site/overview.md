@@ -28,7 +28,7 @@ If you want to know how Adobe recommends how to solve sites business cases with 
 
 ## Audience {#audience}
 
-This journey lays out the requirements, steps, and approach to customize AEM Sites themes. Its primary audience is the front end developer, who needs no knowledge of AEM. However, in oder to illustrate the entire process, the journey involves the administrator, who is assumed to have basic AEM Cloud Manager knowledge. In some cases, the same person may serve both roles.
+This journey lays out the requirements, steps, and approach to customize AEM Sites themes. Its primary audience is the front end developer, who needs no knowledge of AEM. However, in oder to illustrate the entire process, the journey involves the administrator, who is assumed to have basic AEM Sites and Cloud Manager knowledge. In some cases, the same person may serve both roles.
 
 |Persona|Description|Role in Journey|
 |---|---|---|
@@ -44,9 +44,10 @@ You will explore many topics in this journey. The following articles give you fo
 |---|---|---|
 |0|AEM Quick Site Creation Journey|This document|
 |1|[Understand Cloud Manager](cloud-manager.md)|Learn about Cloud Manager, the orchestration tool that enables theme download and deployment.|
-|2|[Set up your pipeline](pipeline-setup.md)|Create a front end pipeline to manage the customization of your site's theme.|
-|3|[Customize the site theme](customize-theme.md)|Learn how the theme is built, how to customize, and how to test using live AEM content.|
-|4|[Deploy your customized theme](deploy-theme.md)|Learn how to deploy the theme using the pipeline.|
+|2|[Create site from template](create-site.md)|Learn how to quickly create a new AEM site using a template.|
+|3|[Set up your pipeline](pipeline-setup.md)|Create a front end pipeline to manage the customization of your site's theme.|
+|4|[Customize the site theme](customize-theme.md)|Learn how the theme is built, how to customize, and how to test using live AEM content.|
+|5|[Deploy your customized theme](deploy-theme.md)|Learn how to deploy the theme using the pipeline.|
 
 ## What's Next {#what-is-next}
 
