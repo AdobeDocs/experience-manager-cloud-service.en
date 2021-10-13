@@ -4,7 +4,7 @@ description: Learn about the steps you need to take in order to make sure that y
 ---
 # Determining if your Deployment is Ready to be Moved to AEM as a Cloud Service  {#determining-if-your-deployment-is-ready}
 
-In this part of the AEM as a Cloud Service Migration Journey you will you will familiarize yourself with AEM as a Cloud Service, review the notable changes that it has introduced and understand what it takes to plan for a successful migration to the cloud.
+In this part of the AEM as a Cloud Service Migration Journey you will familiarize yourself with AEM as a Cloud Service, review the notable changes that it has introduced and understand what it takes to plan for a successful migration to the cloud.
 
 ## The Story So Far {#story-so-far}
 
@@ -35,7 +35,7 @@ Refer to [Notable Changes to AEM Cloud Service](https://experienceleague.adobe.c
 
 ## Deprecated Features {#deprecated-features}
 
-Adobe constantly evaluates product capabilities, to over time reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility. 
+Adobe constantly evaluates product capabilities, to over time reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility.
 
 Refer to [Deprecated Features](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features) to learn more about features and capabilities that have been marked as deprecated in Experience Manager as a Cloud Service.
 
@@ -47,7 +47,7 @@ The following figure showcases key steps involved during the Planning phase:
 
 ### Assessing Cloud Service Readiness {#access-cloud-readiness}
 
-The first step in the Planning phase is to assess your readiness to move from your existing AEM version to Cloud Service and determine areas that will require refactoring to be compatible with AEM as a Cloud Service. 
+The first step in the Planning phase is to assess your readiness to move from your existing AEM version to Cloud Service and determine areas that will require refactoring to be compatible with AEM as a Cloud Service.
 
 You will need to do a comprehensive assessment of your current AEM source code against the notable changes and deprecated features to determine the level of effort expected in the transition journey.
 
@@ -58,11 +58,11 @@ You can accelerate the assessment step by running the Best Practices Analyzer on
 
 ### Reviewing Resource Planning {#review-resource-planning}
 
-Once you have estimated the level of effort that will be required to move to Cloud Service, you should identify resources, create a team, and map out roles and responsibilities for the transition process. 
+Once you have estimated the level of effort that will be required to move to Cloud Service, you should identify resources, create a team, and map out roles and responsibilities for the transition process.
 
 ### Establishing KPIs {#establish-kpis}
 
-If you have not established Key Performance Indicators (KPIs) previously, it is recommended to establish KPIs for your Adobe Experience Manager (AEM) implementation to help your team focus on what matters the most. 
+If you have not established Key Performance Indicators (KPIs) previously, it is recommended to establish KPIs for your Adobe Experience Manager (AEM) implementation to help your team focus on what matters the most.
 
 Refer to [Developing KPIs](https://guided.adobe.com/welcome/aem/part6.html) to learn how to choose the right KPIs for your business objectives.
 
