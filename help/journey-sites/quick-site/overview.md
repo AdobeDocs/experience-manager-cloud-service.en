@@ -10,6 +10,10 @@ hidefromtoc: yes
 
 Start here for a guided journey through the simple-to-use AEM Quick Site Creation tool to streamline the front end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
 
+>[!CAUTION]
+>
+>The Quick Site Creation tool is currently a tech preview. It is made available for testing and evaluation purposes and is not intended for production use unless agreed with Adobe Support.
+
 ## Introduction {#introduction}
 
 AEM Sites is a powerful tool set for creating and managing digital experiences. Content authors can easily create digital experiences using the sites editor and organize the content using the sites console, all while being able to see the content live as it will be delivered by AEM to your audiences across channels.
