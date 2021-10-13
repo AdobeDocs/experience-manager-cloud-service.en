@@ -7,10 +7,10 @@ description: Running the Content Transfer Tool on a Publish Instance
 
 ## Introduction {#introduction}
 
-The Content Transfer Tool (CTT) does not perform any kind of content analysis before transferring content from the source instance to the target instance. For example, CTT does not differentiate between published and unpublished content while ingesting content into a Publish environment. Whatever content is specified in the migration set will be ingested into the chosen target instance. User has the ability to ingest a migration set into an Author instance or Publish instance or both. It is recommended that while moving content to a Production instance, CTT be installed on the source Author instance to move content to the target Author instance and similarly, install CTT on the source Publish instance to move content to the target Publish instance.
+The Content Transfer Tool (CTT) does not perform any kind of content analysis before transferring content from the source instance to the target instance. For example, CTT does not differentiate between published and unpublished content while ingesting content into a Publish environment. Whatever content is specified in the migration set will be ingested into the chosen target instance. User has the ability to ingest a migration set into an Author instance or Publish instance or both. 
 
 >[!NOTE]
->It is recommended that while moving content to a Publish instance, Content Transfer tool be installed on the source Publish instance to move content to the target Publish instance. See [Recommended Approach](#recommended-approach) section below for more details.
+>It is recommended that while moving content to a Production instance, Content Transfer Tool be installed on the source Author instance to move content to the target Author instance and similarly, install Content Transfer Tool on the source Publish instance to move content to the target Publish instance. See [Recommended Approach](#recommended-approach) section below for more details.
 
 ## Recommended Approach {#recommended-approach}
 
