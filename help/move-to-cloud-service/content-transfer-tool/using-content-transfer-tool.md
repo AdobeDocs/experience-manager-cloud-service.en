@@ -5,110 +5,7 @@ exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 ---
 # Using Content Transfer Tool {#using-content-transfer-tool}
 
-## Availability {#availability}
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_download"
->title="Download"
->abstract="The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Release Notes"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
-
-The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version. For more details on the latest version, refer to [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
-
->[!NOTE]
->Download the Content Transfer Tool, from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
-
-## Running the Content Transfer Tool {#running-tool}
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_demo"
->title="Running Content Transfer Tool"
->abstract="Learn how to use Content Transfer Tool to migrate the content to AEM as a Cloud Service (Author/Publish)."
->additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" See Demo"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial - using Content Transfer Tool"
-
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
-
-
-Follow this section to learn how to use Content Transfer Tool to migrate the content to AEM as a Cloud Service (Author/Publish):
-
-1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Content Migration**.
-
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
-
-1. Select the **Content Transfer** option from **Content Migration** wizard.
-
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
-
-
-1. The console below appears when you create the first migration set. Click on **Create Migration Set** to create a new migration set. 
-
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
-   
-   >[!NOTE]
-   >If you have existing migration sets, the console will display the list of existing migration sets with their current status.
-
-
-1. Populate the fields in **Create Migration Set** screen, as described below.
-
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
-   
-   1. **Name**: Enter the name of the migration set.
-      >[!NOTE]
-      >No special characters are allowed for the migration set name.
-
-   1. **Cloud Service Configuration**: Enter the destination AEM as a Cloud Service Author URL.
-
-      >[!NOTE]
-      >You can create and maintain a maximum of ten migration sets at a time during the content transfer activity.
-      >Additionally, you have to create a migration separately for each of the specific environments - *Stage*, *Development*, or *Production*.
-
-   1. **Access Token**: Enter the access token.
-
-      >[!NOTE]
-      >You can retrieve the access token by using the **Open access token** button. You need to ensure that you belong to the AEM administrators' group in the target Cloud Service instance.
-
-   1. **Parameters**: Select the following parameters to create the migration set:
-
-      1. **Include Version**: Select as required. When versions are included, the path `/var/audit` is automatically included to migrate audit events.
-
-      ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
-
-      >[!NOTE]
-      >If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
-
-      1. **Include Mapping from IMS Users and Groups**: Select the option to include mapping from IMS Users and Groups. 
-      Refer to [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
-
-      1. **Paths to be included**: Use path browser to select paths which need to be migrated. Path picker accepts input by typing or by selection.
-
-         >[!IMPORTANT]
-         >Following paths are restricted while creating a migration set:
-         >* `/apps`
-         >* `/libs`
-         >* `/home`
-         >* `/etc` (some `/etc` paths are allowed to be selected in CTT)
-
-
-1. Click on **Save** after you populate all the fields in the **Create Migration Set** details screen.
-
-1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
-
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
-
-   All the existing migration sets are displayed on the **Content Transfer** wizard with their current status and status information. You may see some of these icons described below.
-
-   * A *red cloud* indicates that you cannot complete the extraction process.
-   * A *green cloud* indicates that you can complete the extraction process.
-   * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
-
-1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
-
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
-
-
-### Extraction Process in Content Transfer {#extraction-process}
+## Extraction Process in Content Transfer {#extraction-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
@@ -140,7 +37,7 @@ Follow the steps below to extract your migration set from the Content Transfer T
    >The UI has an auto-reload feature that reloads the overview page every 30 seconds.
    >When extraction phase is started, write lock is created and released after *60 seconds*. So, if an extraction is stopped, you need to wait for a minute for lock to be released before starting extraction again.
 
-#### Top-Up Extraction {#top-up-extraction-process}
+### Top-Up Extraction {#top-up-extraction-process}
 
 The Content Transfer Tool has a feature that supports differential content top-up where it is possible to transfer only changes made since the previous content transfer activity.
 
@@ -158,7 +55,7 @@ Once the extraction process is complete, you can transfer delta content, by usin
    >
    >![image](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
-### Ingestion Process in Content Transfer {#ingestion-process}
+## Ingestion Process in Content Transfer {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
@@ -186,7 +83,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
-#### Top Up Ingestion {#top-up-ingestion-process}
+### Top Up Ingestion {#top-up-ingestion-process}
 
 The Content Transfer Tool has a feature that supports differential content *top-up* where it is possible to transfer only changes made since the previous content transfer activity.
 
