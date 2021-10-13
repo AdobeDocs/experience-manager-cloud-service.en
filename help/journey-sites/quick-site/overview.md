@@ -1,9 +1,9 @@
 ---
 title: AEM Quick Site Creation Journey
 description: Start here for a guided journey through the simple-to-use AEM Quick Site Creation tool to streamline the front end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
-index: yes
-hide: no
-hidefromtoc: no
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 
 # AEM Quick Site Creation Journey {#quick-site-creation-journey}
