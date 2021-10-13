@@ -1,9 +1,9 @@
 ---
 title: Understand Cloud Manager
 description: Learn about Cloud Manager, the orchestration tool that enables theme download and deployment.
-index: yes
-hide: no
-hidefromtoc: no
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 
 # Understand Cloud Manager {#understand-cloud-manager}
