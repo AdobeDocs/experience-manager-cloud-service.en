@@ -32,7 +32,7 @@ role: Architect, Developer
     + [Overview](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
     + [Prerequisites for Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
     + [Guidelines and Best Practices for Using Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
-    + [Getting Started with Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/gettting-started-content-transfer-tool.md)
+    + [Getting Started with Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
     + [Handling Large Content Repositories](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
     + [Extracting Content from Source in Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
     + [Ingesting Content into Target in Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
