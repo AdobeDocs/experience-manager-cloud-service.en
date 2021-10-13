@@ -4,7 +4,7 @@ description: Start your migration journey by familiarizing yourself on the basic
 ---
 # Getting Started with Moving to AEM as a Cloud Service {#getting-started}
 
-In this part of the AEM as a Cloud Service Migration Journey you will learn about the basiscs of moving your on-premise or AMS installation of AEM to the cloud.
+In this part of the AEM as a Cloud Service Migration Journey you will learn about the basics of moving your on-premise or AMS installation of AEM to the cloud.
 
 ## Objective {#objective}
 
@@ -51,7 +51,7 @@ Refer to [Getting Started with Cloud Acceleration Manager](https://experiencelea
 
 ## What's Next {#what-is-next}
 
-Thanks for getting started on your AEM headless journey! Now that you read this document you should get up to speed with [Determining if your Deployment is Ready to be Moved to AEM as a Cloud Service](/help/journey-migration/readiness.md).
+Thanks for getting started on your AEM Cloud Service migration journey! Now that you read this document you should get up to speed with [Determining if your Deployment is Ready to be Moved to AEM as a Cloud Service](/help/journey-migration/readiness.md).
 
 ## Additional Resources {#additional-resources}
 
