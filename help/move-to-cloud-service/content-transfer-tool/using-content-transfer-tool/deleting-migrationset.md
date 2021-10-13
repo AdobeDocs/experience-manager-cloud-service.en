@@ -7,7 +7,7 @@ description: Deleting a Migration Set in Content Transfer Tool
 
 You can delete the migration set from the *Overview* page.
 
-### Steps to Delete a Migration Set from Content Transfer Tool {#deleting-migration-set}
+## Steps to Delete a Migration Set from Content Transfer Tool {#deleting-migration-set}
 
 Follow the steps below:
 
