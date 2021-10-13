@@ -54,3 +54,7 @@ Once the extraction process is complete, you can transfer delta content, by usin
    >You should disable the **Overwrite staging container during extraction** option.
    >
    >![image](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+
+## What's Next {#whats-next}
+
+Once you have learned Extracting Content from Source in Content Transfer Tool, you are now ready to learn the Ingestion Process in Content Transfer Tool. See [Ingesting Content into Target in Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) to learn how to ingest your migration set from the Content Transfer Tool.
