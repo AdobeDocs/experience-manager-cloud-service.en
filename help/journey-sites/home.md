@@ -34,5 +34,6 @@ The following Documentation Journeys are available for AEM Sites topics.
 |Title|Description|Primary Audience|
 |---|---|---|
 |[Sites Translation Journey](/help/journey-sites/translation/overview.md)|Learn about AEM Sites technologies, how they might be used in your project, and how to create and update translation projects in AEM from A to Z.|Translation Specialists|
+|[Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md)|Start here for a guided journey through the simple-to-use AEM Quick Site Creation tool to streamline the front end development of your AEM Site and quickly customize your site with no AEM backend knowledge.|Front end developers|
 
 Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/home.md#journeys)
