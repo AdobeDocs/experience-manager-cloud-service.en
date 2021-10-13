@@ -133,19 +133,21 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
          >* `/etc` (some `/etc` paths are allowed to be selected in CTT)
 
 
-1. Click **Save** after you populate all the fields in the **Create Migration Set** details screen.
+1. Click on **Save** after you populate all the fields in the **Create Migration Set** details screen.
 
-1. You will view your migration set in the *Overview* page.
+1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   All the existing migration sets on this screen are displayed on the *Overview* page with their current status and status information. You may see some of these icons described below.
+   All the existing migration sets are displayed on the **Content Transfer** wizard with their current status and status information. You may see some of these icons described below.
 
    * A *red cloud* indicates that you cannot complete the extraction process.
    * A *green cloud* indicates that you can complete the extraction process.
    * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
-1. Select a migration set from overview page and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the container name or the service URL. 
+1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ### Extraction Process in Content Transfer {#extraction-process}
