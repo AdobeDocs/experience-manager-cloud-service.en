@@ -29,9 +29,11 @@ role: Architect, Developer
     + [Overview](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
     + [Using Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
   + Content Transfer Tool {#content-transfer-tool}
-    + [Overview](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
-    + [Prerequisites for Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
-    + [Handling Large Content Repositories](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
+    + [Overview](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+    + [Prerequisites for Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+    + [Guidelines and Best Practices for Using Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+    + [Getting Started with Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/gettting-started-content-transfer-tool.md)
+    + [Handling Large Content Repositories](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
     + [Using Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
     + User Mapping Tool {#user-mapping-tool}
       + [Overview](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
