@@ -95,7 +95,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
    All the existing migration sets are displayed on the **Content Transfer** wizard with their current status and status information. You may see some of these icons described below.
 
