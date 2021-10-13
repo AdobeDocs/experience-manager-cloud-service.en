@@ -36,10 +36,16 @@ Have a look at the [September 2021 Release Overview](https://video.tv.adobe.com/
 
 ### New features in [!DNL Assets] {#assets-features}
 
+* Annotation of PDF files is now supported using native commenting and annotation tools from Adobe Document Cloud. Annotate PDF content by adding text, highlights, sticky notes, and drawings directly within the document preview window. Users can also jump to pages of interest in the PDF by clicking on specific comments
+
 * Users can now sort the assets displayed in the search results in Column and Card views. The sorting works on Name, Created, Modified, or None columns.
 
   ![Sort the search results in [!DNL Assets] in Column and Card views](/help/assets/assets/sort-searched-assets.png)
   *Figure: Sort the search results in [!DNL Assets] in Column and Card views.*
+
+### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
+
+* [!DNL Assets] now includes a built-in connector to [!DNL Azure Media Services] for audio and video transcription. When configured, the supported files are automatically transcribed and generate WebVTT files. The WebVTT captions are used for more effective searching, captioning, or translation for use as subtitles.
 
 <!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
@@ -50,8 +56,8 @@ Have a look at the [September 2021 Release Overview](https://video.tv.adobe.com/
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-Apparently, no new Assets features in Sep beta channel.
-A/V transcription feature via CQ-4303854 has moved to Oct beta now.
+Apparently, no new Assets features in Sep prerelease channel.
+A/V transcription feature via CQ-4303854 has moved to Oct prerelease now.
 
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
