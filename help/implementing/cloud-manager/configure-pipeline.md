@@ -121,7 +121,10 @@ Follow the steps below to edit the configured pipeline:
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. The **Source** tab allows to ignore web tier configurations and update from **Production Deployment Options**..
+   1. The **Source** tab provides you an option to ignore web tier configuration for your pipeline and check or uncheck **Pause before deploying to Production** and **Scheduled** options from **Production Deployment Options**.
+
+      >[!NOTE]
+      >If **Ignore Web Tier Configuration** is left unchecked, the pipeline will also deploy web tier configuration.
 
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
