@@ -3,7 +3,7 @@ title: Extracting Content from Source in Content Transfer Tool
 description: Extracting Content from Source in Content Transfer Tool
 ---
 
-# Extracting Content from Source in Content Transfer Tool {#extracting-content}
+# Extracting Content from Source {#extracting-content}
 
 ## Extraction Process in Content Transfer Tool {#extraction-process}
 
