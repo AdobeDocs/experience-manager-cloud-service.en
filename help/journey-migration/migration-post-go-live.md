@@ -12,7 +12,6 @@ exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Accessing and Managing Logs"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
 
-
 In the Post Go-live phase, you should ensure clean-up of temporary files, review best practices for continuous development and manage logs.
 
 The following tools are available to troubleshoot AEM as a Cloud Service environments:
@@ -20,7 +19,6 @@ The following tools are available to troubleshoot AEM as a Cloud Service environ
 * **Developer Console**
 * **CRX/DE Lite**
 * **Managing Logs**
-
 
 ## Developer Console {#developer-console}
 
