@@ -29,3 +29,8 @@ scripts=[
         end
         "] 
 ```
+
+## What image formats are recommended for seamless rendition of images in an AEM Screens as a Cloud Service channels?{#screens-cloud-image-format}
+
+It is recommended to use images in the format `.png` and `.jpeg` in an AEM Screens as a Cloud Service channel, for the best digital signage experience.
+The images in the format `*.tif` (Tag Image File format) are not supported in AEM Screens as a Cloud Service. In case, if a channel has this format of image, then, on the player side, the image will not be rendered.
