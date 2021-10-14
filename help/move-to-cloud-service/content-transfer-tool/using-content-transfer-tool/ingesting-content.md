@@ -41,7 +41,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-05.png)
 
 ## Top Up Ingestion {#top-up-ingestion-process}
 
@@ -52,9 +52,18 @@ The Content Transfer Tool has a feature that supports differential content *top-
 
 Once the ingestion process is complete, you can use delta content, by using the top-up ingestion method. Follow the steps below:
 
-1. Navigate to the *Overview* page and select the migration set for which you want to perform the top-up ingestion. Click **Ingest** to start the top-up extraction. The **Migration Set ingestion** dialog box displays. 
+1. Navigate to the **Content Transfer** wizard and select the migration set for which you want to perform the top-up ingestion. Click **Ingest** to start the top-up extraction. 
 
-    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest1.png)
+
+
+1. The **Migration Set ingestion** dialog box displays. 
+
+    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest2.png)
 
    >[!IMPORTANT]
    >You should disable the **Wipe existing content on Cloud instance before ingestion** option, to prevent deleting the existing content from the previous ingestion activity. Additionally, click on **Customer Care** to log a ticket, as shown in the preceding figure.
+
+## What's Next {#whats-next}
+
+Once you have learned Ingesting Content into Target in Content Transfer Tool, you can view logs upon completion of each step (extraction and ingestion) and look for errors. See [Viewing Logs for a Migration Set](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) to learn more.
