@@ -1,6 +1,6 @@
 ---
-title: Ingesting Content into Target in Content Transfer Tool
-description: Ingesting Content into Target in Content Transfer Tool
+title: Ingesting Content into Target
+description: Ingesting Content into Target
 ---
 
 # Ingesting Content into Target {#ingesting-content}
