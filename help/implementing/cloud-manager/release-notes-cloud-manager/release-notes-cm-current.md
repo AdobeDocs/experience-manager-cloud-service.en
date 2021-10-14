@@ -13,12 +13,12 @@ This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service
 
 ## Release Date {#release-date}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.10.0 is October 07, 2021.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.10.0 is October 14, 2021.
 The next release is planned for November 04, 2021.
 
 ### What's New {#what-is-new}
 
-* Existing deployment pipelines will now be referenced and labelled in the UI as 'Full Stack' pipelines. In preparation for some upcoming changes, existing deployment pipelines will now be referenced and labelled in the user interface as **Full Stack** pipelines.
+* In preparation for some upcoming changes, existing deployment pipelines will now be referenced and labelled in the user interface as **Full Stack** pipelines.
 
 * Pipeline card has been refreshed to now display a single, integrated face that shows both production and non-production pipelines, and user can select Run/Pause/Resume directly from the action menu associated with each pipeline.
 
