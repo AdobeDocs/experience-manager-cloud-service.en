@@ -69,9 +69,9 @@ Click on **+Add** and select **Add Production Pipeline**.
       * **Cancel Immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
       * **Approve immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
-1. **Full Stack Code** is selected. You can choose the **Repository** and the **Git Branch**. Click on **Save**.
+1. The **Add production pipeline** dialog box includes a second tab labeled as **Source Code**. **Full Stack Code** is selected. You can choose the **Repository** and the **Git Branch**. Click on **Save**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add3.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
 1. The **Add production pipeline** dialog box includes a third tab labeled as **Experience Audit**. This option provides a table for the URL paths that should always be included in the Experience Audit. 
 
