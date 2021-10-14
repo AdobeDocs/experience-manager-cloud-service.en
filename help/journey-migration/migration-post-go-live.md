@@ -3,7 +3,7 @@ title: Monitoring for issues and improving performance
 description: Learn how to monitor for issues and improve performance
 ---
 
-# Monitoring for issues and improving performance {monitoring-improving-migration}
+# Monitoring for issues and improving performance {#monitoring-improving-migration}
 
 This is the last part of the journey so you will learn to how to monitor for issues and improve performance once the migration is complete.
 
