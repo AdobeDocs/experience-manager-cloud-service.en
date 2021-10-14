@@ -34,20 +34,21 @@ The figure below shows a pictorial representation of the recommended transition 
 
 ![image](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
 
-<!-- Alexandru: Temporarily comment this out. See if any contextual linking can be applied to the new journey structure.
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
+
+<!-- Alexandru: Temporarily comment this out. See if any contextual linking can be applied to the new journey structure.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_overview"
 >title="About Cloud Acceleration Manager"
 >abstract="Cloud Acceleration Manager is a cloud-based application designed to guide your IT teams throughout the transition journey starting from planning to going live on Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html#aem-moving-to-aem-guide" text="Moving to AEM as a Cloud Service"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="Notable Changes to AEM Sites as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="Notable Changes to AEM Sites as a Cloud Service" -->
 
 Cloud Acceleration Manager is a cloud-based application designed to guide your IT teams throughout the transition journey starting from planning to going live on Cloud Service. Set up your teams for a successful migration with Adobe-recommended best practices, tips, documentation, and tools to help at every phase of the journey to AEM as Cloud Service.
 
-Refer to [Getting Started with Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en) to start your migration journey. -->
+Refer to [Getting Started with Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en) to start your migration journey. 
 
 ## What's Next {#what-is-next}
 
