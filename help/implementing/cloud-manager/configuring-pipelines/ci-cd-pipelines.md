@@ -6,6 +6,16 @@ index: no
 
 # Cloud Manager CI-CD Pipelines {#intro-cicd}
 
+## Introduction {#introduction}
+
+>[!NOTE]
+>A CI/CD pipeline in Cloud Manager is triggered by an event, such as a pull request from a source code repository that is, a code change, or a regular schedule to match a release cadence. 
+
+To configure your pipeline, you must:
+* define the trigger that will start the pipeline
+* define the parameters controlling the production deployment
+* configure the performance test parameters
+
 In Cloud Manager, there are two types of Pipeline:
 
 * [Production Pipeline](#prod-pipeline)
@@ -25,19 +35,3 @@ A Non-Production Pipeline aims to run code-quality scans or to deploy source cod
 
 >[!NOTE]
 >Refer to Non-Production & Code Quality Only Pipelines for more details.
-
-The Deployment and Code Quality supported in Production and Non-Production pipeline in Cloud Manager are categorized into two different types:
-
-* Front End
-* Full Stack
-
-The following table summarizes the pipelines:
-
-
->[!NOTE]
->A CI/CD pipeline in Cloud Manager is triggered by an event, such as a pull request from a source code repository that is, a code change, or a regular schedule to match a release cadence. 
->
->To configure your pipeline, you must:
->* define the trigger that will start the pipeline
->* define the parameters controlling the production deployment
->* configure the performance test parameters
