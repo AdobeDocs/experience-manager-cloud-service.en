@@ -75,7 +75,7 @@ Add any image on top of the page.
 
 The template can be previewed with any category. Open "Page Information" and then select ""View with Cateogry". The categor picker appears and allows you to select a category for a preview. Select "Shop The Look" category to get a preview of the updated template.
 
-![create template ](assets/create-template-.png)
+![create template ](assets/create-template-picker.png)
 
 Now we have to assign this template to the specific category. Open properties in the "Page Information" menu and switch to the commerce tab. Click on the folder icon to select the "Shop The Look" category from the category picker. It is possible to assign multiple categories to a template and also including sub-categories by enabling the checkbox.
 
