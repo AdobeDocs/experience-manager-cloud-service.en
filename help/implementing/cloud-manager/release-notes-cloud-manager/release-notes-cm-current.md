@@ -1,36 +1,46 @@
 ---
-title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.9.0
-description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.9.0
+title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.10.0
+description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.10.0
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
 ---
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.9.0 {#release-notes}
+# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.10.0 {#release-notes}
 
-This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.9.0.
+This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.10.0.
 
 >[!NOTE]
 >To see the current Release Notes for Adobe Experience Manager as a Cloud Service, click [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## Release Date {#release-date}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.9.0 is September 09, 2021.
-The next release is planned for October 07, 2021.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.10.0 is October 14, 2021.
+The next release is planned for November 04, 2021.
 
 ### What's New {#what-is-new}
 
-* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 30.
+* In preparation for some upcoming changes, existing deployment pipelines will now be referenced and labelled in the user interface as **Full Stack** pipelines.
 
-* The program cards on Cloud Manager landing page and the associated experience has been refreshed.
+* Pipeline card has been refreshed to now display a single, integrated face that shows both production and non-production pipelines, and user can select Run/Pause/Resume directly from the action menu associated with each pipeline.
 
-* The Code Quality Step Log now includes verbose logging information on the OakPal scanning process.
+* A user in Deployment Manager role can now delete Production pipeline in a self-service manner via the UI.
 
-* The Activity page menu options will now include an option to **Download Log** for completed Code Generator executions. Selecting this will download the log of the build step.
+* Add and edit pipeline experiences have been refreshed to now use familiar, modern modals.
 
-* Clicking directly on the Program card will now navigate to Cloud Manager's **Overview** page. See [Creating a Production Program](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) for more details.
+* Users of Cloud Manager can now submit feedback directly from the user interface via the **Feedback** button on top right of the landing page.
+
+* Yearly SLA Graphs can now be downloaded from the Cloud Manager's user interface. 
+
+* Code quality and non-production pipeline executions will now use a more efficient shallow cloning process during the build step, leading to a faster build time for customers with especially large git repositories. 
+
+* Add IP Allow List wizard will now inform the user if maximum allowed number of IP Allow Lists has been reached. 
+
+* The Cloud Manager API documentation now includes an interactive playground that allows logged-in users to experiment with the API from their browser. See [Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/)
+
+* The tool tip on the Program card will be more descriptive if a selection option under 'Navigate To' is disabled. It now displays "A production environment does not exist." 
 
 ### Bug Fixes {#bug-fixes}
 
-* User will now see a more comprehensible message when trying to add a new IP Allow List in a program that has reached the maximum allowed number of IP Allow Lists that can be configured.
+* In rare situations, when an Adobe staff would restore a customer's environment, the restore was considered complete before the environment was fully operational.
 
-* Wrong URL was copied when selecting the copy URL menu option from Repositories screen. 
+* Certain internal requests made during environment creation were not being retried. 
 
