@@ -1,20 +1,19 @@
 ---
-title: Post Go Live Phase
-description: Post Go Live Phase
-exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
+title: Monitoring for issues and improving performance
+description: Learn how to monitor for issues and improve performance
 ---
-# Post Go Live {#post-go-live}
 
->[!CONTEXTUALHELP]
->id="aemcloud_golive_troubleshooting"
->title="Troubleshooting AEM"
->abstract="Review best practices for continous development and manage logs along with tools like Developer console & CRXDE Lite to help with troubleshooting issues with AEM"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Accessing and Managing Logs"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
+# Monitoring for issues and improving performance {monitoring-improving-migration}
 
-In the Post Go-live phase, you should ensure clean-up of temporary files, review best practices for continuous development and manage logs.
+This is the last part of the journey so you will learn to how to monitor for issues and improve performance once the migration is complete.
 
-The following tools are available to troubleshoot AEM as a Cloud Service environments:
+## The Story So Far {#story-so-far}
+
+In the previous step of the journey, you learned how to perform the migration once the code and the content were ready to be moved over to AEM as a Cloud Service.
+
+## Objective {#objective}
+
+Once you complete the migration, you should the ensure clean-up of temporary files, review best practices for continuous development and manage logs. This document describes the tools that are available to troubleshoot AEM as a Cloud Service environments:
 
 * **Developer Console**
 * **CRX/DE Lite**
@@ -41,7 +40,21 @@ Users can access a list of available log files for the selected environment.
   
 Refer to [Accessing and Managing Logs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) to learn how to access and manage logs through UI or from API via Cloud Manager.
 
-### Additional Support {#additional-support}
+## The Journey Ends - Or Does It? {#journey-ends}
+
+Congratulations! You have completed the AEM as a Cloud Service Migration Journey! You should have an understanding of how to:
+
+* Get started with moving to AEM as a Cloud Service
+* Determine if your deployment is ready to be moved to AEM as a Cloud Service
+* Make your code and content cloud ready
+* Perform the migration
+* Monitor for issues and improve performance
+
+You are now ready to migrate to AEM as a Cloud Service! Check out some of the additional resources available in the Additional Resources section to learn more about the tools and features used in this journey.
+
+## Additional Resources {#additional-resources}
+
+**More resources TBD**
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
@@ -50,3 +63,11 @@ Refer to [Accessing and Managing Logs](https://experienceleague.adobe.com/docs/e
 >additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Support for Experience Cloud"
 
 If you have questions about access to Cloud Service, contact your Adobe representative or [Support for Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) for more details.
+
+<!--#>[!CONTEXTUALHELP]
+>id="aemcloud_golive_troubleshooting"
+>exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
+>title="Troubleshooting AEM"
+>abstract="Review best practices for continous development and manage logs along with tools like Developer console & CRXDE Lite to help with troubleshooting issues with AEM"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Accessing and Managing Logs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"-->

@@ -8,7 +8,7 @@ In this part of the AEM as a Cloud Service Migration Journey you will familiariz
 
 ## The Story So Far {#story-so-far}
 
-In the prevuious document of the journey, [Getting Started with Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md), you learned what are the benefits of moving to AEM as a Cloud Service, as well as an overview of the steps needed to do so.
+In the previous document of the journey, [Getting Started with Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md), you learned what are the benefits of moving to AEM as a Cloud Service, as well as an overview of the steps needed to do so.
 
 <!-- Alexandru: to review if this is still needed
 
