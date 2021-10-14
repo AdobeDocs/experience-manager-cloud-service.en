@@ -19,11 +19,11 @@ In Cloud Manager, there are two types of Pipeline:
   
   Refer to [Non-Production & Code Quality Only Pipelines](configure-pipeline.md#non-production-pipelines) for more details.
 
->[!NOTE]
->To configure your pipeline, you must:
-> * define the trigger that will start the pipeline.
-> * define the parameters controlling the production deployment.
-> * configure the performance test parameters.
+   >[!NOTE]
+   >To configure your pipeline, you must:
+   > * define the trigger that will start the pipeline.
+   > * define the parameters controlling the production deployment.
+   > * configure the performance test parameters.
 
 ## Setting up Production Pipeline {#setting-up-production-pipeline}
 
@@ -107,27 +107,29 @@ Follow the steps below to edit the configured pipeline:
 
 1. Navigate to **Pipelines** card from the **Program Overview** page.
 
-1. Click on **Edit** from the **Pipelines** card.
+1. Click on **...** from the **Pipelines** card and click on **Edit**, as shown in the figure below.
 
-   ![](assets/configure-pipeline/edit-pipeline-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit1.png)
 
-1. The **Source Code** tab allows you to update the repository. Click on **Access Repo Info** to update the repository.
+1. The **Edit Production Pipeline** dialog box displays.
 
-   >[!NOTE]
-   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+   1. The **Configuration** tab allows you to update the **Pipeline Name**, **Deployment Trigger**, and **Important Metrics Failure Behavior**.
 
-   ![](assets/configure-pipeline/edit-pipeline-2.png)
+      >[!NOTE]
+      >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-1. The **Environments** tab allows you to update the stage and production options.
+   1. The **Source** tab allows to ignore web tier configurations and update from **Production Deployment Options**..
 
-   ![](assets/configure-pipeline/edit-pipeline-3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
-1. The **Experience Audit** option allows you to update or add new pages.
+   1. The **Experience Audit** option allows you to update or add new pages.
 
-   ![](assets/configure-pipeline/edit-pipeline-4.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
-1. Click on **Save** once you are done editing the pipeline.
+1. Click on **Update** once you are done editing the pipeline.
 
 ## Non-Production & Code Quality Only Pipelines {#non-production-pipelines}
 
