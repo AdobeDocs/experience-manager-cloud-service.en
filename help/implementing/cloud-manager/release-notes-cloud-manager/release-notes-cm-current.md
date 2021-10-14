@@ -42,5 +42,5 @@ The next release is planned for November 04, 2021.
 
 * In rare situations, when an Adobe staff would restore a customer's environment, the restore was considered complete before the environment was fully operational.
 
-* Certain internal requests made during environment creation were not being retried. 
+* Certain internal requests made during environment creation were not being retried.
 
