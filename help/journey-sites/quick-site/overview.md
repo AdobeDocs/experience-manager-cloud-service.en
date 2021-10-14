@@ -47,7 +47,7 @@ You will explore many topics in this journey. The following articles give you fo
 |#|Article|Description|
 |---|---|---|
 |0|AEM Quick Site Creation Journey|This document|
-|1|[Understand Cloud Manager](cloud-manager.md)|Learn about Cloud Manager, the orchestration tool that enables theme download and deployment.|
+|1|[Understand Cloud Manager and the Quick Site Creation Workflow](cloud-manager.md)|Learn about Cloud Manager and how it ties together the new Quick Site Creation process.|
 |2|[Create site from template](create-site.md)|Learn how to quickly create a new AEM site using a template.|
 |3|[Set up your pipeline](pipeline-setup.md)|Create a front end pipeline to manage the customization of your site's theme.|
 |4|[Customize the site theme](customize-theme.md)|Learn how the theme is built, how to customize, and how to test using live AEM content.|
