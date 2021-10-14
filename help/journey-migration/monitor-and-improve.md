@@ -5,7 +5,7 @@ description: Learn how to monitor for issues and improve performance
 
 # Monitoring for issues and improving performance {#monitoring-improving-migration}
 
-This is the last part of the journey so you will learn to how to monitor for issues and improve performance once the migration is complete.
+This is the last part of the journey so you will learn to how to monitor for issues and improve performance once the migration is complete. You should ensure the clean-up of temporary files, review best practices for continuous development and manage logs.
 
 ## The Story So Far {#story-so-far}
 
@@ -13,7 +13,7 @@ In the previous step of the journey, you learned how to perform the migration on
 
 ## Objective {#objective}
 
-Once you complete the migration, you should the ensure clean-up of temporary files, review best practices for continuous development and manage logs. This document describes the tools that are available to troubleshoot AEM as a Cloud Service environments:
+This document describes the tools that are available to troubleshoot AEM as a Cloud Service environments:
 
 * **Developer Console**
 * **CRX/DE Lite**
