@@ -45,19 +45,29 @@ The following figure shows the main steps involved in the Execution phase:
 
 Below you will find information about the tools you need to leverage in order to achieve this.
 
-## Content Transfer {#content-transfer}
+## Content Migration {#content-migration}
 
-To transfer content from your current AEM instance to your Cloud Service instance, you can use Adobe's Content Transfer Tool.
+To migrate content from your current AEM instance to your Cloud Service instance, you can use Adobe's Content Transfer Tool.
 
 With this tool, you can specify the desired content subset that you want to transfer from your source AEM instance to your AEM Cloud Service instance.
 
->[!NOTE]
->It is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service.
+Content Migration is a multi-step aprocess that requires planning, tracking and collaboration between different teams. 
 
-Refer to [Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) for more details.
+The following diagram lays out the ideal path to be followed for a successful content migration. 
+
+![](/help/journey-migration/assets/contenttransferoverview.png)
+
+<!-- Alexandru: looks to be redundant, given that it's already covered in the CTT docs.
+
+>[!NOTE]
+>It is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service. -->
+
+For more details, see the [Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) documentation.
+
+<!-- Alexandru: looks to be redundant, given that it's already covered in the CTT docs. 
 
 >[!IMPORTANT]
->Minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you will need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool.
+>Minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you will need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool. -->
 
 ## Code Refactoring {#code-refactor}
 
@@ -69,13 +79,11 @@ Certain changes are required to AEM Maven projects to be compatible with AEM as 
 
 * Everything else in the repository, `/content` , `/conf` , `/var` , `/home` , `/etc` , `/oak:index` , `/system` , `/tmp` , etc. are all mutable areas, meaning they can be changed at runtime.
 
-Refer to [Recommended Package Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure) for more details. 
+You can learn more by consulting the [Recommended Package Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md#recommended-package-structure) documentation. 
 
-There are some additional development guidelines that you need to be aware of when developing on AEM as a Cloud Service. Refer to [AEM as a Cloud Service Development Guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html) to learn more.
+During planning, it is a good idea to have a list of areas that need to be refactored in order to be compatible with AEM as a Cloud Service. You can review [Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md) for more details on how to refactor and optimize code for Cloud Service.  
 
-From your Planning phase, you should have a list of areas that need to be refactored to be compatible with Cloud Service. You should also review [Development Guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html) for more details on how to refactor and optimize code to move to Cloud Service.  
-
-To help accelerate some of your code refactoring tasks, you can use the following tools:
+To help accelerate some of your code refactoring tasks, you can also use the following tools:
 
 * [Asset Workflow Migration](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
 * [Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
@@ -83,22 +91,22 @@ To help accelerate some of your code refactoring tasks, you can use the followin
 
 It is recommended to refactor and test the code locally before pushing it to a Cloud Service environment via Cloud Manager Git. 
 
-Review [AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#aem-as-a-cloud-service-sdk) documentation to learn more.
+Review the [AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#aem-as-a-cloud-service-sdk) documentation to learn more.
 
-Some additional resources are listed below:
+Additionally, you can also:
 
-* Watch Install Dispatcher SDK to understand how to install Dispatcher SDK:
+* Watch this video to understand how to install the Dispatcher SDK:
 
   >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
-* Watch Configure Dispatcher SDK to understand on how to configure Dispatcher SDK:
+* Watch this video to understand how to configure Dispatcher SDK:
 
   >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
-* Review [Local Development Setup](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) documentation to set up a local development environment
+* Or, review [Local Development Setup](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) documentation to set up a local development environment.
 
-To manage your on-going code development on your active AEM along with the code refactoring task as part of your transition journey, it is recommended to schedule a code freeze period until you have completed restructuring your Maven project to be compatible with AEM as a Cloud Service.
-Once, the project restructuring is done, you can resume new code development based on this new structure. This will reduce Cloud Manager pipeline failures during code deployment and testing.
+To manage your on-going code development on your active AEM along with the code refactoring tasks as part of your transition journey, we recommended you schedule a code freeze period until you have completed restructuring your Maven project to be compatible with AEM as a Cloud Service.
+Once the project restructuring is done, you can resume new code development based on this new structure. This will reduce Cloud Manager pipeline failures during code deployment and testing.
 
 >[!NOTE]
 >The Content Transfer and Code Refactor tasks do not have be done sequentially. These tasks can be done independent of each other. However, the correct project structure is required to ensure that the content successfully renders in your Cloud Service environment.
@@ -107,23 +115,23 @@ Once, the project restructuring is done, you can resume new code development bas
 
 Cloud Manager for Cloud Services pipeline executions will support execution of tests that run against the stage environment. 
 
-Refer to [Code Quality Testing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing) to learn about writing test scripts and recommended coverage of at least 50%.
+See [Code Quality Testing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing) to learn about writing test scripts and recommended coverage of at least 50%.
 
 Additionally, refer to [Understanding Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) to learn more about custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering.
 
-Cloud Manager usage is the sole mechanism for deploying code to Cloud Service environments.
+Remember that Cloud Manager is the sole mechanism for deploying code to Cloud Service environments.
 
-Follow the resources below to learn how to use Cloud Manager to manage and deploy your code.
+To get up to speed on how to use Cloud Manager to manage and deploy your code, follow the resources below: 
 
-* [Managing Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
+* [Managing Environments](/help/implementing/cloud-manager/manage-environments.md)
 
-* [Configuring your CI-CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
+* [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md)
 
-* [Deploying your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
+* [Deploying your Code](/help/implementing/cloud-manager/deploy-code.md)
 
 ## What's Next {#what-is-next}
 
-What is next text stub.
+Once you've fully understood how to asses if your AEM installation is ready to be moved to the cloud, as we as learn how to use the tools needed to make it ready, it's time to move on to the go-live phase and [perform the migration](help/journey-migration/performing-migration.md).
 
 ## Additional Resources {#additional-resources}
 
