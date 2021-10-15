@@ -162,13 +162,12 @@ You can set the maximum size of the inbox by configuring the **Adobe Granite Wor
 
 ## Using Workflow variables for customer owned datastores {#using-workflow-variables-customer-datastore}
 
-Data used in workflows is stored in the Adobe provided storage (JCR). This data can be sensitive in nature. You may want to save all the user defined metadata/data in your own managed storage instead of Adobe provided storage. This sections describes how to set up these variables for external storage.
+Data processed by workflows is stored in the Adobe provided storage (JCR). This data can be sensitive in nature. You may want to save all the user defined metadata/data in your own managed storage instead of Adobe provided storage. These sections describes how to set up these variables for external storage.
 
 ### Set the model to use external storage of metadata {#set-model-for-external-storage}
 
-At the level of workflow model, it is planned to introduce a flag to indicate that the model (and its runtime instances) has external storage of metadata. User metadata will not be persisted in JCR for the workflow instances of the models marked for external storage. 
+At the level of workflow model, a flag is provided to indicate that the model (and its runtime instances) has external storage of metadata. Workflow variables will not be persisted in JCR for the workflow instances of the models marked for external storage. 
 
-To activate this feature you must enable the external persistence flag: **userMetaDataCustomPersistenceEnabled = "true"**.
 The property *userMetadataPersistenceEnabled* will be stored on the *jcr:content node* of the workflow model. This flag will be persisted in workflow metadata as *cq:userMetaDataCustomPersistenceEnabled*.
 
 The illustration below shows have to set the flag on a workflow.
@@ -176,6 +175,8 @@ The illustration below shows have to set the flag on a workflow.
  ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
 ### APIs for metadata in external storage {#apis-for-metadata-external-storage}
+
+In order to store the variables externally you must implement the APIs that the workflow exposes.
 
 UserMetaDataPersistenceContext
 
