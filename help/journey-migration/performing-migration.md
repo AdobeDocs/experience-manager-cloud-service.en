@@ -9,7 +9,11 @@ In this part of the journey, you will learn how to perform the migration once th
 
 ## The Story So Far {#story-so-far}
 
-In the previous steps of the journey, you learned how to [determine if your deployment is ready to be moved to the cloud](/help/journey-migration/readiness.md) as well as [the tools through which you can make your code and content cloud ready](/help/journey-migration/making-your-code-and-content-cloud-ready.md).
+In the previous steps of the journey:
+
+* You learned how to get started with [the move to AEM as a Cloud Service](/help/journey-migration/getting-started.md) 
+* [Determined if your deployment is ready to be moved to the cloud](/help/journey-migration/readiness.md) 
+* As well as [the tools through which you can make your code and content cloud ready](/help/journey-migration/making-your-code-and-content-cloud-ready.md).
 
 ## Objective {#objective}
 
@@ -17,10 +21,10 @@ This document will help you understand how to complete the migration to AEM as a
 
 ## General guidelines {#completing-the-migration}
 
-To ensure a smooth and successful migration to AEM as a Cloud Service, you should consider executing the following steps:
+To ensure a smooth and successful migration to AEM as a Cloud Service, you should consider the following steps:
 
-* Schedule code and content freeze period
-* Perform final content top-up
+* Schedule a code and content freeze period
+* Perform the final content top-up
 * Complete testing iterations
 * Run performance and security tests
 * Cut-Over
@@ -33,35 +37,33 @@ The following diagram shows the important steps and associated tasks that can be
 
 ## Gathering Data {#gathering-data}
 
-The following datapoints can help you plan the migration activities/tasks:
+The following datapoints can help you plan the migration activities or tasks:
 
 * Total amount of time taken for extraction
 * Total amount of time taken for ingestion
 * Total amount of time taken for Top up extraction
 * Total amount of time taken for Top up ingestion
 
-As the set of (extraction, ingestion) times are associated with a specific size of migration set, these data points could be extrapolated to come up with a plan.
+As the set of (extraction, ingestion) times are associated with a specific size of the migration set, these data points could be extrapolated to come up with a plan.
 
-One more important data point to gather is:
-
-The amount of time that it takes to complete the user mapping ( if this is coupled with content migration)(link tbd). It is worth taking it into consideration for more realistic estimates, since this time will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+One more important data point is the amount of time that it takes to complete the user mapping (if this is coupled with the content migration). It is worth taking this time into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
 
 ## Migration plan {#migration-plan}
 
-Based on the datapoints you gathered (see above) , you can create a migration plan that can be integrated into macro project plan. This step will enable all the key stakeholders to visualize and plan around the migration activities.
+Based on the datapoints you gathered (see above), you can create a migration plan that can be integrated into a macro project plan. This step will enable all the key stakeholders to visualize and plan around the migration activities.
 
 Some important details that will influence the migration plan:
 
-**Total Number of Extractions required**
+**The Total Number of Extractions required**
 
-* Author and Publish extractions in specific environments are considered as two parallel extractions as they are independent of each other
-* Number of Top Up extractions based on repository growth in specific time periods
+* Author and Publish extractions in specific environments are considered as two parallel extractions as they are independent of each other.
+* Number of Top Up extractions based on repository growth in specific time periods.
 
 **Total Number of Ingestions required**
 
-* It is important to capture this item into plan, as an extracted set can be ingested into multiple Cloud Service environments.
-* Number of Top up ingestions
-* Migrating content from the Source Author to the Cloud service Author instance and from the Source Publish to Cloud Service Publish is the best practice to avoid ingesting all the Author content into the Cloud Service Publish
+* It is important to capture this item into the plan, as an extracted set can be ingested into multiple Cloud Service environments.
+* Number of Top up ingestions.
+* Migrating content from the Source Author to the Cloud service Author instance and from the Source Publish to Cloud Service Publish is the best practice to avoid ingesting all the Author content into the Cloud Service Publish.
 
 For example:
 
@@ -100,22 +102,22 @@ For example:
 
 Be careful when running the content transfer tool (CTT) from a production clone because:
 * If a customer requires content versions to be migrated during top up migrations, then executing CTT from a clone does not work. Even if the clone is recreated from live author frequently, each time a clone is created the checkpoints that will be used by CTT to calculate the differential will be reset.
-* Since a production clone can't be refreshed as a whole, ACL Query Package manager must be used to package & install the content being added / edited from Live to Clone. The problem with this approach is that any deletes that happen on the source instance will never get to the clone unless someone manually deletes them from both source and clone. So, there is a possibility that the deleted content on live production will not be deleted on the clone and AEMaaCS.
+* Since a production clone cannot be refreshed as a whole, ACL Query Package manager must be used to package & install the content being added or edited from Live to Clone. The problem with this approach is that any deletes that happen on the source instance will never get to the clone unless someone manually deletes them from both source and clone. So, there is a possibility that the deleted content on live production will not be deleted on the clone and AEM as a Cloud Service.
 
 Running CTT from a live production will overcome the above limitations. A good approach is to use AZCopy for the initial migration and then run top up extractions frequently (even daily) to extract smaller chunks and to avoid any long-term load on the source AEM.
 
-The load on the AEM source will be greater during the extraction phase:
-* The content transfer tool is an external Java process that will use a JVM Heap of 4gb
-* The non AzCopy version downloads binaries, stores them on temp space on the source AEM author (disk I/O) then uploads into the Azure container (network bandwidth).
-* AzCopy transfers blobs directly from the blob store to the Azure container which saves disk I/O and network bandwidth. The AzCopy version still uses the disk and network bandwidth to extract and upload the data from segment store into the Azure container.
-* During the ingestion phase the CTT process just streams ingestion logs and there is not much load on the source instance with respect to disk I/O or network bandwidth.
+Remember, the load on the AEM source will be greater during the extraction phase:
+* The Content Transfer Tool is an external Java process that will use a JVM Heap of 4 GB
+* The non AzCopy version downloads binaries, stores them on a temporary space on the source AEM author which consumes disk I/O, then uploads into the Azure container which consumes network bandwidth.
+* AzCopy transfers blobs directly from the blob store to the Azure container which saves disk I/O and network bandwidth. The AzCopy version still uses the disk and network bandwidth to extract and upload the data from the segment store into the Azure container.
+* The CTT process is lighter on the system resources during the ingestion phase, since it only streams ingestion logs and there is not much load on the source instance with respect to disk I/O or network bandwidth.
 
 ## Known Limitations {#known-limitations}
 
 The entire ingestion fails if any one of these limitations are found as part of the extracted migration set:
 * A JCR Node that has a name longer than 150 characters
 * A JCR Node that is bigger than 16 MB
-* Any User / Group with `rep:AuthorizableID` being ingested that is already present on AEMaaCS
+* Any User / Group with `rep:AuthorizableID` being ingested that is already present on AEM as a Cloud Service
 * If any asset which is extracted and ingested moves into a different path either on source or destination before the next iteration of migration
 
 ## What's Next {#what-is-next}
