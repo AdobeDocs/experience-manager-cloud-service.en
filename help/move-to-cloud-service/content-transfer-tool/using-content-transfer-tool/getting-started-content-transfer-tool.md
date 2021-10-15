@@ -73,23 +73,20 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
       1. **Include Version**: Select as required. When versions are included, the path `/var/audit` is automatically included to migrate audit events.
 
-      ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
 
-      >[!NOTE]
-      >If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
+         >[!NOTE]
+         >If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
 
-      1. **Include Mapping from IMS Users and Groups**: Select the option to include mapping from IMS Users and Groups. 
-      Refer to [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
+         
+       1. **Paths to be included**: Use path browser to select paths which need to be migrated. Path picker accepts input by typing or by selection.
 
-      1. **Paths to be included**: Use path browser to select paths which need to be migrated. Path picker accepts input by typing or by selection.
-
-         >[!IMPORTANT]
-         >Following paths are restricted while creating a migration set:
-         >* `/apps`
-         >* `/libs`
-         >* `/home`
-         >* `/etc` (some `/etc` paths are allowed to be selected in CTT)
-
+            >[!IMPORTANT]
+            >Following paths are restricted while creating a migration set:
+            >* `/apps`
+            >* `/libs`
+            >* `/home`
+            >* `/etc` (some `/etc` paths are allowed to be selected in CTT)
 
 1. Click on **Save** after you populate all the fields in the **Create Migration Set** details screen.
 
