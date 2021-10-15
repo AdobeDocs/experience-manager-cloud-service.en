@@ -63,7 +63,7 @@ AzCopy support is included in the CTT 1.5.4 release. You can download the latest
 
 ### 3. Configure an azcopy.config file {#configure-azcopy-config-file}
 
-On the source AEM instance, in crx-quickstart/cloud-migration , create a new file called azcopy.config .
+On the source AEM instance, in `crx-quickstart/cloud-migration`, create a new file called azcopy.config .
 
 The contents of this config file will be different depending on whether your source AEM instance uses an Azure or Amazon S3 data store.
 
@@ -100,7 +100,8 @@ s3SecretKey=--REDACTED--
 
 With the above configuration file in place, the AzCopy pre-copy phase will run as part of every subsequent extraction. To prevent it from running, you can rename this file or remove it.
 
-1. Begin an extraction from the CTT UI. Refer to [Running the Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool) and the [Extraction Process](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process) for more details.
+1. Begin an extraction from the CTT UI. Refer to [Getting Started with Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) and the [Extraction Process](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en) for more details.
+
 1. Confirm the following line is printed in the extraction log:
 
 ```
@@ -138,7 +139,7 @@ With the release of Content Transfer Tool 1.5.4, we added AzCopy support to Auth
 
 To take advantage of AzCopy during ingestion, we require that you be on a AEM as a Cloud Service version that is at least version 2021.6.5561.
 
-Begin the author ingestion from the CTT UI. Refer to the [Ingestion Process](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process) for more details.
+Begin the author ingestion from the CTT UI. Refer to the [Ingestion Process](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) for more details.
 The log entries from AzCopy will appear in the ingestion log. They will look like this:
 
 ```
@@ -169,3 +170,7 @@ Final Job Status: CompletedWithSkipped
  
 *************** Completed AzCopy pre-copy phase ***************
 ```
+
+## What's Next {#whats-next}
+
+Once you have learned Handling Large Content Repositories to significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service, you are now ready to learn the Extraction Process in Content Transfer Tool. See [Extracting Content from Source in Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) to learn how to extract your migration set from the Content Transfer Tool.
