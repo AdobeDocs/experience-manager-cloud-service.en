@@ -105,7 +105,7 @@ Additionally, you can also:
 
 * Or, review [Local Development Setup](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) documentation to set up a local development environment.
 
-To manage your on-going code development on your active AEM along with the code refactoring task as part of your transition journey, it is recommended to schedule a code freeze period until you have completed restructuring your Maven project to be compatible with AEM as a Cloud Service.
+To manage your on-going code development on your active AEM along with the code refactoring tasks as part of your transition journey, we recommended you schedule a code freeze period until you have completed restructuring your Maven project to be compatible with AEM as a Cloud Service.
 Once the project restructuring is done, you can resume new code development based on this new structure. This will reduce Cloud Manager pipeline failures during code deployment and testing.
 
 >[!NOTE]
@@ -115,19 +115,19 @@ Once the project restructuring is done, you can resume new code development base
 
 Cloud Manager for Cloud Services pipeline executions will support execution of tests that run against the stage environment. 
 
-Refer to [Code Quality Testing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing) to learn about writing test scripts and recommended coverage of at least 50%.
+See [Code Quality Testing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing) to learn about writing test scripts and recommended coverage of at least 50%.
 
 Additionally, refer to [Understanding Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) to learn more about custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering.
 
-Cloud Manager usage is the sole mechanism for deploying code to Cloud Service environments.
+Remember that Cloud Manager is the sole mechanism for deploying code to Cloud Service environments.
 
-Follow the resources below to learn how to use Cloud Manager to manage and deploy your code.
+To get up to speed on how to use Cloud Manager to manage and deploy your code, follow the resources below: 
 
-* [Managing Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
+* [Managing Environments](/help/implementing/cloud-manager/manage-environments.md)
 
-* [Configuring your CI-CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
+* [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md)
 
-* [Deploying your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
+* [Deploying your Code](/help/implementing/cloud-manager/deploy-code.md)
 
 ## What's Next {#what-is-next}
 
