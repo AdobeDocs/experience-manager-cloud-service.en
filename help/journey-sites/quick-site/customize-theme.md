@@ -123,7 +123,7 @@ You can continue customizing the theme based on the requirements provided to you
 Once your customizations are complete, you can commit them to the AEM git repository. First you must clone the repository to your local machine.
 
 1. From the command line, navigate to where you would like to clone the repo.
-1. Execute the command provided to you from the administrator. It should be similar to `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
+1. Execute the command provided to you from the administrator. It should be similar to `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. Use the git user name and password provided by the administrator.
 
    ![Clone repo](assets/clone-repo.png)
 
