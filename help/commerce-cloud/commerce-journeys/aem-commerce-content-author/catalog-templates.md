@@ -95,7 +95,7 @@ Now that you have completed this part of the journey you should:
 * how generic templates work
 * have created an individual template
 
-Build on this knowledge and continue your journey by next reviewing the document [Building Product Experiences](product-experience-management.md), where you will learn how to enrich product data with content to build product experiences.
+Build on this knowledge and continue your journey by next reviewing the document [Manage staged product catalog experiences](staged-catalog.md), where you will learn how to work with staged product data and AEM Launches..
 
 ## Additional Resources {#additional-resources}
 
