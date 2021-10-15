@@ -56,7 +56,7 @@ Click on **+Add** and select **Add Production Pipeline**.
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
 
-   You can define the trigger to start the pipeline:
+   You can define the deployment triggers to start the pipeline.
 
     * **Manual** - using the UI manually start the pipeline.
     * **On Git Changes** - starts the CI/CD pipeline whenever there are commits added to the configured git branch. Even if you select this option, you can always start the pipeline manually.  
@@ -65,15 +65,17 @@ Click on **+Add** and select **Add Production Pipeline**.
 
        This is useful for customers who have the desire for more automated processes. The available options are:
 
+    You can define the important failure metrics behavior to start the pipeline.
+
       * **Ask every time** - This is the default setting and requires manual intervention on any Important failure.
-      * **Cancel Immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
-      * **Approve immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
+      * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
+      * **Continue immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
-1. **Full Stack Code** is selected. You can choose the **Repository** and the **Git Branch**. Click on **Save**.
+1. The **Add Production Pipeline** dialog box includes a second tab labeled as **Source Code**. **Full Stack Code** is selected. You can choose the **Repository** and the **Git Branch**. Click on **Save**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add3.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
-1. The **Add production pipeline** dialog box includes a third tab labeled as **Experience Audit**. This option provides a table for the URL paths that should always be included in the Experience Audit. 
+1. The **Add Production Pipeline** dialog box includes a third tab labeled as **Experience Audit**. This option provides a table for the URL paths that should always be included in the Experience Audit. 
 
    >[!NOTE]
    >You must click on **Add Page** to define your own custom link.
@@ -143,6 +145,8 @@ Follow the steps below to edit the configured pipeline:
 
 In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as **Non-Production Pipelines**. These pipelines always execute the build and code quality steps. They can optionally also deploy to AEM as a Cloud Service environment.
 
+### Adding a New Non-Production Pipeline {#adding-non-production-pipeline}
+
 On the home screen, these pipelines are listed in a new card:
 
 1. Access the **Pipelines** card from the Cloud Manager home screen. Click on **+Add** and select **Add Non-Production Pipeline**. 
@@ -151,7 +155,7 @@ On the home screen, these pipelines are listed in a new card:
 
 1. **Add Non-Production Pipeline**  dialog box displays. Select the type of pipeline you want to create, either **Code Quality Pipeline** or **Deployment Pipeline**.
 
-   Additionally, you can also set up **Deployment Trigger** and **Important Failure Behavior** from **Deployment Options**. Click on **Continue**.
+   Additionally, you can also set up **Deployment Trigger** and **Important Metric Failures Behavior** from **Deployment Options**. Click on **Continue**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
@@ -184,7 +188,7 @@ Follow the steps below to edit the configured non-production pipeline:
 
 1. The **Edit Production Pipeline** dialog box displays.
 
-   1. The **Configuration** tab allows you to update the **Pipeline Name**, **Deployment Trigger**, and **Important Metrics Failure Behavior**.
+   1. The **Configuration** tab allows you to update the **Pipeline Name**, **Deployment Trigger**, and **Important Metric Failures Behavior**.
 
       >[!NOTE]
       >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
