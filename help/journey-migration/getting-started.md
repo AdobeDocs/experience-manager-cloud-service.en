@@ -48,7 +48,7 @@ The figure below shows a pictorial representation of the recommended transition 
 
 Cloud Acceleration Manager is a cloud-based application designed to guide your IT teams throughout the transition journey starting from planning to going live on Cloud Service. Set up your teams for a successful migration with Adobe-recommended best practices, tips, documentation, and tools to help at every phase of the journey to AEM as Cloud Service.
 
-Refer to [Getting Started with Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en) to start your migration journey. 
+Refer to [Getting Started with Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en) or watch a [video introduction to Cloud Acceleration Manager](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&recommended=ExperienceManager-A-1-2021.1.migration&lang=en#dashboard/learning) to start your migration journey. 
 
 ## What's Next {#what-is-next}
 
@@ -56,6 +56,7 @@ Thanks for getting started on your AEM Cloud Service migration journey! Now that
 
 ## Additional Resources {#additional-resources}
 
+* [AEM as a Cloud Service: Introduction, Architecture and Thinking Differently](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&recommended=ExperienceManager-D-1-2021.1.migration&lang=en#dashboard/learning)
 * [AEM a Cloud Service Home](/help/landing/home.md) - For an overview of the Experience Manager as a Cloud Service documentation, start here.
 * [AEM as a Cloud Service Overview](/help/overview/home.md) - This guide provides an overview of Experience Manager as a Cloud service, including an introduction, terminology and architecture.
 * [Onboarding](/help/onboarding/home.md)- This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
