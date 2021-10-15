@@ -228,6 +228,28 @@ Follow the steps below to edit the configured non-production pipeline:
 
 1. Click on **Update** once you are done editing the non-production pipeline.
 
+### Additional Non-Production Pipeline Actions {#additional-nonprod-actions}
+
+#### Running a Non-Production Pipeline {#run-nonprod}
+
+You can run the production pipeline from the Pipelines card:
+
+1. Navigate to **Pipelines** card from the **Program Overview** page.
+
+1. Click on **...** from the **Pipelines** card and click on **Run**, as shown in the figure below.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
+
+#### Deleting a Non-Production Pipeline {#delete-nonprod}
+
+You can delete the production pipeline from the Pipelines card:
+
+1. Navigate to **Pipelines** card from the **Program Overview** page.
+
+1. Click on **...** from the **Pipelines** card and click on **Delete**, as shown in the figure below.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-delete.png)
+
 
 ## The Next Steps {#the-next-steps}
 
