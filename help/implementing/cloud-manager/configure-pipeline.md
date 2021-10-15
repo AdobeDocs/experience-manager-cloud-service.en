@@ -141,6 +141,32 @@ Follow the steps below to edit the configured pipeline:
 
 1. Click on **Update** once you are done editing the pipeline.
 
+### Additional Production Pipeline Actions {#additional-prod-actions}
+
+#### Running a Production Pipeline {#run-prod}
+
+You can run the production pipeline from the Pipelines card:
+
+1. Navigate to **Pipelines** card from the **Program Overview** page.
+
+1. Click on **...** from the **Pipelines** card and click on **Run**, as shown in the figure below.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-run.png)
+
+#### Deleting a Production Pipeline {#delete-prod}
+
+You can delete the production pipeline from the Pipelines card:
+
+1. Navigate to **Pipelines** card from the **Program Overview** page.
+
+1. Click on **...** from the **Pipelines** card and click on **Delete**, as shown in the figure below.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-delete.png)
+
+   >[!NOTE]
+   >A user in Deployment Manager role can now delete Production pipeline in a self-service manner via the **Delete** option from the Pipeline card.
+
+
 ## Non-Production & Code Quality Only Pipelines {#non-production-pipelines}
 
 In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as **Non-Production Pipelines**. These pipelines always execute the build and code quality steps. They can optionally also deploy to AEM as a Cloud Service environment.
