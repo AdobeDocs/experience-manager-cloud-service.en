@@ -38,7 +38,7 @@ Before you start to deploy your code, you must configure your pipeline settings 
 >
 >You can change the pipeline settings after initial set up.
 
-## Adding a New Production Pipeline {#adding-production-pipeline}
+### Adding a New Production Pipeline {#adding-production-pipeline}
 
 Once you have setup your program and have at least one environment using [!UICONTROL Cloud Manager] UI, you are ready to add a production pipeline.
 
