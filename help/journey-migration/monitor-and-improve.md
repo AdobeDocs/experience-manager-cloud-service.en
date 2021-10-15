@@ -9,7 +9,7 @@ This is the last part of the journey so you will learn to how to monitor for iss
 
 ## The Story So Far {#story-so-far}
 
-In the previous step of the journey, you learned how to perform the migration once the code and the content were ready to be moved over to AEM as a Cloud Service.
+In the previous step of the journey, you learned how to [perform the migration](/help/journey-migration/performing-migration.md) once the code and the content were ready to be moved over to AEM as a Cloud Service.
 
 ## Objective {#objective}
 
@@ -40,6 +40,16 @@ Users can access a list of available log files for the selected environment.
   
 Refer to [Accessing and Managing Logs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) to learn how to access and manage logs through UI or from API via Cloud Manager.
 
+## Contacting Support {#contacting-support}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_support"
+>title="Help & Support"
+>abstract="Reach out to our AEM Support team to get clarifications or to address any concerns."
+>additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Support for Experience Cloud"
+
+If you have questions about access to Cloud Service, contact your Adobe representative or [Support for Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) for more details.
+
 ## The Journey Ends - Or Does It? {#journey-ends}
 
 Congratulations! You have completed the AEM as a Cloud Service Migration Journey! You should have an understanding of how to:
@@ -54,15 +64,7 @@ You are now ready to migrate to AEM as a Cloud Service! Check out some of the ad
 
 ## Additional Resources {#additional-resources}
 
-**More resources TBD**
-
->[!CONTEXTUALHELP]
->id="aemcloud_golive_support"
->title="Help & Support"
->abstract="Reach out to our AEM Support team to get clarifications or to address any concerns."
->additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Support for Experience Cloud"
-
-If you have questions about access to Cloud Service, contact your Adobe representative or [Support for Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) for more details.
+**TBD**
 
 <!--#>[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
