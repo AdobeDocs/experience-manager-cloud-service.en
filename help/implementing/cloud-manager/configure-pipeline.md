@@ -97,7 +97,7 @@ Click on **+Add** and select **Add Production Pipeline**.
 
    The URL that appears in the table will be:
    
-   `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
+   `https://publish-p12361-e112003.adobeaemcloud.com/us/en/about-us.html`
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
