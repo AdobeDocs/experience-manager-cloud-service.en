@@ -1,9 +1,9 @@
 ---
-title: Performing the migration
+title: Performing the Migration
 description: Learn how to perform the migration once the code and the content are cloud ready
 ---
 
-# Performing the migration {#performing-migration}
+# Performing the Migration {#performing-migration}
 
 In this part of the journey, you will learn how to perform the migration once the code and the content are ready to be moved over to AEM as a Cloud Service.
 
