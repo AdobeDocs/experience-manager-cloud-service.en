@@ -92,6 +92,6 @@ Build on this knowledge and continue your AEM Quick Site Creation journey by nex
 
 While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [[Setup Your Pipeline,](pipeline-setup.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
-* [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - If you already have a firm understanding of AEM and headless technologies, you may want to directly consult our in-depth technical docs.
+* [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult our in-depth technical docs.
 * [npm](https://www.npmjs.com) - AEM themes used to quickly build sites are based on npm.
 * [webpack](https://webpack.js.org) - AEM themes used to quickly build sites rely on webpack.
