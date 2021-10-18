@@ -47,11 +47,11 @@ Follow these steps to configure the behavior and preferences for your production
 1. Navigate to the **Pipelines** card from the **Program Overview** page.
 Click on **+Add** and select **Add Production Pipeline**. 
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
 1. **Add Production Pipeline** dialog box displays. Enter the pipeline name.
 
-   Additionally, you can also set up **Deployment Trigger** and **Important Failure Behavior** from **Deployment Options**. Click on **Continue**.
+   Additionally, you can also set up **Deployment Trigger** and **Important Metric Failures Behavior** from **Deployment Options**. Click on **Continue**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
@@ -69,30 +69,37 @@ Click on **+Add** and select **Add Production Pipeline**.
 
       * **Ask every time** - This is the default setting and requires manual intervention on any Important failure.
       * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
-      * **Continue immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
+      * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
-1. The **Add Production Pipeline** dialog box includes a second tab labeled as **Source Code**. **Full Stack Code** is selected. You can choose the **Repository** and the **Git Branch**. Click on **Save**.
+1. The **Add Production Pipeline** dialog box includes a second tab labeled as **Source Code**. **Full Stack Code** is selected. You can choose the **Repository** and the **Git Branch**. Select the Production Deployment Options, as explained below. Click on **Continue**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
+   Production Deployment Options:
+
+   * **Pause before Deploying to Production**: This option allows the deployment tp pause before production.
+   * **Scheduled**: This option allows the user to enable the scheduled production deployment.
+
 1. The **Add Production Pipeline** dialog box includes a third tab labeled as **Experience Audit**. This option provides a table for the URL paths that should always be included in the Experience Audit. 
 
-   >[!NOTE]
-   >You must click on **Add Page** to define your own custom link.
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
-    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add4.png)
+   >[!IMPORTANT]
+   >You must click on **Add Page** to define your own custom link. Page path must start with `/`.
+   >![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit2.png)
+ 
 
    Click **Add New Page** to provide a URL path to be included in the Experience Audit.
 
-   For instance, if you would like to include `https://wknd.site/us/en/about-us.html` in the Experience Audit, enter the path `us/en/about-us.html` in this field and click **Save**.
+   For instance, if you would like to include `https://wknd.site/us/en/about-us.html` in the Experience Audit, enter the path `/us/en/about-us.html` in this field and click **Save**.
 
-   ![](assets/exp-audit4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
    The URL that appears in the table will be:
    
-   `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
+   `https://publish-p12361-e112003.adobeaemcloud.com/us/en/about-us.html`
 
-   ![](assets/exp-audit5.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
    A maximum of 25 rows can be included. If there are no pages submitted by the user in this section, the homepage of the site will be included in the Experience Audit by default.
  
@@ -227,6 +234,28 @@ Follow the steps below to edit the configured non-production pipeline:
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
 
 1. Click on **Update** once you are done editing the non-production pipeline.
+
+### Additional Non-Production Pipeline Actions {#additional-nonprod-actions}
+
+#### Running a Non-Production Pipeline {#run-nonprod}
+
+You can run the production pipeline from the Pipelines card:
+
+1. Navigate to **Pipelines** card from the **Program Overview** page.
+
+1. Click on **...** from the **Pipelines** card and click on **Run**, as shown in the figure below.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
+
+#### Deleting a Non-Production Pipeline {#delete-nonprod}
+
+You can delete the production pipeline from the Pipelines card:
+
+1. Navigate to **Pipelines** card from the **Program Overview** page.
+
+1. Click on **...** from the **Pipelines** card and click on **Delete**, as shown in the figure below.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-delete.png)
 
 
 ## The Next Steps {#the-next-steps}
