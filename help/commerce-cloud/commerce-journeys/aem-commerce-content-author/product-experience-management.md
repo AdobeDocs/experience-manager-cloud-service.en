@@ -111,4 +111,4 @@ You are now ready to manage product experiences using AEM Content and Commerce. 
 
 ## Additional Resources {#additional-resources}
 
-* Links
+* [Content Fragment component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en) - Content Fragment component
