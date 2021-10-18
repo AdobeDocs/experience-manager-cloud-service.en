@@ -1,9 +1,9 @@
 ---
-title: Monitoring for issues and improving performance
+title: Monitoring for Issues and Improving Performance
 description: Learn how to monitor for issues and improve performance
 ---
 
-# Monitoring for issues and improving performance {#monitoring-improving-migration}
+# Monitoring for Issues and Improving Performance {#monitoring-improving-performance}
 
 This is the last part of the journey so you will learn to how to monitor for issues and improve performance once the migration is complete. You should ensure the clean-up of temporary files, review best practices for continuous development and manage logs.
 
