@@ -1,6 +1,6 @@
 ---
 title: Customize the Site Theme
-description: Learn how the theme is built, how to customize, and how to test using live AEM content.
+description: Learn how the site theme is built, how to customize, and how to test using live AEM content.
 index: no
 hide: yes
 hidefromtoc: yes
@@ -8,7 +8,7 @@ hidefromtoc: yes
 
 # Customize the Site Theme {#customize-the-site-theme}
 
-Learn how the theme is built, how to customize, and how to test using live AEM content.
+Learn how the site theme is built, how to customize, and how to test using live AEM content.
 
 >[!CAUTION]
 >
@@ -28,7 +28,7 @@ Now that you have a site created based on a template and have all of the informa
 
 ## Objective {#objective}
 
-This document explains how the theme is built, how to customize it, and how to test it using live AEM content. After reading you should:
+This document explains how the AEM site theme is built, how to customize it, and how to test it using live AEM content. After reading you should:
 
 * Understand the basic structure of the site theme and how to edit it.
 * See how to test your theme customizations using real AEM content via local proxy.
@@ -89,8 +89,8 @@ Once you are comfortable with the structure of the theme project, we will start 
 
 1. Once signed in, change the URL in the browser to point to the path to the sample content that the administrator provided to you.
 
-   * For example if the path provided was `/content/spatula-city/en/home.html?wcmmode=disabled`
-   * You would change the URL to `http://localhost:7001/content/spatula-city/en/home.html?wcmmode=disabled`
+   * For example if the path provided was `/content/<your-site>/en/home.html?wcmmode=disabled`
+   * You would change the URL to `http://localhost:7001/content/<your-site>/en/home.html?wcmmode=disabled`
 
    ![Proxied sample content](assets/proxied-sample-content.png)
 
@@ -153,6 +153,7 @@ Now that you have completed this part of the AEM Quick Site Creation journey you
 If you are only responsible for front end development, congratulations! You are finished! Just remember to tell the administrator that your customizations are now ready to deploy.
 
 If you are an administrator as well as a front end developer, build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Deploy Your Customized Theme,](deploy-theme.md) where you will learn how to deploy the theme using the front end pipeline.
+
 ## Additional Resources {#additional-resources}
 
 While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Deploy Your Customized Theme,](deploy-theme.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
