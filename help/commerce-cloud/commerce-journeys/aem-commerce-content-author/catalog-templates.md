@@ -47,6 +47,10 @@ The generic Venia catalog template uses the Product List Core Component. This co
 The generic Venia product template uses the Product Detail Core Component. This component displays product information for various product types and add-to-cart action.
 ![product template](assets/product-template.png)
 
+### Edit and preview
+
+
+
 ### Category or product specific templates
 
 CIF supports multiple templates in just a few click. To create another template, select the generic template from the respective category and create a new page using the "create" action.
