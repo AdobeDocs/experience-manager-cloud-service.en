@@ -25,10 +25,10 @@ The migration journey to Cloud Service involves the following phases:
 
 * [Determining if your Deployment is Ready to be Moved to AEM as a Cloud Service](/help/journey-migration/readiness.md)
 * [Making your Code and Content Cloud Ready](/help/journey-migration/making-your-code-and-content-cloud-ready.md)
-* [Go Live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-go-live.html?lang=en)
-* [Post Go Live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-post-go-live.html?lang=en)
+* [Performing the Migration](/help/journey-migration/performing-migration.md)
+* [Monitoring for Issues and Improving Performance](/help/journey-migration/monitor-and-improve.md)
 
-For a successful and smooth transition, you should ensure proper planning and adhere to best practices outlined in this Guide.
+For a successful and smooth transition, you should ensure proper planning and adhere to best practices outlined in this Journey.
 
 The figure below shows a pictorial representation of the recommended transition journey to AEM as a Cloud Service.
 
