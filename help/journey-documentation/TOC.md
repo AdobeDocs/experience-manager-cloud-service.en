@@ -2,7 +2,7 @@
 sub-product: AEM Documentation Journeys
 user-guide-title: AEM Documentation Journeys
 breadcrumb-title: AEM Documentation Journeys
-user-guide-description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your project.
+user-guide-description: Documentation Journeys provide a narrative structure within AEM documentation by tying together complex and disparate features in order to solve a business goal in a best-practices fashion. Designed with AEM beginners in mind, journeys introduce the concepts and features to achieve a goal from A to Z.
 feature: Developer Tools
 role: Developer, Architect
 ---
@@ -20,7 +20,7 @@ Please note that all links to other guides need to be absolute references with l
   + [Overview to Onboarding Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/onboarding-journey-overview.html)
   + [Getting Started with Onboarding Process](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/get-started-onboarding-journey.html)
   + [Assign Team Members to Cloud Manager Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/assign-team-members-cloud-manager.html)
-  + [Setup Cloud Resources via Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/setup-cloud-resources-via-cloud-manager.html)
+  + [Set Up Cloud Resources via Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/setup-cloud-resources-via-cloud-manager.html)
   + [Assign Team Members to AEM as a Cloud Service Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/assign-team-members-aem-cloud-service.html)
   + [Learning Path for Developers and Deployment Managers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-developers-deploymentmanagers.html)
   + [Learning Path for AEM Users](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-aem-users.html)
