@@ -18,7 +18,7 @@ Learn about Cloud Manager and how it ties together the new Quick Site Creation p
 >
 >If your role is exclusively front end development, you can skip to the article [Customize the Site Theme](customize-theme.md) in this journey.
 >
->If you are an administrator, responsible for both front end development and administrator tasks, or would simply like to understand the end-to-end process in AEM for front end development, continue reading the current article.
+>If you are an administrator, responsible for both front end development and administrator tasks, or would simply like to understand the end-to-end process in AEM for front end development, continue reading the current document.
 
 ## Objective {#objective}
 
@@ -71,11 +71,11 @@ To support customers with enterprise development setups, AEM as a Cloud Service 
 The overall flow is simple and intuitive even if you do not yet have extensive experience with Cloud Manager.
 
 1. The administrator creates a front end pipeline in Cloud Manager. The pipeline orchestrates the deployment of code from a git repository to an AEM environment.
-1. The administrator creates a new site using a site theme.
-1. The administrator exports the theme and provides it to the front end developer along with credentials for the git repository.
+1. The administrator creates a new site using a site template.
+1. The administrator exports the site theme and provides it to the front end developer along with credentials for the git repository.
 1. The front end developer customizes the theme, testing it using actual content from the site using a proxy.
 1. The front end developer commits the changes to the git repository.
-1. The administrator executes the pipeline to deploy the customizations.
+1. The administrator executes the pipeline to deploy the theme customizations.
 
 The major advantage of using the Quick Site Creation tool is that the pure front end developer is only responsible for a single step in this process: the actual customization. The front end developer has no interaction with AEM or needs any knowledge of the system.
 
@@ -90,7 +90,7 @@ Build on this knowledge and continue your AEM Quick Site Creation journey by nex
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [[Setup Your Pipeline,](pipeline-setup.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Setup Your Pipeline,](pipeline-setup.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult our in-depth technical docs.
 * [npm](https://www.npmjs.com) - AEM themes used to quickly build sites are based on npm.

@@ -1,6 +1,6 @@
 ---
 title: Deploy Your Customized Theme
-description: Learn how to deploy the theme using the pipeline.
+description: Learn how to deploy the site theme using the pipeline.
 index: no
 hide: yes
 hidefromtoc: yes
@@ -8,7 +8,7 @@ hidefromtoc: yes
 
 # Deploy Your Customized Theme {#deploy-your-customized-theme}
 
-Learn how to deploy the theme using the pipeline.
+Learn how to deploy the site theme using the pipeline.
 
 >[!CAUTION]
 >
@@ -44,7 +44,7 @@ Once you have committed the theme customization changes to the AEM repo or the f
 
    ![Confirm pipeline run](assets/pipeline-confirm.png)
 
-1. In the list of pipelines, the status column indicates that your pipeline is now running. It will take about five to ten minutes to complete
+1. In the list of pipelines, the status column indicates that your pipeline is now running. It will take about five minutes to complete.
 
    ![Pipeline running status](assets/pipeline-running.png)
 

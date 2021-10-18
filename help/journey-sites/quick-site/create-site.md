@@ -1,6 +1,6 @@
 ---
 title: Create Site from Template
-description: Learn how to quickly create a new AEM site using a template.
+description: Learn how to quickly create a new AEM site using a site template.
 index: no
 hide: yes
 hidefromtoc: yes
@@ -8,7 +8,7 @@ hidefromtoc: yes
 
 # Create Site from Template {#create-site-from-template}
 
-Learn how to quickly create a new AEM site using a template.
+Learn how to quickly create a new AEM site using a site template.
 
 >[!CAUTION]
 >
@@ -25,7 +25,7 @@ This article take the next step of showing how to quickly create a site which yo
 
 ## Objective {#objective}
 
-This document helps you understand how to quickly create a new AEM site using a template. After reading you should:
+This document helps you understand how to quickly create a new AEM site using a site template. After reading you should:
 
 * Understand how to obtain AEM Site templates.
 * Learn how to create a new site using a template.
@@ -33,14 +33,14 @@ This document helps you understand how to quickly create a new AEM site using a 
 
 ## Site Templates {#site-templates}
 
-Site templates are a convenient way to combine basic site content into a convenient and reusable package. Site templates generally contain site content and structure to get started quickly as well as site styling information. The actual structure is as follows:
+Site templates are a simple way to combine basic site content into a convenient and reusable package. Site templates generally contain base site content and structure as well as site styling information to get new site started quickly. The actual structure is as follows:
 
 * `files`: Folder with the UI kit XD file and possibly other files.
 * `previews`: Folder with screenshots of the site template.
 * `site`: Content package of the content that will be copied for each site created from this template (templates, pages, etc.).
 * `theme`: Sources of the template theme to modify how the site looks (CSS, JS, etc.).
 
-Templates are not only powerful because they are reusable so that your content authors can quickly create a site, but you can have multiple templates available in our AEM installation to meet various needs.
+Templates are powerful because they are reusable so that your content authors can quickly create a site. And since you can have multiple templates available in your AEM installation, you have the flexibility to meet various business needs.
 
 >[!TIP]
 >
@@ -113,7 +113,7 @@ The front end developer may not be terribly familiar with the details of your co
 
    ![Editing the home page](assets/home-page-edit.png)
 
-1. In the tab that opens, copy the path of the content from the address bar. It will look something like `/content/spatula-city/en/home.html?wcmmode=disabled`.
+1. In the tab that opens, copy the path of the content from the address bar. It will look something like `/content/<your-site>/en/home.html?wcmmode=disabled`.
 
    ![Home page](assets/home-page.png)
 
@@ -155,6 +155,7 @@ In order for the front end developer to preview the customizations using actual 
 1. Tap or click **Save &amp; Close**.
 
 You now have completed all of the configuration and have all the information that the front end developer needs.
+
 ## Handover to Front End Developer {#handover}
 
 You can now provide the front end developer the necessary information to begin customization.

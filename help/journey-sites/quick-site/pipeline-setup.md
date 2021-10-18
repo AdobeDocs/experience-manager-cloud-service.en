@@ -8,7 +8,7 @@ hidefromtoc: yes
 
 # Set up your pipeline {#set-up-your-pipeline}
 
-Learn how to deploy the theme using the pipeline.
+Create a front end pipeline to manage the customization of your site's theme.
 
 >[!CAUTION]
 >
