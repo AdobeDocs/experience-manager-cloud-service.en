@@ -85,19 +85,30 @@ Preview now a product page that has either an associated Content Fragment and / 
 
 ![pem result](assets/pem-result.png)
 
-## Making any content shoppable
+## Making content shoppable
+
+It is also possible to make a regular AEM page shoppable by adding commerce components. Create a new content page in AEM and open the empty page in the editor.
+
+![pem empty page](assets/pem-page-empty.png)
+
+First, dnd a product detail component on the page. Then switch to the Assets sidebar, switch to products and select a product. DnD that product on the product component. This will show a regular product component on a content page.
+
+![pem product page](assets/pem-page-product.png)
+
+If you have created associated content for that product, switch in the Assets sidebar to "Associated Commerce Content". This tab shows you all AEM content that was associated to this product. You allows you now to  embellish the  pages with any associated content quickly. 
+
+![pem enriched page](assets/pem-page-enriched.png)
 
 ## End of the Journey? {#end-of-journey}
 
 Congratulations! You have completed the AEM Content and Commerce Developer journey! You should now:
 
-* Learn the AEM Content and Commerce basics
-* Get started with AEM CIF Authoring basics
-* Manage product catalog pages and template
+* understand how you can associate any AEM content to product catalog objects
+* use placeholders to individually enrich product and category pages
+* know how to make content shoppable and use the associated content tab
 
 You are now ready to manage product experiences using AEM Content and Commerce. However AEM Content and Commerce have many additional options available. Check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
 
 ## Additional Resources {#additional-resources}
-
 
 * Links
