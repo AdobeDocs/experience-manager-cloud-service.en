@@ -28,4 +28,4 @@ Please review all the considerations listed below:
 
 ## What's Next {#whats-next}
 
-Once you have reviewed the prerequisites and have determined whether you can use the Content Transfer Tool in your migration project, refer to [Additional best practices and considerations](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) while using the Content Transfer Tool.
+Once you have reviewed the prerequisites and have determined whether you can use the Content Transfer Tool in your migration project, refer to [Guidelines and Best Practices for using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en).
