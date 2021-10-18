@@ -16,12 +16,12 @@ Learn how to quickly create a new AEM site using a site template.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Quick Site Creation journey, [Set Up Your Pipeline,](pipeline-setup.md) you learned how to create a front end pipeline to manage the customization of your site's theme, and you should now:
+In the previous document of the AEM Quick Site Creation journey, [Set Up Your Pipeline,](pipeline-setup.md) you learned how to create a front-end pipeline to manage the customization of your site's theme, and you should now:
 
-* Understand how to set up a front end pipeline in Cloud Manager.
-* Know how to retrieve access credentials for your front end developer to be able to commit the customized code.
+* Understand how to set up a front-end pipeline in Cloud Manager.
+* Know how to retrieve access credentials for your front-end developer to be able to commit the customized code.
 
-This article take the next step of showing how to quickly create a site which you can then later customize using your front end pipeline.
+This article takes the next step of showing how to quickly create a site which you can then later customize using your front-end pipeline.
 
 ## Objective {#objective}
 
@@ -29,7 +29,7 @@ This document helps you understand how to quickly create a new AEM site using a 
 
 * Understand how to obtain AEM Site templates.
 * Learn how to create a new site using a template.
-* See how to download the template from your new site to provide to the front end developer.
+* See how to download the template from your new site to provide to the front-end developer.
 
 ## Site Templates {#site-templates}
 
@@ -37,7 +37,7 @@ Site templates are a simple way to combine basic site content into a convenient 
 
 * `files`: Folder with the UI kit XD file and possibly other files.
 * `previews`: Folder with screenshots of the site template.
-* `site`: Content package of the content that will be copied for each site created from this template (templates, pages, etc.).
+* `site`: Content package of the content that is copied for each site created from this template (templates, pages, etc.).
 * `theme`: Sources of the template theme to modify how the site looks (CSS, JS, etc.).
 
 Templates are powerful because they are reusable so that your content authors can quickly create a site. And since you can have multiple templates available in your AEM installation, you have the flexibility to meet various business needs.
@@ -54,11 +54,11 @@ Once downloaded you can upload it to your AEM environment.
 
 >[!TIP]
 >
->The AEM Standard Site Template can be customized to meet your project's needs. However this is beyond the scope of this journey. Please refer to the GitHub documentation of the Standard Site Template for more information.
+>The AEM Standard Site Template can be customized to meet your project's needs. However this topic is beyond the scope of this journey. Please refer to the GitHub documentation of the Standard Site Template for more information.
 
 >[!TIP]
 >
->You can also choose to build the template from source as part of your project workflow. However this is beyond the scope of this journey. Please refer to the GitHub documentation of the Standard Site Template for more information.
+>You can also choose to build the template from source as part of your project workflow. However this topic is beyond the scope of this journey. Please refer to the GitHub documentation of the Standard Site Template for more information.
 
 ## Installing a Site Template {#installing-template}
 
@@ -68,7 +68,7 @@ Using a template to create a new site is very easy.
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Tap or click **Create** at the top-right of the screen and from the dop-down menu select **Site from template**.
+1. Tap or click **Create** at the top-right of the screen and from the drop-down menu select **Site from template**.
 
    ![Creating a new site from a template](assets/create-site-from-template.png)
 
@@ -76,7 +76,7 @@ Using a template to create a new site is very easy.
 
    ![Site creation wizard](assets/site-creation-wizard.png)
 
-1. In the file browser locate the template [you downloaded previously](#obtaining-template) and tap or click **Upload**.
+1. In the file browser, locate the template [you downloaded previously](#obtaining-template) and tap or click **Upload**.
 
 1. Once uploaded, it appears in the list of available templates. Tap or click on it to select it (which also reveals information about the template in the right column) and then tap or click **Next**.
 
@@ -95,7 +95,7 @@ Using a template to create a new site is very easy.
 
    ![Success dialog](assets/success.png)
 
-1. In the sites console the new sites is visible and can be navigated to explore its basic structure as defined by the template.
+1. In the sites console, the new sites is visible and can be navigated to explore its basic structure as defined by the template.
 
    ![New site structure](assets/new-site.png)
 
@@ -103,7 +103,7 @@ Content authors can now begin authoring.
 
 ## Example Page {#example-page}
 
-The front end developer may not be terribly familiar with the details of your content. Therefore it is a good idea to provide the developer with a path to typical content that can be used as a base of reference as the theme is customized. A typical example is the home page for the master language of the site.
+The front-end developer may not be terribly familiar with the details of your content. Therefore it is a good idea to provide the developer with a path to typical content that can be used as a base of reference as the theme is customized. A typical example is the home page for the master language of the site.
 
 1. In the sites browser, navigate to the home page of the master language of the site and then tap or click the page to select it and then tap or click **Edit** in the menu bar.
 
@@ -117,11 +117,11 @@ The front end developer may not be terribly familiar with the details of your co
 
    ![Home page](assets/home-page.png)
 
-1. Save the path to later provide to the front end developer.
+1. Save the path to later provide to the front-end developer.
 
 ## Download the Theme {#download-theme}
 
-Now that the site has been created, the theme of the site as generated by the template can be downloaded and provided to the front end developer for customization.
+Now that the site has been created, the theme of the site as generated by the template can be downloaded and provided to the front-end developer for customization.
 
 1. On the sites console, show the **Site** rail.
 
@@ -135,38 +135,38 @@ You now have a copy of the theme source files in your download files.
 
 ## Set Up Proxy User {#proxy-user}
 
-In order for the front end developer to preview the customizations using actual AEM content from your site, you must set up a proxy user.
+In order for the front-end developer to preview the customizations using actual AEM content from your site, you must set up a proxy user.
 
 1. In AEM from main navigation go to **Tools** -&gt; **Security** -&gt; **Users**.
 1. In the user management console, tap or click **Create**.
 
    ![User management console](assets/user-management-console.png)
 1. In the **Create New User** window you must at a minimum provide:
-   * **ID** - Take note of this as you must provide it to the front end developer.
-   * Password -  - Save this securely in a password vault as you must provide it to the front end developer.
+   * **ID** - Take note of this value as you must provide it to the front-end developer.
+   * Password -  - Save this value securely in a password vault as you must provide it to the front-end developer.
 
    ![New user details](assets/new-user-details.png)
 
 1. On the **Groups** tab, add the proxy user to the `contributors` group.
-   * Typing in the term `contributors` will trigger AEM's auto-completion feature for simple selection of the group.
+   * Typing in the term `contributors` triggers AEM's auto-completion feature for simple selection of the group.
 
    ![Add to group](assets/add-to-group.png)
 
 1. Tap or click **Save &amp; Close**.
 
-You now have completed all of the configuration and have all the information that the front end developer needs.
+You now have completed the configuration and have all the information that the front-end developer needs.
 
-## Handover to Front End Developer {#handover}
+## Handover to Front-End Developer {#handover}
 
-You can now provide the front end developer the necessary information to begin customization.
+You can now provide the front-end developer the necessary information to begin customization.
 
 * The git credentials you saved [when setting up the pipeline](pipeline-setup.md#repo-access)
 * A [path to typical content](#example-page)
 * The theme source that [you just downloaded](#download-theme)
 * The [proxy user credentials](#proxy-user)
-* Your front end design requirements
+* Your front-end design requirements
 
-Content authors can continue to create content on the site as the front end developer starts customizing the theme in the next step of the journey.
+Content authors can continue to create content on the site as the front-end developer starts customizing the theme in the next step of the journey.
 
 ## What's Next {#what-is-next}
 
@@ -174,7 +174,7 @@ Now that you have completed this part of the AEM Quick Site Creation journey you
 
 * Understand how to obtain AEM Site templates.
 * Learn how to create a new site using a template.
-* See how to download the template from your new site to provide to the front end developer.
+* See how to download the template from your new site to provide to the front-end developer.
 
 Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Customize the Site Theme,](customize-theme.md) where you will learn how the theme is built, how to customize, and how to test using live AEM content.
 

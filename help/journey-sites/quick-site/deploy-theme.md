@@ -22,7 +22,7 @@ In the previous document of the AEM Quick Site Creation journey, [Customize the 
 * See how to test your theme customizations using real AEM content via local proxy.
 * Know how to commit your changes to the AEM git repository.
 
-Now that your front end developer has committed the theme customizations to your AEM git repository, you an take the final step and use the pipeline to deploy them.
+Now that your front-end developer has committed the theme customizations to your AEM git repository, you can take the final step and use the pipeline to deploy them.
 
 ## Objective {#objective}
 
@@ -34,9 +34,9 @@ This document explains how to deploy the theme using the pipeline. After reading
 
 ## Start the Pipeline {#start-pipeline}
 
-Once you have committed the theme customization changes to the AEM repo or the front end developer has informed you that they are committed, you can run [the pipeline you previously created](pipeline-setup.md) to deploy the changes.
+Once you have committed the theme customization changes to the AEM repo or the front-end developer has informed you that they are committed, you can run [the pipeline you previously created](pipeline-setup.md) to deploy the changes.
 
-1. Return to the Cloud Manager Program Overview and tap or click the ellipsis next to your pipeline. From the drop down menu, select **Run**.
+1. Return to the Cloud Manager Program Overview and tap or click the ellipsis next to your pipeline. From the drop-down menu, select **Run**.
 
    ![Run pipeline](assets/run-pipeline.png)
 
@@ -44,7 +44,7 @@ Once you have committed the theme customization changes to the AEM repo or the f
 
    ![Confirm pipeline run](assets/pipeline-confirm.png)
 
-1. In the list of pipelines, the status column indicates that your pipeline is now running. It will take about five minutes to complete.
+1. In the list of pipelines, the status column indicates that your pipeline is now running. It takes about five minutes to complete.
 
    ![Pipeline running status](assets/pipeline-running.png)
 
@@ -79,10 +79,10 @@ Once the pipeline is complete, you can view the changes on the authoring instanc
 
 Congratulations! You have completed the AEM Quick Site Creation journey! You should now:
 
-* Understand how Cloud Manager and the front end pipeline work to manage and deploy front end customizations.
-* Know how to create an AEM site based on a template and how to provide the theme and credentials to a front end developer.
+* Understand how Cloud Manager and the front-end pipeline work to manage and deploy front-end customizations.
+* Know how to create an AEM site based on a template and how to provide the theme and credentials to a front-end developer.
 * How to customize and test a theme using proxied AEM content and commit those changes to AEM git.
-* How to deploy front end customization using the pipeline.
+* How to deploy front-end customization using the pipeline.
 
 You are now ready to customize the themes of your own AEM site. However AEM is a powerful tool and there are many additional options available. Check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
 
@@ -90,8 +90,8 @@ You are now ready to customize the themes of your own AEM site. However AEM is a
 
 While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Deploy Your Customized Theme,](deploy-theme.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
-* [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - If you already have a firm understanding of AEM and headless technologies, you may want to directly consult our in-depth technical docs.
-* [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult our in-depth technical docs.
+* [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - If you already have a firm understanding of AEM, you may want to directly consult the in-depth technical docs.
+* [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult the in-depth technical docs.
 * [AEM Standard Site Template](https://github.com/adobe/aem-site-template-standard) - This is the GitHub repository of the AEM Standard Site template.
 * [AEM Site Theme](https://github.com/adobe/aem-site-template-standard-theme-e2e) - This is the GitHub repository of the AEM Site Theme.
 * [npm](https://www.npmjs.com) - AEM themes used to quickly build sites are based on npm.

@@ -16,15 +16,15 @@ Learn how the site theme is built, how to customize, and how to test using live 
 
 ## The Story So Far {#story-so-far}
 
-If you are a front end developer only responsible for the customization of the site theme, you do not need any knowledge of how AEM was set up and can skip to the [Objective](#objective) section of this document.
+If you are a front-end developer only responsible for the customization of the site theme, you do not need any knowledge of how AEM was set up and can skip to the [Objective](#objective) section of this document.
 
-If you also serve the role of administrator as well as front end developer, you learned in the previous document of the AEM Quick Site Creation journey, [Create Site from Template,](create-site.md) how to quickly create a new AEM site using a template, and you should now:
+If you also serve the role of administrator as well as front-end developer, you learned in the previous document of the AEM Quick Site Creation journey, [Create Site from Template,](create-site.md) how to quickly create a new AEM site using a template, and you should now:
 
 * Understand how to obtain AEM Site templates.
 * Learn how to create a new site using a template.
-* See how to download the template from your new site to provide to the front end developer.
+* See how to download the template from your new site to provide to the front-end developer.
 
-Now that you have a site created based on a template and have all of the information that a front end developer needs, this article shifts perspective exclusively to the front end developer role and shows the developer how to customize the theme.
+Now that you have a site created based on a template and have all of the information that a front-end developer needs, this article shifts perspective exclusively to the front-end developer role and shows the developer how to customize the theme.
 
 ## Objective {#objective}
 
@@ -36,17 +36,17 @@ This document explains how the AEM site theme is built, how to customize it, and
 
 ## Requirements {#requirements}
 
-The Quick Site Creation tool allows front end developers to work completely independently without and knowledge of AEM or how it is set up. However, there is information that you must be provided by the AEM administrator.
+The Quick Site Creation tool allows front-end developers to work independently without and knowledge of AEM or how it is set up. However, there is information that you must be provided by the AEM administrator.
 
 * Theme source files to customize
 * Path to an example page to use as a base of reference
 * Git credentials to commit your customizations
 * Proxy user credentials to test your customizations against live AEM content
-* Front end design requirements
+* front-end design requirements
 
 If you are missing any of these items, please contact your AEM administrator.
 
-It is assumed that the front end developer has extensive experience with front end development workflows as well as common tools installed including:
+It is assumed that the front-end developer has extensive experience with front-end development workflows as well as common tools installed including:
 
 * git
 * npm
@@ -59,7 +59,7 @@ Extract the theme provided by the AEM administrator to where you would like to e
 
 ![Editing the theme](assets/edit-theme.png)
 
-You will see that the theme is a typical front end project. The most important parts of the structure are:
+You see that the theme is a typical front-end project. The most important parts of the structure are:
 
 * `src/main.ts`: This is the main entry point of your JS & CSS theme.
 * `src/site`: These are files that are generic to the entire site.
@@ -70,11 +70,11 @@ You will see that the theme is a typical front end project. The most important p
 >
 >If you would like to know more about the standard AEM site theme, see the GitHub link in the [Additional Resources](#additional-resources) section at the end of this document.
 
-Once you are comfortable with the structure of the theme project, we will start the local proxy so you can see any theme customizations in real time based on actual AEM content.
+Once you are comfortable with the structure of the theme project, start the local proxy so you can see any theme customizations in real time based on actual AEM content.
 
 ## Starting the Local Proxy {#starting-proxy}
 
-1. From the command line navigate to the root of the theme on your local machine.
+1. From the command line, navigate to the root of the theme on your local machine.
 1. Execute `npm install` and npm retrieves dependencies and installs the project.
 
    ![npm install](assets/npm-install.png)
@@ -83,13 +83,13 @@ Once you are comfortable with the structure of the theme project, we will start 
 
    ![npm run live](assets/npm-run-live.png)
 
-1. When the proxy server starts it automatically opens a browser to `http://localhost:7001/`. Tap or click **SIGN IN LOCALLY (ADMIN TASKS ONLY)** and sign on with the proxy user credentials provided to you by the administrator.
+1. When the proxy server starts, it automatically opens a browser to `http://localhost:7001/`. Tap or click **SIGN IN LOCALLY (ADMIN TASKS ONLY)** and sign on with the proxy user credentials provided to you by the administrator.
 
    ![Sign in locally](assets/sign-in-locally.png)
 
 1. Once signed in, change the URL in the browser to point to the path to the sample content that the administrator provided to you.
 
-   * For example if the path provided was `/content/<your-site>/en/home.html?wcmmode=disabled`
+   * For example, if the path provided was `/content/<your-site>/en/home.html?wcmmode=disabled`
    * You would change the URL to `http://localhost:7001/content/<your-site>/en/home.html?wcmmode=disabled`
 
    ![Proxied sample content](assets/proxied-sample-content.png)
@@ -98,17 +98,17 @@ You can navigate the site to explore the content. The site is pulled live from t
 
 ## Customize the Theme {#customize-theme}
 
-Now you can start customizing the theme. Here we will walk through a simple example to illustrate how you can see your changes live via the proxy.
+Now you can start customizing the theme. The following is a simple example to illustrate how you can see your changes live via the proxy.
 
 1. In your editor, open the file `<your-theme-sources>/src/site/_variables.scss`
 
    ![Edit theme](assets/edit-theme.png)
 
-1. Edit the variable `$color-background` and set it to a value other than white. In this example, we used `orange`.
+1. Edit the variable `$color-background` and set it to a value other than white. In this example, `orange` was used.
 
    ![Edited theme](assets/edited-theme.png)
 
-1. As soon as you save the file, you will see that the proxy server recognizes the change via the line `[Browsersync] File event [change]`.
+1. When you save the file, you see that the proxy server recognizes the change via the line `[Browsersync] File event [change]`.
 
    ![Proxy browsersync](assets/proxy-browsersync.png)
 
@@ -140,7 +140,7 @@ Once your customizations are complete, you can commit them to the AEM git reposi
 
    ![Changes committed](assets/changes-committed.png)
 
-Your customizations are now safely stored in the AEM repository. Now you simply need to inform the administrator the the customizations are ready to deploy.
+Your customizations are now safely stored in the AEM repository. Now you simply need to inform the administrator that the customizations are ready to deploy.
 
 ## What's Next {#what-is-next}
 
@@ -150,9 +150,9 @@ Now that you have completed this part of the AEM Quick Site Creation journey you
 * See how to test your theme customizations using real AEM content via local proxy.
 * Know how to commit your changes to the AEM git repository.
 
-If you are only responsible for front end development, congratulations! You are finished! Just remember to tell the administrator that your customizations are now ready to deploy.
+If you are only responsible for front-end development, congratulations! You are finished! Just remember to tell the administrator that your customizations are now ready to deploy.
 
-If you are an administrator as well as a front end developer, build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Deploy Your Customized Theme,](deploy-theme.md) where you will learn how to deploy the theme using the front end pipeline.
+If you are an administrator as well as a front-end developer, build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Deploy Your Customized Theme,](deploy-theme.md) where you will learn how to deploy the theme using the front-end pipeline.
 
 ## Additional Resources {#additional-resources}
 

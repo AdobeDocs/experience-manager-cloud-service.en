@@ -68,7 +68,7 @@ Documentation Journeys are intended as a complement to existing AEM technical do
 
 |Documentation Type|Purpose|Audience|Assumes|Omits|Content Type|Length|
 |---|---|---|---|---|---|---|
-|Documentation Journey|A journey defines how AEM can solve a general business problem through a narrative that guides readers through complex, interrelated processes and features. It illustrates how multiple features work together to solve a business need in a best practices fashion.|Readers new to AEM|General CMS familiarity|Detailed options and configuration|Text|Ca 1 hour|
+|Documentation Journey|A journey defines how AEM can solve a general business problem through a narrative that guides readers through complex, interrelated processes and features. It illustrates how multiple features work together to solve a business need in a best practices fashion.|Readers new to AEM|General CMS familiarity|Detailed options and configuration|Text|Ca. 1 hour|
 |Technical Docs|Technical docs focus on individual features, detailing the technical workings of the feature and every option available to the user.|Experienced AEM users|AEM experience|Context and background|Text|Varies|
 |Tutorial|A tutorial is an in-depth dive into a topic showing a developer or admin how to achieve a technical goal (generally programming or system configuration) in a step-by-step fashion, providing specific examples and example code, usually leveraging a limited set of features.|AEM developers or administrators|AEM experience|Background and theory|Video|&gt;1 hour|
 |Getting Started Guide|A getting started guide is a lightning-fast walkthrough of a specific new AEM feature. It is a quick overview of an individual feature, leading the user through the important (but not all) steps to configuring and using a simple use case.|AEM Admins|AEM experience|Background, theory, detailed options|Text|&lt;1 hour|
@@ -84,7 +84,7 @@ There are a number of Documentation Journeys already available to you. Since eac
 |[Headless Architect Journey](/help/journey-headless/architect/overview.md)|Start here for an introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to model content for your project.|
 |[Headless Translation Journey](/help/journey-headless/translation/overview.md)|Start here to see how to set up and manage your headless translation projects in AEM.|
 |[AEM Onboarding Journey](/help/journey-onboarding/home.md)|Start here to get up-and-running quickly with your new AEM as a Cloud Service environment!|
-|[AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md)|Start here for a guided journey through the simple-to-use AEM Quick Site Creation tool to streamline the front end development of your AEM Site and quickly customize your site with no AEM backend knowledge.|
+|[AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md)|Start here for a guided journey through the simple-to-use AEM Quick Site Creation tool to streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.|
 |AEM Commerce Journey|Coming Soon!|
 |AEMaaCS Migration Journey|Coming Soon!|
 
