@@ -47,9 +47,9 @@ The generic Venia catalog template uses the Product List Core Component. This co
 The generic Venia product template uses the Product Detail Core Component. This component displays product information for various product types and add-to-cart action.
 ![product template](assets/product-template.png)
 
-### Edit and preview
+### Edit templates
 
-
+Templates can be edited either by opening directly the template page or by switching into edit mode while browsing a product catalog page. Keep in mind that changing the page will change the template and not just the specific page of the product / category.
 
 ### Category or product specific templates
 
@@ -77,7 +77,7 @@ Add any image on top of the page.
 
 ![create template update](assets/create-template-update.png)
 
-The template can be previewed with any category. Open "Page Information" and then select ""View with Cateogry". The categor picker appears and allows you to select a category for a preview. Select "Shop The Look" category to get a preview of the updated template.
+The template can be previewed with any category / product. Open "Page Information" and then select "View with category / product". Select the product / category from the picker to get a preview with this product / category. Select "Shop The Look" category to get a preview of the updated template.
 
 ![create template ](assets/create-template-picker.png)
 
