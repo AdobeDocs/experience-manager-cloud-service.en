@@ -36,7 +36,7 @@ This journey lays out the requirements, steps, and approach to customize AEM Sit
 
 |Persona|Description|Role in Journey|
 |---|---|---|
-|Front end developer|Customizes the site theme|Takes theme provided by the administrator and customizes it so that is can be deployed to the AEM site.
+|Front end developer|Customizes the site theme|Takes theme provided by the administrator and customizes it so that is can be deployed to the AEM site.|
 |Content Author|Creates and manage content that is delivered as sites|Content Authors create content on AEM that is customized by the theme developed by the front end developer.|
 |Administrator|Manages the base setup and configuration of AEM including the deployment pipeline and source repository|The administrator provides the front end developer with credentials to access the source repository for the project and deploy the customized themes.|
 
