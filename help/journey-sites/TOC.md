@@ -19,6 +19,7 @@ role: Developer, Architect
   + [Translate content](translation/translate-content.md)
   + [Publish translated content](translation/publish-content.md)
 + AEM Quick Site Creation Journey {#quick-site}
+  + [Understand AEM Quick Site Creation](quick-site/overview.md)
   + [Understand Cloud Manager](quick-site/cloud-manager.md)
   + [Set up your pipeline](quick-site/pipeline-setup.md)
   + [Create site from template](quick-site/create-site.md)
