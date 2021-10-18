@@ -44,3 +44,5 @@ The next release is planned for November 04, 2021.
 
 * Certain internal requests made during environment creation were not being retried.
 
+* If deployment failed error occurs following domain name verification, the error message has been corrected to request the customer to contact their Adobe representative.
+
