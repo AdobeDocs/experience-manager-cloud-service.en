@@ -30,6 +30,10 @@ Follow the steps below to extract your migration set from the Content Transfer T
 
    >[!NOTE]
    >You have the option to overwrite staging container during the extraction phase.
+
+   >[!IMPORTANT]
+   >If the User Mapping has not been run on this migration set prior to extracting content from source, you will see a warning displaying that User Mapping step is pending, as shown in the figure below. Click on **Map Users** to run the User Mapping tool.
+   >![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/user-mapping-extract.png) 
   
 1. The **Extraction** field now displays the **RUNNING** status to indicate that the extraction is in-progress.
 
