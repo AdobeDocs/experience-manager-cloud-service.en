@@ -4,36 +4,33 @@ description: Start your migration journey by familiarizing yourself on the basic
 ---
 # Getting Started with Moving to AEM as a Cloud Service {#getting-started}
 
-In this part of the AEM as a Cloud Service Migration Journey you will learn about the basics of moving your on-premise or AMS installation of AEM to the cloud.
+In this part of the AEM as a Cloud Service Migration Journey, you will learn about the basics of moving your on-premise or Adobe Managed Services installation of AEM to the cloud.
 
 ## Objective {#objective}
 
 This document helps you understand why you should use a cloud native version of AEM, as well as the different phases of migrating to AEM as a Cloud Service. After reading, you should:
 
 * Understand the benefits of moving AEM as a Cloud Service
-* Familiarize yourself with the broad steps that need to be taken in order to transition to the cloud
+* Familiarize yourself with the broad steps that you must take in order to transition to the cloud
 
 ## Benefits of Moving to AEM as a Cloud Service {#benefits-of-moving-to-aem-as-a-cloud-service}
 
-AEM as a Cloud Service provides a scalable, secure, and agile technology foundation for Experience Manager Assets, Forms, and Screens enabling marketers and IT to focus on delivering impactful experiences at scale.
+AEM as a Cloud Service provides a scalable, secure, and agile technology foundation for Experience Manager Assets, Forms, and Screens enabling marketers and IT professionals to focus on delivering impactful experiences at scale.
 
-With AEM as a Cloud Service, your teams can focus on innovating instead of planning for product upgrades. New product features are thoroughly tested and delivered to your teams without any interruption so that they always have access to the state-of-the art application.
+With AEM as a Cloud Service, your teams can focus on innovating instead of planning for product upgrades. New product features are thoroughly tested and delivered to your teams without any interruption so that they always have access to the latest version of AEM.
 
 ## Understanding the Transition to AEM as a Cloud Service {#understanding-transition-to-aem-as-a-cloud-service}
 
 The migration journey to Cloud Service involves the following phases:
 
-* [Determining if your Deployment is Ready to be Moved to AEM as a Cloud Service](/help/journey-migration/readiness.md)
-* [Making your Code and Content Cloud Ready](/help/journey-migration/making-your-code-and-content-cloud-ready.md)
-* [Performing the Migration](/help/journey-migration/performing-migration.md)
-* [Monitoring for Issues and Improving Performance](/help/journey-migration/monitor-and-improve.md)
-
-For a successful and smooth transition, you should ensure proper planning and adhere to best practices outlined in this Journey.
+* Begin by [determining if your deployment is ready to be moved to AEM as a Cloud Service](/help/journey-migration/readiness.md), by familiarizing yourself with the changes that it has introduced
+* Next, [make your code and content cloud ready](/help/journey-migration/making-your-code-and-content-cloud-ready.md) by exploring the tooling Adobe provides to ease the move to the cloud
+* Once everything is in place, you can [perform the migration](/help/journey-migration/performing-migration.md)
+* Finally, make sure to [monitor for issues and improve performance](/help/journey-migration/monitor-and-improve.md) after the migration is complete.
 
 The figure below shows a pictorial representation of the recommended transition journey to AEM as a Cloud Service.
 
 ![image](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
-
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 
@@ -46,9 +43,9 @@ The figure below shows a pictorial representation of the recommended transition 
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html#aem-moving-to-aem-guide" text="Moving to AEM as a Cloud Service"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="Notable Changes to AEM Sites as a Cloud Service" -->
 
-Cloud Acceleration Manager is a cloud-based application designed to guide your IT teams throughout the transition journey starting from planning to going live on Cloud Service. Set up your teams for a successful migration with Adobe-recommended best practices, tips, documentation, and tools to help at every phase of the journey to AEM as Cloud Service.
+In addition to the steps outlined in this journey, Adobe provides Cloud Acceleration Manager, a cloud-based application designed to guide your IT teams throughout the transition journey starting from planning to going live on Cloud Service. Set up your teams for a successful migration with Adobe-recommended best practices, tips, documentation, and tools to help at every phase of the journey to AEM as Cloud Service.
 
-Refer to [Getting Started with Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en) or watch a [video introduction to Cloud Acceleration Manager](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&recommended=ExperienceManager-A-1-2021.1.migration&lang=en#dashboard/learning) to start your migration journey. 
+You can consult the [Cloud Acceleration Manager documentation](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) or watch an [introduction video](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&recommended=ExperienceManager-A-1-2021.1.migration&lang=en#dashboard/learning) to start your migration journey. 
 
 ## What's Next {#what-is-next}
 
@@ -58,5 +55,5 @@ Thanks for getting started on your AEM Cloud Service migration journey! Now that
 
 * [AEM as a Cloud Service: Introduction, Architecture and Thinking Differently](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&recommended=ExperienceManager-D-1-2021.1.migration&lang=en#dashboard/learning)
 * [AEM a Cloud Service Home](/help/landing/home.md) - For an overview of the Experience Manager as a Cloud Service documentation, start here.
-* [AEM as a Cloud Service Overview](/help/overview/home.md) - This guide provides an overview of Experience Manager as a Cloud service, including an introduction, terminology and architecture.
-* [Onboarding](/help/onboarding/home.md)- This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
+* [AEM as a Cloud Service Overview](/help/overview/home.md) - This guide provides an overview of Experience Manager as a Cloud service, including an introduction, terminology, and architecture.
+* [Onboarding](/help/onboarding/home.md)- This guide provides a summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
