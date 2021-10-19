@@ -34,7 +34,7 @@ This document explains how to deploy the theme using the pipeline. After reading
 
 ## Start the Pipeline {#start-pipeline}
 
-Once you have committed the theme customization changes to the AEM repo or the front-end developer has informed you that they are committed, you can run [the pipeline you previously created](pipeline-setup.md) to deploy the changes.
+Once you have committed the theme customization changes to the AEM git repository or the front-end developer has informed you that they are committed, you can run [the pipeline you previously created](pipeline-setup.md) to deploy the changes.
 
 1. Return to the Cloud Manager Program Overview and tap or click the ellipsis next to your pipeline. From the drop-down menu, select **Run**.
 

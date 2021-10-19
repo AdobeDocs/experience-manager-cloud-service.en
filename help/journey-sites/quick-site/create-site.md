@@ -103,7 +103,7 @@ Content authors can now begin authoring.
 
 ## Example Page {#example-page}
 
-The front-end developer may not be terribly familiar with the details of your content. Therefore it is a good idea to provide the developer with a path to typical content that can be used as a base of reference as the theme is customized. A typical example is the home page for the master language of the site.
+The front-end developer may not be familiar with the details of your content. Therefore it is a good idea to provide the developer with a path to typical content that can be used as a base of reference as the theme is customized. A typical example is the home page for the master language of the site.
 
 1. In the sites browser, navigate to the home page of the master language of the site and then tap or click the page to select it and then tap or click **Edit** in the menu bar.
 
@@ -143,7 +143,7 @@ In order for the front-end developer to preview the customizations using actual 
    ![User management console](assets/user-management-console.png)
 1. In the **Create New User** window you must at a minimum provide:
    * **ID** - Take note of this value as you must provide it to the front-end developer.
-   * Password -  - Save this value securely in a password vault as you must provide it to the front-end developer.
+   * **Password** - Save this value securely in a password vault as you must provide it to the front-end developer.
 
    ![New user details](assets/new-user-details.png)
 
