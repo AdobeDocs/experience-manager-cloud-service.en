@@ -93,23 +93,13 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ### What is New {#what-is-new-cif}
 
-* New "associated commerce content" tab in Sites editor increases author efficiency by quickly getting access to relevant AEM  product content for the current context
+* Support for latest Commerce v2.4.3
 
-  ![Associated commerce content](/help/assets/CIF/associated-commerce-content.png)
+* Support links to product and category pages in text fields using the rich text editor (RTE)
 
-* Improved product picker UI for better user experience, increased efficiency and support for complex product catalog
+* Dedicated shopping cart and checkout page based on shared and extensible Magento Peregrine components
 
-  ![New Product Picker](/help/assets/CIF/product-picker.png)
-
-* Respect "include_in_menu" property in navigation component
-
-### Bug Fixes {#bug-fixes-cif}
-
-* Menu cache flush is not working as expected
-
-* JS errors during AEM CS deployment step and when not using clientside components
-
-* Cannot create CIF cloud config in folders that have a sling:configs node
+* Respect "include in menu" configuration to show / hide categories in navigation
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens} 
 
