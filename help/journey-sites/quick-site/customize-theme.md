@@ -61,10 +61,10 @@ Extract the theme provided by the AEM administrator to where you would like to e
 
 You see that the theme is a typical front-end project. The most important parts of the structure are:
 
-* `src/main.ts`: This is the main entry point of your JS & CSS theme.
-* `src/site`: These are files that are generic to the entire site.
-* `src/components`: These are files that are specific to components.
-* `src/resources`: These are associated files like icons, logos, and fonts.
+* `src/main.ts`: The main entry point of your JS & CSS theme
+* `src/site`: JS & CSS files that apply to the entire site
+* `src/components`: JS & CSS files specific to AEM components
+* `src/resources`: Static files like icons, logos, and fonts
 
 >[!TIP]
 >
@@ -104,7 +104,7 @@ Now you can start customizing the theme. The following is a simple example to il
 
    ![Edit theme](assets/edit-theme.png)
 
-1. Edit the variable `$color-background` and set it to a value other than white. In this example, `orange` was used.
+1. Edit the variable `$color-background` and set it to a value other than white. In this example, `orange` is used.
 
    ![Edited theme](assets/edited-theme.png)
 
@@ -136,11 +136,11 @@ Once your customizations are complete, you can commit them to the AEM git reposi
    git push
    ```
 
-1. The customizations are pushed to the AEM repository.
+1. The customizations are pushed to the AEM git repository.
 
    ![Changes committed](assets/changes-committed.png)
 
-Your customizations are now safely stored in the AEM repository. Now you simply need to inform the administrator that the customizations are ready to deploy.
+Your customizations are now safely stored in the AEM git repository. Now you simply need to inform the administrator that the customizations are ready to deploy.
 
 ## What's Next {#what-is-next}
 
