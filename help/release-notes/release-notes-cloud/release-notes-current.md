@@ -101,6 +101,8 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 * Merchants can hide certain product catalog categories in the navigation using the Commerce backend. The CIF Navigation Core Component respects the commerce backend configuration "include in menu" to show / hide categories in navigation
 
+* AEM Storefront Venia returns HTTP 404 error if category or product page is not found
+
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens} 
 
 ### What is New {#what-is-new-screens}
