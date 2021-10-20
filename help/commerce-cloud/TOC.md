@@ -15,10 +15,12 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [3rd Party Commerce Solution](integrating/third-party.md)
 + AEM Storefront {#storefront}
   + [Getting started](getting-started.md)
+  + Authoring {#authoring}
+    + [Staged product catalog](authoring/staged-product-catalog.md)
+    + [Enrich product data with associated content](authoring/enrich-product-associated-content.md)
   + Administering {#administering}
     + [Multi-Store Setup](configuring/multi-store-setup.md)
     + [Multi-Template Usage](configuring/multi-template-usage.md)
-    + [Enrich product data with associated content](configuring/enrich-product-associated-content.md)
     + [Configuring URLs for SEO](configuring/advanced-url-configuration.md)
     + [Caching Options](configuring/caching.md)
     + [Custom HTTP Headers](/help/commerce-cloud/configuring/custom-http-headers.md)
