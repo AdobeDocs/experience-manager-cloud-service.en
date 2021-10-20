@@ -93,13 +93,13 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ### What is New {#what-is-new-cif}
 
-* Support for latest Commerce v2.4.3
+* The CIF add-on supports latest Commerce v2.4.3 with new GraphQL APIs and schemas
 
-* Support links to product and category pages in text fields using the rich text editor (RTE)
+* Authors can add links to product and catalog pages in text fields using the rich text editor (RTE). A CIF icon has been added to the RTE toolbar that will open up the pickers to quickly search and select the product or category without leaving the context.
 
-* Dedicated shopping cart and checkout page based on shared and extensible Magento Peregrine components
+* Existing pop-up shopping cart and checkout have been replaced with dedicated AEM shopping cart and checkout pages. The components on these pages are built using Magento's extensible Peregrine components
 
-* Respect "include in menu" configuration to show / hide categories in navigation
+* Merchants can hide certain product catalog categories in the navigation using the Commerce backend. The CIF Navigation Core Component respects the commerce backend configuration "include in menu" to show / hide categories in navigation
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens} 
 
