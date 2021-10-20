@@ -1,9 +1,13 @@
 ---
 title: Configuring Advanced Networking for AEM as a Cloud Service
-description: Learn how to configure advanced networking features like VPN or dedicated egress IP address for AEM as a Cloud Service
+description: Learn how to configure advanced networking features like VPN or a flexible or dedicated egress IP address for AEM as a Cloud Service
 ---
 
 # Configuring Advanced Networking for AEM as a Cloud Service {#configuring-advanced-networking}
+
+This article aims to introduce you to the different advanced networking features in AEM as a Cloud Service, including self-serve provisioning of VPN, non-standard ports, and dedicated egress IP addresses.
+
+## Overview {#overview}
 
 >[!INFO]
 >
@@ -13,7 +17,7 @@ AEM as a Cloud Service offers several types of advanced networking capabilities,
 
 * [Flexible port egress](#flexible-port-egress) - configure AEM as a Cloud Service to allow outbound traffic out of non-standard ports
 * [Dedicated egress IP address](#dedicated-egress-IP-address) - configure traffic out of AEM as a Cloud Service to originate from a unique IP
-* [Virtual Private Network](#vpn) - secure traffic between a customer's infrastructure and AEM as a Cloud Service, for customers who have VPN technology
+* [Virtual Private Network (VPN)](#vpn) - secure traffic between a customer's infrastructure and AEM as a Cloud Service, for customers who have VPN technology
 
 This article describes each of these options in detail, including how they can be configured. As a general configuration strategy, the `/networkInfrastructures` API endpoint is invoked at the program level to declare the desired type of advanced networking, followed by a call to the `/advancedNetworking` endpoint for each environment to enable the infrastructure and configure environment-specific parameters. Please reference the appropriate endpoints in the Cloud Manager API documentation for each formal syntax, as well as sample requests and responses.
 
