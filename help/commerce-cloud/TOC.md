@@ -16,7 +16,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
 + AEM Storefront {#storefront}
   + [Getting started](getting-started.md)
   + Authoring {#authoring}
-    + [Staged product catalog](authoring/staged-product-catalog.md)
+    + [Product cockpit](authoring/product-cockpit.md)
     + [Enrich product data with associated content](authoring/enrich-product-associated-content.md)
   + Administering {#administering}
     + [Multi-Store Setup](configuring/multi-store-setup.md)
