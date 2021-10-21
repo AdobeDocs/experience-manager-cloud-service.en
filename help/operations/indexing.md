@@ -212,10 +212,10 @@ Apache Jackrabbit Oak enables flexible index configurations to efficiently handl
 ### Lucene full text index on AEM as a Cloud Service {#index-lucene}
 
 The fulltext index `/oak:index/lucene-2` can become very large because it indexes all the nodes in the AEM repository by default.  Following Adobe’s plans to retire this index it will no longer be deployed in AEM as a Cloud Service from September 2021. As such, it is no longer used on the product side in AEM as a Cloud Service and it should not be required to run customer code. For AEM as a Cloud Service environments with common Lucene Indexes, Adobe is working with customers individually for a coordinated approach to compensate for this index and to use better, optimized indexes. No action is required by customers without further notice from Adobe. AEM as a Cloud Service customers will be informed by Adobe when there is a need for action with regard to this optimization. If this index is required for custom queries, as a temporary solution, a copy of this index should be created using a different name, for example, `/oak:index/acme.lucene-1-custom-1`, as described [here](/help/operations/indexing.md).
-This optimization does not apply by default to other AEM environments hosted on-premises or managed by Adobe Managed Services.
+This optimization does not apply by default to other AEM environments either hosted on-premises or managed by Adobe Managed Services.
 
 ## Query optimizations {#index-query}
 
-The **Query Performance** tool allows you to observe both popular and slow JCR queries. Additionally it is able to analyze queries and display various information about, most notably if an index is being used for this query or not.
+The **Query Performance** tool allows you to observe both popular and slow JCR queries. Additionally, it is able to analyze queries and display various information about, most notably if an index is being used for this query or not.
 
 Unlike in AEM on premise, AEM as a Cloud Service does not display the **Query Performance** tool in the UI anymore. Instead it is now available via the Developer Console (in Cloud Manager) on the [Queries](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) tab.
