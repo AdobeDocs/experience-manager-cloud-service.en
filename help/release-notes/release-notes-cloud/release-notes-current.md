@@ -20,7 +20,7 @@ The following section outlines the general Release Notes for the current (latest
 ## Release Date {#release-date}
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2021.9.0) is October 6, 2021.
-The following release (2021.10.0) is on October 28, 2021.
+The following release (2021.10.0) is on October 27, 2021.
 
 ## Release Video {#release-video}
 
@@ -36,10 +36,16 @@ Have a look at the [September 2021 Release Overview](https://video.tv.adobe.com/
 
 ### New features in [!DNL Assets] {#assets-features}
 
+* Annotation of PDF files is now supported using native commenting and annotation tools from Adobe Document Cloud. Annotate PDF content by adding text, highlights, sticky notes, and drawings directly within the document preview window. Users can also jump to pages of interest in the PDF by clicking on specific comments
+
 * Users can now sort the assets displayed in the search results in Column and Card views. The sorting works on Name, Created, Modified, or None columns.
 
   ![Sort the search results in [!DNL Assets] in Column and Card views](/help/assets/assets/sort-searched-assets.png)
   *Figure: Sort the search results in [!DNL Assets] in Column and Card views.*
+
+### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
+
+* [!DNL Assets] now includes a built-in connector to [!DNL Azure Media Services] for audio and video transcription. When configured, the supported files are automatically transcribed and generate WebVTT files. The WebVTT captions are used for more effective searching, captioning, or translation for use as subtitles.
 
 <!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
@@ -50,8 +56,8 @@ Have a look at the [September 2021 Release Overview](https://video.tv.adobe.com/
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-Apparently, no new Assets features in Sep beta channel.
-A/V transcription feature via CQ-4303854 has moved to Oct beta now.
+Apparently, no new Assets features in Sep prerelease channel.
+A/V transcription feature via CQ-4303854 has moved to Oct prerelease now.
 
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
@@ -65,17 +71,16 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Use Adobe Sign roles in an Adaptive Form**: Adobe Sign for business and enterprise service levels have the option to expand the roles for Agreement recipients, beyond just the Signer, to better match their workflow requirements. You can now [enable each recipient of agreement to configure their role in an Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), with Signer being the default role.
 
-* **Analytics for Adaptive Forms**: You can now capture and track end user behavior via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
+* **Analytics for Adaptive Forms**: You can now capture and [track end user behavior via Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-aem-forms-with-adobe-analytics.html) for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
 
 * **Easily connect AEM Forms with Microsoft Dynamics and Salesforce**: The service provides out of the box data source configuration and data models for Microsoft Dynamics and Salesforce, making it [faster and easier for developers to configure Microsoft Dynamics and Salesforce as data sources for an adaptive form](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
 
-* **E-Sign an adaptive form using DocuSign:** You can use DocuSign to e-sign an adaptive form. The service provides a custom submit action to use DocuSign with an adaptive form. You can install the package available on Software Distribution to import the submit action.
+* **E-Sign an adaptive form using DocuSign:** [You can use DocuSign to e-sign an adaptive form](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-docusign-adaptive-forms.html). The service provides a custom submit action to use DocuSign with an adaptive form.
 
 ### Beta features of [!DNL Forms]  {#sep-what-is-new-forms-prerelease}
 
-* **Unified Storage Connector:** Use Unified Storage Connector to externalize in-process data in customer-managed repositories. For example, you can
-  * Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository. 
-  * Store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) in a customer-managed repository.  
+* **Unified Storage Connector:** Use Unified Storage Connector to externalize in-process data in customer-managed repositories. For example, you can store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) in a customer-managed repository.
+  <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->  
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) help you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
   * Generate documents by populating template files with XML data.
@@ -148,12 +153,47 @@ To improve the performance of search queries and indexing, the full-text index l
 
 ## Cloud Manager {#cloud-manager}
 
-This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.9.0 and 2021.8.0.
+This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.10.0 and 2021.9.0.
+
+## Release Date {#release-date-cm-oct}
+
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.10.0 is October 14, 2021.
+The next release is planned for November 04, 2021.
+
+### What's New {#what-is-new-cm-oct}
+
+* In preparation for some upcoming changes, existing deployment pipelines will now be referenced and labelled in the user interface as **Full Stack** pipelines.
+
+* Pipeline card has been refreshed to now display a single, integrated face that shows both production and non-production pipelines, and user can select Run/Pause/Resume directly from the action menu associated with each pipeline.
+
+* A user in Deployment Manager role can now delete Production pipeline in a self-service manner via the UI.
+
+* Add and edit pipeline experiences have been refreshed to now use familiar, modern modals.
+
+* Users of Cloud Manager can now submit feedback directly from the user interface via the **Feedback** button on top right of the landing page.
+
+* Yearly SLA Graphs can now be downloaded from the Cloud Manager's user interface. 
+
+* Code quality and non-production pipeline executions will now use a more efficient shallow cloning process during the build step, leading to a faster build time for customers with especially large git repositories. 
+
+* Add IP Allow List wizard will now inform the user if maximum allowed number of IP Allow Lists has been reached. 
+
+* The Cloud Manager API documentation now includes an interactive playground that allows logged-in users to experiment with the API from their browser. See [Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) for more details.
+
+* The tool tip on the Program card will be more descriptive if a selection option under 'Navigate To' is disabled. It now displays "A production environment does not exist." 
 
 ## Release Date {#release-date-cm-sept}
 
 The Release Date for Cloud Manager in AEM as a Cloud Service 2021.9.0 is September 09, 2021.
-The next release is planned for October 07, 2021.
+
+### Bug Fixes {#bug-fixes-cm-oct}
+
+* In rare situations, when an Adobe staff would restore a customer's environment, the restore was considered complete before the environment was fully operational.
+
+* Certain internal requests made during environment creation were not being retried.
+
+* If deployment failed error occurs following domain name verification, the error message has been corrected to request the customer to contact their Adobe representative.
+
 
 ### What's New {#what-is-new-cm-sept}
 
@@ -191,12 +231,12 @@ The Release Date for Content Transfer Tool v1.6.0 is October 04, 2021.
 
 ### What's New {#what-is-new-ctt}
 
-* Improved User Mapping with a simplified User Experience, including the following features listed below. For more details, refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+* Improved User Mapping Tool with a simplified User Experience, including the following features listed below. For more details, refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
   * Test connection to the User Management API before running the User Mapping
   * Gracefully skip errors and continue with the User Mapping activity
-  * User Mapping no longer fails if Access Token expires (after 24 hours). User Mapping can be re-run from where it last stopped.
+  * User Mapping no longer fails if **Access Token** expires after 24 hours. User Mapping can be re-run from where it last stopped.
 
-* To increase CTT robustness, content can be ingested to either Author instance or Publish instance at a time. 
+* To increase the Content Transfer Tool robustness, content can be ingested to either Author instance or Publish instance at a time. See [Getting Started with Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) for more details.
 
 * When versions are included, the path `/var/audit` is automatically included to migrate audit events.
 
@@ -204,14 +244,13 @@ The Release Date for Content Transfer Tool v1.6.0 is October 04, 2021.
 
 ### Release Date {#release-date-bpa-latest}
 
-The Release Date for Best Practices Analyzer v2.1.18 is September 02, 2021.
+The Release Date for Best Practices Analyzer v2.1.20 is October 05, 2021.
 
 ### What's New {#what-is-new}
 
-* Ability to detect and report on total node count.
+* Ability to detect and report on node name length.
 
-* Ability to detect and report on the node store type and size.
+* Ability to detect and report on the total Index size.
 
-### Bug Fixes {#bug-fixes-bpa}
+* Ability to detect and report on assets that are missing their original rendition.
 
-* BPA was falsely detecting presence of Commerce Integration Framework.
