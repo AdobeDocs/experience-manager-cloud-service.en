@@ -56,4 +56,4 @@ Thanks for getting started on your AEM Cloud Service migration journey! Now that
 * [AEM as a Cloud Service: Introduction, Architecture and Thinking Differently](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&recommended=ExperienceManager-D-1-2021.1.migration&lang=en#dashboard/learning)
 * [AEM a Cloud Service Home](/help/landing/home.md) - For an overview of the Experience Manager as a Cloud Service documentation, start here.
 * [AEM as a Cloud Service Overview](/help/overview/home.md) - This guide provides an overview of Experience Manager as a Cloud service, including an introduction, terminology, and architecture.
-* [Onboarding](/help/onboarding/home.md)- This guide provides a summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
+* [Onboarding](/help/onboarding/home.md)- This guide provides a summary of how to get started with Experience Manager as a Cloud Service, including how to get access and set up your team
