@@ -35,7 +35,7 @@ With this tool, you can specify the desired content subset that you want to tran
 >[!NOTE]
 >It is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service.
 
-Refer to [Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md) for more details.
+Refer to [Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) for more details.
 
 >[!IMPORTANT]
 >Minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you will need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool.
