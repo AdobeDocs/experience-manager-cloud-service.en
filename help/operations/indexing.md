@@ -216,6 +216,6 @@ This optimization does not apply by default to other AEM environments either hos
 
 ## Query optimizations {#index-query}
 
-The **Query Performance** tool allows you to observe both popular and slow JCR queries. Additionally it is able to analyze queries and display various information about, most notably if an index is being used for this query or not.
+The **Query Performance** tool allows you to observe both popular and slow JCR queries. Additionally, it is able to analyze queries and display various information about, most notably if an index is being used for this query or not.
 
 Unlike in AEM on premise, AEM as a Cloud Service does not display the **Query Performance** tool in the UI anymore. Instead it is now available via the Developer Console (in Cloud Manager) on the [Queries](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) tab.
