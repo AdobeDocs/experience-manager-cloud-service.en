@@ -29,32 +29,33 @@ This document helps you understand what factors you need to take into account in
 
 AEM as a Cloud Service brings many new features and possibilities for managing your AEM projects.
 
-However, there are a number of differences between AEM On-premise or in Adobe Managed Services as compared to AEM as a Cloud Service.
+Along with these improvements, a number of differences have been introduced between on-premise installations of AEM and Adobe Managed Services, compared to AEM as a Cloud Service.
 
-Refer to [Notable Changes to AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html) to understand the important differences.
+We recommend you review these changes by consulting the [Notable Changes to AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html) documentation.
 
 ## Deprecated Features {#deprecated-features}
 
 Adobe constantly evaluates product capabilities, to over time reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility.
 
-Refer to [Deprecated Features](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features) to learn more about features and capabilities that have been marked as deprecated in Experience Manager as a Cloud Service.
+We recommend you consult the [Deprecated Features](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features) to familiarize yourself with the features and capabilities that have been marked as deprecated in Experience Manager as a Cloud Service and see what the impact is for your AEM deployment.
 
-## Understanding the Planning Phase {#introduction}
+## Plan for a Review of your AEM Installation {#review-planning}
 
-The following figure showcases key steps involved during the Planning phase:
+The following figure showcases key steps involved during the review phase:
 
 ![image](/help/move-to-cloud-service/assets/planning-phaseimg1.png)
 
-### Assessing Cloud Service Readiness {#access-cloud-readiness}
+Next, we will explore what each of these steps means in detail.
 
-The first step in the Planning phase is to assess your readiness to move from your existing AEM version to Cloud Service and determine areas that will require refactoring to be compatible with AEM as a Cloud Service.
+### Assessing Cloud Service Readiness {#assess-cloud-readiness}
+
+The first step is to assess your readiness to move from your existing AEM version to Cloud Service and determine areas that will require refactoring in order to be compatible with AEM as a Cloud Service.
 
 You will need to do a comprehensive assessment of your current AEM source code against the notable changes and deprecated features to determine the level of effort expected in the transition journey.
 
-You can accelerate the assessment step by running the Best Practices Analyzer on your current AEM version. For more details refer to [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
+You can accelerate the assessment step by running the Best Practices Analyzer on your current AEM version. You can red up on how it works by consulting the [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md) documentation.
 
->[!NOTE]
->If you already have access to Cloud Manager and a Cloud Service environment, it is recommended to run your current code in a Cloud Manager code quality pipeline to assess the required code changes to be compatible with Cloud Service.
+If you already have access to Cloud Manager and a Cloud Service environment, it is recommended to run your current code in a Cloud Manager [code quality pipeline](/help/implementing/cloud-manager/code-quality-testing.md) to assess the required code changes to be compatible with Cloud Service.
 
 ### Reviewing Resource Planning {#review-resource-planning}
 
@@ -62,9 +63,9 @@ Once you have estimated the level of effort that will be required to move to Clo
 
 ### Establishing KPIs {#establish-kpis}
 
-If you have not established Key Performance Indicators (KPIs) previously, it is recommended to establish KPIs for your Adobe Experience Manager (AEM) implementation to help your team focus on what matters the most.
+If you have not established Key Performance Indicators (KPIs) previously, it is recommended to establish KPIs for your AEM implementation to help your team focus on what matters the most.
 
-Refer to [Developing KPIs](https://guided.adobe.com/welcome/aem/part6.html) to learn how to choose the right KPIs for your business objectives.
+See [Developing KPIs](https://guided.adobe.com/welcome/aem/part6.html) to learn how to choose the right KPIs for your business objectives.
 
 ## What's Next {#what-is-next}
 
