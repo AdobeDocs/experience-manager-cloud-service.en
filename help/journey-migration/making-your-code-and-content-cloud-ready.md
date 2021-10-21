@@ -95,7 +95,7 @@ It is recommended to refactor and test the code locally before pushing it to a C
 
 You can start by learning how to [set up a local development environment](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
-Once you have set up the local development environment, get familiar with the AEM as a Cloud Service SDK by consulting the [documentation]((/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+Once you have set up the local development environment, get familiar with the AEM as a Cloud Service SDK by consulting the [documentation](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
 Additionally, you can also:
 
