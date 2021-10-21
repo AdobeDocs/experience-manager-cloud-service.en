@@ -95,6 +95,14 @@ Content fragment models need to be published when/before any dependent content f
 >
 >If an author tries to publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
 
+>[!NOTE]
+>
+>The Locked (Published) Content Fragment Models feature is in beta.
+
+As soon as a model is published it is *locked* into a READ-ONLY mode on author. This aims to prevent changes that would result in errors to existing GraphQL schemas and queries, especially on the publish environment. It is indicated in the console by **Locked**. 
+
+When the model is **Locked** (in READ-ONLY mode), you can see the contents and structure of models but you cannot edit them directly; though you can manage **Locked** models from either the console, or the model editor.
+
 ## What's Next {#whats-next}
 
 Now that you have learned the basics, the next step is to start creating your own Content Fragment Models.
@@ -120,7 +128,9 @@ Now that you have learned the basics, the next step is to start creating your ow
     * [Publishing a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
     * [Unpublishing a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
-  
+
+    * [Locked (Published) Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+
 * Getting Started Guides
   
   * [Creating Content Fragment Models Headless Quick Start Guide](/help/implementing/developing/headless/getting-started/create-content-model.md)

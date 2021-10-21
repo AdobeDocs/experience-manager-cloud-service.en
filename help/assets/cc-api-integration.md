@@ -48,7 +48,7 @@ Users can create processing profiles to automate the following creative operatio
 
 To use processing profiles to automatically create variations, follow these steps:
 
-1. Contact [Adobe Customer Care](https://experienceleague.adobe.com/#support) to receive the license.
+1. Contact [Adobe Customer Support](https://experienceleague.adobe.com/#support) to receive the license.
 
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**.
 
