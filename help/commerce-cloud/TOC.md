@@ -11,12 +11,19 @@ user-guide-description: Understand how to use and administer Experience Manager 
 + [Notable Changes to AEM Content and Commerce as a Cloud Service](changes.md)
 + [Introduction and overview](introduction.md)
 + Commerce Journeys {#journeys}
-  + Authoring Journey {#author}
+  + Content Author Journey {#author}
     + [AEM Content and Commerce Content Author Journey](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md) 
     + [Getting Started with CIF Authoring](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
     + [Manage product catalog pages and template](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
     + [Building Staged Product Catalog Experiences](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
     + [Building Product Experiences](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
+  + Developer Journey {#developer}
+    + [AEM Content and Commerce Developer Journey](/help/commerce-cloud/commerce-journeys/aem-commerce-developer/overview.md) 
+    + [Getting Started with AEM Storefront](/help/commerce-cloud/commerce-journeys/aem-commerce-developer/getting-started.md)
+    + [Path to your First Storefront](/help/commerce-cloud/commerce-journeys/aem-commerce-developer/first-storefront.md)
+    + [Integration of Product Catalog](/help/commerce-cloud/commerce-journeys/aem-commerce-developer/catalog-integration.md)
+    + [Extending the Storefront](/help/commerce-cloud/commerce-journeys/aem-commerce-developer/extending-storefront.md)
+    + [Building Product Experiences](/help/commerce-cloud/commerce-journeys/aem-commerce-developer/building-experiences.md)
 + Integrations {#integrations}
   + [Adobe Commerce](integrating/magento.md)
   + [3rd Party Commerce Solution](integrating/third-party.md)
