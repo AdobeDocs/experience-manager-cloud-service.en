@@ -50,4 +50,4 @@ Although you can go directly to a particular part of the journey, many concepts 
 
 ## What's Next {#what-is-next}
 
-You are now ready to get started on your AEM Content and Commerce Developement journey. We encourage you to continue on to the next part of the journey and read the article [Learn about AEM Content and Commerce](/help/commerce-cloud/introduction.md).
+You are now ready to get started on your AEM Content and Commerce Development journey. We encourage you to continue on to the next part of the journey and read the article [Learn about AEM Content and Commerce](/help/commerce-cloud/introduction.md).

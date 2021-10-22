@@ -23,17 +23,17 @@ This document helps you understand how to manage product catalog pages and templ
 
 Venia storefront comes with a typical product catalog experience with navigation, and landing, category (PLP), & product detail pages (PDP).
 
-Catalog pages are built dynamically using an AEM CIF catalog template and real-time product data that is fetched from the commerce endpoint when needed. Every catalog has a generic template for product and categorie pages.
+Catalog pages are built dynamically using an AEM CIF catalog template and real-time product data that is fetched from the commerce endpoint when needed. Every catalog has a generic template for product and category pages.
 ![catalog structure](assets/catalog-structure.png)
 
-The navigation component shows content and catalog pages. It is possible to show either the catalog landing page or the first level categories in the navigation. Hovering over a category will show second level categories as a 2nd line.
+The navigation component shows content and catalog pages. It is possible to show either the catalog landing page or the first level categories in the navigation. Hovering over a category will show second level categories as a second line.
 ![catalog navigation](assets/catalog-navigation.png)
 
 Clicking on a category will open the category page (or product list page).
 
 ![PLP](assets/catalog-plp.png)
 
-Clicking on a product will open the proudct detail page.
+Clicking on a product will open the product detail page.
 
 ![PLP](assets/catalog-pdp.png)
 
@@ -41,7 +41,7 @@ Clicking on a product will open the proudct detail page.
 
 ### Generic templates
 
-The generic Venia catalog template uses the Product List Core Component. This component displays the categoy image if available and products from the cateogry.
+The generic Venia catalog template uses the Product List Core Component. This component displays the category image if available and products from the category.
 ![category template](assets/category-template.png)
 
 The generic Venia product template uses the Product Detail Core Component. This component displays product information for various product types and add-to-cart action.
@@ -53,7 +53,7 @@ Templates can be edited either by opening directly the template page or by switc
 
 ### Category or product specific templates
 
-CIF supports multiple templates in just a few click. To create another template, select the generic template from the respective category and create a new page using the "create" action.
+CIF supports multiple templates in just a few clicks. To create another template, select the generic template from the respective category and create a new page using the "create" action.
 
 ![create template page](assets/create-template-page.png)
 
@@ -99,7 +99,7 @@ Now that you have completed this part of the journey you should:
 * how generic templates work
 * have created an individual template
 
-Build on this knowledge and continue your journey by next reviewing the document [Manage staged product catalog experiences](staged-catalog.md), where you will learn how to work with staged product data and AEM Launches..
+Build on this knowledge and continue your journey by next reviewing the document [Manage staged product catalog experiences](staged-catalog.md), where you will learn how to work with staged product data and AEM Launches.
 
 ## Additional Resources {#additional-resources}
 
