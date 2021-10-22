@@ -17,7 +17,7 @@ This article builds on those fundamentals.
 
 ## Objective {#objective}
 
-This document helps you understand how to manage product catalog experience based on staged product data and AEM Launches. Many times, authors have to prepare in parallel an upcoming product launch (e.g. a new apparel collection). This requires access to staged product data (= not live yet) and the ability to prepare the content. This new content will go live with the product launch.
+This document helps you understand how to manage product catalog experience based on staged product data and AEM Launches. Many times, authors have to prepare in parallel an upcoming product launch (such as a new apparel collection). This requires access to staged product data (= not live yet) and the ability to prepare the content. This new content will go live with the product launch.
 
     >[!NOTE]
     >
@@ -27,7 +27,7 @@ First, let's see how authors can access staged product data with CIF.
 
 ## Working with Staged Product Data {#staged-product-data}
 
-One way to access staged product data is using the product cokpit. Open up the product catalog by clicking on the Commerce icon in the main AEM menu. This will give you access to live product data. Open the filter tab on the left and expand "STAGED CATALOG". Using the preview data, you can now access staged product data for any point in time. Staged data includes new cateogries, products, or updated fields like price.
+One way to access staged product data is using the product cockpit. Open up the product catalog by clicking on the Commerce icon in the main AEM menu. This will give you access to live product data. Open the filter tab on the left and expand "STAGED CATALOG". Using the preview data, you can now access staged product data for any point in time. Staged data includes new categories, products, or updated fields like price.
 
 ![stage cockpit](assets/staged-cockpit.png)
 
@@ -45,7 +45,7 @@ You can now browse the catalog with the staged data. If you open a staged catego
 
 ## AEM Launches {#launches}
 
-AEM Launches enables you to create content for staged product data. If you are not familiar with Launches, follow the documenation link under the [Additional Resources section](#additional-resources). The Launch Date is then used to access staged product data.
+AEM Launches enables you to create content for staged product data. If you are not familiar with Launches, follow the documentation link under the [Additional Resources section](#additional-resources). The Launch Date is then used to access staged product data.
 
 ![stage launch](assets/staged-launch.png)
 

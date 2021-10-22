@@ -19,25 +19,23 @@ This document helps you understand how to build product content and experiences.
 
 ## Product Experience Management {#management}
 
-Product Experience Management is the discpline to decorade product data (that is owned by a PIM or commerce solution) with marketing content in AEM. This enriched product data with content can then be used in various channels to create an immersive shopping experience.
+Product Experience Management is the discipline to decorate product data (that is owned by a PIM or commerce solution) with marketing content in AEM. This enriched product data with content can then be used in various channels to create an immersive shopping experience.
 
-In AEM you can create various types of content and link them to the product catalog. Associated content can easily be discovered and used which leads to a high producticty.
+In AEM, you can create various types of content and link them to the product catalog. Associated content can easily be discovered and used which leads to a high productivity.
 
 ### Assets {#assets}
 
-On a high-level, there are two types of assets related to products: product & marketing. Product assets are usually managed by merchants and focus on showing the product (mostly in front of a neutral backgound). The assets are either managed in the commerce solution or in AEM Assets (with an Assets integration to the commerce / pim solution).
+On a high level, there are two types of assets related to products: product & marketing. Product assets are usually managed by merchants and focus on showing the product (mostly in front of a neutral background). The assets are either managed in the commerce solution or in AEM Assets (with an Assets integration to the commerce / pim solution).
 
-Marketing assets are related to promoting and using the product which is usually owned by marketing. Examples are showing multiple products ("shop the look"), in a specifc context ("outdoor fall collection"), or how-to pdfs. CIF provides an easy way to link any AEM asset with product catalog object.
+Marketing assets are related to promoting and using the product which is usually owned by marketing. Examples are showing multiple products ("shop the look"), in a specific context ("outdoor fall collection"), or how-to pdfs. CIF provides an easy way to link any AEM asset with product catalog object.
 
 Open the asset properties and switch to the 'commerce' tab. This tab allows you to manage the association with products. The table below the picker provides additional information for the linked objects (only visible with a selection). Click on the details icon to get a full view in the product cockpit. To associate a new object, click on the product picker icon (folder icon), select an object and close the picker.
-
-image
 
 ![pem assets](assets/pem-assets.png)
 
 ### Experience Fragments {#experience-fragments}
 
-Experience Fragments are a great way to create re-usable or individual product content at scale. The association works similar to an asset. Open properties and switch to the 'commerce' tab. This tab allows you to manage the association with products and categories. The tables below the pickers provides additional information for the linked objects (only visible with a selection). Click on the details icon to get a full view in the product cockpit. To associate a new object, click on the product picker icon (folder icon), select an object and close the picker.
+Experience Fragments are a great way to create re-usable or individual product content at scale. The association works similar to an asset. Open properties and switch to the 'commerce' tab. This tab allows you to manage the association with products and categories. The tables below the pickers provide additional information for the linked objects (only visible with a selection). Click on the details icon to get a full view in the product cockpit. To associate a new object, click on the product picker icon (folder icon), select an object and close the picker.
 
 ![pem xf](assets/pem-xf.png)
 
@@ -71,7 +69,7 @@ Open the component's dialog and enter a name for this placeholder. Placeholder n
 
 ![pem XF dialog](assets/pem-dialog-xf.png)
 
-Open the Experience Fragment you have associated to a product in the previous step. Open properites and switch to the commerce tab. Enter the same placeholder name under "Catalog placeholder location".
+Open the Experience Fragment you have associated to a product in the previous step. Open properties and switch to the commerce tab. Enter the same placeholder name under "Catalog placeholder location".
 
 ![pem xf](assets/pem-xf.png)
 
@@ -95,7 +93,7 @@ First, dnd a product detail component on the page. Then switch to the Assets sid
 
 ![pem product page](assets/pem-page-product.png)
 
-If you have created associated content for that product, switch in the Assets sidebar to "Associated Commerce Content". This tab shows you all AEM content that was associated to this product. You allows you now to  embellish the  pages with any associated content quickly. 
+If you have created associated content for that product, switch in the Assets sidebar to "Associated Commerce Content". This tab shows you all AEM content that was associated to this product. This allows you now to  embellish the  pages with any associated content quickly. 
 
 ![pem enriched page](assets/pem-page-enriched.png)
 
