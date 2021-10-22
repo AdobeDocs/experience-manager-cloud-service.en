@@ -11,19 +11,19 @@ Learn how to manage product experiences.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Content and Commerce journey, [Manage staged product catalog experiences](staged-catalog), you learned how to manage staged product catalog experiences.
+In the previous document of the AEM Content and Commerce journey, [Manage staged product catalog experiences](staged-catalog.md), you learned how to manage staged product catalog experiences.
 
 ## Objective {#objective}
 
 This document helps you understand how to build product content and experiences.
 
-## Product Experiece Management
+## Product Experience Management {#management}
 
 Product Experience Management is the discpline to decorade product data (that is owned by a PIM or commerce solution) with marketing content in AEM. This enriched product data with content can then be used in various channels to create an immersive shopping experience.
 
 In AEM you can create various types of content and link them to the product catalog. Associated content can easily be discovered and used which leads to a high producticty.
 
-### Assets
+### Assets {#assets}
 
 On a high-level, there are two types of assets related to products: product & marketing. Product assets are usually managed by merchants and focus on showing the product (mostly in front of a neutral backgound). The assets are either managed in the commerce solution or in AEM Assets (with an Assets integration to the commerce / pim solution).
 
@@ -35,13 +35,13 @@ image
 
 ![pem assets](assets/pem-assets.png)
 
-### Experience Fragments
+### Experience Fragments {#experience-fragments}
 
 Experience Fragments are a great way to create re-usable or individual product content at scale. The association works similar to an asset. Open properties and switch to the 'commerce' tab. This tab allows you to manage the association with products and categories. The tables below the pickers provides additional information for the linked objects (only visible with a selection). Click on the details icon to get a full view in the product cockpit. To associate a new object, click on the product picker icon (folder icon), select an object and close the picker.
 
 ![pem xf](assets/pem-xf.png)
 
-### Content Fragments
+### Content Fragments {#content-fragments}
 
 Content Fragments are the best content type for any structured content. This can be used to augment external product data with additional marketing data or to create content in a headless way. The association of a Content Fragment with a product catalog object happens via the product or category reference types in the Content Fragment Model Editor. Simply dnd the right reference type on the model and configure the field. These types support single or multi selection.
 
@@ -51,7 +51,7 @@ If you create a new Content Fragment based on this model, these reference types 
 
 ![pem cf](assets/pem-cf.png)
 
-### Product cockpit
+### Product Cockpit {#product-cockpit}
 
 We have introduced the product cockpit (or console) in one of the pervious modules. The cockpit is an easy way not only to browse the product catalog, but also to see all associated AEM content in one place. Go to the product console and open the properties of a product that has associated content. Switch to the respective tab to see the associated content.
 
@@ -59,7 +59,7 @@ We have introduced the product cockpit (or console) in one of the pervious modul
 
 Clicking on the action icon will open that piece of content in a new browser tab.
 
-## Enriching individual product & category pages
+## Enriching Individual Product & Category Pages {#enrich}
 
 In the previous modules you have learned how to work with multiple product catalog templates. Multiple templates are a great way to create different templates but not needed in many cases. In many cases, the same template can be used in combination with placeholders for individual content. CIF supports placeholders for Content Fragments and Experience Fragments.
 
@@ -85,7 +85,7 @@ Preview now a product page that has either an associated Content Fragment and / 
 
 ![pem result](assets/pem-result.png)
 
-## Making content shoppable
+## Making Content Shoppable {#making-shoppable}
 
 It is also possible to make a regular AEM page shoppable by adding commerce components. Create a new content page in AEM and open the empty page in the editor.
 
