@@ -125,16 +125,6 @@ Follow the best practices in the documents below regarding code quality testing:
 * [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md), a document that describes the process of writing test scripts and explains the concept of recommended coverage of at least 50%.
 * [Understanding Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) which aims to describe the custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering.
 
-<!--AS: resume from here--> Remember that Cloud Manager is the sole mechanism for deploying code to Cloud Service environments.
-
-To get up to speed on how to use Cloud Manager to manage and deploy your code, follow the resources below: 
-
-* [Managing Environments](/help/implementing/cloud-manager/manage-environments.md)
-
-* [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md)
-
-* [Deploying your Code](/help/implementing/cloud-manager/deploy-code.md)
-
 ## What's Next {#what-is-next}
 
 Once you've fully understood how to asses if your AEM installation is ready to be moved to the cloud, as we as learn how to use the tools needed to make it ready, it's time to move on to the go-live phase and [perform the migration](help/journey-migration/performing-migration.md).
