@@ -11,7 +11,7 @@ Learn how to manage staged product catalog experiences.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Content and Commerce journey, [Manage Product Catalog Pages and Templates](catalog-templates), you learned how to manage and build product catalog experiences based on templates.
+In the previous document of the AEM Content and Commerce journey, [Manage Product Catalog Pages and Templates](catalog-templates.md), you learned how to manage and build product catalog experiences based on templates.
 
 This article builds on those fundamentals.
 
@@ -25,7 +25,7 @@ This document helps you understand how to manage product catalog experience base
 
 First, let's see how authors can access staged product data with CIF.
 
-## Working with staged product data
+## Working with Staged Product Data {#staged-product-data}
 
 One way to access staged product data is using the product cokpit. Open up the product catalog by clicking on the Commerce icon in the main AEM menu. This will give you access to live product data. Open the filter tab on the left and expand "STAGED CATALOG". Using the preview data, you can now access staged product data for any point in time. Staged data includes new cateogries, products, or updated fields like price.
 
@@ -43,7 +43,7 @@ You can now browse the catalog with the staged data. If you open a staged catego
     >
     >Omnisearch does not have a context and thus will only return live product catalog data
 
-## AEM Launches
+## AEM Launches {#launches}
 
 AEM Launches enables you to create content for staged product data. If you are not familiar with Launches, follow the documenation link under the [Additional Resources section](#additional-resources). The Launch Date is then used to access staged product data.
 
@@ -64,5 +64,5 @@ You are now ready to manage [product experiences](product-experience-management.
 
 ## Additional Resources {#additional-resources}
 
-* [Getting Started](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)
-* [Launches] (https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/launches/overview.html?lang=en)
+* [Getting Started](/help/commerce-cloud/getting-started.md)
+* [Launches] (/help/sites-cloud/authoring/launches/overview.md)
