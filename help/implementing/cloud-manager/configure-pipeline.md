@@ -176,7 +176,11 @@ You can delete the production pipeline from the Pipelines card:
 
 ## Non-Production & Code Quality Only Pipelines {#non-production-pipelines}
 
-In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as **Non-Production Pipelines**. These pipelines always execute the build and code quality steps. They can optionally also deploy to AEM as a Cloud Service environment.
+In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as Non-Production Pipelines.
+There are two types of non-production pipelines:
+
+1. Code Quality: Runs code quality scans on the code in the a git branch. This pipeline executes the build and code quality steps.
+1. Deployment: In addition to executing the build and code quality steps, this pipeline deploys the code to the selected non-production to AEM as a Cloud Service environment.
 
 ### Adding a New Non-Production Pipeline {#adding-non-production-pipeline}
 
@@ -187,6 +191,9 @@ On the home screen, these pipelines are listed in a new card:
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
 1. **Add Non-Production Pipeline**  dialog box displays. Select the type of pipeline you want to create, either **Code Quality Pipeline** or **Deployment Pipeline**.
+
+   >[!NOTE]
+   >For Deployment pipelines, you must select the deployment environment.
 
    Additionally, you can also set up **Deployment Trigger** and **Important Metric Failures Behavior** from **Deployment Options**. Click on **Continue**.
 
