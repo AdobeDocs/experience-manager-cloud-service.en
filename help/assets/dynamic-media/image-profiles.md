@@ -65,7 +65,9 @@ You have two image crop options from which to choose. You also have an option fo
 
 ### Supported image file formats for Smart Crop and Color Swatches
 
-| Image format | Case-insensitive file extension | MIME type | Supported input color space | Maximum supported input file size | Image format supported? |
+The maximum supported input file size resolution is 16 KB.
+
+| Image format | Case-insensitive file extension | MIME type | Supported input color space | Maximum supported input file size | Supported image format? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Yes |
 | EPS | | | | | No |
