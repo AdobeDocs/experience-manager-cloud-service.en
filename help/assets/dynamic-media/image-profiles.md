@@ -52,9 +52,13 @@ Sharpening is described in [Sharpening Images](/help/assets/dynamic-media/assets
 
 Smart Crop coordinates are aspect ratio dependent. For the smart crop settings in an Image Profile, if the aspect ratio is the same for the added dimensions in the Image Profile, then the same aspect ratio is sent to Dynamic Media. Adobe recommends that you use the same crop area. Doing so ensures that there is no impact to different dimensions used in the Image Profile.
 
-Each Smart Crop generation that you create requires extra processing. For example, adding more than five Smart Crop aspect ratios results in a slow asset ingestion rate. It can also cause an increased load on systems. Because you can apply Smart Crop at the folder level, Adobe recommends that you use it on folders *only* where it is needed.
+Each Smart Crop generation that you create requires extra processing. For example, adding more than five Smart Crop aspect ratios may result in a slow asset ingestion rate. It may also cause an increased load on systems. Because you can apply Smart Crop at the folder level, Adobe recommends that you use it on folders *only* where it is needed.
 
-You have two image crop options from which to choose. You also have an option for automating the creation of color and image swatches.
+You have two image crop options from which to choose. You also have an option to automate the creation of color and image swatches or preserve crop content across target resolutions.
+
+>[!IMPORTANT]
+>
+>Adobe recommends that you review any generated crops and swatches to ensure that they are appropriate and relevant to your brand and values.
 
 | Option | When to use | Description |
 | --- | --- | --- |
@@ -176,6 +180,10 @@ You can reprocess assets in a folder that already has an existing video profile 
       ![configure_image_profiles](assets/configure_image_profiles.png)
 
 ## Edit the smart crop or smart swatch of a single image {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
+
+>[!IMPORTANT]
+>
+>Adobe recommends that you review any generated crops and swatches to ensure that they are appropriate and relevant to your brand and values.
 
 You can manually realign or resize the smart crop window of an image to further refine its focal point.
 
