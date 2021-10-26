@@ -41,7 +41,7 @@ The following release (2020.11.0) will be on December 1, 2020.
 
 ### What is new in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-*	**Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (Anonymous) via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
+* **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (Anonymous) via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
 
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms-oct-2021}
 
