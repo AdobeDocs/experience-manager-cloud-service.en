@@ -37,6 +37,24 @@ The following release (2020.11.0) will be on December 1, 2020.
 
 * **[!DNL Assets] WebP file support**: [!DNL Assets] as a Cloud Service now supports WebP image format. WebP is an emerging image format created by Google. Images in WebP file format are visually indistinguishable from JPG or PNG files and the files are much smaller. Lowered file size of assets improves the page-load times and help content creators deliver a faster web experience. See how to use WebP in [create processing profile](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+
+### What is new in [!DNL Forms] {#what-is-new-forms-oct-2021}
+
+*	**Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (Anonymous) via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
+
+### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms-oct-2021}
+
+* **Externalize AEM Workflow data for secure processing**: You can store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) elements in a customer-managed repository for secure processing. The data elements and workflow variables are not stored in AEM repository and are fetched on demand from a customer-managed repository while processing the Workflow.
+
+### Beta features of [!DNL Forms]  {#sep-what-is-new-forms-oct-prerelease}
+
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](aem-forms-cloud-service-communications.md) help you combine a template and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
+  * Generate documents by populating template files (PDF and XDP) with XML data.
+  * Generate output forms in various formats, including non-interactive PDF print streams.
+
+You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
+
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### What is New {#what-is-new-commerce}
