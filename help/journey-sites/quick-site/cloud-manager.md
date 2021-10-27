@@ -39,7 +39,7 @@ It is important to understand that for the front-end developer, no AEM access or
 
 |Knowledge|Role|
 |---|---|
-|Understanding of the standard tools and processes of front-end development|front-end developer|
+|Understanding of the standard tools and processes of front-end development|Front-End Developer|
 |Basic knowledge of how to create and manage sites in AEM|Administrator|
 |Basic knowledge of Cloud Manager|Administrator|
 
@@ -49,14 +49,14 @@ For the front-end developer, no AEM knowledge is necessary.
 
 |Tool|Role|
 |---|---|
-|Preferred front-end development environment|front-end developer|
-|npm|front-end developer|
-|webpack|front-end developer|
+|Preferred front-end development environment|Front-End Developer|
+|npm|Front-End Developer|
+|webpack|Front-End Developer|
 |Access to Cloud Manager|Administrator|
 |Be a member of the **Deployment Manager** role in Cloud Manager|Administrator|
-|Preferred front-end development environment|front-end developer|
-|npm|front-end developer|
-|webpack|front-end developer|
+|Preferred front-end development environment|Front-End Developer|
+|npm|Front-End Developer|
+|webpack|Front-End Developer|
 
 For the front-end developer, no use of AEM is necessary.
 
@@ -66,7 +66,7 @@ Cloud Manager is an essential component of AEM as a Cloud Service and serves as 
 
 To support customers with enterprise development setups, AEM as a Cloud Service fully integrates with Cloud Manager and its purpose-built CI/CD pipelines. The Quick Site Creation tool extends these features to support dedicated front-end development pipelines.
 
-## Front-End Development Flow {#flow}
+## The Quick Site Creation Front-End Development Flow {#flow}
 
 The overall flow is simple and intuitive even if you do not yet have extensive experience with Cloud Manager.
 
@@ -75,9 +75,9 @@ The overall flow is simple and intuitive even if you do not yet have extensive e
 1. The administrator exports the site theme and provides it to the front-end developer along with credentials for the git repository.
 1. The front-end developer customizes the theme, testing it using actual content from the site using a proxy.
 1. The front-end developer commits the changes to the git repository.
-1. The administrator executes the pipeline to deploy the theme customizations.
+1. The front-end developer executes the pipeline to deploy the theme customizations.
 
-The major advantage of using the Quick Site Creation tool is that the pure front-end developer is only responsible for a single step in this process: the actual customization. The front-end developer has no interaction with AEM or needs any knowledge of the system.
+The major advantage of using the Quick Site Creation tool is that the pure front-end developer is only responsible the actual customization. The front-end developer has no interaction with AEM or needs any knowledge of the system.
 
 ## What's Next {#what-is-next}
 
