@@ -171,6 +171,10 @@ There are use cases where a content package should be installed as a "one off". 
 
 Since Package Manager is a runtime concept, it is not possible to install content or code into the immutable repository, so these content packages should only consist of mutable content (mainly `/content` or `/conf`). If the content package includes content that is mixed (both mutable and immutable content), only the mutable content will be installed.
 
+>[!IMPORTANT]
+>
+>Package Manager UI might return an **undefined** error message if a package takes longer than 10 minutes to install. Do not retry the installation if that happens, because it is proceeding correctly in the background and some conflicts could be introduced by multiple concurrent import processes.
+
 Any content-packages installed via Cloud Manager (both mutable and immutable) will appear in a frozen state in AEM Package Manager's user interface. These packages cannot be reinstalled, rebuilt or even downloaded, and will listed with a **"cp2fm"** suffix, indicating their installation was managed by Cloud Manager.
 
 ### Including Third Party Packages {#including-third-party}
