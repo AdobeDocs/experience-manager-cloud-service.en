@@ -6,7 +6,7 @@ hide: yes
 hidefromtoc: yes
 ---
 
-# Set up your pipeline {#set-up-your-pipeline}
+# Set up Your Pipeline {#set-up-your-pipeline}
 
 Create a front-end pipeline to manage the customization of your site's theme.
 
@@ -22,14 +22,14 @@ In the previous document of the AEM Quick Site Creation journey, [Create Site fr
 * Learn how to create a new site using a template.
 * See how to download the template from your new site to provide to the front-end developer.
 
-This article builds on those fundamentals so you can set up a front-end pipeline, which you will use later in the journey to deploy your front-end customizations.
+This article builds on those fundamentals so you can set up a front-end pipeline, which the front-end developer will use later in the journey to deploy front-end customizations.
 
 ## Objective {#objective}
 
 This document helps you understand front-end pipelines and how to create one to manage the deployment of your site's customized theme. After reading you should:
 
-* Understand how to set up a front-end pipeline in Cloud Manager.
-* Know how to retrieve access credentials for your front-end developer to be able to commit the customized code.
+* Understand what a front-end pipeline is.
+* Know how to set up a front-end pipeline in Cloud Manager.
 
 ## Requirements {#requirements}
 
@@ -55,29 +55,9 @@ You now see an overview of your Cloud Manager. Your page will look different but
 
 ![Cloud Manager overview](assets/cloud-manager-overview.png)
 
-## Retrieve Repository Access Information {#repo-access}
-
-Cloud Manager is primarily responsible for deploying custom developer from a git repository to AEM production. For the front-end developer to be able to access the git repository from the command line or favorite development tool, you need to fetch the repository information and credentials.
-
-1. In the **Pipelines** section of the Cloud Manager page, tap or click the **Access Repo Info** button.
-
-   ![Pipelines](assets/pipelines-repo-info.png)
-
-1. The **Repository Info** dialog opens.
-
-   ![Repo info](assets/repo-info.png)
-
-1. Tap or click the **Generate password** button to create a password for the user.
-
-1. Save the password generated to a secure password manager. The password will never be displayed again.
-
-1. Also copy the **username** and **Git command line** fields. These values will be used later by the front-end developer to access the repo.
-
-1. Tap or click **Close**.
-
 ## Create a Front-End Pipeline {#create-front-end-pipeline}
 
-Now that you have the information to access the repo, you can create a pipeline associated with that repo.
+Now that you have accessed Cloud Manager, you can create a pipeline for front-end deployment.
 
 1. In the **Pipelines** section of the Cloud Manager page, tap or click the **Add** button.
 
@@ -112,10 +92,10 @@ The new pipeline is created and visible in the **Pipelines** section of the Clou
 
 Now that you have completed this part of the AEM Quick Site Creation journey you should:
 
-* Understand how to set up a front-end pipeline in Cloud Manager.
-* Know how to retrieve access credentials for your front-end developer to be able to commit the customized code.
+* Understand what a front-end pipeline is.
+* Know how to set up a front-end pipeline in Cloud Manager.
 
-Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Customize the Site Theme,](customize-theme.md) where you will learn how the site theme is built, how to customize, and how to test using live AEM content.
+Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Grant Access to the Front-End Developer,](grant-access.md) where you will onboard the front-end developers into Cloud Manager so they have access to your AEM site git repository and pipeline.
 
 ## Additional Resources {#additional-resources}
 

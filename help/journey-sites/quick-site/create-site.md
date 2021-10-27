@@ -161,19 +161,7 @@ In order for the front-end developer to preview the customizations using actual 
 
 1. Tap or click **Save &amp; Close**.
 
-You now have completed the configuration and have all the information that the front-end developer needs.
-
-## Handover to Front-End Developer {#handover}
-
-You can now provide the front-end developer the necessary information to begin customization.
-
-* The git credentials you saved [when setting up the pipeline](pipeline-setup.md#repo-access)
-* A [path to typical content](#example-page)
-* The theme source that [you just downloaded](#download-theme)
-* The [proxy user credentials](#proxy-user)
-* Your front-end design requirements
-
-Content authors can continue to create content on the site as the front-end developer starts customizing the theme in the next step of the journey.
+You now have completed the configuration. Content authors can now begin to create content on the site preparation begins for front-end customization in the next step of the journey.
 
 ## What's Next {#what-is-next}
 
