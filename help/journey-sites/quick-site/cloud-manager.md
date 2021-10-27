@@ -18,7 +18,7 @@ Learn about Cloud Manager and how it ties together the new Quick Site Creation p
 >
 >If your role is exclusively front-end development, you can skip to the article [Retrieve git repository access information](retrieve-access.md) in this journey.
 >
->If you are an administrator, responsible for both front-end development and administrator tasks, or would simply like to understand the end-to-end process in AEM for front-end development, continue reading the current document and proceed on this journey.
+>If you are an AEM administrator, a Cloud Manager administrator, are responsible for both front-end development and administrator tasks, or would simply like to understand the end-to-end process in AEM for front-end development, continue reading the current document and proceed on this journey.
 
 ## Objective {#objective}
 
@@ -27,11 +27,15 @@ This document helps you understand how the AEM Quick Site Creation tool works an
 * Understand how AEM Sites and the Cloud Manager work together to facilitate front-end development
 * See how the front-end customization step is entirely decoupled from AEM and requires no AEM knowledge.
 
+## Responsible Role {#responsible-role}
+
+This part of the journey applies to both the AEM administrator and the Cloud Manager administrator.
+
 ## Requirements and Prerequisites {#requirements-prerequisites}
 
 There are several requirements before you begin creating and customizing sites using the Quick Site Creation tool.
 
-Because this journey is intended for both front-end developers, administrators, and combinations of both roles, the requirements for both are listed here.
+Because this journey is intended for both front-end developers, administrators, and combinations of all roles, the requirements for both all are listed here.
 
 It is important to understand that for the front-end developer, no AEM access or knowledge is necessary.
 
@@ -40,8 +44,8 @@ It is important to understand that for the front-end developer, no AEM access or
 |Knowledge|Role|
 |---|---|
 |Understanding of the standard tools and processes of front-end development|Front-End Developer|
-|Basic knowledge of how to create and manage sites in AEM|Administrator|
-|Basic knowledge of Cloud Manager|Administrator|
+|Basic knowledge of how to create and manage sites in AEM|AEM Administrator|
+|Basic knowledge of Cloud Manager|Cloud Manager Administrator|
 
 For the front-end developer, no AEM knowledge is necessary.
 
@@ -52,10 +56,9 @@ For the front-end developer, no AEM knowledge is necessary.
 |Preferred front-end development environment|Front-End Developer|
 |npm|Front-End Developer|
 |webpack|Front-End Developer|
-|Be an administrator of your Cloud Manager org|Administrator|
-|Access to Cloud Manager|Administrator|
-|Be a member of the **Deployment Manager** role in Cloud Manager|Administrator|
-|Preferred front-end development environment|Front-End Developer|
+|Be an administrator of your Cloud Manager org|Cloud Manager Administrator|
+|Access to Cloud Manager|Cloud Manager Administrator|
+|Be a member of the **Deployment Manager** role in Cloud Manager|Front-End Developer|
 |npm|Front-End Developer|
 |webpack|Front-End Developer|
 
@@ -71,10 +74,10 @@ To support customers with enterprise development setups, AEM as a Cloud Service 
 
 The overall flow is simple and intuitive even if you do not yet have extensive experience with Cloud Manager.
 
-1. The administrator creates a new site using a site template.
-1. The administrator creates a front-end pipeline in Cloud Manager. The pipeline orchestrates the deployment of code from a git repository to an AEM environment.
-1. The administrator exports the site theme and provides it to the front-end developer.
-1. The administrator grants the front-end developer access to the AEM git repository where customizations can be committed.
+1. The AEM administrator creates a new site using a site template.
+1. The Cloud Manager administrator creates a front-end pipeline in Cloud Manager. The pipeline orchestrates the deployment of code from a git repository to an AEM environment.
+1. The AEM administrator exports the site theme and provides it to the front-end developer.
+1. The Cloud Manager administrator grants the front-end developer access to the AEM git repository where customizations can be committed.
 1. The front end developer retrieves access credentials to access git and the pipeline.
 1. The front-end developer customizes the theme, testing it using actual content from the site using a proxy and then commits the changes to the git repository.
 1. The front-end developer executes the pipeline to deploy the theme customizations.

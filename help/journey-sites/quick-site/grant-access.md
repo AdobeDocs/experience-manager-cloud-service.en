@@ -34,6 +34,10 @@ The process of granting access to Cloud Manager and assigning user roles to your
 >
 >There is an entire documentation journey dedicated to onboarding your team onto AEM as a Cloud service, linked to in the [Additional Resources section](#additional-resources) of this document, if you need additional details about the process.
 
+## Responsible Role {#responsible-role}
+
+This part of the journey applies to the Cloud Manager administrator.
+
 ## Requirements {#requirements}
 
 You need to have access to the Admin Console as well as be an administrator of your organization.
@@ -56,7 +60,7 @@ First you need to add the front-end developer as a user by using the Admin Conso
 
    ![Select AEMaaCS](assets/select-aemaacs.png)
 
-1. You see the list of pre-configured Cloud Manager product profiles. If you do not see these profiles, contact your system administrator as you may not have the correct permissions in your org.
+1. You see the list of pre-configured Cloud Manager product profiles. If you do not see these profiles, contact your Cloud Manager administrator as you may not have the correct permissions in your org.
 
    ![Product profiles](assets/product-profiles.png)
 

@@ -31,6 +31,10 @@ This document helps you understand how to quickly create a new AEM site using a 
 * Learn how to create a new site using a template.
 * See how to download the template from your new site to provide to the front-end developer.
 
+## Responsible Role {#responsible-role}
+
+This part of the journey applies to the AEM administrator.
+
 ## Site Templates {#site-templates}
 
 Site templates are a simple way to combine basic site content into a convenient and reusable package. Site templates generally contain base site content and structure as well as site styling information to get new site started quickly. The actual structure is as follows:

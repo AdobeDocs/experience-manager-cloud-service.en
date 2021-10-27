@@ -31,6 +31,10 @@ This document explains how the AEM site theme is built, how to customize it, and
 * See how to test your theme customizations using real AEM content via local proxy.
 * Know how to commit your changes to the AEM git repository.
 
+## Responsible Role {#responsible-role}
+
+This part of the journey applies to the front-end developer.
+
 ## Understand the Theme Structure {#understand-theme}
 
 Extract the theme provided by the AEM administrator to where you would like to edit the theme and open it in your preferred editor.
@@ -61,11 +65,11 @@ Once you are comfortable with the structure of the theme project, start the loca
 
    ![npm run live](assets/npm-run-live.png)
 
-1. When the proxy server starts, it automatically opens a browser to `http://localhost:7001/`. Tap or click **SIGN IN LOCALLY (ADMIN TASKS ONLY)** and sign on with the proxy user credentials provided to you by the administrator.
+1. When the proxy server starts, it automatically opens a browser to `http://localhost:7001/`. Tap or click **SIGN IN LOCALLY (ADMIN TASKS ONLY)** and sign on with the proxy user credentials provided to you by the AEM administrator.
 
    ![Sign in locally](assets/sign-in-locally.png)
 
-1. Once signed in, change the URL in the browser to point to the path to the sample content that the administrator provided to you.
+1. Once signed in, change the URL in the browser to point to the path to the sample content that the AEM administrator provided to you.
 
    * For example, if the path provided was `/content/<your-site>/en/home.html?wcmmode=disabled`
    * You would change the URL to `http://localhost:7001/content/<your-site>/en/home.html?wcmmode=disabled`
@@ -94,7 +98,7 @@ Now you can start customizing the theme. The following is a simple example to il
 
    ![Orange theme](assets/orange-theme.png)
 
-You can continue customizing the theme based on the requirements provided to you by the administrator.
+You can continue customizing the theme based on the requirements provided to you by the AEM administrator.
 
 ## Committing the Changes {#committing-changes}
 
