@@ -5,7 +5,7 @@ exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 ---
 # Getting Started with Content Transfer Tool {#getting-started-content-transfer-tool}
 
-## Source Environment Connectivity
+## Source Environment Connectivity {#source-environment-connectivity}
 
  The source AEM instance may be running behind a firewall where it can only reach certain hosts which have been added to an Allow List. In order to successfully run an extraction, the following endpoints will need to be accessible from the instance that is running AEM:
 
