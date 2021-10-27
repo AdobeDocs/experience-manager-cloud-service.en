@@ -16,7 +16,7 @@ Onboard the front-end developers into Cloud Manager so they have access to your 
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Quick Site Creation journey, [Set Up Your Pipeline,](setup-pipeline.md) you learned how to create a front-end pipeline to manage the customization of your site's theme, and you should now:
+In the previous document of the AEM Quick Site Creation journey, [Set Up Your Pipeline,](pipeline-setup.md) you learned how to create a front-end pipeline to manage the customization of your site's theme, and you should now:
 
 * Understand what a front-end pipeline is.
 * Know how to set up a front-end pipeline in Cloud Manager.
