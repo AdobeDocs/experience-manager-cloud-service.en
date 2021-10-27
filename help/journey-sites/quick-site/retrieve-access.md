@@ -25,7 +25,7 @@ If you also serve the role of administrator as well as front-end developer, you 
 
 This article takes the next step of showing how the front-end developer uses the Cloud Manager access granted to retrieve credentials to use the AEM git repository.
 
-Now that you, as the administrator, have created a site created based on a template, set up the pipeline, onboarded the front-end developer, and provided them with all of the information they need, this article shifts perspective exclusively to the front-end developer role.
+As the administrator, now that you have created a site created based on a template, set up the pipeline, onboarded the front-end developer, and provided them with all of the information they need, this article shifts perspective exclusively to the front-end developer role.
 
 ## Objective {#objective}
 
@@ -36,7 +36,7 @@ This document explains how you, in the role of the front-end developer, can acce
 
 ## Requirements {#requirements}
 
-The Quick Site Creation tool allows front-end developers to work independently without and knowledge of AEM or how it is set up. However, the AEM administrator must onbard the front-end developer into the project team as well as provide you with some required information. Make sure that you have the following information before continuing.
+The Quick Site Creation tool allows front-end developers to work independently without and knowledge of AEM or how it is set up. However, the AEM administrator must onboard the front-end developer into the project team as well as provide you with some required information. Make sure that you have the following information before continuing.
 
 * Theme source files to customize provided by the administrator
 * Path to an example page to use as a base of reference provided by the administrator
@@ -55,7 +55,7 @@ It is assumed that the front-end developer has extensive experience with front-e
 
 ## Understanding Cloud Manager {#understanding-cloud-manager}
 
-Cloud Manager enables organizations to self-manage Adobe Experience Manager (AEM) in the cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security.
+Cloud Manager enables organizations to self-manage AEM in the cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security.
 
 For the front-end developer, it is the gateway to:
 

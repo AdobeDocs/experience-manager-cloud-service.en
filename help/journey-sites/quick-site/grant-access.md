@@ -40,7 +40,7 @@ You need to have access to the Admin Console as well as be an administrator of y
 
 ## Add the Front-End Developer as a User {#add-fed-user}
 
-First you will need to add the front-end developer as a user by using the Admin Console.
+First you need to add the front-end developer as a user by using the Admin Console.
 
 1. Sign into the Admin Console at [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/).
 
@@ -56,7 +56,7 @@ First you will need to add the front-end developer as a user by using the Admin 
 
    ![Select AEMaaCS](assets/select-aemaacs.png)
 
-1. You will see the list of pre-configured Cloud Manager product profiles. If you do not see these, contact your system administrator as you may not have the correct permissions in your org.
+1. You see the list of pre-configured Cloud Manager product profiles. If you do not see these profiles, contact your system administrator as you may not have the correct permissions in your org.
 
    ![Product profiles](assets/product-profiles.png)
 
@@ -92,12 +92,12 @@ Now that you have completed this part of the AEM Quick Site Creation journey you
 * How to add a front-end developer as a user.
 * How to grant the required roles to the front-end developer.
 
-Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Retrieve Git Repository Access Information,](retrieve-access.md), which switches perspective exclusively to the front-end developer and explains how the front-end developer users Cloud Manager to access git repository information.
+Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Retrieve Git Repository Access Information,](retrieve-access.md) which switches perspective exclusively to the front-end developer and explains how the front-end developer users Cloud Manager to access git repository information.
 
 ## Additional Resources {#additional-resources}
 
 While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Retrieve Front-End Developer Credentials,](retrieve-access.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
-* [Onboarding Journey](/help/journey-onboarding/home.md) - This guide serves as your starting point to ensure your teams are setup and have access to AEM as a Cloud Service.
+* [Onboarding Journey](/help/journey-onboarding/home.md) - This guide serves as your starting point to ensure that your teams are set up and have access to AEM as a Cloud Service.
 
 
