@@ -30,6 +30,8 @@ Please note that all links to other guides need to be absolute references with l
     + [Understand Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/cloud-manager.html)
     + [Create site from template](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/create-site.html)
     + [Set up your pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/pipeline-setup.html)
+    + [Grant access to the front-end developer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/grant-access.html)
+    + [Retrieve git repository access information](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/retrieve-access.html)
     + [Customize the site theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/customize-theme.html)
     + [Deploy your customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/deploy-theme.html)
   + Sites Translation Journey {#translation}
