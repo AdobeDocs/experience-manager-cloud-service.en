@@ -118,7 +118,7 @@ Once your customizations are complete, you can commit them to the AEM git reposi
 
    ![Changes committed](assets/changes-committed.png)
 
-Your customizations are now safely stored in the AEM git repository. Now you simply need to inform the administrator that the customizations are ready to deploy.
+Your customizations are now safely stored in the AEM git repository.
 
 ## What's Next {#what-is-next}
 
@@ -128,9 +128,7 @@ Now that you have completed this part of the AEM Quick Site Creation journey you
 * See how to test your theme customizations using real AEM content via local proxy.
 * Know how to commit your changes to the AEM git repository.
 
-If you are only responsible for front-end development, congratulations! You are finished! Just remember to tell the administrator that your customizations are now ready to deploy.
-
-If you are an administrator as well as a front-end developer, build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Deploy Your Customized Theme,](deploy-theme.md) where you will learn how to deploy the theme using the front-end pipeline.
+Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Deploy Your Customized Theme,](deploy-theme.md) where you will learn how to deploy the theme using the front-end pipeline.
 
 ## Additional Resources {#additional-resources}
 

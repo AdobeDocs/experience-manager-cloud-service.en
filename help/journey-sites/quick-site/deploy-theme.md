@@ -22,7 +22,7 @@ In the previous document of the AEM Quick Site Creation journey, [Customize the 
 * See how to test your theme customizations using real AEM content via local proxy.
 * Know how to commit your changes to the AEM git repository.
 
-Now that your front-end developer has committed the theme customizations to your AEM git repository, you can take the final step and use the pipeline to deploy them.
+You can now take the final step and use the pipeline to deploy them.
 
 ## Objective {#objective}
 
@@ -34,9 +34,13 @@ This document explains how to deploy the theme using the pipeline. After reading
 
 ## Start the Pipeline {#start-pipeline}
 
-Once you have committed the theme customization changes to the AEM git repository or the front-end developer has informed you that they are committed, you can run [the pipeline you previously created](pipeline-setup.md) to deploy the changes.
+Once you have committed the theme customization changes to the AEM git repository, you can run [the pipeline that the administrator  created](pipeline-setup.md) to deploy the changes.
 
-1. Return to the Cloud Manager Program Overview and tap or click the ellipsis next to your pipeline. From the drop-down menu, select **Run**.
+1. Access Cloud Manager [as you did to retrieve your git access information.](retrieve-access.md) On the **Overview** tab you will see a card for **Pipelines**.
+
+   ![Cloud Manager overview](assets/cloud-manager-overview.png)
+
+1. Tap or click the ellipsis next to the pipeline you need to start. From the drop-down menu, select **Run**.
 
    ![Run pipeline](assets/run-pipeline.png)
 
@@ -64,12 +68,12 @@ You can check the status of the pipeline to see the detail of its progress at an
 >
 >In the pipeline details window, you can tap or click **Download Log** for any step of the pipeline for debugging purposes if any step should fail. Debugging the pipeline is beyond the scope of this journey. See the technical docs for Cloud Manager in the [Additional Resources](#additional-resources) section of this page.
 
-## View the Deployed Customizations {#view-customizations}
+## Validate the Deployed Customizations {#view-customizations}
 
-Once the pipeline is complete, you can view the changes on the authoring instance.
+Once the pipeline is complete, you can inform the administrator to validate the changes. The administrator will then:
 
 1. Open the AEM authoring environment.
-1. Navigate to [the site you previously created.](create-site.md)
+1. Navigate to [the site the administrator previously created.](create-site.md)
 1. Edit one of the content pages.
 1. See the changes applied.
 
