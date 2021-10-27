@@ -39,7 +39,7 @@ This journey lays out the requirements, steps, and approach to customize AEM Sit
 |Front-End Developer|Customizes the site theme|Takes theme provided by the AEM administrator and customizes it so that is can be deployed to the AEM site.|
 |Content Author|Creates and manages content that is delivered as sites|Content Authors create content on AEM that is rendered with the theme customized by the front-end developer.|
 |AEM Administrator|Creates a new AEM site|The AEM administrator creates a new site based on a template and then provides the front-end developer with a theme to customize.|
-|Cloud Manager Administrator|Creates pipelines and grants access|The Cloud Manager Administrator creates the front-end pipeline and grants access to the front-end developer to be able commit customizations to the AEM git repository.
+|Cloud Manager Administrator|Creates pipelines and grants access|The Cloud Manager Administrator creates the front-end pipeline and grants access to the front-end developer to be able commit customizations to the AEM git repository.|
 
 ## The AEM Quick Site Creation Journey {#the-journey}
 
