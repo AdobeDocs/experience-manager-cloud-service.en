@@ -28,8 +28,8 @@ Please note that all links to other guides need to be absolute references with l
   + [Sites Journeys Home](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/home.html)
   + Quick Site Creation Journey {#quick-site}
     + [Understand Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/cloud-manager.html)
-    + [Set up your pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/pipeline-setup.html)
     + [Create site from template](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/create-site.html)
+    + [Set up your pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/pipeline-setup.html)
     + [Customize the site theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/customize-theme.html)
     + [Deploy your customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/deploy-theme.html)
   + Sites Translation Journey {#translation}
