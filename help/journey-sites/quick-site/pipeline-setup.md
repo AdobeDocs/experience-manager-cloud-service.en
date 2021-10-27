@@ -39,6 +39,18 @@ This part of the journey applies to the Cloud Manager administrator.
 
 You need to have access to Cloud Manager and be a member of the **Deployment Manager** role.
 
+## What is a Front-End Pipeline {#front-end-pipeline}
+
+Front-end development involves the customization of JavaScript, CSS, and static resources that define the styling of your AEM site. The front-end developer will work in their own local environments to make these customizations. Once they are ready, the changes are committed to the AEM git repository. But they are only committed to the source code. They are not yet live.
+
+The front-end pipeline takes these committed customizations and deploys them to an AEM environment, generally production or non-production environments.
+
+In this way, front-end development can work separately from and parallel to any full-stack back-end development on AEM, which has its own deployment pipelines.
+
+>[!NOTE]
+>
+>The front-end pipelines can only deploy JavaScript, CSS, and static resources to style your AEM site. Site content such as pages or assets can not be deployed in a pipeline.
+
 ## Access Cloud Manager {#login}
 
 1. Log into Adobe Experience Cloud at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
