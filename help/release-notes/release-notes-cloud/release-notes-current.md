@@ -149,7 +149,7 @@ Read the [documentation](/help/security/configuring-advanced-networking.md) for 
 
 **Index Optimizations**
 
-To improve the performance of search queries and indexing, the full-text index lucene-2 is no longer included out-of-the-box in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] from this release. In order to remove this full-text index on AEM environments in accordance with AEM customers, Adobe Engineering works individually and pro-actively with customers for a gentle and sustainable removal of the Lucene full-text index. Please visit the [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentation](/help/operations/indexing.md#index-optimizations) for more information and contact our support directly if you have any questions.
+To improve the performance of search queries and indexing, the full-text index lucene-2 is no longer used out-of-the-box in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] from this release. In order to remove this full-text index on AEM environments in accordance with AEM customers, Adobe Engineering works individually and pro-actively with customers for a gentle and sustainable removal of the Lucene full-text index. Please visit the [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentation](/help/operations/indexing.md#index-optimizations) for more information and contact our support directly if you have any questions.
 
 ## Cloud Manager {#cloud-manager}
 
