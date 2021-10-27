@@ -49,6 +49,7 @@ The Quick Site Creation tool allows front-end developers to work independently w
   * Front-end design requirements
 * From the Cloud Manager administrator:
   * A welcome email from Cloud Manager informing you of access
+  * The name of the program or the URL to it within Cloud Manager
 
 If you are missing any of these items, please contact the AEM administrator or Cloud Manager administrator.
 
@@ -86,7 +87,7 @@ If you have not received this email, please contact the Cloud Manager administra
 
    ![Experience Manager apps](assets/experience-manager-apps.png)
 
-1. The next page lists the various programs available. Tap or click the one you need to access. If this is your first front-end project for AEMaaCS, you likely only have one program available.
+1. The next page lists the various programs available. Tap or click the one you need to access as provided by the Cloud Manager administrator. If this is your first front-end project for AEMaaCS, you likely only have one program available.
 
    ![Selecting a program in Cloud Manager](assets/cloud-manager-select-program.png)
 
