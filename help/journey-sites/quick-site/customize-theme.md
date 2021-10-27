@@ -18,11 +18,12 @@ Learn how the site theme is built, how to customize, and how to test using live 
 
 If you are a front-end developer only responsible for the customization of the site theme, you do not need any knowledge of how AEM was set up and can skip to the [Objective](#objective) section of this document.
 
-If you also serve the role of administrator as well as front-end developer, you learned in the previous document of the AEM Quick Site Creation journey, [Create Site from Template,](create-site.md) how to quickly create a new AEM site using a template, and you should now:
+If you also serve the role of administrator as well as front-end developer, you learned in the previous document of the AEM Quick Site Creation journey, [Set Up Your Pipeline,](pipeline-setup.md) how to create a front-end pipeline to manage the customization of your site's theme, and you should now:
 
-* Understand how to obtain AEM Site templates.
-* Learn how to create a new site using a template.
-* See how to download the template from your new site to provide to the front-end developer.
+* Understand how to set up a front-end pipeline in Cloud Manager.
+* Know how to retrieve access credentials for your front-end developer to be able to commit the customized code.
+
+This article takes the next step of showing how to quickly create a site which you can then later customize using your front-end pipeline.
 
 Now that you have a site created based on a template and have all of the information that a front-end developer needs, this article shifts perspective exclusively to the front-end developer role and shows the developer how to customize the theme.
 
