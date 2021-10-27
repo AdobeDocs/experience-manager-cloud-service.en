@@ -44,14 +44,16 @@ This journey lays out the requirements, steps, and approach to customize AEM Sit
 
 You will explore many topics in this journey. The following articles give you foundational knowledge of creating and customizing AEM sites using the Quick Site Creation tool and link out to detailed technical documentation.
 
-|#|Article|Description|
-|---|---|---|
-|0|AEM Quick Site Creation Journey|This document|
-|1|[Understand Cloud Manager and the Quick Site Creation Workflow](cloud-manager.md)|Learn about Cloud Manager and how it ties together the new Quick Site Creation process.|
-|2|[Create site from template](create-site.md)|Learn how to quickly create a new AEM site using a site template.|
-|3|[Set up your pipeline](pipeline-setup.md)|Create a front-end pipeline to manage the customization of your site's theme.|
-|4|[Customize the site theme](customize-theme.md)|Learn how a site theme is built, how to customize it, and how to test it using live AEM content.|
-|5|[Deploy your customized theme](deploy-theme.md)|Learn how to deploy the site theme using the pipeline.|
+|#|Article|Description|Target Audience|
+|---|---|---|--|
+|0|AEM Quick Site Creation Journey|This document|Administrator|
+|1|[Understand Cloud Manager and the Quick Site Creation Workflow](cloud-manager.md)|Learn about Cloud Manager and how it ties together the new Quick Site Creation process.|Administrator|
+|2|[Create site from template](create-site.md)|Learn how to quickly create a new AEM site using a site template.|Administrator|
+|3|[Set up your pipeline](pipeline-setup.md)|Create a front-end pipeline to manage the customization of your site's theme.|Administrator|
+|4|[Grant Access to the Front-End Developer](grant-access.md)|Onboard the front-end developers into Cloud Manager so they have access to your AEM site git repository and pipeline.|Administrator|
+|5|[Retrieve Git Repository Access Information](retrieve-access.md)|Learn how the front-end developer users Cloud Manager to access git repository information.|Front-End Developer|
+|6|[Customize the site theme](customize-theme.md)|Learn how a site theme is built, how to customize it, and how to test it using live AEM content.|Front-End Developer|
+|7|[Deploy your customized theme](deploy-theme.md)|Learn how to deploy the site theme using the pipeline.|Front-End Developer|
 
 ## What's Next {#what-is-next}
 
