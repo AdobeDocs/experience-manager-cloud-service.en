@@ -31,6 +31,10 @@ This document explains how to deploy the theme using the pipeline. After reading
 * Know how you can trigger a pipeline deployment.
 * See how to check the deployment status.
 
+## Responsible Role {#responsible-role}
+
+This part of the journey applies to the front-end developer.
+
 ## Start the Pipeline {#start-pipeline}
 
 Once you have committed the theme customization changes to the AEM git repository, you can run [the pipeline that the administrator  created](pipeline-setup.md) to deploy the changes.
