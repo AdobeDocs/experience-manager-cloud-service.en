@@ -18,7 +18,7 @@ Start here for a guided journey through the simple-to-use AEM Quick Site Creatio
 
 AEM Sites is a powerful tool set for creating and managing digital experiences. Content authors can easily create digital experiences using the sites editor and organize the content using the sites console, all while being able to see the content live as it will be delivered by AEM to your audiences across channels.
 
-The AEM Quick Site Creation tool allows for simple and fast customization of the theme and styling of AEM sites, allowing the front-end developer to work separately from and parallel to the content creators with zero knowledge of how AEM works. front-end developers simply download the theme, customize it using their favorite tools, and then commit the changes to the AEM code repository, which is then deployed.
+The AEM Quick Site Creation tool allows for simple and fast customization of the theme and styling of AEM sites, allowing the front-end developer to work separately from and parallel to the content creators with zero knowledge of how AEM works. The AEM administrator simply downloads the site theme and provides it to the front-end developer who customizes it using their favorite tools and then commits the changes to the AEM code repository, which is then deployed.
 
 By eliminating any knowledge requirements of AEM and allowing theme development to proceed in parallel with content creation, the AEM Quick Site Creation tool greatly accelerates your site's time-to-value and increases your customization and deployment agility.
 
@@ -50,8 +50,8 @@ You will explore many topics in this journey. The following articles give you fo
 |1|[Understand Cloud Manager and the Quick Site Creation Workflow](cloud-manager.md)|Learn about Cloud Manager and how it ties together the new Quick Site Creation process.|Administrator|
 |2|[Create site from template](create-site.md)|Learn how to quickly create a new AEM site using a site template.|Administrator|
 |3|[Set up your pipeline](pipeline-setup.md)|Create a front-end pipeline to manage the customization of your site's theme.|Administrator|
-|4|[Grant Access to the Front-End Developer](grant-access.md)|Onboard the front-end developers into Cloud Manager so they have access to your AEM site git repository and pipeline.|Administrator|
-|5|[Retrieve Git Repository Access Information](retrieve-access.md)|Learn how the front-end developer users Cloud Manager to access git repository information.|Front-End Developer|
+|4|[Grant access to the front-end developer](grant-access.md)|Onboard the front-end developers into Cloud Manager so they have access to your AEM site git repository and pipeline.|Administrator|
+|5|[Retrieve git repository access information](retrieve-access.md)|Learn how the front-end developer uses Cloud Manager to access git repository information.|Front-End Developer|
 |6|[Customize the site theme](customize-theme.md)|Learn how a site theme is built, how to customize it, and how to test it using live AEM content.|Front-End Developer|
 |7|[Deploy your customized theme](deploy-theme.md)|Learn how to deploy the site theme using the pipeline.|Front-End Developer|
 
@@ -60,7 +60,7 @@ You will explore many topics in this journey. The following articles give you fo
 You are now ready to get started on your Adobe Quick Site Creation journey.
 
 * If you serve both front-end developer and administrator roles or simply want to understand the end-to-end process in AEM, please start at the beginning of the journey with [Understand Cloud Manager](cloud-manager.md) as laid out below.
-* If you are only responsible for front-end development and will interact with the administrator, you can skip directly to [Customize the site theme.](customize-theme.md)
+* If you are only responsible for front-end development and will interact with the administrator, you can skip directly to [Retrieve git repository access information](retrieve-access.md) to get access to the AEM git repository and start customizing.
 
 ## Additional Resources {#additional-resources}
 

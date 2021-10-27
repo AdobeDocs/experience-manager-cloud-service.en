@@ -21,7 +21,7 @@ In the previous document of the AEM Quick Site Creation journey, [Retrieve Git R
 * Understand at a high level what Cloud Manager is.
 * Have retrieved your credentials to access the AEM git so you can commit your customizations.
 
-This part of the journey takes the next step and digs into the site template and shows you how to customize it and then commit those customizations using the access credentials you retrieved.
+This part of the journey takes the next step and digs into the site theme and shows you how to customize it and then commit those customizations using the access credentials you retrieved.
 
 ## Objective {#objective}
 
@@ -101,7 +101,7 @@ You can continue customizing the theme based on the requirements provided to you
 Once your customizations are complete, you can commit them to the AEM git repository. First you must clone the repository to your local machine.
 
 1. From the command line, navigate to where you would like to clone the repo.
-1. Execute the command provided to you from the administrator. It should be similar to `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. Use the git user name and password that [you retrieved in the previous part of this journey.](retrieve-access.md)
+1. Execute the command you [previously retrieved from Cloud Manager.](retrieve-access.md) It should be similar to `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. Use the git user name and password that [you retrieved in the previous part of this journey.](retrieve-access.md)
 
    ![Clone repo](assets/clone-repo.png)
 

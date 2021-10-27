@@ -16,9 +16,9 @@ Learn about Cloud Manager and how it ties together the new Quick Site Creation p
 
 >[!TIP]
 >
->If your role is exclusively front-end development, you can skip to the article [Customize the Site Theme](customize-theme.md) in this journey.
+>If your role is exclusively front-end development, you can skip to the article [Retrieve git repository access information](retrieve-access.md) in this journey.
 >
->If you are an administrator, responsible for both front-end development and administrator tasks, or would simply like to understand the end-to-end process in AEM for front-end development, continue reading the current document.
+>If you are an administrator, responsible for both front-end development and administrator tasks, or would simply like to understand the end-to-end process in AEM for front-end development, continue reading the current document and proceed on this journey.
 
 ## Objective {#objective}
 
@@ -52,6 +52,7 @@ For the front-end developer, no AEM knowledge is necessary.
 |Preferred front-end development environment|Front-End Developer|
 |npm|Front-End Developer|
 |webpack|Front-End Developer|
+|Be an administrator of your Cloud Manager org|Administrator|
 |Access to Cloud Manager|Administrator|
 |Be a member of the **Deployment Manager** role in Cloud Manager|Administrator|
 |Preferred front-end development environment|Front-End Developer|
@@ -72,12 +73,13 @@ The overall flow is simple and intuitive even if you do not yet have extensive e
 
 1. The administrator creates a new site using a site template.
 1. The administrator creates a front-end pipeline in Cloud Manager. The pipeline orchestrates the deployment of code from a git repository to an AEM environment.
-1. The administrator exports the site theme and provides it to the front-end developer along with credentials for the git repository.
-1. The front-end developer customizes the theme, testing it using actual content from the site using a proxy.
-1. The front-end developer commits the changes to the git repository.
+1. The administrator exports the site theme and provides it to the front-end developer.
+1. The administrator grants the front-end developer access to the AEM git repository where customizations can be committed.
+1. The front end developer retrieves access credentials to access git and the pipeline.
+1. The front-end developer customizes the theme, testing it using actual content from the site using a proxy and then commits the changes to the git repository.
 1. The front-end developer executes the pipeline to deploy the theme customizations.
 
-The major advantage of using the Quick Site Creation tool is that the pure front-end developer is only responsible the actual customization. The front-end developer has no interaction with AEM or needs any knowledge of the system.
+The major advantage of using the Quick Site Creation tool is that the pure front-end developer is only responsible the actual customization. The front-end developer has no interaction with AEM or needs any knowledge of AEM.
 
 ## What's Next {#what-is-next}
 

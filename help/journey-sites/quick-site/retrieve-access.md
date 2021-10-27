@@ -1,6 +1,6 @@
 ---
 title: Retrieve Git Repository Access Information
-description: Learn how the front-end developer users Cloud Manager to access git repository information.
+description: Learn how the front-end developer uses Cloud Manager to access git repository information.
 index: no
 hide: yes
 hidefromtoc: yes
@@ -8,7 +8,7 @@ hidefromtoc: yes
 
 # Retrieve Git Repository Access Information {#retrieve-access}
 
-Learn how the front-end developer users Cloud Manager to access git repository information.
+Learn how the front-end developer uses Cloud Manager to access git repository information.
 
 >[!CAUTION]
 >
@@ -18,25 +18,25 @@ Learn how the front-end developer users Cloud Manager to access git repository i
 
 If you are a front-end developer only responsible for the customization of the site theme, you do not need any knowledge of how AEM was set up and can skip to the [Objective](#objective) section of this document.
 
-If you also serve the role of administrator as well as front-end developer, you learned in the previous document of the AEM Quick Site Creation journey, [rant Access to the Front-End Developer,](grant-access.md) how to onboard the front-end developer so they have access to the git repository, and you should now know:
+If you also serve the role of administrator as well as front-end developer, you learned in the previous document of the AEM Quick Site Creation journey, [Grant Access to the Front-End Developer,](grant-access.md) how to onboard the front-end developer so they have access to the git repository, and you should now know:
 
 * How to add a front-end developer as a user.
 * How to grant the required roles to the front-end developer.
 
 This article takes the next step of showing how the front-end developer uses the Cloud Manager access granted to retrieve credentials to use the AEM git repository.
 
-Now that you have a site created based on a template, set up the pipeline, onboarded the front-end developer, and provided them with all of the information they need, this article shifts perspective exclusively to the front-end developer role.
+Now that you, as the administrator, have created a site created based on a template, set up the pipeline, onboarded the front-end developer, and provided them with all of the information they need, this article shifts perspective exclusively to the front-end developer role.
 
 ## Objective {#objective}
 
-This document explains how you in the role of the front-end developer can access Cloud Manager and retrieve access credentials to the AEM git repository. After reading you will:
+This document explains how you, in the role of the front-end developer, can access Cloud Manager and retrieve access credentials to the AEM git repository. After reading you will:
 
 * Understand at a high level what Cloud Manager is.
 * Have retrieved your credentials to access the AEM git so you can commit your customizations.
 
 ## Requirements {#requirements}
 
-The Quick Site Creation tool allows front-end developers to work independently without and knowledge of AEM or how it is set up. However, the AEM administrator must onbard you into the project team as well as provide you with some required information. make sure that you have the following information before continuing.
+The Quick Site Creation tool allows front-end developers to work independently without and knowledge of AEM or how it is set up. However, the AEM administrator must onbard the front-end developer into the project team as well as provide you with some required information. Make sure that you have the following information before continuing.
 
 * Theme source files to customize provided by the administrator
 * Path to an example page to use as a base of reference provided by the administrator
@@ -44,14 +44,14 @@ The Quick Site Creation tool allows front-end developers to work independently w
 * Front-end design requirements provided by the administrator
 * A welcome email from Cloud Manager informing you of access.
 
-If you are missing any of these items, please contact your AEM administrator.
+If you are missing any of these items, please contact the AEM administrator.
 
 It is assumed that the front-end developer has extensive experience with front-end development workflows as well as common tools installed including:
 
 * git
 * npm
 * webpack
-* Preferred editor
+* A preferred editor
 
 ## Understanding Cloud Manager {#understanding-cloud-manager}
 
@@ -59,14 +59,14 @@ Cloud Manager enables organizations to self-manage Adobe Experience Manager (AEM
 
 For the front-end developer, it is the gateway to:
 
-* Access git repository information so you can commit your front-end customizations
-* Start the deployment pipeline to deploy your customizations
+* Access AEM git repository information so you can commit your front-end customizations.
+* Start the deployment pipeline to deploy your customizations.
 
 The AEM administrator will have onboarded you as a Cloud Manager user. You should have received a welcome email similar to the following.
 
 ![Welcome email](assets/welcome-email.png)
 
-If you have not received this email, please contact your administrator.
+If you have not received this email, please contact the administrator.
 
 ## Access Cloud Manager {#access-cloud-manager}
 
@@ -76,11 +76,11 @@ If you have not received this email, please contact your administrator.
 
    ![Experience Cloud Overview](assets/experience-cloud-overview.png)
 
-1. On the next page, tap or click the **Launch** to start the **Cloud Manager** app.
+1. On the next page, tap or click the **Launch** button to start the **Cloud Manager** app.
 
    ![Experience Manager apps](assets/experience-manager-apps.png)
 
-1. The next page lists the various programs available. Tap or click the one you wish to manage. If you are just starting with AEM as a Cloud Service, you likely only have one program available.
+1. The next page lists the various programs available. Tap or click the one you need to access. If this is your first front-end project for AEMaaCS, you likely only have one program available.
 
    ![Selecting a program in Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -108,7 +108,7 @@ You now see an overview of your Cloud Manager. Your page will look different but
 
 ## What's Next {#what-is-next}
 
-Now that you have completed this part of the AEM Quick Site Creation journey you should know:
+Now that you have completed this part of the AEM Quick Site Creation journey you should:
 
 * Understand at a high level what Cloud Manager is.
 * Have retrieved your credentials to access the AEM git so you can commit your customizations.
@@ -117,6 +117,6 @@ Build on this knowledge and continue your AEM Quick Site Creation journey by nex
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [[Customize the Site Theme,](customize-theme.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Customize the Site Theme,](customize-theme.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Adobe Experience Manager Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Explore the Cloud Manager documentation for full details of its features.

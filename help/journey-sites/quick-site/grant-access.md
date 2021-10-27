@@ -10,6 +10,10 @@ hidefromtoc: yes
 
 Onboard the front-end developers into Cloud Manager so they have access to your AEM site git repository and pipeline.
 
+>[!CAUTION]
+>
+>The Quick Site Creation tool is currently a tech preview. It is made available for testing and evaluation purposes and is not intended for production use unless agreed with Adobe Support.
+
 ## The Story So Far {#story-so-far}
 
 In the previous document of the AEM Quick Site Creation journey, [Set Up Your Pipeline,](setup-pipeline.md) you learned how to create a front-end pipeline to manage the customization of your site's theme, and you should now:
@@ -28,7 +32,7 @@ The process of granting access to Cloud Manager and assigning user roles to your
 
 >[!TIP]
 >
->There is an entire documentation journey dedicated to onboarding your team onto AEM as a Cloud service, linked to in the [Additional Resources section](#additional-resources) of this document.
+>There is an entire documentation journey dedicated to onboarding your team onto AEM as a Cloud service, linked to in the [Additional Resources section](#additional-resources) of this document, if you need additional details about the process.
 
 ## Requirements {#requirements}
 
@@ -74,7 +78,7 @@ The invited front-end developer can access Cloud Manager by clicking the link in
 
 ## Handover to Front-End Developer {#handover}
 
-With an email invitation to Cloud Manager on the way, you can now provide the front-end developer the remaining necessary information to begin customization.
+With an email invitation to Cloud Manager on the way to the front-end developer, you can now provide the front-end developer with the remaining necessary information to begin customization.
 
 * A [path to typical content](#example-page)
 * The theme source that [you downloaded](#download-theme)
