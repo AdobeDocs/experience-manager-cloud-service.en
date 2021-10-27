@@ -16,13 +16,15 @@ exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 * The User Mapping IO endpoint: 
    `usermanagement.adobe.io`
 
- To test connectivity to the target AEM as a Cloud Service environment, issue the following cURL command from the shell of the source instance (replace `program_id`, `environment_id`, and `migration_token`):
+To test connectivity to the target AEM as a Cloud Service environment, issue the following cURL command from the shell of the source instance (replace `program_id`, `environment_id`, and `migration_token`):
 
- ```
+```
+
  curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
- ```
 
- If an `HTTP/2 200` is received, a connection to AEM as a Cloud Service was successful.
+```
+>[!NOTE]
+>If an `HTTP/2 200` is received, a connection to AEM as a Cloud Service was successful.
 
 ## Availability {#availability}
 
