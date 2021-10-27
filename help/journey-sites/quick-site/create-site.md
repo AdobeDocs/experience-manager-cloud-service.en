@@ -48,13 +48,13 @@ Templates are powerful because they are reusable so that your content authors ca
 
 ## Obtaining a Site Template {#obtaining-template}
 
-The simplest way to get started is to [download the latest AEM Standard Site Template from its GitHub repository.](https://github.com/adobe/aem-site-template-standard)
+The simplest way to get started is to [download the latest release of the AEM Standard Site Template from its GitHub repository.](https://github.com/adobe/aem-site-template-standard/releases)
 
-Once downloaded you can upload it to your AEM environment.
+Once downloaded you can upload it to your AEM environment as you would any other package. See the [Additional Resources section](#additional-resources) for details on how to work with packages if you need more information on this topic.
 
 >[!TIP]
 >
->The AEM Standard Site Template can be customized to meet your project's needs. However this topic is beyond the scope of this journey. Please refer to the GitHub documentation of the Standard Site Template for more information.
+>The AEM Standard Site Template can be customized to meet your project's needs and can obviate the need for further customization. However this topic is beyond the scope of this journey. Please refer to the GitHub documentation of the Standard Site Template for more information.
 
 >[!TIP]
 >
@@ -101,9 +101,16 @@ Using a template to create a new site is very easy.
 
 Content authors can now begin authoring.
 
+## Is Further Customization Required? {#customization-required}
+
+Site templates are very powerful and flexible and any number can be created for a project, allowing for easy creation site variations. Depending on the level of customization already performed on the site template you use, you may not even need additional front-end customization.
+
+* If so, congratulations! Your journey ends here!
+* If you still need additional front-end customization, or if you simply want to understand the full process in case you need future customization, please continue reading.
+
 ## Example Page {#example-page}
 
-The front-end developer may not be familiar with the details of your content. Therefore it is a good idea to provide the developer with a path to typical content that can be used as a base of reference as the theme is customized. A typical example is the home page for the master language of the site.
+If you do require additional front-end customization, keep in mind that the front-end developer may not be familiar with the details of your content. Therefore it is a good idea to provide the developer with a path to typical content that can be used as a base of reference as the theme is customized. A typical example is the home page for the master language of the site.
 
 1. In the sites browser, navigate to the home page of the master language of the site and then tap or click the page to select it and then tap or click **Edit** in the menu bar.
 
@@ -184,3 +191,4 @@ While it is recommended that you move on to the next part of the Quick Site Crea
 
 * [AEM Standard Site Template](https://github.com/adobe/aem-site-template-standard) - This is the GitHub repository of the AEM Standard Site template.
 * [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - This guide details how to manage pages of your AEM Site if you wish to customize it further after creating it from the template.
+* [How to Work with Package](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) - Packages enable the importing and exporting of repository content. This document explains how to work with packages in AEM 6.5, which also applies to AEMaaCS.
