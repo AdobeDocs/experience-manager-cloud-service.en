@@ -51,7 +51,7 @@ Once you have committed the theme customization changes to the AEM git repositor
 
    ![Confirm pipeline run](assets/pipeline-confirm.png)
 
-1. In the list of pipelines, the status column indicates that your pipeline is now running. It takes about five minutes to complete.
+1. In the list of pipelines, the status column indicates that your pipeline is now running.
 
    ![Pipeline running status](assets/pipeline-running.png)
 

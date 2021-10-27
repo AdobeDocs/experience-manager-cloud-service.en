@@ -18,7 +18,7 @@ Start here for a guided journey through the easy-to-use AEM Quick Site Creation 
 
 AEM Sites is a powerful tool set for creating and managing digital experiences. Content authors can easily create digital experiences using the sites editor and organize the content using the sites console, all while being able to see the content live as it will be delivered by AEM to your audiences across channels.
 
-The AEM Quick Site Creation tool allows for fast customization of the theme and styling of AEM sites, allowing the front-end developer to work separately from and parallel to the content creators with zero knowledge of how AEM works. The AEM administrator simply downloads the site theme and provides it to the front-end developer who customizes it using their favorite tools and then commits the changes to the AEM code repository, which is then deployed.
+The AEM Quick Site Creation tool allows for fast customization of the theme and styling of AEM sites (JavaScript, CSS, and static resources), allowing the front-end developer to work separately from and parallel to the content creators with zero knowledge of how AEM works. The AEM administrator simply downloads the site theme and provides it to the front-end developer who customizes it using their favorite tools and then commits the changes to the AEM code repository, which is then deployed.
 
 By eliminating any knowledge requirements of AEM and allowing theme development to proceed in parallel with content creation, the AEM Quick Site Creation tool greatly accelerates your site's time-to-value and increases your customization and deployment agility.
 
