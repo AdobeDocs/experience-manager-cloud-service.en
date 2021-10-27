@@ -59,6 +59,8 @@ You now see an overview of your Cloud Manager. Your page will look different but
 
 ![Cloud Manager overview](assets/cloud-manager-overview.png)
 
+Note the name of the program that you have accessed or copy the URL. You will need to provide this to the front-end developer later.
+
 ## Create a Front-End Pipeline {#create-front-end-pipeline}
 
 Now that you have accessed Cloud Manager, you can create a pipeline for front-end deployment.

@@ -82,12 +82,13 @@ The invited front-end developer can access Cloud Manager by clicking the link in
 
 ## Handover to Front-End Developer {#handover}
 
-With an email invitation to Cloud Manager on the way to the front-end developer, you can now provide the front-end developer with the remaining necessary information to begin customization.
+With an email invitation to Cloud Manager on the way to the front-end developer, you and the AEM administrator can now provide the front-end developer with the remaining necessary information to begin customization.
 
 * A [path to typical content](#example-page)
 * The theme source that [you downloaded](#download-theme)
 * The [proxy user credentials](#proxy-user)
-* Your front-end design requirements
+* The name of the program or the URL to it [copied from Cloud Manager](pipeline-setup.md#login)
+* The front-end design requirements
 
 ## What's Next {#what-is-next}
 
