@@ -30,7 +30,6 @@ This document explains how to deploy the theme using the pipeline. After reading
 
 * Know how you can trigger a pipeline deployment.
 * See how to check the deployment status.
-* View the results of the deployment in your AEM environment.
 
 ## Start the Pipeline {#start-pipeline}
 
@@ -84,7 +83,8 @@ Once the pipeline is complete, you can inform the administrator to validate the 
 Congratulations! You have completed the AEM Quick Site Creation journey! You should now:
 
 * Understand how Cloud Manager and the front-end pipeline work to manage and deploy front-end customizations.
-* Know how to create an AEM site based on a template and how to provide the theme and credentials to a front-end developer.
+* Know how to create an AEM site based on a template and how to download the site theme.
+* How to onboard a front-end developer so that they can access the AEM git repository.
 * How to customize and test a theme using proxied AEM content and commit those changes to AEM git.
 * How to deploy front-end customization using the pipeline.
 
@@ -101,3 +101,6 @@ While it is recommended that you move on to the next part of the Quick Site Crea
 * [npm](https://www.npmjs.com) - AEM themes used to quickly build sites are based on npm.
 * [webpack](https://webpack.js.org) - AEM themes used to quickly build sites rely on webpack.
 * [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - This guide details how to manage pages of your AEM Site if you wish to customize it further after creating it from the template.
+* [How to Work with Package](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) - Packages enable the importing and exporting of repository content. This document explains how to work with packages in AEM 6.5, which also applies to AEMaaCS.
+* [Onboarding Journey](/help/journey-onboarding/home.md) - This guide serves as your starting point to ensure your teams are setup and have access to AEM as a Cloud Service.
+* [Adobe Experience Manager Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Explore the Cloud Manager documentation for full details of its features.
