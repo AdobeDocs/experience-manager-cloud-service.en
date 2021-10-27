@@ -31,6 +31,10 @@ This document helps you understand front-end pipelines and how to create one to 
 * Understand what a front-end pipeline is.
 * Know how to set up a front-end pipeline in Cloud Manager.
 
+## Responsible Role {#responsible-role}
+
+This part of the journey applies to the Cloud Manager administrator.
+
 ## Requirements {#requirements}
 
 You need to have access to Cloud Manager and be a member of the **Deployment Manager** role.
