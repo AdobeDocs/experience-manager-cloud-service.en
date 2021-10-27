@@ -27,6 +27,7 @@ To test connectivity to the target AEM as a Cloud Service environment, issue the
 >[!NOTE]
 >If an `HTTP/2 200` is received, a connection to AEM as a Cloud Service was successful.
 
+
 ## Availability {#availability}
 
 >[!CONTEXTUALHELP]
