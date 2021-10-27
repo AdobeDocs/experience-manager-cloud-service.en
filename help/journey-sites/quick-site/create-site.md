@@ -37,7 +37,7 @@ This part of the journey applies to the AEM administrator.
 
 ## Site Templates {#site-templates}
 
-Site templates are a simple way to combine basic site content into a convenient and reusable package. Site templates generally contain base site content and structure as well as site styling information to get new site started quickly. The actual structure is as follows:
+Site templates are a way to combine basic site content into a convenient and reusable package. Site templates generally contain base site content and structure as well as site styling information to get new site started quickly. The actual structure is as follows:
 
 * `files`: Folder with the UI kit XD file and possibly other files.
 * `previews`: Folder with screenshots of the site template.
@@ -159,7 +159,7 @@ In order for the front-end developer to preview the customizations using actual 
    ![New user details](assets/new-user-details.png)
 
 1. On the **Groups** tab, add the proxy user to the `contributors` group.
-   * Typing in the term `contributors` triggers AEM's auto-completion feature for simple selection of the group.
+   * Typing in the term `contributors` triggers AEM's auto-completion feature for easy selection of the group.
 
    ![Add to group](assets/add-to-group.png)
 
