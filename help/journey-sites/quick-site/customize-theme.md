@@ -16,16 +16,12 @@ Learn how the site theme is built, how to customize, and how to test using live 
 
 ## The Story So Far {#story-so-far}
 
-If you are a front-end developer only responsible for the customization of the site theme, you do not need any knowledge of how AEM was set up and can skip to the [Objective](#objective) section of this document.
+In the previous document of the AEM Quick Site Creation journey, [Retrieve Git Repository Access Information,](retrieve-access.md) you learned how the front-end developer users Cloud Manager to access git repository information, and you should now:
 
-If you also serve the role of administrator as well as front-end developer, you learned in the previous document of the AEM Quick Site Creation journey, [Set Up Your Pipeline,](pipeline-setup.md) how to create a front-end pipeline to manage the customization of your site's theme, and you should now:
+* Understand at a high level what Cloud Manager is.
+* Have retrieved your credentials to access the AEM git so you can commit your customizations.
 
-* Understand how to set up a front-end pipeline in Cloud Manager.
-* Know how to retrieve access credentials for your front-end developer to be able to commit the customized code.
-
-This article takes the next step of showing how to quickly create a site which you can then later customize using your front-end pipeline.
-
-Now that you have a site created based on a template and have all of the information that a front-end developer needs, this article shifts perspective exclusively to the front-end developer role and shows the developer how to customize the theme.
+This part of the journey takes the next step and digs into the site template and shows you how to customize it and then commit those customizations using the access credentials you retrieved.
 
 ## Objective {#objective}
 
@@ -34,25 +30,6 @@ This document explains how the AEM site theme is built, how to customize it, and
 * Understand the basic structure of the site theme and how to edit it.
 * See how to test your theme customizations using real AEM content via local proxy.
 * Know how to commit your changes to the AEM git repository.
-
-## Requirements {#requirements}
-
-The Quick Site Creation tool allows front-end developers to work independently without and knowledge of AEM or how it is set up. However, there is information that you must be provided by the AEM administrator.
-
-* Theme source files to customize
-* Path to an example page to use as a base of reference
-* Git credentials to commit your customizations
-* Proxy user credentials to test your customizations against live AEM content
-* front-end design requirements
-
-If you are missing any of these items, please contact your AEM administrator.
-
-It is assumed that the front-end developer has extensive experience with front-end development workflows as well as common tools installed including:
-
-* git
-* npm
-* webpack
-* Preferred editor
 
 ## Understand the Theme Structure {#understand-theme}
 
@@ -124,7 +101,7 @@ You can continue customizing the theme based on the requirements provided to you
 Once your customizations are complete, you can commit them to the AEM git repository. First you must clone the repository to your local machine.
 
 1. From the command line, navigate to where you would like to clone the repo.
-1. Execute the command provided to you from the administrator. It should be similar to `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. Use the git user name and password provided by the administrator.
+1. Execute the command provided to you from the administrator. It should be similar to `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. Use the git user name and password that [you retrieved in the previous part of this journey.](retrieve-access.md)
 
    ![Clone repo](assets/clone-repo.png)
 
