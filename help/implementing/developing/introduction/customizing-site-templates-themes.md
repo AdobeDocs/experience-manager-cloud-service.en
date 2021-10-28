@@ -1,19 +1,19 @@
 ---
 title: Customizing Site Templates and Themes
-description: Learn how AEM site templates can be used to predefine site structure and initial content and how themes are used to define site style to allow you to quickly create new sites.
+description: Learn how AEM site templates can be used to predefine site structure and initial content and how themes are used to define site style to allow you to quickly create sites.
 feature: Administering
 role: Admin
 ---
 
 # Customizing Site Templates and Themes {#customizing-site-templates-themes}
 
-Learn how AEM site templates can be used to predefine site structure and initial content and how themes are used to define site style to allow you to quickly create new sites.
+Learn how AEM site templates can be used to predefine site structure and initial content and how themes are used to define site style to allow you to quickly create sites.
 
 ## Overview {#overview}
 
-In order to allow AEM administrators to quickly create new sites adapted to business needs, AEM supports creating new sites by using site templates and site themes.
+In order to allow AEM administrators to quickly create sites adapted to business needs, AEM supports creating new sites by using site templates and site themes.
 
-* An **AEM site templates** generally contains base site content and structure as well as site styling information, known as the site theme, to get new site started quickly. Templates are powerful because they are reusable as well as customizable. And since you can have multiple templates available in your AEM installation, you have the flexibility to create different sites to meet various business needs.
+* An **AEM site template** generally contains base site content and structure as well as site styling information, known as the site theme, to get new site started quickly. Templates are powerful because they are reusable as well as customizable. And since you can have multiple templates available in your AEM installation, you have the flexibility to create different sites to meet various business needs.
 * An **AEM site theme** is a package containing the CSS, JavaScript, and static resources that define the styling of your AEM site and complies with the structure of an AEM site theme.
 
 ## Additional Resources {#additional-resources}
@@ -25,4 +25,4 @@ Because [site creation](/help/sites-cloud/administering/site-creation/create-sit
 
 >[!TIP]
 >
->An end-to-end description of the process of creating a new site from a template and customizing its theme can be found in the [Quick Site Creation Journey.](/help/journey-sites/quick-site/overview.md)
+>An end-to-end description of the process of creating a site from a template and customizing its theme can be found in the [Quick Site Creation Journey.](/help/journey-sites/quick-site/overview.md)

@@ -23,12 +23,12 @@ Sites created with AEM site templates allow for the easy download, customization
 
 Site themes are used in two different ways:
 
-* They are used as part of a site template to define styling when [creating a new site.](create-site.md)
+* They are used as part of a site template to define styling when [creating a site.](create-site.md)
 * They are downloaded after creating a site based on a site template so a front-end developer can further customize the styling.
 
 >[!TIP]
 >
->An end-to-end description of the process of creating a new site from a template and customizing its theme can be found in the [Quick Site Creation Journey.](/help/journey-sites/quick-site/overview.md)
+>An end-to-end description of the process of creating a site from a template and customizing its theme can be found in the [Quick Site Creation Journey.](/help/journey-sites/quick-site/overview.md)
 
 ## Site Theme Structure {#structure}
 
@@ -47,4 +47,4 @@ Adobe provides a best-practices reference theme that you can use as a basis for 
 
 Adobe provides and AEM Site Theme Builder as a set of scripts for creating new site themes.
 
-[The AEM Site Theme Builder is available along with usage documentation on GitHub.](https://github.com/adobe/aem-site-theme-builder) Note that front-end developer experience is required for customizing the theme.
+[The AEM Site Theme Builder is available along with usage documentation on GitHub.](https://github.com/adobe/aem-site-theme-builder) Front-end development experience is required for customizing the theme.
