@@ -39,7 +39,7 @@ Products can be dropped on components that support product drops (example produc
 
 If product and category data is required in commerce components or AEM back-office dialogs, AEM authors can use pickers which are UI elements to comfortably search and select product catalog data.
 
-#### Product Picker
+### Product Picker
 
 Clicking on the folder icon will open picker modal UI (for example product teaser)
 ![product picker](assets/product-picker-open.png)
@@ -51,7 +51,7 @@ Products with variations are marked with a folder icon that can be clicked to sh
 ![product picker variants](assets/product-picker-variants.png)
 ![product picker variants open](assets/product-picker-variants-open.png)
 
-#### Category Picker
+### Category Picker
 
 Works like a product picker. Clicking on the folder icon will open picker modal UI (for example category carousel)
 ![category picker](assets/category-picker-open.png)
