@@ -5,7 +5,7 @@ index: no
 hide: yes
 hidefromtoc: yes
 ---
-# AEM Content and Commerce Content Author Journey {#aem-commerce-developer-journey}
+# AEM Content and Commerce Content Author Journey {#aem-commerce-author-journey}
 
 Start here for a guided journey through AEM Content and Commerce to learn how to manage product experiences.
 
