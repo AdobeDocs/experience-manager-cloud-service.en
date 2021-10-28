@@ -1,21 +1,21 @@
 ---
-title: Creating a New Site
-description: Learn how to use AEM to create a new site using site templates to define the style and structure of your site.
+title: Creating a Site
+description: Learn how to use AEM to create a site using site templates to define the style and structure of your site.
 feature: Administering
 role: Admin
 ---
 
-# Creating a New Site {#new-site}
+# Creating a Site {#creating-site}
 
-Learn how to use AEM create a new site using site templates to define the style and structure of your site.
+Learn how to use AEM create a site using site templates to define the style and structure of your site.
 
 ## Overview {#overview}
 
-Before content authors can create pages with new content, the site must first be created. This is generally performed by an AEM administrator who defines the initial structure of the site. Site creation through the use of site templates makes the process fast and flexible.
+Before content authors can create pages with content, the site must first be created. This is generally performed by an AEM administrator who defines the initial structure of the site. Using site templates makes site creation fast and flexible.
 
 ## Planning Site Structure {#structure}
 
-You should take time to consider your site's purpose and planned content well in advance. This will drive how you design the structure of the site. A good site structure supports easy navigation and content discovery for your site visitors as well as supports various AEM features such as [multi site management and translation.](/help/sites-cloud/administering/msm-and-translation.md)
+Take time to consider your site's purpose and planned content well in advance. This will drive how you design the structure of the site. A good site structure supports easy navigation and content discovery for your site visitors as well as supports various AEM features such as [multisite management and translation.](/help/sites-cloud/administering/msm-and-translation.md)
 
 >[!TIP]
 >
@@ -35,9 +35,9 @@ Site templates generally contain base site content and structure as well as site
 >
 >The site template is not to be confused with page templates. Site templates define the overall structure of a site. A page template defines the structure and initial content of an individual page.
 
-## Creating a New Site {#create-site}
+## Creating a Site {#create-site}
 
-Using a template to create a new site is very easy.
+Using a template to create a site is simple.
 
 1. Sign into your AEM authoring environment and navigate to the Sites console
 
@@ -45,7 +45,7 @@ Using a template to create a new site is very easy.
 
 1. Tap or click **Create** at the top-right of the screen and from the drop-down menu select **Site from template**.
 
-   ![Creating a new site from a template](../assets/create-site-from-template.png)
+   ![Creating a site from a template](../assets/create-site-from-template.png)
 
 1. In the Create Site wizard, tap or click on an existing template in the left panel or on **Import** at the top of the left column to import a new template.
 
@@ -65,7 +65,7 @@ Using a template to create a new site is very easy.
    * The site name becomes part of the URL.
    * The site name must comply with [AEM's page naming conventions.](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)
 
-1. Tap or click **Create** and the new site is created from the site template.
+1. Tap or click **Create** and the site is created from the site template.
 
    ![Details of the new site](../assets/create-site-details.png)
 
@@ -73,7 +73,7 @@ Using a template to create a new site is very easy.
 
    ![Success dialog](../assets/success.png)
 
-1. In the sites console, the new sites is visible and can be navigated to explore its basic structure as defined by the template.
+1. In the sites console, the new site is visible and can be navigated to explore its basic structure as defined by the template.
 
    ![New site structure](../assets/new-site.png)
 
