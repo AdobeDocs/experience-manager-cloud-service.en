@@ -1,19 +1,19 @@
 ---
 title: Site Templates
-description: Learn how AEM site templates can be used to predefine site structure and initial content to allow you to quickly create new sites.
+description: Learn how AEM site templates can be used to predefine site structure and initial content to allow you to quickly create sites.
 feature: Administering
 role: Admin
 ---
 
 # Site Templates {#site-templates}
 
-Learn how AEM site templates can be used to predefine site structure and initial content to allow you to quickly create new sites.
+Learn how AEM site templates can be used to predefine site structure and initial content to allow you to quickly create sites.
 
 ## Overview {#overview}
 
 It is convenient to have predefined structures available to quickly deploy a new site based on a set of existing standards. Site templates are a way to combine basic site content into a convenient and reusable package.
 
-Site templates generally contain base site content and structure as well as site styling information, known as the [site theme,](site-themes.md) to get new site started quickly. Administrators select a site template upon which to base the new site [during the site creation process.](create-site.md)
+Site templates generally contain base site content and structure as well as site styling information, known as the [site theme,](site-themes.md) to get a new site started quickly. Administrators select a site template upon which to base the site [during the site creation process.](create-site.md)
 
 Templates are powerful because they are reusable as well as customizable. And since you can have multiple templates available in your AEM installation, you have the flexibility to create different sites to meet various business needs.
 
@@ -42,4 +42,4 @@ Adobe provides a best-practices reference template that you can use as a basis f
 
 Adobe provides and AEM Site Template Builder as a set of scripts for creating new site templates.
 
-[The AEM Site Template Builder is available along with usage documentation on GitHub.](https://github.com/adobe/aem-site-template-builder) Note that front-end developer experience is required for customizing the [site theme](site-themes.md) and AEM developer knowledge is required for customizing the site structure and content.
+[The AEM Site Template Builder is available along with usage documentation on GitHub.](https://github.com/adobe/aem-site-template-builder) Front-end developer experience is required for customizing the [site theme](site-themes.md) and AEM developer knowledge is required for customizing the site structure and content.
