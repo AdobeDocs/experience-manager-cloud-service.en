@@ -11,7 +11,7 @@ When uploading images, you can automatically crop the image upon upload by apply
 
 >[!IMPORTANT]
 >
->Image profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
+>Image Profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
 
 ## Unsharp Mask option {#unsharp-mask}
 
@@ -54,7 +54,7 @@ Smart Crop coordinates are aspect ratio dependent. For the smart crop settings i
 
 Each Smart Crop generation that you create requires extra processing. For example, adding more than five Smart Crop aspect ratios may result in a slow asset ingestion rate. It may also cause an increased load on systems. Because you can apply Smart Crop at the folder level, Adobe recommends that you use it on folders *only* where it is needed.
 
-You have two image crop options from which to choose. You also have an option to automate the creation of color and image swatches or preserve crop content across target resolutions.
+You have two image crop options from which to choose. You can also choose to automate the creation of color and image swatches or preserve crop content across target resolutions.
 
 >[!IMPORTANT]
 >
@@ -69,7 +69,7 @@ You have two image crop options from which to choose. You also have an option to
 
 ### Supported image file formats for Smart Crop and Color Swatches
 
-The maximum supported input file size resolution is 16 KB.
+The maximum supported input file size resolution is 16K.
 
 | Image format | Case-insensitive file extension | MIME type | Supported input color space | Maximum supported input file size | Supported image format? |
 | --- | --- | --- | --- | --- | --- |
@@ -183,11 +183,16 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 >[!IMPORTANT]
 >
->Adobe recommends that you review any generated crops and swatches to ensure that they are appropriate and relevant to your brand and values.
+>Adobe recommends that you review any generated smart crops and smart swatches to ensure that they are appropriate and relevant to your brand and values.
 
 You can manually realign or resize the smart crop window of an image to further refine its focal point.
 
 After you edit a smart crop and save, the change is propagated everywhere you use the crop for the specific images.
+
+>[!IMPORTANT]
+>
+>When you manually realign or resize the smart crop window of an asset, that edit is maintained and preserved, even if you later decide to reprocess the asset. However, if you edit the width, height, or both in the **[!UICONTROL Responsive Image Crop]** area of the Image Profile, then that asset is subject to reprocessing.
+>See [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 You can rerun smart crop to generate the additional crops again, if necessary.
 
@@ -215,6 +220,11 @@ See also [Edit the smart crop or smart swatch of multiple images](#editing-the-s
 After you apply an Image Profile &ndash; containing Smart Crop &ndash; to a folder, all images in that folder have a crop applied to them. If desired, you can *manually* realign or resize the smart crop window in multiple images to further refine their focal point.
 
 After you edit a smart crop and save, the change is propagated everywhere you use the crop for the specific images.
+
+>[!IMPORTANT]
+>
+>When you manually realign or resize the smart crop window of multiple assets, those edits are maintained and preserved, even if you later decide to reprocess those assets. However, if you edit the width, height, or both in the **[!UICONTROL Responsive Image Crop]** area of the Image Profile, then those assets are subject to reprocessing.
+>See [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 You can rerun smart crop to generate the additional crops again, if necessary.
 
