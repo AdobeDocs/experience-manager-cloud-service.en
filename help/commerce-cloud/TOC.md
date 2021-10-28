@@ -13,11 +13,12 @@ user-guide-description: Understand how to use and administer Experience Manager 
 + Integrations {#integrations}
   + [Adobe Commerce](integrating/magento.md)
   + [3rd Party Commerce Solution](integrating/third-party.md)
-+ AEM Storefront {#storefront}
-  + [Getting started](getting-started.md)
   + Authoring {#authoring}
+    + [Commerce experiences](authoring/authoring-commerce-experiences.md)
     + [Product cockpit](authoring/product-cockpit.md)
     + [Enrich product data with associated content](authoring/enrich-product-associated-content.md)
++ AEM Storefront {#storefront}
+  + [Getting started](getting-started.md)
   + Administering {#administering}
     + [Multi-Store Setup](configuring/multi-store-setup.md)
     + [Multi-Template Usage](configuring/multi-template-usage.md)
