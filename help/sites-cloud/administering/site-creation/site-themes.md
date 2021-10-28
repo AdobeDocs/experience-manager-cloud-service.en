@@ -26,7 +26,7 @@ Site themes are used in two different ways:
 * They are used as part of a site template to define styling when [creating a new site.](create-site.md)
 * They are downloaded after creating a site based on a site template so a front-end developer can further customize the styling.
 
-[!TIP]
+>[!TIP]
 >
 >An end-to-end description of the process of creating a new site from a template and customizing its theme can be found in the [Quick Site Creation Journey.](/help/journey-sites/quick-site/overview.md)
 
