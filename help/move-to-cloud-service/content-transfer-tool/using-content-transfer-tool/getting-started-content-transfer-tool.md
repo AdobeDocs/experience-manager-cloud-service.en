@@ -22,7 +22,6 @@ curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/mig
 >[!NOTE]
 >If an `HTTP/2 200` is received, a connection to AEM as a Cloud Service was successful.
 
-
 ## Availability {#availability}
 
 >[!CONTEXTUALHELP]
