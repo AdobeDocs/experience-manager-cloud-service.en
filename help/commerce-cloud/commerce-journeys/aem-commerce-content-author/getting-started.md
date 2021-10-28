@@ -7,7 +7,7 @@ hidefromtoc: yes
 ---
 # Getting Started with AEM CIF Authoring {#getting-started}
 
-Get to know about AEM CIF Authoring
+Get to know about AEM CIF Authoring.
 
 ## The Story So Far {#story-so-far}
 
