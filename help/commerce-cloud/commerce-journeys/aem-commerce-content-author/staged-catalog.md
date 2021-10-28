@@ -17,7 +17,7 @@ This article builds on those fundamentals.
 
 ## Objective {#objective}
 
-This document helps you understand how to manage product catalog experience based on staged product data and AEM Launches. Many times, authors have to prepare in parallel an upcoming product launch (such as a new apparel collection). This requires access to staged product data (= not live yet) and the ability to prepare the content. This new content will go live with the product launch.
+This document helps you understand how to manage product catalog experience based on staged product data and AEM Launches. Many times, authors have to prepare in parallel an upcoming product launch (such as a new apparel collection). This requires access to staged product data (not live yet) and the ability to prepare the content. This new content will go live with the product launch.
 
     >[!NOTE]
     >
@@ -27,7 +27,7 @@ First, let's see how authors can access staged product data with CIF.
 
 ## Working with Staged Product Data {#staged-product-data}
 
-One way to access staged product data is using the product cockpit. Open up the product catalog by clicking on the Commerce icon in the main AEM menu. This will give you access to live product data. Open the filter tab on the left and expand "STAGED CATALOG". Using the preview data, you can now access staged product data for any point in time. Staged data includes new categories, products, or updated fields like price.
+One way to access staged product data is using the product cockpit. Open up the product catalog by clicking on the Commerce icon in the main AEM menu. This will give you access to live product data. Open the filter tab on the left and expand **STAGED CATALOG**. Using the preview data, you can now access staged product data for any point in time. Staged data includes new categories, products, or updated fields like price.
 
 ![stage cockpit](assets/staged-cockpit.png)
 
@@ -53,9 +53,9 @@ Notice that the pickers respect the launch date with the staged indicator on the
 
 ![stage picker](assets/staged-picker.png)
 
-## End of the Journey? {#end-of-journey}
+## What's Next {#what-is-next}
 
-Congratulations! You have completed the AEM Content and Commerce Developer journey! You should now:
+Now that you have completed this part of the journey you should:
 
 * understand the concepts of staged product catalog and content with Launches
 * be able to access staged product catalog data via product cockpit and editor
