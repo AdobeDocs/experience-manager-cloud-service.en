@@ -15,12 +15,22 @@ The source AEM instance may be running behind a firewall where it can only reach
 
 To test connectivity to the target AEM as a Cloud Service environment, issue the following cURL command from the shell of the source instance (replace `program_id`, `environment_id`, and `migration_token`):
 
-`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
+```
+curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
+```
+
 
 >[!NOTE]
 >If an `HTTP/2 200` is received, a connection to AEM as a Cloud Service was successful.
 
 ## Availability {#availability}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_download"
+>title="Download"
+>abstract="The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Release Notes"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version. For more details on the latest version, refer to [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
