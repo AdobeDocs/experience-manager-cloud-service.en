@@ -29,13 +29,13 @@ On a high level, there are two types of assets related to products: product & ma
 
 Marketing assets are related to promoting and using the product which is usually owned by marketing. Examples are showing multiple products ("shop the look"), in a specific context ("outdoor fall collection"), or how-to pdfs. CIF provides an easy way to link any AEM asset with product catalog object.
 
-Open the asset properties and switch to the 'commerce' tab. This tab allows you to manage the association with products. The table below the picker provides additional information for the linked objects (only visible with a selection). Click on the details icon to get a full view in the product cockpit. To associate a new object, click on the product picker icon (folder icon), select an object and close the picker.
+Open the asset properties and switch to the **Commerce** tab. This tab allows you to manage the association with products. The table below the picker provides additional information for the linked objects (only visible with a selection). Click on the details icon to get a full view in the product cockpit. To associate a new object, click on the product picker icon (folder icon), select an object and close the picker.
 
 ![pem assets](assets/pem-assets.png)
 
 ### Experience Fragments {#experience-fragments}
 
-Experience Fragments are a great way to create re-usable or individual product content at scale. The association works similar to an asset. Open properties and switch to the 'commerce' tab. This tab allows you to manage the association with products and categories. The tables below the pickers provide additional information for the linked objects (only visible with a selection). Click on the details icon to get a full view in the product cockpit. To associate a new object, click on the product picker icon (folder icon), select an object and close the picker.
+Experience Fragments are a great way to create re-usable or individual product content at scale. The association works similar to an asset. Open properties and switch to the **Commerce** tab. This tab allows you to manage the association with products and categories. The tables below the pickers provide additional information for the linked objects (only visible with a selection). Click on the details icon to get a full view in the product cockpit. To associate a new object, click on the product picker icon (folder icon), select an object and close the picker.
 
 ![pem xf](assets/pem-xf.png)
 
@@ -61,7 +61,7 @@ Clicking on the action icon will open that piece of content in a new browser tab
 
 In the previous modules you have learned how to work with multiple product catalog templates. Multiple templates are a great way to create different templates but not needed in many cases. In many cases, the same template can be used in combination with placeholders for individual content. CIF supports placeholders for Content Fragments and Experience Fragments.
 
-Let's start with the Experience Fragment placeholder. Open a product template in the AEM editor. DnD the 'Commerce Experience Fragment" component on the template, then open the config dialog.
+Let's start with the Experience Fragment placeholder. Open a product template in the AEM editor. Drag and drop the **Commerce Experience Fragment** component on the template, then open the config dialog.
 
 ![pem placeholder](assets/pem-placeholder.png)
 
@@ -69,15 +69,15 @@ Open the component's dialog and enter a name for this placeholder. Placeholder n
 
 ![pem XF dialog](assets/pem-dialog-xf.png)
 
-Open the Experience Fragment you have associated to a product in the previous step. Open properties and switch to the commerce tab. Enter the same placeholder name under "Catalog placeholder location".
+Open the Experience Fragment you have associated to a product in the previous step. Open properties and switch to the commerce tab. Enter the same placeholder name under **Catalog placeholder location**.
 
 ![pem xf](assets/pem-xf.png)
 
-No DnD the 'Commerce Content Fragment' component on the template and open the config dialog
+Now drag and drop the **Commerce Content Fragment** component on the template and open the config dialog.
 
 ![pem CF dialog](assets/pem-dialog-cf.png)
 
-This dialog is re-using the Core Component Content Fragment dialog. Find more information under additional resources. The only difference is the "Link Element" property which configures the identifier field (product SKU or category UID) in the Content Fragment model.
+This dialog is re-using the Core Component Content Fragment dialog. Find more information under additional resources. The only difference is the **Link Element** property which configures the identifier field (product SKU or category UID) in the Content Fragment model.
 
 Preview now a product page that has either an associated Content Fragment and / or Experience Fragment. When AEM renders a page, it will do an lookup for every placeholder based on the type (Content or Experience Fragment), identifier and placeholder name for Experience Fragments. AEM uses a URL resolver to get the identifier (SKU for products, UID for categories). If an Experience or Content Fragment is returned, it will be rendered into the placeholder location, otherwise the placeholder gets ignored.
 
@@ -93,7 +93,7 @@ First, dnd a product detail component on the page. Then switch to the Assets sid
 
 ![pem product page](assets/pem-page-product.png)
 
-If you have created associated content for that product, switch in the Assets sidebar to "Associated Commerce Content". This tab shows you all AEM content that was associated to this product. This allows you now to  embellish the  pages with any associated content quickly. 
+If you have created associated content for that product, switch in the Assets sidebar to **Associated Commerce Content**. This tab shows you all AEM content that was associated to this product. This allows you now to  embellish the  pages with any associated content quickly. 
 
 ![pem enriched page](assets/pem-page-enriched.png)
 
