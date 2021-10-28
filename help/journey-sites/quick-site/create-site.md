@@ -39,14 +39,14 @@ This part of the journey applies to the AEM administrator.
 
 Site templates are a way to combine basic site content into a convenient and reusable package. Site templates generally contain base site content and structure as well as site styling information to get new site started quickly. The actual structure is as follows:
 
-* `files`: Folder with the UI kit XD file and possibly other files.
-* `previews`: Folder with screenshots of the site template.
-* `site`: Content package of the content that is copied for each site created from this template (templates, pages, etc.).
-* `theme`: Sources of the template theme to modify how the site looks (CSS, JS, etc.).
+* `files`: Folder with the UI kit, XD file, and possibly other files
+* `previews`: Folder with screenshots of the site template
+* `site`: Content package of the content that is copied for each site created from this template such as page templates, pages, etc.
+* `theme`: Sources of the template theme to modify how the site looks including CSS, JavaScript, etc.
 
 Templates are powerful because they are reusable so that your content authors can quickly create a site. And since you can have multiple templates available in your AEM installation, you have the flexibility to meet various business needs.
 
->[!TIP]
+>[!NOTE]
 >
 >The site template is not to be confused with page templates. Site templates described here define the overall structure of a site. A page template defines the structure and initial content of an individual page.
 
@@ -184,3 +184,4 @@ While it is recommended that you move on to the next part of the Quick Site Crea
 * [AEM Standard Site Template](https://github.com/adobe/aem-site-template-standard) - This is the GitHub repository of the AEM Standard Site template.
 * [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - This guide details how to manage pages of your AEM Site if you wish to customize it further after creating it from the template.
 * [How to Work with Package](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) - Packages enable the importing and exporting of repository content. This document explains how to work with packages in AEM 6.5, which also applies to AEMaaCS.
+* [Site Administration Documentation](/help/sites-cloud/administering/site-creation/create-site.md) - Check out the technical docs on site creation for more details on the Quick Site Creation tool's features.

@@ -68,3 +68,4 @@ You are now ready to get started on your Adobe Quick Site Creation journey.
 Check out these additional resources for more information on how AEM's powerful features work together.
 
 * [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - If you already have a firm understanding of AEM, you may want to directly consult the in-depth technical docs.
+* [Site Administration Documentation](/help/sites-cloud/administering/site-creation/create-site.md) - Check out the technical docs on site creation for more details on the Quick Site Creation tool's features.
