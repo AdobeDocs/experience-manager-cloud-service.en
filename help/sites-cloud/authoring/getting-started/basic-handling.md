@@ -457,7 +457,7 @@ These options accessible via the chevron next to the **Comment** field.
 
 ![Site rail](../assets/site-rail.png)
 
-Tap or click the **Download Theme Sources** to customize the [theme of your site.](help/sites-cloud/administering/site-creation/site-themes.md)
+Tap or click the **Download Theme Sources** to customize the [theme of your site.](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 >[!TIP]
 >
