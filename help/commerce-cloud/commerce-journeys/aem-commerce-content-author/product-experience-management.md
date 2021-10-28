@@ -41,7 +41,7 @@ Experience Fragments are a great way to create re-usable or individual product c
 
 ### Content Fragments {#content-fragments}
 
-Content Fragments are the best content type for any structured content. This can be used to augment external product data with additional marketing data or to create content in a headless way. The association of a Content Fragment with a product catalog object happens via the product or category reference types in the Content Fragment Model Editor. Simply dnd the right reference type on the model and configure the field. These types support single or multi selection.
+Content Fragments are the best content type for any structured content. This can be used to augment external product data with additional marketing data or to create content in a headless way. The association of a Content Fragment with a product catalog object happens via the product or category reference types in the Content Fragment Model Editor. Simply drag and drop the right reference type on the model and configure the field. These types support single or multi selection.
 
 ![pem cf model](assets/pem-cf-model.png)
 
@@ -89,7 +89,7 @@ It is also possible to make a regular AEM page shoppable by adding commerce comp
 
 ![pem empty page](assets/pem-page-empty.png)
 
-First, dnd a product detail component on the page. Then switch to the Assets sidebar, switch to products and select a product. DnD that product on the product component. This will show a regular product component on a content page.
+First, drag and drop a product detail component on the page. Then switch to the Assets sidebar, switch to products and select a product. Drag and drop that product on the product component. This will show a regular product component on a content page.
 
 ![pem product page](assets/pem-page-product.png)
 
