@@ -9,7 +9,7 @@ role: Admin
 
 Learn how AEM site templates can be used to predefine site structure and initial content and how themes are used to define site style to allow you to quickly create new sites.
 
-# Overview {#overview}
+## Overview {#overview}
 
 In order to allow AEM administrators to quickly create new sites adapted to business needs, AEM supports creating new sites by using site templates and site themes.
 
