@@ -19,7 +19,7 @@ This article builds on those fundamentals.
 
 This document helps you understand how to manage product catalog pages and templates.
 
-## The basic concept
+## The Basic Concept {#basic-concept}
 
 Venia storefront comes with a typical product catalog experience with navigation, and landing, category (PLP), & product detail pages (PDP).
 
@@ -37,9 +37,9 @@ Clicking on a product will open the product detail page.
 
 ![PLP](assets/catalog-pdp.png)
 
-## The templates
+## The Templates {#templates}
 
-### Generic templates
+### Generic templates {#generic}
 
 The generic Venia catalog template uses the Product List Core Component. This component displays the category image if available and products from the category.
 ![category template](assets/category-template.png)
@@ -47,11 +47,11 @@ The generic Venia catalog template uses the Product List Core Component. This co
 The generic Venia product template uses the Product Detail Core Component. This component displays product information for various product types and add-to-cart action.
 ![product template](assets/product-template.png)
 
-### Edit templates
+### Edit Templates {#edit-templates}
 
 Templates can be edited either by opening directly the template page or by switching into edit mode while browsing a product catalog page. Keep in mind that changing the page will change the template and not just the specific page of the product / category.
 
-### Category or product specific templates
+### Category or Product Specific Templates {#specific}
 
 CIF supports multiple templates in just a few clicks. To create another template, select the generic template from the respective category and create a new page using the "create" action.
 
