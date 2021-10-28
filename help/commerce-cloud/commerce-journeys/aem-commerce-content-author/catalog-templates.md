@@ -53,7 +53,7 @@ Templates can be edited either by opening directly the template page or by switc
 
 ### Category or Product Specific Templates {#specific}
 
-CIF supports multiple templates in just a few clicks. To create another template, select the generic template from the respective category and create a new page using the "create" action.
+CIF supports multiple templates in just a few clicks. To create another template, select the generic template from the respective category and create a new page using the **Create** action.
 
 ![create template page](assets/create-template-page.png)
 
@@ -77,15 +77,15 @@ Add any image on top of the page.
 
 ![create template update](assets/create-template-update.png)
 
-The template can be previewed with any category / product. Open "Page Information" and then select "View with category / product". Select the product / category from the picker to get a preview with this product / category. Select "Shop The Look" category to get a preview of the updated template.
+The template can be previewed with any category / product. Open **Page Information** and then select **View with category / product**. Select the product / category from the picker to get a preview with this product / category. Select **Shop The Look** category to get a preview of the updated template.
 
 ![create template ](assets/create-template-picker.png)
 
-Now we have to assign this template to the specific category. Open properties in the "Page Information" menu and switch to the commerce tab. Click on the folder icon to select the "Shop The Look" category from the category picker. It is possible to assign multiple categories to a template and also including sub-categories by enabling the checkbox.
+Now we have to assign this template to the specific category. Open properties in the **Page Information** menu and switch to the commerce tab. Click on the folder icon to select the **Shop The Look** category from the category picker. It is possible to assign multiple categories to a template and also including sub-categories by enabling the checkbox.
 
 ![create template associate](assets/create-template-associate.png)
 
-Go back to the main homepage and click on "Shop The Look" category to see the specific template. All the other categories still use the generic template.
+Go back to the main homepage and click on **Shop The Look** category to see the specific template. All the other categories still use the generic template.
 
 ![create template result](assets/create-template-result.png)
 
