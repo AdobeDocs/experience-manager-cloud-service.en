@@ -39,8 +39,9 @@ Products can be dropped on components that support product drops (example produc
 
 If product and category data is required in commerce components or AEM back-office dialogs, AEM authors can use pickers which are UI elements to comfortably search and select product catalog data.
 
-**Product picker**
-Clicking on the folder icon will open picker modal UI (Example product teaser)
+#### Product Picker
+
+Clicking on the folder icon will open picker modal UI (for example product teaser)
 ![product picker](assets/product-picker-open.png)
 
 Products can be found either by browsing through the catalog structure on the left or search. Full-text search will respect the selected category and limit the search results to this category.
@@ -50,8 +51,9 @@ Products with variations are marked with a folder icon that can be clicked to sh
 ![product picker variants](assets/product-picker-variants.png)
 ![product picker variants open](assets/product-picker-variants-open.png)
 
-**Category picker**
-Works like a product picker. Clicking on the folder icon will open picker modal UI (Example category carousel)
+#### Category Picker
+
+Works like a product picker. Clicking on the folder icon will open picker modal UI (for example category carousel)
 ![category picker](assets/category-picker-open.png)
 
 Browse the catalog structure on the left and select the category.
@@ -73,7 +75,7 @@ The product catalog shows per default all 1st level categories with all products
 You can open the product properties by clicking on the property icon. The icon appears by hovering over a product tile.
 ![cockpit product properties](assets/cockpit-properties.png)
 
-All the product properties are read-only because the data gets loaded in real time from the connected backend. Changing product properties must be done in the backend system which is the system of record. The tab 'Variants' will only appear if the product has variations. Clicking on the tab will display all variations with its attributes.
+All the product properties are read-only because the data gets loaded in real time from the connected backend. Changing product properties must be done in the backend system which is the system of record. The tab **Variants** will only appear if the product has variations. Clicking on the tab will display all variations with its attributes.
 ![cockpit product variants](assets/cockpit-properties-variants.png)
 
 The remaining tabs show all AEM content that is associated with the product. We will discuss these tabs in one of the next modules.
@@ -83,7 +85,7 @@ The remaining tabs show all AEM content that is associated with the product. We 
 Using Omnisearch is an easy way to find AEM content using full-text search. CIF extends Omnisearch with full-text search of product catalogs with its associated AEM content.
 ![commerce menu item](assets/omnisearch.png)
 
-Omnisearch will run a full-text search in the commerce backend to find all related products. The result is listed under "View All Products". Omnisearch will also search AEM for content that is associated to the searched product. The results will be listed under the respective AEM categories. In this example, one Content Fragment is related to the product.
+Omnisearch will run a full-text search in the commerce backend to find all related products. The result is listed under **View All Products**. Omnisearch will also search AEM for content that is associated to the searched product. The results will be listed under the respective AEM categories. In this example, one Content Fragment is related to the product.
 
 ## What's Next {#what-is-next}
 
