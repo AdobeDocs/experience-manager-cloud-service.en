@@ -17,7 +17,7 @@ To test connectivity to the target AEM as a Cloud Service environment, issue the
 
 ```
 
- curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
+curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
 
 ```
 
