@@ -97,7 +97,7 @@ Follow the steps below to view reports from the trendline option:
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >The report displayed is always the report that has the latest Report Date.
+   >The report displayed in the **Trendline Report screen** is always the one with the recent report date.
 
 1. Click on **View Trendline**, as shown in the figure below.
 
@@ -109,6 +109,7 @@ Follow the steps below to view reports from the trendline option:
 
    >[!NOTE]
    >The Trendline Report displays the results from the historical BPA reports in a graphical representation. 
+   >
    >You will see two graphs displaying the trend of the: 
    >1. **Report Findings Trend**  
    >1. **Custom Components and Template Trend**
