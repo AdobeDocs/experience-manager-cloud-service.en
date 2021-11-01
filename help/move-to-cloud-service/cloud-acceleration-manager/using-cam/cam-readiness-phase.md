@@ -117,7 +117,7 @@ Follow the steps below to view reports from the trendline option:
    >You can add or change the graphical view via the drop-down, as shown in the figure below:
    >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
-#### Deleting the Trendline Report {#delete-trendline}
+#### Deleting the Report {#delete-trendline}
 
 Follow the steps below to delete a report from the Trendline view:
 
