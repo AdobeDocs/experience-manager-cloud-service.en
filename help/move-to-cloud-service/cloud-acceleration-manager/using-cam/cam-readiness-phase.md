@@ -110,8 +110,8 @@ Follow the steps below to view reports from the trendline option:
    >[!NOTE]
    >The Trendline Report displays the results from the historical BPA reports in a graphical representation. 
    >You will see two graphs displaying the trend of the: 
-   >1. Report Findings Trend  
-   >1. Custom Components and Templates Trend
+   >1. **Report Findings Trend**  
+   >1. **Custom Components and Template Trend**
    >
    >You can add or change the graphical view via the drop-down, as shown in the figure below:
    >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
