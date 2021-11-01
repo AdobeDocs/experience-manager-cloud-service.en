@@ -23,14 +23,30 @@ To significantly speed up the extraction and ingestion phases of the content tra
 
 Follow the section below to understand the important considerations before starting: 
 
-* Source AEM version needs to be 6.3 - 6.5
+* Source AEM version needs to be 6.3 - 6.5.
+
 * Source AEM's data store is configured to use Amazon S3 or Azure Blob Storage. For more details, refer [Configuring node stores and data stores in AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en).
-* The entire data store will be copied during the extraction. Since there is a cost associated with transferring data out of both Amazon S3 and Azure Blob Storage, the transfer cost will be relative to the total amount of data in the storage container (whether referenced in AEM, or not). Refer to [Amazon S3](https://aws.amazon.com/s3/pricing/) and [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) for more details. 
+
 * Each migration set will copy the entire data store, so only a single migration set should be used.
+
 * You will need access to install [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) on the instance (or VM) running the source AEM instance.
+
+* Data Store Garbage Collection has been run within the previous 7 days on the source. For more details, refer to [Data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection). 
+
+
+### Additional Considerations if source AEM instance is configured to use an Amazon S3 or Azure Blob Storage Data Store {#additional-considerations-amazons3-azure}
+
+* Since there is a cost associated with transferring data out of both Amazon S3 and Azure Blob Storage, the transfer cost will be relative to the total amount of data in the storage container (whether referenced in AEM, or not). Refer to [Amazon S3](https://aws.amazon.com/s3/pricing/) and [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) for more details.
+
 * You will need either an access key & secret key pair for the source Amazon S3 bucket, or a SAS URI for the source Azure Blob Storage container (read only access is fine).
-* Data Store Garbage Collection has been run within the previous 7 days on the source. For more details, refer to [Data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection).
-* The majority of the data on the source instance will be included in the migration.
+
+### Additional considerations if source AEM instance is configured to use File Data Store {#additional-considerations-aem-instance-filedatastore}
+
+* The local system must have free space strictly greater than 1/256 size of the source datastore. For example, if the size of the datastore is 3 TB, free space greater than 11.72 GB must exist in the `crx-quickstart/cloud-migration` folder on the source for AzCopy to work. At a minimum, the source system should have 1 GB of free space. Free space can be obtained by using `df -h` command on Linux instances, and dir command in the Windows instances.  
+
+* Each time extraction is run with AzCopy enabled, the entire file datastore is flattened and copied to the cloud migration container. If your migration set is significantly smaller than the size of your datastore, then AzCopy extraction is not the optimal approach.
+
+* Once AzCopy has been used to copy over the datastore, disable it for delta or top-up extractions.
 
 ## Setting up to Use AzCopy as a Pre-Copy Step {#setting-up-pre-copy-step}
 
@@ -170,6 +186,12 @@ Final Job Status: CompletedWithSkipped
  
 *************** Completed AzCopy pre-copy phase ***************
 ```
+
+## Disabling AzCopy {#disable-azcopy}
+
+To disable AzCopy, rename or delete the `azcopy.config` file. 
+
+For example, azcopy extraction can be disabled with: `mv /mnt/crx/author/crx-quickstart/cloud-migration/azcopy.config /mnt/crx/author/crx-quickstart/cloud-migration/noazcopy.config`.
 
 ## What's Next {#whats-next}
 
