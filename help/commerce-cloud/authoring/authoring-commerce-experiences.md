@@ -21,29 +21,29 @@ This picker offers browsing through the catalog structure or full-text search to
 
 Clicking on the parent category will take the author back to the product level.
 
-![Product picker](assets/authoring/product-picker-variation.png)
+![Product picker](../assets/authoring/product-picker-variation.png)
 
 **Example product teaser**
 
-![Teaser component without selection](assets/authoring/teaser_component_without_selection.png)
+![Teaser component without selection](../assets/authoring/teaser_component_without_selection.png)
 
 The configuration dialog of this component requires a product. CIF uses the SKU as the product identifier. Authors can either enter the sku by hand or click on the folder icon to open the product picker. After selecting and closing the picker, the component dialog shows the name of the selected product
 
-![Teaser component with selection](assets/authoring/teaser_component_with_selection.png)
+![Teaser component with selection](../assets/authoring/teaser_component_with_selection.png)
 
 ### Category picker
 
 This picker offers browsing through the catalog structure to find the category.
 
-![Category picker](assets/authoring/category-picker.png)
+![Category picker](../assets/authoring/category-picker.png)
 
 **Example category carousel**
 
-![Carousel component without selection](assets/authoring/carousel_component_without_selection.png)
+![Carousel component without selection](../assets/authoring/carousel_component_without_selection.png)
 
 The configuration dialog of this component requires 1 : n categories. CIF uses the UID / ID as the cateogyr identifier. Authors can either enter the UID by hand or click on the folder icon to open the category picker. After selecting and closing the picker, the component dialog shows the name of the selected category.
 
-![Carousel component with selection](assets/authoring/carousel_component_with_selection.png)
+![Carousel component with selection](../assets/authoring/carousel_component_with_selection.png)
 
 ## Universal editor {#universal-editor}
 
