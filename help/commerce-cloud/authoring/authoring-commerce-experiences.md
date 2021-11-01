@@ -57,6 +57,16 @@ The 'Assets' tab in the editor's Side panel offers access to product data by sel
 
 Analog to assets, products can be dnd on a page (Which creates a product teaser component as default) or components (Currently supported are product teaser and product carousel).
 
+### Adding links to product or category pages in textfields using RTE (Rich Text Editor)
+
+CIF product catalog pages are virtual pages that get rendered on the fly. Thus, embedding hyperlinks like for regular AEM pages is not possible. CIF adds a new action "Commerce Links" to the RTE. This action works exactly like the regular "Hyperlink" action, but allows authors to select either a product or category using the pickers. 
+
+![RTE](assets/authoring/RTE.png)
+
+    >[!NOTE]
+    >
+    > If both category and product gets selected, the product will be taken.
+
 ### Accessing associated product content
 
 If the Universal Editor recognizes 1:n products on a page, the side panel will automatically show the tab "Associated Commerce Content". This tab allows authors to quickly access AEM content that was tagged with the product (See [enrich product data with associated AEM content](./enrich-product-associated-content.md) for more information). This tab offers dropdowns to filter for content type and specific products if multiple products are on the page. Using the content works exactly like using content from the "Assets" tab.
