@@ -79,6 +79,67 @@ Follow the steps below:
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
+### Using View Trendline {#trendline-view-cam}
+
+When you upload more than one Best Practtices Analyzer (BPA) report in a Project, you can select the **View Trendline** option to view and compare results from the old BPA reports.
+
+Follow the steps below to view trendline:
+
+>[!NOTE]
+>When you upload more than one BPA report in a Project, you will see the icon **...**.
+
+1. Navigate to your project and click on **Review** from the **Best Practices Analysis** card in the **Readiness** phase.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Click on the **...** icon to display the drop-down. 
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+   >[!IMPORTANT]
+   >The report displayed is always the report that has the latest Report Date.
+
+1. Click on **View Trendline**, as shown in the figure below.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Clicking on **View Trendline** opens the trendline view of the report, as shown in the figure below.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3.png)
+
+   >[!NOTE]
+   >The Trendline Report displays the results from the historical BPA reports in a graphical representation. 
+   >You will see two graphs displaying the trend of the: 
+   >1. Report Findings Trend  
+   >1. Custom Components and Templates Trend
+   >You can add or change the graphical view via the drop down as shown below.
+   >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+
+#### Deleting the Trendline Report {#delete-trendline}
+
+Follow the steps below to delete a report from the Trendline view:
+
+1. Navigate to your project and click on **Review** from the **Best Practices Analysis** card in the **Readiness** phase.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Click on the **...** icon to display the drop-down. 
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. Click on **View Trendline**, as shown in the figure below.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Click on the delete icon from the **Trendline Report** screen.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. Click on **Delete** to confirm the deletion.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
+
+
 ### Reviewing Best Practices Analysis Report {#analysis-report}
 
 Explore the following cards available in Best Practices Analysis Report page:
