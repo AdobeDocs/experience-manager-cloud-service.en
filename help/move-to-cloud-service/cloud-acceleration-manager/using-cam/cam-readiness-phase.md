@@ -97,7 +97,7 @@ Follow the steps below to view reports from the trendline option:
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >The report displayed in the **Trendline Report screen** is always the one with the recent report date.
+   >The report displayed is always the report that has the latest report date.
 
 1. Click on **View Trendline**, as shown in the figure below.
 
@@ -116,33 +116,6 @@ Follow the steps below to view reports from the trendline option:
    >
    >You can add or change the graphical view via the drop-down, as shown in the figure below:
    >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
-
-#### Deleting the Report {#delete-trendline}
-
-Follow the steps below to delete a report from the Trendline view:
-
->[!IMPORTANT]
->A report can be deleted only when more than one report has been uploaded in a project. 
-
-1. Navigate to your project and click on **Review** from the **Best Practices Analysis** card in the **Readiness** phase.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
-
-1. Click on the **...** icon to display the drop-down. 
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
-
-1. Click on **View Trendline**, as shown in the figure below.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
-
-1. Click on the delete icon from the **Trendline Report** screen.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
-
-1. Click on **Delete** to confirm the deletion.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 
 ### Reviewing Best Practices Analysis Report {#analysis-report}
@@ -213,6 +186,33 @@ Follow this section to explore the Planning and Setup activity card.
 1. A content carousel displays all the relevant information for this phase of the migration journey.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+
+### Deleting a Best Practices Analysis Report {#delete-trendline}
+
+Follow the steps below to delete a report from the Trendline view:
+
+>[!IMPORTANT]
+>A report can be deleted only when more than one report has been uploaded in a project. 
+
+1. Navigate to your project and click on **Review** from the **Best Practices Analysis** card in the **Readiness** phase.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Click on the **...** icon to display the drop-down. 
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. Click on **View Trendline**, as shown in the figure below.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Click on the delete icon from the **Trendline Report** screen.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. Click on **Delete** to confirm the deletion.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 ## What's Next {#whats-next}
 
