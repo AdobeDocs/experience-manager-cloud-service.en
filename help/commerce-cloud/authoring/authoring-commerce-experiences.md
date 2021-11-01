@@ -49,7 +49,7 @@ The configuration dialog of this component requires 1 : n categories. CIF uses t
 
 The Universal Editor is extended with capabilities to access the real time product data and associated product content.
 
-### Accessing product data {#Access-product-data}
+### Accessing product data {#access-product-data}
 
 The 'Assets' tab in the editor's Side panel offers access to product data by selecting the type 'Products'. The data is fetched live from the configured commerce endpoint. The filter is a full-text serach on the commerce endpoint to find specific products.
 
@@ -57,7 +57,7 @@ The 'Assets' tab in the editor's Side panel offers access to product data by sel
 
 Analog to assets, products can be dnd on a page (Which creates a product teaser component as default) or components (Currently supported are product teaser and product carousel).
 
-### Adding links to product or category pages in textfields using RTE (Rich Text Editor)  {#RTE}
+### Adding links to product or category pages in textfields using RTE (Rich Text Editor)  {#rte}
 
 CIF product catalog pages are virtual pages that get rendered on the fly. Thus, embedding hyperlinks like for regular AEM pages is not possible. CIF adds a new action "Commerce Links" to the RTE. This action works exactly like the regular "Hyperlink" action, but allows authors to select either a product or category using the pickers. 
 
