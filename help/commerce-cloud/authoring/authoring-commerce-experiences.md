@@ -13,7 +13,7 @@ The CIF add-on extends AEM authoring with commerce specific capabilties. This en
 
 Product and category pickers are modal UI dialogs that offer a comfortable way for AEM authors to find and select products or categories when needed. Core Components, content association and product templates are the typical areas with configurations that require product catalog data. Pickers support various configuration options, such as multi-selection, variation-selection, and pre-selection of values.
 
-### Product picker
+### Product picker {#product-picker}
 
 This picker offers browsing through the catalog structure or full-text search to find the product. Products with variation offer a folder icon in the columne 'Type'. Clicking on the folder icon opens the variations of the selected product.
 
@@ -31,7 +31,7 @@ The configuration dialog of this component requires a product. CIF uses the SKU 
 
 ![Teaser component with selection](../assets/authoring/teaser_component_with_selection.png)
 
-### Category picker
+### Category picker {#category-picker}
 
 This picker offers browsing through the catalog structure to find the category.
 
@@ -49,7 +49,7 @@ The configuration dialog of this component requires 1 : n categories. CIF uses t
 
 The Universal Editor is extended with capabilities to access the real time product data and associated product content.
 
-### Accessing product data
+### Accessing product data {#Access-product-data}
 
 The 'Assets' tab in the editor's Side panel offers access to product data by selecting the type 'Products'. The data is fetched live from the configured commerce endpoint. The filter is a full-text serach on the commerce endpoint to find specific products.
 
@@ -57,7 +57,7 @@ The 'Assets' tab in the editor's Side panel offers access to product data by sel
 
 Analog to assets, products can be dnd on a page (Which creates a product teaser component as default) or components (Currently supported are product teaser and product carousel).
 
-### Adding links to product or category pages in textfields using RTE (Rich Text Editor)
+### Adding links to product or category pages in textfields using RTE (Rich Text Editor)  {#RTE}
 
 CIF product catalog pages are virtual pages that get rendered on the fly. Thus, embedding hyperlinks like for regular AEM pages is not possible. CIF adds a new action "Commerce Links" to the RTE. This action works exactly like the regular "Hyperlink" action, but allows authors to select either a product or category using the pickers. 
 
@@ -67,13 +67,13 @@ CIF product catalog pages are virtual pages that get rendered on the fly. Thus, 
     >
     > If both category and product gets selected, the product will be taken.
 
-### Accessing associated product content
+### Accessing associated product content {#associated-content}
 
 If the Universal Editor recognizes 1:n products on a page, the side panel will automatically show the tab "Associated Commerce Content". This tab allows authors to quickly access AEM content that was tagged with the product (See [enrich product data with associated AEM content](./enrich-product-associated-content.md) for more information). This tab offers dropdowns to filter for content type and specific products if multiple products are on the page. Using the content works exactly like using content from the "Assets" tab.
 
 ![Product data side panel](../assets/authoring/associated-commerce-content-tab.png)
 
-### Preview staged product data
+### Preview staged product data {#staged-data}
 
 The Timewarp mode in the editor allows authors to preview and browse an AEM experience with staged product catalog data based on the Timewarp date.
 
