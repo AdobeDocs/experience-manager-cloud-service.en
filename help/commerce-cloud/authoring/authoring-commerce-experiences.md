@@ -17,7 +17,7 @@ Product and category pickers are modal UI dialogs that offer a comfortable way f
 
 This picker offers browsing through the catalog structure or full-text search to find the product. Products with variation offer a folder icon in the columne 'Type'. Clicking on the folder icon opens the variations of the selected product.
 
-![Product picker](assets/authoring/product-picker.png)
+![Product picker](../assets/authoring/product-picker.png)
 
 Clicking on the parent category will take the author back to the product level.
 
