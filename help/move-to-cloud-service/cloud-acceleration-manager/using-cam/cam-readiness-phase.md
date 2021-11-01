@@ -86,7 +86,7 @@ When you upload more than one Best Practices Analyzer (BPA) report in a Project,
 Follow the steps below to view reports from the trendline option:
 
 >[!NOTE]
->When you upload more than one BPA report in a Project, you will see the icon **...**.
+>When you upload more than one BPA report in a Project, you will see the **...** icon.
 
 1. Navigate to your project and click on **Review** from the **Best Practices Analysis** card in the **Readiness** phase.
 
