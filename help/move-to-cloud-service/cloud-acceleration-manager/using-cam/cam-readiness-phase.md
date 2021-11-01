@@ -117,9 +117,12 @@ Follow the steps below to view reports from the trendline option:
    >You can add or change the graphical view via the drop-down, as shown in the figure below:
    >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
-#### Deleting the Trendline Report {#delete-trendline}
+#### Deleting the Report {#delete-trendline}
 
 Follow the steps below to delete a report from the Trendline view:
+
+>[!IMPORTANT]
+>A report can be deleted only when more than one report has been uploaded in a project. 
 
 1. Navigate to your project and click on **Review** from the **Best Practices Analysis** card in the **Readiness** phase.
 
