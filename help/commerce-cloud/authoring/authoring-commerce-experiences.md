@@ -59,13 +59,15 @@ Analog to assets, products can be dnd on a page (Which creates a product teaser 
 
 ### Adding links to product or category pages in textfields using RTE (Rich Text Editor)  {#rte}
 
-CIF product catalog pages are virtual pages that get rendered on the fly. Thus, embedding hyperlinks like for regular AEM pages is not possible. CIF adds a new action "Commerce Links" to the RTE. This action works exactly like the regular "Hyperlink" action, but allows authors to select either a product or category using the pickers. 
+CIF product catalog pages are virtual pages that get rendered on the fly. Thus, embedding hyperlinks like for regular AEM pages is not possible. CIF adds a new action "Commerce Links" to the RTE. This action works exactly like the regular "Hyperlink" action, but allows authors to select either a product or category using the pickers.
 
 ![RTE](../assets/authoring/RTE.png)
 
     >[!NOTE]
     >
     > If both category and product gets selected, the product will be taken.
+
+This creates a placeholder link that gets replaced with a real link when the page gets rendered.
 
 ### Accessing associated product content {#associated-content}
 
