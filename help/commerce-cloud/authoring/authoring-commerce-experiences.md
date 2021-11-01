@@ -73,6 +73,16 @@ If the Universal Editor recognizes 1:n products on a page, the side panel will a
 
 ![Product data side panel](../assets/authoring/associated-commerce-content-tab.png)
 
+### Preview staged product data
+
+The Timewarp mode in the editor allows authors to preview and browse an AEM experience with staged product catalog data based on the Timewarp date.
+
+![Timewarp](../assets/authoring/timewarp.png)
+
+Components will show a visual indicator if the date used is staged.
+
+![Staged indicator](../assets/authoring/staged-indicator.png)
+
 ## Omnisearch {#omnisearch}
 
 Using Omnisearch is an easy way for practioners to find AEM content and product catalog data using full-text search. Omnisearch will run full-text search in AEM and the commerce backend to find product catalog objects in the commerce backend and AEM content. AEM results also include content that was tagged with product / category data.
