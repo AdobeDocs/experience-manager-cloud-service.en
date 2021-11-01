@@ -81,9 +81,9 @@ Follow the steps below:
 
 ### Using View Trendline {#trendline-view-cam}
 
-When you upload more than one Best Practtices Analyzer (BPA) report in a Project, you can select the **View Trendline** option to view and compare results from the old BPA reports.
+When you upload more than one Best Practices Analyzer (BPA) report in a Project, you can select the **View Trendline** option to view and compare results from the old BPA reports.
 
-Follow the steps below to view trendline:
+Follow the steps below to view reports from the trendline option:
 
 >[!NOTE]
 >When you upload more than one BPA report in a Project, you will see the icon **...**.
@@ -112,7 +112,8 @@ Follow the steps below to view trendline:
    >You will see two graphs displaying the trend of the: 
    >1. Report Findings Trend  
    >1. Custom Components and Templates Trend
-   >You can add or change the graphical view via the drop down as shown below.
+   >
+   >You can add or change the graphical view via the drop-down, as shown in the figure below:
    >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
 #### Deleting the Trendline Report {#delete-trendline}
