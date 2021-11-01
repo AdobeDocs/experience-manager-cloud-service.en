@@ -1,25 +1,19 @@
 ---
-title: Working with Packages
-description: Learn the basics of working with packages in AEM.
+title: Package Manager
+description: Learn the basics of AE; package management with Package Manager.
 feature: Administering
 role: Admin
 ---
 
-# Working with Packages {#working-with-packages}
+# Package Manager {#working-with-packages}
 
 Packages enable the importing and exporting of repository content. You can use packages to install new content, transfer content between instances, and back up repository content.
 
-Packages can be accessed from the following pages:
-
-* [Package Manager](#package-manager) - Package Manager is a simple interface which you use to manage the packages in your local AEM development instance.
-
-* [Software Distribution](#software-distribution) - Software Distribution is a centralized service providing packages for use on the local development AEM SDK.
-
-You can transfer packages between Package Manager, Software Distribution, and your file system.
+You can transfer packages between Package Manager and your local file system for development purposes.
 
 ## What are Packages? {#what-are-packages}
 
-A package is a zip file holding repository content in the form of a file-system serialization (called "vault" serialization). This provides an easy-to-use and easy-to-edit representation of files and folders.
+A package is a zip file holding repository content in the form of a file-system serialization, called vault serialization. This provides an easy-to-use and easy-to-edit representation of files and folders.
 
 Packages include content, both page content and project-related content, selected by using filters.
 
@@ -29,16 +23,19 @@ A package also contains vault meta information, including the filter definitions
 >
 >Packages represent the current version of the content at the time the package is built. They do not include any previous versions of the content that AEM keeps in the repository.
 
+## Packages in AEM as a Cloud Service {#aemaacs-packages}
+
+Content packages written for AEM as a Cloud Service applications must have a clean separation between immutable and mutable content. Therefore Package Manager can only be used to manage packages containing content. Any code must be deployed through Cloud Manager.
+
 >[!NOTE]
 >
 >Packages can only contain content. Any functionality (e.g. content stored under `/apps`) must be [deployed using your CI/CD pipeline in Cloud Manager.](/help/implementing/cloud-manager/deploy-code.md)
 
+For more details on how to manage packages for AEMaaCS, please review the document [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md) in the deploying user guide.
+
 ## Package Manager {#package-manager}
 
-Package Manager manages the packages on your local AEM developer installation. After you have [assigned the necessary permissions](#permissions-needed-for-using-the-package-manager) you can use Package Manager for various actions, including configuring, building, downloading, and installing your packages. The main options are:
-
-* [Package Settings](#package-settings)
-* [Package Filters](#package-filters)
+Package Manager manages the packages on your AEM installation. After you have [assigned the necessary permissions](#permissions-needed-for-using-the-package-manager) you can use Package Manager for various actions, including configuring, building, downloading, and installing your packages.
 
 ### Required Permissions {#required-permissions}
 
@@ -63,38 +60,41 @@ You can access Package Manager in three ways:
 
 ### Package Manager UI {#ui}
 
-Package Manager is divided into three main functional areas:
+Package Manager is divided into four main functional areas:
 
-**Left Navigation Panel** - This panel allows you to filter and sort the list of packages.
-**Package List** - This is the list of packages on your instance filtered and sorted per selections in the left navigation panel.
-**Activity Log** - This window is minimized at first and will expand to detail the activity of Package Manager such as when a package is built or installed.
+* **Left Navigation Panel** - This panel allows you to filter and sort the list of packages.
+* **Package List** - This is the list of packages on your instance filtered and sorted per selections in the Left Navigation Panel.
+* **Activity Log** - This panel is minimized at first and will expand to detail the activity of Package Manager such as when a package is built or installed. There are additional buttons in the Activity Log tab to:
+  * **Clear Log**
+  * **Minimize/Maximize**
+* **Toolbar** - The toolbar contains refresh buttons for the Left Navigation Panel and Package list as well as buttons for searching, creating, and uploading packages.
 
 ![Package Manager UI](assets/package-manager-ui.png)
 
-Clicking an option in the navigation panel will immediately filter the package list.
+Clicking an option in the Left Navigation Panel will immediately filter the Package List.
 
-Clicking a package name will expand the entry in the list to show more detail about the package.
+Clicking a package name will expand the entry in the Package List to show more detail about the package.
 
 ![Expanded package details](assets/package-expand.png)
 
 There are number of actions that can be taken on a package via the toolbar buttons available when the package detail is expanded.
 
-* Edit
-* Build
-* Reinstall
-* Download
+* [Edit](#edit-package)
+* [Build](#building-a-package)
+* [Reinstall](#reinstalling-packages)
+* [Download](#downloading-packages-to-your-file-system)
 
 Further actions are available beneath the **More** button.
 
-* Delete
-* Coverage
-* Contents
-* Rewrap
-* Other Versions
-* Uninstall
-* Test Install
-* Validate
-* Replicate
+* [Delete](#deleting-packages)
+* [Coverage](#package-coverage)
+* [Contents](#viewing-package-contents-and-testing-installation)
+* [Rewrap](#rewrapping-a-package)
+* [Other Versions](#other-versions)
+* [Uninstall](#uninstalling-packages)
+* [Test Install](#viewing-package-contents-and-testing-installation)
+* [Validate](#validating-packages)
+* [Replicate](#replicating-packages)
 
 ### Package Status {#package-status}
 
@@ -102,9 +102,9 @@ Each entry in the package list has a status indicator to let you know at a glanc
 
 ![Package status](assets/package-status.png)
 
-If the package has been changed or never build, the status will be presented as a link to take quick action to rebuild or install the package.
+If the package has been changed or never built, the status will be presented as a link to take quick action to rebuild or install the package.
 
-## Package Contents {#package-contents}
+## Package Settings {#package-settings}
 
 A package is essentially a set of filters and the repository data based on those filters. Using the Package Manager UI, you can click on a package and then the **Edit** button to view the details of a package which include the following settings.
 
@@ -181,11 +181,11 @@ Package filters are most often defined when you first [create the package](#crea
 |URL|URL of the provider|`https://wknd.site`|
 |Link|Package-specific link to a provider page|`https://wknd.site/package/`|
 |Requires|Defines if there are any restrictions when installing the package|**Admin** - The package must only be installed with admin privileges<br>**Restart** - AEM must be restarted after installing the package|
-|AC Handling|Specifies how the access control information defined in the package is handled when the package is imported|**Ignore** - preserve ACLs in the repository<br>**Overwrite** - overwrite ACLs in the repository<br>**Merge** - merge both sets of ACLs<br>**MergePreserve** - merge access control in the content with the one provided with the package by adding the access control entries of principals not present in the content<br>**Clear** - clear ACLs|
+|AC Handling|Specifies how the access control information defined in the package is handled when the package is imported|**Ignore** - Preserve ACLs in the repository<br>**Overwrite** - Overwrite ACLs in the repository<br>**Merge** - Merge both sets of ACLs<br>**MergePreserve** - Merge access control in the content with the one provided with the package by adding the access control entries of principals not present in the content<br>**Clear** - Clear ACLs|
 
 ### Package Screenshots {#package-screenshots}
 
-You can attach screenshots to your package to provide a visual representation of how the content appears. Multiple screenshots are allowed.
+You can attach multiple screenshots to your package to provide a visual representation of how the content appears.
 
 ![Screenshots tab](assets/screenshots.png)
 
@@ -195,7 +195,8 @@ There are a number of actions that can be taken on a package.
 
 ### Creating a Package {#creating-a-new-package}
 
-1. Access Package Manager.
+1. [Access Package Manager.](#accessing)
+
 1. Click **Create Package**.
 
    >[!TIP]
@@ -220,8 +221,6 @@ There are a number of actions that can be taken on a package.
 
 1. Click **Edit** to define the [package contents.](#package-contents) Click **OK** after you are finished editing the settings.
 
-1. To confirm what the package will hold you can use **Preview**. This performs a dry run of the build process and lists everything that will be added to the package when it is actually built.
-
 1. You can now [Build](#building-a-package) your package.
 
 It is not compulsory to immediately build the package after creating it. An unbuilt package contains no content and consists of only the filter data and other metadata of the package.
@@ -230,7 +229,7 @@ It is not compulsory to immediately build the package after creating it. An unbu
 
 A package is often built at the same time as you [create the package](#creating-a-new-package), but you can return at a later point to either build, or rebuild the package. This can be useful if the content within the repository has changed.
 
-1. Access Package Manager.
+1. [Access Package Manager.](#accessing)
 
 1. Open the package details from the package list by clicking on the package name.
 
@@ -238,23 +237,47 @@ A package is often built at the same time as you [create the package](#creating-
 
 1. Click **OK**. AEM will build the package, listing all content added to the package as it does so in the activity list. When complete AEM displays a confirmation that the package was built and (when you close the dialog) updates the package list information.
 
+### Editing a Package {#edit-package}
+
+Once a package is uploaded to AEM, you can modify its settings.
+
+1. [Access Package Manager.](#accessing)
+
+1. Open the package details from the package list by clicking on the package name.
+
+1. Click **Edit** and update the **[Package Settings](#package-settings)** as required.
+
+1. Click **OK** to save.
+
 ### Rewrapping a Package {#rewrapping-a-package}
 
 Once a package has been built it can be rewrapped. Rewrapping changes the package information without such as thumbnail, description, etc., without changing the package content.
 
-1. Access Package Manager.
+1. [Access Package Manager.](#accessing)
 
 1. Open the package details from the package list by clicking on the package name.
 
-1. Click **Edit** and update the **[Package Settings](#package-settings)** as required. Click **OK** to save.
+1. Click **Edit** and update the **[Package Settings](#package-settings)** as required. 
+
+1. Click **OK** to save.
 
 1. Click **More** -&gt; **Rewrap** and a dialog will ask for confirmation.
+
+### Viewing Other Package Versions {#other-versions}
+
+Because every version of a package appears in the list as any other package, Package Manager can find other versions of a selected package.
+
+1. [Access Package Manager.](#accessing)
+
+1. Open the package details from the package list by clicking on the package name.
+
+1. Click **More** -&gt; **Other Versions** and a dialog opens with a list of other versions of the same package with status information.
 
 ### Viewing Package Contents and Testing Installation {#viewing-package-contents-and-testing-installation}
 
 After a package has been built you can view the contents.
 
-1. Access Package Manager.
+1. [Access Package Manager.](#accessing)
 
 1. Open the package details from the package list by clicking on the package name.
 
@@ -268,7 +291,7 @@ After a package has been built you can view the contents.
 
 ### Downloading Packages to Your File System {#downloading-packages-to-your-file-system}
 
-1. Access Package Manager.
+1. [Access Package Manager.](#accessing)
 
 1. Open the package details from the package list by clicking on the package name.
 
@@ -278,7 +301,7 @@ After a package has been built you can view the contents.
 
 ### Uploading Packages from Your File System {#uploading-packages-from-your-file-system}
 
-1. Access Package Manager.
+1. [Access Package Manager.](#accessing)
 
 1. Select the group folder into which you want the package to be uploaded.
 
@@ -308,6 +331,10 @@ Package Manager can perform the following validations:
 * [ACLs](#acls)
 
 ##### Validate OSGi Package Imports {#osgi-package-imports}
+
+>[!NOTE]
+>
+>Because packages can not be used to deploy code in AEMaaCS, this validation is unnecessary. 
 
 **What's Checked**
 
@@ -382,7 +409,7 @@ Validation should always occur after uploading the package but before installing
 
 ##### Package Validation Via Package Manager {#via-package-manager}
 
-1. Access Package Manager.
+1. [Access Package Manager.](#accessing)
 
 1. Open the package details from the package list by clicking on the package name.
 
@@ -416,6 +443,18 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 When validating via POST request, the response is sent back as a JSON object.
 
+### Viewing Package Coverage {#package-coverage}
+
+Packages are defined by their filters. If you [upload a package](#uploading-packages-from-your-file-system) to your AEM instance, you can have Package Manager apply those filters to your existing repository content to show what content of the repository is covered by the filter definition of the package. This can be useful information before [installing a package.](#installing-packages)
+
+1. [Access Package Manager.](#accessing)
+
+1. Open the package details from the package list by clicking on the package name.
+
+1. Click **More** -&gt; **Coverage**.
+
+1. The coverage details are listed in the Activity Log.
+
 ### Installing Packages {#installing-packages}
 
 Uploading a package only adds the package content to the repository, but it is not accessible. You must install the uploaded package in order to use the package's content.
@@ -424,9 +463,13 @@ Uploading a package only adds the package content to the repository, but it is n
 >
 >Installing a package can overwrite or delete existing content. Only upload a package if you are sure that it does not delete or overwrite content that you need.
 
+>[!TIP]
+>
+>It is a good idea to [check the package's coverage](#package-coverage) before installing it.
+
 Immediately prior to installation of your package, a snapshot package is created to contain the content that will be overwritten. This snapshot will be re-installed if you uninstall your package.
 
-1. Access Package Manager.
+1. [Access Package Manager.](#accessing)
 
 1. Open the package details of the package you wish to install from the package list by clicking on the package name.
 
@@ -446,6 +489,10 @@ Immediately prior to installation of your package, a snapshot package is created
 
 Once the installation is complete and successful, the package list is updated and the word **Installed** appears in the package status.
 
+### Reinstalling Packages {#reinstalling-packages}
+
+Reinstalling packages performs the same steps on an already installed package that are processed when [initially installing the package.](#installing-packages)
+
 ### File System Based Upload and Installation {#file-system-based-upload-and-installation}
 
 You can forego the Package Manager altogether by using the filesystem of AEM on your local development machine so that packages are uploaded and installed automatically by AEM.
@@ -464,7 +511,7 @@ If the instance is not running, packages placed in the `install` folder will be 
 
 Uninstalling package reverts the contents of the repository to the snapshot made automatically by Package Manager immediately prior to installation.
 
-1. Access Package Manager.
+1. [Access Package Manager.](#accessing)
 
 1. Open the package details of the package you wish to uninstall from the package list by clicking on the package name.
 
@@ -474,11 +521,11 @@ Uninstalling package reverts the contents of the repository to the snapshot made
 
 1. The package is removed and the snapshot is applied. Progress of the process is shown in the Activity Log.
 
-### Deleting packages {#deleting-packages}
+### Deleting Packages {#deleting-packages}
 
 Deleting a package only deletes its details from Package Manager. If this package was already, then the installed content will not be deleted.
 
-1. Access Package Manager.
+1. [Access Package Manager.](#accessing)
 
 1. Open the package details of the package you wish to delete from the package list by clicking on the package name.
 
@@ -490,7 +537,7 @@ Deleting a package only deletes its details from Package Manager. If this packag
 
 Replicate the contents of a package to install it on the publish instance.
 
-1. Access Package Manager.
+1. [Access Package Manager.](#accessing)
 
 1. Open the package details of the package you wish to replicate from the package list by clicking on the package name.
 
