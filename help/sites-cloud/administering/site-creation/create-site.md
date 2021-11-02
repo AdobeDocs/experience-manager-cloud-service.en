@@ -9,6 +9,10 @@ role: Admin
 
 Learn how to use AEM create a site using site templates to define the style and structure of your site.
 
+>[!CAUTION]
+>
+>The Quick Site Creation tool is currently a tech preview. It is made available for testing and evaluation purposes and is not intended for production use unless agreed with Adobe Support.
+
 ## Overview {#overview}
 
 Before content authors can create pages with content, the site must first be created. This is generally performed by an AEM administrator who defines the initial structure of the site. Using site templates makes site creation fast and flexible.
