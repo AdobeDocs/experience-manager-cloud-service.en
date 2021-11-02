@@ -44,7 +44,7 @@ If a customer must use its existing CDN, they may manage it and point it to the 
 
 * Customer must have an existing CDN that would be onerous to replace.
 * Customer must manage it.
-* Customer must be able to configure the CDN to work with AEM as a Cloud Service - see the configuration instructions below.
+* Customer must be able to configure the CDN to work with AEM as a Cloud Service - see the configuration instructions presented below.
 * Customer must have engineering CDN experts that are on call in case related issues arise.
 * Customer must perform and successfully pass a load test before going to production.
 
