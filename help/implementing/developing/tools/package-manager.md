@@ -9,13 +9,11 @@ role: Admin
 
 Packages enable the importing and exporting of repository content. You can use packages to install new content, transfer content between instances, and back up repository content.
 
-You can transfer packages between Package Manager and your local file system for development purposes.
+Using Package Manager, you can transfer packages between your AEM instance and your local file system for development purposes.
 
 ## What are Packages? {#what-are-packages}
 
-A package is a zip file holding repository content in the form of a file-system serialization, called vault serialization. This provides an easy-to-use and easy-to-edit representation of files and folders.
-
-Packages include content, both page content and project-related content, selected by using filters.
+A package is a zip file holding repository content in file-system serialization form, called vault serialization. This provides an easy-to-use and easy-to-edit representation of files and folders. Content included in the package is defined by using filters.
 
 A package also contains vault meta information, including the filter definitions and import configuration information. Additional content properties, which are not used for package extraction, can be included in the package, such as a description, a visual image, or an icon. These additional content properties are for the content package consumer and for informational purposes only.
 
@@ -25,7 +23,7 @@ A package also contains vault meta information, including the filter definitions
 
 ## Packages in AEM as a Cloud Service {#aemaacs-packages}
 
-Content packages written for AEM as a Cloud Service applications must have a clean separation between immutable and mutable content. Therefore Package Manager can only be used to manage packages containing content. Any code must be deployed through Cloud Manager.
+Content packages created for AEM as a Cloud Service applications must have a clean separation between immutable and mutable content. Therefore Package Manager can only be used to manage packages containing content. Any code must be deployed through Cloud Manager.
 
 >[!NOTE]
 >
@@ -66,7 +64,7 @@ Package Manager is divided into four main functional areas:
 * **Package List** - This is the list of packages on your instance filtered and sorted per selections in the Left Navigation Panel.
 * **Activity Log** - This panel is minimized at first and will expand to detail the activity of Package Manager such as when a package is built or installed. There are additional buttons in the Activity Log tab to:
   * **Clear Log**
-  * **Minimize/Maximize**
+  * **Show/Hide**
 * **Toolbar** - The toolbar contains refresh buttons for the Left Navigation Panel and Package list as well as buttons for searching, creating, and uploading packages.
 
 ![Package Manager UI](assets/package-manager-ui.png)
@@ -102,11 +100,11 @@ Each entry in the package list has a status indicator to let you know at a glanc
 
 ![Package status](assets/package-status.png)
 
-If the package has been changed or never built, the status will be presented as a link to take quick action to rebuild or install the package.
+If the package has been changed or was never built, the status will be presented as a link to take quick action to rebuild or install the package.
 
 ## Package Settings {#package-settings}
 
-A package is essentially a set of filters and the repository data based on those filters. Using the Package Manager UI, you can click on a package and then the **Edit** button to view the details of a package which include the following settings.
+A package is essentially a set of filters and the repository data based on those filters. Using the Package Manager UI, you can click on a package and then the **Edit** button to view the details of a package including the following settings.
 
 * [General Settings](#general-settings)
 * [Package Filters](#package-filters)
@@ -118,14 +116,14 @@ A package is essentially a set of filters and the repository data based on those
 
 You can edit a variety of package settings to define information such as the package description, dependencies, and provider details.
 
-The **Package Settings** dialog is available via the **Edit** button when [creating](#creating-a-new-package) or [editing](#viewing-and-editing-package-information) a package and provides three tabs for configuration. After any changes are made click **OK** to save these.
+The **Package Settings** dialog is available via the **Edit** button when [creating](#creating-a-new-package) or [editing](#viewing-and-editing-package-information) a package. After any changes are made, click **Save** to save these.
 
 ![Edit Package dialog, general settings](assets/general-settings.png)
 
 |Field|Description|
 |---|---|
 | Name |The name of the package|
-| Group |For organizing packages, type the name of a new group, or select an existing group|
+| Group |For organizing packages, you can type the name of a new group or select an existing group|
 | Version |Text to use for the version|
 | Description |A brief description of the package allowing HTML markup for formatting|
 | Thumbnail |The icon that appears with the package listing|
@@ -147,18 +145,18 @@ You can define one or more filter definitions for a package. Use more than one f
 
 ![Filters tab](assets/edit-filter.png)
 
-When creating filters, you can define a path, or use a regular expression to specify all the nodes that you want to include or exclude.
+When creating filters, you can define a path or use a regular expression to specify all the nodes that you want to include or exclude.
 
 |Rule Type|Description|
 |---|---|
 |include|Including a directory will include that directory and all the files and folders in that directory (i.e. the entire subtree) but **will not** include other files or folders from under the specified root path.|
 |exclude|Excluding a directory will exclude that directory and all files and folders in that directory (i.e. the entire subtree).|
 
-Package filters are most often defined when you first [create the package](#creating-a-new-package), but they can be edited at a later time as well (after which the package should be rebuilt).
+Package filters are most often defined when you first [create the package](#creating-a-new-package), but they can be edited at a later time as well after which the package should be rebuilt to update its content based on the new filter definitions.
 
 >[!TIP]
 >
->One package can contain multiple filter definitions, so that nodes from different locations can easily be combined into one package.
+>One package can contain multiple filter definitions so that nodes from different locations can easily be combined into one package.
 
 ### Dependencies {#dependencies}
 
@@ -219,7 +217,7 @@ There are a number of actions that can be taken on a package.
 
    ![New package](assets/new-package.png)
 
-1. Click **Edit** to define the [package contents.](#package-contents) Click **OK** after you are finished editing the settings.
+1. Click **Edit** to define the [package contents.](#package-contents) Click **Save** after you are finished editing the settings.
 
 1. You can now [Build](#building-a-package) your package.
 
@@ -227,7 +225,7 @@ It is not compulsory to immediately build the package after creating it. An unbu
 
 ### Building a Package {#building-a-package}
 
-A package is often built at the same time as you [create the package](#creating-a-new-package), but you can return at a later point to either build, or rebuild the package. This can be useful if the content within the repository has changed.
+A package is often built at the same time as you [create the package](#creating-a-new-package), but you can return at a later point to either build or rebuild the package. This can be useful if the content within the repository has changed or the package filters have changed.
 
 1. [Access Package Manager.](#accessing)
 
@@ -247,7 +245,9 @@ Once a package is uploaded to AEM, you can modify its settings.
 
 1. Click **Edit** and update the **[Package Settings](#package-settings)** as required.
 
-1. Click **OK** to save.
+1. Click **Save** to save.
+
+Be aware that you may need to [rebuild the package](#building-a-package) to update its contents based on the changes you made.
 
 ### Rewrapping a Package {#rewrapping-a-package}
 
@@ -259,7 +259,7 @@ Once a package has been built it can be rewrapped. Rewrapping changes the packag
 
 1. Click **Edit** and update the **[Package Settings](#package-settings)** as required. 
 
-1. Click **OK** to save.
+1. Click **Save** to save.
 
 1. Click **More** -&gt; **Rewrap** and a dialog will ask for confirmation.
 
@@ -334,7 +334,7 @@ Package Manager can perform the following validations:
 
 >[!NOTE]
 >
->Because packages can not be used to deploy code in AEMaaCS, this validation is unnecessary. 
+>Because packages can not be used to deploy code in AEMaaCS, **OSGi Package Imports** validation is unnecessary. 
 
 **What's Checked**
 
@@ -353,6 +353,10 @@ If dependencies are unsatisfied, then the OSGi bundles in the package with those
 To resolve errors due to unsatisfied OSGi bundles, the dependency version in the bundle with unsatisfied imports needs to be adjusted.
 
 ##### Validate Overlays {#overlays}
+
+>[!NOTE]
+>
+>Because packages can not be used to deploy code in AEMaaCS, **Overlays** validation is unnecessary. 
 
 **What's Checked**
 
@@ -396,7 +400,7 @@ Using the information provided by the validation, the impacted nodes can be revi
 
 >[!CAUTION]
 >
->As best practice it is recommended that packages should not affect AEM-provided ACLs as this may result in unexpected product behavior.
+>As best practice it is recommended that packages should not affect AEM-provided ACLs as this may result in unexpected behavior.
 
 #### Performing Validation {#performing-validation}
 
@@ -445,7 +449,7 @@ When validating via POST request, the response is sent back as a JSON object.
 
 ### Viewing Package Coverage {#package-coverage}
 
-Packages are defined by their filters. If you [upload a package](#uploading-packages-from-your-file-system) to your AEM instance, you can have Package Manager apply those filters to your existing repository content to show what content of the repository is covered by the filter definition of the package. This can be useful information before [installing a package.](#installing-packages)
+Packages are defined by their filters. You can have Package Manager apply filters of a package to your existing repository content to show what content of the repository is covered by the filter definition of the package.
 
 1. [Access Package Manager.](#accessing)
 
@@ -462,10 +466,6 @@ Uploading a package only adds the package content to the repository, but it is n
 >[!CAUTION]
 >
 >Installing a package can overwrite or delete existing content. Only upload a package if you are sure that it does not delete or overwrite content that you need.
-
->[!TIP]
->
->It is a good idea to [check the package's coverage](#package-coverage) before installing it.
 
 Immediately prior to installation of your package, a snapshot package is created to contain the content that will be overwritten. This snapshot will be re-installed if you uninstall your package.
 
@@ -495,7 +495,7 @@ Reinstalling packages performs the same steps on an already installed package th
 
 ### File System Based Upload and Installation {#file-system-based-upload-and-installation}
 
-You can forego the Package Manager altogether by using the filesystem of AEM on your local development machine so that packages are uploaded and installed automatically by AEM.
+You can forego Package Manager altogether when installing packages by using the filesystem of AEM on your local development machine so that packages are uploaded and installed automatically by AEM.
 
 1. In your local AEM installation there is a `crx-quicksart` folder alongside with your jar and `license.properties` file. Create a folder named `install` under `crx-quickstart` resulting in the path `<aem-home>/crx-quickstart/install`.
 
@@ -523,7 +523,7 @@ Uninstalling package reverts the contents of the repository to the snapshot made
 
 ### Deleting Packages {#deleting-packages}
 
-Deleting a package only deletes its details from Package Manager. If this package was already, then the installed content will not be deleted.
+Deleting a package only deletes its details from Package Manager. If this package was already installed, then the installed content will not be deleted.
 
 1. [Access Package Manager.](#accessing)
 
