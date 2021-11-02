@@ -22,6 +22,7 @@ A program can provision a single advanced networking variation. When deciding be
 >[!INFO]
 >
 >Advanced networking is not available for the sandbox program.
+>Also, environments must be upgraded to AEM version 5958 or higher.
 
 >[!NOTE]
 >
