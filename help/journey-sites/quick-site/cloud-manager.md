@@ -1,9 +1,6 @@
 ---
 title: Understand Cloud Manager and the Quick Site Creation Workflow
 description: Learn about Cloud Manager and how it ties together the new Quick Site Creation process.
-index: no
-hide: yes
-hidefromtoc: yes
 ---
 
 # Understand Cloud Manager and the Quick Site Creation Workflow {#understand-cloud-manager}
