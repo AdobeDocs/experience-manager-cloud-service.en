@@ -93,3 +93,7 @@ Click on **+Add** and select **Add Production Pipeline**.
    * **Add** - allows adding of a new pipeline.
    * **Access Repo Info** - allows the user to get the information necessary to access Cloud Manager Git repository.
    * **Learn More** - navigates to understanding the CI/CD pipeline documentation resource. 
+
+
+
+
