@@ -56,11 +56,10 @@ For the front-end developer, no AEM knowledge is necessary.
 |Preferred front-end development environment|Front-End Developer|
 |npm|Front-End Developer|
 |webpack|Front-End Developer|
-|Be an administrator of your Cloud Manager org|Cloud Manager Administrator|
 |Access to Cloud Manager|Cloud Manager Administrator|
+|Be a member of **Business Owner** role in Cloud Manager|Cloud Manager Administrator|
+|Be a member of the **Deployment Manager** role in Cloud Manager|Cloud Manager Administrator|
 |Be a member of the **Deployment Manager** role in Cloud Manager|Front-End Developer|
-|npm|Front-End Developer|
-|webpack|Front-End Developer|
 
 For the front-end developer, no use of AEM is necessary.
 
