@@ -1,9 +1,6 @@
 ---
 title: Retrieve Git Repository Access Information
 description: Learn how the front-end developer uses Cloud Manager to access git repository information.
-index: no
-hide: yes
-hidefromtoc: yes
 ---
 
 # Retrieve Git Repository Access Information {#retrieve-access}

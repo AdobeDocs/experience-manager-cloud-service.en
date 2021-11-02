@@ -1,9 +1,6 @@
 ---
 title: Grant Access to the Front-End Developer
 description: Onboard the front-end developers into Cloud Manager so they have access to your AEM site git repository and pipeline.
-index: no
-hide: yes
-hidefromtoc: yes
 ---
 
 # Grant Access to the Front-End Developer {#grant-fed-access}

@@ -1,9 +1,6 @@
 ---
 title: Set Up Your Pipeline
 description: Create a front-end pipeline to manage the customization of your site's theme.
-index: no
-hide: yes
-hidefromtoc: yes
 ---
 
 # Set up Your Pipeline {#set-up-your-pipeline}
