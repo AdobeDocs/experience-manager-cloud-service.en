@@ -105,7 +105,8 @@ Follow the steps below to view reports from the trendline option:
 
 1. Clicking on **View Trendline** opens the trendline view of the report, as shown in the figure below.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3a.png)
+
 
    >[!NOTE]
    >The Trendline Report displays the results from the historical BPA reports in a graphical representation. 
@@ -208,11 +209,11 @@ Follow the steps below to delete a report from the Trendline view:
 
 1. Click on the delete icon from the **Trendline Report** screen.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. Click on **Delete** to confirm the deletion.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## What's Next {#whats-next}
 
