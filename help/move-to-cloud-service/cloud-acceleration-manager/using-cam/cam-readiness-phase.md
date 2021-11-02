@@ -81,7 +81,7 @@ Follow the steps below:
 
 ### Using View Trendline {#trendline-view-cam}
 
-When you upload more than one Best Practices Analyzer (BPA) report in a Project, you can select the **View Trendline** option to view and compare results from the old BPA reports.
+When you upload more than one Best Practices Analyzer (BPA) report in a Project, you can select the **View Trendline** option to view and compare results from the historical BPA reports.
 
 Follow the steps below to view reports from the trendline option:
 
