@@ -29,6 +29,10 @@ Content packages created for AEM as a Cloud Service applications must have a cle
 >
 >Packages can only contain content. Any functionality (e.g. content stored under `/apps`) must be [deployed using your CI/CD pipeline in Cloud Manager.](/help/implementing/cloud-manager/deploy-code.md)
 
+>[!IMPORTANT]
+>
+>Package Manager UI might return an **undefined** error message if a package takes longer than 10 minutes to install. Do not retry the installation if that happens, because it is proceeding correctly in the background and some conflicts could be introduced by multiple concurrent import processes.
+
 For more details on how to manage packages for AEMaaCS, please review the document [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md) in the deploying user guide.
 
 ## Package Manager {#package-manager}
