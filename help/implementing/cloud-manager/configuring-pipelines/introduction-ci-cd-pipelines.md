@@ -33,5 +33,3 @@ Refer to Configuring Production Pipeline for more details.
 A Non-Production Pipeline aims to run code-quality scans or to deploy source code into a development environment. 
 
 Refer to Non-Production & Code Quality Only Pipelines for more details.
-
-## 
