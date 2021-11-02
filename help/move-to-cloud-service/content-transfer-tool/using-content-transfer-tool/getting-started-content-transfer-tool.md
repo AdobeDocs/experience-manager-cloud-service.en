@@ -5,23 +5,6 @@ exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 ---
 # Getting Started with Content Transfer Tool {#getting-started-content-transfer-tool}
 
-## Source Environment Connectivity {#source-environment-connectivity}
-
-The source AEM instance may be running behind a firewall where it can only reach certain hosts which have been added to an Allow List. In order to successfully run an extraction, the following endpoints will need to be accessible from the instance that is running AEM:
-
-* The target AEM as a Cloud Service environment: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* The Azure blob storage service: `*.blob.core.windows.net`
-* The User Mapping IO endpoint: `usermanagement.adobe.io`
-
-To test connectivity to the target AEM as a Cloud Service environment, issue the following cURL command from the shell of the source instance (replace `program_id`, `environment_id`, and `migration_token`):
-
-```
-curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
-```
-
-
->[!NOTE]
->If an `HTTP/2 200` is received, a connection to AEM as a Cloud Service was successful.
 
 ## Availability {#availability}
 
@@ -36,6 +19,21 @@ The Content Transfer Tool can be downloaded as a zip file from the Software Dist
 
 >[!NOTE]
 >Download the Content Transfer Tool, from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
+
+## Source Environment Connectivity {#source-environment-connectivity}
+
+The source AEM instance may be running behind a firewall where it can only reach certain hosts which have been added to an Allow List. In order to successfully run an extraction, the following endpoints will need to be accessible from the instance that is running AEM:
+
+* The target AEM as a Cloud Service environment: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* The Azure blob storage service: `*.blob.core.windows.net`
+* The User Mapping IO endpoint: `usermanagement.adobe.io`
+
+To test connectivity to the target AEM as a Cloud Service environment, issue the following cURL command from the shell of the source instance (replace `program_id`, `environment_id`, and `migration_token`):
+
+`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
+
+>[!NOTE]
+>If an `HTTP/2 200` is received, a connection to AEM as a Cloud Service was successful.
 
 ## Running the Content Transfer Tool {#running-tool}
 
