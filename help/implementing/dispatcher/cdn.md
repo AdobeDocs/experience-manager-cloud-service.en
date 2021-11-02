@@ -51,7 +51,7 @@ If a customer must use its existing CDN, they may manage it and point it to the 
 Configuration instructions:
 
 1. Point your CDN to the Adobe CDN’s ingress as its origin domain. For example, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. SNI must also be set to the Adobe CDN's ingress
+1. SNI must also be set to the Adobe CDN's ingress.
 1. Set the Host header to the origin domain. For example: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Set the `X-Forwarded-Host` header with the domain name so AEM can determine the host header. For example: `X-Forwarded-Host:example.com`.
 1. Set `X-AEM-Edge-Key`. The value should come from Adobe.
