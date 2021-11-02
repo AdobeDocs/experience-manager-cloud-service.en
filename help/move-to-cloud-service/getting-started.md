@@ -145,8 +145,8 @@ Cloud Manager enables organizations to self-manage Experience Manager in the Clo
 
 #### Content Migration
 
-1. [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration) : used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance.
-2. [Package Manager](/help/implementing/developing/tools/package-manager.md) : used for importing and exporting of mutable content of the repository.
+1. [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration) - Used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance.
+2. [Package Manager](/help/implementing/developing/tools/package-manager.md) - Used for importing and exporting of mutable content of the repository.
 
 
 #### Refactor/Optimize
