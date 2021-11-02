@@ -37,7 +37,8 @@ This part of the journey applies to the Cloud Manager administrator.
 
 ## Requirements {#requirements}
 
-You need to have access to Cloud Manager and be a member of the **Deployment Manager** role.
+* You need to have access to Cloud Manager.
+* You need to be a member of the **Deployment Manager** role in Cloud Manager.
 
 ## What is a Front-End Pipeline {#front-end-pipeline}
 
