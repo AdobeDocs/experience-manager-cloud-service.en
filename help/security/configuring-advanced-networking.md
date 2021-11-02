@@ -9,10 +9,6 @@ This article aims to introduce you to the different advanced networking features
 
 ## Overview {#overview}
 
->[!INFO]
->
->The advanced networking feature is part of the 2021.9.0 release, and will be enabled for customers in mid-October.
-
 AEM as a Cloud Service offers several types of advanced networking capabilities, which can be configured by customers using Cloud Manager APIs. These include:
 
 * [Flexible port egress](#flexible-port-egress) - configure AEM as a Cloud Service to allow outbound traffic out of non-standard ports
@@ -21,7 +17,7 @@ AEM as a Cloud Service offers several types of advanced networking capabilities,
 
 This article describes each of these options in detail, including how they can be configured. As a general configuration strategy, the `/networkInfrastructures` API endpoint is invoked at the program level to declare the desired type of advanced networking, followed by a call to the `/advancedNetworking` endpoint for each environment to enable the infrastructure and configure environment-specific parameters. Please reference the appropriate endpoints in the Cloud Manager API documentation for each formal syntax, as well as sample requests and responses.
 
-When deciding between flexible port egress and dedicated egress IP address, it is recommended you choose flexible port egress if a specific IP address is not required because Adobe can optimize performance of flexible port egress traffic.
+A program can provision a single advanced networking variation. When deciding between flexible port egress and dedicated egress IP address, it is recommended you choose flexible port egress if a specific IP address is not required because Adobe can optimize performance of flexible port egress traffic.
 
 >[!INFO]
 >
@@ -43,9 +39,9 @@ Flexible port egress is the recommended choice if you don't need VPN and don't n
 
 Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked, simply passing the value of `flexiblePortEgress` for the `kind` parameter and region. The endpoint responds with the `network_id`, as well as other information including the status. The full set of parameters and exact syntax should be referenced in the API docs.
 
-Once called, it typically takes approximately 15 minutes for the networking infrastructure to be provisioned. A call to the Cloud Manager's [environment GET endpoint](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getEnvironment) would show a status of "ready".
+Once called, it typically takes approximately 15 minutes for the networking infrastructure to be provisioned. A call to the Cloud Manager's [network infrastructure GET endpoint](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) would show a status of "ready".
 
-If the program-scoped flexible port egress configuration is ready, the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint must be invoked per environment to enable networking at the environment level and to declare any port forwarding rules. Parameters are configurable per environment in order to offer flexibility.
+If the program-scoped flexible port egress configuration is ready, the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint must be invoked per environment to enable networking at the environment level and to optionally declare any port forwarding rules. Parameters are configurable per environment in order to offer flexibility.
 
 Port forwarding rules should be declared for any ports other than 80/443 by specifying the set of destination hosts (names or IP, and with ports). For each destination host, customers must map the intended destination port to a port from 30000 through 30999.
 
