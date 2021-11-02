@@ -60,9 +60,12 @@ Configuration instructions:
 
 Before accepting live traffic, you should validate with Adobe's customer support that the end-to-end traffic routing is functioning correctly.
 
-After obtaining the `X-AEM-Edge-Key`, you can test that the request is routed correctly as follows: 
+After obtaining the `X-AEM-Edge-Key`, you can test that the request is routed correctly as follows:
 
-`https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'`
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+
+```
 
 Please note that when using your own CDN, there is no need to install the domains and certificates in Cloud Manager. The routing in Adobe CDN will be done using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
