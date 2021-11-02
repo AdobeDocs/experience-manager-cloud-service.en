@@ -63,7 +63,7 @@ Before accepting live traffic, you should validate with Adobe's customer support
 After obtaining the `X-AEM-Edge-Key`, you can test that the request is routed correctly as follows:
 
 ```
-https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+https: //publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
 
 ```
 
