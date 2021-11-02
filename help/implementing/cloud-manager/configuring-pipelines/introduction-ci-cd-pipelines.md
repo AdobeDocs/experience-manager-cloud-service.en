@@ -16,7 +16,7 @@ A CI/CD pipeline in Cloud Manager can be triggered by some sort of event, such a
 >* define the parameters controlling the production deployment
 >* configure the performance test parameters
 
-In Cloud Manager, there are two types of Pipeline:
+In Cloud Manager, there are two types of Pipelines:
 
 * [Production Pipeline](#prod-pipeline)
 * [Non-Production Pipeline](#non-prod-pipeline)
@@ -33,3 +33,48 @@ Refer to Configuring Production Pipeline for more details.
 A Non-Production Pipeline aims to run code-quality scans or to deploy source code into a development environment. 
 
 Refer to Non-Production & Code Quality Only Pipelines for more details.
+
+## Understanding CI-CD Pipelines in Cloud Manager {#understand-pipelines}
+
+The following table categorizes the pipelines in Cloud Manager along with their usage.
+
+|Pipeline Type|Deployment or Code Quality|Source Code|When to Use|When or Why Should I use?|
+|--- |--- |--- |---|---|---|
+|Production or Non-production|Deployment|Front End|To deploy front end code. Front end code is any code that is served as a static file. It is separate from UI code served by AEM. It includes Sites Themes, Customer defined SPAs, Firefly SPAs and any other solutions. Must be on AEM version.| Fast deployment times.<br> Multiple front-end pipelines can be configured and run concurrently per environment.|
+||Deployment|Full Stack|To deploy back-end, front-end and HTTPD/dispatcher configuration all at the same time. Note: Some restrictions apply.| When Front end or Web Tier Config pipelines have not yet  been adopted.|
+||Deployment|Web Tier Config|To exclusively deploy HTTPD/dispatcher configuration in a matter of minutes.  This streamlined pipeline provides users who wish to only deploy dispatcher configuration changes, an accelerated means to do so. Note: Must be on AEM version [version] | Fast deployment times.|
+
+
+
+## Cloud Manager Front End Pipelines {#front-end}
+
+Front End  pipelines help your teams streamline your design and development process, by enabling accelerated front end  pipelines for deploying front end code. This differentiated pipeline deploys JavaScript and CSS to the AEM distribution layer as a theme, resulting in a new theme version which may be referenced from pages delivered from the AEM runtime. Front end code is any code that is served as a static file. It is separate from UI code served by AEM. It includes Sites Themes, Customer defined SPAs, Firefly SPAs and any other solutions. 
+
+>[!NOTE]
+>A user logged in as Deployment Manager role can create and run multiple front end pipelines concurrently. There is, however, a maximum limit of 300 pipelines per program (across all types).
+
+There are two types of Front End Pipelines:
+
+* Front End Code Quality 
+* Front End Deployment
+
+## Full Stack Pipelines {#full-stack-pipeline}
+
+Full Stack pipeline gives the user the option to deploy back-end, front-end and HTTPD/dispatcher configuration all at the same time.  It deploys code and content to the AEM runtime including front end code (JavaScript/CSS) packaged as AEM Client Libraries. It may deploy web tier configuration if a Web Tier pipeline is not configured. This represents the 'uber' pipeline, while giving users the options to exclusively deploy their Front End code or dispatcher configuration via the Front End pipeline and the Web Tier Config pipeline respectively.
+
+
+The following restrictions will apply:
+
+1. A user must be logged in as Deployment Manager in order to configure or run pipelines.
+
+1. At any time, there can only be one Full Stack pipeline per environment.
+
+1. The user can configure the Full Stack pipeline for an environment to ignore or not to ignore the dispatcher configuration, If the corresponding Web Tier Config pipeline for the environment does not exist. 
+
+1. The Full Stack pipeline for an environment will ignore the dispatcher configuration if the corresponding Web Tier Config pipeline for the environment exists.  
+
+There are two types of Full Stack Pipelines:
+
+* Full Stack Code Quality Pipeline 
+* Full Stack Deployment Pipeline
+
