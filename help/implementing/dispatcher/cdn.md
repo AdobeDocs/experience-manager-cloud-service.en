@@ -44,7 +44,7 @@ If a customer must use its existing CDN, they may manage it and point it to the 
 
 * Customer must have an existing CDN that would be onerous to replace.
 * Customer must manage it.
-* Customer must be able to configure the CDN to work with AEM as a Cloud Service - see the configuration instructions below.
+* Customer must be able to configure the CDN to work with AEM as a Cloud Service - see the configuration instructions presented below.
 * Customer must have engineering CDN experts that are on call in case related issues arise.
 * Customer must perform and successfully pass a load test before going to production.
 
@@ -63,7 +63,7 @@ Before accepting live traffic, you should validate with Adobe's customer support
 After obtaining the `X-AEM-Edge-Key`, you can test that the request is routed correctly as follows:
 
 ```
-https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+https: //publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
 
 ```
 
