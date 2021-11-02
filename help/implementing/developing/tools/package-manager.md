@@ -193,7 +193,7 @@ You can attach multiple screenshots to your package to provide a visual represen
 
 ## Package Actions {#package-actions}
 
-There are a number of actions that can be taken on a package.
+There is a number of actions that can be taken on a package.
 
 ### Creating a Package {#creating-a-new-package}
 
@@ -378,7 +378,7 @@ An error state means that the package is attempting to deploy a file that is alr
 
 **Error Resolution**
 
-To resolve this issue, the maintainer of the of the overlay file in `/apps` must review the changes to the overlaid file in `/libs` and incorporate the changes as needed into the overlay ( `/apps`), and redeploy the overlaid file.
+To resolve this issue, the maintainer of the overlay file in `/apps` must review the changes to the overlaid file in `/libs` and incorporate the changes as needed into the overlay ( `/apps`), and redeploy the overlaid file.
 
 >[!NOTE]
 >
@@ -435,7 +435,7 @@ The POST request takes the following form.
 https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls
 ```
 
-The `type` parameter can be any comma separated unordered list consisting of:
+The `type` parameter can be any comma-separated, unordered list consisting of:
 
 * `osgiPackageImports`
 * `overlays`
@@ -507,7 +507,7 @@ You can forego Package Manager altogether when installing packages by using the 
 
 1. Once upload and installation is complete, you can see the packages in Package Manager as if you had used the Package Manager UI to install them.
 
-If the instance is running, the upload and the installation begins immediately when you add the to the package to the `install` folder
+If the instance is running, the upload and the installation begins immediately when you add it to the package to the `install` folder
 
 If the instance is not running, packages placed in the `install` folder will be installed at startup in alphabetical order.
 
