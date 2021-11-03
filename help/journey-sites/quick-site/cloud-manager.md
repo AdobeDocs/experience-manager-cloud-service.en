@@ -55,10 +55,16 @@ For the front-end developer, no AEM knowledge is necessary.
 |webpack|Front-End Developer|
 |Access to Cloud Manager|Cloud Manager Administrator|
 |Be a member of **Business Owner** role in Cloud Manager|Cloud Manager Administrator|
+|Be a Sys Admin in Cloud Manager|Cloud Manager Administrator|
+|Access to Admin Console|Cloud Manager Administrator|
 |Be a member of the **Deployment Manager** role in Cloud Manager|Cloud Manager Administrator|
 |Be a member of the **Deployment Manager** role in Cloud Manager|Front-End Developer|
 
 For the front-end developer, no use of AEM is necessary.
+
+>[!TIP]
+>
+>If you are not familiar with Cloud Manager roles and role management, please see the Role Based Permissions document in the [Additional Resources](#additional-resources) section.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -94,5 +100,6 @@ Build on this knowledge and continue your AEM Quick Site Creation journey by nex
 While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Create Site from Template,](create-site.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult the in-depth technical docs.
+* [Role Based Permissions](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager has pre-configured roles with appropriate permissions. Refer to this document for details of these roles and how to administer them.
 * [npm](https://www.npmjs.com) - AEM themes used to quickly build sites are based on npm.
 * [webpack](https://webpack.js.org) - AEM themes used to quickly build sites rely on webpack.
