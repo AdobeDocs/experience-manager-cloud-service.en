@@ -106,6 +106,10 @@ The new pipeline is created and visible in the **Pipelines** section of the Clou
 
 ![Pipeline options](assets/new-pipeline.png)
 
+>[!TIP]
+>
+>If you are already familiar with pipelines in AEMaaCS and want to learn more about the differences between the different types pipelines including further details about the front end pipeline, please refer to the Configure CI/CD Pipeline - Cloud Services linked in the [Additional Resources](#additional-resources) section below.
+
 ## What's Next {#what-is-next}
 
 Now that you have completed this part of the AEM Quick Site Creation journey you should:
@@ -121,3 +125,4 @@ While it is recommended that you move on to the next part of the Quick Site Crea
 
 * [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult the in-depth technical docs.
 * [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - If you need more information about how to set up and manage git repositories for your AEMaaCS project, please refer to this document.
+* [Configure CI/CD Pipeline - Cloud Services](/help/implementing/cloud-manager/configure-pipeline.md) - Learn more details about setting up pipelines, both full stack and front end, in this document.
