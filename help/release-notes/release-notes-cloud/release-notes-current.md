@@ -28,7 +28,7 @@ Have a look at the [October 2021 Release Overview](https://video.tv.adobe.com/v/
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### New feature in the [!DNL Sites] prerelease channel {#sites-prerelease-features}
+### New feature in [!DNL Sites] {#sites-features}
 
 * Content Fragment models are now automatically set in read-only state once they are published, to avoid unintentially breaking live API queries after re-publishing an edited model. Users are prompted with a warning when attempting to edit a published model. Editing is possible upon accepting the warning. 
 
@@ -103,45 +103,9 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 * AEM Storefront Venia returns HTTP 404 error if category or product page is not found
 
-## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens} 
-
-### What is New {#what-is-new-screens}
-
-* Screens as a Cloud Service now supports basic playback monitoring. The player will now report various playback metrics with each ping (defaults to 30 seconds). Based on the metrics, it provides the ability to detect various edge cases (stuck experience, blank screen, scheduling problem, etc.). This feature allows the team to remotely monitor if a player is properly playing content, improves reactivity to blank screens or broken experiences in the field, and decreases the risk of showing a broken experience to the end user.
-   See [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) for more details.
-
-* Thumbnail Support for videos in now supported in Screens as a Cloud Service. A content author can define a thumbnail for videos so that the image can be used as a placeholder and properly test content playback and targeting, while the actual video is being finalized by the appropriate team. The image can also be used, in case the playback of the video fails.
-   See [Thumbnail Support for Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) for more details.
-
-### Bug Fixes {#bug-fixes-screens}
-
-* Player could not show content from Embedded page and this issue is now fixed.
-
-* After a successful login, navigating to the default page (channels) ended up in a Internal Server Error page.
-
-* Associated tag entries were not removed when removing playlist(s).
-
-## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
-
-### New features in [!DNL Experience Manager as a Cloud Service] {#foundation-features}
-
-**Advanced Networking**
-
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] now offers several types of advanced networking capabilities, including:
-
-* Flexible Port egress to egress traffic out of non-standard ports. Now possible without contacting Adobe Support.
-* Dedicated egress IP address to egress traffic out of AEM as a Cloud Service from a unique IP, now supporting all ports.
-* VPN to secure traffic between your infrastructure and AEM as a Cloud Service.
-
-Read the [documentation](/help/security/configuring-advanced-networking.md) for more information, including how to self serve provision advanced networking using Cloud Manager APIs. 
-
-**Index Optimizations**
-
-To improve the performance of search queries and indexing, the full-text index lucene-2 is no longer used out-of-the-box in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] from this release. In order to remove this full-text index on AEM environments in accordance with AEM customers, Adobe Engineering works individually and pro-actively with customers for a gentle and sustainable removal of the Lucene full-text index. Please visit the [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentation](/help/operations/indexing.md#index-optimizations) for more information and contact our support directly if you have any questions.
-
 ## Cloud Manager {#cloud-manager}
 
-This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.10.0 and 2021.9.0.
+This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.10.0.
 
 ## Release Date {#release-date-cm-oct}
 
@@ -170,10 +134,6 @@ The next release is planned for November 04, 2021.
 
 * The tool tip on the Program card will be more descriptive if a selection option under 'Navigate To' is disabled. It now displays "A production environment does not exist." 
 
-## Release Date {#release-date-cm-sept}
-
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.9.0 is September 09, 2021.
-
 ### Bug Fixes {#bug-fixes-cm-oct}
 
 * In rare situations, when an Adobe staff would restore a customer's environment, the restore was considered complete before the environment was fully operational.
@@ -181,52 +141,6 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.9.0 is Septemb
 * Certain internal requests made during environment creation were not being retried.
 
 * If deployment failed error occurs following domain name verification, the error message has been corrected to request the customer to contact their Adobe representative.
-
-
-### What's New {#what-is-new-cm-sept}
-
-* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 30.
-
-* The program cards on Cloud Manager landing page and the associated experience has been refreshed.
-
-* The Code Quality Step Log now includes verbose logging information on the OakPal scanning process.
-
-* The Activity page menu options will now include an option to **Download Log** for completed Code Generator executions. Selecting this will download the log of the build step.
-
-* Clicking directly on the Program card will now navigate to Cloud Manager Overview page.
-
-### Bug Fixes {#bug-fixes-sept}
-
-* User will now see a more comprehensible message when trying to add a new IP Allow List in a program that has reached the maximum allowed number of IP Allow Lists that can be configured.
-
-* Wrong URL was copied when selecting the copy URL menu option from Repositories screen. 
-
-## Cloud Acceleration Manager {#cam}
-
-### Release Date {#release-date-october-cam}
-
-The Release Date for Cloud Acceleration Manager is October 04, 2021.
- 
-### What is New {#what-is-new-cam}
-
-* Cloud Acceleration Manager now provides users with the ability to view the BPA reports in a printable preview, allowing simple printing or printing to PDF for easy shareability. Refer to Step 6 and 7 in [Using Best Practices Analysis Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
-
-## Content Transfer Tool {#content-transfer-tool}
-
-### Release Date {#release-date-ctt-latest}
-
-The Release Date for Content Transfer Tool v1.6.0 is October 04, 2021.
-
-### What's New {#what-is-new-ctt}
-
-* Improved User Mapping Tool with a simplified User Experience, including the following features listed below. For more details, refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
-  * Test connection to the User Management API before running the User Mapping
-  * Gracefully skip errors and continue with the User Mapping activity
-  * User Mapping no longer fails if **Access Token** expires after 24 hours. User Mapping can be re-run from where it last stopped.
-
-* To increase the Content Transfer Tool robustness, content can be ingested to either Author instance or Publish instance at a time. See [Getting Started with Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) for more details.
-
-* When versions are included, the path `/var/audit` is automatically included to migrate audit events.
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
@@ -241,4 +155,3 @@ The Release Date for Best Practices Analyzer v2.1.20 is October 05, 2021.
 * Ability to detect and report on the total Index size.
 
 * Ability to detect and report on assets that are missing their original rendition.
-
