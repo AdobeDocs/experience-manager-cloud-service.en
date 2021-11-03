@@ -21,7 +21,8 @@ In Cloud Manager, there are two types of Pipelines:
 * [Production Pipeline](#prod-pipeline)
 * [Non-Production Pipeline](#non-prod-pipeline)
 
-![](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cdpipeline-overview.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config.png)
+
 
 ## Production Pipeline {#prod-pipeline}
 
