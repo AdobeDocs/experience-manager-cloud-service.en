@@ -6,7 +6,6 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 ---
 # CDN in AEM as a Cloud Service {#cdn}
 
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="CDN in AEM as a Cloud Service"
@@ -44,17 +43,18 @@ If a customer must use its existing CDN, they may manage it and point it to the 
 
 * Customer must have an existing CDN that would be onerous to replace.
 * Customer must manage it.
-* Customer must be able to configure the CDN to work with AEM as a Cloud Service - see the configuration instructions below.
+* Customer must be able to configure the CDN to work with AEM as a Cloud Service - see the configuration instructions presented below.
 * Customer must have engineering CDN experts that are on call in case related issues arise.
 * Customer must perform and successfully pass a load test before going to production.
 
 Configuration instructions:
 
 1. Point your CDN to the Adobe CDN’s ingress as its origin domain. For example, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. SNI must also be set to the Adobe CDN's ingress
+1. SNI must also be set to the Adobe CDN's ingress.
 1. Set the Host header to the origin domain. For example: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Set the `X-Forwarded-Host` header with the domain name so AEM can determine the host header. For example: `X-Forwarded-Host:example.com`.
 1. Set `X-AEM-Edge-Key`. The value should come from Adobe.
+
    * This is needed so that the Adobe CDN can validate the source of the requests and pass the `X-Forwarded-*` headers to the AEM application. For example,`X-Forwarded-For` is used to determine the client IP. So, it becomes the responsibility of the trusted caller (i.e. the customer-managed CDN) to ensure the correctness of the `X-Forwarded-*` headers (see the note below).
    * Optionally, access to Adobe CDN's ingress can be blocked when an `X-AEM-Edge-Key` is not present. Please inform Adobe if you need direct access to Adobe CDN's ingress (to be blocked).
 
