@@ -30,12 +30,15 @@ On the home screen, these pipelines are listed in a new card:
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. Select **Full Stack Code** or **Front End Code**. You can choose the **Repository** and the **Git Branch**. Click on **Save**.
+1. Select **[Full Stack Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** or **[Front End Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. You can choose the **Repository** and the **Git Branch**. Click on **Save**.
+
+   >[!IMPORTANT]
+   >If a Full Stack Code pipeline already exists for the selected environment, this selection will be disabled.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
    >[!NOTE]
    >Before you start configuring the Front End pipelines, see AEM Quick Site Creation Journey for an end to end workflow through the easy-to-use AEM Quick Site Creation tool. This documentation site will help you streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
-
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
 1. The newly created non-production pipeline now displays in the **Pipelines** card.
 
