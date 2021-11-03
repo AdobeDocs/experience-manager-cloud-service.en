@@ -38,6 +38,7 @@ This part of the journey applies to the Cloud Manager administrator.
 ## Requirements {#requirements}
 
 * You need to be a member of **Business Owner** role in Cloud Manager.
+* You need to be a **Sys Admin** in Cloud Manager.
 * You need to have access to the Admin Console.
 
 ## Add the Front-End Developer as a User {#add-fed-user}
