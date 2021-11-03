@@ -116,7 +116,7 @@ Follow the steps below to view reports from the trendline option:
    >1. **Custom Components and Template Trend**
    >
    >You can add or change the graphical view via the drop-down, as shown in the figure below:
-   >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+   >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### Reviewing Best Practices Analysis Report {#analysis-report}
