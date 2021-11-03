@@ -1,13 +1,14 @@
 ---
-title: Configuring Non-Production Pipelines
-description: Configuring Non-Production Pipelines
+title: Configuring a Non-Production Pipelines
+description: Follow this page to learn about Configuring a Non-Production Pipeline in Cloud Manager
 index: no
 ---
 
-# Configuring Non-Production Pipelines {#configure-non-production-pipeline}
+# Configuring a Non-Production Pipelines {#configure-non-production-pipeline}
 
 In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as Non-Production Pipelines.
-There are two types of non-production pipelines:
+
+There are two types of Non-Production pipelines:
 
 1. Code Quality: Runs code quality scans on the code in the a git branch. This pipeline executes the build and code quality steps.
 1. Deployment: In addition to executing the build and code quality steps, this pipeline deploys the code to the selected non-production to AEM as a Cloud Service environment.
