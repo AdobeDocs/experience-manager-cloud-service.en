@@ -49,7 +49,7 @@ Click on **+Add** and select **Add Production Pipeline**.
       * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
       * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
-1. The **Add Production Pipeline** dialog box includes a second tab labeled as **Source Code**. **Full Stack Code** is selected. You can choose the **Repository** and the **Git Branch**. Select the Production Deployment Options, as explained below. Click on **Continue**.
+1. The **Add Production Pipeline** dialog box includes a second tab labeled as **Source Code**. You can either select **Full Stack Code**, **Front End Code** or **Web Tier Config**. You can choose the **Repository** and the **Git Branch**. Select the Production Deployment Options, as explained below. Click on **Continue**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
