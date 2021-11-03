@@ -36,6 +36,8 @@ This part of the journey applies to the Cloud Manager administrator.
 
 * You need to have access to Cloud Manager.
 * You need to be a member of the **Deployment Manager** role in Cloud Manager.
+* A git repo for the AEM environment must be set up in Cloud Manager.
+  * This is generally already the case for any active project. However if it is not, please refer to the Cloud Manager Repositories documentation available under the [Additional Resources](#additional-resources) section.
 
 ## What is a Front-End Pipeline {#front-end-pipeline}
 
@@ -118,3 +120,4 @@ Build on this knowledge and continue your AEM Quick Site Creation journey by nex
 While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Customize the Site Theme,](customize-theme.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult the in-depth technical docs.
+* [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - If you need more information about how to set up and manage git repositories for your AEMaaCS project, please refer to this document.
