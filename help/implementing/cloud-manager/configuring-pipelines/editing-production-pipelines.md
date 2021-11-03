@@ -38,7 +38,7 @@ Follow the steps below to edit the configured pipeline:
 
 ## Additional Production Pipeline Actions {#additional-prod-actions}
 
-#### Running a Production Pipeline {#run-prod}
+### Running a Production Pipeline {#run-prod}
 
 You can run the production pipeline from the Pipelines card:
 
