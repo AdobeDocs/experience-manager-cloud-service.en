@@ -36,14 +36,13 @@ Refer to Non-Production & Code Quality Only Pipelines for more details.
 
 ## Understanding CI-CD Pipelines in Cloud Manager {#understand-pipelines}
 
-The following table categorizes the pipelines in Cloud Manager along with their usage.
+The following table summarizes all the pipelines in Cloud Manager along with their usage.
 
 |Pipeline Type|Deployment or Code Quality|Source Code|When to Use|When or Why Should I use?|
 |--- |--- |--- |---|---|---|
 |Production or Non-production|Deployment|Front End|To deploy front end code. Front end code is any code that is served as a static file. It is separate from UI code served by AEM. It includes Sites Themes, Customer defined SPAs, Firefly SPAs and any other solutions. Must be on AEM version.| Fast deployment times.<br> Multiple front-end pipelines can be configured and run concurrently per environment.|
 ||Deployment|Full Stack|To deploy back-end, front-end and HTTPD/dispatcher configuration all at the same time. Note: Some restrictions apply.| When Front end or Web Tier Config pipelines have not yet  been adopted.|
 ||Deployment|Web Tier Config|To exclusively deploy HTTPD/dispatcher configuration in a matter of minutes.  This streamlined pipeline provides users who wish to only deploy dispatcher configuration changes, an accelerated means to do so. Note: Must be on AEM version [version] | Fast deployment times.|
-
 
 
 ## Cloud Manager Front End Pipelines {#front-end}
@@ -58,10 +57,20 @@ There are two types of Front End Pipelines:
 * Front End Code Quality 
 * Front End Deployment
 
+### Before you Configure Front End Pipelines {#before-start}
+
+Before you start configuring the Front End pipelines, see AEM Quick Site Creation Journey for an end to end workflow through the easy-to-use AEM Quick Site Creation tool. This documentation site will help you streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
+
+### Configure your Front End Pipeline {#configure-front-end}
+
+To learn how to configure Front End Pipeline, refer to:
+
+* Adding a Production Pipeline
+* Adding a Non-Production Pipeline
+
 ## Full Stack Pipelines {#full-stack-pipeline}
 
 Full Stack pipeline gives the user the option to deploy back-end, front-end and HTTPD/dispatcher configuration all at the same time.  It deploys code and content to the AEM runtime including front end code (JavaScript/CSS) packaged as AEM Client Libraries. It may deploy web tier configuration if a Web Tier pipeline is not configured. This represents the 'uber' pipeline, while giving users the options to exclusively deploy their Front End code or dispatcher configuration via the Front End pipeline and the Web Tier Config pipeline respectively.
-
 
 The following restrictions will apply:
 
@@ -78,3 +87,9 @@ There are two types of Full Stack Pipelines:
 * Full Stack Code Quality Pipeline 
 * Full Stack Deployment Pipeline
 
+### Configure your Full Stack Pipeline {#configure-full-stack}
+
+To learn how to configure Full Stack Pipeline, refer to:
+
+* Adding a Production Pipeline
+* Adding a Non-Production Pipeline
