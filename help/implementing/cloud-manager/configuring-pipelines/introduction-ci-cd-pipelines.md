@@ -21,6 +21,8 @@ In Cloud Manager, there are two types of Pipelines:
 * [Production Pipeline](#prod-pipeline)
 * [Non-Production Pipeline](#non-prod-pipeline)
 
+![](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cdpipeline-overview.png)
+
 ## Production Pipeline {#prod-pipeline}
 
 A Production pipelines is a purpose built pipeline that includes a series of orchestrated steps to take source code all the way into production. The steps include building, packaging, testing, validating, and deploying into all Stage environment first. Needless to say, a Production Pipeline can only be added once a production and stage environment set is created.
