@@ -75,7 +75,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 - **Externalize AEM Workflow data for secure processing**: You can store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) elements in a customer-managed repository for secure processing. The data elements and workflow variables are not stored in AEM repository and are fetched on demand from a customer-managed repository while processing the Workflow.
 
-### Beta features of [!DNL Forms]  {#sep-what-is-new-forms-oct-prerelease}
+### Beta features of [!DNL Forms]  {#what-is-new-forms-oct2021-beta}
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) help you combine a template and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
 
