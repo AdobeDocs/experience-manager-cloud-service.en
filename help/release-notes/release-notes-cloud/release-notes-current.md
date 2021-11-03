@@ -69,18 +69,18 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### What is new in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-- **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (Anonymous) via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
+* **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (Anonymous) via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
 
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms-oct-2021}
 
-- **Externalize AEM Workflow data for secure processing**: You can store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) elements in a customer-managed repository for secure processing. The data elements and workflow variables are not stored in AEM repository and are fetched on demand from a customer-managed repository while processing the Workflow.
+* **Externalize AEM Workflow data for secure processing**: You can store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) elements in a customer-managed repository for secure processing. The data elements and workflow variables are not stored in AEM repository and are fetched on demand from a customer-managed repository while processing the Workflow.
 
 ### Beta features of [!DNL Forms]  {#what-is-new-forms-oct2021-beta}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) help you combine a template and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) help you combine a template and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
 
-  - Generate documents by populating template files (PDF and XDP) with XML data.
-  - Generate output forms in various formats, including non-interactive PDF print streams.
+  * Generate documents by populating template files (PDF and XDP) with XML data.
+  * Generate output forms in various formats, including non-interactive PDF print streams.
 
 You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
