@@ -62,8 +62,8 @@ role: Developer, Architect
   + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
     + [Introduction](cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
     + Production Pipelines {#production-pipelines}
-      + [Configuring a Production Pipeline](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
-      + [Editing a Production Pipeline](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+      + [Configuring a Production Pipeline](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+      + [Editing a Production Pipeline](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
     + Non-Production Pipelines {#non-production-pipelines}
       + [Configuring a Non-Production Pipeline](cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
       + [Editing a Non-Production Pipeline](cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
