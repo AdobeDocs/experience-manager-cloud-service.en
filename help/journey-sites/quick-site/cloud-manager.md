@@ -24,6 +24,10 @@ This document helps you understand how the AEM Quick Site Creation tool works an
 * Understand how AEM Sites and the Cloud Manager work together to facilitate front-end development
 * See how the front-end customization step is entirely decoupled from AEM and requires no AEM knowledge.
 
+This document focuses on understanding these fundamental pieces of the Quick Site creation solution before moving on to the next step of the journey where you begin configuration.
+
+Although it is recommended to proceed through this journey step-by-step, if you already understand AEM Sites and Cloud Manager work together and want to start directly with configuration, you can [skip to the next step of the journey.](create-site.md)
+
 ## Responsible Role {#responsible-role}
 
 This part of the journey applies to both the AEM administrator and the Cloud Manager administrator.
@@ -72,17 +76,29 @@ Cloud Manager is an essential component of AEM as a Cloud Service and serves as 
 
 To support customers with enterprise development setups, AEM as a Cloud Service fully integrates with Cloud Manager and its purpose-built CI/CD pipelines. The Quick Site Creation tool extends these features to support dedicated front-end development pipelines.
 
+For the purposes of this journey, a complete understanding of Cloud Manager is not necessary. At a high level, Cloud Manager consists of several levels of structure.
+
+![Cloud Manager structure](assets/cloud-manager-structure.png)
+
+* **TENANT** - Every customer is provisioned with a tenant. **WKND Travel and Adventure Enterprises** might be a tenant.
+* **PROGRAMS** - Each tenant has one or more programs. The **WKND Travel and Adventure Enterprises** tenant might have a **WKND Nightlife** and a **WKND Afternoon Projects** program.
+* **ENVIRONMENTS** - Each program has multiple environments such as production for live content, and staging and dev for development purposes. **WKND Nightlife** and **WKND Afternoon Projects** programs would both have dev, stage, and production environments.
+* **REPOSITORY** - The environments have git repositories where application and front-end code is maintained.
+* **TOOLS &amp; WORKFLOWS** - Pipelines manage the deployment of code from the repositories to the environments.
+
 ## The Quick Site Creation Front-End Development Flow {#flow}
 
 The overall flow is simple and intuitive even if you do not yet have extensive experience with Cloud Manager.
 
-1. The AEM administrator creates a new site using a site template.
+1. The AEM administrator signs into an AEM environment, and creates a new site using a site template.
 1. The Cloud Manager administrator creates a front-end pipeline in Cloud Manager. The pipeline orchestrates the deployment of code from a git repository to an AEM environment.
-1. The AEM administrator exports the site theme and provides it to the front-end developer.
+1. The AEM administrator exports the site theme from the AEM instance of the program and provides it to the front-end developer.
 1. The Cloud Manager administrator grants the front-end developer access to the AEM git repository where customizations can be committed.
 1. The front end developer retrieves access credentials to access git and the pipeline.
 1. The front-end developer customizes the theme, testing it using actual content from the site using a proxy and then commits the changes to the git repository.
-1. The front-end developer executes the pipeline to deploy the theme customizations.
+1. The front-end developer executes the pipeline to deploy the theme customizations to the production environment of the program.
+
+![Quick Site Creation flow](assets/qsc-flow.png)
 
 The major advantage of using the Quick Site Creation tool is that the pure front-end developer is only responsible the actual customization. The front-end developer has no interaction with AEM or needs any knowledge of AEM.
 

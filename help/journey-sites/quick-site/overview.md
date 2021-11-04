@@ -15,9 +15,9 @@ Start here for a guided journey through the easy-to-use AEM Quick Site Creation 
 
 AEM Sites is a powerful tool set for creating and managing digital experiences. Content authors can easily create digital experiences using the sites editor and organize the content using the sites console, all while being able to see the content live as it will be delivered by AEM to your audiences across channels.
 
-The AEM Quick Site Creation tool allows for fast customization of the theme and styling of AEM sites (JavaScript, CSS, and static resources), allowing the front-end developer to work separately from and parallel to the content creators with zero knowledge of how AEM works. The AEM administrator simply downloads the site theme and provides it to the front-end developer who customizes it using their favorite tools and then commits the changes to the AEM code repository, which is then deployed.
+The AEM Quick Site Creation tool allows non-developers to quickly create a new site from scratch by using site templates. Once created, the Quick Site Creation tool also enables fast customization of the theme and styling of the AEM site (JavaScript, CSS, and static resources). This allows the front-end developer, who need zero knowledge of AEM, to work separately from and parallel to the content creators. The AEM administrator simply downloads the site theme and provides it to the front-end developer who customizes it using their favorite tools and then commits the changes to the AEM code repository, which is then deployed.
 
-By eliminating any knowledge requirements of AEM and allowing theme development to proceed in parallel with content creation, the AEM Quick Site Creation tool greatly accelerates your site's time-to-value and increases your customization and deployment agility.
+By eliminating any developer knowledge for site creation, eliminating AEM knowledge requirements for front end development, and allowing theme development to proceed in parallel with content creation, the AEM Quick Site Creation tool greatly accelerates your site's time-to-value and increases your site customization and deployment agility.
 
 ## AEM Documentation Journeys {#documentation-journeys}
 
@@ -59,6 +59,7 @@ You are now ready to get started on your Adobe Quick Site Creation journey.
 
 * If you are an AEM or Cloud Manager administrator, or if you serve both front-end developer and administrator roles, or if you simply want to understand the end-to-end process in AEM, please start at the beginning of the journey with [Understand Cloud Manager](cloud-manager.md) as laid out below.
 * If you are only responsible for front-end development and will interact with the AEM and Cloud Manager administrators, you can skip directly to [Retrieve git repository access information](retrieve-access.md) to get access to the AEM git repository and start customizing.
+* If you already understand AEM Sites and Cloud Manager work together and want to start directly with configuration, you can [skip directly to creating a new site from a template.](create-site.md)
 
 ## Additional Resources {#additional-resources}
 
