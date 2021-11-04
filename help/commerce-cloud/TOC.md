@@ -30,8 +30,6 @@ user-guide-description: Understand how to use and administer Experience Manager 
     + [Styling CIF Components](customizing/style-cif-component.md)
     + [Customizing CIF Components](customizing/customize-cif-components.md)
     + [Using CIF catalog pickers](customizing/use-cif-pickers.md)
-  + The Components {#components}
-
 + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
 + [Migration](migration.md)
 + [FAQ](faq.md)
