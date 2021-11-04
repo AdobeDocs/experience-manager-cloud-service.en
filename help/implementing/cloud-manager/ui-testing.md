@@ -14,7 +14,7 @@ UI tests are Selenium-based tests packaged in a Docker image in order to allow a
 
 >[!NOTE]
 > Stage and production pipelines created before February 10, 2021 need to be updated in order to use the UI tests as described on this page.
-> See [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) for information about pipeline configuration.
+> See [CI-CD Pipelines in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) for information about pipeline configuration.
  
 ## Building UI Tests {#building-ui-tests}
 
@@ -106,6 +106,8 @@ The assembly descriptor instructs the plugin to create an archive of type `.tar.
 The assembly descriptor also excludes some files that might be generated while running the UI tests locally. This guarantees a smaller archive and faster builds.
 
 The archive containing the Docker build context is automatically picked up by Cloud Manager, that will build the Docker image containing your tests during its deployment pipelines. Eventually, Cloud Manager will run the Docker image to execute the UI tests against your application.
+
+The build should produce either zero or one archive. If it produces zero archive, the test step passes by default. If the build produces more than one archive, which archive is selected is non-deterministic.
 
 ## Writing UI Tests {#writing-ui-tests}
 

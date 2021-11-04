@@ -67,7 +67,6 @@ role: Developer, Architect
     + Non-Production Pipelines {#non-production-pipelines}
       + [Configuring a Non-Production Pipeline](cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
       + [Editing a Non-Production Pipeline](cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
-  + [Configuring your CI/CD Pipeline](cloud-manager/configure-pipeline.md)
   + [Deploying your Code](cloud-manager/deploy-code.md)
   + Understanding your Test Results {#test-results}
     + [Overview](/help/implementing/cloud-manager/overview-test-results.md)
