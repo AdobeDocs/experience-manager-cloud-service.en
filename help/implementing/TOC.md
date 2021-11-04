@@ -12,8 +12,9 @@ role: Developer, Architect
 + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
 + Using Cloud Manager {#using-cloud-manager}
   + Release Notes for Cloud Manager {#release-notes-cloud-manager}
-    + [Current Release Notes (2021.10.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Current Release Notes (2021.11.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2021 {#2021}
+      + [Release Notes for 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
       + [Release Notes for 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
       + [Release Notes for 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
       + [Release Notes for 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
