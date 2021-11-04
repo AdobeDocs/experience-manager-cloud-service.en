@@ -56,6 +56,9 @@ The following diagram illustrates Cloud Manager pipeline configurations with tra
 
 Front End  pipelines help your teams streamline your design and development process, by enabling accelerated front end  pipelines for deploying front end code. This differentiated pipeline deploys JavaScript and CSS to the AEM distribution layer as a theme, resulting in a new theme version which may be referenced from pages delivered from the AEM runtime. Front end code is any code that is served as a static file. It is separate from UI code served by AEM. It includes Sites Themes, Customer defined SPAs, Firefly SPAs and any other solutions. 
 
+>[!IMPORTANT]
+>You must be on AEM version `2021.10.5933.20211012T154732Z ` to leverage front end pipelines.
+
 >[!NOTE]
 >A user logged in as Deployment Manager role can create and run multiple front end pipelines concurrently. There is, however, a maximum limit of 300 pipelines per program (across all types).
 
