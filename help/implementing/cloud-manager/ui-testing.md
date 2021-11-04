@@ -107,6 +107,8 @@ The assembly descriptor also excludes some files that might be generated while r
 
 The archive containing the Docker build context is automatically picked up by Cloud Manager, that will build the Docker image containing your tests during its deployment pipelines. Eventually, Cloud Manager will run the Docker image to execute the UI tests against your application.
 
+The build should produce either zero or one archive. If it produces zero archive, the test step passes by default. If the build produces more than one archive, which archive is selected is non-deterministic.
+
 ## Writing UI Tests {#writing-ui-tests}
 
 This section describes the conventions that the Docker image containing your UI tests must follow. The Docker image is built out of the Docker build context described in the previous section.
