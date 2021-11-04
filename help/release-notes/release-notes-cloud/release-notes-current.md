@@ -47,6 +47,8 @@ Have a look at the [October 2021 Release Overview](https://video.tv.adobe.com/v/
 
 * [!DNL Assets] now includes a built-in connector to [!DNL Azure Media Services] for audio and video transcription. When configured, the supported files are automatically transcribed and generate WebVTT files. The WebVTT captions are used for more effective searching, captioning, or translation for use as subtitles.
 
+* [!DNL Assets] Dynamic Media Image Smart Crop and Swatch is now powered by latest Sensei services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits will be preserved on reprocessing, if there is no change in the width and height in the Image Profile.
+
 <!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
 * To programmatically invoke processing using asset microservices, a new API is introduced. Developers can now apply an existing folder-level processing profile on one or more specific assets in a folder. The processing profile gets applied based on custom metadata properties updates. See `AssetProcessor` in the [[!DNL Experience Manager] API reference](https://www.adobe.io/experience-manager/reference-materials/). As before, it is possible to [use asset microservices from the user interface](/help/assets/asset-microservices-configure-and-use.md).
