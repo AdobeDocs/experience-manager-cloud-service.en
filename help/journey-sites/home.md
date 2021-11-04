@@ -3,7 +3,7 @@ title: AEM Sites Journeys
 description: Start here for an overview of the guided journeys available to understand AEM's powerful sites features.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 ---
-# AEM Headless Journeys {#aem-headless-journeys}
+# AEM Sites Journeys {#aem-sites-journeys}
 
 Start here for an overview of the guided journeys available to understand AEM's powerful sites features.
 
@@ -34,5 +34,6 @@ The following Documentation Journeys are available for AEM Sites topics.
 |Title|Description|Primary Audience|
 |---|---|---|
 |[Sites Translation Journey](/help/journey-sites/translation/overview.md)|Learn about AEM Sites technologies, how they might be used in your project, and how to create and update translation projects in AEM from A to Z.|Translation Specialists|
+|[Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md)|Start here for a guided journey through the easy-to-use AEM Quick Site Creation tool to streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.|Front-end developers|
 
 Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/home.md#journeys)
