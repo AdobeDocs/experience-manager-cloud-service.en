@@ -1,7 +1,7 @@
 ---
 title: CI-CD Pipelines
 description: Follow this page to learn about Cloud Manager CI-CD Pipelines
-index: no
+index: yes
 ---
 
 # Cloud Manager CI-CD Pipelines {#intro-cicd}
