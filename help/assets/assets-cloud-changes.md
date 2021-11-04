@@ -37,7 +37,7 @@ Asset microservices provide a scalable and resilient processing of assets using 
 
 Asset microservices is a cloud-native service that is automatically provisioned and wired to [!DNL Experience Manager] in customer programs and environments managed in Cloud Manager. To extend or customize [!DNL Experience Manager], the developers can use the existing content or assets with renditions generated in a cloud environment, to test and validate their code using, displaying, downloading assets.
 
-To do an end-to-end validation of the code and process including asset ingestion and processing, deploy the code changes to a cloud-dev environment using [the pipeline](/help/implementing/cloud-manager/configure-pipeline.md) and test with full execution of asset microservices processing.
+To do an end-to-end validation of the code and process including asset ingestion and processing, deploy the code changes to a cloud-dev environment using [the pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) and test with full execution of asset microservices processing.
 
 ## Feature parity with [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
 
