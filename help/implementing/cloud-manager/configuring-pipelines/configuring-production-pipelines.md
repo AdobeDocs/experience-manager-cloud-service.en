@@ -51,10 +51,11 @@ Click on **+Add** and select **Add Production Pipeline**.
 
 1. The **Add Production Pipeline** dialog box includes a second tab labeled as **Source Code**. You can either select **[Full Stack Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** or **[Front End Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. You can choose the **Repository** and the **Git Branch**. Select the Production Deployment Options, as explained below. Click on **Continue**.
 
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
    >[!IMPORTANT]
    >If a Full Stack Code pipeline already exists for the selected environment, this selection will be disabled.
-
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+   >![](/help/implementing/cloud-manager/assets/configure-pipeline/full-stack-disabled.png)
 
    >[!NOTE]
    >Before you start configuring the Front End pipelines, see [AEM Quick Site Creation Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) for an end to end workflow through the easy-to-use AEM Quick Site Creation tool. This documentation site will help you streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
