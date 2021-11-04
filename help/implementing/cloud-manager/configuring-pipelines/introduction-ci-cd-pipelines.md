@@ -44,12 +44,6 @@ The following table summarizes all the pipelines in Cloud Manager along with the
 |Pipeline Type|Deployment or Code Quality|Source Code|When to Use|When or Why Should I use?|
 |--- |--- |--- |---|---|
 |Production or Non-Production|Deployment|Front End|Fast deployment times.<br>Multiple front-end pipelines can be configured and run concurrently per environment.<br>The Front End pipeline build pushes out of the build to a storage. When an html page is served it may reference Frontend Code static files which will be served by the CDN using this storage as an origin.|To exclusively deploy front end code containing one or more clientside UI applications. Front end code is any code that is served as a static file. It is separate from UI code served by AEM. It includes Sites Themes, Customer defined SPAs, Firefly SPAs and any other solutions.<br>Must be on AEM version 2021.10.5933.20211012T154732Z|
-||Deployment|Full Stack|When Front end pipelines have not yet  been adopted.<br>For cases where the Front End code must be deployed at exactly  the same time as the AEM Server code.|To deploy.<br>AEM Server code ((immutable content, Java code, OSGi configurations, HTTPD/dispatcher configuration, repoinit, mutable content, fonts) - containing one or more AEM server applications all at the same time.|
-|Non-Production|Code Quality|Front End|To have Cloud Manager evaluate. your build success and code quality without doing a deployment.<br>
-Multiple pipelines can be configured and run.|Run code quality scans on front end code.|
-||Code Quality|Full Stack|To have Cloud Manager evaluate. your build success and code quality without doing a deployment.<br>
-Multiple pipelines can be configured and run.|Run code quality scan on the full stack code.|
-
 
 The following diagram illustrates Cloud Manager pipeline configurations with traditional, single front-end repository or independent front-end repository setup:
 
