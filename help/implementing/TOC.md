@@ -116,6 +116,7 @@ role: Developer, Architect
   + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
   + [API Reference Materials](/help/implementing/developing/reference-materials.md)
   + [Generating Access Tokens for Server Side APIs](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+  + [Customizing Site Templates and Themes](developing/introduction/customizing-site-templates-themes.md)
   + [Headful and Headless in AEM](developing/headful-headless.md)
   + Full Stack AEM Development {#full-stack}
     + [Getting Started Developing AEM Sites - WKND Tutorial](developing/introduction/develop-wknd-tutorial.md)
