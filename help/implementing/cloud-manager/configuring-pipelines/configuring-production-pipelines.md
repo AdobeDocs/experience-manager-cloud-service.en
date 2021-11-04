@@ -49,20 +49,20 @@ Click on **+Add** and select **Add Production Pipeline**.
       * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
       * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
-1. The **Add Production Pipeline** dialog box includes a second tab labeled as **Source Code**. You can either select **[Full Stack Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** or **[Front End Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. You can choose the **Repository** and the **Git Branch**. Select the Production Deployment Options, as explained below. Click on **Continue**.
+1. The **Add Production Pipeline** dialog box includes a second tab labeled as **Source Code**. You can either select **[Front End Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** or **[Full Stack Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**. You can choose the **Repository** and the **Git Branch**. Select the Production Deployment Options, as explained below. Click on **Continue**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
    If you selected **Front End Code**, you must select the **Repository**, **Git Branch** and **Code Location**, as shown in the figure below:
     ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
-   If you selected **Full Stack Code**, you must select the **Repository**, **Git Branch** and **Production deployment Options**, as shown in the figure below:
-    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
+   If you selected **Full Stack Code**, you must select the **Repository**, **Git Branch** and **Production Deployment Options** (details below), as shown in the figure:
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
 
-    **Production Deployment Options:**
+   **Production Deployment Options:**
 
-   * **Pause before Deploying to Production**: This option allows the deployment to pause before production.
-   * **Scheduled**: This option allows the user to enable the scheduled production deployment.
+      * **Pause before Deploying to Production**: This option allows the deployment to pause before production.
+      * **Scheduled**: This option allows the user to enable the scheduled production deployment.
 
    >[!IMPORTANT]
    >If a Full Stack Code pipeline already exists for the selected environment, this selection will be disabled.
@@ -70,10 +70,7 @@ Click on **+Add** and select **Add Production Pipeline**.
 
    >[!NOTE]
    >Before you start configuring the Front End pipelines, see [AEM Quick Site Creation Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) for an end to end workflow through the easy-to-use AEM Quick Site Creation tool. This documentation site will help you streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
-
-   
-
-   
+  
 
 1. The **Add Production Pipeline** dialog box includes a third tab labeled as **Experience Audit**. This option provides a table for the URL paths that should always be included in the Experience Audit. 
 
