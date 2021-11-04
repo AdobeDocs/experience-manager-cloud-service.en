@@ -43,7 +43,7 @@ The following table summarizes all the pipelines in Cloud Manager along with the
 
 |Pipeline Type|Deployment or Code Quality|Source Code|When to Use|When or Why Should I use?|
 |--- |--- |--- |---|---|
-|Production or Non-Production|Deployment|Front End|Fast deployment times.<br>Multiple front-end pipelines can be configured and run concurrently per environment.<br>The Front End pipeline build pushes out of the build to a storage. When an html page is served it may reference Frontend Code static files which will be served by the CDN using this storage as an origin.|To exclusively deploy front end code containing one or more clientside UI applications. Front end code is any code that is served as a static file. It is separate from UI code served by AEM. It includes Sites Themes, Customer defined SPAs, Firefly SPAs and any other solutions.<br>Must be on AEM version 2021.10.5933.20211012T154732Z|
+|Production or Non-Production|Deployment|Front End|Fast deployment times.<br>Multiple front-end pipelines can be configured and run concurrently per environment.<br>The Front End pipeline build pushes out of the build to a storage. When an html page is served it may reference Frontend Code static files which will be served by the CDN using this storage as an origin.|To exclusively deploy front end code containing one or more clientside UI applications. Front end code is any code that is served as a static file. It is separate from UI code served by AEM. It includes Sites Themes, Customer defined SPAs, Firefly SPAs and any other solutions.<br>Must be on AEM version 2021.10.5933.20211012T154732Z<br>Must have Sites enabled.|
 |Production or Non-Production|Deployment|Full Stack|When Front end pipelines have not yet  been adopted.<br>For cases where the Front End code must be deployed at exactly  the same time as the AEM Server code.|To deploy AEM Server code (immutable content, Java code, OSGi configurations, HTTPD/dispatcher configuration, repoinit, mutable content, fonts) - containing one or more AEM server applications all at the same time.|
 |Non-Production|Code Quality|Front End|To have Cloud Manager evaluate. your build success and code quality without doing a deployment.<br>Multiple pipelines can be configured and run.|Run code quality scans on front end code.|
 |Non-Production|Code Quality|Full Stack|To have Cloud Manager evaluate. your build success and code quality without doing a deployment.<br>Multiple pipelines can be configured and run.|Run code quality scan on the full stack code.|
@@ -79,6 +79,7 @@ To learn how to configure Front End Pipeline, refer to:
 ## Full Stack Pipelines {#full-stack-pipeline}
 
 Full Stack pipeline gives the user the option to deploy back-end, front-end and HTTPD/dispatcher configuration all at the same time.  It deploys code and content to the AEM runtime including front end code (JavaScript/CSS) packaged as AEM Client Libraries. It may deploy web tier configuration if a Web Tier pipeline is not configured. This represents the 'uber' pipeline, while giving users the options to exclusively deploy their Front End code or dispatcher configuration via the Front End pipeline and the Web Tier Config pipeline respectively.
+These can be of the type Full Stack - Code Quality or Full Stack - Deployment pipeline.
 
 The following restrictions will apply:
 
@@ -90,7 +91,6 @@ The following restrictions will apply:
 
 1. The Full Stack pipeline for an environment will ignore the dispatcher configuration if the corresponding Web Tier Config pipeline for the environment exists.  
 
-These can be of the type Full Stack - Code Quality or Full Stack - Deployment pipeline.
 
 ### Configure a Full Stack Pipeline {#configure-full-stack}
 
