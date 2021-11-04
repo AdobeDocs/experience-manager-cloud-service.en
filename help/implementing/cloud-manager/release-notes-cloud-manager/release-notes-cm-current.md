@@ -18,7 +18,10 @@ The next release is planned for January, 2022.
 
 ### What's New {#what-is-new}
 
-* Users can now leverage new Front End pipelines to exclusively deploy front end code in an accelerated manner. Must be on AEM version `2021.10.5933.20211012T154732Z`.
+* Users can now leverage new Front End pipelines to exclusively deploy front end code in an accelerated manner. See [Cloud Manager Front End Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) to learn more.
+
+   >[!IMPORANT]
+   >You must be on AEM version `2021.10.5933.20211012T154732Z` to leverage new Front End pipelines.
 
 * Code Quality pipeline duration is significantly reduced by performing the code analysis in a more efficient way without the need of building a whole AEM image.
 
@@ -28,7 +31,7 @@ The next release is planned for January, 2022.
 
 * Environment Creation is now available via publicly exposed API.
 
-* The `x-request-id` response header is now visible in the API Playground on www.adobe.io. This header is useful when submitting customer care issues for troubleshooting.
+* The `x-request-id` response header is now visible in the API Playground on [www.adobe.io](https://www.adobe.io/). This header is useful when submitting customer care issues for troubleshooting.
 
 * As a user, I see  Pipeline card with zero pipelines provide me with appropriate guidance.
 
