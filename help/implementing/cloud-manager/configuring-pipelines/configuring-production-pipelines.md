@@ -57,7 +57,7 @@ Click on **+Add** and select **Add Production Pipeline**.
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
    >[!NOTE]
-   >Before you start configuring the Front End pipelines, see AEM Quick Site Creation Journey for an end to end workflow through the easy-to-use AEM Quick Site Creation tool. This documentation site will help you streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
+   >Before you start configuring the Front End pipelines, see [AEM Quick Site Creation Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) for an end to end workflow through the easy-to-use AEM Quick Site Creation tool. This documentation site will help you streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
 
    Production Deployment Options:
 
