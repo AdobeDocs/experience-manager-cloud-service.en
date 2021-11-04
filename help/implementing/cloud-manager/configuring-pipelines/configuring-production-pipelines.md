@@ -1,7 +1,7 @@
 ---
 title: Configuring Production Pipelines
 description: Configuring Production Pipelines
-index: no
+index: yes
 ---
 
 # Configuring a Production Pipeline {#configure-production-pipeline}

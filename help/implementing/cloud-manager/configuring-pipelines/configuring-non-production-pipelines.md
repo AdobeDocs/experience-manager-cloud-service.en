@@ -1,7 +1,7 @@
 ---
 title: Configuring a Non-Production Pipelines
 description: Follow this page to learn about Configuring a Non-Production Pipeline in Cloud Manager
-index: no
+index: yes
 ---
 
 # Configuring a Non-Production Pipelines {#configure-non-production-pipeline}
@@ -35,7 +35,7 @@ On the home screen, these pipelines are listed in a new card:
    >[!IMPORTANT]
    >If a Full Stack Code pipeline already exists for the selected environment, this selection will be disabled.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-confignew1.png)
 
    >[!NOTE]
    >Before you start configuring the Front End pipelines, see [AEM Quick Site Creation Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) for an end to end workflow through the easy-to-use AEM Quick Site Creation tool. This documentation site will help you streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
