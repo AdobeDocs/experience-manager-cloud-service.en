@@ -14,7 +14,7 @@ This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service
 ## Release Date {#release-date}
 
 The Release Date for Cloud Manager in AEM as a Cloud Service 2021.11.0 is November 04, 2021.
-The next release is planned for January, 2022.
+The next release is planned for December 09, 2021.
 
 ### What's New {#what-is-new}
 
@@ -23,7 +23,7 @@ The next release is planned for January, 2022.
    >[!IMPORANT]
    >You must be on AEM version `2021.10.5933.20211012T154732Z` to leverage new Front End pipelines.
 
-* Code Quality pipeline duration is significantly reduced by performing the code analysis in a more efficient way without the need of building a whole AEM image.
+* Code Quality pipeline duration is significantly reduced by performing the code analysis in a more efficient way without the need of building a whole AEM image. This change will roll out progressively over the weeks following the release.
 
 * The Git Commit ID will now be displayed in the pipeline execution details making it easier to track the code that was built.
 
