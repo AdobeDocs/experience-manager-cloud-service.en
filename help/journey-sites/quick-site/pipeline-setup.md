@@ -125,4 +125,4 @@ While it is recommended that you move on to the next part of the Quick Site Crea
 
 * [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult the in-depth technical docs.
 * [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - If you need more information about how to set up and manage git repositories for your AEMaaCS project, please refer to this document.
-* [Configure CI/CD Pipeline - Cloud Services](/help/implementing/cloud-manager/configure-pipeline.md) - Learn more details about setting up pipelines, both full stack and front end, in this document.
+* [Configure CI/CD Pipeline - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - Learn more details about setting up pipelines, both full stack and front end, in this document.

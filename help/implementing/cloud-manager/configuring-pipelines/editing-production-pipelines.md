@@ -1,7 +1,7 @@
 ---
 title: Editing a Production Pipeline
 description: Editing a Production Pipeline
-index: no
+index: yes
 ---
 
 # Editing a Production Pipeline {#edit-prod-pipeline}
