@@ -1,6 +1,6 @@
 ---
 title: CI-CD Pipelines
-description: CI-CD Pipelines
+description: Follow this page to learn about Cloud Manager CI-CD Pipelines
 index: no
 ---
 
@@ -21,18 +21,21 @@ In Cloud Manager, there are two types of Pipelines:
 * [Production Pipeline](#prod-pipeline)
 * [Non-Production Pipeline](#non-prod-pipeline)
 
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config.png)
+
+
 ## Production Pipeline {#prod-pipeline}
 
 A Production pipelines is a purpose built pipeline that includes a series of orchestrated steps to take source code all the way into production. The steps include building, packaging, testing, validating, and deploying into all Stage environment first. Needless to say, a Production Pipeline can only be added once a production and stage environment set is created.
 
-Refer to Configuring Production Pipeline for more details.
+Refer to [Configuring a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) for more details.
 
 
 ## Non-Production Pipeline {#non-prod-pipeline}
 
 A Non-Production Pipeline aims to run code-quality scans or to deploy source code into a development environment. 
 
-Refer to Non-Production & Code Quality Only Pipelines for more details.
+Refer to [Configuring a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) for more details.
 
 ## Understanding CI-CD Pipelines in Cloud Manager {#understand-pipelines}
 
@@ -40,10 +43,14 @@ The following table summarizes all the pipelines in Cloud Manager along with the
 
 |Pipeline Type|Deployment or Code Quality|Source Code|When to Use|When or Why Should I use?|
 |--- |--- |--- |---|---|---|
-|Production or Non-production|Deployment|Front End|To deploy front end code. Front end code is any code that is served as a static file. It is separate from UI code served by AEM. It includes Sites Themes, Customer defined SPAs, Firefly SPAs and any other solutions. Must be on AEM version.| Fast deployment times.<br> Multiple front-end pipelines can be configured and run concurrently per environment.|
-||Deployment|Full Stack|To deploy back-end, front-end and HTTPD/dispatcher configuration all at the same time. Note: Some restrictions apply.| When Front end or Web Tier Config pipelines have not yet  been adopted.|
-||Deployment|Web Tier Config|To exclusively deploy HTTPD/dispatcher configuration in a matter of minutes.  This streamlined pipeline provides users who wish to only deploy dispatcher configuration changes, an accelerated means to do so. Note: Must be on AEM version [version] | Fast deployment times.|
+|Production or Non-Production|Deployment|Front End|Fast deployment times.<br>Multiple front-end pipelines can be configured and run concurrently per environment.<br>The Front End pipeline build pushes out of the build to a storage. When an html page is served it may reference Frontend Code static files which will be served by the CDN using this storage as an origin.|To exclusively deploy front end code containing one or more clientside UI applications. Front end code is any code that is served as a static file. It is separate from UI code served by AEM. It includes Sites Themes, Customer defined SPAs, Firefly SPAs and any other solutions.<br>Must be on AEM version `2021.10.5933.20211012T154732Z`|
+|Production or Non-Production|Deployment|Full Stack|When Front end pipelines have not yet  been adopted.<br>For cases where the Front End code must be deployed at exactly the same time as the AEM Server code.|To deploy AEM Server code (immutable content, Java code, OSGi configurations, HTTPD/dispatcher configuration, repoinit, mutable content, fonts) - containing one or more AEM server applications all at the same time.|
+|Non-Production|Code Quality|Front End|To have Cloud Manager evaluate your build success and code quality without doing a deployment.<br>Multiple pipelines can be configured and run.| Run code quality scans on front end code.|
+|Non-Production|Code Quality|Full Stack|To have Cloud Manager evaluate your build success and code quality without doing a deployment.<br>Multiple pipelines can be configured and run.|Run code quality scan on the full stack code.|
 
+The following diagram illustrates Cloud Manager pipeline configurations with traditional, single front-end repository or independent front-end repository setup:
+
+![](/help/implementing/cloud-manager/assets/configure-pipeline/cm-setup.png)
 
 ## Cloud Manager Front End Pipelines {#front-end}
 
@@ -52,21 +59,18 @@ Front End  pipelines help your teams streamline your design and development proc
 >[!NOTE]
 >A user logged in as Deployment Manager role can create and run multiple front end pipelines concurrently. There is, however, a maximum limit of 300 pipelines per program (across all types).
 
-There are two types of Front End Pipelines:
-
-* Front End Code Quality 
-* Front End Deployment
+These can be of the type Front End Code Quality or Front End Deployment pipelines.
 
 ### Before you Configure Front End Pipelines {#before-start}
 
 Before you start configuring the Front End pipelines, see AEM Quick Site Creation Journey for an end to end workflow through the easy-to-use AEM Quick Site Creation tool. This documentation site will help you streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
 
-### Configure your Front End Pipeline {#configure-front-end}
+### Configure a Front End Pipeline {#configure-front-end}
 
 To learn how to configure Front End Pipeline, refer to:
 
-* Adding a Production Pipeline
-* Adding a Non-Production Pipeline
+* [Adding a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
+* [Adding a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
 ## Full Stack Pipelines {#full-stack-pipeline}
 
@@ -82,14 +86,11 @@ The following restrictions will apply:
 
 1. The Full Stack pipeline for an environment will ignore the dispatcher configuration if the corresponding Web Tier Config pipeline for the environment exists.  
 
-There are two types of Full Stack Pipelines:
+These can be of the type Full Stack - Code Quality or Full Stack - Deployment pipeline.
 
-* Full Stack Code Quality Pipeline 
-* Full Stack Deployment Pipeline
-
-### Configure your Full Stack Pipeline {#configure-full-stack}
+### Configure a Full Stack Pipeline {#configure-full-stack}
 
 To learn how to configure Full Stack Pipeline, refer to:
 
-* Adding a Production Pipeline
-* Adding a Non-Production Pipeline
+* [Adding a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline))
+* [Adding a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
