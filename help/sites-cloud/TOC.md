@@ -24,6 +24,7 @@ role: User
   + Authoring Fundamentals {#fundamentals}
     + [Environment and Tools](authoring/fundamentals/environment-tools.md)
     + [Adding Page Annotations](authoring/fundamentals/annotations.md)
+    + [Creating a New Site](authoring/fundamentals/create-site.md)
     + [Creating and Organizing Pages](authoring/fundamentals/organizing-pages.md)
     + [Editing Page Content](authoring/fundamentals/editing-content.md)
     + [The Rich Text Editor](authoring/fundamentals/rich-text-editor.md)
@@ -76,6 +77,10 @@ role: User
     + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
     + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Administering {#administering}
+  + Site Creation {#site-creation}
+    + [Creating a New Site](administering/site-creation/create-site.md)
+    + [Site Templates](administering/site-creation/site-templates.md)
+    + [Site Themes](administering/site-creation/site-themes.md)
   + [Administering Workflows](administering/workflows-administering.md)
   + Reusing Content {#reusing-content}
     + [MSM and Translation](administering/msm-and-translation.md)
