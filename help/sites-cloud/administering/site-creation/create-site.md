@@ -17,6 +17,12 @@ Learn how to use AEM create a site using site templates to define the style and 
 
 Before content authors can create pages with content, the site must first be created. This is generally performed by an AEM administrator who defines the initial structure of the site. Using site templates makes site creation fast and flexible.
 
+The AEM Quick Site Creation tool allows non-developers to quickly create a new site from scratch by using site templates.
+
+Once created, the Quick Site Creation tool also enables fast customization of the theme and styling of the AEM site (JavaScript, CSS, and static resources). This allows the front-end developer, who need zero knowledge of AEM, to work separately from and parallel to the content creators. The AEM administrator simply downloads the site theme and provides it to the front-end developer who customizes it using their favorite tools and then commits the changes to the AEM code repository, which is then deployed.
+
+This document focuses on site creation using the Quick Site Creation tool. If you would like an overview of the site creation and customization workflow, please refer to the [AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md)
+
 ## Planning Site Structure {#structure}
 
 Take time to consider your site's purpose and planned content well in advance. This will drive how you design the structure of the site. A good site structure supports easy navigation and content discovery for your site visitors as well as supports various AEM features such as [multisite management and translation.](/help/sites-cloud/administering/msm-and-translation.md)
