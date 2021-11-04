@@ -79,6 +79,7 @@ To learn how to configure Front End Pipeline, refer to:
 ## Full Stack Pipelines {#full-stack-pipeline}
 
 Full Stack pipeline gives the user the option to deploy back-end, front-end and HTTPD/dispatcher configuration all at the same time.  It deploys code and content to the AEM runtime including front end code (JavaScript/CSS) packaged as AEM Client Libraries. It may deploy web tier configuration if a Web Tier pipeline is not configured. This represents the 'uber' pipeline, while giving users the options to exclusively deploy their Front End code or dispatcher configuration via the Front End pipeline and the Web Tier Config pipeline respectively.
+These can be of the type Full Stack - Code Quality or Full Stack - Deployment pipeline.
 
 The following restrictions will apply:
 
@@ -90,7 +91,6 @@ The following restrictions will apply:
 
 1. The Full Stack pipeline for an environment will ignore the dispatcher configuration if the corresponding Web Tier Config pipeline for the environment exists.  
 
-These can be of the type Full Stack - Code Quality or Full Stack - Deployment pipeline.
 
 ### Configure a Full Stack Pipeline {#configure-full-stack}
 
