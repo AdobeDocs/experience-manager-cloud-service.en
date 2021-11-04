@@ -36,35 +36,18 @@ Have a look at the [October 2021 Release Overview](https://video.tv.adobe.com/v/
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* Annotation of PDF files is now supported using native commenting and annotation tools from Adobe Document Cloud. Annotate PDF content by adding text, highlights, sticky notes, and drawings directly within the document preview window. Users can also jump to pages of interest in the PDF by clicking on specific comments
-
-* Users can now sort the assets displayed in the search results in Column and Card views. The sorting works on Name, Created, Modified, or None columns.
-
-  ![Sort the search results in [!DNL Assets] in Column and Card views](/help/assets/assets/sort-searched-assets.png)
-  *Figure: Sort the search results in [!DNL Assets] in Column and Card views.*
+* [!DNL Experience Manager] now supports auto-generation of text transcripts from the supported audio and video assets, using a built-in connector to [!DNL Azure Media Services]. The supported files are automatically transcribed and the text is stored in WebVTT format. The WebVTT captions are used for more effective searching, captioning, or translation. Also, the feature improves accessibility, discoverability, and localization of the assets.
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-* [!DNL Assets] now includes a built-in connector to [!DNL Azure Media Services] for audio and video transcription. When configured, the supported files are automatically transcribed and generate WebVTT files. The WebVTT captions are used for more effective searching, captioning, or translation for use as subtitles.
+* [!DNL Dynamic Media] Image Smart Crop and Swatch is now powered by latest Sensei services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits will be preserved on reprocessing, if there is no change in the width and height in the Image Profile.
 
-* [!DNL Assets] Dynamic Media Image Smart Crop and Swatch is now powered by latest Sensei services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits will be preserved on reprocessing, if there is no change in the width and height in the Image Profile.
+* Smart Tags are automatically applied to the assets using asset microservices, instead of Smart Content Services. The underlying model is updated to improve tagging results and reduce bias. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
-<!-- TBD: 'Unpublishing' this feature as suggested by engineering.
-
-* To programmatically invoke processing using asset microservices, a new API is introduced. Developers can now apply an existing folder-level processing profile on one or more specific assets in a folder. The processing profile gets applied based on custom metadata properties updates. See `AssetProcessor` in the [[!DNL Experience Manager] API reference](https://www.adobe.io/experience-manager/reference-materials/). As before, it is possible to [use asset microservices from the user interface](/help/assets/asset-microservices-configure-and-use.md).
-
--->
 <!-- Leave this commented.
-
-### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
-
-Apparently, no new Assets features in Sep prerelease channel.
-A/V transcription feature via CQ-4303854 has moved to Oct prerelease now.
-
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
-No customer-reported bugs fixed in Sep release.
-CQ-4328183 was not reported on CS so not documented here.
+No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 -->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
