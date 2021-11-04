@@ -284,7 +284,7 @@ In order to ensure proper installation of the packages, it is recommended inter-
 
 The general rule is packages containing mutable content (`ui.content`) should depend on the immutable code (`ui.apps`) that supports the rendering and use of the mutable content.
 
-A notable exception to this general rule is if the immutable code package (`ui.apps` or any other), __only__ contains OSGi bundles. If so, no AEM package should declare a dependency on it. This is because immutable code packages __only__ containing OSGi bundles are not registered with AEM Package Manager, and therefore, any AEM package depending on it will have an unsatisfied dependency and fail to install.
+A notable exception to this general rule is if the immutable code package (`ui.apps` or any other), __only__ contains OSGi bundles. If so, no AEM package should declare a dependency on it. This is because immutable code packages __only__ containing OSGi bundles are not registered with AEM [Package Manager,](/help/implementing/developing/tools/package-manager.md) and therefore, any AEM package depending on it will have an unsatisfied dependency and fail to install.
 
 >[!TIP]
 >

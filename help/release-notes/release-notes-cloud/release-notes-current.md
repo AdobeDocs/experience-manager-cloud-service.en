@@ -20,7 +20,7 @@ The following section outlines the general Release Notes for the current (latest
 ## Release Date {#release-date}
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2021.9.0) is October 6, 2021.
-The following release (2021.10.0) is on October 27, 2021.
+The following release (2021.10.0) is on November 4, 2021.
 
 ## Release Video {#release-video}
 
@@ -135,10 +135,6 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 **Advanced Networking**
 
->[!INFO]
->
->The advanced networking feature is part of the 2021.9.0 release, and will be enabled for customers in mid-October.
-
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] now offers several types of advanced networking capabilities, including:
 
 * Flexible Port egress to egress traffic out of non-standard ports. Now possible without contacting Adobe Support.
@@ -149,7 +145,7 @@ Read the [documentation](/help/security/configuring-advanced-networking.md) for 
 
 **Index Optimizations**
 
-To improve the performance of search queries and indexing, the full-text index lucene-2 is no longer included out-of-the-box in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] from this release. In order to remove this full-text index on AEM environments in accordance with AEM customers, Adobe Engineering works individually and pro-actively with customers for a gentle and sustainable removal of the Lucene full-text index. Please visit the [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentation](/help/operations/indexing.md#index-optimizations) for more information and contact our support directly if you have any questions.
+To improve the performance of search queries and indexing, the full-text index lucene-2 is no longer used out-of-the-box in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] from this release. In order to remove this full-text index on AEM environments in accordance with AEM customers, Adobe Engineering works individually and pro-actively with customers for a gentle and sustainable removal of the Lucene full-text index. Please visit the [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentation](/help/operations/indexing.md#index-optimizations) for more information and contact our support directly if you have any questions.
 
 ## Cloud Manager {#cloud-manager}
 
