@@ -12,8 +12,9 @@ role: Developer, Architect
 + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
 + Using Cloud Manager {#using-cloud-manager}
   + Release Notes for Cloud Manager {#release-notes-cloud-manager}
-    + [Current Release Notes (2021.10.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Current Release Notes (2021.11.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2021 {#2021}
+      + [Release Notes for 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
       + [Release Notes for 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
       + [Release Notes for 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
       + [Release Notes for 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
@@ -58,6 +59,14 @@ role: Developer, Architect
     + [Integrating Git with Adobe Cloud Manager](cloud-manager/managing-code/integrating-with-git.md)
     + [Working with Multiple Source Git Repositories](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
     + [Enterprise Team Development Setup for AEM as a Cloud Service](cloud-manager/managing-code/enterprise-team-dev-setup.md)
+  + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
+    + [Introduction](cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+    + Production Pipelines {#production-pipelines}
+      + [Configuring a Production Pipeline](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
+      + [Editing a Production Pipeline](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+    + Non-Production Pipelines {#non-production-pipelines}
+      + [Configuring a Non-Production Pipeline](cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+      + [Editing a Non-Production Pipeline](cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
   + [Configuring your CI/CD Pipeline](cloud-manager/configure-pipeline.md)
   + [Deploying your Code](cloud-manager/deploy-code.md)
   + Understanding your Test Results {#test-results}
