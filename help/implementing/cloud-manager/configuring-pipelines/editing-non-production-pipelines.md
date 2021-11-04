@@ -8,6 +8,9 @@ index: no
 
 You can edit the pipeline configurations from the **Pipelines card** from **Program Overview** page. 
 
+>[!IMPORTANT]
+>You cannot edit a pipeline that is running.
+
 Follow the steps below to edit the configured non-production pipeline:
 
 1. Navigate to **Pipelines** card from the **Program Overview** page.
