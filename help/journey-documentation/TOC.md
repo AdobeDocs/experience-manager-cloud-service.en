@@ -2,7 +2,7 @@
 sub-product: AEM Documentation Journeys
 user-guide-title: AEM Documentation Journeys
 breadcrumb-title: AEM Documentation Journeys
-user-guide-description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your project.
+user-guide-description: Documentation Journeys provide a narrative structure within AEM documentation by tying together complex and disparate features in order to solve a business goal in a best-practices fashion. Designed with AEM beginners in mind, journeys introduce the concepts and features to achieve a goal from A to Z.
 feature: Developer Tools
 role: Developer, Architect
 ---
@@ -20,18 +20,28 @@ Please note that all links to other guides need to be absolute references with l
   + [Overview to Onboarding Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/onboarding-journey-overview.html)
   + [Getting Started with Onboarding Process](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/get-started-onboarding-journey.html)
   + [Assign Team Members to Cloud Manager Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/assign-team-members-cloud-manager.html)
-  + [Setup Cloud Resources via Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/setup-cloud-resources-via-cloud-manager.html)
+  + [Set Up Cloud Resources via Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/setup-cloud-resources-via-cloud-manager.html)
   + [Assign Team Members to AEM as a Cloud Service Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/assign-team-members-aem-cloud-service.html)
   + [Learning Path for Developers and Deployment Managers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-developers-deploymentmanagers.html)
   + [Learning Path for AEM Users](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-aem-users.html)
-+ Sites Translation Journey {#sites-translation}
-  + [Understand sites translation in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
-  + [Get started with AEM sites translation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/getting-started.html)
-  + [Learn about sites content and how to translate in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/learn-about.html)
-  + [Configure translation connector](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/configure-connector.html)
-  + [Configure translation rules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translation-rules.html)
-  + [Translate content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translate-content.html)
-  + [Publish translated content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/publish-content.html)
++ Sites Journeys {#sites}
+  + [Sites Journeys Home](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/home.html)
+  + Quick Site Creation Journey {#quick-site}
+    + [Understand Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/cloud-manager.html)
+    + [Create site from template](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/create-site.html)
+    + [Set up your pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/pipeline-setup.html)
+    + [Grant access to the front-end developer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/grant-access.html)
+    + [Retrieve git repository access information](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/retrieve-access.html)
+    + [Customize the site theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/customize-theme.html)
+    + [Deploy your customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/deploy-theme.html)
+  + Sites Translation Journey {#translation}
+    + [Understand sites translation in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
+    + [Get started with AEM sites translation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/getting-started.html)
+    + [Learn about sites content and how to translate in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/learn-about.html)
+    + [Configure translation connector](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/configure-connector.html)
+    + [Configure translation rules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translation-rules.html)
+    + [Translate content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translate-content.html)
+    + [Publish translated content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/publish-content.html)
 + Headless Journeys {#headless}
   + [Headless Journeys Home](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
    + Headless Developer Journey {#developer}
