@@ -49,9 +49,15 @@ Click on **+Add** and select **Add Production Pipeline**.
       * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
       * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
-1. The **Add Production Pipeline** dialog box includes a second tab labeled as **Source Code**. You can either select **Full Stack Code**, **Front End Code** or **Web Tier Config**. You can choose the **Repository** and the **Git Branch**. Select the Production Deployment Options, as explained below. Click on **Continue**.
+1. The **Add Production Pipeline** dialog box includes a second tab labeled as **Source Code**. You can either select **[Full Stack Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** or **[Front End Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. You can choose the **Repository** and the **Git Branch**. Select the Production Deployment Options, as explained below. Click on **Continue**.
+
+   >[!IMPORTANT]
+   >If a Full Stack Code pipeline already exists for the selected environment, this selection will be disabled.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+   >[!NOTE]
+   >Before you start configuring the Front End pipelines, see AEM Quick Site Creation Journey for an end to end workflow through the easy-to-use AEM Quick Site Creation tool. This documentation site will help you streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
 
    Production Deployment Options:
 
@@ -93,7 +99,5 @@ Click on **+Add** and select **Add Production Pipeline**.
    * **Add** - allows adding of a new pipeline.
    * **Access Repo Info** - allows the user to get the information necessary to access Cloud Manager Git repository.
    * **Learn More** - navigates to understanding the CI/CD pipeline documentation resource. 
-
-
 
 
