@@ -3,7 +3,7 @@ title: Create Program
 description: Learn how to set up a new program and pipeline to deploy the add-on.
 ---
 
-# Create Program {#create-program}
+# Create Program {#creating-a-program}
 
 Learn how to set up a new program and pipeline to deploy the add-on.
 

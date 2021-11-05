@@ -3,7 +3,7 @@ title: Create Demo Site
 description: Create a demo site in AEM based on a library of pre-configured templates.
 ---
 
-# Create Demo Site {#create-site}
+# Create Demo Site {#creating-a-site}
 
 Create a demo site in AEM based on a library of pre-configured templates.
 
