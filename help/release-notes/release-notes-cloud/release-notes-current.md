@@ -36,7 +36,7 @@ Have a look at the [October 2021 Release Overview](https://video.tv.adobe.com/v/
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] now supports auto-generation of text transcripts from the supported audio and video assets, using a built-in connector to [!DNL Azure Media Services]. The supported files are automatically transcribed and the text is stored in WebVTT format. The WebVTT captions are used for more effective searching, captioning, or translation. Also, the feature improves accessibility, discoverability, and localization of the assets.
+* [!DNL Experience Manager] now supports auto-generation of text transcripts from the supported audio and video assets, using a built-in connector to [!DNL Azure Media Services]. The [supported file types](/help/assets/file-format-support.md#audio-video-transcription-formats) are automatically transcribed and the text is stored in WebVTT format. The WebVTT captions are used for more effective searching, captioning, or translation. Also, the feature improves accessibility, discoverability, and localization of the assets.
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
