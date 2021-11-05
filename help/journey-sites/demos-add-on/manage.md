@@ -9,7 +9,7 @@ Learn about the tools available to help you manage your demo sites and how to re
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Quick Site Creation journey, [Create Site,](cloud-manager.md) you created a new demo site based on the templates of the Reference Demo Add-On. You should now:
+In the previous document of the AEM Quick Site Creation journey, [Create Site,](create-site.md) you created a new demo site based on the templates of the Reference Demo Add-On. You should now:
 
 * Understand how to access the AEM authoring environment.
 * Know how to create a site based on a template.
