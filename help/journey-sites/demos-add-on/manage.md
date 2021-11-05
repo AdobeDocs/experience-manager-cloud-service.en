@@ -33,7 +33,7 @@ Now that you have your own demo sites, you probably would like to know how you c
 
    ![Self-Service Demo Utilities](assets/demo-utilities.png)
 
-1. Self-Service Demo Utilities is a collection of useful functionality that will help setup and monitor your Adobe Experience Manager environment. This the initial view is the *Dashboard**, which serves as a status check of the environment and its demo functionality.
+1. Self-Service Demo Utilities is a collection of useful functionality that will help setup and monitor your Adobe Experience Manager environment. This the initial view is the **Dashboard**, which serves as a status check of the environment and its demo functionality.
 
    ![Dashboard](assets/dashboard.png)
 
