@@ -9,7 +9,7 @@ Learn about Cloud Manager and how it is used to install the add-on.
 
 >[!TIP]
 >
->If you already are experienced with Cloud Manager or want to jump directly to configuration and usage of the add-on, please skip to [Create a Program and a Pipeline](create-program.md)
+>If you already are experienced with Cloud Manager or want to jump directly to configuration and usage of the add-on, you may skip to [Create a Program and a Pipeline](create-program.md)
 >
 >If you want to learn how Cloud Manager and AEM work together to create your demo environments as well as how to set up and use your own, please continue reading the current document.
 
@@ -23,11 +23,11 @@ This document helps you understand how the installation process of the Reference
 
 This document focuses on understanding these fundamental pieces of the AEM Reference Demo Add-On before moving on to the next step of the journey where you begin installation.
 
-Although it is recommended to proceed through this journey step-by-step, f you already are experienced with Cloud Manager or want to jump directly to configuration and usage of the add-on, please skip to [Create a Program and a Pipeline](create-program.md)
+Although it is recommended to proceed through this journey step-by-step, if you already are experienced with Cloud Manager or want to jump directly to configuration and usage of the add-on, you may skip to [Create a Program and a Pipeline](create-program.md)
 
 ## Responsible Role {#responsible-role}
 
-This journey applies to a system administrator who is a member of the **Business Owner** role in Cloud Manager.
+This journey applies to a system administrator who is a member of the **Business Owner** role in Cloud Manager for your organization.
 
 ## Requirements and Prerequisites {#requirements-prerequisites}
 
@@ -39,7 +39,7 @@ There are minimal requirements to learn about and begin using the Reference Demo
 
 ### Tools {#tools}
 
-* Be a member of **Business Owner** role in Cloud Manager
+* Be a member of **Business Owner** role in Cloud Manager for your organization
 
 ## Installation Flow {#installation-flow}
 
@@ -47,20 +47,18 @@ The installation of the AEM Reference Demos Add-On is conceptually quite simple.
 
 1. A new AEM program is created in Cloud Manager for testing purposes.
 1. The demo content and configurations is deployed to the program using a pipeline in Cloud Manager. The demo content contains
-   * Site templates used to create various AEM sites using features of AEM, repopulated with best practices examples.
+   * Site templates used to create various AEM sites using features of AEM, prepopulated with best practices examples.
    * Configuration tools to manage your demo content.
-1. Using the quick site creation tool, you can create demo sites based on the templates.
-1. Using the configuration tools, you can manage those demo sites and template including deleting them when no longer needed.
+1. Using the quick site creation tool, you create demo sites based on the templates.
+1. Using the configuration tools, you manage those demo sites and template including deleting them when no longer needed.
 
-The remainder of this document gives a bit more detail and context around Cloud Manager and AEM templates.
+The remainder of this document gives a bit more detail and context around Cloud Manager and AEM templates before moving on to configuration in the next part of the journey.
 
 ## Cloud Manager {#cloud-manager}
 
 Cloud Manager is an essential component of AEM as a Cloud Service and serves as the single entry point for the platform.
 
-Cloud Manager is used to administer the cloud resources supporting your AEM projects including the environments and tools needed.
-
-For the purposes of this journey, a complete understanding of Cloud Manager is not necessary. At a high level, Cloud Manager consists of several levels of structure.
+Cloud Manager is used to administer the cloud resources supporting your AEM projects including the environments and tools needed. For the purposes of this journey, a complete understanding of Cloud Manager is not necessary. At a high level, Cloud Manager consists of several levels of structure.
 
 ![Cloud Manager structure](assets/cloud-manager-structure.png)
 
@@ -70,7 +68,7 @@ For the purposes of this journey, a complete understanding of Cloud Manager is n
 * **REPOSITORY** - The environments have git repositories where application and front-end code is maintained.
 * **TOOLS &amp; WORKFLOWS** - Pipelines manage the deployment of code from the repositories as well as add-on content to the environments.
 
-To use the add-on:
+To activate the add-on:
 
 1. You log into your tenant.
 1. Create a new program.
@@ -83,7 +81,7 @@ To then use the add-on's content, you need to create a site using templates.
 
 AEM Site Templates are packages that contain predefined content and structure for a site. Site templates can be customized to mee the needs of specific projects so when AEM administrators create new sites, they can choose from templates that apply to their business cases.
 
-The AEM Reference Demos Add-On delivers multiple templates for various testing needs. Once you have created your program and deployed the pipeline to install the add-on, you can log into AEM and create sites based on many demo templates
+The AEM Reference Demos Add-On includes multiple templates for various testing and demonstration needs. Once you have created your program and deployed the pipeline to install the add-on, you can log into AEM and create sites based on many demo templates
 
 ## What's Next {#what-is-next}
 
