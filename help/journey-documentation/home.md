@@ -85,6 +85,7 @@ There are a number of Documentation Journeys already available to you. Since eac
 |[Headless Translation Journey](/help/journey-headless/translation/overview.md)|Start here to see how to set up and manage your headless translation projects in AEM.|
 |[AEM Onboarding Journey](/help/journey-onboarding/home.md)|Start here to get up-and-running quickly with your new AEM as a Cloud Service environment!|
 |[AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md)|Start here for a guided journey through the simple-to-use AEM Quick Site Creation tool to streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.|
+|[Reference Demos Add-On Journey](/help/journey-sites/demos-add-on/overview.md)|Start here for a guided journey through how to easily add the AEM Reference Demos Add-On to a sandbox environment with minimal AEM configuration in order to test the powerful features of AEM with rich examples based on best-practices.|
 |AEM Commerce Journey|Coming Soon!|
 |AEMaaCS Migration Journey|Coming Soon!|
 
