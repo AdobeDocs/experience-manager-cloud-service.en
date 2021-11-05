@@ -9,7 +9,7 @@ Learn about Cloud Manager and how it is used to install the add-on.
 
 >[!TIP]
 >
->If you already are experienced with Cloud Manager or want to jump directly to configuration and usage of the add-on, please skip to [Create a Program and a Pipeline](create-progam.md)
+>If you already are experienced with Cloud Manager or want to jump directly to configuration and usage of the add-on, please skip to [Create a Program and a Pipeline](create-program.md)
 >
 >If you want to learn how Cloud Manager and AEM work together to create your demo environments as well as how to set up and use your own, please continue reading the current document.
 
@@ -23,7 +23,7 @@ This document helps you understand how the installation process of the Reference
 
 This document focuses on understanding these fundamental pieces of the AEM Reference Demo Add-On before moving on to the next step of the journey where you begin installation.
 
-Although it is recommended to proceed through this journey step-by-step, f you already are experienced with Cloud Manager or want to jump directly to configuration and usage of the add-on, please skip to [Create a Program and a Pipeline](create-progam.md)
+Although it is recommended to proceed through this journey step-by-step, f you already are experienced with Cloud Manager or want to jump directly to configuration and usage of the add-on, please skip to [Create a Program and a Pipeline](create-program.md)
 
 ## Responsible Role {#responsible-role}
 
@@ -93,11 +93,11 @@ Now that you have completed this part of the AEM Reference Demos Add-On journey 
 * Understand how pipelines deliver content and configuration to AEM.
 * See how templates can create new sites prepopulated with demo content with just a few clicks.
 
-Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Create a Program and a Pipeline,](create-progam.md) where you will learn how to set up a new program and pipeline to deploy the add-on.
+Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Create a Program and a Pipeline,](create-program.md) where you will learn how to set up a new program and pipeline to deploy the add-on.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Create a Program and a Pipeline,](create-progam.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Create a Program and a Pipeline,](create-program.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult the in-depth technical docs.
 * [Site Templates](/help/sites-cloud/administering/site-creation/site-templates.md) - If you would like to know more about the structure of site templates and how they are used to create sites, refer to this document.

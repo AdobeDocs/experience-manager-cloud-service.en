@@ -10,14 +10,6 @@ role: Developer, Architect
 # AEM Sites Journeys {#sites-journey}
 
 + [AEM Sites Journeys](/help/journey-sites/home.md)
-+ AEM Sites Translation Journey {#translation}
-  + [Understand sites translation in AEM](translation/overview.md)
-  + [Get started with AEM sites translation](translation/getting-started.md)
-  + [Learn about sites content and how to translate in AEM](translation/learn-about.md)
-  + [Configure translation connector](translation/configure-connector.md)
-  + [Configure translation rules](translation/translation-rules.md)
-  + [Translate content](translation/translate-content.md)
-  + [Publish translated content](translation/publish-content.md)
 + AEM Quick Site Creation Journey {#quick-site}
   + [Understand AEM Quick Site Creation](quick-site/overview.md)
   + [Understand Cloud Manager](quick-site/cloud-manager.md)
@@ -27,3 +19,17 @@ role: Developer, Architect
   + [Retrieve git repository access information](quick-site/retrieve-access.md)
   + [Customize the site theme](quick-site/customize-theme.md)
   + [Deploy your customized theme](quick-site/deploy-theme.md)
++ AEM Reference Demos Add-On Journey {#demos-add-on}
+  + [Understand the Reference Demos Add-On](demos-add-on/overview.md)
+  + [Understand Reference Demo Add-On Installation](demos-add-on/installation.md)
+  + [Create a Program and a Pipeline](demos-add-on/create-program.md)
+  + [Create a Demo Site](demos-add-on/create-site.md)
+  + [Manage Your Demo Sites](demos-add-on/manage.md)
++ AEM Sites Translation Journey {#translation}
+  + [Understand sites translation in AEM](translation/overview.md)
+  + [Get started with AEM sites translation](translation/getting-started.md)
+  + [Learn about sites content and how to translate in AEM](translation/learn-about.md)
+  + [Configure translation connector](translation/configure-connector.md)
+  + [Configure translation rules](translation/translation-rules.md)
+  + [Translate content](translation/translate-content.md)
+  + [Publish translated content](translation/publish-content.md)
