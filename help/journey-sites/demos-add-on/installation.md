@@ -43,10 +43,10 @@ There are minimal requirements to learn about and begin using the Reference Demo
 
 ## Installation Flow {#installation-flow}
 
-The installation of the AEM Reference Demos Add-On is conceptually quite simple.
+The installation of the AEM Reference Demos Add-On is conceptually simple.
 
 1. A new AEM program is created in Cloud Manager for testing purposes.
-1. The demo content and configurations is deployed to the program using a pipeline in Cloud Manager. The demo content contains
+1. The demo content and configuration is deployed to the program using a pipeline in Cloud Manager. The demo content contains
    * Site templates used to create various AEM sites using features of AEM, prepopulated with best practices examples.
    * Configuration tools to manage your demo content.
 1. Using the quick site creation tool, you create demo sites based on the templates.
@@ -79,7 +79,7 @@ To then use the add-on's content, you need to create a site using templates.
 
 ## AEM Site Templates {#site-templates}
 
-AEM Site Templates are packages that contain predefined content and structure for a site. Site templates can be customized to mee the needs of specific projects so when AEM administrators create new sites, they can choose from templates that apply to their business cases.
+AEM Site Templates are packages that contain predefined content and structure for a site. Site templates can be customized to meet the needs of specific projects so when AEM administrators create new sites, they can choose from templates that apply to their business cases.
 
 The AEM Reference Demos Add-On includes multiple templates for various testing and demonstration needs. Once you have created your program and deployed the pipeline to install the add-on, you can log into AEM and create sites based on many demo templates
 

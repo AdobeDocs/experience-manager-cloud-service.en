@@ -1,11 +1,11 @@
 ---
 title: AEM Reference Demos Add-On Journey
-description: Start here for a guided journey through how to easily add the AEM Reference Demos Add-On to a sandbox environment with minimal AEM configuration in order to test the powerful features of AEM with rich examples based on best-practices.
+description: Start here for a guided journey through how to easily add the AEM Reference Demos Add-On to a sandbox environment with minimal AEM configuration and be able to test the powerful features of AEM with rich examples based on best-practices.
 ---
 
 # AEM Reference Demos Add-On Journey {#reference-demos-add-on-journey}
 
-Start here for a guided journey through how to easily add the AEM Reference Demos Add-On to a sandbox environment with minimal AEM configuration in order to test the powerful features of AEM with rich examples based on best-practices.
+Start here for a guided journey through how to easily add the AEM Reference Demos Add-On to a sandbox environment with minimal AEM configuration and be able to test the powerful features of AEM with rich examples based on best-practices.
 
 ## Introduction {#introduction}
 
