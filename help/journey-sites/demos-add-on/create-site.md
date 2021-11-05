@@ -9,7 +9,7 @@ Create a demo site in AEM based on a library of pre-configured templates.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Quick Site Creation journey, [Create Program,](cloud-manager.md) you took the first configuration step to create a program for testing purposes and used a pipeline to deploy the add-on content. You should now:
+In the previous document of the AEM Quick Site Creation journey, [Create Program,](create-program.md) you took the first configuration step to create a program for testing purposes and used a pipeline to deploy the add-on content. You should now:
 
 * Understand how to use Cloud Manager to create a new program.
 * Know how to activate the Reference Demos Add-On for the new program.
