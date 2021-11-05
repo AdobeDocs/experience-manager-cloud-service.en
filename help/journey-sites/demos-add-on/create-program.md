@@ -31,11 +31,11 @@ After logging in to Cloud Manager, you can create a new program for your testing
 
 >[!NOTE]
 >
->Your user must be a member of the **Business Owner** role in Cloud Manager in order to create programs.
+>Your user must be a member of the **Business Owner** role in Cloud Manager in your organization in order to create programs.
 
 1. Log into Adobe Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Once logged in ensure that you are in the correct organization by checking it in the top-right corner of the screen. If you are only member of one org, this step is not necessary. Then tap or click **Experience Manager**.
+1. Once logged in ensure that you are in the correct organization by checking it in the top-right corner of the screen. If you are only member of one org, this step is not necessary.
 
    ![Cloud Manager overview](assets/cloud-manager.png)
 
@@ -75,7 +75,7 @@ After logging in to Cloud Manager, you can create a new program for your testing
 
    ![Deployment](assets/deployment.png)
 
-Once the pipeline is complete, the demo content is available for use in the AEM authoring environment.
+Once the pipeline is complete, the add-on and its demo content is available for use in the AEM authoring environment.
 
 ## What's Next {#what-is-next}
 

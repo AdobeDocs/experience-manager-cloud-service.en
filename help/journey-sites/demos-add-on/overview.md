@@ -11,7 +11,7 @@ Start here for a guided journey through how to easily add the AEM Reference Demo
 
 AEM Sites is a powerful tool set for creating and managing digital experiences. Content authors can easily create digital experiences using the sites editor and organize the content using the sites console, all while being able to see the content live as it will be delivered by AEM to your audiences across channels.
 
-Without sample content and configuration, it can be difficult to test the powerful features of AEM for new and experienced clients alike. The AEM Reference Demos Add-On allows for the easy creation of sandbox environments pre-loaded with sample content and pre-configured using the latest Adobe best practices guidelines. With the Add-On, you can easily evaluate AEM features in context and with hardly any configuration.
+Without sample content and configuration, it can be difficult to test the powerful features of AEM for new and experienced clients alike. The AEM Reference Demos Add-On allows for the easy creation of sandbox environments pre-loaded with sample content and pre-configured using the latest Adobe best practices guidelines. With the add-on, you can easily evaluate AEM features in context and with hardly any configuration.
 
 ## AEM Documentation Journeys {#documentation-journeys}
 
@@ -23,11 +23,11 @@ If you want to know how Adobe recommends how to solve sites business cases with 
 
 ## Audience {#audience}
 
-This journey lays out the requirements, steps, and approach to create a new program and set up an AEM sandbox with the AEM Reference Demos Add-On. Its primary audience is the **system administrator** who is assigned the role **Business Owner** in Cloud Manager. This is the same person who in general would be in charge of environment management. However once the Reference Demos Add-On is installed, that administrator may grant other users access to the AEM environment in order to test the features that have been enabled by the add-on.
+This journey lays out the requirements, steps, and approach to create a new program and set up an AEM sandbox with the AEM Reference Demos Add-On. Its primary audience is the **system administrator** who is assigned the role **Business Owner** in Cloud Manager. This is usually the same person who would be in charge of environment management. However once the Reference Demos Add-On is installed, that administrator may grant other users access to the AEM environment in order to test the features that have been enabled by the add-on.
 
 ## The AEM Reference Demo Add-On Journey {#the-journey}
 
-You will explore several topics in this journey. The following articles give you foundational knowledge of creating a new program and setting up and using the AEM Reference Demos Add-On. They link out to detailed technical documentation as necessary.
+You will explore several topics in this journey. The following articles give you foundational knowledge of creating a new program and setting up and using the AEM Reference Demos Add-On and are intended to be read in-order. They link out to detailed technical documentation as necessary.
 
 |#|Article|Description|
 |---|---|---|--|
@@ -41,8 +41,8 @@ You will explore several topics in this journey. The following articles give you
 
 You are now ready to get started on your AEM Reference Demo Add-On journey.
 
-* If you want to learn how Cloud Manager and AEM work together to create your demo environments as well as how to set up and use your own, please continue to the next step in this journey, [Understand Reference Demo Add-On Installation](installation.md)
-* If you already are experienced with Cloud Manager or want to jump directly to configuration and usage of the add-on, please skip to [Create a Program and a Pipeline](create-program.md)
+* If you want to learn how Cloud Manager and AEM work together to create your demo environments as well as how to set up and use your own, please continue to the next step in this journey, [Understand Reference Demo Add-On Installation,](installation.md) and proceed through the articles in order.
+* If you already are experienced with Cloud Manager or want to jump directly to configuration and usage of the add-on, please skip to [Create a Program and a Pipeline](create-program.md) and start your journey there.
 
 ## Additional Resources {#additional-resources}
 
