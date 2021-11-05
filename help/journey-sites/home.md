@@ -34,7 +34,7 @@ The following Documentation Journeys are available for AEM Sites topics.
 |Title|Description|Primary Audience|
 |---|---|---|
 [Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md)|Start here for a guided journey through the easy-to-use AEM Quick Site Creation tool to streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.|Front-end developers|
-|[Reference Demos Add-On Journey](/help/journey-sites/demos-add-on/overview.md)|Start here for a guided journey through how to easily add the AEM Reference Demos Add-On to a sandbox environment with minimal AEM configuration in order to test the powerful features of AEM with rich examples based on best-practices.|System Administrator|
+|[Reference Demos Add-On Journey](/help/journey-sites/demos-add-on/overview.md)|Start here for a guided journey through how to easily add the AEM Reference Demos Add-On to a sandbox environment with minimal AEM configuration and be able to test the powerful features of AEM with rich examples based on best-practices.|System Administrator|
 |[Sites Translation Journey](/help/journey-sites/translation/overview.md)|Learn about AEM Sites technologies, how they might be used in your project, and how to create and update translation projects in AEM from A to Z.|Translation Specialists|
 
 Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/home.md#journeys)

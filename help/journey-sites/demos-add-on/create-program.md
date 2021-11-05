@@ -43,7 +43,7 @@ After logging in to Cloud Manager, you can create a new program for your testing
 
    ![Create program dialog](assets/create-program.png)
 
-1. In the next dialog, provide a **Program name** to describe your program, and tap or click **Create**..
+1. In the next dialog, provide a **Program name** to describe your program, and tap or click **Create**.
 
    ![Program name](assets/program-name.png)
 
