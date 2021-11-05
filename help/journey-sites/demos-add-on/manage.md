@@ -33,16 +33,16 @@ Now that you have your own demo sites, you probably would like to know how you c
 
    ![Self-Service Demo Utilities](assets/demo-utilities.png)
 
-1. Self-Service Demo Utilities is a collection of useful functionality that will help setup and monitor your Adobe Experience Manager environment. This the initial view is the **Dashboard**, which serves as a status check of the environment and its demo functionality.
+1. Self-Service Demo Utilities is a collection of useful functionality that will help setup and monitor your Adobe Experience Manager environment. The initial view is the **Dashboard**, which serves as a status check of the environment and its demo functionality.
 
    ![Dashboard](assets/dashboard.png)
 
 Self-Service Demo Utilities provides a number of tools.
 
 * **Delete Sites** - Select the Site you would like to delete in this Adobe Experience Manager instance. Keep in mind that this is a destructive action and can not be undone once initiated.
-* **Delete Site Templates** - Select the Site Template you would like to delete in this Adobe Experience Manager instance. Before you delete a Site Template please make sure all sites referencing the template are also deleted. Keep in mind that this is a destructive action and can not be undone once initiated.
+* **Delete Site Templates** - Select the Site Template you would like to delete in this Adobe Experience Manager instance. Before you delete a Site Template, make sure all sites referencing the template are also deleted. Keep in mind that this is a destructive action and can not be undone once initiated.
 * **Prime Author Cache** - This will fetch several resources within the Adobe Experience Manager instance, speeding up their fetch times. It may take several seconds.
-* **Android App** - Tools for installing and launching the demonstration Android App. Create a site based on the **WKND Single Page App** to populate this page. Use from an Android device, emulator or Bluestacks.
+* **Android App** - Tools for installing and launching the demonstration Android App. Create a site based on the **WKND Single Page App** to populate this page. Use from an Android device, emulator, or Bluestacks.
 * **User Preferences** - Turn off Tutorial Popup Dialogs.
 * **Setup GraphQL** - Quickly set up the global GraphQL endpoint.
 
@@ -74,7 +74,7 @@ You can delete templates in the same manner under the heading **Delete Site Temp
 
 >[!CAUTION]
 >
->Before you delete a Site Template please make sure all sites referencing the template are also deleted.
+>Before you delete a Site Template, make sure all sites referencing the template are also deleted.
 
 ## End of the Journey? {#end-of-journey}
 
