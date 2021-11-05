@@ -36,7 +36,7 @@ Have a look at the [October 2021 Release Overview](https://video.tv.adobe.com/v/
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] now supports auto-generation of text transcripts from the supported audio and video assets, using a built-in connector to [!DNL Azure Media Services]. The supported files are automatically transcribed and the text is stored in WebVTT format. The WebVTT captions are used for more effective searching, captioning, or translation. Also, the feature improves accessibility, discoverability, and localization of the assets.
+* [!DNL Experience Manager] now supports auto-generation of text transcripts from the supported audio and video assets, using a built-in connector to [!DNL Azure Media Services]. The [supported file types](/help/assets/file-format-support.md#audio-video-transcription-formats) are automatically transcribed and the text is stored in WebVTT format. The WebVTT captions are used for more effective searching, captioning, or translation. Also, the feature improves accessibility, discoverability, and localization of the assets.
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
@@ -87,10 +87,56 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.10.0.
 
+### Release Date {#release-date-cm-nov}
+
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.11.0 is November 04, 2021.
+The next release is planned for December 09, 2021.
+
+### What's New {#what-is-new-cm-nov}
+
+* Users can now leverage new Front End pipelines to exclusively deploy front end code in an accelerated manner. See [Cloud Manager Front End Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) to learn more.
+
+   >[!IMPORTANT]
+   >You must be on AEM version `2021.10.5933.20211012T154732Z` to leverage new Front End pipelines.
+
+* Code Quality pipeline duration is significantly reduced by performing the code analysis in a more efficient way without the need of building a whole AEM image. This change will roll out progressively over the weeks following the release.
+
+* The Git Commit ID will now be displayed in the pipeline execution details making it easier to track the code that was built.
+
+* Program Creation is now available via publicly exposed API.
+
+* Environment Creation is now available via publicly exposed API.
+
+* The `x-request-id` response header is now visible in the API Playground on [www.adobe.io](https://www.adobe.io/). This header is useful when submitting customer care issues for troubleshooting.
+
+* As a user, I see  Pipeline card with zero pipelines provide me with appropriate guidance. 
+
+* A new Activity Page is now available where activities such as pipeline and code executions can be viewed along with their associated details. Over time, the activities listed in this page will expand in scope along with the details provided.
+
+* A new Pipelines page with an on-hover, status popover for easy view of the summary of details is now available. Pipeline executions can be viewed along with their associated details.
+
+* The Edit Pipeline API now supports changing the environment used in the deploy phases.
+
+* An optimization in the OakPal scanning process has been introduced for large packages.
+
+* The quality issue CSV file will now contain the timestamp for each quality issue. 
+
+### Bug Fixes {#bug-fixes-nov}
+
+* Certain unorthodox build configurations resulted in unnecessary files being stored in the pipeline's Maven artifact cache which resulted in extraneous network I/O when starting and stopping the build container. 
+
+* Pipeline PATCH API fails if deploy phase does not exist.
+
+* The `ClientlibProxyResourceCheck` quality rule was producing false positive issues when there were client libraries with common base paths.
+
+* Error message when max number of repositories has been reached did not specify the reason for the error.
+
+* In rare cases, pipelines were failing due to inappropriate retry handling of certain response codes. 
+
+
 ## Release Date {#release-date-cm-oct}
 
 The Release Date for Cloud Manager in AEM as a Cloud Service 2021.10.0 is October 14, 2021.
-The next release is planned for November 04, 2021.
 
 ### What's New {#what-is-new-cm-oct}
 
