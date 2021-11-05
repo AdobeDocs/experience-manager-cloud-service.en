@@ -47,7 +47,7 @@ You can run the production pipeline from the Pipelines card:
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
 
-#### Deleting a Non-Production Pipeline {#delete-nonprod}
+### Deleting a Non-Production Pipeline {#delete-nonprod}
 
 You can delete the production pipeline from the Pipelines card:
 
