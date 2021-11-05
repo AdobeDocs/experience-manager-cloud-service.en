@@ -34,6 +34,12 @@ Please note that all links to other guides need to be absolute references with l
     + [Retrieve git repository access information](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/retrieve-access.html)
     + [Customize the site theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/customize-theme.html)
     + [Deploy your customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/deploy-theme.html)
+  + AEM Reference Demos Add-On Journey {#demos-add-on}
+    + [Understand the Reference Demos Add-On](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/demos-add-on/overview.html)
+    + [Understand Reference Demo Add-On Installation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/demos-add-on/installation.html)
+    + [Create a Program and a Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/demos-add-on/create-program.html)
+    + [Create a Demo Site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/demos-add-on/create-site.html)
+    + [Manage Your Demo Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/demos-add-on/manage.html)
   + Sites Translation Journey {#translation}
     + [Understand sites translation in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
     + [Get started with AEM sites translation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/getting-started.html)

@@ -49,7 +49,7 @@ Once the pipeline has deployed the Reference Demo Add-On, you can access the AEM
 
    * The site title appears in the browsers title bar.
    * The site name becomes part of the URL.
-   * The site name must comply with AEM's page naming conventions, details of which are available in the [Additional Resources](#additional-resouces) section.
+   * The site name must comply with AEM's page naming conventions, details of which are available in the [Additional Resources](#additional-resources) section.
 
    ![Site details](assets/site-details.png)
 

@@ -33,7 +33,7 @@ You will explore several topics in this journey. The following articles give you
 |---|---|---|--|
 |0|AEM Reference Demos Add-On Journey|This document|
 |1|[Understand Reference Demo Add-On Installation](installation.md)|Learn about Cloud Manager and how it is used to install the add-on.|
-|2|[Create a Program and a Pipeline](create-progam.md)|Learn how to set up a new program and pipeline to deploy the add-on.|
+|2|[Create a Program and a Pipeline](create-program.md)|Learn how to set up a new program and pipeline to deploy the add-on.|
 |3|[Create a Demo Site](create-site.md)|Create a demo site in AEM based on a library of pre-configured templates.|
 |4|[Manage Your Demo Sites](manage.md)|Learn about the tools available to help you manage your demo sites and how to remove them.|
 
@@ -42,7 +42,7 @@ You will explore several topics in this journey. The following articles give you
 You are now ready to get started on your AEM Reference Demo Add-On journey.
 
 * If you want to learn how Cloud Manager and AEM work together to create your demo environments as well as how to set up and use your own, please continue to the next step in this journey, [Understand Reference Demo Add-On Installation](installation.md)
-* If you already are experienced with Cloud Manager or want to jump directly to configuration and usage of the add-on, please skip to [Create a Program and a Pipeline](create-progam.md)
+* If you already are experienced with Cloud Manager or want to jump directly to configuration and usage of the add-on, please skip to [Create a Program and a Pipeline](create-program.md)
 
 ## Additional Resources {#additional-resources}
 
