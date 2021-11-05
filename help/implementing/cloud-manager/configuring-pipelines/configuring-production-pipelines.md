@@ -49,7 +49,7 @@ Click on **+Add** and select **Add Production Pipeline**.
       * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
       * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
-1. The **Add Production Pipeline** dialog box includes a second tab labeled as **Source Code**. You can either select **[Front End Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** or **[Full Stack Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**. You can choose the **Repository** and the **Git Branch**. Select the Production Deployment Options, as explained below. Click on **Continue**.
+1. The **Add Production Pipeline** dialog box includes a second tab labeled as **Source Code**. You can either select **[Front End Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** or **[Full Stack Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**. 
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
@@ -70,8 +70,9 @@ Click on **+Add** and select **Add Production Pipeline**.
 
    >[!NOTE]
    >Before you start configuring the Front End pipelines, see [AEM Quick Site Creation Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) for an end to end workflow through the easy-to-use AEM Quick Site Creation tool. This documentation site will help you streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
-  
 
+1. Click on **Continue** once you selected the options from the **Source Code** tab.
+  
 1. The **Add Production Pipeline** dialog box includes a third tab labeled as **Experience Audit**. This option provides a table for the URL paths that should always be included in the Experience Audit. 
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
@@ -102,9 +103,12 @@ Click on **+Add** and select **Add Production Pipeline**.
     
 1. Click on **Save**. The newly created production pipeline now displays in the **Pipelines** card.
 
-   The pipeline is shown on the card on the home screen with three actions, as shown below:
+   The pipeline is shown on the card on the home screen with four actions, as shown below:
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-created.png)
    
    * **Add** - allows adding of a new pipeline.
+   * **Show All** - allows the user to view all the pipelines.
    * **Access Repo Info** - allows the user to get the information necessary to access Cloud Manager Git repository.
    * **Learn More** - navigates to understanding the CI/CD pipeline documentation resource. 
 
