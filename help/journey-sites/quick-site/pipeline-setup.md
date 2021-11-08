@@ -53,21 +53,13 @@ In this way, front-end development can work separately from and parallel to any 
 
 ## Access Cloud Manager {#login}
 
-1. Log into Adobe Experience Cloud at [experience.adobe.com](https://experience.adobe.com/).
+1. Log into Adobe Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Once logged in ensure that you are in the correct organization by checking it in the top-right corner of the screen. If you are only member of one org, this step is not necessary. Then tap or click **Experience Manager**.
-
-   ![Experience Cloud Overview](assets/experience-cloud-overview.png)
-
-1. On the next page, tap or click the **Launch** to start the **Cloud Manager** app.
-
-   ![Experience Manager apps](assets/experience-manager-apps.png)
-
-1. The next page lists the various programs available. Tap or click the one you wish to manage. If you are just starting with AEM as a Cloud Service, you likely only have one program available.
+1. Cloud Manager lists the various programs available. Tap or click the one you wish to manage. If you are just starting with AEM as a Cloud Service, you likely only have one program available.
 
    ![Selecting a program in Cloud Manager](assets/cloud-manager-select-program.png)
 
-You now see an overview of your Cloud Manager. Your page will look different but similar to this example.
+You now see an overview of your program. Your page will look different but similar to this example.
 
 ![Cloud Manager overview](assets/cloud-manager-overview.png)
 
