@@ -53,7 +53,7 @@ In this way, front-end development can work separately from and parallel to any 
 
 ## Access Cloud Manager {#login}
 
-1. Log into Adobe Experience Cloud at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Log into Adobe Experience Cloud at [experience.adobe.com](https://experience.adobe.com/).
 
 1. Once logged in ensure that you are in the correct organization by checking it in the top-right corner of the screen. If you are only member of one org, this step is not necessary. Then tap or click **Experience Manager**.
 
