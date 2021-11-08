@@ -36,7 +36,7 @@ This part of the journey applies to the front-end developer.
 
 Once you have committed the theme customization changes to the AEM git repository, you can run [the pipeline that the administrator  created](pipeline-setup.md) to deploy the changes.
 
-1. Access Cloud Manager [as you did to retrieve your git access information.](retrieve-access.md) On the **Overview** tab you will see a card for **Pipelines**.
+1. Sign into Cloud Manager [as you did to retrieve your git access information](retrieve-access.md) And access your program. On the **Overview** tab you will see a card for **Pipelines**.
 
    ![Cloud Manager overview](assets/cloud-manager-overview.png)
 
