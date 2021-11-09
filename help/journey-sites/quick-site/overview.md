@@ -19,6 +19,16 @@ The AEM Quick Site Creation tool allows non-developers to quickly create a new s
 
 By eliminating any developer knowledge for site creation, eliminating AEM knowledge requirements for front end development, and allowing theme development to proceed in parallel with content creation, the AEM Quick Site Creation tool greatly accelerates your site's time-to-value and increases your site customization and deployment agility.
 
+## Video Overview {#video-overview}
+
+For a quick overview of this feature in action, you can watch this five minute introduction.
+
+>[!VIDEO]
+>
+>https://www.youtube.com/watch?v=NQeQ1jZ7ZBw
+
+This documentation journey will take you step-by-step through all the features in the video in detail so you understand the process and can recreate the process in your own environment.
+
 ## AEM Documentation Journeys {#documentation-journeys}
 
 [A Documentation Journey](/help/journey-documentation/home.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
