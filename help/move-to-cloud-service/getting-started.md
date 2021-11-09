@@ -145,8 +145,8 @@ Cloud Manager enables organizations to self-manage Experience Manager in the Clo
 
 #### Content Migration
 
-1. [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration) : used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance.
-2. [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#package-manager) : used for importing and exporting of mutable content of the repository.
+1. [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration) - Used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance.
+2. Package Manager - Used for importing and exporting of mutable content of the repository.
 
 
 #### Refactor/Optimize
@@ -164,7 +164,7 @@ Cloud Manager enables organizations to self-manage Experience Manager in the Clo
   1. [Deploy to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=en#managing-code) git
   2. Run customer code through the [Cloud Manager Quality Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use)
   3. [Deploy to Development Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=en#debugging)
-  4. [**Migration only**] Content transfer using packages or [Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)(CTT)
+  4. [**Migration only**] Content transfer using packages or [Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)(CTT)
   5. Perform recommended testing cycles (smoke, QA and more)
   6. Promote to the Cloud Manager Production Pipeline 
   7. Smoke test validation
@@ -188,7 +188,7 @@ In the Post Go-live phase, you should ensure clean-up of temporary files, review
   
 | Assessment | Refactoring | Experience Manager Modernization| Content Migration | 
 |------------|-------------|---------------------------------|-------------------|
-|<ul><li>[Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li>| <ul><li>[Unified Experience Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#refactoring-tools)</li></ul>      |     <ul><li>[Static templates to editable templates](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[Design configurations to policies](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[Foundation Components to Core Components](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[Classic UI to Touch-Enabled UI](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul>       | <ul><li>[Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration)</li><li>[Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement)</li></ul> |     
+|<ul><li>[Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li>| <ul><li>[Unified Experience Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#refactoring-tools)</li></ul>      |     <ul><li>[Static templates to editable templates](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[Design configurations to policies](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[Foundation Components to Core Components](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[Classic UI to Touch-Enabled UI](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul>       | <ul><li>[Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration)</li><li>[Package Manager](/help/implementing/developing/tools/package-manager.md)</li></ul> |     
 
 >[!NOTE]
 > For additional help, you may want to :

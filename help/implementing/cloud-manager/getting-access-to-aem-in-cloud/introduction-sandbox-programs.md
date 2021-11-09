@@ -15,6 +15,9 @@ The environments created in a Sandbox are not configured for auto-scaling. There
 
 Sandbox programs include [!DNL Sites] and [!DNL Assets] and are auto-populated with a Git repository, a Development environment, and a non-production pipeline.  The Git repository is populated with a sample project based on the AEM Project archetype.
 
+>[!IMPORTANT]
+>A Sandbox program will have only one Development environment.
+
 >[!NOTE]
 >Custom Domains and IP Allow Lists are not available in sandbox programs.
 
