@@ -21,13 +21,9 @@ By eliminating any developer knowledge for site creation, eliminating AEM knowle
 
 ## Video Overview {#video-overview}
 
-For a quick overview of this feature in action, you can watch this five minute introduction.
+For a quick overview of this feature in action, [you can watch this five minute introduction.](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
 
->[!VIDEO]
->
->https://www.youtube.com/watch?v=NQeQ1jZ7ZBw
-
-This documentation journey will take you step-by-step through all the features in the video in detail so you understand the process and can recreate the process in your own environment.
+This documentation journey will take you through all the features in the video  step-by-step and in detail so you understand the workflow and can recreate the process in your own environment.
 
 ## AEM Documentation Journeys {#documentation-journeys}
 
