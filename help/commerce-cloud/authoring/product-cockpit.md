@@ -3,7 +3,7 @@ title: Product Cockpit
 description: Working with Product Cockpit
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 ---
-# Product Cockpit {#product-cokpit}
+# Product Cockpit {#product-cockpit}
 
 ## Overview {#overview}
 
@@ -31,7 +31,7 @@ Easiest way to access the Product Cockpit is via the 'Commerce' menu in AEM's ma
 
 ![AEM menu](../assets/aem-menu.png)
 
-## Browsing product catalogs {#browsing-product-catalogs}
+## Browsing Product Catalogs {#browsing-product-catalogs}
 
 The Product Cockpit is organized in a hierarchical way following the product catalog structure. The first level shows the catalog root level of all configured product catalogs including meta information of the commerce backend.
 
@@ -49,29 +49,29 @@ Clicking on a product will load product variations if available.
 >
 >Product catalog data in AEM is data that is retrieved in real time via the configured commerce endpoint. No product catalog data is store in AEM.
 
-## Searching product catalogs {#searching-product-catalog}
+## Searching Product Catalogs {#searching-product-catalog}
 
 A full-text search over the full product catalog is provided in the left filter tab to quickly find products.
 
 ![search](../assets/search-cockpit.png)
 
-## Browsing staged product catalog {#staged-product-catalogs}
+## Browsing Staged Product Catalog {#staged-product-catalogs}
 
 By default, the product cockpit shows live product catalog data. Using the "STAGED CATALOG" in the left filter tab will load the product catalog for any selected date.
 
 ![staged catalog](../assets/staged-cockpit.png)
 
-## Product catalog properties
+## Product Catalog Properties {#catalog-properties}
 
 Clicking on the properties icon of a product or category will open the property view of the selected object. Open properties of a product variant is equal to open the main product properties.
 
-### Commerce tabs
+### Commerce Tabs {#tabs}
 
 The general and variant tabs show pre-defined commerce properties that come from the commerce backend. This data (incl. variants) is read-only data in AEM as the system of record is the commerce backend. The variant tab only appears for products with variants and shows a list of all variants.
 
 ![catalog properties](../assets/catalog-properties.png)
 
-### AEM Content tabs
+### AEM Content Tabs {#content-tabs}
 
 These tabs, grouped by AEM content types (Experience Fragments, Content Fragments, Associated Assets), show AEM content that is associated with the commerce object. The action 'View Details' opens a new browser tab with the selected content.
 
