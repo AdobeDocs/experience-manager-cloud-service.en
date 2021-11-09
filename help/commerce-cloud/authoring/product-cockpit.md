@@ -7,13 +7,13 @@ exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 
 ## Overview {#overview}
 
-The Product Cockpit provides a unified overview of linked product catalogs and associated content. All associated content have links to quickly access it from the cockpit. 
+The Product Cockpit provides a unified overview of linked product catalogs and associated content. All associated content has links to quickly access it from the cockpit. 
 
-Staged product data includes any mutation in the future such as new cateogries, products, or updated properties.
+Staged product data includes any mutation in the future such as new categories, products, or updated properties.
 
 >[!NOTE]
 >
->The term product catalog is interchangable with commerce store, store view, and similar expressions.
+>The term product catalog is interchangeable with commerce store, store view, and similar expressions.
 
 ## Configuration {#configuration}
 
@@ -27,13 +27,13 @@ Enabling staged catalog features require authentication. See [Getting Started](h
 
 ## Opening the Product Cockpit {#opening-product-cockpit}
 
-Easiest way to access the Product Cockpit isvia the 'Commerce' menu in AEM's main menu. It is also possible to use Omnisearch (search for Commerce) or opening `https://<yourAEMInstance>/commerce.html`.
+Easiest way to access the Product Cockpit is via the 'Commerce' menu in AEM's main menu. It is also possible to use Omnisearch (search for Commerce) or opening `https://<yourAEMInstance>/commerce.html`.
 
 ![AEM menu](../assets/aem-menu.png)
 
 ## Browsing product catalogs {#browsing-product-catalogs}
 
-The Product Cockpit is organized in a hierarchical way following the product catalog structure. The first level shows the catalog root level of all configured poduct catalogs including meta information of the commerce backend.
+The Product Cockpit is organized in a hierarchical way following the product catalog structure. The first level shows the catalog root level of all configured product catalogs including meta information of the commerce backend.
 
 ![Configured catalogs](../assets/catalog-overview.png)
 
@@ -41,13 +41,13 @@ Clicking on a category will load the children of the clicked category.
 
 ![Category children](../assets/catalog-category-children.png)
 
-Clicking on a product will load product varations if available.
+Clicking on a product will load product variations if available.
 
 ![Product variations](../assets/catalog-product-variation.png)
 
 >[!NOTE]
 >
->Product catalog data in AEM is data that is retrieved in real-time via the configured commerce endpoint. No product catalog data is store in AEM.
+>Product catalog data in AEM is data that is retrieved in real time via the configured commerce endpoint. No product catalog data is store in AEM.
 
 ## Searching product catalogs {#searching-product-catalog}
 
@@ -57,7 +57,7 @@ A full-text search over the full product catalog is provided in the left filter 
 
 ## Browsing staged product catalog {#staged-product-catalogs}
 
-By default, the product cockpit shows live product catalog data. Using the "STAGED CATALOG" in the left filter tab will load the product catalog for any selecte date.
+By default, the product cockpit shows live product catalog data. Using the "STAGED CATALOG" in the left filter tab will load the product catalog for any selected date.
 
 ![staged catalog](../assets/staged-cockpit.png)
 
