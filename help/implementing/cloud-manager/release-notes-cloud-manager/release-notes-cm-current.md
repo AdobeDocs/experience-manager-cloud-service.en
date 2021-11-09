@@ -1,48 +1,59 @@
 ---
-title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.10.0
-description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.10.0
+title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.11.0
+description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.11.0
 feature: Release Information
 exl-id:
 ---
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.10.0 {#release-notes}
+# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.11.0 {#release-notes}
 
-This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.10.0.
+This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
 >To see the current Release Notes for Adobe Experience Manager as a Cloud Service, click [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## Release Date {#release-date}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.10.0 is October 14, 2021.
-The next release is planned for November 04, 2021.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.11.0 is November 04, 2021.
+The next release is planned for December 09, 2021.
 
 ### What's New {#what-is-new}
 
-* In preparation for some upcoming changes, existing deployment pipelines will now be referenced and labelled in the user interface as **Full Stack** pipelines.
+* Users can now leverage new Front End pipelines to exclusively deploy front end code in an accelerated manner. See [Cloud Manager Front End Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) to learn more.
 
-* Pipeline card has been refreshed to now display a single, integrated face that shows both production and non-production pipelines, and user can select Run/Pause/Resume directly from the action menu associated with each pipeline.
+   >[!IMPORTANT]
+   >You must be on AEM version `2021.10.5933.20211012T154732Z` to leverage new Front End pipelines.
 
-* A user in Deployment Manager role can now delete Production pipeline in a self-service manner via the UI.
+* Code Quality pipeline duration is significantly reduced by performing the code analysis in a more efficient way without the need of building a whole AEM image. This change will roll out progressively over the weeks following the release.
 
-* Add and edit pipeline experiences have been refreshed to now use familiar, modern modals.
+* The Git Commit ID will now be displayed in the pipeline execution details making it easier to track the code that was built.
 
-* Users of Cloud Manager can now submit feedback directly from the user interface via the **Feedback** button on top right of the landing page.
+* Program Creation is now available via publicly exposed API.
 
-* Yearly SLA Graphs can now be downloaded from the Cloud Manager's user interface. 
+* Environment Creation is now available via publicly exposed API.
 
-* Code quality and non-production pipeline executions will now use a more efficient shallow cloning process during the build step, leading to a faster build time for customers with especially large git repositories. 
+* The `x-request-id` response header is now visible in the API Playground on [www.adobe.io](https://www.adobe.io/). This header is useful when submitting customer care issues for troubleshooting.
 
-* Add IP Allow List wizard will now inform the user if maximum allowed number of IP Allow Lists has been reached. 
+* As a user, I see  Pipeline card with zero pipelines provide me with appropriate guidance. 
 
-* The Cloud Manager API documentation now includes an interactive playground that allows logged-in users to experiment with the API from their browser. See [Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) for more details.
+* A new Activity Page is now available where activities such as pipeline and code executions can be viewed along with their associated details. Over time, the activities listed in this page will expand in scope along with the details provided.
 
-* The tool tip on the Program card will be more descriptive if a selection option under 'Navigate To' is disabled. It now displays "A production environment does not exist." 
+* A new Pipelines page with an on-hover, status popover for easy view of the summary of details is now available. Pipeline executions can be viewed along with their associated details.
+
+* The Edit Pipeline API now supports changing the environment used in the deploy phases.
+
+* An optimization in the OakPal scanning process has been introduced for large packages.
+
+* The quality issue CSV file will now contain the timestamp for each quality issue. 
 
 ### Bug Fixes {#bug-fixes}
 
-* In rare situations, when an Adobe staff would restore a customer's environment, the restore was considered complete before the environment was fully operational.
+* Certain unorthodox build configurations resulted in unnecessary files being stored in the pipeline's Maven artifact cache which resulted in extraneous network I/O when starting and stopping the build container. 
 
-* Certain internal requests made during environment creation were not being retried.
+* Pipeline PATCH API fails if deploy phase does not exist.
 
-* If deployment failed error occurs following domain name verification, the error message has been corrected to request the customer to contact their Adobe representative.
+* The `ClientlibProxyResourceCheck` quality rule was producing false positive issues when there were client libraries with common base paths.
+
+* Error message when max number of repositories has been reached did not specify the reason for the error.
+
+* In rare cases, pipelines were failing due to inappropriate retry handling of certain response codes. 
 
