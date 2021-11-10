@@ -31,7 +31,9 @@ Content packages created for AEM as a Cloud Service applications must have a cle
 
 >[!IMPORTANT]
 >
->Package Manager UI might return an **undefined** error message if a package takes longer than 10 minutes to install. Do not retry the installation if that happens, because it is proceeding correctly in the background and some conflicts could be introduced by multiple concurrent import processes.
+>The Package Manager UI might return an **undefined** error message if a package takes longer than 10 minutes to install.
+>This is not due to an error with the installation, but to a timeout that Cloud Service has for all requests.
+>Do not retry the installation if you see such an error. The installation is proceeding correctly in the background. If you do restart the installation some conflicts could be introduced by multiple concurrent import processes.
 
 For more details on how to manage packages for AEMaaCS, please review the document [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md) in the deploying user guide.
 
