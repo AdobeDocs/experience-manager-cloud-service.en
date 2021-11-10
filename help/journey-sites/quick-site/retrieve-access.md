@@ -76,19 +76,11 @@ If you have not received this email, please contact the Cloud Manager administra
 
 1. Log into Adobe Experience Cloud at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) or click on the link provided in the welcome email.
 
-1. Once logged in ensure that you are in the correct organization by checking it in the top-right corner of the screen. If you are only member of one org, this step is not necessary. Then tap or click **Experience Manager**.
-
-   ![Experience Cloud Overview](assets/experience-cloud-overview.png)
-
-1. On the next page, tap or click the **Launch** button to start the **Cloud Manager** app.
-
-   ![Experience Manager apps](assets/experience-manager-apps.png)
-
-1. The next page lists the various programs available. Tap or click the one you need to access as provided by the Cloud Manager administrator. If this is your first front-end project for AEMaaCS, you likely only have one program available.
+1. Cloud Manager lists the various programs available. Tap or click the one you need to access as provided by the Cloud Manager administrator. If this is your first front-end project for AEMaaCS, you likely only have one program available.
 
    ![Selecting a program in Cloud Manager](assets/cloud-manager-select-program.png)
 
-You now see an overview of your Cloud Manager. Your page will look different but similar to this example.
+You now see an overview of your program. Your page will look different but similar to this example.
 
 ![Cloud Manager overview](assets/cloud-manager-overview.png)
 
