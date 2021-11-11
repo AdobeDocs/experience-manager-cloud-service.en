@@ -1,7 +1,6 @@
 ---
 title: Authoring commerce experiences
 description: Working commerce experiences
-exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 ---
 # Authoring commerce experiences {#authoring-commerce-experiences}
 
