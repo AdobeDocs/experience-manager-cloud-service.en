@@ -5,13 +5,15 @@ index: no
 hide: yes
 ---
 
-# New Relic APM for AEM as a Cloud Service {#new-relic} 
+# New Relic Application Performance Monitoring for AEM as a Cloud Service {#new-relic} 
 
 ## Introduction {#introduction}
 
-Adobe places a high emphasis on the monitoring, availability and performance of your application. To help achieve this goal, AEM as a Cloud Service provides access to a custom New Relic monitoring suite as a part of the standard product offering to ensure your teams have the maximum visibility to your Adobe Experience Manager Cloud Service system and environment performance metrics. This white paper describes the New Relic monitoring features enabled on your AEM as a Cloud Service environments to help bolster the performance and allow you to get the most out of AEM as a Cloud Service.
+Adobe places a high emphasis on the monitoring, availability, and performance of your application. To help achieve this goal, AEM as a Cloud Service provides access to a custom New Relic monitoring suite as a part of the standard product offering to ensure your teams have the maximum visibility to your Adobe Experience Manager Cloud Service system and environment performance metrics. This section describes the New Relic monitoring features enabled on your AEM as a Cloud Service environments to help bolster the performance and allow you to get the most out of AEM as a Cloud Service.
 
 ## AEM as a Cloud Service Transaction Monitoring via New Relic {#transaction-monitoring}
+
+Here are key features in New Relic Application Performance Monitoring for AEM as a Cloud Service:
 
 * Direct access into a dedicated New Relic One account (access managed by Adobe Support).
 
@@ -25,11 +27,18 @@ Adobe places a high emphasis on the monitoring, availability and performance of 
 
 Your dedicated New Relic account will be provisioned and managed by Adobe via Customer Care engagement. Adobe will remain the owner and administrator and will provision the account on your behalf to provide access to your dedicated sub-account.
 
-In order to get access to your New Relic sub-account associated with your AEM as a Cloud Service Program, please open a request by accessing the Support tab in the Admin Console. Ensure your ticket includes the details of your Program ID, as well as the list of users you request Adobe teams to open the New Relic access to. All users must be provided with full name and valid email address.  For more details on AEM Support Portal please Support for Experience Cloud. 
+In order to get access to your New Relic sub-account associated with your AEM as a Cloud Service Program:
+
+* Please open a request by accessing the Support tab in the Admin Console. 
+* Ensure your ticket includes the details of your Program ID, as well as the list of users you request Adobe teams to open the New Relic access to. 
+* All users must be provided with full name and valid email address.  
+
+   >[!NOTE]
+   >For more details on AEM Support Portal please Support for Experience Cloud. 
 
 Once the access has been provided, New Relic sends a confirmation email to each user, so they can complete the setup process and sign in. If they cannot locate the original account confirmation email:
 
-1. Go to New Relic's login page at login.newrelic.com/login.
+1. Navigate to New Relic's login page at login.newrelic.com/login.
 
 1. Select Forgot your password.
 
@@ -58,12 +67,14 @@ For more help or additional guidance on New Relic offerings for your AEM as a Cl
 
 ### What does Adobe monitor with New Relic? {#adobe-monitor}
 
-Adobe monitors the AEM as a Cloud Service Author, Publish and Preview (where available) services via New Relic APM Java plug-in. Adobe enables custom New Relic APM Telemetry and monitoring across non-production and production AEM as a Cloud Service environments. Your New Relic account is attached to a primary Adobe maintained account and has multiple applications reporting into it. Three each per AEM as a Cloud Service environment:
+Adobe monitors the AEM as a Cloud Service Author, Publish and Preview (where available) services via New Relic APM Java plug-in. Adobe enables custom New Relic APM Telemetry and monitoring across non-production and production AEM as a Cloud Service environments. Your New Relic account is attached to a primary Adobe maintained account and has multiple applications reporting into it. 
 
-One application for the Author service per environment
-One application for the Publish service per environment (including Golden Publish)
-One application for the Preview service per environment
-Each application uses one license key, AEM as a Cloud Service environments will report to only one New Relic account. Full monitoring metrics and events for both New Relic APM and Infrastructure are retained for 7 days.
+Three each per AEM as a Cloud Service environment:
+
+* One application for the Author service per environment
+* One application for the Publish service per environment (including Golden Publish)
+* One application for the Preview service per environment
+   Each application uses one license key, AEM as a Cloud Service environments will report to only one New Relic account. Full monitoring metrics and events for both New Relic APM and Infrastructure are retained for 7 days.
 
 ### Who can access the New Relic Cloud Service data? {#access-new-relic-cloud}
 
