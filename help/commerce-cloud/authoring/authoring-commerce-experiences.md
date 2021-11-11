@@ -1,8 +1,8 @@
 ---
-title: Authoring commerce experiences
+title: Authoring Commerce Experiences
 description: Working commerce experiences
 ---
-# Authoring commerce experiences {#authoring-commerce-experiences}
+# Authoring Commerce Experiences {#authoring-commerce-experiences}
 
 ## Overview {#overview}
 
