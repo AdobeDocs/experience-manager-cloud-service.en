@@ -1,12 +1,15 @@
 ---
 title: Editing a Non-Production Pipeline
 description: Editing a Non-Production Pipeline
-index: no
+index: yes
 ---
 
 # Editing a Non-Production Pipeline {#edit-non-prod-pipeline}
 
 You can edit the pipeline configurations from the **Pipelines card** from **Program Overview** page. 
+
+>[!IMPORTANT]
+>You cannot edit a pipeline that is running.
 
 Follow the steps below to edit the configured non-production pipeline:
 
@@ -44,7 +47,7 @@ You can run the production pipeline from the Pipelines card:
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
 
-#### Deleting a Non-Production Pipeline {#delete-nonprod}
+### Deleting a Non-Production Pipeline {#delete-nonprod}
 
 You can delete the production pipeline from the Pipelines card:
 

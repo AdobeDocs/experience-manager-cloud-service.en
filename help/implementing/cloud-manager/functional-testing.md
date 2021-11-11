@@ -30,7 +30,7 @@ Refer to [Product Functional tests](https://github.com/adobe/aem-test-samples/tr
 
 The Custom Functional testing step in the pipeline is always present and cannot be skipped. 
 
-However, if no test JAR is produced by the build, the test passes by default. 
+The build should produce either zero or one test JARs. If it produces zero test JARs, the test step passes by default. If the build produces more than one test JARs, which JAR is selected is non-deterministic.
 
 >[!NOTE]
 >The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Refer to [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
