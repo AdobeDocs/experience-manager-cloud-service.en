@@ -1,12 +1,15 @@
 ---
 title: Editing a Production Pipeline
 description: Editing a Production Pipeline
-index: no
+index: yes
 ---
 
 # Editing a Production Pipeline {#edit-prod-pipeline}
 
 You can edit the pipeline configurations from the **Program Overview** page. 
+
+>[!IMPORTANT]
+>You cannot edit a pipeline that is running.
 
 Follow the steps below to edit the configured pipeline:
 

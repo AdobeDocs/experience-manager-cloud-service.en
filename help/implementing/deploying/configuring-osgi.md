@@ -218,9 +218,14 @@ Values for the variables must not exceed 2048 characters.
 
 >[!CAUTION]
 >
->Variable names prefixed with `INTERNAL_`, `ADOBE_`, or `CONST_` are reserved by Adobe. Any customer-set variables that start with these prefixes will be ignored.
+>There are rules related to the use of certain prefixes for variable names:
 >
->Customers must not reference variables prefixed with `INTERNAL_` or `ADOBE_` either.
+>1. Variable names prefixed with `INTERNAL_`, `ADOBE_`, or `CONST_` are reserved by Adobe. Any customer-set variables that start with these prefixes will be ignored.
+>
+>1. Customers must not reference variables prefixed with `INTERNAL_` or `ADOBE_` either.
+>
+>1. Environment variables with the prefix `AEM_` are defined by the product as Public API to be used and set by customers.
+>   While customers can use and set environment variables starting with the prefix `AEM_` they should not define their own variables with this prefix.
 
 ### Default Values {#default-values}
 

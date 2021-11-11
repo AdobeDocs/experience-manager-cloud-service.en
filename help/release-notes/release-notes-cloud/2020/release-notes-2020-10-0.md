@@ -37,6 +37,22 @@ The following release (2020.11.0) will be on December 1, 2020.
 
 * **[!DNL Assets] WebP file support**: [!DNL Assets] as a Cloud Service now supports WebP image format. WebP is an emerging image format created by Google. Images in WebP file format are visually indistinguishable from JPG or PNG files and the files are much smaller. Lowered file size of assets improves the page-load times and help content creators deliver a faster web experience. See how to use WebP in [create processing profile](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#forms-oct-2021}
+
+### What is new in [!DNL Forms] {#what-is-new-forms-oct-2021}
+
+* **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (anonymous) via Adobe Analytics for Adaptive Forms to gather end user insights. It helps business users make informed decisions about adaptive form content, layout, and style based on the gathered insights. 
+
+### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms-oct-2021}
+
+* **Externalize AEM Workflow data for secure processing**: You can store in-process AEM Workflow variables data that contains Sensitive Personal Data (SPD) elements in a customer-managed repository for secure processing. While processing the workflow, the data stored in workflow variables is not kept in AEM repository. It is fetched on demand from the customer-managed repository.
+
+### Beta features of [!DNL Forms]  {#sep-what-is-new-forms-oct-prerelease}
+
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) help you combine a template and XML data to generate  documents in various formats. The service allows you to generate documents in synchronous and batch mode.
+
+You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
+
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### What is New {#what-is-new-commerce}
