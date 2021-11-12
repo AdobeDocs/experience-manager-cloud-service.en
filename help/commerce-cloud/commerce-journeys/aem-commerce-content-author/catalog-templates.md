@@ -104,6 +104,7 @@ Build on this knowledge and continue your journey by next reviewing the document
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the journey by reviewing the document [Manage staged product catalog experiences](staged-catalog.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+While it is recommended that you move on to the next part of the journey by reviewing the document [Manage staged product catalog experiences](staged-catalog.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey:
 
+* [Creating Multiple Category and Product Pages](/help/commerce-cloud/authoring/multi-template-usage.md)
 * [Migration guide for the Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - How to migrate to the AEM Commerce Integration Framework (CIF) add-on from an old version
