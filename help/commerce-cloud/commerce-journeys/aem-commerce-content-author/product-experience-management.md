@@ -76,7 +76,7 @@ Now drag and drop the **Commerce Content Fragment** component on the template an
 
 This dialog is re-using the Core Component Content Fragment dialog. Find more information under additional resources. The only difference is the **Link Element** property which configures the identifier field (product SKU or category UID) in the Content Fragment model.
 
-Preview now a product page that has either an associated Content Fragment and / or Experience Fragment. When AEM renders a page, it will do an lookup for every placeholder based on the type (Content or Experience Fragment), identifier and placeholder name for Experience Fragments. AEM uses a URL resolver to get the identifier (SKU for products, UID for categories). If an Experience or Content Fragment is returned, it will be rendered into the placeholder location, otherwise the placeholder gets ignored.
+Preview now a product page that has either an associated Content Fragment and / or Experience Fragment. When AEM renders a page, it will do a lookup for every placeholder based on the type (Content or Experience Fragment), identifier and placeholder name for Experience Fragments. AEM uses a URL resolver to get the identifier (SKU for products, UID for categories). If an Experience or Content Fragment is returned, it will be rendered into the placeholder location, otherwise the placeholder gets ignored.
 
 ![pem result](assets/pem-result.png)
 
