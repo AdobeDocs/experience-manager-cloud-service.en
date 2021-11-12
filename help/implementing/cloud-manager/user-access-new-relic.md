@@ -53,7 +53,7 @@ If the user cannot locate the original account confirmation email:
    >[!NOTE]
    >If you don't receive an email from New Relic:
    >Check your [spam filters](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). If applicable, [add New Relic to your email allow list](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-   >Please feedback on the support ticket and our teams will help you further
+   >Please provide feedback on the support ticket and Adobe Support team will help you further.
 
 1. If you complete the sign up process and are unable to log in to your account due to email or password error messages, please log a support ticket via [Admin Console](https://adminconsole.adobe.com/).
 
