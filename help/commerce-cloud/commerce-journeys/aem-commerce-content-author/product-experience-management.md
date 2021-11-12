@@ -106,4 +106,5 @@ You are now ready to manage product experiences using AEM Content and Commerce. 
 
 ## Additional Resources {#additional-resources}
 
+* [Authoring Commerce Experiences](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
 * [Content Fragment component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)

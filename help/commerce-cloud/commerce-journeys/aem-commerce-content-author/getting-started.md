@@ -63,7 +63,7 @@ The product cockpit is a central place to quickly access product catalog with al
 From the main menu, click on commerce to see a list of all attached product catalogs.
 ![commerce menu item](assets/commerce-menu-item.png)
 
-This shows a list of all connect product catalogs. More information on how to [configure stores and catalogs](/help/commerce-cloud/getting-started.md#catalog)
+This shows a list of all connect product catalogs.
 ![cockpit integrated catalogs](assets/cockpit-Integrated-catalogs.png)
 
 The product catalog shows per default all 1st level categories with all products. Clicking on a category will open that category with all related products and sub categories including their products.
@@ -97,3 +97,5 @@ Build on this knowledge and continue your journey by next reviewing the document
 ## Additional Resources {#additional-resources}
 
 While it is recommended that you move on to the next part of the journey by reviewing the document [Manage Product Catalog Pages and Templates](catalog-templates.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+
+* [Configuring Stores and Catalogs](/help/commerce-cloud/getting-started.md#catalog)

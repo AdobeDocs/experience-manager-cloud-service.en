@@ -61,5 +61,6 @@ You are now ready to manage [product experiences](product-experience-management.
 
 ## Additional Resources {#additional-resources}
 
+* [Product Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
 * [Getting Started](/help/commerce-cloud/getting-started.md)
 * [Launches](/help/sites-cloud/authoring/launches/overview.md)
