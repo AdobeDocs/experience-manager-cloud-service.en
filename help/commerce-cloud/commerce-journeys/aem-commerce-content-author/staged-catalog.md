@@ -1,9 +1,6 @@
 ---
 title: Manage staged product catalog experiences
 description: Learn how to manage staged product catalog experiences.
-index: no
-hide: yes
-hidefromtoc: yes
 ---
 # Building Staged Product Catalog Experiences {#building-experiences}
 
