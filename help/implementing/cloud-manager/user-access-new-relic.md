@@ -81,7 +81,7 @@ Three each per AEM as a Cloud Service environment:
 * One application for the Publish service per environment (including Golden Publish)
 * One application for the Preview service per environment
    >[!IMPORTANT]
-   >Each application uses one license key, AEM as a Cloud Service environments will report to only one New Relic account. Full monitoring metrics and events for both New Relic APM and Infrastructure are retained for 7 days.
+   >Each application uses one license key, AEM as a Cloud Service environments will report to only one New Relic account. Full monitoring metrics and events for both New Relic APM are retained for 7 days.
 
 ### Who can access the New Relic Cloud Service data? {#access-new-relic-cloud}
 
