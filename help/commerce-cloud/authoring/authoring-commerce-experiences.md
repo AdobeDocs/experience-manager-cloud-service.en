@@ -1,9 +1,8 @@
 ---
-title: Authoring commerce experiences
+title: Authoring Commerce Experiences
 description: Working commerce experiences
-exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 ---
-# Authoring commerce experiences {#authoring-commerce-experiences}
+# Authoring Commerce Experiences {#authoring-commerce-experiences}
 
 ## Overview {#overview}
 
@@ -57,9 +56,9 @@ The 'Assets' tab in the editor's Side panel offers access to product data by sel
 
 Analog to assets, products can be dnd on a page (Which creates a product teaser component as default) or components (Currently supported are product teaser and product carousel).
 
-### Adding Links to Product or Category Pages in Textfields Using RTE (Rich Text Editor)  {#rte}
+### Adding Links in Textfields Using RTE {#rte}
 
-CIF product catalog pages are virtual pages that get rendered on the fly. Thus, embedding hyperlinks like for regular AEM pages is not possible. CIF adds a new action "Commerce Links" to the RTE. This action works exactly like the regular "Hyperlink" action, but allows authors to select either a product or category using the pickers.
+CIF product catalog pages are virtual pages that get rendered on the fly. Thus, embedding hyperlinks like for regular AEM pages is not possible. CIF adds a new action "Commerce Links" to the RTE (Rich Text Editor). This action works exactly like the regular "Hyperlink" action, but allows authors to select either a product or category using the pickers.
 
 ![RTE](../assets/authoring/RTE.png)
 
