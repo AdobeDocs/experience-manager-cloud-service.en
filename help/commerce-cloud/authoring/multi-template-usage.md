@@ -11,7 +11,7 @@ kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
 ---
-# Creating Multiple Category and Product Pages
+# Creating Multiple Category and Product Pages {#multiple}
 
     >[!NOTE]
     >
@@ -25,6 +25,6 @@ You can find more information on this topic from the following resource(s):
 
 - [AEM CIF Core Components - Multi catalog page configuration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
-## Related resources
+## Related Resources {#related}
 
 It is also possible to dynamically target specific regions of a page and re-use the same template. Learn how to [enrich product data with associated AEM content](./enrich-product-associated-content.md).
