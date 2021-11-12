@@ -383,7 +383,7 @@ The **Rail Selector** is available at the top-left of the window and displays op
 
 ![Rail selector expanded](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-For example, in **Sites** you can select content only (the default), content tree, the timeline, references, or filter side panel.
+For example, in the **Sites** console you can select content only (the default), content tree, the timeline, references, site details, or filter side panel.
 
 If content only is selected, then only the rail icon appears. When any other option is selected, the option name appears next to the rail icon.
 
@@ -391,7 +391,7 @@ If content only is selected, then only the rail icon appears. When any other opt
 >
 >[Keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) are available to quickly switch between rail display options.
 
-### Content tree {#content-tree}
+### Content Tree {#content-tree}
 
 The content tree can be used to quickly navigate the site hierarchy within the side panel and view much information about the pages in the current folder.
 
@@ -450,6 +450,18 @@ These options accessible via the chevron next to the **Comment** field.
   * Content borrowed from and/or lent to the selected page by the Reference component
 
 ![References example](/help/sites-cloud/authoring/assets/references-example.png)
+
+### Site {#site}
+
+**Site** shows details of sites [created using a site template.](/help/sites-cloud/administering/site-creation/create-site.md)
+
+![Site rail](../assets/site-rail.png)
+
+Tap or click the **Download Theme Sources** to customize the [theme of your site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+
+>[!TIP]
+>
+>An end-to-end description of the process of creating a new site from a template and customizing its theme can be found in the [Quick Site Creation Journey.](/help/journey-sites/quick-site/overview.md)
 
 ### Filter {#filter}
 
