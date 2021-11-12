@@ -10,6 +10,13 @@ user-guide-description: Understand how to use and administer Experience Manager 
 + [AEM Content and Commerce](/help/commerce-cloud/home.md)
 + [Notable Changes to AEM Content and Commerce as a Cloud Service](changes.md)
 + [Introduction and overview](introduction.md)
++ Commerce Journeys {#journeys}
+  + Content Author Journey {#author}
+    + [AEM Content and Commerce Content Author Journey](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md) 
+    + [Getting Started with CIF Authoring](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+    + [Manage product catalog pages and template](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
+    + [Building Staged Product Catalog Experiences](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
+    + [Building Product Experiences](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
 + Integrations {#integrations}
   + [Adobe Commerce](integrating/magento.md)
   + [3rd Party Commerce Solution](integrating/third-party.md)
