@@ -56,7 +56,7 @@ Once the access has been provided, New Relic sends a confirmation email to each 
 
 1. If you complete the signup process and are unable to log in to your account due to email or password error messages, please get us a support ticket via [Admin Console](https://adminconsole.adobe.com/).
 
-### Verifying your Email {3verify-email}
+### Verifying your Email {#verify-email}
 
 If you are asked to verify your email during login, it means your email is associated with multiple accounts and will be given the option to verify your email during login. This will allow you to choose which account to access. If you do not verify your email address, New Relic will attempt to log you in with the most recently created user record associated with your email address. To avoid verifying your email during each login, click the Remember Me checkbox in the login screen.
 
