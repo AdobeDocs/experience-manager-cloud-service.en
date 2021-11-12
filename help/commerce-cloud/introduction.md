@@ -76,4 +76,3 @@ CIF supports customers with standardized integration patterns based on best prac
 If you are following a Commerce Journey, please go to the next step:
 
 * The [AEM Content Author journey](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
-* The [AEM Developer journey](/help/commerce-cloud/commerce-journeys/aem-commerce-developer/getting-started.md)

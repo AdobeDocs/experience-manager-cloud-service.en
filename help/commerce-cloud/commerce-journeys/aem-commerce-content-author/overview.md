@@ -1,9 +1,6 @@
 ---
 title: AEM Commerce Content Author Journey
 description: Start here for a guided journey through AEM Commerce Authoring
-index: no
-hide: yes
-hidefromtoc: yes
 ---
 # AEM Content and Commerce Content Author Journey {#aem-commerce-author-journey}
 

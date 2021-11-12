@@ -1,9 +1,6 @@
 ---
 title: Building Product Experiences
 description: Learn how to build product experiences.
-index: no
-hide: yes
-hidefromtoc: yes
 ---
 # Building Product Experiences {#building-experiences}
 
