@@ -16,7 +16,7 @@ Brands can integrate Experience Manager with Adobe Commerce, part of Adobe Exper
 
 * Scale and innovate faster
 * Personalize experiences to drive conversion
-* reate once, and publish everywhere
+* Create once, and publish everywhere
 * Enrich and differentiate experiences for customers
 * Streamline authoring with commerce data access
 
