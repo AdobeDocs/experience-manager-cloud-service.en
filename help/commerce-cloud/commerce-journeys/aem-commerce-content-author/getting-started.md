@@ -1,9 +1,6 @@
 ---
 title: Getting Started with CIF Authoring
 description: Getting Started with CIF Authoring
-index: no
-hide: yes
-hidefromtoc: yes
 ---
 # Getting Started with AEM CIF Authoring {#getting-started}
 

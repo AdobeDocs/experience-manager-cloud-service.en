@@ -1,9 +1,6 @@
 ---
 title: Manage product catalog pages and templates
 description: Get to know how to manage product catalog pages and templates
-index: no
-hide: yes
-hidefromtoc: yes
 ---
 # Manage product catalog pages and templates {#product-catalog}
 
@@ -17,7 +14,11 @@ This article builds on those fundamentals.
 
 ## Objective {#objective}
 
-This document helps you understand how to manage product catalog pages and templates.
+This document helps you understand how to manage product catalog pages and templates. After reading you should:
+
+* understand the concepts of catalog templates
+* how generic templates work
+* have created an individual template
 
 ## The Basic Concept {#basic-concept}
 
