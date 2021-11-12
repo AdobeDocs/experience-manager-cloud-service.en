@@ -111,7 +111,7 @@ Installs a package in the repository. Execution of this goal does not require a 
 In addition to the following parameters, see the descriptions in the [Common Parameters](#common-parameters) section.
 
 |Name|Type|Required|Default Value|Description|
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 |`artifact`|`String`|No|The value of the `artifactId` property of the Maven project|A string of the form `groupId:artifactId:version[:packaging]`|
 |`artifactId`|`String`|No|None|The ID of the artifact to install|
 |`groupId`|`String`|No|None|The `groupId` of the artifact to install|
