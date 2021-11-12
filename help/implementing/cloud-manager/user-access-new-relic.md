@@ -1,7 +1,6 @@
 ---
 title: User Access to New Relic
 description: User Access to New Relic
-index: yes
 ---
 
 # User Access to New Relic {#user-access}
