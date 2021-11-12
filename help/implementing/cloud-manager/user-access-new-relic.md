@@ -1,6 +1,6 @@
 ---
 title: User Access to New Relic
-description: User Access to New Relic
+description: Follow this page to learn about New Relic Application Performance Monitoring for AEM as a Cloud Service
 ---
 
 # User Access to New Relic {#user-access}
