@@ -77,6 +77,7 @@ role: Developer, Architect
     + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
   + [Accessing and Managing Logs](cloud-manager/manage-logs.md)
   + [SLA Reporting](cloud-manager/sla-reporting.md)
+  + [User Access to New Relic](/cloud-manager/user-access-new-relic.md)
   + [Understanding Notifications](cloud-manager/notifications.md)
   + Managing SSL Certificates {#manage-ssl-certificates}
     + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
