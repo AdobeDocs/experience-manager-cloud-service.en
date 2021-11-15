@@ -40,5 +40,5 @@ The images in the format `*.tif` (Tag Image File format) are not supported in AE
 It is recommended to leverage AEM Screens caching capabilities, but if you need to run your Channel in Developer mode and the AEM Screens Player shows a blank screen, check your Player's developer tools and look for `X-Frame-Options` or `frame-ancestors` errors. The resolution is to configure the dispatcher to allow content running in iFrames. Usually the following configuration will work:
 
 ```
-content-security-policy: frame-ancestors 'self' file: localhost:*
+Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"
 ```
