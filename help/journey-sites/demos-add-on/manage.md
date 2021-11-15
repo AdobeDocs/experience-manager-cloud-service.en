@@ -29,11 +29,11 @@ This document helps you understand how you can manage the demo sites you created
 
 Now that you have your own demo sites, you probably would like to know how you can manage them. The pipeline not only deployed the site templates to give your demo sites content, it also deployed a set of utilities to manage those sites.
 
-1. From the AEM global navigation bar, select **Tools** -&gt; **EZ Utils** -&gt; **Self-Service Demo Utilities**.
+1. From the AEM global navigation bar, select **Tools** -&gt; **Reference Demos** -&gt; **Reference Demo Utilities**.
 
    ![Self-Service Demo Utilities](assets/demo-utilities.png)
 
-1. Self-Service Demo Utilities is a collection of useful functionality that will help setup and monitor your Adobe Experience Manager environment. The initial view is the **Dashboard**, which serves as a status check of the environment and its demo functionality.
+1. Reference Demo Utilities is a collection of useful functionality that will help setup and monitor your Adobe Experience Manager environment. The initial view is the **Dashboard**, which serves as a status check of the environment and its demo functionality.
 
    ![Dashboard](assets/dashboard.png)
 
@@ -50,7 +50,7 @@ Self-Service Demo Utilities provides a number of tools.
 
 After you have tested a set of AEM functionality, you may no longer need your demo site or even the template on which it is based. It is easy to delete both demo sites and site templates.
 
-1. Access the **Self-Service Demo Utilities** and tap or click **Delete Sites**.
+1. Access the **Reference Demo Utilities** and tap or click **Delete Sites**.
 
    ![Delete sites](assets/delete-sites.png)
 
@@ -70,7 +70,7 @@ After you have tested a set of AEM functionality, you may no longer need your de
 
 The site is now deleted.
 
-You can delete templates in the same manner under the heading **Delete Site Templates** in the **Self-Service Demo Utilities**.
+You can delete templates in the same manner under the heading **Delete Site Templates** in the **Reference Demo Utilities**.
 
 >[!CAUTION]
 >
