@@ -41,41 +41,46 @@ There are minimal requirements to learn about and begin using the Reference Demo
 
 * Be a member of **Business Owner** role in Cloud Manager for your organization
 
-## Installation Flow {#installation-flow}
-
-The installation of the AEM Reference Demos Add-On is conceptually simple.
-
-1. A new AEM program is created in Cloud Manager for testing purposes.
-1. The demo content and configuration is deployed to the program using a pipeline in Cloud Manager. The demo content contains
-   * Site templates used to create various AEM sites using features of AEM, prepopulated with best practices examples.
-   * Configuration tools to manage your demo content.
-1. Using the quick site creation tool, you create demo sites based on the templates.
-1. Using the configuration tools, you manage those demo sites and template including deleting them when no longer needed.
-
-The remainder of this document gives a bit more detail and context around Cloud Manager and AEM templates before moving on to configuration in the next part of the journey.
-
-## Cloud Manager {#cloud-manager}
+## Understanding Cloud Manager {#cloud-manager}
 
 Cloud Manager is an essential component of AEM as a Cloud Service and serves as the single entry point for the platform.
 
-Cloud Manager is used to administer the cloud resources supporting your AEM projects including the environments and tools needed. For the purposes of this journey, a complete understanding of Cloud Manager is not necessary. At a high level, Cloud Manager consists of several levels of structure.
+Cloud Manager is used to administer the cloud resources supporting your AEM projects including the environments and tools needed. For the purposes of this journey, a complete understanding of Cloud Manager is not necessary. However you need to be familiar with some basic concepts.
 
-![Cloud Manager structure](assets/cloud-manager-structure.png)
+>[!TIP]
+>
+>If you wish to learn about Cloud Manager in depth, please refer to the [Additional Resources](#additional-resources) section of this article for links to more information.
 
-* **TENANT** - Every customer is provisioned with a tenant. **WKND Travel and Adventure Enterprises** might be a tenant.
-* **PROGRAMS** - Each tenant has one or more programs with various solutions activated. The **WKND Travel and Adventure Enterprises** tenant might have a **WKND Nightlife** and a **WKND Afternoon Projects** program with AEM Sites activated. A program can also be created just for testing purposes and the Reference Demo Add-On can be activated for it.
-* **ENVIRONMENTS** - Each program has multiple environments such as production for live content, and staging and dev for development purposes. **WKND Nightlife** and **WKND Afternoon Projects** programs would both have dev, stage, and production environments. For testing programs, only a dev environment is created.
-* **REPOSITORY** - The environments have git repositories where application and front-end code is maintained.
-* **TOOLS &amp; WORKFLOWS** - Pipelines manage the deployment of code from the repositories as well as add-on content to the environments.
+### Programs {#programs}
 
-To activate the add-on:
+When you sign into Cloud Manager you have access to one or more **programs**. A program can be defined in many different ways, but it is easiest to think about it as associated with the sites and experiences associated with one brand identity.
 
-1. You log into your tenant.
-1. Create a new program.
-1. Activate the add-on for the program.
-1. Deploy the add-on using the pipeline.
+If you sign into Cloud Manager representing **WKND Travel and Adventure Enterprises**, you might create a **WKND Nightlife** program and a **WKND Backyard Projects** program. Both of these programs would have AEM environments for managing their associated sites.
 
-To then use the add-on's content, you need to create a site using templates.
+### Sandboxes {#sandboxes}
+
+Programs can be either production programs or sandbox programs.
+
+* **A production program** is created to eventually allow live traffic when your program is ready to go live.
+* **A sandbox program** is created for training, running demos, enablement, POCs, etc. and is not meant for live traffic.
+
+In order to install the AEM Reference Demos Add-On, you will need to create a new sandbox program.
+
+>[!NOTE]
+>
+>The AEM Reference Demos Add-On is only available in sandbox programs.
+
+## Installation and Usage Flow {#installation-flow}
+
+Now that you understand some fundamental concepts of Cloud Manager, the installation of the AEM Reference Demos Add-On is conceptually simple.
+
+1. Log into Cloud Manager.
+1. Create a new sandbox AEM program, activating the AEM Reference Demos Add-On as an option for the program.
+1. The demo content and configuration is deployed to the program. The demo content contains:
+   * Site templates used to create various AEM sites using features of AEM, prepopulated with best practices examples.
+   * Configuration tools to manage your demo content.
+1. Log into AEM in your new sandbox program and use the quick site creation tool and create demo sites based on the templates.
+1. Use the configuration tools to manage those demo sites and template including deleting them when no longer needed.
 
 ## AEM Site Templates {#site-templates}
 
@@ -97,5 +102,6 @@ Build on this knowledge and continue your AEM Quick Site Creation journey by nex
 
 While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Create a Program and a Pipeline,](create-program.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
-* [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult the in-depth technical docs.
+* [Understanding Programs and Program Types](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html) - Start here to understanding the differences between live and sandbox programs.
 * [Site Templates](/help/sites-cloud/administering/site-creation/site-templates.md) - If you would like to know more about the structure of site templates and how they are used to create sites, refer to this document.
+* [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult the in-depth technical docs.
