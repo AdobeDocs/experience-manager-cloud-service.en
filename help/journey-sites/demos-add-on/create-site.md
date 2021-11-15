@@ -29,7 +29,7 @@ This document helps you understand how to create a new site based on the templat
 
 Once the pipeline has deployed the Reference Demo Add-On, you can access the AEM authoring environment to create demo sites based on the add-on content.
 
-1. From the program overview page in Cloud Manager, tap or click on the link to the authoring environment.
+1. From the program overview page in Cloud Manager, tap or click on the link to the AEM authoring environment.
 
    ![Access authoring environment](assets/access-author.png)
 

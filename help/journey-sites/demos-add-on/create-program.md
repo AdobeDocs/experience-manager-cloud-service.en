@@ -27,7 +27,7 @@ This document helps you understand how to set up a new program and pipeline to d
 
 ## Create a Program {#create-program}
 
-After logging in to Cloud Manager, you can create a new program for your testing and demo purposes.
+After logging in to Cloud Manager, you can create a new sandbox program for your testing and demo purposes.
 
 >[!NOTE]
 >
@@ -39,11 +39,18 @@ After logging in to Cloud Manager, you can create a new program for your testing
 
    ![Cloud Manager overview](assets/cloud-manager.png)
 
-1. In the **Let's create your Program** dialog, make sure that **Adobe Experience Manager** is selected and then tap or click **Continue**.
+1. Tap or click **Add Program** at the top-right of the window.
+
+1. In the **Let's create your Program** dialog, make sure that **Adobe Experience Manager** is selected under **Products** and then tap or click **Continue**.
 
    ![Create program dialog](assets/create-program.png)
 
-1. In the next dialog, provide a **Program name** to describe your program, and tap or click **Create**.
+1. In the next dialog:
+
+   * Provide a **Program name** to describe your program.
+   * Tap or click **Set up a sandbox** for your **Program Objective**
+   
+   Then tap or click **Create**.
 
    ![Program name](assets/program-name.png)
 
