@@ -13,6 +13,11 @@ AEM Sites is a powerful tool set for creating and managing digital experiences. 
 
 Without sample content and configuration, it can be difficult to test the powerful features of AEM for new and experienced clients alike. The AEM Reference Demos Add-On allows for the easy creation of sandbox environments pre-loaded with sample content and pre-configured using the latest Adobe best practices guidelines. With the add-on, you can easily evaluate AEM features in context and with hardly any configuration.
 
+* **If you are new to AEM**, following this journey is the easiest way to get up-and-running with real content in an actual, fully-functioning AEM environment to allow you to test functionality and get to know the capabilities of AEM.
+* **If you are an experienced AEM user**, following this journey is the easiest way to set up a separate demo environment for testing purposes or create a POC using new functionality.
+
+Whatever your particular need, if you need an AEM environment filled with realistic, fully-functioning, sample content, setting up a sandbox with the AEM Reference Demo Add-On is just for you. Keep reading!
+
 ## AEM Documentation Journeys {#documentation-journeys}
 
 [A Documentation Journey](/help/journey-documentation/home.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
