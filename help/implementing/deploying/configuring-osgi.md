@@ -134,9 +134,9 @@ There are two ways create OSGi configurations, as described below. The former ap
 JSON formatted OSGi configuration files can be written by hand directly in the AEM project. This is often the quickest way to create OSGi configurations for well-known OSGi components, and especially custom OSGi components that have been designed and developed by the same developer defining the configurations. This approach can also be used to copy/paste and update configurations for the same OSGi component across various runmode folders.
 
 1. In your IDE, open the `ui.apps` project, locate or create the config folder (`/apps/.../config.<runmode>`) which targets the runmodes the new OSGi configuration need to effect
-1. In this config folder, create a new `<PID>.cfg.json` file. The PID is the Persistent Identity of the OSGi component is usually the OSGi component implementation's full class name. For example:
+1. In this config folder, create a new `<PID>.cfg.json` file. The PID is the Persistent Identity of the OSGi component. It is usually the full class name of the OSGi component implementation. For example:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-   Note that OSGi configuration factory file names use the `<PID>-<factory-name>.cfg.json` naming convention
+   Note that OSGi configuration factory file names use the `<factoryPID>-<name>.cfg.json` naming convention
 1. Open the new `.cfg.json` file, and define the key/value combinations for the OSGi property and value pairs, following the [JSON OSGi configuration format](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Save your changes to the new `.cfg.json` file
 1. Add and commit your new OSGi configuration file to Git
@@ -216,9 +216,16 @@ Variables names must follow the following rules:
 
 Values for the variables must not exceed 2048 characters.
 
->[!NOTE]
+>[!CAUTION]
 >
->Variable names prefixed with `INTERNAL_` are reserved by Adobe. Any customer set variables that start with this prefix will be ignored. Customers must not reference these variables either.
+>There are rules related to the use of certain prefixes for variable names:
+>
+>1. Variable names prefixed with `INTERNAL_`, `ADOBE_`, or `CONST_` are reserved by Adobe. Any customer-set variables that start with these prefixes will be ignored.
+>
+>1. Customers must not reference variables prefixed with `INTERNAL_` or `ADOBE_` either.
+>
+>1. Environment variables with the prefix `AEM_` are defined by the product as Public API to be used and set by customers.
+>   While customers can use and set environment variables starting with the prefix `AEM_` they should not define their own variables with this prefix.
 
 ### Default Values {#default-values}
 

@@ -12,8 +12,10 @@ role: Developer, Architect
 + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
 + Using Cloud Manager {#using-cloud-manager}
   + Release Notes for Cloud Manager {#release-notes-cloud-manager}
-    + [Current Release Notes (2021.9.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Current Release Notes (2021.11.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2021 {#2021}
+      + [Release Notes for 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
+      + [Release Notes for 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
       + [Release Notes for 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
       + [Release Notes for 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
       + [Release Notes for 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
@@ -57,7 +59,14 @@ role: Developer, Architect
     + [Integrating Git with Adobe Cloud Manager](cloud-manager/managing-code/integrating-with-git.md)
     + [Working with Multiple Source Git Repositories](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
     + [Enterprise Team Development Setup for AEM as a Cloud Service](cloud-manager/managing-code/enterprise-team-dev-setup.md)
-  + [Configuring your CI/CD Pipeline](cloud-manager/configure-pipeline.md)
+  + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
+    + [Introduction](cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+    + Production Pipelines {#production-pipelines}
+      + [Configuring a Production Pipeline](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+      + [Editing a Production Pipeline](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
+    + Non-Production Pipelines {#non-production-pipelines}
+      + [Configuring a Non-Production Pipeline](cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+      + [Editing a Non-Production Pipeline](cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
   + [Deploying your Code](cloud-manager/deploy-code.md)
   + Understanding your Test Results {#test-results}
     + [Overview](/help/implementing/cloud-manager/overview-test-results.md)
@@ -68,6 +77,7 @@ role: Developer, Architect
     + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
   + [Accessing and Managing Logs](cloud-manager/manage-logs.md)
   + [SLA Reporting](cloud-manager/sla-reporting.md)
+  + [User Access to New Relic](cloud-manager/user-access-new-relic.md)
   + [Understanding Notifications](cloud-manager/notifications.md)
   + Managing SSL Certificates {#manage-ssl-certificates}
     + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
@@ -106,6 +116,7 @@ role: Developer, Architect
   + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
   + [API Reference Materials](/help/implementing/developing/reference-materials.md)
   + [Generating Access Tokens for Server Side APIs](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+  + [Customizing Site Templates and Themes](developing/introduction/customizing-site-templates-themes.md)
   + [Headful and Headless in AEM](developing/headful-headless.md)
   + Full Stack AEM Development {#full-stack}
     + [Getting Started Developing AEM Sites - WKND Tutorial](developing/introduction/develop-wknd-tutorial.md)
@@ -186,10 +197,12 @@ role: Developer, Architect
     + [Launch Integration](developing/hybrid/launch-integration.md)
     + [SPA Reference Documents](developing/hybrid/reference-materials.md)
 + Developer Tools {#developer-tools}
+  + [Developer Mode](/help/implementing/developing/tools/developer-mode.md)
   + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
   + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
   + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
   + [Using CRXDE Lite](/help/implementing/developing/tools/crxde.md)
+  + [Package Manager](/help/implementing/developing/tools/package-manager.md)
   + [The Link Externalizer](/help/implementing/developing/tools/externalizer.md)
 + Personalization {#personalization}
   + [ContextHub](developing/personalization/contexthub.md)
@@ -203,6 +216,7 @@ role: Developer, Architect
   + [Integrating with Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
   + [Configuring Segmentation with ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
 + Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
+  + [Extending AEM using Adobe Developer App Builder](developing/extending/app-builder.md)
   + [Extending Experience Fragments](developing/extending/experience-fragments.md)
   + [Customizing and Extending Content Fragments](developing/extending/content-fragments-customizing.md)
   + [Content Fragments Configuring Components for Rendering](developing/extending/content-fragments-configuring-components-rendering.md)

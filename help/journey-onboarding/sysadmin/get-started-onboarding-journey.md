@@ -21,6 +21,11 @@ After reading this section you should be able to:
 >[!NOTE]
 >Before you start the onboarding process, please ensure to learn about Adobe Admin Console. The Adobe Admin console is a central place to administer and manage your Adobe product licenses and users. Your system administrator will sign in to the Adobe Admin console to add or remove users and more. See [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) to learn more.
 
+## Onboarding to AEM as a Cloud Service {#onboarding-process}
+
+Learn about onboarding to AEM as a Cloud Service starting from the contract phase all the way through setting up the environments using Cloud Manager.
+
+>[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
 
 ## Logging in to Admin Console {#steps-admin-console}
 

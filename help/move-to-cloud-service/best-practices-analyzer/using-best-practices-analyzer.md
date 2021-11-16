@@ -40,7 +40,7 @@ Follow the section below to understand the important considerations for running 
 >title="Download the Best Practices Analyzer"
 >abstract="The Best Practices Analyzer can be downloaded as a zip file from the Software Distribution portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance."
 
-The Best Practices Analyzer can be downloaded as a zip file from the Software Distribution portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
+The Best Practices Analyzer can be downloaded as a zip file from the Software Distribution portal. You can install the package via [Package Manager](/help/implementing/developing/tools/package-manager.md) on your source Adobe Experience Manager (AEM) instance.
 
 >[!NOTE]
 >Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
@@ -85,6 +85,7 @@ Follow this section to learn how to view the Best Practices Analyzer report:
    >While the report is being regenerated, it displays the progress in terms of percentage completed as shown in the image below.
    
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+
 
 
 #### Using Filters in the Best Practices Analyzer Report {#bpa-filters}
