@@ -64,7 +64,7 @@ The recommended application deployment structure is as follows:
     + `/apps/settings`
   + ACLs (permissions)
     + Any `rep:policy` for any path under `/apps`
-  + [Precompiled bundled scripts](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/using/developing/archetype/precompiled-bundled-scripts.html)
+  + [Precompiled bundled scripts](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
  
 + The `ui.config` package, contains all [OSGi configurations](/help/implementing/deploying/configuring-osgi.md):
     + Organizational folder containing run mode specific OSGi config definitions
@@ -264,7 +264,7 @@ Simply add the `<filter root="/apps/<my-app>-packages"/>` entries for any 2nd-le
 
 ## Embedding 3rd-party Packages {#embedding-3rd-party-packages}
 
-All packages must be available via the [Adobe's public Maven artifact repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) or an accessible public, referenceable 3rd party Maven artifact repository.
+All packages must be available via the [Adobe's public Maven artifact repository](https://repo1.maven.org/maven2/com/adobe/) or an accessible public, referenceable 3rd party Maven artifact repository.
 
 If the 3rd party packages are in **Adobe's public Maven artifact repository**, no further configuration is needed for Adobe Cloud Manager to resolve the artifacts.
 
@@ -284,7 +284,7 @@ In order to ensure proper installation of the packages, it is recommended inter-
 
 The general rule is packages containing mutable content (`ui.content`) should depend on the immutable code (`ui.apps`) that supports the rendering and use of the mutable content.
 
-A notable exception to this general rule is if the immutable code package (`ui.apps` or any other), __only__ contains OSGi bundles. If so, no AEM package should declare a dependency on it. This is because immutable code packages __only__ containing OSGi bundles are not registered with AEM Package Manager, and therefore, any AEM package depending on it will have an unsatisfied dependency and fail to install.
+A notable exception to this general rule is if the immutable code package (`ui.apps` or any other), __only__ contains OSGi bundles. If so, no AEM package should declare a dependency on it. This is because immutable code packages __only__ containing OSGi bundles are not registered with AEM [Package Manager,](/help/implementing/developing/tools/package-manager.md) and therefore, any AEM package depending on it will have an unsatisfied dependency and fail to install.
 
 >[!TIP]
 >
