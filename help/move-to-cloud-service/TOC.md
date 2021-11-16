@@ -10,6 +10,10 @@ role: Architect, Developer
 # Moving to AEM as a Cloud Service Guide {#moving}
 
 + [Moving to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
++ Release Notes for Migration Tools {#release-notes-migration-tools}
+    + [Current Release Notes (2021.11.0)](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
+    + 2021 {#2021}
+      + [Release Notes for 2021.10.0](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-10-0.md)
 + Phases of Transition Journey {#phases}
   + [Readiness](/help/move-to-cloud-service/migration-readiness.md)
   + [Implementation](/help/move-to-cloud-service/migration-implementation.md)
@@ -29,11 +33,21 @@ role: Architect, Developer
     + [Overview](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
     + [Using Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
   + Content Transfer Tool {#content-transfer-tool}
-    + [Overview](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
-    + [Prerequisites for Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
-    + [Handling Large Content Repositories](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
-    + [Using User Mapping Tool](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
-    + [Using Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
+    + [Overview](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+    + [Prerequisites for Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+    + [Guidelines and Best Practices for Using Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+    + [Getting Started with Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+    + [Handling Large Content Repositories](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+    + [Extracting Content from Source](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+    + [Ingesting Content into Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+    + [Viewing Logs for a Migration Set](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
+    + [Deleting a Migration Set](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
+    + [Running the Content Transfer Tool on a Publish Instance](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
+    + [Troubleshooting Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
+    + User Mapping Tool {#user-mapping-tool}
+      + [Overview](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
+      + [Important Considerations](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
+      + [Using User Mapping Tool](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
 + Code Refactoring Tools {#refactoring-tools}
   + [Unified Experience](/help/move-to-cloud-service/unified-experience.md)
   + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
