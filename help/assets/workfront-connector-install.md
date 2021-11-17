@@ -8,12 +8,7 @@ feature: Asset Management
 
 # Install [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] administrators install the enhanced connector. Before you install, review the platform support and other prerequisites at [Enhanced Connector landing page](https://www.adobe.com).
-
-<!-- TBD: 
-Add the landing page link shared by Courtney above.
-Add the SD link below.
--->
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] administrators install the enhanced connector. Before you install, review the platform support and other [prerequisites for the enhanced connector](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 Before you install the connector, follow these pre-installation steps:
 
