@@ -25,7 +25,7 @@ See the platform support and [prerequisites for the enhanced connector](https://
 >
 >Adobe requires deployment and configuration of the [!DNL Adobe Workfront for Experience Manager enhanced connector] only via certified partners or [!DNL Adobe Professional Services]. If deployed and configured without a certified partner or [!DNL Adobe Professional Services], it is not supported by Adobe.
 >
->Adobe may release updates to [!DNL Adobe Workfront] and [!DNL Adobe Experience Manager] that makes this connector redundant; if this occurs, customers may be required to transition from the use of this connector.
+>Adobe may release updates to [!DNL Adobe Workfront] and [!DNL Adobe Experience Manager] that make this connector redundant; if this occurs, customers may be required to transition from the use of this connector.
 
 ## Compare different integrations between [!DNL Assets] and [!DNL Workfront] {#feature-parity-matrix}
 
