@@ -1,8 +1,8 @@
 ---
 title: Basic Handling
 description: Get comfortable with navigating AEM and its basic usage
+exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 ---
-
 # Basic Handling {#basic-handling}
 
 This document is designed to give an overview of basic handling when using the AEM author environment. It uses the **Sites** console as a basis.
@@ -64,7 +64,7 @@ From Navigation the consoles available are:
 |Projects|The Projects console gives you direct access to your projects. [Projects are virtual dashboards](/help/sites-cloud/authoring/projects/overview.md) that can be used to build a team. You can then give that team access to resources, workflows, and tasks, thus allowing people to work towards a common goal.|
 |Sites|The Sites consoles let you [create, view, and manage sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) running on your AEM instance. Through this console you can create, edit, copy, move, and delete pages, start workflows, and publish pages.|
 |Experience Fragments|An [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences.|
-|Assets|The Assets console lets you import and manage digital assets such as images, videos, documents, and audio files. These assets can then be used by any site running on the same AEM instance.<!--add some kind of assets link-->|
+|Assets|The Assets console lets you import and manage [digital assets such as images, videos, documents, and audio files](/help/assets/overview.md). These assets can then be used by any site running on the same AEM instance. You can also create and manage [Content Fragments](/help/assets/content-fragments/content-fragments.md) from the Assets console.|
 |Personalization|This console provides a framework of tools for [authoring targeted content and presenting personalized experiences.](/help/sites-cloud/authoring/personalization/overview.md)|
 
 ## Tools Panel {#tools-panel}
@@ -87,7 +87,7 @@ The header is always present at the top of the screen. While most options in the
 
 * [Search](/help/sites-cloud/authoring/getting-started/search.md)
 
-  ![Search button](/help/sites-cloud/authoring/assets/search-button.png)
+  ![Search icon](/help/sites-cloud/authoring/assets/search-icon.png)
 
   You can also use the [shortcut key](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
 
@@ -309,7 +309,7 @@ Selecting a resource in the leftmost column will display the child resources in 
   * Template the page is based on
   * Modification details
   * Page language
-  * Publication details
+  * Publication, and Preview details
 
 ### Card View {#card-view}
 
@@ -354,6 +354,7 @@ Selecting a resource in the leftmost column will display the child resources in 
   * **Name** - Page name, which can be useful in a multilingual authoring environment since it is part of the page's URL and does not change regardless of language
   * **Modified** - Last modified date and last modified by user
   * **Published** - Publication status
+  * **Preview** - Preview status
   * **Template** - Template on which the page is based
   * **Workflow** - Workflow currently applied to the page. More information is available when you mouseover, or open Timeline.
   * **Page analytics**
@@ -382,7 +383,7 @@ The **Rail Selector** is available at the top-left of the window and displays op
 
 ![Rail selector expanded](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-For example, in **Sites** you can select content only (the default), content tree, the timeline, references, or filter side panel.
+For example, in the **Sites** console you can select content only (the default), content tree, the timeline, references, site details, or filter side panel.
 
 If content only is selected, then only the rail icon appears. When any other option is selected, the option name appears next to the rail icon.
 
@@ -390,7 +391,7 @@ If content only is selected, then only the rail icon appears. When any other opt
 >
 >[Keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) are available to quickly switch between rail display options.
 
-### Content tree {#content-tree}
+### Content Tree {#content-tree}
 
 The content tree can be used to quickly navigate the site hierarchy within the side panel and view much information about the pages in the current folder.
 
@@ -441,14 +442,26 @@ These options accessible via the chevron next to the **Comment** field.
 **References** shows any connections to the selected resource. For example, in the **Sites** console [references](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) for pages shows:
 
 * [Launches](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
-* Live copies<!--[Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)-->
-* Language copies<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
+* [Live copies](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
+* [Language copies](/help/sites-cloud/administering/translation/preparation.md#seeing-the-status-of-language-roots)
 * Content references:
 
   * Links from other pages to the selected page
   * Content borrowed from and/or lent to the selected page by the Reference component
 
 ![References example](/help/sites-cloud/authoring/assets/references-example.png)
+
+### Site {#site}
+
+**Site** shows details of sites [created using a site template.](/help/sites-cloud/administering/site-creation/create-site.md)
+
+![Site rail](../assets/site-rail.png)
+
+Tap or click the **Download Theme Sources** to customize the [theme of your site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+
+>[!TIP]
+>
+>An end-to-end description of the process of creating a new site from a template and customizing its theme can be found in the [Quick Site Creation Journey.](/help/journey-sites/quick-site/overview.md)
 
 ### Filter {#filter}
 

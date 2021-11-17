@@ -1,8 +1,8 @@
 ---
 title: Editing Page Content
 description: Once your page is created you can edit the content to make the updates you require
+exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 ---
-
 # Editing Page Content{#editing-page-content}
 
 Once your page is created (either new or as part of a launch or live copy) you can edit the content to make the updates you require.
@@ -360,7 +360,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/aut
 
 Inheritance is the mechanism where content can be automatically pushed from one component to another. Inherited components can be the product of various scenarios, including:
 
-* Multi site management <!--[Multi site management](/help/sites-administering/msm.md)-->
+* [Multi site management](/help/sites-cloud/administering/msm/overview.md)
 * [Launches](/help/sites-cloud/authoring/launches/overview.md) (when based on live copy).
 
 You can cancel (then re-enable) the inheritance. Depending on the component, this can be available from the component toolbar, if the component is on a page that is part of a live copy or launch (based on a live copy).

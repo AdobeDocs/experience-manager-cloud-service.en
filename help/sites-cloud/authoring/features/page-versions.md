@@ -1,8 +1,8 @@
 ---
 title: Working with Page Versions
 description: Create, compare, and restore versions of a page
+exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 ---
-
 # Working with Page Versions {#working-with-page-versions}
 
 Versioning creates a "snapshot" of a page at a specific point in time. With versioning, you can perform the following actions:
@@ -184,6 +184,10 @@ To compare a previous version with the current page:
 ## Timewarp {#timewarp}
 
 Timewarp is a feature designed to simulate the *published* state of a page at specific times in the past.
+
+>[!NOTE]
+>
+>[Timewarp can also be used with Launches to preview the future](/help/sites-cloud/authoring/launches/preview.md).
 
 Because content creation is an ongoing and collaborative process, the purpose of Timewarp is to allow authors to track the published website over time in order to understand how the content has changed. This feature uses the page versions to determine the state of the publish environment.
 

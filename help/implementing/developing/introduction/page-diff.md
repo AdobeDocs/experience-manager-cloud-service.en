@@ -1,8 +1,8 @@
 ---
 title: Developing and Page Diff
 description: Understand how the Page Diff feature works and how it can impact a developer
+exl-id: 03c08616-2203-4b90-bed6-4836266e2507
 ---
-
 # Developing and Page Diff {#developing-and-page-diff}
 
 ## Feature Overview {#feature-overview}
@@ -23,7 +23,7 @@ When content is compared, the whole tree up to the page to compare is recreated 
 
 A cleanup task runs automatically to clean up this temporary content.
 
-## Permissions {#permissions}
+## Limitations {#limitations}
 
 The diff occurs client-side via DOM comparison, making the diff process simple, however there are a number of limitations that need to be considered by the developer.
 

@@ -1,12 +1,11 @@
 ---
 title: Flash Viewers End-of-Life Notice
-description: Effective January 31, 2017, Adobe Scene7 will officially end-of-life support for the Flash viewer platform.
+description: Effective January 31, 2017, support for the Flash viewer Platform is officially end-of-life.
+role: Admin,User
+exl-id: d1f34d22-abcc-422e-b6da-3fa8097078b0
 ---
+# Flash Viewers End-of-Life {#flash-viewers-end-of-life-notice}
 
-# Flash Viewers End-of-Life Notice{#flash-viewers-end-of-life-notice}
+Effective January 31, 2017, support for the Flash viewer Platform is officially end-of-life.
 
-*Effective January 31, 2017, Adobe Dynamic Media Classic (Scene7) officially ended support for the Flash viewer platform.*
-
-*For more information about this important change, see the following FAQ website:*
-
-[https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
+See the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) for the latest supported viewers.

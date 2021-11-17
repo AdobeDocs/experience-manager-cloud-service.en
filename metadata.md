@@ -1,13 +1,13 @@
 ---
 product: adobe experience manager
+description: Adobe Experience Manager as a Cloud Service documentation.
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
 index: y
-solution-title: Adobe Experience Manager as a Cloud Service
-solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html
-getting-started-title: Getting Started
-getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/overview/home.html
-tutorials-title: Tutorials
-tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
+type: Documentation
+solution: Experience Manager, Experience Manager as a Cloud Service
+version: Cloud Service
+feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
+cloud: Experience Cloud
 ---
 
 # Metadata for internal use
@@ -44,5 +44,3 @@ Article
 * `title`
 * `description`
 * `contentOwner` (only on core asset content under `/help/assets`)
-
-Additional information about the metadata can be found in the [internal authoring guide.](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/markdown/metadata.html#solution-metadata)

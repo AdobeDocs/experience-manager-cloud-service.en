@@ -1,8 +1,8 @@
 ---
 title: Export to CSV
 description: Export information about your pages to a CSV file on your local system
+exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 ---
-
 # Export to CSV {#export-to-csv}
 
 **Create CSV Report** enables you to export information about your pages to a CSV file on your local system.

@@ -1,11 +1,14 @@
 ---
 title: Adobe Experience Manager as a Cloud Service Content Fragments Support in Assets HTTP API
-description: Learn about Adobe Experience Manager as a Cloud Service Content Fragments Support in Assets HTTP API.
+description: Learn about support for Content Fragments in the Assets HTTP API, an important piece of AEM's headless delivery feature.
+feature: Content Fragments,Assets HTTP API
+exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 ---
-
-# Content Fragments Support in AEM Assets HTTP API{#content-fragments-support-in-aem-assets-http-api}
+# Content Fragments Support in AEM Assets HTTP API {#content-fragments-support-in-aem-assets-http-api}
 
 ## Overview {#overview}
+
+Learn about support for Content Fragments in the Assets HTTP API, an important piece of AEM's headless delivery feature.
 
 >[!NOTE]
 >
@@ -20,9 +23,9 @@ The [Assets REST API](/help/assets/mac-api-assets.md) allows developers for Adob
 
 The API allows you to operate Adobe Experience Manager as a Cloud Service as a headless CMS (Content Management System) by providing Content Services to a JavaScript front end application. Or any other application that can execute HTTP requests and handle JSON responses.
 
-For example, Single Page Applications (SPA), framework-based or custom, require content provided over the HTTP API, often in JSON format.
+For example, [Single Page Applications (SPA)](/help/implementing/developing/hybrid/introduction.md), framework-based or custom, require content provided over the HTTP API, often in JSON format.
 
-While [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) provide a very comprehensive, flexible and customizable API that can serve required Read operations for this purpose, and whose JSON output can be customized, they do require AEM WCM (Web Content Management) know-how for implementation as they must be hosted in pages that are based on dedicated AEM templates. Not every SPA development organization has direct access to such knowledge.
+While [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) provide a very comprehensive, flexible and customizable API that can serve required Read operations for this purpose, and whose JSON output can be customized, they do require AEM WCM (Web Content Management) know-how for implementation as they must be hosted in pages that are based on dedicated AEM templates. Not every SPA development organization has direct access to such knowledge.
 
 This is when the Assets REST API can be used. It allows developers to access assets (for example, images and content fragments) directly, without the need to first embed them in a page, and deliver their content in serialized JSON format. 
 
@@ -51,12 +54,13 @@ It uses the `/api/assets` endpoint and requires the path of the asset to access 
 * This means that to access the asset at:
   * `/content/dam/path/to/asset`
 * You need to request:
-  *  `/api/assets/path/to/asset` 
+  * `/api/assets/path/to/asset` 
 
 For example, to access `/content/dam/wknd/en/adventures/cycling-tuscany`, request `/api/assets/wknd/en/adventures/cycling-tuscany.json` 
 
 >[!NOTE]
 >Access over:
+>
 >* `/api/assets` **does not** need the use of the `.model` selector.
 >* `/content/path/to/page` **does** require the use of the `.model` selector.
 
@@ -71,9 +75,7 @@ The HTTP method determines the operation to be executed:
 >
 >The request body and/or URL parameters can be used to configure some of these operations; for example, define that a folder or an asset should be created by a **POST** request.
 
-<!--
-The exact format of supported requests is defined in the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) documentation.
--->
+The exact format of supported requests is defined in the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) documentation. 
 
 ### Transactional Behavior {#transactional-behavior}
 
@@ -242,11 +244,9 @@ Usage can differ depending on whether you are using an AEM author or publish env
 >
 >The dispatcher configuration on AEM cloud instances might block access to `/api`.
 
-<!--
 >[!NOTE]
 >
->For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html). 
--->
+>For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html). 
 
 ### Read/Delivery {#read-delivery}
 
@@ -293,94 +293,88 @@ Usage is via:
 
 There are a few limitations:
 
-* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
-
 * **Content fragment models are currently not supported**: they cannot be read or created. To be able to create a new, or update an existing, content fragment, developers have to know the correct path to the content fragment model. Currently the only method to get an overview of these is through the administration UI.
 * **References are ignored**. Currently there are no checks on whether an existing content fragment is referenced. Therefore, for example, deleting a content fragment might result in issues on a page that contains a reference to the deleted Content Fragment.
+* **JSON data type** The REST API output of the *JSON data type* is currently *string based output*.
 
 ## Status Codes and Error Messages {#status-codes-and-error-messages}
 
 The following status codes can be seen in the relevant circumstances:
 
 * **200** (OK)
+  Returned when:
 
-   Returned when:
-
-    * requesting a content fragment via `GET`
-
-    * successfully updating a content fragment via `PUT`
+  * requesting a content fragment via `GET`
+  * successfully updating a content fragment via `PUT`
 
 * **201** (Created)
+  Returned when:
 
-   Returned when:
-
-    * successfully creating a content fragment via `POST`
+  * successfully creating a content fragment via `POST`
 
 * **404** (Not found)
+  Returned when:
 
-   Returned when:
-
-    * the requested content fragment does not exist
+  * the requested content fragment does not exist
 
 * **500** (Internal server error)
 
-   >[!NOTE]
-   >
-   >This error is returned:
-   >
-   >    * when an error that cannot be identified with a specific code has happened
-   >    * when the given payload was not valid
+  >[!NOTE]
+  >
+  >This error is returned:
+  >
+  >* when an error that cannot be identified with a specific code has happened
+  >* when the given payload was not valid
 
-   The following lists common scenarios when this error status is returned, together with the error message (monospace) generated:
+  The following lists common scenarios when this error status is returned, together with the error message (monospace) generated:
 
-    * Parent folder does not exist (when creating a content fragment via `POST`)
-    * No content fragment model is supplied (cq:model is missing), cannot be read (due to an invalid path or a permission problem) or there is no valid fragment model:
+  * Parent folder does not exist (when creating a content fragment via `POST`)
+  * No content fragment model is supplied (cq:model is missing), cannot be read (due to an invalid path or a permission problem) or there is no valid fragment model:
 
-        * `No content fragment model specified`
-        * `Cannot create a resource of given model '/foo/bar/qux'`
+    * `No content fragment model specified`
+    * `Cannot create a resource of given model '/foo/bar/qux'`
 
-    * The content fragment could not be created (potentially a permission problem):
+  * The content fragment could not be created (potentially a permission problem):
 
-        * `Could not create content fragment`
+    * `Could not create content fragment`
 
-    * Title and or description could not be updated:
+  * Title and or description could not be updated:
 
-        * `Could not set value on content fragment`
+    * `Could not set value on content fragment`
 
-    * Metadata could not be set:
+  * Metadata could not be set:
 
-        * `Could not set metadata on content fragment`
+    * `Could not set metadata on content fragment`
 
-    * Content element could not be found or could not be updated
+  * Content element could not be found or could not be updated
 
-        * `Could not update content element`
-        * `Could not update fragment data of element`
+    * `Could not update content element`
+    * `Could not update fragment data of element`
 
-   The detailed error messages are usually returned in the following manner:
+  The detailed error messages are usually returned in the following manner:
 
-   ```xml
-   {
-     "class": "core/response",
-     "properties": {
-       "path": "/api/assets/foo/bar/qux",
-       "location": "/api/assets/foo/bar/qux.json",
-       "parentLocation": "/api/assets/foo/bar.json",
-       "status.code": 500,
-       "status.message": "...{error message}.."
-     }
-   }
-   ```
+  ```xml
+  {
+    "class": "core/response",
+    "properties": {
+      "path": "/api/assets/foo/bar/qux",
+      "location": "/api/assets/foo/bar/qux.json",
+      "parentLocation": "/api/assets/foo/bar.json",
+      "status.code": 500,
+      "status.message": "...{error message}.."
+    }
+  }
+  ```
 
 ## API Reference {#api-reference}
 
 See here for detailed API references:
-<!--
-* [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
--->
+
+* [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
-    * [Available Features](/help/assets/mac-api-assets.md#available-features)
+  * [Available Features](/help/assets/mac-api-assets.md#available-features)
 
 ## Additional Resources {#additional-resources}
 
@@ -388,4 +382,3 @@ For further information see:
 
 * [Assets HTTP API documentation](/help/assets/mac-api-assets.md)
 * [AEM Gem session: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
-

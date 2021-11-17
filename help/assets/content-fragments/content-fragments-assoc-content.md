@@ -1,11 +1,13 @@
 ---
 title: Associated Content
-description: Associated content provides the connection so that assets can be (optionally) used with the fragment when it is added to a content page.
+description: Understand how AEM's associated content feature provides the connection so that assets can be optionally used with the fragment when it is added to a content page, adding additional flexibility to headless content delivery.
+feature: Content Fragments
+role: User
+exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 ---
-
 # Associated Content{#associated-content}
 
-Associated content provides the connection so that assets (i.e.) can be (optionally) used with the fragment when it is added to a content page. This provides flexibility by [providing a range of assets to access when using the content fragment on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content), while also helping to reduce the time required to search for the appropriate asset.
+AEM's Associated content feature provides the connection so that assets can be optionally used with the fragment when it is added to a content page. This provides flexibility for your headless content delivery by [providing a range of assets to access when using the content fragment on a page,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) while also helping to reduce the time required to search for the appropriate asset.
 
 ## Adding Associated Content {#adding-associated-content}
 
@@ -19,14 +21,18 @@ To make the association you first need to [add your media asset(s) to a collecti
 
    ![Associated Content](assets/cfm-assoc-content-01.png)
 
-2. Select **Associate Content** or **Associate Collection** (as appropriate, depending on whether any collections have already been associated or not).
-3. Select the required collection.
+1. Depending on whether any collections have already been associated, or not - select either:
+
+   * **Associate Content** - this will be the first associated collection
+   * **Associate Collection** - associated collections already are already configured
+
+1. Select the required collection.
 
    You can optionally add the fragment itself to the selected collection; this aids tracking.
 
    ![Select collection](assets/cfm-assoc-content-02.png)
 
-4. Confirm (with the check mark). The collection will be listed as associated.
+1. Confirm (with **Select**). The collection will be listed as associated.
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 

@@ -1,8 +1,8 @@
 ---
 title: Projects
 description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
+exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 ---
-
 # Projects {#projects}
 
 Projects let you group resources into one entity. A common, shared environment makes it easy to manage your projects. The types of resources you can associate with a project are referred to in AEM as Tiles. Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)
@@ -77,7 +77,7 @@ The **Experiences** tile lets you add a Mobile app, web site, or publication to 
 
 ![Experiences](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-The icons indicate which kind of experience is represented: web site, mobile application or a publication. Add experiences by clicking the + sign or clicking **Add Experience** and selecting the type of experience.
+The icons indicate which kind of experience is represented: web site, mobile application or a publication. Add experiences by tapping or clicking the down chevron and tapping **Add Experience** and selecting the type of experience.
 
 ![Add an experience](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
@@ -150,8 +150,8 @@ Tasks let you monitor the status of any project-related tasks, including workflo
 AEM ships with three different templates out of the box:
 
 * A simple project - A reference sample for any projects that do not fit into other categories (a catch-all). It includes three basic roles (Owners, Editors, and Observers) and four workflows (Project Approval, Request Launch, Request Landing Page and Request Email).
-* A media project - A reference sample project for media-related activities. It includes several media related project roles (Photographers, Editors, Copywriters, Designers, Owners and Observers). It also includes two workflows related to media content - Request Copy (for requesting and reviewing text) and Product Photo Shoot (for managing product related photography)
-* A translation project - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface. <!--* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.-->
+* A media project - A reference sample project for media-related activities. It includes several media related project roles (Photographers, Editors, Copywriters, Designers, Owners and Observers). It also Request Copy workflow to request and review text.
+* A [translation project](/help/sites-cloud/administering/translation/overview.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.
 
 Based on the template you select, you have different options available to you particularly around user roles and workflows.
 
@@ -167,8 +167,8 @@ All projects support the following default roles to let you administer security 
 |Role|Description|Permissions|Group Membership|
 |---|---|---|---|
 |Observer|A user in this role can view project details, including the project status.|Read-only permissions on a project|`workflow-users` group|
-|Editor|A user in this role can upload and edit the contents of a project.|Read and Write access on a project, associated metadata, and related assets; privileges to upload a shot list, photo shoot, and review and approve assets; write permission on /etc/commerce; modify permission on a specific project|workflow-users group|
-|Owner|A user in this role can initiate a project. An owner can create a project, initiate work in a project, and also move approved assets to the Production folder. Although all other tasks in the project can also be viewed and performed by the owner.|Write permission on `/etc/commerce`|`dam-users` group (to be able to create a project) project-administrators group (to be able to move assets)|
+|Editor|A user in this role can upload and edit the contents of a project.|Read and Write access on a project, associated metadata, and related assets; privileges to upload a shot list, and review and approve assets; write permission on /etc/commerce; modify permission on a specific project|workflow-users group|
+|Owner|A user in this role can initiate a project. An owner can create a project, initiate work in a project, and also move approved assets to the Production folder. Although all other tasks in the project can also be viewed and performed by the owner.|Write permission on `/etc/commerce`|`dam-users` group (to be able to create a project) project-administrators group (to be able to create a project and move assets)|
 
 >[!NOTE]
 >
