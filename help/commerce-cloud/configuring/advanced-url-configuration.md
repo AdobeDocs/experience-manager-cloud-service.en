@@ -17,7 +17,7 @@ exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0
 >
 > Search Engine Optimization (SEO) has become a key concern for many marketers. As a result, SEO concerns need to be addressed on many Adobe Experience Manager (AEM) as a Cloud Service projects. Please read [SEO and URL Management Best Practices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html) for additional information.
 
-[AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) provides advanced configurations to customize the URLs for product and category pages. Many implementations will customize these URLs for search engine optimization (SEO) purposes.  The following video details how to configure the `UrlProvider` Service and features of [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) to customize the URLs for product and category pages.
+[AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) provides advanced configurations to customize the URLs for product and category pages. Many implementations will customize these URLs for search engine optimization (SEO) purposes. The following video details how to configure the `UrlProvider` Service and features of [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) to customize the URLs for product and category pages.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 

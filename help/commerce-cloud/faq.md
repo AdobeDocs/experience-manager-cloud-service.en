@@ -41,7 +41,7 @@ Dynamic data such as price or inventory is not cached on the Dispatcher. Dynamic
 
 ## 9. How does cache invalidation for AEM Dispatcher work with AEM and commerce?
 
-We recommend setting up TTL-based cache invalidation for pages cached on the Dispatcher. For dynamic information such as price or stock, we recommend rendering the date client-side. For more information about TTL-based cache invalidation, please refer to [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
+We recommend setting up TTL-based cache invalidation for pages cached on the Dispatcher. For dynamic information such as price or stock, we recommend rendering the data client-side. For more information about TTL-based cache invalidation, please refer to [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
 
 ## 10. Is there any recommendation on unified search across AEM content with Commerce?
 
@@ -61,7 +61,7 @@ We recommend to manage marketing related data and content in AEM. Decorate produ
 
 ## 14. How can we ensure PCI compliance when using AEM for the entire presentation layer?
 
-We recommend to use abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or the commerce solutions hold or pass cardholder data. This approach requires only a level 3 PCI compliance. However, there are additional things to consider to be fully PCI compliant such as how employees interact with the system and data. For more information about Magento PCI compliance, please refer to <https://magento.com/pci-compliance>
+We recommend to use abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or the commerce solutions hold or pass cardholder data. This approach requires only a level 3 PCI compliance. However, there are additional things to consider to be fully PCI compliant such as how employees interact with the system and data. For more information about Magento PCI compliance, please refer to [PCI Compliance Requirements](https://magento.com/pci-compliance).
 
 ## 15. If I use AEM and Magento cloud versions, is this joint solution PCI compliant?
 
