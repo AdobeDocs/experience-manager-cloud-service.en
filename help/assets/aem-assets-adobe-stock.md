@@ -1,7 +1,7 @@
 ---
 title: Manage [!DNL Adobe Stock] assets in [!DNL Assets].
 description: Search, fetch, license, and manage [!DNL Adobe Stock] assets from within [!DNL Adobe Experience Manager]. Use the licensed assets as any other digital asset.
-contentOwner: AG
+contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
@@ -22,6 +22,7 @@ Organizations can integrate their enterprise [!DNL Adobe Stock] plan with [!DNL 
 
 The integration requires: 
 
+* An up and running [!DNL Experience Manager Assets] as a [!DNL Cloud Service] instance
 * An [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/)
 * A user with permissions in Admin Console to the default Stock product profile
 * A user with permissions to the Developer Access profile for creating integration in Adobe Developer Console
@@ -106,7 +107,7 @@ IMS configuration includes two steps:
 
 The public key (certificate) authenticates your product profile in Adobe Developer Console.
 
-1. Log in to your [!DNL Experience Manager Assets] author instance. The default URL is `http://localhost:4502/aem/start.html`.
+1. Log in to your [!DNL Experience Manager Assets] cloud instance.
 
 1. From the **[!UICONTROL Tools]** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
