@@ -11,8 +11,6 @@ feature: Integrations
 
 The [!DNL Workfront for Experience Manager enhanced connector] enables enhanced business processes with end-to-end workflows and provides personalized end-to-end client experiences and central storage. For more information on the capabilities and features of the [!DNL enhanced connector], see [what is new in the [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
-Adobe offers two different connectors to integrate both the solutions. The connectors enable complex enterprise automation, configuration, and extensible workflows between [!DNL Assets] and [!DNL Workfront]. In addition, [!DNL Assets Essentials] is available as an add-on that new [!DNL Workfront] customers can purchase separately. To know more, see [[!DNL Workfront] and [!DNL Assets Essentials] integration](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/integration.html).
-
 [!DNL Workfront for Experience Manage enhanced connector] enables your organization to:
 
 * Auto-create linked Experience Manager folders in Workfront and organize the folders based on Workfront Portfolios, Programs, and Projects.
