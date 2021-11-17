@@ -34,7 +34,7 @@ An enterprise [!DNL Adobe Stock] plan,
 * Enables Service Account (JWT) authentication within [!DNL Adobe Developer Console] for your stock entitlement
 * Enables managing the credits and licensing globally from within [!DNL Adobe Admin Console]
 
-Within the entitlement, a default product profile for [!DNL Adobe Stock] exists in [!DNL Admin Console]. Multiple profiles can be created, and these profiles determines who can license Stock assets. A user having access directly to the product profile can access [https://stock.adobe.com/](https://stock.adobe.com/) and license Stock assets. Whereas there is another method of using the Developer Access to create integration (API) to authenticate communication between [!DNL Experience Manager] and [!DNL Adobe Stock].
+Within the entitlement, a default product profile for [!DNL Adobe Stock] exists in [!DNL Admin Console]. Multiple profiles can be created, and these profiles determines who can license Stock assets. A user having a direct access to the product profile can access [https://stock.adobe.com/](https://stock.adobe.com/) and license Stock assets. Whereas there is another method of using the Developer Access to create an integration (API). This integration authenticates the communication between [!DNL Experience Manager Assets] and [!DNL Adobe Stock].
 
 >[!NOTE]
 >
