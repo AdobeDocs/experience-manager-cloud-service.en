@@ -1,14 +1,19 @@
 ---
-title: Install Workfront for Experience Manager enhanced connector
-description: Install Workfront for Experience Manager enhanced connector
-contentOwner: AG
+title: Install [!DNL Workfront for Experience Manager enhanced connector]
+description: Install [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
-feature: Asset Management
+feature: Integrations
 ---
 
 # Install [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] administrators install the enhanced connector. Before you install, review the platform support and other [prerequisites for the enhanced connector](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
+A user with administrator access in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] installs the enhanced connector. Before you install, review the platform support and other [prerequisites for the connector](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
+
+>[!IMPORTANT]
+>
+>Adobe requires deployment and configuration of the [!DNL Adobe Workfront for Experience Manager enhanced connector] only via certified partners or [!DNL Adobe Professional Services]. If deployed and configured without a certified partner or [!DNL Adobe Professional Services], it is not supported by Adobe.
+>
+>Adobe may release updates to [!DNL Adobe Workfront] and [!DNL Adobe Experience Manager] that makes this connector redundant; if this occurs, customers may be required to transition from the use of this connector.
 
 Before you install the connector, follow these pre-installation steps:
 
@@ -104,7 +109,7 @@ To create a connection with [!DNL Workfront], follow these steps:
 
 1. Select `workfront-tools` in the left panel and select **[!UICONTROL Create]** option in the upper-right area of the page.
 
-1. In the **[!UICONTROL Workfront Connection]** dialog, provide the required details of your [!DNL Workfront] deployment and select **[!UICONTROL Connect to Workfront]** option. Once successfully connected, the [!DNL Workfront] document custom integration is auto-created in the [!DNL Workfront] environment.
+1. In the **[!UICONTROL Workfront Connection]** dialog, provide the required details of your [!DNL Workfront] deployment, and select **[!UICONTROL Connect to Workfront]** option. Once successfully connected, the [!DNL Workfront] document custom integration is auto-created in the [!DNL Workfront] environment.
 
    ![Connect [!DNL Experience Manager] and [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
 
