@@ -1,62 +1,53 @@
 ---
 title: Deploying to AEM as a Cloud Service
 description: Deploying to AEM as a Cloud Service 
+feature: Deploying
+exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 ---
-
 # Deploying to AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
 ## Introduction {#introduction}
 
 The fundamentals of code development are similar in AEM as a Cloud Service compared to the AEM On Premise and Managed Services solutions. Developers write code and test it locally, which is then pushed to remote AEM as a Cloud Service environments. Cloud Manager, which was an optional content delivery tool for Managed Services, is required. This is now the sole mechanism for deploying code to AEM as a Cloud Service environments.
 
-The update of the AEM version is always a separate deployment event from pushing custom code. Viewed in another way, custom code releases should be tested against the AEM version that is on production since that is what it will be deployed on top of. AEM version updates that happen after that, which will be frequent when compared to Managed Services today, are automatically applied. They are intended to be backwards compatible with the customer code already deployed.
-
-The following video provides a high level overview on how to deploy code to AEM as a Cloud Service:
-
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+The update of the [AEM version](/help/implementing/deploying/aem-version-updates.md) is always a separate deployment event from pushing [custom code](#customer-releases). Viewed in another way, custom code releases should be tested against the AEM version that is on production since that is what it will be deployed on the top. AEM version updates that happen after that, which will be frequent and are automatically applied. They are intended to be backward compatible with the customer code already deployed.
 
 The rest of this document will describe how developers should adapt their practices so they work with both AEM as a Cloud Service's Version updates and customer updates. 
 
+<!--
 >[!NOTE]
 >It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
-
-
-## AEM version updates {#version-updates}
-
-It is key to understand that AEM will be updated frequently, potentially as often as once a day, and will focus on bug fixes and performance enhancements. The update will happen transparently and without causing downtime. The update is intended to be backwards compatible meaning you should not need to modify custom code. In fact, AEM updates are independent events from customer code deployments. The AEM update is deployed on top of your last successful code push, which implying that any changes committed since the last push to production will not be deployed.
-
->[!NOTE]
->
->If custom code was pushed to staging and then rejected by you, the next AEM update will remove those changes to reflect the git tag of the last successful customer release to production.
-
-On a regular frequency, a feature release will take place, focusing on feature additions and enhancements that will impact more substantially the user experience compared to the daily releases. A feature release is triggered not by the deployment of a large change set, but rather by the flip of a release toggle, activating code that has been accumulating over the course of days or weeks through the daily updates.
-
-Health checks are used to monitor the health of the application. If these checks fail during an AEM as a Cloud Service update, the release will not proceed for that environment and Adobe will investigate why the update caused this unexpected behavior.
-
-### Composite Node Store {#composite-node-store}
-
-As mentioned above, updates in most cases will incur zero downtime, including for the author, which is a cluster of nodes. Rolling updates are possible due to the "composite node store" feature in Oak. This feature allows AEM to reference multiple repositories simultaneously. In a rolling deployment, the new Green AEM version contains its own `/libs` (the TarMK based immutable repository), distinct from the older Blue AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content`, `/conf`, `/etc` and others. Because both the Blue and the Green have their own versions of `/libs`, they can both be active during the rolling update, both taking on traffic until the blue is fully replaced by the green.
+-->
 
 ## Customer Releases {#customer-releases}
 
 ### Coding against the right AEM version {#coding-against-the-right-aem-version}
 
-For previous AEM solutions, the most current AEM version changed infrequently (roughly annually with quarterly service packs) and customers would update the production instances to the latest quickstart on their own time, referencing the API Jar. However, AEM as a Cloud Service applications are automatically updated to the latest version of AEM more often, so custom code for internal releases should be built against those newer AEM interfaces.
+For previous AEM solutions, the most current AEM version changed infrequently (roughly annually with quarterly service packs) and customers would update the production instances to the latest quickstart on their own time, referencing the API Jar. However, AEM as a Cloud Service applications are automatically updated to the latest version of AEM more often, so custom code for internal releases should be built against the latest AEM version.
 
 Like for existing non-cloud AEM versions, a local, offline development based on a specific quickstart will be supported and is expected to be the tool of choice for debugging in the majority of cases.
 
 >[!NOTE]
 >There are subtle operational differences between how the application behaves on a local machine versus the Adobe Cloud. These architectural differences must be respected during local development and could lead to a different behavior when deploying on the cloud infrastructure. Because of these differences it is important to perform the exhaustive tests on dev and stage environments before rolling out new custom code in production.
 
-In order to develop custom code for an internal release, the relevant version of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) should be downloaded and installed. For additional information about using the AEM as a Cloud Service Dispatcher Tools, see [this page](/help/implementing/dispatcher/overview.md).
+In order to develop custom code for an internal release, the relevant version of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) should be downloaded and installed. For additional information about using the AEM as a Cloud Service Dispatcher Tools, see [this page](/help/implementing/dispatcher/disp-overview.md).
+
+The following video provides a high level overview on how to deploy code to AEM as a Cloud Service:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+
+<!--
+>[!NOTE]
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
+-->
 
 ## Deploying Content Packages via Cloud Manager and Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
 ### Deployments via Cloud Manager {#deployments-via-cloud-manager}
 
-Customers deploy custom code to cloud environments through Cloud Manager. It should be noted that Cloud Manager transforms locally assembled content packages into an artifact conforming to the Sling Feature Model, which is how an AEM as a Cloud Service application is described when running in a cloud environment. As a result, when looking at the packages in Package Manager on Cloud environments, the name will include "cp2fm" and the transformed packages have all metadata removed. They cannot be interacted with, meaning they cannot be downloaded, replicated, or opened. Detailed documentation about the converter can be [found here](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+Customers deploy custom code to cloud environments through Cloud Manager. It should be noted that Cloud Manager transforms locally assembled content packages into an artifact conforming to the Sling Feature Model, which is how an AEM as a Cloud Service application is described when running in a cloud environment. As a result, when looking at the packages in [Package Manager](/help/implementing/developing/tools/package-manager.md) on Cloud environments, the name will include "cp2fm" and the transformed packages have all metadata removed. They cannot be interacted with, meaning they cannot be downloaded, replicated, or opened. Detailed documentation about the converter can be [found here](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
-Content packages written for AEM as a Cloud Service applications must have a clean separation between immutable and mutable content and Cloud Manager will enforce it by failing the build, outputting a message like:
+Content packages written for AEM as a Cloud Service applications must have a clean separation between immutable and mutable content and Cloud Manager will only install the mutable content, also outputting a message like:
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
@@ -69,6 +60,8 @@ All content and code persisted in the immutable repository must be checked into 
 As application changes due to the Blue-Green deployment pattern are enabled by a switch, they cannot depend on changes in the mutable repository with the exception of service users, their ACLs, nodetypes and index definition changes.
 
 For customers with existing code bases, it is critical to go through the repository restructuring exercise described in AEM documentation to ensure that content formerly under the /etc is moved to the right location.
+
+Some additional restrictions apply for these code packages, for example [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html) are not supported.
 
 ## OSGI Configuration {#osgi-configuration}
 
@@ -105,18 +98,18 @@ After switchover to new version of application:
   * Folders (add, modify, remove)
   * Editable templates (add, modify, remove)
   * Context Aware configuration (anything under `/conf`) (add, modify, remove)
-  * Scripts (packages can trigger Install hooks at various stages of the install process of package installation
+  * Scripts (packages can trigger Install hooks at various stages of the install process of package installation. See the [Jackrabbit filevault documentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. Note that AEM CS currently uses Filevault version 3.4.0, which limits install hooks to admin users, system users,and member of the administrators group)).
 
-It is possible to limit mutable content installation to author or publish by embedding packages in an install.author or install.publish folder under `/apps`. Details to be found in [AEM documentation](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) around recommended project restructuring.
+It is possible to limit mutable content installation to author or publish by embedding packages in an install.author or install.publish folder under `/apps`. Restructuring to reflect this separation was done in AEM 6.5 and details around recommended project restructuring can be found in the [AEM 6.5 documentation.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
->Content packages are deployed to all environment types (dev, stage, prod). It is not possible to limit deployment to a specific environment. This limitation is in place to ensure the option of a test run of automated execution. Content that is specific to an environment requires manual installation via Package Manager.
+>Content packages are deployed to all environment types (dev, stage, prod). It is not possible to limit deployment to a specific environment. This limitation is in place to ensure the option of a test run of automated execution. Content that is specific to an environment requires manual installation via [Package Manager.](/help/implementing/developing/tools/package-manager.md)
 
 Also, there is no mechanism to rollback the mutable content package changes after they've been applied. If customers detect a problem, they can choose to fix it in their next code release or as a last resort, restore the entire system to a point in time before the deployment.
 
 Any included 3rd party packages must be validated as being AEM as a Cloud Service Service compatible, otherwise its inclusion will result in a deployment failure.
 
-As mentioned above, customers with existing code bases should conform to the repository restructuring exercise described in [AEM documentation](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html).
+As mentioned above, customers with existing code bases should conform to the repository restructuring exercise necessitated by the 6.5 repository changes described in the [AEM 6.5 documentation.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 ## Repoinit {#repoinit}
 
@@ -168,15 +161,29 @@ above appears to be internal, to confirm with Brian -->
 
 ### Package Manager "one offs" for Mutable Content Packages {#package-manager-oneoffs-for-mutable-content-packages}
 
-There are use cases where a content package should be installed as a "one off". For example importing specific content from production on to staging in order to debug a production issue. For these scenarios, Package Manager can be used in AEM as a Cloud Service environments.
+>[!CONTEXTUALHELP]
+>id="aemcloud_packagemanager"
+>title="Package Manager - Migrating Mutable Content Packages"
+>abstract="Explore usage of package manager for use cases where a content package should be installed as “one off” which includes importing specific content from production on to staging in order to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments and more."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Content Transfer Tool"
+
+There are use cases where a content package should be installed as a "one off". For example importing specific content from production on to staging in order to debug a production issue. For these scenarios, [Package Manager](/help/implementing/developing/tools/package-manager.md) can be used in AEM as a Cloud Service environments.
 
 Since Package Manager is a runtime concept, it is not possible to install content or code into the immutable repository, so these content packages should only consist of mutable content (mainly `/content` or `/conf`). If the content package includes content that is mixed (both mutable and immutable content), only the mutable content will be installed.
+
+>[!IMPORTANT]
+>
+>The Package Manager UI might return an **undefined** error message if a package takes longer than 10 minutes to install.
+>
+>This is not due to an error with the installation, but to a timeout that Cloud Service has for all requests.
+>
+>Do not retry the installation if you see such an error. The installation is proceeding correctly in the background. If you do restart the installation some conflicts could be introduced by multiple concurrent import processes.
 
 Any content-packages installed via Cloud Manager (both mutable and immutable) will appear in a frozen state in AEM Package Manager's user interface. These packages cannot be reinstalled, rebuilt or even downloaded, and will listed with a **"cp2fm"** suffix, indicating their installation was managed by Cloud Manager.
 
 ### Including Third Party Packages {#including-third-party}
 
-It is common for customers to include pre-built packages from third party sources such as software vendors like Adobe's translation partners. The recommendation is to host these packages in a remote repository and reference them in the `pom.xml`. This is possible for public repositories and also for private repositories with password protection, as described in [password protected maven repositories](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
+It is common for customers to include pre-built packages from third party sources such as software vendors like Adobe's translation partners. The recommendation is to host these packages in a remote repository and reference them in the `pom.xml`. This is possible for public repositories and also for private repositories with password protection, as described in [password protected maven repositories](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
 If storing the package in a remote repository is not possible, customers can place in a local, file system based Maven repository, which is committed to SCM as part of the project, and referenced by whatever depends on it. The repository would be declared in the project pomas illustrated below:
 
@@ -242,19 +249,19 @@ Like AEM updates, customer releases are deployed using a rolling deployment stra
 
 ## Indexes {#indexes}
 
-New or modified indexes will cause an additional indexing or re-indexing step before the new (Green) version can take on traffic. Details about index management in Skyline can be found in [this article](/help/operations/indexing.md). You can check the status of the indexing job on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
+New or modified indexes will cause an additional indexing or re-indexing step before the new (Green) version can take on traffic. Details about index management in AEM as a Cloud Service can be found in [this article](/help/operations/indexing.md). You can check the status of the indexing job on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
 
 >[!NOTE]
 >
 >The time needed for a rolling deployment will vary depending on the size of the index, since the Green version cannot accept traffic until the new index has been generated.
 
-At this time, Skyline does not work with index management tools such as ACS Commons Ensure Oak Index tool.
+At this time, AEM as a Cloud Service does not work with index management tools such as ACS Commons Ensure Oak Index tool.
 
 ## Replication {#replication}
 
 The publication mechanism is backwards compatible with the [AEM Replication Java APIs](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html).
 
-In order to develop and test with replication with the cloud ready AEM Quickstart, the classic replication capabilities needs to be used with an Author/Publish setup. In the case of the UI entry point on AEM Author has been removed for the cloud, users would go to `http://localhost:4502/etc/replication` for configuration.
+In order to develop and test with replication with the cloud ready AEM quickstart, the classic replication capabilities needs to be used with an Author/Publish setup. In the case of the UI entry point on AEM Author has been removed for the cloud, users would go to `http://localhost:4502/etc/replication` for configuration.
 
 ## Backwards Compatible Code for Rolling Deployments {#backwards-compatible-code-for-rolling-deployments}
 

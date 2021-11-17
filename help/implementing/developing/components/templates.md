@@ -1,11 +1,11 @@
 ---
 title: Page Templates
 description: Page Templates are used when creating a page which will be used as the base for the new page
+exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 ---
-
 # Page Templates {#page-templates}
 
-When creating a page you need to select a template. The page template is used as the base for the new page. The template defines the structure of the resultant page, any initial content and the components that can be used (design properties). This has serveral advantages:
+When creating a page you need to select a template. The page template is used as the base for the new page. The template defines the structure of the resultant page, any initial content and the components that can be used (design properties). This has several advantages:
 
 * Page Templates allow specialized authors to [create and edit templates](/help/sites-cloud/authoring/features/templates.md).
   * Such specialized authors are called **template authors**
@@ -54,7 +54,7 @@ When creating a new editable template you:
 
    For details on how a template author defines the structure, see [Creating Page Templates](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
-   For technical deatils of the structure, see [Structure](#structure) in this document.
+   For technical details of the structure, see [Structure](#structure) in this document.
 
    **Policies**
 
@@ -66,7 +66,7 @@ When creating a new editable template you:
 
    For details on how a template author defines policies, see [Creating Page Templates](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
-   For technical deatil of policies, see [Content Policies](#content-policies) in this document.
+   For technical details of policies, see [Content Policies](#content-policies) in this document.
 
    **Initial Content**
 
@@ -93,7 +93,7 @@ When creating a new editable template you:
 
    For details on how a template author enables a template, see [Creating Page Templates](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
 
-   For technical deatils on enabling a template, see [Enabling and Allowing a Template for Us](#enabling-and-allowing-a-template-for-use)e in this document
+   For technical details on enabling a template, see [Enabling and Allowing a Template for Us](#enabling-and-allowing-a-template-for-use)e in this document
 
 1. Use it to create content pages.
 
@@ -104,17 +104,25 @@ When creating a new editable template you:
 
    For technical details on creating pages with editable templates, see [Resultant Content Pages](#resultant-content-pages) in this document.
 
+>[!TIP]
+>
+>Never enter any information that needs to be internationalized into a template. For internalization purposes, the [localization features of the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) are recommended.
+
+>[!NOTE]
+>
+>Templates are powerful tools to streamline your page creation workflow. However too many templates can overwhelm the authors and make page creation confusing. A good rule of thumb is to keep the number of templates under 100.
+>
+>Adobe does not recommend having more than 1000 templates due to potential performance impacts.
+
 >[!NOTE]
 >
 >The editor client library assumes the presence of the `cq.shared` namespace in content pages, and if it is absent the JavaScript error `Uncaught TypeError: Cannot read property 'shared' of undefined` will result.
 >
 >All sample content pages contain `cq.shared`, so any content based on them automatically includes `cq.shared`. However, if you decide to create your own content pages from scratch without basing them on sample content, you must make sure to include the `cq.shared` namespace.
 >
-<!--See [Using Client-Side Libraries](/help/sites-developing/clientlibs.md) for further information.-->
+>See [Using Client-Side Libraries](/help/implementing/developing/introduction/clientlibs.md) for further information.
 
->[!CAUTION]
->
->Never enter any information that needs to be internationalized into a template.
+
 
 ## Template Folders {#template-folders}
 
@@ -150,7 +158,7 @@ A list of all allowed entries is created. If any configurations overlap ( `path`
 To create a new folder, you can either do this:
 
 * Programmatically or with CRXDE Lite
-* Using the Configuration Browser
+* Using the [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Using CRXDE Lite {#using-crxde-lite}
 
@@ -183,7 +191,7 @@ To create a new folder, you can either do this:
 
 ### Using the Configuration Browser {#using-the-configuration-browser}
 
-1. Go to **Global Navigation** -&gt; **Tools** &gt; **Configuration Browser**.
+1. Go to **Global Navigation** -&gt; **Tools** &gt; [**Configuration Browser**.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
    The existing folders are listed to the left including the `global` folder.
 
@@ -197,7 +205,7 @@ To create a new folder, you can either do this:
 
 >[!NOTE]
 >
->In the Configuration Browser, you can edit the global folder and activate the **Editable Templates** option if you wish to create templates within this folder, however this is not recommended best practice.
+>In the [Configuration Browser,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) you can edit the global folder and activate the **Editable Templates** option if you wish to create templates within this folder, however this is not recommended best practice.
 
 ### ACLs and Groups {#acls-and-groups}
 
@@ -248,7 +256,7 @@ The following table details the necessary permissions for template editing.
    <td>Template authors that create, read, update, delete, and replicate templates in site specific <code>/conf</code> space</td>
   </tr>
   <tr>
-   <td>Annonymous Web User</td>
+   <td>Anonymous Web User</td>
    <td>read</td>
    <td>Anonymous Web User must read policies while rendering a page</td>
   </tr>
@@ -549,7 +557,7 @@ The evaluation works as follows:
 
 * If `T` has a non-empty `allowedPaths` property, but none of the values match the path of `P`, `T` is rejected.
 
-* If both of the above properties are either empty or non-existent, `T` is rejected unless it belongs to the same application as `P`. `T` belongs to the same application as `P` if and only if the name of the second level of the path of `T` is the same as the name of the second level of the path of `P`. For example, the template `/apps/geometrixx/templates/foo` belongs to the same application as the page `/content/geometrixx`.
+* If both of the above properties are either empty or non-existent, `T` is rejected unless it belongs to the same application as `P`. `T` belongs to the same application as `P` if and only if the name of the second level of the path of `T` is the same as the name of the second level of the path of `P`. For example, the template `/apps/wknd/templates/foo` belongs to the same application as the page `/content/wknd`.
 
 * If `T` has an non-empty `allowedParents` property, but none of the values match the path of `P`, `T` is rejected.
 

@@ -1,11 +1,13 @@
 ---
 title: Markdown
-description: When you are authoring, the content fragment editor uses markdown syntax to allow you to easily write content.
+description: Understand how the Content Fragment editor uses markdown syntax to allow you to easily create headless content.
+feature: Content Fragments
+role: User
+exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 ---
+# Markdown {#markdown}
 
-# Markdown{#markdown}
-
-When you are [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write content:
+When you are [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write headless content:
 
 ![markdown editor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
@@ -157,7 +159,7 @@ You can bold text as follows:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph.
+To indicate a span of code, wrap it with backtick quotes (&grave;). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph.
 
 For example:
 
@@ -179,24 +181,24 @@ You can use backslash escapes to generate literal characters which have special 
 
 Backslash escapes are available for the following characters:
 
-&nbsp;&nbsp;&nbsp;&nbsp;`\ backslash`
+&nbsp;&nbsp;&nbsp;&nbsp;` \ backslash`
 
-&nbsp;&nbsp;&nbsp;&nbsp;` backtick
+&nbsp;&nbsp;&nbsp;&nbsp;`` ` backtick``
 
-&nbsp;&nbsp;&nbsp;&nbsp;`* asterisk`
+&nbsp;&nbsp;&nbsp;&nbsp;` * asterisk`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`_ underscore`
+&nbsp;&nbsp;&nbsp;&nbsp;` _ underscore`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`{} curly braces`
+&nbsp;&nbsp;&nbsp;&nbsp;` {} curly braces`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`[] square brackets`
+&nbsp;&nbsp;&nbsp;&nbsp;` [] square brackets`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`() parentheses`
+&nbsp;&nbsp;&nbsp;&nbsp;` () parentheses`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`# hash mark`
+&nbsp;&nbsp;&nbsp;&nbsp;` # hash mark`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`+ plus sign`
+&nbsp;&nbsp;&nbsp;&nbsp;` + plus sign`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`- minus sign (hyphen)`
+&nbsp;&nbsp;&nbsp;&nbsp;` - minus sign (hyphen)`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`. dot`
+&nbsp;&nbsp;&nbsp;&nbsp;` . dot`

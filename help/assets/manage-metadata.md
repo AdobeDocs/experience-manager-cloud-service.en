@@ -1,18 +1,15 @@
 ---
-title: Manage metadata of your digital assets in [!DNL Adobe Experience Manager].
+title: Manage metadata of digital assets
 description: Learn about the types of metadata an how [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] makes it possible to automatically organize and process assets based on their metadata.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Asset Management,Metadata
+role: User,Architect,Admin
+exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 ---
-
 # Manage metadata of your digital assets {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] keeps metadata for every asset. It allows easier categorization and organization of assets and it helps people who are looking for a specific asset. With the ability to extract metadata from files uploaded to [!DNL Experience Manager Assets], metadata management integrates with the creative workflow. With the ability to keep and manage metadata with your assets, you can automatically organize and process assets based on their metadata.
-
->[!MORELIKETHIS]
->
->* [XMP metadata](xmp-metadata.md)
->* [How to edit or add metadata](meta-edit.md)
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
@@ -108,7 +105,7 @@ Enterprise Manager Assets lets you edit the metadata of multiple assets simultan
 
 >[!NOTE]
 >
->The bulk editing methods work for assets available in a folder or a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](/help/assets/search-assets.md#metadataupdates).
+>The bulk editing methods work for assets available in a folder or a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](/help/assets/search-assets.md#metadata-updates).
 
 1. Navigate to the location of the assets that you want to edit.
 1. Select the assets for which you want to edit common properties.
@@ -119,11 +116,11 @@ Enterprise Manager Assets lets you edit the metadata of multiple assets simultan
    >When you select multiple assets, the lowest common parent form is selected for the assets. In other words, the [!UICONTROL Properties] page only displays metadata fields that are common across the [!UICONTROL Properties] pages of all the individual assets.
 
 1. Modify the metadata properties for selected assets under the various tabs.
-1. To view the metadata editor for a specific asset, deselect the remaining assets in the list. The metadata editor fields are populated with the metadata for the particular asset.
+1. To view the metadata editor for a specific asset, cancel the selection of the remaining assets in the list. The metadata editor fields are populated with the metadata for the particular asset.
 
    >[!NOTE]
    >
-   >* In the [!UICONTROL Properties] page, you can remove assets from the asset list by deselecting them. The asset list has all the assets selected by default. The metadata for assets that you remove from the list is not updated.
+   >* In the [!UICONTROL Properties] page, you can remove assets from the asset list by canceling the selection. The asset list has all the assets selected by default. The metadata for assets that you remove from the list is not updated.
    >* At the top of assets list, select the check box near **[!UICONTROL Title]** to toggle between selecting the assets and clearing the list.
 
 1. To select a different metadata schema for the assets, tap/click **[!UICONTROL Settings]** from the toolbar, and select the desired schema. Save the changes.
@@ -135,7 +132,7 @@ Enterprise Manager Assets lets you edit the metadata of multiple assets simultan
 
 ## Custom metadata using processing profile {#metadata-compute-service}
 
-Assets as a Cloud Service can generate custom metadata for an asset using cloud-native services. Configure a processing profile to generate custom metadata. See [how to use processing profile](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Assets as a [!DNL Cloud Service] can generate custom metadata for an asset using cloud-native services. Configure a processing profile to generate custom metadata. See [how to use processing profile](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ![Metadata rendition in processing profile](assets/processing-profile-metadata.png)
 
@@ -143,13 +140,16 @@ Assets as a Cloud Service can generate custom metadata for an asset using cloud-
 >
 >Only one processing profile can be applied to a folder. To apply multiple processing to assets in a folder, add more options to a single processing profile. For example, a single profile can generate renditions, transcode assets, generate custom metadata, and so on. You can apply MIME type filters for each task so that the appropriate task is triggered for the required file format.
 
+<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+
 ## Configure limit for bulk metadata update {#configlimit}
 
-To prevent DOS-like situation, AEM limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. AEM generates the following warning in the logs:
+To prevent DOS-like situation, [!DNL Experience Manager] limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. [!DNL Experience Manager] generates the following warning in the logs:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
 To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**) and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
+-->
 
 ## Metadata schemata {#metadata-schemata}
 
@@ -176,7 +176,7 @@ The application-specific metadata includes technical and descriptive metadata. I
 * Album - [!DNL Adobe Photoshop Album].
 * CQ - Used by [!DNL Experience Manager Assets].
 * DAM - Used by [!DNL Experience Manager Assets].
-* DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) is a collection of tools for metadata and file management for Windows operating systems.
+* DEX - [Optima SC Description explorer](https://www.optimasc.com/products/dex/index.html) is a collection of tools for metadata and file management for Windows operating systems.
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
@@ -204,7 +204,7 @@ The application-specific metadata includes technical and descriptive metadata. I
 ### Print-specific metadata {#print-specific-metadata}
 
 * PDF and PDF/X - Adobe PDF and third-party applications.
-* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.prismstandard.org).
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP metadata for paged text.
 
@@ -220,3 +220,8 @@ Creating metadata-driven workflows help you automate some processes, which impro
 * The workflow can check whether an image has a title or not. If it does not, the system notifies to add a title.
 * The workflow can check whether a copyright notice on an asset allows for distribution or not. So, the system sends the asset to one server or the other.
 * A workflow can check for assets without pre-defined, mandatory metadata or assets with *invalid* metadata.
+
+>[!MORELIKETHIS]
+>
+>* [XMP metadata](xmp-metadata.md)
+>* [How to edit or add metadata](meta-edit.md)

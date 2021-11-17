@@ -1,17 +1,19 @@
 ---
-title: Manage your digital assets in Experience Manager
+title: Manage digital assets
 description: Learn about various asset management and editing methods.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Asset Management,Publishing,Collaboration,Asset Processing
+role: User,Architect,Admin
+exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 ---
-
 # Manage assets {#manage-assets}
 
 This article describes how to manage and edit assets in Adobe Experience Manager Assets. To manage Content Fragments, see [Content Fragments](content-fragments/content-fragments.md) assets.
 
 ## Create folders {#creating-folders}
 
-When organizing a collection of assets, for example, all `Nature` images, you can create folders to keep them together. You can use folders to categorize and organize your assets. AEM Assets does not require you to organize assets in folders to work better.
+When organizing a collection of assets, for example, all `Nature` images, you can create folders to keep them together. You can use folders to categorize and organize your assets. [!DNL Experience Manager Assets] does not require you to organize assets in folders to work better.
 
 >[!NOTE]
 >
@@ -35,9 +37,7 @@ See [add digital assets to Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-If a DAM user uploads one or more assets that already exist in the repository, [!DNL Experience Manager] detects the duplication and notifies the user. Duplicate detection is disabled by default as it can have performance impact depending on size of repository and number of assets uploaded. To enable the feature, configure [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. See [how to do OSGi configurations](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). The duplication detection is based on the unique `dam:sha1` value stored at `jcr:content/metadata/dam:sha1`. It means that duplicate assets are detected even if the filenames are different.
-
-![Detect duplicate asset OSGi configuration](assets/duplicate-detection.png)
+If a DAM user uploads one or more assets that already exist in the repository, [!DNL Experience Manager] detects the duplication and notifies the user. Duplicate detection is disabled by default as it can have performance impact depending on size of repository and number of assets uploaded. To enable the feature, configure [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. See [how to do OSGi configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). The duplication detection is based on the unique `dam:sha1` value stored at `jcr:content/metadata/dam:sha1`. It means that duplicate assets are detected even if the filenames are different.
 
 You can add the configuration file `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` in custom code and the file can contain the following:
 
@@ -48,7 +48,7 @@ You can add the configuration file `/apps/example/config.author/com.adobe.cq.ass
 }
 ```
 
-Once enabled, Experience Manager sends notifications of duplicate assets to the inbox. It is an aggregated result for multiple duplicates. Users can choose to remove the assets based on the results.
+Once enabled, Experience Manager sends notifications of duplicate assets to the Experience Manager Inbox. It is an aggregated result for multiple duplicates. Users can choose to remove the assets based on the results.
 
 ![Inbox notification for duplicate assets](assets/duplicate-detect-inbox-notification.png)
 
@@ -87,7 +87,7 @@ To preview an asset, follow these steps.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press the Enter key. The new tag is saved in AEM.
+1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and select the `Enter` key. The new tag is saved in [!DNL Experience Manager].
 
    YouTube requires Tags to publish and have a link to YouTube (if a suitable link can be found).
 
@@ -95,19 +95,25 @@ To preview an asset, follow these steps.
    >
    >To create tags, you must have write permission at `/content/cq:tags/default` path in the CRX repository.
 
-1. To view usage usage statistics for the asset, click/tap the **[!UICONTROL Insights]** tab.
+1. Tap/click **[!UICONTROL Save & Close]**.
 
-   Usage statistics include the following:
+1. Navigate to the Assets user interface. The edited metadata properties, including title, description, and tags are displayed on the asset card in Card view and under relevant columns in the List view.
+
+<!-- TBD: Uncomment after verification for Dec release.
+
+## View asset usage and references {#usage-and-references}
+
+[!DNL Experience Manager] lets you track statistics about usage of a digital asset. The usage statistics include the following:
 
     * Number of times the asset was viewed or downloaded
     * Channels/devices through which the asset was used
     * Creative solutions where the asset was recently used
 
-   For more details, see [Asset Insights](assets-insights.md).
+To view usage statistics for an asset, in the [!UICONTROL Properties] page, click the **[!UICONTROL Insights]** tab. For more details, see [Assets Insights](assets-insights.md).
 
-1. Tap/click **[!UICONTROL Save & Close]**.
+[!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset. That is, the use of assets in compound assets in [!DNL Assets] and its use in remote [!DNL Sites] pages.
 
-1. Navigate to the Assets user interface. The edited metadata properties, including title, description, and tags are displayed on the asset card in Card view and under relevant columns in the List view.
+-->
 
 ## Copy assets {#copying-assets}
 
@@ -131,7 +137,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    >[!NOTE]
    >
-   >If you copy an asset at the same location, AEM automatically generates a variation of the name. For example, if you copy an asset titled `Square`, AEM automatically generates the title for its copy as `Square1`.
+   >If you copy an asset at the same location, [!DNL Experience Manager] automatically generates a variation of the name. For example, if you copy an asset titled `Square`, [!DNL Experience Manager] automatically generates the title for its copy as `Square1`.
 
 1. Click the **[!UICONTROL Paste]** asset icon from the toolbar. Assets are copied to this location.
 
@@ -195,7 +201,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    >[!NOTE]
    >
-   >By default, AEM Assets does not display the original rendition of the asset in the preview mode. If you are an administrator, you can use overlays to configure AEM Assets to display original renditions in the preview mode.
+   >By default, [!DNL Experience Manager Assets] does not display the original rendition of the asset in the preview mode. If you are an administrator, you can use overlays to configure [!DNL Assets] to display original renditions in the preview mode.
 
 1. Select a rendition to either view or delete the rendition.
 
@@ -215,7 +221,7 @@ The other properties and metadata information is retained. A partial copy is not
    >
    >If you select a rendition from the **[!UICONTROL Renditions]** panel, the toolbar changes context and displays only those actions that are relevant to the rendition. Options, such as the Upload Rendition icon is not displayed. To view these options in the toolbar, navigate to the details page for the asset.
 
-   You can configure the dimensions for the rendition you want displayed in the details page of an image or video asset. Based on the dimensions you specify, AEM Assets displays the rendition with the exact or closest dimensions.
+   You can configure the dimensions for the rendition you want displayed in the details page of an image or video asset. Based on the dimensions you specify, Assets displays the rendition with the exact or closest dimensions.
 
    To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. Configure the property **[!UICONTROL size (Long) in KB]** in place of width to customize rendition on asset detail page based on image size. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
 
@@ -237,9 +243,7 @@ Also, disable the force delete button using an overlay, to disallow users from d
 
 1. Navigate to the location of the asset(s) you want to delete.
 
-1. Select the asset, and tap/click the **[!UICONTROL Delete]** icon from the toolbar.
-
-   ![delete_icon](assets/delete_icon.png)
+1. Select the asset, and click **[!UICONTROL Delete]** ![delete_icon](assets/do-not-localize/delete-icon.png) from the toolbar.
 
 1. In the confirmation dialog, click:
 
@@ -247,7 +251,7 @@ Also, disable the force delete button using an overlay, to disallow users from d
     * **[!UICONTROL Delete]** to confirm the action:
 
         * If the asset has no references, the asset is deleted.
-        * If the asset has references, an error-message informs you that **One or more assets are referenced.** You can select **[!UICONTROL Force Delete]** or **[!UICONTROL Cancel]**.
+        * If the asset has references, an error-message informs you that **[!UICONTROL One or more assets are referenced]**. You can select **[!UICONTROL Force Delete]** or **[!UICONTROL Cancel]**.
 
    >[!NOTE]
    >
@@ -255,67 +259,39 @@ Also, disable the force delete button using an overlay, to disallow users from d
 
    >[!NOTE]
    >
-   >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset.
-   >
-   >
-   >Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
+   >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. You can disallow deletion of referenced assets as it causes broken links. Disable the force delete button using an overlay.
 
 ## Download assets {#download-assets}
 
-See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
+See [download assets from [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
-## Publish assets {#publish-assets}
+## Publish or unpublish assets {#publish-assets}
 
-<!--
->[!NOTE]
->
->For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
--->
+1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
 
-1. Navigate to the location of the assets/folder you want to publish.
+1. Select the asset or the folder to publish or unpublish and select **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar. Alternatively, to publish quickly, select the **[!UICONTROL Quick Publish]** option from the toolbar. If the folder you want to publish includes an empty folder, the empty folder is not published.
 
-1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap/click the **[!UICONTROL Quick Publish]** icon from the toolbar.
-1. If the asset references other assets, its references are listed in the wizard. Only references that are either unpublished or modified since they were last published/unpublished are displayed. Choose the references you want to publish.
+1. Select the **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** option as required.
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![Unpublish action](assets/unpublish_action.png)
+   *Figure: Publish and unpublish options and the scheduling option.*
 
-   >[!NOTE]
-   >
-   >If the folder you want to publish includes an empty folder, the empty folder is not published.
+1. Select **[!UICONTROL Now]** to act on the asset right away or select **[!UICONTROL Later]** to schedule the action. Select a date and time if you choose the **[!UICONTROL Later]** option. Click **[!UICONTROL Next]**.
 
-1. Tap/click **[!UICONTROL Publish]** to confirm the activation for the assets.
+1. When publishing, if an asset references other assets, its references are listed in the wizard. Only those references are displayed, that are either unpublished or modified since last publish. Choose the references that you want to publish.
 
->[!CAUTION]
->
->If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
+1. When unpublishing, if an asset references other assets, choose the references that you want to unpublish. Click **[!UICONTROL Unpublish]**. In the confirmation dialog, click **[!UICONTROL Cancel]** to stop the action or click **[!UICONTROL Unpublish]** to confirm that the assets are to be unpublished at the specified date.
 
-## Unpublish assets {#unpublishing-assets}
+Understand the following limitations and tips related to publishing or unpublishing assets or folders:
 
-1. Navigate to the location of the asset/asset folder you want to remove from the publish environment (unpublish).
-
-1. Select the asset/folder to unpublish, and tap/click the **[!UICONTROL Manage Publication]** icon from the toolbar.
-
-   ![manage_publication](assets/manage_publication.png)
-
-1. Select the **[!UICONTROL Unpublish]** action from the list.
-
-   ![unpublish_action](assets/unpublish_action.png)
-
-1. To unpublish the asset later, select **[!UICONTROL Unpublish Later]**, and then select a date for unpublishing the asset.
-1. Schedule a date for the asset to be unavailable from the publish environment.
-1. If the asset references other assets, choose the references you want to unpublish. Tap/click **[!UICONTROL Unpublish]**.
-1. In the confirmation dialog, tap/click:
-
-    * **[!UICONTROL Cancel]** to stop the action
-    * **[!UICONTROL Unpublish]** to confirm that the assets are unpublished (no longer available on the publish environment) at the specified date.
-
-   >[!NOTE]
-   >
-   >When un-publishing a complex asset, unpublish the asset only. Avoid un-publishing the references because they may be referenced by other published assets.
+* The option to [!UICONTROL Manage Publication] is available only to the user accounts that have replication permissions.
+* While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because those may be referenced by other published assets.
+* Empty folders are not published.
+* If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
 
 ## Closed user group {#closed-user-group}
 
-A closed user group (CUG) is used to limit access to specific asset folders published from AEM. If you create a CUG for a folder, access to the folder (including folder assets and subfolders) is restricted to assigned members or groups only. To access the folder, they must log in using their security credentials.
+A closed user group (CUG) is used to limit access to specific asset folders published from [!DNL Experience Manager]. If you create a CUG for a folder, access to the folder (including folder assets and subfolders) is restricted to assigned members or groups only. To access the folder, they must log in using their security credentials.
 
 CUGs are an extra way to restrict access to your assets. You can also configure a login page for the folder.
 
@@ -324,22 +300,22 @@ CUGs are an extra way to restrict access to your assets. You can also configure 
 
    ![add_user](assets/add_user.png)
 
-1. To display a login screen when users access the folder, select the **[!UICONTROL Enable]** option. Then, select the path to a login page in AEM, and save the changes.
+1. To display a login screen when users access the folder, select the **[!UICONTROL Enable]** option. Then, select the path to a login page in [!DNL Experience Manager], and save the changes.
 
    ![login_page](assets/login_page.png)
 
    >[!NOTE]
    >
-   >If you do not specify the path to a login page, AEM displays the default login page in the publish instance.
+   >If you do not specify the path to a login page, [!DNL Experience Manager] displays the default login page in the publish instance.
 
 1. Publish the folder, and then try accessing it from the publish instance. A login screen is displayed.
-1. If you are a CUG member, enter your security credentials. The folder is displayed after AEM authenticates you.
+1. If you are a CUG member, enter your security credentials. The folder is displayed after [!DNL Experience Manager] authenticates you.
 
 ## Search assets {#search-assets}
 
 Searching assets is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators.
 
-For simple, advanced, and custom searches to discover and use the most appropriate assets, see [search assets in AEM](/help/assets/search-assets.md).
+For simple, advanced, and custom searches to discover and use the most appropriate assets, see [search assets in [!DNL Experience Manager]](/help/assets/search-assets.md).
 
 ## Quick actions {#quick-actions}
 
@@ -350,7 +326,7 @@ Quick action icons are available for a single asset at a time. Depending upon yo
 
 ## Edit images {#editing-images}
 
-The editing tools in the AEM Assets interface let you perform small editing jobs on image assets. You can crop, rotate, flip, and perform other editing jobs on images. You can also add image maps to assets.
+The editing tools in the [!DNL Experience Manager Assets] interface let you perform small editing jobs on image assets. You can crop, rotate, flip, and perform other editing jobs on images. You can also add image maps to assets.
 
 >[!NOTE]
 >
@@ -422,7 +398,7 @@ The timeline lets you view various events for a selected item, such as active wo
 
 Annotations are comments or explanatory notes added to images or videos. Annotations provide marketers the ability to collaborate and leave feedback about assets.
 
-Video annotations are only supported on browsers with HTML5-compatible video formats. Video formats that AEM Assets supports depend on the browser.
+Video annotations are only supported on browsers with HTML5-compatible video formats. Video formats that Assets supports depend on the browser.
 
 >[!NOTE]
 >
@@ -459,7 +435,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
    >You can add multiple annotations, before you save them.
 
 1. Tap/click **[!UICONTROL Close]** to exit from the Annotation mode.
-1. To view the notification, log in to AEM Assets with Aaron MacDonald's credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
+1. To view the notification, log in to Assets with Aaron MacDonald's credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
 
    >[!NOTE]
    >
@@ -478,6 +454,14 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 >You can also add annotations to a collection. However, if a collection contains child collections, you can add annotations/comments to the parent collection only. The Annotate option is not available for child collections.
 
 ### View saved annotations {#viewing-saved-annotations}
+
+You can view only one annotation at a time.
+
+>[!NOTE]
+>
+>If you are selecting multiple annotations, the latest annotation will be visible on the user interface.
+>
+>Multi-select is supported only for printing the annotated asset as PDF.
 
 1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
 
@@ -500,6 +484,10 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 If an asset has annotations or it has been subjected to a review workflow, you can print the asset along with annotations and review status as a PDF file for offline review.
 
 You can also choose to print only the annotations or review status.
+
+>[!NOTE]
+>
+>You can select multiple annotations while printing the annotated asset as PDF.
 
 To print the annotations and review status, tap/click the **[!UICONTROL Print]** icon and follow the instructions in the wizard. The **[!UICONTROL Print]** icon appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
 
@@ -527,11 +515,7 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
 
    You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
-   >[!NOTE]
-   >
-   >Lengthy annotations may not render properly in the PDF file. For optimal rendering, Adobe recommends that you limit annotations to 50 words.
-
-1. Tap/click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
+1. Click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
@@ -541,8 +525,6 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
 
    To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
 
-   ![chlimage_1-248](assets/chlimage_1-248.png)
-
    Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
 
 ## Asset versioning {#asset-versioning}
@@ -551,9 +533,9 @@ Versioning creates a snapshot of digital assets at a specific point in time. Ver
 
 The following are scenarios where you create versions:
 
-* You modify an image in a different application and upload to AEM Assets. A version of the image is created so your original image is not overwritten.
+* You modify an image in a different application and upload to Assets. A version of the image is created so your original image is not overwritten.
 * You edit the metadata of an asset.
-* You use AEM desktop app to checkout an existing asset and save your changes. A new version is created everytime the asset is saved.
+* You use [!DNL Experience Manager] desktop app to checkout an existing asset and save your changes. A new version is created every time the asset is saved.
 
 You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
 
@@ -637,4 +619,24 @@ A collection is an ordered set of assets. Use collections to share assets betwee
 * A collection can include assets from different locations because they only contain references to these assets. Each collection maintains the referential integrity of assets.
 * You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
 
-See [Managing Collections](/help/assets/manage-collections.md) for details on collection management.
+To know details of Collection management, see [manage Collections](/help/assets/manage-collections.md).
+
+## Hide expired assets when viewing assets in desktop app or Adobe Asset Link {#hide-expired-assets-via-acp-api}
+
+[!DNL Experience Manager] desktop app allows access to the DAM repository from Windows or Mac desktop. Adobe Asset Link allows access to assets from within the supported [!DNL Creative Cloud] desktop applications. 
+
+When browsing assets from within [!DNL Experience Manager] user interface, the expired assets are not displayed. To prevent viewing, searching, and fetching of expired assets when browsing assets from desktop app and Asset Link, administrators can do the following configuration. The configuration works for all users, irrespective of administrator privilege.
+
+Execute the following CURL command. Ensure read access on `/conf/global/settings/dam/acpapi/` for the users who access assets. Users who are part of `dam-user` group have the permission by default.
+
+```curl
+curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'jcr:title=acpapiconfig' \
+--data-urlencode 'hideExpiredAssets=true' \
+--data-urlencode 'hideExpiredAssets@TypeHint=Boolean' \
+--data-urlencode 'jcr:primaryType=nt:unstructured' \
+--data-urlencode '../../jcr:primaryType=sling:Folder'
+```
+
+To know more, see how to [browse DAM assets using desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) and [how to use Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).

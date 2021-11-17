@@ -1,8 +1,8 @@
 ---
 title: Creating and Managing Offers
 description: Use the Offers console to create offers that you can use in activity experiences
+exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 ---
-
 # Creating and Managing Offers {#creating-and-managing-offers}
 
 Use the Offers console to create offers that you can [use in activity experiences](/help/sites-cloud/authoring/personalization/targeted-content.md). Creating offers in the Offers console saves time when several experiences require the same offer:

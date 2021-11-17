@@ -13,12 +13,11 @@ The following tools are available to troubleshoot AEM as a Cloud Service environ
 * **CRXDE Lite**
 * **Managing Logs**
 
-
 ## Developer Console {#developer-console}
 
 Debugging AEM as a Cloud Service developer environments are available in the Developer Console for development, stage, and production environments.
 
-Refer to [Implementing for AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools) to learn more about development tools.
+Refer to [Implementing for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools) to learn more about development tools.
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -27,13 +26,13 @@ As a user, you can access **CRXDE Lite** on the development environment but not 
 >[!IMPORTANT]
 >Writing to immutable repositories such as `/libs` and `/apps` at runtime will result in errors. Additionally, as a customer, you will not have access to developer tooling for staging and production environments.
 
-Refer to [Developing with CRXDE Lite](https://docs.adobe.com/help/en/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) to learn how to develop your AEM application using CRXDE Lite.
+Refer to [Developing with CRXDE Lite](/help/implementing/developing/tools/crxde.md) to learn how to develop your AEM application using CRXDE Lite.
 
 ## Managing Logs {#managing-logs}
 
 Users can access a list of available log files for the selected environment.
   
-Refer to [Accessing and Managing Logs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) to learn how to access and manage logs through UI or from API via Cloud Manager.
+Refer to [Accessing and Managing Logs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) to learn how to access and manage logs through UI or from API via Cloud Manager.
 
 ### Additional Support {#additional-support}
 

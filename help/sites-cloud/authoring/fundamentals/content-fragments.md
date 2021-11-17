@@ -1,8 +1,8 @@
 ---
 title: Content Fragments
 description: Adobe Experience Manager as a Cloud Service Content Fragments allow you to design, create, curate, and use page-independent content
+exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 ---
-
 # Content Fragments {#content-fragments}
 
 Content fragments in Adobe Experience Manager (AEM) as a Cloud Service are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md).
@@ -72,7 +72,7 @@ Open the fragment's **Configuration** dialog to configure the fragment for use o
 
 >[!NOTE]
 >
->See also [Core Components, the Content Fragment Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+>See also [Core Components, the Content Fragment Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 In the appropriate configuration dialog you can select the available parameters, including:
 

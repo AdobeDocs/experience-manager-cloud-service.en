@@ -1,8 +1,8 @@
 ---
 title: Creating Page Templates
 description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
+exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 ---
-
 # Creating Page Templates {#creating-page-templates}
 
 When creating a page you must select a template, which will be used as the basis for creating the new page. The template defines the structure of the resultant page, any initial content, and the components that can be used.
@@ -81,11 +81,11 @@ When creating a new editable template you:
 >
 >The **Allowed Templates** are often pre-defined when your website is initially set up.
 
->[!CAUTION]
+>[!TIP]
 >
 >Never enter any information that needs to be internationalized into a template. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->For template elements such as headers and footers that must be localized, leverage the [localization features of the core components.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html)
+>For template elements such as headers and footers that must be localized, leverage the [localization features of the core components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
 ### Creating a Template Folder - Admin {#creating-a-template-folder-admin}
 
@@ -119,6 +119,12 @@ A template folder should be created for your project to hold your project-specif
    >[!NOTE]
    >
    >When a new template is created it is marked as **Draft** in the console, this indicates that it is not yet available to use by page authors.
+
+>[!NOTE]
+>
+>Templates are powerful tools to streamline your page creation workflow. However too many templates can overwhelm the authors and make page creation confusing. A good rule of thumb is to keep the number of templates under 100.
+>
+>Adobe does not recommend having more than 1000 templates due to potential performance impacts.
 
 ### Defining Template Properties - Template Author {#defining-template-properties-template-author}
 
@@ -520,7 +526,7 @@ Although all content created in **Structure** mode is visible in **Initial Conte
 >
 >Initial content is intended for preparing components and the page layout that serve as a starting point for creating the content. It is not intended to be the actual content that would remain as is. For this reason, initial content can not be translated.
 >
->If you need to include translatable text in your template such as in headers or footers, you can use the [localization features of the core components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html).
+>If you need to include translatable text in your template such as in headers or footers, you can use the [localization features of the core components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Editing a Template - Layout - Template Author {#editing-a-template-layout-template-author}
 

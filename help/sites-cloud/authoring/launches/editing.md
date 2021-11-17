@@ -1,8 +1,8 @@
 ---
 title: Editing Launches
-description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s). 
+description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s).
+exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 ---
-
 # Editing Launches {#editing-launches}
 
 ## Editing Launch Pages {#editing-launch-pages}
@@ -12,9 +12,19 @@ When a launch has been created for a page (or set of pages) you can edit the con
 1. Access the [Launch from References (Sites console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) to show the available actions.
 1. Select **Go to the page** to open the page for editing.
 
+When editing the page you will see an indication in the top toolbar, together with the **Leave** and **Navigate** options:
+
+![Leave and Navigate launch from Page Editor](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+
+>[!NOTE]
+>
+>You are not allowed to move a page within a launch. Attempting this action will trigger a warning message:
+>
+>* Warning: This page is the source of a launch. Moving the page is not permitted.
+
 ### Editing Launch Pages Subject to a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
-If your launch is based upon a live copy then you will: <!--If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:-->
+If your launch is based upon a [Live Copy](/help/sites-cloud/administering/msm/overview.md) then you will:
 
 * See lock symbols (small padlocks) when you edit a component (content and/or properties).
 * See the **Live Copy** tab in **Page Properties**
@@ -26,13 +36,13 @@ You can make changes in the same way as you can edit a standard live copy; for e
 * Clicking on a closed padlock will break this synchronization and allow you to make new updates to the content in your launch. Once unlocked (open padlock) your changes will not be overwritten by any changes made at the same location within the source branch.
 * **Suspend** (and **Resume**) inheritance for a specific page.
 
-See Changing Live Copy Content for further information. <!--See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) for further information.-->
+See [Changing Live Copy Content](/help/sites-cloud/administering/msm/creating-live-copies.md) for further information.
 
 ## Comparing a Launch Page to its Source Page {#comparing-a-launch-page-to-its-source-page}
 
 To track the changes you have made, you can view the launch in **References** and compare the launch page with its source page:
 
-1. In the **Sites** console, [navigate to the source page of your launch and select it](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. In the **Sites** console, [navigate to the source pages of your launch and select one](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** panel and select **Launches**.
 1. Select your specific launch then **Compare to Source**:
 

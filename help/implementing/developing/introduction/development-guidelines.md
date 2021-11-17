@@ -1,8 +1,8 @@
 ---
 title: AEM as a Cloud Service Development Guidelines
 description: AEM as a Cloud Service Development Guidelines
+exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 ---
-
 # AEM as a Cloud Service Development Guidelines {#aem-as-a-cloud-service-development-guidelines}
 
 Code running in AEM as a Cloud Service must be aware of the fact that it is always running in a cluster. This means that there is always more than one instance running. The code must be resilient especially as an instance might be stopped at any point in time.
@@ -33,9 +33,9 @@ Similar, with everything that is asynchronously happening like acting on observa
 
 ## Background Tasks and Long Running Jobs {#background-tasks-and-long-running-jobs}
 
-Code executed as a background tasks must assume that the instance it is running in can be brought down at any time. Therefore the code must be resilient and most import resumable. That means that if the code gets re-executed it should not start from the beginning again but rather close to from where it left off. While this is not a new requirement for this kind of code, in AEM as a Cloud Service it is more likely that an instance take down is going to occur.
+Code executed as a background tasks must assume that the instance it is running in can be brought down at any time. Therefore the code must be resilient, and most importantly resumable. That means that if the code gets re-executed it should not start from the beginning again but rather close to from where it left off. While this is not a new requirement for this kind of code, in AEM as a Cloud Service it is more likely that an instance take down is going to occur.
 
-To minimize the trouble, long running jobs should be avoided if possible, and they should be resumable at a minimum. For executing such jobs, use Sling Jobs, which have an at-least-once guarantee and hence if they get interrupted will get re-executed as soon as possible. But they should probably not start from the beginning again. For scheduling such jobs, it is best to use the [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler as this again the at-least-once execution.
+To minimize the trouble, long running jobs should be avoided if possible, and they should be resumable at a minimum. For executing such jobs, use Sling Jobs, which have an at-least-once guarantee and hence if they get interrupted will get re-executed as soon as possible. But they should probably not start from the beginning again. For scheduling such jobs, it is best to use the [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler as this again ensures the at-least-once execution.
 
 The Sling Commons Scheduler should not be used for scheduling as execution cannot be guaranteed. It is just more likely that it will be scheduled.
 
@@ -81,7 +81,7 @@ Content is replicated from Author to Publish through a pub-sub mechanism. Custom
 
 For local development, logs entries are written to local files in the `/crx-quickstart/logs` folder.
 
-On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
 **Setting the Log Level**
 
@@ -115,17 +115,17 @@ The log levels are as follows:
 
 Thread dumps on Cloud environments are collected on an ongoing basis, but cannot be downloaded in a self-serve manner at this time. In the meanwhile, please contact AEM support if thread dumps are needed for debugging an issue, specifying the exact time window.
 
-## CRX/DE Lite and System Console {#crxde-lite-and-system-console}
+## CRX/DE Lite and Developer Console {#crxde-lite-and-developer-console}
 
 ### Local Development {#local-development}
 
 For local development, Developers have full access to CRXDE Lite (`/crx/de`)  and the AEM Web Console (`/system/console`).
 
-Note that on local development (using the cloud-ready quickstart), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
+Note that on local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
 
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
-Customers can access CRXDE lite on the development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
+Customers can access CRXDE lite on the author tier's development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
 
 A set of tools for debugging AEM as a Cloud Service developer environments are available in the Developer Console for dev, stage, and production environments. The url can be determined by adjusting the Author or Publish service urls as follows:
 
@@ -153,8 +153,7 @@ Also useful for debugging, the Developer console has a link to the Explain Query
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-For regular programs, access to the Developer Console is defined by the "Cloud Manager - Developer Role" in the Admin Console, while for sandbox programs, the Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For all programs, "Cloud Manager - Developer Role" is needed for status dumps and users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services in order to view status dump data from both services. For more information about setting up user permissions, see [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-
+For Production programs, access to the Developer Console is defined by the "Cloud Manager - Developer Role" in the Admin Console, while for sandbox programs, the Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For all programs, "Cloud Manager - Developer Role" is needed for status dumps and users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services in order to view status dump data from both services. For more information about setting up user permissions, see [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### AEM Staging and Production Service {#aem-staging-and-production-service}
 
@@ -164,44 +163,71 @@ Customers will not have access to developer tooling for staging and production e
 
 Adobe monitors application performance and takes measures to address if deterioration is observed. At this time, application metrics can not be obeserved.
 
-## Dedicated Egress IP Address {#dedicated-egress-ip-address}
+## Sending Email {#sending-email}
 
-Upon request, AEM as a Cloud Service will provision a static, dedicated, IP address for HTTP (port 80) and HTTPS (port 443) outbound traffic programmed in Java code. 
+The sections below describe how to request, configure, and send email.
 
-### Benefits {#benefits}
+>[!NOTE]
+>
+>The Mail Service can be configured with OAuth2 support. For more information, see [OAuth2 Support for the Mail Service](/help/security/oauth2-support-for-mail-service.md).
 
-This dedicated IP address can enhance security when integrating with SaaS vendors (like a CRM vendor) or other integrations outside of AEM as a Cloud Service that offer an allowlist of IP addresses. By adding the dedicated IP address to the allowlist, it ensures that only traffic from the customer's AEM Cloud Service will be permitted to flow into the external service. This is in addition to traffic from any other IPs allowed. 
+### Enabling Outbound Email {#enabling-outbound-email}
 
-Without the dedicated IP address feature enabled, traffic coming out of AEM as a Cloud Service flows through a set of IPs shared with other customers.
+By default, ports used to send email are disabled. To activate a port, configure [advanced networking](/help/security/configuring-advanced-networking.md), making sure to set for each needed environment the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint's port forwarding rules, which maps the intended port (e.g., 465 or 587) to a proxy port.
 
-### Configuration {#configuration}
+It is recommended to configure advanced networking with a `kind` parameter set to `flexiblePortEgress` since Adobe can optimize performance of flexible port egress traffic. If a unique egress IP address is necessary, choose a `kind` parameter of `dedicatedEgressIp`. If you have already configured VPN for other reasons, you can use the unique IP address provided by that advanced networking variation as well. 
 
-To enable a dedicated IP address, submit a request to Customer Support, who will provide the IP address information. The request should specify each environment and additional requests should be made if new environments need the feature after the initial request. Sandbox program environments are not supported.
+You must send email through a mail server rather than directly to email clients. Otherwise, the emails may be blocked.
 
-### Feature Usage {#feature-usage}
+### Sending Emails {#sending-emails}
 
-The feature is compatible with Java code or libraries that result in outbound traffic, provided they use standard Java system properties for proxy configurations. In practice, this should include most common libraries. 
+The [Day CQ Mail Service OSGI service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) should be used and emails must be sent to the mail server indicated in the support request rather than directly to recipients.
 
-Below is a code sample:
+### Configuration {#email-configuration}
 
-```
-public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
-  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
-  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
-  URLConnection connection = finalUrl.openConnection();
-  connection.addRequestProperty("Accept", "application/json");
-  connection.addRequestProperty("X-API-KEY", apiKey);
+E-mails in AEM should be sent using the [Day CQ Mail Service OSGi service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
-    return new JSONObject(new JSONTokener(responseReader));
-  }
-}
-```
+See the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) for details around configuring email settings. For AEM as a Cloud Service, note the following necessary adjustments to the `com.day.cq.mailer.DefaultMailService OSGI` service:
 
-The same dedicated IP is applied to all of a customer's programs in their Adobe Organization and for all environments in each of their programs. It applies to both author and publish services.
+* The SMTP server host name should be set to $[env:AEM_PROXY_HOST]
+* The SMTP server port should be set to the value of the original proxy port set in the portForwards parameter used in the API call when configuring up advanced networking. For example, 30465 (rather than 465)
 
-Only HTTP and HTTPS ports are supported. This includes HTTP/1.1, as well as HTTP/2 when encrypted.
+It is also recommended that if port 465 has been requested:
 
-### Debugging Considerations {#debugging-considerations}
+* set `smtp.port` to `465`
+* set `smtp.ssl` to `true`
 
-In order to validate that traffic is indeed outgoing on the expected dedicated IP address, check logs in the destination service, if available. Otherwise, it may be useful to call out to a debugging service such as [https://ifconfig.me/ip](https://ifconfig.me/ip), which will return the calling IP address.
+and if port 587 has been requested:
+
+* set `smtp.port` to `587`
+* set `smtp.ssl` to `false`
+
+The `smtp.starttls` property will automatically be set by AEM as a Cloud Service at runtime to an appropriate value. Thus, if `smtp.ssl` is set to true, `smtp.startls` is ignored. If `smtp.ssl` is set to false, `smtp.starttls` is set to true. This is regardless of the `smtp.starttls` values set in your OSGI configuration.
+
+
+The Mail Service can optionally be configured with OAuth2 support. For more information, see [OAuth2 Support for the Mail Service](/help/security/oauth2-support-for-mail-service.md).
+
+### Legacy email configuration {#legacy-email-configuration}
+
+Prior to the 2021.9.0 release, email was configured through a customer support request. Note the following necessary adjustments to the `com.day.cq.mailer.DefaultMailService OSGI` service:
+
+AEM as a Cloud Service requires mail to be sent through port 465. If a mail server does not support port 465, port 587 can be used, as long as the TLS option is enabled.
+
+If port 465 has been requested:
+
+* set `smtp.port` to `465`
+* set `smtp.ssl` to `true`
+
+and if port 587 has been requested:
+
+* set `smtp.port` to `587`
+* set `smtp.ssl` to `false`
+
+The `smtp.starttls` property will automatically be set by AEM as a Cloud Service at runtime to an appropriate value. Thus, if `smtp.ssl` is set to true, `smtp.startls` is ignored. If `smtp.ssl` is set to false, `smtp.starttls` is set to true. This is regardless of the `smtp.starttls` values set in your OSGI configuration.
+
+The SMTP server host should be set to that of your mail server.
+
+
+## [!DNL Assets] development guidelines and use cases {#use-cases-assets}
+
+To know about the development use cases, recommendations, and reference materials for Assets as a Cloud Service, see [Developer references for Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

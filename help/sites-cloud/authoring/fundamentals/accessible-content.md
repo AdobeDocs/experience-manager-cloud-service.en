@@ -1,8 +1,8 @@
 ---
 title: Creating Accessible Content for Adobe Experience Manager as a Cloud Service (WCAG 2.1 Conformance)
 description: Use AEM as a Cloud Service to help make web content accessible to, and usable by, persons with disabilities
+exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 ---
-
 # Creating Accessible Content (WCAG 2.1 Conformance) {#creating-accessible-content-wcag-conformance}
 
 The [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/), drawn up by [a working group of the World Wide Wec Consortium](https://www.w3.org/Consortium/activities#Accessibility_Guidelines_Working_Group), consist of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
@@ -17,8 +17,9 @@ As an introduction, the consortium provides a series of sections and supporting 
 
 In addition, see:
 
-* Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
+* Our [Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md).
 * The [Accessibility Conformance reports for Adobe solutions](https://www.adobe.com/accessibility/compliance.html).
+* [Accessibility in Assets](/help/assets/accessibility.md)
 * [Configuring the Rich Text Editor for producing accessible content](/help/implementing/developing/extending/rte-accessible-content.md)
 
 The guidelines are graded according to three conformance levels: Level A (lowest), Level AA and Level AAA (highest). Briefly, the levels are defined as follows:
@@ -60,15 +61,15 @@ A useful additional benefit is that text alternatives enable non-text content to
 
 #### How to Meet - Non-text Content (1.1.1) {#how-to-meet-non-text-content}
 
-For static graphics, the basic requirement is to provide an equivalent text alternative for the graphic. This can be done in the **Alternative Text** field; see for example, the Core Component **[Image](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)**.
+For static graphics, the basic requirement is to provide an equivalent text alternative for the graphic. This can be done in the **Alternative Text** field; see for example, the Core Component **[Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)**.
 
 >[!NOTE]
 >
->Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
+>Some out-of-the-box Core Components, such as **[Carousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
 >
 >When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see Adding Support for Additional HTML Elements and Attributes).
 >
->Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component.
+>Some out-of-the-box Core Components, such as **[Carousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component.
 >
 >When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 

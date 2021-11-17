@@ -1,8 +1,8 @@
 ---
 title: Configuring Your Account Environment
 description: AEM provides you with the capability to configure your account and certain aspects of the author environment
+exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 ---
-
 # Configuring Your Account Environment {#configuring-your-account-environment}
 
 AEM provides you with the capability to configure your account and certain aspects of the author environment.
