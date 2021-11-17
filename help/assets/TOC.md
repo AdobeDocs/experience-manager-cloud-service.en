@@ -121,3 +121,7 @@ solution: Experience Manager, Experience Manager as a Cloud Service, Experience 
   + [HTTP2 Delivery of Content FAQ](dynamic-media/http2faq.md)
   + [Flash Viewers End-of-Life](dynamic-media/flash-viewers-eol.md)
   + [DHTML Viewers End-of-Life](dynamic-media/dhtml-viewer-endoflifefaqs.md)
++ Integration with other solutions {#integrations}
+  + [Integrations with [!DNL Adobe Workfront]](workfront-integrations.md)
+  + [Install [!DNL enhanced Connector for Workfront]](workfront-connector-install.md)
+  + [Configure [!DNL enhanced Connector for Workfront]](workfront-connector-configure.md)
