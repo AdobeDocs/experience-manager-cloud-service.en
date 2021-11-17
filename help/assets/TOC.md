@@ -123,5 +123,5 @@ solution: Experience Manager, Experience Manager as a Cloud Service, Experience 
   + [DHTML Viewers End-of-Life](dynamic-media/dhtml-viewer-endoflifefaqs.md)
 + Integration with other solutions {#integrations}
   + [Integrations with [!DNL Adobe Workfront]](workfront-integrations.md)
-  + [Install [!DNL enhanced Connector for Workfront]](workfront-connector-install.md)
-  + [Configure [!DNL enhanced Connector for Workfront]](workfront-connector-configure.md)
+  + [Install [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-install.md)
+  + [Configure [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-configure.md)
