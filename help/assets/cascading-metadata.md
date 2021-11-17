@@ -2,8 +2,10 @@
 title: Cascading metadata
 description: This article describes how to define cascading metadata for assets.
 contentOwner: AG
+feature: Metadata
+role: User,Admin
+exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
 ---
-
 # Cascading Metadata {#cascading-metadata}
 
 When capturing the metadata information of an asset, users provide information in the various available fields. You can display specific metadata fields or field values that are dependent on the options selected in the other fields. Such conditional display of metadata is called cascading metadata. In other words, you can create a dependency between a particular metadata field/value and one or more fields and/or their values.
@@ -19,7 +21,7 @@ Here are some use cases for which you can define cascading metadata:
 * Change options displayed for a particular field based on the value specified in another field.
 * Set the default metadata value in a particular field based on the value specified in another field.
 
-## Configure cascading metadata in AEM {#configure-cascading-metadata-in-aem}
+## Configure cascading metadata in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 Consider a scenario where you want to display cascading metadata based on the type of asset that is selected. Some examples
 
@@ -28,7 +30,7 @@ Consider a scenario where you want to display cascading metadata based on the ty
 
 Irrespective of the asset type chosen, display the copyright information as a required field.
 
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
+1. Tap/click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then tap/click **[!UICONTROL Edit]** from the toolbar to edit the schema.
 
    ![select_form](assets/select_form.png)
@@ -47,7 +49,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
     * To specify the values manually, select **[!UICONTROL Add Manually]**, and tap/click **[!UICONTROL Add Choice]** and specify the option text and value. For example, specify Video, PDF, Word, and Image asset types.
 
-    * To fetch the values from a JSON file dynamically, select **[!UICONTROL Add Through JSON Path]** and provide the path of the JSON file. AEM fetches the key-value pairs in the real time when the form is presented to the user.
+    * To fetch the values from a JSON file dynamically, select **[!UICONTROL Add Through JSON Path]** and provide the path of the JSON file. [!DNL Experience Manager] fetches the key-value pairs in the real time when the form is presented to the user.
 
    Both options are mutually exclusive. You cannot import the options from a JSON file and edit manually.
 

@@ -1,8 +1,8 @@
 ---
 title: Customizing and Extending Content Fragments
 description: A content fragment extends a standard asset.
+exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 ---
-
 # Customizing and Extending Content Fragments{#customizing-and-extending-content-fragments}
 
 Within Adobe Experience Manager as a Cloud Service a content fragment extends a standard asset; see:
@@ -10,10 +10,6 @@ Within Adobe Experience Manager as a Cloud Service a content fragment extends a 
 * [Creating and Managing Content Fragments](/help/assets/content-fragments/content-fragments.md) and [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md) for further information about content fragments.
 
 * [Managing Assets](/help/assets/manage-digital-assets.md) for further information about standard assets.
-
-<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
-* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
--->
 
 ## Architecture {#architecture}
 
@@ -94,9 +90,9 @@ To integrate with Assets core:
 
 >[!CAUTION]
 >
->The [Content Fragment component is part of Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html). See [Developing Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html) for more details.
+>The [Content Fragment component is part of Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html). See [Developing Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html) for more details.
 
-Content fragments can be referenced from AEM pages, just as any other asset type. AEM provides the **[Content Fragment core component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)** - a [component that allows you to include content fragments on your pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend this **[Content Fragment](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** core component.
+Content fragments can be referenced from AEM pages, just as any other asset type. AEM provides the **[Content Fragment core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)** - a [component that allows you to include content fragments on your pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend this **[Content Fragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)** core component.
 
 * The component uses the `fragmentPath` property to reference the actual content fragment. The `fragmentPath` property is handled in the same manner as similar properties of other asset types; for example, when the content fragment is moved to another location.
 
@@ -128,7 +124,7 @@ Content fragments can be integrated with:
 
 * **Translations**
 
-  Content Fragments are fully integrated with the AEM translation workflow. On an architectural level, this means:
+  Content Fragments are fully integrated with the [AEM translation workflow](/help/sites-cloud/administering/translation/overview.md). On an architectural level, this means:
 
   * The individual translations of a content fragment are actually separate fragments; for example:
 
@@ -164,7 +160,7 @@ Content fragments can be integrated with:
 
 You can use the server-side API to access your content fragments; see:
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -174,7 +170,7 @@ You can use the server-side API to access your content fragments; see:
 
 The following three interfaces can serve as entry points:
 
-* **Content Fragment** ([ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Content Fragment** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
   This interface allows you to work with a content fragment in an abstract way.
 
@@ -202,7 +198,7 @@ The following three interfaces can serve as entry points:
 
   Interfaces that represent the prime elements of a fragment are:
 
-  * **Content Element** ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+  * **Content Element** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
     * Get basic data (name, title, description)
     * Get/Set content
@@ -216,7 +212,7 @@ The following three interfaces can serve as entry points:
 
     * Shortcut for resolving variations (applying some additional, implementation-specific fallback logic if the specified variation is not available for an element)
 
-  * **Content Variation** ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+  * **Content Variation** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
     * Get basic data (name, title, description)
     * Get/Set content
@@ -240,9 +236,9 @@ The following can be adapted:
 
 * `ContentElement` can be adapted to:
 
-  * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - for accessing the element's structural information.
+  * [`ElementTemplate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - for accessing the element's structural information.
 
-* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` can be adapted to:
 
@@ -287,7 +283,7 @@ An editing session is started when the user opens a content fragment in the edit
 Technically, all edits are done on *live* content, just as with all other AEM editing. When the editing session is started, a version of the current, unedited status is created. If a user cancels an edit, that version is restored. If the user clicks on **Save**, nothing specific is done, as all the editing was executed on *live* content, therefore all changes are persisted already. Also, clicking on **Save** will trigger some background processing (such as creating full text search information and/or handling mixed-media assets).
 
 There are some safety measures for edge cases; for example, if the user tries to leave the editor without saving or cancelling the editing session. Also, a periodic auto save is available to prevent data loss.
-Note that two users may edit the same content fragment concurrently, and therefore may overwrite each others changes. To prevent this, the content fragment needs to be locked by applying the DAM adminstration's *Checkout* action on the fragment.
+Note that two users may edit the same content fragment concurrently, and therefore may overwrite each other's changes. To prevent this, the content fragment needs to be locked by applying the DAM administration's *Checkout* action on the fragment.
 
 ## Examples {#examples}
 
@@ -325,7 +321,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Example: Specifying the auto-save interval {#example-specifying-the-auto-save-interval}
 
-The [auto save interval](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions) (measured in seconds) can be defined using the configuration manager (ConfMgr):
+The [auto save interval](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions) (measured in seconds) can be defined using the configuration manager (ConfMgr):
 
 * Node: `<conf-root>/settings/dam/cfm/jcr:content`
 * Property Name: `autoSaveInterval`
@@ -346,4 +342,4 @@ If you want to set an auto save interval of 5 minutes you need to define the pro
 
 For further information see
 
-* [Core Components - Content Fragment Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) (recommended)
+* [Core Components - Content Fragment Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) (recommended)

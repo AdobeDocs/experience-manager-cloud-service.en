@@ -1,8 +1,8 @@
 ---
 title: What is Different and What is New - Adobe Experience Manager as a Cloud Service
-description: What is Different and What is New - Adobe Experience Manager (AEM) as a Cloud Service. 
+description: What is Different and What is New - Adobe Experience Manager (AEM) as a Cloud Service.
+exl-id: d1ce126e-960c-4367-b741-af709dd81010
 ---
-
 # What is New and What is Different {#what-is-new-and-what-is-different}
 
 For many years AEM has been available both:
@@ -30,13 +30,13 @@ There are intrinsic differences between these previous approaches and AEM as a C
 
 >[!NOTE]
 >
->For further details on the On-Premise and Managed Service versions, see the documentation set for [AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html).
+>For further details on the On-Premise and Managed Service versions, see the documentation set for [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html).
 
 ## Architecture {#architecture}
 
 >[!NOTE]
 >
->For further details see [Architecture](/help/core-concepts/architecture.md).
+>For further details see [Architecture](/help/overview/architecture.md).
 
 AEM as a Cloud Service now has:
 
@@ -59,31 +59,28 @@ This enables autoscaling for varying usage patterns:
 ![Autoscaling for varying usage patterns](assets/introduction-04.png "Autoscaling for varying usage patterns")
 
 
-## Upgrades {#upgrades}
+## AEM Updates {#aem-updates}
 
 >[!NOTE]
->
->For further details see the [Deploying Introduction](/help/implementing/deploying/overview.md).
+>For further details see the [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md).
 
-AEM as a Cloud Service now uses Continuous Integration and Continuous Delivery (CI/CD) to ensure that your projects are fully up-to-date. These mean that all upgrade operations are fully automated, so do not require any interruption of service for users.
-
-Adobe proactively takes care of updating all operational instances of the service to the latest version of the AEM code base:
-
-* Bug-fixes:
- 
-  * Can be released on a daily basis.
-
-  * Instances are frequently updated with the latest bug-fixes. As changes are applied regularly the impact is incremental, reducing the impact on your service.
-
-  * Most updates are for maintenance and security reasons. 
-
-* New Features:
-
-  * Will be released via a predictable monthly schedule.
+AEM as a Cloud Service now uses Continuous Integration and Continuous Delivery (CI/CD) to ensure that your projects are on the most current AEM version. This means that Production and Stage instances are updated to the latest AEM version without any interruption of service for users.
 
 >[!NOTE]
->
->For further details see [Deployment Architecture](/help/core-concepts/architecture.md#deployment-architecture).
+> If the update to production environment fails, Cloud Manager will automatically rollback the stage environment. This is done automatically to make sure that after an update completes, both stage and production environments are at on same AEM version.
+
+AEM version updates are of two types:
+
+* **AEM Push updates**
+
+   * Can be released on a daily basis.
+   * Mostly maintenance, including the latest bug-fixes and security updates.
+
+     As changes are applied regularly the impact is incremental, reducing the impact on your service.
+
+* **New Feature updates**
+
+   * Released via a predictable monthly schedule.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -109,24 +106,16 @@ Specifically, the number of and the type of AEM programs that can be created fro
   
 Cloud Manager has evolved as a self-service portal where the main components of AEM as a Cloud Service can be created and configured:
 
-* Creating and managing new programs. Refer to [Understanding Programs and Program Types](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) for more details.
+* Creating and managing new programs. Refer to [Understanding Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) for more details.
 
 * Creating and managing the AEM environments within these programs. Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for more details.
 
-* Creating and managing the pipelines for deploying the customer code and the related configuration to a specific environment. Refer to [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) for more details.
+* Creating and managing the pipelines for deploying the customer code and the related configuration to a specific environment. Refer to [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) for more details.
 
 * Being notified of important lifecycle events for these components (for example, product updates).
 
-Currently Cloud Manager is able to create environments in 3 geographical regions (with more regions following):
+Cloud Manager creates environments in datacenters across many geographic regions, providing for global coverage. CDN Points of Presence (PoPs) ensure low-latency content delivery for customers located all over the world.
 
-* US (East)
-
-* EMEA (Netherlands)
-
-* APAC (Australia)
-
->[!NOTE]
->Refer to [Accessing Experience Manager as a Cloud Service](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md) to get started with Cloud Manager in AEM as a Cloud Service.
 
 ## Onboarding {#onboarding}
 
@@ -258,7 +247,7 @@ For details see the overview of [Changes to Sites](/help/sites-cloud/sites-cloud
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets as a Cloud Service offers a cloud-native, SaaS solution for businesses to not only perform their Digital Asset Management and Dynamic Media operations with speed and impact, but also use next-generation smart capabilities, such as AI/ML, from within a system that is always current, always available, and always learning.
+Adobe Experience Manager Assets as a Cloud Service offers a cloud-native, PaaS solution for businesses to not only perform their Digital Asset Management and Dynamic Media operations with speed and impact, but also use next-generation smart capabilities, such as AI/ML, from within a system that is always current, always available, and always learning.
 
 Assets offering includes next-generation asset processing in the cloud and high performance asset ingestion and search.
 
@@ -269,9 +258,9 @@ For details, see [overview and introduction to Assets as a Cloud Service](/help/
 For further information see:
 
 * [An Introduction to Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
-* The [Architecture](/help/core-concepts/architecture.md) of Adobe Experience Manager as a Cloud Service
+* The [Architecture](/help/overview/architecture.md) of Adobe Experience Manager as a Cloud Service
 * [Notable changes to AEM as a Cloud Service (Release Notes)](/help/release-notes/aem-cloud-changes.md)
 * [Notable changes to AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Notable changes to AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Introducing AEM Assets as a Cloud Service](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)

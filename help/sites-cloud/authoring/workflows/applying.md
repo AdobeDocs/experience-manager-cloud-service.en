@@ -1,8 +1,8 @@
 ---
 title: Applying Workflows to Pages
 description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
+exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 ---
-
 # Applying Workflows to Pages {#applying-workflows-to-pages}
 
 When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow.

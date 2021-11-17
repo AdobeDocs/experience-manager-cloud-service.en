@@ -1,8 +1,8 @@
 ---
 title: Authoring Concepts
 description: Concepts of authoring in AEM
+exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 ---
-
 # Authoring Concepts {#authoring-concepts}
 
 An AEM installation generally consists of at least two environments:
@@ -20,10 +20,6 @@ The author environment provides the mechanisms for creating, updating, and revie
 ![Diagram of author, publisher, and dispatchers](/help/sites-cloud/authoring/assets/author-publish.png)
 
 On the author environment the functionality of AEM is made available through AEM's authoring UI. For the publish environment you design the entire look-and-feel of the interface made available to your users.
-
->[!NOTE]
->
->AEM itself is used to publish the AEM documentation.
 
 ## Author Environment {#author-environment}
 

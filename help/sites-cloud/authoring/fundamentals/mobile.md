@@ -1,8 +1,8 @@
 ---
 title: Authoring a Page for Mobile Devices
 description: When authoring for mobile, you can switch between several emulators to see what the end-user sees
+exl-id: fabd4468-3304-402f-9522-342da3bbae94
 ---
-
 # Authoring a Page for Mobile Devices {#authoring-a-page-for-mobile-devices}
 
 Adobe Experience Manager pages are based on a responsive layout. [Responsive layout](/help/sites-cloud/authoring/features/responsive-layout.md) adapts your content to fit the target device automatically, eliminating the need to author content for specific devices.
@@ -13,13 +13,11 @@ Devices are grouped into the categories feature, smart, and touch according to t
 
 >[!NOTE]
 >
->To create a mobile site based on an existing standard site, create a live copy of the standard site. See Creating a Live Copy for Different Channels.
+>To create a mobile site based on an existing standard site, create a live copy of the standard site. See [Creating Live Copies.](/help/sites-cloud/administering/msm/creating-live-copies.md)
 >
 >AEM developers can create new device groups. See Creating Device Group Filters.
 
 <!--
->To create a mobile site based on an existing standard site, create a live copy of the standard site. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
->
 >AEM developers can create new device groups. (See [Creating Device Group Filters](/help/sites-developing/groupfilters.md).)
 -->
 

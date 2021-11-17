@@ -1,22 +1,76 @@
 ---
-title: Developer references for digital asset management in [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Developer references for [!DNL Assets]
 description: [!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].
 contentOwner: AG
+feature: APIs,Assets HTTP API
+role: Developer,Architect,Admin
+exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 ---
+# [!DNL Adobe Experience Manager Assets] developer use cases, APIs, and reference material {#assets-cloud-service-apis}
 
-# [!DNL Assets] APIs and developer reference material {#assets-cloud-service-apis}
+The article contains recommendations, reference materials, and resources for developers of [!DNL Assets] as a [!DNL Cloud Service]. It includes new asset upload module, API reference, and information about the support provided in post-processing workflows.
 
-The article contains reference material and resources for developers of [!DNL Assets] as a Cloud Service. It includes new upload method, API reference, and information about the support provided in post-processing workflows.
+## [!DNL Experience Manager Assets] APIs and operations {#use-cases-and-apis}
 
-## Asset upload {#asset-upload-technical}
+[!DNL Assets] as a [!DNL Cloud Service] provides several APIs to programmatically interact with digital assets. Each API supports specific use cases, as mentioned in the table below. The [!DNL Assets] user interface, [!DNL Experience Manager] desktop app and [!DNL Adobe Asset Link] support all or some of the operations.
 
-[!DNL Experience Manager] as a Cloud Service provides a new method to upload assets to the repository. Users can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are:
+>[!CAUTION]
+>
+>Some APIs continue to exist but are not actively supported (denoted with an &times;). To the extent possible, do not use these APIs.
+
+| Support level |         Description         |
+| ------------- | --------------------------- |
+| &#10003;      | Supported                   |
+| &times;       | Not supported. Do not use.  |
+| -             | Not available               |
+
+| Use case | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java APIs | [Asset compute service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Preview)_ |
+| ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Original binary** |||||||
+| Create original    |&#10003;|&times;|-|&times;|&times;|-|
+| Read original      |-|&times;|&#10003;|&#10003;|&#10003;|-|
+| Update original    |&#10003;|&times;|&#10003;|&times;|&times; |-|
+| Delete original    |-|&#10003;|-|&#10003;|&#10003;|-|
+| Copy original      |-|&#10003;|-|&#10003;|&#10003;|-|
+| Move original      |-|&#10003;|-|&#10003;|&#10003;|-|
+| **Metadata** |||||||
+| Create metadata    |-|&#10003;|&#10003;|&#10003;|&#10003;|-|
+| Read metadata      |-|&#10003;|-|&#10003;|&#10003;|-|
+| Update metadata    |-|&#10003;|&#10003;|&#10003;|&#10003;|-|
+| Delete metadata    |-|&#10003;|&#10003;|&#10003;|&#10003;|-|
+| Copy metadata      |-|&#10003;|-|&#10003;|&#10003;|-|
+| Move metadata      |-|&#10003;|-|&#10003;|&#10003;|-|
+| **Content Fragments (CF)** |||||||
+| Create CF          |-|&#10003;|-|&#10003;|-|-|
+| Read CF            |-|&#10003;|-|&#10003;|-|&#10003;|
+| Update CF          |-|&#10003;|-|&#10003;|-|-|
+| Delete CF          |-|&#10003;|-|&#10003;|-|-|
+| Copy CF            |-|&#10003;|-|&#10003;|-|-|
+| Move CF            |-|&#10003;|-|&#10003;|-|-|
+| **Versions** |||||||
+| Create version     |&#10003;|&#10003;|-|-|-|-|
+| Read version       |-|&#10003;|-|-|-|-|
+| Delete version     |-|&#10003;|-|-|-|-|
+| **Folders** |||||||
+| Create folder      |&#10003;|&#10003;|-|&#10003;|-|-|
+| Read folder        |-|&#10003;|-|&#10003;|-|-|
+| Delete folder      |&#10003;|&#10003;|-|&#10003;|-|-|
+| Copy folder        |&#10003;|&#10003;|-|&#10003;|-|-|
+| Move folder        |&#10003;|&#10003;|-|&#10003;|-|-|
+
+## Asset upload {#asset-upload}
+
+In [!DNL Experience Manager] as a [!DNL Cloud Service], you can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are below. Execute these steps in an external application and not within the [!DNL Experience Manager] JVM.
 
 1. [Submit an HTTP request](#initiate-upload). It informs [!DNL Experience Manage]r deployment of your intent to upload a new binary.
-1. [POST the contents of the binary](#upload-binary) to one or more URIs provided by the initiation request.
+1. [PUT the contents of the binary](#upload-binary) to one or more URIs provided by the initiation request.
 1. [Submit an HTTP request](#complete-upload) to inform the server that the contents of the binary were successfully uploaded.
 
 ![Overview of direct binary upload protocol](assets/add-assets-technical.png)
+
+>[!IMPORTANT]
+>
+>Execute the above steps in an external application and not within the [!DNL Experience Manager] JVM.
 
 The approach provides a scalable and more performant handling of asset uploads. The differences as compared to [!DNL Experience Manager] 6.5 are:
 
@@ -55,19 +109,19 @@ A single request can be used to initiate uploads for multiple binaries, as long 
 }
 ```
 
-* `completeURI` (string): Call this URI when the binary finishes uploading. The URI can be an absolute or relative URI, and clients should be able to handle either. That is, the value can be `"https://author.acme.com/content/dam.completeUpload.json"` or `"/content/dam.completeUpload.json"` See [complete upload](#complete-upload).
+* `completeURI` (string): Call this URI when the binary finishes uploading. The URI can be an absolute or relative URI, and clients should be able to handle either. That is, the value can be `"https://[aem_server]:[port]/content/dam.completeUpload.json"` or `"/content/dam.completeUpload.json"` See [complete upload](#complete-upload).
 * `folderPath` (string): Full path to the folder in which the binary is uploaded.
 * `(files)` (array): A list of elements whose length and order match the length and order of the list of binary information provided in the initiate request.
 * `fileName` (string): The name of the corresponding binary, as supplied in the initiate request. This value should be included in the complete request.
 * `mimeType` (string): The mime type of the corresponding binary, as supplied in the initiate request. This value should be included in the complete request.
 * `uploadToken` (string): An upload token for the corresponding binary. This value should be included in the complete request.
 * `uploadURIs` (array): A list of strings whose values are full URIs to which the binary's content should be uploaded (see [Upload binary](#upload-binary)).
-* `minPartSize` (number): The minimum length, in bytes, of data that may be provided to any one of the uploadURIs, if there is more than one URI.
-* `maxPartSize` (number): The maximum length, in bytes, of data that may be provided to any one of the uploadURIs, if there is more than one URI.
+* `minPartSize` (number): The minimum length, in bytes, of data that may be provided to any one of the `uploadURIs`, if there is more than one URI.
+* `maxPartSize` (number): The maximum length, in bytes, of data that may be provided to any one of the `uploadURIs`, if there is more than one URI.
 
 ### Upload binary {#upload-binary}
 
-The output of initiating an upload includes one or more upload URI values. If more than one URI is provided, the client splits the binary into parts and make POST request of each part to each URI, in order. Use all URIs. Ensure that the size of each part is within the minimum and maximum sizes as specified in the initiate response. CDN edge nodes help accelerate the requested upload of binaries.
+The output of initiating an upload includes one or more upload URI values. If more than one URI is provided, the client splits the binary into parts and make PUT requests of each part to each URI, in order. Use all URIs. Ensure that the size of each part is within the minimum and maximum sizes as specified in the initiate response. CDN edge nodes help accelerate the requested upload of binaries.
 
 A potential method to accomplish this is to calculate the part size based on the number of upload URIs provided by the API. For example, assume the total size of the binary is 20,000 bytes and the number of upload URIs is 2. Then follow these steps:
 
@@ -91,15 +145,13 @@ After all the parts of a binary file are uploaded, submit an HTTP POST request t
 | `versionComment` | String | Optional | If a new version is created, the comments associated with the version. |
 | `replace` | Boolean | Optional | If `True` and an asset with the specified name exists, [!DNL Experience Manager] deletes the asset then re-create it. |
 
->![NOTE]
+>[!NOTE]
 >
 >If the asset exists and neither `createVersion` nor `replace` is specified, then [!DNL Experience Manager] updates the asset's current version with the new binary.
 
 Like the initiate process, the complete request data may contain information for more than one file.
 
-The process of uploading a binary is not done until the complete URL is invoked for the file. An asset is processed after the upload process is complete. Processing does not start even if the asset's binary file is uploaded completely but upload process is not completed.
-
-If successful, the server responds with a `200` status code.
+The process of uploading a binary is not done until the complete URL is invoked for the file. An asset is processed after the upload process is complete. Processing does not start even if the asset's binary file is uploaded completely but upload process is not completed. If upload is successful, the server responds with a `200` status code.
 
 ### Open-source upload library {#open-source-upload-library}
 
@@ -112,7 +164,7 @@ To learn more about the upload algorithms or to build your own upload scripts an
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-The new upload method is supported only for [!DNL Adobe Experience Manager] as a Cloud Service. The APIs from [!DNL Adobe Experience Manager] 6.5 are deprecated. The methods related to upload or update assets or renditions (any binary upload) are deprecated in the following APIs:
+The new upload method is supported only for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. The APIs from [!DNL Adobe Experience Manager] 6.5 are deprecated. The methods related to upload or update assets or renditions (any binary upload) are deprecated in the following APIs:
 
 * [Experience Manager Assets HTTP API](mac-api-assets.md)
 * `AssetManager` Java API, like `AssetManager.createAsset(..)`
@@ -130,29 +182,51 @@ For post-processing workflow configuration, use the standard workflows with exte
 
 ## Support of workflow steps in post-processing workflow {#post-processing-workflows-steps}
 
-Customers upgrading from previous versions of [!DNL Experience Manager] can use asset microservices to process assets. The cloud-native asset microservices are much simpler to configure and use. A few workflow steps used in the [!UICONTROL DAM Update Asset] workflow in the previous version are not supported.
-
-[!DNL Experience Manager] as a Cloud Service support the following workflow steps:
-
-* `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
-* `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
-* `com.day.cq.wcm.workflow.process.CreateVersionProcess`
-* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
-* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
-* `com.day.cq.dam.core.impl.process.TranslateAssetLanguageCopyProcess`
-* `com.day.cq.dam.core.impl.process.UpdateAssetLanguageCopyProcess`
-* `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
-* `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
+If you upgrade from a previous version of [!DNL Experience Manager], you can use asset microservices to process assets. The cloud-native asset microservices are simpler to configure and use. A few workflow steps used in the [!UICONTROL DAM Update Asset] workflow in the previous version are not supported. For more information about supported classes, see the [Java API reference or Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 The following technical workflow models are either replaced by asset microservices or the support is not available:
 
-* `com.day.cq.dam.core.impl.process.DamMetadataWritebackWorkflowCompletedProcess`
+* `com.day.cq.dam.cameraraw.process.CameraRawHandlingProcess`
+* `com.day.cq.dam.core.process.CommandLineProcess`
+* `com.day.cq.dam.pdfrasterizer.process.PdfRasterizerHandlingProcess`
+* `com.day.cq.dam.core.process.AddPropertyWorkflowProcess`
+* `com.day.cq.dam.core.process.CreateSubAssetsProcess`
+* `com.day.cq.dam.core.process.DownloadAssetProcess`
+* `com.day.cq.dam.word.process.ExtractImagesProcess`
+* `com.day.cq.dam.word.process.ExtractPlainProcess`
+* `com.day.cq.dam.ids.impl.process.IDSJobProcess`
+* `com.day.cq.dam.indd.process.INDDMediaExtractProcess`
+* `com.day.cq.dam.indd.process.INDDPageExtractProcess`
+* `com.day.cq.dam.core.impl.lightbox.LightboxUpdateAssetProcess`
+* `com.day.cq.dam.pim.impl.sourcing.upload.process.ProductAssetsUploadProcess`
+* `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
+* `com.day.cq.dam.switchengine.process.SwitchEngineHandlingProcess`
+* `com.day.cq.dam.core.process.GateKeeperProcess`
+* `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
+* `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
+* `com.day.cq.dam.video.FFMpegTranscodeProcess`
+* `com.day.cq.dam.core.process.ThumbnailProcess`
+* `com.day.cq.dam.video.FFMpegThumbnailProcess`
+* `com.day.cq.dam.core.process.CreateWebEnabledImageProcess`
+* `com.day.cq.dam.core.process.CreatePdfPreviewProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoUserUploadedThumbnailProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoThumbnailDownloadProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoProxyServiceProcess`
+* `com.day.cq.dam.scene7.impl.process.Scene7UploadProcess`
+* `com.day.cq.dam.s7dam.common.process.S7VideoThumbnailProcess`
+* `com.day.cq.dam.core.process.MetadataProcessorProcess`
+* `com.day.cq.dam.core.process.AssetOffloadingProcess`
+* `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
+
+<!-- Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
+
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
 * `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
 * `com.day.cq.dam.core.process.GateKeeperProcess`
 * `com.day.cq.dam.core.process.AssetOffloadingProcess`
 * `com.day.cq.dam.core.process.MetadataProcessorProcess`
-* `com.day.cq.dam.core.process.XMPWritebackProcess`
 * `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
 * `com.day.cq.dam.s7dam.common.process.S7VideoThumbnailProcess`
 * `com.day.cq.dam.scene7.impl.process.Scene7UploadProcess`
@@ -180,7 +254,7 @@ The following technical workflow models are either replaced by asset microservic
 * `com.day.cq.dam.core.process.ScheduledPublishBPProcess`
 * `com.day.cq.dam.core.process.ScheduledUnPublishBPProcess`
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
-* `com.day.cq.dam.core.impl.process.SendTransientWorkflowCompletedEmailProcess`
+-->
 
 <!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
@@ -188,4 +262,4 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!MORELIKETHIS]
 >
->* [The Experience Cloud as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+>* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

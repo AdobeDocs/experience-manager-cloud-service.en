@@ -1,14 +1,14 @@
 ---
 title: Using Tags
 description: Tags are a quick and easy method of classifying content within a website
+exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 ---
-
 # Using Tags {#using-tags}
 
 Tags are a quick and easy method of classifying content within a website. Tags may be thought of as keywords or labels that can be attached to a page, an asset, or other content to enable searches to find that content and related content.
 
 * See Administering Tags for information about creating and managing tags, as well as to which content tags have been applied. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* See Tagging for Developers for information about the tagging framework as well as including and extending tags in custom applications. <!-- See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.-->
+* See [Tagging for Developers](/help/implementing/developing/introduction/tagging-framework.md) for information about the tagging framework as well as including and extending tags in custom applications.
 
 ## Ten Reasons to Use Tagging {#ten-reasons-to-use-tagging}
 

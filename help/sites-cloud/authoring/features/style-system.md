@@ -1,8 +1,8 @@
 ---
 title: Style System
 description: The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
+exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 ---
-
 # Style System{#style-system}
 
 The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making the component more flexible.
@@ -34,7 +34,7 @@ Using the Style System generally takes the following form.
 
 1. The HTML developer implements the corresponding CSS code (and optionally JS code) for each of the visual variations so that they look as defined.
 
-1. The AEM developer places the provided CSS (and optional JS) in a Client Library and deploys it. <!--The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.-->
+1. The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/implementing/developing/introduction/clientlibs.md) and deploys it.
 
 1. The AEM developer or template author configures the page templates and edits the policy of each styled component, adding the defined CSS classes, giving user-friendly names to each style, and indicating which styles can be combined.
 
@@ -50,7 +50,7 @@ The following diagram illustrates the architecture of the Style System.
 
 ## Use {#use}
 
-To demonstrate the feature, we will use [WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)'s implementation of the core component's [title component](https://www.adobe.com/go/aem_cmp_title_v2) as an example.
+To demonstrate the feature, we will use [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)'s implementation of the core component's [title component](https://www.adobe.com/go/aem_cmp_title_v2) as an example.
 
 The following sections [As a Content Author](#as-a-content-author) and [As a Template Author](#as-a-template-author) describe how to test the functionality of the Style System using the Style System of WKND.
 
@@ -98,9 +98,7 @@ If you wish to use the Style System for your own components do the following:
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as Client Libraries in order to work.
-
-<!--The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
+>The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/implementing/developing/introduction/clientlibs.md) in order to work.
 
 ## Setup {#setup}
 

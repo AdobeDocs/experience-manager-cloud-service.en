@@ -1,51 +1,103 @@
 ---
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
+feature: Dispatcher
+exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 ---
-
 # CDN in AEM as a Cloud Service {#cdn}
 
-AEM as Cloud Service is shipped with a built-in CDN. It’s main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications.
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_cdn"
+>title="CDN in AEM as a Cloud Service"
+>abstract="AEM as Cloud Service is shipped with a built-in CDN. It’s main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications."
+
+AEM as Cloud Service is shipped with a built-in CDN. Its main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications.
 
 The AEM managed CDN will satisfy most customer's performance and security requirements. For the publish tier, customers can optionally point to it from their own CDN, which they will need to manage. This will be allowed on a case-by-case basis, based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon.
 
 ## AEM Managed CDN  {#aem-managed-cdn}
 
-Follow these to prepare for content delivery by using Adobe's out-of-the-box CDN:
+Follow the sections below to use Cloud Manager self-service UI to prepare for content delivery by using AEM’s out-of-the-box CDN:
 
-1. Provide the signed SSL certificate and secret key to Adobe by sharing a link to a secure form containing this information. Please coordinate with customer support on this task.
-**Note:** Aem as a Cloud Service does not support Domain Validated (DV) certificates. Also, it must be a X.509 TLS certificate from a trusted certification authority (CA) with a matching 2048-bit RSA private key.
-1. Inform customer support:
-   * which custom domain should be associated with a given environment, as defined by the program id and environment id. Note that custom domains on the author side are not supported.
-   * if any IP allowlisting is needed to restrict traffic to a given environment.
-1. Coordinate with customer support about timing of the necessary changes to the DNS records. The instructions are different based on whether an apex record is needed:
-   * if an apex record is not needed, customers should set the CNAME DNS record to point their FQDN to `cdn.adobeaemcloud.com`.
-   * if an apex record is needed, create an A record pointing to the following IPs: 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. Customers need an apex record if the desired FQDN matches the DNS Zone. This can be tested by using the Unix dig command to see if the SOA value of the output matches the domain. For example, the command `dig anything.dev.adobeaemcloud.com` returns a SOA (Start of Authority, i.e., the zone) of `dev.adobeaemcloud.com` so its not an APEX record, while `dig dev.adobeaemcloud.com` returns a SOA of `dev.adobeaemcloud.com` so it is an apex record.
-1. You will be notified when the SSL certificates are expiring so you can resubmit the new SSL certificates.
+1. [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+1. [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **Restricting traffic**
 
-By default, for an Adobe Managed CDN setup, all public traffic can make its way to the publish service, for both production and non-production (development and stage) environments. If you wish to limit traffic to the publish service for a given environment (for example, limiting staging by a range of IP addresses) you should work with customer support to configure these restrictions. 
+By default, for an AEM managed CDN setup, all public traffic can make its way to the publish service, for both production and non-production (development and stage) environments. If you wish to limit traffic to the publish service for a given environment (for example, limiting staging by a range of IP addresses) you can do this in a self-service way via Cloud Manager UI.
+
+Refer to [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) to learn more.
+
+>[!CAUTION]
+>
+>Only requests from the allowed IPs will be served by AEM’s managed CDN. If you point your own CDN to the AEM managed CDN, then make sure the IPs of your CDN are included in the allowlist.
 
 ## Customer CDN points to AEM Managed CDN {#point-to-point-CDN}
 
-If a customer must use its existing CDN, they may manage it and point it to Adobe's managed CDN, providing the following are satisfied:
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_byocdn"
+>title="Customer CDN points to AEM Managed CDN"
+>abstract="AEM as Cloud Service offers an option for customers to use its existing CDN. For the publish tier, customers can optionally point to it from their own CDN, which they will need to manage. This will be allowed on a case-by-case basis, based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon."
+
+If a customer must use its existing CDN, they may manage it and point it to the AEM managed CDN, providing the following are satisfied:
 
 * Customer must have an existing CDN that would be onerous to replace.
 * Customer must manage it.
-* Customer must be able to configure the CDN to work with AEM as a Cloud Service - see the configuration instructions below.
+* Customer must be able to configure the CDN to work with AEM as a Cloud Service - see the configuration instructions presented below.
 * Customer must have engineering CDN experts that are on call in case related issues arise.
 * Customer must perform and successfully pass a load test before going to production.
 
 Configuration instructions:
 
-1. Set the `X-Forwarded-Host` header with the domain name.
-1. Set Host header with the origin domain, which is Adobe's CDN's ingress. The value should come from Adobe.
-1. Send the SNI header to the origin. Like the Host header, the sni header must be the origin domain.
-1. Set the `X-Edge-Key`, which is needed to route traffic correctly to the AEM servers. The value should come from Adobe.
+1. Point your CDN to the Adobe CDN’s ingress as its origin domain. For example, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. SNI must also be set to the Adobe CDN's ingress.
+1. Set the Host header to the origin domain. For example: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Set the `X-Forwarded-Host` header with the domain name so AEM can determine the host header. For example: `X-Forwarded-Host:example.com`.
+1. Set `X-AEM-Edge-Key`. The value should come from Adobe.
 
-Prior to accepting live traffic, you should validate with Adobe customer support that the end-to-end traffic routing is functioning correctly.
+   * This is needed so that the Adobe CDN can validate the source of the requests and pass the `X-Forwarded-*` headers to the AEM application. For example,`X-Forwarded-For` is used to determine the client IP. So, it becomes the responsibility of the trusted caller (i.e. the customer-managed CDN) to ensure the correctness of the `X-Forwarded-*` headers (see the note below).
+   * Optionally, access to Adobe CDN's ingress can be blocked when an `X-AEM-Edge-Key` is not present. Please inform Adobe if you need direct access to Adobe CDN's ingress (to be blocked).
 
-There is potentially a small performance hit due to the extra hop, although hops from the customer CDN to Adobe's managed CDN are likely to be efficient.
+Before accepting live traffic, you should validate with Adobe's customer support that the end-to-end traffic routing is functioning correctly.
 
-Note that this customer CDN configuration is supported for the publish tier, but not in front of the author tier.
+After obtaining the `X-AEM-Edge-Key`, you can test that the request is routed correctly as follows:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+
+```
+
+Please note that when using your own CDN, there is no need to install the domains and certificates in Cloud Manager. The routing in Adobe CDN will be done using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+
+>[!NOTE]
+>
+>Customers that manage their own CDN should ensure the integrity of the headers that are sent through to AEM's CDN. For instance, it is recommended that customers clear all `X-Forwarded-*` headers and set them to known and controlled values. For example, `X-Forwarded-For` should contain the client's IP address, while `X-Forwarded-Host` should contain the site's host.
+
+>[!NOTE]
+>
+>Sandbox program environments do not support a customer-provided CDN.
+
+There is potentially a small performance hit due to the extra hop, although hops from the customer CDN to the AEM managed CDN are likely to be efficient.
+
+Please note that this customer CDN configuration is supported for the publish tier, but not in front of the author tier.
+
+## Geolocation Headers {#geo-headers}
+
+The AEM managed CDN adds headers to each request with:
+
+* country code: `x-aem-client-country`
+* continent code: `x-aem-client-continent`
+
+The values for the country codes are the Alpha-2 codes described [here](https://en.wikipedia.org/wiki/ISO_3166-1).
+
+The values for the continent codes are:
+
+* AF Africa
+* AN Antarctica
+* AS Asia
+* EU Europe
+* NA North America
+* OC Oceania
+* SA South America
+
+This information may be useful for use cases such as redirecting to a different url based on the origin (country) of the request. Use the Vary header for caching responses that are dependent on geo information. For example, redirects to a specific country landing page should always contain `Vary: x-aem-client-country`. If needed, you can use `Cache-Control: private` to prevent caching. See also [Caching](/help/implementing/dispatcher/caching.md#html-text).

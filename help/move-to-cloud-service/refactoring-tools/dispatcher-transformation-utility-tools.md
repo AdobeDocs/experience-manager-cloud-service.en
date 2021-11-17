@@ -1,9 +1,14 @@
 ---
 title: AEM Dispatcher Converter Tool
 description: AEM Dispatcher Converter Tool
+exl-id: 97eb4f3f-dc03-461a-8d7e-164065bd1e4c
 ---
-
 # AEM Dispatcher Converter {#introduction}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_dispconverter"
+>title="AEM Dispatcher Converter"
+>abstract="Adobe Experience Manager Dispatcher Converter converts existing AEM Dispatcher configurations to AEM as a Cloud Service Dispatcher configurations."
 
 Adobe Experience Manager Dispatcher Converter converts existing AEM Dispatcher configurations to AEM as a Cloud Service Dispatcher configurations.
 
@@ -14,13 +19,13 @@ Dispatcher is Adobe Experience Manager's caching and/or load balancing tool. Usi
 >[!NOTE]
 >The most common use of Dispatcher is to cache responses from an **AEM publish instance**, to increase the responsiveness and security of your externally facing published website.
 
-Refer to [Dispatcher Overview](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) to learn how dispatcher performs caching, returns documents and performs Load Balancing.
+Refer to [Dispatcher Overview](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) to learn how dispatcher performs caching, returns documents and performs Load Balancing.
 
 ### Apache and Dispatcher Configuration and Testing {#dispatcher-configurations-cloud}
 
 You must learn how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, as well as how to validate and run it locally before deploying to Cloud environments.
 
-Refer to [Dispatcher in the Cloud](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) for more information.
+Refer to [Dispatcher in the Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) for more information.
 
 ## AEM Dispatcher Converter {#aem-dispatcher-converter}
 
@@ -38,4 +43,3 @@ AEM Dispatcher Converter provides the capability of refactoring existing on-prem
 
 >[!IMPORTANT]
 >AEM Dispatcher Converter is developed using NodeJS. It is recommended to have NodeJS 10.0+ installed.
-

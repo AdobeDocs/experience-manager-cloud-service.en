@@ -1,20 +1,22 @@
 ---
 title: XMP metadata
-description: Learn about the XMP (Extensible Metadata Platform) metadata standard for metadata management. It is used by AEM as a standardized format for creation, processing, and interchange of metadata.
+description: Learn about the XMP (Extensible Metadata Platform) metadata standard for metadata management. It is used by Experience Manager as a standardized format for creation, processing, and interchange of metadata.
 contentOwner: AG
+feature: Metadata
+role: User,Admin
+exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
 ---
-
 # XMP metadata {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) is the metadata standard used by AEM Assets for all metadata management. XMP provides a standard format for the creation, processing, and interchange of metadata for a wide variety of applications.
+XMP (Extensible Metadata Platform) is the metadata standard used by Experience Manager Assets for all metadata management. XMP provides a standard format for the creation, processing, and interchange of metadata for a wide variety of applications.
 
-Aside from offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich [content model](#xmp-core-concepts) and is [supported by Adobe](#advantages-of-xmp) and other companies, so that users of XMP in combination with AEM Assets have a powerful platform to build upon.
+Aside from offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich [content model](#xmp-core-concepts) and is [supported by Adobe](#advantages-of-xmp) and other companies, so that users of XMP in combination with [!DNL Assets] have a powerful platform to build upon.
 
 ## XMP overview and ecosystem {#xmp-ecosystem}
 
-AEM Assets natively supports the XMP metadata standard. XMP is a standard for processing and storing standardized and proprietary metadata in digital assets. XMP is designed to be the common standard that allows multiple applications to work effectively with metadata.
+[!DNL Assets] natively supports the XMP metadata standard. XMP is a standard for processing and storing standardized and proprietary metadata in digital assets. XMP is designed to be the common standard that allows multiple applications to work effectively with metadata.
 
-Production professionals, for example, use the built-in XMP support within Adobe's applications to pass information across multiple file formats. The AEM Assets repository extracts the XMP metadata and uses it to manage the content lifecycle and offers the ability to create automation workflows.
+Production professionals, for example, use the built-in XMP support within Adobe's applications to pass information across multiple file formats. The [!DNL Assets] repository extracts the XMP metadata and uses it to manage the content lifecycle and offers the ability to create automation workflows.
 
 XMP standardizes how metadata is defined, created, and processed by providing a data model, a storage model, and schemas. All of these concepts are covered in this section.
 
@@ -65,28 +67,45 @@ XMP offers you the ability to add an `xml:lang` property to text properties to s
 
 ## XMP writeback to renditions {#xmp-writeback-to-renditions}
 
-This XMP write-back feature in Adobe Experience Manager (AEM) Assets replicates asset metadata changes to the renditions of the asset.
+This XMP writeback feature in [!DNL Adobe Experience Manager Assets] replicates the metadata changes to the renditions of the original asset. 
+When you change the metadata for an asset from within [!DNL Assets] or while uploading the asset, the changes are initially stored in the metadata node in the asset hierarchy. The writeback feature lets you propagate the metadata changes to all or specific renditions of the asset. The feature writes back only those metadata properties that use `jcr` namespace, that is, a property named `dc:title` is written back but a property named `mytitle` is not.
 
-When you change the metadata for an asset from within AEM Assets or while uploading the asset, changes are initially stored within the asset node in CRXDE.
-
-The XMP write-back feature propagates the metadata changes to all or specific renditions of the asset.
-
-Consider a scenario where you modify the [!UICONTROL Title] property of the asset titled `Classic Leather` to `Nylon`.
+For example, consider a scenario where you modify the [!UICONTROL Title] property of the asset titled `Classic Leather` to `Nylon`.
 
 ![metadata](assets/metadata.png)
 
-In this case, the AEM Assets saves the changes to the **[!UICONTROL Title]** property in the `dc:title` parameter for the asset metadata stored in the asset hierarchy.
+In this case, [!DNL Assets] saves the changes to the **[!UICONTROL Title]** property in the `dc:title` parameter for the asset metadata stored in the asset hierarchy.
 
-![metadata_stored](assets/metadata_stored.png)
+![metadata stored in asset node in the repository](assets/metadata_stored.png)
 
-However, AEM Assets does not automatically propagate any metadata changes to the renditions of an asset.
+>[!IMPORTANT]
+>
+>The writeback feature is not enabled by default in [!DNL Assets]. See how to [enable metadata writeback](#enable-xmp-writeback). MSM for digital assets does not work with metadata writeback enabled. Upon writeback, the inheritance breaks.
 
-The XMP write-back feature lets you propagate the metadata changes to all or specific renditions of the asset. However, the changes are not stored under the metadata node in the asset hierarchy. Instead, this feature embeds the changes in the binary files for the renditions.
+### Enable XMP writeback {#enable-xmp-writeback}
 
-### Enable XMP write-back {#enable-xmp-writeback}
+[!UICONTROL DAM Metadata Writeback] workflow is used to writeback the metadata of an asset. To enable writeback, follow any of the following three methods:
 
-<!-- asgupta, Engg: Need attention here to update the configuration manager changes.
--->
+* Use Launchers.
+* Manually start `DAM MetaData Writeback` workflow.
+* Configure workflow to be part of the post-processing.
+
+To use Launchers, follow these steps:
+
+1. As an administrator, access **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]**.
+1. Select the [!UICONTROL Launcher] for which the **[!UICONTROL Workflow]** column displays **[!UICONTROL DAM MetaData Writeback]**. Click **[!UICONTROL Properties]** from the toolbar.
+
+   ![Select DAM metadata writeback launcher to modify its properties and activate it](assets/launcher-properties-metadata-writeback1.png)
+
+1. Select **[!UICONTROL Activate]** on the **[!UICONTROL Launcher Properties]** page. Click **[!UICONTROL Save & Close]**.
+
+To manually apply the workflow to an asset just once, apply [!UICONTROL DAM Metadata Writeback] workflow from the left rail.
+
+To apply the workflow to all the uploaded assets, add the workflow to a post-processing profile.
+
+<!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
+
+### Enable XMP writeback {#enable-xmp-writeback}
 
 To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 
@@ -100,7 +119,7 @@ To let the XMP write-back feature propagate metadata changes to select rendition
 
 For the XMP write-back feature to propagate metadata to the rendition thumbnails 140.100.png and 319.319.png, perform these steps.
 
-1. Tap/click the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
+1. Tap/click the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
 1. From the Models page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
 1. In the **[!UICONTROL DAM Metadata Writeback]** properties page, open the **[!UICONTROL XMP Writeback Process]** step.
 1. In the **[!UICONTROL Step Properties]** dialog box, tap/click the **[!UICONTROL Process]** tab.
@@ -114,7 +133,4 @@ For the XMP write-back feature to propagate metadata to the rendition thumbnails
 1. Save the workflow.
 
 The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
-
->[!MORELIKETHIS]
->
->* [XMP specification by Adobe](https://www.adobe.com/devnet/xmp.html)
+-->

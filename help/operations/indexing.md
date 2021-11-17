@@ -1,13 +1,13 @@
 ---
 title: Content Search and Indexing
 description: Content Search and Indexing
+exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 ---
-
 # Content Search and Indexing {#indexing}
 
 ## Changes in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-With AEM as a Cloud Service, Adobe is moving away from an AEM instance centric model to a service based view with n-x AEM Containers, driven by CI/CD pipelines in the Cloud Manager. Instead of configuring and maintaining Indexes on single AEM instances, the Index configuration has to be specified before a deployment. Configuration changes in production are clearly breaking CI/CD policies. The same holds true for index changes since it can impact system stability and performance if not specified tested and re-indexed before bringing them into production.
+With AEM as a Cloud Service, Adobe is moving away from an AEM instance-centric model to a service-based view with n-x AEM Containers, driven by CI/CD pipelines in the Cloud Manager. Instead of configuring and maintaining Indexes on single AEM instances, the Index configuration has to be specified before a deployment. Configuration changes in production are clearly breaking CI/CD policies. The same holds true for index changes since it can impact system stability and performance if not specified tested and reindexed before bringing them into production.
 
 Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
@@ -29,19 +29,13 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 1. Customers can see whether the indexing job is complete on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
 
-1. Limitations: currently, index management on AEM as a Cloud Service is only supported for indexes of type lucene.
-
-<!-- ## Sizing Considerations {#sizing-considerations}
-
-AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings.
-
-AS NOTE: the above is internal for now.
-
--->
+1. Limitations:
+* Currently, index management on AEM as a Cloud Service is only supported for indexes of type lucene.
+* Only standard analyzers are supported (that is, those that are shipped with the product). Custom analyzers are not supported.
 
 ## How to Use {#how-to-use}
 
-Defining indexes can comprise of the 3 use cases:
+Defining indexes can comprise of theese three use cases:
 
 1. Adding a new customer index definition
 1. Updating an existing index definition. This effectively means adding a new version of an existing index definition
@@ -49,7 +43,11 @@ Defining indexes can comprise of the 3 use cases:
 
 For both points 1 and 2 above, you need to create a new index definition as part of your custom code base in the respective Cloud Manager release schedule. For more information, see the [Deploying to AEM as a Cloud Service documentation](/help/implementing/deploying/overview.md).
 
-### Preparing the New Index Defition {#preparing-the-new-index-definition}
+### Preparing the New Index Definition {#preparing-the-new-index-definition}
+
+>[!NOTE]
+>
+>If customizing an out of the box index, for example `damAssetLucene-6`, please copy the latest out of the box index definition from a *Cloud Service environment* and add your customizations on top, this ensures that required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-6/tika` is a required node and should be part of your customized index as well and it doesn't exist on the Cloud SDK.
 
 You need to prepare a new index definition package that contains the actual index definition, following this naming pattern:
 
@@ -57,15 +55,19 @@ You need to prepare a new index definition package that contains the actual inde
 
 which then needs to go under `ui.apps/src/main/content/jcr_root`. Sub root folders are not supported as of now.
 
-<!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
-
 The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+
+>[!NOTE]
+>
+>Any content package containing index definitions should have the following property set in in the properties file of the content package, located at `/META-INF/vault/properties.xml`:
+>
+>`noIntermediateSaves=true`
 
 ### Deploying Index Definitions {#deploying-index-definitions}
 
 >[!NOTE]
 >
->There is a known issue with Jackrabbit Filevault Maven Package Plugin version **1.1.0** which does not allow you to add `oak:index` to modules of `<packageType>application</packageType>`. To work around this, please use version **1.0.4**.
+>There is a known issue with Jackrabbit Filevault Maven Package Plugin version **1.1.0** which does not allow you to add `oak:index` to modules of `<packageType>application</packageType>`. You should update to a more recent version of that plugin.
 
 Index definitions are now marked as custom and versioned:
 
@@ -113,7 +115,7 @@ During development, or when using on premise installations, indexes can be added
 
 With blue-green deployments, there is no downtime. However, for index management, this requires that indexes are only used by certain versions of the application. For example, when adding an index in version 2 of the application, you would not want it to be used by version 1 of the application yet. The reverse is the case when an index is removed: an index removed in version 2 is still needed in version 1. When changing an index definition, we want the old version of the index only to be used for version 1, and the new version of the index only to be used for version 2.
 
-The following table shows 5 index definitions: index `cqPageLucene` is used in both versions while index `damAssetLucene-custom-1` is used only in version 2.
+The following table shows five index definitions: index `cqPageLucene` is used in both versions while index `damAssetLucene-custom-1` is used only in version 2.
 
 >[!NOTE]
 >
@@ -127,7 +129,7 @@ The following table shows 5 index definitions: index `cqPageLucene` is used in b
 | /oak:index/acme.product-custom-2  | No  | No  | Yes  |
 | /oak:index/cqPageLucene  | Yes  | Yes  | Yes  |
 
-The version number is incremented each time the index is changed. In order to avoid custom index names colliding with index names of the product itself, custom indexes, as well as changes to out of the box indexes need to end with `-custom-<number>`.
+The version number is incremented each time the index is changed. In order to avoid custom index names colliding with index names of the product itself, custom indexes, as well as changes to out of the box indexes must end with `-custom-<number>`.
 
 ### Changes to Out-of-the-Box Indexes {#changes-to-out-of-the-box-indexes}
 
@@ -140,17 +142,13 @@ Once Adobe changes an out-of-the-box index like "damAssetLucene" or "cqPageLucen
 | /oak:index/cqPageLucene  | Yes  | Yes  | No  |
 | /oak:index/cqPageLucene-2  | Yes  | No  | Yes  |
 
-### Limitations {#limitations}
+### Current Limitations {#current-limitations}
 
 Index management is currently only supported for indexes of type `lucene`.
 
-### Removing an Index {#removing-an-index}
-
-If an index is to be removed in a later version of the application, you can define an empty index (an index with no data to index), with a new name. For example purposes, you can name it `/oak:index/acme.product-custom-3`. This replaces the index `/oak:index/acme.product-custom-2`. Once `/oak:index/acme.product-custom-2` is removed by the system, the empty index `/oak:index/acme.product-custom-3` can then also be removed.
-
 ### Adding an Index {#adding-an-index}
 
-To add an index named "/oak:index/acme.product-custom-1" to be used in a new version of the application and later, the index needs to be configured as follows:
+To add an index named `/oak:index/acme.product-custom-1` to be used in a new version of the application and later, the index must be configured as follows:
 
 `acme.product-1-custom-1`
 
@@ -160,7 +158,7 @@ As above, this ensures the index is only used by the new version of the applicat
 
 ### Changing an Index {#changing-an-index}
 
-When an existing index is changed, a new index needs to be added with the changed index definition. For example, consider the existing index "/oak:index/acme.product-custom-1" is changed. The old index is stored under `/oak:index/acme.product-custom-1`, and the new index is stored under `/oak:index/acme.product-custom-2`.
+When an existing index is changed, a new index needs to be added with the changed index definition. For example, consider the existing index `/oak:index/acme.product-custom-1` is changed. The old index is stored under `/oak:index/acme.product-custom-1`, and the new index is stored under `/oak:index/acme.product-custom-2`.
 
 The old version of the application uses the following configuration:
 
@@ -170,6 +168,54 @@ The new version of the application uses the following (changed) configuration:
 
 `/oak:index/acme.product-custom-2`
 
-### Index-Availability/Fault-Tolerance {#index-availability}
+>[!NOTE]
+>
+>Index definitions on AEM as a Cloud Service may not fully match the index definitions on a local development instance. The development instance does not have a Tika configuration, while AEM as a Cloud Service instances do have one. If you customize an index with a Tika configuration, please retain the Tika configuration.
 
-It is recommended to create duplicate indexes for features that are extremely important (keeping in mind the naming convention for indexes mentioned above), so in the case of index corruption or any such unforeseen event there is a fallback index available to respond to queries.
+### Undoing a Change {#undoing-a-change}
+
+Sometimes, a change in an index definition needs to be reverted. The reasons could be that a change was made by mistake, or a change is no longer needed. For example, the index definition `damAssetLucene-8-custom-3` was created by mistake and is already deployed. Because of that you may want to revert to the previous index definition `damAssetLucene-8-custom-2`. To do that, you need to add a new index called `damAssetLucene-8-custom-4` that contains the definition of the previous index, `damAssetLucene-8-custom-2`.
+
+### Removing an Index {#removing-an-index}
+
+The following only applies to custom indexes. Product indexes may not be removed as they are used by AEM.
+
+If an index is to be removed in a later version of the application, you can define an empty index (an empty index that is never used, and does not contain any data), with a new name. For the purpose of this example, you can name it `/oak:index/acme.product-custom-3`. This replaces the index `/oak:index/acme.product-custom-2`. Once `/oak:index/acme.product-custom-2` is removed by the system, the empty index `/oak:index/acme.product-custom-3` can then also be removed. An example of such an empty index is:
+
+```xml
+<acme.product-custom-3
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="async"
+        compatVersion="2"
+        includedPaths="/dummy"
+        queryPaths="/dummy"
+        type="lucene">
+        <indexRules jcr:primaryType="nt:unstructured">
+            <rep:root jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <dummy
+                        jcr:primaryType="nt:unstructured"
+                        name="dummy"
+                        propertyIndex="{Boolean}true"/>
+                </properties>
+            </rep:root>
+        </indexRules>
+    </acme.product-custom-3>
+```
+
+If it is no longer needed to have a customization of an out-of-the-box index, then you must copy the out-of-the-box index definition. For example, if you have already deployed `damAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetLucene-8` index, then you must add an index `damAssetLucene-8-custom-4` that contains the index definition of `damAssetLucene-8`.
+
+## Index optimizations {#index-optimizations}
+
+Apache Jackrabbit Oak enables flexible index configurations to efficiently handle search queries. Indexes are especially important for larger repositories. Please ensure that all queries are backed by an appropriate index. Queries without a suitable index may read thousands of nodes, which is then logged as a warning. Such queries should be identified by analyzing the log files, so that index definitions can be optimized. Please see [this page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) for more information.
+
+### Lucene full text index on AEM as a Cloud Service {#index-lucene}
+
+The fulltext index `/oak:index/lucene-2` can become very large because it indexes all the nodes in the AEM repository by default.  Following Adobe’s plans to retire this index it will no longer be used on the product side in AEM as a Cloud Service and it should not be required to run customer code. For AEM as a Cloud Service environments with common Lucene Indexes, Adobe is working with customers individually for a coordinated approach to compensate for this index and to use better, optimized indexes. No action is required by customers without further notice from Adobe. AEM as a Cloud Service customers will be informed by Adobe when there is a need for action with regard to this optimization. If this index is required for custom queries, as a temporary solution, a copy of this index should be created using a different name, for example, `/oak:index/acme.lucene-1-custom-1`, as described [here](/help/operations/indexing.md).
+This optimization does not apply by default to other AEM environments either hosted on-premises or managed by Adobe Managed Services.
+
+## Query optimizations {#index-query}
+
+The **Query Performance** tool allows you to observe both popular and slow JCR queries. Additionally, it is able to analyze queries and display various information about, most notably if an index is being used for this query or not.
+
+Unlike in AEM on premise, AEM as a Cloud Service does not display the **Query Performance** tool in the UI anymore. Instead it is now available via the Developer Console (in Cloud Manager) on the [Queries](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) tab.

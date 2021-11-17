@@ -1,18 +1,18 @@
 ---
-title: Logging
-description: Learn how to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
+title: Logging for AEM as a Cloud Service
+description: Learn how to use Logging for AEM as a Cloud Service in order to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
+exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 ---
+# Logging for AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-# Logging {#logging}
+AEM as a Cloud Service is a platform for customers to include custom code to create unique experiences for their customer base. With this in mind, the logging service is a critical function in order to debug and understand code execution on local development, and cloud environments, particularly the AEM as a Cloud Service's Dev environments.
 
-AEM as a Cloud Service is a platform for customers to include custom code to create unique experiences for their customer base. With this in mind, logging is a critical function in order to debug and understand code execution on local development, and cloud environments, particularly the AEM as a Cloud Service's Dev environments.
-
-AEM logging and log levels are managed in configuration files that are stored as part of the AEM project in Git, and deployed as part of the AEM project via Cloud Manager. Logging in AEM as a Cloud Service can be broken into two logical sets:
+AEM as a Cloud Service logging settings and log levels are managed in configuration files that are stored as part of the AEM project in Git, and deployed as part of the AEM project via Cloud Manager. Logging in AEM as a Cloud Service can be broken into two logical sets:
 
 * AEM logging, which performs logging at the AEM application level
 * Apache HTTPD Web Server/Dispatcher logging, which performs logging of the web server and Dispatcher on the Publish tier.
 
-## AEM Logging {#aem-loggin}
+## AEM Logging {#aem-logging}
 
 Logging at the AEM application level, is handled by three logs:
 
@@ -24,7 +24,7 @@ Logging at the AEM application level, is handled by three logs:
 >
 >HTTP requests that are served from Publish tier's Dispatcher cache or upstream CDN are not reflected in these logs.
 
-## AEM Java logging {#aem-java-logging}
+## AEM Java Logging {#aem-java-logging}
 
 AEM as a Cloud Service's provides access to Java log statements. Developers of applications for AEM should follow general Java logging best practices, logging pertinent statements about the execution of custom code, at the following log levels:
 
@@ -247,56 +247,18 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
-**Log Format**
-
-<table>
-<tbody>
-<tr>
-<td>AEM as a Cloud Service node ID</td>
-<td>cm-p1235-e2644-aem-author-59555cb5b8-8kgr2</td>
-</tr>
-<tr>
-<td>IP address of the Client</td>
-<td>-</td>
-</tr>
-<tr>
-<td>User</td>
-<td>myuser@adobe.com</td>
-</tr>
-<tr>
-<td>Date and time</td>
-<td>30/Apr/2020:17:37:14 +0000</td>
-</tr>
-<tr>
-<td>HTTP method</td>
-<td>GET</td>
-</tr>
-<tr>
-<td>URL</td>
-<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
-</tr>
-<tr>
-<td>Protocol</td>
-<td>HTTP/1.1</td>
-</tr>
-<tr>
-<td>HTTP response status</td>
-<td>200</td>
-</tr>
-<tr>
-<td>HTTP request time in milliseconds</td>
-<td>1141</td>
-</tr>
-<tr>
-<td>Referrer</td>
-<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
-</tr>
-<tr>
-<td>User agent</td>
-<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
-</tr>
-</tbody>
-</table>
+| AEM as a Cloud Service Node ID  | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2  |
+|---|---|
+| IP address of the Client  | -  |
+| User  |  myuser@adobe.com |
+| Date and time  | 30/Apr/2020:17:37:14 +0000  |
+|  HTTP method | GET  |
+| URL  |  `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
+| Protocol  | HTTP/1.1  |
+| HTTP response status  | 200  |
+| HTTP request time in milliseconds  | 1141  |
+| Referrer  | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"`  |
+| User agent  | `"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"`  |
 
 ### Configuring the HTTP Access Log {#configuring-the-http-access-log}
 
@@ -543,7 +505,7 @@ AEM logs are located in the folder `crx-quickstart/logs`, where the following lo
 * AEM HTTP Request log: `request.log`
 * AEM HTTP Access log: `access.log`
 
-Apache layer logs, including dispatcher, are in the Docker container which holds the Dispatcher. See the [Dispatcher documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) for information on how to start the Dispatcher. 
+Apache layer logs, including dispatcher, are in the Docker container which holds the Dispatcher. See the [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) for information on how to start the Dispatcher. 
 
 To retrieve the logs:
 
@@ -581,7 +543,7 @@ The network bandwidth associated with logs sent to Splunk are considered part of
 
 In the support request, customers should indicate:
 
-* The Splunk host
+* Splunk HEC endpoint address
 * The Splunk index
 * The Splunk port 
 * The Splunk HEC token. See [this page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) for more information.
@@ -592,25 +554,31 @@ The properties above should be specified for each relevant program/environment t
 >
 >Splunk forwarding for sandbox program environments is not supported.
 
+You should make sure that the initial request includes all dev environment that should be enabled, in addition to the stage/prod environments.
+
+If any new dev environments created after the initial request are intended to have Splunk forwarding, but don't have it enabled, an additional request should be made.
+
+Also note that if dev environments have been requested, it is possible that other dev environments not in the request or even sandbox environments will have Splunk forwarding enabled and will share a Splunk index. Customers can use the `aem_env_id` field to distinguish between these environments.
+
 Below you will find a sample customer support request:
 
 Program 123, Production Env
 
-* Splunk host: `splunk-hec-ext.acme.com`
+* Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
 * Splunk index: acme_123prod (customer can choose whatever naming convention it wishes)
 * Splunk port: 443
 * Splunk HEC token: ABC123
 
 Program 123, Stage Env
 
-* Splunk host: `splunk-hec-ext.acme.com`
+* Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
 * Splunk index: acme_123stage
 * Splunk port: 443
 * Splunk HEC token: ABC123
 
 Program 123, Dev Envs
 
-* Splunk host: `splunk-hec-ext.acme.com`
+* Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
 * Splunk index: acme_123dev
 * Splunk port: 443
 * Splunk HEC token: ABC123

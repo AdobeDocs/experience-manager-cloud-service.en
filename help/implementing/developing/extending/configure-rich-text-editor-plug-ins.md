@@ -3,8 +3,8 @@ title: Configure the Rich Text Editor plug-ins in [!DNL Adobe Experience Manager
 description: Learn to configure the [!DNL Adobe Experience Manager] Rich Text Editor plug-ins.
 contentOwner: AG
 mini-toc-levels: 1
+exl-id: 91619662-e865-47d1-8bec-0739f402353a
 ---
-
 # Configure the Rich Text Editor plug-ins {#configure-the-rich-text-editor-plug-ins}
 
 RTE functionalities are made available via a series of plug-ins, each with features property. You can configure the features property to enable or disable, one or more RTE features. This article describes how to specifically configure the RTE plug-ins.

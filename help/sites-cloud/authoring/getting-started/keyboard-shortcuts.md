@@ -1,8 +1,8 @@
 ---
 title: Keyboard Shortcuts for Consoles
 description: Save time when authoring by using these keyboard shortcuts
+exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 ---
-
 # Keyboard Shortcuts for Consoles {#keyboard-shortcuts-for-consoles}
 
 The following shortcuts are available for the Sites, Assets, Users, Groups, Projects, and Experience Fragments consoles.
