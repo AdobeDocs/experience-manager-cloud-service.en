@@ -1,9 +1,6 @@
 ---
 title: Developing a Custom Component for Screens as a Cloud Service
 description: The following tutorial walks through the steps to create a custom component for AEM Screens. AEM Screens reuses many existing design patterns and technologies of other AEM products. The tutorial highlights differences and special considerations when developing for AEM Screens.
-feature: Developing Screens
-role: Developer
-level: Intermediate
 ---
 
 # Developing a Custom Component for AEM Screens as a Cloud Service{#developing-a-custom-component-for-aem-screens}
@@ -44,7 +41,7 @@ A Screens project's source code is typically managed as a multi-module Maven pro
 
    Start HelloWorld SRC Screens We.Retail Run Project
 
-   [Get File](assets/src-screens-weretail-run.zip)
+   [Get File](/help/screens-cloud/developing/assets/src-screens-weretail-run.zipsrc-screens-weretail-run.zip)
 
 1. In [CRX Package Manager](http://localhost:4502/crx/packmgr/index.jsp) verify the following two packages are installed:
 
