@@ -189,7 +189,7 @@ AEM Screens has some interesting constraints that are not necessarily true for t
     1. Copy the dialog from: `/libs/screens/core/components/content/image/cq:dialog`
     1. Paste the dialog beneath `/apps/weretail-run/components/content/helloworld`
 
-   ![copy-image-dialog](assets/copy-image-dialog.gif)
+   ![copy-image-dialog](/help/screens-cloud/developing/assets/copy-image-dialog.gif)
 
 1. **Update Hello World dialog to include a tab for message.**
 
@@ -254,7 +254,7 @@ AEM Screens has some interesting constraints that are not necessarily true for t
 
    The textfield for the Message will be saved to a property named `message` and that the numberfield for the Duration will be saved to a property named `duration`. These two properties are both referenced in `/apps/weretail-run/components/content/helloworld/production.html` by HTL as `${properties.message}` and `${properties.duration}`.
 
-   ![Hello World - completed dialog](assets/2018-04-29_at_5_21pm.png)
+   ![Hello World - completed dialog](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
 
    Hello World - completed dialog
 
@@ -268,11 +268,11 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 
    Beneath `/apps/weretail-run/components/content/helloworld`create a new folder named `clientlibs`.
 
-   ![2018-04-30_at_1046am](assets/2018-04-30_at_1046am.png)
+   ![2018-04-30_at_1046am](/help/screens-cloud/developing/assets/2018-04-30_at_1046am.png)
 
 1. Beneath the `clientlibs` folder create a new node named `shared` of type `cq:ClientLibraryFolder.`
 
-   ![2018-04-30_at_1115am](assets/2018-04-30_at_1115am.png)
+   ![2018-04-30_at_1115am](/help/screens-cloud/developing/assets/2018-04-30_at_1115am.png)
 
 1. Add the following properties to the shared client library:
 
@@ -301,7 +301,7 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 
 1. Create a folder named `css` beneath the `shared` folder. Add a file named `style.less` beneath the `css` folder. The structure of the client libraries should now look like this:
 
-   ![2018-04-30_at_3_11pm](assets/2018-04-30_at_3_11pm.png)
+   ![2018-04-30_at_3_11pm](/help/screens-cloud/developing/assets/2018-04-30_at_3_11pm.png)
 
    Instead of writing CSS directly, this tutorial uses LESS. [LESS](https://lesscss.org/) is a popular CSS pre-compiler that supports CSS variables, mixins, and functions. AEM client libraries natively support LESS compilation. Sass or other pre-compilers can be used but need to be compiled outside of AEM.
 
@@ -327,7 +327,7 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 
 1. Copy and paste the `shared` client library folder to create a new client library named `production`.
 
-   ![Copy the shared client library to create a new production client library](assets/copy-clientlib.gif)
+   ![Copy the shared client library to create a new production client library](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
    Copy the shared client library to create a new production client library
 
@@ -335,7 +335,7 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 
    This ensures that the styles are only loaded when in Preview/Production mode.
 
-   ![Properties for /apps/weretail-run/components/content/helloworld/clientlibs/production](assets/2018-04-30_at_5_04pm.png)
+   ![Properties for /apps/weretail-run/components/content/helloworld/clientlibs/production](/help/screens-cloud/developing/assets/2018-04-30_at_5_04pm.png)
 
    Properties for /apps/weretail-run/components/content/helloworld/clientlibs/production
 
@@ -388,7 +388,7 @@ Below a We.Retail Run Design page is created that will store all configurations 
    | sling:resourceType |String |wcm/core/components/designer |
    | cq:doctype |String |html_5 |
 
-   ![Design Page at /apps/settings/wcm/designs/we-retail-run](assets/2018-05-07_at_1219pm.png)
+   ![Design Page at /apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1219pm.png)
 
    Design Page at /apps/settings/wcm/designs/we-retail-run
 
@@ -402,7 +402,7 @@ The Hello World component is intended to be used on a Sequence Channel. To test 
 
    1. Choose **Create Entity**
 
-   ![2018-04-30_at_5_18pm](assets/2018-04-30_at_5_18pm.png)
+   ![2018-04-30_at_5_18pm](/help/screens-cloud/developing/assets/2018-04-30_at_5_18pm.png)
 
 1. In the Create wizard:
 
@@ -437,7 +437,7 @@ The Hello World component is intended to be used on a Sequence Channel. To test 
 
 1. In **CRXDE-Lite** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs/we-retail-run/jcr%3Acontent/sequencechannel/par` navigate to `/apps/settings/wcm/designs/we-retail-run/jcr:content/sequencechannel/par`. Notice the `components` property now includes `group:Screens`, `group:We.Retail Run - Content`.
 
-   ![Design configuration under /apps/settings/wcm/designs/we-retail-run](assets/2018-05-07_at_1_14pm.png)
+   ![Design configuration under /apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1_14pm.png)
 
    Design configuration under /apps/settings/wcm/designs/we-retail-run
 
