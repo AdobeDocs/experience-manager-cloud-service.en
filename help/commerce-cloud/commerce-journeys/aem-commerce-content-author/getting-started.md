@@ -14,7 +14,7 @@ This article builds on those fundamentals.
 
 ## Objective {#objective}
 
-This document helps you understand how to use CIF for Content and Commerce specific authoring. After reading you should:
+This document helps you understand how to use CIF for Content and Commerce specific authoring. After reading, you should:
 
 * Understand the concepts of CIF authoring using the Universal Editor
 * How to access product catalog data in AEM using product and category pickers
