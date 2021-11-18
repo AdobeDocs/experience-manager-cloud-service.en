@@ -40,7 +40,7 @@ A Screens project's source code is typically managed as a multi-module Maven pro
 
    Start HelloWorld SRC Screens We.Retail Run Project
 
-   [Get File](/help/screens-cloud/developing/assets/src-screens-weretail-run.zipsrc-screens-weretail-run.zip)
+   [Get File](/help/screens-cloud/developing/assets/src-screens-weretail-run.zip)
 
 1. In [CRX Package Manager](http://localhost:4502/crx/packmgr/index.jsp) verify the following two packages are installed:
 
