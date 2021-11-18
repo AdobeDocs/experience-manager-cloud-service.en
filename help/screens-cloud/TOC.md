@@ -37,3 +37,5 @@ user-guide-description: Understand the AEM Screens as a Cloud Service.
 + Using Code Product Features {#core-product-features}
   + [Thumbnail Support for Videos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
 + [Screens as a Cloud Service FAQs](/help/screens-cloud/screens-cloud-faqs.md)
++ Developing in Screens as a Cloud Service {#developing-screens-cloud}
+  + [Developing a Custom Component for Screens as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
