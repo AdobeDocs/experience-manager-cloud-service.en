@@ -32,9 +32,9 @@ A Screens project's source code is typically managed as a multi-module Maven pro
 
 1. Download and install the following packages using [CRX package manager](http://localhost:4502/crx/packmgr/index.jsp):
 
-   [Get File](assets/base-screens-weretail-runuiapps-001-snapshot.zip)
+   [Get File](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
 
-   [Get File](assets/base-screens-weretail-runuicontent-001-snapshot.zip)
+   [Get File](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
    **Optionally** if working with Eclipse or another IDE download the below source package. Deploy the project to a local AEM instance by using the Maven command:
 
    **`mvn -PautoInstallPackage clean install`**
@@ -60,7 +60,7 @@ A Screens project's source code is typically managed as a multi-module Maven pro
    >
    >In this tutorial no Java code is written. If more complex business logic is needed, back-end Java can be created and deployed using the Core Java bundle.
 
-   ![Representation of the ui.apps code in CRXDE Lite](assets/uipps-contents.png)
+   ![Representation of the ui.apps code in CRXDE Lite](/help/screens-cloud/developing/assets/uipps-contents.png)
 
    Representation of the ui.apps code in CRXDE Lite
 
@@ -78,7 +78,7 @@ A Screens project's source code is typically managed as a multi-module Maven pro
 
    From the AEM Start Menu &gt; Click the Screens the icon. Verify the We.Retail Run Project can be seen.
 
-   ![we-retaiul-run-starter](assets/we-retaiul-run-starter.png)
+   ![we-retaiul-run-starter](/help/screens-cloud/developing/assets/we-retaiul-run-starter.png)
 
 ## Create the Hello World Component {#hello-world-cmp}
 
@@ -100,7 +100,7 @@ AEM Screens has some interesting constraints that are not necessarily true for t
        componentGroup="We.Retail Run - Content"
    ```
 
-   ![Properties for /apps/weretail-run/components/content/helloworld](assets/2018-04-28_at_4_23pm.png)
+   ![Properties for /apps/weretail-run/components/content/helloworld](/help/screens-cloud/developing/assets/2018-04-28_at_4_23pm.png)
 
    Properties for /apps/weretail-run/components/content/helloworld
 
