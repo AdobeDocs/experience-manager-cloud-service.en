@@ -113,10 +113,12 @@ In addition, the JAR must have the Cloud-Manager-TestType manifest header set to
     </plugins>
 ```
 
-Within this JAR file, the class names of the actual tests to be executed must end in IT. 
+Within this JAR file, the class names of the actual tests to be executed must end in `IT`. 
+
+For example, a class named `com.myco.tests.aem.it.ExampleIT` would be executed, but a class named `com.myco.tests.aem.it.ExampleTest` would not.
  
-For example, a class named `com.myco.tests.aem.ExampleIT` would be executed but a class named `com.myco.tests.aem.ExampleTest` would not. 
- 
+Furthermore, to exclude test code from the coverage check of the code scanning, the test code must be below a package named `it` (the coverage exclusion filter is `**/it/**/*.java`).
+
 The test classes need to be normal JUnit tests. The test infrastructure is designed and configured to be compatible with the conventions used by the aem-testing-clients test library. Developers are strongly encouraged to use this library and follow its best practices. Refer to [Git Link](https://github.com/adobe/aem-testing-clients) for more details.
 
 ### Local Test Execution {#local-test-execution}

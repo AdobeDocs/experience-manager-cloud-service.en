@@ -1,17 +1,17 @@
 ---
 title: User Access to New Relic
-description: User Access to New Relic
-index: no
-hide: yes
+description: Follow this page to learn about New Relic Application Performance Monitoring for AEM as a Cloud Service
 ---
 
-# New Relic APM for AEM as a Cloud Service {#new-relic} 
+# User Access to New Relic {#user-access}
 
 ## Introduction {#introduction}
 
-Adobe places a high emphasis on the monitoring, availability and performance of your application. To help achieve this goal, AEM as a Cloud Service provides access to a custom New Relic monitoring suite as a part of the standard product offering to ensure your teams have the maximum visibility to your Adobe Experience Manager Cloud Service system and environment performance metrics. This white paper describes the New Relic monitoring features enabled on your AEM as a Cloud Service environments to help bolster the performance and allow you to get the most out of AEM as a Cloud Service.
+Adobe places a high emphasis on the monitoring, availability, and performance of your application. To help achieve this goal, AEM as a Cloud Service provides access to a custom New Relic monitoring suite as a part of the standard product offering to ensure your teams have the maximum visibility to your Adobe Experience Manager Cloud Service system and environment performance metrics. This section describes the New Relic monitoring features enabled on your AEM as a Cloud Service environments to help bolster the performance and allow you to get the most out of AEM as a Cloud Service.
 
-## AEM as a Cloud Service Transaction Monitoring via New Relic {#transaction-monitoring}
+## AEM as a Cloud Service Transaction Monitoring via New Relic - Value Proposition {#transaction-monitoring}
+
+Here is the summary of value proposition from New Relic Application Performance Monitoring for AEM as a Cloud Service:
 
 * Direct access into a dedicated New Relic One account (access managed by Adobe Support).
 
@@ -25,45 +25,63 @@ Adobe places a high emphasis on the monitoring, availability and performance of 
 
 Your dedicated New Relic account will be provisioned and managed by Adobe via Customer Care engagement. Adobe will remain the owner and administrator and will provision the account on your behalf to provide access to your dedicated sub-account.
 
-In order to get access to your New Relic sub-account associated with your AEM as a Cloud Service Program, please open a request by accessing the Support tab in the Admin Console. Ensure your ticket includes the details of your Program ID, as well as the list of users you request Adobe teams to open the New Relic access to. All users must be provided with full name and valid email address.  For more details on AEM Support Portal please Support for Experience Cloud. 
+In order to get access to your New Relic sub-account associated with your AEM as a Cloud Service Program:
 
-Once the access has been provided, New Relic sends a confirmation email to each user, so they can complete the setup process and sign in. If they cannot locate the original account confirmation email:
+* Please open a request by accessing the Support tab in the Admin Console. 
+* Ensure your ticket includes the details of your Program ID, as well as the list of users you request Adobe teams to open the New Relic access to. 
+* All users must be provided with full name and valid email address.  
 
-1. Go to New Relic's login page at login.newrelic.com/login.
+   >[!NOTE]
+   >Refer to [AEM Support Portal for Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) for more details. 
 
-1. Select Forgot your password.
+Once the access has been provided, New Relic sends a confirmation email to each user, so the user can complete the setup process and sign in. 
 
-1. Type the account email address, and select Send my password.
+If the user cannot locate the original account confirmation email:
+
+1. Navigate to New Relic's login page at [login.newrelic.com/login](https://login.newrelic.com/login).
+
+1. Select **Forgot your password**.
+
+   ![](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
+
+1. Type the account email address, and select **Send my reset link**.
+
+   ![](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
 1. When New Relic's system returns an email message, select the link in it to confirm your account again.
 
    >[!NOTE]
    >If you don't receive an email from New Relic:
-   >Check your spam filters. If applicable, add New Relic to your email allow list.
-   >Please feedback on the support ticket and our teams will help you further
+   >Check your [spam filters](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). If applicable, [add New Relic to your email allow list](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
+   >Please provide feedback on the support ticket and Adobe Support team will help you further.
 
-1. If you complete the signup process and are unable to log in to your account due to email or password error messages, please get us a support ticket via Admin Console.
+1. If you complete the sign up process and are unable to log in to your account due to email or password error messages, please log a support ticket via [Admin Console](https://adminconsole.adobe.com/).
+
+### Verifying your Email {#verify-email}
 
 If you are asked to verify your email during login, it means your email is associated with multiple accounts and will be given the option to verify your email during login. This will allow you to choose which account to access. If you do not verify your email address, New Relic will attempt to log you in with the most recently created user record associated with your email address. To avoid verifying your email during each login, click the Remember Me checkbox in the login screen.
 
-For more help, please open a support ticket via AEM Support Portal.
+For more help, please open a support ticket via [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Exceptions {#exceptions}
  
 AEM as a Cloud Service focuses the offering around New Relic APM solution only and does not provide support for alerting, logging or API integration capabilities. 
 
-For more help or additional guidance on New Relic offerings for your AEM as a Cloud Service Program, please open a support ticket via AEM Support Portal for assistance.
+For more help or additional guidance on New Relic offerings for your AEM as a Cloud Service Program, please open a support ticket via [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) for assistance.
 
 ## Frequently Asked Questions for New Relic Account {#faqs}
 
 ### What does Adobe monitor with New Relic? {#adobe-monitor}
 
-Adobe monitors the AEM as a Cloud Service Author, Publish and Preview (where available) services via New Relic APM Java plug-in. Adobe enables custom New Relic APM Telemetry and monitoring across non-production and production AEM as a Cloud Service environments. Your New Relic account is attached to a primary Adobe maintained account and has multiple applications reporting into it. Three each per AEM as a Cloud Service environment:
+Adobe monitors the AEM as a Cloud Service Author, Publish and Preview (where available) services via New Relic APM Java plug-in. Adobe enables custom New Relic APM Telemetry and monitoring across non-production and production AEM as a Cloud Service environments. Your New Relic account is attached to a primary Adobe maintained account and has multiple applications reporting into it. 
 
-One application for the Author service per environment
-One application for the Publish service per environment (including Golden Publish)
-One application for the Preview service per environment
-Each application uses one license key, AEM as a Cloud Service environments will report to only one New Relic account. Full monitoring metrics and events for both New Relic APM and Infrastructure are retained for 7 days.
+Three each per AEM as a Cloud Service environment:
+
+* One application for the Author service per environment
+* One application for the Publish service per environment (including Golden Publish)
+* One application for the Preview service per environment
+   >[!IMPORTANT]
+   >Each application uses one license key, AEM as a Cloud Service environments will report to only one New Relic account. Full monitoring metrics and events for both New Relic APM are retained for 7 days.
 
 ### Who can access the New Relic Cloud Service data? {#access-new-relic-cloud}
 

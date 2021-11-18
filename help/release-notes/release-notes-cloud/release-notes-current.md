@@ -30,7 +30,7 @@ Have a look at the [October 2021 Release Overview](https://video.tv.adobe.com/v/
 
 ### New feature in [!DNL Sites] {#sites-features}
 
-* Content Fragment models are now automatically set in read-only state once they are published, to avoid unintentially breaking live API queries after re-publishing an edited model. Users are prompted with a warning when attempting to edit a published model. Editing is possible upon accepting the warning. 
+* Content Fragment models are now automatically set in read-only state once they are published, to avoid unintentionally breaking live API queries after re-publishing an edited model. Users are prompted with a warning when attempting to edit a published model. Editing is possible upon accepting the warning. 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
