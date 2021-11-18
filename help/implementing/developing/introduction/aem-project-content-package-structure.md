@@ -537,7 +537,7 @@ In the `all` project's `filter.xml` (`all/src/main/content/jcr_root/META-INF/vau
 <filter root="/apps/my-app-packages"/>
 ```
 
-If multiple `/apps/*-packages` are used in the embeddeds targets, then they all must be enumerated here.
+If multiple `/apps/*-packages` are used in the embedded targets, then they all must be enumerated here.
 
 ### 3rd Party Maven Repositories {#xml-3rd-party-maven-repositories}
 
