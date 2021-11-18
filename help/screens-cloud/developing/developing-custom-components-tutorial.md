@@ -11,7 +11,6 @@ The following tutorial walks through the steps to create a custom component for 
 
 This tutorial is intended for developers who are new to AEM Screens. In this tutorial a simple "Hello World" component is built for a Sequence channel in AEM Screens. A dialog allows authors to update the text displayed.
 
-![overviewhellow](assets/overviewhellow.png)
 
 ## Prerequisites {#prerequisites}
 
@@ -280,7 +279,7 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 
     * `categories`| String[] | `cq.screens.components`
 
-   ![Properties for /apps/weretail-run/components/content/helloworld/clientlibs/shared](assets/2018-05-03_at_1026pm.png)
+   ![Properties for /apps/weretail-run/components/content/helloworld/clientlibs/shared](/help/screens-cloud/developing/assets/2018-05-03_at_1026pm.png)
 
    Properties for /apps/weretail-run/components/content/helloworld/clientlibs/shared
 
@@ -413,11 +412,11 @@ The Hello World component is intended to be used on a Sequence Channel. To test 
     * Basic Tab &gt; Title = **Idle Channel**
     * Channel Tab &gt; check **Make channel online**
 
-   ![idle-channel](assets/idle-channel.gif)
+   ![idle-channel](/help/screens-cloud/developing/assets/idle-channel.gif)
 
 1. Open the page properties for the Idle Channel. Update the Design field to point to `/apps/settings/wcm/designs/we-retail-run,`the design page created in the previous section.
 
-   ![Design config /apps/settings/wcm/designs/we-retail-run](assets/2018-05-07_at_1240pm.png)
+   ![Design config /apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1240pm.png)
 
    Design config pointing to /apps/settings/wcm/designs/we-retail-run
 
