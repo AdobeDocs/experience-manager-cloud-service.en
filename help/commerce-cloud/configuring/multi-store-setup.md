@@ -49,7 +49,7 @@ To connect an AEM site and AEM CIF Core Components so too to a dedicated store v
    * Navigate to the region or language root of your site structure e.g. /content/venia/us _or_ /content/venia/us/en for the Venia sample page
    * Select the page and open page properties
    * Select the Advanced tab
-   * In the `Configuration` section select the configuration you created at step
+   * In the `Configuration` section select the configuration you created at step 3
 
 ## Additional Resources
 
