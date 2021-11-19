@@ -173,7 +173,11 @@ Since Package Manager is a runtime concept, it is not possible to install conten
 
 >[!IMPORTANT]
 >
->Package Manager UI might return an **undefined** error message if a package takes longer than 10 minutes to install. Do not retry the installation if that happens, because it is proceeding correctly in the background and some conflicts could be introduced by multiple concurrent import processes.
+>The Package Manager UI might return an **undefined** error message if a package takes longer than 10 minutes to install.
+>
+>This is not due to an error with the installation, but to a timeout that Cloud Service has for all requests.
+>
+>Do not retry the installation if you see such an error. The installation is proceeding correctly in the background. If you do restart the installation some conflicts could be introduced by multiple concurrent import processes.
 
 Any content-packages installed via Cloud Manager (both mutable and immutable) will appear in a frozen state in AEM Package Manager's user interface. These packages cannot be reinstalled, rebuilt or even downloaded, and will listed with a **"cp2fm"** suffix, indicating their installation was managed by Cloud Manager.
 
