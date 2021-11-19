@@ -27,7 +27,7 @@ The following diagram shows the important steps and associated tasks that can be
 
 ## Preparing for the migration {#prepare-for-migration}
 
-Preparing the source system for migration involves system and AEM administrator level tasks. The first step is to verify that the content repository is in a well maintained state by checking the revision cleanup and data store garbage collection task status. In AEM versions earlier than 6.4 ( 6.3+ as CTT is compatible with 6.3 onwards), it is recommended to perform offline compaction, followed by Data Store Garbage collection. Data consistency check is recommended across all AEM versions to ensure the content repository in good state to initiate migration activities.
+Preparing the source system for migration involves system and AEM administrator level tasks. The first step is to verify that the content repository is in a well maintained state by checking the revision cleanup and data store garbage collection task status. In AEM versions earlier than 6.4 (6.3+ as CTT is compatible with 6.3 onwards), it is recommended to perform offline compaction, followed by Data Store Garbage collection. Data consistency check is recommended across all AEM versions to ensure that the content repository in a good state to initiate migration activities.
 
 System administrator level access is required to install and configure [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
 
