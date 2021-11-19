@@ -25,6 +25,14 @@ The following diagram shows the important steps and associated tasks that can be
 
 ![image](/help/journey-migration/assets/content-migration.png)
 
+## Preparing for the migration {#prepare-for-migration}
+
+Preparing the source system for migration involves system and AEM administrator level tasks. The first step is to verify that the content repository is in a well maintained state by checking the revision cleanup and data store garbage collection task status. In AEM versions earlier than 6.4 ( 6.3+ as CTT is compatible with 6.3 onwards), it is recommended to perform offline compaction, followed by Data Store Garbage collection. Data consistency check is recommended across all AEM versions to ensure the content repository in good state to initiate migration activities.
+
+System administrator level access is required to install and configure [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+
+It is also recommended to review any unused Assets,Pages, AEM Projects, Users and Groups to save time on migration.
+
 ## Gathering Data {#gathering-data}
 
 Gathering data can help you plan the migration activities and associated tasks. The extraction and ingestion times are particularly useful because the datapoints can be associated with a specific size of the migration set. As such, these datapoints can be extrapolated to come up with a plan:
@@ -113,14 +121,24 @@ Remember, the load on the AEM source will be greater during the extraction phase
 ## Known Limitations {#known-limitations}
 
 You need to take into account that the entire ingestion fails if any of the following limitations are found as part of the extracted migration set:
+
 * A JCR Node that has a name longer than 150 characters
 * A JCR Node that is bigger than 16 MB
 * Any User / Group with `rep:AuthorizableID` being ingested that is already present on AEM as a Cloud Service
 * If any asset that is extracted and ingested moves into a different path either on source or destination before the next iteration of the migration.
 
+## Asset Sanity {#asset-sanity}
+
+Even though the ingestion does not fail due to to the following issues with assets, it is highly recommended to take appropriate steps with the following scenarios:
+
+* Any asset that has the original rendition missing
+* Any Folder that has missing jcr:content node
+
+Both the above items will be identified and reported in [Best Practice Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md) report.
+
 ## Go-Live plan {#completing-the-migration}
 
-Following these steps can help you complete the migration process and ensure that you can perform a smooth and succesful migration:
+Following these steps can help you complete the migration process and ensure that you can perform a smooth and successful migration:
 
 * Schedule a code and content freeze period
 * Perform the final content top-up
