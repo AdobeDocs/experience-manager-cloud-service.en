@@ -18,10 +18,9 @@ The metadata import is asynchronous and does not impede the system performance. 
 >
 >To import metadata on custom namespaces, first register the namespaces.
 
-1. Navigate to the Assets user interface, and tap/click **[!UICONTROL Create]** from the toolbar.
-1. From the menu, select **[!UICONTROL Metadata]**.
-1. In the **[!UICONTROL Metadata Import]** page, tap/click **[!UICONTROL Select File]**. Select the CSV file with the metadata.
-1. Specify the following parameters:
+1. Navigate to [!DNL Assets] user interface, select **[!UICONTROL Create]** from the toolbar, and select **[!UICONTROL Metadata]** from the menu.
+1. In the **[!UICONTROL Metadata Import]** page, click **[!UICONTROL Select File]**. Select the CSV file with the metadata.
+1. Provide the following parameters:
 
    |       Parameter        |      Description  |
    | ---------------------- | ------- |
@@ -31,13 +30,19 @@ The metadata import is asynchronous and does not impede the system performance. 
    | Launch Workflows       | False by default. When set to `true` and default settings are in effect for the DAM Metadata WriteBack workflow (that writes metadata to the binary XMP data). Enabling the workflows slows the system down. |
    | Asset Path Column Name | Defines the column name for the CSV file with assets.  |
 
-1. Click **[!UICONTROL Import]** from the toolbar. After the metadata is imported, a notification is sent to your Notification inbox. Navigate to asset property page and verify whether the metadata values are correctly imported for assets.
+1. Select **[!UICONTROL Import]** from the toolbar. After the metadata is imported, a notification is sent to your Notification inbox. Navigate to asset property page and verify whether the metadata values are correctly imported for assets.
 
-To add date and timestamp when importing metadata, use `YYYY-MM-DDThh:mm:ss.fff-00:00` format for date and time. Date and time are separated by `T`, `hh` is hours in 24-hour format, `fff` is nanoseconds, and `-00:00` is time zone offset. For example, `2020-03-26T11:26:00.000-07:00` is March 26, 2020 at 11:26:00.000 AM PST time.
+1. To add date and timestamp to import the metadata, use `YYYY-MM-DDThh:mm:ss.fff-00:00` format for date and time. Date and time are separated by `T`, `hh` is hours in 24-hour format, `fff` is nanoseconds, and `-00:00` is time zone offset. For example, `2020-03-26T11:26:00.000-07:00` is March 26, 2020 at 11:26:00.000 AM PST.
+
+   * The date format is dependent on the column heading and the format in it. For example, if the date is complaint with format `yyyy-MM-dd'T'HH:mm:ssXXX` then the respective column header must be `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`. 
+   * The default date format is `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
+
+<!-- Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >
 >If the date format does not match `YYYY-MM-DDThh:mm:ss.fff-00:00`, the date values are not set. The date formats of exported metadata CSV file is in the format `YYYY-MM-DDThh:mm:ss-00:00`. If you want to import it, convert it to the acceptable format by adding the nanoseconds value denoted by `fff`.
+-->
 
 ## Export Metadata {#export-metadata}
 
