@@ -65,3 +65,7 @@ A few use cases for exporting metadata in bulk are:
    ![Dialog  to download the CSV file containing metadata exported in bulk](assets/csv_download.png)
 
    *Figure: Dialog  to download the CSV file containing metadata exported in bulk.*
+
+>[!MORELIKETHIS]
+>
+>* [Import metadata when importing assets in bulk](/help/assets/add-assets.md#asset-bulk-ingestor)
