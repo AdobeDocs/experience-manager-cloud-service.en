@@ -150,6 +150,7 @@ To configure the tool, follow these steps:
    * [!UICONTROL Filter by Max Size]: Provide maximum file size of assets in MB.
    * [!UICONTROL Exclude Mime Types]: Comma-separated list of MIME types to exclude from the ingestion. For example, `image/jpeg, image/.*, video/mp4`. See [all supported file formats](/help/assets/file-format-support.md).
    * [!UICONTROL Include Mime Types]: Comma-separated list of MIME types to include in the ingestion. See [all supported file formats](/help/assets/file-format-support.md).
+   * [!UICONTROL Delete source file after import]: Select this option to delete the original files from the source data store after the files are imported into [!DNL Experience Manager].
    * [!UICONTROL Import Mode]: Select Skip, Replace, or Create Version. Skip mode is the default and in this mode the ingestor skips to import an asset if it already exists. See the meaning of [replace and create version options](#handling-upload-existing-file).
    * [!UICONTROL Assets Target Folder]: Import folder in DAM where assets are to be imported. For example, `/content/dam/imported_assets`
    * [!UICONTROL Metadata File]: The metadata file to import, provided in CSV format. You provide this CSV file in the source blob location and refer the path in the configuration of bulk ingestor tool.
