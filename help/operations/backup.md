@@ -5,7 +5,6 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 ---
 # Backup and Restore in AEM as a Cloud Service
 
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
 >title="Backup & Restore"
@@ -25,7 +24,7 @@ Customers should file a support ticket, describing the issue being experienced. 
 AEM as a Cloud Service supports:
 
 * 24 hour point in time recovery, meaning that the system can be restored to any point in the last 24 hours.
-* Restore from a specific, Adobe-defined timestamp taken once a day for the last 7 days.  Any replication messages (deletes, updates, creates) will be preserved.
+* Restore from a specific, Adobe-defined timestamp taken twice a day for the last 7 days.  Any replication messages (deletes, updates, creates) will be preserved.
 
 In all cases, the custom code version will be the taken from the last successful deployment before the restore point.
 
@@ -33,4 +32,6 @@ The Recovery Time Objective (RTO) will vary based on the size of the repository,
 
 Following a restore, the AEM version will be updated to the most recent.
 
-**The data from deleted environments is permanently lost and cannot be recovered.**
+>[!CAUTION]
+>
+>Data from deleted environments is permanently lost and cannot be recovered.
