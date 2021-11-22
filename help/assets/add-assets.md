@@ -138,18 +138,24 @@ To configure the tool, follow these steps:
 
   ![Configuration of bulk importer](assets/bulk-import-config.png)
 
-1. On [!UICONTROL bulk import configuration] page, provide the required values.
+1. On **[!UICONTROL bulk import configuration]** page, provide the required values and then select **[!UICONTROL Save]**.
 
    * [!UICONTROL Title]: A descriptive title.
-   * [!UICONTROL Import Source]: Select the applicable datasource.
+   * [!UICONTROL Import Source]: Select the applicable data source.
+   * [!UICONTROL Azure Storage Account]: Provide the name of the [!DNL Azure] storage account.
+   * [!UICONTROL Azure Blob Container]: Provide the [!DNL Azure] storage container.
+   * [!UICONTROL Azure Access Key]: Provide the access key to [!DNL Azure] account.
+   * [!UICONTROL Source Folder]: This filter is typically supported by Azure and AWS cloud storage providers.
    * [!UICONTROL Filter by Min Size]: Provide minimum file size of assets in MB.
    * [!UICONTROL Filter by Max Size]: Provide maximum file size of assets in MB.
-   * [!UICONTROL Exclude Mime Types]: Comma-separated list of MIME types to exclude from the ingestion. For example, `image/jpeg, image/.*, video/mp4`.
+   * [!UICONTROL Exclude Mime Types]: Comma-separated list of MIME types to exclude from the ingestion. For example, `image/jpeg, image/.*, video/mp4`. See [all supported file formats](/help/assets/file-format-support.md).
    * [!UICONTROL Include Mime Types]: Comma-separated list of MIME types to include in the ingestion. See [all supported file formats](/help/assets/file-format-support.md).
+   * [!UICONTROL Delete source file after import]: Select this option to delete the original files from the source data store after the files are imported into [!DNL Experience Manager].
    * [!UICONTROL Import Mode]: Select Skip, Replace, or Create Version. Skip mode is the default and in this mode the ingestor skips to import an asset if it already exists. See the meaning of [replace and create version options](#handling-upload-existing-file).
    * [!UICONTROL Assets Target Folder]: Import folder in DAM where assets are to be imported. For example, `/content/dam/imported_assets`
+   * [!UICONTROL Metadata File]: The metadata file to import, provided in CSV format. You provide this CSV file in the source blob location and refer the path in the configuration of bulk ingestor tool.
 
-1. You can delete, modify, execute and do more with your created ingestor configurations. When you select a bulk import ingestor configuration, the follow option are available in the toolbar.
+1. You can delete, modify, execute and do more with your created ingestor configurations. When you select a bulk import ingestor configuration, the following options are available in the toolbar.
 
    * [!UICONTROL Edit]: Edit the selected configuration.
    * [!UICONTROL Delete]: Delete the selected configuration.
@@ -216,6 +222,9 @@ Technical details of the upload APIs and protocol, and links to open-source SDK 
 * Some upload methods do not stop you from uploading assets with [forbidden characters](#filename-handling) in the filenames. The characters are replaced with `-` symbol.
 
 * Uploading assets using the browser only supports flat file lists and not nested folder hierarchies. To upload all assets inside nested folder, consider using [desktop app](#upload-assets-desktop-clients).
+
+* Bulk import method imports the entire folder structure as it exists on the data source. However, only the non-empty folders are created in [!DNL Experience Manager].
+
 
 <!-- TBD: Link to file name handling in DA docs when it is documented. 
 -->
