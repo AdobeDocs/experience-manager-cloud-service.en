@@ -28,7 +28,7 @@ AEM as a Cloud Service supports:
 
 In all cases, the custom code version will be the taken from the last successful deployment before the restore point.
 
-The Recovery Time Objective (RTO) will vary based on the size of the repository, but as a general guideline once the restore sequence begins it should take around 30 minutes.
+The Recovery Time Objective (RTO) will vary based on the size of the repository, but as a general guideline, the recovery sequence should take anywhere from 30 minutes to several hours.
 
 Following a restore, the AEM version will be updated to the most recent.
 
