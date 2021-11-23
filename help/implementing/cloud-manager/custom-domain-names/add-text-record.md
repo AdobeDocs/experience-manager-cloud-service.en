@@ -20,8 +20,8 @@ When you initiate domain verification, Cloud Manager gives you the name and TXT 
 
 |Domain|Name|TXT Value|
 |--- |--- |---|
-|`example.com`|`_aemverification.example.com`|Copy the entire value displayed in Cloud Manager UI. This is specific to the domain and the environment. `Ex:adobe-aem-verification=example.com/[program]/[env]/..`|
-|`test.example.com`<br>`www.example.com`|`_aemverification.www.example.com`|Copy the entire value displayed in Cloud Manager UI. This is specific to the domain and the environment. `Ex:adobe-aem-verification=www.example.com/[program]/[env]/..`|
+|`example.com`|`_aemverification.example.com` |Copy the entire value displayed in Cloud Manager UI. This is specific to the domain and the environment. `Ex:adobe-aem-verification=example.com/[program]/[env]/..`|
+|`www.example.com`|`_aemverification.www.example.com` |Copy the entire value displayed in Cloud Manager UI. This is specific to the domain and the environment. `Ex:adobe-aem-verification=www.example.com/[program]/[env]/..`|
 
 When you are done you can verify the result by running: `dig _aemverification.[yourdomainname] -t txt`.
 The expected result should display the TXT value provided in Cloud Manager UI.
