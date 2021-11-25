@@ -100,6 +100,10 @@ If you do not need the download functionality, then disable the servlet to preve
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
+## Tips and limitations {#tips-limitations}
+
+* If you download an empty folder, [!DNL Experience Manager] conveys a success message about creating a ZIP archive, but the archive is not created.
+
 >[!MORELIKETHIS]
 >
 >* [Download DRM protected assets](drm.md)
