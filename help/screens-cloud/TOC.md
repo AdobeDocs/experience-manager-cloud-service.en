@@ -36,4 +36,8 @@ user-guide-description: Understand the AEM Screens as a Cloud Service.
   + [Assigning Player to a Display](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
 + Using Code Product Features {#core-product-features}
   + [Thumbnail Support for Videos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
++ Developing in Screens as a Cloud Service {#developing-screens-cloud}
+  + [REST APIs](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
+  + [Creating Components](/help/screens-cloud/developing/creating-components.md)
+  + [Developing a Custom Component for Screens as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
 + [Screens as a Cloud Service FAQs](/help/screens-cloud/screens-cloud-faqs.md)
