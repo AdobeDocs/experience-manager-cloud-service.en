@@ -1,6 +1,6 @@
 ---
 title: Manage digital assets
-description: Learn about various asset management and editing methods.
+description: Learn about various asset management and editing methods
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
@@ -9,7 +9,7 @@ exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 ---
 # Manage assets {#manage-assets}
 
-This article describes how to manage and edit assets in Adobe Experience Manager Assets. To manage Content Fragments, see [Content Fragments](content-fragments/content-fragments.md) assets.
+This article describes how to manage and edit assets in [!DNL Adobe Experience Manager Assets]. To manage [!DNL Content Fragments], see [[!DNL Content Fragments]](content-fragments/content-fragments.md) assets.
 
 ## Create folders {#creating-folders}
 
@@ -324,6 +324,8 @@ Quick action icons are available for a single asset at a time. Depending upon yo
 * Touch devices: Touch and hold. For example, on an iPad, you can tap-and-hold an asset so that the quick actions display.
 * Non-touch devices: Hover pointer. For example, On a desktop device, the quick action bar is displayed if you hover the pointer over the asset thumbnail.
 
+<!-- Hiding this topic via cqdoc-18707
+
 ## Edit images {#editing-images}
 
 The editing tools in the [!DNL Experience Manager Assets] interface let you perform small editing jobs on image assets. You can crop, rotate, flip, and perform other editing jobs on images. You can also add image maps to assets.
@@ -373,11 +375,10 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >
 >Image editing is supported for BMP, GIF, PNG, and JPEG files formats.
 
-<!-- You can also add image maps using the image editor. For details, see [Adding Image Maps](/help/assets/image-maps.md). -->
-
 >[!NOTE]
 >
 >To edit a TXT file, set **Day CQ Link Externalizer** from Configuration Manager.
+-->
 
 ## Timeline {#timeline}
 
@@ -394,7 +395,7 @@ The timeline lets you view various events for a selected item, such as active wo
 >
 >Timeline contains several [options specific to content fragments](content-fragments/content-fragments.md).
 
-## Annotating {#annotating}
+## Annotate assets {#annotating}
 
 Annotations are comments or explanatory notes added to images or videos. Annotations provide marketers the ability to collaborate and leave feedback about assets.
 

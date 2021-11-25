@@ -18,7 +18,7 @@ Please review all the considerations listed below:
 
 |Considerations|What is Currently Supported|
 |--- |--- |
-|AEM Version|Content Transfer Tool can be run on AEM 6.3 or higher versions only. To be able to use Content Transfer Tool with AEM 6.2 or older versions, an in-place upgrade of the content repository to AEM 6.5 is required. It is not required to upgrade the code to AEM 6.5 for this.|
+|AEM Version|Content Transfer Tool can be run on AEM 6.3 or higher versions only.|
 |Size of Segment Store|An existing repository that has less than 55 million JCR nodes and up to 83 GB (online compacted size) on *Author* and 31 GB on *Publish* are currently supported. Create a support ticket with Adobe Customer Care to discuss options for segment store size above these limits.|
 |Total Size of Content Repository <br>*(segment store + data store)*|Content Transfer Tool is designed to transfer content up to 10 TB for File Data Store type of data store. Anything higher than 10 TB is not currently supported. Create a support ticket with Adobe Customer Care to discuss options for content larger than 10 TB. <br>For Amazon S3 and Azure Data Store types of data store, an optional [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) step can be used to significantly speed up the content transfer process and supports greater than 10TB size of data store.|
 |Total Index Size|Total index size of 25GB maximum is currently supported. Create a support ticket with Adobe Customer Care to discuss options for index size above this limit.|
