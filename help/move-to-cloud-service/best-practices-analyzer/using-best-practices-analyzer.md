@@ -107,6 +107,7 @@ To filter out findings related to [ACS Commons](https://adobe-consulting-service
    > The ACS Commons findings should not be ignored. Refer to [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) to determine compatibility with AEM as a Cloud Service. 
    
 
+<!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
  
 The Best Practices Analyzer tool is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
@@ -115,6 +116,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 
 >[!NOTE]
 >In all versions, the included Pattern Detector may run independently.
+-->
 
 ## Interpreting the Best Practices Analyzer Report {#cra-report}
 
