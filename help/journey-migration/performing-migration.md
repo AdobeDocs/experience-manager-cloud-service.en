@@ -27,11 +27,13 @@ The following diagram shows the important steps and associated tasks that can be
 
 ## Preparing for the migration {#prepare-for-migration}
 
-Preparing the source system for migration involves system and AEM administrator level tasks. The first step is to verify that the content repository is in a well maintained state by checking the revision cleanup and data store garbage collection task status. In AEM versions earlier than 6.4 (6.3+ as CTT is compatible with 6.3 onwards), it is recommended to perform offline compaction, followed by Data Store Garbage collection. Data consistency check is recommended across all AEM versions to ensure that the content repository in a good state to initiate migration activities.
+Preparing the source system for migration involves system and AEM administrator level tasks. You can start by verifying that the content repository is in a well maintained state by checking the [revision cleanup](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) and the [data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)task status. If you are running AEM version 6.3 (as the Content Transfer Tool is compatible from version 6.3 onwards), it is recommended to perform offline compaction, followed by Data Store Garbage collection.
+
+[Data consistency check](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html) is recommended across all AEM versions to ensure that the content repository in a good state to initiate migration activities.
 
 System administrator level access is required to install and configure [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
 
-It is also recommended to review any unused Assets,Pages, AEM Projects, Users and Groups to save time on migration.
+It is also recommended you review any unused Assets,Pages,AEM Projects, Users and Groups to save time on migration.
 
 ## Gathering Data {#gathering-data}
 
@@ -129,12 +131,12 @@ You need to take into account that the entire ingestion fails if any of the foll
 
 ## Asset Sanity {#asset-sanity}
 
-Even though the ingestion does not fail due to to the following issues with assets, it is highly recommended to take appropriate steps with the following scenarios:
+Compared to the section above the ingestion **does not** fail due to the following asset concerns. However, it is highly recommended you take the appropriate steps in these scenarios:
 
 * Any asset that has the original rendition missing
-* Any Folder that has missing jcr:content node
+* Any Folder that has a missing jcr:content node
 
-Both the above items will be identified and reported in [Best Practice Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md) report.
+Both of the above items will be identified and reported in [Best Practice Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md) report.
 
 ## Go-Live plan {#completing-the-migration}
 
