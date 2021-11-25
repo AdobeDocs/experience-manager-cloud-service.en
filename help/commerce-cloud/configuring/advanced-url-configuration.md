@@ -68,6 +68,14 @@ With the above example data, a category page URL formatted using the default URL
 > 
 > The `url_path` is a concatenation of the `url_keys` of a product or category's ancestors and the product or category's `url_key` separated by `/` slash.
 
+### Specific Category-/Product-Pages {#specific-pages}
+
+It is possible to create [multile category and product pages](../authoring/multi-template-usage) to target only a specific subset of categories or products of a catalog. 
+
+The `UrlProvider` is pre-configured to generate deep links to such pages on author tier instances but not on publishers. This is useful for editors, that browse a site using Preview mode, navigate to a specific product or category page and switch back to Edit mode to edit it. On publish tier instances on the other hand, catalog page urls must be kept stable to not lose gains on search engine rankings for example. 
+
+To change this behaviour and use deep links on published paged as well, the _CIF URL Provider Specific Page Strategy_ can be configured to generate specific page urls.
+
 ## Custom URL Formats {#custom-url-format}
 
 To provide a custom URL format a project can implement the [`UrlFormat` interface](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) and register the implementation as OSGI service, using it either as category page or product page url format. The `UrlFormat#PROP_USE_AS` service property indicates, which of the configured pre-defined formats to replace:
