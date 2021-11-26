@@ -21,9 +21,64 @@ This document will help you understand how to perform the migration to AEM as a 
 
 ## Content migration strategy and timeline {#strategy-timeline}
 
-The following diagram shows the important steps and associated tasks that can be used to formulate a content migration strategy and timeline.
+The following section shows the important steps and associated tasks that can be used to formulate a content migration strategy and timeline.
 
-![image](/help/journey-migration/assets/content-migration.png)
+![image](/help/journey-migration/assets/content-migration2.png)
+
+### Fitment {#fitment-migration}
+
+* Perform revision cleanup, data store garbage collection and data consistency checks. See also [Preparing for migration](#prepare-for-migration)
+* [Gather statistics](#gathering-data) about the AEM source repository:
+    * Segment store size
+    * Index store size
+    * Number of pages
+    * Number of assets
+    * Number of users and groups
+* Know whether or not the following feature are enabled on the AEM source (also required in AEM as a Cloud Service):
+    * Smart tagging
+    * Similarity search
+    * Search for containing text in word and pdf documents
+* Collect the BPA report (add link)
+* Import into CAM (add link)
+    * Review the self-analysis recommendation to make sure that AEM as a Cloud Service can handle the storage requirements.
+* Create an Adobe Support ticket for any clarifications before continuing with the migration plan.
+
+### Proof of migration {#proof-migration}
+
+* Request a production clone that:
+   * Is in the same network zone
+   * Will provide production content like users, groups and so on
+   * Clones author and publish - one node each in case case of a cluster or publish farm
+* Choose a subset of the content that will be migrated so that:
+   * It is a mix of all the available content types
+   * Contains all users and groups in case [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md) is required
+* Includes either 25% of the content or up to 1 TB of content, whichever is less.
+* Execute at least one full and [top-up]((/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)) migration, from the production clone into the AEM as a Cloud Service non-production environment
+* Resolve any potential issues like:
+  * Disc space on the AEM source
+  * Connectivity between the AEM source and AEM as a Cloud Service
+  * Any [ingestion related limitations](#known-limitations)
+Record the time taken for [extraction and ingestion](#gathering-data):
+* Know how much content is added per week
+* Extrapolate the times measured from the proof of migration to create a [migration plan](#migration-plan)
+
+### Initial Migration {#initial-migration}
+
+* Initiate the migration from production based on the experience you gained during the clone to AEM as a Cloud Service stage migration:
+  * Author-Author
+  * Publish-Publish
+* Note: Aem as a Cloud Service author will be shown during ingestion but Aem as a Cloud Service publish will be up during ingestion
+* Validate the content ingested into both the AEM as a Cloud Service author and publish tiers
+* Instruct the content authoring team to avoid moving content on both source and destination until the ingestion is complete
+* New content ca be added, edited or deleted but avoid moving it. This applies both to source of destination.
+* Record the [time taken](#gathering-data) for full extraction and ingestion to have an estimate for future top up migration timelines
+* Create a [migration planner](#migration-plan) for both author and publish
+
+### Incremental Top Ups {#top-up}
+
+* Gather data on the amount of content. For example: per one week, two weeks or a month.
+* Make sure to plan top ups in such a way that you avoid more than 48 hours of content extraction and ingestion (so that it will fit into a weekend timeframe).
+* Plan the number of top ups required and estimate/backtrack in relation to the go-live date.
 
 ## Preparing for the migration {#prepare-for-migration}
 
