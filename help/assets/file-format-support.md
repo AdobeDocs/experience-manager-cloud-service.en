@@ -196,8 +196,8 @@ The document formats supported for asset management features are as follows.
 
 ## Video formats in [!DNL Dynamic Media] for transcoding {#video-dynamic-media-transcoding}
 
-| Video file extension | Container          | Recommended video codecs    | Unsupported video codecs   |
-| -------------------- | ------------------ | --------------------------- | -------------------------- |
+| Video file extension | Container | Recommended video codecs | Unsupported video codecs |
+| --- | --- | --- | --- |
 | AVI                  | A/V Interleave     | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
 | FLV, F4V             | Adobe Flash        | H264/AVC, Flix VP6, H263, Sorenson | SWF (vector animation files) |
 | M4V                  | Apple iTunes       | H264/AVC                    | &minus; |
