@@ -181,3 +181,21 @@ The Release Date for Best Practices Analyzer v2.1.20 is October 05, 2021.
 * Ability to detect and report on the total Index size.
 
 * Ability to detect and report on assets that are missing their original rendition.
+
+
+## Best Practices Analyzer {#bpa-release}
+
+### Release Date {#release-date-bpa}
+
+The Release Date for Best Practices Analyzer v2.1.22 is December 01, 2021.
+
+### What's New {#what-is-new-bpa}
+
+* Ability to detect and report on the version of ACS commons used.
+* Ability to detect and report on the number of users and sub-groups in a group.
+* Ability to detect and report on node property values in MongoDB that exceed 16MB.
+
+### Bug Fixes {#bug-fixes-bpa}
+
+* Detection of Foundation components was refined to reduce false negatives.
+* For AEM Forms customers, BPA messaging regarding `EMAIL_PDF_SUBMIT_ACTION` not being available on AEM as a Cloud Service has been fixed. 
