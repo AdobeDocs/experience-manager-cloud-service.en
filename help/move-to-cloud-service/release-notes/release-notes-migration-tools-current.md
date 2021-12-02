@@ -16,5 +16,15 @@ This page outlines the Release Notes for Migration Tools in AEM as a Cloud Servi
 
 ### Release Date {#release-date-bpa}
 
+The Release Date for Best Practices Analyzer v2.1.22 is December 01, 2021.
 
 ### What's New {#what-is-new-bpa}
+
+* Ability to detect and report on the version of ACS commons used.
+* Ability to detect and report on the number of users and sub-groups in a group.
+* Ability to detect and report on node property values in MongoDB that exceed 16MB.
+
+### Bug Fixes {#bug-fixes-bpa}
+
+* Detection of Foundation components was refined to reduce false negatives.
+* For AEM Forms customers, BPA messaging regarding `EMAIL_PDF_SUBMIT_ACTION` not being available on AEM as a Cloud Service has been fixed. 
