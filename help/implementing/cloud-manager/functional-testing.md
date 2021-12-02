@@ -14,9 +14,9 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 Functional testing is categorized into three types:
 
 
-* Product Functional Testing
-* Custom Functional Testing
-* Custom UI Testing
+* [Product Functional Testing](#product-functional-testing)
+* [Custom Functional Testing](#custom-functional-testing)
+* [Custom UI Testing](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 ## Product Functional Testing {#product-functional-testing}
 
