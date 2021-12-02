@@ -41,7 +41,7 @@ In order to have their UI tests built and executed, customers need to "opt-in" b
 
 If this is not in the built `tar.gz` file, the UI tests build and executions will be skipped
 
-To add `testing.properties` file in the built artifact, add an `include` statement in `assembly-ui-test-docker-context.xml` file (in the UI tests submodule):
+To add `testing.properties` file in the built artifact, add an `include` statement in `assembly-ui-test-docker-context.xml` file (in the UI tests submodule). If your project does not include the line, you will need to edit this file to opt-in to UI testing. If the file may has a line advising not to edit, please disregard that advice.
 
         ```
         [...]
