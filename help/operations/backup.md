@@ -17,7 +17,7 @@ If a customer's deployment, meaning the deployed application code is either brok
 >
 >This feature should be used only when there are serious issues with either code or content. The recent data between the time of the restored backup and the present will be lost. Staging will also be restored to the old version.
 
-## How to Use {#how to use}
+## How to Use {#how-to-use}
 
 Customers should file a support ticket, describing the issue being experienced. This will lead to an investigation by Adobe support who will determine if a restore is necessary.
 
