@@ -17,5 +17,6 @@ role: Admin, User, Developer
   + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
   + [Introduction to Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
   + [AEM as a Cloud Service Team & Product Profiles](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
+  + [AEM Reference Demos Add-On](/help/onboarding/learn-concepts/demos-add-on.md)
   + [Adobe Support](/help/onboarding/learn-concepts/onboarding-help-resources.md)  
 + [Onboarding Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html)
