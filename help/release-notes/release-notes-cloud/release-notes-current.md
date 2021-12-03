@@ -20,7 +20,7 @@ The following section outlines the general Release Notes for the current (latest
 ## Release Date {#release-date}
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2021.10.0) is November 4, 2021.
-The following release (2021.11.0) is on December 2, 2021.
+The following release (2021.11.0) is on December 16, 2021.
 
 ## Release Video {#release-video}
 
@@ -30,7 +30,7 @@ Have a look at the [October 2021 Release Overview](https://video.tv.adobe.com/v/
 
 ### New feature in [!DNL Sites] {#sites-features}
 
-* Content Fragment models are now automatically set in read-only state once they are published, to avoid unintentially breaking live API queries after re-publishing an edited model. Users are prompted with a warning when attempting to edit a published model. Editing is possible upon accepting the warning. 
+* Content Fragment models are now automatically set in read-only state once they are published, to avoid unintentionally breaking live API queries after re-publishing an edited model. Users are prompted with a warning when attempting to edit a published model. Editing is possible upon accepting the warning. 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -181,3 +181,21 @@ The Release Date for Best Practices Analyzer v2.1.20 is October 05, 2021.
 * Ability to detect and report on the total Index size.
 
 * Ability to detect and report on assets that are missing their original rendition.
+
+
+## Best Practices Analyzer {#bpa-release}
+
+### Release Date {#release-date-bpa}
+
+The Release Date for Best Practices Analyzer v2.1.22 is December 01, 2021.
+
+### What's New {#what-is-new-bpa}
+
+* Ability to detect and report on the version of ACS commons used.
+* Ability to detect and report on the number of users and sub-groups in a group.
+* Ability to detect and report on node property values in MongoDB that exceed 16MB.
+
+### Bug Fixes {#bug-fixes-bpa}
+
+* Detection of Foundation components was refined to reduce false negatives.
+* For AEM Forms customers, BPA messaging regarding `EMAIL_PDF_SUBMIT_ACTION` not being available on AEM as a Cloud Service has been fixed. 
