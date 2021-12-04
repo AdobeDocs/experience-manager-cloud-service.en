@@ -389,7 +389,7 @@ To update any of these parameters, see [Editing MIME types for supported formats
 
 See also [Adding MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats).
 
-#### Update the predefined Granite Workflow Queue (video assets) worker threads] {#update-granite-workflow-queue-worker-threads-video}
+#### Update the predefined Granite Workflow Queue (video assets) worker threads {#update-granite-workflow-queue-worker-threads-video}
 
 The Granite Workflow queue is used for non-transient workflows. In Dynamic Media, it used to process video with the **[!UICONTROL Dynamic Media Encode Video]** workflow.
 
