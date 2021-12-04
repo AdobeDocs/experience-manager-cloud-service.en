@@ -177,7 +177,7 @@ The changed password is saved when you select **[!UICONTROL Save]** in the upper
 
 To further customize the configuration and setup of Dynamic Media, or optimize its performance, you can complete one or more of the following *optional* tasks:
 
-* [Setup and configuration of Dynamic Media settings](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
+* [(Optional) Setup and configuration of Dynamic Media settings](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [(Optional) Tune the performance of Dynamic Media](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 <!--
@@ -190,16 +190,22 @@ To further customize the configuration and setup of Dynamic Media, or optimize i
 
 Use the Dynamic Media Classic user interface to change your Dynamic Media settings.
 
-Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
+<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. -->
 
 Setup and configuration tasks include the following:
 
-* [Publish setup for Image Server](#publishing-setup-for-image-server)
-* [Configure application general settings](#configuring-application-general-settings)
+* [Configure Dynamic Media Publish Setup for Image Server](#publishing-setup-for-image-server)
+* [Configure Dynamic Media General Settings](#configuring-application-general-settings)
 * [Configure color management](#configuring-color-management)
 * [Edit MIME types for supported formats](#editing-mime-types-for-supported-formats)
 * [Add MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats)
 <!-- * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
+
+<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server}
+
+The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
+
+See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dynamic-media/dm-publish-settings.md). -->
 
 #### Publish setup for Image Server {#publishing-setup-for-image-server}
 
@@ -217,6 +223,12 @@ The Image Server screen establishes default settings for delivering images. See 
 **[!UICONTROL Compatibility Attributes]** - This setting enables leading and trailing paragraphs in text layers to be treated as they were in version 3.6 for backwards compatibility.
 **[!UICONTROL Localization Support]** - These settings let you manage multiple locale attributes. It also lets you specify a locale map string so you can define which languages you want to support for the various tooltips in Viewers. For more information about setting up **[!UICONTROL Localization Support]**, see [Considerations when setting up localization of assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
 
+<!-- #### Configure Dynamic Media General Settings {#configuring-application-general-settings}
+
+Configure the Dynamic Media **[!UICONTROL Publish Server Name]** URL and the **[!UICONTROL Origin Server Name]** URL. You can also specify **[!UICONTROL Upload to Application]** settings and **[!UICONTROL Default Upload Options]** all based on your particular use case.
+
+See [Configure Dynamic Media General Settings](/help/assets/dynamic-media/dm-general-settings.md). -->
+
 #### Configure application general settings {#configuring-application-general-settings}
 
 To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, go to **[!UICONTROL Setup > Application Setup > General Settings]**.
@@ -230,7 +242,9 @@ To open the Application General Settings page, in Dynamic Media Classic Global N
 
 #### Configure color management {#configuring-color-management}
 
-Dynamic Media color management lets you color correct assets. With color correction, ingested assets retain their color space (RGB, CMYK, Gray) and embedded color profile. When you request a dynamic rendition, the image color is corrected into the target color space using CMYK, RGB, or Gray output. See [Configure Image Presets](/help/assets/dynamic-media/managing-image-presets.md).
+Dynamic Media color management lets you color correct assets. With color correction, ingested assets retain their color space (RGB, CMYK, Gray) and embedded color profile. When you request a dynamic rendition, the image color is corrected into the target color space using CMYK, RGB, or Gray output.
+
+See [Configure Image Presets](/help/assets/dynamic-media/managing-image-presets.md).
 
 To configure the default color properties for enabling color correction when requesting images:
 
@@ -344,18 +358,16 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
 1. Near the upper-left corner of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 
-
-
 ### (Optional) Tune the performance of Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 To keep Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> running smoothly, Adobe recommends the following synchronization performance/scalability fine-tuning tips:
 
-* Updating the predefined Job parameters for processing of different file formats.
-* Updating the predefined Granite workflow (video assets) queue worker threads.
-* Updating the predefined Granite transient workflow (images and non-video assets) queue worker threads.
-* Updating the maximum upload connections to the Dynamic Media Classic server.
+* [Update the predefined Job parameters for processing of different file formats](#update-job-para).
+* [Update the predefined Granite Workflow Queue (video assets) worker threads](#update-granite-workflow-queue-worker-threads-video)
+* [Update the predefined Granite Transient Workflow Queue (images and non-video assets) worker threads](#update-granite-transient-workflow-queue-worker-threads-images).
+* [Update the maximum upload connections to the Dynamic Media Classic (Scene7) server](#update-max-s7-upload-connections).
 
-#### Update the predefined Job parameters for processing of different file formats
+#### Update the predefined Job parameters for processing of different file formats {#update-job-para}
 
 You can tune job parameters for faster processing when you upload files. For example, if you upload PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter appears as follows: `process=None&createTemplate=false`.
 
@@ -377,11 +389,33 @@ To update any of these parameters, see [Editing MIME types for supported formats
 
 See also [Adding MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats).
 
-#### Update the Granite Transient Workflow queue {#updating-the-granite-transient-workflow-queue}
+#### Update the predefined Granite Workflow Queue (video assets) worker threads] {#update-granite-workflow-queue-worker-threads-video}
 
-The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asset]** workflow. In Dynamic Media, it is used for image ingestion and processing.
+The Granite Workflow queue is used for non-transient workflows. In Dynamic Media, it used to process video with the **[!UICONTROL Dynamic Media Encode Video]** workflow.
 
-**To update the Granite Transient Workflow queue:**
+**To update the predefined Granite Workflow Queue (video assets) worker threads:**
+
+1. Navigate to `https://<server>/system/console/configMgr` and search for **Queue: Granite Workflow Queue**.
+
+   >[!NOTE]
+   >
+   >A text search is necessary instead of a direct URL because the OSGi PID is dynamically generated.
+
+1. In the **[!UICONTROL Maximum Parallel Jobs]** field, change the number to the desired value.
+
+   By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns two worker threads. (A value between 0.0 and 1.0 is ratio-based, or any numbers greater than one assigns the number of worker threads.)
+
+   For most use cases, the 0.5 default setting is sufficient.
+
+   ![chlimage_1-1](assets/chlimage_1-1.jpeg)
+
+1. Select **[!UICONTROL Save]**.
+
+#### Update the predefined Granite Transient Workflow Queue worker threads {#update-granite-transient-workflow-queue-worker-threads-images}
+
+The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asset]** workflow. In Dynamic Media, it is used for image and non-video asset ingestion and processing.
+
+**To update the predefined Granite Transient Workflow queue worker threads:**
 
 1. Navigate to the **Adobe Experience Manager Web Console Configuration** at `http://<host>:<port>/system/console/configMgr`
 1. Search for **Queue: Granite Transient Workflow Queue**.
@@ -402,33 +436,11 @@ The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asse
 
 1. Select **[!UICONTROL Save]**.
 
-#### Update the Granite Workflow queue {#updating-the-granite-workflow-queue}
+#### Update the maximum upload connections to the Dynamic Media Classic (Scene7) server {#update-max-s7-upload-connections}
 
-The Granite Workflow queue is used for non-transient workflows. In Dynamic Media, it used to process video with the **[!UICONTROL Dynamic Media Encode Video]** workflow.
+The Dynamic Media Classic (Scene7)) Upload Connection setting synchronizes Experience Manager assets to Dynamic Media Classic servers.
 
-**To update the Granite Workflow queue:**
-
-1. Navigate to `https://<server>/system/console/configMgr` and search for **Queue: Granite Workflow Queue**.
-
-   >[!NOTE]
-   >
-   >A text search is necessary instead of a direct URL because the OSGi PID is dynamically generated.
-
-1. In the **[!UICONTROL Maximum Parallel Jobs]** field, change the number to the desired value.
-
-   By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns two worker threads. (A value between 0.0 and 1.0 is ratio-based, or any numbers greater than one assigns the number of worker threads.)
-
-   For most use cases, the 0.5 default setting is sufficient.
-
-   ![chlimage_1-1](assets/chlimage_1-1.jpeg)
-
-1. Select **[!UICONTROL Save]**.
-
-#### Update the Scene7 upload connection {#updating-the-scene-upload-connection}
-
-The Scene7 Upload Connection setting synchronizes Experience Manager assets to Dynamic Media Classic servers.
-
-**To update the Scene7 upload connection:**
+**To update the maximum upload connections to the Dynamic Media Classic (Scene7) server:**
 
 1. Navigate to `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. In the **[!UICONTROL Number of connections]** field, or the **[!UICONTROL Active job timeout]** field, or both, change the number as desired.
