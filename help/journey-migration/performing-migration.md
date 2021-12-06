@@ -21,9 +21,74 @@ This document will help you understand how to perform the migration to AEM as a 
 
 ## Content migration strategy and timeline {#strategy-timeline}
 
-The following diagram shows the important steps and associated tasks that can be used to formulate a content migration strategy and timeline.
+The following section shows the important steps and associated tasks that can be used to formulate a content migration strategy and timeline.
 
-![image](/help/journey-migration/assets/content-migration.png)
+![image](/help/journey-migration/assets/content-migration2.png)
+
+### Fitment {#fitment-migration}
+
+* Perform revision cleanup, data store garbage collection and data consistency checks. See also [Preparing for migration](#prepare-for-migration)
+* [Gather statistics](#gathering-data) about the AEM source repository:
+    * Segment store size
+    * Index store size
+    * Number of pages
+    * Number of assets
+    * Number of users and groups
+* Know whether or not the following feature are enabled on the AEM source (also required in AEM as a Cloud Service):
+    * Smart tagging
+    * Similarity search
+    * Search for containing text in word and pdf documents
+* Collect the BPA report (add link)
+* Import into CAM (add link)
+    * Review the self-analysis recommendation to make sure that AEM as a Cloud Service can handle the storage requirements.
+* Create an Adobe Support ticket for any clarifications before continuing with the migration plan.
+
+### Proof of migration {#proof-migration}
+
+* Request a production clone that:
+   * Is in the same network zone
+   * Will provide production content like users, groups and so on
+   * Clones author and publish - one node each in case case of a cluster or publish farm
+* Choose a subset of the content that will be migrated so that:
+   * It is a mix of all the available content types
+   * Contains all users and groups in case [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md) is required
+* Includes either 25% of the content or up to 1 TB of content, whichever is less.
+* Execute at least one full and [top-up](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) migration, from the production clone into the AEM as a Cloud Service non-production environment
+* Resolve any potential issues like:
+  * Disc space on the AEM source
+  * Connectivity between the AEM source and AEM as a Cloud Service
+  * Any [ingestion related limitations](#known-limitations)
+Record the time taken for [extraction and ingestion](#gathering-data):
+* Know how much content is added per week
+* Extrapolate the times measured from the proof of migration to create a [migration plan](#migration-plan)
+
+### Initial Migration {#initial-migration}
+
+* Initiate the migration from production based on the experience you gained during the clone to AEM as a Cloud Service stage migration:
+  * Author-Author
+  * Publish-Publish
+* Note: Aem as a Cloud Service author will be shown during ingestion but Aem as a Cloud Service publish will be up during ingestion
+* Validate the content ingested into both the AEM as a Cloud Service author and publish tiers
+* Instruct the content authoring team to avoid moving content on both source and destination until the ingestion is complete
+* New content ca be added, edited or deleted but avoid moving it. This applies both to source of destination.
+* Record the [time taken](#gathering-data) for full extraction and ingestion to have an estimate for future top up migration timelines
+* Create a [migration planner](#migration-plan) for both author and publish
+
+### Incremental Top Ups {#top-up}
+
+* Gather data on the amount of content. For example: per one week, two weeks or a month.
+* Make sure to plan top ups in such a way that you avoid more than 48 hours of content extraction and ingestion (so that it will fit into a weekend timeframe).
+* Plan the number of top ups required and estimate/backtrack in relation to the go-live date.
+
+## Preparing for the migration {#prepare-for-migration}
+
+Preparing the source system for migration involves system and AEM administrator level tasks. You can start by verifying that the content repository is in a well maintained state by checking the [revision cleanup](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) and the [data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)task status. If you are running AEM version 6.3 (as the Content Transfer Tool is compatible from version 6.3 onwards), it is recommended to perform offline compaction, followed by Data Store Garbage collection.
+
+[Data consistency check](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html) is recommended across all AEM versions to ensure that the content repository in a good state to initiate migration activities.
+
+System administrator level access is required to install and configure [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+
+It is also recommended you review any unused Assets,Pages,AEM Projects, Users and Groups to save time on migration.
 
 ## Gathering Data {#gathering-data}
 
@@ -113,14 +178,24 @@ Remember, the load on the AEM source will be greater during the extraction phase
 ## Known Limitations {#known-limitations}
 
 You need to take into account that the entire ingestion fails if any of the following limitations are found as part of the extracted migration set:
+
 * A JCR Node that has a name longer than 150 characters
 * A JCR Node that is bigger than 16 MB
 * Any User / Group with `rep:AuthorizableID` being ingested that is already present on AEM as a Cloud Service
 * If any asset that is extracted and ingested moves into a different path either on source or destination before the next iteration of the migration.
 
+## Asset Sanity {#asset-sanity}
+
+Compared to the section above the ingestion **does not** fail due to the following asset concerns. However, it is highly recommended you take the appropriate steps in these scenarios:
+
+* Any asset that has the original rendition missing
+* Any Folder that has a missing jcr:content node
+
+Both of the above items will be identified and reported in [Best Practice Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md) report.
+
 ## Go-Live plan {#completing-the-migration}
 
-Following these steps can help you complete the migration process and ensure that you can perform a smooth and succesful migration:
+Following these steps can help you complete the migration process and ensure that you can perform a smooth and successful migration:
 
 * Schedule a code and content freeze period
 * Perform the final content top-up
