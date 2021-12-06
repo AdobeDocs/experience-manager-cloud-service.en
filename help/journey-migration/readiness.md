@@ -208,7 +208,7 @@ See [Developing KPIs](https://guided.adobe.com/welcome/aem/part6.html) to learn 
 
 ## What's Next {#what-is-next}
 
-Once you understand the scope of the changes required to move to AEM as a Cloud Service, it's time to [Make your code and content cloud ready](/help/journey-migration/making-your-code-and-content-cloud-ready.md) before actually performing the migration.
+Once you understand the scope of the changes required to move to AEM as a Cloud Service, it's time to [Make your code and content cloud ready](/help/journey-migration/implementation.md) before actually performing the migration.
 
 ## Additional Resources {#additional-resources}
 
