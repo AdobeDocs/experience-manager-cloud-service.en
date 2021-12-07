@@ -81,6 +81,8 @@ solution: Experience Manager, Experience Manager as a Cloud Service, Experience 
   + [Set up Dynamic Media](dynamic-media/administering-dynamic-media.md)
   + [Work with Dynamic Media](dynamic-media/dynamic-media.md)
   + [Configure Dynamic Media](dynamic-media/config-dm.md)
+  + [Optional - Configure Dynamic Media, General Settings](dynamic-media/dm-general-settings.md)
+  + [Optional - Configure Dynamic Media, Publish Setup](dynamic-media/dm-publish-settings.md)
   + [Troubleshoot Dynamic Media](dynamic-media/troubleshoot-dm.md)
   + [Accessibility in Dynamic Media](dynamic-media/accessibility-dm.md)
   + [Managing Dynamic Media assets](dynamic-media/managing-assets.md)
