@@ -1,9 +1,9 @@
 ---
-title: Performing the Migration
+title: Go-Live
 description: Learn how to perform the migration once the code and the content are cloud ready
 ---
 
-# Performing the Migration {#performing-migration}
+# Go-Live {#performing-migration}
 
 In this part of the journey, you will learn how to plan and perform the migration once the code and the content are ready to be moved over to AEM as a Cloud Service. Additionally, you will also learn what are the best practices and known limitations when performing the migration.
 
@@ -92,7 +92,7 @@ It is also recommended you review any unused Assets,Pages,AEM Projects, Users an
 
 ## Gathering Data {#gathering-data}
 
-Gathering data can help you plan the migration activities and associated tasks. The extraction and ingestion times are particularly useful because the datapoints can be associated with a specific size of the migration set. As such, these datapoints can be extrapolated to come up with a plan:
+Gathering data can help you plan the migration activities and associated tasks. The extraction and ingestion times are particularly useful because the data points can be associated with a specific size of the migration set. As such, these data points can be extrapolated to come up with a plan:
 
 * Total amount of time taken for [extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
 * Total amount of time taken for [ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
@@ -101,11 +101,11 @@ Gathering data can help you plan the migration activities and associated tasks. 
 
 One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md) (if this is coupled with the content migration). You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
 
-These datapoints can also help you [Establish KPI's](/help/journey-migration/readiness.md#establish-kpis) and other migration related tasks.
+These data points can also help you [Establish KPI's](/help/journey-migration/readiness.md#establish-kpis) and other migration related tasks.
 
 ## Migration plan {#migration-plan}
 
-Based on the datapoints you gathered (see above), you can create a migration plan that can be integrated into a macro project plan. This step will enable all the key stakeholders to visualize and plan around the migration activities.
+Based on the data points you gathered (see above), you can create a migration plan that can be integrated into a macro project plan. This step will enable all the key stakeholders to visualize and plan around the migration activities.
 
 The following table illustrates a typical migration plan:
 
@@ -131,7 +131,7 @@ Some important details that will influence your migration plan:
 
 ## Migration Tracker {#migration-tracker}
 
-You can use the migration tracker to note down the times for both the initial and top up runs. These datapoints will help you formulate realistic content freeze requirements before the final top up.
+You can use the migration tracker to note down the times for both the initial and top up runs. These data points will help you formulate realistic content freeze requirements before the final top up.
 
 The tracker will also help you to:
 
@@ -193,7 +193,7 @@ Compared to the section above the ingestion **does not** fail due to the followi
 
 Both of the above items will be identified and reported in [Best Practice Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md) report.
 
-## Go-Live plan {#completing-the-migration}
+## Completing the Migration {#completing-the-migration}
 
 Following these steps can help you complete the migration process and ensure that you can perform a smooth and successful migration:
 
