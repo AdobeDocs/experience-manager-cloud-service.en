@@ -2,6 +2,7 @@
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+mini-toc-levels: 1
 ---
 
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
@@ -9,7 +10,8 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 The following section outlines the general Release Notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
->From here, you can navigate to release notes of previous versions; for example, for those in 2020, 2021 and so on.
+>
+>From here, you can navigate to release notes of previous versions; for example, for those in 2020, 2021, and so on.
 
 >[!NOTE]
 >
@@ -17,230 +19,183 @@ The following section outlines the general Release Notes for the current (latest
 
 ## Release Date {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 is May 6, 2021.
-The following release (2021.5.0) will be on May 27, 2021.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2021.10.0) is November 4, 2021.
+The following release (2021.11.0) is on December 16, 2021.
 
-## AEM as a Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
+## Release Video {#release-video}
 
-### What is New {#what-is-new-foundation}
+Have a look at the [October 2021 Release Overview](https://video.tv.adobe.com/v/338253) video for a summary of the features added.
 
-* [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) - A new workflow model and step provides increased performance when publishing deep hierarchies of content.
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+### New feature in [!DNL Sites] {#sites-features}
 
-### What is new in [!DNL Sites] {#what-is-new-sites}
+* Content Fragment models are now automatically set in read-only state once they are published, to avoid unintentionally breaking live API queries after re-publishing an edited model. Users are prompted with a warning when attempting to edit a published model. Editing is possible upon accepting the warning. 
 
-* GraphQL Endpoints - it is now possible to enable the AEM GraphQL API for individual AEM Sites configurations and to create custom GraphQL endpoints for those configurations by using a new GraphQL Console UI. The UI also allows managing GraphQL endpoints. 
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-* Content Models, enhanced Date&Time data type - it is now possible to configure the Date&Time date type to allow authoring only date, only time, or date and time information. 
+### New features in [!DNL Assets] {#assets-features}
 
-* Content Models, enhanced Tags data type - it is now possible to configure the Tags data type to allow authoring single or multiple tags. 
+* [!DNL Experience Manager] now supports auto-generation of text transcripts from the supported audio and video assets, using a built-in connector to [!DNL Azure Media Services]. The [supported file types](/help/assets/file-format-support.md#audio-video-transcription-formats) are automatically transcribed and the text is stored in WebVTT format. The WebVTT captions are used for more effective searching, captioning, or translation. Also, the feature improves accessibility, discoverability, and localization of the assets.
 
-* Content Models, new Tab Placeholder data type - the new Tab Placeholder data type allows grouping data types into sections that will be rendered under tabs in the content fragment editor. 
+### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-### Bug fixes in [!DNL Sites] {#bug-fixes-sites}
+* [!DNL Dynamic Media] Image Smart Crop and Swatch is now powered by latest Sensei services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits will be preserved on reprocessing, if there is no change in the width and height in the Image Profile.
 
-* Content Fragments - moving content fragments or folders now updates nested references inside the fragment (CQ-4320815)
+* Smart Tags are automatically applied to the assets using asset microservices, instead of Smart Content Services. The underlying model is updated to improve tagging results and reduce bias. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
-* GraphQL - persisted queries now support user-defined endpoints that are specific to AEM Sites configurations (CQ-4315928)
+<!-- Leave this commented.
+### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
-## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
+-->
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [!DNL Experience Manager] does not archive single asset downloads where the original file is downloaded. This enhancement allows for faster downloads. 
+### What is new in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* When an asset is downloaded via linkshare option, you can now choose to download or not download the renditions. Previously, all the asset renditions were downloaded.
+* **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (Anonymous) via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
 
-* Administrators can configure [!DNL Experience Manager] to delete the source of assets after doing a bulk asset ingestions. See [bulk asset ingestion](/help/assets/add-assets.md#asset-bulk-ingestor).
+### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms-oct-2021}
 
-* When executing a health check to import assets in bulk, Experience Manager now provides more information reasons for failures. See [bulk asset ingestion](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Externalize AEM Workflow data for secure processing**: You can store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) elements in a customer-managed repository for secure processing. The data elements and workflow variables are not stored in AEM repository and are fetched on demand from a customer-managed repository while processing the Workflow.
 
-* When importing assets using bulk import tool, administrators now have the option to delete the source files after the import is successful. See [bulk asset ingestion](/help/assets/add-assets.md#asset-bulk-ingestor).
+### Beta features of [!DNL Forms]  {#what-is-new-forms-oct2021-beta}
 
-* When editing a metadata schema, a new root path selector field allows administrators to quickly and easily make the selection, thereby reducing the configuration time.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) help you combine a template and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
 
-* Metadata of many assets can be imported in bulk using a CSV file and can be exported to a CSV file. The default date format is now `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Users can leverage a different format by updating the column header. For example, add `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` as the column header in the CSV file instead of the word `Date`.
+  * Generate documents by populating template files (PDF and XDP) with XML data.
+  * Generate output forms in various formats, including non-interactive PDF print streams.
 
-* When browsing assets in Column view, a visual indicator displays the approved or rejected status of each asset.
+You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
-* When browsing assets in Column view, a visual indicator displays for expired assets.
+## CIF Add-on {#cloud-services-cif}
 
-* A text area data type is made available in [!DNL Assets] metadata editor. You can use this option to let your users input metadata in a free-form text field.
+### What is New {#what-is-new-cif}
 
-### Bug fixes in [!DNL Assets] {#bug-fixes-assets}
+* The CIF add-on supports latest Commerce v2.4.3 with new GraphQL APIs and schemas
 
-* When attempting to move multiple assets or folders, an error is logged in the console and the move operation is not completed. Move operation fails if the title cannot be updated. (CQ-4322080)
+* Authors can add links to product and catalog pages in text fields using the rich text editor (RTE). A CIF icon has been added to the RTE toolbar that will open up the pickers to quickly search and select the product or category without leaving the context.
 
-* A metadata field can be hidden based on a rule such that when a predefined condition is met the metadata is not mandatory. However, such hidden metadata fields are displayed as required fields. (CQ-4321285)
+* Existing pop-up shopping cart and checkout have been replaced with dedicated AEM shopping cart and checkout pages. The components on these pages are built using Magento's extensible Peregrine components
 
-* Bulk metadata import fails because of incorrect date format. (CQ-4319014)
+* Merchants can hide certain product catalog categories in the navigation using the Commerce backend. The CIF Navigation Core Component respects the commerce backend configuration "include in menu" to show / hide categories in navigation
 
-* When a selection is made in the Properties page to update metadata, the interface is slow to respond when there are many options provided by the schema. (CQ-4318538)
-
-* While updating and saving metadata value in a single-line text field, the values in the dropdown menu get deleted, even if edits are disabled on the dropdown menu. (CQ-4317077)
-
-* You can use ellipsis as an annotation to review assets. When a small ellipse is used, the ellipse overlaps with the number of the annotation in the print version. (CQ-4316792)
-
-## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
-
-### What is new in [!DNL Forms] {#what-is-new-forms}
-
-You can use [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) to create digital forms, connect forms to existing data sources, integrate forms with Adobe Sign to add e-signatures to forms, generate Document of Record (DoR) to archive submitted forms as PDF files. The service can also convert your existing PDF forms to digital forms. In addition to standard AEM Forms features, the service offers several cloud-native capabilities like auto-scaling, zero downtime for upgrades, and cloud-native development environment. Read [this blog post](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) to learn about capabilities and features of AEM Forms as a Cloud Service.
-
-* **Use Government ID identity authentication method in Adobe Sign enabled Adaptive Forms**
-
-  Powered by advanced machine learning algorithms, Adobe Sign’s Government ID process empowers companies across the globe with the ability to secure a high-quality authentication of their recipient's identity. Now, you can use Government ID identity authentication method in Adobe Sign enabled Adaptive Forms.
-
-  Government ID is a premium identity authentication method that instructs the recipient to [upload the image of a government-issued identity document (driver’s license, national ID, passport)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html), and then evaluates that document to ensure it's authentic.
-
-* **Support to use in-form signing experience for asynchronous adaptive form submissions**
-
-  You can now use the in-form signing experience for asynchronous adaptive form submissions. You can also embed an adaptive form in an [!DNL Experience Manager Sites] page and use the in-form signing experience for adaptive form submissions.
-
-* **Support to use a variable to specify an attachment while prepopulating an Adaptive Form for an Assign Task step**
-
-  While prepopulating an Adaptive Form for an Assign Task step, you can now use a document type variable to select an input attachment for the Adaptive Form.
-
-* **Support to use the literal option to set value for a JSON type variable**
-
-  You can use literal option to set value for a JSON type variable in the set variable step of an AEM Workflow. The literal option allows you to specify a JSON in the form of a string.
-
-* **Use local development environment to create Document of Record (DoR)**
-
-  You can use an XDP as a Document of Record template on Cloud Service instances and AEM Forms as a Cloud Service SDK (Local development environment). Previously, the support was limited to Cloud Service instances only.
-
-### Bug fixes in [!DNL Forms] {#bug-fixes-forms}
-
-* When an Adaptive Form configured to not-generate Document of Record is submitted to an AEM Workflow configured to generate Document of Record, no error message is displayed, and the task fails to submit.
-
-### Other updates {#misc-2021-04-0-forms}
-
-* To make easier to recognize content the service now generates live thumbnail for XDP, Dynamic PDF, and Schema files.
-* Add ability to move a PDF file to a folder placed in on AEM Forms UI.
-
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
-
-### What is New {#what-is-new-commerce}
-
-* Support for category UID - This unlocks 3rd party commerce integrations for systems that use Strings for category ids
-
-* AEM extension for PWA Studio incl. example integration
-
-* New CIF navigation core component that extends WCM navigation core component
-
-* Visual indicator for staged catalog data in AEM storefront
-
-* Commerce endpoint is now configurable via Cloud Manager UI
-
-### Bug Fixes {#bug-fixes-commerce}
-
-* The root category field was not displayed under the commerce tab in the page properties of category pages
-
+* AEM Storefront Venia returns HTTP 404 error if category or product page is not found
 
 ## Cloud Manager {#cloud-manager}
 
-This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.5.0 and 2021.4.0.
+This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.10.0.
 
-### Release Date {#release-date-cm-may}
+### Release Date {#release-date-cm-nov}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.5.0 is May 06, 2021.
-The next release is planned for June 03, 2021.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.11.0 is November 04, 2021.
+The next release is planned for December 09, 2021.
 
-### What's New {#what-is-new-may}
+### What's New {#what-is-new-cm-nov}
 
-* The PackageOverlaps quality rule now detects cases where the same package was deployed multiple times, i.e. in multiple embedded locations, in the same deployed package set.
+* Users can now leverage new Front End pipelines to exclusively deploy front end code in an accelerated manner. See [Cloud Manager Front End Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) to learn more.
 
-* The repository endpoint in the Public API now includes the Git URL.
+   >[!IMPORTANT]
+   >You must be on AEM version `2021.10.5933.20211012T154732Z` to leverage new Front End pipelines.
 
-* Deployment log downloaded by a Cloud Manager user will be more insightful and will now include details about failures and success scenarios.
+* Code Quality pipeline duration is significantly reduced by performing the code analysis in a more efficient way without the need of building a whole AEM image. This change will roll out progressively over the weeks following the release.
 
-* Intermittent failures encountered while pushing code to Adobe git have now been resolved.
+* The Git Commit ID will now be displayed in the pipeline execution details making it easier to track the code that was built.
 
-* Commerce add-on can now be applied to Sandbox programs during the Edit program workflow.
+* Program Creation is now available via publicly exposed API.
 
-* The Edit program experience has been refreshed. 
+* Environment Creation is now available via publicly exposed API.
 
-* The Domain Names table in the Environment Details page will display up to 250 Domain names via pagination. 
+* The `x-request-id` response header is now visible in the API Playground on [www.adobe.io](https://www.adobe.io/). This header is useful when submitting customer care issues for troubleshooting.
 
-* The Solutions tab in Add Program and Edit Program workflows will display the solution, even if only one solution is available for the Program.
+* As a user, I see  Pipeline card with zero pipelines provide me with appropriate guidance. 
 
-* The error message in the build step log when the build did not produce any deployed content packages was unclear.
+* A new Activity Page is now available where activities such as pipeline and code executions can be viewed along with their associated details. Over time, the activities listed in this page will expand in scope along with the details provided.
 
-### Bug Fixes {#bug-fixes-cm-may}
+* A new Pipelines page with an on-hover, status popover for easy view of the summary of details is now available. Pipeline executions can be viewed along with their associated details.
 
-* On occasion, user may see a green "active" status next to an IP Allow List even when that configuration was not deployed. 
+* The Edit Pipeline API now supports changing the environment used in the deploy phases.
 
-* Instead of removing 'deleted' variables, the pipelines variables API would only mark them with status **DELETED**. 
+* An optimization in the OakPal scanning process has been introduced for large packages.
 
-* Some Code Smell-type quality issues were incorrectly impacting the Reliability Rating.
+* The quality issue CSV file will now contain the timestamp for each quality issue. 
 
-* Since wildcard domains are not supported, the UI will disallow the user from submitting a wildcard domain.
+### Bug Fixes {#bug-fixes-nov}
 
-* When a pipeline execution was started between midnight and 1am UTC the artifact version generated by Cloud Manager was not guaranteed to be greater than a version created the prior day.
+* Certain unorthodox build configurations resulted in unnecessary files being stored in the pipeline's Maven artifact cache which resulted in extraneous network I/O when starting and stopping the build container. 
 
-* During Sandbox program setup, once the project with sample code has been successfully created, Manage Git will appear as a link from the hero card in the Overview page. 
+* Pipeline PATCH API fails if deploy phase does not exist.
 
-### Release Date {#release-date-cm-april}
+* The `ClientlibProxyResourceCheck` quality rule was producing false positive issues when there were client libraries with common base paths.
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.4.0 is April 08, 2021.
+* Error message when max number of repositories has been reached did not specify the reason for the error.
 
-### What's New {#what-is-new-april}
+* In rare cases, pipelines were failing due to inappropriate retry handling of certain response codes. 
 
-* UI updates to the Add and Edit Program workflows to make it more intuitive.
 
-* A user with requisite permissions can now submit the commerce end point via the UI.
+## Release Date {#release-date-cm-oct}
 
-* Environment variables can now be scoped to a specific service, either author or publish. Requires AEM Version `2021.03.5104.20210328T185548Z` or higher.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.10.0 is October 14, 2021.
 
-* The **Manage Git** button is displayed on the Pipelines card even when no pipelines have been configured.
+### What's New {#what-is-new-cm-oct}
 
-* The version of the AEM project archetype used by Cloud Manager has been updated to version 27.
+* In preparation for some upcoming changes, existing deployment pipelines will now be referenced and labelled in the user interface as **Full Stack** pipelines.
 
-* Projects in the Adobe I/O Developer Console created by Cloud Manager can no longer be unintentionally edited or deleted.
+* Pipeline card has been refreshed to now display a single, integrated face that shows both production and non-production pipelines, and user can select Run/Pause/Resume directly from the action menu associated with each pipeline.
 
-* When a user adds a new environment they will be informed that once an environment is created it cannot be moved to a different region. 
+* A user in Deployment Manager role can now delete Production pipeline in a self-service manner via the UI.
 
-* Environment variables can now be scoped to a specific service, either author or publish. Requires AEM Version 2021.03.5104.20210328T185548Z or higher. 
+* Add and edit pipeline experiences have been refreshed to now use familiar, modern modals.
 
-* The error message when starting a pipeline when an environment was deleted has been clarified.
+* Users of Cloud Manager can now submit feedback directly from the user interface via the **Feedback** button on top right of the landing page.
 
-* OSGi bundles provided by Eclipse projects are now excluded from rule `CQBP-84--dependencies`.
+* Yearly SLA Graphs can now be downloaded from the Cloud Manager's user interface. 
 
-### Bug Fixes {#bug-fixes-cm-april}
+* Code quality and non-production pipeline executions will now use a more efficient shallow cloning process during the build step, leading to a faster build time for customers with especially large git repositories. 
 
-* When editing the Experience audit page of a pipeline, an input path starting with a slash `( / )` will no longer result in the step being stuck in pending status.
+* Add IP Allow List wizard will now inform the user if maximum allowed number of IP Allow Lists has been reached. 
 
-* When a new production pipeline is created, if no content audit override is added by the user, the default homepage was not audited.
+* The Cloud Manager API documentation now includes an interactive playground that allows logged-in users to experiment with the API from their browser. See [Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) for more details.
 
-* Issues for the `CloudServiceIncompatibleWorkflowProcess` had the incorrect severity in the downloadable issue CSV file. 
+* The tool tip on the Program card will be more descriptive if a selection option under 'Navigate To' is disabled. It now displays "A production environment does not exist." 
 
-* The `Runmode` check was producing false positives on non-folder nodes.
+### Bug Fixes {#bug-fixes-cm-oct}
 
-## Content Transfer Tool {#content-transfer-tool}
+* In rare situations, when an Adobe staff would restore a customer's environment, the restore was considered complete before the environment was fully operational.
 
-### Release Date {#release-date-ctt}
+* Certain internal requests made during environment creation were not being retried.
 
-The Release Date for Content Transfer Tool v1.4.0 is May 11, 2021.
-
-### What's New {#what-is-new-ctt-may}
-
-* This version of the Content Transfer Tool creates text renditions for assets being migrated to Cloud Service. Text renditions are required to support full text search on ingested assets.
-* The maximum number of Content Transfer Tool migration sets a user can create has been increased from 4 to 10. 
-
-### Bug Fixes {#bug-fixes-ctt-may}
-
-* Multiple bug fixes related to the auto-refresh feature in the Content Transfer Tool UI.
-* Content Transfer Tool with `wipe=true` resulted in incorrect counter index on the target. This has been fixed.
+* If deployment failed error occurs following domain name verification, the error message has been corrected to request the customer to contact their Adobe representative.
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
+### Release Date {#release-date-bpa-latest}
+
+The Release Date for Best Practices Analyzer v2.1.20 is October 05, 2021.
+
+### What's New {#what-is-new}
+
+* Ability to detect and report on node name length.
+
+* Ability to detect and report on the total Index size.
+
+* Ability to detect and report on assets that are missing their original rendition.
+
+
+## Best Practices Analyzer {#bpa-release}
+
 ### Release Date {#release-date-bpa}
 
-The Release Date for Best Practices Analyzer v2.1.12 is April 12, 2021.
+The Release Date for Best Practices Analyzer v2.1.22 is December 01, 2021.
 
-### Bug Fixes {#bug-fixes-bpa-april}
+### What's New {#what-is-new-bpa}
 
-* Duplicate rows were seen in the BPA reported. This has been fixed.
-* BPA UI on AEM version 6.4.2 was throwing a JS error that was disabling the Generate Report button. This has been fixed
+* Ability to detect and report on the version of ACS commons used.
+* Ability to detect and report on the number of users and sub-groups in a group.
+* Ability to detect and report on node property values in MongoDB that exceed 16MB.
 
+### Bug Fixes {#bug-fixes-bpa}
+
+* Detection of Foundation components was refined to reduce false negatives.
+* For AEM Forms customers, BPA messaging regarding `EMAIL_PDF_SUBMIT_ACTION` not being available on AEM as a Cloud Service has been fixed. 

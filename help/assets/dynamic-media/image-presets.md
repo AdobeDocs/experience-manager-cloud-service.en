@@ -1,11 +1,11 @@
 ---
-title: Applying Dynamic Media Image Presets
+title: Apply Dynamic Media Image Presets
 description: Learn how to apply image presets in Dynamic Media.
 feature: Image Presets,Viewers,Renditions
-role: Business Practitioner
+role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 ---
-# Applying Dynamic Media Image Presets {#applying-image-presets}
+# Apply Dynamic Media Image Presets {#applying-image-presets}
 
 Image Presets enable assets to dynamically deliver images at different sizes, in different formats, or with other image properties there are generated dynamically. You can choose a preset when you export to reformat images to specifications that your administrator has outlined.
 
@@ -21,7 +21,7 @@ You can apply an image preset to an image anytime you preview it.
 
 **To apply Dynamic Media Image Presets:**
 
-1. Open the asset and in the left rail, tap the drop-down list, then tap **[!UICONTROL Renditions]**.
+1. Open the asset and in the left rail, select the drop-down list, then select **[!UICONTROL Renditions]**.
 
    >[!NOTE]
    >
@@ -34,7 +34,7 @@ You can apply an image preset to an image anytime you preview it.
 1. Do any of the following:
 
     * To preview the image preset, select a dynamic rendition.
-    * To display the pop-up window, tap **[!UICONTROL URL]**, **[!UICONTROL Embed]**, or **[!UICONTROL RESS]**.
+    * To display the pop-up window, select **[!UICONTROL URL]**, **[!UICONTROL Embed]**, or **[!UICONTROL RESS]**.
 
    >[!NOTE]
    >

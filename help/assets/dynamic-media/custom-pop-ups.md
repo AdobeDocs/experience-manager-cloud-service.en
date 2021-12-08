@@ -1,33 +1,33 @@
 ---
-title: Using Quick views to create custom pop-ups
-description: "Learn about how the default Quick view is used in ecommerce experiences whereby a pop-up window is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-up Windows®."
+title: Create custom pop-ups using Quickview
+description: "Learn about how the default Quickview is used in ecommerce experiences whereby a pop-up window is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-up Windows®."
 feature: Interactive Images,Interactive Videos,Carousel Banners
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 ---
-# Using Quick views to create custom pop-up Windows® {#using-quickviews-to-create-custom-pop-ups}
+# Create custom pop-up Windows® using Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-The default Quick view is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. However, you can trigger custom content to display in the pop-ups. Depending on the viewer that you use, customers can tap a hotspot, a thumbnail image, or an image map to see information or related content.
+The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. However, you can trigger custom content to display in the pop-ups. Depending on the viewer that you use, customers can select a hotspot, a thumbnail image, or an image map to see information or related content.
 
-Quick views are supported by the following viewers in Dynamic Media:
+Quickview is supported by the following viewers in Dynamic Media:
 
-* Interactive Images (clickable hotspots)
-* Interactive Video (clickable thumbnail images during video playback)
-* Carousel Banners (clickable hotspots or image maps)
+* Interactive Images (selectable hotspots)
+* Interactive Video (selectable thumbnail images during video playback)
+* Carousel Banners (selectable hotspots or image maps)
 
-While the functionality of each viewer differs, the process of creating a Quick view is the same across all three supported viewers.
+While the functionality of each viewer differs, the process of creating a Quickview is the same across all three supported viewers.
 
-**To use Quick views to create custom pop-up Windows®:**
+**To create custom pop-up Windows® using Quickview:**
 
-1. Create a Quick view for an uploaded asset.
+1. Create a Quickview for an uploaded asset.
 
-   You typically create a Quick view the same time you edit an asset for use with the viewer you are using.
+   You typically create a Quickview the same time you edit an asset for use with the viewer you are using.
 
    <table>
     <tbody>
     <tr>
     <td><strong>Viewer you are using</strong></td>
-    <td><strong>To create the Quick view, complete these steps</strong></td>
+    <td><strong>To create the Quickview, complete these steps</strong></td>
     </tr>
     <tr>
     <td>Interactive Images</td>
@@ -67,7 +67,7 @@ While the functionality of each viewer differs, the process of creating a Quick 
     </tbody>
    </table>
 
-1. The viewer you use has to know how to use the Quick view.
+1. The viewer you use has to know how to use the Quickview.
 
    The viewer uses a handler called `QuickViewActive`.
 
@@ -100,10 +100,10 @@ While the functionality of each viewer differs, the process of creating a Quick 
 
 1. Now configure the `quickViewActivate` handler.
 
-   The `quickViewActivate` handler controls the Quick views in the viewer. The handler contains the variable list and function calls for use with the Quick view. The embed code provides mapping for the SKU variable set in the Quick view. It also makes a sample `loadQuickView` function call.
+   The `quickViewActivate` handler controls the Quickview in the viewer. The handler contains the variable list and function calls for use with the Quickview. The embed code provides mapping for the SKU variable set in the Quickview. It also makes a sample `loadQuickView` function call.
 
    **Variable mapping**
-   Map variables for use in your web page to the SKU value and generic variables contained in the Quick view:
+   Map variables for use in your web page to the SKU value and generic variables contained in the Quickview:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -111,7 +111,7 @@ While the functionality of each viewer differs, the process of creating a Quick 
 
    `var sku=inData.sku`
 
-   Map other variables from the Quick view too, as in the following:
+   Map other variables from the Quickview too, as in the following:
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
@@ -119,7 +119,7 @@ While the functionality of each viewer differs, the process of creating a Quick 
    ```
 
    **Function call**
-   The handler also requires a function call for the Quick view to work. The function is assumed to be accessible by your host page. The embed code provides a sample function call:
+   The handler also requires a function call for the Quickview to work. The function is assumed to be accessible by your host page. The embed code provides a sample function call:
 
    `loadQuickView(sku)`
 
@@ -134,7 +134,7 @@ While the functionality of each viewer differs, the process of creating a Quick 
 1. Do the following:
 
     * Uncomment the setHandlers section of the embed code.
-    * Map any additional variables contained in the Quick view.
+    * Map any additional variables contained in the Quickview.
 
         * Update the `loadQuickView(sku,*var1*,*var2*)` call if you add more variables.
 
@@ -150,9 +150,9 @@ While the functionality of each viewer differs, the process of creating a Quick 
 
     * Upload a test HTML page to a webserver and open.
 
-      The variables from the Quick view are mapped. The function call is in place. And the browser console writes the variable value to the browser console. It does this using the sample function provided.
+      The variables from the Quickview are mapped. The function call is in place. And the browser console writes the variable value to the browser console. It does this using the sample function provided.
 
-1. You can now use a function to invoke a simple pop-up in the Quick view. The following example uses a `DIV` for a popup.
+1. You can now use a function to invoke a simple pop-up in the Quickview. The following example uses a `DIV` for a popup.
 1. Style the pop-up `DIV` in the following manner. Add extra styling as desired.
 
    ```xml
@@ -167,7 +167,7 @@ While the functionality of each viewer differs, the process of creating a Quick 
 
 1. Place the pop-up `DIV` in the body of your HTML page.
 
-   One of the elements is set with an ID that is updated with SKU value when the user invokes a Quick view. The example also includes a simple button to hide the pop-up again after it becomes visible.
+   One of the elements is set with an ID that is updated with SKU value when the user invokes a Quickview. The example also includes a simple button to hide the pop-up again after it becomes visible.
 
    ```xml
    <div id="quickview_div" >
@@ -189,7 +189,7 @@ While the functionality of each viewer differs, the process of creating a Quick 
    </script>
    ```
 
-1. Upload a test HTML page to your webserver and open. The viewer displays the pop-up `DIV` when a user invokes a Quick view.
+1. Upload a test HTML page to your webserver and open. The viewer displays the pop-up `DIV` when a user invokes a Quickview.
 1. **How to display the custom pop-up window in full screen mode**
 
    Some viewers, such as the Interactive Video viewer, support display in fullscreen mode. However, using the pop-up as described in the previous steps causes it to display behind the viewer while in full screen mode.

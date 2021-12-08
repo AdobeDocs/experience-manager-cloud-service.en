@@ -1,22 +1,22 @@
 ---
 title: XMP metadata
-description: Learn about the XMP (Extensible Metadata Platform) metadata standard for metadata management. It is used by AEM as a standardized format for creation, processing, and interchange of metadata.
+description: Learn about the XMP (Extensible Metadata Platform) metadata standard for metadata management. It is used by Experience Manager as a standardized format for creation, processing, and interchange of metadata.
 contentOwner: AG
 feature: Metadata
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
 ---
 # XMP metadata {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) is the metadata standard used by AEM Assets for all metadata management. XMP provides a standard format for the creation, processing, and interchange of metadata for a wide variety of applications.
+XMP (Extensible Metadata Platform) is the metadata standard used by Experience Manager Assets for all metadata management. XMP provides a standard format for the creation, processing, and interchange of metadata for a wide variety of applications.
 
-Aside from offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich [content model](#xmp-core-concepts) and is [supported by Adobe](#advantages-of-xmp) and other companies, so that users of XMP in combination with AEM Assets have a powerful platform to build upon.
+Aside from offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich [content model](#xmp-core-concepts) and is [supported by Adobe](#advantages-of-xmp) and other companies, so that users of XMP in combination with [!DNL Assets] have a powerful platform to build upon.
 
 ## XMP overview and ecosystem {#xmp-ecosystem}
 
-AEM Assets natively supports the XMP metadata standard. XMP is a standard for processing and storing standardized and proprietary metadata in digital assets. XMP is designed to be the common standard that allows multiple applications to work effectively with metadata.
+[!DNL Assets] natively supports the XMP metadata standard. XMP is a standard for processing and storing standardized and proprietary metadata in digital assets. XMP is designed to be the common standard that allows multiple applications to work effectively with metadata.
 
-Production professionals, for example, use the built-in XMP support within Adobe's applications to pass information across multiple file formats. The AEM Assets repository extracts the XMP metadata and uses it to manage the content lifecycle and offers the ability to create automation workflows.
+Production professionals, for example, use the built-in XMP support within Adobe's applications to pass information across multiple file formats. The [!DNL Assets] repository extracts the XMP metadata and uses it to manage the content lifecycle and offers the ability to create automation workflows.
 
 XMP standardizes how metadata is defined, created, and processed by providing a data model, a storage model, and schemas. All of these concepts are covered in this section.
 
@@ -78,9 +78,9 @@ In this case, [!DNL Assets] saves the changes to the **[!UICONTROL Title]** prop
 
 ![metadata stored in asset node in the repository](assets/metadata_stored.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
->The writeback feature is not enabled by default in [!DNL Assets]. See how to [enable metadata writeback](#enable-xmp-writeback).
+>The writeback feature is not enabled by default in [!DNL Assets]. See how to [enable metadata writeback](#enable-xmp-writeback). MSM for digital assets does not work with metadata writeback enabled. Upon writeback, the inheritance breaks.
 
 ### Enable XMP writeback {#enable-xmp-writeback}
 
@@ -119,7 +119,7 @@ To let the XMP write-back feature propagate metadata changes to select rendition
 
 For the XMP write-back feature to propagate metadata to the rendition thumbnails 140.100.png and 319.319.png, perform these steps.
 
-1. Tap/click the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
+1. Tap/click the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
 1. From the Models page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
 1. In the **[!UICONTROL DAM Metadata Writeback]** properties page, open the **[!UICONTROL XMP Writeback Process]** step.
 1. In the **[!UICONTROL Step Properties]** dialog box, tap/click the **[!UICONTROL Process]** tab.

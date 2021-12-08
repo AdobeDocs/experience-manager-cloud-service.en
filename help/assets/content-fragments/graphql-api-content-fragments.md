@@ -50,7 +50,7 @@ For further information about the GraphQL API, see the following sections (among
 
   * [Introduction to GraphQL](https://graphql.org/learn)
 
-  * [The GraphQL Specification](http://spec.graphql.org/)
+  * [The GraphQL Specification](https://spec.graphql.org/)
 
 * At [graphql.com](https://graphql.com):
 
@@ -151,7 +151,7 @@ To enable a GraphQL Endpoint you first need to have an appropriate configuration
 
 To enable the corresponding endpoint:
 
-1. Navigate to **Tools**, **Sites**, then select **GraphQL**.
+1. Navigate to **Tools**, **Assets**, then select **GraphQL**.
 1. Select **Create**.
 1. The **Create new GraphQL Endpoint** dialog will open. Here you can specify:
    * **Name**: name of the endpoint; you can enter any text.
@@ -803,7 +803,7 @@ To access the GraphQL endpoint from an external website you need to configure th
 
 >[!NOTE]
 >
->For a detailed overview of the CORS resource sharing policy in AEM see [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors)).
+>For a detailed overview of the CORS resource sharing policy in AEM see [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
 
 To access the GraphQL endpoint, a CORS policy must be configured in the customer Git repository. This is done by adding an appropriate OSGi CORS configuration file for the desired endpoint(s). 
 

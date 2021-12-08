@@ -36,7 +36,7 @@ There are intrinsic differences between these previous approaches and AEM as a C
 
 >[!NOTE]
 >
->For further details see [Architecture](/help/core-concepts/architecture.md).
+>For further details see [Architecture](/help/overview/architecture.md).
 
 AEM as a Cloud Service now has:
 
@@ -106,18 +106,16 @@ Specifically, the number of and the type of AEM programs that can be created fro
   
 Cloud Manager has evolved as a self-service portal where the main components of AEM as a Cloud Service can be created and configured:
 
-* Creating and managing new programs. Refer to [Understanding Programs and Program Types](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) for more details.
+* Creating and managing new programs. Refer to [Understanding Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) for more details.
 
 * Creating and managing the AEM environments within these programs. Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for more details.
 
-* Creating and managing the pipelines for deploying the customer code and the related configuration to a specific environment. Refer to [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) for more details.
+* Creating and managing the pipelines for deploying the customer code and the related configuration to a specific environment. Refer to [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) for more details.
 
 * Being notified of important lifecycle events for these components (for example, product updates).
 
 Cloud Manager creates environments in datacenters across many geographic regions, providing for global coverage. CDN Points of Presence (PoPs) ensure low-latency content delivery for customers located all over the world.
 
->[!NOTE]
->Refer to [Accessing Experience Manager as a Cloud Service](/help/onboarding/what-is-required/accessing-aem-instance.md) to get started with Cloud Manager in AEM as a Cloud Service.
 
 ## Onboarding {#onboarding}
 
@@ -260,9 +258,9 @@ For details, see [overview and introduction to Assets as a Cloud Service](/help/
 For further information see:
 
 * [An Introduction to Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
-* The [Architecture](/help/core-concepts/architecture.md) of Adobe Experience Manager as a Cloud Service
+* The [Architecture](/help/overview/architecture.md) of Adobe Experience Manager as a Cloud Service
 * [Notable changes to AEM as a Cloud Service (Release Notes)](/help/release-notes/aem-cloud-changes.md)
 * [Notable changes to AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Notable changes to AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Introducing AEM Assets as a Cloud Service](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)

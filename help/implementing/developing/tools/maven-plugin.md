@@ -7,7 +7,7 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 
 Use the Adobe Content Package Maven plugin to integrate package deployment and management tasks into your Maven projects.
 
-The deployment of the constructed packages to AEM is performed by the Adobe Content Package Maven plugin and enables the automation of tasks normally performed using AEM Package Manager:
+The deployment of the constructed packages to AEM is performed by the Adobe Content Package Maven plugin and enables the automation of tasks normally performed using AEM [Package Manager:](/help/implementing/developing/tools/package-manager.md)
 
 * Create new packages from files in the file system.
 * Install and uninstall packages on AEM.
@@ -27,7 +27,7 @@ AEM as a Cloud Service adheres to the latest best practices for package manageme
 
 >[!TIP]
 >
->For further details, see the [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) article in the AEM as a Cloud Service documentation as well as the [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) documentation. Both of which are fully-supported for AEM 6.5.
+>For further details, see the [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) article in the AEM as a Cloud Service documentation as well as the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentation. Both of which are fully-supported for AEM 6.5.
 
 ## Obtaining the Content Package Maven Plugin {#obtaining-the-content-package-maven-plugin}
 
@@ -111,7 +111,7 @@ Installs a package in the repository. Execution of this goal does not require a 
 In addition to the following parameters, see the descriptions in the [Common Parameters](#common-parameters) section.
 
 |Name|Type|Required|Default Value|Description|
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 |`artifact`|`String`|No|The value of the `artifactId` property of the Maven project|A string of the form `groupId:artifactId:version[:packaging]`|
 |`artifactId`|`String`|No|None|The ID of the artifact to install|
 |`groupId`|`String`|No|None|The `groupId` of the artifact to install|
@@ -127,7 +127,7 @@ In addition to the following parameters, see the descriptions in the [Common Par
 
 ### ls {#ls}
 
-Lists the packages that are deployed to Package Manager.
+Lists the packages that are deployed to [Package Manager.](/help/implementing/developing/tools/package-manager.md)
 
 #### Parameters {#parameters-2}
 
@@ -135,7 +135,7 @@ All parameters of the ls goal are described in the [Common Parameters](#common-p
 
 ### rm {#rm}
 
-Removes a package from Package Manager.
+Removes a package from [Package Manager.](/help/implementing/developing/tools/package-manager.md)
 
 #### Parameters {#parameters-3}
 
@@ -221,7 +221,7 @@ When the filter contains no `mode` element, the default value of `replace` is us
 
 ## Including a Thumbnail Image or Properties File in the Package {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
-Replace the default package configuration files to customize the package properties. For example, include a thumbnail image to distinguish the package in Package Manager and Package Share.
+Replace the default package configuration files to customize the package properties. For example, include a thumbnail image to distinguish the package in [Package Manager.](/help/implementing/developing/tools/package-manager.md)
 
 The source files can be located anywhere in your file system. In the POM file, define build resources to copy the source files to the `target/vault-work/META-INF` for inclusion in the package.
 
@@ -259,4 +259,4 @@ The latest AEM Project Archetype implements the best-practice package structure 
 
 >[!TIP]
 >
->For further details, see the [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) article in the AEM as a Cloud Service documentation as well as the [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) documentation. Both of which are fully-supported for AEM 6.5.
+>For further details, see the [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) article in the AEM as a Cloud Service documentation as well as the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentation. Both of which are fully-supported for AEM 6.5.

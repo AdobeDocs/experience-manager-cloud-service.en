@@ -1,11 +1,11 @@
 ---
-title: Previewing Assets
+title: Preview assets
 description: Learn how to preview assets in Dynamic Media.
 feature: Asset Management
-role: Business Practitioner
+role: User
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
 ---
-# Previewing assets{#previewing-assets}
+# Preview assets{#previewing-assets}
 
 You can use Preview to see how a digital asset that you have uploaded appears when it is viewed by a customer in their own web browser. The default embedded, cross-device viewer that is assigned to the asset is used for the Preview.
 
@@ -18,22 +18,22 @@ Besides using the dedicated Preview feature for video, spin sets, and image sets
 
 >[!NOTE]
 >
->When you are on a webpage (Sites) in Adobe Experience Manager, you cannot preview assets in **[!UICONTROL Edit]** mode. Instead, go to Preview mode by clicking **[!UICONTROL Preview]** in the upper right-hand corner of the page.
+>When you are on a webpage (Sites) in Adobe Experience Manager, you cannot preview assets in **[!UICONTROL Edit]** mode. Instead, go to Preview mode by selecting **[!UICONTROL Preview]** in the upper right-hand corner of the page.
 
 To enable or disable viewer presets in the user interface, see [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 **To preview assets:**
 
-1. From **[!UICONTROL Experience Manager]**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets]**, then **[!UICONTROL Files]** to access assets.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View]**.
+1. From **[!UICONTROL Experience Manager]**, on the **[!UICONTROL Navigation]** page, select **[!UICONTROL Assets]**, then **[!UICONTROL Files]** to access assets.
+1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, select **[!UICONTROL List View]**.
 1. (Optional) Use the **[!UICONTROL Type]** column to sort the assets by the type you want to preview.
-1. Under the **[!UICONTROL Title]** column, click the title name (not the thumbnail image) of the asset you want to preview.
-1. Depending on the asset type you clicked, do any one of the following:
+1. Under the **[!UICONTROL Title]** column, select the title name (not the thumbnail image) of the asset you want to preview.
+1. Depending on the asset type you selected, do any one of the following:
 
     <table>
     <tbody>
       <tr>
-      <td><strong>Asset type you clicked</strong><br /> </td>
+      <td><strong>Asset type you selected</strong><br /> </td>
       <td><strong>Able to preview asset in a particular rendition?</strong></td>
       <td><strong>Able to preview asset in a particular viewer?</strong></td>
       </tr>
@@ -43,9 +43,9 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       <td>Yes</td>
       <td><p><strong>To preview a 3D asset in the Dimensional viewer</strong></p>
       <ul>
-      <li>Near the upper-left corner of the page, click the icon so the drop-down list appears. Click <strong>Viewers</strong> from the list, then select the Dimensional viewer.</li>
-      <li>To return the image to the original zoomap, tap <strong>Reset</strong>.</li>
-      <li>To maximize the viewer on the display device, tap <strong>Fullscreen</strong>.</li>
+      <li>Near the upper-left corner of the page, select the icon so the drop-down list appears. Select <strong>Viewers</strong> from the list, then select the Dimensional viewer.</li>
+      <li>To return the image to the original zoomap, select <strong>Reset</strong>.</li>
+      <li>To maximize the viewer on the display device, select <strong>Fullscreen</strong>.</li>
       </ul>
       <p><strong>Navigating the 3D scene</strong></p>
       <ul>
@@ -60,11 +60,11 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       <td>Yes</td>
       <td><p><strong>To preview asset in a particular rendition</strong></p>
         <ul>
-        <li>Near the upper-left corner of the page, click the icon so the drop-down list appears. Click <strong>Renditions </strong>from the list, then select a particular rendition that you want to preview.</li>
+        <li>Near the upper-left corner of the page, select the icon so the drop-down list appears. Select <strong>Renditions</strong> from the list, then select a particular rendition that you want to preview.</li>
         </ul> <p><strong>To preview asset in a particular viewer</strong></p>
         <ul>
-        <li>Near the upper-left corner of the page, click the icon so the drop-down list appears. Click <strong>Viewers</strong> from the list, then select a viewer that you want to apply to the asset.</li>
-        </ul><p>Use the <strong>+</strong> and <strong>-</strong>icons to increase or decrease the zoom of the selected image, respectively. To return the image to the original zoom, tap <strong>Reset</strong>.<br />If you are on a touch-screen, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
+        <li>Near the upper-left corner of the page, select the icon so the drop-down list appears. Select <strong>Viewers</strong> from the list, then select a viewer that you want to apply to the asset.</li>
+        </ul><p>Use the <strong>+</strong> and <strong>-</strong>icons to increase or decrease the zoom of the selected image, respectively. To return the image to the original zoom, select <strong>Reset</strong>.<br>If you are on a touch-screen, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
       </tr>
       <tr>
       <td>Multimedia</td>
@@ -72,10 +72,10 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       <td>Yes</td>
       <td><p><strong>To preview asset in a particular rendition</strong></p>
         <ul>
-        <li>Near the upper-left corner of the page, click the icon so the drop-down list appears. Click <strong>Renditions </strong>from the list, then select a particular rendition that you want to preview.</li>
+        <li>Near the upper-left corner of the page, select the icon so the drop-down list appears. Select <strong>Renditions</strong> from the list, then select a particular rendition that you want to preview.</li>
         </ul><p>Selecting a higher-resolution video rendition to preview can cause the video to appear truncated. The reason is because the rendition preview shows you the exact resolution that your customers see it, all in the context of the embedded viewer that is used for the preview.</p><p>When you preview an adaptive video set at the Asset level, the renditions are grouped into one playback experience. That is, the adaptive video is sized properly for viewing and played back using the best resolution in the context of your viewing device and connection speed.<br /></p><p><strong>To preview an asset in a particular viewer</strong></p>
         <ul>
-        <li>Near the upper-left corner of the page, click the icon so the drop-down list appears. Click <strong>Viewers</strong> from the list, then select a viewer that you want to apply to the asset.</li>
+        <li>Near the upper-left corner of the page, select the icon so the drop-down list appears. Select <strong>Viewers</strong> from the list, then select a viewer that you want to apply to the asset.</li>
         </ul> </td>
       </tr>
       <tr>
@@ -84,8 +84,8 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       <td>Yes</td>
       <td><p><strong>To preview an asset in a particular viewer</strong></p>
         <ul>
-        <li>Near the upper-left corner of the page, click the icon so the drop-down list appears. Click <strong>Viewers</strong> from the list, then select a viewer that you want to apply to the asset.</li>
-        </ul> <p>Use the <strong>+</strong> and <strong>- </strong>icons to increase or decrease the zoom of the selected image, respectively. To return the image to the original zoom, tap <strong>Reset</strong>.<br /> If you are on a touch-screen, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p></td>
+        <li>Near the upper-left corner of the page, select the icon so the drop-down list appears. Select <strong>Viewers</strong> from the list, then select a viewer that you want to apply to the asset.</li>
+        </ul> <p>Use the <strong>+</strong> and <strong>- </strong>icons to increase or decrease the zoom of the selected image, respectively. To return the image to the original zoom, select <strong>Reset</strong>.<br /> If you are on a touch-screen, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p></td>
       </tr>
       <tr>
       <td>Spin set</td>
@@ -93,8 +93,8 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       <td>Yes</td>
       <td><p><strong>To preview an asset in a particular viewer</strong></p>
         <ul>
-        <li>Near the upper-left corner of the page, click the icon so the drop-down list appears. Click <strong>Viewers</strong> from the list, then select a viewer that you want to apply to the asset.</li>
-        </ul><p>Use the <strong>+</strong> and <strong>- </strong>icons to increase or decrease the zoom of the selected image, respectively. To return the image to the original zoom, tap <strong>Reset</strong>.<br /> If you are on a touch-screen, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
+        <li>Near the upper-left corner of the page, select the icon so the drop-down list appears. Select <strong>Viewers</strong> from the list, then select a viewer that you want to apply to the asset.</li>
+        </ul><p>Use the <strong>+</strong> and <strong>- </strong>icons to increase or decrease the zoom of the selected image, respectively. To return the image to the original zoom, select <strong>Reset</strong>.<br /> If you are on a touch-screen, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
       </tr>
       <tr>
       <td>Mixed Media set</td>
@@ -102,8 +102,8 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       <td>Yes</td>
       <td><p><strong>To preview an asset in a particular viewer</strong></p>
         <ul>
-        <li>Near the upper-left corner of the page, click the icon so the drop-down list appears. Click <strong>Viewers</strong> from the list, then select a viewer that you want to apply to the asset.</li>
-        </ul> <p>Use the <strong>+</strong> and <strong>- </strong>icons to increase or decrease the zoom of the selected image, respectively. To return the image to the original zoom, tap <strong>Reset</strong>.<br /> If you are on a touch-screen, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
+        <li>Near the upper-left corner of the page, select the icon so the drop-down list appears. Select <strong>Viewers</strong> from the list, then select a viewer that you want to apply to the asset.</li>
+        </ul> <p>Use the <strong>+</strong> and <strong>- </strong>icons to increase or decrease the zoom of the selected image, respectively. To return the image to the original zoom, select <strong>Reset</strong>.<br /> If you are on a touch-screen, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
       </tr>
       <tr>
       <td>Carousel set</td>
@@ -111,7 +111,7 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       <td>Yes</td>
       <td><strong>To preview an asset in a particular viewer</strong>
         <ul>
-        <li>Near the upper-left corner of the page, click the icon so the drop-down list appears. Select a viewer that you want to apply to the asset.</li>
+        <li>Near the upper-left corner of the page, select the icon so the drop-down list appears. Select a viewer that you want to apply to the asset.</li>
         </ul> </td>
       </tr>
       <tr>
@@ -120,11 +120,11 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       <td>Yes</td>
       <td><p><strong>To preview asset in a particular rendition</strong></p>
         <ul>
-        <li>Near the upper-left corner of the page, tap the icon so the drop-down list appears. Select <strong>Renditions</strong>, then select the rendition that you want to preview.</li>
+        <li>Near the upper-left corner of the page, select the icon so the drop-down list appears. Select <strong>Renditions</strong>, then select the rendition that you want to preview.</li>
         </ul> <p><strong>To preview asset in a particular viewer</strong></p>
         <ul>
-        <li>Near the upper-left corner of the page, tap the icon so the drop-down list appears. Select <strong>Viewers</strong>, then select a viewer that you want to apply to the asset.</li>
-        </ul> <p>Use the <strong>+</strong> and <strong>- </strong>icons to increase or decrease the zoom of the selected image, respectively. To return the image to the original zoom, tap <strong>Reset</strong>.<br /> If you are on a touch-screen, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
+        <li>Near the upper-left corner of the page, select the icon so the drop-down list appears. Select <strong>Viewers</strong>, then select a viewer that you want to apply to the asset.</li>
+        </ul> <p>Use the <strong>+</strong> and <strong>- </strong>icons to increase or decrease the zoom of the selected image, respectively. To return the image to the original zoom, select <strong>Reset</strong>.<br /> If you are on a touch-screen, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
       </tr>
     </tbody>
     </table>

@@ -32,7 +32,7 @@ You can also use [folders](#creating-a-new-folder) to help organize your content
 
 The structure of a website can be thought of as a tree that holds your content pages. The names of these content pages are used to form the URLs, whereas the titles are shown when the page content is viewed.
 
-The following shows an example from the [WKND Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) site, where an article about skateparks ( `la-skateparks`) is accessed:
+The following shows an example from the [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) site, where an article about skateparks ( `la-skateparks`) is accessed:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -259,27 +259,30 @@ You can copy a page and all of its sub-pages to a new location:
 
    ![Copy](/help/sites-cloud/authoring/assets/copy.png)
 
-   >[!NOTE]
-   >
-   >If you are in selection mode this is exited automatically as soon as the page is copied.
-
 1. Navigate to the location for the new copy of the page.
-1. The **Paste** icon is available with a drop down arrow directly to the right:
+1. Tap or click the **Paste** icon that became available.
 
    ![Paste](/help/sites-cloud/authoring/assets/paste.png)
 
-   You can either:
+1. The paste dialog presents a summary of the paste transaction and the ability to:
+   * **New Site Name:** Change the pasted page's name
+   * **Paste Without Children:** Omit the child pages of the selected page when pasting (by default child pages are pasted)
 
-     1. Select the **Paste** page icon itself: A copy of the original page and any child-pages will be created at this location.
-     1. Select the drop down arrow to reveal the **Paste without children** option. A copy of the original page will be created at this location; child-pages will not be copied.
+   ![Paste dialog](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-   >[!NOTE]
-   >
-   >If you copy the page to a location where a page with the same name as the original already exists, the system will automatically generate a variation of the name by appending a number. For example if `beach` already exists a new page with the name `beach` will become `beach1`.
+1. Tap or click the **Paste** button to confirm the paste transaction and create the new page(s).
+
+>[!NOTE]
+>
+>If you copy the page to a location where a page with the same name as the original already exists, the system will automatically generate a variation of the name by appending a number. For example if `beach` already exists a new page with the name `beach` will become `beach1`.
+
+>[!NOTE]
+>
+>If you start the paste action in selection mode, this is exited automatically as soon as the page is copied.
 
 ### Moving or Renaming a Page {#moving-or-renaming-a-page}
 
-The procedure to move or rename a page is basically the same and is handled by the same wizard. With this wizard you can:
+The procedure to move or rename a page is basically the same and both actions are handled by the Move Page wizard. With this wizard you can:
 
 * Rename a page without moving it
 * Move the page without renaming it

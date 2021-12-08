@@ -29,7 +29,9 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 1. Customers can see whether the indexing job is complete on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
 
-1. Limitations: currently, index management on AEM as a Cloud Service is only supported for indexes of type lucene.
+1. Limitations:
+* Currently, index management on AEM as a Cloud Service is only supported for indexes of type lucene.
+* Only standard analyzers are supported (that is, those that are shipped with the product). Custom analyzers are not supported.
 
 ## How to Use {#how-to-use}
 
@@ -65,7 +67,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->There is a known issue with Jackrabbit Filevault Maven Package Plugin version **1.1.0** which does not allow you to add `oak:index` to modules of `<packageType>application</packageType>`. To work around this, please use version **1.0.4**.
+>There is a known issue with Jackrabbit Filevault Maven Package Plugin version **1.1.0** which does not allow you to add `oak:index` to modules of `<packageType>application</packageType>`. You should update to a more recent version of that plugin.
 
 Index definitions are now marked as custom and versioned:
 
@@ -202,3 +204,18 @@ If an index is to be removed in a later version of the application, you can defi
 ```
 
 If it is no longer needed to have a customization of an out-of-the-box index, then you must copy the out-of-the-box index definition. For example, if you have already deployed `damAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetLucene-8` index, then you must add an index `damAssetLucene-8-custom-4` that contains the index definition of `damAssetLucene-8`.
+
+## Index optimizations {#index-optimizations}
+
+Apache Jackrabbit Oak enables flexible index configurations to efficiently handle search queries. Indexes are especially important for larger repositories. Please ensure that all queries are backed by an appropriate index. Queries without a suitable index may read thousands of nodes, which is then logged as a warning. Such queries should be identified by analyzing the log files, so that index definitions can be optimized. Please see [this page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) for more information.
+
+### Lucene full text index on AEM as a Cloud Service {#index-lucene}
+
+The fulltext index `/oak:index/lucene-2` can become very large because it indexes all the nodes in the AEM repository by default.  Following Adobe’s plans to retire this index it will no longer be used on the product side in AEM as a Cloud Service and it should not be required to run customer code. For AEM as a Cloud Service environments with common Lucene Indexes, Adobe is working with customers individually for a coordinated approach to compensate for this index and to use better, optimized indexes. No action is required by customers without further notice from Adobe. AEM as a Cloud Service customers will be informed by Adobe when there is a need for action with regard to this optimization. If this index is required for custom queries, as a temporary solution, a copy of this index should be created using a different name, for example, `/oak:index/acme.lucene-1-custom-1`, as described [here](/help/operations/indexing.md).
+This optimization does not apply by default to other AEM environments either hosted on-premises or managed by Adobe Managed Services.
+
+## Query optimizations {#index-query}
+
+The **Query Performance** tool allows you to observe both popular and slow JCR queries. Additionally, it is able to analyze queries and display various information about, most notably if an index is being used for this query or not.
+
+Unlike in AEM on premise, AEM as a Cloud Service does not display the **Query Performance** tool in the UI anymore. Instead it is now available via the Developer Console (in Cloud Manager) on the [Queries](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) tab.
