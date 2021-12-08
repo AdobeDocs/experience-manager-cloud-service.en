@@ -3,7 +3,7 @@ title: Supported file formats and MIME types
 description: File formats and MIME types supported by [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
 feature: Asset Management,Renditions
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 ---
 # [!DNL Assets] supported file formats {#supported-file-formats}
@@ -153,7 +153,7 @@ The document formats supported for asset management features are as follows.
 | PPTX        | &#10003;             | &#10003;            | &#10003;     | &#10003;            | &#10003;         |
 | PS          | -                    | -                   | &#10003;     | -                   | -                |
 | RTF         | -                    | &#10003;            | -            | &#10003;            | &#10003;         |
-| TXT         | -                    | &#10003;            | -            | &#10003;            | &#10003;         |
+| TXT         | &#10003;             | &#10003;            | -            | &#10003;            | &#10003;         |
 | XLS         | -                    | -                   | -            | &#10003;            | &#10003;         |
 | XLSX        | &#10003;             | &#10003;            | &#10003;     | &#10003;            | &#10003;         |
 | XML         | -                    | &#10003;            | -            | -                   | -                |
@@ -196,32 +196,40 @@ The document formats supported for asset management features are as follows.
 
 ## Video formats in [!DNL Dynamic Media] for transcoding {#video-dynamic-media-transcoding}
 
-| Video file extension   | Container          | Recommended video codecs    | Unsupported video codecs   |
-|------------------------|--------------------|--------|-------|
-| MP4                    | MPEG-4             | H264/AVC (all profiles) | - |
-| MOV, QT                | Apple QuickTime    | H264/AVC, Apple ProRes422  & HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV  (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR   | Apple Intermediate, Apple Animation  |
-| FLV, F4V               | Adobe Flash        | H264/AVC, Flix VP6, H263, Sorenson  | SWF (vector animation files) |
-| WMV                    | Windows Media 9    | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4)  | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
-| MPG, VOB, M2V, MP2     | MPEG-2             | MPEG-2  |- |
-| M4V                    | Apple iTunes       | H264/AVC | - |
-| AVI                    | A/V Interleave     | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
-| WebM                   | WebM               | Google VP8 |- |
-| OGV, OGG               | Ogg                | Theora, VP3, Dirac  | - |
-| MXF                    | MXF                | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | -|
-| MTS                    | AVCHD              | H264/AVC | - |
-| MKV                    | Matroska           | H264/AVC  | - |
-| R3D, RM                | Red Raw Video      | MJPEG 2000 | -  |
-| RAM, RM                | RealVideo          | Unsupported | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| FLAC                   | Native Flac        | Free lossless audio codec |  - |
-| MJ2                    | Motion JPEG 2000   | Motion JPEG 2000 codec | - |
+| Video file extension | Container | Recommended video codecs | Unsupported video codecs |
+| --- | --- | --- | --- |
+| AVI                  | A/V Interleave     | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| FLV, F4V             | Adobe Flash        | H264/AVC, Flix VP6, H263, Sorenson | SWF (vector animation files) |
+| M4V                  | Apple iTunes       | H264/AVC                    | &minus; |
+| MKV                  | Matroska           | H264/AVC                    | &minus; |
+| MOV, QT              | Apple QuickTime    | H264/AVC, Apple ProRes422  & HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV  (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation  |
+| MP4                  | MPEG-4             | H264/AVC (all profiles)     | &minus; |
+| MPG, VOB, M2V, MP2   | MPEG-2             | MPEG-2                      | &minus; |
+| MXF                  | MXF                | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | &minus; |
+| OGV, OGG             | Ogg                | Theora, VP3, Dirac          | &minus; |
+| WebM                 | WebM               | Google VP8                  | &minus; |
+| WMV                  | Windows Media 9    | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4)  | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
 
 ## Audio formats {#audio-formats}
 
 [!DNL Assets] as a [!DNL Cloud Service] provides XMP metadata extraction support for AIF, ASF, M4A, MP3, WAV, and WMA audio formats.
 
+## Supported inputs formats for audio and video transcription {#audio-video-transcription-formats}
+
+* FLV (with H.264 and AAC codecs) (.flv)
+* MXF (.mxf)
+* MPEG2-PS, MPEG2-TS, 3GP (.ts, .ps, .3gp, .3gpp, .mpg)
+* Windows Media Video (WMV)/ASF (.wmv, .asf)
+* AVI (Uncompressed 8bit/10bit) (.avi)
+* MP4 (.mp4, .m4a, .m4v)
+* Microsoft Digital Video Recording(DVR-MS) (.dvr-ms)
+* Matroska/WebM (.mkv)
+* WAVE/WAV (.wav)
+* QuickTime (.mov)
+
 ## Tips and limitations {#limitations-and-tips}
 
-* Currently, the file size limit for metadata extraction is approximately 10 GB. When uploading very large assets, sometimes metadata extraction operation fails.
+* Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading very large assets, sometimes metadata extraction operation fails.
 
 >[!MORELIKETHIS]
 >

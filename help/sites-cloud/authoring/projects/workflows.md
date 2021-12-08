@@ -15,16 +15,14 @@ The project workflows available out of the box include the following:
 
 Depending on which Project template you select, you have certain workflows available:
 
-|   |**Simple Project**|**Media Project**|**Translation Project**|
-|---|:-:|:-:|:-:|
-|Request Copy |  |x |    |
-|Product Photo Shoot |  |x |  |
-|Project Approval |x |  |    |
-|Request Launch |x |  |    |
-|Request Landing Page |x |  |    |
-|Request Email |x |  |  |
-|DAM Create Language Copy&ast; |  |    |x |
-|DAM Create and Translate Language Copy&ast; |  |    |x |
+|   |**Simple Project**|**Translation Project**|
+|---|:-:|:-:|
+|Project Approval Workfow|x |  |
+|Request Launch |x |  |
+|Request Landing Page |x |  |
+|Request Email |x | |
+|DAM Create Language Copy&ast; |  |x |
+|DAM Create and Translate Language Copy&ast; |   |x |
 
 >[!NOTE]
 >
@@ -42,19 +40,6 @@ For more information on working with workflows in AEM, see the following:
 
 This section describes the workflows available for Projects.
 
-## Request Copy workflow {#request-copy-workflow}
-
-This workflow lets you request a manuscript from a user and then approve it. To start the request copy workflow:
-
-1. In your Media project, select the **+** sign in the **Workflows** tile and select **Request Copy Workflow**.
-1. Enter a manuscript title and a brief summary of what you are requesting. If applicable, enter a target word count, task priority and a due date.
-
-   ![Request copy workflow](/help/sites-cloud/authoring/assets/projects-request-copy.png)
-
-1. Click **Create**. The workflow starts. The task appears in the **Tasks** tile.
-
-   ![Request copy added](/help/sites-cloud/authoring/assets/projects-request-copy-add.png)
-
 ## Project Approval workflow {#project-approval-workflow}
 
 In the Project Approval workflow, you assign content to a user, review, and then approve the content.
@@ -65,8 +50,6 @@ In the Project Approval workflow, you assign content to a user, review, and then
    ![Request approval](/help/sites-cloud/authoring/assets/projects-approval.png)
 
 1. Click **Create**. The workflow starts. The task appears in the **Tasks** tile.
-
-   ![Request approval added](/help/sites-cloud/authoring/assets/projects-approval-add.png)
 
 ## Request Launch workflow {#request-launch-workflow}
 
@@ -81,4 +64,4 @@ This workflow lets you request a launch.
 
 ## Create (and Translate) Language Copy Workflow for Assets {#create-and-translate-language-copy-workflow-for-assets}
 
-The **Create Language Copy** and the **Create and Translate Language Copy** workflows are covered in detail in creating language copies for assets.
+The **Create Language Copy** and the **Create and Translate Language Copy** workflows are covered in detail in [creating language copies for assets.](/help/assets/translate-assets.md)

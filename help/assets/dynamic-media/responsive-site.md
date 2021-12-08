@@ -1,23 +1,23 @@
 ---
-title: Delivering Optimized Images for a Responsive Site
+title: Deliver optimized images for a responsive site
 description: Learn how to use the responsive code feature to deliver optimized images from Dynamic Media.
 feature: Asset Management
-role: Business Practitioner
+role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 ---
-# Delivering optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
+# Deliver optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
 
 Use the Responsive code feature when you want to share the code for responsive serving with your web developer. You copy the responsive (**[!UICONTROL RESS]**) code to the clipboard so you can share it with the web developer.
 
 This feature makes sense to use if your website is on a third-party WCM. However, if your website is on Adobe Experience Manager instead, an offsite image server renders the image and supplies it to the web page.
 
-See also [Embedding the Video Viewer on a Web Page](embed-code.md).
+See also [Embed the Video Viewer on a web page](embed-code.md).
 
-See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
+See also [Link URLs to your web application](linking-urls-to-yourwebapplication.md).
 
 **To deliver optimized images for a responsive site:**
 
-1. Navigate to the image you want supply responsive code for and in the drop-down menu, tap **[!UICONTROL Renditions]**.
+1. Navigate to the image you want supply responsive code for and in the drop-down menu, select **[!UICONTROL Renditions]**.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -31,7 +31,7 @@ See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplicati
    >
    >Image presets are automatically published.
 
-1. Tap **[!UICONTROL RESS]**.
+1. Select **[!UICONTROL RESS]**.
 
     ![chlimage_1-410](assets/chlimage_1-410.png)
 

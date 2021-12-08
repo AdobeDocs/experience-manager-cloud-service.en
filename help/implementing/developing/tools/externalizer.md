@@ -9,11 +9,11 @@ In AEM, the **Externalizer** is an OSGi service that allows you to programmatica
 
 Because an AEM as a Cloud Service instance cannot know its externally visible URL and because sometimes a link has to be created outside of the request scope, this service provides a central place to configure those external URLs and build them.
 
-This article explains how to configure the Externalizer service and how to use it. For technical details of the service, please refer to the [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+This article explains how to configure the Externalizer service and how to use it. For technical details of the service, please refer to the [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Default Behavior of the Externalizer and How to Override {#default-behavior}
 
-Out-of-the box, the Externalizer service has values such as `author-p12345-e6789.adobeaemcloud.com` and `publish-p12345-e6789.adobeaemcloud.com` already set so that without any intervention, your AEM as a Cloud Service installation uses your custom domain.
+Out-of-the box, the Externalizer service has values such as `author-p12345-e6789.adobeaemcloud.com` and `publish-p12345-e6789.adobeaemcloud.com`.
 
 To override such values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_AUTHOR` and `AEM_CDN_DOMAIN_PUBLISH` variables.
 
@@ -120,4 +120,4 @@ This section shows a few examples of how the Externalizer service can be used.
 
 >[!TIP]
 >
->You can find more examples in the [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+>You can find more examples in the [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).

@@ -2,12 +2,16 @@
 title: Language Copy Wizard
 description: Learn about using the Language Copy Wizard in AEM.
 feature: Language Copy
-role: Administrator
+role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 ---
 # Language Copy Wizard {#language-copy-wizard}
 
 The Language Copy Wizard is a guided experience for creating and instrumenting multilingual content structure. The wizard makes creating a language copy simple and fast.
+
+>[!TIP]
+>
+>If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
 
 >[!NOTE]
 >

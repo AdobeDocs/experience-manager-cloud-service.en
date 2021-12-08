@@ -2,7 +2,7 @@
 title: Rollout Conflicts
 description: Learn how to manage and resolve Multi Site Manager rollout conflicts.
 feature: Multi Site Manager
-role: Administrator
+role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 ---
 # Rollout Conflicts {#msm-rollout-conflicts}

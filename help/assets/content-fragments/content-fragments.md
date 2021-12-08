@@ -2,7 +2,7 @@
 title: Working with Content Fragments
 description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to design, create, curate, and use page-independent content, ideal for headless delivery.
 feature: Content Fragments
-role: Business Practitioner
+role: User
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 ---
 # Working with Content Fragments {#working-with-content-fragments}
@@ -75,7 +75,7 @@ These content fragments can then be assembled to provide experiences over a vari
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
 >
->For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments).
+>For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 ## Content Fragments and Content Services {#content-fragments-and-content-services}
 

@@ -1,7 +1,7 @@
 ---
 title: HTTP2 Delivery of Content FAQ
 description: Learn about HTTP2 content delivery.
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 ---
 # HTTP2 Delivery of Content FAQ{#http-delivery-of-content-faq}
@@ -41,11 +41,11 @@ To use HTTP/2, you must meet the following requirements:
 
   To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
-  Click **[!UICONTROL Setup > Application Setup > General Settings]**. Look for the field labeled **Published Server Name**. If you are currently using a generic Dynamic Media domain, you can request moving over to your own custom domain as part of this transition.
+  Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Look for the field labeled **Published Server Name**. If you are currently using a generic Dynamic Media domain, you can request moving over to your own custom domain as part of this transition.
 
 ## What is the process for enabling HTTP/2 for my Dynamic Media account? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-[Use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) and request to switch over to HTTP/2; it is not automatically done for you.
+[Use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) and request to switch over to HTTP/2; it is not automatically done for you.
 
 1. Provide the following information in your support case:
 
@@ -54,7 +54,7 @@ To use HTTP/2, you must meet the following requirements:
 
      To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
-     Click **[!UICONTROL Setup > Application Setup > General Settings]**. Look for the field labeled **[!UICONTROL Published Server Name]**.
+     Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Look for the field labeled **[!UICONTROL Published Server Name]**.
 
      * Verify that you use secure HTTPS for rich media requests.
      * Verify you are using the CDN through Adobe and not managed with a direct relationship.
@@ -62,15 +62,15 @@ To use HTTP/2, you must meet the following requirements:
 
      To find your domains, Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
-     Click **[!UICONTROL Setup > Application Setup > General Settings]**. Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media domain, you can request moving over to your own custom domain as part of this transition.
+     Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media domain, you can request moving over to your own custom domain as part of this transition.
 
-     1. Technical Support adds you to the HTTP/2 customer waitlist based on the order in which requests were submitted.
-     1. When Adobe is ready to handle your request, Customer Care contacts you to coordinate the transition and set a target date.
+     1. Customer Support adds you to the HTTP/2 customer waitlist based on the order in which requests were submitted.
+     1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate the transition and set a target date.
      1. You will be notified after completion and can verify a successful transition over to HTTP2.
 
 ## When can I expect to be transitioned over to HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Requests are processed in the order that they are received by Technical Support.
+Requests are processed in the order that they are received by Customer Support.
 
 >[!NOTE]
 >

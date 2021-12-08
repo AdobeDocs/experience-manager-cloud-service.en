@@ -14,8 +14,10 @@ The update of the [AEM version](/help/implementing/deploying/aem-version-updates
 
 The rest of this document will describe how developers should adapt their practices so they work with both AEM as a Cloud Service's Version updates and customer updates. 
 
+<!--
 >[!NOTE]
 >It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+-->
 
 ## Customer Releases {#customer-releases}
 
@@ -34,14 +36,16 @@ The following video provides a high level overview on how to deploy code to AEM 
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
+<!--
 >[!NOTE]
 >It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
+-->
 
 ## Deploying Content Packages via Cloud Manager and Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
 ### Deployments via Cloud Manager {#deployments-via-cloud-manager}
 
-Customers deploy custom code to cloud environments through Cloud Manager. It should be noted that Cloud Manager transforms locally assembled content packages into an artifact conforming to the Sling Feature Model, which is how an AEM as a Cloud Service application is described when running in a cloud environment. As a result, when looking at the packages in Package Manager on Cloud environments, the name will include "cp2fm" and the transformed packages have all metadata removed. They cannot be interacted with, meaning they cannot be downloaded, replicated, or opened. Detailed documentation about the converter can be [found here](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+Customers deploy custom code to cloud environments through Cloud Manager. It should be noted that Cloud Manager transforms locally assembled content packages into an artifact conforming to the Sling Feature Model, which is how an AEM as a Cloud Service application is described when running in a cloud environment. As a result, when looking at the packages in [Package Manager](/help/implementing/developing/tools/package-manager.md) on Cloud environments, the name will include "cp2fm" and the transformed packages have all metadata removed. They cannot be interacted with, meaning they cannot be downloaded, replicated, or opened. Detailed documentation about the converter can be [found here](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Content packages written for AEM as a Cloud Service applications must have a clean separation between immutable and mutable content and Cloud Manager will only install the mutable content, also outputting a message like:
 
@@ -94,12 +98,12 @@ After switchover to new version of application:
   * Folders (add, modify, remove)
   * Editable templates (add, modify, remove)
   * Context Aware configuration (anything under `/conf`) (add, modify, remove)
-  * Scripts (packages can trigger Install hooks at various stages of the install process of package installation. See the [Jackrabbit filevault documentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks, which include allowed users to execute them).
+  * Scripts (packages can trigger Install hooks at various stages of the install process of package installation. See the [Jackrabbit filevault documentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. Note that AEM CS currently uses Filevault version 3.4.0, which limits install hooks to admin users, system users,and member of the administrators group)).
 
-It is possible to limit mutable content installation to author or publish by embedding packages in an install.author or install.publish folder under `/apps`. Restructuring to reflect this separation was done in AEM 6.5 and details around recommended project restructuring can be found in the [AEM 6.5 documentation.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+It is possible to limit mutable content installation to author or publish by embedding packages in an install.author or install.publish folder under `/apps`. Restructuring to reflect this separation was done in AEM 6.5 and details around recommended project restructuring can be found in the [AEM 6.5 documentation.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
->Content packages are deployed to all environment types (dev, stage, prod). It is not possible to limit deployment to a specific environment. This limitation is in place to ensure the option of a test run of automated execution. Content that is specific to an environment requires manual installation via Package Manager.
+>Content packages are deployed to all environment types (dev, stage, prod). It is not possible to limit deployment to a specific environment. This limitation is in place to ensure the option of a test run of automated execution. Content that is specific to an environment requires manual installation via [Package Manager.](/help/implementing/developing/tools/package-manager.md)
 
 Also, there is no mechanism to rollback the mutable content package changes after they've been applied. If customers detect a problem, they can choose to fix it in their next code release or as a last resort, restore the entire system to a point in time before the deployment.
 
@@ -163,15 +167,23 @@ above appears to be internal, to confirm with Brian -->
 >abstract="Explore usage of package manager for use cases where a content package should be installed as “one off” which includes importing specific content from production on to staging in order to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments and more."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Content Transfer Tool"
 
-There are use cases where a content package should be installed as a "one off". For example importing specific content from production on to staging in order to debug a production issue. For these scenarios, Package Manager can be used in AEM as a Cloud Service environments.
+There are use cases where a content package should be installed as a "one off". For example importing specific content from production on to staging in order to debug a production issue. For these scenarios, [Package Manager](/help/implementing/developing/tools/package-manager.md) can be used in AEM as a Cloud Service environments.
 
 Since Package Manager is a runtime concept, it is not possible to install content or code into the immutable repository, so these content packages should only consist of mutable content (mainly `/content` or `/conf`). If the content package includes content that is mixed (both mutable and immutable content), only the mutable content will be installed.
+
+>[!IMPORTANT]
+>
+>The Package Manager UI might return an **undefined** error message if a package takes longer than 10 minutes to install.
+>
+>This is not due to an error with the installation, but to a timeout that Cloud Service has for all requests.
+>
+>Do not retry the installation if you see such an error. The installation is proceeding correctly in the background. If you do restart the installation some conflicts could be introduced by multiple concurrent import processes.
 
 Any content-packages installed via Cloud Manager (both mutable and immutable) will appear in a frozen state in AEM Package Manager's user interface. These packages cannot be reinstalled, rebuilt or even downloaded, and will listed with a **"cp2fm"** suffix, indicating their installation was managed by Cloud Manager.
 
 ### Including Third Party Packages {#including-third-party}
 
-It is common for customers to include pre-built packages from third party sources such as software vendors like Adobe's translation partners. The recommendation is to host these packages in a remote repository and reference them in the `pom.xml`. This is possible for public repositories and also for private repositories with password protection, as described in [password protected maven repositories](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
+It is common for customers to include pre-built packages from third party sources such as software vendors like Adobe's translation partners. The recommendation is to host these packages in a remote repository and reference them in the `pom.xml`. This is possible for public repositories and also for private repositories with password protection, as described in [password protected maven repositories](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
 If storing the package in a remote repository is not possible, customers can place in a local, file system based Maven repository, which is committed to SCM as part of the project, and referenced by whatever depends on it. The repository would be declared in the project pomas illustrated below:
 

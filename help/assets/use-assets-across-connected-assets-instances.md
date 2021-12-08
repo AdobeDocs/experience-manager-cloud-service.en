@@ -3,18 +3,18 @@ title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: Use assets available on a remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] deployment.
 contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
-role: Administrator,Business Practitioner,Architect
+role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 ---
 # Use Connected Assets to share DAM assets in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. One reason can be geographically distributed existing deployments that are required to work together. Another reason can be acquisitions leading to heterogenous infrastructure that the parent company wants to use together.
+In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. One reason can be geographically distributed existing deployments that are required to work together. Another reason can be acquisitions leading to heterogenous infrastructure, including different [!DNL Experience Manager] versions, that the parent company wants to use together.
 
-Users can create web pages in [!DNL Experience Manager Sites]. [!DNL Experience Manager Assets] is the Digital Asset Management (DAM) system that supplies the required assets for websites. [!DNL Experience Manager] now supports the above use case by integrating [!DNL Sites] and [!DNL Assets].
+Connected Assets functionality supports the above use case by integrating [!DNL Experience Manager Sites] and [!DNL Experience Manager Assets]. Users can create web pages in [!DNL Sites] that use the digital assets from a separate [!DNL Assets] deployments.
 
 ## Overview of Connected Assets {#overview-of-connected-assets}
 
-When editing pages in [!UICONTROL Page Editor] as target destination, the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment that acts as a source of assets. The administrators create a one-time integration of a deployment of [!DNL Experience Manager] with [!DNL Sites] capability with another deployment of [!DNL Experience Manager] with [!DNL Assets] capability.
+When editing pages in [!UICONTROL Page Editor] as target destination, the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment that acts as a source of assets. The administrators create a one-time integration of a deployment of [!DNL Experience Manager] with [!DNL Sites] capability with another deployment of [!DNL Experience Manager] with [!DNL Assets] capability. You can also use Dynamic Media images in your site's web pages through Connected Assets and leverage the Dynamic Media functionalities, such as smart crop and image presets.
 
 For the [!DNL Sites] authors, the remote assets are available as read-only local assets. The functionality supports seamless search and use of a few remote assets at a time. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk.
 
@@ -114,14 +114,14 @@ You can check the connectivity between the configured [!DNL Sites] deployments a
 
 You can configure a connection between [!DNL Sites] deployment and [!DNL Dynamic Media] deployment that allows webpage authors to use [!DNL Dynamic Media] images in their web pages. While authoring webpages, the experience of using remote Assets and remote [!DNL Dynamic Media] deployments remains the same. This allows you to leverage the [!DNL Dynamic Media] functionality via Connected Assets feature, for example smart crop and image presets.
 
-To configure this connection, follow these steps.
+To configure the connection, follow these steps:
 
-1. Create Connected Assets configuration as described above. When configuring the functionality, select **[!UICONTROL Fetch original rendition for Dynamic Media Connected Assets]** option.
+1. Create Connected Assets configuration as described above, except when configuring the functionality, select **[!UICONTROL Fetch original rendition for Dynamic Media Connected Assets]** option.
 
 1. Configure [!DNL Dynamic Media] on local [!DNL Sites] and remote [!DNL Assets] deployments. Follow the instructions to [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * Use the same company name in all configurations.
-   * On local [!DNL Sites], in [!UICONTROL Dynamic Media sync mode], select **[!UICONTROL Disabled by default]**. The Sites deployment needs only read-only access to the [!DNL Dynamic Media] account.
+   * On local [!DNL Sites], in [!UICONTROL Dynamic Media sync mode], select **[!UICONTROL Disabled by default]**. The [!DNL Sites] deployment needs only read-only access to the [!DNL Dynamic Media] account.
    * On local [!DNL Sites], in the **[!UICONTROL Publish Assets]** option, select **[!UICONTROL Selective Publish]**. Do not select **[!UICONTROL Sync All Content]**.
    * On remote [!DNL Assets] deployment, in [!UICONTROL Dynamic Media sync mode], select **[!UICONTROL Enabled by default]**.
 
@@ -140,13 +140,17 @@ Only those tags of remote assets are fetched that have an exact corresponding ta
 Use the above setup to try the authoring experience to understand how the functionality works. Use documents or images of your choice on the remote DAM deployment.
 
 1. Navigate to the [!DNL Assets] interface on the remote deployment by accessing **[!UICONTROL Assets]** > **[!UICONTROL Files]** from [!DNL Experience Manager] workspace. Alternatively, access `https://[assets_servername_ams]:[port]/assets.html/content/dam` in a browser. Upload the assets of your choice.
+
 1. On the [!DNL Sites] deployment, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Provide `ksaner` as user name, select the option provided, and click **[!UICONTROL OK]**.
+
 1. Open a `We.Retail` website page at **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Edit the page. Alternatively, access `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` in a browser to edit a page.
 
    Click **[!UICONTROL Toggle Side Panel]** on upper-left corner of the page.
 
 1. Open the [!UICONTROL Assets] tab and click **[!UICONTROL Log in to Connected Assets]**.
+
 1. Provide the credentials -- `ksaner` as user name and `password` as password. This user has authoring permissions on both the [!DNL Experience Manager] deployments.
+
 1. Search for the asset that you added to DAM. The remote assets are displayed in the left panel. Filter for images or documents and further filter for types of supported documents. Drag the images on an `Image` component and documents on a `Download` component.
 
    The fetched assets are read-only on the local [!DNL Sites] deployment. You can still use the options provided by your [!DNL Sites] components to edit the fetched asset. The editing by components is non-destructive.
@@ -192,15 +196,16 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 
 ## Limitations and best practices {#tip-and-limitations}
 
-* To get insights about asset usage, configure the [Asset Insight](/help/assets/assets-insights.md) functionality on the [!DNL Sites] instance.
+* To get insights about asset usage, configure the [Assets Insight](/help/assets/assets-insights.md) functionality on the [!DNL Sites] instance.
 
 ### Permissions and asset management {#permissions-and-managing-assets}
 
 * Local assets are not synchronized with the original assets on the remote deployment. Any edits, deletions, or revoking of permissions on the DAM deployment are not propagated downstream.
 * Local assets are read-only copies. [!DNL Experience Manager] components do non-destructive edits to assets. No other edits are allowed.
 * Locally fetched assets are available for authoring purposes only. Asset update workflows cannot be applied and metadata cannot be edited.
-* Only images and the listed document formats are supported. Content Fragments and Experience Fragments are not supported.
-* [!DNL Experience Manager] does not fetch the metadata schemas. It means that all the fetched metadata may not be displayed. If the schema are updated separately then all the properties are displayed.
+* When using [!DNL Dynamic Media] in [!DNL Sites] pages the original asset is not fetched and stored on the local deployment. The `dam:Asset` node, the metadata, and renditions generated by [!DNL Assets] deployment are all fetched on the [!DNL Sites] deployment.
+* Only images and the listed document formats are supported. [!DNL Content Fragments] and [!DNL Experience Fragments] are not supported.
+* [!DNL Experience Manager] does not fetch the metadata schemas. It means that all the fetched metadata may not be displayed. If the schema are separately updated on the [!DNL Sites] deployment then all the metadata properties are displayed.
 * All [!DNL Sites] authors have read permissions on the fetched copies, even if authors cannot access the remote DAM deployment.
 * No API support to customize the integration.
 * The functionality supports seamless search and use of remote assets. To make many remote assets available on local deployment in one-go, consider migrating the assets.
@@ -210,8 +215,8 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 
 * [!DNL Assets] deployment on [!DNL Adobe Managed Services] is supported.
 * [!DNL Sites] can connect to a single [!DNL Assets] repository at a time.
-* A license of [!DNL Assets] working as remote repository.
-* One or more licenses of [!DNL Sites] working as local authoring deployment.
+* A license of [!DNL Assets] working as remote repository is required.
+* One or more licenses of [!DNL Sites] working as local authoring deployment is required.
 
 ### Usage {#usage}
 

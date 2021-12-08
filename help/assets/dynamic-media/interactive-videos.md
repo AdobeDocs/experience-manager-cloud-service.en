@@ -2,31 +2,30 @@
 title: Interactive Videos
 description: Learn how to work with interactive video and shoppable video in Dynamic Media.
 feature: Interactive Videos
-role: Business Practitioner
+role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 ---
 # Interactive Videos{#interactive-videos}
 
+You can easily create interactive videos&ndash;also know as shoppable videos&ndash;that drive conversion directly from the video. Customer engagement with the video takes place in a panel alongside the video player where related service, information, or product thumbnails are scrolled into view based on what is featured in the video. Customers can select the thumbnail and be linked directly to the service, or add the item to a shopping cart for immediate purchase, or be linked to a web page for more information.
 
-You can easily create interactive videos&ndash;also know as shoppable videos&ndash;that drive conversion directly from the video. Customer engagement with the video takes place in a panel alongside the video player where related service, information, or product thumbnails are scrolled into view based on what is featured in the video. Customers can tap the thumbnail and be linked directly to the service, or add the item to a shopping cart for immediate purchase, or be linked to a web page for more information.
-
-When the video ends, a visual summary of all offerings is displayed to drive a call to action. Customers have another opportunity to tap the item they want. Actionable and specific experiences such as these increase customer engagements and conversions.
+When the video ends, a visual summary of all offerings is displayed to drive a call to action. Customers have another opportunity to select the item they want. Actionable and specific experiences such as these increase customer engagements and conversions.
 
 See also [Interactive Images](/help/assets/dynamic-media/interactive-images.md).
 
 ## Interactive video in action {#interactive-video-in-action}
 
-To see an interactive, shoppable video in action, click [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), scroll to the **[!UICONTROL Shoppable Media]** heading on the page, then click the shoppable video to begin playback.
+To see an interactive, shoppable video in action, select [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), scroll to the **[!UICONTROL Shoppable Media]** heading on the page, then select the shoppable video to begin playback.
 
 * During playback, as products are used in the video, the identical product appears on the right as a thumbnail image.
 
-* To pause the video and open the product's Quick view, tap the thumbnail. For example, tap the KitchenAid thumbnail image in the video to experience a 360-degree spin view of the mixer, or zoom in to see mixer details.
+* To pause the video and open the product's Quickview, select the thumbnail. For example, select the KitchenAid thumbnail image in the video to experience a 360° spin view of the mixer, or zoom in to see mixer details.
 
-See also [Using Interactive Video with Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
+See also [Use Interactive Video with Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
 
 <!-- 
 
-There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video
+There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video
 
 -->
 
@@ -38,7 +37,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 >[!NOTE]
 >
->If you create an interactive video to launch a web page when a user taps a thumbnail image, some devices block the pop-up web page from opening. In such cases, change the pop-up blocker setting on the device. For example, on an Apple iPhone 6, tap **[!UICONTROL Settings &gt; Safari &gt; Block Pop-ups]**, then slide the control to **[!UICONTROL Off]**. Now, when you play an interactive video and click a thumbnail, you are prompted if you want to open the pop-up. If you accept, the web page opens.
+>If you create an interactive video to launch a web page when a user selects a thumbnail image, some devices block the pop-up web page from opening. In such cases, change the pop-up blocker setting on the device. For example, on an Apple iPhone 6, go to **[!UICONTROL Settings]** > **[!UICONTROL Safari]** > **[!UICONTROL Block Pop-ups]**, then slide the control to **[!UICONTROL Off]**. Now, when you play an interactive video and select a thumbnail, you are prompted if you want to open the pop-up. If you accept, the web page opens.
 
 ### Watch how interactive videos are created {#watch-how-interactive-videos-are-created}
 
@@ -47,45 +46,43 @@ Watch a walkthrough on [how interactive videos are created](https://s7d5.scene7.
 
 ### Adobe Customer Success Webinar {#adobe-customer-success-webinar}
 
-The [Using Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) webinar teaches you how to use interactive video and other features to tie conversion driven events into your video marketing content.
+The [Use Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) webinar teaches you how to use interactive video and other features to tie conversion driven events into your video marketing content.
 
 ## Quick Start: Interactive Videos {#quick-start-interactive-videos}
 
 The following step-by-step workflow description is designed to help you get up and running quickly with interactive videos in Dynamic Media.
 
-Look for the **Example** heading within some of the Quick Start tasks. It contains a brief tutorial that is based on this [starting demo web page that *does not* have interactivity added to it yet](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html).
+Look for the **Example** heading within some of the Quick Start tasks. It contains a brief tutorial that is based on this [starting demo web page that *does not* have interactivity added to it yet](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html).
 
 The **Examples** help to illustrate the steps of integrating interactive videos on your own website.
 
-When you finish the tutorial in the last Example section, [your final demo web page with the fully integrated interactive video appears this way](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html).
-
-
+When you finish the tutorial in the last Example section, [your final demo web page with the fully integrated interactive video appears this way](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html).
 
 Interactive video steps:
 
-1. **(Optional) Identify Quick view variables** - Start by identifying dynamic variables used by your existing Quick view implementation. You use the variables to map product thumbnails to their corresponding product Quick view when you create your interactive video. See [(Optional) Identifying Quick view variables](#optional-identifying-quickview-variables).
+1. **(Optional) Identify Quickview variables** - Start by identifying dynamic variables used by your existing Quickview implementation. You use the variables to map product thumbnails to their corresponding product Quickview when you create your interactive video. See [(Optional) Identifying Quickview variables](#optional-identifying-quickview-variables).
    **This step is only required if all the following are true:**
    • You want to add interactivity to your video by triggering to Quick views.
    • Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM® WebSphere® Commerce, Elastic Path, SAP Hybris, or Intershop.
 
 1. **(Optional) Create an Interactive Video viewer preset** - Customize the appearance and behavior of various components that make up the player such as the video scrubber and the interactive thumbnails.
    Creating your own Interactive Video viewer preset is not required if you intend to use the out-of-the-box Interactive Video viewer presets `Shoppable_Video_Light` or `Shoppable_Video_Dark` instead.
-   See [Creating a New Viewer Preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) (optional) and [Special considerations for creating an Interactive Viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
+   See [Create a Viewer Preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) (optional) and [Special considerations for creating an Interactive Viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
 
 1. **Upload a video and its associated image assets** - Upload a video and associated images that you want to make interactive.
-   See [Uploading a video and its associated thumbnail assets](#uploading-a-video-and-its-associated-thumbnail-assets).
+   See [Upload a video and its associated thumbnail assets](#uploading-a-video-and-its-associated-thumbnail-assets).
 
-1. **Add interactivity to your video** - Add one or more time segments to the video. Then, associate image thumbnails within those time segments. Assign each image thumbnail to an action such as a hyperlink, a Quick view, or an Experience Fragment.
+1. **Add interactivity to your video** - Add one or more time segments to the video. Then, associate image thumbnails within those time segments. Assign each image thumbnail to an action such as a hyperlink, a Quickview, or an Experience Fragment.
    (The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.)
-   Finish by publishing the interactive video assets. Publishing creates the embed code or URL that you eventually copy and apply to your website landing page. See [Adding interactivity to your video](#adding-interactivity-to-your-video).
-   See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+   Finish by publishing the interactive video assets. Publishing creates the embed code or URL that you eventually copy and apply to your website landing page. See [Add interactivity to your video](#adding-interactivity-to-your-video).
+   See [Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-1. **Add an interactive video to your website or to your website in Experience Manager** - If you use Experience Manager Sites or eCommerce, or both, add the interactive video to a web page in Experience Manager. Drag the Interactive Media component onto the page. See [Adding Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
-   Use the embed code or URL to integrate your interactive video with your website experiences. See [Integrating an interactive video with your website](#integrating-an-interactive-video-with-your-website).
-   If you are using a third-party WCM (Web Content Manager), you must integrate the new interactive video with the existing Quick view implementation that is used on your website. See [Integrating an interactive video with an existing Quick view](#integrating-an-interactive-video-with-an-existing-quickview).
-   [Adding Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+1. **Add an interactive video to your website or to your website in Experience Manager** - If you use Experience Manager Sites or eCommerce, or both, add the interactive video to a web page in Experience Manager. Drag the Interactive Media component onto the page. See [Add Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+   Use the embed code or URL to integrate your interactive video with your website experiences. See [Integrate an interactive video with your website](#integrating-an-interactive-video-with-your-website).
+   If you are using a third-party WCM (Web Content Manager), you must integrate the new interactive video with the existing Quickview implementation that is used on your website. See [Integrate an interactive video with an existing Quickview](#integrating-an-interactive-video-with-an-existing-quickview).
+   [Add Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-## (Optional) Identifying Quick view variables {#optional-identifying-quickview-variables}
+## (Optional) Identify Quickview variables {#optional-identifying-quickview-variables}
 
 >[!NOTE]
 >
@@ -96,48 +93,48 @@ Interactive video steps:
 >
 >If your implementation of Experience Manager uses eCommerce, you can skip this task and proceed to the next task.
 
-Start by identifying dynamic variables used by your existing Quick view implementation so that you can map product thumbnails to their corresponding product Quick view during the interactive video creation process.
+Start by identifying dynamic variables used by your existing Quickview implementation so that you can map product thumbnails to their corresponding product Quickview during the interactive video creation process.
 
-When you add time segments to a video, you assign a SKU (Stock Keeping Unit) and any additional variables to each thumbnail you add to a segment. Such variables are used later to display the right Quick view product.
+When you add time segments to a video, you assign a SKU (Stock Keeping Unit) and any additional variables to each thumbnail you add to a segment. Such variables are used later to display the right Quickview product.
 
-It is important to properly identify what variables are required to uniquely trigger a product Quick view.
+It is important to properly identify what variables are required to uniquely trigger a product Quickview.
 
-Sometimes it is enough to consult with IT specialists responsible for your existing Quick view implementation. They are likely to know the minimum set of data that identifies Quick view in the system. However, it is possible to simply analyze the existing behavior of the front-end code.
+Sometimes it is enough to consult with IT specialists responsible for your existing Quickview implementation. They are likely to know the minimum set of data that identifies Quickview in the system. However, it is possible to simply analyze the existing behavior of the front-end code.
 
-Most Quick view implementations use the following paradigm:
+Most Quickview implementations use the following paradigm:
 
-* User activates a user interface element on the website. For example, clicking a "Quick view" button.
-* The website sends an Ajax request to the backend to load the Quick view data or content, if needed.
-* The Quick view data is translated into the content in preparation for rendering on the web page.
+* User activates a user interface element on the website. For example, selecting a "Quickview" button.
+* The website sends an Ajax request to the backend to load the Quickview data or content, if needed.
+* The Quickview data is translated into the content in preparation for rendering on the web page.
 * Finally, the front-end code visually renders such content on the screen.
 
-The approach, therefore, is to visit different areas of your existing website where Quick view is implemented. Then trigger the Quick view, and acquire the Ajax URL sent by the web page for loading the Quick view data or content.
+The approach, therefore, is to visit different areas of your existing website where Quickview is implemented. Then trigger the Quickview, and acquire the Ajax URL sent by the web page for loading the Quickview data or content.
 
 Normally there is no need for you to use any specialized debugging tools. Modern web browsers feature web inspectors that do an adequate job. The following are a few examples of web browsers that include web inspectors:
 
-* To see all outgoing HTTP requests in Google Chrome, press **F12** (Windows®) or **Command+Options+I** (Mac) to open the Developer Tools panel, and then click the **Network** tab.
+* To see all outgoing HTTP requests in Google Chrome, press **F12** (Windows®) or **Command+Options+I** (Mac) to open the Developer Tools panel, and then select the **Network** tab.
 
 * In Firefox, you can either activate the Firebug plug-in by pressing **F12** (Windows®) or **Command+Option+I** (Mac) and use its **[!UICONTROL Net]** tab, or you can use the built-in Inspector tool and its Network tab.
 
 * In Internet Explorer, activate the debugger tool by pressing **F12**.
 
-When network monitoring is turned on in the browser, trigger the Quick view on the page.
+When network monitoring is turned on in the browser, trigger the Quickview on the page.
 
-Now find the Quick view Ajax URL in the network log and copy the recorded URL for future analysis. Usually when you trigger the Quick view there are numerous requests that are sent out to the server. Typically, the Quick view Ajax URL is one of the first in the list. It has either a complex query string portion or path, and its response MIME type is either `text/html`, `text/xml`, or `text/javascript`.
+Now find the Quickview Ajax URL in the network log and copy the recorded URL for future analysis. Usually when you trigger the Quickview there are numerous requests that are sent out to the server. Typically, the Quickview Ajax URL is one of the first in the list. It has either a complex query string portion or path, and its response MIME type is either `text/html`, `text/xml`, or `text/javascript`.
 
-During this process, it is important to visit different areas of your website, with different product categories and types. The reason is that Quick view URLs have parts that are common for a given website category, but change only if you visit a different area of the website.
+During this process, it is important to visit different areas of your website, with different product categories and types. The reason is that Quickview URLs have parts that are common for a given website category, but change only if you visit a different area of the website.
 
-In the simplest case, the only variable part in the Quick view URL is the product SKU. In this case, the product SKU value is the only data piece needed for adding thumbnails to a time segment in the interactive video in Experience Manager.
+In the simplest case, the only variable part in the Quickview URL is the product SKU. In this case, the product SKU value is the only data piece needed for adding thumbnails to a time segment in the interactive video in Experience Manager.
 
-However, in complex cases, the Quick view URL has different varying elements in addition to the product SKU, such as category ID, and color code. In such cases, every such element becomes a separate variable in the thumbnail data definition in Experience Manager.
+However, in complex cases, the Quickview URL has different varying elements in addition to the product SKU, such as category ID, and color code. In such cases, every such element becomes a separate variable in the thumbnail data definition in Experience Manager.
 
-Consider the following examples of Quick view URLs and their resulting thumbnail variables:
+Consider the following examples of Quickview URLs and their resulting thumbnail variables:
 
 <table>
   <tbody>
   <tr>
     <td><p>Single SKU, found in the query string.</p> </td>
-    <td><p>The recorded Quick view URLs include the following:</p>
+    <td><p>The recorded Quickview URLs include the following:</p>
     <ul>
       <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
@@ -147,7 +144,7 @@ Consider the following examples of Quick view URLs and their resulting thumbnail
   </tr>
   <tr>
     <td><p>Single SKU, found in the URL path.</p> </td>
-    <td><p>The recorded Quick view URLs include the following:</p>
+    <td><p>The recorded Quickview URLs include the following:</p>
     <ul>
       <li><p><code>https://server/product/6422350843</code></p> </li>
       <li><p><code>https://server/product/1607745002</code></p> </li>
@@ -156,7 +153,7 @@ Consider the following examples of Quick view URLs and their resulting thumbnail
   </tr>
   <tr>
     <td><p>SKU and category ID in the query string.</p> </td>
-    <td><p>The recorded Quick view URLs include the following:</p>
+    <td><p>The recorded Quickview URLs include the following:</p>
     <ul>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
@@ -175,9 +172,9 @@ Consider the following examples of Quick view URLs and their resulting thumbnail
 
 When the above approach is applied to the Example website, you have a web page with several product thumbnails, each having a "SEE MORE" button:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
-After you activate all product Quick views available on the page, you get the following list of Quick view requests made to the backend:
+After you activate all product Quick views available on the page, you get the following list of Quickview requests made to the backend:
 
 * datafeed/candles-233396346.json
 * datafeed/candles-233978050.json
@@ -205,7 +202,7 @@ Looking at the server calls, product-specific information is only present in the
 * The first type is candles, cushions, furniture, and glassware. You can call this "product category".
 * The second type is product code, such as 233916597. You can assume it is "product SKU".
 
-Given this information, the entire Quick view URL has the following pattern:
+Given this information, the entire Quickview URL has the following pattern:
 
 `/datafeed/$categoryId$-$SKU$.json`
 
@@ -213,42 +210,42 @@ Based on such analysis, you conclude that you can use the following two variable
 
 You are now ready to upload a video and its associated thumbnail assets.
 
-## (Optional) Creating an Interactive Video viewer preset {#optional-creating-an-interactive-video-viewer-preset}
+## (Optional) Create an Interactive Video viewer preset {#optional-creating-an-interactive-video-viewer-preset}
 
 You can skip this task and continue to the next if you intend to use either of the default, out-of-the-box, Interactive Video viewer preset types `Shoppable_Video_dark` or `Shoppable_Video_light`.
 
-When a thumbnail is tapped in the authoring environment, a preview of the Quick view dialog box appears.
+When a thumbnail is selected in the authoring environment, a preview of the Quickview dialog box appears.
 
 ![chlimage_1-21](assets/chlimage_1-127.png)
 
 You can optionally create your own custom Interactive Video viewer preset. You can determine, among other things, the styling of the video player, the interactive thumbnails, and the thumbnail grid view that appears at the end of the video.
 
-An Interactive Video viewer preset properly renders the video and all timeline segments you have added. It also uses an example default Quick view when you click a product thumbnail in Preview mode so you can test its interactivity before publishing.
+An Interactive Video viewer preset properly renders the video and all timeline segments you have added. It also uses an example default Quickview when you select a product thumbnail in Preview mode so you can test its interactivity before publishing.
 
 After you save the viewer preset, its state is automatically set to **On **in the Viewer Presets page. This state means that it is visible in the Dynamic Media component and whenever you preview a video with it. Be sure you also manually publish your new viewer preset.
 
-See [Creating a New Viewer Preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) to create your own Interactive Video viewer preset.
+See [Create a Viewer Preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) to create your own Interactive Video viewer preset.
 
-## Uploading a video and its associated thumbnail assets {#uploading-a-video-and-its-associated-thumbnail-assets}
+## Upload a video and its associated thumbnail assets {#uploading-a-video-and-its-associated-thumbnail-assets}
 
-If you have already uploaded your video and thumbnail assets, proceed to [Adding interactivity to your video](#adding-interactivity-to-your-video).
+If you have already uploaded your video and thumbnail assets, proceed to [Add interactivity to your video](#adding-interactivity-to-your-video).
 
-If you uploaded the wrong videos or images, or you want to delete uploaded videos or images that you no longer need, see [Deleting Assets](/help/assets/manage-digital-assets.md#delete-assets).
+If you uploaded the wrong videos or images, or you want to delete uploaded videos or images that you no longer need, see [Delete Assets](/help/assets/manage-digital-assets.md#delete-assets).
 
 To upload a video and its associated thumbnail assets:
 
 1. Upload the video and associated thumbnail assets to the folder or folders you want.
 
-   See [Uploading assets](/help/assets/manage-digital-assets.md).
-   See [Uploading assets using FTP job scheduling](/help/assets/manage-digital-assets.md).
+   See [Upload assets](/help/assets/manage-digital-assets.md).
+   See [Upload assets using FTP job scheduling](/help/assets/manage-digital-assets.md).
 
    Now add interactivity to your video.
 
-## Adding interactivity to your video {#adding-interactivity-to-your-video}
+## Add interactivity to your video {#adding-interactivity-to-your-video}
 
 You add timeline segments to a video using the in-place visual editor on the Create Interactive Video page.
 
-After you add timeline segments, you add thumbnail images within each segment. For each thumbnail that you add, you apply an action to it. For example, you can apply a Quick view to the thumbnail, or you can assign a hyperlink to it, or an Experience Fragment.
+After you add timeline segments, you add thumbnail images within each segment. For each thumbnail that you add, you apply an action to it. For example, you can apply a Quickview to the thumbnail, or you can assign a hyperlink to it, or an Experience Fragment.
 
 See [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
@@ -269,19 +266,19 @@ After you save your interactive video, the video is immediately opened into Prev
 1. In the Assets view, navigate to the video that you uploaded and want to make interactive.
 1. Do one of the following:
 
-    * Hover on the image, then tap **[!UICONTROL Select]** (checkmark icon). On the toolbar, tap **[!UICONTROL Edit]**.
+    * Hover on the image, then select **[!UICONTROL Select]** (checkmark icon). On the toolbar, select **[!UICONTROL Edit]**.
 
-    * Hover on the image, then tap **[!UICONTROL More actions]** (three dots icon) **[!UICONTROL > Edit]**.
+    * Hover on the image, then select **[!UICONTROL More actions]** (three dots icon) **[!UICONTROL > Edit]**.
 
-    * To open it in the Detail View page, tap the image. In the toolbar, tap **[!UICONTROL Edit]**.
+    * To open it in the Detail View page, select the image. On the toolbar, select **[!UICONTROL Edit]**.
 
 1. On the Create Interactive Video page, do any one of the following:
 
-    * To begin playing the video, tap the **[!UICONTROL Play]** button. When a particular product, service, or detail that you want to highlight comes into view, tap **[!UICONTROL Add Segment]** on the toolbar. Repeat until you have reached the end of the video.
+    * To begin playing the video, select the **[!UICONTROL Play]** button. When a particular product, service, or detail that you want to highlight comes into view, select **[!UICONTROL Add Segment]** on the toolbar. Repeat until you have reached the end of the video.
 
-      For each time segment that you add, you can assign one or more thumbnail images to it. You can then link those thumbnails to Quick view product pages for customers to purchase or to web pages for more information.
+      For each time segment that you add, you can assign one or more thumbnail images to it. You can then link those thumbnails to Quickview product pages for customers to purchase or to web pages for more information.
 
-    * To begin playing the video, tap the **[!UICONTROL Play]** button. When a particular product, service, or detail that you want to highlight comes into view, tap **[!UICONTROL Pause]**. Tap **[!UICONTROL Add Segment]**.
+    * To begin playing the video, select the **[!UICONTROL Play]** button. When a particular product, service, or detail that you want to highlight comes into view, select **[!UICONTROL Pause]**. Select **[!UICONTROL Add Segment]**.
 
       Continue playing and pausing the video at points along the timeline where you want to add a segment until you reach the end of the video.
 
@@ -350,9 +347,9 @@ After you save your interactive video, the video is immediately opened into Prev
 
       Use the following navigation shortcuts to quickly check and fine-tune your video segments:
 
-        * To seek the video directly to the beginning of that segment, tap the leading blue oval.
-        * To seek the video directly to the end of that segment, tap the trailing blue oval.
-        * To return video playback to the start of that segment, tap the entire segment.
+        * To seek the video directly to the beginning of that segment, select the leading blue oval.
+        * To seek the video directly to the end of that segment, select the trailing blue oval.
+        * To return video playback to the start of that segment, select the entire segment.
 
    ![chlimage_1-26](assets/chlimage_1-132.png)
 
@@ -360,13 +357,13 @@ After you save your interactive video, the video is immediately opened into Prev
 
     * To delete a segment
 
-      Select the last segment that is on the timeline, then on the toolbar, tap **[!UICONTROL Delete Segment]**. If two or more segments are selected, the Delete Segment feature is disabled.
+      Select the last segment that is on the timeline, then on the toolbar, select **[!UICONTROL Delete Segment]**. If two or more segments are selected, the Delete Segment feature is disabled.
 
-      You can only delete the last segment. For example, if you wanted to delete all the segments on the timeline, you must always select the last one, then tap **[!UICONTROL Delete Segment]**.
+      You can only delete the last segment. For example, if you wanted to delete all the segments on the timeline, you must always select the last one, then select **[!UICONTROL Delete Segment]**.
 
 1. Select a time segment to which you want to associate one or more thumbnail images.
-1. To the right of the video, tap the **[!UICONTROL Content]** tab.
-1. Under the Content tab, tap **[!UICONTROL Select Assets]**, then browse and select all the image assets that you want to use with your video. The selected assets are added to the Asset Selector panel in the Content tab.
+1. To the right of the video, select the **[!UICONTROL Content]** tab.
+1. Under the Content tab, select **[!UICONTROL Select Assets]**, then browse and select all the image assets that you want to use with your video. The selected assets are added to the Asset Selector panel in the Content tab.
 
 1. In the asset selector below the Content tab, do any of the following:
 
@@ -374,14 +371,14 @@ After you save your interactive video, the video is immediately opened into Prev
       <tbody>
         <tr>
         <td>To associate a thumbnail to the selected timeline segment</td>
-        <td><p>Tap the image in the asset selector panel on the right.</p> <p>You can add as many thumbnails as you want to a timeline segment. For each image you select, a check mark appears over the image in the asset selector.</p> </td>
+        <td><p>Select the image in the asset selector panel on the right.</p> <p>You can add as many thumbnails as you want to a timeline segment. For each image you select, a check mark appears over the image in the asset selector.</p> </td>
         </tr>
         <tr>
         <td>To remove a thumbnail from the selected timeline segment</td>
         <td><p>Do any of the following:</p>
           <ul>
-          <li>In the asset selector panel, tap an image with a check mark to deselect it. The image asset is removed from the timeline segment.<br /> </li>
-          <li>In the selected timeline segment, tap an image, then on the toolbar, tap <strong>Delete Product</strong>.</li>
+          <li>In the asset selector panel, select an image with a check mark to deselect it. The image asset is removed from the timeline segment.<br /> </li>
+          <li>In the selected timeline segment, select an image, then on the toolbar, select <strong>Delete Product</strong>.</li>
           </ul> </td>
         </tr>
       </tbody>
@@ -389,45 +386,45 @@ After you save your interactive video, the video is immediately opened into Prev
 
    ![Asset picker](assets/chlimage_1-133.png)
 
-   Tapping an image in the asset selector panel adds it to the selected timeline segment.
+   Selecting an image in the asset selector panel adds it to the selected timeline segment.
 
-1. Select a single thumbnail image within one of the timeline segments, then tap the **[!UICONTROL Actions]** tab.
+1. Select a single thumbnail image within one of the timeline segments, then select the **[!UICONTROL Actions]** tab.
 1. Do any of the following:
    <table> 
     <tbody> 
       <tr> 
-      <td>To associate the selected thumbnail image with a Quick view</td> 
-      <td><p>Under Action Type, tap <strong>Quick view</strong>.</p> <p>If you are an Experience Manager Sites and Ecommerce customer:</p> 
+      <td>To associate the selected thumbnail image with a Quickview</td> 
+      <td><p>Under Action Type, select <strong>Quickview</strong>.</p> <p>If you are an Experience Manager Sites and Ecommerce customer:</p> 
        <ul> 
        <li>Notice that the SKU Value text field is pre-populated with the selected product's SKU (Stock Keeping Unit). The SKU is a unique identifier for each distinct product or service that you offer. This field is populated automatically when the image is associated with a product in Experience Manager Commerce.</li> 
-       <li>If the pre-populated SKU is incorrect, tap or click the Product Picker icon (magnifying glass) to open the Select Product page. Tap the product you want to use, then tap the check mark in the upper-right corner of the page. You are returned to the Interactive Video Editor.</li> 
+       <li>If the pre-populated SKU is incorrect, select the Product Picker icon (magnifying glass) to open the Select Product page. Select the product you want to use, then select the check mark in the upper-right corner of the page. You are returned to the Interactive Video Editor.</li> 
        </ul> <p> If you are <em>not</em> an Experience Manager Sites or Ecommerce customer</p> 
        <ul> 
        <li>See <a href="/help/assets/dynamic-media/carousel-banners.md#identifying-hotspot-and-image-map-variables">Identifying hotspot variables</a>. These variables must be defined.</li> 
        <li>By default, this SKU field uses the image asset's filename without the extension. If you follow a standard naming convention for your files based on SKU, then this field typically does not require any additional edits. </li> 
-       <li>Otherwise, edit the default value and enter the correct SKU value. In the SKU Value text field, type the product's SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. The entered SKU value automatically populates the variable portion of the Quick view template so that the system knows to associate the tapped image with a particular SKU's Quickview.</li> 
-       </ul> <p>(Optional) If there are other variables within the Quick view that you must use to further identify a product, tap <strong>Add Generic Variable</strong>. In the text field, specify an extra variable. For example, <code>category=Womens</code> is an added variable.</p> <p> </p> </td> 
+       <li>Otherwise, edit the default value and enter the correct SKU value. In the SKU Value text field, type the product's SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. The entered SKU value automatically populates the variable portion of the Quickview template so that the system knows to associate the selected image with a particular SKU's Quickview.</li> 
+       </ul> <p>(Optional) If there are other variables within the Quickview that you must use to further identify a product, select <strong>Add Generic Variable</strong>. In the text field, specify an extra variable. For example, <code>category=Womens</code> is an added variable.</p> <p> </p> </td> 
       </tr> 
       <tr> 
       <td>To associate the selected thumbnail image with a hyperlink</td> 
-      <td><p>Under Action Type, tap <strong>Hyperlink</strong>, then do one of the following:</p> 
+      <td><p>Under Action Type, select <strong>Hyperlink</strong>, then do one of the following:</p> 
        <ul> 
-       <li>If you are an Experience Manager Sites customer, tap the Site Selector icon (folder) to navigate to a webpage. The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.</li> 
+       <li>If you are an Experience Manager Sites customer, select the Site Selector icon (folder) to navigate to a webpage. The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.</li> 
        <li>If you are a standalone Dynamic Media customer, in the HREF text field, specify the full URL path to a linked web page.</li> 
        </ul> <p>Be sure you specify whether to open the link in a new browser tab or in the current tab.</p> </td> 
       </tr> 
       <tr> 
       <td>To associate the selected thumbnail image with an Experience Fragment</td> 
-      <td><p>Under Action Type, tap <strong>Experience Fragment</strong>, then do the following:<p> 
+      <td><p>Under Action Type, select <strong>Experience Fragment</strong>, then do the following:<p> 
        <ul> 
-       <li>If you are an Experience Manager Sites customer, tap the Search icon (magnifying glass) to open the Experience Fragment page. Tap or click the Experience Fragment you want to use, then tap <strong>To return to the Actions panel on the previous page, select </strong>in the upper-right corner of the page.<br /> See <a href="/help/sites-cloud/authoring/fundamentals/experience-fragments.md">Experience Fragments</a>.</li> 
+       <li>If you are an Experience Manager Sites customer, select the Search icon (magnifying glass) to open the Experience Fragment page. Select the Experience Fragment you want to use, then select <strong>To return to the Actions panel on the previous page, select </strong>in the upper-right corner of the page.<br /> See <a href="/help/sites-cloud/authoring/fundamentals/experience-fragments.md">Experience Fragments</a>.</li> 
       </ul> 
        <ul> 
        <li>Specify the width and height of the Experience Fragment as it appears on the video.</li>
        </ul><strong>Note</strong>: The social media sharing tools in Interactive Video are not supported when you embed the viewer in an Experience Fragment. Instead, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.</p></tr>< 
       <tr> 
       <td>To edit an action already assigned to a thumbnail image</td> 
-      <td>Within a timeline segment, tap a thumbnail image that has a chain link to the right of its text label. The chain link indicates that an action is assigned to it. To make your changes, tap the <strong>Actions</strong> tab.</td> 
+      <td>Within a timeline segment, select a thumbnail image that has a chain link to the right of its text label. The chain link indicates that an action is assigned to it. To make your changes, select the <strong>Actions</strong> tab.</td> 
       </tr> 
       <tr> 
       <td>To change the text label of a thumbnail image</td> 
@@ -435,7 +432,7 @@ After you save your interactive video, the video is immediately opened into Prev
       </tr> 
       <tr> 
       <td>To revert a change</td> 
-      <td>Near the upper-right corner of the page, tap <strong>Undo</strong> or <strong>Redo</strong>.</td> 
+      <td>Near the upper-right corner of the page, select <strong>Undo</strong> or <strong>Redo</strong>.</td> 
       </tr> 
     </tbody> 
    </table>
@@ -453,9 +450,9 @@ After you save your interactive video, the video is immediately opened into Prev
 
     * **[!UICONTROL Merge Segment]** - You can combine two adjacent segments (with or without product thumbnails assigned to them) into one segment.  
   
-      On the timeline, tap two or more contiguous segments that you want to merge into one. There are no blue oval drag handles on the two selected segments in the image below.
+      On the timeline, select two or more contiguous segments that you want to merge into one. There are no blue oval drag handles on the two selected segments in the image below.
 
-      Tap **[!UICONTROL Merge Segment]** on the toolbar. 
+      Select **[!UICONTROL Merge Segment]** on the toolbar. 
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -463,7 +460,7 @@ After you save your interactive video, the video is immediately opened into Prev
 
     * **[!UICONTROL Split Segment]** - You can divide a single segment into two equally timed segments. If there are product thumbnails already assigned to the segment, the thumbnails are combined into the left segment.
 
-      On the timeline, tap a segment you want to divide in half, then tap **[!UICONTROL Split Segment]** on the toolbar.
+      On the timeline, select a segment you want to divide in half, then select **[!UICONTROL Split Segment]** on the toolbar.
 
       Selecting two or more segments disables the **[!UICONTROL Split Segment]** feature.
 
@@ -471,13 +468,13 @@ After you save your interactive video, the video is immediately opened into Prev
 
       Splitting a selected ten-second segment into two segments of five seconds each.
 
-1. Near the upper-right corner of the **[!UICONTROL Create Interactive Video]** page, the name of the currently selected viewer preset used with the video is displayed. To select a different viewer preset, tap the name.
+1. Near the upper-right corner of the **[!UICONTROL Create Interactive Video]** page, the name of the currently selected viewer preset used with the video is displayed. To select a different viewer preset, select the name.
 
-   For example, the `Shoppable_Video_light` viewer preset lets you play the video with a white display area next to the video. The display area is where the clickable thumbnail images are shown during playback. The `Shoppable_Video_dark` viewer preset lets you play the video with a black display area next to the video.
+   For example, the `Shoppable_Video_light` viewer preset lets you play the video with a white display area next to the video. The display area is where the selectable thumbnail images are shown during playback. The `Shoppable_Video_dark` viewer preset lets you play the video with a black display area next to the video.
 
    If you created your own Interactive Video viewer preset, you can see it in the list of presets from which you can choose.
 
-   When you are finished, tap **[!UICONTROL Save]**.
+   When you are finished, select **[!UICONTROL Save]**.
 
    >[!NOTE]
    >
@@ -487,28 +484,28 @@ After you save your interactive video, the video is immediately opened into Prev
 
    If you added interactivity with Quick views, only use the embed code; if you added interactivity with hyperlinked webpages, you can also use the published URL. Note, however, that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
 
-   See [Publishing assets](publishing-dynamicmedia-assets.md).
+   See [Publish assets](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
    >
    >To publish a shoppable video with Quick views, be sure you also publish each of the video's related image assets from your commerce area, separately.
 
-   After you have added timeline segments and published the interactive video, you are ready to add it to your existing website landing page. See [Integrating an interactive video with your website](#integrating-an-interactive-video-with-your-website).
+   After you have added timeline segments and published the interactive video, you are ready to add it to your existing website landing page. See [Integrate an interactive video with your website](#integrating-an-interactive-video-with-your-website).
 
-## Publishing interactive video assets {#publishing-interactive-video-assets}
+## Publish interactive video assets {#publishing-interactive-video-assets}
 
-See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) for details on how to publish interactive video assets.
+See [Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) for details on how to publish interactive video assets.
 
-## Integrating an interactive video with your website {#integrating-an-interactive-video-with-your-website}
+## Integrate an interactive video with your website {#integrating-an-interactive-video-with-your-website}
 
 After you have uploaded a video, added timeline segments to it, and published the interactive video, you are now ready to add it to your existing website.
 
-If you are an Experience Manager Sites customer, you can add the interactive video by dragging the Interactive Media component to your page. See [Adding Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+If you are an Experience Manager Sites customer, you can add the interactive video by dragging the Interactive Media component to your page. See [Add Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 If you are a standalone Experience Manager Assets customer, you can manually add the interactive video to your website as described in this section.
 
 1. Copy the published interactive video's embed code or URL.
-   See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
+   See [Embed the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
    If you added interactivity with Quick views, only use the embed code; if you added interactivity with hyperlinked webpages, you can also use the published URL. Note, however, that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
 
 1. In the target's web page code, identify where the static video is located.
@@ -519,13 +516,13 @@ If you are a standalone Experience Manager Assets customer, you can manually add
 >
 >As this point, if you added interactivity with only hyperlinked web pages, you are done.
 >
->However, if you added any interactivity to trigger a Quick view, the thumbnails next to the interactive video are for display purposes only; they are not yet integrated with your existing Quick views. In such case, you must integrate the interactive video with existing Quick views on your website.
+>However, if you added any interactivity to trigger a Quickview, the thumbnails next to the interactive video are for display purposes only; they are not yet integrated with your existing Quick views. In such case, you must integrate the interactive video with existing Quick views on your website.
 
 **Example**
 
 Using the demo website as an example:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Notice that the video embed code is standard:
 
@@ -557,37 +554,37 @@ Notice that the video embed code is standard:
 
 Integration is as simple as removing the video embed code and replacing it with the interactive video embed code from Experience Manager. You can see the result at the following URL. While it shows an Interactive Video present on the page, it is not yet integrated with the existing Quick views:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
-## Integrating an interactive video with an existing Quick view {#integrating-an-interactive-video-with-an-existing-quickview}
+## Integrate an interactive video with an existing Quickview {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 >
 >This task only applies if you are a standalone Experience Manager Assets customer.
 
-The last step in this process is to integrate your interactive video with an existing Quick view implementation that is used on your website. There is no solution to the integration that works for all cases. Every Quick view implementation is unique. As such, a specific approach is needed that involves the assistance of a front-end IT person.
+The last step in this process is to integrate your interactive video with an existing Quickview implementation that is used on your website. There is no solution to the integration that works for all cases. Every Quickview implementation is unique. As such, a specific approach is needed that involves the assistance of a front-end IT person.
 
-The existing Quick view implementation normally represents a chain of inter-related actions that happen on the web page in the following order:
+The existing Quickview implementation normally represents a chain of inter-related actions that happen on the web page in the following order:
 
 1. A user triggers an element in the user interface of your website.
-1. The front-end code obtains a Quick view URL based on the user interface element that was triggered in step 1.
+1. The front-end code obtains a Quickview URL based on the user interface element that was triggered in step 1.
 1. The front-end code sends an AJAX request using the URL obtained in step 2.
-1. The backend logic returns the corresponding Quick view data or content back to the front-end code.
-1. The front-end code loads the Quick view data or content.
-1. Optionally, the front-end code converts the loaded Quick view data into an HTML representation.
+1. The backend logic returns the corresponding Quickview data or content back to the front-end code.
+1. The front-end code loads the Quickview data or content.
+1. Optionally, the front-end code converts the loaded Quickview data into an HTML representation.
 1. The front-end code displays a modal dialog box or panel and renders the HTML content on the screen for the end user.
 
 These calls do not represent independent public API calls which can be called by the web page logic from an arbitrary step. Instead, it is a chained call where every next step is hidden in the last phase (callback) of the previous step.
 
-At the same time that the interactive video is replacing step 1, and partially step 2, when a user taps a thumbnail inside the interactive video, such user interaction is handled by the viewer. The viewer returns an event to the web page that contains all the thumbnail data previously added to Experience Manager.
+At the same time that the interactive video is replacing step 1, and partially step 2, when a user selects a thumbnail inside the interactive video, such user interaction is handled by the viewer. The viewer returns an event to the web page that contains all the thumbnail data previously added to Experience Manager.
 
 In such an event handler, the front-end code does the following:
 
 * Listens to an event emitted by the interactive video.
-* Constructs a Quick view URL based on the thumbnail data.
-* Triggers the process of loading the Quick view from the backend and rendering it on the screen for display.
+* Constructs a Quickview URL based on the thumbnail data.
+* Triggers the process of loading the Quickview from the backend and rendering it on the screen for display.
 
-In addition, the Interactive Video viewer supports full screen operation mode. The end user triggers Quick views by clicking a thumbnail without leaving the full screen. To achieve this functionality, you alter the front-end code so that the Quick view modal dialog box is attached to the viewer's container. Do not add document BODY or some other web page element that is not available when the viewer is in full-screen mode. The code that performs this job listens to one more viewer callback that is sent after the viewer loads on the page.
+In addition, the Interactive Video viewer supports full screen operation mode. The end user triggers Quick views by selecting a thumbnail without leaving the full screen. To achieve this functionality, you alter the front-end code so that the Quickview modal dialog box is attached to the viewer's container. Do not add document BODY or some other web page element that is not available when the viewer is in full-screen mode. The code that performs this job listens to one more viewer callback that is sent after the viewer loads on the page.
 
 The embed code returned by Experience Manager already has a ready-to-use event handler in place. It is commented out as seen in the following highlighted code snippet:
 
@@ -638,9 +635,9 @@ The embed code returned by Experience Manager already has a ready-to-use event h
 
 So, it is only necessary to uncomment the highlighted code snippet above and replace the dummy handlers body with code that is specific to the particular web page.
 
-There are two default callback handlers present in the standard embed code: `quickViewActivate` and `initComplete`. The `quickViewActivate` handler triggers when a thumbnail is clicked in the viewer. Use it to integrate the viewer with Quick view activation logic. The `initComplete` handler triggers only one time when the viewer loads into the page. This handler is used to adjust the Quick view dialog box location in the web page DOM.
+There are two default callback handlers present in the standard embed code: `quickViewActivate` and `initComplete`. The `quickViewActivate` handler triggers when a thumbnail is selected in the viewer. Use it to integrate the viewer with Quickview activation logic. The `initComplete` handler triggers only one time when the viewer loads into the page. This handler is used to adjust the Quickview dialog box location in the web page DOM.
 
-The process of constructing the Quick view URL is opposite to the process of identifying thumbnail variables covered earlier in this topic. Using the previously identified Quick view URL examples, you can see how the Quick view URL is constructed in each case:
+The process of constructing the Quickview URL is opposite to the process of identifying thumbnail variables covered earlier in this topic. Using the previously identified Quickview URL examples, you can see how the Quickview URL is constructed in each case:
 
 <table>
   <tbody>
@@ -671,9 +668,9 @@ The process of constructing the Quick view URL is opposite to the process of ide
   </tbody>
 </table>
 
-The last step to trigger the Quick view URL and activate the Quick view panel most likely requires the assistance of a front-end IT person from your IT department. They have the knowledge to know best how to accurately trigger the Quick view implementation from the proper step, having a ready-to-use Quick view URL.
+The last step to trigger the Quickview URL and activate the Quickview panel most likely requires the assistance of a front-end IT person from your IT department. They have the knowledge to know best how to accurately trigger the Quickview implementation from the proper step, having a ready-to-use Quickview URL.
 
-You can see how these steps are applied to the demo website to fully integrate an interactive video with the Quick view code. Earlier in this topic, the structure of the Quick view URL was identified as the following:
+You can see how these steps are applied to the demo website to fully integrate an interactive video with the Quickview code. Earlier in this topic, the structure of the Quickview URL was identified as the following:
 
 ```xml
 /datafeed/$CategoryId$-$SKU$.json
@@ -687,13 +684,13 @@ var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 ```
 
-The demo website is triggering the Quick view dialog box using a simple `loadQuickView()` function call. This function takes only one argument, which is the Quick view data URL. So the last step to integrate the interactive video is to add the following line of code to the `quickViewActivate` handler:
+The demo website is triggering the Quickview dialog box using a simple `loadQuickView()` function call. This function takes only one argument, which is the Quickview data URL. So the last step to integrate the interactive video is to add the following line of code to the `quickViewActivate` handler:
 
 ```xml
 loadQuickView(quickViewUrl);
 ```
 
-Finally, make sure that your Quick view dialog box is attached to the viewer's container element. The embed code default provides sample steps to achieve this functionality. To obtain a reference to the viewer's container element, you can use the following lines of code:
+Finally, make sure that your Quickview dialog box is attached to the viewer's container element. The embed code default provides sample steps to achieve this functionality. To obtain a reference to the viewer's container element, you can use the following lines of code:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -702,9 +699,9 @@ var inner_container = document.getElementById(sdkContainerId);
 
 Where `inner_container` is a reference to a `DIV` element managed by the viewer. You want the dialog box to be a child of that `DIV`.
 
-The steps to actually locate the modal dialog box element and attach it to the above container are case-specific. Again, you can seek the help from your front-end developer who is familiar with your Quick view implementation that is needed.
+The steps to actually locate the modal dialog box element and attach it to the above container are case-specific. Again, you can seek the help from your front-end developer who is familiar with your Quickview implementation that is needed.
 
-For the sample website, the Quick view modal dialog box is implemented as a `DIV` with the quickview-modal ID attached directly to the document `BODY`. Therefore, the code to move that dialog box to the viewer's container is as straightforward as the following:
+For the sample website, the Quickview modal dialog box is implemented as a `DIV` with the quickview-modal ID attached directly to the document `BODY`. Therefore, the code to move that dialog box to the viewer's container is as straightforward as the following:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -759,9 +756,9 @@ The complete source code is as follows:
 
 The final demo website with the fully integrated interactive video appears like the following:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## Using Quick views to create custom pop-up Windows® {#using-quickviews-to-create-custom-pop-ups}
+## Create custom pop-up Windows® using Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-See [Using Quick views to create custom pop-up Windows®](/help/assets/dynamic-media/custom-pop-ups.md).
+See [Create custom pop-up Windows® using Quickview](/help/assets/dynamic-media/custom-pop-ups.md).
 -->
