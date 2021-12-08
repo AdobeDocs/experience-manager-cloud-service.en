@@ -65,21 +65,6 @@ The recommended application deployment structure is as follows:
   + ACLs (permissions)
     + Any `rep:policy` for any path under `/apps`
   + [Precompiled bundled scripts](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
- 
-+ The `ui.config` package, contains all [OSGi configurations](/help/implementing/deploying/configuring-osgi.md):
-    + Organizational folder containing run mode specific OSGi config definitions
-        + `/apps/my-app/osgiconfig`
-    + Common OSGi configuration folder containing default OSGi configurations that apply to all target AEM as a Cloud Service deployment targets
-        + `/apps/my-app/osgiconfig/config` 
-    + Run mode-specific OSGi configuration folders that contains default OSGi configurations that apply to all target AEM as a Cloud Service deployment targets
-        + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>` 
-    + Repo Init OSGi configuration scripts
-        + [Repo Init](#repo-init) is the recommended way to deploy (mutable) content that is logically part of the AEM application. The Repo Init OSGi configurations should be places in the appropriate `config.<runmode>` folder as outlined above, and be used to define:
-            + Baseline content structures
-            + Users   
-            + Service Users
-            + Groups
-            + ACLs (permissions)
 
 >[!NOTE]
 >
