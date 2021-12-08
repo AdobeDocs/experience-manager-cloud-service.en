@@ -1,22 +1,22 @@
 ---
-title: Troubleshooting Dynamic Media
-description: Troubleshooting tips when using Dynamic Media.
-role: Administrator,Business Practitioner
+title: Troubleshoot Dynamic Media
+description: Troubleshooting tips when you use Dynamic Media.
+role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 ---
-# Troubleshooting Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
+# Troubleshoot Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
 The following topic describes troubleshooting for Dynamic Media.
 
-## New Dynamic Media Configuration {#new-dm-config}
+## New Dynamic Media configuration {#new-dm-config}
 
-See [Troubleshooting a new Dynamic Media Configuration](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
+See [Troubleshoot a new Dynamic Media configuration](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
 
 ## General (All Assets) {#general-all-assets}
 
 The following are some general tips and tricks for all assets.
 
-### Asset Synchronization Status Properties {#asset-synchronization-status-properties}
+### Asset synchronization status properties {#asset-synchronization-status-properties}
 
 The following asset properties can be reviewed in CRXDE Lite to confirm the successful synchronization of the asset from Adobe Experience Manager to Dynamic Media:
 
@@ -27,7 +27,7 @@ The following asset properties can be reviewed in CRXDE Lite to confirm the succ
 | `<object_node>/jcr:content/metadata/dam:scene7File`  |**myCompany/myAssetID** |Must be populated to generate URLs to remote asset of Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` |**success** or **failed: `<error text>`** |Synchronization status of sets (spin sets, image sets, and so on), image presets, viewer presets, image map updates for an asset, or images that were edited. |
 
-### Synchronization Logging {#synchronization-logging}
+### Synchronization logging {#synchronization-logging}
 
 Synchronization errors and issues are logged in `error.log` (Experience Manager server directory `/crx-quickstart/logs/`). Sufficient logging is available to determine the root cause of most issues, however you can increase the logging to DEBUG on the `com.adobe.cq.dam.ips` package through the Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) to gather more information.
 
@@ -131,7 +131,7 @@ If you are having issues with video, see the following troubleshooting guidance.
     </ul> </td>
    <td>
     <ol>
-     <li>Check that the Dynamic Media Configuration under Cloud Services is properly setup.</li>
+     <li>Check that the Dynamic Media Configuration under Cloud Services is properly set up.</li>
      <li>Check that the folder has a video profile. Also, check the video profile.</li>
     </ol> </td>
   </tr>
@@ -173,11 +173,11 @@ If you are having issues with viewers, see the following troubleshooting guidanc
   <tr>
    <td>Viewer Presets are not published</td>
    <td><p>Proceed to sample manager diagnostic page: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe computed values. When operating correctly, you see:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Note</strong>: It can take about 10 minutes after configuration of Dynamic Media cloud settings for the viewer assets to sync.</p> <p>If unactivated assets remain, click either of the <strong>List all Unactivated Assets</strong> buttons to see details.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Note</strong>: It can take about 10 minutes after configuration of Dynamic Media cloud settings for the viewer assets to sync.</p> <p>If unactivated assets remain, select either of the <strong>List all Unactivated Assets</strong> buttons to see details.</p> </td>
    <td>
     <ol>
      <li>Navigate to viewer preset list in admin tools: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Select all viewer presets, then click <strong>Publish</strong>.</li>
+     <li>Select all viewer presets, then select <strong>Publish</strong>.</li>
      <li>Navigate back to sample manager and observe that unactivated asset count is now zero.</li>
     </ol> </td>
   </tr>

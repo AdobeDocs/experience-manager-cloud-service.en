@@ -1,15 +1,15 @@
 ---
 title: Manage digital assets
-description: Learn about various asset management and editing methods.
+description: Learn about various asset management and editing methods
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
-role: Business Practitioner,Architect,Administrator
+role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 ---
 # Manage assets {#manage-assets}
 
-This article describes how to manage and edit assets in Adobe Experience Manager Assets. To manage Content Fragments, see [Content Fragments](content-fragments/content-fragments.md) assets.
+This article describes how to manage and edit assets in [!DNL Adobe Experience Manager Assets]. To manage [!DNL Content Fragments], see [[!DNL Content Fragments]](content-fragments/content-fragments.md) assets.
 
 ## Create folders {#creating-folders}
 
@@ -51,6 +51,10 @@ You can add the configuration file `/apps/example/config.author/com.adobe.cq.ass
 Once enabled, Experience Manager sends notifications of duplicate assets to the Experience Manager Inbox. It is an aggregated result for multiple duplicates. Users can choose to remove the assets based on the results.
 
 ![Inbox notification for duplicate assets](assets/duplicate-detect-inbox-notification.png)
+
+>[!NOTE]
+>
+>When you upload assets to the repository, Experience Manager detects duplication and notifies you about the first 100 duplicate assets.
 
 ## Preview assets {#previewing-assets}
 
@@ -109,7 +113,7 @@ To preview an asset, follow these steps.
     * Channels/devices through which the asset was used
     * Creative solutions where the asset was recently used
 
-To view usage statistics for an asset, in the [!UICONTROL Properties] page, click the **[!UICONTROL Insights]** tab. For more details, see [Asset Insights](assets-insights.md).
+To view usage statistics for an asset, in the [!UICONTROL Properties] page, click the **[!UICONTROL Insights]** tab. For more details, see [Assets Insights](assets-insights.md).
 
 [!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset. That is, the use of assets in compound assets in [!DNL Assets] and its use in remote [!DNL Sites] pages.
 
@@ -243,9 +247,7 @@ Also, disable the force delete button using an overlay, to disallow users from d
 
 1. Navigate to the location of the asset(s) you want to delete.
 
-1. Select the asset, and tap/click the **[!UICONTROL Delete]** icon from the toolbar.
-
-   ![delete_icon](assets/delete_icon.png)
+1. Select the asset, and click **[!UICONTROL Delete]** ![delete_icon](assets/do-not-localize/delete-icon.png) from the toolbar.
 
 1. In the confirmation dialog, click:
 
@@ -253,7 +255,7 @@ Also, disable the force delete button using an overlay, to disallow users from d
     * **[!UICONTROL Delete]** to confirm the action:
 
         * If the asset has no references, the asset is deleted.
-        * If the asset has references, an error-message informs you that **One or more assets are referenced.** You can select **[!UICONTROL Force Delete]** or **[!UICONTROL Cancel]**.
+        * If the asset has references, an error-message informs you that **[!UICONTROL One or more assets are referenced]**. You can select **[!UICONTROL Force Delete]** or **[!UICONTROL Cancel]**.
 
    >[!NOTE]
    >
@@ -261,14 +263,11 @@ Also, disable the force delete button using an overlay, to disallow users from d
 
    >[!NOTE]
    >
-   >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset.
-   >
-   >
-   >Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
+   >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. You can disallow deletion of referenced assets as it causes broken links. Disable the force delete button using an overlay.
 
 ## Download assets {#download-assets}
 
-See [Download assets from [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
+See [download assets from [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## Publish or unpublish assets {#publish-assets}
 
@@ -329,6 +328,8 @@ Quick action icons are available for a single asset at a time. Depending upon yo
 * Touch devices: Touch and hold. For example, on an iPad, you can tap-and-hold an asset so that the quick actions display.
 * Non-touch devices: Hover pointer. For example, On a desktop device, the quick action bar is displayed if you hover the pointer over the asset thumbnail.
 
+<!-- Hiding this topic via cqdoc-18707
+
 ## Edit images {#editing-images}
 
 The editing tools in the [!DNL Experience Manager Assets] interface let you perform small editing jobs on image assets. You can crop, rotate, flip, and perform other editing jobs on images. You can also add image maps to assets.
@@ -378,11 +379,10 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >
 >Image editing is supported for BMP, GIF, PNG, and JPEG files formats.
 
-<!-- You can also add image maps using the image editor. For details, see [Adding Image Maps](/help/assets/image-maps.md). -->
-
 >[!NOTE]
 >
 >To edit a TXT file, set **Day CQ Link Externalizer** from Configuration Manager.
+-->
 
 ## Timeline {#timeline}
 
@@ -399,7 +399,7 @@ The timeline lets you view various events for a selected item, such as active wo
 >
 >Timeline contains several [options specific to content fragments](content-fragments/content-fragments.md).
 
-## Annotating {#annotating}
+## Annotate assets {#annotating}
 
 Annotations are comments or explanatory notes added to images or videos. Annotations provide marketers the ability to collaborate and leave feedback about assets.
 
@@ -460,6 +460,14 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 ### View saved annotations {#viewing-saved-annotations}
 
+You can view only one annotation at a time.
+
+>[!NOTE]
+>
+>If you are selecting multiple annotations, the latest annotation will be visible on the user interface.
+>
+>Multi-select is supported only for printing the annotated asset as PDF.
+
 1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
 
 1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
@@ -481,6 +489,10 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 If an asset has annotations or it has been subjected to a review workflow, you can print the asset along with annotations and review status as a PDF file for offline review.
 
 You can also choose to print only the annotations or review status.
+
+>[!NOTE]
+>
+>You can select multiple annotations while printing the annotated asset as PDF.
 
 To print the annotations and review status, tap/click the **[!UICONTROL Print]** icon and follow the instructions in the wizard. The **[!UICONTROL Print]** icon appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
 
@@ -517,8 +529,6 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
    To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
-
-   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
 

@@ -7,7 +7,7 @@ exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 
 >[!TIP]
 >
->Familiarize yourself with basic [AEM Project Archetype use](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), and the [FileVault Content Maven Plug-in](/help/implementing/developing/tools/maven-plugin.md) as this article builds upon these learnings and concepts.
+>Familiarize yourself with basic [AEM Project Archetype use](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), and the [FileVault Content Maven Plug-in](/help/implementing/developing/tools/maven-plugin.md) as this article builds upon these learnings and concepts.
 
 This article outlines the changes required to Adobe Experience Manager Maven projects to be AEM as a Cloud Service compatible by ensuring that they respect the split of mutable and immutable content, dependencies are established to create non-conflicting, deterministic deployments and that they are packaged in a deployable structure.
 
@@ -54,7 +54,7 @@ The recommended application deployment structure is as follows:
 + The OSGi bundle Jar file is generated, and directly embedded in the all project.
 
 + The `ui.apps` package contains all the code to be deployed and only deploys to `/apps`. Common elements of the `ui.apps` package include, but are not limited to:
-  + [Component definitions and HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) scripts
+  + [Component definitions and HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) scripts
     + `/apps/my-app/components`
   + JavaScript and CSS (via [Client Libraries](/help/implementing/developing/introduction/clientlibs.md))
     + `/apps/my-app/clientlibs`
@@ -64,6 +64,22 @@ The recommended application deployment structure is as follows:
     + `/apps/settings`
   + ACLs (permissions)
     + Any `rep:policy` for any path under `/apps`
+  + [Precompiled bundled scripts](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
+ 
++ The `ui.config` package, contains all [OSGi configurations](/help/implementing/deploying/configuring-osgi.md):
+    + Organizational folder containing run mode specific OSGi config definitions
+        + `/apps/my-app/osgiconfig`
+    + Common OSGi configuration folder containing default OSGi configurations that apply to all target AEM as a Cloud Service deployment targets
+        + `/apps/my-app/osgiconfig/config` 
+    + Run mode-specific OSGi configuration folders that contains default OSGi configurations that apply to all target AEM as a Cloud Service deployment targets
+        + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>` 
+    + Repo Init OSGi configuration scripts
+        + [Repo Init](#repo-init) is the recommended way to deploy (mutable) content that is logically part of the AEM application. The Repo Init OSGi configurations should be places in the appropriate `config.<runmode>` folder as outlined above, and be used to define:
+            + Baseline content structures
+            + Users   
+            + Service Users
+            + Groups
+            + ACLs (permissions)
 
 >[!NOTE]
 >
@@ -72,10 +88,10 @@ The recommended application deployment structure is as follows:
 
 ### Content Packages
 
-+ The `ui.content` package contains all content and configuration. The Content Package, contains all the node definitions not in the `ui.apps` or `ui.config` packages, or in other words, anything not in `/apps` or `/oak:index`. Common elements of the `ui.content` package include, but are not limited to:
++ The `ui.content` package contains all content and configuration. The Content Package contains all the node definitions not in the `ui.apps` or `ui.config` packages, or in other words, anything not in `/apps` or `/oak:index`. Common elements of the `ui.content` package include, but are not limited to:
   + Context-aware configurations
     + `/conf`
-  + Required, complex content structures (ie. Content build-out that is builds on and extends past Baseline content structures defined in Repo Init.)
+  + Required, complex content structures (ie. Content build-out that builds on and extends past Baseline content structures defined in Repo Init.)
     + `/content`, `/content/dam`, etc.
   + Governed tagging taxonomies
     + `/content/cq:tags`
@@ -150,7 +166,7 @@ For more information see [Apache Jackrabbit FileVault - Package Maven Plugin doc
 
 ## Marking Packages for Deployment by Adobe Cloud Manager {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
-By default, Adobe Cloud Manager harvests all packages produced by the Maven build, however since the container (`all`) package is the singular deployment artifact that contains all code and content packages, we must ensure **only** the  container (`all`) package is deployed. To ensure this, other Packages the Maven build generates must be marked with the FileVault Content Package Maven Plug-In configuration of `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
+By default, Adobe Cloud Manager harvests all packages produced by the Maven build, however since the container (`all`) package is the singular deployment artifact that contains all code and content packages, we must ensure **only** the container (`all`) package is deployed. To ensure this, other Packages the Maven build generates must be marked with the FileVault Content Package Maven Plug-In configuration of `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
 
 >[!TIP]
 >
@@ -264,7 +280,7 @@ Simply add the `<filter root="/apps/<my-app>-packages"/>` entries for any 2nd-le
 
 ## Embedding 3rd-party Packages {#embedding-3rd-party-packages}
 
-All packages must be available via the [Adobe's public Maven artifact repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) or an accessible public, referenceable 3rd party Maven artifact repository.
+All packages must be available via the [Adobe's public Maven artifact repository](https://repo1.maven.org/maven2/com/adobe/) or an accessible public, referenceable 3rd party Maven artifact repository.
 
 If the 3rd party packages are in **Adobe's public Maven artifact repository**, no further configuration is needed for Adobe Cloud Manager to resolve the artifacts.
 
@@ -284,7 +300,7 @@ In order to ensure proper installation of the packages, it is recommended inter-
 
 The general rule is packages containing mutable content (`ui.content`) should depend on the immutable code (`ui.apps`) that supports the rendering and use of the mutable content.
 
-A notable exception to this general rule is if the immutable code package (`ui.apps` or any other), __only__ contains OSGi bundles. If so, no AEM package should declare a dependency on it. This is because immutable code packages __only__ containing OSGi bundles are not registered with AEM Package Manager, and therefore, any AEM package depending on it will have an unsatisfied dependency and fail to install.
+A notable exception to this general rule is if the immutable code package (`ui.apps` or any other), __only__ contains OSGi bundles. If so, no AEM package should declare a dependency on it. This is because immutable code packages __only__ containing OSGi bundles are not registered with AEM [Package Manager,](/help/implementing/developing/tools/package-manager.md) and therefore, any AEM package depending on it will have an unsatisfied dependency and fail to install.
 
 >[!TIP]
 >
@@ -537,7 +553,7 @@ In the `all` project's `filter.xml` (`all/src/main/content/jcr_root/META-INF/vau
 <filter root="/apps/my-app-packages"/>
 ```
 
-If multiple `/apps/*-packages` are used in the embeddeds targets, then they all must be enumerated here.
+If multiple `/apps/*-packages` are used in the embedded targets, then they all must be enumerated here.
 
 ### 3rd Party Maven Repositories {#xml-3rd-party-maven-repositories}
 

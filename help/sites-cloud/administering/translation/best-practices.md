@@ -2,10 +2,14 @@
 title: Translation Best Practices
 description: Learn about best practices compiled by Adobe engineering and consulting teams to help you get up and running with translation projects.
 feature: Language Copy
-role: Administrator
+role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
 ---
 # Translation Best Practices {#translation-best-practices}
+
+>[!TIP]
+>
+>If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
 
 ## General {#general}
 

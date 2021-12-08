@@ -3,12 +3,15 @@ title: Metadata profiles
 description: Know about metadata profiles for assets. Learn how to create a metadata profile and apply it to folder assets.
 contentOwner: AG
 feature: Metadata
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 ---
 # Metadata profiles {#metadata-profiles}
 
 A Metadata Profile lets you apply default metadata to assets within a folder. Create a Metadata Profile and apply it to a folder. Any asset that you subsequently upload to the folder inherits the default metadata that you configured in the Metadata Profile.
+
+An important concept regarding the use of profiles in Experience Manager Assets is that they are assigned to folders. Within a profile are settings in the form of metadata profiles, along with video profiles or image profiles. These settings process the contents of a folder along with any of its subfolders. Therefore, how you name files and folders, how you arrange subfolders, and how you handle the files within these folders has a significant impact on how those assets are processed by a profile.
+By using consistent and appropriate file and folder naming strategies, and good metadata practice, you make the most of your digital asset collection, and ensure that the right files are processed by the right profile.
 
 ## Add a metadata profile {#adding-a-metadata-profile}
 
@@ -92,7 +95,7 @@ You can reprocess assets in a folder that already has an existing metadata profi
 
 **To apply a metadata profile globally, do one of the following**
 
-* Navigate to `https://<AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` and apply the appropriate profile and click **Save**.
+* Navigate to `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` and apply the appropriate profile and click **[!UICONTROL Save]**.
 
 * Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Click **Save All**.
 
@@ -104,7 +107,7 @@ You can remove a metadata profile from a folder from within the **Tools** menu o
 
 ### Removing metadata profiles from folders via Profiles user interface {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Click the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Click the Experience Manager logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Select the metadata profile that you want to remove from a folder or multiple folders.
 1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
 
@@ -112,6 +115,6 @@ You can remove a metadata profile from a folder from within the **Tools** menu o
 
 ### Removing metadata profiles from folders via Properties {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Click the AEM logo and navigate **[!UICONTROL Assets]** and then to the folder that you want to remove an metadata profile from.
+1. Click the Experience Manager logo and navigate **[!UICONTROL Assets]** and then to the folder that you want to remove an metadata profile from.
 1. On the folder, click the check mark to select it and then click **[!UICONTROL Properties]**.
 1. Select the **[!UICONTROL Metadata Profiles]** tab and select **[!UICONTROL None]** from the drop-down menu and click **[!UICONTROL Save]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.

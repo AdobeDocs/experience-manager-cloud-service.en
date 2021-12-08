@@ -2,29 +2,29 @@
 title: Panoramic Images
 description: Learn how to work with panoramic images in Dynamic Media.
 feature: Panoramic Images
-role: Business Practitioner
+role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
 ---
 # Panoramic images{#panoramic-images}
 
 This section describes working with the Panoramic Image viewer to render spherical panoramic images for an immersive 360° viewing experience of a room, property, location, or landscape.
 
-See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
+See also [Manage viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
-## Uploading assets for use with the Panoramic Image viewer {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## Upload assets for use with the Panoramic Image viewer {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 For an uploaded asset to qualify as a spherical panorama image that you intend to use with the Panoramic Image viewer, the asset must have either one or both of the following:
 
 * An aspect ratio of 2.
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Tagged with the keywords `equirectangular`, or `spherical`and `panorama`, or `spherical` and `panoramic`. See [Using Tags](/help/sites-cloud/authoring/features/tags.md).
+* Tagged with the keywords `equirectangular`, or `spherical`and `panorama`, or `spherical` and `panoramic`. See [Use Tags](/help/sites-cloud/authoring/features/tags.md).
 
 Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
 
-To upload assets for use with the Panoramic Image viewer, see [Uploading Assets](/help/assets/manage-digital-assets.md#uploading-assets).
+To upload assets for use with the Panoramic Image viewer, see [Upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -34,7 +34,7 @@ For the Panoramic Image viewer to work properly within AEM, you must synchronize
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
-1. Near the upper-right corner of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
+1. Near the upper-right corner of the page, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
 1. On the Image Server Publish page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving]**.
 
 1. On the same Image Server Publish page, locate the heading **[!UICONTROL Request Attributes]**.
@@ -53,9 +53,9 @@ For the Panoramic Image viewer to work properly within AEM, you must synchronize
 
    These settings are necessary for using the `Panoramic Media` WCM component in AEM.
 
-1. At the bottom of the Image Server Publish page, on the left side, click **[!UICONTROL Save]**.
+1. At the bottom of the Image Server Publish page, on the left side, select **[!UICONTROL Save]**.
 
-1. In the lower-right corner, click **[!UICONTROL Close]**.
+1. In the lower-right corner, select **[!UICONTROL Close]**.
 
 ### Troubleshooting the Panoramic Media WCM component {#troubleshooting-the-panoramic-media-wcm-component}
 
@@ -69,10 +69,10 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 -->
 
-## Previewing Panoramic Images {#previewing-panoramic-images}
+## Preview Panoramic Images {#previewing-panoramic-images}
 
-See [Previewing Assets](/help/assets/dynamic-media/previewing-assets.md).
+See [Preview assets](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publishing Panoramic Images {#publishing-panoramic-images}
+## Publish Panoramic Images {#publishing-panoramic-images}
 
-See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+See [Publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

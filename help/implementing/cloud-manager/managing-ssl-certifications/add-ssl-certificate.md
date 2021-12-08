@@ -6,7 +6,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 # Adding an SSL Certificate {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM as a Cloud Service will only accept OV(Organization Validation) or EV(Extended Validation) certificates. DV(Domain Validation) certificates will not be accepted. In addition, any certificate must be a X.509 TLS certificate from a trusted certification authority (CA) with a matching 2048-bit RSA private key.
+>AEM as a Cloud Service will only accept OV(Organization Validation) or EV(Extended Validation) certificates. DV(Domain Validation) certificates will not be accepted. In addition, any certificate must be a X.509 TLS certificate from a trusted certification authority (CA) with a matching 2048-bit RSA private key. AEM as a Cloud Service will accept wildcard SSL certificates for a domain.
 
 A Certificate takes a few days to provision and it is recommended that the certificate be provisioned even months in advance. Refer to [Getting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) for more details.
 
@@ -32,7 +32,8 @@ Follow the steps below to convert the format of your SSL files to PEM:
 
 * A user must be in the Business Owner or Deployment Manager role in order to install an SSL certificate in Cloud Manager.
 
-* At any given time, Cloud Manager will allow a maximum of 10 SSL certificates that can be associated with one or more environments across your Program, even if a certificate is expired. Cloud Manager UI will, however, allow up 50 SSL certificates to be installed in the program with this constraint.
+* At any given time, Cloud Manager will allow a maximum of 10 SSL certificates that can be associated with one or more environments across your Program, even if a certificate is expired. Cloud Manager UI will, however, allow up 50 SSL certificates to be installed in the program with this constraint. Typically a certificate can cover multiple domains (up to 100 SANs) so consider grouping multiple domains in the same certificate in order to stay within this limit.
+
 
 ## Adding a Certificate {#adding-a-cert}
 

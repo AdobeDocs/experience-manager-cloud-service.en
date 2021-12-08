@@ -15,7 +15,7 @@ exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
 
 Follow the section below to understand the important considerations for running the Best Practices Analyzer (BPA):
  
-* The BPA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html). The version of Pattern Detector used by BPA is included in the BPA installation package.
+* The BPA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). The version of Pattern Detector used by BPA is included in the BPA installation package.
  
 * BPA may only be run by the **admin** user or a user in the **administrators** group.
  
@@ -40,7 +40,7 @@ Follow the section below to understand the important considerations for running 
 >title="Download the Best Practices Analyzer"
 >abstract="The Best Practices Analyzer can be downloaded as a zip file from the Software Distribution portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance."
 
-The Best Practices Analyzer can be downloaded as a zip file from the Software Distribution portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
+The Best Practices Analyzer can be downloaded as a zip file from the Software Distribution portal. You can install the package via [Package Manager](/help/implementing/developing/tools/package-manager.md) on your source Adobe Experience Manager (AEM) instance.
 
 >[!NOTE]
 >Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
@@ -87,6 +87,7 @@ Follow this section to learn how to view the Best Practices Analyzer report:
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
 
+
 #### Using Filters in the Best Practices Analyzer Report {#bpa-filters}
 
 To filter out findings related to [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), follow the steps below:
@@ -106,6 +107,7 @@ To filter out findings related to [ACS Commons](https://adobe-consulting-service
    > The ACS Commons findings should not be ignored. Refer to [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) to determine compatibility with AEM as a Cloud Service. 
    
 
+<!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
  
 The Best Practices Analyzer tool is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
@@ -114,6 +116,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 
 >[!NOTE]
 >In all versions, the included Pattern Detector may run independently.
+-->
 
 ## Interpreting the Best Practices Analyzer Report {#cra-report}
 
@@ -121,6 +124,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >id="aemcloud_bpa_interpreting"
 >title="Interpreting the Best Practices Analyzer Report"
 >abstract="There are two options for viewing BPA report outputs: UI and CSV. When the Best Practices Analyzer tool is run in the AEM instance, the UI report is displayed as results in the tool window. The CSV format of the report includes information that is generated from the Pattern Detector output, sorted and organized by category type, sub-type, and importance level."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Reviewing Best Practices Analysis Report"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Understanding Best Practices Analyzer Report categories"
 
 When the Best Practices Analyzer tool is run in the AEM instance, the report is displayed as results in the tool window. 
@@ -241,8 +245,8 @@ The value of this property is the cache lifetime in seconds. An administrator ma
 
 BPA utilizes a system service user account named `repository-reader-service` to execute the Pattern Detector. This account is available on AEM 6.2 and later. On AEM 6.1, this account must be created *prior to* installation of BPA by taking the following steps:
 
-1. Follow the instructions at [Creating a new service user](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) to create a user. Set the UserID to `repository-reader-service` and leave the Intermediate Path empty and then click the green checkmark.
+1. Follow the instructions at [Creating a new service user](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) to create a user. Set the UserID to `repository-reader-service` and leave the Intermediate Path empty and then click the green checkmark.
 
-2. Follow the instructions at [Managing Users and Groups](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups), specifically the instructions for Adding Users to a Group to add the `repository-reader-service` user to the `administrators` group.
+2. Follow the instructions at [Managing Users and Groups](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), specifically the instructions for Adding Users to a Group to add the `repository-reader-service` user to the `administrators` group.
 
 3. Install the BPA package via Package Manager on your source AEM instance. (This will add the necessary configuration amendment to the ServiceUserMapper configuration for the `repository-reader-service` system service user.)

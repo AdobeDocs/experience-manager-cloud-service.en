@@ -1,9 +1,9 @@
 ---
 title: Best practices for optimizing the quality of your images
-description: Learn best practices to optimize the quality of your image assets using Dynamic Media.
+description: Learn best practices that help you optimize the quality of your image assets using Dynamic Media.
 contentOwner: Rick Brough
 feature: Asset Management
-role: Business Practitioner
+role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 ---
 # Best practices for optimizing the quality of your images {#best-practices-for-optimizing-the-quality-of-your-images}
@@ -38,7 +38,7 @@ Image sharpening is the most complex aspect of controlling images on your websit
 
 * Best practices white paper [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) applies to Experience Manager as well.
 
-* Watch [Using Image Sharpening with Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+* Watch [Use Image Sharpening with Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
 With Experience Manager, you can sharpen images on ingestion, on delivery, or both. Usually, however, it is best to sharpen images using only one method or the other, but not both. Sharpening images on delivery, on a URL, typically gives you the best results.
 
@@ -62,7 +62,7 @@ There are two image sharpening methods that you can use:
 
     * Best practices white paper [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) applies to Experience Manager as well.
 
-    * Watch [Using Image Sharpening with Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+    * Watch [Use Image Sharpening with Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
     * Experience Manager also lets you control a fourth parameter: monochrome (0,1). This parameter determines if unsharp masking is applied to each color component separately using the value 0 or to the image brightness/intensity using the value 1.
 
