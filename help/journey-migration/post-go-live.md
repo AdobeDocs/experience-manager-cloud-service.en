@@ -3,13 +3,13 @@ title: Post Go-Live
 description: Learn how to monitor for issues and improve performance
 ---
 
-# Post Go-Live {#monitoring-improving-performance}
+# Post Go-Live {#post-go-live}
 
 This is the last part of the journey so you will learn to how to monitor for issues and improve performance once the migration is complete. You should ensure the clean-up of temporary files, review best practices for continuous development and manage logs.
 
 ## The Story So Far {#story-so-far}
 
-In the previous step of the journey, you learned how to [perform the migration](/help/journey-migration/performing-migration.md) once the code and the content were ready to be moved over to AEM as a Cloud Service.
+In the previous step of the journey, you learned how to perform the migration and [Go-live](/help/journey-migration/go-live.md) once the code and the content were ready to be moved over to AEM as a Cloud Service.
 
 ## Objective {#objective}
 
