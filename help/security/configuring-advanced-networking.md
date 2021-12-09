@@ -153,7 +153,7 @@ The table below describes traffic routing:
 The AEM Cloud Service Apache/Dispatcher tier's `mod_proxy` directive can be configured using the properties described above.
 
 ```
-ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:${AEM_HTTP_PROXY_PORT}"
+ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:3128"
 ProxyPass "/somepath" "http://example.com"
 ProxyPassReverse "/somepath" "http://example.com"
 ```
@@ -161,7 +161,7 @@ ProxyPassReverse "/somepath" "http://example.com"
 ```
 SSLProxyEngine on //needed for https backends
  
-ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:${AEM_HTTPS_PROXY_PORT}"
+ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:3128"
 ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
