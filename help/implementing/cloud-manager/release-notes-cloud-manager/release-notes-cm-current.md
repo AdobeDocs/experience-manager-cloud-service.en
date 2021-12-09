@@ -17,13 +17,13 @@ The release date for Cloud Manager in AEM as a Cloud Service 2021.11.0 is 16 Dec
 
 ### What's New {#what-is-new}
 
-* Enhancements to information presented in the Activities page
-* Minor update to copy in the UI ("TXT value" instead of "TXT record" to remove potential confusion)
-* A user with the Deployment Manager role can now initiate the Project/Branch creation wizard for a repository with no branches from the action menu in the repositories page.
-* Enhancements to Activity page to surface additional details including Source Code, Commit ID, etc. applicable to pipelines
+* Enhancements to information presented in the Activities page were added.
+* Minor update were made to the UI when copying TXT entries ("TXT value" instead of "TXT record") to remove potential confusion.
+* A user with the Deployment Manager role can now initiate the Project/Branch creation wizard for a repository with no branches from the action menu on the repositories page.
+* Enhancements to Activity page were added to surface additional details including Source Code, Commit ID, etc. applicable to pipelines.
 * An optimization in the OakPal scanning process has been introduced for large packages.
 * Front End pipelines now support pipeline variables.
-* Cloud Manager self-service feature to add free-form variables (including secrets) at the environment level
+* A Cloud Manager self-service feature to add free-form variables (including secrets) at the environment level was added.
 
 ### Bug Fixes {#bug-fixes}
 
