@@ -25,7 +25,13 @@ Digital assets can be associated with one or more product SKUs. Once associated,
 
 >[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
 
-Experience Fragments are a feature of Adobe Experience Manager that allows a marketer to create unstructured re-usable content. Experience Fragments can be associated with a product SKU or catalog id. Once associated, marketers can easily discover related experience fragments based on products displayed on a page. Experience Fragments can also be dynamically included on a product catalog page through the use of a placeholder and product association.
+Experience Fragments are a feature of Adobe Experience Manager that allows a marketer to create **unstructured** re-usable content. Experience Fragments can be associated with a product SKU or catalog id. Once associated, marketers can easily discover related fragments based on products displayed on a page. Experience Fragments can also be dynamically included on a product catalog page through the use of a placeholder and association.
+
+## Content Fragments
+
+>[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
+
+Content Fragments are a feature of Adobe Experience Manager that allows a marketer to create **structured** re-usable content. Content Fragments can be associated with a product SKU or catalog id. Once associated, marketers can easily discover related fragments based on products displayed on a page. Content Fragments can also be dynamically included on a product catalog page through the use of a placeholder and association.
 
 ## Related Resources {#related}
 
