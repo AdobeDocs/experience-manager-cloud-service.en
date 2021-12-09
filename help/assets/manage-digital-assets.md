@@ -52,6 +52,10 @@ Once enabled, Experience Manager sends notifications of duplicate assets to the 
 
 ![Inbox notification for duplicate assets](assets/duplicate-detect-inbox-notification.png)
 
+>[!NOTE]
+>
+>When you upload assets to the repository, Experience Manager detects duplication and notifies you about the first 100 duplicate assets.
+
 ## Preview assets {#previewing-assets}
 
 To preview an asset, follow these steps.
