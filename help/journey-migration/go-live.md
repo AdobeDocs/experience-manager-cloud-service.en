@@ -33,11 +33,11 @@ It is also recommended you review any unused Assets,Pages,AEM Projects, Users an
 
 Once access to a [production clone](#proof-migration) is established proceed to check the sanity of the repository. The goal is to clean and compact the repository on the source before starting the migration. This step will potentially save a lot of time otherwise spend on troubleshooting the issues once the migration starts.
 
-Action Item | Key Takeaways
----------|----------
+| Action Item | Key Takeaways |
+|---------|----------|
 Users, Groups and Permissions | You need to understand the volume of users, groups, and complexity around memberships. Look for opportunities to clean up any unused users, groups in the source before migration.
-Incomplete Asset processing | Try to complete the processing of assets in the source system before starting the migration to avoid potential concerns in AEM as a Cloud Service post migration.
-Content Sanity | It is recommended to query for bad content and purge it before you start the migration. See also [Asset Sanity](#asset-sanity).
+Incomplete Asset processing | Try to complete the processing of assets in the source system before starting the migration to avoid potential concerns in AEM as a Cloud Service post migration. |
+Content Sanity | It is recommended to query for bad content and purge it before you start the migration. See also [Asset Sanity](#asset-sanity). |
 
 ## Content migration strategy and timeline {#strategy-timeline}
 
