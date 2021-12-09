@@ -153,7 +153,7 @@ To configure the tool, follow these steps:
    * [!UICONTROL Delete source file after import]: Select this option to delete the original files from the source data store after the files are imported into [!DNL Experience Manager].
    * [!UICONTROL Import Mode]: Select Skip, Replace, or Create Version. Skip mode is the default and in this mode the ingestor skips to import an asset if it already exists. See the meaning of [replace and create version options](#handling-upload-existing-file).
    * [!UICONTROL Assets Target Folder]: Import folder in DAM where assets are to be imported. For example, `/content/dam/imported_assets`
-   * [!UICONTROL Metadata File]: The metadata file to import, provided in CSV format. You provide this CSV file in the source blob location and refer the path in the configuration of bulk ingestor tool.
+   * [!UICONTROL Metadata File]: The metadata file to import, provided in CSV format. Specify the CSV file in the source blob location and refer to the path while configuring Bulk Ingestor tool. The CSV file format referenced in this field is same as that of the CSV file format when you [Import and export asset metadata in bulk](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). If you select the **Delete source file after import** option, filter CSV files either using the **Exclude** or **Include MIME Type** or **Filter by Path/File** fields. You can use a regular expression to filter CSV files in these fields.
 
 1. You can delete, modify, execute and do more with your created ingestor configurations. When you select a bulk import ingestor configuration, the following options are available in the toolbar.
 
