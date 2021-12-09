@@ -4,7 +4,6 @@ description: Learn how to create a private folder in the [!DNL Adobe Experience 
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
-exl-id: 
 ---
 # Private folder in [!DNL Adobe Experience Manager Assets] {#private-folder}
 
