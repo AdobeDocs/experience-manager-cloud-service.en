@@ -17,7 +17,12 @@ The Headless Getting Started Guides lay out a simple path for for creating, mana
 >
 >This getting started guide assumes knowledge of both AEM and headless technologies.
 >
->If you are new to either AEM or headless, please refer to our [Headless Documentation Journeys](/help/journey-documentation/documentation-journeys.md) for an end-to-end introduction to both headless and how AEM supports it.
+>If you are new to either AEM or headless, please refer to our Headless Documentation Journeys for an end-to-end introduction to both headless and how AEM supports it.
+>
+>* [Headless Developer Journey](/help/journey-headless/developer/overview.md)
+>* [Headless Content Architect Journey](/help/journey-headless/architect/overview.md)
+>* [Headless Content Author Journey](/help/journey-headless/author/overview.md)
+>* [Headless Translation Journey](/help/journey-headless/translation/overview.md).
 
 ## Audience {#audience}
 
