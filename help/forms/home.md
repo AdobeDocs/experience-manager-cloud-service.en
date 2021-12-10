@@ -1,6 +1,7 @@
 ---
 title: Introduction to [!DNL AEM Forms] as a Cloud Service
 description: Adobe Experience Manager Forms as a Cloud Service self-help resources and documentation links
+landing-page-description: Understand how to use forms in AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 ---
 # Introduction {#introduction}
