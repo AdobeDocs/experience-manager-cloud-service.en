@@ -1,0 +1,642 @@
+openapi: 3.0.3
+info:
+  description: >
+    AEM Forms as a Cloud Service - Communications APIs.
+
+
+    # Introduction
+
+    Communications APIs help you combine XFA-based XDP or PDF templates and
+    Acrobat Forms (AcroForm) with XML data to generate print documents in
+    various formats. It enables you to create applications that let you:
+
+
+    - Generate documents by populating template files with XML data. For
+    example, receipts, bills, and statements.
+
+    - Generate forms in various formats, including non-interactive PDF print
+    streams.
+
+    - Generate print PDFs from XFA form PDFs.
+
+    - Generate PDF, PostScript, PCL, and ZPL documents in bulk by merging
+    multiple sets of data with source templates.
+
+
+    These APIs help generate documents in bulk / asynchronous mode configuring
+    various parameters for the conversion and then starting the batch process.
+
+
+    You can find out more about document generation at
+
+
+    [AEM Forms as a Cloud Service - Communications
+    Overview](https://www.adobe.com/go/learn_aemformscs_communications_en)
+
+
+    # Before you start
+
+    Make user account of your developer or techincal account member of
+    forms-user group. If you do not have a technical account, make a call to AEM
+    as a Cloud Service. When you use service credential a techincal account is
+    created on the first call.
+
+
+    # Set up Communicaions APIs
+
+    Contact formscsbeta@adobe.com to enable Communications APIs for your
+    organization. Send name of your organization, program details, and email
+    address of your AEM as a Cloud Service administrator. Also, set up a [local
+    development
+    environment](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html)
+    to test and develop the functionality using Communication APIs locally.
+  title: AEM Forms as a Cloud Service - Communications
+  version: 1.0.0-oas3
+servers:
+  - url: >-
+      https://author-p8857-e10452-cmstg.adobeaemcloud.com/adobe/forms/batch/output
+tags:
+  - name: Communications Services
+    description: Communications Services Capabilities
+  - name: Batch Configuration
+    description: Configuration of a Batch Job
+  - name: Batch Execution
+    description: Execution Instances of a Batch Job
+externalDocs:
+  description: Find out more
+  url: https://www.adobe.com/go/learn_aemformscs_communications_en
+paths:
+  /config:
+    post:
+      tags:
+        - Batch Configuration
+      summary: Create a batch configuration
+      operationId: CreateBatchConfig
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BatchConfig'
+      responses:
+        '201':
+          description: Batch configuration has been created.
+          headers:
+            Location:
+              $ref: '#/components/headers/Location'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '408':
+          $ref: '#/components/responses/RequestTimeout'
+        '409':
+          $ref: '#/components/responses/RecordExists'
+        '500':
+          $ref: '#/components/responses/InternalServer'
+  /config/{configName}:
+    get:
+      tags:
+        - Batch Configuration
+      summary: Get a batch config by config name
+      operationId: GetBatchConfigbyName
+      parameters:
+        - $ref: '#/components/parameters/ConfigName'
+      responses:
+        '200':
+          $ref: '#/components/responses/BatchConfig'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '408':
+          $ref: '#/components/responses/RequestTimeout'
+        '500':
+          $ref: '#/components/responses/InternalServer'
+    put:
+      tags:
+        - Batch Configuration
+      summary: Update a batch config by config name
+      operationId: UpdateBatchConfigbyName
+      parameters:
+        - $ref: '#/components/parameters/ConfigName'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BatchConfig'
+      responses:
+        '200':
+          $ref: '#/components/responses/BatchConfig'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '408':
+          $ref: '#/components/responses/RequestTimeout'
+        '500':
+          $ref: '#/components/responses/InternalServer'
+    delete:
+      tags:
+        - Batch Configuration
+      summary: Delete a batch config by config name
+      operationId: DeleteBatchConfigbyName
+      parameters:
+        - $ref: '#/components/parameters/ConfigName'
+      responses:
+        '200':
+          description: Deleted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BatchConfig'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '408':
+          $ref: '#/components/responses/RequestTimeout'
+        '500':
+          $ref: '#/components/responses/InternalServer'
+  /configs:
+    get:
+      tags:
+        - Batch Configuration
+      summary: Get all batch configurations
+      operationId: GetAllBatchConfigs
+      responses:
+        '200':
+          $ref: '#/components/responses/BatchConfigs'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '408':
+          $ref: '#/components/responses/RequestTimeout'
+        '500':
+          $ref: '#/components/responses/InternalServer'
+  /config/{configName}/execution:
+    post:
+      tags:
+        - Batch Execution
+      summary: Start the batch execution
+      operationId: StartBatchRun
+      parameters:
+        - $ref: '#/components/parameters/ConfigName'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StartBatchRequest'
+      responses:
+        '202':
+          description: Accepted the batch execution request
+          headers:
+            Location:
+              description: Link of the batch execution instance
+              schema:
+                type: string
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '408':
+          $ref: '#/components/responses/RequestTimeout'
+        '500':
+          $ref: '#/components/responses/InternalServer'
+  /config/{configName}/execution/{executionId}:
+    get:
+      summary: Get batch execution details for a specific batch execution
+      operationId: GetBatchRunInstanceState
+      tags:
+        - Batch Execution
+      parameters:
+        - $ref: '#/components/parameters/ConfigName'
+        - $ref: '#/components/parameters/ExecutionId'
+      responses:
+        '200':
+          $ref: '#/components/responses/BatchState'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '408':
+          $ref: '#/components/responses/RequestTimeout'
+        '500':
+          $ref: '#/components/responses/InternalServer'
+  /config/{configName}/execution/{executionId}/cancel:
+    put:
+      summary: Stop execution for this batch execution instance
+      tags:
+        - Batch Execution
+      operationId: CancelBatchRunInstance
+      parameters:
+        - $ref: '#/components/parameters/ConfigName'
+        - $ref: '#/components/parameters/ExecutionId'
+      responses:
+        '202':
+          description: Request for batch execution cancellation accepted.
+          headers:
+            Location:
+              description: Link of the batch execution instance
+              schema:
+                type: string
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '408':
+          $ref: '#/components/responses/RequestTimeout'
+        '500':
+          $ref: '#/components/responses/InternalServer'
+  /config/{configName}/executions:
+    get:
+      tags:
+        - Batch Execution
+      summary: Get state of all batch instances being executed
+      operationId: GetAllRunningInstancesForBatch
+      parameters:
+        - $ref: '#/components/parameters/ConfigName'
+      responses:
+        '200':
+          $ref: '#/components/responses/BatchStates'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '408':
+          $ref: '#/components/responses/RequestTimeout'
+        '500':
+          $ref: '#/components/responses/InternalServer'
+components:
+  schemas:
+    BatchConfig:
+      type: object
+      required:
+        - configName
+        - dataSourceConfigUri
+        - outputTypes
+        - template
+      properties:
+        configName:
+          $ref: '#/components/schemas/ConfigName'
+        dataSourceConfigUri:
+          type: string
+          description: This is the location of data source configuration containing details of cloud config (authentication info for cloud account), source (location for data files), and destinatin (location for output files generated and failure information details).
+        source:
+          allOf:
+            - $ref: '#/components/schemas/DataSource'
+            - type: object
+              description: >-
+                This is the location for data files which are XML files containing the data to be merged with template.
+                It contains blob container details and directory path.
+        destination:
+          allOf:
+            - $ref: '#/components/schemas/DataSource'
+            - type: object
+              description: >-
+                This is the location for generated files in the format requested. It contains blob container details and directory path.
+        outputTypes:
+          type: array
+          items:
+            $ref: '#/components/schemas/OutputType'
+          description: >-
+            It contains details of the output formats requested for generation. PDF, representing PDF format;
+            and PRINT representing all non-PDF formats e.g. PCL, PostScript etc.
+        template:
+          type: string
+          description: >-
+            The template defines appearance and behavior of the PDF document.
+            The API supports templates of format - XDP and PDF document. You can
+            specify a reference path of your AEM Repository.
+        xci:
+          type: string
+          description: >-
+            The service uses an XCI configuration file to configure various
+            properties of the PDF document. The XCI parameter has an effect only
+            when the template is of type XDP or an XDP-based PDF document.
+        contentRoot:
+          type: string
+          description: Root location within an AEM repository to resolve template from.
+        pdfOutputOptions:
+          $ref: '#/components/schemas/PDFOutputOptions'
+          description: It contains detailled configuration parameters which allow control over PDF file generation.
+        printedOutputOptionsList:
+          type: array
+          items:
+            $ref: '#/components/schemas/PrintedOutputOptions'
+          description: It contains detailled configuration parameters which allow control over PRINT file generation.
+    BatchState:
+      type: object
+      properties:
+        configName:
+          $ref: '#/components/schemas/ConfigName'
+        executionId:
+          $ref: '#/components/schemas/ExecutionId'
+        config:
+          $ref: '#/components/schemas/BatchConfig'
+          description: This contains details of the configuration used to run this execution instance of the batch.
+        status:
+          $ref: '#/components/schemas/BatchStatus'
+        outputStatuses:
+          type: array
+          items:
+            $ref: '#/components/schemas/OutputStatus'
+        recordsCount:
+          type: integer
+          format: int64
+          description: This contains total records count for the batch.
+        startTime:
+          type: integer
+          format: int64
+          description: This contains details on when the batch execution was started, seconds since epoch (1970-01-01T00:00:00Z).
+        endTime:
+          type: integer
+          format: int64
+          description: This contains details on when the batch execution ended, seconds since epoch (1970-01-01T00:00:00Z).
+        errorInfo:
+          $ref: '#/components/schemas/ErrorInfo'
+    BatchStatus:
+      type: string
+      enum:
+        - PENDING
+        - PRE_PROCESSING
+        - PROCESSING
+        - PAUSE_IN_PROGRESS
+        - CANCEL_IN_PROGRESS
+        - PAUSED
+        - SUCCESS
+        - FAILED
+    OutputStatus:
+      type: object
+      required:
+        - outputType
+        - renderType
+        - inProgressCount
+        - successCount
+        - failureCount
+      properties:
+        outputType:
+          $ref: '#/components/schemas/OutputType'
+        renderType:
+          $ref: '#/components/schemas/RenderType'
+        inProgressCount:
+          type: integer
+          format: int64
+        successCount:
+          type: integer
+          format: int64
+        failureCount:
+          type: integer
+          format: int64
+    ErrorInfo:
+      type: object
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+    ErrorResponse:
+      type: object
+      properties:
+        type:
+          type: string
+        title:
+          type: string
+        status:
+          type: integer
+          format: int32
+        detail:
+          type: string
+        instance:
+          type: string
+    DataSource:
+      type: object
+      required:
+        - container
+        - keyPath
+      properties:
+        container:
+          type: string
+        keyPath:
+          type: string
+    OutputType:
+      type: string
+      description: Add more info here
+      enum:
+        - PDF
+        - PRINT
+    RenderType:
+      type: string
+      enum:
+        - PostScript
+        - PCL
+        - ZPL
+        - DPL
+        - IPL
+        - TPCL
+    ConfigName:
+      type: string
+    ExecutionId:
+      type: string
+    StartBatchRequest:
+      type: object
+      properties:
+        config:
+          $ref: '#/components/schemas/BatchConfig'
+    PrintConfig:
+      type: object
+      description: print configuration.
+      properties:
+        xdcUri:
+          type: string
+          enum:
+            - hppcl5e.xdc
+            - hppcl5c.xdc
+            - ps_plain.xdc
+            - ps_plain_level3.xdc
+            - zpl300.xdc
+            - zpl600.xdc
+            - ipl300.xdc
+            - ipl400.xdc
+            - tpcl600.xdc
+            - dpl300.xdc
+            - dpl406.xdc
+            - dpl600.xdc
+        renderType:
+          $ref: '#/components/schemas/RenderType'
+    PrintedOutputOptions:
+      type: object
+      description: Various options for the API
+      properties:
+        locale:
+          type: string
+          description: Specify locale/language for the output document.
+          default: en
+        copies:
+          type: integer
+          description: Sets the number of copies to print. The default number is 1.
+          default: 1
+        paginationOverride:
+          type: string
+          description: Set the option to print on one side or both the sides of a page.
+          enum:
+            - simplex
+            - duplexShortEdge
+            - duplexLongEdge
+        printConfig:
+          $ref: '#/components/schemas/PrintConfig'
+      required:
+        - printConfig
+    PDFOutputOptions:
+      type: object
+      description: Various options for the API
+      properties:
+        locale:
+          type: string
+          description: Locale in which pdf should be rendered.
+          default: en
+        isTagged:
+          type: boolean
+          description: Specify if the PDF document can be tagged.
+          default: false
+        embedFonts:
+          type: boolean
+          description: Enable the option to embed fonts to the PDF document.
+          default: false
+        linearizedPDF:
+          type: boolean
+          default: false
+          description: Enable the option to optimize the PDF for web viewing.
+        retainFormState:
+          type: boolean
+          default: false
+          description: >-
+            Set true to retain PDF Form state while flattening PDF. This
+            parameter has effect only when source template is an XFA-based PDF
+            Form and no input data is provided.
+        retainUnsignedSignatureFields:
+          type: boolean
+          default: false
+          description: >-
+            Set true to retain interactive unsigned signature fields in
+            generated Flat PDF. It allows you to use PDF for gathering
+            signatures.
+        acrobatVersion:
+          type: string
+          description: >-
+            Set the minimum version of Acrobat Reader required to open the PDF
+            document.
+          enum:
+            - Acrobat_10
+            - Acrobat_10_1
+            - Acrobat_11
+  responses:
+    BatchConfig:
+      description: Batch configuration
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BatchConfig'
+    BatchConfigs:
+      description: Batch configuration
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/components/schemas/BatchConfig'
+    BatchState:
+      description: Batch state
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BatchState'
+    BatchStates:
+      description: Batch states
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/components/schemas/BatchState'
+    BadRequest:
+      description: Bad Request. The request was invalid or cannot be served.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    NotFound:
+      description: The specified resource was not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    RecordExists:
+      description: Record already exists
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    InternalServer:
+      description: >-
+        Internal Server Error. The server has encountered an error and is unable
+        to process your request at this time.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    RequestTimeout:
+      description: Request timed out. An operation has timed out on the client.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    Unauthorized:
+      description: Unauthorized. Authentication credentials are missing or incorrect.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+  parameters:
+    ConfigName:
+      name: configName
+      in: path
+      description: config name
+      required: true
+      schema:
+        $ref: '#/components/schemas/ConfigName'
+    ExecutionId:
+      name: executionId
+      in: path
+      description: execution identifier
+      required: true
+      schema:
+        $ref: '#/components/schemas/ExecutionId'
+  headers:
+    Location:
+      description: Link of the resource created
+      schema:
+        type: string
