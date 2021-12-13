@@ -19,12 +19,12 @@ The following section outlines the general Release Notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2021.10.0) is November 4, 2021.
-The following release (2021.11.0) is on December 16, 2021.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2021.11.0) is December 16, 2021.
+The following release (2022.1.0) is on January 27, 2022.
 
 ## Release Video {#release-video}
 
-Have a look at the [October 2021 Release Overview](https://video.tv.adobe.com/v/338253) video for a summary of the features added.
+Have a look at the [November 2021 Release Overview](https://video.tv.adobe.com/v/338253) video for a summary of the features added.
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -36,11 +36,17 @@ Have a look at the [October 2021 Release Overview](https://video.tv.adobe.com/v/
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] now supports auto-generation of text transcripts from the supported audio and video assets, using a built-in connector to [!DNL Azure Media Services]. The [supported file types](/help/assets/file-format-support.md#audio-video-transcription-formats) are automatically transcribed and the text is stored in WebVTT format. The WebVTT captions are used for more effective searching, captioning, or translation. Also, the feature improves accessibility, discoverability, and localization of the assets.
+* Dynamic Media Image Smart Crop and Swatch is now powered by latest Sensei services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits will be preserved on reprocessing, if there is no change in the width and height in the Image Profile.
 
-### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
+### New features in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] Image Smart Crop and Swatch is now powered by latest Sensei services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits will be preserved on reprocessing, if there is no change in the width and height in the Image Profile.
+* [!DNL Dynamic Media] - You can now use AEM Dynamic Media interface to configure General Settings and Publish Setup instead of having to go through the Dynamic Media Classic desktop application.
+
+* [!DNL Dynamic Media] now supports ingestion, preview, playback and publish for MXF videos. Annotation and shoppable video for MXF videos is not yet supported.
+
+* Experience Manager enables you to modify the assets available on the remote DAM deployment and propagate those changes, with some delay, to the connected assets on the local Sites deployment. As a result, the connected assets available on both deployments remain in sync.
+
+![Modify Connected Assets](../assets/modify-connected-assets.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -65,15 +71,13 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ### What is New {#what-is-new-cif}
 
-* The CIF add-on supports latest Commerce v2.4.3 with new GraphQL APIs and schemas
+* Extended myAccount components that are based on Commerce's extensible Peregrine components
 
-* Authors can add links to product and catalog pages in text fields using the rich text editor (RTE). A CIF icon has been added to the RTE toolbar that will open up the pickers to quickly search and select the product or category without leaving the context.
+![Extended myAccount components](/help/assets/CIF/extended-myAccount-components.png)
 
-* Existing pop-up shopping cart and checkout have been replaced with dedicated AEM shopping cart and checkout pages. The components on these pages are built using Magento's extensible Peregrine components
+* Authors can create ad-hoc Commerce Product Recommendations using additional recommendation types
 
-* Merchants can hide certain product catalog categories in the navigation using the Commerce backend. The CIF Navigation Core Component respects the commerce backend configuration "include in menu" to show / hide categories in navigation
-
-* AEM Storefront Venia returns HTTP 404 error if category or product page is not found
+* Support for gift cards in AEM Storefront
 
 ## Cloud Manager {#cloud-manager}
 
@@ -191,14 +195,3 @@ The Release Date for Best Practices Analyzer v2.1.22 is December 01, 2021.
 
 * Detection of Foundation components was refined to reduce false negatives.
 * For AEM Forms customers, BPA messaging regarding `EMAIL_PDF_SUBMIT_ACTION` not being available on AEM as a Cloud Service has been fixed. 
-
-## Content Transfer Tool {#ctt-release}
-
-### Release Date {#release-date-ctt}
-
-The Release Date for Content Transfer Tool v1.7.10 is December 08, 2021.
-
-### What's New {#what-is-new-ctt}
-
-* Toggle added to the ingestion phase in the Content Transfer Tool to allow users to disable [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) during ingestion. For optimal ingestion speeds, pre-copy during ingestion should be disabled for small migration sets or if only a few blobs were added since the last ingestion. 
-* User Mapping updated to use improved User Management API that allows it to get 2000 users at a time, significantly improving the performance.
