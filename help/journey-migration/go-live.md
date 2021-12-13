@@ -31,13 +31,13 @@ It is also recommended you review any unused Assets,Pages,AEM Projects, Users an
 
 ### Content Repository Sanity {#repository-sanity}
 
-Once access to a [production clone](#proof-migration) is established proceed to check the sanity of the repository. The goal is to clean and compact the repository on the source before starting the migration. This step will potentially save a lot of time otherwise spend on troubleshooting the issues once the migration starts.
+Once access to a [production clone](#proof-migration) is established proceed to check the sanity of the repository. As mentioned in the previous section, the goal is to clean and compact the repository on the source before starting the migration. This step will potentially save a lot of time otherwise spend on troubleshooting issues once the migration starts.
 
 | Action Item | Key Takeaways |
 |---------|----------|
 Users, Groups and Permissions | You need to understand the volume of users, groups, and complexity around memberships. Look for opportunities to clean up any unused users, groups in the source before migration.
 Incomplete Asset processing | Try to complete the processing of assets in the source system before starting the migration to avoid potential concerns in AEM as a Cloud Service post migration. |
-Content Sanity | It is recommended to query for bad content and purge it before you start the migration. See also [Asset Sanity](#asset-sanity). |
+Content Sanity | It is recommended to query for bad content and purge it before you start the migration. For example, look for assets or pages that do not have original renditions or that are stuck in workflow processing. See also [Asset Sanity](#asset-sanity). |
 
 ## Content migration strategy and timeline {#strategy-timeline}
 
@@ -207,13 +207,22 @@ Both of the above items will be identified and reported in [Best Practice Analyz
 
 Following these steps can help you complete the migration process and ensure that you can perform a smooth and successful migration:
 
-* Schedule a code and content freeze period
+* Schedule a code and content freeze period. See also [Code and Content Freeze Timelines for the Migration](#code-content-freeze).
 * Perform the final content top-up
 * Complete testing iterations
 * Run performance and security tests
 * Cut-Over and perform the migration on the production instance
 
 You can always reference the list above in case you need to re-calibrate your tasks while completing the migration.
+
+## Identify Code and Content Freeze Timelines for the Migration {#code-content-freeze}
+
+As mentioned previously you will eventually have to schedule a code and content freeze period. Consequently, the following questions may help you plan the freeze period better:
+
+* How long do I have to freeze content authoring activities?
+* For how long should I ask my delivery team to stop adding new features?
+
+To answer the first question, you should take into consideration the time taken during trial runs in non-production environments. The second question is more complicated. To answer it you need close collaboration between the team who is adding new features and the team refactoring the code. The goal should be to make sure all the code that is added to the existing deployment is also added, tested, and deployed to the cloud services branch. Generally speaking, this means the amount of code freeze will be lower.
 
 ## What's Next {#what-is-next}
 

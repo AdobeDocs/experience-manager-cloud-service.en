@@ -5,7 +5,11 @@ description: Learn how to monitor for issues and improve performance
 
 # Post Go-Live {#post-go-live}
 
-This is the last part of the journey so you will learn to how to monitor for issues and improve performance once the migration is complete. You should ensure the clean-up of temporary files, review best practices for continuous development and manage logs.
+This is the last part of the journey so you will learn to how to monitor for issues and improve performance once the migration is complete. You should ensure the clean-up of temporary files, review best practices for continuous development and manage logs. Additionally, you should share post-migration learnings with stakeholders and other teams, for example:
+
+* What worked well and what did not?
+* What were the major pain points?
+* Recommendations in case of a future migration.
 
 ## The Story So Far {#story-so-far}
 
