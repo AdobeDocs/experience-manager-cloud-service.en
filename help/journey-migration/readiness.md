@@ -1,10 +1,10 @@
 ---
-title: Determining if your Deployment is Ready to be Moved to AEM as a Cloud Service 
+title: Readiness Phase
 description: Learn about the steps you need to take in order to make sure that your AEM installation is ready to be moved to the cloud
 ---
-# Determining if your Deployment is Ready to be Moved to AEM as a Cloud Service  {#determining-if-your-deployment-is-ready}
+# Readiness Phase {#readiness-phase}
 
-In this part of the AEM as a Cloud Service Migration Journey you will familiarize yourself with AEM as a Cloud Service, review the notable changes that it has introduced and understand what it takes to plan for a successful migration to the cloud.
+In this part of the AEM as a Cloud Service Migration Journey, you will familiarize yourself with AEM as a Cloud Service, review the notable changes that it has introduced and understand what it takes to plan for a successful migration to the cloud.
 
 ## The Story So Far {#story-so-far}
 
@@ -23,57 +23,17 @@ In the previous document of the journey, [Getting Started with Moving to AEM as 
 This document helps you understand what factors you need to take into account in order to make sure your AEM installation is ready to be moved to the cloud:
 
 * Learn about notable changes and deprecated features
-* Understand the planning phase of the migration
+* Understand how to plan for the the migration to AEM as a Cloud Service
 
-## Notable Changes {#notable-changes}
+<!-- ## Notable Changes {#notable-changes}
 
 AEM as a Cloud Service brings many new features and possibilities for managing your AEM projects.
 
 Along with these improvements, a number of differences have been introduced between on-premise installations of AEM and Adobe Managed Services, compared to AEM as a Cloud Service.
 
-We recommend you review these changes by consulting the [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md) documentation.
+We recommend you review these changes by consulting the [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md) documentation. -->
 
-## Deprecated Features {#deprecated-features}
-
-Adobe constantly evaluates product capabilities, to over time reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility.
-
-We recommend you consult the [Deprecated Features](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features) to familiarize yourself with the features and capabilities that have been marked as deprecated in Experience Manager as a Cloud Service and see what the impact is for your AEM deployment.
-
-## Cloud Manager {#cloud-manager}
-
-A notable new feature of AEM as a Cloud Service is Cloud Manager, the mechanism for deploying code to Cloud Service environments.
-
-To get up to speed on how to use Cloud Manager to manage and deploy your code, follow the resources below: 
-
-* [Managing Environments](/help/implementing/cloud-manager/manage-environments.md)
-
-* [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md)
-
-* [Deploying your Code](/help/implementing/cloud-manager/deploy-code.md)
-
-## Plan for a Review of your AEM Installation {#review-planning}
-
-Once you have accustomed yourself with the changes introduced with AEM as a Cloud Service, it is time to start planning for a review of your existing installation, in order to gauge the level of changes required in order to move it to the cloud.
-
-The following figure showcases key steps involved during the review phase:
-
-![image](/help/move-to-cloud-service/assets/planning-phaseimg1.png)
-
-Next, we will explore what each of these steps means in detail.
-
-### Assessing Cloud Service Readiness {#assess-cloud-readiness}
-
-The first step is to assess your readiness to move from your existing AEM version to Cloud Service and determine areas that will require refactoring in order to be compatible with AEM as a Cloud Service.
-
-You will need to undertake a comprehensive assessment of your current AEM source code against the notable changes and deprecated features to determine the level of effort expected in the transition journey.
-
-The number of findings will directly influence the timelines and overall project success. Hence it is recommended to uncover as much as possible to plan the delivery or to initiate the conversations needed to redesign any customizations required to be in line with AEM as a Cloud Service best practices.
-
-You can accelerate the assessment by running the Best Practices Analyzer on your current AEM version. You can read up on how it works by consulting the [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md) documentation.
-
-If you already have access to a Cloud Service environment, it is recommended to run your current code in a Cloud Manager [code quality pipeline](/help/implementing/cloud-manager/code-quality-testing.md) to assess the required code changes to be compatible with Cloud Service.
-
-### Be Aware of Considerable Changes in the AEM as a Cloud Service Architecture {#be-aware-of-considerable-changes-in-aem-cloud-service}
+## Be Aware of Changes in the AEM as a Cloud Service Architecture {#be-aware-of-changes-in-aem-cloud-service}
 
 The list of items in the following table are only subset of the changes and are worth highlighting.
 
@@ -189,12 +149,62 @@ The list of items in the following table are only subset of the changes and are 
 </tbody>
 </table>
 
-### Understand Best Practice Analyzer Codes and Resolutions {#understand-bpa-codes-and-resolutions}
 
-One of the useful resources that aides the assessment is the report generated by the Best Practice Analyzer. The important column in each line items in that report is a CODE (e.g.: CAV, LUI, NBCC etc.).
+## Deprecated Features {#deprecated-features}
 
-Having a good understanding of what each code means and the corresponding path to resolution comes very handy while creating the Assessment Report.
-Please refer to the BPA Codes available as part of public documentation.
+Adobe constantly evaluates product capabilities, to over time reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility.
+
+We recommend you consult the [Deprecated Features](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features) to familiarize yourself with the features and capabilities that have been marked as deprecated in Experience Manager as a Cloud Service and see what the impact is for your AEM deployment.
+
+<!-- ## Cloud Manager {#cloud-manager}
+
+A notable new feature of AEM as a Cloud Service is Cloud Manager, the mechanism for deploying code to Cloud Service environments.
+
+To get up to speed on how to use Cloud Manager to manage and deploy your code, follow the resources below: 
+
+* [Managing Environments](/help/implementing/cloud-manager/manage-environments.md)
+
+* [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md)
+
+* [Deploying your Code](/help/implementing/cloud-manager/deploy-code.md) -->
+
+## Plan for a Review of your AEM Installation {#review-planning}
+
+Once you have accustomed yourself with the changes introduced with AEM as a Cloud Service, it is time to start planning for a review of your existing installation, in order to gauge the level of changes required in order to move it to the cloud.
+
+The following figure showcases key steps involved during the review phase:
+
+![image](/help/move-to-cloud-service/assets/planning-phaseimg1.png)
+
+Next, we will explore what each of these steps means in detail.
+
+### Assessing Cloud Service Readiness {#assess-cloud-readiness}
+
+The first step is to assess your readiness to move from your existing AEM version to Cloud Service and determine areas that will require refactoring in order to be compatible with AEM as a Cloud Service.
+
+You will need to undertake a comprehensive assessment of your current AEM source code against the notable changes and deprecated features to determine the level of effort expected in the transition journey.
+
+The number of findings will directly influence the timelines and overall project success. Therefore, it is recommended to uncover as much as possible to plan the delivery or to initiate the conversations needed to redesign any customizations required to be in line with AEM as a Cloud Service best practices.
+
+**Best Practice Analyzer**
+
+You can accelerate the assessment by running the Best Practices Analyzer against your current AEM version. Having a good understanding of how it works is key to speeding up your assessment planning.
+
+You can read up on how it works by consulting the [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md) documentation.
+
+**Create a Cloud Readiness Assessment Report**
+
+The next step is creating a report based on all the knowledge gained thus far. A typical report should contain these inputs:
+
+* Documentation detailing the featureset of your particular AEM installation
+* Details on your the AEM custom configurations and code
+* Best Practices Analyzer reports from the Stage and Production instances
+* Production Dispatcher configurations
+* CDN Configurations (if there are any)
+
+**Socialize the Report**
+
+After the report is complete, discuss it with the relevant teams in order to confirm your findings and create actionable items.
 
 ### Reviewing Resource Planning {#review-resource-planning}
 
