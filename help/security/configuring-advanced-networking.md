@@ -80,7 +80,7 @@ For example, here's sample code to send a request to `www.example.com:8443`:
 
 ```java
 String url = "www.example.com:8443"
-String proxyHost = System.getenv("AEM_PROXY_HOST");
+String proxyHost = System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel");
 int proxyPort = 3128;
 HttpClient client = HttpClient.newBuilder()
       .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
