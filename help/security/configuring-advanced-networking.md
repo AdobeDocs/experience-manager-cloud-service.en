@@ -121,7 +121,7 @@ The table below describes traffic routing:
   <tr>
     <td></td>
     <td>Non-standard traffic (on other ports outside 80 or 443) through http proxy configured using the following environment variable and proxy port number. Do not declare the destination port in the Cloud Manager API call's portForwards parameter:<br><ul>
-     <li>AEM_PROXY_HOST</li>
+     <li>AEM_PROXY_HOST (default to `proxy.tunnel` in AEM releases < 6094)</li>
      <li>3128</li>
     </ul>
     <td>Ports outside 80 or 443</td>
