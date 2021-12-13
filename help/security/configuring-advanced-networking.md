@@ -122,7 +122,7 @@ The table below describes traffic routing:
     <td></td>
     <td>Non-standard traffic (on other ports outside 80 or 443) through http proxy configured using the following environment variable and proxy port number. Do not declare the destination port in the Cloud Manager API call's portForwards parameter:<br><ul>
      <li>AEM_PROXY_HOST (default to `proxy.tunnel` in AEM releases < 6094)</li>
-     <li>3128</li>
+     <li>AEM_HTTPS_PROXY_PORT (default to port 3128 in AEM releases < 6094)</li>
     </ul>
     <td>Ports outside 80 or 443</td>
     <td>Allowed</td>
@@ -157,7 +157,7 @@ The table below describes traffic routing:
 The AEM Cloud Service Apache/Dispatcher tier's `mod_proxy` directive can be configured using the properties described above.
 
 ```
-ProxyRemote "http://example.com:8080" "http://${AEM_HTTP_PROXY_HOST}:3128"
+ProxyRemote "http://example.com:8080" "http://${AEM_PROXY_HOST}:3128"
 ProxyPass "/somepath" "http://example.com:8080"
 ProxyPassReverse "/somepath" "http://example.com:8080"
 ```
