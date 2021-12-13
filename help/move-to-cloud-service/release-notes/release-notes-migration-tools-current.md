@@ -27,3 +27,15 @@ The Release Date for Best Practices Analyzer v2.1.22 is December 01, 2021.
 
 * Detection of Foundation components was refined to reduce false negatives.
 * For AEM Forms customers, BPA messaging regarding `EMAIL_PDF_SUBMIT_ACTION` not being available on AEM as a Cloud Service has been fixed. 
+
+
+## Content Transfer Tool {#ctt-release}
+
+### Release Date {#release-date-ctt}
+
+The Release Date for Content Transfer Tool v1.7.10 is December 08, 2021.
+
+### What's New {#what-is-new-ctt}
+
+* Toggle added to the ingestion phase in the Content Transfer Tool to allow users to disable [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) during ingestion. For optimal ingestion speeds, pre-copy during ingestion should be disabled for small migration sets or if only a few blobs were added since the last ingestion. 
+* User Mapping updated to use improved User Management API that allows it to get 2000 users at a time, significantly improving the performance.
