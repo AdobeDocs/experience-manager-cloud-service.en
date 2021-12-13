@@ -74,7 +74,8 @@ For more information, see the [Cloud Manager API Documentation](https://develope
 
 For http or https traffic going to ports other than 80 or 443 a proxy should be configured using the following host and port environment variables:
 
-* `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (default to `proxy.tunnel:3128` in AEM releases < 6094)
+* for HTTP: `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (default to `proxy.tunnel:3128` in AEM releases < 6094)
+* for HTTPS: `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (default to `proxy.tunnel:3128` in AEM releases < 6094)
 
 For example, here's sample code to send a request to `www.example.com:8443`:
 
