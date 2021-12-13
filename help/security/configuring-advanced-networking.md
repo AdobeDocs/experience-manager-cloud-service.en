@@ -104,7 +104,7 @@ The table below describes traffic routing:
 <thead>
   <tr>
     <th>Traffic</th>
-    <th>Detination condition</th>
+    <th>Destination condition</th>
     <th>Port</th>
     <th>Connection</th>
     <th>External destination example</th>
