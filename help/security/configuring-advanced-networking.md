@@ -72,7 +72,7 @@ For more information, see the [Cloud Manager API Documentation](https://develope
 
 ### Traffic Routing {#flexible-port-egress-traffic-routing}
 
-Http or https traffic going to destinations through ports 80 or 443 will go through a preconfigured proxy, assuming the standard Java networking library is used. For http or https traffic going through other ports, a proxy should be configured using the following:
+For http or https traffic going to ports other than 80 or 443 a proxy should be configured using the following host and port environment variables:
 
 * `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (default to `proxy.tunnel:3128` in AEM releases < 6094)
 
