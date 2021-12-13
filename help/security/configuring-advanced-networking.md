@@ -7,6 +7,10 @@ description: Learn how to configure advanced networking features like VPN or a f
 
 This article aims to introduce you to the different advanced networking features in AEM as a Cloud Service, including self-serve provisioning of VPN, non-standard ports, and dedicated egress IP addresses.
 
+>[!INFO]
+>
+>You can also find a series of articles designed to walk you through each of the advanced networking options at this [location](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en).
+
 ## Overview {#overview}
 
 AEM as a Cloud Service offers several types of advanced networking capabilities, which can be configured by customers using Cloud Manager APIs. These include:
@@ -153,7 +157,7 @@ The table below describes traffic routing:
 The AEM Cloud Service Apache/Dispatcher tier's `mod_proxy` directive can be configured using the properties described above.
 
 ```
-ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:${AEM_HTTP_PROXY_PORT}"
+ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:3128"
 ProxyPass "/somepath" "http://example.com"
 ProxyPassReverse "/somepath" "http://example.com"
 ```
@@ -161,7 +165,7 @@ ProxyPassReverse "/somepath" "http://example.com"
 ```
 SSLProxyEngine on //needed for https backends
  
-ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:${AEM_HTTPS_PROXY_PORT}"
+ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:3128"
 ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
