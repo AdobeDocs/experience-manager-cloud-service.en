@@ -1,6 +1,7 @@
 ---
 title: AEM Screens as a Cloud Service
 description: Adobe Experience Manager Screens as a Cloud Service self-help resources and documentation links
+landing-page-description: Understand the AEM Screens as a Cloud Service.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
 ---
 # AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
@@ -23,7 +24,6 @@ This page lists the self-help resources regarding AEM Screens as a Cloud Service
 
 |User Guide|Description|
 |---|---|
-|[Experience Manager as a Cloud Service Home](/help/landing/home.md)|For an overview of Experience Manager as a Cloud Service documentation, start here.|
 |[Overview](/help/overview/home.md)|This guide provides an overview of Experience Manager as a Cloud service, including an introduction, terminology, architecture, etc.|
 |[Release Notes](/help/release-notes/home.md)|This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what's new deprecated and removed features, and known issues.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
