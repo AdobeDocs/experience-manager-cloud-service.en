@@ -50,22 +50,20 @@ Have a look at the [November 2021 Release Overview](https://video.tv.adobe.com/v
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### What is new in [!DNL Forms] {#what-is-new-forms-oct-2021}
+### What is new in [!DNL Forms] {#what-is-new-forms}
 
-* **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (Anonymous) via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
-
-### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms-oct-2021}
+* **Forms Portal**: You can use Portal to list your published adaptive forms on an AEM Sites page. It helps a site vistor discover all available forms. Moreover, the visitor can use forms portal to save and access draft of an adaptive form and look at the PDF version of a submitted adaptive form.  
 
 * **Externalize AEM Workflow data for secure processing**: You can store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) elements in a customer-managed repository for secure processing. The data elements and workflow variables are not stored in AEM repository and are fetched on demand from a customer-managed repository while processing the Workflow.
 
-### Beta features of [!DNL Forms]  {#what-is-new-forms-oct2021-beta}
+### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) help you combine a template and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
 
   * Generate documents by populating template files (PDF and XDP) with XML data.
   * Generate output forms in various formats, including non-interactive PDF print streams.
 
-You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
+* **Custom Fonts for Document of Record and PDF documents created with Communications APIs**
 
 ## CIF Add-on {#cloud-services-cif}
 
