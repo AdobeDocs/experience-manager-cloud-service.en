@@ -4,7 +4,7 @@ description: Learn about the steps you need to take in order to make sure that y
 ---
 # Readiness Phase {#readiness-phase}
 
-In this part of the AEM as a Cloud Service Migration Journey, you will familiarize yourself with AEM as a Cloud Service, review the notable changes that it has introduced and understand what it takes to plan for a successful migration to the cloud.
+In this phase of the AEM as a Cloud Service Migration Journey, you will familiarize yourself with AEM as a Cloud Service, review the notable changes that it has introduced and understand what it takes to plan for a successful migration to the cloud.
 
 ## The Story So Far {#story-so-far}
 
