@@ -10,6 +10,13 @@ In this part of the AEM as a Cloud Service Migration Journey, you will familiari
 
 In the previous document of the journey, [Getting Started with Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md), you learned what are the benefits of moving to AEM as a Cloud Service, as well as an overview of the steps needed to do so.
 
+## Objective {#objective}
+
+This document helps you understand what factors you need to take into account in order to make sure your AEM installation is ready to be moved to the cloud:
+
+* Learn about notable changes and deprecated features
+* Understand how to plan for the the migration to AEM as a Cloud Service
+
 <!-- Alexandru: to review if this is still needed
 
 >[!CONTEXTUALHELP]
@@ -17,13 +24,6 @@ In the previous document of the journey, [Getting Started with Moving to AEM as 
 >title="Planning your Transition"
 >abstract="Before beginning your transition journey to Cloud Service, you should familiarize yourself with AEM as a Cloud Service and review the notable changes that have been made to it and also review the features that have been replaced or deprecated."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices Analyzer" -->
-
-## Objective {#objective}
-
-This document helps you understand what factors you need to take into account in order to make sure your AEM installation is ready to be moved to the cloud:
-
-* Learn about notable changes and deprecated features
-* Understand how to plan for the the migration to AEM as a Cloud Service
 
 <!-- ## Notable Changes {#notable-changes}
 
@@ -33,9 +33,13 @@ Along with these improvements, a number of differences have been introduced betw
 
 We recommend you review these changes by consulting the [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md) documentation. -->
 
-## Be Aware of Changes in the AEM as a Cloud Service Architecture {#be-aware-of-changes-in-aem-cloud-service}
+## Review the Notable Changes in the AEM as a Cloud Service Architecture {#notable-changes-in-aem-cloud-service-architecture}
 
-The list of items in the following table are only subset of the changes and are worth highlighting.
+AEM as a Cloud Service brings many new features and possibilities for managing your AEM projects.
+
+Along with these improvements, a number of differences have been introduced between on-premise installations of AEM and Adobe Managed Services, compared to AEM as a Cloud Service.
+
+The list of items in the below table is the subset of the changes most relevant for a migration to AEM as a Cloud Service. You can consult the full list of notable changes [here](/help/release-notes/aem-cloud-changes.md).
 
 <table>
 <thead>
@@ -148,7 +152,6 @@ The list of items in the following table are only subset of the changes and are 
   </tr>
 </tbody>
 </table>
-
 
 ## Deprecated Features {#deprecated-features}
 
