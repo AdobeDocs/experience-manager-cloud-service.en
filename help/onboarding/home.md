@@ -1,6 +1,7 @@
 ---
 title: Onboarding for Adobe Experience Manager as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service onboarding self-help resources and documentation links
+landing-page-description: This guide provides an summary of how to get started with AEM as a Cloud Service, including how to get access and important data protection information.
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 ---
 # Start Onboarding to [!DNL Experience Manager as a Cloud Service] {#aem-onboarding-guide}
@@ -28,7 +29,6 @@ The onboarding journey illustrated below is designed for a System Administrator 
 
 |User Guide|Description|
 |---|---|
-|[Experience Manager as a Cloud Service Home](/help/landing/home.md)|For an overview of the Experience Manager as a Cloud Service documentation, start here.|
 |[Overview](/help/overview/home.md)|This guide provides an overview of [!DNL Experience Manager as a Cloud Service], including an introduction, terminology, architecture, and so on.|
 |[Release Notes](/help/release-notes/home.md)|This guide provides important information about the latest release of [!DNL Experience Manager as a Cloud Service], including what is new, deprecated and removed features, and known issues.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding [!DNL Experience Manager as a Cloud Service].|
