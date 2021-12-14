@@ -1,6 +1,7 @@
 ---
 title: Compliance
-description: Compliance
+description: This page lists self-help resources providing information on compliance in Experience Manager as a Cloud Service.
+landing-page-description: For an overview on compliance in AEM as a Cloud service, including an privacy and accessibility, start here.
 ---
 # Compliance in AEM as a Cloud Service {#aem-compliance}
 
@@ -18,7 +19,6 @@ This page lists self-help resources providing information on compliance in Exper
 
 |User Guide|Description|
 |---|---|
-|[Experience Manager as a Cloud Service Home](/help/landing/home.md)|For an overview of the Experience Manager as a Cloud Service documentation, start here.|
 |[Release Notes](/help/release-notes/home.md)|This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what is new, deprecated and removed features, and known issues.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
 |[Onboarding](/help/onboarding/home.md)|This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
