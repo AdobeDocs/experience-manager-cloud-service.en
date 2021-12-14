@@ -1,6 +1,7 @@
 ---
 title: Compliance
-description: Compliance
+description: This page lists self-help resources providing information on compliance in Experience Manager as a Cloud Service.
+landing-page-description: For an overview on compliance in AEM as a Cloud service, including an privacy and accessibility, start here.
 ---
 # Compliance in AEM as a Cloud Service {#aem-compliance}
 
