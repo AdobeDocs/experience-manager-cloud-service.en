@@ -9,17 +9,17 @@ In this part of the journey, you will learn how to plan and perform the migratio
 
 ## The Story So Far {#story-so-far}
 
-In the previous steps of the journey:
+In the previous phases of the journey:
 
-* You learned how to get started with [the move to AEM as a Cloud Service](/help/journey-migration/getting-started.md)
-* [Determined if your deployment is ready to be moved to the cloud](/help/journey-migration/readiness.md)
-* As well as [the tools through which you can make your code and content cloud ready](/help/journey-migration/making-your-code-and-content-cloud-ready.md).
+* You learned how to get started with the move to AEM as a Cloud Service in the [Getting Started](/help/journey-migration/getting-started.md) page.
+* Determined if your deployment is ready to be moved to the cloud by reading the [Readiness phase](/help/journey-migration/readiness.md)
+* As well as the tools through which you can make your code and content cloud ready with the [Implementation phase](/help/journey-migration/implementation.md).
 
 ## Objective {#objective}
 
 This document will help you understand how to perform the migration to AEM as a Cloud Service once you are familiar with the previous steps of the journey. You will learn the content migration strategy and timeline, how to gather data, create a migration plan, as well as the best practices to follow when migrating to AEM as a Cloud Service.
 
-## Preparing for the migration {#prepare-for-migration}
+## Preparing for Go-Live {#prepare-for-go-live}
 
 Preparing the source system for migration involves system and AEM administrator level tasks. You can start by verifying that the content repository is in a well maintained state by checking the [revision cleanup](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) and the [data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)task status. If you are running AEM version 6.3 (as the Content Transfer Tool is compatible from version 6.3 onwards), it is recommended to perform offline compaction, followed by Data Store Garbage collection.
 
@@ -38,6 +38,64 @@ Once access to a [production clone](#proof-migration) is established proceed to 
 Users, Groups and Permissions | You need to understand the volume of users, groups, and complexity around memberships. Look for opportunities to clean up any unused users, groups in the source before migration.
 Incomplete Asset processing | Try to complete the processing of assets in the source system before starting the migration to avoid potential concerns in AEM as a Cloud Service post migration. |
 Content Sanity | It is recommended to query for bad content and purge it before you start the migration. For example, look for assets or pages that do not have original renditions or that are stuck in workflow processing. See also [Asset Sanity](#asset-sanity). |
+
+## Gathering Data {#gathering-data}
+
+>[!NOTE]
+> The [Content migration strategy and timeline](#strategy-timeline) section further details how to extrapolate the gathered data and create a migration plan.
+
+Gathering data can help you plan the migration activities and associated tasks. The extraction and ingestion times are particularly useful because the data points can be associated with a specific size of the migration set. As such, these data points can be extrapolated to come up with a plan:
+
+* Total amount of time taken for [extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+* Total amount of time taken for [ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+* Total amount of time taken for top up [extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+* Total amount of time taken for top up [ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
+
+One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md) (if this is coupled with the content migration). You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+
+These data points can also help you [Establish KPI's](/help/journey-migration/readiness.md#establish-kpis) and other migration related tasks.
+
+### Migration plan {#migration-plan}
+
+Based on the data points you gathered (see above), you can create a migration plan that can be integrated into a macro project plan. This step will enable all the key stakeholders to visualize and plan around the migration activities.
+
+The following table illustrates a typical migration plan:
+
+| Migration Iteration | Start Date | Estimated End Date | Dependencies | Estimated Duration (in days) | Additional Details / Action Items |
+|---|---|---|---|---|---|
+| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
+| PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |   |   |   |   |   |
+
+As you can see in the table above, it is helpful to follow a specific naming format to identify the migration iterations, for example: Source AEM Environment (PRDCLONE), AEMaaCS Environment (AUTHOR/PUBLISH), AEMaaCS Instance (CSSTAGE-AUTHOR) and so on.
+
+Some important details that will influence your migration plan:
+
+**The Total Number of Extractions required**
+
+* Author and Publish extractions in specific environments are considered as two parallel extractions as they are independent of each other.
+* Number of Top Up extractions based on repository growth in specific time periods.
+
+**Total Number of Ingestions required**
+
+* It is important to capture this item into the plan, as an extracted set can be ingested into multiple Cloud Service environments.
+* Number of Top up ingestions.
+* Migrating content from the Source Author to the Cloud service Author instance and from the Source Publish to Cloud Service Publish is the best practice to avoid ingesting all the Author content into the Cloud Service Publish.
+
+### Migration Tracker {#migration-tracker}
+
+You can use the migration tracker to note down the times for both the initial and top up runs. These data points will help you formulate realistic content freeze requirements before the final top up.
+
+The tracker will also help you to:
+
+* Identify any deviations from the planner that require adjustments in the plan or go-live timelines
+* Provide a realistic status that can be used in all necessary communications
+* Plan for initial or future top up migrations
+
+The following table illustrates a functional migration tracker:
+
+| Source (Env / Instance / URL) | Destination (Env / Instance / URL) | Migration Set Name, Type (Initial or Top up) | Migration Set Size (MB) | User Mapping (Yes / No) | Extraction Duration (Start, End, Time taken) | Ingestion Duration (Start, End, Time taken) | Issues / Resolutions / Details |
+|---|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |   |
 
 ## Content migration strategy and timeline {#strategy-timeline}
 
@@ -100,60 +158,14 @@ Record the time taken for [extraction and ingestion](#gathering-data):
 * Make sure to plan top ups in such a way that you avoid more than 48 hours of content extraction and ingestion (so that it will fit into a weekend timeframe).
 * Plan the number of top ups required and estimate/backtrack in relation to the go-live date.
 
-## Gathering Data {#gathering-data}
+## Identify Code and Content Freeze Timelines for the Migration {#code-content-freeze}
 
-Gathering data can help you plan the migration activities and associated tasks. The extraction and ingestion times are particularly useful because the data points can be associated with a specific size of the migration set. As such, these data points can be extrapolated to come up with a plan:
+As mentioned previously you will eventually have to schedule a code and content freeze period. Consequently, the following questions may help you plan the freeze period better:
 
-* Total amount of time taken for [extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-* Total amount of time taken for [ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-* Total amount of time taken for top up [extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
-* Total amount of time taken for top up [ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
+* How long do I have to freeze content authoring activities?
+* For how long should I ask my delivery team to stop adding new features?
 
-One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md) (if this is coupled with the content migration). You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
-
-These data points can also help you [Establish KPI's](/help/journey-migration/readiness.md#establish-kpis) and other migration related tasks.
-
-## Migration plan {#migration-plan}
-
-Based on the data points you gathered (see above), you can create a migration plan that can be integrated into a macro project plan. This step will enable all the key stakeholders to visualize and plan around the migration activities.
-
-The following table illustrates a typical migration plan:
-
-| Migration Iteration | Start Date | Estimated End Date | Dependencies | Estimated Duration (in days) | Additional Details / Action Items |
-|---|---|---|---|---|---|
-| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
-| PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |   |   |   |   |   |
-
-As you can see in the table above, it is helpful to follow a specific naming format to identify the migration iterations, for example: Source AEM Environment (PRDCLONE), AEMaaCS Environment (AUTHOR/PUBLISH), AEMaaCS Instance (CSSTAGE-AUTHOR) and so on.
-
-Some important details that will influence your migration plan:
-
-**The Total Number of Extractions required**
-
-* Author and Publish extractions in specific environments are considered as two parallel extractions as they are independent of each other.
-* Number of Top Up extractions based on repository growth in specific time periods.
-
-**Total Number of Ingestions required**
-
-* It is important to capture this item into the plan, as an extracted set can be ingested into multiple Cloud Service environments.
-* Number of Top up ingestions.
-* Migrating content from the Source Author to the Cloud service Author instance and from the Source Publish to Cloud Service Publish is the best practice to avoid ingesting all the Author content into the Cloud Service Publish.
-
-## Migration Tracker {#migration-tracker}
-
-You can use the migration tracker to note down the times for both the initial and top up runs. These data points will help you formulate realistic content freeze requirements before the final top up.
-
-The tracker will also help you to:
-
-* Identify any deviations from the planner that require adjustments in the plan or go-live timelines
-* Provide a realistic status that can be used in all necessary communications
-* Plan for initial or future top up migrations
-
-The following table illustrates a functional migration tracker:
-
-| Source (Env / Instance / URL) | Destination (Env / Instance / URL) | Migration Set Name, Type (Initial or Top up) | Migration Set Size (MB) | User Mapping (Yes / No) | Extraction Duration (Start, End, Time taken) | Ingestion Duration (Start, End, Time taken) | Issues / Resolutions / Details |
-|---|---|---|---|---|---|---|---|
-|   |   |   |   |   |   |   |   |
+To answer the first question, you should take into consideration the time taken during trial runs in non-production environments. The second question is more complicated. To answer it you need close collaboration between the team who is adding new features and the team refactoring the code. The goal should be to make sure all the code that is added to the existing deployment is also added, tested, and deployed to the cloud services branch. Generally speaking, this means the amount of code freeze will be lower.
 
 ## Best Practices {#best-practices}
 
@@ -203,9 +215,9 @@ Compared to the section above the ingestion **does not** fail due to the followi
 
 Both of the above items will be identified and reported in [Best Practice Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md) report.
 
-## Completing the Migration {#completing-the-migration}
+## Go-Live Checklist {#Go-Live-Checklist}
 
-Following these steps can help you complete the migration process and ensure that you can perform a smooth and successful migration:
+Please review the list of activities presented below to ensure that you can perform a smooth and successful migration:
 
 * Schedule a code and content freeze period. See also [Code and Content Freeze Timelines for the Migration](#code-content-freeze).
 * Perform the final content top-up
@@ -213,24 +225,11 @@ Following these steps can help you complete the migration process and ensure tha
 * Run performance and security tests
 * Cut-Over and perform the migration on the production instance
 
-You can always reference the list above in case you need to re-calibrate your tasks while completing the migration.
-
-## Identify Code and Content Freeze Timelines for the Migration {#code-content-freeze}
-
-As mentioned previously you will eventually have to schedule a code and content freeze period. Consequently, the following questions may help you plan the freeze period better:
-
-* How long do I have to freeze content authoring activities?
-* For how long should I ask my delivery team to stop adding new features?
-
-To answer the first question, you should take into consideration the time taken during trial runs in non-production environments. The second question is more complicated. To answer it you need close collaboration between the team who is adding new features and the team refactoring the code. The goal should be to make sure all the code that is added to the existing deployment is also added, tested, and deployed to the cloud services branch. Generally speaking, this means the amount of code freeze will be lower.
+You can always reference the list in case you need to re-calibrate your tasks while performing the migration.
 
 ## What's Next {#what-is-next}
 
 Once you understand how to perform the migration to AEM as a Cloud Service, you can check the [Post-Go-Live](/help/journey-migration/post-go-live.md) page to keep your instance running smoothly.
-
-## Additional Resources {#additional-resources}
-
-TBD
 
 <!--# Go Live {#golive-migration}
 >exl-id: cf19d29f-3249-49d4-af02-bf68e247a8e9
