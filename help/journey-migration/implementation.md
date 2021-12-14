@@ -54,9 +54,9 @@ With this tool, you can specify the desired content subset that you want to tran
 
 Content Migration is a multi-step aprocess that requires planning, tracking and collaboration between different teams. 
 
-The following diagram lays out the ideal path to be followed for a successful content migration. 
+<!--- The following diagram lays out the ideal path to be followed for a successful content migration. 
 
-![](/help/journey-migration/assets/contenttransferoverview.png)
+![](/help/journey-migration/assets/contenttransferoverview.png) -->
 
 <!-- Alexandru: looks to be redundant, given that it's already covered in the CTT docs.
 
