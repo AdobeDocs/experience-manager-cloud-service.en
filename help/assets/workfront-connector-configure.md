@@ -3,8 +3,8 @@ title: Configure [!DNL Workfront for Experience Manager enhanced connector]
 description: Configure [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
+exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
 ---
-
 # Configure [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 A user with administrator access in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] configures the enhanced connector after installing it. For instructions to install, see [Install the connector](/help/assets/workfront-integrations.md).

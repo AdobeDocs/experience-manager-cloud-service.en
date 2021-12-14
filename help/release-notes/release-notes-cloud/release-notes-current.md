@@ -42,14 +42,6 @@ Have a look at the [October 2021 Release Overview](https://video.tv.adobe.com/v/
 
 * [!DNL Dynamic Media] Image Smart Crop and Swatch is now powered by latest Sensei services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits will be preserved on reprocessing, if there is no change in the width and height in the Image Profile.
 
-* Smart Tags are automatically applied to the assets using asset microservices, instead of Smart Content Services. The underlying model is updated to improve tagging results and reduce bias. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
-
-<!-- Leave this commented.
-### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
-
-No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
--->
-
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### What is new in [!DNL Forms] {#what-is-new-forms-oct-2021}
@@ -199,3 +191,14 @@ The Release Date for Best Practices Analyzer v2.1.22 is December 01, 2021.
 
 * Detection of Foundation components was refined to reduce false negatives.
 * For AEM Forms customers, BPA messaging regarding `EMAIL_PDF_SUBMIT_ACTION` not being available on AEM as a Cloud Service has been fixed. 
+
+## Content Transfer Tool {#ctt-release}
+
+### Release Date {#release-date-ctt}
+
+The Release Date for Content Transfer Tool v1.7.10 is December 08, 2021.
+
+### What's New {#what-is-new-ctt}
+
+* Toggle added to the ingestion phase in the Content Transfer Tool to allow users to disable [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) during ingestion. For optimal ingestion speeds, pre-copy during ingestion should be disabled for small migration sets or if only a few blobs were added since the last ingestion. 
+* User Mapping updated to use improved User Management API that allows it to get 2000 users at a time, significantly improving the performance.
