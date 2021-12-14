@@ -5,11 +5,7 @@ description: Learn how to monitor for issues and improve performance
 
 # Post Go-Live {#post-go-live}
 
-This is the last part of the journey so you will learn to how to monitor for issues and improve performance once the migration is complete. You should ensure the clean-up of temporary files, review best practices for continuous development and manage logs. Additionally, you should share post-migration learnings with stakeholders and other teams, for example:
-
-* What worked well and what did not?
-* What were the major pain points?
-* Recommendations in case of a future migration.
+This is the last part of the journey so you will learn to how to monitor for issues and improve performance once the migration is complete. You should ensure the clean-up of temporary files, review best practices for continuous development and manage logs.
 
 ## The Story So Far {#story-so-far}
 
@@ -54,6 +50,16 @@ Refer to [Accessing and Managing Logs](https://experienceleague.adobe.com/docs/e
 
 If you have questions about access to Cloud Service, contact your Adobe representative or [Support for Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) for more details.
 
+## Document learnings {#document-learnings}
+
+Once the migration is complete you should document the knowledge gained during this process. Some questions that might help the documentation process are:
+
+* What worked well and what did not?
+* What were the major pain points?
+* Recommendations in case of a future migration.
+
+You should then share these post-migration learnings with stakeholders and teams inside your organization.
+
 ## The Journey Ends - Or Does It? {#journey-ends}
 
 Congratulations! You have completed the AEM as a Cloud Service Migration Journey! You should have an understanding of how to:
@@ -64,11 +70,7 @@ Congratulations! You have completed the AEM as a Cloud Service Migration Journey
 * Perform the migration
 * Monitor for issues and improve performance
 
-You are now ready to migrate to AEM as a Cloud Service! Check out some of the additional resources available in the Additional Resources section to learn more about the tools and features used in this journey.
-
-## Additional Resources {#additional-resources}
-
-**TBD**
+You are now ready to migrate to AEM as a Cloud Service!
 
 <!--#>[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
