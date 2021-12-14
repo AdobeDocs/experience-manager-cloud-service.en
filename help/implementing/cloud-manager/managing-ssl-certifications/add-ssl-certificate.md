@@ -6,7 +6,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 # Adding an SSL Certificate {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM as a Cloud Service will only accept OV(Organization Validation) or EV(Extended Validation) certificates. DV(Domain Validation) certificates will not be accepted. In addition, any certificate must be a X.509 TLS certificate from a trusted certification authority (CA) with a matching 2048-bit RSA private key. AEM as a Cloud Service will accept wildcard SSL certificates for a domain.
+>AEM as a Cloud Service will only accept certificates that conform with OV (Organization Validation) or EV (Extended Validation) policy. DV (Domain Validation) policy will not be accepted. In addition, any certificate must be a X.509 TLS certificate from a trusted certification authority (CA) with a matching 2048-bit RSA private key. AEM as a Cloud Service will accept wildcard SSL certificates for a domain.
 
 A Certificate takes a few days to provision and it is recommended that the certificate be provisioned even months in advance. Refer to [Getting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) for more details.
 
@@ -62,6 +62,52 @@ Follow the steps below to add a certificate:
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 
 ## Certificate Errors {#certificate-errors}
+
+### Certificate Policy {#certificate-policy}
+
+If you see the error “Certificate policy must conform with EV or OV, and not DV policy.”, please check the policy of your certificate.
+
+Normally certificate types are identified by the OID values embedded in policies. These OIDs are unique and hence converting a certificate to text form and searching for the OID will confirm the certificate as having a match.
+
+You can view your certificate detail as follows.
+
+```text
+openssl x509 -in 9178c0f58cb8fccc.pem -text
+certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            91:78:c0:f5:8c:b8:fc:cc
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, ST = Arizona, L = Scottsdale, O = "GoDaddy.com, Inc.", OU = http://certs.godaddy.com/repository/, CN = Go Daddy Secure Certificate Authority - G2
+        Validity
+            Not Before: Nov 10 22:55:36 2021 GMT
+            Not After : Dec  6 15:35:06 2022 GMT
+        Subject: C = US, ST = Colorado, L = Denver, O = Alexandra Alwin, CN = adobedigitalimpact.com
+        Subject Public Key Info:
+...
+```
+
+This tables provides identifying patterns.
+
+|Pattern|Certificate Type|Acceptable|
+|---|---|---|
+|`2.23.140.1.2.1`|DV|No|
+|`2.23.140.1.2.2`|OV|Yes|
+|`2.23.140.1.2.3` and `TLS Web Server Authentication`|IV cert with permission to use for https|Yes|
+
+`grep`ping for the patterns, you can confirm your certificate type.
+
+```shell
+# "EV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.1" -B5
+
+# "OV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
+
+# "DV Policy - Not Accepted"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
+```
 
 ### Correct Certificate Order {#correct-certificate-order}
 
