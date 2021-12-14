@@ -49,7 +49,7 @@ You can consult the [Cloud Acceleration Manager documentation](/help/journey-mig
 
 ## What's Next {#what-is-next}
 
-Thanks for getting started on your AEM Cloud Service migration journey! Now that you read this document you should get up to speed with [Determining if your Deployment is Ready to be Moved to AEM as a Cloud Service](/help/journey-migration/readiness.md).
+Thanks for getting started on your AEM Cloud Service migration journey! Now that you read this document you should get up to speed with the [Readiness phase](/help/journey-migration/readiness.md), which will help you determine whether your deployment is ready to be moved to AEM as a Cloud Service.
 
 ## Additional Resources {#additional-resources}
 
