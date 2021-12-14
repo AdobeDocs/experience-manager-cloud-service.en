@@ -7,10 +7,6 @@ description: Learn how to quickly create a new AEM site using a site template.
 
 Learn how to quickly create a new AEM site using a site template.
 
->[!CAUTION]
->
->The Quick Site Creation tool is currently a tech preview. It is made available for testing and evaluation purposes and is not intended for production use unless agreed with Adobe Support.
-
 ## The Story So Far {#story-so-far}
 
 In the previous document of the AEM Quick Site Creation journey, [Understand Cloud Manager and the Quick Site Creation Workflow,](cloud-manager.md) you learned about Cloud Manager and how it ties together the new Quick Site Creation process and you should now:

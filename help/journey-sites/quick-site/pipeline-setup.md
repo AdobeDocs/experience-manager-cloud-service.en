@@ -7,10 +7,6 @@ description: Create a front-end pipeline to manage the customization of your sit
 
 Create a front-end pipeline to manage the customization of your site's theme.
 
->[!CAUTION]
->
->The Quick Site Creation tool is currently a tech preview. It is made available for testing and evaluation purposes and is not intended for production use unless agreed with Adobe Support.
-
 ## The Story So Far {#story-so-far}
 
 In the previous document of the AEM Quick Site Creation journey, [Create Site from Template,](create-site.md) you learned how to use a site template to quickly create an AEM site that can be further customized using front-end tools and now you should now:

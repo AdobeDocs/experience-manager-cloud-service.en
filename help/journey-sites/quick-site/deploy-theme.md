@@ -7,10 +7,6 @@ description: Learn how to deploy the site theme using the pipeline.
 
 Learn how to deploy the site theme using the pipeline.
 
->[!CAUTION]
->
->The Quick Site Creation tool is currently a tech preview. It is made available for testing and evaluation purposes and is not intended for production use unless agreed with Adobe Support.
-
 ## The Story So Far {#story-so-far}
 
 In the previous document of the AEM Quick Site Creation journey, [Customize the Site Theme,](customize-theme.md) you learned how the theme is built, how to customize it, and how to test it using live AEM content, and you should now:
