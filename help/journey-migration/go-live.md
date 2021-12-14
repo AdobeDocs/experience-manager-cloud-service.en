@@ -12,8 +12,8 @@ In this part of the journey, you will learn how to plan and perform the migratio
 In the previous phases of the journey:
 
 * You learned how to get started with the move to AEM as a Cloud Service in the [Getting Started](/help/journey-migration/getting-started.md) page.
-* Determined if your deployment is ready to be moved to the cloud by reading the [Readiness](/help/journey-migration/readiness.md) page
-* As well as [the tools through which you can make your code and content cloud ready](/help/journey-migration/making-your-code-and-content-cloud-ready.md).
+* Determined if your deployment is ready to be moved to the cloud by reading the [Readiness phase](/help/journey-migration/readiness.md)
+* As well as the tools through which you can make your code and content cloud ready with the [Implementation phase](/help/journey-migration/implementation.md).
 
 ## Objective {#objective}
 
