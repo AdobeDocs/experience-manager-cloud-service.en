@@ -1,6 +1,7 @@
 ---
 title: AEM Content and Commerce
 description: AEM Content and Commerce self-help resources and documentation links
+landing-page-description: Understand how to use and administer Experience Manager Content and Commerce as a Cloud Service.
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 ---
 # AEM Content and Commerce {#commerce-guide}
