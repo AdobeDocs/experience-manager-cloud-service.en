@@ -1,0 +1,476 @@
+---
+openapi: 3.0.0
+info:
+  description: |
+    AEM Forms as a Cloud Service - Communications APIs.
+
+    # Introduction
+
+    Communications APIs help you combine XFA-based XDP or PDF templates and Acrobat Forms (AcroForm) with XML data to generate print documents in various formats. It enable you to create applications that let you:
+
+    - Generate documents by populating template files with XML data. For example, receipts, bills, and statements.    
+
+    - Generate forms in various formats, including non-interactive PDF print
+    streams.
+
+    - Generate print PDFs from XFA form PDFs.
+
+    - Generate PDF, PostScript, PCL, and ZPL documents in bulk by merging
+    multiple sets of data with source templates.
+
+
+    You can find out more about document generation at
+
+    [AEM Forms as a Cloud Service - Communications
+    Overview](https://www.adobe.com/go/learn_aemformscs_communications_en)
+
+    # Before you start
+
+    Make user account of your developer or techincal account member of forms-user group. If you do not have a technical account, make a call to AEM as a Cloud Service. When you use service credential a techincal account is created on the first call.
+
+    # Set up Communicaions APIs
+
+    Contact formscsbeta@adobe.com to enable Communications APIs for your organization. Send name of your organization, program details, and email address of your AEM as a Cloud Service administrator. Also, set up a [local development environment](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html) to test and develop the functionality using Communication APIs locally. 
+
+    <SecurityDefinitions />
+
+  title: AEM Forms as a Cloud Service - Communications
+  version: 0.0.1
+servers:
+  - url: https://author-p8857-e10452-cmstg.adobeaemcloud.com/adobe/forms/doc/v1
+    description: Author Instance
+  - url: https://publish-p8857-e10452-cmstg.adobeaemcloud.com/adobe/forms/doc/v1
+    description: Publish instance
+security:
+  - Token-based authentication: []
+  - Basic authentication: []
+tags:
+  - name: Communications Services
+    description: Communications Services Capabilities
+  - name: PrintedOutput
+    x-displayName: PrintedOutput
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/PrintedOutput" />
+  - name: PDFOutput
+    x-displayName: PDFOutput
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/PDFOutput" />
+  - name: PrintedOutputOptions
+    x-displayName: PrintedOutputOptions
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/PrintedOutputOptions" />
+  - name: PDFOutputOptions
+    x-displayName: PDFOutputOptions
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/PDFOutputOptions" />
+  - name: PrintConfig
+    x-displayName: PrintConfig
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/PrintConfig" />
+x-tagGroups:
+  - name: Services
+    tags:
+      - Communications Services
+      - store
+  - name: Models
+    tags:
+      - PDFOutput
+      - PDFOutputOptions
+      - PrintedOutput
+      - PrintedOutputOptions
+      - PrintConfig
+externalDocs:
+  description: Find out more
+  url: https://www.adobe.com/go/learn_aemformscs_communications_en
+paths:
+  /generatePDFOutput:
+    post:
+      tags:
+        - Communications Services
+      summary: Generates a PDF Document from a template and merge data to it.
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: "#/components/schemas/PDFOutput"
+            encoding:
+              template:
+                contentType: application/xml, text/plain, application/pdf
+                style: form
+              data:
+                contentType: application/xml, text/plain
+                style: form
+              xci:
+                contentType: application/xml
+                style: form
+              options:
+                contentType: application/json
+                style: form
+      responses:
+        "200":
+          description: Operation successful. The generated PDF Document is included in the respose.
+          content:
+            application/pdf:
+              schema:
+                $ref: "#/components/schemas/Result"
+        "201":
+          description: Operation successful. The generated PDF Document is sent to the specified URL
+          content:
+            application/pdf:
+              schema:
+                $ref: "#/components/schemas/Result"
+        "400":
+          description: Bad Request. The request was invalid or cannot be served.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "401":
+          description: Unauthorized. Authentication credentials are missing or incorrect.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "408":
+          description: Request timed out. An operation has timed out on the client.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error. The server has encountered an error and is unable to process your request at this time.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /generatePrintedOutput:
+    post:
+      tags:
+        - Communications Services
+      summary: Generate a PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) document from an XDP file or PDF document.
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: "#/components/schemas/PrintedOutput"
+            encoding:
+              template:
+                contentType: application/xml, text/plain
+                style: form
+              data:
+                contentType: application/xml, text/plain
+                style: form
+              xci:
+                contentType: application/json
+                style: form
+              options:
+                contentType: application/json
+                style: form
+      responses:
+        "200":
+          description: Operation successful. The generated PDF Document is included in the response.
+          content:
+            application/pdf:
+              schema:
+                $ref: "#/components/schemas/Result"
+        "201":
+          description: Operation successful. The generated PDF Document is sent to the specified URL.
+          content:
+            application/pdf:
+              schema:
+                $ref: "#/components/schemas/Result"
+        "400":
+          description: Bad Request. The request was invalid or cannot be served.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "401":
+          description: Unauthorized. Authentication credentials were missing or incorrect.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "408":
+          description: Request timed out. An operation has timed out on the client.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal Server Error. The server has encountered an error and is unable to process your request at this time.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  description: Generates a PDF or a PDF/A document from the provided form design and data. Optionally, generate a metadata file for each record and send the output directly to a printer. Use this operation to use a form design that is part of an application in the Applications view. It is recommended that you use the generatePDFOutput operation (deprecated) operation when the form design is located on a network, local file system, or HTTP location.
+  schemas:
+    Error:
+      type: object
+      properties:
+        status:
+          type: string
+        code:
+          type: string
+        message:
+          type: string
+    Result:
+      type: string
+      format: binary
+    Generate:
+      required:
+        - data
+        - template
+      type: object
+      properties:
+        template:
+          description: |
+            The template defines appearance and behavior of the PDF document.
+            The API supports templates of format: XDP, Acrobat Form, and PDF
+            document. You can specify a fully qualified path, reference path of
+            your AEM Repository, or path of a binary file.
+          oneOf:
+            - type: string
+              format: binary
+            - type: string
+        data:
+          description: |
+            An XML or JSON file containing the data to be merged with template.
+            You can specify a fully qualified HTTP location or path of a binary file.
+          oneOf:
+            - type: string
+              format: binary
+            - type: string
+        xci:
+          oneOf:
+            - type: string
+              format: binary
+            - type: string
+          description: |
+            The service uses an XCI configuration file to configure various properties of the PDF document.
+            The XCI parameter has an effect only when the template is of type XDP or an XDP-based PDF document.
+    PrintConfig:
+      type: object
+      description: print configuration.
+      properties:
+        xdcUri:
+          type: string
+          enum:
+            - hppcl5e.xdc
+            - hppcl5c.xdc
+            - ps_plain.xdc
+            - ps_plain_level3.xdc
+            - zpl300.xdc
+            - zpl600.xdc
+            - ipl300.xdc
+            - ipl400.xdc
+            - tpcl600.xdc
+            - dpl300.xdc
+            - dpl406.xdc
+            - dpl600.xdc
+        renderType:
+          type: string
+          enum:
+            - PostScript
+            - PCL
+            - ZPL
+            - DPL
+            - IPL
+            - TPCL
+    PrintedOutputOptions:
+      type: object
+      description: Various options for the API
+      properties:
+        locale:
+          type: string
+          description: Specify locale/language for the output document.
+          default: "en"
+        copies:
+          type: integer
+          description: Sets the number of copies to print. The default number is 1.
+          default: 1
+        paginationOverride:
+          type: string
+          description: Set the option to print on one side or both the sides of a page.
+          enum:
+            - simplex
+            - duplexShortEdge
+            - duplexLongEdge
+        printConfig:
+          $ref: "#/components/schemas/PrintConfig"
+      required:
+        - printConfig
+      example:
+        $ref: "#/components/examples/printoptions/value"
+    PDFOutputOptions:
+      type: object
+      description: Various options for the API
+      properties:
+        locale:
+          type: string
+          description: Locale in which pdf should be rendered.
+          default: "en"
+        isTagged:
+          type: boolean
+          description: Specify if the PDF document can be tagged.
+          default: false
+        embedFonts:
+          type: boolean
+          description: Enable the option to embed fonts to the PDF document.
+          default: false
+        linearizedPDF:
+          type: boolean
+          default: false
+          description: Enable the option to optimize the PDF for web viewing.
+        retainFormState:
+          type: boolean
+          default: false
+          description: Set true to retain PDF Form state while flattening PDF. This parameter has effect only when source template is an XFA-based PDF Form and no input data is provided.
+        retainUnsignedSignatureFields:
+          type: boolean
+          default: false
+          description: Set true to retain interactive unsigned signature fields in generated Flat PDF. It allows you to use PDF for gathering signatures.
+        acrobatVersion:
+          type: string
+          description: Set the minimum version of Acrobat Reader required to open the PDF document.
+          enum:
+            - "Acrobat_10"
+            - "Acrobat_10_1"
+            - "Acrobat_11"
+      example:
+        $ref: "#/components/examples/options/value"
+    PrintedOutput:
+      allOf:
+        - $ref: "#/components/schemas/Generate"
+        - required:
+            - options
+          type: object
+          properties:
+            options:
+              $ref: "#/components/schemas/PrintedOutputOptions"
+              description: options to configure the operation
+    PDFOutput:
+      allOf:
+        - $ref: "#/components/schemas/Generate"
+        - required:
+            - options
+          type: object
+          properties:
+            options:
+              $ref: "#/components/schemas/PDFOutputOptions"
+  responses:
+    LinkResponse:
+      description: The generated PDF Document is sent to the specified URL.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Result"
+    InlineResponse:
+      description: The generated PDF Document is included in the response.
+      content:
+        application/pdf:
+          schema:
+            type: string
+            format: binary
+    BadRequest:
+      description: Bad Request. The request is invalid or cannot be served.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    InternalServer:
+      description: Internal Server Error. The server has encountered an error and is unable to process your request at this time.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    RequestTimeout:
+      description: Request timed out. An operation has timed out on the client.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    Unauthorized:
+      description: Unauthorized. Authentication credentials were missing or incorrect.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+  examples:
+    pdfoutput:
+      summary: Example of generate pdf output.
+      value:
+        template: "string"
+        data: "string"
+        xci: "string"
+        options:
+          locale: "en"
+          isTagged: false
+          embedFonts: false
+          linearizedPDF: false
+          retainFormState: false
+          retainUnsignedSignatureFields: false
+          acrobatVersion: "Acrobat_11"
+    output:
+      summary: Example of file type document.
+      value:
+        ref: The <output_file_content_part> containing the input file in the multipart/form-data request.
+        type: binary
+    http:
+      summary: Example of URL based document.
+      value:
+        ref: The http url which return the value
+        type: http
+    printoptions:
+      value:
+        locale: "en"
+        copies: 1
+        paginationOverride: simplex
+        printConfig:
+          renderType: PCL
+          xdcUri: tpcl600.xdc
+    options:
+      value:
+        locale: "en"
+        isTagged: false
+        embedFonts: false
+        linearizedPDF: false
+        retainFormState: false
+        retainUnsignedSignatureFields: false
+        acrobatVersion: "Acrobat_11"
+  securitySchemes:
+    Token-based authentication:
+      type: https
+      scheme: bearer
+      bearerFormat: JWT
+      description: |
+        In token-based authentication, an access token (Bearer authentication token) is required to make requests to AEM as a Cloud Service.
+        AEM Forms as a Cloud Service provides APIs to securely retrieve the access token.
+        The end-to-end workflow for retrieving and using the token to authenticate a request is:
+
+        - [Retrieve AEM as a Cloud Service credentials from the Developer
+        Console.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en)
+
+        - [Install AEM as a Cloud Service credentials on your
+        environment.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en)
+        (Application Server, Web Server, or other non-AEM servers) configured to
+        send requests to (make calls) the cloud service.
+
+        - [Generate a JWT token and exchanged it with Adobe IMS APIs for an
+        access
+        token.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#create-a-jwt-and-exchange-for-an-access-token)
+
+        - Run the AEM API with the access token as a Bearer Authentication
+        token.
+
+        - [Set appropriate permissions for the technical account user in the AEM
+        environment.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem)
+    Basic authentication:
+      type: https
+      scheme: basic
+      description: |
+        Basic authentication is a simple authentication scheme built into the HTTP protocol.
+        The client sends HTTP requests with the Authorization header that contains the word Basic followed by a space and a base64-encoded string username:password.
+        For example, to authorize as admin / admin the client sends Basic [base64-encoded string username]: [base64-encoded string password].
+        For information about retrieving and using token, see [Token-based authentication to AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en)
