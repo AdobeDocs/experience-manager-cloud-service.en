@@ -5,7 +5,11 @@ description: With the front-end pipeline, more independence is given to front-en
 
 # Developing Sites with the Front-End Pipeline {#developing-site-with-front-end-pipeline}
 
-With the front-end pipeline, more independence is given to the front-end developers and the development process can gain substantial velocity. This document describes how this process works along with some considerations to be aware of in order to get the full potential out of this process.
+[With the front-end pipeline,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) more independence is given to the front-end developers and the development process can gain substantial velocity. This document describes how this process works along with some considerations to be aware of in order to get the full potential out of this process.
+
+>[!TIP]
+>
+>If you are not yet familiar with how to use the front-end pipeline and the benefits it can bring, check out the [Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) for an example of how to quickly deploy a new site and customize its theme completely independent of back-end development.
 
 ## Single Source of Truth {#single-source-of-truth}
 
