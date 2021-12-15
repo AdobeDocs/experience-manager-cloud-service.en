@@ -14,13 +14,11 @@ AEM Forms provide portal components that reduce management overheads and product
 
 The Form Portal components allow you to add the following functionality:
 
-* List forms in customized layouts. Out of the box, List view, Card view, and Panel view layouts are provided. You can create your own custom layouts.
+* List forms in customized layouts. Out of the box, List view and Card view layouts are provided. You can create your own custom layouts.
 * Enables you to display custom metadata and custom actions while listing them.
 * List forms published by AEM Forms UI on the publish instance where Forms Portal components are being used.
 * Allow end users to render forms in HTML and PDF format.
-* Use custom HTML profile to render forms.
-* Enable searching of forms based on a various criteria, such as form properties, metadata, and tags.
-* Submit form data to a servlet.
+* Enable searching of forms based on title and description.
 * Use custom CSS to customize the look and feel of the portal.
 * Create links to forms.
 * Lists drafts and submissions related to Adaptive Form created by end user.
@@ -29,7 +27,7 @@ The Form Portal components allow you to add the following functionality:
 
 AEM Forms provide the following portal components out of the box:
 
-* Search & Lister: This component allows you to list forms from the forms repository onto your portal page and provides configuration options to list forms based on specified criteria. It also allows you to specify search criteria to enable your portal users to search across the list of forms.
+* Search & Lister: This component allows you to list forms from the forms repository onto your portal page and provides configuration options to list forms based on specified criteria.
 
 * Drafts & Submissions: While Search & Lister component displays forms which are made public by Forms author, the Drafts & Submissions component displays forms that are saved as draft for completing later and submitted forms. This component provides personalized experience to any logged in user.
 
@@ -39,8 +37,6 @@ You can [import the out-of-the-box Forms Portal components](#import-forms-portal
 * [Configure an external storage](configure-azure-storage-adaptive-forms)
 * [Enable the Forms Portal components](#enable-forms-portal-components) 
 * [Configure the Forms Portal components](#configure-forms-portal-components)
-
-![Forms Portal](assets/forms-portal.png)
 
 ## Import Forms Portal Components {#import-forms-portal-components-aem-archetype}
 
@@ -58,15 +54,25 @@ To import out-of-the-box Forms Portal components on AEM Forms as a Cloud Service
 
     Also, change `appTitle`, `appId`, and `groupId`, in the above command to reflect your environment.
 
-1. Deploy the project to your local development environment. You can use the following command to deploy to your local development environment
+1. **Deploy the project to your local development environment:** You can use the following command to deploy to your local development environment
 
     `mvn -PautoInstallPackage clean install`
 
     For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
 
-1. 
+1. [Include the core component artifacts](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds) and the dependency as follows:
 
-1. [Deploy the code to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases).
+    ```shell
+    <dependency>
+                <groupId>com.adobe.aem</groupId>
+                <artifactId>{TBD}</artifactId>
+                <type>content-package</type>
+                <version>{TBD}</version>
+    </dependency>
+    ```
+
+1. [Deploy the code to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds).
+
 
 ## Configure Azure Storage for Adaptive Forms {#configure-azure-storage-adaptive-forms}
 
@@ -80,16 +86,14 @@ Before executing these steps, ensure that you have an [!DNL Azure] storage accou
 1. Select a folder to create the configuration and tap **[!UICONTROL Create]**.
 1. Specify a title for the configuration in the **[!UICONTROL Title]** field.
 1. Specify the name of the [!DNL Azure] storage account in the **[!UICONTROL Azure Storage Account]** field.
-1. Specify the key to access Azure storage account in the **[!UICONTROL Azure Access Key]** field and tap **[!UICONTROL Save]**.
 
 ### Configure Unified Storage Connector for Forms Portal {#configure-usc-forms-portal}
 
 Perform the following steps to configure Unified Storage Connector for AEM Workflows:
 
 1. Navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Unified Storage Connector]**.
-
-1. In the **[!UICONTROL Workflow]** section, Select **[!UICONTROL Azure]** from the Storage drop-down list.
-1.  Specify the [configuration path for the Azure storage configuration](#create-azure-storage-configuration) in the **[!UICONTROL Storage Configuration Path]** field.
+1. In the **[!UICONTROL Forms Portal]** section, Select **[!UICONTROL Azure]** from the Storage drop-down list.
+1. Specify the [configuration path for the Azure storage configuration](#create-azure-storage-configuration) in the **[!UICONTROL Storage Configuration Path]** field.
 1. Tap **[!UICONTROL Publish]** and then tap **[!UICONTROL Save]** to save the configuration.
 
 ## Enable Forms Portal Components {#enable-forms-portal-components}
@@ -168,22 +172,6 @@ You can configure the auto-save feature for an adaptive form as follows:
 * In [!UICONTROL Trigger], configure to trigger auto-save based on the occurrence of an event or after a specific interval of time. 
 
 
-## Best Practices for saving Adaptive Forms on portal {#best-practices-forms-portal}
-
-List the best practices to save Adaptive Forms on portal.
-
-## Troubleshooting {#troubleshooting-forms-portal}
-
-List some of the common errors while saving adaptive forms on portal and how to resolve them.
-
-
-
-
-
-<!-- 1. 
-After the repository is cloned, [integrate your Git repo with Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)
-
-**Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
 
 
