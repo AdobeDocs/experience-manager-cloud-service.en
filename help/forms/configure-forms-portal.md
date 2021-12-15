@@ -21,7 +21,7 @@ The Form Portal components allow you to add the following functionality:
 * Enable searching of forms based on title and description.
 * Use custom CSS to customize the look and feel of the portal.
 * Create links to forms.
-* Lists drafts and submissions related to Adaptive Form created by end user.
+* Lists drafts and submissions related to Adaptive Forms created by the end user.
 
 ## Components of a Forms Portal Page {#forms-portal-components}
 
@@ -42,11 +42,11 @@ You can [import the out-of-the-box Forms Portal components](#import-forms-portal
 
 To import out-of-the-box Forms Portal components on AEM Forms as a Cloud Service, perform the following steps:
 
-1. **Clone Cloud Manager Git repository on your local development instance:**  Your Cloud Manager Git repository contains a default AEM project. It is based on [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI to bring the project on your local development environment. For details to accessing the repository, see [Accessing Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).  
+1. **Clone Cloud Manager Git repository on your local development instance:**  Your Cloud Manager Git repository contains a default AEM project. It is based on [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI to bring the project on your local development environment. For details on accessing the repository, see [Accessing Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).  
 
-1.  **Create an [!DNL Experience Manager Forms] as a [Cloud Service] project:** Create an [!DNL Experience Manager Forms] as a [Cloud Service] project based on [AEM Archetype 27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) or later. The archetype  help developers easily start developing for [!DNL AEM Forms] as a Cloud Service. It also includes some sample themes and templates to help you started quickly.
+1.  **Create [!DNL Experience Manager Forms] as a [Cloud Service] project:** Create [!DNL Experience Manager Forms] as a [Cloud Service] project based on [AEM Archetype 27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) or later. The archetype help developers easily start developing for [!DNL AEM Forms] as a Cloud Service. It also includes some sample themes and templates to help you started quickly.
 
-    Open the command prompt and run the below command to create an [!DNL Experience Manager Forms] as a Cloud Service project. To include [!DNL Forms] specific configurations, themes, and templates, set `includeForms=y`.  
+    To create [!DNL Experience Manager Forms] as a Cloud Service project, open the command prompt and run the below command. To include [!DNL Forms] specific configurations, themes, and templates, set `includeForms=y`.  
 
     ```shell
     mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=30 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeForms="y"
@@ -76,11 +76,11 @@ To import out-of-the-box Forms Portal components on AEM Forms as a Cloud Service
 
 ## Configure Azure Storage for Adaptive Forms {#configure-azure-storage-adaptive-forms}
 
-[[!DNL Experience Manager Forms] Data Integration](data-integration.md) provides an [!DNL Azure] storage configuration to integrate forms with [!DNL Azure] storage services. The Form Data Model can be used to create Adaptive Forms that interact with [!DNL Azure] server to enable business workflows.
+[[!DNL Experience Manager Forms] Data Integration](data-integration.md) provides [!DNL Azure] storage configuration to integrate forms with [!DNL Azure] storage services. The Form Data Model can be used to create Adaptive Forms that interact with [!DNL Azure] server to enable business workflows.
 
 ### Create Azure Storage Configuration {#create-azure-storage-configuration}
 
-Before executing these steps, ensure that you have an [!DNL Azure] storage account and an access key to authorize the access to the [!DNL Azure] storage account.
+Before executing these steps, ensure that you have a [!DNL Azure] storage account and an access key to authorize access to the [!DNL Azure] storage account.
 
 1. Navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Azure Storage]**.
 1. Select a folder to create the configuration and tap **[!UICONTROL Create]**.
@@ -92,7 +92,7 @@ Before executing these steps, ensure that you have an [!DNL Azure] storage accou
 Perform the following steps to configure Unified Storage Connector for AEM Workflows:
 
 1. Navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Unified Storage Connector]**.
-1. In the **[!UICONTROL Forms Portal]** section, Select **[!UICONTROL Azure]** from the Storage drop-down list.
+1. In the **[!UICONTROL Forms Portal]** section, select **[!UICONTROL Azure]** from the **[!UICONTROL Storage]** drop-down list.
 1. Specify the [configuration path for the Azure storage configuration](#create-azure-storage-configuration) in the **[!UICONTROL Storage Configuration Path]** field.
 1. Tap **[!UICONTROL Publish]** and then tap **[!UICONTROL Save]** to save the configuration.
 
@@ -104,17 +104,23 @@ Once a portal component is enabled, you can use it in the author instance of you
 
 ## Add and Configure Forms Portal Components {configure-forms-portal-components}
 
-You can create and customize Forms Portal on websites authored using AEM by adding and configuring the portal components. Ensure that the components are enabled before using them in the Forms Portal.
+You can create and customize Forms Portal on websites authored using AEM by adding and configuring the portal components. Ensure that the [components are enabled](#enable-forms-portal-components) before using them in the Forms Portal.
 
-To add a component, either drag and drop the component from the Components pane to the layout container on the page or tap the add icon on the layout container and add the component from the [!UICONTROL Insert New Component] dialog.
+To add a component, either drag and drop the component from the Components pane to the layout container on the page, or tap the add icon on the layout container and add the component from the [!UICONTROL Insert New Component] dialog.
 
 ### Configure Drafts & Submissions Component {#configure-drafts-submissions-component}
 
-The Drafts & Submissions component displays forms that are saved as draft for completing later and submitted forms. To configure, tap the component and then tap the ![Configure icon](assets/configure_icon.png). In the [!UICONTROL Drafts and Submissions] dialog, specify the title to indicate the form listing as draft or submitted forms. Also select whether the component should list draft forms or submitted forms in card or list format. 
+The Drafts & Submissions component displays forms that are saved as draft for completing later and submitted forms. To configure, tap the component and then tap the ![Configure icon](assets/configure_icon.png). In the [!UICONTROL Drafts and Submissions] dialog, specify the title to indicate the form listing as draft or submitted forms. Also select whether the component should list draft forms or submitted forms in card or list format.
+
+![Drafts icon](assets/drafts-component.png)
+
+![Submissions icon](assets/submission-listing.png)
 
 ### Configure Search & Lister Component {#configure-search-lister-component}
 
 The Search & Lister component is used to list adaptive forms on a page and to implement search on the listed forms. 
+
+![Search and Lister icon](assets/search-and-lister-component.png)
 
 To configure, tap the component and then tap the ![Configure icon](assets/configure_icon.png). The [!UICONTROL Search and Lister] dialog opens.
 
@@ -139,9 +145,9 @@ The link component enables you to provide links to an adaptive form on the page.
 You can configure to submit an adaptive form only when all the recipients have completed the signing ceremony. Follow the steps below to configure the setting using Adobe Sign.
 
 1. In the author instance, open an Adaptive Form in the edit mode.
-1. From the left pane, click the Properties icon and expand the **[!UICONTROL ELECTRONIC SIGNTATURE]** option.
+1. From the left pane, tap the Properties icon and expand the **[!UICONTROL ELECTRONIC SIGNTATURE]** option.
 1. Select **[!UICONTROL Enable Adobe Sign]**. Various configuration options display. 
-1. In the **[!UICONTROL Submit the form]** section, select the **[!UICONTROL after every recipient completes signing ceremony]** option. This configures the Submit Form action where the form is first sent to all the recipients for signing. Once all the recipients have signed the form, only then the form is submitted. 
+1. In the [!UICONTROL Submit the form] section, select the **[!UICONTROL after every recipient completes signing ceremony]** option to configure the Submit Form action, where the form is first sent to all the recipients for signing. Once all the recipients have signed the form, only then the form is submitted. 
 
 ## Save Adaptive Forms As Drafts {#save-adaptive-forms-as-drafts}
 
