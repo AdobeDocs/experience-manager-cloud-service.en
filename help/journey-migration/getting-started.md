@@ -1,8 +1,8 @@
 ---
-title: Getting Started with Moving to AEM as a Cloud Service
+title: Getting Started with the Migration Journey to AEM as a Cloud Service
 description: Start your migration journey by familiarizing yourself on the basics of moving to AEM as a Cloud Service
 ---
-# Getting Started with Moving to AEM as a Cloud Service {#getting-started}
+# Getting Started with the Migration Journey to AEM as a Cloud Service {#getting-started}
 
 In this part of the AEM as a Cloud Service Migration Journey, you will learn about the basics of moving your on-premise or Adobe Managed Services installation of AEM to the cloud.
 
