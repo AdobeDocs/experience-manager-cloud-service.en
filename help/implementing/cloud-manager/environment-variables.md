@@ -32,7 +32,7 @@ Typical use cases for using environment variables include:
    * If you're adding an environment variable for the first time, you will see an **Add Configuration** button. in the center of the page. Use this to launch the **Environment Configuration** dialog.
 1. Enter the variable name, value, the service you wish to apply it to (Author/Publish/Preview), and if the type is variable or secret.
 1. After you enter your new variable, you must select **Add** in the last column of the row containing the new variable.
-  * You can enter multiple variables at once by entering a new line and selecting **Add**.
+   * You can enter multiple variables at once by entering a new line and selecting **Add**.
 1. Select **Save** to persist your variables.
 
 An indicator with the status **Updating** is shown at the top of the table and next to the newly added variable to indicate that the environment is being updated with the configuration. Once complete, the new environment variable will be visible in the table.
@@ -51,8 +51,8 @@ After you have created environment variables, you can update them using the **Ad
 1. Within the detail of the environment, select the **Configuration** tab then select **Add/update** in the top right to open the **Environment Configuration** dialog.
 1. Using the ellipsis button in the last column of the row of the variable you wish to modify, select **Edit** or **Delete**. 
 1. Edit the environment variable as necessary.
-  * When editing, the ellipsis button will change to options to revert back to the original value or confirm your change.
-  * When editing secrets, the values can only be updated, not viewed.
+   * When editing, the ellipsis button will change to options to revert back to the original value or confirm your change.
+   * When editing secrets, the values can only be updated, not viewed.
 1. Once you've made all of the required configuration changes, select **Save**.
 
 An indicator with the status **Updating** is shown at the top of the table and next to the newly updated variable(s) to indicate that the environment is being updated with the configuration. Once complete, the updated environment variable(s) will be visible in the table.
