@@ -39,6 +39,12 @@ To process assets using a processing profile, add a profile to a folder. See [us
 
 ## Annotate video assets {#annotate-video-assets}
 
+You can add annotations to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](manage-video-assets.md). 
+
+>[!NOTE]
+>
+>MXF video format is not yet supported with video asset annotations.
+
 1. From the [!DNL Assets] console, select **[!UICONTROL Edit]** on the asset card to display the asset details page.
 1. To play the video, click **[!UICONTROL Preview]**.
 1. To annotate the video, click **[!UICONTROL Annotate]**. An annotation is added at the particular time (frame) in the video. When annotating, you can draw on the canvas and include a comment with the drawing. Comments are auto-saved. To exit the annotation wizard, click **[!UICONTROL Close]**.
