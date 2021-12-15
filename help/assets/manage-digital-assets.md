@@ -237,7 +237,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    >[!NOTE]
    >
-   >Video annotations are supported only on browsers with HTML5 compatible video formats. In addition, depending on the browser, different video formats are supported.
+   >Video annotations are supported only on browsers with HTML5 compatible video formats. In addition, depending on the browser, different video formats are supported. However, MXF video format is not yet supported with video annotations.
 
 ## Delete assets {#delete-assets}
 
@@ -403,7 +403,7 @@ The timeline lets you view various events for a selected item, such as active wo
 
 Annotations are comments or explanatory notes added to images or videos. Annotations provide marketers the ability to collaborate and leave feedback about assets.
 
-Video annotations are only supported on browsers with HTML5-compatible video formats. Video formats that Assets supports depend on the browser.
+Video annotations are only supported on browsers with HTML5-compatible video formats. Video formats that Assets supports depend on the browser. However, MXF video format is not yet supported with video annotations.
 
 >[!NOTE]
 >
@@ -444,7 +444,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
    >[!NOTE]
    >
-   >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](manage-video-assets.md).
+   >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](manage-video-assets.md). However, MXF video format is not yet supported with video annotations.
 
 1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **[!UICONTROL My Preferences]**.
 
