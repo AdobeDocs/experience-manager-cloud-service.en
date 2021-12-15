@@ -102,7 +102,7 @@ In order to use any core component (including the out-of-the-box portal componen
 
 Once a portal component is enabled, you can use it in the author instance of your sites page.
 
-## Add and Configure Forms Portal Components {configure-forms-portal-components}
+## Add and Configure Forms Portal Components {#configure-forms-portal-components}
 
 You can create and customize Forms Portal on websites authored using AEM by adding and configuring the portal components. Ensure that the [components are enabled](#enable-forms-portal-components) before using them in the Forms Portal.
 
