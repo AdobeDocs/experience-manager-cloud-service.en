@@ -425,6 +425,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Reuse metadata properties of an Adaptive Form](/help/forms/reusing-adaptive-forms.md)
     + Improve accessibility of an Adaptive Form {#accessible-adaptive-forms}
       + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
+    + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
   + Integrate a form with one or more data sources {#use-form-data-model}
     + [Configure data sources](/help/forms/configure-data-sources.md)
     + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
