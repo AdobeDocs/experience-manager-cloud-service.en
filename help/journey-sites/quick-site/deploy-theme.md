@@ -85,11 +85,16 @@ Congratulations! You have completed the AEM Quick Site Creation journey! You sho
 * How to customize and test a theme using proxied AEM content and commit those changes to AEM git.
 * How to deploy front-end customization using the pipeline.
 
-You are now ready to customize the themes of your own AEM site. However AEM is a powerful tool and there are many additional options available. Check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
+You are now ready to customize the themes of your own AEM site. However before you before begin creating different work streams using multiple front-end pipelines, please review the document [Developing Sites with the Front-End Pipeline.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) It will help you get the most out of your front-end development by:
+
+* Maintaining a single source of truth.
+* Maintaining a separation of concerns.
+
+AEM is a powerful tool and there are many additional options available. Check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Deploy Your Customized Theme,](deploy-theme.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+The following are some additional resources that do a deeper dive on some concepts mentioned in this document.
 
 * [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - If you already have a firm understanding of AEM, you may want to directly consult the in-depth technical docs.
 * [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult the in-depth technical docs.
@@ -105,3 +110,4 @@ While it is recommended that you move on to the next part of the Quick Site Crea
 * [Onboarding Journey](/help/journey-onboarding/home.md) - This guide serves as your starting point to ensure that your teams are set up and have access to AEM as a Cloud Service.
 * [Adobe Experience Manager Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Explore the Cloud Manager documentation for full details of its features.
 * [Site Administration Documentation](/help/sites-cloud/administering/site-creation/create-site.md) - Check out the technical docs on site creation for more details on the Quick Site Creation tool's features.
+* [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - This document describes some considerations to be aware of in order to get the full potential out of the front-end development process using the front-end pipeline.
