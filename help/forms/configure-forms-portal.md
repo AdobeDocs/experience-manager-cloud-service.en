@@ -175,15 +175,4 @@ You can configure the auto-save feature for an adaptive form as follows:
 1. From the left pane, tap the ![Properties icon](assets/configure_icon.png) and expand the [!UICONTROL AUTO-SAVE] option.
 1. Select the **[!UICONTROL Enable]** check box to enable auto-save of the form. You can configure the following:
 * By default, the [!UICONTROL Adaptive Form Event] is set to "true", which implies that the form is auto-saved after every event.
-* In [!UICONTROL Trigger], configure to trigger auto-save based on the occurrence of an event or after a specific interval of time. 
-
-
-
-
-
-
-
-
-
-
-
+* In [!UICONTROL Trigger], configure to trigger auto-save based on the occurrence of an event or after a specific interval of time.
