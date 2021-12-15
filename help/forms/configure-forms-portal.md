@@ -34,7 +34,7 @@ AEM Forms provide the following portal components out of the box:
 * Link: This component allows you to create a link to a form anywhere on the page.
 
 You can [import the out-of-the-box Forms Portal components](#import-forms-portal-components-aem-archetype) from the AEM Project Archetype. After importing, perform the following configurations: 
-* [Configure an external storage](configure-azure-storage-adaptive-forms)
+* [Configure an external storage](#configure-azure-storage-adaptive-forms)
 * [Enable the Forms Portal components](#enable-forms-portal-components) 
 * [Configure the Forms Portal components](#configure-forms-portal-components)
 
