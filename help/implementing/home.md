@@ -1,6 +1,7 @@
 ---
 title: Implementing Adobe Experience Manager as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service implementation self-help resources and documentation links
+landing-page-description: Learn how to customize your AEM as a Cloud Service deployment, including development and deployment topics.
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
 ---
 # Implementing Applications for AEM as a Cloud Service {#aem-implementation-guide}
@@ -19,7 +20,6 @@ This page lists the self-help resources about implementation for Experience Mana
 
 |User Guide|Description|
 |---|---|
-|[Experience Manager as a Cloud Service Home](/help/landing/home.md)|For an overview of the Experience Manager as a Cloud Service documentation, start here.|
 |[Overview](/help/overview/home.md)|This guide provides an overview of Experience Manager as a Cloud service, including an introduction, terminology, architecture, etc.|
 |[Release Notes](/help/release-notes/home.md)|This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what is new, deprecated and removed features, and known issues.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
