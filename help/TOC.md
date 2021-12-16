@@ -286,6 +286,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Reuse assets using MSM](/help/assets/reuse-assets-using-msm.md)
     + [Download assets](/help/assets/download-assets-from-aem.md)
     + [Check-in and check-out assets to edit](/help/assets/check-out-and-submit-assets.md)
+    + [Create and share private folders](/help/assets/private-folder.md)
     + [Digital Rights Management for assets](/help/assets/drm.md)
     + [Watermark assets](/help/assets/watermark-assets.md)
     + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
@@ -425,6 +426,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Reuse metadata properties of an Adaptive Form](/help/forms/reusing-adaptive-forms.md)
     + Improve accessibility of an Adaptive Form {#accessible-adaptive-forms}
       + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
+    + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
   + Integrate a form with one or more data sources {#use-form-data-model}
     + [Configure data sources](/help/forms/configure-data-sources.md)
     + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
