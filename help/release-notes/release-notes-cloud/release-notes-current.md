@@ -63,7 +63,7 @@ Have a look at the [December 2021 Release Overview](https://video.tv.adobe.com/v
   * Generate documents by populating template files (PDF and XDP) with XML data.
   * Generate output forms in various formats, including non-interactive PDF print streams.
 
-* **Custom fonts for Document of Record and PDF documents created with Communications APIs**: You can now specify custom fonts for PDF documents generated using Communications APIs and Document of Records making identical looking PDF available for all platforms. 
+* **Custom fonts for Document of Record and PDF documents created with Communications APIs**: You can now use brand approved fonts in PDF documents generated using Communications APIs to align with your organizational requirements.
 
 ## CIF Add-on {#cloud-services-cif}
 
