@@ -52,6 +52,18 @@ The various roles that are involved to configure and use the capability and thei
 | DAM distributor (technical user) | Remote | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` on remote [!DNL Experience Manager] | This user present on the remote deployment is used by [!DNL Experience Manager] local server (not the [!DNL Sites] author role) to fetch the remote assets, on behalf of [!DNL Sites] author. This role is not same as above two `ksaner` roles and belongs to a different user group. |
 | [!DNL Sites] technical user | Local | `connectedassets-sites-techaccts` | - | Allows [!DNL Assets] deployment to search for references to assets in the [!DNL Sites] web pages. |
 
+### Connected Assets architecture {#connected-assets-architecture}
+
+Experience Manager allows you to connect a remote DAM deployment as a source to multiple Experience Manager Sites deployments. You can connect a maximum of four Sites deployments to a source remote DAM. However, you can connect a Sites deployment with only one remote DAM deployment.
+
+The following diagrams illustrate the supported scenarios:
+
+![Connected Assets architecture](assets/connected-assets-architecture.png)
+
+The following diagram illustrates an unsupported scenario:
+
+![Connected Assets architecture](assets/connected-assets-architecture-unsupported.png)
+
 ## Configure a connection between [!DNL Sites] and [!DNL Assets] deployments {#configure-a-connection-between-sites-and-assets-deployments}
 
 An [!DNL Experience Manager] administrator can create this integration. Once created, the permissions that are required to use it are established via user groups. The user groups are defined on the [!DNL Sites] deployment and on the DAM deployment.
@@ -193,6 +205,26 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 1. Users can move or delete the asset. When moving or deleting an asset, the total number of references of all the selected assets/folders are displayed in a warning dialog. When deleting an asset for which the references are not yet displayed, a warning dialog is displayed.
 
    ![force delete warning](assets/delete-referenced-asset.png)
+
+### Manage updates to assets in remote DAM {#handling-updates-to-remote-assets}
+
+>[!NOTE]
+>
+>This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information to enable the feature for your environment.
+
+After [configuring a connection](#configure-a-connection-between-sites-and-assets-deployments) between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can then perform the update, delete, rename, and move operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment. In addition, if an asset on remote DAM is used on a local Experience Manager Sites page, the updates to the asset on remote DAM are displayed on the Sites page.
+
+While moving an asset from one location to another, ensure that you [adjust references](manage-digital-assets.md) so that the asset displays on the Sites page. If you move an asset to a location that is not accessible from the local Sites deployment, the asset fails to display on the Sites deployment.
+
+You can also update the metadata properties for an asset on remote DAM and the changes are available on the local Sites deployment.
+
+Sites authors can preview the available updates on the Sites deployment and then republish the changes to make them available on the AEM publish instance. 
+
+Experience Manager displays an `expired` status visual indicator on assets in Remote Assets Content Finder to stop site authors from using the asset on a Sites page. If you use an asset with an `expired` status on a Sites page, the asset fails to display on the Experience Manager publish instance. 
+
+>[!NOTE]
+>
+>The updates to assets in remote DAM are made available to the Sites deployment only if remote DAM and Sites deployments are on Experience Manager as a Cloud Service.
 
 ## Limitations and best practices {#tip-and-limitations}
 
