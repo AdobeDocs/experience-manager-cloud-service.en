@@ -32,6 +32,7 @@ The release date for Cloud Manager in AEM as a Cloud Service 2021.12.0 is 16 Dec
 * Enhancements to Activity page were added to surface additional details applicable to pipelines including source code, commit ID, etc.
 * Minor update were made to the UI when copying TXT entries ("TXT value" instead of "TXT record") to remove potential confusion.
 * [The documentation related to certificate errors](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) has been updated to cover additional examples along with trouble-shooting steps.
+* An option is now available in the front-end pipeline execution to reject or approve before deployment to production.
 
 ### Bug Fixes {#bug-fixes}
 
