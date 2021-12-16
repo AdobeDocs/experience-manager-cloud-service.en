@@ -286,6 +286,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Reuse assets using MSM](/help/assets/reuse-assets-using-msm.md)
     + [Download assets](/help/assets/download-assets-from-aem.md)
     + [Check-in and check-out assets to edit](/help/assets/check-out-and-submit-assets.md)
+    + [Create and share private folders](/help/assets/private-folder.md)
     + [Digital Rights Management for assets](/help/assets/drm.md)
     + [Watermark assets](/help/assets/watermark-assets.md)
     + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)

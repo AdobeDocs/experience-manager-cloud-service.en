@@ -13,7 +13,7 @@ You can create a private folder in the [!DNL Adobe Experience Manager Assets] us
 >
 >Private folder has at least one member with Owner role.
 >
->To create a private folder, you require Read and Modify [access control permissions](/help/sites-administering/security.md#permissions-in-aem) on the parent folder under which you want to create a private folder. If you are not an administrator, these permissions are not enabled for you by default on `/content/dam`. In this case, first obtain these permissions for your user ID/group before attempting to create private folders.
+>To create a private folder, you require `Read` and `Modify` permissions on the parent folder under which you want to create a private folder. If you are not an administrator, these permissions are not enabled for you by default on `/content/dam`. In this case, first obtain these permissions for your user ID/group before attempting to create private folders.
 
 ## Create and share private folder  {#create-share-private-folder}
 
