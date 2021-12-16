@@ -42,7 +42,7 @@ The following steps are generally recommended when it's necessary to perform cha
       1. ACL: The front-end team must be given a local AEM user with something similar to "Contributors" rights.
       1. Git: The front-end team must have a separate Git location for the front-end module that specifically targets that development environment.
          * A usual practice is to create a `dev` branch, so that the changes done for the development environment can then easily be merged back into the `main` branch that is to be deployed to the production environment.
-      1. Pipeline: The front-end team must have a front-end pipeline that deploys to the development environment the front-end module typically located in that `dev` branch.
+      1. Pipeline: The front-end team must have a front-end pipeline that deploys to the development environment. That pipeline would deploy the front-end module that is typically located in the `dev` branch, as described in the previous point.
 1. The front-end team then makes the CSS and JS code work with both the old and the new output.
    1. As usual, to develop locally:
       1. The `npx aem-site-theme-builder proxy` command executed within the front-end module starts a proxy server that requests the content from an AEM environment, while replacing the CSS and JS files of the front-end module with the ones from the local `dist` folder.
