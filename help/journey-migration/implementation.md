@@ -124,7 +124,6 @@ You can start by learning how to [set up a local development environment](https:
 
 Once you have set up the local development environment, get familiar with the AEM as a Cloud Service SDK by consulting the [documentation](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
-
 ### Schedule a Code Freeze {#schedule-a-code-freeze}  
 
 To manage your on-going code development on your active AEM along with the code refactoring tasks as part of your transition journey, we recommended you schedule a code freeze period until you have completed restructuring your Maven project to be compatible with AEM as a Cloud Service.
@@ -217,7 +216,7 @@ The tracker will also help you to:
 
 The following table illustrates a functional migration tracker:
 
-| Source (Env / Instance / URL) | Destination (Env / Instance / URL) | Migration Set Name, Type (Initial or Top up) | Migration Set Size (MB) | User Mapping (Yes / No) | Extraction Duration (Start, End, Time taken) | Ingestion Duration (Start, End, Time taken) | Issues / Resolutions / Details |
+| Source (Environment / Instance / URL) | Destination (Environment / Instance / URL) | Migration Set Name, Type (Initial or Top up) | Migration Set Size (MB) | User Mapping (Yes / No) | Extraction Duration (Start, End, Time taken) | Ingestion Duration (Start, End, Time taken) | Issues / Resolutions / Details |
 |---|---|---|---|---|---|---|---|
 |   |   |   |   |   |   |   |   |
 
