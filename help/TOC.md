@@ -286,6 +286,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Reuse assets using MSM](/help/assets/reuse-assets-using-msm.md)
     + [Download assets](/help/assets/download-assets-from-aem.md)
     + [Check-in and check-out assets to edit](/help/assets/check-out-and-submit-assets.md)
+    + [Create and share private folders](/help/assets/private-folder.md)
     + [Digital Rights Management for assets](/help/assets/drm.md)
     + [Watermark assets](/help/assets/watermark-assets.md)
     + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
@@ -425,6 +426,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Reuse metadata properties of an Adaptive Form](/help/forms/reusing-adaptive-forms.md)
     + Improve accessibility of an Adaptive Form {#accessible-adaptive-forms}
       + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
+    + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
   + Integrate a form with one or more data sources {#use-form-data-model}
     + [Configure data sources](/help/forms/configure-data-sources.md)
     + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
@@ -524,8 +526,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
   + Using Cloud Manager {#using-cloud-manager}
     + Release Notes for Cloud Manager {#release-notes-cloud-manager}
-      + [Current Release Notes (2021.11.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
+        + [Release Notes for 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
         + [Release Notes for 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
         + [Release Notes for 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
         + [Release Notes for 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
@@ -571,6 +574,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Integrating Git with Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
       + [Working with Multiple Source Git Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [Enterprise Team Development Setup for AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+    + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md) 
     + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Introduction](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
       + Production Pipelines {#production-pipelines}
