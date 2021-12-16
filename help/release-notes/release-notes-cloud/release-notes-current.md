@@ -26,12 +26,6 @@ The following release (2022.1.0) is on January 27, 2022.
 
 Have a look at the [December 2021 Release Overview](https://video.tv.adobe.com/v/339278) video for a summary of the features added.
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### New feature in [!DNL Sites] {#sites-features}
-
-* Content Fragment models are now automatically set in read-only state once they are published, to avoid unintentionally breaking live API queries after re-publishing an edited model. Users are prompted with a warning when attempting to edit a published model. Editing is possible upon accepting the warning. 
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
@@ -77,7 +71,7 @@ Have a look at the [December 2021 Release Overview](https://video.tv.adobe.com/v
 
 ## Cloud Manager {#cloud-manager}
 
-This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.10.0.
+This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.11.0.
 
 ### Release Date {#release-date-cm-nov}
 
@@ -124,56 +118,6 @@ The next release is planned for December 09, 2021.
 * Error message when max number of repositories has been reached did not specify the reason for the error.
 
 * In rare cases, pipelines were failing due to inappropriate retry handling of certain response codes. 
-
-
-## Release Date {#release-date-cm-oct}
-
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.10.0 is October 14, 2021.
-
-### What's New {#what-is-new-cm-oct}
-
-* In preparation for some upcoming changes, existing deployment pipelines will now be referenced and labelled in the user interface as **Full Stack** pipelines.
-
-* Pipeline card has been refreshed to now display a single, integrated face that shows both production and non-production pipelines, and user can select Run/Pause/Resume directly from the action menu associated with each pipeline.
-
-* A user in Deployment Manager role can now delete Production pipeline in a self-service manner via the UI.
-
-* Add and edit pipeline experiences have been refreshed to now use familiar, modern modals.
-
-* Users of Cloud Manager can now submit feedback directly from the user interface via the **Feedback** button on top right of the landing page.
-
-* Yearly SLA Graphs can now be downloaded from the Cloud Manager's user interface. 
-
-* Code quality and non-production pipeline executions will now use a more efficient shallow cloning process during the build step, leading to a faster build time for customers with especially large git repositories. 
-
-* Add IP Allow List wizard will now inform the user if maximum allowed number of IP Allow Lists has been reached. 
-
-* The Cloud Manager API documentation now includes an interactive playground that allows logged-in users to experiment with the API from their browser. See [Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) for more details.
-
-* The tool tip on the Program card will be more descriptive if a selection option under 'Navigate To' is disabled. It now displays "A production environment does not exist." 
-
-### Bug Fixes {#bug-fixes-cm-oct}
-
-* In rare situations, when an Adobe staff would restore a customer's environment, the restore was considered complete before the environment was fully operational.
-
-* Certain internal requests made during environment creation were not being retried.
-
-* If deployment failed error occurs following domain name verification, the error message has been corrected to request the customer to contact their Adobe representative.
-
-## Best Practices Analyzer {#best-practices-analyzer}
-
-### Release Date {#release-date-bpa-latest}
-
-The Release Date for Best Practices Analyzer v2.1.20 is October 05, 2021.
-
-### What's New {#what-is-new}
-
-* Ability to detect and report on node name length.
-
-* Ability to detect and report on the total Index size.
-
-* Ability to detect and report on assets that are missing their original rendition.
-
 
 ## Best Practices Analyzer {#bpa-release}
 
