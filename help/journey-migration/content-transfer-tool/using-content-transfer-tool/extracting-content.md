@@ -13,9 +13,13 @@ description: Extracting Content from Source
 >abstract="Extraction refers to extracting content from the source AEM instance into a temporary area called migration set. A migration set is a cloud storage area provided by Adobe to temporarily store the transferred content between the source AEM instance and the Cloud Service AEM instance."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Top Up Extraction"
 
+
 Follow the steps below to extract your migration set from the Content Transfer Tool:
    >[!NOTE]
    >If Amazon S3 or Azure Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the extraction phase. To do so you will need to configure an `azcopy.config` file before running extraction. Refer to [Handling Large Content Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) for more details. 
+
+   >[!IMPORTANT]
+   >You should run User Mapping tool before extracting content from source. See [Using the User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) for more details.
 
 1. Select a migration set from **Content Transfer** wizard and click **Extract** to start extraction. 
 
@@ -27,6 +31,10 @@ Follow the steps below to extract your migration set from the Content Transfer T
 
    >[!NOTE]
    >You have the option to overwrite staging container during the extraction phase.
+
+   >[!IMPORTANT]
+   >If the User Mapping has not been run on this migration set prior to extracting content from source, you will see a warning displaying that User Mapping step is pending, as shown in the figure below. Click on **Map Users** to run the User Mapping tool.
+   >![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/user-mapping-extract.png) 
   
 1. The **Extraction** field now displays the **RUNNING** status to indicate that the extraction is in-progress.
 
@@ -65,4 +73,4 @@ Follow the steps below:
 
 ## What's Next {#whats-next}
 
-Once you have learned Extracting Content from Source in Content Transfer Tool, you are now ready to learn the Ingestion Process in Content Transfer Tool. See [Ingesting Content into Target in Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) to learn how to ingest your migration set from the Content Transfer Tool.
+Once you have learned Extracting Content from Source in Content Transfer Tool, you are now ready to learn the Ingestion Process in Content Transfer Tool. See [Ingesting Content into Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) to learn how to ingest your migration set from the Content Transfer Tool.
