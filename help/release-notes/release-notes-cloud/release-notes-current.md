@@ -44,9 +44,7 @@ Have a look at the [December 2021 Release Overview](https://video.tv.adobe.com/v
 
 * [!DNL Dynamic Media] now supports ingestion, preview, playback and publish for MXF videos. Annotation and shoppable video for MXF videos is not yet supported.
 
-* Experience Manager enables you to modify the assets available on the remote DAM deployment and propagate those changes, with some delay, to the connected assets on the local Sites deployment. As a result, the connected assets available on both deployments remain in sync.
-
-![Modify Connected Assets](../assets/modify-connected-assets.png)
+* After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the update, delete, rename, and move operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
