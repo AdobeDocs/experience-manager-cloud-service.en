@@ -197,17 +197,18 @@ You can read up on how it works by consulting the [Best Practices Analyzer](/hel
 
 **Create a Cloud Readiness Assessment Report**
 
-The next step is creating a report based on all the knowledge gained thus far. A typical report should contain these inputs:
+The next step is creating a report based on all the knowledge gained thus far. You can do this by generating Best Practices Analyzer reports from the Stage and Production instances, [then uploading them into Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#readiness-phase-cam) for a digestable report of actionable items.
+
+A typical report should contain these inputs:
 
 * Documentation detailing the featureset of your particular AEM installation
 * Details on your the AEM custom configurations and code
-* Best Practices Analyzer reports from the Stage and Production instances
 * Production Dispatcher configurations
 * CDN Configurations (if there are any)
 
 **Socialize the Report**
 
-After the report is complete, discuss it with the relevant teams in order to confirm your findings and create actionable items.
+After the Best Practices Analyzer reports are complete, share them with the relevant teams in order to confirm your findings and plan for your next steps. Depending on preference, you can also distribute a printed version of the report by using [Print Preview](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
 
 ### Reviewing Resource Planning {#review-resource-planning}
 
