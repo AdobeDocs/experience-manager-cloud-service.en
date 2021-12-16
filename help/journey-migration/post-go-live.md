@@ -70,8 +70,6 @@ Congratulations! You have completed the AEM as a Cloud Service Migration Journey
 * Perform the migration
 * Monitor for issues and improve performance
 
-You are now ready to migrate to AEM as a Cloud Service!
-
 <!--#>[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca

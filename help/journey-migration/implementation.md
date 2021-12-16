@@ -161,7 +161,7 @@ Once access to a [production clone](#proof-of-migration) is established proceed 
 |---------|----------|
 Users, Groups and Permissions | You need to understand the volume of users, groups, and complexity around memberships. Look for opportunities to clean up any unused users, groups in the source before migration.
 Incomplete Asset processing | Try to complete the processing of assets in the source system before starting the migration to avoid potential concerns in AEM as a Cloud Service post migration. |
-Content Sanity | It is recommended to query for bad content and purge it before you start the migration. For example, look for assets or pages that do not have original renditions or that are stuck in workflow processing. See also [Asset Health](#asset-health). |
+Content Sanity | It is recommended to query for bad content and purge it before you start the migration. For example, look for assets or pages that do not have original renditions or that are stuck in workflow processing. See also [Asset Health](/help/journey-migration/go-live.md#asset-health). |
 
 ## Gathering Data {#gathering-data}
 
@@ -267,5 +267,3 @@ Record the time taken for [extraction and ingestion](#gathering-data):
 ## What's Next {#what-is-next}
 
 Once you've fully understood how to asses if your AEM installation is ready to be moved to the cloud, as we as learn how to use the tools needed to make it ready, it's time to move on to the [go-live phase](help/journey-migration/go-live.md).
-
-
