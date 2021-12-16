@@ -7,7 +7,7 @@ topic: Integrations, Development
 role: Developer, Architect
 level: Beginner
 kt: 9461
-thumbnail: 339250.jpeg
+thumbnail: 339250.jpg
 ---
 
 # Deploying App Builder applications
