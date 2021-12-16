@@ -22,7 +22,9 @@ Follow the recommended approach as described below:
 
 * When creating the migration set, use the URL of the author AEM as a Cloud Service environment.
 
-* During ingestion to publish, the publish tier will NOT be scaled down (unlike the author). As a precaution, please avoid any user initiated write operations such as:
+* During ingestion to publish, the publish tier will not be scaled down (unlike the author). 
 
-  * Content distribution from AEM as a Cloud Service Author to Publish in that environment
-  * User Sync between publish instances
+   >[!IMPORTANT]
+   >As a precaution, please avoid any user initiated write operations, such as:
+   > * Content distribution from AEM as a Cloud Service Author to Publish in that environment 
+   > * User Sync between publish instances

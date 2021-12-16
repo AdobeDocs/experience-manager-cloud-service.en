@@ -78,4 +78,4 @@ Follow the section below to understand the important considerations while runnin
 
 ## What's Next {#whats-next}
 
-Once you have learned the guidelines, best practices, and the important considerations for using Content Transfer Tool, you are now ready to install and use the tool, starting with creation of a migration set. See [Getting Started with Content Transfer Too](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) to learn more.
+Once you have learned the guidelines, best practices, and the important considerations for using Content Transfer Tool, you are now ready to install and use the tool, starting with creation of a migration set. See [Getting Started with Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) to learn more.
