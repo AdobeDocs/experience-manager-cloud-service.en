@@ -52,3 +52,8 @@ The following steps are generally recommended when it's necessary to perform cha
    1. The front-end work is completed when the updated front-end module works for both environments, and is deployed to both.
 1. The back-end team can then update the production environment by deploying the code that renders the new HTML and/or JSON output via the full-stack pipeline.
 1. The front-end team can then clean up their CSS and JS and remove what was only needed by the old output, deploying that last update to production via the front-end pipeline.
+
+## Additional Resources {#additional-resources}
+
+* [Site Themes](/help/sites-cloud/administering/site-creation/site-themes.md) - Learn how AEM site themes can be used to customize the style and design of your site.
+* [AEM Site Theme Builder](https://github.com/adobe/aem-site-theme-builder) - Adobe provides an AEM Site Theme Builder as a set of scripts for creating new site themes.

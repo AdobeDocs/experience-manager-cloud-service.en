@@ -45,6 +45,6 @@ Adobe provides a best-practices reference theme that you can use as a basis for 
 
 ## Developing Site Themes {#developing-themes}
 
-Adobe provides and AEM Site Theme Builder as a set of scripts for creating new site themes.
+Adobe provides an AEM Site Theme Builder as a set of scripts for creating new site themes.
 
 [The AEM Site Theme Builder is available along with usage documentation on GitHub.](https://github.com/adobe/aem-site-theme-builder) Front-end development experience is required for customizing the theme.
