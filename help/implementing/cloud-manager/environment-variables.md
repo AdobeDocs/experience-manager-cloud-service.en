@@ -28,14 +28,29 @@ Typical use cases for using environment variables include:
 1. Log into Adobe Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Cloud Manager lists the various programs available. Select the one you wish to manage.
 1. Select the **Environments** tab for the chosen program then select the environment for which you want to create an environment variable in the left navigation panel.
-1. Within the detail of the environment, select the **Configuration** tab then select **Add**. 
-   * If you're adding an environment variable for the first time, you will see an **Add Configuration** button. in the center of the page. Use this to launch the **Environment Configuration** dialog.
-1. Enter the variable name, value, the service you wish to apply it to (Author/Publish/Preview), and if the type is variable or secret.
+1. Within the detail of the environment, select the **Configuration** tab then select **Add** to open the **Environment Configuration** dialog. 
+   * If you're adding an environment variable for the first time, you will see an **Add Configuration** button in the center of the page. You can use this button or **Add** to open the **Environment Configuration** dialog.
+
+   ![Configuration tab](assets/configuration-tab.png)
+
+1. Enter the variable details.
+   * **Name**
+   * **Value**
+   * **Service Appplied** - Defines for which service (Author/Publish/Preview) the variable applies or if it applies to all services
+   * **Type** - Defines if the variable is normal variable or a secret
+
+   ![Adding a variable](assets/add-variable.png)
+
 1. After you enter your new variable, you must select **Add** in the last column of the row containing the new variable.
    * You can enter multiple variables at once by entering a new line and selecting **Add**.
+
+   ![Save variables](assets/save-variables.png)
+
 1. Select **Save** to persist your variables.
 
 An indicator with the status **Updating** is shown at the top of the table and next to the newly added variable to indicate that the environment is being updated with the configuration. Once complete, the new environment variable will be visible in the table.
+
+![Updating variables](assets/updating-variables.png)
 
 >[!TIP]
 >
@@ -49,13 +64,22 @@ After you have created environment variables, you can update them using the **Ad
 1. Cloud Manager lists the various programs available. Select the one you wish to manage.
 1. Select the **Environments** tab for the chosen program then select the environment for which you want to create an environment variable in the left navigation panel.
 1. Within the detail of the environment, select the **Configuration** tab then select **Add/update** in the top right to open the **Environment Configuration** dialog.
+
+   ![Add/Update button for variables](assets/add-update-variables.png)
+
 1. Using the ellipsis button in the last column of the row of the variable you wish to modify, select **Edit** or **Delete**. 
+
+   ![Edit or delete variable](assets/edit-delete-variable.png)
+
 1. Edit the environment variable as necessary.
    * When editing, the ellipsis button will change to options to revert back to the original value or confirm your change.
    * When editing secrets, the values can only be updated, not viewed.
+
+   ![Edit variable](assets/edit-variable.png)
+
 1. Once you've made all of the required configuration changes, select **Save**.
 
-An indicator with the status **Updating** is shown at the top of the table and next to the newly updated variable(s) to indicate that the environment is being updated with the configuration. Once complete, the updated environment variable(s) will be visible in the table.
+[As when adding variables,](#add-variables) an indicator with the status **Updating** is shown at the top of the table and next to the newly updated variable(s) to indicate that the environment is being updated with the configuration. Once complete, the updated environment variable(s) will be visible in the table.
 
 >[!TIP]
 >
