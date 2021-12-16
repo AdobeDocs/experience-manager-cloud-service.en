@@ -61,17 +61,63 @@ Follow the steps below to use Best Practices Analysis card:
    >[!NOTE]
    >Uploading a new report resets all the assessments.
 
+### Using Print Preview {#print-preview-cam}
+
+You can select the print preview option in Cloud Acceleration Manager for a printable preview of  the reports or to print the report to a PDF format for easy shareability.
+
+Follow the steps below:
+
 1. Click on **Print Preview** icon, as shown below.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Clicking on **Print Preview** opens a new tab with the report displayed in a printable preview. Click on **Print** to print the report to a PDF format for easy shareability.
+1. Clicking on **Print Preview** opens a new tab with the report displayed in a printable preview. Click on **Print** to print the report to a PDF format.
 
    >[!IMPORTANT]
    >* The option **Save as PDF** is recommended and supported for the above functionality.
    >* If the browser's print button is used, it will print only one page. 
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
+
+### Using View Trendline {#trendline-view-cam}
+
+When you upload more than one Best Practices Analyzer (BPA) report in a Project, you can select the **View Trendline** option to view and compare results from the historical BPA reports.
+
+Follow the steps below to view reports from the trendline option:
+
+>[!NOTE]
+>When you upload more than one BPA report in a Project, you will see the **...** icon.
+
+1. Navigate to your project and click on **Review** from the **Best Practices Analysis** card in the **Readiness** phase.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Click on the **...** icon to display the drop-down. 
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+   >[!IMPORTANT]
+   >The report displayed is always the report that has the latest report date.
+
+1. Click on **View Trendline**, as shown in the figure below.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Clicking on **View Trendline** opens the trendline view of the report, as shown in the figure below.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3a.png)
+
+
+   >[!NOTE]
+   >The Trendline Report displays the results from the historical BPA reports in a graphical representation. 
+   >
+   >You will see two graphs displaying the trend of the: 
+   >1. **Report Findings Trend**  
+   >1. **Custom Components and Template Trend**
+   >
+   >You can add or change the graphical view via the drop-down, as shown in the figure below:
+   >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/reports-bpa1.png)
+
 
 ### Reviewing Best Practices Analysis Report {#analysis-report}
 
@@ -141,6 +187,33 @@ Follow this section to explore the Planning and Setup activity card.
 1. A content carousel displays all the relevant information for this phase of the migration journey.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+
+### Deleting a Best Practices Analysis Report {#delete-trendline}
+
+Follow the steps below to delete a report from the Trendline view:
+
+>[!IMPORTANT]
+>A report can be deleted only when more than one report has been uploaded in a project. 
+
+1. Navigate to your project and click on **Review** from the **Best Practices Analysis** card in the **Readiness** phase.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Click on the **...** icon to display the drop-down. 
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. Click on **View Trendline**, as shown in the figure below.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Click on the delete icon from the **Trendline Report** screen.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5a.png)
+
+1. Click on **Delete** to confirm the deletion.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## What's Next {#whats-next}
 
