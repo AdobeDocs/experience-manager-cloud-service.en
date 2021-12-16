@@ -155,7 +155,7 @@ It is also recommended you review any unused Assets, Pages, AEM Projects, Users 
 
 ### Content Repository Health {#repository-health}
 
-Once access to a [production clone](#proof-migration) is established proceed to check the health of the repository. As mentioned in the previous section, the goal is to clean and compact the repository on the source before starting the migration. This step will potentially save a lot of time otherwise spend on troubleshooting issues once the migration starts.
+Once access to a [production clone](#proof-of-migration) is established proceed to check the health of the repository. As mentioned in the previous section, the goal is to clean and compact the repository on the source before starting the migration. This step will potentially save a lot of time otherwise spend on troubleshooting issues once the migration starts.
 
 | Action Item | Key Takeaways |
 |---------|----------|
@@ -166,7 +166,7 @@ Content Sanity | It is recommended to query for bad content and purge it before 
 ## Gathering Data {#gathering-data}
 
 >[!NOTE]
-> The [Content migration strategy and timeline](#strategy-timeline) section further details how to extrapolate the gathered data and create a migration plan.
+> The [Content migration strategy and timeline](#content-strategy-and-timeline) section further details how to extrapolate the gathered data and create a migration plan.
 
 Gathering data can help you plan the migration activities and associated tasks. The extraction and ingestion times are particularly useful because the data points can be associated with a specific size of the migration set. As such, these data points can be extrapolated to come up with a plan:
 
@@ -221,7 +221,7 @@ The following table illustrates a functional migration tracker:
 |---|---|---|---|---|---|---|---|
 |   |   |   |   |   |   |   |   |
 
-## Content migration strategy and timeline {#strategy-timeline}
+## Content migration strategy and timeline {#content-strategyand-timeline}
 
 The following section shows the important steps and associated tasks that can be used to formulate a content migration strategy and timeline.
 
@@ -229,7 +229,7 @@ The following section shows the important steps and associated tasks that can be
 
 ### Fitment {#fitment}
 
-* Perform revision cleanup, data store garbage collection and data consistency checks. See also [Preparing for migration](#prepare-for-migration)
+* Perform revision cleanup, data store garbage collection and data consistency checks. See also [Preparing for Go-Live](#preparing-for-go-live)
 * [Gather statistics](#gathering-data) about the AEM source repository:
     * Segment store size
     * Index store size
