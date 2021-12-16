@@ -48,7 +48,7 @@ As mentioned previously you will eventually have to schedule a code and content 
 * How long do I have to freeze content authoring activities?
 * For how long should I ask my delivery team to stop adding new features?
 
-To answer the first question, you should take into consideration the time taken during trial runs in non-production environments. The second question is more complicated. To answer it you need close collaboration between the team who is adding new features and the team refactoring the code. The goal should be to make sure all the code that is added to the existing deployment is also added, tested, and deployed to the cloud services branch. Generally speaking, this means the amount of code freeze will be lower.
+To answer the first question, you should take into consideration the time taken during trial runs in non-production environments. To answer the second question you need close collaboration between the team who is adding new features and the team refactoring the code. The goal should be to make sure all the code that is added to the existing deployment is also added, tested, and deployed to the cloud services branch. Generally speaking, this means the amount of code freeze will be lower. Additionally, you also need to plan for a content freeze when the final content top-up is scheduled.
 
 ## Best Practices {#best-practices}
 
