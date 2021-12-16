@@ -17,25 +17,29 @@ In the previous phases of the journey:
 
 ## Objective {#objective}
 
-This document will help you understand how to perform the migration to AEM as a Cloud Service once you are familiar with the previous steps of the journey. You will learn the content migration strategy and timeline, how to gather data, create a migration plan, as well as the best practices to follow when migrating to AEM as a Cloud Service.
+This document will help you understand how to perform the migration to AEM as a Cloud Service once you are familiar with the previous steps of the journey. You will learn how to perform the initial production migration as well as the best practices to follow when migrating to AEM as a Cloud Service.
 
-### Initial Migration {#initial-migration}
+## Initial Production Migration {#initial-migration}
+
+Before you can perform the production migration please follow the fitment and proof of migration steps outlined in the [Content migration strategy and timeline](/help/journey-migration/implementation.md##strategy-timeline) section of the [Implementation phase](/help/journey-migration/implementation.md).
 
 * Initiate the migration from production based on the experience you gained during the clone to AEM as a Cloud Service stage migration:
   * Author-Author
   * Publish-Publish
-* Note: Aem as a Cloud Service author will be shown during ingestion but Aem as a Cloud Service publish will be up during ingestion
-* Validate the content ingested into both the AEM as a Cloud Service author and publish tiers
+* Note: Aem as a Cloud Service author will be shown during ingestion but Aem as a Cloud Service publish will be up during ingestion.
+* Validate the content ingested into both the AEM as a Cloud Service author and publish tiers.
 * Instruct the content authoring team to avoid moving content on both source and destination until the ingestion is complete
-* New content ca be added, edited or deleted but avoid moving it. This applies both to source of destination.
-* Record the [time taken](#gathering-data) for full extraction and ingestion to have an estimate for future top up migration timelines
-* Create a [migration planner](#migration-plan) for both author and publish
+* New content ca be added, edited or deleted but avoid moving it. This applies both to source and destination.
+* Record the [time taken](/help/journey-migration/implementation.md#gathering-data) for full extraction and ingestion to have an estimate for future top up migration timelines.
+* Create a [migration planner](/help/journey-migration/implementation.md#migration-plan) for both author and publish.
 
-### Incremental Top Ups {#top-up}
+## Incremental Top Ups {#top-up}
+
+After the initial migration from production you need to perform incremental top-ups. As such, please take the following into consideration:
 
 * Gather data on the amount of content. For example: per one week, two weeks or a month.
 * Make sure to plan top ups in such a way that you avoid more than 48 hours of content extraction and ingestion (so that it will fit into a weekend timeframe).
-* Plan the number of top ups required and estimate/backtrack in relation to the go-live date.
+* Plan the number of top ups required and estimate/backtrack in relation to the Go-Live date.
 
 ## Identify Code and Content Freeze Timelines for the Migration {#code-content-freeze}
 
@@ -44,7 +48,7 @@ As mentioned previously you will eventually have to schedule a code and content 
 * How long do I have to freeze content authoring activities?
 * For how long should I ask my delivery team to stop adding new features?
 
-To answer the first question, you should take into consideration the time taken during trial runs in non-production environments. The second question is more complicated. To answer it you need close collaboration between the team who is adding new features and the team refactoring the code. The goal should be to make sure all the code that is added to the existing deployment is also added, tested, and deployed to the cloud services branch. Generally speaking, this means the amount of code freeze will be lower.
+To answer the first question, you should take into consideration the time taken during trial runs in non-production environments. To answer the second question you need close collaboration between the team who is adding new features and the team refactoring the code. The goal should be to make sure all the code that is added to the existing deployment is also added, tested, and deployed to the cloud services branch. Generally speaking, this means the amount of code freeze will be lower. Additionally, you also need to plan for a content freeze when the final content top-up is scheduled.
 
 ## Best Practices {#best-practices}
 
@@ -85,7 +89,7 @@ You need to take into account that the entire ingestion fails if any of the foll
 * Any User / Group with `rep:AuthorizableID` being ingested that is already present on AEM as a Cloud Service
 * If any asset that is extracted and ingested moves into a different path either on source or destination before the next iteration of the migration.
 
-## Asset Sanity {#asset-sanity}
+## Asset Health {#asset-health}
 
 Compared to the section above the ingestion **does not** fail due to the following asset concerns. However, it is highly recommended you take the appropriate steps in these scenarios:
 
