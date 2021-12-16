@@ -24,7 +24,7 @@ The following release (2022.1.0) is on January 27, 2022.
 
 ## Release Video {#release-video}
 
-Have a look at the [December 2021 Release Overview](https://video.tv.adobe.com/v/339278) video for a summary of the features added.
+Have a look at the [December 2021 Release Overview](https://video.tv.adobe.com/v/339278) video for a summary of the features added in the 2021.11.0 (November 2021) release.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
