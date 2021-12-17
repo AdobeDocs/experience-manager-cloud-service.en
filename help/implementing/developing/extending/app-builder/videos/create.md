@@ -32,7 +32,7 @@ Learn how to set up your local environment for App Builder development.
 
 Learn how to initialize an App Builder project.
 
->[!VIDEO](https://video.tv.adobe.com/v/339169/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339170/?quality=12&learn=on)
 
 ## Build, run, and test your application
 
