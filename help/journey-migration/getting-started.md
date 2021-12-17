@@ -24,7 +24,7 @@ With AEM as a Cloud Service, your teams can focus on innovating instead of plann
 The migration journey to Cloud Service involves the following phases:
 
 * Begin by determining if your deployment is ready to be moved to AEM as a Cloud Service with the [Readiness Phase](/help/journey-migration/readiness.md). In this phase, you should also familiarize yourself with the changes that AEM as a Cloud Service has introduced
-* Next, make your code and content cloud ready with the [Implementation Phase](/help/journey-migration/implementation.md). In this phase you will be exploring the tooling Adobe provides to ease the move to the cloud
+* Next, make your code and content cloud ready with the [Implementation Phase](/help/journey-migration/implementation.md). In this phase, you will be exploring the tooling Adobe provides to ease the move to the cloud
 * Once everything is in place, you can perform the migration with the [Go-Live Phase](/help/journey-migration/performing-migration.md)
 * Finally, make sure to monitor for issues and improve performance after the migration is complete, in the [Post Go-live Phase](/help/journey-migration/monitor-and-improve.md).
 
