@@ -53,21 +53,7 @@ With this tool, you can specify the desired content subset that you want to tran
 
 Content Migration is a multi-step process that requires planning, tracking, and collaboration between different teams. 
 
-<!--- The following diagram lays out the ideal path to be followed for a successful content migration. 
-
-![](/help/journey-migration/assets/contenttransferoverview.png) -->
-
-<!-- Alexandru: looks to be redundant, given that it's already covered in the CTT docs.
-
->[!NOTE]
->It is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service. -->
-
 For a complete detail on how the tool works and how we recommend you use it, see the [Content Transfer Tool documentation](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
-
-<!-- Alexandru: looks to be redundant, given that it's already covered in the CTT docs. 
-
->[!IMPORTANT]
->Minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you will need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool. -->
 
 ## Code Refactoring {#code-refactor}
 
@@ -115,12 +101,6 @@ Adobe provides several tools to help accelerate some of your code refactoring ta
 * [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=en), a tool that takes an AEM Multimode project as input and converts it into an AEM as a Cloud Service one
 * [Index Converter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=en), a tool that converts indexes into a form compatible with AEM as a Cloud Service
 * [Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md), a suite of utilities which can be used to convert legacy AEM features to the modern and supported capabilities of AEM as a Cloud Service.
-
-<!-- ### Test and Refactor Your Code Locally {#refactor-your-code-locally}
-
-It is recommended to refactor and test the code locally before pushing it to a Cloud Service environment via Git with Cloud Manager. 
-
-You can start by learning how to [set up a local development environment](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html). -->
 
 Once you have set up the local development environment, get familiar with the AEM as a Cloud Service SDK by consulting the [documentation](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
