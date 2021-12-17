@@ -80,8 +80,13 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Assign Team Members to AEM as a Cloud Service Product Profiles](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
     + [Learning Path for Developers and Deployment Managers](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
     + [Learning Path for AEM Users](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
-+ Moving to AEMaaCS {#moving}
-  + [Moving to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
++ AEM as a Cloud Service Migration Journey {#migration-journey}
+  + [Getting Started with Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md)
+  + [Readiness Phase](/help/journey-migration/readiness.md)
+  + [Implementation Phase](/help/journey-migration/implementation.md)
+  + [Go-Live](/help/journey-migration/go-live.md)
+  + [Post Go-Live](/help/journey-migration/post-go-live.md)
+  + [Getting Started for Partners](/help/journey-migration/getting-started-partners.md)
   + Release Notes for Migration Tools {#release-notes-migration-tools}
     + [Current Release Notes (2021.12.0)](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
     + 2021 {#2021}
