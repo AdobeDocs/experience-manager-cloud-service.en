@@ -8,14 +8,14 @@ In this phase of the AEM as a Cloud Service Migration Journey, you will familiar
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the journey, [Getting Started with Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md), you learned what are the benefits of moving to AEM as a Cloud Service, as well as an overview of the steps needed to do so.
+The previous document, [Getting Started with Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md), outlines a list of phases you need to undergo in order to migrate to AEM as a Cloud Service, as well as the benefits of doing so.
 
 ## Objective {#objective}
 
-This document helps you understand what factors you need to take into account in order to make sure your AEM installation is ready to be moved to the cloud:
+This document helps you understand what factors you must consider in order to make sure that your AEM installation is ready to be moved to the cloud:
 
 * Learn about notable changes and deprecated features
-* Understand how to plan for the the migration to AEM as a Cloud Service
+* Understand how to plan for the migration to AEM as a Cloud Service
 
 <!-- Alexandru: to review if this is still needed
 
@@ -37,7 +37,7 @@ We recommend you review these changes by consulting the [Notable Changes in AEM 
 
 AEM as a Cloud Service brings many new features and possibilities for managing your AEM projects.
 
-Along with these improvements, a number of differences have been introduced between on-premise installations of AEM and Adobe Managed Services, compared to AEM as a Cloud Service.
+Along with these improvements, several differences have been introduced between on-premise installations of AEM and Adobe Managed Services, compared to AEM as a Cloud Service.
 
 The list of items in the below table is the subset of the changes most relevant for a migration to AEM as a Cloud Service. You can consult the full list of notable changes [here](/help/release-notes/aem-cloud-changes.md).
 
@@ -68,27 +68,27 @@ The list of items in the below table is the subset of the changes most relevant 
   <tr>
     <td>Cloud Manager Pipeline Execution is the only way to deploy</td>
     <td></td>
-    <td>In AEM as a Cloud Service, there is no access to /system/console, hence all OSGi configurations must be part of code and should be deployed as code.<br>The OSGi configurations are available in read only mode for viewing through Developer Console through Cloud Manager</td>
+    <td>In AEM as a Cloud Service, access to /system/console is not permitted, hence all OSGi configurations must be part of code, and should be deployed as code.<br>The OSGi configurations are available in read-only mode for viewing through Developer Console through Cloud Manager</td>
   </tr>
   <tr>
     <td>Replication Agents are replaced by Sling Content Distribution</td>
     <td></td>
-    <td>The concept of replication agent is replaced by Sing Content Distribution. Therefore, if there are customizations leveraging replication agents, they must be redesigned.<br>Reverse replication is not supported</td>
+    <td>The concept of the replication agent is replaced by Sing Content Distribution. If there are customizations leveraging replication agents, they must be redesigned.<br>Reverse replication is not supported</td>
   </tr>
   <tr>
     <td>CRX/DE and Package Manager</td>
     <td></td>
-    <td>CRX/DE is allowed only on the Development environment.<br>Package Manger is accessible on all author instances but the packages that are going to be deployed must contain only mutable content ( for example: /content or /conf)</td>
+    <td>CRX/DE is allowed only on the Development environment.<br>Package Manager is accessible on all author instances but the packages that are going to be deployed must contain only mutable content ( for example: /content or /conf)</td>
   </tr>
   <tr>
     <td>Built in CDN and Get your own CDN</td>
     <td></td>
-    <td>AEM as a Cloud Service includes the CDN for all environments which is optimized for most use cases.<br>If you wish to set up your own CDN you must submit a request to Adobe for it to be approved.<br>If it is approved, the CDN will point to Fastly and not to AEM instances in any environments.</td>
+    <td>AEM as a Cloud Service includes the CDN for all environments which is optimized for most use cases.<br>If you wish to set up your own CDN, you must submit a request to Adobe Support for it to be approved.<br>If it is approved, the CDN will point to Fastly and not to AEM instances in any environments.</td>
   </tr>
   <tr>
     <td>Long Running Jobs</td>
     <td></td>
-    <td>Avoid executing long running Jobs such as Sling Schedulers or Cron jobs, as the AEM instances executing in the containers can come and go at any point of time.<br>Rethink these functionalities to offload them to Adobe IO.</td>
+    <td>Avoid executing long running Jobs such as Sling Schedulers or Cron jobs, as the AEM instances executing in the containers can come and go at any point of time.<br>Rethink these functionalities to offload them to Adobe I/O.</td>
   </tr>
   <tr>
     <td>Switch to Asynchronous Operations</td>
@@ -96,9 +96,9 @@ The list of items in the below table is the subset of the changes most relevant 
     <td>To improve the overall performance of your environments, certain operations are executed in async mode. The async jobs will be queued and executed when system resources are available.</td>
   </tr>
   <tr>
-    <td>Token based authentication and integration strategies</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#the-server-to-server-flow">Generating Access Tokens for Server side APIs</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication">Token based Authentication Tutorial</a></td>
-    <td>It is quite common that systems external to AEM are trying to perform HTTP operations within AEM.<br>The recommended approach is to implement the strategies outlined here rather than relying on creating local usernames with passwords in AEM.</td>
+    <td>Token-based authentication and integration strategies</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#the-server-to-server-flow">Generating Access Tokens for Server-side APIs</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication">Token-based Authentication Tutorial</a></td>
+    <td>It is common that systems external to AEM are trying to perform HTTP operations within AEM.<br>The recommended approach is to implement the strategies outlined here rather than relying on creating local usernames with passwords in AEM.</td>
   </tr>
   <tr>
     <td>File IO / Disk Usage</td>
@@ -112,13 +112,13 @@ The list of items in the below table is the subset of the changes most relevant 
   </tr>
   <tr>
     <td>Asset upload methods and supported workflow process steps in AEM as a Cloud Service</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/developer-reference-material-apis.html?lang=en#post-processing-workflows-steps">Upload API Comparions and Supported WF Process Steps</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/developer-reference-material-apis.html?lang=en#post-processing-workflows-steps">Upload API Comparisons and Supported WF Process Steps</a></td>
     <td>In AEM as a Cloud Service, either during upload or download of an asset the asset streams directly in or out of binary storage.</br>Not all workflow process steps are supported in AEMaaCS.</td>
   </tr>
   <tr>
     <td>Workflow Launchers</td>
     <td></td>
-    <td>Remove any Workflow Launchers that are triggering either OOTB or custom DAM Update Asset Workflow from your code.</br>All the assets uploaded into AEM as a Cloud Service are going to be processed by the Asset Processing Service.There is a Workflow post processing OSGi configuration which can be used to trigger additional custom processing steps.</td>
+    <td>Remove any Workflow Launchers that are triggering either OOTB or custom DAM Update Asset Workflow from your code.</br>All the assets uploaded into AEM as a Cloud Service are going to be processed by the Asset Processing Service. There is a Workflow post processing OSGi configuration which can be used to trigger additional custom processing steps.</td>
   </tr>
   <tr>
     <td>Custom Rendition Steps</td>
@@ -143,7 +143,7 @@ The list of items in the below table is the subset of the changes most relevant 
   <tr>
     <td>Dispatcher Configurations and Caching</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=en#content-delivery">Dispatcher in the Cloud</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html?lang=en#other-content">Cache Management<br></td>
-    <td>The dispatcher configurations must follow a specific structure.<br>The configurations must be managed as part of code and deployed through the Cloud Manager pipeline.</td>
+    <td>The Dispatcher configurations must follow a specific structure.<br>The configurations must be managed as part of code and deployed through the Cloud Manager pipeline.</td>
   </tr>
   <tr>
     <td>Backup and Restore</td>
@@ -187,7 +187,7 @@ The first step is to assess your readiness to move from your existing AEM versio
 
 You will need to undertake a comprehensive assessment of your current AEM source code against the notable changes and deprecated features to determine the level of effort expected in the transition journey.
 
-The number of findings will directly influence the timelines and overall project success. Therefore, it is recommended to uncover as much as possible to plan the delivery or to initiate the conversations needed to redesign any customizations required to be in line with AEM as a Cloud Service best practices.
+The number of findings will directly influence the timelines and overall project success. Therefore, it is recommended to uncover as much as possible to plan the delivery or to initiate the conversations needed to redesign any customizations required to be in line with AEM as a Cloud Service best practice.
 
 **Best Practice Analyzer**
 
@@ -197,12 +197,12 @@ You can read up on how it works by consulting the [Best Practices Analyzer](/hel
 
 **Create a Cloud Readiness Assessment Report**
 
-The next step is creating a report based on all the knowledge gained thus far. You can do this by generating Best Practices Analyzer reports from the Stage and Production instances, [then uploading them into Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#readiness-phase-cam) for a digestable report of actionable items.
+The next step is creating a report based on all the knowledge gained thus far. You can do this by generating Best Practices Analyzer reports from the Stage and Production instances, [then uploading them into Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#readiness-phase-cam) for a digestible report of actionable items.
 
 A typical report should contain these inputs:
 
-* Documentation detailing the featureset of your particular AEM installation
-* Details on your the AEM custom configurations and code
+* Documentation detailing the feature set of your particular AEM installation
+* Details on your AEM custom configurations and code
 * Production Dispatcher configurations
 * CDN Configurations (if there are any)
 
@@ -212,7 +212,7 @@ After the Best Practices Analyzer reports are complete, share them with the rele
 
 ### Reviewing Resource Planning {#review-resource-planning}
 
-Once you have estimated the level of effort that will be required to move to Cloud Service, you should identify resources, create a team, and map out roles and responsibilities for the transition process.
+Once you have estimated the level of effort that is required to move to Cloud Service, you should identify resources, create a team, and map out roles and responsibilities for the transition process.
 
 ### Establishing KPIs {#establish-kpis}
 
