@@ -30,7 +30,7 @@ The migration journey to Cloud Service involves the following phases:
 
 The figure below shows a pictorial representation of the recommended transition journey to AEM as a Cloud Service.
 
-![image](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
+![image](/help/journey-migration/assets/move-aemcloud-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 

@@ -23,26 +23,26 @@ Follow the steps below to extract your migration set from the Content Transfer T
 
 1. Select a migration set from **Content Transfer** wizard and click **Extract** to start extraction. 
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-01.png) 
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-01.png) 
 
 1. The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.  
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-02.png) 
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-02.png) 
 
    >[!NOTE]
    >You have the option to overwrite staging container during the extraction phase.
 
    >[!IMPORTANT]
    >If the User Mapping has not been run on this migration set prior to extracting content from source, you will see a warning displaying that User Mapping step is pending, as shown in the figure below. Click on **Map Users** to run the User Mapping tool.
-   >![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/user-mapping-extract.png) 
+   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/user-mapping-extract.png) 
   
 1. The **Extraction** field now displays the **RUNNING** status to indicate that the extraction is in-progress.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-03.png) 
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-03.png) 
 
    Once the extraction is complete, the status of the migration set updates to **FINISHED** and a *solid green* cloud icon displays under the **INFO** field.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-04.png) 
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-04.png) 
 
    >[!IMPORTANT]
    >The UI has an auto-reload feature that reloads the **Content Transfer** wizard every 30 seconds.
@@ -62,15 +62,15 @@ Follow the steps below:
 
 1. Navigate to the **Content Transfer** wizard and select the migration set for which you want to perform the top-up extraction. Click **Extract** to start the top-up extraction. 
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-05.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-05.png)
 
 1. The **Migration Set extraction** dialog box displays. Click on **Extract**.
 
    >[!IMPORTANT]
    >You should disable the **Overwrite staging container during extraction** option.
-   >![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-06.png)
+   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-06.png)
 
 
 ## What's Next {#whats-next}
 
-Once you have learned Extracting Content from Source in Content Transfer Tool, you are now ready to learn the Ingestion Process in Content Transfer Tool. See [Ingesting Content into Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) to learn how to ingest your migration set from the Content Transfer Tool.
+Once you have learned Extracting Content from Source in Content Transfer Tool, you are now ready to learn the Ingestion Process in Content Transfer Tool. See [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) to learn how to ingest your migration set from the Content Transfer Tool.
