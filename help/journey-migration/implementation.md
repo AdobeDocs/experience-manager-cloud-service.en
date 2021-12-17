@@ -235,10 +235,10 @@ The following section shows the important steps and associated tasks that can be
 * Includes either 25% of the content or up to 1 TB of content, whichever is less.
 * Execute at least one full and [top-up](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) migration, from the production clone into the AEM as a Cloud Service non-production environment
 * Resolve any potential issues like:
-  * Disc space on the AEM source
+  * Disk space on the AEM source
   * Connectivity between the AEM source and AEM as a Cloud Service
   * Any [ingestion related limitations](/help/journey-migration/go-live.md#known-limitations)
-Record the time taken for [extraction and ingestion](#gathering-data):
+* Record the time taken for [extraction and ingestion](#gathering-data):
 * Know how much content is added per week
 * Extrapolate the times measured from the proof of migration to create a [migration plan](#migration-plan)
 
