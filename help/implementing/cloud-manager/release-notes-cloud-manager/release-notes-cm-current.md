@@ -25,7 +25,7 @@ The release date for Cloud Manager in AEM as a Cloud Service 2021.12.0 is 16 Dec
 * A user with the Deployment Manager role can now initiate the Project/Branch creation wizard for a repository with no branches from the action menu on the repositories page.
 * The Deployment Manager, who is in the add or edit pipeline workflow, is now informed on how to create a branch or project if the selected repository has no branches.
 * A new Cloud Manager self-service feature was added to allow [adding free-form variables and secrets at the environment level.](/help/implementing/cloud-manager/environment-variables.md)
-* With the new Reference Demos Add-On (available on 17 December 2021), the latest demo code bases for AEM products can be installed and be ready to be deployed via the new [quick site creation tool](/help/journey-sites/quick-site/overview.md) in Sites.
+* With the new [Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) (available on 17 December 2021), the latest demo code bases for AEM products can be installed and be ready to be deployed via the new [quick site creation tool](/help/journey-sites/quick-site/overview.md) in Sites.
 * Front-end pipelines now support pipeline variables.
 * Screens can now be enabled in the Program Edit dialog for all sandboxes.
 * The guidance provided by the call-to-action card in the overview page has been refreshed to accurately reflect its association with the production full stack pipeline.
