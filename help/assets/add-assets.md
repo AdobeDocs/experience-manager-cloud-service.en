@@ -146,9 +146,9 @@ To configure the Bulk Import tool, follow these steps:
 
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**. Select the **[!UICONTROL Create]** option.
 
-1. Specify a title for the bulk import configuration.
+1. Specify a title for the bulk import configuration in the **[!UICONTROL Title]** field.
 
-1. Selectthe data source type. 
+1. Select the data source type from the **[!UICONTROL Import Source]** dropdown list. 
 
 1. Provide the values to create a connection with the data source. For example, if you select **Azure Blob Storage** as the data source, specify the values for Azure storage account, Azure blob container, and Azure access key.
 
@@ -168,7 +168,7 @@ To configure the Bulk Import tool, follow these steps:
 
 1. Specify a path to define a location in DAM where assets are to be imported using the **[!UICONTROL Assets Target Folder]** field. For example, `/content/dam/imported_assets`.
 
-1. (Optional) Specify the metadata file to import, provided in CSV format. Specify the CSV file in the source blob location and refer to the path while configuring Bulk Ingestor tool. The CSV file format referenced in this field is same as that of the CSV file format when you [Import and export asset metadata in bulk](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). If you select the **Delete source file after import** option, filter CSV files either using the **Exclude** or **Include MIME Type** or **Filter by Path/File** fields. You can use a regular expression to filter CSV files in these fields.
+1. (Optional) Specify the metadata file to import, provided in CSV format, in the **[!UICONTROL Metadata File]** field. Specify the CSV file in the source blob location and refer to the path while configuring Bulk Import tool. The CSV file format referenced in this field is same as that of the CSV file format when you [Import and export asset metadata in bulk](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). If you select the **Delete source file after import** option, filter CSV files either using the **Exclude** or **Include MIME Type** or **Filter by Path/File** fields. You can use a regular expression to filter CSV files in these fields.
 
 1. Click **[!UICONTROL Save]** to save the configuration.
 
