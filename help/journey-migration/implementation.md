@@ -130,7 +130,7 @@ Preparing the source system for migration involves system and AEM administrator 
 
 System administrator level access is required to install and configure [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
 
-It is also recommended you review any unused Assets, Pages, AEM Projects, Users and Groups to save time on migration. See the [Content Repository Health](#repository-sanity) section.
+It is also recommended you review any unused Assets, Pages, AEM Projects, Users and Groups to save time on migration. See the [Content Repository Health](#repository-health) section.
 
 ### Content Repository Health {#repository-health}
 
@@ -140,7 +140,7 @@ Once access to a [production clone](#proof-of-migration) is established proceed 
 |---------|----------|
 Users, Groups and Permissions | You need to understand the volume of users, groups, and complexity around memberships. Look for opportunities to clean up any unused users, groups in the source before migration.
 Incomplete Asset processing | Try to complete the processing of assets in the source system before starting the migration to avoid potential concerns in AEM as a Cloud Service post migration. |
-Content Sanity | It is recommended to query for bad content and purge it before you start the migration. For example, look for assets or pages that do not have original renditions or that are stuck in workflow processing. Also see [Asset Health](/help/journey-migration/go-live.md#asset-health). |
+Content Health | It is recommended to query for bad content and purge it before you start the migration. For example, look for assets or pages that do not have original renditions or that are stuck in workflow processing. Also see [Asset Health](/help/journey-migration/go-live.md#asset-health). |
 
 ## Gathering Data {#gathering-data}
 
