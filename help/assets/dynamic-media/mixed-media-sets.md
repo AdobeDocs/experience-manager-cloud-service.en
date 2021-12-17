@@ -25,6 +25,8 @@ To get you up and running quickly with Mixed Media Sets, follow these steps:
 
    Start by uploading the images and videos for your Mixed Media Sets. If necessary, create your [Image Sets](/help/assets/dynamic-media/image-sets.md) and [Spin Sets](/help/assets/dynamic-media/spin-sets.md). Because users can zoom on images in the Mixed Media Set Viewer, be sure you account for zooming when you choose images. Make sure that the images are least 2000 pixels in the largest size.
 
+   See [Dynamic Media - Supported raster image formats](/help/assets/file-format-support.md#image-support-dynamic-media) for a list of formats supported by Mixed Media Sets.
+
 1. [Create Mixed Media Sets](#creating-mixed-media-sets).
 
    To create a Mixed Media Set, from the Assets page, go to **[!UICONTROL Create]** > **[!UICONTROL Mixed Media Set]** and then name the set, choose the assets, and choose the order the images appear.
@@ -66,6 +68,8 @@ If necessary, you can edit [Mixed Media Sets](#editing-mixed-media-sets). In add
 Start by uploading the images and videos for your Mixed Media Sets. Remember that users can zoom on images in the Mixed Media Set Viewer. As such, choose images with this zoom ability in mind. Make sure that the images are least 2000 pixels in the largest size.
 
 In addition, if you want to add spin sets or image sets to the mixed media set, create them as well.
+
+See [Dynamic Media - Supported raster image formats](/help/assets/file-format-support.md#image-support-dynamic-media) for a list of formats supported by Mixed Media Sets.
 
 ## Create Mixed Media Sets {#creating-mixed-media-sets}
 
