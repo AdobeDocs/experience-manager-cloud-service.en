@@ -1,6 +1,7 @@
 ---
 title: Adobe Experience Manager as a Cloud Service Connectors
 description: Adobe Experience Manager as a Cloud Service Connectors self-help resources and documentation links
+landing-page-description: Learn how to integrate Connectors into AEM as a Cloud Service.
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 ---
 # Implementing Connectors for Experience Manager as a Cloud Service {#aem-connectors-guide}
@@ -17,14 +18,13 @@ This page lists the self-help resources about Connectors for Experience Manager 
 
 |User Guide|Description|
 |---|---|
-|[Experience Manager as a Cloud Service Home](/help/landing/home.md)|For an overview of the Experience Manager as a Cloud Service documentation, start here.|
 |[Overview](/help/overview/home.md)|This guide provides an introductory overview of Experience Manager as a Cloud service, including an introduction, terminology, architecture, etc.|
 |[Release Notes](/help/release-notes/home.md)|This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what is new, deprecated and removed features, and known issues.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
 |[Onboarding](/help/onboarding/home.md)|This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.|
 |[Assets User Guide](/help/assets/home.md)|Understand how to use and administer Experience Manager Assets as a Cloud Service.|
-|[Moving to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)|Understand the transition journey to Cloud Service.|
+|[Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md)|Understand the transition journey to Cloud Service.|
 |[Implementing User Guide](/help/implementing/home.md)|Understand how to build and customize experiences using AEM's powerful features by exploring these development and deployment topics.|
 |[Headless Developer Journey](/help/journey-headless/developer/overview.md)|Explore this guided journey through the powerful and flexible headless features of AEM to prepare for your first headless project.|
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks.|
