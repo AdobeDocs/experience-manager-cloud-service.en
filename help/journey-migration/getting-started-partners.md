@@ -164,7 +164,7 @@ Cloud Manager enables organizations to self-manage Experience Manager in the Clo
   1. [Deploy to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=en#managing-code) git
   2. Run customer code through the [Cloud Manager Quality Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use)
   3. [Deploy to Development Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=en#debugging)
-  4. [**Migration only**] Content transfer using packages or [Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool.md)(CTT)
+  4. [**Migration only**] Content transfer using packages or [Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)(CTT)
   5. Perform recommended testing cycles (smoke, QA and more)
   6. Promote to the Cloud Manager Production Pipeline 
   7. Smoke test validation
