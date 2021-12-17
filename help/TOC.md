@@ -27,6 +27,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2021 {#2021}
+      + [Release Notes for 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
       + [Release Notes for 2021.9.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md) 
       + [Release Notes for 2021.8.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md) 
       + [Release Notes for 2021.7.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-7-0.md)
@@ -80,60 +81,62 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Assign Team Members to AEM as a Cloud Service Product Profiles](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
     + [Learning Path for Developers and Deployment Managers](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
     + [Learning Path for AEM Users](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+  + [AEM Reference Demos Add-On Journey] {#demo-add-on}
+    + [Overview](/help/journey-sites/demos-add-on/overview.md)
+    + [Installation](/help/journey-sites/demos-add-on/installation.md)
+    + [Create Program](/help/journey-sites/demos-add-on/create-program.md)
+    + [Create Demo Site](/help/journey-sites/demos-add-on/create-site.md)
+    + [Manage Your Demo Site](/help/journey-sites/demos-add-on/manage.md)
 + AEM as a Cloud Service Migration Journey {#migration-journey}
-  + [Getting Started with Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md)
-  + [Readiness Phase](/help/journey-migration/readiness.md)
-  + [Implementation Phase](/help/journey-migration/implementation.md)
-  + [Go-Live](/help/journey-migration/go-live.md)
-  + [Post Go-Live](/help/journey-migration/post-go-live.md)
-  + [Getting Started for Partners](/help/journey-migration/getting-started-partners.md)
+  + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/home.md)
+  + [Getting Started with moving to AEM as a Cloud Service for partners](/help/journey-migration/getting-started-partners.md)
   + Release Notes for Migration Tools {#release-notes-migration-tools}
-    + [Current Release Notes (2021.12.0)](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
+    + [Current Release Notes (2021.12.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2021 {#2021}
-      + [Release Notes for 2021.11.0](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-11-0.md)
-      + [Release Notes for 2021.10.0](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-10-0.md)
-  + Phases of Transition Journey {#phases}
-    + [Readiness](/help/move-to-cloud-service/migration-readiness.md)
-    + [Implementation](/help/move-to-cloud-service/migration-implementation.md)
-    + [Go Live](/help/move-to-cloud-service/migration-go-live.md)
-    + [Post Go Live](/help/move-to-cloud-service/migration-post-go-live.md)
+      + [Release Notes for 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
+      + [Release Notes for 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
+  + Phases of the Migration Journey {#phases}
+    + [Readiness](/help/journey-migration/readiness.md)
+    + [Implementation](/help/journey-migration/implementation.md)
+    + [Go Live](/help/journey-migration/go-live.md)
+    + [Post Go Live](/help/journey-migration/post-go-live.md)
   + Cloud Acceleration Manager {#cloud-acceleration-manager}
     + Introduction to Cloud Acceleration Manager {#introduction-cam}
-      + [Overview](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
-      + [Benefits](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
+      + [Overview](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
+      + [Benefits](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
     + Using Cloud Acceleration Manager {#using-cam}
-      + [Getting Started with Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
-      + [Readiness Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
-      + [Implementation Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
-      + [Go Live Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
+      + [Getting Started with Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
+      + [Readiness Phase](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
+      + [Implementation Phase](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
+      + [Go Live Phase](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
   + Cloud Transition Tools {#cloud-migration}
     + Best Practices Analyzer {#best-practices-analyzer}
-      + [Overview](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
-      + [Using Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
+      + [Overview](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+      + [Using Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
     + Content Transfer Tool {#content-transfer-tool}
-      + [Overview](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
-      + [Prerequisites for Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
-      + [Guidelines and Best Practices for Using Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
-      + [Getting Started with Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
-      + [Handling Large Content Repositories](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-      + [Extracting Content from Source](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-      + [Ingesting Content into Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-      + [Viewing Logs for a Migration Set](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
-      + [Deleting a Migration Set](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
-      + [Running the Content Transfer Tool on a Publish Instance](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
-      + [Troubleshooting Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
+      + [Overview](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+      + [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+      + [Guidelines and Best Practices for Using Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+      + [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+      + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+      + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+      + [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+      + [Viewing Logs for a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
+      + [Deleting a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
+      + [Running the Content Transfer Tool on a Publish Instance](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
+      + [Troubleshooting Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
       + User Mapping Tool {#user-mapping-tool}
-        + [Overview](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
-        + [Important Considerations](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
-        + [Using User Mapping Tool](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
+        + [Overview](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
+        + [Important Considerations](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
+        + [Using User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
   + Code Refactoring Tools {#refactoring-tools}
-    + [Unified Experience](/help/move-to-cloud-service/unified-experience.md)
-    + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
-    + [Index Converter](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
-    + [Asset Workflow Migration](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
-    + [AEM Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
-    + [AEM Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
-  + [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/move-to-cloud-service/getting-started.md)
+    + [Unified Experience](/help/journey-migration/unified-experience.md)
+    + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
+    + [Index Converter](/help/journey-migration/refactoring-tools/index-converter.md)
+    + [Asset Workflow Migration](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+    + [AEM Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
+    + [AEM Modernization Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
+  + [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/journey-migration/getting-started.md)
 + Sites {#sites}
   + [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
   + [Notable Changes to AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
@@ -291,6 +294,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Reuse assets using MSM](/help/assets/reuse-assets-using-msm.md)
     + [Download assets](/help/assets/download-assets-from-aem.md)
     + [Check-in and check-out assets to edit](/help/assets/check-out-and-submit-assets.md)
+    + [Create and share private folders](/help/assets/private-folder.md)
     + [Digital Rights Management for assets](/help/assets/drm.md)
     + [Watermark assets](/help/assets/watermark-assets.md)
     + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
@@ -430,6 +434,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Reuse metadata properties of an Adaptive Form](/help/forms/reusing-adaptive-forms.md)
     + Improve accessibility of an Adaptive Form {#accessible-adaptive-forms}
       + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
+    + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
   + Integrate a form with one or more data sources {#use-form-data-model}
     + [Configure data sources](/help/forms/configure-data-sources.md)
     + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
@@ -529,8 +534,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
   + Using Cloud Manager {#using-cloud-manager}
     + Release Notes for Cloud Manager {#release-notes-cloud-manager}
-      + [Current Release Notes (2021.11.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
+        + [Release Notes for 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
         + [Release Notes for 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
         + [Release Notes for 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
         + [Release Notes for 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
@@ -576,6 +582,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Integrating Git with Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
       + [Working with Multiple Source Git Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [Enterprise Team Development Setup for AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+    + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md) 
     + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Introduction](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
       + Production Pipelines {#production-pipelines}
@@ -633,6 +640,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
     + [API Reference Materials](/help/implementing/developing/reference-materials.md)
     + [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+    + [Quick Site Creation and Front-End Customization](/help/implementing/developing/introduction/quick-site-creation.md)
+    + [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
     + [Customizing Site Templates and Themes](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
     + [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md)
     + Full Stack AEM Development {#full-stack}
@@ -748,7 +757,19 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
     + [Configuring Segmentation with ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/personalization/contexthub-segmentation.html)
   + Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
-    + [Extending AEM using Adobe Developer App Builder](/help/implementing/developing/extending/app-builder.md)
+    + Extending AEM with App Builder{#app-builder}
+      + [Extending AEM using Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
+      + [Introduction to App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
+      + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
+      + [SDKs and CLI](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
+      + [Create an application](/help/implementing/developing/extending/app-builder/videos/create.md)
+      + [Actions](/help/implementing/developing/extending/app-builder/videos/actions.md)
+      + [Storage libraries](/help/implementing/developing/extending/app-builder/videos/storage-libraries.md)
+      + [Event-driven applications](/help/implementing/developing/extending/app-builder/videos/event-driven-applications.md)
+      + [Front-end applications](/help/implementing/developing/extending/app-builder/videos/front-end-applications.md)
+      + [Security](/help/implementing/developing/extending/app-builder/videos/security.md)
+      + [Deploy applications](/help/implementing/developing/extending/app-builder/videos/deploy.md)
+      + [Publish applications](/help/implementing/developing/extending/app-builder/videos/publish.md)     
     + [Extending Experience Fragments](/help/implementing/developing/extending/experience-fragments.md)
     + [Customizing and Extending Content Fragments](/help/implementing/developing/extending/content-fragments-customizing.md)
     + [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
