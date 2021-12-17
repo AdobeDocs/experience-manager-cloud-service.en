@@ -633,6 +633,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
     + [API Reference Materials](/help/implementing/developing/reference-materials.md)
     + [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+    + [Quick Site Creation and Front-End Customization](/help/implementing/developing/introduction/quick-site-creation.md)
+    + [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
     + [Customizing Site Templates and Themes](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
     + [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md)
     + Full Stack AEM Development {#full-stack}
