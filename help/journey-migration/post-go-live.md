@@ -5,6 +5,13 @@ description: Learn how to monitor for issues and improve performance
 
 # Post Go-Live {#post-go-live}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_troubleshooting"
+>title="Troubleshooting AEM"
+>abstract="Review best practices for continous development and manage logs along with tools like Developer console & CRXDE Lite to help with troubleshooting issues with AEM"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Accessing and Managing Logs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
+
 This is the last part of the journey so you will learn to how to monitor for issues and improve performance once the migration is complete. You should ensure the clean-up of temporary files, review best practices for continuous development and manage logs.
 
 ## The Story So Far {#story-so-far}
@@ -69,11 +76,3 @@ Congratulations! You have completed the AEM as a Cloud Service Migration Journey
 * Make your code and content cloud ready
 * Perform the migration
 * Monitor for issues and improve performance
-
-<!--#>[!CONTEXTUALHELP]
->id="aemcloud_golive_troubleshooting"
->exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
->title="Troubleshooting AEM"
->abstract="Review best practices for continous development and manage logs along with tools like Developer console & CRXDE Lite to help with troubleshooting issues with AEM"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Accessing and Managing Logs"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"-->
