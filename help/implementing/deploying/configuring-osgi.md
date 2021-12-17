@@ -6,6 +6,10 @@ exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 ---
 # Configuring OSGi for Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
+>[!NOTE]
+>
+>AEM has introduced the ability to use the Cloud Manager User Interface to configure standard environment variables with the 2021.12.0 release. For more information, consult the documentation [here](/help/implementing/cloud-manager/environment-variables.md).
+
 [OSGi](https://www.osgi.org/) is a fundamental element in the technology stack of Adobe Experience Manager (AEM). It is used to control the composite bundles of AEM and its configurations.
 
 OSGi provides the standardized primitives that allow applications to be constructed from small, reusable, and collaborative components. These components can be composed into an application and deployed. This allows easy management of OSGi bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component is contained in one of the various bundles. For more information, see the [OSGi specification](https://www.osgi.org/Specifications/HomePage).
