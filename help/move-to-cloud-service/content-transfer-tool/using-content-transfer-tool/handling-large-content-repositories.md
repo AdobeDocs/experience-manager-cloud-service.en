@@ -64,14 +64,14 @@ It is important to determine the total size of the data store for two reasons:
 
 From the container properties page in the Azure portal, use the **Calculate size** button to determine the size of all content in the container. For example:
 
-![image](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
+![image](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
 #### Amazon S3 Data Store {#amazon-data}
 
 You can use the container's Metrics tab to determine the size of all content in the container. For example:
 
 
-![image](/help/move-to-cloud-service/content-transfer-tool/assets/amazon-s3-data-store.png)
+![image](/help/journey-migration/content-transfer-tool/assets/amazon-s3-data-store.png)
 
 #### File Data Store {#file-data-store-determine-size}
  
@@ -238,4 +238,4 @@ For example, azcopy extraction can be disabled with: `mv /mnt/crx/author/crx-qui
 
 ## What's Next {#whats-next}
 
-Once you have learned Handling Large Content Repositories to significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service, you are now ready to learn the Extraction Process in Content Transfer Tool. See [Extracting Content from Source in Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) to learn how to extract your migration set from the Content Transfer Tool.
+Once you have learned Handling Large Content Repositories to significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service, you are now ready to learn the Extraction Process in Content Transfer Tool. See [Extracting Content from Source in Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) to learn how to extract your migration set from the Content Transfer Tool.

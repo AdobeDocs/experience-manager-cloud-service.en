@@ -32,4 +32,4 @@ The following specific cases will be logged:
 
 ### What’s Next {#whats-next}
 
-Once you have learned the important considerations and exceptional cases, you are now ready to use the tool. See [Using User Mapping Tool](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md) for more details.
+Once you have learned the important considerations and exceptional cases, you are now ready to use the tool. See [Using User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md) for more details.

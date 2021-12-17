@@ -15,7 +15,7 @@ The Implementation Phase includes:
 
 Click on your project card to open the project landing page and navigate to the **Implementation** section, as shown in the figure below.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
    >[!NOTE]
    >Refer to [Creating and Managing a Project in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) to learn more.
@@ -29,11 +29,11 @@ Follow this section to explore the Local Development activity card:
 
 1. Click on the **View** button from the **Local Development** card.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-2.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
 1. A content carousel displays the relevant information for this phase of the migration journey.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-3.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## Using Code Refactoring Card {#code-refactoring}
@@ -44,7 +44,7 @@ Follow this section to explore the Code Refactoring activity card:
 
 1. Click on the **Review** button from the **Code Refactoring** activity card.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-4.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
 1. The page displays the list of code refactoring activities organized by the severity level. You can learn more by clicking on the two highlighted icons. 
 
@@ -59,11 +59,11 @@ Follow this section to explore the Code Refactoring activity card:
    
    The **Dispatcher** tab provides information on how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, as well as how to validate and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments.
    
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
    The **Testing** tab provides information on functional, Experience Audit, and UI testing.
    
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
    
 ## Using AEM as a Cloud Service Deployment Card {#aem-as-a-cloud-service-deployment}
@@ -74,11 +74,11 @@ Follow this section to explore AEM as a Cloud Service Deployment Card activity c
 
 1. Click on the **View** button from the **AEM as a Cloud Service Deployment** activity card.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-6.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
 1. A content carousel displays the relevant information for this phase of the migration journey.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
 ## Using Content Transfer Card {#content-transfer}
@@ -89,11 +89,11 @@ Follow this section to explore the Content Transfer activity card:
 
 1. Click on the **View** button from the **Content Transfer** activity card.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-8.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-8.png)
 
 1. A content carousel displays the relevant information for this phase of the migration journey.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >Please review the [prerequisites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) and the [best practices and guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) before using the Content Transfer Tool.

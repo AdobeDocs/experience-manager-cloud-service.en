@@ -88,7 +88,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Create Demo Site](/help/journey-sites/demos-add-on/create-site.md)
     + [Manage Your Demo Site](/help/journey-sites/demos-add-on/manage.md)
 + AEM as a Cloud Service Migration Journey {#migration-journey}
-  + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/home.md)
+  + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/getting-started.md)
   + [Getting Started with moving to AEM as a Cloud Service for partners](/help/journey-migration/getting-started-partners.md)
   + Release Notes for Migration Tools {#release-notes-migration-tools}
     + [Current Release Notes (2021.12.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)

@@ -53,38 +53,38 @@ Follow this section to learn how to view the Best Practices Analyzer report:
 
 1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
 
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
+   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. Click on **Generate Report** to execute the Best Practices Analyzer. 
 
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
+   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 1. While the BPA is generating the report, you can see the progress made by the tool on the screen. It displays the number of items analyzed and also displays the number of findings found. 
 
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
+   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
 
 1. Once the BPA report is generated, it displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. To get more details about a particular finding, you can click on the number that corresponds to the type of finding in the table. 
 
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
+   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
    The above action will automatically scroll to the location of that finding in the report.
 
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
+   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **Export to CSV**, as shown in the figure below.
 
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
+   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
    >You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**. 
    
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
+   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
    
    >[!NOTE]
    >While the report is being regenerated, it displays the progress in terms of percentage completed as shown in the image below.
    
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 
 
@@ -94,14 +94,14 @@ To filter out findings related to [ACS Commons](https://adobe-consulting-service
 
 1. Click on the left rail icon on the left-hand side of the page. This will display the **ACS Commons Filter**. Click on the **ACS Commons Filter** to display the interactive checkbox as shown in the image below.
 
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
+   ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
    
    >[!NOTE]
    > The left rail icon will appear only if the BPA detects usage of ACS Commons.
    
 1. Unselect the box to filter out all findings related to ACS Commons. You should see a **Filtered Finding Count** on the report as shown in the image below. The filter is also applied to the report when it is exported in a comma-separated-value (CSV) format.
 
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
+   ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
    
    >[!NOTE]
    > The ACS Commons findings should not be ignored. Refer to [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) to determine compatibility with AEM as a Cloud Service. 

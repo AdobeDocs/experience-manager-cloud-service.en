@@ -19,11 +19,11 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
 1. Select a migration set from **Content Transfer** page and click **Ingest** to start ingestion. 
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-01.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
 1. The **Migration Set ingestion** dialog box displays. Content can be ingested to either Author instance or Publish instance at a time. Select the instance to ingest content to. Click on **Ingest** to start the ingestion phase. 
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-02.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
 
    >[!IMPORTANT]
    >If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later. 
@@ -31,17 +31,17 @@ Follow the steps below to ingest your migration set from the Content Transfer To
    >[!IMPORTANT]
    >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-03.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
 
    Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-04.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
    
    Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-05.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png)
 
 ## Top Up Ingestion {#top-up-ingestion-process}
 
@@ -54,12 +54,12 @@ Once the ingestion process is complete, you can use delta content, by using the 
 
 1. Navigate to the **Content Transfer** wizard and select the migration set for which you want to perform the top-up ingestion. Click **Ingest** to start the top-up extraction. 
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest1.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/topup-ingest1.png)
 
 
 1. The **Migration Set ingestion** dialog box displays. 
 
-    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest2.png)
+    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/topup-ingest2.png)
 
    >[!IMPORTANT]
    >You should disable the **Wipe existing content on Cloud instance before ingestion** option, to prevent deleting the existing content from the previous ingestion activity. Additionally, click on **Customer Care** to log a ticket, as shown in the preceding figure.
