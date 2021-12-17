@@ -1,7 +1,6 @@
 ---
 title: Prerequisites for Content Transfer Tool
 description: Prerequisites for Content Transfer Tool
-exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
 ---
 # Prerequisites for Content Transfer Tool {#prerequisites}
 
