@@ -44,6 +44,8 @@ The Cloud Manager CLI can also be used, as per the instructions at [https://gith
 
 The variable can be deleted or set back to a different value if you want the environment to be restored to the behavior of the regular (non-prerelease) channel
 
+* Alternatively, you can also configure environment variables from the [Cloud Manager UI](/help/implementing/cloud-manager/environment-variables.md).
+
 ### Local SDK {#local-sdk}
 
 You can see new features in the Sites console in the local Quickstart SDK and code against new APIs in the prerelease by having your maven project reference the prerelease `API Jar` located in Maven Central. You can also see these prerelease features on your local computer by starting the regular Quickstart SDK in prerelease mode:
