@@ -244,4 +244,4 @@ The following section shows the important steps and associated tasks that can be
 
 ## What's Next {#what-is-next}
 
-Once you've fully understood how to assess if your AEM installation is ready to be moved to the cloud, as we as learn how to use the tools needed to make it ready, it's time to move on to the [go-live phase](help/journey-migration/go-live.md).
+Once you've fully understood how to assess if your AEM installation is ready to be moved to the cloud, as we as learn how to use the tools needed to make it ready, it's time to move on to the [go-live phase](/help/journey-migration/go-live.md).
