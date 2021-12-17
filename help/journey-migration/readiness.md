@@ -155,7 +155,7 @@ Once you have accustomed yourself with the changes introduced with AEM as a Clou
 
 The following figure showcases key steps involved during the review phase:
 
-![image](/help/move-to-cloud-service/assets/planning-phaseimg1.png)
+![image](/help/journey-migration/assets/planning-phaseimg1.png)
 
 Next, we will explore what each of these steps means in detail.
 
@@ -171,7 +171,7 @@ The number of findings will directly influence the timelines and overall project
 
 You can accelerate the assessment by running the Best Practices Analyzer against your current AEM version. Having a good understanding of how it works is key to speeding up your assessment planning.
 
-You can read up on how it works by consulting the [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md) documentation.
+You can read up on how it works by consulting the [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) documentation.
 
 **Create a Cloud Readiness Assessment Report**
 

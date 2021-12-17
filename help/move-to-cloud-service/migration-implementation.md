@@ -24,7 +24,7 @@ The exact steps of your transition to Cloud Service depends on the systems you h
 
 The following figure shows the main steps involved in the Execution phase:
 
-![image](/help/move-to-cloud-service/assets/exec-image1.png)
+![image](/help/journey-migration/assets/exec-image1.png)
 
 ## Content Transfer {#content-transfer}
 
@@ -35,7 +35,7 @@ With this tool, you can specify the desired content subset that you want to tran
 >[!NOTE]
 >It is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service.
 
-Refer to [Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) for more details.
+Refer to [Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) for more details.
 
 >[!IMPORTANT]
 >Minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you will need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool.
@@ -58,9 +58,9 @@ From your Planning phase, you should have a list of areas that need to be refact
 
 To help accelerate some of your code refactoring tasks, you can use the following tools: 
 
-* [Asset Workflow Migration](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
-* [Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
-* [Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
+* [Asset Workflow Migration](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+* [Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
+* [Modernization Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 
 It is recommended to refactor and test the code locally before pushing it to a Cloud Service environment via Cloud Manager Git. 
 

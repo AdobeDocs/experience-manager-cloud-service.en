@@ -107,7 +107,7 @@ Compared to the section above the ingestion **does not** fail due to the followi
 * Any asset that has the original rendition missing
 * Any folder that has a missing `jcr:content` node
 
-Both of the above items will be identified and reported in the [Best Practice Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md) report.
+Both of the above items will be identified and reported in the [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) report.
 
 ## Go-Live Checklist {#Go-Live-Checklist}
 

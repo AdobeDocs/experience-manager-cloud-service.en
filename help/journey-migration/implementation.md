@@ -41,7 +41,7 @@ The exact steps of your transition to Cloud Service depend on the systems you ha
 
 The following figure shows the main steps involved in the phase that involves converting your code and content for use with AEM as a Cloud Service:
 
-![image](/help/move-to-cloud-service/assets/exec-image1.png)
+![image](/help/journey-migration/assets/exec-image1.png)
 
 We will start detailing the tools you need to use in order to achieve this in the chapters below.
 
@@ -96,11 +96,11 @@ You can learn more by consulting the [Recommended Package Structure](/help/imple
 
 Adobe provides several tools to help accelerate some of your code refactoring tasks. Understanding these tools and the problems they solve will reduce migration complexity and time.
 
-* [Asset Workflow Migration](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md), a tool that is used to automatically migrate asset processing workflows
-* [Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md), a tool that converts your existing Dispatcher configurations into a format that is ready for AEM as a Cloud Service.
+* [Asset Workflow Migration](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md), a tool that is used to automatically migrate asset processing workflows
+* [Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md), a tool that converts your existing Dispatcher configurations into a format that is ready for AEM as a Cloud Service.
 * [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=en), a tool that takes an AEM Multimode project as input and converts it into an AEM as a Cloud Service one
 * [Index Converter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=en), a tool that converts indexes into a form compatible with AEM as a Cloud Service
-* [Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md), a suite of utilities which can be used to convert legacy AEM features to the modern and supported capabilities of AEM as a Cloud Service.
+* [Modernization Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md), a suite of utilities which can be used to convert legacy AEM features to the modern and supported capabilities of AEM as a Cloud Service.
 
 Once you have set up the local development environment, get familiar with the AEM as a Cloud Service SDK by consulting the [documentation](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
