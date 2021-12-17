@@ -81,7 +81,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Assign Team Members to AEM as a Cloud Service Product Profiles](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
     + [Learning Path for Developers and Deployment Managers](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
     + [Learning Path for AEM Users](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
-  + [AEM Reference Demos Add-On Journey] {#demo-add-on}
+  + AEM Reference Demos Add-On Journey {#demo-add-on}
     + [Overview](/help/journey-sites/demos-add-on/overview.md)
     + [Installation](/help/journey-sites/demos-add-on/installation.md)
     + [Create Program](/help/journey-sites/demos-add-on/create-program.md)
