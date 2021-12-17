@@ -237,7 +237,7 @@ The following section shows the important steps and associated tasks that can be
 * Resolve any potential issues like:
   * Disk space on the AEM source
   * Connectivity between the AEM source and AEM as a Cloud Service
-  * Any [ingestion related limitations](/help/journey-migration/go-live.md#known-limitations).
+  * Any [ingestion related limitations](go-live.md#known-limitations).
 * Record the time taken for [extraction and ingestion](#gathering-data):
   * Know how much content is added per week
   * Extrapolate the times measured from the proof of migration to create a [migration plan](#migration-plan).
