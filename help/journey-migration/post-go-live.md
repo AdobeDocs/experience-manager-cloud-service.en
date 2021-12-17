@@ -16,29 +16,29 @@ In the previous step of the journey, you learned how to perform the migration an
 This document describes the tools that are available to troubleshoot AEM as a Cloud Service environments:
 
 * **Developer Console**
-* **CRX/DE Lite**
+* **CRXDE Lite**
 * **Managing Logs**
 
 ## Developer Console {#developer-console}
 
-Debugging AEM as a Cloud Service developer environments are available in the Developer Console for development, stage, and production environments.
+Debugging AEM as a Cloud Service developer environments is available in the Developer Console for development, stage, and production environments.
 
-Refer to [Implementing for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools) to learn more about development tools.
+Refer to [Implementing for AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) to learn more about development tools.
 
-## CRX/DE Lite {#crxde-lite}
+## CRXDE Lite {#crxde-lite}
 
-As a user, you can access CRX/DE Lite on the development environment but not stage or production. 
+As a user, you can access CRXDE Lite on the development environment but not stage or production. 
   
 >[!IMPORTANT]
->Writing to immutable repositories such as `/libs` and `/apps` at runtime will result in errors. Additionally, as a customer, you will not have access to developer tooling for staging and production environments.
+>Writing to immutable repositories such as `/libs` and `/apps` at runtime results in errors. Additionally, you do not have access to developer tooling for staging and production environments.
 
-Refer to [Developing with CRX/DE Lite](/help/implementing/developing/tools/crxde.md) to learn how to develop your AEM application using CRX/DE Lite.
+Refer to [Developing with CRXDE Lite](/help/implementing/developing/tools/crxde.md) to learn how to develop your AEM application using CRXDE Lite.
 
 ## Managing Logs {#managing-logs}
 
 Users can access a list of available log files for the selected environment.
   
-Refer to [Accessing and Managing Logs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) to learn how to access and manage logs through UI or from API via Cloud Manager.
+Refer to [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) to learn how to access and manage logs through UI or from API via Cloud Manager.
 
 ## Contacting Support {#contacting-support}
 
@@ -52,7 +52,7 @@ If you have questions about access to Cloud Service, contact your Adobe represen
 
 ## Document learnings {#document-learnings}
 
-Once the migration is complete you should document the knowledge gained during this process. Some questions that might help the documentation process are:
+Once the migration is complete, you should document the knowledge gained during this process. Some questions that might help the documentation process are:
 
 * What worked well and what did not?
 * What were the major pain points?
