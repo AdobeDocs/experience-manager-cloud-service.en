@@ -1,7 +1,6 @@
 ---
 title: Overview to Cloud Acceleration Manager
 description: This page provides an overview to Cloud Acceleration Manager.
-exl-id: 7cd3ad2b-dd42-40b4-9bae-f76a2e4c0700
 ---
 # Overview to Cloud Acceleration Manager {#overview-cam}
 

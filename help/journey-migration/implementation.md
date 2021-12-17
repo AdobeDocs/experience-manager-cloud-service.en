@@ -1,7 +1,6 @@
 ---
 title: Implementation Phase
 description: Making sure your code and content are ready for the migration to the cloud
-exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
 ---
 # Implementation Phase {#implementation-phase}
 

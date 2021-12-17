@@ -1,7 +1,6 @@
 ---
 title: Getting Started with Content Transfer Tool
 description: Getting Started with Content Transfer Tool
-exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 ---
 # Getting Started with Content Transfer Tool {#getting-started-content-transfer-tool}
 
