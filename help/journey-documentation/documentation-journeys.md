@@ -87,6 +87,6 @@ There are a number of Documentation Journeys already available to you. Since eac
 |[AEM Onboarding Journey](/help/journey-onboarding/home.md)|Start here to get up-and-running quickly with your new AEM as a Cloud Service environment!|
 |[AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md)|Start here for a guided journey through the simple-to-use AEM Quick Site Creation tool to streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.|
 |AEM Commerce Journey|Coming Soon!|
-|AEMaaCS Migration Journey|Coming Soon!|
+|[AEM as a Cloud Service Migration Journey](/help/journey-migration/getting-started.md)|Start here for a step by step journey on how to migrate from your on-premise or Adobe Managed AEM installation to the fully cloud based AEM as a Cloud Service and get introduced to its many benefits.|
 
 Check back for more content as new journeys become available.
