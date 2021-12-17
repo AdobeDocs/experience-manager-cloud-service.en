@@ -89,7 +89,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Manage Your Demo Site](/help/journey-sites/demos-add-on/manage.md)
 + AEM as a Cloud Service Migration Journey {#migration-journey}
   + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/getting-started.md)
-  + [Getting Started with moving to AEM as a Cloud Service for partners](/help/journey-migration/getting-started-partners.md)
   + Release Notes for Migration Tools {#release-notes-migration-tools}
     + [Current Release Notes (2021.12.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2021 {#2021}
@@ -136,7 +135,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Asset Workflow Migration](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
     + [AEM Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
     + [AEM Modernization Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
-  + [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/journey-migration/getting-started.md)
+  + [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/journey-migration/getting-started-partners.md)
 + Sites {#sites}
   + [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
   + [Notable Changes to AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
