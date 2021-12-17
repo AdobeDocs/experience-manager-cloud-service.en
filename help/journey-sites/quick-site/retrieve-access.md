@@ -7,10 +7,6 @@ description: Learn how the front-end developer uses Cloud Manager to access git 
 
 Learn how the front-end developer uses Cloud Manager to access git repository information.
 
->[!CAUTION]
->
->The Quick Site Creation tool is currently a tech preview. It is made available for testing and evaluation purposes and is not intended for production use unless agreed with Adobe Support.
-
 ## The Story So Far {#story-so-far}
 
 If you are a front-end developer only responsible for the customization of the site theme, you do not need any knowledge of how AEM was set up and can skip to the [Objective](#objective) section of this document.
