@@ -9,10 +9,6 @@ role: Admin
 
 Learn how AEM site themes can be used to customize the style and design of your site.
 
->[!CAUTION]
->
->The Quick Site Creation tool is currently a tech preview. It is made available for testing and evaluation purposes and is not intended for production use unless agreed with Adobe Support.
-
 ## Overview {#overview}
 
 An AEM site theme is a package containing the CSS, JavaScript, and static resources that define the styling of your AEM site and complies with the structure of an AEM site theme.
@@ -49,6 +45,6 @@ Adobe provides a best-practices reference theme that you can use as a basis for 
 
 ## Developing Site Themes {#developing-themes}
 
-Adobe provides and AEM Site Theme Builder as a set of scripts for creating new site themes.
+Adobe provides an AEM Site Theme Builder as a set of scripts for creating new site themes.
 
 [The AEM Site Theme Builder is available along with usage documentation on GitHub.](https://github.com/adobe/aem-site-theme-builder) Front-end development experience is required for customizing the theme.

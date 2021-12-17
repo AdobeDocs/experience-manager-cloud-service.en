@@ -1,6 +1,7 @@
 ---
 title: Move to AEM as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service moving to AEM as a cloud service self-help resources and documentation links
+landing-page-description: Understand the transition journey to Cloud Service.
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
 ---
 # Moving to AEM as a Cloud Service {#aem-moving-to-aem-guide}
@@ -24,7 +25,7 @@ For a successful and smooth transition, you should ensure proper planning and ad
 
 The figure below shows a pictorial representation of the recommended transition journey to AEM as a Cloud Service.
 
-![image](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
+![image](/help/journey-migration/assets/move-aemcloud-process.png)
 
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
@@ -44,7 +45,6 @@ Refer to [Getting Started with Cloud Acceleration Manager](https://experiencelea
 
 |User Guide|Description|
 |---|---|
-|[Experience Manager as a Cloud Service Home](/help/landing/home.md)|For an overview of the Experience Manager as a Cloud Service documentation, start here.|
 |[Overview](/help/overview/home.md)|This guide provides an overview of Experience Manager as a Cloud service, including an introduction, terminology, architecture, etc.|
 |[Release Notes](/help/release-notes/home.md)|This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what is new, deprecated and removed features, and known issues.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|

@@ -199,46 +199,19 @@ Setup and configuration tasks include the following:
 * [Configure color management](#configuring-color-management)
 * [Edit MIME types for supported formats](#editing-mime-types-for-supported-formats)
 * [Add MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats)
-<!-- * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
+<!-- OBSOLETE BUT LEAVE FOR POSSIBLE FUTURE* [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
-<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server}
+#### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server}
 
 The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
 
-See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dynamic-media/dm-publish-settings.md). -->
+See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dynamic-media/dm-publish-settings.md).
 
-#### Publish setup for Image Server {#publishing-setup-for-image-server}
-
-The Publish Setup settings determine how assets are delivered by default from Dynamic Media. If no setting is specified, Dynamic Media delivers an asset according to the default settings defined in Publish Setup. For example, a request to deliver an image that does not include a resolution attribute yields an image with the Default Object Resolution setting.
-
-To configure Publish Setup: in Dynamic Media Classic, go to **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
-
-The Image Server screen establishes default settings for delivering images. See the UI screen for description of each setting.
-
-**[!UICONTROL Request Attributes]** - These settings impose limits on images that can be delivered from the server.
-**[!UICONTROL Default Request Attributes]** - These settings pertain to the default appearance of images.
-**[!UICONTROL Common Thumbnail Attributes]** - These settings pertain to the default appearance of thumbnail images.
-**[!UICONTROL Defaults for Catalog Fields]**- These settings pertain to the resolution and default thumbnail type of images.
-**[!UICONTROL Color Management Attributes]** - These settings determine which ICC color profiles are used.
-**[!UICONTROL Compatibility Attributes]** - This setting enables leading and trailing paragraphs in text layers to be treated as they were in version 3.6 for backwards compatibility.
-**[!UICONTROL Localization Support]** - These settings let you manage multiple locale attributes. It also lets you specify a locale map string so you can define which languages you want to support for the various tooltips in Viewers. For more information about setting up **[!UICONTROL Localization Support]**, see [Considerations when setting up localization of assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
-
-<!-- #### Configure Dynamic Media General Settings {#configuring-application-general-settings}
+#### Configure Dynamic Media General Settings {#configuring-application-general-settings}
 
 Configure the Dynamic Media **[!UICONTROL Publish Server Name]** URL and the **[!UICONTROL Origin Server Name]** URL. You can also specify **[!UICONTROL Upload to Application]** settings and **[!UICONTROL Default Upload Options]** all based on your particular use case.
 
-See [Configure Dynamic Media General Settings](/help/assets/dynamic-media/dm-general-settings.md). -->
-
-#### Configure application general settings {#configuring-application-general-settings}
-
-To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, go to **[!UICONTROL Setup > Application Setup > General Settings]**.
-
-**[!UICONTROL Servers]** - On account provisioning, Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your website and applications. These URL calls are specific to your account. Do not change any of the server names unless explicitly instructed to do so by Experience Manager as a Cloud Service support.
-**[!UICONTROL Overwrite Images]** - Dynamic Media does not allow two files to have the same name. Each item's URL ID (the filename minus the extension) must be unique. These options specify how replacement assets are uploaded: whether they replace the original or become duplicate. Duplicate assets are renamed with a “-1” (for example, chair.tif is renamed chair-1.tif). These options affect assets uploaded to a different folder different from the original or assets with a different file extension from the original.
-**[!UICONTROL Overwrite in current folder, same base image name/extension]** - This option is the strictest rule for replacement. It requires that you upload the replacement image to the same folder as the original, and that it has the same file extension as the original. If these requirements are not met, a duplicate is created. To maintain consistency with Experience Manager as a Cloud Service, always choose **[!UICONTROL Overwrite in current folder, same base image name/extension]**.
-**[!UICONTROL Overwrite in any folder, same base asset name/extension]** - Requires that the replacement image has the same file extension as the original image. For example, chair.jpg must replace chair.jpg, not chair.tif. However, you can upload the replacement image to a different folder than the original. The updated image resides in the new folder; the file can no longer be found in its original location.
-**[!UICONTROL Overwrite in any folder, same base asset name regardless of extension]** - This option is the most inclusive replacement rule. You can upload a replacement image to a different folder than the original, upload a file with a different file extension, and replace the original file. If the original file is in a different folder, the replacement image resides in the new folder to which it was uploaded.
-**[!UICONTROL Default Color Profiles]** - See [Configure Color Management](#configuring-color-management) for additional information. By default, the system shows 15 renditions when you select **[!UICONTROL Renditions]** and 15 viewer presets when you select **[!UICONTROL Viewers]** in the asset's detail view. You can increase this limit. See [Increase or decrease the number of image presets that display](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increase or decrease the number of viewer presets that display](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+See [Configure Dynamic Media General Settings](/help/assets/dynamic-media/dm-general-settings.md).
 
 #### Configure color management {#configuring-color-management}
 
@@ -322,17 +295,17 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
 1. On the page, scroll down to the name *Adobe CQ Scene7 Asset MIME type Service* as seen the following screenshot. To the right of the name, tap the **[!UICONTROL Edit the configuration values]** (pencil icon).
 
-   ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
+   ![Edit the configuration values](assets/2019-08-02_16-44-56.png)
 
 1. On the **Adobe CQ Scene7 Asset MIME type Service** page, select any plus sign icon &lt;+&gt;. The location in the table where you select the plus sign to add the new MIME type is trivial.
 
-   ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
+   ![Adobe CQ Scene7 Asset Mime Type Service](assets/2019-08-02_16-27-27.png)
 
 1. Type `DWG=image/vnd.dwg` in the empty text field that you just added.
 
    The `DWG=image/vnd.dwg` MIME type is for sample purposes only. The MIME type that you add here can be any other unsupported format.
 
-   ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
+   ![Adding DWG mime type](assets/2019-08-02_16-36-36.png)
 
 1. In the lower-right corner of the page, select **[!UICONTROL Save]**.
 
@@ -341,7 +314,7 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 1. Return to the browser tab that has your open Experience Manager as a Cloud Service console.
 1. From Experience Manager as a Cloud Service, go to **[!UICONTROL Tools > General > CRXDE Lite]**.
 
-   ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
+   ![Tools > General > CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
 1. In the left rail, navigate to the following:
 
@@ -349,12 +322,12 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
 1. Drag the MIME type `image_vnd.dwg` and drop it directly above `image_` in the tree as seen in the following screenshot.
 
-   ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
+   ![Editing a DWG file in CRXDE Lite](assets/crxdelite_cqdoc-14627.png)
 
 1. With the MIME type `image_vnd.dwg` still selected, from the **[!UICONTROL Properties]** tab, in the **[!UICONTROL enabled]** row, under the **[!UICONTROL Value]** column header, double-tap the value. The **[!UICONTROL Value]** drop-down list is opened.
 1. Type `false` in the field (or select **[!UICONTROL false]** from the drop-down list).
 
-   ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
+   ![Editing mime types in CRXDE Lite](assets/2019-08-02_16-60-30.png)
 
 1. Near the upper-left corner of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 
@@ -407,7 +380,7 @@ The Granite Workflow queue is used for non-transient workflows. In Dynamic Media
 
    For most use cases, the 0.5 default setting is sufficient.
 
-   ![chlimage_1-1](assets/chlimage_1-1.jpeg)
+   ![Configuration of a job processing queue](assets/chlimage_1-1.jpeg)
 
 1. Select **[!UICONTROL Save]**.
 
@@ -451,7 +424,7 @@ The Dynamic Media Classic (Scene7)) Upload Connection setting synchronizes Exper
 
    For most use cases, the setting of 2100 is sufficient.
 
-   ![chlimage_1-2](assets/chlimage_1-2.jpeg)
+   ![Adobe Scene7 Upload Service](assets/chlimage_1-2.jpeg)
 
 1. Select **[!UICONTROL Save]**.
 
