@@ -32,10 +32,6 @@ Before you can perform the production migration, please follow the fitment and p
   * Author-Author
   * Publish-Publish
 
->[!NOTE]
->
->Aem as a Cloud Service author will be shown during ingestion but AEM as a Cloud Service publish will be up during ingestion.
-
 * Validate the content ingested into both the AEM as a Cloud Service author and publish tiers.
 * Instruct the content authoring team to avoid moving content on both source and destination until the ingestion is complete
 * New content ca be added, edited, or deleted but avoid moving it. This applies both to source and destination.
