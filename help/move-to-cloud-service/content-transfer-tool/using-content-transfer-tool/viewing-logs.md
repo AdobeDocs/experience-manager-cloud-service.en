@@ -22,15 +22,15 @@ Follow the steps below:
 
 1. Navigate to the *Overview* page and select the migration set that you want to delete and click **View Log** from the action bar.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log1.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/view-log1.png)
 
 1. The **Logs** dialog box displays. Click **Extraction Logs** to view the logs in a new tab.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log2.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/view-log2.png)
 Or,
 
    You can also view logs for your migration set from the *Overview* screen. Select the migration set and click the status under **EXTRACTION** field. In this case, click  **FINISHED** to view logs in a new tab.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/view-log3.png)
 
 1. To tail the logs without using the user interface, you can SSH into your source AEM environment and tail the `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.

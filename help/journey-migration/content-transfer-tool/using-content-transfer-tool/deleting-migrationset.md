@@ -13,8 +13,8 @@ Follow the steps below:
 
 1. Navigate to the **Content Transfer** wizard and select the migration set that you want to delete and click **Delete** from the action bar.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/migration-delete1.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
 1. Click **Delete** from **Delete Migration Set** dialog box to confirm the deletion.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/migration-delete2.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
