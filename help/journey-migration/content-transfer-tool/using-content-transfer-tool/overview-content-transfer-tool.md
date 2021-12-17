@@ -1,7 +1,6 @@
 ---
 title: Overview to Content Transfer Tool
 description: Overview to Content Transfer Tool
-exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 ---
 # Overview {#overview-content-transfer-tool}
 

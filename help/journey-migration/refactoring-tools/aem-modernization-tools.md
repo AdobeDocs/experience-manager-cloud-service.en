@@ -1,7 +1,6 @@
 ---
 title: AEM Modernization Tools
 description: AEM Modernization Tools
-exl-id: bc6efab1-cea0-4808-9bd4-495cd871bd75
 ---
 # AEM Modernization Tools {#aem-moderization-tools}
 

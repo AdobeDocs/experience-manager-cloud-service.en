@@ -1,7 +1,6 @@
 ---
 title: Implementation Phase in Cloud Acceleration Manager
 description: This page provides an overview on the implementation phase in Cloud Acceleration Manager.
-exl-id: 4ea13f12-7251-448f-9f54-c8d710aef2ba
 ---
 # Implementation Phase in Cloud Acceleration Manager {#implementation-phase-cam}
 
