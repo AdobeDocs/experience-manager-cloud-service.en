@@ -5,6 +5,11 @@ description: Learn how to perform the migration once the code and the content ar
 
 # Go-Live {#go-live}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_prep"
+>title="Go-Live Preparation"
+>abstract="To ensure a smooth and successful go-live on AEM as a Cloud Service, you should plan for code and content freeze periods, testing iterations, content top-ups, performance tests, security tests and more."
+
 In this part of the journey, you will learn how to plan and perform the migration once both the code and the content are ready to be moved over to AEM as a Cloud Service. Additionally, you will learn what are the best practices and known limitations when performing the migration.
 
 ## The Story So Far {#story-so-far}
@@ -119,18 +124,3 @@ You can always reference the list in case you need to recalibrate your tasks whi
 ## What's Next {#what-is-next}
 
 Once you understand how to perform the migration to AEM as a Cloud Service, you can check the [Post-Go-Live](/help/journey-migration/post-go-live.md) page to keep your instance running smoothly.
-
-<!--# Go Live {#golive-migration}
->exl-id: cf19d29f-3249-49d4-af02-bf68e247a8e9
->[!CONTEXTUALHELP]
->id="aemcloud_golive_prep"
->title="Go-Live Preparation"
->abstract="To ensure a smooth and successful go-live on AEM as a Cloud Service, you should plan for code and content freeze periods, testing iterations, content top-ups, performance tests, security tests and more."
-
-To ensure a smooth and successful go-live on AEM as a Cloud Service, you should consider executing the following steps:
-
-* Schedule code and content freeze period
-* Perform final content top-up
-* Complete testing iterations
-* Run performance and security tests
-* Cut-Over-->
