@@ -35,7 +35,7 @@ This journey lays out the requirements, steps, and approach to create a new prog
 You will explore several topics in this journey. The following articles give you foundational knowledge of creating a new program and setting up and using the AEM Reference Demos Add-On and are intended to be read in-order. They link out to detailed technical documentation as necessary.
 
 |#|Article|Description|
-|---|---|---|--|
+|---|---|---|
 |0|AEM Reference Demos Add-On Journey|This document|
 |1|[Understand Reference Demo Add-On Installation](installation.md)|Learn about Cloud Manager and how it is used to install the add-on.|
 |2|[Create a Program and a Pipeline](create-program.md)|Learn how to set up a new program and pipeline to deploy the add-on.|
