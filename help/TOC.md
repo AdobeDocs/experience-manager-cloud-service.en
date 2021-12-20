@@ -276,7 +276,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Add and upload assets](/help/assets/add-assets.md)
     + [Search assets](/help/assets/search-assets.md)
     + [Common asset management tasks](/help/assets/manage-digital-assets.md)
-    + [Previewing-3d-assets](/help/assets/dynamic-media/previewing-3d-assets.md)
+    + [Preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
     + [Smart tags for images](/help/assets/smart-tags.md)
     + [Smart tag your video assets](/help/assets/smart-tags-video-assets.md)
     + [How to organize assets](/help/assets/organize-assets.md)
