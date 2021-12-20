@@ -341,7 +341,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Optional - Configure Dynamic Media, Publish Setup](/help/assets/dynamic-media/dm-publish-settings.md)
     + [Troubleshoot Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
     + [Accessibility in Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md)
-    + [Managing Dynamic Media assets](/help/assets/dynamic-media/managing-assets.md)
+    + [Manage Dynamic Media assets](/help/assets/dynamic-media/managing-assets.md)
     + [Best practices for optimizing the quality of your images](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
     + [Image Profiles](/help/assets/dynamic-media/image-profiles.md)
     + [Video Profiles](/help/assets/dynamic-media/video-profiles.md)
