@@ -387,7 +387,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Introduction](/help/forms/home.md)
   + [Key features](/help/forms/key-features.md)
   + [Notable changes](/help/forms/notable-changes.md)
-  + [Release notes](/help/forms/release-notes.md)
   + Setup and configure the service {#setup-environment}
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
@@ -444,7 +443,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Use Form Data Model](/help/forms/using-form-data-model.md)
   + [Integrate with Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
   + [Integrate with DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
-  + [Integrate with AEM Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
+  + [Integrate with Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
   + [Integrate with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
   + Create and use workflows {#create-form-centric-workflows}
     + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)
@@ -453,7 +452,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Using Communications {#using-communications}
     + [Introduction](/help/forms/aem-forms-cloud-service-communications-introduction.md)
     + [Communications APIs](/help/forms/aem-forms-cloud-service-communications.md)
-    + [Communications APIs + Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+    + [Communications APIs Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+    + [Using custom fonts](/help/forms/use-custom-fonts.md)
   + [Migrate to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
   + [Frequently asked questions](/help/forms/faq.md)
   + [Known issues](/help/forms/known-issues.md)
