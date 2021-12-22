@@ -6,8 +6,8 @@ feature: App Builder
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner
-kt: 9464,
-thumbnail: 327313.jpg
+kt: 9454, 9470
+thumbnail: 339166.jpg
 ---
 
 # App Builder SDKs and CLI
