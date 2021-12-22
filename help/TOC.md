@@ -453,7 +453,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Introduction](/help/forms/aem-forms-cloud-service-communications-introduction.md)
     + [Communications APIs](/help/forms/aem-forms-cloud-service-communications.md)
     + [Communications APIs Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-    + [Using custom fonts](/help/forms/use-custom-fonts.md)
+    + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
   + [Migrate to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
   + [Frequently asked questions](/help/forms/faq.md)
   + [Known issues](/help/forms/known-issues.md)
