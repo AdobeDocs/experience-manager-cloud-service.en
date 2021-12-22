@@ -28,7 +28,7 @@ Follow the steps below to navigate to Cloud Acceleration Manager (CAM):
 
 1. Click on **Launch** from the **Cloud Acceleration Manager** card to open the landing page.
 
-    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-1.png)
+    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-1.png)
 
 ### Creating and Managing a Project in Cloud Acceleration Manager {#create-project}
 
@@ -44,22 +44,22 @@ Follow the steps below to create a new project:
 
 1. Click on **Create project** from  the landing page.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-2.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-2.png)
 
    >[!NOTE]
    >Users who are using CAM for the very first time will see a dialog box to create a new project. Users who have used CAM in the past will see a default project or previously created projects.
 
 1. Enter the **Name** and **Description** for your project and click on **Create**.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-3.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-3.png)
 
 1. The project is now created and displays on the **Cloud Acceleration Manager** landing page.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing.png)
    
 1. Click on the project card to enter the project. This will take you to the project landing page.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-5.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-5.png)
 
 ## Managing the Project {#manage-project}
 
@@ -71,11 +71,11 @@ Follow the steps below to edit your project:
 
 1. Select the project and hover over the project, and click on the pencil icon to edit the project, as shown in the figure below.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
 1. You can edit the project name, description, and even upload a new image or edit an existing one from **Edit project** dialog box.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-edit.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-edit.png)
 
 1. Click on **Update** to commit your changes.
 
@@ -85,7 +85,7 @@ Follow the steps below to delete your project:
 
 1. Select the project and hover over the project, and click on the bucket icon to delete the project, as shown in the figure below.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
 1. Click on **Delete** to confirm the step.
 
