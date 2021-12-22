@@ -7,10 +7,6 @@ description: Learn about Cloud Manager and how it ties together the new Quick Si
 
 Learn about Cloud Manager and how it ties together the new Quick Site Creation process.
 
->[!CAUTION]
->
->The Quick Site Creation tool is currently a tech preview. It is made available for testing and evaluation purposes and is not intended for production use unless agreed with Adobe Support.
-
 >[!TIP]
 >
 >If your role is exclusively front-end development, you can skip to the article [Retrieve git repository access information](retrieve-access.md) in this journey.
