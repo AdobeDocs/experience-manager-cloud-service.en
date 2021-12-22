@@ -3,9 +3,9 @@ title: Use custom fonts
 description: Use custom fonts 
 ---
 
-**Cloud Service Communications documentation is in beta**
-
 # Use custom fonts
+
+**Cloud Service Communications documentation is in beta**
 
 You can use Forms as a Cloud Service Communications to combine XDP templates, XDP-based PDF documents, or Acrobat Forms (AcroForm) with XML data to generate PDF documents. You can use system fonts (Fonts included in Cloud Service) or custom fonts (organization approved fonts) to render the generated PDF documents.
 
@@ -19,7 +19,7 @@ You can [embed a font](https://adobedocs.github.io/experience-manager-forms-clou
 
 To add custom fonts to your Cloud Service environment:
 
-1. Setup and open the local development project. You can use any IDE of your choice. 
+1. Setup and open the local development project. You can use any IDE of your choice.
 1. At the top-level folder structure of the project, create a folder  to save custom fonts and add custom fonts to the folder. For example, fonts/src/main/resources
 ![Fonts folder](assets/fonts.png)
 
@@ -70,4 +70,5 @@ To add custom fonts to your Cloud Service environment:
 
 
     ```
-1. Check in the updated code and [run the pipeline](/help/implementing/cloud-manager/deploy-code.md) to deploy the fonts to your Cloud Service environment. 
+
+1. Check in the updated code and [run the pipeline](/help/implementing/cloud-manager/deploy-code.md) to deploy the fonts to your Cloud Service environment.
