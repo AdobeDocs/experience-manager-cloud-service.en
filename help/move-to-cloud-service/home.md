@@ -25,7 +25,7 @@ For a successful and smooth transition, you should ensure proper planning and ad
 
 The figure below shows a pictorial representation of the recommended transition journey to AEM as a Cloud Service.
 
-![image](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
+![image](/help/journey-migration/assets/move-aemcloud-process.png)
 
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}

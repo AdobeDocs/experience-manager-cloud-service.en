@@ -28,7 +28,7 @@ This page lists the self-help resources about implementation for Experience Mana
 |[Assets User Guide](/help/assets/home.md)|Understand how to use and administer Experience Manager Assets as a Cloud Service.|
 |[Implementing User Guide](/help/implementing/home.md)|Understand how to build and customize experiences using AEM's powerful features.|
 |[Headless Developer Journey](/help/journey-headless/developer/overview.md)|Explore this guided journey through the powerful and flexible headless features of AEM to prepare for your first headless project.|
-|[Moving to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)|Understand the transition journey to Cloud Service.|
+|[Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md)|Understand the transition journey to Cloud Service.|
 |[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate Connectors into Experience Manager as a Cloud Service.|
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service such as indexing and maintenance tasks.|
 |[Commerce User Guide](/help/commerce-cloud/home.md)|Learn about Commerce Integration Framework on AEM as a Cloud Service.|
