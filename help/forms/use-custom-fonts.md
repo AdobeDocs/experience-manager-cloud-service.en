@@ -11,7 +11,7 @@ System fonts are already available in the Cloud Service. You can use the Cloud S
 
 ## Behavior of PDF Documents
 
-You can [embed a font](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) to a PDF document or simply specify the name of a font. When a font is embed, the PDF document appears (Looks) identical on all platforms. It used embedded font to ensure a consistent look and feel. When a font is not embedded, the PDF rendering client searches for the font on the client machine. If the font is available on the client machine, the PDF uses specified font, else the PDF is rendered with a fallback font.
+You can [embed a font](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) to a PDF document or simply specify the name of a font. When a font is embedded, the PDF document appears (Looks) identical on all platforms. It used embedded font to ensure a consistent look and feel. When a font is not embedded, the PDF rendering client searches for the font on the client machine. If the font is available on the client machine, the PDF uses specified font, else the PDF is rendered with a fallback font.
 
 ## Add custom fonts to your Forms as a Cloud Service environment
 
@@ -21,7 +21,7 @@ To add custom fonts to your Cloud Service environment:
 1. At the top-level folder structure of the project, create a folder  to save custom fonts and add custom fonts to the folder. For example, fonts/src/main/resources
 ![Fonts folder](assets/fonts.png)
 
-1. Open top level pom.xml file of the development project.
+1. Open top-level pom.xml file of the development project.
 1. Add `<Font-Archive-Version>` manifest entry to the .pom file and set value of version to 1:
 
     ``` xml
@@ -68,4 +68,4 @@ To add custom fonts to your Cloud Service environment:
 
 
     ```
-
+1. Check in the updated code and [run the pipeline](/help/implementing/cloud-manager/deploy-code.md) to deploy the fonts to your Cloud Service environment. 
