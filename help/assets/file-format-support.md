@@ -51,7 +51,7 @@ The following legend describes the level of support for each format.
 | File format | Thumbnail generation | Metadata extraction | Width/Height |   Crop   |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
 | BMP         | &#10003;             | -                   | &#10003;     | &#10003; |
-| EPS         | -                    | &#10003;            | -            | -        |
+| EPS         | &#10003;             | &#10003;            | -            | -        |
 | GIF         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 | JPEG        | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 | PNG         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
