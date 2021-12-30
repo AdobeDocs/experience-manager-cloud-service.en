@@ -37,7 +37,9 @@ To get you up and running quickly:
 
 1. [Upload your primary source images for multiple views](#uploading-assets-in-image-sets).
 
-   Upload the images for your Image Sets. Remember that users can zoom on images in the Image Set Viewer. As such, choose your images carefully. Make sure that the images are least 2000 pixels in the largest size. Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
+   Upload the images for your Image Sets. Remember that users can zoom on images in the Image Set Viewer. As such, choose your images carefully. Make sure that the images are least 2000 pixels in the largest size.
+
+   See [Dynamic Media - Supported raster image formats](/help/assets/file-format-support.md#image-support-dynamic-media) for a list of formats supported by Image Sets.
 
 1. [Create Image Sets](#creating-image-sets).
 
@@ -80,7 +82,9 @@ If you have issues creating sets, see Images and Sets in [Troubleshoot Dynamic M
 
 Start by uploading the image assets for your Image Sets. Remember that users can zoom on images in the Image Set Viewer. As such, choose your images carefully. Make sure that the images are least 2000 pixels in the largest size for optimal zoom detail. Dynamic Media can render images up to 25 megapixels each. For example, you could use a 5000x5000 megapixel image or any other size combination up to 25 megapixels.
 
-Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
+<!-- Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
+
+See [Dynamic Media - Supported raster image formats](/help/assets/file-format-support.md#image-support-dynamic-media) for a list of formats supported by Image Sets.
 
 You can upload images for Image Sets as you would [upload any other asset in Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
