@@ -82,7 +82,7 @@ On publish tier instances on the other hand, catalog page urls should be kept st
 
 To provide a custom URL format a project can implement etiher the [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) or the [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) service interface and register the implementation as OSGI service. Those implementations, if available, will replace the configured, pre-defined format. If there are multiple implementations registered, the one with the higher service ranking replaces the one(s) with the lower service ranking.
 
-The custom URL format implementations must implement a part of methods to build a URL from given parameters and to parse a URL to return the same parameters respectively. 
+The custom URL format implementations must implement a pair of methods to build a URL from given parameters, and to parse a URL to return the same parameters respectively. 
 
 ## Combine with Sling Mappings {#sling-mapping}
 
