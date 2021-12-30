@@ -57,6 +57,11 @@ Follow the steps below to register your player:
 
    ![image](/help/screens-cloud/assets/player/register-player6.png)
 
+   >[!IMPORTANT]
+   >**Security Best Practices Recommendation while using Registration Code**
+   >As a best practice, you can limit the registration code usage. If a registration code is compromised, but has a limit of 100 registrations, then the attacker can register only up to that number, but not more. You can always update the usage limit after the registration code is created and some of the customer's players have already been registered. If the customer observes unusual registration activity for a specific registration code, they can lower the limit in real-time while they investigate and can increase the number back if it was a false alarm, without impacting the already registered players.
+
+
 ## What's Next {#whats-next}
 
 Now, that you have installed and configured the player to Cloud mode, you should continue your Screens as a Cloud Service journey by next reviewing the document, [Assigning Player to a Display in Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) from Screens Services Provider.

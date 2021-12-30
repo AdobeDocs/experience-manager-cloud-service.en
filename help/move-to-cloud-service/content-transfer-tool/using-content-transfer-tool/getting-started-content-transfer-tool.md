@@ -51,16 +51,16 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
 1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Content Migration**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. Select the **Content Transfer** option from **Content Migration** wizard.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. The console below appears when you create the first migration set. Click on **Create Migration Set** to create a new migration set. 
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt03.png)
    
    >[!NOTE]
    >If you have existing migration sets, the console will display the list of existing migration sets with their current status.
@@ -68,7 +68,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
 1. Populate the fields in **Create Migration Set** screen, as described below.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt04.png)
    
    1. **Name**: Enter the name of the migration set.
       >[!NOTE]
@@ -89,7 +89,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
       1. **Include Version**: Select as required. When versions are included, the path `/var/audit` is automatically included to migrate audit events.
 
-         ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
          >If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
@@ -108,7 +108,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
    All the existing migration sets are displayed on the **Content Transfer** wizard with their current status and status information. You may see some of these icons described below.
 
@@ -118,7 +118,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
 1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ## What's Next {#whats-next}
