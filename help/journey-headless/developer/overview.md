@@ -1,6 +1,7 @@
 ---
 title: AEM Headless Developer Journey
 description: AEM Headless CMS Documentation. Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first development project.
+landing-page-description: Start here for a guided journey through the headless features of AEM, their capabilities, and how to leverage them on your first development project.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 ---
 # AEM Headless Developer Journey {#aem-headless-developer-journey}
@@ -19,11 +20,11 @@ This guide leads you through the most headless implementation topics in AEM so t
 
 ## AEM Documentation Journeys {#documentation-journeys}
 
-[A Documentation Journey](/help/journey-documentation/home.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
+[A Documentation Journey](/help/journey-documentation/documentation-journeys.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
 
 Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
 
-If you want to know how Adobe recommends how to solve headless business cases with AEM, [AEM Headless Journeys](/help/journey-headless/home.md) are where to start.
+If you want to know how Adobe recommends how to solve headless business cases with AEM, [AEM Headless Journeys](/help/journey-documentation/documentation-journeys.md) are where to start.
 
 >[!TIP]
 >
@@ -42,7 +43,7 @@ The following are the personas that interact in this journey.
 |Administrator|Manages the base setup and configuration of AEM|The developer works with the administrator to make configuration changes needed for development.|
 |Content Architect|Analyzes the requirements for the data that must be delivered headlessly and defines the structure for this data|Developers work with the content architect to understand the structure of the data and requirements for delivering it headlessly.|
 
-Information in this journey can of course be useful to all personas, but some information may be superfluous to certain roles. Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/home.md#journeys)
+Information in this journey can of course be useful to all personas, but some information may be superfluous to certain roles. Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## The Headless Developer Journey {#the-journey}
 

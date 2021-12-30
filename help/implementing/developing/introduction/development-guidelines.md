@@ -189,7 +189,7 @@ E-mails in AEM should be sent using the [Day CQ Mail Service OSGi service](https
 
 See the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) for details around configuring email settings. For AEM as a Cloud Service, note the following necessary adjustments to the `com.day.cq.mailer.DefaultMailService OSGI` service:
 
-* The SMTP server host name should be set to $[env:AEM_PROXY_HOST]
+* The SMTP server host name should be set to $[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * The SMTP server port should be set to the value of the original proxy port set in the portForwards parameter used in the API call when configuring up advanced networking. For example, 30465 (rather than 465)
 
 It is also recommended that if port 465 has been requested:
