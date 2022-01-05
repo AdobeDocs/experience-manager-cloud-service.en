@@ -46,6 +46,10 @@ To learn more on this topic, see [Configuring your CI-CD Pipeline](https://exper
 
 Developer and Deployment Managers are now ready to get familiar with how to develop code in AEM as a Cloud Service. Learn more or find more learning paths under the Additional Resources section below. To learn about the learning journey for Content Authors, see [Learning Path for AEM Authors](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
 
+>[!TIP]
+>
+>Now that you are onboarded, you can [learn how to easily add the AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) to a sandbox environment with minimal AEM configuration and be able to test the powerful features of AEM with rich examples based on best-practices.
+
 ## Additional Resources {#additional-resources}
 
 * [Accessing Git and Git account management from Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)

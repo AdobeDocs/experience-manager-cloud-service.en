@@ -27,7 +27,7 @@ There is no additional installation required to use 3D assets in Dynamic Media.
 
 Dynamic Media supports the following 3D file formats.
 
-See also [3D formats supported](/help/assets/file-format-support.md#support-3d-formats)
+See also [3D formats supported in Experience Manager Assets](/help/assets/file-format-support.md#support-3d-formats)
 
 |3D file extension |File format | MIME type |Notes |
 |---|---|---|---|
