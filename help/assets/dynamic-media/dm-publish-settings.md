@@ -7,12 +7,13 @@ topic-tags: administering
 content-type: reference
 feature: Image Profiles
 role: User, Admin
-hide: yes
-hidefromtoc: yes
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
 ---
 # Configure Dynamic Media Publish Setup for Image Server
+
+<!-- hide: yes
+hidefromtoc: yes -->
 
 Configuring Dynamic Media Publish Setup is available only if:
 

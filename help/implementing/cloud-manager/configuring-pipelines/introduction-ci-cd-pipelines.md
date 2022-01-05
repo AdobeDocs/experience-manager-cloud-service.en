@@ -67,7 +67,7 @@ These can be of the type Front End Code Quality or Front End Deployment pipeline
 
 ### Before you Configure Front End Pipelines {#before-start}
 
-Before you start configuring the Front End pipelines, see [AEM Quick Site Creation Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) for an end to end workflow through the easy-to-use AEM Quick Site Creation tool. This documentation site will help you streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
+Before you start configuring the Front End pipelines, see [AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) for an end to end workflow through the easy-to-use AEM Quick Site Creation tool. This documentation site will help you streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
 
 ### Configure a Front End Pipeline {#configure-front-end}
 
@@ -75,6 +75,12 @@ To learn how to configure Front End Pipeline, refer to:
 
 * [Adding a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Adding a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+
+### Developing Sites with the Front-End Pipeline {#developing-with-front-end-pipeline}
+
+With the front-end pipeline, more independence is given to the front-end developers and the development process can gain substantial velocity. 
+
+Refer to [this document](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of in order to get the full potential out of this process.
 
 ## Full Stack Pipelines {#full-stack-pipeline}
 
