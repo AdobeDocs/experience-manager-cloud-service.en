@@ -73,7 +73,7 @@ To import out-of-the-box Forms Portal components on AEM Forms as a Cloud Service
 
 ### Create Azure Storage Configuration {#create-azure-storage-configuration}
 
-Before executing these steps, ensure that you have an Azure] storage account and an access key to authorize access to the [!DNL Azure] storage account.
+Before executing these steps, ensure that you have an Azure storage account and an access key to authorize access to the [!DNL Azure] storage account.
 
 1. Navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Azure Storage]**.
 1. Select a folder to create the configuration and tap **[!UICONTROL Create]**.
