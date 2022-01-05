@@ -126,57 +126,111 @@ To upload larger number of files, use one of the following approaches. Also, see
 * [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Useful for creative professionals and marketers who upload assets from their local file system. Use it to upload nested folders available locally.
 * [Bulk ingestion tool](#asset-bulk-ingestor): Use for ingestion of large amounts of assets either occasionally or initially when deploying [!DNL Experience Manager].
 
-### Asset bulk ingestor tool {#asset-bulk-ingestor}
+### Asset Bulk Import tool {#asset-bulk-ingestor}
 
 The tool is provided only to the administrators group to use for large-scale ingestion of assets from Azure or S3 datastores. See a video walk-through of the configuration and ingestion.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-To configure the tool, follow these steps:
+The following image illustrates the various stages when you ingest assets to Experience Manager from a data store:
+
+![Bulk Ingestion Tool](assets/bulk-ingestion.png)
+
+#### Prerequisites {#prerequisites-bulk-ingestion}
+
+You must have the source blob storage details to connect your Experience Manager instance to a data storage.
+
+#### Configure the Bulk Import tool {#configure-bulk-ingestor-tool} 
+
+To configure the Bulk Import tool, follow these steps:
 
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**. Select the **[!UICONTROL Create]** option.
 
-  ![Configuration of bulk importer](assets/bulk-import-config.png)
+1. Specify a title for the bulk import configuration in the **[!UICONTROL Title]** field.
 
-1. On **[!UICONTROL bulk import configuration]** page, provide the required values and then select **[!UICONTROL Save]**.
+1. Select the data source type from the **[!UICONTROL Import Source]** dropdown list. 
 
-   * [!UICONTROL Title]: A descriptive title.
-   * [!UICONTROL Import Source]: Select the applicable data source.
-   * [!UICONTROL Azure Storage Account]: Provide the name of the [!DNL Azure] storage account.
-   * [!UICONTROL Azure Blob Container]: Provide the [!DNL Azure] storage container.
-   * [!UICONTROL Azure Access Key]: Provide the access key to [!DNL Azure] account.
-   * [!UICONTROL Source Folder]: This filter is typically supported by Azure and AWS cloud storage providers.
-   * [!UICONTROL Filter by Min Size]: Provide minimum file size of assets in MB.
-   * [!UICONTROL Filter by Max Size]: Provide maximum file size of assets in MB.
-   * [!UICONTROL Exclude Mime Types]: Comma-separated list of MIME types to exclude from the ingestion. For example, `image/jpeg, image/.*, video/mp4`. See [all supported file formats](/help/assets/file-format-support.md).
-   * [!UICONTROL Include Mime Types]: Comma-separated list of MIME types to include in the ingestion. See [all supported file formats](/help/assets/file-format-support.md).
-   * [!UICONTROL Delete source file after import]: Select this option to delete the original files from the source data store after the files are imported into [!DNL Experience Manager].
-   * [!UICONTROL Import Mode]: Select Skip, Replace, or Create Version. Skip mode is the default and in this mode the ingestor skips to import an asset if it already exists. See the meaning of [replace and create version options](#handling-upload-existing-file).
-   * [!UICONTROL Assets Target Folder]: Import folder in DAM where assets are to be imported. For example, `/content/dam/imported_assets`
-   * [!UICONTROL Metadata File]: The metadata file to import, provided in CSV format. Specify the CSV file in the source blob location and refer to the path while configuring Bulk Ingestor tool. The CSV file format referenced in this field is same as that of the CSV file format when you [Import and export asset metadata in bulk](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). If you select the **Delete source file after import** option, filter CSV files either using the **Exclude** or **Include MIME Type** or **Filter by Path/File** fields. You can use a regular expression to filter CSV files in these fields.
+1. Provide the values to create a connection with the data source. For example, if you select **Azure Blob Storage** as the data source, specify the values for Azure storage account, Azure blob container, and Azure access key.
 
-1. You can delete, modify, execute and do more with your created ingestor configurations. When you select a bulk import ingestor configuration, the following options are available in the toolbar.
+1. Provide the name of the root folder that contains assets in the data source in the **[!UICONTROL Source Folder]** field.
 
-   * [!UICONTROL Edit]: Edit the selected configuration.
-   * [!UICONTROL Delete]: Delete the selected configuration.
-   * [!UICONTROL Check]: Validate connection to the datastore.
-   * [!UICONTROL Dry Run]: Invoke a test run of the bulk ingestion.
-   * [!UICONTROL Run]: Execute the selected configuration.
-   * [!UICONTROL Stop]: Terminate an active configuration.
-   * [!UICONTROL Schedule]: Set one-time or recurring schedule to ingest assets.
-   * [!UICONTROL Job Status]: View the status of the configuration when it is used in an ongoing import job or used for a completed job.
-   * [!UICONTROL Job History]: Previous instances of the job.
-   * [!UICONTROL View Assets]: View the target folder if it exists.
+1. (Optional) Provide the minimum file size of assets in MB to include them in the ingestion process in the **[!UICONTROL Filter by Min Size]** field.
 
-   ![Toolbar options for ingestor configurations](assets/bulk-ingest-toolbar-options.png)
+1. (Optional) Provide the maximum file size of assets in MB to include them in the ingestion process in the **[!UICONTROL Filter by Max Size]** field.
 
-To schedule a one-time or a recurring bulk import, follow these steps:
+1. (Optional) Specify comma-separated list of MIME types to exclude from the ingestion in the **[!UICONTROL Exclude MIME Types]** field. For example, `image/jpeg, image/.*, video/mp4`. See [all supported file formats](/help/assets/file-format-support.md).
+
+1. Specify comma-separated list of MIME types to include from the ingestion in the **[!UICONTROL Include MIME Types]** field. See [all supported file formats](/help/assets/file-format-support.md).
+
+1. Select the **[!UICONTROL Delete source file after import]** option to delete the original files from the source data store after the files are imported into [!DNL Experience Manager].
+
+1. Select the **[!UICONTROL Import Mode]**. Select **Skip**, **Replace**, or **Create Version**. Skip mode is the default and in this mode the ingestor skips to import an asset if it already exists. See the meaning of [replace and create version options](#handling-upload-existing-file).
+
+1. Specify a path to define a location in DAM where assets are to be imported using the **[!UICONTROL Assets Target Folder]** field. For example, `/content/dam/imported_assets`.
+
+1. (Optional) Specify the metadata file to import, provided in CSV format, in the **[!UICONTROL Metadata File]** field. Specify the CSV file in the source blob location and refer to the path while configuring Bulk Import tool. The CSV file format referenced in this field is same as that of the CSV file format when you [Import and export asset metadata in bulk](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). If you select the **Delete source file after import** option, filter CSV files either using the **Exclude** or **Include MIME Type** or **Filter by Path/File** fields. You can use a regular expression to filter CSV files in these fields.
+
+1. Click **[!UICONTROL Save]** to save the configuration.
+
+#### Manage the Bulk Import tool configuration {#manage-bulk-import-configuration}
+
+After creating the Bulk Import tool configuration, you can perform tasks to evaluate the configuration before bulk ingesting assets to your Experience Manager instance. Select the configuration available at **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]** to view the available options to manage your Bulk Import tool configuration.
+
+##### Edit the configuration {#edit-configuration}
+
+Select the configuration and click **[!UICONTROL Edit]** to modify the configuration details. You cannot edit the title of the configuration and the import data source while performing the edit operation.
+
+##### Delete the configuration {#delete-configuration}
+
+Select the configuration and click **[!UICONTROL Delete]** to delete the Bulk Import configuration.
+
+##### Validate connection to the data source {#validate-connection}
+
+Select the configuration and click **[!UICONTROL check]** to validate the connection to the data source. In case of a successful connection, Experience Manager displays the following message:
+
+![Bulk Import success message](assets/bulk-import-success-message.png)
+
+##### Invoke a test run for the Bulk Import job {#invoke-test-run-bulk-import}
+
+Select the configuration and click **[!UICONTROL Dry Run]** to invoke a test run for the Bulk Import job. Experience Manager displays the following details about the Bulk Import job:
+
+![Dry Run Result](assets/dry-assets-result.png)
+
+##### Schedule a one-time or a recurring bulk import {#schedule-bulk-import}
+
+To schedule a one-time or a recurring bulk import, execute the following steps:
 
 1. Create a bulk import configuration.
 1. Select the configuration and select **[!UICONTROL Schedule]** from the toolbar.
 1. Set a one-time ingestion or schedule an hourly, a daily, or a weekly schedule. Click **[!UICONTROL Submit]**.
 
    ![Schedule bulk ingestor job](assets/bulk-ingest-schedule1.png)
+
+
+##### View the Assets target folder {#view-assets-target-folder}
+
+Select the configuration and click **[!UICONTROL View Assets]** to view the Assets target location where the assets are imported after executing the Bulk Import job.
+
+#### Run the Bulk Import tool {#run-bulk-import-tool}
+
+After [configuring the Bulk Import tool](#configure-bulk-ingestor-tool) and optionally [managing the Bulk Import tool configuration](#manage-bulk-import-configuration), you can run the configuration job to start the bulk ingestion of assets.
+
+Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**, select the [Bulk Import configuration](#configure-bulk-ingestor-tool) and click **[!UICONTROL Run]** to start the Bulk Import process. Click **[!UICONTROL Run]** again to confirm.
+
+Experience Manager updates the status of the job to **Processing** and to **Succeeded** upon successful completion of the job. Click **View Assets** to view the imported assets in Experience Manager.
+
+When the job is in progress, you can also select the configuration and click **Stop** to stop the bulk ingestion process. Click **Run** again to resume the process. You can also click **Dry Run** to know the details of the assets that are still pending import.
+
+#### Manage jobs after execution {#manage-jobs-after-execution}
+
+Experience Manager enables you to see the history of the bulk import jobs. The Job history comprises of the status of the job, job creator, logs, along with other details such as the start date and time, create date and time, and finish date and time.
+
+To access the job history for a configuration, select the configuration and click **[!UICONTROL Job History]**. Select a job and click **Open**.
+
+ ![Schedule bulk ingestor job](assets/job-history-bulk-import.png)
+
+Experience Manager displays the job history. On the Bulk Import job history page, you can also click **Delete** to delete that job for the Bulk Import configuration. 
+
 
 ## Upload assets using desktop clients {#upload-assets-desktop-clients}
 
