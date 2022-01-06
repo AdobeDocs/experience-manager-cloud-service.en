@@ -143,6 +143,11 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>Util Classes related to Apache Xerces are removed in subsequent releases causing a major version change. As these utils are for internal use in Filevault the API is getting deprecated from public API surface.</td>
     <td>9/1/21</td>
     <td>10/30/21</td>
+  <tr>
+    <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
+    <td>Legacy AEM 6.x API.</td>
+    <td>4/8/19</td>
+    <td>09/29/21</td>
   </tr>
 </tbody>
 </table>
