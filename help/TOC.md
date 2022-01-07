@@ -658,7 +658,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Components Overview](/help/implementing/developing/components/overview.md)
         + [Templates](/help/implementing/developing/components/templates.md)
         + [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-        + [Style System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/features/style-system.html)
+        + [Style System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
         + [JSON Exporter for Content Services](/help/implementing/developing/components/json-exporter.md)
         + [Enabling JSON Export for a Component](/help/implementing/developing/components/enabling-json-exporter.md)
         + [Image Editor](/help/implementing/developing/components/image-editor.md)
@@ -718,7 +718,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Authentication for Remote AEM GraphQL Queries on Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)    
     + Hybrid and SPA Development {#hybrid}
       + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-      + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+      + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [SPA Introduction and Walkthrough](/help/implementing/developing/hybrid/introduction.md)
       + [SPA WKND Tutorial](/help/implementing/developing/hybrid/wknd-tutorial.md)
       + [Getting Started using React](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -734,7 +734,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Editing an External SPA within AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
       + [Composite Components in SPAs](/help/implementing/developing/hybrid/composite-components.md)
       + [Server Side Rendering](/help/implementing/developing/hybrid/ssr.md)
-      + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+      + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Launch Integration](/help/implementing/developing/hybrid/launch-integration.md)
       + [SPA Reference Documents](/help/implementing/developing/hybrid/reference-materials.md)
   + Developer Tools {#developer-tools}
@@ -754,7 +754,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [ContextHub Diagnostics](/help/implementing/developing/personalization/contexthub-diagnostics.md)
     + [Extending ContextHub](/help/implementing/developing/personalization/extending-contexthub.md)
     + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
-    + [Configuring Segmentation with ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/personalization/contexthub-segmentation.html)
+    + [Configuring Segmentation with ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
   + Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
     + Extending AEM with App Builder{#app-builder}
       + [Extending AEM using Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
