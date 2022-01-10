@@ -9,7 +9,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 ## Introduction {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->For more information about Dispatcher in the Cloud and how to download Dispatcher Tools see the [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md) page. If your dispatcher configuration is in legacy mode, refer to the [legacy mode documentation](/help/implementing/dispatcher/validation-debug-legacy.md).
+>For more information about Dispatcher in the Cloud and how to download Dispatcher Tools, see the [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md) page. If your dispatcher configuration is in legacy mode, refer to the [legacy mode documentation](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 The following sections describe the flexible mode file structure, local validation, debugging and migrating from legacy mode to the flexible mode.
 
@@ -168,12 +168,12 @@ See [Supported Apache Modules](/help/implementing/dispatcher/disp-overview.md#su
 ## Local validation {#local-validation-flexible-mode}
 
 >[!NOTE]
+>
 >The sections below include commands using either the Mac or Linux versions of the SDK, but the Windows SDK can also be used in a similar way.
 
 Use the `validate.sh` script as shown below:
 
 ```
-
 $ validate.sh src/dispatcher
 opt-in USE_SOURCES_DIRECTLY marker file detected
 Phase 1: Dispatcher validator
@@ -207,7 +207,6 @@ reading immutable file list from /etc/httpd/immutable.files.txt
 
 no immutable file has been changed - check is SUCCESSFUL
 Phase 3 finished
-
 ```
 
 The script has the following three phases:
@@ -325,25 +324,21 @@ Please note that the first phase can also be **run separately**, rather than fro
 When run against your maven artifact or your `dispatcher/src` subdirectory, it will report validation failures:
 
 ```
-
 $ validator full -relaxed dispatcher/src
 Cloud manager validator 1.0.4
 2019/06/19 15:41:37 Apache configuration uses non-allowlisted directives:
   conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
 2019/06/19 15:41:37 Dispatcher configuration validation failed:
   conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
-
 ```
 
 On Windows, the dispatcher validator is case-sensitive. As such, it can fail to validate the configuration if you do not respect the capitalization of the path where your configuration resides, for example:
 
 ```
-
 bin\validator.exe -relaxed full src
 Cloud manager validator 2.0.xx
 2021/03/15 18:15:40 Dispatcher configuration validation failed:
   conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
-  
 ```
 
 Avoid this error by copying and pasting the path from Windows Explorer and then on the command prompt using a `cd` command into that path.
@@ -353,6 +348,7 @@ Avoid this error by copying and pasting the path from Windows Explorer and then 
 This phase checks the apache syntax by starting Docker in an image. Docker must be installed locally, but note that it’s not necessary for AEM to be running.
 
 >[!NOTE]
+>
 >Windows users need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer.
 
 This phase can also be run independently through `bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080`.

@@ -1,5 +1,5 @@
 ---
-title: How to create a Forms Portal on an Experience Manager Sites page?
+title: How to create a Forms Portal on an Experience Manager Sites page
 description: Learn how to create a Forms Portal and use out-of-the-box core components on an AEM Sites page.
 ---
 
@@ -53,22 +53,15 @@ To import out-of-the-box Forms Portal components on AEM Forms as a Cloud Service
 
     Also, change `appTitle`, `appId`, and `groupId`, in the above command to reflect your environment.
 
+1. **In Prerelease, perform the following steps to use the Forms Portal components:**
+    * [Enable the prerelease channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en).
+    * Replace `core-forms-components-*` version with the desired prerelease version (for example, 1.0.4-PRERELEASE-20211223) in your `Cloud Manager/AEM Archetype` project by updating the `<core.forms.components.version>x.y.z</core.forms.components.version>` property in the top-level `pom.xml` of the Archetype project. 
+ 
 1. **Deploy the project to your local development environment:** You can use the following command to deploy to your local development environment
 
     `mvn -PautoInstallPackage clean install`
 
     For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
-
-1. [Include the core component artifacts](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds) and the dependency as follows:
-
-    ```shell
-    <dependency>
-                <groupId>com.adobe.aem</groupId>
-                <artifactId>{TBD}</artifactId>
-                <type>content-package</type>
-                <version>{TBD}</version>
-    </dependency>
-    ```
 
 1. [Deploy the code to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds).
 
@@ -79,7 +72,7 @@ To import out-of-the-box Forms Portal components on AEM Forms as a Cloud Service
 
 ### Create Azure Storage Configuration {#create-azure-storage-configuration}
 
-Before executing these steps, ensure that you have a [!DNL Azure] storage account and an access key to authorize access to the [!DNL Azure] storage account.
+Before executing these steps, ensure that you have an Azure storage account and an access key to authorize access to the [!DNL Azure] storage account.
 
 1. Navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Azure Storage]**.
 1. Select a folder to create the configuration and tap **[!UICONTROL Create]**.
