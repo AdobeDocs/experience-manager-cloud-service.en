@@ -1,9 +1,6 @@
 ---
 title: AEM Headless Content Architect Journey
 description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to model your content on your first headless project.
-index: yes
-hide: no
-hidefromtoc: no
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 ---
 # AEM Headless Content Architect Journey {#aem-headless-content-architect-journey}
