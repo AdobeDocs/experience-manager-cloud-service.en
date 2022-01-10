@@ -332,8 +332,6 @@ Details of your fragment can be seen:
         * **Pinterest board**
     * **References**
         * A list of references
-    * **Social Media Status**
-        * Details of social media variations
 
 ## The Plain HTML Rendition {#the-plain-html-rendition}
 
