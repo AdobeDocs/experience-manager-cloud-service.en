@@ -92,14 +92,22 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. Click the **[!UICONTROL Insights Configuration]** card.
-1. In the wizard, select a data center and provide your credentials including the name of your organization, user name, and Shared Secret.
 
-   ![Configure Adobe Analytics for Assets Insights in [!DNL Experience Manager]](assets/insights_config2.png)
+1. For the Analytics web service access information, go to **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL Company Settings]** > **[!UICONTROL Web Services]** and copy the **[!UICONTROL Shared Secret]** key.
+
+   In the wizard, select the **[!UICONTROL Data Center]**, and provide the display name of the **[!UICONTROL Company]**, Web Services **[!UICONTROL Username]**, and paste the **[!UICONTROL Shared Secret]** key.
+
+   Click **[!UICONTROL Authenticate]**.
+
+   ![Configure Adobe Analytics for Assets Insights in [!DNL Experience Manager]](assets/analytics-insight-config.png)
 
    *Figure: Configure Adobe Analytics for Assets Insights in [!DNL Experience Manager]*
 
-1. Click **[!UICONTROL Authenticate]**. After [!DNL Experience Manager] authenticates your credentials, from the **[!UICONTROL Report Suite]** list, choose an Adobe Analytics report suite from where you want Assets Insights to fetch data. Click **[!UICONTROL Add]**.
+1. On successful authentication, you will get Report Suites listed in the drop-down. Select the Adobe Analytics **[!UICONTROL Report Suite]** from where you want Assets Insights to fetch data. Click **[!UICONTROL Add]**.
+
 1. After [!DNL Experience Manager] sets up your report suite, click **[!UICONTROL Done]**.
+
+For more information, see [Adobe Analytics Web Services](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information). 
 
 ### Page Tracker {#page-tracker}
 
