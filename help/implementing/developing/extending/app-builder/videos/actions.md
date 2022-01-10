@@ -36,6 +36,6 @@ Learn how to create actions that can be used as App Builder applications.
 
 ## Create an action
 
-Learn how to build and run an App Builder application.
+Learn how to create an App Builder action.
 
->[!VIDEO](https://video.tv.adobe.com/v/339171/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339195/?quality=12&learn=on)
