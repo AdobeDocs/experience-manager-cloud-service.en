@@ -121,6 +121,8 @@ It is recommended that the above files reference the immutable files listed belo
 
 Contains a sample virtual host. For your own virtual host, create a copy of this file, customize it, go to `conf.d/enabled_vhosts` and create a symbolic link to your customized copy.
 
+Always ensure that a virtual host is always available that declares ServerAlias "\*.local" or any regex that matches cm-pXXX-eXXX-aem-publish.ns-team-aem-cm-prd-nXXX.svc.cluster.local. 
+
 * `conf.d/dispatcher_vhost.conf`
 
 Part of the base framework, used to illustrate how your virtual hosts and global variables are included.
