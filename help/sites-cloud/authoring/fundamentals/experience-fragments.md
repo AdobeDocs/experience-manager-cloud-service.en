@@ -6,6 +6,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 # Experience Fragments {#experience-fragments}
 
 Within Adobe Experience Manager as a Cloud Service, an Experience Fragment:
+
 * is a group of one or more components
 * includes both content and layout
 * can be referenced within pages
@@ -51,7 +52,6 @@ Experience Fragments should be used:
   * Channel or context-specific variations.
   * Experiences that make sense to group; for example a campaign with different experiences across channels.
 * When you use Omnichannel Commerce.
-  * Sharing commerce-related content on [social media](/help/implementing/developing/extending/experience-fragments.md#social-variations) channels at scale.
   * Making touchpoints transactional.
 
 ## Organizing your Experience Fragments {#organizing-your-experience-fragments}
@@ -144,7 +144,6 @@ To create and configure a folder for your Experience Fragments it is recommended
    >See [Templates for Experience Fragments](/help/implementing/developing/extending/experience-fragments.md#templates-for-experience-fragments) for further details.
 
 1. Select **Save**.
-
 
 ## Creating an Experience Fragment {#creating-an-experience-fragment}
 
