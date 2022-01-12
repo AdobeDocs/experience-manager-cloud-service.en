@@ -42,7 +42,7 @@ For a graphical illustration of this, please refer to the examples below:
 
 * **Ingestion (Wipe)**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets/CTTingesionwipe.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
 
 * **Notes**
 
