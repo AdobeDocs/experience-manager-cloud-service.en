@@ -11,7 +11,7 @@ The Headless Getting Started Guides lay out a simple path for for creating, mana
 1. [Creating a Content Fragment Model](create-content-model.md)
 1. [Creating an Assets Folder](create-assets-folder.md)
 1. [Creating a Content Fragment](create-content-fragment.md)
-1. [Accessing and Delivering Content Fragments](create-api-request.md)
+1. [Accessing and Delivering Content Fragments](graphql-endpoint.md)
 
 >[!TIP]
 >
