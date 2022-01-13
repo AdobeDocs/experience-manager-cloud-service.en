@@ -121,7 +121,7 @@ Now that you have learned about references and structure in Content Fragments, t
     * [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 * Getting Started Guides
-  * [Creating an Assets Folder Headless Quick Start Guide](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+  * [Creating an Assets Folder Headless Quick Start Guide](/help/headless/setup/create-assets-folder.md)
 
 * AEM Headless Content Architect Journey
 
