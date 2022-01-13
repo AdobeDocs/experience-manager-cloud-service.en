@@ -530,14 +530,14 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
 + Headless {#headless}
-  + [Headless Experience Management](/help/implementing/developing/headless/introduction.md)
+  + [Headless Experience Management](/help/headless/introduction.md)
   + Setup {#setup}
-    + [Introduction](/help/implementing/developing/headless/getting-started/introduction.md)
-    + [Creating a Configuration](/help/implementing/developing/headless/getting-started/create-configuration.md)
-    + [Creating a Content Fragment Model](/help/implementing/developing/headless/getting-started/create-content-model.md)
-    + [Creating an Assets Folder](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
-    + [Creating a Content Fragment](/help/implementing/developing/headless/getting-started/create-content-fragment.md)
-    + [Accessing and Delivering Content Fragments](/help/implementing/developing/headless/getting-started/create-api-request.md)
+    + [Introduction](/help/headless/setup/introduction.md)
+    + [Configuration](/help/headless/setup/create-configuration.md)
+    + [Content Fragment Model](/help/headless/setup/create-content-model.md)
+    + [Assets Folder](/help/headless/setup/create-assets-folder.md)
+    + [Content Fragment](/help/headless/setup/create-content-fragment.md)
+    + [GraphQL Endpoint](/help/headless/setup/graphql-endpoint.md)
   + Content Fragments {#content-fragments}
     + [Headless Delivery with Content Fragments and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
     + [Working with Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
