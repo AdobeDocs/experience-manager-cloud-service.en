@@ -95,7 +95,7 @@ Together with the JSON export capabilities of AEM core components, this structur
 
 >[!NOTE]
 >
->See [Headless and AEM](/help/implementing/developing/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
+>See [Headless and AEM](/help/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
 
 >[!NOTE]
 >

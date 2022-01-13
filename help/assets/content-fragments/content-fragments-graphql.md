@@ -11,7 +11,7 @@ With Adobe Experience Manager (AEM) as a Cloud Service, you can use Content Frag
 
 >[!NOTE]
 >
->See [Headless and AEM](/help/implementing/developing/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
+>See [Headless and AEM](/help/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
 
 >[!NOTE]
 >
