@@ -17,7 +17,7 @@ The following release (2021.3.0) will be on March 25, 2021.
 
 ### Headless Content Management {#headless}
 
-* **[GraphQL API for Content Fragment Delivery](/help/assets/content-fragments/graphql-api-content-fragments.md)**: Ability to query Content Fragments using GraphQL syntax, and schemas based on Content Fragment models, for output in JSON format.
+* **[GraphQL API for Content Fragment Delivery](/help/headless/graphql-api/content-fragments.md)**: Ability to query Content Fragments using GraphQL syntax, and schemas based on Content Fragment models, for output in JSON format.
 
 * **[Authentication Support for GraphQL API Requests](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Ability to authenticate GraphQL API requests with access tokens for server-side APIs.
 

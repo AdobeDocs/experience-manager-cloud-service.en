@@ -293,9 +293,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Search facets](/help/assets/search-facets.md)
     + [Assets HTTP API](/help/assets/mac-api-assets.md)
     + [Content Fragments support in Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
-    + [GraphQL API for Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md)
     + [Authentication for Remote GraphQL Queries on Content Fragments](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
-    + [GraphQL API with Content Fragments - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
     + [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
     + [Generate For Placement Only renditions](/help/assets/configure-fpo-renditions.md)
     + [Asset reports](/help/assets/asset-reports.md)
@@ -537,6 +535,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Metadata - Fragment Properties](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
     + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
     + [Preview - JSON Representation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+  + GraphQL API {#graphql-api}
+    + [GraphQL API for Content Fragments](/help/headless/graphql-api/graphql-api-content-fragments.md)
+    + [Sample Queries](/help/headless/graphql-api/sample-queries.md)
   + Headless Journeys {#journeys}
     + Headless Developer Journey {#developer}
       + [Understand Headless in AEM](/help/journey-headless/developer/overview.md)
@@ -570,8 +571,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Learn about defining Metadata and Tagging for Content Fragments](/help/journey-headless/author/metadata-tagging.md)
   + Delivery API {#delivery-api}
     + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
-    + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-    + [AEM GraphQL API with Content Fragments - Sample Content and Queries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
     + [Authentication for Remote AEM GraphQL Queries on Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
 + Implementing {#implementing}
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
