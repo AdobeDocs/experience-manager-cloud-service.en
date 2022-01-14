@@ -536,7 +536,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
     + [Preview - JSON Representation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
   + GraphQL API {#graphql-api}
-    + [GraphQL API for Content Fragments](/help/headless/graphql-api/graphql-api-content-fragments.md)
+    + [GraphQL API for Content Fragments](/help/headless/graphql-api/content-fragments.md)
     + [Sample Queries](/help/headless/graphql-api/sample-queries.md)
   + Headless Journeys {#journeys}
     + Headless Developer Journey {#developer}
