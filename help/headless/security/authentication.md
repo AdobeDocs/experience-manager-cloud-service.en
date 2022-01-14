@@ -10,7 +10,7 @@ A primary use case for The [Adobe Experience Manager as a Cloud Service (AEM) Gr
 
 >[!NOTE]
 >
->For testing and development you can also access the AEM GraphQL API directly using the [GraphiQL interface](/help/headless/graphql-api/content-fragments.md#graphiql-interface) interface.
+>For testing and development you can also access the AEM GraphQL API directly using the [GraphiQL interface](/help/headless/graphql-api/graphiql-ide.md) interface.
 
 For authentication the third party service needs to [retrieve an Access Token](#retrieving-access-token), that can then be [used in the GraphQL Request](#use-access-token-in-graphql-request).
 
