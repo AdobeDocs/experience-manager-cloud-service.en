@@ -54,7 +54,7 @@ For a graphical illustration of this, please refer to the examples below:
 
   ![image](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
 
-* **Ingetsion**
+* **Ingestion**
 
   ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
 
