@@ -18,7 +18,7 @@ With Adobe Experience Manager (AEM) as a Cloud Service, you can use Content Frag
 >GraphQL is currently used in two (separate) scenarios in Adobe Experience Manager (AEM) as a Cloud Service:
 >
 >* [AEM Commerce consumes data from a commerce platform via GraphQL](/help/commerce-cloud/integrating/magento.md).
->* [AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications](/help/assets/content-fragments/graphql-api-content-fragments.md).
+>* [AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications](/help/headless/graphql-api/content-fragments.md).
 
 ## Headless CMS {#headless-cms}
 
@@ -46,7 +46,7 @@ The [AEM GraphQL API](#aem-graphql-api) allows you to perform (complex) queries 
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-For Adobe Experience as a Cloud Experience, a customized implementation of the standard GraphQL API has been developed. See [AEM GraphQL API for use with Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md) for details. 
+For Adobe Experience as a Cloud Experience, a customized implementation of the standard GraphQL API has been developed. See [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md) for details. 
 
 The AEM GraphQL API implementation is based on the [GraphQL Java libraries](https://graphql.org/code/#java).
 
@@ -98,7 +98,7 @@ To help with designing and developing your Content Fragment Models, you can prev
 
 ## Learning to use GraphQL with AEM - Sample Content and Queries {#learn-graphql-with-aem-sample-content-queries}
 
-See [Learning to use GraphQL with AEM - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md) for an introduction to using the AEM GraphQL API.
+See [Learning to use GraphQL with AEM - Sample Content and Queries](/help/headless/graphql-api/sample-queries.md) for an introduction to using the AEM GraphQL API.
 
 ## Tutorial - Getting Started with AEM Headless and GraphQL
 
