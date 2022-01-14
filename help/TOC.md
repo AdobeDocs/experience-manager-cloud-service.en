@@ -147,12 +147,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Configuring your account environment](/help/sites-cloud/authoring/getting-started/account-environment.md)
       + [Your Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)
       + [Keyboard Shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-    + Headless Content Author Journey {#headless-journey}
-      + [AEM Headless Content Author Journey - Overview](/help/journey-headless/author/overview.md)
-      + [Authoring for Headless with AEM - An Introduction](/help/journey-headless/author/introduction.md)
-      + [Authoring Basics for Headless with AEM](/help/journey-headless/author/basics.md)
-      + [Learn about using references in Content Fragments](/help/journey-headless/author/references.md)
-      + [Learn about defining Metadata and Tagging for Content Fragments](/help/journey-headless/author/metadata-tagging.md)
+    + [Headless Content Author Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
     + Authoring Fundamentals {#fundamentals}
       + [Environment and Tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
       + [Adding Page Annotations](/help/sites-cloud/authoring/fundamentals/annotations.md)
@@ -242,14 +237,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
           + [Configure translation rules](/help/journey-sites/translation/translation-rules.md)
           + [Translate content](/help/journey-sites/translation/translate-content.md)
           + [Publish translated content](/help/journey-sites/translation/publish-content.md)
-        + Headless Translation Journey {#headless}
-          + [Understand headless translation in AEM](/help/journey-headless/translation/overview.md)
-          + [Get started with AEM headless translation](/help/journey-headless/translation/getting-started.md)
-          + [Learn about headless content and how to translate in AEM](/help/journey-headless/translation/learn-about.md)
-          + [Configure translation connector](/help/journey-headless/translation/configure-connector.md)
-          + [Configure translation rules](/help/journey-headless/translation/translation-rules.md)
-          + [Translate content](/help/journey-headless/translation/translate-content.md)
-          + [Publish translated content](/help/journey-headless/translation/publish-content.md)
+        + [Headless Translation Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
         + [Translating Content for Multilingual Sites](/help/sites-cloud/administering/translation/overview.md)
         + [Preparing Content for Translation](/help/sites-cloud/administering/translation/preparation.md)
         + [Managing Translation Projects](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -561,11 +549,25 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [How to put it all together](/help/journey-headless/developer/put-it-all-together.md)
       + [How to go live with your headless application](/help/journey-headless/developer/go-live.md)
       + [Optional - How to create single page applications with AEM](/help/journey-headless/developer/create-spa.md)
-    + AEM Headless Content Architect Journey {#architect}
+    + Headless Content Architect Journey {#architect}
       + [AEM Headless Content Architect Journey Overview](/help/journey-headless/architect/overview.md)
       + [Content Modeling for Headless with AEM - An Introduction](/help/journey-headless/architect/introduction.md)
       + [Learn the Content Modeling Basics for Headless with AEM](/help/journey-headless/architect/basics.md)
       + [Learn about Creating Content Fragment Models in AEM](/help/journey-headless/architect/model-structure.md)
+    + Headless Translation Journey {#translation}
+      + [Understand headless translation in AEM](/help/journey-headless/translation/overview.md)
+      + [Get started with AEM headless translation](/help/journey-headless/translation/getting-started.md)
+      + [Learn about headless content and how to translate in AEM](/help/journey-headless/translation/learn-about.md)
+      + [Configure translation connector](/help/journey-headless/translation/configure-connector.md)
+      + [Configure translation rules](/help/journey-headless/translation/translation-rules.md)
+      + [Translate content](/help/journey-headless/translation/translate-content.md)
+      + [Publish translated content](/help/journey-headless/translation/publish-content.md)
+    + Headless Content Author Journey {#author}
+      + [AEM Headless Content Author Journey - Overview](/help/journey-headless/author/overview.md)
+      + [Authoring for Headless with AEM - An Introduction](/help/journey-headless/author/introduction.md)
+      + [Authoring Basics for Headless with AEM](/help/journey-headless/author/basics.md)
+      + [Learn about using references in Content Fragments](/help/journey-headless/author/references.md)
+      + [Learn about defining Metadata and Tagging for Content Fragments](/help/journey-headless/author/metadata-tagging.md)
   + Delivery API {#delivery-api}
     + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
     + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
