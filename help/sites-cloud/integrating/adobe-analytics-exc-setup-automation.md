@@ -21,7 +21,7 @@ This video explores how an AEM site is integrated with Experience Platform Launc
 
 ## Requirements
 
-The automation setup is designed to work out of the box with an AEM Site built using [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) with the [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) enabled. You can generate a new project that has these features enabled automatically using the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). 
+The automation setup is designed to work out of the box with an AEM Site built using [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) with the [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) enabled. You can generate a new site that has these features enabled automatically using the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) or by creating a site using a [Site template](/help/journey-sites/quick-site/create-site.md).
 
 ## How to Setup
 
