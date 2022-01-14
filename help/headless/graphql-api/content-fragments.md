@@ -895,7 +895,7 @@ For example, to grant access for requests with the Referrer `my.domain` you can:
 
 ## Authentication {#authentication}
 
-See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/assets/content-fragments/graphql-authentication-content-fragments.md).
+See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/headless/security/authentication.md).
 
 <!-- to be addressed later -->
 

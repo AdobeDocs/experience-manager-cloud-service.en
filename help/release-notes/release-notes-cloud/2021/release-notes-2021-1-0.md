@@ -19,7 +19,7 @@ The following release (2021.2.0) will be on February 25, 2021.
 
 * **[GraphQL API for Content Fragment Delivery](/help/headless/graphql-api/content-fragments.md)**: Ability to query Content Fragments using GraphQL syntax, and schemas based on Content Fragment models, for output in JSON format. 
 
-* **[Authentication Support for GraphQL API Requests](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Ability to authenticate GraphQL API requests with access tokens for server-side APIs. 
+* **[Authentication Support for GraphQL API Requests](/help/headless/security/authentication.md)**: Ability to authenticate GraphQL API requests with access tokens for server-side APIs. 
 
 * Enhanced JSON output from GraphQL API, including ability to output rich text in JSON format and locales. 
 
