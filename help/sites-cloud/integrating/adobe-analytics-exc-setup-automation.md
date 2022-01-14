@@ -7,7 +7,7 @@ role: Admin
 
 # Integrate Adobe Analytics with Experience Cloud Setup Automation {#integrate-adobe-analytics-automation-setup}
 
-> [!CAUTION]
+>[!CAUTION]
 >
 > This functionality is currently in internal beta. Target release is in Q1 2022.
 
@@ -61,6 +61,6 @@ Next, navigate to Adobe Analytics to view the data flowing in from events on the
 1. Select the **Report Suite ID** that matches the Report Suite name used in the previous exercise.
 1. View analytics data flow into the new template over time.
 
-    > [!NOTE]
+    >[!NOTE]
     >
     > With a new integration, it may take a few hours before the report is populated with data.
