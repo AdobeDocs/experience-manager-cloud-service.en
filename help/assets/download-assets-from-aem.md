@@ -27,7 +27,14 @@ You can download Experience Manager assets using the following methods:
 
 ## Download assets using [!DNL Experience Manager] interface {#download-assets}
 
-Asynchronous download service provides a framework for seamless download of large-sized assets. Smaller files are downloaded from the user interface in real-time. [!DNL Experience Manager] does not archive single asset downloads where the original file is downloaded. This functionality allows for faster downloads. The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
+Asynchronous download service provides a framework for seamless download of large-sized assets. Smaller files are downloaded from the user interface in real-time. [!DNL Experience Manager] does not archive single asset downloads where the original file is downloaded. This functionality allows for faster downloads. 
+
+By default, Experience Manager triggers a notification upon completion of the download workflow. The download notification appears in the  [[!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
+
+![Inbox notification](assets/inbox-notification-for-large-downloads.png)
+
+<!--
+The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![Download notification](assets/download-notification.png)
 
@@ -37,6 +44,28 @@ Asynchronous downloads are triggered in either of the following case:
 
 * If there are more than 10 assets or more than 100 MB to be downloaded.
 * If the download takes more than 30 seconds to prepare.
+-->
+
+### Enable email notification for large downloads {#enable-emails-for-large-downloads}
+
+Asynchronous downloads are triggered in any of the following case:
+
+* If there are more than 10 assets 
+* If the download size is more than 100 MB
+* If the download takes more than 30 seconds to prepare
+
+While the aycnhronous download runs at the backend, the user can continue to explore and work further in Experience Manager. An out-of-the-box mechanism is required to notify the user upon completion of the download process. To achieve this objective, the administrators can configure email service by setting up an SMTP server. See [configure Mail Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+
+Once the email service is configured, the administrators and users can enable email notifications from the Experience Manager interface. 
+
+To enable email notifications:
+
+1. Log in to [!DNL Experience Manager Assets].
+1. Click the user icon from the upper-right corner and then click **[!UICONTROL My Preferences]**. The User Preferences window opens.
+1. Select the **[!UICONTROL Asset Download email notifications]** check box and click **[!UICONTROL Accept]**.
+
+   ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
+
 
 To download assets, follow these steps:
 
@@ -44,8 +73,6 @@ To download assets, follow these steps:
 1. Navigate to the assets you want to download. Select the folder or select one or more assets within the folder. On the toolbar, click **[!UICONTROL Download]**.
 
    ![Available options when downloading assets from [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
-
-   *Figure: Download dialog box options.*
 
 1. In the download dialog box, select the download options that you want.
 
@@ -60,13 +87,23 @@ To download assets, follow these steps:
 
 1. In the dialog box, click **[!UICONTROL Download]**.
 
+   If email notification is enabled for large downloads, an email containing a download URL of the archived zip folder appears in your inbox. Click on the download link from the email to download the zip folder.
+
+   ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
+
+   You can also view the notification in your [!DNL Experience Manager] Inbox.
+
+   ![inbox-notifications-for-large-downloads](/help/assets/assets/inbox-notification-for-large-downloads.png)
+
 ## Download assets shared using link sharing {#link-share-download}
 
+<!--
 >[!NOTE]
 >
 >This functionality is available in the Experience Manager prerelease channel.
+-->
 
-Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
+Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. See [Link Share functionality](/help/assets/share-assets.md#sharelink). 
 
 When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
 
