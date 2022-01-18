@@ -1,7 +1,7 @@
 ---
 title: Download assets
 description: Download assets from [!DNL Adobe Experience Manager Assets] and enable or disable the download functionality.
-contentOwner: AG
+contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
@@ -46,7 +46,7 @@ Asynchronous downloads are triggered in either of the following case:
 * If the download takes more than 30 seconds to prepare.
 -->
 
-### Enable email notification for large downloads {#enable-emails-for-large-downloads}
+### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
 
 Asynchronous downloads are triggered in any of the following case:
 
