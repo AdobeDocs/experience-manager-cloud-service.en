@@ -3,9 +3,9 @@ title: An introduction to Forms as a Cloud Service Communications
 description: Automatically merge data with XDP and PDF templates or generate output in PCL, ZPL, and PostScript formats
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 ---
-# Use AEM Forms as a Cloud Service * Communications {#frequently-asked-questions}
+# Use AEM Forms as a Cloud Service Communications {#frequently-asked-questions}
 
-**AEM Forms as a Cloud Service * Communications feature is in beta.**
+**AEM Forms as a Cloud Service Communications feature is in beta.**
 
 Communications capability helps you to create brand-oriented, personalized, and standardized documents such as business correspondences, statements, claim processing letters, benefit notices, monthly bills, or welcome kits. 
 
@@ -262,7 +262,7 @@ Communications APIs start with the default XCI file (or the modified file). Then
 The following table specifies XCI options.
 
 | XCI option                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| ------------------------------------* | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------* |
+| ------------------------------------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | config/present/pdf/creator            | Identifies the document creator using the Creator entry in the Document Information dictionary. For information about this dictionary, see the PDF Reference guide.                                                                                                                                                                                                                                                                                                                                         |
 | config/present/pdf/producer           | Identifies the document producer using the Producer entry in the Document Information dictionary. For information about this dictionary, see the PDF Reference guide.                                                                                                                                                                                                                                                                                                                                       |
 | config/present/layout                 | Controls whether the output is a single panel or paginated.                                                                                                                                                                                                                                                                                                                                                                                                                                                 |

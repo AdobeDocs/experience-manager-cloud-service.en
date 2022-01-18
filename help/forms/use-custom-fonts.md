@@ -7,13 +7,11 @@ description: Use custom fonts
 
 **Cloud Service Communications documentation is in beta**
 
-You can use Forms as a Cloud Service Communications to combine XDP templates, XDP-based PDF documents, or Acrobat Forms (AcroForm) with XML data to generate PDF documents. You can use system fonts (Fonts included in Cloud Service) or custom fonts (organization approved fonts) to render the generated PDF documents.
-
-System fonts are already available in the Cloud Service. You can use the Cloud Service development project to add custom fonts to your Cloud Service environment.
+You can use Forms as a Cloud Service Communications to combine an XDP template, XDP-based PDF document, or Acrobat Form (AcroForm) with XML data to generate PDF documents. You can use fonts included in Cloud Service or custom fonts (organization approved fonts) to render the generated PDF documents. You can use the Cloud Service development project to add custom fonts to your Cloud Service environment.
 
 ## Behavior of PDF Documents
 
-You can [embed a font](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) to a PDF document or simply specify the name of a font. When a font is embedded, the PDF document appears (Looks) identical on all platforms. It used embedded font to ensure a consistent look and feel. When a font is not embedded, the PDF rendering client searches for the font on the client machine. If the font is available on the client machine, the PDF uses specified font, else the PDF is rendered with a fallback font.
+You can [embed a font](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) to a PDF document. When a font is embedded, the PDF document appears (Looks) identical on all platforms. It used embedded font to ensure a consistent look and feel. When a font is not embedded, the font rendering depends on rendering settings of PDF viewer client. If the font is available on the client machine, the PDF uses specified font, else the PDF is rendered with a fallback font.
 
 ## Add custom fonts to your Forms as a Cloud Service environment
 
