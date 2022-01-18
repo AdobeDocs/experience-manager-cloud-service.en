@@ -1,6 +1,6 @@
 ---
 title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2022.01.0
-description: These are the release notes for Cloud Manager in AEM as a Cloud Service release 2021.01.0.
+description: These are the release notes for Cloud Manager in AEM as a Cloud Service release 2022.01.0.
 feature: Release Information
 ---
 
@@ -10,7 +10,7 @@ This page outlines the release notes for Cloud Manager in AEM as a Cloud Service
 
 >[!NOTE]
 >
->Refer to [this page](/help/release-notes/release-notes-cloud/release-notes-current.md) for the current Release Notes for Adobe Experience Manager as a Cloud Service.
+>Refer to [this page](/help/release-notes/release-notes-cloud/release-notes-current.md) for the current release notes for Adobe Experience Manager as a Cloud Service.
 
 ## Release Date {#release-date}
 
@@ -23,7 +23,7 @@ The release date for Cloud Manager in AEM as a Cloud Service 2022.01.0 is 20 Jan
 
 ## Bug Fixes {#bug-fixes}
 
-* Null pointer exceptions encountered by some front end pipeline deployments have been corrected.
+* Null pointer exceptions encountered by some front-end pipeline deployments have been corrected.
 * Environment variables can now be added, updated, and deleted when an environment is running an outdated version of AEM.
 * The build image step will no longer be marked as ERROR for pipelines that used the scheduled step in certain rare cases.
 
