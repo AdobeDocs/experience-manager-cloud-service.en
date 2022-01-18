@@ -10,13 +10,13 @@ This page outlines the release notes for Cloud Manager in AEM as a Cloud Service
 
 >[!NOTE]
 >
->Refer to [this page](/help/release-notes/release-notes-cloud/release-notes-current.md) for the current Release Notes for Adobe Experience Manager as a Cloud Service.
+>Refer to [this page](/help/release-notes/release-notes-cloud/release-notes-current.md) for the current release notes for Adobe Experience Manager as a Cloud Service.
 
 ## Release Date {#release-date}
 
 The release date for Cloud Manager in AEM as a Cloud Service 2021.12.0 is 16 December 2021. The next release is planned for January 2022.
 
-### What's New {#what-is-new}
+## What's New {#what-is-new}
 
 * The commit hash, which is already visible in the UI, is now also provided in the API.
 * The Activity page now includes a pop-over for running pipelines that provides a summary of pipeline details at-a-glance.
@@ -36,7 +36,7 @@ The release date for Cloud Manager in AEM as a Cloud Service 2021.12.0 is 16 Dec
 * The version of the AEM Project Archetype used by Cloud Manager has been updated to version 32.
 
 
-### Bug Fixes {#bug-fixes}
+## Bug Fixes {#bug-fixes}
 
 * Functional and UI test artifacts were not included in the build step log.
 * The logs for the product, functional, and UI test steps were not accessible through the public API.
