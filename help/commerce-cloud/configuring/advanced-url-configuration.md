@@ -92,10 +92,10 @@ Since it is possible to encode category information in a product URL, products t
 
 In the default configuration the default URL formats will select one of the possible alternatives using the following scheme:
 
-- if the `url_path` is defined by the e-commerce backend use it (deprecated)
-- from the `url_rewrites` use those URLs that end with the product's `url_key` as alternatives
-- form these alternatives use the one with the most path segments
-- if there are multiple, take the first one in the order given by the e-commerce backend
+* if the `url_path` is defined by the e-commerce backend use it (deprecated)
+* from the `url_rewrites` use those URLs that end with the product's `url_key` as alternatives
+* form these alternatives use the one with the most path segments
+* if there are multiple, take the first one in the order given by the e-commerce backend
 
 This scheme will select the `url_path` that has the most ancestors, based on the assumption that a child category is more specific than it's parent category. The so selected `url_path` is considered _canonical_ and will, always be used for the canonical link on product pages or in the product sitemap.
 
@@ -103,8 +103,8 @@ However, when a shopper navigates from a category page to a product page, or fro
 
 This feature must be enalbed in the _CIF URL Provider configuration_. If enabled the selection will score alternatives higher, when
 
-- they match parts of a given category `url_paths` from the beginning (fuzzy prefix matching)
-- or they match a given category `url_key` anywhere (exact partial matching)
+* they match parts of a given category `url_paths` from the beginning (fuzzy prefix matching)
+* or they match a given category `url_key` anywhere (exact partial matching)
 
 For example, consider the response for a [products query](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) below. Given the user is on the "New Prodcuts / New in Summer 2022" category page and the store is using the default category page URL format, the alternative "new-products/new-in-summer-2022/gold-cirque-earrings.html" would match 2 of the context's path segments from the beginning: "new-products" and "new-in-summer-2022". If the store would be using a category page URL format that only contains the `url_key`, the same alternative would still be selected as it matches the context's `url_key` anywhere. In both cases the product page URL would be created for the "new-products/new-in-summer-2022/gold-cirque-earrings.html" `url_path`.
 
