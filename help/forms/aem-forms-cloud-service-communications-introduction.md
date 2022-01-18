@@ -28,7 +28,7 @@ Communications utilizes [PDF and XFA templates](#supported-document-types) with 
 
 A Communications API helps combine a template (XFA or PDF) with customer data ([XML data](#form-data)) to generate documents in PDF and Print Formats like PS, PCL, DPL, IPL, and ZPL formats.
 
-Typically, you create a template using Designer and use Communications APIs to merge data with the template. Your application can send the output document to a network printer, a local printer, or to a storage system for archival. A typical out of the box and custom workflows look like the following:
+Typically, you create a template using [Designer](use-forms-designer.md) and use Communications APIs to merge data with the template. Your application can send the output document to a network printer, a local printer, or to a storage system for archival. A typical out of the box and custom workflows look like the following:
 
 ![Communications Workflow](assets/communicaions-workflow.png)
 
@@ -38,13 +38,13 @@ Depending on the use case, you can also make these documents available for downl
 
 Communications provide HTTP APIs for on-demand and batch document generation:
 
-* **Synchronous APIs** are suitable for on-demand, low latency, and single record document generation scenarios. These APIs are more suitable for user-action based use cases. For example, generating a document after a user completes filling a form.
+* **[Synchronous APIs](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** are suitable for on-demand, low latency, and single record document generation scenarios. These APIs are more suitable for user-action based use cases. For example, generating a document after a user completes filling a form.
 
-* **Batch APIs (Asynchronous APIs)** are suitable for scheduled, high throughput, and multiple document generation scenarios. These APIs generate documents in batches. For example, phone bills, credit card statements, and benefits statements generated every month.
+* **[Batch APIs (Asynchronous APIs)](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** are suitable for scheduled, high throughput, and multiple document generation scenarios. These APIs generate documents in batches. For example, phone bills, credit card statements, and benefits statements generated every month.
 
 ## Onboarding
 
-Communications is available as a standalone and add-on module for Forms as a Cloud Service user. You can contact Adobe Sales team or your Adobe representative to request access.
+Communications is available as a standalone and add-on module for Forms as a Cloud Service user. You can contact Adobe sales team or your Adobe representative to request access.
 
 Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. The administrator can grant access to your AEM Forms developers (users) of your organization to use the APIs.
 
@@ -137,7 +137,7 @@ Before start generating documents using Communication APIs, go through the follo
 
 ### Form data {#form-data}
 
-Communications APIs accept a form design that is typically created in Designer and XML form data as input. To populate a document with data, an XML element must exist in the XML form data for every form field that you want to populate. The XML element name must match the field name. An XML element is ignored if it does not correspond to a form field or if the XML element name does not match the field name. It is not necessary to match the order in which the XML elements are displayed. The important factor is that the XML elements are specified with corresponding values.
+Communications APIs accept a form design that is typically created in [Designer](use-forms-designer.md) and XML form data as input. To populate a document with data, an XML element must exist in the XML form data for every form field that you want to populate. The XML element name must match the field name. An XML element is ignored if it does not correspond to a form field or if the XML element name does not match the field name. It is not necessary to match the order in which the XML elements are displayed. The important factor is that the XML elements are specified with corresponding values.
 
 Consider the following example loan application form:
 
@@ -183,9 +183,9 @@ To merge data into this form design, create an XML data source that corresponds 
 
 For complete access to the rendering capabilities of the Communications APIs, it is recommended that you use an XDP file as input. Sometimes, a PDF file can be used. However, using a PDF file as input has the following limitations:
 
-A PDF document that does not contain an XFA stream cannot be rendered as PostScript, PCL, or ZPL. Communications APIs can render PDF documents with XFA streams (that is, forms created in Designer) into laser and label formats. If the PDF document is signed, certified, or contains usage rights (applied using AEM Forms Reader Extensions service), it cannot be rendered to these print formats.
+A PDF document that does not contain an XFA stream cannot be rendered as PostScript, PCL, or ZPL. Communications APIs can render PDF documents with XFA streams (that is, forms created in [Designer](use-forms-designer.md)) into laser and label formats. If the PDF document is signed, certified, or contains usage rights (applied using AEM Forms Reader Extensions service), it cannot be rendered to these print formats.
 
-<!-* * Run-time options such as PDF version and tagged PDF are not supported for Acrobat forms. They are valid for PDF forms that contain XFA streams; however, these forms cannot be signed or certified. 
+<!-- Run-time options such as PDF version and tagged PDF are not supported for Acrobat forms. They are valid for PDF forms that contain XFA streams; however, these forms cannot be signed or certified. 
 
 ### Email support {#email-support}
 
@@ -199,9 +199,9 @@ Always ensure that you use the correct XDC file for the printer. For example, av
 
 ### Scripts {#scripts}
 
-A form design that is used with the Communications APIs can contain scripts that run on the server. Ensure that a form design does not contain scripts that run on the client. For information about creating form design scripts, see Designer Help.
+A form design that is used with the Communications APIs can contain scripts that run on the server. Ensure that a form design does not contain scripts that run on the client. For information about creating form design scripts, see [Designer Help](use-forms-designer.md).
 
-<!-* #### Working with Fonts
+<!-- #### Working with Fonts
  Document Considerations for Working with Fonts>> -->
 
 ### Font mapping {#font-mapping}
@@ -253,7 +253,7 @@ These files are reference XDC files that support the features of specific printe
 
 ### Working with the XCI configuration file {#working-with-xci-files}
 
-Communications APIs use an XCI configuration file to perform tasks, such as controlling whether the output is a single panel or paginated. Although this file contains settings that can be set, it is not typical to modify this value. <!-* The default.xci file is located in the svcdata\XMLFormService folder. -->
+Communications APIs use an XCI configuration file to perform tasks, such as controlling whether the output is a single panel or paginated. Although this file contains settings that can be set, it is not typical to modify this value. <!-- The default.xci file is located in the svcdata\XMLFormService folder. -->
 
 You can pass a modified XCI file while using a Communications API. When doing so, create a copy of the default file, change only the values that requires modification to meet your business requirements, and use the modified XCI file.
 
