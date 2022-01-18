@@ -34,7 +34,7 @@ Sharing assets through a link is a convenient way of making resources available 
 
    * In the **[!UICONTROL Subject]** box, type a subject for the asset you want to share.
    * In the **[!UICONTROL Message]** box, type a message if necessary.
-   * In the **[!UICONTROL Expiration]** field, use the date picker to specify an expiration date and time for the link. By default, the expiry date is set to 7 days from the date on which you share the link.
+   * In the **[!UICONTROL Expiration]** field, use the date picker to specify an expiration date and time for the link. The default expiration time for the link is one day.
    * Enable the **[!UICONTROL Allow downlod of original file]** check box to allow the recepients to download the original rendition. 
 
 1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users. Users receive an email containing the shared link.
