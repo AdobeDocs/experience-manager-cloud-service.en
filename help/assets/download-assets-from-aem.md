@@ -27,7 +27,7 @@ You can download Experience Manager assets using the following methods:
 
 ## Download assets using [!DNL Experience Manager] interface {#download-assets}
 
-Asynchronous download service provides a framework for seamless download of large-sized assets. Smaller files are downloaded from the user interface in real-time. [!DNL Experience Manager] does not archive single asset downloads where the original file is downloaded. This functionality allows for faster downloads. 
+Asynchronous download service provides a framework for seamless download of large-sized assets. Smaller files are downloaded from the user interface in real time. [!DNL Experience Manager] does not archive single asset downloads where the original file is downloaded. This functionality allows for faster downloads. 
 
 By default, Experience Manager triggers a notification upon completion of the download workflow. The download notification appears in the  [[!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
@@ -48,13 +48,13 @@ Asynchronous downloads are triggered in either of the following case:
 
 ### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
 
-Asynchronous downloads are triggered in any of the following case:
+Asynchronous downloads are triggered in any of the following cases:
 
-* If there are more than 10 assets 
+* If there are more than ten assets 
 * If the download size is more than 100 MB
 * If the download takes more than 30 seconds to prepare
 
-While the aycnhronous download runs at the backend, the user can continue to explore and work further in Experience Manager. An out-of-the-box mechanism is required to notify the user upon completion of the download process. To achieve this objective, the administrators can configure email service by setting up an SMTP server. See [configure Mail Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+While the asynchronous download runs at the backend, the user can continue to explore and work further in Experience Manager. An out-of-the-box mechanism is required to notify the user upon completion of the download process. To achieve this objective, the administrators can configure email service by setting up an SMTP server. See [configure Mail Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 Once the email service is configured, the administrators and users can enable email notifications from the Experience Manager interface. 
 
