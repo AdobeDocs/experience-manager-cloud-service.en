@@ -1,9 +1,6 @@
 ---
 title: Learn Content Modeling Basics
 description: Learn the basic of modeling content for your Headless CMS using Content Fragments.
-index: yes
-hide: no
-hidefromtoc: no
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 ---
 # Learn the Content Modeling Basics for Headless with AEM {#content-modeling-headless-basics}
