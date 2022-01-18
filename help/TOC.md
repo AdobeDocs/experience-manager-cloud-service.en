@@ -260,6 +260,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Translation Best Practices](/help/sites-cloud/administering/translation/best-practices.md)
   + Integrating with AEM as a Cloud Service {#integrations}
     + [Integrating with Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
+    + [Integrating with Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
     + [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 + Assets {#assets}
   + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
@@ -340,6 +341,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Optional - Configure Dynamic Media, General Settings](/help/assets/dynamic-media/dm-general-settings.md)
     + [Optional - Configure Dynamic Media, Publish Setup](/help/assets/dynamic-media/dm-publish-settings.md)
     + [Troubleshoot Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
+    + [Configure a Dynamic Media Alias Account](/help/assets/dynamic-media/dm-alias-account.md)
     + [Accessibility in Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md)
     + [Manage Dynamic Media assets](/help/assets/dynamic-media/managing-assets.md)
     + [Best practices for optimizing the quality of your images](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
