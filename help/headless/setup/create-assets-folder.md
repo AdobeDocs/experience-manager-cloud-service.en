@@ -1,9 +1,9 @@
 ---
-title: Creating an Assets Folder Headless Quick Start Guide
+title: Creating an Assets Folder - Headless Setup
 description: Use AEM Content Fragment Models to define the structure of Content Fragments, the basis of your headless content.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 ---
-# Creating an Assets Folder Headless Quick Start Guide {#creating-an-assets-folder}
+# Creating an Assets Folder - Headless Setup {#creating-an-assets-folder}
 
 Use AEM Content Fragment Models to define the structure of Content Fragments, the basis of your headless content. Content Fragments are then stored in assets folders.
 

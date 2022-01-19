@@ -126,4 +126,4 @@ Now that you have learned the basics, the next step is to start creating your ow
 
 * Getting Started Guides
   
-  * [Creating Content Fragment Models Headless Quick Start Guide](/help/headless/setup/create-content-model.md)
+  * [Creating Content Fragment Models Headless Setup](/help/headless/setup/create-content-model.md)
