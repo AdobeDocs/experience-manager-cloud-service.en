@@ -82,7 +82,7 @@ GraphQL uses the following:
 * **[GraphQL Endpoint](graphql-endpoint.md)**
   * The path in AEM that responds to GraphQL queries, and provides access to the GraphQL schemas. 
 
-  * See [Enabling your GraphQL Endpoint](#enabling-graphql-endpoint) for further details.
+  * See [Enabling your GraphQL Endpoint](graphql-endpoint.md) for further details.
 
 See the [(GraphQL.org) Introduction to GraphQL](https://graphql.org/learn/) for comprehensive details, including the [Best Practices](https://graphql.org/learn/best-practices/).
 

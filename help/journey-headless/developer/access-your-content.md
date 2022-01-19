@@ -237,11 +237,11 @@ Before starting with queries on your content you need to:
 
 * Enable your endpoint
   * Use Tools -> Assets -> GraphQL
-  * [Enabling your GraphQL Endpoint](/help/headless/graphql-api/content-fragments.md#enabling-graphql-endpoint)
+  * [Enabling your GraphQL Endpoint](/help/headless/graphql-api/graphql-endpoint.md)
   
 * Install GraphiQL (if required)
   * Installed as a dedicated package
-  * [Installing the AEM GraphiQL interface](/help/headless/graphql-api/content-fragments.md#installing-graphiql-interface)
+  * [Installing the AEM GraphiQL interface](/help/headless/graphql-api/graphiql-ide.md)
 
 ### Sample Structure {#sample-structure}
 
@@ -358,8 +358,8 @@ Now that you have learned how to access and query your headless content using th
   * [GraphQL Java libraries](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [Learning to use GraphQL with AEM](/help/headless/graphql-api/content-fragments.md)
-  * [Enabling your GraphQL Endpoint](/help/headless/graphql-api/content-fragments.md#enabling-graphql-endpoint)
-  * [Installing the AEM GraphiQL interface](/help/headless/graphql-api/content-fragments.md#installing-graphiql-interface)
+  * [Enabling your GraphQL Endpoint](/help/headless/graphql-api/graphql-endpoint.md)
+  * [Installing the AEM GraphiQL interface](/help/headless/graphql-api/graphiql-ide.md)
 * [The Sample Content Fragment Structure](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [Learning to use GraphQL with AEM - Sample Content and Queries](/help/headless/graphql-api/sample-queries.md)
   * [Sample Query - A Single Specific City Fragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
