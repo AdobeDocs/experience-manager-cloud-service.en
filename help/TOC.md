@@ -522,7 +522,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Content Fragment Model](/help/headless/setup/create-content-model.md)
     + [Assets Folder](/help/headless/setup/create-assets-folder.md)
     + [Content Fragment](/help/headless/setup/create-content-fragment.md)
-    + [GraphQL Endpoint](/help/headless/setup/graphql-endpoint.md)
+    + [GraphQL Endpoint](/help/headless/setup/create-api-request.md)
   + Content Fragments {#content-fragments}
     + [Headless Delivery with Content Fragments and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
     + [Working with Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
