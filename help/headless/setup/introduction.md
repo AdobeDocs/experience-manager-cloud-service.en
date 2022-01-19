@@ -11,7 +11,7 @@ Below is a simple path for for creating, managing, and delivering experiences us
 1. [Creating a Content Fragment Model](create-content-model.md)
 1. [Creating an Assets Folder](create-assets-folder.md)
 1. [Creating a Content Fragment](create-content-fragment.md)
-1. [Accessing and Delivering Content Fragments](graphql-endpoint.md)
+1. [Create an API Request](create-api-request.md)
 
 >[!TIP]
 >
