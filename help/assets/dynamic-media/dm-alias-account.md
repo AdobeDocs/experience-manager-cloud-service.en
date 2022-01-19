@@ -37,7 +37,7 @@ You begin configuring a Dynamic Media company alias account by first submitting 
 1. [Use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. Provide the following information in your support case:
 
-    * The Dynamic Media company alias name you want to use.
+    * The Dynamic Media company alias name you want to use. The name must contain *only* letters (mixed casing allowed), numbers, hyphens, and underscores.
     * Your region.
     * Whether any [rulesets](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md) are being used previously to achieve serving of Dynamic Media content through an alternate Dynamic Media company account name.
 
@@ -47,6 +47,6 @@ You begin configuring a Dynamic Media company alias account by first submitting 
 
    ![Dynamic Media Company Alias text field](/help/assets/assets-dm/dm-company-alias.png)
 
-1. On the **[!UICONTROL Edit Dynamic Media Configuration]** page, in the **[!UICONTROL Company Alias]** text field, type the Dynamic Media alias account name.
+1. On the **[!UICONTROL Edit Dynamic Media Configuration]** page, in the **[!UICONTROL Company Alias]** text field, type the Dynamic Media alias account name that you specified in your support case earlier.
 1. In the upper right of the page, select **[!UICONTROL Save]**.
 The Dynamic Media company alias account is now saved and enabled; all URLs and viewer embed code for existing and new assets now reflect the new company alias name.
