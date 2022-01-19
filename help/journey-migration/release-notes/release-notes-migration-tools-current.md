@@ -8,10 +8,6 @@ feature: Release Information
 
 This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.1.0.
 
->[!NOTE]
->To see the current Release Notes for Adobe Experience Manager as a Cloud Service, click [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
-
-
 ## Content Transfer Tool {#ctt-release}
 
 ### Release Date {#release-date-ctt}
