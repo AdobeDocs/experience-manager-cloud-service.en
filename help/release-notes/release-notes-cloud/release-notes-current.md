@@ -42,7 +42,11 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
 ### What is New {#what-is-new-cif}
 
-* Wishlist now supported in AEM Storefront and available as Core Component: Logged in visitors can add products to a wishlist. Mangaging the wishlist and its products is possible via myAccount. The "Add to wishlist" button can be enabled / disabled on a component level via policy (example product teaser, product detail).
+* **Wishlist**
+  * Logged in visitors can add products to a wishlist
+  * Mangaging the wishlist and its products is possible via myAccount
+  * The "Add to wishlist" button can be enabled / disabled on a component level via policy (example product teaser, product detail
+  * Available as a Core Component and in the AEM Venia Storefront
 
 ![Wishlist](/help/assets/CIF/wishlist.png)
 
