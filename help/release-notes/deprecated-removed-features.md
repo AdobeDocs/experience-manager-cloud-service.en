@@ -47,8 +47,9 @@ This section lists features and capabilities that have been removed from [!DNL E
 | [!DNL Sites] | Portal Director and Portlet Component | These capabilities were deprecated in [!DNL Experience Manager] 6.4 and have now been removed from [!DNL Experience Manager].|
 | [!DNL Sites] | Design Importer | This capability has been removed as immutable sections of the [!DNL Experience Manager] repository are not accessible at runtime. |
 | [!DNL Assets] | [!DNL Assets] sharing with Marketing Cloud Assets Core Service and Creative Cloud services is not available. | For integration with [!DNL Adobe Creative Cloud], use [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). |
-| [!DNL Foundation]       | Support for Apache Sling datasources (OSGi bundle org.apache.sling.datasource) | N/A |
+| [!DNL Foundation]       | Support for Apache Sling datasources (OSGi bundle org.apache.sling.datasource) | N/A |
 | [!DNL Foundation]       | Suppport for JST scripting templates (OSGi bundle org.apache.sling.scripting.jst) | N/A |
+| [!DNL Foundation]       | Support for the Apache Felix Http Whiteboard | OSGi Http Whiteboard |
 
 ## Java API {#java-api}
 
