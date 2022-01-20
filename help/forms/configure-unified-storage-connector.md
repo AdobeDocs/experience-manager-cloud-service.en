@@ -53,7 +53,7 @@ Perform the following steps to configure an AEM Workflow model for an external d
 
 The following are the guidelines when you are using AEM Workflows and storing data to external data storages, such as Microsoft Azure storage server:
 
-* Use variables to store data while defining input and output data files and attachments in workflow model steps. Do not select **[!UICONTROL Relative to Payload]** and **[!UICONTROL Available at an absolute path]** options. The **[!UICONTROL Relative to Payload]** and **Available at an absolute path option do not display automatically once you [configure an AEM Workflow model for external data storage](#configure-workflow-external-data-storage).
+* Use variables to store data while defining input and output data files and attachments in workflow model steps. Do not select **[!UICONTROL Relative to Payload]** and **[!UICONTROL Available at an absolute path]** options. The **[!UICONTROL Relative to Payload]** and **[!UICONTROL Available at an absolute path]** options do not display automatically once you [configure an AEM Workflow model for external data storage](#configure-workflow-external-data-storage).
 
 * Use variables to store data file and attachments while submitting an adaptive form to an AEM Workflow. Do not select **[!UICONTROL Relative to Payload]** option while submitting an adaptive form to an AEM Workflow. The **[!UICONTROL Relative to Payload]** option do not display automatically once you [configure an AEM Workflow model for external data storage](#configure-workflow-external-data-storage).
 
