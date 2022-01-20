@@ -108,23 +108,20 @@ The [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) is t
 
 >[!TIP]
 >
->Use [AEM Project Archetype 24 or later](https://github.com/adobe/aem-project-archetype/releases) to generate the project.
+>Always use the latest version of the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/releases) to generate the project.
 
 See AEM Project Archetype [usage instructions](https://github.com/adobe/aem-project-archetype#usage) on how to generate an AEM project. To include CIF into the project use the `includeCommerce` option.
 
 For example:
 
 ```bash
-mvn -B archetype:generate \
- -D archetypeGroupId=com.adobe.granite.archetypes \
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
+ -D archetypeGroupId=com.adobe.aem \
  -D archetypeArtifactId=aem-project-archetype \
- -D archetypeVersion=24 \
- -D aemVersion=cloud \
+ -D archetypeVersion=35 \
  -D appTitle="My Site" \
  -D appId="mysite" \
  -D groupId="com.mysite" \
- -D frontendModule=general \
- -D includeExamples=n \
  -D includeCommerce=y
 ```
 
