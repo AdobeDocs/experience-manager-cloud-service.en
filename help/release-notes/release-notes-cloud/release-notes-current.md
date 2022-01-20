@@ -25,3 +25,43 @@ The following release (2022.2.0) is on February 24, 2022.
 ## Release Video {#release-video}
 
 Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/339278) video for a summary of the features added in the 2022.1.0 release.
+
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+### New features in [!DNL Assets] {#assets-features}
+
+### New features in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
+
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### What is new in [!DNL Forms] {#what-is-new-forms}
+
+### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
+
+## CIF Add-on {#cloud-services-cif}
+
+### What is New {#what-is-new-cif}
+
+* **Wishlist**
+  * Logged in visitors can add products to a wishlist
+  * Mangaging the wishlist and its products is possible via myAccount
+  * The "Add to wishlist" button can be enabled / disabled on a component level via policy (example product teaser, product detail
+  * Available as a Core Component and in the AEM Venia Storefront
+
+![Wishlist](/help/assets/CIF/wishlist.png)
+
+## Cloud Manager {#cloud-manager}
+
+### Release Date {#release-date-cm-nov}
+
+### What's New {#what-is-new-cm-nov}
+
+### Bug Fixes {#bug-fixes-nov}
+
+## Best Practices Analyzer {#bpa-release}
+
+### Release Date {#release-date-bpa}
+
+### What's New {#what-is-new-bpa}
+
+### Bug Fixes {#bug-fixes-bpa}
