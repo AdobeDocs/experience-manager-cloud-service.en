@@ -18,7 +18,7 @@ The release date for Cloud Manager in AEM as a Cloud Service 2022.01.0 is 20 Jan
 
 ## What's New {#what-is-new}
 
-* Cloud Manager will avoid rebuilding the code base when it detects that the same git commit is used in multiple full-stack pipeline executions.
+* Cloud Manager will [avoid rebuilding the code base when it detects that the same git commit is used](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in multiple full-stack pipeline executions.
 * Accessing the AEM environment log now requires the **Deployment Manager** product profile. Users without this profile will see a disabled button in the user interface.
 *  The UI will not allow front-end pipeline configuration for a program where Sites is not enabled as a solution. 
 * Upon generating a git password, the expiration date will be displayed.
