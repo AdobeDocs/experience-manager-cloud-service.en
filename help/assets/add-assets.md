@@ -98,6 +98,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 You can upload an asset with the same path (same name and same location) as that of an existing asset. However, a warning dialog is displayed with the following options:
 
 * Replace existing asset: If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotations, cropping, and so on) you made to the existing asset are deleted.
+
+   >[!NOTE]
+   >
+   >The option to replace assets is not available if the asset is locked or checked out.
+
 * Create another version: A new version of the existing asset is created in the repository. You can view the two versions in the [!UICONTROL Timeline] and can revert to the previously existing version if required.
 * Keep both: If you choose to keep both assets, the new asset is renamed.
 
