@@ -62,25 +62,25 @@ For local CIF Add-on development using the AEM as a Cloud Service SDK following
 
     The CIF add-on zip file contains two Sling Feature archive `.far` files. Make sure to use the correct one for AEM Author or AEM Publish, depending on how you plan to run the local AEM as a Cloud Service SDK.
 
-1. Create a local OS environment variable named `COMMERCE_ENDPOINT` holding the Magento GraphQL endpoint.
+1. Create a local OS environment variable named `COMMERCE_ENDPOINT` holding the Adobe Commerce GraphQL endpoint.
 
     Example Mac OSX:
 
     ```bash
-    export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+    export COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
     ```
 
     Example Windows:
 
     ```bash
-    set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+    set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
     ```
 
     This variable is used by AEM to connect to your commerce system. Also, the CIF add-on includes a local reverse proxy make the Commerce GraphQL endpoint available locally. This is used by the CIF authoring tools (product console and pickers) and for the CIF client-side components doing direct GraphQL calls.
 
     This variable must be set up for the AEM as a Cloud Service environment as well. For more information on variables, see [Configuring OSGi for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
-1. (Optional) To enable staged catalog features, you must create an integration token for your Magento instance. Please follow the steps at [Getting Started](./getting-started.md#staging) to create the token.
+1. (Optional) To enable staged catalog features, you must create an integration token for your Adobe Commerce instance. Please follow the steps at [Getting Started](./getting-started.md#staging) to create the token.
 
     Set an OSGi secret  with the name `COMMERCE_AUTH_HEADER` to the following value:
 
