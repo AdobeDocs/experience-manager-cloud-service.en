@@ -31,7 +31,7 @@ Follow the sections below to learn how to create your [cloud service programs](#
 
 * Be familiar with [Cloud Manager product profiles.](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
 
-* Understand the concepts of Cloud Manager [programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) and [environments.](help/implementing/cloud-manager/manage-environments.md)
+* Understand the concepts of Cloud Manager [programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) and [environments.](/help/implementing/cloud-manager/manage-environments.md)
 
 ## Navigate to Cloud Manager {#navigate-cloud-manager}
 
