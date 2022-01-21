@@ -542,6 +542,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Persisted GraphQL queries](/help/headless/graphql-api/persisted-queries.md)
   + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
   + Security {#security}
+    + [Permissions](/help/headless/security/permissions.md)
     + [Authentication](/help/headless/security/authentication.md)
   + Headless Journeys {#journeys}
     + Headless Developer Journey {#developer}
