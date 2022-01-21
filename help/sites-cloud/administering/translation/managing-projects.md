@@ -9,6 +9,10 @@ exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 
 Translation projects enable you to manage the translation of AEM content. A translation project is a type of AEM [project](/help/sites-cloud/authoring/projects/overview.md) that contains resources that are to be translated into other languages. These resources are the pages and assets of the [language copies](preparation.md) that are created from the language master.
 
+>[!TIP]
+>
+>If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+
 When resources are added to a translation project, a translation job is created for them. Jobs provide commands and status information that you use to manage the human translation and machine translation workflows that execute on the resources.
 
 Translation projects are long-running items, defined by language and translation method/provider to align with organizational governance for globalization. They should be initiated once, either during initial translation or manually, and remain in effect throughout content and translation update activities.

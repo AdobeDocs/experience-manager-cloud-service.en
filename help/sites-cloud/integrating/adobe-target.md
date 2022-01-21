@@ -76,4 +76,3 @@ Integrating AEM as a Cloud Service with Adobe Target requires knowledge of Adobe
 >* 2,000 experiences
 >* 50 metrics
 >* 50 reporting segments
->

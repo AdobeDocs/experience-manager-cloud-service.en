@@ -9,6 +9,10 @@ exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 
 Translation rules identify the content to translate for pages, components, and assets that are included in, or excluded from, translation projects. When a page or asset is being translated, AEM extracts this content so that it can be sent to the translation service.
 
+>[!TIP]
+>
+>If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+
 Pages and assets are represented as nodes in the JCR repository. The content that is extracted is one or more property values of the nodes. Translation rules identify the properties that contain the content to extract.
 
 Translation rules are expressed in XML format and stored in these possible locations:
