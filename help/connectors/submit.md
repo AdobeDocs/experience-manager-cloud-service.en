@@ -1,8 +1,8 @@
 ---
 title: Submitting an AEM Connector
 description: Submitting an AEM Connector
+exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
 ---
-
 Submitting an AEM Connector
 ===========================
 
@@ -10,12 +10,12 @@ Provided below is useful information for submitting AEM Connectors and should be
 
 AEM Connectors are listed on the [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
-In previous AEM solutions, Package Manager was used to install connectors on various AEM instances. However, with AEM as a Cloud Service, connectors are deployed during the CI/CD process in Cloud Manager. In order for the connectors to be deployed, connectors need to be referenced in the maven project's pom.xml. 
+In previous AEM solutions, [Package Manager](/help/implementing/developing/tools/package-manager.md) was used to install connectors on various AEM instances. However, with AEM as a Cloud Service, connectors are deployed during the CI/CD process in Cloud Manager. In order for the connectors to be deployed, connectors need to be referenced in the maven project's pom.xml. 
 
 There are various options of how the packages can be included in a project:
 
 1. Partner's public repository - a partner would host the content package in a publicly accessible maven repository
-1. Partner’s password protected repository - a partner would host the content package in a password protected maven repository. See [password protected maven repositories at](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories) for instructions.
+1. Partner’s password protected repository - a partner would host the content package in a password protected maven repository. See [password protected maven repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) for instructions.
 1. Bundled artifact - in this case, the connector package is included locally in the customer's maven project.
 
 Regardless of where they're hosted, packages need to be referenced as dependencies in the pom.xml, as provided by the vendor.

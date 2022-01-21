@@ -1,11 +1,14 @@
 ---
 title: Adobe Experience Manager as a Cloud Service Content Fragments Support in Assets HTTP API
-description: Learn about Adobe Experience Manager as a Cloud Service Content Fragments Support in Assets HTTP API.
+description: Learn about support for Content Fragments in the Assets HTTP API, an important piece of AEM's headless delivery feature.
+feature: Content Fragments,Assets HTTP API
+exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 ---
-
-# Content Fragments Support in AEM Assets HTTP API{#content-fragments-support-in-aem-assets-http-api}
+# Content Fragments Support in AEM Assets HTTP API {#content-fragments-support-in-aem-assets-http-api}
 
 ## Overview {#overview}
+
+Learn about support for Content Fragments in the Assets HTTP API, an important piece of AEM's headless delivery feature.
 
 >[!NOTE]
 >
@@ -20,9 +23,9 @@ The [Assets REST API](/help/assets/mac-api-assets.md) allows developers for Adob
 
 The API allows you to operate Adobe Experience Manager as a Cloud Service as a headless CMS (Content Management System) by providing Content Services to a JavaScript front end application. Or any other application that can execute HTTP requests and handle JSON responses.
 
-For example, Single Page Applications (SPA), framework-based or custom, require content provided over the HTTP API, often in JSON format.
+For example, [Single Page Applications (SPA)](/help/implementing/developing/hybrid/introduction.md), framework-based or custom, require content provided over the HTTP API, often in JSON format.
 
-While [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) provide a very comprehensive, flexible and customizable API that can serve required Read operations for this purpose, and whose JSON output can be customized, they do require AEM WCM (Web Content Management) know-how for implementation as they must be hosted in pages that are based on dedicated AEM templates. Not every SPA development organization has direct access to such knowledge.
+While [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) provide a very comprehensive, flexible and customizable API that can serve required Read operations for this purpose, and whose JSON output can be customized, they do require AEM WCM (Web Content Management) know-how for implementation as they must be hosted in pages that are based on dedicated AEM templates. Not every SPA development organization has direct access to such knowledge.
 
 This is when the Assets REST API can be used. It allows developers to access assets (for example, images and content fragments) directly, without the need to first embed them in a page, and deliver their content in serialized JSON format. 
 
@@ -243,7 +246,7 @@ Usage can differ depending on whether you are using an AEM author or publish env
 
 >[!NOTE]
 >
->For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html). 
+>For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html). 
 
 ### Read/Delivery {#read-delivery}
 
@@ -370,7 +373,7 @@ The following status codes can be seen in the relevant circumstances:
 
 See here for detailed API references:
 
-* [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
@@ -382,4 +385,3 @@ For further information see:
 
 * [Assets HTTP API documentation](/help/assets/mac-api-assets.md)
 * [AEM Gem session: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
-

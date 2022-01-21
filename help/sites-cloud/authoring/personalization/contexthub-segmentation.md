@@ -1,8 +1,8 @@
 ---
 title: Configuring Segmentation with ContextHub
 description: Learn how to configure segmentation using ContextHub.
+exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 ---
-
 # Configuring Segmentation with ContextHub{#configuring-segmentation-with-contexthub}
 
 Segmentation is a key consideration when creating a campaign. See [Understanding Segmentation](segmentation.md) for information on how segmentation works and key terms.

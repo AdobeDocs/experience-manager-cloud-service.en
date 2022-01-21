@@ -1,8 +1,8 @@
 ---
 title: Participating in Workflows
 description: Workflows typically include steps that require a person to perform an activity on a page or asset.
+exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
 ---
-
 # Participating in Workflows {#participating-in-workflows}
 
 Workflows typically include steps that require a person to perform an activity on a page or asset. The workflow selects a user or group to perform the activity and assigns a work item to that person or group. The user receives notification and can then take the appropriate action:

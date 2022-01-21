@@ -1,8 +1,8 @@
 ---
 title: UnApply IP Allow List 
 description: UnApply IP Allow List
+exl-id: a8763120-9683-4805-bd10-3863a0e4ff6f
 ---
-
 # UnApplying an IP Allow List {#apply-allow-list}
 
 UnApplying an IP Allow List is the process by which all IP ranges included in the definition of the Allow-List are disassociated from an Author/or Publisher service in an environment.  

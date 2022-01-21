@@ -1,8 +1,8 @@
 ---
 title: How Multisite Management for Targeted Content is Structured
 description: A diagram shows how multisite support for targeted content is structured
+exl-id: c6b05c2a-0897-4514-8937-e23bfcf757d5
 ---
-
 # How Multisite Management for Targeted Content is Structured {#how-multisite-management-for-targeted-content-is-structured}
 
 The following diagram shows how multisite support for targeted content is structured.
