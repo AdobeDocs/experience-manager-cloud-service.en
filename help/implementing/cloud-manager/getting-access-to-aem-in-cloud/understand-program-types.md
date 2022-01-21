@@ -17,7 +17,7 @@ Cloud Manager program will come auto-provisioned with it’s own git repository.
 
 For a user to access the Cloud Manager git repository, users will need to use a Git client with a command-line tool, a standalone visual Git client, or the user's IDE such as Eclipse, IntelliJ, NetBeans.
 
-Once a Git client is set up, you can manage your git repository from the Cloud Manager UI. To learn about how to manage Git using Cloud Manager UI, refer to [Accessing Git](/help/implementing/cloud-manager/accessing-git.md).
+Once a Git client is set up, you can manage your git repository from the Cloud Manager UI. To learn about how to manage Git using Cloud Manager UI, refer to [Accessing Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 To begin developing the AEM Cloud application, a local copy of the application code must be made by checking it out from the Cloud Manager repository to a location on their local computer where they wish to create their repository.
 
@@ -33,8 +33,8 @@ $ git clone {URL}
 A user can create a **Sandbox** or a **Production** program. 
 
 * A *Production Program* is created to enable live traffic at the appropriate time in the future.
-   Refer to Introduction to Production Programs for more details.
+   Refer to [Introduction to Production Programs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en) for more details.
 
 
 * A *Sandbox Program* is typically created to serve the purposes of training, running demo’s, enablement, POC’s, or documentation. It is not meant to carry live traffic and will have restrictions that a Production program will not. It will include Sites and Assets and will be delivered auto-populated with a Git branch that includes sample code, a Dev environment, and a non-production pipeline.
-   Refer to Introduction to Sandbox Programs for more details.
+   Refer to [Introduction to Sandbox Programs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en) for more details.

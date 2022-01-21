@@ -11,7 +11,7 @@ Adobe Experience Manager (AEM) as a Cloud Service is a cloud-native platform tha
 
 For an overview of Adobe Experience Manager as a Cloud Service, see:
 * the [Introduction to AEM as a Cloud Service](/help/overview/introduction.md)
-* the [Architecture](/help/core-concepts/architecture.md) of Adobe Experience Manager as a Cloud Service
+* the [Architecture](/help/overview/architecture.md) of Adobe Experience Manager as a Cloud Service
 * An [Overview of AEM as a Cloud Service - What is New and What is Different](/help/overview/what-is-new-and-different.md)
 
 <!-- Please link to introduction or what's new of Sites. -->
