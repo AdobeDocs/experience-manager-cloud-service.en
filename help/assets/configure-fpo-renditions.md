@@ -4,7 +4,7 @@ description: Generate FPO renditions of new and existing assets using Experience
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
-exl-id: 
+exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
 ---
 # Generate For Placement Only renditions for Adobe InDesign {#fpo-renditions}
 
@@ -15,13 +15,15 @@ Assets provides renditions that are used for placement only (FPO). These FPO ren
 Experience Manager as a Cloud Service offers cloud-native asset-processing capabilities to generate the FPO renditions. Use asset microservices for rendition generation. You can configure rendition generation of newly uploaded assets and of the assets that exist in Experience Manager.
 
 Following are the steps to generate FPO renditions:
+
 1. [Create a processing profile](#create-processing-profile).
+
 1. Configure Experience Manager to use this profile to [process new assets](#generate-renditions-of-new-assets). 
 1. Use the profiles to [process existing assets](#generate-renditions-of-existing-assets).
 
 ## Create a Processing Profile {#create-processing-profile}
 
-To generate FPO renditions, you create a **[!UICONTROL Processing Profile]**. The profiles use cloud-native asset microservices for processing. For instructions, see [create processing profiles for asset microservices](asset-microservices-configure-and-use.md).
+To generate FPO renditions, create a **[!UICONTROL Processing Profile]**. The profiles use cloud-native asset microservices for processing. For instructions, see [create processing profiles for asset microservices](asset-microservices-configure-and-use.md).
 
 Select **[!UICONTROL Create FPO Rendition]** to generate FPO rendition. Optionally, click **[!UICONTROL Add New]** to add another rendition settings to the same profile.
 

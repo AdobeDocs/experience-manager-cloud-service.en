@@ -43,6 +43,8 @@ There are two options to configure the endpoint:
 
 ### Via Cloud Manager UI (Default) {#cm-ui}
 
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
+
 This can be done using a dialog on the Environment Details page. When viewing this page for a Commerce-enabled program, a button will be displayed if the endpoint is not currently configured:
 
 ![CM Enviornment Information](/help/commerce-cloud/assets/commerce-cmui.png)
@@ -56,8 +58,6 @@ After the endpoint (optionally an authentication token for staged catalog suppor
 ![CM Enviornment Information](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
 ### Via Adobe I/O CLI  {#adobe-cli}
-
->[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 To connect AEM with a commerce solution via Adobe I/O CLI, follow these steps:
 

@@ -151,7 +151,7 @@ You can search assets based on exact values of metadata fields, such as, title, 
 | Creator | creator:John |
 | Location | location:NA |
 | Description | description:"Sample Image" |
-| Creator tool | creatortool:"Adobe Photoshop CC 2015" |
+| Creator tool | creatortool:"Adobe Photoshop" |
 | Copyright Owner | copyrightowner:"Adobe Systems" |
 | Contributor | contributor:John |
 | Usage Terms | usageterms:"CopyRights Reserved" |
@@ -220,11 +220,7 @@ Authors can use Content Finder to search the DAM repository for the relevant ass
 
 ## Asset selector {#asset-picker}
 
->[!NOTE]
->
->Asset selector was called [asset picker](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) in prior versions of [!DNL Adobe Experience Manager].
-
-Asset selector lets you search, filter, and browse the DAM assets in a special way. Asset selector is available at `https://[aem_server]:[port]/aem/assetpicker.html`. You can fetch the metadata of assets that you select using the asset selector. You can launch it with supported request parameters, such as asset type (image, video, text) and selection mode (single or multiple selections). These parameters set the context of the asset selector for a particular search instance and remain intact throughout the selection.
+Asset selector (called asset picker in prior versions of [!DNL Adobe Experience Manager]) lets you search, filter, and browse the DAM assets in a special way. Asset selector is available at `https://[aem_server]:[port]/aem/assetpicker.html`. You can fetch the metadata of assets that you select using the asset selector. You can launch it with supported request parameters, such as asset type (image, video, text) and selection mode (single or multiple selections). These parameters set the context of the asset selector for a particular search instance and remain intact throughout the selection.
 
 The asset selector uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. It works only in the browse mode and only with the Omnisearch result page.
 
@@ -352,7 +348,7 @@ Visual search uses Smart Tags. After configuring smart tagging functionality, fo
    Save the changes.
 
 1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
+1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
 1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save the changes.
 

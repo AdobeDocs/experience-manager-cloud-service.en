@@ -9,7 +9,7 @@ Projects lets you organize your project by grouping resources into one entity.
 
 In the **Projects** console, you access and take action on your projects:
 
-![The Projects console](/help/sites-cloud/authoring/assets/projects-console-detail.png)
+![The Projects console](/help/sites-cloud/authoring/assets/projects-console.png)
 
 In Projects, you can create a project, associate resources with your project, and also delete a project or Resource links. You may want to open a tile to view its content as well as add items to a tile. This topic describes those procedures.
 
@@ -34,7 +34,7 @@ The procedure of creating a project is the same from project to project. The dif
 
 1. Define the **Title** and **Description** and add a **Thumbnail** image if required. You also add or delete users and what group they belong to. In addition, click **Advanced** to add a name used in the URL.
 
-   ![Adding project detail](/help/sites-cloud/authoring/assets/projects-title.png)
+   ![Adding project detail](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. Tap/click **Create**. The confirmation asks whether you want to open your new project or to return to the console.
 
@@ -79,13 +79,11 @@ In some tiles, you may want to add more than one item. For example, you may have
 
 To add items to a Tile:
 
-1. In **Projects**, navigate to the project and click the Add + icon on the tile you want to add an item to.
+1. In **Projects**, navigate to the project and tap or click the down chevron on the tile you want to add an item to.
 
-   ![Add item to a tile](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
+   ![Add item to a tile](/help/sites-cloud/authoring/assets/project-workflows.png)
 
 1. Add an item to the tile as you would when creating a new tile. Project tiles are described [here](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In this example, another workflow was added.
-
-   ![Another item added to a tile](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
 ### Opening a Tile {#opening-a-tile}
 
@@ -93,19 +91,17 @@ You may want to see what items are included in a current tile, or modify or dele
 
 To open a tile so that you can view or modify items:
 
-1. In the Projects console, tap/click the ellipses (...)
+1. In the Projects console, tap/click the ellipses (...) icon at the bottom of the card.
 
-   ![Opening a tile](/help/sites-cloud/authoring/assets/projects-open-tile.png)
+   ![Opening a tile](/help/sites-cloud/authoring/assets/project-links.png)
 
 1. AEM lists the items in that tile. You can enter selection mode to modify or delete the items.
 
-   ![Tile opened](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+   ![Tile opened](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
 ## Viewing Project Statistics {#viewing-project-statistics}
 
-To view project statistics, in the **Projects** console, click **Show Statistics View**. The level of completion for each project displays. Click **Show Statistics View** again to go to the **Projects** console.
-
-![Project statistics](/help/sites-cloud/authoring/assets/projects-stats.png)
+You can view project statistics, in the **Projects** console.
 
 ### Viewing a Project Timeline {#viewing-a-project-timeline}
 
@@ -138,6 +134,6 @@ To make a project inactive (or active):
 1. Tap/click **Edit**.
 1. Change the selector from **Active** to **Inactive** (or vice versa).
 
-   ![Activating a project](/help/sites-cloud/authoring/assets/projects-activate.png)
+   ![Activating a project](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. Tap/click **Done** to save your changes.
