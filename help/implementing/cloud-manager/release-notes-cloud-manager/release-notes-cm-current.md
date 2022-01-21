@@ -1,50 +1,31 @@
 ---
-title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.7.0
-description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.7.0
+title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2022.01.0
+description: These are the release notes for Cloud Manager in AEM as a Cloud Service release 2022.01.0.
 feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
 ---
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.7.0 {#release-notes}
 
-This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.7.0.
+# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2022.01.0 {#release-notes}
+
+This page outlines the release notes for Cloud Manager in AEM as a Cloud Service 2022.01.0.
 
 >[!NOTE]
->To see the current Release Notes for Adobe Experience Manager as a Cloud Service, click [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>
+>Refer to [this page](/help/release-notes/release-notes-cloud/release-notes-current.md) for the current release notes for Adobe Experience Manager as a Cloud Service.
 
 ## Release Date {#release-date}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.7.0 is July 15, 2021.
-The next release is planned for August 12, 2021.
+The release date for Cloud Manager in AEM as a Cloud Service 2022.01.0 is 20 January 2022. The next release is planned for 10 February 2022.
 
-### What's New {#what-is-new}
+## What's New {#what-is-new}
 
-* Customers are now able to use Azul 8 and 11 JDKs for their Cloud Manager build processes and can either select to use one of these JDKs for toolchains-compatible Maven plugins *or* the entire Maven process execution.
+* Cloud Manager will [avoid rebuilding the code base when it detects that the same git commit is used](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in multiple full-stack pipeline executions.
+* Accessing the AEM environment log now requires the **Deployment Manager** product profile. Users without this profile will see a disabled button in the user interface.
+*  The UI will not allow front-end pipeline configuration for a program where Sites is not enabled as a solution. 
+* Upon generating a git password, the expiration date will be displayed.
 
-* The outbound egress IP will now be logged in the build step log file. 
+## Bug Fixes {#bug-fixes}
 
-* Stage and Production environments running old versions of AEM will now report a status of **Update Available**. 
-
-* The maximum SSL certificates supported has increased to 20 per program.
-
-* The maximum number of domains that can be configured has increased to 500 per environment.
-
-* The **Manage Git** buttons has been retitled to **Access Git Info** and the dialog has been visually refreshed.
-
-* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 28.
-
-### Bug Fixes {#bug-fixes}
-
-* In some situations, Preview was not an available option when binding an IP Allow List to an environment.
-
-* Manually navigating to the execution details page for a non-existing execution did not show an error, just an endless loading screen.
-
-* The error message shown when the maximum number of SSL certificates was reached was not helpful.
-
-* In some circumstances, there could be a discrepancy in the release version shown in the pipeline card on the **Overview** page.
-
-* Add program wizard incorrectly stated that name cannot be changed after creation. 
-
-### Known Issues {#known-issues}
-
-Customers switching to use the Azul JDKs should be aware that not all existing applications will compile without error on Azul JDK. It is highly recommended to test locally before switching.
-
+* Null pointer exceptions encountered by some front-end pipeline deployments have been corrected.
+* Environment variables can now be added, updated, and deleted when an environment is running an outdated version of AEM.
+* The build image step will no longer be marked as ERROR for pipelines that used the scheduled step in certain rare cases.
+* For programs with only one repository, the pipeline execution screen will now display the repository name.

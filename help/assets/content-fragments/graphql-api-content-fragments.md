@@ -50,7 +50,7 @@ For further information about the GraphQL API, see the following sections (among
 
   * [Introduction to GraphQL](https://graphql.org/learn)
 
-  * [The GraphQL Specification](http://spec.graphql.org/)
+  * [The GraphQL Specification](https://spec.graphql.org/)
 
 * At [graphql.com](https://graphql.com):
 
@@ -576,6 +576,10 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * use `... on` 
     * See [Sample Query for a Content Fragment of a specific Model with a Content Reference](#sample-wknd-fragment-specific-model-content-reference)
 
+* Fallback when querying nested fragments:
+
+  * If the requested variation does not exist in a nested fragment, then the **Master** variation will be returned.
+
 ## Persisted Queries (Caching) {#persisted-queries-caching}
 
 After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
@@ -803,7 +807,7 @@ To access the GraphQL endpoint from an external website you need to configure th
 
 >[!NOTE]
 >
->For a detailed overview of the CORS resource sharing policy in AEM see [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors)).
+>For a detailed overview of the CORS resource sharing policy in AEM see [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
 
 To access the GraphQL endpoint, a CORS policy must be configured in the customer Git repository. This is done by adding an appropriate OSGi CORS configuration file for the desired endpoint(s). 
 

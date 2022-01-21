@@ -1,18 +1,18 @@
 ---
 title: Logging for AEM as a Cloud Service
-description: Learn how to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging in AEM as a Cloud Service.
+description: Learn how to use Logging for AEM as a Cloud Service in order to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 ---
 # Logging for AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
 AEM as a Cloud Service is a platform for customers to include custom code to create unique experiences for their customer base. With this in mind, the logging service is a critical function in order to debug and understand code execution on local development, and cloud environments, particularly the AEM as a Cloud Service's Dev environments.
 
-AEM logging settings and log levels are managed in configuration files that are stored as part of the AEM project in Git, and deployed as part of the AEM project via Cloud Manager. Logging in AEM as a Cloud Service can be broken into two logical sets:
+AEM as a Cloud Service logging settings and log levels are managed in configuration files that are stored as part of the AEM project in Git, and deployed as part of the AEM project via Cloud Manager. Logging in AEM as a Cloud Service can be broken into two logical sets:
 
 * AEM logging, which performs logging at the AEM application level
 * Apache HTTPD Web Server/Dispatcher logging, which performs logging of the web server and Dispatcher on the Publish tier.
 
-## AEM Logging {#aem-loggin}
+## AEM Logging {#aem-logging}
 
 Logging at the AEM application level, is handled by three logs:
 
@@ -24,7 +24,7 @@ Logging at the AEM application level, is handled by three logs:
 >
 >HTTP requests that are served from Publish tier's Dispatcher cache or upstream CDN are not reflected in these logs.
 
-## AEM Java logging {#aem-java-logging}
+## AEM Java Logging {#aem-java-logging}
 
 AEM as a Cloud Service's provides access to Java log statements. Developers of applications for AEM should follow general Java logging best practices, logging pertinent statements about the execution of custom code, at the following log levels:
 

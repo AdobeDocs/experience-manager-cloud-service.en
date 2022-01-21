@@ -19,7 +19,7 @@ Cloud Manager will verify domain ownership via the TXT value and displays one of
    Verification in progress. This status is typically seen after you select the *verify again* icon next to the status.
 
 * **Verified, Deployment Failed** 
-   TXT verification was successful. However, the CDN deployment failed. An Adobe representative will be notified automatically.
+   TXT verification was successful. However, the CDN deployment failed. Please contact your Adobe representative.
 
 * **Domain Verified & Deployed**
    This status indicates that your custom domain name is ready to be used. 

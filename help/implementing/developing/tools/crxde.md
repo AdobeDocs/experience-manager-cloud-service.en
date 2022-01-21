@@ -20,11 +20,9 @@ To get started with CRXDE Lite:
 1. Enter your **username** and **password**.
 1. Click **OK**.
 
-The CRXDE Lite User Interface looks as follows in your browser:
+The CRXDE Lite User Interface appears as follows in your browser:
 
 ![The CRXDE Lite interface](assets/crxde-lite.png)
-
-You can now use CRXDE Lite to develop your application.
 
 >[!TIP]
 >
@@ -36,7 +34,7 @@ CRXDE Lite's user interface has many parts and has many functions.
 
 ### Top switcher bar {#top-switcher-bar}
 
-The Top Switcher Bar allows you to quickly switch between CRXDE Lite, Package Manager, and Package Share.
+The Top Switcher Bar allows you to quickly switch between CRXDE Lite and [Package Manager.](package-manager.md)
 
 ### Node Path Widget {#node-path-widget}
 
