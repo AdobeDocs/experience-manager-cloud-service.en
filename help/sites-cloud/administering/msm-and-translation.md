@@ -16,6 +16,10 @@ Adobe Experience Manager's built-in Multi Site Manager and translation tools sim
 
 These two features can be combined to cater for websites that are both [multinational and multilingual](#multinational-and-multilingual-sites).
 
+>[!TIP]
+>
+>If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+
 ## Multinational and Multilingual Sites {#multinational-and-multilingual-sites}
 
 You can efficiently create content for multinational and multilingual sites through the combined use of the Multi Site Manager and the translation workflow.

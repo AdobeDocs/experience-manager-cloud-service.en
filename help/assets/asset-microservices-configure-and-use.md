@@ -10,7 +10,7 @@ exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 
 Asset microservices provides for scalable and resilient processing of assets using cloud-native applications (also called workers). Adobe manages the services for optimal handling of different asset types and processing options.
 
-Asset microservices lets you process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of [!DNL Experience Manager]. For example, thumbnail extraction of PSD and PSB formats is now possible but previously required third-party solutions like [!DNL ImageMagick].
+Asset microservices lets you process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of [!DNL Experience Manager]. For example, thumbnail extraction of PSD and PSB formats is now possible but previously required third-party solutions such as [!DNL ImageMagick].
 
 Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**. Experience Manager provides a basic default set up and let administrators add more specific asset processing configuration. Administrators create, maintain, and modify the configurations of post-processing workflows, including optional customization. Customizing the workflows lets developers extend the default offering.
 
@@ -163,7 +163,7 @@ Apply processing profiles to folders using one of the following methods:
 >
 >Only one processing profile can be applied to a folder. To generate more renditions, add more rendition definitions to the existing processing profile.
 
-After a processing profile is applied to a folder, all the new assets uploaded (or updated) in this folder or any of it's sub-folders are processed using the additional processing profile configured. This processing is in addition to the standard, default profile.
+After a processing profile is applied to a folder, all the new assets uploaded (or updated) in this folder or any of its sub-folders are processed using the additional processing profile configured. This processing is in addition to the standard, default profile.
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ To know how to deploy an OSGi configuration, see [deploy to [!DNL Experience Man
 
 * Consider your needs for all types of renditions when designing workflows. If you do not foresee the need of a rendition in the future, remove its creation step from the workflow. Renditions cannot be deleted in bulk afterwards. Undesired renditions may take up a lot of storage space after prolonged use of [!DNL Experience Manager]. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can either customize [!DNL Experience Manager] to delete specific renditions or delete the assets and upload those again.
 * Currently, the support is limited to generating renditions. Generating new asset is not supported.
-* Currently, the file size limit for metadata extraction is approximately 10 GB. When uploading very large assets, sometimes metadata extraction operation fails.
+* Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading very large assets, sometimes metadata extraction operation fails.
 
 >[!MORELIKETHIS]
 >

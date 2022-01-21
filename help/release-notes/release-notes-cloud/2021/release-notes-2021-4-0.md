@@ -1,7 +1,6 @@
 ---
 title: Release Notes for 2021.4.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2021.4.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 ---
 
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}

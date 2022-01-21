@@ -1,8 +1,8 @@
 ---
 title: Registering Players in Screens as a Cloud Service
 description: This page describes how to register players in Screens as a Cloud Service.
+exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
 ---
-
 # Registering Players in Screens as a Cloud Service {#registering-players-screens-cloud}
 
 Once you have installed and configured players for Screens as a Cloud Service, you must register the players.
@@ -56,6 +56,11 @@ Follow the steps below to register your player:
 1. You should see this player now show up in **Players** from the left navigation panel. The code that displays in Screens Services Provider matches the **System Information** panel from the Admin UI under Player Code.
 
    ![image](/help/screens-cloud/assets/player/register-player6.png)
+
+   >[!IMPORTANT]
+   >**Security Best Practices Recommendation while using Registration Code**
+   >As a best practice, you can limit the registration code usage. If a registration code is compromised, but has a limit of 100 registrations, then the attacker can register only up to that number, but not more. You can always update the usage limit after the registration code is created and some of the customer's players have already been registered. If the customer observes unusual registration activity for a specific registration code, they can lower the limit in real-time while they investigate and can increase the number back if it was a false alarm, without impacting the already registered players.
+
 
 ## What's Next {#whats-next}
 

@@ -19,8 +19,6 @@ With the Sling Resource Merger, the overlay/override resources and/or properties
 
 * Where necessary, [properties](#properties) defined in the customization, indicate how content merged from the original is to be used.
 
-<!-- Still links to reference material in 6.5 -->
-
 >[!CAUTION]
 >
 >The Sling Resource Merger and related methods can only be used with the touch-enabled UI (which is the only UI available for AEM as a Cloud Service).
@@ -236,17 +234,3 @@ The Sling Resource Merger includes two custom resource providers - one for overl
 
         * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
-<!--
-### Example of Usage {#example-of-usage}
-
-Some examples are covered:
-
-* Overlay:
-
-    * [Customizing the Consoles](/help/sites-developing/customizing-consoles-touch.md)
-    * [Customizing Page Authoring](/help/sites-developing/customizing-page-authoring-touch.md)
-
-* Override:
-
-    * [Configuring your Page Properties](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
--->

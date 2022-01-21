@@ -7,13 +7,28 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 
 A user must be a Business Owner or Deployment Manager in order to add a Custom Domain name in Cloud Manager.
 
+The following steps must be completed as indicated in the table below:
+
+|Step||Responsibility|Learn More|
+|--- |--- |--- |---|
+|Add SLL Certificate|Add SLL Certificate|Customer|[Adding an SSL Certificate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en)|
+|Domain Verification|Add TXT record|Customer|[Adding a TXT Record](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en)|
+|Review Domain Verification Status||Customer||
+||Status: Domain Verification Failure|Customer|[Checking Domain Name Status](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en)|
+||Status: Verified, Deployment Failed|Contact Adobe representative|[Checking Domain Name Status](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en)|
+|Add DNS records that point to AEM as a Cloud Service by adding CNAME or APEX records|Configure DNS Settings|Customer|[Configuring DNS Settings](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=en)|
+|Check DNS Record Status||Customer|[Checking DNS Record Status](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en)|
+||Status: DNS status not detected|Customer|[Checking DNS Record Status](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en)|
+||Status: DNS resolves incorrectly|Customer||
+
+
 ## Important Considerations {#important-considerations}
 
 * Before adding a custom domain name, a valid SSL certificate that contains the custom domain name must be installed to your Program. Refer to [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) to learn more.
 
 * Domain names cannot be added to environments while there is a current running pipeline attached to those environments.
 
-* Only one domain name can be added at a time. However, domains cannot contain wildcards. Custom domains on the author side are not supported.
+* Only one domain name can be added at a time. Custom domains on the author side are not supported.
 
 * AEM as a Cloud Service does not support wildcard domains.
 
@@ -45,7 +60,7 @@ Follow the steps below to add a Custom Domain Name from Domain Settings page:
 1. Select the service either as **Publish** or **Preview**.
 
    >[!NOTE]
-   >Custom Domain Names are now supported in Cloud Manager for Sites programs for both Publish and Preview Services. Each Cloud Manager Environment can host up to a maximum of 250 custom domains per environment. To learn  more about Preview Service, refer to [Preview Service](/help/implementing/cloud-manager/manage-environments.md#preview-service).
+   >Custom Domain Names are now supported in Cloud Manager for Sites programs for both Publish and Preview Services. Each Cloud Manager Environment can host up to a maximum of 500 custom domains per environment. To learn  more about Preview Service, refer to [Preview Service](/help/implementing/cloud-manager/manage-environments.md#preview-service).
 
 1. Select the **Domain SSL Certificate** from the drop-down and select **Continue**.
 

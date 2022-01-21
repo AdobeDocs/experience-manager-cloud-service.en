@@ -17,7 +17,7 @@ As an introduction, the consortium provides a series of sections and supporting 
 
 In addition, see:
 
-* Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
+* Our [Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md).
 * The [Accessibility Conformance reports for Adobe solutions](https://www.adobe.com/accessibility/compliance.html).
 * [Accessibility in Assets](/help/assets/accessibility.md)
 * [Configuring the Rich Text Editor for producing accessible content](/help/implementing/developing/extending/rte-accessible-content.md)

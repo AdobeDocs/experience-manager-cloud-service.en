@@ -21,7 +21,8 @@ The following are other factors that determine the quality of your videos:
 
 See [Best Practices for Video Encoding](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-See also [Best Practices for organizing your digital assets for using Processing Profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
+See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/organize-assets.md).
+
 
 >[!NOTE]
 >
