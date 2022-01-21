@@ -19,9 +19,9 @@ To see an interactive, shoppable video in action, select [Live Demos](https://la
 
 * During playback, as products are used in the video, the identical product appears on the right as a thumbnail image.
 
-* To pause the video and open the product's Quickview, select the thumbnail. For example, select the KitchenAid thumbnail image in the video to experience a 360-degree spin view of the mixer, or zoom in to see mixer details.
+* To pause the video and open the product's Quickview, select the thumbnail. For example, select the KitchenAid thumbnail image in the video to experience a 360° spin view of the mixer, or zoom in to see mixer details.
 
-See also [Use Interactive Video with Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
+See also [Use Interactive Video with Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
 
 <!-- 
 
@@ -71,6 +71,10 @@ Interactive video steps:
 
 1. **Upload a video and its associated image assets** - Upload a video and associated images that you want to make interactive.
    See [Upload a video and its associated thumbnail assets](#uploading-a-video-and-its-associated-thumbnail-assets).
+
+   >[!NOTE]
+   >
+   >MXF video format is not yet supported for use with Interactive Videos in Dynamic Media.
 
 1. **Add interactivity to your video** - Add one or more time segments to the video. Then, associate image thumbnails within those time segments. Assign each image thumbnail to an action such as a hyperlink, a Quickview, or an Experience Fragment.
    (The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.)
@@ -229,6 +233,10 @@ See [Create a Viewer Preset](/help/assets/dynamic-media/managing-viewer-presets.
 ## Upload a video and its associated thumbnail assets {#uploading-a-video-and-its-associated-thumbnail-assets}
 
 If you have already uploaded your video and thumbnail assets, proceed to [Add interactivity to your video](#adding-interactivity-to-your-video).
+
+>[!NOTE]
+>
+>MXF video format is not yet supported for use with Interactive Videos in Dynamic Media.
 
 If you uploaded the wrong videos or images, or you want to delete uploaded videos or images that you no longer need, see [Delete Assets](/help/assets/manage-digital-assets.md#delete-assets).
 

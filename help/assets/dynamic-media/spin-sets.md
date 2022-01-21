@@ -35,6 +35,8 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
    At minimum, you need 8-12 shots of an item for a one-dimensional Spin Set and 16-24 for a two-dimensional Spin Set. The shots must be taken at regular intervals to give the impression that the item is rotating and being flipped. For example, if a one-dimensional Spin Set includes 12 shots, rotate the item 30° (360/12) for each shot.
 
+   See [Dynamic Media - Supported raster image formats](/help/assets/file-format-support.md#image-support-dynamic-media) for a list of formats supported by Spin Sets.
+
 1. [Create Spin Sets](#creating-spin-sets).
 
    To create a Spin Set, select **[!UICONTROL Create]** > **[!UICONTROL Spin Set]** and then name the set, choose the assets, and choose the order the images appear.
@@ -73,6 +75,8 @@ If necessary, you can [edit Spin Sets](#editing-spin-sets). In addition, you can
 
 At minimum, you need 8-12 shots of an item for a one-dimensional Spin Set. The shots must be taken at regular intervals to give the impression that the item is rotating and being flipped. For example, if a one-dimensional Spin Set includes 12 shots, rotate the item 30° (360/12) for each shot.
 
+See [Dynamic Media - Supported raster image formats](/help/assets/file-format-support.md#image-support-dynamic-media) for a list of formats supported by Spin Sets.
+
 You can upload images for the Spin Sets as you would [upload any other asset in Experience Manager Assets](/help/assets/manage-digital-assets.md).
 
 ### Guidelines for capturing images for your Spin Set {#guidelines-for-shooting-spin-set-images}
@@ -97,7 +101,7 @@ This section describes how to create Spin Sets.
 
 >[!NOTE]
 >
->The order in which images appear in a spin set matter. Be sure to order them so that the spin is a smooth 360-degree view.
+>The order in which images appear in a spin set matter. Be sure to order them so that the spin is a smooth 360° view.
 
 **To create Spin Sets:**
 
