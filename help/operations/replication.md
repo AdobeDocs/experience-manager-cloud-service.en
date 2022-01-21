@@ -9,7 +9,7 @@ Adobe Experience Manager as a Cloud Service  uses the [Sling Content Distributio
 
 >[!NOTE]
 >
->Read [Distribution](/help/core-concepts/architecture.md#content-distribution) for more information.
+>Read [Distribution](/help/overview/architecture.md#content-distribution) for more information.
 
 ## Methods of Publishing Content {#methods-of-publishing-content}
 
@@ -39,7 +39,7 @@ You can find more detailed information on Manage Publication on the [Publishing 
 
 >[!NOTE]
 >
->This approach should be considered deprecated since it does not persist statuses and is less scalable than other approaches. Adobe's recommendation is to use manage publication or workflow methods instead
+>This approach should be considered deprecated and will be removed on or after September 30th, 2021 since it does not persist statuses and is less scalable than other approaches. Adobe's recommendation is to use manage publication or workflow methods instead
 
 To perform a tree activation:
 
@@ -80,7 +80,7 @@ Alternatively, you can also achieve this by creating a Workflow Model that uses 
 
 1. Set any additional parameters in the **Arguments** field. Multiple comma separated arguments can be stringed together. For example:
    
-   `enableVersion=true,agentId=publish`  
+   `enableVersion=true,agentId=publish,includeChildren=true`  
 
    
    >[!NOTE]
@@ -91,10 +91,11 @@ Alternatively, you can also achieve this by creating a Workflow Model that uses 
 
 **Parameters**
 
+* `includeChildren` (boolean value, default: `false`). false means only the path is published. true means children are published too.
 * `replicateAsParticipant` (boolean value, default: `false`). If configured as `true`, the replication is using the `userid` of the principal which performed the participant step.
 * `enableVersion` (boolean value, default: `true`). This parameter determines if a new version is created upon replication.
 * `agentId` (string value, default means only agents for publish are used). It is recommended to be explicit about the agentId; for example, setting it the value: publish. Setting the agent to `preview` will publish to the preview service
-* `filters` (string value, default means all paths are activated). Available values are:
+* `filters` (string value, default means all paths are activated). Available values are: 
   * `onlyActivated` - only paths which are not marked as activated will be activated.
   * `onlyModified` - activate only paths which are already activated and have a modification date later than the activation date.
   * The above can be ORed with a pipe "|". For example, `onlyActivated|onlyModified`.  
