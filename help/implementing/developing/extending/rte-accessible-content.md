@@ -141,5 +141,5 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 
 >[!MORELIKETHIS]
 >
->* [A quick guide to WCAG standards](/help/onboarding/accessibility/quick-guide-wcag.md)
+>* [A quick guide to WCAG standards](/help/compliance/accessibility/quick-guide-wcag.md)
 >* [How to create accessible content in Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)

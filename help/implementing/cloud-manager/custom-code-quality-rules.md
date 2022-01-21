@@ -586,6 +586,87 @@ public class DontDoThis implements Page {
 }
 ```
 
+### Custom Lucene Oak Indexes Must Have a tika Configuration {#oakpal-indextikanode}
+
+**Key**: IndexTikaNode
+
+**Type**: Bug
+
+**Severity**: Blocker
+
+**Since**: 2021.8.0
+
+Multiple out of the box AEM Oak indexes include a tika configuration and customizations of these indexes **must** include a tika configuration. This rule checks for customizations of the `damAssetLucene`, `lucene`, and `graphqlConfig` indexes and raises an issue if either the `tika`  node is missing or if the `tika` node is missing a child node named `config.xml`.
+
+Refer to [Indexing Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) for more information on customizing index definitions.
+
+#### Non Compliant Code {#non-compliant-code-indextikanode}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+```
+
+#### Compliant Code {#compliant-code-indextikanode}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### Custom Lucene Oak Indexes must not be synchronous {#oakpal-indexasync}
+
+**Key**: IndexAsyncProperty
+
+**Type**: Bug
+
+**Severity**: Blocker
+
+**Since**: 2021.8.0
+
+Oak indexes of type lucene  must always be asynchronously indexed. Failure to do this may result in system instability. More information on the structure of lucene indexes can be found in the [Oak documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
+
+#### Non Compliant Code {#non-compliant-code-indexasync}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+#### Compliant Code {#compliant-code-indexasync}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
 ### Custom DAM Asset Lucene Oak Indexes are properly structured  {#oakpal-damAssetLucene-sanity-check}
 
 **Key**: IndexDamAssetLucene
@@ -596,38 +677,31 @@ public class DontDoThis implements Page {
 
 **Since**: 2021.6.0
 
-In order for asset search to work correctly in AEM Assets, the `damAssetLucene` Oak index must follow a set of guidelines. This rule checks for the following patterns specifically for indexes whose name contains `damAssetLucene`:
-
-The name must follow the guidelines for customizing index definitions described here. 
-
-* Specifically the name must follow the pattern `damAssetLucene-<indexNumber>-custom-<customerVersionNumber>`.
-
-* The index definition must have a multi-valued property named tags  which contains the value `visualSimilaritySearch`.
-
-* The index definition must have a child node named `tika` and that child node must have a child node named config.xml .
+In order for asset search to work correctly in AEM Assets, customizations of the the `damAssetLucene` Oak index must follow a set of guidelines which are specific to this index. This rule checks that the index definition must have a multi-valued property named `tags` which contains the value `visualSimilaritySearch`.
 
 #### Non Compliant Code {#non-compliant-code-damAssetLucene}
 
 ```+ oak:index
-    + damAssetLucene-1-custom
-      - async: [async, nrt]
-      - evaluatePathRestrictions: true
-      - includedPaths: /content/dam
-      - reindex: false
-      - type: lucene
+    + damAssetLucene-1-custom
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+      + tika
+        + config.xml
 ```
 
 #### Compliant Code {#compliant-code-damAssetLucene}
 
 ```+ oak:index
-    + damAssetLucene-1-custom-2
-      - async: [async, nrt]
-      - evaluatePathRestrictions: true
-      - includedPaths: /content/dam
-      - reindex: false
-      - reindexCount: -6952249853801250000
-      - tags: [visualSimilaritySearch]
-      - type: lucene
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
       + tika
         + config.xml
 ```
@@ -929,11 +1003,11 @@ AEM Cloud Service requires that custom search index definitions (that is, nodes 
 
 **Key**: IndexType
 
-**Type**: Code Smell
+**Type**: Bug
 
-**Severity**: Minor
+**Severity**: Blocker
 
-**Since**: Version 2021.2.0
+**Since**: Version 2021.2.0 (changed type and severity in 2021.8.0)
 
 AEM Cloud Service requires that custom search index definitions (i.e. nodes of type oak:QueryIndexDefinition) have a type property with the value set to **lucene**. Indexing using legacy index types must be updated before migration to AEM Cloud Service. See [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) for more information.
 

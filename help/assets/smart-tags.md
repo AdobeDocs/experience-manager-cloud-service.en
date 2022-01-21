@@ -7,13 +7,13 @@ role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 ---
 
-# Add smart tags to your assets to improve search experience {#smart-tag-assets-for-faster-search}
+# Add smart tags to your assets and improve search experience {#smart-tag-assets-for-faster-search}
 
 Organizations that deal with digital assets increasingly use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for their digital assets. Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved in searches.
 
 Compared to natural language vocabularies, tagging based on business taxonomy helps align the assets with a company's business and ensures that the most relevant assets appear in searches. For example, a car manufacturer can tag car images with model names so only relevant images are displayed when searched to design a promotion campaign.
 
-In the background, the the functionality uses the artificially intelligent framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. [!DNL Experience Manager Assets] automatically applies smart tags to uploaded assets, by default.
+In the background, the functionality uses the artificially intelligent framework of [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. [!DNL Experience Manager Assets] automatically applies smart tags to uploaded assets, by default.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -94,7 +94,7 @@ Ensure that the images in the training set conform to the following guidelines:
 * Create a tag model that only includes,
 
   * The tags related to car models.
-  * The tags related to jackets for women and men.
+  * The tags related to jackets for adults and kids.
 
 * Do not create,
 
@@ -133,8 +133,8 @@ To check whether the Smart Tags service is trained on your tags in the training 
 1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
 1. Specify a title and description for the report. Under **[!UICONTROL Schedule Report]**, leave the **[!UICONTROL Now]** option selected. If you want to schedule the report for later, select **[!UICONTROL Later]** and specify a date and time. Then, click **[!UICONTROL Create]** from the toolbar.
 1. In the **[!UICONTROL Asset Reports]** page, select the report you generated. To view the report, click **[!UICONTROL View]** from the toolbar.
-1. Review the details of the report. The report displays the training status for the tags you trained. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Tags service is trained for the tag. Yellow color indicates that the service is not completely trained for a particular tag. In this case, add more images with the particular tag and run the training workflow to train the service completely on the tag. If you do not see your tags in this report, run the training workflow again for these tags.Tags
-1. To download the report, select it from the list, and click **[!UICONTROL Download]** from the toolbar. The report downloads as a [!DNL Microsoft Excel] spreadsheet.
+1. Review the details of the report. The report displays the training status for the tags you trained. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Tags service is trained for the tag. Yellow color indicates that the service is partially trained for a particular tag. To train the service completely for a tag, add more images with the particular tag and execute the training workflow. If you do not see your tags in this report, execute the training workflow again for these tags.Tags
+1. To download the report, select it from the list, and click **[!UICONTROL Download]** from the toolbar. The report downloads as a spreadsheet.
 
 <!--
 ### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
@@ -177,7 +177,7 @@ All types of supported assets are automatically tagged by [!DNL Experience Manag
 
 * For images and videos, the Smart Tags are based on some visual aspect.
 
-* For text-based assets, the efficacy of Smart Tags does not depend on the amount of text in the asset but on the relevant keywords or entities present in the text of the asset. For text-based assets, the Smart Tags are the keywords that appear in the text but the ones that best describe the asset. For supported assets, [!DNL Experience Manager] already extracts the text, which is then indexed and is used to search for the assets. However, Smart Tags based on keywords in the text provide a dedicated, structured, and higher priority search facet that is used to improve asset discovery as compared to full search index.
+* For text-based assets, the efficacy of Smart Tags does not depend on the amount of text in the asset but on the relevant keywords or entities present in the text of the asset. For text-based assets, the Smart Tags are the keywords that appear in the text but the ones that best describe the asset. For supported assets, [!DNL Experience Manager] already extracts the text, which is then indexed and is used to search for the assets. However, Smart Tags based on keywords in the text provide a dedicated, structured, and higher priority search facet. The latter helps improve asset discovery as compared to a search index.
 
 ## Manage smart tags and asset searches {#manage-smart-tags-and-searches}
 
@@ -187,13 +187,13 @@ Moderating smart tags also helps refine tag-based searches for assets by ensurin
 
 You can also assign a higher rank to a tag to increase the tag's relevance for the asset. Promoting a tag for an asset increases the chances of the asset appearing in search results when a search is performed based on the particular tag.
 
-To moderate the smart tags of your assets:
+To moderate the smart tags of your digital assets:
 
-1. In the search field, search for assets based on a tag.
+1. In the search field, search for digital assets based on a tag.
 
-1. Inspect the search results to identify the assets that you do not find relevant to your search.
+1. To identify the digital assets that you do not find relevant to your search, inspect the search results.
 
-1. Select the asset, and then select ![Manage tags icon](assets/do-not-localize/manage-tags-icon.png) from the toolbar.
+1. Select an asset, and then select ![Manage tags icon](assets/do-not-localize/manage-tags-icon.png) from the toolbar.
 
 1. From the **[!UICONTROL Manage Tags]** page, inspect the tags. If you do not want the asset to be searched based on a specific tag, then select the tag and select ![Delete icon](assets/do-not-localize/delete-icon.png) from the toolbar. Alternatively, select `X` symbol next to the label.
 
@@ -207,9 +207,9 @@ To moderate the smart tags of your assets:
 
 By default, [!DNL Experience Manager] search combines the search terms with an `AND` clause. Using smart tags does not change this default behavior. Using smart tags adds an `OR` clause to find any of the search terms in the applied smart tags. For example, consider searching for `woman running`. Assets with just `woman` or just `running` keyword in the metadata do not appear in the search results by default. However, an asset tagged with either `woman` or `running` using smart tags appears in such a search query. So the search results are a combination of,
 
-* assets with `woman` and `running` keywords in the metadata.
+* Assets with `woman` and `running` keywords in the metadata.
 
-* assets smart tagged with either of the keywords.
+* Assets smart tagged with either of the keywords.
 
 The search results that match all search terms in metadata fields are displayed first, followed by the search results that match any of the search terms in the smart tags. In the above example, the approximate order of display of search results is:
 
@@ -217,21 +217,23 @@ The search results that match all search terms in metadata fields are displayed 
 1. matches of `woman running` in smart tags.
 1. matches of `woman` or of `running` in smart tags.
 
-## Tagging limitations and best practices {#limitations}
+## Tagging-related limitations and best practices {#limitations}
 
 Enhanced smart tagging is based on learning models of images and their tags. These models are not always perfect at identifying tags. The current version of the Smart Tags has the following limitations:
 
 * Inability to recognize subtle differences in images. For example, slim-fit versus regular-fit shirts.
 * Inability to identify tags based on tiny patterns or parts of an image. For example, logos on shirts.
 * Tagging is supported in the languages that [!DNL Experience Manager] supports. For a list of languages, see [Smart Content Service release notes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
-* Tags that are not realistically handled are related to:
+* The tags that are not handled relate to:
 
-  * Non-visual, abstract aspects. For example, the year or season of release of a product, mood of or emotion evoked by an image, subjective connotation of a video, and so on.
+  * Non-visual, abstract aspects. For example, the year or season of release of a product, mood of or emotion evoked by an image, and a subjective connotation of a video.
   * Fine visual differences in products such as shirts with and without collars or small product logos embedded on products.
 
-<!-- TBD: Add limitations related to text-based assets. -->
+To train the model, use the most appropriate images. The training cannot be reverted or training model cannot be removed. Your tagging accuracy depends on the current training, so do it carefully.
 
-To search for assets with smart tags (regular or enhanced), use the [!DNL Assets] search (full-text search). There is no separate search predicate for smart tags.
+<!-- TBD: Add limitations related to text files. -->
+
+To search for files with smart tags (regular or enhanced), use the [!DNL Assets] search (full-text search). There is no separate search predicate for smart tags.
 
 >[!NOTE]
 >
@@ -240,5 +242,5 @@ To search for assets with smart tags (regular or enhanced), use the [!DNL Assets
 
 >[!MORELIKETHIS]
 >
->* [Understand how smart tags help manage assets](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
->* [Smart tag the video assets](smart-tags-video-assets.md)
+>* [Understand how smart tags help manage your digital files](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [Use Smart Tags for videos](smart-tags-video-assets.md)

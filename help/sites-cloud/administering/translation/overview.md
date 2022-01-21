@@ -12,6 +12,10 @@ Automate the translation of page content and assets to create and maintain multi
 * **Human translation:** Content is sent to your translation provider and translated by professional translators. When complete, the translated content is returned and imported into AEM. When your translation provider is integrated with AEM, content is automatically sent between AEM and the translation provider.
 * **Machine translation:** The machine translation service immediately translates your content.
 
+>[!TIP]
+>
+>If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+
 Translating content involves the following steps:
 
 1. [Connect AEM with your translation service provider](integration-framework.md#connecting-to-a-translation-service-provider) and [create translation integration framework configurations](integration-framework.md).

@@ -7,11 +7,13 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 
 >[!NOTE]
 >
->The Preview feature is part of the 2021.5.0 release and will be rolled out gradually over the next few weeks.
+>To enable the preview feature on environments created before August 3rd, 2021, make sure the environment is at AEM version 2021.05.5368.20210529T101701Z or higher and then execute a customer-initiated pipeline.
 
 AEM offers a Sites Preview Service that is designed to let developers and content authors preview a website's final experience before it reaches the publish environment and is available publicly.
 
 It facilitates previewing of page experiences that would not be otherwise visible from the author environment, like page transitions and other publish side only content.
+
+Also read about [accessing the Preview service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Publishing Content to Preview {#publishing-content-to-preview}
 
@@ -34,7 +36,7 @@ You can publish content to the Preview Service by using the Managed Publicaton U
    https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
    ```
 
-See [Manage your Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) for more information on how to get the URLs for your environments.
+See [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for more information on how to get the URLs for your environments.
 
 Content may also be published to preview by using a [Publish Content Tree Workflow](/help/operations/replication.md#publish-content-tree-workflow) with the agentId parameter set to preview or by using the [replication API](/help/operations/replication.md#replication-api) with an AgentFilter configured for preview.
 
@@ -61,4 +63,4 @@ Follow these steps in order to debug the preview tier using the Developer Consol
 
 * In the [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), select either **-- All Preview --** or a production environment that includes **prev** in its name
 * Generate the relevant information for the preview instance
-See [Manage your Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) for more information on how to get the URLs for your environments.
+See [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for more information on how to get the URLs for your environments.

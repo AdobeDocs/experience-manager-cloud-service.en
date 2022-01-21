@@ -7,6 +7,10 @@ exl-id: 51b98c24-5566-4088-9010-bd39841a1633
 ---
 # Translation Best Practices {#translation-best-practices}
 
+>[!TIP]
+>
+>If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+
 ## General {#general}
 
 Creating or expanding a global web presence can be a complex process, but with good forethought and planning AEM can simplify your efforts and support your global business goals.

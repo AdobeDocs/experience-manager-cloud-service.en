@@ -177,15 +177,15 @@ You initiate the request to use Smart Imaging; it is not automatically enabled.
 
 By default, Smart Imaging DPR and network optimization is disabled (turned off) for a Dynamic Media company account. If you want to enable (turn on) one or both of these out-of-the-box enhancements, create a support case as described below.
 
-The release schedule for Smart Imaging DPR and network optimization is as follows:
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is available in North as follows:
 
 | Region | Target date |
 |---|---|
 | North America | Live | 
 | Europe, Middle East, Africa | 13 August 2021 | 
-| Asia-Pacific | 22 July 2021 |
+| Asia-Pacific | 22 July 2021 | -->
 
-1. [Use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+1. [Use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. Provide the following information in your support case:
 
     1. Primary contact name, email, phone.
@@ -206,10 +206,10 @@ The release schedule for Smart Imaging DPR and network optimization is as follow
        Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media Classic domain, you can request moving over to your own custom domain as part of this transition.
     1. Indicate if you want it to work over HTTP/2.
 
-1. Adobe Customer Care adds you to the Smart Imaging customer Wait List based on the order in which requests are submitted.
-1. When Adobe is ready to handle your request, Customer Care contacts you to coordinate and set a target date.
+1. Adobe Customer Support adds you to the Smart Imaging customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date.
 1. **Optional**: You can optionally test Smart Imaging in Staging before Adobe pushes the new feature to production.
-1. You are notified after completion by Customer Care.
+1. You are notified after completion by Customer Support.
 1. To maximize the performance improvements of Smart Imaging, Adobe recommends setting the Time To Live (TTL) to 24 hours or longer. The TTL defines how long assets are cached by the CDN. To change this setting:
 
     1. If you use Dynamic Media Classic, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
@@ -217,7 +217,7 @@ The release schedule for Smart Imaging DPR and network optimization is as follow
 
 ## When can I expect my account to be enabled with Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-Requests are processed in the order in which they are received by Customer Care, according to the Wait List.
+Requests are processed in the order in which they are received by Customer Support, according to the Wait List.
 
 >[!NOTE]
 >
@@ -274,4 +274,9 @@ How does Smart Imaging DPR optimization work with Adobe Experience Manager Sites
 * Given Dynamic Media Foundation Component is configured by default for DPR optimization, to avoid oversized images owing to server-side Smart Imaging DPR optimization, `dpr=off` is always added to Dynamic Media Foundation Component images. Even if customer deselects DPR optimization in DM Foundation Component, server-side Smart Imaging DPR does not kick in. In summary, in the DM Foundation Component, DPR optimization comes into effect based on DM Foundation Component level setting only.
 * Any viewer side DPR optimization works in tandem with server-side Smart Imaging DPR optimization, and does not result in over-sized images. In other words, wherever DPR is handled by the viewer, such as the main view only in a zoom-enabled viewer, the server-side Smart Imaging DPR values are not triggered. Likewise, wherever viewer elements, such as swatches and thumbnails, do not have DPR handling, the server-side Smart Imaging DPR value is triggered.
 
-See also [When working with images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop). -->
+See also [When working with images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+
+>[!MORELIKETHIS]
+>
+>* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+>
