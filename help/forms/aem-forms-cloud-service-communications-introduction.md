@@ -14,15 +14,14 @@ You can generate a document on demand or create a batch job to generate multiple
 
 * streamlined on-demand and batch documentation generation capabilities
 
-* provide HTTP APIs for easier integration with existing systems
+* HTTP APIs for easier integration with existing systems. Separate APIs for on demand (low-latency) and batch operations (high-throughput operations) are included. It makes document generation an efficient task.
 
 * a secure access to data. Communications APIs connect to and access data only from customer designated data repositories, makes no local copies of data, making Communications highly secure.
 
-* separate APIs for low-latency and high-throughput operations making document generation an efficient task.
-
 ![A sample credit card statement](assets/statement.png)
+A credit card statement can be created using Communications APIs. This sample statement uses same template but seperate data for each customer depending on their usage of credit card.
 
-## How it works? 
+## How it works?
 
 Communications utilizes [PDF and XFA templates](#supported-document-types) with [XML data](#form-data) to generate a single document on demand or multiple documents using a batch job at defined interval.
 
@@ -137,17 +136,16 @@ Before start generating documents using Communication APIs, go through the follo
 
 ### Form data {#form-data}
 
-Communications APIs accept a form design that is typically created in [Designer](use-forms-designer.md) and XML form data as input. To populate a document with data, an XML element must exist in the XML form data for every form field that you want to populate. The XML element name must match the field name. An XML element is ignored if it does not correspond to a form field or if the XML element name does not match the field name. It is not necessary to match the order in which the XML elements are displayed. The important factor is that the XML elements are specified with corresponding values.
+Communications APIs accept a form design that is typically created in [Designer](use-forms-designer.md) and XML form data as input. To populate a document with data, an XML element must exist in the XML form data for every form field that you want to populate. The XML element name must match the field name. If an XML element does not correspond to a form field or if the XML element name does not match the field name, the XML element is ignored. It is not necessary to match the order in which the XML elements are displayed. The important factor is that the XML elements are specified with corresponding values.
 
 Consider the following example loan application form:
 
 ![Loan application Form](assets/loanFormData.png)
 
-To merge data into this form design, create an XML data source that corresponds to the form. The following XML represents an XML data source that corresponds to the example mortgage application form.
+To merge data into this form design, create an XML data source that corresponds to the form hierarchy, field naming, and data types. The following XML represents an XML data source that corresponds to the example mortgage application form.
 
 ```XML
 
-<?xml version="1.0" encoding="UTF-8" ?>
 * <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
 * <xfa:data>
 * <data>
@@ -193,11 +191,11 @@ For email functionality, you can create a process in Experience Manager Workflow
 
 ### Printable areas {#printable-areas}
 
-The default 0.25-inch nonprintable margin is not exact for label printers and varies from printer to printer and from label size to label size. It is recommended that you keep the 0.25-inch margin or reduce it. However, it is recommended that you do not increase the nonprintable margin. Otherwise, information in the printable area does not print properly.
+The default 0.25-inch nonprintable margin is not exact for label printers and varies from printer to printer and from label size to label size however, it is recommended that you keep the 0.25-inch margin or reduce it. However, it is recommended that you do not increase the nonprintable margin. Otherwise, information in the printable area does not print properly.
 
 Always ensure that you use the correct XDC file for the printer. For example, avoid choosing an XDC file for a 300-dpi printer and sending the document to a 200-dpi printer.
 
-### Scripts {#scripts}
+### Scripts for XFA forms (XDP/PDF) only {#scripts}
 
 A form design that is used with the Communications APIs can contain scripts that run on the server. Ensure that a form design does not contain scripts that run on the client. For information about creating form design scripts, see [Designer Help](use-forms-designer.md).
 
@@ -246,8 +244,8 @@ A device profile (XDC file) is a printer description file in XML format. This fi
 
 * dpl600.xdc
 
-You may use the provided XDC files to generate print documents or modify them as per your requirement. 
-<!-* It is not necessary to modify these files to create documents. However, you can modify them to meet your business requirements. -->
+You may use the provided XDC files to generate print documents or modify them as per your requirement.
+<!-- It is not necessary to modify these files to create documents. However, you can modify them to meet your business requirements. -->
 
 These files are reference XDC files that support the features of specific printers, such as resident fonts, paper trays, and stapler. The purpose of these reference is to help you understand how to set up your own printers by using device profiles. The reference are also a starting point for similar printers in the same product line.
 
