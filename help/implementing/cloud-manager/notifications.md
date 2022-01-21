@@ -1,8 +1,8 @@
 ---
 title: Notifications - Cloud Service
 description: Notifications - Cloud Service
+exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 ---
-
 # Understanding Notifications {#notifications} 
 
 [!UICONTROL Cloud Manager] allows the user to receive notifications when the production pipeline starts and completes (successfully or unsuccessfully), at the start of a production deployment. These notifications are sent through the Adobe [!UICONTROL Experience Cloud] Notification system.

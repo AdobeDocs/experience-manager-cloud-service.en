@@ -1,8 +1,8 @@
 ---
 title: Viewing Updating and Replacing an SSL Certificate - Managing SSL 
 description: Viewing Updating and Replacing an SSL Certificate - Managing SSL Certificates
+exl-id: 662494b1-a710-4822-97ef-057043ef89ba
 ---
-
 # Viewing & Updating & Replacing an SSL Certificate  {#view-update-replace-ssl-certificate}
 
 ## Viewing and Updating an SSL Certificate {#view-update}

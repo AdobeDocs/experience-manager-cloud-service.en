@@ -1,8 +1,9 @@
 ---
 title: AEM Version Updates
 description: AEM Version Updates 
+feature: Deploying
+exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 ---
-
 # AEM Version Updates {#aem-version-updates}
 
 ## Introduction {#introduction}
@@ -28,7 +29,7 @@ AEM version updates are of two types:
 
 AEM updates go through an intense and fully automated product validation pipeline involving multiple steps ensuring no disruption of service for any systems in production. Health checks are used to monitor the health of the application. If these checks fail during an AEM as a Cloud Service update, the release will not proceed and Adobe will investigate why the update caused this unexpected behavior. 
 
-[Product tests and Customer functional tests](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) which prevent product upgrades and customer code pushes from breaking production are also validated during an AEM version update.
+[Product tests and Customer functional tests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) which prevent product upgrades and customer code pushes from breaking production are also validated during an AEM version update.
 
 >[!NOTE]
 >
@@ -39,4 +40,3 @@ AEM updates go through an intense and fully automated product validation pipelin
 As mentioned above, updates in most cases will incur zero downtime, including for the author, which is a cluster of nodes. Rolling updates are possible due to the *composite node store* feature in Oak. 
 
 This feature allows AEM to reference multiple repositories simultaneously. In a rolling deployment, the new Green AEM version contains its own `/libs` (the TarMK based immutable repository), distinct from the older Blue AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content` , `/conf` , `/etc` and others. Because both the Blue and the Green have their own versions of `/libs`, they can both be active during the rolling update, both taking on traffic until the blue is fully replaced by the green.
- 

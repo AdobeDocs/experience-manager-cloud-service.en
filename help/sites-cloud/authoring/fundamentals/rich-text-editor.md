@@ -1,8 +1,8 @@
 ---
 title: Use the Rich Text Editor in [!DNL Adobe Experience Manager] to author content.
 description: Use the [!DNL Experience Manager] Rich Text Editor to author content.
+exl-id: 15c175f8-11de-4475-87a9-920219a4c004
 ---
-
 # Use the Rich Text Editor to author content {#use-rich-text-editor-to-author-content}
 
 The Rich Text Editor (RTE) is a basic building block to add textual content to [!DNL Adobe Experience Manager]. Also, many other components that allow authoring are based on RTE. Experience Manager developers can customize RTE and administrators configure RTE for use by authors.

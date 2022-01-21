@@ -1,8 +1,8 @@
 ---
 title: Deleting a Custom Domain Name
 description: Deleting a Custom Domain Name
+exl-id: febe647b-46df-47cb-b542-c05bf03ac88d
 ---
-
 # Deleting a Custom Domain Name {#deleting-cdn}
 
 A user must be in the Business Owner or Deployment Manager role to be able to delete a custom domain name in Cloud Manager.

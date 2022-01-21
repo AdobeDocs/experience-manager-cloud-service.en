@@ -1,8 +1,8 @@
 ---
 title: Content Fragments Configuring Components for Rendering
 description: Content Fragments Configuring Components for Rendering
+exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
 ---
-
 # Content Fragments Configuring Components for Rendering{#content-fragments-configuring-components-for-rendering}
 
 There are several [advanced services](#definition-of-advanced-services-that-need-configuration) related to the rendering of content fragments. To use these services, the resource types of such components must make themselves known to the content fragments framework.
@@ -142,4 +142,3 @@ dam.cfm.component.fileReferenceProp="fragmentPath"
 dam.cfm.component.elementsProp="elementName"
 dam.cfm.component.variationProp="variationName"
 ```
-

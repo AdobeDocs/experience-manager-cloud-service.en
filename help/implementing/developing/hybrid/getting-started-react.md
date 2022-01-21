@@ -1,8 +1,8 @@
 ---
 title: Getting Started with SPAs in AEM Using React
 description: This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the React framework.
+exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 ---
-
 # Getting Started with SPAs in AEM Using React {#getting-started-with-spas-in-aem-using-react}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using SPA frameworks.
@@ -99,7 +99,7 @@ Once built, the package can be uploaded to an AEM instance.
 
 ### AEM Project Archetype {#aem-project-archetype}
 
-Any AEM project should leverage the [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
+Any AEM project should leverage the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
 
 ## Application Structure {#application-structure}
 

@@ -1,8 +1,8 @@
 ---
 title: Personalization and Content Targeting
 description: Learn how AEM can create personalized content
+exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 ---
-
 # Personalization and Content Targeting {#personalization}
 
 ## Personalization and Content Targeting {#personalization-and-content-targeting}

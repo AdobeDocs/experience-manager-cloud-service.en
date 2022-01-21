@@ -1,8 +1,8 @@
 ---
 title: Deleting an SSL Certificate - Managing SSL Certificates
 description: Deleting an SSL Certificate - Managing SSL Certificates
+exl-id: 43f66871-cca4-4709-95d0-68aa715c0da2
 ---
-
 # Deleting an SSL Certificate {#deleting-an-ssl-certificate}
 
 >[!IMPORTANT]

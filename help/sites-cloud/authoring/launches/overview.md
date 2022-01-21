@@ -1,8 +1,8 @@
 ---
 title: Launches
 description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
+exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 ---
-
 # Launches {#launches}
 
 Launches enable you to efficiently develop content for a future release.

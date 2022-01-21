@@ -1,8 +1,8 @@
 ---
 title: Deleting IP Allow List 
 description: Deleting IP Allow List
+exl-id: 34414915-0078-4acb-94df-b84043ce63d8
 ---
-
 # Deleting an IP Allow List {#delete-allow-list}
 
 Follow the steps below to delete an IP Allow List:
@@ -15,4 +15,3 @@ Follow the steps below to delete an IP Allow List:
 
 >[!NOTE]
 >Deleting an IP Allow List will automatically Unapply all services from it and delete it from the table.
-

@@ -1,8 +1,8 @@
 ---
 title: Decoration Tag
 description: When a component in a web page is rendered, an HTML element can be generated, wrapping the rendered component within itself. For developers, AEM offers clear and simple logic controlling the decoration tags that wrap included components.
+exl-id: a90fd619-eff6-466f-9178-90374f988b5d
 ---
-
 # Decoration Tag {#decoration-tag}
 
 When a component in a web page is rendered, an HTML element can be generated, wrapping the rendered component within itself. This primarily serves two purposes:
@@ -49,7 +49,7 @@ The behavior of the wrapper can also be fully controlled.
 
 It is possible to fully control the behavior of the wrapper tags from HTL scripts and their associated logic.
 
-For further information about developing in HTL see the [HTL documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html).
+For further information about developing in HTL see the [HTL documentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html).
 
 ### Decision Tree {#decision-tree}
 

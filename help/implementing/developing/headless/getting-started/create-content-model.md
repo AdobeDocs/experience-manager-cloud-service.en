@@ -1,11 +1,11 @@
 ---
 title: Creating Content Fragment Models Headless Quick Start Guide
-description: Content Fragment Models define the structure of the content you will create and serve using AEM's headless capabilities.
+description: Define the structure of the content you will create and serve using AEM's headless capabilities by using Content Fragment Models.
+exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 ---
-
 # Creating Content Fragment Models Headless Quick Start Guide {#creating-content-fragment-models}
 
-Content Fragment Models define the structure of the content you will create and serve using AEM's headless capabilities.
+Define the structure of the content you will create and serve using AEM's headless capabilities by using Content Fragment Models.
 
 ## What are Content Fragment Models? {#what-are-content-fragment-models}
 
@@ -35,15 +35,20 @@ An information architect would perform these tasks only sporadically as new mode
 1. Once you place a field, you must configure its properties. The editor will automatically switch to the **Properties** tab for the added field where you can provide the mandatory fields.
 
    ![Configure properties](../assets/models-configure-properties.png)
-1. When you are finished building your model, tap or click **Save**. The newly-created model is saved in **Draft** mode.
 
-   ![Model in draft mode](../assets/models-draft.png)
-1. The model must be enabled in order to use it (if not already enabled). Select the model you just created and then tap or click **Enable**.
+1. When you are finished building your model, tap or click **Save**. 
 
-   ![Enabling the model](../assets/models-enable.png)
-1. Confirm enabling the model by tapping or clicking **Enable** in the confirmation dialog.
+1. The mode of the newly-created model depends on whether you selected **Enable Model** when creating the model:
+   * selected - the new model will already be **Enabled**
+   * not selected - the new model will be created in **Draft** mode
 
-   ![Enabling confirmation dialog](../assets/models-enabling.png)
+1. If not already enabled, the model must be **Enabled** in order to use it. 
+   1. Select the model you just created and then tap or click **Enable**.
+
+      ![Enabling the model](../assets/models-enable.png)
+   1. Confirm enabling the model by tapping or clicking **Enable** in the confirmation dialog.
+
+      ![Enabling confirmation dialog](../assets/models-enabling.png)
 1. The model is now enabled and ready to use.
 
    ![Model enabled](../assets/models-enabled.png)

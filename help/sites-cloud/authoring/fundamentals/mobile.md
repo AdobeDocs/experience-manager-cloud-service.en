@@ -1,8 +1,8 @@
 ---
 title: Authoring a Page for Mobile Devices
 description: When authoring for mobile, you can switch between several emulators to see what the end-user sees
+exl-id: fabd4468-3304-402f-9522-342da3bbae94
 ---
-
 # Authoring a Page for Mobile Devices {#authoring-a-page-for-mobile-devices}
 
 Adobe Experience Manager pages are based on a responsive layout. [Responsive layout](/help/sites-cloud/authoring/features/responsive-layout.md) adapts your content to fit the target device automatically, eliminating the need to author content for specific devices.

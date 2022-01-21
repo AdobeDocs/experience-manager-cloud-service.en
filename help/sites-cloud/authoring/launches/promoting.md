@@ -1,8 +1,8 @@
 ---
 title: Promoting Launches
-description: You need to promote launch pages to move the content back into the source (production) before publishing. 
+description: You need to promote launch pages to move the content back into the source (production) before publishing.
+exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 ---
-
 # Promoting Launches {#promoting-launches}
 
 You need to promote launch pages to move the content back into the source (production) before publishing. When a launch page is promoted, the corresponding page of the source pages is replaced with the content of the promoted page. The following options are available when promoting a launch page:

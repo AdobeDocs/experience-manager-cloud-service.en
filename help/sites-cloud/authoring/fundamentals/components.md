@@ -1,8 +1,8 @@
 ---
 title: Components
 description: Components are the fundamental authoring building block of content pages in AEM
+exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 ---
-
 # Components {#components}
 
 Components are the fundamental authoring building block of content pages in Adobe Experience Manager (AEM). Components such as images, text, titles, etc. can be easily dragged and dropped to build your content.
@@ -33,7 +33,7 @@ The [Components Console](/help/sites-cloud/authoring/features/components-console
 
 ## Core Components {#core-components}
 
-The [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) offer flexible and feature-rich authoring functionality, which provide essential content types to create pages.
+The [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) offer flexible and feature-rich authoring functionality, which provide essential content types to create pages.
 
 They are build using AEM best practices and are the foundation of the AEM authoring experience. Core Components can be easily extended by developers to meet specific project needs.
 

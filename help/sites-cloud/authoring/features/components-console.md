@@ -1,8 +1,8 @@
 ---
 title: Components Console
 description: The Components Console allows you to browse through all components defined for your instance
+exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 ---
-
 # Components Console {#components-console}
 
 The Components Console allows you to browse through all components defined for your instance and view key information for each component.

@@ -1,8 +1,8 @@
 ---
 title: Using the Sling Resource Merger in Adobe Experience Manager as a Cloud Service
 description: The Sling Resource Merger provides services to access and merge resources
+exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 ---
-
 # Using the Sling Resource Merger in AEM as a Cloud Service {#using-the-sling-resource-merger-in-aem}
 
 ## Purpose {#purpose}
@@ -18,8 +18,6 @@ With the Sling Resource Merger, the overlay/override resources and/or properties
 * The content of the customized definition has a higher priority than that of the original (i.e. it *overlays* or *overrides* it).
 
 * Where necessary, [properties](#properties) defined in the customization, indicate how content merged from the original is to be used.
-
-<!-- Still links to reference material in 6.5 -->
 
 >[!CAUTION]
 >
@@ -236,17 +234,3 @@ The Sling Resource Merger includes two custom resource providers - one for overl
 
         * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
-<!--
-### Example of Usage {#example-of-usage}
-
-Some examples are covered:
-
-* Overlay:
-
-    * [Customizing the Consoles](/help/sites-developing/customizing-consoles-touch.md)
-    * [Customizing Page Authoring](/help/sites-developing/customizing-page-authoring-touch.md)
-
-* Override:
-
-    * [Configuring your Page Properties](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
--->

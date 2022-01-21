@@ -1,6 +1,7 @@
 ---
 title: Editing an External SPA within AEM
 description: This document describes the recommended steps to upload a standalone SPA to an AEM instance, add editable sections of content, and enable authoring.
+exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 ---
 # Editing an External SPA within AEM {#editing-external-spa-within-aem}
 

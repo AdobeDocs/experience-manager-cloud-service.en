@@ -1,8 +1,8 @@
 ---
 title: Working with Targeted Content in Multisites
 description: If you need to manage targeted content, such as activities, experiences, and offers between your sites, you can take advantage of AEM's built-in multisite support for targeted content
+exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 ---
-
 # Working with Targeted Content in Multisites {#working-with-targeted-content-in-multisites}
 
 If you need to manage targeted content, such as activities, experiences, and offers between your sites, you can take advantage of AEM's built-in multisite support for targeted content.
@@ -30,7 +30,7 @@ At any time you can suspend or restore inheritance. In addition, if you do not w
 
 Multisite support for targeted content is available out of the box and lets you push targeted content from the master page that you manage through MSM to a local live copy or lets you manage global and local modifications of such content.
 
-You manage this in an **Area**. Areas separate targeted content (activities, experiences and offers) used in different sites and provide an MSM-based mechanism to create and manage the inheritance of targeted content together with site inheritance. This prevents your having to re-create targeted content in inherited sites as was required in AEM prior to 6.2.
+You manage this in an **Area**. Areas separate targeted content (activities, experiences and offers) used in different sites and provide an MSM-based mechanism to create and manage the inheritance of targeted content together with site inheritance. This prevents your having to re-create targeted content in inherited sites.
 
 In an area, only activities linked to that area are pushed to live copies. By default, the Master Area is selected. After you create additional areas, you can link those to your sites or pages to indicate which targeted content is pushed.
 

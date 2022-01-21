@@ -1,8 +1,8 @@
 ---
 title: Working with Tasks
 description: Tasks represent items of work to be done on content and are used in projects to determine the level of completeness of current tasks
+exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 ---
-
 # Working with Tasks {#working-with-tasks}
 
 Tasks represent items of work to be done on content. When you are assigned a task, it appears in your Workflow Inbox. Task items have a value of task in the Type column.
@@ -27,7 +27,7 @@ If a project has any related tasks, a Task Tile is displayed inside the project.
 * Percentage of active tasks
 * Percentage of overdue tasks
 
-![Task tile](/help/sites-cloud/authoring/assets/projects-tasks.png)
+![Task tile](/help/sites-cloud/authoring/assets/projects-tasks-breakdown.png)
 
 ### Viewing or Modifying the Tasks in a Project {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -41,7 +41,7 @@ Click the ellipsis (...) in the Task tile to display the list of the tasks relat
 
 #### Task Details {#task-details}
 
-For more information on a particular task, in the Task List, tap/click the task and **Task Details **open.
+For more information on a particular task, in the Task List, tap/click the task and **Open**.
 
 ![Task details](/help/sites-cloud/authoring/assets/projects-task-details.png)
 

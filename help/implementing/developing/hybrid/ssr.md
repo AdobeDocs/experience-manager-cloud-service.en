@@ -1,8 +1,8 @@
 ---
 title: SPA and Server-Side Rendering
 description: Using server side rendering (SSR) in your SPA can accelerate the initial load of the page and then pass further rendering on to the client.
+exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 ---
-
 # SPA and Server-Side Rendering{#spa-and-server-side-rendering}
 
 Single page applications (SPAs) can offer the user a rich, dynamic experience that reacts and behaves in familiar ways, often just like a native application. [This is achieved by relying on the client to load the content up front and then do the heavy lifting of handling user interaction](introduction.md#how-does-a-spa-work) and thus minimizing the amount of communication needed between the client and the server, making the app more reactive.
@@ -38,7 +38,9 @@ The following sections detail how Adobe I/O Runtime can be used to implement SSR
 
 >[!NOTE]
 >
->Adobe recommends a separate Adobe I/O Runtime instance for every AEM environment (author, publish, stage, etc.).
+>Adobe recommends a separate Adobe I/O Runtime workspace per environment (stage, prod, testing, etc.). This allows for typical systems development life cycle (SDLC) patterns with different versions of a single application deployed to different environments. See the document [CI/CD for Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) for more information.
+>
+>A separate workspace is not needed per instance (author, publish) unless there are differences in the runtime implementation per instance type.
 
 ## Remote Renderer Configuration {#remote-content-renderer-configuration}
 

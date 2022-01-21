@@ -1,8 +1,8 @@
 ---
 title: Experience Fragments
 description: Use Adobe Experience Manager as a Cloud Service Experience Fragments to make your experiences reusable and flexible.
+exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 ---
-
 # Experience Fragments {#experience-fragments}
 
 Within Adobe Experience Manager as a Cloud Service, an Experience Fragment:
@@ -347,4 +347,6 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 By default, Experience Fragments are delivered in the HTML format. This can be used by both AEM and third party channels alike.
 
-For export to Adobe Target, JSON can also be used. See Target Integration with Experience Fragments for full information. <!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
+For export to Adobe Target see [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md). 
+
+<!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->

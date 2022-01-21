@@ -1,8 +1,8 @@
 ---
 title: Introduction to Adobe Experience Manager as a Cloud Service - Terminology
-description: Introduction to Adobe Experience Manager as a Cloud Service - Terminology. 
+description: Introduction to Adobe Experience Manager as a Cloud Service - Terminology.
+exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
 ---
-
 # Adobe Experience Manager as a Cloud Service - Terminology {#adobe-experience-manager-as-a-cloud-service-terminology}
 
 The following terms are used in relation to Adobe Experience Manager (AEM) as a Cloud Service:
@@ -21,6 +21,7 @@ The following terms are used in relation to Adobe Experience Manager (AEM) as a 
 |---|---|
 |Adobe Pipeline|The mechanism for publishing content from author to publish.|
 |AEM Author Tier|Describes the authoring environment for Sites and Assets.|
+|AEM Preview Tier|Describes the preview environment for Sites.|
 |AEM Publish Tier|Describes the publishing environment for Sites.|
 
 

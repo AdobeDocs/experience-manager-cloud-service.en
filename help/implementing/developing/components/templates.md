@@ -1,8 +1,8 @@
 ---
 title: Page Templates
 description: Page Templates are used when creating a page which will be used as the base for the new page
+exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 ---
-
 # Page Templates {#page-templates}
 
 When creating a page you need to select a template. The page template is used as the base for the new page. The template defines the structure of the resultant page, any initial content and the components that can be used (design properties). This has several advantages:

@@ -1,18 +1,20 @@
 ---
 title: Accessibility in Dynamic Media
-description: Learn about accessibility in Dynamic Media and Dynamic Media Viewers.
+description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, publishing videos to YouTube, and viewing video reports. Also learn how to add closed captioning, subtitles, or chapter markers to videos.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
+feature: Accessibility
+role: Admin,User
+exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
 ---
-
 # Accessibility in Dynamic Media {#accessibility-in-dm}
 
 Dynamic Media supports keyboard control and assistive technologies, such as JAWS and NVDA screen readers, across the authoring user interface.
 
 ## Keyboard accessibility support in Dynamic Media {#keyboard-support-in-dm}
 
-Because Dynamic Media is a plug-in to Experience Manager Assets, most of the keyboard control behavior is the same as in Experience Manager Assets. For example, the `Cancel` button in Dynamic Media has the same focus highlight as in Experience Manager Assets. It also reacts to the `Spacebar` key as in Experience Manager Assets. See [keyboard shortcuts in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Because Dynamic Media is a plug-in to [!DNL Experience Manager Assets], most of the keyboard control behavior is the same as in [!DNL Experience Manager Assets]. For example, the `Cancel` button in Dynamic Media has the same focus highlight as in [!DNL Experience Manager Assets]. It also reacts to the `Spacebar` key as in [!DNL Experience Manager Assets]. See [keyboard shortcuts in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Keystrokes supported by Individual user interface elements in Dynamic Media are-in most cases-obvious and easy to find. Keyboard control in Dynamic Media is about the following:
 
@@ -29,7 +31,7 @@ The focus traversal follows the natural user interface element location on the s
   * The next four `Tab` stops are the frame's four corners. When focus is placed on a frame corner, the corner is highlight. Again, you can use arrow keys on the keyboard to move the focused corner.
   See [Editing the smart crop or smart swatch of a single image](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
-<!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
+<!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (Experience Manager 6.5) or Coral Spectrum (in Skyline)) as entire Experience Manager Assets.  -->
 
 <!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md##adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  --> 
 
@@ -50,7 +52,14 @@ See [Keyboard accessibility and navigation](https://experienceleague.adobe.com/d
 ## Assistive technology support in Dynamic Media viewers {#assistive-technology=support-for-dm-viewers}
 
 All Dynamic Media viewer components support ARIA (Accessible Rich Internet Applications) roles and attributes to improve integration with assistive technologies such as screen readers.
-See the **Assistive technology support** Help topic in any customizing viewer topic in the Dynamic Media Viewers Reference Guide. For example, see [Assistive technology support](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) for the Video viewer, or [Assistive technology support](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) for the Interactive Image viewer.
+See the **Assistive technology support** Help topic in any customizing viewer topic in the Dynamic Media Viewers Reference Guide. For example, see [Assistive technology support](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) for the Video viewer, or [Assistive technology support](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) for the Interactive Image viewer.
+
+## Closed caption support in [!DNL Dynamic Media] {#closed-caption-support}
+
+Dynamic Media supports the delivery of videos and adaptive video sets with closed captioning. The captions must be displayed on top of the video content.
+
+See [Video in Dynamic Media - Add closed captions or subtitles to video](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+
 
 >[!MORELIKETHIS]
 >

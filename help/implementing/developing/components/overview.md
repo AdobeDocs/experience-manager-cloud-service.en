@@ -1,8 +1,8 @@
 ---
 title: Components Overview
 description: Components are modular units which realize specific functionality to present your content on your website
+exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
 ---
-
 # Components Overview {#components-overview}
 
 This page provides an overview of Adobe Experience Manager (AEM) components such as those [used for page authoring](/help/sites-cloud/authoring/fundamentals/components.md).
@@ -20,7 +20,7 @@ Components in AEM are:
 * Have a standardized user interface.
 * Have edit behavior that can be configured.
 * Use dialog boxes that are built using sub-elements based on Granite UI components.
-* Are developed using [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html).
+* Are developed using [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html).
 * Can be developed to create customized components that extend the default functionality.
 
 Because components are modular, you can:
@@ -38,7 +38,7 @@ Each AEM component:
 
 ## AEM Core Components {#aem-core-components}
 
-[The AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) are a set of standardized Web Content Management (WCM) components for AEM to speed up development time and reduce maintenance cost of your websites.
+[The AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) are a set of standardized Web Content Management (WCM) components for AEM to speed up development time and reduce maintenance cost of your websites.
 
 The Core Components are provided with AEM as a Cloud Service and the [WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustrates how to implement and use components. The components are provided with all source code and can be used as is or as starting points for modified or extended components.
 
@@ -57,4 +57,3 @@ Alternatively, you can also use CRXDE Lite to get a list of all the components a
    `//element(*, cq:Component)`
 
 1. Click **[!UICONTROL Execute]** and the components are listed.
-

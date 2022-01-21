@@ -1,8 +1,8 @@
 ---
 title: Editing Launches
-description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s). 
+description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s).
+exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 ---
-
 # Editing Launches {#editing-launches}
 
 ## Editing Launch Pages {#editing-launch-pages}

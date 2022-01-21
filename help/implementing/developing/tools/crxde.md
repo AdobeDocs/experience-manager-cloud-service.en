@@ -1,8 +1,8 @@
 ---
 title: Using CRXDE Lite
 description: CRXDE Lite is part of the AEM quickstart and is available to you to access and modify the repository in your local development environments within the browser.
+exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 ---
-
 # Using CRXDE Lite {#using-crxde-lite}
 
 CRXDE Lite is part of the AEM quickstart and is available to you to access and modify the repository in your local development environments within the browser. With CRXDE Lite, you can edit files, folders, nodes, and properties. The entire repository is accessible to you in this easy-to-use interface.
@@ -20,11 +20,9 @@ To get started with CRXDE Lite:
 1. Enter your **username** and **password**.
 1. Click **OK**.
 
-The CRXDE Lite User Interface looks as follows in your browser:
+The CRXDE Lite User Interface appears as follows in your browser:
 
 ![The CRXDE Lite interface](assets/crxde-lite.png)
-
-You can now use CRXDE Lite to develop your application.
 
 >[!TIP]
 >
@@ -36,7 +34,7 @@ CRXDE Lite's user interface has many parts and has many functions.
 
 ### Top switcher bar {#top-switcher-bar}
 
-The Top Switcher Bar allows you to quickly switch between CRXDE Lite, Package Manager, and Package Share.
+The Top Switcher Bar allows you to quickly switch between CRXDE Lite and [Package Manager.](package-manager.md)
 
 ### Node Path Widget {#node-path-widget}
 

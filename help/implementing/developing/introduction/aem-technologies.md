@@ -1,8 +1,8 @@
 ---
 title: AEM Technical Foundations
 description: An overview of the technical foundations of AEM including how AEM is structured and fundamental technologies like JCR, Sling, and OSGi.
+exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 ---
-
 # AEM Technical Foundations {#aem-technical-foundations}
 
 AEM is a robust platform built upon proven, scalable, and flexible technologies. This document give a detailed overview of the various parts that make up AEM and is intended as a technical appendix for a full-stack AEM developer. It is not intended as a getting-started guide. If you are new to AEM development, please consult the [Getting Started Developing AEM Sites - WKND Tutorial](develop-wknd-tutorial.md) as a first step.
@@ -28,9 +28,9 @@ The underlying content repository and business logic layers are built around Jav
 
 ## Java Content Repository {#java-content-repository}
 
-The Java Content Repository (JCR) standard, [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html), specifies a vendor-independent and implementation-independent way to access content bi-directionally on a granular level within a content repository. The specification lead is held by Adobe Research (Switzerland) AG.
+The Java Content Repository (JCR) standard, [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html), specifies a vendor-independent and implementation-independent way to access content bi-directionally on a granular level within a content repository. The specification lead is held by Adobe Research (Switzerland) AG.
 
-The [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) package, `javax.jcr.*` is used for the direct access and manipulation of repository content.
+The [JCR API 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) package, `javax.jcr.*` is used for the direct access and manipulation of repository content.
 
 AEM is built upon a JCR.
 

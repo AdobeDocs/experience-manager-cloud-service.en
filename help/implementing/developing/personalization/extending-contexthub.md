@@ -1,8 +1,8 @@
 ---
 title: Extending ContextHub
 description: Define new types of ContextHub stores and modules when the ones provided do not meet your solution requirements
+exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 ---
-
 # Extending ContextHub {#extending-contexthub}
 
 Define new types of ContextHub stores and modules when the ones provided do not meet your solution requirements.

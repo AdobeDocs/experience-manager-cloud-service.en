@@ -1,6 +1,7 @@
 ---
 title: Updating SSL Certificate of Custom Domain Name 
 description: Updating SSL Certificate of Custom Domain Name
+exl-id: 652f7568-dc6a-4ac6-b06f-4ea1540498fa
 ---
 # Updating Custom Domain Name's SSL Certificate {#update-ssl-certificate-cdn}
 

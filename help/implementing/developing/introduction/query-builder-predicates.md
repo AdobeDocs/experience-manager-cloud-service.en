@@ -1,8 +1,8 @@
 ---
 title: Query Builder Predicate Reference
 description: Predicate reference for the Query Builder API.
+exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 ---
-
 # Query Builder Predicate Reference {#query-builder-predicate-reference}
 
 ## General {#general}
@@ -161,7 +161,7 @@ It does not support facet extraction.
 
 ### hasPermission {#haspermission}
 
-This predicate restricts the result to items where the current session has the specified [JCR privileges.](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+This predicate restricts the result to items where the current session has the specified [JCR privileges.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 This is a filtering-only predicate and cannot leverage a search index. It does not support facet extraction.
 
@@ -195,7 +195,7 @@ It supports facet extraction and provides two buckets for main and sub assets.
 
 ### memberOf {#memberof}
 
-This predicate finds items that are member of a specific [sling resource collection](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
+This predicate finds items that are member of a specific [sling resource collection](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
 This is a filtering-only predicate and cannot leverage a search index.
 

@@ -1,8 +1,8 @@
 ---
 title: Sample ContextHub Store Candidates
 description: ContextHub provides several sample store candidates that you can use in your solutions
+exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
 ---
-
 # Sample ContextHub Store Candidates {#sample-contexthub-store-candidates}
 
 ContextHub provides several sample store candidates that you can use in your solutions. The following information is provided for each sample:

@@ -2,8 +2,8 @@
 title: Configure the Rich Text Editor to author content in [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Configure Rich Text Editor to author content in [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
+exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 ---
-
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
 The Rich Text Editor (RTE) provides authors with a wide range of functionality to edit text content. Icons, selection boxes, toolbar, and menus are provided for a WYSIWYG text-editing experience. Administrators configure the RTE to enable, disable, and extend the features available in the authoring components. See how authors [use RTE for authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) web content.
@@ -146,7 +146,7 @@ For detailed configurations of the RTE plug-ins, see [how to activate and config
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-The [Core Components text component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) lets template editors to configure many RTE plug-ins using the user interface as content policies, eliminating the need for technical configuration. Content policies can work with RTE UI configurations as described in this document. For more information, see [create page templates](/help/sites-cloud/authoring/features/templates.md) and the [Core Components developer documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html).
+The [Core Components text component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) lets template editors to configure many RTE plug-ins using the user interface as content policies, eliminating the need for technical configuration. Content policies can work with RTE UI configurations as described in this document. For more information, see [create page templates](/help/sites-cloud/authoring/features/templates.md) and the [Core Components developer documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >For reference purposes, the default Text components (delivered as part of a standard installation) can be found at:
 >
@@ -220,7 +220,7 @@ The available options in the RTE flow downstream from the user interface configu
 * If the user interface configuration of the RTE removed or doesn't enable an item, the content policy cannot configure it.
 * An author has access to only such functionality as is made available by the user interface configurations and the content policies.
 
-As an example, you can see the [Text Core Component documentation](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
+As an example, you can see the [Text Core Component documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Customize mapping between toolbar icons and commands {#iconstoolbar}
 
@@ -276,4 +276,3 @@ Below is a sample snippet to map the command `Bold` to the Coral icon named `tex
 >* [Configure RTE plug-ins](configure-rich-text-editor-plug-ins.md)
 >* [Use Rich Text Editor for authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [Configure RTE for accessible sites](rte-accessible-content.md)
->* [Tutorial sample to create composite multifield component](https://experience-aem.blogspot.com/2019/05/aem-65-touchui-composite-multifield-with-coral3-rte-rich-text.html)

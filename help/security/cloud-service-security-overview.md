@@ -1,8 +1,8 @@
 ---
 title: AEM as a Cloud Service Security Overview
 description: AEM as a Cloud Service Security Overview
+exl-id: 19b123de-5db5-4fa8-81ec-e5438fed3f7f
 ---
-
 # Security Overview for AEM as a Cloud Service {#cloud-service-security-overview}
 
 ## Introduction {#introduction}
