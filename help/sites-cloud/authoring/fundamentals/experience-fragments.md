@@ -170,6 +170,10 @@ To create an Experience Fragment:
 
    ![Experience Fragment properties](/help/sites-cloud/authoring/assets/xf-04.png)
 
+   >[!NOTE]
+   >
+   >Tags from the Experience Fragment template will not be merged with the fragment tags. These are completely separate.
+
 1. Click **Create**.
 
    A message will be displayed. Select:
@@ -224,6 +228,10 @@ You can create variations of your Experience Fragment, depending on your needs:
     For example:
 
    ![Variation properties](/help/sites-cloud/authoring/assets/xf-07.png)
+
+   >[!NOTE]
+   >
+   >Tags from the Experience Fragment template will not be merged with the variation tags. These are completely separate.
 
 1. Confirm with **Done**, the new variation will be shown in the panel.
 
