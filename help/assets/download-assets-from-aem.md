@@ -48,6 +48,8 @@ Asynchronous downloads are triggered in either of the following case:
 * If the download takes more than 30 seconds to prepare.
 -->
 
+
+<!-- Go live is on 27th Jan 2022
 ### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
 
 Asynchronous downloads are triggered in any of the following cases:
@@ -68,6 +70,7 @@ To enable email notifications:
 
    ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
 
+-->
 
 To download assets, follow these steps:
 
