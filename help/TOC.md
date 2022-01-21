@@ -166,6 +166,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Publishing Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
       + [Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
       + [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)
+      + [Experience Fragments - Exporting](/help/sites-cloud/authoring/fundamentals/experience-fragments-target.md)
       + [Export to CSV](/help/sites-cloud/authoring/fundamentals/csv-export.md)
       + [Components](/help/sites-cloud/authoring/fundamentals/components.md)
       + [Authoring for Mobile Devices](/help/sites-cloud/authoring/fundamentals/mobile.md)
