@@ -1,8 +1,8 @@
 ---
 title: Editor Limitations
 description: The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
+exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 ---
-
 # Editor Limitations {#editor-limitations}
 
 The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers. This page summarizes these limitations and provides solutions or work-arounds where possible.

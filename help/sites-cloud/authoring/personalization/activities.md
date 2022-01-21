@@ -1,8 +1,8 @@
 ---
 title: Managing Activities
 description: The Activities console enables you to create, organize, and manage the marketing activities of your brands
+exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
 ---
-
 # Managing Activities {#managing-activities}
 
 The Activities console enables you to create, organize, and manage the marketing [activities](/help/sites-cloud/authoring/personalization/overview.md#activities) of your brands:

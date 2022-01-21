@@ -1,8 +1,8 @@
 ---
 title: AEM Developer Tools for Eclipse
 description: AEM Developer Tools for Eclipse
+exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 ---
-
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
  ![](assets/eclipse-logo.png)

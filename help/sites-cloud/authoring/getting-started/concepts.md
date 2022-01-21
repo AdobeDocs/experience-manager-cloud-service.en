@@ -1,8 +1,8 @@
 ---
 title: Authoring Concepts
 description: Concepts of authoring in AEM
+exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 ---
-
 # Authoring Concepts {#authoring-concepts}
 
 An AEM installation generally consists of at least two environments:

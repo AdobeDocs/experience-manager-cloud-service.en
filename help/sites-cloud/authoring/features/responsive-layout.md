@@ -1,8 +1,8 @@
 ---
 title: Responsive Layout
 description: AEM allows you to realize a responsive layout for your pages
+exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 ---
-
 # Responsive Layout {#responsive-layout}
 
 AEM allows you to have a responsive layout for your pages by using the **Layout Container** component.

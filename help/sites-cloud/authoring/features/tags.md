@@ -1,8 +1,8 @@
 ---
 title: Using Tags
 description: Tags are a quick and easy method of classifying content within a website
+exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 ---
-
 # Using Tags {#using-tags}
 
 Tags are a quick and easy method of classifying content within a website. Tags may be thought of as keywords or labels that can be attached to a page, an asset, or other content to enable searches to find that content and related content.
