@@ -240,7 +240,7 @@ Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-
        ...
        private AbstractProductRetriever productRetriever;
 
-       /* add this method to intialize the proudctRetriever */
+       /* add this method to initialize the productRetriever */
        @PostConstruct
        public void initModel() {
            productRetriever = productTeaser.getProductRetriever();

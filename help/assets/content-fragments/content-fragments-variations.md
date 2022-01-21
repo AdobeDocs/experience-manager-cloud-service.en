@@ -212,7 +212,7 @@ Summarizing text is designed to help users reduce the length of their text to a 
 >
 >English is available out-of-the-box.
 >
->Other languages are available as Language Model Packages from Package Share:
+>Other languages are available as Language Model Packages from Software Distribution:
 >
 >* [French (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 >* [German (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
