@@ -19,7 +19,7 @@ Cloud Manager will verify domain ownership via the TXT value and displays one of
    Verification in progress. This status is typically seen after you select the *verify again* icon next to the status.
 
 * **Verified, Deployment Failed** 
-   TXT verification was successful. However, the CDN deployment failed. An Adobe representative will be notified automatically.
+   TXT verification was successful. However, the CDN deployment failed. Please contact your Adobe representative.
 
 * **Domain Verified & Deployed**
    This status indicates that your custom domain name is ready to be used. 
@@ -33,7 +33,7 @@ Cloud Manager will verify domain ownership via the TXT value and displays one of
    Deletion of Custom Domain name failed. You must retry. Refer to [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) to learn more.
 
 
-## Pre-existing CDN Configurations for IP Allow Lists {#pre-existing-cdn}
+## Pre-existing CDN Configurations for Custom Domain Names {#pre-existing-cdn}
 
 Customers with environments that includes pre-existing CDN configurations for IP Allow Lists, SSL Certificates or Custom Domain Names will see the following message in the the **IP Allow List** and the **Environment** details page. The message displayed on the UI will disappear once the customer has fully migrated all pre-existing environment configurations via the UI and it may take 1-2 business days for the message to disappear.
 

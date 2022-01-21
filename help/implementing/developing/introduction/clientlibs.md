@@ -5,7 +5,7 @@ exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 ---
 # Using Client-Side Libraries on AEM as a Cloud Service {#using-client-side-libraries}
 
-Digital experiences rely heavily on client-side processing driven by complex JavaScript and CSS code. AEM Client-Side Libraries (clientlibs) allow you to organize and centrally store these client-side libraries within the repository. Coupled with the [front-end build process in the AEM Project archetype,](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) managing your front-end code for your AEM project becomes simple.
+Digital experiences rely heavily on client-side processing driven by complex JavaScript and CSS code. AEM Client-Side Libraries (clientlibs) allow you to organize and centrally store these client-side libraries within the repository. Coupled with the [front-end build process in the AEM Project archetype,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) managing your front-end code for your AEM project becomes simple.
 
 Advantages of using clientlibs in AEM include:
 
@@ -18,7 +18,7 @@ Clientlibs are the built-in solution for delivering CSS and Javascript from AEM.
 
 >[!TIP]
 >
->Front-end developers who are creating CSS and Javascript for AEM projects should also familiarize themselves with the [AEM Project Archetype and its automated front-end build process.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>Front-end developers who are creating CSS and Javascript for AEM projects should also familiarize themselves with the [AEM Project Archetype and its automated front-end build process.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
 
 ## What Are Client-Side Libraries {#what-are-clientlibs}
 
@@ -28,7 +28,7 @@ AEM collects the site's CSS and Javascript into a single file, in a central loca
 
 ## Front-End Development for AEM as a Cloud Service {#fed-for-aemaacs}
 
-All JavaScript, CSS, and other front-end assets should be maintained in the [ui.frontend module of the AEM Project Archetype.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) The flexibility of the archetype allows you to use your modern web tools of choice to create and manage these resources.
+All JavaScript, CSS, and other front-end assets should be maintained in the [ui.frontend module of the AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) The flexibility of the archetype allows you to use your modern web tools of choice to create and manage these resources.
 
 The archetype can then compile the resources into single CSS and JS files, embedding them automatically into a `cq:clientLibraryFolder` in the repository.
 
@@ -83,7 +83,7 @@ In order for the client libraries under `/apps` to be accessible, a proxy servel
 1. If you need to manage static resources, create a subfolder named `resources` below the client library folder.
    * If you store static resources under the folder `resources`, they can not be referenced on a publish instance.
 1. Add source files to the library folder.
-   * This is typically done by the front-end build process of the [AEM Project Archetype.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+   * This is typically done by the front-end build process of the [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * You can organize source files in subfolders if desired.
 1. Select the client library folder and click **Create &gt; Create file**.
 1. In the file name box, type one of the following file names and click OK:
@@ -118,7 +118,7 @@ Client libraries are loaded through a helper template provided by AEM, which can
 
 Each helper template expects a `categories` option for referencing the desired client libraries. That option can be either an array of string values, or a string containing a comma separated values list.
 
-[See the HTL documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) for more details on loading clientlibs via HTL.
+[See the HTL documentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) for more details on loading clientlibs via HTL.
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}

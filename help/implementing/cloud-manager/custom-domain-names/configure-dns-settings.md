@@ -10,7 +10,22 @@ After your custom domain name is successfully verified and deployed, you are rea
 >[!NOTE]
 >You or the appropriate individual in your organization must be able to login or contact your DNS provider (the company whom you purchased the domain from) and make updates in your DNS settings.
 
-To do this, you must determine if you must configure your DNS settings to a `CNAME` or Apex record pointing your custom domain name to the Cloud Manager domain name. A `CNAME` or A record, once provisioned will route all internet traffic for the domain to wherever it is pointing. If that location is not provisioned to serve the traffic, there will be an outage. If it has not been tested, there may be errors in the content. This is why this step is always done after testing is complete and the customer is ready for Go-live. 
+To do this, you must determine if you must configure your DNS settings to a `CNAME` or Apex record pointing your custom domain name to the Cloud Manager domain name. A `CNAME` or A record, once provisioned will route all internet traffic for the domain to wherever it is pointing. If that location is not provisioned to serve the traffic, there will be an outage. If it has not been tested, there may be errors in the content. This is why this step is always done after testing is complete and the customer is ready for Go-live.
+
+The following steps must be completed as indicated in the table below:
+
+|Step||Responsibility|Learn More|
+|--- |--- |--- |---|
+|Add SLL Certificate|Add SLL Certificate|Customer|[Adding an SSL Certificate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en)|
+|Domain Verification|Add TXT record|Customer|[Adding a TXT Record](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en)|
+|Review Domain Verification Status||Customer||
+||Status: Domain Verification Failure|Customer|[Checking Domain Name Status](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en)|
+||Status: Verified, Deployment Failed|Contact Adobe representative|[Checking Domain Name Status](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en)|
+|Add DNS records that point to AEM as a Cloud Service by adding CNAME or APEX records|Configure DNS Settings|Customer|[Configuring DNS Settings](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=en)|
+|Check DNS Record Status||Customer|[Checking DNS Record Status](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en)|
+||Status: DNS status not detected|Customer|[Checking DNS Record Status](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en)|
+||Status: DNS resolves incorrectly|Customer||
+
 
 ## CNAME Record {#cname-record}
 
