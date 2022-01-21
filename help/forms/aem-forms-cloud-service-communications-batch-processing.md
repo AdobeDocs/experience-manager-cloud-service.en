@@ -48,7 +48,7 @@ A batch operation is a process of generating multiple documents of similar type 
 
 You can use batch operations to generate multiple documents at scheduled intervals.
 
->[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/338349)
 
 You can watch the video or perform the instructions below to learn how to generate documents using batch operations. The API reference documentation used in video is available in the .yaml format. You can download the [Batch APIs](assets/batch-api.yaml) file and upload it to Postman to check functionality of APIs and follow along the video.
 
@@ -94,7 +94,7 @@ Batch data configuration helps you configure containers and folders for input an
 
 To create the configuration:
 
-1. Go to Tools > Forms > Output Batch – Unified Storage Connector.
+1. Go to Tools > Forms > Unified Storage Connector.
 1. Open a folder to host the configuration and click Create. You use the Global folder or create a folder.
 1. Specify Title and Name of the configuration. In Storage select Microsoft Azure Storage.
 1. In Storage Configuration Path, browse and select the Cloud Configuration which contains credentials of customer-owned Azure storage account.  
