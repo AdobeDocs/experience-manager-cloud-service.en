@@ -2,7 +2,7 @@
 title: Content Fragment Models
 description: Learn how Content Fragment Models serve as a foundation for your headless content in AEM and how to create Content Fragments with structured content.
 feature: Content Fragments
-role: Business Practitioner
+role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 ---
 # Content Fragment Models {#content-fragment-models}
@@ -54,22 +54,28 @@ The content fragment model effectively defines the structure of the resulting co
    >
    >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
 
-   ![properties](assets/cfm-models-03.png)
+  ![properties](assets/cfm-models-03.png)
 
 1. **To Add a Field**
 
-    * Drag a required data type to the required location for a field:
+   * Drag a required data type to the required location for a field:
 
-      ![data type to field](assets/cfm-models-04.png)
+     ![data type to field](assets/cfm-models-04.png)
 
-    * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
+   * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
 
-      * Many properties are self-explanatory, for additional details see [Properties](#properties).
-      * Typing a **Field Label** will auto-complete the **Property Name**  - if empty, and it can be manually updated afterwards.
+     * Many properties are self-explanatory, for additional details see [Properties](#properties).
+     * Typing a **Field Label** will auto-complete the **Property Name**  - if empty, and it can be manually updated afterwards.
 
-      For example:
+       >[!CAUTION]
+       >
+       >When manually updating the property **Property Name** for a data type, note that names must contain only Latin characters, numerical digits and underscore "_" as special character.
+       >
+       >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
 
-      ![field properties](assets/cfm-models-05.png)
+     For example:
+
+     ![field properties](assets/cfm-models-05.png)
 
 1. **To Remove a Field**
 
@@ -103,6 +109,7 @@ A selection of data types is available for defining your model:
   * Allows fragment authors to access and select areas of tags
 * **Content Reference**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
+  * If an image is referenced, you can opt to show a thumbnail
 * **Fragment Reference**
   * References other content fragments; can be used to [create nested content](#using-references-to-form-nested-content)
   * The data type can be configured to allow fragment authors to:
@@ -113,10 +120,25 @@ A selection of data types is available for defining your model:
     * To allow AEM to store direct JSON that you have copy/pasted from another service.
     * The JSON will be passed through, and output as JSON in GraphQL.
     * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
+* **Tab Placeholder**
+  * Allows the introduction of tabs for use when editing the Content Fragment content.
+    This will be shown as a divider in the model editor, separating sections of the list of content data types. Each instance represents the start of a new tab.
+    In the fragment editor each instance will appear as a tab.
+    >[!NOTE]
+    >
+    >This data type is purely used for formatting, it is ignored by the AEM GraphQL schema.
 
 ## Properties {#properties}
 
 Many properties are self-explanatory, for certain properties additional details are below:
+
+* **Property Name**
+
+  When manually updating this property for a data type, note that names **must** contain *only* Latin characters, numerical digits and underscore "_" as special character.
+
+  >[!CAUTION]
+  >
+  >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
 
 * **Render As**
   The various options for realizing/rendering the field in a fragment. Often this allows you to define whether the author will see a single instance of the field, or will be allowed to create multiple instances.
@@ -152,13 +174,17 @@ Many properties are self-explanatory, for certain properties additional details 
   >
   >Variations can have the same *unique* value as variations of the same fragment, but not the same value as used in any variation of other fragments.
 
-* **Translatable**
-  Checking the "Translatable" checkbox on a field in CF model editor will
-
-  * Ensure the field's property name is added in translation config, context `/content/dam/<tenant>`, if not already present. 
-  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
+* See **[Content Reference](#content-reference)** for more details about that specific data type and its properties.
 
 * See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
+
+<!--
+* **Translatable**
+  Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
+
+  * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
+  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
+-->
 
 ## Validation {#validation}
 
@@ -174,12 +200,6 @@ Various data types now include the possibility to define validation requirements
   * Only images within a predefined range of width and/or height (in pixels) can be referenced. 
 * **Fragment Reference**
   * Test for a specific content fragment model.
-
-<!--
-  * Only predefined file types can be referenced.
-  * No more than the predefined number of assets can be referenced. 
-  * No more than the predefined number of fragments can be referenced.
--->
 
 ## Using References to form Nested Content {#using-references-to-form-nested-content}
 
@@ -213,12 +233,14 @@ The Content Reference allows you to render content from another source; for exam
 
 In addition to standard properties you can specify:
 
-* The **Root Path** for any referenced content.
-* The content types that can be referenced.
-* Limitations for file sizes.
-* Image restraints.
-  <!-- Check screenshot - might need update -->
-  ![Content Reference](assets/cfm-content-reference.png)
+* The **Root Path** for any referenced content
+* The content types that can be referenced
+* Limitations for file sizes
+* If an image is referenced:
+  * Show Thumbnail
+  * Image restraints of height and width
+
+![Content Reference](assets/cfm-content-reference.png)
 
 ### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
 
@@ -266,7 +288,7 @@ In addition to standard properties you can define:
   This will allow the fragment author to create a new fragment based on the appropriate model.
 
   * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
-  <!-- Check screenshot - might need update -->
+
   ![Fragment Reference](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
@@ -274,6 +296,16 @@ In addition to standard properties you can define:
 >A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference. This may lead to an empty Fragment Reference picker dialog.
 >
 >There is also a recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it will return null.
+
+## Content Fragment Model - Properties {#content-fragment-model-properties}
+
+You can edit the **Properties** of a Content Fragment Model:
+
+* **Basic**
+  * **Model Title**
+  * **Tags**
+  * **Description**
+  * **Upload Image**
 
 ## Enabling or Disabling a Content Fragment Model {#enabling-disabling-a-content-fragment-model}
 
@@ -397,26 +429,80 @@ To unpublish a content fragment model:
 1. Select your model, followed by **Unpublish** from the toolbar.
    The published status will be indicated in the console. 
 
-## Content Fragment Model - Properties {#content-fragment-model-properties}
+If you try to unpublish a model that is currently used by one or more fragments, then an error warning will inform you of this: 
 
-You can edit the **Properties** of a Content Fragment Model:
+![Content Fragment Model error message when unpublishing a model that is in use](assets/cfm-model-unpublish-error.png)
 
-* **Basic**
-  * **Model Title**
-  * **Tags**
-  * **Description**
-  * **Upload Image**
+The message will suggest that you check the [References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) panel to investigate further:
 
-<!--
-* **GraphQL**
+![Content Fragment Model in References](assets/cfm-model-references.png)
+
+## Locked (Published) Content Fragment Models {#locked-published-content-fragment-models}
+
+This feature provides governance for Content Fragment Models that have been published. 
+
+### The Challenge {#the-challenge}
+
+* Content Fragment Models determine the schema for GraphQL queries in AEM. 
+
+  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
+
+  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
+
+* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
+
+* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
+
+### The Requirements {#the-requirements}
+
+* To make users aware of the risks when editing models that are already used for live content delivery - in other words, models that have been published). 
+
+* Also, to avoid unintended changes. 
+
+Either of these might break queries if the modified models are re-published. 
+
+### The Solution {#the-solution}
+
+To address these issues, Content Fragment Models are *locked* into a READ-ONLY mode on author - as soon as they have been published. This is indicated by **Locked**: 
+
+  ![Card of locked Content Fragment Model](assets/cfm-model-locked.png)
+
+When the model is **Locked** (in READ-ONLY mode), you can see the contents and structure of models but you cannot edit them. 
+
+You can manage **Locked** models from either the console, or the model editor:
+
+* Console
+
+  From the console, you can manage the READ-ONLY mode with the **Unlock** and **Lock** actions in the toolbar: 
+
+  ![Toolbar of locked Content Fragment Model](assets/cfm-model-locked.png)
+
+  * You can **Unlock** a model to enable edits.
   
-  >[!CAUTION]
-  >
-  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
-  >
-  >Updating these properties can impact dependent applications.
+    If you select **Unlock** a warning will be shown, and you must confirm the **Unlock** action:
+    ![Message when unlocking Content Fragment Model](assets/cfm-model-unlock-message.png)
 
-  * **API Name**
-  * **Single Query Field Name**
-  * **Multiple Query Field Name**
--->
+    You can then open the model for editing.
+    
+  * You can also **Lock** the model afterwards.
+  * Re-publishing the model will immediately put it back into **Locked** (READ-ONLY) mode.
+
+* Model Editor
+
+  * When you open a model that is locked you will be warned, and presented with three actions: **Cancel**, **View Read Only**, **Edit**:
+
+    ![Message when viewing a locked Content Fragment Model](assets/cfm-model-editor-lock-message.png)
+
+  * If you select **View Read Only** you can see the content and structure of the model:
+
+    ![View Read Only - locked Content Fragment Model](assets/cfm-model-editor-locked-view-only.png)
+
+  * If you select **Edit** you can edit and save your updates: 
+  
+    ![Edit - locked Content Fragment Model](assets/cfm-model-editor-locked-edit.png)
+
+    >[!NOTE]
+    >
+    >There may still a warning at the top, but that is when the model is already in use by existing Content Fragments. 
+
+  * **Cancel** will return you to the console.
