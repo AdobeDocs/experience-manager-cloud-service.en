@@ -1,13 +1,13 @@
 ---
 title: Search facets.
-description: This article describes how to create, modify, and use search facets in AEM.
+description: This article describes how to create, modify, and use search facets in Experience Manager.
 feature: Search,Metadata
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
 ---
 # Search facets {#search-facets}
 
-An enterprise-wide deployment of Adobe Experience Manager (AEM) Assets has the capacity to store many assets. Sometimes, finding the right asset can be arduous and time-consuming if you only use the generic search capabilities of AEM.
+An enterprise-wide deployment of Adobe Experience Manager Assets has the capacity to store many assets. Sometimes, finding the right asset can be arduous and time-consuming if you only use the generic search capabilities of Experience Manager.
 
 Use search facets in the Filters panel to add more granularity to your search experience and make the search functionality more efficient and versatile. Search facets add multiple dimensions (predicates) that enable you to perform more intricate searches. The Filters panel includes a few standard facets. You can also add custom search facets.
 
@@ -21,7 +21,7 @@ The search facets that appear in the Filters panel are defined in the underlying
 
 For full-text searches, add the `Fulltext` predicate to the form. Use the Property predicate to search for assets that match a single property you specify. Use the Options predicate to search assets that match one or more values for a particular property. Add the Date Range predicate to search assets created within a specified date range.
 
-1. Click the AEM logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then tap  **Edit** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Locate and select the Assets Admin Search Rail](assets/assets_admin_searchrail.png)
@@ -90,7 +90,7 @@ If you want to use an existing node, specify it using the selection dialog.
 >
 >The Options predicate is a custom wrapper that includes property predicates to demonstrate the described behavior. Currently, there is no REST endpoint available to support the functionality natively.
 
-1. Tap the AEM logo, and then go to **[!UICONTROL Tools > General > Search Forms]**.
+1. Tap the Experience Manager logo, and then go to **[!UICONTROL Tools > General > Search Forms]**.
 1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then tap the Edit icon.
 1. In the **[!UICONTROL Edit Search Form]** page, drag **[!UICONTROL Options Predicate]** from the **[!UICONTROL Select Predicate]** tab to the main pane.
 1. In the **[!UICONTROL Settings]** tab, enter a label and a name for the property. For example, to search assets based on their format, specify a user-friendly name for the label, for example **[!UICONTROL File Type]**. Specify the property based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:format.`
@@ -110,9 +110,9 @@ If you want to use an existing node, specify it using the selection dialog.
 
 ## Add a Multi Value Property predicate {#adding-a-multi-value-property-predicate}
 
-The `Multi Value Property` predicate lets you search assets for multiple values. Consider a scenario where you have images of multiple products in AEM Assets and the metadata for each image includes an SKU number associated with the product. You can use this predicate to search for product images based on multiple SKU numbers.
+The `Multi Value Property` predicate lets you search assets for multiple values. Consider a scenario where you have images of multiple products in [!DNL Assets] and the metadata for each image includes an SKU number associated with the product. You can use this predicate to search for product images based on multiple SKU numbers.
 
-1. Click the AEM logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. On the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, the tap **Edit** ![aemassets_edit](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag a **[!UICONTROL Multi Value Property Predicate]** from the **[!UICONTROL Select Predicate]** tab to the main pane.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. You can also use the selection dialog to select a node.
@@ -123,9 +123,9 @@ The `Multi Value Property` predicate lets you search assets for multiple values.
 
 ## Add a Tags predicate {#adding-a-tags-predicate}
 
-The `Tags` predicate allows you to perform tag-based searches for assets. By default, AEM Assets searches assets for one or more tags matches based on the tags you specify. In other words, the search query performs an OR operation using the specified tags. However, you can use the match all tags option to search for assets that include all tags that you specify.
+The `Tags` predicate allows you to perform tag-based searches for assets. By default, [!DNL Assets] searches assets for one or more tags matches based on the tags you specify. In other words, the search query performs an OR operation using the specified tags. However, you can use the match all tags option to search for assets that include all tags that you specify.
 
-1. Click the AEM logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]** and then tap **Edit** ![aemassets_edit](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
 1. In the Settings tab, enter a placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/cq:tags`. Alternatively, you can select a node in CRXDE from the selection dialog.
@@ -262,17 +262,6 @@ Similar to the way you add a Property predicate or an Options predicate, you can
     <ul>
      <li>Label</li>
      <li>Property name</li>
-     <li>Description</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Rating</td>
-   <td>Search predicate to search assets based on their average rating </td>
-   <td>
-    <ul>
-     <li>Label</li>
-     <li>Property name</li>
-     <li>Option path</li>
      <li>Description</li>
     </ul> </td>
   </tr>

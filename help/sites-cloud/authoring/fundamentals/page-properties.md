@@ -49,11 +49,14 @@ The properties are distributed across several tabs.
 
 * **On/Off Time**
 
-  * **On Time** - The date and time at which the published page will be made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
+  >[!NOTE]
+  >
+  > See [On and Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) for details of how to configure the related automatic replication.
 
-    >[!NOTE]
-    >
-    > See [On and Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) for details of how to configure the related automatic replication.
+  >[!NOTE]
+  >If either the **On Time** or **Off Time** is in the past, and automatic replication is configured, then the relevant action will be triggered immediately.
+
+  * **On Time** - The date and time at which the published page will be made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
 
     * If already [published (manually)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) this page will be kept dormant (hidden) until rendering at the specified time.
     * If not published, and configured for auto-replication, the page will be automatically published, then rendered, at the specified time.
@@ -90,14 +93,9 @@ The properties are distributed across several tabs.
   * **Redirect** - Indicates the page to which this page should automatically redirect
   * **Design** - Indicates whether the page is shown or hidden in the page navigation of the resulting site
   * **Alias** - Specifies an alias to be used with this page
-
-  >[!NOTE]
-  >
-  >Alias sets the `sling:alias` property to define an alias name for the resource (this only impacts the resource, not the path).
-  >
-  >For example: if you define an alias of `latin-lang` for the node `/content/we-retail/spanish` node, then this page can be accessed via `/content/we-retail/latin-language`
-  >
-  >For further details see Localized page names under SEO and URL Management Best Practices.
+    * For example, if you define an alias of `private` for the page `/content/wknd/us/en/magazine/members-only`, then this page can also be accessed via `/content/wknd/us/en/magazine/private`
+    * Creating an alias sets the `sling:alias` property on the page node, which only impacts the resource, not the repository path.
+    * Pages accessed by aliases in the editor can not be published. [Publish options](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) in the editor are only available for pages accessed via their actual paths. 
 
   <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
@@ -138,7 +136,7 @@ Configure the page thumbnail
 
 * **Social Media sharing**
 
-  Defines the sharing options available on the page. Exposes the options available to the [Sharing core component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html).
+  Defines the sharing options available on the page. Exposes the options available to the [Sharing core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html).
 
   * **Enable user sharing for Facebook**
   * **Enable user sharing for Pinterest**
@@ -208,6 +206,12 @@ This tab is only visible for pages that serve as blueprints. Blueprints serve as
   * **Live Copy Inheritance** - If checked, Live Copy configuration is effective on all children
   * **Inherit Rollout Configs from Parent** - If checked, the rollout configuration is inherited from the parent of the page
   * **Choose Rollout Config** - Defines the circumstances under which modifications will be propagated from the Blueprint and only available when **Inherit Rollout Configs from Parent** is not selected
+
+### Preview {#preview}
+
+When a Preview environment is enabled you will see:
+
+* Preview URL - the URL used for accessing the content on the Preview environment
 
 ## Editing Page Properties {#editing-page-properties-1}
 

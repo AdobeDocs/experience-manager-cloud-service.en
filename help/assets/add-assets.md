@@ -2,28 +2,22 @@
 title: Add your digital assets to [!DNL Adobe Experience Manager].
 description: Add your digital assets to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 feature: Asset Management,Upload
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 ---
-# Add digital assets to Adobe Experience Manager {#add-assets-to-experience-manager}
+# Add digital assets to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
+
+[!DNL Adobe Experience Manager Assets] accepts many types of digital assets from many sources. It stores the binaries and created renditions, can do asset processing using a variety of workflow and [!DNL Adobe Sensei] services, allows for distribution through many channels across many surfaces.
 
 [!DNL Adobe Experience Manager] enriches the binary content of the uploaded digital files with rich metadata, smart tags, renditions, and other Digital Asset Management (DAM) services. You can upload various types of files, such as images, documents, and raw image files, from your local folder or a network drive to [!DNL Experience Manager Assets].
 
-A number of upload methods are provided. In addition to the most commonly used browser upload, other methods of adding assets to the [!DNL Experience Manager] repository exist, including desktop clients, like Adobe Asset Link or [!DNL Experience Manager] desktop app, upload and ingestion scripts that customers would create, and automated ingestion integrations added as [!DNL Experience Manager] extensions.
-
-We will focus on upload methods for end users here, and provide links to articles describing technical aspects of asset upload and ingestion using [!DNL Experience Manager] APIs and SDKs.
+In addition to the most commonly used browser upload, other methods of adding assets to the [!DNL Experience Manager] repository exist, including desktop clients, like Adobe Asset Link or [!DNL Experience Manager] desktop app, upload and ingestion scripts that customers would create, and automated ingestion integrations added as [!DNL Experience Manager] extensions.
 
 While you can upload and manage any binary file in [!DNL Experience Manager], most commonly used file formats have support for additional services, like metadata extraction or preview/rendition generation. Refer to [supported file formats](file-format-support.md) for details.
 
 You can also choose to have additional processing done on the uploaded assets. A number of asset processing profiles can be configured on the folder, into which assets are uploaded, to add specific metadata, renditions or image processing services. See [process assets when uploaded](#process-when-uploaded).
 
->[!NOTE]
->
->[!DNL Experience Manager] as a [!DNL Cloud Service] leverages a new way of uploading assets - direct binary upload. It is supported by default by the out of the box product capabilities and clients, like [!DNL Experience Manager] user interface, [!DNL Adobe Asset Link], [!DNL Experience Manager] desktop app, and thus transparent to the end users.
->
->Upload code that is customized or extended by customers technical teams needs to use the new upload APIs and protocols.
-
-Assets as a [!DNL Cloud Service] provides the following upload methods. Adobe recommends that you understand your use case and applicability of an upload option before using it.
+[!DNL Assets] provides the following upload methods. Adobe recommends that you understand your use case and applicability of an upload option before using it.
 
 | Upload method       | When to use?   | Primary Persona |
 |---------------------|----------------|-----------------|
@@ -104,20 +98,19 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 You can upload an asset with the same path (same name and same location) as that of an existing asset. However, a warning dialog is displayed with the following options:
 
 * Replace existing asset: If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotations, cropping, and so on) you made to the existing asset are deleted.
-* Create another version: A new version of the existing asset is created in the repository. You can view the two versions in the [!UICONTROL Timeline] and can revert to the previously existing version if required.
-* Keep both: If you choose to keep both assets, the new asset is renamed with the number `1` appended to its name.
 
->[!NOTE]
->
->When you select **[!UICONTROL Replace]** in the [!UICONTROL Name Conflict] dialog, the asset ID is regenerated for the new asset. This ID is different from the ID of the previous asset.
->
->If Asset Insights is enabled to track impressions or clicks with [!DNL Adobe Analytics], the regenerated asset ID invalidates the data-captured for the asset on [!DNL Analytics].
+   >[!NOTE]
+   >
+   >The option to replace assets is not available if the asset is locked or checked out.
+
+* Create another version: A new version of the existing asset is created in the repository. You can view the two versions in the [!UICONTROL Timeline] and can revert to the previously existing version if required.
+* Keep both: If you choose to keep both assets, the new asset is renamed.
 
 To retain the duplicate asset in [!DNL Assets], click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, click **[!UICONTROL Delete]**.
 
 ### File name handling and forbidden characters {#filename-handling}
 
-[!DNL Experience Manager Assets] tries to prevent you from uploading assets with the forbidden characters in their filenames. If you try to upload an asset with file name containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name. Some upload methods do not stop you from uploading assets with forbidden characters in the filenames but replaces the characters with `-`.
+[!DNL Experience Manager Assets] tries to prevent you from uploading assets with the forbidden characters in their filenames. If you try to upload an asset with file name containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
 
 To suit specific file naming conventions for your organization, the [!UICONTROL Upload Assets] dialog lets you specify long names for the files that you upload. The following (space-separated list of) characters are not supported:
 
@@ -130,59 +123,119 @@ The bulk asset ingestor can handle very large number of assets efficiently. Howe
 
 * Curate assets: Remove assets that are not needed in the DAM. Consider removing unused, obsolete, or duplicate assets. This reduces the data transferred and assets ingested leading to faster ingestions.
 * Organize assets: Consider organizing the content in some logical order, say by file size, file format, use case, or priority. In general, large complex files require more processing. You can also consider ingesting large files separately using the file size filtering option (described below).
-* Stagger ingestions: Consider breaking up your ingestion into multiple bulk ingestion projects. This allows you to see content sooner and update your ingestion as necessary. For example, you can ingest processing-intensive assets during non-peak hours or gradually in multiple chunks. However, you can ingest smaller and simpler assets that do not require much processing in one go.
+* Stagger ingestions: Consider breaking up your ingestion into multiple bulk ingestion projects. This lets you see content sooner and update your ingestion as necessary. For example, you can ingest processing-intensive assets during non-peak hours or gradually in multiple chunks. However, you can ingest smaller and simpler assets that do not require much processing in one go.
 
 To upload larger number of files, use one of the following approaches. Also, see the [use cases and methods](#upload-methods-comparison)
 
-* [Asset upload APIs](developer-reference-material-apis.md#asset-upload-technical): Use a custom upload script or tool that leverages APIs to add additional handling of assets (for example, translate metadata or rename files), if required.
+* [Asset upload APIs](developer-reference-material-apis.md#asset-upload): Use a custom upload script or tool that leverages APIs to add additional handling of assets (for example, translate metadata or rename files), if required.
 * [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Useful for creative professionals and marketers who upload assets from their local file system. Use it to upload nested folders available locally.
 * [Bulk ingestion tool](#asset-bulk-ingestor): Use for ingestion of large amounts of assets either occasionally or initially when deploying [!DNL Experience Manager].
 
-### Asset bulk ingestor tool {#asset-bulk-ingestor}
+### Asset Bulk Import tool {#asset-bulk-ingestor}
 
 The tool is provided only to the administrators group to use for large-scale ingestion of assets from Azure or S3 datastores. See a video walk-through of the configuration and ingestion.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-To configure the tool, follow these steps:
+The following image illustrates the various stages when you ingest assets to Experience Manager from a data store:
+
+![Bulk Ingestion Tool](assets/bulk-ingestion.png)
+
+#### Prerequisites {#prerequisites-bulk-ingestion}
+
+You must have the source blob storage details to connect your Experience Manager instance to a data storage.
+
+#### Configure the Bulk Import tool {#configure-bulk-ingestor-tool} 
+
+To configure the Bulk Import tool, follow these steps:
 
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**. Select the **[!UICONTROL Create]** option.
 
-  ![Configuration of bulk importer](assets/bulk-import-config.png)
+1. Specify a title for the bulk import configuration in the **[!UICONTROL Title]** field.
 
-1. On [!UICONTROL bulk import configuration] page, provide the required values.
+1. Select the data source type from the **[!UICONTROL Import Source]** dropdown list. 
 
-   * [!UICONTROL Title]: A descriptive title.
-   * [!UICONTROL Import Source]: Select the applicable datasource.
-   * [!UICONTROL Filter by Min Size]: Provide minimum file size of assets in MB.
-   * [!UICONTROL Filter by Max Size]: Provide maximum file size of assets in MB.
-   * [!UICONTROL Exclude Mime Types]: Comma-separated list of MIME types to exclude from the ingestion. For example, `image/jpeg, image/.*, video/mp4`.
-   * [!UICONTROL Include Mime Types]: Comma-separated list of MIME types to include in the ingestion. See [all supported file formats](/help/assets/file-format-support.md).
-   * [!UICONTROL Import Mode]: Select Skip, Replace, or Create Version. Skip mode is the default and in this mode the ingestor skips to import an asset if it already exists. See the meaning of [replace and create version options](#handling-upload-existing-file).
-   * [!UICONTROL Assets Target Folder]: Import folder in DAM where assets are to be imported. For example, `/content/dam/imported_assets`
+1. Provide the values to create a connection with the data source. For example, if you select **Azure Blob Storage** as the data source, specify the values for Azure storage account, Azure blob container, and Azure access key.
 
-1. You can delete, modify, execute and do more with your created ingestor configurations. When you select a bulk import ingestor configuration, the follow option are available in the toolbar.
+1. Provide the name of the root folder that contains assets in the data source in the **[!UICONTROL Source Folder]** field.
 
-   * [!UICONTROL Edit]: Edit the selected configuration.
-   * [!UICONTROL Delete]: Delete the selected configuration.
-   * [!UICONTROL Check]: Validate connection to the datastore.
-   * [!UICONTROL Dry Run]: Invoke a test run of the bulk ingestion.
-   * [!UICONTROL Run]: Execute the selected configuration.
-   * [!UICONTROL Stop]: Terminate an active configuration.
-   * [!UICONTROL Schedule]: Set one-time or recurring schedule to ingest assets.
-   * [!UICONTROL Job Status]: View the status of the configuration when it is used in an ongoing import job or used for a completed job.
-   * [!UICONTROL Job History]: Previous instances of the job.
-   * [!UICONTROL View Assets]: View the target folder if it exists.
+1. (Optional) Provide the minimum file size of assets in MB to include them in the ingestion process in the **[!UICONTROL Filter by Min Size]** field.
 
-   ![Toolbar options for ingestor configurations](assets/bulk-ingest-toolbar-options.png)
+1. (Optional) Provide the maximum file size of assets in MB to include them in the ingestion process in the **[!UICONTROL Filter by Max Size]** field.
 
-To schedule a one-time or a recurring bulk import, follow these steps:
+1. (Optional) Specify comma-separated list of MIME types to exclude from the ingestion in the **[!UICONTROL Exclude MIME Types]** field. For example, `image/jpeg, image/.*, video/mp4`. See [all supported file formats](/help/assets/file-format-support.md).
+
+1. Specify comma-separated list of MIME types to include from the ingestion in the **[!UICONTROL Include MIME Types]** field. See [all supported file formats](/help/assets/file-format-support.md).
+
+1. Select the **[!UICONTROL Delete source file after import]** option to delete the original files from the source data store after the files are imported into [!DNL Experience Manager].
+
+1. Select the **[!UICONTROL Import Mode]**. Select **Skip**, **Replace**, or **Create Version**. Skip mode is the default and in this mode the ingestor skips to import an asset if it already exists. See the meaning of [replace and create version options](#handling-upload-existing-file).
+
+1. Specify a path to define a location in DAM where assets are to be imported using the **[!UICONTROL Assets Target Folder]** field. For example, `/content/dam/imported_assets`.
+
+1. (Optional) Specify the metadata file to import, provided in CSV format, in the **[!UICONTROL Metadata File]** field. Specify the CSV file in the source blob location and refer to the path while configuring Bulk Import tool. The CSV file format referenced in this field is same as that of the CSV file format when you [Import and export asset metadata in bulk](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). If you select the **Delete source file after import** option, filter CSV files either using the **Exclude** or **Include MIME Type** or **Filter by Path/File** fields. You can use a regular expression to filter CSV files in these fields.
+
+1. Click **[!UICONTROL Save]** to save the configuration.
+
+#### Manage the Bulk Import tool configuration {#manage-bulk-import-configuration}
+
+After creating the Bulk Import tool configuration, you can perform tasks to evaluate the configuration before bulk ingesting assets to your Experience Manager instance. Select the configuration available at **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]** to view the available options to manage your Bulk Import tool configuration.
+
+##### Edit the configuration {#edit-configuration}
+
+Select the configuration and click **[!UICONTROL Edit]** to modify the configuration details. You cannot edit the title of the configuration and the import data source while performing the edit operation.
+
+##### Delete the configuration {#delete-configuration}
+
+Select the configuration and click **[!UICONTROL Delete]** to delete the Bulk Import configuration.
+
+##### Validate connection to the data source {#validate-connection}
+
+Select the configuration and click **[!UICONTROL check]** to validate the connection to the data source. In case of a successful connection, Experience Manager displays the following message:
+
+![Bulk Import success message](assets/bulk-import-success-message.png)
+
+##### Invoke a test run for the Bulk Import job {#invoke-test-run-bulk-import}
+
+Select the configuration and click **[!UICONTROL Dry Run]** to invoke a test run for the Bulk Import job. Experience Manager displays the following details about the Bulk Import job:
+
+![Dry Run Result](assets/dry-assets-result.png)
+
+##### Schedule a one-time or a recurring bulk import {#schedule-bulk-import}
+
+To schedule a one-time or a recurring bulk import, execute the following steps:
 
 1. Create a bulk import configuration.
 1. Select the configuration and select **[!UICONTROL Schedule]** from the toolbar.
 1. Set a one-time ingestion or schedule an hourly, a daily, or a weekly schedule. Click **[!UICONTROL Submit]**.
 
    ![Schedule bulk ingestor job](assets/bulk-ingest-schedule1.png)
+
+
+##### View the Assets target folder {#view-assets-target-folder}
+
+Select the configuration and click **[!UICONTROL View Assets]** to view the Assets target location where the assets are imported after executing the Bulk Import job.
+
+#### Run the Bulk Import tool {#run-bulk-import-tool}
+
+After [configuring the Bulk Import tool](#configure-bulk-ingestor-tool) and optionally [managing the Bulk Import tool configuration](#manage-bulk-import-configuration), you can run the configuration job to start the bulk ingestion of assets.
+
+Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**, select the [Bulk Import configuration](#configure-bulk-ingestor-tool) and click **[!UICONTROL Run]** to start the Bulk Import process. Click **[!UICONTROL Run]** again to confirm.
+
+Experience Manager updates the status of the job to **Processing** and to **Succeeded** upon successful completion of the job. Click **View Assets** to view the imported assets in Experience Manager.
+
+When the job is in progress, you can also select the configuration and click **Stop** to stop the bulk ingestion process. Click **Run** again to resume the process. You can also click **Dry Run** to know the details of the assets that are still pending import.
+
+#### Manage jobs after execution {#manage-jobs-after-execution}
+
+Experience Manager enables you to see the history of the bulk import jobs. The Job history comprises of the status of the job, job creator, logs, along with other details such as the start date and time, create date and time, and finish date and time.
+
+To access the job history for a configuration, select the configuration and click **[!UICONTROL Job History]**. Select a job and click **Open**.
+
+ ![Schedule bulk ingestor job](assets/job-history-bulk-import.png)
+
+Experience Manager displays the job history. On the Bulk Import job history page, you can also click **Delete** to delete that job for the Bulk Import configuration. 
+
 
 ## Upload assets using desktop clients {#upload-assets-desktop-clients}
 
@@ -215,11 +268,29 @@ For folders that have a processing profile assigned, the profile name appears on
 
 ## Upload or ingest assets using APIs {#upload-using-apis}
 
-Technical details of the upload APIs and protocol, and links to open-source SDK and sample clients is provided in [asset upload](developer-reference-material-apis.md#asset-upload-technical) section of the developer reference.
+Technical details of the upload APIs and protocol, and links to open-source SDK and sample clients is provided in [asset upload](developer-reference-material-apis.md#asset-upload) section of the developer reference.
+
+## Tips, best practices, and limitations {#tips-limitations}
+
+* Direct binary upload is a new method to upload assets. It is supported by default by the product capabilities and clients, like [!DNL Experience Manager] user interface, [!DNL Adobe Asset Link], and [!DNL Experience Manager] desktop app. Any custom code that is customized or extended by customers technical teams must use the new upload APIs and protocols.
+
+* Adobe recommends adding not more than 1000 assets in each folder in [!DNL Experience Manager Assets]. While you can add more assets to a folder, it is possible that you will experience performance issues such as slower navigation to such folders.
+
+* When you select **[!UICONTROL Replace]** in the [!UICONTROL Name Conflict] dialog, the asset ID is regenerated for the new asset. This ID is different from the ID of the previous asset. If [Assets Insights](/help/assets/assets-insights.md) is enabled to track impressions or clicks with [!DNL Adobe Analytics], the regenerated asset ID invalidates the data-captured for the asset on [!DNL Analytics].
+
+* Some upload methods do not stop you from uploading assets with [forbidden characters](#filename-handling) in the filenames. The characters are replaced with `-` symbol.
+
+* Uploading assets using the browser only supports flat file lists and not nested folder hierarchies. To upload all assets inside nested folder, consider using [desktop app](#upload-assets-desktop-clients).
+
+* Bulk import method imports the entire folder structure as it exists on the data source. However, only the non-empty folders are created in [!DNL Experience Manager].
+
+
+<!-- TBD: Link to file name handling in DA docs when it is documented. 
+-->
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Adobe Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [About [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [Technical reference for asset upload](developer-reference-material-apis.md#asset-upload-technical)
+>* [Technical reference for asset upload](developer-reference-material-apis.md#asset-upload)
