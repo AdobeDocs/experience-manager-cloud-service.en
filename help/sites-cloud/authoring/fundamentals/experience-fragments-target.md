@@ -95,9 +95,11 @@ The required options can be selected in **Page Properties** of the required fold
    >
    > Also note that Externalizer Domains are only relevant to the content of the Experience Fragment that is sent to Target, and not metadata such as View Offer Content.
 
+<!--
    For example, for a folder:
 
    ![Folder - Cloud Services](assets/xf-target-integration-01.png "Folder - Cloud Services")
+--> 
 
 1. **Save & Close**.
 
