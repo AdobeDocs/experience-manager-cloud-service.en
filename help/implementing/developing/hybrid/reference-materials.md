@@ -23,3 +23,7 @@ The following are the open source repositories on GitHub for the SPA libraries.
 * [React Editable Components](https://github.com/adobe/aem-react-editable-components)
 * [Angular Editable Components](https://github.com/adobe/aem-angular-editable-components)
 * [SPA Project Core](https://github.com/adobe/aem-spa-project-core)
+
+>[!TIP]
+>
+>Check out the API Reference Materials document for all AEM-related APIs.

@@ -72,7 +72,7 @@ Open the fragment's **Configuration** dialog to configure the fragment for use o
 
 >[!NOTE]
 >
->See also [Core Components, the Content Fragment Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+>See also [Core Components, the Content Fragment Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 In the appropriate configuration dialog you can select the available parameters, including:
 

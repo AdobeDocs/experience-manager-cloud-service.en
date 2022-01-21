@@ -4,17 +4,12 @@ description: Learn about the types of metadata an how [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Metadata
-role: Business Practitioner,Architect,Administrator
+role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 ---
 # Manage metadata of your digital assets {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] keeps metadata for every asset. It allows easier categorization and organization of assets and it helps people who are looking for a specific asset. With the ability to extract metadata from files uploaded to [!DNL Experience Manager Assets], metadata management integrates with the creative workflow. With the ability to keep and manage metadata with your assets, you can automatically organize and process assets based on their metadata.
-
->[!MORELIKETHIS]
->
->* [XMP metadata](xmp-metadata.md)
->* [How to edit or add metadata](meta-edit.md)
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
@@ -181,7 +176,7 @@ The application-specific metadata includes technical and descriptive metadata. I
 * Album - [!DNL Adobe Photoshop Album].
 * CQ - Used by [!DNL Experience Manager Assets].
 * DAM - Used by [!DNL Experience Manager Assets].
-* DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) is a collection of tools for metadata and file management for Windows operating systems.
+* DEX - [Optima SC Description explorer](https://www.optimasc.com/products/dex/index.html) is a collection of tools for metadata and file management for Windows operating systems.
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
@@ -225,3 +220,8 @@ Creating metadata-driven workflows help you automate some processes, which impro
 * The workflow can check whether an image has a title or not. If it does not, the system notifies to add a title.
 * The workflow can check whether a copyright notice on an asset allows for distribution or not. So, the system sends the asset to one server or the other.
 * A workflow can check for assets without pre-defined, mandatory metadata or assets with *invalid* metadata.
+
+>[!MORELIKETHIS]
+>
+>* [XMP metadata](xmp-metadata.md)
+>* [How to edit or add metadata](meta-edit.md)

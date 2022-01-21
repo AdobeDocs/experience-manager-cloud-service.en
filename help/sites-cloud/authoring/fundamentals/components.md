@@ -33,7 +33,7 @@ The [Components Console](/help/sites-cloud/authoring/features/components-console
 
 ## Core Components {#core-components}
 
-The [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) offer flexible and feature-rich authoring functionality, which provide essential content types to create pages.
+The [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) offer flexible and feature-rich authoring functionality, which provide essential content types to create pages.
 
 They are build using AEM best practices and are the foundation of the AEM authoring experience. Core Components can be easily extended by developers to meet specific project needs.
 

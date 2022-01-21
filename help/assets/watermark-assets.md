@@ -3,7 +3,7 @@ title: Watermark the assets
 description: Add watermark to your digital assets.
 contentOwner: AG
 feature: Asset Management,Publishing
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
 ---
 # Watermark your assets {#watermark-assets}

@@ -2,7 +2,7 @@
 title: Markdown
 description: Understand how the Content Fragment editor uses markdown syntax to allow you to easily create headless content.
 feature: Content Fragments
-role: Business Practitioner
+role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 ---
 # Markdown {#markdown}
@@ -159,7 +159,7 @@ You can bold text as follows:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph.
+To indicate a span of code, wrap it with backtick quotes (&grave;). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph.
 
 For example:
 

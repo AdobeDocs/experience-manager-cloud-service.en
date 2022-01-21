@@ -12,6 +12,7 @@ Learn how to use AEM's Assets REST API to manage Content Fragments and the Graph
 [Now that you have created some content fragments,](create-content-fragment.md) you can use AEM's APIs to deliver them headlessly.
 
 * [The GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) allows you to create requests to access and deliver Content Fragments.
+   * To use this, [endpoints need to be defined and enabled in AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint), and if required, the [GraphiQL interface installed](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [The Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) allows you to create and modify Content Fragments (and other assets).
 
 The remainder of this guide will focus on GraphQL access and Content Fragment delivery.
@@ -19,12 +20,6 @@ The remainder of this guide will focus on GraphQL access and Content Fragment de
 ## How to Deliver a Content Fragment Using GraphQL {#how-to-deliver-a-content-fragment}
 
 Information architects will need to design queries for their channel endpoints in order to deliver content. These queries will generally only need to be considered once per endpoint per model. For the purposes of this getting started guide we will only need to create one.
-
-<!-- Not in the UI yet - will need updating when it is -->
-<!--
-1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; Assets -&gt; GraphQL** 
-   * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
--->
 
 1. Log into AEM as a Cloud Service and access the GraphiQL interface:
    * For example: `https://<host>:<port>/content/graphiql.html`.

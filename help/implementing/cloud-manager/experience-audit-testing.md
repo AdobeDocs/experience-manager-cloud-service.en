@@ -5,6 +5,11 @@ exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 ---
 # Experience Audit Testing {#experience-audit-testing}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_expaudittesting"
+>title="Experience Audit Testing"
+>abstract="Experience Audit is a feature available in Cloud Manager Sites Production pipelines, powered by Google Lighthouse, an open source tool from Google. This feature is enabled in all Cloud Manager Production pipelines."
+
 Experience Audit is a feature available in Cloud Manager Sites Production pipelines, powered by Google Lighthouse, an open source tool from Google. This feature is enabled in all Cloud Manager Production pipelines.
 
 It validates the deployment process and helps ensure that changes deployed:

@@ -2,12 +2,16 @@
 title: Preparing Content for Translation
 description: Learn how to prepare content for translation.
 feature: Language Copy
-role: Administrator
+role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 ---
 # Preparing Content for Translation {#preparing-content-for-translation}
 
 Multilingual web sites generally provide some amount of content in multiple languages. The site is authored in one language and then translated into other languages. Generally, multilingual sites consists of branches of pages, where each branch contains the pages of the site in a different language.
+
+>[!TIP]
+>
+>If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
 
 The [WKND tutorial site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) includes several language branches and uses the following structure:
 

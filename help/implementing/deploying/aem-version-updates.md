@@ -29,7 +29,7 @@ AEM version updates are of two types:
 
 AEM updates go through an intense and fully automated product validation pipeline involving multiple steps ensuring no disruption of service for any systems in production. Health checks are used to monitor the health of the application. If these checks fail during an AEM as a Cloud Service update, the release will not proceed and Adobe will investigate why the update caused this unexpected behavior. 
 
-[Product tests and Customer functional tests](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) which prevent product upgrades and customer code pushes from breaking production are also validated during an AEM version update.
+[Product tests and Customer functional tests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) which prevent product upgrades and customer code pushes from breaking production are also validated during an AEM version update.
 
 >[!NOTE]
 >
