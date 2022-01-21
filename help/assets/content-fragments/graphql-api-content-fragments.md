@@ -578,7 +578,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
 * Fallback when querying nested fragments:
 
-  * If a given variation does not exist in a nested fragment, then the **Master** variation would be returned.
+  * If the requested variation does not exist in a nested fragment, then the **Master** variation will be returned.
 
 ## Persisted Queries (Caching) {#persisted-queries-caching}
 
