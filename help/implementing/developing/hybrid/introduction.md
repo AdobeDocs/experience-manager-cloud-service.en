@@ -1,8 +1,8 @@
 ---
 title: SPA Introduction and Walkthrough
 description: This article introduces the concepts of a SPA and walks through using a basic SPA application for authoring, showing how it relates to the underlying AEM SPA Editor.
+exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 ---
-
 # SPA Introduction and Walkthrough {#spa-introduction}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using such frameworks.
@@ -25,7 +25,7 @@ The walkthrough is based on standard AEM functionality and the sample WKND SPA P
 
 >[!TIP]
 >
->Any AEM project should leverage the [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
+>Any AEM project should leverage the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
 
 ### What is a SPA? {#what-is-a-spa}
 

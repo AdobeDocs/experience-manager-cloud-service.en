@@ -1,8 +1,8 @@
 ---
 title: Creating a Configuration Headless Quick Start Guide
-description: As a first step to getting started with headless in AEM as a Cloud Service, you need to create a configuration.
+description: Create a configuration as a first step to getting started with headless in AEM as a Cloud Service.
+exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 ---
-
 # Creating a Configuration Headless Quick Start Guide {#creating-configuration}
 
 As a first step to getting started with headless in AEM as a Cloud Service, you need to create a configuration.

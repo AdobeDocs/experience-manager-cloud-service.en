@@ -1,8 +1,8 @@
 ---
 title: SPA Editor Overview
 description: This article gives a comprehensive overview of the SPA Editor and how it works included detailed workflows of interaction of the SPA Editor within AEM.
+exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 ---
-
 # SPA Editor Overview {#spa-editor-overview}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using such frameworks.

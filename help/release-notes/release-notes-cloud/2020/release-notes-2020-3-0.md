@@ -1,8 +1,8 @@
 ---
 title: Release Notes for Release 2020.3.0
 description: Release Notes for Release 2020.3.0
+exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
 ---
-
 # Release Notes for AEM as a Cloud Service 2020.3.0 {#release-notes}
 
 This page outlines the general Release Notes for Experience Manager as a Cloud Service 2020.3.0.
@@ -29,4 +29,3 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 * Concurrent creation of dev environments in the same Cloud Service program could encounter a condition where only one was able to be created successfully.
 * Experience Cloud notifications for Cloud Service programs were not consistently received.
 * In specific projects, the *ResourceResolver objects should always be closed* would produce a Null Pointer Exception; this, however, did not impact pipeline execution.
-

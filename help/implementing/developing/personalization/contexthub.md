@@ -1,8 +1,8 @@
 ---
 title: ContextHub
 description: ContextHub is a framework for storing, manipulating, and presenting context data
+exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 ---
-
 # ContextHub {#contexthub}
 
 ContextHub is a framework for storing, manipulating, and presenting context data. It's primary feature is offering the ability to [view context data while simulating and switching between various personas.](/help/sites-cloud/authoring/personalization/contexthub.md)

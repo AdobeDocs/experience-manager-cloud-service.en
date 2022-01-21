@@ -1,8 +1,8 @@
 ---
 title: Adding IP Allow List 
 description: Adding IP Allow List
+exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 ---
-
 # Adding an IP Allow List {#add-ip-allow-list}
 
 A user in the Business Owner or Deployment Manager role must be logged in in order to be able to add an IP Allow List.

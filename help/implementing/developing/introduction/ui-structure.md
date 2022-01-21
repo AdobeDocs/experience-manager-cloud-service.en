@@ -1,8 +1,8 @@
 ---
 title: Structure of the AEM UI
 description: The AEM UI has several underlying principles and is made up of several key elements
+exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 ---
-
 # Structure of the AEM UI {#structure-of-the-aem-ui}
 
 The AEM UI has several underlying principles and is made up of several key elements:

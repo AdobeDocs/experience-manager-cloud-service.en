@@ -1,8 +1,10 @@
 ---
 title: Configuring the Translation Integration Framework
 description: Learn how to configure the Translation Integration Framework to integrate with third-party translation services.
+feature: Language Copy
+role: Admin
+exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 ---
-
 # Configuring the Translation Integration Framework {#configuring-the-translation-integration-framework}
 
 The Translation Integration Framework integrates with third-party translation services to orchestrate the translation of AEM content. It involves three basic steps.
@@ -12,6 +14,10 @@ The Translation Integration Framework integrates with third-party translation se
 1. [Associate the cloud configurations with your pages.](#configuring-pages-for-translation)
 
 For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](overview.md).
+
+>[!TIP]
+>
+>If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
 
 ## Connecting to a Translation Service Provider {#connecting-to-a-translation-service-provider}
 
@@ -25,12 +31,11 @@ The following translation vendors provide an implementation of the AEM API for t
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
-* [CrossLang NV](https://exchange.adobe.com/experiencecloud.details.90049.crosslang-xtm-for-adobe-experience-manager.html)
+* [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 
 After you install a connector package, you can create a cloud configuration for the connector. Typically, you need to provide your credentials for authenticating with the translation service. For information about adding a cloud configuration for the Microsoft Translator connector, see [Integrating with Microsoft Translator](connect-ms-translator.md).
 

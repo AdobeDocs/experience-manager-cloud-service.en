@@ -2,8 +2,10 @@
 title: Manage video assets
 description: Upload, preview, annotate, and publish video assets in [!DNL Adobe Experience Manager].
 contentOwner: AG
+feature: Asset Management,Publishing,Collaboration,Video
+role: User
+exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
 ---
-
 # Manage video assets {#manage-video-assets}
 
 Video format is a critical part of digital assets of an organization. [!DNL Adobe Experience Manager] offers mature offerings and features to manage the entire lifecycle of your video assets after their creation.
@@ -36,6 +38,12 @@ If you provide only width or only height and leave the other field blank, the re
 To process assets using a processing profile, add a profile to a folder. See [use processing profiles to process assets](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ## Annotate video assets {#annotate-video-assets}
+
+You can add annotations to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](manage-video-assets.md). 
+
+>[!NOTE]
+>
+>MXF video format is not yet supported with video asset annotations.
 
 1. From the [!DNL Assets] console, select **[!UICONTROL Edit]** on the asset card to display the asset details page.
 1. To play the video, click **[!UICONTROL Preview]**.
