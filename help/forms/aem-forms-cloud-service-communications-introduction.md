@@ -19,7 +19,7 @@ You can generate a document on demand or create a batch job to generate multiple
 * a secure access to data. Communications APIs connect to and access data only from customer designated data repositories, makes no local copies of data, making Communications highly secure.
 
 ![A sample credit card statement](assets/statement.png)
-A sample credit card statement can be created using Communications APIs. The statement uses same template but seperate data for each customer depending on their usage of credit card.
+A credit card statement can be created using Communications APIs. This sample statement uses same template but seperate data for each customer depending on their usage of credit card.
 
 ## How it works?
 
