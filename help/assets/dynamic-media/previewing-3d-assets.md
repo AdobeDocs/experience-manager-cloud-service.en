@@ -1,9 +1,8 @@
 ---
-title: Previewing 3D assets
-description: Learn how to preview 3D assets in Dynamic Media.
+title: Preview 3D assets
+description: Learn how to preview 3D assets in Experience Manager.
 feature: 3D Assets
 role: User
-exl-id:
 ---
 
 # Preview 3D assets in Adobe Experience Manager{#previewing-3d-assets}
