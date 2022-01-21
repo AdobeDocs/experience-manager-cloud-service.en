@@ -18,7 +18,7 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 
 ## Share assets as a link {#sharelink}
 
-To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to [!DNL Assets].
+Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to [!DNL Assets]. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
 
 ![Link Sharing dialog](assets/link-share-dialog.png)
 
@@ -28,7 +28,20 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 >* Before you share a link with users, [enable outbound emails](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Otherwise, an error occurs.
 
 1. In the [!DNL Assets] user interface, select the asset to share as a link.
-1. From the toolbar, click the **[!UICONTROL Share Link]**. An asset link is auto-created in the **[!UICONTROL Share Link]** field. Copy this link and share it with the users. The default expiration time for the link is one day.
+1. From the toolbar, click the **[!UICONTROL Share Link]**. The [!UICONTROL Link Sharing] dialog appears which contains an auto-generated asset link in the **[!UICONTROL Share Link]** field. 
+
+   * In the email address box, type the email ID of the user with whom you want to share the link. You can share the link with multiple users. If the user is a member of your organization, select their email ID from the suggestions that appear in the drop-down list. If the user is external, type the complete email ID and press **[!UICONTROL Enter]**; the email ID is added to the list of users.
+
+   * In the **[!UICONTROL Subject]** box, type a subject for the asset you want to share.
+   * In the **[!UICONTROL Message]** box, type a message if necessary.
+   * In the **[!UICONTROL Expiration]** field, use the date picker to specify an expiration date and time for the link. The default expiration time for the link is one day.
+   * Enable the **[!UICONTROL Allow downlod of original file]** check box to allow the recepients to download the original rendition. 
+
+1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users. Users receive an email containing the shared link.
+
+<!--
+You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
+-->
 
    >[!NOTE]
    >

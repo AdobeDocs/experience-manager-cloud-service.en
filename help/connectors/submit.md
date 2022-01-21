@@ -10,7 +10,7 @@ Provided below is useful information for submitting AEM Connectors and should be
 
 AEM Connectors are listed on the [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
-In previous AEM solutions, Package Manager was used to install connectors on various AEM instances. However, with AEM as a Cloud Service, connectors are deployed during the CI/CD process in Cloud Manager. In order for the connectors to be deployed, connectors need to be referenced in the maven project's pom.xml. 
+In previous AEM solutions, [Package Manager](/help/implementing/developing/tools/package-manager.md) was used to install connectors on various AEM instances. However, with AEM as a Cloud Service, connectors are deployed during the CI/CD process in Cloud Manager. In order for the connectors to be deployed, connectors need to be referenced in the maven project's pom.xml. 
 
 There are various options of how the packages can be included in a project:
 

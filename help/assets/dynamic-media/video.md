@@ -1,11 +1,11 @@
 ---
 title: Video in Dynamic Media
-description: Learn how to work with video in Dynamic Media.
+description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, publishing videos to YouTube, viewing video reports, and adding closed captioning, subtitles, or chapter markers to videos.
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 ---
-# Video{#video}
+# Video {#video}
 
 This section describes working with video in Dynamic Media.
 
@@ -30,12 +30,11 @@ The following step-by-step workflow description is designed to help you get up a
     * Associate the video processing profile to one or more folders where you are going to upload your primary source videos.
 
         * [Apply a video profile to folders](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-        * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
         * Learn more about [Organize digital assets](/help/assets/organize-assets.md).
 
     * Upload your primary source videos to the folders. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
 
-        * Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes.
+        * Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 50 x 50.
         * You can upload video files that are up to 15 GB each.
         * [Upload your videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
         * Learn more about [Supported input file formats](/help/assets/file-format-support.md).
@@ -47,8 +46,6 @@ The following step-by-step workflow description is designed to help you get up a
     * Organize, browse, and search video assets
 
         * [Organize digital assets](/help/assets/organize-assets.md)
-          Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/dynamic-media/best-practices-for-file-management.md)
-
         * [Search video assets](/help/assets/search-assets.md#custompredicates) or [Searching assets](/help/assets/manage-digital-assets.md#search-assets)
 
     * Preview and publish video assets
@@ -57,19 +54,10 @@ The following step-by-step workflow description is designed to help you get up a
           [Preview videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) or [Preview assets](/help/assets/dynamic-media/previewing-assets.md)
           [Manage video renditions](/help/assets/manage-digital-assets.md#managing-renditions)
 
-<!-- Commented video-renditions.md as the file is not published yet and will lead to broken link.
-        * View the source video and encoded renditions of the video along with its associated thumbnails:
-          [Previewing videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
-          [Viewing video renditions](/help/assets/video-renditions.md)
-          [Managing video renditions](/help/assets/manage-digital-assets.md#managing-renditions) -->
-
         * [Manage viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md)
         * [Publishing assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
     * Work with video metadata
-
-<!--      * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:
-          [Viewing video rendition properties](/help/assets/video-renditions.md) -->
 
         * Edit the properties of video such as the title, description, and tags, custom metadata fields:
           [Editing video properties](/help/assets/manage-digital-assets.md#editing-properties)
@@ -83,11 +71,6 @@ The following step-by-step workflow description is designed to help you get up a
 
         * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
         * [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
-
-<!-- Removing assets-workflow.md file link as it is not applicable anymore. Workflows are replaced by processing profiles.
-        * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
-        * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
--->
 
         * [Review folder assets](/help/assets/bulk-approval.md)
         * [Projects](/help/sites-cloud/authoring/projects/overview.md)
@@ -282,7 +265,7 @@ The following are best-practice tips for encoding source video files.
 
 When you encode a video file, use a source video file of the highest possible quality. Avoid using previously encoded video files because these files are already compressed, and further encoding creates a subpar quality video.
 
-* Dynamic Media supports mainly short-form videos with a maximum length of 30 minutes.
+* Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 50 x 50.
 * You can upload primary source video files that are up to 15 GB each.
 
 The following table describes the recommended size, aspect ratio, and minimum bit rate that your source video files must have before you encode them:
@@ -1006,7 +989,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -1063,15 +1046,17 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## Add captions or subtitles to video {#adding-captions-to-video}
+## Add closed captions or subtitles to video {#adding-captions-to-video}
 
-You can extend the reach of your videos to global markets by adding captioning to single videos or to Adaptive Video Sets. By adding captioning you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
+You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
 
-Captioning also allows for greater accessibility by using closed captioning for people who are deaf or hard of hearing.
+Closed captioning also allows for greater accessibility for people who are deaf or hard of hearing.
 
 >[!NOTE]
 >
->The video player that you use must support the display of captions.
+>The video player that you use must support the display of closed captions.
+
+See also [Accessibility in Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md).
 
 Dynamic Media can convert caption files to JSON (JavaScript Object Notation) format. This conversion means you can embed the JSON text into a web page as a hidden but complete transcript of the video. Search engines can then crawl/index the content to make the videos more easily discoverable and give customers more details about the video content.
 

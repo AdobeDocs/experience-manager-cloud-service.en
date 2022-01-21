@@ -1,8 +1,8 @@
 ---
 title: Assigning Player to a Display in Screens as a Cloud Service
 description: This page describes how to assign a player to a display in Screens as a Cloud Service.
+exl-id: d5f5b087-d17a-427f-9bf2-7451eb4e1df6
 ---
-
 # Assigning Player to a Display in Screens as a Cloud Service {#assign-player-displays-screens-cloud}
 
 Once the project set up is complete, you must assign the player to a display to view the content.
@@ -32,4 +32,3 @@ Once you have assigned a display to a player, as shown in the preceding section,
 Now, the display is assigned to your player and the channel will start playing the content. The player should now download and start playing content. **Congratulations!** 
 
    ![image](/help/screens-cloud/assets/player/output.gif)
-

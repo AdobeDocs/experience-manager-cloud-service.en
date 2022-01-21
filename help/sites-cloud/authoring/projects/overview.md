@@ -77,7 +77,7 @@ The **Experiences** tile lets you add a Mobile app, web site, or publication to 
 
 ![Experiences](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-The icons indicate which kind of experience is represented: web site, mobile application or a publication. Add experiences by clicking the + sign or clicking **Add Experience** and selecting the type of experience.
+The icons indicate which kind of experience is represented: web site, mobile application or a publication. Add experiences by tapping or clicking the down chevron and tapping **Add Experience** and selecting the type of experience.
 
 ![Add an experience](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 

@@ -68,5 +68,5 @@ Directory
  
 ## Help and Resources  
 
-* [First Time Login - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)  
+* [First Time Login - Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)  
 * [Configuring access to AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)

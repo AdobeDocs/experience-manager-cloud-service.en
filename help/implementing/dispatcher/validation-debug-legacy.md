@@ -3,6 +3,7 @@ title: Validating and Debugging using Dispatcher Tools (Legacy)
 description: Validating and Debugging using Dispatcher Tools (Legacy)
 feature: Dispatcher
 hidefromtoc: yes
+exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
 ---
 # Validating and Debugging using Dispatcher Tools (Legacy)  {#Dispatcher-tools-legacy}
 
@@ -355,7 +356,7 @@ This phase checks the apache syntax by starting Docker in an image. Docker must 
 >[!NOTE]
 >Windows users need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer.
 
-This phase can also be run independently through `validator full -d out src/dispatcher`, which generates an out directory, needed by the next command `bin/docker_run.sh out host.internal.docker:4503 8080`.
+This phase can also be run independently through `validator full -d out src/dispatcher`, which generates an out directory, needed by the next command `bin/docker_run.sh out host.docker.internal:4503 8080`.
 
 During a Cloud Manager deployment, the `httpd -t` syntax check will also be executed and any errors will be included in the Cloud Manager Build Images step failure log.
 

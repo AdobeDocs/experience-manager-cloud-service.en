@@ -7,7 +7,7 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 
 ## 1. Is CIF GraphQL only used for commerce or will this be available for querying content authored on AEMs JCR?
 
-Adobe has adopted Magento’s GraphQL APIs as its official commerce API for all commerce related data. Hence, AEM uses GraphQL to exchange commerce data with Magento and with any commerce engine via I/O Runtime. This GraphQL API is independent from AEM's GraphQL API to access Content Fragments.
+Adobe has adopted Magento’s GraphQL APIs as its official commerce API for all commerce-related data. Hence, AEM uses GraphQL to exchange commerce data with Magento and with any commerce engine via I/O Runtime. This GraphQL API is independent from AEM's GraphQL API to access Content Fragments.
 
 ## 2. Can Product assets (images) be stored and referenced from AEM via Adobe Commerce (Magento) admin? How can assets from Dynamic Media be consumed?
 
@@ -29,7 +29,7 @@ The CIF add-on used with AEM Cloud Service enables data to flow from the commerc
 
 ## 6. What catalog size does AEM with CIF support?
 
-This depends on a few additional aspects you have to consider. What is the cache ratio of your catalog data & pages? How many concurrent requests do you expect during peak hours? How scaleable are the APIs of your commerce solutions?
+This depends on a few additional aspects you have to consider. What is the cache ratio of your catalog data & pages? How many concurrent requests do you expect during peak hours? How scalable are the APIs of your commerce solutions?
 
 ## 7. How does PIM play into this framework?
 
@@ -41,11 +41,11 @@ Dynamic data such as price or inventory is not cached on the Dispatcher. Dynamic
 
 ## 9. How does cache invalidation for AEM Dispatcher work with AEM and commerce?
 
-We recommend setting up TTL-based cache invalidation for pages cached on the Dispatcher. For dynamic information such as price or stock, we recommend rendering the date client-side. For more information about TTL-based cache invalidation, please refer to [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
+We recommend setting up TTL-based cache invalidation for pages cached on the Dispatcher. For dynamic information such as price or stock, we recommend rendering the data client-side. For more information about TTL-based cache invalidation, please refer to [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
 
 ## 10. Is there any recommendation on unified search across AEM content with Commerce?
 
-A product search reference implementation is provided but no unified search with content. This feature is usually very customer specific and better solved on a project-specific level.
+A product search reference implementation is provided but no unified search with content. This feature is usually very customer-specific and better solved on a project-specific level.
 
 ## 11. How does Search work with AEM and commerce using CIF?
 
@@ -57,11 +57,11 @@ Product data is usually already translated in PIM or in Magento. The AEM – Mag
 
 ## 13. Is there a way to enhance the product data with commercial text? Where do you do this? In AEM or in the commerce solution?
 
-We recommend to manage marketing related data and content in AEM. Decorate product data from your commerce solution with additional attributes using Content Fragments or create and link Experience Fragments for un-strutured content with your products.
+We recommend managing marketing related data and content in AEM. Decorate product data from your commerce solution with additional attributes using Content Fragments or create and link Experience Fragments for unstructured content with your products.
 
 ## 14. How can we ensure PCI compliance when using AEM for the entire presentation layer?
 
-We recommend to use abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or the commerce solutions hold or pass cardholder data. This approach requires only a level 3 PCI compliance. However, there are additional things to consider to be fully PCI compliant such as how employees interact with the system and data. For more information about Magento PCI compliance, please refer to <https://magento.com/pci-compliance>
+We recommend using abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or the commerce solutions hold or pass cardholder data. This approach requires only a level 3 PCI compliance. However, there are additional things to consider to be fully PCI compliant such as how employees interact with the system and data. For more information about Magento PCI compliance, please refer to [PCI Compliance Requirements](https://magento.com/pci-compliance).
 
 ## 15. If I use AEM and Magento cloud versions, is this joint solution PCI compliant?
 

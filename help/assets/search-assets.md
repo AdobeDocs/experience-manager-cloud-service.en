@@ -151,7 +151,7 @@ You can search assets based on exact values of metadata fields, such as, title, 
 | Creator | creator:John |
 | Location | location:NA |
 | Description | description:"Sample Image" |
-| Creator tool | creatortool:"Adobe Photoshop CC 2015" |
+| Creator tool | creatortool:"Adobe Photoshop" |
 | Copyright Owner | copyrightowner:"Adobe Systems" |
 | Contributor | contributor:John |
 | Usage Terms | usageterms:"CopyRights Reserved" |
@@ -348,7 +348,7 @@ Visual search uses Smart Tags. After configuring smart tagging functionality, fo
    Save the changes.
 
 1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
+1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
 1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save the changes.
 

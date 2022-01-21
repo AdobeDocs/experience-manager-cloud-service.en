@@ -2,8 +2,8 @@
 title: OSGi Configuration API
 description: Description of the AEM as a Cloud Service OSGi configuration surface
 feature: Deploying
+exl-id: 94d3df65-71d7-4442-8412-fe2cca7e79ff
 ---
-
 # OSGi Configuration API
 
 The two lists below reflect the AEM as a Cloud Service OSGi configuration surface, describing what customers can configure.
@@ -23,6 +23,7 @@ Additional information about OSGI configuration can be found at [this location](
 * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
 * **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
 * **`org.apache.felix.http (Factory)`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Announcement Date: 8/25/2021, Enforcement Date: 11/26/2021)
 
 ## OSGi Configurations Subject to Build Validation Rules {#osgi-configurations-subject-to-build-validation-rules}
 
@@ -134,4 +135,14 @@ Additional information about OSGI configuration can be found at [this location](
   * `debug.email`
     * Type: boolean
   * `oauth.flow`
+    * Type: boolean
+* **`org.apache.sling.commons.log.LogManager.factory.config`** (Announcement Date: 11/16/21, Enforcement Date: 2/16/21)
+  * `org.apache.sling.commons.log.level`
+    * Type: enumeration
+    * Required Range: INFO, DEBUG, or TRACE
+  * `org.apache.sling.commons.log.names`
+    * Type: string
+  * `org.apache.sling.commons.log.file`
+    * Type: string
+  * `org.apache.sling.commons.log.additiv`
     * Type: boolean

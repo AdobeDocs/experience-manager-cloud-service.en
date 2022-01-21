@@ -101,7 +101,7 @@ And if you wanted to output a simple message only when the build is run outside 
 ## Password-Protected Maven Repository Support {#password-protected-maven-repositories}
 
 >[!NOTE]
->Artifacts from a password-protected Maven repository should only be used very cautiously as code deployed through this mechanism is currently not run through Cloud Manager's Quality Gates. Therefore it should only be used in rare cases and for code not tied to AEM. It is advised to also deploy the Java sources as well as the whole project source code alongside with the binary.
+>Artifacts from a password-protected Maven repository should only be used very cautiously as code deployed through this mechanism is currently not run through all of the quality rules implemented in Cloud Manager's Quality Gates. Therefore it should only be used in rare cases and for code not tied to AEM. It is advised to also deploy the Java sources as well as the whole project source code alongside with the binary.
 
 In order to use a password-protected Maven repository from Cloud Manager, specify the password (and optionally, the username) as a secret Pipeline Variable and then reference that secret inside a file named `.cloudmanager/maven/settings.xml` in the git repository. This file follows the [Maven Settings File](https://maven.apache.org/settings.html) schema. When the Cloud Manager build process starts, the `<servers>` element in this file will be merged into the default `settings.xml` file provided by Cloud Manager. Server IDs starting with `adobe` and `cloud-manager` are considered reserved and should not be used by custom servers. Server IDs **not** matching one of these prefixes or the default ID `central` will never be mirrored by Cloud Manager. With this file in place, the server id would be referenced from inside a `<repository>` and/or `<pluginRepository>` element inside the `pom.xml` file. Generally, these `<repository>` and/or `<pluginRepository>` elements would be contained inside a [Cloud Manager-specific profile](#activating-maven-profiles-in-cloud-manager), although that is not strictly necessary.
 
@@ -252,3 +252,37 @@ With the content-package-maven-plugin it is similar:
             </configuration>
         </plugin>
 ```
+
+## Build Artifact Reuse {#build-artifact-reuse}
+
+In many cases, the same code is deployed to multiple AEM environments. Where possible, Cloud Manager will avoid rebuilding the code base when it detects that the same git commit is used in multiple full-stack pipeline executions.
+
+When an execution is started, the current HEAD commit for the branch pipeline is extracted. The commit hash is visible in the UI and via the API. When the build step completes successfully, the resulting artifacts are stored based on that commit hash and may be reused in subsequent pipeline executions. When a reuse occurs, the build and code quality steps are effectively replaced with the results from the original execution. The log file for the build step will list the artifacts and the execution information which was used to build them originally.
+
+The following is an example of such log output.
+
+```shell
+The following build artifacts were reused from the prior execution 4 of pipeline 1 which used commit f6ac5e6943ba8bce8804086241ba28bd94909aef:
+build/aem-guides-wknd.all-2021.1216.1101633.0000884042.zip (content-package)
+build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatcher-configuration)
+```
+
+The log of the code quality step will contain similar information.
+
+### Opting Out {#opting-out}
+
+If desired, the reuse behavior can be disabled for specific pipelines by setting the pipeline variable `CM_DISABLE_BUILD_REUSE` to `true`. If this variable is set, the commit hash is still extracted and the resulting artifacts will be stored for later use, but any previously stored artifacts will not be reused. To understand this behavior, consider the following scenario.
+
+1. A new pipeline is created.
+1. The pipeline is executed (execution #1) and the current HEAD commit is `becdddb`. The execution is successful and the resulting artifacts are stored.
+1. The `CM_DISABLE_BUILD_REUSE` variable is set.
+1. The pipeline is re-executed without changing code. Although there are stored artifacts associated with `becdddb`, they are not reused due to the `CM_DISABLE_BUILD_REUSE` variable.
+1. The code is changed and the pipeline is executed. The HEAD commit is now `f6ac5e6`. The execution is successful and the resulting artifacts are stored.
+1. The `CM_DISABLE_BUILD_REUSE` variable is deleted.
+1. The pipeline is re-executed without changing the code. Since there are stored artifacts associated with `f6ac5e6`, those artifacts are reused.
+
+### Caveats {#caveats}
+
+* [Maven version handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md) replace the project version only in production pipelines. Therefore if the same commit is used on both a development deploy execution and a production pipeline execution and the development deploy pipeline is executed first, the versions will be deployed to stage and production without being changed. However, a tag will still be created in this case.
+* If the retrieval of the stored artifacts is not successful, the build step will be executed as if no artifacts had been stored.
+* Pipeline variables other than `CM_DISABLE_BUILD_REUSE` are not considered when Cloud Manager decides to reuse previously created build artifacts.
