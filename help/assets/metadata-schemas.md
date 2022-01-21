@@ -99,13 +99,13 @@ The **[!UICONTROL Build Form]** tab lists form items that you use in your schema
 
 #### Edit the metadata component {#edit-the-metadata-component}
 
-To edit the properties of a metadata component on the form, click the component to edit all or a subset of the following properties in the **[!UICONTROL Settings]** tab.
+To edit the properties of a metadata component on the form, click the component to edit all or a subset of the following properties in the **[!UICONTROL Settings]** tab. It is recommended to map only one field to a given property in the metadata schema. Otherwise, the latest added field mapped to the property is picked by the system.
 
 **Field Label**: The name of the metadata property that is displayed on the properties page for the asset.
 
 **Map to Property**: This property specifies the relative path to or name of the asset node where it is saved in the CRX repository. It starts with `./` to indicate that the path is under the asset's node.
 
-The following are the valid values for this property:
+The following are examples of valid values for a property:
 
 * `./jcr:content/metadata/dc:title`: Stores the value at the asset's metadata node as the property `dc:title`.
 

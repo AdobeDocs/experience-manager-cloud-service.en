@@ -1,8 +1,8 @@
 ---
 title: Creating and Managing Channels in Screens as a Cloud Service
 description: This page describes how to create and manage channels in Screens as a Cloud Service.
+exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 ---
-
 # Creating and Managing a Channel in Screens as a Cloud Service {#creating-channels-screens-cloud}
 
 Once you have created an AEM Screens Project, you must create channels.

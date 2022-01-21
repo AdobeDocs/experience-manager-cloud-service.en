@@ -20,7 +20,8 @@ You must have Administrator rights to create, edit, and delete Dynamic Media Ima
 
 After you create your Image Profile or Video Profile, you assign it to one or more folders that you use for newly uploaded Dynamic Media assets.
 
-See also [Best Practices for Organizing your Digital Assets for using Image Profiles or Video Profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
+See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/organize-assets.md).
+
 
 >[!NOTE]
 >
@@ -30,9 +31,9 @@ See also [Best Practices for Organizing your Digital Assets for using Image Prof
 
 ## Reprocess Dynamic Media assets in a folder {#reprocessing-assets}
 
-You can reprocess assets in a folder that already has an existing Dynamic Media Image Profile or a Dynamic Media Video Profile that you later changed. 
+You can reprocess assets in a folder that already has an existing Dynamic Media Image Profile or a Dynamic Media Video Profile that you later changed.
 
-For example, suppose you created a Dynamic Media Image Profile and assigned it to a folder. Any image assets you uploaded to the folder automatically had the Image Profile applied to the assets. However, later you decide to add a new smart crop ratio to the Image Profile. Now, instead of having select and reupload the assets to the folder all over again, you simply run the *Scene7: Reprocess Assets* workflow. 
+For example, suppose you created a Dynamic Media Image Profile and assigned it to a folder. Any image assets you uploaded to the folder automatically had the Image Profile applied to the assets. However, later you decide to add a new smart crop ratio to the Image Profile. Now, instead of having select and reupload the assets to the folder all over again, you simply run the *Scene7: Reprocess Assets* workflow.
 
 You can run the reprocess workflow on an asset for which processing failed the first time. Even if you have not edited an Image Profile or Video profile, or you have already applied an Image Profile or Video Profile, you can still run the reprocess workflow on a folder of assets anytime.
 
