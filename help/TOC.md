@@ -544,6 +544,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Security {#security}
     + [Permissions](/help/headless/security/permissions.md)
     + [Authentication](/help/headless/security/authentication.md)
+  + Deployment {#deployment}
+    + [Architecture](/help/headless/deployment/architecture.md)
   + Headless Journeys {#journeys}
     + Headless Developer Journey {#developer}
       + [Understand Headless in AEM](/help/journey-headless/developer/overview.md)
