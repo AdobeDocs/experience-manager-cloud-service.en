@@ -52,6 +52,10 @@ Asynchronous downloads are triggered in either of the following case:
 <!-- Go live is on 27th Jan 2022
 ### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
 
+>[!NOTE]
+>
+>This functionality is available in the Experience Manager prerelease channel.
+
 Asynchronous downloads are triggered in any of the following cases:
 
 * If there are more than ten assets 
@@ -108,13 +112,13 @@ To download assets, follow these steps:
 >This functionality is available in the Experience Manager prerelease channel.
 -->
 
-Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. See [Link Share functionality](/help/assets/share-assets.md#sharelink). 
+Sharing assets using a link is a convenient way to make it available to interested people without them having to log in to [!DNL Assets]. See [Link Share functionality](/help/assets/share-assets.md#sharelink). 
 
-When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
+When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
 
-The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
+The [!UICONTROL Download Inbox] displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
 
-![Download inbox](assets/download-inbox.png)
+![Download inbox](assets/link-sharing-download-inbox.png)
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 
