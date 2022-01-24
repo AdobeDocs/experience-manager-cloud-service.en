@@ -4,7 +4,7 @@ description: Adobe Experience Manager's Referrer Filter enables access from thir
 feature: GraphQL API
 ---
 
-## Referrer Filter {#referrer-filter}
+# Referrer Filter {#referrer-filter}
 
  Adobe Experience Manager's Referrer Filter enables access from third party hosts. An OSGi configuration for the Referrer Filter is needed to enable access to the GraphQL endpoint for headless applications.
 
