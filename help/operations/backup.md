@@ -23,6 +23,7 @@ Customers should file a support ticket, describing the issue being experienced. 
 
 AEM as a Cloud Service supports:
 
+* Backup and restore for stage, production and development environments.
 * 24 hour point in time recovery, meaning that the system can be restored to any point in the last 24 hours.
 * Restore from a specific, Adobe-defined timestamp taken twice a day for the last 7 days.  Any replication messages (deletes, updates, creates) will be preserved.
 

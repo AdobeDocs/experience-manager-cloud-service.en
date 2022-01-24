@@ -471,106 +471,16 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * use `... on` 
     * See [Sample Query for a Content Fragment of a specific Model with a Content Reference](#sample-wknd-fragment-specific-model-content-reference)
 
+* Fallback when querying nested fragments:
+
+  * If the requested variation does not exist in a nested fragment, then the **Master** variation will be returned.
+
 ## Querying the GraphQL endpoint from an External Website {#query-graphql-endpoint-from-external-website}
 
 To access the GraphQL endpoint from an external website you need to configure the:
 
-* [CORS Filter](#cors-filter)
+* [CORS Filter](/help/headless/deployment/cross-origin-resource-sharing.md)
 * [Referrer Filter](#referrer-filter)
-
-### CORS Filter {#cors-filter}
-
->[!NOTE]
->
->For a detailed overview of the CORS resource sharing policy in AEM see [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
-
-To access the GraphQL endpoint, a CORS policy must be configured in the customer Git repository. This is done by adding an appropriate OSGi CORS configuration file for the desired endpoint(s). 
-
-This configuration must specify a trusted website origin `alloworigin` or `alloworiginregexp` for which access must be granted.
-
-For example, to grant access to the GraphQL endpoint and persisted queries endpoint for `https://my.domain` you can use:
-
-```xml
-{
-  "supportscredentials":true,
-  "supportedmethods":[
-    "GET",
-    "HEAD",
-    "POST"
-  ],
-  "exposedheaders":[
-    ""
-  ],
-  "alloworigin":[
-    "https://my.domain"
-  ],
-  "maxage:Integer":1800,
-  "alloworiginregexp":[
-    ""
-  ],
-  "supportedheaders":[
-    "Origin",
-    "Accept",
-    "X-Requested-With",
-    "Content-Type",
-    "Access-Control-Request-Method",
-    "Access-Control-Request-Headers"
-  ],
-  "allowedpaths":[
-    "/content/_cq_graphql/global/endpoint.json",
-    "/graphql/execute.json/.*"
-  ]
-}
-```
-
-If you have configured a vanity path for the endpoint, you can also use it in `allowedpaths`.
-
-### Referrer Filter {#referrer-filter}
-
-In addition to CORS configuration, a Referrer filter must be configured to allow access from third party hosts.
-
-This is done by adding an appropriate OSGi Referrer Filter configuration file that:
-
-* specifies a trusted website host name; either `allow.hosts` or `allow.hosts.regexp`,
-* grants access for this host name.
-
-For example, to grant access for requests with the Referrer `my.domain` you can:
-
-```xml
-{
-    "allow.empty":false,
-    "allow.hosts":[
-      "my.domain"
-    ],
-    "allow.hosts.regexp":[
-      ""
-    ],
-    "filter.methods":[
-      "POST",
-      "PUT",
-      "DELETE",
-      "COPY",
-      "MOVE"
-    ],
-    "exclude.agents.regexp":[
-      ""
-    ]
-}
-```
-
->[!CAUTION]
->
->It remains the customer's responsibility to:
->
->* only grant access to trusted domains 
->* make sure no sensitive information is exposed 
->* not use a wildcard [*] syntax; this will both disable authenticated access to the GraphQL endpoint and also expose it to the entire world.
-
->[!CAUTION]
->
->All the GraphQL [schemas](#schema-generation) (derived from Content Fragment Models that have been **Enabled**) are readable through the GraphQL endpoint.
->
->This means that you need to ensure that no sensitive data is available, as it could be leaked this way; for example, this includes information that could be present as field names in the model definition.
 
 ## Authentication {#authentication}
 
