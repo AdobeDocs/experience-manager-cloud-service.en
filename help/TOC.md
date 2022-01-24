@@ -549,6 +549,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Authentication](/help/headless/security/authentication.md)
   + Deployment {#deployment}
     + [Architecture](/help/headless/deployment/architecture.md)
+    + [Dispatcher](/help/headless/deployment/dispatcher.md)
     + [CORS Config](/help/headless/deployment/cross-origin-resource-sharing.md)
     + [Referrer Filter](/help/headless/deployment/referrer-filter.md)
   + Headless Journeys {#journeys}
