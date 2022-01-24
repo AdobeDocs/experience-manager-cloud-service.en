@@ -30,7 +30,21 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
 ### New features in [!DNL Assets] {#assets-features}
 
+* [!DNL Dynamic Media] - You can now use AEM Dynamic Media interface to configure General Settings and Publish Setup instead of having to go through the Dynamic Media Classic desktop application.
+
+* [!DNL Dynamic Media] now supports ingestion, preview, playback and publish for MXF videos. Annotation and shoppable video for MXF videos is not yet supported.
+
+* After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the [update, delete, rename, and move operations](/help/assets/use-assets-across-connected-assets-instances.md) on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment.
+
 ### New features in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
+
+* You can now use the [!DNL Experience Manager Assets] user interface to:
+
+  * Configure the detection of duplicate assets in a repository.
+
+  * Configure adding digital watermarks to images.
+
+* The administrators can now configure email service for large downloads. It allows the users to enable email notifications for large downloads from the Experience Manager interface. The user receives an email notification containing the download link of the archived zip folder upon completion of the download process.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
