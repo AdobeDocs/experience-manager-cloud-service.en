@@ -44,6 +44,8 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
   * Configure adding digital watermarks to images.
 
+* The administrators can now configure email service for large downloads. It allows the users to enable email notifications for large downloads from the Experience Manager interface. The user receives an email notification containing the download link of the archived zip folder upon completion of the download process.
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}
