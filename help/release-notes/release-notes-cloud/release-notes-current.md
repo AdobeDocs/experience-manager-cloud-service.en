@@ -38,9 +38,9 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
 ### New features in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-* You can now use the [!DNL Experience Manager Assets] user interface instead of an OSGi configuration to:
+* You can now use the [!DNL Experience Manager Assets] user interface to:
 
-  * Configure the detection of duplicate assets in a repositoy.
+  * Configure the detection of duplicate assets in a repository.
 
   * Configure adding digital watermarks to images.
 
