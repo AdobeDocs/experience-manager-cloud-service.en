@@ -19,7 +19,7 @@ The following shortcuts are available for the Sites, Assets, Users, Groups, Proj
 |Consoles|`?`|Keyboard shortcut help|
 ||`/`|Invoke [search](/help/sites-cloud/authoring/getting-started/search.md)|
 ||`Alt+`&lt;`Number`&gt;|Toggle which [rail selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) option to view|
-||&#96;|Hide rail|
+||``` ` ```|Hide rail|
 ||`e`|Edit|
 ||`p`|Properties|
 ||`m`|Move|

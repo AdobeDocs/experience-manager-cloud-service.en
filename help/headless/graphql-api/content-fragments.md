@@ -471,6 +471,10 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * use `... on` 
     * See [Sample Query for a Content Fragment of a specific Model with a Content Reference](#sample-wknd-fragment-specific-model-content-reference)
 
+* Fallback when querying nested fragments:
+
+  * If the requested variation does not exist in a nested fragment, then the **Master** variation will be returned.
+
 ## Querying the GraphQL endpoint from an External Website {#query-graphql-endpoint-from-external-website}
 
 To access the GraphQL endpoint from an external website you need to configure the:
