@@ -207,13 +207,13 @@ Some features of the CIF Url Provider are only available when using product URL 
 
 _**Balance between URL length and encoded information.**_
 
-Depending on the catalog size, in particular the size and depth of the category tree, it may not be reasonable to encode the full `url_path` of categories into the URL. In that case the URL length could be reduced by including only the category's `url_key` instead. This will support most the features that are available when using the category `url_path`.
+Depending on the catalog size, in particular the size and depth of the category tree, it may not be reasonable to encode the full `url_path` of categories into the URL. In that case the URL length could be reduced by including only the category's `url_key` instead. This will support most of the features that are available when using the category `url_path`.
 
 Additionally, make use of [Sling Mappings](#sling-mapping) in order to combine the sku with the product `url_key`. In most e-commerce systems the sku follows a particular format and separating the sku from the `url_key` for incoming requests should eaesily be possible. With that in mind, it should be posible to rewrite a product page URL to `/p/{{category}}/{{sku}}-{{url_key}}.html`, and a category URL to `/c/{{url_key}}.html` respecitively. The `/p` and `/c` prefix are still necessaary in order to distinguish product and category pages from other content pages.
 
 ### Migrating to a new URL Format {#migrate-url-formats}
 
-Many of the default URL formats are somehow compatible with each other, meaing that URLs foramtted by one may be parsed by another one. That helps migrating between the URL formats.
+Many of the default URL formats are somehow compatible with each other, meaing that URLs foramtted by one may be parsed by another one. That helps migrating between URL formats.
 
 On the other hand, search engines will need some time to re-crawl all catalog pages with the new URL format. To support this process and also to improve the end user experience, it is recommended to provide redirects that forward the user from the old URLs to the new ones.
 
