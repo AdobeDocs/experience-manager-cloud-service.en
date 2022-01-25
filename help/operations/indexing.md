@@ -35,19 +35,29 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 ## How to Use {#how-to-use}
 
-Defining indexes can comprise of theese three use cases:
+Defining indexes can comprise of these three use cases:
 
-1. Adding a new customer index definition
-1. Updating an existing index definition. This effectively means adding a new version of an existing index definition
+1. Adding a new customer index definition.
+1. Updating an existing index definition. This effectively means adding a new version of an existing index definition.
 1. Removing an existing index that is redundant or obsolete.
 
 For both points 1 and 2 above, you need to create a new index definition as part of your custom code base in the respective Cloud Manager release schedule. For more information, see the [Deploying to AEM as a Cloud Service documentation](/help/implementing/deploying/overview.md).
+
+## Index Names {#index-names}
+
+An index definition can be either be:
+
+1. An out-of-the-box index. One example is `/oak:index/cqPageLucene-2`.
+1. A customization of an out-of-the-box index. Such customizations are defined by the customer. One example is `/oak:index/cqPageLucene-2-custom-1`.
+1. A fully custom index. One example is `/oak:index/acme.product-1-custom-2`. To avoid naming collisions, we require that fully custom indexes have a prefix, e.g. `acme.`
+
+Notice that both customization of an out-of-the-box index, as well as fully custom indexes, need to contain `-custom-`. Only fully custom indexes must start with a prefix.
 
 ### Preparing the New Index Definition {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->If customizing an out of the box index, for example `damAssetLucene-6`, please copy the latest out of the box index definition from a *Cloud Service environment* and add your customizations on top, this ensures that required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-6/tika` is a required node and should be part of your customized index as well and it doesn't exist on the Cloud SDK.
+>If customizing an out-of-the-box index, for example `damAssetLucene-6`, please copy the latest out-of-the-box index definition from a *Cloud Service environment* and add your customizations on top, this ensures that required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-6/tika` is a required node and should be part of your customized index as well and it doesn't exist on the Cloud SDK.
 
 You need to prepare a new index definition package that contains the actual index definition, following this naming pattern:
 
@@ -148,7 +158,7 @@ Index management is currently only supported for indexes of type `lucene`.
 
 ### Adding an Index {#adding-an-index}
 
-To add an index named `/oak:index/acme.product-custom-1` to be used in a new version of the application and later, the index must be configured as follows:
+To add a fully custom index named `/oak:index/acme.product-custom-1` to be used in a new version of the application and later, the index must be configured as follows:
 
 `acme.product-1-custom-1`
 
