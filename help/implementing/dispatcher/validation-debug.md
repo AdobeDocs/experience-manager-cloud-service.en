@@ -351,7 +351,7 @@ This phase checks the apache syntax by starting Docker in an image. Docker must 
 >
 >Windows users need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer.
 
-This phase can also be run independently through `bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080`.
+This phase can also be run independently through `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
 During a Cloud Manager deployment, the `httpd -t` syntax check will also be executed and any errors will be included in the Cloud Manager Build Images step failure log.
 
