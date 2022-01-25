@@ -38,6 +38,8 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
 ### New features in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
+* [!DNL AEM Dynamic Media] now provides the flexibility to configure one alias account in the user interface, thereby ensuring out-of-the-box Dynamic Media URLs and Viewer Embed code are updated. This positively impacts SEO, to reflect updates made to your business context, such as rebranding.
+
 * You can now use the [!DNL Experience Manager Assets] user interface to:
 
   * Configure the detection of duplicate assets in a repository.
