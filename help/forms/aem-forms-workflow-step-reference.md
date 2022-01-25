@@ -5,7 +5,7 @@ exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 ---
 # Forms-centric AEM Workflows - Step Reference {#forms-centric-workflow-on-osgi-step-reference}
 
-You use workflow models to convert a business logic to automated repetitive process. A model helps you define and execute a series of steps. You can also define model properties, such as whether the workflow is transient or uses multiple resources. You can [include various AEM Workflow steps in a model to achieve the business logic](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).  
+You use workflow models to convert a business logic to automated repetitive process. A model helps you define and execute a series of steps. You can also define model properties, such as whether the workflow is transient or uses multiple resources. You can [include various AEM Workflow steps in a model to achieve the business logic](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).   
 
 ## Forms-centric steps {#forms-workflow-steps}
 
@@ -23,6 +23,10 @@ Forms-centric workflow steps perform AEM Forms-specific operations in an AEM Wor
 
 * Use the email step to send notification emails and other attachments on completion of an action and at the start or completion of a  workflow.
 
+>[!NOTE]
+>
+>If the workflow model is marked for an external storage, then for all the Forms workflow steps, you can select only the variable option to store or retrieve data files and attachments.
+ 
 
 ## Assign task step {#assign-task-step}
 
@@ -59,7 +63,7 @@ You can also use the component to control the behavior of the task. For example,
 * **[!UICONTROL For completed task, render the Adaptive Form as]**: When a task is marked complete, you can render the Adaptive Form as a read-only Adaptive Form or a PDF document. You require a Document of Record option enabled or form template based Adaptive Forms for rendering the Adaptive Form as Document of Record.
 * **[!UICONTROL Pre-populated]**: The following fields listed below serve as inputs to the task:
 
-    * **[!UICONTROL Select input data file using]**: Path of input data file (.json, .xml, .doc, or form data model). You can retrieve the input data file using a path that is relative to the payload or retrieve the file stored in a variable of Document, XML, or JSON data type. For example, the file contains the data submitted for the form through an AEM Inbox application. An example path is [Payload_Directory]/workflow/data. If the workflow model is marked as secure, then you can retrieve the input data file only from the variable option.
+    * **[!UICONTROL Select input data file using]**: Path of input data file (.json, .xml, .doc, or form data model). You can retrieve the input data file using a path that is relative to the payload or retrieve the file stored in a variable of Document, XML, or JSON data type. For example, the file contains the data submitted for the form through an AEM Inbox application. An example path is [Payload_Directory]/workflow/data.
     * **[!UICONTROL Select input attachments using]**: Attachments available at the location are attached to the form associated with the task. The path can be relative to the payload or retrieve the attachment stored in a variable of a document. An example path is [Payload_Directory]/attachments/. You can specify attachments placed relative to the payload or use a document type (Array list > Document) variable to specify an input attachment for the Adaptive Form.
     
     <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
