@@ -32,9 +32,9 @@ For more information, please visit [Onboarding to Experience Manager as a Cloud 
 
 ### Resources and Links 
 
-• [IMS Support for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)   
-• [Role Based Permissions in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)  
-• [Accessing Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)  
+* [IMS Support for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)   
+* [Role Based Permissions in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)  
+* [Accessing Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)  
 
 
 ## Adobe Experience Manager as a Cloud Service Onboarding Process
@@ -43,7 +43,8 @@ For more information, please visit [Onboarding to Experience Manager as a Cloud 
 
 ### 2. Onboard Organizations to Adobe Admin Console:   
 
- >   ![processoverview2.jpg](./assets/processOverview2.jpg) 
+![processoverview2.jpg](./assets/processOverview2.jpg) 
+
 * System Administrator:  
     * Provision AEM programs and environments.
     * Navigate to Admin Console for administrative tasks.  
@@ -55,7 +56,7 @@ For more information, please visit [Onboarding to Experience Manager as a Cloud 
 
 ### 3. Onboard Users and Manage Access in Admin Console: 
  
->   ![processoverview3.jpg](./assets/processOverview3.jpg) 
+![processoverview3.jpg](./assets/processOverview3.jpg) 
 
 Three methods to onboard users, depending on size and preference:
 * Manually create users in Admin Console
