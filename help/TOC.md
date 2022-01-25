@@ -95,8 +95,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Post Go Live](/help/journey-migration/post-go-live.md)
   + [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/journey-migration/getting-started-partners.md)
   + Release Notes for Migration Tools {#release-notes-migration-tools}
-    + [Current Release Notes (2021.12.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+    + [Current Release Notes (2022.1.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2021 {#2021}
+      + [Release Notes for 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md) 
       + [Release Notes for 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
       + [Release Notes for 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
   + Cloud Acceleration Manager {#cloud-acceleration-manager}
@@ -393,6 +394,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
+    + [Configure Unified Storage Connector](/help/forms/configure-unified-storage-connector.md)
   + Manage user groups, forms, and related assets {#manage-forms-and-related-assets}
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
     + [Import, export, and organize Adaptive Forms, PDF forms, and other assets](/help/forms/import-export-forms-templates.md)
