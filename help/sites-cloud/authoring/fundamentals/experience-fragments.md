@@ -17,10 +17,12 @@ An Experience Fragment:
 * Is a part of an experience (page).
 * Can be used across multiple pages.
 * Is based on a template (editable only) to define structure and components.
+* This template is used to create the *root page* of the Experience Fragment. 
 * Is made up of one or more components, with layout, in a paragraph system.
 * Can contain other experience fragments.
 * Can be combined with other components (including other Experience Fragments) to form a complete page (experience).
-* Can have different variations, which may share content and/or components.
+* One, or more, variations can be created, based on the root page.
+* These variations may share content and/or components.
 * Can be broken down into building blocks that can be used across multiple variations of the fragment.
 
 You can use Experience Fragments:
@@ -172,7 +174,9 @@ To create an Experience Fragment:
 
    >[!NOTE]
    >
-   >Tags from the Experience Fragment template will not be merged with the fragment tags. These are completely separate.
+   >Tags from the Experience Fragment template will not be merged with tags on this Experience Fragment root page.  
+   >
+   >These are completely separate.
 
 1. Click **Create**.
 
@@ -229,9 +233,6 @@ You can create variations of your Experience Fragment, depending on your needs:
 
    ![Variation properties](/help/sites-cloud/authoring/assets/xf-07.png)
 
-   >[!NOTE]
-   >
-   >Tags from the Experience Fragment template will not be merged with the variation tags. These are completely separate.
 
 1. Confirm with **Done**, the new variation will be shown in the panel.
 
@@ -284,7 +285,7 @@ To create a new Building Block:
 
 Your building block is visible in the **Building Blocks** tab. For each block, the following actions are available:
 
-* **Go to master**: open the master variation in a new tab
+* **Go to master**: open the root page variation in a new tab
 * **Rename**
 * **Delete**
 
