@@ -77,12 +77,27 @@ Alternatively you can preview the demo simply in the Channel Editor on AEMaaCS.
 1. Link the URLs of AEMaaCS author and publish instances in the settings
 1. Create  a Display  and open it afterwards
 1. Click  Assign channel  in the top right and select a channel that has been synced from your AEMaaCS instance
-Download, register and assign a Player
-Download
-Register
-Assign Display to Player
+1. Download, register and assign a Player
+   1. Download
+   1. Register
+   1. Assign Display to Player
 
+## Understand the Demo Content {#demo-content}
 
+The We.Cafe coffee shop is comprised of three shops in three locations in the US. All three shops have three similar experiences:
+
+* A menu board above the counter with two or three vertical panels
+* An entrance display facing the street with one horizontal or vertical panel inviting customers into the shop
+* A quick self-order kiosk booth to bypass the queue with one vertical tablet
+
+>[!NOTE]
+>
+>Only the entrance display can be tested in the current version of the demo. Other displays will follow in a future version.
+
+The New-York location is assumed to be in a smaller shop that does not have a lot of space, and as such:
+
+* The menu board only has two vertical panels instead of three for San Francisco and San Jose
+* The entrance display is positioned vertically instead of horizontally as in the other locations
 ## Additional Resources {#additional-resources}
 
 * [ContextHub documentation](/help/sites-cloud/authoring/personalization/contexthub.md)
