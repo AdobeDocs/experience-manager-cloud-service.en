@@ -396,6 +396,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
+    + [Configure Unified Storage Connector](/help/forms/configure-unified-storage-connector.md)
   + Manage user groups, forms, and related assets {#manage-forms-and-related-assets}
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
     + [Import, export, and organize Adaptive Forms, PDF forms, and other assets](/help/forms/import-export-forms-templates.md)
