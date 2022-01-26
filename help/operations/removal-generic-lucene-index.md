@@ -33,7 +33,7 @@ For example, 'reference lookup' queries, of the form shown below, should now be 
 
 In order to support larger customer data volumes, Adobe will no longer be creating the 'generic lucene' index on new AEM as a Cloud Service environments and, following this, will begin removing the index from existing repositories. We have already adjusted the index costings (via the 'costPerEntry' and 'costPerExecution' properties) to ensure that other indexes (such as `/oak:index/pathreference`) are used in preference to `/oak:index/lucene-*` wherever possible. 
 
-Customer applications which use queries which are still depending on this index should be updated immediately to leverage other existing indexes (which can be customized if required) or new custom indexes should be added to the customer application. Full instructions for index management in AEM as a Cloud Service can be found at the [indexing documentation](../indexing.html).
+Customer applications which use queries which are still depending on this index should be updated immediately to leverage other existing indexes (which can be customized if required) or new custom indexes should be added to the customer application. Full instructions for index management in AEM as a Cloud Service can be found at the [indexing documentation](/help/operations/indexing.md).
 
 ## How to tell if your application depends on the 'generic lucene' index?
 
