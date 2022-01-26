@@ -36,6 +36,24 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
 * After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the [update, delete, rename, and move operations](/help/assets/use-assets-across-connected-assets-instances.md) on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment.
 
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### What is new in [!DNL Forms] {#what-is-new-forms}
+
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) help you combine a template and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
+
+  * Generate documents by populating template files with XML data.
+  * Generate forms in various formats, including non-interactive PDF print streams.
+  * Generate print PDFs from XFA form PDFs.
+  * Generate PDF, PostScript, PCL, and ZPL documents in bulk by merging multiple sets of data with source templates.
+
+* **Custom fonts for Document of Record and PDF documents created with Communications APIs**: You can now use brand approved fonts in PDF documents generated using Communications APIs to align with your organizational requirements.
+
+### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
+
+* **[Assembler API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: Assembler APIs to combine, rearrange, augment and obtain information about PDF documents.
+
+
 ### New features in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
 * [!DNL AEM Dynamic Media] now provides the flexibility to [configure one alias account](../../assets/dynamic-media/dm-alias-account.md) in the user interface, thereby ensuring out-of-the-box Dynamic Media URLs and Viewer Embed code are updated. This positively impacts SEO, to reflect updates made to your business context, such as rebranding.
