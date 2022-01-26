@@ -41,6 +41,7 @@ You will explore several topics in this journey. The following articles give you
 |2|[Create a Program and a Pipeline](create-program.md)|Learn how to set up a new program and pipeline to deploy the add-on.|
 |3|[Create a Demo Site](create-site.md)|Create a demo site in AEM based on a library of pre-configured templates.|
 |4|[Manage Your Demo Sites](manage.md)|Learn about the tools available to help you manage your demo sites and how to remove them.|
+|5|[Enable AEM Screens for Your Demo Site](screens.md)|Optional - Learn the extra steps to enable the full AEM Screens as a Cloud Service experience on your demo site.|
 
 ## What's Next {#what-is-next}
 
