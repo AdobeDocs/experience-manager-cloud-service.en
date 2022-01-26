@@ -518,7 +518,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
 + Headless {#headless}
-  + [Headless Experience Management](/help/headless/introduction.md)
+  + [AEM Headless](/help/headless/home.md)
   + Setup {#setup}
     + [Introduction](/help/headless/setup/introduction.md)
     + [Configuration](/help/headless/setup/create-configuration.md)
@@ -527,7 +527,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Content Fragment](/help/headless/setup/create-content-fragment.md)
     + [GraphQL Endpoint](/help/headless/setup/create-api-request.md)
   + Content Fragments {#content-fragments}
-    + [GraphQL Delivery](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
     + [Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
     + [Content Fragment Models](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
     + [Managing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
