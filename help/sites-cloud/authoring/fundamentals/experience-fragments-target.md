@@ -33,7 +33,7 @@ After [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-
 >
 >* [Adobe Target development](https://www.adobe.io/apis/experiencecloud/target.html)
 >* [Core Components - Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
->
+>* [Adobe Target - How Do I Use Adobe Experience Manager (AEM) Experience Fragments?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=en)
 
 ## Prerequisites {#prerequisites}
 
