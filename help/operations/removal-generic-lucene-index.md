@@ -135,7 +135,7 @@ Prior to removal of the 'generic lucene' index, the `pathfield` component will b
 Adobe will take a two-phase approach to remove the 'generic lucene' index.
 
 * **Phase 1** (planned start 31 January 2022): No longer create `/oak:index/lucene-*` on new AEM as a Cloud Service environments.
-* **Phase 2** (planned start 31 March 2022): Remove `/oak:index/lucene-*` index from new AEM as a Cloud Service environments.
+* **Phase 2** (planned start 31 March 2022): Remove `/oak:index/lucene-*` index from existing AEM as a Cloud Service environments.
 
 Adobe will monitor the log messages noted above and will attempt to contact customers who remain dependant on the 'generic lucene' index.
 
