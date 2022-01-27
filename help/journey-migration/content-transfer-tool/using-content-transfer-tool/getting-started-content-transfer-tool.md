@@ -82,7 +82,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
    1. **Access Token**: Enter the access token.
 
       >[!NOTE]
-      >You can retrieve the access token by using the **Open access token** button. You need to ensure that you belong to the AEM administrators' group in the target Cloud Service instance.
+      >You can retrieve the access token by using the **Open access token** button. You need to ensure that you belong to the 'Administrators' group in the target Cloud Service instance.
 
    1. **Parameters**: Select the following parameters to create the migration set:
 

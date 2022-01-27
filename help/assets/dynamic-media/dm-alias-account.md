@@ -23,11 +23,11 @@ A Dynamic Media company alias account ensures that all out-of-the-box Dynamic Me
 
 When you configure a Dynamic Media company alias account, be aware of the following:
 
-* When you configure a company alias account on the **[!UICONTROL Edit Dynamic Media Configuration]** page, for cache invalidation to be successful, you must invalidate URLs for *both* the **[!UICONTROL Company]** account and the **[!UICONTROL Company Alias]** account, simultaneously.
 * Any existing Dynamic Media URLs or viewer embed code on your *live* digital properties must be updated manually to reflect the new alias name. However, any URLs or viewers embed code with your original Dynamic Media company name continue to work for existing or new assets.
 * The Dynamic Media company alias account capability is limited to Experience Manager Assets Authoring mode and delivery. The company alias name does not work with Experience Manager Sites. WCM (Web Content Management) components are not updated for this change. Those components continue to work with the original Dynamic Media company name for fetching Dynamic Media assets.
 * You can set up only one company alias account on the **[!UICONTROL Edit Dynamic Media Configuration]** page. However, you can create as many company alias accounts by way of a support case, and manually reflect the necessary alias name in the Dynamic Media URLs or viewer embed code.
 * The out-of-the-box [Cache Invalidation](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) capability of Dynamic Media invalidates the URLs with both Company and Company Alias accounts configured in the Dynamic Media Configuration page in Cloud Services.
+* When you configure a company alias account on the **[!UICONTROL Edit Dynamic Media Configuration]** page, for cache invalidation to be successful, you must invalidate URLs for *both* the **[!UICONTROL Company]** account and the **[!UICONTROL Company Alias]** account, simultaneously.
 
 See also [Create a Dynamic Media Configuration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
 
