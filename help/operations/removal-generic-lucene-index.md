@@ -25,13 +25,13 @@ org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is
 ```
 
 In recent AEM versions, the 'generic lucene' index has been used to support a very small number of features. These are being reworked to use other indexes or otherwise modified to remove the dependency on this index.
-For example, 'reference lookup' queries, of the form shown below, should now be using the index at '/oak:index/pathreference' (which indexes only String property values which match a regular expression which looks for JCR paths). 
+For example, 'reference lookup' queries, of the form shown below, should now be using the index at '/oak:index/pathreference' (which indexes only String property values which match a regular expression which looks for JCR paths). 
 
 ```
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-In order to support larger customer data volumes, Adobe will no longer be creating the 'generic lucene' index on new AEM as a Cloud Service environments and, following this, will begin removing the index from existing repositories. We have already adjusted the index costings (via the 'costPerEntry' and 'costPerExecution' properties) to ensure that other indexes (such as `/oak:index/pathreference`) are used in preference to `/oak:index/lucene-*` wherever possible. 
+In order to support larger customer data volumes, Adobe will no longer be creating the 'generic lucene' index on new AEM as a Cloud Service environments and, following this, will begin removing the index from existing repositories. We have already adjusted the index costings (via the 'costPerEntry' and 'costPerExecution' properties) to ensure that other indexes (such as `/oak:index/pathreference`) are used in preference to `/oak:index/lucene-*` wherever possible. 
 
 Customer applications which use queries which are still depending on this index should be updated immediately to leverage other existing indexes (which can be customized if required) or new custom indexes should be added to the customer application. Full instructions for index management in AEM as a Cloud Service can be found at the [indexing documentation](/help/operations/indexing.md).
 
@@ -55,7 +55,7 @@ Once the 'generic lucene' index has been removed, a message as shown below will 
 org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
 ```
 
-If any of these are logged, you might need to rework the query to use a different fulltext index, or provide a new index to support the query. Details of the types of dependencies you might see, and how to address them, are provided below.
+**Customer Action Required :** If any of these are logged, you might need to rework the query to use a different fulltext index, or provide a new index to support the query. Details of the types of dependencies you might see, and how to address them, are provided below.
 
 ## Potential dependencies on 'generic lucene' index
 
@@ -72,7 +72,7 @@ In the simplest cases these might be queries with no nodetype specified (implyin
 /jcr:root/content/mysite//element(*, nt:base)[jcr:contains(., 'search term')]
 ```
 
-Action Required : These queries can be modified to use an appropriate nodetype - for example, to return results matching pages (or any of the 'aggregates' beneath the cq:Page node) the query could become:
+**Customer Action Required :** These queries can be modified to use an appropriate nodetype - for example, to return results matching pages (or any of the 'aggregates' beneath the cq:Page node) the query could become:
 
 ```
 /jcr:root/content/mysite//element(*, cq:Page)[jcr:contains(., 'search term')]
@@ -90,21 +90,20 @@ This property is not marked as 'analyzed' in the damAssetLucene index (the fullt
 
 As such, the query falls back on the 'generic fulltext' index where all the included properties are marked as analysed by the wildcard match at `/oak:index/lucene-2/indexRules/nt:base/properties/prop`.
 
-Customer Action Required : marking the `jcr:content/metadata/@cq:tags` property as 'analyzed' in a custom version of the damAssetLucene index will result in this query being handled by this index, and no WARN will be logged.
+**Customer Action Required :** marking the `jcr:content/metadata/@cq:tags` property as 'analyzed' in a custom version of the damAssetLucene index will result in this query being handled by this index, and no WARN will be logged.
 
-### Author 
+### Author 
 
-In addition to queries in customer application servlets, OSGI components and rendering scripts there can be a number of author-specific usages of the 'generic lucene' index. 
+In addition to queries in customer application servlets, OSGI components and rendering scripts there can be a number of author-specific usages of the 'generic lucene' index. 
 
 #### Reference search
 
 Historically the 'generic lucene' index has been used to support 'reference search' (searching for content which contains references to another content path). Such queries should already have moved to use the new '/oak:index/pathreference' index.
-Customer Action Required : no customer action required.
 
 
 #### Pathfield picker search
 
-AEM includes a custom dialog component (Sling resource type 'granite/ui/components/coral/foundation/form/pathfield') which provides a browser (picker) for selecting another AEM path.  The default pathfield picker (used when no custom 'pickerSrc' property defined in content structure) renders a search bar in the popup dialog box.
+AEM includes a custom dialog component (Sling resource type 'granite/ui/components/coral/foundation/form/pathfield') which provides a browser (picker) for selecting another AEM path.  The default pathfield picker (used when no custom 'pickerSrc' property defined in content structure) renders a search bar in the popup dialog box.
 The node types against which to search-against can be specified using the 'nodeTypes' property.
 
 At present, if no 'nodeTypes' property present, the underlying search query will use the 'nt:base' nodetype, and thus is likely to use the 'generic lucene' index (typically logging the WARN messages shown below).
@@ -120,16 +119,14 @@ Prior to removal of 'generic lucene', the pathfield component will be updated so
 |![Pathfield Picker with Search](assets/index-pathfield-picker-with-search.png)|![Pathfield Picker without Search](assets/index-pathfield-picker-without-search.png)|
 
 
-Customer Action Required : If no search is required, no action is required from the customer.
-
-If the customer would like to retain the Search functionality within the pathfeld picker, a property 'nodeTypes' should be provided listing the node types against which they would like to query. These can be specified as a comma-separated list of nodetypes in a String property.
+**Customer Action Required :** If no search is required, no action is required from the customer. If the customer would like to retain the Search functionality within the pathfeld picker, a property 'nodeTypes' should be provided listing the node types against which they would like to query. These can be specified as a comma-separated list of nodetypes in a String property.
 
 
   >[!NOTE]
   >The Content Fragment Model Editor uses a specialised pathfields with Sling Resource Type 'dam/cfm/models/editor/components/contentreference'.
   > * At present these perform queries without node types specified - resulting in a WARN being logged due to usage of the 'generic lucene' index.
   > * Instances of these components will soon automatically default to using 'cq:Page' and 'dam:Asset' nodetypes without further customer action.
-  > * The 'nodeTypes' property can be added to override these default nodetypes. 
+  > * The 'nodeTypes' property can be added to override these default nodetypes. 
 
 
 
