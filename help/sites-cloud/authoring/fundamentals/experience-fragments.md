@@ -347,6 +347,10 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 By default, Experience Fragments are delivered in the HTML format. This can be used by both AEM and third party channels alike.
 
-For export to Adobe Target see [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md). 
+For export to Adobe Target see:
 
-<!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
+* [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+* [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+
+<!-- * JSON can also be used, see [Target Integration with Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments-target.md)
+-->
