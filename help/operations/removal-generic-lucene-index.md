@@ -59,7 +59,7 @@ Once the generic Lucene index has been removed, a message as shown below will be
 org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
 ```
 
->[!ATTENTION]
+>[!IMPORTANT]
 >
 >**Customer Action Required**
 >
@@ -84,7 +84,7 @@ In the simplest cases these might be queries with no node type specified thus im
 /jcr:root/content/mysite//element(*, nt:base)[jcr:contains(., 'search term')]
 ```
 
->[!ATTENTION]
+>[!IMPORTANT]
 >
 >**Customer Action Required**
 >
@@ -108,7 +108,7 @@ This property is not marked as analyzed in the `damAssetLucene` index, which is 
 
 As such, the query falls back on the generic full text index where all the included properties are marked as analysed by the wildcard match at `/oak:index/lucene-2/indexRules/nt:base/properties/prop`.
 
->[!ATTENTION]
+>[!IMPORTANT]
 >
 >**Customer Action Required**
 >
@@ -140,7 +140,7 @@ Prior to removal of the generic Lucene index, the `pathfield` component will be 
 |---|---|
 |![Path Field Picker with Search](assets/index-pathfield-picker-with-search.png)|![Path Field Picker without Search](assets/index-pathfield-picker-without-search.png)|
 
->[!ATTENTION]
+>[!IMPORTANT]
 >
 >**Customer Action Required**
 >
