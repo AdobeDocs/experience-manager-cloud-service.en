@@ -59,7 +59,13 @@ Once the generic Lucene index has been removed, a message as shown below will be
 org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
 ```
 
-**Customer Action Required :** If any of these warning messages are logged, you may need to rework the query to use a different full text index, or provide a new index to support the query. Details of the types of dependencies you might see, and how to address them, are provided in the following sections.
+>[!ATTENTION]
+>
+>**Customer Action Required**
+>
+> If any of the aforementioned warning messages are logged, you may need to rework the query to use a different full text index, or provide a new index to support the query. 
+>
+>Details of the types of dependencies you might see and how to address them are provided in the following sections.
 
 ## Potential Dependencies on Generic Lucene Indexes {#potential-dependencies}
 
@@ -78,7 +84,13 @@ In the simplest cases these might be queries with no node type specified thus im
 /jcr:root/content/mysite//element(*, nt:base)[jcr:contains(., 'search term')]
 ```
 
-**Customer Action Required :** These queries can be modified to use an appropriate node type. For example, they can be modified to return results matching pages or any of the aggregates beneath the `cq:Page node`. The query could thus become:
+>[!ATTENTION]
+>
+>**Customer Action Required**
+>
+>The aforementioned queries should be modified to use an appropriate node type as detailed in the following section.
+
+For example, the queries can be modified to return results matching pages or any of the aggregates beneath the `cq:Page node`. The query could thus become:
 
 ```text
 /jcr:root/content/mysite//element(*, cq:Page)[jcr:contains(., 'search term')]
@@ -96,7 +108,11 @@ This property is not marked as analyzed in the `damAssetLucene` index, which is 
 
 As such, the query falls back on the generic full text index where all the included properties are marked as analysed by the wildcard match at `/oak:index/lucene-2/indexRules/nt:base/properties/prop`.
 
-**Customer Action Required :** Marking the `jcr:content/metadata/@cq:tags` property as analyzed in a custom version of the `damAssetLucene` index will result in this query being handled by this index, and no WARN will be logged.
+>[!ATTENTION]
+>
+>**Customer Action Required**
+>
+>Marking the `jcr:content/metadata/@cq:tags` property as analyzed in a custom version of the `damAssetLucene` index will result in this query being handled by this index, and no WARN will be logged.
 
 ### Author Instance {#author-instance}
 
@@ -124,15 +140,18 @@ Prior to removal of the generic Lucene index, the `pathfield` component will be 
 |---|---|
 |![Path Field Picker with Search](assets/index-pathfield-picker-with-search.png)|![Path Field Picker without Search](assets/index-pathfield-picker-without-search.png)|
 
-**Customer Action Required :** If the customer would like to retain the search functionality within the path field picker, a `nodeTypes` property should be provided listing the node types against which they would like to query. These can be specified as a comma-separated list of node types in a `String` property. If no search is required, no action is required from the customer.
+>[!ATTENTION]
+>
+>**Customer Action Required**
+>
+>If the customer would like to retain the search functionality within the path field picker, a `nodeTypes` property should be provided listing the node types against which they would like to query. These can be specified as a comma-separated list of node types in a `String` property. If no search is required, no action is required from the customer.
 
-
-  >[!NOTE]
-  >
-  >The Content Fragment Model Editor uses a specialized path fields with the Sling resource type `dam/cfm/models/editor/components/contentreference`.
-  > * At present these perform queries without node types specified, resulting in a WARN being logged due to usage of the generic Lucene index.
-  > * Instances of these components will soon automatically default to using `cq:Page` and `dam:Asset` node types without further customer action.
-  > * The `nodeTypes` property can be added to override these default node types.
+>[!NOTE]
+>
+>The Content Fragment Model Editor uses a specialized path fields with the Sling resource type `dam/cfm/models/editor/components/contentreference`.
+> * At present these perform queries without node types specified, resulting in a WARN being logged due to usage of the generic Lucene index.
+> * Instances of these components will soon automatically default to using `cq:Page` and `dam:Asset` node types without further customer action.
+> * The `nodeTypes` property can be added to override these default node types.
 
 ## Timeline for Generic Lucene Removal {#timeline}
 
