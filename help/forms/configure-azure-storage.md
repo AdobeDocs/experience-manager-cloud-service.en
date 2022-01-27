@@ -87,4 +87,8 @@ To define a data model object property as a search key:
 1. Switch the **[!UICONTROL Search Key]** toggle option to the ON state. This option is available only for primary data types.
 1. Tap **[!UICONTROL Done]** and then tap **[!UICONTROL Save]** to save the Form Data Model.
 
-After defining data model object properties as search keys, the keys are saved as metadata in Azure storage.
+After defining data model object properties as search keys, the hash values are stored in Azure index tags and Base64 encoded values are stored in the Azure metadata.
+
+>[!NOTE]
+>
+>Only 10 search keys are allowed per Azure entity since Azure only allows 10 tags per Blob and properties value marked as search keys are stored in Azure index tags after hashing. 
