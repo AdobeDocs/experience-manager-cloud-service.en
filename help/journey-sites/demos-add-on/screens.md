@@ -74,28 +74,45 @@ The last image on the entrance channels is also targeted (i.e. dynamically chang
 
 ## Configure Demo Content {#configure-content}
 
-To experience the dynamic nature of AEM Screens, you will need to set up ContextHub and simulate a data service. Additionally, you can also create a real signage experience. The following sections explain how.
+By completing the [Create Program](create-program.md) portion of the journey, you already have the demo AEM Screens content in your sandbox. To use it, however you must first deploy a Screens project and configure it. The following sections explain how.
 
+## Deploy a Demo Screens Project {#deploy-project}
+
+Just as with the Sites demo data, the Screens demo data is deployed to your sandbox environment when you run the pipeline as described in the [Configure Demo Content](#configure-content) section.
+
+However just as with sites, in order to use that content it must be deployed. For sites, you created a site from a template. For Screens, you will need to create a Screens project from a template.
+
+Simply follow the same steps as in the [Create Demo Site](create-site.md) section. When selecting the template, simply choose the **We.Cafe Website Template**.
+
+![We.Cafe template](assets/wecafe-template.png)
+
+Once the wizard completes, you will find the content deployed under Sites and you can navigate and explore as you would any other content.
+
+![We.Cafe content](assets/wecafe-content.png)
+
+If you only wish to explore the content within the AEM Sites console, no more action is required. However if you want to experience the full dynamic features of AEM Screens, continue to the next section.
 ### Configure ContextHub {#configure-contexthub}
 
-Just like AEM, AEM Screens can change content dynamically based on context. The We.Cafe demo has channels configured to show different content depending on the current temperature and it uses AEM's ContextHub to do this.
+Just like AEM, AEM Screens can change content dynamically based on context. The We.Cafe demo has channels configured to show different content depending on the current temperature by leveraging AEM's ContextHub.
 
 [!TIP]
 >
 >For the full details of ContextHub, see the [Additional Resources](#additional-resources) section at the end of this document.
 
-Since it is very difficult to change the weather during a demo, temperature changes must be simulated. This is done using Google Sheets to provide the values as an external "weather service".
+Since it is very difficult to change the weather during a demo or while testing, temperature changes must be simulated. We will simulate a "weather service" by storing a temperature value in a Google Sheet spreadsheet. ContextHub will then call up that value when it looks up your location information using the Google Maps API to determine the weather information to display.
 
-During the demo, the values in the sheet can be changed. ContextHub will recognize this and the content will adjust in the channel according to the updated temperature.
+For demo purposes, the values in the sheet can be changed. ContextHub will recognize this and the content will adjust in the channel according to the updated temperature.
 
-1. Create a new Google spreadsheet. Refer to the Google documentation **Using API Keys** as referenced under [AdditionalResources](#additional-resources) to configure the spreadsheet correctly.
-1. Set the temperature in cell A2.
-1. On the AEMaaCS author instance, go to  **Tools -&gt; Sites -&gt; ContextHub**.
-1. Select the configuration container that has the same name as how you named the project when you imported the template.
+1. Create a Google Maps API key and copy it. Refer to the Google documentation **Using API Keys** as referenced under [AdditionalResources](#additional-resources) for details.
+1. Create a new Google Sheets spreadsheet. 
+1. Define the temperature by entering a number in cell A2.
+1. Copy the sheet ID.
+1. On the AEMaaCS author instance, go to **Global Navigation -&gt; Tools -&gt; Sites -&gt; ContextHub**.
+1. Select the configuration container that has the same name as what you gave the project when you created the Screens project from the **We.Cafe Website Template**.
 1. Select **Configuration -&gt; ContextHub Configuration -&gt; Google Sheets** then click **Next** at the top right.
 1. The configuration should already have pre-configured JSON data. There are two values that need to be changed:
-   1. Replace `<your Google Sheets id>` with ID of the sheet you created.
-   1. Replace `<your Google API Key>` with your API key.
+   1. Replace `[your Google Sheets id]` with ID of the sheet you created.
+   1. Replace `[your Google API Key]` with your API key.
 1. Click **Save**.
 
 >[!IMPORTANT]
