@@ -64,7 +64,7 @@ You can reach out to your Adobe representative for a demo or to sign up for the 
 
 ### What is New {#what-is-new-commerce}
 
-* Support for Magento 2.4.2
+* Support for Adobe Commerce 2.4.2
 
 * Product detail component can now be used and configured on any content page
 
