@@ -79,7 +79,7 @@ mvn clean install
 
 ```
 
-## Add custom fonts to your local Forms Cloud Service development environment {#custom-fonts-cloud-service-sdk }
+## Add custom fonts to your local Forms Cloud Service development environment {#custom-fonts-cloud-service-sdk}
 
 1. Start your local development environment.
 1. Navigate to [crx-repository]\install folder
