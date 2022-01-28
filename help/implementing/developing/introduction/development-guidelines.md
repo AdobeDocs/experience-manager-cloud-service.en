@@ -99,15 +99,38 @@ To change the log levels for Cloud environments, the Sling Logging OSGI configur
 
 **Activating the DEBUG Log Level**
 
-The default log level is INFO, that is, DEBUG messages are not logged.
-To activate DEBUG log level, set the
+The default log level is INFO, that is, DEBUG messages are not logged. To activate DEBUG log level, update the following property to debug mode.
 
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+`/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
-property to debug. Do not leave the log at the DEBUG log level longer than necessary, as it generates a lot of logs.
+For example, set `/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json` with the following value.
+
+```json
+{
+   "org.apache.sling.commons.log.names": [
+      "com.example"
+   ],
+   "org.apache.sling.commons.log.level": "DEBUG",
+   "org.apache.sling.commons.log.file": "logs/error.log",
+   "org.apache.sling.commons.log.additiv": "false"
+}
+```
+
+Do not leave the log at the DEBUG log level longer than necessary, as this generates lots of entries.
+
+Discrete log levels can be set for the different AEM environments using runmode-based OSGi configuration targeting. For example:
+
+| Environment | OSGi configuration location by run mode | `org.apache.sling.commons.log.level` property value |
+| - | - | - |
+|  Development | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG |
+|  Stage | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN |
+|  Production | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
+
 A line in the debug file usually starts with DEBUG, and then provides the log level, the installer action and the log message. For example:
 
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+```text
+DEBUG 3 WebApp Panel: WebApp successfully deployed
+```
 
 The log levels are as follows:
 
