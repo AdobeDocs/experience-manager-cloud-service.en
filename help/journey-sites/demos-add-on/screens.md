@@ -223,6 +223,48 @@ First you will need to create a registration code to securely connect a player t
 
    ![Create code](assets/create-code.png)
 
+1. Once the code is created, it appears in the list. Click to copy the code.
+
+   ![Registration code](assets/registration-code.png)
+
+#### Install and Configure Player {#install-player}
+
+1. Download the player for your platform from `https://download.macromedia.com/screens/` and install it.
+1. Run the player and switch to the **Configuration** tab, scrolling to the bottom to click and confirm both **Reset to Factory** and then **Change to Cloud Mode**.
+
+   ![Player settings](assets/player-configuration.png)
+
+1. The player will automatically change to the **Player Registration** tab. Enter the code you generated previously and click **Register**.
+
+   ![Player registration](assets/player-registration-code.png)
+
+1. Switch to the **System Information** tab to confirm that the player has been registered.
+
+   ![Registered player](assets/player-registered.png)
+
+#### Assign Player to a Display {#assign-player}
+
+1. Navigate to Screens as a Cloud Service at `https://experience.adobe.com/screens` and log in.
+1. In the top-right of the screen, ensure that you are in the correct organization.
+
+   ![Check your Screens org](assets/screens-org.png)
+
+1. In the left panel, click on **Player Management -&gt; Players** and you will see the player you installed and registered previously.
+
+   ![Players](assets/players.png)
+
+1. Click on the player name to open its details and then click **Assign to display** in the top-right of the screen.
+
+   ![Assign player to display](assets/assign-to-display.png)
+
+1. In the dialog select the display that you created previously and then click **Select**.
+
+   ![Assign a display](assets/assign-a-display.png)
+
+#### Playback! {#playback}
+
+
+
 ## End of the Journey? {#end-of-journey}
 
 Congratulations! You have completed the AEM Reference Demos Add-On journey including the We.Cafe demo setup for AEM Screens! You should now:
