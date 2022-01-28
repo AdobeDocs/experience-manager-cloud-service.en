@@ -33,7 +33,7 @@ The AEM Reference Demos Add-On contains AEM Screens content for We.Cafe, a coffe
 
 AEM Screens as a Cloud Service is a digital signage solution that allows marketers to create and manage dynamic digital experiences at scale. With AEM Screens as a Cloud Service, you can create engaging and dynamic digital signage experiences intended to be consumed in public spaces.
 
-[!TIP]
+>[!TIP]
 >
 >For the full details of AEM Screens as a Cloud Service, see the [Additional Resources](#additional-resources) section at the end of this document.
 
@@ -203,7 +203,7 @@ AEM Screens can use this same service to access the simulated weather data. This
 
 AEM Screens can change content dynamically based on context. The We.Cafe demo has channels configured to show different content depending on the current temperature by leveraging AEM's ContextHub.
 
-[!TIP]
+>[!TIP]
 >
 >For the full details of ContextHub, see the [Additional Resources](#additional-resources) section at the end of this document.
 
