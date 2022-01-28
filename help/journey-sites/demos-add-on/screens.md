@@ -103,23 +103,91 @@ Just like AEM, AEM Screens can change content dynamically based on context. The 
 
 Since it is very difficult to change the weather during a demo or while testing, temperature changes must be simulated. We will simulate a weather service by storing a temperature value in a Google Sheet spreadsheet.
 
-1. Create a Google Maps API key and copy it. Refer to the Google documentation **Using API Keys** as referenced under [AdditionalResources](#additional-resources) for details.
-1. In the same project where you created the API key, enable the Google Sheets API.
-1. Create a new Google Sheets spreadsheet. 
+First we will need to create a Google API key to facilitate the exchange of data.
+
+1. Log into a Google account.
+1. Open up the Cloud Console using this link `https://console.cloud.google.com`.
+1. Create a new project by clicking on the current project name in the top-left of the toolbar after the **Google Cloud Platform** label.
+
+   ![Google Cloud Console](assets/google-cloud-console.png)
+
+1. In the project selector dialog, click **NEW PROJECT**.
+
+   ![New project](assets/new-project.png)
+
+1. Give the project a name and click **CREATE**.
+
+   ![Create project](assets/create-project.png)
+
+1. Make sure your new project is selected and then using the hamburger menu in the dashboard of the Cloud Console, select **APIs &amp; Services**.
+
+   ![APIs and Services](assets/apis-services.png)
+
+1. In the left panel of the APIs &amp; Services window, click **Credentials** at the top of the window, then click **CREATE CREDENTIALS** and **API Key**.
+
+   ![Credentials](assets/credentials.png)
+
+1. In the dialog, copy your new API key and save for later use. Click **CLOSE** to close the dialog.
+
+To allow the exchange of Google Sheets data using this API key we need to enable the Google Sheets API.
+
+1. Return to the Google Cloud Console at `https://console.cloud.google.com` for your project and then use the hamburger menu to select **APIs &amp; Services -&gt; Library**.
+
+   ![API library](assets/api-library.png)
+
+1. In the API Library screen, scroll to find our search for **Google Sheets API**. Click on it.
+
+   ![API library search](assets/api-library-search.png)
+
+1. In the **Google Sheets API** window click **ENABLE**.
+
+   ![Google sheets API](assets/sheets-api.png)
+
+Now we can create a Google Sheets spreadsheet to store our weather data.
+
+1. Go to `https://docs.google.com` and create a new Google Sheets spreadsheet.
 1. Define the temperature by entering `32` in cell A2.
-1. Make the sheet
-1. Copy the sheet ID.
-   * The sheet ID is the random string of characters in the sheet URL after `d/` and before `/edit`.
+1. Share the document by clicking on **Share** at the top-right of the window and under **Get link** click **Change**.
+
+   ![Share sheet](assets/share-sheet.png)
+
+1. Copy the link and save it for future use.
+
+   ![Share link](assets/share-link.png)
+
+1. Locate the sheet ID.
+
+   * The sheet ID is the random string of characters in the sheet link after `d/` and before `/edit`.
    * For example:
      * If my URL is `https://docs.google.com/spreadsheets/d/1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30/edit#gid=0` 
      * The sheet ID is `1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30`.
-1. Make the sheet shareable to anyone with the link
+
+1. Copy the sheet ID for future use.
 
 Now that you have created your data source as a Google Sheets spreadsheet and enable access via API, test it to ensure that your "weather service" is accessible.
 
-1. Steps
-1. To test
-1. API access of Google Sheet
+1. Open a web browser.
+
+1. Enter the following request, replacing the sheet ID and API key values that you saved previously.
+
+   ```
+   https://sheets.googleapis.com/v4/spreadsheets/<yourSheetID>/values/Sheet1?key=<yourAPIKey>
+   ```
+
+1. If you receive JSON data similar to the following, you set up your "weather service" properly.
+
+   ```json
+   {
+     "range": "Sheet1!A1:Z1000",
+     "majorDimension": "ROWS",
+     "values": [
+       [],
+       [
+         "32"
+       ]
+     ]
+   }
+   ```
 
 AEM Screens can use this same service to access the simulated weather data. This will be configured in the next step.
 
