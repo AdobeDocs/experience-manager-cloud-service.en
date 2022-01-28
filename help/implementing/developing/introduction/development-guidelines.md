@@ -103,7 +103,7 @@ The default log level is INFO, that is, DEBUG messages are not logged. To activa
 
 `/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
-For example, set `/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json` with the following value.
+For example, set `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` with the following value.
 
 ```json
 {
