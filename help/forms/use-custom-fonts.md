@@ -13,11 +13,11 @@ You can use Forms as a Cloud Service Communications to combine an XDP template, 
 
 You can [embed a font](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) to a PDF document. When a font is embedded, the PDF document appears (Looks) identical on all platforms. It used embedded font to ensure a consistent look and feel. When a font is not embedded, the font rendering depends on rendering settings of PDF viewer client. If the font is available on the client machine, the PDF uses specified font, else the PDF is rendered with a fallback font.
 
-## Add custom fonts to your Forms as a Cloud Service environment
+## Add custom fonts to your Forms as a Cloud Service environment {#custom-fonts-cloud-service}
 
 To add custom fonts to your Cloud Service environment:
 
-1. Setup and open the local development project. You can use any IDE of your choice.
+1. Setup and open the [local development project](setup-local-development-environment.md). You can use any IDE of your choice.
 1. At the top-level folder structure of the project, create a folder  to save custom fonts and add custom fonts to the folder. For example, fonts/src/main/resources
 ![Fonts folder](assets/fonts.png)
 
@@ -70,3 +70,23 @@ To add custom fonts to your Cloud Service environment:
     ```
 
 1. Check in the updated code and [run the pipeline](/help/implementing/cloud-manager/deploy-code.md) to deploy the fonts to your Cloud Service environment.
+
+1. Open the command prompt, navigate to the local project folder, and run the below command. It creates a packages the fonts in a .jar file. You ca use the .jar file for the local deployment of the project. 
+
+``` shell
+
+mvn clean install
+
+```
+
+## Add custom fonts to your local Forms Cloud Service development environment {#custom-fonts-cloud-service-sdk}
+
+1. Start your local development environment.
+1. Navigate to [crx-repository]\install folder
+1. Place the .jar file contaning custom fonts and relevant deployment code to the install folder. If you do not have the .jar file, perform the steps listed in [Add custom fonts to your Forms as a Cloud Service environment](#custom-fonts-cloud-service) section to generate the file. 
+1. Run the [docker-based SDK environment](setup-local-development-environment.md#docker-microservices)
+
+
+   >[!NOTE]
+   >
+   >Whenever you deploy an updated .jar file to add or remove custom fonts to local deplyment environment, stop and start the docker-based SDK environment.
