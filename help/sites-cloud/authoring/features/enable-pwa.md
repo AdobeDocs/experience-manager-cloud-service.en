@@ -48,7 +48,7 @@ Core Components release 2.15.0 and later fully support the PWA features of AEM s
 
 >[!NOTE]
 >
->Adobe does not recommend using the PWA features on custom components or components not [extended from the ore Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+>Adobe does not recommend using the PWA features on custom components or components not [extended from the Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
 
