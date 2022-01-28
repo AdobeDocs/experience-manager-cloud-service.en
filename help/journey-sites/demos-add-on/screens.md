@@ -90,7 +90,37 @@ Once the wizard completes, you will find the content deployed under Sites and yo
 
 ![We.Cafe content](assets/wecafe-content.png)
 
-If you only wish to explore the content within the AEM Sites console, no more action is required. However if you want to experience the full dynamic features of AEM Screens, continue to the next section.
+Now that you have We.Cafe demo content, you have a choice about how you wish to test AEM Screens:
+
+* If you only wish to explore the content within the AEM Sites console, simply start exploring! no more action is required.
+* If you want to experience the full dynamic features of AEM Screens, continue to the next section, [Configure ContextHub.](#configure-contexthub)
+
+## Dynamically Change Screens Content {#dynamically-change}
+
+Just like AEM, AEM Screens can change content dynamically based on context. The We.Cafe demo has channels configured to show different content depending on the current temperature. To simulate this, we will need to create our own simple weather service.
+
+### Create Simulated Data Source {#data-source}
+
+Since it is very difficult to change the weather during a demo or while testing, temperature changes must be simulated. We will simulate a weather service by storing a temperature value in a Google Sheet spreadsheet.
+
+1. Create a Google Maps API key and copy it. Refer to the Google documentation **Using API Keys** as referenced under [AdditionalResources](#additional-resources) for details.
+1. In the same project where you created the API key, enable the Google Sheets API.
+1. Create a new Google Sheets spreadsheet. 
+1. Define the temperature by entering a number in cell A2.
+1. Copy the sheet ID.
+   * The sheet ID is the random string of characters in the sheet URL after `d/` and before `/edit`.
+   * For example:
+     * If my URL is `https://docs.google.com/spreadsheets/d/1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30/edit#gid=0` 
+     * The sheet ID is `1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30`.
+
+Now that you have created your data source as a Google Sheets spreadsheet and enable access via API, test it to ensure that your "weather service" is accessible.
+
+1. Steps
+1. To
+1. API access of Google Sheet
+
+AEM Screens can use this same service to access the simulated weather data. This will be configured in the next step.
+
 ### Configure ContextHub {#configure-contexthub}
 
 Just like AEM, AEM Screens can change content dynamically based on context. The We.Cafe demo has channels configured to show different content depending on the current temperature by leveraging AEM's ContextHub.
@@ -99,14 +129,10 @@ Just like AEM, AEM Screens can change content dynamically based on context. The 
 >
 >For the full details of ContextHub, see the [Additional Resources](#additional-resources) section at the end of this document.
 
-Since it is very difficult to change the weather during a demo or while testing, temperature changes must be simulated. We will simulate a "weather service" by storing a temperature value in a Google Sheet spreadsheet. ContextHub will then call up that value when it looks up your location information using the Google Maps API to determine the weather information to display.
+ContextHub will then call up that value when it looks up your location information using the Google Maps API to determine the weather information to display.
 
 For demo purposes, the values in the sheet can be changed. ContextHub will recognize this and the content will adjust in the channel according to the updated temperature.
 
-1. Create a Google Maps API key and copy it. Refer to the Google documentation **Using API Keys** as referenced under [AdditionalResources](#additional-resources) for details.
-1. Create a new Google Sheets spreadsheet. 
-1. Define the temperature by entering a number in cell A2.
-1. Copy the sheet ID.
 1. On the AEMaaCS author instance, go to **Global Navigation -&gt; Tools -&gt; Sites -&gt; ContextHub**.
 1. Select the configuration container that has the same name as what you gave the project when you created the Screens project from the **We.Cafe Website Template**.
 1. Select **Configuration -&gt; ContextHub Configuration -&gt; Google Sheets** then click **Next** at the top right.
@@ -115,11 +141,16 @@ For demo purposes, the values in the sheet can be changed. ContextHub will recog
    1. Replace `[your Google API Key]` with your API key.
 1. Click **Save**.
 
+Now you can change the temperature value in your Google Sheet spreadsheet and ContextHub will update Screens dynamically as it "sees the weather change."
+
+1. Edit the Screens page under **Global Navigation -&gt; Sites -&gt; `Project Name`-&gt; Channels -&gt; Entrance Morning (Landscape)**.
+1. Select **Page information -&gt; View as Published**.
+
 >[!IMPORTANT]
 >
 >Only use the described Google Sheets solution for demo purposes. Adobe does not support using Google Sheets for production environments.
 
-### Connect Screens as a Cloud Service {#connect-screens}
+## Connect Screens as a Cloud Service {#connect-screens}
 
 If you would like to also set up a real digital signage experience, including a player that runs on a digital signage device or on your computer, follow the next steps.
 
@@ -129,14 +160,68 @@ Alternatively you can preview the demo simply in the Channel Editor on AEMaaCS.
 >
 >For the full details of the Channel Editor, see the [Additional Resources](#additional-resources) section at the end of this document.
 
-1. Navigate to Screens as a Cloud Service.
-1. Link the URLs of AEMaaCS author and publish instances in the settings
-1. Create  a Display  and open it afterwards
-1. Click  Assign channel  in the top right and select a channel that has been synced from your AEMaaCS instance
-1. Download, register and assign a Player
-   1. Download
-   1. Register
-   1. Assign Display to Player
+1. Publish the content of your demo screens project.
+1. Navigate to Screens as a Cloud Service at `https://experience.adobe.com/screens` and log in.
+1. In the top-right of the screen, ensure that you are in the correct organization.
+
+   ![Check your Screens org](assets/screens-org.png)
+
+1. At the top-left, click on the **Edit Settings** icon, shaped like a gear.
+   
+   ![Edit settings](assets/screens-edit-settings.png)
+
+1. Provide the the URLs of AEMaaCS author and publish instances where you created your demo site and click **Save**.
+
+   ![Screens setting](assets/screens-settings.png)
+
+1. Once connected to your demo instances, Screens will pull in your channel content. Click on **Channels** in the left panel to see your published channels. It may take a moment for the information to populate. You can click the blue **Sync** button at the top-right of the screen to update the information.
+
+   ![Demo channel info](assets/screens-channels.png)
+
+1. Click on **Displays** in the left panel. You have not yet created any for your demo. We will simulate the locations of We.Cafe by creating folders for each. Click on **Create** at the top-right of the screen and select **Folder**.
+
+   ![Create display](assets/screens-displays.png)
+
+1. In the dialog, provide a folder name such as **San Jose** and click **Create**.
+
+1. Open the folder by clicking on it and then click on **Create** at the top-right and select **Display**.
+
+1. Provide a display name and click **Create**.
+
+   ![Create display](assets/create-display.png)
+
+1. Once the channel is created, click on it to view details. The display must be assigned a channel that was synched from your demo site. Click on **Assign channel** at the top-right of the screen.
+
+   ![Channel detail](assets/channel-detail.png)
+
+1. In the dialog, select the channel and click **Assign**.
+
+   ![Assign channel](assets/assign-channel.png)
+
+You can repeat these steps for your additional locations and displays. Once complete you have linked your demo site with AEM Screens and have completed the necessary configuration.
+
+You can preview the demo simply in the Channel Editor on AEMaaCS.
+
+### Using Screens Player {#screens-player}
+
+To view the content as on an actual screen, you can download the player and set it up locally.
+
+#### Generate a Registration Code {#registration-code}
+
+First you will need to create a registration code to securely connect a player to AEM Screens as a Cloud Service.
+
+1. Navigate to Screens as a Cloud Service at `https://experience.adobe.com/screens` and log in.
+1. In the top-right of the screen, ensure that you are in the correct organization.
+
+   ![Check your Screens org](assets/screens-org.png)
+
+1. In the left panel, click on **Player Management -&gt; Registration Codes** and then click **Create code** at the top-right of the screen.
+
+  ![Registration codes](assets/registration-codes.png)
+
+1. Enter a name for the code and click **Create**.
+
+   ![Create code](assets/create-code.png)
 
 ## End of the Journey? {#end-of-journey}
 
@@ -153,3 +238,6 @@ You are now ready to explore the capabilities of AEM Screens using your own demo
 * [ContextHub documentation](/help/sites-cloud/authoring/personalization/contexthub.md)
 * [Using API Keys - Google Documentation](https://developers.google.com/maps/documentation/javascript/get-api-key)
 * [Displays](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md)
+* [Download Player](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
+* [Register Player](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
+* [Assigning Player to a Display](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
