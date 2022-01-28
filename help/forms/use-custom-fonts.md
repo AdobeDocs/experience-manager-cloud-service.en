@@ -18,10 +18,10 @@ You can [embed a font](https://adobedocs.github.io/experience-manager-forms-clou
 To add custom fonts to your Cloud Service environment:
 
 1. Setup and open the [local development project](setup-local-development-environment.md). You can use any IDE of your choice.
-1. At the top-level folder structure of the project, create a folder  to save custom fonts and add custom fonts to the folder. For example, fonts/src/main/resources
+1. At the top-level folder structure of the project, create a folder(module) to save custom fonts and add custom fonts to the folder. For example, fonts/src/main/resources
 ![Fonts folder](assets/fonts.png)
 
-1. Open top-level pom.xml file of the development project.
+1. Open pom.xml file of the fonts module of the development project.
 1. Add `<Font-Archive-Version>` manifest entry to the .pom file and set value of version to 1:
 
     ``` xml
@@ -71,7 +71,7 @@ To add custom fonts to your Cloud Service environment:
 
 1. Check in the updated code and [run the pipeline](/help/implementing/cloud-manager/deploy-code.md) to deploy the fonts to your Cloud Service environment.
 
-1. Open the command prompt, navigate to the local project folder, and run the below command. It creates a packages the fonts in a .jar file. You ca use the .jar file for the local deployment of the project. 
+1. (Optional) Open the command prompt, navigate to the local project folder, and run the below command. It creates a packages the fonts in a .jar file. You ca use the .jar file for the local deployment of the project. 
 
 ``` shell
 
@@ -89,4 +89,4 @@ mvn clean install
 
    >[!NOTE]
    >
-   >Whenever you deploy an updated .jar file to add or remove custom fonts to local deplyment environment, stop and start the docker-based SDK environment.
+   >Whenever you deploy an updated  custom fonts .jar file to local deplyment environment, re-start the docker-based SDK environment.
