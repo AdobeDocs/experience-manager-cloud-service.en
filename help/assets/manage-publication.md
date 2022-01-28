@@ -23,7 +23,7 @@ You can publish or unpublish assets at the asset or folder level, using either *
 
 ## Publish assets using Quick Publish {#quick-publish}
 
-From your [!DNL Experience Manager Assets] console, navigate to the parent folder and select all the assets or folders that you want to publish. Click **[!UICONTROL Quick Publish]** option from the toolbar and select destination from the dropdown list where you want to publish the assets.
+From the [!DNL Experience Manager Assets] console, navigate to the parent folder and select all the assets or folders that you want to publish. Click **[!UICONTROL Quick Publish]** option from the toolbar and select destination from the dropdown list where you want to publish the assets.
 
 ![Quick Publish](assets/quick-publish-to-aem.png)
 
@@ -36,8 +36,8 @@ From the [!DNL Experience Manager Assets] console, navigate to the parent folder
 The following options are available in the [!UICONTROL Manage Publication] interface:
 
 * [!UICONTROL Actions] 
-  * `Publish`: publish assets and folders to the selected destination
-  * `Unpublish`: unpublish assets and folders from the destination
+  * `Publish`: Publish assets and folders to the selected destination
+  * `Unpublish`: Unpublish assets and folders from the destination
 
 * [!UICONTROL Destination]
   * `Publish`: Publish assets and folders to [!DNL Experience Manager Assets] (`AEM`)
@@ -48,13 +48,15 @@ The following options are available in the [!UICONTROL Manage Publication] inter
   * `Now`: Publish assets immediately
   * `Later`: Publish assets based on the `Activation` date or time
 
-To continue, click **[!UICONTROL Next]**. Based on the selection, the **[!UICONTROL Scope]** tab reflects different options. The options to **[!UICONTROL Add Content]** and **[!UICONTROL Include Folder Settings]** are available only for publishing to [!DNL Experience Manager Assets] (`Destination: Publish`).
+To continue, click **[!UICONTROL Next]**. Based on the selection, the **[!UICONTROL Scope]** tab reflects different options. The options to **[!UICONTROL Add Content]** and **[!UICONTROL Include Folder Settings]** are available only for publishing the assets and folders to [!DNL Experience Manager Assets] (`Destination: Publish`).
 
 ![Manage Publication Scope](assets/manage-publication-aem-scope.png)
 
 ### Add Content {#add-content}
 
-Publishing to [!DNL Experience Manager Assets] allows you to further add more content (assets and folders) to the publishing list. To add more assets or folders across the dam-repositories, click on **[!UICONTROL Add Content]** button. You can add multiple assets from a folder or add multiple folders at a time. But you cannot add assets from multiple folders at a time. 
+Publishing to [!DNL Experience Manager Assets] allows you to further add more content (assets and folders) to the publishing list. You can add more assets or folders to the list across the dam-repositories. Click on **[!UICONTROL Add Content]** button to add more content. 
+
+You can add multiple assets from a folder or add multiple folders at a time. But you cannot add assets from multiple folders at a time. 
 
 ![Add Content](assets/manage-publication-add-content.png)
 
@@ -70,7 +72,7 @@ To filter the folder content that you want to publish, click **[!UICONTROL Inclu
 
 ![Include Folder Settings](assets/manage-publication-include-folder-settings.png)
 
-After applying the filters, click **[!UICONTROL OK]**, and then click **[!UICONTROL Publish]**. On clicking the publish button, a confirmation message `Resource(s) have been scheduled for publication` appears. And the selected assets and/or folders are published to the defined destination based on the scheduler (`Now` or `Later`). Log in to your publish instance to verify that the assets and/or folders are successfully published.
+After applying the filters, click **[!UICONTROL OK]**, and then click **[!UICONTROL Publish]**. On clicking the publish button, a confirmation message `Resource(s) have been scheduled for publication` appears. And the selected assets and (or) folders are published to the defined destination based on the scheduler (`Now` or `Later`). Log in to your publish instance to verify that the assets and (or) folders are successfully published.
 
 ![Publish to AEM](assets/manage-publication-publish-aem.png)
 
@@ -128,11 +130,11 @@ To schedule the publish workflow of assets to a later date or time:
    ![Manage Publication workflow](assets/manage-publication-workflow.png)
 
 1. In the **[!UICONTROL Scope]** tab, **[!UICONTROL Add Content]** (if necessary). Click **[!UICONTROL Next]**.
-1. In the **[!UICONTROL Workflows]** tab, specify a Workflow title. Click **[!UICONTROL Publish]** Later. 
+1. In the **[!UICONTROL Workflows]** tab, specify a Workflow title. Click **[!UICONTROL Publish Later]**. 
 
    ![Workflow title](assets/manage-publication-workflow-title.png)
 
-   Log in to the destination instance to verify the published assets (depending on the scheduled date or time).
+   Log in to the destination instance to verify the published assets (depending upon the scheduled date or time).
 
 ## Publish assets to Dynamic Media {#publish-assets-to-dynamic-media}
 
