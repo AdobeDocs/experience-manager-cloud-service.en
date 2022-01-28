@@ -118,7 +118,7 @@ For example, set `/apps/example/config/org.apache.sling.commons.log.LogManager.f
 
 Do not leave the log at the DEBUG log level longer than necessary, as this generates lots of entries.
 
-Discrete log levels can be set for the different AEM environments using runmode-based OSGi configuration targeting. For example:
+Discrete log levels can be set for the different AEM environments using run mode-based OSGi configuration targeting if it's desirable to always log at `DEBUG` during development. For example:
 
 | Environment | OSGi configuration location by run mode | `org.apache.sling.commons.log.level` property value |
 | - | - | - |
