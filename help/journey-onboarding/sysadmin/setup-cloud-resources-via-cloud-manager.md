@@ -21,17 +21,17 @@ After reading this section you should understand:
 
 Adding your cloud resources is done via Cloud Manager by your team member assigned to Cloud Manager Business Owner product Profile. This individual is typically one who understand the business needs and who completes the initial Cloud Manager setup.
 
-Follow the sections below to learn how to create your [cloud service programs](#create-cloud-service-program) and [environments](#create-cloud-environments).
+Follow the sections below to learn how to create your [cloud service programs](#create-cloud-service-program) and [environments.](#create-cloud-environments)
 
 ### Pre-requisites {#prerequisites}
 
 * The System Administrator assigned to the Business Owner role should access and login to Cloud Manager.
 
-* Understand how to [navigate and login to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en).
+* Understand how to [navigate and login to Cloud Manager.](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 
-* Be familiar with [Cloud Manager product profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
+* Be familiar with [Cloud Manager product profiles.](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
 
-* Understand the concepts of Cloud Manager [programs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) and [environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en)
+* Understand the concepts of Cloud Manager [programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) and [environments.](/help/implementing/cloud-manager/manage-environments.md)
 
 ## Navigate to Cloud Manager {#navigate-cloud-manager}
 
@@ -45,6 +45,7 @@ Follow the steps below to navigate to Cloud Manager:
 1. You will navigate to Cloud Manager's **Programs & Products** page.
 
    >[!IMPORTANT]
+   >
    >Alternatively, you can also navigate directly to Cloud Manager's login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Please bookmark this page for future reference and to help you navigate directly to Cloud Manager's landing page.
 
 1. You will be directed to Cloud Manager's landing page. See [Viewing Cloud Manager's Programs](#viewing-programs) section for more details. 
@@ -64,6 +65,7 @@ Additionally, you can navigate to Cloud Manager's **Programs and Products** page
 1. Upon successful login, you will be directed to the landing page of Cloud Manager. See [Viewing Cloud Manager's Programs](#viewing-programs) section for more details.
 
    >[!NOTE]
+   >
    >Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
 
 ### Viewing Programs in Cloud Manager's Landing page {#viewing-programs}
@@ -114,29 +116,30 @@ Follow the steps below to create your cloud service program from Cloud Manager:
 1. Navigate to Cloud Manager landing page, as shown below.
 
    >[!NOTE]
+   >
    >You must be a team member assigned to Cloud Manager Business Owner product profile to successfully complete this step.
 
    From here, click on **Add Program** to launch the Add Program wizard. 
 
     ![](/help/journey-onboarding/assets/setup-resources4.png)
    
-   >[!NOTE]
-   >Watch the [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en) to learn how to create your AEM as a Cloud program and learn about important considerations before creating your program.
-
-   >[!IMPORTANT]
-   >For step by step instruction on how to use the Add Program wizard, go [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en).
+   >[!TIP]
    >
-   >* Remember that the program name cannot be changed after creation. We recommend that you are certain about what name you wish to give your program.
-   >* In the event that you have to change the name of your program, it will involve opening a case with Adobe Support or alternatively contacting your Adobe representative. They will assist with effectively deleting the program. You will have to start all over again with potential loss of work that your team has done.
+   >Watch the [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) to learn how to create your AEM as a Cloud program and learn about important considerations before creating your program.
 
+   >[!TIP]
+   >
+   >For step by step instruction on how to use the Add Program wizard, go [here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md).
+   
 1. Upon successful creation of your cloud program you can navigate to your program to see the **Overview** page of your program, as shown below.
 
    ![](/help/journey-onboarding/assets/setup-resources8.png)
 
    >[!NOTE]
+   >
    >If you have not already done so, now is a good time to add your Developer members to your Cloud Manager team. Refer to Add Users to Developer product profile and follow the steps outlined.
 
-1. Members assigned to the Developer product profile can login to Cloud Manager and [Manage Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
+1. Members assigned to the Developer product profile can login to Cloud Manager and [Manage Cloud Manager Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
    Great work! Now your program is successfully created, your Cloud Manager Git is available for your Developers to access! 
 
@@ -152,16 +155,18 @@ Follow the steps below to create your cloud environments from Cloud Manager:
    ![](/help/journey-onboarding/assets/setup-resources9.png)
 
    >[!IMPORTANT]
+   >
    >A Cloud Manager user in the Business Owner or Deployment Manager role must be logged in to successfully complete this step.
 
-   Additionally, watch the quick [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en) tutorial to learn about Cloud Manager environments and how you can add them to your program.
+   Additionally, watch the quick [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) tutorial to learn about Cloud Manager environments and how you can add them to your program.
 
-1. This will launch the add environment wizard that will guide you through adding your environment. Add your development environment first to get familiar with the wizard. Refer to [Adding an Environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments) to learn more.
+1. This will launch the add environment wizard that will guide you through adding your environment. Add your development environment first to get familiar with the wizard. Refer to [Adding an Environment](/help/implementing/cloud-manager/manage-environments.md#adding-environments) to learn more.
 
    >[!NOTE]
+   >
    >If you have not already done so, now is a good time to add your Developer members to your Cloud Manager team. Refer to Add Users to Developer product profile and follow the steps outlined.
 
-1. Members assigned to the Developer product profile can login to Cloud Manager and [Manage Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
+1. Members assigned to the Developer product profile can login to Cloud Manager and [Manage Cloud Manager Git.](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
 
    Great work! Now your program is successfully created and your Cloud Manager Git is available for your Developers to access! 
 
@@ -172,16 +177,17 @@ Follow the steps below to create your cloud environments from Cloud Manager:
 Your team members must be granted permissions to the instance, since permissions to administer Cloud Manager will not suffice. Now that your cloud resources have been created and are ready to be accessed by your team, the System Administrator must assign your team members to AEM as a Cloud Service product profiles from Adobe Admin Console.
 
 >[!NOTE]
->To be granted access to AEM as a Cloud Service users must belong to one of two product profiles `AEM Users` or `AEM Administrators`. See [Managing Products and User Access in Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console) to learn more.
+>
+>To be granted access to AEM as a Cloud Service users must belong to one of two product profiles `AEM Users` or `AEM Administrators`. See [Managing Products and User Access in Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) to learn more.
 
-You should continue your onboarding journey by next reviewing the document [Assigning Team Members to AEM as a Cloud Service Product Profiles](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md).
+You should continue your onboarding journey by next reviewing the document [Assigning Team Members to AEM as a Cloud Service Product Profiles.](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
 
 
 ## Additional Resources {#additional-resources}
 
 Follow the additional resources to learn about:
 
-* [Program types and adding a program](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)
-* [Environment types and adding an environment](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en) 
-* [Managing Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
-* [Configuring access to AEM as a Cloud Service from Admin Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#adobe-ims-users)
+* [Program types and adding a program](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html)
+* [Environment types and adding an environment](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) 
+* [Managing Cloud Manager Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+* [Configuring access to AEM as a Cloud Service from Admin Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html#adobe-ims-users)
