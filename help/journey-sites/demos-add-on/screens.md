@@ -106,17 +106,19 @@ Since it is very difficult to change the weather during a demo or while testing,
 1. Create a Google Maps API key and copy it. Refer to the Google documentation **Using API Keys** as referenced under [AdditionalResources](#additional-resources) for details.
 1. In the same project where you created the API key, enable the Google Sheets API.
 1. Create a new Google Sheets spreadsheet. 
-1. Define the temperature by entering a number in cell A2.
+1. Define the temperature by entering `32` in cell A2.
+1. Make the sheet
 1. Copy the sheet ID.
    * The sheet ID is the random string of characters in the sheet URL after `d/` and before `/edit`.
    * For example:
      * If my URL is `https://docs.google.com/spreadsheets/d/1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30/edit#gid=0` 
      * The sheet ID is `1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30`.
+1. Make the sheet shareable to anyone with the link
 
 Now that you have created your data source as a Google Sheets spreadsheet and enable access via API, test it to ensure that your "weather service" is accessible.
 
 1. Steps
-1. To
+1. To test
 1. API access of Google Sheet
 
 AEM Screens can use this same service to access the simulated weather data. This will be configured in the next step.
@@ -149,6 +151,27 @@ Now you can change the temperature value in your Google Sheet spreadsheet and Co
 >[!IMPORTANT]
 >
 >Only use the described Google Sheets solution for demo purposes. Adobe does not support using Google Sheets for production environments.
+
+### Test Dynamic Data {#test-dynamic}
+
+Now that AEM Screens and ContextHub is connected to your "weather service," you can test it to see how screens can update content dynamically.
+
+1. Access your sandbox author instance.
+1. Navigate to the sites console via **Global Navigation -&gt; Sites** and select the following page **Screens -&gt; &lt;project-name&gt; -&gt; Channels -&gt; Entrance Morning (Portrait)**.
+
+   ![Select demo project content](assets/project-content.png)
+
+1. Click Edit in the toolbar or type the shortcut key `e` to edit the page.
+
+1. In the editor, you can see the content. Note that one image is high lighted in blue with a targeting icon in the corner.
+
+   ![Screens content in edtior](assets/screens-content-editor.png)
+
+1. Change the temperature you entered in your spreadsheet from 32 to 70 and watch the content change.
+
+   ![Screens content in edtior](assets/screens-content-editor-2.png)
+
+Based on the temperature changing from a freezing 32 degrees Fahrenheit to a comfortable 70 degrees, the featured image changed from a warming cup of tea to a cool iced coffee.
 
 ## Connect Screens as a Cloud Service {#connect-screens}
 
