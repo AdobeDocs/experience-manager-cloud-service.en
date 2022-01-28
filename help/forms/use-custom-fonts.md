@@ -71,7 +71,7 @@ To add custom fonts to your Cloud Service environment:
 
 1. Check in the updated code and [run the pipeline](/help/implementing/cloud-manager/deploy-code.md) to deploy the fonts to your Cloud Service environment.
 
-1. (Optional) Open the command prompt, navigate to the local project folder, and run the below command. It creates a packages the fonts in a .jar file. You ca use the .jar file for the local deployment of the project. 
+1. (Optional) Open the command prompt, navigate to the local project folder, and run the below command. It creates a packages the fonts in a .jar file. You can use the .jar file for the local deployment of the project. 
 
 ``` shell
 
