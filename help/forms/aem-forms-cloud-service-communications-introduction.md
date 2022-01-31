@@ -83,9 +83,9 @@ You can use the Communications APIs to transform an interactive PDF document (fo
 
 You can flatten the following types of PDF documents:
 
-- Interactive PDF documents created in Designer (that contain XFA streams).
+* Interactive PDF documents created in Designer (that contain XFA streams).
 
-- Acrobat PDF forms
+* Acrobat PDF forms
 
 If you attempt to flatten a non-interactive PDF document, an exception occurs.
 
