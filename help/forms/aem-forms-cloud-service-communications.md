@@ -4,7 +4,7 @@ description: Automatically merge data with XDP and PDF templates or generate out
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 ---
 
-# Use AEM Forms as a Cloud Service Communications APIs - Syncronous Processing {#frequently-asked-questions}
+# Use AEM Forms as a Cloud Service Communications APIs - synchronous  Processing {#frequently-asked-questions}
 
 **The Communications feature is in beta.**
 
@@ -21,7 +21,7 @@ Communications provide APIs for on-demand and scheduled document generation. You
 
 ## Use Synchronous operations {#batch-operations}
 
-A syncronous operation is a process of generating documents in a linear manner. It supports two type of authentication: 
+A synchronous operation is a process of generating documents in a linear manner. It supports two type of authentication: 
 
 * **Basic authentication**: Basic authentication is a simple authentication scheme built into the HTTP protocol. The client sends HTTP requests with the Authorization header that contains the word Basic followed by a space and a base64-encoded string username:password. For example, to authorize as admin / admin the client sends Basic [base64-encoded string username]: [base64-encoded string password].
 
@@ -55,14 +55,14 @@ An organization typically has multiple templates. For example, one template each
 1. Click Create > Folder and create a folder. Open the folder.
 1. Click Create > File Upload and upload the templates.
 
-### Use syncronous API to generate documents
+### Use synchronous API to generate documents
 
 Seperate APIs are available to:
 
 * Generates a PDF Document from a template and merge data to it.
 * Generate a PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) document from an XDP file or PDF document.
 
-The [API reference documentation](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml for [syncronous APIs](assets/sync.yaml) and upload it to postman to check functionality of the APIs.
+The [API reference documentation](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml for [synchronous APIs](assets/sync.yaml) and upload it to postman to check functionality of the APIs.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
