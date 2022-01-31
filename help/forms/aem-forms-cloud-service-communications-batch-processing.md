@@ -162,58 +162,6 @@ Let's understand with the help of an example: Assume there is an input data file
 >
 >Processing a batch can take some time depending on the number of input records and complexity of the template, wait for a few minutes before checking destination folders for output files.
 
-## Considerations  {#considerations-for-communications-apis}
-
-### Form data {#form-data}
-
-Communications APIs accept both a form design that is typically created in Designer and XML form data as input. To populate a document with data, an XML element must exist in the XML form data for every form field that you want to populate. The XML element name must match the field name. An XML element is ignored if it does not correspond to a form field or if the XML element name does not match the field name. It is not necessary to match the order in which the XML elements are displayed. The important factor is that the XML elements are specified with corresponding values.
-
-Consider the following example loan application form:
-
-![Loan application Form](assets/loanFormData.png)
-
-To merge data into this form design, create an XML data source that corresponds to the form. The following XML represents an XML data source that corresponds to the example mortgage application form.
-
-```XML
-
-<?xml version="1.0" encoding="UTF-8" ?>
-- <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
-- <xfa:data>
-- <data>
-    - <Layer>
-        <closeDate>1/26/2007</closeDate>
-        <lastName>Johnson</lastName>
-        <firstName>Jerry</firstName>
-        <mailingAddress>JJohnson@NoMailServer.com</mailingAddress>
-        <city>New York</city>
-        <zipCode>00501</zipCode>
-        <state>NY</state>
-        <dateBirth>26/08/1973</dateBirth>
-        <middleInitials>D</middleInitials>
-        <socialSecurityNumber>(555) 555-5555</socialSecurityNumber>
-        <phoneNumber>5555550000</phoneNumber>
-    </Layer>
-    - <Mortgage>
-        <mortgageAmount>295000.00</mortgageAmount>
-        <monthlyMortgagePayment>1724.54</monthlyMortgagePayment>
-        <purchasePrice>300000</purchasePrice>
-        <downPayment>5000</downPayment>
-        <term>25</term>
-        <interestRate>5.00</interestRate>
-    </Mortgage>
-</data>
-</xfa:data>
-</xfa:datasets>
-
-
-```
-
-### Supported document types {#supported-document-types}
-
-For complete access to the rendering capabilities of the Communications APIs, it is recommended that you use an XDP file as input. Sometimes, a PDF file can be used. However, using a PDF file as input has the limitations:
-
-A PDF document that does not contain an XFA stream cannot be rendered as PostScript, PCL, or ZPL. Communications APIs can render PDF documents with XFA streams (that is, forms created in Designer) into laser and label formats. If the PDF document is signed, certified, or contains usage rights (applied using AEM Forms Reader Extensions service), it cannot be rendered to these print formats.
-
 ## API reference documentation
 
 The API reference documentation provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is available in the .yaml format. You can download the [Batch APIs](assets/batch-api.yaml) file and upload it to Postman to check functionality of APIs.
