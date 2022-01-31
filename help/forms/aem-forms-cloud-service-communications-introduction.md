@@ -108,11 +108,11 @@ After onbaording, to enable Communications for your  Forms as a Cloud Service en
 
 1. Open the Edit Program option, go to the Solutions & Add-ons tab, and select the **[!UICONTROL Forms - Communications]** option.
 
-   ![Communications](assets\communications.png)
+   ![Communications](/assets/communications.png)
 
     If you have already enabled the **[!UICONTROL Forms - Digital Enrollment]** option, then select the **[!UICONTROL Forms - Communications Add-On]** option.  
 
-   ![Addon](assets\add-on.png) 
+   ![Addon](/assets/add-on.png) 
 
 1. Click **[!UICONTROL Update]**.
 
