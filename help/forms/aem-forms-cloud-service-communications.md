@@ -33,9 +33,9 @@ A syncronous operation is a process of generating documents in a linear manner. 
     1. Run the AEM API with the access token as a Bearer Authentication token.
     1. [Set appropriate permissions for the technical account user in the AEM environment](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem). 
 
->   [!NOTE]
+    >[!NOTE]
     >
-    >Adobe recommends to use token-based authentication on a production environment. For detailed information about obtaining a  
+    >Adobe recommends to use token-based authentication on a production environment. 
 
 ### Pre-requisites {#pre-requisites}
 
