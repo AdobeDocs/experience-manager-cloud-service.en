@@ -66,9 +66,20 @@ By default, publishing a folder to [!DNL Experience Manager Assets] publishes al
 
 To filter the folder content that you want to publish, click **[!UICONTROL Include Folder Settings]**:
 
-* [!UICONTROL Include folder contents]: All the assets, subfolders, and references are published.
+* `Include folder contents`
+
+  * Enabled: All the assets of the selected folder, subfolders (including all the assets of the subfolders), and references are published.
+  * Disabled: Only the selected folder (empty) and references are publishd. The assets of the selected folder are not published.
+
+* `Include folder contents` and `Include only immediate folder contents`
+
+  If both the options are selected, all the assets of the selected folder, subfolders (empty), and references are published. The assets of the subfolders are not published.
+
+<!--
 * [!UICONTROL Include only immediate folder contents]: Only the subfolders content and references are published. 
-* Both options are selected: Only the selected folder content and references are published.
+
+Only the selected folder content and references are published.
+-->
 
 ![Include Folder Settings](assets/manage-publication-include-folder-settings.png)
 
