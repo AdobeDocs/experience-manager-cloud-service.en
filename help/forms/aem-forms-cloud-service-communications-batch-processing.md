@@ -26,9 +26,9 @@ Communications provide APIs for on-demand and scheduled document generation. You
 
 A batch operation is a process of generating multiple documents of similar type for a set of records at scheduled intervals. A batch operation has two parts: Configuration (definition) and execution. 
 
-* **Configuration (definition)**: A batch configuration stores information about various assets and properties to set for generated documents. For example, it provides details about the XDP or PDF template and location of customer data to use along with specifying various properties for output PDF documents.
+* **Configuration (definition)**: A batch configuration stores information about various assets and properties to set for generated documents. For example, it provides details about the XDP or PDF template and location of customer data to use along with specifying various properties for output documents.
 
-* **Execution**: To start a batch operation, specify the run and pass on the batch configuration name to batch execution API.
+* **Execution**: To start a batch operation, pass the batch configuration name to batch execution API.
 
 ### Components of a batch operation {#components-of-a-batch-operations}
 
@@ -36,7 +36,7 @@ A batch operation is a process of generating multiple documents of similar type 
 
 **Batch Data Store configuration (USC)**: Batch data configuration helps you configure a specific instance of Blob storage for Batch APIs. It lets you specify the input and output locations in customer owned Microsoft Azure Blob storage.
 
-**Batch APIs**: Lets you create a batch configurations and execute the batch runs based on these configurations to create and execute a batch operation to merge a PDF or XDP template with data and generate output in PDF, PS, PCL, DPL, IPL and ZPL formats. Communications provide batch APIs for create, read, update, and delete operations.  
+**Batch APIs**: Lets you create a batch configurations and execute the batch runs based on these configurations to merge a PDF or XDP template with data and generate output in PDF, PS, PCL, DPL, IPL and ZPL formats. Communications provide batch APIs for configuration management and batch execution.  
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
@@ -119,12 +119,11 @@ To use a batch API, create a batch configuration and execute a run based on that
 
 ### Create a batch {#create-a-batch}
 
-To create a batch, use the `GET /config` API. Include the following mandatory properties in the body of the HTTP request:
-
+To create a batch, use the `POST /config` API. Include the following mandatory properties in the body of the HTTP request:
 
 * **configName**: Specify Unique name of the batch. For example, `wknd-job`
 * **dataSourceConfigUri**: Specify location of the Batch Data Store configuration. It can be relative or absolute path of the configuration. For example: `/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes**: Specify output formats: PDF or PRINT. If you use the PRINT output type, in `printedOutputOptionsList` property, specify at least one print options. The print options are identified by their render type, so at present multiple print options with the same render type are not allowed. The supported formats are PS, PCL, DPL, IPL and ZPL. 
+* **outputTypes**: Specify output formats: PDF and PRINT. If you use the PRINT output type, in `printedOutputOptionsList` property, specify at least one print options. The print options are identified by their render type, so at present multiple print options with the same render type are not allowed. The supported formats are PS, PCL, DPL, IPL and ZPL. 
 
 * **template**: Specify absolute or relative path of the template. For example, `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
@@ -132,7 +131,7 @@ If you specify relative path, also provide a content root. See, API documentatio
 
 <!-- For example, you include the following JSON in the body of HTTP APIs to create a batch named wknd-job: -->
 
-Once you create a batch, you can use the `GET /config /[configName]/execution/[execution-identifier]` to see details of the batch.
+You can use `GET /config /[configName]` to see details of the batch configuration.
 
 ### Run a batch {#run-a-batch}
 
@@ -144,14 +143,14 @@ To run (execute) a batch, use the `POST /config /[configName]/execution`. For ex
 
 ### Check status of a batch {#status-of-a-batch}
 
-To retrieve status of a batch, use the `GET /config /[configName]/execution/[execution-identifier]`. The execution-identifier is included in the header of HTTP response for the batch execution request.  For example, the following image displays execution identifier for a batch job.
+To retrieve status of a batch, use the `GET /config /[configName]/execution/[execution-identifier]`. The execution-identifier is included in the header of HTTP response for the batch execution request. 
 
 The response of the status request contains the status section. It provides details about status of the batch job, number of records already in pipeline (already read and being processed), and status of each outputType/renderType(number of in-progress, succeeded, and failed items). Status also includes start and end time of batch job along with information about errors, if any. The end time is -1 until batch run actually completes.
 
 >[!NOTE]
 >
 >* When you request multiple PRINT formats, the status contains multiple entries. For example, PRINT/ZPL, PRINT/IPL. 
->* A batch job does not read all the records simultaneously, rather the job keeps reading and incrementing the number of records. So, the status returns a different number of records on each run.
+>* A batch job does not read all the records simultaneously, rather the job keeps reading and incrementing the number of records. So, the status returns -1 until all the records have been read.
 
 ### View generated documents {#view-generated-documents}
 
@@ -220,8 +219,6 @@ A PDF document that does not contain an XFA stream cannot be rendered as PostScr
 The API reference documentation provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is available in the .yaml format. You can download the [Batch APIs](assets/batch-api.yaml) file and upload it to Postman to check functionality of APIs.
 
 ## Known issues {#known-issues}
-
-* Ensure that the data xml file does not contain the XML declaration header. For example, `<?xml version="1.0" encoding="UTF-8"?>`
 
 * When PRINT is specified, a particular render type can be specified only once in the print options list. For example, you cannot have two print options each specifying a PCL render type.
 
