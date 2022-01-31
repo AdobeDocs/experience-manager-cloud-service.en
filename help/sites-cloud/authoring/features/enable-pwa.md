@@ -18,10 +18,6 @@ Through a simple configuration, a content author can now enable progressive web 
 >
 >Before using this feature is is recommended that you discuss this with your development team to define the best way to leverage it for your project.
 
->[!NOTE]
->
->The features described in this document are planned to be made available with the [March 2021 release of AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
-
 ## Introduction {#introduction}
 
 [Progressive web apps (PWAs)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) enable immersive app-like experiences for AEM sites by allowing them to be stored locally on a user's machine and be accessible offline. A user could browse a site while on-the-go even if losing an internet connection. PWAs allow seamless experiences even if the network is lost or unstable.
@@ -52,7 +48,7 @@ Core Components release 2.15.0 and later fully support the PWA features of AEM s
 
 >[!NOTE]
 >
->Adobe does not recommend using the PWA features on custom components or components not [extended from the ore Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+>Adobe does not recommend using the PWA features on custom components or components not [extended from the Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
 
