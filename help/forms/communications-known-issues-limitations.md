@@ -157,13 +157,13 @@ The following table specifies XCI options.
 
 ## Known issues
 
-- You can use a specific render type (PDF, PRINT) only once in the print options list. For example, you cannot have two PRINT options each specifying a PCL render type.
+* You can use a specific render type (PDF, PRINT) only once in the print options list. For example, you cannot have two PRINT options each specifying a PCL render type.
 
-- For a batch configuration, only one instance of combination of values of OutputType(PDF, PRINT) and RenderType(PostScript, PCL, IPL, ZPL, etc.) is allowed.
+* For a batch configuration, only one instance of combination of values of OutputType(PDF, PRINT) and RenderType(PostScript, PCL, IPL, ZPL, etc.) is allowed.
 
 ## Best Practices
 
-- Adobe recommends to host data files blob container store in the cloud region used by AEM Cloud Service.
+* Adobe recommends to host data files blob container store in the cloud region used by AEM Cloud Service.
 
 ## Frequently asked questions {#faq}
 
