@@ -450,7 +450,7 @@ In the Dispatcher configuration, the same environment variable is available. If 
 
 ```
 
-Alternatively, you can use Cloud Manager environment variables in your httpd/dispatcher configuration. This method is especially important if a program has multiple dev environments and some of those dev environments have different values for httpd/dispatcher configuration. The same ${VIRTUALHOST} syntax would be used as in the example above, however the Define declarations in the above variables file would not be used. Read the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en) for instructions on configuring Cloud Manager environment variables.
+Alternatively, you can use Cloud Manager environment variables in your httpd/dispatcher configuration. This method is especially important if a program has multiple dev environments and some of those dev environments have different values for httpd/dispatcher configuration. The same ${VIRTUALHOST} syntax would be used as in the example above, however the Define declarations in the above variables file would not be used. Read the [Cloud Manager documentation](/help/implementing/cloud-manager/environment-variables.md) for instructions on configuring Cloud Manager environment variables.
 
 When testing your configuration locally, you can simulate different environment types by passing the variable `DISP_RUN_MODE` to the `docker_run.sh` script directly:
 
