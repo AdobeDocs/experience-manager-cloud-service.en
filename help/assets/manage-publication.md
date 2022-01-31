@@ -1,6 +1,6 @@
 ---
 title: Manage Publication 
-description: Publish or unpublish assets and (or) folders to Experience Manager Assets, Dynamic Media, and Brand Portal
+description: Publish or unpublish assets to Experience Manager Assets, Dynamic Media, and Brand Portal
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
