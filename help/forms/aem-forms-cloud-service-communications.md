@@ -264,24 +264,8 @@ The following table specifies XCI options.
 | config/present/pdf/tagged             | Controls the inclusion of tags into the output PDF document. Tags, in the context of PDF, are additional information included in a document to expose the logical structure of the document. Tags assist accessibility aids and reformatting. For example, a page number may be tagged as an artifact so that a screen reader does not enunciate it in the middle of the text. Although tags make a document more useful, they also increase the size of the document and the processing time to create it. |
 | config/present/pdf/version            | Specifies the version of PDF document to generate.                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
-### Known issues
-
-- Ensure that the size of the template and XCI configuration files is larger than 16KB.
-
-- Ensure that the data xml file does not contain the XML declaration header. For example, `<?xml version="1.0" encoding="UTF-8"?>`
-
-- For a batch configuration, only one instance of combination of values of OutputType(PDF, PRINT) and RenderType(PostScript, PCL, IPL, ZPL, etc.) is allowed.
-
-- Do not modify the Data Source USC Configuration/Azure Cloud Configuration used in a batch configuration while the batch is being run. Even after execution, if any update is required, create a copy of configuration instead of updating the one used in an existing batch configuration. 
-
-### Best Practices 
-
-- Adobe recommends to host data files blob container store in the cloud region used by AEM Cloud Service.
-
 <!-- Using API
 
  There are two main Communications APIs. The _generatePDFOutput_ generates PDFs, while the _generatePrintedOutput_ generates PostScript, ZPL, and PCL formats. These APIs are available as HTTP endpoints on your environment, both on author and publish instances. Since the publish instances are configured to scale faster than the author instances, it is recommended use these APIs via publish instances.
 
 The first parameter of both the operations accept the path and name of the template file (for example ExpenseClaim.xdp). You can specify a fully qualified path, reference path of your AEM Repository, or path of a binary file. The second parameter accepts an XML document that is merged with the template while generating the output document. -->
-
-
