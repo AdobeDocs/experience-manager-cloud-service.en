@@ -299,19 +299,14 @@ components:
         dataSourceConfigUri:
           type: string
           description: This is the location of data source configuration containing details of cloud config (authentication info for cloud account), source (location for data files), and destinatin (location for output files generated and failure information details).
-        source:
-          allOf:
-            - $ref: '#/components/schemas/DataSource'
-            - type: object
-              description: >-
-                This is the location for data files which are XML files containing the data to be merged with template.
-                It contains blob container details and directory path.
-        destination:
-          allOf:
-            - $ref: '#/components/schemas/DataSource'
-            - type: object
-              description: >-
-                This is the location for generated files in the format requested. It contains blob container details and directory path.
+        dataSource:
+          type: object
+          description: This inline data source object gets returned as part of BatchState
+          properties:
+            cloudConfigPath:
+               type: string
+          additionalProperties:
+            type: string
         outputTypes:
           type: array
           items:
@@ -375,12 +370,7 @@ components:
     BatchStatus:
       type: string
       enum:
-        - PENDING
-        - PRE_PROCESSING
         - PROCESSING
-        - PAUSE_IN_PROGRESS
-        - CANCEL_IN_PROGRESS
-        - PAUSED
         - SUCCESS
         - FAILED
     OutputStatus:
