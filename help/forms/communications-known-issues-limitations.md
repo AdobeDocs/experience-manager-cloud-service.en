@@ -1,7 +1,7 @@
 ---
 title: Known issues 
-seo-title: Communications best practices, known issues, and limitations
-description: 
+description: Communications best practices, known issues, and limitations
+
 ---
 
 # Frequently asked questions, best practices, known issues, and limitations {#best-practices-known-issues-and-limitations}
