@@ -70,6 +70,8 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
 ### What is New {#what-is-new-cif}
 
+* Enhanced myAccount components
+* Product Recommendation component suppports additional page types (home page, shopping cart, order confirmation)
 * **Wishlist**
   * Logged in visitors can add products to a wishlist
   * Mangaging the wishlist and its products is possible via myAccount
