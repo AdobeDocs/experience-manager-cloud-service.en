@@ -12,9 +12,9 @@ Communications capability helps you to create brand-oriented, personalized, and 
 
 You can generate a document on demand or create a batch job to generate multiple documents at defined intervals. Communication APIs provide:
 
-* streamlined on-demand and batch documentation generation capabilities
+* streamlined on-demand and batch documentation generation capabilities.
 
-* HTTP APIs for easier integration with existing systems. Separate APIs for on demand (low-latency) and batch operations (high-throughput operations) are included. It makes document generation an efficient task.
+* HTTP APIs for easier integration with external systems. Separate APIs for on demand (low-latency) and batch operations (high-throughput operations) are included. It makes document generation an efficient task.
 
 * a secure access to data. Communications APIs connect to and access data only from customer designated data repositories, makes no local copies of data, making Communications highly secure.
 
@@ -25,21 +25,21 @@ A credit card statement can be created using Communications APIs. This sample st
 
 Communications utilizes [PDF and XFA templates](#supported-document-types) with [XML data](#form-data) to generate a single document on demand or multiple documents using a batch job at defined interval.
 
-A Communications API helps combine a template (XFA or PDF) with customer data ([XML data](#form-data)) to generate documents in PDF and Print Formats like PS, PCL, DPL, IPL, and ZPL formats.
+The Communications APIs helps combine a template (XFA or PDF) with customer data ([XML data](#form-data)) to generate documents in PDF and Print Formats like PS, PCL, DPL, IPL, and ZPL formats.
 
 Typically, you create a template using [Designer](use-forms-designer.md) and use Communications APIs to merge data with the template. Your application can send the output document to a network printer, a local printer, or to a storage system for archival. A typical out of the box and custom workflows look like the following:
 
 ![Communications Workflow](assets/communicaions-workflow.png)
 
-Depending on the use case, you can also make these documents available for download via your Website or a storage server. 
+Depending on the use case, you can also make these documents available for download via your Website or a storage server.
 
 ## Communication APIs
 
 Communications provide HTTP APIs for on-demand and batch document generation:
 
-* **[Synchronous APIs](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** are suitable for on-demand, low latency, and single record document generation scenarios. These APIs are more suitable for user-action based use cases. For example, generating a document after a user completes filling a form.
+* **[Synchronous APIs](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** are suitable for on-demand, low latency, and single record document generation scenarios. These APIs are more suitable for user-action based use cases. For example, generating a document after a user completes filling a form.
 
-* **[Batch APIs (Asynchronous APIs)](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** are suitable for scheduled, high throughput, and multiple document generation scenarios. These APIs generate documents in batches. For example, phone bills, credit card statements, and benefits statements generated every month.
+* **[Batch APIs (Asynchronous APIs)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** are suitable for scheduled, high throughput, and multiple document generation scenarios. These APIs generate documents in batches. For example, phone bills, credit card statements, and benefits statements generated every month.
 
 Some of the major uses of Communication APIs are: 
 
@@ -94,7 +94,6 @@ If you attempt to flatten a non-interactive PDF document, an exception occurs.
 An interactive PDF document contains various elements that constitute a form. These elements may include fields (to accept or display data), buttons (to trigger events), and scripts (commands to perform a specific action). Clicking a button may trigger an event that changes the state of a field. For example, choosing a gender option may change the color of a field or the appearance of the form. This is an example of a manual event causing the form state to change.
 
 When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form.
-
 
 ## Onboarding
 
