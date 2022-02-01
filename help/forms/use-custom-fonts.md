@@ -105,7 +105,7 @@ To add custom fonts to your Cloud Service environment:
 
 1. Start your local development environment.
 1. Navigate to `<aem install directory>/crx-quickstart/install` folder.
-1. Place the <jar file contaning custom fonts and relevant deployment code>.jar to the install folder. If you do not have the .jar file, perform the steps listed in [Add custom fonts to your Forms as a Cloud Service environment](#custom-fonts-cloud-service) section to generate the file. 
+1. Place the `<jar file contaning custom fonts and relevant deployment code>.jar` to the install folder. If you do not have the .jar file, perform the steps listed in [Add custom fonts to your Forms as a Cloud Service environment](#custom-fonts-cloud-service) section to generate the file. 
 1. Run the [docker-based SDK environment](setup-local-development-environment.md#docker-microservices)
 
 
