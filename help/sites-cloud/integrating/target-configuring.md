@@ -46,9 +46,11 @@ Use the following procedure to create a Target cloud configuration in AEM:
     1. Select the **Adobe Target Configuration** template.
     1. Click **Create**.
 
-   The edit dialog opens.
+You can now select the new configuration dor editing.
 
-   <!-- ![chlimage_1-160](assets/chlimage_1-160.png) -->
+1, The edit dialog opens.
+
+   ![config-target-settings-dialog](assets/config-target-settings-dialog.png)
 
 <!-- Can this still occur?
    >[!NOTE]
@@ -61,20 +63,29 @@ Use the following procedure to create a Target cloud configuration in AEM:
    >1. Tap or click **Save All**.
 -->
 
-1. In the dialog, provide values for these properties.
+1. In the **Adobe Target Settings** dialog, provide values for these properties.
 
-    * **Client Code**: the Target account Client Code
-    * **E-Mail**: the Target account email.
-    * **Password**: the Target account password.
-    * **API Type**: either REST or XML
-    * **A4T Analytics Cloud Configuration**: Select the Analytics cloud configuration that is used for target activity goals and metrics. You need this if you are using Adobe Analytics as the reporting source when targeting content. If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
+   * **Authentication**: this defaults to IMS (User Credentials is deprecated)
 
-    * **Use accurate targeting:** By default this check box is selected. If selected, the cloud service configuration will wait for the context to load before loading content. See note that follows.
-    * **Synchronize Segments from Adobe Target:** Select this option to download segments that are defined in Target to use them in AEM. You must select this option when the API Type property is REST, because inline segments are not supported and you always need to use segments from Target. (Note that the AEM term of 'segment' is equivalent to the Target 'audience'.)
-    * **Client library:** Select whether you want the mbox.js or AT.js client library.
-    * **Use DTM to deliver client library** - Select this option to use either AT.js or mbox.js from DTM or another tag managment system. You must [configure the DTM integration](/help/sites-administering/dtm.md) to use this option. Adobe recommends that you use DTM rather than AEM to deliver the library.
-    * **Custom mbox.js**: Leave blank if you checked the DTM box or to use the default mbox.js. Alternatively upload your custom mbox.js. Only appears if you have selected mbox.js.
-    * **Custom AT.js**: Leave blank if you checked the DTM box or to use the default AT.js. Alternatively upload your custom AT.js. Only appears if you have selected AT.js.
+   * **Client Code**: the Target account Client Code
+
+   * **Tenant ID**: the tenant ID
+
+   * **IMS Configuration**: select the required configuration from the drop down list
+
+   * **API Type**: defaults to REST (XML is deprecated)
+
+   * **A4T Analytics Cloud Configuration**: Select the Analytics cloud configuration that is used for target activity goals and metrics. You need this if you are using Adobe Analytics as the reporting source when targeting content. If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
+
+   * **Use accurate targeting:** By default this check box is selected. If selected, the cloud service configuration will wait for the context to load before loading content. See note that follows.
+
+   * **Synchronize Segments from Adobe Target:** Select this option to download segments that are defined in Target to use them in AEM. You must select this option when the API Type property is REST, because inline segments are not supported and you always need to use segments from Target. (Note that the AEM term of 'segment' is equivalent to the Target 'audience'.)
+
+   * **Client library:** this defaults to AT.js (mbox.js is deprecated)
+
+   * **Use Tag Management System to deliver client library** - Select this option to use the client library from Adobe Launch or another tag management system (or DTM, which is deprecated).
+
+   * **Custom AT.js**: Browse to upload your custom AT.js. Leave blank to use the default library.
 
    >[!NOTE]
    >
@@ -86,9 +97,11 @@ Use the following procedure to create a Target cloud configuration in AEM:
    >
    >If you have ***already*** created targeted components and you change this setting, your changes do not affect those components. You must make any changes to those component directly.
 
-1. Click **Connect to Target** to initialize the connection with Target. If the connection is successful, the message **Connection successful** is displayed. Click **OK** on the message and then **OK** on the dialog.
+1. Click **Connect to Adobe Target** to initialize the connection with Target. If the connection is successful, the message **Connection successful** is displayed. Click **OK** on the message and then **OK** on the dialog.
 
    If you cannot connect to Target, see the [troubleshooting](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) section.
+
+<!-- Is this section needed? -->
 
 ## Adding a Target Framework {#adding-a-target-framework}
 
@@ -96,16 +109,17 @@ After you configure the Target cloud configuration, add a Target framework. The 
 
 You can create multiple frameworks for a single Target configuration. Multiple frameworks are useful when you need to send a different set of parameters to Target for different sections of your website. Create a framework for each set of parameters that you need to send. Associate each section of your website with the appropriate framework. Note that a web page can use only one framework at a time.
 
-1. On your Target configuration page, click the **+** (plus sign) next to Available Frameworks.
+1. On your Target configuration page, click the **+** (plus sign) next to Available Configurations.
+
 1. In the Create Framework dialog, specify a **Title**, select the **Adobe Target Framework**, and click **Create**.
 
-   ![chlimage_1-161](assets/chlimage_1-161.png)
+   ![config-target-framework-dialog](assets/config-target-framework-dialog.png)
 
    The framework page opens. Sidekick provides components that represent information from the [Client Context](/help/sites-administering/client-context.md) or [ContextHub](/help/sites-developing/ch-configuring.md) that you can map.
 
-   ![chlimage_1-162](assets/chlimage_1-162.png)
+   <!-- ![chlimage_1-162](assets/chlimage_1-162.png) -->
 
-1. Drag the Client Context component that represents the data that you want to use for mapping to the drop target. Alternatively, drag the**ContextHub Store** component to the framework.
+1. Drag the Client Context component that represents the data that you want to use for mapping to the drop target. Alternatively, drag the **ContextHub Store** component to the framework.
 
    >[!NOTE]
    >
@@ -113,11 +127,11 @@ You can create multiple frameworks for a single Target configuration. Multiple f
 
    For example, to use **Profile Data** about your site vistors to control your Target campaign, drag the **Profile Data** component to the page. The profile data variables that are available for mapping to Target parameters appear.
 
-   ![chlimage_1-163](assets/chlimage_1-163.png)
+   <!-- ![chlimage_1-163](assets/chlimage_1-163.png) -->
 
 1. Select the variables that you want to make visible to the Adobe Target system by selecting the **Share** checkbox in the appropriate columns.
 
-   ![chlimage_1-164](assets/chlimage_1-164.png)
+   <!-- ![chlimage_1-164](assets/chlimage_1-164.png) -->
 
    >[!NOTE]
    >
@@ -152,7 +166,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. Tap/click **Edit**.
 1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
-   ![chlimage_1-165](assets/chlimage_1-165.png)
+   <!-- ![chlimage_1-165](assets/chlimage_1-165.png) -->
 
 1. Select the framework you want under **Configuration Reference**.
 
