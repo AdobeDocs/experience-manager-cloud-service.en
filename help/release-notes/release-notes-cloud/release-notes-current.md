@@ -36,6 +36,18 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
 * After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the [update, delete, rename, and move operations](/help/assets/use-assets-across-connected-assets-instances.md) on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment.
 
+### New features in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
+
+* [!DNL AEM Dynamic Media] now provides the flexibility to [configure one alias account](../../assets/dynamic-media/dm-alias-account.md) in the user interface, thereby ensuring out-of-the-box Dynamic Media URLs and Viewer Embed code are updated. This positively impacts SEO, to reflect updates made to your business context, such as rebranding.
+
+* You can now use the [!DNL Experience Manager Assets] user interface to:
+
+  * Configure the detection of duplicate assets in a repository.
+
+  * Configure adding digital watermarks to images.
+
+* The administrators can now configure email service for large downloads. It allows the users to enable email notifications for large downloads from the Experience Manager interface. The user receives an email notification containing the download link of the archived zip folder upon completion of the download process.
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}
@@ -53,18 +65,6 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
 * **[Assembler API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: Assembler APIs to combine, rearrange, augment and obtain information about PDF documents.
 
-
-### New features in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
-
-* [!DNL AEM Dynamic Media] now provides the flexibility to [configure one alias account](../../assets/dynamic-media/dm-alias-account.md) in the user interface, thereby ensuring out-of-the-box Dynamic Media URLs and Viewer Embed code are updated. This positively impacts SEO, to reflect updates made to your business context, such as rebranding.
-
-* You can now use the [!DNL Experience Manager Assets] user interface to:
-
-  * Configure the detection of duplicate assets in a repository.
-
-  * Configure adding digital watermarks to images.
-
-* The administrators can now configure email service for large downloads. It allows the users to enable email notifications for large downloads from the Experience Manager interface. The user receives an email notification containing the download link of the archived zip folder upon completion of the download process.
 
 ## CIF Add-on {#cloud-services-cif}
 
