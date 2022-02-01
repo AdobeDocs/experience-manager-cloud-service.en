@@ -126,6 +126,24 @@ You can check the connectivity between the configured [!DNL Sites] deployments a
 
 You can configure a connection between [!DNL Sites] deployment and [!DNL Dynamic Media] deployment that allows webpage authors to use [!DNL Dynamic Media] images in their web pages. While authoring webpages, the experience of using remote Assets and remote [!DNL Dynamic Media] deployments remains the same. This allows you to leverage the [!DNL Dynamic Media] functionality via Connected Assets feature, for example smart crop and image presets.
 
+You can use Dynamic Media assets either from local Sites or from the remote Assets deployment.
+
+The following diagrams illustrate the supported and unsupported scenarios to use Dynamic Media images on a local Sites page:
+
+![Connected Assets for Dynamic Media](assets/connected-assets-best-practices-supported-unsupported.png)
+
+**Scenario 1**: You configure a connection between a local AEM server (Sites) and a remote DAM deployment so that you can use assets available on the remote DAM deployment on a local Sites page. In addition, you configure the connection between local AEM server (Sites) and the remote deployment so that you can use Dynamic Media assets on the local Sites page.
+
+**Result**: Local AEM server (Sites) can use assets and Dynamic Media assets from the remote DAM deployment.
+
+**Scenario 2**: You configure local AEM server to use Dynamic Media assets on the same server. 
+
+**Result**: You cannot:
+
+* Configure a connection between a local AEM server (Sites) and a remote DAM deployment.
+
+* Configure a connection between local AEM server (Sites) and the remote deployment to use Dynamic Media assets on the local Sites page.
+
 To configure the connection, follow these steps:
 
 1. Create Connected Assets configuration as described above, except when configuring the functionality, select **[!UICONTROL Fetch original rendition for Dynamic Media Connected Assets]** option.
@@ -225,6 +243,10 @@ Experience Manager displays an `expired` status visual indicator on assets in Re
 >[!NOTE]
 >
 >The updates to assets in remote DAM are made available to the Sites deployment only if remote DAM and Sites deployments are on Experience Manager as a Cloud Service.
+
+## Frequently Asked Questions {#frequently-asked-questions}
+
+Questions
 
 ## Limitations and best practices {#tip-and-limitations}
 
