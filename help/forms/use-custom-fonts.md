@@ -9,7 +9,7 @@ description: Use custom fonts
 
 You can use Forms as a Cloud Service Communications to combine an XDP template, XDP-based PDF document, or Acrobat Form (AcroForm) with XML data to generate PDF documents. You can also use Communications to combine, rearrange, and augment PDF and XDP documents and obtain information about PDF documents. 
 
-Along with aforementioned operations, you can use fonts included in Cloud Service or custom fonts (organization approved fonts) to render the generated PDF documents. You can use the Cloud Service development project to add custom fonts to your Cloud Service environment.
+Along with previously mentioned operations, you can use fonts included in Cloud Service or custom fonts (organization approved fonts) to render the generated PDF documents. You can use the Cloud Service development project to add custom fonts to your Cloud Service environment.
 
 ## Behavior of PDF Documents
 
