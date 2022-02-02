@@ -246,7 +246,44 @@ Experience Manager displays an `expired` status visual indicator on assets in Re
 
 ## Frequently Asked Questions {#frequently-asked-questions}
 
-Questions
+### Should  you configure Connected Assets if you need to use assets available on your local AEM server?
+
+There is no need to configure Connected Assets in that case. You can use assets available on the local AEM server on a Sites page.
+
+### When do you need to configure the Connected Assets feature?
+
+Configure the Connected Assets feature only when you need to use the assets available on a remote DAM deployment on a Sites page of the local AEM server.
+
+### How many Sites deployments can you connect to a remote DAM deployment after configuring Connected Assets?
+
+You can connect a maximum of four Sites deplyments to a remote DAM deployment after configuring Connected Assets. For more information, see [Connected Assets architecture](#connected-assets-architecture).
+
+### How many remote DAM deployments can you connect to a Sites deployment after configuring Connected Assets?
+
+You can connect one remote DAM deplyment to a Sites deployment after configuring Connected Assets. For more information, see [Connected Assets architecture](#connected-assets-architecture).
+
+### Can you use Dynamic Media assets from your local AEM server and a remote DAM deployment simulataneously?
+
+No, you can configure and use Dynamic Media assets either from your local AEM server or from a remote DAM deployment. For more information, see [Configure a connection between Sites and Dynamic Media deployments](#sites-dynamic-media-connected-assets).
+
+### Can you use assets of Image and Document format types from the remote DAM deployment on the local AEM server after configuring Connected Assets?
+
+Yes, you can use assets of Image and Document format types from the remote DAM deployment on the local AEM server after configuring Connected Assets.
+
+### Can you use content fragments and video assets from the remote DAM deployment on the local AEM server after configuring Connected Assets?
+
+Yes, you can use content fragments and video assets from the remote DAM deployment on the local AEM server after configuring Connected Assets.
+
+### Can you use Dynamic Media assets from the remote DAM deployment on the local AEM server after configuring Connected Assets?
+
+Yes, if you do have a local Dynamic Media company configured on the local AEM server, you can configure and use Dynamic Media assets from the remote DAM deployment on the local AEM server after configuring Connected Assets. For more information, see [Configure a connection between Sites and Dynamic Media deployments](#sites-dynamic-media-connected-assets).
+
+### After configuring Connected Assets, can you perform the update, delete, rename, and move operations on the remote DAM assets or folders?
+
+Yes, after configuring Connected Assets, you can perform the update, delete, rename, and move operations on the remote DAM assets or folders. For more information, see [Manage updates to assets in remote DAM](#handling-updates-to-remote-assets).
+
+
+
 
 ## Limitations and best practices {#tip-and-limitations}
 
