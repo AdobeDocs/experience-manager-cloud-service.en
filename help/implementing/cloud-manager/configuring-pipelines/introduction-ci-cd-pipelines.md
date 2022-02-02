@@ -73,7 +73,7 @@ The following diagram illustrates Cloud Manager's pipeline configurations with t
 Full-stack pipelines deploy back-end code, front-end code, and web tier configurations to AEM runtime all at the same time.
 
 * Back-End Code - Immutable content such as Java code, OSGi configurations, repoinit, as well as mutable content
-* Fron-End Code - Application UI resources such as JavaScript, CSS, fonts
+* Front-End Code - Application UI resources such as JavaScript, CSS, fonts
 * Web Tier Config - HTTPD/Dispatcher configurations
 
 The full-stack pipeline represents an 'uber' pipeline, doing everything at once, while giving users the options to exclusively deploy their front-end code or Dispatcher configurations via the front-end pipeline and the web tier config pipelines respectively.
