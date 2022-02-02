@@ -5,41 +5,45 @@ exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 ---
 # Use AEM Forms as a Cloud Service Communications {#frequently-asked-questions}
 
-**AEM Forms as a Cloud Service Communications document manipulation APIs are in beta and can change significantly before actual release.**
+**AEM Forms as a Cloud Service - Communications document manipulation APIs are in beta and can change significantly before actual release.**
 
-Communications capability helps you to create brand-approved, personalized, and standardized documents such as business correspondences, statements, claim processing letters, benefit notices, monthly bills, or welcome kits. The capability provides APIs to generate and manipulate the documents. You can generate or manipulate a document on demand or create a batch job to generate multiple documents at defined intervals. Communications APIs provide:
+Communications capability helps you to create brand-approved, personalized, and standardized documents such as business correspondences, statements, claim processing letters, benefit notices, monthly bills, or welcome kits. 
 
-* Streamlined on-demand and batch documentation generation capabilities.
+The capability provides APIs to generate and manipulate the documents. You can generate or manipulate a document on demand or create a batch job to generate multiple documents at defined intervals. Communications APIs provide:
 
-* Combine, rearrange, and validate PDF documents. 
+* streamlined on-demand and batch documentation generation capabilities.
+
+* capability to combine, rearrange, and validate PDF documents on-demand. 
 
 * HTTP APIs for easier integration with external systems. Separate APIs for on demand (low-latency) and batch operations (high-throughput operations) are included. It makes document generation an efficient task.
 
 * a secure access to data. Communications APIs connect to and access data only from customer designated data repositories, makes no local copies of data, making Communications highly secure.
 
 ![A sample credit card statement](assets/statement.png)
-A credit card statement can be created using Communications APIs. This sample statement uses same template but seperate data for each customer depending on their usage of credit card.
+A credit card statement can be created using Communications APIs. This sample statement uses same template but separate data for each customer depending on their usage of credit card.
 
 ## Document generation
 
-Communications document generation APIs helps combine a template (XFA or PDF) with customer data ([XML data](#form-data)) to generate documents in PDF and Print Formats like PS, PCL, DPL, IPL, and ZPL formats. These APIs utilizes [PDF and XFA templates](#supported-document-types) with [XML data](communications-known-issues-limitations.md#form-data) to generate a single document on demand or multiple documents using a batch job at defined interval.
+Communications document generation APIs help to combine a template (XFA or PDF) with customer data ([XML data](#form-data)) to generate documents in PDF and Print Formats like PS, PCL, DPL, IPL, and ZPL formats. These APIs utilize [PDF and XFA templates](#supported-document-types) with [XML data](communications-known-issues-limitations.md#form-data) to generate a single document on demand or multiple documents using a batch job.
 
 Typically, you create a template using [Designer](use-forms-designer.md) and use Communications APIs to merge data with the template. Your application can send the output document to a network printer, a local printer, or to a storage system for archival. A typical out of the box and custom workflows look like the following:
 
 ![Communications document generation Workflow](assets/communicaions-workflow.png)
 
-Depending on the use case, you can also make these documents available for download via your Website or a storage server. Some examples of document generation APIs are: 
+Depending on the use case, you can also make these documents available for download via your Website or a storage server. 
+
+Some examples of document generation APIs are: 
 
 ### Create PDF documents {#create-pdf-documents}
 
-You can use the document generation APIs to create a PDF document that is based on a form design and XML form data. The output is a non-interactive PDF document. That is, users cannot enter or modify form data. A basic workflow is to merge XML form data with a form design to create a PDF document. The following illustration shows the merging of a form design and XML form data to produce a PDF document.
+You can use the document generation APIs to create a PDF document that is based on a form design and XML form data. The output is a non-interactive PDF document. That is, users cannot enter or modify the form data. A basic workflow is to merge XML form data with a form design to create a PDF document. The following illustration shows the merging of a form design and XML form data to produce a PDF document.
 
 ![Create PDF documents](assets/outPutPDF_popup.png)
 Figure: Typical workflow to create a PDF document 
 
 ### Create PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) document {#create-PS-PCL-ZPL-documents}
 
-You can use document generation APIs to create PostScript (PS), Printer Command Language (PCL), and Zebra Printing Language (ZPL) document that are based on a XDP form design or PDF document. These APIs help merge a form design with form data to generate a document. You can save the document to a file and develop a custom process to send it to a printer.
+You can use document generation APIs to create PostScript (PS), Printer Command Language (PCL), and Zebra Printing Language (ZPL) document that are based on an XDP form design or PDF document. These APIs help to merge a form design with form data to generate a document. You can save the document to a file and develop a custom process to send it to a printer.
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -90,11 +94,11 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## Document manipulation
 
-Communications document manipulation APIs help combine, rearrange, and validate PDF documents. Typically, you create a DDX and submit it to document manupulation APIs to assemble or rearrange a document. The DDX document provides instructions on how to use the source documents to produce a set of required documents. The DDX reference documentation provides detailed information about all the supported operations. Some examples of document manipulation are: 
+Communications document manipulation APIs help to combine, rearrange, and validate PDF documents. Typically, you create a DDX and submit it to document manipulation APIs to assemble or rearrange a document. The DDX document provides instructions on how to use the source documents to produce a set of required documents. The DDX reference documentation provides detailed information about all the supported operations. Some examples of document manipulation are: 
 
 ### Assemble PDF documents
 
-You can use the document manuaplation APIs to assemble two or more PDF documents into a single PDF document or PDF Portfolio. You can also apply features to the PDF document that aid navigation or enhance security. Here are some of the ways you can assemble PDF documents:
+You can use the document manuaplation APIs to assemble two or more PDF documents into a single PDF document or PDF Portfolio. Here are some of the ways you can assemble PDF documents:
 
 * Assemble a simple PDF document
 * Create a PDF Portfolio
@@ -107,7 +111,7 @@ Figure: Assembling a simple PDF document from multiple PDF documents
 
 ### Disassemble PDF documents
 
-You can use the document manuaplation APIs to disassemble a PDF document. The service can extract pages from the source document or divide a source document based on bookmarks. Typically, this task is useful if the PDF document was originally created from many individual documents, such as a collection of statements.
+You can use the document manuaplation APIs to disassemble a PDF document. The APIs can extract pages from the source document or divide a source document based on bookmarks. Typically, this task is useful if the PDF document was originally created from many individual documents, such as a collection of statements.
 
 * Extract pages from a source document
 * Divide a source document based on bookmarks
@@ -115,9 +119,9 @@ You can use the document manuaplation APIs to disassemble a PDF document. The se
 ![Dividing a source document based on bookmarks into multiple documents](assets/as_intro_pdfsfrombookmarks.png)
 Figure: Dividing a source document based on bookmarks into multiple documents
 
-### Convert to and and validate PDF/A-compliant documents
+### Convert to and validate PDF/A-compliant documents
 
-You can use the document manuaplation APIs to convert a PDF document to a PDF/A-compliant version and to determine whether a PDF document is PDF/A-compliant. PDF/A is an archival format meant for long-term preservation of the document’s content. The fonts are embedded within the document, and the file is uncompressed. As a result, a PDF/A document is typically larger than a standard PDF document. Also, a PDF/A document does not contain audio and video content.
+You can use the document manuaplation APIs to convert a PDF document to a PDF/A-compliant document and to determine whether a PDF document is PDF/A-compliant. PDF/A is an archival format meant for long-term preservation of the document’s content. The fonts are embedded within the document, and the file is uncompressed. As a result, a PDF/A document is typically larger than a standard PDF document. Also, a PDF/A document does not contain audio and video content.
 
 
 ## Types of communications APIs
@@ -130,11 +134,11 @@ Communications provide HTTP APIs for on-demand and batch document generation:
 
 ## Onboarding
 
-Communications is available as a standalone and add-on module for Forms as a Cloud Service user. You can contact Adobe sales team or your Adobe representative to request access. Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. The administrator can grant access to your AEM Forms developers (users) of your organization to use the APIs.
+Communications capability is available as a standalone and add-on module for Forms as a Cloud Service users. You can contact Adobe Sales team or your Adobe representative to request access. Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. The administrator can grant access to your  Forms as a Cloud Service developers (users) of your organization to use the APIs.
 
-After onbaording, to enable Communications for your  Forms as a Cloud Service environment:
+After onboarding, to enable Communications capability for your  Forms as a Cloud Service environment:
 
-1. Login to Cloud Manager and open your AEM Forms as a Cloud Service Instance. 
+1. Log in to Cloud Manager and open your AEM Forms as a Cloud Service Instance. 
 
 1. Open the Edit Program option, go to the Solutions & Add-ons tab, and select the **[!UICONTROL Forms - Communications]** option.
 
@@ -146,9 +150,7 @@ After onbaording, to enable Communications for your  Forms as a Cloud Service en
 
 1. Click **[!UICONTROL Update]**.
 
-1. Run the build pipeline.
-
-After the build pipleine succeeds, Communications APIs are enabled for your environment.
+1. Run the build pipeline. After the build pipeline succeeds, Communications APIs are enabled for your environment.
 
 
 <!--
