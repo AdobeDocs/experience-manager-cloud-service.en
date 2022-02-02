@@ -41,67 +41,11 @@ Communications provide HTTP APIs for on-demand and batch document generation:
 
 * **[Batch APIs (Asynchronous APIs)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** are suitable for scheduled, high throughput, and multiple document generation scenarios. These APIs generate documents in batches. For example, phone bills, credit card statements, and benefits statements generated every month.
 
-Some of the major uses of Communication APIs are: 
-
-### Create PDF documents {#create-pdf-documents}
-
-You can use Communication APIs to create a PDF document that is based on a form design and XML form data. The output is a non-interactive PDF document. That is, users cannot enter or modify form data. A basic workflow is to merge XML form data with a form design to create a PDF document. The following illustration shows the merging of a form design and XML form data to produce a PDF document.
-
-![Create PDF Documents](assets/outPutPDF_popup.png)
-
-### Create PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) document {#create-PS-PCL-ZPL-documents}
-
-You can use Communications APIs to create PostScript (PS), Printer Command Language (PCL), and Zebra Printing Language (ZPL) document that are based on a XDP form design or PDF document. These APIs help merge a form design with form data to generate a document. You can save the document to a file and develop a custom process to send it to a printer.
-
-<!-- ### Processing batch data to create multiple documents
-
-Communications APIs can create separate documents for each record within an XML batch data source. The APIs can also create a single document that contains all records (this functionality is the default). Assume that an XML data source contains ten records and you instruct the APIs to create a separate document for each record (for example, PDF documents). As a result, the APIs generate ten PDF documents.
-
-The following illustration also shows Communications APIs processing an XML data file that contains multiple records. However, assume that you instruct the APIs to create a single PDF document that contains all data records. In this situation, the APIs generate one document that contains all of the records.
-
-The following illustration shows Communications APIs processing an XML data file that contains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
-
- -->
-
-### Processing batch data to create multiple documents {#processing-batch-data-to-create-multiple-documents}
-
-You can create separate documents for each record within an XML batch data source. You can generate documents in bulk and asynchronous mode. You can configure various parameters for the conversion and then start the batch process. <!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
-
-<!-- The following illustration shows the Communication APIs processing an XML data file that contains multiple records. However, assume that you instruct the Communication APIs to create a single PDF document that contains all data records. In this situation, the Communication APIs generate one document that contains all of the records.
-
-![Create PDF Documents](assets/ou_OutputBatchSingle_popup.png)
-
-The following illustration shows the Communication APIs processing an XML data file that contains multiple records. Assume that you instruct the Communication APIs to create a separate PDF document for each data record. In this situation, the Communication APIs generates a separate PDF document for each data record.
-
-![Create PDF Documents](assets/ou_OutputBatchMany_popup.png)
-
-For detailed information on using Batch APIs, see Communication APIs: Processing batch data to create multiple documents. -->
-
-### Flatten interactive PDF documents {#flatten-interactive-pdf-documents}
-
-You can use the Communications APIs to transform an interactive PDF document (for example, a form) to a non-interactive PDF document. An interactive PDF document lets users enter or modify data located in the PDF document fields. The process of transforming an interactive PDF document to a non-interactive PDF document is called flattening. When a PDF document is flattened, a user cannot modify the data located in the document’s fields. One reason to flatten a PDF document is to ensure that data cannot be modified.
-
-You can flatten the following types of PDF documents:
-
-* Interactive PDF documents created in Designer (that contain XFA streams).
-
-* Acrobat PDF forms
-
-If you attempt to flatten a non-interactive PDF document, an exception occurs.
-
-### Retain Form State {#retain-form-state}
-
-An interactive PDF document contains various elements that constitute a form. These elements may include fields (to accept or display data), buttons (to trigger events), and scripts (commands to perform a specific action). Clicking a button may trigger an event that changes the state of a field. For example, choosing a gender option may change the color of a field or the appearance of the form. This is an example of a manual event causing the form state to change.
-
-When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form.
-
 ## Onboarding
 
 Communications is available as a standalone and add-on module for Forms as a Cloud Service user. You can contact Adobe sales team or your Adobe representative to request access.
 
-Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. The administrator can grant access to your AEM Forms developers (users) of your organization to use the APIs.
-
-After onbaording, to enable Communications for your  Forms as a Cloud Service environment:
+Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. The administrator can grant access to your AEM Forms developers (users) of your organization to use the APIs. After onbaording, to enable Communications for your Forms as a Cloud Service environment:
 
 1. Login to Cloud Manager and open your AEM Forms as a Cloud Service Instance. 
 
@@ -118,7 +62,6 @@ After onbaording, to enable Communications for your  Forms as a Cloud Service en
 1. Run the build pipeline.
 
 After the build pipleine succeeds, Communication APIs are enabled for your environment.
-
 
 <!--
 
