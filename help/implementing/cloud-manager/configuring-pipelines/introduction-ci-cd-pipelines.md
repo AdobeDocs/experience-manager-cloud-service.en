@@ -49,8 +49,10 @@ The following table summarizes all the pipelines in Cloud Manager.
 |--- |--- |--- |---|---|
 |Production or Non-Production|Deployment|Front-End|Pushes the build to a storage location. When a page is served it may reference front-end static files which will be served by the CDN using this location as an origin.<br>Multiple front-end pipelines can be configured and run concurrently per environment, offering fast deployment times.|To exclusively deploy front-end code containing one or more client-side UI applications.<br>Front-end code is any code that is served as a static file. It is separate from UI code served by AEM. It includes site themes, customer-defined SPAs, Firefly SPAs, and other solutions.|
 |Production or Non-Production|Deployment|Full-Stack|Deploys AEM server code (immutable content, Java code, OSGi configurations, HTTPD/Dispatcher configuration, repoinit, mutable content, fonts) containing one or more AEM server applications simultaneously|For cases where front-end code must be deployed at exactly the same time as AEM server code.<br>For use when front-end pipelines have not yet been adopted.|
+|Production or Non-Production|Deployment|Web Tier Config|Deploys HTTPD/Dispatcher configurations in a matter of minutes.|To only deploy Dispatcher configuration changes.|
 |Non-Production|Code Quality|Front-End|Evaluates your build success and code quality with support for multiple pipelines without doing a deployment.|To run code quality scans on front-end code.|
-|Non-Production|Code Quality|Full-Stack|Evaluates your build success and code with support for multiple pipelines quality without doing a deployment.|To run code quality scan on full-stack code.|
+|Non-Production|Code Quality|Full-Stack|Evaluates your build success and code with support for multiple pipelines quality without doing a deployment.|To run code quality scans on full-stack code.|
+|Non-Production|Code Quality|Web Tier Config|Evaluates your Dispatcher configuration validity  with support for multiple pipelines without doing a deployment.|To run code quality scans on dispatcher configurations.|
 
 The following diagram illustrates Cloud Manager's pipeline configurations with traditional, single front-end repository, or independent front-end repository setups.
 
