@@ -70,6 +70,8 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
 ### What is New {#what-is-new-cif}
 
+* Enhanced myAccount components
+* Product Recommendation component suppports additional page types (home page, shopping cart, order confirmation)
 * **Wishlist**
   * Logged in visitors can add products to a wishlist
   * Mangaging the wishlist and its products is possible via myAccount
@@ -90,6 +92,15 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
 ### Release Date {#release-date-bpa}
 
+The Release Date for Best Practices Analyzer v2.1.24 is February 01, 2022.
+
 ### What's New {#what-is-new-bpa}
 
+* Ability to detect and report on the number of assets with and without Smart Tags.
+* Ability to detect and report on the version of Core Component used.
+* Ability to detect and report on the type of source tier (Author or Publish) where BPA was executed.
+
 ### Bug Fixes {#bug-fixes-bpa}
+
+* BPA sizing logic was made faster and more efficient.
+* In some scenarios, BPA did not increment analyzed count when it was run. This has been fixed.
