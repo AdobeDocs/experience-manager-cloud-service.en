@@ -90,7 +90,7 @@ To finish the configuration of the full-stack code production pipeline follow th
 
    ![Full stack code](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. Click **Continue** to move to the **Experience Audit** tab where you can define the paths that should always be included in the Experience Audit.
+1. Click **Continue** to advance to the **Experience Audit** tab where you can define the paths that should always be included in the Experience Audit.
 
    ![Add Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
   
