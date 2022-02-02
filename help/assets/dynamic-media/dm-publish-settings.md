@@ -37,11 +37,11 @@ See also [Optional - Setup and configuration of Dynamic Media settings](/help/as
 1. In the Image Server page, set your Image Server - publish context, and then use the five tabs to configure default publish settings.
 
    * [Image Server](#image-server)
-   * [Security](#security-tab) tab
-   * [Catalog Management](#catalog-management-tab) tab
-   * [Request Attributes](#request-attributes-tab) tab
-   * [Common Thumbnail Attributes](#common-thumbnail-attributes-tab) tab
-   * [Color Management Attributes](#color-management-attributes-tab) tab
+     * [Security](#security-tab) tab
+     * [Catalog Management](#catalog-management-tab) tab
+     * [Request Attributes](#request-attributes-tab) tab
+     * [Common Thumbnail Attributes](#common-thumbnail-attributes-tab) tab
+     * [Color Management Attributes](#color-management-attributes-tab) tab
 
    ![Dynamic Media Publish Setup page](/help/assets/assets-dm/dm-publish-setup.png)
    *Dynamic Media Publish Setup page, with the **[!UICONTROL Request Attributes]** tab selected.*<br><br>
