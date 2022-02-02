@@ -4,7 +4,7 @@ description: Adobe Commerce features a recommendation engine powered by Adobe Se
 sub-product: Commerce
 version: cloud-service
 doc-type: feature-video
-activity: use
+activity: grow
 audience: marketer
 feature: Commerce Integration Framework
 kt: 9649
