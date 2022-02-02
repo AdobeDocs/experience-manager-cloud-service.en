@@ -1,115 +1,148 @@
 ---
 title: Configuring Production Pipelines
-description: Configuring Production Pipelines
+description: Learn how to configuring production pipelines to build and deploy your code to production environments.
 index: yes
 ---
 
 # Configuring a Production Pipeline {#configure-production-pipeline}
 
-The Deployment Manager is responsible for configuring the Production Pipeline.
+Learn how to configuring production pipelines to build and deploy your code to production environments.
+
+A user must have the **[Deployment Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md#role-based-permissions)** role to configure production pipelines.
 
 >[!NOTE]
->A Production Pipeline cannot be setup until a program creation is complete, Git repository has at least one branch, and a Production and Stage environment set is created.
+>
+>A production pipeline can not be set up until program creation is complete, a git repository has at least one branch, and a production and staging environment set is created.
 
 Before you start to deploy your code, you must configure your pipeline settings from the [!UICONTROL Cloud Manager].
 
 >[!NOTE]
->You can change the pipeline settings after initial set up.
+>
+>You can change the pipeline settings after the initial setup.
 
 ## Adding a New Production Pipeline {#adding-production-pipeline}
 
-Once you have setup your program and have at least one environment using [!UICONTROL Cloud Manager] UI, you are ready to add a production pipeline.
+Once you have set up your program and have at least one environment using [!UICONTROL Cloud Manager] UI, you are ready to add a production pipeline.
 
-Follow these steps to configure the behavior and preferences for your production pipeline:
+>[!TIP]
+>
+>Before you configure a front-end pipeline, see the [AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) for an end-to-end guide though the easy-to-use AEM Quick Site Creation tool. This journey will help you streamline the front-end development of your AEM Site, allowing you to quickly customize your site with no AEM back-end knowledge.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page.
-Click on **+Add** and select **Add Production Pipeline**. 
+Follow these steps to configure your production pipeline.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click on **Add** to select **Add Production Pipeline**. 
 
-1. **Add Production Pipeline** dialog box displays. Enter the pipeline name.
+   ![The Pipelines card on the Program Manager overview](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
-   Additionally, you can also set up **Deployment Trigger** and **Important Metric Failures Behavior** from **Deployment Options**. Click on **Continue**.
+1. The **Add Production Pipeline** dialog box displays. Provide a **Pipeline Name** to identify your pipeline along with the following options. Click **Continue**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
+   **Deployment Trigger** - You have the following options when defining the deployment triggers to start the pipeline.
+      
+      * **Manual** - Use this option to manually start the pipeline.
+      * **On Git Changes** - This options starts the CI/CD pipeline whenever commits are added to the configured git branch. With this option, you can still start the pipeline manually as required.  
 
+    **Important Metric Failures Behavior** - During pipeline setup or edit, the **Deployment Manager** has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates. The available options are:
 
-   You can define the deployment triggers to start the pipeline.
+    * **Ask every time** - This is the default setting and requires manual intervention on any important failure.
+    * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
+    * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an important failure occurs. This is essentially emulating a user manually approving each failure.
 
-    * **Manual** - using the UI manually start the pipeline.
-    * **On Git Changes** - starts the CI/CD pipeline whenever there are commits added to the configured git branch. Even if you select this option, you can always start the pipeline manually.  
+    ![Production pipeline configuration](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-      During pipeline setup or edit, the Deployment Manager has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates.
+1. On the **Source Code** tab you must define where the pipeline should retrieve its code and what type of code it is.
 
-       This is useful for customers who have the desire for more automated processes. The available options are:
+   * **[Front End Code](#front-end-code)**
+   * **[Full Stack Code](#full-stack-code)**
+   * **[Web Tier Config](#web-tier-config)**
 
-    You can define the important failure metrics behavior to start the pipeline.
+The steps to complete the creation of your production pipeline vary depending on the option for **Source Code** you selected. Following the links above to jump to the next section of this document to complete the configuration of your pipeline.
 
-      * **Ask every time** - This is the default setting and requires manual intervention on any Important failure.
-      * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
-      * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
+### Front End Code {#front-end-code}
 
-1. The **Add Production Pipeline** dialog box includes a second tab labeled as **Source Code**. You can either select **[Front End Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** or **[Full Stack Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**. 
+A front-end code pipeline deploys front-end code builds containing one or more client-side UI applications. See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) for more information about this type of pipeline.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+To finish the configuration of the front end code production pipeline follow these steps.
 
-   If you selected **Front End Code**, you must select the **Repository**, **Git Branch** and **Code Location**, as shown in the figure below:
-    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+1. On the **Source Code** tab, you must define the following options.
 
-   If you selected **Full Stack Code**, you must select the **Repository**, **Git Branch** and **Production Deployment Options** (details below), as shown in the figure:
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
+   * **Repository** - This options defines from which git repo the pipeline should retrieve the code.
+   * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
+     * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
+     * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
 
-   **Production Deployment Options:**
+   ![Front end code](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-frontend.png)
 
-      * **Pause before Deploying to Production**: This option allows the deployment to pause before production.
-      * **Scheduled**: This option allows the user to enable the scheduled production deployment.
+1. Click **Save** to save your pipeline.
 
-   >[!IMPORTANT]
-   >If a Full Stack Code pipeline already exists for the selected environment, this selection will be disabled.
-   >![](/help/implementing/cloud-manager/assets/configure-pipeline/full-stack-disabled.png)
+### Full Stack Code {#full-stack-code}
 
-   >[!NOTE]
-   >Before you start configuring the Front End pipelines, see [AEM Quick Site Creation Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) for an end to end workflow through the easy-to-use AEM Quick Site Creation tool. This documentation site will help you streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
+A full-stack code pipeline simultaneously deploys back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configuration. See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) for more information about this type of pipeline.
 
-1. Click on **Continue** once you selected the options from the **Source Code** tab.
+To finish the configuration of the full-stack code production pipeline follow these steps.
+
+1. On the **Source Code** tab, you must define the following options.
+
+   * **Repository** - This options defines from which git repo the pipeline should retrieve the code.
+   * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
+     * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
+     * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
+     * **Scheduled** - This option allows the user to enable the scheduled production deployment.
+
+   ![Full stack code](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
+
+1. Click **Continue** to move to the **Experience Audit** tab where you can define the paths that should always be included in the Experience Audit.
+
+   ![Add Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
   
-1. The **Add Production Pipeline** dialog box includes a third tab labeled as **Experience Audit**. This option provides a table for the URL paths that should always be included in the Experience Audit. 
+1. Provide a path to be included in the Experience Audit.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
+   * Page paths must start with `/`.
+   * For example, if you would like to include `https://wknd.site/us/en/about-us.html` in the Experience Audit, enter the path `/us/en/about-us.html`.
 
-   >[!IMPORTANT]
-   >You must click on **Add Page** to define your own custom link. Page path must start with `/`.
-   >![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit2.png)
- 
+   ![Defining a path for the Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-   Click **Add New Page** to provide a URL path to be included in the Experience Audit.
+1. Click **Add Page** and the path will be auto-completed with the address of your environment and added to the table of paths.
 
-   For instance, if you would like to include `https://wknd.site/us/en/about-us.html` in the Experience Audit, enter the path `/us/en/about-us.html` in this field and click **Save**.
+   ![Saving path to the table](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
+1. Continue to add paths as necessary by repeating the previous two steps.
 
-   The URL that appears in the table will be:
+   * You can add a maximum of 25 paths.
+   * If you don't define any paths, the homepage of the site will be included in the Experience Audit by default.
+
+1. Click on **Save** to save your pipeline.
+
+Paths configured for the Experience Audit will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests when the pipeline runs. Refer to [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+
+### Web Tier Config {#web-tier-config}
+
+A web tier config pipeline Deploys HTTPD/Dispatcher configurations. See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline) for more information about this type of pipeline.
+
+To finish the configuration of the full-stack code production pipeline follow these steps.
    
-   `https://publish-p12361-e112003.adobeaemcloud.com/us/en/about-us.html`
+1. On the **Source Code** tab, you must define the following options.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
+   * **Repository** - This options defines from which git repo the pipeline should retrieve the code.
+   * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
+   * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
+   * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
+   * **Scheduled** - This option allows the user to enable the scheduled production deployment.
 
-   A maximum of 25 rows can be included. If there are no pages submitted by the user in this section, the homepage of the site will be included in the Experience Audit by default.
- 
-   Refer to [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+   ![Web tier code](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-webtier.png)
 
-    >[!NOTE]
-    > The pages that are configured will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests. 
-    
-1. Click on **Save**. The newly created production pipeline now displays in the **Pipelines** card.
+1. Click **Save** to save your pipeline.
 
-   The pipeline is shown on the card on the home screen with four actions, as shown below:
+## Managing Production Pipelines {#managing-pipelines}
 
-      ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-created.png)
+Once your pipeline is configured and saved, it will appear in the **Pipelines** card on the **Program Overview** page.
+
+![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-created.png)
    
-   * **Add** - allows adding of a new pipeline.
-   * **Show All** - allows the user to view all the pipelines.
-   * **Access Repo Info** - allows the user to get the information necessary to access Cloud Manager Git repository.
-   * **Learn More** - navigates to understanding the CI/CD pipeline documentation resource. 
+You have the following options to manage your pipelines.
 
+   * **Add** - Add a new pipeline
+   * **Show All** - Takes the user to the Pipelines screen to view all pipelines in a more detailed table.
+   * **Access Repo Info** - Displays the information necessary to access the Cloud Manager git repository
+   * **Learn More** - Navigates to CI/CD pipeline documentation resources. 
 
+For details on how to edit production pipelines see the document [Editing a Production Pipeline.](/help/implementing/cloud-manager/configuring-pipelines/editing-production-pipelines.md)
