@@ -455,9 +455,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Use variables in a Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
     + [Use the Out of Office option](/help/forms/configure-out-of-office-settings.md)
   + Using Communications {#using-communications}
-    + [Introduction](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-    + [Communications APIs](/help/forms/aem-forms-cloud-service-communications.md)
-    + [Communications APIs Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+    + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+    + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
+    + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
   + [Migrate to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
