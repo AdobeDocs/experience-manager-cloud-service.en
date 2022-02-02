@@ -63,7 +63,7 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
 
-* **[Assembler API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: Assembler APIs to combine, rearrange, augment and obtain information about PDF documents.
+* **[Assembler API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: Assembler APIs to combine, rearrange, augment and obtain information about PDF documents.
 
 
 ## CIF Add-on {#cloud-services-cif}
