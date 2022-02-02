@@ -4,7 +4,7 @@ description: Automatically merge data with XDP and PDF templates or generate out
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 ---
 
-# Use AEM Forms as a Cloud Service Communications APIs - Syncronous Processing {#frequently-asked-questions}
+# Use AEM Forms as a Cloud Service Communications APIs - Synchronous  Processing {#frequently-asked-questions}
 
 **The Communications feature is in beta.**
 
@@ -21,25 +21,25 @@ Communications provide APIs for on-demand and scheduled document generation. You
 
 ## Use Synchronous operations {#batch-operations}
 
-A syncronous operation is a process of generating documents in a linear manner. It supports two type of authentication: 
+A synchronous operation is a process of generating documents in a linear manner. It supports two type of authentication: 
 
 * **Basic authentication**: Basic authentication is a simple authentication scheme built into the HTTP protocol. The client sends HTTP requests with the Authorization header that contains the word Basic followed by a space and a base64-encoded string username:password. For example, to authorize as admin / admin the client sends Basic [base64-encoded string username]: [base64-encoded string password].
 
-* **Token-based authentication:** Token-based authentication uses an access token (Bearer authentication token) to make requests to AEM as a Cloud Service. AEM Forms as a Cloud Service provides APIs to securely retrieve the access token. To retrieve and use the token to authenticate a request:
+* **Token-based authentication:** Token-based authentication uses an access token (Bearer authentication token) to make requests to Experience Manager as a Cloud Service. AEM Forms as a Cloud Service provides APIs to securely retrieve the access token. To retrieve and use the token to authenticate a request:
 
-    1. [Retrieve AEM as a Cloud Service credentials from the Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-    1. [Install AEM as a Cloud Service credentials on your environment](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Application Server, Web Server, or other non-AEM servers) configured to send requests to (make calls) the cloud service.
+    1. [Retrieve Experience Manager as a Cloud Service credentials from the Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+    1. [Install Experience Manager as a Cloud Service credentials on your environment](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Application Server, Web Server, or other non-AEM servers) configured to send requests to (make calls) the cloud service.
     1. [Generate a JWT token and exchanged it with Adobe IMS APIs for an access token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-    1. Run the AEM API with the access token as a Bearer Authentication token.
-    1. [Set appropriate permissions for the technical account user in the AEM environment](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem). 
+    1. Run the Experience Manager API with the access token as a Bearer Authentication token.
+    1. [Set appropriate permissions for the technical account user in the Experience Manager environment](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem). 
 
     >[!NOTE]
     >
-    >Adobe recommends to use token-based authentication on a production environment. 
+    >Adobe recommends using token-based authentication on a production environment. 
 
 ### Pre-requisites {#pre-requisites}
 
-To use Syncronous APIs, the following is required: 
+To use Synchronous APIs, the following is required: 
 
 * PDF or XDP templates 
 * [Data to be merged with templates](#form-data)
@@ -55,14 +55,14 @@ An organization typically has multiple templates. For example, one template each
 1. Click Create > Folder and create a folder. Open the folder.
 1. Click Create > File Upload and upload the templates.
 
-### Use syncronous API to generate documents
+### Use synchronous API to generate documents
 
-Seperate APIs are available to:
+Separate APIs are available to:
 
 * Generates a PDF Document from a template and merge data to it.
 * Generate a PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) document from an XDP file or PDF document.
 
-The [API reference documentation](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml for [syncronous APIs](assets/sync.yaml) and upload it to postman to check functionality of the APIs.
+The [API reference documentation](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml for [synchronous APIs](assets/sync.yaml) and upload it to postman to check functionality of the APIs.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
