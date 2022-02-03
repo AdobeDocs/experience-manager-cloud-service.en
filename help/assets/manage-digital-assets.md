@@ -271,6 +271,12 @@ See [download assets from [!DNL Experience Manager]](/help/assets/download-asset
 
 ## Publish or unpublish assets {#publish-assets}
 
+You can publish assets and folders containing assets from your author instance to [!DNL Experience Manager Assets], [!DNL Dynamic Media], and [!DNL Brand Portal]. You can publish or unpublish assets at the asset or folder level, using either **[!UICONTROL Quick Publish]** or **[!UICONTROL Manage Publication]** option available in the [!DNL Experience Manager Assets] interface. 
+
+See [manage publication from [!DNL Experience Manager]](/help/assets/manage-publication.md)
+
+<!--
+
 1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
 
 1. Select the asset or the folder to publish or unpublish and select **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar. Alternatively, to publish quickly, select the **[!UICONTROL Quick Publish]** option from the toolbar. If the folder you want to publish includes an empty folder, the empty folder is not published.
@@ -292,6 +298,8 @@ Understand the following limitations and tips related to publishing or unpublish
 * While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because those may be referenced by other published assets.
 * Empty folders are not published.
 * If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
+
+-->
 
 ## Closed user group {#closed-user-group}
 
