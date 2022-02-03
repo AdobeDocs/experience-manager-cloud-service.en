@@ -27,6 +27,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2021 {#2021}
+      + [Release Notes for 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md) 
       + [Release Notes for 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
       + [Release Notes for 2021.9.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
       + [Release Notes for 2021.8.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
@@ -118,6 +119,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [Guidelines and Best Practices for Using Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
       + [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+      + [Validating Content Transfers](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
       + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
       + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
       + [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
@@ -279,6 +281,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Add and upload assets](/help/assets/add-assets.md)
     + [Search assets](/help/assets/search-assets.md)
     + [Common asset management tasks](/help/assets/manage-digital-assets.md)
+    + [Manage publication](/help/assets/manage-publication.md)
     + [Preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
     + [Smart tags for images](/help/assets/smart-tags.md)
     + [Smart tag your video assets](/help/assets/smart-tags-video-assets.md)
