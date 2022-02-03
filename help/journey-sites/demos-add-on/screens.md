@@ -9,11 +9,11 @@ Learn the steps to enable the full AEM Screens as a Cloud Service experience on 
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Quick Site Creation journey, [Manage Your Demo Sites,](manage.md) you learned how you can manage the demo sites you created. You should now:
+In the previous document of the AEM Reference Demos Add-On journey, [Create Demo Site,](create-site.md) you created a new demo site based on the templates of the Reference Demo Add-On. You should now:
 
-* Understand how to access the Self-Service Demo Utilities.
-* Know what utilities are available to you.
-* How to delete an existing demo site or template.
+* Understand how to access the AEM authoring environment.
+* Know how to create a site based on a template.
+* Understand the basics of navigating the site structure and editing a page.
 
 Now that you have your own demo site to explore and understand the tools available to help you manage your demo sites, you can now enable the full AEM Screens as a Cloud Service experience for your demo sites.
 
@@ -37,7 +37,7 @@ AEM Screens as a Cloud Service is a digital signage solution that allows markete
 >
 >For the full details of AEM Screens as a Cloud Service, see the [Additional Resources](#additional-resources) section at the end of this document.
 
-By installing the AEM Reference Demos Add-On, you automatically have We.Cafe content for AEM Screens available to you in your demo authoring environment. The steps described in the [Configure Demo Content](#configure-content) allow you to enable the full AEM Screens experience by publishing that content and deploying to media players etc.
+By installing the AEM Reference Demos Add-On, you automatically have We.Cafe content for AEM Screens available to you in your demo authoring environment. The steps described in the [Deploy a Demo Screens Project](#deploy-project) allow you to enable the full AEM Screens experience by publishing that content and deploying to media players etc.
 
 ## Understand the Demo Content {#demo-content}
 
@@ -60,7 +60,7 @@ The New-York location is assumed to be in a smaller shop that does not have a lo
 
 >[!NOTE]
 >
->If you decide to connect to Screens Cloud Service in the [Configure Demo Content](#configure-content) section, please create the locations as folders under displays. See the [Additional Resources](#additional-resources) section at the end of this document for more information on displays.
+>If you decide to connect to Screens Cloud Service in the [Connect Screens as a Cloud Service](#connect-screens) section, please create the locations as folders under displays. See the [Additional Resources](#additional-resources) section at the end of this document for more information on displays.
 
 ### Cafe Layouts {#care-layouts}
 
@@ -76,15 +76,13 @@ The We.Cafe locations have the following layouts.
 
 The entrance display is day-parted, and will just change the first image from morning to afternoon. On each pass of the sequence it will also advertise a different special coffee preparation, using a metered embedded sequence to play a different item each time.
 
-The last image on the entrance channels is also targeted (i.e. dynamically changed) based on outside temperature, which can be simulated as described in the [Configure Demo Content](#configure-content) section.
+The last image on the entrance channels is also targeted (i.e. dynamically changed) based on outside temperature, which can be simulated as described in the [Create Simulated Data Source](#data-source) section.
 
 ## Deploy a Demo Screens Project {#deploy-project}
 
-Just as with the Sites demo data, the Screens demo data is deployed to your sandbox environment when you run the pipeline as described in the [Configure Demo Content](#configure-content) section.
+In order to use the demo content in the sandbox you created in the [Create Program](create-program.md) step, a site must be created based on a template.
 
-In order to use the demo content it must be deployed. For sites, you created a site from a template. For Screens, you will need to create a Screens project from a template.
-
-Simply follow the same steps as in the [Create Demo Site](create-site.md) section. When selecting the template, simply choose the **We.Cafe Website Template**.
+If you have not already created a We.Cafe demo site, simply follow the same steps as in the [Create Demo Site](create-site.md) section. When selecting the template, simply choose the **We.Cafe Website Template**.
 
 ![We.Cafe template](assets/wecafe-template.png)
 
@@ -371,15 +369,17 @@ Once you have assigned a display to a player, AEM Screens as a Cloud Service del
 
 ![Entrance landscape](assets/entrance-landscape.jpg)
 
-## End of the Journey? {#end-of-journey}
+## What's Next {#what-is-next}
 
-Congratulations! You have completed the AEM Reference Demos Add-On journey including the We.Cafe demo setup for AEM Screens! You should now:
+Now that you have completed this part of the AEM Reference Demo Add-On journey you should:
 
 * Know the basics of AEM Screens.
 * Understand the We.Cafe demo content.
 * Know how to configure AEM Screens for We.Cafe.
 
-You are now ready to explore the capabilities of AEM Screens using your own demo sites. However AEM Screens is a powerful tool and there are many additional options available. Check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
+You are now ready to explore the capabilities of AEM Screens using your own demo sites. Continue to the next section of the journey, [Manage Your Demo Sites,](manage.md) where you will learn about the tools available to help you manage your demo sites and how to remove them.
+
+You can also check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
 
 ## Additional Resources {#additional-resources}
 

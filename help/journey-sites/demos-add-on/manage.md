@@ -9,11 +9,17 @@ Learn about the tools available to help you manage your demo sites and how to re
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Quick Site Creation journey, [Create Site,](create-site.md) you created a new demo site based on the templates of the Reference Demo Add-On. You should now:
+In the previous document of the AEM Reference Demos Add-On journey, [Create Site,](create-site.md) you created a new demo site based on the templates of the Reference Demo Add-On. You should now:
 
 * Understand how to access the AEM authoring environment.
 * Know how to create a site based on a template.
 * Understand the basics of navigating the site structure and editing a page.
+
+If you also [enabled AEM Screens for your demo site,](screens.md) you should also:
+
+* Know the basics of AEM Screens.
+* Understand the We.Cafe demo content.
+* Know how to configure AEM Screens for We.Cafe.
 
 Now that you have your own demo site to explore, this article describes the tools available to help you manage your demo sites and how to remove them.
 
@@ -87,10 +93,7 @@ Congratulations! You have completed the AEM Reference Demos Add-On journey! You 
 * Understand how to access the Self-Service Demo Utilities.
 * Know how to delete an existing demo site or template.
 
-You are now ready to explore the capabilities of AEM using your own demo sites. However AEM is a powerful tool and there are many additional options available. 
-
-* If you are interested in AEM Screens, continue on to the next, optional part of the journey [Enable AEM Screens for Your Demo Site.](screens.md)
-* Check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
+You are now ready to explore the capabilities of AEM using your own demo sites. However AEM is a powerful tool and there are many additional options available. Check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
 
 ## Additional Resources {#additional-resources}
 
