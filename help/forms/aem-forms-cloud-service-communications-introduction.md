@@ -5,7 +5,7 @@ exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 ---
 # Use AEM Forms as a Cloud Service Communications {#frequently-asked-questions}
 
-**AEM Forms as a Cloud Service - Communications document manipulation APIs are in beta and subject to change before actual release.**
+**Document manipulation APIs are in pre-release phase and subject to change before actual release.**
 
 Communications capability helps you to create brand-approved, personalized, and standardized documents such as business correspondences, statements, claim processing letters, benefit notices, monthly bills, or welcome kits. 
 
@@ -92,7 +92,7 @@ An interactive PDF document contains various elements that constitute a form. Th
 When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form. -->
 
 
-## Document manipulation
+## (Pre-release) Document manipulation
 
 Communications document manipulation APIs help to combine, rearrange, and validate PDF documents. Typically, you create a DDX and submit it to document manipulation APIs to assemble or rearrange a document. The DDX document provides instructions on how to use the source documents to produce a set of required documents. The DDX reference documentation provides detailed information about all the supported operations. Some examples of document manipulation are: 
 
