@@ -37,16 +37,30 @@ See [add digital assets to Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-If a DAM user uploads one or more assets that already exist in the repository, [!DNL Experience Manager] detects the duplication and notifies the user. Duplicate detection is disabled by default as it can have performance impact depending on size of repository and number of assets uploaded. To enable the feature, configure [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. See [how to do OSGi configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). The duplication detection is based on the unique `dam:sha1` value stored at `jcr:content/metadata/dam:sha1`. It means that duplicate assets are detected even if the filenames are different.
+If a DAM user uploads one or more assets that already exist in the repository, [!DNL Experience Manager] detects the duplication and notifies the user. Duplicate detection is disabled by default as it can have performance impact depending on size of repository and number of assets uploaded.
 
-You can add the configuration file `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` in custom code and the file can contain the following:
+>[!NOTE]
+>
+>This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information to enable the feature for your environment.
 
-```json
-{
-  "enabled":true,
-  "detectMetadataField":"dam:sha1"
-}
-```
+To enable the feature:
+
+1. Navigate to **[!UICONTROL Tools > Assets > Assets Configurations]**.
+
+1. Click **[!UICONTROL Asset Duplication Detector]**.
+
+1. On the [!UICONTROL Asset Duplication Detector page], click **[!UICONTROL Enabled]**.
+
+   `dam:sha1` value for the Detect Metadata field ensures that duplicate assets are detected even if the filenames are different.
+
+1. Click **[!UICONTROL Save]**.
+
+   ![Asset Duplication Detector](assets/asset-duplication-detector.png)
+
+>[!NOTE]
+>
+>If you have configured Duplication Detector using `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` configuration file (OSGi configuration), you can continue to use it, however, Adobe recommends to use the new method.
+ 
 
 Once enabled, Experience Manager sends notifications of duplicate assets to the Experience Manager Inbox. It is an aggregated result for multiple duplicates. Users can choose to remove the assets based on the results.
 
@@ -271,12 +285,6 @@ See [download assets from [!DNL Experience Manager]](/help/assets/download-asset
 
 ## Publish or unpublish assets {#publish-assets}
 
-You can publish assets and folders containing assets from your author instance to [!DNL Experience Manager Assets], [!DNL Dynamic Media], and [!DNL Brand Portal]. You can publish or unpublish assets at the asset or folder level, using either **[!UICONTROL Quick Publish]** or **[!UICONTROL Manage Publication]** option available in the [!DNL Experience Manager Assets] interface. 
-
-See [manage publication from [!DNL Experience Manager]](/help/assets/manage-publication.md)
-
-<!--
-
 1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
 
 1. Select the asset or the folder to publish or unpublish and select **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar. Alternatively, to publish quickly, select the **[!UICONTROL Quick Publish]** option from the toolbar. If the folder you want to publish includes an empty folder, the empty folder is not published.
@@ -298,8 +306,6 @@ Understand the following limitations and tips related to publishing or unpublish
 * While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because those may be referenced by other published assets.
 * Empty folders are not published.
 * If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
-
--->
 
 ## Closed user group {#closed-user-group}
 
