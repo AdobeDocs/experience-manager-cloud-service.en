@@ -5,7 +5,7 @@ exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 ---
 # Use AEM Forms as a Cloud Service Communications {#frequently-asked-questions}
 
-**AEM Forms as a Cloud Service - Communications document manipulation APIs are in beta and can change significantly before actual release.**
+**AEM Forms as a Cloud Service - Communications document manipulation APIs are in beta and subject to change before actual release.**
 
 Communications capability helps you to create brand-approved, personalized, and standardized documents such as business correspondences, statements, claim processing letters, benefit notices, monthly bills, or welcome kits. 
 
@@ -15,9 +15,9 @@ The capability provides APIs to generate and manipulate the documents. You can g
 
 * capability to combine, rearrange, and validate PDF documents on-demand. 
 
-* HTTP APIs for easier integration with external systems. Separate APIs for on demand (low-latency) and batch operations (high-throughput operations) are included. It makes document generation an efficient task.
+* HTTP APIs for easier integration with external systems. Separate APIs for on demand (low-latency) and batch operations (high-throughput operations) are included. 
 
-* a secure access to data. Communications APIs connect to and access data only from customer designated data repositories, makes no local copies of data, making Communications highly secure.
+* a secure access to data. Communications APIs connect to and access data only from customer designated data repositories, making Communications highly secure.
 
 ![A sample credit card statement](assets/statement.png)
 A credit card statement can be created using Communications APIs. This sample statement uses same template but separate data for each customer depending on their usage of credit card.
@@ -51,7 +51,7 @@ Communications APIs can create separate documents for each record within an XML 
 
 The following illustration also shows Communications APIs processing an XML data file that contains multiple records. However, assume that you instruct the APIs to create a single PDF document that contains all data records. In this situation, the APIs generate one document that contains all of the records.
 
-The following illustration shows Communications APIs processing an XML data file that contains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
+The following illustration shows Communications APIs processing an XML data file that con tains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
 
  -->
 
@@ -71,7 +71,7 @@ The following illustration shows the Communication APIs processing an XML data f
 
 ![Create PDF Documents](assets/ou_OutputBatchMany_popup.png)
 
-For detailed information on using Batch APIs, see Communication APIs: Processing batch data to create multiple documents. -->
+For detailed information on using Batch APIs, see Communication APIs: Processing batch data to create multiple documents. 
 
 ### Flatten interactive PDF documents {#flatten-interactive-pdf-documents}
 
@@ -89,7 +89,7 @@ If you attempt to flatten a non-interactive PDF document, an exception occurs.
 
 An interactive PDF document contains various elements that constitute a form. These elements may include fields (to accept or display data), buttons (to trigger events), and scripts (commands to perform a specific action). Clicking a button may trigger an event that changes the state of a field. For example, choosing a gender option may change the color of a field or the appearance of the form. This is an example of a manual event causing the form state to change.
 
-When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form.
+When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form. -->
 
 
 ## Document manipulation
