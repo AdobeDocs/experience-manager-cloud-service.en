@@ -162,3 +162,24 @@ You have the following options to manage your pipelines.
    * **Learn More** - Navigates to CI/CD pipeline documentation resources. 
 
 For details on how to edit production pipelines see the document [Editing a Production Pipeline.](/help/implementing/cloud-manager/configuring-pipelines/editing-production-pipelines.md)
+
+## Skip Dispatcher Packages {#skip-dispatcher-packages}
+
+If you want dispatcher packages built as part of your pipeline, but do not want them published to build storage, you can disable publishing them, which may reduce pipeline run duration.
+
+The following configuration to disable publishing dispatcher packages must be added via your project `pom.xml` file. It is based on an environment variable, which serves as a flag you can set in the Cloud Manager build container to define when dispatcher packages should be ignored.
+
+```xml
+<profile>
+  <id>only-include-dispatcher-when-it-isnt-ignored</id>
+  <activation>
+    <property>
+      <name>env.IGNORE_DISPATCHER_PACKAGES</name>
+      <value>!true</value>
+    </property>
+  </activation>
+  <modules>
+    <module>dispatcher</module>
+  </modules>
+</profile>
+```
