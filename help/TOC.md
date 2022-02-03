@@ -524,6 +524,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Product Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
       + [Multi-Template Usage](/help/commerce-cloud/authoring/multi-template-usage.md)
       + [Enrich Product Data with Associated Content](/help/commerce-cloud/authoring/enrich-product-associated-content.md)
+      + [Product Recommendations](/help/commerce-cloud/authoring/product-recommendations.md)
     + Administering {#administering}
       + [Multi-Store Setup](/help/commerce-cloud/configuring/multi-store-setup.md)
       + [Configuring URLs for SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
