@@ -95,18 +95,18 @@ This page outlines the release notes for Cloud Manager in AEM as a Cloud Service
 >
 >Refer to [this page](/help/release-notes/release-notes-cloud/release-notes-current.md) for the current release notes for Adobe Experience Manager as a Cloud Service.
 
-### Release Date {#release-date}
+### Release Date {#release-date-cm}
 
 The release date for Cloud Manager in AEM as a Cloud Service 2022.01.0 is 20 January 2022. The next release is planned for 10 February 2022.
 
-### What's New {#what-is-new}
+### What's New {#what-is-new-cm}
 
 * Cloud Manager will [avoid rebuilding the code base when it detects that the same git commit is used](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in multiple full-stack pipeline executions.
 * Accessing the AEM environment log now requires the **Deployment Manager** product profile. Users without this profile will see a disabled button in the user interface.
 *  The UI will not allow front-end pipeline configuration for a program where Sites is not enabled as a solution. 
 * Upon generating a git password, the expiration date will be displayed.
 
-### Bug Fixes {#bug-fixes}
+### Bug Fixes {#bug-fixes-cm}
 
 * Null pointer exceptions encountered by some front-end pipeline deployments have been corrected.
 * Environment variables can now be added, updated, and deleted when an environment is running an outdated version of AEM.
