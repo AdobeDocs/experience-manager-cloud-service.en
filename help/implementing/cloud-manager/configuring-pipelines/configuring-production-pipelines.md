@@ -22,13 +22,13 @@ Before you start to deploy your code, you must configure your pipeline settings 
 
 ## Adding a New Production Pipeline {#adding-production-pipeline}
 
-Once you have set up your program and have at least one environment using [!UICONTROL Cloud Manager] UI, you are ready to add a production pipeline.
+Once you have set up your program and have at least one environment using the [!UICONTROL Cloud Manager] UI, you are ready to add a production pipeline by following these steps.
 
 >[!TIP]
 >
 >Before you configure a front-end pipeline, see the [AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) for an end-to-end guide though the easy-to-use AEM Quick Site Creation tool. This journey will help you streamline the front-end development of your AEM Site, allowing you to quickly customize your site with no AEM back-end knowledge.
 
-Follow these steps to configure your production pipeline.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
 1. Navigate to the **Pipelines** card from the **Program Overview** page and click on **Add** to select **Add Production Pipeline**. 
 
@@ -55,17 +55,17 @@ Follow these steps to configure your production pipeline.
    * **[Full Stack Code](#full-stack-code)**
    * **[Web Tier Config](#web-tier-config)**
 
-The steps to complete the creation of your production pipeline vary depending on the option for **Source Code** you selected. Following the links above to jump to the next section of this document to complete the configuration of your pipeline.
+The steps to complete the creation of your production pipeline vary depending on the option for **Source Code** you selected. Follow the links above to jump to the next section of this document to complete the configuration of your pipeline.
 
 ### Front End Code {#front-end-code}
 
 A front-end code pipeline deploys front-end code builds containing one or more client-side UI applications. See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) for more information about this type of pipeline.
 
-To finish the configuration of the front end code production pipeline follow these steps.
+To finish the configuration of the front end code production pipeline, follow these steps.
 
 1. On the **Source Code** tab, you must define the following options.
 
-   * **Repository** - This options defines from which git repo the pipeline should retrieve the code.
+   * **Repository** - This option defines from which git repo the pipeline should retrieve the code.
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
      * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
      * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
@@ -74,15 +74,21 @@ To finish the configuration of the front end code production pipeline follow the
 
 1. Click **Save** to save your pipeline.
 
+The pipeline is saved and you can now [manage your pipelines](#manage-pipelines) on the **Pipelines** card on the **Program Overview** page.
+
 ### Full Stack Code {#full-stack-code}
 
 A full-stack code pipeline simultaneously deploys back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configuration. See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) for more information about this type of pipeline.
 
-To finish the configuration of the full-stack code production pipeline follow these steps.
+>[!NOTE]
+>
+>If a full-stack code pipeline already exists for the selected environment, this selection will be disabled.
+
+To finish the configuration of the full-stack code production pipeline, follow these steps.
 
 1. On the **Source Code** tab, you must define the following options.
 
-   * **Repository** - This options defines from which git repo the pipeline should retrieve the code.
+   * **Repository** - This option defines from which git repo the pipeline should retrieve the code.
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
      * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
      * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
@@ -114,23 +120,33 @@ To finish the configuration of the full-stack code production pipeline follow th
 
 Paths configured for the Experience Audit will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests when the pipeline runs. Refer to [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 
+The pipeline is saved and you can now [manage your pipelines](#manage-pipelines) on the **Pipelines** card on the **Program Overview** page.
+
 ### Web Tier Config {#web-tier-config}
 
 A web tier config pipeline Deploys HTTPD/Dispatcher configurations. See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline) for more information about this type of pipeline.
 
-To finish the configuration of the full-stack code production pipeline follow these steps.
+To finish the configuration of the full-stack code production pipeline, follow these steps.
    
 1. On the **Source Code** tab, you must define the following options.
 
-   * **Repository** - This options defines from which git repo the pipeline should retrieve the code.
+   * **Repository** - This option defines from which git repo the pipeline should retrieve the code.
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
    * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
+     * For web tier config pipelines this is usually the path containing `conf.d`, `conf.dispatcher.d`, and `opt-in` directories.
+     * For example, if the project structure was generated from the [AEM Project Archetype,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) the path would be `/dispatcher/src`.
    * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
    * **Scheduled** - This option allows the user to enable the scheduled production deployment.
 
    ![Web tier code](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-webtier.png)
 
 1. Click **Save** to save your pipeline.
+
+>[!NOTE]
+>
+>If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
+
+The pipeline is saved and you can now [manage your pipelines](#manage-pipelines) on the **Pipelines** card on the **Program Overview** page.
 
 ## Managing Production Pipelines {#managing-pipelines}
 
