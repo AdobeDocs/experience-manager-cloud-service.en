@@ -42,19 +42,17 @@ To manage permissions of groups in AEM, navigate to **Tools** > **Security** > *
 
 "DAM", in this context, stands for Digital Asset Management. The **DAM Users** is an out of the box group in AEM that can be used for "everyday" users that manage digital assets and Content Fragments. This group provides permissions to **view**, **add**, **update**, **delete**, and **publish** Content Fragments and all other files in AEM Assets.
 
-![Adding an IMS Group to DAM User group](assets/add-ims-group-dam-users.png)
-
 If using IMS for group membership, add the appropriate IMS Groups as members of the **DAM Users** group. Members of the IMS group inherit the permissions of the DAM Users group when logging into the AEM environment.
 
 #### Customizing DAM Users Group
 
 It is best not to modify permissions of an out of the box group directly. Instead, you can also create your own group(s) modeled after the **DAM Users** group permissions and further restrict access to different **folders** within AEM Assets.
 
-This would be done by navigating to the **Permissions** console in AEM and updating the path from `/content/dam` to a more specific path, i.e `/content/dam/mycontentfragments`.
+For more granular permissions use the **Permissions** console in AEM and update the path from `/content/dam` to a more specific path, i.e `/content/dam/mycontentfragments`.
 
 ![Permissions console dam users](assets/permission-screen-dam-users.png)
 
-It may be desirable to give this group of users permissions to create and edit content fragments but not **delete**. Follow this guide to [assign the appropriate permissions to edit but not delete](/help/assets/content-fragments/content-fragments-delete.md).
+It may be desirable to give this group of users permissions to create and edit content fragments but not **delete**.  To permissions for edit but not delete [follow this guide](/help/assets/content-fragments/content-fragments-delete.md).
 
 ### Model editors
 
