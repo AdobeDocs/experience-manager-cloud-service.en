@@ -46,10 +46,10 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
   * Configure adding digital watermarks to images.
 
-* The administrators can now configure email service for large downloads. It allows the users to [enable email notifications for large downloads](/help/assets/download-assets-from-aem.md#enable-emails-for-large-downloads) from the [!DNL Experience Manager Assets] interface. The user receives an email notification containing the download link of the archived zip folder upon completion of the download process.
+* The administrators can now configure email service for large downloads. It allows the users to enable email notifications for large downloads from the [!DNL Experience Manager Assets] interface. The user receives an email notification containing the download link of the archived zip folder upon completion of the download process.
 
 
-* The [Manage Publication](/help.assets/manage-publication.md) feature is enhanced with an improved user interface. The users can publish or unpublish content to and from the selected destination, [Add Content](/help.assets/manage-publication.md#add-content) to the publishing list from across the DAM repository, [Include Folder Settings](/help.assets/manage-publication.md#include-folder-settings) to publish content of the selected folders and apply filters, and [schedule publishing](/help.assets/manage-publication.md#publish-assets-later) to a later date or time. 
+* The Manage Publication feature is enhanced with an improved user interface. The users can publish or unpublish content to and from the selected destination, Add Content to the publishing list from across the DAM repository, Include Folder Settings to publish content of the selected folders and apply filters, and schedule publishing to a later date or time. 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
