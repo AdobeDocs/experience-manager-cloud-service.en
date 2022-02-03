@@ -1,7 +1,7 @@
 ---
 title: Download assets
 description: Download assets from [!DNL Adobe Experience Manager Assets] and enable or disable the download functionality.
-contentOwner: VG
+contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
@@ -35,26 +35,12 @@ By default, [!DNL Experience Manager] triggers a notification upon completion of
 
 ![Inbox notification](assets/inbox-notification-for-large-downloads.png)
 
-<!--
-The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-![Download notification](assets/download-notification.png)
-
-*Figure: Download notification via [!DNL Experience Manager] Inbox.*
-
-Asynchronous downloads are triggered in either of the following case:
-
-* If there are more than 10 assets or more than 100 MB to be downloaded.
-* If the download takes more than 30 seconds to prepare.
--->
-
-
-<!-- Go live is on 27th Jan 2022
 ### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
 
 >[!NOTE]
 >
->This functionality is available in the Experience Manager prerelease channel.
+>This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information to enable the feature for your environment. 
 
 Asynchronous downloads are triggered in any of the following cases:
 
@@ -74,7 +60,6 @@ To enable email notifications:
 
    ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
 
--->
 
 To download assets, follow these steps:
 
@@ -105,12 +90,6 @@ To download assets, follow these steps:
    ![inbox-notifications-for-large-downloads](/help/assets/assets/inbox-notification-for-large-downloads.png)
 
 ## Download assets shared using link sharing {#link-share-download}
-
-<!--
->[!NOTE]
->
->This functionality is available in the Experience Manager prerelease channel.
--->
 
 Sharing assets using a link is a convenient way to make it available to interested people without them having to log in to [!DNL Assets]. See [Link Share functionality](/help/assets/share-assets.md#sharelink). 
 
