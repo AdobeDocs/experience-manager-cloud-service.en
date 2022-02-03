@@ -18,7 +18,7 @@ Before you start to deploy your code, you must configure your pipeline settings 
 
 >[!NOTE]
 >
->You can change the pipeline settings after the initial setup.
+>You can [edit pipeline settings](managing-pipelines.md) after the initial setup.
 
 ## Adding a New Production Pipeline {#adding-production-pipeline}
 
@@ -66,15 +66,20 @@ To finish the configuration of the front end code production pipeline, follow th
 1. On the **Source Code** tab, you must define the following options.
 
    * **Repository** - This option defines from which git repo the pipeline should retrieve the code.
+   
+   >[!TIP]
+   > 
+   >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
-     * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
-     * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
+   * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
+   * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
 
    ![Front end code](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-frontend.png)
 
 1. Click **Save** to save your pipeline.
 
-The pipeline is saved and you can now [manage your pipelines](#manage-pipelines) on the **Pipelines** card on the **Program Overview** page.
+The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
 ### Full Stack Code {#full-stack-code}
 
@@ -89,10 +94,15 @@ To finish the configuration of the full-stack code production pipeline, follow t
 1. On the **Source Code** tab, you must define the following options.
 
    * **Repository** - This option defines from which git repo the pipeline should retrieve the code.
+
+   >[!TIP]
+   > 
+   >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
-     * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
-     * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
-     * **Scheduled** - This option allows the user to enable the scheduled production deployment.
+   * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
+   * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
+   * **Scheduled** - This option allows the user to enable the scheduled production deployment.
 
    ![Full stack code](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
@@ -120,7 +130,7 @@ To finish the configuration of the full-stack code production pipeline, follow t
 
 Paths configured for the Experience Audit will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests when the pipeline runs. Refer to [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 
-The pipeline is saved and you can now [manage your pipelines](#manage-pipelines) on the **Pipelines** card on the **Program Overview** page.
+The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
 ### Web Tier Config {#web-tier-config}
 
@@ -131,6 +141,11 @@ To finish the configuration of the full-stack code production pipeline, follow t
 1. On the **Source Code** tab, you must define the following options.
 
    * **Repository** - This option defines from which git repo the pipeline should retrieve the code.
+   
+   >[!TIP]
+   > 
+   >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+   
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
    * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
      * For web tier config pipelines this is usually the path containing `conf.d`, `conf.dispatcher.d`, and `opt-in` directories.
@@ -146,22 +161,7 @@ To finish the configuration of the full-stack code production pipeline, follow t
 >
 >If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
 
-The pipeline is saved and you can now [manage your pipelines](#manage-pipelines) on the **Pipelines** card on the **Program Overview** page.
-
-## Managing Production Pipelines {#managing-pipelines}
-
-Once your pipeline is configured and saved, it will appear in the **Pipelines** card on the **Program Overview** page.
-
-![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-created.png)
-   
-You have the following options to manage your pipelines.
-
-   * **Add** - Add a new pipeline
-   * **Show All** - Takes the user to the Pipelines screen to view all pipelines in a more detailed table.
-   * **Access Repo Info** - Displays the information necessary to access the Cloud Manager git repository
-   * **Learn More** - Navigates to CI/CD pipeline documentation resources. 
-
-For details on how to edit production pipelines see the document [Editing a Production Pipeline.](/help/implementing/cloud-manager/configuring-pipelines/editing-production-pipelines.md)
+The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
 ## Skip Dispatcher Packages {#skip-dispatcher-packages}
 

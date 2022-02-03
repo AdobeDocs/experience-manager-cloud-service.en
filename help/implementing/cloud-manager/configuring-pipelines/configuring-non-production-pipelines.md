@@ -17,6 +17,10 @@ There are two types of non-production pipelines:
 * **Code Quality Pipelines** - These run code quality scans on the code in a git branch and executes the build and code quality steps.
 * **Deployment Pipelines** - In addition to executing the build and code quality steps like the code quality pipelines, these pipelines deploy the code to a non-production environment.
 
+>[!NOTE]
+>
+>You can [edit pipeline settings](managing-pipelines.md) after the initial setup.
+
 ## Adding a New Non-Production Pipeline {#adding-non-production-pipeline}
 
 Once you have set up your program and have at least one environment using the Cloud Manager UI, you are ready to add a non-production pipeline by following these steps.
@@ -64,14 +68,19 @@ To finish the configuration of the front-end code non-production pipeline, follo
 
    * **Eligible Deployment Environments** - If your pipeline is a deployment pipeline, you must select to which environments it should deploy.
    * **Repository** - This option defines from which git repo the pipeline should retrieve the code.
+
+   >[!TIP]
+   > 
+   >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
-     * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
+   * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
    
    ![Front-end pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
 
 1. Click **Save**.
 
-The pipeline is saved and you can now [manage your pipelines](#manage-pipelines) on the **Pipelines** card on the **Program Overview** page.
+The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
 ### Full Stack Code {#full-stack-code}
 
@@ -87,6 +96,11 @@ To finish the configuration of the full-stack code non-production pipeline, foll
 
    * **Eligible Deployment Environments** - If your pipeline is a deployment pipeline, you must select to which environments it should deploy.
    * **Repository** - This options defines from which git repo the pipeline should retrieve the code.
+
+   >[!TIP]
+   > 
+   >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
    * **Ignore Web Tier Configuration** - 
 
@@ -94,7 +108,7 @@ To finish the configuration of the full-stack code non-production pipeline, foll
 
 1. Click **Save**.
 
-The pipeline is saved and you can now [manage your pipelines](#manage-pipelines) on the **Pipelines** card on the **Program Overview** page.
+The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
 ### Web Tier Config {#web-tier-config}
 
@@ -110,6 +124,11 @@ To finish the configuration of the full-stack code non-production pipeline, foll
 
    * **Eligible Deployment Environments** - If your pipeline is a deployment pipeline, you must select to which environments it should deploy.
    * **Repository** - This option defines from which git repo the pipeline should retrieve the code.
+
+   >[!TIP]
+   > 
+   >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
    * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code. 
       * For web tier config pipelines this is usually the path containing `conf.d`, `conf.dispatcher.d`, and `opt-in` directories.
@@ -123,22 +142,7 @@ To finish the configuration of the full-stack code non-production pipeline, foll
 >
 >If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
 
-The pipeline is saved and you can now [manage your pipelines](#manage-pipelines) on the **Pipelines** card on the **Program Overview** page.
-
-## Managing Non-Production Pipelines {#managing-pipelines}
-
-Once your pipeline is configured and saved, it will appear in the **Pipelines** card on the **Program Overview** page.
-
-![Managing pipelines](/help/implementing/cloud-manager/assets/configure-pipeline/prod-created.png)
-   
-You have the following options to manage your pipelines.
-
-   * **Add** - Add a new pipeline
-   * **Show All** - Takes the user to the Pipelines screen to view all pipelines in a more detailed table.
-   * **Access Repo Info** - Displays the information necessary to access the Cloud Manager git repository
-   * **Learn More** - Navigates to CI/CD pipeline documentation resources. 
-
-For details on how to edit non-production pipelines see the document [Editing a Non-Production Pipeline.](/help/implementing/cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
+The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
 ## Skip Dispatcher Packages {#skip-dispatcher-packages}
 
