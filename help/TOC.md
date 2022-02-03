@@ -456,10 +456,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Use variables in a Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
     + [Use the Out of Office option](/help/forms/configure-out-of-office-settings.md)
   + Using Communications {#using-communications}
-    + [Introduction](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-    + [Communications APIs](/help/forms/aem-forms-cloud-service-communications.md)
-    + [Communications APIs Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+    + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+    + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
+    + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
+    + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
   + [Migrate to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
   + [Frequently asked questions](/help/forms/faq.md)
   + [Known issues](/help/forms/known-issues.md)
@@ -522,6 +523,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Product Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
       + [Multi-Template Usage](/help/commerce-cloud/authoring/multi-template-usage.md)
       + [Enrich Product Data with Associated Content](/help/commerce-cloud/authoring/enrich-product-associated-content.md)
+      + [Product Recommendations](/help/commerce-cloud/authoring/product-recommendations.md)
     + Administering {#administering}
       + [Multi-Store Setup](/help/commerce-cloud/configuring/multi-store-setup.md)
       + [Configuring URLs for SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
