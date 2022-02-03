@@ -98,7 +98,7 @@ Communications document manipulation APIs help to combine, rearrange, and valida
 
 ### Assemble PDF documents
 
-You can use the document manuaplation APIs to assemble two or more PDF documents into a single PDF document or PDF Portfolio. Here are some of the ways you can assemble PDF documents:
+You can use the document manuaplation APIs to assemble two or more PDF or XDP documents into a single PDF document or PDF Portfolio. Here are some of the ways you can assemble PDF documents:
 
 * Assemble a simple PDF document
 * Create a PDF Portfolio
