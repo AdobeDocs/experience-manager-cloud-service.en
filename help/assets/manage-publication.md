@@ -23,11 +23,13 @@ You can publish or unpublish assets at the asset or folder level, using either *
 
 ## Publish assets using Quick Publish {#quick-publish}
 
-From the [!DNL Experience Manager Assets] console, navigate to the parent folder and select all the assets or folders that you want to publish. Click **[!UICONTROL Quick Publish]** option from the toolbar and select destination from the dropdown list where you want to publish the assets.
+Quick publish allows you to immediately publish content to the selected destination. From the [!DNL Experience Manager Assets] console, navigate to the parent folder and select all the assets or folders that you want to publish. Click **[!UICONTROL Quick Publish]** option from the toolbar and select destination from the dropdown list where you want to publish the assets.
 
 ![Quick Publish](assets/quick-publish-to-aem.png)
 
 ## Publish assets using Manage Publication {#manage-publication}
+
+Manage publication allows you to publish or unpublish content to and from the selected destination, [add content](#add-content) to the publishing list from across the DAM repository, [include folder settings](#include-folder-settings) to publish content of the selected folders and apply filters, and [schedule publishing](#publish-assets-later) to a later date or time. 
 
 From the [!DNL Experience Manager Assets] console, navigate to the parent folder and select all the assets or folders that you want to publish. Click **[!UICONTROL Manage Publication]** option from the toolbar. If you do not have [!DNL Dynamic Media] and [!DNL Brand Portal] configured in your [!DNL Experience Manager Assets] instance, you can publish assets and folders only to [!DNL Experience Manager Assets].
 
