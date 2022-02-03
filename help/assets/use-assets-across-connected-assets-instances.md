@@ -12,6 +12,10 @@ In large enterprises the infrastructure required to create websites may be distr
 
 Connected Assets functionality supports the above use case by integrating [!DNL Experience Manager Sites] and [!DNL Experience Manager Assets]. Users can create web pages in [!DNL Sites] that use the digital assets from a separate [!DNL Assets] deployments.
 
+>[!NOTE]
+>
+>Configure Connected Assets only when you need to use the assets available on a remote DAM deployment on a separate AEM server.
+
 ## Overview of Connected Assets {#overview-of-connected-assets}
 
 When editing pages in [!UICONTROL Page Editor] as target destination, the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment that acts as a source of assets. The administrators create a one-time integration of a deployment of [!DNL Experience Manager] with [!DNL Sites] capability with another deployment of [!DNL Experience Manager] with [!DNL Assets] capability. You can also use Dynamic Media images in your site's web pages through Connected Assets and leverage the Dynamic Media functionalities, such as smart crop and image presets.
@@ -128,21 +132,21 @@ You can configure a connection between [!DNL Sites] deployment and [!DNL Dynamic
 
 You can use Dynamic Media assets either from local Sites or from the remote Assets deployment.
 
-The following diagrams illustrate the supported and unsupported scenarios to use Dynamic Media images on a local Sites page:
+The following diagrams illustrate the supported and unsupported scenarios to use Dynamic Media assets on a local Sites page:
 
 ![Connected Assets for Dynamic Media](assets/connected-assets-best-practices-supported-unsupported.png)
 
-**Scenario 1**: You configure a connection between a local AEM server (Sites) and a remote DAM deployment so that you can use assets available on the remote DAM deployment on a local Sites page. In addition, you configure the connection between local AEM server (Sites) and the remote deployment so that you can use Dynamic Media assets on the local Sites page.
+**Scenario 1**: You configure a connection between a local AEM server (Sites) and a remote DAM deployment so that you can use assets and Dynamic Media assets available on the remote DAM deployment on a local Sites page.
 
-**Result**: Local AEM server (Sites) can use assets and Dynamic Media assets from the remote DAM deployment.
+**Result**: Local AEM server (Sites) can use assets and Dynamic Media assets from the remote DAM deployment successfully.
 
 **Scenario 2**: You configure local AEM server to use Dynamic Media assets on the same server. 
 
-**Result**: You cannot:
+**Result**: Local AEM server can use assets and Dynamic Media assets on the same server successfully. However, you cannot:
 
 * Configure a connection between a local AEM server (Sites) and a remote DAM deployment.
 
-* Configure a connection between local AEM server (Sites) and the remote deployment to use Dynamic Media assets on the local Sites page.
+* Configure a connection between local AEM server (Sites) and the remote deployment to use Dynamic Media assets.
 
 To configure the connection, follow these steps:
 
@@ -252,7 +256,7 @@ There is no need to configure Connected Assets in that case. You can use assets 
 
 ### When do you need to configure the Connected Assets feature?
 
-Configure the Connected Assets feature only when you need to use the assets available on a remote DAM deployment on a Sites page of the local AEM server.
+Configure the Connected Assets feature only when you need to use the assets available on a remote DAM deployment on a local AEM server.
 
 ### How many Sites deployments can you connect to a remote DAM deployment after configuring Connected Assets?
 
@@ -260,9 +264,9 @@ You can connect a maximum of four Sites deplyments to a remote DAM deployment af
 
 ### How many remote DAM deployments can you connect to a Sites deployment after configuring Connected Assets?
 
-You can connect one remote DAM deplyment to a Sites deployment after configuring Connected Assets. For more information, see [Connected Assets architecture](#connected-assets-architecture).
+You can connect one remote DAM deployment to a Sites deployment after configuring Connected Assets. For more information, see [Connected Assets architecture](#connected-assets-architecture).
 
-### Can you use Dynamic Media assets from your local AEM server and a remote DAM deployment simulataneously?
+### Can you use Dynamic Media assets from your local AEM server and a remote DAM deployment simultaneously?
 
 No, you can configure and use Dynamic Media assets either from your local AEM server or from a remote DAM deployment. For more information, see [Configure a connection between Sites and Dynamic Media deployments](#sites-dynamic-media-connected-assets).
 
