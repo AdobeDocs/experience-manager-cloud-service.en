@@ -50,6 +50,8 @@ The We.Cafe coffee shop is comprised of three shops in three locations in the US
 >[!NOTE]
 >
 >Only the entrance display can be tested in the current version of the demo. Other displays will follow in a future version.
+>
+>The kiosk is not included in the current version of the demo. It will be included in a future version.
 
 The New-York location is assumed to be in a smaller shop that does not have a lot of space, and as such:
 
@@ -92,7 +94,7 @@ Once the wizard completes, you will find the content deployed under Sites and yo
 
 Now that you have We.Cafe demo content, you have a choice about how you wish to test AEM Screens:
 
-* If you only wish to explore the content within the AEM Sites console, simply start exploring! no more action is required.
+* If you only wish to explore the content within the AEM Sites console, simply start exploring and discover more in the [Additional Resources](#additional-resources) section! no more action is required.
 * If you want to experience the full dynamic features of AEM Screens, continue to the next section, [Dynamically Change Screens Content.](#dynamically-change)
 
 ## Dynamically Change Screens Content {#dynamically-change}
@@ -133,7 +135,7 @@ First we will need to create a Google API key to facilitate the exchange of data
 
 #### Enable Google Sheets API {#enable-sheets}
 
-To allow the exchange of Google Sheets data using this API key we need to enable the Google Sheets API.
+To allow the exchange of Google Sheets data using your API key, you need to enable the Google Sheets API.
 
 1. Return to the Google Cloud Console at `https://console.cloud.google.com` for your project and then use the hamburger menu to select **APIs &amp; Services -&gt; Library**.
 
@@ -149,7 +151,7 @@ To allow the exchange of Google Sheets data using this API key we need to enable
 
 #### Create Google Sheets Spreadsheet {#create-spreadsheet}
 
-Now we can create a Google Sheets spreadsheet to store our weather data.
+Now you can create a Google Sheets spreadsheet to store your weather data.
 
 1. Go to `https://docs.google.com` and create a new Google Sheets spreadsheet.
 1. Define the temperature by entering `32` in cell A2.
@@ -165,7 +167,7 @@ Now we can create a Google Sheets spreadsheet to store our weather data.
 
    * The sheet ID is the random string of characters in the sheet link you copied after `d/` and before `/edit`.
    * For example:
-     * If my URL is `https://docs.google.com/spreadsheets/d/1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30/edit#gid=0` 
+     * If your URL is `https://docs.google.com/spreadsheets/d/1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30/edit#gid=0` 
      * The sheet ID is `1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30`.
 
 1. Copy the sheet ID for future use.
@@ -182,7 +184,7 @@ Now that you have created your data source as a Google Sheets spreadsheet and en
    https://sheets.googleapis.com/v4/spreadsheets/<yourSheetID>/values/Sheet1?key=<yourAPIKey>
    ```
 
-1. If you receive JSON data similar to the following, you set up your "weather service" properly.
+1. If you receive JSON data similar to the following, you set it up properly.
 
    ```json
    {
@@ -223,7 +225,7 @@ Now you can change the temperature value in your Google Sheet spreadsheet and Co
 
 ### Test Dynamic Data {#test-dynamic}
 
-Now that AEM Screens and ContextHub is connected to your "weather service," you can test it to see how screens can update content dynamically.
+Now that AEM Screens and ContextHub is connected to your weather service, you can test it to see how screens can update content dynamically.
 
 1. Access your sandbox author instance.
 1. Navigate to the sites console via **Global Navigation -&gt; Sites** and select the following page **Screens -&gt; &lt;project-name&gt; -&gt; Channels -&gt; Entrance Morning (Portrait)**.
@@ -240,7 +242,7 @@ Now that AEM Screens and ContextHub is connected to your "weather service," you 
 
    ![Screens content in editor](assets/screens-content-editor-2.png)
 
-Based on the temperature changing from a freezing 32 degrees Fahrenheit to a comfortable 70 degrees, the featured image changed from a warming cup of tea to a cool iced coffee.
+Based on the temperature changing from a freezing 32°F (0°C) to a comfortable 70°F (21°C), the featured image changed from a warming cup of tea to a cool iced coffee.
 
 >[!IMPORTANT]
 >
@@ -381,9 +383,9 @@ You are now ready to explore the capabilities of AEM Screens using your own demo
 
 ## Additional Resources {#additional-resources}
 
-* [ContextHub documentation](/help/sites-cloud/authoring/personalization/contexthub.md)
-* [Using API Keys - Google Documentation](https://developers.google.com/maps/documentation/javascript/get-api-key)
-* [Displays](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md)
-* [Download Player](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
-* [Register Player](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
-* [Assigning Player to a Display](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
+* [ContextHub documentation](/help/sites-cloud/authoring/personalization/contexthub.md) - Learn how ContextHub can be used to personalize content based on user context beyond weather conditions.
+* [Using API Keys - Google Documentation](https://developers.google.com/maps/documentation/javascript/get-api-key) - A handy reference for details about using Google's API keys.
+* [Displays](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md) - Learn more about what a display is in AEM Screens and what it can do.
+* [Download Player](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md) - Learn how to access the Screens Player and how to install.
+* [Register Player](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) - Learn how to set up and register a player with your AEM Screens project.
+* [Assigning Player to a Display](/help/screens-cloud/managing-players-registration/assigning-player-display.md) - Configure a player to display your content.
