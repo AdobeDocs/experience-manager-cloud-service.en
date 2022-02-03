@@ -19,7 +19,7 @@ Learn how marketers can enrich product data with associated content from Adobe E
 
 >[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
-Digital assets can be associated with one or more product SKUs. Once associated, the digital asset can be discovered with key word searches based on the SKU. The asset will also automatically appear as associated content when editing a page that includes the relevant product, making it even easier to create your next digital experience
+Digital assets can be associated with one or more product SKUs. Once associated, the digital asset can be discovered with key word searches based on the SKU. The asset will also automatically appear as associated content when editing a page that includes the relevant product, making it even easier to create your next digital experience.
 
 ## Experience Fragments
 
