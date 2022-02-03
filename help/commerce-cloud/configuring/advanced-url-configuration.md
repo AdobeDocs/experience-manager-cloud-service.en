@@ -165,6 +165,8 @@ Specific product pages are selected either by the product's sku or category. The
 | `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html` | yes    | exact match only |
 | `{{page}}.html/{{sku}}/{{url_path}}.html`             | yes    | yes              |
 
+{style="table-layout:auto"}
+
 >[!NOTE]
 >
 > Selecting specific product pages by category requires [CIF Core Components 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) or newer.
