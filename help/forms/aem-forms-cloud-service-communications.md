@@ -4,9 +4,7 @@ description: Automatically merge data with XDP and PDF templates or generate out
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 ---
 
-# Use AEM Forms as a Cloud Service Communications APIs - Synchronous  Processing {#frequently-asked-questions}
-
-**The Communications feature is in beta.**
+# Use synchronous processing {#sync-processing-introduction}
 
 Communications allows you to create, assemble, and deliver brand-oriented and personalized communications such as business correspondences, documents, statements, claim processing letters, benefit notices, claim processing letters, monthly bills, and welcome kits. You can use Communications APIs to combine a template (XFA or PDF) with customer data to generate documents in PDF, PS, PCL, DPL, IPL, and ZPL formats.
 
