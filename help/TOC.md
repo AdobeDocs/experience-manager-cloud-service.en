@@ -597,12 +597,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md)
     + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Introduction](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-      + Production Pipelines {#production-pipelines}
-        + [Configuring a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-        + [Editing a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/editing-production-pipelines.md)
-      + Non-Production Pipelines {#non-production-pipelines}
-        + [Configuring a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-        + [Editing a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
+      + [Configuring a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+      + [Configuring a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+      + [Managing Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
     + [Deploying your Code](/help/implementing/cloud-manager/deploy-code.md)
     + Understanding your Test Results {#test-results}
       + [Overview](/help/implementing/cloud-manager/overview-test-results.md)
