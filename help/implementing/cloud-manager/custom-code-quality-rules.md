@@ -708,11 +708,11 @@ In order for asset search to work correctly in AEM Assets, customizations of the
 
 ### Customer Packages Should Not Create or Modify Nodes Under /libs {#oakpal-customer-package}
 
-**Key**: BannedPaths
+**Key**: BannedPath
 
 **Type**: Bug
 
-**Severity**: Blocker
+**Severity**: Critical
 
 **Since**: Version 2019.6.0
 
