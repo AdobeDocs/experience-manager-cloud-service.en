@@ -24,7 +24,7 @@ The following release (2022.2.0) is on February 24, 2022.
 
 ## Release Video {#release-video}
 
-Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/339278) video for a summary of the features added in the 2022.1.0 release.
+Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/340120) video for a summary of the features added in the 2022.1.0 release.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -46,7 +46,14 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
   * Configure adding digital watermarks to images.
 
-* The administrators can now configure email service for large downloads. It allows the users to enable email notifications for large downloads from the Experience Manager interface. The user receives an email notification containing the download link of the archived zip folder upon completion of the download process.
+* The administrators can now configure email service for large downloads. It allows the users to [enable email notifications for large downloads](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) from the [!DNL Experience Manager Assets] interface. The user receives an email notification containing the download link of the archived zip folder upon completion of the download process.
+
+
+* The [Manage Publication](/help/assets/manage-publication.md) feature is enhanced with an improved user interface. The users can publish or unpublish content to and from the selected destination, [Add Content](/help/assets/manage-publication.md#add-content) to the publishing list from across the DAM repository, [Include Folder Settings](/help/assets/manage-publication.md#include-folder-settings) to publish content of the selected folders and apply filters, and [schedule publishing](/help/assets/manage-publication.md#publish-assets-later) to a later date or time.
+
+### Bug Fixes {#bug-fixes}
+
+* Unprocessed assets with no original rendition are sent to Asset Compute for processing while migrating assets from AEM on-premise to cloud services.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -63,7 +70,7 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
 
-* **[Assembler API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: Assembler APIs to combine, rearrange, augment and obtain information about PDF documents.
+* **[Assembler API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: Assembler APIs to combine, rearrange, augment and obtain information about PDF documents.
 
 
 ## CIF Add-on {#cloud-services-cif}
@@ -82,11 +89,29 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
 ## Cloud Manager {#cloud-manager}
 
-### Release Date {#release-date-cm-nov}
+This page outlines the release notes for Cloud Manager in AEM as a Cloud Service 2022.01.0.
 
-### What's New {#what-is-new-cm-nov}
+>[!NOTE]
+>
+>Refer to [this page](/help/release-notes/release-notes-cloud/release-notes-current.md) for the current release notes for Adobe Experience Manager as a Cloud Service.
 
-### Bug Fixes {#bug-fixes-nov}
+### Release Date {#release-date-cm}
+
+The release date for Cloud Manager in AEM as a Cloud Service 2022.01.0 is 20 January 2022. The next release is planned for 10 February 2022.
+
+### What's New {#what-is-new-cm}
+
+* Cloud Manager will [avoid rebuilding the code base when it detects that the same git commit is used](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in multiple full-stack pipeline executions.
+* Accessing the AEM environment log now requires the **Deployment Manager** product profile. Users without this profile will see a disabled button in the user interface.
+*  The UI will not allow front-end pipeline configuration for a program where Sites is not enabled as a solution. 
+* Upon generating a git password, the expiration date will be displayed.
+
+### Bug Fixes {#bug-fixes-cm}
+
+* Null pointer exceptions encountered by some front-end pipeline deployments have been corrected.
+* Environment variables can now be added, updated, and deleted when an environment is running an outdated version of AEM.
+* The build image step will no longer be marked as ERROR for pipelines that used the scheduled step in certain rare cases.
+* For programs with only one repository, the pipeline execution screen will now display the repository name.
 
 ## Best Practices Analyzer {#bpa-release}
 

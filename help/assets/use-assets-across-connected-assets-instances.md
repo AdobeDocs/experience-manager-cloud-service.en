@@ -208,10 +208,6 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 
 ### Manage updates to assets in remote DAM {#handling-updates-to-remote-assets}
 
->[!NOTE]
->
->This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information to enable the feature for your environment.
-
 After [configuring a connection](#configure-a-connection-between-sites-and-assets-deployments) between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can then perform the update, delete, rename, and move operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment. In addition, if an asset on remote DAM is used on a local Experience Manager Sites page, the updates to the asset on remote DAM are displayed on the Sites page.
 
 While moving an asset from one location to another, ensure that you [adjust references](manage-digital-assets.md) so that the asset displays on the Sites page. If you move an asset to a location that is not accessible from the local Sites deployment, the asset fails to display on the Sites deployment.
