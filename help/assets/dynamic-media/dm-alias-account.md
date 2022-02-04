@@ -7,11 +7,12 @@ content-type: reference
 feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
-hide: yes
-hidefromtoc: yes
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
 ---
 # About configuring a Dynamic Media company alias account {#about-dm-alias-acct}
+
+<!-- hide: yes
+hidefromtoc: yes -->
 
 >[!NOTE]
 >
