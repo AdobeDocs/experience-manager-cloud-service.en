@@ -89,12 +89,6 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
 ## Cloud Manager {#cloud-manager}
 
-This page outlines the release notes for Cloud Manager in AEM as a Cloud Service 2022.01.0.
-
->[!NOTE]
->
->Refer to [this page](/help/release-notes/release-notes-cloud/release-notes-current.md) for the current release notes for Adobe Experience Manager as a Cloud Service.
-
 ### Release Date {#release-date-cm}
 
 The release date for Cloud Manager in AEM as a Cloud Service 2022.01.0 is 20 January 2022. The next release is planned for 10 February 2022.
@@ -113,6 +107,20 @@ The release date for Cloud Manager in AEM as a Cloud Service 2022.01.0 is 20 Jan
 * The build image step will no longer be marked as ERROR for pipelines that used the scheduled step in certain rare cases.
 * For programs with only one repository, the pipeline execution screen will now display the repository name.
 
+## Content Transfer Tool {#ctt-release}
+
+### Release Date {#release-date-ctt}
+
+The Release Date for Content Transfer Tool v1.8.6 is February 03, 2022.
+
+### What's New {#what-is-new-ctt}
+
+* Content Validation - Users have the ability to reliably determine if all of the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. To use this feature, you will need to enable it in the `System Console` of the source AEM environment. Refer to [Validating Content Transfers - Getting Started](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) for more details.
+
+### Bug Fixes {#bug-fixes-ctt}
+
+* Some users were not mapped because User Mapping was case sensitive. This has been fixed. User Mapping is no longer case sensitive.
+
 ## Best Practices Analyzer {#bpa-release}
 
 ### Release Date {#release-date-bpa}
@@ -129,17 +137,3 @@ The Release Date for Best Practices Analyzer v2.1.24 is February 01, 2022.
 
 * BPA sizing logic was made faster and more efficient.
 * In some scenarios, BPA did not increment analyzed count when it was run. This has been fixed.
-
-## Content Transfer Tool {#ctt-release}
-
-### Release Date {#release-date-ctt}
-
-The Release Date for Content Transfer Tool v1.8.6 is February 03, 2022.
-
-### What's New {#what-is-new-ctt}
-
-* Content Validation - Users have the ability to reliably determine if all of the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. To use this feature, you will need to enable it in the `System Console` of the source AEM environment. Refer to [Validating Content Transfers - Getting Started](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) for more details.
-
-### Bug Fixes {#bug-fixes-ctt}
-
-* Some users were not mapped because User Mapping was case sensitive. This has been fixed. User Mapping is no longer case sensitive.
