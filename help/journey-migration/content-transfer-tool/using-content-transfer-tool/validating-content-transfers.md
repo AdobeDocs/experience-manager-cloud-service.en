@@ -123,6 +123,7 @@ The above failure example was achieved by running an ingestion, and then re-runn
 
 In addition to being included in the ingestion log, the validation report can also be accessed from the Content Transfer Tool user interface. To do so, select a migration set, and click the **Validate** button from the action bar:
 
+
 ![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
 
 The Validation Logs dialog will open:
@@ -135,7 +136,7 @@ Use the **Validation Publish/Author Report** button to view the validation repor
 
 >[!NOTE]
 >
->The validation reports are persisted, so they do not expire after ingestion completes, like the ingestion logs do. 
+>The **Validation Publish/Author Report** link will appear once the ingestion is complete. Additionally, the validation reports are persisted, so they do not expire after ingestion completes, like the ingestion logs do. 
 
 ## Troubleshooting {#troubleshooting}
 
