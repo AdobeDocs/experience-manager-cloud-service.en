@@ -44,7 +44,7 @@ The following table summarizes the ratings and failure thresholds for each of th
 |Name|Definition|Category|Failure Threshold|
 |--- |--- |--- |--- |
 |Security Rating|A = No vulnerabilities <br/>B = At least 1 minor vulnerability<br/> C = At least 1 major vulnerability <br/>D = At least 1 critical vulnerability <br/>E = At least 1 blocker vulnerability|Critical|&lt; B|
-|Reliability Rating|A = No bugs <br/>B = At least 1 minor bug <br/>C = At least 1 major bug <br/>D = At least 1 critical bug<br>E = At least 1 blocker bug|Critical|E|
+|Reliability Rating|A = No bugs <br/>B = At least 1 minor bug <br/>C = At least 1 major bug <br/>D = At least 1 critical bug<br>E = At least 1 blocker bug|Critical|&lt; D|
 |Maintainability Rating|Defined by the outstanding remediation cost for code smells as a percentage of the time that has already gone into the application<br/><ul><li>A = &lt;=5%</li><li>B = 6-10%</li><li>C = 11-20%</li><li>D = 21-50%</li><li>E = >50%</li></ul>|Important|&lt; A|
 |Coverage|Defined by a mix of unit test line coverage and condition coverage using the formula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <ul><li>`CT` = Conditions that have been evaluated as `true` at least once while running unit tests</li><li>`CF` = Conditions that have been evaluated as `false` at least once while running unit tests</li><li>`LC` = Covered lines = lines_to_cover - uncovered_lines</li><li>`B` = total number of conditions</li><li>`EL` = total number of executable lines (lines_to_cover)</li></ul>|Important|&lt; 50%|
 |Skipped Unit Tests|Number of skipped unit tests|Info|> 1|
