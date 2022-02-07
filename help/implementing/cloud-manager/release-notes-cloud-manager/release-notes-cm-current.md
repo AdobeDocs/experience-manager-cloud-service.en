@@ -18,4 +18,6 @@ The release date for Cloud Manager in AEM as a Cloud Service 2022.02.0 is 10 Feb
 
 ## What's New {#what-is-new}
 
+*  A refreshed Cloud Manager landing page experience delivers improved navigation, easy switching between grid/tile views, and pop-overs for quick program summary.
+
 ## Bug Fixes {#bug-fixes}
