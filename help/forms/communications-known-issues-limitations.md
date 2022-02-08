@@ -161,6 +161,12 @@ The following table specifies XCI options.
 
 * For a batch configuration, only one instance of combination of values of OutputType(PDF, PRINT) and RenderType(PostScript, PCL, IPL, ZPL, etc.) is allowed.
 
+* For asynchronous APIs (Batch processing), the defaut record level is set to 2. You can use a custom XCI to change record level to 1.
+
+* When the default XCI is configured, it includes path till original rendition. For example `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
+
+
+
 ## Best Practices
 
 * Adobe recommends to host data files blob container store in the cloud region used by AEM Cloud Service.
