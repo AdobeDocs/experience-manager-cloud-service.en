@@ -46,10 +46,10 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
   * Configure adding digital watermarks to images.
 
-* The administrators can now configure email service for large downloads. It allows the users to enable email notifications for large downloads from the [!DNL Experience Manager Assets] interface. The user receives an email notification containing the download link of the archived zip folder upon completion of the download process.
+* The administrators can now configure email service for large downloads. It allows the users to [enable email notifications for large downloads](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) from the [!DNL Experience Manager Assets] interface. The user receives an email notification containing the download link of the archived zip folder upon completion of the download process.
 
 
-* The Manage Publication feature is enhanced with an improved user interface. The users can publish or unpublish content to and from the selected destination, Add Content to the publishing list from across the DAM repository, Include Folder Settings to publish content of the selected folders and apply filters, and schedule publishing to a later date or time.
+* The [Manage Publication](/help/assets/manage-publication.md) feature is enhanced with an improved user interface. The users can publish or unpublish content to and from the selected destination, [Add Content](/help/assets/manage-publication.md#add-content) to the publishing list from across the DAM repository, [Include Folder Settings](/help/assets/manage-publication.md#include-folder-settings) to publish content of the selected folders and apply filters, and [schedule publishing](/help/assets/manage-publication.md#publish-assets-later) to a later date or time.
 
 ### Bug Fixes {#bug-fixes}
 
@@ -89,12 +89,6 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
 
 ## Cloud Manager {#cloud-manager}
 
-This page outlines the release notes for Cloud Manager in AEM as a Cloud Service 2022.01.0.
-
->[!NOTE]
->
->Refer to [this page](/help/release-notes/release-notes-cloud/release-notes-current.md) for the current release notes for Adobe Experience Manager as a Cloud Service.
-
 ### Release Date {#release-date-cm}
 
 The release date for Cloud Manager in AEM as a Cloud Service 2022.01.0 is 20 January 2022. The next release is planned for 10 February 2022.
@@ -112,6 +106,20 @@ The release date for Cloud Manager in AEM as a Cloud Service 2022.01.0 is 20 Jan
 * Environment variables can now be added, updated, and deleted when an environment is running an outdated version of AEM.
 * The build image step will no longer be marked as ERROR for pipelines that used the scheduled step in certain rare cases.
 * For programs with only one repository, the pipeline execution screen will now display the repository name.
+
+## Content Transfer Tool {#ctt-release}
+
+### Release Date {#release-date-ctt}
+
+The Release Date for Content Transfer Tool v1.8.6 is February 03, 2022.
+
+### What's New {#what-is-new-ctt}
+
+* Content Validation - Users have the ability to reliably determine if all of the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. To use this feature, you will need to enable it in the `System Console` of the source AEM environment. Refer to [Validating Content Transfers - Getting Started](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) for more details.
+
+### Bug Fixes {#bug-fixes-ctt}
+
+* Some users were not mapped because User Mapping was case sensitive. This has been fixed. User Mapping is no longer case sensitive.
 
 ## Best Practices Analyzer {#bpa-release}
 
