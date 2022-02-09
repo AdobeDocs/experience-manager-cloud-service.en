@@ -30,4 +30,4 @@ Have a look at the [February 2022 Release Overview](https://video.tv.adobe.com/v
 
 ### What is New {###what-is-new-foundation}
 
-Developers now have the ability to refresh server to server authentication credetials, in order to ensure continuation of service after a set of existing credentials expire. For more details, see the section [here](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials).
+* Developers now have the ability to refresh server to server authentication credetials, in order to ensure continuation of service after a set of existing credentials expire. For more details, see the section [here](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials).
