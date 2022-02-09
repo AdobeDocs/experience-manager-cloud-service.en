@@ -15,7 +15,7 @@ The server-to-server flow is described below, along with a simplified flow for d
 
 ## The Server-to-server Flow {#the-server-to-server-flow}
 
-A user with an IMS org administrator role, and who is also a member of the AEM Users or AEM Administrators Product Profile on AEM Author, can generate an AEM as a Cloud Service credential. That credential can subsequently be retrieved by a user with the AEM as a Cloud Service Environment administrator role and should be installed on the server and needs be treated carefully as a secret key. This JSON format file contains all the data required to integrate with an AEM as a Cloud Service API. The data is used to create a signed JWT token, which is exchanged with IMS for an IMS access token. This access token can then be used as a Bearer authentication token to make requests to AEM as a Cloud Service.
+A user with an IMS org administrator role, and who is also a member of the AEM Users or AEM Administrators Product Profile on AEM Author, can generate an AEM as a Cloud Service credential. That credential can subsequently be retrieved by a user with the AEM as a Cloud Service Environment administrator role and should be installed on the server and needs be treated carefully as a secret key. This JSON format file contains all the data required to integrate with an AEM as a Cloud Service API. The data is used to create a signed JWT token, which is exchanged with IMS for an IMS access token. This access token can then be used as a Bearer authentication token to make requests to AEM as a Cloud Service. The credentials expire after one year by default, but they can be refreshed when needed, generating as described [here](#refresh-credentials).
 
 The server-to-server flow involves the following steps:
 
@@ -27,7 +27,7 @@ The server-to-server flow involves the following steps:
 
 ### Fetch the AEM as a Cloud Service Credentials {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Users with access to the AEM as a Cloud Service developer console will see the integrations tab in the Developer Console for a given environment, as well as two buttons. A user with the AEM as a Cloud Service Environment administrator role can click the **Generate Service Credentials** button to display the service credentials json, which will contain all the information required for the non AEM server, including client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
+Users with access to the AEM as a Cloud Service developer console will see the integrations tab in the Developer Console for a given environment, as well as two buttons. A user with the AEM as a Cloud Service Environment administrator role can click the **Generate Service Credentials** button to generate and display the service credentials json, which will contain all the information required for the non AEM server, including client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
 
 ![JWT Generation](assets/JWTtoken3.png)
 
@@ -53,7 +53,7 @@ The output will be similar to the following:
 }
 ```
 
-After being generated, the crendetials can be retrieved at a later date by pressing the **Get Service Credentials** button in the same location.
+After being generated, the credentials can be retrieved at a later date by pressing the **Get Service Credentials** button in the same location.
 
 >[!IMPORTANT]
 >
@@ -136,7 +136,7 @@ Make the appropriate server-to-server API calls from the non-AEM application to 
 
 ## Refresh Credentials {#refresh-credentials}
 
-By default, the AEM as a Cloud Service credentials expire after a year. To ensure service continuity, developers have the option of refreshing the redentials, extending their availability for an extra year.
+By default, the AEM as a Cloud Service credentials expire after a year. To ensure service continuity, developers have the option of refreshing the credentials, extending their availability for an extra year.
 
 To achieve this, you can use the **Refresh Service Credentials** button from the **Integrations** tab in the Developer Console, as shown below.
 
@@ -146,7 +146,7 @@ After pressing the button, a new set of credentials will be generated. You can u
 
 >[!NOTE]
 >
-> After clicking the **Refresh Service Credentials** button, the old credentials remain registered until they, but only the most recent set is available to be seen from the Developer Console at any one time.
+> After clicking the **Refresh Service Credentials** button, the old credentials remain registered until they expire, but only the most recent set is available to be seen from the Developer Console at any one time.
 
 ## Service Credentials Revocation {#service-credentials-revocation}
 
