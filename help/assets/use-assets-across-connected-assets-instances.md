@@ -136,13 +136,9 @@ The following diagrams illustrate the supported and unsupported scenarios to use
 
 ![Connected Assets for Dynamic Media](assets/connected-assets-best-practices-supported-unsupported.png)
 
-**Scenario 1**: You configure a connection between a local AEM server (Sites) and a remote DAM deployment so that you can use assets and Dynamic Media assets available on the remote DAM deployment on a local Sites page.
+**Scenario 1**: You configure a connection between a local AEM server (Sites) and a remote DAM deployment so that you can use assets and Dynamic Media assets available on the remote DAM deployment on a local Sites page. Ensure that you do not configure AEM server to use local Dynamic Media assets
 
-**Result**: Local AEM server (Sites) can use assets and Dynamic Media assets from the remote DAM deployment successfully.
-
-**Scenario 2**: You configure local AEM server to use Dynamic Media assets. 
-
-**Result**: Local AEM server can use assets and Dynamic Media assets on the same server successfully. However, you cannot:
+**Scenario 2**: You configure local AEM server to use local Dynamic Media assets. As a result, local AEM server can use assets and Dynamic Media assets available on the same server successfully. However, you cannot:
 
 * Configure a connection between a local AEM server (Sites) and a remote DAM deployment.
 
