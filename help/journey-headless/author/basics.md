@@ -237,6 +237,12 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
   
   * [Rail Selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
+  * Publishing
+
+    * [Quick Publish](/help/assets/manage-publication.md#quick-publish)
+
+    * [Manage Publication](/help/assets/manage-publication.md#manage-publication) 
+
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
  
   * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
