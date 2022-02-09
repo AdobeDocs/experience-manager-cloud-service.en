@@ -18,6 +18,16 @@ The release date for Cloud Manager in AEM as a Cloud Service 2022.02.0 is 10 Feb
 
 ## What's New {#what-is-new}
 
-*  A refreshed Cloud Manager landing page experience delivers improved navigation, easy switching between grid/tile views, and pop-overs for quick program summary.
+* New accelerated [Web Tier Config pipelines](introduction-ci-cd-pipelines.md#web-tier-config-pipelines) have been introduced to exclusively deploy HTTPD/dispatcher configuration
+  * You must be on AEM version `2021.12.6151.20211217T120950Z` to use this feature.
+  * This feature will be rolled out in a phased approach over the two weeks following the 2022.02.0 release.
+* The Cloud Manager landing page experience has been refreshed to deliver improved navigation, easy switching between grid/tile views, and pop-overs for quick program summary.
+* A new failing threshold (`< D`) has been added to the [reliability rating metric.](code-quality-testing.md#understanding-code-quality-rules)
+  * Customers with severe quality issues that impact system stability, primarily related to invalid indexes and workflow processes, will not be able to deploy until those issues are resolved.
+* The severity of the `BannedPath` [quality rule](code-quality-testing.md#understanding-code-quality-rules) has been changed from blocker to critical.
+* The pipeline wizard will inform the user when an AEM environment update may be needed before configuring a [Web Tier Config pipelines](introduction-ci-cd-pipelines.md#web-tier-config-pipelines) associated with it.
 
 ## Bug Fixes {#bug-fixes}
+
+* Old git repository passwords are now always invalidated when a new password is generated.
+* Updating environment variables through the API no longer interferes with a pipeline execution in rare situations.

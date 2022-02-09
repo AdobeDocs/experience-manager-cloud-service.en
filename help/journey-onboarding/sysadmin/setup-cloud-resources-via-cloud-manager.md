@@ -1,76 +1,74 @@
 ---
 title: Setup Cloud Resources via Cloud Manager
-description: Follow this page to learn how to setup Cloud Resources via Cloud Manager
+description: Lean how to use Cloud Manager to set up and manage your own cloud resources.
 role: Admin, User, Developer
 exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
 ---
 # Setup Cloud Resources via Cloud Manager {#setup-cloud-resources}
 
-The System Administrator assigned to the Business Owner role should access and login to Cloud Manager. Following this, a team member assigned to the Business Owner product profile must login to Cloud Manager and create your cloud program and environments so that your team of experts can get started. 
+Lean how to use Cloud Manager to set up and manage your own cloud resources.
 
 ## Objective {#objective}
 
-This document helps you understand how your cloud resources are created and who can do it. 
+This document helps you understand how your cloud resources are created and who can create them. After reading this section you should understand:
 
-After reading this section you should understand:
-
-* A System Administrator assigned to the Business Owner role must be the first to access and login to Cloud Manager.
+* A System Administrator assigned to the **Business Owner** role must be the first in your organization to login and access Cloud Manager.
 * How your cloud program and environments are created.
 
 ## Introduction {#introduction}
 
-Adding your cloud resources is done via Cloud Manager by your team member assigned to Cloud Manager Business Owner product Profile. This individual is typically one who understand the business needs and who completes the initial Cloud Manager setup.
+Adding your cloud resources is done via Cloud Manager by your team member assigned to the **Business Owner** product profile. This individual is typically one who understand the business needs and who completes the initial Cloud Manager setup.
 
 Follow the sections below to learn how to create your [cloud service programs](#create-cloud-service-program) and [environments.](#create-cloud-environments)
 
-### Pre-requisites {#prerequisites}
+### Prerequisites {#prerequisites}
 
-* The System Administrator assigned to the Business Owner role should access and login to Cloud Manager.
+* The System Administrator assigned to the **Business Owner** role should access and login to Cloud Manager.
 
-* Understand how to [navigate and login to Cloud Manager.](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+* Understand how to [navigate and login to Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 
-* Be familiar with [Cloud Manager product profiles.](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
+* Be familiar with [Cloud Manager product profiles](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
 
-* Understand the concepts of Cloud Manager [programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) and [environments.](/help/implementing/cloud-manager/manage-environments.md)
+* Understand the concepts of Cloud Manager [programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) and [environments](/help/implementing/cloud-manager/manage-environments.md)
 
 ## Navigate to Cloud Manager {#navigate-cloud-manager}
 
-The Business Owner user will receive a welcome email with a link to get started, or if they cannot find it, access [Cloud Manager](https://my.cloudmanager.adobe.com/) directly by logging in using your Adobe ID.
-
-Follow the steps below to navigate to Cloud Manager:
+The user with the **Business Owner** role will receive a welcome email with a link to get started. Follow the steps below to navigate to Cloud Manager using this welcome email.
 
 1. From your welcome email click on **Get started**, as shown in the figure below.
-    ![](/help/journey-onboarding/assets/get-started-email.png)
+    ![Email example](/help/journey-onboarding/assets/get-started-email.png)
 
 1. You will navigate to Cloud Manager's **Programs & Products** page.
 
-   >[!IMPORTANT]
+   >[!TIP]
    >
-   >Alternatively, you can also navigate directly to Cloud Manager's login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Please bookmark this page for future reference and to help you navigate directly to Cloud Manager's landing page.
+   >You can also navigate directly to Cloud Manager's login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Please bookmark this page for future reference.
 
 1. You will be directed to Cloud Manager's landing page. See [Viewing Cloud Manager's Programs](#viewing-programs) section for more details. 
 
-Additionally, you can navigate to Cloud Manager's **Programs and Products** page from Adobe Experience Cloud home page. Follow the steps below:
+You can also navigate to Cloud Manager's **Programs and Products** page from Adobe Experience Cloud home page by following these steps
 
 1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
 
 1. From the Adobe Experience Cloud home page, Select **Experience Manager**.
 
-   ![](/help/journey-onboarding/assets/setup-resources2.png)
+   ![Experience Cloud homepage](/help/journey-onboarding/assets/setup-resources2.png)
 
-1. This will take you to the AEM home page. From here, launch **Cloud Manager** .
+1. This will take you to the AEM home page. From here, click **Launch** on the **Cloud Manager** tile.
 
-   ![](/help/journey-onboarding/assets/setup-resources3.png)
+   ![AEM home page](/help/journey-onboarding/assets/setup-resources3.png)
 
 1. Upon successful login, you will be directed to the landing page of Cloud Manager. See [Viewing Cloud Manager's Programs](#viewing-programs) section for more details.
 
-   >[!NOTE]
-   >
-   >Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
+How you access your programs and products via Cloud Manager is up to you and has no effect on how you use Cloud Manager or how you manage your programs.
 
-### Viewing Programs in Cloud Manager's Landing page {#viewing-programs}
+>[!NOTE]
+>
+>Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
 
-Upon successful login, you will be directed to the landing page of Cloud Manager. You will see one of the three options, described below:
+### Viewing Programs {#viewing-programs}
+
+Once you successfully access Cloud Manager what you see will depend on the state of your programs as detailed in the following sections.
 
 #### When No Programs exist in Cloud Manager {#no-programs}
 
