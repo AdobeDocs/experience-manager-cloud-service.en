@@ -77,8 +77,8 @@ Content exposed via AEM's GraphQL APIs can be restricted using [Closed User Grou
 
 Assets CUGs work by: 
 
-+ First, denying all access to the folder and subfolders
-+ Then, allowing read access to the folder and subfolders for all AEM User Groups that are listed in the CUGs' list
+* First, denying all access to the folder and subfolders
+* Then, allowing read access to the folder and subfolders for all AEM User Groups that are listed in the CUGs' list
 
 CUGs can be set up on asset folders containing content exposed via GraphQL APIs. Access to assets folders on AEM Publish should be controlled via User Groups, rather than user directly. Create (or reuse) an AEM User Group that grants access to assets folders containing content exposed by GraphQL APIs.
 
