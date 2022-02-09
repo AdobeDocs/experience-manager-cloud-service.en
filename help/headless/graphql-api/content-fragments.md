@@ -473,14 +473,14 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
 * Fallback when querying nested fragments:
 
-  * If the requested variation does not exist in a nested fragment, then the **Master** variation will be returned.
+  * If a given variation does not exist in a nested fragment, then the **Master** variation would be returned.
 
 ## Querying the GraphQL endpoint from an External Website {#query-graphql-endpoint-from-external-website}
 
 To access the GraphQL endpoint from an external website you need to configure the:
 
 * [CORS Filter](/help/headless/deployment/cross-origin-resource-sharing.md)
-* [Referrer Filter](#referrer-filter)
+* [Referrer Filter](/help/headless/deployment/referrer-filter.md)
 
 ## Authentication {#authentication}
 
