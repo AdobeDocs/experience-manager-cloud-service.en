@@ -37,7 +37,7 @@ Importing product catalog data is not supported anymore. Using the CIF add-on pr
 
 >[!TIP]
 >
->If no real-time APIs are available, an external product cache with APIs should be used for the integration. Example [Magento open-source](https://magento.com/products/magento-open-source).
+>If no real-time APIs are available, an external product cache with APIs should be used for the integration. Example [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
 
 ## Product catalog experiences with AEM rendering
 

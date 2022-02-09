@@ -10,6 +10,7 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
 
 <table>
 <thead>
+<table style="table-layout:auto">
   <tr>
     <th>Package/Class</th>
     <th>Comments</th>

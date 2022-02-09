@@ -27,9 +27,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2021 {#2021}
+      + [Release Notes for 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md) 
       + [Release Notes for 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
-      + [Release Notes for 2021.9.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md) 
-      + [Release Notes for 2021.8.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md) 
+      + [Release Notes for 2021.9.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
+      + [Release Notes for 2021.8.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
       + [Release Notes for 2021.7.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-7-0.md)
       + [Release Notes for 2021.6.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-6-0.md)
       + [Release Notes for 2021.5.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-5-0.md)
@@ -71,7 +72,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
     + [Introduction to Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
     + [AEM as a Cloud Service Team & Product Profiles](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
-    + [Adobe Support](/help/onboarding/learn-concepts/onboarding-help-resources.md)  
+    + [Adobe Support](/help/onboarding/learn-concepts/onboarding-help-resources.md)
   + Onboarding Journey {#journey}
     + [Onboarding Journey](/help/journey-onboarding/home.md)
     + [Overview to Onboarding Journey](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)
@@ -86,6 +87,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Installation](/help/journey-sites/demos-add-on/installation.md)
     + [Create Program](/help/journey-sites/demos-add-on/create-program.md)
     + [Create Demo Site](/help/journey-sites/demos-add-on/create-site.md)
+    + [Enable Screens](/help/journey-sites/demos-add-on/screens.md)
     + [Manage Your Demo Site](/help/journey-sites/demos-add-on/manage.md)
 + AEM as a Cloud Service Migration Journey {#migration-journey}
   + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/getting-started.md)
@@ -95,9 +97,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Post Go Live](/help/journey-migration/post-go-live.md)
   + [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/journey-migration/getting-started-partners.md)
   + Release Notes for Migration Tools {#release-notes-migration-tools}
-    + [Current Release Notes (2022.1.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+    + [Current Release Notes (2022.2.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2021 {#2021}
-      + [Release Notes for 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md) 
+      + [Release Notes for 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
+      + [Release Notes for 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
       + [Release Notes for 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
       + [Release Notes for 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
   + Cloud Acceleration Manager {#cloud-acceleration-manager}
@@ -118,6 +121,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [Guidelines and Best Practices for Using Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
       + [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+      + [Validating Content Transfers](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
       + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
       + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
       + [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
@@ -251,6 +255,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Integrating with Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
     + [Integrating with Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
     + [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+    + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + Assets {#assets}
   + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
   + [Overview and what's new](/help/assets/overview.md)
@@ -266,6 +271,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Add and upload assets](/help/assets/add-assets.md)
     + [Search assets](/help/assets/search-assets.md)
     + [Common asset management tasks](/help/assets/manage-digital-assets.md)
+    + [Manage publication](/help/assets/manage-publication.md)
     + [Preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
     + [Smart tags for images](/help/assets/smart-tags.md)
     + [Smart tag your video assets](/help/assets/smart-tags-video-assets.md)
@@ -379,6 +385,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
+    + [Configure Unified Storage Connector](/help/forms/configure-unified-storage-connector.md)
   + Manage user groups, forms, and related assets {#manage-forms-and-related-assets}
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
     + [Import, export, and organize Adaptive Forms, PDF forms, and other assets](/help/forms/import-export-forms-templates.md)
@@ -438,10 +445,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Use variables in a Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
     + [Use the Out of Office option](/help/forms/configure-out-of-office-settings.md)
   + Using Communications {#using-communications}
-    + [Introduction](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-    + [Communications APIs](/help/forms/aem-forms-cloud-service-communications.md)
-    + [Communications APIs Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+    + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+    + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
+    + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
+    + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
   + [Migrate to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
   + [Frequently asked questions](/help/forms/faq.md)
   + [Known issues](/help/forms/known-issues.md)
@@ -489,7 +497,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Introduction and overview](/help/commerce-cloud/introduction.md)
   + Commerce Journeys {#journeys}
     + Content Author Journey {#author}
-      + [AEM Content and Commerce Content Author Journey](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md) 
+      + [AEM Content and Commerce Content Author Journey](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
       + [Getting Started with CIF Authoring](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
       + [Manage product catalog pages and template](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
       + [Building Staged Product Catalog Experiences](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
@@ -504,6 +512,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Product Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
       + [Multi-Template Usage](/help/commerce-cloud/authoring/multi-template-usage.md)
       + [Enrich Product Data with Associated Content](/help/commerce-cloud/authoring/enrich-product-associated-content.md)
+      + [Product Recommendations](/help/commerce-cloud/authoring/product-recommendations.md)
     + Administering {#administering}
       + [Multi-Store Setup](/help/commerce-cloud/configuring/multi-store-setup.md)
       + [Configuring URLs for SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
@@ -636,7 +645,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Integrating Git with Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
       + [Working with Multiple Source Git Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [Enterprise Team Development Setup for AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-    + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md) 
+    + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md)
     + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Introduction](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
       + Production Pipelines {#production-pipelines}
@@ -651,7 +660,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
       + [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md)
       + [Functional Testing](/help/implementing/cloud-manager/functional-testing.md)
-      + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)  
+      + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
     + [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md)
     + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
@@ -662,7 +671,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Getting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
       + [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
       + [Viewing &  Updating & Replacing an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
-      + [Checking Status of an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)  
+      + [Checking Status of an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [Deleting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
     + Managing Custom Domain Names {#custom-domain-names}
       + [Introduction](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -670,7 +679,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
       + [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
       + [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-      + [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)  
+      + [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
       + [Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
       + [Viewing & Updating & Replacing a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [Updating a  Custom Domain Name’s SSL Certificate](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
@@ -680,7 +689,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Adding an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [Viewing and Updating an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
       + [Applying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-      + [UnApplying an IP Allow-List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)  
+      + [UnApplying an IP Allow-List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [Deleting an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [Checking an IP Allow List Status](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
     + [Cloud Manager FAQs](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
@@ -701,8 +710,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + Full Stack AEM Development {#full-stack}
       + [Getting Started Developing AEM Sites - WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
       + [Structure of the AEM UI](/help/implementing/developing/introduction/ui-structure.md)
-      + [Sling Cheatsheet](/help/implementing/developing/introduction/sling-cheatsheet.md)  
-      + [Using Sling Adapters](/help/implementing/developing/introduction/sling-adapters.md)  
+      + [Sling Cheatsheet](/help/implementing/developing/introduction/sling-cheatsheet.md)
+      + [Using Sling Adapters](/help/implementing/developing/introduction/sling-adapters.md)
       + [Using the Sling Resource Merger in AEM as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md)
       + [Overlays in AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md)
       + [Using Client-Side Libraries](/help/implementing/developing/introduction/clientlibs.md)
@@ -781,7 +790,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Front-end applications](/help/implementing/developing/extending/app-builder/videos/front-end-applications.md)
       + [Security](/help/implementing/developing/extending/app-builder/videos/security.md)
       + [Deploy applications](/help/implementing/developing/extending/app-builder/videos/deploy.md)
-      + [Publish applications](/help/implementing/developing/extending/app-builder/videos/publish.md)     
+      + [Publish applications](/help/implementing/developing/extending/app-builder/videos/publish.md)
     + [Extending Experience Fragments](/help/implementing/developing/extending/experience-fragments.md)
     + [Customizing and Extending Content Fragments](/help/implementing/developing/extending/content-fragments-customizing.md)
     + [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
@@ -796,7 +805,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)
     + [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md)
     + [OSGi Configuration API](/help/implementing/deploying/osgi-configuration-api.md)
-  + Author Tier {#author-tier}  
+  + Author Tier {#author-tier}
     + [Accessing the Author Tier](/help/implementing/author-tier/accessing-the-author-tier.md)
     + [Securing the Author Tier](/help/implementing/author-tier/securing-the-author-tier.md)
   + Content Delivery Overview {#content-delivery}
@@ -819,6 +828,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Backup and Restore](/help/operations/backup.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
+  + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
 + Compliance {#compliance}
   + [Compliance in AEM as a Cloud Service](/help/compliance/home.md)
   + Data Privacy and Protection Readiness {#data-privacy}

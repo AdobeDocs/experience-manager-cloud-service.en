@@ -5,7 +5,7 @@ exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 ---
 # Forms-centric AEM Workflows - Step Reference {#forms-centric-workflow-on-osgi-step-reference}
 
-You use workflow models to convert a business logic to automated repetitive process. A model helps you define and execute a series of steps. You can also define model properties, such as whether the workflow is transient or uses multiple resources. You can [include various AEM Workflow steps in a model to achieve the business logic](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).  
+You use workflow models to convert a business logic to automated repetitive process. A model helps you define and execute a series of steps. You can also define model properties, such as whether the workflow is transient or uses multiple resources. You can [include various AEM Workflow steps in a model to achieve the business logic](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).   
 
 ## Forms-centric steps {#forms-workflow-steps}
 
@@ -23,6 +23,10 @@ Forms-centric workflow steps perform AEM Forms-specific operations in an AEM Wor
 
 * Use the email step to send notification emails and other attachments on completion of an action and at the start or completion of a  workflow.
 
+>[!NOTE]
+>
+>If the workflow model is marked for an external storage, then for all the Forms workflow steps, you can select only the variable option to store or retrieve data files and attachments.
+ 
 
 ## Assign task step {#assign-task-step}
 
@@ -60,7 +64,7 @@ You can also use the component to control the behavior of the task. For example,
 * **[!UICONTROL Pre-populated]**: The following fields listed below serve as inputs to the task:
 
     * **[!UICONTROL Select input data file using]**: Path of input data file (.json, .xml, .doc, or form data model). You can retrieve the input data file using a path that is relative to the payload or retrieve the file stored in a variable of Document, XML, or JSON data type. For example, the file contains the data submitted for the form through an AEM Inbox application. An example path is [Payload_Directory]/workflow/data.
-    * **[!UICONTROL Select input attachments using]**: Attachments available at the location are attached to the form associated with the task. The path is always relative to the payload. An example path is [Payload_Directory]/attachments/. You can specify attachments placed relative to the payload or use a document type (Array list > Document) variable to specify an input attachment for the Adaptive Form
+    * **[!UICONTROL Select input attachments using]**: Attachments available at the location are attached to the form associated with the task. The path can be relative to the payload or retrieve the attachment stored in a variable of a document. An example path is [Payload_Directory]/attachments/. You can specify attachments placed relative to the payload or use a document type (Array list > Document) variable to specify an input attachment for the Adaptive Form.
     
     <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -81,7 +85,7 @@ You can also use the component to control the behavior of the task. For example,
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
 
 * **[!UICONTROL Assignee]** &gt; **[!UICONTROL Assign options]**: Specify the method to assign the task to a user. You can dynamically assign the task to a user or a group using the Participant Chooser script or assign the task to a specific AEM user or group.
-* **[!UICONTROL Participant Chooser]**: The option is available when the **[!UICONTROL Dynamically to a user or group]** option is selected in the Assign options field. You can use an ECMAScript or a service to dynamically select a user or a group. For more information, see [Dynamically assign a workflow to the users](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) and [Creating a custom Adobe Experience Manager Dynamic Participant step.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+* **[!UICONTROL Participant Chooser]**: The option is available when the **[!UICONTROL Dynamically to a user or group]** option is selected in the Assign options field. You can use an ECMAScript or a service to dynamically select a user or a group. For more information, see [Dynamically assign a workflow to the users](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) and [Creating a custom Adobe Experience Manager Dynamic Participant step.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)
 
 * **[!UICONTROL Participants]**: The field is available when the **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** option is selected in the **[!UICONTROL Participant Chooser]** field. The field allows you to select users or groups for the RandomParticipantChooser option.
 
@@ -123,6 +127,10 @@ You can also use the component to control the behavior of the task. For example,
 * **[!UICONTROL Show Data from Previous Steps]**: Select this option to enable assignees to view previous assignees, action already taken on the task, comments added to the task, and Document of Record of the completed task, if available. 
 * **[!UICONTROL Show Data from Subsequent Steps]**: Select this option to enable the current assignee to view the action taken and comments added to task by subsequent assignees. It also allows the current assignee to view a Document of Record of the completed task, if available.
 * **[!UICONTROL Visibility of data type]**: By default, an assignee can view a Document of Record, assignees, action taken, and comments that previous and subsequent assignees have added. Use the visibility of data type option to limit the type of data visible to the assignees.
+
+>[!NOTE]
+>
+>The options to save the Assign Task step as draft and to retrieve the history of the Assign Task step are disabled when you configure an AEM workflow model for external data storage. Also, in Inbox, the option to save is disabled. 
 
 ## Send Email Step {#send-email-step}
 

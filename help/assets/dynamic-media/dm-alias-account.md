@@ -7,17 +7,18 @@ content-type: reference
 feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
-hide: yes
-hidefromtoc: yes
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
 ---
 # About configuring a Dynamic Media company alias account {#about-dm-alias-acct}
 
+<!-- hide: yes
+hidefromtoc: yes -->
+
 >[!NOTE]
 >
->The feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. The feature will be generally available in the February 2022 release.
+>This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature will be generally available in the February 2022 release.
 
-Dynamic Media URLs and viewer embed code contain your company account name. This account name was created at the time of provisioning Dynamic Media. There may be scenarios where your business has undergone an acquisition, or a rebranding, or you simply want to use a more memorable name. In such scenarios, it is not easy to manually update your company account name in all URLs and viewer embed code that comes out of the box. Furthermore, there is the possibility that you will impact your existing Dynamic Media repository or impact live content. To resolve this issue, you can configure a Dynamic Media company alias account.
+Dynamic Media URLs and viewer embed code contain your company account name. This account name was created at the time of provisioning Dynamic Media. There may be scenarios where your business has undergone an acquisition, or a rebranding, or you simply want to use a more memorable name. In such scenarios, it is not easy to manually update your company account name in all URLs and viewer embed code that comes out of the box. Furthermore, there is the possibility that you may impact your existing Dynamic Media repository or impact live content. To resolve this issue, you can configure a Dynamic Media company alias account.
 
 A Dynamic Media company alias account ensures that all out-of-the-box Dynamic Media URLs and viewer embed code in the user interface reflect any updates made to your business context, such as rebranding. An alias account also has a positive impact on your SEO (Search Engine Optimization) because the Dynamic Media URLs and viewer embed code reflect the new company account name.
 
@@ -27,6 +28,7 @@ When you configure a Dynamic Media company alias account, be aware of the follow
 * The Dynamic Media company alias account capability is limited to Experience Manager Assets Authoring mode and delivery. The company alias name does not work with Experience Manager Sites. WCM (Web Content Management) components are not updated for this change. Those components continue to work with the original Dynamic Media company name for fetching Dynamic Media assets.
 * You can set up only one company alias account on the **[!UICONTROL Edit Dynamic Media Configuration]** page. However, you can create as many company alias accounts by way of a support case, and manually reflect the necessary alias name in the Dynamic Media URLs or viewer embed code.
 * The out-of-the-box [Cache Invalidation](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) capability of Dynamic Media invalidates the URLs with both Company and Company Alias accounts configured in the Dynamic Media Configuration page in Cloud Services.
+* When you configure a company alias account on the **[!UICONTROL Edit Dynamic Media Configuration]** page, for cache invalidation to be successful, you must invalidate URLs for *both* the **[!UICONTROL Company]** account and the **[!UICONTROL Company Alias]** account, simultaneously.
 
 See also [Create a Dynamic Media Configuration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
 
