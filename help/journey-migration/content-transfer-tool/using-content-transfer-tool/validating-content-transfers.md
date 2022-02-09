@@ -11,7 +11,7 @@ Users have the ability to reliably determine if all of the content that was extr
 
 >[!INFO]
 >
->This feature will be available as of the Content Transfer Tool (CTT) version 1.8.x release. The AEM Cloud Service target environment must be running at least version 6158 or greater.
+>This feature will be available as of the Content Transfer Tool (CTT) version 1.8.x release. The AEM Cloud Service target environment must be running at least version 6158 or greater. It also requires the source environment to be setup to run [pre-copy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). The validation feature looks for the azcopy.config file on the source. If it fails to find this file, validation will not run. To learn more about how to configure an azcopy.config file, see [this page](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 Validating a content transfer is an optional feature. Enabling this feature will increase both the time it takes to perform an extraction as well as an ingestion. In order to use the feature, enable it in the System Console of the source AEM environment by following these steps:
 
