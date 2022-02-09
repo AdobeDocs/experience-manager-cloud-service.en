@@ -32,6 +32,6 @@ Authorization: Bearer <access_token>
 
 All requests made using the access token will actually be made *by the user account that generated the token*. 
 
-This means that you need to check that the account has the permissions required to run GraphQL queries. 
+This means that you need to check that the account has the permissions required to run GraphQL queries.
 
-You can check this by using GraphiQL on the local instance.
+You can check this by using GraphiQL on the local instance. More details about [permissions can be found here](/help/headless/security/permissions.md).
