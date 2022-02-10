@@ -37,11 +37,11 @@ See also [Optional - Setup and configuration of Dynamic Media settings](/help/as
 1. In the Image Server page, set your Image Server - publish context, and then use the five tabs to configure default publish settings.
 
    * [Image Server](#image-server)
-   * [Security](#security-tab) tab
-   * [Catalog Management](#catalog-management-tab) tab
-   * [Request Attributes](#request-attributes-tab) tab
-   * [Common Thumbnail Attributes](#common-thumbnail-attributes-tab) tab
-   * [Color Management Attributes](#color-management-attributes-tab) tab
+     * [Security](#security-tab) tab
+     * [Catalog Management](#catalog-management-tab) tab
+     * [Request Attributes](#request-attributes-tab) tab
+     * [Common Thumbnail Attributes](#common-thumbnail-attributes-tab) tab
+     * [Color Management Attributes](#color-management-attributes-tab) tab
 
    ![Dynamic Media Publish Setup page](/help/assets/assets-dm/dm-publish-setup.png)
    *Dynamic Media Publish Setup page, with the **[!UICONTROL Request Attributes]** tab selected.*<br><br>
@@ -60,6 +60,9 @@ The Image Server page establishes default settings for delivering images from im
 ### Security tab {#security-tab}
 
 **[!UICONTROL Client address]** - Lets you specify one or more IP addresses or IP address ranges. When specified, requests to this image catalog that originates from a client at an unlisted IP address is rejected. This rule applies both to delivery of images and rendered images.
+
+   ![Security tab](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Security tab showing IP "allow" field.*
+
 
 ### Catalog Management tab {#catalog-management-tab}
 
