@@ -546,6 +546,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Using Cloud Manager {#using-cloud-manager}
     + Release Notes for Cloud Manager {#release-notes-cloud-manager}
       + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + 2022 {#2022}
+        + [Release Notes for 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
       + 2021 {#2021}
         + [Release Notes for 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
         + [Release Notes for 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
@@ -596,12 +598,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md)
     + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Introduction](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-      + Production Pipelines {#production-pipelines}
-        + [Configuring a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-        + [Editing a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/editing-production-pipelines.md)
-      + Non-Production Pipelines {#non-production-pipelines}
-        + [Configuring a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-        + [Editing a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
+      + [Configuring a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+      + [Configuring a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+      + [Managing Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
     + [Deploying your Code](/help/implementing/cloud-manager/deploy-code.md)
     + Understanding your Test Results {#test-results}
       + [Overview](/help/implementing/cloud-manager/overview-test-results.md)
