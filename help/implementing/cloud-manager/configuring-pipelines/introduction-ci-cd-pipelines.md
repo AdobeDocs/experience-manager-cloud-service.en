@@ -57,7 +57,7 @@ The following table summarizes all of the pipelines available in Cloud Manager a
 
 |Pipeline Type|Deployment or Code Quality|Source Code|Purpose|Notes|
 |--- |--- |--- |---|---|
-|Production or Non-Production|Deployment|Full-Stack|Simultaneously deploys back-end and front-end code builds along with HTTPD/Dispatcher configurations|When front-end code must be deployed simultaneously with AEM server code.<br>When front-end pipelines have not yet been adopted.|
+|Production or Non-Production|Deployment|Full-Stack|Simultaneously deploys back-end and front-end code builds along with HTTPD/Dispatcher configurations|When front-end code must be deployed simultaneously with AEM server code.<br>When front-end pipelines or web tier config pipelines have not yet been adopted.|
 |Production or Non-Production|Deployment|Front-End|Deploys front-end code build containing one or more client-side UI application|Supports multiple, concurrent front-end pipelines<br>Much faster than full-stack deployments|
 |Production or Non-Production|Deployment|Web Tier Config|Deploys HTTPD/Dispatcher configurations|Deploys in minutes|
 |Non-Production|Code Quality|Full-Stack|Runs code quality scans on full-stack code without a deployment|Supports multiple pipelines|
@@ -150,6 +150,7 @@ The following restrictions apply.
 * A user must be logged with the **Deployment Manager** role in order to configure or run pipelines.
 * At any time, there can only be one web tier config pipeline per environment.
 * The user can not configure a web tier config pipeline when its corresponding full-stack pipeline is running.
+* The web tier structure must adhere to the flexible mode structure, as defined in the document [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug)
 
 In addition, be aware of how the [full stack pipeline](#full-stack-pipeline) will behave when introducing a web tier pipeline.
 
