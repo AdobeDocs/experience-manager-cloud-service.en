@@ -119,7 +119,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
    
-### Determining migration set size and disk space {migration-set-size}
+### Determining migration set size and disk space {#migration-set-size}
 
 After creating a migration set, it is highly recommended to run a size check on the migration set before starting an Extraction process. 
 By running a size check on the migration set, you will be able to:
@@ -130,20 +130,32 @@ Follow the steps below to run a size check:
 
 1. Select a migration set and click on **Check Size**. 
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image1.png)
 
 1. This will open up the **Check Size** dialog.  
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image2.png)
 
 1. Click on **Check Size** to start the process. You will then return to the migration set list view and you should see a message indicating that **Check Size** is running.
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
-
-1. 
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image3.png)
 
 
+1. Once **Check Size** process is completed, the status will change to either **FINISHED**. Select the same migration set and click on **Check Size** to view results.
 
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image4.png)
+   
+   Below is an example of **Check Size** results with no warnings.
+ 
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
+   
+ 1. If the **Check Size** results indicate that either there is insufficient disk space and/or the migration set exceeds product limits, **WARNING** status will be displayed.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+   
+   Below is an example of **Check Size** results with warnings.
+ 
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
 
 
 ## What's Next {#whats-next}
