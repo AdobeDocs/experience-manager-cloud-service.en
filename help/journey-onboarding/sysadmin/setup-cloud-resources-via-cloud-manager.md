@@ -33,6 +33,20 @@ Follow the sections below to learn how to create your [cloud service programs](#
 
 * You should understand the concepts of Cloud Manager [programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) and [environments.](/help/implementing/cloud-manager/manage-environments.md)
 
+## Access Cloud Manager as System Administrator and Business Owner {#access-sysadmin-bo}
+
+Before the team members that you assigned to the **Business Owner** role can access cloud manager and begin creating cloud resources, the System Administrator must be assigned the **Business Owner** role and sign into Cloud Manager.
+
+1. Ensure that you, as System Administrator, have the **Business Owner** role assigned.
+
+   * Return to the previous step in this journey, [Assign Team Members to Cloud Manager Product Profiles,](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md) for more information about assigning the **Business Owner** role to the System Administrator if you have not already done this.
+
+1. Sign into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and be presented with the normal landing page.
+
+By successfully signing in as System Administrator with the **Business Owner** role, you initialize Cloud Manager for use by the other users with the **Business Owner** role. You will not receive a confirmation of this or any message. Simply signing in suffices.
+
+Until you sign in to Cloud Manager as System Administrator with the **Business Owner** role, other users with the **Business Owner** role will not be able to create programs in Cloud Manager even if they are assigned the correct roles.
+
 ## Navigate to Cloud Manager {#navigate-cloud-manager}
 
 The user with the **Business Owner** role will receive a welcome email with a link to get started. Follow the steps below to navigate to Cloud Manager using this welcome email.
