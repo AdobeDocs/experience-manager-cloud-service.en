@@ -31,10 +31,12 @@ See also [3D formats supported in Experience Manager Assets](/help/assets/file-f
 
 |3D file extension |File format | MIME type |Notes |
 |---|---|---|---|
-| GLB |Binary GL Transmission|model/gltf-binary | Includes the materials and textures as a single asset.|
-| OBJ |WaveFront 3D Object File|application/x-tgif ||
-| STL |Stereolithography|application/vnd.ms-pki.stl ||
-| USDZ |Universal Scene Description Zip archive|model/vnd.usdz+zip |*Support for ingestion only; no viewing or interaction is available.* USDZ is a proprietary 3D format that can be viewed natively by Safari or iOS.|
+| GLB | Binary GL Transmission | model/gltf-binary | Includes the materials and textures as a single asset.|
+| OBJ | WaveFront 3D Object File | application/x-tgif |  |
+| STL | Stereolithography | application/vnd.ms-pki.stl |  |
+| USDZ | Universal Scene Description Zip archive|model/vnd.usdz+zip | *Support for ingestion only; no viewing or interaction is available.* USDZ is a proprietary 3D format that can be viewed natively by Safari or iOS.|
+
+The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x).
 
 ## Quick Start: 3D assets in Dynamic Media {#quick-start-three-d}
 
