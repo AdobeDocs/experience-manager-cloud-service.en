@@ -56,9 +56,6 @@ From the Adobe Admin Console you can see the list of Cloud Manager profiles.
 
 You are now ready to add users and assign them to the **Business Owner** product profile.
 
->[!NOTE]
->In order to successfully do this, from Adobe Admin console you must add a user to both the product (AEM as a Cloud Service in this case), and [Cloud Manager Business Owner product profile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
-
 1. Identify the user(s) who will manage Cloud Manager Programs and add them to the Business Owner product profile.
 
 1. Log in to the Admin Console at [adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview) and on the **Overview** page, select **Adobe Experience Manager as a Cloud Service** product from **Products and services** card.
@@ -142,7 +139,7 @@ In this part of the onboarding journey you learned all about assigning your team
 
 You are now ready to continue your onboarding journey by next reviewing the document [Setup Cloud Resources via Cloud Manager](/help/journey-onboarding/sysadmin/setup-cloud-resources-via-cloud-manager.md), where you will learn:
 
-1. For your team to be able to access cloud resources, you as a System Administrator assigned to the **Business Owner** role, you must first access and login to Cloud Manager. 
+1. For other business owners to create programs, you as a System Administrator assigned to the **Business Owner** role, must first access and login to Cloud Manager. 
 1. How a user with the **Business Owner** role can login and setup your cloud resources including your cloud Program and Environments.
 1. How users with the **Developer** and **Deployment Manager** roles can access Cloud Manager.
 
