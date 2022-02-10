@@ -118,6 +118,32 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+   
+### Determining migration set size and disk space {migration-set-size}
+
+After creating a migration set, it is highly recommended to run a size check on the migration set before starting an Extraction process. 
+By running a size check on the migration set, you will be able to:
+* Determine if there is sufficient disk space in the `crx-quickstart` subdirectory to complete extraction successfully.
+* Determine if the migration set size falls within supported product limits and avoid failed content ingestions.
+
+Follow the steps below to run a size check:
+
+1. Select a migration set and click on **Check Size**. 
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
+
+1. This will open up the **Check Size** dialog.  
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
+
+1. Click on **Check Size** to start the process. You will then return to the migration set list view and you should see a message indicating that **Check Size** is running.
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
+
+1. 
+
+
+
 
 
 ## What's Next {#whats-next}
