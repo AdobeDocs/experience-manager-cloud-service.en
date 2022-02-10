@@ -266,7 +266,7 @@ Associate your [AEM activities](/help/sites-cloud/authoring/personalization/acti
 
 <!-- Is this section needed? -->
 
-After you create a Target framework in AEM, associate your web pages with the framework. The targeted components on the pages send the framework-defined data to Adobe Target for tracking. (See [Content Targeting](/help/sites-authoring/content-targeting-touch.md).)
+After you create a Target framework in AEM, associate your web pages with the framework. The targeted components on the pages send the framework-defined data to Adobe Target for tracking. (See [Content Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md).)
 
 When you associate a page with the framework, the child pages inherit the association.
 
