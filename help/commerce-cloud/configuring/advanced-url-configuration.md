@@ -72,7 +72,7 @@ With the above example data, a category page URL formatted using the default URL
 > 
 > The `url_path` is a concatenation of the `url_keys` of a product or category's ancestors and the product or category's `url_key` separated by `/` slash. Each `url_key` is considered unique within a given store.
 
-### Store specific configuration {#store-specific-urlformats}
+### Store Specific Configuration {#store-specific-urlformats}
 
 The systen wide category and product page URL formats set by the _CIF URL Provider configuration_ can be changed for each store.
 
@@ -86,27 +86,27 @@ Changing the URL format of a live website may have a negative impact on the orga
 >
 > The store specific configuration of the URL formats require [CIF Core Components 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) and the latest version of the Adobe Experience Manager Content and Commerce add-on.
 
-## Category-aware Product URLs {#context-aware-pdps}
+## Category-Aware Product Page URLs {#context-aware-pdps}
 
 Since it is possible to encode category information in a product URL, products that are in multiple categories may be addressed with multiple product URLs as well.
 
-In the default configuration the default URL formats will select one of the possible alternatives using the following scheme:
+The default URL formats will select one of the possible alternatives using the following scheme:
 
 * if the `url_path` is defined by the e-commerce backend use it (deprecated)
 * from the `url_rewrites` use those URLs that end with the product's `url_key` as alternatives
 * form these alternatives use the one with the most path segments
 * if there are multiple, take the first one in the order given by the e-commerce backend
 
-This scheme will select the `url_path` that has the most ancestors, based on the assumption that a child category is more specific than it's parent category. The so selected `url_path` is considered _canonical_ and will, always be used for the canonical link on product pages or in the product sitemap.
+This scheme will select the `url_path` with the most ancestors, based on the assumption that a child category is more specific than it's parent category. The so selected `url_path` is considered _canonical_ and will always be used as the canonical link on product pages or in the product sitemap.
 
 However, when a shopper navigates from a category page to a product page, or from one product page to another related product page in the same category, it is worthwhile to retain the current category context. In this case the `url_path` selection should prefer alternatives, that are within the current category context over the _canonical_ selection described above.
 
 This feature must be enalbed in the _CIF URL Provider configuration_. If enabled the selection will score alternatives higher, when
 
-* they match parts of a given category `url_paths` from the beginning (fuzzy prefix matching)
-* or they match a given category `url_key` anywhere (exact partial matching)
+* they match parts of a given category's `url_path` from the beginning (fuzzy prefix matching)
+* or they match a given category's `url_key` anywhere (exact partial matching)
 
-For example, consider the response for a [products query](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) below. Given the user is on the "New Prodcuts / New in Summer 2022" category page and the store is using the default category page URL format, the alternative "new-products/new-in-summer-2022/gold-cirque-earrings.html" would match 2 of the context's path segments from the beginning: "new-products" and "new-in-summer-2022". If the store would be using a category page URL format that only contains the `url_key`, the same alternative would still be selected as it matches the context's `url_key` anywhere. In both cases the product page URL would be created for the "new-products/new-in-summer-2022/gold-cirque-earrings.html" `url_path`.
+For example, consider the response for a [products query](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) below. Given the user is on the "New Prodcuts / New in Summer 2022" category page and the store uses the default category page URL format, the alternative "new-products/new-in-summer-2022/gold-cirque-earrings.html" would match 2 of the context's path segments from the beginning: "new-products" and "new-in-summer-2022". If the store uses a category page URL format that only contains the category `url_key`, the same alternative would still be selected as it matches the context's `url_key` anywhere. In both cases the product page URL would be created for the "new-products/new-in-summer-2022/gold-cirque-earrings.html" `url_path`.
 
 ```
 {
@@ -165,6 +165,8 @@ Specific product pages are selected either by the product's sku or category. The
 | `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html` | yes    | exact match only |
 | `{{page}}.html/{{sku}}/{{url_path}}.html`             | yes    | yes              |
 
+{style="table-layout:auto"}
+
 >[!NOTE]
 >
 > Selecting specific product pages by category requires [CIF Core Components 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) or newer.
@@ -193,31 +195,31 @@ URL rewrites can also be achieved by using AEM Dispatcher HTTP server with `mod_
 
 ## Best Practices {#best-practices}
 
-### Choose the best URL format {#choose-url-format}
+### Choose the best URL Format {#choose-url-format}
 
-As mentioned before selecting one of the available default formats, or even implementing a custom format highly depends on the needs and requirements of a store. The following suggestions may help to make an educated descision.
+As mentioned before selecting one of the available default formats, or even implementing a custom format, highly depends on the needs and requirements of a store. The following suggestions may help to make an educated descision.
 
 _**Use a product page URL format that contains the sku.**_
 
-The CIF Core Components use the sku as primary identifier in all components. If the product page URL format does not contain the sku, a GraphQL query is necessary to resolve it from the `url_key`, which may impact the time-to-first-byte metric. Also, it may be desireable for shoppers to find product's by sku in search enignes.
+The CIF Core Components use the sku as primary identifier in all components. If the product page URL format does not contain the sku, a GraphQL query is necessary to resolve it. This may impact the time-to-first-byte. Also, it may be desired, that shoppers can find products by sku using search enignes.
 
 _**Use a product page URL format that contains the category context.**_
 
-Some features of the CIF Url Provider are only available when using product URL formats that encode the category context, like the category `url_key` or the category `url_path`. Even if those features may are not be required for a new store, using one of these URL formats in the beginning helps to reduce migration efforts in the future.
+Some features of the CIF Url Provider are only available when using product URL formats, that encode the category context, like the category `url_key` or the category `url_path`. Even if those features may not be required for a new store, using one of these URL formats in the beginning helps to reduce migration efforts in the future.
 
 _**Balance between URL length and encoded information.**_
 
-Depending on the catalog size, in particular the size and depth of the category tree, it may not be reasonable to encode the full `url_path` of categories into the URL. In that case the URL length could be reduced by including the category's `url_key` instead. This will enable almost all the features that are available when using the category `url_path`.
+Depending on the catalog size, in particular the size and depth of the category tree, it may not be reasonable to encode the full `url_path` of categories into the URL. In that case the URL length could be reduced by including only the category's `url_key` instead. This will support most of the features that are available when using the category `url_path`.
 
-Additionally, make use of [Sling Mappings](#sling-mapping) in order to combine the sku with the product `url_key`. In most e-commerce systems the sku follows a particular format and separating sku from `url_key` for incoming requests should eaesily be possible. With that in mind, it should be posible to rewrite a product page URL to `/p/{{category}}/{{sku}}-{{url_key}}.html`, and a category URL to `/c/{{url_key}}.html` respecitively. The `/p` and `/c` prefix are still necessaary in order to distinguish product and category pages from other content pages.
+Additionally, make use of [Sling Mappings](#sling-mapping) in order to combine the sku with the product `url_key`. In most e-commerce systems the sku follows a particular format and separating the sku from the `url_key` for incoming requests should eaesily be possible. With that in mind, it should be posible to rewrite a product page URL to `/p/{{category}}/{{sku}}-{{url_key}}.html`, and a category URL to `/c/{{url_key}}.html` respecitively. The `/p` and `/c` prefix are still necessaary in order to distinguish product and category pages from other content pages.
 
-### Migrating fron one URL format to another {#migrate-url-formats}
+### Migrating to a new URL Format {#migrate-url-formats}
 
-Many of the default URL formats are somehow compatible with each other, meaing that URLs foramtted by one may be parsed by another one. That helps migration between the URL formats.
+Many of the default URL formats are somehow compatible with each other, meaing that URLs foramtted by one may be parsed by another one. That helps migrating between URL formats.
 
 On the other hand, search engines will need some time to re-crawl all catalog pages with the new URL format. To support this process and also to improve the end user experience, it is recommended to provide redirects that forward the user from the old URLs to the new ones.
 
-One approach for that would be, to connect a stage environment to the production e-commerce backend and configure it to use the new URL format. Afterwards obtain the [product sitemap generated by CIF products sitemap generator](../../overview/seo-and-url-management.md) for both stage and production environment, and use them to create an [Apache httpd rewrite map](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). This rewrite map can than be deployed to the dispatcher together with the rollout of the new URL format.
+One approach for that could be, to connect a stage environment to the production e-commerce backend and configure it to use the new URL format. Afterwards obtain the [product sitemap generated by CIF products sitemap generator](../../overview/seo-and-url-management.md) for both the stage and the production environment, and use them to create an [Apache httpd rewrite map](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). This rewrite map can than be deployed to the dispatcher together with the rollout of the new URL format.
 
 ## Example {#example}
 
