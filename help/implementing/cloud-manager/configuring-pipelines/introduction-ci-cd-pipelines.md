@@ -141,16 +141,18 @@ To learn how to configure full-stack pipelines, please refer to the following do
 
 Web tier config pipelines enable exclusive deployment of HTTPD/Dispatcher configuration to the AEM runtime by decoupling it from other code changes. It a streamlined pipeline that provides users who wish to only deploy dispatcher configuration changes, an accelerated means to do so in only a few minutes.
 
->[!IMPORTANT]
+>[!TIP]
 >
->You must be on AEM version `X` or higher to leverage web-tier config pipelines.
+>With web tier config pipelines, you can choose between storing your web config in the same source location as for the full stack pipeline or in a different location, depending which structure better suits your project.
 
 The following restrictions apply.
 
+* You must be on AEM version `2021.12.6151.20211217T120950Z` or newer to leverage web-tier config pipelines.
+* You must [opt in to the flexible mode of the dispatcher tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) to leverage web-tier config pipelines.
 * A user must be logged with the **Deployment Manager** role in order to configure or run pipelines.
 * At any time, there can only be one web tier config pipeline per environment.
 * The user can not configure a web tier config pipeline when its corresponding full-stack pipeline is running.
-* The web tier structure must adhere to the flexible mode structure, as defined in the document [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug)
+* The web tier structure must adhere to the flexible mode structure, as defined in the document [Dispatcher in the Cloud.](/help/implementing/dispatcher/disp-overview.md#validation-debug)
 
 In addition, be aware of how the [full stack pipeline](#full-stack-pipeline) will behave when introducing a web tier pipeline.
 
