@@ -17,7 +17,19 @@ There are three format options available for exporting an Experience Fragment to
 * JSON: Support for headless content delivery
 * HTML & JSON
 
-After [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) AEM Experience Fragments can be exported to the default workspace in Adobe Target, or to user-defined workspaces for Adobe Target.
+To prepare your instance for exporting AEM Experience Fragments to Adobe Target you need to: 
+
+* [Integrate with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+* [Add the Cloud Configuration](#add-the-cloud-configuration)
+* [Add the Legacy Configuration](#add-the-legacy-configuration)
+
+After that you can:
+
+* [Export an Experience Fragment to Adobe Target](#exporting-an-experience-fragment-to-adobe-target)
+* [Use your Experience Fragments in Adobe Target](#using-your-experience-fragments-in-adobe-target)
+* And also [Delete an Experience Fragment already exported to Adobe Target](#deleting-an-experience-fragment-already-exported-to-adobe-target)
+
+Experience Fragments can be exported to the default workspace in Adobe Target, or to user-defined workspaces for Adobe Target.
 
 >[!NOTE]
 >
