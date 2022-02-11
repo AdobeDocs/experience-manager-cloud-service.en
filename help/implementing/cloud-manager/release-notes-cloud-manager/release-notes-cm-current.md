@@ -18,8 +18,8 @@ The release date for Cloud Manager in AEM as a Cloud Service 2022.02.0 is 10 Feb
 
 ## What's New {#what-is-new}
 
-* New accelerated [Web Tier Config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) have been introduced to exclusively deploy HTTPD/dispatcher configuration
-  * You must be on AEM version `2021.12.6151.20211217T120950Z` to use this feature.
+* New accelerated [Web Tier Config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) have been introduced to exclusively deploy HTTPD/dispatcher configuration.
+  * You must be on AEM version `2021.12.6151.20211217T120950Z` or newer and [opt in to the flexible mode of the dispatcher tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) to use this feature.
   * This feature will be rolled out in a phased approach over the two weeks following the 2022.02.0 release.
 * The Cloud Manager landing page experience has been refreshed to deliver improved navigation, easy switching between grid/tile views, and pop-overs for quick program summary.
 * A new failing threshold (`< D`) has been added to the [reliability rating metric.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
