@@ -6,7 +6,6 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 # Custom Code Quality Rules {#custom-code-quality-rules} 
 
 >[!CONTEXTUALHELP]
->
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="Custom Code Quality Rules"
 >abstract="This page describes the custom code quality rules executed by Cloud Manager as part of code quality testing. They are based on best practices from AEM Engineering."
