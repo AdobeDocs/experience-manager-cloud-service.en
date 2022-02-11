@@ -98,8 +98,9 @@ You can also perform:
 
 * [Persisted Queries, that are cached](/help/headless/graphql-api/persisted-queries.md)
 
->[!NOTE]
->You can test and debug GraphQL queries using the [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md). 
+### GraphiQL IDE {#graphiql-ide}
+
+You can test and debug GraphQL queries using the [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md). 
 
 ## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
