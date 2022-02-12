@@ -154,7 +154,7 @@ Dynamic Media assets available on Sites deployment get configured to read-only m
 1. Configure Dynamic Media on remote DAM deployment with the following options:
     * Sync mode: Enabled by default
     * Publish Assets: Sync All Content
-1. On local Sites deployment:
+1. On Sites deployment:
     1. Configure Connected Assets
     2. Configure Dynamic Media using the same company as in step 1.
 
