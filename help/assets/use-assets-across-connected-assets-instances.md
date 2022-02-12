@@ -158,8 +158,7 @@ Dynamic Media assets available on Sites deployment get configured to read-only m
 
 **Result**
 
-Same as Scenario 1: Dynamic Media assets available on Sites deployment
-get configured to read-only mode automatically. The sync options are disabled.
+Same as Scenario 1: Dynamic Media assets available on Sites deployment get configured to read-only mode automatically. The sync options are disabled.
 
 To configure the connection, follow these steps:
 
