@@ -34,7 +34,7 @@ The following table illustrates the maintenance tasks that are available at the 
 
 Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project Purge Maintenance tasks to be executed during the daily, weekly, or monthly maintenance windows. These configurations should be edited directly in source control. The table below describes the configuration parameters available for each of the window. Also, see the locations and code samples provided after the table.
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
     <th>Maintenance Window Configuration</th>
