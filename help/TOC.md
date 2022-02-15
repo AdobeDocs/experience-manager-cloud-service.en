@@ -213,6 +213,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Administering {#administering}
     + Site Creation {#site-creation}
       + [Creating a New Site](/help/sites-cloud/administering/site-creation/create-site.md)
+      + [Enable Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
       + [Site Templates](/help/sites-cloud/administering/site-creation/site-templates.md)
       + [Site Themes](/help/sites-cloud/administering/site-creation/site-themes.md)
       + AEM Quick Site Creation Journey {#quick-site}
