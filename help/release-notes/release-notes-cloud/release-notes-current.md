@@ -26,7 +26,6 @@ The following release (2022.3.0) is on March 31, 2022.
 
 Have a look at the [February 2022 Release Overview](https://video.tv.adobe.com/v/340120) video for a summary of the features added in the 2022.2.0 release.
 
-## Foundation {#foundation}
 ## Adobe Experience Manager Sites as a Cloud Service {#sites}
 
 * The **[Enable Front End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** button is available in the **Site** rail of the Sites console for sites that use the v2 of the Page Core Component. This button configures the site to load the themes that are deployed with the Front End Pipeline on top of the existing client libraries.
