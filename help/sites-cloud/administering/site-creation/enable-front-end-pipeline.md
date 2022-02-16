@@ -23,6 +23,18 @@ Sites based on site templates can leverage the front-end pipeline by default. Th
 
 If you have not created your existing site based on site templates and themes, AEM can configure your site to load the themes that are deployed with the Front End Pipeline on top of the existing client libraries.
 
+## Technical Details {#technical-details}
+
+When you activate the front-end pipeline for a site, AEM makes the following changes to your site structure.
+
+* All pages of the site will include one additional CSS and JS file, which can be modified by deploying updates through a dedicated Cloud Manager front-end pipeline.
+* The added CSS and JS files will initially be empty, but a "theme sources" folder can be downloaded to bootstrap the folder structure that allows to deploy CSS and JS code updates via that pipeline.
+* This change can only be undone by a developer, by deleting the `SiteConfig` and `HtmlPageItemsConfig` nodes that this operation creates below `/conf/<site-name>/sling:configs`.
+
+>[!NOTE]
+>
+>This action won't automatically convert the existing client libraries of the site to use the font-end pipeline. Moving these sources from the client library folder to the front-end pipeline folder is a task that requires manual work by a front-end developer.
+
 ## Requirements {#requirements}
 
 AEM can automatically adapt your existing site to use the front-end pipeline. To be able to do this, your site must use [v2 or newer of the Page Component of the Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/page.html)
