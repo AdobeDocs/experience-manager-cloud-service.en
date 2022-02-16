@@ -67,3 +67,8 @@ Follow the steps below to navigate to Admin Console and review your System Admin
 ## What's Next {#whats-next}
 
 Now, that you have logged into Admin Console and checked your profile as a System Administrator, you should continue your onboarding journey by next reviewing the document [Assign Team Members to Cloud Manager Product Profiles](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md).
+
+## Additional Resources {#additional-resources}
+
+* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
+* [System Administrator](/help/onboarding/learn-concepts/system-administrator.md)
