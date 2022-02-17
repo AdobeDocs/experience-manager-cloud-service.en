@@ -41,7 +41,7 @@ AEM can automatically adapt your existing site to use the front-end pipeline. To
 
 ## Enabling Front-End Pipeline {#enabling}
 
-Enabling your site is done from the Sites console.
+Enabling your site is done from the Sites console using the [Site rail.](site-rail.md)
 
 1. Log into AEM and navigate to your site via **Global Navigation** &gt; **Sites**.
 1. Select your site in the console. You must select the root of the site and not any child pages.
@@ -52,7 +52,8 @@ Enabling your site is done from the Sites console.
 
 1. AEM prompts you to confirm with an overview of the changes that will be made. Confirm and your site is adapted.
 
-Now your site is ready to use the front-end pipeline. To learn more about the front-end pipeline see:
+Now your site is ready to use the front-end pipeline. To learn more about the front-end pipeline and managing your site theme see:
 
+* [Using the Site Rail to Manage Your Site Theme](site-rail.md)
 * [Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) - This documentation journey gives you and beginning-to-end overview of the process of quickly deploying a site using the front-end pipeline and the Quick Site Creation tool.
 * [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) - This document describes the front-end pipeline in the context of the full-stack and web tier pipelines.
