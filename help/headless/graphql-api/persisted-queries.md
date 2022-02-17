@@ -20,7 +20,7 @@ Persisted queries must always use the endpoint related to the [appropriate Sites
 >
 >See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
 >
->The **GraphQL Persistence Queries** need to be enabled, for the appropriate Sites configuration. 
+>The **GraphQL Persistent Queries** need to be enabled, for the appropriate Sites configuration. 
 
 For example, if there is a particular query called `my-query`, which uses a model `my-model` from the Sites configuration `my-conf`:
 
@@ -37,7 +37,11 @@ For example, if there is a particular query called `my-query`, which uses a mode
 
 ## How to persist a GraphQL query
 
-It is recommended to persist queries on an AEM author environment initially and then [publish the query](#publish-persisted-query) to an AEM publish environment. Tools like [Postman](https://www.postman.com/) or command line tools like [curl](https://curl.se/) can be used.
+It is recommended to persist queries on an AEM author environment initially and then [publish the query](#publish-persisted-query) to an AEM publish environment. 
+
+You can use the GraphiQL IDE to [create, save and publish Persisted Queries](/help/headless/graphql-api/graphiql-ide.md#publishing-queries).
+
+Other tools such as [Postman](https://www.postman.com/), or command line tools like [curl](https://curl.se/) can be used.
 
 Here are the steps to persist a given query using the **curl** command line tool:
 
@@ -185,27 +189,31 @@ Persisted queries can be published to an AEM Publish environment where they can 
 
 There are several approaches for publishing a persisted query:
 
-* **Using a POST for replication**:
+* Using a POST for replication:
 
-    ```xml
-    $ curl -X POST   http://localhost:4502/bin/replicate.json \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-    -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-    -F cmd=activate
-    ```
+  ```xml
+  $ curl -X POST   http://localhost:4502/bin/replicate.json \
+  -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+  -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
+  -F cmd=activate
+  ```
 
-* **Using a package**:
-    1. Create a new package definition.
-    1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
-    1. Build the package.
-    1. Replicate the package.
+* Using a package:
+  1. Create a new package definition.
+  1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
+  1. Build the package.
+  1. Replicate the package.
 
-* **Using replication/distribution tool**:
-    1. Go to the Distribution tool.
-    1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
+* Using replication/distribution tool:
+  1. Go to the Distribution tool.
+  1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
-* **Using a workflow (via workflow launcher configuration)**:
-    1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
+* Using a workflow (via workflow launcher configuration):
+  1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
+
+* Using the GraphiQL IDE
+  The GraphiQL IDE allows you to [publish Persisted Queries](/help/headless/graphql-api/graphiql-ide.md#publishing-queries).
+
 
 Once the query configuration is on publish, the same authentication principles apply, just using the publish endpoint.
 
