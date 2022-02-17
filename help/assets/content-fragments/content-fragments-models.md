@@ -178,13 +178,11 @@ Many properties are self-explanatory, for certain properties additional details 
 
 * See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
 
-<!--
 * **Translatable**
   Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
 
   * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
   * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
--->
 
 ## Validation {#validation}
 
