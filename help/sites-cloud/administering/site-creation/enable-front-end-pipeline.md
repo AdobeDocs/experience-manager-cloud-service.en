@@ -1,11 +1,11 @@
 ---
-title: Enable Front-End Pipeline
+title: Enabling the Front-End Pipeline
 description: Learn how you can enable the front-end pipeline for existing sites to leverage site themes to more quickly customize your site.
 feature: Administering
 role: Admin
 ---
 
-# Enable Front-End Pipeline {#enable-front-end-pipeline}
+# Enabling the Front-End Pipeline {#enable-front-end-pipeline}
 
 Learn how you can enable the front-end pipeline for existing sites to leverage site themes to more quickly customize your site.
 
