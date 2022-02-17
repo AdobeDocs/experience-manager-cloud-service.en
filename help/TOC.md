@@ -769,6 +769,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Using CRXDE Lite](/help/implementing/developing/tools/crxde.md)
     + [Package Manager](/help/implementing/developing/tools/package-manager.md)
     + [The Link Externalizer](/help/implementing/developing/tools/externalizer.md)
+    + [The Repository Browser](/help/implementing/developing/tools/repository-browser.md)
   + Personalization {#personalization}
     + [ContextHub](/help/implementing/developing/personalization/contexthub.md)
     + [Configuring ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
