@@ -1,12 +1,12 @@
 ---
 title: Persisted GraphQL queries
-description: Learn how to to persist GraphQL queries in Adobe Experience Manager to optimize performance. Persisted queries can be requested by client applications using HTTP GET method and the response can be cached at the dispatcher and CDN layers, ultimately improving the performance of the client applications.
+description: Learn how to to persist GraphQL queries in Adobe Experience Manager as a Cloud Service to optimize performance. Persisted queries can be requested by client applications using HTTP GET method and the response can be cached at the dispatcher and CDN layers, ultimately improving the performance of the client applications.
 feature: Content Fragments,GraphQL API
 ---
 
 # Persisted GraphQL queries {#persisted-queries-caching}
 
-Persisted queries are GraphQL queries that are created and stored on the AEM server. Standard GraphQL queries are executed using POST requests and the response cannot easily be cached. Persisted queries can be requested with a GET request by client applications. The response of a GET request can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application.
+Persisted queries are GraphQL queries that are created and stored on the Adobe Experience Manager (AEM) as a Cloud Service server. They can be requested with a GET request by client applications. The response of a GET request can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application. This differs from standard GraphQL queries, which are executed using POST requests where the response cannot easily be cached.
 
 Persisted queries must always use the endpoint related to the [appropriate Sites configuration](graphql-endpoint.md); so they can use either, or both:
 
@@ -39,9 +39,11 @@ For example, if there is a particular query called `my-query`, which uses a mode
 
 It is recommended to persist queries on an AEM author environment initially and then [publish the query](#publish-persisted-query) to an AEM publish environment. 
 
-You can use the GraphiQL IDE to [create, save and publish Persisted Queries](/help/headless/graphql-api/graphiql-ide.md#publishing-queries).
+There are various methods of persisting queries, including:
 
-Other tools such as [Postman](https://www.postman.com/), or command line tools like [curl](https://curl.se/) can be used.
+* the GraphiQL IDE - see [Saving a Persisted Queries](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* curl - see the following example
+* Other tools, including [Postman](https://www.postman.com/)
 
 Here are the steps to persist a given query using the **curl** command line tool:
 
@@ -185,7 +187,7 @@ Here are the steps to persist a given query using the **curl** command line tool
 
 ## Publish a persisted query {#publish-persisted-query}
 
-Persisted queries can be published to an AEM Publish environment where they can be requested by client applications. To use a persisted query on publish, the related persistent tree need to replicated.
+Persisted queries can be published to a Publish environment (of AEM as a Cloud Service) where they can be requested by client applications. To use a persisted query on publish, the related persistent tree need to replicated.
 
 There are several approaches for publishing a persisted query:
 
@@ -212,7 +214,7 @@ There are several approaches for publishing a persisted query:
   1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 
 * Using the GraphiQL IDE
-  The GraphiQL IDE allows you to [publish Persisted Queries](/help/headless/graphql-api/graphiql-ide.md#publishing-queries).
+  The GraphiQL IDE allows you to [publish Persisted Queries](/help/headless/graphql-api/graphiql-ide.md#publishing-persisted-queries).
 
 
 Once the query configuration is on publish, the same authentication principles apply, just using the publish endpoint.
