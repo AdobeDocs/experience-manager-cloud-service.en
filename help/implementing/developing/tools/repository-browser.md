@@ -19,12 +19,12 @@ The repository browser can be launched by following the steps below.
 
 1. In Cloud Manager, click the three dots next to the environment of your choice, and select **Developer Console**
 
-   ![repobrowser1](/assets/repobrowser1.png)
+   ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
 1. Next, click the **Repository Browser** tab   
 1. Choose a pod corresponding to either author, publish, or preview by clicking on the **Pod** dropdown list.
 
-   ![repobrowser2](/assets/repobrowser2.png)
+   ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
 1. Launch the repository browser by clicking on the **Open Repository Browser** link further down. This will launch the browser corresponding to a representative instance (pod) for the chosen environment.
 
@@ -34,13 +34,13 @@ The repository browser can be launched by following the steps below.
 
 You can use the left hand navigation pane to nagivate through the content hierarchy. Clicking on each folder or node will reveal its children.
 
-![repobrowser3](/assets/repobrowser3.png)
+![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
 ### View JCR Properties {#view-jcr-properties}
 
 Clicking on a node will reveal its JCR properties in the right hand pane of the navigation browser. Below is an example for the `experience-fragments` node.
 
-![repobrowser4](/assets/repobrowser41.png)
+![repobrowser4](/help/implementing/developing/tools/assets/repobrowser41.png)
 
 ### View Content {#view-content}
 
