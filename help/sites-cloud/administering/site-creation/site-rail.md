@@ -26,7 +26,7 @@ The Site rail is used to manage theme and template related information for your 
 
 ## Downloading Theme Sources {#downloading-theme-sources}
 
-When you create a site in AEM based on a [site template,](site-template.md) you can download your [site theme](site-theme.md) using the Site rail.
+When you create a site in AEM based on a [site template,](site-templates.md) you can download your [site theme](site-themes.md) using the Site rail.
 
 With the Site rail showing in the sites console, select the root of your site to reveal theme information about the site.
 
@@ -36,7 +36,7 @@ Tap or click **Download Theme Sources** to download a local copy of the site the
 
 ## Downloading Template Resources {#downloading-template-resources}
 
-[Site templates](site-template.md) can contain information in addition to your site content structure and [site theme.](site-theme.md) Site templates can contain wireframe designs or other site-related files for example.
+[Site templates](site-templates.md) can contain information in addition to your site content structure and [site theme.](site-themes.md) Site templates can contain wireframe designs or other site-related files for example.
 
 If your site is based on a site template, with the Site rail showing in the sites console, select the root of your site to reveal theme information about the site, including additional site resources.
 
