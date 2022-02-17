@@ -37,6 +37,64 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
 <table style="table-layout:auto">
  <tbody>
   <tr>
+    <th>Maintenance Task</th>
+    <th>Who owns the configuration</th>
+    <th>How to configure (optional)</th>
+  </tr>  
+  <tr>
+    <td>Datastore garbage collection</td>
+    <td>Adobe</td>
+    <td>N/A - fully Adobe owned</td>
+  </td> 
+  </tr>
+  <tr>
+    <td>Version Purge</td>
+    <td>Adobe</td>
+    <td>Fully owned by Adobe, but in the future, customers will be able to configure certain parameters.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Audit Log Purge</td>
+    <td>Adobe</td>
+    <td>Fully owned by Adobe, but in the future, customers will be able to configure certain parameters.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Lucene Binaries Cleanup</td>
+    <td>Adobe</td>
+    <td>Unused and therefore disabled by Adobe.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Ad-hoc Task Purge</td>
+    <td>Customer</td>
+    <td>
+    <p>Must be done in github. Override the out-of-the-box Maintenance window configuration node under <code>/libs</code> by creating properties under the the folder <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> or <code>granite_daily</code>.</p>
+    <p>See the Maintenance Window table below for additional configuration details. Enable the maintenance task by adding another node under the node above (name it <code>granite_TaskPurgeTask</code>) with the appropriate properties. Configure the OSGI properties see the <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5 Maintenance Task documentation</a>.</p>
+  </td>
+  </tr>
+    <tr>
+    <td>Workflow Purge</td>
+    <td>Customer</td>
+    <td>
+    <p>Must be done in github. Override the out-of-the-box Maintenance window configuration node under <code>/libs</code> by creating properties under the the folder <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> or <code>granite_daily</code>. See the Maintenance Window table below for additional configuration details.</p>
+    <p>Enable the maintenance task by adding another node under the node above (name it <code>granite_WorkflowPurgeTask</code>) with the appropriate properties. Configure the OSGI properties see <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5 Maintenance Task documentation</a>.</p>
+  </td>
+  </tr>
+  <tr>
+    <td>Project Purge</td>
+    <td>Customer</td>
+    <td>
+    <p>Must be done in github. Override the out-of-the-box Maintenance window configuration node under <code>/libs</code> by creating properties under the the folder <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> or <code>granite_daily</code>. See the Maintenance Window table below for additional configuration details.</p>
+    <p>Enable the maintenance task by adding another node under the node above (name it <code>granite_ProjectPurgeTask</code>) with the appropriate properties. Configure the OSGI properties see <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5 Maintenance Task documentation</a>.</p>
+  </td>
+  </tr>
+  </tbody>
+</table>
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
     <th>Maintenance Window Configuration</th>
     <th>Who owns the configuration</th>
     <th>Configuration Type</th>
