@@ -1,11 +1,11 @@
 ---
-title: Using the Site Rail to Customize Your Site
+title: Using the Site Rail to Manage Your Site Theme
 description: Learn the powerful features of the Site rail to help you easily customize and manage your site theme.
 feature: Administering
 role: Admin
 ---
 
-# Using the Site Rail to Customize Your Site {#site-rail}
+# Using the Site Rail to Manage Your Site Theme {#site-rail}
 
 Learn the powerful features of the Site rail to help you easily customize and manage your site theme.
 
