@@ -7,7 +7,7 @@ seo-description: The repository browser provides a read-only view into the repos
 
 # Repository Browser {#repository-browser}
 
-## Introduction {##introduction}
+## Introduction {#introduction}
 
 The repository browser is a developer tool that provides a read-only view into the repository for all environments on author, publish and preview tiers. It is designed to facilitate viewing of the content structure in order to make it easier to see or debug content.
 
