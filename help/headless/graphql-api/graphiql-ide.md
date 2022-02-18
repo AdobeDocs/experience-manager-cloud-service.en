@@ -67,6 +67,12 @@ In either case, the query showing in the editor panel is the query that will be 
 * click/tap on the **Execute Query** icon
 * use the keyboard combination `Control-Enter`
 
+## Query Variables {#query-variables}
+
+<!-- more details needed here? -->
+
+The GraphiQL IDE also allows you to manage your [Query Variables](/help/headless/graphql-api/content-fragments.md#graphql-variables)
+
 ## Saving Persisted Queries {#saving-persisted-queries}
 
 You can either use:
