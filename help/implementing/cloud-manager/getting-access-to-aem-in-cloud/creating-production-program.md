@@ -1,47 +1,58 @@
 ---
 title: Creating a Production Program 
-description: Creating a Production Program
+description: Learn how to use Cloud Manager to create your own production program.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 ---
+
 # Creating a Production Program {#create-production-program}
 
-A *Production* program is intended for a user who is familiar with AEM and Cloud Manager and is ready to start writing, building and testing code with the objective of deploying it to Production.
+A production program is intended for a user who is familiar with AEM and Cloud Manager and is ready to start writing, building, and testing code with the objective of deploying it to host live traffic.
 
-Watch the two part tutorial videos to learn how to create a Program in Cloud Manager:
+## Video Tutorials {#video-tutorials}
+
+You can watch these two tutorial videos to learn how to create a program in Cloud Manager or [follow our documented instructions.](#create)
 
 >[!VIDEO](https://video.tv.adobe.com/v/334953)
 
 >[!VIDEO](https://video.tv.adobe.com/v/334954)
 
-Additionally, 
+## Create a Production Program {#create}
 
-Follow the steps below to create a Production program:
+Follow these steps to create a production program.
 
-1. Launch the Cloud Manager's landing page and click on **Add Program** from the top right corner of the screen.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-   ![](assets/first_timelogin1.png) 
+1. Click on **Add Program** from the top-right corner of the screen.
+
+   ![Cloud manager landing page](assets/first_timelogin1.png) 
+
+1. Select **Set up for Production** in the Create Program wizard to create a production program. You can accept the default program name or edit it before selecting **Create**.
+
+   ![Creating program wizard](assets/create-prod1.png)
+
+1. In the next tab, select the solutions to include in the program.
+
+   ![Select solutions](assets/setup-prod-select.png)
+
+1. Click on the chevron before the solution names to reveal optional add-ons such as selecting the **Commerce** add-on option under **Sites**.
+
+   ![Select add-ons](assets/setup-prod-commerce.png)
+
+1. With your solutions and add-ons selected, click **Create**.
+
+Your program is created by Cloud Manager and is displayed and selectable on the landing page.
+
+![Cloud manager overview](assets/navigate-cm.png)
+
+Once you see your program card on the landing page, select the ellipsis button to view the menu options available to you. Select **Cloud Manager**, as shown in the figure below, to navigate to the Cloud Manager's **Overview** page.  
+
+![Program overview](assets/program-overview.png)
+
+The main call-to-action card on the overview page will guide you through creating an environment, a non-production pipeline, and finally a production pipeline.
+
+![Program overview](assets/set-up-prod5.png)
 
 
-1. Select **Set up for Production** in the Create Program wizard to create a Production program. User can accept the default program name or edit it before selecting **Create**.
-
-   ![](assets/create-prod1.png)
-
-1. User will select solutions that are to be included in the program in the screen that will be presented following the screen above. Once you have selected the required solution or solutions, click **Create**.
-
-
-   ![](assets/setup-prod-select.png)
-
-   Additionally, you can select the **Commerce** add-on option under **Sites**, as shown  in the figure below, and click on **Create**.
-
-   ![](assets/setup-prod-commerce.png)
-
-1.  Once you see your program card on the landing page, select the **...** to see menu options available to you. Select **Cloud Manager**, as shown in the figure below, to navigate to the Cloud Manager's **Overview** page.  
-
-    ![](assets/navigate-cm.png)
-
-1. The main call-to-action card will guide the user to create an environment, create a non-production pipeline, and finally a production pipeline.
-   ![](assets/set-up-prod5.png)
-
-
-    >[!NOTE]
-    >A Production program does not have **Auto-setup** feature.
+>[!NOTE]
+>
+>A production program does not have **Auto-setup** feature.
