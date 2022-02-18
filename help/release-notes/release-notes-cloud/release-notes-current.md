@@ -30,8 +30,12 @@ Have a look at the [February 2022 Release Overview](https://video.tv.adobe.com/v
 
 * The **[Enable Front End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** button is available in the **Site** rail of the Sites console for sites that use the v2 of the Page Core Component. This button configures the site to load the themes that are deployed with the Front End Pipeline on top of the existing client libraries.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### What is New {#what-is-new-foundation}
 
-* Developers now have the ability to refresh server to server authentication credentials, in order to ensure continuation of service after a set of existing credentials expire. For more details, see the section [here](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials).
+* For more efficient and effective troubleshooting of custom features in Cloud environments, we’ve released a new developer tool – [the Repository Browser](/help/implementing/developing/tools/repository-browser.md). It’s a lightweight, read-only, HTML browser that you can launch from the Developer Console. Get visibility into the content repository on the publisher, author, and preview tiers—and in all environments, including production, stage, and non-production. Browse the content structure, view properties, and preview and download binaries.
+
+  ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
+
+* The credentials used to authenticate server-to-server API calls (e.g., for GraphQL API requests) can now be refreshed before expiration in a self-serve way from the Developer Console. See the [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) for more info.
