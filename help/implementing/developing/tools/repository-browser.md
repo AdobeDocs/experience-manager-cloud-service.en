@@ -13,20 +13,36 @@ The repository browser is a developer tool that provides a read-only view into t
 
 Accessible from the Developer Console, it can be used to browse the repository of any instance or pod for a selected environment.
 
+### Access Prerequisites {#access-prerequisites}
+
+These following conditions must be met in order to access the Developer Console or the Repository browser
+
+In order to access Developer Console:
+
+* For Production programs, users must have the **Cloud Manager - Developer Role** in the Admin Console
+* For sandbox programs, it is available to any user with a product profile giving them access to AEM as a Cloud Service.
+
+In order to access the Repository Browser:
+
+* Users must have the **Cloud Manager - Developer** Role in the Admin Console
+* Users must also be defined in the AEM Users or AEM Administrators Product Profile on both the author and publish services
+
+For more information about setting up user permissions, see the [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+
 ### Launching the Repository Browser {#launching-the-repository-browser}
 
 The repository browser can be launched by following the steps below.
 
-1. In Cloud Manager, click the three dots next to the environment of your choice, and select **Developer Console**
+1. In Cloud Manager, click the three dots next to the tier of your choice, and select **Developer Console**
 
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
 1. Next, click the **Repository Browser** tab   
-1. Choose a pod corresponding to either author, publish, or preview by clicking on the **Pod** dropdown list.
+1. Choose any pod corresponding to author, publish or preview by clicking on the **Pod** dropdown list.
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
-1. Launch the repository browser by clicking on the **Open Repository Browser** link further down. This will launch the browser corresponding to a representative instance (pod) for the chosen environment.
+1. Launch the repository browser by clicking on the **Open Repository Browser** link further down. This will launch the browser corresponding to a representative instance (pod) for the chosen tier. This will launch the browser corresponding to a representative instance (pod) for the chosen tier. Note that you cannot control the specific pod for that tier that is launched.
 
 ## Features {#features}
 
