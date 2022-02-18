@@ -5,20 +5,16 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 ---
 # Hibernating and De-hibernating Sandbox Environments {#hibernating-introduction}
 
-Sandbox Program environments enter a *hibernation mode* if no activity is detected for a certain period of time.
-
->[!NOTE]
->Hibernation is unique to Sandbox Program environments. Production program environments do not hibernate.
+Environments of a sandbox program enter a hibernation mode if no activity is detected for eight hours.Hibernation is unique to sandbox program environments. Production program environments do not hibernate.
 
 ## Hibernation {#hibernation-introduction}
 
-Hibernation can occur either automatically or manually. It may take up to a few minutes for Sandbox Program environments to enter a *hibernation mode*. Data is preserved during hibernation.
+Hibernation can occur either automatically or manually. 
 
-Hibernation is categorized as:
+* **Automatic** - Sandbox program environments are automatically hibernated after eight hours of inactivity. Inactivity is defined as neither the author service nor preview or publish services receive requests.
+* **Manual** - As a user you may manually hibernate a sandbox program environment. There is no requirement to do so since hibernation will occur automatically as previously described.
 
-* **Automatic**  Sandbox Program environments are automatically hibernated after eight hours of inactivity, meaning that neither the author nor preview or publish services receive requests.
-
-* **Manual**: As a user you may manually hibernate a Sandbox Program environment, although there is no requirement to do so since hibernation will occur automatically after a certain period (eight hours) of inactivity.
+It may take up to a few minutes for sandbox program environments to enter hibernation mode. Data is preserved during hibernation.
 
 >[!CAUTION]
 >In the latest release, linking to the Developer Console directly from Cloud Manager will not give you the option to hibernate a Sandbox Program environment. The workaround is once at the Developer Console, add the following pattern to the end of the url `#release-cm-p1234-e5678 where 1234` 1234 is your *Program ID* and 5678 is your *Environment ID*.
@@ -31,32 +27,36 @@ You can manually hibernate your Sandbox Program from the Developer Console in tw
 * Environment listing screen 
 
 >[!NOTE]
+>
 >Access to Developer Console for a Sandbox Program is available to any user of Cloud Manager.
 
-Follow the steps below to manually hibernate your Sandbox Program environments:
+Follow these steps to manually hibernate your sandbox program environments.
 
-1. Navigate to the **Developer Console**. 
-Refer to [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) to learn how to access the **Developer Console** from the **Environments** card.
-   >[!IMPORTANT]
-   >Linking to the **Developer Console** directly from Cloud Manager will not give you the option to hibernate a Sandbox Program environment. The workaround is once at the Developer Console, add the following pattern to the end of the url `#release-cm-p1234-e5678 where 1234` 1234 is your *Program ID* and 5678 is your *Environment ID*.  
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click **Hibernate**, as shown in the figure below:
+1. Click on the program you wish to hibernate to show its details.
 
-   ![](assets/hibernate-1.png)
+1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
 
-   Or,
+   * Refer to the document [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
 
-   Click the **Environments** link in top left to view the environments listing and then click **Hibernate**, as shown in the figure below:
+   ![Developer Console menu option](assets/developer-console-menu-option.png)
 
-   ![](assets/hibernate-1b.png)
+1. In the Developer Console, click **Hibernate**.
+
+   ![Hibernate button](assets/hibernate-1.png)
 
 1. Click **Hibernate** to confirm the step.
 
-   ![](assets/hibernate-2.png)
+   ![Confirm hibernation](assets/hibernate-2.png)
 
-1. When the hibernation is successful, you will see the hibernation process complete notification for your environment in the **Developer Console** screen.
+When the hibernation is successful, you will see the hibernation process complete notification for your environment in the **Developer Console** screen.
 
-   ![](assets/hibernate-4.png)
+![Hibernation confirmation](assets/hibernate-4.png)
+
+In the Developer Console you can also click the Environments link in the breadcrumbs above the Pod dropdown for a list of environments to hibernate.
+
+![List of environments to hibernate](assets/hibernate-1b.png)
 
 
 ## De-hibernation {#de-hibernation-introduction}
