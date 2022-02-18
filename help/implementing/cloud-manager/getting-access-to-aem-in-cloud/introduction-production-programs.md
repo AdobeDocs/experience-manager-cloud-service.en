@@ -1,6 +1,6 @@
 ---
 title: Introduction to Production Programs 
-description: Introduction to Production Programs
+description: Learn what production programs are and suggestions for how to set up yours.
 exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 ---
 
