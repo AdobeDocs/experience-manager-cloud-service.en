@@ -41,7 +41,7 @@ It is recommended to persist queries on an AEM author environment initially and 
 
 There are various methods of persisting queries, including:
 
-* the GraphiQL IDE - see [Saving a Persisted Queries](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* the GraphiQL IDE - see [Saving Persisted Queries](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
 * curl - see the following example
 * Other tools, including [Postman](https://www.postman.com/)
 
