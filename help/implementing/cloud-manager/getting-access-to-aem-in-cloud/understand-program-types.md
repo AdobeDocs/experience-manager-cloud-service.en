@@ -1,5 +1,5 @@
 ---
-title: Understanding Program and Program Types
+title: Understanding Programs and Program Types
 description: Learn about the hierarchy of Cloud Manager and how the different types of programs fit into its structure.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 ---

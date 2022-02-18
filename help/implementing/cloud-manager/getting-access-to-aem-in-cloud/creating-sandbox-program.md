@@ -1,42 +1,56 @@
 ---
 title: Creating a Sandbox Program 
-description: Creating a Sandbox Program
+description: Learn how to use Cloud Manager to create your own sandbox program.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 ---
 # Creating a Sandbox Program {#create-sandbox-program}
 
-Follow the steps below to create a sandbox program:
+A sandbox program is typically created to serve the purposes of training, running demos, enablement, POCs, or documentation and is not meant to carry live traffic.
+
+Learn more about program types in the document [Understanding Program and Program Types.](understand-program-types.md)
+
+## Create a Sandbox Program {#create}
+
+Follow these steps to create a sandbox program.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
  
-1. Launch the Cloud Manager's landing page and click on **Add Program** from the top right corner of the screen.
+1. From Cloud Manager's landing page click on **Add Program** in the top-right corner of the screen.
 
-   ![](assets/first_timelogin1.png) 
+   ![Cloud Manager landing page](assets/first_timelogin1.png) 
 
-1. From the create program wizard, select **Set up a sandbox**. User submits program name before selecting **Create**.
+1. From the create program wizard, select **Set up a sandbox**, provide a program name, and then click **Create**.
 
-   ![](assets/create-sandbox.png)
+   ![Program type creation](assets/create-sandbox.png)
 
-1. User will see the new sandbox program card on the landing page, and can hover over it to select the Cloud Manager icon to navigate to the Cloud Manager overview page. The card will inform the user on the status of auto-setup of the newly created sandbox program. User will see progression.
+You will see a new sandbox program card on the landing page with a status indicator as the setup process progresses.
 
-    ![](assets/program-create-setupdemo2.png)
+![Sandbox creation from overview page](assets/program-create-setupdemo2.png)
 
-1. After the program set up and the project creation step completes, the user can access **Manage Git** link, as shown in the figure below:
+## Access Your Sandbox {#access}
 
-   ![](assets/create-program4.png)
+You can view the detail of your sandbox setup as well as access the environment (once available) by viewing the program overview page.
+
+1. From the Cloud Manager landing page, click the ellipsis button on your newly-created program.
+
+   ![Accessing program overview](assets/program-overview-sandbox.png)
+
+1. Once the project creation step completes, you can access the **Access Repo Info** link in order to be able to use your git repo.
+
+   ![Program configuration](assets/create-program4.png)
    
-   >[!NOTE]
+   >[!TIP]
    >
-   >To learn more about accessing and managing your Git Repository using Self-Service Git Account Management from Cloud Manager UI, refer to [Accessing Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+   >To learn more about accessing and managing your git repository, refer to the document [Accessing Git.](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
 
+1. Once the development environment is created, you can use the **Access AEM** link to sign into AEM.
 
-1. Once the development environment is created, the user can **Access AEM** link, as shown in the figure below:
+   ![Access AEM link](assets/create-program-5.png)
 
-   ![](assets/create-program-5.png)
+1. Once the Non-production pipeline deploying to development is complete, the wizard guides you to either access the AEM development environment or to deploy code to development environment.
 
-1. Once the Non-production pipeline deploying to development is complete, the wizard guides the user to either access AEM (on development) or to deploy code to development environment:
+   ![Deploying sandbox](assets/create-program-setup-deploy.png)
 
-   ![](assets/create-program-setup-deploy.png)
+If at any time you need to switch to another program or return to the overview page to create another program, click on your program name in the top-left of the screen to reveal the **Navigate to** option.
 
-   >[!NOTE]
-   >You can also edit, switch or add a program from Cloud Manager Overview page, as shown below:
-
-   ![](assets/create-program-a1.png)
+![Navigate to](assets/create-program-a1.png)
