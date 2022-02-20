@@ -396,3 +396,60 @@ The Document of Record settings of a component are available under its propertie
 
 * **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based Adaptive Form in Document of Record. By default it is true.
 * **Exclude fields from DoR if hidden:** Setting the property overrides the behavior of “Exclude From Document of Record” field level property when it’s not true. If fields are hidden at the time of form submission, they will be excluded from Document of Record if the property is set true, provided “Exclude From Document of Record” property is not set.
+
+## Use a custom XCI file
+
+   >[!NOTE]
+   >
+   > This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague-review.corp.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information to enable the feature for your environment.
+
+An XCI file helps you set various proprties of a document. Forms as a Cloud Service has a master XCI file. You can use a custom XCI file to override one or more default properties specified in the master XCI file. For example, you can choose to embed a font into a document or enable tagged property for all the documents. The following table specifies the XCI options:
+
+|XCI option|Description|
+|--- |--- |
+|config/present/pdf/creator|Identifies the document creator using the Creator entry in the Document Information dictionary. For information about this dictionary, see the [PDF Reference guide](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf).|
+|config/present/pdf/producer|Identifies the document producer using the Producer entry in the Document Information dictionary. For information about this dictionary, see the [PDF Reference guide](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf).|
+|config/present/layout|Controls whether the output is a single panel or paginated.|
+|config/present/pdf/compression/level|Specifies the degree of compression to use when generating a PDF document.|
+|config/present/pdf/fontInfo/embed|Controls font embedding in the output document.|
+|config/present/pdf/scriptModel|Controls whether XFA-specific information is included in the output PDF document.|
+|config/present/common/data/adjustData|Controls whether the XFA application adjusts the data after merging.|
+|config/present/pdf/renderPolicy|Controls whether the generation of page content is done on the server or deferred to the client.|
+|config/present/common/locale|Specifies the default locale used in the output document.|
+|config/present/destination|When contained by a present element, specifies the output format. When contained by an openAction element, specifies the action to perform upon opening the document in an interactive client.|
+|config/present/output/type|Specifies either the type of compression to apply to a file or the type of output to produce.|
+|config/present/common/temp/uri|Specifies the Form URI.|
+|config/present/common/template/base|Supplies a base location for URIs in the form design. When this element is absent or empty, the location of the form design is used as the base.|
+|config/present/common/log/to|Controls the location that log data or output data is written to.|
+|config/present/output/to|Controls the location that log data or output data is written to.|
+|config/present/script/currentPage|Specifies the initial page when the document is opened.|
+|config/present/script/exclude|Informs Forms as a Cloud Service which events to ignore.|
+|config/present/pdf/linearized|Controls whether the output PDF document is linearized.|
+|config/present/script/runScripts|Controls which set of scripts Forms as a Cloud Service executes.|
+|config/present/pdf/tagged|Controls the inclusion of tags into the output PDF document. Tags, in the context of PDF, are additional information included in a document to expose the logical structure of the document. Tags assist accessibility aids and reformatting. For example a page number may be tagged as an artifact so that a screen reader does not enunciate it in the middle of the text. Although tags make a document more useful, they also increase the size of the document and the processing time to create it.|
+|config/present/pdf/fontInfo/alwaysEmbed|Specifies a font that is embedded into the output document.|
+|config/present/pdf/fontInfo/neverEmbed|Specifies a font that must never be embedded into the output document.|
+|config/present/pdf/pdfa/part|Specifies the version number of the PDF/A specification that the document conforms to.|
+|config/present/pdf/pdfa/amd|Specifies the amendment level of the PDF/A specification.|
+|config/present/pdf/pdfa/conformance|Specifies the conformance level with the PDF/A specification.|
+|config/present/pdf/version|Specifies the version of PDF document to generate|
+
+### Use a custom XCI file in your Forms as a Cloud Service environment
+
+  1. Add the custom XCI file to your developement project.
+  1. Specify the following [inline property](/help/implementing/deploying/configuring-osgi.md): 
+
+        ```JSON
+         {
+          "xciFilePath": [path of XCI file]
+         }
+        ```
+
+  1. Deploy the project to your Cloud Service environment.
+
+### Use a custom XCI file in your local Forms as a Cloud Service development environment
+
+  1. Upload the XCI file to your local developent envionment. 
+  1. Open Cloud Service SDK configuraion manager. The default URL is: http://localhost:4502/system/console/configMgr.
+  1. Locate and open the **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]** configuration.
+  1. Specify path of the XCI file and click **[!UICONTROL Save]**. 
