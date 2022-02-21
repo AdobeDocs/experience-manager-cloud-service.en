@@ -12,7 +12,7 @@ Learn what sandbox programs are how they differ from production programs.
 
 A sandbox program is typically created to serve the purposes of training, running demos, enablement, or proof of concepts (POCs) and thus are not meant to carry live traffic.
 
-A sandbox program is one of the two types of programs available in AEM Cloud Service, the other being a [production program.](introduction-production-programs.md) Please refer to the document [Understanding Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) to learn more about program types.
+A sandbox program is one of the two types of programs available in AEM Cloud Service, the other being a [production program.](introduction-production-programs.md) Please refer to the document [Understanding Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) to learn more about program types.
 
 ## Auto-Creation {#auto-creation}
 
@@ -59,4 +59,4 @@ hibernated, they can be manually de-hibernated.
 
 Sandbox programs are deleted after 6 months of being in continuous hibernation mode, after which time, they can be recreated.
 
-Please refer to [Hibernating and De-hibernating Sandbox Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md) for more details.
+Please refer to [Hibernating and De-hibernating Sandbox Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) for more details.
