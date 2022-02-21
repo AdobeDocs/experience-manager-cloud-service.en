@@ -45,12 +45,18 @@ Custom domains and IP allow lists are not available in sandbox programs.
 
 AEM updates are not automatically pushed to sandbox programs, but can be applied manually to the environments in your sandbox program.
 
-Please refer to [AEM Updates to Sandbox Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox) for more details.
+* A manual update can only be run when the targeted environment has a properly configured pipeline. 
+* A manual update to either a production or staging environment will automatically update the other. The Production+Stage environment set must be on the same AEM release.
+
+Please refer to the document [AEM version updates](/help/implementing/deploying/aem-version-updates.md) for more details.
+
+Please refer to the document [Updating Environment](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) to learn how to update an environment.
 
 ### Hibernation and Deletion {#hibernation}
 
-Environments in a sandbox program are automatically hibernated after 8 hours of inactivity. Once hibernated, they can be manually de-hibernated.
-
-Please refer to [Hibernating and De-hibernating Sandbox Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md) for more details.
+Environments in a sandbox program are automatically hibernated after 8 hours of inactivity. Once 
+hibernated, they can be manually de-hibernated.
 
 Sandbox programs are deleted after 6 months of being in continuous hibernation mode, after which time, they can be recreated.
+
+Please refer to [Hibernating and De-hibernating Sandbox Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md) for more details.
