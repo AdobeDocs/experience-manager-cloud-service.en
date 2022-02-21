@@ -88,9 +88,9 @@ Once you have selected your persisted query from the list (left panel) you can u
 
 <!-- mention caching here? need more details -->
 
-## Copy URL for testing the raw query {#copy-url}
+## Copy URL to access the raw query {#copy-url}
 
-The **Copy URL** option allows you to copy the URL used to directly access the persisted query. This can then be used for testing.
+The **Copy URL** option allows you to copy the URL used to directly access the persisted query. This can then be used for testing, or embedding in your application.
 
 For example:
 
