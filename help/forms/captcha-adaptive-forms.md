@@ -78,8 +78,8 @@ To use CAPTCHA in Adaptive Forms:
 
 1. Select the Captcha component you added and tap ![cmppr](assets/configure-icon.svg) to edit its properties.
 1. Specify a title for the CAPTCHA widget. The default value is **[!UICONTROL Captcha]**. Select **[!UICONTROL Hide title]** if you do not want title to appear.
-1. From the **[!UICONTROL Captcha service]** drop-down, select **[!UICONTROL reCaptcha]** to enable reCAPTCHA service if you configured it as described in [ReCAPTCHA service by Google](#google-recaptcha). Select a configuration from the Settings drop-down. 
-1. Select the size as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. You can also select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity. The protected by reCAPTCHA badge, displayed below, is displayed on the protected forms.  
+1. From the **[!UICONTROL Captcha service]** drop-down, select **[!UICONTROL reCaptcha]** to enable reCAPTCHA service if you configured it as described in [ReCAPTCHA service by Google](#google-recaptcha). Select a configuration from the Settings drop-down.
+1. Select the type as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. You can also select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity. The protected by reCAPTCHA badge, displayed below, is displayed on the protected forms.  
 
     ![Google proeced by reCAPTCHA badge](assets/google-recaptcha-v2.png)
 
@@ -127,7 +127,7 @@ The following is an example of a `ValidateCAPTCHA` API to validate CAPTCHA using
 
 ```javascript
 if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
-    	GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
+     GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
         String formPath = slingRequest.getResource().getPath();
         String captchaData = slingRequest.getParameter(GuideConstants.GUIDE_CAPTCHA_DATA);
         if (!apiProvider.validateCAPTCHA(formPath, captchaData).isCaptchaValid()){
