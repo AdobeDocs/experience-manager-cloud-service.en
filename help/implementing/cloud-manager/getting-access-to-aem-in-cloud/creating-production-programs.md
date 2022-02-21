@@ -8,7 +8,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 
 A production program is intended for a user who is familiar with AEM and Cloud Manager and is ready to start writing, building, and testing code with the objective of deploying it to host live traffic.
 
-Learn more about program types in the document [Understanding Program and Program Types.](understand-program-types.md)
+Learn more about program types in the document [Understanding Program and Program Types.](program-types.md)
 
 ## Video Tutorials {#video-tutorials}
 
