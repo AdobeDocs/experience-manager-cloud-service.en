@@ -1,9 +1,10 @@
 ---
 title: Hibernating and De-hibernating Sandbox Environments 
-description: Hibernating and De-hibernating Sandbox Environments
+description: Learn how environments of a sandbox program automatically enter a hibernation mode and how you can de-hibernate them.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 ---
-# Hibernating and De-hibernating Sandbox Environments {#hibernating-introduction}
+
+# Hibernating and De-Hibernating Sandbox Environments {#hibernating-introduction}
 
 Environments of a sandbox program enter a hibernation mode if no activity is detected for eight hours.Hibernation is unique to sandbox program environments. Production program environments do not hibernate.
 
@@ -16,19 +17,9 @@ Hibernation can occur either automatically or manually.
 
 It may take up to a few minutes for sandbox program environments to enter hibernation mode. Data is preserved during hibernation.
 
->[!CAUTION]
->In the latest release, linking to the Developer Console directly from Cloud Manager will not give you the option to hibernate a Sandbox Program environment. The workaround is once at the Developer Console, add the following pattern to the end of the url `#release-cm-p1234-e5678 where 1234` 1234 is your *Program ID* and 5678 is your *Environment ID*.
-
 ### Using Manual Hibernation {#using-manual-hibernation}
 
-You can manually hibernate your Sandbox Program from the Developer Console in two different ways, using:
-
-* Environment detail screen 
-* Environment listing screen 
-
->[!NOTE]
->
->Access to Developer Console for a Sandbox Program is available to any user of Cloud Manager.
+You can manually hibernate your sandbox program from the Developer Console. Access to Developer Console for a sandbox program is available to any user of Cloud Manager.
 
 Follow these steps to manually hibernate your sandbox program environments.
 
@@ -54,81 +45,68 @@ When the hibernation is successful, you will see the hibernation process complet
 
 ![Hibernation confirmation](assets/hibernate-4.png)
 
-In the Developer Console you can also click the Environments link in the breadcrumbs above the Pod dropdown for a list of environments to hibernate.
+In the Developer Console you can also click the **Environments** link in the breadcrumbs above the **Pod** dropdown for a list of environments to hibernate.
 
 ![List of environments to hibernate](assets/hibernate-1b.png)
 
+## De-Hibernation {#de-hibernation-introduction}
 
-## De-hibernation {#de-hibernation-introduction}
+You can manually hibernate your Sandbox Program from the Developer Console. 
 
-1. Navigate to the **Developer Console**. 
-Refer to [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) to learn how to access the **Developer Console** from the **Environments** card.
+>[!IMPORTANT]
+>
+>A user with a **Developer** role can de-hibernate a sandbox program environment.
 
-   >[!IMPORTANT]
-   >Linking to the **Developer Console** directly from Cloud Manager will not give you the option to de-hibernate a Sandbox Program environment. The workaround is once at the Developer Console, add the following pattern to the end of the url `#release-cm-p1234-e5678 where 1234` 1234 is your *Program ID* and 5678 is your *Environment ID*.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-   >[!NOTE]
-   >Alternatively, you can navigate to the **Developer Console** to de-hibernate by trying to access the author, preview or publish service of an already hibernated environment; in that case, a landing page will appear with a link to the Developer Console. See the Accessing a Hibernated Environment section below.
+1. Click on the program you wish to hibernate to show its details.
 
-   >[!IMPORTANT]
-   >Access to the Developer Console is defined by the **Cloud Manager - Developer Role** in the **Admin Console**. A user with a developer role permission can de-hibernate a Sandbox Program environment.
+1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
 
-1. Click on **De-hibernate**, as shown in the figure below:
+   * Refer to the document [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
 
-    ![](assets/de-hibernation-img1.png)
+1. Click on **De-hibernate**.
 
-    Or,
+    ![De-hibernate button](assets/de-hibernation-img1.png)
+    
+1. Click **De-Hibernate** to confirm the step.
 
-    Click the **Environments** link in top left to view the environments listing and then click **De-hibernate**, as shown in the figure below
- 
-    ![](assets/de-hibernate-1b.png)
+   ![Confirm de-hibernation](assets/de-hibernation-img2.png)
 
-
-1. Click **De Hibernate** to confirm the step.
-
-   ![](assets/de-hibernation-img2.png)
-
-1. You will receive the notification that the de-hibernation process has started and you will be updated with the progress.
+1. You receive notification that the de-hibernation process has started and are updated with the progress.
    
-   ![](assets/de-hibernation-img3.png)
+   ![Hibernation progress notification](assets/de-hibernation-img3.png)
    
-1. Once the process completes, the Sandbox Program environment is active again.
+1. Once the process completes, the sandbox program environment is active again.
  
-   ![](assets/de-hibernation-img4.png)
+   ![De-hibernation complete](assets/de-hibernation-img4.png)
 
-### Permissions to De-hibernate {#permissions-de-hibernate}
+
+In the Developer Console you can also click the **Environments** link in the breadcrumbs above the **Pod** dropdown for a list of environments to de-hibernate.
+ 
+![List of hibernated pods](assets/de-hibernate-1b.png)
+
+### Permissions to De-Hibernate {#permissions-de-hibernate}
 
 Any user with a product profile giving them access to AEM as a Cloud Service should be able to access the **Developer Console**, allowing them to de-hibernate the environment. 
 
 ## Accessing a Hibernated Environment {#accessing-hibernated-environment}
 
-When making any browser requests against either the author, preview or publish tier of a hibernated environment, the user will encounter a landing page describing the hibernated status of the environment, as shown in the figure below:
+When making any browser requests against the author, preview, or publish service of a hibernated environment, the user will encounter a landing page describing the hibernated status of the environment along with a link to the Developer Console where the service can be de-hibernated.
 
-![](assets/de-hibernation-img5.png)
+![Hibernated service landing page](assets/de-hibernation-img5.png)
 
-## Important Considerations {#important-considerations}
+## Deployments and AEM Updates {#deployments-updates}
 
-Few key considerations related to hibernated and de-hibernated environments are:
+Hibernated environments still allow for deployments and manual AEM upgrades.
 
 * A user may use a pipeline to deploy custom code to hibernated environments. The environment will remain hibernated and the new code will appear in the environment once de-hibernated.
 
-* AEM upgrades can be applied to hibernated environments, which customers can manually trigger from Cloud Manager. The environment will remain hibernated and the new release will appear in the environment once de-hibernated.
+* AEM upgrades can be applied to hibernated environments and can be manually triggered from Cloud Manager. The environment will remain hibernated and the new release will appear in the environment once de-hibernated.
 
-* Sandboxes are put into hibernation node after 8 hours of inactivity, after which time, they can be de-hibernated.
+## Hibernation and Deletion {#hibernation-deletion}
 
-* Sandboxes are deleted after 6 months of being in continuous hibernation mode, after which time, they can be recreated.
-
-   >[!NOTE]
-   >Currently, Cloud Manager does not indicate whether an environment is hibernated.
-
-## AEM Updates to Sandbox Environments {#aem-updates-sandbox}
-
-Refer to [AEM version updates](/help/implementing/deploying/aem-version-updates.md) for more details.
-
-A user can manually apply AEM updates to the environments in a Sandbox Program.
-
-Refer to [Updating Environment](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) to learn how to update an environment.
-
->[!NOTE]
->* A manual update can only be run when the targeted environment has a properly configured pipeline. 
->* A manual update to either *Production* or *Stage* environment will automatically update the other. The Production+Stage environment set must be on the same AEM release.
+* Environments in a sandbox program are automatically hibernated after eight hours of inactivity. 
+  * Inactivity is defined as neither the author service nor preview or publish services receive requests.
+  * Once hibernated, they can be manually de-hibernated.
+* Sandbox programs are deleted after six months of being in continuous hibernation mode, after which time, they can be recreated.
