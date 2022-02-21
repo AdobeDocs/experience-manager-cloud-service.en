@@ -634,19 +634,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Creating a Sandbox Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
       + [Editing Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
       + [Hibernating Sandbox Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
-
-    + [Understanding Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md)
-    + Production Programs {#production-programs}
-      + [Introduction](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-      + [Creating a Production Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md)
-      + [Editing a Production Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-production-program.md)
-    + Sandbox Programs {#sandbox-programs}
-      + [Introduction](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-      + [Creating a Sandbox Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
-      + [Editing a Sandbox Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
-      + [Deleting a Sandbox Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
-      + [Hibernating and De-hibernating Sandbox Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
-
     + Creating an AEM Application Project {#create-application-project}
       + [Using the Wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [Setting up your Project](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
