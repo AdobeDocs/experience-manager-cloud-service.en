@@ -1,6 +1,6 @@
 ---
 title: Editing Programs
-description: Editing Programs
+description: Learn how to edit your production and sandbox programs to adjust their options after you have created them.
 ---
 
 # Editing Programs {#editing-programs}

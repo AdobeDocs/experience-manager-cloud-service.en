@@ -1,9 +1,9 @@
 ---
-title: Creating a Sandbox Program 
-description: Learn how to use Cloud Manager to create your own sandbox program.
+title: Creating Sandbox Programs 
+description: Learn how to use Cloud Manager to create your own sandbox program for training, demo, POC, or other non-production purposes.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 ---
-# Creating a Sandbox Program {#create-sandbox-program}
+# Creating Sandbox Programs {#create-sandbox-program}
 
 A sandbox program is typically created to serve the purposes of training, running demos, enablement, POCs, or documentation and is not meant to carry live traffic.
 
