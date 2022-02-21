@@ -1,10 +1,10 @@
 ---
-title: Creating a Production Program 
-description: Learn how to use Cloud Manager to create your own production program.
+title: Creating Production Programs 
+description: Learn how to use Cloud Manager to create your own production program to host live traffic.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 ---
 
-# Creating a Production Program {#create-production-program}
+# Creating Production Programs {#create-production-program}
 
 A production program is intended for a user who is familiar with AEM and Cloud Manager and is ready to start writing, building, and testing code with the objective of deploying it to host live traffic.
 
@@ -52,7 +52,6 @@ Your program is created by Cloud Manager and is displayed and selectable on the 
 
    ![Program overview](assets/program-overview.png)
 
-
 1. Select **Program Overview** to navigate to the Cloud Manager's **Overview** page.  
 
 1. The main call-to-action card on the overview page will guide you through creating an environment, a non-production pipeline, and finally a production pipeline.
@@ -62,3 +61,7 @@ Your program is created by Cloud Manager and is displayed and selectable on the 
 If at any time you need to switch to another program or return to the overview page to create another program, click on your program name in the top-left of the screen to reveal the **Navigate to** option.
 
 ![Navigate to](assets/create-program-a1.png)
+
+>[!NOTE]
+>
+>Unlike a [sandbox program,](introduction-sandbox-programs.md#auto-creation) a production program will require the user in the appropriate Cloud Manager role to create the project and add an environment through the self-service UI.

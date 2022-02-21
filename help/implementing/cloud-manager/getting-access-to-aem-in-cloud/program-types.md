@@ -1,10 +1,10 @@
 ---
-title: Understanding Programs and Program Types
-description: Learn about the hierarchy of Cloud Manager and how the different types of programs fit into its structure.
+title: Programs and Program Types
+description: Learn about the hierarchy of Cloud Manager and how the different types of programs fit into its structure and how they differ.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 ---
 
-# Understanding Programs and Program Types {#understanding-programs} 
+# Programs and Program Types {#understanding-programs} 
 
 Cloud Manager is built around a hierarchy of entities. The details of this is not critical to your everyday work in Cloud Manager, but an overview of it will help you as you understand programs and set up your very own.
 
