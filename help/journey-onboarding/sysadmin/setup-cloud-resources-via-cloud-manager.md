@@ -135,7 +135,7 @@ Now that you have ensured you have appropriate access, you can create your first
    
    >[!TIP]
    >
-   >For step by step instruction on how to use the Add Program wizard, go refer to the document [Creating Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md) or watch this [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) to learn how to create your AEM as a Cloud program and learn about important considerations before creating your program.
+   >For step by step instruction on how to use the Add Program wizard, go refer to the document [Creating Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) or watch this [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) to learn how to create your AEM as a Cloud program and learn about important considerations before creating your program.
 
    
 1. Upon successful creation of your cloud program you can navigate to your program from the Cloud Manager landing page to see the **Overview** page of your program.
