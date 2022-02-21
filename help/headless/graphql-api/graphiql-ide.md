@@ -23,7 +23,7 @@ The **GraphiQL** tool allows you to test and debug your GraphQL queries by enabl
 * run your queries to immediately see the the results
 * manage **Query Variables** 
 * save, and manage **Persisted Queries**
-* publish, or unpublish, **Persisted Queries**
+* publish, or unpublish, **Persisted Queries** (to/from `dev-publish`)
 * see the **History** of your previous queries
 * use the **Documentation Explorer** to access the documentation; helping you to learn and understand what methods are available.
 
@@ -82,15 +82,22 @@ You can either use:
 * **Save As** to persist a new query
 * **Save** to save updates changes to the persisted query that is currently loaded in the editor
 
-## Publishing persisted Queries {#publishing-persisted-queries}
+## Publishing persisted queries {#publishing-persisted-queries}
 
-Once you have selected your persisted query from the list (left panel) you can use the **Publish** and **Unpublish** actions. This will activate them to your publish environment for easy access by your applications.
+Once you have selected your persisted query from the list (left panel) you can use the **Publish** and **Unpublish** actions. This will activate them to your publish (`dev-publish`) environment for easy access by your applications when testing.
 
 <!-- mention caching here? need more details -->
 
-## Copy URL to access the raw query {#copy-url}
+>[!NOTE]
+>
+>The definition of the persisted query's cache `Time To Live` {"cache-control":"parameter":value} has a default value of 600ms.
 
-The **Copy URL** option allows you to copy the URL used to directly access the persisted query. This can then be used for testing, or embedding in your application.
+## Copy URL to access the query from your app {#copy-url}
+
+The **Copy URL** option allows you to copy the URL used to directly access the persisted query and see the results. This can then be used for:
+
+* testing
+* embedding in your application, for use with your production environment
 
 For example:
 
