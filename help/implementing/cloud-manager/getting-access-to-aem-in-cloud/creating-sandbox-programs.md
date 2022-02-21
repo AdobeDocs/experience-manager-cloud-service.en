@@ -7,7 +7,7 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 
 A sandbox program is typically created to serve the purposes of training, running demos, enablement, POCs, or documentation and is not meant to carry live traffic.
 
-Learn more about program types in the document [Understanding Program and Program Types.](understand-program-types.md)
+Learn more about program types in the document [Understanding Program and Program Types.](program-types.md)
 
 ## Create a Sandbox Program {#create}
 
