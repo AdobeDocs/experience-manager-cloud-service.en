@@ -30,8 +30,9 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 1. Customers can see whether the indexing job is complete on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
 
 1. Limitations:
-* Currently, index management on AEM as a Cloud Service is only supported for indexes of type lucene.
+* Currently, index management on AEM as a Cloud Service is only supported for indexes of type `lucene`.
 * Only standard analyzers are supported (that is, those that are shipped with the product). Custom analyzers are not supported.
+* Internally, other indexes might be configured and used for queries. For example, queries that are written against the `damAssetLucene` index might, on Skyline, be in fact be executed against an Elasticsearch version of this index. This difference is typically not visible to the application and user, however certain tools such the `explain` feature will report a different index. For differences between Lucene indexes and Elastic indexes, see [the Elastic documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html).
 
 ## How to Use {#how-to-use}
 
@@ -123,7 +124,7 @@ During development, or when using on premise installations, indexes can be added
 
 ### Index Management With Blue-Green Deployment {#index-management-with-blue-green-deployment}
 
-With blue-green deployments, there is no downtime. However, for index management, this requires that indexes are only used by certain versions of the application. For example, when adding an index in version 2 of the application, you would not want it to be used by version 1 of the application yet. The reverse is the case when an index is removed: an index removed in version 2 is still needed in version 1. When changing an index definition, we want the old version of the index only to be used for version 1, and the new version of the index only to be used for version 2.
+With blue-green deployments, there is no downtime. However, for index management, this may require that indexes are only used by certain versions of the application. For example, when adding an index in version 2 of the application, it might be better if it is not used by version 1 of the application yet. The reverse is the case when an index is removed: an index removed in version 2 might still be needed in version 1. When changing an index definition, one might want that the old version of the index is only used for version 1, and that the new version of the index is only used for version 2.
 
 The following table shows five index definitions: index `cqPageLucene` is used in both versions while index `damAssetLucene-custom-1` is used only in version 2.
 
