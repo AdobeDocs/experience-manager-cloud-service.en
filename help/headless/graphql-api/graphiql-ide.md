@@ -41,7 +41,7 @@ As a first step you need to select the **[Endpoint](/help/headless/graphql-api/g
 
 This is available from the drop-down list at the top-right.
 
-## Creating new queries {#creating-queries}
+## Creating, and persisting, a new query {#creating-new-query}
 
 You can enter your new query in the editor - which is in the middle-left panel, directly under the GraphiQL logo.
 
@@ -60,9 +60,17 @@ Just start typing, the editor also:
 >
 >Lines that start with a `#` are ignored.
 
+Use **Save As** to persist your new query.
+
+## Updating your persisted query {#updating-persisted-query}
+
+Select the query you want to update from the list in the **Persisted Queries** panel (far left).
+
+The query will be shown in the editor panel. Make any changes you need, then use **Save** to commit your updates to the persisted query.
+
 ## Running queries {#running-queries}
 
-You can run your new query immediately, or you can load and run a persisted query. To load a persisted query, select it from the list - the query will be shown in the editor panel.
+You can run a new query immediately, or you can load and run a persisted query. To load a persisted query, select it from the list - the query will be shown in the editor panel.
 
 In either case, the query showing in the editor panel is the query that will be executed when you either:
 
@@ -73,14 +81,11 @@ In either case, the query showing in the editor panel is the query that will be 
 
 <!-- more details needed here? -->
 
-The GraphiQL IDE also allows you to manage your [Query Variables](/help/headless/graphql-api/content-fragments.md#graphql-variables)
+The GraphiQL IDE also allows you to manage your [Query Variables](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
-## Saving persisted queries {#saving-persisted-queries}
+For example:
 
-You can either use:
-
-* **Save As** to persist a new query
-* **Save** to save updates changes to the persisted query that is currently loaded in the editor
+![GraphQL Variables](assets/cfm-graphqlapi-03.png "GraphQL Variables")
 
 ## Publishing persisted queries {#publishing-persisted-queries}
 
