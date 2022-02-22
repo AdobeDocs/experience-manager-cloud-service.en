@@ -7,6 +7,12 @@ description: Learn about integrating AEM with Adobe Analytics using Adobe I/O
 The integration of AEM with Adobe Analytics via the Analytics Standard API requires the configuration of Adobe IMS (Identity Management System) and Adobe I/O.
 
 >[!NOTE]
+> 
+>This feature is available in the prerelease channel. 
+>
+>See the [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable the feature for your environment.
+
+>[!NOTE]
 >
 >Support for the Adobe Analytics Standard API 2.0 is new in AEMaaCS 2022.2.0. This version of the API supports IMS authentication.
 >
