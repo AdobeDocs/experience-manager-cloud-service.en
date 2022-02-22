@@ -8,7 +8,7 @@ exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 
 A production program is intended for a team that is ready to start writing, building, and testing code with the objective of deploying it to host live traffic. 
 
-After you [create your production program,](creating-roduction-programs.md) a [program creation wizard](using-the-wizard.md) guides the user through selections depending on the user’s objective in creating the program.
+After you [create your production program,](creating-production-programs.md) a [program creation wizard](using-the-wizard.md) guides the user through selections depending on the user’s objective in creating the program.
 
 ## Program Creation Options {#program-creation-options}
 
