@@ -11,16 +11,17 @@ Cloud Manager is built around a hierarchy of entities. The details of this is no
 ![Cloud Manager hierarchy](assets/program-types1.png)
 
 * **TENANT** - This is the top of the hierarchy. Every customer is provisioned with a tenant.
-* **PROGRAMS** - Each tenant has one or more programs.
-* **ENVIRONMENTS** - Each program has multiple environments such as production for live content, and staging and dev for development purposes. Each program can have only one production environment, but multiple non-production environments.
+* **PROGRAMS** - Each tenant has one or more programs, [which often reflect the customer's licensed solutions.](introduction-production-programs.md)
+* **ENVIRONMENTS** - Each program has multiple environments such as production for live content, one for staging, and one for development purposes.
+  * Each program can have only one production environment, but multiple non-production environments.
 * **REPOSITORY** - Programs have git repositories where application and front-end code is maintained for the environments.
 * **TOOLS &amp; WORKFLOWS** - Pipelines manage the deployment of code from the repositories to the environments while other tools allow for access to logs, monitoring, and environment management.
 
 An example is often helpful in contextualizing this hierarchy.
 
-* WKND Travel and Adventure Enterprises might be a **tenant**.
-* The WKND Travel and Adventure Enterprises tenant might have a WKND Nightlife and a WKND Travel Magazine **program**.
-* WKND Nightlife and WKND Travel Magazine programs would both have dev, stage, and production **environments**.
+* WKND Travel and Adventure Enterprises might be a **tenant** that focuses on travel-related media.
+* The WKND Travel and Adventure Enterprises tenant might have two **programs**: one Sites program for WKND Magazine and one Assets program for WKND Media.
+* The WKND Magazine and WKND Media programs would both have dev, stage, and production **environments**.
 
 ## Source Code Repository {#source-code-repository}
 
