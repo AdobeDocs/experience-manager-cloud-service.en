@@ -56,9 +56,11 @@ To continue, click **[!UICONTROL Next]**. Based on the selection, the **[!UICONT
 
 ### Add Content {#add-content}
 
+<!-- remove note from Jan prerelease as this moves to GA in feb 2022 release.
 >[!NOTE]
 >
 >This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information to enable the feature for your environment.
+-->
 
 Publishing to [!DNL Experience Manager Assets] allows you to further add more content (assets and folders) to the publishing list. You can add more assets or folders to the list across the dam-repositories. Click on **[!UICONTROL Add Content]** button to add more content. 
 
@@ -68,9 +70,11 @@ You can add multiple assets from a folder or add multiple folders at a time. But
 
 ### Include Folder Settings {#include-folder-settings}
 
+<!-- remove note from Jan prerelease as this moves to GA in feb 2022 release.
 >[!NOTE]
 >
 >This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information to enable the feature for your environment.
+-->
 
 By default, publishing a folder to [!DNL Experience Manager Assets] publishes all the assets, subfolders, and their references. 
 
