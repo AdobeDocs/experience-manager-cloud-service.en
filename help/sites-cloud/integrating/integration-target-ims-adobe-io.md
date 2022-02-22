@@ -235,7 +235,11 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
     * **API Type**: REST
 
-    * **A4T Analytics Cloud Configuration**: Select the Analytics cloud configuration that is used for target activity goals and metrics. You need this if you are using Adobe Analytics as the reporting source when targeting content. If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+    * **A4T Analytics Cloud Configuration**: Select the Analytics cloud configuration that is used for target activity goals and metrics. You need this if you are using Adobe Analytics as the reporting source when targeting content. 
+    
+      <!--
+      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+      -->
 
     * **Use accurate targeting**: By default this check box is selected. If selected, the cloud service configuration will wait for the context to load before loading content. See note that follows.
 
@@ -247,9 +251,11 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
     * **Custom AT.js**: Leave blank if you checked the Tag Management box or to use the default AT.js. Alternatively upload your custom AT.js. Only appears if you have selected AT.js.
 
+   <!--
    >[!NOTE]
    >
    >[Configuration of a Cloud Service to use the Target Classic API](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) has been deprecated (uses the Adobe Recommendations Settings tab).
+   -->
 
 1. Click **Connect to Target** to initialize the connection with Adobe Target.
 
@@ -257,11 +263,13 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 1. Select **OK** on the message, followed by **OK** on the dialog to confirm the configuration.
 
+<!--
 1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that will be sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
+-->
 
 ### Tenant ID and Client Code {#tenant-client}
 
-With [Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes.md), the Client Code field had been added to the Target configuration window.
+With [Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md), the Client Code field had been added to the Target configuration window.
 
 When configuring the Tenant ID and Client Code fields, please be aware of the following:
 
