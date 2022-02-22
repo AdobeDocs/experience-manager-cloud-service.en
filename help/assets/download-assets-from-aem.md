@@ -38,9 +38,11 @@ By default, [!DNL Experience Manager] triggers a notification upon completion of
 
 ### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
 
+<!-- remove note from Jan prerelease as this moves to GA in feb 2022 release.
 >[!NOTE]
 >
 >This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information to enable the feature for your environment. 
+-->
 
 Asynchronous downloads are triggered in any of the following cases:
 
