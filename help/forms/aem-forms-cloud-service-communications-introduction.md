@@ -123,14 +123,6 @@ Figure: Dividing a source document based on bookmarks into multiple documents
 
 You can use the document manuaplation APIs to convert a PDF document to a PDF/A-compliant document and to determine whether a PDF document is PDF/A-compliant. PDF/A is an archival format meant for long-term preservation of the document’s content. The fonts are embedded within the document, and the file is uncompressed. As a result, a PDF/A document is typically larger than a standard PDF document. Also, a PDF/A document does not contain audio and video content.
 
->![Note]
->
-> To enable and configure document manipulation APIs, add the following rule to [Dispatcher configuration](setup-local-development-environment.md#forms-specific-rules-to-dispatcher): 
->
-> `# Allow Forms Doc Generation requests`
-> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
-
-
 ## Types of communications APIs
 
 Communications provide HTTP APIs for on-demand and batch document generation:
@@ -158,6 +150,13 @@ After onboarding, to enable Communications capability for your  Forms as a Cloud
 1. Click **[!UICONTROL Update]**.
 
 1. Run the build pipeline. After the build pipeline succeeds, Communications APIs are enabled for your environment.
+
+>[!NOTE]
+>
+> To enable and configure document manipulation APIs, add the following rule to [Dispatcher configuration](setup-local-development-environment.md#forms-specific-rules-to-dispatcher): 
+>
+> `# Allow Forms Doc Generation requests`
+> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
 
 <!--

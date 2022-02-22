@@ -27,6 +27,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2021 {#2021}
+      + [Release Notes for 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md) 
       + [Release Notes for 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
       + [Release Notes for 2021.9.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
       + [Release Notes for 2021.8.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
@@ -86,6 +87,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Installation](/help/journey-sites/demos-add-on/installation.md)
     + [Create Program](/help/journey-sites/demos-add-on/create-program.md)
     + [Create Demo Site](/help/journey-sites/demos-add-on/create-site.md)
+    + [Enable Screens](/help/journey-sites/demos-add-on/screens.md)
     + [Manage Your Demo Site](/help/journey-sites/demos-add-on/manage.md)
 + AEM as a Cloud Service Migration Journey {#migration-journey}
   + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/getting-started.md)
@@ -95,8 +97,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Post Go Live](/help/journey-migration/post-go-live.md)
   + [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/journey-migration/getting-started-partners.md)
   + Release Notes for Migration Tools {#release-notes-migration-tools}
-    + [Current Release Notes (2022.1.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+    + [Current Release Notes (2022.2.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2021 {#2021}
+      + [Release Notes for 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + [Release Notes for 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
       + [Release Notes for 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
       + [Release Notes for 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
@@ -118,6 +121,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [Guidelines and Best Practices for Using Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
       + [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+      + [Validating Content Transfers](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
       + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
       + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
       + [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
@@ -148,12 +152,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Configuring your account environment](/help/sites-cloud/authoring/getting-started/account-environment.md)
       + [Your Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)
       + [Keyboard Shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-    + Headless Content Author Journey {#headless-journey}
-      + [AEM Headless Content Author Journey - Overview](/help/journey-headless/author/overview.md)
-      + [Authoring for Headless with AEM - An Introduction](/help/journey-headless/author/introduction.md)
-      + [Authoring Basics for Headless with AEM](/help/journey-headless/author/basics.md)
-      + [Learn about using references in Content Fragments](/help/journey-headless/author/references.md)
-      + [Learn about defining Metadata and Tagging for Content Fragments](/help/journey-headless/author/metadata-tagging.md)
+    + [Headless Content Author Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
     + Authoring Fundamentals {#fundamentals}
       + [Environment and Tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
       + [Adding Page Annotations](/help/sites-cloud/authoring/fundamentals/annotations.md)
@@ -212,6 +211,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Administering {#administering}
     + Site Creation {#site-creation}
       + [Creating a New Site](/help/sites-cloud/administering/site-creation/create-site.md)
+      + [Enable Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
+      + [Using the Site Rail](/help/sites-cloud/administering/site-creation/site-rail.md)
       + [Site Templates](/help/sites-cloud/administering/site-creation/site-templates.md)
       + [Site Themes](/help/sites-cloud/administering/site-creation/site-themes.md)
       + AEM Quick Site Creation Journey {#quick-site}
@@ -243,14 +244,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
           + [Configure translation rules](/help/journey-sites/translation/translation-rules.md)
           + [Translate content](/help/journey-sites/translation/translate-content.md)
           + [Publish translated content](/help/journey-sites/translation/publish-content.md)
-        + Headless Translation Journey {#headless}
-          + [Understand headless translation in AEM](/help/journey-headless/translation/overview.md)
-          + [Get started with AEM headless translation](/help/journey-headless/translation/getting-started.md)
-          + [Learn about headless content and how to translate in AEM](/help/journey-headless/translation/learn-about.md)
-          + [Configure translation connector](/help/journey-headless/translation/configure-connector.md)
-          + [Configure translation rules](/help/journey-headless/translation/translation-rules.md)
-          + [Translate content](/help/journey-headless/translation/translate-content.md)
-          + [Publish translated content](/help/journey-headless/translation/publish-content.md)
+        + [Headless Translation Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
         + [Translating Content for Multilingual Sites](/help/sites-cloud/administering/translation/overview.md)
         + [Preparing Content for Translation](/help/sites-cloud/administering/translation/preparation.md)
         + [Managing Translation Projects](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -309,9 +303,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Search facets](/help/assets/search-facets.md)
     + [Assets HTTP API](/help/assets/mac-api-assets.md)
     + [Content Fragments support in Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
-    + [GraphQL API for Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md)
-    + [Authentication for Remote GraphQL Queries on Content Fragments](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
-    + [GraphQL API with Content Fragments - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
     + [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
     + [Generate For Placement Only renditions](/help/assets/configure-fpo-renditions.md)
     + [Asset reports](/help/assets/asset-reports.md)
@@ -537,11 +528,80 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
++ Headless {#headless}
+  + [Introduction to AEM Headless](/help/headless/introduction.md)
+  + Setup {#setup}
+    + [Introduction](/help/headless/setup/introduction.md)
+    + [Configuration](/help/headless/setup/create-configuration.md)
+    + [Content Fragment Model](/help/headless/setup/create-content-model.md)
+    + [Assets Folder](/help/headless/setup/create-assets-folder.md)
+    + [Content Fragment](/help/headless/setup/create-content-fragment.md)
+    + [GraphQL Endpoint](/help/headless/setup/create-api-request.md)
+  + Content Fragments {#content-fragments}
+    + [Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
+    + [Content Fragment Models](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
+    + [Managing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
+    + Authoring{#authoring}
+        + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
+        + [Text editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
+        + [Associated Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)         
+        + [Variations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
+    + [Metadata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
+    + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
+    + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+  + GraphQL API {#graphql-api}
+    + [GraphQL API for Content Fragments](/help/headless/graphql-api/content-fragments.md)
+    + [Manage GraphQL endpoints](/help/headless/graphql-api/graphql-endpoint.md)
+    + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
+    + [Sample GraphQL queries](/help/headless/graphql-api/sample-queries.md)
+    + [Persisted GraphQL queries](/help/headless/graphql-api/persisted-queries.md)
+  + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
+  + Security {#security}
+    + [Permissions](/help/headless/security/permissions.md)
+    + [Authentication](/help/headless/security/authentication.md)
+  + Deployment {#deployment}
+    + [Architecture](/help/headless/deployment/architecture.md)
+    + [Dispatcher](/help/headless/deployment/dispatcher.md)
+    + [CORS Config](/help/headless/deployment/cross-origin-resource-sharing.md)
+    + [Referrer Filter](/help/headless/deployment/referrer-filter.md)
+  + Headless Journeys {#journeys}
+    + Headless Developer Journey {#developer}
+      + [Understand Headless in AEM](/help/journey-headless/developer/overview.md)
+      + [Learn about CMS Headless Development](/help/journey-headless/developer/learn-about.md)
+      + [Getting Started with AEM Headless as a Cloud Service](/help/journey-headless/developer/getting-started.md)
+      + [Path to your first experience using AEM Headless](/help/journey-headless/developer/path-to-first-experience.md)
+      + [How to model your content as AEM Content Models](/help/journey-headless/developer/model-your-content.md)
+      + [How to access your content via AEM delivery APIs](/help/journey-headless/developer/access-your-content.md)
+      + [How to update your content via AEM Assets APIs](/help/journey-headless/developer/update-your-content.md)
+      + [How to put it all together](/help/journey-headless/developer/put-it-all-together.md)
+      + [How to go live with your headless application](/help/journey-headless/developer/go-live.md)
+      + [Optional - How to create single page applications with AEM](/help/journey-headless/developer/create-spa.md)
+    + Headless Content Architect Journey {#architect}
+      + [AEM Headless Content Architect Journey Overview](/help/journey-headless/architect/overview.md)
+      + [Content Modeling for Headless with AEM - An Introduction](/help/journey-headless/architect/introduction.md)
+      + [Learn the Content Modeling Basics for Headless with AEM](/help/journey-headless/architect/basics.md)
+      + [Learn about Creating Content Fragment Models in AEM](/help/journey-headless/architect/model-structure.md)
+    + Headless Translation Journey {#translation}
+      + [Understand headless translation in AEM](/help/journey-headless/translation/overview.md)
+      + [Get started with AEM headless translation](/help/journey-headless/translation/getting-started.md)
+      + [Learn about headless content and how to translate in AEM](/help/journey-headless/translation/learn-about.md)
+      + [Configure translation connector](/help/journey-headless/translation/configure-connector.md)
+      + [Configure translation rules](/help/journey-headless/translation/translation-rules.md)
+      + [Translate content](/help/journey-headless/translation/translate-content.md)
+      + [Publish translated content](/help/journey-headless/translation/publish-content.md)
+    + Headless Content Author Journey {#author}
+      + [AEM Headless Content Author Journey - Overview](/help/journey-headless/author/overview.md)
+      + [Authoring for Headless with AEM - An Introduction](/help/journey-headless/author/introduction.md)
+      + [Authoring Basics for Headless with AEM](/help/journey-headless/author/basics.md)
+      + [Learn about using references in Content Fragments](/help/journey-headless/author/references.md)
+      + [Learn about defining Metadata and Tagging for Content Fragments](/help/journey-headless/author/metadata-tagging.md)
 + Implementing {#implementing}
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
   + Using Cloud Manager {#using-cloud-manager}
     + Release Notes for Cloud Manager {#release-notes-cloud-manager}
       + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + 2022 {#2022}
+        + [Release Notes for 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
       + 2021 {#2021}
         + [Release Notes for 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
         + [Release Notes for 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
@@ -592,12 +652,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md)
     + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Introduction](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-      + Production Pipelines {#production-pipelines}
-        + [Configuring a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-        + [Editing a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/editing-production-pipelines.md)
-      + Non-Production Pipelines {#non-production-pipelines}
-        + [Configuring a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-        + [Editing a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
+      + [Configuring a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+      + [Configuring a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+      + [Managing Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
     + [Deploying your Code](/help/implementing/cloud-manager/deploy-code.md)
     + Understanding your Test Results {#test-results}
       + [Overview](/help/implementing/cloud-manager/overview-test-results.md)
@@ -681,49 +738,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Implementing a Custom Predicate Evaluator](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [Custom Error Pages](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM Node Types](/help/implementing/developing/introduction/node-types.md)
-    + Headless Experience Management {#headless}
-      + [Headless and AEM](/help/implementing/developing/headless/introduction.md)
-      + Headless Journeys {#journeys}
-        + Headless Developer Journey {#developer}
-          + [Understand Headless in AEM](/help/journey-headless/developer/overview.md)
-          + [Learn about CMS Headless Development](/help/journey-headless/developer/learn-about.md)
-          + [Getting Started with AEM Headless as a Cloud Service](/help/journey-headless/developer/getting-started.md)
-          + [Path to your first experience using AEM Headless](/help/journey-headless/developer/path-to-first-experience.md)
-          + [How to model your content as AEM Content Models](/help/journey-headless/developer/model-your-content.md)
-          + [How to access your content via AEM delivery APIs](/help/journey-headless/developer/access-your-content.md)
-          + [How to update your content via AEM Assets APIs](/help/journey-headless/developer/update-your-content.md)
-          + [How to put it all together](/help/journey-headless/developer/put-it-all-together.md)
-          + [How to go live with your headless application](/help/journey-headless/developer/go-live.md)
-          + [Optional - How to create single page applications with AEM](/help/journey-headless/developer/create-spa.md)
-        + AEM Headless Content Architect Journey {#architect}
-          + [AEM Headless Content Architect Journey Overview](/help/journey-headless/architect/overview.md)
-          + [Content Modeling for Headless with AEM - An Introduction](/help/journey-headless/architect/introduction.md)
-          + [Learn the Content Modeling Basics for Headless with AEM](/help/journey-headless/architect/basics.md)
-          + [Learn about Creating Content Fragment Models in AEM](/help/journey-headless/architect/model-structure.md)
-      + Headless Getting Started Guide {#getting-started}
-        + [Introduction](/help/implementing/developing/headless/getting-started/introduction.md)
-        + [Creating a Configuration](/help/implementing/developing/headless/getting-started/create-configuration.md)
-        + [Creating a Content Fragment Model](/help/implementing/developing/headless/getting-started/create-content-model.md)
-        + [Creating an Assets Folder](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
-        + [Creating a Content Fragment](/help/implementing/developing/headless/getting-started/create-content-fragment.md)
-        + [Accessing and Delivering Content Fragments](/help/implementing/developing/headless/getting-started/create-api-request.md)
-      + Content Fragments {#content-fragments}
-        + [Headless Delivery with Content Fragments and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
-        + [Working with Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
-        + [Enable Content Fragment Functionality for your Instance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html)
-        + [Content Fragment Models](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
-        + [Managing Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
-        + [Variations - Authoring Fragment Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
-        + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
-        + [Using Associated Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
-        + [Metadata - Fragment Properties](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
-        + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-        + [Preview - JSON Representation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
-      + Delivery API {#delivery-api}
-        + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
-        + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-        + [AEM GraphQL API with Content Fragments - Sample Content and Queries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
-        + [Authentication for Remote AEM GraphQL Queries on Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
+    + [Headless Experience Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
     + Hybrid and SPA Development {#hybrid}
       + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
