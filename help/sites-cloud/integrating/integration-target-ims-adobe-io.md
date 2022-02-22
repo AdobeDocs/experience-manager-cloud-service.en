@@ -1,26 +1,20 @@
 ---
 title: Integration with Adobe Target using Adobe I/O
-seo-title: Integration with Adobe Target using Adobe I/O
 description: Learn about integrating AEM with Adobe Target using Adobe I/O
-seo-description: Learn about integrating AEM with Adobe Target using Adobe I/O
-uuid: dd4ed638-e182-4d7e-9c98-282431812467
-contentOwner: aheimoz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: integration
-discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
-docset: aem65
-exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
 ---
 # Integration with Adobe Target using Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
 
 The integration of AEM with Adobe Target via the Target Standard API requires the configuration of Adobe IMS (Identity Management System) and Adobe I/O.
 
 >[!NOTE]
+> 
+>This feature is available in the prerelease channel. 
 >
->Support for the Adobe Target Standard API is new in AEM 6.5. The Target Standard API uses IMS authentication.
+>See the [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable the feature for your environment.
+
+>[!NOTE]
 >
->Using the Adobe Target Classic API in AEM is still supported for backward compatibility. The [Target Classic API uses user credentials authentication](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
+>Support for the Adobe Target Standard API is new in AEMaaCS. The Target Standard API uses IMS authentication.
 >
 >The API selection is driven by the authentication method used for AEM/Target integration. 
 >See also the [Tenant ID and Client Code](#tenant-client) section.
@@ -267,7 +261,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 ### Tenant ID and Client Code {#tenant-client}
 
-With [Adobe Experience Manager 6.5.8.0](/help/release-notes/release-notes.md), the Client Code field had been added to the Target configuration window.
+With [Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes.md), the Client Code field had been added to the Target configuration window.
 
 When configuring the Tenant ID and Client Code fields, please be aware of the following:
 
@@ -280,7 +274,7 @@ In both cases, be aware that:
 * You have the option to change the default Tenant ID set.
 * Accordingly, the backend calls to Target will be based on the Tenant ID and the client side calls to Target will be based on the Client Code.
 
-As stated previously, the first case is the most common for AEM 6.5. Either way, make sure **both** fields contain the correct information depending on your requirements.
+As stated previously, the first case is the most common for AEM as a Cloud Service. Either way, make sure **both** fields contain the correct information depending on your requirements.
 
 >[!NOTE]
 >
