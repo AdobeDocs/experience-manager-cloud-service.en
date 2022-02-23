@@ -32,7 +32,7 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 1. Limitations:
 * Currently, index management on AEM as a Cloud Service is only supported for indexes of type `lucene`.
 * Only standard analyzers are supported (that is, those that are shipped with the product). Custom analyzers are not supported.
-* Internally, other indexes might be configured and used for queries. For example, queries that are written against the `damAssetLucene` index might, on Skyline, be in fact be executed against an Elasticsearch version of this index. This difference is typically not visible to the application and user, however certain tools such the `explain` feature will report a different index. For differences between Lucene indexes and Elastic indexes, see [the Elastic documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html).
+* Internally, other indexes might be configured and used for queries. For example, queries that are written against the `damAssetLucene` index might, on Skyline,  in fact be executed against an Elasticsearch version of this index. This difference is typically not visible to the application and user, however certain tools such the `explain` feature will report a different index. For differences between Lucene indexes and Elastic indexes, see [the Elastic documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers do not need to, and can not, configure Elasticsearch indexes directly.
 
 ## How to Use {#how-to-use}
 
@@ -124,7 +124,9 @@ During development, or when using on premise installations, indexes can be added
 
 ### Index Management With Blue-Green Deployment {#index-management-with-blue-green-deployment}
 
-With blue-green deployments, there is no downtime. However, for index management, this may require that indexes are only used by certain versions of the application. For example, when adding an index in version 2 of the application, it might be better if it is not used by version 1 of the application yet. The reverse is the case when an index is removed: an index removed in version 2 might still be needed in version 1. When changing an index definition, one might want that the old version of the index is only used for version 1, and that the new version of the index is only used for version 2.
+With blue-green deployments, there is no downtime. During an upgrade, for some time, both the old version (for example, version 1) of the application, as well as the new version (version 2), are running concurrently, against the same repository. If version 1 requires a certain index to be available, then this index must not be removed in version 2: the index should be removed later, for example in version 3, at which point it is guaranteed that version 1 of the application is no longer running. Also, applications should be written such that version 1 works well, even if version 2 is running, and if indexes of version 2 are available.
+
+After upgrading to the new version is complete, old indexes can be garbage collected by the system. The old indexes might still stay for some time, in order to speed up rollbacks (if a rollback should be needed).
 
 The following table shows five index definitions: index `cqPageLucene` is used in both versions while index `damAssetLucene-custom-1` is used only in version 2.
 
@@ -155,7 +157,7 @@ Once Adobe changes an out-of-the-box index like "damAssetLucene" or "cqPageLucen
 
 ### Current Limitations {#current-limitations}
 
-Index management is currently only supported for indexes of type `lucene`.
+Index management is currently only supported for indexes of type `lucene`. Internally, other indexes might be configured and used for queries, for example elastic indexes.
 
 ### Adding an Index {#adding-an-index}
 
