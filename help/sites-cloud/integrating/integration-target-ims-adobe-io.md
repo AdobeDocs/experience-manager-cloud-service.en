@@ -120,6 +120,9 @@ Open the Adobe I/O console to create an I/O Project with Adobe Target that AEM w
    ![](assets/integrate-target-io-07.png)
 -->
 
+
+<!-- could not verify - only saw Adobe Target Classic -->
+
 ### Assigning privileges to the Integration {#assigning-privileges-to-the-integration}
 
 You must now assign the required privileges to the integration:
@@ -192,9 +195,7 @@ To confirm that the configuration is operating as expected:
 
    ![](assets/integrate-target-io-12.png)
 
-1. If successful, you will see the message:
-
-   ![](assets/integrate-target-io-13.png)
+1. If successful, you will see a confirmation message.
 
 ## Configuring the Adobe Target Cloud Service {#configuring-the-adobe-target-cloud-service}
 
@@ -217,6 +218,8 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
     * **Authentication**: IMS
 
+    * **Client Code**: See the [Tenant ID and Client Code](#tenant-client) section.
+
     * **Tenant ID**: the Adobe IMS Tenant ID. See also the [Tenant ID and Client Code](#tenant-client) section.
 
       >[!NOTE]
@@ -228,8 +231,6 @@ The configuration can now be referenced for a Cloud Service to use the Target St
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >Then you would use `yourtenantid`.
-
-    * **Client Code**: See the [Tenant ID and Client Code](#tenant-client) section.
 
     * **IMS Configuration**: select the name of the IMS Configuration
 
@@ -257,7 +258,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
    >[Configuration of a Cloud Service to use the Target Classic API](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) has been deprecated (uses the Adobe Recommendations Settings tab).
    -->
 
-1. Click **Connect to Target** to initialize the connection with Adobe Target.
+1. Click **Connect to Adobe Target** to initialize the connection with Adobe Target.
 
    If the connection is successful, the message **Connection successful** is displayed.
 
