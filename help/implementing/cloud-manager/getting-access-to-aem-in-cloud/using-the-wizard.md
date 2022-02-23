@@ -5,7 +5,7 @@ exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 ---
 # Project Creation Wizard {#project-creation-wizard}
 
-After you create your production program, Cloud Manger offers a wizard to create a minimal AEM project based on the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) to accelerate project creation.
+After you create your production program, Cloud Manger offers a wizard to create a minimal AEM project based on the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) to get your started quickly.
 
 Follow these steps to create an AEM application project in Cloud Manager using the wizard.
 
@@ -37,3 +37,7 @@ Once program creation is complete, an **Add Environment** card replaces the **Pr
 You now have an AEM project based on the AEM archetype added to your git repository to serve as a basis for development for your own project. Next you can create your environments where you can deploy the project code.
 
 Please refer to the document [Managing your Environments](/help/implementing/cloud-manager/manage-environments.md) to learn how to add or manage environments.
+
+>[!NOTE]
+>
+>The wizard is only available for production programs. Because [sandbox programs](introduction-sandbox-programs.md#auto-creation) include automatic project creation, the wizard is not necessary.
