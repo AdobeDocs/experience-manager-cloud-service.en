@@ -143,7 +143,11 @@ The following image illustrates the various stages when you ingest assets to Exp
 
 #### Prerequisites {#prerequisites-bulk-ingestion}
 
-You must have the source blob storage details to connect your Experience Manager instance to a data storage.
+An external storage account or bucket from Azure or AWS is required to use this feature.
+
+>[!NOTE]
+>
+>Create the storage account container or bucket as private and accept connections only from authorized requests. However, additional restrictions on ingress network connections are not supported.
 
 #### Configure the Bulk Import tool {#configure-bulk-ingestor-tool} 
 
