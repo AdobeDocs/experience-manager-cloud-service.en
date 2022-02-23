@@ -93,9 +93,9 @@ For example:
 
 ![GraphQL Variables](assets/cfm-graphqlapi-03.png "GraphQL Variables")
 
-## Publishing persisted queries {#publishing-persisted-queries}
+## Publishing persisted queries (dev-publish) {#publishing-persisted-queries}
 
-Once you have selected your persisted query from the list (left panel) you can use the **Publish** and **Unpublish** actions. This will activate them to your publish (`dev-publish`) environment for easy access by your applications when testing.
+Once you have selected your persisted query from the list (left panel) you can use the **Publish** and **Unpublish** actions. This will activate them to your development publish environment (`dev-publish`) environment for easy access by your applications when testing.
 
 <!-- mention caching here? need more details -->
 
@@ -103,12 +103,18 @@ Once you have selected your persisted query from the list (left panel) you can u
 >
 >The definition of the persisted query's cache `Time To Live` {"cache-control":"parameter":value} has a default value of 600ms.
 
-## Copy URL to access the query from your app {#copy-url}
+## Copy URL to directly access the query {#copy-url}
 
 The **Copy URL** option allows you to copy the URL used to directly access the persisted query and see the results. This can then be used for:
 
-* testing
+* testing; for example, by accessing in a browser
 * embedding in your application, for use with your production environment
+
+  >[!NOTE]
+  >
+  >The URL will need [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
+  >
+  >The target environment might need adjusting, depending on your requirements.
 
 For example:
 
@@ -127,6 +133,11 @@ The **Copy URL** option is accessible via the three vertical dots to the right o
 The **Delete** option is also accessible via the three vertical dots to the right of the persisted query name (far left panel).
 
 <!-- what happens if you try to delete something that is still published? -->
+
+
+## Installing your Persisted Query on Production {#installing-persisted-query-production}
+
+After developing and testing your persisted query with GraphiQL, the final goal is to [transfer it to your production environment](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production) for use by your applications.
 
 ## Keyboard shortcuts {#keyboard-shortcuts}
 
