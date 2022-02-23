@@ -196,63 +196,6 @@ To confirm that the configuration is operating as expected:
 
 1. If successful, you will see a confirmation message.
 
-## Configuring the Adobe Target Cloud Service {#configuring-the-adobe-target-cloud-service}
-
-The configuration can now be referenced for a Cloud Service to use the Target Standard API:
-
-1. Open the **Tools** menu. Then, within the **Cloud Services** section, select **Adobe Target**. The Adobe Target Browser will open:
-
-   ![](assets/integrate-target-browser.png)
-
-1. Select the appropriate configuration:
-
-   ![](assets/integrate-target-browser-create.png)
-
-   >[!NOTE]
-   >
-   >Each entry correlates to a Site specific configuration, as defined in the [Configuration Browser](/help/implementing/developing/introduction/configurations.md).
-   >
-   >To integrate with Adobe Target the configuration must be enabled for **Cloud Configurations**.
-
-1. Select **Create** to open the **Create Adobe Target Configuration**:
-
-   ![](assets/integrate-target-configuration.png)
-
-1. Enter a **Title**; the name will be generated from the title.
-
-1. Enter the **Adobe Target Client Code**. 
-   This is the Client Code that you use to log into Adobe Target. See the [Tenant ID and Client Code](#tenant-client) section.
-
-1. Enter the **Adobe Target Tenant ID**. 
-   This is the IMS ID that you use to log into Adobe Target. See also the [Tenant ID and Client Code](#tenant-client) section.
-
-   >[!NOTE]
-   >
-   >For IMS this value needs to be taken from Target itself. You can log into Target and extract the Tenant ID from the URL.
-   >
-   >For example, if the URL is:
-   >
-   >`https://experience.adobe.com/#/@yourtenantid/target/activities`
-   >
-   >Then you would use `yourtenantid`.
-
-1. Select your **IMS Configuration** from the drop down list.
-
-1. Activate the following as required:
-
-   * **Synchronize segments from Adobe Target** 
-      Select this only if your Adobe Target segments, synchronizede to AEM ContextHub are used for targeting.
-      <!--
-      Select this option to download segments that are defined in Target to use them in AEM. You must select this option when the API Type property is REST, because inline segments are not supported and you always need to use segments from Target. (Note that the AEM term of 'segment' is equivalent to the Target 'audience'.)
-      -->
-   * **On page load, wait for ContextHub data to load before sending Target request**
-     If this option is active, then all mboxes using this Cloud Service configuration will wait for the AEM context to load before loading their content.
-
-1. Click **Connect** to initialize the connection with Adobe Target.
-
-1. Use **Save** to save the configuration details.
-
-
 <!--
 
 ## Configuring the Adobe Target Cloud Service {#configuring-the-adobe-target-cloud-service}
@@ -324,8 +267,6 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that will be sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
 
--->
-
 ### Tenant ID and Client Code {#tenant-client}
 
 With [Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md), the Client Code field had been added to the Target configuration window.
@@ -351,3 +292,4 @@ As stated previously, the default case is the most common for AEM as a Cloud Ser
 > 1. Re-enter the Tenant ID.
 > 2. Re-connect to Target.
 > 3. Save the configuration.
+-->
