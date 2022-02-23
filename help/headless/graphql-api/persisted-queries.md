@@ -37,7 +37,7 @@ For example, if there is a particular query called `my-query`, which uses a mode
 
 ## How to persist a GraphQL query
 
-It is recommended to persist queries on an AEM author environment initially and then [publish the query](#publish-persisted-query) to an AEM publish environment. 
+It is recommended to persist queries on an AEM author environment initially and then [transfer the query](#transfer-persisted-query-production) to your production AEM publish environment, for use by applications. 
 
 There are various methods of persisting queries, including:
 
@@ -185,11 +185,11 @@ Here are the steps to persist a given query using the **curl** command line tool
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-## Publish a persisted query {#publish-persisted-query}
+## Transferring a persisted query to your Production environment  {#transfer-persisted-query-production}
 
-Persisted queries can be published to a Publish environment (of AEM as a Cloud Service) where they can be requested by client applications. To use a persisted query on publish, the related persistent tree need to replicated.
+Ultimately your persisted query needs to be on your production publish environment (of AEM as a Cloud Service), where it can be requested by client applications. To use a persisted query on your production publish environment, the related persistent tree needs to replicated.
 
-There are several approaches for publishing a persisted query:
+There are several approaches for transferring your persisted query:
 
 * Using a POST for replication:
 
@@ -213,11 +213,7 @@ There are several approaches for publishing a persisted query:
 * Using a workflow (via workflow launcher configuration):
   1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 
-* Using the GraphiQL IDE
-  The GraphiQL IDE allows you to [publish Persisted Queries](/help/headless/graphql-api/graphiql-ide.md#publishing-persisted-queries).
-
-
-Once the query configuration is on publish, the same authentication principles apply, just using the publish endpoint.
+Once the query configuration is on your publish environment in production, the same authentication principles apply, just using the publish endpoint.
 
 >[!NOTE]
 >
@@ -225,12 +221,12 @@ Once the query configuration is on publish, the same authentication principles a
 >
 >If that is not the case it will not be able to execute.
 
->[!NOTE]
->
->Any semicolons (";") in the URLs need to be encoded.
->
->For example, as in the request to Execute a persisted query:
->
->```xml
->curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
->```
+## Encoding the query URL for use by an app {#encoding-query-url}
+
+For use by an application, any semicolons (";") in the URLs need to be encoded.
+
+For example, as in the request to Execute a persisted query:
+
+```xml
+curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+```
