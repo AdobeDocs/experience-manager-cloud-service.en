@@ -128,7 +128,7 @@ You can check the connectivity between the configured [!DNL Sites] deployments a
 
 ## Configure a connection between [!DNL Sites] and [!DNL Dynamic Media] deployments {#sites-dynamic-media-connected-assets}
 
-You can configure a connection between [!DNL Sites] deployment and [!DNL Dynamic Media] deployment that allows webpage authors to use [!DNL Dynamic Media] images in their web pages. While authoring webpages, the experience of using remote Assets and remote [!DNL Dynamic Media] deployments remains the same. This allows you to leverage the [!DNL Dynamic Media] functionality via Connected Assets feature, for example smart crop and image presets.
+You can configure a connection between [!DNL Sites] deployment and [!DNL Dynamic Media] deployment that allows webpage authors to use [!DNL Dynamic Media] images in their web pages. While authoring webpages, the experience of using remote Assets and remote [!DNL Dynamic Media] deployments remains the same. This allows you to leverage the [!DNL Dynamic Media] functionality via Connected Assets feature, for example smart crop and image presets. In other words, after configuring Connected Assets, you can leverage the [!DNL Dynamic Media] functionality for processing image assets on the remote DAM deployment.
 
 The following diagrams illustrate the scenarios to use Dynamic Media assets on a remote DAM deployment on a [!DNL Sites] page:
 
@@ -145,7 +145,7 @@ The following diagrams illustrate the scenarios to use Dynamic Media assets on a
 
 **Result**
 
-Dynamic Media assets available on Sites deployment get configured to read-only mode automatically.
+Dynamic Media assets available on Sites deployment get configured to read-only mode automatically. You cannot use Dynamic Media to process assets on the Sites deployment.
 
 **Scenario 2**
 
@@ -158,7 +158,7 @@ Dynamic Media assets available on Sites deployment get configured to read-only m
 
 **Result**
 
-Same as Scenario 1: Dynamic Media assets available on Sites deployment get configured to read-only mode automatically. The sync options are disabled.
+Same as Scenario 1: Dynamic Media assets available on Sites deployment get configured to read-only mode automatically. The sync options are disabled. You cannot use Dynamic Media to process assets on the Sites deployment.
 
 To configure the connection, follow these steps:
 
