@@ -288,7 +288,7 @@ Yes, you can use assets of Image and Document format types from the remote DAM d
 
 ### Can you use content fragments and video assets from the remote DAM deployment on the [!DNL Sites] deployment after configuring Connected Assets?
 
-Yes, you can use content fragments and video assets from the remote DAM deployment on the [!DNL Sites] deployment after configuring Connected Assets.
+No, you cannot use content fragments and video assets from the remote DAM deployment on the [!DNL Sites] deployment after configuring Connected Assets.
 
 ### Can you use Dynamic Media assets from the remote DAM deployment on the [!DNL Sites] deployment after configuring Connected Assets?
 
@@ -300,7 +300,7 @@ Yes, after configuring Connected Assets, you can perform the update, delete, ren
 
 ### After configuring Connected Assets, can you add or modify assets on your [!DNL Sites] deployment and make them available on remote DAM deployment?
 
-No, the assets on your [!DNL Sites] deployment cannot be made available to the remote DAM deployment.
+You can add assets to the [!DNL Sites] deployment, however, those assets cannot be made available to the remote DAM deployment.
 
 
 ## Limitations and best practices {#tip-and-limitations}
