@@ -128,7 +128,9 @@ You can check the connectivity between the configured [!DNL Sites] deployments a
 
 ## Configure a connection between [!DNL Sites] and [!DNL Dynamic Media] deployments {#sites-dynamic-media-connected-assets}
 
-You can configure a connection between [!DNL Sites] deployment and [!DNL Dynamic Media] deployment that allows webpage authors to use [!DNL Dynamic Media] images in their web pages. While authoring webpages, the experience of using remote Assets and remote [!DNL Dynamic Media] deployments remains the same. This allows you to leverage the [!DNL Dynamic Media] functionality via Connected Assets feature, for example smart crop and image presets. In other words, after configuring Connected Assets, you can leverage the [!DNL Dynamic Media] functionality for processing image assets on the remote DAM deployment.
+You can configure a connection between [!DNL Sites] deployment and [!DNL Dynamic Media] deployment that allows webpage authors to use [!DNL Dynamic Media] images in their web pages. While authoring webpages, the experience of using remote Assets and remote [!DNL Dynamic Media] deployments remains the same. This allows you to leverage the [!DNL Dynamic Media] functionality via Connected Assets feature, for example smart crop and image presets. 
+
+With Connected Assets, you can leverage the [!DNL Dynamic Media] functionality for processing image assets on the remote DAM deployment.
 
 The following diagrams illustrate the scenarios to use Dynamic Media assets on a remote DAM deployment on a [!DNL Sites] page:
 
