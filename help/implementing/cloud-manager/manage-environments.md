@@ -1,48 +1,49 @@
 ---
-title: Manage Environments - Cloud Service
-description: Manage Environments - Cloud Service
+title: Managing Environments
+description: Learn about the types of environments you can create and how to create them for your Cloud Manager project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 ---
-# Managing Environments {#manage-environments} 
+# Managing Environments {#managing-environments} 
 
-The following section describes the types of environment a  user can create and how the user can create an environment.
+Learn about the types of environments you can create and how to create them for your Cloud Manager project.
 
 ## Environment Types {#environment-types}
 
 A user with the requisite permissions can create the following environment types (within the bounds of what is available to the specific tenant). 
 
-* **Production and Stage Environment**: 
-The Production and Stage is available as a duo and is used for testing and production purposes.  
+* **Production and Stage** - The production and staging environments are available as a pair and are used for production and testing purposes, respectively.
 
-* **Development**: A Development environment can be created for development and testing purposes and will be associated with non-production pipelines only.
-
-  >[!NOTE]
-  >A Development environment that is auto-created in a Sandbox program will be configured to include Sites and Assets solutions.
+* **Development** - A development environment can be created for development as well as testing purposes and can be associated with non-production pipelines only.
    
-  The following table summarizes Environment types and their attributes:
+This table summarizes environment types and their attributes.
 
-   |Name|Author Tier|Publish Tier|User Can create| User can delete|Pipeline which can be associated with environment|
-   |--- |--- |--- |--- |---|---|
-   |Production |Yes |Yes if Sites included |Yes |No|Production pipeline|
-   |Stage |Yes |Yes if Sites included |Yes |No|Production pipeline|
-   |Development |Yes |Yes if Sites included |Yes |Yes|Non-production pipeline|
+|Environment|Available on Author Tier?|Available on Publish Tier?|User-Creatable?|User-Deletable?|Pipeline that can be associated|
+|--- |--- |--- |--- |---|---|
+|Production |Yes |Yes, if Sites included |Yes |No|Production pipeline|
+|Stage |Yes |Yes, if Sites included |Yes |No|Production pipeline|
+|Development |Yes |Yes, if Sites included |Yes |Yes|Non-production pipeline|
 
-   >[!NOTE]
-   >The Production and Stage is available as a duo and is used for testing and production purposes.  User will not be able to create only Stage or only Production environment.
+>[!NOTE]
+>
+>Production and staging environments are only created as a pair. You can not create only a staging or only a production environment.
 
-## Adding Environment {#adding-environments}
+## Adding an Environment {#adding-environments}
 
-1. Click on **Add Environment** to add an environment. This button will be accessible from the **Environments** screen.
-   ![](assets/environments-tab.png)
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-    The **Add Environment** option is also available on the **Environments** card when there are zero environments in the program.
+1. Click on the program for which you want to add an environment.
 
-    ![](assets/no-environments.png)
+1. From the **Program Overview** page, click on **Add Environment** on the **Environments** card to add an environment.
 
-   >[!NOTE]
-   >The **Add Environment** option will be disabled based on lack of permissions or what may be contracted.
+   ![Environments card](assets/no-environments.png)
+
+   * The **Add Environment** option is also available on the **Environments** tab.
+
+     ![Environments tab](assets/environments-tab.png)
+
+   * The **Add Environment** option may be disabled due to lack of permissions or depending on the licensed resources.
    
-1. The **Add environment** dialog box appears.The user needs to submit details such as **Environment type** and **Environment name** and **Environment description** (depending upon the user’s objective in creating the environment within the bounds of what is available to the specific tenant).
+1. In the **Add environment** dialog that appears, select an **Environment type** and provide an **Environment name** and **Environment description**.
 
    ![](assets/add-environment2.png)
 
