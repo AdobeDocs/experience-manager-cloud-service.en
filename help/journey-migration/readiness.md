@@ -108,7 +108,7 @@ The list of items in the below table is the subset of the changes most relevant 
   <tr>
     <td>Workflow Launchers</td>
     <td></td>
-    <td>Remove any Workflow Launchers that are triggering either OOTB or custom DAM Update Asset Workflow from your code.</br>All the assets uploaded into AEM as a Cloud Service are going to be processed by the Asset Processing Service. There is a Workflow post processing OSGi configuration which can be used to trigger additional custom processing steps.</td>
+    <td>Remove any Workflow Launchers that are triggering either OOTB or custom DAM Update Asset Workflow from your code.</br>All the assets uploaded into AEM as a Cloud Service are going to be processed by the Asset Processing Service. For custom steps please refer to <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> Post Processing Workflows</a> on how to setup and configure post-processing workflows.</td>
   </tr>
   <tr>
     <td>Custom Rendition Steps</td>
