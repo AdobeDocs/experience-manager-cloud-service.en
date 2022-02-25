@@ -1,6 +1,6 @@
 ---
-title: [!DNL Assets] as a [!DNL Cloud Service] Guide
-description: [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] self-help resources and documentation links
+title: "[!DNL Assets] as a [!DNL Cloud Service] Guide"
+description: "[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] self-help resources and documentation links"
 landing-page-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 feature: Asset Management
 role: User,Leader
