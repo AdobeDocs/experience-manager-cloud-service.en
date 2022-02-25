@@ -1,6 +1,6 @@
 ---
 title: Key features and capabilities of Adobe Experience Manager (AEM) Forms as a Cloud Service 
-description: [!DNL AEM Forms] as a Cloud Service is a platform to create, manage, publish enterprise-class forms and business processes.
+description: "[!DNL AEM Forms] as a Cloud Service is a platform to create, manage, publish enterprise-class forms and business processes."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
 ---
 <!-- # Introduction to [!DNL AEM Forms] as a Cloud Service {#overview}
