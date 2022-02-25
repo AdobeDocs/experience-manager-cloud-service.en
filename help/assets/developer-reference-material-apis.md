@@ -96,6 +96,8 @@ A single request can be used to initiate uploads for multiple binaries, as long 
 {
     "completeURI": "(string)",
     "folderPath": "(string)",
+    "minPartSize": (number),
+    "maxPartSize": (number),
     "files": [
         {
             "fileName": "(string)",
@@ -104,8 +106,7 @@ A single request can be used to initiate uploads for multiple binaries, as long 
             "uploadURIs": [
                 "(string)"
             ],
-            "minPartSize": (number),
-            "maxPartSize": (number)
+            
         }
     ]
 }
