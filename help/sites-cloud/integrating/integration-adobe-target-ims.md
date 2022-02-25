@@ -62,7 +62,7 @@ Adobe Developer Console Project (integration) with Adobe Target that AEM will us
 
 ### Creating the Project {#creating-the-project}
 
-Open the Adobe Developer Console to create an Project with Adobe Target that AEM will use:
+Open the Adobe Developer Console to create a Project with Adobe Target that AEM will use:
 
 1. Open the Adobe Developer Console for Projects:
 
@@ -132,7 +132,7 @@ You must now assign the required privileges to the integration:
 
 ## Details stored for the Adobe Developer Console Integration Project {#details-stored-for-the-ims-integration-project}
 
-From the Adobe Developer Console Projects you can see a list of all your integration projects:
+From the Adobe Developer Console Projects console you can see a list of all your integration projects:
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -190,6 +190,10 @@ To confirm that the configuration is operating as expected:
    ![Check Health](assets/integrate-target-ims-12.png)
 
 1. If successful, you will see a confirmation message.
+
+## Complete the Integration with Adobe Target {#complete-the-integration-with-adobe-target}
+
+You can now use this IMS configuration to complete the [integration with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 <!--
 
