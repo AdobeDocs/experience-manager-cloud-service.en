@@ -96,6 +96,7 @@ AEM is a powerful tool and there are many additional options available. Check ou
 
 The following are some additional resources that do a deeper dive on some concepts mentioned in this document.
 
+* [Using the Site Rail to Manage Your Site Theme](/help/sites-cloud/administering/site-creation/site-rail.md) - Learn the powerful features of the Site rail to help you easily customize and manage your site theme including downloading theme sources and managing theme versions.
 * [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - If you already have a firm understanding of AEM, you may want to directly consult the in-depth technical docs.
 * [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult the in-depth technical docs.
 * [Role Based Permissions](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager has pre-configured roles with appropriate permissions. Refer to this document for details of these roles and how to administer them.
