@@ -132,35 +132,16 @@ You can configure a connection between [!DNL Sites] deployment and [!DNL Dynamic
 
 With Connected Assets, you can leverage the [!DNL Dynamic Media] functionality for processing image assets on the remote DAM deployment.
 
-The following diagrams illustrate the scenarios to use Dynamic Media assets on a remote DAM deployment on a [!DNL Sites] page:
+To use [!DNL Dynamic Media] images from a remote DAM deployment on a [!DNL Sites] deployment:
 
-![Connected Assets for Dynamic Media](assets/connected-assets-best-practices-supported-unsupported.png)
-
-**Scenario 1**
-
-1. Configure Dynamic Media on remote DAM deployment with the following options:
+1. Configure [!DNL Dynamic Media] on remote DAM deployment with the following options:
     * Sync mode: Enabled by default
     * Publish Assets: Sync All Content
-1. On local Sites deployment:
-    1. Configure Dynamic Media using the same company as in step 1 (Sync mode: Enabled by default, Publish Assets: Sync All content).
+1. On [!DNL Sites] deployment:
+    1. Configure [!DNL Dynamic Media] using the same company as in step 1 (Sync mode disabled).
     1. Configure Connected Assets.
 
-**Result**
-
-Dynamic Media assets available on Sites deployment get configured to read-only mode automatically. You cannot use Dynamic Media to process assets on the Sites deployment.
-
-**Scenario 2**
-
-1. Configure Dynamic Media on remote DAM deployment with the following options:
-    * Sync mode: Enabled by default
-    * Publish Assets: Sync All Content
-1. On Sites deployment:
-    1. Configure Connected Assets
-    2. Configure Dynamic Media using the same company as in step 1.
-
-**Result**
-
-Same as Scenario 1: Dynamic Media assets available on Sites deployment get configured to read-only mode automatically. The sync options are disabled. You cannot use Dynamic Media to process assets on the Sites deployment.
+   [!DNL Dynamic Media] assets are available on [!DNL Sites] deployment in a read-only mode. As a result, you cannot use [!DNL Dynamic Media] to process assets on the [!DNL Sites] deployment.
 
 To configure the connection, follow these steps:
 
@@ -280,9 +261,9 @@ You can connect a maximum of four [!DNL Sites] deployments to a remote DAM deplo
 
 You can connect one remote DAM deployment to a [!DNL Sites] deployment after configuring Connected Assets. For more information, see [Connected Assets architecture](#connected-assets-architecture).
 
-### Can you use Dynamic Media assets from your [!DNL Sites] deployment and a remote DAM deployment simultaneously?
+### Can you use Dynamic Media assets from your [!DNL Sites] deployment after configuring Connected Assets?
 
-Yes, you can use Dynamic Media assets from your [!DNL Sites] deployment and a remote DAM deployment simultaneously. Dynamic Media assets available on Sites deployment get configured to read-only mode automatically. For more information, see [Configure a connection between Sites and Dynamic Media deployments](#sites-dynamic-media-connected-assets).
+After configuring Connected Assets, [!DNL Dynamic Media] assets are available on [!DNL Sites] deployment in a read-only mode. As a result, you cannot use [!DNL Dynamic Media] to process assets on the [!DNL Sites] deployment. For more information, see [Configure a connection between Sites and Dynamic Media deployments](#sites-dynamic-media-connected-assets).
 
 ### Can you use assets of Image and Document format types from the remote DAM deployment on the [!DNL Sites] deployment after configuring Connected Assets?
 
