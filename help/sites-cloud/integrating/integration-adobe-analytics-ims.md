@@ -60,11 +60,11 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
 
 ## Configuring IMS for Adobe Analytics integration with AEM {#configuring-ims-adobe-analytics-integration-with-aem}
 
-You need to create the Adobe Developer Console Project (integration) with Adobe Analytics that AEM will use, then assign the required privileges.
+Using the Adobe Developer Console you need to create a Project (integration) with Adobe Analytics (for AEM to use), then assign the required privileges.
 
 ### Creating the Project {#creating-the-project}
 
-Open the Adobe Developer Console to create an Project with Adobe Analytics that AEM will use:
+Open the Adobe Developer Console to create a Project with Adobe Analytics that AEM will use:
 
 1. Open the Adobe Developer Console for Projects:
 
@@ -123,7 +123,7 @@ You must now assign the required privileges to the integration:
 
 ## Details stored for the Adobe Developer Console Integration Project {#details-stored-for-the-ims-integration-project}
 
-From the Adobe Developer Console Projects you can see a list of all your integration projects:
+From the Adobe Developer Console - Projects you can see a list of all your integration projects:
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -147,7 +147,7 @@ Returning to AEM you can complete the IMS configuration by adding required value
 1. Return to the [IMS Configuration open in AEM](#configuring-ims-generating-a-public-key).
 1. Select **Next**.
 
-1. Here you can use the [details from the project configuration in Adobe Developer Console](#details-stored-for-the-ims-integration-project):
+1. Here you can use the [details from the project configuration in the Adobe Developer Console](#details-stored-for-the-ims-integration-project):
 
     * **Title**: Your text.
     * **Authorization Server**: Copy/paste this from the `aud` line of the **Payload** section below, e.g. `https://ims-na1.adobelogin.com` in the example below
@@ -184,7 +184,7 @@ To confirm that the configuration is operating as expected:
 
 ## Complete the Integration with Adobe Analytics {#complete-the-integration-with-adobe-analytics}
 
-You can now complete the [integration with Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md).
+You can now use this IMS configuration to complete the [integration with Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md).
 
 <!--
 ## Configuring the Adobe Analytics Cloud Service {#configuring-the-adobe-analytics-cloud-service}
