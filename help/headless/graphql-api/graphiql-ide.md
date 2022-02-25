@@ -33,13 +33,13 @@ The **GraphiQL** tool allows you to test and debug your GraphQL queries by enabl
 * see the **History** of your previous queries
 * use the **Documentation Explorer** to access the documentation; helping you to learn and understand what methods are available.
 
-<!-- what happened to request headers? -->
-
 For example: 
 
 * `http://localhost:4502/content/graphiql.html`
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
+
+You can use GraphiQL on your development author system so that they can be requested by your client application using GET requests, and publishing queries. For production usage, you must then [move your queries to your production environment](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Initially to production author for validating newly authored content with the queries, and finally production publish for live consumption.
 
 ## Selecting your endpoint {#selecting-endpoint}
 
@@ -103,9 +103,33 @@ Once you have selected your persisted query from the list (left panel) you can u
 >
 >The definition of the persisted query's cache `Time To Live` {"cache-control":"parameter":value} has a default value of 600ms.
 
+## Caching your persisted queries {#caching-persisted-queries}
+
+AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL). This value is set to:
+
+* 600ms is the default TTL for the Dispatcher and CDN; also known as *shared caches*
+  * default: s-maxage=600
+* 60 is the default TTL for the client (for example, a browser)
+  * default: maxage=60
+
+AEM GraphQL queries that were persisted with the GraphiQL UI will use this TTL upon execution. If you want to change the TTL for your GraphLQ query, then the query must instead be persisted using the API method. This involves posting the query to AEM using CURL in your command line interface. 
+
+For an example:
+
+```xml
+curl -X PUT \
+    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H "Content-Type: application/json" \
+    "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+    -d \
+'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```
+
+The `cache-control` can be set at the creation time (PUT) or later on (for example, via a POST request for instance). The cache-control is optional when creating the persisted query, as AEM can provide the default value. See [How to persist a GraphQL query](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), for an example of persisting a query using curl.
+
 ## Copy URL to directly access the query {#copy-url}
 
-The **Copy URL** option allows you to copy the URL used to directly access the persisted query and see the results. This can then be used for:
+The **Copy URL** option allows you to simulate a query, by copying the URL used to directly access the persisted query and see the results. This can then be used for:
 
 * testing; for example, by accessing in a browser
 * embedding in your application, for use with your production environment
