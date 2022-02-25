@@ -123,23 +123,25 @@ A single request can be used to initiate uploads for multiple binaries, as long 
 
 ### Upload binary {#upload-binary}
 
-The output of initiating an upload includes one or more upload URI values. If more than one URI is provided, the client may split the binary into parts and make PUT requests of each part to the provided upload URIs, in order. If you choose to split the binary into parts, be sure to adhere to the following guidelines:
+The output of initiating an upload includes one or more upload URI values. If more than one URI is provided, the client may split the binary into parts and make PUT requests of each part to the provided upload URIs, in order. If you choose to split the binary into parts, adhere to the following guidelines:
+
 * Each part, with the exception of the last, must be of a size greater than or equal to `minPartSize`.
 * Each part must be of a size less than or equal to `maxPartSize`.
-* If the size of your binary exceeds `maxPartSize`, you must split the binary into parts to upload it.
+* If the size of your binary exceeds `maxPartSize`, split the binary into parts to upload it.
 * You are not required to use all URIs.
 
-If the size of your binary is less than or equal to `maxPartSize`, you may instead to upload the entire binary to a single upload URI. If more than one upload URI is provided, use the first one and ignore the rest. You are not required to use all URIs.
+If the size of your binary is less than or equal to `maxPartSize`, you may instead upload the entire binary to a single upload URI. If more than one upload URI is provided, use the first one and ignore the rest. You are not required to use all URIs.
 
 CDN edge nodes help accelerate the requested upload of binaries.
 
-The easiest way to accomplish this is to use the value of `maxPartSize` as your part size. The API contract guarantees that there are sufficient upload URIs to upload your binary if you use this value as your part size. To do this, split the binary into parts of size `maxPartSize`, using one URI for each part, in order. The final part can be of any size less than or equal to `maxPartSize`. For example, assume the total size of the binary is 20,000 bytes, the `minPartSize` is 5,000 bytes, `maxPartSize` is 8,000 bytes, and the number of upload URIs is 5. Then follow these steps:
+The easiest way to accomplish this is to use the value of `maxPartSize` as your part size. The API contract guarantees that there are sufficient upload URIs to upload your binary if you use this value as your part size. To do this, split the binary into parts of size `maxPartSize`, using one URI for each part, in order. The final part can be of any size less than or equal to `maxPartSize`. For example, assume the total size of the binary is 20,000 bytes, the `minPartSize` is 5,000 bytes, `maxPartSize` is 8,000 bytes, and the number of upload URIs is 5. Execute the following steps:
+
 * Upload the first 8,000 bytes of the binary using the first upload URI.
 * Upload the second 8,000 bytes of the binary using the second upload URI.
 * Upload the last 4,000 bytes of the binary using the third upload URI. Since this is the final part, it does not need to be larger than `minPartSize`.
-* You do not need to use use the last two upload URIs. Just ignore them.
+* You do not need to use the last two upload URIs. You can ignore them.
 
-A common mistake is to calculate the part size based on the number of upload URIs provided by the API. The API contract does not guarantee that this approach will work, and may actually result in part sizes that are outside the range between `minPartSize` and `maxPartSize`. This can result in binary upload failures.
+A common error is to calculate the part size based on the number of upload URIs provided by the API. The API contract does not guarantee that this approach works, and may actually result in part sizes that are outside the range between `minPartSize` and `maxPartSize`. This can result in binary upload failures.
 
 Again, the easiest and safest way is to simply use parts of size equal to `maxPartSize`.
 
