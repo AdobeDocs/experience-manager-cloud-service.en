@@ -237,6 +237,12 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
   
   * [Rail Selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
+  * Publishing
+
+    * [Quick Publish](/help/assets/manage-publication.md#quick-publish)
+
+    * [Manage Publication](/help/assets/manage-publication.md#manage-publication) 
+
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
  
   * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
@@ -256,7 +262,7 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
     *  [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 * Getting Started Guides
-  * [Creating an Assets Folder Headless Quick Start Guide](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+  * [Creating an Assets Folder Headless Setup](/help/headless/setup/create-assets-folder.md)
 
 * AEM Headless Content Architect Journey
 

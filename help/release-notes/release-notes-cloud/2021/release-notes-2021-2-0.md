@@ -1,6 +1,6 @@
 ---
 title: Release Notes for 2021.2.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
-description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2021.2.0.
+description: "[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2021.2.0."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 ---
 
@@ -17,9 +17,9 @@ The following release (2021.3.0) will be on March 25, 2021.
 
 ### Headless Content Management {#headless}
 
-* **[GraphQL API for Content Fragment Delivery](/help/assets/content-fragments/graphql-api-content-fragments.md)**: Ability to query Content Fragments using GraphQL syntax, and schemas based on Content Fragment models, for output in JSON format.
+* **[GraphQL API for Content Fragment Delivery](/help/headless/graphql-api/content-fragments.md)**: Ability to query Content Fragments using GraphQL syntax, and schemas based on Content Fragment models, for output in JSON format.
 
-* **[Authentication Support for GraphQL API Requests](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Ability to authenticate GraphQL API requests with access tokens for server-side APIs.
+* **[Authentication Support for GraphQL API Requests](/help/headless/security/authentication.md)**: Ability to authenticate GraphQL API requests with access tokens for server-side APIs.
 
 * **[The RemotePage Component](/help/implementing/developing/hybrid/remote-page.md)**: Added support for viewing and editing external SPAs within AEM using.
 
