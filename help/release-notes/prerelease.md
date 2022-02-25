@@ -1,6 +1,6 @@
 ---
-title: [!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel
-description: [!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel
+title: "[!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel"
+description: "[!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel"
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 ---
 # [!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel {#prerelease-channel}
