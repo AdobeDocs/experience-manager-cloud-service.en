@@ -299,11 +299,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-## Legacy Dedicated Egress Address Customers {#legacy-dedicated-egress-address-customers}
-
-If you have been provisioned with a dedicated egress IP before 2021.09.30, your dedicated egress IP feature will work as described below.
-
-### Feature Usage {#feature-usage}
+## Feature Usage {#feature-usage}
 
 The feature is compatible with Java code or libraries that result in outbound traffic, provided they use standard Java system properties for proxy configurations. In practice, this should include most common libraries. 
 
@@ -345,11 +341,14 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 The same dedicated IP is applied to all of a customer's programs in their Adobe Organization and for all environments in each of their programs. It applies to both author and publish services.
 
-Only HTTP and HTTPS ports are supported. This includes HTTP/1.1, and HTTP/2 when encrypted.
-
 ### Debugging Considerations {#debugging-considerations}
 
 In order to validate that traffic is indeed outgoing on the expected dedicated IP address, check logs in the destination service, if available. Otherwise, it may be useful to call out to a debugging service such as [https://ifconfig.me/IP](https://ifconfig.me/IP), which will return the calling IP address.
+
+## Legacy Dedicated Egress Address Customers {#legacy-dedicated-egress-address-customers}
+
+If you have been provisioned with a dedicated egress IP before 2021.09.30, your dedicated egress IP feature only supports HTTP and HTTPS ports.
+This includes HTTP/1.1, and HTTP/2 when encrypted.
 
 ## Virtual Private Network (VPN) {#vpn}
 
