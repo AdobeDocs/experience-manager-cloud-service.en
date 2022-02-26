@@ -48,9 +48,9 @@ Have a look at the [February 2022 Release Overview](https://video.tv.adobe.com/v
 
 * You can now use the [!DNL Experience Manager Assets] user interface to:
 
-  * Configure the detection of duplicate assets in a repository.
+  * Configure the [detection of duplicate assets](/help/assets/manage-digital-assets.md#detect-duplicate-assets) in a repository.
 
-  * Configure adding digital watermarks to images.
+  * Configure [adding digital watermarks](/help/assets/watermark-assets.md) to images.
 
 * The administrators can now configure email service for large downloads. It allows the users to [enable email notifications for large downloads](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) from the [!DNL Experience Manager Assets] interface. The user receives an email notification containing the download link of the archived zip folder upon completion of the download process.
 
