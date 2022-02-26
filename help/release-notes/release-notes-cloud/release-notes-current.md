@@ -59,4 +59,4 @@ Have a look at the [February 2022 Release Overview](https://video.tv.adobe.com/v
 
 ### New features in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-* 
+* Experience Manager Assets uses Adobe Sensei AI capabilities to distinguish between colors in an image and apply those as tags automatically on ingestion. These tags enable enhanced Search experience, based on image color composition.
