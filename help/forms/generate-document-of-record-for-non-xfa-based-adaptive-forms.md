@@ -11,20 +11,20 @@ When a form is filled or submitted, you can keep a record of the form, in print 
 
 ![Document of Record](assets/document-of-record.png)
 
-To create a Document of Record, an XFA or Acroform based template is merged with data collected via an adaptive form. You can generate a Document of Record automatically or on-demand. 
+To create a Document of Record, an XFA or Acroform based template is merged with data collected via an adaptive form. You can generate a Document of Record automatically or on-demand.
 The on-demand option allows you to specify a custom XFA or Acroform based template to provide a custom appearance to your Document of Record.
 
 You can:
 
 * [Generate an XFA-based Document of Record](#generate-an-XFA-based-document-of-record)
 * [Generate an Acroform-based (Acrobat Form PDF) Document of Record](#generate-an-Acroform-based-document-of-record)
-* [Auto generate a Document of Record](#auto-generate-a-document-of-record) 
+* [Auto generate a Document of Record](#auto-generate-a-document-of-record)
 
 ## Before you start {#components-to-automatically-generate-a-document-of-record}
 
 Before you start learn and ready the assets required for a Document of Record:
 
-**Base template:** An XFA template (XDP file) created in Forms Designer or an Acrobat Form (AcroForm). [Base template](#base-template-of-a-document-of-record) is used to specify styling and branding information for a Document of Record. Upload your XFA template (XDP file) to your AEM Forms instance before 
+**Base template:** An XFA template (XDP file) created in Forms Designer or an Acrobat Form (AcroForm). [Base template](#base-template-of-a-document-of-record) is used to specify styling and branding information for a Document of Record. Upload your XFA template (XDP file) to your AEM Forms instance before
 
 **Adaptive Form:** An Adaptive Form for which the Document of Record is to be generated.
 
@@ -79,7 +79,7 @@ Perform the following steps to configure an Adaptive Form to automatically gener
 
 1. Open the Adaptive Form, configured to use a custom form template for editing.
 
-1. Select an Adaptive Form component and click open Configure ![Configure](assets/Smock_Wrench_18_N.svg) icon. It opens properties browser. 
+1. Select an Adaptive Form component and click open Configure ![Configure](assets/Smock_Wrench_18_N.svg) icon. It opens properties browser.
 
 1. In the properties browser, browse and select a field.
 
@@ -98,9 +98,9 @@ You can use Send Email, Experience Manager Workflow submit action in conjunction
 
 Adaptive forms and corresponding document of record templates can evolve over the period of time. You can choose to add, remove, or modify fields to an Adaptive Form or a Document of Record template.
 
-When you make changes to a Document of Record template and upload the changed Document of Record template to AEM Forms, the Adaptive Forms editor automatically detects the changed bindings and informs you about the adaptive form components that require new bindings. It allows you to make incremental updates to a Document of Record template. 
+When you make changes to a Document of Record template and upload the changed Document of Record template to AEM Forms, the Adaptive Forms editor automatically detects the changed bindings and informs you about the adaptive form components that require new bindings. It allows you to make incremental updates to a Document of Record template.
 
-For example, an Organization, *We.Retail*, has an AcroForm-based Document of Record template, *we-retail-invoice.pdf*. The template looks like the following: 
+For example, an Organization, *We.Retail*, has an AcroForm-based Document of Record template, *we-retail-invoice.pdf*. The template looks like the following:
 
 ![Original Template](assets/we-retail-invoice.png)
 
@@ -112,7 +112,7 @@ The developer uploads and applies to the updated template to the adaptive form. 
 
 ![Binding Error](assets/we-retail-binding-error.png)
 
-The form developer binds Adaptive Forms fields with corresponding Document of Record template. 
+The form developer binds Adaptive Forms fields with corresponding Document of Record template.
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 Now, when the Adaptive Form is submitted an updated  Document of Record of record is created.
@@ -142,7 +142,6 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
   
-
 
 When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
 
@@ -271,7 +270,7 @@ The Adaptive Forms table components such as header, footer, and row map to corre
 
 ## Base template of a Document of Record {#base-template-of-a-document-of-record}
 
-Base template provides styling and appearance information to Document of Record. It allows you to customize default appearance of auto generated Document of Record. For example, you can use base template to add your company logo in the header and copyright information in the footer of the Document of Record. 
+Base template provides styling and appearance information to Document of Record. It allows you to customize default appearance of auto generated Document of Record. For example, you can use base template to add your company logo in the header and copyright information in the footer of the Document of Record.
 
 The master page from base template is used as a master page for Document of Record template. The master page can have information such as page header, page footer, and page number that you can apply to Document of Record. You can apply such information to Document of Record using base template for auto generation of Document of Record. Using base template enables you to change default properties of fields.
 
@@ -433,15 +432,24 @@ An XCI file helps you set various properties of a document. Forms as a Cloud Ser
 |config/present/pdf/pdfa/amd|Specifies the amendment level of the PDF/A specification.|
 |config/present/pdf/pdfa/conformance|Specifies the conformance level with the PDF/A specification.|
 |config/present/pdf/version|Specifies the version of PDF document to generate|
+|config/present/pdf/version/map|Specifies the fall back fonts for the document|
 
 ### Use a custom XCI file in your Forms as a Cloud Service environment
 
   1. Add the custom XCI file to your development project.
-  1. Specify the following [inline property](/help/implementing/deploying/configuring-osgi.md): 
+  1. Specify the following [inline property](/help/implementing/deploying/configuring-osgi.md):
 
         ```JSON
          {
-          "xciFilePath": [path of XCI file]
+          "xciFilePath": "[path of XCI file]"
+         }
+        ```
+
+        For example,
+
+        ```JSON
+         {
+          "xciFilePath": "/content/dam/formsanddocuments/customMinionProBoldAndTagged.xci"
          }
         ```
 
@@ -449,7 +457,7 @@ An XCI file helps you set various properties of a document. Forms as a Cloud Ser
 
 ### Use a custom XCI file in your local Forms as a Cloud Service development environment
 
-  1. Upload the XCI file to your local development environment. 
-  1. Open Cloud Service SDK configuraion manager. The default URL is: http://localhost:4502/system/console/configMgr.
+  1. Upload the XCI file to your local development environment.
+  1. Open Cloud Service SDK configuraion manager. The default URL is: <http://localhost:4502/system/console/configMgr>.
   1. Locate and open the **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]** configuration.
-  1. Specify path of the XCI file and click **[!UICONTROL Save]**. 
+  1. Specify path of the XCI file and click **[!UICONTROL Save]**.
