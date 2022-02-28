@@ -127,14 +127,15 @@ You can check the connectivity between the configured [!DNL Sites] deployments a
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
-## Use Dynamic Media assets {##configure-a-connection-between-sites-and-assets-deployments}
+## Use Dynamic Media assets {#dynamic-media-assets}
+
 
 With Connected Assets, you can use image assets processed by [!DNL Dynamic Media] from remote DAM deployment on Sites pages, and leverage Dynamic Media functionalities, such as smart crop and image presets.
 
 To use [!DNL Dynamic Media] with Connected Assets:
 
 1. Configure [!DNL Dynamic Media] on remote DAM deployment with Sync mode enabled.
-1. Configure [Connected Assets]().
+1. Configure [Connected Assets](#configure-a-connection-between-sites-and-assets-deployments).
 1. Configure [!DNL Dynamic Media] on the Sites instance with the same company name as configured on the remote DAM. The Sites deployment must have read-only access to the Dynamic Media account to work with connected assets. Therefore, ensure to disable the Sync mode in Dynamic Media configuration on Sites instance.
    
 >[!CAUTION]
