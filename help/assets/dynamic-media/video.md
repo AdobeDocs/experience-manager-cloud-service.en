@@ -440,9 +440,6 @@ Google periodically changes their user interface. As such, the steps to publish 
 
 1. On the Dashboard page, to the right of **[!UICONTROL Google Cloud Platform]**, select the Project drop-down list to open the **[!UICONTROL Select a project]** dialog box.
 1. In the **[!UICONTROL Select a project]** dialog box, select **[!UICONTROL New Project]**.
-
-   ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
-
 1. In the **[!UICONTROL New Project]** dialog box, in the **[!UICONTROL Project name]** field, type the name of your new project.
 
    Your Project ID is based on your project name. As such, choose the project name carefully; it cannot be changed after it is created. Also, you must enter the same Project ID again when you set up YouTube in Experience Manager later on. Therefore, write it down.
@@ -453,8 +450,6 @@ Google periodically changes their user interface. As such, the steps to publish 
 
     * On your project’s Dashboard, in the **[!UICONTROL Getting Started]** card, select **[!UICONTROL Explore and enable APIs]**.
     * On your project's Dashboard, in the **[!UICONTROL APIs]** card, select **[!UICONTROL Go to APIs overview]**.
-
-   ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Near the top middle of the **[!UICONTROL APIs & Services]** page, select **[!UICONTROL ENABLE APIS AND SERVICES]**.<!-- NEXT STEP BELOW IS STEP 10 --> 
 1. On the **[!UICONTROL API Library]** page, on the left side, under **[!UICONTROL Category]**, select **[!UICONTROL YouTube]**. On the right side of the page, select **[!UICONTROL YouTube]**.
