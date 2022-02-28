@@ -1,6 +1,6 @@
 ---
-title: [!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel
-description: [!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel
+title: "[!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel"
+description: "[!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel"
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 ---
 # [!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel {#prerelease-channel}
@@ -43,6 +43,8 @@ The Cloud Manager CLI can also be used, as per the instructions at [https://gith
  
 
 The variable can be deleted or set back to a different value if you want the environment to be restored to the behavior of the regular (non-prerelease) channel
+
+* Alternatively, you can also configure environment variables from the [Cloud Manager UI](/help/implementing/cloud-manager/environment-variables.md).
 
 ### Local SDK {#local-sdk}
 

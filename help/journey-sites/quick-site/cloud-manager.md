@@ -7,10 +7,6 @@ description: Learn about Cloud Manager and how it ties together the new Quick Si
 
 Learn about Cloud Manager and how it ties together the new Quick Site Creation process.
 
->[!CAUTION]
->
->The Quick Site Creation tool is currently a tech preview. It is made available for testing and evaluation purposes and is not intended for production use unless agreed with Adobe Support.
-
 >[!TIP]
 >
 >If your role is exclusively front-end development, you can skip to the article [Retrieve git repository access information](retrieve-access.md) in this journey.
@@ -80,11 +76,17 @@ For the purposes of this journey, a complete understanding of Cloud Manager is n
 
 ![Cloud Manager structure](assets/cloud-manager-structure.png)
 
-* **TENANT** - Every customer is provisioned with a tenant. **WKND Travel and Adventure Enterprises** might be a tenant.
-* **PROGRAMS** - Each tenant has one or more programs. The **WKND Travel and Adventure Enterprises** tenant might have a **WKND Nightlife** and a **WKND Afternoon Projects** program.
-* **ENVIRONMENTS** - Each program has multiple environments such as production for live content, and staging and dev for development purposes. **WKND Nightlife** and **WKND Afternoon Projects** programs would both have dev, stage, and production environments.
+* **TENANT** - Every customer is provisioned with a tenant.
+* **PROGRAMS** - Each tenant has one or more programs, which often reflect the customer's licensed solutions.
+* **ENVIRONMENTS** - Each program has multiple environments such as production for live content, one for staging, and one for development purposes.
 * **REPOSITORY** - The environments have git repositories where application and front-end code is maintained.
 * **TOOLS &amp; WORKFLOWS** - Pipelines manage the deployment of code from the repositories to the environments.
+
+An example is often helpful in contextualizing this hierarchy.
+
+* WKND Travel and Adventure Enterprises might be a **tenant** that focuses on travel-related media.
+* The WKND Travel and Adventure Enterprises tenant might have two **programs**: one Sites program for WKND Magazine and one Assets program for WKND Media.
+* The WKND Magazine and WKND Media programs would both have dev, stage, and production **environments**.
 
 ## The Quick Site Creation Front-End Development Flow {#flow}
 

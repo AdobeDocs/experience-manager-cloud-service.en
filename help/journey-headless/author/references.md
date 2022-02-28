@@ -1,9 +1,6 @@
 ---
 title: Learn about using references in Content Fragments
 description: Learn about using references in Content Fragments, for content, other fragments and other assets (media). Introduce the necessity for, and the mechanics of, nested fragments for Headless CMS Authoring.
-index: yes
-hide: no
-hidefromtoc: no
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 ---
 # Learn about using references in Content Fragments {#author-headless-references}
@@ -124,7 +121,7 @@ Now that you have learned about references and structure in Content Fragments, t
     * [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 * Getting Started Guides
-  * [Creating an Assets Folder Headless Quick Start Guide](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+  * [Creating an Assets Folder - Headless Setup](/help/headless/setup/create-assets-folder.md)
 
 * AEM Headless Content Architect Journey
 

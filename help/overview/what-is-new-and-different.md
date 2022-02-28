@@ -106,7 +106,7 @@ Specifically, the number of and the type of AEM programs that can be created fro
   
 Cloud Manager has evolved as a self-service portal where the main components of AEM as a Cloud Service can be created and configured:
 
-* Creating and managing new programs. Refer to [Understanding Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) for more details.
+* Creating and managing new programs. Refer to [Understanding Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) for more details.
 
 * Creating and managing the AEM environments within these programs. Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for more details.
 
@@ -264,3 +264,9 @@ For further information see:
 * [Notable changes to AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Introducing AEM Assets as a Cloud Service](/help/assets/overview.md)
 * [Adobe Experience Manager as a Cloud Service Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+
+>[!TIP]
+>
+>Once you have an overview of AEM as a Cloud Service, you can onboard quickly by reviewing the [Onboarding Journey.](/help/journey-onboarding/home.md)
+>
+>Already onboarded or ready to dive into testing AEM's features? Install the [AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) to explore AEM's powerful features using rich examples.
