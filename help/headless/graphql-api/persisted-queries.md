@@ -8,6 +8,10 @@ feature: Content Fragments,GraphQL API
 
 Persisted queries are GraphQL queries that are created and stored on the Adobe Experience Manager (AEM) as a Cloud Service server. They can be requested with a GET request by client applications. The response of a GET request can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application. This differs from standard GraphQL queries, which are executed using POST requests where the response cannot easily be cached.
 
+The [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) is available in AEM (`dev-author`) for you to develop, test, and persist your GraphQL queries, before [transferring to your production environment](#transfer-persisted-query-production).
+
+## Persisted Queries and Endpoints {#persisted-queries-and-endpoints}
+
 Persisted queries must always use the endpoint related to the [appropriate Sites configuration](graphql-endpoint.md); so they can use either, or both:
 
 * The Global configuration and endpoint

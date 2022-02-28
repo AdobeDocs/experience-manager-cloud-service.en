@@ -129,16 +129,15 @@ The `cache-control` can be set at the creation time (PUT) or later on (for examp
 
 ## Copy URL to directly access the query {#copy-url}
 
-The **Copy URL** option allows you to simulate a query, by copying the URL used to directly access the persisted query and see the results. This can then be used for:
+The **Copy URL** option allows you to simulate a query, by copying the URL used to directly access the persisted query and see the results. This can then be used for testing; for example, by accessing in a browser:
 
-* testing; for example, by accessing in a browser
-* embedding in your application, for use with your production environment
-
+<!--
   >[!NOTE]
   >
   >The URL will need [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
   >
   >The target environment might need adjusting, depending on your requirements.
+-->
 
 For example:
 
@@ -146,11 +145,11 @@ For example:
 
 By using this URL in a browser, you can confirm the results:
 
-![GraphiQL - Copy URL](assets/cfm-graphiql-copy-url.png "GraphiQL - COpy URL")
+![GraphiQL - Copy URL](assets/cfm-graphiql-copy-url.png "GraphiQL - Copy URL")
 
 The **Copy URL** option is accessible via the three vertical dots to the right of the persisted query name (far left panel):
 
-![GraphiQL - Copy URL](assets/cfm-graphiql-persisted-query-options.png "GraphiQL - COpy URL")
+![GraphiQL - Copy URL](assets/cfm-graphiql-persisted-query-options.png "GraphiQL - Copy URL")
 
 ## Deleting persisted queries {#deleting-persisted-queries}
 
