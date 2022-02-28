@@ -127,22 +127,19 @@ You can check the connectivity between the configured [!DNL Sites] deployments a
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
-## Use Dynamic Media assets with Connected Assets {#use-dynamic-media-assets-with-connected-assets}
+## Use Dynamic Media assets {##configure-a-connection-between-sites-and-assets-deployments}
 
-Experience Manager allows you to use [!DNL Dynamic Media] to process assets of image type on the remote DAM deployment. You can leverage the functionalities, such as smart crop and image presets, on images.
+With Connected Assets, you can use image assets processed by [!DNL Dynamic Media] from remote DAM deployment on Sites pages, and leverage Dynamic Media functionalities, such as smart crop and image presets.
 
-To use [!DNL Dynamic Media] images from a remote DAM deployment on a [!DNL Sites] deployment:
+To use [!DNL Dynamic Media] with Connected Assets:
 
-1. Configure [!DNL Dynamic Media] on remote DAM deployment (Sync mode enabled).
-1. On [!DNL Sites] deployment:
-    1. Configure [!DNL Dynamic Media] using the same company as in step 1 (Sync mode disabled).
-    1. Configure Connected Assets.
-
-   [!DNL Dynamic Media] assets are available on [!DNL Sites] deployment in a read-only mode.
-
->[!NOTE]
+1. Configure [!DNL Dynamic Media] on remote DAM deployment with Sync mode enabled.
+1. Configure [Connected Assets]().
+1. Configure [!DNL Dynamic Media] on the Sites instance with the same company name as configured on the remote DAM. The Sites deployment must have read-only access to the Dynamic Media account to work with connected assets. Therefore, ensure to disable the Sync mode in Dynamic Media configuration on Sites instance.
+   
+>[!CAUTION]
 >
->You cannot use [!DNL Dynamic Media] to process assets on the [!DNL Sites] deployment.
+>With Connected Assets and [!DNL Dynamic Media] configuration, you cannot use [!DNL Dynamic Media] to process local assets available on the [!DNL Sites] deployment.
 
 ## Configure a connection between [!DNL Sites] and [!DNL Dynamic Media] deployments {#sites-dynamic-media-connected-assets}
 
