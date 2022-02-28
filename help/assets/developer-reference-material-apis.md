@@ -1,6 +1,6 @@
 ---
 title: Developer references for [!DNL Assets]
-description: [!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].
+description: "[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]."
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
@@ -95,7 +95,7 @@ A single request can be used to initiate uploads for multiple binaries, as long 
 ```json
 {
     "completeURI": "(string)",
-    "folderPath": (string)",
+    "folderPath": "(string)",
     "files": [
         {
             "fileName": "(string)",
@@ -103,7 +103,9 @@ A single request can be used to initiate uploads for multiple binaries, as long 
             "uploadToken": "(string)",
             "uploadURIs": [
                 "(string)"
-            ]
+            ],
+            "minPartSize": (number),
+            "maxPartSize": (number)
         }
     ]
 }
@@ -121,15 +123,33 @@ A single request can be used to initiate uploads for multiple binaries, as long 
 
 ### Upload binary {#upload-binary}
 
-The output of initiating an upload includes one or more upload URI values. If more than one URI is provided, the client splits the binary into parts and make PUT requests of each part to each URI, in order. Use all URIs. Ensure that the size of each part is within the minimum and maximum sizes as specified in the initiate response. CDN edge nodes help accelerate the requested upload of binaries.
+The output of initiating an upload includes one or more upload URI values. If more than one URI is provided, the client may split the binary into parts and make PUT requests of each part to the provided upload URIs, in order. If you choose to split the binary into parts, adhere to the following guidelines:
 
-A potential method to accomplish this is to calculate the part size based on the number of upload URIs provided by the API. For example, assume the total size of the binary is 20,000 bytes and the number of upload URIs is 2. Then follow these steps:
+* Each part, with the exception of the last, must be of a size greater than or equal to `minPartSize`.
+* Each part must be of a size less than or equal to `maxPartSize`.
+* If the size of your binary exceeds `maxPartSize`, split the binary into parts to upload it.
+* You are not required to use all URIs.
 
-* Calculate part size by dividing total size by number of URIs: 20,000 / 2 = 10,000.
-* POST byte range 0-9,999 of the binary to the first URI in the list of upload URIs.
-* POST byte range 10,000 - 19,999 of the binary to the second URI in the list of upload URIs.
+If the size of your binary is less than or equal to `maxPartSize`, you may instead upload the entire binary to a single upload URI. If more than one upload URI is provided, use the first one and ignore the rest. You are not required to use all URIs.
+
+CDN edge nodes help accelerate the requested upload of binaries.
+
+The easiest way to accomplish this is to use the value of `maxPartSize` as your part size. The API contract guarantees that there are sufficient upload URIs to upload your binary if you use this value as your part size. To do this, split the binary into parts of size `maxPartSize`, using one URI for each part, in order. The final part can be of any size less than or equal to `maxPartSize`. For example, assume the total size of the binary is 20,000 bytes, the `minPartSize` is 5,000 bytes, `maxPartSize` is 8,000 bytes, and the number of upload URIs is 5. Execute the following steps:
+
+* Upload the first 8,000 bytes of the binary using the first upload URI.
+* Upload the second 8,000 bytes of the binary using the second upload URI.
+* Upload the last 4,000 bytes of the binary using the third upload URI. Since this is the final part, it does not need to be larger than `minPartSize`.
+* You do not need to use the last two upload URIs. You can ignore them.
+
+A common error is to calculate the part size based on the number of upload URIs provided by the API. The API contract does not guarantee that this approach works, and may actually result in part sizes that are outside the range between `minPartSize` and `maxPartSize`. This can result in binary upload failures.
+
+Again, the easiest and safest way is to simply use parts of size equal to `maxPartSize`.
 
 If the upload is successful, the server responds to each request with a `201` status code.
+
+>[!NOTE]
+>
+>For more information about the upload algorithm, see the [official feature documentation](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) and [API documentation](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) in the Apache Jackrabbit Oak project.
 
 ### Complete upload {#complete-upload}
 
@@ -173,6 +193,7 @@ The new upload method is supported only for [!DNL Adobe Experience Manager] as a
 >
 >* [Open-source aem-upload library](https://github.com/adobe/aem-upload).
 >* [Open-source command-line tool](https://github.com/adobe/aio-cli-plugin-aem).
+>* [Apache Jackrabbit Oak documentation for direct upload](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 ## Asset processing and post-processing workflows {#post-processing-workflows}
 
@@ -256,7 +277,7 @@ The following technical workflow models are either replaced by asset microservic
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
 -->
 
-<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
+<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
