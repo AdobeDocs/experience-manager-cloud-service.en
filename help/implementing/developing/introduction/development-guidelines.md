@@ -5,6 +5,12 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 ---
 # AEM as a Cloud Service Development Guidelines {#aem-as-a-cloud-service-development-guidelines}
 
+>[!CONTEXTUALHELP]
+>id="development_guidelines"
+>title="AEM as a Cloud Service Development Guidelines"
+>abstract="In this tab, you can view the recommended best practices for coding in AEM as a Cloud Service. Coding can be substatially different than AMS or On-Prem deployments."
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Demo of Package Structure"
+
 Code running in AEM as a Cloud Service must be aware of the fact that it is always running in a cluster. This means that there is always more than one instance running. The code must be resilient especially as an instance might be stopped at any point in time.
 
 During the update of AEM as a Cloud Service, there will be instances with old and new code running in parallel. Therefore, old code must not break with content created by new code and new code must be able to deal with old content.
@@ -93,15 +99,38 @@ To change the log levels for Cloud environments, the Sling Logging OSGI configur
 
 **Activating the DEBUG Log Level**
 
-The default log level is INFO, that is, DEBUG messages are not logged.
-To activate DEBUG log level, set the
+The default log level is INFO, that is, DEBUG messages are not logged. To activate DEBUG log level, update the following property to debug mode.
 
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+`/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
-property to debug. Do not leave the log at the DEBUG log level longer than necessary, as it generates a lot of logs.
+For example, set `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` with the following value.
+
+```json
+{
+   "org.apache.sling.commons.log.names": [
+      "com.example"
+   ],
+   "org.apache.sling.commons.log.level": "DEBUG",
+   "org.apache.sling.commons.log.file": "logs/error.log",
+   "org.apache.sling.commons.log.additiv": "false"
+}
+```
+
+Do not leave the log at the DEBUG log level longer than necessary, as this generates lots of entries.
+
+Discrete log levels can be set for the different AEM environments using run mode-based OSGi configuration targeting if it's desirable to always log at `DEBUG` during development. For example:
+
+| Environment | OSGi configuration location by run mode | `org.apache.sling.commons.log.level` property value |
+| - | - | - |
+|  Development | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG |
+|  Stage | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN |
+|  Production | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
+
 A line in the debug file usually starts with DEBUG, and then provides the log level, the installer action and the log message. For example:
 
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+```text
+DEBUG 3 WebApp Panel: WebApp successfully deployed
+```
 
 The log levels are as follows:
 
@@ -189,7 +218,7 @@ E-mails in AEM should be sent using the [Day CQ Mail Service OSGi service](https
 
 See the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) for details around configuring email settings. For AEM as a Cloud Service, note the following necessary adjustments to the `com.day.cq.mailer.DefaultMailService OSGI` service:
 
-* The SMTP server host name should be set to $[env:AEM_PROXY_HOST]
+* The SMTP server host name should be set to $[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * The SMTP server port should be set to the value of the original proxy port set in the portForwards parameter used in the API call when configuring up advanced networking. For example, 30465 (rather than 465)
 
 It is also recommended that if port 465 has been requested:

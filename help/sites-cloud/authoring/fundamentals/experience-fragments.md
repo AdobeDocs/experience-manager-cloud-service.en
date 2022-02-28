@@ -6,6 +6,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 # Experience Fragments {#experience-fragments}
 
 Within Adobe Experience Manager as a Cloud Service, an Experience Fragment:
+
 * is a group of one or more components
 * includes both content and layout
 * can be referenced within pages
@@ -16,10 +17,12 @@ An Experience Fragment:
 * Is a part of an experience (page).
 * Can be used across multiple pages.
 * Is based on a template (editable only) to define structure and components.
+* This template is used to create the *root page* of the Experience Fragment. 
 * Is made up of one or more components, with layout, in a paragraph system.
 * Can contain other experience fragments.
 * Can be combined with other components (including other Experience Fragments) to form a complete page (experience).
-* Can have different variations, which may share content and/or components.
+* One, or more, variations can be created, based on the root page.
+* These variations may share content and/or components.
 * Can be broken down into building blocks that can be used across multiple variations of the fragment.
 
 You can use Experience Fragments:
@@ -51,7 +54,6 @@ Experience Fragments should be used:
   * Channel or context-specific variations.
   * Experiences that make sense to group; for example a campaign with different experiences across channels.
 * When you use Omnichannel Commerce.
-  * Sharing commerce-related content on [social media](/help/implementing/developing/extending/experience-fragments.md#social-variations) channels at scale.
   * Making touchpoints transactional.
 
 ## Organizing your Experience Fragments {#organizing-your-experience-fragments}
@@ -145,7 +147,6 @@ To create and configure a folder for your Experience Fragments it is recommended
 
 1. Select **Save**.
 
-
 ## Creating an Experience Fragment {#creating-an-experience-fragment}
 
 To create an Experience Fragment:
@@ -170,6 +171,12 @@ To create an Experience Fragment:
    A **Title** is mandatory. If the **Name** is left blank it will be derived from the **Title**.
 
    ![Experience Fragment properties](/help/sites-cloud/authoring/assets/xf-04.png)
+
+   >[!NOTE]
+   >
+   >Tags from the Experience Fragment template will not be merged with tags on this Experience Fragment root page.  
+   >
+   >These are completely separate.
 
 1. Click **Create**.
 
@@ -226,6 +233,7 @@ You can create variations of your Experience Fragment, depending on your needs:
 
    ![Variation properties](/help/sites-cloud/authoring/assets/xf-07.png)
 
+
 1. Confirm with **Done**, the new variation will be shown in the panel.
 
 ## Using your Experience Fragment {#using-your-experience-fragment}
@@ -277,7 +285,7 @@ To create a new Building Block:
 
 Your building block is visible in the **Building Blocks** tab. For each block, the following actions are available:
 
-* **Go to master**: open the master variation in a new tab
+* **Go to master**: open the root page variation in a new tab
 * **Rename**
 * **Delete**
 
@@ -332,8 +340,6 @@ Details of your fragment can be seen:
         * **Pinterest board**
     * **References**
         * A list of references
-    * **Social Media Status**
-        * Details of social media variations
 
 ## The Plain HTML Rendition {#the-plain-html-rendition}
 
@@ -347,4 +353,7 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 By default, Experience Fragments are delivered in the HTML format. This can be used by both AEM and third party channels alike.
 
-For export to Adobe Target, JSON can also be used. See Target Integration with Experience Fragments for full information. <!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
+For export to Adobe Target, JSON can also be used. See:
+
+* [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+* [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)

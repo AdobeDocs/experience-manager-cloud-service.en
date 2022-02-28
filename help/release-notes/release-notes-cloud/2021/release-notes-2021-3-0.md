@@ -1,6 +1,6 @@
 ---
 title: Release Notes for 2021.3.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
-description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2021.3.0.
+description: "[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 ---
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
@@ -64,7 +64,7 @@ You can reach out to your Adobe representative for a demo or to sign up for the 
 
 ### What is New {#what-is-new-commerce}
 
-* Support for Magento 2.4.2
+* Support for Adobe Commerce 2.4.2
 
 * Product detail component can now be used and configured on any content page
 
