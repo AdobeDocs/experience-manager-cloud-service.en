@@ -47,6 +47,10 @@ If a customer must use its existing CDN, they may manage it and point it to the 
 * Customer must have engineering CDN experts that are on call in case related issues arise.
 * Customer must perform and successfully pass a load test before going to production.
 
+>[!NOTE]
+>
+>The Adobe CDN is not optional. Customers bringing their own CDN must point it to the AEM Managed CDN.
+
 Configuration instructions:
 
 1. Point your CDN to the Adobe CDN’s ingress as its origin domain. For example, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
