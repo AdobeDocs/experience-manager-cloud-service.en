@@ -4,7 +4,7 @@ description: Learn about IMS Configuration for use when Integrating with Adobe T
 ---
 # IMS Configuration for use when Integrating with Adobe Target{#ims-configuration-for-integration-with-adobe-target}
 
-The integration of AEM with Adobe Target via the Target Standard API requires the configuration of Adobe IMS (Identity Management System).
+The integration of AEM with Adobe Target via the Target Standard API requires the configuration of Adobe IMS (Identity Management System). The configuration is realized with the Adobe Developer Console.
 
 >[!NOTE]
 > 
