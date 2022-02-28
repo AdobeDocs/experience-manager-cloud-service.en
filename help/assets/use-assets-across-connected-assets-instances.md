@@ -6,6 +6,7 @@ feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 ---
+
 # Use Connected Assets to share DAM assets in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. One reason can be geographically distributed existing deployments that are required to work together. Another reason can be acquisitions leading to heterogenous infrastructure, including different [!DNL Experience Manager] versions, that the parent company wants to use together.
@@ -47,7 +48,7 @@ Authors search for images and the following types of documents in Content Finder
 The various roles that are involved to configure and use the capability and their corresponding user groups are described below. Local scope is used for the use case where an author creates a web page. Remote scope is used for the DAM deployment hosting the required assets. The [!DNL Sites] author fetches these remote assets.
 
 | Role | Scope | User group | Requirement |
-|------|--------|-----------|-----|----------|
+|------|--------|-----------|----------|
 | [!DNL Sites] administrator | Local | [!DNL Experience Manager] `administrators` | Set up [!DNL Experience Manager] and configure integration with the remote [!DNL Assets] deployment. |
 | DAM user | Local | `Authors` | Used to view and duplicate the fetched assets at `/content/DAM/connectedassets/`. |
 | [!DNL Sites] author | Local | <ul><li>`Authors` (with read access on the remote DAM and author access on local [!DNL Sites]) </li> <li>`dam-users` on local [!DNL Sites]</li></ul> | End users are [!DNL Sites] authors who use this integration to improve their content velocity. Authors can search and browse assets in remote DAM using [!UICONTROL Content Finder] and using the required images in local web pages.|
@@ -126,24 +127,24 @@ You can check the connectivity between the configured [!DNL Sites] deployments a
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
-## Configure a connection between [!DNL Sites] and [!DNL Dynamic Media] deployments {#sites-dynamic-media-connected-assets}
+## Use Dynamic Media assets {#dynamic-media-assets}
 
-You can configure a connection between [!DNL Sites] deployment and [!DNL Dynamic Media] deployment that allows webpage authors to use [!DNL Dynamic Media] images in their web pages. While authoring webpages, the experience of using remote Assets and remote [!DNL Dynamic Media] deployments remains the same. This allows you to leverage the [!DNL Dynamic Media] functionality via Connected Assets feature, for example smart crop and image presets. 
 
-With Connected Assets, you can leverage the [!DNL Dynamic Media] functionality for processing image assets on the remote DAM deployment.
+With Connected Assets, you can use image assets processed by [!DNL Dynamic Media] from remote DAM deployment on Sites pages, and leverage Dynamic Media functionalities, such as smart crop and image presets.
 
-To use [!DNL Dynamic Media] images from a remote DAM deployment on a [!DNL Sites] deployment:
+To use [!DNL Dynamic Media] with Connected Assets:
 
-1. Configure [!DNL Dynamic Media] on remote DAM deployment with the following options:
-    * Sync mode: Enabled by default
-    * Publish Assets: Sync All Content
-1. On [!DNL Sites] deployment:
-    1. Configure [!DNL Dynamic Media] using the same company as in step 1 (Sync mode disabled).
-    1. Configure Connected Assets.
+1. Configure [!DNL Dynamic Media] on remote DAM deployment with Sync mode enabled.
+1. Configure [Connected Assets](#configure-a-connection-between-sites-and-assets-deployments).
+1. Configure [!DNL Dynamic Media] on the Sites instance with the same company name as configured on the remote DAM. The Sites deployment must have read-only access to the Dynamic Media account to work with connected assets. Therefore, ensure to disable the Sync mode in Dynamic Media configuration on Sites instance.
+   
+>[!CAUTION]
+>
+>With Connected Assets and [!DNL Dynamic Media] configuration, you cannot use [!DNL Dynamic Media] to process local assets available on the [!DNL Sites] deployment.
 
-   [!DNL Dynamic Media] assets are available on [!DNL Sites] deployment in a read-only mode. As a result, you cannot use [!DNL Dynamic Media] to process assets on the [!DNL Sites] deployment.
+## Configure [!DNL Dynamic Media] {#configure-dynamic-media}
 
-To configure the connection, follow these steps:
+To configure [!DNL Dynamic Media] on [!DNL Assets] and [!DNL Sites] deployments:
 
 1. Create Connected Assets configuration as described above, except when configuring the functionality, select **[!UICONTROL Fetch original rendition for Dynamic Media Connected Assets]** option.
 
