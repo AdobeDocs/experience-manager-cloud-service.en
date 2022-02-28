@@ -142,11 +142,9 @@ To use [!DNL Dynamic Media] with Connected Assets:
 >
 >With Connected Assets and [!DNL Dynamic Media] configuration, you cannot use [!DNL Dynamic Media] to process local assets available on the [!DNL Sites] deployment.
 
-## Configure a connection between [!DNL Sites] and [!DNL Dynamic Media] deployments {#sites-dynamic-media-connected-assets}
+## Configure [!DNL Dynamic Media] {#configure-dynamic-media}
 
-You can configure a connection between [!DNL Sites] deployment and [!DNL Dynamic Media] deployment that allows webpage authors to use [!DNL Dynamic Media] images in their web pages. While authoring webpages, the experience of using remote Assets and remote [!DNL Dynamic Media] deployments remains the same. This allows you to leverage the [!DNL Dynamic Media] functionality via Connected Assets feature, for example smart crop and image presets. 
-
-To configure the connection, follow these steps:
+To configure [!DNL Dynamic Media] on [!DNL Assets] and [!DNL Sites] deployments:
 
 1. Create Connected Assets configuration as described above, except when configuring the functionality, select **[!UICONTROL Fetch original rendition for Dynamic Media Connected Assets]** option.
 
