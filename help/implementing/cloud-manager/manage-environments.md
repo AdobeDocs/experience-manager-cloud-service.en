@@ -9,19 +9,19 @@ Learn about the types of environments you can create and how to create them for 
 
 ## Environment Types {#environment-types}
 
-A user with the requisite permissions can create the following environment types (within the bounds of what is available to the specific tenant). 
+A user with the requisite permissions can create the following environment types (within the bounds of what is available to the specific tenant).
 
 * **Production and Stage** - The production and staging environments are available as a pair and are used for production and testing purposes, respectively.
 
 * **Development** - A development environment can be created for development as well as testing purposes and can be associated with non-production pipelines only.
-   
-This table summarizes environment types and their attributes.
 
-|Environment|Available on Author Tier?|Available on Publish Tier?|User-Creatable?|User-Deletable?|Pipeline that can be associated|
-|--- |--- |--- |--- |---|---|
-|Production |Yes |Yes, if Sites included |Yes |No|Production pipeline|
-|Stage |Yes |Yes, if Sites included |Yes |No|Production pipeline|
-|Development |Yes |Yes, if Sites included |Yes |Yes|Non-production pipeline|
+
+The capabilities of individual environments depend upon the solutions enabled in the containing [program.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+
+* [Sites]((help/sites-cloud/home.md))
+* [Assets](/help/assets/home.md)
+* [Forms](/help/forms/home.md)
+* [Screens](/help/screens-cloud/home.md)
 
 >[!NOTE]
 >
@@ -43,179 +43,185 @@ This table summarizes environment types and their attributes.
 
    * The **Add Environment** option may be disabled due to lack of permissions or depending on the licensed resources.
    
-1. In the **Add environment** dialog that appears, select an **Environment type** and provide an **Environment name** and **Environment description**.
+1. In the **Add environment** dialog that appears:
+   
+   * Select an **Environment type**.
+     * The number of available/used environments is displayed in parenthesis behind the Development environment type.
+   * Provide an **Environment name**.
+   * Provide an **Environment description**.
+   * Select a **Cloud Region**.
 
-   ![](assets/add-environment2.png)
+   ![Add environment dialog](assets/add-environment2.png)
 
-   >[!NOTE]
-   >When creating an environment, one or more *integrations* are created in Adobe I/O. These are visible to customer users who have access to the Adobe I/O Console and must not be deleted. This is disclaimed in the description in the Adobe I/O Console.
+1. Click **Save** to add the specified environment.
 
-   ![](assets/add-environment-image1.png)
-
-1. Click **Save** to add an environment with the populated criteria.  Now the *Overview* screen  displays the card from where you can set up  your pipeline.
-
-   >[!NOTE]
-   >In case, you have not yet set up your non-production pipeline, the *Overview* screen  displays the card from where you can create your non-production pipeline.
+The **Overview** screen now displays your new environment in the **Environments** card. You can now set up pipelines for your new environment.
 
 ## Environment Details {#viewing-environment}
 
-The **Environments** card on the Overview page lists up to three environments. 
+You can use the **Environments** card on the overview page to access an environments details in two ways.
 
-1. Select the **Show All** button to navigate to the **Environment** summary page to view a table with a complete list of environments.
+1. From the **Overview** page, click on the **Environments** tab at the top of the screen.
 
-   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
+   ![Environments tab](assets/environments-tab2.png)
 
-1. The **Environments** page displays the list of all the existing environments.
+   * Alternatively, click on the **Show All** button on the **Environments** card to jump directly to the **Environments** tab.
 
-   ![](assets/environment-view-2.png)
+     ![Show all option](assets/environment-showall.png)
 
-1. Select any one of the environments from the list to view the environment details.
-   
-   ![](assets/environ-preview1.png)
+1. The **Environments** opens and lists all environments for the program.
 
+   ![The environments tab](assets/environment-view-2.png)
 
-### Accessing Preview Service {#access-preview-service}
+1. Click an environment in the list to reveal its details.
 
-Preview Service feature delivers an additional Preview (publish) Service to each AEM as a Cloud Service environment via Cloud Manager. 
+   ![Environment details](assets/environ-preview1.png)
 
-Preview a website's final experience before it reaches the publish environment and is available publicly. A few pointers before you you can see and use Preview Service:
+Alternatively, click the ellipsis button of the environment you want and then select **View Details**.
 
-1. **AEM Version**: Your environment must be on AEM version `2021.05.5368.20210529T101701Z` or higher. Make sure an update pipeline has successfully run on your environment to accomplish this. 
+   ![View environment details](assets/view-environment-details.png)
 
-1. **Default IP Allow List Lock**: Upon creation, the Preview Service will have a default IP Allow List applied to it, labeled `Preview Default [Env ID]`.
+>[!NOTE]
+>
+>The **Environments** card only lists three environments. Click on the *Show All button as described previously to see all environments of the program.
 
-   >[!NOTE]
-   >Upon first creation, you must actively unapply the default IP Allow List from the Preview Service in your environment in order to enable access.
+### Accessing the Preview Service {#access-preview-service}
 
-   A user with requisite permissions must do one of the following in order to *unlock* access to Preview Service and provide the desired access:
+Cloud Manager provides a preview service (delivered as an additional publish service) to each AEM as a Cloud Service environment.
 
-   * Create an appropriate IP Allow List and apply it to the Preview Service. Follow this immediately by unapplying `Preview Default [Env ID] IP Allow List` from the Preview Service. Refer to [UnApplying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) for more details.
+Using the service you can preview a website's final experience before it reaches the actual publish environment and is available publicly.
 
-      *OR*,
+Upon creation, the preview service will have a default IP allow list applied to it, labeled `Preview Default [<envId>]`, which blocks all traffic to the preview service. You must actively un-apply the default IP allow list from the preview service in order to enable access.
 
-   * Use the update IP Allow List workflow to remove the default IP and add IP(s) as appropriate. Refer to [Viewing and Updating an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) to learn more. 
+![Preview service and its allow list](assets/preview-ip-allow.png)
 
-      >[!NOTE]
-      >The above steps must be done in advance of sharing the preview service URL with any of your teams in order to ensure the appropriate members of your team are able to access the preview URL.
+A user with requisite permissions must complete the steps of the following options in advance of sharing the preview service URL with any of your teams in order to ensure access to the preview URL.
 
-      Once access to preview service is unlocked, the lock icon (as shown in the figure below) will no longer be displayed.
+1. Create an appropriate IP allow list, apply it to the preview service, and immediately un-apply the `Preview Default [<envId>]` allow list.
 
-      ![](/help/implementing/cloud-manager/assets/preview-service1.png)
+   * Refer to [Un-Applying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) for more details.
+  
+1. Use the update **IP Allow List** workflow to remove the default IP and add IPs as appropriate. Refer to [Viewing and Updating an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) to learn more. 
 
-1. **Publish Content to Preview**: You can publish content to the Preview Service by using the Manage Publication UI inside AEM. Refer to [Previewing Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) for more details.
+Once access to preview service is unlocked, the lock icon ahead of the preview service name will no longer be displayed.
+
+Once activated, you can publish content to the preview service by using the Manage Publication UI inside AEM. Please refer to the document [Previewing Content]/help/sites-cloud/authoring/fundamentals/previewing-content.md) for more details.
+
+>[!NOTE]
+>
+>Your environment must be on AEM version `2021.05.5368.20210529T101701Z` or new. Make sure an update pipeline has successfully run on your environment to do this.
 
 ## Updating Environment {#updating-dev-environment}
 
-Updates of Stage and Production environments are automatically managed by Adobe. 
+Updates of your staging and production environments are automatically managed by Adobe. 
 
-Updates to Development environments are managed by users of the program. When an environment is not running the latest publicly available AEM release, the status on Environments Card on the Home Screen will show **UPDATE AVAILABLE**.
+Updates to development environments are managed by users of the program. When an environment is not running the latest publicly available AEM release, the status on the **Environments** card on the **Overview** screen of your program will show a status of **Update Available**.
 
-![](assets/environ-update.png)
+![Environment update status](assets/environ-update.png)
 
+The **Update** option is available from the **Environments** card by clicking on the ellipsis button of the enjoinment.
 
-The **Update** option is available from the **Environments** Card. 
-This option is also available, if you click on **Details** from the **Environments** card. The **Environments** page opens and once you select the Development environment, click on **...** and select **Update**, as shown in the figure below:
+![Update option from Environments card](assets/environ-update2.png)
 
-![](assets/environ-update2.png)
+This option is also available by clicking on the **Environments** tab of the program and then selecting the ellipsis button of the environment.
 
-Selecting this option will allow a Deployment Manager to update the pipeline associated with this environment to the latest release and then execute the pipeline. 
+![Update option from Environments tab](assets/environ-update3.png)
+
+This option allows a user with the **Deployment Manager** role to update the pipeline associated with this environment to the latest release and then execute the pipeline. 
 
 If the pipeline has already been updated, the user is prompted to execute the pipeline.
 
-## Deleting Environment {#deleting-environment}
+## Deleting Development Environments {#deleting-environment}
 
-User with the requisite permissions will be able to delete a Development environment. 
+User with the requisite permissions will be able to delete a development environment. 
 
-The **Delete** option is available from the dropdown menu in the **Environments** Card. Click on **...** for a Development environment you want to delete.
+From the **Overview** screen of the program on the **Environments** card, click on the ellipsis button of the development environment you want to delete.
 
-![](assets/environ-delete.png)
+![The delete option](assets/environ-delete.png)
 
-The delete option is also available, if you click on **Details** from the **Environments** card. The **Environments** page opens and once you select the Development environment, click on **...** and select **Delete**, as shown in the figure below:
+The delete option is also available from the **Environments** tab of the **Overview** window of the program. Click on the ellipsis button of the environment and select **Delete**.
 
-![](assets/environ-delete2.png)
-
+![The delete option from the Environments tab](assets/environ-delete2.png)
 
 >[!NOTE]
->This feature is not available for Production/Stage environment set in a Production program set up for production purposes. The feature is, however, available for Production/Stage environments in a Sandbox program.
+>
+>* Production and staging environments created in a production program can not be deleted.
+>* Production and staging environments in a sandbox program can be deleted.
 
 ## Managing Access {#managing-access}
 
-Select **Manage Access** from the dropdown menu in the **Environments** Card. You can navigate to the author instance directly and manage access for your environment.
+Select **Manage Access** from the ellipsis menu of the environment on the **Environments** card. You can navigate to the author instance directly and manage access for your environment.
 
-![](assets/environ-access.png)
+![Manage access option](assets/environ-access.png)
 
+## Accessing the Developer Console {#accessing-developer-console}
 
-## Accessing Developer Console {#accessing-developer-console}
-
-Select **Developer Console** from the dropdown menu in the **Environments** Card. This will open a new tab in your browser with the login page to **Developer Console**. 
-
-Only a user in the Developer role will have access to **Developer Console**. The exception being for Sandbox Programs, where any user with access to the Cloud Manager Sandbox Program will have access to **Developer Console**.
-
-Refer to [Hibernating and De-hibernating Sandbox Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) for more details.
-
+Select **Developer Console** from the ellipsis menu of the environment on the **Environments** card. This will open a new tab in your browser with the login page to the **Developer Console**. 
 
 ![](assets/environ-devconsole.png)
 
-This option is also available, if you click on **Details** from the **Environments** card. The **Environments** page opens and once you select an environment, click on **...** and select **Developer Console**.
+Only a user with the **Developer** role will have access to the **Developer Console**. However for sandbox programs, any user with access to the sandbox program will have access to **Developer Console**.
+
+Please refer to the document [Hibernating and De-hibernating Sandbox Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) for more details.
+
+This option is also available from the **Environment** tab of the **Overview** window when clicking the ellipsis menu of an individual environment.
 
 ## Login Locally {#login-locally}
 
-Select **Local Login** from the dropdown menu in the **Environments** Card to login locally to Adobe Experience Manager. 
+Select **Local Login** from the ellipsis menu of the environment in the **Environments** card to login locally to Adobe Experience Manager. 
 
-![](assets/environ-login-locally.png)
+![Login locally](assets/environ-login-locally.png)
 
-Additionally, you can login locally from the **Environments** summary page.
+Additionally, you can login locally from the **Environments** tab of the **Overview** page.
 
-![](assets/environ-login-locally-2.png)
-
+![Login locally from Environments tab](assets/environ-login-locally-2.png)
 
 ## Managing Custom Domain Names {#manage-cdn}
 
-Navigate to the **Environments** details page from the Environments Summary page. 
+Custom domain names are supported in Cloud Manager for Sites programs for both publish and preview services. Each Cloud Manager environment can host up to a maximum of 250 custom domains.
 
->[!NOTE]
->Custom Domain Names are now supported in Cloud Manager for Sites programs for both Publish and Preview Services. Each Cloud Manager Environment can host up to a maximum of 250 custom domains per environment. 
+To configure custom domain names, navigate to the **Environments** tab and click on an environment to view environment details.
 
-The following actions can be performed on the Publish service for your environment  as described below: 
+![Environment details](assets/domain-names.png)
 
-1. [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+The following actions can be performed on the publish service for your environment. 
 
-1. [Viewing and Updating a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+* [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+* [Viewing and Updating a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
-1. [Checking Status of Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) or an [SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
+* [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-1. [Checking Status of an IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+* [Checking Status of Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) or an [SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
+
+* [Checking Status of an IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
 
 ## Managing IP Allow Lists {#manage-ip-allow-lists} 
 
-Navigate to the Environment details page from the Environments Summary page. You can perform the following actions on the Publish and/or Author service(s) for your environment here.
+IP allow lists are supported in Cloud Manager for author, publish, and preview services for Sites programs.
 
->[!NOTE]
->IP Allow List feature is now supported in Cloud Manager for Author, Publish, and Preview Services (available in Sites programs).
+To manage IP allow lists, navigate to the **Environments** tab of the **Overview** page of your program. Click on an individual environment to manage its details.
 
 ### Applying an IP Allow List {#apply-ip-allow-list}
 
-Applying an IP Allow List is the process by which all IP ranges included in the definition of the Allow-List are associated with an Author or Publish service in an environment. A user in the Business Owner or Deployment Manager role must be logged in in order to be able to apply an IP Allow List.
+Applying an IP allow list associates all IP ranges included in the definition of the allow list with an author or publish service in an environment. A user in the **Business Owner** or **Deployment Manager** role must be logged in in order to be able to apply an IP allow list.
 
->[!NOTE]
->The IP Allow List must exist in Cloud Manager in order to apply it to an environment-service. To learn more about IP Allow Lists in Cloud Manager navigate to [Introduction to IP Allow Lists in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+The IP allow list must exist in Cloud Manager in order to apply it to an environment. To learn more about IP allow lists in Cloud Manager please refer to the document[Introduction to IP Allow Lists in Cloud Manager.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 
-Follow the steps below to apply an IP Allow List:
+Follow these steps to apply an IP allow list.
 
-   1. Navigate to the specific environment from the **Environments** details page and navigate to the **IP Allow Lists** table.
-   1. Use the input fields at the top of the IP Allow List table to select the IP Allow List and the Author or Publish service you wish to apply it to. 
+   1. Navigate to the specific environment from the **Environments** tab of the program **Overview** screen and navigate to the **IP Allow Lists** table.
+   1. Use the input fields at the top of the IP allow list table to select the IP allow list and the author or publish service you wish to apply it to. 
    1. Click on **Apply** and confirm your submission.
 
-### Unapplying an IP Allow List {#unapply-ip-allow-list}
+### Un-Aapplying an IP Allow List {#unapply-ip-allow-list}
 
-Unapplying an IP Allow List is the process by which all IP ranges included in the definition of the Allow  List are disassociated from an Author or Publisher service in an environment. A user in the Business Owner or Deployment Manager role must be logged in in order to be able to Unapply an IP Allow List.
+Un-applying an IP allow list disassociates all IP ranges included in the definition of the allow  list from an author or publisher service in an environment. A user in the **Business Owner** or **Deployment Manager** role must be logged in in order to be able to un-apply an IP allow list.
 
-Follow the steps below to unapply an IP Allow List:
+Follow these steps to un-apply an IP allow list.
 
-1. Navigate to the specific **Environments** details page from Environments screen and navigate to the **IP Allow Lists** table.
-1. Identify the row where the IP Allow List rule you wish to unapply is listed.
-1. Select the **...** menu from the far right end of the row.
-1. Select the **Unapply** option and confirm your submission.
+1. Navigate to the specific environment from the **Environments** tab of the program **Overview** screen and navigate to the **IP Allow Lists** table.
+1. Identify the row where the IP allow list rule you wish to un-apply is listed.
+1. Select the ellipsis button from end of the row.
+1. Select **Unapply** and confirm your submission.
