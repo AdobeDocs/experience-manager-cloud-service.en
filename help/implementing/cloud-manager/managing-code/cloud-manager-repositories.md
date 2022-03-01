@@ -1,11 +1,11 @@
 ---
 title: Cloud Manager Repositories
-description: Learn how to create, view, and manage your git repositories in Cloud Manager.
+description: Learn how to create, view, and delete your git repositories in Cloud Manager.
 ---
 
 # Cloud Manager Repositories {#cloud-manager-repos} 
 
-Learn how to create, view, and manage your git repositories in Cloud Manager.
+Learn how to create, view, and delete your git repositories in Cloud Manager.
 
 >[!NOTE]
 >
