@@ -426,7 +426,7 @@ Google periodically changes their user interface. As such, the steps to publish 
 
 >[!NOTE]
 >
->The following steps were accurate at the time of this writing. However, Google periodically updates their websites without notice. As such, these steps can be slightly different.
+>The following steps were accurate at the time of writing. However, Google periodically updates their cloud web pages without notice. As such, some configuration options may be named slightly differently in the Google user interface from the name used in the steps.
 
 **To configure Google Cloud settings:**
 
@@ -440,7 +440,7 @@ Google periodically changes their user interface. As such, the steps to publish 
 
    If necessary, **[!UICONTROL Sign in]** using your Google account credentials to see the **[!UICONTROL Console]** option.
 
-1. On the Dashboard page, to the right of **[!UICONTROL Google Cloud Platform]**, select the Project drop-down list to open the **[!UICONTROL Select a project]** dialog box.
+1. On the Dashboard page, to the right of **[!UICONTROL Google Cloud Platform]**, select the **[!UICONTROL Project]** drop-down list to open the **[!UICONTROL Select a project]** dialog box.
 1. In the **[!UICONTROL Select a project]** dialog box, select **[!UICONTROL New Project]**.
 1. In the **[!UICONTROL New Project]** dialog box, in the **[!UICONTROL Project name]** field, type the name of your new project.
 
@@ -461,9 +461,7 @@ Google periodically changes their user interface. As such, the steps to publish 
    ![6_5_googleaccount-apis-manage](assets/6_5_googleaccount-apis-manage.png)
 
 1. To use the API, you need credentials. If necessary, on the left side of the APIs & Services page, select **[!UICONTROL Credentials]**.
-
 1. On the Credentials page, near the top, select **[!UICONTROL CREATE CREDENTIALS]**, then select **[!UICONTROL OAuth client ID]**.
-
 1. On the **[!UICONTROL Create OAuth client ID]** page, in the **[!UICONTROL Application type]** drop-down list, select **[!UICONTROL Web application]**.
 
    ![6_5_googleaccount-apis-applicationtype](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
@@ -488,7 +486,6 @@ Google periodically changes their user interface. As such, the steps to publish 
    >The example path above is hypothetical and for explanation purposes only.
 
 1. Under the **[!UICONTROL Authorized redirect URIs]** heading, select ADD URI.
-
 1. In the **[!UICONTROL URIs]** text field, enter the following path, substituting your own domain and port number in the path, then press **[!UICONTROL Enter]** to add the path to the list:
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
@@ -500,7 +497,6 @@ Google periodically changes their user interface. As such, the steps to publish 
    >The example path above is hypothetical and for explanation purposes only.
 
 1. Near the bottom of the **[!UICONTROL Create OAuth client ID]** page, select **[!UICONTROL Create]**.
-
 1. On the **[!UICONTROL OAuth client created]** dialog box, do the following:
 
    * (Optional) Copy Your Client ID and Your Client Secret and save.
@@ -511,7 +507,6 @@ Google periodically changes their user interface. As such, the steps to publish 
    ![6_5_googleaccount-apis-oauthclientcreated](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)   
 
 1. On the **[!UICONTROL OAuth client created]** dialog box, select **[!UICONTROL OK]**.
-
 1. Log out of your Google account. Now create a YouTube channel.
 
 ### Create a YouTube channel {#creating-a-youtube-channel}
