@@ -97,26 +97,20 @@ For example:
 
 Once you have selected your persisted query from the list (left panel) you can use the **Publish** and **Unpublish** actions. This will activate them to your development publish environment (`dev-publish`) environment for easy access by your applications when testing.
 
-<!-- comment out until values confirmed -->
-<!--
 >[!NOTE]
 >
->The definition of the persisted query's cache `Time To Live` {"cache-control":"parameter":value} has a default value of 600ms.
--->
+>The definition of the persisted query's cache `Time To Live` {"cache-control":"parameter":value} has a default value of 2 hours (7200 seconds).
 
 ## Caching your persisted queries {#caching-persisted-queries}
 
 AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL). 
 
-<!-- comment out until values confirmed -->
-<!--
 This value is set to:
 
-* 600ms is the default TTL for the Dispatcher and CDN; also known as *shared caches*
-  * default: s-maxage=600
+* 7200 seconds is the default TTL for the Dispatcher and CDN; also known as *shared caches*
+  * default: s-maxage=7200
 * 60 is the default TTL for the client (for example, a browser)
   * default: maxage=60
---> 
 
 AEM GraphQL queries that were persisted with the GraphiQL UI will use the default TTL upon execution. If you want to change the TTL for your GraphLQ query, then the query must instead be persisted using the API method. This involves posting the query to AEM using CURL in your command line interface. 
 
