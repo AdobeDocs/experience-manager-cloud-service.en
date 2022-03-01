@@ -433,6 +433,8 @@ Google periodically changes their user interface. As such, the steps to publish 
 1. Create a Google account.
    [https://accounts.google.com/signup/v2?service=mail&flowName=GlifWebSignIn&flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&flowName=GlifWebSignIn&flowEntry=SignUp)
 
+   If you already have a Google account, you can skip to the next step.
+
 1. Go to [https://cloud.google.com/](https://cloud.google.com/).
 1. On the Google Cloud page, near the upper-right corner, select **[!UICONTROL Console]**.
 
