@@ -7,12 +7,6 @@ description: Learn about IMS Configuration for use when Integrating with Adobe T
 The integration of AEM with Adobe Target via the Target Standard API requires the configuration of Adobe IMS (Identity Management System). The configuration is realized with the Adobe Developer Console.
 
 >[!NOTE]
-> 
->This feature is available in the prerelease channel. 
->
->See the [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable the feature for your environment.
-
->[!NOTE]
 >
 >Support for the Adobe Target Standard API is new in AEMaaCS. The Target Standard API uses IMS authentication.
 >
