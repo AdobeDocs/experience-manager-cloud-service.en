@@ -11,7 +11,7 @@ description: Exporting Experience Fragments to Adobe Target
 
 You can export [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md), created in Adobe Experience Manager as a Cloud Service (AEM), to Adobe Target (Target). They can then be used as offers in Target activities, to test and personalize experiences at scale.
 
-There are three format options available for exporting an Experience Fragment to Adobe Target:
+There are three options available for exporting an Experience Fragment to Adobe Target:
 
 * HTML (default): Support for web and hybrid content delivery
 * JSON: Support for headless content delivery
@@ -33,7 +33,7 @@ Experience Fragments can be exported to the default workspace in Adobe Target, o
 
 >[!NOTE]
 >
->The Adobe Target workspaces do not exist in Adobe Target itself. They are defined and managed in Adobe IMS (Identity Management System), then selected for usage across solutions using Adobe I/O integrations.
+>The Adobe Target workspaces do not exist in Adobe Target itself. They are defined and managed in Adobe IMS (Identity Management System), then selected for usage across solutions using Adobe Developer Console.
 
 >[!NOTE]
 >
