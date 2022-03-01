@@ -643,7 +643,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
       + [Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
       + [Accessing Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-      + [Integrating Git with Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+      + [Integrating with Customer-Managed Git](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
       + [Working with Multiple Source Git Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [Enterprise Team Development Setup for AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
     + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md)
