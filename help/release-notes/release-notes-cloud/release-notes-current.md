@@ -60,3 +60,14 @@ Have a look at the [February 2022 Release Overview](https://video.tv.adobe.com/v
 ### New features in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
 * Experience Manager Assets uses Adobe Sensei AI capabilities to now distinguish between colors in an image and apply those as tags automatically on ingestion. These tags enable enhanced Search experience, based on image color composition.
+
+
+## Content Transfer Tool {#ctt-release}
+
+### Release Date {#release-date-ctt}
+
+The Release Date for Content Transfer Tool v1.9.0 is February 28, 2022.
+
+### What's New {#what-is-new-ctt}
+
+* Check Size Guardrails - The Content Transfer Tool Check Size feature helps reduce failed content transfers.  With the Check Size feature, users can 1) determine whether they have sufficient disk space in the `crx-quickstart` subdirectory before extraction, and 2) estimate the migration set size and verify if it’s supported. If one or both these checks are violated, users will see warnings in the CTT UI. With this guardrail, you can avoid content transfer failures and proactively discuss migration options with Adobe Customer Care. Refer to [Determining migration set size and disk space](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) for more details.
