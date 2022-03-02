@@ -60,8 +60,12 @@ Clicking on a node will reveal its JCR properties in the right hand pane of the 
 
 ### View Content {#view-content}
 
-You can use the repository browser to view content.
+You can use the repository browser to view content by clicking on a resource in the navigation pane. This will open a preview on the right hand side of the browser, under a tab named after the respective resource.
+
+![repobrowser6](/help/implementing/developing/tools/assets/repobrowser61.png)
 
 ### Download Content {#download-content}
 
-You can also use the repository browser to download content.
+You can also use the repository browser to download content. In the example below, you can press the **download** link to download the `jcr:data` associated with the selected node.
+
+![repobrowser5](/help/implementing/developing/tools/assets/repobrowser52.png)
