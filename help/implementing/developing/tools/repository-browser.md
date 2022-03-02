@@ -7,6 +7,10 @@ seo-description: The repository browser provides a read-only view into the repos
 
 # Repository Browser {#repository-browser}
 
+>[!NOTE]
+>
+>The Repository Browser is available as part of the AEM 2022.2.0 release and requires an environment to be updated to AEM version v6433 or higher.
+
 ## Introduction {#introduction}
 
 The repository browser is a developer tool that provides a read-only view into the repository for all environments on author, publish and preview tiers. It is designed to facilitate viewing of the content structure in order to make it easier to see or debug content.
