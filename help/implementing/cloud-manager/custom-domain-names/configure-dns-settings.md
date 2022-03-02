@@ -16,7 +16,7 @@ The following steps must be completed as indicated in the table below:
 
 |Step||Responsibility|Learn More|
 |--- |--- |--- |---|
-|Add SLL Certificate|Add SLL Certificate|Customer|[Adding an SSL Certificate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en)|
+|Add SSL Certificate|Add SSL Certificate|Customer|[Adding an SSL Certificate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en)|
 |Domain Verification|Add TXT record|Customer|[Adding a TXT Record](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en)|
 |Review Domain Verification Status||Customer||
 ||Status: Domain Verification Failure|Customer|[Checking Domain Name Status](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en)|
