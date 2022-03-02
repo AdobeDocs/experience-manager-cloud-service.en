@@ -50,7 +50,7 @@ Added in the prerelease channel is the requirement for IMS authentication in ord
 
 Refer to this page (link TBD) to learn how to create the Analytics IMS configuration.
 
-After performing the steps from the [Creating the Adobe Analytics Configuration](#configuration-parameters) section the fields present in the Adobe Analytics Configuration window are as follows :
+After performing the steps in the [Creating the Adobe Analytics Configuration](#configuration-parameters) section the fields present in the configuration window are as follows :
 
 ![Configuration Parameters](assets/properties_field2.png "Configuration Parameters")
 
