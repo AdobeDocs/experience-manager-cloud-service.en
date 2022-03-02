@@ -54,13 +54,11 @@ Have a look at the [February 2022 Release Overview](https://video.tv.adobe.com/v
 
 * The administrators can now configure email service for large downloads. It allows the users to [enable email notifications for large downloads](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) from the [!DNL Experience Manager Assets] interface. The user receives an email notification containing the download link of the archived zip folder upon completion of the download process.
 
-
 * The [Manage Publication](/help/assets/manage-publication.md) feature is enhanced with an improved user interface. The users can publish or unpublish content to and from the selected destination, [Add Content](/help/assets/manage-publication.md#add-content) to the publishing list from across the DAM repository, [Include Folder Settings](/help/assets/manage-publication.md#include-folder-settings) to publish content of the selected folders and apply filters, and [schedule publishing](/help/assets/manage-publication.md#publish-assets-later) to a later date or time.
 
 ### New features in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
 * Experience Manager Assets uses Adobe Sensei AI capabilities to now distinguish between colors in an image and apply those as tags automatically on ingestion. These tags enable enhanced Search experience, based on image color composition.
-
 
 ## Content Transfer Tool {#ctt-release}
 
@@ -71,3 +69,21 @@ The Release Date for Content Transfer Tool v1.9.0 is February 28, 2022.
 ### What's New {#what-is-new-ctt}
 
 * Check Size Guardrails - The Content Transfer Tool Check Size feature helps reduce failed content transfers.  With the Check Size feature, users can 1) determine whether they have sufficient disk space in the `crx-quickstart` subdirectory before extraction, and 2) estimate the migration set size and verify if it’s supported. If one or both these checks are violated, users will see warnings in the CTT UI. With this guardrail, you can avoid content transfer failures and proactively discuss migration options with Adobe Customer Care. Refer to [Determining migration set size and disk space](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) for more details.
+
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### What is new in [!DNL Forms] {#what-is-new-forms}
+
+* **[!DNL Communications - Document Generation APIs]**: [Document Generation APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) help to combine, rearrange, and validate PDF documents. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
+
+  * Assemble PDF documents.
+  * Disassemble PDF documents.
+  * Convert to and validate PDF/A-compliant documents.
+
+* **Automatically convert PDF Forms large than 15 pages to adaptive forms**: You can now use automated forms conversion service to convert PDF Forms with up to 40 pages to adaptive forms. The service now provides option to convert sections of forms larger than 15 pages to adaptive form fragments. It helps improve rendering speed of converted forms and makes it easier to load large forms in adaptive form editor.  
+
+### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
+
+* **Use custom XCI for generating a Document of Record**: You can now use a custom XCI file to set various properties of a Document of Record. It overrides the master XCI with the custom changes.
+
+* **Use invisible CAPTCHA in an adaptive form**: You can use the invisible CAPTCHA to show the CAPTCHA challenge only in the case of a suspicious activity. If no suspicious activity is found the CAPTCHA challenge is not displayed.
