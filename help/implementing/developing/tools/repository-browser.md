@@ -64,8 +64,28 @@ You can use the repository browser to view content by clicking on a resource in 
 
 ![repobrowser6](/help/implementing/developing/tools/assets/repobrowser61.png)
 
+Preview is currently available for image types in the list below:
+
+* apng
+* avif
+* gif
+* jpeg
+* png
+* svg+xml
+* webp
+* bmp
+* x-icon
+* tiff
+
+And for the following text-based mime-types:
+
+* `"text/*"`
+* `'application/javascript'`
+* `'application/json'`
+* `'application/x-sh'`
+
 ### Download Content {#download-content}
 
-You can also use the repository browser to download content. In the example below, you can press the **download** link to download the `jcr:data` associated with the selected node.
+You can also use the repository browser to download content. In the example below, you can press the **download** link to download the `jcr:data` associated with the selected node. This feature is available for all binary properties by navigating to the node containing the property definition.
 
 ![repobrowser5](/help/implementing/developing/tools/assets/repobrowser52.png)
