@@ -24,7 +24,7 @@ Once you have [configured your production Pipeline](/help/implementing/cloud-man
 
    ![Pipeline Execution screen](assets/deploy-code2.png)
 
-The build process deploys your code including these stages.
+The build process deploys your code through three phases.
 
 1. Stage Deployment
 1. Stage Testing
@@ -34,9 +34,9 @@ The build process deploys your code including these stages.
 >
 >You can review the steps from various deployment processes by viewing logs, or reviewing results, for the testing criteria.
 
-## Stage Deployment {#stage-deployment}
+## Stage Deployment Phase {#stage-deployment}
 
-The **Stage Deployment** stage. involves these steps.
+The **Stage Deployment** phase. involves these steps.
 
 * **Validation**  - This step ensures that the pipeline is configured to use the currently available resources. E.g. testing that the configured branch exists and that the environments are available.
 * **Build &amp; Unit Testing** - This step runs a containerized build process.
@@ -44,14 +44,15 @@ The **Stage Deployment** stage. involves these steps.
 * **Code Scanning** - This step evaluates the quality of your application code.
   * Please see the document [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md) for details on the testing process.
 * **Build Images** - This process is responsible for transforming the content and dispatcher packages produced by the build step into Docker images and Kubernetes configurations.
+* **Deploy to Stage** - The image is deployed to the staging environment in preparation for the [Stage testing stage.](#stage-testing)
 
 ![Stage Deployment](assets/stage-deployment.png)
 
-## Stage Testing {#stage-testing}
+## Stage Testing Phase {#stage-testing}
 
-The **Stage testing** stage involves these steps.
+The **Stage testing** phase involves these steps.
 
-* **Product Functional Testing** - Cloud Manager pipeline executions support execution of tests that run against the stage environment.
+* **Product Functional Testing** - Cloud Manager pipeline executes tests that run against the stage environment.
    * Please refer to the document [Product Functional Testing](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) for more details.
 
 * **Custom Functional Testing** - This step in the pipeline is always executed and cannot be skipped. If no test JAR is produced by the build, the test passes by default.  
@@ -69,11 +70,7 @@ The **Stage testing** stage involves these steps.
 
 ![Stage Testing](assets/stage-testing.png)
 
-## Deployment Process {#deployment-process}
-
-All Cloud Service deployments follow a rolling process to ensure zero downtime. Please refer to the document [How Rolling Deployments Work](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work) to learn more.
-
-### Deployment to Production Phase {#deployment-production-phase}
+## Production Deployment Phase {#deployment-production-phase}
 
 The process for deploying to production topologies differs slightly in order to minimize impact visitors to an AEM site.
 
@@ -88,3 +85,9 @@ Production deployments generally follow the same steps as previously described, 
 1. Put dispatcher2 back into the load balancer.
 
 This process continues until the deployment has reached all publishers and dispatchers in the topology.
+
+![Production Deployment phase](assets/production-deployment.png)
+
+## Deployment Process {#deployment-process}
+
+All Cloud Service deployments follow a rolling process to ensure zero downtime. Please refer to the document [How Rolling Deployments Work](/help/implementing/deploying/overview.md#how-rolling-deployments-work) to learn more.
