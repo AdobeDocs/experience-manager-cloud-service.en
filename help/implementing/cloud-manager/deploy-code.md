@@ -26,9 +26,9 @@ Once you have [configured your production Pipeline](/help/implementing/cloud-man
 
 The build process deploys your code through three phases.
 
-1. Stage Deployment
-1. Stage Testing
-1. Production Deployment
+1. [Stage Deployment](#stage-deployment)
+1. [Stage Testing](#stage-testing)
+1. [Production Deployment](#production-deployment)
 
 >[!TIP]
 >
@@ -70,7 +70,7 @@ The **Stage testing** phase involves these steps.
 
 ![Stage Testing](assets/stage-testing.png)
 
-## Production Deployment Phase {#deployment-production-phase}
+## Production Deployment Phase {#deployment-production}
 
 The process for deploying to production topologies differs slightly in order to minimize impact visitors to an AEM site.
 
