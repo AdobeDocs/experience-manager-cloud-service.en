@@ -803,6 +803,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)
     + [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md)
     + [OSGi Configuration API](/help/implementing/deploying/osgi-configuration-api.md)
+    + [Resource Mapping](/help/implementing/deploying/resource-mapping.md)
   + Author Tier {#author-tier}
     + [Accessing the Author Tier](/help/implementing/author-tier/accessing-the-author-tier.md)
     + [Securing the Author Tier](/help/implementing/author-tier/securing-the-author-tier.md)
