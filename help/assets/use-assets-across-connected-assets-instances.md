@@ -260,7 +260,7 @@ You can connect one remote DAM deployment to a [!DNL Sites] deployment after con
 
 ### Can you use Dynamic Media assets from your [!DNL Sites] deployment after configuring Connected Assets?
 
-After configuring Connected Assets, [!DNL Dynamic Media] assets are available on [!DNL Sites] deployment in a read-only mode. As a result, you cannot use [!DNL Dynamic Media] to process assets on the [!DNL Sites] deployment. For more information, see [Configure a connection between Sites and Dynamic Media deployments](#sites-dynamic-media-connected-assets).
+After configuring Connected Assets, [!DNL Dynamic Media] assets are available on [!DNL Sites] deployment in a read-only mode. As a result, you cannot use [!DNL Dynamic Media] to process assets on the [!DNL Sites] deployment. For more information, see [Configure a connection between Sites and Dynamic Media deployments](#dynamic-media-assets).
 
 ### Can you use assets of Image and Document format types from the remote DAM deployment on the [!DNL Sites] deployment after configuring Connected Assets?
 
@@ -272,7 +272,7 @@ No, you cannot use content fragments and video assets from the remote DAM deploy
 
 ### Can you use Dynamic Media assets from the remote DAM deployment on the [!DNL Sites] deployment after configuring Connected Assets?
 
-Yes, you can configure and use Dynamic Media assets from the remote DAM deployment on the [!DNL Sites] deployment after configuring Connected Assets. For more information, see [Configure a connection between Sites and Dynamic Media deployments](#sites-dynamic-media-connected-assets).
+Yes, you can configure and use Dynamic Media assets from the remote DAM deployment on the [!DNL Sites] deployment after configuring Connected Assets. For more information, see [Configure a connection between Sites and Dynamic Media deployments](#dynamic-media-assets).
 
 ### After configuring Connected Assets, can you perform the update, delete, rename, and move operations on the remote DAM assets or folders?
 
