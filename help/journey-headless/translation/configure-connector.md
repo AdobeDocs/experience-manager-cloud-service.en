@@ -93,6 +93,11 @@ To create a new translation configuration:
    1. **Translate Metadata** - Check this to translate asset metadata.
    1. **Translate Tags** - Check this to translate tags that are associated with the asset.
    1. **Auto-Execute Translation** - Check this property if you want translations to be automatically sent to your translation service.
+   1. **Disable Update-Only Translation** - When this option is checked, updating the translation project will submit all translatable fields for translation, not just the ones changed since last translation. Updating your translation project will be discussed later in the journey.
+   1. **Enable Content Model Fields for Translation** - Check this option so the translation configuration automatically recognizes fields in the Content Models based on the **Translatable** flag.
+      * If available, this option should be checked to simplify the translation process.
+      * This option is only available in the prerelease channel of AEM as a Cloud Service.
+      * See the [Additional Resources section](#additional-resources) for more information on the prerelease channel.
 
 1. Tap or click **Save &amp; Close**.
 
@@ -132,3 +137,4 @@ While it is recommended that you move on to the next part of the headless transl
 
 * [Configuring the Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md) - Review a list of selected translation connectors and learn how to configure the Translation Integration Framework to integrate with third-party translation services.
 * [Connecting to Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md) - AEM provides a trial Microsoft Translation account for testing purposes.
+* [AEM as a Cloud Service Prerelease Channel](/help/release-notes/prerelease.md#enable-prerelease) - Learn how to opt in to the prerelease channel of AEM as a Cloud Service to try new and upcoming features.
