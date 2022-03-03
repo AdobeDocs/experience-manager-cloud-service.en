@@ -103,7 +103,13 @@ Assets properties control how to configure assets. For more information about tr
 |Translate Tags|Activate this property to translate tags that are associated with the asset.|
 |Auto-Execute Translation|Select this property to execute translation jobs automatically after translation projects are created. You do not have an opportunity to review or scope the translation job when you select this option.|
 |Disable Update-Only Translation|When this option is checked, updating the translation project will submit all translatable fields for translation, not just the ones changed since last translation.|
-|Enable Content Model Fields for Translation|Enabling this option will use the **Translatable** field on [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md#properties) to determine if the field is translated. In this case, [translation rules](rules.md) are superseded.|
+|Enable Content Model Fields for Translation*|Enabling this option will use the **Translatable** field on [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md#properties) to determine if the field is translated. In this case, [translation rules](rules.md) are superseded.|
+
+>[!NOTE]
+>
+>*This feature is available in the prerelease channel.
+> 
+>See the [Prerelease Channel documentation](/help/release-notes/prerelease.md#enable-prerelease) for information on how to enable the feature for your environment.
 
 ## Configuring Pages for Translation {#configuring-pages-for-translation}
 
