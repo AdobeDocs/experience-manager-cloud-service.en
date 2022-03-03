@@ -1,5 +1,5 @@
 ---
-title: How to apply color tags to images?
+title: Color tags for images
 description: Experience Manager Assets enables you to distinguish between colors in an image and apply those as tags automatically. You can then use these tags to search and filter images.
 ---
 
@@ -19,7 +19,7 @@ The following figure illustrates the sequence of tasks that you perform to confi
 
 ## Supported file formats {#supported-file-formats-color-tags}
 
-|File format |Extension (case-sensitive) | MIME type |Input Colorspace |Maximum supported source file size |Maximum suported file size resolution|
+|File format |Extension (case-sensitive) | MIME type |Input Colorspace |Maximum supported source file size |Maximum supported file size resolution|
 |---|---|---|---|---|---|
 | JPEG |.jpg, .jpeg|image/jpeg |sRGB|15GB |20000px X 20000px | 
 | PNG |.png|image/png |sRGB |15GB |20000px X 20000px |

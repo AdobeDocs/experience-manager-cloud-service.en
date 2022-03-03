@@ -39,10 +39,6 @@ See [add digital assets to Experience Manager](add-assets.md).
 
 If a DAM user uploads one or more assets that already exist in the repository, [!DNL Experience Manager] detects the duplication and notifies the user. Duplicate detection is disabled by default as it can have performance impact depending on size of repository and number of assets uploaded.
 
->[!NOTE]
->
->This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information to enable the feature for your environment.
-
 To enable the feature:
 
 1. Navigate to **[!UICONTROL Tools > Assets > Assets Configurations]**.
