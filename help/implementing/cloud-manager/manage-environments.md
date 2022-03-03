@@ -111,13 +111,23 @@ Once activated, you can publish content to the preview service by using the Mana
 >
 >Your environment must be on AEM version `2021.05.5368.20210529T101701Z` or new. Make sure an update pipeline has successfully run on your environment to do this.
 
-## Updating Environment {#updating-dev-environment}
+## Updating Development Environments {#updating-dev-environment}
 
-Updates of your staging and production environments are automatically managed by Adobe. 
+As a cloud-native service, updates of your staging and production environments are automatically managed by Adobe. 
 
-Updates to development environments are managed by users of the program. When an environment is not running the latest publicly available AEM release, the status on the **Environments** card on the **Overview** screen of your program will show a status of **Update Available**.
+However updates to development environments are managed within your program. When an environment is not running the latest publicly available AEM release, the status on the **Environments** card on the **Overview** screen of your program will show a status of **Update Available**.
 
 ![Environment update status](assets/environ-update.png)
+
+### Updates and Pipelines {#updates-pipelines}
+
+Pipelines are the only way to [deploy code to the environments of AEM as a Cloud Service.](deploy-code.md) For this reason, each pipeline is associated with a particular AEM version number.
+
+If Cloud Manager detects that there is a newer version of AEM available than that which was last deployed with the pipeline, it shows the **Update Available** status for the environment.
+
+The process of updating is then simply running the pipeline to deploy the new version of AEM with the pipeline.
+
+### Updating Your Development Environments {#updating-your-dev-environments}
 
 The **Update** option is available from the **Environments** card by clicking on the ellipsis button of the enjoinment.
 
