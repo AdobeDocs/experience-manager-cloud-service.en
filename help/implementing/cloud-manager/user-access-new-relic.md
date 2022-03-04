@@ -1,9 +1,9 @@
 ---
-title: User Access to New Relic One
+title: New Relic One
 description: Learn about the New Relic One application performance monitoring (APM) service for AEM as a Cloud Service and how you can access it.
 ---
 
-# User Access to New Relic One {#user-access}
+# New Relic One {#user-access}
 
 Learn about the New Relic One application performance monitoring (APM) service for AEM as a Cloud Service and how you can access it.
 

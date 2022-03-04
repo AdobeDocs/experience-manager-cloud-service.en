@@ -1,10 +1,10 @@
 ---
-title: Overview of Cloud Manager Tests
+title: Cloud Manager Tests Overview
 description: Get an overview of the three types of tests that Cloud Manager automatically runs to ensure quality of your custom code.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 ---
 
-# Overview of Cloud Manager Tests {#overview}
+# Cloud Manager Tests Overview {#overview}
 
 There are three categories of tests supported by Cloud Manager for Cloud Services pipelines.
 
