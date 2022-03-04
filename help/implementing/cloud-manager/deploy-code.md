@@ -60,7 +60,7 @@ The **Stage testing** phase involves these steps.
 
 * **Custom UI Testing** - This step is an optional feature that automatically run UI tests created for custom applications.
    * UI tests are Selenium-based tests packaged in a Docker image to allow a wide choice in language and frameworks (such as Java and Maven, Node and WebDriver.io, or any other framework and technology built upon Selenium).
-   * Please refer to the document [Custom UI Testing](//help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) for more details.
+   * Please refer to the document [Custom UI Testing](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) for more details.
 
 * **Experience Audit** - This step in the pipeline is always executed and cannot be skipped. As a production pipeline is executed, an experience audit step is included after custom functional testing that will run the checks.
    * The pages that are configured are submitted to the service and evaluated. 
