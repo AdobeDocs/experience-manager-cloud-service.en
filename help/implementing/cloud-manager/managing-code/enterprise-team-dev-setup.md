@@ -74,7 +74,7 @@ Pushes to the development branch are handled differently. While a push to a deve
 
 Running the production pipeline includes checking the code of all teams via the provided quality gates. Once the code is deployed to stage, the tests and audits are executed to ensure everything is working as expected. Once all gates are passed, the changes are rolled out to production without any interruption or downtime.
 
-For local development, the [SDK for AEM as a Cloud Service](/(/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing) is used. The SDK allows a local author, publish, and dispatcher to be set up. This enables offline development and quick turnaround times. Sometimes only the author environment is used for development, but quickly setting up dispatcher and publish environments allows testing everything locally before pushing into the git repository.
+For local development, the [SDK for AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing) is used. The SDK allows a local author, publish, and dispatcher to be set up. This enables offline development and quick turnaround times. Sometimes only the author environment is used for development, but quickly setting up dispatcher and publish environments allows testing everything locally before pushing into the git repository.
 
 Members of each team usually checkout the code from the shared git for as well as their own project code. There is no need to checkout other projects as the projects are independent.
 
