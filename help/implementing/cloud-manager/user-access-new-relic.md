@@ -1,33 +1,33 @@
 ---
-title: User Access to New Relic
-description: Learn about New Relic application performance monitoring data for AEM as a Cloud Service.
+title: User Access to New Relic One
+description: Learn about the New Relic One application performance monitoring (APM) service for AEM as a Cloud Service and how you can access it.
 ---
 
-# User Access to New Relic {#user-access}
+# User Access to New Relic One {#user-access}
 
-Learn about New Relic application performance monitoring data for AEM as a Cloud Service.
+Learn about the New Relic One application performance monitoring (APM) service for AEM as a Cloud Service and how you can access it.
 
 ## Introduction {#introduction}
 
-Adobe places a great emphasis on the monitoring, availability, and performance of your application. To help achieve this goal, AEM as a Cloud Service provides access to a custom New Relic monitoring suite as a part of the standard product offering to ensure your teams have the maximum visibility to your AEM as a Cloud Service system and environment performance metrics.
+Adobe places a great emphasis on the monitoring, availability, and performance of your application. To help achieve this goal, AEM as a Cloud Service provides access to a custom New Relic One monitoring suite as a part of the standard product offering to ensure your teams have the maximum visibility to your AEM as a Cloud Service system and environment performance metrics.
 
-This document describes the New Relic monitoring features enabled on your AEM as a Cloud Service environments to help bolster the performance and allow you to get the most out of AEM as a Cloud Service.
+This document describes the New Relic One application performance monitoring (APM) features enabled on your AEM as a Cloud Service environments to help support performance and allow you to get the most out of AEM as a Cloud Service.
 
 ## Features {#transaction-monitoring}
 
-New Relic application performance monitoring for AEM as a Cloud Service has many features.
+New Relic One APM for AEM as a Cloud Service has many features.
 
 * Direct access to a dedicated New Relic One account (access managed by Adobe Support)
 
-* Instrumented New Relic APM agent that shows exact method calls with line numbers, including external dependencies and databases
+* Instrumented New Relic One APM agent that shows exact method calls with line numbers, including external dependencies and databases
 
 * Holistic performance optimization by combining key metrics from infrastructure-level monitoring as well as application (Adobe Experience Manager) monitoring
 
 * Exposure of AEM as a Cloud Service JMX Mbeans and health checks directly within New Relic Insights metrics, allowing for deep inspection of application stack performance and health metrics.
 
-## Accessing New Relic {#accessing-new-relic}
+## Accessing New Relic One {#accessing-new-relic}
 
-Follow these steps to get access to your New Relic sub-account associated with your AEM as a Cloud Service Program.
+Follow these steps to get access to your New Relic One sub-account associated with your AEM as a Cloud Service Program.
 
 1. Please open a request by accessing the Support tab in the Admin Console. 
 1. In your request, include the details of your Program ID, as well as the list of users who require access to New Relic. 
@@ -71,17 +71,17 @@ For more help, please open a support ticket via the [AEM Support Portal](https:/
 
 ## Exceptions {#exceptions}
  
-AEM as a Cloud Service only offers the New Relic APM solution and does not provide support for alerting, logging, or API integrations.
+AEM as a Cloud Service only offers the New Relic One APM solution and does not provide support for alerting, logging, or API integrations.
 
-For more help or additional guidance on New Relic offerings for your AEM as a Cloud Service Program, please open a support ticket via the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, please open a support ticket via the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Frequently Asked Questions for New Relic Account {#faqs}
 
-### What does Adobe monitor with New Relic? {#adobe-monitor}
+### What does Adobe monitor with New Relic One? {#adobe-monitor}
 
-Adobe monitors the AEM as a Cloud Service author, publish and preview (where available) services via New Relic APM Java plug-in. Adobe enables custom New Relic APM telemetry and monitoring across non-production and production AEM as a Cloud Service environments. 
+Adobe monitors the AEM as a Cloud Service author, publish and preview (where available) services via New Relic One's Java plug-in. Adobe enables custom New Relic One APM telemetry and monitoring across non-production and production AEM as a Cloud Service environments. 
 
-Your New Relic account is attached to a primary Adobe-maintained account and has multiple applications reporting into it: three per AEM as a Cloud Service Environment. 
+Your New Relic One account is attached to a primary Adobe-maintained account and has multiple applications reporting into it: three per AEM as a Cloud Service Environment. 
 
 * One application for the author service per environment
 * One application for the publish service per environment (including Golden Publish)
@@ -90,24 +90,25 @@ Your New Relic account is attached to a primary Adobe-maintained account and has
 Please note:
 
 * Each application uses one license key.
-* AEM as a Cloud Service environments report to only one New Relic account.
-* Full monitoring metrics and events for both New Relic APM are retained for 7 days.
+* AEM as a Cloud Service environments report to only one New Relic One account.
+* Full monitoring metrics and events for both New Relic One are retained for 7 days.
 
-### Who can access the New Relic cloud service data? {#access-new-relic-cloud}
+### Who can access the New Relic One cloud service data? {#access-new-relic-cloud}
 
-Full read access will be granted for up to 10 members of your team. Read access will include all APM metrics collected by the New Relic agent.
+Full read access will be granted for up to 10 members of your team. Read access will include all APM metrics collected by the New Relic One agent.
 
 ### Is custom SSO configuration supported? {#custom-sso}
 
-Custom SSO configuration is not supported for the New Relic account provisioned by Adobe.
+Custom SSO configuration is not supported for the New Relic One account provisioned by Adobe.
 
 ### What if I already have an on-premises New Relic subscription? {#new-relic-subscription}
 
-The new observability platform from New Relic, called New Relic One, enables Adobe support and your teams to observe, monitor, and view metrics and events, all in one place.
+New Relic One is the new observability platform from New Relic and it enables Adobe support and your teams to observe, monitor, and view metrics and events, all in one place.
 
-New Relic One provides users the ability to search across all accounts where they have access and visualize the data from all services and hosts in one view. While Adobe support will monitor the AEM as a Cloud Service application using New Relic and other in-house tools as part of your service, your teams can continue to leverage New Relic for on-premises hosted services and infrastructure. They will be able to visualize the data from both Adobe and customer managed New Relic accounts.
+New Relic One provides users the ability to search across all accounts where they have access and visualize the data from all services and hosts in one view.
+
+While Adobe support will monitor the AEM as a Cloud Service application using New Relic One and other in-house tools as part of your service, your teams can continue to leverage New Relic for on-premises hosted services and infrastructure. They will be able to visualize the data from both Adobe New Relic One account and customer-managed New Relic accounts.
 
 >[!NOTE]
->User must have the right permissions and use the same login methodology for both accounts (Adobe and customer managed New Relic account).
-
-
+>
+>To view both data sets within New Relic One, a user must have the right permissions and use the same login methodology for both accounts (Adobe New Relic One and the customer-managed New Relic accounts).
