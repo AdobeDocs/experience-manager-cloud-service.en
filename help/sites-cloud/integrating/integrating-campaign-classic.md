@@ -38,7 +38,7 @@ In the following chapters you will learn how to install, setup and configure Ado
 
 ### Prerequisites {#prerequisites-campaign-classic}
 
-To install and configure Adobe campaign classic you need the following:
+(remove also) To install and configure Adobe campaign classic you need the following:
 
 1. Install java 7 or later.
 1. Install Postgres.
@@ -46,7 +46,7 @@ To install and configure Adobe campaign classic you need the following:
 
 ### Installing Adobe Campaign Classic {#acc-installation}
 
-If you do not have Adobe Campaign Classic installed follow these steps:
+(we need to take it out look for reference) If you do not have Adobe Campaign Classic installed follow these steps:
 
 1. Download the Adobe Campaign Classic installation from the Adobe software distribution portal as per your [platform](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 1. Locate the setup.exe file in the extracted folder.
@@ -69,7 +69,7 @@ Once the installation is complete, a message window will appear. Click the **Fin
 
 ### First start-up of the Adobe Campaign Classic Server {#first-startup}
 
-After the installation is complete you can start up the server Adobe Campaign Classic Server. Follow the steps below to ensure a smooth startup:
+(skip this) After the installation is complete you can start up the server Adobe Campaign Classic Server. Follow the steps below to ensure a smooth startup:
 
 1. Start command prompt as an administrator
 1. Navigate to the Adobe Campaign directory, for example: `C:\Program Files\Adobe\Adobe Campaign Classic v7`
@@ -91,7 +91,7 @@ After the installation is complete you can start up the server Adobe Campaign Cl
 
 ### Creating the Adobe Campaign Classic Instance {#instance-creation}
 
-After the server startup, follow these steps to create an Adobe Campaign Classic instance:
+(skip) After the server startup, follow these steps to create an Adobe Campaign Classic instance:
 
 1. Open the Adobe Campaign Classic client from the start menu.
 1. Click on the Adobe Inc. v6 link.
@@ -100,7 +100,7 @@ After the server startup, follow these steps to create an Adobe Campaign Classic
 
 ### Creating the Database {#creation-database}
 
-Since this is first time you log in the **Declare a new instance** window is displayed. You will now be able to create a database, as follows:
+(skip) Since this is first time you log in the **Declare a new instance** window is displayed. You will now be able to create a database, as follows:
 
 1. In the Declare a new instance window:
    * Enter the `<server name>` into the Name field (we set acc-test, note that the system will change this to acc_test) (unclear/more context)
@@ -130,7 +130,7 @@ Once you've clicked ok, you will go back to the login page. Log in again with yo
 
 ### Creating the Operator user {#create-operator}
 
-After the database creation you need to create an Operator user, as follows:
+(kep it) After the database creation you need to create an Operator user, as follows:
 
 Open the Adobe Campaign Classic client console from start menu and log in. The home page should appear.
 
@@ -141,7 +141,7 @@ Open the Adobe Campaign Classic client console from start menu and log in. The h
 1. Click on the **Access rights** tab and click on the **Edit the access parameters** link under the security settings.
 1. Under Encryption, select public network as the authorized connection zone. Click **OK**.
 1. Click on **Save**.
-1. Log out using the ACC client. (unclear)
+1. Log out.
 1. Go to the Adobe Campaign Classic v7 install location, for example `C:\Program Files\Adobe\Adobe Campaign Classic v7\conf` and open the serverConf.xml as an administrator.
     * Search for **security zone**
     * Set the following parameters `allowHTTP="true"` `sessionTokenOnly="true"` `allowUserPassword="true"`
@@ -175,8 +175,8 @@ After installing and configuring Adobe Campaign Classic you need to configure th
     >
     >Please make sure that your Adobe Campaign server is reachable on the internet as AEM as a Cloud Service can not reach private networks.
 1. Please check the publish instance in the Link Externalizer configuration.
-You can check this configuration by checking the status dump (unclear/more context) of the OSGi services in the developer console.
-If it is not correct then make changes in git and then deploy the configuration by using cloud manager (link needed).
+You can check this configuration by checking the status dump (keep it look for reference in skyline docset) of the OSGi services in the developer console.
+If it is not correct then make changes in corresponding instance git repository (code deploy reference) and then deploy the configuration by using cloud manager (link needed).
 
 ```
 Service 3310 - [com.day.cq.commons.Externalizer] (pid: com.day.cq.commons.impl.ExternalizerImpl)",
@@ -231,7 +231,7 @@ You must configure an external account in order to connect Adobe Campaign Classi
 
 ## Creating an Adobe Experience Manager Newsletter {#creating-newsletter}
 
-Having configured both Adobe Campaign Classic and AEM as a Cloud Service, you will now learn how to create an Adobe Experience Manager Newsletter.
+(move it ) Having configured both Adobe Campaign Classic and AEM as a Cloud Service, you will now learn how to create an Adobe Experience Manager Newsletter.
 
 1. From the AEM author instance, click the Adobe Experience Manager logo in the upper left side of the page and select **Sites**.
 1. Select Campaign, click **Create→Page**.
