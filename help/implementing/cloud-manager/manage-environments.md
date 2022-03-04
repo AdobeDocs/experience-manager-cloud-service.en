@@ -18,7 +18,7 @@ A user with the requisite permissions can create the following environment types
 
 The capabilities of individual environments depend upon the solutions enabled in the containing [program.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
-* [Sites]((help/sites-cloud/home.md))
+* [Sites](/help/sites-cloud/home.md)
 * [Assets](/help/assets/home.md)
 * [Forms](/help/forms/home.md)
 * [Screens](/help/screens-cloud/home.md)
