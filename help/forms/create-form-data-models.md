@@ -79,6 +79,43 @@ Do the following to add or update data sources to an existing form data model.
 >
 >Once you add new data sources or update existing data sources in a form data model, ensure that you update the binding references, as appropriate, in Adaptive Forms<!--and interactive communications--> that use the updated form data model.
 
+## Context aware configurations for specific run modes {#context-aware-config-run-mode}
+
+[!UICONTROL Form Data Model] utilizes [Sling context-aware configurations](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) to support different data source parameters to connect with data sources for different [!DNL Experience Manager] run modes.
+
+When [!UICONTROL Form Data Model] uses cloud configurations to store parameters, which when checked-in and deployed through source control (Cloud-Manager GIT repository) creates cloud configuration with same parameters for all the run modes (Development, Stage, and Production). However, for use cases where there is a need to have different data sets for test and production environments, then we use data source parameters (for example data source URL) for different [!DNL Experience Manager] run modes.
+
+To achieve this you need to create an OSGi configuration that contains data source parameters-value pairs. This overrides the same pair from [!UICONTROL Form Data Model] cloud configuration at run time. As the OSGi configurations support these run modes by default, you can override a data source parameter to different values based on run mode.
+
+To enable deployment-specific cloud configurations in [!UICONTROL Form Data Model]:
+
+1. Create cloud configuration on local development instance. For detailed steps, see (How to configure data sources)[/help/forms/configure-data-sources.md.
+
+1. Store your cloud configuration to file system.
+    1. Create package with filter `/conf/{foldername}/settings/cloudconfigs/fdm`. Use the same `{foldername}` as in step 1. And replace `fdm` with `azurestorage` for Azure storage configuration.
+    1. Build and download package. For details, see [package actions](/help/implementing/developing/tools/package-manager.md).
+
+1. Integrate cloud configuration in [!DNL Experience Manager] Archetype Project.
+    1. Unzip the downloaded package.
+    1. Copy `jcr_root` folder and put it your `ui.content` > `src` > `main` > `content`.
+    1. Update `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` to contain filter `/conf/{foldername}/settings/cloudconfigs/fdm`. For details, see [ui.content module of AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). When this archetype project is deployed through CM pipeline, the same cloud configuration gets installed on all the environments (or runmodes). To change the value of fields (like URL) of cloud configurations based on environment, use the OSGi configuration discussed in the following step.
+
+1. Create the OSGi Configuration. To create the OSGi configuration:
+    1. Create OSGi Factory Configuration files with PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Create file with same name under each run mode folder where the values need be changed per run mode. For details, see [Configuring OSGi for [!DNL Adobe Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en#creating-sogi-configurations).
+
+    1. Apache Sling Context-Aware Configuration Override Provider: OSGi configuration.
+        1. On local development instance `/system/console/configMgr`, select factory OSGi configuration with the name **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: OSGi configuration]**.
+        1. Provide description.
+        1. Select **[!UICONTROL enabled]**.
+        1. Under overrides, provide fields that need to be changed based on environment in sling override syntax. For details, see [Apache Sling Context-Aware Configuration - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). For example, `[/conf/{foldername}]cloudconfigs/fdm/{configName}/url="newURL"`.
+        Multiple overrides can be added by selecting [!UICONTROL +]**.
+        1. Select **[!UICONTROL Save]**.
+        1. To get OSGi Configuration JSON, follow the steps in [Generating OSGi Configurations using the AEM SDK Quickstart](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#generating-osgi-configurations-using-the-aem-sdk-quickstart).
+        1. Place JSON in OSGi Factory Configuration Files created in the previous step.
+        1. Change the value of `newURL` based on environment (or runmode).
+        1. To change secret value based on runmode, secret variable can be created using [cloud manager API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties) and later can be referenced in the [OSGi Configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values).
+        When this archetype project is deployed through CM pipeline, override will provide different values on different environments (or run mode).
+
 ## Next steps {#next-steps}
 
 You now have a Form Data Model with data sources added to it. Next, you can edit the Form Data Model to add and configure data model objects and services, add associations between data model objects, edit properties, add custom data model objects and properties, generate sample data, and so on.
