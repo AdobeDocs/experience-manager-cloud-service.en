@@ -26,15 +26,18 @@ Define DISABLE_DEFAULT_CACHING
 This can be useful, for example, when your business logic requires fine tuning of the age header (with a value based on calendar day) since by default the age header is set to 0. That said, **please exercise caution when turning off default caching.**
 
 * can be overridden for all HTML/Text content by defining the `EXPIRATION_TIME` variable in `global.vars` using the AEM as a Cloud Service SDK Dispatcher tools.
-* can be overridden on a finer grained level by the following apache mod_headers directives:
+* can be overridden on a finer grained level, including controlling CDN and browser cache independently, with the following apache mod_headers directives:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
+        Header set Surrogate-Control "max-age=3600"
         Header set Age 0
    </LocationMatch>
-
    ```
+
+   >[!NOTE]
+   >The Surrogate-Control header applies to the Adobe managed CDN. If using a [customer managed CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), a different header may be required depending on your CDN provider.
 
    Exercise caution when setting global cache control headers or those that match a wide regex so they are not applied to content that you might intend to keep private. Consider using multiple directives to ensure rules are applied in a fine-grained manner. With that said, AEM as a Cloud Service will remove the cache header if it detects that it has been applied to what it detects to be uncacheable by dispatcher, as described in dispatcher documentation. In order to force AEM to always apply the caching headers, one can add the **always** option as follows:
 
@@ -111,6 +114,66 @@ This can be useful, for example, when your business logic requires fine tuning o
 * no default caching
 * default cannot be set with the `EXPIRATION_TIME` variable used for html/text file types
 * cache expiration can be set with the same LocationMatch strategy described in the html/text section by specifying the appropriate regex
+
+### Furthur Optimizations
+
+* Avoid using `User-Agent` as part of the `Vary` header.
+   * Locate the vhost files in `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
+   * Remove or comment out the line: `Header append Vary User-Agent env=!dont-vary` from all vhost files, with the exception of default.vhost, which is read-only
+* Use the `Surrogate-Control` header to control CDN caching independent from browser caching
+* Consider applying [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) and [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) directives to allow background refresh and avoid cache misses
+* Some examples follow for various content types, which can be used as a guide when setting up your own caching rules. Please carefully consider and test for your specific setup and requirements:
+
+   * Cache mutable client library resources for 12h and background refresh after 12h.
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Cache immutable client library resources long-term (30 days) with background refresh to avoid MISS.
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Cache HTML pages for 5min with background refresh 1h on browser and 12h on CDN. Cache-Control headers will always be added so it is important to ensure that matching html pages under /content/* are intended to be public. If not, consider using a more specifc regex.
+      ```
+      <LocationMatch "^/content/.*\.html$">
+         Header unset Cache-Control
+         Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Cache content services/Sling model exporter json responses for 5min with background refresh 1h on browser and 12h on CDN.
+      ```
+      <LocationMatch "^/content/.*\.model\.json$">
+         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Cache immutable URLs from the core image component long-term (30 days) with background refresh to avoid MISS.
+      ```
+      <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Cache mutable resources from the DAM like images and video for 24h and background refresh after 12h to avoid MISS
+      ```
+      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
 
 ## Dispatcher Cache Invalidation {#disp}
 
