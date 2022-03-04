@@ -113,9 +113,9 @@ Once activated, you can publish content to the preview service by using the Mana
 
 ## Updating Development Environments {#updating-dev-environment}
 
-As a cloud-native service, updates of your staging and production environments are automatically managed by Adobe. 
+As a cloud-native service, updates of your staging and production environments within production programs are automatically managed by Adobe. 
 
-However updates to development environments are managed within your program. When an environment is not running the latest publicly available AEM release, the status on the **Environments** card on the **Overview** screen of your program will show a status of **Update Available**.
+However updates to development environments as well as to environments in sandbox programs are managed within the programs. When such an environment is not running the latest publicly available AEM release, the status on the **Environments** card on the **Overview** screen of the program will show **Update Available**.
 
 ![Environment update status](assets/environ-update.png)
 
@@ -125,11 +125,11 @@ Pipelines are the only way to [deploy code to the environments of AEM as a Cloud
 
 If Cloud Manager detects that there is a newer version of AEM available than that which was last deployed with the pipeline, it shows the **Update Available** status for the environment.
 
-The process of updating is then simply running the pipeline to deploy the new version of AEM with the pipeline.
+The process of updating is then simply running a pipeline to deploy the new version of AEM with that pipeline.
 
 ### Updating Your Development Environments {#updating-your-dev-environments}
 
-The **Update** option is available from the **Environments** card by clicking on the ellipsis button of the enjoinment.
+The **Update** option is available from the **Environments** card by clicking on the ellipsis button of the environment.
 
 ![Update option from Environments card](assets/environ-update2.png)
 
