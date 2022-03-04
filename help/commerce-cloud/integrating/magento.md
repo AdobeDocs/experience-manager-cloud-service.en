@@ -17,7 +17,7 @@ The Experience Manager and Adobe Commerce are seamlessly integrated using the Co
 >GraphQL is currently used in two (separate) scenarios in Adobe Experience Manager (AEM) as a Cloud Service:
 >
 >* This scenario, where CIF communicates with commerce via GraphQL.
->* [AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications](/help/assets/content-fragments/graphql-api-content-fragments.md).
+>* [AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications](/help/headless/graphql-api/content-fragments.md).
 
 ## Architecture Overview {#overview}
 
