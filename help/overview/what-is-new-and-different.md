@@ -106,7 +106,7 @@ Specifically, the number of and the type of AEM programs that can be created fro
   
 Cloud Manager has evolved as a self-service portal where the main components of AEM as a Cloud Service can be created and configured:
 
-* Creating and managing new programs. Refer to [Understanding Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) for more details.
+* Creating and managing new programs. Refer to [Understanding Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) for more details.
 
 * Creating and managing the AEM environments within these programs. Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for more details.
 
