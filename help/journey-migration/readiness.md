@@ -108,7 +108,7 @@ The list of items in the below table is the subset of the changes most relevant 
   <tr>
     <td>Workflow Launchers</td>
     <td></td>
-    <td>Remove any Workflow Launchers that are triggering either OOTB or custom DAM Update Asset Workflow from your code.</br>All the assets uploaded into AEM as a Cloud Service are going to be processed by the Asset Processing Service. There is a Workflow post processing OSGi configuration which can be used to trigger additional custom processing steps.</td>
+    <td>Remove any Workflow Launchers that are triggering either OOTB or custom DAM Update Asset Workflow from your code.</br>All the assets uploaded into AEM as a Cloud Service are going to be processed by the Asset Processing Service. For custom steps please refer to <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> Post Processing Workflows</a> on how to setup and configure post-processing workflows.</td>
   </tr>
   <tr>
     <td>Custom Rendition Steps</td>
@@ -139,6 +139,11 @@ The list of items in the below table is the subset of the changes most relevant 
     <td>Backup and Restore</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en">AEM as a Cloud Service Backup and Restore</a></td>
     <td></td>
+  </tr>
+  <tr>
+    <td>Changes to Authentication</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">IMS Support for AEM as a Cloud Service</td>
+    <td>If you were previously using SAML 2.0 integration on both author and publish prior to moving to Cloud Service, the main change is that AEM as a Cloud Service Author only integrates with Adobe IMS. However, AEM as a Cloud Service Publish tier can still leverage SAML or other authentication integrations. AEM as a Cloud Service offers IMS authentication support only for Author, Admin and Dev users. The IMS authentication does not offer support for external end users of customer sites like site visitors.</td>
   </tr>
 </tbody>
 </table>
