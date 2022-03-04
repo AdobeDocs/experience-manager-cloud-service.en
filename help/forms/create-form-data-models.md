@@ -89,7 +89,7 @@ To achieve this you need to create an OSGi configuration that contains data sour
 
 To enable deployment-specific cloud configurations in [!UICONTROL Form Data Model]:
 
-1. Create cloud configuration on local development instance. For detailed steps, see (How to configure data sources)[/help/forms/configure-data-sources.md.
+1. Create cloud configuration on local development instance. For detailed steps, see (How to configure data sources)[/help/forms/configure-data-sources.md].
 
 1. Store your cloud configuration to file system.
     1. Create package with filter `/conf/{foldername}/settings/cloudconfigs/fdm`. Use the same `{foldername}` as in step 1. And replace `fdm` with `azurestorage` for Azure storage configuration.
