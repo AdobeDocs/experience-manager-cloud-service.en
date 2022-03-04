@@ -1,9 +1,9 @@
 ---
-title: Setting Up Your Project
+title: Project Setup
 description: Learn how AEM projects are built with Maven and the standards you must observe when creating your own project.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 ---
-# Setting Up Your Project {#project-setup}
+# Project Setup {#project-setup}
 
 Learn how AEM projects are built with Maven and the standards you must observe when creating your own project.
 
