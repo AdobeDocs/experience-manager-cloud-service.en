@@ -96,7 +96,7 @@ Now, it's time to get your AEM headless application ready for launch, by followi
 
 ### Secure and Scale your Headless Application Before Launch {#secure-and-scale-before-launch}
 
-1. Configure [Token Based Authentication](/help/assets/content-fragments/graphql-authentication-content-fragments.md) with your GraphQL requests
+1. Configure [Token Based Authentication](/help/headless/security/authentication.md) with your GraphQL requests
 1. Configure [Caching](/help/implementing/dispatcher/caching.md).
 
 ### Model Structure vs GraphQL Output {#structure-vs-output}

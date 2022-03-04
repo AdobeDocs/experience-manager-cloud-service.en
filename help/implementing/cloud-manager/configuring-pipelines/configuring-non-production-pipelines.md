@@ -118,7 +118,7 @@ A web tier config pipeline Deploys HTTPD/Dispatcher configurations. See the docu
 >
 >If a web-tier code pipeline already exists for the selected environment, this selection will be disabled.
 
-To finish the configuration of the full-stack code non-production pipeline, follow these steps.
+To finish the configuration of the web-tier code non-production pipeline, follow these steps.
    
 1. On the **Source Code** tab, you must define the following options.
 
