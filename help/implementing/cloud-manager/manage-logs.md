@@ -1,5 +1,5 @@
 ---
-title: Manage Logs
+title: Accessing and Managing Logs
 description: Learn how to access and manage logs to aid your development process in AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 ---
