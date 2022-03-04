@@ -9,7 +9,7 @@ Learn how to manage multiple git repositories when working with Cloud Manager.
 
 ## Syncing Customer-managed Git Repositories {#syncing-customer-managed-git-repositories}
 
-Instead of directly working with Cloud Manager's git repository, [customers can work with their own git repository](integrating-wtih-git.md) or multiple own git repositories. In these cases an automated synchronization process should be set up to ensure that Cloud Manager's git repository is always kept up-to-date.
+Instead of directly working with Cloud Manager's git repository, [customers can work with their own git repository](integrating-with-git.md) or multiple own git repositories. In these cases an automated synchronization process should be set up to ensure that Cloud Manager's git repository is always kept up-to-date.
 
 Depending on where the customer's git repository is hosted, a GitHub action or a continuous integration solution like Jenkins could be used to set up the automation. With an automation in place, every push to a customer owned git repository can be automatically forwarded to Cloud Manager's git repository.
 
