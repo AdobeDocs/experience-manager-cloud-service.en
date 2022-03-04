@@ -25,11 +25,24 @@ Follow the steps below to setup Screens Services Provider:
    >[!CAUTION]
    >If you have access to multiple organizations, please ensure that you have logged into correct Organization. To change your organization, click on the Org name from the top right hand corner of the screen and choose the required organization to which you need access to.
 
-1. Select **Channels** from the left navigation bar and click on **open in content provider**. 
+2. Click on the gear icon next to Project (top left corner)
+   
+   ![image](/help/screens-cloud/assets/configure/configure-screens0.png)
+
+3. Enter the following details in the Edit Settings dialog box.
+   o **Base Url** - AEM Publish URL
+   o **Author Url** - AEM Author URL
+   o **Channel Provider Path** - /screens/channels.json 
+   
+    ![image](/help/screens-cloud/assets/configure/configure-screens4.png)
+
+4.  Click on **Save** to connect to Screens content provider
+
+5. Select **Channels** from the left navigation bar and click on **open in content provider**. 
 
    ![image](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-1. Screens Content Provider opens in another tab that allows you to create your content.
+6. Screens Content Provider opens in another tab that allows you to create your content.
 
    ![image](/help/screens-cloud/assets/configure/configure-screens2.png)
 
