@@ -1,8 +1,8 @@
 ---
 title: User Access to New Relic
 description: Follow this page to learn about New Relic Application Performance Monitoring for AEM as a Cloud Service
+exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 ---
-
 # User Access to New Relic {#user-access}
 
 ## Introduction {#introduction}
@@ -97,5 +97,3 @@ The new observability platform from New Relic called New Relic One enables Adobe
 
 >[!NOTE]
 >User must have the right permissions and use the same login methodology for both accounts (Adobe and customer managed New Relic account).
-
-

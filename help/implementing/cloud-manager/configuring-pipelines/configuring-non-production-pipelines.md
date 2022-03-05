@@ -2,8 +2,8 @@
 title: Configuring Non-Production Pipelines
 description: Learn how to configuring non-production pipelines to test the quality of your code before deploying to production environments.
 index: yes
+exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 ---
-
 # Configuring Non-Production Pipelines {#configuring-non-production-pipelines}
 
 Learn how to configuring non-production pipelines to test the quality of your code before deploying to production environments.

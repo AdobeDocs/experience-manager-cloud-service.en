@@ -1,6 +1,7 @@
 ---
 title: Cloud Manager Repositories
 description: Cloud Manager Repositories
+exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 ---
 # Cloud Manager Repositories {#cloud-manager-repos} 
 
@@ -112,4 +113,3 @@ When using git submodules, please keep these things in mind:
 * Only submodules at the root of the branch are supported.
 * Git submodules references are stored to specific git commits. As a result, when changes to the submodule repository are made, the commit referenced needs to be updated, for example, by using `git submodule update --remote` . 
 * Unless otherwise necessary, it is highly recommended to use "shallow" submodules. To do this, run `git config -f .gitmodules submodule.<submodule path>.shallow true`  for each submodule.
-
