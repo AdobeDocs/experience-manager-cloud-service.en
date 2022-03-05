@@ -1,8 +1,8 @@
 ---
 title: Ingesting Content into Target
 description: Ingesting Content into Target
+exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 ---
-
 # Ingesting Content into Target {#ingesting-content}
 
 ## Ingestion Process in Content Transfer Tool {#ingestion-process}
