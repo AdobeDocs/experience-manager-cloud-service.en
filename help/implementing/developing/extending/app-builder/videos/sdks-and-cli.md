@@ -8,8 +8,8 @@ role: Developer, Architect
 level: Beginner
 kt: 9454, 9470
 thumbnail: 339166.jpg
+exl-id: 4aabd84b-0ccb-482b-85e7-09bacbce85c1
 ---
-
 # App Builder SDKs and CLI
 
 >[!IMPORTANT]

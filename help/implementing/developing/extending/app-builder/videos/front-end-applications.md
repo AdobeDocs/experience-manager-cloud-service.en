@@ -8,8 +8,8 @@ role: Developer, Architect
 level: Beginner
 kt: 9459,9483
 thumbnail: 339244.jpg
+exl-id: 0e5319ea-b053-44bf-ac9c-9b0dee51eac4
 ---
-
 # Front-end applications for App Builder
 
 >[!IMPORTANT]
