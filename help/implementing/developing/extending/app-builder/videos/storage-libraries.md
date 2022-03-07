@@ -8,8 +8,8 @@ role: Developer, Architect
 level: Beginner
 kt: 9457,9479,9480
 thumbnail: 339238.jpg
+exl-id: 3ddd452c-6291-4560-aabc-dcd6e628f7ab
 ---
-
 # App Builder storage libraries
 
 >[!IMPORTANT]
