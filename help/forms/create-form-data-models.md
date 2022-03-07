@@ -101,8 +101,8 @@ To enable deployment-specific cloud configurations in [!UICONTROL Form Data Mode
     1. Update `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` to contain filter `/conf/{foldername}/settings/cloudconfigs/fdm`. For details, see [ui.content module of AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). When this archetype project is deployed through CM pipeline, the same cloud configuration gets installed on all the environments (or runmodes). To change the value of fields (like URL) of cloud configurations based on environment, use the OSGi configuration discussed in the following step.
 
 1. Create an Apache Sling context aware configuration. To create the OSGi configuration:
-    1. **Set up OSGi configuration files in [!DNL Experience Manager] Archetype project.** 
-       Create OSGi Factory Configuration files with PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Create file with same name under each run mode folder where the values need be changed per run mode. For details, see [Configuring OSGi for [!DNL Adobe Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#creating-sogi-configurations).
+    1. **Set up OSGi configuration files in [!DNL Experience Manager] Archetype project.**
+       Create OSGi Factory Configuration files with PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Create file with same name under each run mode folder where the values need be changed per run mode. For details, see [Configuring OSGi for [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
     1. **Set the OSGI configuration json.** To use Apache Sling Context-Aware Configuration Override Provider:
         1. On local development instance `/system/console/configMgr`, select factory OSGi configuration with the name **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: OSGi configuration]**.
@@ -111,16 +111,16 @@ To enable deployment-specific cloud configurations in [!UICONTROL Form Data Mode
         1. Under overrides, provide fields that need to be changed based on environment in sling override syntax. For details, see [Apache Sling Context-Aware Configuration - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). For example, `[/conf/{foldername}]cloudconfigs/fdm/{configName}/url="newURL"`.
         Multiple overrides can be added by selecting **[!UICONTROL +]**.
         1. Select **[!UICONTROL Save]**.
-        1. To get OSGi Configuration JSON, follow the steps in [Generating OSGi Configurations using the AEM SDK Quickstart](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#generating-osgi-configurations-using-the-aem-sdk-quickstart).
+        1. To get OSGi Configuration JSON, follow the steps in [Generating OSGi Configurations using the AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
         1. Place JSON in OSGi Factory Configuration Files created in the previous step.
         1. Change the value of `newURL` based on environment (or runmode).
-        1. To change secret value based on runmode, secret variable can be created using [cloud manager API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties) and later can be referenced in the [OSGi Configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values).
+        1. To change secret value based on runmode, secret variable can be created using [cloud manager API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and later can be referenced in the [OSGi Configuration](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
         When this archetype project is deployed through CM pipeline, override will provide different values on different environments (or run mode).
         >[!NOTE]
         >
         >[!DNL Adobe Managed Service] users can encrypt the secret values using crypto support (for details, see [encryption support for configuration properties](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) and place encrypted text in the value after context aware configurations are vailable in service pack 6.5.13.0.
 
-1. Refresh the data source definitions using the option to refresh data source definitions in the [Form Data Model editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/use-form-data-model/create-form-data-models.html#data-sources) to refresh FDM cache through FDM UI and get the latest configuration. 
+1. Refresh the data source definitions using the option to refresh data source definitions in the [Form Data Model editor](#data-sources) to refresh FDM cache through FDM UI and get the latest configuration.
 
 ## Next steps {#next-steps}
 
