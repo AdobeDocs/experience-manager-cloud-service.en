@@ -49,15 +49,19 @@ Similarly, with everything that is asynchronously happening, like acting on obse
 
 ## Outgoing HTTP Connections {#outgoing-http-connections}
 
-It is strongly recommended that any outgoing HTTP connections set reasonable connect and read timeouts. For code that does not apply these timeouts, AEM instances running on AEM as a Cloud Service will enforce a global timeouts. These timeout values are 10 seconds for connect calls and 60 seconds for read calls for connections used by the following popular Java libraries:
+It is strongly recommended that any outgoing HTTP connections set reasonable connect and read timeouts; suggested values are 1 second for the connection timeout and 5 seconds for read timeout. The exact numbers must be determined based on the performance of the backend system handling these requests.
+
+For code that does not apply these timeouts, AEM instances running on AEM as a Cloud Service will enforce a global timeouts. These timeout values are 10 seconds for connect calls and 60 seconds for read calls for connections.
 
 Adobe recommends the use of the provided [Apache HttpComponents Client 4.x library](https://hc.apache.org/httpcomponents-client-ga/) for making HTTP connections.
 
 Alternatives that are known to work, but may require providing the dependency yourself are:
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) and/or [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (Provided by AEM)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) and/or [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (Provided by AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (not recommended as it is outdated and replaced by version 4.x)
 * [OK Http](https://square.github.io/okhttp/) (Not provided by AEM)
+
+Next to providing timeouts also a proper handling of such timeouts as well as unexpected HTTP status codes should be implemented.
 
 ## No Classic UI Customizations {#no-classic-ui-customizations}
 
@@ -204,7 +208,7 @@ The sections below describe how to request, configure, and send email.
 
 By default, ports used to send email are disabled. To activate a port, configure [advanced networking](/help/security/configuring-advanced-networking.md), making sure to set for each needed environment the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint's port forwarding rules, which maps the intended port (e.g., 465 or 587) to a proxy port.
 
-It is recommended to configure advanced networking with a `kind` parameter set to `flexiblePortEgress` since Adobe can optimize performance of flexible port egress traffic. If a unique egress IP address is necessary, choose a `kind` parameter of `dedicatedEgressIp`. If you have already configured VPN for other reasons, you can use the unique IP address provided by that advanced networking variation as well. 
+It is recommended to configure advanced networking with a `kind` parameter set to `flexiblePortEgress` since Adobe can optimize performance of flexible port egress traffic. If a unique egress IP address is necessary, choose a `kind` parameter of `dedicatedEgressIp`. If you have already configured VPN for other reasons, you can use the unique IP address provided by that advanced networking variation as well.
 
 You must send email through a mail server rather than directly to email clients. Otherwise, the emails may be blocked.
 
