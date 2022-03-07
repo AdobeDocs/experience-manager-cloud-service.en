@@ -83,7 +83,7 @@ Alternatively, click the ellipsis button of the environment you want and then se
 
 >[!NOTE]
 >
->The **Environments** card only lists three environments. Click on the *Show All button as described previously to see all environments of the program.
+>The **Environments** card only lists three environments. Click on the **Show All** button as described previously to see all environments of the program.
 
 ### Accessing the Preview Service {#access-preview-service}
 
@@ -105,7 +105,7 @@ A user with requisite permissions must complete the steps of the following optio
 
 Once access to preview service is unlocked, the lock icon ahead of the preview service name will no longer be displayed.
 
-Once activated, you can publish content to the preview service by using the Manage Publication UI inside AEM. Please refer to the document [Previewing Content]/help/sites-cloud/authoring/fundamentals/previewing-content.md) for more details.
+Once activated, you can publish content to the preview service by using the Manage Publication UI inside AEM. Please refer to the document [Previewing Content](/help/sites-cloud/authoring/fundamentals/previewing-content.md) for more details.
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ Once activated, you can publish content to the preview service by using the Mana
 
 As a cloud-native service, updates of your staging and production environments within production programs are automatically managed by Adobe. 
 
-However updates to development environments as well as to environments in sandbox programs are managed within the programs. When such an environment is not running the latest publicly available AEM release, the status on the **Environments** card on the **Overview** screen of the program will show **Update Available**.
+However updates to development environments as well as to environments in sandbox programs are managed within the programs. When such an environment is not running the latest publicly available AEM version, the status on the **Environments** card on the **Overview** screen of the program will show **Update Available**.
 
 ![Environment update status](assets/environ-update.png)
 
@@ -125,7 +125,10 @@ Pipelines are the only way to [deploy code to the environments of AEM as a Cloud
 
 If Cloud Manager detects that there is a newer version of AEM available than that which was last deployed with the pipeline, it shows the **Update Available** status for the environment.
 
-The process of updating is then simply running a pipeline to deploy the new version of AEM with that pipeline.
+The process of updating is therefore a two-step process:
+
+1. Updating the pipeline with the latest AEM version number
+1. Running the pipeline to deploy the new version of AEM to an environment
 
 ### Updating Your Development Environments {#updating-your-dev-environments}
 
@@ -137,9 +140,17 @@ This option is also available by clicking on the **Environments** tab of the pro
 
 ![Update option from Environments tab](assets/environ-update3.png)
 
-This option allows a user with the **Deployment Manager** role to update the pipeline associated with this environment to the latest release and then execute the pipeline. 
+A user with the **Deployment Manager** role can use this option to update the pipeline associated with this environment to the latest AEM version number.
 
-If the pipeline has already been updated, the user is prompted to execute the pipeline.
+Once the pipeline version number is updated to the latest publicly available AEM version, the user is prompted to run the associated pipeline to deploy the latest version to the environment.
+
+![Prompt to run pipeline to update environment](assets/update-run-pipeline.png)
+
+The **Update** option's behavior varies depending on the configuration and current state of the program.
+
+* If the pipeline has already been updated, the **Update** option prompts the user to execute the pipeline.
+* If the pipeline is already being updated, the **Update** option informs the user that an update is already running.
+* If an appropriate pipeline does not exits, the **Update** option prompts the user to create one.
 
 ## Deleting Development Environments {#deleting-environment}
 
