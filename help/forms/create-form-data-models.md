@@ -100,10 +100,11 @@ To enable deployment-specific cloud configurations in [!UICONTROL Form Data Mode
     1. Copy `jcr_root` folder and put it your `ui.content` > `src` > `main` > `content`.
     1. Update `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` to contain filter `/conf/{foldername}/settings/cloudconfigs/fdm`. For details, see [ui.content module of AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). When this archetype project is deployed through CM pipeline, the same cloud configuration gets installed on all the environments (or runmodes). To change the value of fields (like URL) of cloud configurations based on environment, use the OSGi configuration discussed in the following step.
 
-1. Create the OSGi Configuration. To create the OSGi configuration:
-    1. Create OSGi Factory Configuration files with PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Create file with same name under each run mode folder where the values need be changed per run mode. For details, see [Configuring OSGi for [!DNL Adobe Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en#creating-sogi-configurations).
+1. Create an Apache Sling context aware configuration. To create the OSGi configuration:
+    1. **Set up OSGi configuration files in [!DNL Experience Manager] Archetype project.** 
+       Create OSGi Factory Configuration files with PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Create file with same name under each run mode folder where the values need be changed per run mode. For details, see [Configuring OSGi for [!DNL Adobe Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#creating-sogi-configurations).
 
-    1. Apache Sling Context-Aware Configuration Override Provider: OSGi configuration.
+    1. **Set the OSGI configuration json.** To use Apache Sling Context-Aware Configuration Override Provider:
         1. On local development instance `/system/console/configMgr`, select factory OSGi configuration with the name **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: OSGi configuration]**.
         1. Provide description.
         1. Select **[!UICONTROL enabled]**.
