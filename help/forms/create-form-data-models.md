@@ -108,13 +108,15 @@ To enable deployment-specific cloud configurations in [!UICONTROL Form Data Mode
         1. Provide description.
         1. Select **[!UICONTROL enabled]**.
         1. Under overrides, provide fields that need to be changed based on environment in sling override syntax. For details, see [Apache Sling Context-Aware Configuration - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). For example, `[/conf/{foldername}]cloudconfigs/fdm/{configName}/url="newURL"`.
-        Multiple overrides can be added by selecting [!UICONTROL +]**.
+        Multiple overrides can be added by selecting **[!UICONTROL +]**.
         1. Select **[!UICONTROL Save]**.
         1. To get OSGi Configuration JSON, follow the steps in [Generating OSGi Configurations using the AEM SDK Quickstart](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#generating-osgi-configurations-using-the-aem-sdk-quickstart).
         1. Place JSON in OSGi Factory Configuration Files created in the previous step.
         1. Change the value of `newURL` based on environment (or runmode).
         1. To change secret value based on runmode, secret variable can be created using [cloud manager API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties) and later can be referenced in the [OSGi Configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values).
         When this archetype project is deployed through CM pipeline, override will provide different values on different environments (or run mode).
+
+1. Refresh the data source definitions using the option to refresh data source definitions in the [Form Data Model editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/use-form-data-model/create-form-data-models.html#data-sources) to refresh FDM cache through FDM UI and get the latest configuration. 
 
 ## Next steps {#next-steps}
 
