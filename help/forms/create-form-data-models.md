@@ -116,6 +116,9 @@ To enable deployment-specific cloud configurations in [!UICONTROL Form Data Mode
         1. Change the value of `newURL` based on environment (or runmode).
         1. To change secret value based on runmode, secret variable can be created using [cloud manager API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties) and later can be referenced in the [OSGi Configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values).
         When this archetype project is deployed through CM pipeline, override will provide different values on different environments (or run mode).
+        >[!NOTE]
+        >
+        >[!DNL Adobe Managed Service] users can encrypt the secret values using crypto support (for details, see [encryption support for configuration properties](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) and place encrypted text in the value after context aware configurations are vailable in service pack 6.5.13.0.
 
 1. Refresh the data source definitions using the option to refresh data source definitions in the [Form Data Model editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/use-form-data-model/create-form-data-models.html#data-sources) to refresh FDM cache through FDM UI and get the latest configuration. 
 
