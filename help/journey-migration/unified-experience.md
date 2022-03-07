@@ -1,6 +1,7 @@
 ---
 title: Unified Experience for Code Refactoring Tools
 description: Unified Experience for Code Refactoring Tools
+exl-id: daee0e2d-1e2b-41a3-acab-fc59142d0e05
 ---
 # Unified Experience for Code Refactoring Tools {#unified-experience}
 

@@ -1,8 +1,8 @@
 ---
 title: Deploy Your Customized Theme
 description: Learn how to deploy the site theme using the pipeline.
+exl-id: fe065972-39db-4074-a802-85895c701efd
 ---
-
 # Deploy Your Customized Theme {#deploy-your-customized-theme}
 
 Learn how to deploy the site theme using the pipeline.

@@ -5,6 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 feature: Configuring
+exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
 ---
 # Resource Mapping{#resource-mapping}
 

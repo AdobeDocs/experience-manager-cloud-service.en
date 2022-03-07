@@ -1,9 +1,8 @@
 ---
 title: Generic Lucene Index Removal
 description: Learn about the planned removal of generic Lucene indexes and how you may be affected.
-exl-id: fe0e00ac-f9c8-43cf-83c2-5a353f5eaeab
+exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
 ---
-
 # Generic Lucene Index Removal {#generic-lucene-index-removal}
 
 Adobe intends to remove the "generic Lucene" index (`/oak:index/lucene-*`) from Adobe Experience Manager as a Cloud Service. This index has been deprecated since AEM 6.5. In this document the impact of this decision is described, along with detailed descriptions how to examine if an AEM instance is affected. It also contains ways to change queries so they continue to function without the generic Lucene index.

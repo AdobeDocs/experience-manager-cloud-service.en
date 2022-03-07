@@ -1,6 +1,7 @@
 ---
 title: Cloud Manager Repositories
 description: Learn how to create, view, and delete your git repositories in Cloud Manager.
+exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 ---
 
 # Cloud Manager Repositories {#cloud-manager-repos} 
@@ -118,9 +119,8 @@ When using git submodules, please be aware of the following limitations.
 
 * The git URL must be exactly in the syntax described in the previous section.
 * Only submodules at the root of the branch are supported.
-
-When using git submodules, please be aware of the following limitations.
-
 * For security reasons, do not embed credentials in git URLs.
-* Unless otherwise necessary, it is highly recommended to use shallow submodules. To do this, run `git config -f .gitmodules submodule.<submodule path>.shallow true` for each submodule.
-* Git submodules references are stored to specific git commits. As a result, when changes to the submodule repository are made, the commit referenced needs to be updated, for example, by using `git submodule update --remote`.
+* Unless otherwise necessary, it is highly recommended to use shallow submodules.
+  * To do this, run `git config -f .gitmodules submodule.<submodule path>.shallow true` for each submodule.
+* Git submodule references are stored to specific git commits. As a result, when changes to the submodule repository are made, the commit referenced needs to be updated.
+  * For example, by using `git submodule update --remote`
