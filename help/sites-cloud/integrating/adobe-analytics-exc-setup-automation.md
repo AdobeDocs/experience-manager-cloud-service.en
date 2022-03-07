@@ -6,8 +6,8 @@ role: Admin
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 ---
-
 # Integrate Adobe Analytics with Experience Cloud Setup Automation {#integrate-adobe-analytics-automation-setup}
 
 >[!CAUTION]

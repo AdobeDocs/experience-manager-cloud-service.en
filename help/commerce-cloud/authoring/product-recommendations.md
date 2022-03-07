@@ -9,6 +9,7 @@ audience: marketer
 feature: Commerce Integration Framework
 kt: 9649
 thumbnail: 340130.jpg
+exl-id: ee6f3423-175d-4a13-a587-63c285b6075f
 ---
 # Product Recommendations
 
