@@ -1,6 +1,7 @@
 ---
 title: SLA Reporting - Cloud Service
 description: SLA Reporting - Cloud Service
+exl-id: 03932415-a029-4703-b44a-f86a87edb328
 ---
 # SLA Reporting {#sla-reporting} 
 
@@ -42,4 +43,3 @@ Each of the incidents has a time range, a cause, and a set of comments, as shown
 
 * **Author Tier Actual** 
    This is the measured uptime of the production author tier factoring incidents caused by Adobe or our vendors.
-
