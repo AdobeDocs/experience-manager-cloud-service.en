@@ -50,13 +50,21 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
   <tr>
     <td>Version Purge</td>
     <td>Adobe</td>
-    <td>Fully owned by Adobe, but in the future, customers will be able to configure certain parameters.</td>
+    <td>In order for the author tier to remain performant, older versions of each piece of content under the <code>/content</code> node of the repository are purged according to the following behavior:<br><ol>
+  <li>Versions older than 30 days are removed</li>
+  <li>The most recent 5 versions in the last 30 days are kept</li>
+  <li>Irrespective of the rules above, the most recent version is preserved.</li>
+</ol><br>These configuration settings cannot be modified by customers<br><br>NOTE: the behavior described above is enforced for new environments as of the 2022.2.0 monthly release and will be enforced for existing environments (created before 2022.2.0) in the 2022.3.0 release.</td>
   </td>
   </tr>
   <tr>
     <td>Audit Log Purge</td>
     <td>Adobe</td>
-    <td>Fully owned by Adobe, but in the future, customers will be able to configure certain parameters.</td>
+    <td>In order for the author tier to remain performant, older audit logs under the <code>/content</code> node of the repository are purged according to the following behavior:<br><ol>
+  <li>For replication auditing, audit logs older than 3 days are removed</li>
+  <li>For DAM (Assets) auditing, audit logs older than 30 days are removed</li>
+  <li>For page auditing, logs older than 3 days are removed.<br></li>
+</ol><br>NOTE: the behavior described above is enforced for new environments as of the 2022.2.0 monthly release and will be enforced for existing environments (any created before 2022.3.0) in the 2022.3.0 release</td>
   </td>
   </tr>
   <tr>
