@@ -1,6 +1,7 @@
 ---
 title: Overview to Content Transfer Tool
 description: Overview to Content Transfer Tool
+exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 ---
 # Overview {#overview-content-transfer-tool}
 
@@ -52,4 +53,3 @@ In the ingestion phase, to apply the delta content on top of the current content
 ## What's Next {#whats-next}
 
 Once you have learned about Content Transfer Tool and its overview that describes this tool can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance, you must review [Prerequisites for Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).
-

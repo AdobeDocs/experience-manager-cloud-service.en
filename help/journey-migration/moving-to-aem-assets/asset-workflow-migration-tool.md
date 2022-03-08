@@ -1,6 +1,7 @@
 ---
 title: Asset Workflow Migration Tool
 description: Asset Workflow Migration Tool
+exl-id: a95caf5e-e6b2-463f-bebd-b791104fd25c
 ---
 # Asset Workflow Migration Tool {#asset-workflow-migration}
 
