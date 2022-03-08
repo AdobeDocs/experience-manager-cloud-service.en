@@ -1,8 +1,8 @@
 ---
 title: Release Notes for 2021.8.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2021.8.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
 ---
-
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 The following section outlines the general Release Notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
@@ -126,4 +126,4 @@ The Release Date for Content Transfer Tool v1.5.6 is August 11, 2021.
 
 * The **Stop Ingestion** button was being disabled during ingestion to the Publish instance. This is not necessary because there is no mongo restore step during Publish ingestion. 
 
-* CTT did not clean up the `/tmp` directory after a successful extraction. This sometimes led to disk space issues. 
+* CTT did not clean up the `/tmp` directory after a successful extraction. This sometimes led to disk space issues.

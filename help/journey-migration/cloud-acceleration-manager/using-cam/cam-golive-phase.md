@@ -1,6 +1,7 @@
 ---
 title: Go-live Phase in Cloud Acceleration Manager
 description: This page provides an overview on the Go-live phase in Cloud Acceleration Manager.
+exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
 ---
 # Go Live Phase in Cloud Acceleration Manager {#golive-phase-cam}
 
