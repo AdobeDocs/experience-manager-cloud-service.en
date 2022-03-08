@@ -108,7 +108,7 @@ To enable deployment-specific cloud configurations in [!UICONTROL Form Data Mode
         1. On local development instance `/system/console/configMgr`, select factory OSGi configuration with the name **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: OSGi configuration]**.
         1. Provide description.
         1. Select **[!UICONTROL enabled]**.
-        1. Under overrides, provide fields that need to be changed based on environment in sling override syntax. For details, see [Apache Sling Context-Aware Configuration - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). For example, `[/conf/{foldername}]cloudconfigs/fdm/{configName}/url="newURL"`.
+        1. Under overrides, provide fields that need to be changed based on environment in sling override syntax. For details, see [Apache Sling Context-Aware Configuration - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). For example, `[cloudconfigs/fdm/{configName}/url="newURL"`.
         Multiple overrides can be added by selecting **[!UICONTROL +]**.
         1. Select **[!UICONTROL Save]**.
         1. To get OSGi Configuration JSON, follow the steps in [Generating OSGi Configurations using the AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
