@@ -2,8 +2,8 @@
 title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.2.0
 description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.2.0
 feature: Release Information
+exl-id: b1cd871d-c71e-4902-a97e-2c859f6a4da4
 ---
-
 # Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.2.0 {#release-notes}
 
 This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.2.0.
@@ -38,4 +38,3 @@ The Release Date for Content Transfer Tool v1.8.6 is February 03, 2022.
 ### Bug Fixes {#bug-fixes-ctt}
 
 * Some users were not mapped because User Mapping was case sensitive. This has been fixed. User Mapping is no longer case sensitive.
-
