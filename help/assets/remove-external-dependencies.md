@@ -10,9 +10,9 @@ Adobe recommends you to execute configuration steps for existing enhanced connec
 
 >[!NOTE]
 >
->Execute the configuration steps only if you have installed the enhanced connector for Workfront before March, 2022. There are no dependencies on Hoodoo distribution points for new enhanced connector installations for Workfront starting March, 2022.
+>Execute the configuration steps only if you have installed the enhanced connector for Workfront before March 2022. There are no dependencies on Hoodoo distribution points for new enhanced connector installations for Workfront starting March 2022.
 
-Execute the following steps to remove the external dependencies:
+To remove the external dependencies:
 
 1. Remove the following Hoodoo repository configuration from the parent `pom.xml`:
    
