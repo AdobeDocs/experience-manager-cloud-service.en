@@ -42,7 +42,7 @@ To install the add-on in [!DNL Experience Manager] as a [!DNL Cloud Service], fo
 
 1. Open the cloned AEM as a Cloud Service repository using an IDE of your choice.
 
-1. Place the enhanced connector zip file donwloaded in Step 1 at the following path:
+1. Place the enhanced connector zip file downloaded in Step 1 at the following path:
 
    ```TXT
       <path-to-project-install-folder>/ui.apps/src/main/resources/
