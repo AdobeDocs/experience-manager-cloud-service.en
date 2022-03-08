@@ -2,8 +2,8 @@
 title: CI/CD Pipelines
 description: Learn about Cloud Manager's CI/CD pipelines and how they can be used to efficiently deploy your code.
 index: yes
+exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 ---
-
 # Cloud Manager CI/CD Pipelines {#intro-cicd}
 
 Learn about Cloud Manager's CI/CD pipelines and how they can be used to efficiently deploy your code.
