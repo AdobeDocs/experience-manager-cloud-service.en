@@ -1,7 +1,8 @@
 ---
 title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: Use assets available on a remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] deployment.
-contentOwner: AG
+contentOwner: AK
+mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
@@ -11,7 +12,7 @@ exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 
 In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. One reason can be geographically distributed existing deployments that are required to work together. Another reason can be acquisitions leading to heterogenous infrastructure, including different [!DNL Experience Manager] versions, that the parent company wants to use together.
 
-Connected Assets functionality supports the above use case by integrating [!DNL Experience Manager Sites] and [!DNL Experience Manager Assets]. Users can create web pages in [!DNL Sites] that use the digital assets from a separate [!DNL Assets] deployments.
+Connected Assets functionality supports the above use cases by integrating [!DNL Experience Manager Sites] and [!DNL Experience Manager Assets]. Users can create web pages in [!DNL Sites] that use the digital assets from a separate [!DNL Assets] deployments.
 
 >[!NOTE]
 >
@@ -21,7 +22,7 @@ Connected Assets functionality supports the above use case by integrating [!DNL 
 
 When editing pages in [!UICONTROL Page Editor] as target destination, the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment that acts as a source of assets. The administrators create a one-time integration of a deployment of [!DNL Experience Manager] with [!DNL Sites] capability with another deployment of [!DNL Experience Manager] with [!DNL Assets] capability. You can also use Dynamic Media images in your site's web pages through Connected Assets and leverage the Dynamic Media functionalities, such as smart crop and image presets.
 
-For the [!DNL Sites] authors, the remote assets are available as read-only local assets. The functionality supports seamless search and use of a few remote assets at a time. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk.
+For the [!DNL Sites] authors, the remote assets are available as read-only local assets. The functionality supports seamless search and access to remote assets on the Site Editor. For any other use cases that may require the complete asset-corpus to be available on Sites, consider migrating the assets in bulk instead of leveraging Connected Assets.
 
 ### Prerequisites and supported deployments {#prerequisites}
 
@@ -38,16 +39,16 @@ Before you use or configure this capability, ensure the following:
 
 ### Supported file formats {#mimetypes}
 
-Authors search for images and the following types of documents in Content Finder and use the searched assets in Page Editor. Documents are added to the `Download` component and images to the `Image` component. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. The supported formats are:
+Authors search for images and the following types of documents in Content Finder and drag the searched assets in Page Editor. Documents are added to the `Download` component and images to the `Image` component. Authors may also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. The supported formats are:
 
 * **Image formats**: The formats that the [Image component](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) supports.
 * **Document formats**: See the [supported document formats](file-format-support.md#document-formats).
 
 ### Users and groups involved {#users-and-groups-involved}
 
-The various roles that are involved to configure and use the capability and their corresponding user groups are described below. Local scope is used for the use case where an author creates a web page. Remote scope is used for the DAM deployment hosting the required assets. The [!DNL Sites] author fetches these remote assets.
+The various roles that are involved to configure and the capability and their corresponding user groups are described below. Local scope is used for the use case where an author creates a web page. Remote scope is used for the DAM deployment hosting the required assets. The [!DNL Sites] author fetches these remote assets.
 
-| Role | Scope | User group | Requirement |
+| Role | Scope | User group | Descriptions |
 |------|--------|-----------|----------|
 | [!DNL Sites] administrator | Local | [!DNL Experience Manager] `administrators` | Set up [!DNL Experience Manager] and configure integration with the remote [!DNL Assets] deployment. |
 | DAM user | Local | `Authors` | Used to view and duplicate the fetched assets at `/content/DAM/connectedassets/`. |
@@ -75,7 +76,7 @@ An [!DNL Experience Manager] administrator can create this integration. Once cre
 
 To configure Connected Assets and local [!DNL Sites] connectivity, follow these steps:
 
-1. Access an existing [!DNL Sites] deployment. This [!DNL Sites] deployment is used for web page authoring, say at `https://[sites_servername]:port`. As the page authoring happens on [!DNL Sites] deployment, let's call the [!DNL Sites] deployment as local from the page authoring perspective.
+1. Access an existing [!DNL Sites] deployment. This [!DNL Sites] deployment is used for web page authoring, say at `https://<sites_server_fqdn>:[port]`. As the page authoring happens on [!DNL Sites] deployment, let's call the [!DNL Sites] deployment as local from the page authoring perspective.
 
 1. Access an existing [!DNL Assets] deployment. This [!DNL Assets] deployment is used to manage digital assets, say at `https://[assets_servername]:port`.
 
