@@ -68,6 +68,10 @@ To install the add-on in [!DNL Experience Manager] as a [!DNL Cloud Service], fo
       </dependency>
       ```
 
+       >[!NOTE]
+       >
+       >Ensure to update the enhanced connector version number before copying the dependency to the parent `pom.xml`.
+
    1. Add a dependency in `all module pom.xml`.
 
       ```XML
