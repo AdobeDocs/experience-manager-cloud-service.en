@@ -1,6 +1,7 @@
 ---
 title: AEM Dispatcher Converter Tool
 description: AEM Dispatcher Converter Tool
+exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
 ---
 # AEM Dispatcher Converter {#introduction}
 
