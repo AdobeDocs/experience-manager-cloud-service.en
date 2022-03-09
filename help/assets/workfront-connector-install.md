@@ -45,7 +45,7 @@ To install the add-on in [!DNL Experience Manager] as a [!DNL Cloud Service], fo
 1. Place the enhanced connector zip file downloaded in Step 1 at the following path:
 
    ```TXT
-      <path-to-project-install-folder>/ui.apps/src/main/resources/
+      /ui.apps/src/main/resources/<zip file>
    ```
 
    >[!NOTE]
@@ -64,7 +64,7 @@ To install the add-on in [!DNL Experience Manager] as a [!DNL Cloud Service], fo
          <type>zip</type>
          <version>1.7.4</version>
          <scope>system</scope>
-         <systemPath><path-to-project-install-folder>/ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
+         <systemPath>${project.basedir}/ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
       </dependency>
       ```
 
@@ -76,7 +76,7 @@ To install the add-on in [!DNL Experience Manager] as a [!DNL Cloud Service], fo
             <artifactId>workfront-tools.ui.apps</artifactId>
             <type>zip</type>
             <scope>system</scope>
-            <systemPath><path-to-project-install-folder>/ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
+            <systemPath>${project.basedir}/../ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
          </dependency>
       ```
 
@@ -92,6 +92,8 @@ To install the add-on in [!DNL Experience Manager] as a [!DNL Cloud Service], fo
          <target>/apps/<path-to-project-install-folder>/install</target>
       </embedded>
       ```
+
+   The target of the embedded section is set to `/apps/<path-to-project-install-folder>/install`. This JCR path `/apps/<path-to-project-install-folder>` must be included in the filter rules in the `all/src/main/content/META-INF/vault/filter.xml` file. The filter rules for the repository are usually derived from the program name. Use the name of the folder as the target in the existing rules.
 
 1. Push the changes to the repository.
 
