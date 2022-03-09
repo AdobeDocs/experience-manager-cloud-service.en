@@ -64,7 +64,7 @@ In order to make those locations visible, you need to follow the below procedure
 
    ![repobrowser7](/help/implementing/developing/tools/assets/repobrowser7.png)
 
-1. Find your publish instance, then click on it.
+1. Find your publish instance, then click on it
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
