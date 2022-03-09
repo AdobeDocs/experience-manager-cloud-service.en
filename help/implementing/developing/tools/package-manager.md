@@ -3,8 +3,8 @@ title: Package Manager
 description: Learn the basics of AE; package management with Package Manager.
 feature: Administering
 role: Admin
+exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
 ---
-
 # Package Manager {#working-with-packages}
 
 Packages enable the importing and exporting of repository content. You can use packages to install new content, transfer content between instances, and back up repository content.
