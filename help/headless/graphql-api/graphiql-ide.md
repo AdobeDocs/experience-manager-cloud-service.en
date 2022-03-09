@@ -2,8 +2,8 @@
 title: Using the GraphiQL IDE in AEM
 description: Learn how to use the GraphiQL IDE in Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
+exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 ---
-
 # Using the GraphiQL IDE {#graphiql-ide}
 
 An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE is available for use with the GraphQL API of Adobe Experience Manager (AEM) as a Cloud Service. 
