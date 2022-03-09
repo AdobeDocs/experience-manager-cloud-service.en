@@ -2,8 +2,8 @@
 title: Remove external dependencies for existing installations
 description: Install [!DNL Workfront for Experience Manager enhanced connector]
 feature: Integrations
+exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
 ---
-
 # Remove external dependencies for existing installations {#remove-external-depedencies}
 
 Adobe recommends you to execute configuration steps for existing enhanced connector installations for Workfront to remove the dependencies on Hoodoo distribution points.
@@ -41,5 +41,4 @@ To remove the external dependencies:
          </server>
    ```
 
-1. Execute the [new installation steps](workfront-connector-install.md). 
-
+1. Execute the [new installation steps](workfront-connector-install.md).
