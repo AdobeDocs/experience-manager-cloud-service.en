@@ -1,10 +1,10 @@
 ---
-title: "[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]"
+title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]'
 description: Introduction to integration between [!DNL Assets] and [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
+exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 ---
-
 # [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] integration with [!DNL Adobe Workfront] {#assets-integration-overview}
 
 [!DNL Adobe Workfront] is a work management application that helps you manage the entire lifecycle of work in one place. The integration between [!DNL Workfront] and [!DNL Adobe Experience Manager Assets] lets organizations improve content velocity and time-to-market by intrinsically connecting work and digital asset management. Within the context of managing their work in Workfront, users have access to the required documents and images.

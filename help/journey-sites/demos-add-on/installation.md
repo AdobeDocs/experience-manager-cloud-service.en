@@ -1,8 +1,8 @@
 ---
 title: Understand Reference Demo Add-On Installation
 description: Learn about Cloud Manager and how it is used to install the add-on.
+exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
 ---
-
 # Understand Reference Demo Add-On Installation {#understand-installation}
 
 Learn about Cloud Manager and how it is used to install the add-on.

@@ -400,7 +400,7 @@ Setting of the Document of Record component are available under its properties. 
 
    >[!NOTE]
    >
-   > This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague-review.corp.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information to enable the feature for your environment.
+   > This feature is available in prerelease channel. See [Prerelease Channel documentation](/help/release-notes/prerelease.md#enable-prerelease) for information to enable the feature for your environment.
 
 An XCI file helps you set various properties of a document. Forms as a Cloud Service has a master XCI file. You can use a custom XCI file to override one or more default properties specified in the master XCI file. For example, you can choose to embed a font into a document or enable tagged property for all the documents. The following table specifies the XCI options:
 
