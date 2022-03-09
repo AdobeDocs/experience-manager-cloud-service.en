@@ -1,8 +1,8 @@
 ---
 title: Retrieve Git Repository Access Information
 description: Learn how the front-end developer uses Cloud Manager to access git repository information.
+exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 ---
-
 # Retrieve Git Repository Access Information {#retrieve-access}
 
 Learn how the front-end developer uses Cloud Manager to access git repository information.
