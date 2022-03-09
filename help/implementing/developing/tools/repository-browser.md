@@ -37,7 +37,7 @@ For more information about setting up user permissions, see the [Cloud Manager D
 
 The repository browser can be launched by following the steps below.
 
-1. In Cloud Manager, click the three dots next to the tier of your choice, and select **Developer Console**
+1. In Cloud Manager, click the three dots next to the environment of your choice, and select **Developer Console**
 
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
@@ -54,11 +54,42 @@ The repository browser can be launched by following the steps below.
 
 You can use the left hand navigation pane to nagivate through the content hierarchy. Clicking on each folder or node will reveal its children. The folder structure reflects the Sling Resource tree, which is a super-set of the JCR Node tree.
 
->[!NOTE]
->
->For publish, the Repository Browser will only show public content, thus certain folders will not be visible. 
-
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
+
+For publish, by default, the Repository Browser will only show public content, thus certain folders like `/conf` or `/home` will not be visible. 
+
+In order to make those locations visible, you need to follow the below procedure.
+
+1. Click the three dots next to the environment of your choice and select **Manage Access**
+
+   ![repobrowser7](/help/implementing/developing/tools/assets/repobrowser7.png)
+
+1. Find your publish instance, then click on it.
+
+   ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
+
+1. Create a new product profile for publish administrators. In the example below, it is called **DEV - AEM Administrators Publish**
+
+   ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
+
+1. Add the appropriate users, corresponding to who should be able to navigate the publish repository browser with full access, to the new product profile
+
+   ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
+
+1. Wait for a few minutes, then open the **AEM author** console
+1. Add the group corresponding to the new product profile as a member of the administrators group. You can do this by clicking on **Tools - Security - Groups on author**, then clicking on the **administrators** group. Then, add the group as shown below
+
+   ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
+
+1. Activate the **administrators** and the new **DEV - AEM Administrators Publish** group so that they become available on publish
+
+   ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
+
+1. As a good security practice, remove the new **DEV - AEM Administrators Publish** group from the administrators group on **author** so the new group is isolated to publish 
+
+   ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
+
+1. Upon accessing repository browser for a publish instance, all folders are visible, including `/home` and `/conf`.
 
 ### View JCR Properties {#view-jcr-properties}
 
