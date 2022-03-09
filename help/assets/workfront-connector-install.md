@@ -62,7 +62,7 @@ To install the add-on in [!DNL Experience Manager] as a [!DNL Cloud Service], fo
          <groupId>digital.hoodoo</groupId>
          <artifactId>workfront-tools.ui.apps</artifactId>
          <type>zip</type>
-         <version>1.7.4</version>
+         <version>enhanced connector version number</version>
          <scope>system</scope>
          <systemPath>${project.basedir}/ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
       </dependency>
