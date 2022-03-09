@@ -109,7 +109,7 @@ Once activated, you can publish content to the preview service by using the Mana
 
 >[!NOTE]
 >
->Your environment must be on AEM version `2021.05.5368.20210529T101701Z` or new. Make sure an update pipeline has successfully run on your environment to do this.
+>Your environment must be on AEM version `2021.05.5368.20210529T101701Z` or newer. Make sure an update pipeline has successfully run on your environment to do this.
 
 ## Updating Environments {#updating-dev-environment}
 
@@ -121,13 +121,13 @@ However updates to development environments as well as to environments in sandbo
 
 ### Updates and Pipelines {#updates-pipelines}
 
-Pipelines are the only way to [deploy code to the environments of AEM as a Cloud Service.](deploy-code.md) For this reason, each pipeline is associated with a particular AEM version number.
+Pipelines are the only way to [deploy code to the environments of AEM as a Cloud Service.](deploy-code.md) For this reason, each pipeline is associated with a particular AEM version.
 
 If Cloud Manager detects that there is a newer version of AEM available than that which was last deployed with the pipeline, it shows the **Update Available** status for the environment.
 
 The process of updating is therefore a two-step process:
 
-1. Updating the pipeline with the latest AEM version number
+1. Updating the pipeline with the latest AEM version
 1. Running the pipeline to deploy the new version of AEM to an environment
 
 ### Updating Your Environments {#updating-your-environments}
@@ -140,9 +140,9 @@ This option is also available by clicking on the **Environments** tab of the pro
 
 ![Update option from Environments tab](assets/environ-update3.png)
 
-A user with the **Deployment Manager** role can use this option to update the pipeline associated with this environment to the latest AEM version number.
+A user with the **Deployment Manager** role can use this option to update the pipeline associated with this environment to the latest AEM version.
 
-Once the pipeline version number is updated to the latest publicly available AEM version, the user is prompted to run the associated pipeline to deploy the latest version to the environment.
+Once the pipeline version is updated to the latest publicly available AEM version, the user is prompted to run the associated pipeline to deploy the latest version to the environment.
 
 ![Prompt to run pipeline to update environment](assets/update-run-pipeline.png)
 
@@ -236,7 +236,7 @@ Follow these steps to apply an IP allow list.
    1. Use the input fields at the top of the IP allow list table to select the IP allow list and the author or publish service you wish to apply it to. 
    1. Click on **Apply** and confirm your submission.
 
-### Un-Aapplying an IP Allow List {#unapply-ip-allow-list}
+### Un-Applying an IP Allow List {#unapply-ip-allow-list}
 
 Un-applying an IP allow list disassociates all IP ranges included in the definition of the allow  list from an author or publisher service in an environment. A user in the **Business Owner** or **Deployment Manager** role must be logged in in order to be able to un-apply an IP allow list.
 
