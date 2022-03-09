@@ -19,14 +19,12 @@ The release date for Cloud Manager release 2022.3.0 in AEM as a Cloud Service 10
 
 ## What's New {#what-is-new}
 
-* Bulleted
-* List
-* of
-* Features
+* A user with the **Developer** role can now access the AEM environment log.
+* The `reliability_rating` critical metric has been disabled.
+* A user can now sort on the columns in the **Pipelines** page in Cloud Manager.
 
 ## Bug Fixes {#bug-fixes}
 
-* Bulleted
-* List
-* of
-* Fixes
+* A subset of manually-created git repositories had incorrect name values which affected [the build artifact reuse feature.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) The names of those repositories have been changed and users will see the corrected name in the Cloud Manager API/UI.
+* When adding or editing a code quality pipeline, the options to handle metric failures is no longer displayed.
+* Unexpected pipeline variable configurations no longer cause errors in the build step.
