@@ -375,9 +375,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [HTTP2 Delivery of Content FAQ](/help/assets/dynamic-media/http2faq.md)
     + [Flash Viewers End-of-Life](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-  + Integration with other solutions {#integrations}
+  + Integration with Adobe Workfront {#integrations}
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Install [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
+    + [Remove external dependencies for existing installations](/help/assets/remove-external-dependencies.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
 + Forms {#forms}
   + [Introduction](/help/forms/home.md)
