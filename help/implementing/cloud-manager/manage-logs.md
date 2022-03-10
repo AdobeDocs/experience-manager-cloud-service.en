@@ -1,55 +1,56 @@
 ---
-title: Manage Logs - Cloud Service
-description: Manage Logs - Cloud Service
+title: Accessing and Managing Logs
+description: Learn how to access and manage logs to aid your development process in AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 ---
+
 # Accessing and Managing Logs {#manage-logs} 
 
-Users can access a list of available log files for the selected environment using the **Environments** card from the **Overview** page or Environment Details page.
+Learn how to access and manage logs to aid your development process in AEM as a Cloud Service.
+
+You can access a list of available log files for the selected environment using the **Environments** card from the **Overview** page or Environment Details page.
 
 ## Downloading Logs {#download-logs}
 
-Follow the steps below to download logs. 
+Follow these steps to download logs.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
 1. Navigate to the **Environments** card from the **Overview** page.
 
-1. Select **Download Logs** from the **...** menu.
+1. Select **Download Logs** from the ellipsis menu.
 
-   ![](assets/download-logs1.png)
+   ![Download logs menu item](assets/download-logs1.png)
 
-   *Or*, 
-   
-    From the Environment Details page:
+1. In the **Download Logs** dialog, select the appropriate **Service** from the drop-down menu
 
-    ![](assets/download-logs.png)
+   ![Download Logs dialog](assets/download-preview.png)
 
-   >[!NOTE]
-   >Regardless of where it is opened, the same dialog appears and allows for an individual log file to be downloaded.
+1. Once you select your service, click the download icon next to the log you wish to retrieve.
 
-1. From the **Service** drop-down menu, select options such as **Preview** or **Preview Dispatcher**, followed by clicking on the download icon. 
+You can also access your logs from the **Environments** page.
 
-   ![](assets/download-preview.png)
+![Logs from the Environments screen](assets/download-logs.png)
 
+## Logs Via API {#logs-through-api}
 
-## Logs through API {#logs-through-api}
+In addition to downloading logs through the UI, logs are available through the API and the command line interface. 
 
-In addition to downloading logs through the UI, logs will be available through the API and the Command Line Interface. 
+To download the log files for a specific environment, the command would be similar to the following.
 
-For example, to download the log files for a specific environment, the command would be something along the lines of
-
-```java
+```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-The following command allows the tailing of logs:
+You can also tail logs via the command line interface.
 
-```java
+```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-In order to obtain the environment Id (1884 in this case) and the available service or log name options you can use:
+In order to obtain the environment Id (1884 in this example) and the available service or log name options you can use the following commands.
 
-```java
+```shell
 $ aio cloudmanager:list-environments
 Environment Id Name                     Type  Description                          
 1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
@@ -69,9 +70,6 @@ Environment Id Service    Name
 1884           dispatcher aemdispatcher
 1884           dispatcher httpdaccess
 ```
-
->[!NOTE]
->While **Log Downloads** will be available through both the UI and API, **Log Tailing** is API/CLI-only.
 
 ### Additional Resources {#resources}
 
