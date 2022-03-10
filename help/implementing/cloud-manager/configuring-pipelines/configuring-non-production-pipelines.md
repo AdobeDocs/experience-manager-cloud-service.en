@@ -42,12 +42,6 @@ Once you have set up your program and have at least one environment using the Cl
      * **Manual** - Use this option to manually start the pipeline.
      * **On Git Changes** - This options starts the CI/CD pipeline whenever commits are added to the configured git branch. With this option, you can still start the pipeline manually as required.  
 
-   * **Important Metric Failures Behavior** - During pipeline setup or edit, the **Deployment Manager** has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates. You have the following options.
-
-     * **Ask every time** - This is the default setting and requires manual intervention on any important failure.
-     * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
-     * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an important failure occurs. This is essentially emulating a user manually approving each failure.
-
 1. Click **Continue**.
 
 1. On the **Source Code** tab of the **Add Non-Production Pipeline** dialog, you must select which type of code the pipeline should process.
