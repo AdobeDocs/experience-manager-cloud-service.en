@@ -30,7 +30,7 @@ Have a look at the [February 2022 Release Overview](https://video.tv.adobe.com/v
 
 * The **[Enable Front End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** button is available in the **Site** rail of the Sites console for sites that use the v2 of the Page Core Component. This button configures the site to load the themes that are deployed with the Front End Pipeline on top of the existing client libraries.
 
-<!-- Alexandru Sarchiz: Please do NOT delete this. Most of the Foundation features will be released in an intermediary release with no mention in the release notes. Once the proper 2022.02/03 release rolls out, we will publish the release notes as well. Commenting this out temporarily so that it doesn't break validation, since some of the pages linked to here will be moved out of the 2022.02-release branch.
+<!-- Alexandru Sarchiz: Please do NOT delete or uncomment this. Most of the Foundation features will be released in an intermediary release with no mention in the release notes. Once the proper 2022.02/03 release rolls out, we will publish the release notes as well. Commenting this out temporarily so that it doesn't break validation, since some of the pages linked here will be moved out of the 2022.02-release branch.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
