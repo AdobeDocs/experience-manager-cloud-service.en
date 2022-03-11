@@ -1,11 +1,11 @@
 ---
 title: Create custom pop-ups using Quickview
-description: "Learn about how the default Quickview is used in ecommerce experiences whereby a pop-up window is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-up Windows®."
+description: "Learn about how the default Quickview is used in ecommerce experiences whereby a pop-up window is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-up window."
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 ---
-# Create custom pop-up Windows® using Quickview {#using-quickviews-to-create-custom-pop-ups}
+# Create custom pop-ups using Quickview {#using-quickviews-to-create-custom-pop-ups}
 
 The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. However, you can trigger custom content to display in the pop-ups. Depending on the viewer that you use, customers can select a hotspot, a thumbnail image, or an image map to see information or related content.
 
@@ -17,11 +17,11 @@ Quickview is supported by the following viewers in Dynamic Media:
 
 While the functionality of each viewer differs, the process of creating a Quickview is the same across all three supported viewers.
 
-**To create custom pop-up Windows® using Quickview:**
+**To create custom pop-ups using Quickview:**
 
 1. Create a Quickview for an uploaded asset.
 
-   You typically create a Quickview the same time you edit an asset for use with the viewer you are using.
+   You typically create a Quickview the same time that you edit an asset for use with the viewer you are using.
 
    <table>
     <tbody>
