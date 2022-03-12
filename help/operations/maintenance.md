@@ -54,7 +54,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
   <li>Versions older than 30 days are removed</li>
   <li>The most recent 5 versions in the last 30 days are kept</li>
   <li>Irrespective of the rules above, the most recent version is preserved.</li>
-</ol><br>These configuration settings cannot be modified by customers<br><br>NOTE: the behavior described above is enforced for new environments as of the 2022.2.0 monthly release and will be enforced for existing environments (created before 2022.2.0) in the 2022.3.0 release.</td>
+</ol><br>NOTE: the behavior described above is enforced for new environments as of March 14, 2022 and will be enforced for existing environments (those that were created before March 14, 2022) on April 21, 2022 release</td>
   </td>
   </tr>
   <tr>
@@ -64,8 +64,8 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
   <li>For replication auditing, audit logs older than 3 days are removed</li>
   <li>For DAM (Assets) auditing, audit logs older than 30 days are removed</li>
   <li>For page auditing, logs older than 3 days are removed.<br></li>
-</ol><br>NOTE: the behavior described above is enforced for new environments as of the 2022.2.0 monthly release and will be enforced for existing environments (any created before 2022.3.0) in the 2022.3.0 release</td>
-  </td>
+</ol><br>NOTE: the behavior described above is enforced for new environments as of March 14, 2022 and will be enforced for existing environments (those that were created before March 14, 2022) on April 21, 2022 release</td>
+   </td>
   </tr>
   <tr>
     <td>Lucene Binaries Cleanup</td>
