@@ -9,7 +9,7 @@ seo-description: The repository browser provides a read-only view into the repos
 
 >[!NOTE]
 >
->The Repository Browser is available as part of the AEM 2022.2.0 release and requires an environment to be updated to AEM version v6433 or higher.
+>The Repository Browser is available on AEM versions 6582 and higher.
 
 ## Introduction {#introduction}
 
