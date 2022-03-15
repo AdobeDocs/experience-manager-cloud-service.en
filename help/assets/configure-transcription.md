@@ -9,7 +9,7 @@ content-type: reference
 contentOwner: Vishabh Gupta
 topic-tags: Configuration
 feature: Asset Management, Configuration
-role: Admin, Marketer, Administrator, Author
+role: Admin
 
 ---
 
