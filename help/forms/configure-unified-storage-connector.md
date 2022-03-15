@@ -1,8 +1,8 @@
 ---
 title: How to configure Unified Storage Connector for AEM Forms?
 description: Learn how to manage Unified Storage Connector for AEM Forms. Use the Unified Storage Connector to connect AEM Forms to external data storages.
+exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
 ---
-
 # Manage Unified Storage Connector for AEM Forms {#manage-unified-storage-connector}
 
 You can use Unified Storage Connector to connect AEM Forms to external data storages. 
@@ -59,4 +59,4 @@ The following are the guidelines when you are using AEM Workflows and storing da
 
 * Do not use a custom AEM Workflow step in a workflow model to store data in the CRX DE repository.
 
-* When you [configure an AEM Workflow model for external data storage](#configure-workflow-external-data-storage), do not create custom columns for AEM Inbox since the values of the custom columns are not fetched if the workitem in the AEM Inbox belongs to a workflow that is marked for external storage. 
+* When you [configure an AEM Workflow model for external data storage](#configure-workflow-external-data-storage), do not create custom columns for AEM Inbox since the values of the custom columns are not fetched if the workitem in the AEM Inbox belongs to a workflow that is marked for external storage.

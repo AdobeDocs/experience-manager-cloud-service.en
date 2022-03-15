@@ -3,8 +3,8 @@ title: Developer Mode
 seo-title: Developer Mode
 description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
+exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 ---
-
 # Developer Mode {#developer-mode}
 
 When editing pages in AEM, several [modes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) are available, including Developer mode. Developer mode opens a side panel with several tabs that provide a developer with technical information about the current page.

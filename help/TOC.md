@@ -98,8 +98,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/journey-migration/getting-started-partners.md)
   + Release Notes for Migration Tools {#release-notes-migration-tools}
     + [Current Release Notes (2022.2.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+    + [Release Notes for 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
     + 2021 {#2021}
-      + [Release Notes for 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + [Release Notes for 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
       + [Release Notes for 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
       + [Release Notes for 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
@@ -376,9 +376,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [HTTP2 Delivery of Content FAQ](/help/assets/dynamic-media/http2faq.md)
     + [Flash Viewers End-of-Life](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-  + Integration with other solutions {#integrations}
+  + Integration with Adobe Workfront {#integrations}
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Install [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
+    + [Remove external dependencies for existing installations](/help/assets/remove-external-dependencies.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
 + Forms {#forms}
   + [Introduction](/help/forms/home.md)
@@ -602,6 +603,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + Release Notes for Cloud Manager {#release-notes-cloud-manager}
       + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022 {#2022}
+        + [Release Notes for 2022.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
         + [Release Notes for 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
       + 2021 {#2021}
         + [Release Notes for 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
@@ -627,36 +629,33 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Release Notes for 2020.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
         + [Release Notes for 2020.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
         + [Release Notes for 2020.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
-    + [Understanding Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md)
-    + Production Programs {#production-programs}
-      + [Introduction](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-      + [Creating a Production Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md)
-      + [Editing a Production Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-production-program.md)
-    + Sandbox Programs {#sandbox-programs}
-      + [Introduction](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-      + [Creating a Sandbox Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
-      + [Editing a Sandbox Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
-      + [Deleting a Sandbox Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
-      + [Hibernating and De-hibernating Sandbox Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
+    + Programs {#programs}
+      + [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+      + [Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+      + [Creating Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+      + [Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+      + [Creating Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+      + [Editing Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+      + [Hibernating Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
     + Creating an AEM Application Project {#create-application-project}
-      + [Using the Wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
-      + [Setting up your Project](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-      + [Understanding the Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+      + [Project Creation Wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+      + [Project Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+      + [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
     + [Managing Environments](/help/implementing/cloud-manager/manage-environments.md)
     + Managing your Code {#managing-code}
       + [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
       + [Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
       + [Accessing Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-      + [Integrating Git with Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-      + [Working with Multiple Source Git Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-      + [Enterprise Team Development Setup for AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+      + [Using git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+      + [Using Multiple Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+      + [Enterprise Development Team Setup](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
     + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md)
     + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Introduction](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
       + [Configuring a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
       + [Configuring a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
       + [Managing Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
-    + [Deploying your Code](/help/implementing/cloud-manager/deploy-code.md)
+    + [Deploying Your Code](/help/implementing/cloud-manager/deploy-code.md)
     + Understanding your Test Results {#test-results}
       + [Overview](/help/implementing/cloud-manager/overview-test-results.md)
       + [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
@@ -666,8 +665,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
     + [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md)
     + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
-    + [User Access to New Relic](/help/implementing/cloud-manager/user-access-new-relic.md)
-    + [Understanding Notifications](/help/implementing/cloud-manager/notifications.md)
+    + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
+    + [Notifications](/help/implementing/cloud-manager/notifications.md)
     + Managing SSL Certificates {#manage-ssl-certificates}
       + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
       + [Getting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
@@ -769,6 +768,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Using CRXDE Lite](/help/implementing/developing/tools/crxde.md)
     + [Package Manager](/help/implementing/developing/tools/package-manager.md)
     + [The Link Externalizer](/help/implementing/developing/tools/externalizer.md)
+    + [The Repository Browser](/help/implementing/developing/tools/repository-browser.md)
   + Personalization {#personalization}
     + [ContextHub](/help/implementing/developing/personalization/contexthub.md)
     + [Configuring ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
@@ -807,6 +807,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)
     + [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md)
     + [OSGi Configuration API](/help/implementing/deploying/osgi-configuration-api.md)
+    + [Resource Mapping](/help/implementing/deploying/resource-mapping.md)
   + Author Tier {#author-tier}
     + [Accessing the Author Tier](/help/implementing/author-tier/accessing-the-author-tier.md)
     + [Securing the Author Tier](/help/implementing/author-tier/securing-the-author-tier.md)
