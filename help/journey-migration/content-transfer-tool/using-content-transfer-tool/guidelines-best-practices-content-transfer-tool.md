@@ -1,8 +1,8 @@
 ---
 title: Guidelines and  Best Practices for using Content Transfer Tool
 description: Guidelines and  Best Practices for using Content Transfer Tool
+exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 ---
-
 # Guidelines and  Best Practices for using Content Transfer Tool {#guidelines}
 
 ## Guidelines and Best Practices {#best-practices}

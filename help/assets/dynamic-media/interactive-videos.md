@@ -534,7 +534,7 @@ Using the demo website as an example:
 
 Notice that the video embed code is standard:
 
-```xml
+```js {.line-numbers}
 <style type="text/css">
  #s7video_div.s7videoviewer{
    width:100%;
@@ -596,7 +596,7 @@ In addition, the Interactive Video viewer supports full screen operation mode. T
 
 The embed code returned by Experience Manager already has a ready-to-use event handler in place. It is commented out as seen in the following highlighted code snippet:
 
-```xml
+```js {.line-numbers}
 <style type="text/css">
  #s7interactivevideo_div.s7interactivevideoviewer{
    width:100%;
@@ -680,13 +680,13 @@ The last step to trigger the Quickview URL and activate the Quickview panel most
 
 You can see how these steps are applied to the demo website to fully integrate an interactive video with the Quickview code. Earlier in this topic, the structure of the Quickview URL was identified as the following:
 
-```xml
+```xml {.line-numbers}
 /datafeed/$CategoryId$-$SKU$.json
 ```
 
 It is easy to reconstruct this URL inside the `quickViewActivate` handler using `categoryId` and `sku` fields available in the `inData` object passed to the handler by way of the viewer's code as in the following:
 
-```xml
+```js {.line-numbers}
 var sku=inData.sku;
 var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
@@ -694,13 +694,13 @@ var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 
 The demo website is triggering the Quickview dialog box using a simple `loadQuickView()` function call. This function takes only one argument, which is the Quickview data URL. So the last step to integrate the interactive video is to add the following line of code to the `quickViewActivate` handler:
 
-```xml
+```xml {.line-numbers}
 loadQuickView(quickViewUrl);
 ```
 
 Finally, make sure that your Quickview dialog box is attached to the viewer's container element. The embed code default provides sample steps to achieve this functionality. To obtain a reference to the viewer's container element, you can use the following lines of code:
 
-```xml
+```js {.line-numbers}
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
 var inner_container = document.getElementById(sdkContainerId);
 ```
@@ -711,7 +711,7 @@ The steps to actually locate the modal dialog box element and attach it to the a
 
 For the sample website, the Quickview modal dialog box is implemented as a `DIV` with the quickview-modal ID attached directly to the document `BODY`. Therefore, the code to move that dialog box to the viewer's container is as straightforward as the following:
 
-```xml
+```js {.line-numbers}
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
 var inner_container = document.getElementById(sdkContainerId);
 inner_container.appendChild(document.getElementById("quickview-modal"));
@@ -720,7 +720,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 The complete source code is as follows:
 
-```xml
+```javascript {.line-numbers}
 <style type="text/css">
  #s7interactivevideo_div.s7interactivevideoviewer{
    width:100%;
@@ -769,4 +769,3 @@ The final demo website with the fully integrated interactive video appears like 
 ## Create custom pop-up Windows® using Quickview {#using-quickviews-to-create-custom-pop-ups}
 
 See [Create custom pop-up Windows® using Quickview](/help/assets/dynamic-media/custom-pop-ups.md).
--->

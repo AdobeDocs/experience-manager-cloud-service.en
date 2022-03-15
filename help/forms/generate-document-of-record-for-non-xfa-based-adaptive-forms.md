@@ -11,20 +11,20 @@ When a form is filled or submitted, you can keep a record of the form, in print 
 
 ![Document of Record](assets/document-of-record.png)
 
-To create a Document of Record, an XFA or Acroform based template is merged with data collected via an adaptive form. You can generate a Document of Record automatically or on-demand. 
+To create a Document of Record, an XFA or Acroform based template is merged with data collected via an adaptive form. You can generate a Document of Record automatically or on-demand.
 The on-demand option allows you to specify a custom XFA or Acroform based template to provide a custom appearance to your Document of Record.
 
 You can:
 
 * [Generate an XFA-based Document of Record](#generate-an-XFA-based-document-of-record)
 * [Generate an Acroform-based (Acrobat Form PDF) Document of Record](#generate-an-Acroform-based-document-of-record)
-* [Auto generate a Document of Record](#auto-generate-a-document-of-record) 
+* [Auto generate a Document of Record](#auto-generate-a-document-of-record)
 
 ## Before you start {#components-to-automatically-generate-a-document-of-record}
 
 Before you start learn and ready the assets required for a Document of Record:
 
-**Base template:** An XFA template (XDP file) created in AEM Designer or an Acrobat Form (AcroForm). [Base template](#base-template-of-a-document-of-record) is used to specify styling and branding information for a Document of Record. Upload your XFA template (XDP file) to your AEM Forms instance before 
+**Base template:** An XFA template (XDP file) created in Forms Designer or an Acrobat Form (AcroForm). [Base template](#base-template-of-a-document-of-record) is used to specify styling and branding information for a Document of Record. Upload your XFA template (XDP file) to your AEM Forms instance before
 
 **Adaptive Form:** An Adaptive Form for which the Document of Record is to be generated.
 
@@ -32,7 +32,7 @@ Before you start learn and ready the assets required for a Document of Record:
 
 Upload your XFA template (XDP file) to your AEM Forms instance. Perform the following steps to configure an Adaptive Form to use XFA template (XDP file) as template for Document of Record:
 
-1. In AEM author instance, click **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms and Documents].**
+1. In Experience Manager author instance, click **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms and Documents].**
 1. Select a form, and click **[!UICONTROL Properties]**.
 1. In the Properties window, tap **[!UICONTROL Form Model]**.
 1. On the  **[!UICONTROL Form Model]** tab, in the **[!UICONTROL Select From]** drop-down, select **[!UICONTROL Schema]** or **[!UICONTROL None]**. You can also select a form model when you create a form.
@@ -45,7 +45,7 @@ Your Adaptive Form is now configured to use an XDP file as template for Document
 
 Upload your Adobe Acrobat PDF (Acroform) to your AEM Forms instance. Perform the following steps to configure an Adaptive Form to use Adobe Acrobat PDF (Acroform) as template for Document of Record:
 
-1. In AEM author instance, click **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms and Documents].**
+1. In Experience Manager author instance, click **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms and Documents].**
 1. Select a form, and click **[!UICONTROL Properties]**.
 1. In the Properties window, tap **[!UICONTROL Form Model]**.
 1. On the  **[!UICONTROL Form Model]** tab, in the **[!UICONTROL Select From]** drop-down, select **[!UICONTROL Schema]** or **[!UICONTROL None]**. You can also select a form model when you create a form.
@@ -59,14 +59,14 @@ Your Adaptive Form is now configured to use an Acroform as template for Document
 When an Adaptive Form is configured to automatically generate a Document of Record, every time a form is changed, its Document of Record is updated immediately. For example, if a field is removed from an existing adaptive form, the corresponding field is also removed and is not visible in the Document of Record. There are many other advantages of automatically generating Document of Record. :
 
 * Form developers do not have to maintain data bindings manually. Auto-generated Document of Record takes care of data binding related updates.
-* Form developers do not have to manually hide fields which are marked exclude from Document of Record. Auto-generated Document of Records are pre-configured to exclude such fields.
+* Form developers do not have to manually hide fields which are marked exclude from Document of Record. Auto-generated Document of Record are pre-configured to exclude such fields.
 * Auto-generated Document of Record option saves time required to create a Form template for Document of Record.
 * Auto-generated Document of Record option allows you to use different styling and appearances using different base templates. It helps select best style and appearance for Document of Record for your organization. If you do not specify styling, system styles are set as default.
-* Auto-generated Document of Records ensure any change in form is immediately reflected in Document of Record.
+* Auto-generated Document of Record ensures any change in form is immediately reflected in Document of Record.
 
 Perform the following steps to configure an Adaptive Form to automatically generate a Document of Record:
 
-1. In AEM author instance, click **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms and Documents].**
+1. In Experience Manager author instance, click **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms and Documents].**
 1. Select a form, and click **[!UICONTROL Properties]**.
 1. In the Properties window, tap **[!UICONTROL Form Model]**.
 1. On the  **[!UICONTROL Form Model]** tab, in the **[!UICONTROL Select From]** drop-down, select **[!UICONTROL Schema]** or **[!UICONTROL None]**. You can also select a form model when you create a form.
@@ -79,7 +79,7 @@ Perform the following steps to configure an Adaptive Form to automatically gener
 
 1. Open the Adaptive Form, configured to use a custom form template for editing.
 
-1. Select an Adaptive Form component and click open Configure ![Configure](assets/Smock_Wrench_18_N.svg) icon. It opens properties browser. 
+1. Select an Adaptive Form component and click open Configure ![Configure](assets/Smock_Wrench_18_N.svg) icon. It opens properties browser.
 
 1. In the properties browser, browse and select a field.
 
@@ -92,15 +92,15 @@ Perform the following steps to configure an Adaptive Form to automatically gener
 In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-You can use Send Email, AEM Workflow submit action in conjunction with [Document of Record step, and other submit actions](configuring-submit-actions.md) to receive a Document of Record.  
+You can use Send Email, Experience Manager Workflow submit action in conjunction with [Document of Record step, and other submit actions](configuring-submit-actions.md) to receive a Document of Record.  
 
 ## Incremental updates to Document of Record template {#document-of-record-template-incremental-updates}
 
 Adaptive forms and corresponding document of record templates can evolve over the period of time. You can choose to add, remove, or modify fields to an Adaptive Form or a Document of Record template.
 
-When you make changes to a Document of Record template and upload the changed Document of Record template to AEM Forms, the Adaptive Forms editor automatically detects the changed bindings and informs you about the adaptive form components that require new bindings. It allows you to make incremental updates to a Document of Record template. 
+When you make changes to a Document of Record template and upload the changed Document of Record template to AEM Forms, the Adaptive Forms editor automatically detects the changed bindings and informs you about the adaptive form components that require new bindings. It allows you to make incremental updates to a Document of Record template.
 
-For example, an Organization, *We.Retail*, has an AcroForm-based Document of Record template, *we-retail-invoice.pdf*. The template looks like the following: 
+For example, an Organization, *We.Retail*, has an AcroForm-based Document of Record template, *we-retail-invoice.pdf*. The template looks like the following:
 
 ![Original Template](assets/we-retail-invoice.png)
 
@@ -112,7 +112,7 @@ The developer uploads and applies to the updated template to the adaptive form. 
 
 ![Binding Error](assets/we-retail-binding-error.png)
 
-The form developer binds Adaptive Forms fields with corresponding Document of Record template. 
+The form developer binds Adaptive Forms fields with corresponding Document of Record template.
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 Now, when the Adaptive Form is submitted an updated  Document of Record of record is created.
@@ -142,7 +142,6 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
   
-
 
 When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
 
@@ -271,7 +270,7 @@ The Adaptive Forms table components such as header, footer, and row map to corre
 
 ## Base template of a Document of Record {#base-template-of-a-document-of-record}
 
-Base template provides styling and appearance information to Document of Record. It allows you to customize default appearance of auto generated Document of Record. For example, you can use base template to add your company logo in the header and copyright information in the footer of the Document of Record. 
+Base template provides styling and appearance information to Document of Record. It allows you to customize default appearance of auto generated Document of Record. For example, you can use base template to add your company logo in the header and copyright information in the footer of the Document of Record.
 
 The master page from base template is used as a master page for Document of Record template. The master page can have information such as page header, page footer, and page number that you can apply to Document of Record. You can apply such information to Document of Record using base template for auto generation of Document of Record. Using base template enables you to change default properties of fields.
 
@@ -295,7 +294,7 @@ A base template is used to define header, footer, styling, and appearance for a 
 
 * The properties of these fields are applied to the fields in the Document of Record. These fields should follow the `AF_<name of field in all caps>_XFO` naming convention. For example, the field name for check box should be `AF_CHECKBOX_XFO`.
 
-To create a base template, do the following in AEM Designer.
+To create a base template, do the following in Forms Designer.
 
 1. Click **[!UICONTROL File]** &gt; **[!UICONTROL New]**.
 1. Select the **[!UICONTROL Based on a template]** option.
@@ -320,7 +319,7 @@ Strictly follow above mentioned conventions and instructions to design a base te
 
 While generating a Document of Record, you can change branding information for the Document of Record on the Document of Record tab. The Document of Record tab includes options such as logo, appearance, layout, header and footer, disclaimer, and whether or not you want to include unselected check box and radio button options.
 
-To localize the branding information that you enter in the Document of Record tab, ensure the locale of the browser is set appropriately. To customize the branding information of Document of Record, perform the following steps:
+To localize the branding information that you enter in the Document of Record tab, ensure that the locale of the browser is set appropriately. To customize the branding information of Document of Record, perform the following steps:
 
 1. Select a panel (root panel) in the Document of Record and then tap ![configure](assets/configure.png).
 1. Tap ![dortab](assets/dortab.png). The Document of Record tab appears.
@@ -328,7 +327,7 @@ To localize the branding information that you enter in the Document of Record ta
 
    ![brandingtemplate](assets/brandingtemplate.png)
 
-   If you choose to select a custom template, browse a select an XDP on your [!DNL AEM Forms] server. If you want to use a template that is not already on your [!DNL AEM Forms] server, you need to first upload the XDP to your [!DNL AEM Forms] server.
+   If you choose to select a custom template, browse a select an XDP on your [!DNL AEM Forms] server. If you want to use a template that is not already on your [!DNL AEM Forms] server, you should first upload the XDP to your [!DNL AEM Forms] server.
 
 1. Based on whether you select a default or a custom template, some or all of the following properties appear in the Document of Record tab. Specify these appropriately:
 
@@ -348,7 +347,7 @@ To localize the branding information that you enter in the Document of Record ta
 
    >[!NOTE]
    >
-   >If you are using an Adaptive Form template created with a verision of Designer prior to 6.3, for Accent Color and Font Family properties to work, ensure that the following is present in your Adaptive Form template under the root subform:
+   >If you are using an Adaptive Form template created with a version of Designer prior to 6.3, for Accent Color and Font Family properties to work, ensure that the following is present in your Adaptive Form template under the root subform:
 
    ```xml
    <proto>
@@ -382,7 +381,7 @@ Fields in a panel rendered in a column layout in the Document of Record
 
 Document of Record settings let you choose options you want to include in the Document of Record. For example, a bank accepts name, age, social security number, and phone number in a form. The form generates a bank account number, and branch details. You can choose to display only the name, social security number, bank account, and branch details in Document of Record.
 
-The Document of Record settings of a component are available under its properties. To access the properties a component, select the component and click ![cmppr](assets/cmppr.png) in the overlay. The properties are listed in the sidebar, and you can find the following settings in it.
+Setting of the Document of Record component are available under its properties. To access the properties a component, select the component and click ![cmppr](assets/cmppr.png) in the overlay. The properties are listed in the sidebar, and you can find the following settings in it.
 
 **Field level settings**
 
@@ -395,4 +394,70 @@ The Document of Record settings of a component are available under its propertie
 **Form level settings**
 
 * **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based Adaptive Form in Document of Record. By default it is true.
-* **Exclude fields from DoR if hidden:** Setting the property overrides the behavior of “Exclude From Document of Record” field level property when it’s not true. If fields are hidden at the time of form submission, they will be excluded from Document of Record if the property is set true, provided “Exclude From Document of Record” property is not set.
+* **Exclude fields from DoR if hidden:** Setting the property overrides the behavior of “Exclude From Document of Record” field level property when it’s not true. If fields are hidden at the time of form submission, they are excluded from Document of Record if the property is set true, provided “Exclude From Document of Record” property is not set.
+
+## Use a custom XCI file
+
+   >[!NOTE]
+   >
+   > This feature is available in prerelease channel. See [Prerelease Channel documentation](/help/release-notes/prerelease.md#enable-prerelease) for information to enable the feature for your environment.
+
+An XCI file helps you set various properties of a document. Forms as a Cloud Service has a master XCI file. You can use a custom XCI file to override one or more default properties specified in the master XCI file. For example, you can choose to embed a font into a document or enable tagged property for all the documents. The following table specifies the XCI options:
+
+|XCI option|Description|
+|--- |--- |
+|config/present/pdf/creator|Identifies the document creator using the Creator entry in the Document Information dictionary. For information about this dictionary, see the [PDF Reference guide](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf).|
+|config/present/pdf/producer|Identifies the document producer using the Producer entry in the Document Information dictionary. For information about this dictionary, see the [PDF Reference guide](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf).|
+|config/present/layout|Controls whether the output is a single panel or paginated.|
+|config/present/pdf/compression/level|Specifies the degree of compression to use when generating a PDF document.|
+|config/present/pdf/fontInfo/embed|Controls font embedding in the output document.|
+|config/present/pdf/scriptModel|Controls whether XFA-specific information is included in the output PDF document.|
+|config/present/common/data/adjustData|Controls whether the XFA application adjusts the data after merging.|
+|config/present/pdf/renderPolicy|Controls whether the generation of page content is done on the server or deferred to the client.|
+|config/present/common/locale|Specifies the default locale used in the output document.|
+|config/present/destination|When contained by a present element, specifies the output format. When contained by an openAction element, specifies the action to perform upon opening the document in an interactive client.|
+|config/present/output/type|Specifies either the type of compression to apply to a file or the type of output to produce.|
+|config/present/common/temp/uri|Specifies the Form URI.|
+|config/present/common/template/base|Supplies a base location for URIs in the form design. When this element is absent or empty, the location of the form design is used as the base.|
+|config/present/common/log/to|Controls the location that log data or output data is written to.|
+|config/present/output/to|Controls the location that log data or output data is written to.|
+|config/present/script/currentPage|Specifies the initial page when the document is opened.|
+|config/present/script/exclude|Informs Forms as a Cloud Service which events to ignore.|
+|config/present/pdf/linearized|Controls whether the output PDF document is linearized.|
+|config/present/script/runScripts|Controls which set of scripts Forms as a Cloud Service executes.|
+|config/present/pdf/tagged|Controls the inclusion of tags into the output PDF document. Tags, in the context of PDF, are additional information included in a document to expose the logical structure of the document. Tags assist accessibility aids and reformatting. For example, a page number may be tagged as an artifact so that a screen reader does not enunciate it in the middle of the text. Although tags make a document more useful, they also increase the size of the document and the processing time to create it.|
+|config/present/pdf/fontInfo/alwaysEmbed|Specifies a font that is embedded into the output document.|
+|config/present/pdf/fontInfo/neverEmbed|Specifies a font that must never be embedded into the output document.|
+|config/present/pdf/pdfa/part|Specifies the version number of the PDF/A specification that the document conforms to.|
+|config/present/pdf/pdfa/amd|Specifies the amendment level of the PDF/A specification.|
+|config/present/pdf/pdfa/conformance|Specifies the conformance level with the PDF/A specification.|
+|config/present/pdf/version|Specifies the version of PDF document to generate|
+|config/present/pdf/version/map|Specifies the fall back fonts for the document|
+
+### Use a custom XCI file in your Forms as a Cloud Service environment
+
+  1. Add the custom XCI file to your development project.
+  1. Specify the following [inline property](/help/implementing/deploying/configuring-osgi.md):
+
+        ```JSON
+         {
+          "xciFilePath": "[path of XCI file]"
+         }
+        ```
+
+        For example,
+
+        ```JSON
+         {
+          "xciFilePath": "/content/dam/formsanddocuments/customMinionProBoldAndTagged.xci"
+         }
+        ```
+
+  1. Deploy the project to your Cloud Service environment.
+
+### Use a custom XCI file in your local Forms as a Cloud Service development environment
+
+  1. Upload the XCI file to your local development environment.
+  1. Open Cloud Service SDK configuraion manager. The default URL is: <http://localhost:4502/system/console/configMgr>.
+  1. Locate and open the **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]** configuration.
+  1. Specify path of the XCI file and click **[!UICONTROL Save]**.
