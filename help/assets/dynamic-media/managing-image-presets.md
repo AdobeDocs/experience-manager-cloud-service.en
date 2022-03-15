@@ -337,7 +337,7 @@ The following are some basic examples of what you can do with image modifiers.
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html) - Inverts each color component for a negative image effect.
 
-  ```xml
+  ```xml {.line-numbers}
   &op_invert=1
   ```
 
@@ -345,7 +345,7 @@ The following are some basic examples of what you can do with image modifiers.
 
 * [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html) - Applies a blur filter to the image.
 
-  ```xml
+  ```xml {.line-numbers}
   &op_blur=7
   ```
 
@@ -353,7 +353,7 @@ The following are some basic examples of what you can do with image modifiers.
 
 * Combined commands - op_blur and op-invert
 
-  ```xml
+  ```xml {.line-numbers}
   &op_invert=1&op_blur=7
   ```
 
@@ -361,7 +361,7 @@ The following are some basic examples of what you can do with image modifiers.
 
 * [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html) - Decreases or increases the brightness.
 
-  ```xml
+  ```xml {.line-numbers}
   &op_brightness=58
   ```
 
@@ -369,7 +369,7 @@ The following are some basic examples of what you can do with image modifiers.
 
 * [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html) - Adjusts image opacity. Lets you decrease the foreground opacity.
 
-  ```xml
+  ```xml {.line-numbers}
   opac=29
   ```
 
