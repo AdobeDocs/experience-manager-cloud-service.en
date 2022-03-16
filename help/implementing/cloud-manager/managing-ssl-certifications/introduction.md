@@ -25,7 +25,7 @@ Cloud Manager provides customers the self-service capability to install SSL cert
 
 * AEM as a Cloud Service will accept wildcard SSL certificates for a domain.
 
-* At any given time, Cloud Manager will allow a maximum of 20 SSL certificates that can be associated with one or more environments across your Program, even if a certificate is expired. Cloud Manager UI will, however, allow up 50 SSL certificates to be installed in the program with this constraint. Typically a certificate can cover multiple domains (up to 100 SANs) so consider grouping multiple domains in the same certificate to stay under this limit.
+* At any given time, Cloud Manager will allow a maximum of 50 SSL certificates that can be associated with one or more environments across your Program, even if a certificate is expired. Cloud Manager UI will, however, allow up 50 SSL certificates to be installed in the program with this constraint. Typically a certificate can cover multiple domains (up to 100 SANs) so consider grouping multiple domains in the same certificate to stay under this limit.
   
 Cloud Manager supports the following customer SSL certificate requirements: 
 
