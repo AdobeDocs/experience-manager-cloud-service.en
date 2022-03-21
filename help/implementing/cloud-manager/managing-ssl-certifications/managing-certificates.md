@@ -33,10 +33,11 @@ A similar message is also provided on the **IP Allow List** and the **Environmen
 
 When a certificate expires any domains that are in use with the expired certificate will no longer work. Updating your certificates through the following steps ensures that your domain continues to work as desired.
 
-1. Navigate to the SSL Certificates screen from the **Environments** page.
-1. You will see a table with a row for each SSL certificate that has been successfully installed in your program.
-1. The menu options for each row may be accessed by selecting the three buttons at the far right end of the row of interest. 
-1. Select **View & Update**. The certificate details can be viewed from here.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Navigate to **Environments** screen from the **Overview** page.
+1. Navigate to the **SSL Certificates** screen from the **Environments** screen.
+1. You will see a table with a row for each SSL certificate that has been successfully installed in your program. Click on the ellipsis button at the far right in the row of the certificate you wish to update and select **View &amp; Update**.
+1. The certificate details are displayed and can be updated.
 
 >[!NOTE]
 >
@@ -44,29 +45,21 @@ When a certificate expires any domains that are in use with the expired certific
 
 ## Replacing an SSL Certificate {#replace-ssl-certificate}
 
-Follow these steps to replace an SSL certificate.
-
-1. Navigate to the SSL Certificates screen from the **Environments** page.
-1. You will see a table with a row for each SSL certificate that has been successfully installed in your program.
-1. The menu options for each row may be accessed by selecting the three buttons at the far right end of the row of interest. 
-1. Select **View & Update**.
-1. In order to replace the certificate, paste the new content into the appropriate input fields and click on **Save**. You will need to address any errors that may arise. 
+An SSL certificate can be replaced by following the same steps as described in the section [Updating an SSL Certificate.](#update-ssl-certificate)
 
 ## Deleting an SSL Certificate {#deleting-an-ssl-certificate}
 
-Removing certificates from Cloud Manager is a permanent action that cannot be undone. Adobe recommends as a best practice to save SSL files locally before deleting them in Cloud Manager.
+Removing certificates from Cloud Manager is a permanent action that can not be undone. As a best practice, Adobe recommends to save SSL files locally before deleting them in Cloud Manager.
 
 Cloud Manager will not allow you to delete an SSL certificate that has one or more domains associated with it. All associated domains must be deleted before deleting the SSL certificate. Please refer to the document [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) to learn more.
 
 Follow these steps to delete an SSL certificate.
 
-1. Navigate to the **SSL Certificates** screen from the **Environments** page.
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
-1. Identify the row where the SSL certificate name you wish to delete is listed.
-1. Select the **...** menu from the far right end of the row.
-1. Select **Delete**.
-    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete01.png)
-1. Confirm your submission from **Delete SSL Certificate** dialog box.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Navigate to **Environments** screen from the **Overview** page.
+1. Navigate to the **SSL Certificates** screen from the **Environments** screen.
+1. You will see a table with a row for each SSL certificate that has been successfully installed in your program. Click on the ellipsis button at the far right in the row of the certificate you wish to delete and select **Delete**.
+1. Confirm the deletion in the **Delete SSL Certificate** dialog.
 
 >[!NOTE]
 >
