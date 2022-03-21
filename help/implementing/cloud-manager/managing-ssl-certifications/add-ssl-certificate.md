@@ -56,7 +56,6 @@ Follow these steps to add a certificate using Cloud Manager.
      * All three fields are mandatory.
 
    ![Add SSL Certificate dialog](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
-
   
    * Any errors detected will be displayed.
      * You must address all errors before your certificate can be saved.
@@ -84,9 +83,9 @@ If you see the following error, please check the policy of your certificate.
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-Normally certificate types are identified by the OID values embedded in policies. These OIDs are unique and hence converting a certificate to text form and searching for the OID will confirm the certificate as having a match.
+Normally certificate policies are identified by embedded OID values. Outputting a certificate to text and searching for the OID will reveal the certificate's policy.
 
-You can view your certificate detail as follows.
+You can output your certificate detail as text using the following example as a guide.
 
 ```text
 openssl x509 -in 9178c0f58cb8fccc.pem -text
@@ -105,15 +104,15 @@ certificate:
 ...
 ```
 
-This tables provides identifying patterns.
+The OID pattern in the text defines the policy type of the certificate.
 
-|Pattern|Certificate Type|Acceptable|
+|Pattern|Certificate Type|Acceptable in Cloud Manager|
 |---|---|---|
 |`2.23.140.1.2.1`|DV|No|
 |`2.23.140.1.2.2`|OV|Yes|
 |`2.23.140.1.2.3` and `TLS Web Server Authentication`|IV cert with permission to use for https|Yes|
 
-`grep`ping for the patterns, you can confirm your certificate type.
+By `grep`ping for the OID patterns in the output certificate text, you can confirm your certificate type.
 
 ```shell
 # "EV Policy"
@@ -130,10 +129,9 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 The most common reason for a certificate deployment to fail is that the intermediate or chain certificates are not in the correct order.
 
-Intermediate certificate files must end with the root certificate or the certificate most proximate to the root and be in descending order from the `main/server` certificate to the root. 
+Intermediate certificate files must end with the root certificate or the certificate most proximate to the root. They must be in descending order from the `main/server` certificate to the root. 
 
 You can determine the order of your intermediate files using the following command.
-
 
 ```shell
 openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
@@ -151,7 +149,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->The output of these two commands must be exactly the same. If you cannot locate a matching private key for your `main/server` certificate, you will be required to re-key the certificate by generating a new CSR and/or requesting an updated certificate from your SSL vendor.
+>The output of these two commands must be exactly the same. If you can not locate a matching private key for your `main/server` certificate, you will be required to re-key the certificate by generating a new CSR and/or requesting an updated certificate from your SSL vendor.
 
 ### Certificate Validity Dates {#certificate-validity-dates}
 
