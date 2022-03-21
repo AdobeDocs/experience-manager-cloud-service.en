@@ -47,6 +47,7 @@ Experience Fragments can be exported to the default workspace in Adobe Target, o
 >* [Adobe Target development](http://developers.adobetarget.com/)
 >* [Core Components - Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 >* [Adobe Target - How Do I Use Adobe Experience Manager (AEM) Experience Fragments?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=en)
+>* [AEM 6.5 - Manually Configuring the Integration with Adobe Target - Creating a Target Cloud Configuration](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
 
 ## Prerequisites {#prerequisites}
 
@@ -259,9 +260,8 @@ You can create multiple frameworks for a single Target configuration. Multiple f
 
 Your framework is created. To replicate the framework to the publish instance, use the **Activate Framework** option from the sidekick.
 
+<!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
-
-<!-- Is this section needed? -->
 
 Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
@@ -274,10 +274,10 @@ Associate your [AEM activities](/help/sites-cloud/authoring/personalization/acti
 >* If the **xt_only** options is **not** enabled on the Adobe Target tenant (clientcode), then you can create **both** XT and A/B activities in AEM.
 >
 >**Additional note:** **xt_only** options is a setting applied on a certain Target tenant (clientcode) and can only be modified directly in Adobe Target. You cannot enable or disable this option in AEM.
+-->
 
+<!--
 ### Associating the Target Framework With Your Site {#associating-the-target-framework-with-your-site}
-
-<!-- Is this section needed? -->
 
 After you create a Target framework in AEM, associate your web pages with the framework. The targeted components on the pages send the framework-defined data to Adobe Target for tracking. (See [Content Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md).)
 
@@ -289,7 +289,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. Tap/click **Edit**.
 1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
-   <!-- ![chlimage_1-165](assets/chlimage_1-165.png) -->
+  ![chlimage_1-165](assets/chlimage_1-165.png)
 
 1. Select the framework you want under **Configuration Reference**.
 
@@ -303,10 +303,10 @@ When you associate a page with the framework, the child pages inherit the associ
    >[!NOTE]
    >
    >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
+--> 
 
+<!--
 ### Troubleshooting Target Connection Problems {#troubleshooting-target-connection-problems}
-
-<!-- Is this section needed? -->
 
 Perform the following tasks to troubleshoot problems that occur when connecting to Target:
 
@@ -314,6 +314,7 @@ Perform the following tasks to troubleshoot problems that occur when connecting 
 * Make sure that the AEM instance can connect to the Target server. For example, make sure that firewall rules are not blocking outbound AEM connections, or that AEM is configured to use necessary proxies.
 * Look for helpful messages in the AEM error log. The error.log file is located in the **crx-quickstart/logs** directory where AEM is installed.
 * When editing the activity in Adobe Target, the URL is pointing to localhost. Work around this by setting the AEM externalizer to the correct URL.
+--> 
 
 ## Exporting an Experience Fragment to Adobe Target {#exporting-an-experience-fragment-to-adobe-target}
 
