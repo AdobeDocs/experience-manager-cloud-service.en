@@ -106,13 +106,13 @@ certificate:
 
 The OID pattern in the text defines the policy type of the certificate.
 
-|Pattern|Certificate Type|Acceptable in Cloud Manager|
+|Pattern|Policy|Acceptable in Cloud Manager|
 |---|---|---|
 |`2.23.140.1.2.1`|DV|No|
 |`2.23.140.1.2.2`|OV|Yes|
 |`2.23.140.1.2.3` and `TLS Web Server Authentication`|IV cert with permission to use for https|Yes|
 
-By `grep`ping for the OID patterns in the output certificate text, you can confirm your certificate type.
+By `grep`ping for the OID patterns in the output certificate text, you can confirm your certificate policy.
 
 ```shell
 # "EV Policy"
