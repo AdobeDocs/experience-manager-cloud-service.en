@@ -54,11 +54,12 @@ OV and EV certificates provide users with extra, CA-validated information that c
 
 ## Limitations {#limitations}
 
-At any given time, Cloud Manager will allow a maximum of 50 SSL certificates that can be associated with one or more environments across your program, even if a certificate is expired.
+At any given time, Cloud Manager will allow a maximum of 50 SSL certificates to be installed. These can be associated with one or more environments across your program and also include any expired certificates.
 
-The Cloud Manager UI will, however, allow up 50 SSL certificates to be installed in the program with this constraint.
+If you have reached the limit, review your certificates and consider:
 
-Typically a certificate can cover multiple domains (up to 100 SANs) so consider grouping multiple domains in the same certificate to stay under this limit.
+* Deleting any expired certificates.
+* Grouping multiple domains in the same certificate since a certificate can cover multiple domains (up to 100 SANs).
 
 ## Learn More {#learn-more}
 
