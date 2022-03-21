@@ -9,7 +9,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Manage SSL Certificates"
->abstract="Learn how Cloud Manager provides you with self-service tools to install SSL certificates. Cloud Manager uses a platform TLS service to manage SSL certificates and private keys owned by customers and typically obtained from third party certification authorities."
+>abstract="Learn how Cloud Manager provides you with self-service tools to install and manage SSL certificates in order to secure your site for your users. Cloud Manager uses a platform TLS service to manage SSL certificates and private keys owned by customers and obtained from third-party certification authorities."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="View, Updating & Replace an SSL Certificate"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Check Status of an SSL Certificate"
 
