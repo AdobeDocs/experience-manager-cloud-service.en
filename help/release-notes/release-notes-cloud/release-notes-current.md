@@ -116,7 +116,7 @@ The release date for Cloud Manager release 2022.3.0 in AEM as a Cloud Service 10
 
 * Accessing AEM Environment log can be done using the Developer role.
 
-### Bug Fixes {#bug-fixes-cm-feb}
+### Bug Fixes {#bug-fixes-cm-march}
 
 * A subset of git repositories created manually had an incorrect name value which prevented the build artifact reuse feature from being effective. The names of those repositories have been changed and users will see the corrected name in the Cloud Manager API/UI.
 * Build artifacts from non-production pipelines were inappropriately reused on production full stack pipelines.
