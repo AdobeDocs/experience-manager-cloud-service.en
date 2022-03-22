@@ -86,6 +86,16 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 * Version purge and audit log purge maintenance tasks, which had not previously been enabled, will be enabled for new environments. See the associated values in the Maintenance Task article. Purging for existing environments (any created before 2022.3.0) will be enabled in the next monthly release (2022.3.0) -->
 
+## CIF Add-on {#cloud-services-cif}
+
+### What is New {#what-is-new-cif}
+
+* AEM CIF Search Core Component support Commerce LiveSearch
+* Improved SEO for multi-store scenarios: URL formats for PDP / PLP can now be configured on a store level via the CIF Cloud Config properties
+* Product picker supports staged products via new filter option in the UI.  This enables content practitioners to prepare product content management for upcoming product launches
+* Simplified CIF configuration management and error handling by using CIF Cloud Config name instead of config proxy url
+* Manual category selection for Product list and Carousel components. This allows content practitioners to use these components on content pages, outside of the catalog experience
+
 ## Cloud Manager {#cloud-manager}
 
 ### February Release Date {#release-date-cm-feb}
