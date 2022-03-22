@@ -17,6 +17,10 @@ The following section outlines the general Release Notes for the current (latest
 >
 >See [Recent Documentation Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) for details of documentation updates not directly related to a release.
 
+>[!NOTE]
+>
+>The 2022.2.0 release was merged into the 2022.3.0 Release. These release notes will cover all the features.
+
 ## Release Date {#release-date}
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.3.0) is March 31, 2022.
@@ -24,7 +28,7 @@ The following release (2022.4.0) is on April 28, 2022.
 
 ## Release Video {#release-video}
 
-Have a look at the [February 2022 Release Overview](https://video.tv.adobe.com/v/340450) video for a summary of the features added in the 2022.2.0 release.
+Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/340450) video for a summary of the features added in the 2022.3.0 release.
 
 ## Adobe Experience Manager Sites as a Cloud Service {#sites}
 
