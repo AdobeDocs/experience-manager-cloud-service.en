@@ -3,8 +3,8 @@ title: Repository Browser
 seo-title: Repository Browser
 description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
+exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 ---
-
 # Repository Browser {#repository-browser}
 
 >[!NOTE]
