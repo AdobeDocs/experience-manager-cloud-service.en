@@ -1114,7 +1114,7 @@ You can use the following sample as an example of the format you use to create a
 
 ### WebVTT file with video chapter navigation {#webvtt-file-with-video-chapter-navigation}
 
-```xml
+```xml {.line-numbers}
 WEBVTT
 Chapter 1
 00:00.000 --> 01:04.364

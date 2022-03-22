@@ -1,6 +1,7 @@
 ---
 title: Using Best Practices Analyzer
 description: Using Best Practices Analyzer
+exl-id: e8498e17-f55a-4600-87d7-60584d947897
 ---
 # Using Best Practices Analyzer {#using-best-practices-analyzer}
 

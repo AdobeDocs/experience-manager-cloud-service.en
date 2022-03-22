@@ -1,8 +1,8 @@
 ---
 title: Using User Mapping Tool
 description: Using User Mapping Tool
+exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 ---
-
 # Using the User Mapping Tool {#using-user-mapping-tool}
 
 The User Mapping Tool uses an API that allows it to look up Adobe Identity Management System (IMS) users by email and return their IMS IDs. This API requires the user to create a Client ID for their organization, a Client Secret, and an Access or Bearer Token.  
@@ -111,4 +111,4 @@ Follow the steps below to resume the User Mapping process:
 
    Once the User Mapping process completes, you will view the **Status** as **FINISHED** for that specific configuration.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)   
+   ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)

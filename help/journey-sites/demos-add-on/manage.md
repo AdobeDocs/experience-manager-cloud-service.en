@@ -1,8 +1,8 @@
 ---
 title: Manage Your Demo Sites
 description: Learn about the tools available to help you manage your demo sites and how to remove them.
+exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 ---
-
 # Manage Your Demo Sites {#manage-demo-sites}
 
 Learn about the tools available to help you manage your demo sites and how to remove them.
