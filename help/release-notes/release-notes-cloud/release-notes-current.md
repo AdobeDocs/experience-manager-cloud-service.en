@@ -34,20 +34,6 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 * The **[Enable Front End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** button is available in the **Site** rail of the Sites console for sites that use the v2 of the Page Core Component. This button configures the site to load the themes that are deployed with the Front End Pipeline on top of the existing client libraries.
 
-<!-- Alexandru Sarchiz: Please do NOT delete or uncomment this. Most of the Foundation features will be released in an intermediary release with no mention in the release notes. Once the proper 2022.02/03 release rolls out, we will publish the release notes as well. Commenting this out temporarily so that it doesn't break validation, since some of the pages linked here will be moved out of the 2022.02-release branch.
-
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### What is New {#what-is-new-foundation}
-
-* For more efficient and effective troubleshooting of custom features in Cloud environments, we’ve released a new developer tool – [the Repository Browser](/help/implementing/developing/tools/repository-browser.md). It’s a lightweight, read-only, HTML browser that you can launch from the Developer Console. Get visibility into the content repository on the publisher, author, and preview tiers—and in all environments, including production, stage, and non-production. Browse the content structure, view properties, and preview and download binaries.
-
-  ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
-
-* The credentials used to authenticate server-to-server API calls (e.g., for GraphQL API requests) can now be refreshed before expiration in a self-serve way from the Developer Console. See the [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) for more info.
-
-* Version purge and audit log purge maintenance tasks, which had not previously been enabled, will be enabled for new environments. See the associated values in the Maintenance Task article. Purging for existing environments (any created before 2022.3.0) will be enabled in the next monthly release (2022.3.0) -->
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
@@ -68,16 +54,6 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 * Experience Manager Assets uses Adobe Sensei AI capabilities to now distinguish between colors in an image and apply those as tags automatically on ingestion. These tags enable enhanced Search experience, based on image color composition.
 
-## Content Transfer Tool {#ctt-release}
-
-### Release Date {#release-date-ctt}
-
-The Release Date for Content Transfer Tool v1.9.0 is February 28, 2022.
-
-### What's New {#what-is-new-ctt}
-
-* Check Size Guardrails - The Content Transfer Tool Check Size feature helps reduce failed content transfers.  With the Check Size feature, users can 1) determine whether they have sufficient disk space in the `crx-quickstart` subdirectory before extraction, and 2) estimate the migration set size and verify if it’s supported. If one or both these checks are violated, users will see warnings in the CTT UI. With this guardrail, you can avoid content transfer failures and proactively discuss migration options with Adobe Customer Care. Refer to [Determining migration set size and disk space](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) for more details.
-
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}
@@ -95,3 +71,64 @@ The Release Date for Content Transfer Tool v1.9.0 is February 28, 2022.
 * **Use custom XCI for generating a Document of Record**: You can now use a custom XCI file to set various properties of a Document of Record. It overrides the master XCI with the custom changes.
 
 * **Use invisible CAPTCHA in an adaptive form**: You can use the invisible CAPTCHA to show the CAPTCHA challenge only in the case of a suspicious activity. If no suspicious activity is found the CAPTCHA challenge is not displayed.
+
+<!-- Alexandru Sarchiz: Please do NOT delete or uncomment this. Most of the Foundation features will be released in an intermediary release with no mention in the release notes. Once the proper 2022.02/03 release rolls out, we will publish the release notes as well. Commenting this out temporarily so that it doesn't break validation, since some of the pages linked here will be moved out of the 2022.02-release branch.
+
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### What is New {#what-is-new-foundation}
+
+* For more efficient and effective troubleshooting of custom features in Cloud environments, we’ve released a new developer tool – [the Repository Browser](/help/implementing/developing/tools/repository-browser.md). It’s a lightweight, read-only, HTML browser that you can launch from the Developer Console. Get visibility into the content repository on the publisher, author, and preview tiers—and in all environments, including production, stage, and non-production. Browse the content structure, view properties, and preview and download binaries.
+
+  ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
+
+* The credentials used to authenticate server-to-server API calls (e.g., for GraphQL API requests) can now be refreshed before expiration in a self-serve way from the Developer Console. See the [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) for more info.
+
+* Version purge and audit log purge maintenance tasks, which had not previously been enabled, will be enabled for new environments. See the associated values in the Maintenance Task article. Purging for existing environments (any created before 2022.3.0) will be enabled in the next monthly release (2022.3.0) -->
+
+## Cloud Manager {#cloud-manager}
+
+### February Release Date {#release-date-cm-feb}
+
+The release date for Cloud Manager in AEM as a Cloud Service 2022.02.0 is 10 February 2022. The next release is planned for 10 March 2022.
+
+### What's New {#what-is-new-cm-feb}
+
+* New accelerated [Web Tier Config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) have been introduced to exclusively deploy HTTPD/dispatcher configuration.
+  * You must be on AEM version `2021.12.6151.20211217T120950Z` or newer and [opt in to the flexible mode of the dispatcher tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) to use this feature.
+  * This feature will be rolled out in a phased approach over the two weeks following the 2022.02.0 release.
+* The Cloud Manager landing page experience has been refreshed to deliver improved navigation, easy switching between grid/tile views, and pop-overs for quick program summary.
+* A new failing threshold (`< D`) has been added to the [reliability rating metric.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
+  * Customers with severe quality issues that impact system stability, primarily related to invalid indexes and workflow processes, will not be able to deploy until those issues are resolved.
+* The severity of the `BannedPath` [quality rule](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) has been changed from blocker to critical.
+* The pipeline wizard will inform the user when an AEM environment update may be needed before configuring a [Web Tier Config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) associated with it.
+
+### Bug Fixes {#bug-fixes-cm-feb}
+
+* Old git repository passwords are now always invalidated when a new password is generated.
+* Updating environment variables through the API no longer interferes with a pipeline execution in rare situations.
+
+### March Release Date {#release-date-cm-march}
+
+The release date for Cloud Manager release 2022.3.0 in AEM as a Cloud Service 10 March 2022. The next release is planned for 7 April 2022.
+
+### What's New {#what-is-new-cm-march}
+
+* Accessing AEM Environment log can be done using the Developer role.
+
+### Bug Fixes {#bug-fixes-cm-feb}
+
+* A subset of git repositories created manually had an incorrect name value which prevented the build artifact reuse feature from being effective. The names of those repositories have been changed and users will see the corrected name in the Cloud Manager API/UI.
+* Build artifacts from non-production pipelines were inappropriately reused on production full stack pipelines.
+ * When adding or editing a code quality pipeline, the options to handle metric failures is no longer displayed.
+* Some unexpected pipeline variable configurations could cause in the build step.
+
+## Content Transfer Tool {#ctt-release}
+
+### Release Date {#release-date-ctt}
+
+The Release Date for Content Transfer Tool v1.9.0 is February 28, 2022.
+
+### What's New {#what-is-new-ctt}
+
+* Check Size Guardrails - The Content Transfer Tool Check Size feature helps reduce failed content transfers.  With the Check Size feature, users can 1) determine whether they have sufficient disk space in the `crx-quickstart` subdirectory before extraction, and 2) estimate the migration set size and verify if it’s supported. If one or both these checks are violated, users will see warnings in the CTT UI. With this guardrail, you can avoid content transfer failures and proactively discuss migration options with Adobe Customer Care. Refer to [Determining migration set size and disk space](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) for more details.
