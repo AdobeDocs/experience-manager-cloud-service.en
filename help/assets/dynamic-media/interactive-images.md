@@ -337,7 +337,7 @@ If you are a standalone Experience Manager Assets customer, you can manually add
 
 Using the [demo website as an example](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html), notice that the picture of the three individuals is a static `IMG` tag:
 
-```xml
+```xml {.line-numbers}
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
@@ -385,7 +385,7 @@ In such an event handler, the front-end code does the following:
 
 The embed code returned by Experience Manager Assets has a ready-to-use event handler that is commented out, as seen in the following highlighted code snippet:
 
-```xml
+```xml {.line-numbers}
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({
             "containerId" : "s7interactiveimage_div",
             "params" : {
@@ -448,13 +448,13 @@ The last step to trigger the Quickview URL and activate the Quickview panel requ
 
 You can see how these steps are applied to the demo website to fully integrate a shoppable interactive image with the Quickview code. Earlier, the structure of the Quickview URL was identified as the following:
 
-```xml
+```xml {.line-numbers}
 /datafeed/$categoryId$-$SKU$.json
 ```
 
 To reconstruct this URL inside the `quickViewActivate` handler, you can use the `categoryId` and `SKU` fields. These fields are available in the `inData` object that is passed to the handler by the viewer's code:
 
-```xml
+```xml {.line-numbers}
 var sku=inData.sku;
 var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
@@ -462,13 +462,13 @@ var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 
 The demo website is triggering the Quickview dialog box using a simple `loadQuickView()` function call. This function takes only one argument, which is the Quickview data URL. As such, the last step to integrate the shoppable interactive image is to add the following line of code to the `quickViewActivate` handler:
 
-```xml
+```xml {.line-numbers}
 loadQuickView(quickViewUrl);
 ```
 
 The following is the complete source code:
 
-```xml
+```xml {.line-numbers}
  var s7interactiveimageviewer = new s7viewers.InteractiveImage({
   "containerId" : "s7interactiveimage_div",
   "params" : {
