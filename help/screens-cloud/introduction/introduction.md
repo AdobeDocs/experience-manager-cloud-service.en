@@ -1,5 +1,5 @@
 ---
-title: AEM Screens as a Cloud Service
+title: Introduction to AEM Screens as a Cloud Service
 description: This page serves as an introduction to AEM Screens as a Cloud Service.
 exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
 ---
