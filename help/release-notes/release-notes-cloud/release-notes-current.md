@@ -20,7 +20,7 @@ The following section outlines the general Release Notes for the current (latest
 ## Release Date {#release-date}
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.1.0) is February 3, 2022.
-The following release (2022.2.0) is on March 10, 2022.
+The following release (2022.3.0) is on March 31, 2022.
 
 ## Release Video {#release-video}
 
@@ -129,15 +129,17 @@ The Release Date for Content Transfer Tool v1.8.6 is February 03, 2022.
 
 ### Release Date {#release-date-bpa}
 
-The Release Date for Best Practices Analyzer v2.1.24 is February 01, 2022.
+The Release Date for Best Practices Analyzer v2.1.26 is March 16, 2022.
 
 ### What's New {#what-is-new-bpa}
 
-* Ability to detect and report on the number of assets with and without Smart Tags.
-* Ability to detect and report on the version of Core Component used.
-* Ability to detect and report on the type of source tier (Author or Publish) where BPA was executed.
+* Ability to detect unprocessed assets. If unprocessed assets are detected, these assets either need to be set to processed or need to be removed from the migration set during content transfer to avoid running into issues during content ingestion.
+* Ability to detect if content has more than 1000 vanity URLs. Using a high number of vanity URLs is not best practice since it puts a load on Dispatcher and Publish servers.
+* Ability to identify issues related to Oak index definitions and detect incompatibilities with AEM as a Cloud Service.
+* Ability to detect and report on usage of Externalizer configurations. In AEM as a Cloud Service Externalizer configurations are set by Cloud Manager, hence, existing Externalizer configurations need to be refactored to maintain compatibility.
 
 ### Bug Fixes {#bug-fixes-bpa}
 
-* BPA sizing logic was made faster and more efficient.
-* In some scenarios, BPA did not increment analyzed count when it was run. This has been fixed.
+* In some scenarios, BPA failed to run because of FormsSelectiveFeaturesAnalysis throwing an assertion error. This has been fixed.
+* BPA was reporting findings related to the WRK pattern as MAJOR instead of CRITICAL. This has been fixed.
+* BPA was incorrectly reporting findings related to OAK index definitions in ui.apps as CRITICAL. This has been fixed
