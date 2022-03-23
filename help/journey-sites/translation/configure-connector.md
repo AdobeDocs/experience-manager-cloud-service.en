@@ -1,5 +1,5 @@
 ---
-title: Configure the Translation Connector
+title: Configure the Translation Connector (AEM Sites)
 description: Learn how to connect AEM to a translation service.
 index: yes
 hide: no

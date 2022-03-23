@@ -13,7 +13,7 @@ Cloud Manager builds and tests your code using a specialized build environment.
 
 * The build environment is Linux-based, derived from Ubuntu 18.04.
 * Apache Maven 3.6.0 is installed.
-* The Java versions installed are Oracle JDK 8u202, Azul Zulu 8u292, Oracle JDK 11.0.2, and Azul Zulu 11.0.11.
+* The Java versions installed are Oracle JDK 8u202 and Oracle JDK 11.0.2.
 * By default, the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_202`  which contains Oracle JDK 8u202. See [Alternate Maven Execution JDK Version](#alternate-maven-jdk-version) section for more details.
 * There are some additional system packages installed which are necessary.
 
@@ -84,15 +84,10 @@ The currently available vendor/version combinations are:
 |`sun`|`1.8`|
 |`sun`|`1.11`|
 |`sun`|`11`|
-|`azul`|`1.8`|
-|`azul`|`1.11`|
-|`azul`|`8`|
 
-#### Alternate Maven Execution JDK Version {#alternate-maven-jdk-version}
-
-It is also possible to select Azul 8 or Azul 11 as the JDK for the entire Maven execution. Unlike the toolchains options, this changes the JDK used for all plugins unless the toolchains configuration is also  set in which case the toolchains configuration is still applied for toolchains-aware Maven plugins. As a result, checking and enforcing the Java version using the [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) will work.
-
-To do this, create a file named `.cloudmanager/java-version` in the git repository branch used by the pipeline. This file can have either the content 11 or 8. Any other value is ignored. If 11 is specified, Azul 11 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-11.0.11`. If 8 is specified, Azul 8 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-8.0.292`.
+>[!NOTE]
+>
+>Starting April 2022, Oracle JDK will be the default JDK for the development and operation of AEM applications. Cloud Manager's build process will automatically switch to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. Please refer to the April release notes once published for further details.
 
 ## Environment Variables {#environment-variables}
 
