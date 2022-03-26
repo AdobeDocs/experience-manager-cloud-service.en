@@ -4,7 +4,7 @@ description: Upgrade Experience Manager enhanced connector for Workfront
 ---
 # Upgrade enhanced connector for Workfront {#upgrade-enhanced-connector-for-workfront}
 
-Experience Manager Assets enables you to upgrade the enhanced connector for Workfront from a previous version to the latest version. 
+[!UICONTROL Experience Manager Assets] enables you to upgrade the enhanced connector for Workfront from a previous version to the latest version. 
 
 To upgrade the enhanced connector for Workfront to the latest version:
 
@@ -12,7 +12,7 @@ To upgrade the enhanced connector for Workfront to the latest version:
 
 1. [Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) and clone your AEM as a Cloud Service repository from Cloud Manager.
 
-1. Open the cloned AEM as a Cloud Service repository using an IDE of your choice.
+1. Open the cloned Experience Manager as a Cloud Service repository using an IDE of your choice.
 
 1. Place the enhanced connector zip file downloaded in Step 1 at the following path:
 
@@ -36,6 +36,32 @@ To upgrade the enhanced connector for Workfront to the latest version:
          <systemPath>${project.basedir}/ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
       </dependency>
    ```
+
+1. Add a dependency in `all module pom.xml`.
+
+      ```XML
+         <dependency>
+            <groupId>digital.hoodoo</groupId>
+            <artifactId>workfront-tools.ui.apps</artifactId>
+            <type>zip</type>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
+         </dependency>
+      ```
+
+1. Add `pom.xml` embeds. Add the [!DNL Workfront for Experience Manager enhanced connector] packages to `embeddeds` section of the `pom.xml` of all your subproject. Needs it embedded in the all module `pom.xml`.
+
+      ```XML
+      <!-- Workfront Tools -->
+      <embedded>
+         <groupId>digital.hoodoo</groupId>
+         <artifactId>workfront-tools.ui.apps</artifactId>
+         <type>zip</type>
+         <target>/apps/<path-to-project-install-folder>/install</target>
+      </embedded>
+      ```
+
+   The target of the embedded section is set to `/apps/<path-to-project-install-folder>/install`. This JCR path `/apps/<path-to-project-install-folder>` must be included in the filter rules in the `all/src/main/content/META-INF/vault/filter.xml` file. The filter rules for the repository are usually derived from the program name. Use the name of the folder as the target in the existing rules.
 
 1. [Remove the dependencies on Hoodoo distribution points](remove-external-dependencies.md), if any.
 
