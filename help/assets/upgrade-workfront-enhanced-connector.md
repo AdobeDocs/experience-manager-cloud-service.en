@@ -1,12 +1,12 @@
 ---
-title: Upgrade Experience Manager enhanced connector for Workfront
-description: Upgrade Experience Manager enhanced connector for Workfront
+title: Upgrade [!DNL Workfront for Experience Manager enhanced connector]
+description: Upgrade [!DNL Workfront for Experience Manager enhanced connector]
 ---
-# Upgrade enhanced connector for Workfront {#upgrade-enhanced-connector-for-workfront}
+# Upgrade [!DNL Workfront for Experience Manager enhanced connector] {#upgrade-enhanced-connector-for-workfront}
 
-[!UICONTROL Experience Manager Assets] enables you to upgrade the enhanced connector for Workfront from a previous version to the latest version. 
+[!UICONTROL Experience Manager Assets] enables you to upgrade the [!DNL Workfront for Experience Manager enhanced connector] from a previous version to the latest version. 
 
-To upgrade the enhanced connector for Workfront to the latest version:
+To upgrade the [!DNL Workfront for Experience Manager enhanced connector] to the latest version:
 
 1. Download the latest version of the enhanced connector from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 
@@ -48,6 +48,10 @@ To upgrade the enhanced connector for Workfront to the latest version:
             <systemPath>${project.basedir}/../ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
          </dependency>
       ```
+
+   >[!NOTE]
+   >
+   >Ensure that you add `<scope>` and `<systemPath>` to the dependencies in step 5 and step 6.
 
 1. Add `pom.xml` embeds. Add the [!DNL Workfront for Experience Manager enhanced connector] packages to `embeddeds` section of the `pom.xml` of all your subproject. Needs it embedded in the all module `pom.xml`.
 
