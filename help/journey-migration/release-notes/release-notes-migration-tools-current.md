@@ -1,41 +1,38 @@
 ---
-title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.2.0
-description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.2.0
+title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.3.0
+description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.3.0
 feature: Release Information
+exl-id: ab43605d-d46e-43de-b71f-fab610609550
 ---
+# Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.3.0 {#release-notes}
 
-# Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.2.0 {#release-notes}
-
-This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.2.0.
+This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.3.0.
 
 ## Best Practices Analyzer {#bpa-release}
 
 ### Release Date {#release-date-bpa}
 
-The Release Date for Best Practices Analyzer v2.1.24 is February 01, 2022.
+The Release Date for Best Practices Analyzer v2.1.26 is March 16, 2022.
 
 ### What's New {#what-is-new-bpa}
 
-* Ability to detect and report on the number of assets with and without Smart Tags.
-* Ability to detect and report on the version of Core Component used.
-* Ability to detect and report on the type of source tier (Author or Publish) where BPA was executed.
+* Ability to detect unprocessed assets. If unprocessed assets are detected, these assets either need to be set to processed or need to be removed from the migration set during content transfer to avoid running into issues during content ingestion.
+* Ability to detect if content has more than 1000 vanity URLs. Using a high number of vanity URLs is not best practice since it puts a load on Dispatcher and Publish servers.
+* Ability to identify issues related to Oak index definitions and detect incompatibilities with AEM as a Cloud Service.
+* Ability to detect and report on usage of Externalizer configurations. In AEM as a Cloud Service Externalizer configurations are set by Cloud Manager, hence, existing Externalizer configurations need to be refactored to maintain compatibility.
 
 ### Bug Fixes {#bug-fixes-bpa}
 
-* BPA sizing logic was made faster and more efficient.
-* In some scenarios, BPA did not increment analyzed count when it was run. This has been fixed.
+* In some scenarios, BPA failed to run because of FormsSelectiveFeaturesAnalysis throwing an assertion error. This has been fixed.
+* BPA was reporting findings related to the WRK pattern as MAJOR instead of CRITICAL. This has been fixed.
+* BPA was incorrectly reporting findings related to OAK index definitions in ui.apps as CRITICAL. This has been fixed.
 
 ## Content Transfer Tool {#ctt-release}
 
 ### Release Date {#release-date-ctt}
 
-The Release Date for Content Transfer Tool v1.8.6 is February 03, 2022.
+The Release Date for Content Transfer Tool v1.9.0 is February 28, 2022.
 
 ### What's New {#what-is-new-ctt}
 
-* Content Validation - Users have the ability to reliably determine if all of the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. To use this feature, you will need to enable it in the `System Console` of the source AEM environment. Refer to [Validating Content Transfers - Getting Started](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) for more details.
-
-### Bug Fixes {#bug-fixes-ctt}
-
-* Some users were not mapped because User Mapping was case sensitive. This has been fixed. User Mapping is no longer case sensitive.
-
+* Check Size Guardrails - The Content Transfer Tool Check Size feature helps reduce failed content transfers.  With the Check Size feature, users can 1) determine whether they have sufficient disk space in the `crx-quickstart` subdirectory before extraction, and 2) estimate the migration set size and verify if it’s supported. If one or both these checks are violated, users will see warnings in the CTT UI. With this guardrail, you can avoid content transfer failures and proactively discuss migration options with Adobe Customer Care. Refer to [Determining migration set size and disk space](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) for more details.

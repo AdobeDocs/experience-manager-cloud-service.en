@@ -1,8 +1,8 @@
 ---
 title: How to create a Forms Portal on an Experience Manager Sites page
 description: Learn how to create a Forms Portal and use out-of-the-box core components on an AEM Sites page.
+exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 ---
-
 # List Adaptive Forms on a Portal {#publish-forms-on-portal}
 
 In a typical forms-centric portal deployment scenario, forms development and portal development are two disjoint activities. While Form Designers design and store forms in a repository, Web Developers create a web application to list forms and handle submission of forms. Forms are copied over to the web tier as there is no communication between the forms repository and the web application.

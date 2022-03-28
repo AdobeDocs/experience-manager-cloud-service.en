@@ -1,8 +1,8 @@
 ---
 title: Configuring Advanced Networking for AEM as a Cloud Service
 description: Learn how to configure advanced networking features like VPN or a flexible or dedicated egress IP address for AEM as a Cloud Service
+exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 ---
-
 # Configuring Advanced Networking for AEM as a Cloud Service {#configuring-advanced-networking}
 
 This article aims to introduce you to the different advanced networking features in AEM as a Cloud Service, including self-serve provisioning of VPN, non-standard ports, and dedicated egress IP addresses.
@@ -532,4 +532,4 @@ Header always set Cache-Control private
 
 ## Transitioning Between Advanced Networking Types {#transitioning-between-advanced-networking-types}
 
-Since the `kind` parameter cannot be modified, please contact customer support for assistance, describing what has already been created and the reason for the change. 
+Since the `kind` parameter cannot be modified, please contact customer support for assistance, describing what has already been created and the reason for the change.
