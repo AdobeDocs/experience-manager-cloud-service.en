@@ -72,8 +72,6 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 * **Use invisible CAPTCHA in an adaptive form**: You can use the invisible CAPTCHA to show the CAPTCHA challenge only in the case of a suspicious activity. If no suspicious activity is found the CAPTCHA challenge is not displayed.
 
-<!-- Alexandru Sarchiz: Please do NOT delete or uncomment this. Most of the Foundation features will be released in an intermediary release with no mention in the release notes. Once the proper 2022.02/03 release rolls out, we will publish the release notes as well. Commenting this out temporarily so that it doesn't break validation, since some of the pages linked here will be moved out of the 2022.02-release branch.
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### What is New {#what-is-new-foundation}
@@ -84,7 +82,7 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 * The credentials used to authenticate server-to-server API calls (e.g., for GraphQL API requests) can now be refreshed before expiration in a self-serve way from the Developer Console. See the [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) for more info.
 
-* Version purge and audit log purge maintenance tasks, which had not previously been enabled, will be enabled for new environments. See the associated values in the Maintenance Task article. Purging for existing environments (any created before 2022.3.0) will be enabled in the next monthly release (2022.3.0) -->
+* Version purge and audit log purge maintenance tasks, which had not previously been enabled, will be enabled for new environments. See the associated values in the Maintenance Task article. Purging for existing environments (any created before 2022.3.0) will be enabled in the next monthly release (2022.3.0).
 
 ## CIF Add-on {#cloud-services-cif}
 
