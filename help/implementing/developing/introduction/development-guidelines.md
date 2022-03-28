@@ -49,15 +49,19 @@ Similarly, with everything that is asynchronously happening, like acting on obse
 
 ## Outgoing HTTP Connections {#outgoing-http-connections}
 
-It is strongly recommended that any outgoing HTTP connections set reasonable connect and read timeouts. For code that does not apply these timeouts, AEM instances running on AEM as a Cloud Service will enforce a global timeouts. These timeout values are 10 seconds for connect calls and 60 seconds for read calls for connections used by the following popular Java libraries:
+It is strongly recommended that any outgoing HTTP connections set reasonable connect and read timeouts; suggested values are 1 second for the connection timeout and 5 seconds for read timeout. The exact numbers must be determined based on the performance of the backend system handling these requests.
+
+For code that does not apply these timeouts, AEM instances running on AEM as a Cloud Service will enforce a global timeouts. These timeout values are 10 seconds for connect calls and 60 seconds for read calls for connections.
 
 Adobe recommends the use of the provided [Apache HttpComponents Client 4.x library](https://hc.apache.org/httpcomponents-client-ga/) for making HTTP connections.
 
 Alternatives that are known to work, but may require providing the dependency yourself are:
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) and/or [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (Provided by AEM)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) and/or [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (Provided by AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (not recommended as it is outdated and replaced by version 4.x)
 * [OK Http](https://square.github.io/okhttp/) (Not provided by AEM)
+
+Next to providing timeouts also a proper handling of such timeouts as well as unexpected HTTP status codes should be implemented.
 
 ## No Classic UI Customizations {#no-classic-ui-customizations}
 
@@ -156,6 +160,8 @@ Note that on local development (using the SDK), `/apps` and `/libs` can be writt
 
 Customers can access CRXDE lite on the author tier's development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
 
+Instead, the Repository Browser can be launched from the Developer Console, providing a read-only view into the repository for all environments on author, publish, and preview tiers. Read more about the Repository Browser [here](/help/implementing/developing/tools/repository-browser.md).
+
 A set of tools for debugging AEM as a Cloud Service developer environments are available in the Developer Console for dev, stage, and production environments. The url can be determined by adjusting the Author or Publish service urls as follows:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
@@ -182,11 +188,7 @@ Also useful for debugging, the Developer console has a link to the Explain Query
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-For Production programs, access to the Developer Console is defined by the "Cloud Manager - Developer Role" in the Admin Console, while for sandbox programs, the Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For all programs, "Cloud Manager - Developer Role" is needed for status dumps and users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services in order to view status dump data from both services. For more information about setting up user permissions, see [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-
-### AEM Staging and Production Service {#aem-staging-and-production-service}
-
-Customers will not have access to developer tooling for staging and production environments.
+For Production programs, access to the Developer Console is defined by the "Cloud Manager - Developer Role" in the Admin Console, while for sandbox programs, the Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For all programs, "Cloud Manager - Developer Role" is needed for status dumps and the repository browser and users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services in order to view data from both services. For more information about setting up user permissions, see [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Performance Monitoring {#performance-monitoring}
 
@@ -204,7 +206,7 @@ The sections below describe how to request, configure, and send email.
 
 By default, ports used to send email are disabled. To activate a port, configure [advanced networking](/help/security/configuring-advanced-networking.md), making sure to set for each needed environment the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint's port forwarding rules, which maps the intended port (e.g., 465 or 587) to a proxy port.
 
-It is recommended to configure advanced networking with a `kind` parameter set to `flexiblePortEgress` since Adobe can optimize performance of flexible port egress traffic. If a unique egress IP address is necessary, choose a `kind` parameter of `dedicatedEgressIp`. If you have already configured VPN for other reasons, you can use the unique IP address provided by that advanced networking variation as well. 
+It is recommended to configure advanced networking with a `kind` parameter set to `flexiblePortEgress` since Adobe can optimize performance of flexible port egress traffic. If a unique egress IP address is necessary, choose a `kind` parameter of `dedicatedEgressIp`. If you have already configured VPN for other reasons, you can use the unique IP address provided by that advanced networking variation as well.
 
 You must send email through a mail server rather than directly to email clients. Otherwise, the emails may be blocked.
 
