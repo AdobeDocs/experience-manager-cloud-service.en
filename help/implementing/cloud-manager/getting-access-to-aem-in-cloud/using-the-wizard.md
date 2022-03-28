@@ -1,28 +1,43 @@
 ---
-title: Using the Wizard
-description: Using the Wizard - Cloud Services
+title: Project Creation Wizard
+description: Learn about the project creation wizard to help you quickly set up your project after creating your production program.
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 ---
-# Using the Wizard {#using-wizard-to-create-an-aem-application-project}
+# Project Creation Wizard {#project-creation-wizard}
 
-To help get new customers started, Cloud Manger is now able to create a minimal AEM project as a starting point. This process is based on the [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+After you create your production program, Cloud Manger offers a wizard to create a minimal AEM project based on the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) to get your started quickly.
+
+Follow these steps to create an AEM application project in Cloud Manager using the wizard.
+
+1. Create a production program by following the steps in the document [Creating Production Programs](creating-production-programs.md)
+
+1. Once program setup is complete, access the **Overview** screen of your program and see the **Create Branch &amp; Project** call-to-action card at the top.
+
+   ![Call-to-action care for the wizard](assets/create-wizard1.png)
+
+1. Click **Create** to start the wizard and confirm your project's **Title** and **New Branch Name** in the **Create a  Branch and Project** window.
+
+   ![Create a branch and project](assets/create-wizard2.png)
+
+1. Optionally, click on the divider to reveal the additional parameters of your project. The default values are provided by the AEM Project Archetype and generally do not need to be changed.
+
+   ![Additional project parameters](assets/create-wizard5.png)
+
+1. Click **Create** to start the project creation process.
 
 
-Follow the steps below to create an AEM application project in Cloud Manager using the wizard:
+A **Project Creation in Progress** card now replaces the **Create Branch &amp; Project** call-to-action card as the top of the **Program Overview** screen.
 
-1. Once you log in to Cloud Manager and the basic program setup is complete, a special call to action card will be shown on the **Overview** screen, if the repository is empty.
+![Project creation in progress](assets/create-wizard3.png)
 
-   ![](assets/create-wizard1.png)
+Once program creation is complete, an **Add Environment** card replaces the **Project Creation in Progress** card at the top of the **Program Overview** screen. 
 
-1. Click **Create** to navigate to the **Create a  Branch and Project** screen.
+![Add Environment](assets/create-wizard4.png)
 
-   ![](assets/create-wizard2.png)
+You now have an AEM project based on the AEM archetype added to your git repository to serve as a basis for development for your own project. Next you can create your environments where you can deploy the project code.
 
-1. The **Project Creation in Progress** tile displays on the *Program Overview* screen.
+Please refer to the document [Managing your Environments](/help/implementing/cloud-manager/manage-environments.md) to learn how to add or manage environments.
 
-   ![](assets/create-wizard3.png)
-
-1. Once the program creation is complete, the **Add Environment** tile appears on the *Program Overview* page. 
-   ![](assets/create-wizard4.png)
-
-   Refer to [Managing your Environments](/help/implementing/cloud-manager/manage-environments.md) to learn how to add or manage environments.
+>[!NOTE]
+>
+>The wizard is only available for production programs. Because [sandbox programs](introduction-sandbox-programs.md#auto-creation) include automatic project creation, the wizard is not necessary.
