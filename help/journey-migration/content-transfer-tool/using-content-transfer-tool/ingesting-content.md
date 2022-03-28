@@ -1,8 +1,8 @@
 ---
 title: Ingesting Content into Target
 description: Ingesting Content into Target
+exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 ---
-
 # Ingesting Content into Target {#ingesting-content}
 
 ## Ingestion Process in Content Transfer Tool {#ingestion-process}
@@ -15,7 +15,7 @@ description: Ingesting Content into Target
 
 Follow the steps below to ingest your migration set from the Content Transfer Tool:
    >[!NOTE]
-   >If Amazon S3 or Azure Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) for more details. 
+   >You can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) for more details. 
 
 1. Select a migration set from **Content Transfer** page and click **Ingest** to start ingestion. 
 
