@@ -19,7 +19,7 @@ The release date for the latest version of enhanced connector for Workfront is M
 
 * The enhanced connector for Workfront now supports AEM 6.4.
 
-* Added support for proxy enviroments to the enhanced connector for Workfront.
+* Added support for proxy environments to the enhanced connector for Workfront.
 
 * Several bug fixes based on customer feedback.
 
@@ -27,4 +27,4 @@ The release date for the latest version of enhanced connector for Workfront is M
 
 * While configuring project linked folders with AEM 6.4, Experience Manager do not save the values for `sub-folders` and `Create linked folder in projects with portfolio` fields. The value for the `sub-folders` field updates to `undefined` and the value for the `Create linked folder in projects with portfolio` field updates to `Default Portfolio` automatically after saving the configuration.
 
-* known issue 
+* When you are using the legacy Workfront application, the [!UICONTROL Send to] option available in the [!UICONTROL More] dropdown list does not allow you to select the target destination within Experience Manager. The [!UICONTROL Send to] option works correctly using the [!UICONTROL Document Actions] dropdown list. The [!UICONTROL Send to] option works correctly for [!UICONTROL More] dropdown list as well as the [!UICONTROL Document Actions] dropdown list available in the new Workfront application.
