@@ -42,7 +42,7 @@ To update the [!DNL Workfront for Experience Manager enhanced connector] to the 
       </dependency>
    ```
 
-1. Add a dependency in `all module pom.xml`.
+1. Update the dependency in `all module pom.xml`.
 
       ```XML
          <dependency>
@@ -58,7 +58,7 @@ To update the [!DNL Workfront for Experience Manager enhanced connector] to the 
    >
    >Ensure that you add `<scope>` and `<systemPath>` to the dependencies in step 5 and step 6.
 
-1. Add `pom.xml` embeds. Add the [!DNL Workfront for Experience Manager enhanced connector] packages to `embeddeds` section of the `pom.xml` of all your subproject. Incorporate the updates in all module `pom.xml`.
+1. Update `pom.xml` embeds. Add the [!DNL Workfront for Experience Manager enhanced connector] packages to `embeddeds` section of the `pom.xml` of all your subproject. Incorporate the updates in all module `pom.xml`.
 
       ```XML
       <!-- Workfront Tools -->
