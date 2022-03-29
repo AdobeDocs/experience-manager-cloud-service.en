@@ -13,15 +13,17 @@ The release date for the latest version of [!DNL Workfront for Experience Manage
 
 ## Release highlights {#release-highlights}
 
-* You can now create linked folders between Adobe Workfront and AEM Assets as a Cloud Service.
+[!DNL Workfront for Experience Manager enhanced connector] now includes the following updates:
 
-* Updates to the [!DNL Workfront for Experience Manager enhanced connector] to include the support for event subscription pagination.
+* You can now create linked folders between Adobe Workfront and AEM Assets as a Cloud Service even if there are multiple project linked folder configurations.
 
-* The [!DNL Workfront for Experience Manager enhanced connector] supports AEM 6.4.
+* Added support for event subscription pagination.
 
-* Added support for proxy environments to the [!DNL Workfront for Experience Manager enhanced connector].
+* Added support for AEM 6.4.x.
 
-* Several bug fixes based on customer feedback.
+* Added support for proxy environments.
+
+* Several bug fixes based on partner and customer feedback.
 
 ## Known Issues {#known-issues}
 
