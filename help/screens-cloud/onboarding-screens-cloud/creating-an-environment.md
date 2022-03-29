@@ -1,6 +1,6 @@
 ---
-title: Creating a Branch
-description: This page describes creating a branch in Cloud Manager for Screens as a Cloud Service.
+title: Creating an Environment
+description: This page describes creating an environment in Cloud Manager for Screens as a Cloud Service.
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 ---
 # Creating an Environment in Cloud Manager {#create-environment-screens-cloud}
