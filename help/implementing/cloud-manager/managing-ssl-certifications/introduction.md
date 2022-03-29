@@ -4,7 +4,7 @@ description: Learn how Cloud Manager provides you with self-service tools to ins
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 ---
 
-# Introduction {#introduction}
+# Introduction to Managing SSL Certificates{#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -15,13 +15,13 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 
 Cloud Manager provides you with self-service tools to install and manage SSL certificates in order to secure your site for your users. Cloud Manager uses a platform TLS service to manage SSL certificates and private keys owned by customers and obtained from third-party certification authorities such as Let’s Encrypt.
 
-## Introduction to Certificates {#introduction}
+## Introduction to Certificates {#certificates}
 
 Businesses use SSL certificates to secure their websites and allow their customers to place trust in them. In order to use the SSL protocol, a web server requires the use of an SSL certificate. 
 
 When an entity requests a certificate from a Certificate Authority, the CA completes a verification process. This can range from verifying domain name control to collecting company registration documents and subscriber agreements. Once an entity's information has been verified, the CA will sign their public key using the CA's private key. Because all major certificate authorities have root certificates in web browsers, the entity's certificate will be linked through a *chain of trust* and the web browser will recognize it as a trusted certificate.
 
->[IMPORTANT]
+>[!IMPORTANT]
 >
 >Cloud Manager does not provide SSL certificates or private keys. These must be obtained from Certification Authorities (CAs).
 
