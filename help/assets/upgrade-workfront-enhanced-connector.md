@@ -1,12 +1,17 @@
 ---
-title: Upgrade [!DNL Workfront for Experience Manager enhanced connector]
-description: Upgrade [!DNL Workfront for Experience Manager enhanced connector]
+title: Update [!DNL Workfront for Experience Manager enhanced connector]
+description: Update [!DNL Workfront for Experience Manager enhanced connector]
 ---
-# Upgrade [!DNL Workfront for Experience Manager enhanced connector] {#upgrade-enhanced-connector-for-workfront}
+# Update [!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
 
-[!UICONTROL Experience Manager Assets] enables you to upgrade the [!DNL Workfront for Experience Manager enhanced connector] from a previous version to the latest version. 
+[!UICONTROL Experience Manager Assets as a Cloud Service] enables you to update the [!DNL Workfront for Experience Manager enhanced connector] from a previous version to the latest version.
 
-To upgrade the [!DNL Workfront for Experience Manager enhanced connector] to the latest version:
+>[!TIP]
+>
+>Are you searching for [!DNL Workfront for Experience Manager enhanced connector] update documentation for AEM 6.5? Click [here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
+
+
+To update the [!DNL Workfront for Experience Manager enhanced connector] to the latest version:
 
 1. Download the latest version of the enhanced connector from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 
@@ -53,7 +58,7 @@ To upgrade the [!DNL Workfront for Experience Manager enhanced connector] to the
    >
    >Ensure that you add `<scope>` and `<systemPath>` to the dependencies in step 5 and step 6.
 
-1. Add `pom.xml` embeds. Add the [!DNL Workfront for Experience Manager enhanced connector] packages to `embeddeds` section of the `pom.xml` of all your subproject. Needs it embedded in the all module `pom.xml`.
+1. Add `pom.xml` embeds. Add the [!DNL Workfront for Experience Manager enhanced connector] packages to `embeddeds` section of the `pom.xml` of all your subproject. Incorporate the updates in all module `pom.xml`.
 
       ```XML
       <!-- Workfront Tools -->
