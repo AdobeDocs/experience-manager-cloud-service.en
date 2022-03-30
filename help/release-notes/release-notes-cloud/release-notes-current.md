@@ -64,6 +64,16 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 * **Use invisible CAPTCHA in an adaptive form**: You can use the invisible CAPTCHA to show the CAPTCHA challenge only in the case of a suspicious activity. If no suspicious activity is found the CAPTCHA challenge is not displayed.
 
+## CIF Add-on {#cloud-services-cif}
+
+### What is New {#what-is-new-cif}
+
+* Beta: AEM CIF Search Core Component support Commerce LiveSearch
+* Improved SEO for multi-store scenarios: URL formats for PDP / PLP can now be configured on a store level via the CIF Cloud Config properties
+* Product picker supports staged products via new filter option in the UI.  This enables content practitioners to prepare product content management for upcoming product launches
+* Simplified CIF configuration management and error handling by using CIF Cloud Config name instead of config proxy url
+* Manual category selection for Product list and Carousel components. This allows content practitioners to use these components on content pages, outside of the catalog experience
+
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### What is New {#what-is-new-foundation}
@@ -77,16 +87,6 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 * Version purge and audit log purge maintenance tasks, which had not previously been enabled, will be enabled for new environments. See the associated values in the [Maintenance Task](/help/operations/maintenance.md) article.
 
 * AEM as a Cloud Service SDK Dispatcher Tools now support Mac computers with the  M1 chip
-
-## CIF Add-on {#cloud-services-cif}
-
-### What is New {#what-is-new-cif}
-
-* Beta: AEM CIF Search Core Component support Commerce LiveSearch
-* Improved SEO for multi-store scenarios: URL formats for PDP / PLP can now be configured on a store level via the CIF Cloud Config properties
-* Product picker supports staged products via new filter option in the UI.  This enables content practitioners to prepare product content management for upcoming product launches
-* Simplified CIF configuration management and error handling by using CIF Cloud Config name instead of config proxy url
-* Manual category selection for Product list and Carousel components. This allows content practitioners to use these components on content pages, outside of the catalog experience
 
 ## Cloud Manager {#cloud-manager}
 
