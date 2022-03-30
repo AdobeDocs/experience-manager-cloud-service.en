@@ -90,7 +90,7 @@ Following are the steps to add tags to an asset:
 1. In the **[!UICONTROL Basic]** tab, click on the folder icon in **[!UICONTROL Tags]** metadata. A popup window opens. 
 1. Search or select the appropriate tags from the existing tags in `cq-tags`. You can assign multiple tags to the asset. 
 
-   You can sort the tags structure in ascending or decending order based on the **[!UICONTROL Name]** (aphabetical order), **[!UICONTROL Created]** date, or **[!UICONTROL Modified]** date. In the following Illustration, the tag structure is sorted alphabetically based on the **[!UICONTROL Name]**. 
+   You can sort the tags structure in ascending or descending order based on the **[!UICONTROL Name]** (alphabetical order), **[!UICONTROL Created]** date, or **[!UICONTROL Modified]** date. In the following Illustration, the tag structure is sorted alphabetically based on the **[!UICONTROL Name]**. 
 
    ![add-tags](assets/add-tags-to-asset.png) 
 
