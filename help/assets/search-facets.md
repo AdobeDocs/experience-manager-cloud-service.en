@@ -139,7 +139,7 @@ The `Tags` predicate allows you to perform tag-based searches for assets. By def
 1. Specify tags based on which you want to search assets or select from the list of suggestions.
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
 
-You can sort the tags structure in ascending or decending order based on the **[!UICONTROL Name]** (aphabetical order), **[!UICONTROL Created]** date, or **[!UICONTROL Modified]** date. In the following Illustration, the tag structure is sorted alphabetically based on the **[!UICONTROL Name]**. 
+You can sort the tags structure in ascending or descending order based on the **[!UICONTROL Name]** (alphabetical order), **[!UICONTROL Created]** date, or **[!UICONTROL Modified]** date. In the following Illustration, the tag structure is sorted alphabetically based on the **[!UICONTROL Name]**. 
 
    ![add-tags](assets/add-tags-to-asset.png)
 
