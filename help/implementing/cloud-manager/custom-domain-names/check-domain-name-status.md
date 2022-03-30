@@ -40,7 +40,7 @@ Cloud Manager will verify domain ownership via the TXT value and displays one of
 
 * **Deletion Failed** - The deletion of custom domain name failed and must be retried.
 
-  * Please refer to the document [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-name.md) to learn more.
+  * Please refer to the document [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more.
 
 Cloud Manager will automatically trigger a TXT verification when you select **Save** on the verification step of the **Add Custom Domain** wizard. For subsequent verifications, you must actively select the verify again icon next to the status.
 
