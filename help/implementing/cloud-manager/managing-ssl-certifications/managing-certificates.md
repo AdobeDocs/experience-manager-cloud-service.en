@@ -51,7 +51,7 @@ An SSL certificate can be replaced by following the same steps as described in t
 
 Removing certificates from Cloud Manager is a permanent action that can not be undone. As a best practice, Adobe recommends to save SSL files locally before deleting them in Cloud Manager.
 
-Cloud Manager will not allow you to delete an SSL certificate that has one or more domains associated with it. All associated domains must be deleted before deleting the SSL certificate. Please refer to the document [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-name.md) to learn more.
+Cloud Manager will not allow you to delete an SSL certificate that has one or more domains associated with it. All associated domains must be deleted before deleting the SSL certificate. Please refer to the document [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more.
 
 Follow these steps to delete an SSL certificate.
 
