@@ -1,8 +1,8 @@
 ---
 title: Managing Custom Domain Names
 description: Learn how to use Cloud Manager to view, update, replace, and delete custom domain names.
+exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 ---
-
 # Managing Custom Domain Names {#managing-custom-domain-names}
 
 Cloud Manager allows you to to view, update, replace, and delete custom domain names.
