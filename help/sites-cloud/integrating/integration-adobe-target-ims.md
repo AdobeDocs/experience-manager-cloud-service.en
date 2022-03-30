@@ -23,7 +23,7 @@ Before starting this procedure:
   * Adobe Target and 
   * Adobe IMS (Identity Management System)
 
-* Your organization's System Admininstrator should use the Admin Console to add the required developers in your organization to the relevant product profiles. 
+* Your organization's System Administrator should use the Admin Console to add the required developers in your organization to the relevant product profiles. 
 
   * This provides the specific developers with permissions to enable integrations using the Adobe Developer Console. 
   * For further details see [Manage Developers](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
@@ -78,7 +78,7 @@ Open the Adobe Developer Console to create a Project with Adobe Target that AEM 
 
    >[!NOTE]
    >
-   >If you are subscribed to Adobe Target, but do not see it listed then you should check the [Prerequistes](#prerequisites).
+   >If you are subscribed to Adobe Target, but do not see it listed then you should check the [Prerequisites](#prerequisites).
 
    ![](assets/integration-target-ims-12.png)
 
