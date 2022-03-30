@@ -70,7 +70,7 @@ To filter the folder content that you want to publish, click **[!UICONTROL Inclu
 * `Include folder contents`
 
   * Enabled: All the assets of the selected folder, subfolders (including all the assets of the subfolders), and references are published.
-  * Disabled: Only the selected folder (empty) and references are publishd. The assets of the selected folder are not published.
+  * Disabled: Only the selected folder (empty) and references are published. The assets of the selected folder are not published.
 
 * `Include folder contents` and `Include only immediate folder contents`
 
