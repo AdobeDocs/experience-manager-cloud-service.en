@@ -42,6 +42,8 @@ Cloud Manager will verify domain ownership via the TXT value and displays one of
 
   * Please refer to the document [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) to learn more.
 
+Cloud Manager will automatically trigger a TXT verification when you select **Save** on the verification step of the **Add Custom Domain** wizard. For subsequent verifications, you must actively select the verify again icon next to the status.
+
 ## Pre-existing CDN Configurations for Custom Domain Names {#pre-existing-cdn}
 
 If you have a pre-existing CDN configuration for your custom domain names, there will be an informative message on the the **IP Allow List** and **Environment** pages, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
