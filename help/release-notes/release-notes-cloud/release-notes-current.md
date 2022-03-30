@@ -46,6 +46,10 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 * The [Manage Publication](/help/assets/manage-publication.md) feature is enhanced with an improved user interface. The users can publish or unpublish content to and from the selected destination, [Add Content](/help/assets/manage-publication.md#add-content) to the publishing list from across the DAM repository, [Include Folder Settings](/help/assets/manage-publication.md#include-folder-settings) to publish content of the selected folders and apply filters, and [schedule publishing](/help/assets/manage-publication.md#publish-assets-later) to a later date or time.
 
+### New features available in [!DNL Assets] prerelease channel {#prerelease-features-assets}
+
+* You can [sort tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) while creating smart tags as well as when applying search filters using the tags predicate.
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}
