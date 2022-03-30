@@ -86,7 +86,7 @@ Open the Adobe Developer Console to create a Project with Adobe Analytics that A
 
    >[!NOTE]
    >
-   >If you are subscribed to Adobe Analytics, but do not see it listed then you should check the [Prerequistes](#prerequisites).
+   >If you are subscribed to Adobe Analytics, but do not see it listed then you should check the [Prerequisites](#prerequisites).
 
    ![Add an API](assets/integration-analytics-ims-12.png)
 
