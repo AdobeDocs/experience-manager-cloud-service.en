@@ -673,11 +673,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
     + Managing SSL Certificates {#manage-ssl-certificates}
       + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-      + [Getting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
       + [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-      + [Viewing &  Updating & Replacing an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
-      + [Checking Status of an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
-      + [Deleting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+      + [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
     + Managing Custom Domain Names {#custom-domain-names}
       + [Introduction](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [Getting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
