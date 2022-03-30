@@ -117,7 +117,7 @@ To create and train a model for your business-specific tags, follow these steps:
 
    >[!NOTE]
    >
-   >You can sort the tags structure in ascending or decending order based on the **[!UICONTROL Name]** (aphabetical order), **[!UICONTROL Created]** date, or **[!UICONTROL Modified]** date.
+   >You can sort the tags structure in ascending or descending order based on the **[!UICONTROL Name]** (alphabetical order), **[!UICONTROL Created]** date, or **[!UICONTROL Modified]** date.
 
 1. In the **[!UICONTROL Select Assets]** dialog, click **[!UICONTROL Add Assets]** against each tag. Search in the DAM repository or browse the repository to select at least 10 and at most 50 images. Select assets and not the folder. Once you've selected the images, click **[!UICONTROL Select]**.
 
