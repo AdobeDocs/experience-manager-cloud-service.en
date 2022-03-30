@@ -209,9 +209,9 @@ The following actions can be performed on the publish service for your environme
 
 * [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-* [Viewing and Updating a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+* [Viewing and Updating a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-name.md)
 
-* [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+* [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-name.md)
 
 * [Checking Status of Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) or an [SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
