@@ -54,10 +54,3 @@ Adding a custom domain name requires interaction between the DNS service and Clo
 |5|Check DNS record status|Customer|[Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)|
 |5a|If DNS record status fails with `DNS status not detected`|Customer|[Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)|
 |5b|If DNS record status fails with `DNS resolves incorrectly`|Customer|[Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)|
-
-## Using Custom Domain Names in Cloud Manager {#using}
-
-Using the Cloud Manager UI Domain Settings page, or the Environment Details page, a user with permissions can perform several tasks to manage custom domain names for your environments, including:
-
-* [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-* [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-name.md) that allows a user to view details or to replace a certificate that is about to expire and how to delete custom domain names
