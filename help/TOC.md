@@ -26,6 +26,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Release Information](/help/release-notes/home.md)
   + Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
+    + 2022 {#2022}
+      + [Release Notes for 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
     + 2021 {#2021}
       + [Release Notes for 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md) 
       + [Release Notes for 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
@@ -98,7 +100,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/journey-migration/getting-started-partners.md)
   + Release Notes for Migration Tools {#release-notes-migration-tools}
     + [Current Release Notes (2022.3.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-    + [Release Notea for 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
+    + [Release Notes for 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
     + [Release Notes for 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
     + 2021 {#2021}
       + [Release Notes for 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
@@ -257,7 +259,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Integrating with AEM as a Cloud Service {#integrations}
     + [Integrating with Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
     + [Integrating with Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+    + [IMS Configuration for use when Integrating with Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
     + [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+    + [IMS Configuration for use when Integrating with Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + Assets {#assets}
   + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
@@ -295,7 +299,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Create and share private folders](/help/assets/private-folder.md)
     + [Digital Rights Management for assets](/help/assets/drm.md)
     + [Watermark assets](/help/assets/watermark-assets.md)
-    + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
+    + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)    
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
@@ -670,11 +674,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
     + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
-    + Managing SSL Certificates {#manage-ssl-certificates}
+    + SSL Certificates {#manage-ssl-certificates}
       + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
       + [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
       + [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-    + Managing Custom Domain Names {#custom-domain-names}
+    + Custom Domain Names {#custom-domain-names}
       + [Introduction](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
       + [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -682,14 +686,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
       + [Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
       + [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-    + Managing IP Allow Lists {#ip-allow-lists}
+    + IP Allow Lists {#ip-allow-lists}
       + [Introduction](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Adding an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-      + [Viewing and Updating an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-      + [Applying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-      + [UnApplying an IP Allow-List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-      + [Deleting an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
-      + [Checking an IP Allow List Status](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+      + [Applying and Un-Applying IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
     + [Cloud Manager FAQs](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
