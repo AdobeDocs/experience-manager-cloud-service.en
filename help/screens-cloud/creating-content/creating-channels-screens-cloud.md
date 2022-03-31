@@ -91,16 +91,16 @@ This capability allows you to define a default activation schedule for a channel
 1. Navigate to the details page for the channel you want to configure.
 1. Locate the **Default assignment details** tile on the page.
 
-   ![image](/help/screens-cloud/assets/display/assignment1.png)
+   ![image](/help/screens-cloud/assets/display/Assignment1.png)
 
 1. Click **Set default details**.
 1. Configure the default assignment details, including priority, start & end dates, as well as recurrence patterns for the channel, and click **Assign**.
 
-   ![image](/help/screens-cloud/assets/display/assignments2.png)
+   ![image](/help/screens-cloud/assets/display/Assignments2.png)
 
 1. Notice the details of the assignment are shown in the **Default assignment details** tile:
 
-   ![image](/help/screens-cloud/assets/display/assignments3.png)
+   ![image](/help/screens-cloud/assets/display/Assignments3.png)
 
 This tile displays the following information:
 * Default priority of the channel in the display.
