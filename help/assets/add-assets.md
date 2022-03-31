@@ -108,32 +108,14 @@ You can upload an asset with the same path (same name and same location) as that
 
 To retain the duplicate asset in [!DNL Assets], click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, click **[!UICONTROL Delete]**.
 
-<!-- 
 ### File name handling and forbidden characters {#filename-handling}
 
-[!DNL Experience Manager Assets] tries to prevent you from uploading assets with the forbidden characters in their filenames. If you try to upload an asset with file name containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
+[!DNL Experience Manager Assets] prevents you from uploading assets with the forbidden characters in their filenames. If you try to upload an asset with file name containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
 
 To suit specific file naming conventions for your organization, the [!UICONTROL Upload Assets] dialog lets you specify long names for the files that you upload. The following (space-separated list of) characters are not supported:
 
-* invalid characters for asset file name `* / : [ \\ ] | # % { } ? &`
-* invalid characters for asset folder name `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
--->
-
-### Handling filenames during upload {#filename-handling}
-
-[!DNL Experience Manager Assets] manages the forbidden characters in the filenames while you upload assets or folders. [!DNL Experience Manager] updates only the node names in the DAM repository. However, the `title` of the asset or folder remains unchanged.
-
-Following are the file naming conventions that are applied while uploading assets or folders in [!DNL Experience Manager Assets]:
-
-| Characters &Dagger; | When occurring in file names | When occurring in folder names | Example |
-|---|---|---|---|
-| `. / : [ ] | *` | Replaced with `-` (hyphen). | Replaced with `-` (hyphen). A `.` (dot) in the filename extension is retained as is. | Replaced with `-` (hyphen). | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
-| `% ; # , + ? ^ { } "` and whitespaces | Whitespaces are retained | Replaced with `-` (hyphen). | `My Folder.` changes to `my-folder-`. |
-| `# % { } ? & .` | Replaced with `-` (hyphen). | NA. | `#My New File.` changes to `-My New File-`. |
-| Uppercase characters | Casing is retained as is. | Changed to lowercase characters. | `My New Folder` changes to `my-new-folder`. |
-| Lppercase characters | Casing is retained as is. | Casing is retained as is. | NA. |
-
-&Dagger; The list of characters is a whitespace-separated list.
+* Invalid characters for asset file name: `* / : [ \\ ] | # % { } ? &`
+* Invalid characters for asset folder name: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Bulk upload assets {#bulk-upload}
 
@@ -222,6 +204,89 @@ Select the configuration and click **[!UICONTROL check]** to validate the connec
 Select the configuration and click **[!UICONTROL Dry Run]** to invoke a test run for the Bulk Import job. Experience Manager displays the following details about the Bulk Import job:
 
 ![Dry Run Result](assets/dry-assets-result.png)
+
+### Handling filenames during bulk import {#filename-handling-bulkimport}
+
+When you import assets or folders in bulk, [!DNL Experience Manager Assets] imports the whole structure of what exists in the import source. [!DNL Experience Manager] follows the inbuilt rules for special characters in the asset and folder names, therefore these filenames need sanitization. For both folder name and asset name, the title defined by the user remains unchanged and is stored in `jcr:title`. 
+
+During bulk import, [!DNL Experience Manager] look for the existing folders  to avoid reimporting the assets and folders, and also verifies the sanitization rules applied in the parent folder where the import takes place. If the sanitization rules are applied in the parent folder, the same rules are applied to the import source. For new import, the following sanatization rules are applied to manage the filenames of assets and folders.  
+
+**Handling asset name in bulk import**
+
+For asset filenames, the Jcr name&path is sanitized using the API: `JcrUtil.escapeIllegalJcrChars`.
+
+* Keep the unicode as is
+* Percent escaping all the following illegal characters:
+
+  ```
+              # here is a space
+  "
+  %
+  '
+  *
+  .
+  /
+  :
+  [
+  \n
+  \r
+  \t
+  ]
+  |
+  ```
+
+**Handling folder name in bulk import**
+
+For folder filenames, the Jcr name&path is sanitized using the API: `JcrUtil.createValidName`.
+
+* Sanitization rules for folder name before 2021.08 release:
+  * Convert upper case to lower case
+  * Replace all unicode to underscore ('_')
+  * Aggressive replace any special chars to underscore ('_')
+
+* New sanitization rules for folder name after 2021.08 release:
+  * Convert upper case to lower case
+  * Keep unicode as is
+  * Replace all below characters to dash ('-'), marked as star means not listed as illegal JCR chars:
+
+  ```
+                  * here is a space
+  "                           
+  #                   *       
+  %                           
+  &                   *       
+  *                           
+  +                   *       
+  .                           
+  :                           
+  ;                   *       
+  ?                   *       
+  [                           
+  ]                           
+  ^                   *       
+  {                   *       
+  }                   *       
+  |                           
+  /                   *   It is used for split folder in cloud storage and is pre-handled, no conversion here.
+  \                   *   Not allowed in Azure, allowed in AWS.
+  \t                          
+  ```
+
+<!-- 
+[!DNL Experience Manager Assets] manages the forbidden characters in the filenames while you upload assets or folders. [!DNL Experience Manager] updates only the node names in the DAM repository. However, the `title` of the asset or folder remains unchanged.
+
+Following are the file naming conventions that are applied while uploading assets or folders in [!DNL Experience Manager Assets]:
+
+| Characters &Dagger; | When occurring in file names | When occurring in folder names | Example |
+|---|---|---|---|
+| `. / : [ ] | *` | Replaced with `-` (hyphen). | Replaced with `-` (hyphen). A `.` (dot) in the filename extension is retained as is. | Replaced with `-` (hyphen). | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` and whitespaces | Whitespaces are retained | Replaced with `-` (hyphen). | `My Folder.` changes to `my-folder-`. |
+| `# % { } ? & .` | Replaced with `-` (hyphen). | NA. | `#My New File.` changes to `-My New File-`. |
+| Uppercase characters | Casing is retained as is. | Changed to lowercase characters. | `My New Folder` changes to `my-new-folder`. |
+| Lppercase characters | Casing is retained as is. | Casing is retained as is. | NA. |
+
+&Dagger; The list of characters is a whitespace-separated list.
+-->
 
 ##### Schedule a one-time or a recurring bulk import {#schedule-bulk-import}
 
