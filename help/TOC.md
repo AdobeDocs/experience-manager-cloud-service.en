@@ -684,11 +684,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + Managing IP Allow Lists {#ip-allow-lists}
       + [Introduction](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Adding an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-      + [Viewing and Updating an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-      + [Applying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-      + [UnApplying an IP Allow-List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-      + [Deleting an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
-      + [Checking an IP Allow List Status](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+      + [Applying and Un-Applying IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [UnApplying an IP Allow-List](/help/implementing/cloud-manager/ip-allow-lists/
+      unapply-ip-allow-list.md)
+      + [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
     + [Cloud Manager FAQs](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
