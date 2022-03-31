@@ -36,6 +36,23 @@ Before you install the connector, follow these pre-installation steps:
 
 To install the add-on in [!DNL Experience Manager] as a [!DNL Cloud Service], follow these steps:
 
+1. Download the enhanced connector from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
+
+1. [Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) and clone your AEM as a Cloud Service repository from Cloud Manager.
+
+1. Open the cloned AEM as a Cloud Service repository using an IDE of your choice.
+
+1. Place the enhanced connector zip file downloaded in Step 1 at the following path:
+
+   ```TXT
+      /ui.apps/src/main/resources/<zip file>
+   ```
+
+   >[!NOTE]
+   >
+   >If the `resources` folder does not exist, create the folder.
+
+
 1. Add `pom.xml` dependencies:
 
    1. Add a dependency in parent `pom.xml`.
@@ -45,47 +62,28 @@ To install the add-on in [!DNL Experience Manager] as a [!DNL Cloud Service], fo
          <groupId>digital.hoodoo</groupId>
          <artifactId>workfront-tools.ui.apps</artifactId>
          <type>zip</type>
-         <version>1.7.4</version>
+         <version>enhanced connector version number</version>
+         <scope>system</scope>
+         <systemPath>${project.basedir}/ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
       </dependency>
       ```
 
-   1. Add a dependency in all module [!DNL pom.xml].
+       >[!NOTE]
+       >
+       >Ensure to update the enhanced connector version number before copying the dependency to the parent `pom.xml`.
+
+   1. Add a dependency in `all module pom.xml`.
 
       ```XML
          <dependency>
             <groupId>digital.hoodoo</groupId>
             <artifactId>workfront-tools.ui.apps</artifactId>
             <type>zip</type>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
          </dependency>
       ```
 
-1. Add `pom.xml` authentication. 
-
-   1. Include the below repository configuration in the pom.xml within adobe-public profile, so the connector dependencies (above) can be resolved at build time (both locally, and by Cloud Manager). Credentials for repository access will be provided upon the purchase of a license. The credentials will need to be added to the settings.xml file in the servers section.
-
-      ```XML
-      <repository>
-         <id>hoodoo-maven</id>
-         <name>Hoodoo Repository</name>
-         <url>https://gitlab.com/api/v4/projects/12715200/packages/maven</url>
-      </repository>
-      ```
-
-   1. Create a file named `./cloudmanager/maven/settings.xml` in the project root. To support a password-protected Maven repository, see [how to set up your project](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md). Additionally, an example `settings.xml` file for reference. Lastly, update your local `settings.xml` to compile locally.
-
-      ```XML
-         <server>
-            <id>hoodoo-maven</id>
-            <configuration>
-               <httpHeaders>
-                     <property>
-                        <name>Deploy-Token</name>
-                        <value>xxxxxxxxxxxxxxxx</value>
-                     </property>
-               </httpHeaders>
-            </configuration>
-         </server>
-      ```
 
 1. Add `pom.xml` embeds. Add the [!DNL Workfront for Experience Manager enhanced connector] packages to `embeddeds` section of the `pom.xml` of all your subproject. Needs it embedded in the all module `pom.xml`.
 
@@ -98,6 +96,12 @@ To install the add-on in [!DNL Experience Manager] as a [!DNL Cloud Service], fo
          <target>/apps/<path-to-project-install-folder>/install</target>
       </embedded>
       ```
+
+   The target of the embedded section is set to `/apps/<path-to-project-install-folder>/install`. This JCR path `/apps/<path-to-project-install-folder>` must be included in the filter rules in the `all/src/main/content/META-INF/vault/filter.xml` file. The filter rules for the repository are usually derived from the program name. Use the name of the folder as the target in the existing rules.
+
+1. Push the changes to the repository.
+
+1. Run the pipeline to [deploy the changes to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 1. To create a system user configuration, create `wf-workfront-users` in [!DNL Experience Manager] User Group and assign the permission `jcr:all` to `/content/dam`. A system user `workfront-tools` is automatically created and the required permissions are managed automatically. All users from [!DNL Workfront] who use the enhanced connector are automatically added as a part of this group.
 

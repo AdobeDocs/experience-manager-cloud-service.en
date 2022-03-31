@@ -2,6 +2,7 @@
 title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.8.0
 description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.8.0
 feature: Release Information
+exl-id: cf1d5c4f-404a-4ced-90f2-273c710adc0f
 ---
 # Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.8.0 {#release-notes}
 
@@ -39,4 +40,4 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.8.0 is August 
 
 * Initial onboarding was failing for new organizations with very long names.
 
-* Occasionally, when a pipeline is triggered twice for some reason, it results in one of the executions failing with *cannot update pipeline execution status* error. 
+* Occasionally, when a pipeline is triggered twice for some reason, it results in one of the executions failing with *cannot update pipeline execution status* error.

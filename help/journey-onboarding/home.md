@@ -1,5 +1,5 @@
 ---
-title: Onboarding Journey
+title: Onboarding Journey Introduction
 description: Start here for an overview of the guided onboarding journey available to understand the Onboarding Experience.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 ---

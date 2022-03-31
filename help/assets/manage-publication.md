@@ -1,13 +1,12 @@
 ---
-title: Manage Publication 
+title: Manage Publication
 description: Publish or unpublish assets to Experience Manager Assets, Dynamic Media, and Brand Portal
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
-
+exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
 ---
-
 # Manage publication in Experience Manager Assets {#manage-publication-in-aem}
 
 As an [!DNL Adobe Experience Manager Assets] administrator, you can publish assets and folders containing assets from your author instance to [!DNL Experience Manager Assets], [!DNL Dynamic Media], and [!DNL Brand Portal]. Also, you can schedule the publish workflow of an asset or folder to a later date or time. Once published, the users can access and further distribute the assets to other users. By default, you can publish assets and folders to [!DNL Experience Manager Assets]. However, you can configure [!DNL Experience Manager Assets] to enable publishing to [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) and [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
@@ -186,4 +185,3 @@ You can publish assets, folders, and collections to the [!DNL Experience Manager
 * Empty folders are not published.
 * If you publish an asset that is being processed, only the original content is published. The renditions are missing. Either wait for the processing to complete and then publish or republish the asset once the processing completes.
 * While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because they may be referred by other published assets.
-

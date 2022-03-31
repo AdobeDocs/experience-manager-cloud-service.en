@@ -1,33 +1,38 @@
 ---
-title: Notifications - Cloud Service
-description: Notifications - Cloud Service
+title: Notifications
+description: Learn how to receive information about pipeline deployments using the Adobe Experience Cloud notification system.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 ---
-# Understanding Notifications {#notifications} 
+# Notifications {#notifications} 
 
-[!UICONTROL Cloud Manager] allows the user to receive notifications when the production pipeline starts and completes (successfully or unsuccessfully), at the start of a production deployment. These notifications are sent through the Adobe [!UICONTROL Experience Cloud] Notification system.
+[!UICONTROL Cloud Manager] allows the user to receive notifications when the production pipeline starts and completes (successfully or unsuccessfully), during a production deployment.
 
->[!NOTE]
->
->The approval and scheduled notifications are only sent to users in the Business Owner, Program Manager, and Deployment Manager roles.
+These notifications are sent through the Adobe [!UICONTROL Experience Cloud] notification system to users with the roles **Business Owner**, **Program Manager**, and **Deployment Manager**.
 
-The notifications appear in a sidebar in [!UICONTROL Cloud Manager] UI (User Interface) and throughout the Adobe [!UICONTROL Experience Cloud].
-![](assets/notify-1.png)
+The notifications appear at the right end of the menu bar in the [!UICONTROL Cloud Manager] UI and throughout Adobe [!UICONTROL Experience Cloud].
 
-Click on the bell icon from the header to open the sidebar and view the notifications, as shown in the figure below:
+![Notifications icon in menu bar](assets/notify-1.png)
 
-![](assets/notify-2.png)
+The bell icon is badged when there are new notifications. Click on it to open the a panel to view the notifications.
 
-The sidebar lists the most recent notifications.
+![Viewing notifications](assets/notify-2.png)
 
+The panel only lists the most recent notifications. Click **View All** at the bottom of the panel to see all of your notifications.
 
 ## Email Notifications {#email-notifications}
 
-By default, notifications are available in the web user interface across Adobe [!UICONTROL Experience Cloud] solutions. Individual users can also opt for these notifications to be sent through email, either on an immediate or digest basis.
+By default, notifications are available in the user interface across Adobe [!UICONTROL Experience Cloud] solutions. Individual users can also opt for these notifications to be sent through email by following these steps.
 
-This will take the user to the Notifications Preferences screen in Adobe [!UICONTROL Experience Cloud].
+1. Click on the bell icon to reveal the notifications.
+1. Click on the **Edit Preferences** icon (shaped like a gear) at the top of the notifications panel.
+1. In the window that opens, click on **Notifications** in the left navigation.
+   ![Edit preferences window](assets/notification-preferences.png)
+1. Scroll down to the **Email** heading.
+   ![Email options](assets/email-preferences.png)
+1. Select how you would like to receive your emails.
+   * Don't send emails (default)
+   * Instant notifications
+   * Daily digest
+   * Weekly digest
 
-The users can turn on email notifications and (optionally) select the types of notifications they want to receive over email.
-
->[!NOTE]
->You can also enable digesting from the Adobe [!UICONTROL Experience Cloud].
+Once you make your selection, your choice is automatically saved with no need to click on a save or apply button.

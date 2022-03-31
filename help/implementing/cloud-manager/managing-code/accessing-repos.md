@@ -1,39 +1,36 @@
 ---
 title: Accessing Repositories
-seo-title: Accessing Repositories
-description: This page describes how you can access and manage Git repository.
-seo-description: Follow this page to learn how to access and manage your Git repository.
+description: Learn how to access and manage your git repository using the self-service git account management from Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 ---
 # Accessing Repositories {#accessing-repos}
 
-You can access and manage your Git Repository using Self-Service Git Account Management from Cloud Manager UI.
+Learn how to access and manage your git repository using the self-service git account management from Cloud Manager.
 
-## Using Self-Service Repositories Account Management {#self-service-repos}
+## Using Self-Service Repository Account Management {#self-service-repos}
 
-Use the **Access Repo Info** button available from the Cloud Manager UI, most prominently on the pipeline card.
+Cloud Manager makes it easy to retrieve your repository info by using the **Access Repo Info** button available prominently on the pipeline card.
 
-1. Navigate to **Pipelines** card from your **Program Overview** page.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. You will view the **Access Repo Info** option to access and manage your Git Repository.
+1. Navigate to **Pipelines** card from your **Program Overview** page and find the **Access Repo Info** button to access and manage your git Repository.
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+   ![Access Repo Info button on Environments card](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-   Additionally, if you select the **Non-Production** pipeline tab, you will view the **Access Repo Info** option there too.
+1. Click on the **View Repo Info** button to open a dialog to view:
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
-
-   >[!NOTE]
-   >The **Access Repo Info** option is visible to users in the Developer or Deployment Manager role. Clicking on this button opens a dialog which allows the user to find the URL to their Cloud Manager Git Repository along with their username and password.
+   * The URL to the Cloud Manager git repository.
+   * The git username.
+   * The git password, the value of which is shown when the **Generate Password** button is clicked.
 
    ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
-   The important considerations to manage your Git in Cloud Manager are:
+Using these credentials, the user can clone a local copy of the repository, and make changes in that local repository, and when ready can commit any code changes back to the remote code repository in Cloud Manager.
 
-   * **URL**: The repository URL
-   * **Username**: The user name
-   * **Password**: The value shown when the **Generate Password** button is clicked.
+The **Access Repo Info** option is also available on the **Non-Production** pipeline tab of the **Pipelines** card.
 
+![Access Repo Info button on non-production tab](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
 
-      >[!NOTE]
-      >A user can check out a copy of their code, and make changes in the local code repository. When ready, the user can commit their code changes back to the remote code repository in Cloud Manager.
+>[!NOTE]
+>
+>The **Access Repo Info** option is visible to users with **Developer** or **Deployment Manager** roles.

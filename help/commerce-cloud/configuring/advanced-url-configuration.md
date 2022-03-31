@@ -171,7 +171,7 @@ Specific product pages are selected either by the product's sku or category. The
 >
 > Selecting specific product pages by category requires [CIF Core Components 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) or newer.
 
-### Depp Linking {#specific-pages-deep-linking}
+### Deep Linking {#specific-pages-deep-linking}
 
 The `UrlProvider` is pre-configured to generate deep links to specific category and product pages on author tier instances. This is useful to editors, that browse a site using Preview mode, navigate to a specific product or category page and switch back to Edit mode to edit the page.
 
