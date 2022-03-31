@@ -33,5 +33,6 @@ Follow the steps below to update an IP Allow List:
 * Adding a new IP range to the IP Allow List will automatically Apply it to all corresponding environment- services.
 * Removing an IP range from the IP Allow List will automatically Unapply it from all corresponding environment- services.
 * Updates cannot be made to an IP Allow List while a prior update is in progress and has not completed.
-* Updates cannot be made to an IP Allow List if any errors exist from a prior update. Any error(s) must be cleared by attempting to retry the update. 
-   Refer to [Checking IP Allow List Status](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md) to learn more.
+* Updates cannot be made to an IP Allow List if any errors exist from a prior update. Any error(s) must be cleared by attempting to retry the update.
+   * [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
+   
