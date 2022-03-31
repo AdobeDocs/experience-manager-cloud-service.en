@@ -216,59 +216,54 @@ During bulk import, [!DNL Experience Manager] look for the existing folders  to 
 For asset filenames, the Jcr name&path is sanitized using the API: `JcrUtil.escapeIllegalJcrChars`.
 
 * Keep the unicode as is
-* Percent escaping all the following illegal characters:
+* Replace the special characters with their URL Escape Code, for example, `new*asset.png` is updated to `new%2Aasset.png`:
 
   ```
-              # here is a space
-  "
-  %
-  '
-  *
-  .
-  /
-  :
-  [
-  \n
-  \r
-  \t
-  ]
-  |
+         URL escape code   
+  
+  "         %22
+  %         %25
+  '         %27
+  *         %2A
+  .         %2E
+  /         %2F
+  :         %3A
+  [         %5B
+  \n        %5Cn
+  \r        %5Cr
+  \t        %5Ct
+  ]         %5D
+  |         %7C
   ```
 
 **Handling folder name in bulk import**
 
 For folder filenames, the Jcr name&path is sanitized using the API: `JcrUtil.createValidName`.
 
-* Sanitization rules for folder name before 2021.08 release:
-  * Convert upper case to lower case
-  * Replace all unicode to underscore ('_')
-  * Aggressive replace any special chars to underscore ('_')
-
-* New sanitization rules for folder name after 2021.08 release:
-  * Convert upper case to lower case
-  * Keep unicode as is
-  * Replace all below characters to dash ('-'), marked as star means not listed as illegal JCR chars:
+* Convert upper case to lower case
+* Keep unicode as is
+* Replace the special characters with dash ('-'), for example, `new*asset.png` is updated to `new-asset.png`:
 
   ```
-                  * here is a space
+  
   "                           
-  #                   *       
+  #                         
   %                           
-  &                   *       
+  &                          
   *                           
-  +                   *       
+  +                          
   .                           
   :                           
-  ;                   *       
-  ?                   *       
+  ;                          
+  ?                          
   [                           
   ]                           
-  ^                   *       
-  {                   *       
-  }                   *       
+  ^                         
+  {                         
+  }                         
   |                           
-  /                   *   It is used for split folder in cloud storage and is pre-handled, no conversion here.
-  \                   *   Not allowed in Azure, allowed in AWS.
+  /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
+  \      Not allowed in Azure, allowed in AWS.
   \t                          
   ```
 
