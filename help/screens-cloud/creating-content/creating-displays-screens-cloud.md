@@ -89,9 +89,10 @@ You can create folders to better organize your displays.
 
    ![image](/help/screens-cloud/assets/display/Nestedview.png)
 
-* The folder should be selected in the folder side rail.
-* The breadcrumb navigation should show the current folder name next to **Displays**.
-4. Click  **Create**  on the top right and select the **Folder** option.
+   * The folder should be selected in the folder side rail.
+   * The breadcrumb navigation should show the current folder name next to **Displays**.
+
+1. Click  **Create**  on the top right and select the **Folder** option.
 
    ![image](/help/screens-cloud/assets/display/Createfolder.png)
 
