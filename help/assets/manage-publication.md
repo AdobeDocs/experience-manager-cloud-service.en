@@ -55,10 +55,6 @@ To continue, click **[!UICONTROL Next]**. Based on the selection, the **[!UICONT
 
 ### Add Content {#add-content}
 
->[!NOTE]
->
->This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information to enable the feature for your environment.
-
 Publishing to [!DNL Experience Manager Assets] allows you to further add more content (assets and folders) to the publishing list. You can add more assets or folders to the list across the dam-repositories. Click on **[!UICONTROL Add Content]** button to add more content. 
 
 You can add multiple assets from a folder or add multiple folders at a time. But you cannot add assets from multiple folders at a time. 
@@ -67,10 +63,6 @@ You can add multiple assets from a folder or add multiple folders at a time. But
 
 ### Include Folder Settings {#include-folder-settings}
 
->[!NOTE]
->
->This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information to enable the feature for your environment.
-
 By default, publishing a folder to [!DNL Experience Manager Assets] publishes all the assets, subfolders, and their references. 
 
 To filter the folder content that you want to publish, click **[!UICONTROL Include Folder Settings]**:
@@ -78,7 +70,7 @@ To filter the folder content that you want to publish, click **[!UICONTROL Inclu
 * `Include folder contents`
 
   * Enabled: All the assets of the selected folder, subfolders (including all the assets of the subfolders), and references are published.
-  * Disabled: Only the selected folder (empty) and references are publishd. The assets of the selected folder are not published.
+  * Disabled: Only the selected folder (empty) and references are published. The assets of the selected folder are not published.
 
 * `Include folder contents` and `Include only immediate folder contents`
 
