@@ -2,8 +2,8 @@
 title: Configuring Production Pipelines
 description: Learn how to configuring production pipelines to build and deploy your code to production environments.
 index: yes
+exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 ---
-
 # Configuring a Production Pipeline {#configure-production-pipeline}
 
 Learn how to configuring production pipelines to build and deploy your code to production environments.
