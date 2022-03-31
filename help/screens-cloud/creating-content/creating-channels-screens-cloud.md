@@ -89,18 +89,18 @@ This capability allows you to define a default activation schedule for a channel
 ### Create default assignment details for a channel {#create-default}
 
 1. Navigate to the details page for the channel you want to configure.
-2. Locate the **Default assignment details** tile on the page.
+1. Locate the **Default assignment details** tile on the page.
 
-![image](/help/screens-cloud/assets/display/assignment1.png)
+   ![image](/help/screens-cloud/assets/display/assignment1.png)
 
-3. Click **Set default details**.
-4. Configure the default assignment details, including priority, start & end dates, as well as recurrence patterns for the channel, and click **Assign**.
+1. Click **Set default details**.
+1. Configure the default assignment details, including priority, start & end dates, as well as recurrence patterns for the channel, and click **Assign**.
 
-![image](/help/screens-cloud/assets/display/assignments2.png)
+   ![image](/help/screens-cloud/assets/display/assignments2.png)
 
-5. Notice the details of the assignment are shown in the **Default assignment details** tile:
+1. Notice the details of the assignment are shown in the **Default assignment details** tile:
 
-![image](/help/screens-cloud/assets/display/assignments3.png)
+   ![image](/help/screens-cloud/assets/display/assignments3.png)
 
 This tile displays the following information:
 * Default priority of the channel in the display.
@@ -113,27 +113,27 @@ Channels having default assignment details can be assigned to displays the same 
 
 1. Navigate to the display details page you want to assign the channel to and click the **Assign channel**.
 alternatively, select the desired display in the inventory view and click the **Assign channel**.
-2. The channel assignment dialog opens.
+1. The channel assignment dialog opens.
 
-![image](/help/screens-cloud/assets/display/Assignments4.png)
+   ![image](/help/screens-cloud/assets/display/Assignments4.png)
 
-3. Select the desired channel that has the default assignment details from the channel picker.
-4. Notice the channel assignment dialog changes to let you choose the default assignment details, or select custom ones:
+1. Select the desired channel that has the default assignment details from the channel picker.
+1. Notice the channel assignment dialog changes to let you choose the default assignment details, or select custom ones:
 
-![image](/help/screens-cloud/assets/display/Assignments5.png)
+   ![image](/help/screens-cloud/assets/display/Assignments5.png)
 
-5. Click **Assign** to finalize the assignment, or click **Set custom assignment details** if you prefer overriding the defaults with some other values in the context of that particular display.
+1. Click **Assign** to finalize the assignment, or click **Set custom assignment details** if you prefer overriding the defaults with some other values in the context of that particular display.
 
-![image](/help/screens-cloud/assets/display/Assignments6.png)
+   ![image](/help/screens-cloud/assets/display/Assignments6.png)
 
-6. Notice the **Assigned channels** tile is updated with the new assignment:
+1. Notice the **Assigned channels** tile is updated with the new assignment:
 
-![image](/help/screens-cloud/assets/display/Assignments7.png)
+   ![image](/help/screens-cloud/assets/display/Assignments7.png)
 
-7. Notice that the channels will have a different icon depending on if they are using custom schedules (Clock icon) or inheriting the default details (World clock icon), and clicking those will show the scheduling details.
-8. Also notice that available actions for each type will differ.
+1. Notice that the channels will have a different icon depending on if they are using custom schedules (Clock icon) or inheriting the default details (World clock icon), and clicking those will show the scheduling details.
+1. Also notice that available actions for each type will differ.
 
-![image](/help/screens-cloud/assets/display/Assignments8.png)
+   ![image](/help/screens-cloud/assets/display/Assignments8.png)
 
 **Note:** A channel assignment that leverages the default assignment details will not be editable in the context of the display.
 
@@ -143,25 +143,25 @@ alternatively, select the desired display in the inventory view and click the **
 ### Remove default assignment details from a channel {#remove-display}
 
 1. Navigate to the details page for the channel you want to remove the default assignment details.
-2. Locate the **Default assignment details** tile in the page
-3. Click the **Remove default**.
+1. Locate the **Default assignment details** tile in the page
+1. Click the **Remove default**.
 
-![image](/help/screens-cloud/assets/display/Assignments9.png)
+   ![image](/help/screens-cloud/assets/display/Assignments9.png)
 
-4. A confirmation dialog will be shown, and details will be match one of the following conditions:
+1. A confirmation dialog will be shown, and details will be match one of the following conditions:
 **a.** Channel is not used in any display.
 
-![image](/help/screens-cloud/assets/display/Assignments10.png)
+   ![image](/help/screens-cloud/assets/display/Assignments10.png)
 
 **b.** Channel is used in a single display.
 
-![image](/help/screens-cloud/assets/display/Assignment11.png)
+   ![image](/help/screens-cloud/assets/display/Assignment11.png)
 
 **c.** Channel is used in several displays.
 
-![image](/help/screens-cloud/assets/display/Assignments12.png)
+   ![image](/help/screens-cloud/assets/display/Assignments12.png)
 
-5. Click the *Remove* to validate the change.
+1. Click the *Remove* to validate the change.
 
 **Note:** Removing the default assignment details from a channel will remove the matching assignments on all displays that were using it.
 As a consequence, this may lead to blank screens if there is no alternate content to be played on those displays.
