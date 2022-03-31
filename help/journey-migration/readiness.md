@@ -1,6 +1,7 @@
 ---
 title: Readiness Phase
 description: Learn about the steps you need to take in order to make sure that your AEM installation is ready to be moved to the cloud
+exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 ---
 # Readiness Phase {#readiness-phase}
 

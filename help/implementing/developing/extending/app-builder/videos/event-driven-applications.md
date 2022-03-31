@@ -8,8 +8,8 @@ role: Developer, Architect
 level: Beginner
 kt: 9458,9479
 thumbnail: 339244.jpg
+exl-id: 6cd06ddc-2ce3-4e59-bd62-baee44763591
 ---
-
 # Event-driven App Builder applications
 
 >[!IMPORTANT]
