@@ -1,9 +1,8 @@
 ---
-title: Known issues 
+title: Considerations known issues, and best practices
 description: Communications best practices, known issues, and limitations
-
+exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 ---
-
 # Considerations known issues, and best practices {#best-practices-known-issues-and-limitations}
 
 Before you begin using Communication APIs, review the following considerations, known issues, and frequently asked questions:
