@@ -377,10 +377,12 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Flash Viewers End-of-Life](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
   + Integration with Adobe Workfront {#integrations}
+    + [Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Install [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
     + [Remove external dependencies for existing installations](/help/assets/remove-external-dependencies.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
+    + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
   + [Introduction](/help/forms/home.md)
   + [Key features](/help/forms/key-features.md)
@@ -673,15 +675,12 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
     + Managing Custom Domain Names {#custom-domain-names}
       + [Introduction](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-      + [Getting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
       + [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
       + [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
       + [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
       + [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
       + [Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-      + [Viewing & Updating & Replacing a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-      + [Updating a  Custom Domain Name’s SSL Certificate](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
-      + [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+      + [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
     + Managing IP Allow Lists {#ip-allow-lists}
       + [Introduction](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Adding an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
