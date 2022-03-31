@@ -46,7 +46,8 @@ A user with the **Business Owner** or **Deployment Manager** role can use Cloud 
 1. Click the ellipsis button at the far right end of the row.
 
 1. Select **Delete**.
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
+
+   ![Deleting custom domain names](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. Confirm your submission.
 
