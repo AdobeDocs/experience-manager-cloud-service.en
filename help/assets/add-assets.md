@@ -288,7 +288,7 @@ Following are the file naming conventions that are applied while uploading asset
 &Dagger; The list of characters is a whitespace-separated list.
 -->
 
-##### Schedule a one-time or a recurring bulk import {#schedule-bulk-import}
+#### Schedule a one-time or a recurring bulk import {#schedule-bulk-import}
 
 To schedule a one-time or a recurring bulk import, execute the following steps:
 
@@ -299,7 +299,7 @@ To schedule a one-time or a recurring bulk import, execute the following steps:
    ![Schedule bulk ingestor job](assets/bulk-ingest-schedule1.png)
 
 
-##### View the Assets target folder {#view-assets-target-folder}
+#### View the Assets target folder {#view-assets-target-folder}
 
 Select the configuration and click **[!UICONTROL View Assets]** to view the Assets target location where the assets are imported after executing the Bulk Import job.
 
