@@ -17,10 +17,6 @@ The following section outlines the general Release Notes for the current (latest
 >
 >See [Recent Documentation Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) for details of documentation updates not directly related to a release.
 
->[!NOTE]
->
->The 2022.2.0 release was merged into the 2022.3.0 Release. These release notes will cover all the features.
-
 ## Release Date {#release-date}
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.3.0) is March 31, 2022.
@@ -82,7 +78,7 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### What is New {#what-is-new-foundation}
 
-* For more efficient and effective troubleshooting of custom features in Cloud environments, we’ve released a new developer tool – [the Repository Browser](/help/implementing/developing/tools/repository-browser.md). It’s a lightweight, read-only, HTML browser that you can launch from the Developer Console. Get visibility into the content repository on the publisher, author, and preview tiers—and in all environments, including production, stage, and non-production. Browse the content structure, view properties, and preview and download binaries.
+* For more efficient and effective troubleshooting of custom features in Cloud environments, we’ve released a new developer tool – [the Repository Browser](/help/implementing/developing/tools/repository-browser.md). It’s a lightweight, read-only, HTML browser that you can launch from the Developer Console. Get visibility into the content repository on the publisher, author, and preview tiers—and in all environments, including production, stage, and dev. Browse the content structure, view properties, and preview and download binaries.
 
   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
