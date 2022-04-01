@@ -108,14 +108,14 @@ You can upload an asset with the same path (same name and same location) as that
 
 To retain the duplicate asset in [!DNL Assets], click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, click **[!UICONTROL Delete]**.
 
-### File name handling and forbidden characters {#filename-handling}
+### Filename handling and forbidden characters {#filename-handling}
 
-[!DNL Experience Manager Assets] tries to prevent you from uploading assets with the forbidden characters in their filenames. If you try to upload an asset with file name containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
+[!DNL Experience Manager Assets] prevents you from uploading assets with the forbidden characters in their filenames. If you try to upload an asset with filenames containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
 
 To suit specific file naming conventions for your organization, the [!UICONTROL Upload Assets] dialog lets you specify long names for the files that you upload. The following (space-separated list of) characters are not supported:
 
-* invalid characters for asset file name `* / : [ \\ ] | # % { } ? &`
-* invalid characters for asset folder name `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* Invalid characters for asset name: `* / : [ \\ ] | # % { } ? &`
+* Invalid characters for asset folder name: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Bulk upload assets {#bulk-upload}
 
@@ -141,7 +141,7 @@ The following image illustrates the various stages when you ingest assets to Exp
 
 ![Bulk Ingestion Tool](assets/bulk-ingestion.png)
 
-#### Prerequisites {#prerequisites-bulk-ingestion}
+**Prerequisites**
 
 An external storage account or bucket from Azure or AWS is required to use this feature.
 
@@ -149,7 +149,7 @@ An external storage account or bucket from Azure or AWS is required to use this 
 >
 >Create the storage account container or bucket as private and accept connections only from authorized requests. However, additional restrictions on ingress network connections are not supported.
 
-#### Configure the Bulk Import tool {#configure-bulk-ingestor-tool} 
+### Configure the Bulk Import tool {#configure-bulk-ingestor-tool} 
 
 To configure the Bulk Import tool, follow these steps:
 
@@ -181,31 +181,112 @@ To configure the Bulk Import tool, follow these steps:
 
 1. Click **[!UICONTROL Save]** to save the configuration.
 
-#### Manage the Bulk Import tool configuration {#manage-bulk-import-configuration}
+### Manage the Bulk Import tool configuration {#manage-bulk-import-configuration}
 
 After creating the Bulk Import tool configuration, you can perform tasks to evaluate the configuration before bulk ingesting assets to your Experience Manager instance. Select the configuration available at **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]** to view the available options to manage your Bulk Import tool configuration.
 
-##### Edit the configuration {#edit-configuration}
+### Edit the configuration {#edit-configuration}
 
 Select the configuration and click **[!UICONTROL Edit]** to modify the configuration details. You cannot edit the title of the configuration and the import data source while performing the edit operation.
 
-##### Delete the configuration {#delete-configuration}
+### Delete the configuration {#delete-configuration}
 
 Select the configuration and click **[!UICONTROL Delete]** to delete the Bulk Import configuration.
 
-##### Validate connection to the data source {#validate-connection}
+### Validate connection to the data source {#validate-connection}
 
 Select the configuration and click **[!UICONTROL check]** to validate the connection to the data source. In case of a successful connection, Experience Manager displays the following message:
 
 ![Bulk Import success message](assets/bulk-import-success-message.png)
 
-##### Invoke a test run for the Bulk Import job {#invoke-test-run-bulk-import}
+### Invoke a test run for the Bulk Import job {#invoke-test-run-bulk-import}
 
 Select the configuration and click **[!UICONTROL Dry Run]** to invoke a test run for the Bulk Import job. Experience Manager displays the following details about the Bulk Import job:
 
 ![Dry Run Result](assets/dry-assets-result.png)
 
-##### Schedule a one-time or a recurring bulk import {#schedule-bulk-import}
+### Handling filenames during bulk import {#filename-handling-bulkimport}
+
+When you import assets or folders in bulk, [!DNL Experience Manager Assets] imports the whole structure of what exists in the import source. [!DNL Experience Manager] follows the inbuilt rules for special characters in the asset and folder names, therefore these filenames need sanitization. For both folder name and asset name, the title defined by the user remains unchanged and is stored in `jcr:title`. 
+
+During bulk import, [!DNL Experience Manager] look for the existing folders  to avoid reimporting the assets and folders, and also verifies the sanitization rules applied in the parent folder where the import takes place. If the sanitization rules are applied in the parent folder, the same rules are applied to the import source. For new import, the following sanatization rules are applied to manage the filenames of assets and folders.  
+
+**Handling asset name in bulk import**
+
+For asset filenames, the Jcr name&path is sanitized using the API: `JcrUtil.escapeIllegalJcrChars`.
+
+* Keep the unicode as is
+* Replace the special characters with their URL Escape Code, for example, `new asset.png` is updated to `new%20asset.png`:
+
+  ```
+                  URL escape code   
+  
+  "               %22
+  %               %25
+  '               %27
+  *               %2A
+  .               %2E
+  /               %2F
+  :               %3A
+  [               %5B
+  \n              %5Cn
+  \r              %5Cr
+  \t              %5Ct
+  ]               %5D
+  |               %7C
+  space char      %20
+  ```
+
+**Handling folder name in bulk import**
+
+For folder filenames, the Jcr name&path is sanitized using the API: `JcrUtil.createValidName`.
+
+* Convert upper case to lower case
+* Keep unicode as is
+* Replace the special characters with dash ('-'), for example, `new asset.png` is updated to `new-asset.png`:
+
+  ```
+  
+  "                           
+  #                         
+  %                           
+  &                          
+  *                           
+  +                          
+  .                           
+  :                           
+  ;                          
+  ?                          
+  [                           
+  ]                           
+  ^                         
+  {                         
+  }                         
+  |                           
+  /         It is used for split folder in cloud storage and is pre-handled, no conversion here.
+  \         Not allowed in Azure, allowed in AWS.
+  \t
+  space     It is the space character.
+
+  ```
+
+<!-- 
+[!DNL Experience Manager Assets] manages the forbidden characters in the filenames while you upload assets or folders. [!DNL Experience Manager] updates only the node names in the DAM repository. However, the `title` of the asset or folder remains unchanged.
+
+Following are the file naming conventions that are applied while uploading assets or folders in [!DNL Experience Manager Assets]:
+
+| Characters &Dagger; | When occurring in file names | When occurring in folder names | Example |
+|---|---|---|---|
+| `. / : [ ] | *` | Replaced with `-` (hyphen). | Replaced with `-` (hyphen). A `.` (dot) in the filename extension is retained as is. | Replaced with `-` (hyphen). | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` and whitespaces | Whitespaces are retained | Replaced with `-` (hyphen). | `My Folder.` changes to `my-folder-`. |
+| `# % { } ? & .` | Replaced with `-` (hyphen). | NA. | `#My New File.` changes to `-My New File-`. |
+| Uppercase characters | Casing is retained as is. | Changed to lowercase characters. | `My New Folder` changes to `my-new-folder`. |
+| Lppercase characters | Casing is retained as is. | Casing is retained as is. | NA. |
+
+&Dagger; The list of characters is a whitespace-separated list.
+-->
+
+#### Schedule a one-time or a recurring bulk import {#schedule-bulk-import}
 
 To schedule a one-time or a recurring bulk import, execute the following steps:
 
@@ -216,7 +297,7 @@ To schedule a one-time or a recurring bulk import, execute the following steps:
    ![Schedule bulk ingestor job](assets/bulk-ingest-schedule1.png)
 
 
-##### View the Assets target folder {#view-assets-target-folder}
+#### View the Assets target folder {#view-assets-target-folder}
 
 Select the configuration and click **[!UICONTROL View Assets]** to view the Assets target location where the assets are imported after executing the Bulk Import job.
 
