@@ -216,24 +216,25 @@ During bulk import, [!DNL Experience Manager] look for the existing folders  to 
 For asset filenames, the Jcr name&path is sanitized using the API: `JcrUtil.escapeIllegalJcrChars`.
 
 * Keep the unicode as is
-* Replace the special characters with their URL Escape Code, for example, `new*asset.png` is updated to `new%2Aasset.png`:
+* Replace the special characters with their URL Escape Code, for example, `new asset.png` is updated to `new%20asset.png`:
 
   ```
-         URL escape code   
+                  URL escape code   
   
-  "         %22
-  %         %25
-  '         %27
-  *         %2A
-  .         %2E
-  /         %2F
-  :         %3A
-  [         %5B
-  \n        %5Cn
-  \r        %5Cr
-  \t        %5Ct
-  ]         %5D
-  |         %7C
+  "               %22
+  %               %25
+  '               %27
+  *               %2A
+  .               %2E
+  /               %2F
+  :               %3A
+  [               %5B
+  \n              %5Cn
+  \r              %5Cr
+  \t              %5Ct
+  ]               %5D
+  |               %7C
+  space char      %20
   ```
 
 **Handling folder name in bulk import**
@@ -242,7 +243,7 @@ For folder filenames, the Jcr name&path is sanitized using the API: `JcrUtil.cre
 
 * Convert upper case to lower case
 * Keep unicode as is
-* Replace the special characters with dash ('-'), for example, `new*asset.png` is updated to `new-asset.png`:
+* Replace the special characters with dash ('-'), for example, `new asset.png` is updated to `new-asset.png`:
 
   ```
   
@@ -262,9 +263,11 @@ For folder filenames, the Jcr name&path is sanitized using the API: `JcrUtil.cre
   {                         
   }                         
   |                           
-  /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
-  \      Not allowed in Azure, allowed in AWS.
-  \t                          
+  /         It is used for split folder in cloud storage and is pre-handled, no conversion here.
+  \         Not allowed in Azure, allowed in AWS.
+  \t
+  space     It is the space character.
+
   ```
 
 <!-- 
