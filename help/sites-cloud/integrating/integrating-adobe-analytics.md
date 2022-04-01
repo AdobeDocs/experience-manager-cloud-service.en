@@ -15,6 +15,9 @@ Integrating Adobe Analytics and AEM as a Cloud Service allows you to track your 
 Compared to previous versions of AEM, framework support is not provided in the Analytics Configuration in AEM as a Cloud Service. Instead, it is now done through Adobe Launch, which is the defacto tool for instrumenting an AEM site with Analytics capabilities (JS libraries). In Adobe Launch, a property is created where the Adobe Analytics extension can be configured and rules are created to send data to Adobe Analytics. Adobe Launch has replaced the task of analytics provided by the sitecatalyst.
 
 >[!NOTE]
+>Added in the prerelease channel is the requirement for IMS authentication in order to integrate Adobe Analytics with AEM as a Cloud Service. See the prerelease channel [documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable this setting for your environment.
+
+>[!NOTE]
 >
 >Adobe Experience Manager as a Cloud Service customers who do not have an existing Analytics account, can request access to the Analytics Foundation Pack for Experience Cloud. This Foundation Pack provides volume limited use of Analytics.
 
@@ -38,6 +41,23 @@ The configuration fields present in the Adobe Analytics Configuration window are
 | Username | Adobe Analytics API user |
 | Password | Adobe Analytics password used for authentication |
 | Data Center | The Adobe Analytics data center your account is associated with (server for instance San Jose, London) |
+| Segment | Option to use an Analytics segment defined in the current reporting suite. The Analytics reports will be filtered based on the segment. Refer to [this page](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) for additional details. |
+| Report Suites | A repository where you send data and pull reports. A report suite defines the complete, independent reporting on a chosen website, set of websites, or subset of website pages. You can view the reports fetched from a single report suite and can edit this field in a configuration anytime according to your requirements. |
+
+### Configuring Adobe Analytics with IMS authentication (prerelease channel) {#configuration-parameters-ims}
+
+Added in the prerelease channel is the requirement for IMS authentication in order to integrate Adobe Analytics with AEM as a Cloud Service. See the prerelease channel [documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable this setting for your environment. This means that an IMS configuration for both Launch and Analytics is necessary to properly integrate Analytics with AEM and Launch. While the IMS configuration for Launch is preconfigured in AEM as a Cloud Service, the Analytics IMS configuration must be created.
+
+Refer to this [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) to learn how to create the Analytics IMS configuration.
+
+After performing the steps in the [Creating the Adobe Analytics Configuration](#configuration-parameters) section the fields present in the configuration window are as follows :
+
+![Configuration Parameters](assets/properties_field2.png "Configuration Parameters")
+
+| Property | Description |
+|---|---|
+| Title | The configuration name |
+| IMS Configuration | Select the IMS configuration (see the description above) |
 | Segment | Option to use an Analytics segment defined in the current reporting suite. The Analytics reports will be filtered based on the segment. Refer to [this page](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) for additional details. |
 | Report Suites | A repository where you send data and pull reports. A report suite defines the complete, independent reporting on a chosen website, set of websites, or subset of website pages. You can view the reports fetched from a single report suite and can edit this field in a configuration anytime according to your requirements. |
 
