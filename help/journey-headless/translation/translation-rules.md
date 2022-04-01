@@ -16,6 +16,15 @@ In the previous document of the AEM headless translation journey, [Configure tra
 
 Now that your connector is set up, this article takes you through the next step of identifying what content you need to translate.
 
+>[!CAUTION]
+>
+>This step of the documentation journey is only necessary if you are not on the prerelease channel of AEM as a Cloud Service.
+>
+>* If you are on the prerelease channel, please skip to the next step of the journey [Translate content.](translate-content.md)
+>* If you are not on the prerelease channel, please continue reading this document.
+>
+>See the [Additional Resources section](#additional-resources) for more information on the prerelease channel.
+
 ## Objective {#objective}
 
 This document helps you understand how to use AEM's translation rules to identify your translation content. After reading this document you should:
@@ -93,3 +102,4 @@ Build on this knowledge and continue your AEM headless translation journey by ne
 While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Translate content,](translate-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [Identifying Content to Translate](/help/sites-cloud/administering/translation/rules.md) - Learn how translation rules identify content that needs translating.
+* [AEM as a Cloud Service Prerelease Channel](/help/release-notes/prerelease.md#enable-prerelease) - Learn how to opt in to the prerelease channel of AEM as a Cloud Service to try new and upcoming features.
