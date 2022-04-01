@@ -6,10 +6,9 @@ exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 
 # Use synchronous processing {#sync-processing-introduction}
 
-Communications allows you to create, assemble, and deliver brand-oriented and personalized communications such as business correspondences, documents, statements, claim processing letters, benefit notices, claim processing letters, monthly bills, and welcome kits. You can use Communications APIs to combine a template (XFA or PDF) with customer data to generate documents in PDF, PS, PCL, DPL, IPL, and ZPL formats.
+Communications capability helps you to create brand-approved, personalized, and standardized documents such as business correspondences, statements, claim processing letters, benefit notices, monthly bills, or welcome kits.
 
-Consider a scenario where you have one or more templates and multiple records of XML data for each template. You can use Communications APIs to generate a print document for each record. <!-- You can also combine the records into a single document. --> The result is a non-interactive PDF document. A non-interactive PDF document does not let users enter data into its fields.
-
+The capability provides APIs to generate and manipulate the documents. You can generate or manipulate a document on demand or create a batch job to generate multiple documents at defined intervals.
 
 Communications provide APIs for on-demand and scheduled document generation. You can use synchronous APIs for on-demand and batch APIs (asynchronous APIs) for scheduled document generation:
 
@@ -19,7 +18,7 @@ Communications provide APIs for on-demand and scheduled document generation. You
 
 ## Use Synchronous operations {#batch-operations}
 
-A synchronous operation is a process of generating documents in a linear manner. It supports two type of authentication: 
+A synchronous operation is a process of generating or manipulating documents in a linear manner. It supports two type of authentication:
 
 * **Basic authentication**: Basic authentication is a simple authentication scheme built into the HTTP protocol. The client sends HTTP requests with the Authorization header that contains the word Basic followed by a space and a base64-encoded string username:password. For example, to authorize as admin / admin the client sends Basic [base64-encoded string username]: [base64-encoded string password].
 
@@ -29,17 +28,17 @@ A synchronous operation is a process of generating documents in a linear manner.
     1. [Install Experience Manager as a Cloud Service credentials on your environment](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Application Server, Web Server, or other non-AEM servers) configured to send requests to (make calls) the cloud service.
     1. [Generate a JWT token and exchanged it with Adobe IMS APIs for an access token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
     1. Run the Experience Manager API with the access token as a Bearer Authentication token.
-    1. [Set appropriate permissions for the technical account user in the Experience Manager environment](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem). 
+    1. [Set appropriate permissions for the technical account user in the Experience Manager environment](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
     >[!NOTE]
     >
-    >Adobe recommends using token-based authentication on a production environment. 
+    >Adobe recommends using token-based authentication on a production environment.
 
-### Pre-requisites {#pre-requisites}
+### (Document Generation APIs Only)Pre-requisites {#pre-requisites}
 
-To use Synchronous APIs, the following is required: 
+To use Synchronous APIs for Document Generation, the following is required:
 
-* PDF or XDP templates 
+* PDF or XDP templates
 * [Data to be merged with templates](#form-data)
 * Users with Experience Manager administrator privileges
 * Upload templates and other assets to your Experience Manager Forms Cloud Service instance
@@ -67,4 +66,3 @@ The [API reference documentation](https://www.adobe.io/experience-manager-forms-
 >[!NOTE]
 >
 >Only members of forms-users group can access Communications APIs.
-
