@@ -45,7 +45,7 @@ Select the display and click on **Delete** from the bottom of the panel, as show
 
    ![image](/help/screens-cloud/assets/display/disp-5.png)
 
-## Steps to Organizing displays into folders {#organize-display}
+## Steps to Organize displays into folders {#organize-display}
 
 ## How to toggle the folder rail {#toggle-rail}
 
@@ -57,7 +57,7 @@ You can switch the folder rail from displaying all the folders to specific folde
 
 1. The folder side-rail is displayed.
 
- ![image](/help/screens-cloud/assets/display/toggle-rail.png)
+   ![image](/help/screens-cloud/assets/display/toggle-rail.png)
 
 1. Select **Hide Folders** to close it again.
 
@@ -68,13 +68,62 @@ You can create folders to better organize your displays.
 1. Navigate to the displays inventory view.
 1. Ensure you are not currently in a folder, your should see the following:
 
-![image](/help/screens-cloud/assets/display/verify-view.png)
+   ![image](/help/screens-cloud/assets/display/verify-view.png)
 
-Note: **All Displays** should be selected in the folder side rail and the breadcrumb navigation should only show **Displays**.
+   Note: **All Displays** should be selected in the folder side rail and the breadcrumb navigation should only show **Displays**.
 
-1. Click the "Create" button on the top right and select the **Folder** option
+1. Click the "Create" button on the top right and select the **Folder** option.
+
+   ![image](/help/screens-cloud/assets/display/Createfolder.png)
 
 1. Fill in the title for the new folder and click **Create**.
+
+   ![image](/help/screens-cloud/assets/display/Createfolder2.png)
+
+## How to create a new nested folder {#nested-folder}
+
+1. Navigate to the displays inventory view.
+
+1. Select the desired parent folder from the folder side rail or by browsing in the inventory view.
+1. Verify the desired parent folder is selected.
+
+   ![image](/help/screens-cloud/assets/display/Nestedview.png)
+
+   * The folder should be selected in the folder side rail.
+   * The breadcrumb navigation should show the current folder name next to **Displays**.
+
+1. Click  **Create**  on the top right and select the **Folder** option.
+
+   ![image](/help/screens-cloud/assets/display/Createfolder.png)
+
+1. Fill in the title for the new folder and click **Create**.
+
+   ![image](/help/screens-cloud/assets/display/Createfolder2.png)
+
+## How to move content to a new folder {#move-folder}
+
+You can move content to your new folders to better organize your displays.
+
+1. Navigate to the displays inventory view.
+
+1. Select the desired parent folder from the folder side rail or by selecting from the inventory view.
+
+1. Verify you selected the desired parent folder.
+
+ ![image](/help/screens-cloud/assets/display/movetofolder.png)
+
+**Note**: The folder should be selected in the folder side rail. Additionally, the breadcrumb navigation should show the current folder name next to **Displays**.
+
+## How to delete content from a folder {#delete-folder}
+
+All folder operations are accessible via the selection action bar in inventory view.
+
+1. Navigate to the parent folder or select it from the side rail.
+
+1. In the inventory view, select the desired child folder you want to delete and ensure it is empty.
+
+1. Click the **Delete** action in the selection action bar. The action will be disabled if the folder is not empty.
+
 
 ## What's Next {#whats-next}
 
