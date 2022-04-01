@@ -1,6 +1,7 @@
 ---
 title: IMS Configuration for use when Integrating with Adobe Analytics
 description: Learn about IMS Configuration for use when Integrating with Adobe Analytics
+exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
 ---
 # IMS Configuration for use when Integrating with Adobe Analytics {#ims-configuration-for-integration-with-adobe-analytics}
 
