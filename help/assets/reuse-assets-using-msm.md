@@ -5,8 +5,8 @@ contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
+exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
 ---
-
 # Reuse assets using MSM for [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
 Multi Site Manager (MSM) functionality in [!DNL Adobe Experience Manager] enables users to reuse content that is authored once and is reused across multiple web-locations. The same functionality is available for digital assets by the name MSM for [!DNL Assets]. Using MSM for [!DNL Assets], you can:

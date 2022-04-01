@@ -71,7 +71,7 @@ This can be useful, for example, when your business logic requires fine tuning o
    >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
 
    >[!NOTE]
-   >Please note that dispatcher might still cache content according to its own [caching rules](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). To make the content truly private you should ensure that it is not cached by dispatcher.
+   >Please note that dispatcher might still cache content according to its own [caching rules](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). To make the content truly private you should ensure that it is not cached by dispatcher.
 
 ### Client-Side libraries (js,css) {#client-side-libraries}
 

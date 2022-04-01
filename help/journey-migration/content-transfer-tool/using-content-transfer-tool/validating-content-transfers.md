@@ -1,8 +1,8 @@
 ---
 title: Validating Content Transfers
 description: Use the Content Transfer Tool to validate content transfers
+exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 ---
-
 # Validating Content Transfers {#validating-content-transfers}
 
 ## Getting Started {#getting-started}
@@ -150,8 +150,4 @@ To verify, choose a path from the validation report and check if it is present o
 
 Some paths from the extraction and ingestion digests are excluded purposefully to keep the size of these files manageable, with the goal of being able to calculate the migration validation result within two hours of the ingestion completing.
 
-The paths we currently exclude from the digests include: `cqdam.text.txt` renditions, nodes within `/home`, and nodes within `/jcr:system`. 
-
-
-
-
+The paths we currently exclude from the digests include: `cqdam.text.txt` renditions, nodes within `/home`, and nodes within `/jcr:system`.

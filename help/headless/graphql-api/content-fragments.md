@@ -343,7 +343,7 @@ query GetArticlesByVariation($variation: String!) {
  
 ### in query variables
 {
-    "variation": "uk"
+    "variation": "Introduction"
 }
 ```
 

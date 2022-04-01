@@ -1,8 +1,8 @@
 ---
 title: Release Notes for 2021.11.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2021.11.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
 ---
-
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 The following section outlines the general Release Notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
@@ -132,4 +132,4 @@ The Release Date for Best Practices Analyzer v2.1.22 is December 01, 2021.
 ### Bug Fixes {#bug-fixes-bpa}
 
 * Detection of Foundation components was refined to reduce false negatives.
-* For AEM Forms customers, BPA messaging regarding `EMAIL_PDF_SUBMIT_ACTION` not being available on AEM as a Cloud Service has been fixed. 
+* For AEM Forms customers, BPA messaging regarding `EMAIL_PDF_SUBMIT_ACTION` not being available on AEM as a Cloud Service has been fixed.

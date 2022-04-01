@@ -1,8 +1,8 @@
 ---
 title: AEM Reference Demos Add-On Journey
 description: Start here for a guided journey through how to easily add the AEM Reference Demos Add-On to a sandbox environment with minimal AEM configuration and be able to test the powerful features of AEM with rich examples based on best-practices.
+exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
 ---
-
 # AEM Reference Demos Add-On Journey {#reference-demos-add-on-journey}
 
 Start here for a guided journey through how to easily add the AEM Reference Demos Add-On to a sandbox environment with minimal AEM configuration and be able to test the powerful features of AEM Sites and AEM Screens with rich examples based on best-practices.

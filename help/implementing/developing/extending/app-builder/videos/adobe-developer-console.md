@@ -8,8 +8,8 @@ role: Developer, Architect
 level: Beginner
 kt: 9453, 9467, 9468, 9469
 thumbnail: 339162.jpg
+exl-id: bf358ead-cd39-4284-86d5-5b4ab0cf1ae3
 ---
-
 # Adobe Developer Console for App Builder
 
 >[!IMPORTANT]
