@@ -2,7 +2,7 @@
 title: Configure transcription service
 seo-title: Configure transcription service
 description: Adobe Experience Manager Assets is configured with [!DNL Azure Media Services] which automatically generates text transcript of the spoken language in a supported audio or video file in the WebVTT (Vtt) format.
-seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content as well as increase the ROI of these assets by supporting accessibility and localization. 
+seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content as well as increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -10,9 +10,8 @@ contentOwner: Vishabh Gupta
 topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
-
+exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
 ---
-
 # Configure transcription in [!DNL Experience Manager Assets] {#configure-transcription-service}
 
 Transcription is the process of translating the audio from an audio or video file into text (speech to text) using the speech recognition technology. 
@@ -161,6 +160,3 @@ The following audio and video file formats are supported for transcription:
 ## Troubleshooting tips {#troubleshooting}
 
 Log in to your [!DNL Azure Media Services] account with the same credentials (that you have used for configuration) to verify the request status. Contact [!DNL Azure] support if your request is not processed successfully.
-
-
-
