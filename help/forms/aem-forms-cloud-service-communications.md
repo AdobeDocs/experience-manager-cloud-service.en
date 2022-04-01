@@ -48,7 +48,7 @@ Synchronous operations support two type of authentication:
     >Adobe recommends using token-based authentication on a production environment. 
 
 
-## (Only for Document Generation APIs) Configure assets and permissions 
+### (Only for Document Generation APIs) Configure assets and permissions 
 
 To use Synchronous APIs, the following is required: 
 
@@ -67,7 +67,7 @@ An organization typically has multiple templates. For example, one template each
 1. Click Create > File Upload and upload the templates.
 
 
-## Invoke an API
+### Invoke an API
 
 The [API reference documentation](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also provides API defination file in the .yaml format. You can download the .yaml file and upload it to postman to check functionality of the APIs.
 
