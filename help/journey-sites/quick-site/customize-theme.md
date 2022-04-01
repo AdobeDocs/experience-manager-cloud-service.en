@@ -1,8 +1,8 @@
 ---
 title: Customize the Site Theme
 description: Learn how the site theme is built, how to customize, and how to test using live AEM content.
+exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 ---
-
 # Customize the Site Theme {#customize-the-site-theme}
 
 Learn how the site theme is built, how to customize, and how to test using live AEM content.
