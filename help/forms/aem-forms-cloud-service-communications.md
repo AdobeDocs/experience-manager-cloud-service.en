@@ -76,4 +76,3 @@ The [API reference documentation](https://www.adobe.io/experience-manager-forms-
 >[!NOTE]
 >
 >Only members of forms-users group can access Communications APIs.
-
