@@ -55,7 +55,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>Versions older than 30 days are removed</li>
        <li>The most recent 5 versions in the last 30 days are kept</li>
        <li>Irrespective of the rules above, the most recent version is preserved.</li>
-     </ol><br>NOTE: the behavior described above is enforced for new environments as of March 14, 2022 and will be enforced for existing environments (those that were created before March 14, 2022) on April 21, 2022.</td>
+     </ol><br>NOTE: the behavior described above is enforced by default for new environments created after March 14, 2022. Please submit a customer support ticket if you require different settings.</td>
   </td>
   </tr>
   <tr>
@@ -66,7 +66,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>For replication auditing, audit logs older than 3 days are removed</li>
        <li>For DAM (Assets) auditing, audit logs older than 30 days are removed</li>
        <li>For page auditing, logs older than 3 days are removed.</li>
-     </ol><br>NOTE: the behavior described above is enforced for new environments as of March 14, 2022 and will be enforced for existing environments (those that were created before March 14, 2022) on April 21, 2022.</td>
+     </ol><br>NOTE: the behavior described above is enforced by default for new environments created after March 14, 2022. Please submit a customer support ticket if you require different settings.</td>
    </td>
   </tr>
   <tr>
