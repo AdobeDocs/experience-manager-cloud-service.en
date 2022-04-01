@@ -1,8 +1,8 @@
 ---
 title: Cloud Manager Environment Variables
 description: Standard environment variables can be configured and managed via Cloud Manager and be provided to the run time environment, to be used in OSGi configuration.
+exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 ---
-
 # Cloud Manager Environment Variables {#environment-variables}
 
 Standard environment variables can be configured and managed via Cloud Manager. They are provided to the run time environment and can be used in OSGi configurations. Environment variables can be either environment-specific values or environment secrets, based on what is being changed.

@@ -2,6 +2,7 @@
 title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.11.0
 description: These are the release notes for Cloud Manager in AEM as a Cloud Service release 2021.11.0
 feature: Release Information
+exl-id: 98fd6d8a-ddc2-4f53-9dfc-d8e21af0c14d
 ---
 # Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.11.0 {#release-notes}
 
@@ -55,4 +56,4 @@ The next release is planned for 16 December 2021.
 
 * Error message when max number of repositories has been reached did not specify the reason for the error.
 
-* In rare cases, pipelines were failing due to inappropriate retry handling of certain response codes. 
+* In rare cases, pipelines were failing due to inappropriate retry handling of certain response codes.

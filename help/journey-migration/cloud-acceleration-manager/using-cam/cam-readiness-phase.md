@@ -1,6 +1,7 @@
 ---
 title: Readiness Phase in Cloud Acceleration Manager
 description: This page provides an overview on the Readiness phase in Cloud Acceleration Manager.
+exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 ---
 # Readiness Phase in Cloud Acceleration Manager {#readiness-phase-cam}
 

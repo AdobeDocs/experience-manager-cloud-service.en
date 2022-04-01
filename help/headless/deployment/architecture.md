@@ -2,8 +2,8 @@
 title: Architecture of AEM Headless
 description: Learn about the high level architecture for Adobe Experience Manager as it relates to a headless deployment. Understand the role of AEM Author, Preview, and Publish services and the recommended deployment pattern for headless applications.
 feature: Content Fragments,GraphQL API
+exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
 ---
-
 # Architecture of AEM Headless
 
 A typical AEM environment is made up of an Author Service, Publish Service and an optional Preview Service.
@@ -43,4 +43,3 @@ Another option for headless deployments is to incorporate an **AEM Preview** ser
 1. A Preview version of the application can be set up that connects to the Preview service.
 1. Once content has been reviewed and approved, it can be published to the AEM Publish service.
 1. End users interact with the Production version of the application. The Production application connects to the Publish service via the Dispatcher and uses the GraphQL APIs to request and consume content.
-

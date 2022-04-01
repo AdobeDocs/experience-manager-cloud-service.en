@@ -1,8 +1,9 @@
 ---
-title: Translate Content
+title: Translate Content (AEM headless)
 description: Use the translation connector and rules to translate your headless content.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 ---
+
 # Translate Content {#translate-content}
 
 Use the translation connector and rules to translate your headless content.
@@ -15,6 +16,10 @@ In the previous document of the AEM headless translation journey, [Configure Tra
 * Be able to define your own translation rules.
 
 Now that your connector and translations rules are set up, this article takes you through the next step of translating your headless content.
+
+>[!NOTE]
+>
+>If you skipped the [Configure Translation Rules](translation-rules.md) step of this journey because you are on the prerelease channel of AEM as a Cloud Service, you do not need to concern yourself with translation rules as mentioned in this document.
 
 ## Objective {#objective}
 
