@@ -1,17 +1,17 @@
 ---
-title: Integrating with Git
-description: Integrating with Git - Cloud Services
+title: Using git with Cloud Manager
+description: Learn how to use Cloud Manager's git repositories and how to integrate your own on-premise customer-managed git repository with Cloud Manager.
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 ---
-# Integrating Git with Adobe Cloud Manager {#git-integration}
+# Using git with Cloud Manager {#git-integration}
 
-Adobe Cloud Manager comes provisioned with a single git repository that is used to deploy code using Cloud Manager's CI/CD pipelines. Customers can use the Cloud Manager's git repository out of the box. Customers also have the option of integrating an on-premise or **customer-managed** git repository with Cloud Manager.
+Adobe Cloud Manager comes provisioned with a single git repository that is used to deploy code using Cloud Manager's CI/CD pipelines. 
+
+You can use Cloud Manager's git repository out of the box, but you also have the option of integrating a customer-managed git repository with Cloud Manager.
 
 ## Git Integration Overview {#git-integration-overview}
 
->[!VIDEO](https://video.tv.adobe.com/v/28710/)
-
-This video series explores several use cases when it comes to integrating a customer-managed git repository with Cloud Manager, including:
+This video series explores several use cases when integrating a customer-managed git repository with Cloud Manager, including:
 
 * [Initial Sync](#initial-sync)
 * [Basic Branching Strategy](#branching-strategy)
@@ -21,19 +21,19 @@ This video series explores several use cases when it comes to integrating a cust
 
 The video series assumes a basic knowledge of git and source control management. See the [additional resources below](#additional-resources) for more details on git.
 
->[!NOTE]
->
->The steps and naming conventions outlined in this video series represent some best practices for working with a customer-managed git repository and Cloud Manager. It is expected that the conventions and workflows depicted would be adapted for individual development teams.
+>[!VIDEO](https://video.tv.adobe.com/v/28710/)
+
+The steps and naming conventions outlined in this video series represent some best practices for working with a customer-managed git repository in Cloud Manager. It is expected that the conventions and workflows depicted are adapted for individual use cases.
 
 ## Initial Sync {#initial-sync}
 
-First steps for synchronizing a customer-managed Git repository with Cloud Manager's Git repository.
+In this video, learn the first steps for synchronizing a customer-managed Git repository with Cloud Manager's Git repository.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
 
 ## Basic Branching Strategy {#branching-strategy}
 
-Follow the video below to learn the basic branching strategies.
+In this video, learn basic branching strategies.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
@@ -51,7 +51,7 @@ Prepare code for a production release in a customer-managed git repository and s
 
 ## Synchronizing Release Tags {#sync-tags}
 
-Synchronize release tags from a Cloud Manager git repository into a customer-managed git repository in order to provide visibility as to what code has been deployed to stage and production environments.
+Synchronize release tags from a Cloud Manager git repository into a customer-managed git repository in order to provide visibility for what code has been deployed to staging and production environments.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
 
