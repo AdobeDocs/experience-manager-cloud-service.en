@@ -10,7 +10,7 @@ This document provides answers to the most frequently-asked questions about Clou
 
 ## Is it possible to use Java 11 with Cloud Manager builds? {#java-11-cloud-manager}
 
-AEM Cloud Manager build fails when attempting to switch the build from Java 8 to 11. The problem can have many causes and most common ones are documented below:
+Your AEM Cloud Manager build may fail when attempting to switch the build from Java 8 to 11. The problem can have many causes and most common ones are documented in this section.
 
 * Add the `maven-toolchains-plugin` with proper settings for Java 11.
   * This is documented [here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
@@ -65,7 +65,7 @@ The following scenarios deal with package and bundle jar file versioning for sta
    git push origin --delete testbranch1
    ```
 
-## My maven build fails for Cloud Manager deployments but builds locally without errors. How do I debug? {#maven-build-fail}
+## My maven build fails for Cloud Manager deployments but it builds locally without errors. What is wrong? {#maven-build-fail}
 
 See [Git Resource](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) for more details.
 
@@ -86,7 +86,7 @@ In this case, the `sling-distribution-importer` user needs additional permission
 
 The solution is to add a [RepositoryInitializer OSGi configuration](/help/implementing/deploying/overview.md#repoint) script to your apps deployment package to add ACLs for the `sling-distribution-importer` user.
 
-In the example error, the package `myapp-base.ui.content-*.zip` includes content under `/conf` and `/var/workflow`. In order for the deployment not to fail, you need to add permissions for the `sling-distribution-importer` under those paths.
+In the previous example error, the package `myapp-base.ui.content-*.zip` includes content under `/conf` and `/var/workflow`. In order for the deployment to succeed, permissions for the `sling-distribution-importer` under those paths is needed.
 
 Here's an example [org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) of one such OSGi configuration that adds additional permissions for the `sling-distribution-importer` user.  This configuration adds permissions under `/var`.  This xml file below [1] needs to be added to the application package under `/apps/myapp/config` (where myapp is the folder where your application code is stored).
 org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config
