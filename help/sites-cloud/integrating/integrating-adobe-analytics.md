@@ -15,7 +15,7 @@ Integrating Adobe Analytics and AEM as a Cloud Service allows you to track your 
 Compared to previous versions of AEM, framework support is not provided in the Analytics Configuration in AEM as a Cloud Service. Instead, it is now done through Adobe Launch, which is the defacto tool for instrumenting an AEM site with Analytics capabilities (JS libraries). In Adobe Launch, a property is created where the Adobe Analytics extension can be configured and rules are created to send data to Adobe Analytics. Adobe Launch has replaced the task of analytics provided by the sitecatalyst.
 
 >[!NOTE]
->Added in the prerelease channel is the requirement for IMS authentication in order to integrate Adobe Analytics with AEM as a Cloud Service. See the prerelease channel [documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable this setting for your environment.
+>Added in the prerelease channel is the requirement for IMS authentication in order to integrate Adobe Analytics with AEM as a Cloud Service. See the [Configuring Adobe Analytics with IMS authentication (prerelease channel)](#configuration-parameters-ims) section for additional details. See the prerelease channel [documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable this setting for your environment.
 
 >[!NOTE]
 >
