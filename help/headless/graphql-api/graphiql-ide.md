@@ -35,7 +35,7 @@ The **GraphiQL** tool allows you to test and debug your GraphQL queries by enabl
 
 For example: 
 
-* `http://localhost:4502/content/graphiql.html`
+* `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
 
