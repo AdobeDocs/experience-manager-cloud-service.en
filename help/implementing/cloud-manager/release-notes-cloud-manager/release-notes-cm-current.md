@@ -1,13 +1,13 @@
 ---
-title: Release Notes for Cloud Manager 2022.3.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2022.3.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2022.4.0 in Adobe Experience Manager as a Cloud Service
+description: These are the release notes for Cloud Manager 2022.4.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 ---
 
-# Release Notes for Cloud Manager 2022.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release Notes for Cloud Manager 2022.4.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager 2022.3.0 in AEM as a Cloud Service.
+This page documents the release notes for Cloud Manager 2022.4.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -15,15 +15,13 @@ This page documents the release notes for Cloud Manager 2022.3.0 in AEM as a Clo
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2022.3.0 in AEM as a Cloud Service 10 March 2022. The next release is planned for 7 April 2022.
+The release date for Cloud Manager release 2022.4.0 in AEM as a Cloud Service 7 April 2022. The next release is planned for 5 May 2022.
 
 ## What's New {#what-is-new}
 
-* Accessing AEM Environment log can be done using the Developer role.
+* You can now easily find a git branch by typing the first few characters of the name in the input field in the add and edit pipeline wizard and selecting from suggested matches.
+* The **Pipelines** page now has pagination to improve usability for programs with a large number of pipelines.
+  * 50 rows per page will be displayed in the table.
+* The version of the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) used by Cloud Manager has been updated to version 36.
 
 ## Bug Fixes {#bug-fixes}
-
-* A subset of git repositories created manually had an incorrect name value which prevented the build artifact reuse feature from being effective. The names of those repositories have been changed and users will see the corrected name in the Cloud Manager API/UI.
-* Build artifacts from non-production pipelines were inappropriately reused on production full stack pipelines.
- * When adding or editing a code quality pipeline, the options to handle metric failures is no longer displayed.
-* Some unexpected pipeline variable configurations could cause in the build step.
