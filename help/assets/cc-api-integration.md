@@ -62,7 +62,7 @@ To use processing profiles to automatically create variations, follow these step
 
    1. Click ... on the program card.
 
-   1. Select **[!UICONTROL Edit Program]**, and then select **[!UICONTROL Solutions & Add-ons]** tab.
+   1. Select **[!UICONTROL Edit Program]** and then select **[!UICONTROL Solutions & Add-ons]** tab.
 
    1. Expand **[!UICONTROL Assets]** and select **[!UICONTROL Content Automation]**.
    1. Click **[!UICONTROL Update]**.
