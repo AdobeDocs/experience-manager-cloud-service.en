@@ -1,8 +1,8 @@
 ---
 title: Managing IP Allow Lists
 description: Learn how to view, edit, delete, and check the status of your IP allow lists in Cloud Manager.
+exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 ---
-
 # Managing IP Allow Lists {#manage-ip-allow-lists}
 
 Learn how to view, edit, delete, and check the status of your IP allow lists in Cloud Manager.

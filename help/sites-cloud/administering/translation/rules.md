@@ -13,6 +13,22 @@ Translation rules identify the content to translate for pages, components, and a
 >
 >If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
 
+## Content Fragments and Translation Rules {#content-fragments}
+
+The translation rules described in this document apply to Content Fragments only if the **Enable Content Model Fields for Translation** option has not been activated at the [translation integration framework configuration level.](integration-framework.md#assets-configuration-properties)
+
+If the **Enable Content Model Fields for Translation** option is active, AEM will use the **Translatable** field on [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md#properties) to determine if the field is to be translated. In this case, [translation rules](rules.md) are superseded.
+
+If you wish to use translation rules for translating your Content Fragments, the **Enable Content Model Fields for Translation** option on the translation integration framework configuration must be disabled.
+
+>[!NOTE]
+>
+>This feature is available in the prerelease channel.
+> 
+>See the [Prerelease Channel documentation](/help/release-notes/prerelease.md#enable-prerelease) for information on how to enable the feature for your environment.
+
+## Overview {#overview}
+
 Pages and assets are represented as nodes in the JCR repository. The content that is extracted is one or more property values of the nodes. Translation rules identify the properties that contain the content to extract.
 
 Translation rules are expressed in XML format and stored in these possible locations:

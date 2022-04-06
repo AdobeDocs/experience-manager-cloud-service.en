@@ -26,6 +26,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Release Information](/help/release-notes/home.md)
   + Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
+    + 2022 {#2022}
+      + [Release Notes for 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
     + 2021 {#2021}
       + [Release Notes for 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md) 
       + [Release Notes for 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
@@ -98,7 +100,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/journey-migration/getting-started-partners.md)
   + Release Notes for Migration Tools {#release-notes-migration-tools}
     + [Current Release Notes (2022.3.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-    + [Release Notea for 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
+    + [Release Notes for 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
     + [Release Notes for 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
     + 2021 {#2021}
       + [Release Notes for 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
@@ -257,7 +259,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Integrating with AEM as a Cloud Service {#integrations}
     + [Integrating with Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
     + [Integrating with Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+    + [IMS Configuration for use when Integrating with Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
     + [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+    + [IMS Configuration for use when Integrating with Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + Assets {#assets}
   + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
@@ -295,11 +299,12 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Create and share private folders](/help/assets/private-folder.md)
     + [Digital Rights Management for assets](/help/assets/drm.md)
     + [Watermark assets](/help/assets/watermark-assets.md)
-    + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
+    + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)    
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
     + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
+    + [Configure transcription for audio and video assets](/help/assets/configure-transcription.md)
     + [Multilingual assets and translation](/help/assets/translate-assets.md)
     + [Search facets](/help/assets/search-facets.md)
     + [Assets HTTP API](/help/assets/mac-api-assets.md)
