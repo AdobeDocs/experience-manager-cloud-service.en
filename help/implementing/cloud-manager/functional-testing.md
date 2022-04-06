@@ -96,6 +96,10 @@ The test classes need to be normal JUnit tests. The test infrastructure is desig
 
 Please refer to the [`aem-testing-clients` GitHub repo](https://github.com/adobe/aem-testing-clients) for more details.
 
+>[!TIP]
+>
+>[Watch this video](https://www.youtube.com/watch?v=yJX6r3xRLHU) about how you can use custom functional tests to improve your confidence in your CI/CD pipelines.
+
 ## Custom UI Testing {#custom-ui-testing}
 
 Custom UI testing is an optional feature that enables you to create and automatically run UI tests for your applications. UI tests are Selenium-based tests packaged in a Docker image in order to allow a wide choice in language and frameworks (such as Java and Maven, Node and WebDriver.io, or any other framework and technology built upon Selenium).
