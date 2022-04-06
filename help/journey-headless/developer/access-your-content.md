@@ -266,7 +266,7 @@ The fragment models will be used:
 
 The queries can be entered in the GraphiQL interface, for example at:
 
-* `http://localhost:4502/content/graphiql.html`
+* `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
 
