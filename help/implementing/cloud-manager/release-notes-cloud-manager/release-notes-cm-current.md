@@ -19,7 +19,7 @@ The release date for Cloud Manager release 2022.4.0 in AEM as a Cloud Service 7 
 
 ## What's New {#what-is-new}
 
-* You can now easily find a git branch by typing the first few characters of the name in the input field in the add and edit pipeline wizard and selecting from suggested matches for both [production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [non-production](/) pipelines.
+* You can now easily find a git branch by typing the first few characters of the name in the input field in the add and edit pipeline wizard and selecting from suggested matches for both [production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [non-production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) pipelines.
 * The **Pipelines** page now has pagination to improve usability for programs with a large number of pipelines.
   * 50 rows per page will be displayed in the table.
 * The version of the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) used by Cloud Manager has been updated to version 36.
