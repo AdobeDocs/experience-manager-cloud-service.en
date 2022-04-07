@@ -11,8 +11,9 @@ This document provides answers to the most frequently-asked questions about Clou
 ## Is it possible to use Java 11 with Cloud Manager builds? {#java-11-cloud-manager}
 
 Yes. You will need to add the `maven-toolchains-plugin` with proper settings for Java 11.
-  * This is documented [here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
-  * For example, see the [wknd project sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+
+* This is documented [here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+* For example, see the [wknd project sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## My build fails with an error about maven-scr-plugin after switching from Java 8 to Java 11. What can I do? {#build-fails-maven-scr-plugin}
 
@@ -24,7 +25,7 @@ Your AEM Cloud Manager build may fail when attempting to switch the build from J
 
 For instructions on how to remove this plugin, see [here.](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)
 
-## My build fails with an error about  org.apache.maven.plugins.enforcer.RequireJavaVersion after switching from Java 8 to Java 11. What can I do? {#build-fails-maven-scr-plugin}
+## My build fails with an error about RequireJavaVersion after switching from Java 8 to Java 11. What can I do? {#build-fails-requirejavaversion}
 
 For Cloud Manager builds, the `maven-enforcer-plugin` fails with this error.
 
