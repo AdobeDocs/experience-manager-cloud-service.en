@@ -1,6 +1,6 @@
 ---
 title: Introduction to [!DNL AEM Forms] as a Cloud Service
-description: Adobe Experience Manager Forms as a Cloud Service self-help resources and documentation links
+description: Use this Platform-as-a-Service (PaaS) to create, manage, and publish enterprise-class digital forms and business processes, as well as connect forms to current data sources.
 landing-page-description: Understand how to use forms in AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 ---
