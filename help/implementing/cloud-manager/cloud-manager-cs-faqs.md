@@ -12,8 +12,9 @@ This document provides answers to the most frequently-asked questions about Clou
 
 Yes. You will need to add the `maven-toolchains-plugin` with proper settings for Java 11.
 
-* This is documented [here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
-* For example, see the [wknd project sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+The process is documented [here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+
+For example, see the [wknd project sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## My build fails with an error about maven-scr-plugin after switching from Java 8 to Java 11. What can I do? {#build-fails-maven-scr-plugin}
 
@@ -27,7 +28,7 @@ For instructions on how to remove this plugin, see [here.](https://cqdump.wordpr
 
 ## My build fails with an error about RequireJavaVersion after switching from Java 8 to Java 11. What can I do? {#build-fails-requirejavaversion}
 
-For Cloud Manager builds, the `maven-enforcer-plugin` fails with this error.
+For Cloud Manager builds, the `maven-enforcer-plugin` can fail with this error.
 
 ```text
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
@@ -49,7 +50,9 @@ This allows subsequent deployment to still be installed when the version did not
 
 You can also set the version to `-SNAPSHOT` for stage and production builds or deployments. Cloud Manager automatically sets a proper version number and creates a tag for you in git. This tag can be referred to later, if required.
 
-## How does package and bundle versioning work on stage and production deployments? {#snapshot-version}
+Further details about version handling are [documented here.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+
+## How does package and bundle versioning work for stage and production deployments? {#snapshot-version}
 
 In stage and production deployments, an automatic version is generated as [documented here.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
 
@@ -80,12 +83,11 @@ The solution is to add a [RepositoryInitializer OSGi configuration](/help/implem
 
 In the previous example error, the package `myapp-base.ui.content-*.zip` includes content under `/conf` and `/var/workflow`. In order for the deployment to succeed, permissions for the `sling-distribution-importer` under those paths is needed.
 
-Here's an example [org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) of one such OSGi configuration that adds additional permissions for the `sling-distribution-importer` user.  This configuration adds permissions under `/var`.  This xml file below [1] needs to be added to the application package under `/apps/myapp/config` (where myapp is the folder where your application code is stored).
-org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config
+Here's an example of an [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi configuration that adds additional permissions for the `sling-distribution-importer` user.  The configuration adds permissions under `/var`.  Such a configuration must be added to the application package under `/apps/myapp/config` (where myapp is the folder where your application code is stored).
 
-## My Cloud Manager deployment fails at the deploy step in AEM as a Cloud Service and I already a RepositoryInitializer OSGi configuration. What else can I do? {#build-failures}
+## My Cloud Manager deployment fails at the deploy step in AEM as a Cloud Service and I already added a RepositoryInitializer OSGi configuration. What else can I do? {#build-failures}
 
-If [adding a RepositoryInitializer OSGi configuration](##cloud-manager-deployment-cloud-service) did not solve the error, it may be due to one of these additional issues.
+If [adding a RepositoryInitializer OSGi configuration](#cloud-manager-deployment-cloud-service) did not solve the error, it may be due to one of these additional issues.
 
 * The deployment might be failing due to a bad OSGi configuration that breaks an out-of-the box service. 
   * Check the logs during deployment to see if there are any obvious errors.
@@ -121,6 +123,6 @@ setting variables... !
 Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/222/variables (403 Forbidden)
 ```
 
-In this case, the user executing these commands needs to be added to the **Deployment Manage** role in the Admin Console.
+In this case, the user executing these commands needs to be added to the **Deployment Manager** role in the Admin Console.
 
 See [API Permissions](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md) for more details.
