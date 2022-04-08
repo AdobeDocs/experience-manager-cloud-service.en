@@ -33,7 +33,7 @@ See these sample queries for illustrations of create queries, together with samp
 >
 >Depending on your instance you can directly access the [GraphiQL interface included with AEM GraphQL API](/help/headless/graphql-api/graphiql-ide.md) for submitting and testing queries.
 >
->For example: `http://localhost:4502/content/graphiql.html`
+>For example: `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
 >
