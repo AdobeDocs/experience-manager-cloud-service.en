@@ -13,7 +13,7 @@ exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 
 ## Introduction {#apache-and-dispatcher-configuration-and-testing}
 
-This page describes the dispatcher tools and how to download and extract them, the supported apache modules and provides a high-level overview of the legacy and flexible modes. Additionally, there are further references on validation and debugging and migrating the Dispatcher configuration from AMS to AEM as a Cloud Service
+This page describes the dispatcher tools and how to download and extract them, the supported apache modules and provides a high-level overview of the legacy and flexible modes. Additionally, there are further references on validation and debugging and migrating the Dispatcher configuration from AMS to AEM as a Cloud Service. Also, see [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) for additional details about deploying dispatcher files in a cloud service environment.
 
 ## Dispatcher Tools {#dispatcher-sdk}
 
