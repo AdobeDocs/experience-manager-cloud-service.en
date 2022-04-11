@@ -68,6 +68,7 @@ To finish the configuration of the front-end code non-production pipeline, follo
    >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
+     * Enter the first few characters of the branch name and the auto-complete feature of this field will find the matching branches to help you select.
    * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
    
    ![Front-end pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
@@ -96,7 +97,8 @@ To finish the configuration of the full-stack code non-production pipeline, foll
    >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
-   * **Ignore Web Tier Configuration** - 
+     * Enter the first few characters of the branch name and the auto-complete feature of this field will find the matching branches to help you select.
+   * **Ignore Web Tier Configuration** - When checked, the pipeline will not deploy your web tier configuration.
 
    ![Full-stack pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
