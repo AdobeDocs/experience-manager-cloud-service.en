@@ -72,6 +72,7 @@ To finish the configuration of the front end code production pipeline, follow th
    >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
+     * Enter the first few characters of the branch name and the auto-complete feature of this field will find the matching branches to help you select.
    * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
    * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
 
@@ -100,6 +101,7 @@ To finish the configuration of the full-stack code production pipeline, follow t
    >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
+     * Enter the first few characters of the branch name and the auto-complete feature of this field will find the matching branches to help you select.
    * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
    * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
    * **Scheduled** - This option allows the user to enable the scheduled production deployment.
@@ -147,6 +149,7 @@ To finish the configuration of the full-stack code production pipeline, follow t
    >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
    
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
+     * Enter the first few characters of the branch name and the auto-complete feature of this field will find the matching branches to help you select.
    * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
      * For web tier config pipelines this is usually the path containing `conf.d`, `conf.dispatcher.d`, and `opt-in` directories.
      * For example, if the project structure was generated from the [AEM Project Archetype,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) the path would be `/dispatcher/src`.
