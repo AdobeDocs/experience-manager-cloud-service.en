@@ -213,9 +213,9 @@ During bulk import, [!DNL Experience Manager] look for the existing folders  to 
 
 **Handling asset name in bulk import**
 
-For asset filenames, the Jcr name&path is sanitized using the API: `JcrUtil.escapeIllegalJcrChars`.
+For asset filenames, the JCR name and path is sanitized using the API: `JcrUtil.escapeIllegalJcrChars`.
 
-* Keep the unicode as is
+* Unicode characters are not changed
 * Replace the special characters with their URL Escape Code, for example, `new asset.png` is updated to `new%20asset.png`:
 
   ```
@@ -239,10 +239,10 @@ For asset filenames, the Jcr name&path is sanitized using the API: `JcrUtil.esca
 
 **Handling folder name in bulk import**
 
-For folder filenames, the Jcr name&path is sanitized using the API: `JcrUtil.createValidName`.
+For folder filenames, the JCR name and path is sanitized using the API: `JcrUtil.createValidName`.
 
-* Convert upper case to lower case
-* Keep unicode as is
+* Upper case characters are converted to lower case
+* Unicode characters are not changed
 * Replace the special characters with dash ('-'), for example, `new asset.png` is updated to `new-asset.png`:
 
   ```
