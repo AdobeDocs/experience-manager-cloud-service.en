@@ -82,7 +82,7 @@ Once the installation is complete, a message window will appear. Click the **Fin
    >
    >If needed, you can enter the following command to stop the server `nlserver stop web`.
 1. Open the hosts file as administrator in any text editor.
-1. Add an entry for your Adobe Campaign Classic server's name: `127.0.0.1 <server name>.corp.adobe.com`. For example:
+1. Add an entry for your Adobe Campaign Classic server's name: 127.0.0.1 server name.corp.adobe.com. For example:
 
 ```
 127.0.0.1   acc-test.corp.adobe.com
@@ -103,7 +103,7 @@ Once the installation is complete, a message window will appear. Click the **Fin
 (skip) Since this is first time you log in the **Declare a new instance** window is displayed. You will now be able to create a database, as follows:
 
 1. In the Declare a new instance window:
-   * Enter the `<server name>` into the Name field (we set acc-test, note that the system will change this to acc_test) (unclear/more context)
+   * Enter the server name into the Name field (we set acc-test, note that the system will change this to acc_test) (unclear/more context)
    * Enter * into the DNS masks field
    * Choose the language
 Once you've clicked ok, you will go back to the login page. Log in again with your credentials.
