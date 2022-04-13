@@ -33,7 +33,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Creating Content Fragment Models {#creating-content-fragment-models}
 
-Then the Content Fragments Models can be created and the structure defined. This can be done under Tools -> Assets -> Content Fragment Models. 
+Then the Content Fragments Models can be created and the structure defined. This can be done under Tools -> General -> Content Fragment Models. 
 
 ![Content Fragment Models in Tools](assets/cfm-tools.png)
 

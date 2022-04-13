@@ -21,7 +21,7 @@ The remainder of this guide will focus on GraphQL access and Content Fragment de
 
 Before the GraphQL APIs can be used, a GraphQL endpoint must be created.
 
-1. Navigate to **Tools**, **Assets**, then select **GraphQL**.
+1. Navigate to **Tools**, **General**, then select **GraphQL**.
 1. Select **Create**.
 1. The **Create new GraphQL Endpoint** dialog will open. Here you can specify:
    * **Name**: name of the endpoint; you can enter any text.
