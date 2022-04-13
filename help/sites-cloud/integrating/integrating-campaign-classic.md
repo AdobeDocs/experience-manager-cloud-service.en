@@ -129,11 +129,13 @@ Once you've clicked ok, you will go back to the login page. Log in again with yo
 Open the Adobe Campaign Classic client console from start menu and log in. The home page should appear.
 
 1. Click on **Explorer** to open the Explorer view.
+![explorer](assets/explorer.png)
 1. In the tree view on the left, navigate to **Administration->Access Management->Operators**.
 1. Double-click on the `aemserver` entry in the Operators list on the right.
 1. Switch to the **Edit** tab. Set the password for the aemserver.
 1. Click on the **Access rights** tab and click on the **Edit the access parameters** link under the security settings.
 1. Under Encryption, select public network as the authorized connection zone. Click **OK**.
+![connection zone](assets/auth.png)
 1. Click on **Save**.
 1. Log out.
 1. Go to the Adobe Campaign Classic v7 install location, for example `C:\Program Files\Adobe\Adobe Campaign Classic v7\conf` and open the serverConf.xml as an administrator.
@@ -152,6 +154,7 @@ Open the Adobe Campaign Classic client console from start menu and log in. The h
 
 1. Log into cloud manager and launch the AEM as a Cloud Service author instance.
 1. Go to **Tools→Cloud Service→Legacy Cloud Service**.
+![legacy cloud service](assets/legacy.png)
 1. Scroll down to Adobe Campaign and click on the **Configure Now** link.
     * Enter a title
     * Enter a name
@@ -196,6 +199,7 @@ Service 3310 - [com.day.cq.commons.Externalizer] (pid: com.day.cq.commons.impl.E
 You need to set the password for the campaign-remote user. It is necessary in order to connect Adobe Campaign Classic with AEM as a Cloud service.
 
 1. Go to **AEM→Tools→Security→Users**.
+![security users](assets/user.png)
 1. Search for the `campaign-remote` user and click on it.
 1. Click on Change Password
     * Enter the new password twice
