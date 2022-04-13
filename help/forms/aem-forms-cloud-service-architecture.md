@@ -32,20 +32,29 @@ Every AEM Forms as a Cloud Service program has access to Fastly CDN service. It 
 
 An Author instance is an AEM Forms as a Cloud Sevice instance running in the standard Author run mode. It is intended for internal users, forms designers, and developers. AEM Forms as a Cloud Service provides seperate Author environments for development, stage, and production. A Forms as a Cloud Service author environment enables the following functionalities:
 
-* Authoring and managing forms
-* Converting a PDF form to an adaptive form using Automated forms conversion service
-* Creating and running Forms-centric workflows
-* Managing adaptive forms assets
-* Managing Communications assets
+* Authoring and managing forms.
+* Connecting to Automated forms conversion service to convert a PDF form to an adaptive form.
+* Creating and running Forms-centric workflows.
+* Managing adaptive forms assets.
+* Managing Communications assets.
+* Connecting with PDF Services APIs to <>
+* Sync APIs and Batch APIs to create, assemble, and deliver brand-oriented and personalized communications.
 
 ### Publish
 
 A publish instance is an AEM Forms server running in the standard Publish run mode. Publish instances are intended for end users of form-based applications, for example, users accessing a public website and submitting forms. It enables the following functionalities:
 
-* Rendering and submitting Forms for end users
+* Rendering and submitting forms for end users.
 * Transporting of raw submitted form data for further processing and storage in the final system-of-record.
-* Rendering Communications using Communications Document Generation APIs
-* Manipulaing documents using Communications Document Manipulation APIs
+* Connecting to Customer Managed Storage to store data.
+* Rendering Communications using Communications Document Generation APIs.
+* Manipulaing documents using Communications Document Manipulation APIs.
+* Connecting with Adobe Sign to e-sign an adaptive form.
+* Sync APIs to create, assemble, and deliver brand-oriented and personalized communications.
+
+#### Dispatcher
+
+Dispatcher is Adobe Experience Manager’s caching and/or load balancing tool that can be used in conjunction with an enterprise-class web server.
 
 ### Adobe Services
 
@@ -59,6 +68,12 @@ Adobe Sign is a cloud-based e-signature service that allows the user to send, si
 **PDF Service API**
 Adobe’s PDF Services API lets create, combine, export, and extract data from PDFs through powerful and flexible cloud-based APIs.
 
+### Customer Managed Storage
+
+Forms as a Cloud Service provide options to store content in an external storage system such as Blob Store, Database, or a storage service. You can also store in-process Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) elements in a customer-managed repository for secure processing. Adobe recommends to store sensetive data on customer managed storages only.
+
+You can use the **Unified Storage Connector** to connect to Blob Storage and **Form Data Model** to connect to  databases or backend services (RESTful, SOAP, and more).  
+
 ### Document Services
 
 Document services capabilities provide three service:  
@@ -68,10 +83,6 @@ Document services capabilities provide three service:
 * **Assembler Service (Communications - Document Manipulation APIs)** helps combine, rearrange, and validate PDF documents.
 
 * **formsDorService** helps generate Document of Record (DoR)
-
-### Customer Managed Storage
-
-Forms as a Cloud Service provide options to store content in an external storage system such as Blob Store, Database, or a storage service. You can also store in-process Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) elements in a customer-managed repository for secure processing. You can use the **Unified Storage Connector** to connect to customer databases.  
 
 ### Cloud Manager
 
@@ -141,7 +152,7 @@ AEM as a Cloud Service includes Admin Console support for AEM instances and Adob
 
 Various personas are involved in a typical [!DNL AEM Forms] project. After you log in to your [!DNL AEM Forms] as a Cloud Service instance, you can [add users in admin console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html) for personas applicable to your organization or project and [assign users to built-in groups](forms-groups-privileges-tasks.md) to provide them required privileges.
 
-To learn various in-built [!DNL AEM Forms] specific user groups and privileges available on [!DNL AEM Forms] as a Cloud Services instance, see [Configure, user, roles and groups](forms-groups-privileges-tasks.md).
+To learn various in-built [!DNL AEM Forms] specific user groups and privileges available on [!DNL AEM Forms] as a Cloud Services instance, see [Configure, user, roles and groups](forms-groups-privileges-tasks.md). 
 
 ## Developer Experience {#developer-experience}
 
@@ -162,13 +173,17 @@ Also, one of the most common requirements for developers is quick access to the 
 * Search index definitions
 * ACLs and permissions
 * Service users and user groups
-Set up your development environment, [Configure your CI/CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html), and learn to [deploy your code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) on the environment.
+Set up your development environment, [Configure your CI/CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html), and learn to [deploy your code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) on the environment. -->
 
-## Local development {#local-development}
+### Adaptive Form Authoring {#local-development}
 
 When you set up and configure an [!DNL AEM Forms] as a Cloud Service environment, you set up development, staging, and production environments. In addition, set up and configure a local development environment for rapid iterations and development. You can download and set up AEM SDK and [!DNL AEM Forms] add-on feature archive to set up a local [!DNL Forms] as a Cloud Service development environment.  For detailed instructions, see [Set up a local development environment](setup-local-development-environment.md).
+
+Form authors connect to a development environment for form editing.The final forms is brought into the production environment through package export/import or CI/CD.
+
+> ![NOTE]
+ > SMTP server is required for sending emails. For example, a submission acknowledgment from Publish, or an approval/rejection mail from an Author workflow. Customers have to provide their own SMTP server.
 
 ## Debugging {#debugging}
 
 AEM as a Cloud Service runs on self-service, scalable, cloud infrastructure. It requires AEM developers to understand and debug various facets of AEM as a Cloud Service, from build and deploy to obtaining details of running AEM applications. For detailed information, see [Debugging AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=en).
- -->
