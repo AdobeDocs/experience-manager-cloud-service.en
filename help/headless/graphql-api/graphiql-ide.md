@@ -33,9 +33,10 @@ The **GraphiQL** tool allows you to test and debug your GraphQL queries by enabl
 * see the **History** of your previous queries
 * use the **Documentation Explorer** to access the documentation; helping you to learn and understand what methods are available.
 
-For example: 
+You can access the query editor from either: 
 
-* `http://localhost:4502/aem/graphiql.html`
+* **Tools** -> **General** -> **GraphQL Query Editor**
+* directly; for example, `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
 
