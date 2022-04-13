@@ -9,28 +9,26 @@ description: Understand the architecture of [!DNL AEM Forms] as a Cloud Service 
 
 The [!DNL AEM] as a Cloud Service has a dynamic architecture with a variable number of AEM instances. It provides development, stage, and production environments. It provides tools to manage Author and Publish instances (Cloud Manager), maintain users and authentications (Admin Console and IMS (Adobe Identity management) system), configure caching (Fastly CDN), and cloud-native development environment. For more information on [!DNL AEM] as a Cloud Service architecture see, [An Introduction to the Architecture of [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=en)
 
-AEM Forms as a Cloud Service supports two major use cases: Digital Enrolment and Communications. The following illustrations depict architecture for both the use cases.
+AEM Forms as a Cloud Service supports two major use cases: Digital Enrollment and Communications. The following illustrations depict architecture for both the use cases.
 
 ## Architecture and flow diagrams
 
 |   |   |
 |---|---|
-| **Forms Digital Enrolment**  | ![Forms-Digital Enrolment](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)  |
+| **Forms Digital Enrollment**  | ![Forms-Digital Enrolment](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)  |
 | **Forms Communications**  | ![Forms-Communication](assets/forms-cloud-service-architecture-forms-communications.svg)  |
 
 ## Components
 
-The architecture for AEM Forms as a Cloud Service includes the following components:
-
-Forms as a Cloud Service comprises multiple sub-components:
+Forms as a Cloud Service comprises multiple components:
 
 ### CDN (Content Delivery Network)
 
-Every AEM Forms as a Cloud Service program has access to Fastly CDN service. It is included in the licence of Forms as a Cloud Services.
+Every AEM Forms as a Cloud Service program has access to Fastly CDN service. It is included in the license of Forms as a Cloud Services.
 
 ### Author
 
-An Author instance is an AEM Forms as a Cloud Sevice instance running in the standard Author run mode. It is intended for internal users, forms designers, and developers. AEM Forms as a Cloud Service provides seperate Author environments for development, stage, and production. A Forms as a Cloud Service author environment enables the following functionalities:
+An Author instance is an AEM Forms as a Cloud Service instance running in the standard Author run mode. It is intended for internal users, forms designers, and developers. AEM Forms as a Cloud Service provides separate Author environments for development, stage, and production. A Forms as a Cloud Service author environment enables the following functionalities:
 
 * Authoring and managing forms.
 * Connecting to Automated forms conversion service to convert a PDF form to an adaptive form.
@@ -39,28 +37,34 @@ An Author instance is an AEM Forms as a Cloud Sevice instance running in the sta
 * Managing Communications assets.
 * Connecting with PDF Services APIs to <>
 * Sync APIs and Batch APIs to create, assemble, and deliver brand-oriented and personalized communications.
+* Sync APIs to combine, rearrange, and validate PDF documents.
+
+> ![NOTE]
+> SMTP server is required to send emails. For example, a submission acknowledgment from Publish, or an approval/rejection mail from an Author workflow. Customers have to provide their own SMTP server.
 
 ### Publish
 
-A publish instance is an AEM Forms server running in the standard Publish run mode. Publish instances are intended for end users of form-based applications, for example, users accessing a public website and submitting forms. It enables the following functionalities:
+A publish instance is an AEM Forms as a Cloud Service running in the standard Publish run mode. Publish instances are intended for end users of form-based applications, for example, users accessing a public website and submitting forms. It enables the following functionalities:
 
 * Rendering and submitting forms for end users.
-* Transporting of raw submitted form data for further processing and storage in the final system-of-record.
+* Transporting of raw-submitted form data for further processing and storage in the final system-of-record.
 * Connecting to Customer Managed Storage to store data.
-* Rendering Communications using Communications Document Generation APIs.
-* Manipulaing documents using Communications Document Manipulation APIs.
 * Connecting with Adobe Sign to e-sign an adaptive form.
 * Sync APIs to create, assemble, and deliver brand-oriented and personalized communications.
+* Sync APIs to combine, rearrange, and validate PDF documents.
+
+
+User data submitted on the Publish instances is required by the workflows at Author instances for approval use-cases. So, publish instances also make HTTPS call to the author to persist submitted data. These calls are made to the public author endpoint.
 
 #### Dispatcher
 
-Dispatcher is Adobe Experience Manager’s caching and/or load balancing tool that can be used in conjunction with an enterprise-class web server.
+Dispatcher is Adobe Experience Manager’s caching and/or load-balancing tool that can be used in conjunction with an enterprise-class web server.
 
 ### Adobe Services
 
 **Automated Forms Conversion Service**
 
-Automated Forms Conversion service helps accelerate digitization and modernization of data capture experience through automated conversion of PDF forms to adaptive forms. The service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly, responsive, and HTML5-based adaptive forms. While leveraging the existing investments in PDF Forms and XFA, the service also applies appropriate validations, styling, and layout to adaptive form fields during conversion.
+Automated Forms Conversion service automatically converts your PDF forms to device-friendly, responsive, and HTML5-based adaptive forms. While leveraging the existing investments in PDF Forms and XFA, the service also applies appropriate validations, styling, and layout to adaptive form fields during conversion.
 
 **Adobe Sign**
 Adobe Sign is a cloud-based e-signature service that allows the user to send, sign, track, and manage signature processes using a browser or mobile device. You can integrate Adobe Sign with an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign adaptive forms.
@@ -70,19 +74,19 @@ Adobe’s PDF Services API lets create, combine, export, and extract data from P
 
 ### Customer Managed Storage
 
-Forms as a Cloud Service provide options to store content in an external storage system such as Blob Store, Database, or a storage service. You can also store in-process Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) elements in a customer-managed repository for secure processing. Adobe recommends to store sensetive data on customer managed storages only.
+Forms as a Cloud Service provide options to store content in an external storage system such as Blob Store, Database, or a storage service. You can also store in-process Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) elements in a customer-managed repository for secure processing. Adobe recommends storing sensitive data on customer managed storages only.
 
 You can use the **Unified Storage Connector** to connect to Blob Storage and **Form Data Model** to connect to  databases or backend services (RESTful, SOAP, and more).  
 
 ### Document Services
 
-Document services capabilities provide three service:  
+Document services constitues of the following:  
 
 * **Output Service (Communications - Document Generation APIs)** helps create brand-approved, personalized, and standardized documents such as business correspondences, statements, claim processing letters, benefit notices, monthly bills, or welcome kits.
 
 * **Assembler Service (Communications - Document Manipulation APIs)** helps combine, rearrange, and validate PDF documents.
 
-* **formsDorService** helps generate Document of Record (DoR)
+* **formsDorService** helps generate Document of Record (DoR).
 
 ### Cloud Manager
 
@@ -91,7 +95,7 @@ Cloud Manager is an essential component to [AEM as a Cloud Service](https://expe
 * Creating and managing programs
 * Creating and managing the AEM environments within the programs
 * Creating and managing the pipelines for deploying the customer code and configuration to a particular environment
-* Getting notified of important lifecycle events for these components (e.g. product updates)
+* Getting notified of important lifecycle events for these components (for example, product updates)
 For more information about Cloud Manager, see [Understand Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) and [Introduction to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
 
 ### Developer Console
@@ -179,11 +183,10 @@ Set up your development environment, [Configure your CI/CD Pipeline](https://exp
 
 When you set up and configure an [!DNL AEM Forms] as a Cloud Service environment, you set up development, staging, and production environments. In addition, set up and configure a local development environment for rapid iterations and development. You can download and set up AEM SDK and [!DNL AEM Forms] add-on feature archive to set up a local [!DNL Forms] as a Cloud Service development environment.  For detailed instructions, see [Set up a local development environment](setup-local-development-environment.md).
 
-Form authors connect to a development environment for form editing.The final forms is brought into the production environment through package export/import or CI/CD.
+Form authors connect to a development environment for form editing. The final forms is brought into the production environment through package export/import or CI/CD.
 
-> ![NOTE]
- > SMTP server is required for sending emails. For example, a submission acknowledgment from Publish, or an approval/rejection mail from an Author workflow. Customers have to provide their own SMTP server.
+Adobe recommends using AEM Developer SDK to develop and test features for Forms as a Cloud Service locally. The term Developer SDK is used to collectively represent the java docs, uber-jar, sources, and a cloud-ready quickstart for the customers to use. The Forms as a Cloud Service developer SDK consists of the Forms Add-On Feature Archive, Forms JavaDocs, Forms JavaScript Docs, and Forms Add-On API jar.
 
 ## Debugging {#debugging}
 
-AEM as a Cloud Service runs on self-service, scalable, cloud infrastructure. It requires AEM developers to understand and debug various facets of AEM as a Cloud Service, from build and deploy to obtaining details of running AEM applications. For detailed information, see [Debugging AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=en).
+AEM as a Cloud Service runs on self-service, scalable, cloud infrastructure. It requires AEM developers to understand and debug various facets of AEM as a Cloud Service, from build, and deploy to obtaining details of running AEM applications. For detailed information, see [Debugging AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=en).
