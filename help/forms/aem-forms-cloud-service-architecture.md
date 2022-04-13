@@ -3,21 +3,95 @@ title: Experience Manager [!DNL AEM Forms] as a Cloud Service Architecture
 description: Understand the architecture of [!DNL AEM Forms] as a Cloud Service to learn about the scalability, resilience, and performance aspects of the platform.
 ---
 
-# [!DNL AEM] as a Cloud Service architecture {#architecture}
+# [!DNL AEM] Forms as a Cloud Service architecture {#architecture}
 
-[!DNL AEM Forms] as a Cloud Service standardizes the deployment architecture for all customers, with the goal to completely free customers from architecture considerations. For instance, while the new AEM as a Cloud Service architecture still relies on the concept of micro-kernels for persistence, customers do not need to worry about which micro-kernel to pick from. The micro-kernels used both on the author and on the publish side are unique to [!DNL AEM Cloud Service] and otherwise not available to customers for on-premise installations.
+[!DNL AEM] Forms as a Cloud Service is an application deployed into AEM [!DNL AEM] as a Cloud Service. The service provides a standard deployment architecture for everyone, with the goal to completely freeing you from architecture considerations.
 
-AEM as a Cloud Service has a dynamic architecture with a variable number of AEM instances. It provides development, stage, production, and demonstration environments. It provides tools to manage AEM instances (Cloud Manager), maintain users and authentications (Admin Console and IMS (Adobe Identity management) system), configure caching (Fastly CDN), and cloud-native development environment. For more information on architecture see, [An Introduction to the Architecture of [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=en).
+The [!DNL AEM] as a Cloud Service has a dynamic architecture with a variable number of AEM instances. It provides development, stage, and production environments. It provides tools to manage Author and Publish instances (Cloud Manager), maintain users and authentications (Admin Console and IMS (Adobe Identity management) system), configure caching (Fastly CDN), and cloud-native development environment. For more information on [!DNL AEM] as a Cloud Service architecture see, [An Introduction to the Architecture of [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=en)
 
+AEM Forms as a Cloud Service supports two major use cases: Digital Enrolment and Communications. The following illustrations depict architecture for both the use cases.
 
 ## Architecture and flow diagrams
 
-![Architecture](assets/architecture-diagram.png)
-
-
+|   |   |
+|---|---|
+| **Forms Digital Enrolment**  | ![Forms-Digital Enrolment](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)  |
+| **Forms Communications**  | ![Forms-Communication](assets/forms-cloud-service-architecture-forms-communications.svg)  |
 
 ## Components
+
+The architecture for AEM Forms as a Cloud Service includes the following components:
+
 Forms as a Cloud Service comprises multiple sub-components:
+
+### CDN (Content Delivery Network)
+
+Every AEM Forms as a Cloud Service program has access to Fastly CDN service. It is included in the licence of Forms as a Cloud Services.
+
+### Author
+
+An Author instance is an AEM Forms as a Cloud Sevice instance running in the standard Author run mode. It is intended for internal users, forms designers, and developers. AEM Forms as a Cloud Service provides seperate Author environments for development, stage, and production. A Forms as a Cloud Service author environment enables the following functionalities:
+
+* Authoring and managing forms
+* Converting a PDF form to an adaptive form using Automated forms conversion service
+* Creating and running Forms-centric workflows
+* Managing adaptive forms assets
+* Managing Communications assets
+
+### Publish
+
+A publish instance is an AEM Forms server running in the standard Publish run mode. Publish instances are intended for end users of form-based applications, for example, users accessing a public website and submitting forms. It enables the following functionalities:
+
+* Rendering and submitting Forms for end users
+* Transporting of raw submitted form data for further processing and storage in the final system-of-record.
+* Rendering Communications using Communications Document Generation APIs
+* Manipulaing documents using Communications Document Manipulation APIs
+
+### Adobe Services
+
+**Automated Forms Conversion Service**
+
+Automated Forms Conversion service helps accelerate digitization and modernization of data capture experience through automated conversion of PDF forms to adaptive forms. The service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly, responsive, and HTML5-based adaptive forms. While leveraging the existing investments in PDF Forms and XFA, the service also applies appropriate validations, styling, and layout to adaptive form fields during conversion.
+
+**Adobe Sign**
+Adobe Sign is a cloud-based e-signature service that allows the user to send, sign, track, and manage signature processes using a browser or mobile device. You can integrate Adobe Sign with an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign adaptive forms.
+
+**PDF Service API**
+Adobe’s PDF Services API lets create, combine, export, and extract data from PDFs through powerful and flexible cloud-based APIs.
+
+### Document Services
+
+Document services capabilities provide three service:  
+
+* **Output Service (Communications - Document Generation APIs)** helps create brand-approved, personalized, and standardized documents such as business correspondences, statements, claim processing letters, benefit notices, monthly bills, or welcome kits.
+
+* **Assembler Service (Communications - Document Manipulation APIs)** helps combine, rearrange, and validate PDF documents.
+
+* **formsDorService** helps generate Document of Record (DoR)
+
+### Customer Managed Storage
+
+Forms as a Cloud Service provide options to store content in an external storage system such as Blob Store, Database, or a storage service. You can also store in-process Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) elements in a customer-managed repository for secure processing. You can use the **Unified Storage Connector** to connect to customer databases.  
+
+### Cloud Manager
+
+Cloud Manager is an essential component to [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en). Each new tenant of the [!DNL AEM Forms] as a Cloud Service is first provisioned for Cloud Manager access. Cloud Manager is the single-entry point for the operations and developer persona of our customers. It is the place from where the AEM programs and environments can be managed. Cloud Manager has evolved as a self-service portal where the main components of the AEM as a Cloud Service can be created and configured:
+
+* Creating and managing programs
+* Creating and managing the AEM environments within the programs
+* Creating and managing the pipelines for deploying the customer code and configuration to a particular environment
+* Getting notified of important lifecycle events for these components (e.g. product updates)
+For more information about Cloud Manager, see [Understand Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) and [Introduction to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
+
+### Developer Console
+
+<!--
+
++++CDN (Content Delivery Network):
+
+Every AEM Forms as a Cloud Service program has access to Fastly CDN service. It is included in the licence of Forms as a Cloud Services.
+
++++
 
 +++Adaptive Forms
 Adaptive Forms enable customers to author web-friendly reflowable web forms and fragments that are used by the customers for their data capture needs. This feature enables customers to manage their complex data capture needs easily, by leveraging multiple integrations with Adobe Sign, Document Services, Form Data Model, Automated Forms Conversion service, and more.
@@ -30,7 +104,7 @@ Automated Forms Conversion service helps accelerate digitization and modernizati
 +++
 
 +++Form Data Model
-The Form Data Model (FDM) feature is the standard way of creating data integrations with external/internal data sources and using them across the different Forms as a Cloud Service features. FDM provides a rich editor for customers to integrate, define, and manage relationships between the different entities and data sources and perform operations on them.
+The Form Data Model (FDM) feature is the standard way of creating data integrations with external/internal data sources and using them across the different Forms as a Cloud Service features. FDM provides a rich editor for customers to integrate, define, and manage relationships between the different entities and data sources and perform operations on them. Form data is stored in a data store hosted on the customer premises. Organizations can also use blob store hosted by the cloud provider and Adobe Experince Platform to store data.
 
 +++
 
@@ -49,12 +123,9 @@ A Document of Record is a PDF version of a form. It provides an ability to keep 
 
 +++
 
+## Terminologies
 
-
-
-
-
-## Cloud Manager{#cloud-manager}
+<!-- ## Cloud Manager{#cloud-manager}
 
 Cloud Manager is an essential component to [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en). Each new tenant of the [!DNL AEM Forms] as a Cloud Service is first provisioned for Cloud Manager access. Cloud Manager is the single-entry point for the operations and developer persona of our customers. It is the place from where the AEM programs and environments can be managed. Cloud Manager has evolved as a self-service portal where the main components of the AEM as a Cloud Service can be created and configured:
 
@@ -97,10 +168,7 @@ Set up your development environment, [Configure your CI/CD Pipeline](https://exp
 
 When you set up and configure an [!DNL AEM Forms] as a Cloud Service environment, you set up development, staging, and production environments. In addition, set up and configure a local development environment for rapid iterations and development. You can download and set up AEM SDK and [!DNL AEM Forms] add-on feature archive to set up a local [!DNL Forms] as a Cloud Service development environment.  For detailed instructions, see [Set up a local development environment](setup-local-development-environment.md).
 
-
-
-
-
 ## Debugging {#debugging}
 
 AEM as a Cloud Service runs on self-service, scalable, cloud infrastructure. It requires AEM developers to understand and debug various facets of AEM as a Cloud Service, from build and deploy to obtaining details of running AEM applications. For detailed information, see [Debugging AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=en).
+ -->
