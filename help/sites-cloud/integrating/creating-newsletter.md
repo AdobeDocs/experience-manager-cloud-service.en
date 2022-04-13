@@ -7,17 +7,21 @@ role: Admin
 
 # Creating an Adobe Experience Manager Newsletter {#creating-newsletter}
 
+Before you can perform the steps below you need to integrate Adobe Campaign Classic and AEM as a Cloud Service.
 Having configured both Adobe Campaign Classic and AEM as a Cloud Service, you will now learn how to create an Adobe Experience Manager Newsletter.
 
 1. From the AEM author instance, click the Adobe Experience Manager logo in the upper left side of the page and select **Sites**.
 1. Select Campaign, click **Create→Page**.
+![brand create](assets/create.png)
 1. Select Brand and click **Next**.
-1. Enter the title and click **Create** and **Done**.
-1. To create a Campaign page, go to **Campaign→AdobeDemo→Master** and click on **Create→Page**.
+1. Enter the title (for example,AdobeDemo) and click **Create** and **Done**.
+1. To create a Campaign page, go to **Campaigns→AdobeDemo→Master** and click on **Create→Page**.
+![campaign page](assets/campaignpage.png)
 1. Select the Campaign template then click **Next** and **Done**
 1. Enter the Title (for example: CampaignPage), click **Create** and **Done**.
 1. Go to **Campaign→AdobeDemo→Master**and select the CampaignPage checkbox. Click on **Properties** on the top left.
-1. Go to the Cloud Service tab
+![campaign properties](assets/propertiesedit.png)
+1. Go to the **Cloud Service** tab:
     * Select Adobe Campaign from Cloud Service Configurations drop-down list.
     * Select the desired name for the Adobe Campaign configuration(for example, AEM-ACC-AWS_WIN180521).
     * **Save** and **Close**.
@@ -28,6 +32,7 @@ Having configured both Adobe Campaign Classic and AEM as a Cloud Service, you wi
 1. Edit the Adobe Campaign Classic email newsletter page as per your requirements.
 1. Click on **Page Information** button on top left and click on **Publish Page**.
 1. Select the configuration on which the page has to be published. Click **Publish**.
+![publish page](assets/publish.png)
 1. The newsletter page has been published on the publish instance and also on the AEM-Adobe Campaign Classic configuration.
     * Now the newsletter page will be visible in Adobe Campaign Classic
 1. Click on the Page Information button and click on **Start Workflow**
@@ -40,6 +45,7 @@ Having configured both Adobe Campaign Classic and AEM as a Cloud Service, you wi
 1. Open the Adobe Campaign Classic server by using the Adobe Campaign Classic client console.
 1. Go to the Explorer view.
 1. In the tree view on the left, go to Profiles and Targets and select **Recipients**.
+![recipients](assets/recipients.png)
 1. Fill the Details of the recipient.
    * Enter the First name
    * Enter the Last Name
@@ -59,6 +65,7 @@ Having configured both Adobe Campaign Classic and AEM as a Cloud Service, you wi
     * Click **OK**.
 1. Click on **To** link then click on **Add** on the select target screen
 1. Select **A recipient** and click **Next**.
+![target type](assets/publish.png)
 1. Select the recipient created [previously](#creating-recipient) and click **Finish**.
 1. The recipient has been selected. Click **OK**.
 1. Click **Synchonize**.
@@ -66,6 +73,8 @@ Having configured both Adobe Campaign Classic and AEM as a Cloud Service, you wi
 1. The email template is synchronized.  Click **Refresh Content** if it is not loaded.
 1. Click on **Send** to send the email.
 1. On next screen, select **Delivery as soon as possible** and then click **Analyze**.
+![delivery target](assets/deliverytarget.png)
 1. Now as the delivery has been created, click on **Confirm Delivery** to start sending the email. Click **Yes** to confirm.
+![confirm delivery](assets/confirmdelivery.png)
 1. The delivery has started. Click **Close**.
 1. Click **Save** to save the delivery.
