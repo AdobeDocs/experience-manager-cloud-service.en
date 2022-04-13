@@ -11,6 +11,10 @@ exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 >
 >The Repository Browser is available on AEM versions 6582 and higher.
 
+>[!INFO]
+>
+>You can also watch [this clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) for a quick video introduction on how to use the Repository Browser to debug AEM as a Cloud Service.
+
 ## Introduction {#introduction}
 
 The repository browser is a developer tool that provides a read-only view into the repository for all environments on author, publish and preview tiers. It is designed to facilitate viewing of the content structure in order to make it easier to see or debug content.
