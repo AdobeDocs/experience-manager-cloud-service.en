@@ -42,7 +42,11 @@ Information architects will need to design queries for their channel endpoints i
 GraphiQL is an IDE that can be installed on an AEM environment. Follow the steps on [Using the GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) to install on your AEM environment. 
 
 1. Log into AEM as a Cloud Service and access the GraphiQL interface:
-   * For example: `https://<host>:<port>/aem/graphiql.html`.
+
+   You can access the query editor from either: 
+
+   * **Tools** -> **General** -> **GraphQL Query Editor**
+   * directly; for example, `http://localhost:4502/aem/graphiql.html`
 
 1. The GraphiQL IDE is an in-browser query editor for GraphQL. You can use it to build queries to retrieve Content Fragments to deliver them headlessly as JSON.
    * The drop-down top-right allows you to select the endpoint.
