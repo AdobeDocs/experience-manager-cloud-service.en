@@ -11,6 +11,8 @@ Adobe Campaign lets you manage email delivery content and forms directly in AEM 
 
 Please note that AEM as a Cloud Service and Adobe Campaign Classic can also be used independently. For example, marketers can start creating their campaigns and targeting in Adobe Campaign, while content creators can work on the design in AEM as a Cloud Service.
 
+bidirectional communication
+
 ## Integration workflow {#integration-workflow}
 
 The following chapters detail the configuration steps needed to integrate the solutions. This requires configuration steps both in Adobe Campaign Classic and AEM as a Cloud Service.
@@ -26,7 +28,7 @@ You will learn how to:
 
 **Adobe Campaign Classic**
 
-To perform the integration you need a working Adobe Campaign Classic instance, including a server and a database. If you require more details please read the official [Adobe Campaign Classic documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html). Keep in mind that to perform the operations presented below you also need to have the administrator role.  
+To perform the integration you need a working Adobe Campaign Classic instance, including a server and a database. If you need additional details on how to set up and configure Adobe Campaign Classic please read the official [Adobe Campaign Classic documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) especially the Installation and Configuration guide. Keep in mind that to perform the operations presented below you also need to have the administrator role.  
 
 **AEM as a Cloud Service**
 
@@ -228,4 +230,4 @@ You must configure an external account in order to connect Adobe Campaign Classi
     >
     >The AEM Author server IP/FQN must be reachable from the Adobe Campaign Classic server instance. Also do not add the backslash character in the AEM Author server IP/FQN.
 
-Having configured both Adobe Campaign Classic and AEM as a Cloud Service, you can also learn how to create an Adobe Experience Manager Newsletter.
+Having configured both Adobe Campaign Classic and AEM as a Cloud Service, the integration is complete. Additionally you can also learn how to create an Adobe Experience Manager Newsletter.
