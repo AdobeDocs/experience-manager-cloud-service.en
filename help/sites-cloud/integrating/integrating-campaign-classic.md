@@ -26,7 +26,7 @@ You will learn how to:
 
 **Adobe Campaign Classic**
 
-To perform the integration you need a working Adobe Campaign Classic instance, including a server and a database. If you need additional details on how to set up and configure Adobe Campaign Classic please read the official [Adobe Campaign Classic documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) especially the Installation and Configuration guide. Keep in mind that to perform the operations presented below you also need to have the administrator role.  
+To perform the integration you need a working Adobe Campaign Classic instance, including a database. If you need additional details on how to set up and configure Adobe Campaign Classic please read the official [Adobe Campaign Classic documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) especially the Installation and Configuration guide. Keep in mind that to perform the operations presented below you also need to have the administrator role.  
 
 **AEM as a Cloud Service**
 
