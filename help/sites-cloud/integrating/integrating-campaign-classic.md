@@ -9,11 +9,11 @@ role: Admin
 
 Adobe Campaign lets you manage email delivery content and forms directly in AEM as a Cloud Service. To use both solutions together at the same time, you must first configure them to connect to one another. This involves configuration steps in both Adobe Campaign Classic and AEM as a Cloud Service.
 
-Please note that AEM as a Cloud Service and Adobe Campaign Classic can be used independently. For example, marketers can start creating their campaigns and targeting in Adobe Campaign, while content creators can work on the design in AEM as a Cloud Service.
+Please note that AEM as a Cloud Service and Adobe Campaign Classic can also be used independently. For example, marketers can start creating their campaigns and targeting in Adobe Campaign, while content creators can work on the design in AEM as a Cloud Service.
 
 ## Integration workflow {#integration-workflow}
 
-The following chapters detail the configuration steps needed to integrate the solutions. This requires configuration steps in both Adobe Campaign Classic and AEM as a Cloud Service.
+The following chapters detail the configuration steps needed to integrate the solutions. This requires configuration steps both in Adobe Campaign Classic and AEM as a Cloud Service.
 
 You will learn how to:
 
@@ -22,11 +22,15 @@ You will learn how to:
 * [Configure the Campaign Remote User](#configure-user)
 * [Setup the Adobe Campaign Classic External Account](#acc-setup)
 
-For more details about Adobe Campaign Classic see the [Campaign Classic v7 Documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html).
+### Prerequisites {#prerequisites}
 
-### Prerequisites
+**Adobe Campaign Classic**
 
-To perform the integration you need a working Adobe Campaign Classic [instance](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/creating-an-instance-and-logging-on.html), including a [server](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-windows-/installing-the-server.html) and a [database](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/creating-and-configuring-the-database.html). Keep in mind that to perform the operations presented below you also need to have the administrator role in Adobe Campaign Classic.  Also, you need the [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html) solution.
+To perform the integration you need a working Adobe Campaign Classic instance, including a server and a database. If you require more details please read the official [Adobe Campaign Classic documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html). Keep in mind that to perform the operations presented below you also need to have the administrator role.  
+
+**AEM as a Cloud Service**
+
+You need the [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html) solution.
 
 <!---##### Adobe Campaign Classic Configuration {#campaign-classic-configuration}
 
