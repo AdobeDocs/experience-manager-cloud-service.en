@@ -7,11 +7,9 @@ role: Admin
 
 # Integrating with Adobe Campaign Classic {#integrating-campaign-classic}
 
-Adobe Campaign lets you manage email delivery content and forms directly in AEM as a Cloud Service. To use both solutions together at the same time, you must first configure them to connect to one another. This involves configuration steps in both Adobe Campaign Classic and AEM as a Cloud Service.
+Adobe Campaign lets you manage email delivery content and forms directly in AEM as a Cloud Service. To use both solutions together at the same time, you must first configure them to connect to one another. This involves configuration steps in both Adobe Campaign Classic and AEM as a Cloud Service to enable the bidirectional communication between solutions.
 
 Please note that AEM as a Cloud Service and Adobe Campaign Classic can also be used independently. For example, marketers can start creating their campaigns and targeting in Adobe Campaign, while content creators can work on the design in AEM as a Cloud Service.
-
-bidirectional communication
 
 ## Integration workflow {#integration-workflow}
 
@@ -139,6 +137,7 @@ Open the Adobe Campaign Classic client console from start menu and log in. The h
 1. In the tree view on the left, navigate to **Administration->Access Management->Operators**.
 1. Double-click on the `aemserver` entry in the Operators list on the right.
 1. Switch to the **Edit** tab. Set the password for the aemserver.
+![password](assets/aemserveredit.png)
 1. Click on the **Access rights** tab and click on the **Edit the access parameters** link under the security settings.
 1. Under Encryption, select public network as the authorized connection zone. Click **OK**.
 ![connection zone](assets/auth.png)
