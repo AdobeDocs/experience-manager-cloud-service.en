@@ -8,12 +8,6 @@ exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
 The integration of Adobe Experience Manager as a Cloud Service (AEMaaCS) with Adobe Analytics via the Analytics Standard API requires the configuration of Adobe IMS (Identity Management System). The configuration is realized with the Adobe Developer Console.
 
 >[!NOTE]
-> 
->This feature is available in the prerelease channel. 
->
->See the [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable the feature for your environment.
-
->[!NOTE]
 >
 >Support for the Adobe Analytics Standard API 2.0 is new in AEMaaCS 2022.2.0. This version of the API supports IMS authentication.
 >
