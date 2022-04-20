@@ -180,12 +180,6 @@ Many properties are self-explanatory, for certain properties additional details 
 
 * **Translatable**
   
-  >[!NOTE]
-  >
-  >This feature is available in the prerelease channel.
-  > 
-  >See the [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable the feature for your environment.
-  
   Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
 
   * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
