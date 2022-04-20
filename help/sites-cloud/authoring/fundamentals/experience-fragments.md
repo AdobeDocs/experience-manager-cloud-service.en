@@ -349,6 +349,12 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 >
 >Although this is directly available from the browser, [the primary purpose is to allow other applications (for example, third party web apps, custom mobile implementations) to access the content of the Experience Fragment directly, using only the URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
+## Publishing Experience Fragments {#publishing-experience-fragments}
+
+Publishing your Experience Fragment is basically the same as [publishing a page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (though from the Experience Fragments console or editor). 
+
+Alternatively you can also [publish to Preview](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (again from the Experience Fragments console or editor).
+
 ## Exporting Experience Fragments {#exporting-experience-fragments}
 
 By default, Experience Fragments are delivered in the HTML format. This can be used by both AEM and third party channels alike.
