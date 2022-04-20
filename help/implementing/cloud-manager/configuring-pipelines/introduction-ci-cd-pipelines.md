@@ -25,6 +25,12 @@ Cloud Manager offers two types of pipelines:
 
 ![Types of pipelines](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
 
+## Video Overview {#video}
+
+For a quick overview of pipeline types, view this short video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342363)
+
 ## Production Pipelines {#prod-pipeline}
 
 A production pipeline is a purpose-built pipeline that includes a series of orchestrated steps to deploy source code for production use. The steps include first building, packaging, testing, validating, and deploying into all staging environments. Therefore a production pipeline can only be added once a set of production and staging environments is created.
