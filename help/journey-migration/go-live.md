@@ -43,7 +43,7 @@ Before you can perform the production migration, please follow the fitment and p
 After the initial migration from production you must perform incremental top-ups to make sure your bring your content up to date on the cloud instance. Because of this, it is recommended you follow these best practices:
 
 * Gather data on the amount of content. For example: per one week, two weeks or a month.
-* Make sure to plan top-ups in such a way that you avoid more than 48 hours of content extraction and ingestion. This is recommended so that the content top-ups will fit into a weekend timeframe.
+* Make sure to plan top-ups in such a way that you avoid more than 48 hours of content extraction and ingestion. This is recommended so that the content top-ups will fit into a weekend time frame.
 * Plan the number of top ups required and use those estimates to plan around the Go-Live date.
 
 ## Identify Code and Content Freeze Timelines for the Migration {#code-content-freeze}
@@ -76,7 +76,7 @@ Make sure that when going live, you run the content migration on production inst
 When performing the production migration you should avoid running the Content Transfer Tool from a clone because:
 
 * If a customer requires content versions to be migrated during top-up migrations, then executing the Content Transfer Tool from a clone does not migrate the versions. Even if the clone is recreated from live author frequently, each time a clone is created the checkpoints that will be used by the Content Transfer Tool to calculate the deltas will be reset.
-* Since a clone cannot be refreshed as a whole, the ACL Query package must be used to package and install the content being added or edited from production to clone. The problem with this approach is that any deleted content on the source instance will never get to the clone unless it is manually deleted from both source and clone. This introduces the posibility that the deleted content on production will not be deleted on the clone and AEM as a Cloud Service.
+* Since a clone cannot be refreshed as a whole, the ACL Query package must be used to package and install the content being added or edited from production to clone. The problem with this approach is that any deleted content on the source instance will never get to the clone unless it is manually deleted from both source and clone. This introduces the possibility that the deleted content on production will not be deleted on the clone and AEM as a Cloud Service.
 
 **Optimizing the load on your AEM source while performing the content migration**
 
@@ -114,7 +114,7 @@ Please review this list of activities to ensure that you perform a smooth and su
   * [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
   * [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
 * Migrate content to production and make sure that a relevant subset is available on staging for testing.
-  * Please note that DevOps best practices for AEM imply that code moves up from development to the production environment while [content moves down from production environments.](/help/overview/enterprise-devops.md)
+  * Please note that DevOps best practices for AEM imply that code moves up from development to the production environment while content moves down from production environments.
 * Schedule a code and content freeze period.
   * Also see the section [Code and Content Freeze Timelines for the Migration](#code-content-freeze)
 * Perform the final content top-up.
