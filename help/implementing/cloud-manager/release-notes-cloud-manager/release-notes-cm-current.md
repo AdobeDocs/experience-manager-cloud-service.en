@@ -1,12 +1,13 @@
 ---
-title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2022.02.0
-description: These are the release notes for Cloud Manager in AEM as a Cloud Service release 2022.02.0.
+title: Release Notes for Cloud Manager 2022.4.0 in Adobe Experience Manager as a Cloud Service
+description: These are the release notes for Cloud Manager 2022.4.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 ---
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2022.02.0 {#release-notes}
 
-This page outlines the release notes for Cloud Manager in AEM as a Cloud Service 2022.02.0.
+# Release Notes for Cloud Manager 2022.4.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+
+This page documents the release notes for Cloud Manager 2022.4.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -14,20 +15,23 @@ This page outlines the release notes for Cloud Manager in AEM as a Cloud Service
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager in AEM as a Cloud Service 2022.02.0 is 10 February 2022. The next release is planned for 10 March 2022.
+The release date for Cloud Manager release 2022.4.0 in AEM as a Cloud Service 7 April 2022. The next release is planned for 5 May 2022.
 
 ## What's New {#what-is-new}
 
-* New accelerated [Web Tier Config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) have been introduced to exclusively deploy HTTPD/dispatcher configuration.
-  * You must be on AEM version `2021.12.6151.20211217T120950Z` or newer and [opt in to the flexible mode of the dispatcher tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) to use this feature.
-  * This feature will be rolled out in a phased approach over the two weeks following the 2022.02.0 release.
-* The Cloud Manager landing page experience has been refreshed to deliver improved navigation, easy switching between grid/tile views, and pop-overs for quick program summary.
-* A new failing threshold (`< D`) has been added to the [reliability rating metric.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
-  * Customers with severe quality issues that impact system stability, primarily related to invalid indexes and workflow processes, will not be able to deploy until those issues are resolved.
-* The severity of the `BannedPath` [quality rule](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) has been changed from blocker to critical.
-* The pipeline wizard will inform the user when an AEM environment update may be needed before configuring a [Web Tier Config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) associated with it.
+* Improvements to the duration and success rate of pipeline build steps have been implemented and will be incrementally rolled out to all customers through the month of April.
+* You can now easily find a git branch by typing the first few characters of the name in the input field in the add and edit pipeline wizard and selecting from suggested matches for both [production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [non-production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) pipelines.
+* Shortly after the April release, India will become available for selection when defining the cloud region during environment creation.
+* The **Pipelines** page now has pagination to improve usability for programs with a large number of pipelines.
+  * 50 rows per page will be displayed in the table.
+* The version of the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) used by Cloud Manager has been updated to version 36.
+* Oracle JDK is now the default JDK for the development and operation of AEM applications. The Cloud Manager build process will automatically switch to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain.
+  * To learn more about how to switch to Oracle JDK, please refer to [the Build Environment documentation.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)
+  * Please refer to [the Java support policy for Adobe Experience Manager FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/Java_Policy_for_Adobe_Experience_Manager.pdf) to address common questions about this change.
+* Pipeline execution will now fail faster by detecting older AEM versions during the validation step. Users will be presented with a message in the UI to guide them.
 
 ## Bug Fixes {#bug-fixes}
 
-* Old git repository passwords are now always invalidated when a new password is generated.
-* Updating environment variables through the API no longer interferes with a pipeline execution in rare situations.
+* The log created in the UI Test step is now available for download via the UI.
+* Web tier config pipelines can now only reuse packages from web tier config executions.
+* Greater clarity was added to the messages in the UI about how to update AEM on an outdated environment.

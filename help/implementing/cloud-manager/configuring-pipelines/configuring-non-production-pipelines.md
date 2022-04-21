@@ -42,12 +42,6 @@ Once you have set up your program and have at least one environment using the Cl
      * **Manual** - Use this option to manually start the pipeline.
      * **On Git Changes** - This options starts the CI/CD pipeline whenever commits are added to the configured git branch. With this option, you can still start the pipeline manually as required.  
 
-   * **Important Metric Failures Behavior** - During pipeline setup or edit, the **Deployment Manager** has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates. You have the following options.
-
-     * **Ask every time** - This is the default setting and requires manual intervention on any important failure.
-     * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
-     * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an important failure occurs. This is essentially emulating a user manually approving each failure.
-
 1. Click **Continue**.
 
 1. On the **Source Code** tab of the **Add Non-Production Pipeline** dialog, you must select which type of code the pipeline should process.
@@ -74,6 +68,7 @@ To finish the configuration of the front-end code non-production pipeline, follo
    >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
+     * Enter the first few characters of the branch name and the auto-complete feature of this field will find the matching branches to help you select.
    * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
    
    ![Front-end pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
@@ -102,7 +97,8 @@ To finish the configuration of the full-stack code non-production pipeline, foll
    >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
-   * **Ignore Web Tier Configuration** - 
+     * Enter the first few characters of the branch name and the auto-complete feature of this field will find the matching branches to help you select.
+   * **Ignore Web Tier Configuration** - When checked, the pipeline will not deploy your web tier configuration.
 
    ![Full-stack pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 

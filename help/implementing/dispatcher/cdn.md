@@ -15,6 +15,8 @@ AEM as Cloud Service is shipped with a built-in CDN. Its main purpose is to redu
 
 The AEM managed CDN will satisfy most customer's performance and security requirements. For the publish tier, customers can optionally point to it from their own CDN, which they will need to manage. This will be allowed on a case-by-case basis, based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon.
 
+Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service.
+
 ## AEM Managed CDN  {#aem-managed-cdn}
 
 Follow the sections below to use Cloud Manager self-service UI to prepare for content delivery by using AEM’s out-of-the-box CDN:
