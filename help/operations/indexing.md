@@ -76,7 +76,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 >
 >`noIntermediateSaves=true`
 
-### Deploying Index Definitions {#deploying-index-definitions}
+## Deploying Index Definitions {#deploying-index-definitions}
 
 >[!NOTE]
 >
