@@ -1,5 +1,5 @@
 ---
-title: Publish Translated Content
+title: Publish Translated Content (AEM headless)
 description: Learn how to publish your translated content and update the translations as the content updates.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 ---
