@@ -58,7 +58,7 @@ Notice that both customization of an out-of-the-box index, as well as fully cust
 
 >[!NOTE]
 >
->If customizing an out-of-the-box index, for example `damAssetLucene-6`, please copy the latest out-of-the-box index definition from a *Cloud Service environment* and add your customizations on top, this ensures that required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-6/tika` is a required node and should be part of your customized index as well and it doesn't exist on the Cloud SDK.
+>If customizing an out-of-the-box index, for example `damAssetLucene-6`, please copy the latest out-of-the-box index definition from a *Cloud Service environment* development environment using the CRX DE Package Manager (`/crx/packmgr/`) . Then rename the configuration, for example to `damAssetLucene-6-custom-1`, and add your customizations on top. This ensures that required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-6/tika` is required in the customized index of the cloud service. It doesn't exist on the Cloud SDK.
 
 You need to prepare a new index definition package that contains the actual index definition, following this naming pattern:
 
