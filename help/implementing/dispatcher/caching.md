@@ -117,7 +117,7 @@ This can be useful, for example, when your business logic requires fine tuning o
 
 ### Furthur Optimizations
 
-* Avoid using `User-Agent` as part of the `Vary` header.
+* Avoid using `User-Agent` as part of the `Vary` header. Older versions of the default dispatcher setup (prior to archetype version 28) included this and we recommend you remove that using the steps below.
    * Locate the vhost files in `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
    * Remove or comment out the line: `Header append Vary User-Agent env=!dont-vary` from all vhost files, with the exception of default.vhost, which is read-only
 * Use the `Surrogate-Control` header to control CDN caching independent from browser caching
