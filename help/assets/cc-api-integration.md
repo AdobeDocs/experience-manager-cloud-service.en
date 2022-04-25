@@ -48,7 +48,7 @@ Users can create processing profiles to automate the following creative operatio
 
 To enable the Content Automation add-on for AEM as a Cloud Service program using Cloud Manager:
 
- 1. Contact [Adobe Customer Support](https://experienceleague.adobe.com/#support) to receive the license for the Content Automation add-on.
+ 1. Contact your account representative to license the Content Automation add-on.
  1. Access Cloud Manager and switch  to your organization using the organization selector.
  1. Click **[!UICONTROL Add Program]** and specify a program name.
  1. Click **[!UICONTROL Continue]**.
