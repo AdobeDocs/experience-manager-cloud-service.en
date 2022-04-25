@@ -88,6 +88,19 @@ This process continues until the deployment has reached all publishers and dispa
 
 ![Production Deployment phase](assets/production-deployment.png)
 
+## Timeouts {#timeouts}
+
+The following steps will timeout if left waiting for user feedback:
+
+|Step|Timeout|
+|--- |--- |
+|Code Quality Testing|14 days|
+|Security Testing|14 days|
+|Performance Testing|14 days|
+|Application for Approval|14 days|
+|Schedule Production Deployment|14 days|
+|CSE Support|14 days|
+
 ## Deployment Process {#deployment-process}
 
 All Cloud Service deployments follow a rolling process to ensure zero downtime. Please refer to the document [How Rolling Deployments Work](/help/implementing/deploying/overview.md#how-rolling-deployments-work) to learn more.
