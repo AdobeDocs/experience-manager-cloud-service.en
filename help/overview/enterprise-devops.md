@@ -1,8 +1,8 @@
 ---
 title: Enterprise DevOps
 description: Learn about the processes, methods and communication required to ease deployment and simplify collaboration.
+exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
 ---
-
 # Enterprise DevOps{#enterprise-devops}
 
 DevOps covers the processes, methods and communication required to:
