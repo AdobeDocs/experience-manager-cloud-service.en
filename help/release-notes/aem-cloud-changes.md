@@ -27,7 +27,7 @@ The main differences are found in the following areas:
 
 * [/apps and /libs are immutable at runtime](#apps-libs-immutable)
 
-* [OSGi bundles and settings must be repository-based](#osgi)
+* [OSGi bundles and configurations must be treated as code](#osgi)
 
 * [Changes to publish repository are not allowed](#changes-to-publish-repo)
 
@@ -55,12 +55,14 @@ The main differences are found in the following areas:
 * MSM Blueprint and custom MSM roll-out configurations must be installed from Git via the CI/CD pipeline.
 * I18n translation changes need to come from Git via the CI/CD pipeline.
 
-## OSGi bundles and settings must be repository-based {#osgi}
+## OSGi bundles and configurations must be treated as code {#osgi}
 
-The Web Console, used in previous versions of AEM to change OSGi settings, is not available in AEM Cloud Service. Therefore changes to OSGi must be introduced via the CI/CD pipeline.
+Changes to OSGi bundles and configurations must be introduced via the CI/CD pipeline.
 
-* Changes to OSGi settings can only come via Git persistence as JCR-based OSGi settings.
-* New or updated OSGi bundles must be introduced via Git as part of the CI/CD pipeline build process.
+* New or updated OSGi bundles must be introduced through Git via the CI/CD pipeline.
+* Changes to OSGi configurations can only come from Git via the CI/CD pipeline.
+
+The Web Console, used in previous versions of AEM to change OSGi bundles and configurations, is not available in AEM Cloud Service.
 
 ## Changes to publish repository are not allowed {#changes-to-publish-repo}
 
