@@ -44,11 +44,31 @@ Users can create processing profiles to automate the following creative operatio
 
    ![Replace objects smartly](/help/assets/assets/content-automation-objectreplace.png)
 
+## Enable Content Automation for AEM as a Cloud Service program {#enable-content-automation}
+
+To enable the Content Automation add-on for AEM as a Cloud Service program using Cloud Manager:
+
+ 1. Contact your account representative to license the Content Automation add-on.
+ 1. Access Cloud Manager and switch  to your organization using the organization selector.
+ 1. Click **[!UICONTROL Add Program]** and specify a program name.
+ 1. Click **[!UICONTROL Continue]**.
+ 1. Expand **[!UICONTROL Assets]** and select **[!UICONTROL Content Automation]**.
+ 1. Click **[!UICONTROL Create]**.
+ 1. Run the pipeline to [deploy the changes to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+
+ If you need to add Content Automation add-on to an existing AEM as a Cloud Service program in Cloud Manager:
+
+   1. Click ... on the program card.
+
+   1. Select **[!UICONTROL Edit Program]** and then select **[!UICONTROL Solutions & Add-ons]** tab.
+
+   1. Expand **[!UICONTROL Assets]** and select **[!UICONTROL Content Automation]**.
+   1. Click **[!UICONTROL Update]**.
+   1. Run the pipeline to [deploy the changes to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+
 ## Use a processing profile to edit your creative assets in bulk {#process-assets}
 
 To use processing profiles to automatically create variations, follow these steps:
-
-1. Contact [Adobe Customer Support](https://experienceleague.adobe.com/#support) to receive the license.
 
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**.
 
