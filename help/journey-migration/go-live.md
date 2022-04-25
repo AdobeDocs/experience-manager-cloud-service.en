@@ -114,7 +114,7 @@ Please review this list of activities to ensure that you perform a smooth and su
   * [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
   * [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
 * Migrate content to production and make sure that a relevant subset is available on staging for testing.
-  * Please note that DevOps best practices for AEM imply that code moves up from development to the production environment while [content moves down from production environments.](/help/overview/enterprise-devops.md#code-movement)
+  * Please note that DevOps best practices for AEM imply that code moves up from development to the production environment while content moves down from production environments.
 * Schedule a code and content freeze period.
   * Also see the section [Code and Content Freeze Timelines for the Migration](#code-content-freeze)
 * Perform the final content top-up.
