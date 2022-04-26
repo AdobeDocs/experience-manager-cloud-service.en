@@ -7,7 +7,13 @@ exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 
 When you set up and configure an [!DNL  Adobe Experience Manager Forms] as a [!DNL  Cloud Service] environment, you set up development, staging, and production environments on cloud. In addition, you can also set up and configure a local development environment.
 
-You can use the local development environment to create forms and related assets (themes, templates, custom Submit Actions, and more) and [convert PDF forms to Adaptive Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) without logging in to cloud development environment. After an Adaptive Form or related assets are ready on the local development instance, you can export the Adaptive Form and related assets from the local development environment to a Cloud Service environment for further testing and publishing.
+You can use the local development environment to perform the following actions without logging in to cloud development environment:
+
+* Create forms and related assets (themes, templates, custom Submit Actions, and more)
+* [Convert PDF forms to Adaptive Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
+* Build applications to generate [Customer Communications](aem-forms-cloud-service-communications-introduction.md) on demand or on batch modes.
+
+ After an Adaptive Form or related assets are ready on the local development instance or an application to generate [Customer Communications] is ready, you can export the Adaptive Form or Customer Communications application from the local development environment to a Cloud Service environment for further testing or moving to production environments.
 
 You can also develop and test custom code like custom components and prefill service on the local development environment. When the custom code is tested and ready, you can use the Git repository of your Cloud Service development environment to deploy the custom code.
 
