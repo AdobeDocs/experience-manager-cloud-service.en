@@ -42,7 +42,7 @@ Follow these steps to edit a program.
 
 1. Click on **Update** to save your changes to the program.
 
-Once your updates are made, if the selected solutions have changed, those changes will take effect following the next deployment.
+Any time a program is edited, including adding or removing a solution or add-on, those changes will take effect following the next deployment.
 
 ## Deleting Sandbox Programs {#delete-sandbox-program}
 
