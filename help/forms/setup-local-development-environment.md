@@ -9,9 +9,9 @@ When you set up and configure an [!DNL  Adobe Experience Manager Forms] as a [!D
 
 You can use the local development environment to perform the following actions without logging in to cloud development environment:
 
-* Create forms and related assets (themes, templates, custom Submit Actions, and more)
+* [Create forms](creating-adaptive-form.md) and related assets (themes, templates, custom Submit Actions, and more)
 * [Convert PDF forms to Adaptive Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
-* Build applications to generate [Customer Communications](aem-forms-cloud-service-communications-introduction.md) on demand or on batch modes.
+* Build applications to generate [Customer Communications](aem-forms-cloud-service-communications-introduction.md) on demand or in batch modes.
 
  After an Adaptive Form or related assets are ready on the local development instance or an application to generate [Customer Communications] is ready, you can export the Adaptive Form or Customer Communications application from the local development environment to a Cloud Service environment for further testing or moving to production environments.
 
