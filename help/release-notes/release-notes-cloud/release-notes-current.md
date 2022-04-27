@@ -118,7 +118,7 @@ The Release Date for Best Practices Analyzer v2.1.28 is April 22, 2022.
 
 * Ability to detect assets with more than 100 descendants under the metadate node of the asset in the repository. It is recommended to remove metadata nodes that are not needed to improve the performance when loading folders consisting of such assets.
 
-*	Ability to detect and report on type of Data Store used.
+* Ability to detect and report on type of Data Store used.
 
 * Pattern updated for AEM Form Portal.
 
