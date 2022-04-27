@@ -99,7 +99,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Post Go Live](/help/journey-migration/post-go-live.md)
   + [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/journey-migration/getting-started-partners.md)
   + Release Notes for Migration Tools {#release-notes-migration-tools}
-    + [Current Release Notes (2022.3.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+    + [Current Release Notes (2022.4.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+    + [Release Notes for 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
     + [Release Notes for 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
     + [Release Notes for 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
     + 2021 {#2021}
