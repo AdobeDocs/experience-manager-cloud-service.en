@@ -1,5 +1,5 @@
 ---
-title: Configure Translation Rules
+title: Configure Translation Rules for Headless Content
 description: Learn how to define translation rules to identify content for translation.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 ---
