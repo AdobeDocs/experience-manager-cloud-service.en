@@ -72,17 +72,15 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### What is New {#what-is-new-foundation}
+### SDK Build Analyzers {#sdk-build-analyzers}
 
-* For more efficient and effective troubleshooting of custom features in Cloud environments, we’ve released a new developer tool – [the Repository Browser](/help/implementing/developing/tools/repository-browser.md). It’s a lightweight, read-only, HTML browser that you can launch from the Developer Console. Get visibility into the content repository on the publisher, author, and preview tiers—and in all environments, including production, stage, and dev. Browse the content structure, view properties, and preview and download binaries.
+The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a maven project, including missing dependencies. It gives developers an opportunity to discover issues during local development, well before deploying to Cloud environments with Cloud Manager. 
 
-  ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
+A new analyzer has been recently added:
 
-* The credentials used to authenticate server-to-server API calls (e.g., for GraphQL API requests) can now be refreshed before expiration in a self-serve way from the Developer Console. See the [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) for more info.
+* `content-packages-validation` - validates for well formed content syntax and structure for packages that will be installed during deployment
 
-* Version purge and audit log purge maintenance tasks, which had not previously been enabled, will be enabled for new environments. See the associated values in the [Maintenance Task](/help/operations/maintenance.md) article.
-
-* AEM as a Cloud Service SDK Dispatcher Tools now support Mac computers with the  M1 chip
+It is strongly recommended to update your maven project with the latest version of the analyzer or include the analyzer if you haven't yet done so. For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html).
 
 ## Cloud Manager {#cloud-manager}
 
