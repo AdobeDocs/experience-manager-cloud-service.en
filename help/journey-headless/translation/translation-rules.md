@@ -101,4 +101,3 @@ Build on this knowledge and continue your AEM headless translation journey by ne
 While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Translate content,](translate-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [Identifying Content to Translate](/help/sites-cloud/administering/translation/rules.md) - Learn how translation rules identify content that needs translating.
-* [AEM as a Cloud Service Prerelease Channel](/help/release-notes/prerelease.md#enable-prerelease) - Learn how to opt in to the prerelease channel of AEM as a Cloud Service to try new and upcoming features.
