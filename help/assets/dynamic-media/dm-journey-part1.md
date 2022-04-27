@@ -67,7 +67,8 @@ This unique delivery method ensures that consistent quality experiences are sent
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media delivers the same primary image to different mediums in different sizes and formats.](/help/assets/assets-dm/dm-oneasset-multioutput.png)
+![Adobe Dynamic Media delivers the same primary image to different mediums in different sizes and formats.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+
 *Adobe Dynamic Media ensures consistent, quality experiences are delivered to any screen, regardless of size or bandwidth.*
 
 As you read on, you are going to learn more about why this concept of "one primary asset file, endless possibilities" is important.
@@ -111,7 +112,7 @@ When there is a video on a page, or a main page, your customers tend to engage w
 
 To solve this issue, Dynamic Media gives you the ability to create *Adaptive Video Sets*.
 
-![Adaptive video set](/help/assets/dynamic-media/assets/dm-adaptive-video.png)
+![Adaptive video set](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats.*
 
 You start with your original, primary video, which you upload into the system. Dynamic Media automatically sizes, or *transcodes*, that video into multiple videos. Then, at the time of delivery, it intelligently determines which video screen, what quality, and what format to use, and delivers it to either the phone, tablet, or desktop computer.
