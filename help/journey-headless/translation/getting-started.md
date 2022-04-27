@@ -82,15 +82,11 @@ Because the Content Models define the structure of your content, you need to kno
 ![Content Fragment Model Editor](assets/content-fragment-model-editor.png)
 1. Tap or click one of the fields of the model. AEM marks it and the details of that field are shown in the right column.
 ![Content Fragment Model Editor detail](assets/content-fragment-model-editor-detail.png)
+1. The content architect enables the **Translatable** field on every Content Model field that needs to be translated.
 
 >[!TIP]
 >
 >Generally the content architect is responsible for identifying which fields are required for translation. The prior steps are provided for the understanding of the translation specialist.
-
-How you manage the translation of Content Model fields depends on if you are using the prerelease channel of AEM as a Cloud Service. See the [Additional Resources section](#additional-resources) for more information on the prerelease channel.
-
-* **If you are using the prerelease channel**, the content architect enables the **Translatable** field on every Content Model field that needs to be translated.
-* **If you are not using the prerelease channel**, the content architect provides you with the **Property Name** field for all fields that must be translated. You will need this information later in the journey. These **Property Name**s are required to inform AEM which fields of your content must be translated.
 
 ### Content Fragments {#content-fragments}
 
@@ -164,10 +160,9 @@ You should take note of the specific path of your content as it will be required
 Now that you understand what Content Fragments are and the importance of content structure, we can look at how to translate this content. The translation tools in AEM are quite powerful, but are simple to understand at a high level.
 
 * **Translation Connector** - The connector is the link between AEM and the translation service that you use.
-* **Translation Rules** - Rules define what content under particular paths should be translated. Rules are only needed if you are not using the AEM prerelease channel.
 * **Translation Projects** - Translation projects gather content that should be addressed as a single translation effort and tracks the progress of the translation, interfacing with the connector to transmit the content to be translated and receive it back from the translation service.
 
-You generally only set up your connector once for your instance. If rules are required, they are set up per headless project. Then you use translation projects to translate your content and keep its translations up to date on a continual basis.
+You generally only set up your connector once for your instance. Then you use translation projects to translate your content and keep its translations up to date on a continual basis.
 
 ## What's Next {#what-is-next}
 
@@ -187,4 +182,3 @@ While it is recommended that you move on to the next part of the headless transl
 * [Identifying Content to Translate](/help/sites-cloud/administering/translation/rules.md) - Learn how translation rules identify content that needs translating.
 * [Configuring the Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md) - Learn how to configure the Translation Integration Framework to integrate with third-party translation services.
 * [Managing Translation Projects](/help/sites-cloud/administering/translation/managing-projects.md) - Learn how to create and manage both machine and human translation projects in AEM.
-* [AEM as a Cloud Service Prerelease Channel](/help/release-notes/prerelease.md#enable-prerelease) - Learn how to opt in to the prerelease channel of AEM as a Cloud Service to try new and upcoming features.
