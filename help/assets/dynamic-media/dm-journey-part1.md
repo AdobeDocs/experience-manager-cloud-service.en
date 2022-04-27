@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media Journey
+title: Dynamic Media Journey, Part I
 description: The Dynamic Media Journey covers the basics of Dynamic Media, how it works, what it can do for you, and what value it brings to your work and your customers. 
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -67,7 +67,8 @@ This unique delivery method ensures that consistent quality experiences are sent
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media delivers the same primary image to different mediums in different sizes and formats.](/help/assets/assets-dm/dm-oneasset-multioutput.png)
+![Adobe Dynamic Media delivers the same primary image to different mediums in different sizes and formats.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+
 *Adobe Dynamic Media ensures consistent, quality experiences are delivered to any screen, regardless of size or bandwidth.*
 
 As you read on, you are going to learn more about why this concept of "one primary asset file, endless possibilities" is important.
@@ -98,7 +99,7 @@ This intelligence further reduces image file size based on browser and network c
 
 Overall, with smart imaging, you can expect a 22% to 47% performance improvement depending on your existing image preset settings and specific end-user characteristics. All while keeping image quality as if it were never touched.
 
-![Smart Imaging](/help/assets/assets-dm/dm-smart-imaging.png)
+![Smart Imaging](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *Smart Imaging automatically optimizes an image's format and file size based on a customer's browser capability and network speed.*
 
 Smart imaging is not turned on by default because it requires a coordinated effort between you and Adobe Dynamic Media technical support. Also, enabling Smart Imaging requires a complete clearing of your CDN cache, which is then refilled with time. If you are interested in using Smart Imaging, you can work with Adobe to have it turned on by submitting a technical support ticket. Technical support then gives you a URL parameter that lets you try out, beforehand, smart imaging. You can try it on any of your web pages or images so you can see the performance that you get, and the savings. You can then have smart imaging turned on for your full site.
@@ -111,7 +112,7 @@ When there is a video on a page, or a main page, your customers tend to engage w
 
 To solve this issue, Dynamic Media gives you the ability to create *Adaptive Video Sets*.
 
-![Adaptive video set](/help/assets/dynamic-media/assets/dm-adaptive-video.png)
+![Adaptive video set](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats.*
 
 You start with your original, primary video, which you upload into the system. Dynamic Media automatically sizes, or *transcodes*, that video into multiple videos. Then, at the time of delivery, it intelligently determines which video screen, what quality, and what format to use, and delivers it to either the phone, tablet, or desktop computer.
