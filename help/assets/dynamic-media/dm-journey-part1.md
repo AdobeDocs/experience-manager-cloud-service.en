@@ -99,7 +99,7 @@ This intelligence further reduces image file size based on browser and network c
 
 Overall, with smart imaging, you can expect a 22% to 47% performance improvement depending on your existing image preset settings and specific end-user characteristics. All while keeping image quality as if it were never touched.
 
-![Smart Imaging](/help/assets/assets-dm/dm-smart-imaging.png)
+![Smart Imaging](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *Smart Imaging automatically optimizes an image's format and file size based on a customer's browser capability and network speed.*
 
 Smart imaging is not turned on by default because it requires a coordinated effort between you and Adobe Dynamic Media technical support. Also, enabling Smart Imaging requires a complete clearing of your CDN cache, which is then refilled with time. If you are interested in using Smart Imaging, you can work with Adobe to have it turned on by submitting a technical support ticket. Technical support then gives you a URL parameter that lets you try out, beforehand, smart imaging. You can try it on any of your web pages or images so you can see the performance that you get, and the savings. You can then have smart imaging turned on for your full site.
