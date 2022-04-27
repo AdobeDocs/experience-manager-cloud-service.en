@@ -57,7 +57,7 @@ A Publish instance is an AEM Forms as a Cloud Service running in the standard Pu
 * Sync APIs to create, assemble, and deliver brand-oriented and personalized communications.
 * Sync APIs to combine, rearrange, and validate PDF documents.
 
-User data submitted on the Publish instances is required by the workflows at Author instances for approval use-cases. So, publish instances also make HTTPS call to the author to persist submitted data. These calls are made to the public author endpoint.
+Reverse Replication is not available on AEM as a Cloud Service to send content/data from the Publish Service to the Author Service. However, you can configure an Adaptive Forms running on Publish to submit data to a Workflow on an Author (Workflows can only be run on the Author). This is helpful in approval use-cases.
 
 #### Dispatcher
 
