@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media Journey, Part I
-description: The Dynamic Media Journey covers the basics of Dynamic Media, how it works, what it can do for you, and what value it brings to your work and your customers. 
+description: The Dynamic Media Journey covers the basics of Dynamic Media, how it works, what it can do for you, and what value it brings to your work and your customers.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -10,8 +10,8 @@ role: User, Admin
 mini-toc-levels: 4
 hide: no
 hidefromtoc: no
+exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
 ---
-
 # Dynamic Media Journey: The Basics, Part I {#dm-journey-part1}
 
 Welcome to the Dynamic Media Journey.
@@ -263,8 +263,3 @@ The rendition above is live! [Try it](https://s7d1.scene7.com/s7viewers/html5/Zo
 Let's examine these URLs a little closer so you can better understand what is going on.
 
 Take me to [Dynamic Media Journey: The Basics, Part II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
-
-
-
-
-
