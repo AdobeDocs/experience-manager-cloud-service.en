@@ -66,7 +66,7 @@ You need to prepare a new index definition package that contains the actual inde
 
 which then needs to go under `ui.apps/src/main/content/jcr_root`. Sub root folders are not supported as of now.
 
-The filter for the package needs to be set such that existing (out-of-the-box indexes) are retained. There are two ways to do this: Either, the filter is set to `<filter root="/oak:index/" mode="merge"/>` in the file `ui.apps/src/main/content/META-INF/vault/filter.xml`, or each custom (or customized) index needs to be listed separately in the filter section, for example as `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. If the later case, each time the version is changed, the filter needs to be adjusted.
+The filter for the package needs to be set such that existing (out-of-the-box indexes) are retained. In the file `ui.apps/src/main/content/META-INF/vault/filter.xml`, each custom (or customized) index needs to be listed, for example as `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. If the index version is later changed, the filter needs to be adjusted.
 
 The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
