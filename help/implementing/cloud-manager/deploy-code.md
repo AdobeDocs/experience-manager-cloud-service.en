@@ -8,15 +8,14 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 
 Learn how to deploy your code to Production using Cloud Manager pipelines in AEM as a Cloud Service.
 
-
 ![Production pipeline diagram](./assets/configure-pipeline/production-pipeline-diagram.png)
 
 Deploying code seamlessly to Stage and then through to Production is done via a Production pipeline. The Production pipeline execution is broken into two logical phases.
 
-1. Deployment to stage environment
-    + The code is built and deployed to the stage environment for automated security and performance testing, and user acceptance testing (UAT).
+1. Deployment to Stage environment
+    + The code is built and deployed to the Stage environment for automated security and performance testing, and user acceptance testing (UAT).
 1. Deployment to Production environment
-    + Once the build is validated on stage, and approved for promotion to production, the same build artifact is deployed to the production environment
+    + Once the build is validated on Stage, and approved for promotion to Production, the same build artifact is deployed to the Production environment.
 
 _Only the Full Stack Code pipeline type supports code scanning, and automated security and performance testing._
 
