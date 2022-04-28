@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media Journey, Part II
-description: The Dynamic Media Journey covers the basics of Dynamic Media, how it works, what it can do for you, and what value it brings to your work and your customers. 
+description: The Dynamic Media Journey covers the basics of Dynamic Media, how it works, what it can do for you, and what value it brings to your work and your customers.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -10,8 +10,8 @@ role: User, Admin
 mini-toc-levels: 4
 hide: no
 hidefromtoc: no
+exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 ---
-
 # Dynamic Media Journey: The Basics, part II  {#dm-journey-part2}
 
 Welcome to Dynamic Media Journey: The Basics, Part II where you can expect to learn the following:
@@ -190,8 +190,3 @@ You read a little bit about image sets and viewers. Let's look at a couple of ot
 
 * `ZoomVertical_dark` viewer applied to an image asset. [Try it](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&config=jpearldemo/ZoomVertical_dark).
 * `Zoom_light` viewer applied to an image. [Try it](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&config=jpearldemo/Zoom_light).
-
-
-
-
-
