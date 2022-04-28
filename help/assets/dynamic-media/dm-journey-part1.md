@@ -266,7 +266,7 @@ _Dynamic Media topics_
 * [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
 * [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
 * [Adaptive Video Sets](/help/assets/dynamic-media/video.md)
-* [Best practices for optimizing the quality of your images](help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
+* [Best practices for optimizing the quality of your images](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Upload assets](/help/assets/add-assets.md#upload-assets)
 * [Preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [Preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
