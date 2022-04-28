@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 ---
 # Configuring a Production Pipeline {#configure-production-pipeline}
 
-Learn how to configuring production pipelines to build and deploy your code to production environments.
+Learn how to configuring production pipelines to build and deploy your code to production environments. A production pipeline deploys code first to Stage environment, and upon approval deploys the same code to the Production environment.
 
 A user must have the **[Deployment Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md#role-based-permissions)** role to configure production pipelines.
 
