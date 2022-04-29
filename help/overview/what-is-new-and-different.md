@@ -165,7 +165,7 @@ For existing AEM applications to run on AEM as a Cloud Service, the following st
 
 This process is commonly referred to as Cloud-first development. Since the end-to-end duration is expected to take minutes (from 20 to 50 depending on the complexity of the application), it is necessary to embrace rapid development methodologies before the pending code and configuration changes are attempted in the cloud.
 
-The Web Console, where OSGI bundles and their associated configuration are managed, and previously part of the AEM QuickStart, is no longer available in AEM as a Cloud Service. The new developer console provides a read-only interface for most of runtime information. With this console, developers can select and login directly to any particular node of an author or publish service, and view the releavnt information.
+The Web Console, where OSGI bundles and their associated configuration are managed, and previously part of the AEM QuickStart, is no longer available in AEM as a Cloud Service. The new developer console provides a read-only interface for most of runtime information. With this console, developers can select and login directly to any particular node of an author or publish service, and view the relevant information.
 
 >[!NOTE]
 >
