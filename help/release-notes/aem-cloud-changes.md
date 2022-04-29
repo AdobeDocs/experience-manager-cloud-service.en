@@ -47,7 +47,7 @@ The main differences are found in the following areas:
 
 * No changes in `/libs` are allowed at all.
   * This is not new rule, however this was not enforced in previous on-premise versions of AEM.
-* Overlays for areas in `/libs` that are allowed to be overlaid are are still permitted within `/apps`.
+* Overlays for areas in `/libs` that are allowed to be overlaid are still permitted within `/apps`.
   * Such overlays must come from Git via the CI/CD pipeline.
 * Static Template design information that is stored in `/apps` can't be edited via UI.
   * It is recommended that you leverage Editable Templates instead.
@@ -109,4 +109,4 @@ For project transitioning from AMS or an on-premises installation Adobe strongly
 
 ## Asset Handling and Delivery {#asset-handling}
 
-Asset upload, processing, and download is optimized in [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] is now more efficient, enables more scaling, and lets you upload and download at much faster rate. Also, it impacts the existing custom code and some operations. For a list of changes and for parity with [!DNL Experience Manager] 6.5 features, see the [changes to [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Asset upload, processing, and download are optimized in [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] is now more efficient, enables more scaling, and lets you upload and download at much faster rate. Also, it impacts the existing custom code and some operations. For a list of changes and for parity with [!DNL Experience Manager] 6.5 features, see the [changes to [!DNL Assets]](/help/assets/assets-cloud-changes.md).
