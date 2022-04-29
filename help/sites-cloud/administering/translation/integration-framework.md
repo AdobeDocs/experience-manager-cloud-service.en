@@ -33,8 +33,8 @@ The following translation vendors provide an implementation of the AEM API for t
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
-* [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
 After you install a connector package, you can create a cloud configuration for the connector. Typically, you need to provide your credentials for authenticating with the translation service. For information about adding a cloud configuration for the Microsoft Translator connector, see [Integrating with Microsoft Translator](connect-ms-translator.md).
@@ -103,13 +103,7 @@ Assets properties control how to configure assets. For more information about tr
 |Translate Tags|Activate this property to translate tags that are associated with the asset.|
 |Auto-Execute Translation|Select this property to execute translation jobs automatically after translation projects are created. You do not have an opportunity to review or scope the translation job when you select this option.|
 |Disable Update-Only Translation|When this option is checked, updating the translation project will submit all translatable fields for translation, not just the ones changed since last translation.|
-|Enable Content Model Fields for Translation*|Enabling this option will use the **Translatable** field on [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md#properties) to determine if the field is translated. In this case, [translation rules](rules.md) are superseded.|
-
->[!NOTE]
->
->*This feature is available in the prerelease channel.
-> 
->See the [Prerelease Channel documentation](/help/release-notes/prerelease.md#enable-prerelease) for information on how to enable the feature for your environment.
+|Enable Content Model Fields for Translation|Enabling this option will use the **Translatable** field on [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md#properties) to determine if the field is translated and automatically creates [translation rules](rules.md) accordingly. This option supersedes any translation rules you may have created.|
 
 ## Configuring Pages for Translation {#configuring-pages-for-translation}
 
