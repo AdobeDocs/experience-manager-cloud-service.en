@@ -33,7 +33,7 @@ The main differences are found in the following areas:
 
 * [Custom runmodes are not allowed](#custom-runmodes)
 
-* [Removal of Replication Agents](#replication-agents)
+* [Removal of Replication Agents and related changes](#replication-agents)
 
 * [Removal of Classic UI](#classic-ui)
 
@@ -89,13 +89,15 @@ The following runmodes are provided out-of-the-box for AEM Cloud Service:
 
 Additional or custom run modes are not possible in AEM Cloud Service.
 
-## Removal of Replication Agents {#replication-agents}
+## Removal of Replication Agents and related changes {#replication-agents}
 
 In AEM Cloud Service, content is published using [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html). The replication agents used in previous versions of AEM are no longer used or provided, which might impact the following areas of existing AEM projects:
 
 * Custom workflows that push content to replication agents of preview servers for example.
 * Customization to replication agents to transform content
 * Using Reverse Replication to bring content from publish back to author
+
+In addition, note that the pause and disable buttons have been removed from the replication agent administration console.
 
 ## Removal of Classic UI {#classic-ui}
 
