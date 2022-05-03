@@ -13,7 +13,7 @@ Learn how to deploy your code to Production using Cloud Manager pipelines in AEM
 Deploying code seamlessly to Stage and then through to Production is done via a Production pipeline. The Production pipeline execution is broken into two logical phases.
 
 1. Deployment to Stage environment
-    * The code is built and deployed to the Stage environment for automated security and performance testing, and user acceptance testing (UAT).
+    * The code is built and deployed to the Stage environment for automated functional testing, UI testing, experience audit, and user acceptance testing (UAT).
 1. Deployment to Production environment
     * Once the build is validated on Stage, and approved for promotion to Production, the same build artifact is deployed to the Production environment.
 
