@@ -237,8 +237,8 @@ When post-processing is not needed, create and use an "empty" Workflow Model in 
 1. Navigate to __Tools > Workflow > Models__
 1. Select __Create > Create Model__ form the top action bar
 1. Provide a title and name for the new Workflow Model, for example:
-    + Title: Disable Auto-start Workflow
-    + Name: disable-auto-start-workflow
+    * Title: Disable Auto-start Workflow
+    * Name: disable-auto-start-workflow
 1. Select __Done__ to create the Workflow Model
 1. __Select__ and __Edit__ the newly created Workflow Model
 1. In the Workflow Model editor, select __Step 1__ from the model definition and delete it
