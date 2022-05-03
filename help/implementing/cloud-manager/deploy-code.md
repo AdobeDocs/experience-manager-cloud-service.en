@@ -17,7 +17,7 @@ Deploying code seamlessly to Stage and then through to Production is done via a 
 1. Deployment to Production environment
     * Once the build is validated on Stage, and approved for promotion to Production, the same build artifact is deployed to the Production environment.
 
-_Only the Full Stack Code pipeline type supports code scanning, and automated security and performance testing._
+_Only the Full Stack Code pipeline type supports code scanning, function testing, UI testing, and experience audit._
 
 ## Deploying Your Code with Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
