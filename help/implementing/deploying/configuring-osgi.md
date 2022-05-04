@@ -36,8 +36,7 @@ following the `cfg.json` OSGi configuration format.
 
 >[!NOTE]
 >
->Prior versions of AEM supported OSGi configuration files using different file formats such as `.cfg`, `.config` and as XML `sling:OsgiConfig` resource definitions. 
-These formats are superseded by the `.cfg.json` OSGi configuration format.
+>Prior versions of AEM supported OSGi configuration files using different file formats such as `.cfg`, `.config` and as XML `sling:OsgiConfig` resource definitions. These formats are superseded by the `.cfg.json` OSGi configuration format.
 
 ## Runmode Resolution {#runmode-resolution}
 
