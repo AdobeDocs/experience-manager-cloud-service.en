@@ -20,11 +20,11 @@ The following section outlines the general Release Notes for the current (latest
 ## Release Date {#release-date}
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.4.0) is May 5, 2022.
-The following release (2022.5.0) is planned for May 26, 2022.
+The next release (2022.5.0) is planned for May 26, 2022.
 
 ## Release Video {#release-video}
 
-Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/341465) video for a summary of the features added in the 2022.4.0 release.
+Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/342612?quality=12) video for a summary of the features added in the 2022.4.0 release.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
