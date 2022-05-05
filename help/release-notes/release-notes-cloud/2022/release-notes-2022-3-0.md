@@ -18,7 +18,7 @@ The following section outlines the general Release Notes for the current (latest
 ## Release Date {#release-date}
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.3.0) is March 31, 2022.
-The following release (2022.4.0) is on April 28, 2022.
+The next release (2022.4.0) is planned for May 5, 2022.
 
 ## Release Video {#release-video}
 
@@ -42,7 +42,7 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### New features available in [!DNL Assets] prerelease channel {#prerelease-features-assets}
 
-* You can [sort tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) while creating smart tags as well as when applying search filters using the tags predicate.
+* You can now [sort tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) in the tag picker window in ascending or descending order based on the tag name, date of creation, or date of modification.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -88,40 +88,7 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ## Cloud Manager {#cloud-manager}
 
-### February Release Date {#release-date-cm-feb}
-
-The release date for Cloud Manager in AEM as a Cloud Service 2022.02.0 is 10 February 2022. The next release is planned for 10 March 2022.
-
-### What's New {#what-is-new-cm-feb}
-
-* New accelerated [Web Tier Config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) have been introduced to exclusively deploy HTTPD/dispatcher configuration.
-  * You must be on AEM version `2021.12.6151.20211217T120950Z` or newer and [opt in to the flexible mode of the dispatcher tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) to use this feature.
-  * This feature will be rolled out in a phased approach over the two weeks following the 2022.02.0 release.
-* The Cloud Manager landing page experience has been refreshed to deliver improved navigation, easy switching between grid/tile views, and pop-overs for quick program summary.
-* A new failing threshold (`< D`) has been added to the [reliability rating metric.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
-  * Customers with severe quality issues that impact system stability, primarily related to invalid indexes and workflow processes, will not be able to deploy until those issues are resolved.
-* The severity of the `BannedPath` [quality rule](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) has been changed from blocker to critical.
-* The pipeline wizard will inform the user when an AEM environment update may be needed before configuring a [Web Tier Config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) associated with it.
-
-### Bug Fixes {#bug-fixes-cm-feb}
-
-* Old git repository passwords are now always invalidated when a new password is generated.
-* Updating environment variables through the API no longer interferes with a pipeline execution in rare situations.
-
-### March Release Date {#release-date-cm-march}
-
-The release date for Cloud Manager release 2022.3.0 in AEM as a Cloud Service 10 March 2022. The next release is planned for 7 April 2022.
-
-### What's New {#what-is-new-cm-march}
-
-* Accessing AEM Environment log can be done using the Developer role.
-
-### Bug Fixes {#bug-fixes-cm-march}
-
-* A subset of git repositories created manually had an incorrect name value which prevented the build artifact reuse feature from being effective. The names of those repositories have been changed and users will see the corrected name in the Cloud Manager API/UI.
-* Build artifacts from non-production pipelines were inappropriately reused on production full stack pipelines.
- * When adding or editing a code quality pipeline, the options to handle metric failures is no longer displayed.
-* Some unexpected pipeline variable configurations could cause in the build step.
+You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
 ## Content Transfer Tool {#ctt-release}
 
