@@ -1,5 +1,5 @@
 ---
-title: Configure the Translation Connector
+title: Configure the Translation Connector for Headless Content
 description: Learn how to connect AEM to a translation service.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 ---
@@ -93,6 +93,8 @@ To create a new translation configuration:
    1. **Translate Metadata** - Check this to translate asset metadata.
    1. **Translate Tags** - Check this to translate tags that are associated with the asset.
    1. **Auto-Execute Translation** - Check this property if you want translations to be automatically sent to your translation service.
+   1. **Disable Update-Only Translation** - When this option is checked, updating the translation project will submit all translatable fields for translation, not just the ones changed since last translation. Updating your translation project will be discussed later in the journey.
+   1. **Enable Content Model Fields for Translation** - Check this option so the translation configuration automatically recognizes fields in the Content Models based on the **Translatable** flag.
 
 1. Tap or click **Save &amp; Close**.
 
@@ -124,7 +126,7 @@ Now that you have completed this part of the headless translation journey you sh
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Configure translation rules,](translation-rules.md) where you will learn how to define which content to translate.
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Translate content,](translation-rules.md) where you will learn how to use your configuration so far to actually translate your content.
 
 ## Additional Resources {#additional-resources}
 

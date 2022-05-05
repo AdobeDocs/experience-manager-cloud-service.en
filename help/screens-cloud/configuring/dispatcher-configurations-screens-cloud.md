@@ -1,8 +1,8 @@
 ---
 title: Dispatcher Configurations in Screens as a Cloud Service
 description: This page describes Dispatcher Configurations in Screens as a Cloud Service.
+exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
 ---
-
 # Dispatcher Configurations in Screens as a Cloud Service {#dispatcher-configurations-screens-cloud}
 
 This section describes the dispatcher configurations for Screens as a Cloud Service.

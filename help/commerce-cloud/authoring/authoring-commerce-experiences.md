@@ -1,6 +1,7 @@
 ---
 title: Authoring Commerce Experiences
 description: Working commerce experiences
+exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 ---
 # Authoring Commerce Experiences {#authoring-commerce-experiences}
 
@@ -92,6 +93,6 @@ Using Omnisearch is an easy way for practitioners to find AEM content and produc
 
 The result is grouped by type.
 
-    >[!NOTE]
-    >
-    > Full-text search in Omnisearch does not support associated Content Fragments. Use SKU or UID to find associated Content Fragments.
+>[!NOTE]
+>
+> Full-text search in Omnisearch does not support associated Content Fragments. Use SKU or UID to find associated Content Fragments.
