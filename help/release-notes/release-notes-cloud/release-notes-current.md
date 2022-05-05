@@ -30,21 +30,8 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* [!DNL AEM Dynamic Media] now provides the flexibility to [configure one alias account](/help/assets/dynamic-media/dm-alias-account.md) in the user interface, thereby ensuring out-of-the-box Dynamic Media URLs and Viewer Embed code are updated. This positively impacts SEO, to reflect updates made to your business context, such as rebranding.
+* You can now [sort tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) for an asset on the tag picker in ascending or descending order based on the tag name, date of creation, or date of modification.
 
-* You can now use the [!DNL Experience Manager Assets] user interface to:
-
-  * Configure the [detection of duplicate assets](/help/assets/manage-digital-assets.md#detect-duplicate-assets) in a repository.
-
-  * Configure [adding digital watermarks](/help/assets/watermark-assets.md) to images.
-
-* The administrators can now configure email service for large downloads. It allows the users to [enable email notifications for large downloads](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) from the [!DNL Experience Manager Assets] interface. The user receives an email notification containing the download link of the archived zip folder upon completion of the download process.
-
-* The [Manage Publication](/help/assets/manage-publication.md) feature is enhanced with an improved user interface. The users can publish or unpublish content to and from the selected destination, [Add Content](/help/assets/manage-publication.md#add-content) to the publishing list from across the DAM repository, [Include Folder Settings](/help/assets/manage-publication.md#include-folder-settings) to publish content of the selected folders and apply filters, and [schedule publishing](/help/assets/manage-publication.md#publish-assets-later) to a later date or time.
-
-### New features available in [!DNL Assets] prerelease channel {#prerelease-features-assets}
-
-* You can [sort tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) while creating smart tags as well as when applying search filters using the tags predicate.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
