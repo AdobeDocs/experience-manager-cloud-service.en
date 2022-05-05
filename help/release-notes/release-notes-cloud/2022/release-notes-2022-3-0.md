@@ -24,6 +24,12 @@ The next release (2022.4.0) is planned for May 5, 2022.
 
 Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/341465) video for a summary of the features added in the 2022.3.0 release.
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
+
+* Content model data types can now be defined as translatable using a simple checkbox in the content model editor. Additionally, AEM translation rules and configurations are automatically updated.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
@@ -66,11 +72,14 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### What is New {#what-is-new-cif}
 
-* Beta: AEM CIF Search Core Component support Commerce LiveSearch
 * Improved SEO for multi-store scenarios: URL formats for PDP / PLP can now be configured on a store level via the CIF Cloud Config properties
 * Product picker supports staged products via new filter option in the UI.  This enables content practitioners to prepare product content management for upcoming product launches
 * Simplified CIF configuration management and error handling by using CIF Cloud Config name instead of config proxy url
 * Manual category selection for Product list and Carousel components. This allows content practitioners to use these components on content pages, outside of the catalog experience
+
+### New features available in CIF prerelease channel {#prerelease-features-cif}
+
+* AEM CIF Search Core Component support Commerce LiveSearch
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
