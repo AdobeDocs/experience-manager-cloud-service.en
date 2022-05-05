@@ -19,104 +19,84 @@ The following section outlines the general Release Notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.3.0) is March 31, 2022.
-The next release (2022.4.0) is planned for May 5, 2022.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.4.0) is May 5, 2022.
+The next release (2022.5.0) is planned for May 26, 2022.
 
 ## Release Video {#release-video}
 
-Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/341465) video for a summary of the features added in the 2022.3.0 release.
+Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/342612?quality=12) video for a summary of the features added in the 2022.4.0 release.
+
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### New features in [!DNL Sites] {#sites-features}
+
+* Content model data types can now be defined as [translatable](/help/assets/content-fragments/content-fragments-models.md#properties) using a simple checkbox in the content model editor. Additionally, AEM translation rules and configurations are automatically updated.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* [!DNL AEM Dynamic Media] now provides the flexibility to [configure one alias account](/help/assets/dynamic-media/dm-alias-account.md) in the user interface, thereby ensuring out-of-the-box Dynamic Media URLs and Viewer Embed code are updated. This positively impacts SEO, to reflect updates made to your business context, such as rebranding.
+* You can now [sort tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) in the tag picker window in ascending or descending order based on the tag name, date of creation, or date of modification.
 
-* You can now use the [!DNL Experience Manager Assets] user interface to:
-
-  * Configure the [detection of duplicate assets](/help/assets/manage-digital-assets.md#detect-duplicate-assets) in a repository.
-
-  * Configure [adding digital watermarks](/help/assets/watermark-assets.md) to images.
-
-* The administrators can now configure email service for large downloads. It allows the users to [enable email notifications for large downloads](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) from the [!DNL Experience Manager Assets] interface. The user receives an email notification containing the download link of the archived zip folder upon completion of the download process.
-
-* The [Manage Publication](/help/assets/manage-publication.md) feature is enhanced with an improved user interface. The users can publish or unpublish content to and from the selected destination, [Add Content](/help/assets/manage-publication.md#add-content) to the publishing list from across the DAM repository, [Include Folder Settings](/help/assets/manage-publication.md#include-folder-settings) to publish content of the selected folders and apply filters, and [schedule publishing](/help/assets/manage-publication.md#publish-assets-later) to a later date or time.
-
-### New features available in [!DNL Assets] prerelease channel {#prerelease-features-assets}
-
-* You can [sort tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) while creating smart tags as well as when applying search filters using the tags predicate.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}
 
-* **[!DNL Communications - Document Generation APIs]**: [Document Generation APIs](/help/forms/aem-forms-cloud-service-communications.md) help to combine, rearrange, and validate PDF documents. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
+* **Communications - Document Manipulation APIs support in Forms as a Cloud Service SDK**: [Document Manipulation APIs](/help/forms/aem-forms-cloud-service-communications.md) help to combine, rearrange, and validate PDF documents. You can now use Communications - Document Generation APIs on a local development environment with the help of AEM Forms as a Cloud Service SDK.
 
-  * Assemble PDF documents.
-  * Disassemble PDF documents.
-  * Convert to and validate PDF/A-compliant documents.
+* **Use custom XCI for generating a Document of Record**: You can now [use a custom XCI file to set various properties of a Document of Record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). It overrides the master XCI with the custom changes. It provides more control over the generation of Documents of Record, increasing personalization, and customization opportunities.
 
-* **Automatically convert PDF Forms large than 15 pages to adaptive forms**: You can now use automated forms conversion service to convert PDF Forms with up to 40 pages to adaptive forms. The service now provides option to convert sections of forms larger than 15 pages to adaptive form fragments. It helps improve rendering speed of converted forms and makes it easier to load large forms in adaptive form editor.  
+* **Use invisible CAPTCHA in an adaptive form**: You can use the [invisible CAPTCHA to show the CAPTCHA challenge only in the case of a suspicious activity](/help/forms/captcha-adaptive-forms.md). If no suspicious activity is found the CAPTCHA challenge is not displayed. It helps assess human form completion without checkbox requirements, reduce customization efforts, and improve the end-user experience.
 
-### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
-
-* **Use custom XCI for generating a Document of Record**: You can now use a custom XCI file to set various properties of a Document of Record. It overrides the master XCI with the custom changes.
-
-* **Use invisible CAPTCHA in an adaptive form**: You can use the invisible CAPTCHA to show the CAPTCHA challenge only in the case of a suspicious activity. If no suspicious activity is found the CAPTCHA challenge is not displayed.
+* **Form Data Model Configurations**: You can now [reuse Form Data Model configurations across environments](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config), simplifying data integrations and reducing IT costs.
 
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
 
-* Beta: AEM CIF Search Core Component support Commerce LiveSearch
-* Improved SEO for multi-store scenarios: URL formats for PDP / PLP can now be configured on a store level via the CIF Cloud Config properties
-* Product picker supports staged products via new filter option in the UI.  This enables content practitioners to prepare product content management for upcoming product launches
-* Simplified CIF configuration management and error handling by using CIF Cloud Config name instead of config proxy url
-* Manual category selection for Product list and Carousel components. This allows content practitioners to use these components on content pages, outside of the catalog experience
+* Quick access to product cockpit: Easily access full detailed product information with one-click in Sites Editor
+
+    ![Enable wishlist](/help/assets/CIF/enable-wishlist.png)
+
+* Support for additional marketing commerce components:  Components can be configured to show an add-to-cart and add-to-wishlist call-to-action
+
+    ![Sites editor shortcut to product cockpit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### What is New {#what-is-new-foundation}
+### SDK Build Analyzers {#sdk-build-analyzers}
 
-* For more efficient and effective troubleshooting of custom features in Cloud environments, we’ve released a new developer tool – [the Repository Browser](/help/implementing/developing/tools/repository-browser.md). It’s a lightweight, read-only, HTML browser that you can launch from the Developer Console. Get visibility into the content repository on the publisher, author, and preview tiers—and in all environments, including production, stage, and dev. Browse the content structure, view properties, and preview and download binaries.
+The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a maven project, including missing dependencies. It gives developers an opportunity to discover issues during local development, well before deploying to Cloud environments with Cloud Manager. 
 
-  ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
+A new analyzer has been recently added:
 
-* The credentials used to authenticate server-to-server API calls (e.g., for GraphQL API requests) can now be refreshed before expiration in a self-serve way from the Developer Console. See the [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) for more info.
+* `content-packages-validation` - validates for well formed content syntax and structure for packages that will be installed during deployment
 
-* Version purge and audit log purge maintenance tasks, which had not previously been enabled, will be enabled for new environments. See the associated values in the [Maintenance Task](/help/operations/maintenance.md) article.
-
-* AEM as a Cloud Service SDK Dispatcher Tools now support Mac computers with the  M1 chip
+It is strongly recommended to update your maven project with the latest version of the analyzer or include the analyzer if you haven't yet done so. For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html).
 
 ## Cloud Manager {#cloud-manager}
 
 You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
-## Content Transfer Tool {#ctt-release}
-
-### Release Date {#release-date-ctt}
-
-The Release Date for Content Transfer Tool v1.9.0 is February 28, 2022.
-
-### What's New {#what-is-new-ctt}
-
-* Check Size Guardrails - The Content Transfer Tool Check Size feature helps reduce failed content transfers.  With the Check Size feature, users can 1) determine whether they have sufficient disk space in the `crx-quickstart` subdirectory before extraction, and 2) estimate the migration set size and verify if it’s supported. If one or both these checks are violated, users will see warnings in the CTT UI. With this guardrail, you can avoid content transfer failures and proactively discuss migration options with Adobe Customer Care. Refer to [Determining migration set size and disk space](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) for more details.
-
 ## Best Practices Analyzer {#bpa-release}
 
 ### Release Date {#release-date-bpa}
 
-The Release Date for Best Practices Analyzer v2.1.26 is March 16, 2022.
+The Release Date for Best Practices Analyzer v2.1.28 is April 22, 2022.
 
 ### What's New {#what-is-new-bpa}
 
-* Ability to detect unprocessed assets. If unprocessed assets are detected, these assets either need to be set to processed or need to be removed from the migration set during content transfer to avoid running into issues during content ingestion.
-* Ability to detect if content has more than 1000 vanity URLs. Using a high number of vanity URLs is not best practice since it puts a load on Dispatcher and Publish servers.
-* Ability to identify issues related to Oak index definitions and detect incompatibilities with AEM as a Cloud Service.
-* Ability to detect and report on usage of Externalizer configurations. In AEM as a Cloud Service Externalizer configurations are set by Cloud Manager, hence, existing Externalizer configurations need to be refactored to maintain compatibility.
+* Ability to detect and report on usage of unsupported Asset Manager APIs. There are four APIs that are no longer supported in AEM as a Cloud Service. Customers should ensure that they are no longer using these APIs and should be using the new method of asset upload.
+
+* Ability to detect usage of Content Fragment templates. Content Fragment templates are no longer supported for new content fragment creation on AEM as a Cloud Service. Customers will need to create content fragment models to replace content fragment templates.
+
+* Ability to detect assets with more than 100 descendants under the metadate node of the asset in the repository. It is recommended to remove metadata nodes that are not needed to improve the performance when loading folders consisting of such assets.
+
+* Ability to detect and report on type of Data Store used.
+
+* Pattern updated for AEM Form Portal.
 
 ### Bug Fixes {#bug-fixes-bpa}
 
-* In some scenarios, BPA failed to run because of FormsSelectiveFeaturesAnalysis throwing an assertion error. This has been fixed.
-* BPA was reporting findings related to the WRK pattern as MAJOR instead of CRITICAL. This has been fixed.
-* BPA was incorrectly reporting findings related to OAK index definitions in ui.apps as CRITICAL. This has been fixed
+* BPA was reporting findings for core components instead of reporting only on customer components. This has been fixed.
