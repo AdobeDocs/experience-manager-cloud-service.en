@@ -1,9 +1,9 @@
 ---
-title: Permission considerations for headless content 
+title: Permission considerations for headless content
 description: Learn about different permission and ACL considerations for a headless implementation with Adobe Experience Manager. Understand the different personas and potential permission levels needed for both Author and Publish environments.
 feature: Content Fragments,GraphQL API
+exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 ---
-
 # Permission considerations for headless content
 
 With a headless implementation, there are several areas of security and permissions that should be addressed. Permissions and personas can broadly be considered based on the AEM environment **Author** or **Publish**. Each environment contains different personas and with different needs.
@@ -92,4 +92,3 @@ The [AEM Headless SDK](https://github.com/adobe/aem-headless-client-js#create-ae
 ### Access the GraphQL API
 
 HTTP requests providing the [appropriate authentication credentials](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) to the AEM Publish service's GraphQL API endpoints include content the credentials are authorized to read, and anonymously accessible content. Other consumers of the GraphQL API cannot read the content in the CUGs-protected folders.
-

@@ -1,8 +1,8 @@
 ---
 title: Editing Programs
 description: Learn how to edit your production and sandbox programs to adjust their options after you have created them.
+exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 ---
-
 # Editing Programs {#editing-programs}
 
 Users with requisite permissions can edit [production programs created in your organization](creating-production-programs.md) as well as [sandbox programs created in your organization.](creating-sandbox-programs.md) By editing a program you can:
@@ -42,7 +42,7 @@ Follow these steps to edit a program.
 
 1. Click on **Update** to save your changes to the program.
 
-Once your updates are made, if the selected solutions have changed, those changes will take effect following the next deployment.
+Any time a program is edited, including adding or removing a solution or add-on, those changes will take effect following the next deployment.
 
 ## Deleting Sandbox Programs {#delete-sandbox-program}
 

@@ -1,13 +1,12 @@
 ---
-title: Manage Publication 
+title: Manage Publication
 description: Publish or unpublish assets to Experience Manager Assets, Dynamic Media, and Brand Portal
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
-
+exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
 ---
-
 # Manage publication in Experience Manager Assets {#manage-publication-in-aem}
 
 As an [!DNL Adobe Experience Manager Assets] administrator, you can publish assets and folders containing assets from your author instance to [!DNL Experience Manager Assets], [!DNL Dynamic Media], and [!DNL Brand Portal]. Also, you can schedule the publish workflow of an asset or folder to a later date or time. Once published, the users can access and further distribute the assets to other users. By default, you can publish assets and folders to [!DNL Experience Manager Assets]. However, you can configure [!DNL Experience Manager Assets] to enable publishing to [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) and [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
@@ -56,10 +55,6 @@ To continue, click **[!UICONTROL Next]**. Based on the selection, the **[!UICONT
 
 ### Add Content {#add-content}
 
->[!NOTE]
->
->This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information to enable the feature for your environment.
-
 Publishing to [!DNL Experience Manager Assets] allows you to further add more content (assets and folders) to the publishing list. You can add more assets or folders to the list across the dam-repositories. Click on **[!UICONTROL Add Content]** button to add more content. 
 
 You can add multiple assets from a folder or add multiple folders at a time. But you cannot add assets from multiple folders at a time. 
@@ -68,10 +63,6 @@ You can add multiple assets from a folder or add multiple folders at a time. But
 
 ### Include Folder Settings {#include-folder-settings}
 
->[!NOTE]
->
->This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information to enable the feature for your environment.
-
 By default, publishing a folder to [!DNL Experience Manager Assets] publishes all the assets, subfolders, and their references. 
 
 To filter the folder content that you want to publish, click **[!UICONTROL Include Folder Settings]**:
@@ -79,7 +70,7 @@ To filter the folder content that you want to publish, click **[!UICONTROL Inclu
 * `Include folder contents`
 
   * Enabled: All the assets of the selected folder, subfolders (including all the assets of the subfolders), and references are published.
-  * Disabled: Only the selected folder (empty) and references are publishd. The assets of the selected folder are not published.
+  * Disabled: Only the selected folder (empty) and references are published. The assets of the selected folder are not published.
 
 * `Include folder contents` and `Include only immediate folder contents`
 
@@ -186,4 +177,3 @@ You can publish assets, folders, and collections to the [!DNL Experience Manager
 * Empty folders are not published.
 * If you publish an asset that is being processed, only the original content is published. The renditions are missing. Either wait for the processing to complete and then publish or republish the asset once the processing completes.
 * While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because they may be referred by other published assets.
-

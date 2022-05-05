@@ -2,6 +2,7 @@
 title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.4.0
 description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.4.0
 feature: Release Information
+exl-id: a11ebe0e-2872-4fde-acc0-5babc6b01e1a
 ---
 # Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.4.0 {#release-notes}
 

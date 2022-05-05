@@ -1,8 +1,8 @@
 ---
 title: Enable AEM Screens for Your Demo Site
 description: Learn the steps to enable the full AEM Screens as a Cloud Service experience on your demo site.
+exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 ---
-
 # Enable AEM Screens for Your Demo Site {#enable-screens}
 
 Learn the steps to enable the full AEM Screens as a Cloud Service experience on your demo site.
@@ -290,7 +290,7 @@ First you will need to publish your Screens demo content to AEM Screens as a Clo
 
    ![Create display](assets/create-display.png)
 
-1. Once the channel is created, click on it to view details. The display must be assigned a channel that was synched from your demo site. Click on **Assign channel** at the top-right of the screen.
+1. After the display is created, click on the display's name to open the display details screen. The display must be assigned a channel that was synched from your demo site. Click on **Assign channel** at the top-right of the screen.
 
    ![Channel detail](assets/channel-detail.png)
 

@@ -2,8 +2,8 @@
 title: CI/CD Pipelines
 description: Learn about Cloud Manager's CI/CD pipelines and how they can be used to efficiently deploy your code.
 index: yes
+exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 ---
-
 # Cloud Manager CI/CD Pipelines {#intro-cicd}
 
 Learn about Cloud Manager's CI/CD pipelines and how they can be used to efficiently deploy your code.
@@ -24,6 +24,12 @@ Cloud Manager offers two types of pipelines:
 * [Non-Production Pipelines](#non-prod-pipeline)
 
 ![Types of pipelines](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
+
+## Video Overview {#video}
+
+For a quick overview of pipeline types, view this short video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342363)
 
 ## Production Pipelines {#prod-pipeline}
 
