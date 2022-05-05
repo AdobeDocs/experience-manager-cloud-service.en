@@ -43,7 +43,7 @@ For more information, please visit [Onboarding to Experience Manager as a Cloud 
 
 ### 2. Onboard Organizations to Adobe Admin Console:
 
-![processoverview2.jpg](./assets/processOverview2.jpg) 
+![processoverview2.jpg](assets/processOverview2.jpg) 
 
 * System Administrator:  
     * Provision AEM programs and environments.
@@ -56,7 +56,7 @@ For more information, please visit [Onboarding to Experience Manager as a Cloud 
 
 ### 3. Onboard Users and Manage Access in Admin Console:
  
-![processoverview3.jpg](./assets/processOverview3.jpg) 
+![processoverview3.jpg](assets/processOverview3.jpg) 
 
 Three methods to onboard users, depending on size and preference:
 * Manually create users in Admin Console
