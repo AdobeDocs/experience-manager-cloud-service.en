@@ -17,15 +17,9 @@ Translation rules identify the content to translate for pages, components, and a
 
 The translation rules described in this document apply to Content Fragments only if the **Enable Content Model Fields for Translation** option has not been activated at the [translation integration framework configuration level.](integration-framework.md#assets-configuration-properties)
 
-If the **Enable Content Model Fields for Translation** option is active, AEM will use the **Translatable** field on [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md#properties) to determine if the field is to be translated. In this case, [translation rules](rules.md) are superseded.
+If the **Enable Content Model Fields for Translation** option is active, AEM will use the **Translatable** field on [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md#properties) to determine if the field is to be translated and automatically creates translation rules accordingly. This option supersedes any translation rules you may have created and requires no intervention or additional steps.
 
-If you wish to use translation rules for translating your Content Fragments, the **Enable Content Model Fields for Translation** option on the translation integration framework configuration must be disabled.
-
->[!NOTE]
->
->This feature is available in the prerelease channel.
-> 
->See the [Prerelease Channel documentation](/help/release-notes/prerelease.md#enable-prerelease) for information on how to enable the feature for your environment.
+If you wish to use translation rules for translating your Content Fragments, the **Enable Content Model Fields for Translation** option on the translation integration framework configuration must be disabled and you need to follow the steps outlined below to create your rules.
 
 ## Overview {#overview}
 
