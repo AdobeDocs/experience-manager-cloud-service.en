@@ -7,6 +7,12 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 
 Learn how to use the GraphQL API for headless delivery of Content Fragment content and AEM's Assets REST API to manage Content Fragments.
 
+>[!NOTE]
+>
+>Some of the functionality of this feature is available in the prerelease channel. In particular, functionality related to Persisted Queries.
+> 
+>See the [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable the feature for your environment.
+
 ## What are GraphQL and Assets REST APIs? {#what-are-the-apis}
 
 [Now that you have created some content fragments,](create-content-fragment.md) you can use AEM's APIs to deliver them headlessly.
@@ -21,7 +27,7 @@ The remainder of this guide will focus on GraphQL access and Content Fragment de
 
 Before the GraphQL APIs can be used, a GraphQL endpoint must be created.
 
-1. Navigate to **Tools**, **Assets**, then select **GraphQL**.
+1. Navigate to **Tools**, **General**, then select **GraphQL**.
 1. Select **Create**.
 1. The **Create new GraphQL Endpoint** dialog will open. Here you can specify:
    * **Name**: name of the endpoint; you can enter any text.
@@ -42,7 +48,11 @@ Information architects will need to design queries for their channel endpoints i
 GraphiQL is an IDE that can be installed on an AEM environment. Follow the steps on [Using the GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) to install on your AEM environment. 
 
 1. Log into AEM as a Cloud Service and access the GraphiQL interface:
-   * For example: `https://<host>:<port>/aem/graphiql.html`.
+
+   You can access the query editor from either: 
+
+   * **Tools** -> **General** -> **GraphQL Query Editor**
+   * directly; for example, `http://localhost:4502/aem/graphiql.html`
 
 1. The GraphiQL IDE is an in-browser query editor for GraphQL. You can use it to build queries to retrieve Content Fragments to deliver them headlessly as JSON.
    * The drop-down top-right allows you to select the endpoint.
