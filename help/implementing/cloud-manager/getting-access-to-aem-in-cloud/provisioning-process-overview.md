@@ -25,7 +25,7 @@ Once auto-provisioning is complete:
 * Administrator can add users and roles for additional team members through the Admin Console
 * Review role-based permissions for users to determine permission assignments in Cloud Manager
 
-![processoverview.jpg](./assets/processOverview.jpg)
+![processoverview.jpg](assets/processOverview.jpg)
  
 
 For more information, please visit [Onboarding to Experience Manager as a Cloud Service on Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
