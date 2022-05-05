@@ -10,6 +10,12 @@ Learn to use GraphQL with AEM to serve content headlessly by exploring sample co
 
 >[!NOTE]
 >
+>Some of the functionality of this feature is available in the prerelease channel. In particular, functionality related to Persisted Queries.
+> 
+>See the [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable the feature for your environment.
+
+>[!NOTE]
+>
 >This page should be read together with:
 >
 >* [Content Fragments](/help/assets/content-fragments/content-fragments.md)
@@ -33,7 +39,10 @@ See these sample queries for illustrations of create queries, together with samp
 >
 >Depending on your instance you can directly access the [GraphiQL interface included with AEM GraphQL API](/help/headless/graphql-api/graphiql-ide.md) for submitting and testing queries.
 >
->For example: `http://localhost:4502/aem/graphiql.html`
+>You can access the query editor from either: 
+>
+>* **Tools** -> **General** -> **GraphQL Query Editor**
+>* directly; for example, `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
 >
