@@ -30,7 +30,7 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* You can now [sort tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) for an asset on the tag picker in ascending or descending order based on the tag name, date of creation, or date of modification.
+* You can now [sort tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) in the tag picker window in ascending or descending order based on the tag name, date of creation, or date of modification.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
