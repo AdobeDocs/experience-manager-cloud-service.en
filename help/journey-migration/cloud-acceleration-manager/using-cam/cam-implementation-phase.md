@@ -100,9 +100,9 @@ Follow this section to explore the Content Transfer activity card:
 
 1. You will need to download and install the Content Transfer Tool to populate the migration set and complete the Extraction phase of content transfer. Review [Getting Started with Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) to learn how to use the Content Transfer Tool.
 
-1. To ingest content from the Migration set into an environment on AEM as a Cloud Service, you will need to start an ingestion. Click on **New ingestion**. 
+1. To ingest content from the Migration set into an environment on AEM as a Cloud Service, you will need to start an ingestion. Navigate to **Ingestion Jobs** and click on **New ingestion**. 
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
 ### Estimating Content Transfer Time {#calculating}
 
