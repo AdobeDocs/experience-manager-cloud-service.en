@@ -100,13 +100,13 @@ Follow this section to explore the Content Transfer activity card:
 
 1. You will need to download and install the Content Transfer Tool to populate the migration set and complete the Extraction phase of content transfer. Review [Getting Started with Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) to learn how to use the Content Transfer Tool.
 
-1. To ingest content from the Migration set into an environment on AEM as a Cloud Service, you will need to start an ingestion. Navigate to **Ingestion Jobs** and click on **New ingestion**. 
+1. To ingest content from the Migration set into an environment on AEM as a Cloud Service, you will need to start an ingestion. Navigate to **Ingestion Jobs** and click on **New ingestion**. Review [Ingesting Content into Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) to learn how to complete the Ingestion phase of content transfer.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
 ### Estimating Content Transfer Time {#calculating}
 
-A new Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
+A Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
 
    >[!NOTE]
    >These times are estimates only. Factor such as network speeds and time to scale up instances have not been accounted for in these estimates.
