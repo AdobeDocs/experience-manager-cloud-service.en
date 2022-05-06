@@ -108,6 +108,8 @@ Follow this section to explore the Content Transfer activity card:
 
 A Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
 
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
+
    >[!NOTE]
    >These times are estimates only. Factor such as network speeds and time to scale up instances have not been accounted for in these estimates.
 
