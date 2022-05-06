@@ -83,15 +83,15 @@ Follow this section to explore AEM as a Cloud Service Deployment Card activity c
 
 ## Using Content Transfer Card {#content-transfer}
 
-The Content Transfer activity card provides guidance and considerations that should be reviewed when using the Content Transfer Tool to move contents from your current AEM instance to AEM as a Cloud Service.
+The Content Transfer card allows you to start and manage content transfer from your current AEM instance to AEM as a Cloud Service. 
 
 Follow this section to explore the Content Transfer activity card:
 
-1. Click on the **View** button from the **Content Transfer** activity card.
+1. Click on the **Review** button from the **Content Transfer** activity card.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-8.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. A content carousel displays the relevant information for this phase of the migration journey.
+1. To start a content transfer you will need to create a Migration set. Click on **Create migration set**. A migration set allows content to be transferred to AEM as a Cloud Service. 
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
