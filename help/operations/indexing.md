@@ -126,11 +126,11 @@ Then, in `ui.apps.structure/pom.xml` and `ui.apps/pom.xml`, the configuration of
 <groupId>org.apache.jackrabbit</groupId>
     <artifactId>filevault-package-maven-plugin</artifactId>
     <configuration>
-    <allowIndexDefinitions>true</allowIndexDefinitions>
-    <properties>
-        <cloudManagerTarget>none</cloudManagerTarget>
-        <noIntermediateSaves>true</noIntermediateSaves>
-    </properties>
+        <allowIndexDefinitions>true</allowIndexDefinitions>
+        <properties>
+            <cloudManagerTarget>none</cloudManagerTarget>
+            <noIntermediateSaves>true</noIntermediateSaves>
+        </properties>
     ...
 ```
 
