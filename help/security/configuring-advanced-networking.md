@@ -64,7 +64,7 @@ The per environment port forwarding rules can be updated by again invoking the `
 
 ### Deleting or Disabling Flexible Port Egress {#deleting-disabling-flexible-port-egress-provision}
 
-In order to **delete** the network infrastructure, submit a customer support ticket, describing what has been created and why it needs to be deleted.
+To **delete** the network infrastructure for a program, invoke *DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}* refer to the Cloud Manager API documentation for details.
 
 In order to **disable** flexible port egress from a particular environment, invoke `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
