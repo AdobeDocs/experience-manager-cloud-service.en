@@ -27,9 +27,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
       + [Release Notes for 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
     + 2021 {#2021}
-      + [Release Notes for 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md) 
+      + [Release Notes for 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
       + [Release Notes for 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
       + [Release Notes for 2021.9.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
       + [Release Notes for 2021.8.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
@@ -99,7 +100,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Post Go Live](/help/journey-migration/post-go-live.md)
   + [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/journey-migration/getting-started-partners.md)
   + Release Notes for Migration Tools {#release-notes-migration-tools}
-    + [Current Release Notes (2022.3.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+    + [Current Release Notes (2022.4.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+    + [Release Notes for 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
     + [Release Notes for 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
     + [Release Notes for 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
     + 2021 {#2021}
@@ -299,7 +301,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Create and share private folders](/help/assets/private-folder.md)
     + [Digital Rights Management for assets](/help/assets/drm.md)
     + [Watermark assets](/help/assets/watermark-assets.md)
-    + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)    
+    + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
@@ -334,6 +336,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
     + [Preview - JSON Representation](/help/assets/content-fragments/content-fragments-json-preview.md)
   + Dynamic Media {#dynamicmedia}
+    + Dynamic Media Journey {#dm-journey}
+      + [The Basics, Part I](/help/assets/dynamic-media/dm-journey-part1.md)
+      + [The Basic, Part II](/help/assets/dynamic-media/dm-journey-part2.md)
     + [Dynamic Media newsletter archive by Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
     + [Set up Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
     + [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
@@ -451,6 +456,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Integrate with DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
   + [Integrate with Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
   + [Integrate with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+  + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
   + Create and use workflows {#create-form-centric-workflows}
     + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)
     + [Use variables in a Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
@@ -466,7 +472,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Known issues](/help/forms/known-issues.md)
   + Troubleshoot {#troubleshooting-aem-forms-cloud-service}
     + [Installation and configuration](/help/forms/troubleshooting-installation-and-configuration.md)
-    + [Dispatcher and CDN caching ](/help/forms/troubleshooting-caching-performance.md)
+    + [Dispatcher and CDN caching](/help/forms/troubleshooting-caching-performance.md)
 + Screens {#screens-as-cloud-service}
   + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
   + Overview to Screens as a Cloud Service {#overview}
@@ -551,10 +557,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Content Fragment Models](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
     + [Managing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
     + Authoring{#authoring}
-        + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
-        + [Text editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
-        + [Associated Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)         
-        + [Variations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
+      + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
+      + [Text editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
+      + [Associated Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
+      + [Variations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
     + [Metadata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
     + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
     + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
