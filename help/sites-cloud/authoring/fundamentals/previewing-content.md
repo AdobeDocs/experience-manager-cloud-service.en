@@ -12,6 +12,10 @@ It facilitates previewing page experiences that would not be otherwise visible f
 
 For more details about the preview environments, please see the document [Manage Environments.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
+>[!NOTE]
+>
+>Publishing an Experience Fragment to Preview basically follows the same procedure as for a page, though from the Experience Fragments console or editor.
+
 ## Publishing Content to Preview {#publishing-content-to-preview}
 
 You can publish content to the preview service by using the **Managed Publication** UI.
