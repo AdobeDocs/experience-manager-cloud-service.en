@@ -85,12 +85,6 @@ Following are the steps to add tags to an asset:
 
 1. Click **Save** to update the asset metadata changes.
 
->[!NOTE]
->
->You can sort the tags structure while creating smart tags as well as when applying search filters using the tags predicate. 
->
->The sort tags feature is available in prerelease channel. See [Prerelease Channel documentation](/help/release-notes/prerelease.md#enable-prerelease) for information to enable the feature for your environment. 
-
 For more information, see the following articles:
 
 * [Edit asset metadata](meta-edit.md)
