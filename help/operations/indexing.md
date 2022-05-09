@@ -120,7 +120,7 @@ Also, in this case the `vault-validation` version needs to be upgraded to a newe
 </dependency>
 ```
 
-Then, the files `ui.apps.structure/pom.xml` and `ui.apps/pom.xml`, the configuration of the `filevault-package-maven-plugin` needs to have `allowIndexDefinitions` as well as `noIntermediateSaves` enabled:
+Then, in `ui.apps.structure/pom.xml` and `ui.apps/pom.xml`, the configuration of the `filevault-package-maven-plugin` needs to have `allowIndexDefinitions` as well as `noIntermediateSaves` enabled. The option `noIntermediateSaves` ensures that the index configurations are added atomically.
 
 ```xml
 <groupId>org.apache.jackrabbit</groupId>
