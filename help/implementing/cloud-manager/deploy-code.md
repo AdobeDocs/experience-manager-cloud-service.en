@@ -126,7 +126,7 @@ Re-execution of the production deployment step is supported for executions where
 
 The build step may be slightly differently labeled in the UI to reflect that it is copying artifacts, not re-building.
 
-![](assets/Re-deploy.png)
+![Re-deploy](assets/Re-deploy.png)
 
 Limitations:
 
