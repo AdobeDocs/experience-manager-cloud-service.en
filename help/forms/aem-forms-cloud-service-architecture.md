@@ -5,7 +5,7 @@ description: Understand the architecture of [!DNL AEM Forms] as a Cloud Service 
 
 # [!DNL AEM] Forms as a Cloud Service architecture {#architecture}
 
-[!DNL Adobe Experience Manager Forms] as a Cloud Service is a cloud-native solution for businesses to create, manage, publish, and update complex digital forms and communications while integrating submitted data with back-end processes, business rules, and saving data in an external data store. It extends [!DNL Adobe Experience Manager as a Cloud Service]. To learn more about scaling, deployment, environments and other infrastructure, see [An Introduction to the Architecture of [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html)
+[!DNL Adobe Experience Manager Forms] as a Cloud Service is a cloud-native solution for businesses to create, manage, publish, and update complex digital forms and communications while integrating submitted data with back-end processes, business rules, and saving data in an external data store. It extends [!DNL Adobe Experience Manager as a Cloud Service]. To learn more about scaling, deployment, environments and other infrastructure, see [An Introduction to the Architecture of [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html).
 
 AEM Forms as a Cloud Service supports two major use cases: Digital Enrollment and Customer Communications. The following illustrations depict architecture for both the use cases.
 
@@ -51,7 +51,7 @@ Reverse Replication is not available on AEM as a Cloud Service to send content/d
 
 #### Dispatcher
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html) is Adobe Experience Manager’s caching and/or load-balancing tool that can be used in conjunction with an enterprise-class web server.
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html) is Adobe Experience Manager’s caching and/or load-balancing tool that can be used with an enterprise-class web server.
 
 ### Adobe Services
 
@@ -60,6 +60,7 @@ Reverse Replication is not available on AEM as a Cloud Service to send content/d
 [Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) automatically converts your PDF and XFA forms to device-friendly, responsive, and HTML5-based adaptive forms.
 
 **Adobe Sign**
+
 Adobe Sign is a cloud-based e-signature service that allows the user to send, sign, track, and manage signature processes using a browser or mobile device. You can integrate Adobe Sign with an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign adaptive forms.
 
 <!-- **PDF Service API**
@@ -73,7 +74,7 @@ You can use the **Unified Storage Connector** to connect to Blob Storage and **F
 
 ### Document Services
 
-Document services constitutes of the following:  
+Document services constitute of the following:  
 
 * **Output Service (Communications - Document Generation APIs)** helps create brand-approved, personalized, and standardized documents such as business correspondences, statements, claim processing letters, benefit notices, monthly bills, or welcome kits.
 
