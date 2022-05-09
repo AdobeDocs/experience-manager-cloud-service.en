@@ -64,11 +64,11 @@ The per environment port forwarding rules can be updated by again invoking the `
 
 ### Deleting or Disabling Flexible Port Egress {#deleting-disabling-flexible-port-egress-provision}
 
-To **delete** the network infrastructure for a program, invoke *DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}* refer to the Cloud Manager API documentation for details.
+To **delete** the network infrastructure for a program, invoke `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`. 
 
 In order to **disable** flexible port egress from a particular environment, invoke `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
-For more information, see the [Cloud Manager API Documentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+For more information on the APIs, see the [Cloud Manager API Documentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Traffic Routing {#flexible-port-egress-traffic-routing}
 
