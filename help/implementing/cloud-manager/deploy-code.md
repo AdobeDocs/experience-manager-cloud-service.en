@@ -181,6 +181,6 @@ To trigger a re-execution, a PUT request needs to be made to the HAL Link <(<htt
 ```
 
 
-The syntax of the HAL link's *href*  value above is not intended to be used as a point of reference. The actual value should always be read from the HAL link and not generated.
+The syntax of the HAL link's _href_  value above is not intended to be used as a point of reference. The actual value should always be read from the HAL link and not generated.
 
 Submitting a *PUT* request to this endpoint will result in a *201* response if successful and the response body will be the representation of the new  execution. This is similar to starting a regular execution through the API.
