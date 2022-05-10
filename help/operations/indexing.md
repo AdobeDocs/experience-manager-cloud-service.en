@@ -100,6 +100,8 @@ To deploy a custom or customized index, the index definition (`/oak:index/defini
 
 The above example contains a configuration for Apache Tika. The Tika configuration file would be stored under `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
 
+### Project Configuration
+
 Depending on which version of the Jackrabbit Filevault Maven Package Plugin is used, some more configuration in the project is required. When using the Jackrabbit Filevault Maven Package Plugin version **1.1.6** or newer, then the file `pom.xml` needs to contain the following section in plugin configuration for the `filevault-package-maven-plugin`, in `configuration/validatorsSettings` (just before `jackrabbit-nodetypes`):
 
 ```xml
