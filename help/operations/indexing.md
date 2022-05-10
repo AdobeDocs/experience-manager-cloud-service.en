@@ -82,7 +82,7 @@ Index definitions are marked as custom and versioned:
 
 * The index definition itself (for example `/oak:index/ntBaseLucene-custom-1`)
 
-Therefore, in order to deploy an index, the index definition (`/oak:index/definitionname`) needs to be delivered via `ui.apps` via Git and the Cloud Manager deployment process. In `ui.apps/src/main/content/META-INF/vault/filter.xml`, we recommend to list each custom and customized index individually, for example `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. The custom / customized index definition itself can then be stored in the file `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, as follows.
+To deploy a custom or customized index, the index definition (`/oak:index/definitionname`) needs to be delivered via `ui.apps` via Git and the Cloud Manager deployment process. In the FileVault filter, e.g. `ui.apps/src/main/content/META-INF/vault/filter.xml`, list each custom and customized index individually, for example `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. The custom / customized index definition itself will then be stored in the file `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, as follows:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
