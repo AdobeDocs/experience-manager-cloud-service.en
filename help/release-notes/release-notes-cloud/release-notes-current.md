@@ -100,3 +100,12 @@ The Release Date for Best Practices Analyzer v2.1.28 is April 22, 2022.
 ### Bug Fixes {#bug-fixes-bpa}
 
 * BPA was reporting findings for core components instead of reporting only on customer components. This has been fixed.
+
+
+## Experience Manager Foundation as a Cloud Service {#foundation}
+
+### TLS 1.0, 1.1 deprecation
+Starting June 30th 2022, Experience Manager as a Cloud Service will require a more secure network communication and data exchange with users systems. AEM will use exclusively Transport Layer Security (TLS), 1.2 protocol. Older TLS versions 1.0 and 1.1 will be deprecated.
+
+If you continue to use older versions of TLS as 1.0, 1.1, you could potentially lose access to Experience Manager as a Cloud Service.  
+
