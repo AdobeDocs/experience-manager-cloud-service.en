@@ -1,12 +1,12 @@
 ---
 title: AEM Screens as a Cloud Service
-description: Adobe Experience Manager Screens as a Cloud Service self-help resources and documentation links
+description: Understand more about AEM Screens and how this digital signage solution works.
 landing-page-description: Understand the AEM Screens as a Cloud Service.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
 ---
 # AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-This page lists the self-help resources regarding AEM Screens as a Cloud Service.
+This page helps you understand more about AEM Screens and how this digital signage solution works. Get self-help resources and learn about what's new.
 
 >[!NOTE]
 >For AEM Screens with AEM 6.5, see [AEM Screens User Guide](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
