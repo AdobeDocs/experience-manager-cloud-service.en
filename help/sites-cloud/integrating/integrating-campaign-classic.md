@@ -7,13 +7,13 @@ role: Admin
 
 # Integrating with Adobe Campaign Classic {#integrating-campaign-classic}
 
-Adobe Campaign lets you manage email delivery content and forms directly in AEM as a Cloud Service. To use both solutions together at the same time, you must first configure them to connect to one another. This involves configuration steps in both Adobe Campaign Classic and AEM as a Cloud Service to enable the bidirectional communication between solutions.
+By integrating with Adobe Campaign you can manage email delivery, content and forms directly in AEM as a Cloud Service. Configuration steps in both Adobe Campaign Classic and AEM as a Cloud Service are needed to enable the bidirectional communication between solutions.
 
 Please note that AEM as a Cloud Service and Adobe Campaign Classic can also be used independently. For example, marketers can start creating their campaigns and targeting in Adobe Campaign, while content creators can work on the design in AEM as a Cloud Service.
 
 ## Integration workflow {#integration-workflow}
 
-The following chapters detail the configuration steps needed to integrate the solutions. This requires configuration steps both in Adobe Campaign Classic and AEM as a Cloud Service.
+The following chapters detail the steps needed to integrate the solutions. This requires configuration steps both in Adobe Campaign Classic and AEM as a Cloud Service.
 
 You will learn how to:
 
@@ -26,107 +26,11 @@ You will learn how to:
 
 **Adobe Campaign Classic**
 
-To perform the integration you need a working Adobe Campaign Classic instance, including a database. If you need additional details on how to set up and configure Adobe Campaign Classic please read the official [Adobe Campaign Classic documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) especially the Installation and Configuration guide. Keep in mind that to perform the operations presented below you also need to have the administrator role.  
+To perform the integration you need a working Adobe Campaign Classic instance, including a database. If you need additional details on how to set up and configure Adobe Campaign Classic please read the official [Adobe Campaign Classic documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) especially the Installation and Configuration guide. Keep in mind that in order to perform the operations presented below you need to have the administrator role.  
 
 **AEM as a Cloud Service**
 
 You need the [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html) solution.
-
-<!---##### Adobe Campaign Classic Configuration {#campaign-classic-configuration}
-
-In the following chapters you will learn how to install, setup and configure Adobe Campaign Classic so it can be integrated with AEM as a Cloud service. Please be aware that in order to perform the operations presented below you must have the **administration** role in Adobe Campaign.
-
-### Prerequisites {#prerequisites-campaign-classic}
-
-(remove also) To install and configure Adobe campaign classic you need the following:
-
-1. Install java 7 or later.
-1. Install Postgres.
-1. Install PgAdmin.
-
-### Installing Adobe Campaign Classic {#acc-installation}
-
-(we need to take it out look for reference) If you do not have Adobe Campaign Classic installed follow these steps:
-
-1. Download the Adobe Campaign Classic installation from the Adobe software distribution portal as per your [platform](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-1. Locate the setup.exe file in the extracted folder.
-1. Run setup.exe as an administrator (right-click and run as administrator) and click **Next**.
-1. Select the installation type as **Application server** and click **Next**.
->[!NOTE]
->Be aware that there are several installation types available depending on your requirements:
->**Installation of an application server** : Install the Adobe Campaign application server and the client console.
->**Minimal installation (Network)**: Installation of the client's machine from the network.
->**Installation of a client**: Installation of the required components for the Adobe Campaign client.
->**Custom installation**: The customer chooses the elements that will be installed.
-1. Select the installation directory and click **Next**.
-1. Click **Finish**.
-
-Once the installation is complete, a message window will appear. Click the **Finish** button.
-
->[!NOTE]
->
->Once the server installation is complete you can reboot the server to avoid any network issues.
-
-### First start-up of the Adobe Campaign Classic Server {#first-startup}
-
-(skip this) After the installation is complete you can start up the server Adobe Campaign Classic Server. Follow the steps below to ensure a smooth startup:
-
-1. Start command prompt as an administrator
-1. Navigate to the Adobe Campaign directory, for example: `C:\Program Files\Adobe\Adobe Campaign Classic v7`
-1. Run the following command: `nlserver web`
-   * Press Ctrl+C to stop the process, then enter the following command: (unclear/more context)
-1. Run the following command to setup the password: `nlserver config -internalpassword`
-   * The user name is internal and default password is "empty/blank" (unclear/more context)
-1. Enter following command to start the server: `nlserver start web`
-   >[!NOTE]
-   >
-   >If needed, you can enter the following command to stop the server `nlserver stop web`.
-1. Open the hosts file as administrator in any text editor.
-1. Add an entry for your Adobe Campaign Classic server's name: 127.0.0.1 server name.corp.adobe.com. For example:
-
-```
-127.0.0.1   acc-test.corp.adobe.com
-
-```
-
-### Creating the Adobe Campaign Classic Instance {#instance-creation}
-
-(skip) After the server startup, follow these steps to create an Adobe Campaign Classic instance:
-
-1. Open the Adobe Campaign Classic client from the start menu.
-1. Click on the Adobe Inc. v6 link.
-1. Double click on Adobe Inc. v6 under Connections and add the Adobe Campaign Classic server FQN in the connection URL field. The default port for the Adobe Campaign Classic server is 8080. Click **OK** to save.
-1. Login with your credentials. The user name and the password is what you set in the previous steps of the [First start-up of the server](#first-startup) procedure.
-
-### Creating the Database {#creation-database}
-
-(skip) Since this is first time you log in the **Declare a new instance** window is displayed. You will now be able to create a database, as follows:
-
-1. In the Declare a new instance window:
-   * Enter the server name into the Name field (we set acc-test, note that the system will change this to acc_test) (unclear/more context)
-   * Enter * into the DNS masks field
-   * Choose the language
-Once you've clicked ok, you will go back to the login page. Log in again with your credentials.
-1. The database creation wizard will appear.
-   * Choose PostgreSQL as Engine
-   * Enter localhost in field Server
-   * Choose Create or recycle a database
-   * Click **Next**.
-1. Enter the user name and password for the postgresSQL admin account (postgres/postgres) (unclear/more context)
-   * Click **Next**.
-1. On the database creation screen, enter the following details:
-   * Enter a name for the database to be created (for example, campaign)
-   * Switch to Create a new user account for this database
-   * Specify a database account and password
-   * (optional) You can leave everything else as the default
-   * Click **Next**.
-1. Select the following packages to install:
-   * Delivery
-   * Marketing campaigns (Campaign)
-   * AEM integration
-   * Click **Next**.
-1. Enter the password on the Creation Steps screen(admin) (unclear/more context) and click **Next**.
-1. Click on the **Start** button to start the database creation execution. Click **Close** after progress the bar is full.--->
 
 ### Creating the Operator user in Adobe Campaign Classic {#create-operator}
 
@@ -143,7 +47,7 @@ Open the Adobe Campaign Classic client console from start menu and log in. The h
 ![connection zone](assets/auth.png)
 1. Click on **Save**.
 1. Log out.
-1. Go to the Adobe Campaign Classic v7 install location, for example `C:\Program Files\Adobe\Adobe Campaign Classic v7\conf` and open the serverConf.xml as an administrator.
+1. Go to the Adobe Campaign Classic v7 install location, for example `C:\Program Files\Adobe\Adobe Campaign Classic v7\conf` and open the `serverConf.xml` as an administrator.
     * Search for **security zone**
     * Set the following parameters `allowHTTP="true"` `sessionTokenOnly="true"` `allowUserPassword="true"`
     * Save the file
@@ -201,7 +105,7 @@ Service 3310 - [com.day.cq.commons.Externalizer] (pid: com.day.cq.commons.impl.E
 
 ### Configuring the Adobe Campaign Remote User {#configure-user}
 
-You need to set the password for the campaign-remote user. It is necessary in order to connect Adobe Campaign Classic with AEM as a Cloud service.
+You need to set a password for the campaign-remote user. It is necessary in order to connect Adobe Campaign Classic with AEM as a Cloud service.
 
 1. Go to **AEM→Tools→Security→Users**.
 ![security users](assets/user.png)
@@ -213,7 +117,7 @@ You need to set the password for the campaign-remote user. It is necessary in or
 
 ### Configuring the Adobe Campaign Classic External Account {#acc-setup}
 
-You must configure an external account in order to connect Adobe Campaign Classic with the AEM as a Cloud Service instance.
+You must also configure an external account in order to connect Adobe Campaign Classic with the AEM as a Cloud Service instance.
 
 1. Log into the Adobe Campaign Classic server by using the client console.
 1. Go to the Explorer View.
@@ -229,4 +133,4 @@ You must configure an external account in order to connect Adobe Campaign Classi
     >
     >The AEM Author server IP/FQN must be reachable from the Adobe Campaign Classic server instance. Also do not add the backslash character in the AEM Author server IP/FQN.
 
-Having configured both Adobe Campaign Classic and AEM as a Cloud Service, the integration is complete. Additionally you can also learn how to create an Adobe Experience Manager Newsletter.
+Having configured both Adobe Campaign Classic and AEM as a Cloud Service, the integration is now complete. Additionally, you can also learn how to create an Adobe Experience Manager Newsletter by reading this page.
