@@ -195,6 +195,12 @@ In addition to the routing rules supported by flexible port egress in the `PUT /
 
 When deciding between flexible port egress and dedicated egress IP address, customers should choose flexible port egress if a specific IP address is not required since Adobe can optimize performance of flexible port egress traffic.
 
+### Disabling Dedicated Egress IP Address {#disabling-dedicated-egress-IP-address}
+
+In order to **disable** Dedicated Egress IP Address from a particular environment, invoke `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+
+For more information on the APIs, see the [Cloud Manager API Documentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+
 ### Traffic Routing {#dedcated-egress-ip-traffic-routing}
 
 Http or https traffic going to destinations through ports 80 or 443 will go through a preconfigured proxy, assuming the standard Java networking library is used. For http or https traffic going through other ports a proxy should be configured using the following properties.
@@ -530,9 +536,9 @@ Header always set Cache-Control private
 
 Since the `kind` parameter cannot be modified, please contact customer support for assistance, describing what has already been created and the reason for the change.
 
-## Deleting a Program's Hetwork Infrastructure {#deleting-network-infrastructure}
+## Deleting a Program's Network Infrastructure {#deleting-network-infrastructure}
 
-To **delete** the network infrastructure for a program, invoke `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`. 
+To **delete** the network infrastructure for a program, invoke `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`. 
 
 >[!NOTE]
 >
