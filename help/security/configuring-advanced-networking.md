@@ -62,13 +62,7 @@ The program level configuration can be updated by invoking the `PUT /api/program
 
 The per environment port forwarding rules can be updated by again invoking the `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` endpoint, making sure to include the full set of configuration parameters, rather than a subset.
 
-### Deleting or Disabling Flexible Port Egress {#deleting-disabling-flexible-port-egress-provision}
-
-To **delete** the network infrastructure for a program, invoke `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`. 
-
->[!NOTE]
->
-> Delete will not delete the infrastructure if there are any environments using it.
+### Disabling Flexible Port Egress {#disabling-flexible-port-egress-provision}
 
 In order to **disable** flexible port egress from a particular environment, invoke `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
@@ -391,9 +385,7 @@ Note that the address space cannot be changed after the initial VPN provisioning
 
 The per-environment routing rules can be updated by again invoking the `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` endpoint, making sure to include the full set of configuration parameter, rather than a subset. Environment updates typically take 5-10 minutes to be applied.
 
-### Deleting or Disabling the VPN {#deleting-or-disabling-the-vpn}
-
-To delete the network infrastructure, submit a customer support ticket, describing what has been created and why it needs to be deleted.
+### Disabling the VPN {#disabling-the-vpn}
 
 To disable VPN for a particular environment, invoke `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`. More details in the [API documentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -537,3 +529,12 @@ Header always set Cache-Control private
 ## Transitioning Between Advanced Networking Types {#transitioning-between-advanced-networking-types}
 
 Since the `kind` parameter cannot be modified, please contact customer support for assistance, describing what has already been created and the reason for the change.
+
+## Deleting a Program's Hetwork Infrastructure {#deleting-network-infrastructure}
+
+To **delete** the network infrastructure for a program, invoke `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`. 
+
+>[!NOTE]
+>
+> Delete will only delete the infrastructure if all environments have their advanced networkings disabled. 
+> 
