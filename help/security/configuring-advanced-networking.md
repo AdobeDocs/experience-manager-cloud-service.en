@@ -532,10 +532,6 @@ Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
 
-## Transitioning Between Advanced Networking Types {#transitioning-between-advanced-networking-types}
-
-Since the `kind` parameter cannot be modified, please contact customer support for assistance, describing what has already been created and the reason for the change.
-
 ## Deleting a Program's Network Infrastructure {#deleting-network-infrastructure}
 
 To **delete** the network infrastructure for a program, invoke `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`. 
@@ -544,3 +540,19 @@ To **delete** the network infrastructure for a program, invoke `DELETE /program/
 >
 > Delete will only delete the infrastructure if all environments have their advanced networkings disabled. 
 > 
+
+## Transitioning Between Advanced Networking Types {#transitioning-between-advanced-networking-types}
+
+It is possible to migrate between advanced networking types by following the following procedure:
+
+* disable advanced networking in all environments
+* delete the advanced networking infrastructure
+* recreate the advanced networking infras with the correct values
+* reenable environment level advanced networking
+
+>[!WARNING]
+>
+> This procedure will result in a downtime of advanced networking services between deletion and recreation
+> 
+
+If downtime would cause significant business impact, contact customer support for assistance, describing what has already been created and the reason for the change.
