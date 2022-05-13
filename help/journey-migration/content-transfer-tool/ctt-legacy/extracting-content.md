@@ -3,7 +3,6 @@ title: Extracting Content from Source
 description: Extracting Content from Source
 hide: yes
 hidefromtoc: yes
-exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 ---
 # Extracting Content from Source {#extracting-content}
 

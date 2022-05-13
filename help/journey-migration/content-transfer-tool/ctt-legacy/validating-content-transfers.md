@@ -3,7 +3,6 @@ title: Validating Content Transfers
 description: Use the Content Transfer Tool to validate content transfers
 hide: yes
 hidefromtoc: yes
-exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 ---
 # Validating Content Transfers {#validating-content-transfers}
 
