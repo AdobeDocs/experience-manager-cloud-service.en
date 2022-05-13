@@ -3,7 +3,6 @@ title: Prerequisites for Content Transfer Tool
 description: Prerequisites for Content Transfer Tool
 hide: yes
 hidefromtoc: yes
-exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
 ---
 # Prerequisites for Content Transfer Tool {#prerequisites}
 
