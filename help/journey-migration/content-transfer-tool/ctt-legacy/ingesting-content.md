@@ -3,7 +3,6 @@ title: Ingesting Content into Target
 description: Ingesting Content into Target
 hide: yes
 hidefromtoc: yes
-exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 ---
 # Ingesting Content into Target {#ingesting-content}
 
