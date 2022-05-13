@@ -9,13 +9,6 @@ hidefromtoc: yes
 
 ## Availability {#availability}
 
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_download"
->title="Download"
->abstract="The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Release Notes"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
-
 The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via [Package Manager](/help/implementing/developing/tools/package-manager.md) on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version. For more details on the latest version, refer to [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
@@ -37,13 +30,6 @@ To test connectivity to the target AEM as a Cloud Service environment, issue the
 >If an `HTTP/2 200` is received, a connection to AEM as a Cloud Service was successful.
 
 ## Running the Content Transfer Tool {#running-tool}
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_demo"
->title="Running Content Transfer Tool"
->abstract="Learn how to use Content Transfer Tool to migrate the content to AEM as a Cloud Service (Author/Publish)."
->additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" See Demo"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial - using Content Transfer Tool"
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 

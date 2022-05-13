@@ -6,14 +6,6 @@ hidefromtoc: yes
 ---
 # Viewing Logs for a Migration Set {#view-logs-content-transfer-tool}
 
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_logs"
->title="Viewing Logs"
->abstract="Upon completion of Extraction of Ingestion, Check the logs for any error/warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe support."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#troubleshooting" text="Troubleshooting"
->additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="Contacting Adobe Support"
-
 Upon completion of each step (extraction and ingestion) check the logs and look for errors.  Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe support.
 
 ## Steps for Viewing Logs {#viewing-logs}

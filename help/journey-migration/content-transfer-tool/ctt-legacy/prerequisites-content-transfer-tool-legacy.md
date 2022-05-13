@@ -6,13 +6,6 @@ hidefromtoc: yes
 ---
 # Prerequisites for Content Transfer Tool {#prerequisites}
 
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_prereqs"
->title="Important Considerations for using Content Transfer Tool"
->abstract="Review important considerations to use the Content Transfer tool including Java and AEM verions, supported Datastore types, user groups considerations and more."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="Important Considerations for Using Content Transfer Tool"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Best Practices and Guidelines"
-
 The following table summarizes the prerequisites for using Content Transfer Tool. 
 
 Please review all the considerations listed below:

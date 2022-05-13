@@ -8,12 +8,6 @@ hidefromtoc: yes
 
 ## Ingestion Process in Content Transfer Tool {#ingestion-process}
 
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_ingestion"
->title="Content Ingestion"
->abstract="Ingestion refers to ingesting content from the migration set into the target Cloud Service instance. The Content Transfer Tool has a feature that supports differential content top-up where it is possible to transfer only changes made since the previous content transfer activity."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Top Up Ingestion"
-
 Follow the steps below to ingest your migration set from the Content Transfer Tool:
    >[!NOTE]
    >You can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) for more details. 
