@@ -1,12 +1,12 @@
 ---
 title: Operations and Maintenance of Adobe Experience Manager as a Cloud Service
-description: Adobe Experience Manager as a Cloud Service operations and maintenance self-help resources and documentation links
-landing-page-description: Learn about the back-end operations of AEM as a Cloud Service, such as indexing and maintenance tasks.
+description: Find out about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks, and get answers to your queries. 
+landing-page-description: Find out about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks, and get answers to your queries.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
 ---
 # Operations and Maintenance on Experience Manager as a Cloud Service {#aem-operations-guide}
 
-This page lists the self-help resources about operations and maintenance of Experience Manager as a Cloud Service.
+Find out about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks, and get answers to your queries.
 
 ## Key Operations Articles {#key-articles}
 
