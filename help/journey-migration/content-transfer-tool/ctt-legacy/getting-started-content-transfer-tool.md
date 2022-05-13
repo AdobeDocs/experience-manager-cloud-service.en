@@ -3,7 +3,6 @@ title: Getting Started with Content Transfer Tool
 description: Getting Started with Content Transfer Tool
 hide: yes
 hidefromtoc: yes
-exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 ---
 # Getting Started with Content Transfer Tool {#getting-started-content-transfer-tool}
 

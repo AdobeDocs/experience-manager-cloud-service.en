@@ -3,7 +3,6 @@ title: Handling Large Content Repositories
 description: This section describes handling of large content repositories
 hide: yes
 hidefromtoc: yes
-exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 ---
 # Handling Large Content Repositories {#handling-large-content-repositories}
 
