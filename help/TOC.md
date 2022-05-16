@@ -368,9 +368,14 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
     + [Preview - JSON Representation](/help/assets/content-fragments/content-fragments-json-preview.md)
   + Dynamic Media {#dynamicmedia}
-    + Dynamic Media Journey {#dm-journey}
-      + [The Basics, Part I](/help/assets/dynamic-media/dm-journey-part1.md)
-      + [The Basic, Part II](/help/assets/dynamic-media/dm-journey-part2.md)
+    + Dynamic Media Journey: The Basics {#dm-journey}
+      + [Begin your Dynamic Media Journey](/help/assets/dynamic-media/dm-journey-part1.md#dm-journey-part1)
+      + [What is Dynamic Media and how can it help you?](/help/assets/dynamic-media/dm-journey-part1.md#dm-journey-a)
+      + [Use cases for Dynamic Media](/help/assets/dynamic-media/dm-journey-part1.md#dm-journey-b)
+      + [How an asset flows through the Dynamic Media system](/help/assets/dynamic-media/dm-journey-part1.md#dm-journey-c)
+      + [Anatomy of a Dynamic Media URL and how Dynamic Media delivers content](/help/assets/dynamic-media/dm-journey-part1.md#dm-journey-d)
+      + [Fundamentals of creating image presets to render assets](/help/assets/dynamic-media/dm-journey-part1.md#dm-journey-e)
+      + [Fundamentals of Image sets, Spin sets, and Mixed Media sets](/help/assets/dynamic-media/dm-journey-part1.md#dm-journey-f)
     + [Dynamic Media newsletter archive by Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
     + [Set up Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
     + [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)

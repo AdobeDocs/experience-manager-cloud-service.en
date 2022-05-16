@@ -24,7 +24,7 @@ See also [Dynamic Media Journey; The Basics, Part I](/help/assets/dynamic-media/
 
 >[!TIP]
 >
->For best results, Adobe recommends that you read and view the Dynamic Media Journey on a desktop computer.
+>For best results, Adobe recommends that you read and view this Dynamic Media Journey on a desktop computer.
 
 ## Anatomy of a Dynamic Media URL and how Dynamic Media delivers content {#dm-journey-d}
 
@@ -198,17 +198,19 @@ You just read a little bit about image sets and viewers. Let's look at a couple 
 * `ZoomVertical_dark` viewer applied to an image asset. [Try it](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&config=jpearldemo/ZoomVertical_dark).
 * `Zoom_light` viewer applied to an image. [Try it](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&config=jpearldemo/Zoom_light).
 
-## Learn more
+## Optional - Learn more
 
-_Dynamic Media topics_
+If you'd like to learn more about what you just read, use the materials below to explore concepts in greater detail. Otherwise, your Dynamic Media Journey is complete!
 
-* [Create image presets](/help/assets/dynamic-media/image-presets.md)
+_Dynamic Media Help topics_
+
+* [How to create image presets](/help/assets/dynamic-media/image-presets.md)
 * A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
-* [Preview assets](/help/assets/dynamic-media/previewing-assets.md)
-* [Preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Image sets](/help/assets/dynamic-media/image-sets.md)
-* [Spin sets](/help/assets/dynamic-media/spin-sets.md)
-* [Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md)
+* [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
+* [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
+* [How to create Spin sets](/help/assets/dynamic-media/spin-sets.md)
+* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md)
 
 _Dynamic Media tutorials_
 
@@ -217,6 +219,6 @@ _Dynamic Media tutorials_
 
 _Dynamic Media viewers_
 
-* [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+* [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) of each viewer
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->
