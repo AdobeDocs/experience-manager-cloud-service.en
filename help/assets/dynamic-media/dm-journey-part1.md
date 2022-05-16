@@ -243,14 +243,14 @@ After you upload assets into Dynamic Media, it is a good practice to _publish_ t
 
 Besides manually publishing assets, you can configure Dynamic Media so that you instantly publish assets - without any user intervention - at the time of upload.
 
-Following upload, there are different ways to preview an asset's renditions in Dynamic Media. Previewing renditions can help give you an idea of what a customer sees. A common preview method is to select an asset and then view its Renditions by selecting an *image preset* as seen in the following.
+Following upload, there are different ways to preview an asset's renditions in Dynamic Media. Previewing renditions can help give you an idea of what a customer sees. A common preview method is to select an asset and then view its Renditions by selecting an _image preset_ as seen in the following.
 
 ![Previewing a rendition of an asset based on the Large image preset](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _Previewing a rendition of an asset based on the selected "Large" image preset. The URL button was clicked. The resulting URL path contains the "Large" image preset name and can be used in a web page._
 
 The URL above is live! [Try it](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$).
 
-Another method to preview an asset is to select the image asset and then select a *Viewers* preset as seen in the following.
+Another method to preview an asset is to select the image asset and then select a _Viewers_ preset as seen in the following.
 
 ![Previewing an asset based on the Zoom Vertical Light viewer preset](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Previewing an asset based on the selected "ZoomVertical_light" viewer preset. The mouse pointer (`+`) was moved over the watch to zoom in. Notice the URL and Embed buttons._
@@ -277,13 +277,14 @@ _Dynamic Media Help topics_
 _Dynamic Media tutorials_
 
 * [Use Dynamic Media with Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager content library](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (search on *Dynamic Media*)
+* [Adobe Experience Manager content library](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (search on _Dynamic Media_)
 
 _Dynamic Media viewers_
 
 * [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) of each viewer
 
 ## What's next in this Dynamic Media Journey {#whats-next}
+
 In part II on this journey, you'll examine Dynamic Media URLs a little closer to better understand what is going on when an asset is delivered. You'll also learn more about the fundamentals behind creating image presets to render assets, and learn about Image sets, Spin sets, and Mixed Media sets and how they are created. 
 
 Take me to [Dynamic Media Journey: The Basics, Part II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
