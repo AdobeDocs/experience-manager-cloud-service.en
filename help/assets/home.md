@@ -1,14 +1,14 @@
 ---
-title: "[!DNL Assets] as a [!DNL Cloud Service] Guide"
-description: "[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] self-help resources and documentation links"
+title: Assets as a Cloud Service guide
+description: Learn about Assets as a Cloud Service and get updated on what's new.
 landing-page-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
 ---
-# [!DNL Assets] as a [!DNL Cloud Service] Guide {#aem-assets-guide}
+# [!DNL Assets as a Cloud Service] guide {#aem-assets-guide}
 
-The following self-help resources are available for [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
+Learn about [!DNL AEM Assets as a Cloud Service] and get updated on what's new.
 
 ## Key [!DNL Assets] articles {#key-articles}
 
