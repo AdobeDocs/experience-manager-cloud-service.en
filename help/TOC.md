@@ -91,7 +91,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Release Notes for 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
       + [Release Notes for 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
       + [Release Notes for 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-  + [Release Notes for Workfront for Experience Manager enhanced connector](#workfront)
+  + Release Notes for Workfront for Experience Manager enhanced connector{#workfront}
     + 2022 {#2022}
       + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
   + [What is New?](/help/release-notes/what-is-new.md)
