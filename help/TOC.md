@@ -370,7 +370,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Dynamic Media {#dynamicmedia}
     + Dynamic Media Journey: The Basics {#dm-journey}
       + [The Basics: Part I](/help/assets/dynamic-media/dm-journey-part1.md)
-      + [The Basics: Part II](/help/assets/dynamic-media/dm-journey-part2)
+      + [The Basics: Part II](/help/assets/dynamic-media/dm-journey-part2.md)
     + [Dynamic Media newsletter archive by Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
     + [Set up Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
     + [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
