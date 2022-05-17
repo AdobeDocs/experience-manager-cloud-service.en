@@ -73,7 +73,7 @@ You can connect a Form Data Model to [!DNL RESTful web services], [!DNL SOAP-bas
 * **Can I use custom certificates with Form Data Model for authentication?**
 Form Data Model does not provide a method to use custom certificates for authentication. So, the custom certificates like x509 and 2-way SSL are not supported.  
 
-* **Can I use Forms Portal submit action Adaptive Forms?** 
+* **Can I use Forms Portal submit action Adaptive Forms?**
 
   You can modify your existing Adaptive Forms to use [Submit to REST endpoint](configuring-submit-actions.md#submit-to-rest-endpoint), [Send email](configuring-submit-actions.md#send-email), [Submit using Form Data Model](configuring-submit-actions.md#submit-using-form-data-model), and [Invoke an AEM Workflow](configuring-submit-actions.md#invoke-an-aem-workflow) Submit actions. Forms Portal and Forms Portal submit action are not available yet. Keep an eye on monthly release notes for the availability of the features.
 

@@ -10,15 +10,18 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 
  ![Data integration](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] Data Integration allows you to configure and connect to disparate data sources. The following types are supported out-of-the-box. However, with little customization, you can integrate other data sources as well.
+[!DNL Experience Manager Forms] Data Integration allows you to configure and connect to disparate data sources. The following types are supported out-of-the-box:
 
  <!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
-* [!DNL Experience Manager] user profile  --> 
+* [!DNL Experience Manager] user profile  -->
 * RESTful web services  
 * SOAP-based web services
 * OData services
+* Microsoft Dynamics
+* SalesForce
+* Microsoft Azure Blob Storage
 
-Data integration supports OAuth2.0, Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> and connector for [!DNL Experience Manager] user profile are configured in [!DNL Experience Manager] web console.
+Data integration supports OAuth4.0, Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> and connector for [!DNL Experience Manager] user profile are configured in [!DNL Experience Manager] web console.
 
 >[!NOTE]
 >
@@ -93,9 +96,9 @@ To configure the folder for cloud service configurations:
 1. Do the following to enable the global folder for cloud configurations or skip this step to create and configure another folder for cloud service configurations.
 
     1. In the **[!UICONTROL Configuration Browser]**, select the `global` folder and tap **[!UICONTROL Properties]**.
-    
+
     1. In the **[!UICONTROL Configuration Properties]** dialog, enable **[!UICONTROL Cloud Configurations]**.
-    
+
     1. Tap **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
 
 1. In the **[!UICONTROL Configuration Browser]**, tap **[!UICONTROL Create]**.
@@ -104,7 +107,7 @@ To configure the folder for cloud service configurations:
 
 ## Configure RESTful web services {#configure-restful-web-services}
 
-RESTful web service can be described using [Swagger specifications](https://swagger.io/specification/) in JSON or YAML format in a [!DNL Swagger] definition file. To configure RESTful web service in [!DNL Experience Manager] as a Cloud Service, ensure that you have either the [!DNL Swagger] file on your file system or the URL where the file is hosted.
+RESTful web service can be described using [Swagger specifications](https://swagger.io/specification/v2/) in JSON or YAML format in a [!DNL Swagger] definition file. To configure RESTful web service in [!DNL Experience Manager] as a Cloud Service, ensure that you have either the [!DNL Swagger] file ([Swagger Version 2.0](https://swagger.io/specification/v2/)) on your file system or the URL where the file is hosted.
 
 Do the following to configure RESTful services:
 
@@ -151,7 +154,6 @@ Perform the following steps to configure the form data model HTTP client:
    * Specify the duration, for which the [!DNL Experience Manager Forms] server waits for a connection to establish, in the **[!UICONTROL Connection timeout]** field. The default value is 10 seconds.
 
    * Specify the maximum time period for inactivity between two data packets in the **[!UICONTROL Socket timeout]** field. The default value is 30 seconds.
-
 
 ## Configure SOAP web services {#configure-soap-web-services}
 
