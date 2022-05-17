@@ -35,24 +35,6 @@ Including a folder's children for the "publish later" option will invoke the Pub
 
 You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
-### Tree Activation {#tree-activation}
-
->[!NOTE]
->
->This approach should be considered deprecated and will be removed on or after September 30th, 2021 since it does not persist statuses and is less scalable than other approaches. Adobe's recommendation is to use manage publication or workflow methods instead
-
-To perform a tree activation:
-
-1. From the AEM Start Menu navigate to **Tools > Deployment > Distribution**
-2. Select the card **publish**
-3. Once in the publish Web console UI, **select Distribute**
-![Distribute](assets/publish-distribute.png "Distribute")
-4. Select the path in the path browser, choose to add a node, tree or delete as required and select **Submit**
-
-For best performance, follow these guidelines when using this feature:
-* It is recommended to replicate fewer than 100 paths at a time, with a 500 path hard limit. 
-* The total size of the replicated content must be below 5 MB. This just includes the nodes and properties, but not any binaries, which include workflow packages and content packages.
-
 ### Publish Content Tree Workflow {#publish-content-tree-workflow}
 
 You can trigger a tree replication by choosing **Tools - Workflow - Models** and copying the **Publish Content Tree** out-of-the-box workflow model, as shown below:
