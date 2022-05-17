@@ -62,13 +62,7 @@ The program level configuration can be updated by invoking the `PUT /api/program
 
 The per environment port forwarding rules can be updated by again invoking the `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` endpoint, making sure to include the full set of configuration parameters, rather than a subset.
 
-### Deleting or Disabling Flexible Port Egress {#deleting-disabling-flexible-port-egress-provision}
-
-To **delete** the network infrastructure for a program, invoke `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`. 
-
->[!NOTE]
->
-> Delete will not delete the infrastructure if there are any environments using it.
+### Disabling Flexible Port Egress {#disabling-flexible-port-egress-provision}
 
 In order to **disable** flexible port egress from a particular environment, invoke `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
@@ -200,6 +194,12 @@ The main difference is that traffic will always egress from a dedicated, unique 
 In addition to the routing rules supported by flexible port egress in the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint, dedicated egress IP address supports a `nonProxyHosts` parameter. This allows you to declare a set of hosts that should route through a shared IPs address range rather than the dedicated IP, which may be useful since traffic egressing through shared IPs may be further optimized. The `nonProxyHost` URLs may follow the patterns of `example.com` or `*.example.com`, where the wildcard is only supported at the start of the domain.
 
 When deciding between flexible port egress and dedicated egress IP address, customers should choose flexible port egress if a specific IP address is not required since Adobe can optimize performance of flexible port egress traffic.
+
+### Disabling Dedicated Egress IP Address {#disabling-dedicated-egress-IP-address}
+
+In order to **disable** Dedicated Egress IP Address from a particular environment, invoke `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+
+For more information on the APIs, see the [Cloud Manager API Documentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Traffic Routing {#dedcated-egress-ip-traffic-routing}
 
@@ -391,9 +391,7 @@ Note that the address space cannot be changed after the initial VPN provisioning
 
 The per-environment routing rules can be updated by again invoking the `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` endpoint, making sure to include the full set of configuration parameter, rather than a subset. Environment updates typically take 5-10 minutes to be applied.
 
-### Deleting or Disabling the VPN {#deleting-or-disabling-the-vpn}
-
-To delete the network infrastructure, submit a customer support ticket, describing what has been created and why it needs to be deleted.
+### Disabling the VPN {#disabling-the-vpn}
 
 To disable VPN for a particular environment, invoke `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`. More details in the [API documentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -514,7 +512,7 @@ The diagram below provides a visual representation of a set of domains and assoc
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
     <td>The IP of traffic coming from the AEM side of the VPN to the customer side. This can be allowlisted in the customer's configuration to ensure that connections can only be made from AEM.</td>
-    <td>If customer wants to allow only VPN access to AEM, they should configure CNAME DNS entries to map <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code>  and/or <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> to this.</td>
+    <td>If customer wants to allow VPN access to AEM, they should configure CNAME DNS entries to map their custom domain and/or <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> and/or <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> to this.</td>
   </tr>
 </tbody>
 </table>
@@ -534,6 +532,27 @@ Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
 
+## Deleting a Program's Network Infrastructure {#deleting-network-infrastructure}
+
+To **delete** the network infrastructure for a program, invoke `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`. 
+
+>[!NOTE]
+>
+> Delete will only delete the infrastructure if all environments have their advanced networkings disabled. 
+> 
+
 ## Transitioning Between Advanced Networking Types {#transitioning-between-advanced-networking-types}
 
-Since the `kind` parameter cannot be modified, please contact customer support for assistance, describing what has already been created and the reason for the change.
+It is possible to migrate between advanced networking types by following the following procedure:
+
+* disable advanced networking in all environments
+* delete the advanced networking infrastructure
+* recreate the advanced networking infras with the correct values
+* reenable environment level advanced networking
+
+>[!WARNING]
+>
+> This procedure will result in a downtime of advanced networking services between deletion and recreation
+> 
+
+If downtime would cause significant business impact, contact customer support for assistance, describing what has already been created and the reason for the change.

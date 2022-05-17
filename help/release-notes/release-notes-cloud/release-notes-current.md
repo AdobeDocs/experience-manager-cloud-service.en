@@ -20,7 +20,7 @@ The following section outlines the general Release Notes for the current (latest
 ## Release Date {#release-date}
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.4.0) is May 5, 2022.
-The next release (2022.5.0) is planned for May 26, 2022.
+The next release (2022.5.0) is planned for June 2, 2022.
 
 ## Release Video {#release-video}
 
@@ -37,7 +37,6 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 ### New features in [!DNL Assets] {#assets-features}
 
 * You can now [sort tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) in the tag picker window in ascending or descending order based on the tag name, date of creation, or date of modification.
-
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -75,28 +74,18 @@ A new analyzer has been recently added:
 
 It is strongly recommended to update your maven project with the latest version of the analyzer or include the analyzer if you haven't yet done so. For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html).
 
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Security {#foundation-security}
+
+### TLS 1.0, 1.1 deprecation
+
+Starting June 30th 2022, Experience Manager as a Cloud Service will require a more secure network communication and data exchange with users systems. AEM will use exclusively Transport Layer Security (TLS), 1.2 protocol. Older TLS versions 1.0 and 1.1 will be deprecated.
+
+If you continue to use older versions of TLS as 1.0, 1.1, you could potentially lose access to Experience Manager as a Cloud Service.  
+
 ## Cloud Manager {#cloud-manager}
 
 You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
-## Best Practices Analyzer {#bpa-release}
+## Migration Tools {#migration-tools}
 
-### Release Date {#release-date-bpa}
-
-The Release Date for Best Practices Analyzer v2.1.28 is April 22, 2022.
-
-### What's New {#what-is-new-bpa}
-
-* Ability to detect and report on usage of unsupported Asset Manager APIs. There are four APIs that are no longer supported in AEM as a Cloud Service. Customers should ensure that they are no longer using these APIs and should be using the new method of asset upload.
-
-* Ability to detect usage of Content Fragment templates. Content Fragment templates are no longer supported for new content fragment creation on AEM as a Cloud Service. Customers will need to create content fragment models to replace content fragment templates.
-
-* Ability to detect assets with more than 100 descendants under the metadate node of the asset in the repository. It is recommended to remove metadata nodes that are not needed to improve the performance when loading folders consisting of such assets.
-
-* Ability to detect and report on type of Data Store used.
-
-* Pattern updated for AEM Form Portal.
-
-### Bug Fixes {#bug-fixes-bpa}
-
-* BPA was reporting findings for core components instead of reporting only on customer components. This has been fixed.
+You can find a complete list of Migration Tools releases [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
