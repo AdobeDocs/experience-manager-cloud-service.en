@@ -19,11 +19,11 @@ An Adaptive Form can have mix of bound and unbound fields. Bound fields are fiel
 
 You can prefill both bound and unbound fields of an Adaptive Form. The prefill data contains the afBoundData and afUnBoundData sections to prefill both bound and unbound fields of an Adaptive Form. The `afBoundData` section contains the prefill data for bound fields and panels. This data must be compliant with the associated form model schema:
 
-* For Adaptive Forms using the [XFA form template](prepopulate-adaptive-form-fields.md), use the prefill XML compliant with the data schema of the XFA template.
-* For Adaptive Forms using [XML schema](#xml-schema-af), use the prefill XML compliant with the XML schema structure.
-* For Adaptive Forms using [JSON schema](#json-schema-based-adaptive-forms), use the prefill JSON compliant with the JSON schema.
-* For Adaptive Forms using FDM schema, use the prefill JSON compliant with FDM schema.
-* For Adaptive Forms with [no form model](#adaptive-form-with-no-form-model), there is no bound data. Every field is an unbound field and is prefilled using the unbound XML.
+- For Adaptive Forms using the [XFA form template](#xfa-based-af), use the prefill XML compliant with the data schema of the XFA template.
+- For Adaptive Forms using [XML schema](#xml-schema-af), use the prefill XML compliant with the XML schema structure.
+- For Adaptive Forms using [JSON schema](#json-schema-based-adaptive-forms), use the prefill JSON compliant with the JSON schema.
+- For Adaptive Forms using FDM schema, use the prefill JSON compliant with FDM schema.
+- For Adaptive Forms with [no form model](#adaptive-form-with-no-form-model), there is no bound data. Every field is an unbound field and is prefilled using the unbound XML.
 
 ### Sample Prefill XML structure {#sample-prefill-xml-structure}
 
@@ -42,8 +42,8 @@ You can prefill both bound and unbound fields of an Adaptive Form. The prefill d
          .
          .
       <numericbox>12</numericbox>
-         . 
-         .              
+         .
+         .
     </data>
   </afUnboundData>
 </afData>
@@ -71,9 +71,9 @@ For bound fields with same bindref or unbound fields with same name, data specif
 
 The structure of prefill XML and the submitted XML for XFA-based Adaptive Forms is as follows:
 
-* **Prefill XML Structure**: The prefill XML for XFA-based Adaptive Form must be compliant with the data schema of the XFA form template. To prefill unbound fields, wrap the prefill XML structure into `/afData/afBoundData` tag.
+- **Prefill XML Structure**: The prefill XML for XFA-based Adaptive Form must be compliant with the data schema of the XFA form template. To prefill unbound fields, wrap the prefill XML structure into `/afData/afBoundData` tag.
 
-* **Submitted XML Structure**: When no prefill XML is used, the submitted XML contains data for both bound and unbound fields in `afData` wrapper tag. If a prefill XML is used, the submitted XML has the same structure as the prefill XML. If the prefill XML starts with the `afData` root tag, the output XML also has the same format. If the prefill XML does not have `afData/afBoundData`wrapper and instead starts directly from the schema root tag like `employeeData`, the submitted XML also starts with the `employeeData` tag.
+- **Submitted XML Structure**: When no prefill XML is used, the submitted XML contains data for both bound and unbound fields in `afData` wrapper tag. If a prefill XML is used, the submitted XML has the same structure as the prefill XML. If the prefill XML starts with the `afData` root tag, the output XML also has the same format. If the prefill XML does not have `afData/afBoundData`wrapper and instead starts directly from the schema root tag like `employeeData`, the submitted XML also starts with the `employeeData` tag.
 
 Prefill-Submit-Data-ContentPackage.zip
 
@@ -84,17 +84,17 @@ Sample containing prefill data and submitted data
 
 The structure of prefill XML and submitted XML for Adaptive Forms based on XML schema is as follows:
 
-* **Prefill XML structure**: The prefill XML must be compliant to associated XML Schema. To prefill unbound fields, wrap the prefill XML structure into /afData/afBoundData tag.
-* **Submitted XML structure**: if no prefill XML is used, the submitted XML contains data for both bound and unbound fields in `afData` wrapper tag. If the prefill XML is used, the submitted XML has the same structure as the prefill XML. If the prefill XML starts with the `afData` root tag, the output XML has the same format. If the prefill XML does not have `afData/afBoundData` wrapper and instead start directly from the schema root tag like `employeeData`, the submitted XML also starts with the `employeeData` tag.
+- **Prefill XML structure**: The prefill XML must be compliant to associated XML Schema. To prefill unbound fields, wrap the prefill XML structure into /afData/afBoundData tag.
+- **Submitted XML structure**: if no prefill XML is used, the submitted XML contains data for both bound and unbound fields in `afData` wrapper tag. If the prefill XML is used, the submitted XML has the same structure as the prefill XML. If the prefill XML starts with the `afData` root tag, the output XML has the same format. If the prefill XML does not have `afData/afBoundData` wrapper and instead start directly from the schema root tag like `employeeData`, the submitted XML also starts with the `employeeData` tag.
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8" ?>
 <xs:schema targetNamespace="https://adobe.com/sample.xsd"
             xmlns="https://adobe.com/sample.xsd"
             xmlns:xs="https://www.w3.org/2001/XMLSchema">
- 
+
     <xs:element name="sample" type="SampleType"/>
-         
+
     <xs:complexType name="SampleType">
         <xs:sequence>
             <xs:element name="noOfProjectsAssigned" type="xs:string"/>
@@ -121,9 +121,9 @@ For fields whose model is XML schema, the data is prefilled in the `afBoundData`
 
 ```
 
->[!NOTE]
+> [!NOTE]
 >
->It is recommended not to use unbound fields in bound panels (panels with non-empty `bindRef` that has been created by dragging components from Sidekick or Data Sources tab). It may cause loss of data of these unbound fields. Also, it is recommended that the names of the fields are unique across the form, specially for unbound fields.
+> It is recommended not to use unbound fields in bound panels (panels with non-empty `bindRef` that has been created by dragging components from Sidekick or Data Sources tab). It may cause loss of data of these unbound fields. Also, it is recommended that the names of the fields are unique across the form, specially for unbound fields.
 
 #### An example without afData and afBoundData wrapper {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -139,24 +139,28 @@ For fields whose model is XML schema, the data is prefilled in the `afBoundData`
 
 For Adaptive Forms based on JSON schema, the structure of prefill JSON and submitted JSON is described below. For more information, see [Creating Adaptive Forms using JSON schema](adaptive-form-json-schema-form-model.md).
 
-* **Prefill JSON structure**: The prefill JSON must be compliant with the associated JSON Schema. Optionally, it can be wrapped into the /afData/afBoundData Object if you want to prefill unbound fields as well.
-* **Submitted JSON structure**: if no prefill JSON is used, the submitted JSON contains data for both bound and unbound fields in afData wrapper tag. If the prefill JSON is used, the submitted JSON has the same structure as the prefill JSON. If the prefill JSON starts with the afData root object, the output JSON has the same format. If the prefill JSON does not have afData/afBoundData wrapper and instead starts directly from the schema root object such as user, the submitted JSON also starts with the user object.
+- **Prefill JSON structure**: The prefill JSON must be compliant with the associated JSON Schema. Optionally, it can be wrapped into the /afData/afBoundData Object if you want to prefill unbound fields as well.
+- **Submitted JSON structure**: if no prefill JSON is used, the submitted JSON contains data for both bound and unbound fields in afData wrapper tag. If the prefill JSON is used, the submitted JSON has the same structure as the prefill JSON. If the prefill JSON starts with the afData root object, the output JSON has the same format. If the prefill JSON does not have afData/afBoundData wrapper and instead starts directly from the schema root object such as user, the submitted JSON also starts with the user object.
 
 ```json
 {
-    "id": "https://some.site.somewhere/entry-schema#",
-    "$schema": "https://json-schema.org/draft-04/schema#",
-    "type": "object",
-    "properties": {
-        "address": {
-            "type": "object",
-            "properties": { 
-    "name": {
-     "type": "string"
-    },
-    "age": {
-     "type": "integer"
-}}}}}
+  "id": "https://some.site.somewhere/entry-schema#",
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "address": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "age": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
 ```
 
 For fields which use JSON schema model, the data is prefilled in the afBoundData object as shown in the sample JSON below. It can be used for prefilling an Adaptive Form with one or more unbound text fields. Below is an example of data with `afData/afBoundData` wrapper:
@@ -180,16 +184,18 @@ Below is an example without `afData/afBoundData` wrapper:
 
 ```json
 {
- "user": {
-  "address": {
-   "city": "Noida",
-   "country": "India"
-}}}
+  "user": {
+    "address": {
+      "city": "Noida",
+      "country": "India"
+    }
+  }
+}
 ```
 
->[!NOTE]
+> [!NOTE]
 >
->Using unbound fields in bound panels (panels with non-empty bindRef that have been created by dragging components from the Sidekick or Data Sources tab) is **not** recommended as it might cause loss of data of the unbound fields. It is recommended to have unique field names across the form, especially for unbound fields.
+> Using unbound fields in bound panels (panels with non-empty bindRef that have been created by dragging components from the Sidekick or Data Sources tab) is **not** recommended as it might cause loss of data of the unbound fields. It is recommended to have unique field names across the form, especially for unbound fields.
 
 ### Adaptive Form with no form model {#adaptive-form-with-no-form-model}
 
@@ -219,45 +225,37 @@ The XML tags for the user data submitted for various fields are generated using 
 
 ```
 
-## Configuring prefill service using Configuration Manager {#configuring-prefill-service-using-configuration-manager}
+## Configuring prefill service {#configuring-prefill-service-using-configuration-manager}
 
-To enable prefill service, specify the Default Prefill Service Configuration in the AEM Web Console Configuration. Use the following steps to configure the Prefill service:
+Use the `alloweddataFileLocations` property of the **Default Prefill Service configuration** to set the location of the data files or a regex (regular expression) for the Data files locations.
 
->[!NOTE]
+The following JSON file displays a sample:
+
+```JSON
+
+  {
+  "alloweddataFileLocations": "`file:///C:/Users/public/Document/Prefill/.*`"
+  }
+
+```
+
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
+
+> [!NOTE]
 >
->Prefill Service Configuration is applicable for Adaptive Forms, HTML5 forms, and HTML5 form sets.
-
-1. Open **[!UICONTROL Adobe Experience Manager Web Console Configuration]** by using the URL:
-   https://&lt;server&gt;:&lt;port&gt;/system/console/configMgr
-1. Search and open **[!UICONTROL Default Prefill Service Configuration]**.
-
-   ![Prefill configuration](assets/prefill_config_new.png)
-
-1. Enter the data location or a regex (regular expression) for the **Data files locations**. Examples of valid Data files locations are:
-
-    * `file:///C:/Users/public/Document/Prefill/.*`;
-    * `https://servername/somesamplexmlfile.xml`
-
-   >[!NOTE]
-   >
-   >By default, prefill is allowed through crx files for all types of Adaptive Forms (XSD, XDP, JSON, FDM, and no Form Model based). Prefill is allowed only with JSON and XML files.
-
-1. The prefill service is now configured for your form.
-
-   >[!NOTE]
-   >
-   >The crx protocol takes care of prefilled data security and hence, is allowed by default. Prefilling via other protocols using generic regex might cause vulnerability. In the configuration, specify a secure URL configuration for protecting your data.
+> * By default, prefill is allowed through crx files for all types of Adaptive Forms (XSD, XDP, JSON, FDM, and no Form Model based). Prefill is allowed only with JSON and XML files.
+> * The crx protocol takes care of prefilled data security and hence, is allowed by default. Prefilling via other protocols using generic regex might cause vulnerability. In the configuration, specify a secure URL configuration for protecting your data.
 
 ## The curious case of repeatable panels {#the-curious-case-of-repeatable-panels}
 
 Generally, bound (form schema) and unbound fields are authored in the same Adaptive Form, but the following are a few exceptions in case the bound are repeatable:
 
-* Unbound repeatable panels are not supported for Adaptive Forms using the XFA form template, XSD, JSON schema, or FDM schema.
-* Do not use unbound fields in bound repeatable panels.
+- Unbound repeatable panels are not supported for Adaptive Forms using the XFA form template, XSD, JSON schema, or FDM schema.
+- Do not use unbound fields in bound repeatable panels.
 
->[!NOTE]
+> [!NOTE]
 >
->As a rule of thumb, do not mix bound and unbound fields if they are intersected in data filled by the end user in unbound fields. If possible, you should modify the schema or the XFA form template and add an entry for unbound fields, so that it also becomes bound and its data is available like other fields in submitted data.
+> As a rule of thumb, do not mix bound and unbound fields if they are intersected in data filled by the end user in unbound fields. If possible, you should modify the schema or the XFA form template and add an entry for unbound fields, so that it also becomes bound and its data is available like other fields in submitted data.
 
 ## Supported protocols for prefilling user data {#supported-protocols-for-prefilling-user-data}
 
@@ -265,7 +263,7 @@ Adaptive Forms can be prefilled with user data in prefill data format via the fo
 
 ### The crx:// protocol {#the-crx-protocol}
 
-``` javascript
+```javascript
 
 http
 https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
@@ -276,7 +274,7 @@ The specified node must have a property called `jcr:data` and hold the data.
 
 ### The file:// protocol&nbsp; {#the-file-protocol-nbsp}
 
-``` javascript
+```javascript
 
 https://`servername`/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:///C:/Users/form-user/Downloads/somesamplexml.xml
 
@@ -286,7 +284,7 @@ The referred file must be on the same server.
 
 ### The https:// protocol {#the-http-protocol}
 
-``` javascript
+```javascript
 
 https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://servername/somesamplexmlfile.xml
 
@@ -294,18 +292,18 @@ https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://
 
 ### The service:// protocol {#the-service-protocol}
 
-``` javascript
+```javascript
 
 https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 
 ```
 
-* SERVICE_NAME refers to the name of the OSGI prefill service. Refer [Create and run a prefill service](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
-* IDENTIFIER refers to any metadata required by the OSGI prefill service to fetch the prefill data. An identifier to the logged-in user is an example of metadata that could be used.
+- SERVICE_NAME refers to the name of the OSGI prefill service. Refer [Create and run a prefill service](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
+- IDENTIFIER refers to any metadata required by the OSGI prefill service to fetch the prefill data. An identifier to the logged-in user is an example of metadata that could be used.
 
->[!NOTE]
+> [!NOTE]
 >
->Passing authentication parameters is not supported.
+> Passing authentication parameters is not supported.
 
 ### Setting data attribute in slingRequest {#setting-data-attribute-in-slingrequest}
 
@@ -346,10 +344,10 @@ You can use custom prefill service for the scenarios, where you constantly read 
 
 The prefill service is an OSGi service and is packaged through OSGi bundle. You create the OSGi bundle, upload, and install it to [!DNL AEM Forms] bundles. Before you get started with creating the bundle:
 
-* [Download the [!DNL AEM Forms] Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
-* Download the boilerplate package
+- [Download the [!DNL AEM Forms] Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+- Download the boilerplate package
 
-* Place the data (prefill data) file in the crx-repository. You can place the file at any location in the \contents folder of crx-repository.
+- Place the data (prefill data) file in the crx-repository. You can place the file at any location in the \contents folder of crx-repository.
 
 [Get File](assets/prefill-sumbit-xmlsandcontentpackage.zip)
 
@@ -360,8 +358,8 @@ The boilerplate package (sample prefill service package) contains sample impleme
 1. Open the src\main\java\com\adobe\test\Prefill.java file for editing.
 1. In the code, set value of:
 
-    * `nodePath:` The node path variable pointing to crx-repository location contains path of the data (prefill) file. For example, /content/prefilldata.xml
-    * `label:` The label parameter specifies display name of the service. For example, Default Prefill Service
+   - `nodePath:` The node path variable pointing to crx-repository location contains path of the data (prefill) file. For example, /content/prefilldata.xml
+   - `label:` The label parameter specifies display name of the service. For example, Default Prefill Service
 
 1. Save and close the `Prefill.java` file.
 1. Add the `AEM Forms Client SDK` package to the build path of the boilerplate project.
@@ -376,7 +374,7 @@ To start the prefill service, upload the JAR file to [!DNL AEM Forms] Web Consol
 1. Select the Default Prefill Service and click **[!UICONTROL Save]**. The service is associated to the form.
 
 <!-- ## Prepopulate data at client {#prefill-at-client}
- 
+
 When you prefill an Adaptive Form, the [!DNL AEM Forms] server merges data with an Adaptive Form and delivers the filled form to you. By default, the data merge action takes place at the server.
 
 You can configure the [!DNL AEM Forms] server to perform the data merge action at the client instead of the server. It significantly reduces the time required to prefill and render Adaptive Forms. By default, the feature is disabled. You can enable it from the Configuration Manager or command line.
