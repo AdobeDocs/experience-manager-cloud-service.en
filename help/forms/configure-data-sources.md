@@ -16,12 +16,12 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 * [!DNL Experience Manager] user profile  -->
 * RESTful web services  
 * SOAP-based web services
-* OData services
+* OData services (Version 4.0)
 * Microsoft Dynamics
 * SalesForce
 * Microsoft Azure Blob Storage
 
-Data integration supports OAuth4.0, Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> and connector for [!DNL Experience Manager] user profile are configured in [!DNL Experience Manager] web console.
+Data integration supports OAuth2.0, Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> and connector for [!DNL Experience Manager] user profile are configured in [!DNL Experience Manager] web console.
 
 >[!NOTE]
 >
