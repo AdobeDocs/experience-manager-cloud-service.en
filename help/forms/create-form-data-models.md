@@ -28,9 +28,9 @@ Ensure that you have configured the data sources you intend to use in the Form D
 1. Tap **[!UICONTROL Create > Form Data Model]**.
 1. In the Create Form Data Model dialog:
 
-    * Specify a name for the form data model. 
+    * Specify a name for the form data model.
     * (**Optional**) Specify title, description, and tags for the form data model.
-    * (**Optional and applicable only if data sources are configured**) Tap the tick icon next to the **[!UICONTROL Data Source Configuration]** field and select the configuration node where cloud services for the data sources you want to use reside. It restricts the list of data sources available for selection on the next page to the ones available in the selected configuration node. However, any JDBC database and [!DNL Experience Manager] user profile data sources are listed by default. If you do not select a configuration node, data sources from all configuration nodes are listed.
+    * (**Optional and applicable only if data sources are configured**) Tap the tick icon next to the **[!UICONTROL Data Source Configuration]** field and select the configuration node where cloud services for the data sources you want to use reside. It restricts the list of data sources available for selection on the next page to the ones available in the selected configuration node. However, any [!DNL Experience Manager] user profile data sources are listed by default. If you do not select a configuration node, data sources from all configuration nodes are listed.
 
 1. Tap **[!UICONTROL Next]**.
 
