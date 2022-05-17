@@ -50,13 +50,13 @@ This section explains errors you might see and how to resolve them.
 
 **Domain not Installed** - You receive this error during domain validation of the TXT record even after you've checked that the record has been updated appropriately.
 
-**Error explanation** - Fastly only allows you to assign an apex domain and associated subdomains to one Fastly service and account. If you have an existing Fastly account that links the same apex and subdomains used for your AEM Cloud Service domains.
+**Error explanation** - Fastly locks a domain to the initial account that registered it and no other account can register a subdomain without asking for permission. Furthermore, Fastly only allows you to assign an apex domain and associated subdomains to one Fastly service and account. If you have an existing Fastly account that links the same apex and subdomains used for your AEM Cloud Service domains you will see this error.
 
 **Error Resolution** - The error is fixed as follows:
 
-* Remove the apex and subdomains from the existing account before installing the domain in Cloud Manager. Use this option to link the apex domain and all subdomains to the AEM as a Cloud Service Fastly account.
+* Remove the apex and subdomains from the existing account before installing the domain in Cloud Manager. Use this option to link the apex domain and all subdomains to the AEM as a Cloud Service Fastly account. See [Working with Domains in the Fastly documentation](https://docs.fastly.com/en/guides/working-with-domains) for additional details.
 
-* If your apex domain has multiple subdomains for AEM as a Cloud Service and non-AEM as a Cloud Service sites that you want to link to different Fastly accounts then try to install the domain in Cloud Manager and if the domain installation fails create a Customer Support ticket so that we followup with Fastly on you behalf.
+* If your apex domain has multiple subdomains for AEM as a Cloud Service and non-AEM as a Cloud Service sites that you want to link to different Fastly accounts then try to install the domain in Cloud Manager and if the domain installation fails create a Customer Support ticket with Fastly so we can followup with Fastly on you behalf.
 
 ## Pre-existing CDN Configurations for Custom Domain Names {#pre-existing-cdn}
 
