@@ -167,7 +167,7 @@ Follow the steps below to run a size check:
    
  1. If the **Check Size** results indicate that either there is insufficient disk space and/or the migration set exceeds product limits, **WARNING** status will be displayed.
 
-<!-->   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+<!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    
    Below is an example of **Check Size** results with warnings.
  
