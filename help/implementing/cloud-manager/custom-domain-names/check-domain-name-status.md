@@ -44,6 +44,20 @@ Cloud Manager will verify domain ownership via the TXT value and displays one of
 
 Cloud Manager will automatically trigger a TXT verification when you select **Save** on the verification step of the **Add Custom Domain** wizard. For subsequent verifications, you must actively select the verify again icon next to the status.
 
+## Domain Name Errors {#domain-error}
+
+This section explains errors you might see and how to resolve them.
+
+**Domain not Installed** - You receive this error during domain validation of the TXT record even after you've checked that the record has been updated appropriately.
+
+**Error explanation** - Fastly only allows you to assign an apex domain and associated subdomains to one Fastly service and account. If you have an existing Fastly account that links the same apex and subdomains used for your AEM Cloud Service domains.
+
+**Error Resolution** - The error is fixed as follows:
+
+* Remove the apex and subdomains from the existing account before installing the domain in Cloud Manager. Use this option to link the apex domain and all subdomains to the AEM as a Cloud Service Fastly account.
+
+* If your apex domain has multiple subdomains for AEM as a Cloud Service and non-AEM as a Cloud Service sites that you want to link to different Fastly accounts then try to install the domain in Cloud Manager and if the domain installation fails create a Customer Support ticket so that we followup with Fastly on you behalf.
+
 ## Pre-existing CDN Configurations for Custom Domain Names {#pre-existing-cdn}
 
 If you have a pre-existing CDN configuration for your custom domain names, there will be an informative message on the the **Custom Domain Names** and **Environment** pages, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
