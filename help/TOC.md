@@ -368,9 +368,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
     + [Preview - JSON Representation](/help/assets/content-fragments/content-fragments-json-preview.md)
   + Dynamic Media {#dynamicmedia}
-    + Dynamic Media Journey {#dm-journey}
-      + [The Basics, Part I](/help/assets/dynamic-media/dm-journey-part1.md)
-      + [The Basic, Part II](/help/assets/dynamic-media/dm-journey-part2.md)
+    + Dynamic Media Journey: The Basics {#dm-journey}
+      + [The Basics: Part I](/help/assets/dynamic-media/dm-journey-part1.md)
+      + [The Basics: Part II](/help/assets/dynamic-media/dm-journey-part2.md)
     + [Dynamic Media newsletter archive by Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
     + [Set up Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
     + [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
