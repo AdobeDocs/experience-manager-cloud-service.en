@@ -162,7 +162,7 @@ Follow the steps below to run a size check:
 
 1. Once **Check Size** process is completed, the status will change to **FINISHED**. Select the same migration set and click on **Check Size** to view results. Below is an example of **Check Size** results with no warnings.
  
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
    
  1. If the **Check Size** results indicate that either there is insufficient disk space and/or the migration set exceeds product limits, **WARNING** status will be displayed.
 
