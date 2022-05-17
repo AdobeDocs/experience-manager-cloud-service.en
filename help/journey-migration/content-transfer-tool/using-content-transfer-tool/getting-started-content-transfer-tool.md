@@ -86,8 +86,7 @@ The following section applies to the new version of the Content Transfer Tool. F
 >[!CONTEXTUALHELP] 
 >id="aemcloud_ctt_populate_migrationset" 
 >title="Populate Migration Set" abstract="After creating a migration set it needs to be populated with the content from the source instance that needs to be moved to the AEM as a Cloud Service environment. To do this, the Content Transfer Tool needs to be installed on the source instance." 
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=en" 
->text="Extracting Content"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="Extracting Content"
 
 To populate the migration set you created in the Cloud Acceleration Manager, you need to install the latest version of the Content Transfer Tool on your source Adobe Experience Manager (AEM) instance. Follow this section to learn how to populate the migration set.
 
