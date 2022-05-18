@@ -125,7 +125,6 @@ For fields whose model is XML schema, the data is prefilled in the `afBoundData`
 >
 >It is recommended not to use unbound fields in bound panels (panels with non-empty `bindRef` that has been created by dragging components from Sidekick or Data Sources tab). It may cause loss of data of these unbound fields. Also, it is recommended that the names of the fields are unique across the form, specially for unbound fields.
 
-
 #### An example without afData and afBoundData wrapper {#an-example-without-afdata-and-afbounddata-wrapper}
 
 ```xml
@@ -245,15 +244,15 @@ To set values of a configuration, [Generate OSGi Configurations using the AEM SD
 
 >[!NOTE]
 >
-> * By default, prefill is allowed through crx files for all types of Adaptive Forms (XSD, XDP, JSON, FDM, and no Form Model based). Prefill is allowed only with JSON and XML files.
-> * The crx protocol takes care of prefilled data security and hence, is allowed by default. Prefilling via other protocols using generic regex might cause vulnerability. In the configuration, specify a secure URL configuration for protecting your data.
+> - By default, prefill is allowed through crx files for all types of Adaptive Forms (XSD, XDP, JSON, FDM, and no Form Model based). Prefill is allowed only with JSON and XML files.
+> - The crx protocol takes care of prefilled data security and hence, is allowed by default. Prefilling via other protocols using generic regex might cause vulnerability. In the configuration, specify a secure URL configuration for protecting your data.
 
 ## The curious case of repeatable panels {#the-curious-case-of-repeatable-panels}
 
 Generally, bound (form schema) and unbound fields are authored in the same Adaptive Form, but the following are a few exceptions in case the bound are repeatable:
 
-* Unbound repeatable panels are not supported for Adaptive Forms using the XFA form template, XSD, JSON schema, or FDM schema.
-* Do not use unbound fields in bound repeatable panels.
+- Unbound repeatable panels are not supported for Adaptive Forms using the XFA form template, XSD, JSON schema, or FDM schema.
+- Do not use unbound fields in bound repeatable panels.
 
 >[!NOTE]
 >
@@ -300,8 +299,8 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 ```
 
-* SERVICE_NAME refers to the name of the OSGI prefill service. Refer [Create and run a prefill service](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
-* IDENTIFIER refers to any metadata required by the OSGI prefill service to fetch the prefill data. An identifier to the logged-in user is an example of metadata that could be used.
+- SERVICE_NAME refers to the name of the OSGI prefill service. Refer [Create and run a prefill service](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
+- IDENTIFIER refers to any metadata required by the OSGI prefill service to fetch the prefill data. An identifier to the logged-in user is an example of metadata that could be used.
 
 >[!NOTE]
 >
