@@ -121,9 +121,10 @@ For fields whose model is XML schema, the data is prefilled in the `afBoundData`
 
 ```
 
-> [!NOTE]
+>[!NOTE]
 >
-> It is recommended not to use unbound fields in bound panels (panels with non-empty `bindRef` that has been created by dragging components from Sidekick or Data Sources tab). It may cause loss of data of these unbound fields. Also, it is recommended that the names of the fields are unique across the form, specially for unbound fields.
+>It is recommended not to use unbound fields in bound panels (panels with non-empty `bindRef` that has been created by dragging components from Sidekick or Data Sources tab). It may cause loss of data of these unbound fields. Also, it is recommended that the names of the fields are unique across the form, specially for unbound fields.
+
 
 #### An example without afData and afBoundData wrapper {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -193,9 +194,10 @@ Below is an example without `afData/afBoundData` wrapper:
 }
 ```
 
-> [!NOTE]
+>[!NOTE]
 >
 > Using unbound fields in bound panels (panels with non-empty bindRef that have been created by dragging components from the Sidekick or Data Sources tab) is **not** recommended as it might cause loss of data of the unbound fields. It is recommended to have unique field names across the form, especially for unbound fields.
+>
 
 ### Adaptive Form with no form model {#adaptive-form-with-no-form-model}
 
@@ -241,7 +243,7 @@ The following JSON file displays a sample:
 
 To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
-> [!NOTE]
+>[!NOTE]
 >
 > * By default, prefill is allowed through crx files for all types of Adaptive Forms (XSD, XDP, JSON, FDM, and no Form Model based). Prefill is allowed only with JSON and XML files.
 > * The crx protocol takes care of prefilled data security and hence, is allowed by default. Prefilling via other protocols using generic regex might cause vulnerability. In the configuration, specify a secure URL configuration for protecting your data.
@@ -250,10 +252,10 @@ To set values of a configuration, [Generate OSGi Configurations using the AEM SD
 
 Generally, bound (form schema) and unbound fields are authored in the same Adaptive Form, but the following are a few exceptions in case the bound are repeatable:
 
-- Unbound repeatable panels are not supported for Adaptive Forms using the XFA form template, XSD, JSON schema, or FDM schema.
-- Do not use unbound fields in bound repeatable panels.
+* Unbound repeatable panels are not supported for Adaptive Forms using the XFA form template, XSD, JSON schema, or FDM schema.
+* Do not use unbound fields in bound repeatable panels.
 
-> [!NOTE]
+>[!NOTE]
 >
 > As a rule of thumb, do not mix bound and unbound fields if they are intersected in data filled by the end user in unbound fields. If possible, you should modify the schema or the XFA form template and add an entry for unbound fields, so that it also becomes bound and its data is available like other fields in submitted data.
 
@@ -298,10 +300,10 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 ```
 
-- SERVICE_NAME refers to the name of the OSGI prefill service. Refer [Create and run a prefill service](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
-- IDENTIFIER refers to any metadata required by the OSGI prefill service to fetch the prefill data. An identifier to the logged-in user is an example of metadata that could be used.
+* SERVICE_NAME refers to the name of the OSGI prefill service. Refer [Create and run a prefill service](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
+* IDENTIFIER refers to any metadata required by the OSGI prefill service to fetch the prefill data. An identifier to the logged-in user is an example of metadata that could be used.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Passing authentication parameters is not supported.
 
