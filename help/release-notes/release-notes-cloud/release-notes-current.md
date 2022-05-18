@@ -20,7 +20,7 @@ The following section outlines the general Release Notes for the current (latest
 ## Release Date {#release-date}
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.4.0) is May 5, 2022.
-The next release (2022.5.0) is planned for May 26, 2022.
+The next release (2022.5.0) is planned for June 2, 2022.
 
 ## Release Video {#release-video}
 
@@ -37,7 +37,6 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 ### New features in [!DNL Assets] {#assets-features}
 
 * You can now [sort tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) in the tag picker window in ascending or descending order based on the tag name, date of creation, or date of modification.
-
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -74,6 +73,14 @@ A new analyzer has been recently added:
 * `content-packages-validation` - validates for well formed content syntax and structure for packages that will be installed during deployment
 
 It is strongly recommended to update your maven project with the latest version of the analyzer or include the analyzer if you haven't yet done so. For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html).
+
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Security {#foundation-security}
+
+### TLS 1.0, 1.1 deprecation
+
+Starting June 30th 2022, Experience Manager as a Cloud Service will require a more secure network communication and data exchange with users systems. AEM will use exclusively Transport Layer Security (TLS), 1.2 protocol. Older TLS versions 1.0 and 1.1 will be deprecated.
+
+If you continue to use older versions of TLS as 1.0, 1.1, you could potentially lose access to Experience Manager as a Cloud Service.  
 
 ## Cloud Manager {#cloud-manager}
 
