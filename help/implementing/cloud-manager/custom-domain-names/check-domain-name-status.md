@@ -58,6 +58,10 @@ This section explains errors you might see and how to resolve them.
 
 * If your apex domain has multiple subdomains for AEM as a Cloud Service and non-AEM as a Cloud Service sites that you want to link to different Fastly accounts then try to install the domain in Cloud Manager and if the domain installation fails create a Customer Support ticket with Fastly so we can followup with Fastly on you behalf.
 
+>[!NOTE]
+>
+>NOTE: Do not route the DNS of your site to AEM as a Cloud Service IP's if the domain was not installed successfully.
+
 ## Pre-existing CDN Configurations for Custom Domain Names {#pre-existing-cdn}
 
 If you have a pre-existing CDN configuration for your custom domain names, there will be an informative message on the the **Custom Domain Names** and **Environment** pages, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
