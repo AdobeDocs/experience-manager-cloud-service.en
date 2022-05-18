@@ -24,7 +24,7 @@ See also [Dynamic Media Journey; The Basics, Part I](/help/assets/dynamic-media/
 
 >[!TIP]
 >
->For best results, Adobe recommends that you read and view the Dynamic Media Journey on a desktop computer.
+>For best results, Adobe recommends that you read and view this Dynamic Media Journey on a desktop computer.
 
 ## Anatomy of a Dynamic Media URL and how Dynamic Media delivers content {#dm-journey-d}
 
@@ -37,7 +37,7 @@ The first part of the URL in red is referencing the server domain itself. In thi
 
 The account name is the portion in purple. In this case, the account is called `jpearldemo`.
 
-The asset ID or name, `AdobeStock_28563982` is in green. Notice that the asset has *no* file extension such as `.png` or `.jpg`. When assets are ingested into Dynamic Media, the file extension is stripped out and a different kind of file is created: a pyramid-TIFF file. The pyramic-TIFF allows Dynamic Media to quickly create renditions on-the-fly.
+The asset ID or name, `AdobeStock_28563982` is in green. Notice that the asset has _no_ file extension such as `.png` or `.jpg`. When assets are ingested into Dynamic Media, the file extension is stripped out and a different kind of file is created: a pyramid-TIFF file. The pyramic-TIFF allows Dynamic Media to quickly create renditions on-the-fly.
 
 And finally, there are some image processing parameters, `?wid=1000&fmt=jpeg&qlt=85`, shown in yellow on the end.
 
@@ -62,7 +62,7 @@ Now try adding a rotation parameter to the watch image. And the end of the URL p
 
 The watch is still slightly skewed to the left. Change the rotate value of `90` to `92`, and then press **[!UICONTROL Enter]**. [Try it](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=9)
 
-Again, the moment you press **[!UICONTROL Enter]**, a new rendition of the watch is generated nearly instantaneously. You can see the kind of performance that you get, which explains why Dynamic Media can deliver more than 800,000 image requests, *per second*, on a busy weekend, or major holiday.
+Again, the moment you press **[!UICONTROL Enter]**, a new rendition of the watch is generated nearly instantaneously. You can see the kind of performance that you get, which explains why Dynamic Media can deliver more than 800,000 image requests, _per second_, on a busy weekend, or major holiday.
 
 While it is possible to change image processing parameters in a URL on an image-by-image basis, it is not an efficient method, especially if you have tens of thousands of images that make up your website. A much better approach is using image presets.  
 
@@ -198,17 +198,19 @@ You just read a little bit about image sets and viewers. Let's look at a couple 
 * `ZoomVertical_dark` viewer applied to an image asset. [Try it](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&config=jpearldemo/ZoomVertical_dark).
 * `Zoom_light` viewer applied to an image. [Try it](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&config=jpearldemo/Zoom_light).
 
-## Learn more
+## Optional - Learn more
 
-_Dynamic Media topics_
+If you'd like to learn more about what you just read, use the materials below to explore concepts in greater detail. Otherwise, your Dynamic Media Journey is complete!
 
-* [Create image presets](/help/assets/dynamic-media/image-presets.md)
+_Dynamic Media Help topics_
+
+* [How to create image presets](/help/assets/dynamic-media/image-presets.md)
 * A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
-* [Preview assets](/help/assets/dynamic-media/previewing-assets.md)
-* [Preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Image sets](/help/assets/dynamic-media/image-sets.md)
-* [Spin sets](/help/assets/dynamic-media/spin-sets.md)
-* [Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md)
+* [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
+* [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
+* [How to create Spin sets](/help/assets/dynamic-media/spin-sets.md)
+* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md)
 
 _Dynamic Media tutorials_
 
@@ -217,6 +219,6 @@ _Dynamic Media tutorials_
 
 _Dynamic Media viewers_
 
-* [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+* [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) of each viewer
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->
