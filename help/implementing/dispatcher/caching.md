@@ -176,6 +176,10 @@ This can be useful, for example, when your business logic requires fine tuning o
       </LocationMatch>
       ```
 
+### HEAD request behavior {#request-behavior}
+
+When a HEAD request is received at the Adobe CDN for a resource that is **not** cached, the request is transformed and received by the dispatcher and/or AEM instance as a GET request. If the response is cacheable then subsequent HEAD requests will be served from the CDN. If the response is not cacheable then subsequent HEAD requests will be passed to the dispatcher and/or AEM instance for a period of time that depends on the `Cache-Control` TTL.
+
 ## Dispatcher Cache Invalidation {#disp}
 
 In general, it will not be necessary to invalidate the dispatcher cache. Instead you should rely on the dispatcher refreshing its cache when content is being republished and the CDN respecting cache expiration headers.
