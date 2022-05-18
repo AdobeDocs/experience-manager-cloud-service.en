@@ -136,7 +136,36 @@ Do the following to configure RESTful services:
 
 ### Form data model HTTP client configuration to optimize performance {#fdm-http-client-configuration}
 
-[!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source includes HTTP client configurations for performance optimization.
+[!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source includes HTTP client configurations for performance optimization. 
+
+Set the following properties of the **[!UICONTROL Form Data Model HTTP Client Configuration for REST data source]** configuration to specify the regular expression:
+
+* Use the `http.connection.max.per.route` property to set the maximum number of permitted connections between form data model and RESTful web services. The default value is 20 connections.
+
+* Use the `http.connection.max` property to specify the maximum number of permitted connections for each route. The default value is 40 connections.
+
+* Use the `http.connection.keep.alive.duration` property to specify the duration, for which a persistent HTTP connection is kept alive. The default value is 15 seconds.
+
+* Use the `http.connection.timeout` property to specify the duration, for which the [!DNL Experience Manager Forms] server waits for a connection to establish. The default value is 10 seconds.
+
+* Use the `http.socket.timeout` property to specify the maximum time period for inactivity between two data packets. The default value is 30 seconds.
+
+The following JSON file displays a sample:
+
+```json
+{   
+   "http.connection.keep.alive.duration":"15",   
+   "http.connection.max.per.route":"20",   
+   "http.connection.timeout":"10",   
+   "http.socket.timeout":"30",   
+   "http.connection.idle.connection.timeout":"15",   
+   "http.connection.max":"40" 
+} 
+```
+
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
+
+
 Perform the following steps to configure the form data model HTTP client:
 
 1. Log in to [!DNL Experience Manager Forms] Author Instance as an administrator and go to [!DNL Experience Manager] web console bundles. The default URL is [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
