@@ -40,15 +40,12 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### What is new in [!DNL Forms] {#what-is-new-forms}
+### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
 
-* **Communications - Document Manipulation APIs support in Forms as a Cloud Service SDK**: [Document Manipulation APIs](/help/forms/aem-forms-cloud-service-communications.md) help to combine, rearrange, and validate PDF documents. You can now use Communications - Document Generation APIs on a local development environment with the help of AEM Forms as a Cloud Service SDK.
+* **Integrate Adaptive Forms with Microsoft Power Automate**: You can now configure an Adaptive Form to run a Microsoft Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for process. It helps you build custom data capture experience while harnessing the power of Microsoft Power Automate to build business logics around captured data and automate customer workflows.
 
-* **Use custom XCI for generating a Document of Record**: You can now [use a custom XCI file to set various properties of a Document of Record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). It overrides the master XCI with the custom changes. It provides more control over the generation of Documents of Record, increasing personalization, and customization opportunities.
+* **Wizard to create an Adaptive Form**: You can use an all compassing Wizard to create an Adaptive Form. The Wizard provides step-by-step actions to select template, theme, components, and submit actions for an Adaptive Form. You can also use a JSON or XML schema to define the strcuture of an Adaptive Form. 
 
-* **Use invisible CAPTCHA in an adaptive form**: You can use the [invisible CAPTCHA to show the CAPTCHA challenge only in the case of a suspicious activity](/help/forms/captcha-adaptive-forms.md). If no suspicious activity is found the CAPTCHA challenge is not displayed. It helps assess human form completion without checkbox requirements, reduce customization efforts, and improve the end-user experience.
-
-* **Form Data Model Configurations**: You can now [reuse Form Data Model configurations across environments](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config), simplifying data integrations and reducing IT costs.
 
 ## CIF Add-on {#cloud-services-cif}
 
