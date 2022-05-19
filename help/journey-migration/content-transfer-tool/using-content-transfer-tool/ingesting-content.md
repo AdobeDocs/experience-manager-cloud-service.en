@@ -15,11 +15,47 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 
 Follow the steps below to ingest your migration set from the Content Transfer Tool:
    >[!NOTE]
-   >You can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) for more details. 
+   >You can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details. 
 
-1. Select a migration set from **Content Transfer** page and click **Ingest** to start ingestion. 
+1. Go to Cloud Acceleration Manager. Click on your project card and click on the Content Transfer card. Navigate to **Ingestion Jobs** and click on **New Ingestion** 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
+
+1. Provide the required information to create a new ingestion.
+
+   * Select the migration set that you just extracted as the Source
+   * Select the destination environment. This is where the content of the migration set will be ingested. Select the tier. (Author/Publish).
+
+   >[!NOTE]
+   >
+   >If the source was Author, it is recommended to ingest it into the Author tier on the target. Similarly, if source was Publish, target should be Publish as well.
+
+   >[!NOTE]
+   >
+   >You can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
+   > 
+   >If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later.
+
+   >[!IMPORTANT]
+   >
+   >You will be able to kick-off an ingestion to the destination environment only if you belong to the local **AEM administrators** group in the Cloud Service instance you are transferring content. If you don't belong to the AEM administrators group, you will see an error as shown below when you try to start an ingestion.
+   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam21.png)
+
+   >[!IMPORTANT]
+   >
+   >If the setting **Wipe** is enabled before ingestion, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group. You will need to be re-added to the administrators group in order to start an ingestion.
+
+1. Click on **Ingest**
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
+
+1. You can then monitor the Ingestion phase from the Ingestion Jobs list view
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
+
+1. Once Ingestion is completed, click on (i) button on the top right corner of the screen to get more information about the ingestion job. 
+
+<!-- Alexandru: hiding temporarily, until it's reviewed 
 
 1. The **Migration Set ingestion** dialog box displays. Content can be ingested to either Author instance or Publish instance at a time. Select the instance to ingest content to. Click on **Ingest** to start the ingestion phase. 
 
@@ -41,9 +77,13 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png) -->
 
 ## Top Up Ingestion {#top-up-ingestion-process}
+
+>[!CONTEXTUALHELP] id="aemcloud_ctt_ingestion_topup" title="Top Up Ingestion" 
+>abstract="Use the top up feature to move  modified content since the previous content transfer activity. Upon completion of Ingestion, check the logs for any error/warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe Customer Care." 
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="Viewing Logs"
 
 The Content Transfer Tool has a feature that supports differential content *top-up* where it is possible to transfer only changes made since the previous content transfer activity.
 
@@ -52,10 +92,9 @@ The Content Transfer Tool has a feature that supports differential content *top-
 
 Once the ingestion process is complete, you can use delta content, by using the top-up ingestion method. Follow the steps below:
 
-1. Navigate to the **Content Transfer** wizard and select the migration set for which you want to perform the top-up ingestion. Click **Ingest** to start the top-up extraction. 
+1. Create a new Ingestion Job and ensure that **Wipe** is disabled during the Ingestion phase
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/topup-ingest1.png)
-
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
 1. The **Migration Set ingestion** dialog box displays. 
 
