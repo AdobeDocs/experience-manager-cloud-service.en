@@ -44,8 +44,8 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 * **Integrate Adaptive Forms with Microsoft Power Automate**: You can now configure an Adaptive Form to run a Microsoft Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for process. It helps you build custom data capture experience while harnessing the power of Microsoft Power Automate to build business logics around captured data and automate customer workflows.
 
-* **Wizard to create an Adaptive Form**: You can use an all compassing Wizard to create an Adaptive Form. The Wizard provides step-by-step actions to select template, theme, components, and submit actions for an Adaptive Form. You can also use a JSON or XML schema to define the strcuture of an Adaptive Form. 
-
+* **Wizard to create an Adaptive Form**: You can use the all-encompassing Wizard to create an Adaptive Form. The Wizard provides step-by-step actions to select a template, theme, schema, components, and submit actions to create an Adaptive Form. It makes it easier to create a Adaptive Forms with all the essential options configured.
+ 
 
 ## CIF Add-on {#cloud-services-cif}
 
