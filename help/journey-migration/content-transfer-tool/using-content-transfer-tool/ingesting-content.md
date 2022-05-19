@@ -81,7 +81,8 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
 ## Top Up Ingestion {#top-up-ingestion-process}
 
->[!CONTEXTUALHELP] id="aemcloud_ctt_ingestion_topup" title="Top Up Ingestion" 
+>[!CONTEXTUALHELP] 
+>id="aemcloud_ctt_ingestion_topup" title="Top Up Ingestion" 
 >abstract="Use the top up feature to move  modified content since the previous content transfer activity. Upon completion of Ingestion, check the logs for any error/warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe Customer Care." 
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="Viewing Logs"
 
