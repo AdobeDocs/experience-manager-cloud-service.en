@@ -164,8 +164,8 @@ After all the parts of a binary file are uploaded, submit an HTTP POST request t
 | `versionLabel` | String | Optional | If a new version is created, the label associated with the new version of an asset . |
 | `versionComment` | String | Optional | If a new version is created, the comments associated with the version. |
 | `replace` | Boolean | Optional | If `True` and an asset with the specified name exists, [!DNL Experience Manager] deletes the asset then re-create it. |
-| `uploadDuration` | Number | Optional | The total amount of time, in milliseconds, it took for the file to upload in its entirety. If specified, will be included in the system's log files for transfer rate analysis. |
-| `fileSize` | Number | Optional | The size, in bytes, of the file. If specified, will be included in the system's log files for transfer rate analysis. |
+| `uploadDuration` | Number | Optional | The total amount of time, in milliseconds, for the file to upload in its entirety. If specified, the upload duration is included in the system's log files for transfer rate analysis. |
+| `fileSize` | Number | Optional | The size, in bytes, of the file. If specified, the file size is included in the system's log files for transfer rate analysis. |
 
 >[!NOTE]
 >
