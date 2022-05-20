@@ -1,10 +1,10 @@
 ---
-title: Running the Content Transfer Tool on a Publish Instance
+title: Running the Content Transfer Tool on a Publish Instance (Legacy)
 description: Running the Content Transfer Tool on a Publish Instance
 hide: yes
 hidefromtoc: yes
 ---
-# Running the Content Transfer Tool on a Publish Instance {#run-content-transfer-tool-publish-instance}
+# Running the Content Transfer Tool on a Publish Instance (Legacy) {#run-content-transfer-tool-publish-instance}
 
 ## Introduction {#introduction}
 

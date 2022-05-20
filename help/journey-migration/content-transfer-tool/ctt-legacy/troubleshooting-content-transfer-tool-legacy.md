@@ -1,10 +1,10 @@
 ---
-title: Troubleshooting Content Transfer Tool
+title: Troubleshooting Content Transfer Tool (Legacy)
 description: Troubleshooting Content Transfer Tool
 hide: yes
 hidefromtoc: yes
 ---
-# Troubleshooting Content Transfer Tool {#troubleshoot-content-transfer-tool}
+# Troubleshooting Content Transfer Tool (Legacy) {#troubleshoot-content-transfer-tool}
 
 
 ## Missing Blob IDs {#missing-blobs}

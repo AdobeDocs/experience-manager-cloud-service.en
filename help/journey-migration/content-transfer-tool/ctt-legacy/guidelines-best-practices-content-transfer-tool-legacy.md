@@ -1,10 +1,10 @@
 ---
-title: Guidelines and  Best Practices for using Content Transfer Tool
+title: Guidelines and  Best Practices for using Content Transfer Tool (Legacy)
 description: Guidelines and  Best Practices for using Content Transfer Tool
 hide: yes
 hidefromtoc: yes
 ---
-# Guidelines and  Best Practices for using Content Transfer Tool {#guidelines}
+# Guidelines and  Best Practices for using Content Transfer Tool (Legacy) {#guidelines}
 
 ## Guidelines and Best Practices {#best-practices}
 

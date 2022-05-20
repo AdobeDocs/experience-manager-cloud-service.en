@@ -1,10 +1,10 @@
 ---
-title: Prerequisites for Content Transfer Tool
+title: Prerequisites for Content Transfer Tool (Legacy)
 description: Prerequisites for Content Transfer Tool
 hide: yes
 hidefromtoc: yes
 ---
-# Prerequisites for Content Transfer Tool {#prerequisites}
+# Prerequisites for Content Transfer Tool (Legacy) {#prerequisites}
 
 The following table summarizes the prerequisites for using Content Transfer Tool. 
 

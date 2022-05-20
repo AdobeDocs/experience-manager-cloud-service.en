@@ -91,18 +91,13 @@ The Content Transfer Tool has a feature that supports differential content *top-
 >[!NOTE]
 >After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service.
 
-Once the ingestion process is complete, you can use delta content, by using the top-up ingestion method. Follow the steps below:
+Once the ingestion process is complete, to ingest the delta content you will need to run a [Top-Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) and then use the top-up ingestion method. 
 
-1. Create a new Ingestion Job and ensure that **Wipe** is disabled during the Ingestion phase
+You can do this by creating a new Ingestion Job and ensure that **Wipe** is disabled during the Ingestion phase, as shown below:
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
-1. The **Migration Set ingestion** dialog box displays. 
 
-    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/topup-ingest2.png)
-
-   >[!IMPORTANT]
-   >You should disable the **Wipe existing content on Cloud instance before ingestion** option, to prevent deleting the existing content from the previous ingestion activity. Additionally, click on **Customer Care** to log a ticket, as shown in the preceding figure.
 
 ## What's Next {#whats-next}
 

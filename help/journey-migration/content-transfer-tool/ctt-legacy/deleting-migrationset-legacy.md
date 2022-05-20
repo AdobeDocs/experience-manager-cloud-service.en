@@ -1,10 +1,10 @@
 ---
-title: Deleting a Migration Set in Content Transfer Tool
+title: Deleting a Migration Set in Content Transfer Tool (Legacy)
 description: Deleting a Migration Set in Content Transfer Tool
 hide: yes
 hidefromtoc: yes
 ---
-# Deleting a Migration Set {#delete-migration-set}
+# Deleting a Migration Set (Legacy) {#delete-migration-set}
 
 You can delete the migration set from the *Overview* page.
 

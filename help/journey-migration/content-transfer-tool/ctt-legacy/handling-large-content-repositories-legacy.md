@@ -1,10 +1,10 @@
 ---
-title: Handling Large Content Repositories
+title: Handling Large Content Repositories (Legacy)
 description: This section describes handling of large content repositories
 hide: yes
 hidefromtoc: yes
 ---
-# Handling Large Content Repositories {#handling-large-content-repositories}
+# Handling Large Content Repositories (Legacy) {#handling-large-content-repositories}
 
 ## Overview {#overview}
 

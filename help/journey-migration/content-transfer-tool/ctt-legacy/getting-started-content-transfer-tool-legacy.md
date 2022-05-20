@@ -1,10 +1,10 @@
 ---
-title: Getting Started with Content Transfer Tool
+title: Getting Started with Content Transfer Tool (Legacy)
 description: Getting Started with Content Transfer Tool
 hide: yes
 hidefromtoc: yes
 ---
-# Getting Started with Content Transfer Tool {#getting-started-content-transfer-tool}
+# Getting Started with Content Transfer Tool (Legacy) {#getting-started-content-transfer-tool}
 
 
 ## Availability {#availability}
