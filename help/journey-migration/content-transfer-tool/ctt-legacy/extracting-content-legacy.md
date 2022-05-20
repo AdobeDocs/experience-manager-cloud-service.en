@@ -1,10 +1,10 @@
 ---
-title: Extracting Content from Source
+title: Extracting Content from Source (Legacy)
 description: Extracting Content from Source
 hide: yes
 hidefromtoc: yes
 ---
-# Extracting Content from Source {#extracting-content}
+# Extracting Content from Source (Legacy) {#extracting-content}
 
 ## Extraction Process in Content Transfer Tool {#extraction-process}
 

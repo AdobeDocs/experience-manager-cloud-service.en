@@ -1,10 +1,10 @@
 ---
-title: Ingesting Content into Target
+title: Ingesting Content into Target (Legacy)
 description: Ingesting Content into Target
 hide: yes
 hidefromtoc: yes
 ---
-# Ingesting Content into Target {#ingesting-content}
+# Ingesting Content into Target (Legacy) {#ingesting-content}
 
 ## Ingestion Process in Content Transfer Tool {#ingestion-process}
 
