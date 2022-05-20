@@ -1,10 +1,10 @@
 ---
-title: Overview to Content Transfer Tool
+title: Overview to Content Transfer Tool (Legacy)
 description: Overview to Content Transfer Tool
 hide: yes
 hidefromtoc: yes
 ---
-# Overview {#overview-content-transfer-tool}
+# Content Transfer Tool Overview (Legacy) {#overview-content-transfer-tool}
 
 The Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. 
 

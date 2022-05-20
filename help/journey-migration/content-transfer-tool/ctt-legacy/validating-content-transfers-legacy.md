@@ -1,10 +1,10 @@
 ---
-title: Validating Content Transfers
+title: Validating Content Transfers (Legacy)
 description: Use the Content Transfer Tool to validate content transfers
 hide: yes
 hidefromtoc: yes
 ---
-# Validating Content Transfers {#validating-content-transfers}
+# Validating Content Transfers (Legacy) {#validating-content-transfers}
 
 ## Getting Started {#getting-started}
 

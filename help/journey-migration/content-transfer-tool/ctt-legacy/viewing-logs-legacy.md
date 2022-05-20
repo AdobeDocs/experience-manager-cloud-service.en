@@ -1,10 +1,10 @@
 ---
-title: Viewing Logs for a Migration Set in Content Transfer Tool
+title: Viewing Logs for a Migration Set in Content Transfer Tool (Legacy)
 description: Viewing Logs for a Migration Set in Content Transfer Tool
 hide: yes
 hidefromtoc: yes
 ---
-# Viewing Logs for a Migration Set {#view-logs-content-transfer-tool}
+# Viewing Logs for a Migration Set (Legacy) {#view-logs-content-transfer-tool}
 
 Upon completion of each step (extraction and ingestion) check the logs and look for errors.  Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe support.
 
