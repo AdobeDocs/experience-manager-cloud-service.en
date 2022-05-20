@@ -42,9 +42,11 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
 
-* **Integrate Adaptive Forms with Microsoft Power Automate**: You can now configure an Adaptive Form to run a Microsoft Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for process. It helps you build custom data capture experience while harnessing the power of Microsoft Power Automate to build business logics around captured data and automate customer workflows.
+* **Integrate Adaptive Forms with Microsoft® Power Automate**: You can now configure an Adaptive Form to run a Microsoft® Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft® Power Automate to build business logics around captured data and automate customer workflows.
 
-* **Wizard to create an Adaptive Form**: You can use the all-encompassing Wizard to create an Adaptive Form. The Wizard provides step-by-step actions to select a template, theme, schema, components, and submit actions to create an Adaptive Form. It makes it easier to create a Adaptive Forms with all the essential options configured.
+* **Wizard to create an Adaptive Form**: You can use business user friendly wizard to quickly author Adaptive Forms. The wizard provides a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form.
+
+    ![Wizard to create an Adaptive Form](/help/release-notes/assets/wizard.png)
  
 
 ## CIF Add-on {#cloud-services-cif}
