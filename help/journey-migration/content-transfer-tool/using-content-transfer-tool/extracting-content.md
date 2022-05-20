@@ -36,7 +36,7 @@ Follow the steps below to extract your migration set from the Content Transfer T
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png) 
 
    >[!NOTE]
-   >You have the option to overwrite staging container during the extraction phase.
+   >You have the option to overwrite the staging container during the extraction phase. If **Overwrite staging container** is disabled it can speed up extractions for subsequent migrations where the content paths or include versions settings have not changed. However, if the content paths or include versions settings have changed, then **Overwrite staging container** should be enabled.
 
    >[!IMPORTANT]
    >If the User Mapping has not been run on this migration set prior to extracting content from source, you will see a warning displaying that User Mapping step is pending, as shown in the figure above. Click on **Map Users** to run the User Mapping tool.
