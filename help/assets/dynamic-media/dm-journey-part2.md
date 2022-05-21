@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media Journey,  Part II
+title: Dynamic Media Journey, Part II
 description: The Dynamic Media Journey covers the basics of Dynamic Media, how it works, what it can do for you, and what value it brings to your work and your customers.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
