@@ -74,7 +74,9 @@ If desired, your company can opt out of network bandwidth optimization at the in
 >[!NOTE]
 >
 >DPR and network bandwidth values are based on the detected client-side values of the bundled CDN. These values are sometimes inaccurate. For example, iPhone5 with DPR=2 and iPhone12 with DPR=3, both show DPR=2. Still, for high-resolution devices, sending DPR=2 is better than sending DPR=1.
->To overcome this inaccuracy, you can [now use client-side DPR code with Smart Imaging to give you 100% accurate values](/help/assets/dynamic-media/client-side-dpr.md) for any device, whether it is Apple or any other new device that was launched.
+
+<!-- To overcome this inaccuracy, you can [now use client-side DPR code with Smart Imaging to give you 100% accurate values](/help/assets/dynamic-media/client-side-dpr.md) for any device, whether it is Apple or any other new device that was launched. -->
+
 
 Client-side DPR gives you 100% accurate values and works for any device, whether it is Apple or any other new device that was just launched.
 
