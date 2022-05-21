@@ -392,7 +392,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Invalidate the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
     + [Invalidate the CDN cache by way of Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
     + [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
-      + [Smart Imaging with client-side DPR](help/assets/dynamic-media/client-side-dpr.md)
     + [Deliver Dynamic Media assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
     + [Activate hotlink protection in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
     + [3D Support](/help/assets/dynamic-media/assets-3d.md)
