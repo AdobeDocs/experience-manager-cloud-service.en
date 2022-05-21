@@ -22,6 +22,7 @@ exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 If you are administering Dynamic Media, the following topics are of interest:
 
 * [Configure Dynamic Media](config-dm.md)
+* [Use Smart Imaging with client-side Device Pixel Ratio (dpr)](client-side-dpr.md)
 * [Manage Image Presets](managing-image-presets.md)
 * [Manage Viewer Presets](managing-viewer-presets.md)
 * [Troubleshoot Dynamic Media](troubleshoot-dm.md)
