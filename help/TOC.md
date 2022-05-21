@@ -335,6 +335,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Digital Rights Management for assets](/help/assets/drm.md)
     + [Watermark assets](/help/assets/watermark-assets.md)
     + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
+    + [Color tags for images](/help/assets/color-tag-images.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
