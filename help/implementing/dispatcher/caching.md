@@ -83,8 +83,26 @@ This can be useful, for example, when your business logic requires fine tuning o
 
 ### Images and any content large enough stored in blob storage {#images}
 
-* by default, not cached
-* can be set on a finer grained level by the following apache `mod_headers` directives:
+The default behavior changed for environments in a program with a program_id > 65000.
+
+#### If program_id > 65000
+The AEM apache layer will set cache headers depending on whether the cache header has already been set and also the value of the request type. Of note, if no cache control header has been set, public content is cached and authenticated traffic is set to private. If a cache control header has been set, the cache headers will be untouched. 
+
+| Cache control header exists? | request type  | AEM sets cache headers to                      |
+|------------------------------|---------------|------------------------------------------------|
+| No                           | public        | Cache-Control: public, max-age=600, immutable  |
+| No                           | authenticated | Cache-Control: private, max-age=600, immutable |
+| Yes                          | any           | unchanged                                      |
+
+While not recommendd, it is possible to change the behavior to be consistent with program_ids <= 65000 by setting the Cloud Manager environment variable AEM_BLOB_ENABLE_CACHING_HEADERS to false.
+
+#### If program_id <= 65000
+The AEM apache layer will not not cache this content by default.
+
+>[!NOTE]
+>It is possible and recommended to change the behavior to be consistent with program_ids > 65000, which can be done by setting the Cloud Manager environment variable AEM_BLOB_ENABLE_CACHING_HEADERS to true. If the program is already live, make sure to verify that with the changes, content behaves as you expect. 
+
+If AEM_BLOB_ENABLE_CACHING_HEADERS has not been set to true, in order to cache, headers must be explicitly set at a fine grain level with apache `mod_headers` directives such as:
 
    ```
       <LocationMatch "^/content/.*\.(jpeg|jpg)$">
