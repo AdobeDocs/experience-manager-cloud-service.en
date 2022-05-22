@@ -46,26 +46,6 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 Smart Imaging provides better image delivery performance by automatically optimizing image file size based on client browser in use, the device display & network conditions. Because images constitute most of a page's load time. As such, any performance improvement can have a profound impact on business KPIs such as higher conversion rates, time spent on a site, and lower site bounce rates.
 
 The newest key benefits of the latest Smart Imaging include the following:
-<<<<<<< Updated upstream
-
-* Now supports next generation AVIF format.
-* PNG to WebP and AVIF now supports lossy conversion. Because PNG is a lossless format, earlier WebP and AVIF being delivered were lossless.
-* Browser Format Conversion (`bfc`)
-* Device Pixel Ratio (`dpr`)
-* Network bandwidth (`network`)
-
-### Browser Format Conversion (bfc) {#bfc} 
-
-Turning on Browser Format Conversion by appending `bfc=on` to the image URL automatically converts JPEG and PNG to lossy AVIF, lossy WebP, lossy JPEGXR, lossy JPEG2000 for different browsers. For browsers that do not support those formats, Smart Imaging continues to serve the JPEG or PNG. Along with the format, the quality of the new format is re-calculated by Smart Imaging.
-
-Smart Imaging can also be turned off by appending `bfc=off` to the image's URL.
-
-See also [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) in the Dynamic Media Image Serving and Rendering API.
-
-### Device Pixel Ratio (dpr) {#dpr}
-
-Turning on Device Pixel Ration by appending `dpr=on` to the image URL automatically adjusts the requested image based on pixel density of the display that the request is being served from.
-=======
 
 * Now supports next generation AVIF format.
 * PNG to WebP and AVIF now supports lossy conversion. Because PNG is a lossless format, earlier WebP and AVIF being delivered were lossless.
@@ -82,30 +62,13 @@ Smart Imaging can also be turned off by appending `bfc=off` to the image's URL.
 See also [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) in the Dynamic Media Image Serving and Rendering API.
 
 ### About Device Pixel Ratio (dpr) optimization {#dpr}
->>>>>>> Stashed changes
 
-If there is already client-side logic to detect pixel density, you can override the dpr setting by explicitly defining the pixel density in the image URL. For example, if display has a pixel density of 2.0, the value can be sent to image by appending a dprValue greater than 0 to the image URL. For example:
+Device pixel ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device’s physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate.
 
-<<<<<<< Updated upstream
-`dpr=on,2.0`
-
-A specified dprValue of 1.5, 2, or 3 is typical.
-
-You can opt in or opt out of browser format conversion at the individual image level by appending `dpr=on` or `dpr=off` respectively, to the image's URL.
-
-<!-- Device pixel ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device’s physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate. -->
-
-<!-- Enabling Device Pixel Ratio optimization renders the image at the native resolution of the screen which makes it appear crisp.
- -->
-
-<!-- Currently, the pixel density of the display comes from Akamai CDN header values.
-
-=======
 Enabling Device Pixel Ratio optimization renders the image at the native resolution of the screen which makes it appear crisp.
 
 Currently, the pixel density of the display comes from Akamai CDN header values.
 
->>>>>>> Stashed changes
 | Permitted values in an image's URL | Description |
 |---|---|
 | `dpr=off` | Turn off DPR optimization at an individual image URL level.| 
@@ -116,18 +79,6 @@ Currently, the pixel density of the display comes from Akamai CDN header values.
 >* You can use `dpr=on,dprValue` even if the company level DPR setting as off.
 >* Owing to DPR optimization, when the resultant image is greater than the MaxPix Dynamic Media setting, MaxPix width is always recognized by maintaining the image's aspect ratio. -->
 
-<<<<<<< Updated upstream
-| Image size (requested) | Device Pixel Ratio (dpr) value | Image size (delivered) |
-|---|---|---|
-| 816 x 500 | 1 | 816 x 500 |
-| 816 x 500 | 1.5 | 1632 x 1000 |
-| 816 x 500 | 2 | 1632 x 1000 |
-| 816 x 500 | 2.5 | 2040 x 1250 |
-
-See also [When working with images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
-
-### Network Bandwidth {#network}
-=======
 | Requested image size | Device Pixel Ratio (dpr) value | Delivered image size |
 |---|---|---|
 | 816 x 500 | 1 | 816 x 500 |
@@ -136,31 +87,16 @@ See also [When working with images](/help/assets/dynamic-media/adding-dynamic-me
 See also [When working with images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
 ### About Network Bandwidth optimization {#network}
->>>>>>> Stashed changes
 
 Turning on Network Bandwidth automatically adjusts the image quality that is served based on actual network bandwidth. For poor network bandwidth, DPR (Device Pixel Ratio) optimization is automatically turned off, even if it is already on.
 
-You can opt in or opt out of browser format conversion at the individual image level by appending `network=on` or `network=off` respectively, to the image's URL.
+If desired, your company can opt out of network bandwidth optimization at the individual image level by appending `network=off` to the URL of the image.
 
-| Image (URL) | Image size (requested JPEG) | Image size (WebP) with Smart Imaging | Image size (Network = Poor) | Image size (Network = Good) | Image size (Network = Excellent) |
-|---|---|---|---|---|---|
-| [Image 1](https://staging.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | 75.52 KB | 55.17 KB | 37.51 KB | 41.28 KB | 55.17 KB |
-| [Image 2](https://staging.scene7.com//is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | 195.58 KB | 166.73 KB | 117.36 KB | 127.90 KB | 166.73 KB |  
-| [Image 3](https://staging.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | 98.95 KB | 83.61 KB | 55.89 KB | 61.74 KB | 83.61 KB |
-| [Image 4](https://staging.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | 323.37 KB | 305.80 KB | 226.57 KB | 244.96 KB | 305.80 KB |
-
-
-<!-- | Permitted value in the URL of an image | Description |
+| Permitted value in the URL of an image | Description |
 |---|---|
 | `network=off` | Turns off network optimization at an individual image URL level. |
 
-<<<<<<< Updated upstream
->[!NOTE]
->
->DPR and network bandwidth values are based on the detected client-side values of the bundled CDN. These values are sometimes inaccurate. For example, iPhone5 with DPR=2 and iPhone12 with DPR=3, both show DPR=2. Still, for high-resolution devices, sending DPR=2 is better than sending DPR=1. Coming soon: Adobe is working on client-side code to accurately determine an end user's DPR. -->
-=======
 DPR and network bandwidth values are based on the detected client-side values of the bundled CDN. These values are sometimes inaccurate. For example, iPhone5 with DPR=2 and iPhone12 with `dpr=3`, both show `dpr=2`. Still, for high-resolution devices, sending `dpr=2` is better than sending `dpr=1`. The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md).
->>>>>>> Stashed changes
 
 ### Additional key benefits of Smart Imaging
 
@@ -249,18 +185,7 @@ Your first custom domain is no additional cost with a Dynamic Media license.
 
 You initiate a request to use Smart Imaging; it is not automatically enabled.
 
-<<<<<<< Updated upstream
-By default, Smart Imaging AVIF optimization is disabled (turned off) for a Dynamic Media company account. If you want to enable (turn on) AVIF, create a support case as described below.
-
-To enable lossy conversion for PNG, you must also create a support ticket as described below.
-
->[!NOTE]
->
->AVIF support in Smart Imaging
->If the account is already enabled on Smart Imaging, AVIF support is automatically rolled out in a phased manner. If you want to prioritize the enablement of AVIF support, create a support ticket. 
-=======
 Create a support case as described below. In your support case, be sure you mention which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
->>>>>>> Stashed changes
 
 * WebP
 * AVIF
@@ -313,16 +238,11 @@ If you already have Smart Imaging enabled with WebP, but desire other new capabi
 
 ## When can I expect my account to be enabled with Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-1. After your account is configured with Smart Imaging, load a Dynamic Media Classic or Dynamic Media image URL in the browser.
-1. In Chrome, select **[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]** to open the Developer Tools pane. (Or, choose any browser developer tool of your own choice. The remaining step may differ slightly.)
-1. In Chrome, ensure that the browser cache is disabled when the Developer Tools pane is opened.
-    * On Windows, navigate to settings in the developer tool pane, then select Disable cache (while developer tools is open) checkbox.
-    * On Mac, in the Developer Tools pane, select **[!UICONTROL Settings]**. Under **[!UICONTROL Preferences]**, scroll to the **[!UICONTROL Network]** heading, then select the **[!UICONTROL Disable cache (while DevTools is open)]** checkbox.
-1. Observe that the Content Type is transformed to the appropriate format. The following screenshot shows a PNG image being converted dynamically to WebP in the Chrome browser.
+Requests are processed in the order in which they are received by Customer Support, according to the Wait List.
 
-   ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
-
-1. Repeat this test on different browsers and user conditions.
+>[!NOTE]
+>
+>There can be a long lead time because enabling Smart Imaging involves Adobe clearing the cache. Therefore, only a few customer transitions can be handled at any given time.
 
 ## What are the risks with switching over to use Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
@@ -350,38 +270,6 @@ During the initial transition, the non-cached images directly hit Adobe's origin
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
 ## How do I know the performance gain? Is there a way to know the benefits of Smart Imaging? {#benefits}
-<<<<<<< Updated upstream
-
-The Smart Imaging Header determines the benefits of Smart Imaging. When Smart Imaging is enabled, after you request an image, under the **[!UICONTROL Response Headers]** heading, you can see `-X-Adobe-Smart-Imaging` as seen in the following highlighted example:
-
-![Smart imaging header](/help/assets/dynamic-media/assets/smartimagingheader.png)
-
-This header tells you the following: 
-
-* Smart Imaging is working for the company.
-* A positive value means that the conversion is successful. In this case, a new WebP image is returned.
-* A negative value means that the conversion is not successful. In such case, the original requested image is returned (JPEG by default, if not specified).
-* A positive value shows the difference in bytes between the requested image and the new image. In the example above, the bytes saved is `75048` or approximately 75 KB for one image. 
-* A negative value means that the requested image is smaller than the new image. The negative size difference is shown, but the image served is the original requested image only.
-
->[!NOTE]
->
->**X-Adobe-Smart-Imaging = -1 with WebP being delivered**
->
->If the value of `X-Adobe-Smart-Imaging` is -1 and WebP is still being delivered, it means that Smart Imaging is working but the size benefits were not calculated due to old cache. You can use `cache=update` (one time only) in the image's URL to fix this issue. 
->An example of using the modifier:
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->To invalidate the entire cache, you must create a support ticket.
-
-## How can I disable AVIF optimization in Smart Imaging?{#disable-avif}
-
-If you want to switch back to serving WebP by default, create a support ticket for the same. As usual, you can turn off Smart Imaging by adding the parameter `bfc=off` to the image's URL. However, you cannot select WebP or AVIF in the URL modifier for Smart Imaging. This ability is maintained at your company account level.
-
-## Can Smart Imaging be turned off for any request?{#turning-off-smart-imaging}
-
-Yes. You can turn off Smart Imaging by adding any of the following modifiers:
-
-=======
 
 The Smart Imaging Header determines the benefits of Smart Imaging. When Smart Imaging is enabled, after you request an image, under the **[!UICONTROL Response Headers]** heading, you can see `-X-Adobe-Smart-Imaging` as seen in the following highlighted example:
 
@@ -412,7 +300,6 @@ If you want to switch back to serving WebP by default, create a support case for
 
 Yes. You can turn off Smart Imaging by adding any of the following modifiers:
 
->>>>>>> Stashed changes
 * `bfc=off` to turn off Browser Format Conversion. See also [Browser Format Conversion](#bfc).
 * `dpr=off` to turn off Device Pixel Ratio. See also [Device Pixel Ratio](#dpr).
 * `network=off` to turn off network bandwidth. See also [Network Bandwidth](#network).
@@ -463,23 +350,9 @@ This functionality works for JPEG and PNG only.
 
 Smart Imaging determines if the conversion is beneficial or not. It returns the new image only of the conversion is beneficial.
 
-<<<<<<< Updated upstream
-## Smart Imaging is already enabled for my company. But I do not see AVIF being delivered. {#avif-delivery}
-
-If the account is already enabled on Smart Imaging, AVIF support is automatically rolled out in a phased manner. If you want to prioritize the enablement of AVIF support, create a support ticket. 
-
-## Why does Device Pixel Ratio (dpr) functionality not work as expected with composite images? {#composite-images}
-
-If a composite image involves too many layers, dpr functionality may be impacted while using a position modifier. This issue is known and will be fixed in future releases of Smart Imaging. If other Smart Imaging functionality is not working as expected, you can create a support ticket to report the issue.
-=======
-## Smart Imaging is already enabled for my company, but I do not see AVIF being delivered. {#avif-delivery}
-
-You must create a support case to have AVIF enabled on your account. 
-
 ## Why does Device Pixel Ratio (dpr) functionality not work as expected with composite images? {#composite-images}
 
 If a composite image involves too many layers, dpr functionality may be impacted while using a position modifier. This issue is known and will be fixed in future releases of Smart Imaging. If other Smart Imaging functionality is not working as expected, you can create a support case to report the issue.
->>>>>>> Stashed changes
 
 ## Why does Smart Imaging PNG still convert to lossless WebP/AVIF? {#convert-to-lossless}
 
@@ -487,11 +360,7 @@ Because PNG is a lossless format, earlier WebP and AVIF being delivered were los
 
 `https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
 
-<<<<<<< Updated upstream
-To invalidate the entire cache, you must create a support ticket requesting such effort.
-=======
 To invalidate the entire cache, you must create a support case requesting such effort.
->>>>>>> Stashed changes
 
 ## How can I continue using PNG to lossless conversion in Smart Imaging? {#continue-using}
 
