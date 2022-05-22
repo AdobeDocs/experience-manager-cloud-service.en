@@ -140,8 +140,6 @@ The following image formats are supported for Smart Imaging:
 * JPEG
 * PNG
 
-For any other format mentioned in a URL, you should turn off Browser Format Conversion. Append modifier `bfc=off` to the image's URL for file formats other than JPEG and PNG. Device Pixel Ratio (`dpr=`) and Network bandwidth (`network=`) continue to work if enabled. 
-
 For JPEG image file format, the quality of the new format is re-calculated by Smart Imaging.
 
 For image file formats that support transparency like PNG, you can configure Smart Imaging to deliver lossy AVIF and WebP. For the lossy format conversion, Smart Imaging uses the quality mentioned in the image's URL, or else the quality configured in the Dynamic Media company account.
