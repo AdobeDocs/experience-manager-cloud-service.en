@@ -43,7 +43,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 ## What are the key benefits of the latest Smart Imaging? {#what-are-the-key-benefits-of-smart-imaging}
 
-Smart Imaging provides better image delivery performance by automatically optimizing image file size based on client browser in use, the device display & network conditions. Because images constitute most of a page's load time. As such, any performance improvement can have a profound impact on business KPIs such as higher conversion rates, time spent on a site, and lower site bounce rates.
+Smart Imaging provides better image delivery performance by automatically optimizing image file size based on client browser in use, the device display & network conditions. Because images constitute most of a page's load time, any performance improvement can have a profound impact on business KPIs such as higher conversion rates, time spent on a site, and lower site bounce rates.
 
 The newest key benefits of the latest Smart Imaging include the following:
 
@@ -63,7 +63,7 @@ See also [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-r
 
 ### About Device Pixel Ratio (dpr) optimization {#dpr}
 
-Device pixel ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device’s physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate.
+Device Pixel Ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device’s physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate.
 
 Enabling Device Pixel Ratio optimization renders the image at the native resolution of the screen which makes it appear crisp.
 
