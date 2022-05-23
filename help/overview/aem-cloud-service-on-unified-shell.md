@@ -21,7 +21,7 @@ The benefits of this are:
 * Single Sign-On across all Experience Cloud applications
 * Easy switching between organizations or switching to a different application
 * Improved product help
-* Easy in-product Feeback button to report issues or share ideas with Adobe
+* Easy in-product feedback button to report issues or share ideas with Adobe
 * Access to global product announcements and notifications in addition to notifications specific AEM as a Cloud Service
 
 ## Disabling Unified Shell {#disabling-unified-shell}
@@ -53,11 +53,11 @@ To change to the dark theme, click on your profile icon. This will display a pop
 
 ## Accessing the AEM Inbox {#accessing-the-aem-inbox}
 
-The AEM inbox can be accessed by clicking on the bell icon in the unified shell. 
+The AEM Inbox can be accessed by clicking on the bell icon in the unified shell. 
 
 >[!INFO]
 >
-> The number indicated on the bell icon includes unread notifications across all solutions within that IMS Org and tasks listed in the AEM inbox.
+> The number indicated on the bell icon includes unread notifications across all solutions within that IMS Org and tasks listed in the AEM Inbox.
 
 ![image](/help/overview/assets/unifiedshell5.png)
 
