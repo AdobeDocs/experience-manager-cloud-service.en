@@ -251,7 +251,7 @@ Note that `%3B` is the UTF-8 encoding for `;` and `%3D` is the encoding for `=`.
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
-For use by an application, any special characters used when constructing query variables (i.e semicolons (`;`), equal sign (`=`), slashes `/`, etc....) must be converted to use the corresponding UTF-8 encoding.
+For use by an application, any special characters used when constructing query variables (i.e semicolons (`;`), equal sign (`=`), slashes `/`) must be converted to use the corresponding UTF-8 encoding.
 
 For example:
 
