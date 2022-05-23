@@ -13,7 +13,7 @@ Device detection capabilities &ndash; DPR based on user agent strings &ndash; ar
 
 Client-side DPR gives you 100% accurate values and works for any device, whether it is Apple or any other new device that was launched.
 
-See also [About network bandwidth optimization](/help/assets/dynamic-media/imaging-faq.md#network-bandwidth-optimization).
+<!-- See also [About network bandwidth optimization](/help/assets/dynamic-media/imaging-faq.md#network-bandwidth-optimization). -->
 
 ## Use the client-side DPR code
 
@@ -54,6 +54,15 @@ See also [About network bandwidth optimization](/help/assets/dynamic-media/imagi
     Adobe recommends that you load these scripts _before_ any other scripts in the HTML page.
     Adobe also recommends that you Bootstrap your app under diff HTML tag rather than a body element. The reason is because `dprImageInjection.js` dynamically injects the image tag at the top of the body section in the HTML page.
 
-## Script file download {#client-side-dpr-script}
+## JavaScript files download {#client-side-dpr-script}
 
-[Get file](/help/assets/dynamic-media/assets/aem-dynamicmedia-smartimaging-dpr.zip)
+>[!IMPORTANT]
+>
+>The following JavaScript files in the download
+>* `dprImageInjection.js`
+>* `srvinit.js`
+>* `srvwrk.js`
+>
+>are provided to you as an example reference only. If you intend to use these files in HTML pages, be sure you edit each file's code to fit your own requirements.
+
+[Download the files](/help/assets/dynamic-media/assets/aem-dynamicmedia-smartimaging-dpr.zip)
