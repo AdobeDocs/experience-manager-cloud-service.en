@@ -113,14 +113,6 @@ The AEM layer will not  cache blob content by default.
 
 >[!NOTE]
 >It is possible and recommended to change the behavior to be consistent with the new behaviors (program_ids > 65000) by setting the Cloud Manager environment variable AEM_BLOB_ENABLE_CACHING_HEADERS to true. If the program is already live, make sure to verify that with the changes, content behaves as you expect. 
-
-   It is necessary to ensure that a file under `src/conf.dispatcher.d/`cache has the following rule (which is in the default configuration):
-
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-
-   ```
    
    >[!NOTE]
    >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
