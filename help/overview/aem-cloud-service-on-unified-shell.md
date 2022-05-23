@@ -6,7 +6,6 @@ description: AEM as a Cloud Service on Unified Shell
 # AEM as a Cloud Service on Unified Shell {#aem-as-a-cloud-service-on-unified-shell}
 
 >[!NOTE]
->
 >This feature is in the Prerelease Channel for May, 2022. 
 >
 >This is meant as an introduction to a new feature which will be Generally Available in the June 2022 release. 
@@ -30,7 +29,6 @@ The benefits of this are:
 Out of the box, AEM as a Cloud Service has unified shell enabled. However, in case the top-header has been customized, it is recommended to disable unified shell to avoid any issues with the customizations. To disable unified shell, follow the steps below:
 
 >[!NOTE]
->
 >Unified Shell can be disabled only by an account with administrative privilegedges.
 
 1. Go to **Tools - Cloud Services**. 
