@@ -83,26 +83,9 @@ This can be useful, for example, when your business logic requires fine tuning o
 
 ### Images and any content large enough stored in blob storage {#images}
 
-The default behavior changed for environments in a program with a program_id > 65000.
+The default behavior for programs created after mid-May 2022 (specifically, for program ids > 65000) is to cache by default, while also respecting the request's authentication context. Older programs(program ids <= 65000) do not cache blob content by default.
 
-#### If program_id > 65000
-The AEM apache layer will set cache headers depending on whether the cache header has already been set and also the value of the request type. Of note, if no cache control header has been set, public content is cached and authenticated traffic is set to private. If a cache control header has been set, the cache headers will be untouched. 
-
-| Cache control header exists? | request type  | AEM sets cache headers to                      |
-|------------------------------|---------------|------------------------------------------------|
-| No                           | public        | Cache-Control: public, max-age=600, immutable  |
-| No                           | authenticated | Cache-Control: private, max-age=600, immutable |
-| Yes                          | any           | unchanged                                      |
-
-While not recommendd, it is possible to change the behavior to be consistent with program_ids <= 65000 by setting the Cloud Manager environment variable AEM_BLOB_ENABLE_CACHING_HEADERS to false.
-
-#### If program_id <= 65000
-The AEM apache layer will not not cache this content by default.
-
->[!NOTE]
->It is possible and recommended to change the behavior to be consistent with program_ids > 65000, which can be done by setting the Cloud Manager environment variable AEM_BLOB_ENABLE_CACHING_HEADERS to true. If the program is already live, make sure to verify that with the changes, content behaves as you expect. 
-
-If AEM_BLOB_ENABLE_CACHING_HEADERS has not been set to true, in order to cache, headers must be explicitly set at a fine grain level with apache `mod_headers` directives such as:
+In both cases, caching headers can be overridden on a finer grained level at the apache/dispatcher layer using the apache `mod_headers` directives such as:
 
    ```
       <LocationMatch "^/content/.*\.(jpeg|jpg)$">
@@ -112,7 +95,24 @@ If AEM_BLOB_ENABLE_CACHING_HEADERS has not been set to true, in order to cache, 
 
    ```
 
-   See the discussion in the html/text section above for exercising caution to not cache too widely and also how to force AEM to always apply caching with the "always" option.
+When modifying the caching headers at the dispatcher layer, exercise caution to not cache too widely (see the discussion in the html/text section above). Also, make sure that assets meant to be kept private rather than cached are not part of the LocationMatch directive filters.
+
+#### New default caching behavior
+The AEM  layer will set cache headers depending on whether the cache header has already been set and also the value of the request type. Of note, if no cache control header has been set, public content is cached and authenticated traffic is set to private. If a cache control header has been set, the cache headers will be untouched. 
+
+| Cache control header exists? | request type  | AEM sets cache headers to                      |
+|------------------------------|---------------|------------------------------------------------|
+| No                           | public        | Cache-Control: public, max-age=600, immutable  |
+| No                           | authenticated | Cache-Control: private, max-age=600, immutable |
+| Yes                          | any           | unchanged                                      |
+
+While not recommended, it is possible to change the default behavior to follow the older behavior (program_ids <= 65000) by setting the Cloud Manager environment variable AEM_BLOB_ENABLE_CACHING_HEADERS to false.
+
+#### Older default caching behavior
+The AEM layer will not  cache blob content by default.
+
+>[!NOTE]
+>It is possible and recommended to change the behavior to be consistent with the new behaviors (program_ids > 65000) by setting the Cloud Manager environment variable AEM_BLOB_ENABLE_CACHING_HEADERS to true. If the program is already live, make sure to verify that with the changes, content behaves as you expect. 
 
    It is necessary to ensure that a file under `src/conf.dispatcher.d/`cache has the following rule (which is in the default configuration):
 
@@ -121,9 +121,7 @@ If AEM_BLOB_ENABLE_CACHING_HEADERS has not been set to true, in order to cache, 
    { /glob "*" /type "allow" }
 
    ```
-
-   Make sure that assets meant to be kept private rather than cached are not part of the LocationMatch directive filters.
-
+   
    >[!NOTE]
    >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
 
