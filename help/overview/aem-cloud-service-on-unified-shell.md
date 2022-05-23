@@ -47,7 +47,7 @@ Out of the box, AEM as a Cloud Service has unified shell enabled. However, in ca
 
 To change to the dark theme, click on your profile icon. This will display a pop-over as shown below. You can use the toggle to switch to a dark theme for the Unified Shell.
 
->[INFO]
+>[!INFO]
 >
 >The dark theme applies to Unified Shell (the top bar) only.
 
