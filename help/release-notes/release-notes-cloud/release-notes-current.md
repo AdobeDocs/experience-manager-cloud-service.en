@@ -30,7 +30,6 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### New features in [!DNL Sites] {#sites-features}
 
-* Content model data types can now be defined as [translatable](/help/assets/content-fragments/content-fragments-models.md#properties) using a simple checkbox in the content model editor. Additionally, AEM translation rules and configurations are automatically updated.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -48,7 +47,6 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 
     ![Wizard to create an Adaptive Form](/help/release-notes/assets/wizard.png)
  
-
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
@@ -62,16 +60,6 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
     ![Sites editor shortcut to product cockpit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### SDK Build Analyzers {#sdk-build-analyzers}
-
-The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a maven project, including missing dependencies. It gives developers an opportunity to discover issues during local development, well before deploying to Cloud environments with Cloud Manager. 
-
-A new analyzer has been recently added:
-
-* `content-packages-validation` - validates for well formed content syntax and structure for packages that will be installed during deployment
-
-It is strongly recommended to update your maven project with the latest version of the analyzer or include the analyzer if you haven't yet done so. For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html).
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Security {#foundation-security}
 
