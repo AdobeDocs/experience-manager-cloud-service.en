@@ -50,18 +50,20 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 * **Wizard to create an Adaptive Form**: You can use business user friendly wizard to quickly author Adaptive Forms. The wizard provides a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form.
 
     ![Wizard to create an Adaptive Form](/help/release-notes/assets/wizard.png)
- 
+
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
 
-* Quick access to product cockpit: Easily access full detailed product information with one-click in Sites Editor
+* Improved compatibility and robustness for 3rd party connectors on I/O Runtime
 
-    ![Enable wishlist](/help/assets/CIF/enable-wishlist.png)
+* Improved support for GQL Client configuration overwrites (e.g. set custom caching behavior)
 
-* Support for additional marketing commerce components:  Components can be configured to show an add-to-cart and add-to-wishlist call-to-action
+### Bug fixes {#bug-fixes-cif}
 
-    ![Sites editor shortcut to product cockpit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+* Multi value product picker field shows 2nd and additional products as invalid
+
+* Product Picker is occassionally hidden behind components
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
