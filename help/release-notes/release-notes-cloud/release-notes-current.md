@@ -30,6 +30,10 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### New features in [!DNL Sites] {#sites-features}
 
+### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
+
+* Various GraphQL functionalities
+* A new console optimized for Headless use of Content Fragments
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
