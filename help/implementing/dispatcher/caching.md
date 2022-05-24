@@ -83,9 +83,9 @@ This can be useful, for example, when your business logic requires fine tuning o
 
 ### Images and any content large enough stored in blob storage {#images}
 
-The default behavior for programs created after mid-May 2022 (specifically, for program ids > 65000) is to cache by default, while also respecting the request's authentication context. Older programs(program ids <= 65000) do not cache blob content by default.
+The default behavior for programs created after mid-May 2022 (specifically, for program ids > 65000) is to cache by default, while also respecting the request's authentication context. Older programs (program ids <= 65000) do not cache blob content by default.
 
-In both cases, caching headers can be overridden on a finer grained level at the apache/dispatcher layer using the apache `mod_headers` directives such as:
+In both cases, caching headers can be overridden on a finer grained level at the apache/dispatcher layer by using apache `mod_headers` directives such as:
 
    ```
       <LocationMatch "^/content/.*\.(jpeg|jpg)$">
