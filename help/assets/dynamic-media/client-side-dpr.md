@@ -59,6 +59,7 @@ Client-side DPR gives you 100% accurate values and works for any device, whether
 >[!IMPORTANT]
 >
 >The following JavaScript files in the download
+>
 >* `dprImageInjection.js`
 >* `srvinit.js`
 >* `srvwrk.js`
