@@ -56,14 +56,14 @@ Client-side DPR gives you 100% accurate values and works for any device, whether
 
 ## JavaScript files download {#client-side-dpr-script}
 
->[!IMPORTANT]
->
->The following JavaScript files in the download
->
->* `dprImageInjection.js`
->* `srvinit.js`
->* `srvwrk.js`
->
->are provided to you as an example reference only. If you intend to use these files in HTML pages, be sure you edit each file's code to fit your own requirements.
+The following JavaScript files in the download are provided to you as an example reference only. If you intend to use these files in HTML pages, be sure you edit each file's code to fit your own requirements.
 
-[Download the files](/help/assets/dynamic-media/assets/aem-dynamicmedia-smartimaging-dpr.zip)
+* `dprImageInjection.js`
+* `srvinit.js`
+* `srvwrk.js`
+
+[JavaScript files download](/help/assets/dynamic-media/assets/aem-dynamicmedia-smartimaging-dpr.zip)
+
+>[!MORELIKETHIS]
+>
+>* [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
