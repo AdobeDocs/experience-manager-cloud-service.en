@@ -7,12 +7,6 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 
 Learn how to use the GraphQL API for headless delivery of Content Fragment content and AEM's Assets REST API to manage Content Fragments.
 
->[!NOTE]
->
->Some of the functionality of this feature is available in the prerelease channel. In particular, functionality related to Persisted Queries.
-> 
->See the [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable the feature for your environment.
-
 ## What are GraphQL and Assets REST APIs? {#what-are-the-apis}
 
 [Now that you have created some content fragments,](create-content-fragment.md) you can use AEM's APIs to deliver them headlessly.
