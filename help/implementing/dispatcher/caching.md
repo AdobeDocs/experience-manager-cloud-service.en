@@ -97,8 +97,9 @@ In both cases, caching headers can be overridden on a finer grained level at the
 
 When modifying the caching headers at the dispatcher layer, exercise caution to not cache too widely (see the discussion in the html/text section above). Also, make sure that assets meant to be kept private rather than cached are not part of the LocationMatch directive filters.
 
-#### New default caching behavior
-The AEM  layer will set cache headers depending on whether the cache header has already been set and also the value of the request type. Of note, if no cache control header has been set, public content is cached and authenticated traffic is set to private. If a cache control header has been set, the cache headers will be untouched. 
+#### New default caching behavior {#new-caching-behavior}
+
+The AEM  layer will set cache headers depending on whether the cache header has already been set and also the value of the request type. Of note, if no cache control header has been set, public content is cached and authenticated traffic is set to private. If a cache control header has been set, the cache headers will be untouched.
 
 | Cache control header exists? | request type  | AEM sets cache headers to                      |
 |------------------------------|---------------|------------------------------------------------|
@@ -108,7 +109,8 @@ The AEM  layer will set cache headers depending on whether the cache header has 
 
 While not recommended, it is possible to change the default behavior to follow the older behavior (program_ids <= 65000) by setting the Cloud Manager environment variable AEM_BLOB_ENABLE_CACHING_HEADERS to false.
 
-#### Older default caching behavior
+#### Older default caching behavior {#old-caching-behavior}
+
 The AEM layer will not  cache blob content by default.
 
 >[!NOTE]
