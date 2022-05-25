@@ -43,12 +43,6 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 * Dynamic Media Smart Imaging now supports AVIF file format
 
-## [!DNL Experience Manager Assets] as a [!DNL Asset Essentials] {#assets}
-
-### New features in [!DNL Asset Essentials] {#assets-features}
-
-*  Assets Essentials Administrators now have the capability to run a report on Downloads as well as view live dashboard visualizations of aggregated data over the last 30 days or 12 months to understand usage in the DAM.
-
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
