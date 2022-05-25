@@ -95,7 +95,7 @@ In both cases, the caching headers can be overridden on a finer grained level at
 
    ```
 
-When modifying the caching headers at the dispatcher layer, please be cautious to not cache too widely (see the discussion in the HTML/text section [above](#html-text)). Also, make sure that assets that are meant to be kept private rather than cached are not part of the `LocationMatch` directive filters.
+When modifying the caching headers at the dispatcher layer, please be cautious not to cache too widely, see the discussion in the HTML/text section [above](#html-text)). Also, make sure that assets that are meant to be kept private (rather than cached) are not part of the `LocationMatch` directive filters.
 
 #### New default caching behavior {#new-caching-behavior}
 
@@ -114,7 +114,7 @@ While not recommended, it is possible to change the new default behavior to foll
 The AEM layer will not cache blob content by default.
 
 >[!NOTE]
->It is recommended to change the older default behavior to be consistent with the new behavior (for program ids that are higher than 65000) by setting the Cloud Manager environment variable AEM_BLOB_ENABLE_CACHING_HEADERS to true. If the program is already live, make sure you verify that after the changes, content behaves as you expect.
+>It is recommended to change the older default behavior to be consistent with the new behavior (program ids that are higher than 65000) by setting the Cloud Manager environment variable AEM_BLOB_ENABLE_CACHING_HEADERS to true. If the program is already live, make sure you verify that after the changes, content behaves as you expect.
 
 >[!NOTE]
 >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override the values.
