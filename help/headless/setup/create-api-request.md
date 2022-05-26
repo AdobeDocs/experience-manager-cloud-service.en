@@ -17,7 +17,7 @@ Learn how to use the GraphQL API for headless delivery of Content Fragment conte
 
 The remainder of this guide will focus on GraphQL access and Content Fragment delivery.
 
-## Enable GraphQL Endpoint
+## Enable GraphQL Endpoint {#enable-graphql-endpoint}
 
 Before the GraphQL APIs can be used, a GraphQL endpoint must be created.
 
@@ -39,7 +39,7 @@ More details about enabling [GraphQL endpoints can be found here](/help/headless
 
 Information architects will need to design queries for their channel endpoints in order to deliver content. These queries will generally only need to be considered once per endpoint per model. For the purposes of this getting started guide we will only need to create one.
 
-GraphiQL is an IDE that can be installed on an AEM environment. Follow the steps on [Using the GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) to install on your AEM environment. 
+GraphiQL is an IDE, included in your AEM environment; it is accessible/visible after you [configure your endpoints](#enable-graphql-endpoint). 
 
 1. Log into AEM as a Cloud Service and access the GraphiQL interface:
 
