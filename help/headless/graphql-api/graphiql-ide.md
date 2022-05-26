@@ -10,12 +10,6 @@ An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-o
 
 >[!NOTE]
 >
->Some of the functionality of this feature is available in the prerelease channel. In particular, functionality related to Persisted Queries.
-> 
->See the [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable the feature for your environment.
-
->[!NOTE]
->
 >GraphiQL is included in AEM, but by default it is only enabled on the `dev-authors` environments.
 
 >[!NOTE]

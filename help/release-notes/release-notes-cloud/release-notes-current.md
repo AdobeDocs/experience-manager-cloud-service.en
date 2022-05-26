@@ -30,13 +30,19 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### New features in [!DNL Sites] {#sites-features}
 
-* Content model data types can now be defined as [translatable](/help/assets/content-fragments/content-fragments-models.md#properties) using a simple checkbox in the content model editor. Additionally, AEM translation rules and configurations are automatically updated.
+### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
+
+* Various GraphQL functionalities
+* A new console optimized for Headless use of Content Fragments
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
 
 * You can now [sort tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) in the tag picker window in ascending or descending order based on the tag name, date of creation, or date of modification.
+
+* Dynamic Media Smart Imaging now supports AVIF file format
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -47,31 +53,22 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 * **Wizard to create an Adaptive Form**: You can use business user friendly wizard to quickly author Adaptive Forms. The wizard provides a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form.
 
     ![Wizard to create an Adaptive Form](/help/release-notes/assets/wizard.png)
- 
 
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
 
-* Quick access to product cockpit: Easily access full detailed product information with one-click in Sites Editor
+* Improved compatibility and robustness for 3rd party connectors on I/O Runtime
 
-    ![Enable wishlist](/help/assets/CIF/enable-wishlist.png)
+* Improved support for GQL Client configuration overwrites (e.g. set custom caching behavior)
 
-* Support for additional marketing commerce components:  Components can be configured to show an add-to-cart and add-to-wishlist call-to-action
+### Bug fixes {#bug-fixes-cif}
 
-    ![Sites editor shortcut to product cockpit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+* Multi value product picker field shows 2nd and additional products as invalid
+
+* Product Picker is occassionally hidden behind components
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### SDK Build Analyzers {#sdk-build-analyzers}
-
-The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a maven project, including missing dependencies. It gives developers an opportunity to discover issues during local development, well before deploying to Cloud environments with Cloud Manager. 
-
-A new analyzer has been recently added:
-
-* `content-packages-validation` - validates for well formed content syntax and structure for packages that will be installed during deployment
-
-It is strongly recommended to update your maven project with the latest version of the analyzer or include the analyzer if you haven't yet done so. For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html).
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Security {#foundation-security}
 
