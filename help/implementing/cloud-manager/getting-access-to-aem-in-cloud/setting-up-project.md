@@ -137,7 +137,7 @@ As an example, let's say that the repository is at `https://repository.myco.com/
            <server>
                <id>myco-repository</id>
                <username>cloudmanager</username>
-              <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+              <password>${secret.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
            </server>
        </servers>
    </settings>
