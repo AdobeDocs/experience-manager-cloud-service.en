@@ -41,7 +41,7 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 * You can now [sort tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) in the tag picker window in ascending or descending order based on the tag name, date of creation, or date of modification.
 
-* Dynamic Media Smart Imaging now supports AVIF file format
+* [Dynamic Media Smart Imaging](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) now supports AVIF file format
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
