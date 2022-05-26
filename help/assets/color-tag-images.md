@@ -5,6 +5,8 @@ description: Experience Manager Assets enables you to distinguish between colors
 
 # Color tags for images {#color-tag-images}
 
+![Color Tagging Banner](assets/banner-image.png)
+
 Experience Manager Assets uses Adobe Sensei AI capabilities to distinguish between colors in an image and apply those as tags automatically on ingestion. These tags enable enhanced Search experience, based on image color composition. 
 
 You can configure the number of colors, within a range of one to forty, that are tagged to an image so that you can search for images based on those colors later. Experience Manager Assets applies the tags based on the color coverage in an image. You can also configure the display format for a color tag.
@@ -19,7 +21,7 @@ The following figure illustrates the sequence of tasks that you perform to confi
 
 ## Supported file formats {#supported-file-formats-color-tags}
 
-|File format |Extension (case-sensitive) | MIME type |Input Colorspace |Maximum supported source file size |Maximum supported file size resolution|
+|File format |Extension | MIME type |Input Colorspace |Maximum supported source file size |Maximum supported file size resolution|
 |---|---|---|---|---|---|
 | JPEG |.jpg, .jpeg|image/jpeg |sRGB|15GB |20000px X 20000px | 
 | PNG |.png|image/png |sRGB |15GB |20000px X 20000px |
@@ -28,13 +30,13 @@ The following figure illustrates the sequence of tasks that you perform to confi
 | GIF |.gif|image/gif|sRGB|15GB|20000px X 20000px|
 | BMP |.bmp|image/bmp |sRGB|4GB (limited by format specifications)|20000px X 20000px|
 
-## Manage color tagging properties {#manage-color-tagging-settings}
+## Manage color tagging properties {#manage-color-tagging-properties}
 
-To manage the color tagging settings for images:
+To manage the color tagging properties for images:
 
    1. Navigate to **[!UICONTROL Tools > Assets > Color Tagging]**.
 
-      ![Color Tagging Settings](assets/color-tag-settings.png)
+      ![Color Tagging Properties](assets/color-tag-settings.png)
 
    1. Specify a display format for the color tag in the **[!UICONTROL Display Format]** field. The possible options include the color name, RGB, or HEX format.
 
@@ -141,7 +143,7 @@ To configure the search filter:
 
 >[!VIDEO](https://video.tv.adobe.com/v/340761)
 
-After configuring all color tagging settings and [configuring Assets color predicate](#search-images-based-on-colors), you can search images based on a color as a filter.
+After configuring all color tagging properties and [configuring Assets color predicate](#search-images-based-on-colors), you can search images based on a color as a filter.
 
 To search images based on colors:
 
