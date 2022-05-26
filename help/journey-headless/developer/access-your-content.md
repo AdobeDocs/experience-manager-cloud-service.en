@@ -238,11 +238,8 @@ Before starting with queries on your content you need to:
 * Enable your endpoint
   * Use Tools -> General -> GraphQL
   * [Enabling your GraphQL Endpoint](/help/headless/graphql-api/graphql-endpoint.md)
+    * This will also enable the GraphiQL IDE.
   
-* Install GraphiQL (if required)
-  * Installed as a dedicated package
-  * [Installing the AEM GraphiQL interface](/help/headless/graphql-api/graphiql-ide.md)
-
 ### Sample Structure {#sample-structure}
 
 To actually use the AEM GraphQL API in a query, we can use the two very basic Content Fragment Model structures:
