@@ -95,7 +95,7 @@ In both cases, the caching headers can be overridden on a finer grained level at
 
    ```
 
-When modifying the caching headers at the dispatcher layer, please be cautious not to cache too widely, see the discussion in the HTML/text section [above](#html-text)). Also, make sure that assets that are meant to be kept private (rather than cached) are not part of the `LocationMatch` directive filters.
+When modifying the caching headers at the dispatcher layer, please be cautious not to cache too widely, see the discussion in the HTML/text section [above](#html-text). Also, make sure that assets that are meant to be kept private (rather than cached) are not part of the `LocationMatch` directive filters.
 
 #### New default caching behavior {#new-caching-behavior}
 
