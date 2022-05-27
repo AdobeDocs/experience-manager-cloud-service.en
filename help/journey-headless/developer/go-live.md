@@ -9,7 +9,7 @@ In this part of the [AEM Headless Developer Journey](overview.md), learn how to 
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM headless journey, [How to Put It All Together - Your App and Your Content in AEM Headless](help/journey-headless/developer/put-it-all-together.md) you learned how to use the AEM development tools to put all the facets of your project together.
+In the previous document of the AEM headless journey, [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) you learned how to use the AEM development tools to put all the facets of your project together.
 
 This article builds on those fundamentals so you understand how to prepare your own AEM headless project to go live.
 
