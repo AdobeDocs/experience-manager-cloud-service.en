@@ -15,7 +15,7 @@ This article builds on those fundamentals so you understand how to prepare your 
 
 ## Objective {#objective}
 
-This document helps you understand the AEM headless publication pipeline and the performance considerations you need to be aware of before you go live with your application.
+This document helps you understand the AEM headless publication pipeline and the performance considerations you must be aware of before you go live with your application.
 
 * Secure and Scale your application before Launch
 * Monitor Performance and Debug Issues
@@ -45,7 +45,7 @@ To get your AEM headless application ready for launch, follow the best practices
   * Provide CDN TTL above 600 seconds in order for the CDN to cache them.
   * AEM can calculate the impact of a model change to existing queries.
 * Split JSON files/GraphQL queries between low and high content change rate in order to reduce client traffic to CDN and assign higher TTL. This minimizes the CDN revalidating the JSON with the origin server.
-* To actively invalidate content from the CDN use Soft Purge. This allows the CDN to re-download the content without causing a cache miss.
+* To actively invalidate content from the CDN use Soft Purge. This allows the CDN to redownload the content without causing a cache miss.
 
 ## Improve Time to Download Headless Content {#improve-download-time}
 
@@ -57,7 +57,7 @@ To get your AEM headless application ready for launch, follow the best practices
 
 ## Deploy to Production {#deploy-to-production}
 
-Once you make sure everything has been tested and is working properly, you are ready to push your code updates to a [centralized Git repository in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
+Once you make sure that everything has been tested and is working properly, you are ready to push your code updates to a [centralized Git repository in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
 
 After the updates have been uploaded to Cloud Manager, they can be deployed to AEM as a Cloud Service using [Cloud Manager's CI/CD pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
 
@@ -65,7 +65,7 @@ You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline
 
 ## Performance Monitoring {#performance-monitoring}
 
-In order for users to have the best possible experience when using the AEM headless application, it is important that you monitor key performance metrics, as detailed below:
+For users to have the best possible experience when using the AEM headless application, it is important that you monitor key performance metrics, as detailed below:
 
 * Validate preview and production versions of the app
 * Verify AEM status pages for current service availability status
@@ -75,7 +75,7 @@ In order for users to have the best possible experience when using the AEM headl
     * Origin servers - number of calls, error rates, CPU loads, payload traffic
   * Author Performance
     * Check number of users, requests and load
-* Access App and Space specific performance reports
+* Access App and space specific performance reports
   * Once the server is up, check whether the general metrics are green/orange/red, then identify specific app issues
   * Open same reports above filtered to app or space (for example Photoshop desktop, paywall)
   * Use Splunk log APIs to access service and application performance
@@ -112,13 +112,13 @@ Congratulations! You have completed the AEM Headless Developer Journey! You shou
 * How to create headless content in AEM.
 * How to retrieve and update headless content in AEM.
 * How to go live with an AEM Headless project.
-* What do do after the go-live.
+* What to do after the go-live.
 
 You have either already launched your first AEM Headless project or now have all the knowledge you need to do so. Great job!
 
 ### Explore Single Page Applications {#explore-spa}
 
-The headless stores in AEM doesn't need to stop here, though. You might remember in the [Getting Started part of the journey](getting-started.md#integration-levels) we discussed briefly how AEM not only supports headless delivery and traditional full-stack models, but also can support hybrid models that combines the advantages of both.
+The headless stores in AEM doesn't need to stop here, though. You might remember in the [Getting Started part of the journey](getting-started.md#integration-levels) we discussed briefly how AEM not only supports headless delivery and traditional full-stack models, but also can support hybrid models that combine the advantages of both.
 
 If this kind of flexibility is something you need for your project, continue on to the optional, additional part of the journey, [How to Create Single Page Applications (SPAs) with AEM.](create-spa.md)
 
