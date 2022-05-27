@@ -67,7 +67,7 @@ Customers can use SAML-based authentication via their preferred SAML IdP. When u
 >
 >Only the initial authentication of the user's credentials are authenticated by the IdP, and subsequent requests to AEM are performed using an AEM login token cookie, as long as the cookie is available.
 
-See documentation for more information about the [SAML 2.0 Authentication Handler](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=en#saml-authentication-handler).
+See documentation for more information about the [SAML 2.0 Authentication Handler](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html).
 
 **OAuth/SSO**
 
