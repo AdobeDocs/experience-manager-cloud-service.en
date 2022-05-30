@@ -17,7 +17,7 @@ You can configure the number of colors, within a range of one to forty, that are
 
 The following figure illustrates the sequence of tasks that you perform to configure and manage color tagging for images in Experience Manager Assets: 
 
-![Color Tagging](assets/color-tagging-settings.png)
+![Color Tagging](assets/color-tagging-dfd.gif)
 
 ## Supported file formats {#supported-file-formats-color-tags}
 
