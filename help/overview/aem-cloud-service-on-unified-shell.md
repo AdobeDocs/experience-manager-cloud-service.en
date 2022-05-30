@@ -9,6 +9,8 @@ description: AEM as a Cloud Service on Unified Shell
 >This feature is in the Prerelease Channel for May, 2022. 
 >
 >This is meant as an introduction to a new feature which will be Generally Available in the June 2022 release. 
+>
+>See the [Prerelease Channel documentation](/help/release-notes/prerelease.md#enable-prerelease) for information on how to enable the feature for your environment.
 
 ## Overview {#overview}
 
