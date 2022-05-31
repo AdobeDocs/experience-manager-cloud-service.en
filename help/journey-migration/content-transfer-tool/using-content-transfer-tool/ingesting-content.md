@@ -15,7 +15,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 
 Follow the steps below to ingest your migration set from the Content Transfer Tool:
    >[!NOTE]
-   >You can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details. 
+   >You can run the optional pre-copy step to significantly speed up the ingestion phase. The pre-copy step is most effective for the 1st full extraction and ingestion. Refer to [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details. 
 
 1. Go to Cloud Acceleration Manager. Click on your project card and click on the Content Transfer card. Navigate to **Ingestion Jobs** and click on **New Ingestion** 
 
