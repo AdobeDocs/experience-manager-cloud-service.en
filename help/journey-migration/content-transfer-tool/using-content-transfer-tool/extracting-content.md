@@ -17,7 +17,7 @@ exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 Follow the steps below to extract your migration set from the Content Transfer Tool:
 
    >[!NOTE]
-   >If Amazon S3, Azure Data Store, or File Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the extraction phase. The pre-copy step is most effective for the 1st extraction and ingestion. To do so you will need to configure an `azcopy.config` file before running extraction. Refer to [Handling Large Content Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) for more details. 
+   >If Amazon S3, Azure Data Store, or File Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the extraction phase. The pre-copy step is most effective for the 1st full extraction and ingestion. To do so you will need to configure an `azcopy.config` file before running extraction. Refer to [Handling Large Content Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) for more details. 
 
    >[!IMPORTANT]
    >You should run User Mapping tool before extracting content from source. See [Using the User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) for more details.
