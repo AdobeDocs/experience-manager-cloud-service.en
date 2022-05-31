@@ -49,12 +49,14 @@ To test connectivity to the target AEM as a Cloud Service environment, issue the
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial - using Content Transfer Tool"
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
-
+<!-- Need to remove the video -->
 
 The following section applies to the new version of the Content Transfer Tool. Follow this section to learn how to use the Content Transfer Tool to migrate content to AEM as a Cloud Service:
 
 ### Extraction Setup Phase {#extraction-setup-phase}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_extraction_setup"
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 
 1. Log into Cloud Acceleration Manager (CAM) and click on the CAM project that you had created previously to assess your readiness to move to AEM as a Cloud Service. If you haven't created a CAM project, refer to Creating and Managing a Project in CAM.
