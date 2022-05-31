@@ -89,7 +89,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 The Content Transfer Tool has a feature that supports differential content *top-up* where it is possible to transfer only changes made since the previous content transfer activity.
 
 >[!NOTE]
->After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service.
+>After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service. If you have used the pre-copy step for the 1st full ingestion, you can skip pre-copy for subsequent top-up ingestions (if the top-up migration set size is less than 200GB) because it may add time to the entire process.
 
 Once the ingestion process is complete, to ingest the delta content you will need to run a [Top-Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) and then use the top-up ingestion method. 
 
