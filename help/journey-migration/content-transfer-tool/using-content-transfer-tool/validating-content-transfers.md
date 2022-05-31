@@ -38,11 +38,11 @@ For a graphical illustration of this, please refer to the examples below:
 
 * **Extraction (Overwrite)**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
 
 * **Ingestion (Wipe)**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
 * **Notes**
 
@@ -52,11 +52,11 @@ For a graphical illustration of this, please refer to the examples below:
 
 * **Extraction**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
 * **Ingestion**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
 * **Notes**
 
