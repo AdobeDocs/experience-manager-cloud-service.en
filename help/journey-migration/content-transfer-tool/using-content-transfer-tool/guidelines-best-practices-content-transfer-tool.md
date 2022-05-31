@@ -40,7 +40,7 @@ The following Guidelines and Best Practices apply to the new version of the Cont
      * *node store size*: segment store directory size or the MongoDB database size.
   Hence, for a segment store size of 20GB, the required free disk space would be 94GB.
   
-* A migration set needs to be maintained throughout the content transfer activity to support content top-ups. A maximum of five  migration sets per project in Cloud Acceleration Manager can be created and maintained at a time during the content transfer activity. If more than five migration sets are needed, you will need to create a second project in Cloud Acceleration Manager. However, this will require additional project management and product governance to avoid overwriting content on the target by multiple users.
+* A migration set needs to be maintained throughout the content transfer activity to support content top-ups. A maximum of five  migration sets per project in Cloud Acceleration Manager can be created and maintained at a time during the content transfer activity. If more than five migration sets are needed, you will need to create a second project in Cloud Acceleration Manager. However, this will require additional project management and out-of-product governance to avoid overwriting content on the target by multiple users.
 
 ## Important Considerations Before Using Content Transfer Tool {#important-considerations}
 
