@@ -21,7 +21,7 @@ To view the Extraction Logs, go to your source Adobe Experience Manager instance
 
 Then, follow the steps below:
 
-1. Select the migration set that you want to delete and click **View Log** from the action bar. This will bring up the Logs dialog. Click **Extraction Logs** to view the logs in a new tab.
+1. Select a migration set and click **View Log** from the action bar. This will bring up the Logs dialog. Click **Extraction log** to view the logs in a new tab.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png)
 Or, click the **FINISHED** status to view logs in a new tab.
