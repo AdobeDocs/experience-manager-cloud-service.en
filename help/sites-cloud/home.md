@@ -1,12 +1,12 @@
 ---
-title: Adobe Experience Manager as a Cloud Service Sites
-description: Adobe Experience Manager as a Cloud Service Sites self-help resources and documentation links
+title: Support resources for Experience Manager as a Cloud Service Sites
+description: Get a complete list of all our AEM Cloud Services support resources. Find answers to your AEM Sites as Cloud Service questions.
 landing-page-description: Understand how to author with, and administer, AEM Sites as a Cloud Service.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 ---
 # AEM Sites as a Cloud Service {#aem-sites-guide}
 
-This page lists the self-help resources regarding Sites on Experience Manager as a Cloud Service.
+This page provides a complete list of all our AEM Cloud Services support resources. Get answers to your [!DNL AEM Sites as a Cloud Service] questions.
 
 ## Key Sites Articles {#key-articles}
 
