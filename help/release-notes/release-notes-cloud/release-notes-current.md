@@ -64,6 +64,10 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 ### What is New {#what-is-new-cif}
 
+* New product cockpit properties page for better and simplified overview
+
+ ![product cockpit properties overview](/help/assets/CIF/product_cockpit_properties_overview.png) ![product cockpit properties references](/help/assets/CIF/product_cockpit_properties_content_references.png)
+
 * Improved compatibility and robustness for 3rd party connectors on I/O Runtime
 
 * Improved support for GQL Client configuration overwrites (e.g. set custom caching behavior)
