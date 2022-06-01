@@ -66,7 +66,7 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 * New product cockpit properties page for better and simplified overview
 
- ![product cockpit properties overview](/help/assets/CIF/product_cockpit_properties_overview.png) ![product cockpit properties references](/help/assets/CIF/product_cockpit_properties_content_references.png)
+ ![product cockpit properties overview](/help/assets/CIF/product_cockpit_properties_overview.png)
 
 * Improved compatibility and robustness for 3rd party connectors on I/O Runtime
 
