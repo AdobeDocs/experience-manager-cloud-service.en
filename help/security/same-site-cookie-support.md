@@ -11,7 +11,15 @@ The default value of this setting (`SameSite=Lax`) might cause authentication be
 
 In order to get around this, you need to set the SameSite cookie attribute to `None` for the login token.
 
-You can do this by following the below steps:
+>[!CAUTION]
+>
+>The `SameSite=None` setting is only applied if the protocol is secure (HTTPS). 
+>
+>If the protocol is not secure (HTTP), then the setting is ignored and the server will show this WARN message:
+>
+>`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
+
+You can add the setting by following the below steps:
 
 1. Install a version of the AEM SDK Quickstart locally
 1. Go to the Web Console at `http://serveraddress:serverport/system/console/configMgr`
