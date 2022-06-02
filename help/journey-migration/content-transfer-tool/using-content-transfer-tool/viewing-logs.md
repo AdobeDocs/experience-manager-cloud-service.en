@@ -28,9 +28,9 @@ Or, click the **FINISHED** status to view logs in a new tab.
 
 1. To tail the logs without using the user interface, you can SSH into your source AEM environment and tail the `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
 
-1. To view Ingestion logs, go to the Ingestion Jobs list in Cloud Acceleration Manager and click on the three dots (**...**). You can then click on **View log**. This will open the logs in a separate tab. You can also download logs by click on **Download log**.
+1. To view Ingestion logs, go to the Ingestion Jobs list in Cloud Acceleration Manager and click on the three dots (**...**). You can then click on **Download log** to download logs.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam26.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)
 
 >[!IMPORTANT]
 >
