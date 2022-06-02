@@ -97,7 +97,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Release Notes for 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
       + [Release Notes for 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
   + Release Notes for Workfront for Experience Manager enhanced connector{#workfront}
-      + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
+    + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
   + [Known issues](/help/release-notes/known-issues.md)
@@ -434,6 +434,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Introduction](/help/forms/home.md)
   + [Key features](/help/forms/key-features.md)
   + [Notable changes](/help/forms/notable-changes.md)
+  + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
   + Setup and configure the service {#setup-environment}
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
@@ -474,6 +475,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Configure redirect page](/help/forms/configuring-redirect-page.md)
       + [Configure asynchronous submission for an Adaptive Form](/help/forms/asynchronous-submissions-adaptive-forms.md)
       + [Create a custom Submit Action](/help/forms/custom-submit-action-form.md)
+    + [Prefill Adaptive Form fields](/help/forms/prepopulate-adaptive-form-fields.md)
     + [Generate Document of Record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
     + Add or improve metadata {#manage-metadata}
       + [Add, remove, or edit metadata of an Adaptive Form](/help/forms/manage-form-metadata.md)
