@@ -428,6 +428,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Introduction](/help/forms/home.md)
   + [Key features](/help/forms/key-features.md)
   + [Notable changes](/help/forms/notable-changes.md)
+  + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
   + Setup and configure the service {#setup-environment}
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
