@@ -229,4 +229,4 @@ If the sample assets or viewer preset artwork has not synced or published, resta
 1. Delete the `viewer` folder.
 1. Near the upper-left corner of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the CRXDE Lite page, select the **Back Home** icon.
-1. Re-create a [Dynamic Media Configuration in Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+1. Re-create a [Dynamic Media Configuration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
