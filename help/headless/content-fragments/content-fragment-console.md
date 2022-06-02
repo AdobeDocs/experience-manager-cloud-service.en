@@ -1,7 +1,7 @@
 ---
 title: Content Fragments Console
 description: Learn how to manage Content Fragments from the Content Fragments Console.
-landing-page-description: Learn how to manage Content Fragments from the Content Fragments Console that is focused on high-volume use of Headless fragments.
+landing-page-description: Learn how to manage Content Fragments from the Content Fragments Console that is focused on high volume use of Content Fragments for Headless use-cases.
 ---
 
 # Content Fragments Console  {#content-fragment-console}
@@ -47,7 +47,14 @@ Here you can see that there are three main areas:
   * [Filter](#filtering-fragments) the Content Fragments according to a selection of predicates, and save the filter for future use
   * [Search](#searching-fragments) the Content Fragments 
   * Customize the table view to show selected columns of information
-  * Also directly open the current location in the **Assets** console
+  * Use **Open in Assets** to directly open the current location in the **Assets** console.
+
+    >[!NOTE]
+    >
+    >The **Assets** console is used to access assets, such as images, videos, etc.  This console can be accessed:
+    >
+    >* using the **Open in Assets** link (in the Content Fragments console)
+    >* directly from the global navigation pane
 
 Selecting a specific fragment will open a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
 
@@ -78,3 +85,7 @@ The search box supports full-text search. Entering your search terms in the sear
 Will provide the selected results:
 
 ![Content Fragments console - Search Results](assets/cfc-console-search-02.png)
+
+The search box also provides quick access to **Recent Content Fragments** and **Saved Searches**:
+
+![Content Fragments console - Recent and Saved](assets/cfc-console-search-03.png)
