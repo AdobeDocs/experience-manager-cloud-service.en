@@ -79,12 +79,13 @@ This can be useful, for example, when your business logic requires fine tuning o
 ### Client-Side libraries (js,css) {#client-side-libraries}
 
 * by using AEM's Client-Side library framework, JavaScript and CSS code is generated in such a way that browsers can cache it indefinitely, since any changes manifest as new files with a unique path.  In other words, HTML that references the client libraries will be produced as needed so customers can experience new content as it is published. The cache-control is set to "immutable" or 30 days for older browsers who don't respect the "immutable" value.
-* see the section [Client-side libraries and version consistency](#content-consistency) for additional details. 
+* see the section [Client-side libraries and version consistency](#content-consistency) for additional details.
 
-### Images and any content large enough stored in blob storage {#images}
+### Images and any content large enough to be stored in blob storage {#images}
 
-* by default, not cached
-* can be set on a finer grained level by the following apache `mod_headers` directives:
+The default behavior for programs created after mid-May 2022 (specifically, for program ids that are higher than 65000) is to cache by default, while also respecting the request's authentication context. Older programs (program ids equal or lower than 65000) do not cache blob content by default.
+
+In both cases, the caching headers can be overridden on a finer grained level at the apache/dispatcher layer by using the apache `mod_headers` directives, for example:
 
    ```
       <LocationMatch "^/content/.*\.(jpeg|jpg)$">
@@ -94,20 +95,29 @@ This can be useful, for example, when your business logic requires fine tuning o
 
    ```
 
-   See the discussion in the html/text section above for exercising caution to not cache too widely and also how to force AEM to always apply caching with the "always" option.
+When modifying the caching headers at the dispatcher layer, please be cautious not to cache too widely, see the discussion in the HTML/text section [above](#html-text). Also, make sure that assets that are meant to be kept private (rather than cached) are not part of the `LocationMatch` directive filters.
 
-   It is necessary to ensure that a file under `src/conf.dispatcher.d/`cache has the following rule (which is in the default configuration):
+#### New default caching behavior {#new-caching-behavior}
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
+The AEM layer will set cache headers depending on whether the cache header has already been set and the value of the request type. Please note that if no cache control header has been set, public content is cached and authenticated traffic is set to private. If a cache control header has been set, the cache headers will be untouched.
 
-   ```
+| Cache control header exists? | Request type  | AEM sets cache headers to                      |
+|------------------------------|---------------|------------------------------------------------|
+| No                           | public        | Cache-Control: public, max-age=600, immutable  |
+| No                           | authenticated | Cache-Control: private, max-age=600, immutable |
+| Yes                          | any           | unchanged                                      |
 
-   Make sure that assets meant to be kept private rather than cached are not part of the LocationMatch directive filters.
+While not recommended, it is possible to change the new default behavior to follow the older behavior (program ids equal or lower than 65000) by setting the Cloud Manager environment variable `AEM_BLOB_ENABLE_CACHING_HEADERS` to false.
 
-   >[!NOTE]
-   >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+#### Older default caching behavior {#old-caching-behavior}
+
+The AEM layer will not cache blob content by default.
+
+>[!NOTE]
+>It is recommended to change the older default behavior to be consistent with the new behavior (program ids that are higher than 65000) by setting the Cloud Manager environment variable AEM_BLOB_ENABLE_CACHING_HEADERS to true. If the program is already live, make sure you verify that after the changes, content behaves as you expect.
+
+>[!NOTE]
+>The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override the values.
 
 ### Other content file types in node store {#other-content}
 
@@ -115,7 +125,7 @@ This can be useful, for example, when your business logic requires fine tuning o
 * default cannot be set with the `EXPIRATION_TIME` variable used for html/text file types
 * cache expiration can be set with the same LocationMatch strategy described in the html/text section by specifying the appropriate regex
 
-### Furthur Optimizations
+### Further Optimizations {#further-optimizations}
 
 * Avoid using `User-Agent` as part of the `Vary` header. Older versions of the default dispatcher setup (prior to archetype version 28) included this and we recommend you remove that using the steps below.
    * Locate the vhost files in `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`

@@ -47,7 +47,7 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>org.apache.fop.apps</td>
     <td></td>
     <td>3/1/21</td>
-    <td>6/1/21</td>
+    <td>removed</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml.xerces.dom<br>org.apache.jackrabbit.vault.util.xml.xerces.util<br>org.apache.jackrabbit.vault.util.xml.xerces.xni<br>org.apache.jackrabbit.vault.util.xml.xerces.xni.parser</td>
