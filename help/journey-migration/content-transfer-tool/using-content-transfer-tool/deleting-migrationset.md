@@ -7,6 +7,7 @@ exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_delete_migrationset"
+>title="Deleting a Migration Set"
 >abstract="Learn how to delete a migration set."
 
 Migration sets can be deleted from Cloud Acceleration Manager.
