@@ -96,7 +96,7 @@ The following section applies to the new version of the Content Transfer Tool. F
 
 To populate the migration set you created in the Cloud Acceleration Manager, you need to install the latest version of the Content Transfer Tool on your source Adobe Experience Manager (AEM) instance. Follow this section to learn how to populate the migration set.
 
-1. After installing the latest version (Vxxx) of the Content Transfer Tool on your source Adobe Experience Manager instance, go to **Operations - Content Migration**
+1. After installing the latest version (v2.0.10) of the Content Transfer Tool on your source Adobe Experience Manager instance, go to **Operations - Content Migration**
 
 1. Click on **Create Migration Set**
 
