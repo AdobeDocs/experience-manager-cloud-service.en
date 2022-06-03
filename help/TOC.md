@@ -704,6 +704,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Adding an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [Applying and Un-Applying IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
       + [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
+    + [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md)
     + [Cloud Manager FAQs](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
