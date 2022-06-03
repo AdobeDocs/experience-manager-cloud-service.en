@@ -1,9 +1,11 @@
 ---
-title: Validating Content Transfers
+title: Validating Content Transfers (Legacy)
 description: Use the Content Transfer Tool to validate content transfers
-exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
+hide: yes
+hidefromtoc: yes
+exl-id: 304b7aee-1d84-4d90-a89b-0c532d5d9c92
 ---
-# Validating Content Transfers {#validating-content-transfers}
+# Validating Content Transfers (Legacy) {#validating-content-transfers}
 
 ## Getting Started {#getting-started}
 
@@ -38,11 +40,11 @@ For a graphical illustration of this, please refer to the examples below:
 
 * **Extraction (Overwrite)**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
 
 * **Ingestion (Wipe)**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
 
 * **Notes**
 
@@ -52,11 +54,11 @@ For a graphical illustration of this, please refer to the examples below:
 
 * **Extraction**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
 
 * **Ingestion**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
 
 * **Notes**
 
@@ -121,10 +123,22 @@ Migration validation took 0 minutes
 
 The above failure example was achieved by running an ingestion, and then re-running the same ingestion again with Wipe disabled, such that no nodes were involved during ingestion — everything was already present on the target.
 
-In addition to being included in the ingestion log, the validation report can also be accessed from the **Ingestion Jobs** user interface in Cloud Acceleration Manager. To do so, click on the three dots (**...**)  then click on **Validation report** in the drop down to view the validation report. 
+In addition to being included in the ingestion log, the validation report can also be accessed from the Content Transfer Tool user interface. To do so, select a migration set, and click the **Validate** button from the action bar:
 
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
+
+The Validation Logs dialog will open:
+
+![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidationlogs.png)
+
+Use the **Validation Publish/Author Report** button to view the validation report for the most recent ingestion to the given tier of your target environment. See below an example from a small publish ingestion:
+
+![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidationreport.png)
+
+>[!NOTE]
+>
+>The **Validation Publish/Author Report** link will appear once the ingestion is complete. Additionally, the validation reports are persisted, so they do not expire after ingestion completes, like the ingestion logs do. 
 
 ## Troubleshooting {#troubleshooting}
 
