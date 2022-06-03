@@ -3,6 +3,7 @@ title: Guidelines and  Best Practices for using Content Transfer Tool (Legacy)
 description: Guidelines and  Best Practices for using Content Transfer Tool
 hide: yes
 hidefromtoc: yes
+exl-id: 03449606-0fb4-4a9f-9abb-6b17c27a6046
 ---
 # Guidelines and  Best Practices for using Content Transfer Tool (Legacy) {#guidelines}
 

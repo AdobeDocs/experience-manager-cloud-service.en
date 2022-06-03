@@ -3,6 +3,7 @@ title: Handling Large Content Repositories (Legacy)
 description: This section describes handling of large content repositories
 hide: yes
 hidefromtoc: yes
+exl-id: 19021f40-d0a5-4e0c-a213-c421338cedeb
 ---
 # Handling Large Content Repositories (Legacy) {#handling-large-content-repositories}
 
