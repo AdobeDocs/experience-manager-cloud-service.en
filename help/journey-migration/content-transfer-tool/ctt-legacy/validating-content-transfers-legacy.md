@@ -3,6 +3,7 @@ title: Validating Content Transfers (Legacy)
 description: Use the Content Transfer Tool to validate content transfers
 hide: yes
 hidefromtoc: yes
+exl-id: 304b7aee-1d84-4d90-a89b-0c532d5d9c92
 ---
 # Validating Content Transfers (Legacy) {#validating-content-transfers}
 

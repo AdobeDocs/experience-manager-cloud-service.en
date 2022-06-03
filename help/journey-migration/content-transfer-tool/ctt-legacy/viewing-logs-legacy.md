@@ -3,6 +3,7 @@ title: Viewing Logs for a Migration Set in Content Transfer Tool (Legacy)
 description: Viewing Logs for a Migration Set in Content Transfer Tool
 hide: yes
 hidefromtoc: yes
+exl-id: 01c8afd3-c594-4a41-b905-8c3a2d74db6f
 ---
 # Viewing Logs for a Migration Set (Legacy) {#view-logs-content-transfer-tool}
 
