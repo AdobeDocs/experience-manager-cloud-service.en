@@ -4,7 +4,7 @@ description: Learn how to restore your AEM as a Cloud Service content from backu
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 ---
 
-# Content Restore in AEM as a Cloud Service {#backup-aemaacs}
+# Content Restore in AEM as a Cloud Service {#content-restore}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
@@ -15,7 +15,7 @@ Learn how to restore your AEM as a Cloud Service content from backup using Cloud
 
 ## Overview {#overview}
 
-Cloud Manager's self-service restore process copies data from Adobe backup and restores it to its original environment. A restore is performed to return data that has been lost, damaged, or accidentally deleted to its original condition.
+Cloud Manager's self-service restore process copies data from Adobe system backups and restores it to its original environment. A restore is performed to return data that has been lost, damaged, or accidentally deleted to its original condition.
 
 The restore process only affects content, leaving your code and version of AEM unchanged. You can initiate a restore operation of individual environments at any time.
 
@@ -26,7 +26,9 @@ Cloud Manager provides two types of backups from which you may restore content.
 
 In both cases, the version of your custom code and AEM version remain unchanged.
 
-Data from deleted environments is permanently lost and cannot be recovered.
+>[!NOTE]
+>
+>Data from deleted environments is permanently lost and cannot be recovered.
 
 ## Limitations {#limitations}
 
@@ -57,17 +59,28 @@ First determine the the time frame of the content that you wish to restore. Then
 1. On the **Restore Content** tab of the environment details page, first select the time frame of the restore under the **Time to restore** dropdown.
 
    1. If you select **Last 24 hours** the neighboring **Time** field allows you to specify the exact time within the last 24 hours to restore.
-   1. If you select **Last week** the neighboring **Day** field allows you to select a date within the past seven days, excluding the previous 24 hours.
 
-1. Once you select a date or specify a time, the **Backups available** section below shows a list of available backups that can be restored. Find the backup you wish to restore by using the information icon to view information regarding the version of the code and AEM release included in that backup.
+      ![Last 24 hours](assets/backup-time.png)
+   
+   1. If you select **Last week** the neighboring **Day** field allows you to select a date within the past seven days, excluding the previous 24 hours.
+   
+      ![Last week](assets/backup-date.png)
+
+1. Once you select a date or specify a time, the **Backups available** section below shows a list of available backups that can be restored
+
+   ![Backups available](assets/backup-available.png)
+
+1. Find the backup you wish to restore by using the information icon to view information regarding the version of the code and AEM release included in that backup and consider the implications of a restore when [choosing the backup.](#choosing-the-right-backup)
+
+   ![Backup info](assets/backup-info.png)
 
    * Note that the time stamp displayed for the restore options are all based on the user's computer's time zone.
 
-1. Consider the implications of a restore when [choosing the backup.](#choosing-the-right-backup)
-
-1. Select the **Restore** icon at the right end of the row representing the backup you wish to restore to start the restore process.
+1. Click the **Restore** icon at the right end of the row representing the backup you wish to restore to start the restore process.
 
 1. Review the details on the **Restore Content** dialog before confirming your request by clicking on **Restore**.
+
+   ![Confirm restore](assets/backup-restore.png)
 
 The backup process is initiated and you can view its status in the **[Restore Activity](#restore-activity)** table. The time to restore will vary depending on the size of your repository.
 
@@ -93,6 +106,8 @@ Additionally, keep in mind that a restore might cause your production and stagin
 ## Restore Activity {#restore-activity}
 
 The **Restore Activity** table shows the status of the ten most recent restore requests including any active restore operations.
+
+![Restore activity](assets/backup-activity.png)
 
 By clicking on the information icon for a backup you can download logs for that backup as well as inspect the code details including the differences between the snapshot and data at the moment the restore was initiated.
 
