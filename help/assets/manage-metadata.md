@@ -27,7 +27,7 @@ Metadata is the collection of all the data available for an asset but that is no
 * Name of the folder it is contained in.
 * Related assets or applied tags.
 
-The above are the basic metadata properties that [!DNL Experience Manager] can manage for assets, which allows users to see all assets. For example, ordering assets by last modification date is useful when trying to discover recently added assets.
+The above are the basic metadata properties that [!DNL Experience Manager] can manage for assets, which allows users to see all assets. For example, ordering assets by last modification date is useful when trying to discover recently added or modified assets.
 
 You can add more high-level data to digital assets, for example:
 
@@ -61,6 +61,22 @@ Technical metadata is useful for software applications that are dealing with dig
 Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
 
 The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management.
+
+## Metadata and Last Modification {#last-modification}
+
+The last modified date of an asset reflects the last time the original file for an asset was modified. Therefore the modification date and user will only change in the following conditions:
+
+* A new version of the asset is uploaded
+* The asset is reprocessed
+* The asset is edited via the Edit Asset tool
+
+The last modification date and user will not change:
+
+* When an asset is moved or renamed
+* When an asset is checkedout, checkedin or version
+* When an asset is published or unpublished
+* On metadata updates
+* Reference or collection updates
 
 ## Encoding standards {#encoding-standards}
 
