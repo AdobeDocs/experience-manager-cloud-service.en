@@ -49,7 +49,7 @@ Each section summarizes what is available and how it is currently used, if at al
 
 ## Frequently-Asked Questions {#faq}
 
-### What is a content request? {what-is-a-content-request}
+### What is a content request? {#what-is-a-content-request}
 
 A content requests is a request coming into AEM Sites or any customer-provided caching system  such as a content delivery network to deliver content or data in either HTML format as a page view or in JSON format as an API call.
 
