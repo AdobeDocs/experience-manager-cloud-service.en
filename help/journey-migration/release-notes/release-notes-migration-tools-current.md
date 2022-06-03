@@ -1,11 +1,11 @@
 ---
-title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.6.0
-description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.6.0
+title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.5.0
+description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.5.0
 feature: Release Information
 ---
-# Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.6.0 {#release-notes}
+# Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.5.0 {#release-notes}
 
-This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.6.0.
+This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.5.0.
 
 ## Best Practices Analyzer {#bpa-release}
 
