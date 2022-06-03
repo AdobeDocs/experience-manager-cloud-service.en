@@ -3,6 +3,7 @@ title: Running the Content Transfer Tool on a Publish Instance (Legacy)
 description: Running the Content Transfer Tool on a Publish Instance
 hide: yes
 hidefromtoc: yes
+exl-id: 0a699dc1-9977-4cf9-a1b0-7b503ea2fc69
 ---
 # Running the Content Transfer Tool on a Publish Instance (Legacy) {#run-content-transfer-tool-publish-instance}
 
