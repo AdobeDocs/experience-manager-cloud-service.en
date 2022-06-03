@@ -3,6 +3,7 @@ title: Deleting a Migration Set in Content Transfer Tool (Legacy)
 description: Deleting a Migration Set in Content Transfer Tool
 hide: yes
 hidefromtoc: yes
+exl-id: a307b085-681a-46b5-9044-b7c14a1b0119
 ---
 # Deleting a Migration Set (Legacy) {#delete-migration-set}
 
