@@ -68,7 +68,6 @@ The last modified date of an asset reflects the last time the original file for 
 
 * A new version of the asset is uploaded
 * The asset is reprocessed
-* The asset is edited via the Edit Asset tool
 
 The last modification date and user will not change:
 
