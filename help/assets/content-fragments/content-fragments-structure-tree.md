@@ -17,6 +17,6 @@ This will open a representation of the fragment's structure in the left hand pan
 
 >[!NOTE]
 >
->Using the breadcrumbs in the main panel you can navigate back to your starting point.
+>Using the breadcrumbs in the main panel, you can navigate back to your starting point.
 
 ![Content Fragment Structure Tree](assets/cfm-structuretree-02.png)
