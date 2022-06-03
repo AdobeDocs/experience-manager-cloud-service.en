@@ -3,6 +3,7 @@ title: Ingesting Content into Target (Legacy)
 description: Ingesting Content into Target
 hide: yes
 hidefromtoc: yes
+exl-id: 326b3e98-5055-49b5-a005-63fd3ca35202
 ---
 # Ingesting Content into Target (Legacy) {#ingesting-content}
 
