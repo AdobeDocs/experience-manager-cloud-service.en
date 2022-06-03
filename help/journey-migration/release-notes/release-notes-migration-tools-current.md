@@ -16,11 +16,8 @@ The Release Date for Best Practices Analyzer v2.1.30 is June 1, 2022.
 ### What's New {#what-is-new-bpa}
 
 * Ability to detect and report on usage of custom dialog widgets using CoralUI and Classic dialog widgets. It is recommended to convert custom Classic Dialog widgets from ExtJS to CoralUI. Custom Coral Dialog Widgets should be updated to CoralUI3.
-
 * Ability to detect and report on the usage and version of Assets Share Commons. Asset Share Commons 1.x is not supported on AEM as a Cloud Service and must be upgraded to 2.x.
-
 * Ability to detect and report on the number of nodes from versions.
-
 * Ability to detect and report on custom replication agents or out of the box replication agents that have been modified.
 
 ### Bug Fixes {#bug-fixes-bpa}
