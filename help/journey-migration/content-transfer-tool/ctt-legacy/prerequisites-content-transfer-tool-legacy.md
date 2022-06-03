@@ -3,6 +3,7 @@ title: Prerequisites for Content Transfer Tool (Legacy)
 description: Prerequisites for Content Transfer Tool
 hide: yes
 hidefromtoc: yes
+exl-id: 6b2878cb-6882-452b-8cab-e590316633f6
 ---
 # Prerequisites for Content Transfer Tool (Legacy) {#prerequisites}
 
