@@ -1,9 +1,10 @@
 ---
-title: Running the Content Transfer Tool on a Publish Instance
+title: Running the Content Transfer Tool on a Publish Instance (Legacy)
 description: Running the Content Transfer Tool on a Publish Instance
-exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
+hide: yes
+hidefromtoc: yes
 ---
-# Running the Content Transfer Tool on a Publish Instance {#run-content-transfer-tool-publish-instance}
+# Running the Content Transfer Tool on a Publish Instance (Legacy) {#run-content-transfer-tool-publish-instance}
 
 ## Introduction {#introduction}
 
@@ -19,6 +20,8 @@ Follow the recommended approach as described below:
 * Use the same version of the Content Transfer Tool which was used on the Author instance.
 
 * Only a single publish node needs to be migrated. It should be removed from the load balancer prior to beginning the extraction.
+
+* When creating the migration set, use the URL of the author AEM as a Cloud Service environment.
 
 * During ingestion to publish, the publish tier will not be scaled down (unlike the author). 
 
