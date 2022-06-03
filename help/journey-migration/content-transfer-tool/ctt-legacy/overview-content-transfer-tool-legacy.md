@@ -3,6 +3,7 @@ title: Overview to Content Transfer Tool (Legacy)
 description: Overview to Content Transfer Tool
 hide: yes
 hidefromtoc: yes
+exl-id: dd031580-e9d7-461e-8689-9bc3dbb2121b
 ---
 # Content Transfer Tool Overview (Legacy) {#overview-content-transfer-tool}
 
