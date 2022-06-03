@@ -14,11 +14,9 @@ The Cloud Manager License Dashboard provides easy access to the following inform
 1. Solution entitlements available to you across all of your programs, including what's used and what's available
 1. Content Request consumption metrics trended by month for the Sites solution
 
-Note: The consumption metric is represented as Content Requests. A content request corresponds to either 1 page view OR 5 API calls.
-
 ## Using the License Dashboard {#using-dashboard}
 
-Follow these steps to access your license dashboard.
+To access your license dashboard, follow these steps.
 
 >[!NOTE]
 >
@@ -32,9 +30,9 @@ Follow these steps to access your license dashboard.
 
 The dashboard is divided into three sections showing you:
 
-* **Solutions** - This section summarizes which solutions you have licensed such as Sites or Assets.
-* **Add-ons** - This section summarizes which add-ons to your licensed solutions you have available.
-* **Sandbox &amp; Development Environments** - This section summarizes what environments you have available.
+* **Solutions** - This section summarizes which solutions that you have licensed such as Sites or Assets.
+* **Add-ons** - This section summarizes which add-ons to your licensed solutions that you have available.
+* **Sandbox &amp; Development Environments** - This section summarizes what environments that you have available.
 
 Each section summarizes what is available and how it is currently used, if at all. Currently only Sites solutions are displayed even if other solutions exist in the tenant.
 
@@ -47,15 +45,15 @@ Each section summarizes what is available and how it is currently used, if at al
 >
 >Refer to [Admin Console overview](https://helpx.adobe.com/enterprise/using/admin-console.html) to learn how to manage your Adobe entitlements across your entire organization from Admin Console.
 
-## Frequently-Asked Questions {#faq}
+## Frequently Asked Questions {#faq}
 
 ### What is a content request? {#what-is-a-content-request}
 
-A content requests is a request coming into AEM Sites or any customer-provided caching system  such as a content delivery network to deliver content or data in either HTML format as a page view or in JSON format as an API call.
+A content request is a request coming into AEM Sites or any customer-provided caching system  such as a content delivery network to deliver content or data in either HTML format as a page view or in JSON format as an API call.
 
 One content request is counted for each page view or for every five API calls, measured at the ingress of the first caching system to receive a content request.
 
-Content Requests exclude requests or activity initiated by or on behalf of Adobe for the sole purpose of providing products and services. Additionally Adobe-identified user agent traffic from bots, crawlers, and spiders related to common search engines and social media services are also excluded.
+Content Requests exclude requests or activity initiated by or on behalf of Adobe for the sole purpose of providing products and services. Adobe-identified user agent traffic from bots, crawlers, and spiders related to common search engines and social media services are also excluded.
 
 ### How does Adobe Experience Manager measure content requests? {#how-are-content-requests-measured}
 
@@ -84,7 +82,7 @@ Content Requests will have variances with an organization’s Analytics reportin
 |Reason For Variance|Explanation|
 |---|---|
 |Tagging|All pages that are tracked as AEM content requests may or may not be tagged with Analytics tracking.<br>All API calls that are tracked as AEM content requests will not be tagged by an organization’s Analytics tool.<br>Pages or API calls may be tagged to track actions instead of views.|
-|Tag Management Rules|Tag management rule settings may result in a variety of data collection configurations on a page resulting in some combination of discrepancies with content request tracking.|
+|Tag Management Rules|Tag management rule settings may result in a variety of data collection configurations on a page, resulting in some combination of discrepancies with content request tracking.|
 |Bots|Unknown bots that have not been pre-identified and removed by AEM may cause tracking discrepancies.|
 |Report Suites|Pages that are part of the same AEM instance and domain may send data to different Analytics report suites.|
 |Third-Party Monitoring and Security Tools|Monitoring and security scanning tools may generate content requests for AEM that are not tracked in Analytics reports.|
