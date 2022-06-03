@@ -3,6 +3,7 @@ title: Extracting Content from Source (Legacy)
 description: Extracting Content from Source
 hide: yes
 hidefromtoc: yes
+exl-id: 9f43356c-ba51-48bc-97f5-f1f5db81e7f3
 ---
 # Extracting Content from Source (Legacy) {#extracting-content}
 
