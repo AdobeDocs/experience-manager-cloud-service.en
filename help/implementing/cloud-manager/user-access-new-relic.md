@@ -12,9 +12,9 @@ Learn about the New Relic One application performance monitoring (APM) service f
 
 Adobe places a great emphasis on the monitoring, availability, and performance of your application. AEM as a Cloud Service provides access to a custom New Relic One monitoring suite as a part of the standard product offering to ensure your teams have the maximum visibility to your AEM as a Cloud Service system and environment performance metrics.
 
-This document describes the New Relic One application performance monitoring (APM) features enabled on your AEM as a Cloud Service environments to help support performance and allow you to get the most out of AEM as a Cloud Service.
+This document describes the how to manage access to the New Relic One application performance monitoring (APM) features enabled on your AEM as a Cloud Service environments to help support performance and allow you to get the most out of AEM as a Cloud Service.
 
-When a new Production program is created, the New Relic One sub-account associated with your AEM as a Cloud Service Program is automatically created. 
+When a new production program is created, the New Relic One sub-account associated with your AEM as a Cloud Service Program is automatically created. 
 
 ## Features {#transaction-monitoring}
 
@@ -128,7 +128,7 @@ The following limitations apply to adding users to New Relic One:
 
 For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, please open a support ticket via the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
-## Frequently Asked Questions for New Relic Account {#faqs}
+## Frequently Asked Questions About New Relic One {#faqs}
 
 ### What does Adobe monitor with New Relic One? {#adobe-monitor}
 
