@@ -64,12 +64,12 @@ The cost of manually creating descriptive metadata information is high. So, stan
 
 ## Metadata and Last Modification {#last-modification}
 
-The last modified date of an asset reflects the last time the original file for an asset was modified. Therefore the modification date and user will only change in the following conditions:
+The last modified date of an asset reflects the last time the original file for an asset is modified. As a result, the modification date and user only change when:
 
 * A new version of the asset is uploaded
-* The asset is reprocessed
+* An asset is reprocessed
 
-The last modification date and user will not change:
+The last modification date and user does not change:
 
 * When an asset is moved or renamed
 * When an asset is checkedout, checkedin or version
