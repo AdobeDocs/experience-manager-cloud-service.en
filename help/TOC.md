@@ -87,6 +87,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.4.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
       + [Release Notes for 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
       + [Release Notes for 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
       + [Release Notes for 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
@@ -95,7 +96,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Release Notes for 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
       + [Release Notes for 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
   + Release Notes for Workfront for Experience Manager enhanced connector{#workfront}
-      + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
+    + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
   + [Known issues](/help/release-notes/known-issues.md)
@@ -172,6 +173,19 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Overview](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
         + [Important Considerations](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
         + [Using User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
+      + Legacy Content Transfer Tool {#legacy}
+        + [Overview](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
+        + [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
+        + [Guidelines and Best Practices for Using Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
+        + [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
+        + [Validating Content Transfers](/help/journey-migration/content-transfer-tool/ctt-legacy/validating-content-transfers-legacy.md)
+        + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/ctt-legacy/handling-large-content-repositories-legacy.md)
+        + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/ctt-legacy/extracting-content-legacy.md)
+        + [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/ctt-legacy/ingesting-content-legacy.md)
+        + [Viewing Logs for a Migration Set](/help/journey-migration/content-transfer-tool/ctt-legacy/viewing-logs-legacy.md)
+        + [Deleting a Migration Set](/help/journey-migration/content-transfer-tool/ctt-legacy/deleting-migrationset-legacy.md)
+        + [Running the Content Transfer Tool on a Publish Instance](/help/journey-migration/content-transfer-tool/ctt-legacy/running-content-transfer-tool-publish-instance-legacy.md)
+        + [Troubleshooting Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/troubleshooting-content-transfer-tool-legacy.md)
   + Code Refactoring Tools {#refactoring-tools}
     + [Unified Experience](/help/journey-migration/unified-experience.md)
     + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
@@ -431,6 +445,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Introduction](/help/forms/home.md)
   + [Key features](/help/forms/key-features.md)
   + [Notable changes](/help/forms/notable-changes.md)
+  + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
   + Setup and configure the service {#setup-environment}
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
@@ -471,6 +486,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Configure redirect page](/help/forms/configuring-redirect-page.md)
       + [Configure asynchronous submission for an Adaptive Form](/help/forms/asynchronous-submissions-adaptive-forms.md)
       + [Create a custom Submit Action](/help/forms/custom-submit-action-form.md)
+    + [Prefill Adaptive Form fields](/help/forms/prepopulate-adaptive-form-fields.md)
     + [Generate Document of Record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
     + Add or improve metadata {#manage-metadata}
       + [Add, remove, or edit metadata of an Adaptive Form](/help/forms/manage-form-metadata.md)
