@@ -89,6 +89,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.4.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
       + [Release Notes for 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
       + [Release Notes for 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
       + [Release Notes for 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
@@ -174,6 +175,19 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Overview](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
         + [Important Considerations](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
         + [Using User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
+      + Legacy Content Transfer Tool {#legacy}
+        + [Overview](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
+        + [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
+        + [Guidelines and Best Practices for Using Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
+        + [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
+        + [Validating Content Transfers](/help/journey-migration/content-transfer-tool/ctt-legacy/validating-content-transfers-legacy.md)
+        + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/ctt-legacy/handling-large-content-repositories-legacy.md)
+        + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/ctt-legacy/extracting-content-legacy.md)
+        + [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/ctt-legacy/ingesting-content-legacy.md)
+        + [Viewing Logs for a Migration Set](/help/journey-migration/content-transfer-tool/ctt-legacy/viewing-logs-legacy.md)
+        + [Deleting a Migration Set](/help/journey-migration/content-transfer-tool/ctt-legacy/deleting-migrationset-legacy.md)
+        + [Running the Content Transfer Tool on a Publish Instance](/help/journey-migration/content-transfer-tool/ctt-legacy/running-content-transfer-tool-publish-instance-legacy.md)
+        + [Troubleshooting Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/troubleshooting-content-transfer-tool-legacy.md)
   + Code Refactoring Tools {#refactoring-tools}
     + [Unified Experience](/help/journey-migration/unified-experience.md)
     + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
