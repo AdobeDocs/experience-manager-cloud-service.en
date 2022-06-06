@@ -198,12 +198,135 @@ In general, it will not be necessary to invalidate the dispatcher cache. Instead
 
 Like previous versions of AEM, publishing or unpublishing pages will clear the content from the dispatcher cache. If a caching issue is suspected, customers should republish the pages in question and ensure that a virtual host is available that matches ServerAlias localhost, which is required for dispatcher cache invalidation.
 
-
 When the publish instance receives a new version of a page or asset from the author, it uses the flush agent to invalidate appropriate paths on its dispatcher. The updated path is removed from the dispatcher cache, together with its parents, up to a level (you can configure this with the [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
 
-### Explicit dispatcher cache invalidation {#explicit-invalidation}
+## Explicit dispatcher cache invalidation {#explicit-invalidation}
 
-In general, it will not be necessary to manually invalidate content in the dispatcher, but it is possible if needed.
+While Adobe's recommendation is to rely on standard cache headers to control the content delivery life cycle, it is possible to invalidate content directly in the dispatcher.
+
+Here are some scenarios where one might want to explicitly invalidate the cache, while optionally listening to the completion of that invalidation:
+
+* after publishing content such as experience fragments or content fragments, invalidating published and cached that reference those elements
+* notifying an external system when referenced pages are successfully invalidated.
+
+There are two approaches: using Sling Content Distribution (SCD) from the author, which is preferred, and using the Replication API to invoke the publish dispatcher flush replication agent. The approaches differ in terms of (a) tier availability, and (b) ability to deduplicate the events, and (c) event processing guarantee. The table below summarizes the options:
+
+insert table here
+
+In the table above, the SCD API’s INVALIDATE action and the Replication API’s DEACTIVATE action are the actions relevant to the pure cache invalidation use case.
+
+From the table, we observe that:
+
+SCD API is needed when every event must be guaranteed; for example, syncing with an external system that requires accurate knowledge. In addition, note that if there is a publish tier upscaling event at the time of the invalidation call, an addition events will be raised when each new publish processes the invalidation 
+
+Using the Replication API isn’t common, but should be used in cases where the trigger to invalidate the cache comes from the publish tier and not author tier. This might be useful if dispatcher TTL is configured.
+
+If you’re looking to invalidate dispatcher cache, the recommended option:
+
+1. Use SCD API Invalidate action from Author.
+2. (Optional) Listen for the event to then trigger any downstream actions.
+
+### Sling Content Distribution (SCD) {#sling-distribution}
+
+Here is the implementation pattern for using SCD:
+
+1. From the author, write custom code to invoke the sling content distribution [API](https://sling.apache.org/documentation/bundles/content-distribution.html), passing the invalidate action with a list of paths:
+
+```
+@Reference
+private Distributor distributor;
+
+ResourceResolver resolver = ...; // the resource resolver used for authorizing the request
+String agentName = "publish";    // the name of the agent used to distribute the request
+
+String pathToInvalidate = "/content/to/invalidate";
+DistributionRequest distributionRequest = new SimpleDistributionRequest(DistributionRequestType.INVALIDATE, false, pathToInvalidate);
+distributor.distribute(agentName, resolver, distributionRequest);
+
+```
+
+2. Optionally listen for an event that reflects the resource being invalidated for all dispatcher instances:
+
+
+```
+package org.apache.sling.distribution.journal.shared;
+
+import org.apache.sling.discovery.DiscoveryService;
+import org.apache.sling.distribution.journal.impl.event.DistributionEvent;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.event.Event;
+import org.osgi.service.event.EventHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import static org.apache.sling.distribution.DistributionRequestType.INVALIDATE;
+import static org.apache.sling.distribution.event.DistributionEventProperties.DISTRIBUTION_PATHS;
+import static org.apache.sling.distribution.event.DistributionEventProperties.DISTRIBUTION_TYPE;
+import static org.apache.sling.distribution.event.DistributionEventTopics.AGENT_PACKAGE_DISTRIBUTED;
+import static org.osgi.service.event.EventConstants.EVENT_TOPIC;
+
+@Component(immediate = true, service = EventHandler.class, property = {
+        EVENT_TOPIC + "=" + AGENT_PACKAGE_DISTRIBUTED
+})
+public class InvalidatedHandler implements EventHandler {
+    private static final Logger LOG = LoggerFactory.getLogger(InvalidatedHandler.class);
+
+    @Reference
+    private DiscoveryService discoveryService;
+
+    @Override
+    public void handleEvent(Event event) {
+
+        String distributionType = (String) event.getProperty(DISTRIBUTION_TYPE);
+
+        if (INVALIDATE.name().equals(distributionType)) {
+            boolean isLeader = discoveryService.getTopology().getLocalInstance().isLeader();
+            // process the OSGi event on the leader author instance
+            if (isLeader) {
+                String[] paths = (String[]) event.getProperty(DISTRIBUTION_PATHS);
+                String packageId = (String) event.getProperty(DistributionEvent.PACKAGE_ID);
+                invalidated(paths, packageId);
+            }
+        }
+    }
+
+    private void invalidated(String[] paths, String packageId) {
+        // custom logic
+        LOG.info("Successfully applied package with id {}, paths {}", packageId, paths);
+    }
+}
+
+```
+
+<!-- Optionally, instead of using the isLeader approach, one could add an OSGi configuration for the PID org.apache.sling.distribution.journal.impl.publisher.DistributedEventNotifierManager and property deduplicateEvent=true. But we'll stick with just one strategy and not mention it (double-check this).**review this**-->
+
+3. Optionally execute some business logic in the invalidated(String[] paths, String packageId) method above.
+
+Note: The Adobe CDN is not flushed when the dispatcher is invalidated. The Adobe-managed CDN respects TTLs and thus there is no need for it to be flushed.
+
+### Replication API {#replication-api}
+
+Here is the implementation pattern for using the Replication API:
+
+1. On the publish tier, call the Replication API to trigger the publish dispatcher flush replication agent.
+
+The flush agent endpoint is not configurable but rather preconfigured to point to the dispatcher, matched with the publish service running alongside the flush agent. The flush agent can typically be triggered by custom code based on OSGi events or workflows.
+
+```
+String[] paths = …
+ReplicationOptions options = new ReplicationOptions();
+options.setSynchronous(true);
+options.setFilter( new AgentFilter {
+  public boolean isIncluded (Agent agent) {
+   return agent.getId().equals(“flush”);
+  }
+});
+
+Replicator.replicate (session,ReplicationActionType.DELETE,paths, options);
+```
+
+<!-- In general, it will not be necessary to manually invalidate content in the dispatcher, but it is possible if needed.
 
 >[!NOTE]
 >Prior to AEM as a Cloud Service, there were two ways of invalidating the dispatcher cache.
@@ -218,7 +341,6 @@ The replication flush agent should be used. This can be done using the [Replicat
 <!-- Need to find a new link and/or example -->
 <!-- 
 and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents). 
--->
 
 The diagram presented below illustrates this.
 
@@ -226,7 +348,7 @@ The diagram presented below illustrates this.
 
 If there is a concern that the dispatcher cache isn't clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
-The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary.
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 
 ## Client-Side libraries and Version Consistency {#content-consistency}
 
