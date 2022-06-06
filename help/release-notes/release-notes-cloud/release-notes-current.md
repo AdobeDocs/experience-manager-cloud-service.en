@@ -80,6 +80,10 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
+### What is New {#what-is-new-foundation}
+
+The [Repository Browser](/help/implementing/developing/tools/repository-browser.md) now has a path input field, making it possible to jump directly to a specific folder in the repository hierarchy.
+
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Security {#foundation-security}
 
 ### TLS 1.0, 1.1 deprecation
