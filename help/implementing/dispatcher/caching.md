@@ -245,7 +245,7 @@ distributor.distribute(agentName, resolver, distributionRequest);
 
 ```
 
-2. Optionally listen for an event that reflects the resource being invalidated for all dispatcher instances:
+(Optionally) Listen for an event that reflects the resource being invalidated for all dispatcher instances:
 
 
 ```
@@ -301,7 +301,7 @@ public class InvalidatedHandler implements EventHandler {
 
 <!-- Optionally, instead of using the isLeader approach, one could add an OSGi configuration for the PID org.apache.sling.distribution.journal.impl.publisher.DistributedEventNotifierManager and property deduplicateEvent=true. But we'll stick with just one strategy and not mention it (double-check this).**review this**-->
 
-3. Optionally execute some business logic in the invalidated(String[] paths, String packageId) method above.
+(Optionally) Execute some business logic in the invalidated(String[] paths, String packageId) method above.
 
 Note: The Adobe CDN is not flushed when the dispatcher is invalidated. The Adobe-managed CDN respects TTLs and thus there is no need for it to be flushed.
 
