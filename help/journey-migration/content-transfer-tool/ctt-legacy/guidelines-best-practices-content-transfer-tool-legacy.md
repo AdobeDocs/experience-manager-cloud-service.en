@@ -1,28 +1,15 @@
 ---
-title: Guidelines and  Best Practices for using Content Transfer Tool
+title: Guidelines and  Best Practices for using Content Transfer Tool (Legacy)
 description: Guidelines and  Best Practices for using Content Transfer Tool
-exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
+hide: yes
+hidefromtoc: yes
+exl-id: 03449606-0fb4-4a9f-9abb-6b17c27a6046
 ---
-# Guidelines and  Best Practices for using Content Transfer Tool {#guidelines}
+# Guidelines and  Best Practices for using Content Transfer Tool (Legacy) {#guidelines}
 
 ## Guidelines and Best Practices {#best-practices}
 
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_guidelines"
->title="Guidelines and Best Practices"
->abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="Important Considerations for using Content Transfer Tool"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Important Considerations for using User Mapping Tool"
-
-A new version of the Content Transfer Tool is available which integrates the content transfer process with Cloud Acceleration Manager. It is highly recommended to switch over to this new version to leverage all the benefits it provides:
-
-* Self-service way to extract a migration set once and ingest it into multiple environments in parallel
-* Improved user experience via better loading states, guardrails, and error handling 
-* Ingestion logs are persisted and are always available for toubleshooting
-
-To start using the new version (v2.0.10) you will need to uninstall older versions of the Content Transfer Tool. This is needed because the new version comes with a major architectural change. With v2.0.10, you will need to create new migration sets and re-run extraction and ingestion on the new migration sets. If a migration is already in progress, you may continue using the prior version of CTT until the migration is complete.
-
-The following Guidelines and Best Practices apply to the new version of the Content Transfer Tool:
+Follow the section below to understand guidelines and best practices to use the Content Transfer Tool:
 
 * It is advisable to run [Revision Cleanup](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) and [data store consistency checks](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) on the **source** repository to identify potential problems and reduce the size of the repository.
 
@@ -40,7 +27,7 @@ The following Guidelines and Best Practices apply to the new version of the Cont
      * *node store size*: segment store directory size or the MongoDB database size.
   Hence, for a segment store size of 20GB, the required free disk space would be 94GB.
   
-* A migration set needs to be maintained throughout the content transfer activity to support content top-ups. A maximum of five  migration sets per project in Cloud Acceleration Manager can be created and maintained at a time during the content transfer activity. If more than five migration sets are needed, you will need to create a second project in Cloud Acceleration Manager. However, this will require additional project management and out-of-product governance to avoid overwriting content on the target by multiple users.
+* A migration set needs to be maintained throughout the content transfer activity to support content top-ups. Since a maximum of ten migration sets can be created and maintained at a time during the content transfer activity, it is recommended to break up the content repository accordingly to ensure that you do not run out of migration sets.
 
 ## Important Considerations Before Using Content Transfer Tool {#important-considerations}
 
@@ -50,17 +37,19 @@ Follow the section below to understand the important considerations while runnin
 
 * Java must be configured on the AEM environment, so that the `java` command can be executed by the user who starts AEM.
 
+* It is recommended to uninstall older versions of the Content Transfer Tool when installing the version 1.3.0 because there was a major architectural change in the tool. With 1.3.0, you should also create new migration sets and re-run extraction and ingestion on the new migration sets.
+
 * The Content Transfer Tool can be used with the following types of Data Store: File Data Store, S3 Data Store, Shared S3 Data Store, and Azure Blob Store Data Store.
 
 * If you are using a *Sandbox Environment*, ensure that your environment is current and upgraded to the latest release. If you are using a *Production Environment*, it is automatically updated.
 
-* To use the Content Transfer Tool, you need to be an admin user on your source instance and belong to the local AEM **administrators** group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to start ingestions.
+* To use the Content Transfer Tool, you need to be an admin user on your source instance and belong to the local AEM **administrators** group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
 
 * If the setting **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group. The user must be re-added to the **administrators** group in order to retrieve the access token for the Content Transfer Tool.
 
 * The Content Transfer Tool does not support merging content from multiple sources into the target Cloud Service instance if the content from the two sources is moved to the same paths on the target. To move content from multiple sources into a single target Cloud Service instance, you need to ensure that there is no overlap of the content paths from the sources.
 
-* The extraction key is valid for 14 days from the time it was created/renewed. It can be renewed at any time. If the extraction key has expired, you will not be able to perform an extraction.
+* The access token can expire periodically either after a specific time period or after the Cloud Service environment has been upgraded. If access token has expired, you will not be able to connect to the Cloud Service instance and you need to retrieve the new access token. The status icon associated with an existing migration set will change to a red cloud and will display a message when you hover over it.
 
 * The Content Transfer Tool (CTT) does not perform any kind of content analysis before transferring content from the source instance to the target instance. For example, CTT does not differentiate between published and unpublished content while ingesting content into a Publish environment. Whatever content is specified in the migration set will be ingested into the chosen target instance. User has the ability to ingest a migration set into an Author instance or Publish instance or both. It is recommended that while moving content to a Production instance, CTT be installed on the source Author instance to move content to the target Author instance and similarly, install CTT on the source Publish instance to move content to the target Publish instance. Refer to [Running the Content Transfer Tool on a Publish instance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) for more details.
 
