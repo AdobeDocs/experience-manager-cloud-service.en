@@ -3,6 +3,7 @@ title: Troubleshooting Content Transfer Tool (Legacy)
 description: Troubleshooting Content Transfer Tool
 hide: yes
 hidefromtoc: yes
+exl-id: b99f8f2b-b1b7-4ec1-b1d2-0efe83e17e91
 ---
 # Troubleshooting Content Transfer Tool (Legacy) {#troubleshoot-content-transfer-tool}
 
