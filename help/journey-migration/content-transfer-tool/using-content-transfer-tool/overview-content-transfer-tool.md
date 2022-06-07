@@ -30,7 +30,7 @@ A new version of the Content Transfer Tool is available which integrates the con
 * Improved user experience via better loading states, guardrails, and error handling
 * Ingestion logs are persisted and are always available for toubleshooting 
 
-To start using the new version (Vxx) <!-- update when version is available --> you will need to uninstall older versions of the Content Transfer Tool because there was a major architectural change in the tool. 
+To start using the new version (v2.0.10) <!-- update when version is available --> you will need to uninstall older versions of the Content Transfer Tool because there was a major architectural change in the tool. 
 
 >[!NOTE]
 >

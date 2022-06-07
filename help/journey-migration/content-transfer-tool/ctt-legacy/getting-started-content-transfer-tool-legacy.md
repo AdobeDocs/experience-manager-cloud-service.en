@@ -3,6 +3,7 @@ title: Getting Started with Content Transfer Tool (Legacy)
 description: Getting Started with Content Transfer Tool
 hide: yes
 hidefromtoc: yes
+exl-id: a6ee6996-510e-42d7-9a7c-f64732764f97
 ---
 # Getting Started with Content Transfer Tool (Legacy) {#getting-started-content-transfer-tool}
 
