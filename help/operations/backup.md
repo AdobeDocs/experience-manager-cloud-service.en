@@ -1,6 +1,6 @@
 ---
 title: Content Restore in AEM as a Cloud Service
-description: Learn how to restore your AEM as a Cloud Service content from backup using Cloud Manager or through the public API.
+description: Learn how to restore your AEM as a Cloud Service content from backup using Cloud Manager.
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 ---
 
@@ -9,9 +9,9 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
 >title="Backup & Restore"
->abstract="Learn how to restore your AEM as a Cloud Service content from backup using Cloud Manager or through the public API."
+>abstract="Learn how to restore your AEM as a Cloud Service content from backup using Cloud Manager."
 
-Learn how to restore your AEM as a Cloud Service content from backup using Cloud Manager or through the public API.
+Learn how to restore your AEM as a Cloud Service content from backup using Cloud Manager.
 
 ## Overview {#overview}
 
@@ -26,9 +26,9 @@ Cloud Manager provides two types of backups from which you may restore content.
 
 In both cases, the version of your custom code and AEM version remain unchanged.
 
->[!NOTE]
+>[!TIP]
 >
->Data from deleted environments is permanently lost and cannot be recovered.
+>It is also possible to restore backups [using the public API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
 
 ## Limitations {#limitations}
 
@@ -36,9 +36,11 @@ Usage of the self-service restore mechanism is subject to the following limitati
 
 * Restore operations are limited to seven days, meaning it is not possible to restore a snapshot older than seven days.
 * A maximum of ten successful restores are allowed across all environments in a program per calendar month.
-* After environment creation, it takes six hours before the first backup snapshot is created. Until this snapshot is created, no restore can be done on the environment.
-* A restore operation will not initiate if there is a full stack or web tier config pipeline currently running for the environment
+* After environment creation, it takes six hours before the first backup snapshot is created. Until this snapshot is created, no restore can be performed on the environment.
+* A restore operation will not initiate if there is a full stack or web tier config pipeline currently running for the environment.
+* A restore can not be initiated if another restore is already running on the same environment.
 * In rare cases, because of the 24 hour/seven day limit on backups, the selected backup may become unavailable due to a delay between when it was selected and when the restore is initiated.
+* Data from deleted environments is permanently lost and cannot be recovered.
 
 ## Restoring Content {#restoring-content}
 
@@ -53,6 +55,8 @@ First determine the the time frame of the content that you wish to restore. Then
 1. Click on the program for which you want to initiate a restore.
 
 1. From the **Program Overview** page, in the **Environments** card, click on the ellipsis button next to the environment for which you want to initiate a restore and select **Restore Content**.
+
+   ![Restore option](assets/backup-option.png)
 
    * Alternatively you can navigate directly to the **Restore Content** tab of the environment details page of a specific environment.
 
@@ -82,7 +86,7 @@ First determine the the time frame of the content that you wish to restore. Then
 
    ![Confirm restore](assets/backup-restore.png)
 
-The backup process is initiated and you can view its status in the **[Restore Activity](#restore-activity)** table. The time to restore will vary depending on the size of your repository.
+The backup process is initiated and you can view its status in the **[Restore Activity](#restore-activity)** table. The time required for a restore operation to complete depends on the size and profile of the content being restored.
 
 When the restore successfully completes the environment will:
 

@@ -62,9 +62,29 @@ Once the users are defined, New Relic sends a confirmation email to each user to
 >
 >If you are managing the New Relic One users, you must also add yourself as a user in order to also have access. Being the **Business Owner** or **Deployment Manager** does not suffice to have access to New Relic One. You must create yourself as a user as well.
 
+## Activate Your New Relic One User Account {#activate-account}
+
+Once a New Relic One user account is created as described in the preview section [Manage New Relic One Users](#manage-users), New Relic sends those users a confirmation email to the provided address. To use those accounts, users must first activate their accounts with New Relic by resetting their passwords.
+
+Follow these steps to activate your account as a New Relic user.
+
+1. Click the link provided in the email from New Relic. This opens your browser to the New Relic sign in page.
+
+1. On the New Relic sign in page, select **Forgot your password?**.
+
+   ![New Relic login](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
+
+1. Enter the email address where you received the confirmation email, and select **Send my reset link**.
+
+   ![Enter email address](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
+
+1. New Relic will send you an email containing a link to confirm the account.
+
+If you do not receive a confirmation email from New Relic, please see the [troubleshooting section.](#troubshooting)
+
 ## Accessing New Relic One {#accessing-new-relic}
 
-You can access New Relic One via Cloud Manager or directly.
+Once you have [activated your New Relic account,](#activate-account) you can access New Relic One via Cloud Manager or directly.
 
 To access New Relic One via Cloud Manager:
 
@@ -96,7 +116,7 @@ For more help, please open a support ticket via the [AEM Support Portal](https:/
 
 ## Troubleshooting New Relic One Access {#troubleshooting}
 
-If the user cannot locate the original account confirmation email follow these steps.
+If you were added as a New Relic One user as described in the the section [Manage New Relic One Users](#manage-users) and can not locate the original account confirmation email follow these steps.
 
 1. Navigate to New Relic's login page at [`login.newrelic.com/login`](https://login.newrelic.com/login).
 
@@ -104,13 +124,13 @@ If the user cannot locate the original account confirmation email follow these s
 
    ![New Relic login](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
 
-1. Type the account email address, and select **Send my reset link**.
+1. Enter the email address that was used to create your account, and select **Send my reset link**.
 
    ![Enter email address](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
-1. New Relic will send the user an email containing a link to confirm the account.
+1. New Relic will send you an email containing a link to confirm the account.
 
-If you complete the sign up process and are unable to log in to your account due to email or password error messages, please log a support ticket via the [Admin Console](https://adminconsole.adobe.com/).
+If you complete the sign up process and are unable to log in to your account due to email or password error messages, please log a support ticket via the [Admin Console.](https://adminconsole.adobe.com/)
 
 If you don't receive an email from New Relic:
 
