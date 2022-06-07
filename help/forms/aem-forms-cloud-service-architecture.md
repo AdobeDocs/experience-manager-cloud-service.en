@@ -9,13 +9,11 @@ exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 
 AEM Forms as a Cloud Service supports two major use cases: Digital Enrollment and Customer Communications. The following illustrations depict architecture for both the use cases.
 
-## Architecture and flow diagrams
-
-**Forms Digital Enrollment**
+## Forms Digital Enrollment 
 
 ![Forms-Digital Enrolment](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)
 
-**Forms Communications**  
+## Forms Communications
 
 ![Forms-Communication](assets/forms-cloud-service-architecture-forms-communications.svg)
 
