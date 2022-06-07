@@ -212,7 +212,75 @@ Here are some scenarios where one might want to explicitly invalidate the cache,
 
 There are two approaches: using Sling Content Distribution (SCD) from the author, which is preferred, and using the Replication API to invoke the publish dispatcher flush replication agent. The approaches differ in terms of (a) tier availability, and (b) ability to deduplicate the events, and (c) event processing guarantee. The table below summarizes the options:
 
-insert table here
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>N/A</th>
+    <th>Tier availability</th>
+    <th>Deduplication </th>
+    <th>Guarantee </th>
+    <th>Action </th>
+    <th>Impact </th>
+    <th>Description </th>
+  </tr>  
+  <tr>
+    <td>Sling Content Distribution (SCD) API</td>
+    <td>Author</td>
+    <td>Possible using either the Discovery API or enabling the <a href="https://github.com/apache/sling-org-apache-sling-distribution-journal/blob/e18f2bd36e8b43814520e87bd4999d3ca77ce8ca/src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributedEventNotifierManager.java#L146-L149">deduplication mode</a>.</td>
+    <td>At least once.</td>
+    <td>
+     <ol>
+       <li>ADD</li>
+       <li>DELETE</li>
+       <li>INVALIDATE</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>Hierarchical/Stat Level</li>
+       <li>Hierarchical/Stat Level</li>
+       <li>Level Resource-Only</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>Publishes content and invalidates the cache.</li>
+       <li>Removes content and invalidates the cache.</li>
+       <li>Invalidates content without publishing it.</li>
+     </ol>
+     </td>
+  </tr>
+  <tr>
+    <td>Replication API</td>
+    <td>Publish</td>
+    <td>Not possible, event raised on every publish instance.</td>
+    <td>Best effort.</td>
+    <td>
+     <ol>
+       <li>ACTIVATE</li>
+       <li>DEACTIVATE</li>
+       <li>DELETE</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>Hierarchical/Stat Level</li>
+       <li>Hierarchical/Stat Level</li>
+       <li>Hierarchical/Stat Level</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>Publishes content and invalidates the cache.</li>
+       <li>From Author/Publish Tier - Removes content and invalidates the cache.</li>
+       <li><p><strong>From Author Tier</strong> - Removes content and invalidate the cache (if triggered from AEM Author tier on the Publish agent).</p>
+           <p><strong>From Publish Tier</strong> - Invalidates cache only - (if triggered from AEM Publish tier on the Flush or Resource-only-flush agent).</p>
+       </li>
+     </ol>
+     </td>
+  </tr>
+  </tbody>
+</table>
 
 In the table above, the SCD API’s INVALIDATE action and the Replication API’s DEACTIVATE action are the actions relevant to the pure cache invalidation use case.
 
