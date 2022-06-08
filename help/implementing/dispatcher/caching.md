@@ -202,11 +202,11 @@ When the publish instance receives a new version of a page or asset from the aut
 
 ## Explicit dispatcher cache invalidation {#explicit-invalidation}
 
-Adobe's recommendation is to rely on standard cache headers to control the content delivery life cycle. If needed, it is possible to invalidate content directly in dispatcher.
+Adobe's recommendation is to rely on standard cache headers to control the content delivery life cycle. However, if needed, it is possible to invalidate content directly in dispatcher.
 
 The following list contains some scenarios where you might want to explicitly invalidate the cache (while optionally listening for the completion of the invalidation):
 
-* After publishing content such as experience fragments or content fragments, invalidating published and cached content that reference those elements.
+* After publishing content such as experience fragments or content fragments, invalidating published and cached content that references those elements.
 * Notifying an external system when referenced pages are successfully invalidated.
 
 There are two approaches to explicitly invalidate the cache:
@@ -214,7 +214,7 @@ There are two approaches to explicitly invalidate the cache:
 * The preferred approach is using Sling Content Distribution (SCD) from the author.  
 * By using the Replication API to invoke the publish dispatcher flush replication agent.
 
-The approaches differ in terms of tier availability, the ability to deduplicate the events and event processing guarantee. The table below summarizes the options:
+The approaches differ in terms of tier availability, the ability to deduplicate events and event processing guarantee. The table below summarizes these options:
 
 <table style="table-layout:auto">
  <tbody>
@@ -286,21 +286,21 @@ The approaches differ in terms of tier availability, the ability to deduplicate 
   </tbody>
 </table>
 
-In the table above, the SCD API’s INVALIDATE action and the Replication API’s DEACTIVATE action are directly related to the cache invalidation use case.
+Please note that the two actions directly related to the cache invalidation use case are SCD API Invalidate and the Replication API Deactivate.
 
-From the table, we observe that:
+Also, from the table, we observe that:
 
 * SCD API is needed when every event must be guaranteed, for example, syncing with an external system that requires accurate knowledge. Note that if there is a publish tier upscaling event at the time of the invalidation call, an additional event will be raised when each new publish processes the invalidation.
 
 * Using the Replication API isn’t common, but should be used in cases where the trigger to invalidate the cache comes from the publish tier and not the author tier. This might be useful if dispatcher TTL is configured.
 
-In conclusion if you are looking to invalidate dispatcher cache, the recommended option is to use the SCD API Invalidate action from Author. Optionally, you can also listen for the event so you can then trigger any downstream actions.
+In conclusion, if you are looking to invalidate the dispatcher cache, the recommended option is to use the SCD API Invalidate action from Author. Optionally, you can also listen for the event so you can then trigger further downstream actions.
 
 ### Sling Content Distribution (SCD) {#sling-distribution}
 
-Here is the implementation pattern for using SCD:
+Presented below is the implementation pattern when using the SCD action from Author:
 
-1. From the author, write custom code to invoke the sling content distribution [API](https://sling.apache.org/documentation/bundles/content-distribution.html), passing the invalidate action with a list of paths:
+1. From author, write custom code to invoke the sling content distribution [API](https://sling.apache.org/documentation/bundles/content-distribution.html), passing the invalidate action with a list of paths:
 
 ```
 @Reference
@@ -315,7 +315,7 @@ distributor.distribute(agentName, resolver, distributionRequest);
 
 ```
 
-(Optionally) Listen for an event that reflects the resource being invalidated for all dispatcher instances:
+* (Optionally) Listen for an event that reflects the resource being invalidated for all dispatcher instances:
 
 
 ```
@@ -371,17 +371,21 @@ public class InvalidatedHandler implements EventHandler {
 
 <!-- Optionally, instead of using the isLeader approach, one could add an OSGi configuration for the PID org.apache.sling.distribution.journal.impl.publisher.DistributedEventNotifierManager and property deduplicateEvent=true. But we'll stick with just one strategy and not mention it (double-check this).**review this**-->
 
-(Optionally) Execute some business logic in the invalidated(String[] paths, String packageId) method above.
+* (Optionally) Execute business logic in the `invalidated(String[] paths, String packageId)` method above.
 
-Note: The Adobe CDN is not flushed when the dispatcher is invalidated. The Adobe-managed CDN respects TTLs and thus there is no need for it to be flushed.
+>[!NOTE]
+>
+>The Adobe CDN is not flushed when dispatcher is invalidated. The Adobe-managed CDN respects TTLs and thus there is no need for it to be flushed.
 
 ### Replication API {#replication-api}
 
-Here is the implementation pattern for using the Replication API:
+Presented below is the implementation pattern when using the replication API Deactivate action:
 
 1. On the publish tier, call the Replication API to trigger the publish dispatcher flush replication agent.
 
-The flush agent endpoint is not configurable but rather preconfigured to point to the dispatcher, matched with the publish service running alongside the flush agent. The flush agent can typically be triggered by custom code based on OSGi events or workflows.
+The flush agent endpoint is not configurable but rather preconfigured to point to the dispatcher, matched with the publish service running alongside the flush agent. 
+
+The flush agent can typically be triggered by custom code based on OSGi events or workflows.
 
 ```
 String[] paths = …
