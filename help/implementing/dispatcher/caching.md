@@ -200,17 +200,21 @@ Like previous versions of AEM, publishing or unpublishing pages will clear the c
 
 When the publish instance receives a new version of a page or asset from the author, it uses the flush agent to invalidate appropriate paths on its dispatcher. The updated path is removed from the dispatcher cache, together with its parents, up to a level (you can configure this with the [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
-
 ## Explicit dispatcher cache invalidation {#explicit-invalidation}
 
-While Adobe's recommendation is to rely on standard cache headers to control the content delivery life cycle, it is possible to invalidate content directly in the dispatcher.
+Adobe's recommendation is to rely on standard cache headers to control the content delivery life cycle. If needed, it is possible to invalidate content directly in dispatcher.
 
-Here are some scenarios where one might want to explicitly invalidate the cache, while optionally listening to the completion of that invalidation:
+The following list contains some scenarios where you might want to explicitly invalidate the cache (while optionally listening for the completion of the invalidation):
 
-* after publishing content such as experience fragments or content fragments, invalidating published and cached that reference those elements
-* notifying an external system when referenced pages are successfully invalidated.
+* After publishing content such as experience fragments or content fragments, invalidating published and cached content that reference those elements.
+* Notifying an external system when referenced pages are successfully invalidated.
 
-There are two approaches: using Sling Content Distribution (SCD) from the author, which is preferred, and using the Replication API to invoke the publish dispatcher flush replication agent. The approaches differ in terms of (a) tier availability, and (b) ability to deduplicate the events, and (c) event processing guarantee. The table below summarizes the options:
+There are two approaches to explicitly invalidate the cache:
+
+* The preferred approach is using Sling Content Distribution (SCD) from the author.  
+* By using the Replication API to invoke the publish dispatcher flush replication agent.
+
+The approaches differ in terms of tier availability, the ability to deduplicate the events and event processing guarantee. The table below summarizes the options:
 
 <table style="table-layout:auto">
  <tbody>
@@ -282,11 +286,11 @@ There are two approaches: using Sling Content Distribution (SCD) from the author
   </tbody>
 </table>
 
-In the table above, the SCD API’s INVALIDATE action and the Replication API’s DEACTIVATE action are the actions relevant to the pure cache invalidation use case.
+In the table above, the SCD API’s INVALIDATE action and the Replication API’s DEACTIVATE action are directly related to the cache invalidation use case.
 
 From the table, we observe that:
 
-SCD API is needed when every event must be guaranteed; for example, syncing with an external system that requires accurate knowledge. In addition, note that if there is a publish tier upscaling event at the time of the invalidation call, an addition events will be raised when each new publish processes the invalidation 
+SCD API is needed when every event must be guaranteed, for example, syncing with an external system that requires accurate knowledge. Note that if there is a publish tier upscaling event at the time of the invalidation call, an addition event will be raised when each new publish processes the invalidation.
 
 Using the Replication API isn’t common, but should be used in cases where the trigger to invalidate the cache comes from the publish tier and not author tier. This might be useful if dispatcher TTL is configured.
 
