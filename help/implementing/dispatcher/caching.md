@@ -204,7 +204,7 @@ When the publish instance receives a new version of a page or asset from the aut
 
 Adobe's recommendation is to rely on standard cache headers to control the content delivery life cycle. However, if needed, it is possible to invalidate content directly in dispatcher.
 
-The following list contains some scenarios where you might want to explicitly invalidate the cache (while optionally listening for the completion of the invalidation):
+The following list contains scenarios where you might want to explicitly invalidate the cache (while optionally listening for the completion of the invalidation):
 
 * After publishing content such as experience fragments or content fragments, invalidating published and cached content that references those elements.
 * Notifying an external system when referenced pages have been successfully invalidated.
