@@ -207,7 +207,11 @@ The document formats supported for asset management features are as follows.
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI     | ✓                     | -                                   | -                         | -                         | -                          |
 | INDD   | ✓                     | -                                   | -                         | -                         | -                          |
-| PDF    | ✓                     | ✓                                   | ✓                         | ✓                         | ✓                          |
+| PDF (See Note below)    | ✓                     | ✓                                   | ✓                         | ✓                         | ✓                          |
+
+>[!NOTE]
+>
+>For secure PDFs, only Upload is supported.
 
 ## Dynamic Media - Supported raster image formats {#image-support-dynamic-media}
 
