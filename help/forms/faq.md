@@ -73,7 +73,7 @@ You can connect a Form Data Model to [!DNL RESTful web services], [!DNL SOAP-bas
 * **Can I use custom certificates with Form Data Model for authentication?**
 Form Data Model does not provide a method to use custom certificates for authentication. So, the custom certificates like x509 and 2-way SSL are not supported.  
 
-* **Can I use Forms Portal submit action Adaptive Forms?** 
+* **Can I use Forms Portal submit action Adaptive Forms?**
 
   You can modify your existing Adaptive Forms to use [Submit to REST endpoint](configuring-submit-actions.md#submit-to-rest-endpoint), [Send email](configuring-submit-actions.md#send-email), [Submit using Form Data Model](configuring-submit-actions.md#submit-using-form-data-model), and [Invoke an AEM Workflow](configuring-submit-actions.md#invoke-an-aem-workflow) Submit actions. Forms Portal and Forms Portal submit action are not available yet. Keep an eye on monthly release notes for the availability of the features.
 
@@ -83,3 +83,7 @@ Form Data Model does not provide a method to use custom certificates for authent
   
 * **Which features are not part of the initial GA release?**
   Forms Portal, [!DNL AEM Forms] app, integration with Adobe Analytics, and integration with Adobe Target are not part of the initial GA release. Look for monthly release notes for information on new features.
+
+* **I have designed a [JSON schema to create an adaptive form](adaptive-form-json-schema-form-model.md). The JSON schema defines events for some components of adaptive forms. Does AEM Forms as a Cloud Service supports events?**
+  Create the Adaptive Form based on the JSON schema on Experience Manager 6.5 Forms environment and use the [Migration utility](migrate-to-forms-as-a-cloud-service.md) to migrate such Adaptive Forms to AEM Forms as a Cloud Service. The utility converts such events into client libraries and you can continue using Adaptive Forms with events in a Cloud Service environment.
+  
