@@ -277,8 +277,8 @@ The approaches differ in terms of tier availability, the ability to deduplicate 
      <ol>
        <li>Publishes content and invalidates the cache.</li>
        <li>From Author/Publish Tier - Removes content and invalidates the cache.</li>
-       <li><p><strong>From Author Tier</strong> - Removes content and invalidate the cache (if triggered from AEM Author tier on the Publish agent).</p>
-           <p><strong>From Publish Tier</strong> - Invalidates cache only - (if triggered from AEM Publish tier on the Flush or Resource-only-flush agent).</p>
+       <li><p><strong>From Author Tier</strong> - Removes content and invalidates the cache (if triggered from AEM Author tier on the Publish agent).</p>
+           <p><strong>From Publish Tier</strong> - Invalidates only the cache (if triggered from AEM Publish tier on the Flush or Resource-only-flush agent).</p>
        </li>
      </ol>
      </td>
@@ -286,7 +286,7 @@ The approaches differ in terms of tier availability, the ability to deduplicate 
   </tbody>
 </table>
 
-Please note that the two actions directly related to the cache invalidation use case are SCD API Invalidate and the Replication API Deactivate.
+Please note that the two actions directly related to cache invalidation are SCD API Invalidate and Replication API Deactivate.
 
 Also, from the table, we observe that:
 
