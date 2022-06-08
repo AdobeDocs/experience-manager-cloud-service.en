@@ -200,18 +200,18 @@ Like previous versions of AEM, publishing or unpublishing pages will clear the c
 
 When the publish instance receives a new version of a page or asset from the author, it uses the flush agent to invalidate appropriate paths on its dispatcher. The updated path is removed from the dispatcher cache, together with its parents, up to a level (you can configure this with the [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
-## Explicit dispatcher cache invalidation {#explicit-invalidation}
+## Explicit invalidation of the dispatcher cache {#explicit-invalidation}
 
 Adobe's recommendation is to rely on standard cache headers to control the content delivery life cycle. However, if needed, it is possible to invalidate content directly in dispatcher.
 
 The following list contains some scenarios where you might want to explicitly invalidate the cache (while optionally listening for the completion of the invalidation):
 
 * After publishing content such as experience fragments or content fragments, invalidating published and cached content that references those elements.
-* Notifying an external system when referenced pages are successfully invalidated.
+* Notifying an external system when referenced pages have been successfully invalidated.
 
 There are two approaches to explicitly invalidate the cache:
 
-* The preferred approach is using Sling Content Distribution (SCD) from the author.  
+* The preferred approach is using Sling Content Distribution (SCD) from Author.  
 * By using the Replication API to invoke the publish dispatcher flush replication agent.
 
 The approaches differ in terms of tier availability, the ability to deduplicate events and event processing guarantee. The table below summarizes these options:
@@ -292,15 +292,15 @@ Also, from the table, we observe that:
 
 * SCD API is needed when every event must be guaranteed, for example, syncing with an external system that requires accurate knowledge. Note that if there is a publish tier upscaling event at the time of the invalidation call, an additional event will be raised when each new publish processes the invalidation.
 
-* Using the Replication API isn’t common, but should be used in cases where the trigger to invalidate the cache comes from the publish tier and not the author tier. This might be useful if dispatcher TTL is configured.
+* Using the Replication API isn’t a common use case, but should be used in cases where the trigger to invalidate the cache comes from the publish tier and not the author tier. This might be useful if dispatcher TTL is configured.
 
-In conclusion, if you are looking to invalidate the dispatcher cache, the recommended option is to use the SCD API Invalidate action from Author. Optionally, you can also listen for the event so you can then trigger further downstream actions.
+In conclusion, if you are looking to invalidate the dispatcher cache, the recommended option is to use the SCD API Invalidate action from Author. Additionally, you can also listen for the event so you can then trigger further downstream actions.
 
 ### Sling Content Distribution (SCD) {#sling-distribution}
 
 Presented below is the implementation pattern when using the SCD action from Author:
 
-1. From author, write custom code to invoke the sling content distribution [API](https://sling.apache.org/documentation/bundles/content-distribution.html), passing the invalidate action with a list of paths:
+1. From Author, write custom code to invoke the sling content distribution [API](https://sling.apache.org/documentation/bundles/content-distribution.html), passing the invalidate action with a list of paths:
 
 ```
 @Reference
@@ -383,7 +383,7 @@ Presented below is the implementation pattern when using the replication API Dea
 
 1. On the publish tier, call the Replication API to trigger the publish dispatcher flush replication agent.
 
-The flush agent endpoint is not configurable but rather preconfigured to point to the dispatcher, matched with the publish service running alongside the flush agent. 
+The flush agent endpoint is not configurable but rather preconfigured to point to dispatcher, matched with the publish service running alongside the flush agent.
 
 The flush agent can typically be triggered by custom code based on OSGi events or workflows.
 
