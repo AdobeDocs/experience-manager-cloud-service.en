@@ -290,14 +290,11 @@ In the table above, the SCD API’s INVALIDATE action and the Replication API’
 
 From the table, we observe that:
 
-SCD API is needed when every event must be guaranteed, for example, syncing with an external system that requires accurate knowledge. Note that if there is a publish tier upscaling event at the time of the invalidation call, an addition event will be raised when each new publish processes the invalidation.
+* SCD API is needed when every event must be guaranteed, for example, syncing with an external system that requires accurate knowledge. Note that if there is a publish tier upscaling event at the time of the invalidation call, an additional event will be raised when each new publish processes the invalidation.
 
-Using the Replication API isn’t common, but should be used in cases where the trigger to invalidate the cache comes from the publish tier and not author tier. This might be useful if dispatcher TTL is configured.
+* Using the Replication API isn’t common, but should be used in cases where the trigger to invalidate the cache comes from the publish tier and not the author tier. This might be useful if dispatcher TTL is configured.
 
-If you’re looking to invalidate dispatcher cache, the recommended option:
-
-1. Use SCD API Invalidate action from Author.
-2. (Optional) Listen for the event to then trigger any downstream actions.
+In conclusion if you are looking to invalidate dispatcher cache, the recommended option is to use the SCD API Invalidate action from Author. Optionally, you can also listen for the event so you can then trigger any downstream actions.
 
 ### Sling Content Distribution (SCD) {#sling-distribution}
 
