@@ -82,13 +82,9 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 ### What is New {#what-is-new-foundation}
 
-* The [Repository Browser](/help/implementing/developing/tools/repository-browser.md) now has a path input field, making it possible to jump directly to a specific folder in the repository hierarchy.
+*  The "Add tree” option under the replication agent admin screen's **Distribute tab**, which was previously announced as deprecated, will be removed on June 20, 2022 or soon thereafter. Large packages should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow).
 
-* Enforcement of content package sizes in Replication API and and removal of Tree Replication UI 
-
-  * The Replication API supports content packages below 10MB, as documented in the [Replication article](/help/operations/replication.md#replication-api). This limit will be enforced on June 20, 2022 or soon thereafter, after which an error will be returned. Larger packages should be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow), which has an API.
-
-  * In addition, the "Add tree" option under the replication agent's admin screen's **Distribute tab** will be removed on June 20, 2022 or soon thereafter. Large packages should instead be replicated using Manage Publication or the Publish Content Tree workflow.
+*  Using the Replication Agent screen or Replication API for distributing content packages over 10MB is deprecated and the behavior will be enforced on September 12, 2022 or soon thereafter. Instead, [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) must be used to replicate content packages over 10 MB. In July, a warning message will appear in the  replication agent admin screen's **Distribute tab** if a large content package is being replicated, and also in the AEM error log whenever the Replication API is used to replicate a large content package. In September, warnings will be replaced by errors. Please adjust your processes accordingly.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Security {#foundation-security}
