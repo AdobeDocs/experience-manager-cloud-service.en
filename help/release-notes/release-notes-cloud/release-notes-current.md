@@ -82,7 +82,14 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 ### What is New {#what-is-new-foundation}
 
-The [Repository Browser](/help/implementing/developing/tools/repository-browser.md) now has a path input field, making it possible to jump directly to a specific folder in the repository hierarchy.
+* The [Repository Browser](/help/implementing/developing/tools/repository-browser.md) now has a path input field, making it possible to jump directly to a specific folder in the repository hierarchy.
+
+* Enforcement of content package sizes in Replication API and and removal of Tree Replication UI 
+
+  * The Replication API supports content packages below 10MB, as documented in the [Replication article](/help/operations/replication.md#replication-api). This limit will be enforced on June 20, 2022 or soon thereafter, after which an error will be returned. Larger packages should be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow), which has an API.
+
+  * In addition, the "Add tree" option under the replication agent's admin screen's **Distribute tab** will be removed on June 20, 2022 or soon thereafter. Large packages should instead be replicated using Manage Publication or the Publish Content Tree workflow.
+
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Security {#foundation-security}
 
