@@ -60,7 +60,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. In Experience Manager as a Cloud Service, select the Experience Manager as a Cloud Service logo to access the global navigation console.
 1. On the left of the console, select the Tools icon, then go to **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. On the Dynamic Media Configuration Browser page, in the left pane, select **[!UICONTROL global]** (do not select the folder icon to the left of **[!UICONTROL global]**). Then select **[!UICONTROL Create]**.
-1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter a title, the Dynamic Media account email address, password, then select your region. This information is provided to you by Adobe in the provisioning email. Contact Adobe Customer Support if you did not receive this email.
+1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter the title, Dynamic Media account email address, and password of the company administrator of the Dynamic Media account, then select your region. This information is provided to you by Adobe in the provisioning email. Contact Adobe Customer Support if you did not receive this email. 
 1. Select **[!UICONTROL Connect to Dynamic Media]**.
 1. In the **[!UICONTROL Change Password]** dialog box, in the **[!UICONTROL New Password]** field, enter a new password that consists of 8-25 characters. The password must contain at least one of each of the following:
 
@@ -227,7 +227,7 @@ To configure the default color properties for enabling color correction when req
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account using credentials provided during provisioning.
 1. Go to **[!UICONTROL Setup > Application Setup]**.
 1. Expand the **[!UICONTROL Publish Setup]** area and select **[!UICONTROL Image Server]**. Set **[!UICONTROL Publish Context]** to **[!UICONTROL Image Serving]** when setting defaults for publish instances.
-1. Scroll to the property you must change, for example a property in the **[!UICONTROL Color Management Attributes]** area.
+1. Scroll to the property that you must change, for example a property in the **[!UICONTROL Color Management Attributes]** area.
    You can set the following color correction properties:
 
    | Property | Description |
@@ -274,7 +274,7 @@ See [Upload assets](/help/assets/add-assets.md).
 
    * Double-tap the **[!UICONTROL enabled]** field. By default all asset MIME types are enabled (set to **[!UICONTROL true]**), which means the assets are synced to Dynamic Media for processing. If you want to exclude this asset MIME type from being processed, change this setting to **[!UICONTROL false]**.
 
-   * Double-tap **[!UICONTROL jobParam]** to open its associated text field. See [Supported MIME Types](/help/assets/file-format-support.md) for a list of permitted processing parameter values you can use for a given MIME type.
+   * Double-tap **[!UICONTROL jobParam]** to open its associated text field. See [Supported MIME Types](/help/assets/file-format-support.md) for a list of permitted processing parameter values that you can use for a given MIME type.
 
 1. Do one of the following:
    * Repeat steps 3-4 to edit more MIME types.
@@ -284,7 +284,7 @@ See [Upload assets](/help/assets/add-assets.md).
 
 #### Add MIME types for unsupported formats {#adding-mime-types-for-unsupported-formats}
 
-You can add custom MIME types for unsupported formats in Experience Manager Assets. To ensure that any new node you add in CRXDE Lite is not deleted by Experience Manager, move the MIME type before `image_`. Also, ensure that its enabled value is set to **[!UICONTROL false]**.
+You can add custom MIME types for unsupported formats in Experience Manager Assets. To ensure any new node that you add in CRXDE Lite is not deleted by Experience Manager, move the MIME type before `image_`. Also, ensure that its enabled value is set to **[!UICONTROL false]**.
 
 **To add MIME types for unsupported formats:**
 
