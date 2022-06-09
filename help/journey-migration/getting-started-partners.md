@@ -23,7 +23,9 @@ This one-pager outlines the recommended phased approach to transition customers 
 * Developer Journey in Adobe Experience Manager as a Cloud Service
 * Moving to Adobe Experience Manager as a Cloud Service -->
 
-<br>
+See the diagram below for a general representation of the migration journey.
+
+![image](/help/journey-migration/assets/migration-process.png)
 
 ## Getting Started with Adobe Experience Manager as a Cloud Service {#getting-started}
 
@@ -106,7 +108,7 @@ With Experience Manager as a Cloud Service, your teams can focus on innovating i
 The transition journey to Cloud Service involves three phases - Planning, Execution, and Post Go-live.
 For a successful and smooth transition, you should ensure proper planning and adhere to best practices outlined in this Guide.
 
-The figure below shows a pictorial representation of the recommended transition journey to Cloud Service.
+The figure below shows a high level representation of the recommended transition journey to Cloud Service.
 
 ![image](/help/journey-migration/assets/home-img1.png)
 

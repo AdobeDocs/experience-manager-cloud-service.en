@@ -51,7 +51,7 @@ To perform a tree activation:
 
 For best performance, follow these guidelines when using this feature:
 * It is recommended to replicate fewer than 100 paths at a time, with a 500 path hard limit. 
-* The total size of the replicated content must be below 5 MB. This just includes the nodes and properties, but not any binaries, which include workflow packages and content packages.
+* The total size of the replicated content must be below 10 MB. This just includes the nodes and properties, but not any binaries, which include workflow packages and content packages.
 
 ### Publish Content Tree Workflow {#publish-content-tree-workflow}
 
@@ -187,7 +187,7 @@ The overall `ReplicationStatus` of a resource is only modified if the replicatio
 
 **Replication API path and size limits**
 
-It is recommended to replicate fewer than 100 paths, with 500 being the hard limit. Above the hard limit, a ReplicationException will be thrown. If your application logic does not require atomic replication, this limit can be overcome by setting the ReplicationOptions.setUseAtomicCalls to false, which will accept any number of paths, but internally create buckets to stay below this limit. The amount of content transmitted per replication call must not exceed 5 MB, which includes the nodes and properties, but not any binaries (workflow packages and content packages are considered binaries). 
+It is recommended to replicate fewer than 100 paths, with 500 being the hard limit. Above the hard limit, a ReplicationException will be thrown. If your application logic does not require atomic replication, this limit can be overcome by setting the ReplicationOptions.setUseAtomicCalls to false, which will accept any number of paths, but internally create buckets to stay below this limit. The amount of content transmitted per replication call must not exceed 10 MB, which includes the nodes and properties, but not any binaries (workflow packages and content packages are considered binaries). 
 
 ## Troubleshooting {#troubleshooting}
 
