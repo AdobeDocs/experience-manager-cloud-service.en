@@ -41,7 +41,7 @@ Have a look at the May 2022 Release Overview video for a summary of the features
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* [Dynamic Media Smart Imaging](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) now supports AVIF file format - further improve Google Core Web Vital (Largest Contentful Paint), with AVIF providing 20% extra size reduction over WebP. In total, AVIF provides upto 41% average size reduction over JPEG (in some images even as high as 76%).
+* [Dynamic Media Smart Imaging](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) now supports AVIF file format - further improve Google Core Web Vital (Largest Contentful Paint), with AVIF providing 20% extra size reduction over WebP. In total, AVIF provides up to 41% average size reduction over JPEG (in some images even as high as 76%).
 
 * [!UICONTROL Experience Manager Assets Brand Portal] now executes automatic jobs every twelve hours to delete all Brand Portal assets that are published to AEM. As a result, you do not need to delete the assets in the Contribution folder manually to keep the folder size below the threshold limit. See [What's new in Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
@@ -76,7 +76,7 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 * Multi value product picker field shows 2nd and additional products as invalid
 
-* Product Picker is occassionally hidden behind components
+* Product Picker is occasionally hidden behind components
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
