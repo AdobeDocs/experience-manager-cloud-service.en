@@ -1,11 +1,11 @@
 ---
-title: Overview of Adobe Experience Manager as a Cloud Service
-description: Adobe Experience Manager as a Cloud Service overview self-help resources and documentation links
+title: Getting started with Experience Manager as a Cloud Service
+description: Learn how Experience Manager as a Cloud Service works and what the software can do for you.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
 ---
 # Experience Manager as a Cloud Service Overview {#aem-overview-guide}
 
-This page lists self-help resources giving an introduction to, and overview of, Experience Manager as a Cloud Service.
+Start here to learn how Experience Manager as a Cloud Service works and what the software can do for you.
 
 ## Key Overview Articles {#key-articles}
 
