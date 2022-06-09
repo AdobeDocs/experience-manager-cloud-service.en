@@ -18,6 +18,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Terminology - New for the Cloud](/help/overview/terminology.md)
   + [An Introduction to the Architecture of AEM as a Cloud Service](/help/overview/architecture.md)
   + [SEO and URL Management](/help/overview/seo-and-url-management.md)
+  + [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
   + [Assessing KPIs](/help/overview/assessing-kpis.md)
   + [Aligning KPIs](/help/overview/aligning-kpis.md)
   + [Choosing the Right Team](/help/overview/choose-right-team.md)
@@ -27,6 +28,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + General AEMaaCS Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
       + [Release Notes for 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
       + [Release Notes for 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
     + 2021 {#2021}
@@ -352,6 +354,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Digital Rights Management for assets](/help/assets/drm.md)
     + [Watermark assets](/help/assets/watermark-assets.md)
     + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
+    + [Color tags for images](/help/assets/color-tag-images.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
@@ -606,6 +609,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [GraphQL Endpoint](/help/headless/setup/create-api-request.md)
   + Content Fragments {#content-fragments}
     + [Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
+    + [Content Fragments Console](/help/headless/content-fragments/content-fragment-console.md)
     + [Content Fragment Models](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
     + [Managing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
     + Authoring{#authoring}
