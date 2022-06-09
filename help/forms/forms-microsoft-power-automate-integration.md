@@ -5,7 +5,7 @@ hide: yes
 hidefromtoc: yes
 ---
 
-# Connect an Adaptive Form with Microsoft Power Automate {##connect-adaptive-form-with-power-automate}
+# Connect an Adaptive Form with Microsoft Power Automate {#connect-adaptive-form-with-power-automate}
 
 You can configure an Adaptive Form to run a Microsoft® Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft® Power Automate to build business logics around captured data and automate customer workflows. Here are a few examples of what you can do after integrating an Adaptive Form with Microsoft Power Automate: 
 
@@ -26,7 +26,7 @@ The following are required to connect an Adaptive Form with Microsoft Power Auto
 * A Experience Manager users with Forms Author and Forms Admin privileges.
 
 
-# Connect your Forms as a Cloud Service instance with Microsoft Power Automate {#connect-forms-server-with-power-automate}
+## Connect your Forms as a Cloud Service instance with Microsoft Power Automate {#connect-forms-server-with-power-automate}
 
 Perform the following actions to connect your Forms as a Cloud Service instance with Microsoft Power Automate:
 
@@ -67,7 +67,7 @@ Perform the following actions to connect your Forms as a Cloud Service instance 
 1. On the Certificates & secrets page, click New client secret. On the Add a Client Secret screen, provide a description and time peiod for the secret to expire, and click Add. A secret string is generated. 
 1. Keep a note of your organization specific [Dynamics environment URL](https://docs.microsoft.com/en-us/power-automate/web-api#compose-http-requests).
 
-# Create Microsoft Power Automate Dataverse Cloud Configuration {#microsoft-power-automate-dataverse-cloud-configuration}
+## Create Microsoft Power Automate Dataverse Cloud Configuration {#microsoft-power-automate-dataverse-cloud-configuration}
 
 1. On AEM Forms author instance, navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL General]** &gt; **[!UICONTROL Configuration Browser]**.
 1. On the **[!UICONTROL Configuration Browser]** page, tap **[!UICONTROL Create]**.
@@ -86,7 +86,7 @@ Perform the following actions to connect your Forms as a Cloud Service instance 
 1. Tap **[!UICONTROL Connect]** . If asked, login to your Microsoft Aure Account. Tap **[!UICONTROL Save]**.
 
 
-# Create Microsoft Power Automate Flow Service Cloud Configuration.
+## Create Microsoft Power Automate Flow Service Cloud Configuration.
 
 1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Microsoft Power Automate Flow Service]** and open the configuration container you created in the previous section.
 
@@ -99,9 +99,9 @@ Perform the following actions to connect your Forms as a Cloud Service instance 
 1. Tap **[!UICONTROL Connect]** . If asked, login to your Microsoft Aure Account. Tap **[!UICONTROL Save]**.
 
 
-# Publish the Microsoft Power Automate Dataverse Cloud Configuration {publish-microsoft-power-automate-dataverse-cloud-configuration}
+## Publish the Microsoft Power Automate Dataverse Cloud Configuration {publish-microsoft-power-automate-dataverse-cloud-configuration}
 
 1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Microsoft Power Automate Dataverse]** and open the configuration container you created in the previous [Create Microsoft Power Automate Dataverse Cloud Configuration](#microsoft-power-automate-dataverse-cloud-configuration) section.
 
 1. Select the `dataverse` configuration and tap **[!UICONTROL Publish]. 
-1. On the Publish page, select **[!UICONTROL All Configurations] and tap **[!UICONTROL Publish]. 
+1. On the Publish page, select **[!UICONTROL All Configurations]** and tap **[!UICONTROL Publish]**. 
