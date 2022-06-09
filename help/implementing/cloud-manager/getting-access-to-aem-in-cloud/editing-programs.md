@@ -26,19 +26,25 @@ Follow these steps to edit a program.
 
    ![Edit program option](assets/edit-program-overview.png)
 
-1. The **Edit Program** page displays two tabs: **General** and **Solutions &amp; Add-ons**. Select the **General** tab to edit the program name and description.
+1. The **Edit Program** page opens. On the **General** tab, edit the program name and description.
 
    * At least one solution must be selected for a program.
 
    ![General tab](assets/edit-program-prod1.png)
 
-1. Select the **Solutions &amp; Add-ons** tab to modify the solutions for the program.
+1. On the **Solutions &amp; Add-ons** tab, modify the solutions for the program.
 
    ![Select solutions](assets/edit-prg.png)
 
 1. Click on the chevron before the solution names to reveal optional add-ons such as selecting the **Commerce** add-on option under **Sites**.
 
-   ![Edit add-ons](assets/edit-program-add-on.png) 
+   ![Edit add-ons](assets/edit-program-add-on.png)
+
+1. On the **Go live settings** tab, modify the planned go-live date for the program.
+
+   ![Edit go-live settings](assets/edit-program-go-live.png)
+
+   * This date is for informational use only and triggers the Go Live widget on the program overview page to provide in-product links to AEM as a Cloud Service best practice documentation in a timely manner to align with your journey culminating in a successful and smooth Go Live experience.
 
 1. Click on **Update** to save your changes to the program.
 
