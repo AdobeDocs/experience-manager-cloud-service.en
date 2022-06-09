@@ -27,7 +27,7 @@ See the platform support and [prerequisites for the enhanced connector](https://
 >
 >* Adobe may release updates to [!DNL Adobe Workfront] and [!DNL Adobe Experience Manager] that make this connector redundant; if this occurs, customers may be required to transition from the use of this connector.
 >
->* Adobe supports enhanced connector versions 1.7.4 and higher. To check the enhanced connector version, see step 5(a) of [enhanced connector installation instructions](workfront-connector-install.md). 
+>* Adobe supports enhanced connector versions 1.7.4 and higher. Previous prerelease and custom versions are not supported. To check the enhanced connector version, see step 5(a) of [enhanced connector installation instructions](workfront-connector-install.md). 
 >
 >* See [Partner certification exam for Workfront for Experience Manager Assets enhanced connector](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). For information about the exam, [Exam Guide](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
