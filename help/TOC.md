@@ -554,7 +554,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Installing Screens Player](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
     + [Registering the Player](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
     + [Assigning Player to a Display](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
-  + Using Code Product Features {#core-product-features}
+  + Using Core Product Features {#core-product-features}
     + [Thumbnail Support for Videos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
   + Developing in Screens as a Cloud Service {#developing-screens-cloud}
     + [REST APIs](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
