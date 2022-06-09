@@ -30,8 +30,6 @@ Have a look at the May 2022 Release Overview video for a summary of the features
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### New features in [!DNL Sites] {#sites-features}
-
 ### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
 
 * Various GraphQL functionalities
