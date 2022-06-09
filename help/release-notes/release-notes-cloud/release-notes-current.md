@@ -19,60 +19,72 @@ The following section outlines the general Release Notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.4.0) is May 5, 2022.
-The next release (2022.5.0) is planned for June 9, 2022.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.5.0) is June 9, 2022.
+The next release (2022.6.0) is planned for June 30, 2022.
 
 ## Release Video {#release-video}
 
-Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/342612?quality=12) video for a summary of the features added in the 2022.4.0 release.
+Have a look at the May 2022 Release Overview video for a summary of the features added in the 2022.5.0 release:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343321/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### New features in [!DNL Sites] {#sites-features}
 
-* Content model data types can now be defined as [translatable](/help/assets/content-fragments/content-fragments-models.md#properties) using a simple checkbox in the content model editor. Additionally, AEM translation rules and configurations are automatically updated.
+### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
+
+* Various GraphQL functionalities
+* A new console optimized for Headless use of Content Fragments
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* You can now [sort tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) in the tag picker window in ascending or descending order based on the tag name, date of creation, or date of modification.
+* [Dynamic Media Smart Imaging](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) now supports AVIF file format - further improve Google Core Web Vital (Largest Contentful Paint), with AVIF providing 20% extra size reduction over WebP. In total, AVIF provides up to 41% average size reduction over JPEG (in some images even as high as 76%).
+
+* [!UICONTROL Experience Manager Assets Brand Portal] now executes automatic jobs every twelve hours to delete all Brand Portal assets that are published to AEM. As a result, you do not need to delete the assets in the Contribution folder manually to keep the folder size below the threshold limit. See [What's new in Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
+
+### New features available in [!DNL Assets] prerelease channel {#prerelease-features-assets}
+
+Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish between colors in an image and apply those as tags automatically on ingestion](../../assets/color-tag-images.md). These tags enable enhanced Search experience, based on image color composition. You can configure the number of colors, within a range of one to forty, that are tagged to an image so that you can search for images based on those colors later.
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### What is new in [!DNL Forms] {#what-is-new-forms}
+### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
 
-* **Communications - Document Manipulation APIs support in Forms as a Cloud Service SDK**: [Document Manipulation APIs](/help/forms/aem-forms-cloud-service-communications.md) help to combine, rearrange, and validate PDF documents. You can now use Communications - Document Generation APIs on a local development environment with the help of AEM Forms as a Cloud Service SDK.
+* **Integrate Adaptive Forms with Microsoft® Power Automate**: You can now configure an Adaptive Form to run a Microsoft® Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft® Power Automate to build business logics around captured data and automate customer workflows.
 
-* **Use custom XCI for generating a Document of Record**: You can now [use a custom XCI file to set various properties of a Document of Record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). It overrides the master XCI with the custom changes. It provides more control over the generation of Documents of Record, increasing personalization, and customization opportunities.
+* **Wizard to create an Adaptive Form**: You can use business user friendly wizard to quickly author Adaptive Forms. The wizard provides a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form.
 
-* **Use invisible CAPTCHA in an adaptive form**: You can use the [invisible CAPTCHA to show the CAPTCHA challenge only in the case of a suspicious activity](/help/forms/captcha-adaptive-forms.md). If no suspicious activity is found the CAPTCHA challenge is not displayed. It helps assess human form completion without checkbox requirements, reduce customization efforts, and improve the end-user experience.
-
-* **Form Data Model Configurations**: You can now [reuse Form Data Model configurations across environments](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config), simplifying data integrations and reducing IT costs.
+    ![Wizard to create an Adaptive Form](/help/release-notes/assets/wizard.png)
 
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
 
-* Quick access to product cockpit: Easily access full detailed product information with one-click in Sites Editor
+* New product cockpit properties page for better and simplified overview
 
-    ![Enable wishlist](/help/assets/CIF/enable-wishlist.png)
+ ![product cockpit properties overview](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* Support for additional marketing commerce components:  Components can be configured to show an add-to-cart and add-to-wishlist call-to-action
+* Improved compatibility and robustness for 3rd party connectors on I/O Runtime
 
-    ![Sites editor shortcut to product cockpit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+* Improved support for GQL Client configuration overwrites (e.g. set custom caching behavior)
+
+### Bug fixes {#bug-fixes-cif}
+
+* Multi value product picker field shows 2nd and additional products as invalid
+
+* Product Picker is occasionally hidden behind components
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### SDK Build Analyzers {#sdk-build-analyzers}
+### What is New {#what-is-new-foundation}
 
-The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a maven project, including missing dependencies. It gives developers an opportunity to discover issues during local development, well before deploying to Cloud environments with Cloud Manager. 
+*  The "Add tree” option under the replication agent admin screen's **Distribute tab**, which was previously announced as deprecated, will be removed on June 20, 2022 or soon thereafter. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow).
 
-A new analyzer has been recently added:
-
-* `content-packages-validation` - validates for well formed content syntax and structure for packages that will be installed during deployment
-
-It is strongly recommended to update your maven project with the latest version of the analyzer or include the analyzer if you haven't yet done so. For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html).
+*  Using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is deprecated and will be enforced on September 12, 2022 or soon thereafter. Instead, [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) must be used to replicate these large content packages. In July, a warning message will appear in the  replication agent admin screen's **Distribute tab** if attempting to replicate these large content packages and also in the AEM error log whenever the replication API is used to replicate these large content packages. In September, warnings will be replaced by errors. Please adjust your processes accordingly.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Security {#foundation-security}
 
