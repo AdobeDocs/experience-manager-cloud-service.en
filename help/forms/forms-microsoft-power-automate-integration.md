@@ -3,8 +3,8 @@ title: Integrate an Adaptive Form with Microsoft Power Automate
 description: Integrate an Adaptive Form with Microsoft Power Automate.
 hide: yes
 hidefromtoc: yes
+exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 ---
-
 # Connect an Adaptive Form with Microsoft Power Automate {#connect-adaptive-form-with-power-automate}
 
 You can configure an Adaptive Form to run a Microsoft® Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft® Power Automate to build business logics around captured data and automate customer workflows. Here are a few examples of what you can do after integrating an Adaptive Form with Microsoft Power Automate: 
@@ -85,7 +85,6 @@ Perform the following actions to connect your Forms as a Cloud Service instance 
 
 1. Tap **[!UICONTROL Connect]** . If asked, login to your Microsoft Aure Account. Tap **[!UICONTROL Save]**.
 
-
 ## Create Microsoft Power Automate Flow Service Cloud Configuration.
 
 1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Microsoft Power Automate Flow Service]** and open the configuration container you created in the previous section.
@@ -95,13 +94,10 @@ Perform the following actions to connect your Forms as a Cloud Service instance 
    >When you create an Adaptive Form, specify the container name in the **[!UICONTROL Configuration Container]** field.  
 1. On the configuration page, tap **[!UICONTROL Create]** to create [!DNL Microsoft Power Automate Flow Service] configuration in AEM Forms.
 1. On the **[!UICONTROL Configure Dataverse for Microsoft Power Automate]** page, Specify the **[!UICONTROL Client ID]** (also referred to as Application ID), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]** and **[!UICONTROL Dynamic Environment URL]**. Use the Client ID, Client Secret, OAuth URL, and Dynamic Environment URL of [Microsoft Power Automate Application](#ms-power-automate-application) you created in the previous section. Use Endpoints option in Microsoft Power Automate application UI to find OAuth URL
-
-1. Tap **[!UICONTROL Connect]** . If asked, login to your Microsoft Aure Account. Tap **[!UICONTROL Save]**.
-
+1. Tap **[!UICONTROL Connect]**. If asked, login to your Microsoft Aure Account. Tap **[!UICONTROL Save]**.
 
 ## Publish the Microsoft Power Automate Dataverse Cloud Configuration {publish-microsoft-power-automate-dataverse-cloud-configuration}
 
 1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Microsoft Power Automate Dataverse]** and open the configuration container you created in the previous [Create Microsoft Power Automate Dataverse Cloud Configuration](#microsoft-power-automate-dataverse-cloud-configuration) section.
-
 1. Select the `dataverse` configuration and tap **[!UICONTROL Publish]. 
-1. On the Publish page, select **[!UICONTROL All Configurations]** and tap **[!UICONTROL Publish]**. 
+1. On the Publish page, select **[!UICONTROL All Configurations]** and tap **[!UICONTROL Publish]**.

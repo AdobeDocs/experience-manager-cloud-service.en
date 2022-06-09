@@ -46,7 +46,3 @@ After your Experience Manager launch, a strong set of KPIs will quickly give you
 >[!TIP]
 >
 > If you’d like additional help with your KPIs, please reach out to [Adobe Consulting Services](https://www.adobe.com/experience-cloud/consulting-services.html) or your implementation partner.
-
-For more examples of the types of results major companies have seen from using Adobe Experience Manager, download the IDC reports:  
-* [The Business Value of Adobe Experience Manager Sites](https://www.adobe.com/content/dam/acom/en/modal-offers/idc-aem-sites-q218/pdfs/22037555.en.aem.whitepaper.IDCBusinessValueAEMSites.pdf) 
-* [The Business Value of Adobe Experience Manager Assets](https://wwwimages2.adobe.com/content/dam/acom/en/modal-offers/idc-aem-Assets-q218/pdfs/220380622.en.aem.whitepaper.IDCBusinessValueAEMAssets.pdf)

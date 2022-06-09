@@ -43,4 +43,4 @@ Follow the steps below to publish the channel:
 
 ## What's Next {#whats-next}
 
-Now, that you have published your channels in the project, you should now continue your Screens as a Cloud Service journey by next reviewing the document, [Installing and Configuring Players in Screens as a Cloud Service](/help/screens-cloud/creating-content/manage-publish.md).
+Now, that you have published your channels in the project, you should now continue your Screens as a Cloud Service journey by next reviewing the document, [Installing and Configuring Players in Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
