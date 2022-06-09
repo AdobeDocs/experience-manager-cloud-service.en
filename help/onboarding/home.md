@@ -1,6 +1,6 @@
 ---
 title: Onboarding for Adobe Experience Manager as a Cloud Service
-description: Adobe Experience Manager as a Cloud Service onboarding self-help resources and documentation links
+description: Get started with Experience Manager setup, access the cloud and find out how to back up your data. 
 landing-page-description: This guide provides an summary of how to get started with AEM as a Cloud Service, including how to get access and important data protection information.
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 ---
