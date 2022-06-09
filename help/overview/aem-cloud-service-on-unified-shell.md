@@ -1,8 +1,8 @@
 ---
 title: AEM as a Cloud Service on Unified Shell
 description: AEM as a Cloud Service on Unified Shell
+exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 ---
-
 # AEM as a Cloud Service on Unified Shell {#aem-as-a-cloud-service-on-unified-shell}
 
 >[!NOTE]
@@ -66,4 +66,3 @@ The AEM Inbox can be accessed by clicking on the bell icon in the unified shell.
 Click on the Inbox button in the pop-over to go to your AEM Inbox:
 
 ![image](/help/overview/assets/unifiedshell6.png)
-

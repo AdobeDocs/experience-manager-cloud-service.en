@@ -2,8 +2,8 @@
 title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.12.0
 description: These are the release notes for Cloud Manager in AEM as a Cloud Service release 2021.12.0.
 feature: Release Information
+exl-id: ee920bc5-cad7-4fac-bf73-bc1178699f90
 ---
-
 # Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.12.0 {#release-notes}
 
 This page outlines the release notes for Cloud Manager in AEM as a Cloud Service 2021.12.0.
@@ -41,4 +41,4 @@ The release date for Cloud Manager in AEM as a Cloud Service 2021.12.0 is Decemb
 * Functional and UI test artifacts were not included in the build step log.
 * The logs for the product, functional, and UI test steps were not accessible through the public API.
 * In rare cases, the link from the environment details page to the publish or preview service would be non-functional.
-* Full stack production pipelines remain named "Production Pipeline" even when the user inputs a different name in the name field. 
+* Full stack production pipelines remain named "Production Pipeline" even when the user inputs a different name in the name field.
