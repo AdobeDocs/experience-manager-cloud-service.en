@@ -55,4 +55,4 @@ Follow the steps below to delete an existing project from Screens Content Provid
 
 ## What's Next {#whats-next}
 
-Now, that you have setup an AEM Screens project, you can create a new channel and add content to the channels. Refer to [Creating and Managing a Channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en) to learn how to create and manage content in Channels.
+Now, that you have setup an AEM Screens project, you can create a new channel and add content to the channels. Refer to [Creating and Managing a Channel](creating-channels-screens-cloud.md) to learn how to create and manage content in Channels.
