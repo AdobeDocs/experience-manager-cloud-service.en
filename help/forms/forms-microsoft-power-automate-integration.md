@@ -96,7 +96,7 @@ Perform the following actions to connect your Forms as a Cloud Service instance 
 1. On the **[!UICONTROL Configure Dataverse for Microsoft Power Automate]** page, Specify the **[!UICONTROL Client ID]** (also referred to as Application ID), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]** and **[!UICONTROL Dynamic Environment URL]**. Use the Client ID, Client Secret, OAuth URL, and Dynamic Environment URL of [Microsoft Power Automate Application](#ms-power-automate-application) you created in the previous section. Use Endpoints option in Microsoft Power Automate application UI to find OAuth URL
 1. Tap **[!UICONTROL Connect]**. If asked, login to your Microsoft Aure Account. Tap **[!UICONTROL Save]**.
 
-## Publish the Microsoft Power Automate Dataverse Cloud Configuration {publish-microsoft-power-automate-dataverse-cloud-configuration}
+# Publish the Microsoft Power Automate Dataverse Cloud Configuration {#publish-microsoft-power-automate-dataverse-cloud-configuration}
 
 1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Microsoft Power Automate Dataverse]** and open the configuration container you created in the previous [Create Microsoft Power Automate Dataverse Cloud Configuration](#microsoft-power-automate-dataverse-cloud-configuration) section.
 1. Select the `dataverse` configuration and tap **[!UICONTROL Publish]. 
