@@ -32,13 +32,17 @@ an OSGi configuration file is defined at:
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-following the cfg.json OSGi configuration format.
+following the `cfg.json` OSGi configuration format.
 
 >[!NOTE]
 >
->Prior versions of AEM supported OSGi configuration files using different file formats such as .cfg., .config and as XML sling:OsgiConfig resource definitions. These formats are superseded by the cfg.json OSGi configuration format.
+>Prior versions of AEM supported OSGi configuration files using different file formats such as `.cfg`, `.config` and as XML `sling:OsgiConfig` resource definitions. These formats are superseded by the `.cfg.json` OSGi configuration format.
 
 ## Runmode Resolution {#runmode-resolution}
+
+>[!TIP]
+>
+>AEM 6.x supports custom runmodes, however AEM as a Cloud Service does not. AEM as a Cloud Service support an [exact set of runmodes](./overview.md#runmodes). Any variation in OSGi configurations between AEM as a Cloud Service environments must be handled using [OSGi configuration environment variables](#environment-specific-configuration-values).
 
 Specific OSGi configurations can be targeted to specific AEM instances by using runmodes. To use runmode, create config folders under `/apps/example` (where example is your project name), in the format:
 
@@ -54,9 +58,35 @@ This rule's granularity is at a PID level. This means you cannot define some pro
 
 >[!NOTE]
 >
->A `config.preview` OSGI configuration folder **cannot** be declared in the same way a `config.publish` can be declared folder. Instead, the preview tier inherits its OSGI configuration from the publish tier's values. 
+>A `config.preview` OSGi configuration folder **cannot** be declared in the same way a `config.publish` can be declared folder. Instead, the preview tier inherits its OSGi configuration from the publish tier's values. 
 
-When developing locally, a runmode startup parameter can be passed in to dictate which runmode OSGI configuration is used.
+When developing locally, a runmode startup parameter, `-r`, is used to specify the runmode OSGI configuration.
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
+
+### Verifying runmodes
+
+AEM as a Cloud Service runmodes are well defined based on the environment type and service. Review the [complete list of available AEM as a Cloud Service runmodes](./overview.md#runmodes).
+
+OSGi configuration values specified by runmode can be verified by:
+
+1. Opening the AEM as a Cloud Services environment's [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
+1. Selecting the service tier(s) to inspect, using the __Pod__ dropdown
+1. Selecting the __Status__ tab
+1. Selecting __Configurations__ from the __Status Dump__ dropdown
+1. Selecting the __Get Status__ button
+
+The resulting view displays all OSGi component configurations for the selected tier(s) with their applicable OSGi configuration values. These values can be cross-referenced with the OSGi configuration values in the AEM project's source code under `/apps/example/osgiconfig/config.<runmode(s)>`.
+
+
+To verify the appropriate OSGi configuration values are applied:
+
+1. In the Developer Console's Configuration output
+1. Locate the `pid` representing the OSGi configuration to verify; this is the name of the OSGi configuration file in the AEM project's source code.
+1. Inspect the `properties` list for the `pid` and verify the key and values match the OSGi configuration file in the AEM project source code for the runmode being verified.=
+
 
 ## Types of OSGi Configuration Values {#types-of-osgi-configuration-values}
 
@@ -194,7 +224,7 @@ OSGi configuration should assign a placeholder for the variable that is intended
 use $[env:ENV_VAR_NAME]
 ```
 
-Customers should only use this technique for OSGI configuration properties related to their custom code; it must not be used to override Adobe-defined OSGI configuration.
+Customers should only use this technique for OSGi configuration properties related to their custom code; it must not be used to override Adobe-defined OSGi configuration.
 
 >[!NOTE]
 >
@@ -261,12 +291,12 @@ For example if `$[secret:server_password]` is used, a text file named **server_p
 
 ### Author versus Publish Configuration {#author-vs-publish-configuration}
 
-If an OSGI property requires different values for author versus publish:
+If an OSGi property requires different values for author versus publish:
 
 * Separate `config.author` and `config.publish` OSGi folders must be used, as described in the [Runmode Resolution section](#runmode-resolution).
 * There are two options of creating the independent variable names that should be used:
-  * the first option, which is recommended: in all OSGI folders (like `config.author` and `config.publish`) declared to define different values, use the same variable name. For example
-  `$[env:ENV_VAR_NAME;default=<value>]`, where the default corresponds to the default value for that tier (author or publish). When setting the environment variable via [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) or via a client, differentiate between the tiers using the "service" parameter as described in this [API reference documentation](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). The "service" parameter will bind the variable's value to the appropriate OSGI tier. It can be "author" or "publish" or "preview".
+  * the first option, which is recommended: in all OSGi folders (like `config.author` and `config.publish`) declared to define different values, use the same variable name. For example
+  `$[env:ENV_VAR_NAME;default=<value>]`, where the default corresponds to the default value for that tier (author or publish). When setting the environment variable via [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) or via a client, differentiate between the tiers using the "service" parameter as described in this [API reference documentation](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). The "service" parameter will bind the variable's value to the appropriate OSGi tier. It can be "author" or "publish" or "preview".
   * the second option, which is to declare distinct variables using a prefix such as `author_<samevariablename>` and `publish_<samevariablename>`
 
 ### Configuration Examples {#configuration-examples}
@@ -275,7 +305,7 @@ In the examples below, assume that there are three dev environments, in addition
 
 **Example 1**
 
-The intent is for the value of the OSGI property `my_var1` to be the same for stage and prod, but differ for each of the three dev environments.
+The intent is for the value of the OSGi property `my_var1` to be the same for stage and prod, but differ for each of the three dev environments.
 
 <table>
 <tr>
@@ -318,7 +348,7 @@ config.dev
 
 **Example 2**
 
-The intent is for the value of the OSGI property `my_var1` to differ for stage, prod, and for each of the three dev environments. Thus the Cloud Manager API must be called to set the value for `my_var1` for each dev env.
+The intent is for the value of the OSGi property `my_var1` to differ for stage, prod, and for each of the three dev environments. Thus the Cloud Manager API must be called to set the value for `my_var1` for each dev env.
 
 <table>
 <tr>
