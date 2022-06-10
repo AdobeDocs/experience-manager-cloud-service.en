@@ -40,13 +40,11 @@ Follow these steps to define the users of your New Relic One sub-account associa
 
 1. Click on the program for which you want to manage your New Relic One users.
 
-1. Switch to the **Environments** from the **Program Overview** page by clicking the **Environments** tab at the top of the screen.
-
-1. On the **Environments** screen, click the ellipsis button at the top of the screen next to the **Add Environment** button.
-
-1. In the ellipsis menu, click **Manage users**.
+1. At the bottom of the **Environments** card on the program overview page, click the ellipsis button and select **Manage users**.
 
    ![Manage users](assets/newrelic-manage-users.png)
+
+   * You can also access the **Manage users** option via the ellipsis button at the top of the **Environments** screen of your program.
 
 1. In the **Manage New Relic users** dialog, enter the first and last name of the user you wish to add, and click the **Add** button. Repeat this step for all users you wish to add.
 
@@ -92,11 +90,11 @@ To access New Relic One via Cloud Manager:
 
 1. Click on the program for which you want to access New Relic One.
 
-1. Switch to the **Environments** from the **Program Overview** page by clicking the **Environments** tab at the top of the screen.
+1. At the bottom of the **Environments** card on the program overview page, click the ellipsis button and select **Open New Relic**.
 
-1. On the **Environments** screen, click the ellipsis button at the top of the screen next to the **Add Environment** button.
+   ![Manage users](assets/newrelic-access.png)
 
-1. In the ellipsis menu, click **Open New Relic**.
+   * You can also access New Relic via the ellipsis button at the top of the **Environments** screen of your program.
 
 1. In the new browser tab that opens, sign in to New Relic One.
 
