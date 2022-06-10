@@ -38,9 +38,9 @@ This is a known issue due to Cloud Manager using a different version of Java to 
 
 ## The code quality check failed and our deployment is stuck. Is there a way to bypass this check? {#deployment-stuck}
 
-Yes. All code quality check failures except for the security rating are non-critical metrics, so they can be bypassed by expanding the items in the results UI.  
+Yes. All code quality check failures except for the security rating are non-critical metrics, so they can be bypassed as part of a deployment pipeline by expanding the items in the results UI.  
 
-See the document [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md) for more details.
+See the documents [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md) and [Configuring Non-Production Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) for more details.
 
 ## Can I use SNAPSHOT for the version of the Maven project? {#use-snapshot}
 
