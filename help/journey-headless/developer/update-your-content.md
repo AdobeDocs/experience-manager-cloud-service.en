@@ -311,7 +311,7 @@ Now that you have completed this part of the AEM Headless Developer Journey, you
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-You should continue your AEM headless journey by next reviewing the document [How to Go Live with Your Headless Application](go-live.md) where you actually take your AEM Headless project live!
+You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you will get familiar with the AEM architecture basics and tools you need to use to put your application together.
 
 ## Additional Resources {#additional-resources}
 

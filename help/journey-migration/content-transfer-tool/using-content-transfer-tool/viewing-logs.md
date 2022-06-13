@@ -17,20 +17,17 @@ Upon completion of each step (extraction and ingestion) check the logs and look 
 
 ## Steps for Viewing Logs {#viewing-logs}
 
-You can view logs for an existing migration set from the *Overview* page.
-Follow the steps below:
+To view the Extraction Logs, go to your source Adobe Experience Manager instance, then select the desired migration set. 
 
-1. Navigate to the *Overview* page and select the migration set that you want to delete and click **View Log** from the action bar.
+Then, follow the steps below:
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/view-log1.png)
+1. Select a migration set and click **View Log** from the action bar. This will bring up the Logs dialog. Click **Extraction log** to view the logs in a new tab.
 
-1. The **Logs** dialog box displays. Click **Extraction Logs** to view the logs in a new tab.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets/view-log2.png)
-Or,
-
-   You can also view logs for your migration set from the *Overview* screen. Select the migration set and click the status under **EXTRACTION** field. In this case, click  **FINISHED** to view logs in a new tab.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets/view-log3.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
+Or, click the **FINISHED** status to view logs in a new tab.
 
 1. To tail the logs without using the user interface, you can SSH into your source AEM environment and tail the `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
+
+1. To view Ingestion logs, go to the Ingestion Jobs list in Cloud Acceleration Manager and click on the three dots (**...**). You can then click on **Download log** to download logs.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)
