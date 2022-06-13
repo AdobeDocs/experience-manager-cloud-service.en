@@ -185,7 +185,7 @@ Any content-packages installed via Cloud Manager (both mutable and immutable) wi
 
 It is common for customers to include pre-built packages from third party sources such as software vendors like Adobe's translation partners. The recommendation is to host these packages in a remote repository and reference them in the `pom.xml`. This is possible for public repositories and also for private repositories with password protection, as described in [password protected maven repositories](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
-If storing the package in a remote repository is not possible, customers can place in a local, file system based Maven repository, which is committed to SCM as part of the project, and referenced by whatever depends on it. The repository would be declared in the project pomas illustrated below:
+If storing the package in a remote repository is not possible, customers can place in a local, file system based Maven repository, which is committed to SCM as part of the project, and referenced by whatever depends on it. The repository would be declared in the project pom as illustrated below:
 
 
 ```
@@ -303,13 +303,17 @@ The supported runmode configurations are:
 * **config.publish.dev** (*Applies to AEM Dev Publish service*)
 * **config.publish.stage** (*Applies to AEM Staging Publish service*)
 * **config.publish.prod** (*Applies to AEM Production Publish service*) 
-* **config.dev** (*Applies to AEM Dev services)
-* **config.stage** (*Applies to AEM Staging services)
-* **config.prod** (*Applies to AEM Production services)
+* **config.dev** (*Applies to AEM Dev services*)
+* **config.stage** (*Applies to AEM Staging services*)
+* **config.prod** (*Applies to AEM Production services*)
 
 The OSGI configuration that has the most matching runmodes is used.
 
-When developing locally, a runmode startup parameter can be passed in to dictate which runmode OSGI configuration will be used.
+When developing locally, a runmode startup parameter, `-r`, is used to specify the runmode OSGI configuration.
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
 
 <!-- ### Performance Monitoring {#performance-monitoring}
 
