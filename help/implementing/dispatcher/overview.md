@@ -23,6 +23,9 @@ The data flow is as follows:
 
 By default, the content type HTML/text is set to expire after 300s (5 minutes) at the dispatcher layer, a threshold which both the dispatcher cache and CDN respect. During redeployments of the publish service, the dispatcher cache is cleared and subsequently warmed up before the new publish nodes accept traffic.
 
-The sections below provide greater detail about content delivery, including CDN configuration and caching. 
+The follwing sections provide greater detail about content delivery:
+* [CDN configuration](/help/implementing/dispatcher/cdn.md)
+* [Caching](/help/implementing/dispatcher/caching.md)
+
 
 Information about replication from the author service to the publish service is available [here](/help/operations/replication.md).
