@@ -12,7 +12,7 @@ Persisted queries are GraphQL queries that are created and stored on the Adobe E
 >
 >Persisted Queries are recommended. See [GraphQL Query Best Practices (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) for details, and the related Dispatcher configuration.
 
-The [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) is available in AEM (by default, `dev-author`) for you to develop, test, and persist your GraphQL queries, before [transferring to your production environment](#transfer-persisted-query-production). For cases that need customization (for example, when [customizing the cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) you can use the API; see the curl example provided in [How to persist a GraphQL query](#how-to-persist-query).
+The [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) is available in AEM for you to develop, test, and persist your GraphQL queries, before [transferring to your production environment](#transfer-persisted-query-production). For cases that need customization (for example, when [customizing the cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) you can use the API; see the curl example provided in [How to persist a GraphQL query](#how-to-persist-query).
 
 ## Persisted Queries and Endpoints {#persisted-queries-and-endpoints}
 
