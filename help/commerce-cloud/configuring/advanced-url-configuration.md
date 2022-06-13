@@ -177,6 +177,18 @@ The `UrlProvider` is pre-configured to generate deep links to specific category 
 
 On publish tier instances on the other hand, catalog page URLs should be kept stable to not lose gains on search engine rankings for example. Because of that publish tier instances will not render deep links to specific catalog pages per default. To change this behaviour, the _CIF URL Provider Specific Page Strategy_ can be configured to always generate specific page URLs.
 
+### Multiple Catalog Pages {#multiple-product-pages}
+
+When editors want to have full control of the top level navigation of a site, using as single catalog page to render the top level categories of a catalog may not be desired. Instead editors can create muiltiple catalog pages, one for each category of the catalog they want to include in the top level navigation.
+
+For that use case each of the catalog pages may have a reference to a product and category page specific to the category configured for the catalog page. The `UrlProvider` will use these to created links for the pages and categories in the configured category. However, for performance reasons, the only the direct catalog page children of a Site's navigation root / landing page are considered for that.
+
+It is recommended that the product and category pages of a catalog pages are descendant to the catalog page, otherwise components like the Navigation or Breadcrumb may not work correctly. 
+
+>[!NOTE]
+>
+> Full support for multiple catalog pages requires [CIF Core Components 2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) or newer.
+
 ## Customizations {#customization}
 
 ### Custom URL Formats {#custom-url-format}
