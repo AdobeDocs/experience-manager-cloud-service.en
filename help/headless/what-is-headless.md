@@ -72,4 +72,4 @@ This is another term for a traditional CMS.
 
 You can read more about using AEM in a headless CMS topology here: 
 
-* [Introduction to Adobe Experience Manager as a Headless CMS](help/headless/introduction.md)
+* [Introduction to Adobe Experience Manager as a Headless CMS](/help/headless/introduction.md)
