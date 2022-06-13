@@ -98,6 +98,26 @@ You can also perform:
 
 * [Persisted Queries, that are cached](/help/headless/graphql-api/persisted-queries.md)
 
+### GraphQL Query Best Practices (Dispatcher) {#graphql-query-best-practices}
+
+The [Persisted Queries](/help/headless/graphql-api/persisted-queries.md) are the recommended method as:
+
+* they are cached
+* they are managed centrally by AEM as a Cloud Service
+
+The direct, and/or POST, queries are not recommended as they are not cached, so in a default instance the Dispatcher is configured to block such queries.
+
+>[!NOTE]
+>
+>To allow direct, and/or POST, queries in the Dispatcher you can ask your System Administrator to:
+>
+>* Create a Cloud Manager environment variable called `ENABLE_GRAPHQL_ENDPOINT` 
+>* with the value `true`
+
+>[!NOTE]
+>
+>The ability to perform direct queries may be deprecated at some point in the future.
+
 ### GraphiQL IDE {#graphiql-ide}
 
 You can test and debug GraphQL queries using the [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md). 
