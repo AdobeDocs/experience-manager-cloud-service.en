@@ -18,6 +18,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Terminology - New for the Cloud](/help/overview/terminology.md)
   + [An Introduction to the Architecture of AEM as a Cloud Service](/help/overview/architecture.md)
   + [SEO and URL Management](/help/overview/seo-and-url-management.md)
+  + [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
   + [Assessing KPIs](/help/overview/assessing-kpis.md)
   + [Aligning KPIs](/help/overview/aligning-kpis.md)
   + [Choosing the Right Team](/help/overview/choose-right-team.md)
@@ -27,6 +28,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + General AEMaaCS Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
       + [Release Notes for 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
       + [Release Notes for 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
     + 2021 {#2021}
@@ -56,11 +58,13 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
       + [Release Notes for 2022.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
       + [Release Notes for 2022.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
       + [Release Notes for 2022.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
       + [Release Notes for 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
     + 2021 {#2021}
+      + [Release Notes for 202.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-12-0.md)
       + [Release Notes for 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
       + [Release Notes for 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
       + [Release Notes for 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
@@ -350,6 +354,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Digital Rights Management for assets](/help/assets/drm.md)
     + [Watermark assets](/help/assets/watermark-assets.md)
     + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
+    + [Color tags for images](/help/assets/color-tag-images.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
@@ -551,7 +556,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Installing Screens Player](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
     + [Registering the Player](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
     + [Assigning Player to a Display](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
-  + Using Code Product Features {#core-product-features}
+  + Using Core Product Features {#core-product-features}
     + [Thumbnail Support for Videos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
   + Developing in Screens as a Cloud Service {#developing-screens-cloud}
     + [REST APIs](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
@@ -604,6 +609,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [GraphQL Endpoint](/help/headless/setup/create-api-request.md)
   + Content Fragments {#content-fragments}
     + [Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
+    + [Content Fragments Console](/help/headless/content-fragments/content-fragment-console.md)
     + [Content Fragment Models](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
     + [Managing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
     + Authoring{#authoring}
@@ -718,6 +724,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Adding an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [Applying and Un-Applying IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
       + [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
+    + [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md)
     + [Cloud Manager FAQs](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
