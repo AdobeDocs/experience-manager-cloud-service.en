@@ -3,7 +3,7 @@ title: What is a Headless CMS?
 description: Learn about Headless CMS. How do they work? What are the alternatives and differences? Why would you want to use a Headless CMS?
 ---
 
-# What is a Headless CMS? {#what-is-headless}
+# What is a Headless CMS? {#what-is-a-headless-cms}
 
 Headless content management is a key development for today's web design that decouples the frontend, client-side applications from the backend, content management system. A headless CMS is therefore responsible for the (backend) content management services, together with the mechanisms allowing the (frontend) applications to access that content.
 
