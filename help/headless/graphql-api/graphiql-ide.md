@@ -10,13 +10,9 @@ An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-o
 
 >[!NOTE]
 >
->Some of the functionality of this feature is available in the prerelease channel. In particular, functionality related to Persisted Queries.
-> 
->See the [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable the feature for your environment.
-
->[!NOTE]
+>GraphiQL is included in all environments of AEM (but will only be accessible/visible when you configure your endpoints).
 >
->GraphiQL is included in AEM, but by default it is only enabled on the `dev-authors` environments.
+>In previous releases, a package was needed to install the GraphiQL IDE. If you have this installed, it can now be removed.
 
 >[!NOTE]
 >You must have [configured your endpoints](/help/headless/graphql-api/graphql-endpoint.md) in the [configuration browser](/help/assets/content-fragments/content-fragments-configuration-browser.md) before using the GraphiQL IDE.
@@ -29,7 +25,7 @@ The **GraphiQL** tool allows you to test and debug your GraphQL queries by enabl
 * run your queries to immediately see the the results
 * manage **Query Variables** 
 * save, and manage **Persisted Queries**
-* publish, or unpublish, **Persisted Queries** (to/from `dev-publish`)
+* publish, or unpublish, **Persisted Queries** (for example, to/from `dev-publish`)
 * see the **History** of your previous queries
 * use the **Documentation Explorer** to access the documentation; helping you to learn and understand what methods are available.
 
@@ -40,7 +36,7 @@ You can access the query editor from either:
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
 
-You can use GraphiQL on your development author system so that they can be requested by your client application using GET requests, and publishing queries. For production usage, you must then [move your queries to your production environment](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Initially to production author for validating newly authored content with the queries, and finally production publish for live consumption.
+You can use GraphiQL on your system so that queries can be requested by your client application using GET requests, and for publishing queries. For production usage, you can then [move your queries to your production environment](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Initially to production author for validating newly authored content with the queries, and finally production publish for live consumption.
 
 ## Selecting your endpoint {#selecting-endpoint}
 
@@ -94,9 +90,9 @@ For example:
 
 ![GraphQL Variables](assets/cfm-graphqlapi-03.png "GraphQL Variables")
 
-## Publishing persisted queries (dev-publish) {#publishing-persisted-queries}
+## Publishing persisted queries {#publishing-persisted-queries}
 
-Once you have selected your persisted query from the list (left panel) you can use the **Publish** and **Unpublish** actions. This will activate them to your development publish environment (`dev-publish`) environment for easy access by your applications when testing.
+Once you have selected your persisted query from the list (left panel) you can use the **Publish** and **Unpublish** actions. This will activate them to your publish environment (for example, `dev-publish`) for easy access by your applications when testing.
 
 >[!NOTE]
 >
