@@ -100,6 +100,24 @@ To add the Smart Color Tags component to the Metadata Schema Form Editor:
 
      >[!VIDEO](https://video.tv.adobe.com/v/340124)
 
+## Color tags for existing images in DAM {#color-tags-existing-images}
+
+The already existing images in DAM are not color tagged automatically. You need to [!UICONTROL Reprocess Assets] manually to generate color tags for them.
+
+To color tag images, or folders (including subfolders) of assets that already exist in assets repository, follow these steps:
+
+1. Select the [!DNL Adobe Experience Manager] logo and then select assets from the [!UICONTROL Navigation] page.
+
+1. Select [!UICONTROL Files] to display the Assets interface.
+
+1. Navigate to the folder to which you want to apply color tags.
+
+1. Select the entire folder or specific images.
+
+1. Select ![Reprocess assets icon](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets] icon and select the [!UICONTROL Full Process] option.
+
+Once the process completes, navigate to the [!UICONTROL Properties] page of any image within the folder. The automatically added tags are seen in [!UICONTROL Smart Color Tags] section in [!UICONTROL Basic] tab.
+
 
 ## View smart color tags for images {#view-color-tags}
 
