@@ -31,4 +31,9 @@ The release date for Cloud Manager release 2022.6.0 in AEM as a Cloud Service is
 * A new Go Live widget on the home page of Cloud Service production programs now provides guidance to prepare for a successful go live experience.
 * [Build artifacts can now be reused](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) when using git mirroring.
 
-## Bug Fixes {#bug-fixes}
+## API Changes {#api-changes}
+
+* The [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API has been deprecated and [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) should be used instead.
+  * `List Programs` continues to work, but its usage will generate warning messages in logs.
+  * It will no longer be supported after three months.
+  
