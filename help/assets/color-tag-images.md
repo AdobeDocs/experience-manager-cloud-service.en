@@ -1,8 +1,8 @@
 ---
 title: Color tags for images
 description: Experience Manager Assets enables you to distinguish between colors in an image and apply those as tags automatically. You can then use these tags to search and filter images.
+exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 ---
-
 # Color tags for images {#color-tag-images}
 
 ![Color Tagging Banner](assets/banner-image.png)
@@ -161,7 +161,3 @@ To search images based on colors:
    You can filter images based on the selection of one color. The images that have the selected color as one of the smart color tags and above the [Coverage/ Dominance Threshold %](#manage-color-tagging-settings) display in the right pane.
 
 1. Click x in the Search bar to clear the filter.
-
-
-
-
