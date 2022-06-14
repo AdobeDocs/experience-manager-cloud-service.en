@@ -19,12 +19,12 @@ The following section outlines the general Release Notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.5.0) is June 9, 2022.
-The next release (2022.6.0) is planned for June 30, 2022.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.6.0) is June 30, 2022.
+The next release (2022.7.0) is planned for July 28, 2022.
 
 ## Release Video {#release-video}
 
-Have a look at the May 2022 Release Overview video for a summary of the features added in the 2022.5.0 release:
+Have a look at the June 2022 Release Overview video for a summary of the features added in the 2022.6.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343321/?quality=12)
 
@@ -88,13 +88,6 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 * AEM as a Cloud Service is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Refer to [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Security {#foundation-security}
-
-### TLS 1.0, 1.1 deprecation
-
-Starting June 30th 2022, Experience Manager as a Cloud Service will require a more secure network communication and data exchange with users systems. AEM will use exclusively Transport Layer Security (TLS), 1.2 protocol. Older TLS versions 1.0 and 1.1 will be deprecated.
-
-If you continue to use older versions of TLS as 1.0, 1.1, you could potentially lose access to Experience Manager as a Cloud Service.  
 
 ## Cloud Manager {#cloud-manager}
 
