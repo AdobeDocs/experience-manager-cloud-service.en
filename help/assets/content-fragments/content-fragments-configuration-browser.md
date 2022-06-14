@@ -38,7 +38,7 @@ To [use certain Content Fragment functionality](#creating-a-content-fragment-mod
 
 >[!NOTE]
 >
->[Sub-configurations](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (a configuration nested within a configuration) are fully supported for use with both Content Fragments, Content Fragment Models and GraphQL queries.
+>[Sub-configurations](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (a configuration nested within a configuration) are fully supported for use with Content Fragments, Content Fragment Models and GraphQL queries.
 
 1. Navigate to **Tools**, **General**, then open the **Configuration Browser**.
 
