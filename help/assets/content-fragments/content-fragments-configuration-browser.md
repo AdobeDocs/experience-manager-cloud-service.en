@@ -39,6 +39,13 @@ To [use certain Content Fragment functionality](#creating-a-content-fragment-mod
 >[!NOTE]
 >
 >[Sub-configurations](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (a configuration nested within a configuration) are fully supported for use with Content Fragments, Content Fragment Models and GraphQL queries.
+>
+>Just to note that:
+>
+>* A GraphQL endpoint will (still) be based on a parent (root) configuration.
+>
+>* Persisted queries will (still) be saved relevant to the parent (root) configuration.
+
 
 1. Navigate to **Tools**, **General**, then open the **Configuration Browser**.
 
