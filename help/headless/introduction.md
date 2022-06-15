@@ -11,6 +11,10 @@ Learn how to use Adobe Experience Manager (AEM) as a Headless CMS, with features
 
 You can read detailed documentation of the various features involved and/or follow the selection of [Headless Journeys to get an overview of the first steps](#first-steps).
 
+>[!NOTE]
+>
+>See also [What is Headless?](/help/headless/what-is-headless.md) for an introduction to Headless concepts and terminology.
+
 ## Overview {#overview}
 
 AEM Headless is a CMS solution from Experience Manager that allows structured content (Content Fragments) in AEM to be consumed by any app over HTTP using GraphQL. Headless implementations enable delivery of experiences across platforms and channels at scale.
