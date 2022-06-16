@@ -14,7 +14,11 @@ This is achieved using Content Fragments, together with the AEM GraphQL API (a c
 
 >[!NOTE]
 >
->See [Headless and AEM](/help/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
+>See also:
+>
+>* [What is Headless?](/help/headless/what-is-headless.md) for an introduction to Headless concepts and terminology.
+>
+>* [Headless and AEM](/help/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
 
 >[!NOTE]
 >
