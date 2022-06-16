@@ -179,11 +179,11 @@ On publish tier instances on the other hand, catalog page URLs should be kept st
 
 ### Multiple Catalog Pages {#multiple-product-pages}
 
-When editors want to have full control of the top level navigation of a site, using as single catalog page to render the top level categories of a catalog may not be desired. Instead editors can create muiltiple catalog pages, one for each category of the catalog they want to include in the top level navigation.
+When editors want to have full control of the top level navigation of a site, using a single catalog page to render the top level categories of a catalog may not be desired. Instead editors can create multiple catalog pages, one for each category of the catalog they want to include in the top level navigation.
 
-For that use case each of the catalog pages may have a reference to a product and category page specific to the category configured for the catalog page. The `UrlProvider` will use these to created links for the pages and categories in the configured category. However, for performance reasons, the only the direct catalog page children of a Site's navigation root / landing page are considered for that.
+For that use case, each of the catalog pages may have a reference to a product and category page specific to the category configured for the catalog page. The `UrlProvider` will use these to create links for the pages and categories in the configured category. However, for performance reasons only the direct catalog page children of a Site's navigation root / landing page are considered.
 
-It is recommended that the product and category pages of a catalog pages are descendant to the catalog page, otherwise components like the Navigation or Breadcrumb may not work correctly. 
+It is recommended that the product and category pages of a catalog page are descendant to that catalog page, otherwise components like the Navigation or Breadcrumb may not work correctly. 
 
 >[!NOTE]
 >
@@ -223,7 +223,7 @@ _**Balance between URL length and encoded information.**_
 
 Depending on the catalog size, in particular the size and depth of the category tree, it may not be reasonable to encode the full `url_path` of categories into the URL. In that case the URL length could be reduced by including only the category's `url_key` instead. This will support most of the features that are available when using the category `url_path`.
 
-Additionally, make use of [Sling Mappings](#sling-mapping) in order to combine the sku with the product `url_key`. In most e-commerce systems the sku follows a particular format and separating the sku from the `url_key` for incoming requests should eaesily be possible. With that in mind, it should be posible to rewrite a product page URL to `/p/{{category}}/{{sku}}-{{url_key}}.html`, and a category URL to `/c/{{url_key}}.html` respecitively. The `/p` and `/c` prefix are still necessaary in order to distinguish product and category pages from other content pages.
+Additionally, make use of [Sling Mappings](#sling-mapping) in order to combine the sku with the product `url_key`. In most e-commerce systems the sku follows a particular format and separating the sku from the `url_key` for incoming requests should eaesily be possible. With that in mind, it should be posible to rewrite a product page URL to `/p/{{category}}/{{sku}}-{{url_key}}.html`, and a category URL to `/c/{{url_key}}.html` respecitively. The `/p` and `/c` prefix are still necessary in order to distinguish product and category pages from other content pages.
 
 ### Migrating to a new URL Format {#migrate-url-formats}
 
