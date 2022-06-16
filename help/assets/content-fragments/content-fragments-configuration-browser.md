@@ -38,9 +38,12 @@ To [use certain Content Fragment functionality](#creating-a-content-fragment-mod
 
 >[!NOTE]
 >
->[Sub-configurations](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (a configuration nested within a configuration) are fully supported for use with Content Fragments, Content Fragment Models and GraphQL queries.
+>[Sub-configurations](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (a configuration nested within another configuration) are fully supported for use with Content Fragments, Content Fragment Models and GraphQL queries.
 >
 >Just to note that:
+>
+>
+>* After creating models in a sub-configuration, it is NOT possible to move or copy the model to another sub-configuration.
 >
 >* A GraphQL endpoint will (still) be based on a parent (root) configuration.
 >
