@@ -19,7 +19,7 @@ To use Content Fragment Models you:
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
 1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
-1. Navigate to the folder appropriate to your [configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. Navigate to the folder appropriate to your [configuration, or sub-configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Use **Create** to open the wizard.
 
    >[!CAUTION]
