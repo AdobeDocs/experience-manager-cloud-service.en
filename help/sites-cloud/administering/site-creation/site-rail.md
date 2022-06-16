@@ -24,7 +24,7 @@ The Site rail is used to manage theme and template related information for your 
 >
 >Review the [Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) to familiarize yourself with the Quick Site Creation tool and the front-end pipeline to easily customize your site theme.
 
-## Downloading Theme Sources {#downloading-theme-sources}
+## Downloading Theme Sources {#downloading-theme-sources}
 
 When you create a site in AEM based on a [site template,](site-templates.md) you can download your [site theme](site-themes.md) using the Site rail.
 
@@ -34,7 +34,7 @@ With the Site rail showing in the sites console, select the root of your site to
 
 Tap or click **Download Theme Sources** to download a local copy of the site theme as `.zip` file for customization purposes.
 
-## Downloading Template Resources {#downloading-template-resources}
+## Downloading Template Resources {#downloading-template-resources}
 
 [Site templates](site-templates.md) can contain information in addition to your site content structure and [site theme.](site-themes.md) Site templates can contain wireframe designs or other site-related files for example.
 
