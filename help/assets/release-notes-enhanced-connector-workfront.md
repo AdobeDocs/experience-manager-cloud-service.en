@@ -15,7 +15,7 @@ The release date for the latest version 1.9.0 of [!DNL Workfront for Experience 
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fix:
 
-* When you use `Upload Linked Folder` or `Send To` options available in Workfront to upload assets to Experience Manager as a Cloud Service, the assets get corrupted when you download them from Experience Manager.
+* When you upload via a linked folder or use the `Send To` action available in Workfront to upload assets to Experience Manager as a Cloud Service, the asset(s) get corrupted and cannot be opened in Adobe Photoshop.
 
 >[!IMPORTANT]
 >
