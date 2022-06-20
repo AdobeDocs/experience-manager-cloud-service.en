@@ -49,17 +49,17 @@ It is recommended to persist queries on an AEM author environment initially and 
 
 There are various methods of persisting queries, including:
 
-* the GraphiQL IDE - see [Saving Persisted Queries](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* GraphiQL IDE - see [Saving Persisted Queries](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) (preferred method)
 * curl - see the following example
 * Other tools, including [Postman](https://www.postman.com/)
 
-Here are the steps to persist a given query using the **curl** command line tool:
+The GraphiQL IDE is the **preferred** method for persisting queries. To persist a given query using the **curl** command line tool:
 
 1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
 
    For example, create a persisted query:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -82,7 +82,7 @@ Here are the steps to persist a given query using the **curl** command line tool
 
    For example, check for success:
 
-     ```xml
+     ```json
      {
        "action": "create",
        "configurationName": "wknd",
@@ -96,7 +96,7 @@ Here are the steps to persist a given query using the **curl** command line tool
 
    For example, use the persisted query:
 
-   ```xml
+   ```shell
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
@@ -105,7 +105,7 @@ Here are the steps to persist a given query using the **curl** command line tool
 
    For example, use the persisted query:
 
-   ```xml
+   ```shell
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -131,7 +131,7 @@ Here are the steps to persist a given query using the **curl** command line tool
 
    For example:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -144,7 +144,7 @@ Here are the steps to persist a given query using the **curl** command line tool
 
    For example:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -157,7 +157,7 @@ Here are the steps to persist a given query using the **curl** command line tool
 
    For example:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -179,44 +179,131 @@ Here are the steps to persist a given query using the **curl** command line tool
      }'
    ```
 
+
+## How to execute a Persisted query {#execute-persisted-query}
+
+To execute a Persisted query, a client application makes a GET request using the following syntax:
+
+```
+GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
+```
+
+Where `PERSISTENT_PATH` is a shortened path to where the Persistent query is saved.
+
+1. For example `wknd` is the configuration name and `plain-article-query` is the name of the Persistent query. To execute the query:
+
+   ```shell
+   $ curl -X GET \
+       https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query
+   ```
+
 1. Executing a query with parameters.
+
+    >[!NOTE]
+    >
+    > Query variables and values must be properly [encoded](#encoding-query-url) when executing a Persistent query.
 
    For example:
 
    ```xml
-   $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -H "Content-Type: application/json" \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-
    $ curl -X GET \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+       "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query-parameters%3Bapath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fmagazine%2Falaska-adventure%2Falaskan-adventures%3BwithReference%3Dfalse
    ```
+
+   See using [query variables](#query-variables) for more details.
+
+## Using query variables {#query-variables}
+
+Query variables can be used with Persisted Queries. The query variables are appended to the request prefixed with a semicolon (`;`) using the variable name and value. Multiple variables are separated by semicolons. 
+
+The pattern looks like the following:
+
+```
+<AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
+```
+
+For example the following query contains a variable `activity` to filter a list based on an activity value:
+
+```graphql
+query getAdventuresByActivity($activity: String!) {
+      adventureList (filter: {
+        adventureActivity: {
+          _expressions: [
+            {
+              value: $activity
+            }
+          ]
+        }
+      }){
+        items {
+          _path
+        adventureTitle
+        adventurePrice
+        adventureTripLength
+      }
+    }
+  }
+```
+
+This query can be persisted under a path `wknd/adventures-by-activity`. To call the Persisted query where `activity=Camping` the request would look like this:
+
+```
+<AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
+```
+
+Note that `%3B` is the UTF-8 encoding for `;` and `%3D` is the encoding for `=`. The query variables and any special characters must be [encoded properly](#encoding-query-url) for the Persisted query to execute.
+
+## Encoding the query URL for use by an app {#encoding-query-url}
+
+For use by an application, any special characters used when constructing query variables (i.e semicolons (`;`), equal sign (`=`), slashes `/`) must be converted to use the corresponding UTF-8 encoding.
+
+For example:
+
+```xml
+curl -X GET \ "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/adventure-by-path%3BadventurePath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fadventures%2Fbali-surf-camp%2Fbali-surf-camp"
+```
+
+The URL can be broken down into the following parts:
+
+| URL Part | Description |
+|----------| -------------|
+| `/graphql/execute.json` | Persistent query endpoint |
+| `/wknd/adventure-by-path` | Persistent query path |
+| `%3B`                | Encoding of `;` |
+| `adventurePath`      | Query variable |
+| `%3D`                | Encoding of `=` |
+| `%2F`                | Encoding of `/` |
+| `%2Fcontent%2Fdam...` | Encoded path to the Content fragment |
+
+In plain text the request URI looks like the following:
+
+```plaintext
+/graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
+```
+
+To use a persisted query in a client app, the AEM headless client SDK should be used for [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java), or [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). The Headless Client SDK will automatically encode any query variables appropriately in the request.
 
 ## Transferring a persisted query to your Production environment  {#transfer-persisted-query-production}
 
-Ultimately your persisted query needs to be on your production publish environment (of AEM as a Cloud Service), where it can be requested by client applications. To use a persisted query on your production publish environment, the related persistent tree needs to replicated:
+Persisted queries should always be created on an AEM Author service and then published (replicated) to an AEM Publish service. Often, Persisted queries are created and tested on lower environments like local or Development environments. It is then necessary to promote Persisted queries to higher level environments, ultimately making them available on a production AEM Publish environment for client applications to consume.
 
-* initially to production author for validating newly authored content with the queries, 
-* then finally to production publish for live consumption
+### Package Persistent queries
 
-There are several approaches for transferring your persisted query:
+Persistent queries can be built into [AEM Packages](/help/implementing/developing/tools/package-manager.md). AEM Packages can then be downloaded and installed on different environments. AEM Packages can also be replicated from an AEM Author environment to AEM Publish environments.
 
-1. Using a package:
-   1. Create a new package definition.
-   1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
-   1. Build the package.
-   1. Transfer the package (download/upload or replicate).
-   1. Install the package.
+To create a Package:
 
-1. Using a POST for replication:
+1. Navigate to **Tools** > **Deployment** > **Packages**.
+1. Create a new package by tapping **Create Package**. This will open a dialog to define the Package.
+1. In the Package Definition Dialog, under **General** enter a **Name** like "wknd-persistent-queries".
+1. Enter a version number like "1.0".
+1. Under **Filters** add a new **Filter**. Use the Path Finder to select the `persistentQueries` folder beneath the configuration. For example for the `wknd` configuration the full path will be `/conf/wknd/settings/graphql/persistentQueries`.
+1. Tap **Save** to save the new Package definition and close the dialog.
+1. Tap the **Build** button in the newly created Package definition.
 
-   ```xml
-   $ curl -X POST   http://localhost:4502/bin/replicate.json \
-   -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-   -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-   -F cmd=activate
-   ```
+After the package has been built you can: 
+  * **Download** the package and re-upload on a different environment.
+  * **Replicate** the package by tapping **More** > **Replicate**. This will replicate the package to the connected AEM Publish environment.
 
 <!--
 1. Using replication/distribution tool:
@@ -226,23 +313,3 @@ There are several approaches for transferring your persisted query:
 * Using a workflow (via workflow launcher configuration):
   1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 -->
-
-Once the query configuration is on your publish environment in production, the same authentication principles apply, just using the publish endpoint.
-
->[!NOTE]
->
->For anonymous access the system assumes that the ACL allows "everyone" to have access to the query configuration.
->
->If that is not the case it will not be able to execute.
-
-## Encoding the query URL for use by an app {#encoding-query-url}
-
-For use by an application, any semicolons (";") in the URLs need to be encoded.
-
-For example, as in the request to Execute a persisted query:
-
-```xml
-curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-```
-
-To use a persisted query in a client app, the AEM headless client SDK should be used [AEM Headless Client for JavaScript](https://github.com/adobe/aem-headless-client-js).
