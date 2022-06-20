@@ -182,6 +182,10 @@ To learn more about the upload algorithms or to build your own upload scripts an
 * [Open-source aem-upload library](https://github.com/adobe/aem-upload).
 * [Open-source command-line tool](https://github.com/adobe/aio-cli-plugin-aem).
 
+>[!NOTE]
+>
+>The aem-upload library and the command-line tool both use the [node-httptransfer library](https://github.com/adobe/node-httptransfer/)
+
 ### Deprecated asset upload APIs {#deprecated-asset-upload-api}
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
