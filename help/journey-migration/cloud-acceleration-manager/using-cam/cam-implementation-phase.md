@@ -38,7 +38,7 @@ Follow this section to explore the Local Development activity card:
 
 ## Using Code Refactoring Card {#code-refactoring}
 
-The Code Refactoring activity card card provides all the relevant information and highlights the code refactoring areas you need to review and resolve when moving to AEM as a Cloud Service.
+The Code Refactoring activity card provides all the relevant information and highlights the code refactoring areas you need to review and resolve when moving to AEM as a Cloud Service.
 
 Follow this section to explore the Code Refactoring activity card:
 
