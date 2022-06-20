@@ -262,7 +262,8 @@ See [Upload assets](/help/assets/add-assets.md).
 
 **To edit MIME types for supported formats:**
 
-1. In Experience Manager as a Cloud Service, select the Experience Manager as a Cloud Service logo to access the global navigation console, then go to **[!UICONTROL General > CRXDE Lite]**.
+1. Sign in to your Experience Manager as a Cloud Service as the product administrator.
+1. In Experience Manager as a Cloud Service , select the Experience Manager as a Cloud Service logo to access the global navigation console, then go to **[!UICONTROL General > CRXDE Lite]**.
 1. In the left rail, navigate to the following:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -288,6 +289,7 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
 **To add MIME types for unsupported formats:**
 
+1. Sign in to your Experience Manager as a Cloud Service as the product administrator.
 1. From Experience Manager as a Cloud Service, go to **[!UICONTROL Tools > Operations > Web Console]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
@@ -369,6 +371,10 @@ See also [Adding MIME types for unsupported formats](#adding-mime-types-for-unsu
 
 The Granite Workflow queue is used for non-transient workflows. In Dynamic Media, it used to process video with the **[!UICONTROL Dynamic Media Encode Video]** workflow.
 
+>[!NOTE]
+>
+>You must be signed in to Experience Manager as a Cloud Service as the product administrator to complete this task.
+
 **To update the predefined Granite Workflow Queue (video assets) worker threads:**
 
 1. Navigate to `https://<server>/system/console/configMgr` and search for **Queue: Granite Workflow Queue**.
@@ -390,6 +396,10 @@ The Granite Workflow queue is used for non-transient workflows. In Dynamic Media
 #### Update the predefined Granite Transient Workflow Queue worker threads {#update-granite-transient-workflow-queue-worker-threads-images}
 
 The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asset]** workflow. In Dynamic Media, it is used for image and non-video asset ingestion and processing.
+
+>[!NOTE]
+>
+>You must be signed in to Experience Manager as a Cloud Service as the product administrator to complete this task.
 
 **To update the predefined Granite Transient Workflow queue worker threads:**
 
@@ -414,7 +424,11 @@ The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asse
 
 #### Update the maximum upload connections to the Dynamic Media Classic (Scene7) server {#update-max-s7-upload-connections}
 
-The Dynamic Media Classic (Scene7)) Upload Connection setting synchronizes Experience Manager assets to Dynamic Media Classic servers.
+The Dynamic Media Classic (Scene7) Upload Connection setting synchronizes Experience Manager assets to Dynamic Media Classic servers.
+
+>[!NOTE]
+>
+>You must be signed in to Experience Manager as a Cloud Service as the product administrator to complete this task.
 
 **To update the maximum upload connections to the Dynamic Media Classic (Scene7) server:**
 
