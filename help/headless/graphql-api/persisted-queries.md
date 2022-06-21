@@ -302,6 +302,7 @@ To create a Package:
 1. Tap the **Build** button in the newly created Package definition.
 
 After the package has been built you can: 
+
 * **Download** the package and re-upload on a different environment.
 * **Replicate** the package by tapping **More** > **Replicate**. This will replicate the package to the connected AEM Publish environment.
 
