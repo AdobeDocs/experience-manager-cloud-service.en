@@ -227,7 +227,7 @@ Additionally, make use of [Sling Mappings](#sling-mapping) in order to combine t
 
 ### Migrating to a new URL Format {#migrate-url-formats}
 
-Many of the default URL formats are somehow compatible with each other, meaing that URLs foramtted by one may be parsed by another one. That helps migrating between URL formats.
+Many of the default URL formats are somehow compatible with each other, meaing that URLs formatted by one may be parsed by another one. That helps migrating between URL formats.
 
 On the other hand, search engines will need some time to re-crawl all catalog pages with the new URL format. To support this process and also to improve the end user experience, it is recommended to provide redirects that forward the user from the old URLs to the new ones.
 
