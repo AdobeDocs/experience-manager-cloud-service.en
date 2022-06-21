@@ -48,7 +48,7 @@ This and the following pages cover the tasks for creating, configuring, maintain
 >* [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* [Customizing and Extending Content Fragments](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
->* [Content Fragments Support in AEM Assets HTTP API](/help/sites-cloud/administering/content-fragments/assets-api-content-fragments.md)
+>* [Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
 
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
