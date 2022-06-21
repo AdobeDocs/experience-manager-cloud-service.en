@@ -3,7 +3,7 @@ title: Content Fragments Console
 description: Learn how to manage Content Fragments from the Content Fragments Console.
 landing-page-description: Learn how to manage Content Fragments from the Content Fragments Console that is focused on high volume use of Content Fragments for Headless use-cases, but also used when page authoring.
 ---
-# Content Fragments Console  {#content-fragment-console}
+# Content Fragments Console  {#content-fragments-console}
 
 Learn how the Content Fragments console optimizes access to your Content Fragments, helping you create, search, and manage them by taking admin actions such as publish, unpublish, copy.
 
