@@ -1,9 +1,6 @@
 ---
 title: Content Fragments - Configuration Browser
 description: Learn how to enable specific Content Fragment functionality in the Configuration Browser.
-feature: Content Fragments
-role: User
-exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 ---
 # Content Fragments - Configuration Browser{#content-fragments-configuration-browser}
 
