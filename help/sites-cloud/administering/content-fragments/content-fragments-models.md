@@ -1,9 +1,6 @@
 ---
 title: Content Fragment Models
 description: Learn how Content Fragment Models serve as a foundation for your Content Fragments in AEM. These allow you to create structured content for use in headless delivery, or page authoring.
-feature: Content Fragments
-role: User
-exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 ---
 # Content Fragment Models {#content-fragment-models}
 
