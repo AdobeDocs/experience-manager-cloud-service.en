@@ -467,4 +467,4 @@ This markdown will then be displayed in the [Component Console.](/help/sites-clo
 
 ![README.md visible in the Components Console](assets/components-documentation-console.png)
 
-The supported markdown is the same as that for [content fragments.](/help/assets/content-fragments/content-fragments.md)
+The supported markdown is the same as that for [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md).

@@ -47,4 +47,4 @@ Now that you have created a folder for your Content Fragments, you can move on t
 
 >[!TIP]
 >
->For complete details about managing Content Fragments, see the [Content Fragments documentation](/help/assets/content-fragments/content-fragments.md)
+>For complete details about managing Content Fragments, see the [Content Fragments documentation](/help/sites-cloud/administering/content-fragments/content-fragments.md)
