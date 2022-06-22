@@ -146,7 +146,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 ### Editing a Fragment {#editing-fragment}
 
-You can open a fragment immediately after creating it, or by selecting it from the Assets console.
+You can open a fragment immediately after creating it, or by selecting it from the Content Fragments console (also from the Assets console).
 
 When the editor first opens you'll see:
 
