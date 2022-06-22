@@ -26,7 +26,7 @@ Persisted queries must always use the endpoint related to the [appropriate Sites
 
 >[!NOTE]
 >
->See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
+>See [Enable Content Fragment Functionality in Configuration Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
 >
 >The **GraphQL Persistent Queries** need to be enabled, for the appropriate Sites configuration. 
 
