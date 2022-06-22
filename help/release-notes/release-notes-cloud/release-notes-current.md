@@ -34,6 +34,8 @@ Have a look at the June 2022 Release Overview video for a summary of the feature
 
 * A new [user interface](/help/headless/content-fragments/content-fragment-console.md) is now available for content admins and content authors to efficiently manage (take actions such as publish, unpublish, copy, move, etc.), search/filter, and create content fragments for Headless use-cases.
 
+    ![Content Fragment Console](/help/release-notes/assets/cf-ui.png)
+
 ### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
 
 * Various GraphQL functionalities
