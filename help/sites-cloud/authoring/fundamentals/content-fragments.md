@@ -174,5 +174,5 @@ Other changes, such as move, copy, delete must be made in the fragment editor.
 
 Fragments need to be published so they can used used on your published web pages:
 
-* A fragment can be published after [creating the fragment in the Assets console](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment). 
+* A fragment can be published after [creating the fragment in the Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment). 
 * If an *unpublished fragment* is used on a page that is being published, the fragment can also be published at this time.
