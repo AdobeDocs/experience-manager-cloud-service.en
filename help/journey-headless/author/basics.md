@@ -243,23 +243,23 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
 
     * [Manage Publication](/help/assets/manage-publication.md#manage-publication) 
 
-* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
  
-  * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
+  * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-    * [Apply the Configuration to your Assets Folder](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * [Apply the Configuration to your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
   
-    * [Creating a Content Fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+    * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
   
-  * [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
+  * [Variations - Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-  * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-    * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
+    * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
   
-    * [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#properties)
+    * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
-    *  [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+    *  [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 * Getting Started Guides
   * [Creating an Assets Folder Headless Setup](/help/headless/setup/create-assets-folder.md)
