@@ -48,6 +48,14 @@ Sharpening is described in [Sharpening Images](/help/assets/dynamic-media/assets
 
 ## Crop options {#crop-options}
 
+When you implement Smart Crop on images, Adobe recommends the following best practice and enforces the following limit:
+
+| Limit type | Best practice | Implemented limit |
+| --- | --- | --- |
+| Number of Smart Crops per image | 5 | 100 |
+
+See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
+
 <!-- CQDOC-16069 for the paragraph directly below -->
 
 Smart Crop coordinates are aspect ratio dependent. For the smart crop settings in an Image Profile, if the aspect ratio is the same for the added dimensions in the Image Profile, then the same aspect ratio is sent to Dynamic Media. Adobe recommends that you use the same crop area. Doing so ensures that there is no impact to different dimensions used in the Image Profile.
