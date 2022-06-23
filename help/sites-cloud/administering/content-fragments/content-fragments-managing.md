@@ -99,7 +99,10 @@ This will open the **Customize table** dialog where you can select/deselect the 
 
 You can search and/or filter the Content Fragments to be shown in the console.
 
-You can select the filters with the **Show Filters** icon and use the search box in parallel:
+You can:
+
+* select the required folder
+* select the filters with the **Show Filters** icon and use the search box in parallel:
 
 ![Customize table icon](assets/cfm-managing-cf-console-filter-search-01.png)
 
