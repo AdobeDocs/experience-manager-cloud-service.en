@@ -65,16 +65,23 @@ In the **Content Fragments** console a range of actions are available for your c
 
 * **Open in Assets**
 * **Create**
+* The **Referenced By** column also provides a direct link to show all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages.
+* Hovering over the folder name will show the JCR path.
 
 After selection of your fragment all appropriate actions are available:
 
 ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png)
 
 * **Open**
-* **Publish**
+* **Publish** (and **Unpublish**)
 * **Copy**
 * **Move**
+* **Rename**
 * **Delete**
+
+>[!NOTE]
+>
+>Actions such as Publish, Unpublish, Delete, Move, Rename, Copy, trigger an asynchronous job. The progress of that job can be monitored via the AEM Async Jobs UI.
 
 ## Customizing the view in the Content Fragments Console {#viewing-content-fragment-console}
 
@@ -349,6 +356,18 @@ In addition, when you [publish a page that uses the fragment](/help/sites-cloud/
 >
 >After a fragment has been published and/or referenced, AEM will display a warning when an author opens the fragment for editing again. This is to warn that changes to the fragment will affect the referenced pages as well.
 
+## Unpublishing a Fragment {#unpublishing-a-fragment}
+
+To unpublish Content Fragments, select one or more fragments, then **Unpublish**.
+
+>[!NOTE]
+>
+>The **Unpublish** action will be visible when published fragments are available.
+
+>[!CAUTION]
+>
+>If the fragment is already referenced from another fragment, or from a page, you will then see a warning message and be required to confirm that you want to proceed.
+
 ## Deleting a Fragment {#deleting-a-fragment}
 
 To delete a fragment:
@@ -365,4 +384,4 @@ To delete a fragment:
 
    >[!CAUTION]
    >
-   >If the fragment is already referenced in a page you will then see a warning message and be required to confirm that you want to proceed with a **Force Delete**. The fragment, together with its content fragment component, will be deleted from any content pages.
+   >If the fragment is already referenced from another fragment, or from a page, you will then see a warning message and be required to confirm that you want to proceed with a **Force Delete**. The fragment, together with its content fragment component, will be deleted from any content pages.
