@@ -74,6 +74,7 @@ In Linux:
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 
 ```
+
 In Windows:
 
 ```
