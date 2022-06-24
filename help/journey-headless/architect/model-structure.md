@@ -33,7 +33,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Creating Content Fragment Models {#creating-content-fragment-models}
 
-Then the Content Fragments Models can be created and the structure defined. This can be done under Tools -> Assets -> Content Fragment Models. 
+Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** -> **General** -> **Content Fragment Models**. 
 
 ![Content Fragment Models in Tools](assets/cfm-tools.png)
 
@@ -104,7 +104,7 @@ Now that you have learned the basics, the next step is to start creating your ow
 
 * [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for navigating to, and taking action on, **Content Fragment Models** under the **Assets** console.
+* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for navigating to, and taking action on, **Content Fragment Models** under the **General** console.
 
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
  
