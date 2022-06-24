@@ -1,14 +1,13 @@
 ---
 title: Dynamic Media limitations
-description: Learn about the best practices and enforced limits when you create an Image Set or a Spin Set, or upload a PDF. Also learn about unsupported web browser and operating system combinations for Dynamic Media Viewers. 
+description: Learn about the best practices and enforced limits when you create an Image Set or a Spin Set, or upload a PDF. Also learn about unsupported web browser and operating system combinations for Dynamic Media Viewers.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-
-
+exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
 ---
 # Dynamic Media Limitations
 
