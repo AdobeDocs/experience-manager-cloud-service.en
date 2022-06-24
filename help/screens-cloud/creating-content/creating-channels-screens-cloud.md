@@ -168,4 +168,4 @@ As a consequence, this may lead to blank screens if there is no alternate conten
 
 ## What's Next {#whats-next}
 
-Now, that you have setup an AEM Screens channel in your project, you need to publish your channel. Refer to [Publishing Channels in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en) before managing your players from Screens Services Provider.
+Now, that you have setup an AEM Screens channel in your project, you need to publish your channel. Refer to [Publishing Channels in Screens as a Cloud Service](manage-publish.md) before managing your players from Screens Services Provider.
