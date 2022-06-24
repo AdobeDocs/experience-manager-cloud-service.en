@@ -7,6 +7,10 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 ---
 # Connect an Adaptive Form with Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
 
+>[!NOTE]
+>
+>The feature is under pre-release program and can change significatly before the public release.
+
 You can configure an Adaptive Form to run a Microsoft® Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft® Power Automate to build business logics around captured data and automate customer workflows. Here are a few examples of what you can do after integrating an Adaptive Form with Microsoft® Power Automate: 
 
 * Use Adaptive Forms data in a Power Automate business processes
@@ -114,11 +118,12 @@ Perform the following actions to connect your Forms as a Cloud Service instance 
 
 1. On the Authentication page, enable the following options, and click Save.
 
+
     * Access tokens (used for implicit flows)
     * ID tokens (used for implicit and hybrid flows)
 
 1. On the API permissions page, click Add a permission. 
-1. Under Microsoft APIs, select the Flow Service, and select the following permissions. 
+1. Under Microsoft® APIs, select the Flow Service, and select the following permissions. 
     * Flows.Manage.All
     * Flows.Read.All
 
