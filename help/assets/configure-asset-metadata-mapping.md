@@ -18,8 +18,6 @@ An image `add-users-workfront.png` exists in the `Metadata Syncs` project in Ado
 
 * Document description
 
-This article provides an end-to-end journey on how you can retain the image name, description, and project metadata when you send an image from Workfront to Experience Manager Assets.
-
 ## Prerequisites {#prerequisites}
 
 * An administrator access to Workfront and Experience Manager Assets as a Cloud Service applications.
