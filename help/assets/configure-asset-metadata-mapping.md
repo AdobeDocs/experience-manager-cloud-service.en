@@ -2,15 +2,15 @@
 title: Configure asset metadata mapping between Workfront and Experience Manager Assets
 description: Configure [!DNL Workfront for Experience Manager enhanced connector]
 ---
-# Configure asset metadata mapping between Workfront and Experience Manager Assets {#asset-metadata-mapping-workfront-aem-assets}
+# Configure asset metadata mapping between Adobe Workfront and Experience Manager Assets {#asset-metadata-mapping-workfront-aem-assets}
 
-You can map the asset metadata fields between Workfront and Experience Manager as a Cloud Service applications. As a result of mapping metadata fields, when you send an asset from Workfront to Experience Manager Assets, you can view the mapped asset metadata in Experience Manager Assets.
+You can map the asset metadata fields between Adobe Workfront and Experience Manager as a Cloud Service applications. As a result of mapping metadata fields, when you send an asset from Workfront to Experience Manager Assets, you can view the mapped asset metadata in Experience Manager Assets.
 
 For example, if you need to retain the metadata fields for an image such as name, description, and the project it belongs to in Workfront when you send the image to Experience Manager Assets, configure and map these fields to Experience Manager Assets properties.
 
 **Use Case**
 
-An image `add-users-workfront.png` exists in the `Metadata Syncs` project. You need to send that image to Experience Manager Assets as a Cloud Service with the following metadata:
+An image `add-users-workfront.png` exists in the `Metadata Syncs` project in Adobe Workfront application. You need to send that image to Experience Manager Assets as a Cloud Service with the following metadata:
 
 * Project Name
 
@@ -18,7 +18,7 @@ An image `add-users-workfront.png` exists in the `Metadata Syncs` project. You n
 
 * Document description
 
-This article provides an end-to-end journey on how you can retain the image name, description, and project metadata when you send the image from Workfront to Experience Manager Assets.
+This article provides an end-to-end journey on how you can retain the image name, description, and project metadata when you send an image from Workfront to Experience Manager Assets.
 
 ## Prerequisites {#prerequisites}
 
@@ -38,6 +38,9 @@ To set metadata mapping for the Project Name, Document Name, and Document Descri
 
 1. Click **[!UICONTROL Metadata]**. In the **[!UICONTROL Assets]** tab, map the [!UICONTROL Project] > [!UICONTROL Name] Workfront field to the `wm.projectName` Experience Manager Assets field. If you do not find the exact match, Adobe recommends to look for the best match to map the Workfront and Experience Manager Assets field. You can avoid mapping fields of different data types. For example, mapping a date Workfront field to a description Assets field.
 1. Map the [!UICONTROL Document] > [!UICONTROL Name] Workfront field to the `wm:documentName` Experience Manager Assets field.
+
+   ![Mapping in Workfront](assets/workfront-metadata-mapping.png)
+
 1. Map the [!UICONTROL Document] > [!UICONTROL Description] Workfront field to the `dc:description` Experience Manager Assets field.
 
    >[!VIDEO](https://video.tv.adobe.com/v/344255)
@@ -46,7 +49,11 @@ To set metadata mapping for the Project Name, Document Name, and Document Descri
 
 To send the image from Workfront to Experience Manager Assets:
 
-1. Go to the **[!UICONTROL Documents]** area in Workfront, and select the document you want to send.
+1. Click the Main Menu icon ![Show Menu](assets/show-menu.svg) available in the upper-right corner of the Adobe Workfront application, then click **[!UICONTROL Projects]**.
+
+1. Click **[!UICONTROL New Project]** to create a new project.
+
+1. Click **[!UICONTROL Documents]** option available in the left pane, drag and then select the image that you need to send to Experience Manager Assets.
 
 1. Click **[!UICONTROL Send to]**, then choose the Experience Manager Assets Essentials integration name.
 
@@ -60,7 +67,7 @@ To send the image from Workfront to Experience Manager Assets:
 
 After [configuring the asset metadata mapping in Adobe Workfront](#set-up-metadata-mapping), you must use the same mapping in Experience Manager Assets as a Cloud Service application to display appropriate metadata results for the image.
 
-Matadata mapping is performed using Metadata Schemas in Experience Manager Assets. You can edit a newly added or existing metadata schema form. The metadata schema form includes tabs and form items within tabs. You can map/configure these form items to a field within a metadata node in the CRX repository. You can add tabs or form items to the metadata schema form. For more information, see [Metadata Schemas](metadata-schemas.md).
+Metadata mapping is performed using Metadata Schemas in Experience Manager Assets. You can edit a newly added or existing metadata schema form. The metadata schema form includes tabs and form items within tabs. You can map/configure these form items to a field within a metadata node in the CRX repository. You can add tabs or form items to the metadata schema form. For more information, see [Metadata Schemas](metadata-schemas.md).
 
 To configure metadata mapping using a new metadata form in Experience Manager Assets as a Cloud Service:
 
@@ -79,25 +86,41 @@ To configure metadata mapping using a new metadata form in Experience Manager As
    1. Specify `./jcr:content/metadata/wm.projectName` in the **[!UICONTROL Map to property]** field. As a guideline, use the following template to define the field mappings in Experience Manger Assets:
    `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
-      You mapped `wm.projectName` Experience Manager Assets field to Project > Name Workfront field.
+      While configuring mappings in Workfront, you mapped `wm.projectName` Experience Manager Assets field to Project > Name Workfront field.
+
+      ![Send to AEM](assets/metadata-schema-mapping.png)
 
 1. Click the **[!UICONTROL Build Form]** tab and drag the **[!UICONTROL Single Line Text]** component to the form. Click the component in the form. In the **[!UICONTROL Build Form]** tab:
 
    1. Specify `Document Name` in the **[!UICONTROL Field Label]** field.
 
    1. Specify `./jcr:content/metadata/wm.documentName` in the **[!UICONTROL Map to property]** field. 
-      You mapped `wm.documentName` Experience Manager Assets field to Document > Name Workfront field.
+      While configuring mappings in Workfront, you mapped `wm.documentName` Experience Manager Assets field to Document > Name Workfront field.
 
-1. Click the **[!UICONTROL Build Form]** tab and drag the **[!UICONTROL Single Line Text]** component to the form. Click the component in the form. In the **[!UICONTROL Build Form]** tab:
+1. Click the **[!UICONTROL Build Form]** tab and drag the **[!UICONTROL Multi Line Text]** component to the form. Click the component in the form. In the **[!UICONTROL Build Form]** tab:
 
    1. Specify `Document Description` in the **[!UICONTROL Field Label]** field.
 
    1. Specify `./jcr:content/metadata/dc.description` in the **[!UICONTROL Map to property]** field. 
-      You mapped `dc.description` Experience Manager Assets field to Document > Description Workfront field.
+      While configuring mappings in Workfront, you mapped `dc.description` Experience Manager Assets field to Document > Description Workfront field.
 
 1. Click **[!UICONTROL Save]** to save the changes.
 
    >[!VIDEO](https://video.tv.adobe.com/v/344314)
+
+## Apply metadata settings to image folder {#apply-metadata-settings-image-folder}
+
+After configuring the metadata settings in Experience Manager as a Cloud Service application, apply those settings to the [folder that contains the image that is sent from the Workfront application](#send-image-workfront-assets).
+
+To apply metadata settings to the image folder:
+
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
+
+1. Select the metadata schema from the available list and click **[!UICONTROL Apply to Folder(s)]**.
+
+1. Select the destination folder to which [the image is sent from the Adobe Workfront application](#send-image-workfront-assets) and click **[!UICONTROL Apply]**.
+
+You can navigate to the image in Experience Manager Assets and view the metadata associated with the image. Select the image and click **[!UICONTROL Properties]** to view the image metadata.
 
 
 
