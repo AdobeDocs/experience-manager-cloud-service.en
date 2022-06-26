@@ -1,6 +1,6 @@
 ---
 title: Configure asset metadata mapping between Workfront and Experience Manager Assets
-description: Configure [!DNL Workfront for Experience Manager enhanced connector]
+description: Map the asset metadata fields between Adobe Workfront and Experience Manager as a Cloud Service applications. As a result of mapping metadata fields, when you send an asset from Workfront to Experience Manager Assets, you can view the mapped asset metadata in Experience Manager Assets.
 ---
 # Configure asset metadata mapping between Adobe Workfront and Experience Manager Assets {#asset-metadata-mapping-workfront-aem-assets}
 
