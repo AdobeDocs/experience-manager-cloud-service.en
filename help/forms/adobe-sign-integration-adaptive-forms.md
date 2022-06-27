@@ -37,7 +37,7 @@ After prerequisites are in place, perform the following steps to configure [!DNL
    >
    >When you create an Adaptive Form, specify the container name in the **[!UICONTROL Configuration Container]** field.  
   
-1. On the configuration page, tap **[!UICONTROL Create]** to create [!DNL Adobe Sign]configuration in AEM Forms.
+1. On the configuration page, tap **[!UICONTROL Create]** to create [!DNL Adobe Sign] configuration in AEM Forms.
 1. In the **[!UICONTROL General]** tab of the **[!UICONTROL Create Adobe Sign Configuration]** page, specify a **[!UICONTROL Name]** for the configuration, and tap **[!UICONTROL Next]**. You can optionally specify a **[!UICONTROL Title]** and browse to select a **[!UICONTROL Thumbnail]** for the configuration.
 
 1. Copy the URL in your current browser window to a notepad. The URL is required to configure [!DNL Adobe Sign] application with [!DNL AEM Forms] in a later step.
