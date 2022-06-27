@@ -417,6 +417,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Deliver Dynamic Media assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
     + [Activate hotlink protection in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
     + [3D Support](/help/assets/dynamic-media/assets-3d.md)
+    + [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md)
     + [Image Sets](/help/assets/dynamic-media/image-sets.md)
     + [Panoramic Images](/help/assets/dynamic-media/panoramic-images.md)
     + [Mixed Media Sets](/help/assets/dynamic-media/mixed-media-sets.md)
@@ -599,6 +600,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
 + Headless {#headless}
+  + [What is a Headless CMS?](/help/headless/what-is-headless.md)
   + [Introduction to AEM Headless](/help/headless/introduction.md)
   + Setup {#setup}
     + [Introduction](/help/headless/setup/introduction.md)
