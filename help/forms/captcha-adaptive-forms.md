@@ -81,7 +81,7 @@ To use CAPTCHA in Adaptive Forms:
 1. From the **[!UICONTROL Captcha service]** drop-down, select **[!UICONTROL reCaptcha]** to enable reCAPTCHA service if you configured it as described in [ReCAPTCHA service by Google](#google-recaptcha). Select a configuration from the Settings drop-down.
 1. Select the type as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. You can also select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity. The protected by reCAPTCHA badge, displayed below, is displayed on the protected forms.  
 
-    ![Google proeced by reCAPTCHA badge](assets/google-recaptcha-v2.png)
+    ![Google protected by reCAPTCHA badge](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
