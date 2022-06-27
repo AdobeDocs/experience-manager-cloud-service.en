@@ -149,6 +149,11 @@ An external storage account or bucket from Azure or AWS is required to use this 
 >
 >Create the storage account container or bucket as private and accept connections only from authorized requests. However, additional restrictions on ingress network connections are not supported.
 
+>[!NOTE]
+>
+>External storage accounts may have different file / folder name rules than the Bulk Import tool. See [Handling filenames during bulk import](#filename-handling-bulkimport) for more details on disallowed / escaped names
+
+
 ### Configure the Bulk Import tool {#configure-bulk-ingestor-tool} 
 
 To configure the Bulk Import tool, follow these steps:
@@ -210,6 +215,15 @@ Select the configuration and click **[!UICONTROL Dry Run]** to invoke a test run
 When you import assets or folders in bulk, [!DNL Experience Manager Assets] imports the whole structure of what exists in the import source. [!DNL Experience Manager] follows the inbuilt rules for special characters in the asset and folder names, therefore these filenames need sanitization. For both folder name and asset name, the title defined by the user remains unchanged and is stored in `jcr:title`. 
 
 During bulk import, [!DNL Experience Manager] look for the existing folders  to avoid reimporting the assets and folders, and also verifies the sanitization rules applied in the parent folder where the import takes place. If the sanitization rules are applied in the parent folder, the same rules are applied to the import source. For new import, the following sanatization rules are applied to manage the filenames of assets and folders.  
+
+**Disallowed Names**
+
+The following characters are not allowed in file and folder names:
+
+ - Control and Private Use Characters (0x00 to 0x1F, \u0081, \uE000)
+ - File or folder names ending with a dot (.)
+
+Files or folders with names matching these conditions will be skipped during the import and marked as failed.
 
 **Handling asset name in bulk import**
 
