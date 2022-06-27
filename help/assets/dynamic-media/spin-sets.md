@@ -21,7 +21,7 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
 
 When you create a Spin Set, Adobe recommends the following best practice and enforces the following limit:
 
-| Limit type | Best practice | Implemented limit |
+| Limit type | Best practice | Limit imposed |
 | --- | --- | --- |
 | Maximum number of rows/columns per 2D set | 12-18 images per set | 1000 |
 
@@ -113,7 +113,7 @@ This section describes how to create Spin Sets.
 
 When you create a Spin Set, Adobe recommends the following best practice and enforces the following limit:
 
-| Limit type | Best practice | Implemented limit |
+| Limit type | Best practice | Limit imposed |
 | --- | --- | --- |
 | Maximum number of rows/columns per 2D set | 12-18 images per set | 1000 |
 
