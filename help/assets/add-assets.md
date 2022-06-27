@@ -216,7 +216,7 @@ When you import assets or folders in bulk, [!DNL Experience Manager Assets] impo
 
 During bulk import, [!DNL Experience Manager] look for the existing folders  to avoid reimporting the assets and folders, and also verifies the sanitization rules applied in the parent folder where the import takes place. If the sanitization rules are applied in the parent folder, the same rules are applied to the import source. For new import, the following sanatization rules are applied to manage the filenames of assets and folders.  
 
-**Disallowed Names**
+**Disallowed names in bulk import**
 
 The following characters are not allowed in file and folder names:
 
