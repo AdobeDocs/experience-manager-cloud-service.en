@@ -34,7 +34,7 @@ To set metadata mapping for the Project Name, Document Name, and Document Descri
 
 1. Select the Experience Manager Assets integration and click **[!UICONTROL Edit]**.
 
-1. Click **[!UICONTROL Metadata]**. In the **[!UICONTROL Assets]** tab, map the [!UICONTROL Project] > [!UICONTROL Name] Workfront field to the `wm.projectName` Experience Manager Assets field. If you do not find the exact match, Adobe recommends to look for the best match to map the Workfront and Experience Manager Assets field. You can avoid mapping fields of different data types. For example, mapping a date Workfront field to a description Assets field.
+1. Click **[!UICONTROL Metadata]**. In the **[!UICONTROL Assets]** tab, map the [!UICONTROL Project] > [!UICONTROL Name] Workfront field to the `wm:projectName` Experience Manager Assets field. If you do not find the exact match, Adobe recommends to look for the best match to map the Workfront and Experience Manager Assets field. You can avoid mapping fields of different data types. For example, mapping a date Workfront field to a description Assets field.
 1. Map the [!UICONTROL Document] > [!UICONTROL Name] Workfront field to the `wm:documentName` Experience Manager Assets field.
 
    ![Mapping in Workfront](assets/workfront-metadata-mapping.png)
@@ -81,10 +81,12 @@ To configure metadata mapping using a new metadata form in Experience Manager As
 
    1. Specify `Project Name` in the **[!UICONTROL Field Label]** field.
 
-   1. Specify `./jcr:content/metadata/wm.projectName` in the **[!UICONTROL Map to property]** field. As a guideline, use the following template to define the field mappings in Experience Manger Assets:
+   1. Specify `./jcr:content/metadata/wm:projectName` in the **[!UICONTROL Map to property]** field. As a guideline, use the following template to define the field mappings in Experience Manger Assets:
    `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
-      While configuring mappings in Workfront, you mapped `wm.projectName` Experience Manager Assets field to Project > Name Workfront field.
+      While configuring mappings in Workfront, you mapped `wm:projectName` Experience Manager Assets field to Project > Name Workfront field.
+
+      `wm` refers to the namespace name and `projectName` refers to the property title. Use the `namespace:propertyTitle` format to define metadata field mappings.
 
       ![Send to AEM](assets/metadata-schema-mapping.png)
 
@@ -92,15 +94,15 @@ To configure metadata mapping using a new metadata form in Experience Manager As
 
    1. Specify `Document Name` in the **[!UICONTROL Field Label]** field.
 
-   1. Specify `./jcr:content/metadata/wm.documentName` in the **[!UICONTROL Map to property]** field. 
-      While configuring mappings in Workfront, you mapped `wm.documentName` Experience Manager Assets field to Document > Name Workfront field.
+   1. Specify `./jcr:content/metadata/wm:documentName` in the **[!UICONTROL Map to property]** field. 
+      While configuring mappings in Workfront, you mapped `wm:documentName` Experience Manager Assets field to Document > Name Workfront field.
 
 1. Click the **[!UICONTROL Build Form]** tab and drag the **[!UICONTROL Multi Line Text]** component to the form. Click the component in the form. In the **[!UICONTROL Build Form]** tab:
 
    1. Specify `Document Description` in the **[!UICONTROL Field Label]** field.
 
-   1. Specify `./jcr:content/metadata/dc.description` in the **[!UICONTROL Map to property]** field. 
-      While configuring mappings in Workfront, you mapped `dc.description` Experience Manager Assets field to Document > Description Workfront field.
+   1. Specify `./jcr:content/metadata/dc:description` in the **[!UICONTROL Map to property]** field. 
+      While configuring mappings in Workfront, you mapped `dc:description` Experience Manager Assets field to Document > Description Workfront field.
 
 1. Click **[!UICONTROL Save]** to save the changes.
 
