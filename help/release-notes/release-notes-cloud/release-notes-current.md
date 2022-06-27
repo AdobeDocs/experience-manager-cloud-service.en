@@ -20,6 +20,7 @@ The following section outlines the general Release Notes for the current (latest
 ## Release Date {#release-date}
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.6.0) is June 30, 2022.
+
 The next release (2022.7.0) is planned for July 28, 2022.
 
 ## Release Video {#release-video}
@@ -35,6 +36,8 @@ Have a look at the June 2022 Release Overview video for a summary of the feature
 * A new [user interface](/help/headless/content-fragments/content-fragment-console.md) is now available for content admins and content authors to efficiently manage (take actions such as publish, unpublish, copy, move, etc.), search/filter, and create content fragments for Headless use-cases.
 
     ![Content Fragment Console](/help/release-notes/assets/cf-ui.png)
+
+* The new [Table of Contents Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) works not only with the Core Components but with all components, automatically rendering ToCs on content pages. And because it is rendered server-side and fully cached by the dispatcher, it is also efficient to load.
 
 ### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
 
