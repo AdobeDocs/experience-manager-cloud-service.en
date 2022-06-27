@@ -127,7 +127,8 @@ After you [Connect your Forms as a Cloud Service instance with Microsoft® Power
 >
 > Before submitting the Adaptive Form, ensure that the `When an HTTP Request is received` trigger with below JSON Schema is added to your Power Automate flow.  
 
- ``` 
+```
+
         {
             "type": "object",
             "properties": {
@@ -186,5 +187,5 @@ After you [Connect your Forms as a Cloud Service instance with Microsoft® Power
             }
         }
 
-        ```
+```
 
