@@ -22,7 +22,7 @@ This article builds on these so you understand how to use metadata and tagging t
 
 There are three methods that you can use to add metadata and tags:
 
-* When first creating your fragment:
+* When first creating your fragment (from the **Assets** console):
 
   ![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
   
