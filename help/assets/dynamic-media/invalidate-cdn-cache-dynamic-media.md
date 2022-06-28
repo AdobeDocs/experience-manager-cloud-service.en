@@ -15,6 +15,17 @@ Dynamic Media assets are cached by the CDN (Content Delivery Network) for fast d
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
 
+If you have set up a bundled Akamai in one of the Smart Imaging configurations (excluding BFC1), any parameters after the question mark are automatically invalidated when you submit a URL to invalidate up to the question mark.
+
+For example, invalidating `https://weekendsite.scene7.com/is/image/grundfos/image`, invalidates the following URLs:
+
+* `https://weekendsite.scene7.com/is/image/grundfos/image`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* and so on.
+
+This invalidation, however, is not the case for generic domains that do not support Smart Imaging, such as `s7d1.scene7.com`. Such domains still need the full URL to have invalidation work successfully.
+
 **To invalidate the CDN cache by way of Dynamic Media:**
 
 *Part 1 of 2: Creating a CDN Invalidation template*
