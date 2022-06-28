@@ -51,13 +51,15 @@ Each section summarizes what is available and how it is currently used, if at al
 
 A content request is a request coming into AEM Sites or any customer-provided caching system  such as a content delivery network to deliver content or data in either HTML format as a page view or in JSON format as an API call.
 
-One content request is counted for each page view or for every five API calls, measured at the ingress of the first caching system to receive a content request.
+One content request is counted for each page view or for every five API calls, measured at the ingress of the first caching system to receive a content request. Content requests are counted against production environments only.
 
 Content Requests exclude requests or activity initiated by or on behalf of Adobe for the sole purpose of providing products and services. Adobe-identified user agent traffic from bots, crawlers, and spiders related to common search engines and social media services are also excluded.
 
 ### How does Adobe Experience Manager measure content requests? {#how-are-content-requests-measured}
 
-Content requests are tracked server-side within Cloud Service. The CDN built into AEM as a Cloud Service tracks valid HTML and JSON requests. AEM also has rules in place to exclude well-known bots, including well-known services visiting the site regularly to refresh their search index or service.
+Content requests are tracked on AEM as a Cloud Service's edge servers. Origin traffic does not count towards content requests. The CDN built into AEM as a Cloud Service tracks valid HTML and JSON requests.
+
+AEM also has rules in place to exclude well-known bots, including well-known services visiting the site regularly to refresh their search index or service.
 
 The following is a non-exhaustive list of examples of excluded well-known services.
 
