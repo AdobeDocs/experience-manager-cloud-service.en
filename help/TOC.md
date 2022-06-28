@@ -417,6 +417,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Deliver Dynamic Media assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
     + [Activate hotlink protection in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
     + [3D Support](/help/assets/dynamic-media/assets-3d.md)
+    + [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md)
     + [Image Sets](/help/assets/dynamic-media/image-sets.md)
     + [Panoramic Images](/help/assets/dynamic-media/panoramic-images.md)
     + [Mixed Media Sets](/help/assets/dynamic-media/mixed-media-sets.md)
@@ -446,6 +447,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Remove external dependencies for existing installations](/help/assets/remove-external-dependencies.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
     + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+    + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
 + Forms {#forms}
   + [Introduction](/help/forms/home.md)
   + [Key features](/help/forms/key-features.md)
