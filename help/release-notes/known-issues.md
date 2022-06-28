@@ -17,7 +17,7 @@ This article lists the known issues of [!DNL Adobe Experience Manager] as a [!DN
 
 Some known issues in [!DNL Sites] are:
 
-* In the GraphQL IDE you can [manage the cache for your persisted queries](help/headless/graphql-api/graphiql-ide.md##managing-cache). 
+* In the GraphQL IDE you can [manage the cache for your persisted queries](/help/headless/graphql-api/graphiql-ide.md##managing-cache). 
   * On the first save the values saved for the headers are set to `0` (instead of the default values) - if the user has not changed those values in the dialog. 
   * On subsequent saves, the values are saved correctly. 
   * Therefore, the user has to save the headers two times. 
