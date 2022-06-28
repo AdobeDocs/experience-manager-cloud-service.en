@@ -53,7 +53,7 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 ### New features available in [!DNL Assets] prerelease channel {#prerelease-features-assets}
 
-You can now upload assets from a published web experience to Experience Manager Assets. Administrators can configure the folders that are available for uploading assets in Experience Manager. You can also define the list of users that have access to upload assets in those folders.
+You can now upload assets from a published web experience to Experience Manager Assets. Administrators can enable the Cloud Sourcing option and then you can configure the folders that are available for uploading assets in Experience Manager. You can also define the list of users that have access to upload assets in those folders.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
