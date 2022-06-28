@@ -12,6 +12,7 @@ Unlike previous versions in AEM as a Cloud Service all operational aspects regar
 
 
 ## When to use queries {#when-to-use-queries}
+Queries are a way to get access to content, but not the only one. For that reason it must be evaluated if queries are the best and more performant way to access content. 
 
 ### Repository and Taxonomy Design {#repository-and-taxonomy-design}
 
@@ -50,45 +51,85 @@ Sometimes the content or the requirements around the component will not allow th
 If the results that are required for the component can be calculated at the time that it is authored and there is no expectancy that the content will change, the query can be executed after a change has been done.
 
 If the data or content will change regularly, the query can be executed on a schedule or via a listener for updates to the underlying data. Then, the results can be written to a shared location in the repository. Any components that need this data can then pull the values from this single node without needing to execute a query at runtime.
-A similar strategy can be used to keep the result in an in-memory cache, which is populated on startup and updated whenever changes are done.
-  
+A similar strategy can be used to keep the result in an in-memory cache, which is populated on startup and updated whenever changes are done (using a JCR ObservationListener or a Sling ResourceChangeListener).
 
-## Optimizing queries
+## Should I Create an Index? {#should-i-create-an-index} 
+
+
+## Optimizing queries {#optimizing-queries}
 * How does the Oak query engine work? Link to Oak docs
 * Point out the importance of sound index definitions
 * How to test if a query is "good"?
 
+The [Oak documentation](Provide link) describes well, how the Query engine is working internally. In this section a few guidelines are given which should help to craft performant queries.
+
+### Use an index {#use-an-index}
+Every query should use an index to deliver optimal performance. In the majority of all cases existing out-of-the-box indexes should be sufficient to handle queries. 
+Sometimes custom properties need to be added to an existing index, so additional constraints can be queried using this index. The [JCR Query Cheatsheet](#jcr-query-cheatsheet) describes how an property definition on an index has to look like to support a specific query type.
 
 
-## The Query Performance tool
 
-* high level feature description
-* video?
+### Use the right criteria
+
+The primary constraint on any query should be a property match, as this is the most efficient type. Adding more property constraints limit the result further. 
+The query engine considers just a single index; that means that an existing index can and should be customized by adding more custom index properties to it.
+
+The [JCR Query cheatsheet](#jcr-query-cheatsheet) lists the available constraints and also outlines how an index definition needs to look like so it picked up. Use the [Query Performance Tool](#query-performance-tool) to test the query and to make sure that the right index is used and that the query engine does not need to evaluate constraints outside of the index. 
+
+
+### Ordering
+If a specific order of the result is requested, there are 2 ways for the Query Engine to achieve this:
+
+1. Either the index can deliver the result completely and in the right order; this works if the properties which are used for ordering are annotated with ```ordered=true``` in the index definition.
+2. If the Query Engine needs to perform filtering outside of the index or if the ordering property is not annotated with the ```ordered=true``` property, the Query Engine also performs the ordering process. This case requires that the complete result set is read into memory for sorting, which is much slower than the first option.
+
+
+
+### Restrict the result size
+The retrieved size of the query result is an important factor in query performance. As the result is fetched in a lazy manner, there is a difference in just fetching the first 20 results compared to fetching 10'000 results, both in runtime and memory usage.
+
+This also means that the size of the result set can only be determined correctly, if all results are fetched. For this reason the fetched result set should always be limited, either by augmenting the query (see the [JCR Query cheatsheet](#jcr-query-cheatsheet) for details) or by limiting the reads of the results.
+Such a limit also prevents the query engine of hitting the **traversal limit** of 100'000 nodes, which leads to a stop of the query.
+
+See the section [Queries with large results](#queries-with-large-result-sets) below if a potentially large result set must be processed completly.
+
+
+## The Query Performance tool {#query-performance-tool}
+
+The Query Performance tool is designed to support implementing efficient queries. 
+
+* It displays already executed queries with their relevant performance characteristics and the query plan
+* It allows to perform adhoc queries in various levels, e.g. just displaying the query plan up to executing the full query
+
+The query performance tool is reachable via the [Developer Console in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)
+
+
+TODO: Video goes here
 
 
 
 ## JCR Query Cheatsheet
-
-* link to the cheatsheet (+ mention that it's valid for AEM 6.5 as well)
+To support the creation of efficient JCR queries and index definitions, the [JCR Query Cheat Sheet](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet) is available for download and use as a reference during development. It contains sample queries for QueryBuilder, XPath and SQL-2, covering multiple scenarios which behave differently in terms of query performance. It also provides recommendations for how to build or customize Oak indexes. The content of this Cheat Sheet applies to AEM 6.5 and AEM as a Cloud Service.
 
 
 ## Queries with large result sets
+Although it is recommended to avoid queries with a large result set, there are valid cases where large result must be processed. Often the size of result is not known upfront, thus some precautions should be taken to make the processing reliable.
 
-* Impact on performance + caches
-* Oak Keyset Pagination (https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)
+* the query should not be executed within a request; instead the query should be executed as part of a Sling Job or a workflow. These are better suited to deal with a possible larger runtime.
+* To overcome the query limit of 100'000 nodes read you should consider to use [Keyset Pagination](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) and split the query in multiple sub-queries.
+  
 
 
 ## Query traversing the repository
+Queries traversing the repository are not using an index and are logging message like this:
 
-* How to detect them, how to interprete the log message
-* 
+```text
+28.06.2022 13:32:52.804 *WARN* [127.0.0.1 [1656415972414] POST /libs/settings/granite/operations/diagnosis/granite_queryperformance.explain.json HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.Cursors$TraversingCursor Traversed 98000 nodes with filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a /* xpath: //* */, path=*) called by com.adobe.granite.queries.impl.explain.query.ExplainQueryServlet.getHeuristics; consider creating an index or changing the query
+```
+This log snippet contains relevant information:
 
+* the query itself: ```//* ```
+* the method executing this query: ```com.adobe.granite.queries.impl.explain.query.ExplainQueryServlet::getHeuristics```
 
-## Efficient indexes
-
-
-## Should I Create an Index? {#should-i-create-an-index}
-
-
-## Customizing out-of-the-box indexes
+With this information it is possible to optimize this query using the methods described in [Optimizing Queries](#optimizing-queries).
 
