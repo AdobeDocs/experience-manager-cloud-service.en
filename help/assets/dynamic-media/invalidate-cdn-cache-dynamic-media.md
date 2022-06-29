@@ -11,7 +11,7 @@ Dynamic Media assets are cached by the CDN (Content Delivery Network) for fast d
 
 >[!NOTE]
 >
->This feature requires that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager Dynamic Media. Any other custom CDN is not supported with this feature.
+>This feature requires that you use the Adobe-bundled CDN that comes with Adobe Experience Manager Dynamic Media. Any other custom CDN is not supported with this feature.
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
 
