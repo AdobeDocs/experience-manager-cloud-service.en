@@ -15,7 +15,7 @@ Dynamic Media assets are cached by the CDN (Content Delivery Network) for fast d
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
 
-If you have enabled [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) on your account and you are using the Adobe-bundled CDN (Content Delivery Network), you can purge all URLs with different query strings by purging the single base URL.
+If you have enabled [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) on your account and you are using the Adobe-bundled CDN, you can purge all URLs with different query strings by purging the single base URL.
 
 For example, invalidating `https://weekendsite.scene7.com/is/image/grundfos/image`, also invalidates the following URLs:
 
