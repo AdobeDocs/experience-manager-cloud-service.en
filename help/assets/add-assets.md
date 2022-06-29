@@ -151,7 +151,7 @@ An external storage account or bucket from Azure or AWS is required to use this 
 
 >[!NOTE]
 >
->External storage accounts may have different file / folder name rules than the Bulk Import tool. See [Handling filenames during bulk import](#filename-handling-bulkimport) for more details on disallowed / escaped names
+>External storage accounts may have different file/folder name rules than the Bulk Import tool. See [Handling filenames during bulk import](#filename-handling-bulkimport) for more details on disallowed/escaped names.
 
 
 ### Configure the Bulk Import tool {#configure-bulk-ingestor-tool} 
@@ -220,10 +220,10 @@ During bulk import, [!DNL Experience Manager] look for the existing folders  to 
 
 The following characters are not allowed in file and folder names:
 
- - Control and Private Use Characters (0x00 to 0x1F, \u0081, \uE000)
- - File or folder names ending with a dot (.)
+ * Control and Private Use Characters (0x00 to 0x1F, \u0081, \uE000)
+ * File or folder names ending with a dot (.)
 
-Files or folders with names matching these conditions will be skipped during the import and marked as failed.
+Files or folders with names matching these conditions are skipped during the import process and marked as failed.
 
 **Handling asset name in bulk import**
 
