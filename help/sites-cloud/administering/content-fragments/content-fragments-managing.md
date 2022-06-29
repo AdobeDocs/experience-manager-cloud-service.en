@@ -254,87 +254,6 @@ You can also [associate content](/help/sites-cloud/administering/content-fragmen
 
 You can view, and edit, the properties of a fragment using the [Metadata](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md) tab.
 
-<!--
-## Timeline for Content Fragments {#timeline-for-content-fragments}
-
-In addition to the standard options, [Timeline](/help/assets/manage-digital-assets.md#timeline) provides both information and actions specific to content fragments:
-
-* View information about versions, comments, and annotations
-* Actions for Versions
-
-  * **[Revert to this Version](#reverting-to-a-version)** (select an existing fragment, then a specific version)
-
-  * **[Compare to Current](#comparing-fragment-versions)** (select an existing fragment, then a specific version)
-
-  * Add a **Label** and/or **Comment** (select an existing fragment, then a specific version)
-
-  * **Save as Version** (select an existing fragment, then the up arrow at the bottom of Timeline)
-
-* Actions for Annotations
-
-  * **Delete**
-
->[!NOTE]
->
->Comments are:
->
->* Standard functionality for all assets
->* Made in Timeline
->* Related to the fragment asset
->
->Annotations (for Content Fragments) are:  
->
->* Entered in the fragment editor
->* Specific to a selected segment of text within the fragment
->
-
-For example:
-
-![timeline](assets/cfm-managing-05.png)
--->
-
-<!--
-## Comparing Fragment Versions {#comparing-fragment-versions}
-
-The **Compare to Current** action is available from the [Timeline](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) after you have selected a specific version.
-
-This will open:
-
-* the **Current** (latest) version (left)
-
-* the selected version **v&lt;*x.y*&gt;** (right)
-
-They will be shown side by side, where:
-
-* Any differences are highlighted
-
-  * Deleted text - red
-  * Inserted text - green
-  * Replaced text - blue
-
-* The full-screen icon allows you to open either version on its own; then toggle back to the parallel view
-* You can **Revert** to the specific version
-* **Done** will return you to the console
-
->[!NOTE]
->
->You cannot edit the fragment content when comparing fragments.
-
-![comparing](assets/cfm-managing-06.png)
--->
-
-<!--
-## Reverting to a Version  {#reverting-to-a-version}
-
-You can revert to a specific version of your fragment:
-
-* Directly from the [Timeline](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
-
-  Select the required version, then the **Revert to this Version** action.
-
-* While [comparing a version to the current version](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#comparing-fragment-versions) you can **Revert** to the selected version.
--->
-
 ## Publishing and Referencing a Fragment {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
@@ -348,6 +267,9 @@ Content Fragments must be published for use in the publish environment. This is 
 * From the **Publish** option in the toolbar of the [Content Fragments console](#actions-content-fragment-console)
   * **Now** - after confirmation, the fragment will be published immediately
   * **Schedule** - you can select the date and time when the fragment will be published
+  
+  When necessary you will be required to specify the **Activation date** and which references to publish. For example:
+  ![Publish dialog](assets/cfm-publish-01.png)
 
 * From the [Content Fragment Editor](#toolbar-actions-in-the-content-fragment-editor)
   * [**Quick Publish**](/help/assets/manage-publication.md#quick-publish)
@@ -388,3 +310,91 @@ To delete a fragment:
    >[!CAUTION]
    >
    >If the fragment is already referenced from another fragment, or from a page, you will then see a warning message and be required to confirm that you want to proceed with a **Force Delete**. The fragment, together with its content fragment component, will be deleted from any content pages.
+
+## Timeline for Content Fragments {#timeline-for-content-fragments}
+
+>[!NOTE]
+>
+>This functionality is only available in the **Assets** console
+
+In addition to the standard options, [Timeline](/help/assets/manage-digital-assets.md#timeline) provides both information and actions specific to content fragments:
+
+* View information about versions, comments, and annotations
+* Actions for Versions
+
+  * **[Revert to this Version](#reverting-to-a-version)** (select an existing fragment, then a specific version)
+
+  * **[Compare to Current](#comparing-fragment-versions)** (select an existing fragment, then a specific version)
+
+  * Add a **Label** and/or **Comment** (select an existing fragment, then a specific version)
+
+  * **Save as Version** (select an existing fragment, then the up arrow at the bottom of Timeline)
+
+* Actions for Annotations
+
+  * **Delete**
+
+>[!NOTE]
+>
+>Comments are:
+>
+>* Standard functionality for all assets
+>* Made in Timeline
+>* Related to the fragment asset
+>
+>Annotations (for Content Fragments) are:  
+>
+>* Entered in the fragment editor
+>* Specific to a selected segment of text within the fragment
+>
+
+For example:
+
+![timeline](assets/cfm-managing-05.png)
+
+## Comparing Fragment Versions {#comparing-fragment-versions}
+
+>[!NOTE]
+>
+>This functionality is only available in the **Assets** console
+
+The **Compare to Current** action is available from the [Timeline](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) after you have selected a specific version.
+
+This will open:
+
+* the **Current** (latest) version (left)
+
+* the selected version **v&lt;*x.y*&gt;** (right)
+
+They will be shown side by side, where:
+
+* Any differences are highlighted
+
+  * Deleted text - red
+  * Inserted text - green
+  * Replaced text - blue
+
+* The full-screen icon allows you to open either version on its own; then toggle back to the parallel view
+* You can **Revert** to the specific version
+* **Done** will return you to the console
+
+>[!NOTE]
+>
+>You cannot edit the fragment content when comparing fragments.
+
+![comparing](assets/cfm-managing-06.png)
+
+## Reverting to a Version  {#reverting-to-a-version}
+
+>[!NOTE]
+>
+>This functionality is only available in the **Assets** console
+
+You can revert to a specific version of your fragment:
+
+* Directly from the [Timeline](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+
+  Select the required version, then the **Revert to this Version** action.
+
+* While [comparing a version to the current version](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#comparing-fragment-versions) you can **Revert** to the selected version.
+
