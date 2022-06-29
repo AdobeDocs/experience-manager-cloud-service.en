@@ -90,3 +90,13 @@ You can find a complete list of Cloud Manager monthly releases [here](/help/impl
 ## Migration Tools {#migration-tools}
 
 You can find a complete list of Migration Tools releases [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+
+## Reference Demos Add-on {#cloud-services-demos}
+
+### What is New {#what-is-new-demos}
+
+* New WKND Content & Commerce template that extends WKND with an E2E shopping experience featuring product catalog, shopping cart, checkout, and myAccount. This template uses CIF and its CIF Core Components, thus you also need to install the CIF add-on.
+
+ ![WKND shop](/help/assets/CIF/wknd_shop.png)
+
+ ![WKND pdp](/help/assets/CIF/wknd_pdp.png)
