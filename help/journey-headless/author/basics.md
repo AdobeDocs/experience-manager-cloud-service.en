@@ -257,7 +257,7 @@ OK, this might seem a slightly strange section, but once you open the Content Fr
 
 Once you have completed your fragment you can **Publish** it so that it is available to the headless applications.
 
-The publish actions are available in the editor (or from the toolbar of the **Assets** console):
+The publish actions are available in the editor (or from the toolbar of either the **Content Fragments** console or the **Assets** console):
 
 ![Content Fragment Editor - My Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
