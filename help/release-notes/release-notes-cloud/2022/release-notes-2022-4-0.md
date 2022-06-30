@@ -53,15 +53,14 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### What is New {#what-is-new-cif}
 
-* Quick access to product cockpit: Easily access full detailed product information with one-click in Sites Editor
+* Improved SEO for multi-store scenarios: URL formats for PDP / PLP can now be configured on a store level via the CIF Cloud Config properties
+* Product picker supports staged products via new filter option in the UI.  This enables content practitioners to prepare product content management for upcoming product launches
+* Simplified CIF configuration management and error handling by using CIF Cloud Config name instead of config proxy url
+* Manual category selection for Product list and Carousel components. This allows content practitioners to use these components on content pages, outside of the catalog experience
 
-    ![Enable wishlist](/help/assets/CIF/enable-wishlist.png)
+### New features available in CIF prerelease channel {#prerelease-features-cif}
 
-* Support for additional marketing commerce components:  Components can be configured to show an add-to-cart and add-to-wishlist call-to-action
-
-    ![Sites editor shortcut to product cockpit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
-
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+* AEM CIF Search Core Component support Commerce LiveSearch
 
 ### SDK Build Analyzers {#sdk-build-analyzers}
 
