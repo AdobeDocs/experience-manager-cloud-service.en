@@ -39,10 +39,6 @@ Have a look at the June 2022 Release Overview video for a summary of the feature
 
 * The new [Table of Contents Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) works not only with the Core Components but with all components, automatically rendering ToCs on content pages. And because it is rendered server-side and fully cached by the dispatcher, it is also efficient to load.
 
-### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
-
-* Various GraphQL functionalities
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
@@ -71,6 +67,16 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 * Wrong page component in datalayer
 
+## Reference Demos Add-on {#cloud-services-demos}
+
+### What is New {#what-is-new-demos}
+
+* New WKND Content & Commerce template that extends WKND with an E2E shopping experience featuring product catalog, shopping cart, checkout, and myAccount. This template uses CIF and its CIF Core Components, thus you also need to install the CIF add-on. You can find details in the CIF blog [here](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
+
+ ![WKND shop](/help/assets/CIF/wknd_shop.png)
+
+ ![WKND pdp](/help/assets/CIF/wknd_pdp.png)
+
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### What is New {#what-is-new-foundation}
@@ -86,13 +92,3 @@ You can find a complete list of Cloud Manager monthly releases [here](/help/impl
 ## Migration Tools {#migration-tools}
 
 You can find a complete list of Migration Tools releases [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
-
-## Reference Demos Add-on {#cloud-services-demos}
-
-### What is New {#what-is-new-demos}
-
-* New WKND Content & Commerce template that extends WKND with an E2E shopping experience featuring product catalog, shopping cart, checkout, and myAccount. This template uses CIF and its CIF Core Components, thus you also need to install the CIF add-on.
-
- ![WKND shop](/help/assets/CIF/wknd_shop.png)
-
- ![WKND pdp](/help/assets/CIF/wknd_pdp.png)
