@@ -220,8 +220,8 @@ During bulk import, [!DNL Experience Manager] look for the existing folders  to 
 
 The following characters are not allowed in file and folder names:
 
- * Control and Private Use Characters (0x00 to 0x1F, \u0081, \uE000)
- * File or folder names ending with a dot (.)
+* Control and Private Use Characters (0x00 to 0x1F, \u0081, \uE000)
+* File or folder names ending with a dot (.)
 
 Files or folders with names matching these conditions are skipped during the import process and marked as failed.
 
