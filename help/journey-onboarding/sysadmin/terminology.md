@@ -43,27 +43,23 @@ When you as the system administrator sets up your team in the Admin Console, you
 
 There are three types of Adobe IDs:
 
-* **Personal ID**: This is the default type of Adobe ID. Basically, the user needs to create an account at adobe.com. In other words, this account is managed by Adobe and anybody can create an account of this type.
+* **Personal ID**: This is the default type of Adobe ID and is created at adobe.com. This account is managed by Adobe and anybody can create an account of this type.
 
-* **Enterprise ID**: Organizations usually want to increase the control of the users’ accounts. With Enterprise ID, only system administrators can create these type of accounts and the organization owns these accounts; Adobe only hosts them.
+* **Enterprise ID**: Organizations usually want to increase control of the users accounts. Only system administrators can create enterprise IDs and the organization owns these accounts with Adobe serving only as the host.
 
-* **Federated ID**: This is where the organization takes full ownership and control of the accounts. In this case, you need to integrate the Adobe Experience Cloud with your SAML2 SSO system. The final result is that users authenticate against their company’s SSO system and not against an account hosted at Adobe. See [SAML 2.0 Authentication Handler](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=en) to learn more.
+* **Federated ID**: With federated IDs the organization takes full ownership and control of the accounts. To do this your organization needs to integrate the Adobe Experience Cloud with your SAML2 single sign-on (SSO) system. This allows users to authenticate against their organization's SSO system rather than an account hosted by Adobe.
 
->[!NOTE]
->If your Enterprise ID or Federated ID has not yet been setup, your system administrator may decide to onboard your team using Personal ID’s. Once the Enterprise or Federated ID is set up, members can be transitioned to using this ID.
+As system administrator, you may decide to onboard yourself and your team onto AEM as a Cloud Service using personal IDs before enterprise or federated IDs are set up. Once enterprise or federated IDs are set up, members can be transitioned to using those IDs.
 
 # Contacting Adobe Support {#support}
 
-Adobe Support can be accessed via Adobe Admin Console from where you can manage your support cases and schedule an expert session.
+Adobe support can be accessed via the [Admin Console](#admin-console) from where you can manage your support cases and schedule an expert session.
 
-The **Support** tab in the [Admin Console](https://adminconsole.adobe.com/) lets you access various support functions through a simple and easy-to-use interface. 
+The **Support** tab in the [Admin Console](#admin-console) lets you access various Adobe support functions through a simple and easy-to-use interface.
 
 ![image](/help/onboarding/learn-concepts/assets/support-menu.png)
 
-The interface allows you to create and manage cases, chat directly with Adobe Customer Support representatives, and schedule sessions with experts. [System Administrators and Support Administrators](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html) must sign in to access the Support cases and Expert Session options.
-
->[!NOTE]
-> Refer to [Experience Cloud | Support and Expert Sessions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) for more details.
+The interface allows you to create and manage cases, chat directly with Adobe customer support representatives, and schedule sessions with experts. System administrators and support administrators must sign in to access support cases and expert session options.
 
 ## What’s Next {#what-is-next}
 
@@ -78,6 +74,9 @@ Build on this knowledge and continue your AEM onboarding journey by next reviewi
 
 While it is recommended that you move on to the next part of the Onboarding Journey by reviewing the document [Sign into the Admin Console](), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
-* [Admin Console Overview](https://helpx.adobe.com/enterprise/using/admin-console.html) - For more details on the Admin Console and how it works.
-* [Admin Console again](/help/onboarding/learn-concepts/admin-console.md)
-* [Create or update your Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) to learn more about Adobe IDs.
+* [Admin Console Introduction](/help/onboarding/learn-concepts/admin-console.md) - A basic overview of the Admin Console and how it works
+* [Admin Console Overview](https://helpx.adobe.com/enterprise/using/admin-console.html) - A more in-depth article on the Admin Console
+* [Create or update your Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Learn more about Adobe IDs.
+* [SAML 2.0 Authentication Handler](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html) - For details on SAML authentication
+* [System administrators and support administrators](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html) - Learn about the roles of system and support admins
+* [Experience Cloud | Support and Expert Sessions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) - Learn about expert sessions.
