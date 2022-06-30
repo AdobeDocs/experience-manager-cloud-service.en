@@ -108,7 +108,7 @@ The workflow processes content in chunks, each of which represents a subset of t
 
 ### Replication API {#replication-api}
 
-You can publish content using the Replcation API featured in AEM as a Cloud Service.
+You can publish content using the Replication API featured in AEM as a Cloud Service.
 
 For more information, see the [API Documentation](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
 
