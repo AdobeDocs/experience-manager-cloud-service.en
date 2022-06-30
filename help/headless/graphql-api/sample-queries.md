@@ -12,8 +12,8 @@ Learn to use GraphQL with AEM to serve content headlessly by exploring sample co
 >
 >This page should be read together with:
 >
->* [Content Fragments](/help/assets/content-fragments/content-fragments.md)
->* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+>* [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+>* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
 
 To get started with GraphQL queries and how they work with AEM Content Fragments it helps to see some practical examples. 
