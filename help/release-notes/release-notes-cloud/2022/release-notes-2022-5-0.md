@@ -60,19 +60,14 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 ### What is New {#what-is-new-cif}
 
-* New product cockpit properties page for better and simplified overview
+* Quick access to product cockpit: Easily access full detailed product information with one-click in Sites Editor
 
- ![product cockpit properties overview](/help/assets/CIF/product_cockpit_properties_overview.png)
+    ![Enable wishlist](/help/assets/CIF/enable-wishlist.png)
 
-* Improved compatibility and robustness for 3rd party connectors on I/O Runtime
+* Support for additional marketing commerce components:  Components can be configured to show an add-to-cart and add-to-wishlist call-to-action
 
-* Improved support for GQL Client configuration overwrites (e.g. set custom caching behavior)
+    ![Sites editor shortcut to product cockpit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
-### Bug fixes {#bug-fixes-cif}
-
-* Multi value product picker field shows 2nd and additional products as invalid
-
-* Product Picker is occasionally hidden behind components
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
