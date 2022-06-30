@@ -7,7 +7,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2022.6.0 |
+| Version | 2022.7.0 |
 | Type | Continuous Updates |
 | Availability date | Continuous Update |
 
