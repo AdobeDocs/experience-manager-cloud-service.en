@@ -49,18 +49,8 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 * **Form Data Model Configurations**: You can now [reuse Form Data Model configurations across environments](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config), simplifying data integrations and reducing IT costs.
 
-## CIF Add-on {#cloud-services-cif}
 
-### What is New {#what-is-new-cif}
-
-* Improved SEO for multi-store scenarios: URL formats for PDP / PLP can now be configured on a store level via the CIF Cloud Config properties
-* Product picker supports staged products via new filter option in the UI.  This enables content practitioners to prepare product content management for upcoming product launches
-* Simplified CIF configuration management and error handling by using CIF Cloud Config name instead of config proxy url
-* Manual category selection for Product list and Carousel components. This allows content practitioners to use these components on content pages, outside of the catalog experience
-
-### New features available in CIF prerelease channel {#prerelease-features-cif}
-
-* AEM CIF Search Core Component support Commerce LiveSearch
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### SDK Build Analyzers {#sdk-build-analyzers}
 
