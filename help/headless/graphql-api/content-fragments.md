@@ -144,7 +144,7 @@ GraphQL is a strongly typed API, which means that data must be clearly structure
 
 The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client needs to fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
 
-For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) and their data types.
+For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) and their data types.
 
 >[!CAUTION]
 >
