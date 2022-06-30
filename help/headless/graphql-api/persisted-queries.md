@@ -49,7 +49,7 @@ It is recommended to persist queries on an AEM author environment initially and 
 
 There are various methods of persisting queries, including:
 
-* GraphiQL IDE - see [Saving Persisted Queries](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) (preferred method)
+* GraphiQL IDE - see [Saving Persisted Queries](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (preferred method)
 * curl - see the following example
 * Other tools, including [Postman](https://www.postman.com/)
 
@@ -252,6 +252,45 @@ This query can be persisted under a path `wknd/adventures-by-activity`. To call 
 ```
 
 Note that `%3B` is the UTF-8 encoding for `;` and `%3D` is the encoding for `=`. The query variables and any special characters must be [encoded properly](#encoding-query-url) for the Persisted query to execute.
+
+## Caching your persisted queries {#caching-persisted-queries}
+
+Persisted queries are recommended as they can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application.
+
+By default AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL). 
+
+This value is set to:
+
+* 7200 seconds is the default TTL for the Dispatcher and CDN; also known as *shared caches*
+  * default: s-maxage=7200
+* 60 is the default TTL for the client (for example, a browser)
+  * default: maxage=60
+
+If you want to change the TTL for your GraphLQ query, then the query must be either:
+
+* persisted after managing the [HTTP Cache headers - from the GraphQL IDE](#http-cache-headers)
+* persisted using the [API method](#cache-api). 
+
+### Managing HTTP Cache Headers in GraphQL  {#http-cache-headers-graphql}
+
+The GraphiQL IDE - see [Saving Persisted Queries](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+
+### Managing Cache from the API {#cache-api}
+
+This involves posting the query to AEM using CURL in your command line interface. 
+
+For an example:
+
+```xml
+curl -X PUT \
+    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H "Content-Type: application/json" \
+    "https://publish-p123-e456.adobeaemcloud.com/graphql/persist.json/wknd/plain-article-query-max-age" \
+    -d \
+'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```
+
+The `cache-control` can be set at the creation time (PUT) or later on (for example, via a POST request for instance). The cache-control is optional when creating the persisted query, as AEM can provide the default value. See [How to persist a GraphQL query](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), for an example of persisting a query using curl.
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
