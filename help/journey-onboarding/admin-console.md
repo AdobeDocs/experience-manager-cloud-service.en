@@ -5,14 +5,16 @@ description: Once you understand the preparation necessary to onboarding and the
 
 # Accessing the Admin Console {#accessing-admin-console}
 
-Once you understand the preparation necessary to onboarding and the basics of AEMaaCS structure, you are ready to log into the Admin Console for the first time.
+Now that you have read the article [AEM as a Cloud Service Terminology](terminology.md) and understand the basics of AEMaaCS structure, you are ready to log into the Admin Console for the first time!
 
 ## Objective {#objective}
 
-As a system administrator you are responsible for managing users within your organization. You do this by using the Admin Console. After reading this section you should be able to:
+As a system administrator you are responsible for managing users within your organization. You do this by using the Admin Console. After reading this section you should:
 
-* Access and login to Admin Console.
-* Review your privileges as a system administrator via Admin Console.
+* Understand what and Adobe ID is.
+* Be able to log in to Admin Console.
+* Understand how to review your privileges as a system administrator via Admin Console.
+* Know how to contact Adobe support for help.
 
 ## The Admin Console {#admin-console}
 
@@ -84,7 +86,14 @@ The tab allows you to create and manage cases, chat directly with Adobe customer
 
 ## What's Next {#whats-next}
 
-Now that you have logged into Admin Console and verified your status as a system administrator, you can continue your onboarding journey by learning how to [assign team members to Cloud Manager Product Profiles.](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
+Now that you have read this document, you should:
+
+* Understand what and Adobe ID is.
+* Be able to log in to Admin Console.
+* Understand how to review your privileges as a system administrator via Admin Console.
+* Know how to contact Adobe support for help.
+
+You are ready to continue your onboarding journey by learning how to [assign team members to Cloud Manager Product Profiles](profiles.md) so that you colleagues can also access AEMaaCS.
 
 ## Additional Resources {#additional-resources}
 
