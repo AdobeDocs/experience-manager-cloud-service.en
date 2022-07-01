@@ -22,7 +22,7 @@ This article builds on these so you understand how to use metadata and tagging t
 
 There are three methods that you can use to add metadata and tags:
 
-* When first creating your fragment:
+* When first creating your fragment (from the **Assets** console):
 
   ![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
   
@@ -38,8 +38,8 @@ Now you can put all this knowledge to use and start creating Content Fragments f
 
 ## Additional Resources {#additional-resources}
 
-* [Metadata - Fragment Properties](/help/assets/content-fragments/content-fragments-metadata.md)
+* [Metadata - Fragment Properties](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
   
 * [Using Tags](/help/sites-cloud/authoring/features/tags.md)
 
-* [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
