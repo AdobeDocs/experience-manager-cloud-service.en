@@ -93,7 +93,7 @@ Now that you have read this document, you should:
 * Understand how to review your privileges as a system administrator via Admin Console.
 * Know how to contact Adobe support for help.
 
-You are ready to continue your onboarding journey by learning how to [assign team members to Cloud Manager Product Profiles](profiles.md) so that you colleagues can also access AEMaaCS.
+You are ready to continue your onboarding journey by learning how to [assign team members to Cloud Manager Product Profiles](assign-profiles-cloud-manager.md) so that you colleagues can also access AEMaaCS.
 
 ## Additional Resources {#additional-resources}
 

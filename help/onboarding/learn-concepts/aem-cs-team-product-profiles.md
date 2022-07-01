@@ -3,14 +3,13 @@ title: AEM as a Cloud Service Team and Product Profiles
 description: Follow this page to learn about AEM as a Cloud Service Team and Product Profiles.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 ---
-
 # AEM as a Cloud Service Team and Product Profiles {#product-profiles}
 
-Now that you have successfully signed into the Admin Console and verified your status as system administrator by reading the document [Accessing the Admin Console](admin-console.md) you are ready grant your team members access to AEMaaCS. You do this by assigning profiles.
+## Product Profiles {#profiles}
 
-## Objective {#objective}
+When granting a user access to a specific Adobe solution, you do not necessarily want to give them full access. Product Profiles enable each solution to have its own set of user permissions. These are available and accessible via the [Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md).
 
-When granting a user access to a specific Adobe solution, you do not necessarily want to give them full access. Product Profiles enable each solution to have its own set of user permissions. These are available and accessible via the Admin Console.
+Read more about [AEM as a Cloud Service product profiles](#aem-product-profiles) and [Cloud Manager product profiles](#cloud-manager-product-profiles) to understand how these work in concert while your team is setup.
 
 ## AEM as a Cloud Service Product Profiles {#aem-product-profiles}
 
