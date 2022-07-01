@@ -5,18 +5,16 @@ description: Before you sign into AEMaaCS, it is helpful to understand some of t
 
 # AEM as a Cloud Service Terminology {#terminology}
 
-Before you sign into AEMaaCS, it is helpful to understand some of the terminology of the system and its basic structure.
+Now that you understand what has led up to the onboarding process by reading the document [Onboarding Preparation,](preparation.md) it is helpful to understand some of the terminology of the system and its basic structure before logging in.
 
 ## Objective {#objective}
 
-AEM as a Cloud Service is a powerful and flexible tool and to use any tool you should be familiar with its organization and the terminology and language used to describe it. This next step in your onboarding journey summarizes some key terms you need to understand before you begin using the system and how to contact support if you need help with any of these concepts.
+AEM as a Cloud Service is a powerful and flexible tool and to use any tool you should be familiar with its organization and the terminology and language used to describe it. This document summarizes some key terms you need to understand before you begin using the system.
 
 After reading this document you will understand:
 
 * The different layers that make up AEMaaCS.
-* What the Adobe Identity Management System is.
-* What an Adobe ID is.
-* How to contact Adobe support.
+* The basics of what each layer does.
 
 ## AEMaaCS Structure {#structure}
 
@@ -40,16 +38,25 @@ An example is often helpful in contextualizing this hierarchy.
 
 ## What’s Next {#what-is-next}
 
-Now that you have completed this part of the AEM Onboarding Journey you should:
+Now that you have completed this part of the AEM Onboarding Journey you should understand:
 
-* Understand the basic terms used when discussing AEM as a Cloud Service.
-* Know how to contact Adobe support if you need assistance in your onboarding process.
+* The different layers that make up AEMaaCS.
+* The basics of what each layer does.
 
-Build on this knowledge and continue your AEM onboarding journey by next reviewing the document [Sign into the Admin Console](), where you will learn how access the console and verify your status as a system administrator.
+Build on this knowledge and continue your AEM onboarding journey by next reviewing the document [Accessing the Admin Console](admin-console.md), where you will learn how access the console and verify your status as a system administrator.
+
+## What's Next {#what-is-next}
+
+Now that you have read this document you should understand:
+
+* The different layers that make up AEMaaCS.
+* The basics of what each layer does.
+
+Now that you have an understanding of the basics of AEM as a Cloud Service's structure, you are ready to log in! Continue your onboarding journey by continuing to the document [Accessing the Admin Console.](admin-console.md)
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the Onboarding Journey by reviewing the document [Sign into the Admin Console](admin-console.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+While it is recommended that you move on to the next part of the Onboarding Journey by reviewing the document [Accessing the Admin Console](admin-console.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Admin Console Introduction](/help/onboarding/learn-concepts/admin-console.md) - A basic overview of the Admin Console and how it works
 * [Admin Console Overview](https://helpx.adobe.com/enterprise/using/admin-console.html) - A more in-depth article on the Admin Console
