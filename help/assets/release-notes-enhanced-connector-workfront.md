@@ -17,7 +17,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 * Added support for authentication between Experience Manager and Workfront applications using Workfront API key for instances that are migrated to Adobe IMS.
 
-* When you link external files or folders, the Workfront application displays the `SERVER_ERROR` error message.
+* When you link external files or folders, the Workfront application displays the `SERVER_ERROR` error message. The error message refers to an unauthorized exception due to a mismatch in API keys.
 
 * When you execute a Create Task workflow for an asset, the Null Pointer exception displays in the log messages.
 
@@ -25,7 +25,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 >[!IMPORTANT]
 >
->Adobe recommends you to [upgrade to the latest 1.9.0 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recommends you to [upgrade to the latest 1.9.1 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Known Issues {#known-issues}
 
