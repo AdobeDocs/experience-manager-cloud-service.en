@@ -11,9 +11,20 @@ Dynamic Media assets are cached by the CDN (Content Delivery Network) for fast d
 
 >[!NOTE]
 >
->This feature requires that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager Dynamic Media. Any other custom CDN is not supported with this feature.
+>This feature requires that you use the Adobe-bundled CDN that comes with Adobe Experience Manager Dynamic Media. Any other custom CDN is not supported with this feature.
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
+
+If you have enabled [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) on your account and you are using the Adobe-bundled CDN, you can purge all URLs with different query strings by purging the single base URL.
+
+For example, invalidating `https://weekendsite.scene7.com/is/image/grundfos/image`, also invalidates the following URLs:
+
+* `https://weekendsite.scene7.com/is/image/grundfos/image`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* and so on.
+
+This invalidation, however, is not the case for generic domains that do not support Smart Imaging, such as `s7d1.scene7.com`. Such domains still need the full URL to have invalidation work successfully.
 
 **To invalidate the CDN cache by way of Dynamic Media:**
 
