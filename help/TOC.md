@@ -28,6 +28,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + General AEMaaCS Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
       + [Release Notes for 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
       + [Release Notes for 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
       + [Release Notes for 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
@@ -58,6 +59,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
       + [Release Notes for 2022.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
       + [Release Notes for 2022.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
       + [Release Notes for 2022.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
@@ -266,6 +268,20 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
   + Administering {#administering}
+    + Content Fragments {#content-fragments}
+      + [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+      + [Headless Delivery with Content Fragments and GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
+      + [Enable Content Fragment Functionality for your Instance](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
+      + [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+      + [Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
+      + [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+      + [Variations - Authoring Fragment Content](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+      + [Content Fragment Associated Content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
+      + [Metadata - Fragment Properties](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+      + [Content Fragments - Delete Considerations](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
+      + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
+      + [Structure Tree](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
+      + [Preview - JSON Representation](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
     + Site Creation {#site-creation}
       + [Creating a New Site](/help/sites-cloud/administering/site-creation/create-site.md)
       + [Enable Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -447,6 +463,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Remove external dependencies for existing installations](/help/assets/remove-external-dependencies.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
     + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+    + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
 + Forms {#forms}
   + [Introduction](/help/forms/home.md)
   + [Key features](/help/forms/key-features.md)
@@ -610,18 +627,18 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Content Fragment](/help/headless/setup/create-content-fragment.md)
     + [GraphQL Endpoint](/help/headless/setup/create-api-request.md)
   + Content Fragments {#content-fragments}
-    + [Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
+    + [Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
     + [Content Fragments Console](/help/headless/content-fragments/content-fragment-console.md)
-    + [Content Fragment Models](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
-    + [Managing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
+    + [Content Fragment Models](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
+    + [Managing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
     + Authoring{#authoring}
-      + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
-      + [Text editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
-      + [Associated Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
-      + [Variations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
-    + [Metadata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
-    + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-    + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+      + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
+      + [Text editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
+      + [Associated Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
+      + [Variations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
+    + [Metadata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
+    + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
+    + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
   + GraphQL API {#graphql-api}
     + [GraphQL API for Content Fragments](/help/headless/graphql-api/content-fragments.md)
     + [Manage GraphQL endpoints](/help/headless/graphql-api/graphql-endpoint.md)
