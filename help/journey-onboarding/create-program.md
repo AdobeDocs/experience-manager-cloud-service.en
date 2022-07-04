@@ -4,30 +4,48 @@ description: Lean how to use Cloud Manager to create your first program.
 role: Admin, User, Developer
 ---
 
-## Create a Program {#create-program}
+# Create a Program {#create-program}
 
-Now that you have ensured you have appropriate access, you can create your first program.
+Now that you have ensured you have appropriate access to Cloud Manager, you can create your first program.
 
-1. Navigate to the Cloud Manager landing page at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and sign in.
+## Objective {#objective}
 
-1. On the Cloud Manager landing page, click on **Add Program** to launch the Add Program wizard. 
+* Understand what a program is
+* Know the difference between production and sandbox programs
+* Be able to create your own program
 
-   ![Landing page](/help/journey-onboarding/assets/setup-resources4.png)
-   
-   >[!TIP]
-   >
-   >For step by step instruction on how to use the Add Program wizard, go refer to the document [Creating Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) or watch this [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) to learn how to create your AEM as a Cloud program and learn about important considerations before creating your program.
+## What is a program? {#programs}
 
-   
-1. Upon successful creation of your cloud program you can navigate to your program from the Cloud Manager landing page to see the **Overview** page of your program.
+Programs are the highest level of organization in Cloud Manager. Depending on your license with Adobe, programs allow you to organize your solution and grant access to particular team members to those programs.
 
-   ![Program overview](/help/journey-onboarding/assets/setup-resources8.png)
+If you recall the example of the theoretical WKND Travel and Adventure Enterprises, who is a tenant that focuses on travel-related media, they might have two programs: one Sites program for its WKND Magazine division and one Assets program for WKND Media division. Different team members would then have access to the different programs because of their own division of labor requirements.
 
-1. Members assigned to the Developer product profile can login to Cloud Manager and manage Cloud Manager git repositories.
+There are also two different type of programs:
 
-   * If you have not already done so, now is a good time to assign members to the **Developer** role in your Cloud Manager team. Return to the [Assign Team Members to Cloud Manager Product Profiles](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md) document of this journey for more information.
+* A **production program** is created to enable live traffic for your site. This is your "real" environment.
+* A **sandbox program** is typically created to serve the purposes of training, running demos, enablement, POCs, or documentation.
 
-Now your program is successfully created and your Cloud Manager git repository is available for your developers to access! 
+Since they serve different purposes, the different environments have different options. However the process of creating them is similar. For this onboarding journey we will create a sandbox environment.
+
+## Creating a Sandbox Program {#create-sandbox}
+
+Follow these steps to create a sandbox program.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+ 
+1. From Cloud Manager's landing page click on **Add Program** in the top-right corner of the screen.
+
+   ![Cloud Manager landing page](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png) 
+
+1. From the create program wizard, select **Set up a sandbox**, provide a program name, and then click **Create**.
+
+   ![Program type creation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
+
+You will see a new sandbox program card on the landing page with a status indicator as the setup process progresses.
+
+![Sandbox creation from overview page](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/program-create-setupdemo2.png)
+
+Once the program is complete, members of your organization assigned to the **Developer** product profile can login to Cloud Manager and manage Cloud Manager git repositories.
 
 ## What’s Next {#whats-next}
 
