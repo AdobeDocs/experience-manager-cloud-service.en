@@ -168,7 +168,7 @@ In this part of the onboarding journey you learned all about assigning your team
 * Know the three important Cloud Manager product profiles: **Business Owner**, **Deployment Manager**, and **Developer**.
 * Be able to assign team members to Cloud Manager product profiles.
 
-You are now ready to continue your onboarding journey by next reviewing the document [Setup Cloud Resources via Cloud Manager,](setup-cloud-resources.md) where you will learn how to set up programs and environments.
+You are now ready to continue your onboarding journey by next reviewing the document [Access Cloud Manager,](cloud-manager.md) where you will learn how to access Cloud Manager where you will create your project resources.
 
 ## Additional Resources {#additional-resources}
 
