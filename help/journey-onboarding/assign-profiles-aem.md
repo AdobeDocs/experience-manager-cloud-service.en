@@ -1,96 +1,86 @@
 ---
-title: Assign Team Members to AEM as a Cloud Service Product Profiles
-description: Follow this page to learn how to assign team members to AEM as a Cloud Service Product Profiles
+title: Assigning AEM Product Profiles
+description: Once you have your cloud resources configured, you will need to grant your team access to AEM itself using AEM product profiles.
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 ---
-# Assign Team Members to AEM as a Cloud Service Product Profiles {#assign-team-members-cloud-service}
+# Assigning AEM Product Profiles {#assign-profiles-aem}
+
+Once you have your cloud resources configured, you will need to grant your team access to AEM itself using AEM product profiles.
 
 ## Objective {#objective}
 
-This document helps you understand the steps that your System Administrator must take to assign your team members to AEM as a Cloud Service product profiles and why it is crucial to enable your AEM Authors to embark on their journey with AEM. 
+By following this onboarding journey you now have set up your team in the Admin Console and created the necessary programs and environments using Cloud Manager. Before your colleagues can beginning using AEM as a Cloud Service, however, they need to be granted access to AEM itself. As the system administrator, you do this by assigning AEM product profiles.
 
-After reading this section you should understand:
+After reading this document you should understand:
 
 * Why and how your team members are assigned to AEM as a Cloud Service product profiles.
 * How to add team members to AEM User product profile.
 * How to add team members to AEM Administrators product profile.
 
+## AEM Product Profiles {#aem-product-profiles}
 
-## Introduction {#introduction}
+To be granted access to AEM as a Cloud Service, users must belong to one of two product profiles:
 
-To be granted access to AEM as a Cloud Service users must belong to one of two product profiles:  `AEM Users` or `AEM Administrators`. Your team members must be granted permissions to the AEM instance, since permissions to administer Cloud Manager will not suffice.
+* `AEM Users` - This group includes normal users who perform everyday content authoring tasks.
+* `AEM Administrators` - This group includes users who are responsible for advanced features or AEM.
 
->[!NOTE]
->Every user assigned to AEM User product profile by the system administrator will have (read-only) access to Cloud Manager.
+To use AEM, your team members must be assigned to at least one AEM product profile. Permissions to access Cloud Manager will not suffice.
+
+Every user assigned to an AEM product profile will also gain read-only access to Cloud Manager. Write access to Cloud Manager may be granted via other product profiles.
 
 ## Pre-requisites {#prerequisites}
 
-Before you start reading this section, you should consider following these pre-requisites:
+Before you start reading this section, you should have the following information available about your team who will use AEM.
 
-* Understand [AEM as a Cloud Service product profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)
-* Be familiar with [Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)
-* Cloud Manager product profiles have been assigned to your team members as appropriate, and cloud resources have been setup
-* Details about your team member: System Administrator must have the names and email addresses and the roles and responsibilities for the team members who will need access to AEM as a Cloud Service. 
+* Names
+* Email addresses
+* Roles and responsibilities
 
-   >[!NOTE]
-   >For the purpose of onboarding, we recommend that you initially add users who will participate in the immediate tasks, such as administrators, developers and content authors. You can continue the rest of the onboarding without adding all users. After you have finished onboarding, you can scale to a larger number of users later.
+>[!TIP]
+>
+>For the purpose of onboarding, we recommend that you initially add users who will participate in the immediate tasks, such as administrators, developers and content authors. You can continue the rest of the onboarding without adding all users. After you have finished onboarding, you can scale to a larger number of users later.
 
+## View AEM Product Profiles {#view-profiles}
 
-   >[!IMPORTANT]
-   >Before you start reviewing the steps for assigning team members to AEM as a Cloud Service Product Profiles, please ensure that you follow these two steps:
-   >
-   >1. Log in to [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en). Refer to Logging in to Admin Console for more details.
-   >
-   >1. Review [AEM as a Cloud Service Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles). 
+Follow these steps to see the AEM product profiles from the Admin Console.
 
-Follow the steps below to see the list of Cloud Manager Profiles from Adobe Admin Console:
+1. Log in to Admin Console at [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
 
-1. Log in to [Adobe Admin Console](https://adminconsole.adobe.com/
-). From the **Overview** page, select **Adobe Experience Manager as a Cloud Service** from the **Products and services** card.
+1. From the **Overview** page, select **Adobe Experience Manager as a Cloud Service** from the **Products and services** card.
 
-   ![](/help/journey-onboarding/assets/assign-team1.png)   
+   ![Products and services card](/help/journey-onboarding/assets/assign-team1.png)   
 
-1. Navigate and select the instance (Author instance of Development environment) as shown in the picture below.
+1. Navigate and select the instance.
 
-   ![](/help/journey-onboarding/assets/cloud-profiles-1.png)
+   ![Select instance](/help/journey-onboarding/assets/cloud-profiles-1.png)
 
+1. You will see the list of AEM as a Cloud Service product profiles that can be assigned to a user based on their roles.
 
-1. You will see the list of AEM as a Cloud Service product profiles that will be need to assigned to a user based on their role. 
+   ![Product profiles](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
-    >[!NOTE]
-    >To learn more about these, see [AEM as a Cloud Service Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles).
+## Add Team Members to Product Profiles {#add-team-members}
 
-   ![](/help/journey-onboarding/assets/cloud-profiles-2.png)
+Now that you are familiar with the available profiles, you can assign them as necessary to your team members.
 
+These tasks require you to be a system administrator with the **Business Owner** Cloud Manager product profile.
 
-## Add Team Members to AEM User or AEM Administrator Product Profile {#add-team-members}
+1. Navigate to your program from Cloud Manager and select the **Manage Access** button from the context of the environment of interest.
 
-To be granted access to AEM as a Cloud Service instance users must belong to one of two product profiles `AEM Users` or `AEM Administrators`. 
+   ![Mange access](/help/journey-onboarding/assets/add-team1.png)
 
->[!NOTE]
->You must be granted permissions to the instance, permissions to administer the Cloud Manager will not suffice. Learn more. 
+1. A new tab navigates you to the Admin Console from where you have access to the author instance of the environment. Select **AEM Administrators** or **AEM Users** based on the permissions this individual needs to be given.
 
-The steps below must be followed by a System Administrator who is also in the Business Owner role.
-
-1. Navigate to your program from Cloud Manager and select the **Manage Access** button from the context of the environment of interest as shown below.
-
-   ![](/help/journey-onboarding/assets/add-team1.png)
-
-1. A new tab navigates you to Adobe Admin Console from where you have access to the author instance of the environment. Select **AEM Administrators** or **AEM Users** based on the permissions this individual needs to be give. Learn more about [AEM as a Cloud Service product profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles). 
-
-   ![](/help/journey-onboarding/assets/add-team2.png)
+   ![Assign access](/help/journey-onboarding/assets/add-team2.png)
 
 1. Select `AEM Administrator` or `AEM User` and click on **Add User** as shown below and submit the necessary details to complete adding the team member.
 
-   ![](/help/journey-onboarding/assets/add-team3.png)
+   ![Add team member](/help/journey-onboarding/assets/add-team3.png)
 
-   The user you added will now have access to the AEM as a Cloud Service Author services!
+1. Repeat these steps for all environments including development, staging and production, if you have the information of team members who need access available.
 
-   >[!NOTE]
-   >You will want to repeat these steps for all environments including Development, Stage and Production, if you have the information of team members who need access available.
-
+The user you added will now have access to the AEM as a Cloud Service Author services!
 
 ## What’s Next {#whats-next}
 
