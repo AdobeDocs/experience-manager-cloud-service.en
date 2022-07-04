@@ -28,6 +28,10 @@ Content fragments can also be delivered in JSON format, using the Sling Model (J
 * enables you to use the component to manage which elements of a fragment to deliver
 * allows bulk-delivery, by adding multiple content fragment core components on the page being used for API delivery
 
+>[!NOTE]
+>
+>Content Fragments are stored as **Assets**. They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** console, though they can still be managed from the **Assets** console. This section covers management from the **Assets** console.
+
 This and the following pages cover the tasks for creating, configuring, maintaining and using your content fragments:
 
 * [Enable Content Fragment functionality for your instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
