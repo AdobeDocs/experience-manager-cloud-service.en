@@ -90,7 +90,8 @@ The properties are distributed across several tabs.
 
   * **Language** - The page language
   * **Language Root** - Must be checked if the page is the root of a language copy
-  * **Redirect** - Indicates the page to which this page should automatically redirect
+  * **Redirect** - Indicates the page to which this page should automatically redirect with an HTML `302 Found` status. 
+    * **Permanent Redirect** - When checked, the page redirects to the target path provided along with an HTML `301 Moved Permanently` status.
   * **Design** - Indicates whether the page is shown or hidden in the page navigation of the resulting site
   * **Alias** - Specifies an alias to be used with this page
     * For example, if you define an alias of `private` for the page `/content/wknd/us/en/magazine/members-only`, then this page can also be accessed via `/content/wknd/us/en/magazine/private`
