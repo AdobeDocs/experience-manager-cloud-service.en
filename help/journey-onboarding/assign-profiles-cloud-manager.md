@@ -5,6 +5,7 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 ---
+
 # Assign Team Members to Cloud Manager Product Profiles {#assign-team-members}
 
 In the previous step in this journey, [Accessing the Admin Console,](admin-console.md) you learned now log in to the Admin Console and verify your privileges as a system administrator. You are now ready to allow your team members access to Cloud Manager. You do this by assigning product profiles.
@@ -22,12 +23,6 @@ After reading this document you should:
 * Know the three important Cloud Manager product profiles: **Business Owner**, **Deployment Manager**, and **Developer**.
 * Be able to assign team members to Cloud Manager product profiles.
 
->[!TIP]
->
->For the purpose of onboarding, Adobe recommends that you initially add users who will participate in the immediate tasks, such as administrators, developers, and content authors.
->
->You can continue the onboarding process without adding all users. After you have finished onboarding, you can add additional users.
-
 ## Prerequisites {#prerequisites}
 
 To assign team members to product profiles, you will need to have details about your team members, who will need to access AEM as a Cloud Service, including:
@@ -35,6 +30,12 @@ To assign team members to product profiles, you will need to have details about 
 * Names
 * Email addresses
 * Roles and responsibilities 
+
+>[!TIP]
+>
+>For the purpose of onboarding, Adobe recommends that you initially add users who will participate in the immediate tasks, such as administrators, developers, and content authors.
+>
+>You can continue the onboarding process without adding all users. After you have finished onboarding, you can add additional users.
 
 ## Product Profiles {#product-profiles}
 
@@ -74,7 +75,7 @@ The most important profiles to assign as part of the initial onboarding process 
 * **Deployment Manager** - These users deploy code from your repositories to running AEM environments.
 * **Developer** - These users develop your custom AEM applications and commit code to your repositories.
 
-Knowing what these roles are and what they do, review your list of team members to determine who needs which profile. Keep in mind that users can and often do have multiple roles in your team and therefore also need multiple profiles.
+Knowing what these roles are and what they do, review your list of team members to determine who needs which profile. Keep in mind that users can have and often do have multiple roles in your team and therefore also need multiple profiles.
 
 ## Assign the Business Owner Product Profile {#assign-business-owner}
 
@@ -135,7 +136,7 @@ Your **Deployment Manager**s have been assigned and can now access Cloud Manager
 
 ## Assign the Developer Product Profile {#assign-developer}
 
-1. Identify the user(s) who need to develop AEM applications and manage code..
+1. Identify the user(s) who need to develop AEM applications and manage code.
 
 1. Log in to the Admin Console at `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` and on the **Overview** page select **Adobe Experience Manager as a Cloud Service** product from the **Products and services** card.
 
@@ -161,14 +162,14 @@ Your **Developer**s have been assigned and can now access Cloud Manager. Dependi
 
 Congratulations! Your newly formed Cloud Manager team (including yourself assigned to the **Business Owner** profile) has been set up. In the role of **Business Owner**, you are now just one step away from logging in to Cloud Manager and enabling the creation of your cloud resources.
 
-In this part of the onboarding journey you learned all about assigning your team members to profiles in the Admin Console. You should now:
+In this part of the onboarding journey you learned about assigning your team members to profiles in the Admin Console. You should now:
 
 * Understand what product profiles are.
 * Understand what Cloud Manager is.
 * Know the three important Cloud Manager product profiles: **Business Owner**, **Deployment Manager**, and **Developer**.
 * Be able to assign team members to Cloud Manager product profiles.
 
-You are now ready to continue your onboarding journey by next reviewing the document [Access Cloud Manager,](cloud-manager.md) where you will learn how to access Cloud Manager where you will create your project resources.
+You are now ready to continue your onboarding journey by next reviewing the document [Access Cloud Manager,](cloud-manager.md) where you will learn how to access Cloud Manager and create your project resources.
 
 ## Additional Resources {#additional-resources}
 

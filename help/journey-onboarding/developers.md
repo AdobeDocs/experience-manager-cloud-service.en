@@ -5,15 +5,16 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 ---
+
 # Developer and Deployment Manager Tasks {#developer-deployment-manager}
 
-Once they system administrator has set up the necessary cloud resources, learn how developers and deployment managers can access git to develop applications and use pipelines to deploy them.
+The system administrator has completed the onboarding journey by setting up the necessary cloud resources and granting access in the document [Assigning AEM Product Profiles.](assign-profiles-aem.md) Now developers and deployment managers can access git to develop custom applications and use pipelines to deploy them.
 
 ## The Story So Far {#story-so-far}
 
 You have come a long way in your onboarding journey! Congratulations! You have already assigned your team members to the correct product profiles and set up the necessary cloud resources including your programs and environments.
 
-At this point your developers and deployment managers can begin creating your own applications while your AEM users can start creating content. In this sense, your onboading is complete and now it is time to use your new AEM as a Cloud Service system.
+At this point your developers and deployment managers can begin creating your own applications while your AEM users can start creating content. In this sense, your onboading is complete and now it is time to use your new AEM as a Cloud Service system, which this document will illustrate.
 
 ## Audience {#audience}
 
@@ -23,7 +24,7 @@ The system administrator can also perform these same tasks, but generally these 
 
 ## Objective {#objective}
 
-This document is a supplement to the onboarding process to demonstrate the basic tasks of a developer and deployment manager once the system administrator has onboarded all the users and created the necessary cloud resources as described up to this point of the onboarding journey.
+This document is a supplement to the onboarding journey to demonstrate the basic tasks of a developer and deployment manager once the system administrator has onboarded all the users and created the necessary cloud resources.
 
 After reading this document, you should:
 
@@ -34,7 +35,7 @@ After reading this document, you should:
 
 Once the system administrator has completed the main onboarding tasks of creating users and setting up cloud resources, the users generally most anxious to access the system are the developers and deployment managers. This is because they are the users responsible for building your custom applications on top of AEM as a Cloud Service.
 
-* **Developers** - These users must access the Cloud Manager git repositories where they will manage the code for your AEM custom applications.
+* **Developers** - These users access the Cloud Manager git repositories where they will manage the code for your AEM custom applications.
 * **Deployment Managers** - These users use Cloud Manager to create and run pipelines that deploy the code from the git repositories to your running AEM environments.
 
 Depending on your organizational needs, the same user(s) can have both roles.
@@ -47,7 +48,7 @@ Before you begin the tasks described in this document as a developer or deployme
 * Developers must additionally be assigned to **AEM Users** or **AEM Administrators** product profiles in order to also use AEM.
 * Cloud resources have been set up.
 
-## Access git {#manage-git}
+## Accessing git {#accessing-git}
 
 You can access and manage your git repositories using self-service git account management from Cloud Manager.
 
@@ -63,7 +64,7 @@ You can access and manage your git repositories using self-service git account m
    * The git username.
    * The git password, the value of which is shown when the **Generate Password** button is clicked.
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
+   ![Repository information](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
 Using these credentials, the user can clone a local copy of the repository, and make changes in that local repository, and when ready can commit any code changes back to the remote code repository in Cloud Manager.
 
@@ -127,9 +128,9 @@ Now that you have read this document you should:
 * As a developer, understand how to access and manage your Cloud Manager git repositories.
 * As a deployment manager, be able set up pipelines and deploy your code in Cloud Manager.
 
-You have hit the ground running as a developer or deployment manager with not only working knowledge but working environments, repositories, and pipelines! But there is more to learn about AEM as a Cloud Service's powerful CI/CD tools. Check out the [Additional Resources](#additional-resources) section for more details.
+You have hit the ground running as a developer or deployment manager with not only working knowledge of Cloud Manager but also working environments, repositories, and pipelines! But there is more to learn about AEM as a Cloud Service's powerful CI/CD tools. Check out the [Additional Resources](#additional-resources) section for more details.
 
-If you are interested in how content authors access and use AEM as a Cloud service, continue on to the final part of the onboarding journey, [AEM Author Tasks.](aem-users.md)
+If you are interested in how content authors access and use AEM as a Cloud service, continue on to the final part of the onboarding journey, [AEM User Tasks.](aem-users.md)
 
 >[!TIP]
 >

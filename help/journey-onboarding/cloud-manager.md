@@ -6,20 +6,22 @@ role: Admin, User, Developer
 
 # Access Cloud Manager {#cloud-resources}
 
-Lean how to access Cloud Manager so that you can set up your project resources.
+In the previous article in this onboarding journey, [Assigning Team Members to Cloud Manager Product Profiles,](assign-profiles-cloud-manager.md) you granted your AEMaaCS team the proper roles. Now lean how to access Cloud Manager so that you can set up your project resources that your team will use.
 
 ## Objective {#objective}
 
-Since you completed the previous step in this journey, [Assigning Team Members to Cloud Manager Product Profiles,](assign-profiles-cloud-manager.md) your team can access Cloud Manager. Cloud Manager is used to create and manage your project resources such as programs and environments.
+Since you completed the previous step in this journey, your team can access Cloud Manager. Cloud Manager is used to create and manage your project resources such as programs and environments.
 
 After reading this document you should understand:
 
 * That a system administrator assigned to the **Business Owner** role must be the first in your organization to login and access Cloud Manager.
 * How to sign into Cloud Manager.
 
-## Introduction {#introduction}
+## Cloud Manager {#cloud-manager}
 
-Adding your cloud resources such as programs and environments is done via Cloud Manager. Typically a team member assigned to the **Business Owner** product profile is responsible for this task. This individual understands the business needs and who completes the initial Cloud Manager setup.
+Cloud Manager is an essential component of AEM as a Cloud Service and serves as the single entry point for your team. It supports customers with enterprise development setups with its purpose-built CI/CD pipelines, which are equipped to ensure thorough testing and highest code quality to deliver exceptional experiences. Cloud Manager provides everything required to get started in a self-service manner including the ability to create your cloud resources and environments.
+
+Typically a team member assigned to the **Business Owner** product profile is responsible for adding your cloud resources such as programs and environments. This individual understands the business needs and who completes the initial Cloud Manager setup.
 
 For the purposes of this onboarding journey, you, as the system administrator, already assigned yourself to the **Business Owner** product profile and will set up the cloud resources. Depending actual project requirements, the business owners may or may not be the same as the system administrator.
 

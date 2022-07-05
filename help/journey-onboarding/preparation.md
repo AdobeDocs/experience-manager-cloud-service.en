@@ -78,8 +78,4 @@ You should now have a basic understanding of:
 * How that contract affects the onboarding process.
 * How to prepare for your onboarding call.
 
-Now that you are familiar with these preparation steps, you are almost ready to sign in to the system yourself. But first you will need a brief overview of how AEM as a Cloud Service is structured from a system administrator's point of view and get to know some important terminology. Please continue on to the next part of the journey, [Terminology and Structure.](terminology.md)
-
-## Additional Resources {#additional-resources}
-
-* 
+Now that you are familiar with these preparation steps, you are almost ready to sign in to the system yourself. But first you will need a brief overview of how AEM as a Cloud Service is structured from a system administrator's point of view and get to know some important terminology. Please continue on to the next part of the journey, [AEM as a Cloud Service Terminology.](terminology.md)

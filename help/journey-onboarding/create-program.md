@@ -6,21 +6,25 @@ role: Admin, User, Developer
 
 # Create a Program {#create-program}
 
-Now that you have ensured you have appropriate access to Cloud Manager, you can create your first program.
+After reviewing the previous document in this onboarding journey, [Access Cloud Manager,](cloud-manager.md) you have ensured you have appropriate access to Cloud Manager. Now you can create your first program.
 
 ## Objective {#objective}
 
-* Understand what a program is
-* Know the difference between production and sandbox programs
-* Be able to create your own program
+After reading this document you will:
+
+* Understand what a program is.
+* Know the difference between production and sandbox programs.
+* Be able to create your own program.
 
 ## What is a program? {#programs}
 
 Programs are the highest level of organization in Cloud Manager. Depending on your license with Adobe, programs allow you to organize your solution and grant access to particular team members to those programs.
 
+Cloud Manager programs represent sets of Cloud Manager environments. These programs support logical sets of business initiatives, typically corresponding to a licensed Service Level Agreement (SLA). For example, one program may represent the AEM resources to support a global public web site for an organization, while another program represents an internal, central DAM.
+
 If you recall the example of the theoretical WKND Travel and Adventure Enterprises, who is a tenant that focuses on travel-related media, they might have two programs: one Sites program for its WKND Magazine division and one Assets program for WKND Media division. Different team members would then have access to the different programs because of their own division of labor requirements.
 
-There are also two different type of programs:
+There are two different type of programs:
 
 * A **production program** is created to enable live traffic for your site. This is your "real" environment.
 * A **sandbox program** is typically created to serve the purposes of training, running demos, enablement, POCs, or documentation.
