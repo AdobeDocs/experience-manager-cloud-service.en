@@ -8,13 +8,13 @@ exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 
 # AEM User Tasks {#aem-user-tasks}
 
-Once they system administrator has set up the necessary cloud resources, learn how AEM users can access AEM as as Cloud Service to author content.
+The system administrator has completed the onboarding journey by setting up the necessary cloud resources and granting access in the document [Assigning AEM Product Profiles.](assign-profiles-aem.md) Now learn how AEM users can access AEM as as Cloud Service to author content.
 
 ## The Story So Far {#story-so-far}
 
 You have come a long way in your onboarding journey! Congratulations! You have already assigned your team members to the correct product profiles, set up the necessary cloud resources including your programs and environments, learned how developers can access git, and how deployment mangers can create and execute deployment pipelines.
 
-At this point your AEM users can start creating content. In this sense, your onboading is complete and now it is time to use your new AEM as a Cloud Service system.
+At this point your AEM users can start creating content. In this sense, your onboading is complete and now it is time to use your new AEM as a Cloud Service system, which this document will illustrate.
 
 ## Audience {#audience}
 
@@ -38,7 +38,7 @@ Before you begin the tasks described in this document as an AEM user, ensure tha
 * Your system administrator has assigned users to the **AEM Users** or **AEM Administrators** product profiles.
 * Cloud resources have been set up.
 
-## Log into AEM {#login-aem}
+## Log Into AEM {#login-aem}
 
 As an AEM author, you will need to log into AEM to begin creating content.
 
@@ -60,7 +60,7 @@ Congratulations! You have now successfully logged in to Author.
 
 ## What’s Next {#whats-next}
 
-Now that you have read this document you should know:
+Now that you have read this document you should know how to:
 
 * Access Cloud Manager.
 * Sign into an AEM as a Cloud Service instance.

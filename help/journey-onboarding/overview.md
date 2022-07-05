@@ -69,9 +69,9 @@ The following articles describe in details the core onboarding concepts and give
 |2|[AEM as a Cloud Service Terminology](terminology.md)|Before you sign into AEMaaCS for the first time, it is helpful to understand some of the terminology of the system and its basic structure.|System Administrator|
 |3|[The Admin Console](admin-console.md)|Learn what the Admin Console is, how to log in, and how to verify your profile as a system administrator.|System Administrator|
 |4|[Assigning Cloud Manager Product Profiles](assign-profiles-cloud-manager.md)|Review Cloud Manager Product Profiles and learn how to assign team members to Cloud Manager Product profiles.|System Administrator|
-|5|[Access Cloud Manager](setup-cloud-resources.md)|Lean how to access Cloud Manager so that you can set up your project resources.|System Administrator|
+|5|[Access Cloud Manager](cloud-manager.md)|Lean how to access Cloud Manager so that you can set up your project resources.|System Administrator|
 |6|[Create a Program](create-program.md)|Learn how to create a program using Cloud Manager.|System Administrator|
-|7|[Create environments](create-environment.md)|Learn how to create an environment using Cloud Manager.|System Administrator|
+|7|[Create environments](create-environments.md)|Learn how to create an environment using Cloud Manager.|System Administrator|
 |8|[Assigning AEM Product Profiles](assign-profiles-aem.md)|Learn how System Administrator assign your team members to AEM as a Cloud Service product profiles.|System Administrator|
 |9|[Developer and Deployment Manager Tasks](developers.md)|Optional - Learn how as a Developer you can access and manage Cloud Manager Git and how as a Deployment Manager you can setup pipelines and deploy code in Cloud Manager.|Developers and Deployment Managers|
 |10|[AEM User Tasks](aem-users.md)|Optional - Learn how as an AEM author you can access AEM as a Cloud Service instance and get familiar with authoring content for AEM as a Cloud Service.|AEM Users|
