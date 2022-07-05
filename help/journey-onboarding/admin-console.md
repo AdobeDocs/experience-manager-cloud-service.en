@@ -80,7 +80,7 @@ You will learn more about product profiles and assigning users in the next part 
 
 If you have any issues, Adobe support can be accessed via the Admin Console. The **Support** tab lets you access various Adobe support functions through a simple and easy-to-use interface.
 
-![Support tab](/help/onboarding/learn-concepts/assets/support-menu.png)
+![Support tab](/help/journey-onboarding/assets/support-menu.png)
 
 The tab allows you to create and manage cases, chat directly with Adobe customer support representatives, and schedule sessions with experts. System administrators and support administrators must sign in to access support cases and expert session options.
 
