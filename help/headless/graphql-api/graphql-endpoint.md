@@ -16,10 +16,10 @@ There are two types of endpoints in AEM:
 
 * Global
   * Available for use by all sites.
-  * This endpoint can use all Content Fragment Models from all Sites configurations (defined in the [Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+  * This endpoint can use all Content Fragment Models from all Sites configurations (defined in the [Configuration Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
   * If there are any Content Fragment Models that should be shared among Sites configurations, then these should be created under the global Sites configurations.
 * Sites configurations:
-  * Corresponds to a Sites configuration, as defined in the [Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+  * Corresponds to a Sites configuration, as defined in the [Configuration Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
   * Specific to a specified site/project.
   * A Sites configuration specific endpoint will use the Content Fragment Models from that specific Sites configuration together with those from the global Sites configuration.
 
@@ -46,11 +46,11 @@ To enable an endpoint for GraphQL for AEM you need to:
 
 ## Enabling your GraphQL Endpoint {#enabling-graphql-endpoint}
 
-To enable a GraphQL Endpoint you first need to have an appropriate configuration. See [Content Fragments - Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+To enable a GraphQL Endpoint you first need to have an appropriate configuration. See [Content Fragments - Configuration Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
 
 >[!CAUTION]
 >
->If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-browser.md), the **Create** option will not be available.
+>If the [use of content fragment models have not been enabled](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md), the **Create** option will not be available.
 
 To enable the corresponding endpoint:
 
