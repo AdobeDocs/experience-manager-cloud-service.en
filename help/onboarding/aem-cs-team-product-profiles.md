@@ -7,7 +7,7 @@ exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 
 ## Product Profiles {#profiles}
 
-When granting a user access to a specific Adobe solution, you do not necessarily want to give them full access. Product Profiles enable each solution to have its own set of user permissions. These are available and accessible via the [Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md).
+When granting a user access to a specific Adobe solution, you do not necessarily want to give them full access. Product Profiles enable each solution to have its own set of user permissions. These are available and accessible via the [Admin Console.](/help/journey-onboarding/admin-console.md)
 
 Read more about [AEM as a Cloud Service product profiles](#aem-product-profiles) and [Cloud Manager product profiles](#cloud-manager-product-profiles) to understand how these work in concert while your team is setup.
 
@@ -30,7 +30,7 @@ Your AEM as a Cloud Service team members will be added and assigned to one or mo
 
 Cloud Manager has pre-configured product profiles, or more simply, role based permissions. Your system administrator will be responsible for setting up your Cloud Manager team by assigning them to these product profiles, and must familiarize themselves with these product profiles, and which team member to assign them to.
 >[!NOTE]
->Refer to [Role Based Permissions in Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md##role-based-permissions) for more details.
+>Refer to [Role Based Permissions in Cloud Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions) for more details.
 
 Each of the product profiles have specific permissions associated with it. For example, if you are in the role of a:
 

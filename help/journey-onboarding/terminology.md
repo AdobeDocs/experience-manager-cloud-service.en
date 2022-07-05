@@ -51,7 +51,6 @@ Build on this knowledge and continue your AEM onboarding journey by next reading
 
 While it is recommended that you move on to the next part of the Onboarding Journey by reviewing the document [Accessing the Admin Console](admin-console.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
-* [Admin Console Introduction](/help/onboarding/learn-concepts/admin-console.md) - A basic overview of the Admin Console and how it works
 * [Admin Console Overview](https://helpx.adobe.com/enterprise/using/admin-console.html) - A more in-depth article on the Admin Console
 * [Create or update your Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Learn more about Adobe IDs.
 * [SAML 2.0 Authentication Handler](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html) - For details on SAML authentication
