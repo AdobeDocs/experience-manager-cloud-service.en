@@ -1,0 +1,164 @@
+---
+title: Developer and Deployment Manager Tasks
+description: Once they system administrator has set up the necessary cloud resources, learn how developers and deployment managers can access git to develop applications and use pipelines to deploy them.
+feature: Onboarding
+role: Admin, User, Developer
+exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
+---
+# Developer and Deployment Manager Tasks {#developer-deployment-manager}
+
+Once they system administrator has set up the necessary cloud resources, learn how developers and deployment managers can access git to develop applications and use pipelines to deploy them.
+
+## The Story So Far {#story-so-far}
+
+You have come a long way in your onboarding journey! Congratulations! You have already assigned your team members to the correct product profiles and set up the necessary cloud resources including your programs and environments.
+
+At this point your developers and deployment managers can begin creating your own applications while your AEM users can start creating content. In this sense, your onboading is complete and now it is time to use your new AEM as a Cloud Service system.
+
+## Audience {#audience}
+
+This document is therefore written from the perspective of the **developer** and **deployment manager**.
+
+The system administrator can also perform these same tasks, but generally these roles are held by different users.
+
+## Objective {#objective}
+
+This document is a supplement to the onboarding process to demonstrate the basic tasks of a developer and deployment manager once the system administrator has onboarded all the users and created the necessary cloud resources as described up to this point of the onboarding journey.
+
+After reading this document, you should:
+
+* As a developer, understand how to access and manage your Cloud Manager git repositories.
+* As a deployment manager, be able set up pipelines and deploy your code in Cloud Manager.
+
+## Developers and Deployment Managers {#roles}
+
+Once the system administrator has completed the main onboarding tasks of creating users and setting up cloud resources, the users generally most anxious to access the system are the developers and deployment managers. This is because they are the users responsible for building your custom applications on top of AEM as a Cloud Service.
+
+* **Developers** - These users must access the Cloud Manager git repositories where they will manage the code for your AEM custom applications.
+* **Deployment Managers** - These users use Cloud Manager to create and run pipelines that deploy the code from the git repositories to your running AEM environments.
+
+Depending on your organizational needs, the same user(s) can have both roles.
+
+## Prerequisites {#prerequisites}
+
+Before you begin the tasks described in this document as a developer or deployment manager, ensure that your system administrator has completed all the step in this onboarding journey. This means that:
+ 
+* Your system administrator has assigned developers and deployment managers to their respective product profiles.
+* Developers must additionally be assigned to **AEM Users** or **AEM Administrators** product profiles in order to also use AEM.
+* Cloud resources have been set up.
+
+## Access git {#manage-git}
+
+You can access and manage your git repositories using self-service git account management from Cloud Manager.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+
+1. Navigate to **Pipelines** card from your **Program Overview** page and find the **Access Repo Info** button to access and manage your git Repository.
+
+   ![Access Repo Info button on Environments card](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+
+1. Click on the **View Repo Info** button to open a dialog to view:
+
+   * The URL to the Cloud Manager git repository.
+   * The git username.
+   * The git password, the value of which is shown when the **Generate Password** button is clicked.
+
+   ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
+
+Using these credentials, the user can clone a local copy of the repository, and make changes in that local repository, and when ready can commit any code changes back to the remote code repository in Cloud Manager.
+
+## Pipeline Setup {#setup-pipeline}
+
+Once developers have added their custom code to your git repositories, the deployment manager can create and execute pipelines to deploy that code to your AEM environments.
+
+Follow these steps to create your first non-production deployment pipeline.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+
+1. Access the **Pipelines** card from the Cloud Manager home screen. Click on **+Add** and select **Add Non-Production Pipeline**. 
+
+   ![Add non-production pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
+
+1. On the **Configuration** tab of the **Add Non-Production Pipeline** dialog, select the type of non-production pipeline you with to add. For this example, select **Deployment Pipeline**.
+
+   ![Add Non-Production pipeline dialog](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
+
+1. Provide a **Non-Production Pipeline Name** to identify your pipeline along with the following additional information.
+
+1. For the **Deployment Trigger** select **Manual** so that the pipeline runs only when you start it.
+
+1. Click **Continue**.
+
+1. On the **Source Code** tab of the **Add Non-Production Pipeline** dialog, you must select which type of code the pipeline should process. For this example, select **Full Stack Code**.
+
+1. On the **Source Code** tab, you must define the following options.
+
+   * **Eligible Deployment Environments** - You must choose which environment to which the pipeline should deploy.
+   * **Repository** - This options defines from which git repo the pipeline should retrieve the code.
+   * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
+     * Enter the first few characters of the branch name and the auto-complete feature of this field will find the matching branches to help you select.
+
+   ![Full-stack pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
+
+1. Click **Save**.
+
+You have now created your first pipeline! Users with the deployment manager role can now start the pipeline from the Cloud Manager UI.
+
+## Deploy {#deploy}
+
+Now that developers have added their custom code to the git repositories and you have a pipeline created to deploy that code, it is time to execute the pipeline to actually move that code from git to your environment.
+
+![Pipelines card in Cloud Manager](/help/implementing/cloud-manager/assets/configure-pipeline/pipelines-card.png)
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click on the ellipsis button next to the pipeline you created in the previous section and select **Run** from the menu.
+
+1. The pipeline run begins and is indicated by the **Status** column. 
+
+You can see the details of the run by clicking the ellipsis button again and selecting **View details**.
+
+Congratulations! You have now deployed code from your git repository to a non-production environment!
+
+## What’s Next {#whats-next}
+
+Now that you have read this document you should:
+
+* As a developer, understand how to access and manage your Cloud Manager git repositories.
+* As a deployment manager, be able set up pipelines and deploy your code in Cloud Manager.
+
+You have hit the ground running as a developer or deployment manager with not only working knowledge but working environments, repositories, and pipelines! But there is more to learn about AEM as a Cloud Service's powerful CI/CD tools. Check out the [Additional Resources](#additional-resources) section for more details.
+
+If you are interested in how content authors access and use AEM as a Cloud service, continue on to the final part of the onboarding journey, [AEM Author Tasks.](aem-users.md)
+
+>[!TIP]
+>
+>Now that you are onboarded, you can [learn how to easily add the AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) to a sandbox environment with minimal AEM configuration and be able to test the powerful features of AEM with rich examples based on best-practices.
+
+## Additional Resources {#additional-resources}
+
+* [Accessing Git and Git account management from Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
+
+* [Local Development Environment for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+
+* [Getting started with AEM Sites (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+
+* [Getting Started with the AEM SPA Editor and React | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
+
+* [Getting Started with the AEM SPA Editor and Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
+
+* [Getting Started with AEM Headless - GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=en)
+
+* [Getting Started with AEM SPA Editor for Developers](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
+
+## Experience League Courses {#exp-league-courses}
+
+Follow the experience league courses to learn more. Please ensure you are signed up to access the courses:
+
+* [Traditional Sites](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
+
+* [SPA Editor](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
+
+* [Headless](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
+
+* [Commerce](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
