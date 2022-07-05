@@ -22,7 +22,7 @@ For the purposes of this onboarding journey, a complete understanding of the str
 
 ![Cloud Manager structure](/help/journey-sites/quick-site/assets/cloud-manager-structure.png)
 
-* **TENANT** - Every customer is provisioned with a tenant. A tenant is also referred to as an IMS org.
+* **TENANT** - Every customer is provisioned with a tenant. A tenant is also referred to as an IMS org (more on IMS later in this journey)
 * **PROGRAMS** - Each tenant has one or more programs, which often reflect the customer's licensed solutions.
 * **ENVIRONMENTS** - Each program has multiple environments such as production for live content, one for staging, and one for development purposes.
 * **REPOSITORY** - The environments have one or more git repositories where application and front-end code is maintained.
@@ -31,28 +31,21 @@ For the purposes of this onboarding journey, a complete understanding of the str
 An example is often helpful in contextualizing this hierarchy.
 
 * WKND Travel and Adventure Enterprises might be a **tenant** that focuses on travel-related media.
-* The WKND Travel and Adventure Enterprises tenant might have two **programs**: one Sites program for its WKND Magazine division and one Assets program for WKND Media division.
-* The WKND Magazine and WKND Media programs would both have dev, stage, and production **environments**.
+* The WKND Travel and Adventure Enterprises tenant might have two **programs**: 
+  * One Sites program for its WKND Magazine division
+  * One Assets program for WKND Media division
+* The WKND Magazine and WKND Media programs would both have development, staging, and production **environments**.
 * **Repositories** are used to maintain the custom code and applications for WKND Magazine and WKND Media.
 * Various **tools &amp; workflows** work across the repos to deploy code using CI/CD pipelines, access logs, access AEM, etc.
 
 ## What’s Next {#what-is-next}
 
-Now that you have completed this part of the AEM Onboarding Journey you should understand:
+Now that you have completed this part of the AEM onboarding journey you should understand:
 
 * The different layers that make up AEMaaCS.
 * The basics of what each layer does.
 
-Build on this knowledge and continue your AEM onboarding journey by next reviewing the document [Accessing the Admin Console](admin-console.md), where you will learn how access the console and verify your status as a system administrator.
-
-## What's Next {#what-is-next}
-
-Now that you have read this document you should understand:
-
-* The different layers that make up AEMaaCS.
-* The basics of what each layer does.
-
-Now that you have an understanding of the basics of AEM as a Cloud Service's structure, you are ready to log in! Continue your onboarding journey by continuing to the document [Accessing the Admin Console.](admin-console.md)
+Build on this knowledge and continue your AEM onboarding journey by next reading the document [Accessing the Admin Console](admin-console.md), where you will learn how access the console and verify your status as a system administrator.
 
 ## Additional Resources {#additional-resources}
 

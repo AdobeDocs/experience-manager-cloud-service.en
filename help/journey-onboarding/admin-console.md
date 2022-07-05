@@ -24,7 +24,7 @@ The Adobe Admin Console is a central place to administer and manage your Adobe p
 
 To sign into the Admin Console, you will need an Adobe ID. And Adobe ID is an account tied to a specific email address that is required to login and access AEM as a Cloud Service or any of your Adobe solutions. By using your Adobe ID you keep all your Adobe plans and products associated with a single account.
 
-When you as the system administrator sets up your team in the Admin Console, you specify the email address that will be used as the Adobe ID.
+When you as the system administrator set up your team in the Admin Console, you specify the email address that will be used as the Adobe ID.
 
 There are three types of Adobe IDs:
 
@@ -40,7 +40,7 @@ As system administrator, you may decide to onboard yourself and your team onto A
 
 Before you can use the Admin Console to administer users within your organization, you need to ensure that you yourself can access it properly and have the appropriate permissions.
 
-1. As a System Administrator, you will receive multiple emails from Adobe as part of the onboarding process. Look for the welcome email that provides the information about the organization name to which you have been granted access.
+1. As a system administrator, you will receive multiple emails from Adobe as part of the onboarding process. Look for the welcome email that provides the information about the organization name to which you have been granted access.
 
 1. Click on the **Get started** link in your welcome email to navigate to Admin Console. If you can not find the email, open a browser directly to Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
@@ -50,7 +50,7 @@ Before you can use the Admin Console to administer users within your organizatio
 
    ![The Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
-1. If you have access to multiple organizations, please ensure that you have logged into correct Organization. To change your organization, click on the organization name from the top right corner and choose the required organization to which you need access.
+1. If you have access to multiple organizations, please ensure that you have logged into correct organization. To change your organization, click on the organization name from the top right corner and choose the required organization to which you need access.
 
    ![Change org](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 

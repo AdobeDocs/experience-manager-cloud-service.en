@@ -7,7 +7,7 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 ---
 # Assigning AEM Product Profiles {#assign-profiles-aem}
 
-Once you have your cloud resources configured, you will need to grant your team access to AEM itself using AEM product profiles.
+Once you have read the previous document in this onboarding journey, [Create Environments,](create-environments.md) and have your cloud resources configured, you will need to grant your team access to AEM itself using AEM product profiles.
 
 ## Objective {#objective}
 
@@ -15,22 +15,20 @@ By following this onboarding journey you now have set up your team in the Admin 
 
 After reading this document you should understand:
 
-* Why and how your team members are assigned to AEM as a Cloud Service product profiles.
+* What AEM product profiles are. 
 * How to add team members to AEM User product profile.
 * How to add team members to AEM Administrators product profile.
 
 ## AEM Product Profiles {#aem-product-profiles}
 
-To be granted access to AEM as a Cloud Service, users must belong to one of two product profiles:
+To use AEM, your team members must be assigned to at least one AEM product profile. Permissions to access Cloud Manager will not suffice. Users must belong to one of two product profiles:
 
 * `AEM Users` - This group includes normal users who perform everyday content authoring tasks.
 * `AEM Administrators` - This group includes users who are responsible for advanced features or AEM.
 
-To use AEM, your team members must be assigned to at least one AEM product profile. Permissions to access Cloud Manager will not suffice.
-
 Every user assigned to an AEM product profile will also gain read-only access to Cloud Manager. Write access to Cloud Manager may be granted via other product profiles.
 
-## Pre-requisites {#prerequisites}
+## Prerequisites {#prerequisites}
 
 Before you start reading this section, you should have the following information available about your team who will use AEM.
 
@@ -82,9 +80,14 @@ These tasks require you to be a system administrator with the **Business Owner**
 
 The user you added will now have access to the AEM as a Cloud Service Author services!
 
-## What’s Next {#whats-next}
+## End of the Journey? {#the-end}
 
-The users that you assigned to AEM as a Cloud Service product profiles are now ready to learn how to access Author and get familiar with authoring pages in AEM as a Cloud Service. You should follow the path, by next reviewing the document Learning Path for [AEM Users](/help/journey-onboarding/sysadmin/learning-path-aem-users.md) or for [Developers and Deployment Managers](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md).
+Congratulations! The users that you assigned to AEM as a Cloud Service product profiles are now ready to access the AEM authoring environment and start creating content with AEM as a Cloud Service. Likewise, developers can now access Cloud Manager to use git to store custom application code and deploy it. In this sense, your onboarding journey is complete and your users can now use AEMaaCS.
+
+However if you would like to better understand how authors and developers use the system, you can continue on with two optional parts of this onboarding journey:
+
+* [Developer and Deployment Manager Tasks](developers.md) - Where you will learn how developers access git to store their custom code and deploy it using Cloud Manager pipelines.
+* [AEM User Tasks](aem-users.md) - Where you will learn how to access the AEM environment where you can start creating content.
 
 ## Additional Resources {#additional-resources}
 
