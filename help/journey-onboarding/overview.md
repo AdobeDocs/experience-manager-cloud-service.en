@@ -12,6 +12,8 @@ Congratulations on choosing AEM as a Cloud Service! This document is your starti
 
 Onboarding is the process during which a designated system administrator sets up AEM as a Cloud Service for your organization. This includes the initial provisioning of cloud resources and assigning users to roles based on their job responsibilities. As a result, each member is able to login and access their AEM as a Cloud Service resources.
 
+![The onboarding journey](/help/journey-onboarding/assets/onboarding-journey.png)
+
 This guide leads you through the most important onboarding topics so that on completion you will have:
 
 * Full understanding of the different terms, services, and users involved in the onboarding process.
@@ -73,7 +75,7 @@ The following articles describe in details the core onboarding concepts and give
 |4|[Assigning Cloud Manager Product Profiles](assign-profiles-cloud-manager.md)|Review Cloud Manager Product Profiles and learn how to assign team members to Cloud Manager Product profiles.|System Administrator|
 |5|[Access Cloud Manager](cloud-manager.md)|Lean how to access Cloud Manager so that you can set up your project resources.|System Administrator|
 |6|[Create a Program](create-program.md)|Learn how to create a program using Cloud Manager.|System Administrator|
-|7|[Create environments](create-environments.md)|Learn how to create an environment using Cloud Manager.|System Administrator|
+|7|[Create Environments](create-environments.md)|Learn how to create an environment using Cloud Manager.|System Administrator|
 |8|[Assigning AEM Product Profiles](assign-profiles-aem.md)|Learn how System Administrator assign your team members to AEM as a Cloud Service product profiles.|System Administrator|
 |9|[Developer and Deployment Manager Tasks](developers.md)|Optional - Learn how as a Developer you can access and manage Cloud Manager Git and how as a Deployment Manager you can setup pipelines and deploy code in Cloud Manager.|Developers and Deployment Managers|
 |10|[AEM User Tasks](aem-users.md)|Optional - Learn how as an AEM author you can access AEM as a Cloud Service instance and get familiar with authoring content for AEM as a Cloud Service.|AEM Users|
