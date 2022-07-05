@@ -1,0 +1,72 @@
+---
+title: AEM User Tasks
+description: Once they system administrator has set up the necessary cloud resources, learn how AEM users can access AEM as as Cloud Service to author content.
+feature: Onboarding
+role: Admin, User, Developer
+exl-id: 86700cce-139f-451e-9c21-b38b6332f773
+---
+
+# AEM User Tasks {#aem-user-tasks}
+
+Once they system administrator has set up the necessary cloud resources, learn how AEM users can access AEM as as Cloud Service to author content.
+
+## The Story So Far {#story-so-far}
+
+You have come a long way in your onboarding journey! Congratulations! You have already assigned your team members to the correct product profiles, set up the necessary cloud resources including your programs and environments, learned how developers can access git, and how deployment mangers can create and execute deployment pipelines.
+
+At this point your AEM users can start creating content. In this sense, your onboading is complete and now it is time to use your new AEM as a Cloud Service system.
+
+## Audience {#audience}
+
+This document is written from the perspective of the **AEM user**.
+
+The system administrator can also perform these same tasks, but generally these roles are held by different users.
+
+## Objective {#objective}
+
+This document is a supplement to the onboarding process to demonstrate the basic tasks of an AEM user once the system administrator has onboarded all the users and created the necessary cloud resources as described up to this point of the onboarding journey.
+
+After reading you should understand how to:
+
+* Access Cloud Manager.
+* Sign into an AEM as a Cloud Service instance.
+
+## Prerequisites {#prerequisites}
+
+Before you begin the tasks described in this document as an AEM user, ensure that your system administrator has completed all the step in this onboarding journey. This means that:
+ 
+* Your system administrator has assigned users to the **AEM Users** or **AEM Administrators** product profiles.
+* Cloud resources have been set up.
+
+## Log into AEM {#login-aem}
+
+As an AEM author, you will need to log into AEM to begin creating content.
+
+1. Navigate to Cloud Manager's login page at [`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/)
+
+1. Select the appropriate program from Cloud Manager’s **Programs and Products** page to launch the **Overview** page. Ask your system administrator if you are uncertain which program to access.
+
+1. From the **Overview** page in Cloud Manager, click on the author link from the **Environments** card.
+
+   ![Environment card](/help/journey-onboarding/assets/author-environ.png)
+
+1. This will open a new tab where you can login to author environment using your Adobe ID.
+
+Congratulations! You have now successfully logged in to Author.
+
+>[!TIP]
+>
+>Bookmark the link to the AEM author instance and you can open it directly instead of going through Cloud Manager every time.
+
+## What’s Next {#whats-next}
+
+Now that you have read this document you should know:
+
+* Access Cloud Manager.
+* Sign into an AEM as a Cloud Service instance.
+
+Congratulations! You are now ready to author and publish AEM content. Refer to the [Additional Resources](#additional-resources) section for more details on how to author content in AEM and how to administer it.
+
+## Additional Resources {#additional-resources}
+
+[Quick Start Guide to Authoring Pages](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=en)
