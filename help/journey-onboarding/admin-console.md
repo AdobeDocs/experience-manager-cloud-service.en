@@ -96,6 +96,3 @@ Now that you have read this document, you should:
 You are ready to continue your onboarding journey by learning how to [assign team members to Cloud Manager Product Profiles](assign-profiles-cloud-manager.md) so that you colleagues can also access AEMaaCS.
 
 ## Additional Resources {#additional-resources}
-
-* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
-* [System Administrator](/help/onboarding/learn-concepts/system-administrator.md)
