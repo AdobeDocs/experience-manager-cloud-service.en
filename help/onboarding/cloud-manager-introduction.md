@@ -1,6 +1,6 @@
 ---
 title: Introduction to Cloud Manager
-description: Follow this page to learn about Cloud Manager, Cloud Manager Programs, and Environments.
+description: Learn about Cloud Manager, Cloud Manager programs, and environments.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 ---
 # Introduction to Cloud Manager {#intro-cloud-manager}
