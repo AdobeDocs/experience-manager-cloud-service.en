@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service Team and Product Profiles
-description: Follow this page to learn about AEM as a Cloud Service Team and Product Profiles.
+description: Learn about AEM as a Cloud Service team and product profiles.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 ---
 # AEM as a Cloud Service Team and Product Profiles {#product-profiles}

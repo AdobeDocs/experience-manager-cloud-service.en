@@ -175,6 +175,7 @@ You are now ready to continue your onboarding journey by next reviewing the docu
 
 It is recommend to continue on the onboarding journey as described previously. These are some additional resources if you wish to do a deep dive on a particular topic from this journey.
 
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)
-* [Cloud Manager Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)
-* [Admin Console Identity Overview](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html)
+* [Cloud Manager Introduction](/help/onboarding/cloud-manager-introduction.md) - Learn about Cloud Manager, Cloud Manager programs, and environments.
+* [Cloud Manager Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) - Learn about AEM as a Cloud Service team and product profiles.
+* [Identity types on Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - Adobe’s identity management system helps admins create and manage user's access to applications and services. Adobe offers these identities types or accounts to authenticate and authorize users.
+

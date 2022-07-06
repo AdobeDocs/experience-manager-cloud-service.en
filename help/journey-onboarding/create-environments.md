@@ -75,7 +75,5 @@ Therefore you should continue your onboarding journey by next reviewing the docu
 
 Follow the additional resources to learn about:
 
-* [Program types and adding a program](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html)
-* [Environment types and adding an environment](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) 
-* [Managing Cloud Manager Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-* [Configuring access to AEM as a Cloud Service from Admin Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html#adobe-ims-users)
+* [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) - Learn about the types of environments you can create and how to create them for your Cloud Manager project
+* [Using Adobe Cloud Manager - Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) - Cloud Manager environments are composed of AEM authoring, publishing, and dispatcher services. Learn how different environments support roles and can be engaged using different CI/CD Pipelines.

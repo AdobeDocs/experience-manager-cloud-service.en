@@ -96,3 +96,9 @@ Now that you have read this document, you should:
 You are ready to continue your onboarding journey by learning how to [assign team members to Cloud Manager Product Profiles](assign-profiles-cloud-manager.md) so that you colleagues can also access AEMaaCS.
 
 ## Additional Resources {#additional-resources}
+
+* [Admin Console Overview](https://helpx.adobe.com/enterprise/using/admin-console.html) - A comprehensive overview of the Admin Console
+* [Create or Update Your Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Learn how to create an Adobe ID, change it, and manage multiple Adobe IDs.
+* [SAML 2.0 Authentication Handler](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html) - AEM ships with a SAML authentication handler. This handler provides support for the SAML 2.0 Authentication Request Protocol (Web-SSO profile) using the HTTP POST binding.
+* [Administrative Roles](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html) - Using the Adobe Admin Console, organizations can define a flexible administrative hierarchy that enables fine-grained management of Adobe product access and usage.
+* [Support and Expert Sessions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) - Learn how to access the support options on the Admin Console, manage your support cases, schedule an Expert Session, and more.
