@@ -124,7 +124,5 @@ You should continue your onboarding journey by next reviewing the document [Crea
 
 Follow the additional resources to learn about:
 
-* [Program types and adding a program](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html)
-* [Environment types and adding an environment](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) 
-* [Managing Cloud Manager Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-* [Configuring access to AEM as a Cloud Service from Admin Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html#adobe-ims-users)
+* [Introduction to Cloud Manager](/help/onboarding/cloud-manager-introduction.md) - 
+Learn about Cloud Manager, Cloud Manager programs, and environments.

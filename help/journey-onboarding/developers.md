@@ -138,28 +138,10 @@ If you are interested in how content authors access and use AEM as a Cloud servi
 
 ## Additional Resources {#additional-resources}
 
-* [Accessing Git and Git account management from Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
-
-* [Local Development Environment for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-
-* [Getting started with AEM Sites (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-
-* [Getting Started with the AEM SPA Editor and React | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
-
-* [Getting Started with the AEM SPA Editor and Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
-
-* [Getting Started with AEM Headless - GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=en)
-
-* [Getting Started with AEM SPA Editor for Developers](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
-
-## Experience League Courses {#exp-league-courses}
-
-Follow the experience league courses to learn more. Please ensure you are signed up to access the courses:
-
-* [Traditional Sites](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
-
-* [SPA Editor](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
-
-* [Headless](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
-
-* [Commerce](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
+* [Accessing Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - Learn how to access and manage your git repository using the self-service git account management from Cloud Manager.
+* [Using git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Learn how to use Cloud Manager's git repositories and how to integrate your own on-premise customer-managed git repository with Cloud Manager.
+* [Local Development Environment Set up](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) - This tutorial walks you through setting up a local development environment for Adobe Experience Manager (AEM) using the AEM as a Cloud Service SDK. 
+* [Getting Started with AEM Sites - WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - This multi-part tutorial is designed for developers new to Adobe Experience Manager (AEM). This tutorial walks through the implementation of an AEM site for a fictitious lifestyle brand the WKND. The tutorial covers fundamental topics like project setup, Core Components, Editable Templates, Client-side libraries, and component development with Adobe Experience Manager Sites.
+* [Getting Started with SPAs in AEM Using React](/help/implementing/developing/hybrid/getting-started-react.md) - This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the React framework.
+* [Getting Started with SPAs in AEM Using Angular](/help/implementing/developing/hybrid/getting-started-angular.md) - This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the Angular framework.
+* [Headless Developer Journey](/help/journey-headless/developer/overview.md) - Start here for a guided course for developing headless applications with AEM.
