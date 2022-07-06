@@ -25,6 +25,22 @@ As a result:
 * AEM authors will have access to AEM as a Cloud Service and can begin creating content.
 * AEM developers and deployment managers will have access to AEM as a Cloud Service and can begin creating and deploying custom applications.
 
+## Concepts and Goal {#concepts}
+
+Although there may appear to be a lot to learn when getting started with AEM as a Cloud Service, conceptually there are only a few, logical pieces.
+
+* **The Contract** - You need to be familiar with your Adobe contract since it defines aspects of the onboarding process.
+* **Admin Console** - This is where users are managed and roles are assigned.
+* **Cloud Manager** - This is the tool to set up resources such as programs and environments. It is also where you access git and create pipelines to manage and deploy your custom code.
+
+These concepts will be laid out in detail in this onboarding journey. The goal is that at the end of the journey, you:
+
+* Have granted the necessary users access to AEMaaCS
+* Have set up the first cloud resources for your project
+* Know how to deploy your first code and author your first content.
+
+Basically you will hit the ground running with your new AEM as a Cloud Service project!
+
 ## AEM Documentation Journeys {#documentation-journeys}
 
 [A Documentation Journey](/help/journey-documentation/documentation-journeys.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
@@ -33,7 +49,7 @@ Documentation Journeys are designed around best practices principles, informed b
 
 If you want to know how Adobe recommends how to how to get your team onboarded onto your new AEM as a Cloud Service application, this is where to start!
 
-## Audiences {#audiences}
+## Audience {#audience}
 
 The onboarding journey is written specifically for the **system administrator**. The system administrator is the individual who is first contacted by Adobe after your AEM as a Cloud Service contract is signed, and is typically the first person to access and set up your AEM as a Cloud Service resources. If you are reading this, you are likely the system administrator.
 
@@ -47,20 +63,6 @@ The system administrator manages all aspects of their organizations AEMaaCS user
 |Deployment manager|Adds or updates an environment, runs pipelines, and deploys code to AEM environment or code-quality.|Once granted permissions by the system administrator, deployment managers can start their own journey managing deployments|
 
 Illustrate the complete process of onboarding and then using AEM as a Cloud Service, the roles of AEM users, developers, and deployment managers are explored briefly as additional, optional parts of the journey.
-
-## Concepts and Goal {#concepts}
-
-Although there may appear to be a lot to learn when getting started with AEM as a Cloud Service, conceptually there are only a few, logical pieces.
-
-* **The Contract** - You need to be familiar with your Adobe contract since it defines aspects of the onboarding process.
-* **Admin Console** - This is where users are managed and roles are assigned.
-* **Cloud Manager** - This is the tool to set up resources such as programs and environments. It is also where you access git and create pipelines to manage and deploy your custom code.
-
-These concepts will be laid out in detail in this onboarding journey. The goal is that at the end of the journey, you
-
-* Have granted the necessary users access to AEMaaCS
-* Have set up the first cloud resources for your project
-* Know how to deploy your first code and author your first content.
 
 ## Onboarding Journey Overview {#overview}
 
