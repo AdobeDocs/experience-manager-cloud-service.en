@@ -1,90 +1,92 @@
 ---
 title: Introduction to Cloud Manager
-description: Learn about Cloud Manager, Cloud Manager programs, and environments.
+description: Learn about how Cloud Manager supports your AEM project through its programs, environments, and pipelines.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 ---
 # Introduction to Cloud Manager {#intro-cloud-manager}
 
-Cloud Manager is an essential component of AEM as a Cloud Service and serves as the single entry point for your team.
+Cloud Manager is an essential component of AEM as a Cloud Service and serves as the single entry point for your team. Its purpose-built CI/CD pipelines are equipped to ensure thorough testing and highest code quality to deliver exceptional experiences. To ensure customers can quickly start their projects, Cloud Manager provides everything required in a self-service manner including the ability to create your cloud resources and environments and access your git repositories. These features support enterprise development setups so teams can work towards committing changes frequently, rapidly delivering exceptional digital experiences, and accelerating time-to-value.
 
-To support customers with enterprise development setups, AEM as a Cloud Service fully integrates with Cloud Manager and its purpose-built CI/CD pipelines, which are equipped to ensure thorough testing and highest code quality to deliver exceptional experiences.
-
-To ensure customers can start quickly with AEM as a Cloud Service, Cloud Manager provides everything required to get started in a self-service manner including the ability to create your cloud resources and environments. In this manner, your AEM developers can access the Git repository via Cloud Manager. Using Cloud Manager, development teams can work towards committing changes frequently in a self-service manner.
-
-Your System Administrator will be responsible to setting up your Cloud Manager team which will include individuals that will create your cloud resources and developers. Refer to [Enterprise Team Development Setup for AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md) to learn how Cloud Manager supports in Enterprise Team Development Setup.
+Your system administrator is responsible for setting up your Cloud Manager team which will include individuals that will create your cloud resources and developers. For more information about how to set up and scale your enterprise development team and see how AEM as a Cloud Service can support your development process, please refer to the document [Enterprise Team Development Setup for AEM as a Cloud Service.](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
 
 ## Navigating to Cloud Manager's Overview Page {#navigate-cloud-manager}
 
-Follow the steps below to navigate to Cloud Manager:
+Follow these steps to navigate to Cloud Manager.
 
-1. Navigate directly to Cloud Manager's login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). 
+1. Navigate to Cloud Manager's login page at [`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/). 
 
-   >[!NOTE]
-   >Please bookmark this page for future reference and to help you navigate directly to Cloud Manager's landing page.
+1. Select the program from Cloud Manager's **Programs and Products** page to launch the **Overview** page.
 
-1. Select the program from Cloud Manager’s **Programs and Products** page to launch the **Overview** page.
+You can also navigate to Cloud Manager’s Programs and Products page from Adobe Experience Cloud home page by following these steps.
 
-Additionally, you can also navigate to Cloud Manager’s Programs and Products page from Adobe Experience Cloud home page. Follow the steps below:
+1. Navigate to Adobe Experience Cloud at [`https://experience.adobe.com`](https://experience.adobe.com) and login using your Adobe ID.
 
-1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) and login using your Adobe ID.
+1. Ensure that you are in the correct organization by referring to the organization name displayed at the top-right of the toolbar.
 
 1. Select **Experience Manager**.
 
-1. Click on **Launch** from the Cloud Manager card. Once you have successfully logged in to Cloud Manager, you are ready to use the User Interface (UI).
-
-   Upon successful login, you will be directed to the landing page of Cloud Manager.
+1. On the **Cloud Manager** card, click on **Launch**
 
 ## Role Based Permissions in Cloud Manager {#role-based-permissions}
 
 |Permission|Description|Business Owner|Deployment Manager|Program Manager|Developer|
 |--- |--- |--- |--- |--- |--- |
-|Add Program<br>Edit Program|Add a New Program.<br>Edit a program - Add or remove solutions or add-on's|x||||
-|Create Environment|Create Prod+Stage, Dev, Environments.|x|x|||
-|Update Environment|Update Prod+Stage, Dev, Environments.|x|x|||
-|Delete Dev Environment|Delete Dev Environments.|x|x|||
-|Pipeline Setup|Setup or Edit Pipeline.||x|||
-|Pipeline Execution|Start the Pipeline.|x|x|||
-|Pipeline Execution|Reject/Approve Important 3-Tier Failures.|x|x|x||
-|Pipeline Execution|Provide GoLive Approval.|x|x|x||
-|Pipeline Execution|Schedule Production Deployment.|x|x|x||
-|Pipeline Delete|Allows Deleting of a Pipeline.||x|||
-|Execution Cancel|Cancel Current Execution.||x|||
-|Generate Personal Access Token|Access Git.||x||x|
+|Add Program<br>Edit Program|Add a New Program<br>Add or remove solutions or add-ons|x||||
+|Create Environment|Create production+staging and development environments|x|x|||
+|Update Environment|Update production+staging and development environments|x|x|||
+|Delete Dev Environment|Delete development environments|x|x|||
+|Pipeline Setup|Setup and edit pipelines||x|||
+|Pipeline Execution|Start pipelines|x|x|||
+|Pipeline Execution|Reject/approve important 3-tier quality gate failures|x|x|x||
+|Pipeline Execution|Provide go live approval|x|x|x||
+|Pipeline Execution|Schedule production deployments|x|x|x||
+|Pipeline Delete|Allow pipeline deletion||x|||
+|Execution Cancel|Cancel current execution||x|||
+|Generate Personal Access Token|Access git||x||x|
 
 >[!NOTE]
->A user can be assigned to multiple roles. For example assigning both Business Owner and Deployment Manager roles to a user gives them the combination or sum of these permissions.
+>
+>A user can be assigned to multiple roles. For example assigning both **Business Owner** and **Deployment Manager** roles to a user gives the user the sum of these permissions.
 
 ## Cloud Manager Programs {#cloud-manager-programs}
 
-Cloud Manager Programs represent sets of Cloud Manager environments supporting logical sets of business initiatives, typically corresponding to a purchased Service Level Agreement (SLA). For example, one Program may represent the AEM resources to support the global public Web sites, while another Program represents an internal Central DAM. Watch this [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en) to learn more on using Cloud Manager programs.
+Cloud Manager programs represent sets of Cloud Manager environments supporting logical groupings of business initiatives. These groupings typically correspond to a purchased Service Level Agreement (SLA). For example, one program may represent the AEM resources to support an organization's public Web site, while another program represents an internal DAM. 
+
+
+Watch this [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) to learn more on using Cloud Manager programs.
 
 A user can create a **Sandbox** or a **Production** program. 
 
-* A *Production Program* is created to enable live traffic at the appropriate time in the future.
-   Refer to [Introduction to Production Programs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en) for more details.
+* A **production program** is created to enable live traffic at the appropriate time in the future.
+  * Please refer to the document [Introduction to Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more details.
 
-* A *Sandbox Program* is typically created to serve the purposes of training, running demo’s, enablement, POC’s, or documentation. It is not meant to carry live traffic and will have restrictions that a Production program will not. It will include Sites and Assets and will be delivered auto-populated with a Git branch that includes sample code, a Dev environment, and a non-production pipeline.
-   Refer to [Introduction to Sandbox Programs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en) for more details.
+* A **sandbox program** is typically created to serve the purposes of training, running demos, enablement, creating POCs, or for documentation.
+  * It is not meant to carry live traffic and will have restrictions that a production program will not. 
+  * It includes Sites and Assets and is delivered auto-populated with a git branch that includes sample code, a development environment, and a non-production pipeline.
+  * Please refer to the document [Introduction to Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) for more details.
 
 ## Cloud Manager Environments {#cloud-manager-environments}
 
-Your cloud environments will be created, accessed and viewed via Cloud Manager. These can be a Production environment, Stage environment, or Development environment. Different environments support different purposes and can be engaged using different CI/CD Pipelines. Environments are composed of services such as:
+Your cloud environments will be created, accessed and viewed via Cloud Manager. These environments can be production, staging, or development environments. Different environments serve different purposes and can be used with different CI/CD pipelines. Environments are composed of services such as:
 
-* [AEM Author Services](#author-services)
-* [AEM Publish Services](#publish-services)
+* [AEM Authoring Services](#author-services)
+* [AEM Publishing Services](#publish-services)
 * [Dispatcher Services](#dispatcher-services)
 
-   >[!NOTE]
-   > Refer to the video [Using Adobe Cloud Manager Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager) to learn more about the available environments. Additionally, see [Manage Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) to learn more about types of environment a user can create and how the user can create an environment.
+>[!TIP]
+>
+> Refer to the video [Using Adobe Cloud Manager Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) an overview of the available environments.
+>
+>Refer to the document [Manage Environments](/help/implementing/cloud-manager/manage-environments.md) to learn more about types of environment a user can create and how the user can create an environment.
 
-### AEM Author Service {#author-services}
+### AEM Authoring Service {#author-services}
 
-AEM Author Service is included in an environment where site content and digital assets are created, managed and updated. Typically, only internal users have access to the Author Service and is behind a login screen. The Authoring Service is designed both as an authoring and preview environment.
+An AEM authoring service is included in environments where site content and digital assets are created, managed, and updated. Typically only internal users have access to the authoring service and it is maintained behind a login screen. The authoring service acts as both an authoring and preview environment.
 
-### AEM Publish Service {#publish-services}
+### AEM Publishing Service {#publish-services}
 
-AEM Publish Service is included in an environment that hosts the end-user experience, like a web site. This is the service that site visitors will view and interact with. Typically, the Publish Service is publicly available.
+An AEM publishing service is included in environments that host the end-user experience, like a web site. This is the service that site visitors will view and interact with. Typically, the publishing service is publicly available.
 
 ### AEM Dispatcher Service {#dispatcher-services}
 
-The Dispatcher is an `Apache HTTP Web server` module that provides a security and performance layer that sits in front of the AEM Publish Service.
+The dispatcher is an `Apache HTTP Web server` module that provides a security and performance layer that sits in front of the AEM publishing service.
