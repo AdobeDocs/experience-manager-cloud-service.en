@@ -22,7 +22,7 @@ A credit card statement can be created using Communications APIs. This sample st
 
 ## Document generation
 
-Communications document generation APIs help to combine a template (XFA or PDF) with customer data ([XML data](#form-data)) to generate documents in PDF and Print Formats like PS, PCL, DPL, IPL, and ZPL formats. These APIs utilize [PDF and XFA templates](#supported-document-types) with [XML data](communications-known-issues-limitations.md#form-data) to generate a single document on demand or multiple documents using a batch job.
+Communications document generation APIs help to combine a template (XFA or PDF) with customer data (XML) to generate documents in PDF and Print Formats like PS, PCL, DPL, IPL, and ZPL formats. These APIs utilize PDF and XFA templates with [XML data](communications-known-issues-limitations.md#form-data) to generate a single document on demand or multiple documents using a batch job.
 
 Typically, you create a template using [Designer](use-forms-designer.md) and use Communications APIs to merge data with the template. Your application can send the output document to a network printer, a local printer, or to a storage system for archival. A typical out of the box and custom workflows look like the following:
 
@@ -95,7 +95,7 @@ Communications document manipulation APIs help to combine, rearrange, and valida
 
 ### Assemble PDF documents
 
-You can use the document manuaplation APIs to assemble two or more PDF or XDP documents into a single PDF document or PDF Portfolio. Here are some of the ways you can assemble PDF documents:
+You can use the document manipulation APIs to assemble two or more PDF or XDP documents into a single PDF document or PDF Portfolio. Here are some of the ways you can assemble PDF documents:
 
 * Assemble a simple PDF document
 * Create a PDF Portfolio
@@ -108,7 +108,7 @@ Figure: Assembling a simple PDF document from multiple PDF documents
 
 ### Disassemble PDF documents
 
-You can use the document manuaplation APIs to disassemble a PDF document. The APIs can extract pages from the source document or divide a source document based on bookmarks. Typically, this task is useful if the PDF document was originally created from many individual documents, such as a collection of statements.
+You can use the document manipulation APIs to disassemble a PDF document. The APIs can extract pages from the source document or divide a source document based on bookmarks. Typically, this task is useful if the PDF document was originally created from many individual documents, such as a collection of statements.
 
 * Extract pages from a source document
 * Divide a source document based on bookmarks
@@ -118,7 +118,7 @@ Figure: Dividing a source document based on bookmarks into multiple documents
 
 ### Convert to and validate PDF/A-compliant documents
 
-You can use the document manuaplation APIs to convert a PDF document to a PDF/A-compliant document and to determine whether a PDF document is PDF/A-compliant. PDF/A is an archival format meant for long-term preservation of the document’s content. The fonts are embedded within the document, and the file is uncompressed. As a result, a PDF/A document is typically larger than a standard PDF document. Also, a PDF/A document does not contain audio and video content.
+You can use the document manipulation APIs to convert a PDF document to a PDF/A-compliant document and to determine whether a PDF document is PDF/A-compliant. PDF/A is an archival format meant for long-term preservation of the document’s content. The fonts are embedded within the document, and the file is uncompressed. As a result, a PDF/A document is typically larger than a standard PDF document. Also, a PDF/A document does not contain audio and video content.
 
 ## Types of communications APIs
 

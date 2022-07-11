@@ -72,7 +72,7 @@ For an example, see the Sling Model implementation of the Image Core Component a
 
 For further details see:
 
-* [Content Fragments in the Assets user guide](/help/assets/content-fragments/content-fragments.md)
-* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+* [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 * [Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 * [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [Content Fragment component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

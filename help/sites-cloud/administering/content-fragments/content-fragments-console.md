@@ -1,16 +1,15 @@
 ---
 title: Content Fragments Console
 description: Learn how to manage Content Fragments from the Content Fragments Console.
-landing-page-description: Learn how to manage Content Fragments from the Content Fragments Console that is focused on high volume use of Content Fragments for Headless use-cases.
-exl-id: a0192237-78d1-43fa-b1a8-88888701e2d7
+landing-page-description: Learn how to manage Content Fragments from the Content Fragments Console that is focused on high volume use of Content Fragments for Headless use-cases, but also used when page authoring.
 ---
-# Content Fragments Console  {#content-fragment-console}
+# Content Fragments Console  {#content-fragments-console}
 
-Learn how the Content Fragments console optimizes access to your Content Fragments, helping you create, search, and manage them by taking admin actions such as publish, unpublish, copy.
+Learn how the Content Fragments console optimizes access to your Content Fragments, helping you create, search, and manage them by taking administrative actions such as publish, unpublish, copy.
+
+The Content Fragments console is dedicated to managing, searching for, and creating Content Fragments. It has been optimized for use in a Headless context, but is also used when creating Content Fragments for use in page authoring.
 
 >[!NOTE]
->
->The Content Fragments console is dedicated to managing, searching for, and creating Content Fragments. It has been optimized for use in a Headless context.
 >
 >This console only displays Content Fragments. It does not display other asset types such as images and videos. 
 
@@ -18,8 +17,8 @@ Learn how the Content Fragments console optimizes access to your Content Fragmen
 >
 >Access to your Content Fragments is currently possible via:
 >
->* this Content Fragments console
->* the Assets console - see [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
+>* this **Content Fragments** console
+>* the **Assets** console - see [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
 
 The Content Fragments console can be directly accessed from the top level of the Global Navigation:
 
