@@ -19,24 +19,21 @@ Content fragments contain structured content and can be delivered in JSON format
 
 Content authors will create any number of Content Fragments to represent the content that they create. This will be their main task in AEM. For the purposes of this getting started guide, we will only need to create one.
 
-1. Log into AEM as a Cloud Service and from the main menu select **Navigation -&gt; Assets**.
+1. Log into AEM as a Cloud Service and from the main menu select **Navigation** -&gt; **Content Fragments**.
+
 1. Tap or click the [folder you created previously.](create-assets-folder.md)
-1. Tap or click **Create -&gt; Content Fragment**.
-1. The creation of a Content Fragment is presented as a wizard in two steps. First select which model you wish to use to create your content fragment and tap or click **Next**.
+1. Tap or click **Create**.
+1. The creation of a Content Fragment is presented as a dialog. 
+   Select the location and model you wish to use to create your content fragment.
+   
    * The models available depend on the [**Cloud Configuration** you defined for the assets folder](create-assets-folder.md) in which you are creating the Content Fragment.
-   * If you receive the message `We could not find any models`, check the configuration of your assets folder.
+   * If your model is not available, check the configuration of your assets folder.
 
-   ![Select Content Fragment Model](../assets/content-fragment-model-select.png)
-1. Provide a **Title**, **Description**, and **Tags** as necessary and tap or click **Create**.
+   Add the Title, Name, and if required, Description.
 
-   ![Create Content Fragment](../assets/content-fragment-create.png)
-1. Tap or click **Open** in the confirmation window.
+   ![Create New Content Fragment dialog](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-   ![Content Fragment created confirmation](../assets/content-fragment-confirmation.png)
-1. Provide the details of the Content Fragment in the Content Fragment Editor.
-
-   ![Content Fragment Editor](../assets/content-fragment-edit.png)
-1. Tap or click **Save** or  **Save & close**.
+1. Tap or click **Create** or  **Create and open**.
 
 Content Fragments can reference other Content Fragments, allowing for a nested content structure if necessary.
 
@@ -48,4 +45,4 @@ Now that you have created a Content Fragment, you can move on to the final part 
 
 >[!TIP]
 >
->For complete details about managing Content Fragments, see the [Content Fragments documentation](/help/assets/content-fragments/content-fragments.md)
+>For complete details about managing Content Fragments, see the [Content Fragments documentation](/help/sites-cloud/administering/content-fragments/content-fragments.md)
