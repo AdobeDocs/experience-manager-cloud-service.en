@@ -49,17 +49,6 @@ Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 * **Form Data Model Configurations**: You can now [reuse Form Data Model configurations across environments](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config), simplifying data integrations and reducing IT costs.
 
-## CIF Add-on {#cloud-services-cif}
-
-### What is New {#what-is-new-cif}
-
-* Quick access to product cockpit: Easily access full detailed product information with one-click in Sites Editor
-
-    ![Enable wishlist](/help/assets/CIF/enable-wishlist.png)
-
-* Support for additional marketing commerce components:  Components can be configured to show an add-to-cart and add-to-wishlist call-to-action
-
-    ![Sites editor shortcut to product cockpit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
