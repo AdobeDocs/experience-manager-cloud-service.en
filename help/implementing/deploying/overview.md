@@ -185,7 +185,7 @@ Any content-packages installed via Cloud Manager (both mutable and immutable) wi
 
 It is common for customers to include pre-built packages from third party sources such as software vendors like Adobe's translation partners. The recommendation is to host these packages in a remote repository and reference them in the `pom.xml`. This is possible for public repositories and also for private repositories with password protection, as described in [password protected maven repositories](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
-If storing the package in a remote repository is not possible, customers can place in a local, file system based Maven repository, which is committed to SCM as part of the project, and referenced by whatever depends on it. The repository would be declared in the project pomas illustrated below:
+If storing the package in a remote repository is not possible, customers can place in a local, file system based Maven repository, which is committed to SCM as part of the project, and referenced by whatever depends on it. The repository would be declared in the project pom as illustrated below:
 
 
 ```
@@ -200,7 +200,7 @@ If storing the package in a remote repository is not possible, customers can pla
 
 Any included third party packages must be adhere to the AEM as a Cloud Service Service coding and packaging guidelines described in this article, otherwise its inclusion will result in a deployment failure.
 
-The following Maven POM XML snippet shows how 3rd party packages can be embedded in the project's "Container" package, typically named **'all'**, via the **filevault-package-maven-plugin** Maven plugin configuration.
+The following Maven `POM.xml` snippet shows how 3rd party packages can be embedded in the project's "Container" package, typically named **'all'**, via the **filevault-package-maven-plugin** Maven plugin configuration.
 
 ```
 ...
@@ -210,26 +210,18 @@ The following Maven POM XML snippet shows how 3rd party packages can be embedded
   <extensions>true</extensions>
   <configuration>
       ...
-      <subPackages>
-           
-          <!-- Include the application's ui.apps and ui.content packages -->
+      <embeddeds>
+
           ...
- 
-          <!-- Include any other extra packages such as AEM WCM Core Components -->
-          <!-- Set the version for all dependencies, including 3rd party packages, in the project's Reactor POM -->
-          <subPackage>
-              <groupId>com.adobe.cq</groupId>
-              <artifactId>core.wcm.components.all</artifactId>
-              <filter>true</filter>
-          </subPackage>
- 
- 
-          <subPackage>
-              <groupId>com.3rdparty.groupId</groupId>
-              <artifactId>core.3rdparty.artifactId</artifactId>
-              <filter>true</filter>
-          </subPackage>
-      <subPackages>
+
+          <!-- Include any other extra packages  -->
+          <embedded>
+              <groupId>com.vendor.x</groupId>
+              <artifactId>vendor.plug-in.all</artifactId>
+              <type>zip</type>
+              <target>/apps/vendor-packages/container/install</target>
+          </embedded>
+      <embeddeds>
   </configuration>
 </plugin>
 ...
@@ -303,13 +295,17 @@ The supported runmode configurations are:
 * **config.publish.dev** (*Applies to AEM Dev Publish service*)
 * **config.publish.stage** (*Applies to AEM Staging Publish service*)
 * **config.publish.prod** (*Applies to AEM Production Publish service*) 
-* **config.dev** (*Applies to AEM Dev services)
-* **config.stage** (*Applies to AEM Staging services)
-* **config.prod** (*Applies to AEM Production services)
+* **config.dev** (*Applies to AEM Dev services*)
+* **config.stage** (*Applies to AEM Staging services*)
+* **config.prod** (*Applies to AEM Production services*)
 
 The OSGI configuration that has the most matching runmodes is used.
 
-When developing locally, a runmode startup parameter can be passed in to dictate which runmode OSGI configuration will be used.
+When developing locally, a runmode startup parameter, `-r`, is used to specify the runmode OSGI configuration.
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
 
 <!-- ### Performance Monitoring {#performance-monitoring}
 
