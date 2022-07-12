@@ -10,16 +10,10 @@ Learn to use GraphQL with AEM to serve content headlessly by exploring sample co
 
 >[!NOTE]
 >
->Some of the functionality of this feature is available in the prerelease channel. In particular, functionality related to Persisted Queries.
-> 
->See the [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable the feature for your environment.
-
->[!NOTE]
->
 >This page should be read together with:
 >
->* [Content Fragments](/help/assets/content-fragments/content-fragments.md)
->* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+>* [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+>* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
 
 To get started with GraphQL queries and how they work with AEM Content Fragments it helps to see some practical examples. 
