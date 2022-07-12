@@ -5,16 +5,36 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 ---
 # Overview {#overview-content-transfer-tool}
 
+
+>[!CONTEXTUALHELP] 
+>id="aemcloud_ctt_overview" 
+>title="Overview" 
+>abstract="Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. This tool also transfers principals (users or groups) automatically."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en" text="Guidelines and Best Practices"
+
+<!-- Alexandru: Old version of contextual help, keep for failover/debugging
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Overview"
 >abstract="Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. This tool also transfers principals (users or groups) automatically."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extraction Process"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Ingestion Process"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Ingestion Process" -->
 
 The Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. 
 
 This tool also transfers principals (users or groups) automatically. 
+
+A new version of the Content Transfer Tool is available which integrates the content transfer process with Cloud Acceleration Manager. It is highly recommended to switch over to this new version in order to leverage all the benefits it provides:
+
+* Self-service way to extract a migration set once and ingest it into multiple environments in parallel
+* Improved user experience via better loading states, guardrails, and error handling
+* Ingestion logs are persisted and are always available for toubleshooting 
+
+To start using the new version (v2.0.10) <!-- update when version is available --> you will need to uninstall older versions of the Content Transfer Tool because there was a major architectural change in the tool. 
+
+>[!NOTE]
+>
+> For situations where a migration is already in progress, you may continue using the prior version of CTT until the migration is complete. For documentation related to the prior version of CTT, refer to the [legacy documentation](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
 
 ## Phases in Content Transfer Tool {#phases-content-transfer-tool}
 
@@ -35,11 +55,8 @@ There are two phases associated with content transfer:
   
 A migration set has the following attributes:
 
-* A maximum of ten migration sets can be created and maintained at a time during the content transfer activity. 
+* With the new version, you can create a maximum of five migration sets within a project created in Cloud Acceleration Manager.
 * Each migration set should have a unique name. 
-* If a migration set has been inactive for more than 30 days, it will be automatically deleted.
-* Whenever you create a migration set, it is associated with a specific environment. You can only ingest into an author or a publish instance of the same environment.
-
 
 The Content Transfer Tool has a feature that supports differential content top-up where it is possible to transfer only changes made since the previous content transfer activity. 
 
