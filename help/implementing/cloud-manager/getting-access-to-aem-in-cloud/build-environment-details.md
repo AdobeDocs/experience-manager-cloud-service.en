@@ -29,7 +29,7 @@ Cloud Manager builds and tests your code using a specialized build environment.
 
  * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
  * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
- * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
+ * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven is configured at a system level with a `settings.xml` file, which automatically includes the public Adobe artifact repository using a profile named `adobe-public`. (See [Adobe Public Maven Repository](https://repo1.maven.org/) for more details).
 
 >[!NOTE]
@@ -88,6 +88,12 @@ The currently available vendor/version combinations are:
 >[!NOTE]
 >
 >Starting April 2022, Oracle JDK will be the default JDK for the development and operation of AEM applications. Cloud Manager's build process will automatically switch to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. Please refer to the April release notes once published for further details.
+
+#### Alternate Maven Execution JDK Version {#alternate-maven-jdk-version}
+
+It is also possible to select Java 8 or Java 11 as the JDK for the entire Maven execution. Unlike the toolchains options, this changes the JDK used for all plugins unless the toolchains configuration is also  set in which case the toolchains configuration is still applied for toolchains-aware Maven plugins. As a result, checking and enforcing the Java version using the [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) will work.
+
+To do this, create a file named `.cloudmanager/java-version` in the git repository branch used by the pipeline. This file can have either the content 11 or 8. Any other value is ignored. If 11 is specified, Oracle 11 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-11.0.2`. If 8 is specified, Oracle 8 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_202`.
 
 ## Environment Variables {#environment-variables}
 
