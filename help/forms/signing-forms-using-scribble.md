@@ -18,10 +18,11 @@ You can use the **Scribble Signature** component and **Signature Step** componen
 ![Scribble sign dialog](assets/scribble-signature.png)
 
 #####Various Options available in Signature Widow
-* **Paint Brush:** Click the paint brush icon to draw your signature on canvas.
-* **Keyboard:** Click the keyboard icon to type your name on canvas.
-* **Geolocation:** Click the geolocation icon ![aem_geolocation](assets/aem_geolocation.png) to add geolocation to the signature.  
- If you want to edit your signature, you have to disregard the current signature and re-sign using the above options: Paint Brush/Keyboard.
+* **A:** Click the **Paint Brush** icon to draw your signature on canvas.
+* **B:** Click the **Clear** icon to clear the signature on canvas.
+* **C:** Click the **Keyboard** icon to type your name on canvas.
+* **D:** Click the **Geolocation** icon to add geolocation to the signature.  
+ If you want to edit your signature, you have to disregard the current signature and re-sign using the above Paint Brush/Keyboard option.
 
  >[!NOTE]
    >Signatures are always saved in a PNG format.
