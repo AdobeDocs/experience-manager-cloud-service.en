@@ -11,7 +11,7 @@ Now that you have read the article [AEM as a Cloud Service Terminology](terminol
 
 As a system administrator you are responsible for managing users within your organization. You do this by using the Admin Console. After reading this section you should:
 
-* Understand what and Adobe ID is.
+* Understand what an Adobe ID is.
 * Be able to log in to Admin Console.
 * Understand how to review your privileges as a system administrator via Admin Console.
 * Know how to contact Adobe support for help.
@@ -38,7 +38,7 @@ As system administrator, you may decide to onboard yourself and your team onto A
 
 ## Logging in to Admin Console {#steps-admin-console}
 
-Before you can use the Admin Console to administer users within your organization, you need to ensure that you yourself can access it properly and have the appropriate permissions.
+Before you can use the Admin Console to administer users within your team, you need to ensure that you yourself can access it properly and have the appropriate permissions.
 
 1. As a system administrator, you will receive multiple emails from Adobe as part of the onboarding process. Look for the welcome email that provides the information about the organization name to which you have been granted access.
 

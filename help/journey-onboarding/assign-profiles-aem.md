@@ -11,7 +11,7 @@ Once you have read the previous document in this onboarding journey, [Create Env
 
 ## Objective {#objective}
 
-By following this onboarding journey you now have set up your team in the Admin Console and created the necessary programs and environments using Cloud Manager. Before your colleagues can beginning using AEM as a Cloud Service, however, they need to be granted access to AEM itself. As the system administrator, you do this by assigning AEM product profiles.
+By following this onboarding journey you now have set up your team in the Admin Console and created the necessary programs and environments using Cloud Manager. Before your colleagues can begin using AEM as a Cloud Service, however, they need to be granted access to AEM itself. As the system administrator, you do this by assigning AEM product profiles.
 
 After reading this document you should understand:
 

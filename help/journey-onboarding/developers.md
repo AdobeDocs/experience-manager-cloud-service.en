@@ -42,7 +42,7 @@ Depending on your organizational needs, the same user(s) can have both roles.
 
 ## Prerequisites {#prerequisites}
 
-Before you begin the tasks described in this document as a developer or deployment manager, ensure that your system administrator has completed all the step in this onboarding journey. This means that:
+Before you begin the tasks described in this document as a developer or deployment manager, ensure that your system administrator has completed all the steps in this onboarding journey. This means that:
  
 * Your system administrator has assigned developers and deployment managers to their respective product profiles.
 * Developers must additionally be assigned to **AEM Users** or **AEM Administrators** product profiles in order to also use AEM.

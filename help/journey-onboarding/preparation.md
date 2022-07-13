@@ -18,6 +18,8 @@ After reading this document you will understand
 * How that contract affects the onboarding process.
 * How to prepare for your onboarding call.
 
+Don't worry if you are not familiar with all of the terms used on this page. They will be explained in the next part of the journey.
+
 ## Video {#video}
 
 This video summarizes the onboarding process laid out in this journey and is intended as an option overview. All topics in the video are presented in detail within the journey.
@@ -44,7 +46,9 @@ Once the contract is signed, all the AEM cloud environments covered by the contr
 
 ## Onboarding Call {#onboarding-call}
 
-At the completion of the contract, the Adobe onboarding team schedules a call with representatives from your organization to discuss how to get started. Attendees from your organization should include:
+At the completion of the contract, the Adobe onboarding team schedules a call with representatives from your organization to discuss how to get started.
+
+Attendees from your organization should include:
 
 * Business lead
 * Tech practitioners
@@ -57,7 +61,7 @@ Adobe will be represented by:
 * Your named customer success engineer (as applicable)
 * Additional subject matter experts as required
 
-The goal of the call is to give your the opportunity to ask questions, learn about the support process, and possible see the product for the first time.
+The goal of the call is to give you the opportunity to ask questions, learn about the support process, and possibly see the product for the first time.
 
 ## Welcome Email {#welcome-email}
 
