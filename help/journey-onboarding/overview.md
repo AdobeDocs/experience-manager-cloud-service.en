@@ -41,19 +41,11 @@ These concepts will be laid out in detail in this onboarding journey. The goal i
 
 Basically you will hit the ground running with your new AEM as a Cloud Service project!
 
-## AEM Documentation Journeys {#documentation-journeys}
-
-[A Documentation Journey](/help/journey-documentation/documentation-journeys.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
-
-Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
-
-If you want to know how Adobe recommends how to how to get your team onboarded onto your new AEM as a Cloud Service application, this is where to start!
-
 ## Audience {#audience}
 
-The onboarding journey is written specifically for the **system administrator**. The system administrator is the individual who is first contacted by Adobe after your AEM as a Cloud Service contract is signed, and is typically the first person to access and set up your AEM as a Cloud Service resources. If you are reading this, you are likely the system administrator.
+The onboarding journey is written specifically for the **system administrator** of customer's new to AEM as a Cloud Service and to AEM in general. The system administrator is the individual who is first contacted by Adobe after your AEM as a Cloud Service contract is signed, and is typically the first person to access and set up your AEM as a Cloud Service resources. If you are reading this, you are likely the system administrator.
 
-The system administrator manages all aspects of their organizations AEMaaCS users, from access to permissions. However the system administrator must interact with other personas along the way.
+The system administrator manages all aspects of their organization's AEMaaCS users, from access to permissions. However the system administrator must interact with other personas along the way.
 
 |Persona|Description|Role in Journey|
 |---|---|---|
@@ -62,7 +54,11 @@ The system administrator manages all aspects of their organizations AEMaaCS user
 |Developer|Develops AEM applications which consume content from different sources|Once granted permissions by the system administrator, developers can start their own journey developing solutions|
 |Deployment manager|Adds or updates an environment, runs pipelines, and deploys code to AEM environment or code-quality.|Once granted permissions by the system administrator, deployment managers can start their own journey managing deployments|
 
-Illustrate the complete process of onboarding and then using AEM as a Cloud Service, the roles of AEM users, developers, and deployment managers are explored briefly as additional, optional parts of the journey.
+This onboarding guide illustrates the complete process of onboarding as a system administrator. The roles of AEM users, developers, and deployment managers are explored briefly as additional, optional parts of the journey.
+
+>[!TIP]
+>
+>If you are new to AEM as a Cloud Service, but are already familiar with AEM and are migrating from on-premise or Adobe Managed Services, be sure to check out the [AEM as a Cloud Service Migration Journey.](/help/journey-migration/getting-started.md)
 
 ## Onboarding Journey Overview {#overview}
 
@@ -85,3 +81,11 @@ The following articles describe in details the core onboarding concepts and give
 ## What's Next {#what-is-next}
 
 You are now ready to start your AEM as a Cloud Service onboarding journey. We encourage you to continue to the next part of the journey and read the article [Onboarding Preparation](preparation.md)
+
+## AEM Documentation Journeys {#documentation-journeys}
+
+[A Documentation Journey](/help/journey-documentation/documentation-journeys.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
+
+Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
+
+If you want to know how Adobe recommends how to get your team onboarded onto your new AEM as a Cloud Service application, this is where to start!

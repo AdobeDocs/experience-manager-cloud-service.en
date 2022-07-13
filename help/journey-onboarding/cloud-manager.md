@@ -1,12 +1,12 @@
 ---
 title: Access Cloud Manager
-description: Lean how to access Cloud Manager so that you can set up your project resources.
+description: Learn how to access Cloud Manager so that you can set up your project resources.
 role: Admin, User, Developer
 ---
 
 # Access Cloud Manager {#cloud-resources}
 
-In the previous article in this onboarding journey, [Assigning Team Members to Cloud Manager Product Profiles,](assign-profiles-cloud-manager.md) you granted your AEMaaCS team the proper roles. Now lean how to access Cloud Manager so that you can set up your project resources that your team will use.
+In the previous article in this onboarding journey, [Assigning Team Members to Cloud Manager Product Profiles,](assign-profiles-cloud-manager.md) you granted your AEMaaCS team the proper roles. Now learn how to access Cloud Manager so that you can set up your project resources that your team will use.
 
 ## Objective {#objective}
 
