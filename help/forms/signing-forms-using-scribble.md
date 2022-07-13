@@ -17,7 +17,7 @@ You can use the **Scribble Signature** component and **Signature Step** componen
 
 ![Scribble sign dialog](assets/scribble-signature.png)
 
-###Various Options available in Signature Widow
+### Various Options available in Signature Widow
 
 * **A:** Click the **Paint Brush** icon to draw your signature on canvas.
 * **B:** Click the **Clear** icon to clear the signature on canvas.
