@@ -21,7 +21,7 @@ You can use the **Scribble Signature** component and **Signature Step** componen
 * **A:** Click the **Paint Brush** icon to draw your signature on canvas.
 * **B:** Click the **Clear** icon to clear the signature on canvas.
 * **C:** Click the **Keyboard** icon to type your name on canvas.
-* **D:** Click the **Geolocation** icon to add geolocation to the signature.  
+* **D:** Click the **Geolocation** icon to add geolocation along with the signature.  
  If you want to edit your signature, you have to disregard the current signature and re-sign using the above Paint Brush/Keyboard option.
 
  >[!NOTE]
@@ -66,7 +66,7 @@ You can use the **Scribble Signature** component and **Signature Step** componen
 
 1. Click **[!UICONTROL Sign]**. The scribble sign dialog appears. Sign the form and click the Done ![aem_forms_save](assets/aem_forms_save.png) icon to save the signature.
 
-   ![Scribble sign dialog](assets/scribblewidget.jpg)
+   ![Scribble sign dialog](assets/scribblewidget.png)
 
 1. Click complete to finish the signing process.
 
