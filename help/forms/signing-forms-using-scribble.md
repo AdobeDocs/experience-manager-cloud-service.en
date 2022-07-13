@@ -17,7 +17,7 @@ You can use the **Scribble Signature** component and **Signature Step** componen
 
 ![Scribble sign dialog](assets/scribble-signature.png)
 
-#####Various Options available in Signature Widow
+###Various Options available in Signature Widow
 * **A:** Click the **Paint Brush** icon to draw your signature on canvas.
 * **B:** Click the **Clear** icon to clear the signature on canvas.
 * **C:** Click the **Keyboard** icon to type your name on canvas.
@@ -25,8 +25,11 @@ You can use the **Scribble Signature** component and **Signature Step** componen
  Once you tap the Done ![aem_forms_save](assets/aem_forms_save.png) icon in Scribble signature window, you cannot edit the signature. In case, if you want to edit the signature, you have to disregard the current signature and re-sign using the above Paint Brush/Keyboard option.
 
  >[!NOTE]
+   >
    >Signatures are always saved in a PNG format.
+   >
    > Your geolocation information always appears at the bottom of the signature. 
+   
 ## Configure an Adaptive Form to use Scribble Signature {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Create a Document of Record option enabled or form template based Adaptive Form. For step-by-step information, see [Creating an Adaptive Form](creating-adaptive-form.md).
