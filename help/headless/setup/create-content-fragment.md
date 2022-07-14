@@ -31,7 +31,7 @@ Content authors will create any number of Content Fragments to represent the con
 
    Add the Title, Name, and if required, Description.
 
-   ![Create New Content Fragment dialog](/help/headless/content-fragments/assets/cfc-console-create.png)
+   ![Create New Content Fragment dialog](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 1. Tap or click **Create** or  **Create and open**.
 
