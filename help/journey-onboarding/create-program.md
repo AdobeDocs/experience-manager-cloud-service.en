@@ -6,9 +6,11 @@ role: Admin, User, Developer
 
 # Create a Program {#create-program}
 
-After reviewing the previous document in this onboarding journey, [Access Cloud Manager,](cloud-manager.md) you have ensured you have appropriate access to Cloud Manager. Now you can create your first program.
+In this part of the [onboarding journey,](overview.md) you will learn how to use Cloud Manager to create your first program.
 
 ## Objective {#objective}
+
+After reviewing the previous document in this onboarding journey, [Access Cloud Manager,](cloud-manager.md) you have ensured you have appropriate access to Cloud Manager. Now you can create your first program.
 
 After reading this document you will:
 
