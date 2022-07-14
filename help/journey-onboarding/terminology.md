@@ -5,9 +5,11 @@ description: Before you sign into AEMaaCS, it is helpful to understand some of t
 
 # AEM as a Cloud Service Terminology {#terminology}
 
-Now that you understand what has led up to the onboarding process by reading the document [Onboarding Preparation,](preparation.md) it is helpful to understand some of the terminology of the system and its basic structure before logging in.
+In this part of the [onboarding journey,](overview.md) you will learn some of the terminology of AEM as a Cloud Service and its basic structure.
 
 ## Objective {#objective}
+
+Now that you understand what has led up to the onboarding process by reading the document [Onboarding Preparation,](preparation.md) it is helpful to understand some of the terminology of the system and its basic structure before logging in.
 
 AEM as a Cloud Service is a powerful and flexible tool and to use any tool you should be familiar with its organization and the terminology and language used to describe it. This document summarizes some key terms you need to understand before you begin using the system.
 

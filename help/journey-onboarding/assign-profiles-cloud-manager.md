@@ -1,6 +1,6 @@
 ---
 title: Assigning Team Members to Cloud Manager Product Profiles
-description: Follow this page to learn how to assign team members to Cloud Manager Product profiles
+description: Follow this page to learn how to assign team members to Cloud Manager product profiles
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
@@ -8,9 +8,11 @@ exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 
 # Assign Team Members to Cloud Manager Product Profiles {#assign-team-members}
 
-In the previous step in this journey, [Accessing the Admin Console,](admin-console.md) you learned now log in to the Admin Console and verify your privileges as a system administrator. You are now ready to allow your team members access to Cloud Manager. You do this by assigning product profiles.
+In this part of the [onboarding journey,](overview.md) you will learn how to assign team members to Cloud Manager product profiles.
 
 ## Objective {#objective}
+
+In the previous step in this journey, [Accessing the Admin Console,](admin-console.md) you learned now log in to the Admin Console and verify your privileges as a system administrator. You are now ready to allow your team members access to Cloud Manager. You do this by assigning product profiles.
 
 When granting users access to an Adobe solution, you do not necessarily want to give them full access. Product profiles enable each solution to have its own set of user permissions. You use the Admin Console to assign product profiles.
 
