@@ -62,13 +62,13 @@ To create a content fragment:
 During its existence a Content Fragment can have several statuses, as shown in the [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
 
 * **New**
-  A new Content Fragment has been created, but never edited nor opened in the Content Fragment editor.
+  A new Content Fragment has been created, but never edited, nor opened, in the Content Fragment editor.
 * **Draft**
-  Someone has either edited or opened the Content Fragment in the Content Fragment Editor - before it has been published.
+  Someone has either edited or opened the (new) Content Fragment in the Content Fragment Editor - but it has not yet been published.
 * **Published** 
   The Content Fragment has been published.
 * **Modified**
-  The Content Fragment has been edited after it was published (but before publishing again). 
+  The Content Fragment has been edited after it was published (but before publishing the modification). 
 * **Unpublished** 
   The Content Fragment has been unpublished.
 
