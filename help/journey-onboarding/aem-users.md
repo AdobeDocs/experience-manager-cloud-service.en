@@ -8,11 +8,11 @@ exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 
 # AEM User Tasks {#aem-user-tasks}
 
-The system administrator has completed the onboarding journey by setting up the necessary cloud resources and granting access in the document [Assigning AEM Product Profiles.](assign-profiles-aem.md) Now learn how AEM users can access AEM as a Cloud Service to author content.
+In this optional part of the [onboarding journey,](overview.md) you will learn how AEM users can access AEM as a Cloud Service to author content.
 
 ## The Story So Far {#story-so-far}
 
-You have come a long way in your onboarding journey! Congratulations! You have already assigned your team members to the correct product profiles, set up the necessary cloud resources including your programs and environments, learned how developers can access git, and how deployment mangers can create and execute deployment pipelines.
+You have come a long way in your onboarding journey! Congratulations! The system administrator has completed the onboarding journey by setting up the necessary cloud resources and granting access in the document [Assigning AEM Product Profiles.](assign-profiles-aem.md)
 
 At this point, your AEM users can start creating content. In this sense, your onboarding is complete and now it is time to use your new AEM as a Cloud Service system, which this document illustrates.
 
@@ -66,6 +66,12 @@ Now that you have read this document you should know how to:
 * Sign into an AEM as a Cloud Service instance.
 
 Congratulations! You are now ready to author and publish AEM content. Refer to the [Additional Resources](#additional-resources) section for more details on how to author content in AEM and how to administer it.
+
+If you are interested in how developers and deployment managers create and manage custom applications for AEM as a Cloud service, continue on to second optional part of the onboarding journey, [AEM Developer Tasks.](developers.md)
+
+>[!TIP]
+>
+>Now that you are onboarded, you can [learn how to easily add the AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) to a sandbox environment with minimal AEM configuration and be able to test the powerful features of AEM with rich examples based on best-practices.
 
 ## Additional Resources {#additional-resources}
 
