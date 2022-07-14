@@ -21,8 +21,8 @@ You can use the **Scribble Signature** component and **Signature Step** componen
 
 * **A:** Click the **Paint Brush** icon to draw your signature on canvas.
 * **B:** Click the **Clear** icon to clear the signature on canvas.
-* **C:** Click the **Keyboard** icon to type your name on canvas.
-* **D:** Click the **Geolocation** icon to add geolocation along with the signature.  
+* **C:** Click the **Geolocation** icon to add geolocation along with the signature.
+* **D:** Click the **Keyboard** icon to type your name on canvas.  
  Once you tap the Done ![aem_forms_save](assets/aem_forms_save.png) icon in Scribble signature window, you cannot edit the signature. In case, if you want to edit the signature, you have to disregard the current signature and re-sign using the above Paint Brush/Keyboard option.
 
    >[!NOTE]
