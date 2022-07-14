@@ -31,7 +31,7 @@ Have a look at the May 2022 Release Overview video for a summary of the features
 ### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
 
 * Various GraphQL functionalities
-* A [new console](/help/headless/content-fragments/content-fragment-console.md) optimized for Headless use of Content Fragments
+* A [new console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) optimized for Headless use of Content Fragments
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
