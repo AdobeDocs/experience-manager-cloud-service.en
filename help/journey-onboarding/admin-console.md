@@ -5,9 +5,11 @@ description: Once you understand the preparation necessary to onboarding and the
 
 # Accessing the Admin Console {#accessing-admin-console}
 
-Now that you have read the article [AEM as a Cloud Service Terminology](terminology.md) and understand the basics of AEMaaCS structure, you are ready to log into the Admin Console for the first time!
+In this part of the [onboarding journey,](overview.md) you will learn about the preparation necessary before you can log into the system for the first time.
 
 ## Objective {#objective}
+
+Now that you have read the article [AEM as a Cloud Service Terminology](terminology.md) and understand the basics of AEMaaCS structure, you are ready to log into the Admin Console for the first time!
 
 As a system administrator you are responsible for managing users within your organization. You do this by using the Admin Console. After reading this section you should:
 

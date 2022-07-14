@@ -6,9 +6,11 @@ role: Admin, User, Developer
 
 # Access Cloud Manager {#cloud-resources}
 
-In the previous article in this onboarding journey, [Assigning Team Members to Cloud Manager Product Profiles,](assign-profiles-cloud-manager.md) you granted your AEMaaCS team the proper roles. Now learn how to access Cloud Manager so that you can set up your project resources that your team will use.
+In this part of the [onboarding journey,](overview.md) you will learn how to access Cloud Manager so that you can set up your project resources.
 
 ## Objective {#objective}
+
+In the previous article in this onboarding journey, [Assigning Team Members to Cloud Manager Product Profiles,](assign-profiles-cloud-manager.md) you granted your AEMaaCS team the proper roles. Now learn how to access Cloud Manager so that you can set up your project resources that your team will use.
 
 Since you completed the previous step in this journey, your team can access Cloud Manager. Cloud Manager is used to create and manage your project resources such as programs and environments.
 

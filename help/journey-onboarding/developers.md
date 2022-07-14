@@ -8,13 +8,13 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 
 # Developer and Deployment Manager Tasks {#developer-deployment-manager}
 
-The system administrator has completed the onboarding journey by setting up the necessary cloud resources and granting access in the document [Assigning AEM Product Profiles.](assign-profiles-aem.md) Now developers and deployment managers can access git to develop custom applications and use pipelines to deploy them.
+In this optional part of the [onboarding journey,](overview.md) you will learn how developers and deployment managers can access git to develop applications and use pipelines to deploy them.
 
 ## The Story So Far {#story-so-far}
 
-You have come a long way in your onboarding journey! Congratulations! You have already assigned your team members to the correct product profiles and set up the necessary cloud resources including your programs and environments.
+You have come a long way in your onboarding journey! Congratulations! The system administrator has completed the onboarding journey by setting up the necessary cloud resources and granting access in the document [Assigning AEM Product Profiles.](assign-profiles-aem.md) 
 
-At this point your developers and deployment managers can begin creating your own applications while your AEM users can start creating content. In this sense, your onboading is complete and now it is time to use your new AEM as a Cloud Service system, which this document will illustrate.
+At this point your developers and deployment managers can begin creating your own applications while your AEM users can start creating content. In this sense, your onboarding is complete and now it is time to use your new AEM as a Cloud Service system, which this document will illustrate.
 
 ## Audience {#audience}
 
