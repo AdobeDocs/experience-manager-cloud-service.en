@@ -28,7 +28,8 @@ You can use the **Scribble Signature** component and **Signature Step** componen
    >[!NOTE]
    >
    >Signatures are saved in a PNG format.
-   > Your geolocation information appears at the bottom of the signature. 
+   >
+   > If the aspect ratio of the scribble signature window is less than 1 then the geolocation information is appended at the bottom otherwise it gets appended at the right of the canvas. 
    
 ## Configure an Adaptive Form to use Scribble Signature {#configure-an-adaptive-form-to-use-scribble-signature}
 
