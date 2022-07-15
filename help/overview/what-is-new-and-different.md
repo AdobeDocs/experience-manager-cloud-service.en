@@ -119,10 +119,6 @@ Cloud Manager creates environments in datacenters across many geographic regions
 
 ## Onboarding {#onboarding}
 
->[!NOTE]
->
->For further details see [Onboarding](/help/onboarding/home.md).
-
 Starting and managing an AEM project is straightforward when using AEM as a Cloud service as Adobe is responsible for many aspects:
 
 * Baseline AEM images are optimized for specific use-cases.
@@ -144,6 +140,10 @@ It is also significantly different as there is now:
   * Code updates; any customer applications developed for a previous version of AEM will need to be reviewed and possibly updated.
 
   * Content migration
+
+>[!TIP]
+>
+>For a complete overview of the onboarding process, see the [onboarding journey.](/help/journey-onboarding/overview.md)
 
 ## Developing {#developing}
 
@@ -267,6 +267,6 @@ For further information see:
 
 >[!TIP]
 >
->Once you have an overview of AEM as a Cloud Service, you can onboard quickly by reviewing the [Onboarding Journey.](/help/journey-onboarding/home.md)
+>Once you have an overview of AEM as a Cloud Service, you can onboard quickly by reviewing the [Onboarding Journey.](/help/journey-onboarding/overview.md)
 >
 >Already onboarded or ready to dive into testing AEM's features? Install the [AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) to explore AEM's powerful features using rich examples.
