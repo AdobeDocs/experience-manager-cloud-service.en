@@ -38,9 +38,8 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
    >[!IMPORTANT]
    >
-   >You will be able to kick-off an ingestion to the destination environment only if you belong to the local **AEM administrators** group in the Cloud Service instance you are transferring content. If you don't belong to the AEM administrators group, you will see an error as shown below when you try to start an ingestion.
-   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam21.png)
-
+   >You will be able to kick-off an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you are unable to start an ingestion, refer to [Unable to Start Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) for more details.
+   
    >[!IMPORTANT]
    >
    >If the setting **Wipe** is enabled before ingestion, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group. You will need to be re-added to the administrators group in order to start an ingestion.
@@ -109,7 +108,12 @@ You will need to retrieve the migration token manually by clicking on the "Get t
 
 >[!NOTE]
 >
->The token will be available to users who belong to the local **AEM administrators** group in the Cloud Service instance you are transferring content. 
+>The token will be available to users who belong to the local **AEM administrators** group on the destination Cloud Service author service. 
+
+### Unable to Start Ingestion {#unable-to-start-ingestion}
+
+You will be able to kick-off an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you don't belong to the AEM administrators group, you will see an error as shown below when you try to start an ingestion.
+
 
 ## What's Next {#whats-next}
 
