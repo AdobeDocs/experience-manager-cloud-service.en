@@ -27,13 +27,9 @@ You can use the **Scribble Signature** component and **Signature Step** componen
 
 You can tap the **Configure** ![](assets/configure.png) icon to set the aspect ratio of Scribble Signature canvas. When the aspect ratio of the Scribble Signature canvas is less than 1, the geolocation information is appended at the bottom of the Scribble Signature canvas, else on the right-side of the canvas. 
  
-* Aspect ratio < 1
 
- ![scribble signature-bottom](assets/scribble-signature-bottom.PNG)
+ ![scribble signature-bottom](assets/scribble-signature-aspectratio.PNG)
 
- * Aspect ratio > 1
-
- ![scribble signature-right](assets/scribble-signature-right.PNG)
 
 
    >[!NOTE]
