@@ -203,29 +203,7 @@ For more information on the APIs, see the [Cloud Manager API Documentation](http
 
 ### Traffic Routing {#dedcated-egress-ip-traffic-routing}
 
-Http or https traffic going to destinations through ports 80 or 443 will go through a preconfigured proxy, assuming the standard Java networking library is used. For http or https traffic going through other ports a proxy should be configured using the following properties.
-
-```
-AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
-AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
-```
-
-For example, here's sample code to send a request to `www.example.com:8443`:
-
-```java
-String url = "www.example.com:8443"
-String proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
-int proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
-
-HttpClient client = HttpClient.newBuilder()
-      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
-      .build();
- 
-HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
-HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-```
-
-If using non-standard Java networking libraries, configure proxies using the properties above, for all traffic.
+Http or https traffic will go through a preconfigured proxy, provided they use standard Java system properties for proxy configurations.
 
 Non-http/s traffic with destinations through ports declared in the `portForwards` parameter should reference a property called `AEM_PROXY_HOST`, along with the mapped port. For example:
 
