@@ -286,7 +286,7 @@ The approaches differ in terms of tier availability, the ability to deduplicate 
   </tbody>
 </table>
 
-Please note that the two actions directly related to cache invalidation are SCD API Invalidate and Replication API Deactivate.
+Please note that the two actions directly related to cache invalidation are Sling Content Distribution (SCD) API Invalidate and Replication API Deactivate.
 
 Also, from the table, we observe that:
 
@@ -298,7 +298,10 @@ In conclusion, if you are looking to invalidate the dispatcher cache, the recomm
 
 ### Sling Content Distribution (SCD) {#sling-distribution}
 
-Presented below is the implementation pattern when using the SCD action from Author:
+>[!NOTE]
+>When using the instructions presented below, please be aware that you should test the custom code in an AEM Cloud Service Dev environment and not locally.
+
+When using the SCD action from Author, the implementation pattern is as follows:
 
 1. From Author, write custom code to invoke the sling content distribution [API](https://sling.apache.org/documentation/bundles/content-distribution.html), passing the invalidate action with a list of paths:
 
