@@ -97,7 +97,19 @@ You can do this by creating a new Ingestion Job and ensure that **Wipe** is disa
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
+## Troubleshooting {#troubleshooting}
 
+### CAM Unable to Retrieve the Migration Token {#cam-unable-to-retrieve-the-migration-token}
+
+The automatic retrieval of the migration token may fail for different reasons, including you [setting up an IP allow list via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) on the target Cloud Service environment.  In such scenarios you will see the following dialog when you attempt to start an ingestion:
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
+
+You will need to retrieve the migration token manually by clicking on the "Get token" link on the dialog. This will open another tab that displays the token. You can then copy the token and paste it into the **Migration token input** field. Now, you should be able to start the ingestion.
+
+>[!NOTE]
+>
+>The token will be available to users who belong to the local **AEM administrators** group in the Cloud Service instance you are transferring content. 
 
 ## What's Next {#whats-next}
 
