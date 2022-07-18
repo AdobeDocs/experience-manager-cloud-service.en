@@ -48,7 +48,7 @@ Understanding SSL/TLS connection problems can sometimes be difficult. To toubles
 1. Use the pencil icon button to edit its configuration values 
 1. Enable the **Enable ssl logging for extraction** setting, then press **Save**:
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
 
 ## Running the Content Transfer Tool {#running-tool}
