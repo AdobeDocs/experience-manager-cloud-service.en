@@ -2,6 +2,7 @@
 title: Content Fragments Console
 description: Learn how to manage Content Fragments from the Content Fragments Console.
 landing-page-description: Learn how to manage Content Fragments from the Content Fragments Console that is focused on high volume use of Content Fragments for Headless use-cases, but also used when page authoring.
+exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 ---
 # Content Fragments Console  {#content-fragments-console}
 
