@@ -254,34 +254,17 @@ Usage is via:
 
 `GET /{cfParentPath}/{cfName}.json`
 
-For example:
-
-`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
-
-The response is serialized JSON with the content structured as in the content fragment. References are delivered as reference URLs.
-
-Two types of read operations are possible:
-
-* Reading a specific content fragment by path, this returns the JSON representation of the content fragment.
-* Reading a folder of content fragments by path: this returns the JSON representations of all content fragments within the folder.
-
 ### Create {#create}
 
 Usage is via:
 
 `POST /{cfParentPath}/{cfName}`
 
-The body has to contain a JSON representation of the content fragment to be created, including any initial content that should be set on the content fragment elements. It is mandatory to set the `cq:model` property and it must point to a valid content fragment model. Failing to do so will result in an error. It is also necessary to add a header `Content-Type` which is set to `application/json`.
-
 ### Update {#update}
 
 Usage is via
 
 `PUT /{cfParentPath}/{cfName}`
-
-The body has to contain a JSON representation of what is to be updated for the given content fragment.
-
-This can simply be the title or description of a content fragment, or a single element, or all element values and/or metadata. 
 
 ### Delete {#delete}
 
