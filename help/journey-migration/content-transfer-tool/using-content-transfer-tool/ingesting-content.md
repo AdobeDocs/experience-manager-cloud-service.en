@@ -116,8 +116,6 @@ You will be able to kick-off an ingestion to the destination environment only if
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
-
-
 ## What's Next {#whats-next}
 
 Once you have learned Ingesting Content into Target in Content Transfer Tool, you can view logs upon completion of each step (extraction and ingestion) and look for errors. See [Viewing Logs for a Migration Set](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) to learn more.
