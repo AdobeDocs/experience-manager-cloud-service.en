@@ -1,6 +1,7 @@
 ---
 title: Managing Content Fragments
 description: Learn how to use the Content Fragments console to manage your AEM Content Fragments; for page authoring, or as the basis of your headless content.
+exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 ---
 # Managing Content Fragments {#managing-content-fragments}
 
@@ -412,4 +413,3 @@ You can revert to a specific version of your fragment:
   Select the required version, then the **Revert to this Version** action.
 
 * While [comparing a version to the current version](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#comparing-fragment-versions) you can **Revert** to the selected version.
-
