@@ -202,7 +202,7 @@ When the publish instance receives a new version of a page or asset from the aut
 
 ## Explicit invalidation of the dispatcher cache {#explicit-invalidation}
 
-Adobe's recommendation is to rely on standard cache headers to control the content delivery life cycle. However, if needed, it is possible to invalidate content directly in dispatcher.
+Adobe recommends to rely on standard cache headers to control the content delivery life cycle. However, if needed, it is possible to invalidate content directly in dispatcher.
 
 The following list contains scenarios where you might want to explicitly invalidate the cache (while optionally listening for the completion of the invalidation):
 
