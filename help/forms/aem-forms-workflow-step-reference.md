@@ -217,10 +217,10 @@ Invoke DDX step has the following properties:
 * **[!UICONTROL Input Document’s Map]**: Option is used to add multiple entries using **[!UICONTROL ADD]** button. Each entry represents the document’s key in the map and the document's source.
 
 **[!UICONTROL Environment Options]**: This option is used to set processing settings for invoke API. Various options available under this tab are:
-  * **[!UICONTROL Validate Only]**: Checks the validity of the input DDX document.
-  * **[!UICONTROL Fail on Error]**: Checks whether the invoke API service fails, in case of an error. By default, its value is set to False.
-  * **[!UICONTROL First Bates Number]**: Specifies the number, which is self-incrementing. This self-incrementing number is displayed on each consecutive page automatically.  
-  * **[!UICONTROL Default Style]**: Sets the default style for the output file.
+* **[!UICONTROL Validate Only]**: Checks the validity of the input DDX document.
+* **[!UICONTROL Fail on Error]**: Checks whether the invoke API service fails, in case of an error. By default, its value is set to False.
+* **[!UICONTROL First Bates Number]**: Specifies the number, which is self-incrementing. This self-incrementing number is displayed on each consecutive page automatically.  
+* **[!UICONTROL Default Style]**: Sets the default style for the output file.
 
 >[!NOTE]
 >
