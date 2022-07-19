@@ -11,6 +11,7 @@ topic-tags: best-practices
 Unlike previous versions in AEM as a Cloud Service all operational aspects regarding indexing are automated. This allows developers to focus on creating efficient queries and and their corresponding index definitions.
 
 ## When to use queries {#when-to-use-queries}
+
 Queries are a way to get access to content, but not the only one. For that reason it must be evaluated if queries are the best and most performant way to access content. In many situations content in the repository can be accessed more performant by other means.
 
 ### Repository and Taxonomy Design {#repository-and-taxonomy-design}
@@ -69,6 +70,7 @@ The general approach how to use the Query Performance Tool to optimize queries i
 
 
 ### Use an index {#use-an-index}
+
 Every query should use an index to deliver optimal performance. In the majority of all cases existing out-of-the-box indexes should be sufficient to handle queries. 
 Sometimes custom properties need to be added to an existing index, so additional constraints can be queried using this index. See (Content Search and Indexing)[/help/operations/indexing.md#changing-an-index] for more details. The [JCR Query Cheatsheet](#jcr-query-cheatsheet) describes how an property definition on an index has to look like to support a specific query type.
 
@@ -83,6 +85,7 @@ The [JCR Query cheatsheet](#jcr-query-cheatsheet) lists the available constraint
 
 
 ### Ordering
+
 If a specific order of the result is requested, there are 2 ways for the Query Engine to achieve this:
 
 1. Either the index can deliver the result completely and in the right order; this works if the properties which are used for ordering are annotated with ```ordered=true``` in the index definition.
@@ -93,6 +96,7 @@ If a specific order of the result is requested, there are 2 ways for the Query E
 
 
 ### Restrict the result size
+
 The retrieved size of the query result is an important factor in query performance. As the result is fetched in a lazy manner, there is a difference in just fetching the first 20 results compared to fetching 10'000 results, both in runtime and memory usage.
 
 This also means that the size of the result set can only be determined correctly, if all results are fetched. For this reason the fetched result set should always be limited, either by augmenting the query (see the [JCR Query cheatsheet](#jcr-query-cheatsheet) for details) or by limiting the reads of the results.
@@ -102,10 +106,12 @@ See the section [Queries with large results](#queries-with-large-result-sets) be
 
 
 ## JCR Query Cheatsheet
+
 To support the creation of efficient JCR queries and index definitions, the [JCR Query Cheat Sheet](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet) is available for download and use as a reference during development. It contains sample queries for QueryBuilder, XPath and SQL-2, covering multiple scenarios which behave differently in terms of query performance. It also provides recommendations for how to build or customize Oak indexes. The content of this Cheat Sheet applies to AEM 6.5 and AEM as a Cloud Service.
 
 
 ## Queries with large result sets
+
 Although it is recommended to avoid queries with a large result set, there are valid cases where large result must be processed. Often the size of result is not known upfront, thus some precautions should be taken to make the processing reliable.
 
 * the query should not be executed within a request; instead the query should be executed as part of a Sling Job or an AEM workflow. These do not have any limitations in their total runtime, and are re-started in case the instance goes down during the processing of the query and its results.
@@ -114,6 +120,7 @@ Although it is recommended to avoid queries with a large result set, there are v
 
 
 ## Query traversing the repository
+
 Queries traversing the repository are not using an index and are logging message like this:
 
 ```text
