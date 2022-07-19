@@ -1,6 +1,7 @@
 ---
 title: Metadata - Fragment Properties
 description: See how you can view and edit the metadata properties for AEM Content Fragments.
+exl-id: c1b90118-4501-4f93-bd2d-6552e0d17aee
 ---
 # Metadata - Fragment Properties {#metadata-fragment-properties}
 
