@@ -24,7 +24,7 @@ You can use the **Scribble Signature** component and **Signature Step** componen
 * **C:** Click the **Geolocation** icon to add geolocation along with the signature.
 * **D:** Click the **Keyboard** icon to type your name on canvas. 
 
-   >[!NOTE]
+   >[!PRE-RELEASE NOTE]
    >
    >The Keyboard feature is available in prerelease channel. See [Prerelease Channel Documentation](/help/release-notes/prerelease.md) for information to enable the feature for your environment.
    >
