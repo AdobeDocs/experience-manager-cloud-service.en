@@ -84,6 +84,10 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 * As mentioned in the May (2022.5.0) release notes, the "Add tree” option under the replication agent admin screen’s **Distribute** tab was removed. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) workflow.
 * Sling Content Distribution (SCD) now supports an explicit "invalidation" action in order to invalidate content without that content being published. See [this article](/help/implementing/dispatcher/caching.md#explicit-invalidation) for further details.
 
+### New features available in [!DNL Experience Manager] prerelease channel {#prerelease-features-foundation}
+
+* AEM as a Cloud Service is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Refer to [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
+
 ## Cloud Manager {#cloud-manager}
 
 You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
