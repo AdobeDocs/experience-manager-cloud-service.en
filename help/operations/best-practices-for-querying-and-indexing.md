@@ -72,7 +72,7 @@ The general approach how to use the Query Performance Tool to optimize queries i
 ### Use an index {#use-an-index}
 
 Every query should use an index to deliver optimal performance. In the majority of all cases existing out-of-the-box indexes should be sufficient to handle queries. 
-Sometimes custom properties need to be added to an existing index, so additional constraints can be queried using this index. See (Content Search and Indexing)[/help/operations/indexing.md#changing-an-index] for more details. The [JCR Query Cheatsheet](#jcr-query-cheatsheet) describes how an property definition on an index has to look like to support a specific query type.
+Sometimes custom properties need to be added to an existing index, so additional constraints can be queried using this index. See [Content Search and Indexing](/help/operations/indexing.md#changing-an-index) for more details. The [JCR Query Cheatsheet](#jcr-query-cheatsheet) describes how an property definition on an index has to look like to support a specific query type.
 
 
 
@@ -126,6 +126,7 @@ Queries traversing the repository are not using an index and are logging message
 ```text
 28.06.2022 13:32:52.804 *WARN* [127.0.0.1 [1656415972414] POST /libs/settings/granite/operations/diagnosis/granite_queryperformance.explain.json HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.Cursors$TraversingCursor Traversed 98000 nodes with filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a /* xpath: //* */, path=*) called by com.adobe.granite.queries.impl.explain.query.ExplainQueryServlet.getHeuristics; consider creating an index or changing the query
 ```
+
 This log snippet contains relevant information:
 
 * the query itself: ```//* ```
