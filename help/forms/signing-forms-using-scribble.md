@@ -25,7 +25,11 @@ You can use the **Scribble Signature** component and **Signature Step** componen
 * **D:** Click the **Keyboard** icon to type your name on canvas.  
  Once you tap the Done ![aem_forms_save](assets/aem_forms_save.png) icon in Scribble signature window, you cannot edit the signature. In case, if you want to edit the signature, you have to disregard the current signature and re-sign using the above Paint Brush/Keyboard option.
 
-You can tap the **Configure** ![](assets/configure.png) icon to set the aspect ratio of Scribble Signature canvas. When the aspect ratio of the Scribble Signature canvas is less than 1, the geolocation information is appended at the bottom of the Scribble Signature canvas, else on the right-side of the canvas. 
+You can tap the **Configure** ![](assets/configure.png) icon to set the aspect ratio of Scribble Signature canvas. 
+* When the aspect ratio of the Scribble Signature canvas is less than 1, the geolocation information is added at the bottom of the Scribble Signature canvas.
+
+
+* When the aspect ratio of the Scribble Signature canvas is more than 1, the geolocation information is added to the right-side of the Scribble Signature canvas. 
  
 
  ![scribble signature-bottom](assets/scribble-signature-aspectratio.PNG)
