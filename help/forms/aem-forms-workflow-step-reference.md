@@ -134,7 +134,7 @@ You can also use the component to control the behavior of the task. For example,
 
 ## Convert to PDF/A step {#convert-pdfa}
 
-Convert to PDF/A option converts PDF document to PDF/A format. PDF/A (Portable Document Format Archivable) is a advanced version of the regular PDF format, which is used for the long-term archiving of documents. 
+Convert to PDF/A option converts PDF document to PDF/A format. PDF/A (Portable Document Format Archivable) is an advanced version of the regular PDF format, which is used for the long-term archiving of documents. 
 
 The convert to PDF/A step has following properties:
 
@@ -146,7 +146,7 @@ The convert to PDF/A step has following properties:
 * **[!UICONTROL Color Space]**: Specifies the predefined color space that are used for output PDF/A files. 
 * **[!UICONTROL Optional Content]**: Allows specific graphic objects and/or annotations to be visible in output PDF/A document, only when a specified set of criteria is met.
 
-**[!UICONTROL Output Documents]**: Specifies the location to save the output file. The output file can be saved at an location relative to payload, overwrites the payload, if the payload is a file, or in a variable of Document data type. 
+**[!UICONTROL Output Documents]**: Specifies the location to save the output file. The output file can be saved at a location relative to payload, overwrites the payload, if the payload is a file, or in a variable of Document data type. 
 
 >[!NOTE]
    >
