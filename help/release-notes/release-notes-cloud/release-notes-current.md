@@ -33,9 +33,7 @@ Have a look at the June 2022 Release Overview video for a summary of the feature
 
 ### New features in [!DNL Sites] {#sites-features}
 
-* A new [user interface](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) is now available for content admins and content authors to efficiently manage (take actions such as publish, unpublish, copy, move, etc.), search/filter, and create content fragments for Headless use-cases.
-
-    ![Content Fragment Console](/help/release-notes/assets/cf-ui.png)
+* The [Content Fragment Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) now supports keyboard shortcuts. 
 
 * The new [Table of Contents Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) works not only with the Core Components but with all components, automatically rendering ToCs on content pages. And because it is rendered server-side and fully cached by the dispatcher, it is also efficient to load.
 
