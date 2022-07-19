@@ -64,12 +64,7 @@ The Query Performance Tool is reachable via the [Developer Console in Cloud Mana
 
 
 The general approach how to use the Query Performance Tool to optimize queries is described in this chart.
-    ! [Query Optimization Flow](assets/query-optimization-flow.png)
- 
-
-
-
-TODO: Video goes here
+    ![Query Optimization Flow](assets/query-optimization-flow.png)
 
 
 
@@ -113,7 +108,7 @@ To support the creation of efficient JCR queries and index definitions, the [JCR
 ## Queries with large result sets
 Although it is recommended to avoid queries with a large result set, there are valid cases where large result must be processed. Often the size of result is not known upfront, thus some precautions should be taken to make the processing reliable.
 
-* the query should not be executed within a request; instead the query should be executed as part of a Sling Job or an AEM workflow. These do not have any limitations in their total runtime, and are re-started in case the instance goes down during the processing of the query and its result.
+* the query should not be executed within a request; instead the query should be executed as part of a Sling Job or an AEM workflow. These do not have any limitations in their total runtime, and are re-started in case the instance goes down during the processing of the query and its results.
 * To overcome the query limit of 100'000 nodes read you should consider to use [Keyset Pagination](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) and split the query in multiple sub-queries.
   
 
@@ -127,6 +122,6 @@ Queries traversing the repository are not using an index and are logging message
 This log snippet contains relevant information:
 
 * the query itself: ```//* ```
-* the method executing this query: ```com.adobe.granite.queries.impl.explain.query.ExplainQueryServlet::getHeuristics```
+* the java cpde which executed this query: ```com.adobe.granite.queries.impl.explain.query.ExplainQueryServlet::getHeuristics```; this helps to identify the creator of this query.
 
 With this information it is possible to optimize this query using the methods described in [Optimizing Queries](#optimizing-queries).
