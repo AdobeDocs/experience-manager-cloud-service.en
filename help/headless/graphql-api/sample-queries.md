@@ -1504,6 +1504,10 @@ This query interrogates:
 }
 ```
 
+<!-- CQDOC-19418 -->
+
+<!--
+
 ### Sample List Query using offset and limit {#sample-list-offset-limit}
 
 This query interrogates:
@@ -1547,6 +1551,8 @@ query {
     }
 }
 ```
+
+-->
 
 ## The Sample Content Fragment Structure (used with GraphQL) {#content-fragment-structure-graphql}
 
