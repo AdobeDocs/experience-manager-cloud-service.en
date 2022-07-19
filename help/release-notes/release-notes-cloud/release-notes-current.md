@@ -84,6 +84,7 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 ### What is New {#what-is-new-foundation}
 
 * As mentioned in the May (2022.5.0) release notes, the "Add tree” option under the replication agent admin screen’s **Distribute** tab was removed. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) workflow.
+* Sling Content Distribution (SCD) now supports an explicit "invalidation" action in order to invalidate content without that content being published. See [this article](/help/implementing/dispatcher/caching.md#explicit-invalidation) for further details.
 
 ## Cloud Manager {#cloud-manager}
 
