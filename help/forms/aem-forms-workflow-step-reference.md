@@ -132,7 +132,7 @@ You can also use the component to control the behavior of the task. For example,
 >
 >The options to save the Assign Task step as draft and to retrieve the history of the Assign Task step are disabled when you configure an AEM workflow model for external data storage. Also, in Inbox, the option to save is disabled. 
 
-### Convert to PDF/A step {#convert-pdfa}
+## Convert to PDF/A step {#convert-pdfa}
 
 Convert to PDF/A option converts PDF document to PDF/A format. PDF/A (Portable Document Format Archivable) is a advanced version of the regular PDF format, which is used for the long-term archiving of documents. 
 
@@ -205,7 +205,7 @@ If you specify the path of a folder, for example, attachments, all the files dir
 
 **[!UICONTROL Locale]**: Specify the language of the Document of Record. Select **[!UICONTROL Literal]** to select the locale from a drop-down list or select **[!UICONTROL Variable]** to retrieve the locale from the value stored in a variable of string data type. You must define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
 
-### Invoke DDX step {#invokeddx}
+## Invoke DDX step {#invokeddx}
 
 Executes the DDX (Device Data Exchange) file on the specified map of input documents and returns the manipulated PDF documents.
 
