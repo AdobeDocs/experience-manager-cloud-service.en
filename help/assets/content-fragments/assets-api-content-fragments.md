@@ -246,31 +246,7 @@ Usage can differ depending on whether you are using an AEM author or publish env
 
 >[!NOTE]
 >
->For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html). 
-
-### Read/Delivery {#read-delivery}
-
-Usage is via:
-
-`GET /{cfParentPath}/{cfName}.json`
-
-### Create {#create}
-
-Usage is via:
-
-`POST /{cfParentPath}/{cfName}`
-
-### Update {#update}
-
-Usage is via
-
-`PUT /{cfParentPath}/{cfName}`
-
-### Delete {#delete}
-
-Usage is via:
-
-`DELETE /{cfParentPath}/{cfName}`
+>For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ## Limitations {#limitations}
 
