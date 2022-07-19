@@ -59,22 +59,15 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 ### What is New {#what-is-new-cif}
 
-* New product cockpit properties page for better and simplified overview
+* Template name now visible is Sites editor when authoring product catalog template
 
- ![product cockpit properties overview](/help/assets/CIF/product_cockpit_properties_overview.png)
-
-* Improved compatibility and robustness for 3rd party connectors on I/O Runtime
-
-* Improved support for GQL Client configuration overwrites (e.g. set custom caching behavior)
-
-* Multiple commerce endpoints are now supported out-of-the-box and can be configured via Cloud Manager. You can find details in the CIF blog [here](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
-
+* Various CIF Core Component improvements
 
 ### Bug fixes {#bug-fixes-cif}
 
-* Multi value product picker field shows 2nd and additional products as invalid
+* Add login token to client-side price fetching
 
-* Product Picker is occasionally hidden behind components
+* Wrong page component in datalayer
 
 ## Reference Demos Add-on {#cloud-services-demos}
 
