@@ -148,6 +148,11 @@ The convert to PDF/A step has following properties:
 
 **[!UICONTROL Output Documents]**: Specifies the location to save the output file. The output file can be saved at an location relative to payload, overwrites the payload, if the payload is a file, or in a variable of Document data type. 
 
+>[!NOTE]
+   >
+   >This feature is available in prerelease channel. See [Prerelease Channel Documentation](/help/release-notes/prerelease.md) for information to enable the feature for your environment.
+   >
+
 ## Send Email Step {#send-email-step}
 
 Use the email step to send an email, for example an email with a Document of Record, link of an Adaptive Form <!-- , link of an interactive communication-->, or with an attached PDF document. Send Email step supports [HTML email](https://en.wikipedia.org/wiki/HTML_email). HTML emails are responsive and adapt to the recipients' email client and screen size. You can use an HTML email template to define appearance, color-scheme, and behavior of the email.
@@ -229,6 +234,11 @@ Invoke DDX step has the following properties:
 **[!UICONTROL Output Documents]**: Specifies the location to save the output file. Various options available under this tab are:
 * **[!UICONTROL Save Output in Payload]**: Saves output documents under the payload folder, or overwrites the payload, in case, the payload is a file.
 * **[!UICONTROL Output Document’s Map]**: Specifies the location to save each document file explicitly, by adding one entry per document. Each entry represents the document and the location, where to save it. If there are multiple output documents, this option is used.   
+
+>[!NOTE]
+   >
+   >This feature is available in prerelease channel. See [Prerelease Channel Documentation](/help/release-notes/prerelease.md) for information to enable the feature for your environment.
+   >
 
 ## Invoke Form Data Model Service step {#invoke-form-data-model-service-step}
 
