@@ -130,6 +130,8 @@ You can create templates from Adobe® Photoshop® files, maintain layers, specif
 
 ### PDF tab {#pdf-tab}
 
+The maximum number of pages for a PDF to be considered for extraction is 5000 for new uploads. This limit will change to 100 pages (for all PDFs) on December 31, 2022. See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
+
 You can choose to rasterize the files, extract search words and links, set the resolution, and choose a color space.
 
 | PDF option | Description |

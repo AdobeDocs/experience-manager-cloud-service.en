@@ -11,10 +11,6 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to distinguish betwe
 
 You can configure the number of colors, within a range of one to forty, that are tagged to an image so that you can search for images based on those colors later. Experience Manager Assets applies the tags based on the color coverage in an image. You can also configure the display format for a color tag.
 
->[!NOTE]
->
->This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information to enable the feature for your environment.
-
 The following figure illustrates the sequence of tasks that you perform to configure and manage color tagging for images in Experience Manager Assets: 
 
 ![Color Tagging](assets/color-tagging-dfd.gif)
