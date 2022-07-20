@@ -525,6 +525,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Use Form Data Model](/help/forms/using-form-data-model.md)
   + [Integrate with Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
   + [Integrate with DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
+  + [Integrate with Scribble Signature](/help/forms/signing-forms-using-scribble.md)
   + [Integrate with Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
   + [Integrate with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
   + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
