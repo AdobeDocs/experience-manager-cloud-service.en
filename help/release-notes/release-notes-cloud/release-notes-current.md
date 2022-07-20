@@ -33,9 +33,7 @@ Have a look at the June 2022 Release Overview video for a summary of the feature
 
 ### New features in [!DNL Sites] {#sites-features}
 
-* A new [user interface](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) is now available for content admins and content authors to efficiently manage (take actions such as publish, unpublish, copy, move, etc.), search/filter, and create content fragments for Headless use-cases.
-
-    ![Content Fragment Console](/help/release-notes/assets/cf-ui.png)
+* The [Content Fragment Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) now supports keyboard shortcuts. 
 
 * The new [Table of Contents Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) works not only with the Core Components but with all components, automatically rendering ToCs on content pages. And because it is rendered server-side and fully cached by the dispatcher, it is also efficient to load.
 
@@ -59,22 +57,15 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 ### What is New {#what-is-new-cif}
 
-* New product cockpit properties page for better and simplified overview
+* Template name now visible is Sites editor when authoring product catalog template
 
- ![product cockpit properties overview](/help/assets/CIF/product_cockpit_properties_overview.png)
-
-* Improved compatibility and robustness for 3rd party connectors on I/O Runtime
-
-* Improved support for GQL Client configuration overwrites (e.g. set custom caching behavior)
-
-* Multiple commerce endpoints are now supported out-of-the-box and can be configured via Cloud Manager. You can find details in the CIF blog [here](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
-
+* Various CIF Core Component improvements
 
 ### Bug fixes {#bug-fixes-cif}
 
-* Multi value product picker field shows 2nd and additional products as invalid
+* Add login token to client-side price fetching
 
-* Product Picker is occasionally hidden behind components
+* Wrong page component in datalayer
 
 ## Reference Demos Add-on {#cloud-services-demos}
 
@@ -91,6 +82,11 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 ### What is New {#what-is-new-foundation}
 
 * As mentioned in the May (2022.5.0) release notes, the "Add tree” option under the replication agent admin screen’s **Distribute** tab was removed. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) workflow.
+* Sling Content Distribution (SCD) now supports an explicit "invalidation" action in order to invalidate content without that content being published. See [this article](/help/implementing/dispatcher/caching.md#explicit-invalidation) for further details.
+
+### New features available in [!DNL Experience Manager] prerelease channel {#prerelease-features-foundation}
+
+* AEM as a Cloud Service is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Refer to [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
 
 ## Cloud Manager {#cloud-manager}
 
