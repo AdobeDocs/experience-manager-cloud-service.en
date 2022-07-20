@@ -281,6 +281,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
       + [Structure Tree](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
       + [Preview - JSON Representation](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+      + [Content Fragments Console - Keyboard Shortcuts](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
     + Site Creation {#site-creation}
       + [Creating a New Site](/help/sites-cloud/administering/site-creation/create-site.md)
       + [Enable Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
