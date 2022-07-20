@@ -89,7 +89,7 @@ The permissions are broken down into the following categories.
 
 The **Replication Tab** displays the replication status of current node. You can replicate and replicate delete the current node.
 
-### Console Tab {#console-tab}
+### Console Tab {#console-tab}
 
 The **Console Tab** displays logs messages. You can configure the log level, clear the console, pin at the selected scroll position and enable/disable the displaying of messages.
 

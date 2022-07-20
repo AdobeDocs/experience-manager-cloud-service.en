@@ -12,6 +12,9 @@ exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 >
 >See the [Prerelease Channel documentation](/help/release-notes/prerelease.md#enable-prerelease) for information on how to enable the feature for your environment.
 
+>[!INFO]
+>Due to a recently found issue, Unified Shell integration with AEM as a Cloud Service has been temporarily disabled. It will be re-enabled once the issue is fixed. Thank you for your understanding.
+
 ## Overview {#overview}
 
 AEM as a Cloud Service is integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. The impact of this integration can be seen in the top-header of the application as shown below.
