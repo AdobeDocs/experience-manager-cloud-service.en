@@ -130,6 +130,6 @@ Queries traversing the repository are not using an index and are logging message
 This log snippet contains relevant information:
 
 * the query itself: ```//* ```
-* the java cpde which executed this query: ```com.adobe.granite.queries.impl.explain.query.ExplainQueryServlet::getHeuristics```; this helps to identify the creator of this query.
+* the java code which executed this query: ```com.adobe.granite.queries.impl.explain.query.ExplainQueryServlet::getHeuristics```; this helps to identify the creator of this query.
 
 With this information it is possible to optimize this query using the methods described in [Optimizing Queries](#optimizing-queries).
