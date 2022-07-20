@@ -2,6 +2,7 @@
 title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.7.0
 description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.7.0
 feature: Release Information
+exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
 ---
 # Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.7.0 {#release-notes}
 
@@ -38,4 +39,3 @@ The Release Date for Cloud Acceleration Manager is July 15, 2022.
 
 * Cloud Acceleration Manager now provides users to manually retrieve the migration token to be able to start an ingestion when automatic retrieval fails. Automatic retrieval can fail if customers have set up an IP allow-list that blocks CAM or if a non-admin user attempts to start an ingestion. Refer to [Troubleshooting](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) for more information.
 * Long tables on the Migration Complexity page are now collapsible for ease of use.
-
