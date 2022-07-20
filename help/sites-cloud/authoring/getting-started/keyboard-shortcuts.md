@@ -5,7 +5,7 @@ exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 ---
 # Keyboard Shortcuts for Consoles {#keyboard-shortcuts-for-consoles}
 
-The following shortcuts are available for the Sites, Assets, Users, Groups, Projects, and Experience Fragments consoles.
+The following shortcuts are available for the Sites, Assets, Users, Groups, Projects, and Experience Fragments consoles. There are also specific shortcuts for the [Content Fragments console](#keyboard-shortcuts-for-the-content-fragments-console).
 
 |Location|Shortcut|Description|
 |---|---|---|
@@ -75,3 +75,7 @@ You can deactivate keyboard shortcuts in two locations:
 ## Keyboard Shortcuts for the Page Editor {#keyboard-shortcuts-for-the-page-editor}
 
 Various keyboard shortcuts are available throughout AEM. Some apply to the use of consoles, others to [page editing](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+
+## Keyboard Shortcuts for the Content Fragments Console {#keyboard-shortcuts-for-the-content-fragments-console}
+
+Some keyboard shortcuts are applicable to the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
