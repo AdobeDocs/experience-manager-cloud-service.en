@@ -2,6 +2,7 @@
 title: How to assign a workflow to other user, send email, use Adobe Sign in a workflow? 
 description: Forms-centric workflows allow you to rapidly build Adaptive Forms-based workflows. You can use Adobe Sign to e-sign documents, create forms-based business processes, retrieve and send data to multiple data sources, and send email notifications
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
+google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 ---
 # Forms-centric AEM Workflows - Step Reference {#forms-centric-workflow-on-osgi-step-reference}
 
