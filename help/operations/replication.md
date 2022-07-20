@@ -166,6 +166,9 @@ In case you do not provide such a filter and only use the "publish" agent, the "
 
 The overall `ReplicationStatus` of a resource is only modified if the replication action includes at least one agent which is active by default. In the above example this is not the case, as the replication is just using the "preview" agent. Therefore, you need to use the new `getStatusForAgent()` method, which allows querying the status for a specific agent. This method also works for the "publish" agent. It returns a non-null value if there has been any replication action done using the provided agent.
 
+### Methods of Invalidating Content {#invalidating-content}
+
+You can directly invalidate content by using either Sling Content Invalidation (SCD) from author (the preferred method) or by using the Replication API to invoke the publish dispatcher flush replication agent. Refer to the [Caching](/help/implementing/dispatcher/caching.md) page for further details.
 
 **Replication API capacity limits**
 
@@ -173,6 +176,7 @@ It is recommended to replicate fewer than 100 paths at a time, with 500 being th
 If your application logic does not require atomic replication, this limit can be overcome by setting the `ReplicationOptions.setUseAtomicCalls` to false, which will accept any number of paths, but internally create buckets to stay below this limit.
 
 The size of the content transmitted per replication call must not exceed `10 MB`. This includes the nodes and properties, but not any binaries (workflow packages and content packages are considered binaries). 
+
 
 ## Troubleshooting {#troubleshooting}
 
