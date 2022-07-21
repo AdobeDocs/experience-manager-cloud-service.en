@@ -39,6 +39,18 @@ To test connectivity to the target AEM as a Cloud Service environment, issue the
 >[!NOTE]
 >If an `HTTP/2 200` is received, a connection to AEM as a Cloud Service was successful.
 
+### Enable SSL Logging {#enable-ssl-logging}
+
+Understanding SSL/TLS connection problems can sometimes be difficult. To toubleshoot connection issues during an extraction process, you can enable SSL logging via the System Console of the source AEM environment by following these steps:
+
+1. Navigate to the Adobe Experience Manager Web Console on your source instance, by going to **Tools - Operations - Web Console** or directly to the URL at *https://serveraddress:serverport/system/console/configMgr*
+1. Search for **Content Transfer Tool Extraction Service Configuration**
+1. Use the pencil icon button to edit its configuration values 
+1. Enable the **Enable ssl logging for extraction** setting, then press **Save**:
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
+
+
 ## Running the Content Transfer Tool {#running-tool}
 
 >[!CONTEXTUALHELP]
