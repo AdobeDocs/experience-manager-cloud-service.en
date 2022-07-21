@@ -40,7 +40,7 @@ This is a known issue due to Cloud Manager using a different version of Java to 
 
 Yes. All code quality check failures except for the security rating are non-critical metrics, so they can be bypassed as part of a deployment pipeline by expanding the items in the results UI.
 
-A user with [Deployment Manager, Project Manager, or Business Owner](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) role can override the issues, in which case the pipeline proceeds or they can accept the issues, in which case the pipeline stops with a failure.
+A user with [Deployment Manager, Project Manager, or Business Owner](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) role can override the issues, in which case the pipeline proceeds or they can accept the issues, in which case the pipeline stops with a failure.
 
 See the documents [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) and [Configuring Non-Production Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) for more details.
 

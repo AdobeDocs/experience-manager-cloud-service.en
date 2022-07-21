@@ -1,6 +1,7 @@
 ---
 title: Variations - Authoring Fragment Content
 description: Understand how variations allow you to author content for the fragment, then create variations of that content according to purpose. This provides added flexibility for both headless delivery and page authoring.
+exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
 ---
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 
