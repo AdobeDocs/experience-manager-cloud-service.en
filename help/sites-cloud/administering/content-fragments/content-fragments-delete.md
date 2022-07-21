@@ -1,6 +1,7 @@
 ---
 title: Content Fragments - Delete Considerations
 description: Review these important considerations before defining your Content Fragments deletion policies in AEM. Content Fragments are a powerful tool for delivering headless content, and the implications of deleting them must be carefully considered.
+exl-id: f6698dd8-3e2a-44ac-b00f-df578aa85ffe
 ---
 # Content Fragments - Delete Considerations {#content-fragments-delete-considerations}
 
