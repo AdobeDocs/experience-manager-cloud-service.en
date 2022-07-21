@@ -1,6 +1,7 @@
 ---
 title: Managing Content Fragments
 description: Learn how to use the Content Fragments console to manage your AEM Content Fragments; for page authoring, or as the basis of your headless content.
+exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 ---
 # Managing Content Fragments {#managing-content-fragments}
 
@@ -56,6 +57,21 @@ To create a content fragment:
    ![New Content Fragment dialog](assets/cfm-managing-new-cf-01.png)
 
 1. Select **Create**, or **Create and open** to persist your definition.
+
+## Statuses of Content Fragments {#statuses-content-fragments}
+
+During its existence a Content Fragment can have several statuses, as shown in the [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
+
+* **New**
+  A new Content Fragment has been created, but never edited, nor opened, in the Content Fragment editor.
+* **Draft**
+  Someone has either edited or opened the (new) Content Fragment in the Content Fragment Editor - but it has not yet been published.
+* **Published** 
+  The Content Fragment has been published.
+* **Modified**
+  The Content Fragment has been edited after it was published (but before publishing the modification). 
+* **Unpublished** 
+  The Content Fragment has been unpublished.
 
 ## Actions for a Content Fragment in the Content Fragments Console {#actions-content-fragment-console}
 
@@ -397,4 +413,3 @@ You can revert to a specific version of your fragment:
   Select the required version, then the **Revert to this Version** action.
 
 * While [comparing a version to the current version](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#comparing-fragment-versions) you can **Revert** to the selected version.
-
