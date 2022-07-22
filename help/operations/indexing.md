@@ -278,4 +278,4 @@ If it is no longer needed to have a customization of an out-of-the-box index, th
 
 Apache Jackrabbit Oak enables flexible index configurations to efficiently handle search queries. Indexes are especially important for larger repositories. Please ensure that all queries are backed by an appropriate index. Queries without a suitable index may read thousands of nodes, which is then logged as a warning.
 
-Please see [this document](query-and-inedexing-best-practices.md) for information on how queries and indexes can be optimized.
+Please see [this document](query-and-indexing-best-practices.md) for information on how queries and indexes can be optimized.
