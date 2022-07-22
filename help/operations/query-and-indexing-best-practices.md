@@ -6,7 +6,7 @@ topic-tags: best-practices
 
 # Query and Indexing Best Practices {#query-and-indexing-best-practices}
 
-In AEM as a Cloud Service, all operational aspects regarding indexing are automated. This allows developers to focus on creating efficient queries and and their corresponding index definitions.
+In AEM as a Cloud Service, all operational aspects regarding indexing are automated. This allows developers to focus on creating efficient queries and their corresponding index definitions.
 
 ## When to Use Queries {#when-to-use-queries}
 
@@ -16,7 +16,7 @@ Queries are a way to access content, but are not the only possibility. In many s
 
 When designing the taxonomy of a repository, several factors need to be taken into account. These include access controls, localization, component and page property inheritance, and more.
 
-While designing a taxonomy that addresses these concerns, it is also important to consider the "traversability" of the indexing design. In this context, the traversability is the ability of a taxonomy to allow content to be predictably accessed based on its path. This will make for a more efficient system that is easier to maintain than one that will require multiple queries to be executed.
+While designing a taxonomy that addresses these concerns, it is also important to consider the "traversability" of the indexing design. In this context, the traversability is the ability of a taxonomy to allow content to be predictably accessed based on its path. This makes for a more efficient system that is easier to maintain than one that requires multiple queries to be executed.
 
 Additionally, when designing a taxonomy, it is important to consider whether ordering is important. In cases where explicit ordering is not required and a large number of sibling nodes are expected, it is preferred to use an unordered node type such as `sling:Folder` or `oak:Unstructured`. In cases where ordering is required, `nt:unstructured` and `sling:OrderedFolder` would be more appropriate.
 
@@ -44,7 +44,7 @@ Additionally, when you are dealing with a small or homogenous result set, it can
 
 ### Prefetching Results {#prefetching-results}
 
-Sometimes the content or the requirements around the component will not allow the use of node traversal as a method of retrieving the required data. In such cases, the required queries need to be executed before the component is rendered so that optimal performance is ensured.
+Sometimes the content or the requirements around the component does not allow the use of node traversal as a method of retrieving the required data. In such cases, the required queries need to be executed before the component is rendered so that optimal performance is ensured.
 
 If the results that are required for the component can be calculated at the time that it is authored and there is no expectancy that the content will change, the query can be executed after a change has been done.
 
@@ -71,7 +71,7 @@ This chart illustrates the general flow to use the Query Performance Tool to opt
 
 Every query should use an index to deliver optimal performance. In the majority of cases, existing out-of-the-box indexes should be sufficient to handle queries.
 
-Sometimes custom properties need to be added to an existing index, so additional constraints can be queried using the index. See the document [Content Search and Indexing](/help/operations/indexing.md#changing-an-index) for more details. The [JCR Query Cheatsheet](#jcr-query-cheatsheet) section of this document describes the property definition on an index that support a specific query type.
+Sometimes custom properties need to be added to an existing index, so additional constraints can be queried using the index. See the document [Content Search and Indexing](/help/operations/indexing.md#changing-an-index) for more details. The [JCR Query Cheatsheet](#jcr-query-cheatsheet) section of this document describes how a property definition on an index has to look in order to support a specific query type.
 
 ### Use the Right Criteria {#use-the-right-criteria}
 
@@ -79,7 +79,7 @@ The primary constraint on any query should be a property match, as this is the m
 
 The query engine considers just a single index. That means that an existing index can and should be customized by adding more custom index properties to it.
 
-The [JCR Query cheatsheet](#jcr-query-cheatsheet) section of this document lists the available constraints and also outlines how an index definition needs to look like so it picked up. Use the [Query Performance Tool](#query-performance-tool) to test the query and to make sure that the right index is used and that the query engine does not need to evaluate constraints outside of the index. 
+The [JCR Query cheatsheet](#jcr-query-cheatsheet) section of this document lists the available constraints and also outlines how an index definition needs to look so it picked up. Use the [Query Performance Tool](#query-performance-tool) to test the query and to make sure that the right index is used and that the query engine does not need to evaluate constraints outside of the index. 
 
 ### Ordering {#ordering}
 
@@ -105,14 +105,14 @@ See the section [Queries with large results](#queries-with-large-result-sets) of
 
 To support the creation of efficient JCR queries and index definitions, the [JCR Query Cheat Sheet](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet) is available for download and use as a reference during development.
 
-It contains sample queries for QueryBuilder, XPath and SQL-2, covering multiple scenarios which behave differently in terms of query performance. It also provides recommendations for how to build or customize Oak indexes. The content of this Cheat Sheet applies to AEM as a Cloud Service as well as AEM 6.5.
+It contains sample queries for QueryBuilder, XPath, and SQL-2, covering multiple scenarios which behave differently in terms of query performance. It also provides recommendations for how to build or customize Oak indexes. The content of this Cheat Sheet applies to AEM as a Cloud Service as well as AEM 6.5.
 
 ## Queries with Large Result Sets {#queries-with-large-result-sets}
 
 Although it is recommended to avoid queries with large result sets, there are valid cases where large result sets must be processed. Often the size of result is not known up front, thus some precautions should be taken to make the processing reliable.
 
-* The query should not be executed within a request. Instead the query should be executed as part of a Sling Job or an AEM workflow. These do not have any limitations in their total runtime, and are re-started in case the instance goes down during the processing of the query and its results.
-* To overcome the query limit of 100,000 nodes, you should consider using [Keyset Pagination](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) and split the query in multiple sub-queries.
+* The query should not be executed within a request. Instead the query should be executed as part of a Sling Job or an AEM workflow. These do not have any limitations in their total runtime, and are restarted in case the instance goes down during the processing of the query and its results.
+* To overcome the query limit of 100,000 nodes, you should consider using [Keyset Pagination](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) and split the query in multiple subqueries.
 
 ## Repository Traversal {#repository-traversal}
 
@@ -125,6 +125,6 @@ Queries traversing the repository do not use an index and are logging with a mes
 With this log snippet you can determine:
 
 * The query itself: `//*`
-* The java code which executed this query: `com.adobe.granite.queries.impl.explain.query.ExplainQueryServlet::getHeuristics` to help identify the creator of the query.
+* The Java code which executed this query: `com.adobe.granite.queries.impl.explain.query.ExplainQueryServlet::getHeuristics` to help identify the creator of the query.
 
-With this information it is possible to optimize this query using the methods described in the [Optimizing Queries](#optimizing-queries) section of this document.
+With this information, it is possible to optimize this query using the methods described in the [Optimizing Queries](#optimizing-queries) section of this document.
