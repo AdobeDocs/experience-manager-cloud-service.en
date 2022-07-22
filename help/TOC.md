@@ -883,7 +883,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Backup and Restore](/help/operations/backup.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
-  + [Best practices for Querying and Indexing](/help/operations/best-practices-for-querying-and-indexing.md)
+  + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)
 + Compliance {#compliance}
   + [Compliance in AEM as a Cloud Service](/help/compliance/home.md)
   + Data Privacy and Protection Readiness {#data-privacy}
