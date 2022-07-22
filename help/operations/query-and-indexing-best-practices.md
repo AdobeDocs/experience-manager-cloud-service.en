@@ -2,8 +2,8 @@
 title: Query and Indexing Best Practices
 description: Learn how to optimize your indexes and queries based on Adobe's best practice guidelines.
 topic-tags: best-practices
+exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 ---
-
 # Query and Indexing Best Practices {#query-and-indexing-best-practices}
 
 In AEM as a Cloud Service, all operational aspects regarding indexing are automated. This allows developers to focus on creating efficient queries and their corresponding index definitions.
