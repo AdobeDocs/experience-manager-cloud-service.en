@@ -21,6 +21,10 @@ The Content Fragments console is dedicated to managing, searching for, and creat
 >* this **Content Fragments** console
 >* the **Assets** console - see [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
 
+>[!NOTE]
+>
+>A selection of [keyboard shortcuts are available for use in this console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+
 The Content Fragments console can be directly accessed from the top level of the Global Navigation:
 
 ![Global Navigation - Content Fragments console](assets/cfc-global-navigation.png)
