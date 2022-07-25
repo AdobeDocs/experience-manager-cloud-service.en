@@ -135,10 +135,10 @@ You can also use the component to control the behavior of the task. For example,
 
 ## Convert to PDF/A step {#convert-pdfa}
 
->[!Note]
->
->This feature is available in prerelease channel. See [Prerelease Channel Documentation](/help/release-notes/prerelease.md) for information to enable the feature for your environment.
->
+ >[!NOTE]
+ >
+ >This feature is available in prerelease channel. See [Prerelease Channel Documentation](/help/release-notes/prerelease.md) for information to enable the feature for your environment.
+ >
 
 PDF/A is an archival format for long-term preservation of the document’s content, all fonts are embedded and the file is uncompressed. Now, you can use the Convert to PDF/A step an AEM Workflow to convert your PDF documents to PDF/A format. 
 
@@ -214,10 +214,10 @@ If you specify the path of a folder, for example, attachments, all the files dir
 
 ## Invoke DDX step {#invokeddx}
 
->[!Note]
->
->This feature is available in prerelease channel. See [Prerelease Channel Documentation](/help/release-notes/prerelease.md) for information to enable the feature for your environment.
->
+ >[!NOTE]
+ >
+ >This feature is available in prerelease channel. See [Prerelease Channel Documentation](/help/release-notes/prerelease.md) for information to enable the feature for your environment.
+ >
 
 Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX documents are templates for the documents and describe the desired characteristics of source documents that should appear in resultant documents. A single DDX can be used with a range of source documents. You can use the Invoke DDX step an AEM Workflow to perform various operations, like Assembling Disassembling documents, Creating and modifying Acrobat and XFA Forms, and other described in DDX Reference documentation.
 
