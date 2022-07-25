@@ -24,10 +24,10 @@ You can use the **Scribble Signature** component and **Signature Step** componen
 * **C:** Click the **Geolocation** icon to add geolocation along with the signature.
 * **D:** Click the **Keyboard** icon to type your name on canvas. 
 
->[!Note]
->
->This feature is available in prerelease channel. See [Prerelease Channel Documentation](/help/release-notes/prerelease.md) for information to enable the feature for your environment.
->
+ >[!NOTE]
+ >
+ >This feature is available in prerelease channel. See [Prerelease Channel Documentation](/help/release-notes/prerelease.md) for information to enable the feature for your environment.
+ >
 
  Once you tap the Done ![aem_forms_save](assets/aem_forms_save.png) icon in Scribble signature window, you cannot edit the signature. In case, if you want to edit the signature, you have to disregard the current signature and re-sign using the above Paint Brush/Keyboard option.
 
