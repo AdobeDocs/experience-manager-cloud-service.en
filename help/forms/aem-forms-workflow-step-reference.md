@@ -135,12 +135,7 @@ You can also use the component to control the behavior of the task. For example,
 
 ## Convert to PDF/A step {#convert-pdfa}
 
- >[!NOTE]
- >
- >This feature is available in prerelease channel. See [Prerelease Channel Documentation](/help/release-notes/prerelease.md) for information to enable the feature for your environment.
- >
-
-PDF/A is an archival format for long-term preservation of the document’s content, all fonts are embedded and the file is uncompressed. Now, you can use the Convert to PDF/A step an AEM Workflow to convert your PDF documents to PDF/A format. 
+PDF/A is an archival format for long-term preservation of the document’s content, by embedding the fonts and uncompressing the file. As a result, a PDF/A document is typically larger than a standard PDF document. You can use the ***Convert to PDF/A*** step in an AEM Workflow to convert your PDF documents to PDF/A format. 
 
 The convert to PDF/A step has following properties:
 
@@ -214,12 +209,7 @@ If you specify the path of a folder, for example, attachments, all the files dir
 
 ## Invoke DDX step {#invokeddx}
 
- >[!NOTE]
- >
- >This feature is available in prerelease channel. See [Prerelease Channel Documentation](/help/release-notes/prerelease.md) for information to enable the feature for your environment.
- >
-
-Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX documents are templates for the documents and describe the desired characteristics of source documents that should appear in resultant documents. A single DDX can be used with a range of source documents. You can use the Invoke DDX step an AEM Workflow to perform various operations, like Assembling Disassembling documents, Creating and modifying Acrobat and XFA Forms, and other described in DDX Reference documentation.
+Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX defines set of operations, which can be applied on one or more input documents to generate one or more outputs.  A single DDX can be used with a range of source documents. You can use the ***Invoke DDX step*** in an AEM Workflow to perform various operations, like Assembling Disassembling documents, Creating, and modifying Acrobat and XFA Forms, and other described in DDX Reference documentation.                    
 
 Invoke DDX step has the following properties: 
 
