@@ -209,7 +209,7 @@ If you specify the path of a folder, for example, attachments, all the files dir
 
 ## Invoke DDX step {#invokeddx}
 
-Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX defines set of operations, which can be applied on one or more input documents to generate one or more outputs.  A single DDX can be used with a range of source documents. You can use the ***Invoke DDX step*** in an AEM Workflow to perform various operations, like Assembling Disassembling documents, Creating, and modifying Acrobat and XFA Forms, and other described in DDX Reference documentation.                    
+Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX defines a set of operations, which can be applied on one or more input documents to generate one or more output documents.  A single DDX can be used with a range of source documents. You can use the ***Invoke DDX step*** in an AEM Workflow to perform various operations, like Assembling Disassembling documents, Creating, and modifying Acrobat and XFA Forms, and other described in DDX Reference documentation.                    
 
 Invoke DDX step has the following properties: 
 
