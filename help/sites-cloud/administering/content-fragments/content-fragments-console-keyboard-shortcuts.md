@@ -21,7 +21,7 @@ Various keyboard shortcuts are available throughout AEM. Some apply when [editin
 |Location|Shortcut|Description|
 |---|---|---|
 |No Content Fragment selected|`n`|Open the create dialog|
-|Select one, or more, Content Fragments|`n`|Open the move dialog|
+|Select one, or more, Content Fragments|`m`|Open the move dialog|
 |Select one, or more, Content Fragments|`Backspace`|Open the delete dialog|
 |Select one, or more, Content Fragments|`r`|Open the rename dialog|
 |Select one, or more, Content Fragments|`Ctrl-c`|Open the copy dialog|
