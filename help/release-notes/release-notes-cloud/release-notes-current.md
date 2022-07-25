@@ -79,16 +79,6 @@ You can now configure Adobe Experience Manager Assets to [restrict the type of a
 
 * Wrong page component in datalayer
 
-## Reference Demos Add-on {#cloud-services-demos}
-
-### What is New {#what-is-new-demos}
-
-* New WKND Content & Commerce template that extends WKND with an E2E shopping experience featuring product catalog, shopping cart, checkout, and myAccount. This template uses CIF and its CIF Core Components, thus you also need to install the CIF add-on. You can find details in the CIF blog [here](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
-
- ![WKND shop](/help/assets/CIF/wknd_shop.png)
-
- ![WKND pdp](/help/assets/CIF/wknd_pdp.png)
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### What is New {#what-is-new-foundation}
