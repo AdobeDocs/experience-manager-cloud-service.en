@@ -388,6 +388,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [XMP metadata](/help/assets/xmp-metadata.md)
     + [MediaLibrary capabilities](/help/assets/medialibrary.md)
     + [Import and export asset metadata](/help/assets/metadata-import-export.md)
+    + [Configure asset upload restrictions](/help/assets/configure-asset-upload-restrictions.md)
   + Share and distribute assets {#brand-portal}
     + [Configure [!DNL Assets] with [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
     + [Publish assets to [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
