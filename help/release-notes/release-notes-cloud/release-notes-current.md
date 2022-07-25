@@ -50,11 +50,20 @@ You can now configure Adobe Experience Manager Assets to [restrict the type of a
 
 ### New features in [!DNL Forms] {#forms-features}
 
-* **[Integrate Adaptive Forms with Microsoft® Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)**: You can now configure an Adaptive Form to run a Microsoft® Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft® Power Automate to build business logics around captured data and automate customer workflows.
+* **Keyboard input support for Scribble signatures**: Adaptive Forms are increasingly being used on touch devices, and one common requirement is to support signatures. Signing documents on touch devices has become an accepted way of signing forms. Adaptive Forms has native support for Scribble Signatures and Adobe Sign for such use cases. Now, along with other already supported options, you can also use keyboard to Scribble signatures in an Adaptive Form. It also helps improve accessibility compliance.
 
-* **Wizard to create an Adaptive Form**: You can use business user friendly wizard to quickly author Adaptive Forms. The wizard provides a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form.
+![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
-    ![Wizard to create an Adaptive Form](/help/release-notes/assets/wizard.png)
+### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
+
+* **Launch Adaptive Form creation wizard from embed form component**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page.
+
+![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png)
+
+* **Invoke - An AEM Workflow step**: Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX documents are templates for the documents and describe the desired characteristics of source documents that should appear in resultant documents. A single DDX can be used with a range of source documents. You can use the Invoke step an AEM Workflow to perform various operations, like assembling disassembling documents, creating and modifying Acrobat and XFA Forms, and other operations described in [DDX Reference](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) documentation.
+
+* **Convert to PDF/A - An AEM Workflow step**: PDF/A is an archival format for long-term preservation of the document’s content, all fonts are embedded and the file is uncompressed. Now, you can use the Convert to PDF/A step an AEM Workflow to convert your documents or files in any format to PDF/A format.
+
 
 ## CIF Add-on {#cloud-services-cif}
 
