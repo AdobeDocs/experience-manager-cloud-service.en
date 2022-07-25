@@ -41,7 +41,10 @@ Have a look at the June 2022 Release Overview video for a summary of the feature
 
 ### New features in [!DNL Assets] {#assets-features}
 
-Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish between colors in an image and apply those as tags automatically on ingestion](../../assets/color-tag-images.md). These tags enable enhanced Search experience, based on image color composition. You can configure the number of colors, within a range of one to forty, that are tagged to an image so that you can search for images based on those colors later.
+
+### New features available in [!DNL Assets] prerelease channel {#prerelease-features-assets}
+
+You can now configure Adobe Experience Manager Assets to [restrict the type of assets that users can upload based on the MIME type](/help/assets/configure-asset-upload-restrictions.md). It helps prevent accidental uploads of undesired format and malicious files. 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
