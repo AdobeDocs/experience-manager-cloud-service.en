@@ -135,7 +135,7 @@ You can also use the component to control the behavior of the task. For example,
 
 ## Convert to PDF/A step {#convert-pdfa}
 
->[!Prerelease note]
+>[!Note]
 >
 >This feature is available in prerelease channel. See [Prerelease Channel Documentation](/help/release-notes/prerelease.md) for information to enable the feature for your environment.
 >
@@ -214,7 +214,7 @@ If you specify the path of a folder, for example, attachments, all the files dir
 
 ## Invoke DDX step {#invokeddx}
 
->[!Prerelease note]
+>[!Note]
 >
 >This feature is available in prerelease channel. See [Prerelease Channel Documentation](/help/release-notes/prerelease.md) for information to enable the feature for your environment.
 >
