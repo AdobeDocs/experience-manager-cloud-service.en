@@ -13,7 +13,7 @@ It has never been simpler to integrate Adobe Analytics with AEM Sites. With Expe
 
 This video explores how an AEM site is integrated with Experience Platform Launch and Analytics using Experience Cloud Setup Automation:
 
->[!VIDEO](https://video.tv.adobe.com/v/339605/?quality=12)
+>[!VIDEO](/help/sites-cloud/integrating/assets/ECSA-JulyReleaseDemo.mp4)
 
 ## Requirements
 
