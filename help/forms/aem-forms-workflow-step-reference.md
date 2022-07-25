@@ -148,7 +148,7 @@ The convert to PDF/A step has following properties:
 
 **[!UICONTROL Conversion Options]**: Using this property, settings for converting PDF documents to PDF/A documents are specified. Various options available under this tab are:
 * **[!UICONTROL Compliance]**: Specifies the standards to which the output PDF/A document must comply.
-* **[!UICONTROL Result Level]**: Specifies the log level to be used for PDF/A conversion logs.
+* **[!UICONTROL Result Level]**: Specifies the result level as PassFail, Summary or Detailed, for the conversion output.
 * **[!UICONTROL Color Space]**: Specifies the predefined color space that are used for output PDF/A files. 
 * **[!UICONTROL Optional Content]**: Allows specific graphic objects and/or annotations to be visible in output PDF/A document, only when a specified set of criteria is met.
 
