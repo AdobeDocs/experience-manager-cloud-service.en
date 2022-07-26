@@ -14,7 +14,7 @@ Learn how to enable certain Content Fragment functionality in the Configuration 
 Before using Content Fragments you need to use the **Configuration Browser** to enable:
 
 * **Content Fragment Models** - mandatory
-* **GraphQL Persistent Queries** - optional
+* **GraphQL Persisted Queries** - optional
 
 >[!CAUTION]
 >
