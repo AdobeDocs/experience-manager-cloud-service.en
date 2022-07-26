@@ -28,7 +28,7 @@ Persisted queries must always use the endpoint related to the [appropriate Sites
 >
 >See [Enable Content Fragment Functionality in Configuration Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
 >
->The **GraphQL Persistent Queries** need to be enabled, for the appropriate Sites configuration. 
+>The **GraphQL Persisted Queries** need to be enabled, for the appropriate Sites configuration. 
 
 For example, if there is a particular query called `my-query`, which uses a model `my-model` from the Sites configuration `my-conf`:
 
@@ -188,9 +188,9 @@ To execute a Persisted query, a client application makes a GET request using the
 GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 ```
 
-Where `PERSISTENT_PATH` is a shortened path to where the Persistent query is saved.
+Where `PERSISTENT_PATH` is a shortened path to where the Persisted query is saved.
 
-1. For example `wknd` is the configuration name and `plain-article-query` is the name of the Persistent query. To execute the query:
+1. For example `wknd` is the configuration name and `plain-article-query` is the name of the Persisted query. To execute the query:
 
    ```shell
    $ curl -X GET \
@@ -201,7 +201,7 @@ Where `PERSISTENT_PATH` is a shortened path to where the Persistent query is sav
 
     >[!NOTE]
     >
-    > Query variables and values must be properly [encoded](#encoding-query-url) when executing a Persistent query.
+    > Query variables and values must be properly [encoded](#encoding-query-url) when executing a Persisted query.
 
    For example:
 
@@ -306,8 +306,8 @@ The URL can be broken down into the following parts:
 
 | URL Part | Description |
 |----------| -------------|
-| `/graphql/execute.json` | Persistent query endpoint |
-| `/wknd/adventure-by-path` | Persistent query path |
+| `/graphql/execute.json` | Persisted query endpoint |
+| `/wknd/adventure-by-path` | Persisted query path |
 | `%3B`                | Encoding of `;` |
 | `adventurePath`      | Query variable |
 | `%3D`                | Encoding of `=` |
@@ -326,9 +326,9 @@ To use a persisted query in a client app, the AEM headless client SDK should be 
 
 Persisted queries should always be created on an AEM Author service and then published (replicated) to an AEM Publish service. Often, Persisted queries are created and tested on lower environments like local or Development environments. It is then necessary to promote Persisted queries to higher level environments, ultimately making them available on a production AEM Publish environment for client applications to consume.
 
-### Package Persistent queries
+### Package Persisted queries
 
-Persistent queries can be built into [AEM Packages](/help/implementing/developing/tools/package-manager.md). AEM Packages can then be downloaded and installed on different environments. AEM Packages can also be replicated from an AEM Author environment to AEM Publish environments.
+Persisted queries can be built into [AEM Packages](/help/implementing/developing/tools/package-manager.md). AEM Packages can then be downloaded and installed on different environments. AEM Packages can also be replicated from an AEM Author environment to AEM Publish environments.
 
 To create a Package:
 

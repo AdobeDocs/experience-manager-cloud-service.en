@@ -32,4 +32,4 @@ The request for Persisted queries are made against a different endpoint. As part
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-Persistent queries can be requested using `GET`, thereby caching the response at the Dispatcher and CDN level. More details about caching and cache invalidation can be found [here](/help/implementing/dispatcher/caching.md).
+Persisted queries can be requested using `GET`, thereby caching the response at the Dispatcher and CDN level. More details about caching and cache invalidation can be found [here](/help/implementing/dispatcher/caching.md).
