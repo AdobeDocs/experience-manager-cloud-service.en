@@ -55,9 +55,12 @@ To [use certain Content Fragment functionality](#creating-a-content-fragment-mod
 1. Use **Create** to open the dialog, where you:
 
    1. Specify a **Title**.
+   1. The **Name** will become the node name in the repository.
+      * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/implementing/developing/introduction/naming-conventions.md)
+      * You can adjust it if necessary.
    1. To enable their use select 
       * **Content Fragment Models** 
-      * **GraphQL Persistent Queries**
+      * **GraphQL Persisted Queries**
 
       ![Define configuration](assets/cfm-conf-01.png)
 
