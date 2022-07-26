@@ -41,7 +41,7 @@ Have a look at the June 2022 Release Overview video for a summary of the feature
 
 ### New features available in [!DNL Assets] prerelease channel {#prerelease-features-assets}
 
-You can now configure Adobe Experience Manager Assets to [restrict the type of assets that users can upload based on the MIME type](/help/assets/configure-asset-upload-restrictions.md). It helps prevent accidental uploads of undesired format and malicious files.
+You can now configure Adobe Experience Manager Assets to [restrict the type of assets that users can upload based on the MIME type](/help/assets/configure-asset-upload-restrictions.md).
 
 ![Asset upload restrictions](/help/assets/assets/asset-upload-restrictions.png)
 
