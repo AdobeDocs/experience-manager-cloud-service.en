@@ -37,7 +37,7 @@ You can create multiple configurations if required. Configurations can also be n
 
 >[!NOTE]
 >
->Configuration options in addition to **Content Fragment Models** and **GraphQL Persistent Queries** may be necessary depending on your implementation requirements.
+>Configuration options in addition to **Content Fragment Models** and **GraphQL Persisted Queries** may be necessary depending on your implementation requirements.
 
 ## Next Steps {#next-steps}
 
