@@ -4,7 +4,7 @@ description: Configure Adobe Experience Manager Assets to restrict the type of a
 ---
 # Configure asset upload restrictions {#configure-asset-upload-restrictions}
 
-You can configure Adobe Experience Manager Assets to restrict the type of assets that users can upload based on the MIME type. It helps prevent accidental uploads of undesired format and malicious files. 
+You can configure Adobe Experience Manager Assets to restrict the type of assets that users can upload based on the MIME type. 
 
 >[!IMPORTANT]
 >
