@@ -13,7 +13,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 
 ## How to Prepare for a Release {#how-to-prepare}
 
-With the continuous release model in [!DNL Adobe Experience Manager] as a Cloud Service, the application is auto updated on an ongoing basis. There are two types of updates, feature releases and critical updates:
+With the continuous release model in [!DNL Adobe Experience Manager] as a Cloud Service, the application is auto updated on an ongoing basis. There are two types of updates, feature releases and maintenance releases:
 
 * Feature releases are done with a predictable monthly frequency and are focused on new capabilities and product innovations.
 * Maintenance releases are done frequently and are focused on security updates, bug fixes, and performance enhancements. This ensures that [!DNL Adobe Experience Manager] as a Cloud Service is always up-to-date with any critical fixes.
