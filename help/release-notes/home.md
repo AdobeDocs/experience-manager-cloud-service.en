@@ -16,7 +16,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 With the continuous release model in [!DNL Adobe Experience Manager] as a Cloud Service, the application is auto updated on an ongoing basis. There are two types of updates, feature releases and critical updates:
 
 * Feature releases are done with a predictable monthly frequency and are focused on new capabilities and product innovations.
-* Critical updates are done frequently and are focused on security updates, bug fixes, and performance enhancements. This ensures that [!DNL Adobe Experience Manager] as a Cloud Service is always up-to-date with any critical fixes.
+* Maintenance releases are done frequently and are focused on security updates, bug fixes, and performance enhancements. This ensures that [!DNL Adobe Experience Manager] as a Cloud Service is always up-to-date with any critical fixes.
 
 In addition to the speed of innovation, [!DNL Adobe Experience Manager] as a Cloud Service also provides the flexibility to preview upcoming features a full month in advance before the features are released into production. This allows you to assess the impact of an upcoming release on their organization by test driving the features in your own custom environment and train/prepare the internal users well in advance. 
 
