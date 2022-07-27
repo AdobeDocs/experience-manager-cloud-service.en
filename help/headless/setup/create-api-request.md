@@ -7,12 +7,6 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 
 Learn how to use the GraphQL API for headless delivery of Content Fragment content and AEM's Assets REST API to manage Content Fragments.
 
->[!NOTE]
->
->Some of the functionality of this feature is available in the prerelease channel. In particular, functionality related to Persisted Queries.
-> 
->See the [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable the feature for your environment.
-
 ## What are GraphQL and Assets REST APIs? {#what-are-the-apis}
 
 [Now that you have created some content fragments,](create-content-fragment.md) you can use AEM's APIs to deliver them headlessly.
@@ -23,7 +17,7 @@ Learn how to use the GraphQL API for headless delivery of Content Fragment conte
 
 The remainder of this guide will focus on GraphQL access and Content Fragment delivery.
 
-## Enable GraphQL Endpoint
+## Enable GraphQL Endpoint {#enable-graphql-endpoint}
 
 Before the GraphQL APIs can be used, a GraphQL endpoint must be created.
 
@@ -45,7 +39,7 @@ More details about enabling [GraphQL endpoints can be found here](/help/headless
 
 Information architects will need to design queries for their channel endpoints in order to deliver content. These queries will generally only need to be considered once per endpoint per model. For the purposes of this getting started guide we will only need to create one.
 
-GraphiQL is an IDE that can be installed on an AEM environment. Follow the steps on [Using the GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) to install on your AEM environment. 
+GraphiQL is an IDE, included in your AEM environment; it is accessible/visible after you [configure your endpoints](#enable-graphql-endpoint). 
 
 1. Log into AEM as a Cloud Service and access the GraphiQL interface:
 
@@ -96,6 +90,6 @@ GraphQL can avoid iterative API requests as well as over-delivery, and instead a
 
 That's it! You now have a basic understanding of headless content management in AEM. Of course there are many more resources where you can dive deeper for a comprehensive understanding of the features available.
 
-* **[Content Fragments](/help/assets/content-fragments/content-fragments.md)** - For details about creating and managing Content Fragments
+* **[Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)** - For details about creating and managing Content Fragments
 * **[Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)** - For details on accessing AEM content directly over the HTTP API, via CRUD operations (Create, Read, Update, Delete)
 * **[GraphQL API](/help/headless/graphql-api/content-fragments.md)** - For details on how to deliver Content Fragments headlessly

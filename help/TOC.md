@@ -18,15 +18,18 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Terminology - New for the Cloud](/help/overview/terminology.md)
   + [An Introduction to the Architecture of AEM as a Cloud Service](/help/overview/architecture.md)
   + [SEO and URL Management](/help/overview/seo-and-url-management.md)
+  + [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
   + [Assessing KPIs](/help/overview/assessing-kpis.md)
   + [Aligning KPIs](/help/overview/aligning-kpis.md)
   + [Choosing the Right Team](/help/overview/choose-right-team.md)
   + [Documentation Journeys](/help/journey-documentation/documentation-journeys.md)
 + Release Notes {#release-notes}
   + [Release Information](/help/release-notes/home.md)
-  + Release Notes {#release-notes}
+  + General AEMaaCS Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
+      + [Release Notes for 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
       + [Release Notes for 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
       + [Release Notes for 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
     + 2021 {#2021}
@@ -53,6 +56,54 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Release Notes for 2020.4.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
       + [Release Notes for 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
       + [Release Notes for 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
+  + Release Notes for Cloud Manager {#cloud-manager}
+    + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+    + 2022 {#2022}
+      + [Release Notes for 2022.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
+      + [Release Notes for 2022.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
+      + [Release Notes for 2022.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
+      + [Release Notes for 2022.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
+      + [Release Notes for 2022.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
+      + [Release Notes for 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
+    + 2021 {#2021}
+      + [Release Notes for 202.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-12-0.md)
+      + [Release Notes for 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
+      + [Release Notes for 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
+      + [Release Notes for 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
+      + [Release Notes for 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
+      + [Release Notes for 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
+      + [Release Notes for 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
+      + [Release Notes for 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
+      + [Release Notes for 2021.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
+      + [Release Notes for 2021.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
+      + [Release Notes for 2021.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
+      + [Release Notes for 2021.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
+    + 2020 {#2020}
+      + [Release Notes for 2020.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
+      + [Release Notes for 2020.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
+      + [Release Notes for 2020.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+      + [Release Notes for 2020.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
+      + [Release Notes for 2020.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
+      + [Release Notes for 2020.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
+      + [Release Notes for 2020.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
+      + [Release Notes for 2020.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
+      + [Release Notes for 2020.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
+      + [Release Notes for 2020.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
+      + [Release Notes for 2020.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+  + Release Notes for Migration Tools {#migration-tools}
+    + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+    + 2022 {#2022}
+      + [Release Notes for 2022.5.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
+      + [Release Notes for 2022.4.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
+      + [Release Notes for 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
+      + [Release Notes for 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
+      + [Release Notes for 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
+    + 2021 {#2021}
+      + [Release Notes for 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
+      + [Release Notes for 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
+      + [Release Notes for 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
+  + Release Notes for Workfront for Experience Manager enhanced connector{#workfront}
+    + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
   + [Known issues](/help/release-notes/known-issues.md)
@@ -67,24 +118,19 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Same Site Cookie Support for AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
 + Onboarding {#onboarding}
-  + [Onboarding to AEM as a Cloud Service](/help/onboarding/home.md)
-  + Learn Onboarding Concepts {#onboarding-concepts}
-    + [System Administrator](/help/onboarding/learn-concepts/system-administrator.md)
-    + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
-    + [Adobe Identity Management System](/help/onboarding/learn-concepts/ims.md)
-    + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
-    + [Introduction to Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
-    + [AEM as a Cloud Service Team & Product Profiles](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
-    + [Adobe Support](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+  + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
   + Onboarding Journey {#journey}
-    + [Onboarding Journey](/help/journey-onboarding/home.md)
-    + [Overview to Onboarding Journey](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)
-    + [Getting Started with Onboarding Process](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md)
-    + [Assign Team Members to Cloud Manager Product Profiles](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md)
-    + [Setup Cloud Resources via Cloud Manager](/help/journey-onboarding/sysadmin/setup-cloud-resources-via-cloud-manager.md)
-    + [Assign Team Members to AEM as a Cloud Service Product Profiles](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
-    + [Learning Path for Developers and Deployment Managers](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
-    + [Learning Path for AEM Users](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+    + [Onboarding Journey Overview](/help/journey-onboarding/overview.md)
+    + [Onboarding Preparation](/help/journey-onboarding/preparation.md)
+    + [AEM as a Cloud Service Terminology](/help/journey-onboarding/terminology.md)
+    + [The Admin Console](/help/journey-onboarding/admin-console.md)
+    + [Assigning Cloud Manager Product Profiles](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+    + [Access Cloud Manager](/help/journey-onboarding/cloud-manager.md)
+    + [Create a Program](/help/journey-onboarding/create-program.md)
+    + [Create Environments](/help/journey-onboarding/create-environments.md)
+    + [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md)
+    + [Developer and Deployment Manager Tasks](/help/journey-onboarding/developers.md)
+    + [AEM User Tasks](/help/journey-onboarding/aem-users.md)
   + AEM Reference Demos Add-On Journey {#demo-add-on}
     + [Overview](/help/journey-sites/demos-add-on/overview.md)
     + [Installation](/help/journey-sites/demos-add-on/installation.md)
@@ -92,6 +138,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Create Demo Site](/help/journey-sites/demos-add-on/create-site.md)
     + [Enable Screens](/help/journey-sites/demos-add-on/screens.md)
     + [Manage Your Demo Site](/help/journey-sites/demos-add-on/manage.md)
+  + Other Onboarding Concepts {#concepts}
+    + [Introduction to Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
+    + [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md)
 + AEM as a Cloud Service Migration Journey {#migration-journey}
   + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/getting-started.md)
   + [Readiness Phase](/help/journey-migration/readiness.md)
@@ -99,15 +148,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Go Live](/help/journey-migration/go-live.md)
   + [Post Go Live](/help/journey-migration/post-go-live.md)
   + [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/journey-migration/getting-started-partners.md)
-  + Release Notes for Migration Tools {#release-notes-migration-tools}
-    + [Current Release Notes (2022.4.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-    + [Release Notes for 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
-    + [Release Notes for 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
-    + [Release Notes for 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
-    + 2021 {#2021}
-      + [Release Notes for 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
-      + [Release Notes for 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
-      + [Release Notes for 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
   + Cloud Acceleration Manager {#cloud-acceleration-manager}
     + Introduction to Cloud Acceleration Manager {#introduction-cam}
       + [Overview](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
@@ -138,6 +178,19 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Overview](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
         + [Important Considerations](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
         + [Using User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
+      + Legacy Content Transfer Tool {#legacy}
+        + [Overview](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
+        + [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
+        + [Guidelines and Best Practices for Using Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
+        + [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
+        + [Validating Content Transfers](/help/journey-migration/content-transfer-tool/ctt-legacy/validating-content-transfers-legacy.md)
+        + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/ctt-legacy/handling-large-content-repositories-legacy.md)
+        + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/ctt-legacy/extracting-content-legacy.md)
+        + [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/ctt-legacy/ingesting-content-legacy.md)
+        + [Viewing Logs for a Migration Set](/help/journey-migration/content-transfer-tool/ctt-legacy/viewing-logs-legacy.md)
+        + [Deleting a Migration Set](/help/journey-migration/content-transfer-tool/ctt-legacy/deleting-migrationset-legacy.md)
+        + [Running the Content Transfer Tool on a Publish Instance](/help/journey-migration/content-transfer-tool/ctt-legacy/running-content-transfer-tool-publish-instance-legacy.md)
+        + [Troubleshooting Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/troubleshooting-content-transfer-tool-legacy.md)
   + Code Refactoring Tools {#refactoring-tools}
     + [Unified Experience](/help/journey-migration/unified-experience.md)
     + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
@@ -214,6 +267,20 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
   + Administering {#administering}
+    + Content Fragments {#content-fragments}
+      + [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+      + [Headless Delivery with Content Fragments and GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
+      + [Enable Content Fragment Functionality for your Instance](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
+      + [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+      + [Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
+      + [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+      + [Variations - Authoring Fragment Content](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+      + [Content Fragment Associated Content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
+      + [Metadata - Fragment Properties](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+      + [Content Fragments - Delete Considerations](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
+      + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
+      + [Structure Tree](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
+      + [Preview - JSON Representation](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
     + Site Creation {#site-creation}
       + [Creating a New Site](/help/sites-cloud/administering/site-creation/create-site.md)
       + [Enable Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -302,6 +369,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Digital Rights Management for assets](/help/assets/drm.md)
     + [Watermark assets](/help/assets/watermark-assets.md)
     + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
+    + [Color tags for images](/help/assets/color-tag-images.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
@@ -336,9 +404,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
     + [Preview - JSON Representation](/help/assets/content-fragments/content-fragments-json-preview.md)
   + Dynamic Media {#dynamicmedia}
-    + Dynamic Media Journey {#dm-journey}
-      + [The Basics, Part I](/help/assets/dynamic-media/dm-journey-part1.md)
-      + [The Basic, Part II](/help/assets/dynamic-media/dm-journey-part2.md)
+    + Dynamic Media Journey: The Basics {#dm-journey}
+      + [Part I: What is Dynamic Media - Use cases - How an asset flows through the system](/help/assets/dynamic-media/dm-journey-part1.md)
+      + [Part II: Anatomy of a Dynamic Media URL - Fundamentals of image presets - About Image sets, Spin sets, and Mixed Media sets](/help/assets/dynamic-media/dm-journey-part2.md)
     + [Dynamic Media newsletter archive by Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
     + [Set up Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
     + [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
@@ -360,9 +428,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Invalidate the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
     + [Invalidate the CDN cache by way of Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
     + [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
+    + [Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md)
     + [Deliver Dynamic Media assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
     + [Activate hotlink protection in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
     + [3D Support](/help/assets/dynamic-media/assets-3d.md)
+    + [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md)
     + [Image Sets](/help/assets/dynamic-media/image-sets.md)
     + [Panoramic Images](/help/assets/dynamic-media/panoramic-images.md)
     + [Mixed Media Sets](/help/assets/dynamic-media/mixed-media-sets.md)
@@ -387,16 +457,17 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Flash Viewers End-of-Life](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
   + Integration with Adobe Workfront {#integrations}
-    + [Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Install [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
     + [Remove external dependencies for existing installations](/help/assets/remove-external-dependencies.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
     + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+    + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
 + Forms {#forms}
   + [Introduction](/help/forms/home.md)
   + [Key features](/help/forms/key-features.md)
   + [Notable changes](/help/forms/notable-changes.md)
+  + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
   + Setup and configure the service {#setup-environment}
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
@@ -423,6 +494,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
       + [Use CAPTCHA in an Adaptive Form](/help/forms/captcha-adaptive-forms.md)
       + [Use Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+      +  [Apply Scribble Signature](/help/forms/signing-forms-using-scribble.md)
     + Configure layout and apply style to an Adaptive Form{#configure-layout-of-an-adaptive-form}
       + [Set layout of an Adaptive Form](/help/forms/layout-capabilities-adaptive-forms.md)
       + [Use Layout mode to resize components](/help/forms/resize-using-layout-mode.md)
@@ -437,6 +509,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Configure redirect page](/help/forms/configuring-redirect-page.md)
       + [Configure asynchronous submission for an Adaptive Form](/help/forms/asynchronous-submissions-adaptive-forms.md)
       + [Create a custom Submit Action](/help/forms/custom-submit-action-form.md)
+    + [Prefill Adaptive Form fields](/help/forms/prepopulate-adaptive-form-fields.md)
     + [Generate Document of Record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
     + Add or improve metadata {#manage-metadata}
       + [Add, remove, or edit metadata of an Adaptive Form](/help/forms/manage-form-metadata.md)
@@ -501,7 +574,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Installing Screens Player](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
     + [Registering the Player](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
     + [Assigning Player to a Display](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
-  + Using Code Product Features {#core-product-features}
+  + Using Core Product Features {#core-product-features}
     + [Thumbnail Support for Videos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
   + Developing in Screens as a Cloud Service {#developing-screens-cloud}
     + [REST APIs](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
@@ -544,6 +617,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
 + Headless {#headless}
+  + [What is a Headless CMS?](/help/headless/what-is-headless.md)
   + [Introduction to AEM Headless](/help/headless/introduction.md)
   + Setup {#setup}
     + [Introduction](/help/headless/setup/introduction.md)
@@ -553,17 +627,18 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Content Fragment](/help/headless/setup/create-content-fragment.md)
     + [GraphQL Endpoint](/help/headless/setup/create-api-request.md)
   + Content Fragments {#content-fragments}
-    + [Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
-    + [Content Fragment Models](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
-    + [Managing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
+    + [Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
+    + [Content Fragments Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
+    + [Content Fragment Models](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
+    + [Managing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
     + Authoring{#authoring}
-      + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
-      + [Text editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
-      + [Associated Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
-      + [Variations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
-    + [Metadata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
-    + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-    + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+      + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
+      + [Text editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
+      + [Associated Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
+      + [Variations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
+    + [Metadata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
+    + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
+    + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
   + GraphQL API {#graphql-api}
     + [GraphQL API for Content Fragments](/help/headless/graphql-api/content-fragments.md)
     + [Manage GraphQL endpoints](/help/headless/graphql-api/graphql-endpoint.md)
@@ -613,37 +688,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + Implementing {#implementing}
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
   + Using Cloud Manager {#using-cloud-manager}
-    + Release Notes for Cloud Manager {#release-notes-cloud-manager}
-      + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-      + 2022 {#2022}
-        + [Release Notes for 2022.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
-        + [Release Notes for 2022.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
-        + [Release Notes for 2022.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
-        + [Release Notes for 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
-      + 2021 {#2021}
-        + [Release Notes for 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
-        + [Release Notes for 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
-        + [Release Notes for 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
-        + [Release Notes for 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
-        + [Release Notes for 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
-        + [Release Notes for 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
-        + [Release Notes for 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
-        + [Release Notes for 2021.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
-        + [Release Notes for 2021.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
-        + [Release Notes for 2021.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
-        + [Release Notes for 2021.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
-      + 2020 {#2020}
-        + [Release Notes for 2020.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
-        + [Release Notes for 2020.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
-        + [Release Notes for 2020.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
-        + [Release Notes for 2020.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
-        + [Release Notes for 2020.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
-        + [Release Notes for 2020.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
-        + [Release Notes for 2020.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
-        + [Release Notes for 2020.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
-        + [Release Notes for 2020.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
-        + [Release Notes for 2020.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
-        + [Release Notes for 2020.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
     + Programs {#programs}
       + [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
       + [Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
@@ -699,7 +743,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Adding an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [Applying and Un-Applying IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
       + [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
-    + [Cloud Manager FAQs](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
+    + [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md)
+    + [Cloud Manager FAQs](/help/implementing/cloud-manager/faqs.md)
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
     + [AEM Project Repository Structure Package](/help/implementing/developing/introduction/repository-structure-package.md)
@@ -838,6 +883,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Backup and Restore](/help/operations/backup.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
+  + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)
 + Compliance {#compliance}
   + [Compliance in AEM as a Cloud Service](/help/compliance/home.md)
   + Data Privacy and Protection Readiness {#data-privacy}

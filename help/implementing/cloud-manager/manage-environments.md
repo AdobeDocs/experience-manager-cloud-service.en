@@ -46,7 +46,7 @@ The capabilities of individual environments depend upon the solutions enabled in
 1. In the **Add environment** dialog that appears:
    
    * Select an **Environment type**.
-     * The number of available/used environments is displayed in parenthesis behind the Development environment type.
+     * The number of available/used environments is displayed in parentheses behind the Development environment type.
    * Provide an **Environment name**.
    * Provide an **Environment description**.
    * Select a **Cloud Region**.

@@ -10,16 +10,12 @@ An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-o
 
 >[!NOTE]
 >
->Some of the functionality of this feature is available in the prerelease channel. In particular, functionality related to Persisted Queries.
-> 
->See the [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable the feature for your environment.
-
->[!NOTE]
+>GraphiQL is included in all environments of AEM (but will only be accessible/visible when you configure your endpoints).
 >
->GraphiQL is included in AEM, but by default it is only enabled on the `dev-authors` environments.
+>In previous releases, a package was needed to install the GraphiQL IDE. If you have this installed, it can now be removed.
 
 >[!NOTE]
->You must have [configured your endpoints](/help/headless/graphql-api/graphql-endpoint.md) in the [configuration browser](/help/assets/content-fragments/content-fragments-configuration-browser.md) before using the GraphiQL IDE.
+>You must have [configured your endpoints](/help/headless/graphql-api/graphql-endpoint.md) in the [configuration browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) before using the GraphiQL IDE.
 
 
 The **GraphiQL** tool allows you to test and debug your GraphQL queries by enabling you to:
@@ -29,7 +25,7 @@ The **GraphiQL** tool allows you to test and debug your GraphQL queries by enabl
 * run your queries to immediately see the the results
 * manage **Query Variables** 
 * save, and manage **Persisted Queries**
-* publish, or unpublish, **Persisted Queries** (to/from `dev-publish`)
+* publish, or unpublish, **Persisted Queries** (for example, to/from `dev-publish`)
 * see the **History** of your previous queries
 * use the **Documentation Explorer** to access the documentation; helping you to learn and understand what methods are available.
 
@@ -40,7 +36,7 @@ You can access the query editor from either:
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
 
-You can use GraphiQL on your development author system so that they can be requested by your client application using GET requests, and publishing queries. For production usage, you must then [move your queries to your production environment](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Initially to production author for validating newly authored content with the queries, and finally production publish for live consumption.
+You can use GraphiQL on your system so that queries can be requested by your client application using GET requests, and for publishing queries. For production usage, you can then [move your queries to your production environment](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Initially to production author for validating newly authored content with the queries, and finally production publish for live consumption.
 
 ## Selecting your endpoint {#selecting-endpoint}
 
@@ -94,39 +90,40 @@ For example:
 
 ![GraphQL Variables](assets/cfm-graphqlapi-03.png "GraphQL Variables")
 
-## Publishing persisted queries (dev-publish) {#publishing-persisted-queries}
+## Managing cache for your persisted queries {#managing-cache}
 
-Once you have selected your persisted query from the list (left panel) you can use the **Publish** and **Unpublish** actions. This will activate them to your development publish environment (`dev-publish`) environment for easy access by your applications when testing.
+[Persisted queries](/help/headless/graphql-api/persisted-queries.md) are recommended as they can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application. By default AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL). 
+
+Using GraphQL you can configure the HTTP Cache Headers  to control these parameters for your individual persisted query.
+
+1. The **Headers** option is accessible via the three vertical dots to the right of the persisted query name (far left panel):
+
+   ![Persisted Query HTTP Cache Headers](assets/cfm-graphqlapi-headers-01.png "Persisted Query HTTP Cache Headers")
+
+1. Selecting this will open the **Cache Configuration** dialog:
+
+   ![Persisted Query HTTP Cache Header Settings](assets/cfm-graphqlapi-headers-02.png "Persisted Query HTTP Cache Header Settings")
+
+1. Select the appropriate parameter, then adjust the value as required:
+
+   * **cache-control** - **max-age**
+     Caches can store this content for specified number of seconds. Typically this is the browser TTL (Time To Live).
+   * **surrogate-control** - **s-maxage**
+     Same as max-age but applies specifically to proxy caches.
+   * **surrogate-control** - **stale-while-revalidate**
+     Caches may continue to serve a cached response after it becomes stale, for up to the specified number of seconds.
+   * **surrogate-control** - **stale-if-error**
+     Caches may continue to serve a cached response in case of or origin error, for up to the specified number of seconds.
+
+1. Select **Save** to persist the changes.
+
+## Publishing persisted queries {#publishing-persisted-queries}
+
+Once you have selected your persisted query from the list (left panel) you can use the **Publish** and **Unpublish** actions. This will activate them to your publish environment (for example, `dev-publish`) for easy access by your applications when testing.
 
 >[!NOTE]
 >
 >The definition of the persisted query's cache `Time To Live` {"cache-control":"parameter":value} has a default value of 2 hours (7200 seconds).
-
-## Caching your persisted queries {#caching-persisted-queries}
-
-AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL). 
-
-This value is set to:
-
-* 7200 seconds is the default TTL for the Dispatcher and CDN; also known as *shared caches*
-  * default: s-maxage=7200
-* 60 is the default TTL for the client (for example, a browser)
-  * default: maxage=60
-
-AEM GraphQL queries that were persisted with the GraphiQL UI will use the default TTL upon execution. If you want to change the TTL for your GraphLQ query, then the query must instead be persisted using the API method. This involves posting the query to AEM using CURL in your command line interface. 
-
-For an example:
-
-```xml
-curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-    -H "Content-Type: application/json" \
-    "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
-    -d \
-'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
-```
-
-The `cache-control` can be set at the creation time (PUT) or later on (for example, via a POST request for instance). The cache-control is optional when creating the persisted query, as AEM can provide the default value. See [How to persist a GraphQL query](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), for an example of persisting a query using curl.
 
 ## Copy URL to directly access the query {#copy-url}
 

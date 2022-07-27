@@ -7,12 +7,6 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 
 In this part of the [AEM Headless Developer Journey,](overview.md) you can learn how to use GraphQL queries to access the content of your Content Fragments and feed it to your app (headless delivery).
 
->[!NOTE]
->
->Some of the functionality of this feature is available in the prerelease channel. In particular, functionality related to Persisted Queries.
-> 
->See the [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) for information on how to enable the feature for your environment. 
-
 ## The Story So Far {#story-so-far}
 
 In the previous document of the AEM headless journey, [How to Model Your Content](model-your-content.md) you learned the basics of content modeling in AEM, so you should now understand how to model your content structure, then realize that structure using AEM Content Fragment Models and Content Fragments:
@@ -244,11 +238,8 @@ Before starting with queries on your content you need to:
 * Enable your endpoint
   * Use Tools -> General -> GraphQL
   * [Enabling your GraphQL Endpoint](/help/headless/graphql-api/graphql-endpoint.md)
+    * This will also enable the GraphiQL IDE.
   
-* Install GraphiQL (if required)
-  * Installed as a dedicated package
-  * [Installing the AEM GraphiQL interface](/help/headless/graphql-api/graphiql-ide.md)
-
 ### Sample Structure {#sample-structure}
 
 To actually use the AEM GraphQL API in a query, we can use the two very basic Content Fragment Model structures:
@@ -372,10 +363,10 @@ Now that you have learned how to access and query your headless content using th
   * [Sample Query - A Single Specific City Fragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
   * [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
   * [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
-* [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
-* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
-  * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
-  * [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md)
+* [Enable Content Fragment Functionality in Configuration Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+  * [JSON output](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
 * [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
 * [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [Getting Started with AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - A short video tutorial series giving an overview of using AEM's headless features, including content modeling and GraphQL.
