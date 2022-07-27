@@ -208,7 +208,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 >
 >See Additional Resources - Content Fragments in the Configuration Browser
 
-Then the Content Fragments Models can be created and the structure defined. This can be done under Tools -> Assets -> Content Fragment Models. For example:
+Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** -> **General** -> **Content Fragment Models**. For example:
 
 ![Content Fragment Model](assets/cfm-model.png)
 
@@ -264,10 +264,10 @@ Now that you have learned how to model your structure, and create content depend
 
 ## Additional Resources {#additional-resources}
 
-* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md) - the lead-in page for Content Fragments
-  * [Content Fragments in the Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md) - enable Content Fragment functionality in the Configuration Browser
-  * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - creating and editing Content Fragment Models
-  * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - creating and authoring Content Fragments; this page will lead you to other detailed sections
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) - the lead-in page for Content Fragments
+  * [Content Fragments in the Configuration Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) - enable Content Fragment functionality in the Configuration Browser
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - creating and editing Content Fragment Models
+  * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) - creating and authoring Content Fragments; this page will lead you to other detailed sections
 * [AEM GraphQL Schemas](access-your-content.md) - how GraphQL realizes models
 * [The Sample Content Fragment Structure](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [Getting Started with AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - A short video tutorial series giving an overview of using AEM's headless features, including content modeling and GraphQL

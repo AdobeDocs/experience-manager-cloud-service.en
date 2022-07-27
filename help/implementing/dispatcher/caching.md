@@ -79,12 +79,13 @@ This can be useful, for example, when your business logic requires fine tuning o
 ### Client-Side libraries (js,css) {#client-side-libraries}
 
 * by using AEM's Client-Side library framework, JavaScript and CSS code is generated in such a way that browsers can cache it indefinitely, since any changes manifest as new files with a unique path.  In other words, HTML that references the client libraries will be produced as needed so customers can experience new content as it is published. The cache-control is set to "immutable" or 30 days for older browsers who don't respect the "immutable" value.
-* see the section [Client-side libraries and version consistency](#content-consistency) for additional details. 
+* see the section [Client-side libraries and version consistency](#content-consistency) for additional details.
 
-### Images and any content large enough stored in blob storage {#images}
+### Images and any content large enough to be stored in blob storage {#images}
 
-* by default, not cached
-* can be set on a finer grained level by the following apache `mod_headers` directives:
+The default behavior for programs created after mid-May 2022 (specifically, for program ids that are higher than 65000) is to cache by default, while also respecting the request's authentication context. Older programs (program ids equal or lower than 65000) do not cache blob content by default.
+
+In both cases, the caching headers can be overridden on a finer grained level at the apache/dispatcher layer by using the apache `mod_headers` directives, for example:
 
    ```
       <LocationMatch "^/content/.*\.(jpeg|jpg)$">
@@ -94,20 +95,29 @@ This can be useful, for example, when your business logic requires fine tuning o
 
    ```
 
-   See the discussion in the html/text section above for exercising caution to not cache too widely and also how to force AEM to always apply caching with the "always" option.
+When modifying the caching headers at the dispatcher layer, please be cautious not to cache too widely, see the discussion in the HTML/text section [above](#html-text). Also, make sure that assets that are meant to be kept private (rather than cached) are not part of the `LocationMatch` directive filters.
 
-   It is necessary to ensure that a file under `src/conf.dispatcher.d/`cache has the following rule (which is in the default configuration):
+#### New default caching behavior {#new-caching-behavior}
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
+The AEM layer will set cache headers depending on whether the cache header has already been set and the value of the request type. Please note that if no cache control header has been set, public content is cached and authenticated traffic is set to private. If a cache control header has been set, the cache headers will be untouched.
 
-   ```
+| Cache control header exists? | Request type  | AEM sets cache headers to                      |
+|------------------------------|---------------|------------------------------------------------|
+| No                           | public        | Cache-Control: public, max-age=600, immutable  |
+| No                           | authenticated | Cache-Control: private, max-age=600, immutable |
+| Yes                          | any           | unchanged                                      |
 
-   Make sure that assets meant to be kept private rather than cached are not part of the LocationMatch directive filters.
+While not recommended, it is possible to change the new default behavior to follow the older behavior (program ids equal or lower than 65000) by setting the Cloud Manager environment variable `AEM_BLOB_ENABLE_CACHING_HEADERS` to false.
 
-   >[!NOTE]
-   >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+#### Older default caching behavior {#old-caching-behavior}
+
+The AEM layer will not cache blob content by default.
+
+>[!NOTE]
+>It is recommended to change the older default behavior to be consistent with the new behavior (program ids that are higher than 65000) by setting the Cloud Manager environment variable AEM_BLOB_ENABLE_CACHING_HEADERS to true. If the program is already live, make sure you verify that after the changes, content behaves as you expect.
+
+>[!NOTE]
+>The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override the values.
 
 ### Other content file types in node store {#other-content}
 
@@ -115,7 +125,7 @@ This can be useful, for example, when your business logic requires fine tuning o
 * default cannot be set with the `EXPIRATION_TIME` variable used for html/text file types
 * cache expiration can be set with the same LocationMatch strategy described in the html/text section by specifying the appropriate regex
 
-### Furthur Optimizations
+### Further Optimizations {#further-optimizations}
 
 * Avoid using `User-Agent` as part of the `Vary` header. Older versions of the default dispatcher setup (prior to archetype version 28) included this and we recommend you remove that using the steps below.
    * Locate the vhost files in `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
@@ -176,6 +186,10 @@ This can be useful, for example, when your business logic requires fine tuning o
       </LocationMatch>
       ```
 
+### HEAD request behavior {#request-behavior}
+
+When a HEAD request is received at the Adobe CDN for a resource that is **not** cached, the request is transformed and received by the dispatcher and/or AEM instance as a GET request. If the response is cacheable then subsequent HEAD requests will be served from the CDN. If the response is not cacheable then subsequent HEAD requests will be passed to the dispatcher and/or AEM instance for a period of time that depends on the `Cache-Control` TTL.
+
 ## Dispatcher Cache Invalidation {#disp}
 
 In general, it will not be necessary to invalidate the dispatcher cache. Instead you should rely on the dispatcher refreshing its cache when content is being republished and the CDN respecting cache expiration headers.
@@ -184,12 +198,212 @@ In general, it will not be necessary to invalidate the dispatcher cache. Instead
 
 Like previous versions of AEM, publishing or unpublishing pages will clear the content from the dispatcher cache. If a caching issue is suspected, customers should republish the pages in question and ensure that a virtual host is available that matches ServerAlias localhost, which is required for dispatcher cache invalidation.
 
+When the publish instance receives a new version of a page or asset from the author, it uses the flush agent to invalidate appropriate paths on its dispatcher. The updated path is removed from the dispatcher cache, together with its parents, up to a level (you can configure this with the [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
-When the publish instance receives a new version of a page or asset from the author, it uses the flush agent to invalidate appropriate paths on its dispatcher. The updated path is removed from the dispatcher cache, together with its parents, up to a level (you can configure this with the [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
+## Explicit invalidation of the dispatcher cache {#explicit-invalidation}
 
-### Explicit dispatcher cache invalidation {#explicit-invalidation}
+Adobe recommends to rely on standard cache headers to control the content delivery life cycle. However, if needed, it is possible to invalidate content directly in dispatcher.
 
-In general, it will not be necessary to manually invalidate content in the dispatcher, but it is possible if needed.
+The following list contains scenarios where you might want to explicitly invalidate the cache (while optionally listening for the completion of the invalidation):
+
+* After publishing content such as experience fragments or content fragments, invalidating published and cached content that references those elements.
+* Notifying an external system when referenced pages have been successfully invalidated.
+
+There are two approaches to explicitly invalidate the cache:
+
+* The preferred approach is using Sling Content Distribution (SCD) from Author.  
+* By using the Replication API to invoke the publish dispatcher flush replication agent.
+
+The approaches differ in terms of tier availability, the ability to deduplicate events and event processing guarantee. The table below summarizes these options:
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>N/A</th>
+    <th>Tier availability</th>
+    <th>Deduplication </th>
+    <th>Guarantee </th>
+    <th>Action </th>
+    <th>Impact </th>
+    <th>Description </th>
+  </tr>  
+  <tr>
+    <td>Sling Content Distribution (SCD) API</td>
+    <td>Author</td>
+    <td>Possible using either the Discovery API or enabling the <a href="https://github.com/apache/sling-org-apache-sling-distribution-journal/blob/e18f2bd36e8b43814520e87bd4999d3ca77ce8ca/src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributedEventNotifierManager.java#L146-L149">deduplication mode</a>.</td>
+    <td>At least once.</td>
+    <td>
+     <ol>
+       <li>ADD</li>
+       <li>DELETE</li>
+       <li>INVALIDATE</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>Hierarchical/Stat Level</li>
+       <li>Hierarchical/Stat Level</li>
+       <li>Level Resource-Only</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>Publishes content and invalidates the cache.</li>
+       <li>Removes content and invalidates the cache.</li>
+       <li>Invalidates content without publishing it.</li>
+     </ol>
+     </td>
+  </tr>
+  <tr>
+    <td>Replication API</td>
+    <td>Publish</td>
+    <td>Not possible, event raised on every publish instance.</td>
+    <td>Best effort.</td>
+    <td>
+     <ol>
+       <li>ACTIVATE</li>
+       <li>DEACTIVATE</li>
+       <li>DELETE</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>Hierarchical/Stat Level</li>
+       <li>Hierarchical/Stat Level</li>
+       <li>Hierarchical/Stat Level</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>Publishes content and invalidates the cache.</li>
+       <li>From Author/Publish Tier - Removes content and invalidates the cache.</li>
+       <li><p><strong>From Author Tier</strong> - Removes content and invalidates the cache (if triggered from AEM Author tier on the Publish agent).</p>
+           <p><strong>From Publish Tier</strong> - Invalidates only the cache (if triggered from AEM Publish tier on the Flush or Resource-only-flush agent).</p>
+       </li>
+     </ol>
+     </td>
+  </tr>
+  </tbody>
+</table>
+
+Please note that the two actions directly related to cache invalidation are Sling Content Distribution (SCD) API Invalidate and Replication API Deactivate.
+
+Also, from the table, we observe that:
+
+* SCD API is needed when every event must be guaranteed, for example, syncing with an external system that requires accurate knowledge. Note that if there is a publish tier upscaling event at the time of the invalidation call, an additional event will be raised when each new publish processes the invalidation.
+
+* Using the Replication API isn’t a common use case, but should be used in cases where the trigger to invalidate the cache comes from the publish tier and not the author tier. This might be useful if dispatcher TTL is configured.
+
+In conclusion, if you are looking to invalidate the dispatcher cache, the recommended option is to use the SCD API Invalidate action from Author. Additionally, you can also listen for the event so you can then trigger further downstream actions.
+
+### Sling Content Distribution (SCD) {#sling-distribution}
+
+>[!NOTE]
+>When using the instructions presented below, please be aware that you should test the custom code in an AEM Cloud Service Dev environment and not locally.
+
+When using the SCD action from Author, the implementation pattern is as follows:
+
+1. From Author, write custom code to invoke the sling content distribution [API](https://sling.apache.org/documentation/bundles/content-distribution.html), passing the invalidate action with a list of paths:
+
+```
+@Reference
+private Distributor distributor;
+
+ResourceResolver resolver = ...; // the resource resolver used for authorizing the request
+String agentName = "publish";    // the name of the agent used to distribute the request
+
+String pathToInvalidate = "/content/to/invalidate";
+DistributionRequest distributionRequest = new SimpleDistributionRequest(DistributionRequestType.INVALIDATE, false, pathToInvalidate);
+distributor.distribute(agentName, resolver, distributionRequest);
+
+```
+
+* (Optionally) Listen for an event that reflects the resource being invalidated for all dispatcher instances:
+
+
+```
+package org.apache.sling.distribution.journal.shared;
+
+import org.apache.sling.discovery.DiscoveryService;
+import org.apache.sling.distribution.journal.impl.event.DistributionEvent;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.event.Event;
+import org.osgi.service.event.EventHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import static org.apache.sling.distribution.DistributionRequestType.INVALIDATE;
+import static org.apache.sling.distribution.event.DistributionEventProperties.DISTRIBUTION_PATHS;
+import static org.apache.sling.distribution.event.DistributionEventProperties.DISTRIBUTION_TYPE;
+import static org.apache.sling.distribution.event.DistributionEventTopics.AGENT_PACKAGE_DISTRIBUTED;
+import static org.osgi.service.event.EventConstants.EVENT_TOPIC;
+
+@Component(immediate = true, service = EventHandler.class, property = {
+        EVENT_TOPIC + "=" + AGENT_PACKAGE_DISTRIBUTED
+})
+public class InvalidatedHandler implements EventHandler {
+    private static final Logger LOG = LoggerFactory.getLogger(InvalidatedHandler.class);
+
+    @Reference
+    private DiscoveryService discoveryService;
+
+    @Override
+    public void handleEvent(Event event) {
+
+        String distributionType = (String) event.getProperty(DISTRIBUTION_TYPE);
+
+        if (INVALIDATE.name().equals(distributionType)) {
+            boolean isLeader = discoveryService.getTopology().getLocalInstance().isLeader();
+            // process the OSGi event on the leader author instance
+            if (isLeader) {
+                String[] paths = (String[]) event.getProperty(DISTRIBUTION_PATHS);
+                String packageId = (String) event.getProperty(DistributionEvent.PACKAGE_ID);
+                invalidated(paths, packageId);
+            }
+        }
+    }
+
+    private void invalidated(String[] paths, String packageId) {
+        // custom logic
+        LOG.info("Successfully applied package with id {}, paths {}", packageId, paths);
+    }
+}
+
+```
+
+<!-- Optionally, instead of using the isLeader approach, one could add an OSGi configuration for the PID org.apache.sling.distribution.journal.impl.publisher.DistributedEventNotifierManager and property deduplicateEvent=true. But we'll stick with just one strategy and not mention it (double-check this).**review this**-->
+
+* (Optionally) Execute business logic in the `invalidated(String[] paths, String packageId)` method above.
+
+>[!NOTE]
+>
+>The Adobe CDN is not flushed when dispatcher is invalidated. The Adobe-managed CDN respects TTLs and thus there is no need for it to be flushed.
+
+### Replication API {#replication-api}
+
+Presented below is the implementation pattern when using the replication API Deactivate action:
+
+1. On the publish tier, call the Replication API to trigger the publish dispatcher flush replication agent.
+
+The flush agent endpoint is not configurable but rather preconfigured to point to dispatcher, matched with the publish service running alongside the flush agent.
+
+The flush agent can typically be triggered by custom code based on OSGi events or workflows.
+
+```
+String[] paths = …
+ReplicationOptions options = new ReplicationOptions();
+options.setSynchronous(true);
+options.setFilter( new AgentFilter {
+  public boolean isIncluded (Agent agent) {
+   return agent.getId().equals(“flush”);
+  }
+});
+
+Replicator.replicate (session,ReplicationActionType.DELETE,paths, options);
+```
+
+<!-- In general, it will not be necessary to manually invalidate content in the dispatcher, but it is possible if needed.
 
 >[!NOTE]
 >Prior to AEM as a Cloud Service, there were two ways of invalidating the dispatcher cache.
@@ -204,7 +418,6 @@ The replication flush agent should be used. This can be done using the [Replicat
 <!-- Need to find a new link and/or example -->
 <!-- 
 and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents). 
--->
 
 The diagram presented below illustrates this.
 
@@ -212,7 +425,7 @@ The diagram presented below illustrates this.
 
 If there is a concern that the dispatcher cache isn't clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
-The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary.
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 
 ## Client-Side libraries and Version Consistency {#content-consistency}
 
