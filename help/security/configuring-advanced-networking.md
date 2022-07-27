@@ -62,13 +62,7 @@ The program level configuration can be updated by invoking the `PUT /api/program
 
 The per environment port forwarding rules can be updated by again invoking the `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` endpoint, making sure to include the full set of configuration parameters, rather than a subset.
 
-### Deleting or Disabling Flexible Port Egress {#deleting-disabling-flexible-port-egress-provision}
-
-To **delete** the network infrastructure for a program, invoke `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`. 
-
->[!NOTE]
->
-> Delete will not delete the infrastructure if there are any environments using it.
+### Disabling Flexible Port Egress {#disabling-flexible-port-egress-provision}
 
 In order to **disable** flexible port egress from a particular environment, invoke `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
@@ -201,31 +195,15 @@ In addition to the routing rules supported by flexible port egress in the `PUT /
 
 When deciding between flexible port egress and dedicated egress IP address, customers should choose flexible port egress if a specific IP address is not required since Adobe can optimize performance of flexible port egress traffic.
 
+### Disabling Dedicated Egress IP Address {#disabling-dedicated-egress-IP-address}
+
+In order to **disable** Dedicated Egress IP Address from a particular environment, invoke `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+
+For more information on the APIs, see the [Cloud Manager API Documentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+
 ### Traffic Routing {#dedcated-egress-ip-traffic-routing}
 
-Http or https traffic going to destinations through ports 80 or 443 will go through a preconfigured proxy, assuming the standard Java networking library is used. For http or https traffic going through other ports a proxy should be configured using the following properties.
-
-```
-AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
-AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
-```
-
-For example, here's sample code to send a request to `www.example.com:8443`:
-
-```java
-String url = "www.example.com:8443"
-String proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
-int proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
-
-HttpClient client = HttpClient.newBuilder()
-      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
-      .build();
- 
-HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
-HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-```
-
-If using non-standard Java networking libraries, configure proxies using the properties above, for all traffic.
+Http or https traffic will go through a preconfigured proxy, provided they use standard Java system properties for proxy configurations.
 
 Non-http/s traffic with destinations through ports declared in the `portForwards` parameter should reference a property called `AEM_PROXY_HOST`, along with the mapped port. For example:
 
@@ -391,9 +369,7 @@ Note that the address space cannot be changed after the initial VPN provisioning
 
 The per-environment routing rules can be updated by again invoking the `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` endpoint, making sure to include the full set of configuration parameter, rather than a subset. Environment updates typically take 5-10 minutes to be applied.
 
-### Deleting or Disabling the VPN {#deleting-or-disabling-the-vpn}
-
-To delete the network infrastructure, submit a customer support ticket, describing what has been created and why it needs to be deleted.
+### Disabling the VPN {#disabling-the-vpn}
 
 To disable VPN for a particular environment, invoke `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`. More details in the [API documentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -534,6 +510,27 @@ Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
 
+## Deleting a Program's Network Infrastructure {#deleting-network-infrastructure}
+
+To **delete** the network infrastructure for a program, invoke `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`. 
+
+>[!NOTE]
+>
+> Delete will only delete the infrastructure if all environments have their advanced networkings disabled. 
+> 
+
 ## Transitioning Between Advanced Networking Types {#transitioning-between-advanced-networking-types}
 
-Since the `kind` parameter cannot be modified, please contact customer support for assistance, describing what has already been created and the reason for the change.
+It is possible to migrate between advanced networking types by following the following procedure:
+
+* disable advanced networking in all environments
+* delete the advanced networking infrastructure
+* recreate the advanced networking infras with the correct values
+* reenable environment level advanced networking
+
+>[!WARNING]
+>
+> This procedure will result in a downtime of advanced networking services between deletion and recreation
+> 
+
+If downtime would cause significant business impact, contact customer support for assistance, describing what has already been created and the reason for the change.

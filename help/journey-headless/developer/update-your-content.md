@@ -311,7 +311,7 @@ Now that you have completed this part of the AEM Headless Developer Journey, you
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-You should continue your AEM headless journey by next reviewing the document [How to Go Live with Your Headless Application](go-live.md) where you actually take your AEM Headless project live!
+You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you will get familiar with the AEM architecture basics and tools you need to use to put your application together.
 
 ## Additional Resources {#additional-resources}
 
@@ -319,7 +319,7 @@ You should continue your AEM headless journey by next reviewing the document [Ho
 * [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
   * [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
-* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 * [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM explained](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [Video - Developing for CORS with AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
