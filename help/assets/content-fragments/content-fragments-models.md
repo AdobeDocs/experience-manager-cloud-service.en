@@ -18,8 +18,8 @@ To use Content Fragment Models you:
 
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
-1. Navigate to the folder appropriate to your [configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
+1. Navigate to the folder appropriate to your [configuration, or sub-configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Use **Create** to open the wizard.
 
    >[!CAUTION]
@@ -40,7 +40,7 @@ The content fragment model effectively defines the structure of the resulting co
 >
 >Editing an existing content fragment model can impact dependent fragments.
 
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
+1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
 
 1. Navigate to the folder holding your content fragment model.
 1. Open the required model for **Edit**; use either the quick action, or select the model and then the action from the toolbar.
@@ -69,7 +69,7 @@ The content fragment model effectively defines the structure of the resulting co
 
        >[!CAUTION]
        >
-       >When manually updating the property **Property Name** for a data type, note that names must contain only Latin characters, numerical digits and underscore "_" as special character.
+       >When manually updating the property **Property Name** for a data type, note that names must contain only A-Z, a-z, 0-9 and underscore "_" as special character.
        >
        >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
 
@@ -134,7 +134,7 @@ Many properties are self-explanatory, for certain properties additional details 
 
 * **Property Name**
 
-  When manually updating this property for a data type, note that names **must** contain *only* Latin characters, numerical digits and underscore "_" as special character.
+  When manually updating this property for a data type, note that names **must** contain *only* A-Z, a-z, 0-9 and underscore "_" as special character.
 
   >[!CAUTION]
   >
@@ -391,7 +391,7 @@ The Content Fragment Models allowed for a folder are resolved as follows:
 
 To delete a content fragment model:
 
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
+1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
 
 1. Navigate to the folder holding your content fragment model.
 1. Select your model, followed by **Delete** from the toolbar.
@@ -406,7 +406,7 @@ Content fragment models need to be published when/before any dependent content f
 
 To publish a content fragment model:
 
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
+1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
 
 1. Navigate to the folder holding your content fragment model.
 1. Select your model, followed by **Publish** from the toolbar.
@@ -422,7 +422,7 @@ Content fragment models can be unpublished if they are not referenced by any fra
 
 To unpublish a content fragment model:
 
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
+1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
 
 1. Navigate to the folder holding your content fragment model.
 1. Select your model, followed by **Unpublish** from the toolbar.

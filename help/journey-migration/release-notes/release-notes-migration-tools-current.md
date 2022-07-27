@@ -1,31 +1,41 @@
 ---
-title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.4.0
-description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.4.0
+title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.7.0
+description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.7.0
 feature: Release Information
-exl-id: 4941736b-82cd-4050-b3e9-aef250d5c4c7
+exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
 ---
-# Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.4.0 {#release-notes}
+# Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.7.0 {#release-notes}
 
-This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.4.0.
+This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.7.0.
 
-## Best Practices Analyzer {#bpa-release}
+## Content Transfer Tool {#ctt-release}
 
-### Release Date {#release-date-bpa}
+### Release Date {#release-date-ctt}
 
-The Release Date for Best Practices Analyzer v2.1.28 is April 22, 2022.
+The Release Date for Content Transfer Tool v2.0.12 is July 19, 2022.
 
-### What's New {#what-is-new-bpa}
+### What's New {#what-is-new-ctt}
 
-* Ability to detect and report on usage of unsupported Asset Manager APIs. There are four APIs that are no longer supported in AEM as a Cloud Service. Customers should ensure that they are no longer using these APIs and should be using the new method of asset upload.
+* Users logged in via LDAP are now able to run Check Size and User Mapping features in CTT.
+* To help debug SSL/TLS connection problems during extractions, users are now able to enable SSL Logging.
+* To help debug source connectivity issues, sub domain names are now printed in the logs when connection to Azure fails.
+* To help debug issues during pre-copy, AzCopy logs are now appended to the extraction logs when pre-copy fails.
+* To avoid stale Check Size results, users will be able to re-run Check Size only after a previous Check Size is completed.
 
-* Ability to detect usage of Content Fragment templates. Content Fragment templates are no longer supported for new content fragment creation on AEM as a Cloud Service. Customers will need to create content fragment models to replace content fragment templates.
+### Bug Fixes {#bug-fixes-ctt}
 
-* Ability to detect assets with more than 100 descendants under the metadate node of the asset in the repository. It is recommended to remove metadata nodes that are not needed to improve the performance when loading folders consisting of such assets.
+* Previous extraction logs were appearing after deleting and re-creating a migration set. This has been fixed.
+* View Progress action button was not available for migration sets with STOPPED status. This has been fixed.
+* Delete action button was not available for migration sets with an expired extraction key. This has been fixed.
+* Multiple UI bugs fixed.
 
-* Ability to detect and report on type of Data Store used.
+## Cloud Acceleration Manager {#cam-release}
 
-* Pattern updated for AEM Form Portal.
+### Release Date {#release-date-cam}
 
-### Bug Fixes {#bug-fixes-bpa}
+The Release Date for Cloud Acceleration Manager is July 15, 2022.
 
-* BPA was reporting findings for core components instead of reporting only on customer components. This has been fixed.
+### What's New {#what-is-new-cam}
+
+* Cloud Acceleration Manager now provides users to manually retrieve the migration token to be able to start an ingestion when automatic retrieval fails. Automatic retrieval can fail if customers have set up an IP allow-list that blocks CAM or if a non-admin user attempts to start an ingestion. Refer to [Troubleshooting](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) for more information.
+* Long tables on the Migration Complexity page are now collapsible for ease of use.

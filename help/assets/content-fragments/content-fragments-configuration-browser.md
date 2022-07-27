@@ -14,7 +14,7 @@ Learn how to enable certain Content Fragment functionality in the Configuration 
 Before using Content Fragments you need to use the **Configuration Browser** to enable:
 
 * **Content Fragment Models** - mandatory
-* **GraphQL Persistent Queries** - optional
+* **GraphQL Persisted Queries** - optional
 
 >[!CAUTION]
 >
@@ -36,18 +36,31 @@ To [use certain Content Fragment functionality](#creating-a-content-fragment-mod
 >
 >For further details see also [Configuration Browser:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
->[!CAUTION]
+>[!NOTE]
 >
->Sub-configurations (a configuration nested within a configuration) are supported for use with Content Fragments, but cannot be used for GraphQL queries.
+>[Sub-configurations](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (a configuration nested within another configuration) are fully supported for use with Content Fragments, Content Fragment Models and GraphQL queries.
+>
+>Just to note that:
+>
+>
+>* After creating models in a sub-configuration, it is NOT possible to move or copy the model to another sub-configuration.
+>
+>* A GraphQL endpoint will (still) be based on a parent (root) configuration.
+>
+>* Persisted queries will (still) be saved relevant to the parent (root) configuration.
+
 
 1. Navigate to **Tools**, **General**, then open the **Configuration Browser**.
 
 1. Use **Create** to open the dialog, where you:
 
    1. Specify a **Title**.
+   1. The **Name** will become the node name in the repository.
+      * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/implementing/developing/introduction/naming-conventions.md)
+      * You can adjust it if necessary.
    1. To enable their use select 
       * **Content Fragment Models** 
-      * **GraphQL Persistent Queries**
+      * **GraphQL Persisted Queries**
 
       ![Define configuration](assets/cfm-conf-01.png)
 
