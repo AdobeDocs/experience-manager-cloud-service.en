@@ -35,7 +35,7 @@ Have a look at the July 2022 Release Overview video for a summary of the feature
 
 * The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now supports keyboard shortcuts. 
 
-* AEM as Cloud Service’s [web-optimized image delivery](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) allows to significantly improve page speed by delivering formats like WebP. This new service also offers more flexible image resizing and transformation options. All versions of the [Core Image Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) allow to leverage this service and to deliver images as WebP by the click of an option in the policy of the image component.
+* AEM as Cloud Service’s [web-optimized image delivery](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) allows to significantly improve page speed by delivering formats such as WebP. This new service also offers more flexible image resizing and transformation options. All versions of the [Core Image Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) allow to leverage this service and to deliver images as WebP by the click of an option in the policy of the image component.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
