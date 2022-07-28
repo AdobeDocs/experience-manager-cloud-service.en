@@ -13,12 +13,12 @@ Before you can perform the steps presented below you need to first [integrate](/
 1. Select Campaign, click **Create→Page**.
 ![brand create](assets/create.png)
 1. Select Brand and click **Next**.
-1. Enter the title (for example,AdobeDemo) and click **Create** and **Done**.
-1. To create a Campaign page, go to **Campaigns→AdobeDemo→Master** and click on **Create→Page**.
+1. Enter a title and click **Create** and **Done**.
+1. To create a Campaign page, go to **Campaigns→AdobeDemo→Master** and click **Create→Page**.
 ![campaign page](assets/campaignpage.png)
 1. Select the Campaign template then click **Next** and **Done**.
-1. Enter the Title (for example: CampaignPage), click **Create** and **Done**.
-1. Go to **Campaign→AdobeDemo→Master** and select the CampaignPage checkbox. Click on **Properties** on the top left.
+1. Enter a title , click **Create** and **Done**.
+1. Go to **Campaign→AdobeDemo→Master** and select the CampaignPage checkbox. Click **Properties** on the top left.
 ![campaign properties](assets/propertiesedit.png)
 1. Go to the **Cloud Service** tab:
     * Select Adobe Campaign from the Cloud Service Configurations drop-down list.
@@ -46,9 +46,9 @@ Before you can perform the steps presented below you need to first [integrate](/
 1. In the tree view on the left, go to Profiles and Targets and select **Recipients**.
 ![recipients](assets/recipients.png)
 1. Fill the Details of the recipient.
-   * Enter the First name
-   * Enter the Last Name
-   * Enter the Email
+   * Enter the First name.
+   * Enter the Last Name.
+   * Enter the Email.
    * Click **Save**.
 
 ## Creating an Email Delivery in Adobe Campaign Classic {#create-delivery}
@@ -59,17 +59,17 @@ Before you can perform the steps presented below you need to first [integrate](/
 1. On top right corner, click **New**.
 1. Select **Email Delivery with AEM Content** from the Delivery template drop-down list and click **Continue**.
 1. Click on From link under Email parameters.
-    * Enter the Sender address
-    * Enter the From field
+    * Enter the Sender address.
+    * Enter the From field.
     * Click **OK**.
-1. Click on **To** link then click on **Add** on the select target screen.
+1. Click **To** link then click **Add** on the select target screen.
 1. Select **A recipient** and click **Next**.
 ![target type](assets/publish.png)
 1. Select the recipient created [previously](#creating-recipient) and click **Finish**.
 1. The recipient has been selected. Click **OK**.
 1. Click **Synchonize**.
 1. Select the email page from the list, click **OK**.
-1. The email template is synchronized.  Click **Refresh Content** if it is not loaded.
+1. The email template is synchronized. Click **Refresh Content** if it is not loaded.
 1. Click **Send** to send the email.
 1. On next screen, select **Delivery as soon as possible** and then click **Analyze**.
 ![delivery target](assets/deliverytarget.png)
