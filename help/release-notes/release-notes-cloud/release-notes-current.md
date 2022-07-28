@@ -35,8 +35,6 @@ Have a look at the July 2022 Release Overview video for a summary of the feature
 
 * The [Content Fragment Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) now supports keyboard shortcuts. 
 
-* The new [Table of Contents Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) works not only with the Core Components but with all components, automatically rendering ToCs on content pages. And because it is rendered server-side and fully cached by the dispatcher, it is also efficient to load.
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features available in [!DNL Assets] prerelease channel {#prerelease-features-assets}
