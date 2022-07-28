@@ -9,7 +9,7 @@ role: Admin
 
 By integrating with Adobe Campaign you can manage email delivery, content and forms directly in AEM as a Cloud Service. Configuration steps in both Adobe Campaign Classic and AEM as a Cloud Service are needed to enable the bidirectional communication between solutions.
 
-Please note that AEM as a Cloud Service and Adobe Campaign Classic can also be used independently. For example, marketers can start creating campaigns and use targeting in Adobe Campaign, while content creators can work on the design in AEM as a Cloud Service.
+Please note that AEM as a Cloud Service and Adobe Campaign Classic can also be used independently. For example, marketers can create campaigns and use targeting in Adobe Campaign, while content creators can work on the design in AEM as a Cloud Service.
 
 ## Integration workflow {#integration-workflow}
 
@@ -34,21 +34,21 @@ You need the [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/ex
 
 Open the Adobe Campaign Classic client console from start menu and log in. The home page should appear.
 
-1. Click on **Explorer** to open the Explorer view.
+1. Click **Explorer** to open the Explorer view.
 ![explorer](assets/explorer.png)
 1. In the tree view on the left, navigate to **Administration->Access Management->Operators**.
 1. Double-click on the `aemserver` entry in the Operators list on the right.
 1. Switch to the **Edit** tab. Set the password for the aemserver.
 ![password](assets/aemserveredit.png)
-1. Click on the **Access rights** tab and click on the **Edit the access parameters** link under the security settings.
+1. Click on the **Access rights** tab and click the **Edit the access parameters** link under the security settings.
 1. Under Encryption, select Public network as the authorized connection zone. Click **OK**.
 ![connection zone](assets/auth.png)
 1. Click **Save**.
 1. Log out.
 1. Go to the Adobe Campaign Classic v7 install location, for example `C:\Program Files\Adobe\Adobe Campaign Classic v7\conf` and open the `serverConf.xml` as an administrator.
-    * Search for **security zone**
-    * Set the following parameters `allowHTTP="true"` `sessionTokenOnly="true"` `allowUserPassword="true"`
-    * Save the file
+    * Search for **security zone**.
+    * Set the following parameters `allowHTTP="true"` `sessionTokenOnly="true"` `allowUserPassword="true"`.
+    * Save the file.
 1. Ensure that the security zone does not get overwritten by the respective setting in `config-<server name>.xml` file (C:\Program Files\Adobe\Adobe Campaign Classic v7\conf\config_acc-test.xml).
     * If the configuration file contains a separate security zone setting then change the `allowUserPassword` attribute to true.
 1. If you want to change the Adobe Campaign Classic server port, replace 8080 with the desired port(for example: 80).
@@ -63,14 +63,14 @@ Open the Adobe Campaign Classic client console from start menu and log in. The h
 1. Go to **Tools→Cloud Service→Legacy Cloud Service**.
 ![legacy cloud service](assets/legacy.png)
 1. Scroll down to Adobe Campaign and click the **Configure Now** link.
-    * Enter a title
-    * Enter a name
-    * Click **Create**
+    * Enter a title.
+    * Enter a name.
+    * Click **Create**.
 1. On the Edit Component screen
-    * Enter the Username, See [Create the Operator User](#create-operator)
-    * Enter the Password
-    * Enter the Adobe Campaign Classic server API end point (for example, `http://3.22625.51:80`)
-    * Click **Connect to Adobe Campaign**
+    * Enter the Username, See [Create the Operator User](#create-operator).
+    * Enter the Password.
+    * Enter the Adobe Campaign Classic server API end point (for example, `http://3.22625.51:80`).
+    * Click **Connect to Adobe Campaign**.
     * Click **OK**.
     >[!NOTE]
     >
@@ -109,8 +109,8 @@ You need to set a password for the campaign-remote user. It is necessary in orde
 ![security users](assets/user.png)
 1. Search for the `campaign-remote` user and click on it.
 1. Click on Change Password
-    * Enter the new password twice
-    * Enter your AEM password
+    * Enter the new password twice.
+    * Enter your AEM password.
     * Click **Save**.
 
 ### Configuring the Adobe Campaign Classic External Account {#acc-setup}
@@ -123,9 +123,9 @@ You must also configure an external account in order to connect Adobe Campaign C
 1. In the list view on the top right, click AEM instance.
 1. In the AEM instance configuration
     * Enter AEM as a Cloud Service author IP/FQN for example `https://author-p17558-e33255-cmstg.adobeaemcloud.com`.
-    * Enter the user and account
-    * Enter the password for the campaign-remote user that you set in the AEM as a Cloud Service instance (see the procedure above)
-    * Select the **Enabled** checkbox
+    * Enter the user and account.
+    * Enter the password for the campaign-remote user that you set in the AEM as a Cloud Service instance (see the procedure above).
+    * Select the **Enabled** checkbox.
     * Click **Save**.
     >[!NOTE]
     >
