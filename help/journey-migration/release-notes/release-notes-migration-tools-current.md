@@ -8,6 +8,22 @@ exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
 
 This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.7.0.
 
+## Best Practices Analyzer {#bpa-release}
+
+### Release Date {#release-date-bpa}
+
+The Release Date for Best Practices Analyzer v2.1.30 is July 27, 2022.
+
+### What's New {#what-is-new-bpa}
+
+* BPA can now detect and report on the total migratable Lucene Index size which is Total Lucene Index excluding `/oak:index/lucene` and `/oak:index/damAssetLucene`.
+* New pattern added in BPA to detect and report on the use of custom i18n dictionary. Translator.html is not available in AEM as a Cloud Service and custom i18n dictionary needs to be deployed from Git via the Cloud Manager CI/CD pipeline.
+
+### Bug Fixes {#bug-fixes-bpa}
+
+* BPA was reporting on missing original renditions for Content Fragments. Since, Content Fragments do not have renditions, this check is now skipped for Content Fragments.
+* The option to filter ACS Commons findings was missing from the BPA UI. This has been fixed.
+
 ## Content Transfer Tool {#ctt-release}
 
 ### Release Date {#release-date-ctt}
