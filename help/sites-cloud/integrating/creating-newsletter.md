@@ -1,10 +1,10 @@
 ---
 title: Creating an Adobe Experience Manager Newsletter
-description: Creating an Adobe Experience Manager Newsletter 
+description: Creating an Adobe Experience Manager Newsletter
 feature: Administering
 role: Admin
+exl-id: 60a6a9d0-f5e6-424f-b320-dd4943c55d45
 ---
-
 # Creating an Adobe Experience Manager Newsletter {#creating-newsletter}
 
 Before you can perform the steps presented below you need to first [integrate](/help/sites-cloud/integrating/integrating-campaign-classic.md) Adobe Campaign Classic and AEM as a Cloud Service. Having configured both Adobe Campaign Classic and AEM as a Cloud Service, you will now learn how to create an Adobe Experience Manager Newsletter.
