@@ -1,10 +1,10 @@
 ---
 title: Integrating with Adobe Campaign Classic
-description: Integrating with Adobe Campaign Classic 
+description: Integrating with Adobe Campaign Classic
 feature: Administering
 role: Admin
+exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
 ---
-
 # Integrating with Adobe Campaign Classic {#integrating-campaign-classic}
 
 By integrating with Adobe Campaign you can manage email delivery, content and forms directly in AEM as a Cloud Service. Configuration steps in both Adobe Campaign Classic and AEM as a Cloud Service are needed to enable the bidirectional communication between solutions.
