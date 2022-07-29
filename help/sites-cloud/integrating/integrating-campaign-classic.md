@@ -68,9 +68,9 @@ The integration package automatically creates the `aemserver` operator that AEM 
 
 1. Select the `aemserver` operator.
 
-1. On the **Edit** tab of the operator select **Access Rights** and then click the **Edit the access parameters...** link.
+1. On the **Edit** tab of the operator select the **Access Rights** sub-tab and then click the **Edit the access parameters...** link.
 
-  ![Set security zone](assets/access-rights.png)
+   ![Set security zone](assets/access-rights.png)
 
 1. Select the appropriate security zone and define the trusted IP mask as necessary.
 
@@ -130,7 +130,7 @@ AEM will use [the operator you already set up in Campaign](#create-operator) in 
     * **Password** - This is the password for [the Adobe Campaign AEM Integration package operator created in the previous step.](#create-operator)
     * **API End Point** - This is the Adobe Campaign instance URL.
 
-   ![Configure Adobe Campaign in AEM](assets/configure-campaign.png)
+    ![Configure Adobe Campaign in AEM](assets/configure-campaign.png)
 
 1. Select **Connect to Adobe Campaign** to verify the connection and then click **OK**.
 
