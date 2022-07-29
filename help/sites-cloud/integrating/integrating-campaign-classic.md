@@ -7,9 +7,9 @@ role: Admin
 
 # Integrating with Adobe Campaign Classic {#integrating-campaign-classic}
 
-By integrating AEM as a Cloud Service with Adobe Campaign you can manage email delivery, content, and forms directly in AEM as a Cloud Service. Configuration steps in both Adobe Campaign Classic and AEM as a Cloud Service are needed to enable the bidirectional communication between solutions.
+By integrating AEM as a Cloud Service with Adobe Campaign you can manage email delivery, content, and forms directly in AEM as a Cloud Service. Configuration steps in both Adobe Campaign Classic and AEM as a Cloud Service are needed to enable bidirectional communication between solutions.
 
-This integration allows AEM as a Cloud Service and Adobe Campaign Classic to be used independently. Marketers can create campaigns and use targeting in Adobe Campaign, while content creators can in parallel work on the design in AEM as a Cloud Service. The integration allows the content and design of the campaign in AEM to be targeted and delivered by Campaign. 
+This integration allows AEM as a Cloud Service and Adobe Campaign Classic to be used independently. Marketers can create campaigns and use targeting in Adobe Campaign, while content creators in parallel can work on content design in AEM as a Cloud Service. The integration allows the content and design of the campaign in AEM to be targeted and delivered by Campaign. 
 
 ## Integration Steps {#integration-steps}
 
@@ -34,7 +34,7 @@ This document leads you through each of these steps in detail
 
 ## Installing the AEM Integration Package in Campaign {#install-package}
 
-The **AEM Integration** package in Adobe Campaign includes a number of configurations necessary to connect to AEM.
+The **AEM Integration** package in Adobe Campaign includes a number of standard configurations necessary to connect to AEM.
 
 1. As an administrator, sign into the Adobe Campaign instance using the client console.
 
@@ -79,10 +79,10 @@ The integration package automatically creates the `aemserver` operator that AEM 
 1. Log out of the Adobe Campaign client.
 
 1. On the filesystem of the Adobe Campaign server, navigate to the Campaign installation location and edit the `serverConf.xml` file as an administrator. This file is typically located under:
-   * `C:\Program Files\Adobe\Adobe Campaign Classic v7\conf` in Windows
-   * `/usr/local/neolane/nl6/conf/eng` in Linux
+   * `C:\Program Files\Adobe\Adobe Campaign Classic v7\conf` in Windows.
+   * `/usr/local/neolane/nl6/conf/eng` in Linux.
 
-1. Search for `security zone` and set the following parameters:
+1. Search for `securityZone` and ensure that the following parameters are set for the security zone of the AEM operator.
 
    * `allowHTTP="true"`
    * `sessionTokenOnly="true"`
@@ -146,7 +146,7 @@ The externalizer is an OSGi service in AEM that transforms a resource path into 
 
 1. Sign into the AEM authoring instance as an administrator.
 1. Confirm the publish instance in the externalizer configuration by checking the status dump of the OSGi services in the [developer console.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#osgi-services)
-1. If it is not correct, make the necessary changes in the corresponding instance git repository and then deploy the configuration by using [cloud manager.](/help/implementing/cloud-manager/deploy-code.md)
+1. If it is not correct, make the necessary changes in the corresponding instance git repository and then [deploy the configuration by using cloud manager.](/help/implementing/cloud-manager/deploy-code.md)
 
 ```text
 Service 3310 - [com.day.cq.commons.Externalizer] (pid: com.day.cq.commons.impl.ExternalizerImpl)",
@@ -186,7 +186,7 @@ In order for Campaign to communicate with AEM, you need to set a password for th
 
 ## Configuring the AEM External Account in Campaign {#acc-setup}
 
-When [installing the **AEM Integration** package in Campaign,](#install-package) an external account is created for AEM. By configuring this external account in Adobe Campaign, Campaign can connect to AEM as a Cloud Service, enabling two-way communication between the solutions.
+When [installing the **AEM Integration** package in Campaign,](#install-package) an external account is created for AEM. By configuring this external account, Adobe Campaign can connect to AEM as a Cloud Service, enabling two-way communication between the solutions.
 
 1. Log into Adobe Campaign as an administrator using the client console.
 
