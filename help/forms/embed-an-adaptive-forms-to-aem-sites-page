@@ -49,7 +49,7 @@ To embed an Adaptive Form using AEM Forms Container component:
         * **Thank You Message**: Write a message using the rich text editor to show on form submission. This option is available only when you choose to show a thank you message.
         * **Thank You Page**: Browse and select the page to display on form submission. This option is available only when you choose to show a thank you page.
         * **Refresh Page on Submission**: Enable to refresh the page containing the embedded Adaptive Form to show the thank you page. Otherwise, the thank you page replaces the Adaptive Form in the AEM Forms container, without refreshing the page. This option is available only when you choose to show a thank you page.
-    * **Use Page Language**:
+    * **Use Page Language**: Use local of the AEM Sites page instead locale of Adaptive Form.
     * **Set Focus on Form**: Select to set the focus on the first field of the Adaptive Form.
 
     * **Theme**: Select a theme that defines styling for components of your Adaptive Form. Styling includes appearance properties such as font style, background color, dimensions, and alignment.
