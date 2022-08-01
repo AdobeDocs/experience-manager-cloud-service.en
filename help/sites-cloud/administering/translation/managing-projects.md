@@ -173,6 +173,11 @@ Manual edits of translated content can be synchronized back to the Translation M
 
 AEM will send the selected strings back to the Translation Management System.
 
+* The action updates the translation of existing strings in the translation memory of configured Translation Management Systems (TMS). 
+* It does not create new translation jobs.
+* It sends the value pairs of strings and their translations back to the TMS, via AEM translation API. 
+* This feature requires that a Translation Management System is configured for use with AEM. 
+
 ### Checking Translation Status of a Page {#check-translation-status}
 
 A property can be selected in the list view of the sites console that shows if a page has been translated, is in translation, or has not yet been translated.
