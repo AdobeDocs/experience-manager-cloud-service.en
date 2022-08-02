@@ -227,7 +227,6 @@ During a Cloud Manager deployment, the `httpd -t` syntax check will be executed 
 >
 >See the [Automatic loading and validation](#automatic-loading) section for an efficient alternative to running `validate.sh` after each configuration modification.
 
-
 ### Phase 1 {#first-phase}
 
 If a directive is not allowlisted, the tool logs an error and returns a non-zero exit code. Also, it further scans all files with pattern `conf.dispatcher.d/enabled_farms/*.farm` and checks that:
