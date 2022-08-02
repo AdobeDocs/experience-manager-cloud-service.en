@@ -9,23 +9,19 @@ The following section outlines the general Release Notes for [!DNL Workfront for
 
 ## Release Date {#release-date}
 
-The release date for the latest version 1.9.1 of [!DNL Workfront for Experience Manager enhanced connector] is July 01, 2022.
+The release date for the latest version 1.9.2 of [!DNL Workfront for Experience Manager enhanced connector] is August 03, 2022.
 
 ## Release highlights {#release-highlights}
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following enhancements and bug fixes:
 
-* Added support for authentication between Experience Manager and Workfront applications using Workfront API key for instances that are migrated to Adobe IMS.
+* The **[!UICONTROL Upload Document]** workflow step fails to attach a document to Workfront. 
 
-* When you link external files or folders, the Workfront application displays the `SERVER_ERROR` error message. The error message refers to an unauthorized exception due to a mismatch in API keys.
-
-* When you execute a Create Task workflow for an asset, the Null Pointer exception displays in the log messages.
-
-* When you enable the `Replace Spaces with DASH` configuration option under Advanced Settings in Experience Manager, it results in duplicate folder creation in Workfront.
+* The **[!UICONTROL Upload Document]** workflow step fails to attach a document to Tasks and Issues in Workfront. The workflow step attaches a document to Projects successfully.
 
 >[!IMPORTANT]
 >
->Adobe recommends you to [upgrade to the latest 1.9.1 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recommends you to [upgrade to the latest 1.9.2 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Known Issues {#known-issues}
 
@@ -34,6 +30,18 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** dropdown list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** dropdown list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** dropdown list as well as the **[!UICONTROL Document Actions]** dropdown list available in the new Workfront experience.
 
 ## Previous releases {#previous-releases}
+
+### July 2022 release {#july-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] version 1.9.1 includes the following updates:
+
+* Added support for authentication between Experience Manager and Workfront applications using Workfront API key for instances that are migrated to Adobe IMS.
+
+* When you link external files or folders, the Workfront application displays the `SERVER_ERROR` error message. The error message refers to an unauthorized exception due to a mismatch in API keys.
+
+* When you execute a Create Task workflow for an asset, the Null Pointer exception displays in the log messages.
+
+* When you enable the `Replace Spaces with DASH` configuration option under Advanced Settings in Experience Manager, it results in duplicate folder creation in Workfront.
 
 ### June 2022 release {#june-2022-release}
 
