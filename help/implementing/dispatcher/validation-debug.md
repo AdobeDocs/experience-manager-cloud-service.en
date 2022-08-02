@@ -73,6 +73,10 @@ The following files are customizable and will get transferred to your Cloud inst
 
 You can have one or more of these files. They contain `<VirtualHost>` entries that match host names and allow Apache to handle each domain traffic with different rules. Files are created in the `available_vhosts` directory and enabled with a symbolic link in the `enabled_vhosts` directory. From the `.vhost` files, other files like rewrites and variables will be included.
 
+>[!NOTE]
+>
+>In flexible mode you should use relative paths instead of absolute paths.
+
 * `conf.d/rewrites/rewrite.rules`
 
 This file is included from inside your `.vhost` files. It has a set of rewrite rules for `mod_rewrite`.
@@ -537,11 +541,14 @@ $ docker exec d75fbd23b29 httpd-test
 With the Cloud Manager 2021.7.0 release, new Cloud Manager programs generate maven project structures with [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) or higher,which includes the file **opt-in/USE_SOURCES_DIRECTLY**. This removes previous limitations of the [legacy mode](/help/implementing/dispatcher/validation-debug-legacy.md) around the number and size of files, also causing the SDK and runtime to validate and deploy the configuration in an improved way. If your dispatcher configuration does not have this file, it is highly recommended that you migrate. Use the following steps to ensure a safe transition:
 
 1. **Local testing.** Using the most recent dispatcher tools SDK, add the folder and file `opt-in/USE_SOURCES_DIRECTLY`. Follow the "local validation" instructions in this article to test that the dispatcher works locally.
-2. **Cloud development testing:**
+1. **Cloud development testing:**
    * Commit the file `opt-in/USE_SOURCES_DIRECTLY` to a git branch that is deployed by the non-production pipeline to a Cloud development environment.
    * Use Cloud Manager to deploy to a Cloud development environment.
    * Test thoroughly. It is critical to validate that your apache and dispatcher configuration behaves as you expect before deploying changes to higher environments. Check all behavior related to your custom configuration! File a customer support ticket if you believe the deployed dispatcher configuration does not reflect your custom configuration.
-3. **Deploy to production:**
+   >[!NOTE]
+   >
+   >In flexible mode you should use relative paths instead of absolute paths.
+1. **Deploy to production:**
    * Commit the file `opt-in/USE_SOURCES_DIRECTLY` to a git branch that is deployed by the production pipeline to the Cloud stage and production environments.
    * Use Cloud Manager to deploy to staging.
    * Test thoroughly. It is critical to validate that your apache and dispatcher configuration behaves as you expect before deploying changes to higher environments. Check all behavior related to your custom configuration! File a customer support ticket if you believe the deployed dispatcher configuration does not reflect your custom configuration.
