@@ -171,7 +171,7 @@ Manual edits of translated content can be synchronized back to the Translation M
 
 ![Compare changes for translation memory](../assets/update-translation-memory-compare.png)
 
-AEM updates the translation of the existing strings in the translation memory of configured TMS.
+AEM updates the translation of the existing strings in the translation memory of the configured TMS.
 
 * The action updates the translation of existing strings in the translation memory of the configured TMS. 
 * It does not create new translation jobs.
