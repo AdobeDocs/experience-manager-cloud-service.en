@@ -325,21 +325,25 @@ Details of your fragment can be seen:
 
    ![Experience Fragment properties](/help/sites-cloud/authoring/assets/xf-17.png)
 
-    * **Basic**
-        * **Title** - mandatory
-        * **Description**
-        * **Tags**
-        * **Total number of variants** - information only
-        * **Number of web variants** - information only
-        * **Number of non-web variants** - information only
-        * **Number of pages using this fragment** - information only
-    * **Cloud Services**
-        * **Cloud Configuration**
-        * **Cloud Service Configurations**
-        * **Facebook page ID**
-        * **Pinterest board**
-    * **References**
-        * A list of references
+   * **Basic**
+     * **Title** - mandatory
+     * **Description**
+     * **Tags**
+     * **Total number of variants** - information only
+     * **Number of web variants** - information only
+     * **Number of non-web variants** - information only
+     * **Number of pages using this fragment** - information only
+   * **Cloud Services**
+     * **Cloud Configuration**
+     * **Cloud Service Configurations**
+     * **Facebook page ID**
+     * **Pinterest board**
+   * **References**
+     * A list of references
+   * **Personalization**
+     * **ContextHub Path**
+     * **Segments Path**
+     * **Brand**
 
 ## The Plain HTML Rendition {#the-plain-html-rendition}
 
