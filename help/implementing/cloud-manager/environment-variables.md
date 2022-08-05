@@ -93,6 +93,7 @@ Environment variables can make your `pom.xml` configurations more secure and fle
 You can access environment variables and secrets via XML as follows.
 
 * `${env.VARIABLE_NAME}`
-* `${env.SECRET_NAME}`
 
 See the document [Setting Up Project](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) for an example of how to use both types of variables in a `pom.xml` file.
+
+See the [official Maven documentation](https://maven.apache.org/settings.html#quick-overview) for more details.

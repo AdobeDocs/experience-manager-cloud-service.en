@@ -38,9 +38,8 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
    >[!IMPORTANT]
    >
-   >You will be able to kick-off an ingestion to the destination environment only if you belong to the local **AEM administrators** group in the Cloud Service instance you are transferring content. If you don't belong to the AEM administrators group, you will see an error as shown below when you try to start an ingestion.
-   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam21.png)
-
+   >You will be able to kick-off an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you are unable to start an ingestion, refer to [Unable to Start Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) for more details.
+   
    >[!IMPORTANT]
    >
    >If the setting **Wipe** is enabled before ingestion, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group. You will need to be re-added to the administrators group in order to start an ingestion.
@@ -97,7 +96,25 @@ You can do this by creating a new Ingestion Job and ensure that **Wipe** is disa
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
+## Troubleshooting {#troubleshooting}
 
+### CAM Unable to Retrieve the Migration Token {#cam-unable-to-retrieve-the-migration-token}
+
+The automatic retrieval of the migration token may fail for different reasons, including you [setting up an IP allow list via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) on the target Cloud Service environment.  In such scenarios you will see the following dialog when you attempt to start an ingestion:
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
+
+You will need to retrieve the migration token manually by clicking on the "Get token" link on the dialog. This will open another tab that displays the token. You can then copy the token and paste it into the **Migration token input** field. Now, you should be able to start the ingestion.
+
+>[!NOTE]
+>
+>The token will be available to users who belong to the local **AEM administrators** group on the destination Cloud Service author service. 
+
+### Unable to Start Ingestion {#unable-to-start-ingestion}
+
+You will be able to kick-off an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you don't belong to the AEM administrators group, you will see an error as shown below when you try to start an ingestion. You can either ask your administrator to add you to the local **AEM administrators** or ask for the token itself, which you can then paste into the **Migration token input** field.
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ## What's Next {#whats-next}
 
