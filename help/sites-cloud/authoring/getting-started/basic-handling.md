@@ -66,6 +66,7 @@ From Navigation the consoles available are:
 |Experience Fragments|An [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences.|
 |Assets|The Assets console lets you import and manage [digital assets such as images, videos, documents, and audio files](/help/assets/overview.md). These assets can then be used by any site running on the same AEM instance. You can also create and manage [Content Fragments](/help/assets/content-fragments/content-fragments.md) from the Assets console.|
 |Personalization|This console provides a framework of tools for [authoring targeted content and presenting personalized experiences.](/help/sites-cloud/authoring/personalization/overview.md)|
+|Content Fragments|[Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) allow you to design, create, curate and publish page-independent content. They allow you to prepare structured content ready for use in multiple locations/over multiple channels, and ideal for both page authoring and headless delivery.|
 
 ## Tools Panel {#tools-panel}
 
