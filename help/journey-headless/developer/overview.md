@@ -43,7 +43,7 @@ The following are the personas that interact in this journey.
 |Administrator|Manages the base setup and configuration of AEM|The developer works with the administrator to make configuration changes needed for development.|
 |Content Architect|Analyzes the requirements for the data that must be delivered headlessly and defines the structure for this data|Developers work with the content architect to understand the structure of the data and requirements for delivering it headlessly.|
 
-Information in this journey can of course be useful to all personas, but some information may be superfluous to certain roles. Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/documentation-journeys.md#journeys)
+Information in this journey can be useful to all personas, but some information may not be necessary for certain roles. Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## The Headless Developer Journey {#the-journey}
 
