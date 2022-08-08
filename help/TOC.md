@@ -269,7 +269,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
     + Campaign {#campaign}
-      + + [Creating Newsletters with AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
+      + [Creating Newsletters with AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
   + Administering {#administering}
     + Content Fragments {#content-fragments}
       + [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
