@@ -19,6 +19,22 @@ This video explores how an AEM site is integrated with Experience Platform Launc
 
 The automation setup is designed to work out of the box with an AEM Site built using [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) with the [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) enabled. You can generate a new site that has these features enabled automatically using the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) or by creating a site using a [Site template](/help/journey-sites/quick-site/create-site.md).
 
+## Prerequisites {#prerequisites}
+
+Before using this feature, it is important to follow these instructions to ensure the pre-requisite services have been setup correctly in your environment:
+
+1. Log into Adobe Admin Console (https://adminconsole.adobe.com/).
+1. Ensure the proper IMS Org ID is selected in the upper right corner.
+1. Click on the Products navigation option.
+1. Check that "Adobe Experience Manager as a Cloud Service" has been provisioned for the IMS Org.
+1. Check that "Adobe Analytics" has been provisioned for the IMS Org.
+1. Go to Cloud Manager (https://experience.adobe.com/cloud-manager).
+1. Select the appropriate Program.
+1. Check that the Environment is on the latest version of Cloud Service (if it is not, select Update in the menu options).
+1. Run a Full Stack pipeline in Cloud Manager.
+
+The environment should now be ready for Experience Cloud Setup Automation.
+
 ## How to Setup
 
 1. Navigate to **Sites** and select the root of the site to integrate with Adobe Analytics.
