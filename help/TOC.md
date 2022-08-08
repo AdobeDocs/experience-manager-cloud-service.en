@@ -29,6 +29,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + General AEMaaCS Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.6.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
       + [Release Notes for 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
       + [Release Notes for 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
       + [Release Notes for 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
@@ -284,6 +285,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
       + [Structure Tree](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
       + [Preview - JSON Representation](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+      + [Content Fragments Console - Keyboard Shortcuts](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
     + Site Creation {#site-creation}
       + [Creating a New Site](/help/sites-cloud/administering/site-creation/create-site.md)
       + [Enable Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -390,6 +392,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [XMP metadata](/help/assets/xmp-metadata.md)
     + [MediaLibrary capabilities](/help/assets/medialibrary.md)
     + [Import and export asset metadata](/help/assets/metadata-import-export.md)
+    + [Configure asset upload restrictions](/help/assets/configure-asset-upload-restrictions.md)
   + Share and distribute assets {#brand-portal}
     + [Configure [!DNL Assets] with [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
     + [Publish assets to [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
