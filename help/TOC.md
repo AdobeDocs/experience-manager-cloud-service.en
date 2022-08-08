@@ -334,6 +334,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Integrating with Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
     + [Integrating with Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
     + [IMS Configuration for use when Integrating with Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
+    + [Integrating with Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
     + [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
     + [IMS Configuration for use when Integrating with Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
