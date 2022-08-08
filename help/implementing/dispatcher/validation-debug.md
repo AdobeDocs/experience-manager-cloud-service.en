@@ -73,6 +73,10 @@ The following files are customizable and will get transferred to your Cloud inst
 
 You can have one or more of these files. They contain `<VirtualHost>` entries that match host names and allow Apache to handle each domain traffic with different rules. Files are created in the `available_vhosts` directory and enabled with a symbolic link in the `enabled_vhosts` directory. From the `.vhost` files, other files like rewrites and variables will be included.
 
+>[!NOTE]
+>
+>In flexible mode you should use relative paths instead of absolute paths.
+
 * `conf.d/rewrites/rewrite.rules`
 
 This file is included from inside your `.vhost` files. It has a set of rewrite rules for `mod_rewrite`.
@@ -218,6 +222,10 @@ The script has the following three phases:
 3. Checks that the subset of the Dispatcher SDK configuration files, which are intended to be immutable as described in the [File structure section](##flexible-mode-file-structure), has not been modified.
 
 During a Cloud Manager deployment, the `httpd -t` syntax check will be executed as well and any errors will be included in the Cloud Manager `Build Images step failure` log.
+
+>[!NOTE]
+>
+>See the [Automatic loading and validation](#automatic-loading) section for an efficient alternative to running `validate.sh` after each configuration modification.
 
 ### Phase 1 {#first-phase}
 
@@ -419,6 +427,43 @@ When running Dispatcher locally, logs are printed directly to the terminal outpu
 
 Logs for cloud environments are exposed through the logging service available in Cloud Manager.
 
+### Automatic loading and validation {#automatic-loading}
+
+>[!NOTE]
+>
+>Due to a Windows operating system limitation, this feature is available only for Linux users.
+
+Instead of running local validation (`validate.sh`) and starting the docker container (`docker_run.sh`) each time the configuration is modified, you can alternatively run the `docker_run_hot_reload.sh` script.  The script watches for any changes to the configuration and will automatically reload it and re-run the validation. By using this option you can save a significant amount of time when debugging.
+
+You can run the script by using the following command: `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
+
+Note that the first lines of output will look similar to what would run for `docker_run.sh`, for example:
+
+```
+~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
+opt-in USE_SOURCES_DIRECTLY marker file detected
+Running script /docker_entrypoint.d/10-check-environment.sh
+Running script /docker_entrypoint.d/15-check-pod-name.sh
+Running script /docker_entrypoint.d/20-create-docroots.sh
+Running script /docker_entrypoint.d/30-wait-for-backend.sh
+Waiting until host.docker.internal is available
+host.docker.internal resolves to 192.168.65.2
+Running script /docker_entrypoint.d/40-generate-allowed-clients.sh
+Running script /docker_entrypoint.d/50-check-expiration.sh
+Running script /docker_entrypoint.d/60-check-loglevel.sh
+Running script /docker_entrypoint.d/70-check-forwarded-host-secret.sh
+Running script /docker_entrypoint.d/80-frontend-domain.sh
+Running script /docker_entrypoint.d/zzz-import-sdk-config.sh
+WARN Mon Jul  4 09:53:54 UTC 2022: Pseudo symlink conf.d seems to point to a non-existing file!
+INFO Mon Jul  4 09:53:55 UTC 2022: Copied customer configuration to /etc/httpd.
+INFO Mon Jul  4 09:53:55 UTC 2022: Start testing
+Cloud manager validator 2.0.43
+2022/07/04 09:53:55 No issues found
+INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
+INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+
+```
+
 ## Different Dispatcher configurations per environment {#different-dispatcher-configurations-per-environment}
 
 Currently, the same Dispatcher configuration is applied to all AEM as a Cloud Service environments. The runtime will have an environment variable `ENVIRONMENT_TYPE` that contains the current run mode (dev, stage or prod) as well as a define. The define can be `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` or `ENVIRONMENT_PROD`. In the Apache configuration, the variable can be used directly in an expression. Alternatively, the define can be used to build logic:
@@ -495,11 +540,14 @@ $ docker exec d75fbd23b29 httpd-test
 With the Cloud Manager 2021.7.0 release, new Cloud Manager programs generate maven project structures with [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) or higher,which includes the file **opt-in/USE_SOURCES_DIRECTLY**. This removes previous limitations of the [legacy mode](/help/implementing/dispatcher/validation-debug-legacy.md) around the number and size of files, also causing the SDK and runtime to validate and deploy the configuration in an improved way. If your dispatcher configuration does not have this file, it is highly recommended that you migrate. Use the following steps to ensure a safe transition:
 
 1. **Local testing.** Using the most recent dispatcher tools SDK, add the folder and file `opt-in/USE_SOURCES_DIRECTLY`. Follow the "local validation" instructions in this article to test that the dispatcher works locally.
-2. **Cloud development testing:**
+1. **Cloud development testing:**
    * Commit the file `opt-in/USE_SOURCES_DIRECTLY` to a git branch that is deployed by the non-production pipeline to a Cloud development environment.
    * Use Cloud Manager to deploy to a Cloud development environment.
    * Test thoroughly. It is critical to validate that your apache and dispatcher configuration behaves as you expect before deploying changes to higher environments. Check all behavior related to your custom configuration! File a customer support ticket if you believe the deployed dispatcher configuration does not reflect your custom configuration.
-3. **Deploy to production:**
+   >[!NOTE]
+   >
+   >In flexible mode you should use relative paths instead of absolute paths.
+1. **Deploy to production:**
    * Commit the file `opt-in/USE_SOURCES_DIRECTLY` to a git branch that is deployed by the production pipeline to the Cloud stage and production environments.
    * Use Cloud Manager to deploy to staging.
    * Test thoroughly. It is critical to validate that your apache and dispatcher configuration behaves as you expect before deploying changes to higher environments. Check all behavior related to your custom configuration! File a customer support ticket if you believe the deployed dispatcher configuration does not reflect your custom configuration.
