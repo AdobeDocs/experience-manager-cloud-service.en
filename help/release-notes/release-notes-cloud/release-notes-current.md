@@ -61,9 +61,11 @@ You can now configure Adobe Experience Manager Assets to [restrict the type of a
 
 ![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
+* **Use Adaptive Forms wizard in local language**: You can use the wizard in language of your choice. It now supports all the languages supported by Adobe Experience Manager.
+
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
 
-* **Launch Adaptive Form creation wizard from embed form component**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page.
+<!-- * **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. -->
 
 ![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png)
 
