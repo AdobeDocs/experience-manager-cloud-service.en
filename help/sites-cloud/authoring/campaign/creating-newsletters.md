@@ -1,6 +1,6 @@
 ---
 title: Creating Campaign Newsletters with AEM
-description: Learn how to use AEM to create newsletters that can be sent with Adobe Campaign Classic.
+description: Learn how to use AEM as a Cloud Service to create newsletters that can be sent with Adobe Campaign Classic.
 feature: Authoring
 role: Author
 exl-id: 60a6a9d0-f5e6-424f-b320-dd4943c55d45
@@ -8,9 +8,9 @@ exl-id: 60a6a9d0-f5e6-424f-b320-dd4943c55d45
 
 # Creating Campaign Newsletters with AEM {#creating-newsletters}
 
-In this document you will learn how to use AEM to create newsletters that can be sent with Adobe Campaign Classic.
+In this document you will learn how to use AEM as a Cloud Service to create newsletters that can be sent with Adobe Campaign Classic.
 
-By leveraging the integration between AEM as a Cloud Service and Adobe Campaign Classic, you can create your newsletters using AEM's powerful authoring tools. Then when you are ready to send your newsletter, you can send it using Campaign's recipient management and distribution features.
+By leveraging the integration between AEM as a Cloud Service and Adobe Campaign Classic, you can create your newsletters using AEM's powerful authoring tools. Then when you are ready to send your newsletter, you can use Campaign's recipient management and distribution features to send it.
 
 ## Prerequisites {#prerequisites}
 
@@ -100,51 +100,131 @@ You now have a newsletter ready to send with Adobe Campaign.
 
 ## Publishing Your Newsletter {#publishing-newsletter}
 
-1. When you are ready to send your newsletter, click on the **Page Information** button on top left and click on **Publish Page**.
-1. Select the configuration on which the page has to be published. Click **Publish**.
-![publish page](assets/publish.png)
-1. The newsletter page has been published on the publish instance and also on the AEM Adobe Campaign Classic configuration.
-    * Now the newsletter page will be visible in Adobe Campaign Classic
-1. Click on the Page Information button and click **Start Workflow**.
-1. Select **Approve for Adobe Campaign** as the workflow model and click the **Start Workflow** button.
-1. A disclaimer appears on the top of the page. Click **Complete** to confirm the review and again click **OK**.
-1. Click **Complete** and select **Newsletter approval** in the Next Step drop-down list and click the **OK** button.
+You must publish your newsletter to make it available to Adobe Campaign to send.
+
+1. Using [column view](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) in the sites console, find the newsletter that you previously created (in this case, **First newsletter for WKND escape summer campaign**), select it, and then click the **Page Information** button on top left and click on **Publish Page**.
+
+1. Select the configuration(s) for which the page should be published and click **Publish**.
+
+   ![Publish page](assets/publish.png)
+
+The newsletter page is now published to the AEM publish instance and is visible in Adobe Campaign Classic. To be able to select it within Adobe Campaign, it must be approved.
+
+1. Click on the **Page Information** button for the newsletter once more and select **Start Workflow**.
+
+1. Select **Approve for Adobe Campaign** as the workflow model (optionally providing a description) and click the **Start Workflow** button.
+
+   ![Start workflow](assets/start-workflow.png)
+
+1. A banner appears at the top of the newsletter page editor providing next steps in the approval process. Click **Complete**.
+
+   ![Approve worklfow](assets/approve-workflow.png)
+
+1. In the **Complete Work Item** dialog, select **Newsletter Review (Administrator)** in the **Next Step** drop-down list and click the **OK** button.
+
+   ![Newsletter review](assets/newsletter-review.png)
+
+1. In the banner that appears at the top of the newsletter page editor, again click **Complete**.
+
+1. In the **Complete Work Item** dialog, select **Newsletter approval** in the **Next Step** drop-down list and click the **OK** button.
+
+   ![Newsletter approval](assets/newsletter-approval.png)
+
+1. When the dialog closes, the banner that appeared at the top of the newsletter page editor disappears because the approval workflow is complete.
+
+The newsletter is now published in AEM and approved for use in Adobe Campaign.
+
+>[!TIP]
+>
+>The workflow steps described are simplified here to illustrate the process. In a normal work flow, creating the newsletter and approving it work normally be different roles
+>
+>See the document [Working with Workflows](/help/sites-cloud/authoring/workflows/overview.md) for more details on using workflows.
 
 ## Creating a Recipient {#creating-recipient}
 
-1. Open the Adobe Campaign Classic server by using the Adobe Campaign Classic client console.
-1. Go to the Explorer view.
-1. In the tree view on the left, go to Profiles and Targets and select **Recipients**.
-![recipients](assets/recipients.png)
-1. Fill the Details of the recipient.
-   * Enter the First name.
-   * Enter the Last Name.
-   * Enter the Email.
-   * Click **Save**.
+To be able to send the newsletter that you created in AEM, you must first define your recipients in Adobe Campaign Classic.
 
-## Creating an Email Delivery in Adobe Campaign Classic {#create-delivery}
+1. Log into Adobe Campaign Classic using the client console.
 
-1. Open the Adobe Campaign Classic server by using the Adobe Campaign Classic client console.
-1. Go to the Explorer view.
-1. In the tree view on the left, select **Campaign Management** and select **Deliveries**.
-1. On top right corner, click **New**.
-1. Select **Email Delivery with AEM Content** from the Delivery template drop-down list and click **Continue**.
-1. Click on From link under Email parameters.
-    * Enter the Sender address.
-    * Enter the From field.
-    * Click **OK**.
-1. Click **To** link then click **Add** on the select target screen.
-1. Select **A recipient** and click **Next**.
-![target type](assets/publish.png)
-1. Select the recipient created [previously](#creating-recipient) and click **Finish**.
-1. The recipient has been selected. Click **OK**.
-1. Click **Synchonize**.
-1. Select the email page from the list, click **OK**.
-1. The email template is synchronized. Click **Refresh Content** if it is not loaded.
+1. Select **Tools** -&gt; **Explorer** from the menu bar.
+
+1. In the explorer, navigate to the **Profiles &amp; Targets** -&gt; **Recipients** node.
+
+   ![Recipients](assets/recipients.png)
+
+1. Click on **New** in the toolbar and provide the details of the recipient.
+
+   * First name
+   * Last Name
+   * Email address
+
+1. Click **Save**.
+
+You now have a recipient to whom you can deliver your newsletter using Adobe Campaign Classic.
+
+## Creating an Email Delivery {#create-delivery}
+
+The final step is to send out your newsletter that you created in AEM to the recipient you added in Adobe Campaign Classic.
+
+1. Log into Adobe Campaign Classic using the client console.
+
+1. Select **Tools** -&gt; **Explorer** from the menu bar.
+
+1. In the explorer, navigate to the **Campaign Management** -&gt; **Deliveries** node and click **New**.
+
+   ![Delivery of AEM Content](assets/delivery-aem-content.png)
+
+1. In the **Delivery** dialog, select **Email Delivery with AEM Content** as the **Delivery template** from the drop-down list and click **Continue**.
+
+   ![AEM content delivery](assets/aem-content-delivery.png)
+
+1. In the **Email parameters** section, click the **From** link and enter the sender's information and click **OK**.
+
+    * Sender address
+    * From field
+
+    ![Define from field](assets/delivery-from.png)
+
+1. In the **Email parameters** section, click the **To** link to open the **Select Target** dialog and then click **Add**.
+
+   ![Select target](assets/select-target.png)
+
+1. In the **Select target element** dialog, select **A recipient** and click **Next**.
+
+   ![Select target element](assets/select-target-element.png)
+
+1. Using the filters, select the recipient you [created previously](#creating-recipient) and click **Finish**.
+
+   ![Select recipient](assets/select-target-element-recipient.png)
+
+1. Back in the **Select Target** dialog, click **OK**.
+
+1. In the delivery window, click **Synchronize**.
+
+   ![Synchronize](assets/synchronize.png)
+
+1. In the **Synchronize with AEM content** dialog, select the newsletter you created previously from the list, click **OK**.
+
+1. The email content of Adobe Campaign is synchronized with the newsletter content you created in AEM.
+
+   * Click **Refresh Content** if the content is not loaded automatically.
+
 1. Click **Send** to send the email.
-1. On next screen, select **Delivery as soon as possible** and then click **Analyze**.
-![delivery target](assets/deliverytarget.png)
-1. Now as the delivery has been created, click **Confirm Delivery** to start sending the email. Click **Yes** to confirm.
-![confirm delivery](assets/confirmdelivery.png)
+
+1. In the **Send to main delivery target** dialog, select **Deliver as soon as possible** and then click **Analyze**.
+
+   ![Delivery analysis](assets/delivery-analysis.png)
+
+1. The analysis step builds the delivery, combining the content with the recipients. Now that the delivery has been created, click **Confirm Delivery** to sending the email. Click **Yes** to confirm.
+
 1. The delivery has started. Click **Close**.
+
+   ![Delivery](assets/delivering.png)
+
 1. Click **Save** to save the delivery.
+
+Your newsletter has been sent!
+
+>[!TIP]
+>
+>This example showed a simplified delivery of sending a newsletter to a single recipient. Of course a normal delivery would contain many different recipients, which Adobe Campaign makes simple to manage. Please refer to the [Adobe Campaign Classic documentation](https://experienceleague.adobe.com/docs/campaign-classic.html) for more details on delivery and recipient management.
