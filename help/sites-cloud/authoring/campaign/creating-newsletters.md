@@ -1,35 +1,106 @@
 ---
-title: Creating an Adobe Experience Manager Newsletter
-description: Creating an Adobe Experience Manager Newsletter
-feature: Administering
-role: Admin
+title: Creating Campaign Newsletters with AEM
+description: Learn how to use AEM to create newsletters that can be sent with Adobe Campaign Classic.
+feature: Authoring
+role: Author
 exl-id: 60a6a9d0-f5e6-424f-b320-dd4943c55d45
 ---
-# Creating an Adobe Experience Manager Newsletter {#creating-newsletter}
 
-Before you can perform the steps presented below you need to first [integrate](/help/sites-cloud/integrating/integrating-campaign-classic.md) Adobe Campaign Classic and AEM as a Cloud Service. Having configured both Adobe Campaign Classic and AEM as a Cloud Service, you will now learn how to create an Adobe Experience Manager Newsletter.
+# Creating Campaign Newsletters with AEM {#creating-newsletters}
 
-1. From the AEM author instance, click the Adobe Experience Manager logo in the upper left side of the page and select **Sites**.
-1. Select Campaign, click **Create→Page**.
-![brand create](assets/create.png)
-1. Select Brand and click **Next**.
-1. Enter a title and click **Create** and **Done**.
-1. To create a Campaign page, go to **Campaigns→AdobeDemo→Master** and click **Create→Page**.
-![campaign page](assets/campaignpage.png)
-1. Select the Campaign template then click **Next** and **Done**.
-1. Enter a title , click **Create** and **Done**.
-1. Go to **Campaign→AdobeDemo→Master** and select the CampaignPage checkbox. Click **Properties** on the top left.
-![campaign properties](assets/propertiesedit.png)
-1. Go to the **Cloud Service** tab:
-    * Select Adobe Campaign from the Cloud Service Configurations drop-down list.
-    * Select the desired name for the Adobe Campaign configuration.
-    * **Save** and **Close**.
-1. To create an Adobe Campaign Classic Email page, go to **Campaign→AdobeDemo→Master→CampaignPage** and click **Create→Page**.
-1. Select the Adobe Campaign Email (for example, AC 6.1) template and click **Next**.
-1. On the Create page, enter the title for the newsletter, click **Create** and **Done**.
-1. Go to **Campaign→AdobeDemo→Master→CampaignPage**, select the Campaign Classic checkbox and click on **Edit** on top left to open the email page.
-1. Edit the Adobe Campaign Classic email newsletter page as per your requirements.
-1. Click on the **Page Information** button on top left and click on **Publish Page**.
+In this document you will learn how to use AEM to create newsletters that can be sent with Adobe Campaign Classic.
+
+By leveraging the integration between AEM as a Cloud Service and Adobe Campaign Classic, you can create your newsletters using AEM's powerful authoring tools. Then when you are ready to send your newsletter, you can send it using Campaign's recipient management and distribution features.
+
+## Prerequisites {#prerequisites}
+
+Before you can create a newsletter with AEM and send it with Campaign, you must first [integrate Adobe Campaign Classic and AEM as a Cloud Service.](/help/sites-cloud/integrating/integrating-campaign-classic.md)
+
+## Creating Newsletter Structure {#create-structure}
+
+Newsletter content is managed in AEM much like you would manage your site content. You start by creating a "site" to hold your content. Within this "site" you can collect your newsletters by brand.
+
+1. Sign into your AEM author instance.
+
+1. From the main navigation page, open the **Sites** console.
+
+1. In a standard installation of AEM, there will be an existing **Campaign** folder. Select it and click on the **Create** button and then **Page**.
+
+   ![Create page](assets/create-page.png)
+
+1. Select **Brand** as your site template and click **Next**.
+
+   ![Create brand](assets/create-brand.png)
+
+1. Enter a **Title** and click **Create** and then **Done**.
+
+   ![Provide brand details](assets/create-brand-page.png)
+
+You now have a basic content structure to create your campaigns.
+
+![Content structure](assets/content-structure.png)
+
+## Creating a Campaign {#create-campaign}
+
+Now that you have a basic content structure for your campaign, you can create the campaign itself. The campaign will be used to organize possibly multiple newsletters.
+
+1. Using [column view](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) in the sites console, select the brand that you previously created (in this case, **WKND Escapes**) and then select **Master Area**, which was automatically created for you, and then click the **Create** button and then **Page**.
+
+   ![Create campaign page](assets/create-campaign-page.png)
+
+1. Select **Campaign** as the template then click **Next** and **Done**.
+
+   ![Select campaign template](assets/select-campaign-template.png)
+
+1. Enter a **Title** for the campaign and then click **Create** and **Done**.
+
+   ![Campaign title](assets/campaign-title.png)
+
+You now have a campaign where you can create your newsletters.
+
+![Campaign structure](assets/campaign-structure.png)
+
+## Selecting Campaign Configuration {#campaign-configuration}
+
+AEM can support multiple integration configurations. For your new campaign, you must define which configurations to use to send your newsletter content.
+
+1. Using [column view](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) in the sites console, find the campaign that you previously created (in this case, **WKND Escape Summer Campaign**) and then select it using the checkbox and then click the **Properties** button on toolbar.
+
+   ![Select campaign](assets/select-campaign.png)
+
+1. In the **Properties** window, select the **Cloud Service** tab to define the integration to use with this campaign.
+
+   * Select **Adobe Campaign** from the **Cloud Service Configurations** drop-down list.
+   * Select the desired Adobe Campaign integration configuration from the **Adobe Campaign** drop-down list.
+   * Click **Save &amp; Close**.
+
+   ![Campaign configuration properties](assets/campaign-configuration-properties.png)
+
+Your campaign is now linked to your Adobe Campaign integration. You are ready to create a newsletter in AEM and send it with Adobe Campaign.
+
+## Create a Newsletter {#create-newsletter}
+
+You create and manage your newsletters under the campaign content structure that you have already created and configured.
+
+1. Using [column view](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) in the sites console, find the campaign that you previously configured (in this case, **WKND Escape Summer Campaign**), select it, and then click the **Create** button and then **Page**.
+
+   ![Create newsletter](assets/create-newsletter.png)
+
+1. In the create page wizard, select the **Adobe Campaign Email (AC 6.1)** template and click **Next**.
+
+   ![Select campaign email template](assets/adobe-campaign-email-template.png)
+
+1. For the **Properties** step of the wizard, enter the **Title** for the newsletter, click **Create** and **Open**.
+
+   ![Title for the newsletter](assets/create-newsletter-wizard-properties.png)
+
+1. Edit the newsletter page as you would any other AEM content page to meet your requirements.
+
+You now have a newsletter ready to send with Adobe Campaign.
+
+## Publishing Your Newsletter {#publishing-newsletter}
+
+1. When you are ready to send your newsletter, click on the **Page Information** button on top left and click on **Publish Page**.
 1. Select the configuration on which the page has to be published. Click **Publish**.
 ![publish page](assets/publish.png)
 1. The newsletter page has been published on the publish instance and also on the AEM Adobe Campaign Classic configuration.
