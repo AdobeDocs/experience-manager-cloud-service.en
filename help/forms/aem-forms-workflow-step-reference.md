@@ -133,6 +133,23 @@ You can also use the component to control the behavior of the task. For example,
 >
 >The options to save the Assign Task step as draft and to retrieve the history of the Assign Task step are disabled when you configure an AEM workflow model for external data storage. Also, in Inbox, the option to save is disabled. 
 
+## Convert to PDF/A step {#convert-pdfa}
+
+PDF/A is an archival format for long-term preservation of the document’s content, by embedding the fonts and uncompressing the file. As a result, a PDF/A document is typically larger than a standard PDF document. You can use the ***Convert to PDF/A*** step in an AEM Workflow to convert your PDF documents to PDF/A format. 
+
+The convert to PDF/A step has following properties:
+
+**[!UICONTROL Input Document]**: The input document can be relative to the payload, have an absolute path, can be provided as payload or stored in a variable of Document data type.
+
+**[!UICONTROL Conversion Options]**: Using this property, settings for converting PDF documents to PDF/A documents are specified. Various options available under this tab are:
+* **[!UICONTROL Compliance]**: Specifies the standards to which the output PDF/A document must comply.
+* **[!UICONTROL Result Level]**: Specifies the result level as PassFail, Summary or Detailed, for the conversion output.
+* **[!UICONTROL Color Space]**: Specifies the predefined color space that are used for output PDF/A files. 
+* **[!UICONTROL Optional Content]**: Allows specific graphic objects and/or annotations to be visible in output PDF/A document, only when a specified set of criteria is met.
+
+**[!UICONTROL Output Documents]**: Specifies the location to save the output file. The output file can be saved at a location relative to payload, overwrites the payload, if the payload is a file, or in a variable of Document data type. 
+
+
 ## Send Email Step {#send-email-step}
 
 Use the email step to send an email, for example an email with a Document of Record, link of an Adaptive Form <!-- , link of an interactive communication-->, or with an attached PDF document. Send Email step supports [HTML email](https://en.wikipedia.org/wiki/HTML_email). HTML emails are responsive and adapt to the recipients' email client and screen size. You can use an HTML email template to define appearance, color-scheme, and behavior of the email.
@@ -189,6 +206,31 @@ If you specify the path of a folder, for example, attachments, all the files dir
 **[!UICONTROL Save Generated Document of Record using below options]**: Specify the location to keep a Document of Record file. You can choose to overwrite the payload folder, place Document of Record at a location within the payload directory, or store the Document of Record in a variable of Document data type.
 
 **[!UICONTROL Locale]**: Specify the language of the Document of Record. Select **[!UICONTROL Literal]** to select the locale from a drop-down list or select **[!UICONTROL Variable]** to retrieve the locale from the value stored in a variable of string data type. You must define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
+
+## Invoke DDX step {#invokeddx}
+
+Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX defines a set of operations, which can be applied on one or more input documents to generate one or more output documents.  A single DDX can be used with a range of source documents. You can use the ***Invoke DDX step*** in an AEM Workflow to perform various operations, like Assembling Disassembling documents, Creating, and modifying Acrobat and XFA Forms, and other described in [DDX Reference documentation](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).                    
+
+Invoke DDX step has the following properties: 
+
+**[!UICONTROL Input Documents]**: Used to set properties of an input document. Various options available under this tab are:
+* **[!UICONTROL Specify DDX Using]**: Specifies the input documents relative to the payload, have an absolute path, can be provided as payload, or stored in a variable of Document data type.
+* **[!UICONTROL Create Map from Payload]**: Adds all the documents under the payload folder to Input Document’s Map for the invoke API in Assembler. The node name for each document is used as a key in the map.
+* **[!UICONTROL Input Document’s Map]**: Option is used to add multiple entries using **[!UICONTROL ADD]** button. Each entry represents the document’s key in the map and the document's source.
+
+**[!UICONTROL Environment Options]**: This option is used to set processing settings for invoke API. Various options available under this tab are:
+* **[!UICONTROL Validate Only]**: Checks the validity of the input DDX document.
+* **[!UICONTROL Fail on Error]**: Checks whether the invoke API service fails, in case of an error. By default, its value is set to False.
+* **[!UICONTROL First Bates Number]**: Specifies the number, which is self-incrementing. This self-incrementing number is displayed on each consecutive page automatically.  
+* **[!UICONTROL Default Style]**: Sets the default style for the output file.
+
+>[!NOTE]
+>
+>Environment options are kept in sync with HTTP APIs.
+
+**[!UICONTROL Output Documents]**: Specifies the location to save the output file. Various options available under this tab are:
+* **[!UICONTROL Save Output in Payload]**: Saves output documents under the payload folder, or overwrites the payload, in case, the payload is a file.
+* **[!UICONTROL Output Document’s Map]**: Specifies the location to save each document file explicitly, by adding one entry per document. Each entry represents the document and the location, where to save it. If there are multiple output documents, this option is used.   
 
 ## Invoke Form Data Model Service step {#invoke-form-data-model-service-step}
 
