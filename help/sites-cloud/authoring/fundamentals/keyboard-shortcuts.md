@@ -5,7 +5,7 @@ exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 ---
 # Keyboard Shortcuts for Page Editing {#keyboard-shortcuts-when-editing-pages}
 
-Various keyboard shortcuts are available throughout AEM. Some apply when editing pages, others to the [use of consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Various keyboard shortcuts are available throughout AEM. Some apply when editing pages, others to the [use of consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), and some in particular to the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Various keyboard shortcuts are available throughout AEM. Some apply when editing
 >
 >Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. The user must click on the top editor bar or go back to the Edit mode for the shortcut to once again become available.
 
-Various keyboard shortcuts are also available for desktop users when using the [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Various keyboard shortcuts are also available for desktop users when using the [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), and some in particular to the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
