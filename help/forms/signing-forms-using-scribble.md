@@ -15,10 +15,33 @@ exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 
 You can use the **Scribble Signature** component and **Signature Step** component to draw (Scribble) signature on an Adaptive Form. The Signature step component displays a PDF version of the Adaptive Form. You require a Document of Record option enabled or form template based Adaptive Forms to use the Signature step component.
 
-Both the components provide a window, as displayed below, to sign a form. You can also click the geolocation icon ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) to add geolocation to the signature.
-
 ![Scribble sign dialog](assets/scribble-signature.png)
 
+## Various Options available in Signature Window
+
+* **A:** Click the **Paint Brush** icon to draw your signature on canvas.
+* **B:** Click the **Clear** icon to clear the signature on canvas.
+* **C:** Click the **Geolocation** icon to add geolocation along with the signature.
+* **D:** Click the **Keyboard** icon to type your name on canvas. 
+
+ Once you tap the Done ![aem_forms_save](assets/aem_forms_save.png) icon in Scribble signature window, you cannot edit the signature. In case, if you want to edit the signature, you have to disregard the current signature and re-sign using the above Paint Brush/Keyboard option.
+
+You can tap the **Configure** ![](assets/configure.png) icon to set the aspect ratio of Scribble Signature canvas. 
+* When the aspect ratio of the Scribble Signature canvas is less than 1, the geolocation information is added at the bottom of the Scribble Signature canvas.
+
+
+* When the aspect ratio of the Scribble Signature canvas is more than 1, the geolocation information is added to the right-side of the Scribble Signature canvas. 
+ 
+
+ ![scribble signature-bottom](assets/scribble-signature-aspectratio.PNG)
+
+
+
+   >[!NOTE]
+   >
+   >Signatures are always saved in a PNG format.
+   >
+   
 ## Configure an Adaptive Form to use Scribble Signature {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Create a Document of Record option enabled or form template based Adaptive Form. For step-by-step information, see [Creating an Adaptive Form](creating-adaptive-form.md).
@@ -30,7 +53,7 @@ Both the components provide a window, as displayed below, to sign a form. You ca
    >
    >The Signature Step component takes up full width available for the form. It is recommended to not have any other component on the section containing the Signature Step component.
 
-1. In the Content browser, tap **Form Container**, and tap the **Configure** ![](assets/configure.png) icon. It opens properties browser and displays Adaptive Form container properties. Navigate to **Adaptive Form Container** &gt; **Electronic Signature** and deselect the **Enable Adobe Sign** option. Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
+1. In the Content browser, tap **Form Container**, and tap the **Configure** ![](assets/configure.png) icon. It opens properties browser and displays Adaptive Form container properties. Navigate to **Adaptive Form Container** &gt; **Electronic Signature** and deselect the **Enable Adobe Sign** option. Tap the Done ![aem_forms_save](assets/aem_forms_save.png) icon to save the changes.
 
    >[!NOTE]
    >
@@ -46,7 +69,7 @@ Both the components provide a window, as displayed below, to sign a form. You ca
 
     * **CSS Class**: Specify CSS class of the client library, if any. It is recommended to use [themes](themes.md) and [in-line styles](inline-style-adaptive-forms.md) instead of CSS Class.
 
-   Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes. The Signature is configured sucessfully.
+   Tap the Done ![aem_forms_save](assets/aem_forms_save.png) icon to save the changes. The Signature is configured sucessfully.
 
    Now, when you fill a form, a PDF version of Adaptive Form is displayed and options to sign the PDF document are provided. For detailed information, see [Sign an Adaptive Form using Scribble Signature](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 
@@ -56,9 +79,9 @@ Both the components provide a window, as displayed below, to sign a form. You ca
 
    ![Signature screen for EchoSign page](assets/esignscribblesign.jpg)
 
-1. Click **[!UICONTROL Sign]**. The scribble sign dialog appears. Sign the form and click the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the signature.
+1. Click **[!UICONTROL Sign]**. The scribble sign dialog appears. Sign the form and click the Done ![aem_forms_save](assets/aem_forms_save.png) icon to save the signature.
 
-   ![Scribble sign dialog](assets/scribblewidget.jpg)
+   ![Scribble sign dialog](assets/scribblewidget.png)
 
 1. Click complete to finish the signing process.
 
