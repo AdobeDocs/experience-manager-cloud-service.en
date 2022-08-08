@@ -267,6 +267,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Understanding Segmentation](/help/sites-cloud/authoring/personalization/segmentation.md)
       + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
+    + Campaign {#campaign}
+      + + [Creating Newsletters with AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
   + Administering {#administering}
     + Content Fragments {#content-fragments}
       + [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -334,7 +336,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [IMS Configuration for use when Integrating with Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
     + [Integrating with Adobe Campaign Classic](/help/sites-cloud/integrating/integrating-campaign-classic.md)
-    + [Creating an Adobe Experience Manager Newsletter](/help/sites-cloud/integrating/creating-newsletter.md)
 + Assets {#assets}
   + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
   + [Overview and what's new](/help/assets/overview.md)
