@@ -48,18 +48,25 @@ You can also use the component to control the behavior of the task. For example,
 * **[!UICONTROL Time-out after Due Date]**: Select this option to enable the Timeout Handler selection field.
 * **[!UICONTROL Timeout Handler]**: Select the script to be executed when the assign task step crosses the due date. Scripts placed in the CRX-repository at [apps]/fd/dashboard/scripts/timeoutHandler are available for selection. The specified path does not exist in crx-repository. An administrator creates the path before using it.
 * **[!UICONTROL Highlight the action and comment from the last task in Task Details]**: Select this option to display the last action that was taken and comment received on the task details section of a task.
-* **[!UICONTROL Type]**: Choose the type of document to be filled when the workflow is started. You can choose an Adaptive Form, read-only Adaptive Form, a non-interactive PDF document. <!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+* **[!UICONTROL Type]**: Choose the type of document to be filled when the workflow is started. You can choose an Adaptive Form, read-only Adaptive Form, a non-interactive PDF document. 
+
+<!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+
+
 * **[!UICONTROL Use Adaptive Form]**: Specify the method to locate the input Adaptive Form. This option is available if you select Adaptive Form or Read-only Adaptive Form from the Type drop-down list. You can use the Adaptive Form submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path.  
   You can associate multiple Adaptive Forms with a workflow. As a result, you can specify an Adaptive Form on the runtime using the available input methods.
 
 <!-- 
+
 * **[!UICONTROL Use Interactive Communication]**: Specify the method to locate the input interactive communication. You can use the interactive communication submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
 
 > [!NOTE]
 >
->You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  --> 
+>You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  
 
-* **[!UICONTROL Adaptive Form Path]**: Specify the path of the Adaptive Form.<!--  or Interactive Communication.--> You can use the Adaptive Form <!-- or interactive communication --> that is submitted to the workflow, available at an absolute path, or retrieve the Adaptive Form from a path stored in a variable of string data type.
+--> 
+
+* **[!UICONTROL Adaptive Form Path]**: Specify the path of the Adaptive Form. You can use the Adaptive Form that is submitted to the workflow, available at an absolute path, or retrieve the Adaptive Form from a path stored in a variable of string data type.
 * **[!UICONTROL Select input PDF using]**: Specify the path of a non-interactive PDF document. The field is available when you choose a non-interactive PDF document in the Type field. You can select the input PDF using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/PDF/credit-card.pdf. The path does not exist in crx-repository. An administrator creates the path before using it. You require a Document of Record option enabled or form template based Adaptive Forms for using the PDF Path option.
 * **[!UICONTROL For completed task, render the Adaptive Form as]**: When a task is marked complete, you can render the Adaptive Form as a read-only Adaptive Form or a PDF document. You require a Document of Record option enabled or form template based Adaptive Forms for rendering the Adaptive Form as Document of Record.
 * **[!UICONTROL Pre-populated]**: The following fields listed below serve as inputs to the task:
@@ -67,13 +74,23 @@ You can also use the component to control the behavior of the task. For example,
     * **[!UICONTROL Select input data file using]**: Path of input data file (.json, .xml, .doc, or form data model). You can retrieve the input data file using a path that is relative to the payload or retrieve the file stored in a variable of Document, XML, or JSON data type. For example, the file contains the data submitted for the form through an AEM Inbox application. An example path is [Payload_Directory]/workflow/data.
     * **[!UICONTROL Select input attachments using]**: Attachments available at the location are attached to the form associated with the task. The path can be relative to the payload or retrieve the attachment stored in a variable of a document. An example path is [Payload_Directory]/attachments/. You can specify attachments placed relative to the payload or use a document type (Array list > Document) variable to specify an input attachment for the Adaptive Form.
     
-    <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+    <!-- 
+    
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
-    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. -->
+    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. 
+    
+    -->
+
     * **[!UICONTROL Request Attribute Mapping]**: Use the Request Attribute Mapping section to define the [name and value of the request attribute](work-with-form-data-model.md#bindargument). Retrieve the details from the data source based on the attribute name and value specified in the request. You can define a request attribute value using a literal value or a variable of String data type.  
-     <!--  The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. -->
+    
+     <!--  
+     
+     The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
+     
+     -->
 
 * **[!UICONTROL Submitted information]**: The following fields listed below serve as output locations to the task:
 
@@ -81,9 +98,13 @@ You can also use the component to control the behavior of the task. For example,
     * **[!UICONTROL Save attachments using]**: Save the form attachments provide in a task. You can save the attachments using a path that is relative to the payload or store it in a variable of array list of Document data type.
     * **[!UICONTROL Save Document of Record using]**: Path to save a Document of Record file. For example, [Payload_Directory]/DocumentofRecord/credit-card.pdf. You can save the Document of Record using a path that is relative to the payload or store it in a variable of Document data type. If you select **[!UICONTROL Relative to Payload]** option, The Document of Record is not generated if the path field is left empty. This option is available only if you select Adaptive Form from the Type drop-down list.
     
-    <!-- * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+    <!-- 
+    
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
-    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
+    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
+    
+    -->
 
 * **[!UICONTROL Assignee]** &gt; **[!UICONTROL Assign options]**: Specify the method to assign the task to a user. You can dynamically assign the task to a user or a group using the Participant Chooser script or assign the task to a specific AEM user or group.
 * **[!UICONTROL Participant Chooser]**: The option is available when the **[!UICONTROL Dynamically to a user or group]** option is selected in the Assign options field. You can use an ECMAScript or a service to dynamically select a user or a group. For more information, see [Dynamically assign a workflow to the users](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) and [Creating a custom Adobe Experience Manager Dynamic Participant step.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)
@@ -175,7 +196,13 @@ The email step has the following properties:
 * **[!UICONTROL Literal]**: Use the option when you know the exact value to specify. For example, [example@example.com](mailto:example@example.com).
 
 * **[!UICONTROL Workflow Metadata]**: Use the option when the value to use is saved in a workflow metadata property. After selecting the option, enter the metadata property name in the empty text box below the Workflow Metadata option. For example, emailAddress.
-<!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
+
+<!-- 
+
+* **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. 
+
+-->
+
 * **[!UICONTROL Image]**: Use the option to embed an image to the email. After selecting the option, browse and choose the image. The image option is available only for the image tags (&lt;img src="&#42;"/&gt;) available in the email template.
 
 **[!UICONTROL Sender’s / Recipient's Email Address]**: Select the **[!UICONTROL Literal]** option to manually specify an email address or select the **[!UICONTROL Retrieve from Workflow metadata]** option to retrieve the email address from a metadata property. You can also specify a list of metadata property arrays for the **[!UICONTROL Retrieve from Workflow metadata]** option. Select the **[!UICONTROL Variable]** option to retrieve the e-mail address from the value stored in a variable of string data type.
@@ -360,7 +387,9 @@ By default, the [!DNL Adobe Sign] Scheduler services checks (polls) signer respo
 * **[!UICONTROL Script or service to select signers]**: The option is available only if the Dynamically option is selected in the Select Signers field. You can specify an ECMAScript or a service to choose signers and verification options for a document.  
 * **[!UICONTROL Signer Details]**:  The option is available only if the Manually option is selected in the Select Signers field. Specify email address and choose an optional verification mechanism. Before selecting a 2-step verification mechanism, ensure that the corresponding verification option is enabled for the configured [!DNL Adobe Sign] account. You can use a variable of String data type to define values for Email, Country Code, and Phone Number fields. The Country Code and Phone Number fields display only if you select Phone Verification from the 2-step verification drop-down list.
 
-<!-- ## Document Services steps {#document-services-steps}
+<!-- 
+
+## Document Services steps {#document-services-steps}
 
 AEM Document services are a set of services for creating, assembling, and securing PDF Documents. [!DNL AEM Forms] provides a separate AEM Workflow step for each document service.
 
@@ -512,4 +541,6 @@ The Generate Printed Output step has the following properties:
 * **[!UICONTROL Duplex Printing]**:  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value.If you provide a literal value, select one of these values:
     * **[!UICONTROL Duplex Long Edge]**: Use two-sided printing and print using long-edge pagination. 
     * **[!UICONTROL Duplex Short Edge]**: Use two-sided printing and print using short-edge pagination. 
-    * **[!UICONTROL Simplex]**: Use single-sided printing.-->
+    * **[!UICONTROL Simplex]**: Use single-sided printing.
+    
+    -->
