@@ -214,7 +214,7 @@ Document Description XML (DDX) is a declarative markup language whose elements r
 Invoke DDX step has the following properties: 
 
 **[!UICONTROL Input Documents]**: Used to set properties of an input document. Various options available under this tab are:
-* **[!UICONTROL Specify DDX Using]**: Specify the input documents relative to the payload, have an absolute path, can be provided as payload, or stored in a variable of Document data type.
+* **[!UICONTROL Specify DDX Using]**: Specifies the input document relative to the payload, have an absolute path, can be provided as payload, or stored in a variable of Document data type.
 * **[!UICONTROL Create Map from Payload]**: Add all the documents under the payload folder to Input Document’s Map for the invoke API in Assembler. The node name for each document is used as a key in the map.
 * **[!UICONTROL Input Document’s Map]**: Option is used to add multiple entries using **[!UICONTROL ADD]** button. Each entry represents the document’s key in the map and the document's source.
 
