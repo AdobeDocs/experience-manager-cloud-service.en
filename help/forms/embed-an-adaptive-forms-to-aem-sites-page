@@ -44,11 +44,11 @@ To embed an Adaptive Form using AEM Forms Container component:
 
     <!-- * **Asset Type:** Select the type of asset to embed. The options are Adaptive Form -->
     * **Asset Path**: Browse and select the Adaptive Form to embed. It is auto-populated if you dropped it from the Assets browser.
-    * **Post Submission** : Select the action to trigger on form submission. You can choose to show a thank you message or a thank you page.
+    * <!-- (Adaptive form only) --> **Post Submission**: Select the action to trigger on form submission. You can choose to show a thank you message or a thank you page.
 
         * **Thank You Message**: Write a message using the rich text editor to show on form submission. This option is available only when you choose to show a thank you message.
         * **Thank You Page**: Browse and select the page to display on form submission. This option is available only when you choose to show a thank you page.
-           * **Redirect to thank you page**: Enable the option to replace the page containing the embedded Adaptive Form with thank you page. Otherwise, the thank you page replaces the Adaptive Form in the AEM Forms container, without refreshing underlying sites the page. This option is available only when you choose to show a thank you page.
+        * **Refresh Page on Submission**: Enable to refresh the page containing the embedded Adaptive Form to show the thank you page. Otherwise, the thank you page replaces the Adaptive Form in the AEM Forms container, without refreshing the page. This option is available only when you choose to show a thank you page.
     * **Use Page Language**: Use local of the AEM Sites page instead locale of Adaptive Form.
     * **Set Focus on Form**: Select to set the focus on the first field of the Adaptive Form.
 
