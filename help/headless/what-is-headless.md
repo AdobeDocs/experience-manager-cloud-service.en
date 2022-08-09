@@ -25,11 +25,7 @@ Very powerful, giving you full control of the content and formatting, but missin
 
 With a headless content management system, backend and frontend are now decoupled. 
 
-The headless part is the content backend.  
-
-* "*A headless content management system, or headless CMS, is a back-end only content management system (CMS) built from the ground up as a content repository that makes content accessible via an API for display on any device.*
-
-  See [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+The headless part is the content backend, as a headless Content Management System (CMS) is a back-end only content management system, designed and built explicitly as a content repository that makes content accessible via an API, for display on any device.
 
 The frontend, which is developed and maintained independently, fetches content from the headless backend using a Content Delivery API, typically in JSON format. For example, this could be as a React or Angular application (Single Page Application (SPA)).
 
