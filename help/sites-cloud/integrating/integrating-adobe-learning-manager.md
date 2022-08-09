@@ -1,8 +1,9 @@
 ---
 title: Integrating with Adobe Learning Manager
-description: Integrating with Adobe Learning Manager 
+description: Integrating with Adobe Learning Manager
 feature: Administering
 role: Admin
+exl-id: 677c6d5a-0f8d-4012-96f3-e5491d66ef17
 ---
 # Integrating with Adobe Learning Manager{#integrating-with-adobe-learning}
 
