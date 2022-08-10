@@ -162,8 +162,8 @@ The convert to PDF/A step has following properties:
 
 **[!UICONTROL Input Document]**: The input document can be relative to the payload, have an absolute path, can be provided as payload or stored in a variable of Document data type.
 
-**[!UICONTROL Conversion Options]**: Using this property, settings for converting PDF documents to PDF/A documents are specified. Various options available under this tab are:
-* **[!UICONTROL Compliance]**: Specifies the standard to which the output PDF/A document must comply. It supports different PDF standards such as PDF/A-1b, PDF/A-2b and PDF/A-3b.
+**[!UICONTROL Conversion Options]**: Using this property, the settings for converting PDF documents to PDF/A documents are specified. Various options available under this tab are:
+* **[!UICONTROL Compliance]**: Specifies the standard to which the output PDF/A document must comply. It supports different PDF standards such as PDF/A-1b, PDF/A-2b or PDF/A-3b.
 * **[!UICONTROL Result Level]**: Specifies the result level as PassFail, Summary or Detailed, for the conversion output.
 * **[!UICONTROL Color Space]**: Specifies the predefined color space as S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED or SWOP, that can be used for output PDF/A files. 
 * **[!UICONTROL Optional Content]**: Allow specific graphic objects and/or annotations to be visible in output PDF/A document, only when a specified set of criteria is met.
