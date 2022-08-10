@@ -64,13 +64,13 @@ Here you can see that there are three main areas:
     >* using the **Open in Assets** link (in the Content Fragments console)
     >* directly from the global navigation pane
 
-### Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
+## Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
 
 Selecting a specific fragment will open a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
 
 ![Content Fragments console - toolbar for a selected fragment](assets/cfc-fragment-toolbar.png)
 
-### Select and Use the Available Columns {#select-use-available-columns}
+## Select and Use the Available Columns {#select-use-available-columns}
 
 As with other consoles you can configure the columns that are visible, and available for action:
 
