@@ -70,6 +70,17 @@ Selecting a specific fragment will open a toolbar focused on the actions availab
 
 ![Content Fragments console - toolbar for a selected fragment](assets/cfc-fragment-toolbar.png)
 
+* **Open**
+* **Publish** (and **Unpublish**)
+* **Copy**
+* **Move**
+* **Rename**
+* **Delete**
+
+>[!NOTE]
+>
+>Actions such as Publish, Unpublish, Delete, Move, Rename, Copy, trigger an asynchronous job. The progress of that job can be monitored via the AEM Async Jobs UI.
+
 ## Select and Use the Available Columns {#select-use-available-columns}
 
 As with other consoles you can configure the columns that are visible, and available for action:
@@ -86,6 +97,7 @@ This will present a list of columns that you can hide or show:
   * Provides a link to open the fragment in the editor.
 * **Folder**
   * Provides a link to open the folder in the console.
+    Hovering over the folder name will show the JCR path.
 * **Status**
   * Information only
 * **Modified**
@@ -97,7 +109,7 @@ This will present a list of columns that you can hide or show:
 * **Published By**
   * Information only
 * **Referenced By**
-  * Provides a link that opens a dialog listing all references related to the selected fragment.
+  * Provides a link that opens a dialog listing all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages.
 * **Language**
   * Indicates the locale of the content fragment, together with the total number of locales/language copies associated with the content fragment.
 

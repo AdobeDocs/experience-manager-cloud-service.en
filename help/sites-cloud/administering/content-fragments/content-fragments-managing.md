@@ -30,6 +30,18 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 >
 >Content Fragments are stored as **Assets**. They are primarily managed from the **Content Fragments** console, but can also be managed from the **Assets** console.
 
+## The Content Fragments Console {#content-fragments-console}
+
+The Content Fragments console provides direct access to your fragments, and related tasks. For detailed further information see:
+
+* [Basics of the Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
+
+* [Actions for a Content Fragment in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
+
+* [Customizing the view in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-use-available-columns)
+
+* [Search and Filter in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
+
 ## Creating Content Fragments {#creating-content-fragments}
 
 ### Creating a Content Model {#creating-a-content-model}
@@ -72,61 +84,6 @@ During its existence a Content Fragment can have several statuses, as shown in t
   The Content Fragment has been edited after it was published (but before publishing the modification). 
 * **Unpublished** 
   The Content Fragment has been unpublished.
-
-## Actions for a Content Fragment in the Content Fragments Console {#actions-content-fragment-console}
-
-In the **Content Fragments** console a range of actions are available for your content fragments from the toolbar:
-
-![Console actions](assets/cfm-managing-cf-console-01.png)
-
-* **Open in Assets**
-* **Create**
-* The **Referenced By** column also provides a direct link to show all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages.
-* Hovering over the folder name will show the JCR path.
-
-After selection of your fragment all appropriate actions are available:
-
-![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png)
-
-* **Open**
-* **Publish** (and **Unpublish**)
-* **Copy**
-* **Move**
-* **Rename**
-* **Delete**
-
->[!NOTE]
->
->Actions such as Publish, Unpublish, Delete, Move, Rename, Copy, trigger an asynchronous job. The progress of that job can be monitored via the AEM Async Jobs UI.
-
-## Customizing the view in the Content Fragments Console {#viewing-content-fragment-console}
-
-The console shows information about the content fragments - in the current folder and all child folders.
-
-You can customize the information shown using the **Customize table** icon:
-
-![Customize table icon](assets/cfm-managing-cf-console-customize-table-icon.png)
-
-This will open the **Customize table** dialog where you can select/deselect the available columns:
-
-![Customize table](assets/cfm-managing-cf-console-customize-table.png)
-
-## Search and Filter in the Content Fragments Console {#search-filter-content-fragment-console}
-
-You can search and/or filter the Content Fragments to be shown in the console.
-
-You can:
-
-* select the required folder
-* select the filters with the **Show Filters** icon and use the search box in parallel:
-
-![Customize table icon](assets/cfm-managing-cf-console-filter-search-01.png)
-
-A selection of filters are available:
-
-![Filter and Search](assets/cfm-managing-cf-console-filter-search-02.png)
-
-The filters and search combination can also be saved for later reference.
 
 ## Opening the Fragment Editor {#opening-the-fragment-editor}
 
@@ -280,7 +237,7 @@ You can view, and edit, the properties of a fragment using the [Metadata](/help/
 
 Content Fragments must be published for use in the publish environment. This is done using the standard Assets functionality
 
-* From the **Publish** option in the toolbar of the [Content Fragments console](#actions-content-fragment-console)
+* From the **Publish** option in the toolbar of the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
   * **Now** - after confirmation, the fragment will be published immediately
   * **Schedule** - you can select the date and time when the fragment will be published
   
