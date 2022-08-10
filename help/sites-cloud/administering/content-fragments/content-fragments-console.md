@@ -42,16 +42,20 @@ Here you can see that there are three main areas:
   * Here you can hide, or reveal, the folder tree
   * You can select a specific branch of the tree
 * The main/right panel - from here you can:
-  * See the list of all Content Fragments in the selected branch of the tree
+  * See the list of all Content Fragments in the selected branch of the tree:
     * The location is indicated by the breadcrumbs; these can also be used to change the location
-    * Content Fragments from the selected folder, and all child folders will be shown
-      * Various fields of information about a Content Fragment provide links; these can open the appropriate fragment in the editor
+    * Content Fragments from the selected folder, and all child folders will be shown:
+      * [Various fields of information](#selectuse-available-columns) about a Content Fragment provide links; depending on the field, these can:
+        * Open the appropriate fragment in the editor
+        * Show information about references
+        * Show information about language versions of the fragment
+      * You can [select one, or more, Content Fragments to show the available actions](#actions-selected-content-fragment)
     * You can select a column header to sort the table according to that column; select again to toggle between ascending and descending
   * **[Create](#creating-new-content-fragment)** a new Content Fragment
   * [Filter](#filtering-fragments) the Content Fragments according to a selection of predicates, and save the filter for future use
   * [Search](#searching-fragments) the Content Fragments 
-  * Customize the table view to show selected columns of information
-  * Use **Open in Assets** to directly open the current location in the **Assets** console.
+  * [Customize the table view to show selected columns of information](#selectuse-available-columns)
+  * Use **Open in Assets** to directly open the current location in the **Assets** console
 
     >[!NOTE]
     >
@@ -60,9 +64,48 @@ Here you can see that there are three main areas:
     >* using the **Open in Assets** link (in the Content Fragments console)
     >* directly from the global navigation pane
 
+### Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
+
 Selecting a specific fragment will open a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
 
-  ![Content Fragments console - toolbar for a selected fragment](assets/cfc-fragment-toolbar.png)
+![Content Fragments console - toolbar for a selected fragment](assets/cfc-fragment-toolbar.png)
+
+### Select and Use the Available Columns {#select-use-available-columns}
+
+As with other consoles you can configure the columns that are visible, and available for action:
+
+![Content Fragments console - column configuration](assets/cfc-console-column-icon.png)
+
+This will present a list of columns that you can hide or show:
+
+![Content Fragments console - column configuration](assets/cfc-console-column-selection.png)
+
+* **Name**
+  * Provides a link to open the fragment in the editor.
+* **Model**
+  * Provides a link to open the fragment in the editor.
+* **Folder**
+  * Provides a link to open the folder in the console.
+* **Status**
+  * Information only
+* **Modified**
+  * Information only
+* **Modified By**
+  * Information only
+* **Published At**
+  * Information only
+* **Published By**
+  * Information only
+* **Referenced By**
+  * Provides a link that opens a dialog listing all references related to the selected fragment.
+* **Language**
+  * Indicates the locale of the content fragment, together with the total number of locales/language copies associated with the content fragment.
+
+    ![Content Fragments console - Language indicator](assets/cfc-console-language-indicator.png)
+
+    * Click/tap on the count to open a dialog that displays all the language copies. To open a specific language copy, click on the **Title** in the dialog.
+
+      ![Content Fragments console - Language dialog](assets/cfc-console-languages-dialog.png)
 
 ## Creating a new Content Fragment {#creating-new-content-fragment}
 
