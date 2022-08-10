@@ -29,6 +29,8 @@ The Content Fragments console can be directly accessed from the top level of the
 
 ![Global Navigation - Content Fragments console](assets/cfc-global-navigation.png)
 
+## Basic Structure and Handling of the Console {#basic-structure-handling-content-fragments-console}
+
 Selecting **Content Fragments** will open the console in a new tab. 
 
 ![Content Fragments console - Overview](assets/cfc-console-overview.png)
@@ -81,15 +83,9 @@ Selecting a specific fragment will open a toolbar focused on the actions availab
 >
 >Actions such as Publish, Unpublish, Delete, Move, Rename, Copy, trigger an asynchronous job. The progress of that job can be monitored via the AEM Async Jobs UI.
 
-## Select and Use the Available Columns {#select-use-available-columns}
+## The Information provided about your Content Fragments {#information-content-fragments}
 
-As with other consoles you can configure the columns that are visible, and available for action:
-
-![Content Fragments console - column configuration](assets/cfc-console-column-icon.png)
-
-This will present a list of columns that you can hide or show:
-
-![Content Fragments console - column configuration](assets/cfc-console-column-selection.png)
+The main/right panel (table view) of the console provides a range of information about your Content Fragments. Some items also provide direct links to further actions and/or information:
 
 * **Name**
   * Provides a link to open the fragment in the editor.
@@ -109,8 +105,13 @@ This will present a list of columns that you can hide or show:
 * **Published By**
   * Information only
 * **Referenced By**
-  * Provides a link that opens a dialog listing all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages.
+
+  * Provides a link that opens a dialog listing all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click on the **Title** in the dialog.
+
+    ![Content Fragments console - References dialog](assets/cfc-console-references-dialog.png)
+
 * **Language**
+
   * Indicates the locale of the content fragment, together with the total number of locales/language copies associated with the content fragment.
 
     ![Content Fragments console - Language indicator](assets/cfc-console-language-indicator.png)
@@ -118,6 +119,16 @@ This will present a list of columns that you can hide or show:
     * Click/tap on the count to open a dialog that displays all the language copies. To open a specific language copy, click on the **Title** in the dialog.
 
       ![Content Fragments console - Language dialog](assets/cfc-console-languages-dialog.png)
+
+## Select the Available Columns {#select-available-columns}
+
+As with other consoles you can configure the columns that are visible, and available for action:
+
+![Content Fragments console - column configuration](assets/cfc-console-column-icon.png)
+
+This will present a list of columns that you can hide or show:
+
+![Content Fragments console - column configuration](assets/cfc-console-column-selection.png)
 
 ## Creating a new Content Fragment {#creating-new-content-fragment}
 
