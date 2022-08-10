@@ -29,7 +29,7 @@ You can download Experience Manager assets using the following methods:
 
 ## Download assets using [!DNL Experience Manager] interface {#download-assets}
 
-Asynchronous download service provides a framework for seamless download of large-sized assets. The download archives larger than 100GB in-size splits into multiple zip archives with a maximum size of 100GB each. These can be downloaded individually. Smaller files are downloaded from the user interface in real time. [!DNL Experience Manager] does not archive single asset downloads where the original file is downloaded. This functionality allows faster downloads. 
+Asynchronous download service provides a framework for seamless download of large-sized assets. The download archives larger than 100 GB in-size splits into multiple zip archives with a maximum size of 100 GB each. These can be downloaded individually. Smaller files are downloaded from the user interface in real time. [!DNL Experience Manager] does not archive single asset downloads where the original file is downloaded. This functionality allows faster downloads. 
 
 By default, [!DNL Experience Manager] triggers a notification upon completion of the download workflow. The download notification appears in the  [[!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
