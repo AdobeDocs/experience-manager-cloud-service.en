@@ -163,10 +163,10 @@ The convert to PDF/A step has following properties:
 **[!UICONTROL Input Document]**: The input document can be relative to the payload, have an absolute path, can be provided as payload or stored in a variable of Document data type.
 
 **[!UICONTROL Conversion Options]**: Using this property, settings for converting PDF documents to PDF/A documents are specified. Various options available under this tab are:
-* **[!UICONTROL Compliance]**: Specifies the standards to which the output PDF/A document must comply.
+* **[!UICONTROL Compliance]**: Specifies the standard to which the output PDF/A document must comply. It supports different PDF standards such as PDF/A-1b, PDF/A-2b and PDF/A-3b.
 * **[!UICONTROL Result Level]**: Specifies the result level as PassFail, Summary or Detailed, for the conversion output.
-* **[!UICONTROL Color Space]**: Specifies the predefined color space that are used for output PDF/A files. 
-* **[!UICONTROL Optional Content]**: Allows specific graphic objects and/or annotations to be visible in output PDF/A document, only when a specified set of criteria is met.
+* **[!UICONTROL Color Space]**: Specifies the predefined color space as S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED or SWOP, that can be used for output PDF/A files. 
+* **[!UICONTROL Optional Content]**: Allow specific graphic objects and/or annotations to be visible in output PDF/A document, only when a specified set of criteria is met.
 
 **[!UICONTROL Output Documents]**: Specifies the location to save the output file. The output file can be saved at a location relative to payload, overwrites the payload, if the payload is a file, or in a variable of Document data type. 
 
@@ -241,13 +241,13 @@ Document Description XML (DDX) is a declarative markup language whose elements r
 Invoke DDX step has the following properties: 
 
 **[!UICONTROL Input Documents]**: Used to set properties of an input document. Various options available under this tab are:
-* **[!UICONTROL Specify DDX Using]**: Specifies the input documents relative to the payload, have an absolute path, can be provided as payload, or stored in a variable of Document data type.
-* **[!UICONTROL Create Map from Payload]**: Adds all the documents under the payload folder to Input Document’s Map for the invoke API in Assembler. The node name for each document is used as a key in the map.
+* **[!UICONTROL Specify DDX Using]**: Specifies the input document relative to the payload, have an absolute path, can be provided as payload, or stored in a variable of Document data type.
+* **[!UICONTROL Create Map from Payload]**: Add all the documents under the payload folder to Input Document’s Map for the invoke API in Assembler. The node name for each document is used as a key in the map.
 * **[!UICONTROL Input Document’s Map]**: Option is used to add multiple entries using **[!UICONTROL ADD]** button. Each entry represents the document’s key in the map and the document's source.
 
 **[!UICONTROL Environment Options]**: This option is used to set processing settings for invoke API. Various options available under this tab are:
 * **[!UICONTROL Validate Only]**: Checks the validity of the input DDX document.
-* **[!UICONTROL Fail on Error]**: Checks whether the invoke API service fails, in case of an error. By default, its value is set to False.
+* **[!UICONTROL Fail on Error]**: Boolean value to indicate  whether the invoke API service fails, in case of an error or not. By default, its value is set to False.
 * **[!UICONTROL First Bates Number]**: Specifies the number, which is self-incrementing. This self-incrementing number is displayed on each consecutive page automatically.  
 * **[!UICONTROL Default Style]**: Sets the default style for the output file.
 
