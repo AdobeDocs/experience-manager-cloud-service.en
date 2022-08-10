@@ -34,11 +34,13 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 
 The Content Fragments console provides direct access to your fragments, and related tasks. For detailed further information see:
 
-* [Basics of the Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
+* [Basic Structure and Handling of the Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
+
+* [The Information provided about your Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
 
 * [Actions for a Content Fragment in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
 
-* [Customizing the view in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-use-available-columns)
+* [Customizing the columns available in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
 
 * [Search and Filter in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
@@ -283,6 +285,14 @@ To delete a fragment:
    >[!CAUTION]
    >
    >If the fragment is already referenced from another fragment, or from a page, you will then see a warning message and be required to confirm that you want to proceed with a **Force Delete**. The fragment, together with its content fragment component, will be deleted from any content pages.
+
+## Finding Parent References of your Fragment {#parent-references-fragment}
+
+Details of parent references are shown in the **References** column of the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+
+## Finding Language Copies of your Fragment {#language-copies-fragment}
+
+Details of Language Copies are shown in **Language** column of the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## Timeline for Content Fragments {#timeline-for-content-fragments}
 
