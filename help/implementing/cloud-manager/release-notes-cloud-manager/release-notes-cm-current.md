@@ -20,6 +20,7 @@ The release date for Cloud Manager release 2022.8.0 in AEM as a Cloud Service is
 ## What's New {#what-is-new}
 
 * There is a refreshed UI experience in the [add environment workflow.](/help/implementing/cloud-manager/manage-environments.md)
+* [The AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) included in Cloud Manager was updated to version 37.
 
 ## Bug Fixes {#bug-fixes}
 
