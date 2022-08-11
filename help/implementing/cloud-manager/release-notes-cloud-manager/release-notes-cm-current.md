@@ -18,3 +18,12 @@ This page documents the release notes for Cloud Manager 2022.8.0 in AEM as a Clo
 The release date for Cloud Manager release 2022.8.0 in AEM as a Cloud Service is 11 August 2022. The next release is planned for 9 September 2022.
 
 ## What's New {#what-is-new}
+
+* There is a refreshed UI experience in the [add environment workflow.](/help/implementing/cloud-manager/manage-environments.md)
+
+## Bug Fixes {#bug-fixes}
+
+* Case where New Relic users were not created or deleted in Cloud Manager UI was corrected.
+* Certain cases of infrequent repository creation failures have been made more resilient.
+* Rare occurrences of VSTS org set up errors are now reduced due to retries introduced.
+* Improved validation during New Relic sub account user creation now prevents certain errors.
