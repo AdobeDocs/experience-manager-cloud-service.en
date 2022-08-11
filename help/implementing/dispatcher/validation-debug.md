@@ -225,7 +225,7 @@ During a Cloud Manager deployment, the `httpd -t` syntax check will be executed 
 
 >[!NOTE]
 >
->See the [Automatic loading and validation](#automatic-loading) section for an efficient alternative to running `validate.sh` after each configuration modification.
+>See the [Automatic reloading and validation](#automatic-loading) section for an efficient alternative to running `validate.sh` after each configuration modification.
 
 ### Phase 1 {#first-phase}
 
@@ -427,7 +427,7 @@ When running Dispatcher locally, logs are printed directly to the terminal outpu
 
 Logs for cloud environments are exposed through the logging service available in Cloud Manager.
 
-### Automatic loading and validation {#automatic-loading}
+### Automatic reloading and validation {#automatic-reloading}
 
 >[!NOTE]
 >
