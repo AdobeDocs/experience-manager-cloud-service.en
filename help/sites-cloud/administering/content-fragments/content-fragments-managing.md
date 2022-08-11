@@ -288,11 +288,11 @@ To delete a fragment:
 
 ## Finding Parent References of your Fragment {#parent-references-fragment}
 
-Details of parent references are shown in the **References** column of the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+Details of parent references can be accessed from the **References** column of the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## Finding Language Copies of your Fragment {#language-copies-fragment}
 
-Details of Language Copies are shown in **Language** column of the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+Details of Language Copies can be accessed from the **Language** column of the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## Timeline for Content Fragments {#timeline-for-content-fragments}
 
