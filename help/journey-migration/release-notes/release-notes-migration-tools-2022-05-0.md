@@ -2,6 +2,7 @@
 title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.5.0
 description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.5.0
 feature: Release Information
+exl-id: 1aa49e85-1914-44d9-bcf7-0a1b03926df0
 ---
 # Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.5.0 {#release-notes}
 
