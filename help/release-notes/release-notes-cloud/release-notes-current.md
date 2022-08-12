@@ -103,7 +103,7 @@ You can now configure Adobe Experience Manager Assets to [restrict the type of a
 
 ### AEM as a Cloud Service SDK Dispatcher Tools enhancements {#dispatcher-tools-enhancements}
 
-* Apache can be started with `update_sdk.sh` script, which will automatically load and validate any subsequent changes to apache and dispatcher configuration, thus improving developer velocity. Only supported for dispatcher tools flexible mode. Also, see [Debugging your Apache and Dispatcher configuration](/help/implementing/dispatcher/validation-debug.md#automatic-loading) for additional details about automatic loading and validation.
+* Apache can be started with `docker_run_hot_reload.sh` script, which will automatically load and validate any subsequent changes to apache and dispatcher configuration, thus improving developer velocity. Only supported for dispatcher tools flexible mode. Also, see [Debugging your Apache and Dispatcher configuration](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) for additional details about automatic reloading and validation.
 * Local apache/dispatcher configuration will more closely track changes in cloud environments, increasing parity between the two environments.
 
 ### New features available in [!DNL Experience Manager] prerelease channel {#prerelease-features-foundation}
