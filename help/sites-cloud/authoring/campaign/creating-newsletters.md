@@ -2,7 +2,7 @@
 title: Creating Campaign Newsletters with AEM
 description: Learn how to use AEM as a Cloud Service to create newsletters that can be sent with Adobe Campaign Classic.
 feature: Authoring
-role: Author
+role: User
 exl-id: 60a6a9d0-f5e6-424f-b320-dd4943c55d45
 ---
 
