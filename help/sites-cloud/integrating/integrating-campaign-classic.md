@@ -220,4 +220,4 @@ Adobe Campaign can now communicate with AEM.
 
 With both Adobe Campaign Classic and AEM as a Cloud Service configured, the integration is now complete.
 
-You can now learn how to create a newsletter in Adobe Experience Manager by continuing with [this document.](/help/sites-cloud/integrating/creating-newsletter.md)
+You can now learn how to create a newsletter in Adobe Experience Manager by continuing with [this document.](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
