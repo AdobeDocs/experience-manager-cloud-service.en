@@ -34,8 +34,8 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 You require the following to create an Adaptive Form:
 
-* An Adaptive Form template. A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an adaptive form. For example, sending the collected data to a data source. You can [create a new template](template-editor.md) or import an existing template. You can also deploy the [latest archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) for some sample templates.
-* An Adaptive Form theme. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. You can [create a new theme](themes.md), [import an existing theme](import-export-forms-templates.md#uploading-a-theme), or download and import some [sample themes](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2779f80e-16ba-4cd1-a96f-8e2b53f3be25).  
+* An Adaptive Form template: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an adaptive form. For example, sending the collected data to a data source. You can [create a new template](template-editor.md) or import an existing template. You can also deploy the [latest archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) for some sample templates.
+* An Adaptive Form theme: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. You can [create a new theme](themes.md), [import an existing theme](import-export-forms-templates.md#uploading-a-theme), or download and import some [sample themes](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2779f80e-16ba-4cd1-a96f-8e2b53f3be25). You can also deploy the [latest archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) for some sample themes.
 * Add your users to [!DNL forms-users] to provide them permissions to create an Adaptive Form. For detailed list of forms specific user groups, see [Groups and permissions](forms-groups-privileges-tasks.md).
 
 ## Create an Adaptive Form {#strong-create-an-adaptive-form-strong}
@@ -50,7 +50,7 @@ Follow these steps to create an Adaptive Form.
 
 1. Tap **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens. 
 1. In the Source tab, select a template: 
-   * When you select a template, a theme and submit action specified in the template are auto-selected, and the Create button is enabled. You can go to the Style and Submission tabs to select a different template or Submit action.
+   * When you select a template, a theme and submit action specified in the template are auto-selected, and the Create button is enabled. You can go to the Style or Submission tabs to select a different theme or Submit action.
    * If the selected template does not specify a theme, the create button remains disabled. You can go to the Styles tab to manually select a theme.
 1. In the Style tab, select a theme:
    * When the selected template specifies a theme, the theme auto selected in the Wizard. You can choose different theme from the Style tab.
@@ -70,11 +70,9 @@ Follow these steps to create an Adaptive Form.
     * **[!UICONTROL Name:]** Specifies the name of the form. A node with the specified name is created in the repository. As you start typing a title, value for the name field is automatically generated. You can change the suggested value. The name field can include only alphanumeric characters, hyphens, and underscores. All the invalid inputs are replaced with a hyphen.
     * **[!UICONTROL Path:]** Specifies the location at which the adaptive form is to be saved. You can save the adaptive form directly at `/content/dam/formsanddocuments` or create a folder such as `/content/dam/formsanddocuments/adaptiveforms` to save an adaptive form. Ensure that you create the folder before using it in the path. The Path field does not create a folder automatically. 
 
-1. Tap **[!UICONTROL Create]**. An Adaptive Form is created and a dialog to open the form for editing appears.
+1. Tap **[!UICONTROL Create]**. An Adaptive Form is created and opens in the Adaptive Forms editor. The editor displays the contents available in the template. It also displays the sidebar to customize the newly created form according to the needs.
 
-1. Tap **[!UICONTROL Open]** to open the newly created form in a new tab. The form opens for editing and displays the contents available in the template. It also displays the sidebar to customize the newly created form according to the needs.
-
-   Based on the type of Adaptive Form, the form elements present in the associated <!--XFA form template, -->XML schema or JSON schema are displayed in the **[!UICONTROL Data Model Objects]** tab of the **[!UICONTROL Content Browser]** in the sidebar. You can also drag-drop these elements to build your Adaptive Form.
+   Based on the type of Adaptive Form, the form elements present in the associated <!--XFA form template, XML schema or --> JSON schema or Form Data Model are displayed in the **[!UICONTROL Data Model Objects]** tab of the **[!UICONTROL Content Browser]** in the sidebar. You can also drag-drop these elements to build your Adaptive Form.
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -127,7 +125,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model}
 
-Adaptive Forms are created without a form model (using the None option for form model) or using a form model such as a <!-- form template,  XML schema or --> JSON schema, or form data model. You can change the form model for an Adaptive Form from None to another form model. For Adaptive Form based on a form model, you can choose another <!-- form template,XML schema, --> JSON schema, or Form Data Model for the same form model. However, you cannot change from one form model to another.
+You can change the form model for an Adaptive Form (JSON-based or Form Data Model). You cannot change from one form model to another.
 
 1. Select the Adaptive Form and tap the **Properties** icon.
 1. Open the **[!UICONTROL Form Model]** tab and do one the following.
