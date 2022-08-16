@@ -19,78 +19,101 @@ The following section outlines the general Release Notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.6.0) is June 30, 2022.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.7.0) is August 8, 2022.
 
-The next release (2022.7.0) is planned for August 8, 2022.
+The next release (2022.8.0) is planned for August 25, 2022.
 
 ## Release Video {#release-video}
 
-Have a look at the June 2022 Release Overview video for a summary of the features added in the 2022.6.0 release:
+Have a look at the July 2022 Release Overview video for a summary of the features added in the 2022.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/344308/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### New features in [!DNL Sites] {#sites-features}
 
-* A new [user interface](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) is now available for content admins and content authors to efficiently manage (take actions such as publish, unpublish, copy, move, etc.), search/filter, and create content fragments for Headless use-cases.
+* The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now supports [keyboard shortcuts](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md). 
 
-    ![Content Fragment Console](/help/release-notes/assets/cf-ui.png)
+* AEM as Cloud Service’s [web-optimized image delivery](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) allows to significantly improve page speed by delivering formats such as WebP. This new service also offers more flexible image resizing and transformation options. All versions of the [Core Image Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) allow to leverage this service and to deliver images as WebP by the click of an option in the policy of the image component.
 
-* The new [Table of Contents Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) works not only with the Core Components but with all components, automatically rendering ToCs on content pages. And because it is rendered server-side and fully cached by the dispatcher, it is also efficient to load.
+* AEM personalization activities can now leverage experience fragments in lieu of our legacy offers. This feature:
+  * enables a migration path where AEM content would promote experience fragment offers rather than legacy library offers to provide appropriately styled content that align with the personalization at scale going forward.
+  * prevents content authors from accidentally serving unstyled content on their site. 
+  * allows targeting mode of any component to be converted to an experience fragment (both JSON and HTML types) which uses editable templates.
+
+>[!NOTE]
+>
+>Existing personalization activities that are already using legacy offers can continue to do so but new personalization activities ought to be created as experience fragments since that is the recommended approach going forward. 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in [!DNL Assets] {#assets-features}
+### New features available in [!DNL Assets] prerelease channel {#prerelease-features-assets}
 
-Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish between colors in an image and apply those as tags automatically on ingestion](../../assets/color-tag-images.md). These tags enable enhanced Search experience, based on image color composition. You can configure the number of colors, within a range of one to forty, that are tagged to an image so that you can search for images based on those colors later.
+You can now configure Adobe Experience Manager Assets to [restrict the type of assets that users can upload based on the MIME type](/help/assets/configure-asset-upload-restrictions.md).
+
+![Asset upload restrictions](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### New features in [!DNL Forms] {#forms-features}
 
-* **[Integrate Adaptive Forms with Microsoft® Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)**: You can now configure an Adaptive Form to run a Microsoft® Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft® Power Automate to build business logics around captured data and automate customer workflows.
+* **[Keyboard input support for Scribble signatures](/help/forms/signing-forms-using-scribble.md)**: Adaptive Forms are increasingly being used on touch devices, and one common requirement is to support signatures. Signing documents on touch devices has become an accepted way of signing forms. Adaptive Forms has native support for Scribble Signatures and Adobe Sign for such use cases. Now, along with other already supported options, you can also use keyboard to Scribble signatures in an Adaptive Form. It also helps improve accessibility compliance.
 
-* **Wizard to create an Adaptive Form**: You can use business user friendly wizard to quickly author Adaptive Forms. The wizard provides a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form.
+![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
-    ![Wizard to create an Adaptive Form](/help/release-notes/assets/wizard.png)
+* **Use Adaptive Forms wizard in local language**: You can use the wizard in language of your choice. It now supports all the languages supported by Adobe Experience Manager.
+
+### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
+
+<!-- 
+
+* **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
+
+![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) 
+
+-->
+
+* **[Invoke DDX - An AEM Workflow step](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX documents are templates for the documents and describe the desired characteristics of source documents that should appear in resultant documents. A single DDX can be used with a range of source documents. You can use the Invoke step an AEM Workflow to perform various operations, like assembling disassembling documents, creating and modifying Acrobat and XFA Forms, and other operations described in [DDX Reference](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) documentation.
+
+* **[Convert to PDF/A - An AEM Workflow step](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A is an archival format for long-term preservation of the document’s content, all fonts are embedded and the file is uncompressed. Now, you can use the Convert to PDF/A step an AEM Workflow to convert your documents or files in any format to PDF/A format.
+
 
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
 
-* New product cockpit properties page for better and simplified overview
+* Product catalog enrichment now supports AEM pages. This enables authors to manage page - product association.
 
- ![product cockpit properties overview](/help/assets/CIF/product_cockpit_properties_overview.png)
-
-* Improved compatibility and robustness for 3rd party connectors on I/O Runtime
-
-* Improved support for GQL Client configuration overwrites (e.g. set custom caching behavior)
-
-* Multiple commerce endpoints are now supported out-of-the-box and can be configured via Cloud Manager. You can find details in the CIF blog [here](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
-
+* Various CIF Core Component improvements
 
 ### Bug fixes {#bug-fixes-cif}
 
-* Multi value product picker field shows 2nd and additional products as invalid
+* Add login token to client-side price fetching
 
-* Product Picker is occasionally hidden behind components
-
-## Reference Demos Add-on {#cloud-services-demos}
-
-### What is New {#what-is-new-demos}
-
-* New WKND Content & Commerce template that extends WKND with an E2E shopping experience featuring product catalog, shopping cart, checkout, and myAccount. This template uses CIF and its CIF Core Components, thus you also need to install the CIF add-on. You can find details in the CIF blog [here](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
-
- ![WKND shop](/help/assets/CIF/wknd_shop.png)
-
- ![WKND pdp](/help/assets/CIF/wknd_pdp.png)
+* Wrong page component in datalayer
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### What is New {#what-is-new-foundation}
 
-* As mentioned in the May (2022.5.0) release notes, the "Add tree” option under the replication agent admin screen’s **Distribute** tab was removed. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) workflow.
+* The [Repository Browser](/help/implementing/developing/tools/repository-browser.md) now has a path input field, making it possible to jump directly to a specific folder in the repository hierarchy
+* Sling Content Distribution (SCD) now supports an explicit "invalidation" action in order to invalidate content without that content being published. Refer to the [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) page for further details.
+* mod_macro is now available in AEM as a Cloud Service. Refer to [this table](/help/implementing/dispatcher/disp-overview.md) for a list of supported Apache modules.
+
+### AEM as a Cloud Service SDK Dispatcher Tools enhancements {#dispatcher-tools-enhancements}
+
+* Apache can be started with `docker_run_hot_reload.sh` script, which will automatically load and validate any subsequent changes to apache and dispatcher configuration, thus improving developer velocity. Only supported for dispatcher tools flexible mode. Also, see [Debugging your Apache and Dispatcher configuration](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) for additional details about automatic reloading and validation.
+* Local apache/dispatcher configuration will more closely track changes in cloud environments, increasing parity between the two environments.
+
+### New features available in [!DNL Experience Manager] prerelease channel {#prerelease-features-foundation}
+
+* AEM as a Cloud Service is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Refer to [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
+
+## Adobe Learning Manager Connectors {#learn-manage}
+
+* The new Adobe Learning Manager has connectors to Adobe Experience Manager Sites, Marketo Engage and Adobe Commerce. To learn more see: [Adobe Learning Manager User Guide](https://helpx.adobe.com/learning-manager/user-guide.html).
+ 
 
 ## Cloud Manager {#cloud-manager}
 
