@@ -63,6 +63,7 @@ Configuration instructions:
 
    * This is needed so that the Adobe CDN can validate the source of the requests and pass the `X-Forwarded-*` headers to the AEM application. For example,`X-Forwarded-For` is used to determine the client IP. So, it becomes the responsibility of the trusted caller (i.e. the customer-managed CDN) to ensure the correctness of the `X-Forwarded-*` headers (see the note below).
    * Optionally, access to Adobe CDN's ingress can be blocked when an `X-AEM-Edge-Key` is not present. Please inform Adobe if you need direct access to Adobe CDN's ingress (to be blocked).
+See the [Sample CDN vendor configurations](#sample-configurations) section for configuration examples from leading CDN vendors.
 
 Before accepting live traffic, you should validate with Adobe's customer support that the end-to-end traffic routing is functioning correctly.
 
@@ -95,6 +96,25 @@ Please note that when using your own CDN, there is no need to install the domain
 There is potentially a small performance hit due to the extra hop, although hops from the customer CDN to the AEM managed CDN are likely to be efficient.
 
 Please note that this customer CDN configuration is supported for the publish tier, but not in front of the author tier.
+
+### Sample CDN vendor configurations {#sample-configurations}
+
+Presented below are several configuration examples from a number of leading CDN vendors.
+
+**Akamai**
+
+![Akamai1](assets/akamai1.png "Akamai")
+![Akamai2](assets/akamai2.png "Akamai")
+
+**Amazon CloudFront**
+
+![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
+![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
+
+**Cloudflare**
+
+![Cloudflare1](assets/cloudflare1.png "Cloudflare")
+![Cloudflare2](assets/cloudflare2.png "Cloudflare")
 
 ## Geolocation Headers {#geo-headers}
 
