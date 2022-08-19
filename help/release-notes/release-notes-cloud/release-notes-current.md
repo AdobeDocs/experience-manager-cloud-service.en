@@ -19,13 +19,13 @@ The following section outlines the general Release Notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.7.0) is August 8, 2022.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.8.0) is August 25, 2022.
 
-The next release (2022.8.0) is planned for August 25, 2022.
+The next release (2022.9.0) is planned for September 29, 2022.
 
 ## Release Video {#release-video}
 
-Have a look at the July 2022 Release Overview video for a summary of the features added in the 2022.7.0 release:
+Have a look at the August 2022 Release Overview video for a summary of the features added in the 2022.8.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
 
@@ -33,22 +33,9 @@ Have a look at the July 2022 Release Overview video for a summary of the feature
 
 ### New features in [!DNL Sites] {#sites-features}
 
-* The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now supports [keyboard shortcuts](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md). 
-
-* AEM as Cloud Service’s [web-optimized image delivery](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) allows to significantly improve page speed by delivering formats such as WebP. This new service also offers more flexible image resizing and transformation options. All versions of the [Core Image Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) allow to leverage this service and to deliver images as WebP by the click of an option in the policy of the image component.
-
-* AEM personalization activities can now leverage experience fragments in lieu of our legacy offers. This feature:
-  * enables a migration path where AEM content would promote experience fragment offers rather than legacy library offers to provide appropriately styled content that align with the personalization at scale going forward.
-  * prevents content authors from accidentally serving unstyled content on their site. 
-  * allows targeting mode of any component to be converted to an experience fragment (both JSON and HTML types) which uses editable templates.
-
->[!NOTE]
->
->Existing personalization activities that are already using legacy offers can continue to do so but new personalization activities ought to be created as experience fragments since that is the recommended approach going forward. 
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features available in [!DNL Assets] prerelease channel {#prerelease-features-assets}
+### New features available in [!DNL Assets] {#features-assets}
 
 You can now configure Adobe Experience Manager Assets to [restrict the type of assets that users can upload based on the MIME type](/help/assets/configure-asset-upload-restrictions.md).
 
