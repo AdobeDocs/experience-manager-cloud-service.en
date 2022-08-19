@@ -70,15 +70,8 @@ You can now configure Adobe Experience Manager Assets to [restrict the type of a
 
 ### What is New {#what-is-new-cif}
 
-* Product catalog enrichment now supports AEM pages. This enables authors to manage page - product association.
-
-* Various CIF Core Component improvements
-
-### Bug fixes {#bug-fixes-cif}
-
-* Add login token to client-side price fetching
-
-* Wrong page component in datalayer
+* Association of AEM pages to products and categories via AEM page properties plus overview in product cockpit
+ ![product cockpit page association](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
