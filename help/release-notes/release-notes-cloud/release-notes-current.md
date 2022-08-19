@@ -33,6 +33,8 @@ Have a look at the August 2022 Release Overview video for a summary of the featu
 
 ### New features in [!DNL Sites] {#sites-features}
 
+* The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) provides users with an option to display the total number of language copies associated with a content fragment. A 1-click access has been provided to view all the language copies as well. Users are also able to filter the table view by the locale of their interest. 
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features available in [!DNL Assets] {#features-assets}
