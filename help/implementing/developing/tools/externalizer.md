@@ -30,7 +30,9 @@ For reference, the default OSGi configuration for `com.day.cq.commons.impl.Exter
 
 >[!CAUTION]
 >
->The default `local`, `author`, `preview`, and `publish` Externalizer domain mappings in the OSGi configuration must be preserved with the original `$[env:...]` values listed above. Deploying a custom `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` file to AEM as a Cloud Service thats omits any of these out-of-the-box domain mappings may result in unpredictable application behavior.
+>The default `local`, `author`, `preview`, and `publish` Externalizer domain mappings in the OSGi configuration must be preserved with the original `$[env:...]` values listed above.
+>
+>Deploying a custom `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` file to AEM as a Cloud Service that omits any of these out-of-the-box domain mappings may result in unpredictable application behavior.
 
 To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables.
 
