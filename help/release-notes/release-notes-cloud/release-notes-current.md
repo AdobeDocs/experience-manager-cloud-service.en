@@ -41,11 +41,11 @@ Have a look at the August 2022 Release Overview video for a summary of the featu
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features available in [!DNL Assets] {#features-assets}
+### New features in [!DNL Assets] {#features-assets}
 
-You can now configure Adobe Experience Manager Assets to [restrict the type of assets that users can upload based on the MIME type](/help/assets/configure-asset-upload-restrictions.md).
+* You can now configure Adobe Experience Manager Assets to [restrict the type of assets that users can upload based on the MIME type](/help/assets/configure-asset-upload-restrictions.md).
 
-![Asset upload restrictions](/help/assets/assets/asset-upload-restrictions.png)
+  ![Asset upload restrictions](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
