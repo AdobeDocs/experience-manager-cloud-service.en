@@ -44,12 +44,9 @@ You require the following to create an Adaptive Form:
    * **Dynamic template**: You can [create a new](template-editor.md) or [import an existing dynamic template](migrate-to-forms-as-a-cloud-service.md). You can also deploy the [latest archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) to get some sample dynamic templates.  
    * **Static template**: These are legacy templates and are recommended only for customers migrating from Adobe Managed Services (AMS) and on-premise AEM Forms installations (AEM 6.5 Forms or earlier). These allow you to continue leverage your existing investment in static templates. When you are create a new adaptive form, it is recommended to use a Dynamic template.
 
-* **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. You can [create a new theme](themes.md) or [import an existing theme](import-export-forms-templates.md#uploading-a-theme. You can also deploy the [latest archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) for some sample themes.
+* **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. You can [create a new theme](themes.md) or [import an existing theme](import-export-forms-templates.md#uploading-a-theme. You can also deploy the [latest archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) for some sample themes.
+
 * **Permissions**: Add your users to [!DNL forms-users] to provide them permissions to create an Adaptive Form. For detailed list of forms specific user groups, see [Groups and permissions](forms-groups-privileges-tasks.md).
-
-## Create an Adaptive Form {#strong-create-an-adaptive-form-strong}
-
-Follow these steps to create an Adaptive Form.
 
 1. Access [!DNL Experience Manager Forms] Author instance. It can be a Cloud instance or a local development instance.
 
