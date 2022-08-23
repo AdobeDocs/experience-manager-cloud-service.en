@@ -63,6 +63,8 @@ Now that the groups have been created, you must assign the appropriate users. Yo
 
 1. Click the **Add user** button and provide the user's email address. Optionally you can also provide a first and last name.
 
+    * If the user already exists, Admin Console will match the email address and pre-populate the fields.
+
 1. Click on the plus below the user name fields, and then click the **User groups** tab in the pop-up to select the groups for the user.
 
    ![Add new user](assets/add-new-user.png)
@@ -79,4 +81,8 @@ Repeat these steps for each user for whom you need to assign the notification gr
 
    ![Users](assets/users.png)
 
-1. Highlight the user you wish to add to a notification group and 
+1. Click the row of the user you wish to add to a notification group. A panel revealing the user details opens.
+
+  ![User details](assets/user-details.png)
+
+1. Click the ellipsis icon at the right side of the **User Groups** section in the detail panel.
