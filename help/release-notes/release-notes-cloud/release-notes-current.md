@@ -32,6 +32,15 @@ Have a look at the August 2022 Release Overview video for a summary of the featu
 
 ### New features in [!DNL Sites] {#sites-features}
 
+* The [Personalization Tab for Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) allows segmentation specification capabilities to the Experience Fragment Editor. Allows the flexibility to create nested experience fragments whereby headers and footers variations can be created for multiple segments.  Prior to the launch of this feature, personalization offered by AEM is only available for site pages, but not for experience fragments.
+ 
+* The Email component allows the creation of content in AEM that is then delivered as emails via Campaign Classic. The Core Email Component:
+  * is based on the [Core WCM Component](https://github.com/adobe/aem-core-wcm-components) which support Editable Templates and the Style System.
+  * provides 10 email-optimized production-ready components (Page, Container, Title, Text, Image, Button, Teaser, Experience Fragment, Content Fragment, Segmentation).
+  * provides advanced personalization and segmentation, thanks to the [insertion of Campaign variables](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) on most dialog fields, and to the flexible [Segmentation component](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
+  * provides optimal email-friendly HTML output, thanks to the [CSS styles inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), the [HTML attribute inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), and the [HTML sanitizer](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+  * allows the creation of the emails anywhere.
+
 ### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
 
 * The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) provides users with an option to display the total number of language copies associated with a content fragment. A 1-click access has been provided to view all the language copies as well. Users are also able to filter the table view by the locale of their interest. 
@@ -70,35 +79,12 @@ Have a look at the August 2022 Release Overview video for a summary of the featu
 
 * **[Convert to PDF/A - An AEM Workflow step](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A is an archival format for long-term preservation of the document’s content, all fonts are embedded and the file is uncompressed. Now, you can use the Convert to PDF/A step an AEM Workflow to convert your documents or files in any format to PDF/A format.
 
-
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
 
 * Association of AEM pages to products and categories via AEM page properties plus overview in product cockpit
  ![product cockpit page association](/help/assets/CIF/product_cockpit_page_association.png)
-
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### What is New {#what-is-new-foundation}
-
-* The [Repository Browser](/help/implementing/developing/tools/repository-browser.md) now has a path input field, making it possible to jump directly to a specific folder in the repository hierarchy
-* Sling Content Distribution (SCD) now supports an explicit "invalidation" action in order to invalidate content without that content being published. Refer to the [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) page for further details.
-* mod_macro is now available in AEM as a Cloud Service. Refer to [this table](/help/implementing/dispatcher/disp-overview.md) for a list of supported Apache modules.
-
-### AEM as a Cloud Service SDK Dispatcher Tools enhancements {#dispatcher-tools-enhancements}
-
-* Apache can be started with `docker_run_hot_reload.sh` script, which will automatically load and validate any subsequent changes to apache and dispatcher configuration, thus improving developer velocity. Only supported for dispatcher tools flexible mode. Also, see [Debugging your Apache and Dispatcher configuration](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) for additional details about automatic reloading and validation.
-* Local apache/dispatcher configuration will more closely track changes in cloud environments, increasing parity between the two environments.
-
-### New features available in [!DNL Experience Manager] prerelease channel {#prerelease-features-foundation}
-
-* AEM as a Cloud Service is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Refer to [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
-
-## Adobe Learning Manager Connectors {#learn-manage}
-
-* The new Adobe Learning Manager has connectors to Adobe Experience Manager Sites, Marketo Engage and Adobe Commerce. To learn more see: [Adobe Learning Manager User Guide](https://helpx.adobe.com/learning-manager/user-guide.html).
- 
 
 ## Cloud Manager {#cloud-manager}
 
