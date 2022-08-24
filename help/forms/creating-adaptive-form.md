@@ -64,9 +64,14 @@ You require the following to create an Adaptive Form:
 1. (Optional) In the Data Tab, select a data model:
    * **Form data model**: A [Form Data Model](data-integration.md) lets you integrate entities and services from disparate data sources to an Adaptive Form. Choose Form Data Model if the Adaptive Form that you are creating involves fetching and write data from and to multiple data source.
    * **JSON Schema**: [JSON schema](adaptive-form-json-schema-form-model.md) represents the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms and all the fields are also added to newly created Adaptive Form.
+
+   By default, all the fields of the data model are selected. When you create the Adaptive Form, all the selected data model fields are converted to corresponding Adaptive Form components. The wizard provides you checkboxes for each data model field to  select only fields which should be included in the Adaptive Form.
+
 1. In the Submission Tab, select a submit action:
+
    *  When you select a template, the submit action specified in the template is auto-selected. You can select a different submit action from the Submission tab. The **[!UICONTROL  Submission]** tab displays all the available submit actions. 
-   * When the selected template does not specify a submit action, you can use the **[!UICONTROL  Submission]** tab to select a submit action
+
+   * When the selected template does not specify a submit action, you can use the **[!UICONTROL Submission]** tab to select a submit action
 
 1. (Optional) In the Delivery tab, you can specify a publishing or unpublishing date for an Adaptive Form.  
 
