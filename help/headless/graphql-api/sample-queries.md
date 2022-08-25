@@ -12,8 +12,8 @@ Learn to use GraphQL with AEM to serve content headlessly by exploring sample co
 >
 >This page should be read together with:
 >
->* [Content Fragments](/help/assets/content-fragments/content-fragments.md)
->* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+>* [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+>* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
 
 To get started with GraphQL queries and how they work with AEM Content Fragments it helps to see some practical examples. 
@@ -1503,6 +1503,56 @@ This query interrogates:
   }
 }
 ```
+
+<!-- CQDOC-19418 -->
+
+<!--
+
+### Sample List Query using offset and limit {#sample-list-offset-limit}
+
+This query interrogates:
+
+* for the page of results containing up to five articles, starting from the fifth article from the *complete* results list
+
+**Sample Query**
+
+```xml
+query {
+   articleList(offset: 5, limit:5) {
+    items {
+      author
+      _path
+    }
+  }
+}
+```
+
+### Sample Pagination Query using first and after  {#sample-pagination-first-after}
+
+This query interrogates:
+
+* for the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list
+
+**Sample Query**
+
+```xml
+query {
+    adventurePaginated(first: 5, after: "ODg1MmMyMmEtZTAzMy00MTNjLThiMzMtZGQyMzY5ZTNjN2M1") {
+        edges {
+          cursor
+          node {
+            adventureTitle
+          }
+        }
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+    }
+}
+```
+
+-->
 
 ## The Sample Content Fragment Structure (used with GraphQL) {#content-fragment-structure-graphql}
 

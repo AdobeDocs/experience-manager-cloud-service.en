@@ -3,7 +3,7 @@ title: Maintenance Tasks in AEM as a Cloud Service
 description: Maintenance Tasks in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 ---
-# Maintenance Tasks in AEM as a Cloud Service
+# Maintenance Tasks in AEM as a Cloud Service {#maintenance-tasks-in-aem-as-a-cloud-service}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
@@ -12,7 +12,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 
 Maintenance Tasks are processes that run on a schedule in order to optimize the repository. With AEM as a Cloud Service, the need for customers to configure the operational properties of maintenance tasks is minimal. Customers can focus their resources on application-level concerns, leaving the infrastructure operations to Adobe.
 
-## Configuring maintenance tasks
+## Configuring maintenance tasks {#maintenance-tasks-configuring}
 
 In previous versions of AEM, you could configure maintenance tasks by using the Maintenance Card (Tools > Operations > Maintenance). For AEM as a Cloud Service, the Maintenance Card is no longer available so configurations should be committed to source control and deployed by using the Cloud Manager. Adobe manages those maintenance tasks which have settings that are not configurable by customers (for example, Datastore Garbage Collection, Audit Log Purge, Version Purge). Other maintenance tasks can be configured by customers, as described in the table below.
 
