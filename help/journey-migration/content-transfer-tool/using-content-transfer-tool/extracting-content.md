@@ -26,7 +26,7 @@ Follow the steps below to extract your migration set from the Content Transfer T
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png) 
 
-   >![IMPORTANT]
+   >[!IMPORTANT]
    >
    >Make sure that the Extraction key is valid and is not close to its expiration. If it's close to its expiration date, you can renew the Extraction key by selecting the migration set and clicking on Properties. Click on **Renew**. This will take you to the Cloud Acceleration Manager where you can click on **Copy Extraction Key**. Every time you click on **Copy Extraction Key**, a new Extraction key is generated which is valid for 14 days from the time of creation.
    >[!image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
