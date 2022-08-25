@@ -1,9 +1,9 @@
 ---
-title: Monitoring in AEM as a Cloud Service
-description: Monitoring in AEM as a Cloud Service
+title: Infrastructure and Service Monitoring in AEM as a Cloud Service
+description: Infrastructure and Service Monitoring in AEM as a Cloud Service
 ---
 
-# Monitoring in AEM as a Cloud Service {#monitoring-in-aem-as-a-cloud-service}
+# Infrastructure and Service Monitoring in AEM as a Cloud Service {#monitoring-in-aem-as-a-cloud-service}
 
 Adobe Experience Manager as a Cloud Service provides observability and monitoring of infrastructure, services and user experience utilizing a variety of solutions. The goal of this document is to provide insight into observability and monitoring to our customer’s technical staff and business stakeholders. Since there are several layers of monitoring, this page is organized into three sections: [external availability](external-availability) , [internal module monitoring](#module-monitoring) and [customer observability](#customer-observability). The last section of covers [monitoring protocols](#monitoring-protocol).
 
@@ -13,7 +13,7 @@ External availability has two distinct parts: Service Edge and Custom Monitoring
 
 **Service Edge**
 
-All of your AEMaaCS environments are monitored for availability and alerts are sent to the engineering team in case a problem is detected. However, Service Edge Monitoring is set up only for production environments and the metrics are used to calculate the customer's SLA. It takes environment runtime and the AEMaaCS CDN into consideration. Service Edge Monitoring employs 5 distinct locations close to your chosen region and checks periodically for availability. A site's unavailability triggers an alert and will engage our on-call support teams and processes.
+All of your AEMaaCS environments are monitored for availability and alerts are sent to the engineering team in case a problem is detected. However, Service Edge Monitoring is set up only for production environments and the metrics are used to calculate the customer's SLA. It takes environment runtime and the AEMaaCS CDN into consideration. Service Edge Monitoring employs five distinct locations close to your chosen region and checks periodically for availability. A site's unavailability triggers an alert and will engage our on-call support teams and processes.
 
 **Custom Monitoring**
 
