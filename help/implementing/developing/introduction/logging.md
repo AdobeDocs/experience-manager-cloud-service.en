@@ -543,7 +543,7 @@ The network bandwidth associated with logs sent to Splunk are considered part of
 
 In the support request, customers should indicate:
 
-* Splunk HEC endpoint address
+* Splunk HEC endpoint address. This endpoint must have a valid SSL certificate
 * The Splunk index
 * The Splunk port 
 * The Splunk HEC token. See [this page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) for more information.

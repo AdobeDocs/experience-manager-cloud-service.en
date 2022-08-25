@@ -7,16 +7,16 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2022.5.0 |
+| Version | 2022.7.0 |
 | Type | Continuous Updates |
 | Availability date | Continuous Update |
 
 ## How to Prepare for a Release {#how-to-prepare}
 
-With the continuous release model in [!DNL Adobe Experience Manager] as a Cloud Service, the application is auto updated on an ongoing basis. There are two types of updates, feature releases and critical updates:
+With the continuous release model in [!DNL Adobe Experience Manager] as a Cloud Service, the application is auto updated on an ongoing basis. There are two types of updates, feature releases and maintenance releases:
 
 * Feature releases are done with a predictable monthly frequency and are focused on new capabilities and product innovations.
-* Critical updates are done frequently and are focused on security updates, bug fixes, and performance enhancements. This ensures that [!DNL Adobe Experience Manager] as a Cloud Service is always up-to-date with any critical fixes.
+* Maintenance releases are done frequently and are focused on security updates, bug fixes, and performance enhancements. This ensures that [!DNL Adobe Experience Manager] as a Cloud Service is always up-to-date with any critical fixes.
 
 In addition to the speed of innovation, [!DNL Adobe Experience Manager] as a Cloud Service also provides the flexibility to preview upcoming features a full month in advance before the features are released into production. This allows you to assess the impact of an upcoming release on their organization by test driving the features in your own custom environment and train/prepare the internal users well in advance. 
 
@@ -45,7 +45,7 @@ To prepare for a release:
 |---|---|
 |[Overview](/help/overview/home.md)|This guide provides an overview of Experience Manager as a Cloud service, including an introduction, terminology, etc.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
-|[Onboarding](/help/onboarding/home.md)|This guide provides a summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
+|[Onboarding Journey](/help/journey-onboarding/overview.md)|This guide provides a summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.|
 |[Assets User Guide](/help/assets/home.md)|Understand how to use and administer Experience Manager Assets as a Cloud Service.|
 |[Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md)|Understand the transition journey to Cloud Service.|

@@ -60,8 +60,6 @@ You can use the left hand navigation pane to nagivate through the content hierar
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-<!-- Alexandru: temporarily commenting this out, please don't delete. 
-
 Alternatively, you can navigate directly to a path by entering it in the **Path** field, as shown below. This will also expand its location in the content hierarcy view on the left.
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
@@ -69,8 +67,6 @@ Alternatively, you can navigate directly to a path by entering it in the **Path*
 Whenever you click a folder on the left, the Path field automatically populates with its location. This is useful for copying and pasting the value for later usage.
 
 Additionally, when you click on a folder, the URL is dynamically modified to include the path to that folder. This allows for bookmarkable URLs.
-
--->
 
 For publish, by default, the Repository Browser will only show public content, thus certain folders like `/conf` or `/home` will not be visible. 
 

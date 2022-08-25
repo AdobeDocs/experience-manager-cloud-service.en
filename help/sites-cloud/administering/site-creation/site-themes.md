@@ -41,7 +41,7 @@ Site themes are simply packages with a logical structure that clearly reflects t
 
 ## Standard Site Theme {#standard-site-theme}
 
-Adobe provides a best-practices reference theme that you can use as a basis for creating your own theme. [The Standard Site Theme is available on GitHub.](https://github.com/adobe/aem-site-template-standard-theme-e2e)
+Adobe provides a best-practices reference theme that you can use as a basis for creating your own theme. [The Standard Site Theme is available on GitHub](https://github.com/adobe/aem-site-template-standard/tree/main/theme).
 
 ## Developing Site Themes {#developing-themes}
 
