@@ -5,6 +5,7 @@ sub-product: Adobe Experience Manager as a Cloud Service
 solution-title: Experience Cloud
 feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service overview self-help resources and documentation links
+breadcrumb-title: User Guide
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 ---
@@ -28,6 +29,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + General AEMaaCS Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.6.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
+      + [Release Notes for 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
       + [Release Notes for 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
       + [Release Notes for 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
       + [Release Notes for 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
@@ -58,6 +61,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
+      + [Release Notes for 2022.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
       + [Release Notes for 2022.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
       + [Release Notes for 2022.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
       + [Release Notes for 2022.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
@@ -91,6 +96,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.5.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
       + [Release Notes for 2022.4.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
       + [Release Notes for 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
       + [Release Notes for 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
@@ -115,24 +121,19 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Same Site Cookie Support for AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
 + Onboarding {#onboarding}
-  + [Onboarding to AEM as a Cloud Service](/help/onboarding/home.md)
-  + Learn Onboarding Concepts {#onboarding-concepts}
-    + [System Administrator](/help/onboarding/learn-concepts/system-administrator.md)
-    + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
-    + [Adobe Identity Management System](/help/onboarding/learn-concepts/ims.md)
-    + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
-    + [Introduction to Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
-    + [AEM as a Cloud Service Team & Product Profiles](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
-    + [Adobe Support](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+  + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
   + Onboarding Journey {#journey}
-    + [Onboarding Journey](/help/journey-onboarding/home.md)
-    + [Overview to Onboarding Journey](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)
-    + [Getting Started with Onboarding Process](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md)
-    + [Assign Team Members to Cloud Manager Product Profiles](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md)
-    + [Setup Cloud Resources via Cloud Manager](/help/journey-onboarding/sysadmin/setup-cloud-resources-via-cloud-manager.md)
-    + [Assign Team Members to AEM as a Cloud Service Product Profiles](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
-    + [Learning Path for Developers and Deployment Managers](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
-    + [Learning Path for AEM Users](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+    + [Onboarding Journey Overview](/help/journey-onboarding/overview.md)
+    + [Onboarding Preparation](/help/journey-onboarding/preparation.md)
+    + [AEM as a Cloud Service Terminology](/help/journey-onboarding/terminology.md)
+    + [The Admin Console](/help/journey-onboarding/admin-console.md)
+    + [Assigning Cloud Manager Product Profiles](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+    + [Access Cloud Manager](/help/journey-onboarding/cloud-manager.md)
+    + [Create a Program](/help/journey-onboarding/create-program.md)
+    + [Create Environments](/help/journey-onboarding/create-environments.md)
+    + [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md)
+    + [Developer and Deployment Manager Tasks](/help/journey-onboarding/developers.md)
+    + [AEM User Tasks](/help/journey-onboarding/aem-users.md)
   + AEM Reference Demos Add-On Journey {#demo-add-on}
     + [Overview](/help/journey-sites/demos-add-on/overview.md)
     + [Installation](/help/journey-sites/demos-add-on/installation.md)
@@ -140,6 +141,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Create Demo Site](/help/journey-sites/demos-add-on/create-site.md)
     + [Enable Screens](/help/journey-sites/demos-add-on/screens.md)
     + [Manage Your Demo Site](/help/journey-sites/demos-add-on/manage.md)
+  + Other Onboarding Concepts {#concepts}
+    + [Introduction to Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
+    + [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md)
 + AEM as a Cloud Service Migration Journey {#migration-journey}
   + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/getting-started.md)
   + [Readiness Phase](/help/journey-migration/readiness.md)
@@ -265,7 +269,24 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Understanding Segmentation](/help/sites-cloud/authoring/personalization/segmentation.md)
       + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
+    + Campaign {#campaign}
+      + [Creating Newsletters with AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
   + Administering {#administering}
+    + Content Fragments {#content-fragments}
+      + [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+      + [Headless Delivery with Content Fragments and GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
+      + [Enable Content Fragment Functionality for your Instance](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
+      + [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+      + [Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
+      + [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+      + [Variations - Authoring Fragment Content](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+      + [Content Fragment Associated Content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
+      + [Metadata - Fragment Properties](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+      + [Content Fragments - Delete Considerations](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
+      + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
+      + [Structure Tree](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
+      + [Preview - JSON Representation](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+      + [Content Fragments Console - Keyboard Shortcuts](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
     + Site Creation {#site-creation}
       + [Creating a New Site](/help/sites-cloud/administering/site-creation/create-site.md)
       + [Enable Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -314,9 +335,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Integrating with Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
     + [Integrating with Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
     + [IMS Configuration for use when Integrating with Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
+    + [Integrating with Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
     + [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
     + [IMS Configuration for use when Integrating with Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+    + [Integrating with Adobe Campaign Classic](/help/sites-cloud/integrating/integrating-campaign-classic.md)
 + Assets {#assets}
   + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
   + [Overview and what's new](/help/assets/overview.md)
@@ -371,6 +394,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [XMP metadata](/help/assets/xmp-metadata.md)
     + [MediaLibrary capabilities](/help/assets/medialibrary.md)
     + [Import and export asset metadata](/help/assets/metadata-import-export.md)
+    + [Configure asset upload restrictions](/help/assets/configure-asset-upload-restrictions.md)
   + Share and distribute assets {#brand-portal}
     + [Configure [!DNL Assets] with [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
     + [Publish assets to [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
@@ -447,6 +471,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Remove external dependencies for existing installations](/help/assets/remove-external-dependencies.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
     + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+    + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
 + Forms {#forms}
   + [Introduction](/help/forms/home.md)
   + [Key features](/help/forms/key-features.md)
@@ -472,12 +497,12 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
       + [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
       + [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)
-      + [Design an XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
       + [Use Forms Designer](/help/forms/use-forms-designer.md)
       + [Improve performance of large forms with lazy loading](/help/forms/lazy-loading-adaptive-forms.md)
     + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
       + [Use CAPTCHA in an Adaptive Form](/help/forms/captcha-adaptive-forms.md)
       + [Use Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+      +  [Apply Scribble Signature](/help/forms/signing-forms-using-scribble.md)
     + Configure layout and apply style to an Adaptive Form{#configure-layout-of-an-adaptive-form}
       + [Set layout of an Adaptive Form](/help/forms/layout-capabilities-adaptive-forms.md)
       + [Use Layout mode to resize components](/help/forms/resize-using-layout-mode.md)
@@ -610,18 +635,18 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Content Fragment](/help/headless/setup/create-content-fragment.md)
     + [GraphQL Endpoint](/help/headless/setup/create-api-request.md)
   + Content Fragments {#content-fragments}
-    + [Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
-    + [Content Fragments Console](/help/headless/content-fragments/content-fragment-console.md)
-    + [Content Fragment Models](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
-    + [Managing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
+    + [Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
+    + [Content Fragments Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
+    + [Content Fragment Models](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
+    + [Managing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
     + Authoring{#authoring}
-      + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
-      + [Text editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
-      + [Associated Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
-      + [Variations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
-    + [Metadata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
-    + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-    + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+      + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
+      + [Text editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
+      + [Associated Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
+      + [Variations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
+    + [Metadata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
+    + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
+    + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
   + GraphQL API {#graphql-api}
     + [GraphQL API for Content Fragments](/help/headless/graphql-api/content-fragments.md)
     + [Manage GraphQL endpoints](/help/headless/graphql-api/graphql-endpoint.md)
@@ -727,7 +752,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Applying and Un-Applying IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
       + [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
     + [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md)
-    + [Cloud Manager FAQs](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
+    + [Cloud Manager FAQs](/help/implementing/cloud-manager/faqs.md)
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
     + [AEM Project Repository Structure Package](/help/implementing/developing/introduction/repository-structure-package.md)
@@ -866,6 +891,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Backup and Restore](/help/operations/backup.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
+  + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)
 + Compliance {#compliance}
   + [Compliance in AEM as a Cloud Service](/help/compliance/home.md)
   + Data Privacy and Protection Readiness {#data-privacy}
