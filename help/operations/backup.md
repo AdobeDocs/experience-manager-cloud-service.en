@@ -21,10 +21,15 @@ The restore process only affects content, leaving your code and version of AEM u
 
 Cloud Manager provides two types of backups from which you may restore content.
 
-* **Point In Time (PIT):** This type restores from system backups from the last 24 hours from the current time.
+* **Point In Time (PIT):** This type restores from continuous system backups from the last 24 hours from the current time.
 * **Last week:** This type restores from system backups in the last seven days excluding the previous 24 hours.
 
 In both cases, the version of your custom code and AEM version remain unchanged.
+
+The performance metrics of restoring content in AEM as a ContentService refer to the standardized benchmarks:
+
+* **Recovery Time Objective (RTO):** The Recovery Time Objective varies depending on the size of the repository, but as a rule of thumb, once the recovery sequence begins, it should take about 30 minutes.
+* **The Recovery Point Objective (RPO):** The Recovery Point Objective is 24 hours maximum
 
 >[!TIP]
 >
