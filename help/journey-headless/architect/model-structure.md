@@ -24,7 +24,7 @@ This article builds on these so you understand how to create your own Content Fr
 
 At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a new configuration. For example:
 
-![Define configuration](/help/assets/content-fragments/assets/cfm-conf-01.png)
+![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cfm-conf-01.png)
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ After selecting this you navigate to the location for your model and select **Cr
 
 The option **Enable model** is activated by default. This means that your model will be available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
 
-![Create Content Fragment Model](/help/assets/content-fragments/assets/cfm-models-02.png)
+![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
 Confirm with **Create** and you can then **Open** your model to start defining the structure.
 
@@ -49,21 +49,21 @@ Confirm with **Create** and you can then **Open** your model to start defining t
 
 When you first open a new model you will see - a large blank space to the left, and a long list of **Data Types** at the right:
 
-![Empty Model](/help/assets/content-fragments/assets/cfm-models-03.png)
+![Empty Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 
 So - what's to be done?
 
 You can drag instances of the **Data Types** onto the left space - you're already defining your model!
 
-![Defining fields](/help/assets/content-fragments/assets/cfm-models-04.png) 
+![Defining fields](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png) 
 
 Once you add a data type you'll be required to define the **Properties** for that field. These depend on the type being used. For example:
 
-![Data Properties](/help/assets/content-fragments/assets/cfm-models-05.png) 
+![Data Properties](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png) 
 
 You can add as many fields as you need. For example:
 
-![Content Fragment Model](/help/assets/content-fragments/assets/cfm-models-07.png)
+![Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-07.png)
 
 ### Your Content Authors {#your-content-authors}
 
@@ -106,23 +106,23 @@ Now that you have learned the basics, the next step is to start creating your ow
 
 * [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for navigating to, and taking action on, **Content Fragment Models** under the **General** console.
 
-* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
  
-  * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-    * [Defining your Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+    * [Defining your Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-    * [Enabling or Disabling a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+    * [Enabling or Disabling a Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-    * [Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+    * [Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
-    * [Deleting a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+    * [Deleting a Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 
-    * [Publishing a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+    * [Publishing a Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-    * [Unpublishing a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+    * [Unpublishing a Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
-    * [Locked (Published) Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+    * [Locked (Published) Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * Getting Started Guides
   
