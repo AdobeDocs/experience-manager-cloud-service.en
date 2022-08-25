@@ -7,17 +7,19 @@ description: Infrastructure and Service Monitoring in AEM as a Cloud Service
 
 Adobe Experience Manager as a Cloud Service provides observability and monitoring of infrastructure, services and user experience utilizing a variety of solutions. The goal of this document is to provide insight into observability and monitoring to our customer’s technical staff and business stakeholders. Since there are several layers of monitoring, this page is organized into three sections: [external availability](external-availability) , [internal module monitoring](#module-monitoring) and [customer observability](#customer-observability). The last section of covers [monitoring protocols](#monitoring-protocol).
 
+If you require information about other types of monitoring like logging or monitoring through Cloud Manager please see the [Additional Resources](#resources) section.
+
 ## External Availability {#external-availability}
 
-External availability has two distinct parts: Service Edge and Custom Monitoring.
+External availability is composed of two parts: Service Edge and Custom Monitoring.
 
-**Service Edge**
+### Service Edge {#service-edge}
 
-All of your AEMaaCS environments are monitored for availability and alerts are sent to the engineering team in case a problem is detected. However, Service Edge Monitoring is set up only for production environments and the metrics are used to calculate the customer's SLA. It takes environment runtime and the AEMaaCS CDN into consideration. Service Edge Monitoring employs five distinct locations close to your chosen region and checks periodically for availability. A site's unavailability triggers an alert and will engage our on-call support teams and processes.
+All of your AEM as a Cloud Service environments are monitored for availability and alerts are sent to the engineering team in case a problem is detected. However, Service Edge Monitoring is set up only for production environments and the metrics are used to calculate the customer's SLA. It takes environment runtime and the AEM as a Cloud Service CDN into consideration. Service Edge Monitoring employs five distinct locations close to your chosen region and checks periodically for availability. A site's unavailability triggers an alert and will engage our on-call support teams and processes.
 
-**Custom Monitoring**
+### Custom Monitoring {#custom-monitoring}
 
-With Custom monitoring, customers have the option to provide up to five distinct web property URLs prior to going live. These URLs should be valid and return an HTTP 200 response code. These monitors support customers who bring their own CDN in front of the Adobe CDN  and any external traffic routing employed in front of AEMaaCS that is not under Adobe’s control.
+With Custom monitoring, customers have the option to provide up to five distinct web property URLs prior to going live. These URLs should be valid and return an HTTP 200 response code. These monitors support customers who bring their own CDN in front of the Adobe CDN  and any external traffic routing employed in front of AEM as a Cloud Service that is not under Adobe’s control.
 
 ## Internal Module Monitoring {#module-monitoring}
 
@@ -47,7 +49,7 @@ Example check:
 
 **Disk on host and document node store check**
 
-This group of monitors checks for disk usage, read and write operations on disk. AEM repository size is also monitored under this group.
+This group of monitors checks for disk usage, read and write operations on disk. AEM repository size is also monitored.
 
 Example check:
 
@@ -62,7 +64,7 @@ Backup operations are checked for execution and successful completion.
 
 **Document store database**
 
-Dozens of monitors are used to watch the MongoDB health and performance. The monitors include checks for database cluster health, CPU, IO, JVM and more.
+Dozens of monitors are used to watch the MongoDB health and performance. These monitors include checks for database cluster health, CPU, IO, JVM and more.
 
 **Service Check**
 
@@ -80,7 +82,7 @@ Additional checks are added to environments provisioned for Forms. There is also
 
 ## Customer observability {#customer-observability}
 
-Customers can use the [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) monitoring suite that provides real time performance data collected and charted for analysis and troubleshooting. Some of the data the suite provides is: JVM performance metrics, transaction time for Java, background external calls and database calls.
+Customers can use the [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) monitoring suite that provides real time performance data collected and charted for analysis and troubleshooting. Some of the data the suite provides: JVM performance metrics, transaction time for Java, background external calls and database calls.
 
 ## Monitoring protocol {#monitoring-protocol}
 
@@ -88,5 +90,8 @@ The engineering team responds to Service Edge Monitoring alerts. The Cloud Subje
 
 ## Conclusion {#page-conclusion}
 
-AEMaaCS uses hundreds of cloud-native monitors to report on the state of each environment 24x7x365. The monitor's definitions are not static, they are continuously reviewed to improve the early detection capability. The Application Performance Monitor allows customers to directly observe various metrics. Additionally, AEM
-CS (Adobe?) have on-call procedures set up to respond to alerts.
+AEM as a Cloud Service uses hundreds of cloud-native monitors to report on the state of each environment 24/7 and 365 days a year. The monitor's definitions are not static, they are continuously reviewed to improve the early detection capability. The Application Performance Monitor allows customers to directly observe various metrics. Additionally, AEM CS (Adobe?) have on-call procedures set up to respond to alerts.
+
+## Additional Resources {#resources}
+
+TBD
