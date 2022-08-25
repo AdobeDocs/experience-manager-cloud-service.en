@@ -497,7 +497,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
       + [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
       + [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)
-      + [Design an XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
       + [Use Forms Designer](/help/forms/use-forms-designer.md)
       + [Improve performance of large forms with lazy loading](/help/forms/lazy-loading-adaptive-forms.md)
     + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
