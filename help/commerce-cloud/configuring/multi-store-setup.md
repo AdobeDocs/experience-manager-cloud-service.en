@@ -2,7 +2,7 @@
 title: Commerce Multi-Store Setup
 description: Learn how map multiple store views from Adobe Commerce to AEM. This allows projects to support multi-tenant and multi-lingual use cases.
 sub-product: Commerce
-version: cloud-service
+version: Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator

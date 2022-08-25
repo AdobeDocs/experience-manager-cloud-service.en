@@ -108,7 +108,7 @@ The following are some additional resources that do a deeper dive on some concep
 * [webpack](https://webpack.js.org) - AEM themes used to quickly build sites rely on webpack.
 * [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - This guide details how to manage pages of your AEM Site if you wish to customize it further after creating it from the template.
 * [How to Work with Package](/help/implementing/developing/tools/package-manager.md) - Packages enable the importing and exporting of repository content. This document explains how to work with packages in AEM 6.5, which also applies to AEMaaCS.
-* [Onboarding Journey](/help/journey-onboarding/home.md) - This guide serves as your starting point to ensure that your teams are set up and have access to AEM as a Cloud Service.
+* [Onboarding Journey](/help/journey-onboarding/overview.md) - This guide serves as your starting point to ensure that your teams are set up and have access to AEM as a Cloud Service.
 * [Adobe Experience Manager Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Explore the Cloud Manager documentation for full details of its features.
 * [Site Administration Documentation](/help/sites-cloud/administering/site-creation/create-site.md) - Check out the technical docs on site creation for more details on the Quick Site Creation tool's features.
 * [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - This document describes some considerations to be aware of in order to get the full potential out of the front-end development process using the front-end pipeline.

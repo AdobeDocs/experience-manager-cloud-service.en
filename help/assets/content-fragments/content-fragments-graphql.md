@@ -29,11 +29,7 @@ This is achieved using Content Fragments, together with the AEM GraphQL API (a c
 
 ## Headless CMS {#headless-cms}
 
-A Headless Content Management System (CMS) is:
-
-* "*A headless content management system, or headless CMS, is a back-end only content management system (CMS) built from the ground up as a content repository that makes content accessible via an API for display on any device.*
-
-  See [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+A Headless Content Management System (CMS) is a back-end only content management system, designed and built explicitly as a content repository that makes content accessible via an API, for display on any device.
 
 In terms of authoring Content Fragments in AEM this means that:
 

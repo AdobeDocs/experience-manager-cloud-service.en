@@ -184,7 +184,7 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
     <td>This internal logback API is not supported by AEM as a Cloud Service.</td>
     <td>1/27/2022</td>
-    <td>3/24/2022</td>
+    <td>removed</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>
