@@ -289,6 +289,12 @@ The values for secrets are read from files. Therefore for each placeholder using
 
 For example if `$[secret:server_password]` is used, a text file named **server_password** must be created. All these secret files must be stored in the same directory and the framework property `org.apache.felix.configadmin.plugin.interpolation.secretsdir` must be configured with that local directory.
 
+The framework property `org.apache.felix.configadmin.plugin.interpolation.secretsdir` can be configured in sling.properties file of your local AEM SDK Quickstart. This file would be located under /crx-quickstart/conf location. Syntax as below: 
+
+```
+org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/../secrets
+```
+
 ### Author versus Publish Configuration {#author-vs-publish-configuration}
 
 If an OSGi property requires different values for author versus publish:
