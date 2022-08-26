@@ -5,7 +5,9 @@ description: Infrastructure and Service Monitoring in AEM as a Cloud Service
 
 # Infrastructure and Service Monitoring in AEM as a Cloud Service {#monitoring-in-aem-as-a-cloud-service}
 
-Adobe Experience Manager as a Cloud Service provides observability and monitoring of infrastructure, services and user experience utilizing a variety of solutions. The goal of this document is to provide insight into observability and monitoring to our customer’s technical staff and business stakeholders. Since there are several layers of monitoring, this page is organized into three sections: [external availability](external-availability) , [internal module monitoring](#module-monitoring) and [customer observability](#customer-observability). The last section of covers [monitoring protocols](#monitoring-protocol).
+Adobe Experience Manager as a Cloud Service provides observability and monitoring of infrastructure, services and user experience utilizing a variety of solutions. The goal of this document is to provide insight into observability and monitoring to our customers' technical staff and business stakeholders. Since there are several layers of monitoring, this page is organized into three sections: [external availability](external-availability) , [internal module monitoring](#module-monitoring) and [customer observability](#customer-observability). The last section covers [monitoring protocols](#monitoring-protocol).
+
+AEM as a Cloud Service uses hundreds of cloud-native monitors to report on the state of each environment 24/7 and 365 days a year. The monitor's definitions are not static, they are continuously reviewed to improve the early detection capability. Additionally, Adobe has on-call procedures set up to respond to alerts.
 
 If you require information about other types of monitoring like logging or monitoring through Cloud Manager please see the [Additional Resources](#resources) section.
 
@@ -19,11 +21,11 @@ All of your AEM as a Cloud Service environments are monitored for availability a
 
 ### Custom Monitoring {#custom-monitoring}
 
-With Custom monitoring, customers have the option to provide up to five distinct web property URLs prior to going live. These URLs should be valid and return an HTTP 200 response code. These monitors support customers who bring their own CDN in front of the Adobe CDN  and any external traffic routing employed in front of AEM as a Cloud Service that is not under Adobe’s control.
+With Custom monitoring, customers have the option to provide up to five distinct web property URLs prior to going live. These URLs should be valid and return an HTTP 200 response code. These monitors support customers who [bring their own CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) in front of the Adobe CDN  and any external traffic routing employed in front of AEM as a Cloud Service that is not under Adobe’s control.
 
 ## Internal Module Monitoring {#module-monitoring}
 
-While external availability is focused on end-user monitoring, internal module monitoring observes whether the architectural sub-systems are operating nominally without feature or performance degradation. In case of a problem, alerts are triggered so repairs can be done either automatically or through the involvement of the operation team, with the goal of preventing compromised availability. The following sub-sections will introduce various categories of monitors with some example checks.
+While external availability is focused on end-user monitoring, internal module monitoring observes whether the architectural sub-systems are operating nominally without feature or performance degradation. In case of a problem, alerts are triggered so repairs can be done either automatically or through the involvement of the operations team, with the goal of preventing compromised availability. The following sub-sections will introduce various categories of monitors with some example checks.
 
 **Pod check**
 
@@ -82,15 +84,11 @@ Additional checks are added to environments provisioned for Forms. There is also
 
 ## Customer observability {#customer-observability}
 
-Customers can use the [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) monitoring suite that provides real time performance data collected and charted for analysis and troubleshooting. Some of the data the suite provides: JVM performance metrics, transaction time for Java, background external calls and database calls.
+Customers can use the [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) suite that provides real time performance data collected and charted for analysis and troubleshooting. By using the monitoring suite, customers can directly observe various metrics such as: JVM performance metrics, transaction time for Java, background external calls and database calls.
 
 ## Monitoring protocol {#monitoring-protocol}
 
 The engineering team responds to Service Edge Monitoring alerts. The Cloud Subject Matter (CSME) team attend to alerts resulting from Custom Monitoring checks.
-
-## Conclusion {#page-conclusion}
-
-AEM as a Cloud Service uses hundreds of cloud-native monitors to report on the state of each environment 24/7 and 365 days a year. The monitor's definitions are not static, they are continuously reviewed to improve the early detection capability. The Application Performance Monitor allows customers to directly observe various metrics. Additionally, AEM CS (Adobe?) have on-call procedures set up to respond to alerts.
 
 ## Additional Resources {#resources}
 
