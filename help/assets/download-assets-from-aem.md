@@ -29,7 +29,7 @@ You can download assets from Experience Manager using the following methods:
 
 ## Download assets using [!DNL Experience Manager] interface {#download-assets}
 
-Experience Manager optimizes the download experience based on the asset quantity and size. Smaller files are downloaded from the user interface in real time. [!DNL Experience Manager] will directly download single asset requests for the original file rather than enclosing single assets in a ZIP archiveto allow for faster downloads. Experience Manager supports large downloads with asynchronous requests. Download requests larger than 100 GB in size are split into multiple ZIP archives with a maximum size of 100 GB each. 
+Experience Manager optimizes the download experience based on the asset quantity and size. Smaller files are downloaded from the user interface in real time. [!DNL Experience Manager] directly downloads single asset requests for the original file rather than enclosing single assets in a ZIP archive to allow for faster downloads. Experience Manager supports large downloads with asynchronous requests. Download requests larger than 100 GB are split into multiple ZIP archives with a maximum size of 100 GB each. 
 
 By default, [!DNL Experience Manager] triggers a notification in the [[!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md) upon generation of a download archive.
 
@@ -44,7 +44,7 @@ Asynchronous downloads are triggered in any of the following cases:
 * If the download size is more than 100 MB
 * If the download takes more than 30 seconds to prepare
 
-While the asynchronous download runs at the backend, the user can continue to explore and work further in Experience Manager. In addition to the Experience Manager inbox noifications, Experience Manager can send emails to notify the user upon completion of the download process. To enable this feature, the administrators can configure email service by [configuring a SMTP server connection](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+While the asynchronous download runs at the backend, the user can continue to explore and work further in Experience Manager. In addition to the Experience Manager inbox notifications, Experience Manager can send emails to notify the user upon completion of the download process. To enable this feature, the administrators can configure email service by [configuring an SMTP server connection](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 Once the email service is configured, the administrators and users can enable email notifications from the Experience Manager interface. 
 
@@ -52,7 +52,7 @@ To enable email notifications:
 
 1. Log in to [!DNL Experience Manager Assets].
 1. Click the user icon from the upper-right corner and then click **[!UICONTROL My Preferences]** to open the User Preferences window.
-1. Select the **[!UICONTROL Asset Download email notifications]** check box and click **[!UICONTROL Accept]**.
+1. Select the **[!UICONTROL Asset Download email notifications]** checkbox and click **[!UICONTROL Accept]**.
 
    ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
 
@@ -60,7 +60,7 @@ To enable email notifications:
 To download assets, follow these steps:
 
 1. In [!DNL Experience Manager] user interface, click **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
-1. Navigate to the assets you want to download. Select the folder or select one or more assets within the folder. On the toolbar, click **[!UICONTROL Download]**.
+1. Navigate to the assets that you want to download. Select the folder or select one or more assets within the folder. On the toolbar, click **[!UICONTROL Download]**.
 
    ![Available options when downloading assets from [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
 
@@ -68,7 +68,7 @@ To download assets, follow these steps:
 
    | Download option | Description |
    |---|---|
-   | **[!UICONTROL Create separate folder for each asset]** | Select this option to create a folder for each asset containing all of the downloaded renditions for the asset. If unselected each asset (and it's renditions if selected for download) will be contained in the parent folder of the generated archive. |
+   | **[!UICONTROL Create separate folder for each asset]** | Select this option to create a folder for each asset containing all of the downloaded renditions for the asset. If unselected, each asset (and its renditions if selected for download) will be contained in the parent folder of the generated archive. |
    | **[!UICONTROL Email]** | Select this option to send an email notification (containing a link to your download) to another user. The recipient user must be a member of the `dam-users` group. Standard emails templates are available at the following locations:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Templates that you customize during deployment are available at the following locations: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>You can store tenant-specific custom templates at the following locations:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Asset(s)]** | Select this option to download the asset in its original form.<br>The subassets option is available if the original asset has subassets.|
    | **[!UICONTROL Rendition(s)]** | A rendition is the binary representation of an asset. Assets have a primary representation - that of the uploaded file. They can have any number of representations. <br> With this option, you can select the renditions you want downloaded. The renditions that are available depend on the asset you selected. |
@@ -89,7 +89,7 @@ To download assets, follow these steps:
 
 Sharing assets using a link is a convenient way to make it available to interested people without them having to log in to [!DNL Assets]. See [Link Share functionality](/help/assets/share-assets.md#sharelink). 
 
-When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
+When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For larger downloads, the download is chunked into files of 100 GB.
 
 The [!UICONTROL Download Inbox] displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
 
@@ -101,12 +101,12 @@ The default servlet in [!DNL Experience Manager] allows authenticated users to i
 
 To allow downloading assets from your DAM, say when using something like Asset Share Commons or other portal-like implementation, manually enable the servlet via an OSGi configuration. Adobe recommends setting the permissible download size as low as possible without affecting the day-to-day download requirements. A high value may impact performance.
 
-1. Create a folder with a naming convention that targets the publish runmode, that is, `config.publish`:
+1. Create a folder with a naming convention that targets the publish run mode, that is, `config.publish`:
 
    `/apps/<your-app-name>/config.publish`
 
 1. In the config folder, create a new file of type `nt:file` named `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
-1. Populate `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` with the following. Sets a maximum size (in bytes) for the download as value of `asset.download.prezip.maxcontentsize`. The below sample configures the maximum size of the ZIP download to not exceed 100 kB.
+1. Populate `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` with the following. Sets a maximum size (in bytes) for the download as value of `asset.download.prezip.maxcontentsize`. The below sample configures the maximum size of the ZIP download to not exceed 100 KB.
 
    ```java
    enabled=B"true"
