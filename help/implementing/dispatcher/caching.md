@@ -202,6 +202,7 @@ Adobe maintains a list of commonly used marketing query parameters in the file `
 }
 ```
 -->
+
 ## Dispatcher Cache Invalidation {#disp}
 
 In general, it will not be necessary to invalidate the dispatcher cache. Instead you should rely on the dispatcher refreshing its cache when content is being republished and the CDN respecting cache expiration headers.
