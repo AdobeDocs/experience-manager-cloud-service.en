@@ -61,35 +61,21 @@ Content requests are tracked on AEM as a Cloud Service's edge servers. Origi
 
 AEM also has rules in place to exclude well-known bots, including well-known services visiting the site regularly to refresh their search index or service.
 
-The following is a non-exhaustive list of examples of excluded well-known services.
-
-* AddSearchBot 
-* AhrefsBot 
-* Applebot 
-* Ask Jeeves Corporate Spider 
-* Bingbot 
-* BingPreview 
-* BLEXBot 
-* BuiltWith 
-* Bytespider 
-* CrawlerKengo 
-* Facebookexternalhit 
-* Google AdsBot 
-* Google AdsBot Mobile 
-
 ### Why does my Analytics report show different results than the AEM Content Requests? {#why-are-reports-different}
 
-Content Requests will have variances with an organization’s Analytics reporting tools as summarized in this table.
+Content Requests will have variances with an organization's Analytics reporting tools as summarized in this table.
 
 |Reason For Variance|Explanation|
 |---|---|
-|Tagging|All pages that are tracked as AEM content requests may or may not be tagged with Analytics tracking.<br>All API calls that are tracked as AEM content requests will not be tagged by an organization’s Analytics tool.<br>Pages or API calls may be tagged to track actions instead of views.|
+|Tagging|All pages that are tracked as AEM content requests may or may not be tagged with Analytics tracking. All API calls that are tracked as AEM content requests will not be tagged by an organization's Analytics tool.<br>Pages or API calls may be tagged to track actions or just unique page views instead of all views.|
 |Tag Management Rules|Tag management rule settings may result in a variety of data collection configurations on a page, resulting in some combination of discrepancies with content request tracking.|
 |Bots|Unknown bots that have not been pre-identified and removed by AEM may cause tracking discrepancies.|
 |Report Suites|Pages that are part of the same AEM instance and domain may send data to different Analytics report suites.|
 |Third-Party Monitoring and Security Tools|Monitoring and security scanning tools may generate content requests for AEM that are not tracked in Analytics reports.|
 |Prefetch Requests|Using a prefetch service to pre-load pages to increase speed can cause significant content request traffic increases.|
-|DDOS|While Adobe makes every effort to automatically detect and filter out traffic from DDOS attacks, there is no guarantee that all possible DDOS attacks will be detected.|
+|DDOS|While Adobe makes every effort to automatically detect and filter out traffic from DDOS attacks, there is no guarantee that all possible DDOS attacks will be detected|
+|Traffic Blockers|Using a tracker blocker in a browser may opt out some requests from being tracked.|
+|Firewalls|Firewalls may block Analytics tracking. This is more frequent with corporate firewalls.|
 
 ### What if I am using my own CDN? {#using-own-cdn}
 
