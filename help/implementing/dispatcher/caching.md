@@ -190,19 +190,6 @@ The AEM layer will not cache blob content by default.
 
 When a HEAD request is received at the Adobe CDN for a resource that is **not** cached, the request is transformed and received by the dispatcher and/or AEM instance as a GET request. If the response is cacheable then subsequent HEAD requests will be served from the CDN. If the response is not cacheable then subsequent HEAD requests will be passed to the dispatcher and/or AEM instance for a period of time that depends on the `Cache-Control` TTL.
 
-<!---### Marketing campaign parameters {#marketing-parameters}
-
-Marketing campaign parameters are added to a website to track different marketing campaigns but rarely have impact on how the website should look like. That's why in the dispatcher they can mostly be ignored for dispatcher caching decisions. This can be achieved by setting the [ignoreUrlParams](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters) parameter.
-Adobe maintains a list of commonly used marketing query parameters in the file `conf.dispatcher.d/cache/marketing_query_parameters.any`. Uncomment the lines that are used by the websites marketing campaigns and uncomment the `/ignoreUrlParams` section in the enabled farm.
-
-```
-/ignoreUrlParams {
- 	/0001 { /glob "*" /type "deny" }
- 	$include "../cache/marketing_query_parameters.any"
-}
-```
--->
-
 ## Dispatcher Cache Invalidation {#disp}
 
 In general, it will not be necessary to invalidate the dispatcher cache. Instead you should rely on the dispatcher refreshing its cache when content is being republished and the CDN respecting cache expiration headers.
