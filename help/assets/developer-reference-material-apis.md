@@ -80,6 +80,10 @@ The approach provides a scalable and more performant handling of asset uploads. 
 >[!NOTE]
 >
 >See the client code to implement this approach in the open-source [aem-upload library](https://github.com/adobe/aem-upload).
+>
+>[!IMPORTANT]
+>
+>In certain circumstances, changes may not be fully propagated between requests to AEM. This will lead to 404 responses to initiate or complete upload calls due to the requisite folder creations not being propagated. Clients should expect 404 responses and handle them by implementing a retry with a back-off strategy.
 
 ### Initiate upload {#initiate-upload}
 
