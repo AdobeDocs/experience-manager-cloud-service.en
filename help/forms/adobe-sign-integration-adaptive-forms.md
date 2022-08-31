@@ -78,7 +78,7 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 
    ![OAuth Config](assets/oauthconfig_new.png)
 
-1. Go back to the **[!UICONTROL Create Adobe Sign Configuration]** page. Specify the [**[!UICONTROL Client ID]** (also referred to as Application ID) and **[!UICONTROL Client Secret]**]. Use the [Client ID and Client Secret of Adobe Sign application](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) you created in previous step.
+1. Go back to the **[!UICONTROL Create Adobe Sign Configuration]** page. In the **[!UICONTROL Settings]** tab, specify the [**[!UICONTROL Client ID]** (also referred to as Application ID) and **[!UICONTROL Client Secret]**]. Use the [Client ID and Client Secret of Adobe Sign application](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) you created in previous step.
 
 1. Select the **[!UICONTROL Enable Adobe Sign for attachments]** option to append files attached to an Adaptive Form to the corresponding [!DNL Adobe Sign] document sent for signing.
 
