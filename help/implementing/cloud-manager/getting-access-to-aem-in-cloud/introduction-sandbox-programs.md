@@ -41,6 +41,10 @@ Environments created in a sandbox program are not configured for auto-scaling. T
 
 Custom domains and IP allow lists are not available in sandbox programs.
 
+### No Advanced Networking {#advanced-networking}
+
+[Advanced networking features](/help/security/configuring-advanced-networking.md) (e.g. self-serve provisioning of VPN, non-standard ports, dedicated egress IP addresses, etc.) are not available in sandbox programs.
+
 ### Manual AEM Updates {#updates}
 
 AEM updates are not automatically pushed to sandbox programs, but can be applied manually to the environments in your sandbox program.
