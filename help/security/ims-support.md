@@ -223,7 +223,7 @@ Refer to Role Definitions to learn more about roles for users which govern the a
    ![ACL3](/help/security/assets/ims22.png)
 
 
-1. Once you have been added to the appropriate profile, you should be able to access the respective tenants in Cloud Manager via [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) using the top right corner from the user interface.
+1. Once you have been added to the appropriate profile, you should be able to access the respective tenants in Cloud Manager via [Adobe Experience Cloud](https://my.cloudmanager.adobe.com) using the top right corner from the user interface.
 
 
 ### Accessing an Instance in AEM as a Cloud Service {#accessing-instance-cloud-service}

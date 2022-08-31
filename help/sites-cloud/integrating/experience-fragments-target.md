@@ -44,7 +44,7 @@ Experience Fragments can be exported to the default workspace in Adobe Target, o
 >
 >For further information see also:
 >
->* [Adobe Target development](http://developers.adobetarget.com/)
+>* [Adobe Target development](https://developers.adobetarget.com/)
 >* [Core Components - Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 >* [Adobe Target - How Do I Use Adobe Experience Manager (AEM) Experience Fragments?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=en)
 >* [AEM 6.5 - Manually Configuring the Integration with Adobe Target - Creating a Target Cloud Configuration](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
