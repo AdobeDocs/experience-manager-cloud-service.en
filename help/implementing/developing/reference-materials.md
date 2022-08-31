@@ -28,7 +28,7 @@ AEM relies on a number of additional open-source APIs.
 |API|Description|
 |---|---|
 |[Apache Sling](https://sling.apache.org/apidocs/sling11/)|Web framework that uses a Java Content Repository (JCR) to store and manage content|
-|[Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html)|Implementation a scalable and high-performance hierarchical Java Content Repository (JCR) for use as the foundation of modern world-class web sites|
+|[Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)|Implementation a scalable and high-performance hierarchical Java Content Repository (JCR) for use as the foundation of modern world-class web sites|
 |[Java Content Repository](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)|Specification for the JCR Version 2.0|
 |[Apache Felix](https://felix.apache.org)|Implementation of the Open Services Gateway initiative (OSGi) framework and service platform|
 
@@ -40,7 +40,7 @@ AEM is built on the following four primary Java API sets in descending order of 
 |---|---|---|
 |1|[Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html)|Product abstractions such as pages, assets, workflows, etc.|
 |2|[Apache Sling](https://sling.apache.org/apidocs/sling11/)|REST and resource-based abstractions such as resources, value maps, and HTTP requests.|
-|3|[Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html)|Data and content abstractions such as node, properties and sessions.|
+|3|[Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)|Data and content abstractions such as node, properties and sessions.|
 |4|[Apache Felix](https://felix.apache.org/)|OSGi application container abstractions such as services and (OSGi) components.|
 
 If an API is provided by AEM, prefer it over Sling, JCR, and OSGi. If AEM doesn’t provide an API, then prefer Sling over JCR and OSGi.
