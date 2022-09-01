@@ -1,4 +1,4 @@
-﻿---
+---
 title: Accessibility in Dynamic Media
 description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, publishing videos to YouTube, and viewing video reports. Also learn how to add closed captioning, subtitles, or chapter markers to videos.
 contentOwner: Rick Brough
