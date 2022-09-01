@@ -556,7 +556,7 @@ Make sure that the text contrasts sufficiently with its background. Contrast rat
 >
 >* [Px to Em Calculater - Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: PX to EM conversion made simple](https://pxtoem.com)
+>* [PMtoEM.com: PX to EM conversion made simple](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 To check contrast ratios, use a color contrast tool, such as the [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) or the [WebAIM color contrast checker](https://www.webaim.org/resources/contrastchecker/). These tools allow you to check pairs of colors and report on any contrast problems.
 
