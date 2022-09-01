@@ -53,11 +53,11 @@ Your component will be rendered with [HTML.](https://www.w3schools.com/htmL/html
 
 It is recommended to keep the code responsible for markup and rendering separate from the code that controls the logic used to select the component's content.
 
-This philosophy is supported by [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html), a templating language that is purposely limited to ensure a real programming language is used to define the underlying business logic. This mechanism highlights the code that is called for a given view and, if required, allows specific logic for different views of the same component.
+This philosophy is supported by [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), a templating language that is purposely limited to ensure a real programming language is used to define the underlying business logic. This mechanism highlights the code that is called for a given view and, if required, allows specific logic for different views of the same component.
 
 This (optional) logic can be implemented in different ways and is invoked from HTL with specific commands:
 
-* Using Java - [The HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) enables an HTL file to access helper methods in a custom Java class. This allows you to use Java code to implement the logic for selecting and configuring the component content.
+* Using Java - [The HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) enables an HTL file to access helper methods in a custom Java class. This allows you to use Java code to implement the logic for selecting and configuring the component content.
 * Using JavaScript - [The HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) enables a HTL file to access helper code written in JavaScript. This allows you to use JavaScript code to implement the logic for selecting and configuring the component content.
 * Using Client-Side Libraries - Modern websites rely heavily on client-side processing driven by complex JavaScript and CSS code. See the document [Using Client-Side Libraries on AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) for more information.
 
