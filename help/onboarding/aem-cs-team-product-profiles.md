@@ -41,7 +41,7 @@ Cloud Manager has pre-configured product profiles which can be thought of as rol
 
 Each of the product profiles have specific permissions associated with them.
 
-* **Business Owner** - In this role you have the permission to add a new program or edit a program, add or update an environment, add/edit/delete/run pipelines, deploy code to AEM environment, or execute code quality checks.
+* **Business Owner** - In this role you have the permission to add a new program or edit a program, add or update an environment, deploy code to AEM environment, or execute code quality checks.
 * **Deployment Manager** - In this role, you have the permission to add or update an environment, run any pipeline, and deploy code to AEM environment, or execute code quality checks.
 * **Developer** - In this role, you have the permission to generate personal access tokens to access git.
 * **Program Manager** - In this role, you have the permission to schedule pipelines, override the 3-tier quality gates, and provide production approval.
