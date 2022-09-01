@@ -23,7 +23,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.3.0 is March 1
    * Remove Sites or Assets from an existing program with both Sites and Assets.
    * Add second, unused solution entitlement either to an existing program or as a new Program.
 
-* **AEM Push Update** label will now be displayed for both Pipeline Execution and Activity screens.
+* **AEM Maintenance Update** label will now be displayed for both Pipeline Execution and Activity screens.
 
 *  If an environment is hibernated but there is also an AEM update available, the **Hibernated** status will take precedence over **Update available**.
 

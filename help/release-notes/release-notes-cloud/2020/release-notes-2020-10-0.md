@@ -49,7 +49,7 @@ The following release (2020.11.0) will be on December 1, 2020.
 
 ### Beta features of [!DNL Forms]  {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) help you combine a template and XML data to generate  documents in various formats. The service allows you to generate documents in synchronous and batch mode.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) help you combine a template and XML data to generate  documents in various formats. The service allows you to generate documents in synchronous and batch mode.
 
 You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
