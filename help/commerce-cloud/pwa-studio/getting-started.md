@@ -56,10 +56,10 @@ To connect PWA Studio with the GraphQL endpoint of AEM, you can use the [AEM Ext
 
    You can find more details on the customization of the Navigation component in [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) and in the [Extensibility Framework](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) documentation of PWA Studio.
 
-1. The Apollo client will expect the AEM GraphQL endpoint at <https://pwa-studio/endpoint.js>. To map the endpoint to this location, you will need to customise the UPWARD configuration of your PWA Studio application:
+1. The Apollo client will expect the AEM GraphQL endpoint at `<https://pwa-studio/endpoint.js>`. To map the endpoint to this location, you will need to customise the UPWARD configuration of your PWA Studio application:
    a. Add the AEM_CFM_GRAPHQL variable to pwa-root/.env and adapt it to point to your AEM Content Fragments GraphQL endpoint.
 
-   Example: AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
+   Example: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
    b. Add a proxy resolver to your UPWARD configuration. A sample UPWARD configuration could look like this:
 
@@ -90,13 +90,13 @@ Follow the AEM Content Fragments documentation to setup a GraphQL endpoint for y
 
    Set the allowedorigin property to the full hostname of your PWA application.
 
-   Example:  <https://pwa-studio-test-vflyn.local.pwadev:9366>
+   Example:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Apache Sling Referrer Filter (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
    Set the allow.hosts property to the hostname of your PWA application.
 
-   Example: pwa-studio-test-vflyn.local.pwadev
+   Example: `pwa-studio-test-vflyn.local.pwadev`
 
 You can find full examples of both configurations here: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 

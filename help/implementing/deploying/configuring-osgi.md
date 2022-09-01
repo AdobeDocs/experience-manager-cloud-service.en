@@ -12,7 +12,7 @@ exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 
 [OSGi](https://www.osgi.org/) is a fundamental element in the technology stack of Adobe Experience Manager (AEM). It is used to control the composite bundles of AEM and its configurations.
 
-OSGi provides the standardized primitives that allow applications to be constructed from small, reusable, and collaborative components. These components can be composed into an application and deployed. This allows easy management of OSGi bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component is contained in one of the various bundles. For more information, see the [OSGi specification](https://www.osgi.org/Specifications/HomePage).
+OSGi provides the standardized primitives that allow applications to be constructed from small, reusable, and collaborative components. These components can be composed into an application and deployed. This allows easy management of OSGi bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component is contained in one of the various bundles. For more information, see the [OSGi specification](https://help.eclipse.org/latest/index.jsp).
 
 You can manage the configuration settings for OSGi components through configuration files that are part of an AEM code project.
 
@@ -116,7 +116,7 @@ There are three varieties of OSGi configuration values that can be used with Ado
    }
    ```
 
-   Note that a single OSGi configuration file can use any combination of these configuration value types in conjunction. For example:
+   A single OSGi configuration file can use any combination of these configuration value types in conjunction. For example:
 
    ```json
    {
@@ -168,7 +168,7 @@ There are two ways create OSGi configurations, as described below. The former ap
 JSON formatted OSGi configuration files can be written by hand directly in the AEM project. This is often the quickest way to create OSGi configurations for well-known OSGi components, and especially custom OSGi components that have been designed and developed by the same developer defining the configurations. This approach can also be used to copy/paste and update configurations for the same OSGi component across various runmode folders.
 
 1. In your IDE, open the `ui.apps` project, locate or create the config folder (`/apps/.../config.<runmode>`) which targets the runmodes the new OSGi configuration need to effect
-1. In this config folder, create a new `<PID>.cfg.json` file. The PID is the Persistent Identity of the OSGi component. It is usually the full class name of the OSGi component implementation. For example:
+1. In this config folder, create a `<PID>.cfg.json` file. The PID is the Persistent Identity of the OSGi component. It is usually the full class name of the OSGi component implementation. For example:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
    Note that OSGi configuration factory file names use the `<factoryPID>-<name>.cfg.json` naming convention
 1. Open the new `.cfg.json` file, and define the key/value combinations for the OSGi property and value pairs, following the [JSON OSGi configuration format](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
@@ -196,7 +196,7 @@ The AEM SDK Quickstart Jar's AEM Web Console can be used configure OSGi componen
 1. The OSGi Configuration in JSON format will display in the Serialized Configuration Properties section
    ![OSGi Installer Configuration Printer](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. In your IDE, open the `ui.apps` project, locate or create the config folder (`/apps/.../config.<runmode>`) which targets the runmodes the new OSGi configuration need to effect.
-1. In this config folder, create a new `<PID>.cfg.json` file. The PID is the same value from Step 5.
+1. In this config folder, create a `<PID>.cfg.json` file. The PID is the same value from Step 5.
 1. Paste the Serialized Configuration Properties from Step 10 into the `.cfg.json` file.
 1. Save your changes to the new `.cfg.json` file.
 1. Add and commit your new OSGi configuration file to Git.
@@ -296,7 +296,7 @@ If an OSGi property requires different values for author versus publish:
 * Separate `config.author` and `config.publish` OSGi folders must be used, as described in the [Runmode Resolution section](#runmode-resolution).
 * There are two options of creating the independent variable names that should be used:
   * the first option, which is recommended: in all OSGi folders (like `config.author` and `config.publish`) declared to define different values, use the same variable name. For example
-  `$[env:ENV_VAR_NAME;default=<value>]`, where the default corresponds to the default value for that tier (author or publish). When setting the environment variable via [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) or via a client, differentiate between the tiers using the "service" parameter as described in this [API reference documentation](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). The "service" parameter will bind the variable's value to the appropriate OSGi tier. It can be "author" or "publish" or "preview".
+  `$[env:ENV_VAR_NAME;default=<value>]`, where the default corresponds to the default value for that tier (author or publish). When setting the environment variable via [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) or via a client, differentiate between the tiers using the "service" parameter as described in this [API reference documentation](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). The "service" parameter will bind the variable's value to the appropriate OSGi tier. It can be "author" or "publish" or "preview".
   * the second option, which is to declare distinct variables using a prefix such as `author_<samevariablename>` and `publish_<samevariablename>`
 
 ### Configuration Examples {#configuration-examples}
@@ -489,7 +489,7 @@ config.dev
 
 ## Cloud Manager API Format for Setting Properties {#cloud-manager-api-format-for-setting-properties}
 
-See [this page](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) about how the API has to be configured. 
+See [this page](https://developer.adobe.com/experience-cloud/cloud-manager/docs/) about how the API has to be configured. 
 >[!NOTE]
 >
 >Ensure that the used Cloud Manager API has assigned the role "Deployment Manager - Cloud Service". Other roles are not able to execute all below commands.
@@ -520,7 +520,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >[!NOTE]
 >Default variables are not set via API, but rather in the OSGi property itself.
 >
->See [this page](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) for more information.
+>See [this page](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) for more information.
 
 ### Getting values via API {#getting-values-via-api}
 
@@ -528,7 +528,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 GET /program/{programId}/environment/{environmentId}/variables
 ```
 
-See [this page](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables) for more information.
+See [this page](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) for more information.
 
 ### Deleting values via API {#deleting-values-via-api}
 
@@ -538,7 +538,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 To delete a variable, include it with an empty value.
 
-See [this page](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) for more information.
+See [this page](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) for more information.
 
 ### Getting Values via the Command Line {#getting-values-via-cli}
 
