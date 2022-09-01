@@ -31,8 +31,6 @@ Have a look at the August 2022 Release Overview video for a summary of the featu
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### New features in [!DNL Sites] {#sites-features}
-
-* The [Personalization Tab for Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) allows segmentation specification capabilities to the Experience Fragment Editor as well as the flexibility to create nested Experience Fragments whereby headers and footers variations can be created for multiple segments. Prior to the launch of this feature, personalization offered by AEM is only available for site pages, but not for Experience Fragments.
  
 * The Email component allows the creation of content in AEM that is then delivered as emails via Campaign Classic. The Core Email Component:
   * is based on the [Core WCM Component](https://github.com/adobe/aem-core-wcm-components) which supports Editable Templates and the Style System.
