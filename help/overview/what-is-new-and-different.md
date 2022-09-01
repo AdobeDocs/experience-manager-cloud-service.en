@@ -61,26 +61,27 @@ This enables autoscaling for varying usage patterns:
 
 ## AEM Updates {#aem-updates}
 
+AEM as a Cloud Service now uses continuous integration and continuous delivery (CI/CD) to ensure that your projects are on the most current AEM version. This means that production and stageing instances are updated to the latest AEM version without any interruption of service for users. 
+
 >[!NOTE]
+>
+>If the update to production environment fails, Cloud Manager will automatically roll back the staging environment. This is done automatically to make sure that after an update completes, both the staging and production environments are on same AEM version.
+
+There are two types of AEM version updates:
+
+* **AEM Maintenance Updates**
+
+  * Can be released on a daily basis.
+  * Are mostly for maintenance purposes, including the latest bug-fixes and security updates.
+  * Have minimal impact since changes are applied regularly.
+
+* **New Feature Updates**
+
+   * Are released via a predictable monthly schedule.
+
+>[!TIP]
+>
 >For further details see the [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md).
-
-AEM as a Cloud Service now uses Continuous Integration and Continuous Delivery (CI/CD) to ensure that your projects are on the most current AEM version. This means that Production and Stage instances are updated to the latest AEM version without any interruption of service for users.
-
->[!NOTE]
-> If the update to production environment fails, Cloud Manager will automatically rollback the stage environment. This is done automatically to make sure that after an update completes, both stage and production environments are at on same AEM version.
-
-AEM version updates are of two types:
-
-* **AEM Push updates**
-
-   * Can be released on a daily basis.
-   * Mostly maintenance, including the latest bug-fixes and security updates.
-
-     As changes are applied regularly the impact is incremental, reducing the impact on your service.
-
-* **New Feature updates**
-
-   * Released via a predictable monthly schedule.
 
 ## Cloud Manager {#cloud-manager}
 
