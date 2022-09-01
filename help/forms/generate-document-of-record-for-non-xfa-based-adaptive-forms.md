@@ -402,8 +402,8 @@ An XCI file helps you set various properties of a document. Forms as a Cloud Ser
 
 |XCI option|Description|
 |--- |--- |
-|config/present/pdf/creator|Identifies the document creator using the Creator entry in the Document Information dictionary. For information about this dictionary, see the [PDF Reference guide](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf).|
-|config/present/pdf/producer|Identifies the document producer using the Producer entry in the Document Information dictionary. For information about this dictionary, see the [PDF Reference guide](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf).|
+|config/present/pdf/creator|Identifies the document creator using the Creator entry in the Document Information dictionary. For information about this dictionary, see the [PDF Reference guide](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/).|
+|config/present/pdf/producer|Identifies the document producer using the Producer entry in the Document Information dictionary. For information about this dictionary, see the [PDF Reference guide](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/).|
 |config/present/layout|Controls whether the output is a single panel or paginated.|
 |config/present/pdf/compression/level|Specifies the degree of compression to use when generating a PDF document.|
 |config/present/pdf/fontInfo/embed|Controls font embedding in the output document.|
