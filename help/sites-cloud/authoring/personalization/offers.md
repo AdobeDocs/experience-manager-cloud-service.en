@@ -3,7 +3,23 @@ title: Creating and Managing Offers
 description: Use the Offers console to create offers that you can use in activity experiences
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 ---
-# Creating and Managing Offers {#creating-and-managing-offers}
+# Creating and Managing Offers (Offers Console) {#creating-and-managing-offers}
+
+The **Offers** console is being retired, and now is only available if you still have *legacy* offers defined.
+
+Any such legacy offers should (must) be converted to Experience Fragment offers.
+
+## Converting a Legacy Offer to an Experience Fragment {#convert-legacy-offer-to-experience-fragment}
+
+To convert your legacy offer to an Experience Fragment you need to:
+
+1. Open a page that contains the offer.
+
+1. Open **Targeting** mode for that page.
+
+1. An option to convert the offer will be shown from the component toolbar.
+
+## The Offers Console {#offers-console}
 
 Use the Offers console to create offers that you can [use in activity experiences](/help/sites-cloud/authoring/personalization/targeted-content.md). Creating offers in the Offers console saves time when several experiences require the same offer:
 
@@ -12,7 +28,7 @@ Use the Offers console to create offers that you can [use in activity experience
 
 The Offers console organizes offers by brand. Each brand contains a library of offers that can be used in a brand's experiences. Use folders to define a hierarchical structure for organizing offers in each library. A logical folder structure enables authors to easily find offers by browsing. Tagging and search tools also enable authors to find offers.
 
-## Add a Brand Using the Offers Console {#add-a-brand-using-the-offers-console}
+### Add a Brand Using the Offers Console {#add-a-brand-using-the-offers-console}
 
 Create a brand with which your offers are associated. Open a brand in the Offers console to access its offer library where you can create folders and offers.
 
@@ -27,7 +43,7 @@ When you create a brand using the Offers console, it also appears in the [Activi
 1. Type a title for the brand as you want it to appear in the Offers and Activities consoles. Optionally, type or select one or more tags to associate with the brand.
 1. Click or tap **Create**.
 
-## Add a Folder to an Offer Library {#add-a-folder-to-an-offer-library}
+### Add a Folder to an Offer Library {#add-a-folder-to-an-offer-library}
 
 Add a folder to the offer library of a brand to organize and store offers. You can create a folder below the brand or below other folders.
 
@@ -43,7 +59,7 @@ Add a folder to the offer library of a brand to organize and store offers. You c
 
 1. Click or tap **Create**.
 
-## Add an Offer to an Offer Library {#add-an-offer-to-an-offer-library}
+### Add an Offer to an Offer Library {#add-an-offer-to-an-offer-library}
 
 Add an offer to a brand's offer library so that it can be added to the brand's experiences. When you add an offer you provide a title. You can also associate the offer with one or more tags for enhancing searchability.
 
@@ -58,7 +74,7 @@ After you create the offer you can open it to author the content.
 1. Type a title for the offer and optionally select or type one or more tags to associate with the offer, then click or tap **Create**.
 1. In the confirmation dialog box, to open the offer for editing click or tap **Open Page**.
 
-## Editing an Offer {#editing-an-offer}
+### Editing an Offer {#editing-an-offer}
 
 Open an offer and edit the content as you want it to appear in the experiences that use it. When you edit an offer that is used in any experiences, your changes appear in the experiences.
 
@@ -67,7 +83,7 @@ You can open an offer from a folder in an offer library or from search results. 
 1. In the Offers console, tap or click the icon next to the offer and click or tap **Edit**.
 1. Add components to the offer and edit the component content as usual.
 
-## Deleting an Offer {#deleting-an-offer}
+### Deleting an Offer {#deleting-an-offer}
 
 Delete an offer when it is no longer needed. When you attempt to delete an offer that is used in an experience, you are prompted to confirm the deletion. Confirming deletes the offer and removes it from the experiences.
 
@@ -83,7 +99,7 @@ You can delete an offer while viewing either folder contents in an offer library
     * To delete the offer and remove it from the experiences, click or tap **Force Delete**.
     * To keep the offer, click or tap **Cancel**.
 
-## Searching for Offers {#searching-for-offers}
+### Searching for Offers {#searching-for-offers}
 
 Search for offers of any brand using keywords for matching the title.
 
