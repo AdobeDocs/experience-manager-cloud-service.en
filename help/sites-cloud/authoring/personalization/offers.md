@@ -17,7 +17,7 @@ To convert your legacy offer to an Experience Fragment you need to:
 
 1. Open **Targeting** mode for that page.
 
-1. An option to convert the offer will be shown from the component toolbar.
+1. Select the appropriate component. The component toolbar will provide an option to convert the offer into an Experience Fragment.
 
 ## The Offers Console {#offers-console}
 
