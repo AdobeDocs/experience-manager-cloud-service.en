@@ -302,6 +302,15 @@ When editing an Experience Fragment available Building Blocks are displayed in t
 
 ![Selecting Building Blocks](/help/sites-cloud/authoring/assets/xf-14.png)
 
+## Personalization on your Experience Fragment {#personalization-experience-fragment}
+
+Personalization on your Experience Fragment allows marketers to define target audiences for the Experience Fragment just once, then re-use the fragment in any page; this eliminates the need to specify the required variations for each audience every time the fragment is used.
+
+Personalization is achieved by defining the **Personalization** properties on either the Experience Fragment or variation, or the folder containing the fragments; this means that inheritance can override personalization properties.
+
+Configuring these properties also enables the **Targeting** mode in the Experience Fragment editor.
+
+
 ## Details of your Experience Fragment {#details-of-your-experience-fragment}
 
 Details of your fragment can be seen:
