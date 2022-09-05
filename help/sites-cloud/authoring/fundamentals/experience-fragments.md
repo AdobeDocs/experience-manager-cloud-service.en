@@ -310,6 +310,25 @@ Personalization is achieved by defining the **Personalization** properties on ei
 
 Configuring these properties also enables the **Targeting** mode in the Experience Fragment editor.
 
+### Personalizing your Experience Fragment {#personalizing-experience-fragment}
+
+To personalize your fragment:
+
+1. Navigate to the **Experience Fragments** console, then the folder holding either your folder, or fragment.
+
+1. Select your folder or fragment, then **Properties** from the toolbar.
+
+   >[!NOTE]
+   >
+   >Personalization properties defined on a folder will be inherited by child folders, and Experience Fragments (and variations) within that folder. They can be overridden by breaking the inheritance.
+
+1. Open the **Personalization** tab to define and save your settings. For example, on a folder:
+
+   ![Experience Fragment - Personlization Properties](/help/sites-cloud/authoring/assets/xf-personalization-properties.png)
+
+1. When the fragment is opened for editing, the Targeting mode will be available.
+
+   ![Experience Fragment Editor - Targeting mode](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
 
 ## Details of your Experience Fragment {#details-of-your-experience-fragment}
 
@@ -353,6 +372,22 @@ Details of your fragment can be seen:
      * **ContextHub Path**
      * **Segments Path**
      * **Brand**
+     
+     >[!CAUTION]
+     >
+     >When a fragment is embedded in a Sites page, and Personalization has been configured, then only the personalization version of the page will be used at page rendering time.
+     >
+     >For the targeting performed on the components in a fragment to work at page rendering, the following conditions must be met:
+     >
+     >The **ContextHub Path** selected in the Personalization tab must be either:
+     >
+     >* the same path than the one configured for the page where the fragment will be rendered, or
+     > * a path that contains a subset of the stores defined in the ContextHub configured for the page
+     >
+     >The **Segments Path** selected in the Personalization tab must be either:
+     >
+     >* the same path as the one configured for the page where the fragment will be rendered, or
+     >* a path that contains a subset of the segments configured for the page
 
 ## The Plain HTML Rendition {#the-plain-html-rendition}
 
