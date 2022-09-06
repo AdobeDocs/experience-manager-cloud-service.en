@@ -313,7 +313,7 @@ Personalization is achieved by defining the **Personalization** properties on ei
 
 Configuring these properties also enables the **Targeting** mode in the Experience Fragment editor.
 
-### Personalizing your Experience Fragment {#personalizing-experience-fragment}
+### Defining Personalization for your Experience Fragment {#defining-personalization-experience-fragment}
 
 To personalize your fragment:
 
@@ -345,11 +345,13 @@ To personalize your fragment:
    >* the same path as the one configured for the page where the fragment will be rendered, or
    >* a path that contains a subset of the segments configured for the page
 
-### Targeting your Experience Fragment {#targeting-experience-fragment}
+### Defining Targeting for your Experience Fragment {#defining-targeting-experience-fragment}
 
 Once the personalization properties have been configuring, when the fragment is opened for editing, the Targeting mode will be available.
 
 ![Experience Fragment Editor - Targeting mode](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
+
+This mode operates in the same manner as the [Targeting mode for the Page Editor](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
 ## Details of your Experience Fragment {#details-of-your-experience-fragment}
 
