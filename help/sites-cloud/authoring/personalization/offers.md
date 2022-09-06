@@ -5,7 +5,7 @@ exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 ---
 # Creating and Managing Offers (Offers Console) {#creating-and-managing-offers}
 
-The **Offers** console is being retired, and now is only available if you still have *legacy* offers defined.
+The **Offers** console will be deprecated soon. So, from now, it is only available if you still have *legacy* offers defined.
 
 Any such legacy offers should (must) be converted to Experience Fragment offers.
 
@@ -17,7 +17,11 @@ To convert your legacy offer to an Experience Fragment you need to:
 
 1. Open **Targeting** mode for that page.
 
-1. Select the appropriate component. The component toolbar will provide an option to convert the offer into an Experience Fragment.
+1. Select the appropriate component. 
+
+1. The component toolbar will provide an option to convert the offer into an Experience Fragment:
+
+   ![Converting Legacy Offer to Experience Fragment](/help/sites-cloud/authoring/assets/xf-targeting-convert-legacy-xf.png)
 
 ## The Offers Console {#offers-console}
 
