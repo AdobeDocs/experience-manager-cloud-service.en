@@ -459,7 +459,7 @@ Once locked the console view information is updated and when editing a lock symb
 
 >[!CAUTION]
 >
->Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
+>Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
 >
 >Pages can not be unlocked by impersonating the user who locked the page.
 <!--
@@ -476,7 +476,7 @@ The Page Information menu lists **Unlock** as an option and the Lock icon in the
 
 >[!CAUTION]
 >
->Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
+>Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
 >
 >Pages can not be unlocked by impersonating the user who locked the page.
 <!--
