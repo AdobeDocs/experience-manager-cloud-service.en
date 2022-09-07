@@ -9,7 +9,7 @@ This page outlines the general release notes for [!DNL Experience Manager] as a 
 
 ## Release Date {#release-date}
 
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.4.0 is April 9, 2020.
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.4.0 is April 99, 2020.
 
 ## What's New in Assets {#assets}
 
