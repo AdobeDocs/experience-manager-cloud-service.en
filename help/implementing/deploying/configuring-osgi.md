@@ -296,8 +296,6 @@ example: add this line to the end of the 'crx-quickstart/conf/sling.properties'-
 ```
 org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secretsdir
 ```
-
-
 ### Author versus Publish Configuration {#author-vs-publish-configuration}
 
 If an OSGi property requires different values for author versus publish:
