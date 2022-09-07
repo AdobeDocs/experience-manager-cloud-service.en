@@ -5,15 +5,16 @@ exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 ---
 # Creating and Managing Offers (Offers Console) {#creating-and-managing-offers}
 
-The **Offers** console will be deprecated soon. So, from now, it is only available if you still have *legacy* offers defined.
+The **Offers** console will be deprecated soon. So, from now, it is:
 
-Any such legacy offers should (must) be converted to Experience Fragment offers.
+* only available if you still have *legacy* offers defined
+* recommended that any such legacy offers be converted to Experience Fragment offers.
 
 ## Converting a Legacy Offer to an Experience Fragment {#convert-legacy-offer-to-experience-fragment}
 
 To convert your legacy offer to an Experience Fragment you need to:
 
-1. Open a page that contains the offer.
+1. Open a page that contains the offer for editing.
 
 1. Open **Targeting** mode for that page.
 
