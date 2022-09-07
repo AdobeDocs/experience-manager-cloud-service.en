@@ -80,7 +80,7 @@ Headless content delivery often makes use of GraphQL APIs. GraphQL allows for a 
 
 Whatever your chosen API is, by defining a headless system based on common APIs, you can leverage the latest browser and other web technologies such as progressive web apps (PWA). APIs create a standard interface that is easily extensible and adaptable.
 
-Typically, content is rendered on the client side. This normally means someone calls up your content on a mobile device, your CMS delivery the content, and then the mobile device (the client) is responsible for rendering the content that you served. If the device is old or otherwise slow, your digital experience is likewise slow.
+Typically, content is rendered on the client side. This normally means someone calls up your content on a mobile device, your CMS delivers the content, and then the mobile device (the client) is responsible for rendering the content that you served. If the device is old or otherwise slow, your digital experience is likewise slow.
 
 Decoupling content from presentation means that there can be more control over such client-side performance concerns. Server-side rendering (SSR) transfers the responsibility of rendering the content from the client's browser to the server. This allows you as the provider of the content be able to offer a level of guaranteed performance to your audience if that is what is required.
 
