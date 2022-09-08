@@ -459,9 +459,9 @@ Once locked the console view information is updated and when editing a lock symb
 
 >[!CAUTION]
 >
->Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated.
+>Locking a page can be performed when impersonating a user. However a page locked in this way can only be unlocked (by customers) using the user who was impersonated.
 >
->Pages can not be unlocked by impersonating the user who locked the page.
+>Pages cannot be unlocked by impersonating the user who locked the page.
 >
 >If the user who locked the page is not available to unlock the page, please reach out to Customer Support to evaluate options to remove the lock. 
 
@@ -475,9 +475,9 @@ The Page Information menu lists **Unlock** as an option and the Lock icon in the
 
 >[!CAUTION]
 >
->Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated.
+>Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked (by customers) using the user who was impersonated.
 >
->Pages can not be unlocked by impersonating the user who locked the page.
+>Pages cannot be unlocked by impersonating the user who locked the page.
 >
 >If the user who locked the page is not available to unlock the page, please reach out to Customer Support to evaluate options to remove the lock. 
 
