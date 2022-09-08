@@ -29,6 +29,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + General AEMaaCS Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.7.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
       + [Release Notes for 2022.6.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
       + [Release Notes for 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
       + [Release Notes for 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
@@ -614,6 +615,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Product Recommendations](/help/commerce-cloud/authoring/product-recommendations.md)
     + Administering {#administering}
       + [Multi-Store Setup](/help/commerce-cloud/configuring/multi-store-setup.md)
+      + [Multiple Commerce Systems Setup](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
       + [Configuring URLs for SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
       + [Caching Options](/help/commerce-cloud/configuring/caching.md)
       + [Custom HTTP Headers](/help/commerce-cloud/configuring/custom-http-headers.md)

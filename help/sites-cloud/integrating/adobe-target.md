@@ -5,7 +5,7 @@ exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
 ---
 # Integrating with Adobe Target{#integrating-with-adobe-target}
 
-As part of the Adobe Marketing Cloud, [Adobe Target](http://www.adobe.com/solutions/testing-targeting/testandtarget.html) lets you increase content relevance through targeting and measuring across all channels. Adobe Target is used by marketers to design and execute online tests, create on-the-fly audience segments (based on behavior) and automate the targeting of content and online experiences. AEM as a Cloud Service has adopted the targeting workflow that is used in Adobe Target Standard. If you use Target, you will be familiar with the targeting editing environment in AEM as a Cloud Service.
+As part of the Adobe Marketing Cloud, [Adobe Target](https://www.adobe.com/solutions/testing-targeting/testandtarget.html) lets you increase content relevance through targeting and measuring across all channels. Adobe Target is used by marketers to design and execute online tests, create on-the-fly audience segments (based on behavior) and automate the targeting of content and online experiences. AEM as a Cloud Service has adopted the targeting workflow that is used in Adobe Target Standard. If you use Target, you will be familiar with the targeting editing environment in AEM as a Cloud Service.
 
 Integrate your AEM sites with Adobe Target to personalize content in your pages:
 
@@ -25,10 +25,10 @@ To integrate with Target, perform the following tasks:
 
 * Launch by Adobe is the defacto tool for instrumenting an AEM site with Target capabilities (JS libraries). Therefore, integrating AEM as a Cloud Service with Launch and Adobe Target goes hand-in-hand (see the links below).
    
-  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
-  * [Integrate Launch by Adobe](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
-  * [Integrate AEM with Adobe Launch Via Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
-  * [Understanding AEM Integration with Launch By Adobe, Analytics and Target](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
+  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims-adobe-io.html)
+  * [Integrate Launch by Adobe](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
+  * [Integrate AEM with Adobe Launch Via Adobe I/O](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
+  * [Understanding AEM Integration with Launch By Adobe, Analytics and Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ To integrate with Target, perform the following tasks:
 
 >[!CAUTION]
 >
->In AEM as a Cloud Service, the replication agent that synchronizes Offers and Activities from AEM to Adobe Target is disabled by default. Please contact the [Adobe Support](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager) team if you need to re-enable the replication agent.
+>In AEM as a Cloud Service, the replication agent that synchronizes Offers and Activities from AEM to Adobe Target is disabled by default. Please contact the [Adobe Support](https://experienceleague.adobe.com/?support-solution=General#support) team if you need to re-enable the replication agent.
 
 >[!NOTE]
 >

@@ -138,6 +138,7 @@ Please review this list of activities to ensure that you perform a smooth and su
       * [Introduction to Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
       * [Managing SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
     * Managing Custom Domain Names (DNS)
+      * To make sure that the DNS cutover will not introduce unexpected problems, it is best to create a test subdomain to connect your production instance to before you go-live and do a round of UAT testing. So if your domain is example.com, you can create a subdomain test.example.com and apply it to production. During UAT testing of the domain you will want to look for things like proper link redirection, caching, and dispatcher configurations. 
       * [Introduction to Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       * [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
       * [Managing Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
