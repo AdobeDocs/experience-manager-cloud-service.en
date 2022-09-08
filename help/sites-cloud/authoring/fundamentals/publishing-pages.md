@@ -209,9 +209,9 @@ To publish or unpublish a page using Manage Publication:
 
 ## Unpublishing Pages {#unpublishing-pages}
 
-Unpublishing a page will remove it from your publish environment so that it is no longer available to your readers.
+Unpublishing a page will remove it from your publish, or [preview](/help/sites-cloud/authoring/fundamentals/previewing-content.md), environment so that it is no longer available to your readers.
 
-In a [manner similar to publishing](#publishing-pages), one or more pages can be unpublished:
+In a [manner similar to publishing](#publishing-pages), one or more pages can be unpublished from the desired destination:
 
 * [From the page editor](#unpublishing-from-the-editor)
 * [From the sites console](#unpublishing-from-the-console)
@@ -238,6 +238,9 @@ Just as you [use the Manage Publication option to publish](#manage-publication),
    >[!NOTE]
    >
    >If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) to terminate the corresponding workflow.
+
+   >[!NOTE]
+   >If you have a [Preview](/help/sites-cloud/authoring/fundamentals/previewing-content.md) environment you can select the **Destination** during Manage Publication.
 
 1. To complete the un-publication, continue through the wizard as you would to [publish the page](#manage-publication).
 
