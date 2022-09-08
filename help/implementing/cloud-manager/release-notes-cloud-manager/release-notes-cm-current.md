@@ -15,15 +15,16 @@ This page documents the release notes for Cloud Manager 2022.9.0 in AEM as a Clo
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2022.9.0 in AEM as a Cloud Service is 9 September 2022. The next release is planned for 6 October 2022.
+The release date for Cloud Manager release 2022.9.0 in AEM as a Cloud Service is 8 September 2022. The next release is planned for 6 October 2022.
 
 ## What's New {#what-is-new}
 
-* [AEM Guides](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html) can now be configured in a self-service manner as an add-on [when editing sandbox programs.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-* There is now a new card on the welcome page, customized for users that have no Cloud Manager roles other than the **user** role. This card guides them navigating to AEM environments and explains restricted program access.
-* Users without any Cloud Manager user profiles can not access program detail. They can however, navigate to authoring end points from the Cloud Manager landing page.
-* The Add Program option in the Cloud Manager UI will consistently be displayed and provide tool tips when it is disabled due to permission or entitlement-related reasons.
+* AEM Guides can now be configured in a self-service manner on Sandbox programs.
+* Customers without any Cloud Manager role will not be able to access program details. They can however, navigate to Author end points from Cloud Manager landing pages.
+* Customers can set up **Incident and Proactive notification** groups to hear from Adobe about incidents or recommendations related to their AEMaaCS application. 
+* Add Program affordance in the UI will consistently provide tool tips when it is disabled due to permission or entitlement related reasons.
 
 ## Bug Fixes {#bug-fixes}
 
-* The workflow for adding environments now includes additional validations to ensure a successful outcome.
+* Add Environment workflow includes additional validations to ensure a successful outcome.
+* Improved customer feedback related to customer AEM app build when maven faces connectivity issues to private repos.
