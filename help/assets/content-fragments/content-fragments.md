@@ -1,5 +1,5 @@
 ---
-title: Working with Content Fragments
+title: Working with Content Fragments (Assets - Content Fragments)
 description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to design, create, curate, and use page-independent content, ideal for headless delivery.
 feature: Content Fragments
 role: User
