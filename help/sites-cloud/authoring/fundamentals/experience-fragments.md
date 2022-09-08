@@ -317,13 +317,13 @@ Configuring these properties also enables the **Targeting** mode in the Experien
 
 To personalize your fragment:
 
-1. Navigate to the **Experience Fragments** console, then the folder holding either your folder, or fragment.
+1. Navigate to the required location in the **Experience Fragments** console.
 
-1. Select your folder or fragment, then **Properties** from the toolbar.
+1. Select either a folder or your fragment, then **Properties** from the toolbar.
 
    >[!NOTE]
    >
-   >Personalization properties defined on a folder will be inherited by child folders, and Experience Fragments (and variations) within that folder. They can be overridden by breaking the inheritance.
+   >Personalization properties defined on a folder will be inherited by all child folders down through the sub-tree, and Experience Fragments (and variations) within that sub-tree. They can be overridden by breaking the inheritance.
 
 1. Open the **Personalization** tab to define and save your settings. For example, on a folder:
 
@@ -331,27 +331,30 @@ To personalize your fragment:
 
    >[!CAUTION]
    >
-   >When a fragment is embedded in a Sites page, and Personalization has been configured, then only the personalization version of the page will be used at page rendering time.
+   >When a fragment is embedded in a Sites page, and **Personalization** has been configured, then only the personalization version of the page will be used at page rendering time.
    >
    >For the targeting performed on the components in a fragment to work at page rendering, the following conditions must be met:
    >
-   >The **ContextHub Path** selected in the Personalization tab must be either:
+   >The **ContextHub Path** selected in the **Personalization** tab must be either:
    >
-   >* the same path than the one configured for the page where the fragment will be rendered, or
-   > * a path that contains a subset of the stores defined in the ContextHub configured for the page
+   >* the same path as the one configured for the page where the fragment will be rendered
+   >Or:
+   >* a path that contains a subset of the stores defined in the ContextHub configured for the page
    >
-   >The **Segments Path** selected in the Personalization tab must be either:
+   >&nbsp;
+   >The **Segments Path** selected in the **Personalization** tab must be either:
    >
-   >* the same path as the one configured for the page where the fragment will be rendered, or
+   >* the same path as the one configured for the page where the fragment will be rendered
+   >Or
    >* a path that contains a subset of the segments configured for the page
 
 ### Defining Targeting for your Experience Fragment {#defining-targeting-experience-fragment}
 
-Once the personalization properties have been configuring, when the fragment is opened for editing, the Targeting mode will be available.
+Once the personalization properties have been configured, the Targeting mode will be available when the fragment is opened for editing.
 
 ![Experience Fragment Editor - Targeting mode](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
 
-This mode operates in the same manner as the [Targeting mode for the Page Editor](/help/sites-cloud/authoring/personalization/targeted-content.md).
+This mode operates in the same manner as for page editing. See [Targeting mode for the Page Editor](/help/sites-cloud/authoring/personalization/targeted-content.md) for more details.
 
 ## Details of your Experience Fragment {#details-of-your-experience-fragment}
 
