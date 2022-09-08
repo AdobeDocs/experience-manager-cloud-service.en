@@ -1,5 +1,5 @@
 ---
-title: Content Fragment Models
+title: Content Fragment Models (Assets - Content Fragments)
 description: Learn how Content Fragment Models serve as a foundation for your headless content in AEM and how to create Content Fragments with structured content.
 feature: Content Fragments
 role: User
