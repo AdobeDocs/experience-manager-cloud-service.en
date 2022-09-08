@@ -49,7 +49,7 @@ To properly set up receipt of notifications you will need to create two user gro
    * Display name: Incident Notification - Cloud Service
    * Description: Cloud Manager profile for the users that will receive notifications during an incident or when Adobe has identified a potential availability problem with your AEM as a Cloud Service environment.
 
-6. Click **Save** and repeat step 5 with the following details:
+1. Click **Save** and repeat step 5 with the following details:
 
    * Product profile name: Proactive Notification - Cloud Service
    * Display name: Proactive Notification - Cloud Service
