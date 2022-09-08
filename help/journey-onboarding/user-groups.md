@@ -77,12 +77,12 @@ Now that the groups have been created, you must assign the appropriate users. Yo
 
  ![Users](assets/cloud_manager_add_user.png)
 
-5. In the **Add users to your team** dialog, enter the email ID of the user you want to add.
+1. In the **Add users to your team** dialog, enter the email ID of the user you want to add.
 
    * If the federated ID for your team members has not yet been set up, select Adobe ID for the ID Type.
    * If user already exists, see step 9.
 
-6. Click the plus button under the **Select products** heading to begin product selection and select **Adobe Experience Manager as a Cloud Service** and assign either **Incident Notification - Cloud Service** or **Proactive Notification - Cloud Service**, or both to the user.
+1. Click the plus button under the **Select products** heading to begin product selection and select **Adobe Experience Manager as a Cloud Service** and assign either **Incident Notification - Cloud Service** or **Proactive Notification - Cloud Service**, or both to the user.
 
 1. Click **Save** and a welcome email is sent to the user you added. The invited user will now receive the notifications.
 
