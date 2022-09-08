@@ -543,7 +543,7 @@ The network bandwidth associated with logs sent to Splunk are considered part of
 
 In the support request, customers should indicate:
 
-* Splunk HEC endpoint address
+* Splunk HEC endpoint address. This endpoint must have a valid SSL certificate
 * The Splunk index
 * The Splunk port 
 * The Splunk HEC token. See [this page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) for more information.
@@ -554,7 +554,7 @@ The properties above should be specified for each relevant program/environment t
 >
 >Splunk forwarding for sandbox program environments is not supported.
 
-You should make sure that the initial request includes all dev environment that should be enabled, in addition to the stage/prod environments.
+You should make sure that the initial request includes all dev environment that should be enabled, in addition to the stage/prod environments. Splunk must have an SSL certificate, and be public facing. 
 
 If any new dev environments created after the initial request are intended to have Splunk forwarding, but don't have it enabled, an additional request should be made.
 

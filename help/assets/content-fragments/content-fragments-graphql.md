@@ -1,5 +1,5 @@
 ---
-title: Headless Content Delivery using Content Fragments with GraphQL
+title: Headless Content Delivery using Content Fragments with GraphQL (Assets - Content Fragments)
 description: Learn the basic concepts of realizing an AEM Headless CMS using Content Fragments with GraphQL for headless content delivery.
 feature: Content Fragments, GraphQL API
 topic: Headless
