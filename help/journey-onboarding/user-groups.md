@@ -75,7 +75,7 @@ Now that the groups have been created, you must assign the appropriate users. Yo
 
 1. Select the **Users** tab from the top navigation, then select **Add User**.
 
- ![Users](assets/cloud_manager_add_user.png)
+   ![Users](assets/cloud_manager_add_user.png)
 
 1. In the **Add users to your team** dialog, enter the email ID of the user you want to add.
 
