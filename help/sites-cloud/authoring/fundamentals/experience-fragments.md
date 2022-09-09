@@ -304,10 +304,12 @@ When editing an Experience Fragment available Building Blocks are displayed in t
 
 ## Personalization on your Experience Fragment {#personalization-experience-fragment}
 
-Personalization on your Experience Fragment allows marketers to define target audiences for the Experience Fragment just once, then re-use the fragment in any page. This:
+Personalization on your Experience Fragment allows  you, as a marketer, to define target audiences for the Experience Fragment just once, then re-use the fragment in any page. This:
 
 * eliminates the need to specify the required variations for each audience every time the fragment is used
 * maintains styling across the offers
+
+You can create an Experience Fragment with multiple components grouped inside this single fragment. You can also create variations of the fragment for each specific audience segment, then reuse these Experience Fragments across the required channels. 
 
 Personalization is achieved by defining the **Personalization** properties on either the Experience Fragment or variation, or the folder containing the fragments; this means that inheritance can override personalization properties.
 
