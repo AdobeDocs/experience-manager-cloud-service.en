@@ -147,6 +147,7 @@ Please review this list of activities to ensure that you perform a smooth and su
     * If you have a very high TTL, updates to your DNS record will take longer to propagate. 
 * Run performance and security tests that meet your business requirements and objectives.
 * Cut over and make sure that the actual go-live is performed without any new deployment or content update.
+* Create Admin Console user Notification Groups. See [User Groups for Notifications](/help/journey-onboarding/user-groups.md)
 
 You can always reference the list in case you need to recalibrate your tasks while performing the migration.
 
