@@ -78,6 +78,8 @@ You have two image crop options from which to choose. You can also choose to aut
 ### Supported image file formats for Smart Crop and Color Swatches
 
 The maximum supported input file size resolution is 16K.
+Sidenote: 16K resolution is a display resolution with approximately 16,000 pixels horizontally. The most commonly discussed 16K resolution is 15360 × 8640, which doubles the pixel count of 8K UHD in each dimension, for a total of four times as many pixels. This resolution has 132.7 megapixels, 16 times as many pixels as 4K resolution and 64 times as many pixels as 1080p resolution.
+
 
 | Image format | Case-insensitive file extension | MIME type | Supported input color space | Maximum supported input file size | Supported image format? |
 | --- | --- | --- | --- | --- | --- |
