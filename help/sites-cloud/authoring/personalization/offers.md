@@ -1,18 +1,50 @@
 ---
-title: Creating and Managing Offers
+title: Creating and Managing Offers (Offers Console)
 description: Use the Offers console to create offers that you can use in activity experiences
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 ---
 # Creating and Managing Offers (Offers Console) {#creating-and-managing-offers}
 
-The **Offers** console will be deprecated soon. So, from now, it is:
+The **Offers** console will be deprecated in the future. So, from now, it is:
 
-* only available if you still have *legacy* offers defined
-* recommended that any such legacy offers be converted to Experience Fragment offers.
+* Only available to customer that have *legacy* offers already defined (i.e pre-existing)
+* Recommended that any such legacy offers be converted to Experience Fragment offers
+  * As soon as the last legacy offer is converted/removed, the **Offers** console will no longer be available.
+
+![Personalization Consoles](/help/sites-cloud/authoring/assets/offers-consoles.png)
+
+>[!NOTE]
+>
+>Customers that have pre-existing legacy offers can still use the **Offers** console to both see existing, and create new, legacy offers.
+>
+>Customers without pre-existing legacy offers will not see the **Offers** console.
+>
+>All customers can use **Experience Fragments Offers** to create and manage offers.
 
 ## Converting a Legacy Offer to an Experience Fragment {#convert-legacy-offer-to-experience-fragment}
 
-To convert your legacy offer to an Experience Fragment you need to:
+A **Convert to experience fragment variation** option, and workflow, has been implemented to help you convert your legacy offer to an Experience Fragment:
+
+>[!NOTE]
+>
+>This is is the recommended workflow to convert legacy offers to experience fragments.
+
+>[!NOTE]
+>
+>You can also create a new Experience Fragment yourself, manually transfer the content from your legacy offer to the fragment, then delete the legacy offer.
+
+>[!CAUTION]
+>
+>The **Convert to experience fragment variation** option is available for all Core Components. 
+>
+>This option will not be supported for custom components. For such components, you must manually convert the content into an experience fragment. 
+
+>[!CAUTION]
+>
+>As soon as the last legacy offer is converted/removed:
+>
+>* The **Offers** console will no longer be available.
+>* The target icon within the toolbar bar of any other impacted components will no longer appear.  
 
 1. Open a page that contains the offer for editing.
 
@@ -20,11 +52,41 @@ To convert your legacy offer to an Experience Fragment you need to:
 
 1. Select the appropriate component. 
 
-1. The component toolbar will provide an option to convert the offer into an Experience Fragment:
+1. The component toolbar will provide an option to **Convert to experience fragment variation**:
 
-   ![Converting Legacy Offer to Experience Fragment](/help/sites-cloud/authoring/assets/xf-targeting-convert-legacy-xf.png)
+   ![Converting Legacy Offer to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+
+1. A dialog will be shown. Here you can select the required **Action**:
+
+   * Create a new Experience Fragment
+   * Add the content to an existing Experience Fragment
+
+   For this scenario, select **Create a new Experience Fragment**.
+
+   ![Convert to Experience Fragment Variation dialog](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
+
+1. Complete the required fields in the dialog:
+
+   * **Parent path** 
+     Specify the parent path of the new experience fragment
+   * **Template** 
+     Select the template to use for creating the experience fragment. 
+   * **Fragment title**
+     Specify the title.
+   * **Fragment tags**
+     Add tags, if required.
+
+1. Confirm with **Done**.
+
+   If you now navigate to the **Experience Fragment Offers** console, you will see your new experience fragment, together with its associated variations.
 
 ## The Offers Console {#offers-console}
+
+>[!CAUTION]
+>
+>This console is being deprecated in the future, as it offers a legacy way of personalizing content.
+>
+>You have some time to prepare. See how to [convert your existing legacy offers into an experience fragment offer](#convert-legacy-offer-to-experience-fragment).
 
 Use the Offers console to create offers that you can [use in activity experiences](/help/sites-cloud/authoring/personalization/targeted-content.md). Creating offers in the Offers console saves time when several experiences require the same offer:
 
