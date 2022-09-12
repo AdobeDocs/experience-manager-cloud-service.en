@@ -29,6 +29,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + General AEMaaCS Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.7.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
       + [Release Notes for 2022.6.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
       + [Release Notes for 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
       + [Release Notes for 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
@@ -61,6 +62,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
+      + [Release Notes for 2022.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
       + [Release Notes for 2022.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
       + [Release Notes for 2022.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
       + [Release Notes for 2022.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
@@ -133,6 +136,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md)
     + [Developer and Deployment Manager Tasks](/help/journey-onboarding/developers.md)
     + [AEM User Tasks](/help/journey-onboarding/aem-users.md)
+    + [User Groups](/help/journey-onboarding/user-groups.md)
   + AEM Reference Demos Add-On Journey {#demo-add-on}
     + [Overview](/help/journey-sites/demos-add-on/overview.md)
     + [Installation](/help/journey-sites/demos-add-on/installation.md)
@@ -496,7 +500,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
       + [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
       + [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)
-      + [Design an XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
       + [Use Forms Designer](/help/forms/use-forms-designer.md)
       + [Improve performance of large forms with lazy loading](/help/forms/lazy-loading-adaptive-forms.md)
     + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
@@ -613,6 +616,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Product Recommendations](/help/commerce-cloud/authoring/product-recommendations.md)
     + Administering {#administering}
       + [Multi-Store Setup](/help/commerce-cloud/configuring/multi-store-setup.md)
+      + [Multiple Commerce Systems Setup](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
       + [Configuring URLs for SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
       + [Caching Options](/help/commerce-cloud/configuring/caching.md)
       + [Custom HTTP Headers](/help/commerce-cloud/configuring/custom-http-headers.md)
