@@ -7,7 +7,7 @@ exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 
 The **Offers** console will be deprecated in the future. So, from now, it is:
 
-* Only available to customer that have *legacy* offers already defined (i.e pre-existing)
+* Only available to customers that have *legacy* offers already defined (i.e pre-existing)
 * Recommended that any such legacy offers be converted to Experience Fragment offers
   * As soon as the last legacy offer is converted/removed, the **Offers** console will no longer be available.
 
@@ -48,7 +48,9 @@ A **Convert to experience fragment variation** option, and workflow, has been im
 
 1. Open a page that contains the offer for editing.
 
-1. Open **Targeting** mode for that page.
+1. Switch to **Targeting** mode for that page.
+
+1. Select **Start Targeting**. 
 
 1. Select the appropriate component. 
 
