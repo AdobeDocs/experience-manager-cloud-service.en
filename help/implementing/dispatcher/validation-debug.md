@@ -225,7 +225,7 @@ During a Cloud Manager deployment, the `httpd -t` syntax check will be executed 
 
 >[!NOTE]
 >
->See the [Automatic loading and validation](#automatic-loading) section for an efficient alternative to running `validate.sh` after each configuration modification.
+>See the [Automatic reloading and validation](#automatic-loading) section for an efficient alternative to running `validate.sh` after each configuration modification.
 
 ### Phase 1 {#first-phase}
 
@@ -427,11 +427,11 @@ When running Dispatcher locally, logs are printed directly to the terminal outpu
 
 Logs for cloud environments are exposed through the logging service available in Cloud Manager.
 
-### Automatic loading and validation {#automatic-loading}
+### Automatic reloading and validation {#automatic-reloading}
 
 >[!NOTE]
 >
->Due to a Windows operating system limitation, this feature is available only for Linux users.
+>Due to a Windows operating system limitation, this feature is available only for macOS and Linux users.
 
 Instead of running local validation (`validate.sh`) and starting the docker container (`docker_run.sh`) each time the configuration is modified, you can alternatively run the `docker_run_hot_reload.sh` script.  The script watches for any changes to the configuration and will automatically reload it and re-run the validation. By using this option you can save a significant amount of time when debugging.
 

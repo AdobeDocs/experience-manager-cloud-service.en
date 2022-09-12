@@ -13,7 +13,7 @@ Along with previously mentioned operations, you can use fonts included in Cloud 
 
 ## Behavior of PDF Documents
 
-You can [embed a font](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) to a PDF document. When a font is embedded, the PDF document appears (looks) identical on all platforms. It uses embedded fonts to ensure a consistent look and feel. When a font is not embedded, the font rendering depends on rendering settings of PDF viewer clients like Acrobat or Acrobat Reader. If the font is available on the client machine, the PDF uses specified font, else the PDF is rendered with a default fallback font.
+You can [embed a font](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions) to a PDF document. When a font is embedded, the PDF document appears (looks) identical on all platforms. It uses embedded fonts to ensure a consistent look and feel. When a font is not embedded, the font rendering depends on rendering settings of PDF viewer clients like Acrobat or Acrobat Reader. If the font is available on the client machine, the PDF uses specified font, else the PDF is rendered with a default fallback font.
 
 ## Add custom fonts to your Forms as a Cloud Service environment {#custom-fonts-cloud-service}
 
