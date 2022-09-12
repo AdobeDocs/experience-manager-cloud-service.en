@@ -1,5 +1,5 @@
 ---
-title: Content Fragment Structure Tree
+title: Content Fragment Structure Tree (Assets - Content Fragments)
 description: Use the Structure Tree feature of the Content Fragment Editor in AEM to better understand your headless content.
 feature: Content Fragments
 role: User
