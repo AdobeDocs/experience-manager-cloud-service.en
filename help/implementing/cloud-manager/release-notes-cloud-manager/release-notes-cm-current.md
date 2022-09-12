@@ -21,7 +21,7 @@ The release date for Cloud Manager release 2022.9.0 in AEM as a Cloud Service is
 
 * AEM Guides can now be configured in a self-service manner on Sandbox programs.
 * Customers without any Cloud Manager role will not be able to access program details. They can however, navigate to Author end points from Cloud Manager landing pages.
-* Customers can set up **Incident and Proactive notification** groups to hear from Adobe about incidents or recommendations related to their AEMaaCS application. 
+* Customers can set up **Incident and Proactive notification** groups to hear from Adobe about incidents or recommendations related to their AEMaaCS application. See [User Group for Notifications](/help/journey-onboarding/user-groups.md) for more details.
 * Add Program affordance in the UI will consistently provide tool tips when it is disabled due to permission or entitlement related reasons.
 
 ## Bug Fixes {#bug-fixes}
