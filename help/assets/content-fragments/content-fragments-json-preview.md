@@ -1,5 +1,5 @@
 ---
-title: Preview - JSON Representation
+title: Preview - JSON Representation (Assets - Content Fragments)
 description: Learn how to easily preview JSON representation of your Content Fragments when implementing your AEM headless solution.
 feature: Content Fragments
 role: User
