@@ -26,7 +26,9 @@ Author targeted content using Targeting mode of AEM. Targeting mode and the Targ
 >
 >When Targeting in the Page Editor only Experience Fragment components can be Targeted. 
 >
->Other component types can be converted to an Experience Fragment. When you select your component for Targeting, the **Use Experience Fragment** option will be offered; this will guide you through converting your component into a fragment variation.
+>Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon:
+>
+>![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 
 You can use either AEM or Adobe Target as the targeting engine (you must have a valid Adobe Target account to use Adobe Target). If you are using Adobe Target, you must configure the integration first. See the [instructions for integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
