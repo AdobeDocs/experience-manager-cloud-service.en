@@ -307,7 +307,7 @@ When editing an Experience Fragment available Building Blocks are displayed in t
 Details of your fragment can be seen:
 
 1. Navigate to the location of your Experience Fragments (do not navigate further down to the variations within the fragment). 
-   Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an export to Target: <!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
+   Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-cloud/integrating/integrating-adobe-target.md):
 
    ![Experience Fragment details](/help/sites-cloud/authoring/assets/xf-15.png)
 
