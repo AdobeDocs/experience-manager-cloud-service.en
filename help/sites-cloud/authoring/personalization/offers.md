@@ -82,6 +82,23 @@ A **Convert to experience fragment variation** option, and workflow, has been im
 
    If you now navigate to the **Experience Fragment Offers** console, you will see your new experience fragment, together with its associated variations.
 
+### Targeting with the Offers Template {#targeting-offers-template}
+
+>[!CAUTION]
+>
+>This option is only available to customers with pre-existing legacy offers.
+>
+>As with the **Offers** console it will no longer be available either:
+>
+>* once the last legacy offer has been converted to Experience Fragments
+>* when legacy offers are deprecated (in the future)
+>
+>Therefore, the recommended option is to use Experience Fragments, not this option. 
+
+For customers with pre-existing legacy offers, the **Use Offer Template** options will be visible when targeting components that are **not** Experience Fragments:
+
+   ![Convert to Experience Fragment Variation dialog](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
+
 ## The Offers Console {#offers-console}
 
 >[!CAUTION]
