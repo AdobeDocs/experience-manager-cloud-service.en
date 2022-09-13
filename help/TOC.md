@@ -268,7 +268,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [How Multisite Management for Targeted Content is Structured](/help/sites-cloud/authoring/personalization/multisite-structure.md)
       + [Managing Activities](/help/sites-cloud/authoring/personalization/activities.md)
       + [Managing Audiences](/help/sites-cloud/authoring/personalization/audiences.md)
-      + [Creating and Managing Offers](/help/sites-cloud/authoring/personalization/offers.md)
+      + [Creating and Managing Offers (Offers Console)](/help/sites-cloud/authoring/personalization/offers.md)
       + [Understanding Segmentation](/help/sites-cloud/authoring/personalization/segmentation.md)
       + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
