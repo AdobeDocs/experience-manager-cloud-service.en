@@ -52,7 +52,7 @@ A **Convert to experience fragment variation** option, and workflow, has been im
 
 1. Select **Start Targeting**. 
 
-1. Select the appropriate component. 
+1. Select the appropriate (targeted) component. 
 
 1. The component toolbar will provide an option to **Convert to experience fragment variation**:
 
