@@ -40,7 +40,7 @@ Follow the steps below to extract your migration set from the Content Transfer T
 
    >[!IMPORTANT]
    >If the User Mapping has not been run on this migration set prior to extracting content from source, you will see a warning displaying that User Mapping step is pending, as shown in the figure above. Click on **Map Users** to run the User Mapping tool.
-  
+
 1. The **Extraction** field now displays the **RUNNING** status to indicate that the extraction is in-progress.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam15.png) 
@@ -54,7 +54,7 @@ Follow the steps below to extract your migration set from the Content Transfer T
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
 1. Once Extraction is completed, review the other columns like **Source** and **Paths** for details of the migration set that you populated by clicking on **...** and then on **View details**. 
- 
+
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18.png)   
 
 
