@@ -65,8 +65,8 @@ When the integration is complete, you can [author targeted content](https://expe
 Integrating AEM as a Cloud Service with Adobe Target requires knowledge of Adobe Target, AEM Activities management, and AEM Audiences management. You should be familiar with the following information:
 
 * Adobe Target (See the [Adobe Target documentation](https://experienceleague.adobe.com/docs/target/using/target-home.html)).
-* AEM Activities console (See [Managing Activities](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html).
-* AEM Audiences (See [Managing Audiences](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html).
+* AEM Activities console (See [Managing Activities](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html)).
+* AEM Audiences (See [Managing Audiences](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html)).
 
 >[!NOTE]
 >
