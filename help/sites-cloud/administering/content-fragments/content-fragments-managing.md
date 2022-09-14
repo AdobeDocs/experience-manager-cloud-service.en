@@ -46,6 +46,11 @@ The Content Fragments console provides direct access to your fragments, and rela
 
 ## Creating Content Fragments {#creating-content-fragments}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content"
+>title="Create new content"
+>abstract="Building on the models you created in module 1, you'll learn how to create content which can be used for page authoring, or as the basis of your headless content."
+
 ### Creating a Content Model {#creating-a-content-model}
 
 [Content fragment models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) can be enabled and created, prior to creating content fragments with structured content.
