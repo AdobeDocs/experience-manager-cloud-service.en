@@ -80,6 +80,11 @@ These content fragments can then be assembled to provide experiences over a vari
 >
 >For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview"
+>title="Create the content structure for your app"
+>abstract="As you follow our series of interactive guides you'll learn to create the structure (also known as the content fragment model) which serves as the foundation for all of your headless content."
+
 ## Content Fragments and Content Services {#content-fragments-and-content-services}
 
 AEM Content Services are designed to generalize the description and delivery of content in/from AEM beyond a focus on web pages.
