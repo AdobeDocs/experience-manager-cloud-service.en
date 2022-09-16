@@ -33,7 +33,7 @@ AEM updates go through an intense and fully automated product validation pipelin
 
 >[!NOTE]
 >
->If custom code was pushed to staging and then rejected by you, the next AEM update will remove those changes to reflect the git tag of the last successful customer release to production.
+>If custom code was pushed to staging and not to production, the next AEM update will remove those changes to reflect the git tag of the last successful customer release to production. Therefore, the custom code that was only available on staging will have to be deployed again.
 
 ## Composite Node Store {#composite-node-store}
 
