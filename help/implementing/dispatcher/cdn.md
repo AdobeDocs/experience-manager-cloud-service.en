@@ -94,7 +94,7 @@ Please note that when using your own CDN, there is no need to install the domain
 >
 >Sandbox program environments do not support a customer-provided CDN.
 
-There is potentially a small performance hit due to the extra hop, although hops from the customer CDN to the AEM managed CDN are likely to be efficient.
+The extra hop between the customer CDN and the AEM CDN is only needed in the event of a cache miss. By using the cache optimization strategies described in this article, the addition of a customer CDN should only introduce negligible latency.
 
 Please note that this customer CDN configuration is supported for the publish tier, but not in front of the author tier.
 
