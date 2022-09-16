@@ -9,7 +9,11 @@ exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 
 [!DNL Adobe Workfront] is a work management application that helps you manage the entire lifecycle of work in one place. The integration between [!DNL Workfront] and [!DNL Adobe Experience Manager Assets] lets organizations improve content velocity and time-to-market by intrinsically connecting work and digital asset management. Within the context of managing their work in Workfront, users have access to the required documents and images.
 
-Adobe offers to integrate [!DNL Workfront] and [!DNL Adobe Experience Manager Assets] natively, using a standard connector, or using an enhanced connector. In case of a native integration, you do not need a connector to integrate the two solutions.
+Adobe offers to [integrate [!DNL Workfront] and [!DNL Adobe Experience Manager Assets] natively, using a legacy connector, or using an enhanced connector](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html). In case of a native integration, you do not need a connector to integrate the two solutions.
+
+>[!NOTE]
+>
+>Adobe does not support using the legacy or enhanced connectors and Experience Manger integration in parallel.
 
 The [!DNL Workfront for Experience Manager enhanced connector] enables enhanced business processes with end-to-end workflows and provides personalized end-to-end client experiences and central storage. Adobe offers a standard connector and an enhanced connector to integrate the two solutions.
 
@@ -17,7 +21,7 @@ With the native Experience Manager integration and [!DNL Workfront for Experienc
 
 |Native [!DNL Adobe Experience Manager Assets] features |[!DNL Workfront for Experience Manager enhanced connector] features |
 |---|---|
-| <ul><li>Quickly set up the integration inside of Workfront</li><li>Automatically create folders linked between Workfront and Experience Manager</li><li>Easily sync metadata for existing linked assets</li><li>Automatically update project metadata when it's changed in Workfront</li><li>Smoothly connect several Experience Manager Assets repositories to one Workfront environment, or several Workfront environments to one Experience Manager Assets repository across Organization IDs.</li> |<ul><li>Auto-create linked Experience Manager folders in Workfront and organize the folders based on Workfront Portfolios, Programs, and Projects.</li><li>Synchronize Workfront project metadata with linked Experience Manager folders.</li><li>Experience Manager metadata updates with new versions.</li><li>Set Workfront object statuses based on configurable conditions using Experience Manager workflows.</li><li>Publish assets to Experience Manager publish environment or to Brand Portal.</li> |
+| <ul><li>Quickly set up the integration inside of Workfront.</li><li>Automatically create folders linked between Workfront and Experience Manager.</li><li>Easily sync metadata for existing linked assets.</li><li>Automatically update project metadata when it's changed in Workfront.</li><li>Smoothly connect several Experience Manager Assets repositories to one Workfront environment, or several Workfront environments to one Experience Manager Assets repository across Organization IDs.</li> |<ul><li>Auto-create linked Experience Manager folders in Workfront and organize the folders based on Workfront Portfolios, Programs, and Projects.</li><li>Synchronize Workfront project metadata with linked Experience Manager folders.</li><li>Experience Manager metadata updates with new versions.</li><li>Set Workfront object statuses based on configurable conditions using Experience Manager workflows.</li><li>Publish assets to Experience Manager publish environment or to Brand Portal.</li> |
 
 See the [supported features below for a comparison](#feature-parity-matrix) between native integration or an integration using connectors between the two solutions.
 
