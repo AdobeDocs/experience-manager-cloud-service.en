@@ -18,7 +18,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * Unable to upload a file that is more than 8 GB in size.
 * Issues while auto-publishing assets that are sent from Workfront to AEM.
 * The Root path field is not available for the Tags field while editing a default Metadata Schema Form.
-* Issues while adding new versions in Workfront using AEM workflows
+* Issues while adding new versions in Workfront using AEM workflows.
 * When you execute an AEM search for assets available in Workfront, AEM displays an error message.
 * When you create an AEM workflow for task creation from an asset and do not define a parent task name, the task is not created in Workfront.
 
