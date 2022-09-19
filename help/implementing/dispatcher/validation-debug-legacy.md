@@ -312,6 +312,8 @@ The included files need to be named as follows:
 | Rewrites  | `conf.d/rewrites/rewrite.rules` |
 | Variables | `conf.d/variables/custom.vars`  |
 
+To be able to include more files in much less limited way you might want to switch to flexible dispatcher config mode - see [flexible mode](/help/implementing/dispatcher/validation-debug.md).
+
 Alternatively, you can include the **default** version of the rewrite rules, whose name is `conf.d/rewrites/default_rewrite.rules`.
 Note, that there is no default version of the variables files.
 
