@@ -312,13 +312,26 @@ This statement is meant to allow requests for `css` files, but it also allows re
 
 **included file (...) does not match any known file**
 
-There are two types of files in your Apache virtual host configuration that can be specified as includes: rewrites and variables.
-The included files need to be named as follows:
+In flexible mode, besides the two types of files in your Apache virtual host configuration that can be specified as includes: rewrites and variables, named as follows:
 
 | Type      | Include file name               |
 |-----------|---------------------------------|
 | Rewrites  | `conf.d/rewrites/rewrite.rules` |
 | Variables | `conf.d/variables/custom.vars`  |
+
+also other files can be included, as long as they are located (at any level) in subdirectories of `conf.d` directory prefixed as follows:
+
+| Include file upper directory prefix |
+|-------------------------------------|
+| `conf.d/includes`                   |
+| `conf.d/modsec`                     |
+| `conf.d/rewrites`                   |
+
+so e.g. you can include a file in some newly created directory under `conf.d/includes` directory as follows:
+
+```
+Include conf.d/includes/mynewdirectory/myincludefile.conf
+```
 
 Alternatively, you can include the **default** version of the rewrite rules, whose name is `conf.d/rewrites/default_rewrite.rules`.
 Note, that there is no default version of the variables files.
