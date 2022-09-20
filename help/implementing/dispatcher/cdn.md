@@ -124,6 +124,10 @@ The AEM managed CDN adds headers to each request with:
 * country code: `x-aem-client-country`
 * continent code: `x-aem-client-continent`
 
+>[!NOTE]
+>
+>In case of customer managed CDN these headers will reflect the location of the customers CDN proxy server rather than the actual client.  Therefore, for customer managed CDN, geolocation headers should be managed by the customers CDN.  
+
 The values for the country codes are the Alpha-2 codes described [here](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 The values for the continent codes are:
