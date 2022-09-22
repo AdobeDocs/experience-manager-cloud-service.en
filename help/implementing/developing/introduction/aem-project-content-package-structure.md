@@ -13,7 +13,7 @@ This article outlines the changes required to Adobe Experience Manager Maven pro
 
 AEM application deployments must be comprised of a single AEM package. This package should in turn contain sub-packages that comprise everything required by the application to function, including code, configuration and any supporting baseline content.
 
-AEM requires a separation of **content** and **code**, which means a single content package **cannot** deploy to **both** `/apps` and runtime-writable areas (e.g. `/content`, `/conf`, `/home`, or anything not `/apps`) of the repository. Instead, the application must separate code and content into discrete packages for deployment into AEM.
+AEM requires a separation of **content** and **code**, which means a single content package **cannot** deploy to **both** `/apps` and runtime-writable areas (for example, `/content`, `/conf`, `/home`, or anything not `/apps`) of the repository. Instead, the application must separate code and content into discrete packages for deployment into AEM.
 
 The package structure outlined in this document is compatible with **both** local development deployments and AEM Cloud Service deployments.
 
