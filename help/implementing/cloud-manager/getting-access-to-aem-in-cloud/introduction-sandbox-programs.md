@@ -43,7 +43,7 @@ Custom domains and IP allow lists are not available in sandbox programs.
 
 ### No Advanced Networking {#advanced-networking}
 
-[Advanced networking features](/help/security/configuring-advanced-networking.md) (e.g. self-serve provisioning of VPN, non-standard ports, dedicated egress IP addresses, etc.) are not available in sandbox programs.
+[Advanced networking features](/help/security/configuring-advanced-networking.md) (for example, self-serve provisioning of VPN, non-standard ports, dedicated egress IP addresses, etc.) are not available in sandbox programs.
 
 ### Manual AEM Updates {#updates}
 
