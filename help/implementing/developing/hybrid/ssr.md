@@ -20,16 +20,18 @@ SSR usually provides some value when there is a clear "yes" to either of the fol
 * **SEO:** Is SSR still actually required for your site to be properly indexed by the search engines that bring traffic? Keep in mind that the main search engine crawlers now evaluate JS.
 * **Page Speed:** Does SSR provide a measurable speed improvement in real-life environments and add to the overall user experience?
 
-Only when at least one of these two questions are answered with a clear "yes" for your project does Adobe recommend implementing SSR. The following sections describe how to do this using Adobe I/O Runtime.
+Only when at least one of these two questions are answered with a clear "yes" for your project does Adobe recommend implementing SSR. The following sections describe how to do this using Adobe I/O Runtime, part of [App Builder](https://developer.adobe.com/app-builder).
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
 If you [are confident that your project requires the implementation of SSR](#when-to-use-ssr), Adobe's recommended solution is to use Adobe I/O Runtime.
 
-For more information on Adobe I/O Runtime, please see
+For more information on Adobe I/O Runtime please see
 
-* [https://www.adobe.io/apis/experienceplatform/runtime.html](https://www.adobe.io/apis/experienceplatform/runtime.html) - for an overview of the service
-* [https://www.adobe.io/apis/experienceplatform/runtime/docs.html](https://www.adobe.io/apis/experienceplatform/runtime/docs.html) - for detailed documentation on the platform
+* [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime) - for an overview of the Runtime feature of App Builder
+* [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder) - for details on the full App Builder product
+* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs) - for detailed documentation
+
 
 The following sections detail how Adobe I/O Runtime can be used to implement SSR for your SPA in two different models:
 
@@ -38,7 +40,7 @@ The following sections detail how Adobe I/O Runtime can be used to implement SSR
 
 >[!NOTE]
 >
->Adobe recommends a separate Adobe I/O Runtime workspace per environment (stage, prod, testing, etc.). This allows for typical systems development life cycle (SDLC) patterns with different versions of a single application deployed to different environments. See the document [CI/CD for Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) for more information.
+>Adobe recommends a separate Adobe I/O Runtime workspace per environment (stage, prod, testing, etc.). This allows for typical systems development life cycle (SDLC) patterns with different versions of a single application deployed to different environments. See the document [CI/CD for App Builder Applications](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) for more information.
 >
 >A separate workspace is not needed per instance (author, publish) unless there are differences in the runtime implementation per instance type.
 
