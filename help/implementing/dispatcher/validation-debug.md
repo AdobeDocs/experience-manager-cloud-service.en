@@ -3,6 +3,7 @@ title: Validating and Debugging using Dispatcher Tools
 description: Validating and Debugging using Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
+
 ---
 # Validating and Debugging using Dispatcher Tools {#Dispatcher-in-the-cloud}
 
@@ -312,14 +313,14 @@ This statement is meant to allow requests for `css` files, but it also allows re
 
 **included file (...) does not match any known file**
 
-In flexible mode, besides the two types of files in your Apache virtual host configuration that can be specified as includes: rewrites and variables, named as follows:
+By default, two types of files in your Apache virtual host configuration can be specified as includes: rewrites and variables.
 
 | Type      | Include file name               |
 |-----------|---------------------------------|
 | Rewrites  | `conf.d/rewrites/rewrite.rules` |
 | Variables | `conf.d/variables/custom.vars`  |
 
-also other files can be included, as long as they are located (at any level) in subdirectories of `conf.d` directory prefixed as follows:
+In flexible mode, other files can also be included, as long as they are located in subdirectories (at any level) of `conf.d` directory prefixed as follows.
 
 | Include file upper directory prefix |
 |-------------------------------------|
@@ -327,7 +328,7 @@ also other files can be included, as long as they are located (at any level) in 
 | `conf.d/modsec`                     |
 | `conf.d/rewrites`                   |
 
-so e.g. you can include a file in some newly created directory under `conf.d/includes` directory as follows:
+For exmaple, you can include a file in some newly-created directory under `conf.d/includes` directory as follows:
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf
