@@ -11,12 +11,12 @@ Learn how to create a user group in the Admin Console to manage receipt of impor
 
 ## Overview {#overview}
 
-From time to time Adobe needs to contact regarding their AEM as a Cloud Service environments. In addition to in-product notification, Adobe also occasionally uses email for such notifications. There are two types of such notification:
+From time-to-time, Adobe needs to contact users regarding their AEM as a Cloud Service environments. In addition to in-product notification, Adobe also occasionally uses email for notifications. There are two types of such email notification:
 
-* **Incident Notification- Cloud Service** - These notifications are sent during an incident or when Adobe has identified a potential availability issue with your AEM as a Cloud Service environment.
-* **Proactive Notification- Cloud Service** - These notifications are sent when an Adobe support team member wants to provide guidance on a potential optimization or recommendation that can benefit your AEM as a Cloud Service environment.
+* **Incident Notification** - These notifications are sent during an incident or when Adobe has identified a potential availability issue with your AEM as a Cloud Service environment.
+* **Proactive Notification** - These notifications are sent when an Adobe support team member wants to provide guidance on a potential optimization or recommendation that can benefit your AEM as a Cloud Service environment.
 
-For the correct users to receive these notifications, you need to configure user groups.
+For the correct users to receive these notifications, you need to configure and assign user groups and described in this document.
 
 ## Prerequisites {#prerequisites}
 
@@ -39,25 +39,27 @@ To properly set up receipt of notifications you will need to create two user gro
 
      ![Create user group](assets/cloud_manager_instance.png)
 
-1. You will see the list of all configured Cloud Manager product profiles. For example:
+1. You will see the list of all configured Cloud Manager product profiles.
 
     ![Create user group](assets/cloud_manager_profiles.png)
 
-1. Click **New Profile** and introduce the following details:
+1. Click **New Profile** and provide the following details:
 
-   * Product profile name: Incident Notification - Cloud Service
-   * Display name: Incident Notification - Cloud Service
-   * Description: Cloud Manager profile for the users that will receive notifications during an incident or when Adobe has identified a potential availability problem with your AEM as a Cloud Service environment.
+   * **Product profile name**: `Incident Notification - Cloud Service`
+   * **Display name**: `Incident Notification - Cloud Service`
+   * **Description**: Cloud Manager profile for the users that will receive notifications during an incident or when Adobe has identified a potential availability problem with your AEM as a Cloud Service environment
 
 1. Click **Save** and repeat step 5 with the following details:
 
-   * Product profile name: Proactive Notification - Cloud Service
-   * Display name: Proactive Notification - Cloud Service
-   * Description: Cloud Manager profile for the users that will receive notifications when an Adobe support team member wants to provide guidance on a potential optimization or recommendation to do with your AEM as a Cloud Service environment configuration.
+   * **Product profile name**: Proactive Notification - Cloud Service
+   * **Display name**: Proactive Notification - Cloud Service
+   * **Description**: Cloud Manager profile for the users that will receive notifications when an Adobe support team member wants to provide guidance on a potential optimization or recommendation to do with your AEM as a Cloud Service environment configuration
 
 >[!NOTE]
 >
->It is important that the Cloud Manager profile name to be exactly the same as above. Please copy and paste the Product profile name from the description provided. Any deviations or typos will result in notifications not being sent as desired. In case of error or if profiles have not been defined, Adobe will default to notifying existing users assigned to Cloud Manager Developer (is it or , or, and) Deployment Manager profiles.
+>It is important that the Cloud Manager **product profile name** is exactly the same as provided in steps five and six. Please copy and paste the provided product profile name. Any deviations or typos will result in notifications not being sent as desired.
+>
+>In case of error or if the profiles have not been defined, Adobe will default to notifying existing users assigned to the **Cloud Manager Developer** or **Deployment Manager** profiles.
 
 ## Assign the  Users to the new notification product profiles {#add-users}
 
@@ -65,7 +67,9 @@ Now that the groups have been created, you must assign the appropriate users. Yo
 
 ### Add New Users to Groups {#new-user}
 
-1. Identify the user(s) who should receive either Incident or Proactive Notifications.
+Follow these steps to add users for whom federated IDs have not yet been set up.
+
+1. Identify the user(s) who should receive either incident or proactive notifications.
 
 1. Log in to Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) if you are not still logged in.
 
@@ -79,18 +83,44 @@ Now that the groups have been created, you must assign the appropriate users. Yo
 
 1. In the **Add users to your team** dialog, enter the email ID of the user you want to add.
 
-   * If the federated ID for your team members has not yet been set up, select Adobe ID for the ID Type.
-   * If user already exists, see step 9.
+1. If the federated ID for your team members has not yet been set up, select `Adobe ID` for the **ID Type**. Otherwise skip to the section [Add Existing Users to Groups.](#existing-users)
 
-1. Click the plus button under the **Select products** heading to begin product selection and select **Adobe Experience Manager as a Cloud Service** and assign either **Incident Notification - Cloud Service** or **Proactive Notification - Cloud Service**, or both to the user.
+1. Click the plus button under the **Select products** heading to begin product selection.
 
-1. Click **Save** and a welcome email is sent to the user you added. The invited user will now receive the notifications.
+1. Select **Adobe Experience Manager as a Cloud Service** and assign one or both of the new groups to the user.
 
-1. Repeat these steps for the users on your team that you would like to receive the notifications.
+   * **Incident Notification - Cloud Service**
+   * **Proactive Notification - Cloud Service**
 
-1. In case the user already exist, search the name of the user and:
+1. Click **Save** and a welcome email is sent to the user you added.
 
-   * Click the name of the user.
-   * In the **Products** section, click **Edit**.
-   * Click the pencil button the **Select products** heading to begin product selection and select **Adobe Experience Manager as a Cloud Service** and assign either **Incident Notification - Cloud Service** or **Proactive Notification - Cloud Service**, or both to the user.
-   * Click **Save** and a welcome email is sent to the user you added. The invited user will now receive the notifications. 
+The invited user will now receive the notifications. Repeat these steps for the users on your team that you would like to receive notifications.
+
+### Add Existing Users to Groups {#existing-user}
+
+Follow these steps to add users for whom federated IDs already exist.
+
+1. Identify the user(s) who should receive either incident or proactive notifications.
+
+1. Log in to Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) if you are not still logged in.
+
+1. From the **Overview** page, select **Adobe Experience Manager as a Cloud Service** from the **Products and services** card.
+
+   ![Users](assets/product_services.png)
+
+1. Select the **Users** tab from the top navigation.
+
+1. If the federated ID already exists for the team member whom you want to add to a notification group, located that user in the list and click it. Otherwise skip to the section [Add New Users to Groups.](#add-user)
+
+1. In the **Products** section of the user details window, click the ellipsis button and then select **Edit**.
+
+1. In the *Edit products** window, click the pencil button below the **Select products** heading to begin product selection.
+
+1. Select **Adobe Experience Manager as a Cloud Service** and assign one or both of the new groups to the user.
+
+   * **Incident Notification - Cloud Service**
+   * **Proactive Notification - Cloud Service**
+
+1. Click **Save** and a welcome email is sent to the user you added.
+
+The invited user will now receive the notifications. Repeat these steps for the users on your team that you would like to receive notifications.
