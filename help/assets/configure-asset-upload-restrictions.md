@@ -37,6 +37,12 @@ To allow the upload of images in all formats and PDF files to Experience Manager
 
 `image/*` as the MIME type allows the upload of images in all formats. `application/pdf` as the MIME type allows the upload of PDF files to Experience Manager Assets.
 
+If you attempt to upload a file that is not included in the list of allowed MIME types, Experience Manager Assets displays the following error message:
+
+   ![Restricted files](assets/asset-upload-restricted-files.png)
+
+`Screen Recording 2022-08-31 at 3.36.09 PM.mov` refers to a file name that is not included in the allowed MIME types.
+
 **Example 2: Allow upload of specific image formats to Experience Manager Assets**
 
 To add specific image formats to the allowed MIME types and to restrict uploading all other asset formats, do the following settings:
