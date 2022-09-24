@@ -60,9 +60,6 @@ Understanding SSL/TLS connection problems can sometimes be difficult. To toubles
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" See Demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial - using Content Transfer Tool"
 
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
-<!-- Need to remove the video -->
-
 The following section applies to the new version of the Content Transfer Tool. Follow this section to learn how to use the Content Transfer Tool to migrate content to AEM as a Cloud Service:
 
 ### Extraction Setup Phase {#extraction-setup-phase}
