@@ -98,6 +98,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.7.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
       + [Release Notes for 2022.5.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
       + [Release Notes for 2022.4.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
       + [Release Notes for 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
@@ -268,7 +269,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [How Multisite Management for Targeted Content is Structured](/help/sites-cloud/authoring/personalization/multisite-structure.md)
       + [Managing Activities](/help/sites-cloud/authoring/personalization/activities.md)
       + [Managing Audiences](/help/sites-cloud/authoring/personalization/audiences.md)
-      + [Creating and Managing Offers](/help/sites-cloud/authoring/personalization/offers.md)
+      + [Creating and Managing Offers (Offers Console)](/help/sites-cloud/authoring/personalization/offers.md)
       + [Understanding Segmentation](/help/sites-cloud/authoring/personalization/segmentation.md)
       + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
