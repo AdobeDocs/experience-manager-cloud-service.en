@@ -29,7 +29,7 @@ You can follow [the same steps to view and update a custom domain name](#view-an
 >
 >The SSL certificate must be valid, [already configured,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) and contain the custom domain name you are updating.
 
-## Deleting a Custom Domain Name {#deleting}
+## Deleting a Custom Domain Name {#deleting}
 
 A user with the **Business Owner** or **Deployment Manager** role can use Cloud Manager to delete a custom domain name.
 
