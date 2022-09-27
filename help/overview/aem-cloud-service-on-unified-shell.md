@@ -55,7 +55,7 @@ To change to the dark theme, click on your profile icon. This will display a pop
 
 ## Identifying the AEM as a Cloud Service environment {#identify-aemaacs-environment}
 
-AEM as a Cloud Service provides three types of environments: Production, Stage, and Development. Refer to Environment Types for more details. With this integration with Unified Shell, the type of environment that the user is logged into on the Author service is displayed on the top-header via a label as shown below.
+AEM as a Cloud Service provides three types of environments: Production, Stage, and Development. Refer to [Environment Types](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) for more details. With this integration with Unified Shell, the type of environment that the user is logged into on the Author service is displayed on the top-header via a label as shown below.
 
 ![image](/help/overview/assets/unifiedshell_header_label.png)
 
