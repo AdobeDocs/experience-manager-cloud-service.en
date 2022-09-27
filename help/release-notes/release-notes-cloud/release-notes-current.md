@@ -30,8 +30,13 @@ Have a look at the September 2022 Release Overview video for a summary of the fe
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+
 ### New features in [!DNL Sites] {#sites-features}
  
+* The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now enables users to efficiently manage translated content fragments. A 1-click access has been provided to view all the language copies as well. Users are also able to filter the table view by the locale of their interest. 
+
+![Content Fragments Languages](/help/release-notes/assets/cfconsole-languages.png)
+
 * The Email component allows the creation of content in AEM that is then delivered as emails via Campaign Classic. The Core Email Component:
   * is based on the [Core WCM Component](https://github.com/adobe/aem-core-wcm-components) which supports Editable Templates and the Style System.
   * provides 10 email-optimized production-ready components (Page, Container, Title, Text, Image, Button, Teaser, Experience Fragment, Content Fragment, Segmentation).
@@ -39,17 +44,16 @@ Have a look at the September 2022 Release Overview video for a summary of the fe
   * provides optimal email-friendly HTML output, thanks to the [CSS styles inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), the [HTML attribute inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), and the [HTML sanitizer](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
   * allows the creation of the emails anywhere.
 
+### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
+
 ## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
 ### What is New {#what-is-new-foundation}
 
+* AEM as a Cloud Service is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Refer to AEM as a [Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
+
 * As previously mentioned in release notes, using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is deprecated and will be enforced in the coming days. Please refer to [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) for the suggested approaches for replicating these large content packages.
 
-### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
-
-* The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) provides users with an option to display the total number of language copies associated with a content fragment. A 1-click access has been provided to view all the language copies as well. Users are also able to filter the table view by the locale of their interest. 
-
-![Content Fragments Languages](/help/release-notes/assets/cfconsole-languages.png)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
