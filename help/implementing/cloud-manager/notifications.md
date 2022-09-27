@@ -3,36 +3,85 @@ title: Notifications
 description: Learn how to receive information about pipeline deployments using the Adobe Experience Cloud notification system.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 ---
-# Notifications {#notifications} 
 
-[!UICONTROL Cloud Manager] allows the user to receive notifications when the production pipeline starts and completes (successfully or unsuccessfully), during a production deployment.
+# Notifications {#notifications}
 
-These notifications are sent through the Adobe [!UICONTROL Experience Cloud] notification system to users with the roles **Business Owner**, **Program Manager**, and **Deployment Manager**.
+Learn how Cloud Manager notifies you of important events.
 
-The notifications appear at the right end of the menu bar in the [!UICONTROL Cloud Manager] UI and throughout Adobe [!UICONTROL Experience Cloud].
+## Notifications in Cloud Manager {#cloud-manager-notifications}
 
-![Notifications icon in menu bar](assets/notify-1.png)
+[!UICONTROL Cloud Manager] sends you notifications when a production pipeline starts and completes (successfully or unsuccessfully), at the start of a production deployment.
 
-The bell icon is badged when there are new notifications. Click on it to open the a panel to view the notifications.
+These notifications are sent through the [!UICONTROL Experience Cloud] notification system to users in the **Business Owner**, **Program Manager**, and **Deployment Manager** roles.
 
-![Viewing notifications](assets/notify-2.png)
+The notifications appear in a sidebar within [!UICONTROL Cloud Manager] and throughout the Adobe [!UICONTROL Experience Cloud]. The bell icon in the header is badged when you have new notifications.
 
-The panel only lists the most recent notifications. Click **View All** at the bottom of the panel to see all of your notifications.
+![Notifications icon](assets/notifications-bell-badged.png)
 
-## Email Notifications {#email-notifications}
+Click the bell icon to open the sidebar and view the notifications. The **Notifications** tab in the sidebar lists the most recent notifications such as deployment confirmations. Notifications concern your environments.
 
-By default, notifications are available in the user interface across Adobe [!UICONTROL Experience Cloud] solutions. Individual users can also opt for these notifications to be sent through email by following these steps.
+![Notifications sidebar](assets/notifications-activities.png)
 
-1. Click on the bell icon to reveal the notifications.
-1. Click on the **Edit Preferences** icon (shaped like a gear) at the top of the notifications panel.
-1. In the window that opens, click on **Notifications** in the left navigation.
-   ![Edit preferences window](assets/notification-preferences.png)
-1. Scroll down to the **Email** heading.
-   ![Email options](assets/email-preferences.png)
-1. Select how you would like to receive your emails.
-   * Don't send emails (default)
-   * Instant notifications
-   * Daily digest
-   * Weekly digest
+The **Announcements** tab includes Adobe product announcements. Announcements concern the product.
 
-Once you make your selection, your choice is automatically saved with no need to click on a save or apply button.
+![Notifications sidebar](assets/notificaitons-announcements.png)
+
+Click on a notification or announcement to view its details. Notifications linked to activities such as pipeline deployments take you to the detail of that activity such as the pipeline execution window.
+
+Click on the **View all** option at the bottom of the panel to view all announcements in your inbox.
+
+Click on the **Mark all as read** option at the bottom of the panel to mark all unread notifications as read and clear the bell icon badging.
+
+## Notification Configuration {#configuration}
+
+You can customize how you receive notifications and what notifications you receive.
+
+Click on the gear icon at the top of the notifications sidebar.
+
+![Notification settings icon](assets/notifications-configuration.png)
+
+This opens the **Experience Cloud preferences** window, where you can define your notification subscriptions and how you receive your notifications.
+
+### Subscriptions {#subscriptions}
+
+Subscriptions define for which products you receive notifications and which notifications.
+
+![Notification subscriptions](assets/notifications-subscriptions.png)
+
+By default, you will receive all notifications for all products. Click on **Customize** next to a product to define the types of notifications you receive for that product.
+
+![Notification subscription customization](assets/notifications-subscriptions-customize.png)
+
+### Priority {#priority}
+
+Priority alerts will be marked with a **HIGH** tag and can be configured to be exclusively received as alerts. In the **Priority** section, you can define which categories qualify as priority notifications.
+
+![Notification priority](assets/notifications-priority.png)
+
+Use the drop-down to add to the list of categories that qualify as priority. Click the X next to the category names to remove them.
+
+### Alerts {#alerts}
+
+Alerts appear in the top-right corner of your window for a few seconds. Use the **Alerts** section to define for which notifications you receive alerts.
+
+![Notification alerts](assets/notifications-alerts.png)
+
+You can define the behavior of the alerts.
+
+* **Show alerts for** - Defines the types of notifications that trigger alerts
+* **Alerts should stay on the screen until I dismiss them** - Controls if the alerts should persist unless you actively dismiss them
+* **Duration** - Defines how long the alert should remain on the screen if you have not chosen that they should stay on the screen.
+
+## Emails {#emails}
+
+Notifications are available in the web user interface across Adobe [!UICONTROL Experience Cloud] solutions. You can also opt for these notifications to be sent through email in the **Emails** section.
+
+![Notification emails](assets/notifications-emails.png)
+
+By default no emails are sent. You can choose to receive emails as:
+
+* Instantly
+* Daily
+* Weekly
+
+When **Instant notifications** is chosen, emails are sent immediately for every notification. For **Daily digest** and **Weekly digest** you can choose when your daily digest is sent and on which day and when your weekly digest is sent.
