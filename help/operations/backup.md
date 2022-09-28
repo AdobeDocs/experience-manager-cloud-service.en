@@ -13,6 +13,11 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 
 Learn how to restore your AEM as a Cloud Service content from backup using Cloud Manager.
 
+>[!NOTE]
+>
+>* This feature is being rolled out in a phased manner, and may not yet be enabled in all tenants in Cloud Manager.
+>* This feature is currently limited to staging and development environments. The feature usage and feedback from these environment types will ensure a successful roll out to production environments in the near future.
+
 ## Overview {#overview}
 
 Cloud Manager's self-service restore process copies data from Adobe system backups and restores it to its original environment. A restore is performed to return data that has been lost, damaged, or accidentally deleted to its original condition.

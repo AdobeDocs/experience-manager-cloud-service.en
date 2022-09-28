@@ -29,6 +29,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + General AEMaaCS Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.7.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
       + [Release Notes for 2022.6.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
       + [Release Notes for 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
       + [Release Notes for 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
@@ -61,6 +62,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
       + [Release Notes for 2022.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
       + [Release Notes for 2022.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
       + [Release Notes for 2022.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
@@ -96,6 +98,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.7.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
       + [Release Notes for 2022.5.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
       + [Release Notes for 2022.4.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
       + [Release Notes for 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
@@ -134,6 +137,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md)
     + [Developer and Deployment Manager Tasks](/help/journey-onboarding/developers.md)
     + [AEM User Tasks](/help/journey-onboarding/aem-users.md)
+    + [User Groups](/help/journey-onboarding/user-groups.md)
   + AEM Reference Demos Add-On Journey {#demo-add-on}
     + [Overview](/help/journey-sites/demos-add-on/overview.md)
     + [Installation](/help/journey-sites/demos-add-on/installation.md)
@@ -265,7 +269,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [How Multisite Management for Targeted Content is Structured](/help/sites-cloud/authoring/personalization/multisite-structure.md)
       + [Managing Activities](/help/sites-cloud/authoring/personalization/activities.md)
       + [Managing Audiences](/help/sites-cloud/authoring/personalization/audiences.md)
-      + [Creating and Managing Offers](/help/sites-cloud/authoring/personalization/offers.md)
+      + [Creating and Managing Offers (Offers Console)](/help/sites-cloud/authoring/personalization/offers.md)
       + [Understanding Segmentation](/help/sites-cloud/authoring/personalization/segmentation.md)
       + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -613,6 +617,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Product Recommendations](/help/commerce-cloud/authoring/product-recommendations.md)
     + Administering {#administering}
       + [Multi-Store Setup](/help/commerce-cloud/configuring/multi-store-setup.md)
+      + [Multiple Commerce Systems Setup](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
       + [Configuring URLs for SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
       + [Caching Options](/help/commerce-cloud/configuring/caching.md)
       + [Custom HTTP Headers](/help/commerce-cloud/configuring/custom-http-headers.md)
