@@ -22,11 +22,11 @@ In addition, see:
 * [Accessibility in Assets](/help/assets/accessibility.md)
 * [Configuring the Rich Text Editor for producing accessible content](/help/implementing/developing/extending/rte-accessible-content.md)
 
-The guidelines are graded according to three conformance levels: Level A (lowest), Level AA and Level AAA (highest). Briefly, the levels are defined as follows:
+The guidelines are graded according to three conformance levels: Level A (lowest), Level AA, and Level AAA (highest). Briefly, the levels are defined as follows:
 
 * **Level A:** Your site reaches a basic, minimum level of accessibility. To meet this level, all Level A Success Criteria are satisfied.
 * **Level AA:** This is an ideal level of accessibility to strive for, in which your site reaches a foundational level of accessibility, so that it is accessible to most people in most situations using most technologies. To meet this level, all Level A and Level AA Success Criteria are satisfied.
-* **Level AAA:** Your site reaches a very high level of accessibility. To meet this level, all Level A, Level AA and Level AAA Success Criteria are satisfied.
+* **Level AAA:** Your site reaches a high level of accessibility. To meet this level, all Level A, Level AA, and Level AAA Success Criteria are satisfied.
 
 When creating your site, you should determine the overall level to which you would like your site to conform.
 
@@ -34,7 +34,7 @@ The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w
 
 >[!NOTE]
 >
->In this document we are using:
+>In this document, we are using the following:
 >
 >* The [short names for the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
 >* The [numbering used in the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) to aid cross-referencing with the WCAG website.
@@ -45,7 +45,7 @@ The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w
 
 ### Text Alternatives (1.1) {#text-alternatives}
 
-[Guideline 1.1 Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.](https://www.w3.org/TR/WCAG/#text-alternatives)
+[Guideline 1.1 Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols, or simpler language.](https://www.w3.org/TR/WCAG/#text-alternatives)
 
 ### Non-text Content (1.1.1) {#non-text-content}
 
@@ -55,7 +55,7 @@ The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w
 
 #### Purpose - Non-text Content (1.1.1) {#purpose-non-text-content}
 
-Information on a web page can be provided in many different non-text formats, such as pictures, videos, animations, charts and graphs. People who are blind or have severe visual impairments are unable to see non-text content, but they can access text content by having it read to them by a screen reader or presented in tactile form by a Braille display device. So, by providing text alternatives to content in graphical format, people who cannot see the graphical content can access an equivalent version of the information the content provides.
+Information on a web page can be provided in many different non-text formats, such as pictures, videos, animations, charts, and graphs. People who are blind or have severe visual impairments are unable to see non-text content, but they can access text content by having it read to them by a screen reader or presented in tactile form by a Braille display device. So, by providing text alternatives to content in graphical format, people who cannot see the graphical content can access an equivalent version of the information the content provides.
 
 A useful additional benefit is that text alternatives enable non-text content to be indexed by search engine technology.
 
@@ -67,17 +67,17 @@ For static graphics, the basic requirement is to provide an equivalent text alte
 >
 >Some out-of-the-box Core Components, such as **[Carousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
 >
->When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see Adding Support for Additional HTML Elements and Attributes).
+>When implementing versions of these for your AEM instance, your development team must configure such components to support the `alt` attribute so that authors can add it to the content (see Adding Support for Additional HTML Elements and Attributes).
 >
 >Some out-of-the-box Core Components, such as **[Carousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component.
 >
->When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>When implementing versions of these for your AEM instance, your development team must configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 AEM requires the **Alternative Text** field to be filled by default. If the image is purely decorative and alternative text would be unnecessary, the **Image is decorative** option can be checked.
 
 #### Creating Good Text Alternatives {#creating-good-text-alternatives}
 
-There are various forms of non-text content, so the value of the text alternative depends on the role the graphic plays in the web page. Some general rules of thumb to follow include:
+There are various forms of non-text content, so the value of the text alternative depends on the role the graphic plays in the web page. Some general rules you may find helpful include the following:
 
 * Text alternatives should be succinct yet clearly capture the essential information provided by the non-text content.
 * Overly long descriptions (over 100 characters) should be avoided. If a text alternative requires more detail:
@@ -251,7 +251,7 @@ Follow the guidance provided for [Captions (Prerecorded)](#captions-prerecorded)
 
 Detailed instructions are beyond the scope of this document, but the following resources provide helpful information:
 
-* [WebAIM: Real Time Captioning](https://www.webaim.org/techniques/captions/realtime.php)
+* [WebAIM: Real Time Captioning](https://webaim.org/techniques/captions/realtime.php)
 
 * [AccessComputing project (University of Washington): Can captions be generated automatically using speech recognition?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
@@ -556,9 +556,9 @@ Make sure that the text contrasts sufficiently with its background. Contrast rat
 >
 >* [Px to Em Calculater - Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: PX to EM conversion made simple](http://pxtoem.com)
+>* [PMtoEM.com: PX to EM conversion made simple](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
-To check contrast ratios, use a color contrast tool, such as the [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) or the [WebAIM color contrast checker](https://www.webaim.org/resources/contrastchecker/). These tools allow you to check pairs of colors and report on any contrast problems.
+To check contrast ratios, use a color contrast tool, such as the [Paciello Group Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) or the [WebAIM color contrast checker](https://webaim.org/resources/contrastchecker/). These tools allow you to check pairs of colors and report on any contrast problems.
 
 Alternatively, if you are less concerned about specifying the appearance of your page, you can choose not to specify background and foreground text colors. No contrast checking is required, as the user’s browser will determine the colors of the text and background.
 
