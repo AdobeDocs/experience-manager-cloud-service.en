@@ -7,43 +7,61 @@ exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 
 Personalization of the web content that you provide to customers, means tailoring those experiences to their needs. This is based on the information that you have about them; for example, shopping summary, age, gender, geography, among others. 
 
-Your Targeting engine then *decides* which personalized content (also known as Experience) should be displayed based on the current *Audience* (also known as Segment, defined by a Rule). 
+Your Targeting engine then *decides* which personalized content (also known as Experience) should be displayed based on the current *Audience* (also known as Segment), which is defined by rules. 
 
 Adobe Experience Manager as a Cloud Service (AEM) provides a framework of tools for:
 
-* authoring targeted content, for a range of audiences dependent on the available customer information
-* defining the rules; used to resolve the known user information against an audience definition (segment)
-* configuring your pages to present targeted personalized experiences; to render the specific content applicable to the current customer
+* Authoring targeted content, suitable for a range of audiences, dependent on the available customer information.
+* Defining the rules used to resolve the known user information against an audience definition.
+* Configuring your pages to present targeted personalized experiences; to render the specific content applicable to the current customer.
 
-The following overview helps you understand terms used for Personalization in AEM as a Cloud Service (with more details in the following sections):
-
-## Audience {#audience}
-
-An audience is a group of end users that you want to target with personalized content. 
-
-## Segment {#segment}
-
-Within AEM, an audience is defined as a segment, based on rules (conditions). These are then resolved by the targeting engine to render the required content.
+The following overview presents the terms used for Personalization in AEM as a Cloud Service, followed by a recommended order of action.
 
 ## Experience {#experience}
 
-The experience is content that you want to be shown to an audience.
+An experience is content that you want to be shown to an audience.
+
+## Audience {#audience}
+
+An audience is a group of end users that you want to target with personalized content. When a visitor opens a web page, the page logic determines the audience to which they belong, and displays the content that you have created for that audience.
+
+Audiences are based on marketing segments. They are created either in AEM or Adobe Target; you can create Adobe Target audiences directly in AEM using the Audiences console. 
+
+### Segment {#segment}
+
+Within AEM ContextHub, an audience is defined as a segment, based on rules (conditions). These are then resolved to render the required content.
 
 ## Activity {#activity}
 
-An [activity](#activities) defines the mapping of a specific segment (audience) with a specific experience. This can be either be a personalization activity, or an A/B Test activity (in the case of the AEM+Target personalization workflow).  
+An activity:
+
+* defines the mapping of a specific audience (segment) with a specific experience, 
+* defines the period of time for which the targeting is applied
+* identifies the [targeting engine](#targeting-engine) that your pages use
+
+The activity can be either a personalization activity, or an A/B Test activity (in the case of the AEM and Adobe Target personalization workflow).
+
+For example, an activity could define experiences for two separate audiences: people over the age of 30, and people under the age of 30. A page of a web site might then display different products for each experience.
+
+Or, as another example, your product catalog may include teasers that focus attention on seasonal products. So a Summer Sports activity might define the marketing segments that the teasers target during summer months.
+
+You define experiences for an activity. Use the [Activities console](/help/sites-cloud/authoring/personalization/activities.md) to create and manage the activities for your [Brands](#brand). You can also create activities as you author your [targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md) with [Targeting mode](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode).
+
+## Brand {#brand}
+
+A Brand holds a selection of marketing activities and areas.
+
+When you create a brand using the Activities console, it also appears in the Offers console.
+
+## Area {#area}
+
+An area is a sub-division of a Brand.
 
 ## Personalized Experience {#personalized-experience}
 
-A [personalized experience](#personalized-experiences) is the personalized content to be displayed to your end customer, based on the audience definition; the segment that was resolved according to the rules. 
+A personalized experience is an experience that is shown to a limited audience. The audience is defined by you, and the content is only be shown when the information known about the current end-user corresponds to that audience definition. 
 
-When creating pages you define multiple experiences, with each experience resolving to one (or more) segment. If no segment is resolved, then default experience is displayed.
-
-Audiences are based on marketing segments that are created either in AEM or Adobe Target. When a visitor opens a web page, the page logic determines the audience to which they belong, and displays the content that you have created for that audience.
-
-For example, an activity defines experiences for two separate audiences: women over the age of 30 and women under the age of 30. The women's page of a web site might display different products for each experience.
-
-You define experiences for an activity. You can use the [Activities console](/help/sites-cloud/authoring/personalization/activities.md#adding-editing-an-activity-using-the-activities-console) or [Targeting mode](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode) to add experiences to an activity.
+When creating pages you define multiple experiences, with each experience resolving to one (or more) audience(s). If no audience is resolved, then the default experience is displayed.
 
 ## Targeting Mode {#targeting-mode}
 
@@ -51,17 +69,7 @@ When authoring, this is the editing mode used to activate, and configure, the co
 
 You can [Author targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md) using the Targeting mode of AEM. Targeting mode and the Target component provide tools for creating content for the experiences of your marketing activities.
 
-## Activities {#activities}
-
-Activities define and organize your marketing efforts. Activities comprise the audiences that you are targeting, and the period of time when the targeting is applied.
-
-For example, your product catalog may include teasers that focus attention on seasonal products. The Summer Sports activity defines the marketing segments that the teasers target during summer months.
-
-Activities also identify the [targeting engine](#targeting-engine) that your pages use.
-
-Use the [Activities console](/help/sites-cloud/authoring/personalization/activities.md) to create and manage the activities for your brands. You can also create activities as you [author-targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md).
-
-## Offers {#offers}
+## Offer {#offer}
 
 An offer is content that appears at a location on a page for an experience. Use different offers for different experiences to maximize the effectiveness of the content for your audiences.
 
@@ -69,15 +77,13 @@ For example, the women's page of a sample web site can use offers as the teaser 
 
 Use [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) to create offers that you can use in multiple experiences. Create single-use offers or add offers from an offer library when [authoring-targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
-<!--
-* **Experience Fragment**
-  A grouped set of components that make up an experience. 
-  Experience Fragments are made of content and presentation to create an experience; they can be used directly when page authoring. They can be thought of as a sub-set of an AEM page. They allow content authors to reuse content across channels, including Sites pages and third party systems.  
-  For an personalization example, a Title, Image, Description, and Call To Action Button can be combined to form a teaser experience. Using Experience Fragments is a key part of using Adobe Target personalization.
+## Experience Fragment {#experience-fragments}
 
-* **Content Fragment**
-  Presentation-agnostic pieces of content. When using these for page authoring you need to format them on the page. Content Fragments are often used for headless delivery.
--->
+A grouped set of components that make up an experience. 
+
+Experience Fragments are made of content and presentation to create an experience; they can be used directly when page authoring. They can be thought of as a sub-set of an AEM page. They allow content authors to reuse content across channels, including Sites pages and third party systems.  
+
+For an personalization example, a Title, Image, Description, and Call To Action Button can be combined to form a teaser experience. Using Experience Fragments is a key part of using Adobe Target personalization.
 
 ## Targeting Engine {#targeting-engine}
 
@@ -115,7 +121,7 @@ There are various definitions required for delivering your personalized content:
 
 1. Configure the audiences.
 
-   1. Define the segment, according to rules.
+   1. Depending on your targeting engine, define the audience or segment, together with the rules.
 
 1. Author the selection of experiences that you want shown to the various audiences.
 
