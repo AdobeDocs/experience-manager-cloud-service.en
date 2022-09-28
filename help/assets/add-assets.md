@@ -168,8 +168,8 @@ To configure the Bulk Import tool, follow these steps:
 
 1. Select the required authentication mode from the drop-down. Choose **Azure SAS Token** when the user does not have access to the Azure database and provide token in the next input field. Otherwise, select **Azure SAS Token** and provide the key. Moreover, it is important to provide permissions to access the AEM Assets repository.
 
-![Azure SAS Token](assets/Azure-SAS-Token.png)
-![Azure Access Key](assets/Azure-Access-Key.png)
+   ![Azure SAS Token](assets/Azure-SAS-Token.png)
+   ![Azure Access Key](assets/Azure-Access-Key.png)
 
 1. Provide the name of the root folder that contains assets in the data source in the **[!UICONTROL Source Folder]** field.
 
