@@ -166,7 +166,7 @@ To configure the Bulk Import tool, follow these steps:
 
 1. Provide the values to create a connection with the data source. For example, if you select **Azure Blob Storage** as the data source, specify the values for Azure storage account, Azure blob container, and Azure access key.
 
-1. Select the required authentication mode from the drop-down. Choose **Azure SAS Token** when the user does not have access to the Azure database and provide token in the next input field. Otherwise, select **Azure SAS Token** and provide the key. Moreover, it is important to provide permissions to access the AEM Assets repository.
+1. Select the required authentication mode from the drop-down. Choose **Azure SAS Token** when the user does not have access to the Azure database and provide SAS token in the next input field. Otherwise, select **Azure Access Key** and provide the Access key. Moreover, it is important to provide permissions to access the AEM Assets repository.
 
    ![Azure SAS Token](assets/Azure-SAS-Token.png)
    ![Azure Access Key](assets/Azure-Access-Key.png)
