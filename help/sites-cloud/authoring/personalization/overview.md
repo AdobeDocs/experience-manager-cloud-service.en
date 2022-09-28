@@ -85,7 +85,7 @@ A grouped set of components that make up an experience.
 
 Experience Fragments are made of content and presentation to create an experience; they can be used directly when page authoring. They can be thought of as a sub-set of an AEM page. They allow content authors to reuse content across channels, including Sites pages and third party systems.  
 
-For an personalization example, a Title, Image, Description, and Call To Action Button can be combined to form a teaser experience. Using Experience Fragments is a key part of using Adobe Target personalization.
+For a personalization example, a Title, Image, Description, and Call To Action Button can be combined to form a teaser experience. Using Experience Fragments is a key part of using Adobe Target personalization.
 
 ## Targeting Engine {#targeting-engine}
 
