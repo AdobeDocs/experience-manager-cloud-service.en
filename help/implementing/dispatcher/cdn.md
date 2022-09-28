@@ -94,7 +94,7 @@ Please note that when using your own CDN, there is no need to install the domain
 >
 >Sandbox program environments do not support a customer-provided CDN.
 
-There is potentially a small performance hit due to the extra hop, although hops from the customer CDN to the AEM managed CDN are likely to be efficient.
+The extra hop between the customer CDN and the AEM CDN is only needed in the event of a cache miss. By using the cache optimization strategies described in this article, the addition of a customer CDN should only introduce negligible latency.
 
 Please note that this customer CDN configuration is supported for the publish tier, but not in front of the author tier.
 
@@ -123,6 +123,10 @@ The AEM managed CDN adds headers to each request with:
 
 * country code: `x-aem-client-country`
 * continent code: `x-aem-client-continent`
+
+>[!NOTE]
+>
+>In case of customer managed CDN these headers will reflect the location of the customers CDN proxy server rather than the actual client.  Therefore, for customer managed CDN, geolocation headers should be managed by the customers CDN.  
 
 The values for the country codes are the Alpha-2 codes described [here](https://en.wikipedia.org/wiki/ISO_3166-1).
 

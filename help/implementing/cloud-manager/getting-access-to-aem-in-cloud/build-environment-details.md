@@ -78,12 +78,12 @@ The currently available vendor/version combinations are:
 
 |Vendor|Version|
 |---|---|
-|`oracle`|`1.8`|
-|`oracle`|`1.11`|
+|`oracle`|`8`|
 |`oracle`|`11`|
-|`sun`|`1.8`|
-|`sun`|`1.11`|
+|`sun`|`8`|
 |`sun`|`11`|
+
+This table refers to the product version numbers. Java build numbers or installation paths may reflect old Java version conventions such as 1.8 for Java 8.
 
 >[!NOTE]
 >
