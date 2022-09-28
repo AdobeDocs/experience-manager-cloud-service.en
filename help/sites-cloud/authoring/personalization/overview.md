@@ -71,9 +71,11 @@ You can [Author targeted content](/help/sites-cloud/authoring/personalization/ta
 
 ## Offer {#offer}
 
+<!-- not clear - needs clarification -->
+
 An offer is content that appears at a location on a page for an experience. Use different offers for different experiences to maximize the effectiveness of the content for your audiences.
 
-For example, the women's page of a sample web site can use offers as the teaser image that appears at the top of the page. A different offer is used as the teaser for the Female Over 30 experience and for the Female Under 30 experience.
+For example, a page from a sample web site can use offers as the teaser image that appears at the top of the page. A Person Over 30 and a Person under 30 will see different offers as the experience teaser.
 
 Use [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) to create offers that you can use in multiple experiences. Create single-use offers or add offers from an offer library when [authoring-targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
