@@ -133,7 +133,7 @@ To upload larger number of files, use one of the following approaches. Also, see
 
 ### Asset Bulk Import tool {#asset-bulk-ingestor}
 
-The tool is provided only to the administrators' group to use for large-scale ingestion of assets from Azure or S3 datastores. See a video walk-through of the configuration and ingestion.
+The tool is provided only to the administrators' group to use for large-scale ingestion of assets from Azure or S3 datastores. Shared Access Signature (SAS) is used as a Unique Resource Identifier (URI) in the Asset bulk import tool. It provides restricted access rights to the Azure database resources. Additionally, the SAS key can be shared with the users whom you want to provide access to AEM repository. See a video walk-through of the configuration and ingestion.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
