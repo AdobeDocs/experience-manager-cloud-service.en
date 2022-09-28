@@ -32,9 +32,9 @@ Before using the AEM Developer Tools, you need to:
 
 ## How to Install the AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Once you have fulfilled the [requirements](#requirements) above, you can install the plugin as follows:
+When you have fulfilled the [requirements](#requirements) above, you can install the plugin as follows:
 
-1. Open the [AEM Developer Tools Web Site.](https://eclipse.adobe.com/aem/dev-tools/)
+1. Open the [AEM Developer Tools Web Site](https://eclipse.adobe.com/aem/dev-tools/).
 
 1. Copy the **Installation Link**.
 
