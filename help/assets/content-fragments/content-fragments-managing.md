@@ -1,5 +1,5 @@
 ---
-title: Managing Content Fragments
+title: Managing Content Fragments (Assets - Content Fragments)
 description: Learn how to use the Assets console to manage your AEM Content Fragments, the basis of your headless content.
 feature: Content Fragments
 role: User
