@@ -33,16 +33,11 @@ Have a look at the September 2022 Release Overview video for a summary of the fe
 
 ### New features in [!DNL Sites] {#sites-features}
  
-* The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now enables users to efficiently manage translated content fragments. A 1-click access has been provided to view all the language copies as well. Users are also able to filter the table view by the locale of their interest. 
+* The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now enables users to efficiently manage translated content fragments. A 1-click access has been provided to view all the language copies as well. Users are also able to filter the table view by the locale of their interest.
 
 ![Content Fragments Languages](/help/release-notes/assets/cfconsole-languages.png)
 
-* The Email component allows the creation of content in AEM that is then delivered as emails via Campaign Classic. The Core Email Component:
-  * is based on the [Core WCM Component](https://github.com/adobe/aem-core-wcm-components) which supports Editable Templates and the Style System.
-  * provides 10 email-optimized production-ready components (Page, Container, Title, Text, Image, Button, Teaser, Experience Fragment, Content Fragment, Segmentation).
-  * provides advanced personalization and segmentation, thanks to the [insertion of Campaign variables](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) on most dialog fields, and to the flexible [Segmentation component](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
-  * provides optimal email-friendly HTML output, thanks to the [CSS styles inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), the [HTML attribute inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), and the [HTML sanitizer](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
-  * allows the creation of the emails anywhere.
+* Further reduce page load time for visitors by optimizing image sizes settings in templates. Find more information for the image component at [Core WCM Component](https://github.com/adobe/aem-core-wcm-components)
 
 ### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
 
@@ -79,8 +74,10 @@ Have a look at the September 2022 Release Overview video for a summary of the fe
 
 ### What is New {#what-is-new-cif}
 
-* Association of AEM pages to products and categories via AEM page properties plus overview in product cockpit
- ![product cockpit page association](/help/assets/CIF/product_cockpit_page_association.png)
+* Authors can dynamically enrich product lists with Experience Fragments (Example: Place banner between product listings)
+* List component supports associated product / category pages to dynamically show related pages
+* Support for Peregrine 12.5 components
+* Support for client-side price loading in product teaser and carousel
 
 ## Cloud Manager {#cloud-manager}
 
