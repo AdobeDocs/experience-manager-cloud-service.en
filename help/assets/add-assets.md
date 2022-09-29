@@ -133,7 +133,7 @@ To upload larger number of files, use one of the following approaches. Also, see
 
 ### Asset Bulk Import tool {#asset-bulk-ingestor}
 
-The tool is provided only to the administrators' group to use for large-scale ingestion of assets from Azure or S3 datastores. Shared Access Signature (SAS) is used as a Unique Resource Identifier (URI) in the Asset bulk import tool. It provides restricted access rights to the Azure database resources. Additionally, the SAS key can be shared with the users whom you want to provide access to AEM repository. See a video walk-through of the configuration and ingestion.
+The tool is provided only to the administrators' group to use for large-scale ingestion of assets from Azure or S3 datastores. See a video walk-through of the configuration and ingestion.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
@@ -166,10 +166,7 @@ To configure the Bulk Import tool, follow these steps:
 
 1. Provide the values to create a connection with the data source. For example, if you select **Azure Blob Storage** as the data source, specify the values for Azure storage account, Azure blob container, and Azure access key.
 
-1. Select the required authentication mode from the drop-down. Choose **Azure SAS Token** when the user does not have access to the Azure database and provide SAS token in the next input field. Otherwise, select **Azure Access Key** and provide the Access key. Moreover, it is important to provide permissions to access the AEM Assets repository.
-
-   ![Azure SAS Token](assets/Azure-SAS-Token.png)
-   ![Azure Access Key](assets/Azure-Access-Key.png)
+1. Select the required authentication mode from the drop-down. **Azure Access Key** gives a user complete access to the Azure database, whereas **Azure SAS Token** allows the administrator to set up permissions when they are provisioning the token. The administrator can set the expiration of SAS token to use the Azure database account.
 
 1. Provide the name of the root folder that contains assets in the data source in the **[!UICONTROL Source Folder]** field.
 
