@@ -1,6 +1,8 @@
 ---
 title: Content Fragments - Configuration Browser
-description: Learn how to enable specific Content Fragment functionality in the Configuration Browser.
+description: Learn how to enable Content Fragment and GraphQL functionality in the Configuration Browser to leverage AEM headless delivery features.
+feature: Content Fragments
+role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
 ---
 # Content Fragments - Configuration Browser{#content-fragments-configuration-browser}
