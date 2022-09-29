@@ -166,7 +166,7 @@ To configure the Bulk Import tool, follow these steps:
 
 1. Provide the values to create a connection with the data source. For example, if you select **Azure Blob Storage** as the data source, specify the values for Azure storage account, Azure blob container, and Azure access key.
 
-1. Select the required authentication mode from the drop-down. **Azure Access Key** gives a user complete access to the Azure database, whereas **Azure SAS Token** allows the administrator to set up permissions when they are provisioning the token. The administrator can set the expiration of SAS token to use the Azure database account.
+1. Select the required authentication mode from the drop-down list. **Azure Access Key** gives a user complete access to the Azure database, whereas **Azure SAS Token** allows the administrator to set up permissions when they are provisioning the token. The administrator can set the expiration of SAS token to use the Azure database account.
 
 1. Provide the name of the root folder that contains assets in the data source in the **[!UICONTROL Source Folder]** field.
 
