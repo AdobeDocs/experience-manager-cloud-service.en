@@ -331,7 +331,7 @@ In order to validate that traffic is indeed outgoing on the expected dedicated I
 ## Legacy Dedicated Egress Address Customers {#legacy-dedicated-egress-address-customers}
 
 If you have been provisioned with a dedicated egress IP before 2021.09.30, your dedicated egress IP feature only supports HTTP and HTTPS ports.
-This includes HTTP/1.1, and HTTP/2 when encrypted.
+This includes HTTP/1.1, and HTTP/2 when encrypted. Additionally, one dedicated egress endpoint can talk to any target only over HTTP/HTTPS on ports 80/443 respectively.
 
 ## Virtual Private Network (VPN) {#vpn}
 
