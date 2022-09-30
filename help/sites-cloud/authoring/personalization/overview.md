@@ -3,6 +3,7 @@ title: Personalization and Content Targeting
 description: Learn how you can create personalized, targeted content with AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 ---
+
 # Personalization and Content Targeting {#personalization-and-content-targeting}
 
 Personalization of the web content that you provide to customers, means tailoring those experiences to their interests and needs. You can do this based on the information that you have about them; for example, shopping summary, age, gender, geography, among others. 
@@ -23,7 +24,7 @@ The following overview presents some the terms used for personalization in AEM a
 
 An experience is content that you want to be shown to your end-users.
 
-## Personalized Experience {#personalized-experience}
+## Personalized Experience {#personalized-experience}
 
 A personalized experience is an experience that is shown to a limited audience. The audience is defined by you, and the content is only shown when the information known about the current end-user corresponds to that audience definition. 
 
@@ -48,7 +49,7 @@ Audiences are based on marketing segments. They are created either in AEM or Ado
 
 Within AEM ContextHub, an audience is defined as a segment, based on rules (conditions). These are then resolved to render the required content.
 
-## Activity {#activity}
+## Activity {#activity}
 
 An activity:
 
@@ -94,7 +95,7 @@ For a personalization example, a Title, Image, Description, and Call To Action B
 
 The targeting engine is the mechanism that resolves the logic for targeted content. [Activities](/help/sites-cloud/authoring/personalization/activities.md) are configured to use one of two targeting engines that are available: AEM and Adobe Target.
 
-The [Targeting Engine](#targeting-engine) is the platform or mechanism that decides which personalization system to use. 
+The Targeting Engine is the platform or mechanism that decides which personalization system to use. 
 
 Currently AEM can use:
 
