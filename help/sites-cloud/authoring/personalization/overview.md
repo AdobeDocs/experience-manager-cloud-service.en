@@ -32,9 +32,6 @@ When creating pages you define multiple experiences, with each experience resolv
 
 ### Offer {#offer}
 
-<!-- not clear - needs clarification -->
-<!-- is an offer a personalized experience, or an activity? -->
-
 An offer is a personalized experience, often available for a limited time period. 
 
 For example, a page from a sample web site can use offers as the teaser image that appears at the top of the page. A Person Over 30 and a Person under 30 will see different offers as the experience teaser.
@@ -56,8 +53,6 @@ An activity:
 * defines the mapping of a specific audience (segment) with a specific experience 
 * defines the period of time for which the targeting is applied
 * identifies the [targeting engine](#targeting-engine) that your pages use
-
-<!-- an example for each of the two types would be good -->
 
 The activity can be either a personalization activity, or an A/B Test activity (in the case of the AEM and Adobe Target personalization workflow).
 
