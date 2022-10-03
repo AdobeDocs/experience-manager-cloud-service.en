@@ -289,6 +289,10 @@ The values for secrets are read from files. Therefore for each placeholder using
 
 For example if `$[secret:server_password]` is used, a text file named **server_password** must be created. All these secret files must be stored in the same directory and the framework property `org.apache.felix.configadmin.plugin.interpolation.secretsdir` must be configured with that local directory.
 
+>[!CAUTION]
+>
+>The text file must be named **server_password** - without a file extension.
+
 The `org.apache.felix.configadmin.plugin.interpolation.secretsdir` is an Sling framework property; so this property is not set in the felix console (/system/console), but it is set in the sling.properties file that is used when the system boots. This file can be found in the /conf subdir of the extracted Jar/install folder (crx-quickstart/conf).
 
 example: add this line to the end of the 'crx-quickstart/conf/sling.properties'-file to configure 'crx-quickstart/secretsdir' as secret folder:
