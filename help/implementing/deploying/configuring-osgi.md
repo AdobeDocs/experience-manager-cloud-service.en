@@ -291,7 +291,9 @@ For example if `$[secret:server_password]` is used, a text file named **server_p
 
 >[!CAUTION]
 >
->The text file must be named **server_password** - without a file extension.
+>File extensions are not allowed for the text file.
+>
+>So for the above example, the text file must be named **server_password** - without a file extension.
 
 The `org.apache.felix.configadmin.plugin.interpolation.secretsdir` is an Sling framework property; so this property is not set in the felix console (/system/console), but it is set in the sling.properties file that is used when the system boots. This file can be found in the /conf subdir of the extracted Jar/install folder (crx-quickstart/conf).
 
