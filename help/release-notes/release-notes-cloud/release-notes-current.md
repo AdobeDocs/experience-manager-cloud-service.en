@@ -33,6 +33,8 @@ Have a look at the September 2022 Release Overview video for a summary of the fe
 
 ### New features in [!DNL Sites] {#sites-features}
  
+* The [Personalization Tab for Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) allows segmentation specification capabilities to the Experience Fragment Editor as well as the flexibility to create nested Experience Fragments whereby headers and footers variations can be created for multiple segments. Prior to the launch of this feature, personalization offered by AEM is only available for site pages, but not for Experience Fragments
+
 * The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now enables users to efficiently manage translated content fragments. A 1-click access has been provided to view all the language copies as well. Users are also able to filter the table view by the locale of their interest.
 
 ![Content Fragments Languages](/help/release-notes/assets/cfconsole-languages.png)
