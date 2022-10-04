@@ -65,10 +65,10 @@ Have a look at the September 2022 Release Overview video for a summary of the fe
 
 ### What is New {#what-is-new-cif}
 
-* Authors can dynamically enrich product lists with Experience Fragments (Example: Place banner between product listings)
-* List component supports associated product / category pages to dynamically show related pages
-* Support for Peregrine 12.5 components
-* Support for client-side price loading in product teaser and carousel
+* Authors can dynamically enrich product lists with Experience Fragments (example: place banner between product listings).
+* The list component now supports associated product / category pages to dynamically show related pages.
+* Support for Peregrine 12.5 components was added.
+* Support for client-side price loading in product teaser and carousel was added.
 
 ## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
