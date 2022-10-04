@@ -41,17 +41,6 @@ Have a look at the September 2022 Release Overview video for a summary of the fe
 
 * Further reduce page load time for visitors by optimizing image sizes settings in templates. Find more information for the image component at [Core WCM Component](https://github.com/adobe/aem-core-wcm-components)
 
-### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
-
-## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
-
-### What is New {#what-is-new-foundation}
-
-* AEM as a Cloud Service (Author Service) is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Additionally, with this integration the type of Cloud Service environment (Production, Stage, or Development) will be displayed as a label on the top header to easily identify the environment that you are currently logged into. Refer to AEM as a [Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
-
-* As previously mentioned in release notes, using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is deprecated and will be enforced in the coming days. Please refer to [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) for the suggested approaches for replicating these large content packages.
-
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#features-assets}
@@ -80,6 +69,14 @@ Have a look at the September 2022 Release Overview video for a summary of the fe
 * List component supports associated product / category pages to dynamically show related pages
 * Support for Peregrine 12.5 components
 * Support for client-side price loading in product teaser and carousel
+
+## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
+
+### What is New {#what-is-new-foundation}
+
+* AEM as a Cloud Service (Author Service) is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Additionally, with this integration the type of Cloud Service environment (Production, Stage, or Development) will be displayed as a label on the top header to easily identify the environment that you are currently logged into. Refer to AEM as a [Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
+
+* As previously mentioned in release notes, using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is deprecated and will be enforced in the coming days. Please refer to [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) for the suggested approaches for replicating these large content packages.
 
 ## Cloud Manager {#cloud-manager}
 
