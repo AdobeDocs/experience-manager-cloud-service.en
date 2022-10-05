@@ -1,6 +1,8 @@
 ---
 title: Markdown
-description: Understand how the Content Fragment editor uses markdown syntax to allow you to easily create content for both page authoring and headless delivery.
+description: Understand how the Content Fragment editor uses markdown syntax to allow you to easily create content, for both page authoring and headless delivery.
+feature: Content Fragments
+role: User
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
 ---
 # Markdown {#markdown}
