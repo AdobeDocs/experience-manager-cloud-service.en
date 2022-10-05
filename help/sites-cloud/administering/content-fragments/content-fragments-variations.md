@@ -1,6 +1,8 @@
 ---
 title: Variations - Authoring Fragment Content
 description: Understand how variations allow you to author content for the fragment, then create variations of that content according to purpose. This provides added flexibility for both headless delivery and page authoring.
+feature: Content Fragments
+role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
 ---
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
@@ -371,6 +373,12 @@ They will be added as a reference, in your current location in your fragment.
    >* **Markdown**: the reference will remain.
 
 ## Managing Variations {#managing-variations}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_contentfragments_variations"
+>title="Managing variations"
+>abstract="Learn how make variations of content for use with specific channels."
+>additional-url="https://video.tv.adobe.com/v/333295" text="Content Fragment Variations"
 
 ### Creating a Variation {#creating-a-variation}
 
