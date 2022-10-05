@@ -26,5 +26,4 @@ The release date for Cloud Manager release 2022.9.0 in AEM as a Cloud Service is
 
 * A situation was fixed where users with uppercase letters in their email address could not be added to a New Relic sub-account in Cloud Manager.
 * The Screens solution is now displayed if there are multiple solutions in the program.
-* The **Run** menu option is now disabled in the pipeline menu along with an explanatory tooltip, if the associated environment no longer exits.
 * A situation was fixed where the front-end pipeline execution would not start when the environment had the status UPDATING.
