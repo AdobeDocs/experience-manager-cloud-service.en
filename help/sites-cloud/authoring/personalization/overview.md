@@ -105,29 +105,32 @@ Currently AEM can use:
 
 ### AEM ContextHub {#aem-contexthub}
 
-AEM provides the built-in targeting engine ContextHub that processes page requests and determines the content to display. When using the AEM targeting engine, you are limited to using segments that are created in AEM for defining the audiences of your experiences.
+AEM provides the built-in targeting engine [ContextHub](/help/implementing/developing/personalization/contexthub.md) that processes page requests and determines the content to display. When using the AEM targeting engine, you are limited to using segments that are created in AEM for defining the audiences of your experiences.
 
 ### Adobe Target {#adobe-target}
 
-The Adobe Target targeting engine causes information gathered from page visits to be tracked in Adobe Target.
+The [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) targeting engine causes information gathered from page visits to be tracked in Adobe Target.
 
 * When using this targeting engine, you use the segments that you import from Adobe Target to define the audiences for your experiences.
 * Activities that use the Adobe Target engine are [synchronized to Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
-You can use this engine when you have [integrated with Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+You can use this engine when you have [integrated with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ## How to set up your personalized content {#how-to-setup-personalized-content}
 
 There are various steps and definitions required for delivering your personalized content:
 
-1. Integrate AEM with your Targeting Engine.
+1. Setup your Targeting Engine by either:
+
+   1. Configuring [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
+   1. Integrating with [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
 1. Configure the audiences.
 
-   1. Depending on your targeting engine, define the audience or segment, together with the rules.
+   1. Depending on your targeting engine, define the [Target audience](https://experienceleague.adobe.com/docs/target/using/audiences/target.html) or [ContextHub segment](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md), together with the rules.
 
-1. Create your Brand and Activities.
+1. Create your [Brand and Activities](/help/sites-cloud/authoring/personalization/activities.md).
 
 1. Author the selection of experiences that you want shown to the various audiences.
 
-1. Personalize these experiences, by targeting them to the specific audiences (segments).
+1. Personalize these experiences, by [targeting](/help/sites-cloud/authoring/personalization/targeted-content.md) them to the specific audiences (segments).
