@@ -9,7 +9,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="CDN in AEM as a Cloud Service"
->abstract="AEM as Cloud Service is shipped with a built-in CDN. It’s main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications."
+>abstract="AEM as Cloud Service is shipped with a built-in CDN. It's main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications."
 
 AEM as Cloud Service is shipped with a built-in CDN. Its main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications.
 
@@ -19,7 +19,7 @@ Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague
 
 ## AEM Managed CDN  {#aem-managed-cdn}
 
-Follow the sections below to use Cloud Manager self-service UI to prepare for content delivery by using AEM’s out-of-the-box CDN:
+Follow the sections below to use Cloud Manager self-service UI to prepare for content delivery by using AEM's out-of-the-box CDN:
 
 1. [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -32,7 +32,7 @@ Refer to [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lis
 
 >[!CAUTION]
 >
->Only requests from the allowed IPs will be served by AEM’s managed CDN. If you point your own CDN to the AEM managed CDN, then make sure the IPs of your CDN are included in the allowlist.
+>Only requests from the allowed IPs will be served by AEM's managed CDN. If you point your own CDN to the AEM managed CDN, then make sure the IPs of your CDN are included in the allowlist.
 
 ## Customer CDN points to AEM Managed CDN {#point-to-point-CDN}
 
@@ -55,7 +55,7 @@ If a customer must use its existing CDN, they may manage it and point it to the 
 
 Configuration instructions:
 
-1. Point your CDN to the Adobe CDN’s ingress as its origin domain. For example, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Point your CDN to the Adobe CDN's ingress as its origin domain. For example, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. SNI must also be set to the Adobe CDN's ingress.
 1. Set the Host header to the origin domain. For example: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Set the `X-Forwarded-Host` header with the domain name so AEM can determine the host header. For example: `X-Forwarded-Host:example.com`.
@@ -116,6 +116,19 @@ Presented below are several configuration examples from a number of leading CDN 
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+
+## Content Disposition {#content-disposition}
+
+For the publish tier, the default for serving blobs is as an attachment. This can overridden using the standard [content disposition header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) in the dispatcher.
+
+Below is an example of how the configuration should look like:
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
 
 ## Geolocation Headers {#geo-headers}
 
