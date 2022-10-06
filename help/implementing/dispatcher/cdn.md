@@ -119,7 +119,7 @@ Presented below are several configuration examples from a number of leading CDN 
 
 ## Content Disposition {#content-disposition}
 
-For the publish tier, the default for serving blobs is as an attachment. This can overridden using the standard [content disposition header]( https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) in the dispatcher.
+For the publish tier, the default for serving blobs is as an attachment. This can overridden using the standard [content disposition header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) in the dispatcher.
 
 Below is an example of how the configuration should look like:
 
