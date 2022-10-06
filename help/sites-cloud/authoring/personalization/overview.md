@@ -109,7 +109,7 @@ AEM provides the built-in targeting engine [ContextHub](/help/implementing/devel
 
 ### Adobe Target {#adobe-target}
 
-The [Adobe Target](/help/sites-cloud/integrating/adobe-target.md) targeting engine causes information gathered from page visits to be tracked in Adobe Target.
+The [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) targeting engine causes information gathered from page visits to be tracked in Adobe Target.
 
 * When using this targeting engine, you use the segments that you import from Adobe Target to define the audiences for your experiences.
 * Activities that use the Adobe Target engine are [synchronized to Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
