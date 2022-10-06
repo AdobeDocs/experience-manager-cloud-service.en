@@ -32,7 +32,7 @@ A local development environment is required to complete this demo. This includes
 
 You also need access to [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html) and permissions to create the schema, dataset, and datastreams for data collection, for more information see [Permission management](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html).
 
-## AEM Commerce as a Cloud Service setup
+## AEM Commerce as a Cloud Service setup {#aem-setup}
 
 To have a working __AEM Commerce as a Cloud Service__ local environment with the necessary code and config, follow the below steps.
 
@@ -332,7 +332,7 @@ To initialize the React based Peregrine and CIF core components create the requi
 
 To make sure the above package installation, code, and config changes are correct go ahead and re-build, deploy the updated AEM Commerce project using the Maven command `$ mvn clean install -PautoInstallSinglePackage`.
 
-## Experience Platform setup
+## Experience Platform setup {#aep-setup}
 
 To receive and store the event data coming from the AEM Commerce pages such as category, and product, follow the below steps.
 
@@ -427,7 +427,7 @@ After completing the above Experience Platform setup, you should have `datastrea
 -   Build and deploy the updated AEM Commerce project
 
 
-## Trigger `addToCart` event and verify data collection
+## Trigger `addToCart` event and verify data collection {#event-trigger-verify}
 
 The above steps complete the AEM Commerce and Experience Platform setup. You are ready to trigger an `addToCart` event and verify data collection using the Experience Platform debugger and dataset __Metrics and graphs__ toggle in the product UI. 
 
@@ -464,7 +464,7 @@ The [Experience Platform Connector](https://github.com/adobe/aem-core-cif-compon
 The PWA Studio project also contains a component library called [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) for adding logic to visual components. The [Peregrin library](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) also provides the custom React hooks that are used by [Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) to integrate with Experience Platform seamlessly. 
 
 
-## Supported Events
+## Supported Events {#supported-events}
 
 As of now, following events are supported
 
