@@ -1,6 +1,8 @@
 ---
 title: Create the Content Structure for Your App
 description: Learn how to create the structure which serves as the foundation for all of your headless content using AEM's Content Fragment Models.
+hidefromtoc: yes
+index: no
 ---
 
 # Create the Content Structure for Your App {#content-structure}

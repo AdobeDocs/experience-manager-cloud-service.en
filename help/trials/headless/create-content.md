@@ -1,11 +1,13 @@
 ---
-title: Create New Content
-description: Learn how to create the headless content using AEM's Content Fragments.
+title: Create Headless Content
+description: Learn how to create headless content using AEM's Content Fragments.
+hidefromtoc: yes
+index: no
 ---
 
-# Create New Content {#create-content}
+# Create Headless Content {#create-content}
 
-Learn how to create the headless content using AEM's Content Fragments.
+Learn how to create headless content using AEM's Content Fragments.
 
 ## Create Headless Content as Content Fragments {#create-headless-content}
 
