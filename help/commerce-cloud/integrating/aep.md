@@ -350,7 +350,7 @@ To define the structure for commerce event data, you must create an Experience D
 
     ![AEP Create Schema](../assets/aep-integration/AEP-Schema-EventSchema-1.png)
 
--   Name your schema using __Schema Properties > Display name__ field, and add Field group by using __Composition > Field groups > Add__ button.
+1. Name your schema using the __Schema Properties > Display name__ field and add Field groups by using the  __Composition > Field groups > Add__ button.
 
     ![AEP Schema Definition](../assets/aep-integration/AEP-Schema-Definition.png)
 
