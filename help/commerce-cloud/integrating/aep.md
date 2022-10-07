@@ -408,7 +408,7 @@ Complete the following steps to create a Datastream in the Experience Platform.
 
     ![AEP Datastreams Add Service](../assets/aep-integration/AEP-Datastream-Add-Service.png)    
 
--   Under, the __Service__ field select the __Adobe Experience Platform__ option, and under __Event Dataset__ field select the dataset name from the previous step and click __Save__.
+1. Under the __Service__ field, select the __Adobe Experience Platform__ option. Under __Event Dataset__ field, select the dataset name from the previous step and click __Save__.
 
     ![AEP Datastreams Add Service Details](../assets/aep-integration/AEP-Datastream-Add-Service-Define.png)    
 
