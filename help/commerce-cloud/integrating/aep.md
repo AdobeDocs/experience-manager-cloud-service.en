@@ -30,7 +30,7 @@ The following steps show how to send the `addToCart` event data from AEM-rendere
 
 You must use a local development environment to complete this demo. This includes a running instance of AEM that is configured and connected to an Adobe Commerce instance. Review the requirements and steps for [setting up local development with AEM as a Cloud Service SDK](../develop.md).
 
-You also need access to [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html) and permissions to create the schema, dataset, and datastreams for data collection, for more information see [Permission management](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html).
+You also need access to [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html) and permissions to create the schema, dataset, and datastreams for data collection. For more information, see [Permission management](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html).
 
 ## AEM Commerce as a Cloud Service setup {#aem-setup}
 
