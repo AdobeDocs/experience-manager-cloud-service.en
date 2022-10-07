@@ -369,7 +369,7 @@ To store the event data, you must create a Dataset that conforms to the schema d
 
 1. In the browser, navigate to the __Adobe Experience Platform__ product Home Screen. For example, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
--   Locate the __Datasets__ menu in the left navigation section, and click __Create dataset__ button from the top-right section.
+1. Locate the __Datasets__ menu in the left navigation section and click the __Create dataset__ button from the top-right section.
 
     ![AEP Create Datasets](../assets/aep-integration/AEP-Datasets-Create.png)
 
