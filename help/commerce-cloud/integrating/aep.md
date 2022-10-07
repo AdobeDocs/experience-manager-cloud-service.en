@@ -51,7 +51,7 @@ Follow the [AEM Project Archetype](https://experienceleague.adobe.com/docs/exper
 ![AEM Commerce Project](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-Build and deploy the newly created AEM Commerce project to the local AEM SDK by running the below command from the project's root directory.
+Build and deploy the newly created AEM Commerce project to the local AEM SDK by running the following command from the project's root directory.
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
