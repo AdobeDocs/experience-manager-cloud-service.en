@@ -18,7 +18,7 @@ The [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif
 
 The [CIF Core Components](https://github.com/adobe/aem-core-cif-components/tree/master/react-components) project provides an [Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector), this JavaScript library collects storefront events and sends commerce event data to the Experience Platform. This commerce event data is used in other Adobe Experience Cloud products, such as Adobe Analytics and Adobe Target to build a 360-degree profile that covers a customer journey. Thus, by connecting Commerce data to other products in the Adobe Experience Cloud, you can perform tasks like analyzing user behavior on your site, performing AB testing, and creating personalized campaigns.
 
-Learn more about [Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) a suite of technologies that allow you to collect customer experience data from client-side sources.
+Learn more about the [Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) suite of technologies that allow you to collect customer experience data from client-side sources.
 
 ## Send `addToCart` event data to Experience Platform {#send-addtocart-to-aep}
 
