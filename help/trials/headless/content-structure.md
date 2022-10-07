@@ -19,7 +19,7 @@ You start on the Content Fragment Models console. The Content Fragment console c
 
 ![The Content Fragment Model console](assets/step-1.png)
 
-If you wish to navigate here yourself at a later point, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here you choose the **Tools** tab and then **General** -&gt; **Content Fragment Models**.
+If you wish to navigate here yourself at a later point, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here, you choose the **Tools** tab and then **General** -&gt; **Content Fragment Models**.
 
 >[!TIP]
 >
@@ -27,13 +27,13 @@ If you wish to navigate here yourself at a later point, it is found using the Ad
  
 ## Step 2 - Create a Model {#create-model}
 
-In the Content Fragment Model console, click the **Create** button at the top-right of the screen to begin creating a new Content Fragment model.
+In the Content Fragment Model console, click the **Create** button at the top-right of the screen to begin creating a Content Fragment model.
 
 ![Create Content Fragment Model button](assets/step-2.png)
 
 ## Step 3 - Describe the Model {#describe-model}
 
-The Create Model wizard starts, which guides you through creating a new Content Fragment model. 
+The Create Model wizard starts, which guides you through creating a Content Fragment model. 
 
 ![Content Fragment Model wizard](assets/step-3.png)
 
@@ -46,7 +46,7 @@ You can also choose to add a longer **Description** to the model as well as **Ta
 
 >[!TIP]
 >
->If you are interested in how tags can organize your content see the [Additional Resources section](#additional-resources) of this document for more information on tagging in AEM.
+>If you are interested in how tags can organize your content, see the [Additional Resources section](#additional-resources) of this document for more information on tagging in AEM.
 
 ## Step 4 - Create Your Model {#click-create}
 
@@ -68,7 +68,7 @@ The Content Fragment Model is essentially a schema for your Content Fragments. I
 
 ![The Content Fragment Model Editor](assets/step-6.png)
 
-Drag a field from the **Data Types** panel at the right of the screen and drop it onto your Content Fragment Model. There are multiple data types to choose from such as a single line text, multi-line text, number, and references to other fragments.
+Drag a field from the **Data Types** panel at the right of the screen and drop it onto your Content Fragment Model. There are multiple data types to choose from such as a single-line text, multi-line text, number, and references to other fragments.
 
 >[!TIP]
 >
@@ -96,7 +96,7 @@ This saves the model and returns you to the Content Fragment Model Console where
 
 ## Step 9 - You've Learned to Create a Content Fragment Model {#conclusion}
 
-In this module you learned how to create a Content Fragment Model to represent the structure of your headless data. First you created the model and then populated it with data types and their related properties, thereby defining a schema for your headless content.
+In this module, you learned how to create a Content Fragment Model to represent the structure of your headless data. First you created the model and then populated it with data types and their related properties, thereby defining a schema for your headless content.
 
 ![Modeul complete](assets/step-9.png)
 
