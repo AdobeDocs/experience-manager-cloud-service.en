@@ -433,7 +433,7 @@ The above steps complete the AEM Commerce and Experience Platform setup. You can
 
 To trigger the event, you can use AEM author or the publish service from your local setup. For this example, use AEM author by logging in to your account.
 
--   From Sites screen, select the __My Demo StoreFront > us > en__ page and click __Edit__ in top action bar
+1. From Sites screen, select the __My Demo StoreFront > us > en__ page and click __Edit__ in top action bar.
 
 -   From the top action bar click __View as Published__, then click on any preferred category from the storefront's navigation.
 
