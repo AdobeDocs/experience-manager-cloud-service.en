@@ -74,7 +74,7 @@ Drag a field from the **Data Types** panel at the right of the screen and drop i
 >
 >If you would like more information about the data types available to you, see the [Additional Resources section](#additional-resources) of this document for the detailed Content Fragment Models documentation.
 
-## Step 7 - Define Data Properties {data-properties}
+## Step 7 - Define Data Properties {#data-properties}
 
 Once a data type is placed, the **Data Types** column automatically changed to the **Properties** tab, where you can define the details of the data type you just placed.
 
