@@ -149,6 +149,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Other Onboarding Concepts {#concepts}
     + [Introduction to Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
     + [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md)
++ AEM Trials {#trials}
+  + Headless Trials {#headless}
+    + [Create the Content Structure for Your App](/help/trials/headless/content-structure.md)
+    + [Create Headless Content](/help/trials/headless/create-content.md)
 + AEM as a Cloud Service Migration Journey {#migration-journey}
   + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/getting-started.md)
   + [Readiness Phase](/help/journey-migration/readiness.md)
