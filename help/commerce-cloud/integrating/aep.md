@@ -166,7 +166,7 @@ For [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-con
 
 ### Initialize Peregrine and CIF core components
 
-To initialize the React based Peregrine and CIF core components create the required configuration and JavaScript files.
+To initialize the React-based Peregrine and CIF core components, create the required configuration and JavaScript files.
 
 -   Navigate to `ui.frontend` module, and create a folder `src/main/webpack/components/commerce/App`
 
