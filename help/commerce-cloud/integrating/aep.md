@@ -224,7 +224,7 @@ To initialize the React-based Peregrine and CIF core components, create the requ
     >
     >While you might already be familiar with the [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) file from __AEM Guides - CIF Venia Project__, there are a few changes you need to make to this file. First, review any __TODO__ comments. Then, inside the `eventsCollector` property, find the `eventsCollector > aed` object and update the `orgId` and `datastreamId` properties to the correct values. [Learn more](./aep.md#add-aep-values-to-aem).
 
--   Next, create `App.js` file with the below content. This file resembles to a typical React application-starting point file and contains React and custom hooks, React Context usage to facilitate the Experience Platform integration. 
+1. Create an `App.js` file with the following content. This file resembles a typical React application-starting point file and contains React and custom hooks and React Context usage to facilitate the Experience Platform integration. 
 
     ```javascript
 
