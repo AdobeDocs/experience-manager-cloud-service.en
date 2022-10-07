@@ -451,7 +451,7 @@ To trigger the event, you can use AEM author or the publish service from your lo
 
 
 
--   Within Experience Platform product UI, navigate to the __Datasets > My Demo StoreFront__, under the __Dataset activity__ tab if the __Metrics and graphs__ toggle is enabled, the event-data stats are seen.
+1. Within Experience Platform product UI, navigate to the __Datasets > My Demo StoreFront__, under the __Dataset activity__ tab. If the __Metrics and graphs__ toggle is enabled, the event-data stats are displayed.
 
     ![Experience Platform Dataset Data stats](../assets/aep-integration/AEP-Dataset-AddToCart-EventData.png)
 
