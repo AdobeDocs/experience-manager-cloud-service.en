@@ -87,7 +87,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 As part of the Maven build process, the npm clean install (using `npm ci`) is triggered. This also requires the `--force` argument. 
 
-Navigate to the project's root POM file `pom.xml` and locate the `<id>npm ci</id>` execution block, and update it to look like the below.
+Navigate to the project's root POM file `pom.xml` and locate the `<id>npm ci</id>` execution block. Update the block to look like the following:
 
 ```xml
 <execution>
