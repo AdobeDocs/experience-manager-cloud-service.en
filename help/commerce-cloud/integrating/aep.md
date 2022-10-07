@@ -424,7 +424,7 @@ After completing the above Experience Platform setup, you should have `datastrea
 
 1. In the AEM Commerce project's `ui.frontend` module, update the `config.js` file and specifically the `eventsCollector > aep` object properties.
 
--   Build and deploy the updated AEM Commerce project
+1. Build and deploy the updated AEM Commerce project
 
 
 ## Trigger `addToCart` event and verify data collection {#event-trigger-verify}
