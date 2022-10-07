@@ -396,7 +396,7 @@ Complete the following steps to create a Datastream in the Experience Platform.
 
 1. In the browser, navigate to the __Adobe Experience Platform__ product Home Screen. For example, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
--   Locate the __Datastreams__ menu in the left navigation section, and click the __New Datastream__ button from the top-right section.
+1. Locate the __Datastreams__ menu in the left navigation section and click the __New Datastream__ button from the top-right section.
 
     ![AEP Create Datastreams](../assets/aep-integration/AEP-Datastream-Create.png)
 
