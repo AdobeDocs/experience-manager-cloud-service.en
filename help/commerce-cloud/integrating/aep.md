@@ -46,7 +46,7 @@ Follow the [AEM Project Archetype](https://experienceleague.adobe.com/docs/exper
 
 >[!TIP]
 >
->In, the below example this AEM Commerce project is named as `My Demo Storefront` or you can pick the project name of your choice.
+>In the following example, the AEM Commerce project is named: `My Demo Storefront`, however, you can choose your own project name.
 
 ![AEM Commerce Project](../assets/aep-integration/aem-project-with-commerce.png)
 
