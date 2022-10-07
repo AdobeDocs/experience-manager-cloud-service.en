@@ -338,7 +338,7 @@ To receive and store the event data coming from the AEM Commerce pages such as c
 
 >[!AVAILABILITY]
 >
->Make sure you are part of the correct __Product Profiles__ under __Adobe Experience Platform__ and __Adobe Experience Platform Data Collection__. If needed work with your System administrator to create, update or assign __Product Profiles__ under the [Admin Console](https://adminconsole.adobe.com/).
+>Make sure you are part of the correct __Product Profiles__ under __Adobe Experience Platform__ and __Adobe Experience Platform Data Collection__. If needed, work with your system administrator to create, update, or assign __Product Profiles__ under the [Admin Console](https://adminconsole.adobe.com/).
 
 ### Create Schema with Commerce field group
 
