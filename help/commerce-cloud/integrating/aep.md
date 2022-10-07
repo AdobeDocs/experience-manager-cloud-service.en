@@ -346,7 +346,7 @@ To define the structure for commerce event data, you must create an Experience D
 
 1. In the browser, navigate to the __Adobe Experience Platform__ product Home Screen. For example, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
--   Locate the __Schemas__ menu in the left navigation section, click __Create Schema__ button from the top-right section, and select __XDM ExperienceEvent__
+1. Locate the __Schemas__ menu in the left navigation section, click the __Create Schema__ button from the top-right section, and select __XDM ExperienceEvent__.
 
     ![AEP Create Schema](../assets/aep-integration/AEP-Schema-EventSchema-1.png)
 
