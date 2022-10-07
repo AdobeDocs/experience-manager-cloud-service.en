@@ -170,7 +170,7 @@ To initialize the React-based Peregrine and CIF core components, create the requ
 
 1. Navigate to the `ui.frontend` module and create the following folder: `src/main/webpack/components/commerce/App`
 
--   Create `config.js` file with the below content
+1. Create a `config.js` file with the following content:
 
     ```javascript
 
