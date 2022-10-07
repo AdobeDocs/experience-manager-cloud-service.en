@@ -435,7 +435,7 @@ To trigger the event, you can use AEM author or the publish service from your lo
 
 1. From Sites screen, select the __My Demo StoreFront > us > en__ page and click __Edit__ in top action bar.
 
--   From the top action bar click __View as Published__, then click on any preferred category from the storefront's navigation.
+1. From the top action bar, click __View as Published__, then click on any preferred category from the storefront's navigation.
 
 -   Click on any preferred product card, in the __Product Page__ then select __color, size__ to enable the __Add to Cart__ button. 
 
