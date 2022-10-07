@@ -429,7 +429,7 @@ After completing the above Experience Platform setup, you should have `datastrea
 
 ## Trigger `addToCart` event and verify data collection {#event-trigger-verify}
 
-The above steps complete the AEM Commerce and Experience Platform setup. You are ready to trigger an `addToCart` event and verify data collection using the Experience Platform debugger and dataset __Metrics and graphs__ toggle in the product UI. 
+The above steps complete the AEM Commerce and Experience Platform setup. You can now trigger an `addToCart` event and verify data collection using the Experience Platform debugger and dataset __Metrics and graphs__ toggle in the product UI.
 
 To trigger the event, that you can use AEM author or publish service from your local setup. To keep things simple for the demo, here Author service is used by logging-in.
 
