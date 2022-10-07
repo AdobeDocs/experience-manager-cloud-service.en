@@ -354,7 +354,7 @@ To define the structure for commerce event data, you must create an Experience D
 
     ![AEP Schema Definition](../assets/aep-integration/AEP-Schema-Definition.png)
 
--   In, __Add Field groups__ dialog, search for `Commerce`, select the __Commerce Details__ checkbox, and click __Add Field groups__.
+1. In the __Add Field groups__ dialog, search for `Commerce`, select the __Commerce Details__ checkbox, and click __Add Field groups__.
 
     ![AEP Schema Definition](../assets/aep-integration/AEP-Schema-Field-Group.png)
 
