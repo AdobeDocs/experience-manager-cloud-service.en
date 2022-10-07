@@ -344,7 +344,7 @@ To receive and store the event data coming from the AEM Commerce pages such as c
 
 To define the structure for commerce event data, you must create an Experience Data Model (XDM) schema. A schema is a set of rules that represent and validate the structure and format of data.
 
--   In the browser, navigate to the __Adobe Experience Platform__ product Home Screen(for example, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>)
+1. In the browser, navigate to the __Adobe Experience Platform__ product Home Screen. For example, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
 -   Locate the __Schemas__ menu in the left navigation section, click __Create Schema__ button from the top-right section, and select __XDM ExperienceEvent__
 
