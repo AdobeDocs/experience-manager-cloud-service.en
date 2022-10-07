@@ -15,7 +15,7 @@ To help you understand how this is done, this module of AEM Trials takes you thr
 
 You start on the Content Fragment Models console. The Content Fragment console can be thought of as your library of models. You use the console to create new models and manage exiting models.
 
-![The Content Fragment Model console]()
+![The Content Fragment Model console](assets/step-1.png)
 
 If you wish to navigate here yourself at a later point, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here you choose the **Tools** tab and then **General** -&gt; **Content Fragment Models**.
 
@@ -27,11 +27,15 @@ If you wish to navigate here yourself at a later point, it is found using the Ad
 
 In the Content Fragment Model console, click the **Create** button at the top-right of the screen to begin creating a new Content Fragment model.
 
-![Create Content Fragment Model button]()
+![Create Content Fragment Model button](assets/step-2.png)
 
 ## Step 3 - Describe the Model {#describe-model}
 
-The Create Model wizard starts, which guides you through creating a new Content Fragment model. Provide the mandatory information.
+The Create Model wizard starts, which guides you through creating a new Content Fragment model. 
+
+![Content Fragment Model wizard](assets/step-3.png)
+
+Provide the mandatory information.
 
 * **Model Title** - This is a brief description of the model, usually indicating its purpose
 * **Enable model** - This option must be checked to be able to create Content Fragments later based on this model.
@@ -46,13 +50,13 @@ You can also choose to add a longer **Description** to the model as well as **Ta
 
 Once the mandatory fields are populated, you click **Create** at the top-left to create the model. 
 
-![The Create button in the Content Fragment Model wizard]()
+![The Create button in the Content Fragment Model wizard](assets/step-4.png)
 
 ## Step 5 - Open the Model {#open-model}
 
 The **Success** dialog confirms that the model was created.
 
-![Success dialog for creating a new Content Fragment Model]()
+![Success dialog for creating a new Content Fragment Model](assets/step-5.png)
 
 Before you can use the model, you also need to define the structure of its data. Click **Open** in the dialog to continue defining the model.
 
@@ -60,11 +64,9 @@ Before you can use the model, you also need to define the structure of its data.
 
 The Content Fragment Model essentially is a schema for your Content Fragments. I.e. it defines what fields/data types the model contains. By clicking **Open** in the previous **Success** dialog, you are taken to the Content Fragment Editor, where you can define fields for the Content Fragment model using a drag-and-drop interface.
 
-![The Content Fragment Model Editor]()
+![The Content Fragment Model Editor](assets/step-6.png)
 
 Drag a field from the **Data Types** panel at the right of the screen and drop it onto your Content Fragment Model. There are multiple data types to choose from such as a single line text, multi-line text, number, and references to other fragments.
-
-![Field added to Content Fragment Model]()
 
 >[!TIP]
 >
@@ -74,7 +76,7 @@ Drag a field from the **Data Types** panel at the right of the screen and drop i
 
 Once placed, the **Data Types** column automatically changed to the **Properties** tab, where you can define the details of this new field.
 
-![The Properties tab for the data field]()
+![The Properties tab for the data field](assets/step-7.png)
 
 Properties of the model may include the name of the field, the type of field, the length of the field, if it is mandatory, etc.
 
@@ -84,11 +86,17 @@ Properties of the model may include the name of the field, the type of field, th
 
 ## Step 8 - Save the Content Fragment Model {#save-model}
 
-Once you have added all of the fields necessary for the Content Fragment Model, click **Save** at the top-right of the window. This saves the model and returns you to the Content Fragment Model Console where you can add more models are necessary.
+Once you have added all of the fields necessary for the Content Fragment Model, click **Save** at the top-right of the window.
+
+![Save button in the Content Fragment Model editor](assets/step-8.png)
+
+This saves the model and returns you to the Content Fragment Model Console where you can add more models are necessary.
 
 ## Step 9 - You've Learned to Create a Content Fragment Model {#conclusion}
 
 In this module you learned how to create a Content Fragment Model to represent the structure of your headless data. First you created the model and then populated it with data types and their related properties. This defines a schema for your headless content.
+
+![Modeul complete](assets/step-9.png)
 
 ## Next Steps {#next-steps}
 
