@@ -334,7 +334,7 @@ To make sure the above package installation, code, and config changes are correc
 
 ## Experience Platform setup {#aep-setup}
 
-To receive and store the event data coming from the AEM Commerce pages such as category, and product, follow the below steps.
+To receive and store the event data coming from the AEM Commerce pages such as category and product, complete the following steps:
 
 >[!AVAILABILITY]
 >
