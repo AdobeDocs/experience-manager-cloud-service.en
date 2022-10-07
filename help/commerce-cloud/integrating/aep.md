@@ -145,7 +145,7 @@ The [Apollo Client](https://www.apollographql.com/docs/react/) is used to manage
 For [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) to work effectively, you need a `possibleTypes.js` file. To generate this file, see [Generating possibleTypes automatically](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). Also, see the [PWA Studio reference implementation](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) and an example of a [`possibleTypes.js`](../assets/possibleTypes.js) file.
 
 
--   Navigate to `ui.frontend` module, and save the file as `./src/main/possibleTypes.js`
+1. Navigate to the `ui.frontend` module and save the file as `./src/main/possibleTypes.js`
 
 -   Update the `webpack.common.js` file's `DefinePlugin` section to replace required static variables during build time.
 
