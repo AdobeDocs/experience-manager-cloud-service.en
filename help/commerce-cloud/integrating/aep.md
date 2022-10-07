@@ -418,7 +418,7 @@ Complete the following steps to create a Datastream in the Experience Platform.
 
 ## Add datastream value into AEM Commerce configuration {#add-aep-values-to-aem}
 
-After completing the above Experience Platform setup, you should have `datastreamId` in the left rail of the Datastream details and `orgId` in the top-right corner __Profile Picture > Account info > User Information__ modal.
+After completing the above Experience Platform setup, you should have `datastreamId` in the left rail of the Datastream details and `orgId` in the top-right corner of the __Profile Picture > Account info > User Information__ modal.
 
 ![AEP Datastreams ID](../assets/aep-integration/AEP-Datastream-ID.png)    
 
