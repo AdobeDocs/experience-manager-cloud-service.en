@@ -22,7 +22,7 @@ Learn more about the [Experience Platform Data Collection](https://experiencelea
 
 ## Send `addToCart` event data to Experience Platform {#send-addtocart-to-aep}
 
-The following steps demonstrate how to send the `addToCart` event data from the AEM rendered product-pages to the Experience Platform using the CIF - Experience Platform Connector. By using the [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=en) browser extension you can test, and review the submitted data.
+The following steps show how to send the `addToCart` event data from AEM-rendered product pages to the Experience Platform using the CIF - Experience Platform Connector. By using the [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=en) browser extension you can test and review the submitted data.
 
 ![Review addToCart event data in Adobe Experience Platform Debugger](../assets/aep-integration/EventData-AEM-AEP.png)
 
