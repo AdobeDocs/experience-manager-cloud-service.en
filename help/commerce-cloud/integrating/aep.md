@@ -322,7 +322,7 @@ To initialize the React-based Peregrine and CIF core components, create the requ
 
     The `EventCollectorContext` exports the React Context which:
 
-    - loads the magento-storefront-events-sdk and magento-storefront-event-collector library,
+    - loads the commerce-events-sdk and commerce-events-collector library,
     - initializes them with a given configuration for Experience Platform and/or ACDS
     - subscribes to all events from Peregrine and forwards them to the events SDK
 
