@@ -365,7 +365,7 @@ To define the structure for commerce event data, you must create an Experience D
 
 ### Create Dataset
 
-To store the event data, we have to create a Dataset and this Dataset conforms to the schema definition. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). 
+To store the event data, you must create a Dataset that conforms to the schema definition. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). 
 
 -   In the browser, navigate to the __Adobe Experience Platform__ product Home Screen(for example, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>)
 
