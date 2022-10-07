@@ -475,7 +475,7 @@ As of now, following events are supported
 
 ## Additional Resources {#additional-resources}
 
-For further information, check below resources
+For more information, refer to the following resources:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [Experience Platform connector overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
