@@ -144,6 +144,20 @@ In `ui.apps.structure/pom.xml`, the `filters` section for this plugin needs to c
 
 Once the new index definition is added, the new application needs to be deployed via Cloud Manager. Upon deployment two jobs are started, responsible for adding (and merging if needed) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. The underlying repositories are being reindexed with the new index definitions, before the Blue-Green switch is taking place.
 
+>[!NOTE]
+>
+>In case you observe the following error in filevault validation <br>
+> ```[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"``` <br>
+>Then either of the following work arounds can be implemented - <br> <br>
+>1. Downgrade filevault to version 1.0.4 and add the following to the top level pom.xml:
+> ```xml 
+> <allowIndexDefinitions>true</allowIndexDefinitions>
+>```
+>2. Disable nodetype validation. Set the following property in the  <jackrabbit-nodetypes> section of the configuration of the filevault plugin:
+>```xml
+><isDisabled>true</isDisabled>
+>``` 
+
 >[!TIP]
 >
 >For further details on the required package structure for AEM as a Cloud Service, see the document [AEM Project Structure.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
