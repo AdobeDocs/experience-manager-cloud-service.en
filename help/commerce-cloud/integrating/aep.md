@@ -65,7 +65,7 @@ The locally deployed `My Demo StoreFront` commerce site with default code and co
 
 To collect and send the event data from the category and product pages of this AEM Commerce site, you need to install the key `npm` packages into the `ui.frontend` module of the AEM Commerce project.
 
-Navigate to `ui.frontend` module and install required packages by running the following commands on the terminal.
+Navigate to the `ui.frontend` module and install the required packages by running the following commands from the command line.
 
 ```bash
 npm i --save lodash.get@^4.4.2 lodash.set@^4.3.2
