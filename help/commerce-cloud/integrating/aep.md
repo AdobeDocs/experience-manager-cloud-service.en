@@ -330,7 +330,7 @@ To initialize the React-based Peregrine and CIF core components, create the requ
 
 ### Build and deploy the updated AEM project
 
-To make sure the above package installation, code, and config changes are correct go ahead and re-build, deploy the updated AEM Commerce project using the Maven command `$ mvn clean install -PautoInstallSinglePackage`.
+To make sure the above package installation, code, and config changes are correct, re-build and deploy the updated AEM Commerce project using the following Maven command: `$ mvn clean install -PautoInstallSinglePackage`.
 
 ## Experience Platform setup {#aep-setup}
 
