@@ -42,7 +42,7 @@ Follow the [Local Setup](https://experienceleague.adobe.com/docs/experience-mana
 
 ### Project setup
 
-Follow the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project) steps to create a brand new AEM Commerce aka CIF project. 
+Follow the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project) steps to create a brand new AEM Commerce (CIF) project. 
 
 >[!TIP]
 >
