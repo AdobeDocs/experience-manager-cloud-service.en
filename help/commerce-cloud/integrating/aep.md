@@ -57,7 +57,7 @@ Build and deploy the newly created AEM Commerce project to the local AEM SDK by 
 $ mvn clean install -PautoInstallSinglePackage
 ```
 
-The locally deployed `My Demo StoreFront` commerce site with default code and content looks like below.
+The locally deployed `My Demo StoreFront` commerce site with default code and content looks like the following:
 
 ![Default AEM Commerce Site](../assets/aep-integration/demo-aem-storefront.png)
 
