@@ -128,7 +128,7 @@ Switch from the default `.babelrc` file relative configuration file format to `b
 
 To transpile the JavaScript files using Babel loader (`babel-loader`) and webpack, you need to modify the `webpack.common.js` file.
 
-Navigate to `ui.frontend` module, and update the `webpack.common.js` file to have the following rule inside the `module` property value.
+Navigate to the `ui.frontend` module and update the `webpack.common.js` file to have the following rule inside the `module` property value:
 
 ```javascript
 {
