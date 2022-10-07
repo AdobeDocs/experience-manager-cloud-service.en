@@ -63,7 +63,7 @@ The locally deployed `My Demo StoreFront` commerce site with default code and co
 
 ### Install Peregrine and CIF-AEP connector dependencies
 
-In order to collect and send the events data from the category, and product pages of this AEM Commerce site we need to install the key `npm` packages into the `ui.frontend` the module of the AEM Commerce project.
+To collect and send the event data from the category and product pages of this AEM Commerce site, you need to install the key `npm` packages into the `ui.frontend` module of the AEM Commerce project.
 
 Navigate to `ui.frontend` module and install required packages by running the following commands on the terminal.
 
