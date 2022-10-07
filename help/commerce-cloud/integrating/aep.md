@@ -422,7 +422,7 @@ After completing the above Experience Platform setup, you should have `datastrea
 
 ![AEP Datastreams ID](../assets/aep-integration/AEP-Datastream-ID.png)    
 
--   In the AEM Commerce project's `ui.frontend` module, update the `config.js` file and specifically the `eventsCollector > aep` object properties.
+1. In the AEM Commerce project's `ui.frontend` module, update the `config.js` file and specifically the `eventsCollector > aep` object properties.
 
 -   Build and deploy the updated AEM Commerce project
 
