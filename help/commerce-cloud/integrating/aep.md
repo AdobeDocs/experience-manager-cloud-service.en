@@ -445,7 +445,7 @@ To trigger the event, you can use AEM author or the publish service from your lo
     ![AEP Debugger](../assets/aep-integration/AEP-Debugger.png)
 
 
--   Back in the __Product Page__, click __Add to Cart__ button and this sends data to the Experience Platform. The __Adobe Experience Platform Debugger__ extension shows the event details.
+1. Return to the __Product Page__ and click __Add to Cart__ button. This sends data to the Experience Platform. The __Adobe Experience Platform Debugger__ extension shows the event details.
 
     ![AEP Debugger Add-To-Cart Event-Data](../assets/aep-integration/AEP-Debugger-AddToCart-EventData.png)
 
