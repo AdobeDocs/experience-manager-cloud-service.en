@@ -459,7 +459,7 @@ To trigger the event, that you can use AEM author or publish service from your l
 
 ## Implementation Details {#implementation-details}
 
-The [Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) is built on top of [Magento Experience Platform Connector](https://marketplace.magento.com/magento-experience-platform-connector.html) which is part of the [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) project to create Progressive Web Application (PWA) storefronts powered by Adobe Commerce or Magento Open Source.
+The [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) is built on top of the [Experience Platform Connector for Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), which is part of the [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) project.
 
 The PWA Studio project also contains a component library called [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) for adding logic to visual components. The [Peregrin library](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) also provides the custom React hooks that are used by [Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) to integrate with Experience Platform seamlessly. 
 
