@@ -105,7 +105,7 @@ Navigate to the project's root POM file `pom.xml` and locate the `<id>npm ci</id
 
 Switch from the default `.babelrc` file relative configuration file format to `babel.config.js` format. This is a project-wide configuration format and allows the plugins and presets to be applied to the `node_module` with greater control.
 
--   Navigate to `ui.frontend` module, delete the existing `.babelrc` file.
+1. Navigate to the `ui.frontend` module and delete the existing `.babelrc` file.
 
 -   Create a `babel.config.js` file that uses the `peregrine` preset.
 
