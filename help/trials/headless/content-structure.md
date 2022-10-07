@@ -11,7 +11,7 @@ Learn how to create the structure which serves as the foundation for all of your
 
 ## Step 1 - Define the Structure for Your Headless Content {#define-structure}
 
-Content Fragments allow you to design, create, curate and publish page-independent content. They allow you to prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery. Content Fragment Models are used to define the structure of this content and are the first thing you need to create in order to manage your headless content.
+Content Fragments allow you to design, create, curate, and publish page-independent content. They allow you to prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery. Content Fragment Models are used to define the structure of this content and are the first thing you need to create in order to manage your headless content.
 
 To help you understand how this is done, this module of AEM Trials takes you through the process with a quick, interactive tour first creating the model and then adding its structure. This document serves as a supplement of the interactive tour, covering the same steps and linking to additional resources where appropriate.
 
