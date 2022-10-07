@@ -404,7 +404,7 @@ Complete the following steps to create a Datastream in the Experience Platform.
 
     ![AEP Define Datastreams](../assets/aep-integration/AEP-Datastream-Define.png)
 
--   Open the newly created Datastream, and click __Add Service__.
+1. Open the newly created Datastream, and click __Add Service__.
 
     ![AEP Datastreams Add Service](../assets/aep-integration/AEP-Datastream-Add-Service.png)    
 
