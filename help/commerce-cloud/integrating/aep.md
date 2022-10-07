@@ -373,7 +373,7 @@ To store the event data, you must create a Dataset that conforms to the schema d
 
     ![AEP Create Datasets](../assets/aep-integration/AEP-Datasets-Create.png)
 
--   On new screen, select __Create dataset from schema__ card. 
+1. On the new screen, select __Create dataset from schema__ card. 
 
     ![AEP Create Datasets Schema Option](../assets/aep-integration/AEP-Datasets-Schema-Option.png)
 
