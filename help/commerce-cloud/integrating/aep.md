@@ -466,7 +466,7 @@ The PWA Studio project also contains a component library called [Peregrin](https
 
 ## Supported Events {#supported-events}
 
-As of now, following events are supported
+As of now, the following events are supported:
 
 - addToCart
 - pageView
