@@ -381,7 +381,7 @@ To store the event data, you must create a Dataset that conforms to the schema d
 
     ![AEP Create Datasets Select Schema](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
 
--   Name your Dataset using __Configure dataset > Name__ field and click the __Finish__ button.
+1. Name your Dataset using the __Configure dataset > Name__ field and click the __Finish__ button.
 
     ![AEP Create Datasets Name](../assets/aep-integration/AEP-Datasets-Name.png)
 
