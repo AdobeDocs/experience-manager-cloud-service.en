@@ -11,7 +11,7 @@ Learn how to create the structure which serves as the foundation for all of your
 
 ## Step 1 - Define the Structure for Your Headless Content {#define-structure}
 
-Content Fragments allow you to design, create, curate, and publish page-independent content. They allow you to prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery. Content Fragment Models are used to define the structure of this content and are the first thing you need to create in order to manage your headless content.
+Content Fragments allow you to design, create, curate, and publish page-independent content. They allow you to prepare content ready for use in multiple locations and over multiple channels, ideal for headless delivery. Content Fragment Models are used to define the structure of this content and are the first thing you need to create in order to manage your headless content.
 
 To help you understand how this is done, this module of AEM Trials takes you through the process with a quick, interactive tour first creating the model and then adding its structure. This document serves as a supplement of the interactive tour, covering the same steps and linking to additional resources where appropriate.
 
@@ -39,8 +39,8 @@ The Create Model wizard starts, which guides you through creating a new Content 
 
 Provide the mandatory information.
 
-* **Model Title** - This is a brief description of the model, usually indicating its purpose
-* **Enable model** - This option must be checked to be able to create Content Fragments later based on this model.
+* **Model Title** - This is a brief description of the model, and usually indicates its purpose.
+* **Enable model** - This option is checked by default and must be checked to be able to create Content Fragments later based on this model.
 
 You can also choose to add a longer **Description** to the model as well as **Tags** to categorize it and differentiate it for your users later within the Content Fragment model console.
 
@@ -64,7 +64,7 @@ Before you can use the model, you also need to define the structure of its data.
 
 ## Step 6 - Add Data Types {#add-data-types}
 
-The Content Fragment Model essentially is a schema for your Content Fragments. I.e. it defines what fields/data types the model contains. By clicking **Open** in the previous **Success** dialog, you are taken to the Content Fragment Editor, where you can define fields for the Content Fragment model using a drag-and-drop interface.
+The Content Fragment Model is essentially a schema for your Content Fragments. I.e. it defines what fields/data types that the model contains. By clicking **Open** in the previous **Success** dialog, you are taken to the Content Fragment Editor, where you can define fields for the Content Fragment model using a drag-and-drop interface.
 
 ![The Content Fragment Model Editor](assets/step-6.png)
 
@@ -76,7 +76,7 @@ Drag a field from the **Data Types** panel at the right of the screen and drop i
 
 ## Step 7 - Define Data Properties {data-properties}
 
-Once placed, the **Data Types** column automatically changed to the **Properties** tab, where you can define the details of this new field.
+Once a data type is placed, the **Data Types** column automatically changed to the **Properties** tab, where you can define the details of the data type you just placed.
 
 ![The Properties tab for the data field](assets/step-7.png)
 
@@ -96,7 +96,7 @@ This saves the model and returns you to the Content Fragment Model Console where
 
 ## Step 9 - You've Learned to Create a Content Fragment Model {#conclusion}
 
-In this module you learned how to create a Content Fragment Model to represent the structure of your headless data. First you created the model and then populated it with data types and their related properties. This defines a schema for your headless content.
+In this module you learned how to create a Content Fragment Model to represent the structure of your headless data. First you created the model and then populated it with data types and their related properties, thereby defining a schema for your headless content.
 
 ![Modeul complete](assets/step-9.png)
 
@@ -106,7 +106,7 @@ Now that you have your own Content Fragment Model, continue on to the module [Cr
 
 ## Additional Resources {#additional-resources}
 
-For more information about Content Fragments and their models, please see the detailed documentation.
+For more information about Content Fragments and AEM, consider reviewing this additional documentation.
 
 * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Complete documentation on Content Fragment Models
 * [Content Fragments](/help/assets/content-fragments/content-fragments.md) - Complete documentation on Content Fragments
