@@ -147,7 +147,7 @@ For [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-con
 
 1. Navigate to the `ui.frontend` module and save the file as `./src/main/possibleTypes.js`
 
--   Update the `webpack.common.js` file's `DefinePlugin` section to replace required static variables during build time.
+1. Update the `webpack.common.js` file's `DefinePlugin` section to replace the required static variables during build time.
 
     ```javascript
     const { DefinePlugin } = require('webpack');
