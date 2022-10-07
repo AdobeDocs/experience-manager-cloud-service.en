@@ -147,13 +147,13 @@ Once the new index definition is added, the new application needs to be deployed
 >[!NOTE]
 >
 >In case you observe the following error in filevault validation <br>
-> ```[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"``` <br>
+>```[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"``` <br>
 >Then either of the following work arounds can be implemented - <br> <br>
 >1. Downgrade filevault to version 1.0.4 and add the following to the top level pom.xml:
-> ```xml 
+>```xml 
 > <allowIndexDefinitions>true</allowIndexDefinitions>
 >```
->2. Disable nodetype validation. Set the following property in the  <jackrabbit-nodetypes> section of the configuration of the filevault plugin:
+>1. Disable nodetype validation. Set the following property in the  ```xml <jackrabbit-nodetypes>``` section of the configuration of the filevault plugin:
 >```xml
 ><isDisabled>true</isDisabled>
 >``` 
