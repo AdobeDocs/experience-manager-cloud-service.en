@@ -392,7 +392,7 @@ To store the event data, you must create a Dataset that conforms to the schema d
 
 ### Create Datastream
 
-Follow the below steps to create a Datastream in the Experience Platform.
+Complete the following steps to create a Datastream in the Experience Platform.
 
 -   In the browser, navigate to the __Adobe Experience Platform__ product Home Screen(for example, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>)
 
