@@ -34,7 +34,7 @@ You also need access to [Adobe Experience Platform](https://experienceleague.ado
 
 ## AEM Commerce as a Cloud Service setup {#aem-setup}
 
-To have a working __AEM Commerce as a Cloud Service__ local environment with the necessary code and config, follow the below steps.
+To have a working __AEM Commerce as a Cloud Service__ local environment with the necessary code and config, complete the following steps.
 
 ### Local setup
 
