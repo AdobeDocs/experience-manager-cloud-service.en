@@ -400,7 +400,7 @@ Complete the following steps to create a Datastream in the Experience Platform.
 
     ![AEP Create Datastreams](../assets/aep-integration/AEP-Datastream-Create.png)
 
--   Name your Datastream using the __Name__ required field, and under the __Event Schema__ field select the newly created schema and click __Save__.
+1. Name your Datastream using the __Name__ required field. Under the __Event Schema__ field, select the newly created schema and click __Save__.
 
     ![AEP Define Datastreams](../assets/aep-integration/AEP-Datastream-Define.png)
 
