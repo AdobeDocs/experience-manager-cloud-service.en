@@ -107,7 +107,7 @@ Switch from the default `.babelrc` file relative configuration file format to `b
 
 1. Navigate to the `ui.frontend` module and delete the existing `.babelrc` file.
 
--   Create a `babel.config.js` file that uses the `peregrine` preset.
+1. Create a `babel.config.js` file that uses the `peregrine` preset.
 
     ```javascript
     const peregrine = require('@magento/babel-preset-peregrine');
