@@ -440,7 +440,7 @@ To trigger the event, you can use AEM author or the publish service from your lo
 1. Click on any preferred product card in the __Product Page__, then select __color, size__ to enable the __Add to Cart__ button. 
 
 
--   Open the __Adobe Experience Platform Debugger__ extension from the browser's extension panel and select __Experience Platform Wed SDK__ in the left rail. 
+1. Open the __Adobe Experience Platform Debugger__ extension from the browser's extension panel and select __Experience Platform Wed SDK__ in the left rail. 
 
     ![AEP Debugger](../assets/aep-integration/AEP-Debugger.png)
 
