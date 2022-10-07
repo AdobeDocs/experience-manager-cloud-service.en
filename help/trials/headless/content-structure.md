@@ -9,7 +9,7 @@ Learn how to create the structure which serves as the foundation for all of your
 
 ## Step 1 - Define the Structure for Your Headless Content {#define-structure}
 
-[Content Fragments](/help/assets/content-fragments/content-fragments.md) allow you to design, create, curate and publish page-independent content. They allow you to prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery. [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) are used to define the structure of this content and are the first thing you need to create in order to manage your headless content.
+Content Fragments allow you to design, create, curate and publish page-independent content. They allow you to prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery. Content Fragment Models are used to define the structure of this content and are the first thing you need to create in order to manage your headless content.
 
 To help you understand how this is done, this module of AEM Trials takes you through the process with a quick, interactive tour first creating the model and then adding its structure. This document serves as a supplement of the interactive tour, covering the same steps and linking to additional resources where appropriate.
 
@@ -21,7 +21,7 @@ If you wish to navigate here yourself at a later point, it is found using the Ad
 
 >[!TIP]
 >
->See the [Basic Handling documentation](/help/sites-cloud/authoring/getting-started/basic-handling.md) for more details on how to navigate AEM.
+>If you are new to AEM, see the [Additional Resources section](#additional-resources) of this document for basic handling documentation before continuing with this guide.
  
 ## Step 2 - Create a Model {#create-model}
 
@@ -40,7 +40,7 @@ You can also choose to add a longer **Description** to the model as well as **Ta
 
 >[!TIP]
 >
->See the [tags documentation](/help/sites-cloud/authoring/features/tags.md) for more information on how to use tags to organize your content.
+>If you are interested in how tags can organize your content see the [Additional Resources section](#additional-resources) of this document for more information on tagging in AEM.
 
 ## Step 4 - Create Your Model {#click-create}
 
@@ -62,9 +62,13 @@ The Content Fragment Model essentially is a schema for your Content Fragments. I
 
 ![The Content Fragment Model Editor]()
 
-Drag a field from the **Data Types** panel at the right of the screen and drop it onto your Content Fragment Model. There are multiple [data types](/help/assets/content-fragments/content-fragments-models.md#data-types) to choose from such as a single line text, multi-line text, number, and references to other fragments.
+Drag a field from the **Data Types** panel at the right of the screen and drop it onto your Content Fragment Model. There are multiple data types to choose from such as a single line text, multi-line text, number, and references to other fragments.
 
 ![Field added to Content Fragment Model]()
+
+>[!TIP]
+>
+>If you would like more information about the data types available to you, see the [Additional Resources section](#additional-resources) of this document for the detailed Content Fragment Models documentation.
 
 ## Step 7 - Define Data Properties {data-properties}
 
@@ -72,7 +76,11 @@ Once placed, the **Data Types** column automatically changed to the **Properties
 
 ![The Properties tab for the data field]()
 
-[Properties of the model](/help/assets/content-fragments/content-fragments-models.md#properties) may include the name of the field, the type of field, the length of the field, if it is mandatory, etc.
+Properties of the model may include the name of the field, the type of field, the length of the field, if it is mandatory, etc.
+
+>[!TIP]
+>
+>If you would like more information about the properties available to you, see the [Additional Resources section](#additional-resources) of this document for the detailed Content Fragment Models documentation.
 
 ## Step 8 - Save the Content Fragment Model {#save-model}
 
@@ -90,5 +98,7 @@ Now that you have your own Content Fragment Model, continue on to the module [Cr
 
 For more information about Content Fragments and their models, please see the detailed documentation.
 
-* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
-* [Content Fragments](/help/assets/content-fragments/content-fragments.md)
+* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Complete documentation on Content Fragment Models
+* [Content Fragments](/help/assets/content-fragments/content-fragments.md) - Complete documentation on Content Fragments
+* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Documentation on how to navigate and use AEM for new users
+* [Using Tags](/help/sites-cloud/authoring/features/tags.md) - Documentation on how to use tags in AEM to organize content
