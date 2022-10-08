@@ -374,6 +374,12 @@ They will be added as a reference, in your current location in your fragment.
 
 ## Managing Variations {#managing-variations}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_contentfragments_variations"
+>title="Managing variations"
+>abstract="Learn how make variations of content for use with specific channels."
+>additional-url="https://video.tv.adobe.com/v/333295" text="Content Fragment Variations"
+
 ### Creating a Variation {#creating-a-variation}
 
 Variations allow you to take the **Master** content and vary it according to purpose (if required).
