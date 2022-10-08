@@ -116,6 +116,10 @@ The following steps will timeout if left waiting for user feedback:
 
 All Cloud Service deployments follow a rolling process to ensure zero downtime. Please refer to the document [How Rolling Deployments Work](/help/implementing/deploying/overview.md#how-rolling-deployments-work) to learn more.
 
+>[!NOTE]
+>
+>The Dispatcher cache is wiped out on each deployment. It is subsequently warmed up before the new publish nodes accept traffic.
+
 ## Re-Execute a Production Deployment {#Reexecute-Deployment}
 
 Re-execution of the production deployment step is supported for executions where the production deploy step has completed. The type  of completion is not important – the deployment could be cancelled, or unsuccessful. That said, the primary use case is expected to be cases where the production deployment step failed for transient reasons. Re-execution creates a new execution using the same pipeline. This new execution consists of three steps:
