@@ -148,15 +148,52 @@ Once the new index definition is added, the new application needs to be deployed
 >
 >In case you observe the following error in filevault validation <br>
 >```[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"``` <br>
->Then either of the following work arounds can be implemented - <br> <br>
->1. Downgrade filevault to version 1.0.4 and add the following to the top level pom.xml:
+>Then either of the following steps can be followed to fix the issue - <br> <br>
+>1. Downgrade filevault to version 1.0.4 and add the following to the top level pom :
 >```xml 
-> <allowIndexDefinitions>true</allowIndexDefinitions>
+><allowIndexDefinitions>true</allowIndexDefinitions>
 >```
->1. Disable nodetype validation. Set the following property in the  ```xml <jackrabbit-nodetypes>``` section of the configuration of the filevault plugin:
+>Below is an example of where to place the above configuration in the pom.
+>```xml
+><plugin>
+>    <groupId>org.apache.jackrabbit</groupId>
+>    <artifactId>filevault-package-maven-plugin</artifactId>
+>    <configuration>
+>        <properties>
+>        ...
+>        </properties>
+>        ...
+>        <allowIndexDefinitions>true</allowIndexDefinitions>
+>        <repositoryStructurePackages>
+>        ...
+>        </repositoryStructurePackages>
+>        <dependencies>
+>        ...
+>        </dependencies>
+>    </configuration>
+></plugin>
+>```
+>1. Disable nodetype validation. Set the following property in the  jackrabbit-nodetypes section of the configuration of the filevault plugin:
 >```xml
 ><isDisabled>true</isDisabled>
 >``` 
+>Below is an example of where to place the above configuration in the pom.
+>```xml
+><plugin>
+>    <groupId>org.apache.jackrabbit</groupId>
+>    <artifactId>filevault-package-maven-plugin</artifactId>
+>    ...
+>    <configuration>
+>    ...
+>        <validatorsSettings>
+>        ...
+>            <jackrabbit-nodetypes>
+>                <isDisabled>true</isDisabled>
+>            </jackrabbit-nodetypes>
+>        </validatorsSettings>
+>    </configuration>
+></plugin>
+>```
 
 >[!TIP]
 >
