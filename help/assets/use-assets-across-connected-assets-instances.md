@@ -257,9 +257,9 @@ Configure the Connected Assets feature only when you need to use the assets avai
 
 +++
 
-+++**How many [!DNL Sites] deployments can you connect to a remote DAM deployment after configuring Connected Assets?**
++++**Can you connect multiple [!DNL Sites] deployments to a remote DAM deployment after configuring Connected Assets?**
 
-You can connect a maximum of four [!DNL Sites] deployments to a remote DAM deployment after configuring Connected Assets. For more information, see [Connected Assets architecture](#connected-assets-architecture).
+Yes, you can connect multiple [!DNL Sites] deployments to a remote DAM deployment after configuring Connected Assets. For more information, see [Connected Assets architecture](#connected-assets-architecture).
 
 +++
 
