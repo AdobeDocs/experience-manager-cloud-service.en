@@ -10,7 +10,7 @@ exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
 
 Out of the box, PWA Studio integrates seamlessly with Adobe Commerce via GraphQL providing unlimited options for creating innovative and engaging storefronts and other digital experiences.
 
-Content Fragments are pieces of content with a predefined structure that allows them to be consumed in a headless way using GraphQL as API in different formats (e.g. JSON, Markdown) and independently rendered. Content fragments include all the data types and fields required for GraphQL to ensure your application only requests what is available and receives what is expected. The flexibility they provide in terms of how they are structured makes them perfect for use in multiple locations and over multiple channels.
+Content Fragments are pieces of content with a predefined structure that allows them to be consumed in a headless way using GraphQL as API in different formats (for example, JSON, Markdown) and independently rendered. Content fragments include all the data types and fields required for GraphQL to ensure your application only requests what is available and receives what is expected. The flexibility they provide in terms of how they are structured makes them perfect for use in multiple locations and over multiple channels.
 
 Designing the structure you need is easy with the Content Fragment Model Editor within Adobe Experience Manager. The main challenge to integrating Adobe Experience Manager Content Fragments (or any other data) with your PWA Studio application is fetching data from multiple GraphQL endpoints. This is because out of the box, PWA Studio works with a single Adobe Commerce GraphQL endpoint.
 
@@ -111,7 +111,7 @@ Depending on your use case, you want to create your own custom Content Fragment 
 Production setups can vary in multiple aspects.
 
 * You can have a single federated GraphQL endpoint which combines AEM and Adobe Commerce GraphQL data instead of customising Apollo client.
-* Your PWA Studio application could use the AEM GraphQL endpoint URL directly, without a proxy with UPWARD. The proxy could also be moved to a different layer (e.g. CDN).
+* Your PWA Studio application could use the AEM GraphQL endpoint URL directly, without a proxy with UPWARD. The proxy could also be moved to a different layer (for example, CDN).
 * Which approach fits best for you also heavily depends on how you deliver the PWA Studio application to the end user.
 
 This extension comes with two examples.
