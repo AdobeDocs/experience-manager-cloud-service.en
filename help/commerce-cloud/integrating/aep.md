@@ -22,7 +22,7 @@ Learn more about the [Experience Platform Data Collection](https://experiencelea
 
 ## Send `addToCart` event data to Experience Platform {#send-addtocart-to-aep}
 
-The following steps show how to send the `addToCart` event data from AEM-rendered product pages to the Experience Platform using the CIF - Experience Platform Connector. By using the [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=en) browser extension you can test and review the submitted data.
+The following steps show how to send the `addToCart` event data from AEM-rendered product pages to the Experience Platform using the CIF - Experience Platform Connector. By using the Adobe Experience Platform Debugger browser extension, you can test and review the submitted data.
 
 ![Review addToCart event data in Adobe Experience Platform Debugger](../assets/aep-integration/EventData-AEM-AEP.png)
 
@@ -330,7 +330,7 @@ To initialize the React-based Peregrine and CIF core components, create the requ
 
 ### Build and deploy the updated AEM project
 
-To make sure the above package installation, code, and config changes are correct, re-build and deploy the updated AEM Commerce project using the following Maven command: `$ mvn clean install -PautoInstallSinglePackage`.
+To make sure the above package installation, code, and config changes are correct, re-build, and deploy the updated AEM Commerce project using the following Maven command: `$ mvn clean install -PautoInstallSinglePackage`.
 
 ## Experience Platform setup {#aep-setup}
 
@@ -461,7 +461,7 @@ To trigger the event, you can use AEM author or the publish service from your lo
 
 The [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) is built on top of the [Experience Platform Connector for Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), which is part of the [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) project.
 
- The PWA Studio project lets you to create Progressive Web Application (PWA) storefronts powered by Adobe Commerce or Magento Open Source. The project also contains a component library called [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) for adding logic to visual components. The [Peregrin library](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) also provides the custom React hooks that are used by [Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) to integrate with Experience Platform seamlessly. 
+ The PWA Studio project lets you create Progressive Web Application (PWA) storefronts powered by Adobe Commerce or Magento Open Source. The project also contains a component library called [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) for adding logic to visual components. The [Peregrin library](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) also provides the custom React hooks that are used by [Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) to integrate with Experience Platform seamlessly. 
 
 
 ## Supported Events {#supported-events}
