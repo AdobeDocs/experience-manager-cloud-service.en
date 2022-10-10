@@ -105,9 +105,9 @@ Navigate to the project's root POM file `pom.xml` and locate the `<id>npm ci</id
 
 Switch from the default `.babelrc` file relative configuration file format to `babel.config.js` format. This is a project-wide configuration format and allows the plugins and presets to be applied to the `node_module` with greater control.
 
-1. Navigate to the `ui.frontend` module and delete the existing `.babelrc` file.
+1.  Navigate to the `ui.frontend` module and delete the existing `.babelrc` file.
 
-1. Create a `babel.config.js` file that uses the `peregrine` preset.
+1.  Create a `babel.config.js` file that uses the `peregrine` preset.
 
     ```javascript
     const peregrine = require('@magento/babel-preset-peregrine');
@@ -145,9 +145,9 @@ The [Apollo Client](https://www.apollographql.com/docs/react/) is used to manage
 For [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) to work effectively, you need a `possibleTypes.js` file. To generate this file, see [Generating possibleTypes automatically](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). Also, see the [PWA Studio reference implementation](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) and an example of a [`possibleTypes.js`](../assets/possibleTypes.js) file.
 
 
-1. Navigate to the `ui.frontend` module and save the file as `./src/main/possibleTypes.js`
+1.  Navigate to the `ui.frontend` module and save the file as `./src/main/possibleTypes.js`
 
-1. Update the `webpack.common.js` file's `DefinePlugin` section to replace the required static variables during build time.
+1.  Update the `webpack.common.js` file's `DefinePlugin` section to replace the required static variables during build time.
 
     ```javascript
     const { DefinePlugin } = require('webpack');
@@ -168,9 +168,9 @@ For [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-con
 
 To initialize the React-based Peregrine and CIF core components, create the required configuration and JavaScript files.
 
-1. Navigate to the `ui.frontend` module and create the following folder: `src/main/webpack/components/commerce/App`
+1.  Navigate to the `ui.frontend` module and create the following folder: `src/main/webpack/components/commerce/App`
 
-1. Create a `config.js` file with the following content:
+1.  Create a `config.js` file with the following content:
 
     ```javascript
 
@@ -224,7 +224,7 @@ To initialize the React-based Peregrine and CIF core components, create the requ
     >
     >While you might already be familiar with the [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) file from __AEM Guides - CIF Venia Project__, there are a few changes you need to make to this file. First, review any __TODO__ comments. Then, inside the `eventsCollector` property, find the `eventsCollector > aed` object and update the `orgId` and `datastreamId` properties to the correct values. [Learn more](./aep.md#add-aep-values-to-aem).
 
-1. Create an `App.js` file with the following content. This file resembles a typical React application-starting point file and contains React and custom hooks and React Context usage to facilitate the Experience Platform integration. 
+1.  Create an `App.js` file with the following content. This file resembles a typical React application-starting point file and contains React and custom hooks and React Context usage to facilitate the Experience Platform integration. 
 
     ```javascript
 
@@ -344,17 +344,17 @@ To receive and store the event data coming from the AEM Commerce pages such as c
 
 To define the structure for commerce event data, you must create an Experience Data Model (XDM) schema. A schema is a set of rules that represent and validate the structure and format of data.
 
-1. In the browser, navigate to the __Adobe Experience Platform__ product Home Screen. For example, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
+1.  In the browser, navigate to the __Adobe Experience Platform__ product Home page. For example, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
-1. Locate the __Schemas__ menu in the left navigation section, click the __Create Schema__ button from the top-right section, and select __XDM ExperienceEvent__.
+1.  Locate the __Schemas__ menu in the left navigation section, click the __Create Schema__ button from the top-right section, and select __XDM ExperienceEvent__.
 
     ![AEP Create Schema](../assets/aep-integration/AEP-Schema-EventSchema-1.png)
 
-1. Name your schema using the __Schema Properties > Display name__ field and add Field groups by using the  __Composition > Field groups > Add__ button.
+1.  Name your schema using the __Schema Properties > Display name__ field and add Field groups by using the  __Composition > Field groups > Add__ button.
 
     ![AEP Schema Definition](../assets/aep-integration/AEP-Schema-Definition.png)
 
-1. In the __Add Field groups__ dialog, search for `Commerce`, select the __Commerce Details__ checkbox, and click __Add Field groups__.
+1.  In the __Add Field groups__ dialog, search for `Commerce`, select the __Commerce Details__ checkbox, and click __Add Field groups__.
 
     ![AEP Schema Definition](../assets/aep-integration/AEP-Schema-Field-Group.png)
 
@@ -367,21 +367,21 @@ To define the structure for commerce event data, you must create an Experience D
 
 To store the event data, you must create a Dataset that conforms to the schema definition. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). 
 
-1. In the browser, navigate to the __Adobe Experience Platform__ product Home Screen. For example, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
+1.  In the browser, navigate to the __Adobe Experience Platform__ product Home page. For example, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
-1. Locate the __Datasets__ menu in the left navigation section and click the __Create dataset__ button from the top-right section.
+1.  Locate the __Datasets__ menu in the left navigation section and click the __Create dataset__ button from the top-right section.
 
     ![AEP Create Datasets](../assets/aep-integration/AEP-Datasets-Create.png)
 
-1. On the new screen, select __Create dataset from schema__ card. 
+1.  On the new page, select __Create dataset from schema__ card. 
 
     ![AEP Create Datasets Schema Option](../assets/aep-integration/AEP-Datasets-Schema-Option.png)
 
--   On the new screen, __search and select__ the schema you created in the previous step, and click the __Next__ button.
+-   On the new page, __search and select__ the schema you created in the previous step, and click the __Next__ button.
 
     ![AEP Create Datasets Select Schema](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
 
-1. Name your Dataset using the __Configure dataset > Name__ field and click the __Finish__ button.
+1.  Name your Dataset using the __Configure dataset > Name__ field and click the __Finish__ button.
 
     ![AEP Create Datasets Name](../assets/aep-integration/AEP-Datasets-Name.png)
 
@@ -394,21 +394,21 @@ To store the event data, you must create a Dataset that conforms to the schema d
 
 Complete the following steps to create a Datastream in the Experience Platform.
 
-1. In the browser, navigate to the __Adobe Experience Platform__ product Home Screen. For example, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
+1.  In the browser, navigate to the __Adobe Experience Platform__ product Home page. For example, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
-1. Locate the __Datastreams__ menu in the left navigation section and click the __New Datastream__ button from the top-right section.
+1.  Locate the __Datastreams__ menu in the left navigation section and click the __New Datastream__ button from the top-right section.
 
     ![AEP Create Datastreams](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. Name your Datastream using the __Name__ required field. Under the __Event Schema__ field, select the newly created schema and click __Save__.
+1.  Name your Datastream using the __Name__ required field. Under the __Event Schema__ field, select the newly created schema and click __Save__.
 
     ![AEP Define Datastreams](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1. Open the newly created Datastream, and click __Add Service__.
+1.  Open the newly created Datastream, and click __Add Service__.
 
     ![AEP Datastreams Add Service](../assets/aep-integration/AEP-Datastream-Add-Service.png)    
 
-1. Under the __Service__ field, select the __Adobe Experience Platform__ option. Under __Event Dataset__ field, select the dataset name from the previous step and click __Save__.
+1.  Under the __Service__ field, select the __Adobe Experience Platform__ option. Under __Event Dataset__ field, select the dataset name from the previous step and click __Save__.
 
     ![AEP Datastreams Add Service Details](../assets/aep-integration/AEP-Datastream-Add-Service-Define.png)    
 
@@ -422,9 +422,9 @@ After completing the above Experience Platform setup, you should have `datastrea
 
 ![AEP Datastreams ID](../assets/aep-integration/AEP-Datastream-ID.png)    
 
-1. In the AEM Commerce project's `ui.frontend` module, update the `config.js` file and specifically the `eventsCollector > aep` object properties.
+1.  In the AEM Commerce project's `ui.frontend` module, update the `config.js` file and specifically the `eventsCollector > aep` object properties.
 
-1. Build and deploy the updated AEM Commerce project
+1.  Build and deploy the updated AEM Commerce project
 
 
 ## Trigger `addToCart` event and verify data collection {#event-trigger-verify}
@@ -433,25 +433,25 @@ The above steps complete the AEM Commerce and Experience Platform setup. You can
 
 To trigger the event, you can use AEM author or the publish service from your local setup. For this example, use AEM author by logging in to your account.
 
-1. From Sites screen, select the __My Demo StoreFront > us > en__ page and click __Edit__ in top action bar.
+1.  From Sites page, select the __My Demo StoreFront > us > en__ page and click __Edit__ in top action bar.
 
-1. From the top action bar, click __View as Published__, then click on any preferred category from the storefront's navigation.
+1.  From the top action bar, click __View as Published__, then click on any preferred category from the storefront's navigation.
 
-1. Click on any preferred product card in the __Product Page__, then select __color, size__ to enable the __Add to Cart__ button. 
+1.  Click on any preferred product card in the __Product Page__, then select __color, size__ to enable the __Add to Cart__ button. 
 
 
-1. Open the __Adobe Experience Platform Debugger__ extension from the browser's extension panel and select __Experience Platform Wed SDK__ in the left rail. 
+1.  Open the __Adobe Experience Platform Debugger__ extension from the browser's extension panel and select __Experience Platform Wed SDK__ in the left rail. 
 
     ![AEP Debugger](../assets/aep-integration/AEP-Debugger.png)
 
 
-1. Return to the __Product Page__ and click __Add to Cart__ button. This sends data to the Experience Platform. The __Adobe Experience Platform Debugger__ extension shows the event details.
+1.  Return to the __Product Page__ and click __Add to Cart__ button. This sends data to the Experience Platform. The __Adobe Experience Platform Debugger__ extension shows the event details.
 
     ![AEP Debugger Add-To-Cart Event-Data](../assets/aep-integration/AEP-Debugger-AddToCart-EventData.png)
 
 
 
-1. Within Experience Platform product UI, navigate to the __Datasets > My Demo StoreFront__, under the __Dataset activity__ tab. If the __Metrics and graphs__ toggle is enabled, the event-data stats are displayed.
+1.  Within Experience Platform product UI, navigate to the __Datasets > My Demo StoreFront__, under the __Dataset activity__ tab. If the __Metrics and graphs__ toggle is enabled, the event-data stats are displayed.
 
     ![Experience Platform Dataset Data stats](../assets/aep-integration/AEP-Dataset-AddToCart-EventData.png)
 
