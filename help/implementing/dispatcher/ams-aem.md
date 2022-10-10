@@ -110,7 +110,7 @@ linked to can be removed as well.
 
 ### Rename farm files
 
-All farms in `conf.d/enabled_farms` must be renamed to match the pattern `*.farm`, so e.g. a 
+All farms in `conf.d/enabled_farms` must be renamed to match the pattern `*.farm`, so for example, a 
 farm file called `customerX_farm.any` should be renamed `customerX.farm`. 
 
 ### Check cache
