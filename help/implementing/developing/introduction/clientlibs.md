@@ -81,7 +81,7 @@ In order for the client libraries under `/apps` to be accessible, a proxy servel
    * Type: Boolean
    * Value: `true`
 1. If you need to manage static resources, create a subfolder named `resources` below the client library folder.
-   * If you store static resources under the folder `resources`, they can not be referenced on a publish instance.
+   * If you store static resources anywhere than under the folder `resources`, they can not be referenced on a publish instance.
 1. Add source files to the library folder.
    * This is typically done by the front-end build process of the [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * You can organize source files in subfolders if desired.
