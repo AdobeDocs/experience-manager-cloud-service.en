@@ -428,7 +428,7 @@ Follow the guidelines under [How to Meet Success Criteria 1.3.2](https://www.w3.
 
 Designers often focus on visual design features, such as color, shape, text style, or a piece of content’s absolute or relative position when presenting information. These can be very powerful design techniques in conveying information (and can improve the overall accessibility for sighted users with cognitive accessibility needs), but people who are blind or visually impaired may be unable to access information that requires visual identification of attributes such as position, color or shape.
 
-Similarly, information that requires distinguishing between different sounds (e.g. male or female spoken content) will present accessibility barriers to people with hearing impairment, if it is not reflected in any text alternative for the audio content.
+Similarly, information that requires distinguishing between different sounds (for example, male or female spoken content) will present accessibility barriers to people with hearing impairment, if it is not reflected in any text alternative for the audio content.
 
 >[!NOTE]
 >
@@ -439,7 +439,7 @@ Similarly, information that requires distinguishing between different sounds (e.
 Make sure that any information that relies on visual characteristics of page content is also presented in an alternative format.
 
 * Do not rely on visual position to give information. For example, if you want to refer users to a menu on the right hand side of the page for access to further information, do not refer to *the menu on the right*; instead, name the menu (for example via a heading) and refer to that name in text.
-* Do not rely on text styling (e.g. bold or italicized text) as the only way to convey information.
+* Do not rely on text styling (for example, bold or italicized text) as the only way to convey information.
 
 >[!NOTE]
 >
@@ -480,7 +480,7 @@ Wherever color is used to convey information, make sure that the information is 
 
 For example, make sure that information provided by color is also provided explicitly in text.
 
-If color is used as a cue to provide information, you should provide an additional visual cue, such as changing the style (e.g. bold, italics) or font. This helps people with low vision or who have color vision deficiency to identify the information. However, it cannot be relied on entirely, as it will not help people who cannot see the page at all. Therefore it is (sometimes) useful to provide hidden text or to use programmatic solutions, such as the [Accessible Rich Internet Applications (ARIA) suite of web standards](https://www.w3.org/WAI/standards-guidelines/aria/), to convey this information to non-sighted users.
+If color is used as a cue to provide information, you should provide an additional visual cue, such as changing the style (for example, bold, italics) or font. This helps people with low vision or who have color vision deficiency to identify the information. However, it cannot be relied on entirely, as it will not help people who cannot see the page at all. Therefore it is (sometimes) useful to provide hidden text or to use programmatic solutions, such as the [Accessible Rich Internet Applications (ARIA) suite of web standards](https://www.w3.org/WAI/standards-guidelines/aria/), to convey this information to non-sighted users.
 
 #### More Information - Use of Color (1.4.1) {#more-information-use-of-color}
 
@@ -602,7 +602,7 @@ As well as following the guidelines under [How to Meet Success Criteria 1.4.4](h
 
 #### Purpose - Images of Text (1.4.5) {#purpose-images-of-text}
 
-Images of text are often used when a particular style of text is preferred; for example, a logotype or if text has been generated from another source (e.g. a scan of a paper document). However, compared to text presented in HTML and styled using CSS, images of text lack the flexibility to change size or appearance that might be necessary for people with visual impairments or reading difficulties.
+Images of text are often used when a particular style of text is preferred; for example, a logotype or if text has been generated from another source (for example, a scan of a paper document). However, compared to text presented in HTML and styled using CSS, images of text lack the flexibility to change size or appearance that might be necessary for people with visual impairments or reading difficulties.
 
 #### How to Meet - Images of Text (1.4.5) {#how-to-meet-images-of-text}
 
@@ -1054,7 +1054,7 @@ The intent of this Success Criterion is to ensure that functionality is predicta
 * new windows launched when a component receives focus;
 * focus is changed to another component when that component receives focus;
 
-Focus may be moved to a control either via the keyboard (e.g. tabbing to a control) or the mouse (e.g. clicking on a text field). Moving the mouse over a control does not move the focus unless scripting implements this behavior. Note that for some types of controls, clicking on a control may also activate the control (e.g. button), which may, in turn, initiate a change in context.
+Focus may be moved to a control either via the keyboard (for example, tabbing to a control) or the mouse (for example, clicking on a text field). Moving the mouse over a control does not move the focus unless scripting implements this behavior. Note that for some types of controls, clicking on a control may also activate the control (for example, button), which may, in turn, initiate a change in context.
 
 #### How to Meet - On Focus (3.2.1) {#how-to-meet-on-focus}
  
@@ -1203,7 +1203,7 @@ The positioning of labels is also important as it helps them to locate appropria
 
 * Checkboxes or radio buttons:
   Labels are positioned immediately to the right of the field.
-* All other form components (e.g. text boxes, combo boxes):
+* All other form components (for example, text boxes, combo boxes):
   Labels are positioned either immediately above or immediately to the left of the field.
 
 In simple forms with very limited functionality, appropriately labelling a `Submit` button can act as a label for the adjacent field (for example `Search`). This is useful in situations when finding space for the label text might be difficult.
