@@ -30,7 +30,7 @@ This section provides step by step instructions on how to convert an AMS configu
 
 1. Remove or comment virtual host sections that do not refer to port 80
 
-   If you still have sections in your virtual host files that exclusively refer to other ports than port 80, e.g.
+   If you still have sections in your virtual host files that exclusively refer to other ports than port 80, for example,
 
    `<VirtualHost *:443>`
     `...`
@@ -83,7 +83,7 @@ This section provides step by step instructions on how to convert an AMS configu
 
 1. **Rename farm files**
 
-     All farms in conf.dispatcher.d/enabled_farms must be renamed to match the pattern *.farm, so e.g. a farm file called customerX_farm.any should be renamed customerX.farm.
+     All farms in conf.dispatcher.d/enabled_farms must be renamed to match the pattern *.farm, so for example, a farm file called customerX_farm.any should be renamed customerX.farm.
 
 1. **Check cache**
 
