@@ -3,6 +3,7 @@ title: Using Client-Side Libraries on AEM as a Cloud Service
 description: AEM provides Client-side Library Folders, which allow you to store your client-side code (clientlibs) in the repository, organize it into categories, and define when and how each category of code is to be served to the client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 ---
+
 # Using Client-Side Libraries on AEM as a Cloud Service {#using-client-side-libraries}
 
 Digital experiences rely heavily on client-side processing driven by complex JavaScript and CSS code. AEM Client-Side Libraries (clientlibs) allow you to organize and centrally store these client-side libraries within the repository. Coupled with the [front-end build process in the AEM Project archetype,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) managing your front-end code for your AEM project becomes simple.
@@ -49,7 +50,7 @@ A client-side library folder is a repository node of type `cq:ClientLibraryFolde
 
 Each `cq:ClientLibraryFolder` is populated with a set of JS and/or CSS files, along with a few supporting files (see below). Important properties of the `cq:ClientLibraryFolder` are configured as follows:
 
-* `allowProxy`: Since all clientlibs must be stored under `apps`, this property allows access to clientlibraries ia proxy servlet. See [Locating a Client Library Folder and Using the Proxy Client Libraries Servlet](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) below.
+* `allowProxy`: Since all clientlibs must be stored under `apps`, this property allows access to client libraries via proxy servlet. See the section [Locating a Client Library Folder and Using the Proxy Client Libraries Servlet](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) below.
 * `categories`: Identifies the categories into which the set of JS and/or CSS files within this `cq:ClientLibraryFolder` fall. The `categories` property, being multi-valued, allows a library folder to be part of more than one category (see below for how this may be useful).
 
 If the client library folder contains one or more source files that, at runtime, they are merged into a single JS and/or CSS file. The name of the generated file is the node name with either the `.js` or `.css` file name extension. For example, the library node named `cq.jquery` results in the generated file named `cq.jquery.js` or `cq.jquery.css`.
@@ -81,7 +82,7 @@ In order for the client libraries under `/apps` to be accessible, a proxy servel
    * Type: Boolean
    * Value: `true`
 1. If you need to manage static resources, create a subfolder named `resources` below the client library folder.
-   * If you store static resources under the folder `resources`, they can not be referenced on a publish instance.
+   * If you store static resources anywhere other than under the folder `resources`, they can not be referenced on a publish instance.
 1. Add source files to the library folder.
    * This is typically done by the front-end build process of the [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * You can organize source files in subfolders if desired.
@@ -205,7 +206,7 @@ Embedding code is useful for providing access to libraries that are stored in se
 
 #### App-Specific Client Library Folders {#app-specific-client-library-folders}
 
-It is a best practice to keep all application-related files in their application folder below /apps. It is also a best practice to deny access for web site visitors to the /apps folder. To satisfy both best practices, create a client library folder below the /etc folder that embeds the client library that is below /apps.
+It is a best practice to keep all application-related files in their application folder below `/apps`. It is also a best practice to deny access for web site visitors to the `/apps` folder. To satisfy both best practices, create a client library folder below the `/etc` folder that embeds the client library that is below `/apps`.
 
 Use the categories property to identify the client library folder to embed. To embed the library, add a property to the embedding `cq:ClientLibraryFolder` node, using the following property attributes:
 
