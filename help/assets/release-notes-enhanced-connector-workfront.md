@@ -15,10 +15,9 @@ The release date for the latest version 1.9.4 of [!DNL Workfront for Experience 
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following enhancements and bug fixes:
 
-* Unable to view the paginated list of event subscriptions on the enhanced connector configuration page.
+* Unable to view Event Subscriptions tab on the enhanced connector configuration page due to a large number of events.
 
-* Duplicate folder issues within Workfront when there are a large number of events.
-
+* Workfront is not able to fetch the list of existing folders in a project, which is resulting in creation of duplicate folders.
 
 >[!IMPORTANT]
 >
