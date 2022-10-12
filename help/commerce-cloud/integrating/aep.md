@@ -142,7 +142,7 @@ Navigate to the `ui.frontend` module and update the `webpack.common.js` file to 
 
 The [Apollo Client](https://www.apollographql.com/docs/react/) is used to manage both local and remote data with GraphQL. It also stores the results of GraphQL queries in a local, normalized, in-memory cache. 
 
-For [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) to work effectively, you need a `possibleTypes.js` file. To generate this file, see [Generating possibleTypes automatically](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). Also, see the [PWA Studio reference implementation](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) and an example of a [`possibleTypes.js`](../assets/possibleTypes.js) file.
+For [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) to work effectively, you need a `possibleTypes.js` file. To generate this file, see [Generating possibleTypes automatically](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). Also, see the [PWA Studio reference implementation](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) and an example of a [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) file.
 
 
 1.  Navigate to the `ui.frontend` module and save the file as `./src/main/possibleTypes.js`
