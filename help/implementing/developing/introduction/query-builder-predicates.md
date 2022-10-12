@@ -260,7 +260,7 @@ It supports facet extraction and provides buckets for each unique property value
   * `equals` for exact match (default)
   * `unequals` for inequality comparison
   * `like` for using the `jcr:like` xpath function (optional)
-  * `not` for no match (e.g. `not(@prop)` in xpath, value param will be ignored)
+  * `not` for no match (for example, `not(@prop)` in xpath, value param will be ignored)
   * `exists` for existence check
     * `true` the property must exist
     * `false` is the same as `not` and is the default
@@ -270,7 +270,7 @@ It supports facet extraction and provides buckets for each unique property value
 
 This predicate matches a JCR property against an interval. This applies to properties with linear types such as `LONG`, `DOUBLE` and `DECIMAL`. For `DATE` please see the [`daterange`](#daterange) predicate that has optimized date format input.
 
-You can define a lower bound, an upper bound, or both. The operation (e.g. lesser than or lesser than or equal to) can also be specified for lower and upper bound individually.
+You can define a lower bound, an upper bound, or both. The operation (for example, lesser than or lesser than or equal to) can also be specified for lower and upper bound individually.
 
 It does not support facet extraction.
 
@@ -365,7 +365,7 @@ It does not support facet extraction.
 
 * **`tagsearch`** - keyword to search for in tag titles
 * **`property`** - property (or relative path to property) to consider (default `cq:tags`)
-* **`lang`** - to search in a certain localized tag title only (e.g. `de`)
+* **`lang`** - to search in a certain localized tag title only (for example, `de`)
 * **`all`** - boolean value to search entire tag fulltext, i.e. all titles, description etc. (takes precedence over `lang`)
 
 ### type {#type}
