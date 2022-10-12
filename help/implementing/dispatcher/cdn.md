@@ -26,7 +26,7 @@ Follow the sections below to use Cloud Manager self-service UI to prepare for co
 
 >[!NOTE]
 >
->Managing custom domain names with Cloud Manager only works if you are using the AEM managed CDN. If a customer brings their own CDN and point it to the AEM managed CDN, then they will have to use that specific CDN to manage domains (not Cloud Manager).
+>You can manage custom domain names with Cloud Manager **only** if you are using the AEM managed CDN. If a customer brings their own CDN then they will have to use that specific CDN to manage domains. Consequently, when using your own CDN, there is no need to install domains and certificates in Cloud Manager.
 
 **Restricting traffic**
 
@@ -90,7 +90,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->When using your own CDN, there is no need to install the domains and certificates in Cloud Manager. The routing in Adobe CDN will be done using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>When using your own CDN, there is no need to install the domains and certificates in Cloud Manager. The routing in Adobe CDN will be done by using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
 >[!NOTE]
 >
