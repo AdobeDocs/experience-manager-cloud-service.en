@@ -41,7 +41,7 @@ There are a number of limitations to using custom domain names with AEMaaCS.
 
 >[!NOTE]
 >
->Managing custom domain names with Cloud Manager only works if you are using the AEM managed CDN. If a customer brings their own CDN and point it to the AEM managed CDN, then they will have to use that specific CDN to manage domains (not Cloud Manager). For more details about CDN in AEM as a Cloud Service please read [this page](/help/implementing/dispatcher/cdn.md).
+>You can manage custom domain names with Cloud Manager **only** if you are using the AEM managed CDN. If a customer brings [their own CDN](/help/implementing/dispatcher/cdn.md) then they will have to use that specific CDN to manage domains. Consequently, when using your own CDN, there is no need to install domains and certificates in Cloud Manager.
 
 ## Workflow {#workflow}
 
