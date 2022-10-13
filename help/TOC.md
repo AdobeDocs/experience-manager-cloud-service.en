@@ -608,6 +608,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Integrations {#integrations}
     + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
     + [3rd Party Commerce Solution](/help/commerce-cloud/integrating/third-party.md)
+    + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
   + AEM Storefront {#storefront}
     + [Getting Started](/help/commerce-cloud/getting-started.md)
     + Authoring {#authoring}
