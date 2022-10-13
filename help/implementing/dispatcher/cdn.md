@@ -26,7 +26,7 @@ Follow the sections below to use Cloud Manager self-service UI to prepare for co
 
 >[!NOTE]
 >
->Custom domains are supported in Cloud Manager **only** if you are using the AEM managed CDN. If you bring your own CDN and [point it to the AEM managed CDN](/help/implementing/dispatcher/cdn.md) you will have to use that specific CDN to manage domains not Cloud Manager.
+>Custom domains are supported in Cloud Manager **only** if you are using the AEM managed CDN. If you bring your own CDN and [point it to the AEM managed CDN](#point-to-point-CDN) you will have to use that specific CDN to manage domains not Cloud Manager.
 
 **Restricting traffic**
 
