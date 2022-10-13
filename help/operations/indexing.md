@@ -12,24 +12,17 @@ With AEM as a Cloud Service, Adobe is moving away from an AEM instance-centric m
 Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 1. Users will not have access to the Index Manager of a single AEM Instance to debug, configure or maintain indexing anymore. It is only used for local development and on-prem deployments.
-
 1. Users will not change Indexes on a single AEM Instance nor will they have to worry about consistency checks or reindexing anymore.
-
 1. In general, index changes are initiated before going to production in order to not circumvent quality gateways in the Cloud Manager CI/CD pipelines and not impact Business KPIs in production.
-
 1. All related metrics including search performance in production will be available for customers at runtime in order to provide the holistic view on the topics of Search and Indexing.
-
 1. Customers will be able to set up alerts according to their needs.
-
 1. SREs are monitoring system health 24/7 and will take action as needed and as early as possible.
-
 1. Index configuration is changed via deployments. Index definition changes are configured like other content changes.
-
 1. At a high level on AEM as a Cloud Service, with the introduction of the [Blue-Green deployment model](#index-management-using-blue-green-deployments) two sets of indexes will exist: one set for the old version (blue), and one set for the new version (green).
-
 1. Customers can see whether the indexing job is complete on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
 
-1. Limitations:
+Limitations:
+
 * Currently, index management on AEM as a Cloud Service is only supported for indexes of type `lucene`.
 * Only standard analyzers are supported (that is, those that are shipped with the product). Custom analyzers are not supported.
 * Internally, other indexes might be configured and used for queries. For example, queries that are written against the `damAssetLucene` index might, on Skyline,  in fact be executed against an Elasticsearch version of this index. This difference is typically not visible to the application and user, however certain tools such as the `explain` feature will report a different index. For differences between Lucene indexes and Elastic indexes, see [the Elastic documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers do not need to, and can not, configure Elasticsearch indexes directly.
@@ -146,16 +139,22 @@ Once the new index definition is added, the new application needs to be deployed
 
 >[!NOTE]
 >
->In case you observe the following error in filevault validation <br>
->```[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"``` <br>
->Then either of the following steps can be followed to fix the issue - <br> <br>
->1. Downgrade filevault to version 1.0.4 and add the following to the top level pom :
->```xml 
-><allowIndexDefinitions>true</allowIndexDefinitions>
->```
->Below is an example of where to place the above configuration in the pom.
->```xml
-><plugin>
+>In case you observe the following error in filevault validation
+>
+>`[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"`
+>
+>Then either of the following steps can be followed to fix the issue
+>
+>1. Downgrade filevault to version 1.0.4 and add the following to the top level pom:
+>
+>   ```xml 
+>   <allowIndexDefinitions>true</allowIndexDefinitions>
+>   ```
+>
+>   Below is an example of where to place the above configuration in the pom.
+>
+>   ```xml
+>   <plugin>
 >    <groupId>org.apache.jackrabbit</groupId>
 >    <artifactId>filevault-package-maven-plugin</artifactId>
 >    <configuration>
@@ -171,29 +170,33 @@ Once the new index definition is added, the new application needs to be deployed
 >        ...
 >        </dependencies>
 >    </configuration>
-></plugin>
->```
+>   </plugin>
+>   ```
+>
 >1. Disable nodetype validation. Set the following property in the  jackrabbit-nodetypes section of the configuration of the filevault plugin:
->```xml
-><isDisabled>true</isDisabled>
->``` 
->Below is an example of where to place the above configuration in the pom.
->```xml
-><plugin>
->    <groupId>org.apache.jackrabbit</groupId>
->    <artifactId>filevault-package-maven-plugin</artifactId>
->    ...
->    <configuration>
->    ...
->        <validatorsSettings>
->        ...
->            <jackrabbit-nodetypes>
->                <isDisabled>true</isDisabled>
->            </jackrabbit-nodetypes>
->        </validatorsSettings>
->    </configuration>
-></plugin>
->```
+>
+>   ```xml
+>   <isDisabled>true</isDisabled>
+>   ``` 
+>
+>   Below is an example of where to place the above configuration in the pom.
+>
+>   ```xml
+>   <plugin>
+>       <groupId>org.apache.jackrabbit</groupId>
+>       <artifactId>filevault-package-maven-plugin</artifactId>
+>       ...
+>       <configuration>
+>       ...
+>           <validatorsSettings>
+>           ...
+>               <jackrabbit-nodetypes>
+>                   <isDisabled>true</isDisabled>
+>               </jackrabbit-nodetypes>
+>           </validatorsSettings>
+>       </configuration>
+>   </plugin>
+>   ```
 
 >[!TIP]
 >
