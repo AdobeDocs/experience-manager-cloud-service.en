@@ -43,11 +43,15 @@ Have a look at the October 2022 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in [!DNL Assets] {#features-assets}
+### New features in [!DNL Assets] prerelease {#prerelease-features-assets}
 
-* You can now configure Adobe Experience Manager Assets to [restrict the type of assets that users can upload based on the MIME type](/help/assets/configure-asset-upload-restrictions.md).
+* Experience Manager Assets now allows you to upload documents in other supported formats and preview them in a PDF format. The supported format types include TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, and XLSX.
 
-  ![Asset upload restrictions](/help/assets/assets/asset-upload-restrictions.png)
+  ![PDF rendition for other formats](/help/release-notes/assets/multi-page-other-formats.png)
+
+* Experience Manager Assets now supports SAS Token in addition to the Access Key for authentication while connecting to Azure Blob Storage data source.
+
+* Experience Manager Assets now uses the CLIP (Contrastive Language Image Pre-training)  artificially intelligent framework to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to automatically apply relevant and precise smart tags to uploaded assets, by default.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
