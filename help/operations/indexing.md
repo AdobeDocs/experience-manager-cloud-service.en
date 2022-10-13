@@ -182,7 +182,7 @@ Once the new index definition is added, the new application needs to be deployed
 >   Below is an example of where to place the above configuration in the pom.
 >
 >   ```xml
->   <plugin>
+>    <plugin>
 >       <groupId>org.apache.jackrabbit</groupId>
 >       <artifactId>filevault-package-maven-plugin</artifactId>
 >       ...
@@ -195,7 +195,7 @@ Once the new index definition is added, the new application needs to be deployed
 >               </jackrabbit-nodetypes>
 >           </validatorsSettings>
 >       </configuration>
->   </plugin>
+>    </plugin>
 >   ```
 
 >[!TIP]
