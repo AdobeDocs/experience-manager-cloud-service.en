@@ -17,7 +17,7 @@ The following terms are used in relation to Adobe Experience Manager (AEM) as a 
 
 ## Instances and Pipelines {#instances-and-pipelines}
 
-|Instance|Desription|
+|Instance|Description|
 |---|---|
 |Adobe Pipeline|The mechanism for publishing content from author to publish.|
 |AEM Author Tier|Describes the authoring environment for Sites and Assets.|
