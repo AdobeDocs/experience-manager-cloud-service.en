@@ -9,24 +9,19 @@ The following section outlines the general Release Notes for [!DNL Workfront for
 
 ## Release Date {#release-date}
 
-The release date for the latest version 1.9.3 of [!DNL Workfront for Experience Manager enhanced connector] is September 16, 2022.
+The release date for the latest version 1.9.4 of [!DNL Workfront for Experience Manager enhanced connector] is October 07, 2022.
 
 ## Release highlights {#release-highlights}
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following enhancements and bug fixes:
 
-* Unable to upload a file that is more than 8 GB in size.
-* Issues while auto-publishing assets that are sent from Workfront to AEM.
-* The Root path field is not available for the Tags field while editing a default Metadata Schema Form.
-* Issues while adding new versions in Workfront using AEM workflows.
-* When you execute an AEM search for assets available in Workfront, AEM displays an error message.
-* When you create an AEM workflow for task creation from an asset and do not define a parent task name, the task is not created in Workfront.
+* Unable to view Event Subscriptions tab on the enhanced connector configuration page due to a large number of events.
 
-
+* Workfront is not able to fetch the list of existing folders in a project, which is resulting in creation of duplicate folders.
 
 >[!IMPORTANT]
 >
->Adobe recommends you to [upgrade to the latest 1.9.3 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recommends you to [upgrade to the latest 1.9.4 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Known Issues {#known-issues}
 
@@ -37,6 +32,17 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * Workfront displays a `SERVER_ERROR` message while linking documents to AEM after upgrading to release 8316. To resolve the issue, assign `rep:readProperties` to `content/dam/collections` for `wf-workfront-user` AEM User Group.
 
 ## Previous releases {#previous-releases}
+
+### September 2022 release {#september-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] version 1.9.3, released on September 16, includes the following updates:
+
+* Unable to upload a file that is more than 8 GB in size.
+* Issues while auto-publishing assets that are sent from Workfront to AEM.
+* The Root path field is not available for the Tags field while editing a default Metadata Schema Form.
+* Issues while adding new versions in Workfront using AEM workflows.
+* When you execute an AEM search for assets available in Workfront, AEM displays an error message.
+* When you create an AEM workflow for task creation from an asset and do not define a parent task name, the task is not created in Workfront.
 
 ### August 2022 release {#august-2022-release}
 
