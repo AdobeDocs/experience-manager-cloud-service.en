@@ -12,24 +12,17 @@ With AEM as a Cloud Service, Adobe is moving away from an AEM instance-centric m
 Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 1. Users will not have access to the Index Manager of a single AEM Instance to debug, configure or maintain indexing anymore. It is only used for local development and on-prem deployments.
-
 1. Users will not change Indexes on a single AEM Instance nor will they have to worry about consistency checks or reindexing anymore.
-
 1. In general, index changes are initiated before going to production in order to not circumvent quality gateways in the Cloud Manager CI/CD pipelines and not impact Business KPIs in production.
-
 1. All related metrics including search performance in production will be available for customers at runtime in order to provide the holistic view on the topics of Search and Indexing.
-
 1. Customers will be able to set up alerts according to their needs.
-
 1. SREs are monitoring system health 24/7 and will take action as needed and as early as possible.
-
 1. Index configuration is changed via deployments. Index definition changes are configured like other content changes.
-
 1. At a high level on AEM as a Cloud Service, with the introduction of the [Blue-Green deployment model](#index-management-using-blue-green-deployments) two sets of indexes will exist: one set for the old version (blue), and one set for the new version (green).
-
 1. Customers can see whether the indexing job is complete on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
 
-1. Limitations:
+Limitations:
+
 * Currently, index management on AEM as a Cloud Service is only supported for indexes of type `lucene`.
 * Only standard analyzers are supported (that is, those that are shipped with the product). Custom analyzers are not supported.
 * Internally, other indexes might be configured and used for queries. For example, queries that are written against the `damAssetLucene` index might, on Skyline,  in fact be executed against an Elasticsearch version of this index. This difference is typically not visible to the application and user, however certain tools such as the `explain` feature will report a different index. For differences between Lucene indexes and Elastic indexes, see [the Elastic documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers do not need to, and can not, configure Elasticsearch indexes directly.
@@ -50,7 +43,7 @@ An index definition can be either be:
 
 1. An out-of-the-box index. One example is `/oak:index/cqPageLucene-2`.
 1. A customization of an out-of-the-box index. Such customizations are defined by the customer. One example is `/oak:index/cqPageLucene-2-custom-1`.
-1. A fully custom index. One example is `/oak:index/acme.product-1-custom-2`. To avoid naming collisions, we require that fully custom indexes have a prefix, e.g. `acme.`
+1. A fully custom index. One example is `/oak:index/acme.product-1-custom-2`. To avoid naming collisions, we require that fully custom indexes have a prefix, for example, `acme.`
 
 Notice that both customization of an out-of-the-box index, as well as fully custom indexes, need to contain `-custom-`. Only fully custom indexes must start with a prefix.
 
@@ -82,7 +75,7 @@ Index definitions are marked as custom and versioned:
 
 * The index definition itself (for example `/oak:index/ntBaseLucene-custom-1`)
 
-To deploy a custom or customized index, the index definition (`/oak:index/definitionname`) needs to be delivered via `ui.apps` via Git and the Cloud Manager deployment process. In the FileVault filter, e.g. `ui.apps/src/main/content/META-INF/vault/filter.xml`, list each custom and customized index individually, for example `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. The custom / customized index definition itself will then be stored in the file `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, as follows:
+To deploy a custom or customized index, the index definition (`/oak:index/definitionname`) needs to be delivered via `ui.apps` via Git and the Cloud Manager deployment process. In the FileVault filter, for example, `ui.apps/src/main/content/META-INF/vault/filter.xml`, list each custom and customized index individually, for example `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. The custom / customized index definition itself will then be stored in the file `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, as follows:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
