@@ -51,7 +51,7 @@ Have a look at the October 2022 Release Overview video for a summary of the feat
 
 * Experience Manager Assets now supports SAS Token in addition to the Access Key for authentication while connecting to Azure Blob Storage data source.
 
-* Experience Manager Assets now uses the CLIP (Contrastive Language Image Pre-training)  artificially intelligent framework to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to automatically apply relevant and precise smart tags to uploaded assets, by default.
+* Experience Manager Assets now uses a better artificially intelligent framework to train its image recognition algorithm on tag structure and business taxonomy. This content intelligence is then used to automatically apply relevant and precise smart tags to uploaded image assets, by default.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
