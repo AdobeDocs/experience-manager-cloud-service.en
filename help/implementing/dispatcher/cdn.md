@@ -119,19 +119,6 @@ Presented below are several configuration examples from a number of leading CDN 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
 
-## Content Disposition {#content-disposition}
-
-For the publish tier, the default for serving blobs is as an attachment. This can overridden using the standard [content disposition header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) in the dispatcher.
-
-Below is an example of how the configuration should look like:
-
-```
-<LocationMatch "^\/content\/dam.*\.(pdf).*">
- Header unset Content-Disposition
- Header set Content-Disposition inline
-</LocationMatch>
-```
-
 ## Geolocation Headers {#geo-headers}
 
 The AEM managed CDN adds headers to each request with:

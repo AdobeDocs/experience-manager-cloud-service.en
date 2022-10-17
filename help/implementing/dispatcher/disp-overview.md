@@ -51,6 +51,19 @@ The dispatcher tools are used to validate and debug your project's Dispatcher co
 
 For more information on how to migrate from the legacy configuration model to the more flexible one, provided with AEM archetype 28 onwards, see [this documentation](/help/implementing/dispatcher/validation-debug.md#migrating).
   
+## Content Disposition {#content-disposition}
+
+For the publish tier, the default for serving blobs is as an attachment. This can overridden using the standard [content disposition header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) in the dispatcher.
+
+Below is an example of how the configuration should look like:
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
+
 ## Supported Apache Modules {#supported-directives}
 
 The table below shows the supported apache modules:
@@ -84,9 +97,9 @@ The table below shows the supported apache modules:
 | `mod_macro` | [https://httpd.apache.org/docs/2.4/mod/mod_macro.html](https://httpd.apache.org/docs/2.4/mod/mod_macro.html) |
 
 
-Customers cannot add arbitrary modules, however additional modules may be considered for inclusion in the future. Customers can find the list of directives available for a given Dispatcher version by executing validator’s allowlist command in the SDK.
+Customers cannot add arbitrary modules, however additional modules may be considered for inclusion in the future. Customers can find the list of directives available for a given Dispatcher version by executing validator's allowlist command in the SDK.
 
-The directives allowed in Apache configuration files can be listed by running the validator’s allowlist command:
+The directives allowed in Apache configuration files can be listed by running the validator's allowlist command:
 
 ```
 
