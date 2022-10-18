@@ -24,6 +24,10 @@ Follow the sections below to use Cloud Manager self-service UI to prepare for co
 1. [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
+>[!NOTE]
+>
+>Custom domains are supported in Cloud Manager **only** if you are using the AEM managed CDN. If you bring your own CDN and [point it to the AEM managed CDN](#point-to-point-CDN) you will have to use that specific CDN to manage domains not Cloud Manager.
+
 **Restricting traffic**
 
 By default, for an AEM managed CDN setup, all public traffic can make its way to the publish service, for both production and non-production (development and stage) environments. If you wish to limit traffic to the publish service for a given environment (for example, limiting staging by a range of IP addresses) you can do this in a self-service way via Cloud Manager UI.
@@ -48,10 +52,6 @@ If a customer must use its existing CDN, they may manage it and point it to the 
 * Customer must be able to configure the CDN to work with AEM as a Cloud Service - see the configuration instructions presented below.
 * Customer must have engineering CDN experts that are on call in case related issues arise.
 * Customer must perform and successfully pass a load test before going to production.
-
->[!NOTE]
->
->The Adobe CDN is not optional. Customers bringing their own CDN must point it to the AEM Managed CDN.
 
 Configuration instructions:
 
@@ -84,7 +84,9 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ```
 
-Please note that when using your own CDN, there is no need to install the domains and certificates in Cloud Manager. The routing in Adobe CDN will be done using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>[!NOTE]
+>
+>When using your own CDN, there is no need to install the domains and certificates in Cloud Manager. The routing in the Adobe CDN will be done by using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
 >[!NOTE]
 >
@@ -116,19 +118,6 @@ Presented below are several configuration examples from a number of leading CDN 
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
-
-## Content Disposition {#content-disposition}
-
-For the publish tier, the default for serving blobs is as an attachment. This can overridden using the standard [content disposition header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) in the dispatcher.
-
-Below is an example of how the configuration should look like:
-
-```
-<LocationMatch "^\/content\/dam.*\.(pdf).*">
- Header unset Content-Disposition
- Header set Content-Disposition inline
-</LocationMatch>
-```
 
 ## Geolocation Headers {#geo-headers}
 
