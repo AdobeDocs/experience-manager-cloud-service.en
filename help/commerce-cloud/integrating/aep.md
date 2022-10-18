@@ -473,6 +473,12 @@ As of now, the following events are supported:
 - customUrl
 - referrerUrl
 
+When [Peregrine components](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) are reused in the AEM Commerce project, the following events are supported:
+
+- searchRequestSent
+- searchresponsereceived
+- productPageView
+
 ## Additional Resources {#additional-resources}
 
 For more information, refer to the following resources:
