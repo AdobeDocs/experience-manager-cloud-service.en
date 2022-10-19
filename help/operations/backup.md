@@ -34,7 +34,7 @@ In both cases, the version of your custom code and AEM version remain unchanged.
 The performance metrics of restoring content in AEM as a ContentService refer to the standardized benchmarks:
 
 * **Recovery Time Objective (RTO):** The Recovery Time Objective varies depending on the size of the repository, but as a rule of thumb, once the recovery sequence begins, it should take about 30 minutes.
-* **The Recovery Point Objective (RPO):** The Recovery Point Objective is 24 hours maximum
+* **The Recovery Point Objective (RPO):** The Recovery Point Objective is any point in time for the first 24h and a maximum of 12h for the previous 6 days.
 
 >[!TIP]
 >
