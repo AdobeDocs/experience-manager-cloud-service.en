@@ -68,7 +68,9 @@ which then needs to go under `ui.apps/src/main/content/jcr_root`. All customized
 
 The filter for the package needs to be set such that existing (out-of-the-box indexes) are retained. In the file `ui.apps/src/main/content/META-INF/vault/filter.xml`, each custom (or customized) index needs to be listed, for example as `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. If the index version is later changed, the filter needs to be adjusted.
 
-The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
 
 >[!NOTE]
 >
