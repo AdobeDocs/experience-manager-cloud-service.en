@@ -468,16 +468,31 @@ The [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-co
 
 As of now, the following events are supported:
 
-- addToCart
-- pageView
-- customUrl
-- referrerUrl
+__Experience XDM Events:__
 
-When [Peregrine components](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) are reused in the AEM Commerce project, the following events are supported:
+1. Add to Cart (AEM)
+1. View Page (AEM)
+1. View Product (AEM)
+1. Search Request sent (AEM)
+1. Search Response received (AEM)
 
-- searchRequestSent
-- searchresponsereceived
-- productPageView
+When [Peregrine components](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) are reused in the AEM Commerce project: 
+
+__Experience XDM Events:__
+
+1. Remove from Cart
+1. Open Cart
+1. View Cart 
+1. Instant Purchase
+1. Start Checkout
+1. Complete checkout
+
+__Profile XDM Events:__
+
+1. Sign in
+1. Create Account
+1. Edit Accoun
+
 
 ## Additional Resources {#additional-resources}
 
@@ -485,5 +500,5 @@ For more information, refer to the following resources:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [Experience Platform connector overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
+- [Experience Platform Connector Events](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
 - [Adobe Experience Platform overview](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
-
