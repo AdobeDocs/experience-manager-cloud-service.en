@@ -15,9 +15,9 @@ In addition to the most commonly used browser upload, other methods of adding as
 
 While you can upload and manage any binary file in [!DNL Experience Manager], most commonly used file formats have support for additional services, like metadata extraction or preview/rendition generation. Refer to [supported file formats](file-format-support.md) for details.
 
-You can also choose to have additional processing done on the uploaded assets. A number of asset processing profiles can be configured on the folder, into which assets are uploaded, to add specific metadata, renditions or image processing services. See [process assets when uploaded](#process-when-uploaded).
+You can also choose to have additional processing done on the uploaded assets. A number of asset processing profiles can be configured on the folder, into which assets are uploaded, to add specific metadata, renditions, or image-processing services. See [process assets when uploaded](#process-when-uploaded).
 
-[!DNL Assets] provides the following upload methods. Adobe recommends that you understand your use case and applicability of an upload option before using it.
+[!DNL Assets] provide the following upload methods. Adobe recommends that you understand your use case and applicability of an upload option before using it.
 
 | Upload method       | When to use?   | Primary Persona |
 |---------------------|----------------|-----------------|
@@ -52,7 +52,7 @@ You can also choose to have additional processing done on the uploaded assets. A
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-To upload a file (or multiple files), you can either select them on your desktop and drag on the user interface (web browser) to the destination folder. Alternatively, you can initiate upload from from the user interface.
+To upload a file (or multiple files), you can either select them on your desktop and drag on the user interface (web browser) to the destination folder. Alternatively, you can initiate upload from the user interface.
 
 1. In the [!DNL Assets] user interface, navigate to the location where you want to add digital assets.
 1. To upload the assets, do one of the following:
@@ -103,7 +103,7 @@ You can upload an asset with the same path (same name and same location) as that
    >
    >The option to replace assets is not available if the asset is locked or checked out.
 
-* Create another version: A new version of the existing asset is created in the repository. You can view the two versions in the [!UICONTROL Timeline] and can revert to the previously existing version if required.
+* Create another version: A new version of the existing asset is created in the repository. You can view the two versions in the [!UICONTROL Timeline] and can revert to the previously existing version if necessary.
 * Keep both: If you choose to keep both assets, the new asset is renamed.
 
 To retain the duplicate asset in [!DNL Assets], click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, click **[!UICONTROL Delete]**.
@@ -112,7 +112,7 @@ To retain the duplicate asset in [!DNL Assets], click **[!UICONTROL Keep]**. To 
 
 [!DNL Experience Manager Assets] prevents you from uploading assets with the forbidden characters in their filenames. If you try to upload an asset with filenames containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
 
-To suit specific file naming conventions for your organization, the [!UICONTROL Upload Assets] dialog lets you specify long names for the files that you upload. The following (space-separated list of) characters are not supported:
+To suit specific file-naming conventions for your organization, the [!UICONTROL Upload Assets] dialog lets you specify long names for the files that you upload. The following (space-separated list of) characters are not supported:
 
 * Invalid characters for asset name: `* / : [ \\ ] | # % { } ? &`
 * Invalid characters for asset folder name: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
@@ -127,13 +127,13 @@ The bulk asset ingestor can handle very large number of assets efficiently. Howe
 
 To upload larger number of files, use one of the following approaches. Also, see the [use cases and methods](#upload-methods-comparison)
 
-* [Asset upload APIs](developer-reference-material-apis.md#asset-upload): Use a custom upload script or tool that leverages APIs to add additional handling of assets (for example, translate metadata or rename files), if required.
+* [Asset upload APIs](developer-reference-material-apis.md#asset-upload): Use a custom upload script or tool that leverages APIs to add additional handling of assets (for example, translate metadata or rename files), if necessary.
 * [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Useful for creative professionals and marketers who upload assets from their local file system. Use it to upload nested folders available locally.
 * [Bulk ingestion tool](#asset-bulk-ingestor): Use for ingestion of large amounts of assets either occasionally or initially when deploying [!DNL Experience Manager].
 
 ### Asset Bulk Import tool {#asset-bulk-ingestor}
 
-The tool is provided only to the administrators group to use for large-scale ingestion of assets from Azure or S3 datastores. See a video walk-through of the configuration and ingestion.
+The tool is provided only to the administrators' group to use for large-scale ingestion of assets from Azure or S3 datastores. See a video walk-through of the configuration and ingestion.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
@@ -165,6 +165,8 @@ To configure the Bulk Import tool, follow these steps:
 1. Select the data source type from the **[!UICONTROL Import Source]** dropdown list. 
 
 1. Provide the values to create a connection with the data source. For example, if you select **Azure Blob Storage** as the data source, specify the values for Azure storage account, Azure blob container, and Azure access key.
+
+1. Select the required authentication mode from the drop-down list. **Azure Access Key** provides complete access to the Azure storage account, whereas **Azure SAS Token** allows the administrator to limit the capabilities of the token using permissions and expiration policies.
 
 1. Provide the name of the root folder that contains assets in the data source in the **[!UICONTROL Source Folder]** field.
 
@@ -214,7 +216,7 @@ Select the configuration and click **[!UICONTROL Dry Run]** to invoke a test run
 
 When you import assets or folders in bulk, [!DNL Experience Manager Assets] imports the whole structure of what exists in the import source. [!DNL Experience Manager] follows the inbuilt rules for special characters in the asset and folder names, therefore these filenames need sanitization. For both folder name and asset name, the title defined by the user remains unchanged and is stored in `jcr:title`. 
 
-During bulk import, [!DNL Experience Manager] look for the existing folders  to avoid reimporting the assets and folders, and also verifies the sanitization rules applied in the parent folder where the import takes place. If the sanitization rules are applied in the parent folder, the same rules are applied to the import source. For new import, the following sanatization rules are applied to manage the filenames of assets and folders.  
+During bulk import, [!DNL Experience Manager] look for the existing folders  to avoid reimporting the assets and folders, and also verifies the sanitization rules applied in the parent folder where the import takes place. If the sanitization rules are applied in the parent folder, the same rules are applied to the import source. For new import, the following sanitization rules are applied to manage the filenames of assets and folders.  
 
 **Disallowed names in bulk import**
 
@@ -373,7 +375,7 @@ Technical details of the upload APIs and protocol, and links to open-source SDK 
 
 * Direct binary upload is a new method to upload assets. It is supported by default by the product capabilities and clients, like [!DNL Experience Manager] user interface, [!DNL Adobe Asset Link], and [!DNL Experience Manager] desktop app. Any custom code that is customized or extended by customers technical teams must use the new upload APIs and protocols.
 
-* Adobe recommends adding not more than 1000 assets in each folder in [!DNL Experience Manager Assets]. While you can add more assets to a folder, it is possible that you will experience performance issues such as slower navigation to such folders.
+* Adobe recommends adding not more than 1000 assets in each folder in [!DNL Experience Manager Assets]. While you can add more assets to a folder, it is possible that you experience performance issues such as slower navigation to such folders.
 
 * When you select **[!UICONTROL Replace]** in the [!UICONTROL Name Conflict] dialog, the asset ID is regenerated for the new asset. This ID is different from the ID of the previous asset. If [Assets Insights](/help/assets/assets-insights.md) is enabled to track impressions or clicks with [!DNL Adobe Analytics], the regenerated asset ID invalidates the data-captured for the asset on [!DNL Analytics].
 
