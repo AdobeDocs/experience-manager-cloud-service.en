@@ -45,13 +45,16 @@ Have a look at the October 2022 Release Overview video for a summary of the feat
 
 ### New features in [!DNL Assets] prerelease {#prerelease-features-assets}
 
+* Experience Manager Assets now uses an improved artificial intelligence framework for image Smart Tags. This content intelligence results in better relevancy and precision of Smart Tags available to all images assets on ingestion. In addition, orientation information is populated in `cq:tags`, which enables better Search results using the Orientation filter.
+
+   If you are interested in participating in the Beta, [fill this form](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) by Oct 31.
+
 * Experience Manager Assets now allows you to upload documents in other supported formats and preview them in a PDF format. The supported format types include TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, and XLSX.
 
   ![PDF rendition for other formats](/help/release-notes/assets/multi-page-other-formats.png)
 
-* Experience Manager Assets now supports SAS Token in addition to the Access Key for authentication while connecting to Azure Blob Storage data source.
 
-* Experience Manager Assets now uses a better artificially intelligent framework to train its image recognition algorithm on tag structure and business taxonomy. This content intelligence is then used to automatically apply relevant and precise smart tags to uploaded image assets, by default.
+* Experience Manager Assets now supports SAS Token in addition to the Access Key for authentication while connecting to Azure Blob Storage data source.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
