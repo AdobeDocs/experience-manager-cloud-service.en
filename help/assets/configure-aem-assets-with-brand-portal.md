@@ -394,7 +394,7 @@ Perform the following steps to configure the Brand Portal cloud service:
 You can now test the configuration by checking the distribution agent and publishing assets to Brand Portal.
 
 **Allowlist Egress IPs in SPS if secure preview enabled**
-If using Dynamic Media-Scene7 [with [secure preview enabled](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) for a company), then it is advised that Scene7 company administrator [allowlist the public egress IPs](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) for respective regions using SPS (Scene7 Publishing System) flash UI.
+If using Dynamic Media-Scene7 with [secure preview enabled](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) for a company), then it is advised that Scene7 company administrator [allowlist the public egress IPs](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) for respective regions using SPS (Scene7 Publishing System) flash UI.
 The egress IPs are as follows:
 
 | **Region**  | **Egress IP** |
