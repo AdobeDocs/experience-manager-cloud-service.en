@@ -29,12 +29,12 @@ Cloud Manager provides two types of backups from which you may restore content.
 * **Point In Time (PIT):** This type restores from continuous system backups from the last 24 hours from the current time.
 * **Last week:** This type restores from system backups in the last seven days excluding the previous 24 hours.
 
-In both cases, the version of your custom code and AEM version remain unchanged.
+In both cases, the version of your custom code and the AEM version remain unchanged.
 
 The performance metrics of restoring content in AEM as a ContentService refer to the standardized benchmarks:
 
 * **Recovery Time Objective (RTO):** The Recovery Time Objective varies depending on the size of the repository, but as a rule of thumb, once the recovery sequence begins, it should take about 30 minutes.
-* **The Recovery Point Objective (RPO):** The Recovery Point Objective is any point in time for the first 24h and a maximum of 12h for the previous 6 days.
+* **The Recovery Point Objective (RPO):** The Recovery Point Objective is any point in time for the first 24h and a maximum of 12h for the previous six days.
 
 >[!TIP]
 >
@@ -48,13 +48,13 @@ Usage of the self-service restore mechanism is subject to the following limitati
 * A maximum of ten successful restores are allowed across all environments in a program per calendar month.
 * After environment creation, it takes six hours before the first backup snapshot is created. Until this snapshot is created, no restore can be performed on the environment.
 * A restore operation will not initiate if there is a full stack or web tier config pipeline currently running for the environment.
-* A restore can not be initiated if another restore is already running on the same environment.
+* A restore cannot be initiated if another restore is already running on the same environment.
 * In rare cases, because of the 24 hour/seven day limit on backups, the selected backup may become unavailable due to a delay between when it was selected and when the restore is initiated.
 * Data from deleted environments is permanently lost and cannot be recovered.
 
 ## Restoring Content {#restoring-content}
 
-First determine the the time frame of the content that you wish to restore. Then to restore your environment's content from a backup perform these steps.
+First determine the time frame of the content that you wish to restore. Then to restore your environment's content from a backup perform these steps.
 
 >[!NOTE]
 >
@@ -105,7 +105,7 @@ When the restore successfully completes the environment will:
 
 ## Choosing the Right Backup {#choosing-backup}
 
-Restores only restore content to AEM. For this reason, you must carefully consider code changes that were made between your desired restore point and the current time by reviewing the commit history between the your current commit ID and the one being restored to.
+Restores only restore content to AEM. For this reason, you must carefully consider code changes that were made between your desired restore point and the current time by reviewing the commit history between the current commit ID and the one being restored to.
 
 There are several scenarios.
 
