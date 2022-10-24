@@ -19,11 +19,9 @@ You start on the Content Fragment Models console. The Content Fragment console c
 
 ![The Content Fragment Model console](assets/step-1.png)
 
-If you wish to navigate here yourself at a later point, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here, you choose the **Tools** tab and then **General** -&gt; **Content Fragment Models**.
-
 >[!TIP]
 >
->If you are new to AEM, see the [Additional Resources section](#additional-resources) of this document for basic handling documentation before continuing with this guide.
+>If you would like to know more about navigation in AEM, see the [Additional Resources section](#additional-resources) of this document for more information on AEM basic handling.
  
 ## Step 2 - Create a Model {#create-model}
 
