@@ -214,7 +214,7 @@ Index management is currently only supported for indexes of type `lucene`, with 
 
 Only built-in analyzers are supported (that is, those that are shipped with the product). Custom analyzers are not supported.
 
-To ensure performant operations, custom indexes need to be configured such that they are efficiently updated, and small. As a guideline, we recommend to verify on a development environment that the custom indexes are smaller than out-of-the-box indexes. To ensure stability of the system, AEM prevents deploying indexes that would negatively affect system stability and performance, and disables such indexes at runtime.
+To ensure performant operations, custom indexes need to be configured such that they are efficiently updated, and small. As a guideline, we recommend to verify on a development environment that the total index size increases by at most 100% after adding custom indexes and customizing out-of-the-box indexes, compared to the total index sizes of an out-of-the-box environment. To ensure stability of the system, AEM may prevent deploying indexes that would negatively affect system stability and performance.
 
 ### Adding an Index {#adding-an-index}
 
