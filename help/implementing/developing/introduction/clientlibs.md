@@ -108,7 +108,7 @@ Once your client library folder is [configured as required,](#creating-clientlib
 
 The `allowProxy` property allows you to request:
 
-* The clientlib via j`/etc.clientlibs/myprojects/clientlibs/foo.js`
+* The clientlib via `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * The static image via `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
 
 ### Loading Client Libraries via HTL {#loading-via-htl}
