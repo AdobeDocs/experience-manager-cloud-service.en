@@ -13,7 +13,7 @@ Adobe offers to [integrate [!DNL Workfront] and [!DNL Adobe Experience Manager A
 
 >[!NOTE]
 >
->Adobe does not support using the legacy or enhanced connectors and Experience Manager integration in parallel.
+>Adobe does not support using the Workfront for AEM connector or Workfront for Experience Manager enhanced connector and Experience Manager integration in parallel.
 
 With the native Experience Manager integration and [!DNL Workfront for Experience Manager enhanced connector], you can:
 
