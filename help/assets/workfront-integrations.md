@@ -9,13 +9,11 @@ exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 
 [!DNL Adobe Workfront] is a work management application that helps you manage the entire lifecycle of work in one place. The integration between [!DNL Workfront] and [!DNL Adobe Experience Manager Assets] lets organizations improve content velocity and time-to-market by intrinsically connecting work and digital asset management. Within the context of managing their work in Workfront, users have access to the required documents and images.
 
-Adobe offers to [integrate [!DNL Workfront] and [!DNL Adobe Experience Manager Assets] natively, using a legacy connector, or using an enhanced connector](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html). In case of a native integration, you do not need a connector to integrate the two solutions.
+Adobe offers to [integrate [!DNL Workfront] and [!DNL Adobe Experience Manager Assets] natively (supporting Assets Essentials and Assets as a Cloud Service), using the Workfront for AEM connector, or using the Workfront for Experience Manager enhanced connector](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html). In case of a native integration, you do not need a connector to integrate the two solutions.
 
 >[!NOTE]
 >
->Adobe does not support using the legacy or enhanced connectors and Experience Manger integration in parallel.
-
-The [!DNL Workfront for Experience Manager enhanced connector] enables enhanced business processes with end-to-end workflows and provides personalized end-to-end client experiences and central storage. Adobe offers a standard connector and an enhanced connector to integrate the two solutions.
+>Adobe does not support using the legacy or enhanced connectors and Experience Manager integration in parallel.
 
 With the native Experience Manager integration and [!DNL Workfront for Experience Manager enhanced connector], you can:
 
@@ -43,7 +41,7 @@ See the platform support and [prerequisites for the enhanced connector](https://
 
 The following are the details of the functionalities available through various types of integrations between [!DNL Assets] and [!DNL Workfront].
 
-| Feature   |Description  | [!DNL Workfront] and [!DNL Assets Essentials] | [!DNL Workfront] for [!DNL AEM] connector | [!DNL Workfront for Experience Manager enhanced connector] | Workfront and [!DNL Experience Manager as a Cloud Service]|
+| Feature   |Description  | [!DNL Workfront] and [!DNL Assets Essentials] *No Connector (OOTB)* | [!DNL Workfront] for [!DNL AEM] connector *Requires Connector*| [!DNL Workfront for Experience Manager enhanced connector] *Requires Connector*| Workfront and [!DNL Experience Manager as a Cloud Service] *No Connector (OOTB)*|
 |----|----|----|------|-----|-----|
 | Deployment methods   | Appropriate for which [!DNL Assets] offering. | Assets Essentials| Cloud Service, Adobe Managed Services, On-premise | Cloud Service, Adobe Managed Services, On-premise| Cloud Service, Adobe Managed Services, On-premise|
 | **General** |
