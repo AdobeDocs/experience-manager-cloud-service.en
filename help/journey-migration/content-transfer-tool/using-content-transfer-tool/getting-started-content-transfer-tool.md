@@ -28,16 +28,8 @@ The Content Transfer Tool can be downloaded as a zip file from the Software Dist
 
 The source AEM instance may be running behind a firewall where it can only reach certain hosts which have been added to an Allow List. In order to successfully run an extraction, the following endpoints will need to be accessible from the instance that is running AEM:
 
-* The target AEM as a Cloud Service environment: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 * The Azure blob storage service: `casstorageprod.blob.core.windows.net`
 * The User Mapping IO endpoint: `usermanagement.adobe.io`
-
-To test connectivity to the target AEM as a Cloud Service environment, issue the following cURL command from the shell of the source instance (replace `program_id`, `environment_id`, and `migration_token`):
-
-`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
-
->[!NOTE]
->If an `HTTP/2 200` is received, a connection to AEM as a Cloud Service was successful.
 
 ### Enable SSL Logging {#enable-ssl-logging}
 
@@ -59,9 +51,6 @@ Understanding SSL/TLS connection problems can sometimes be difficult. To toubles
 >abstract="Learn how to use Content Transfer Tool to migrate the content to AEM as a Cloud Service (Author/Publish)."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" See Demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial - using Content Transfer Tool"
-
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
-<!-- Need to remove the video -->
 
 The following section applies to the new version of the Content Transfer Tool. Follow this section to learn how to use the Content Transfer Tool to migrate content to AEM as a Cloud Service:
 
@@ -108,7 +97,7 @@ The following section applies to the new version of the Content Transfer Tool. F
 
 To populate the migration set you created in the Cloud Acceleration Manager, you need to install the latest version of the Content Transfer Tool on your source Adobe Experience Manager (AEM) instance. Follow this section to learn how to populate the migration set.
 
-1. After installing the latest version (v2.0.10) of the Content Transfer Tool on your source Adobe Experience Manager instance, go to **Operations - Content Migration**
+1. After installing the latest version of the Content Transfer Tool on your source Adobe Experience Manager instance, go to **Operations - Content Migration**
 
 1. Click on **Create Migration Set**
 
