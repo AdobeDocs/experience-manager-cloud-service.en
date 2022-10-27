@@ -117,7 +117,7 @@ The system properties are as follows.
 * `sling.it.instances - should be set to 2`
 * `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
 * `sling.it.instance.runmode.1 - should be set to author`
-* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
+* `sling.it.instance.adminUser.1 - should be set to the author admin user, for example, admin`
 * `sling.it.instance.adminPassword.1 - should be set to the author admin password`
 * `sling.it.instance.url.2 - should be set to the publish URL, for example, http://localhost:4503`
 * `sling.it.instance.runmode.2 - should be set to publish`
