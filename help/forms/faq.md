@@ -88,6 +88,8 @@ Form Data Model does not provide a method to use custom certificates for authent
 * **I have designed a [JSON schema to create an adaptive form](adaptive-form-json-schema-form-model.md). The JSON schema defines events for some components of adaptive forms. Does AEM Forms as a Cloud Service supports events?**
   Create the Adaptive Form based on the JSON schema on Experience Manager 6.5 Forms environment and use the [Migration utility](migrate-to-forms-as-a-cloud-service.md) to migrate such Adaptive Forms to AEM Forms as a Cloud Service. The utility converts such events into client libraries and you can continue using Adaptive Forms with events in a Cloud Service environment.
 
+<!-- 
+
 * **Is there any AEM Forms as a Cloud Service connector for Microsoft Power Automate?**
 
   Yes, Adobe provides an Adobe Experience Manager connector to access [Adobe Experience Manager Forms - Communication capabilities](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html) through Microsoft Power Automate. You can create a PDF document that is based on a form design and XML form data or create PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) and other Printer Definition Language documents. 
@@ -112,5 +114,7 @@ Form Data Model does not provide a method to use custom certificates for authent
     ![Use your Service Credential JSON for credential details](assets/forms-aem-pa-connector-connection.png)
 
     A sample Service Credential JSON file fields mapped to Adobe Experience Manager connector for Microsoft Power Automate.
+
+    --> 
 
 
