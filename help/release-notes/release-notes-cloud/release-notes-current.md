@@ -54,7 +54,7 @@ Have a look at the October 2022 Release Overview video for a summary of the feat
   ![PDF rendition for other formats](/help/release-notes/assets/multi-page-other-formats.png)
 
 
-* Experience Manager Assets now [supports SAS Token](../../assets/add-assets.md#asset-bulk-ingestor) in addition to the Access Key for authentication while connecting to Azure Blob Storage data source while ingesting assets using the Bulk Import tool.
+* Experience Manager Assets now [supports SAS Token](../../assets/add-assets.md#asset-bulk-ingestor) in addition to the Access Key for authentication while connecting to Azure Blob Storage data source for ingesting assets using the Bulk Import tool.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
