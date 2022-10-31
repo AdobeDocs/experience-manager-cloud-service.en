@@ -62,6 +62,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
       + [Release Notes for 2022.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
       + [Release Notes for 2022.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
       + [Release Notes for 2022.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
@@ -273,8 +274,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Understanding Segmentation](/help/sites-cloud/authoring/personalization/segmentation.md)
       + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-    + Campaign {#campaign}
-      + [Creating Newsletters with AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
   + Administering {#administering}
     + Content Fragments {#content-fragments}
       + [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -343,7 +342,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
     + [IMS Configuration for use when Integrating with Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
-    + [Integrating with Adobe Campaign Classic](/help/sites-cloud/integrating/integrating-campaign-classic.md)
+    + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
   + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
   + [Overview and what's new](/help/assets/overview.md)
@@ -471,11 +470,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
   + Integration with Adobe Workfront {#integrations}
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
+    + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
     + [Install [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
     + [Remove external dependencies for existing installations](/help/assets/remove-external-dependencies.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
-    + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-    + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
+    + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)    
 + Forms {#forms}
   + [Introduction](/help/forms/home.md)
   + [Key features](/help/forms/key-features.md)
@@ -607,6 +606,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Integrations {#integrations}
     + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
     + [3rd Party Commerce Solution](/help/commerce-cloud/integrating/third-party.md)
+    + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
   + AEM Storefront {#storefront}
     + [Getting Started](/help/commerce-cloud/getting-started.md)
     + Authoring {#authoring}
