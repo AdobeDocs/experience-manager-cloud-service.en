@@ -49,7 +49,7 @@ Have a look at the October 2022 Release Overview video for a summary of the feat
 
    If you are interested in participating in the Beta, [fill this form](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) by November 07.
 
-* Experience Manager Assets now allows you to upload documents in other supported formats and preview them in a PDF format. The supported format types include TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, and XLSX.
+* Experience Manager Assets now allows you to upload documents in other supported format types and preview them in a PDF format. The supported format types include TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, and XLSX.
 
   ![PDF rendition for other formats](/help/release-notes/assets/multi-page-other-formats.png)
 
