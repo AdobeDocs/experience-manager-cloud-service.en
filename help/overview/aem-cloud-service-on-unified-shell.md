@@ -24,14 +24,14 @@ The benefits of this are:
 * Easy switching between organizations or switching to a different application
 * Improved product help
 * Easy in-product feedback button to report issues or share ideas with Adobe
-* Access to global product announcements and notifications in addition to notifications specific AEM as a Cloud Service
+* Access to global product announcements and notifications in addition to notifications specific to AEM as a Cloud Service
 
 ## Disabling Unified Shell {#disabling-unified-shell}
 
 Out of the box, AEM as a Cloud Service has unified shell enabled. However, in case the top-header has been customized, it is recommended to disable unified shell to avoid any issues with the customizations. To disable unified shell, follow the steps below:
 
 >[!NOTE]
->Unified Shell can be disabled only by an account with administrative privilegedges.
+>Unified Shell can be disabled only by an account with administrative privileges.
 
 1. Go to **Tools - Cloud Services**. 
 
@@ -43,7 +43,7 @@ Out of the box, AEM as a Cloud Service has unified shell enabled. However, in ca
 
    ![image](/help/overview/assets/unifiedshell3.png)
 
-## Changing to Dark Theme {#chaning-to-dark-theme}
+## Changing to Dark Theme {#changing-to-dark-theme}
 
 To change to the dark theme, click on your profile icon. This will display a pop-over as shown below. You can use the toggle to switch to a dark theme for the Unified Shell.
 
