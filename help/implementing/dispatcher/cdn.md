@@ -9,7 +9,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="CDN in AEM as a Cloud Service"
->abstract="AEM as Cloud Service is shipped with a built-in CDN. It’s main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications."
+>abstract="AEM as Cloud Service is shipped with a built-in CDN. It's main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications."
 
 AEM as Cloud Service is shipped with a built-in CDN. Its main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications.
 
@@ -19,10 +19,14 @@ Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague
 
 ## AEM Managed CDN  {#aem-managed-cdn}
 
-Follow the sections below to use Cloud Manager self-service UI to prepare for content delivery by using AEM’s out-of-the-box CDN:
+Follow the sections below to use Cloud Manager self-service UI to prepare for content delivery by using AEM's out-of-the-box CDN:
 
 1. [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+
+>[!NOTE]
+>
+>Custom domains are supported in Cloud Manager **only** if you are using the AEM managed CDN. If you bring your own CDN and [point it to the AEM managed CDN](#point-to-point-CDN) you will have to use that specific CDN to manage domains not Cloud Manager.
 
 **Restricting traffic**
 
@@ -32,7 +36,7 @@ Refer to [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lis
 
 >[!CAUTION]
 >
->Only requests from the allowed IPs will be served by AEM’s managed CDN. If you point your own CDN to the AEM managed CDN, then make sure the IPs of your CDN are included in the allowlist.
+>Only requests from the allowed IPs will be served by AEM's managed CDN. If you point your own CDN to the AEM managed CDN, then make sure the IPs of your CDN are included in the allowlist.
 
 ## Customer CDN points to AEM Managed CDN {#point-to-point-CDN}
 
@@ -49,13 +53,9 @@ If a customer must use its existing CDN, they may manage it and point it to the 
 * Customer must have engineering CDN experts that are on call in case related issues arise.
 * Customer must perform and successfully pass a load test before going to production.
 
->[!NOTE]
->
->The Adobe CDN is not optional. Customers bringing their own CDN must point it to the AEM Managed CDN.
-
 Configuration instructions:
 
-1. Point your CDN to the Adobe CDN’s ingress as its origin domain. For example, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Point your CDN to the Adobe CDN's ingress as its origin domain. For example, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. SNI must also be set to the Adobe CDN's ingress.
 1. Set the Host header to the origin domain. For example: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Set the `X-Forwarded-Host` header with the domain name so AEM can determine the host header. For example: `X-Forwarded-Host:example.com`.
@@ -84,7 +84,9 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ```
 
-Please note that when using your own CDN, there is no need to install the domains and certificates in Cloud Manager. The routing in Adobe CDN will be done using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>[!NOTE]
+>
+>When using your own CDN, there is no need to install the domains and certificates in Cloud Manager. The routing in the Adobe CDN will be done by using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
 >[!NOTE]
 >
