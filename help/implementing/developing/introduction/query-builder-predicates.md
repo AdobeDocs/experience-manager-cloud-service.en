@@ -239,10 +239,11 @@ It does not support facet extraction.
 * **`path`** - This defines the path pattern.
   * Depending on the `exact` property, either the entire subtree will match (like appending `//*` in xpath, but note that this does not include the base path) or only an exact path matches, which can include wildcards (`*`).
     * Defaults to `true`
-  * If the `self`property is set, the entire subtree including the base node will be searched.
+<!---   * If the `self`property is set, the entire subtree including the base node will be searched.--->
 * **`exact`** - if `exact` is `true`, the exact path must match, but it can contain simple wildcards (`*`), that match names, but not `/`; if it is `false` (default) all descendants are included (optional)
 * **`flat`** - searches only the direct children (like appending `/*` in xpath) (only used if `exact` is not true, optional)
-* **`self`** - searches the subtree but includes the base node given as path (no wildcards)
+* **`self`** - searches the subtree but includes the base node given as path (no wildcards).
+  * *Important Note*: An issue has been identified with `self` property in the current implementation of querybuilder and using it in queries may not produce correct search results. Changing the current implementation of `self` property is also not feasible since it might break the existing applications that rely on it. Due to this, `self` property has been deprecated and it is advised to avoid using it.
 
 ### property {#property}
 
