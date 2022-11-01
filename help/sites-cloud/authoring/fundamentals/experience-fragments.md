@@ -307,7 +307,7 @@ When editing an Experience Fragment available Building Blocks are displayed in t
 Details of your fragment can be seen:
 
 1. Navigate to the location of your Experience Fragments (do not navigate further down to the variations within the fragment). 
-   Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an export to Target: <!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
+   Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-cloud/integrating/integrating-adobe-target.md):
 
    ![Experience Fragment details](/help/sites-cloud/authoring/assets/xf-15.png)
 
@@ -325,21 +325,25 @@ Details of your fragment can be seen:
 
    ![Experience Fragment properties](/help/sites-cloud/authoring/assets/xf-17.png)
 
-    * **Basic**
-        * **Title** - mandatory
-        * **Description**
-        * **Tags**
-        * **Total number of variants** - information only
-        * **Number of web variants** - information only
-        * **Number of non-web variants** - information only
-        * **Number of pages using this fragment** - information only
-    * **Cloud Services**
-        * **Cloud Configuration**
-        * **Cloud Service Configurations**
-        * **Facebook page ID**
-        * **Pinterest board**
-    * **References**
-        * A list of references
+   * **Basic**
+     * **Title** - mandatory
+     * **Description**
+     * **Tags**
+     * **Total number of variants** - information only
+     * **Number of web variants** - information only
+     * **Number of non-web variants** - information only
+     * **Number of pages using this fragment** - information only
+   * **Cloud Services**
+     * **Cloud Configuration**
+     * **Cloud Service Configurations**
+     * **Facebook page ID**
+     * **Pinterest board**
+   * **References**
+     * A list of references
+   * **Personalization**
+     * **ContextHub Path**
+     * **Segments Path**
+     * **Brand**
 
 ## The Plain HTML Rendition {#the-plain-html-rendition}
 
