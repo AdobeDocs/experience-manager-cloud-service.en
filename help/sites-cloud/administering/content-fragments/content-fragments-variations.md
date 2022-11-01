@@ -376,7 +376,7 @@ They will be added as a reference, in your current location in your fragment.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_contentfragments_variations"
->title="Managing variations"
+>title="Variations - Authoring Fragment Content"
 >abstract="Learn how make variations of content for use with specific channels."
 >additional-url="https://video.tv.adobe.com/v/333295" text="Content Fragment Variations"
 
