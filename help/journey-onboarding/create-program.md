@@ -33,6 +33,10 @@ There are two different type of programs:
 
 Since they serve different purposes, the different environments have different options. However the process of creating them is similar. For this onboarding journey we will create a sandbox environment.
 
+>[!NOTE]
+>
+>By default a user with access to an AEM environment will also have Cloud >Manager User role. This role in and of itself is insufficient to give the user access to program details view. Such a user with only Cloud Manager user role is able to navigate via the program menu options to the AEM environment author URL (if environments exist). Such users must contact their administrator if they wish to get program-level access.
+
 ## Creating a Sandbox Program {#create-sandbox}
 
 Follow these steps to create a sandbox program.
