@@ -24,6 +24,10 @@ To help with this see:
 
 * And some [sample GraphQL queries](#graphql-sample-queries), based on the sample content fragment structure (Content Fragment Models and related Content Fragments).
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_headless_graphql_sample"
+>title="Learning to use GraphQL with AEM - Sample Content and Queries"
+>abstract="Learn to use GraphQL with AEM to serve content headlessly by exploring sample content and queries."
 
 ## GraphQL - Sample Queries using the Sample Content Fragment Structure {#graphql-sample-queries-sample-content-fragment-structure}
 
@@ -1503,6 +1507,56 @@ This query interrogates:
   }
 }
 ```
+
+<!-- CQDOC-19418 -->
+
+<!--
+
+### Sample List Query using offset and limit {#sample-list-offset-limit}
+
+This query interrogates:
+
+* for the page of results containing up to five articles, starting from the fifth article from the *complete* results list
+
+**Sample Query**
+
+```xml
+query {
+   articleList(offset: 5, limit:5) {
+    items {
+      author
+      _path
+    }
+  }
+}
+```
+
+### Sample Pagination Query using first and after  {#sample-pagination-first-after}
+
+This query interrogates:
+
+* for the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list
+
+**Sample Query**
+
+```xml
+query {
+    adventurePaginated(first: 5, after: "ODg1MmMyMmEtZTAzMy00MTNjLThiMzMtZGQyMzY5ZTNjN2M1") {
+        edges {
+          cursor
+          node {
+            adventureTitle
+          }
+        }
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+    }
+}
+```
+
+-->
 
 ## The Sample Content Fragment Structure (used with GraphQL) {#content-fragment-structure-graphql}
 

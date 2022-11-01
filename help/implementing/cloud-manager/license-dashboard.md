@@ -49,7 +49,7 @@ Each section summarizes what is available and how it is currently used, if at al
 
 ### What is a content request? {#what-is-a-content-request}
 
-A content request is a request coming into AEM Sites or any customer-provided caching system  such as a content delivery network to deliver content or data in either HTML format as a page view or in JSON format as an API call.
+A content request is a request coming into AEM Sites or any customer-provided caching system  such as a content delivery network to deliver content or data in either HTML format as a page view or in JSON format as an API call.
 
 One content request is counted for each page view or for every five API calls, measured at the ingress of the first caching system to receive a content request. Content requests are counted against production environments only.
 
@@ -57,40 +57,30 @@ Content Requests exclude requests or activity initiated by or on behalf of Adobe
 
 ### How does Adobe Experience Manager measure content requests? {#how-are-content-requests-measured}
 
-Content requests are tracked on AEM as a Cloud Service's edge servers. Origin traffic does not count towards content requests. The CDN built into AEM as a Cloud Service tracks valid HTML and JSON requests.
+Content requests are tracked on AEM as a Cloud Service's edge servers. Origin traffic does not count towards content requests. The CDN built into AEM as a Cloud Service tracks valid HTML and JSON requests.
 
 AEM also has rules in place to exclude well-known bots, including well-known services visiting the site regularly to refresh their search index or service.
 
-The following is a non-exhaustive list of examples of excluded well-known services.
-
-* AddSearchBot 
-* AhrefsBot 
-* Applebot 
-* Ask Jeeves Corporate Spider 
-* Bingbot 
-* BingPreview 
-* BLEXBot 
-* BuiltWith 
-* Bytespider 
-* CrawlerKengo 
-* Facebookexternalhit 
-* Google AdsBot 
-* Google AdsBot Mobile 
-
 ### Why does my Analytics report show different results than the AEM Content Requests? {#why-are-reports-different}
 
-Content Requests will have variances with an organization’s Analytics reporting tools as summarized in this table.
+Content Requests will have variances with an organization's Analytics reporting tools as summarized in this table.
 
 |Reason For Variance|Explanation|
 |---|---|
-|Tagging|All pages that are tracked as AEM content requests may or may not be tagged with Analytics tracking.<br>All API calls that are tracked as AEM content requests will not be tagged by an organization’s Analytics tool.<br>Pages or API calls may be tagged to track actions instead of views.|
+|Tagging|All pages that are tracked as AEM content requests may or may not be tagged with Analytics tracking. All API calls that are tracked as AEM content requests will not be tagged by an organization's Analytics tool.<br>Pages or API calls may be tagged to track actions or just unique page views instead of all views.|
 |Tag Management Rules|Tag management rule settings may result in a variety of data collection configurations on a page, resulting in some combination of discrepancies with content request tracking.|
 |Bots|Unknown bots that have not been pre-identified and removed by AEM may cause tracking discrepancies.|
 |Report Suites|Pages that are part of the same AEM instance and domain may send data to different Analytics report suites.|
 |Third-Party Monitoring and Security Tools|Monitoring and security scanning tools may generate content requests for AEM that are not tracked in Analytics reports.|
 |Prefetch Requests|Using a prefetch service to pre-load pages to increase speed can cause significant content request traffic increases.|
-|DDOS|While Adobe makes every effort to automatically detect and filter out traffic from DDOS attacks, there is no guarantee that all possible DDOS attacks will be detected.|
+|DDOS|While Adobe makes every effort to automatically detect and filter out traffic from DDOS attacks, there is no guarantee that all possible DDOS attacks will be detected|
+|Traffic Blockers|Using a tracker blocker in a browser may opt out some requests from being tracked.|
+|Firewalls|Firewalls may block Analytics tracking. This is more frequent with corporate firewalls.|
+
+### What if I would like to learn more about my content request volume? {#current-request-volumes}
+
+If you would like additional insights into the content request volume shown in the License Dashboard, your Adobe team can provide a report that shows the top volume drivers of content requests. Please reach out to your Adobe team or to Adobe Customer Care to request a top usage report.
 
 ### What if I am using my own CDN? {#using-own-cdn}
 
-The Content Request Dashboard in Cloud Manager will not show tracking for your own CDN.
+The License Dashboard will only show data tracked by the Cloud Service CDN.  If you choose to bring your own CDN (BYOCDN), you will report your content request volume back to Adobe on an annual basis, as stated in your contract.  
