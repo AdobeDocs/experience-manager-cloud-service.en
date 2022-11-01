@@ -1,6 +1,8 @@
 ---
 title: Headless Content Delivery using Content Fragments with GraphQL
 description: Learn the basic concepts of realizing an AEM Headless CMS using Content Fragments with GraphQL for headless content delivery.
+feature: Content Fragments, GraphQL API
+role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
 ---
 # Headless Content Delivery using Content Fragments with GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
@@ -24,13 +26,14 @@ This is achieved using Content Fragments, together with the AEM GraphQL API (a c
 >* [AEM Commerce consumes data from a commerce platform via GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* [AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications](/help/headless/graphql-api/content-fragments.md).
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="Extract content using the GraphQL API"
+>abstract="In this module you'll learn how you can use Content Fragments and the GraphQL API as a Headless Content Management System."
+
 ## Headless CMS {#headless-cms}
 
-A Headless Content Management System (CMS) is:
-
-* "*A headless content management system, or headless CMS, is a back-end only content management system (CMS) built from the ground up as a content repository that makes content accessible via an API for display on any device.*
-
-  See [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+A Headless Content Management System (CMS) is a back-end only content management system, designed and built explicitly as a content repository that makes content accessible via an API, for display on any device.
 
 In terms of authoring Content Fragments in AEM this means that:
 
