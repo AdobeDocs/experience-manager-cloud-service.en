@@ -32,6 +32,7 @@ Before you install the connector, follow these pre-installation steps:
    * `/apps/dam/gui/content/foldermetadataschemaeditor`
    * `/apps/dam/cfm/models/editor/components/datatypeproperties`
    * `/apps/settings/dam/cfm/models/formbuilderconfig`
+   * `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
 
 1. This installation requires the knowledge to set a Maven project in [!DNL Experience Manager] as a [!DNL Cloud Service]. Use the following resources to understand how to include a third-party package in your Maven project:
 
