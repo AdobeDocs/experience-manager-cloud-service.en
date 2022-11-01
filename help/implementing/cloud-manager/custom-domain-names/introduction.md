@@ -58,3 +58,7 @@ Adding a custom domain name requires interaction between the DNS service and Clo
 |5|Check DNS record status|Customer|[Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)|
 |5a|If DNS record status fails with `DNS status not detected`|Customer|[Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)|
 |5b|If DNS record status fails with `DNS resolves incorrectly`|Customer|[Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)|
+
+>[!TIP]
+>
+>Setting up custom domain names with AEM as a Cloud service is typically a simple process. However on occasion domain domain delegation issues can occur which can take 1-2 business days to resolve. For this reason, it is highly recommended to install the domains well before their go live date. See the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more information.
