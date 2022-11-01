@@ -21,7 +21,7 @@ You can migrate your Adaptive Forms, themes, templates, and cloud configurations
 
 * The service helps migrate content from only [!DNL AEM Forms] on OSGi environments. Migrating content from [!DNL AEM Forms] on JEE to a Cloud Service environment is not supported.
 
-* (Only for AEM 6.3 Forms or a previous version environment upgraded to AEM 6.4 Forms or AEM 6.5 Forms) Adaptive Forms based on out-of-the-box templates and themes available in AEM 6.3 Forms or previous version are not supported on [!DNL [!DNL AEM Forms]] as a Cloud Service.
+* (Only for AEM 6.3 Forms or a previous version environment upgraded to AEM 6.4 Forms or AEM 6.5 Forms) Adaptive Forms based on out-of-the-box templates and themes available in AEM 6.3 Forms or previous version are not supported on [!DNL AEM Forms] as a Cloud Service.
 
 ## Prerequisites {#prerequisites}
 

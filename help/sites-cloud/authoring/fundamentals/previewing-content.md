@@ -40,6 +40,12 @@ See the document [Managing Environments](/help/implementing/cloud-manager/manage
 
 Content may also be published to preview by using a [publish content tree workflow](/help/operations/replication.md#publish-content-tree-workflow) with the `agentId` parameter set to `preview` or by using the [replication API](/help/operations/replication.md#replication-api) with an `AgentFilter` configured for preview.
 
+## Unpublishing Content from Preview {#unpublishing-content-from-preview}
+
+Unpublishing content from your **Preview** environment is basically the same process as [unpublishing pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) from the **Publish** environment. 
+
+The only difference is that you can select the **Destination** to be **Preview**.
+
 ## Configuring OSGi Settings for the Preview Tier {#configuring-osgi-settings-for-the-preview-tier}
 
 The preview tier's OSGi property values are inherited from the publish tier. However the preview tier's values can be distinct from the publish tier by setting the `service` parameter to the value `preview`. The following example of an OSGi property determines the URL of an integration endpoint.

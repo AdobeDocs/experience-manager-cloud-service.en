@@ -48,7 +48,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 |Activate on Blueprint activation|Publishes the Live Copy when the source is published|On Activation|`targetActivate`|
 |Deactivate on Blueprint deactivation|Deactivates the Live Copy when the source is deactivated|On deactivation|`targetDeactivate`|
 |Push on modify|Pushes the content to the Live Copy when the source is modified<br>Use this rollout configuration sparingly as it uses the On Modification trigger.|On Modification|`contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`|
-|Push on modify (shallow)|Pushes content to the Live Copy when the blueprint page is modified, without updating references (e.g. for shallow copies)<br>Use this rollout configuration sparingly as it uses the On Modification trigger.|On Modification|`contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren`|
+|Push on modify (shallow)|Pushes content to the Live Copy when the blueprint page is modified, without updating references (for example, for shallow copies)<br>Use this rollout configuration sparingly as it uses the On Modification trigger.|On Modification|`contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren`|
 |Promote Launch|Standard rollout configuration for promoting launch pages.|On Rollout|`contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship`|
 
 ### Synchronization Actions {#synchronization-actions}
