@@ -12,7 +12,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 
 Maintenance Tasks are processes that run on a schedule in order to optimize the repository. With AEM as a Cloud Service, the need for customers to configure the operational properties of maintenance tasks is minimal. Customers can focus their resources on application-level concerns, leaving the infrastructure operations to Adobe.
 
-## Configuring maintenance tasks
+## Configuring maintenance tasks {#maintenance-tasks-configuring}
 
 In previous versions of AEM, you could configure maintenance tasks by using the Maintenance Card (Tools > Operations > Maintenance). For AEM as a Cloud Service, the Maintenance Card is no longer available so configurations should be committed to source control and deployed by using the Cloud Manager. Adobe manages those maintenance tasks which have settings that are not configurable by customers (for example, Datastore Garbage Collection, Audit Log Purge, Version Purge). Other maintenance tasks can be configured by customers, as described in the table below.
 
@@ -116,7 +116,7 @@ The following table illustrates the maintenance tasks that are available at the 
     <p><strong>windowSchedule=weekly</strong> (this value should not be changed)</p>
     <p><strong>windowStartTime=HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the weekly Maintenance Window should begin executing.</p>
     <p><strong>windowEndTime=HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Weekly Maintenance Window should stop executing if they haven't already completed.</p>
-    <p><strong>windowScheduleWeekdays= Array of 2 values from 1-7 (e.g. [5,5])</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.</p>
+    <p><strong>windowScheduleWeekdays= Array of 2 values from 1-7 (for example, [5,5])</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.</p>
     </td>
   </tr>
   <tr>
@@ -127,7 +127,7 @@ The following table illustrates the maintenance tasks that are available at the 
     <p><strong>windowSchedule=daily</strong> (this value should not be changed)</p>
     <p><strong>windowStartTime=HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Monthly Maintenance Window should begin executing.</p>
     <p><strong>windowEndTime=HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Monthly Maintenance Window should stop executing if they haven't already completed.</p>
-    <p><strong>windowScheduleWeekdays=Array of 2 values from 1-7 (e.g. [5,5])</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.</p>
+    <p><strong>windowScheduleWeekdays=Array of 2 values from 1-7 (for example, [5,5])</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 to schedule on the first week of the month or 1 to schedule on the last week of the month. The absence of a value would effectively schedule jobs every day as governed by windowScheduleWeekdays every month.</p>
     </td> 
     </tr>

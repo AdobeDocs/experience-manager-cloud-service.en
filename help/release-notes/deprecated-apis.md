@@ -192,5 +192,11 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>5/5/2022</td>
     <td>8/5/2022</td>
   </tr>
+  <tr>
+    <td>com.adobe.granite.resourceresolverhelper</td>
+    <td>This API is not supported anymore. Use org.apache.sling.api.resource.ResourceResolverFactory instead.</td>
+    <td>9/29/2022</td>
+    <td>11/24/2022</td>
+  </tr>
 </tbody>
 </table>

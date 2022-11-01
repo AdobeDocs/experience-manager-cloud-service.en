@@ -437,9 +437,113 @@ For further examples, see:
 
 * [Sample Queries based on the WKND Project](/help/headless/graphql-api/sample-queries.md#sample-queries-using-wknd-project)
 
+<!-- CQDOC-19418 -->
+
+<!--
+## Sorting {#sorting}
+
+This feature allows you to sort the query results according to a specified field.
+
+For example:
+
+```graphql
+query {
+  articleList(sort:"author, _uuid DESC") {
+    items {
+      author
+      _path
+    }
+  }
+}
+```
+
+## Paging {#paging}
+
+This feature allows you to perform paging on query types that returns a list. Two methods are provided:
+
+* `offset` and `limit` in a `List` query
+* `first` and `after` in a `Paginated` query
+
+### List query - offset and limit {#list-offset-limit}
+
+In a `...List`query you can use `offset` and `limit` to return a specific subset of results:
+
+* `offset`: Specifies the first data set to return
+* `limit`: Specifies the maximum number of data sets to be returned
+
+For example, to output the page of results containing up to five articles, starting from the fifth article from the *complete* results list:
+
+```graphql
+query {
+   articleList(offset: 5, limit:5) {
+    items {
+      author
+      _path
+    }
+  }
+}
+```
+
+>[!NOTE]
+>
+>* Paging is impacted by the order to the jcr query result set. By default it uses `jcr:path` to make sure the order is always the same. If a different sort order is used, and if that sorting cannot be done at jcr query level, then there will be a negative performance impact as the paging cannot be done in memory.
+>
+>* The higher the offset, the more time it will take to skip the items from the complete jcr query result set. An alternative solution for large result sets is to use the Paginated query with `first` and `after` method.
+
+### Paginated query - first and after {#paginated-first-after}
+
+The `...Paginated` query type reuses most of the `...List` query type features (filtering, sorting), but instead of using `offset`/`limit` arguments, it uses the standard `first`/`after` arguments defined by [GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
+
+* `first`: The `n` first items to return. The default is `50`.
+* `after`: The cursor-id as returned in the complete result set - if `cursor` is selected.
+
+For example, output the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list:
+
+```graphql
+query {
+    adventurePaginated(first: 5, after: "ODg1MmMyMmEtZTAzMy00MTNjLThiMzMtZGQyMzY5ZTNjN2M1") {
+        edges {
+          cursor
+          node {
+            adventureTitle
+          }
+        }
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+    }
+}
+```
+
+>[!NOTE]
+>
+>* Paging defaults use `_uuid` for ordering to ensure the order of results is always the same. When `sort` is used, `_uuid` is added as a last order-by field.
+>
+>* Performance is expected to be degraded if sort/filter parameters cannot be executed at jcr query level, as the query first has to gather the results in memory then sort them, then finally apply paging. Therefore it is recommended to use filter/sort fields stored at root level.
+-->
+
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
 The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
+
+<!-- CQDOC-19418 -->
+
+<!--
+* If you expect a list of results:
+  * add `List` to the model name; for example,  `cityList`
+  * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
+  
+  You can then:
+  
+  * [Sort the results](#sorting)
+
+  * Return a page of results using either:
+
+    * [A List query with offset and limit](#list-offset-limit)
+    * [A Paginated query with first and after](#paginated-first-after)
+  * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
+-->
 
 * If you require a single result:
   * use the model name; eg city
@@ -447,7 +551,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 * If you expect a list of results:
   * add `List` to the model name; for example,  `cityList`
   * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
-
+  
 * If you want to use a logical OR:
   * use ` _logOp: OR`
   * See [Sample Query - All Persons that have a name of "Jobs" or "Smith"](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)

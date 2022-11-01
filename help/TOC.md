@@ -5,6 +5,7 @@ sub-product: Adobe Experience Manager as a Cloud Service
 solution-title: Experience Cloud
 feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service overview self-help resources and documentation links
+breadcrumb-title: User Guide
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 ---
@@ -28,6 +29,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + General AEMaaCS Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.7.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
+      + [Release Notes for 2022.6.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
       + [Release Notes for 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
       + [Release Notes for 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
       + [Release Notes for 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
@@ -59,6 +62,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
+      + [Release Notes for 2022.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
+      + [Release Notes for 2022.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
       + [Release Notes for 2022.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
       + [Release Notes for 2022.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
       + [Release Notes for 2022.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
@@ -93,6 +99,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.7.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
       + [Release Notes for 2022.5.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
       + [Release Notes for 2022.4.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
       + [Release Notes for 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
@@ -131,6 +138,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md)
     + [Developer and Deployment Manager Tasks](/help/journey-onboarding/developers.md)
     + [AEM User Tasks](/help/journey-onboarding/aem-users.md)
+    + [User Groups](/help/journey-onboarding/user-groups.md)
   + AEM Reference Demos Add-On Journey {#demo-add-on}
     + [Overview](/help/journey-sites/demos-add-on/overview.md)
     + [Installation](/help/journey-sites/demos-add-on/installation.md)
@@ -262,7 +270,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [How Multisite Management for Targeted Content is Structured](/help/sites-cloud/authoring/personalization/multisite-structure.md)
       + [Managing Activities](/help/sites-cloud/authoring/personalization/activities.md)
       + [Managing Audiences](/help/sites-cloud/authoring/personalization/audiences.md)
-      + [Creating and Managing Offers](/help/sites-cloud/authoring/personalization/offers.md)
+      + [Creating and Managing Offers (Offers Console)](/help/sites-cloud/authoring/personalization/offers.md)
       + [Understanding Segmentation](/help/sites-cloud/authoring/personalization/segmentation.md)
       + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -281,6 +289,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
       + [Structure Tree](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
       + [Preview - JSON Representation](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+      + [Content Fragments Console - Keyboard Shortcuts](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
     + Site Creation {#site-creation}
       + [Creating a New Site](/help/sites-cloud/administering/site-creation/create-site.md)
       + [Enable Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -329,11 +338,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Integrating with Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
     + [Integrating with Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
     + [IMS Configuration for use when Integrating with Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
+    + [Integrating with Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
     + [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
     + [IMS Configuration for use when Integrating with Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
-    + [Integrating with Adobe Campaign Classic](/help/sites-cloud/integrating/integrating-campaign-classic.md)
-    + [Creating an Adobe Experience Manager Newsletter](/help/sites-cloud/integrating/creating-newsletter.md)
+    + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
   + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
   + [Overview and what's new](/help/assets/overview.md)
@@ -388,6 +397,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [XMP metadata](/help/assets/xmp-metadata.md)
     + [MediaLibrary capabilities](/help/assets/medialibrary.md)
     + [Import and export asset metadata](/help/assets/metadata-import-export.md)
+    + [Configure asset upload restrictions](/help/assets/configure-asset-upload-restrictions.md)
   + Share and distribute assets {#brand-portal}
     + [Configure [!DNL Assets] with [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
     + [Publish assets to [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
@@ -460,11 +470,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
   + Integration with Adobe Workfront {#integrations}
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
+    + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
     + [Install [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
     + [Remove external dependencies for existing installations](/help/assets/remove-external-dependencies.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
-    + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-    + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
+    + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)    
 + Forms {#forms}
   + [Introduction](/help/forms/home.md)
   + [Key features](/help/forms/key-features.md)
@@ -490,7 +500,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
       + [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
       + [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)
-      + [Design an XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
       + [Use Forms Designer](/help/forms/use-forms-designer.md)
       + [Improve performance of large forms with lazy loading](/help/forms/lazy-loading-adaptive-forms.md)
     + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
@@ -597,6 +606,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Integrations {#integrations}
     + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
     + [3rd Party Commerce Solution](/help/commerce-cloud/integrating/third-party.md)
+    + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
   + AEM Storefront {#storefront}
     + [Getting Started](/help/commerce-cloud/getting-started.md)
     + Authoring {#authoring}
@@ -607,6 +617,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Product Recommendations](/help/commerce-cloud/authoring/product-recommendations.md)
     + Administering {#administering}
       + [Multi-Store Setup](/help/commerce-cloud/configuring/multi-store-setup.md)
+      + [Multiple Commerce Systems Setup](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
       + [Configuring URLs for SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
       + [Caching Options](/help/commerce-cloud/configuring/caching.md)
       + [Custom HTTP Headers](/help/commerce-cloud/configuring/custom-http-headers.md)
