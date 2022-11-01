@@ -19,78 +19,58 @@ The following section outlines the general Release Notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.6.0) is June 30, 2022.
-
-The next release (2022.7.0) is planned for August 8, 2022.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.8.0) is September 1, 2022.
+The next release (2022.10.0) is planned for November 3, 2022.
 
 ## Release Video {#release-video}
 
-Have a look at the June 2022 Release Overview video for a summary of the features added in the 2022.6.0 release:
+Have a look at the August 2022 Release Overview video for a summary of the features added in the 2022.8.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/344308/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/346608/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### New features in [!DNL Sites] {#sites-features}
+ 
+* The Email component allows the creation of content in AEM that is then delivered as emails via Campaign Classic. The Core Email Component:
+  * is based on the [Core WCM Component](https://github.com/adobe/aem-core-wcm-components) which supports Editable Templates and the Style System.
+  * provides 10 email-optimized production-ready components (Page, Container, Title, Text, Image, Button, Teaser, Experience Fragment, Content Fragment, Segmentation).
+  * provides advanced personalization and segmentation, thanks to the [insertion of Campaign variables](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) on most dialog fields, and to the flexible [Segmentation component](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
+  * provides optimal email-friendly HTML output, thanks to the [CSS styles inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), the [HTML attribute inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), and the [HTML sanitizer](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+  * allows the creation of the emails anywhere.
 
-* A new [user interface](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) is now available for content admins and content authors to efficiently manage (take actions such as publish, unpublish, copy, move, etc.), search/filter, and create content fragments for Headless use-cases.
+### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
 
-    ![Content Fragment Console](/help/release-notes/assets/cf-ui.png)
+* The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) provides users with an option to display the total number of language copies associated with a content fragment. A 1-click access has been provided to view all the language copies as well. Users are also able to filter the table view by the locale of their interest. 
 
-* The new [Table of Contents Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) works not only with the Core Components but with all components, automatically rendering ToCs on content pages. And because it is rendered server-side and fully cached by the dispatcher, it is also efficient to load.
+![Content Fragments Languages](/help/release-notes/assets/cfconsole-languages.png)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in [!DNL Assets] {#assets-features}
+### New features in [!DNL Assets] {#features-assets}
 
-Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish between colors in an image and apply those as tags automatically on ingestion](../../assets/color-tag-images.md). These tags enable enhanced Search experience, based on image color composition. You can configure the number of colors, within a range of one to forty, that are tagged to an image so that you can search for images based on those colors later.
+* You can now configure Adobe Experience Manager Assets to [restrict the type of assets that users can upload based on the MIME type](/help/assets/configure-asset-upload-restrictions.md).
+
+  ![Asset upload restrictions](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### New features in [!DNL Forms] {#forms-features}
+### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
 
-* **[Integrate Adaptive Forms with Microsoft® Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)**: You can now configure an Adaptive Form to run a Microsoft® Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft® Power Automate to build business logics around captured data and automate customer workflows.
+* [Adaptive Forms wizard](/help/forms/creating-adaptive-form.md): AEM Forms provides business user friendly wizard to quickly author Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form. This release brings following improvements to the wizard:
 
-* **Wizard to create an Adaptive Form**: You can use business user friendly wizard to quickly author Adaptive Forms. The wizard provides a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form.
+  * Select or deselect fields: The wizard allows you to create an Adaptive Form based on JSON and Form Data Model schemas. You can now select subset of fields within a schema to include in an Adaptive Form. The selected fields are converted to corresponding Adaptive Form data capture components to quickly create the desired adaptive forms.
 
-    ![Wizard to create an Adaptive Form](/help/release-notes/assets/wizard.png)
+  * Use Static Templates: Customers with existing investments in legacy static templates can continue their journey of cloud adoption by using static templates in wizard to author adaptive forms. This provides additional time to customers to migrate old static templates to modern editable templates.
+
+* [Remove hidden fields from a Document of Record (DoR) while server-side processing](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): You can generate the document of record PDF for end users containing only those fields which were visible to them during data capture experience. Upon form submission, the server validates which fields were hidden to the end user based on submitted data and excludes from document of record for consistency.
 
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
 
-* New product cockpit properties page for better and simplified overview
-
- ![product cockpit properties overview](/help/assets/CIF/product_cockpit_properties_overview.png)
-
-* Improved compatibility and robustness for 3rd party connectors on I/O Runtime
-
-* Improved support for GQL Client configuration overwrites (e.g. set custom caching behavior)
-
-* Multiple commerce endpoints are now supported out-of-the-box and can be configured via Cloud Manager. You can find details in the CIF blog [here](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
-
-
-### Bug fixes {#bug-fixes-cif}
-
-* Multi value product picker field shows 2nd and additional products as invalid
-
-* Product Picker is occasionally hidden behind components
-
-## Reference Demos Add-on {#cloud-services-demos}
-
-### What is New {#what-is-new-demos}
-
-* New WKND Content & Commerce template that extends WKND with an E2E shopping experience featuring product catalog, shopping cart, checkout, and myAccount. This template uses CIF and its CIF Core Components, thus you also need to install the CIF add-on. You can find details in the CIF blog [here](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
-
- ![WKND shop](/help/assets/CIF/wknd_shop.png)
-
- ![WKND pdp](/help/assets/CIF/wknd_pdp.png)
-
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### What is New {#what-is-new-foundation}
-
-* As mentioned in the May (2022.5.0) release notes, the "Add tree” option under the replication agent admin screen’s **Distribute** tab was removed. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) workflow.
+* Association of AEM pages to products and categories via AEM page properties plus overview in product cockpit
+ ![product cockpit page association](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Cloud Manager {#cloud-manager}
 
