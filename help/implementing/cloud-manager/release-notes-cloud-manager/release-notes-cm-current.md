@@ -19,13 +19,10 @@ The release date for Cloud Manager release 2022.11.0 in AEM as a Cloud Service i
 
 ## What's New {#what-is-new}
 
-* [AEM Guides](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html) can now be configured in a self-service manner in [sandbox programs.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-* For users who only have the **Cloud Manager User** role, a new card on the welcome page has been customized to guide them through navigating to AEM environments and restricted program access.
-* Users without any Cloud Manager roles will no longer be able to access program details. Such users can, however, navigate to author end points from the Cloud Manager landing page.
-* Users can set up [incident and proactive notification groups](/help/journey-onboarding/user-groups.md) to receive communications from Adobe about incidents or recommendations related to their AEMaaCS applications.
-* The **Add Program** button on the landing page will consistently be shown and provide tool tips, even when it is disabled due to permission or entitlement-related reasons.
+* The license dashboard for the AEM Sites solution will now display contract details, including whether or not the tenant is within its subscription.
+* When an environment associated with a pipeline has a status which does not allow the pipeline to be executed, the run action is disabled with an explanatory tooltip.
+* An improved message was aeed to the UI when the **Add Program** button is disabled due to insufficient entitlements for the tenant.
 
 ## Bug Fixes {#bug-fixes}
 
-* The workflow to add an environment now includes additional validation to ensure a successful outcome.
-* The feedback provided to the user has been improved during AEM app build when Maven faces connectivity issues to private repos.
+* Feedback during the edit production pipeline was improved to catch infrequent occurrences of one or more missing environments.
