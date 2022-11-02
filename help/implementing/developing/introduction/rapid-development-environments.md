@@ -57,9 +57,8 @@ For more information about using Cloud Manager to create environments, manage wh
 
 ## Installing the RDE Command Line Tools {#installing-the-rde-command-line-tools}
 
-Each developer that will interact with the RDE should setup their command line tools as described in the following steps:
+Once you've added an RDE for your program using Cloud Manager, you can interact with it by setting up the command line tools as described in the following steps:
 
-1. Add and RDE for your program using Cloud Manager. For more information, please consult the documentation.
 1. Install the Adobe I/O CLI tools according by following the steps in [this article](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#aio-cli), or by following the procedure [here](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 1. Install the Adobe aio command line tools cloud manager plugin, and configure them as described [here](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 1. Configure the cloud manager plugin for your IMS org:
