@@ -307,6 +307,42 @@ You can reset the RDE and return it to a default state by running:
 
 This will usually take a couple of minutes. Use the [status command](#checking-rde-status) to check when the environment is ready again.
 
+### Reset the RDE in Cloud Manager {#reset-the-rde-cloud-manager}
+
+Resetting the RDE removes all custom code, configurations, and content from both the author and publish instances. You can use Cloud Manager to reset your RDE.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+
+1. Click on the program for which you want to reset the RDE.
+
+1. From the **Overview** page, click on the **Environments** tab at the top of the screen.
+
+   ![Environments tab](/help/implementing/cloud-manager/assets/environments-tab2.png)
+
+   * Alternatively, click on the **Show All** button on the **Environments** card to jump directly to the **Environments** tab.
+
+     ![Show all option](/help/implementing/cloud-manager/assets/environment-showall.png)
+
+1. The **Environments** window opens and lists all environments for the program.
+
+   ![The environments tab](/help/implementing/cloud-manager/assets/environments-tab-populated.png)
+
+1. Click the ellipsis button of the RDE you want reset and then select **Reset**.
+
+   ![View environment details](/help/implementing/cloud-manager/assets/rde-reset.png)
+
+1. Confirm that you want to reset the RDE by clicking **Reset** in the dialog.
+
+   ![Confirm reset](/help/implementing/cloud-manager/assets/reset-rde-confirm.png)
+
+The RDE is reset and returned it to a default state. This usually takes a couple of minutes.
+
+Alternatively, you can reset the RDE using the ellipsis button directly from the **Environments** card on the **Overview** page.
+
+![Reset RDE from Environments card](/help/implementing/cloud-manager/assets/reset-rde-environments-card.png)
+
+For more information about how to use Cloud Manager to manage your environments, please see [the Cloud Manager documentation.](/help/implementing/cloud-manager/manage-environments.md)
+
 ## Logging {#logging}
 
 Log levels can be set by modifying OSGI configurations. Check the [documentation](/help/implementing/developing/introduction/logging.md) for more information.
