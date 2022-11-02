@@ -25,7 +25,7 @@ You can use Cloud Manager to add an RDE, manage who has access to it, and assign
 
 ## Installing the RDE Command Line Tools {#installing-the-rde-command-line-tools}
 
-Each developer who will interact with the RDE should setup their command line tools as described in the following steps:
+Each developer that will interact with the RDE should setup their command line tools as described in the following steps:
 
 1. Add and RDE for your program using Cloud Manager. For more information, please consult the documentation.
 1. Install the Adobe I/O CLI tools according by following the steps in [this article](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#aio-cli), or by following the procedure [here](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
