@@ -30,6 +30,7 @@ The source AEM instance may be running behind a firewall where it can only reach
 
 * The Azure blob storage service: `casstorageprod.blob.core.windows.net`
 * The User Mapping IO endpoint: `usermanagement.adobe.io`
+* Internal CA certificates should be imported properly to avoid SSL related exceptions.
 
 ### Enable SSL Logging {#enable-ssl-logging}
 
