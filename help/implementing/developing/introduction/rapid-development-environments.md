@@ -117,7 +117,7 @@ Adobe recommends the following workflow for developing a new feature:
 
 * When an intermediate milestone is reached and successfully validated locally with the AEM as a Cloud Service SDK, the code should be committed to a git feature branch that is not yet part of the main line, although committing to git is optional. What constitutes an "intermediate milestone" will vary based on team habits. Examples include a small a few new lines of code, half a day of work, or completing a sub-feature.
 
-* Reset the the RDE if it has been used by another feature and you want to reset it to a vanilla state. This can be done via Cloud Manager (see Cloud Manager documentation) or via command line (see RDE CLI commands section). Reset will take a few minutes and all existing content and code will be deleted. You can use the RDE status command to confirm the RDE is ready. See the [RDE Command Line Tools](#rde-cli-commands) for more information.
+* Reset the the RDE if it has been used by another feature and you want to reset it to a default state. This can be done via [Cloud Manager](help/implementing/cloud-manager/manage-environments.md) or via the [command line](#reset-the-rde). Reset will take a few minutes and all existing content and code will be deleted. You can use the RDE status command to confirm the RDE is ready. See the [RDE Command Line Tools](#rde-cli-commands) for more information.
 
 * Using the RDE command line interface or RDE CLI, sync local code to the RDE. Options include installing a content package, a specific bundle, an OSGI configuration file, a content file, and a zip file of an Apache/Dispatcher configuration. Referencing a remote content package is also possible. See the [RDE Command Line Tools](#rde-cli-commands) section for more information. You can use the status command to validate that the deployment was successful. Optionally, use Package Manager to install content packages.
 
@@ -298,6 +298,14 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
+
+### Reset the RDE {#reset-the-rde}
+
+You can reset the RDE and return it to a default state by running:
+
+`aio aem:rde:reset`
+
+This will usually take a couple of minutes. Use the [status command](#checking-rde-status) to check when the environment is ready again.
 
 ## Logging {#logging}
 
