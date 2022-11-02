@@ -41,10 +41,10 @@ Follow these steps to use Cloud Manager to create an RDE for your program.
    
 1. In the **Add environment** dialog that appears:
 
-   * Select **Rapid Development** as the **Environment type**.
-     * The number of available/used environments is displayed in parentheses behind the Development environment type.
-   * Provide an **Environment name**.
-   * Provide an optional **Environment description**.
+   * Select **Rapid Development** under the **Select environment type** heading.
+     * The number of available/used environments is displayed in parentheses behind the environment type.
+   * Provide a **Name** for the environment.
+   * Provide an optional **Description** for the environment.
    * Select a **Cloud Region**.
 
    ![Add environment dialog](/help/implementing/cloud-manager/assets/add-environment-wizard.png)
