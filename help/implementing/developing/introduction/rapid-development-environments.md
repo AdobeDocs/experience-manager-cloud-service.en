@@ -21,7 +21,39 @@ Additional RDEs may be purchased for Production programs beginning with late Jan
 
 ## Enabling RDE in a Program {#enabling-rde-in-a-program}
 
-You can use Cloud Manager to add an RDE, manage who has access to it, and assign custom domains. For more information, see the Cloud Manager documentation.
+Follow these steps to use Cloud Manager to create an RDE for your program.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+
+1. Click on the program to which you wish to add an RDE to show its details.
+
+   * RDEs can be added to both [sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) and [production programs.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+
+1. From the **Program Overview** page, click on **Add Environment** on the **Environments** card to add an environment.
+
+   ![Environments card](/help/implementing/cloud-manager/assets/no-environments.png)
+
+   * The **Add Environment** option is also available on the **Environments** tab.
+
+     ![Environments tab](/help/implementing/cloud-manager/assets/environments-tab.png)
+
+   * The **Add Environment** option may be disabled due to lack of permissions or depending on the licensed resources.
+   
+1. In the **Add environment** dialog that appears:
+
+   * Select an **Environment type**.
+     * The number of available/used environments is displayed in parentheses behind the Development environment type.
+   * Provide an **Environment name**.
+   * Provide an optional **Environment description**.
+   * Select a **Cloud Region**.
+
+   ![Add environment dialog](/help/implementing/cloud-manager/assets/add-environment-wizard.png)
+
+1. Click **Save** to add the specified environment.
+
+The **Overview** screen now displays your new environment in the **Environments** card.
+
+For more information about using Cloud Manager to create environments, manage who has access to them, and assign custom domains, please see [the Cloud Manager documentation.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
 ## Installing the RDE Command Line Tools {#installing-the-rde-command-line-tools}
 
