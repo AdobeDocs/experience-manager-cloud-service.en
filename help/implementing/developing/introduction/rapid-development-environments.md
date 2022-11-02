@@ -5,15 +5,15 @@ description: Learn how to leverage Rapid Development Environments for rapid deve
 
 # Rapid Development Environments {#rapid-development-environments}
 
-Current Cloud Development environments require a CI/CD pipeline deployment, a process that can take up 30 minutes for each change. To minimize the amount of time needed to test features that are proven to work on a local development environment, customers can leverage Rapid Development Environments (RDEs for short) to quickly push changes, ensuring that they work in the cloud, and making modifications as needed.
+Current Cloud Development environments require a CI/CD pipeline deployment, a process that can take up 30 minutes for each change. To minimize the amount of time needed to test features that are proven to work on a local development environment, customers can use Rapid Development Environments (RDEs for short) to quickly push changes, ensuring that they work in the cloud, and making modifications as needed.
 
 Once the changes have been tested in an RDE, you can deploy them to a regular Development environment through the Cloud Manager pipeline.
 
 ## Introduction {#introduction}
 
-RDEs can be used for code, content and Apache or Dispatcher configurations. Unlike regular Cloud Development environments, developers can use local command line tools to sync code built with the local SDK to an RDE.
+RDEs can be used for code, content, and Apache or Dispatcher configurations. Unlike regular Cloud Development environments, developers can use local command-line tools to sync code built with the local SDK to an RDE.
 
-Every program is provisioned with an RDE. In case of Sandbox accounts, they will be hibernated after a few hours of non use.
+Every program is provisioned with an RDE. In case of Sandbox accounts, they will be hibernated after a few hours of non-use.
 
 Typically, an RDE would be used by a single developer at a given time, for testing and debugging a specific feature. When the development session is done, the RDE can be reset into a default state for the next usage.
 
@@ -55,9 +55,9 @@ The **Overview** screen now displays your new environment in the **Environments*
 
 For more information about using Cloud Manager to create environments, manage who has access to them, and assign custom domains, please see [the Cloud Manager documentation.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
-## Installing the RDE Command Line Tools {#installing-the-rde-command-line-tools}
+## Installing the RDE Command-Line Tools {#installing-the-rde-command-line-tools}
 
-Once you've added an RDE for your program using Cloud Manager, you can interact with it by setting up the command line tools as described in the following steps:
+Once you've added an RDE for your program using Cloud Manager, you can interact with it by setting up the command-line tools as described in the following steps:
 
 1. Install the Adobe I/O CLI tools according by following the steps in [this article](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#aio-cli), or by following the procedure [here](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 1. Install the Adobe aio command line tools cloud manager plugin, and configure them as described [here](https://github.com/adobe/aio-cli-plugin-cloudmanager).
@@ -115,11 +115,11 @@ Once you've added an RDE for your program using Cloud Manager, you can interact 
 
 Adobe recommends the following workflow for developing a new feature:
 
-* When an intermediate milestone is reached and successfully validated locally with the AEM as a Cloud Service SDK, the code should be committed to a git feature branch that is not yet part of the main line, although committing to git is optional. What constitutes an "intermediate milestone" will vary based on team habits. Examples include a small a few new lines of code, half a day of work, or completing a sub-feature.
+* When an intermediate milestone is reached and successfully validated locally with the AEM as a Cloud Service SDK, the code should be committed to a git feature branch that is not yet part of the main line, although committing to git is optional. What constitutes an "intermediate milestone" varies based on team habits. Examples include a small a few new lines of code, half a day of work, or completing a subfeature.
 
-* Reset the the RDE if it has been used by another feature and you want to reset it to a default state. This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Reset will take a few minutes and all existing content and code will be deleted. You can use the RDE status command to confirm the RDE is ready.
+* Reset the RDE if it has been used by another feature and you want to reset it to a default state. This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Reset will take a few minutes and all existing content and code will be deleted. You can use the RDE status command to confirm the RDE is ready.
 
-* Using the RDE command line interface or RDE CLI, sync local code to the RDE. Options include installing a content package, a specific bundle, an OSGI configuration file, a content file, and a zip file of an Apache/Dispatcher configuration. Referencing a remote content package is also possible. See the [RDE Command Line Tools](#rde-cli-commands) section for more information. You can use the status command to validate that the deployment was successful. Optionally, use Package Manager to install content packages.
+* Using the RDE command-line interface or RDE CLI, sync local code to the RDE. Options include installing a content package, a specific bundle, an OSGI configuration file, a content file, and a zip file of an Apache/Dispatcher configuration. Referencing a remote content package is also possible. See the [RDE Command Line Tools](#rde-cli-commands) section for more information. You can use the status command to validate that the deployment was successful. Optionally, use Package Manager to install content packages.
 
 * Test the code. Author and Publish URLs are available in Cloud Manager.
 
@@ -127,7 +127,7 @@ Adobe recommends the following workflow for developing a new feature:
 
 * Once the code behaves as expected, commit the code to the git feature branch.
 
-* Code synced to RDE doesn't use a Cloud Manager pipeline so now you should use Cloud Manager to deploy the git feature branch to the Cloud Dev environment. This validates that the code will pass the Cloud Manager quality gates and lets you be confident the code will later be successfully deployed to the Cloud Manager production pipeline.  
+* Code synced to RDE doesn't use a Cloud Manager pipeline so now you should use Cloud Manager to deploy the git feature branch to the Cloud Dev environment. This validates that the code passes the Cloud Manager quality gates and lets you be confident the code will later be successfully deployed to the Cloud Manager production pipeline.  
 
 * Repeat the steps above for each intermediate milestone until all code for the feature is ready, and runs well on both the RDE and the Cloud Dev environment.
 
@@ -141,7 +141,7 @@ The workflow is similar to developing a new feature. The difference is that the 
 
 An RDE supports a single project at a time. Since code is synced from a local development environment to the RDE environment, it is most natural for one developer to be using it on their own at a given time.
 
-However, with careful coordination, it is possible for more than one developer to validate a specific feature or debug a specific issue. The key is that each developers keep their local projects in sync so code changes made by a particular developer are absorbed by the other developers, otherwise one developer might inadvertently overwrite the others code. The recommended strategy is for each developer to commit their changes to a shared git branch before syncing to the RDE, so that the other developers pull the changes before making their own changes.
+However, with careful coordination, it is possible for more than one developer to validate a specific feature or debug a specific issue. The key is that each developer keeps their local projects in sync so code changes made by a particular developer are absorbed by the other developers, otherwise one developer might inadvertently overwrite the others code. The recommended strategy is for each developer to commit their changes to a shared git branch before syncing to the RDE, so that the other developers pull the changes before making their own changes.
 
 ## RDE Command Line Tools Commands {#rde-cli-commands}
 
@@ -157,7 +157,7 @@ However, with careful coordination, it is possible for more than one developer t
 
 ### Deploying to RDE {#deploying-to-rde}
 
-This section deals with information on using the RDE CLI for deploying, installing or updating bundles, OSGI configurations, content packages, individual content files, and Apache or Dispatcher configurations.
+This section deals with information on using the RDE CLI for deploying, installing, or updating bundles, OSGI configurations, content packages, individual content files, and Apache or Dispatcher configurations.
 
 The general usage pattern is `aio aem:rde:install <artifact>`.
 
@@ -167,7 +167,7 @@ You can find some examples below:
 
 `aio io aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
-The response for a successful deployment will resemble the following:
+The response for a successful deployment resembles the following:
 
 ```
 ...
@@ -182,7 +182,7 @@ Optionally, you can reference a remote repository:
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
-where the response for a succsessful deployment will resemble the following:
+where the response for a successful deployment resembles the following:
 
 ```
 ...
@@ -195,7 +195,7 @@ To deploy a bundle, use:
 
 `aio aem:rde:install ~/.m2/repository/org/apache/felix/org.apache.felix.gogo.jline/1.1.8/org.apache.felix.gogo.jline-1.1.8.jar`
 
-where the response for a successful deployment will resemble the following:
+where the response for a successful deployment resembles the following:
 
 ```
 ...
@@ -208,7 +208,7 @@ To deploy a content file, use:
 
 `aio aem:rde:install world.txt -p /apps/hello.txt`
 
-where the response for a succesful deployment will resemble the following:
+where the response for a successful deployment resembles the following:
 
 ```
 ..
@@ -219,11 +219,11 @@ where the response for a succesful deployment will resemble the following:
 
 >[NOTE!]
 >
->For this type of configuration, the entire folder structure should be in the for of a zip file.
+>For this type of configuration, the entire folder structure should be in the form of a zip file.
 
 `aio aem:rde:install -t dispatcher-config dispatcher-wknd-2.1.0.zip`
 
-where the response for a successful deplpoyment will resemble the following:
+where the response for a successful deployment resembles the following:
 
 ```
 ..
@@ -271,7 +271,7 @@ Environment: Ready
 
 ```
 
-If he command returns a note about instances deploying, you can still go ahead and perform the next update, but your last one might not yet be visible on the instance.
+If the command returns a note about instances deploying, you can still go ahead and perform the next update, but your last one might not yet be visible on the instance.
 
 ### Show Deployment History {#show-deployment-history}
 
@@ -279,7 +279,7 @@ You can check the history of deployments made to the RDE by running:
 
 `aio aem:rde:history`
 
-which will return a response in the form of:
+which returns a response in the form of:
 
 `#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
 
@@ -351,11 +351,11 @@ Log levels can be set by modifying OSGI configurations. Check the [documentation
 
 * While the RDE is in many ways similar to a Cloud Development Environment, there are some minor architectural differences in order to allow for quick syncing of code.
 * The mechanism for getting code to RDE is different. One syncs code from a local development environment to the RDE, while the other is deploying code via Cloud Manager to the Cloud Development Environment.
-* For these reasons, it is recommended that after validating code on a RDE environment, you should deploy the code to a Cloud Development Environment using the non-production pipeline. Finally, test the code before deploying with the production pipeline.
+* For these reasons, it is recommended that after validating code on an RDE environment, you should deploy the code to a Cloud Development Environment using the non-production pipeline. Finally, test the code before deploying with the production pipeline.
 
 ## How many RDEs do I need? {#how-many-rds-do-i-need}
 
-* The number of RDEs needed will depend on the make-up and processes of an organization.
-* The most flexible model is where an organization purchases a dedicated RDE for each one of their AEM CS developers. In this model, each developer can test their code on the RDE without needing to coordinate with other team members around whether a RDE environment is available.
+* The number of RDEs needed depends on the make-up and processes of an organization.
+* The most flexible model is where an organization purchases a dedicated RDE for each one of their AEM CS developers. In this model, each developer can test their code on the RDE without needing to coordinate with other team members around whether an RDE environment is available.
 * At the other extreme, a team with a single RDE may use internal processes to coordinate which developer can use the environment at a given time. This can possibly be whenever a developer has hit an intermediate feature milestone and is ready to validate in a Cloud environment where they can quickly make the changes they need
 * An intermediate model is one where an organization purchases a number of RDEs that will create a situation in which not every developer will have a dedicated environment, but there is a greater likelihood of an unused RDE being available. One strategy could be to allocate an RDE per scrum team or major feature. Internal processes may be used to coordinate usage of the environments.
