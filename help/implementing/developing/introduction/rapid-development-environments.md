@@ -65,19 +65,20 @@ Each developer who will interact with the RDE should setup their command line to
 
    This should list all programs under your configured organization.
 
-1. Install the Adobe aio command line tools AEM RDE plugin:
+1. Finally, install the Adobe aio command line tools AEM RDE plugin by running these commands:
 
-   `aio plugins:install @adobe/aio-cli-plugin-rde` 
+   ```
+   git clone git@git.corp.adobe.com:Granite/aio-cli-plugin-aem-rde.git
+   cd aio-cli-plugin-aem-rde
+   npm install
+   aio plugins:link
+   ```
 
    Note the above requires you be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
 
    Alternatively, you can confirm that you can have this developer role if you can login to the developer console by running this command:
 
    `aio cloudmanager:environment:open-developer-console`
-
-1. Finally, create the RDE by running:
-
-   `aio aem:rde:create-env 'My RDE' -v <release-id>`
 
 ## Using RDE while Developing a New Feature {#using-rde-while-developing-a-new-feature}
 
