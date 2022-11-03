@@ -26,7 +26,7 @@ The next release (2022.12.0) is planned for December 15, 2022.
 
 Have a look at the October 2022 Release Overview video for a summary of the features added in the 2022.10.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/346608/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3409801/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
