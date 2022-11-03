@@ -301,7 +301,9 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 ## Reset {#reset-rde}
 
-Reset is an option in the environment menu for the the RDE. This can be used, for example, if the feature for which it had been used no longer requires work and the user in the Developer role wants to reset it to a default state. This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Reset will take a few minutes and all existing content and code will be deleted. You can use the [RDE status command](#checking-rde-status) to confirm the RDE is ready.
+Resetting the RDE removes all custom code, configurations, and content from both the author and publish instances. This can be useful, for example, if the RDE has been used to test a specific feature and you want to reset it to a default state in order to test a different feature.
+
+Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code will be deleted from the RDE.
 
 >[NOTE!]
 >
@@ -313,11 +315,11 @@ You can reset the RDE and return it to a default state by running:
 
 `aio aem:rde:reset`
 
-This will usually take a couple of minutes. Use the [status command](#checking-rde-status) to check when the environment is ready again.
+This usually takes a few minutes. Use the [status command](#checking-rde-status) to check when the environment is ready again.
 
 ### Reset the RDE in Cloud Manager {#reset-the-rde-cloud-manager}
 
-Resetting the RDE removes all custom code, configurations, and content from both the author and publish instances. You can use Cloud Manager to reset your RDE.
+ You can use Cloud Manager to reset your RDE.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -347,7 +349,7 @@ Resetting the RDE removes all custom code, configurations, and content from both
 
    ![Reset banner notification](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-Once the RDE reset process is started, it usually takes about five minutes to complete and and return the environment to its default state. The status of the reset process can be viewed at any time in the **Status** column of the **Environments** card or in the **Environments** window.
+Once the RDE reset process is started, it usually takes a few minutes to complete and and return the environment to its default state. The status of the reset process can be viewed at any time in the **Status** column of the **Environments** card or in the **Environments** window.
 
 ![RDE reset status](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
@@ -355,15 +357,11 @@ You can also reset the RDE using the ellipsis button directly from the **Environ
 
 ![Reset RDE from Environments card](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
->[!NOTE]
->
->You must be assigned to the **Developer** role in Cloud Manager in order to use the reset feature. If not, the reset action will result in an error.
-
 For more information about how to use Cloud Manager to manage your environments, please see [the Cloud Manager documentation.](/help/implementing/cloud-manager/manage-environments.md)
 
 ## Logging {#logging}
 
-Log levels can be set by modifying OSGI configurations. Check the [documentation](/help/implementing/developing/introduction/logging.md) for more information.
+Log levels can be set by modifying OSGi configurations. Check the [documentation](/help/implementing/developing/introduction/logging.md) for more information.
 
 ## How are RDEs Different from Cloud Development Environments? {#how-are-rds-different-from-cloud-development-environments}
 
