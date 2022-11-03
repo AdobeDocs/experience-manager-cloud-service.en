@@ -339,7 +339,7 @@ Resetting the RDE removes all custom code, configurations, and content from both
 
    ![Reset banner notification](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-Once the RDE reset process is started, it usually takes about five minutes to complete and and return the environment to its default state. The status of the reset process can be viewed at any time in the **Status** column of the **Environments** card or in the **Environments** winow.
+Once the RDE reset process is started, it usually takes about five minutes to complete and and return the environment to its default state. The status of the reset process can be viewed at any time in the **Status** column of the **Environments** card or in the **Environments** window.
 
 ![RDE reset status](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
