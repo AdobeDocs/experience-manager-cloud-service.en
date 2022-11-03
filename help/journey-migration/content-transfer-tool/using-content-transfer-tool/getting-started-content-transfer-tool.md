@@ -30,7 +30,8 @@ The source AEM instance may be running behind a firewall where it can only reach
 
 * The Azure blob storage service: `casstorageprod.blob.core.windows.net`
 * The User Mapping IO endpoint: `usermanagement.adobe.io`
-* Internal CA certificates should be imported properly to avoid SSL related exceptions.
+
+Note : If you encounter the error "ssl certificate issue" or see something like this in the logs "Connection to SAS URL failed becuase of SSL handshake exception" then an internal CA certificate needs to be properly installed.
 
 ### Enable SSL Logging {#enable-ssl-logging}
 
