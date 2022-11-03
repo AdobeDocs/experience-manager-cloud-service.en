@@ -333,13 +333,19 @@ Resetting the RDE removes all custom code, configurations, and content from both
 
 1. Confirm that you want to reset the RDE by clicking **Reset** in the dialog.
 
-   ![Confirm reset](/help/implementing/cloud-manager/assets/reset-rde-confirm.png)
+   ![Confirm reset](/help/implementing/cloud-manager/assets/rde-reset-confirm.png)
 
-The RDE is reset and returned it to a default state. This usually takes a couple of minutes.
+1. Cloud Manager confirms via a banner notification that the reset process started.
 
-Alternatively, you can reset the RDE using the ellipsis button directly from the **Environments** card on the **Overview** page.
+   ![Reset banner notification](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-![Reset RDE from Environments card](/help/implementing/cloud-manager/assets/reset-rde-environments-card.png)
+Once the RDE reset process is started, it usually takes about five minutes to complete and and return the environment to its default state. The status of the reset process can be viewed at any time in the **Status** column of the **Environments** card or in the **Environments** winow.
+
+![RDE reset status](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
+
+You can also reset the RDE using the ellipsis button directly from the **Environments** card on the **Overview** page.
+
+![Reset RDE from Environments card](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
 For more information about how to use Cloud Manager to manage your environments, please see [the Cloud Manager documentation.](/help/implementing/cloud-manager/manage-environments.md)
 
