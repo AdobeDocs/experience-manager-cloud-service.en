@@ -7,3 +7,4 @@ Thumbs.db
 .gitignore
 desktop.ini
 experience-manager-cloud-service.en.code-workspace
+.idea
