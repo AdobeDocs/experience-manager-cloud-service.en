@@ -347,6 +347,10 @@ You can also reset the RDE using the ellipsis button directly from the **Environ
 
 ![Reset RDE from Environments card](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
+>[!NOTE]
+>
+>You must be assigned to the **Developer** role in Cloud Manager in order to use the reset feature. If not, the reset action will result in an error.
+
 For more information about how to use Cloud Manager to manage your environments, please see [the Cloud Manager documentation.](/help/implementing/cloud-manager/manage-environments.md)
 
 ## Logging {#logging}
