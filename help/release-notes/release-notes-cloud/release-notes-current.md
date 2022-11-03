@@ -45,7 +45,7 @@ Have a look at the October 2022 Release Overview video for a summary of the feat
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* Experience Manager Assets now allows [you to upload documents in other supported format types and preview them using the included Document Cloud viewer](../../assets/manage-pdf-documents.md). The supported format types include TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, and XLSX.
+* Experience Manager Assets now allows you to upload documents in other supported format types and[ preview them using the included Document Cloud viewer](../../assets/manage-pdf-documents.md). The supported format types include TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, and XLSX.
 
   ![PDF rendition for other formats](/help/release-notes/assets/multi-page-other-formats.png)
 
