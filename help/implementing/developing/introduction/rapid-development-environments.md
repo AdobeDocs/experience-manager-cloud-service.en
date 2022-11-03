@@ -305,7 +305,7 @@ Reset is an option in the environment menu for the the RDE. This can be used, fo
 
 >[NOTE!]
 >
->User must be assigned the Cloud Manager Developer role in order to be able to use the reset feature. If not, a reset action will result in an error.
+>You must be assigned the Cloud Manager Developer role in order to be able to use the reset feature. If not, a reset action will result in an error.
 
 ### Reset the RDE via Command Line {#reset-the-rde-command-line}
 
