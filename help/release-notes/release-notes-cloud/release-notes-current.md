@@ -67,7 +67,6 @@ Have a look at the October 2022 Release Overview video for a summary of the feat
   * **Document of Record in template editor**: You can now standardize Document of Record generation for all forms created using a template. This helps enhance compliance and standardization for org requirements.
 
 * **Launch the Adaptive Form wizard from a AEM Sites Page**: AEM Sites page has extended support for Adaptive Forms. You can now create a new Adaptive Form or embed an existing Adaptive Form while remaining on AEM Sites page. 
-
 * **Change display alignment for checkboxes and radiobutton in DoR**: You can now set the desired alignment (Horizontal, Vertical, Same as Adaptive Forms) for checkbox and radio button on the Document of Record. This option determines the positioning of checkbox and radio button options in the Document of Record. 
 
 ## CIF Add-on {#cloud-services-cif}
