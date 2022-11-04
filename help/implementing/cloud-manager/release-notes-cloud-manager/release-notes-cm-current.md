@@ -21,7 +21,7 @@ The release date for Cloud Manager release 2022.11.0 in AEM as a Cloud Service i
 
 * The license dashboard for the AEM Sites solution will now display contract details, including whether or not the tenant is within its subscription.
 * When an environment associated with a pipeline has a status which does not allow the pipeline to be executed, the run action is disabled with an explanatory tooltip.
-* An improved message was aeed to the UI when the **Add Program** button is disabled due to insufficient entitlements for the tenant.
+* An improved message was added to the UI when the **Add Program** button is disabled due to insufficient entitlements for the tenant.
 
 ## Bug Fixes {#bug-fixes}
 
