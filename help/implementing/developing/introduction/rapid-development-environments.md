@@ -165,7 +165,7 @@ You can find some examples below:
 
 <u>Deploying a Content Package</u>
 
-`aio io aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
+`aio aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
 The response for a successful deployment resembles the following:
 
