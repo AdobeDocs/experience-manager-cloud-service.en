@@ -217,7 +217,7 @@ where the response for a successful deployment resembles the following:
 
 <u>Deploying an Apache/Dispatcher Configuration</u>
 
-The entire folder structure needs to be in the form of a zip file for this type of configuration. You can zip it by running this command from withing a dispatcher configuration folder:
+The entire folder structure needs to be in the form of a zip file for this type of configuration. You can zip it by running this command from the root of a dispatcher configuration folder:
 
 `zip -y -r dispatcher.zip`
 
@@ -225,7 +225,7 @@ then deploy the configuration by this command:
 
 `aio aem:rde:install -t dispatcher-config dispatcher-wknd-2.1.0.zip`
 
-where the response for a successful deployment resembles the following:
+A successful deployment will generate a response resembles the following:
 
 ```
 ..
