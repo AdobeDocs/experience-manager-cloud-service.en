@@ -2,8 +2,8 @@
 title: Release Notes for Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service
 description: These are the release notes for Cloud Manager 2022.8.0 in AEM as a Cloud Service.
 feature: Release Information
+exl-id: df31673a-0ffd-4ea8-a6da-fbf75318b915
 ---
-
 # Release Notes for Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
 This page documents the release notes for Cloud Manager 2022.8.0 in AEM as a Cloud Service.
