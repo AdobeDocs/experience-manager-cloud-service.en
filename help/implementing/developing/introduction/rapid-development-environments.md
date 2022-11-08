@@ -5,9 +5,9 @@ description: Learn how to leverage Rapid Development Environments for rapid deve
 
 # Rapid Development Environments {#rapid-development-environments}
 
-Current Cloud Development environments require a CI/CD pipeline deployment, a process that can take up 30 minutes for each change. To minimize the amount of time needed to test features that are proven to work on a local development environment, customers can use Rapid Development Environments (RDEs for short) to quickly push changes, ensuring that they work in the cloud, and making modifications as needed.
+Current Cloud Development environments require the use of a CI/CD pipeline to deploy changes. To minimize the amount of time needed to test features that are proven to work on a local development environment, customers can use Rapid Development Environments (RDEs for short) to quickly push the changes, ensuring that they work in the cloud, and make modifications as needed.
 
-Once the changes have been tested in an RDE, you can deploy them to a regular Development environment through the Cloud Manager pipeline.
+Once the changes have been tested in an RDE, they can be deployed to a regular Development environment through the Cloud Manager pipeline.
 
 ## Introduction {#introduction}
 
@@ -372,6 +372,8 @@ While the RDE is in many ways similar to a Cloud Development Environment, there 
 For these reasons, it is recommended that after validating code on an RDE environment, you should deploy the code to a Cloud Development Environment using the non-production pipeline. Finally, test the code before deploying with the production pipeline.
 
 ## How many RDEs do I need? {#how-many-rds-do-i-need}
+
+The purchase of additional RDEs for Production programs will be possible beginning with late January.
 
 The number of RDEs needed depends on the make-up and processes of an organization. The most flexible model is where an organization purchases a dedicated RDE for each one of their AEM CS developers. In this model, each developer can test their code on the RDE without needing to coordinate with other team members around whether an RDE environment is available.
 
