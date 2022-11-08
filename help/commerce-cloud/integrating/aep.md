@@ -10,8 +10,8 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
+exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
 ---
-
 # AEM-CIF core components and Adobe Experience Platform integration {#aem-cif-aep-integration}
 
 The [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) core components provide seamless integration with [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) to forward storefront events and their data from client-side interactions such as __add to cart__.
@@ -480,4 +480,3 @@ For more information, refer to the following resources:
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [Experience Platform connector overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
 - [Adobe Experience Platform overview](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
-
