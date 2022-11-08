@@ -19,9 +19,19 @@ The following section outlines the general Release Notes for the current (latest
 
 ## Release Date {#release-date}
 
-
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.10.0) is November 10, 2022.
 The next release (2022.12.0) is planned for December 15, 2022.
+
+>[!CAUTION]
+>
+>**Black Friday and Christmas Maintenance Exclusion Period**
+>
+> No automatic AEMCS maintenance will be executed from :
+>
+>* Monday November, 21st until Sunday December 4th.
+>* Monday December, 19th until Monday January, 2nd (included).
+>
+> Those periods cover Black Friday, Cyber Monday and Christmas time frames.
 
 ## Release Video {#release-video}
 
