@@ -63,6 +63,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-10-0.md)
       + [Release Notes for 2022.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
       + [Release Notes for 2022.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
       + [Release Notes for 2022.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
@@ -496,6 +497,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Review and correct converted forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
   + Create and publish an Adaptive Form {#create-an-adaptive-form}
     + Before you start {#before-you-start}
+      + [Introduction to authoring of an Adaptive Forms](/help/forms/introduction-forms-authoring.md)
       + [Create a template](/help/forms/template-editor.md)
       + [Create a theme](/help/forms/themes.md)
       + [Connect your data sources to Cloud Service](/help/forms/data-integration.md)
@@ -530,19 +532,21 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + Improve accessibility of an Adaptive Form {#accessible-adaptive-forms}
       + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
     + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
-  + Integrate a form with one or more data sources {#use-form-data-model}
-    + [Configure data sources](/help/forms/configure-data-sources.md)
-    + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-    + [Configure [!DNL Azure] storage](/help/forms/configure-azure-storage.md)
-    + [Configure [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
-    + [Create Form Data Model](/help/forms/create-form-data-models.md)
-    + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
-    + [Use Form Data Model](/help/forms/using-form-data-model.md)
-  + [Integrate with Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
-  + [Integrate with DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
-  + [Integrate with Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
-  + [Integrate with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-  + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+  + Integrate {#integrate}
+    + Integrate a form with one or more data sources {#use-form-data-model}
+      + [Configure data sources](/help/forms/configure-data-sources.md)
+      + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+      + [Configure [!DNL Azure] storage](/help/forms/configure-azure-storage.md)
+      + [Configure [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
+      + [Create Form Data Model](/help/forms/create-form-data-models.md)
+     + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
+      + [Use Form Data Model](/help/forms/using-form-data-model.md)
+    + [Integrate with Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+    + [Integrate with DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
+    + [Integrate with Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
+    + [Integrate with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+    + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+    + [Embed Adaptive Forms in AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
   + Create and use workflows {#create-form-centric-workflows}
     + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)
     + [Use variables in a Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
