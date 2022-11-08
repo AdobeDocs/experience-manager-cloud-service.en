@@ -11,8 +11,8 @@ role: Admin, Architect, Developer
 level: Beginner
 kt: 10529
 thumbnail: 346811.jpeg
+exl-id: 5328fe30-79ca-4496-8ebd-f1ef51ccfccf
 ---
-
 # Setup multiple commerce systems
 
 The single AEM CIF system can be used to connect to multiple Adobe or third-party commerce systems to support advanced deployments. This is useful in cases of multi-region, multi-brand storefronts wherein the single experience management layer simplifies the commerce content creation and delivery process. This also helps organizations to accelerate time to value (TTV) and decreases the total cost of ownership (TCO).
