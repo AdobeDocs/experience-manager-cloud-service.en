@@ -192,9 +192,37 @@ Refer to [Ingesting Content into Target](https://experienceleague.adobe.com/docs
 for general information about ingesting content into the target from the Cloud Acceleration Manager (CAM), including
 instruction on how to use AzCopy (pre-copy), or not, in the "New Ingestion" dialog.
 
-To take advantage of AzCopy during ingestion, we require that you be on a AEM as a Cloud Service version that is at least version 2021.6.5561.
+To take advantage of AzCopy during ingestion, we require that you be on an AEM as a Cloud Service version that is at least version 2021.6.5561.
 
-Refer to the "Ingestion Jobs" list in the Cloud Acceleration Manager and the ingestion's logs to see the progress. 
+Refer to the "Ingestion Jobs" list in the Cloud Acceleration Manager and the ingestion's logs to see the progress.  The log entries related to the
+successful AzCopy tasks will appear as follows (allowing for some differences). Checking the logs occasionally could alert you to problems
+early on, and help you find a quick solution to any problems.
+
+```
+*************** Beginning AzCopy pre-copy phase ***************
+INFO: Scanning...
+INFO: Failed to create one or more destination container(s). Your transfers may still succeed if the container already exists.
+INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+INFO: azcopy: A newer version 10.11.0 is available to download
+ 
+Job 419d98da-fc05-2a45-70cc-797fee632031 has started
+Log file is located at: /root/.azcopy/419d98da-fc05-2a45-70cc-797fee632031.log
+ 
+0.0 %, 0 Done, 0 Failed, 886 Pending, 0 Skipped, 886 Total,
+ 
+Job 419d98da-fc05-2a45-70cc-797fee632031 summary
+Elapsed Time (Minutes): 0.0334
+Number of File Transfers: 886
+Number of Folder Property Transfers: 0
+Total Number of Transfers: 886
+Number of Transfers Completed: 17
+Number of Transfers Failed: 0
+Number of Transfers Skipped: 869
+TotalBytesTransferred: 248350
+Final Job Status: CompletedWithSkipped
+ 
+*************** Completed AzCopy pre-copy phase ***************
+```
 
 ## What's Next {#whats-next}
 
