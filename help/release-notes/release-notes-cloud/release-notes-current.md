@@ -28,7 +28,7 @@ The next release (2022.12.0) is planned for December 15, 2022.
 >
 > No automatic AEMCS maintenance will be executed from :
 >
->* Monday November, 21st until Sunday December 4th.
+>* Monday November, 21st until Sunday December 4th (included).
 >* Monday December, 19th until Monday January, 2nd (included).
 >
 > Those periods cover Black Friday, Cyber Monday and Christmas time frames.
