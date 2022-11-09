@@ -103,17 +103,17 @@ jobs:
       # Checkout the main project
       - name: Checkout main project
         run:
-          git clone -b ${MAIN_BRANCH} ${MAIN_REPOSITORY}.git main 
+          git clone -b ${MAIN_BRANCH} ${MAIN_REPOSITORY} ${MAIN_BRANCH}
       # Move sub project
       - name: Move project to main project
         run: |
-          rm -rf main/${PROJECT_DIR} 
-          mv sub main/${PROJECT_DIR}
+          rm -rf ${MAIN_BRANCH}/${PROJECT_DIR} 
+          mv sub ${MAIN_BRANCH}/${PROJECT_DIR}
       - name: Commit Changes
         run: |
-          git -C main add -f ${PROJECT_DIR}
-          git -C main commit -F ../commit.txt
-          git -C main push
+          git -C ${MAIN_BRANCH} add -f ${PROJECT_DIR}
+          git -C ${MAIN_BRANCH} commit -F ../commit.txt
+          git -C ${MAIN_BRANCH} push
 ```
 
 Using a GitHub action is very flexible. Any mapping between branches of the git repositories can be performed as well as any mapping of the separate git projects into the directory layout of the main project.
