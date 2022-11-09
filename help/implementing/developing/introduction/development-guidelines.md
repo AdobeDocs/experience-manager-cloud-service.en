@@ -278,5 +278,4 @@ Please see the [Apache Oak documentation](https://jackrabbit.apache.org/oak/docs
 
 ## [!DNL Assets] development guidelines and use cases {#use-cases-assets}
 
-To know about the development use cases, recommendations, and reference materials for Assets as a Cloud Service, see [Developer references for Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
-
+To learn about the development use cases, recommendations, and reference materials for Assets as a Cloud Service, see [Developer references for Assets.](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
