@@ -258,7 +258,25 @@ The `smtp.starttls` property will automatically be set by AEM as a Cloud Service
 
 The SMTP server host should be set to that of your mail server.
 
+## Avoid Large Multi-Value Properties {#avoid-large-mvps}
+
+The Oak content repository that underlies AEM as a Cloud Service is not intended to be used with an excessive number of multi-value properties (MVPs). A rule-of-thumb is to keep MVPs below 1000. However actual performance depends on many factors.
+
+Warnings are logged by default after exceeding 1000. They are similar to the following.
+
+```text
+msg: [sling-threadpool-2e4879a6-83b6-4c01-8ba1-31d85a69a6f9-(apache-sling-job-thread-pool)-1-Async Process Default Queue Config(async/process)] org.apache.jackrabbit.oak.jcr.session.NodeImpl Large multi valued property [/var/eventing/jobs/assigned/ab847c78-fc5a-4c5c-b4b4-6668dcbfa0fe/async.process/2022/7/26/12/18/a8bad656-d90e-4f46-9fa6-3270cb11dbc6_1980/slingevent:progressLog] detected (1029 values). 
+```
+
+Large MVPs can lead to errors due to the mongo document exceeding 16 MB, resulting in errors similar to the following.
+
+```text
+Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
+```
+
+Please see the [Apache Oak documentation](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) for more details.
 
 ## [!DNL Assets] development guidelines and use cases {#use-cases-assets}
 
 To know about the development use cases, recommendations, and reference materials for Assets as a Cloud Service, see [Developer references for Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+
