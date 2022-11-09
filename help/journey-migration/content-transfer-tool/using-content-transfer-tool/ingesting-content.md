@@ -48,7 +48,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. You can then monitor the Ingestion phase from the Ingestion Jobs list view
+1. You can then monitor the Ingestion phase from the Ingestion Jobs list view and use the ingestion's action menu to view the log as the ingestion progresses.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -118,4 +118,4 @@ You will be able to kick-off an ingestion to the destination environment only if
 
 ## What's Next {#whats-next}
 
-Once you have learned Ingesting Content into Target in Content Transfer Tool, you can view logs upon completion of each step (extraction and ingestion) and look for errors. See [Viewing Logs for a Migration Set](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) to learn more.
+Once you have completed Ingesting Content into Target, you can view logs of each step (extraction and ingestion) and look for errors. See [Viewing Logs for a Migration Set](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) to learn more.
