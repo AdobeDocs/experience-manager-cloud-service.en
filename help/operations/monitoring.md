@@ -36,7 +36,7 @@ While external availability is focused on end-user monitoring, internal module m
 * Disk usage is below a certain threshold.
 * Author repository size is within certain bounds.
 * Backup operations are completed succesfully.
-* Databases performance is as expected.
+* Database health and performance is monitored.
 * AEM Cloud services are behaving as expected, including no blocked replication queues, consistent data and performant queries.
 
 Additional checks are added to environments provisioned for Forms. Please keep in mind that check definitions are not static and are subject to changes and updates.
