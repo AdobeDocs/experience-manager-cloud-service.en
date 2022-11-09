@@ -5,9 +5,11 @@ description: Learn how to leverage Rapid Development Environments for rapid deve
 
 # Rapid Development Environments {#rapid-development-environments}
 
-Current Cloud Development environments require the use of a CI/CD pipeline to deploy changes. To minimize the amount of time needed to test features that are proven to work on a local development environment, customers can use Rapid Development Environments (RDEs for short) to quickly push the changes, ensuring that they work in the cloud, and make modifications as needed.
+In order to deploy changes, current Cloud Development environments require the use of a process that employs extensive code security and quality rules called a CI/CD pipeline. For situations where quick and iterative changes are needed, Adobe has introduced Rapid Development Environments (RDEs for short).
 
-Once the changes have been tested in an RDE, they can be deployed to a regular Development environment through the Cloud Manager pipeline.
+RDEs allow developers to swiftly deploy and review changes, minimizing the amount of time needed to test features that are proven to work on a local development environment.
+
+Once the changes have been tested in an RDE, they can be deployed to a regular Cloud Development environment through the Cloud Manager pipeline.
 
 ## Introduction {#introduction}
 
@@ -17,7 +19,9 @@ Every program is provisioned with an RDE. In case of Sandbox accounts, they will
 
 Typically, an RDE would be used by a single developer at a given time, for testing and debugging a specific feature. When the development session is done, the RDE can be reset into a default state for the next usage.
 
-Additional RDEs may be purchased for Production programs beginning with late January.
+<!-- Temporarily hiding this. See CQDOC-19795 for more details
+
+Additional RDEs may be purchased for Production programs beginning with late January. -->
 
 ## Enabling RDE in a Program {#enabling-rde-in-a-program}
 
@@ -371,6 +375,8 @@ While the RDE is in many ways similar to a Cloud Development Environment, there 
 
 For these reasons, it is recommended that after validating code on an RDE environment, you should deploy the code to a Cloud Development Environment using the non-production pipeline. Finally, test the code before deploying with the production pipeline.
 
+<!-- Temporarily hiding this. See CQDOC-19795 for more details
+
 ## How many RDEs do I need? {#how-many-rds-do-i-need}
 
 The purchase of additional RDEs for Production programs will be possible beginning with late January.
@@ -379,4 +385,4 @@ The number of RDEs needed depends on the make-up and processes of an organizatio
 
 At the other extreme, a team with a single RDE may use internal processes to coordinate which developer can use the environment at a given time. This can possibly be whenever a developer has hit an intermediate feature milestone and is ready to validate in a Cloud environment where they can quickly make the changes they need.
 
-An intermediate model is one where an organization purchases a number of RDEs that will create a situation in which not every developer will have a dedicated environment, but there is a greater likelihood of an unused RDE being available. One strategy could be to allocate an RDE per scrum team or major feature. Internal processes may be used to coordinate usage of the environments.
+An intermediate model is one where an organization purchases a number of RDEs that will create a situation in which not every developer will have a dedicated environment, but there is a greater likelihood of an unused RDE being available. One strategy could be to allocate an RDE per scrum team or major feature. Internal processes may be used to coordinate usage of the environments. -->
