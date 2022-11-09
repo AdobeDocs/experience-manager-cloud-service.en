@@ -19,7 +19,6 @@ The release date for Cloud Manager release 2022.7.0 in AEM as a Cloud Service is
 ## What's New {#what-is-new}
 
 * Cloud Manager users can now access useful video tutorials from the **Welcome** card on the landing page at any time.
-* The popover on the **[Restore Content](/help/operations/backup.md)** tab of the environments details page now displays a handy list of git commands allowing the user to view changes locally.
 
 ## Bug Fixes {#bug-fixes}
 

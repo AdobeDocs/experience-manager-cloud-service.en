@@ -14,9 +14,9 @@ exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 
 ## Overview {#overview}
 
-AEM as a Cloud Service is integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. The impact of this integration can be seen in the top-header of the application as shown below.
+AEM as a Cloud Service (Author Service) is integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. The impact of this integration can be seen in the top-header of the application as shown below.
 
-![image](/help/overview/assets/unifiedshell1.png)
+![image](/help/overview/assets/unifiedshell_header.png)
 
 The benefits of this are:
 
@@ -52,6 +52,7 @@ To change to the dark theme, click on your profile icon. This will display a pop
 >The dark theme applies to Unified Shell (the top bar) only.
 
 ![image](/help/overview/assets/unifiedshell4.png)
+
 
 ## Accessing the AEM Inbox {#accessing-the-aem-inbox}
 
