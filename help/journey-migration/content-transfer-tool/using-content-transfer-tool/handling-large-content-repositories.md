@@ -90,7 +90,7 @@ In short, you will most likely want to download the Linux x86-64 binary from the
 >[!IMPORTANT]
 >The most recently released version of CTT should be used.
 
-AzCopy support for Amazon S3 and Azure Blob Storage and support for File Data Store is included in latest CTT release.
+AzCopy support for Amazon S3, Azure Blob Storage and File Data Store is included in latest CTT release.
 You can download the latest release of CTT from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
 
 
@@ -132,7 +132,7 @@ s3SecretKey=--REDACTED--
 
 #### File Data Store {#file-data-store-azcopy-config}
 
-Your `azcopy.config` file must contain the azcopyPath property, and an optional repository.home property that points to the location of the file datastore. Use the correct values for your instance.
+Your `azcopy.config` file must contain the azCopyPath property, and an optional repository.home property that points to the location of the file datastore. Use the correct values for your instance.
 File Data Store
 
 ```
