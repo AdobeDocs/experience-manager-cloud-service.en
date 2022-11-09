@@ -26,12 +26,12 @@ The next release (2022.12.0) is planned for December 15, 2022.
 >
 >**Black Friday and Christmas Maintenance Exclusion Period**
 >
-> No automatic AEMCS maintenance will be executed from :
+> No automatic AEMaaCS maintenance will be executed during the following timeframes, beginning and ending at midnight (00:00) CET:
 >
->* Monday November, 21st until Sunday December 4th (included).
->* Monday December, 19th until Monday January, 2nd (included).
+>* Monday, November 21 until Monday, December 5
+>* Monday, December 19 until Tuesday, January 3
 >
-> Those periods cover Black Friday, Cyber Monday and Christmas time frames.
+> These periods cover Black Friday, Cyber Monday, Christmas, and New Year.
 
 ## Release Video {#release-video}
 
