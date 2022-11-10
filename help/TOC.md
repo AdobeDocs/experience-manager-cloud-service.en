@@ -140,7 +140,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md)
     + [Developer and Deployment Manager Tasks](/help/journey-onboarding/developers.md)
     + [AEM User Tasks](/help/journey-onboarding/aem-users.md)
-    + [User Groups](/help/journey-onboarding/user-groups.md)
   + AEM Reference Demos Add-On Journey {#demo-add-on}
     + [Overview](/help/journey-sites/demos-add-on/overview.md)
     + [Installation](/help/journey-sites/demos-add-on/installation.md)
@@ -151,6 +150,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Other Onboarding Concepts {#concepts}
     + [Introduction to Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
     + [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md)
+    + [Notification User Groups](/help/journey-onboarding/user-groups.md)
 + AEM as a Cloud Service Migration Journey {#migration-journey}
   + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/getting-started.md)
   + [Readiness Phase](/help/journey-migration/readiness.md)
