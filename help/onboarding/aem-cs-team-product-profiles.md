@@ -25,7 +25,9 @@ Your AEM as a Cloud Service team members will be added and assigned to one or mo
 
 >[!NOTE]
 >
->Every user assigned to an AEM as a Cloud Service product profile has (read only) access to Cloud Manager.
+>Every user assigned to an AEM as a Cloud Service product profile has read-only access to Cloud Manager via the **Cloud Manager User** role.
+>
+>Users with only the **Cloud Manager User** role can log into Cloud Manager and navigate to the AEM author environments (if they exist) by using the **Programs** menu options. The **Cloud Manager User** role is not sufficient to access program details. If such access is needed, users must be granted additional roles by their system administrator.
 
 >[!TIP]
 >
