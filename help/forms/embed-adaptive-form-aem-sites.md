@@ -14,17 +14,21 @@ AEM Forms allows form developers to seamlessly embed adaptive forms in an AEM Si
 
 In AEM Sites page, you can add an Adaptive Form using:
 
-* **[AEM Forms Container component](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
+* **AEM Forms Container component**
   AEM Forms provides a component that you can add to your site pages. The AEM Forms Container component lets you embed an Adaptive Form.
 
-* **[Asset browser](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
+* **Asset browser**
   All the forms are available under Assets. You can drag-drop the form as an asset on your page.
 
 ## Prerequisites {#prerequisites}
 
-To embed an Adaptive Form in an AEM Sites page that uses an editable template, ensure that the AEM Form component is configured as an allowed component in the associated template. For more information, see **Policy & Properties (Layout Container)** section in [Creating Page Templates](/help/sites-authoring/templates.md).
+To embed an Adaptive Form in an AEM Sites page that uses an editable template, ensure that the AEM Form component is configured as an allowed component in the associated template. 
 
-In case of a Sites page using a static template, you need to configure it in the paragraph system of the site page. See [Configuring Components in Design Mode](/help/sites-authoring/default-components-designmode.md) for more information.
+In case **AEM Forms Container component** is not visble in the **Component browser panel** of AEM sites page, perform the following steps as illustrated in the video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410544)
+
+In case Sites page is using a static template, you need to configure it in the paragraph system of the site page. 
 
 ## Embedding an Adaptive Form {#af-component}
 
@@ -42,21 +46,31 @@ To embed an Adaptive Form using AEM Forms Container component:
 1. Tap the embedded AEM Forms Container component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit AEM Forms Container]** dialog opens.
 1. In the Edit AEM Forms Container dialog, specify the following.
 
-    <!-- * **Asset Type:** Select the type of asset to embed. The options are Adaptive Form -->
+    **Asset Type:** Select the type of asset to embed. 
     * **Asset Path**: Browse and select the Adaptive Form to embed. It is auto-populated if you dropped it from the Assets browser.
     * **Post Submission** : Select the action to trigger on form submission. You can choose to show a thank you message or a thank you page.
+        * Show
 
         * **Thank You Message**: Write a message using the rich text editor to show on form submission. This option is available only when you choose to show a thank you message.
         * **Thank You Page**: Browse and select the page to display on form submission. This option is available only when you choose to show a thank you page.
            * **Redirect to thank you page**: Enable the option to replace the page containing the embedded Adaptive Form with thank you page. Otherwise, the thank you page replaces the Adaptive Form in the AEM Forms container, without refreshing underlying sites the page. This option is available only when you choose to show a thank you page.
     * **Use Page Language**: Use local of the AEM Sites page instead locale of Adaptive Form.
     * **Set Focus on Form**: Select to set the focus on the first field of the Adaptive Form.
-
     * **Theme**: Select a theme that defines styling for components of your Adaptive Form. Styling includes appearance properties such as font style, background color, dimensions, and alignment.
+    * **Form covers entire width of the frame**: If checked, iframe is not used used to render the form. 
     * **Height**: Specify the height of the container. Leave it blank to automatically resize the container.
     * **CSS Client library**: Specify path to a CSS client library.
 
 1. Save the settings. The Adaptive Form  is now embedded in the page.
+
+AEM site also allows you to create an Adaptive Form on the fly using the AEM forms container component. Follow the steps to create an Adaptive Form using **AEM Forms container component** on AEM sites page:
+1. Open the AEM sites page, in edit mode, in which you want to embed an Adaptive Form.
+1. From the Component browser panel, drag-drop the AEM Forms Container component on the page.
+1. Click on the **Plus** icon and you will be redirected to the form creation wizard.
+
+    ![AEM Form Container Component](/help/forms/assets/aemformcontainer.png)
+
+1. When an Adaptive Form is created, you are redirected to the AEM sites page and the created form renders at the AEM sites page.
 
 ## Publishing embedded Adaptive Form {#publishing-embedded-adaptive-form}
 
