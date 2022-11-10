@@ -27,10 +27,6 @@ Typically a team member assigned to the **Business Owner** product profile is re
 
 For the purposes of this onboarding journey, you, as the system administrator, already assigned yourself to the **Business Owner** product profile and will set up the cloud resources. Depending actual project requirements, the business owners may or may not be the same as the system administrator.
 
->[!NOTE]
->
->By default a user with access to an AEM environment will also have Cloud >Manager User role. This role in and of itself is insufficient to give the user access to program details view. Such a user with only Cloud Manager user role is able to navigate via the program menu options to the AEM environment author URL (if environments exist). Such users must contact their administrator if they wish to get program-level access.
-
 ## Access Cloud Manager as System Administrator and Business Owner {#access-sysadmin-bo}
 
 Before the team members that you assigned to the **Business Owner** role can access cloud manager and begin creating cloud resources, the system administrator must be assigned the **Business Owner** role and sign into Cloud Manager as you did in the previous step in this onboarding journey.
@@ -132,3 +128,4 @@ Follow the additional resources to learn about:
 
 * [Introduction to Cloud Manager](/help/onboarding/cloud-manager-introduction.md) - 
 Learn about Cloud Manager, Cloud Manager programs, and environments.
+* [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) - Learn how AEM as a Cloud Service team and product profiles grant and limit access to your licensed Adobe solutions.
