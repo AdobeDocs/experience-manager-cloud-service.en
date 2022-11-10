@@ -7,7 +7,7 @@ description: Infrastructure and Service Monitoring in AEM as a Cloud Service
 
 Adobe Experience Manager as a Cloud Service provides observability and monitoring of: infrastructure, services and user experience. Since various solutions are used and there are several layers of monitoring, this page is organized into three sections:
 
-* [External availability](external-availability)
+* [External availability](#external-availability)
 * [Internal module monitoring](#module-monitoring)
 * [Customer observability](#customer-observability)
 
