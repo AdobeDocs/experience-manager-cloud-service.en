@@ -29,7 +29,8 @@ Your AEM as a Cloud Service team members will be added and assigned to one or mo
 
 >[!TIP]
 >
->For more information on the onboarding process, please refer to the [onboarding journey.](/help/journey-onboarding/overview.md)
+>* To learn more about about AEM product profiles, please see the document [Assigning AEM Product Profiles.](/help/journey-onboarding/assign-profiles-aem.md)
+>* For more information on the onboarding process, please refer to the [onboarding journey.](/help/journey-onboarding/overview.md)
 
 ## Cloud Manager Product Profiles {#cloud-manager-product-profiles}
 
@@ -57,3 +58,8 @@ Your Cloud Manager team will include at least:
 >[!NOTE]
 >
 >To be granted access to AEM as a Cloud Service, users must belong to one of two product profiles: `AEM Users` or `AEM Administrators`. Permissions to administer Cloud Manager will not suffice.
+
+>[!TIP]
+>
+>* To learn more about about Cloud Manager product profiles, please see the document [Assigning Team Members to Cloud Manager Product Profiles.](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+>* For more information on the onboarding process, please refer to the [onboarding journey.](/help/journey-onboarding/overview.md)
