@@ -5,7 +5,7 @@ description: Infrastructure and Service Monitoring in AEM as a Cloud Service
 
 # Infrastructure and Service Monitoring in AEM as a Cloud Service {#monitoring-in-aem-as-a-cloud-service}
 
-Adobe Experience Manager as a Cloud Service provides observability and monitoring of: infrastructure, services and user experience. Since a variety of solutions are used and there are several layers of monitoring, this page is organized into three sections:
+Adobe Experience Manager as a Cloud Service provides observability and monitoring of: infrastructure, services and user experience. Since various solutions are used and there are several layers of monitoring, this page is organized into three sections:
 
 * [External availability](external-availability)
 * [Internal module monitoring](#module-monitoring)
@@ -13,7 +13,7 @@ Adobe Experience Manager as a Cloud Service provides observability and monitorin
 
 AEM as a Cloud Service uses hundreds of cloud-native monitors to continually report the state of each environment (24/7) for 365 days a year. The monitor definitions are not static, they are continuously reviewed to improve the early detection capability. Additionally, Adobe has on-call procedures set up to respond to alerts.
 
-If you require information about other types of monitoring like logging or monitoring through Cloud Manager please see the [Additional Resources](#resources) section.
+If you require information about other types of monitoring like logging or monitoring through Cloud Manager, please see the [Additional Resources](#resources) section.
 
 ## External Availability {#external-availability}
 
@@ -35,7 +35,7 @@ While external availability is focused on end-user monitoring, internal module m
 * Instance redeployments do not exceed a certain frequency.
 * Disk usage is below a certain threshold.
 * Author repository size is within certain bounds.
-* Backup operations are completed succesfully.
+* Backup operations are completed successfully.
 * Database health and performance is monitored.
 * AEM Cloud services are behaving as expected, including no blocked replication queues, consistent data and performant queries.
 
