@@ -17,24 +17,13 @@ The following section outlines the general Release Notes for the current (latest
 >
 >See [Recent Documentation Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) for details of documentation updates not directly related to a release.
 
->[!CAUTION]
->
->**Black Friday and Christmas Maintenance Exclusion Period**
->
-> No automatic AEMaaCS maintenance will be executed during the following timeframes, beginning and ending at midnight (00:00) CET:
->
->* Monday, November 21 until Monday, December 5
->* Monday, December 19 until Tuesday, January 3
->
-> These periods cover Black Friday, Cyber Monday, Christmas, and New Year.
-
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current monthly release (2022.10.0) is November 10, 2022. The next monthly release (2023.1.0) is planned for January 26, 2022.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current monthly release (2023.1.0) is January 26, 2023. The next monthly release (2023.2.0) is planned for February 23, 2023.
 
 ## Release Video {#release-video}
 
-Have a look at the October 2022 Release Overview video for a summary of the features added in the 2022.10.0 release:
+Have a look at the January 2023 Release Overview video for a summary of the features added in the 2023.1.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409801/?quality=12)
 
