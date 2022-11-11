@@ -437,9 +437,6 @@ For further examples, see:
 
 * [Sample Queries based on the WKND Project](/help/headless/graphql-api/sample-queries.md#sample-queries-using-wknd-project)
 
-<!-- CQDOC-19418 -->
-
-<!--
 ## Sorting {#sorting}
 
 This feature allows you to sort the query results according to a specified field.
@@ -521,15 +518,11 @@ query {
 >* Paging defaults use `_uuid` for ordering to ensure the order of results is always the same. When `sort` is used, `_uuid` is added as a last order-by field.
 >
 >* Performance is expected to be degraded if sort/filter parameters cannot be executed at jcr query level, as the query first has to gather the results in memory then sort them, then finally apply paging. Therefore it is recommended to use filter/sort fields stored at root level.
--->
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
 The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
 
-<!-- CQDOC-19418 -->
-
-<!--
 * If you expect a list of results:
   * add `List` to the model name; for example,  `cityList`
   * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
@@ -543,7 +536,6 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
     * [A List query with offset and limit](#list-offset-limit)
     * [A Paginated query with first and after](#paginated-first-after)
   * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
--->
 
 * If you require a single result:
   * use the model name; eg city
@@ -619,18 +611,6 @@ To access the GraphQL endpoint from an external website you need to configure th
 ## Authentication {#authentication}
 
 See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/headless/security/authentication.md).
-
-<!-- to be addressed later -->
-
-<!--
-## Sorting {#sorting}
--->
-
-<!-- to be addressed later -->
-
-<!--
-## Paging {#paging}
--->
 
 ## FAQs {#faqs}
 
