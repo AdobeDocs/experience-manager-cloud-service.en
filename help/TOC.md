@@ -483,7 +483,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Key features](/help/forms/key-features.md)
   + [Notable changes](/help/forms/notable-changes.md)
   + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
-  + AEM Forms Reference Collaterals
+  + AEM Forms Reference Collaterals {#formsreference-themes}
     + [Reference Themes](/help/forms/reference-themes.md)
   + Setup and configure the service {#setup-environment}
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
