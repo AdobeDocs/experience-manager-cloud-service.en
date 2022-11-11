@@ -483,6 +483,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Key features](/help/forms/key-features.md)
   + [Notable changes](/help/forms/notable-changes.md)
   + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
+  + AEM Forms Reference Collaterals {#formsreference-themes}
+    + [Reference Themes](/help/forms/reference-themes.md)
   + Setup and configure the service {#setup-environment}
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
@@ -866,6 +868,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Extending Experience Fragments](/help/implementing/developing/extending/experience-fragments.md)
     + [Customizing and Extending Content Fragments](/help/implementing/developing/extending/content-fragments-customizing.md)
     + [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+    + [Customizing the Content Fragment Console](/help/implementing/developing/extending/content-fragment-console-customizing.md)
     + Manage Search Forms {#manage-search-forms}
       + [Configuring Search Forms](/help/implementing/developing/extending/search-forms.md)
       + [Configure search filters for Inbox](/help/implementing/developing/extending/configure-inbox-search-rail.md)
