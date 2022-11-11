@@ -11,10 +11,6 @@ The following section outlines the general Release Notes for the current (latest
 
 >[!NOTE]
 >
->Availability of the corresponding AEM as a Cloud Service SDK is delayed, with a target of November 11th.
-
->[!NOTE]
->
 >From here, you can navigate to release notes of previous versions; for example, for those in 2020, 2021, and so on.
 
 >[!NOTE]
