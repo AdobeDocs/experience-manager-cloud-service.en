@@ -445,9 +445,10 @@ For example:
 
 ```graphql
 query {
-  articleList(sort:"author, _uuid DESC") {
+  authorList(sort:"lastName, firstName") {
     items {
-      author
+      firstName
+      lastName
       _path
     }
   }
@@ -474,12 +475,19 @@ For example, to output the page of results containing up to five articles, start
 query {
    articleList(offset: 5, limit:5) {
     items {
-      author
+      authorFragment {
+        lastName
+        firstName
+      }
       _path
     }
   }
 }
 ```
+
+<!-- When available link to BP and replace "jcr query level" with a more neutral term. -->
+
+<!-- When available link to BP and replace "jcr query result set" with a more neutral term. -->
 
 >[!NOTE]
 >
@@ -489,9 +497,11 @@ query {
 
 ### Paginated query - first and after {#paginated-first-after}
 
-The `...Paginated` query type reuses most of the `...List` query type features (filtering, sorting), but instead of using `offset`/`limit` arguments, it uses the standard `first`/`after` arguments defined by [GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
+The `...Paginated` query type reuses most of the `...List` query type features (filtering, sorting), but instead of using `offset`/`limit` arguments, it uses the `first`/`after` arguments as defined by [the GraphQL Cursor Connections Specification](https://relay.dev/graphql/connections.htm). You can find a less formal introduction in the [GraphQL introduction](https://graphql.org/learn/pagination/#pagination-and-edges).
 
-* `first`: The `n` first items to return. The default is `50`.
+* `first`: The `n` first items to return. 
+  The default is `50`. 
+  The maximum is `100`.
 * `after`: The cursor-id as returned in the complete result set - if `cursor` is selected.
 
 For example, output the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list:
@@ -502,7 +512,7 @@ query {
         edges {
           cursor
           node {
-            adventureTitle
+            title
           }
         }
         pageInfo {
@@ -513,11 +523,14 @@ query {
 }
 ```
 
+<!-- When available link to BP -->
+<!-- Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. For more information, see the [Best Practices document](link).-->
+
 >[!NOTE]
 >
->* Paging defaults use `_uuid` for ordering to ensure the order of results is always the same. When `sort` is used, `_uuid` is added as a last order-by field.
+>* Paging defaults use the UUID of the repository node representing the fragment for ordering to ensure the order of results is always the same. When `sort` is used, the UUID is implicitly used to ensure a unique sort; even for two items with identical sort keys.
 >
->* Performance is expected to be degraded if sort/filter parameters cannot be executed at jcr query level, as the query first has to gather the results in memory then sort them, then finally apply paging. Therefore it is recommended to use filter/sort fields stored at root level.
+>* Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level.
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
