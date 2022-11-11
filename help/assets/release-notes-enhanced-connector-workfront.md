@@ -9,15 +9,25 @@ The following section outlines the general Release Notes for [!DNL Workfront for
 
 ## Release Date {#release-date}
 
-The release date for the latest version 1.9.4 of [!DNL Workfront for Experience Manager enhanced connector] is October 07, 2022.
+The release date for the latest version 1.9.5 of [!DNL Workfront for Experience Manager enhanced connector] is November 11, 2022.
+
+* Issues while syncing multi-value field metadata between Experience Manager and Workfront.
+
+* Enabling the **[!UICONTROL Publish Assets to Brand Portal]** option on the Workfront enhanced connector configuration page creates an incorrect event. The event does not get deleted even after disabling the option.
+
+  To resolve the issue, disable and enable the **[!UICONTROL Publish Assets to Brand Portal]** option and delete the bad data manually using the delete subscription API.
+
+* When you define only one value for a multi-value field in Workfront, the field value is not appropriately mapped to Experience Manager.
+
+* When you define only one value for a multi-value field in Workfront and that value contains a space, the field value is not appropriately mapped to Experience Manager.
+
+* Experience Manager displays the `SERVER_ERROR` on the **[!UICONTROL Link External Files and Folders]** screen while accessing the asset folders.
 
 ## Release highlights {#release-highlights}
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following enhancements and bug fixes:
 
-* Unable to view Event Subscriptions tab on the enhanced connector configuration page due to a large number of events.
 
-* Workfront is not able to fetch the list of existing folders in a project, which is resulting in creation of duplicate folders.
 
 >[!IMPORTANT]
 >
@@ -32,6 +42,14 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * Workfront displays a `SERVER_ERROR` message while linking documents to AEM after upgrading to release 8316. To resolve the issue, assign `rep:readProperties` to `content/dam/collections` for `wf-workfront-user` AEM User Group.
 
 ## Previous releases {#previous-releases}
+
+### October 2022 release {#october-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] version 1.9.4, released on October 07, includes the following updates:
+
+* Unable to view Event Subscriptions tab on the enhanced connector configuration page due to a large number of events.
+
+* Workfront is not able to fetch the list of existing folders in a project, which is resulting in creation of duplicate folders.
 
 ### September 2022 release {#september-2022-release}
 
