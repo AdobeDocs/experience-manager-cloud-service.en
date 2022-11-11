@@ -11,6 +11,10 @@ The following section outlines the general Release Notes for [!DNL Workfront for
 
 The release date for the latest version 1.9.5 of [!DNL Workfront for Experience Manager enhanced connector] is November 11, 2022.
 
+## Release highlights {#release-highlights}
+
+The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following enhancements and bug fixes:
+
 * Issues while syncing multi-value field metadata between Experience Manager and Workfront.
 
 * Enabling the **[!UICONTROL Publish Assets to Brand Portal]** option on the Workfront enhanced connector configuration page creates an incorrect event. The event does not get deleted even after disabling the option.
@@ -22,12 +26,6 @@ The release date for the latest version 1.9.5 of [!DNL Workfront for Experience 
 * When you define only one value for a multi-value field in Workfront and that value contains a space, the field value is not appropriately mapped to Experience Manager.
 
 * Experience Manager displays the `SERVER_ERROR` on the **[!UICONTROL Link External Files and Folders]** screen while accessing the asset folders.
-
-## Release highlights {#release-highlights}
-
-The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following enhancements and bug fixes:
-
-
 
 >[!IMPORTANT]
 >
