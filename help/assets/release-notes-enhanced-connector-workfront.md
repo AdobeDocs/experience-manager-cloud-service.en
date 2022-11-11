@@ -51,7 +51,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
         `200` as the response code signifies successful deletion of wrong event subscriptions.
     >[!NOTE]
     >
-    >If you have already deleted the wrong event subscriptions before executing the steps mentioned in this procedure, you can skip Step 4.
+    >If you have already deleted the wrong event subscriptions before executing the steps mentioned in this procedure, you can skip the last step of this procedure.
 
  
 >[!IMPORTANT]
