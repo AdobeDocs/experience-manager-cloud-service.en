@@ -3,6 +3,7 @@ title: Embed an Adaptive Form in AEM Sites page
 seo-title: Hwo to add an Adaptive Form to an AEM Sites page?
 description: You can use AEM Forms Container component to add or embed Adaptive Forms to an AEM Sites pages to fill and submit a form without leaving the AEM Sites pages.
 feature: Adaptive Forms
+exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
 ---
 # Embed an Adaptive Form to an AEM sites page {#embed-an-adaptive-form-to-aem-sites-page}
 
