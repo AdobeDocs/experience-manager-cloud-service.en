@@ -8,7 +8,7 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 ---
 # Reference Themes{#reference-themes}
 
-[Themes](../../forms/using/themes.md) let you style your forms without deep knowledge of CSS. In addition to the default theme, you can get the following themes by installing the [AEM Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
+[Themes](/help/forms/themes.md) let you style your forms without deep knowledge of CSS. In addition to the default theme, you can get the following themes by installing the [AEM Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
 
 * Beryl
 * Exec
@@ -25,7 +25,7 @@ Each theme contains a unique and elegant style that you can use to create deligh
 
 Themes included in this package are responsive, and styling in these themes are defined for mobile and desktop displays. Most modern browsers on a variety of devices can render forms applied with one of these themes without any hassle.
 
-For more information on installing the package, see [How to Work With Packages](/help/sites-administering/package-manager.md).
+For more information on installing the package, see [How to Work With Packages](/help/implementing/developing/tools/package-manager.md).
 
 ## Beryl {#beryl}
 
