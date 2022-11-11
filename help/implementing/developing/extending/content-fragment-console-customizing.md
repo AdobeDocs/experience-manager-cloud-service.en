@@ -1,6 +1,7 @@
 ---
 title: Customizing and Extending the Content Fragment Console
 description: Learn how to customize the Content Fragment console
+exl-id: a5f2c7f2-2fe5-4f0c-9960-6e8fa7336f10
 ---
 # Customizing the Content Fragment Console{#customizing-content-fragment-console}
 
