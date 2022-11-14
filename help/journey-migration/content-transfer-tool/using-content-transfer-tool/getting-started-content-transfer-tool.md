@@ -32,8 +32,7 @@ The source AEM instance may be running behind a firewall where it can only reach
 * The User Mapping IO endpoint: `usermanagement.adobe.io`
 
 >[!NOTE] 
->If extraction fails due to the following error : "javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target"
-then this can be resolved by importing the relevant CA certificate.
+>If extraction fails due to the following error : "javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target" then this can be resolved by importing the relevant CA certificate.
 
 ### Enable SSL Logging {#enable-ssl-logging}
 
