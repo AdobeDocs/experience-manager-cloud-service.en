@@ -70,7 +70,8 @@ Have a look at the October 2022 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### New features available in [!DNL Forms] channel {#new-features-available-in-channel}
+### New features available in [!DNL Forms] {#new-features-available-in-channel}
+
 
 * [Adaptive Forms wizard](/help/forms/creating-adaptive-form.md): AEM Forms provides business user friendly wizard to quickly author Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form. This release brings following improvements to the wizard:
 
@@ -79,8 +80,6 @@ Have a look at the October 2022 Release Overview video for a summary of the feat
   * Use Static Templates: Customers with existing investments in legacy static templates can continue their journey of cloud adoption by using static templates in wizard to author adaptive forms. This provides additional time to customers to migrate old static templates to modern editable templates.
 
 * [Remove hidden fields from a Document of Record (DoR) while server-side processing](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): You can generate the document of record PDF for end users containing only those fields which were visible to them during data capture experience. Upon form submission, the server validates which fields were hidden to the end user based on submitted data and excludes from document of record for consistency.
-
-
 
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
 
