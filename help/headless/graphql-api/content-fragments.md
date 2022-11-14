@@ -455,6 +455,31 @@ query {
 }
 ```
 
+<!-- to be included? -->
+
+You can also sort on a field within a nested fragment, using the format of `nestedFragmentname.fieldname`
+
+For example:
+
+```graphql
+query {
+  articleList(sort:"authorFragment.lastName")  {
+    items {
+      title
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
+      slug
+      _path
+    }
+  }
+}
+```
+
 ## Paging {#paging}
 
 This feature allows you to perform paging on query types that returns a list. Two methods are provided:
@@ -524,7 +549,7 @@ query {
 ```
 
 <!-- When available link to BP -->
-<!-- Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. For more information, see the [Best Practices document](link).-->
+<!-- Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. For more information, see the [Best Practices document](link). -->
 
 >[!NOTE]
 >
@@ -533,6 +558,8 @@ query {
 >* Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level.
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
+
+<!-- need to mention DESC and lists of fields separated using commas? -->
 
 The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
 
