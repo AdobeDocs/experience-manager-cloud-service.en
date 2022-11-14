@@ -1108,12 +1108,18 @@ These sample queries are based on the WKND project. This has:
 >
 >As the results can be extensive they are not reproduced here.
 
+>[!NOTE]
+>
+>Various queries reference the variation `variation1`. This is not in the standard WKND package. It must be created for testing. 
+>
+>If `variation1` does not exist, then the `Master`variation will be returned as default.
+
 ### Sample Query for all Content Fragments of a certain model with the specified properties {#sample-wknd-all-model-properties}
 
 This sample query interrogates:
 
 * for all Content Fragments of type `article`
-* with the `path`and `author` properties.
+* with the `_path`and properties of the `authorFragment`.
 
 **Sample Query**
 
@@ -1122,9 +1128,15 @@ This sample query interrogates:
   articleList {
     items {
       _path
-      author
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
     }
-  }
+ }
 }
 ```
 
@@ -1204,10 +1216,16 @@ This sample query interrogates:
 
 ```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures") {
+  articleByPath (_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures") {
     item {
         _path
-        author
+        authorFragment {
+          _path
+          _variation
+          firstName
+          lastName
+          birthDay
+        }
         main {
           html
           markdown
@@ -1230,10 +1248,10 @@ This sample query interrogates:
 
 ```graphql
 {
-  adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
       _path
-      adventureTitle
+      title
       _model {
         _path
         title
@@ -1258,18 +1276,20 @@ This query interrogates:
 
 ```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
+      _path
+      title
+      _model {
         _path
-        author
-        referencearticle {
-          _path
-          author
+        title
       }
     }
   }
 }
 ```
+
+<!-- validate queries -->
 
 ### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
 
@@ -1281,6 +1301,8 @@ This query interrogates:
 >[!NOTE]
 >
 >The field `fragments` has the Data type `fragment-reference`, with the models `Article`, `Adventure` selected.
+
+<!-- need replacement query -->
 
 ```graphql
 {
@@ -1316,6 +1338,8 @@ These queries interrogate:
 #### Sample Query for multiple Content Fragments with Prefetched References {#sample-wknd-multiple-fragments-prefetched-references}
 
 The following query returns all content references by using `_references`:
+
+<!-- need replacement query -->
 
 ```graphql
 {
@@ -1356,6 +1380,8 @@ The following query returns all `attachments` - a specific field (sub-group) of 
 >[!NOTE]
 >
 >The field `attachments` has the Data type `content-reference`, with various forms selected.
+
+<!-- need replacement query -->
 
 ```graphql
 {
@@ -1398,6 +1424,8 @@ This query interrogates:
 >[!NOTE]
 >
 >The RTE inline references are hydrated in `_references`.
+
+<!-- need replacement query -->
 
 **Sample Query**
 
@@ -1445,10 +1473,16 @@ This query interrogates:
 
 ```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  articleByPath (_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
     item {
       _path
-      author
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1473,7 +1507,13 @@ This query interrogates:
   articleList (variation: "variation1") {
     items {
       _path
-      author
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1498,7 +1538,13 @@ This query interrogates:
   articleList (_locale: "fr") {
     items {
       _path
-      author
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1522,7 +1568,13 @@ This query interrogates:
 query {
    articleList(offset: 5, limit:5) {
     items {
-      author
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
       _path
     }
   }
@@ -1543,7 +1595,7 @@ query {
         edges {
           cursor
           node {
-            adventureTitle
+            title
           }
         }
         pageInfo {
