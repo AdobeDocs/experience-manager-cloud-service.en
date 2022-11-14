@@ -1289,8 +1289,6 @@ This query interrogates:
 }
 ```
 
-<!-- validate queries -->
-
 ### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
 
 This query interrogates:
