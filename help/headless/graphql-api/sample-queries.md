@@ -1092,8 +1092,6 @@ query {
 }
 ```
 
-<!-- need to update all queries for latest WKND version -->
-
 ## Sample Queries using the WKND Project {#sample-queries-using-wknd-project}
 
 These sample queries are based on the WKND project. This has:
