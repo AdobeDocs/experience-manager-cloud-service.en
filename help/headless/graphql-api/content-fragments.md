@@ -441,6 +441,13 @@ For further examples, see:
 
 This feature allows you to sort the query results according to a specified field.
 
+The sorting criteria:
+
+* is a comma separated list of values representing the field path
+  * dotted notation, i.e field1.subfield.subfield etc...
+* with an optional order direction
+  * ASC (ascending) or DESC (descending); as default ASC is applied
+
 For example:
 
 ```graphql
@@ -449,6 +456,20 @@ query {
     items {
       firstName
       lastName
+      _path
+    }
+  }
+}
+```
+
+And also:
+
+```graphql
+query {
+  authorList(sort:"lastName DESC") {
+    items {
+      lastName
+      firstName
       _path
     }
   }
@@ -559,8 +580,6 @@ query {
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
-<!-- need to mention DESC and lists of fields separated using commas? -->
-
 The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
 
 * If you expect a list of results:
@@ -570,6 +589,9 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   You can then:
   
   * [Sort the results](#sorting)
+
+    * `ASC` : ascending
+    * `DESC` : descending
 
   * Return a page of results using either:
 
