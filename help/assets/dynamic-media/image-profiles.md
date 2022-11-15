@@ -78,9 +78,7 @@ You have two image crop options from which to choose. You can also choose to aut
 
 ### Supported image file formats for Smart Crop and Color Swatches
 
-The maximum supported input file size resolution is 16K. 
-
-CMYK image format is not supported with smart crop.
+The maximum supported input file size resolution is 16K.
 
 >[!NOTE]
 >
@@ -89,6 +87,7 @@ CMYK image format is not supported with smart crop.
 | Image format | Case-insensitive file extension | MIME type | Supported input color space | Maximum supported input file size | Supported image format? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Yes |
+| CMYK | | | | | No |
 | EPS | | | | | No |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Yes; the first frame of the animated GIF is used for the rendition. You cannot configure or change the first frame. |
 | JPEG | `.jpg` and `.jpeg` | image/jpeg | sRGB | 15 GB | Yes |
