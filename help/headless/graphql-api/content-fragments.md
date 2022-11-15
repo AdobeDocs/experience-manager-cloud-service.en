@@ -465,12 +465,12 @@ query {
 And also:
 
 ```graphql
-query {
-  authorList(sort:"lastName DESC") {
+{
+  authorList(sort: "lastName DESC, firstName DESC") {
     items {
-      lastName
-      firstName
-      _path
+        lastName
+        firstName
+        _path
     }
   }
 }
