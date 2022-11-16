@@ -11,7 +11,8 @@ When uploading images, you can automatically crop the image upon upload by apply
 
 >[!IMPORTANT]
 >
->Image Profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
+>&bull; CMYK image format is not supported with smart crop.
+>&bull; Image profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
 
 ## Unsharp Mask option {#unsharp-mask}
 
@@ -81,11 +82,12 @@ The maximum supported input file size resolution is 16K.
 
 >[!NOTE]
 >
->16K resolution is a display resolution with approximately 16,000 pixels horizontally. The most commonly discussed 16K resolution is 15360 × 8640, which doubles the pixel count of 8K UHD in each dimension, for a total of four times as many pixels. This resolution has 132.7 megapixels, 16 times as many pixels as 4K resolution and 64 times as many pixels as 1080p resolution.
+>16K resolution is a display resolution with approximately 16,000 pixels horizontally. The most commonly discussed 16K resolution is 15360 × 8640, which doubles the pixel count of 8K UHD in each dimension, for a total of four times as many pixels. This resolution has 132.7 megapixels, 16 times as many pixels as 4K resolution and 64 times as many pixels as 1080p resolution.
 
 | Image format | Case-insensitive file extension | MIME type | Supported input color space | Maximum supported input file size | Supported image format? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Yes |
+| CMYK | | | | | No |
 | EPS | | | | | No |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Yes; the first frame of the animated GIF is used for the rendition. You cannot configure or change the first frame. |
 | JPEG | `.jpg` and `.jpeg` | image/jpeg | sRGB | 15 GB | Yes |
