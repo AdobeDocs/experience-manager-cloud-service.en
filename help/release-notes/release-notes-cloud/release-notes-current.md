@@ -19,14 +19,12 @@ The following section outlines the general Release Notes for the current (latest
 
 >[!CAUTION]
 >
->**Black Friday and Christmas Maintenance Exclusion Period**
+>**Planned Maintenance Exclusion Period**
 >
 > No automatic AEMaaCS maintenance will be executed during the following timeframes, beginning and ending at midnight (00:00) CET:
 >
 >* Monday, November 21 until Monday, December 5
 >* Monday, December 19 until Tuesday, January 3
->
-> These periods cover Black Friday, Cyber Monday, Christmas, and New Year.
 
 ## Release Date {#release-date}
 
