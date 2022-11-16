@@ -484,8 +484,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Key features](/help/forms/key-features.md)
   + [Notable changes](/help/forms/notable-changes.md)
   + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
-  + AEM Forms Reference Collaterals {#formsreference-themes}
-    + [Reference Themes](/help/forms/reference-themes.md)
   + Setup and configure the service {#setup-environment}
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
@@ -504,6 +502,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Create a template](/help/forms/template-editor.md)
       + [Create a theme](/help/forms/themes.md)
       + [Connect your data sources to Cloud Service](/help/forms/data-integration.md)
+      + [Reference Assets](/help/forms/reference-assets.md)
     + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
       + [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
       + [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)
