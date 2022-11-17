@@ -103,10 +103,8 @@ Once you've added an RDE for your program using Cloud Manager, you can interact 
 1. Finally, install the Adobe I/O CLI tools tools AEM RDE plugin by running these commands:
 
    ```
-   git clone git@git.corp.adobe.com:Granite/aio-cli-plugin-aem-rde.git
-   cd aio-cli-plugin-aem-rde
-   npm install
-   aio plugins:link
+   aio plugins:install @adobe/aio-cli-plugin-aem-rde
+   aio plugins:update
    ```
 
    Note the above requires you be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
@@ -121,7 +119,7 @@ Adobe recommends the following workflow for developing a new feature:
 
 * When an intermediate milestone is reached and successfully validated locally with the AEM as a Cloud Service SDK, the code should be committed to a git feature branch that is not yet part of the main line, although committing to git is optional. What constitutes an "intermediate milestone" varies based on team habits. Examples include a few new lines of code, half a day's of work, or completing a subfeature.
 
-* Reset the RDE if it has been used by another feature and you want to reset it to a default state. This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Reset will take a few minutes and all existing content and code will be deleted. You can use the RDE status command to confirm the RDE is ready.
+* Reset the RDE if it has been used by another feature and you want to [reset it to a default state](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Reset will take a few minutes and all existing content and code will be deleted. You can use the RDE status command to confirm the RDE is ready.
 
 * Using the RDE command-line interface, sync local code to the RDE. Options include installing a content package, a specific bundle, an OSGI configuration file, a content file, and a zip file of an Apache/Dispatcher configuration. Referencing a remote content package is also possible. See the [RDE Command Line Tools](#rde-cli-commands) section for more information. You can use the status command to validate that the deployment was successful. Optionally, use Package Manager to install content packages.
 
@@ -309,6 +307,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 Resetting the RDE removes all custom code, configurations, and content from both the author and publish instances. This can be useful, for example, if the RDE has been used to test a specific feature and you want to reset it to a default state in order to test a different feature.
 
+<!-- Alexandru: hiding for now, please don't delete
+
 Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code will be deleted from the RDE.
 
 >[NOTE!]
@@ -323,9 +323,9 @@ You can reset the RDE and return it to a default state by running:
 
 This usually takes a few minutes. Use the [status command](#checking-rde-status) to check when the environment is ready again.
 
-### Reset the RDE in Cloud Manager {#reset-the-rde-cloud-manager}
+### Reset the RDE in Cloud Manager {#reset-the-rde-cloud-manager} -->
 
- You can use Cloud Manager to reset your RDE.
+You can use Cloud Manager to reset your RDE by following the below steps:
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
