@@ -639,6 +639,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + Headless {#headless}
   + [What is a Headless CMS?](/help/headless/what-is-headless.md)
   + [Introduction to AEM Headless](/help/headless/introduction.md)
+  + [Developer Portal (Additional Resources)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
   + Setup {#setup}
     + [Introduction](/help/headless/setup/introduction.md)
     + [Configuration](/help/headless/setup/create-configuration.md)
@@ -686,6 +687,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [How to put it all together](/help/journey-headless/developer/put-it-all-together.md)
       + [How to go live with your headless application](/help/journey-headless/developer/go-live.md)
       + [Optional - How to create single page applications with AEM](/help/journey-headless/developer/create-spa.md)
+      + [Developer Portal (Additional Resources)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
     + Headless Content Architect Journey {#architect}
       + [AEM Headless Content Architect Journey Overview](/help/journey-headless/architect/overview.md)
       + [Content Modeling for Headless with AEM - An Introduction](/help/journey-headless/architect/introduction.md)
