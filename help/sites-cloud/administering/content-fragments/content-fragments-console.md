@@ -1,7 +1,9 @@
 ---
 title: Content Fragments Console
 description: Learn how to manage Content Fragments from the Content Fragments Console.
-landing-page-description: Learn how to manage Content Fragments from the Content Fragments Console that is focused on high volume use of Content Fragments for Headless use-cases, but also used when page authoring.
+landing-page-description: Learn how to manage Content Fragments from the Content Fragments Console that is focused on the high volume use of Content Fragments for Headless use-cases, but also used when page authoring.
+feature: Content Fragments
+role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 ---
 # Content Fragments Console  {#content-fragments-console}
@@ -25,9 +27,15 @@ The Content Fragments console is dedicated to managing, searching for, and creat
 >
 >A selection of [keyboard shortcuts are available for use in this console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
+>[!NOTE]
+>
+>Your project team can customize the console if required. See [Customizing the Content Fragment Console](/help/implementing/developing/extending/content-fragment-console-customizing.md) for further details.
+
 The Content Fragments console can be directly accessed from the top level of the Global Navigation:
 
 ![Global Navigation - Content Fragments console](assets/cfc-global-navigation.png)
+
+## Basic Structure and Handling of the Console {#basic-structure-handling-content-fragments-console}
 
 Selecting **Content Fragments** will open the console in a new tab. 
 
@@ -42,16 +50,20 @@ Here you can see that there are three main areas:
   * Here you can hide, or reveal, the folder tree
   * You can select a specific branch of the tree
 * The main/right panel - from here you can:
-  * See the list of all Content Fragments in the selected branch of the tree
+  * See the list of all Content Fragments in the selected branch of the tree:
     * The location is indicated by the breadcrumbs; these can also be used to change the location
-    * Content Fragments from the selected folder, and all child folders will be shown
-      * Various fields of information about a Content Fragment provide links; these can open the appropriate fragment in the editor
+    * Content Fragments from the selected folder, and all child folders will be shown:
+      * [Various fields of information](#selectuse-available-columns) about a Content Fragment provide links; depending on the field, these can:
+        * Open the appropriate fragment in the editor
+        * Show information about references
+        * Show information about language versions of the fragment
+      * You can [select one, or more, Content Fragments to show the available actions](#actions-selected-content-fragment)
     * You can select a column header to sort the table according to that column; select again to toggle between ascending and descending
   * **[Create](#creating-new-content-fragment)** a new Content Fragment
   * [Filter](#filtering-fragments) the Content Fragments according to a selection of predicates, and save the filter for future use
   * [Search](#searching-fragments) the Content Fragments 
-  * Customize the table view to show selected columns of information
-  * Use **Open in Assets** to directly open the current location in the **Assets** console.
+  * [Customize the table view to show selected columns of information](#selectuse-available-columns)
+  * Use **Open in Assets** to directly open the current location in the **Assets** console
 
     >[!NOTE]
     >
@@ -60,9 +72,69 @@ Here you can see that there are three main areas:
     >* using the **Open in Assets** link (in the Content Fragments console)
     >* directly from the global navigation pane
 
+## Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
+
 Selecting a specific fragment will open a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
 
-  ![Content Fragments console - toolbar for a selected fragment](assets/cfc-fragment-toolbar.png)
+![Content Fragments console - toolbar for a selected fragment](assets/cfc-fragment-toolbar.png)
+
+* **Open**
+* **Publish** (and **Unpublish**)
+* **Copy**
+* **Move**
+* **Rename**
+* **Delete**
+
+>[!NOTE]
+>
+>Actions such as Publish, Unpublish, Delete, Move, Rename, Copy, trigger an asynchronous job. The progress of that job can be monitored via the AEM Async Jobs UI.
+
+## The Information provided about your Content Fragments {#information-content-fragments}
+
+The main/right panel (table view) of the console provides a range of information about your Content Fragments. Some items also provide direct links to further actions and/or information:
+
+* **Name**
+  * Provides a link to open the fragment in the editor.
+* **Model**
+  * Provides a link to open the fragment in the editor.
+* **Folder**
+  * Provides a link to open the folder in the console.
+    Hovering over the folder name will show the JCR path.
+* **Status**
+  * Information only
+* **Modified**
+  * Information only
+* **Modified By**
+  * Information only
+* **Published At**
+  * Information only
+* **Published By**
+  * Information only
+* **Referenced By**
+
+  * Provides a link that opens a dialog listing all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click on the **Title** in the dialog.
+
+    ![Content Fragments console - References dialog](assets/cfc-console-references-dialog.png)
+
+* **Language**
+
+  * Indicates the locale of the content fragment, together with the total number of locales/language copies associated with the content fragment.
+
+    ![Content Fragments console - Language indicator](assets/cfc-console-language-indicator.png)
+
+    * Click/tap on the count to open a dialog that displays all the language copies. To open a specific language copy, click on the **Title** in the dialog.
+
+      ![Content Fragments console - Language dialog](assets/cfc-console-languages-dialog.png)
+
+## Select the Available Columns {#select-available-columns}
+
+As with other consoles you can configure the columns that are visible, and available for action:
+
+![Content Fragments console - column configuration](assets/cfc-console-column-icon.png)
+
+This will present a list of columns that you can hide or show:
+
+![Content Fragments console - column configuration](assets/cfc-console-column-selection.png)
 
 ## Creating a new Content Fragment {#creating-new-content-fragment}
 

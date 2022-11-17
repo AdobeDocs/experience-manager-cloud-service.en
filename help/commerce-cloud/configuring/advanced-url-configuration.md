@@ -2,7 +2,7 @@
 title: Advanced URL Configurations
 description: Learn how to customize the URLs for product and category pages. This allows implementations to optimize URLs for search engines and promote discovery.
 sub-product: Commerce
-version: cloud-service
+version: Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -44,10 +44,10 @@ This configures the URLs of the product pages and supports the following options
 In the case of the [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` will be replaced by `/content/venia/us/en/products/product-page`
-* `{{sku}}` will be replaced by the product's sku, e.g. `VP09`
-* `{{url_key}}` will be replaced by the product's `url_key` property, e.g. `lenora-crochet-shorts`
-* `{{url_path}}` will be replaced by the product's `url_path`, e.g. `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` will be replaced by the currently selected variant, e.g. `VP09-KH-S`
+* `{{sku}}` will be replaced by the product's sku, for example, `VP09`
+* `{{url_key}}` will be replaced by the product's `url_key` property, for example, `lenora-crochet-shorts`
+* `{{url_path}}` will be replaced by the product's `url_path`, for example, `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` will be replaced by the currently selected variant, for example, `VP09-KH-S`
 
 Since the `url_path` got deprecated, the pre-defined product URL formats use a product's `url_rewrites` and pick the one with the most path segmenents as alternative if the `url_path` is not available.
 
