@@ -1,6 +1,8 @@
 ---
 title: Working with Content Fragments
 description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to design, create, curate, and use page-independent content, ideal for page authoring and headless delivery.
+feature: Content Fragments
+role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 ---
 # Working with Content Fragments {#working-with-content-fragments}
@@ -54,8 +56,8 @@ This and the following pages cover the tasks for creating, configuring, maintain
 
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 
-* Physical channel; e.g. desktop, mobile.
-* Form of delivery in a physical channel; e.g. the "product detail page", "product category page" for desktop, or "mobile web", "mobile app" for mobile.
+* Physical channel; for example, desktop, mobile.
+* Form of delivery in a physical channel; for example, the "product detail page", "product category page" for desktop, or "mobile web", "mobile app" for mobile.
 
 However, you (probably) do not want to use exactly the same content for all channels - you need to optimize your content according to the specific channel.
 
@@ -79,6 +81,11 @@ These content fragments can then be assembled to provide experiences over a vari
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
 >
 >For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview"
+>title="Create the content structure for your app"
+>abstract="As you follow our series of interactive guides you'll learn to create the structure (also known as the content fragment model) which serves as the foundation for all of your headless content."
 
 ## Content Fragments and Content Services {#content-fragments-and-content-services}
 

@@ -7,7 +7,7 @@ exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 
 ## Getting Started {#getting-started}
 
-Users have the ability to reliably determine if all of the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. This validation feature works by comparing a digest of the nodes that were involved during extraction, with a digest of nodes that were involved during ingestion. If there are any node paths included in the extraction digest that are missing from the ingestion digest, the validation is considered to have failed, and additional manual validation may be necessary.
+Users have the ability to reliably determine if all of the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. This validation feature works by comparing a digest of the paths of all nodes that were involved during extraction, with a digest of the paths of all nodes that were involved during ingestion. If there are any node paths included in the extraction digest that are missing from the ingestion digest, the validation is considered to have failed, and additional manual validation may be necessary.
 
 >[!INFO]
 >
