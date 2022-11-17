@@ -44,7 +44,7 @@ Experience Fragments can be exported to the default workspace in Adobe Target, o
 >
 >For further information see also:
 >
->* [Adobe Target development](http://developers.adobetarget.com/)
+>* [Adobe Target development](https://developers.adobetarget.com/)
 >* [Core Components - Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 >* [Adobe Target - How Do I Use Adobe Experience Manager (AEM) Experience Fragments?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=en)
 >* [AEM 6.5 - Manually Configuring the Integration with Adobe Target - Creating a Target Cloud Configuration](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
@@ -220,8 +220,6 @@ You can now select the new configuration for editing.
 
 1. Click **Connect to Adobe Target** to initialize the connection with Target. If the connection is successful, the message **Connection successful** is displayed. Click **OK** on the message and then **OK** on the dialog.
 
-   If you cannot connect to Target, see the [troubleshooting](#troubleshooting-target-connection-problems) section.
-
 ### Adding a Target Framework {#adding-a-target-framework}
 
 <!-- Is this section needed? -->
@@ -303,17 +301,6 @@ When you associate a page with the framework, the child pages inherit the associ
    >[!NOTE]
    >
    >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
---> 
-
-<!--
-### Troubleshooting Target Connection Problems {#troubleshooting-target-connection-problems}
-
-Perform the following tasks to troubleshoot problems that occur when connecting to Target:
-
-* Make sure that the user credentials that you provide are correct.
-* Make sure that the AEM instance can connect to the Target server. For example, make sure that firewall rules are not blocking outbound AEM connections, or that AEM is configured to use necessary proxies.
-* Look for helpful messages in the AEM error log. The error.log file is located in the **crx-quickstart/logs** directory where AEM is installed.
-* When editing the activity in Adobe Target, the URL is pointing to localhost. Work around this by setting the AEM externalizer to the correct URL.
 --> 
 
 ## Exporting an Experience Fragment to Adobe Target {#exporting-an-experience-fragment-to-adobe-target}
