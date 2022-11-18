@@ -22,7 +22,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
    
    
-1. Review the ingestion checklist and ensure that all the steps have been completed. These are necessary steps to ensure a successful ingestion. You will be able to proceed to      the **Next** step only if the checklist has been completed.  
+1. Review the ingestion checklist and ensure that all the steps have been completed. These are necessary steps to ensure a successful ingestion. You will be able to proceed to the **Next** step only if the checklist has been completed.  
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
