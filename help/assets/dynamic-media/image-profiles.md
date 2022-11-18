@@ -51,9 +51,9 @@ Sharpening is described in [Sharpening Images](/help/assets/dynamic-media/assets
 
 When you implement Smart Crop on images, Adobe recommends the following best practice and enforces the following limit:
 
-| Limit type | Best practice | Limit imposed | Change to limit on December 31, 2022 |
-| --- | --- | --- | --- |
-| Number of Smart Crops per image | 5 | 100 | 20 |
+| Limit type | Best practice | Limit imposed |
+| --- | --- | --- |
+| Number of Smart Crops per image | 5 | 100 |
 
 See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
 
@@ -67,7 +67,8 @@ You have two image crop options from which to choose. You can also choose to aut
 
 >[!IMPORTANT]
 >
->Adobe recommends that you review any generated crops and swatches to ensure that they are appropriate and relevant to your brand and values.
+>&bull; Adobe recommends that you review any generated crops and swatches to ensure that they are appropriate and relevant to your brand and values.
+>&bull; CMYK image format is not supported with smart crop.
 
 | Option | When to use | Description |
 | --- | --- | --- |
@@ -197,7 +198,8 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 >[!IMPORTANT]
 >
->Adobe recommends that you review any generated smart crops and smart swatches to ensure that they are appropriate and relevant to your brand and values.
+>&bull; Adobe recommends that you review any generated smart crops and smart swatches to ensure that they are appropriate and relevant to your brand and values.
+>&bull; CMYK image format is not supported with smart crop.
 
 You can manually realign or resize the smart crop window of an image to further refine its focal point.
 
@@ -230,6 +232,11 @@ See also [Edit the smart crop or smart swatch of multiple images](#editing-the-s
 1. Near the upper-right corner of the page, select **[!UICONTROL Save]**, then select **[!UICONTROL Close]** to return to the folder of assets.
 
 ## Edit the smart crop or smart swatch of multiple images {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+>
+>&bull; Adobe recommends that you review any generated smart crops and smart swatches to ensure that they are appropriate and relevant to your brand and values.
+>&bull; CMYK image format is not supported with smart crop.
 
 After you apply an Image Profile &ndash; containing Smart Crop &ndash; to a folder, all images in that folder have a crop applied to them. If desired, you can *manually* realign or resize the smart crop window in multiple images to further refine their focal point.
 
