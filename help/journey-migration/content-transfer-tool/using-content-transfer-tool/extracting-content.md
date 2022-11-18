@@ -26,10 +26,10 @@ Follow the steps below to extract your migration set from the Content Transfer T
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png) 
 
-   >![IMPORTANT]
+   >[!IMPORTANT]
    >
    >Make sure that the Extraction key is valid and is not close to its expiration. If it's close to its expiration date, you can renew the Extraction key by selecting the migration set and clicking on Properties. Click on **Renew**. This will take you to the Cloud Acceleration Manager where you can click on **Copy Extraction Key**. Every time you click on **Copy Extraction Key**, a new Extraction key is generated which is valid for 14 days from the time of creation.
-   >[!image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. This will bring up the Extraction dialog. Click on **Extract** to start the extraction phase.
 
@@ -40,7 +40,7 @@ Follow the steps below to extract your migration set from the Content Transfer T
 
    >[!IMPORTANT]
    >If the User Mapping has not been run on this migration set prior to extracting content from source, you will see a warning displaying that User Mapping step is pending, as shown in the figure above. Click on **Map Users** to run the User Mapping tool.
-  
+
 1. The **Extraction** field now displays the **RUNNING** status to indicate that the extraction is in-progress.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam15.png) 
@@ -54,7 +54,7 @@ Follow the steps below to extract your migration set from the Content Transfer T
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
 1. Once Extraction is completed, review the other columns like **Source** and **Paths** for details of the migration set that you populated by clicking on **...** and then on **View details**. 
- 
+
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18.png)   
 
 
