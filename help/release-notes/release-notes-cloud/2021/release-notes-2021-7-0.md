@@ -82,7 +82,7 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 ### New features available in [!DNL Forms] prerelease channel {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) help you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) help you combine XDP templates and XML data to generate print documents in various formats. The service lets you generate documents in synchronous mode. The APIs enables you to create applications that let you:
   * Generate documents by populating template files with XML data.
   * Generate output forms in various formats, including non-interactive PDF print streams.
   * Generate print PDF files from an XFA form PDF and Adobe Acrobat Form.
