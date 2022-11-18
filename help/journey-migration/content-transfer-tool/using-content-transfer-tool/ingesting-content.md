@@ -37,11 +37,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
    >[!NOTE]
    >
-   >If the target tier is `Author`, the author instances will be shutdown during the length of the ingestion. This is to protect
-   > the system, and prevent any changes which could either be lost or cause an ingestion conflict. This fact may be
-   > important to any active users on those instances (authors, those performing maintenance, etc.) so you may
-   > want to announce that the system will not be available at this time.
-   > Also note that the environment will appear hibernated during the author ingestion.
+   >If the target tier is `Author`, the author instance will be shutdown during the length of the ingestion and will be unavailable to users (for example, authors or anyone performing maintenance, etc.). This is to protect the system, and prevent any changes which could either be lost or cause an ingestion conflict. Please ensure that your team is aware of this fact. Also note that the environment will appear hibernated during the author ingestion.
 
    >[!NOTE]
    >
