@@ -1,6 +1,6 @@
 ---
 title: Custom Code Quality Rules
-description: This page describes the custom code quality rules executed by Cloud Manager as part of [code quality testing. They are based on best practices from AEM Engineering.
+description: This page describes the custom code quality rules executed by Cloud Manager as part of code quality testing. They are based on best practices from AEM Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 ---
 # Custom Code Quality Rules {#custom-code-quality-rules} 
@@ -10,7 +10,7 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 >title="Custom Code Quality Rules"
 >abstract="This page describes the custom code quality rules executed by Cloud Manager as part of code quality testing. They are based on best practices from AEM Engineering."
 
-This page describes the custom code quality rules executed by Cloud Manager as part of [code quality testing.](/help/implementing/cloud-manager/code-quality-testing.md) They are based on best practices from AEM Engineering.
+This page describes the custom code quality rules executed by Cloud Manager as part of [code quality testing](/help/implementing/cloud-manager/code-quality-testing.md). They are based on best practices from AEM Engineering.
 
 >[!NOTE]
 >
@@ -766,7 +766,7 @@ AEM components which have a Classic UI dialog should always have a corresponding
 * A component with a Classic UI design dialog (i.e. a `design_dialog` node) must have a corresponding Touch UI design dialog (that is, a `cq:design_dialog` child node).
 * A component with both a Classic UI dialog and a Classic UI design dialog must have both a corresponding Touch UI dialog and a corresponding Touch UI design dialog.
 
-The AEM Modernization Tools documentation provides documentation and tooling for how to convert components from Classic UI to Touch UI. Please refer to [the AEM Modernization Tools documentation](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) for more details.
+The AEM Modernization Tools documentation provides documentation and tooling for how to convert components from Classic UI to Touch UI. Please refer to [the AEM Modernization Tools documentation](https://opensource.adobe.com/aem-modernize-tools/) for more details.
 
 ### Packages Should Not Mix Mutable and Immutable Content {#oakpal-packages-immutable}
 
