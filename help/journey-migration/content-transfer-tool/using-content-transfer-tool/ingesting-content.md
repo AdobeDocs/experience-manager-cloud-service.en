@@ -33,7 +33,16 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
    >[!NOTE]
    >
-   >If the source was Author, it is recommended to ingest it into the Author tier on the target. Similarly, if source was Publish, target should be Publish as well.
+   >If the source was Author, it is recommended to ingest it into the Author tier on the target.
+   >Similarly, if source was Publish, target should be Publish as well.
+
+   >[!NOTE]
+   >
+   >If the target tier is Author, the author instances will be shutdown during the length of the ingestion. This is to protect
+   > the system, and not have any changes done to it which could be lost or cause an ingestion conflict. This fact may be
+   > important to any people actively using those instance (authors, those performing maintenance, etc.) so you may
+   > want to announce that the system will not be available at this time.
+   > Also note that the environment will appear hibernated during the author ingestion.
 
    >[!NOTE]
    >
