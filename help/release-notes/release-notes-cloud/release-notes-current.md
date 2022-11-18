@@ -17,103 +17,95 @@ The following section outlines the general Release Notes for the current (latest
 >
 >See [Recent Documentation Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) for details of documentation updates not directly related to a release.
 
+>[!CAUTION]
+>
+>**Planned Maintenance Exclusion Period**
+>
+> No automatic AEMaaCS maintenance will be executed during the following timeframes, beginning and ending at midnight (00:00) CET:
+>
+>* Monday, November 21 until Monday, December 5
+>* Monday, December 19 until Tuesday, January 3
+
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2022.7.0) is August 8, 2022.
-
-The next release (2022.8.0) is planned for August 25, 2022.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current monthly release (2022.10.0) is November 10, 2022. The next monthly release (2023.1.0) is planned for January 26, 2023.
 
 ## Release Video {#release-video}
 
-Have a look at the July 2022 Release Overview video for a summary of the features added in the 2022.7.0 release:
+Have a look at the October 2022 Release Overview video for a summary of the features added in the 2022.10.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3409801/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+
 ### New features in [!DNL Sites] {#sites-features}
+ 
+* The [Personalization Tab for Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) allows segmentation specification capabilities to the Experience Fragment Editor as well as the flexibility to create nested Experience Fragments whereby headers and footers variations can be created for multiple segments. Prior to the launch of this feature, personalization offered by AEM is only available for site pages, but not for Experience Fragments
 
-* The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now supports [keyboard shortcuts](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md). 
+* The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now enables users to efficiently manage translated content fragments. A 1-click access has been provided to view all the language copies as well. Users are also able to filter the table view by the locale of their interest.
 
-* AEM as Cloud Service’s [web-optimized image delivery](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) allows to significantly improve page speed by delivering formats such as WebP. This new service also offers more flexible image resizing and transformation options. All versions of the [Core Image Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) allow to leverage this service and to deliver images as WebP by the click of an option in the policy of the image component.
+![Content Fragments Languages](/help/release-notes/assets/cfconsole-languages.png)
 
-* AEM personalization activities can now leverage experience fragments in lieu of our legacy offers. This feature:
-  * enables a migration path where AEM content would promote experience fragment offers rather than legacy library offers to provide appropriately styled content that align with the personalization at scale going forward.
-  * prevents content authors from accidentally serving unstyled content on their site. 
-  * allows targeting mode of any component to be converted to an experience fragment (both JSON and HTML types) which uses editable templates.
-
->[!NOTE]
->
->Existing personalization activities that are already using legacy offers can continue to do so but new personalization activities ought to be created as experience fragments since that is the recommended approach going forward. 
+* Further reduce page load time for visitors by optimizing image sizes settings in templates. Find more information for the image component at [Core WCM Component](https://github.com/adobe/aem-core-wcm-components)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features available in [!DNL Assets] prerelease channel {#prerelease-features-assets}
+### New features in [!DNL Assets] {#assets-features}
 
-You can now configure Adobe Experience Manager Assets to [restrict the type of assets that users can upload based on the MIME type](/help/assets/configure-asset-upload-restrictions.md).
+* Experience Manager Assets now allows you to upload documents in other supported format types and[ preview them using the included Document Cloud viewer](/help/assets/manage-pdf-documents.md). The supported format types include TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, and XLSX.
 
-![Asset upload restrictions](/help/assets/assets/asset-upload-restrictions.png)
+  ![PDF rendition for other formats](/help/release-notes/assets/multi-page-other-formats.png)
+
+
+### New features in [!DNL Assets] prerelease {#prerelease-features-assets}
+
+* Experience Manager Assets now uses an improved artificial intelligence framework for image Smart Tags. This content intelligence results in better relevancy and precision of Smart Tags available to all image assets on ingestion. In addition, orientation information is populated in `cq:tags`, which enables better Search results using the Orientation filter.
+
+   If you are interested in participating in the Beta, [fill this form](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) by November 14.
+
+* Experience Manager Assets now [supports SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) in addition to the Access Key for authentication while connecting to Azure Blob Storage data source for ingesting assets using the Bulk Import tool.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### New features in [!DNL Forms] {#forms-features}
+### New features available in [!DNL Forms] {#new-features-available-in-channel}
 
-* **[Keyboard input support for Scribble signatures](/help/forms/signing-forms-using-scribble.md)**: Adaptive Forms are increasingly being used on touch devices, and one common requirement is to support signatures. Signing documents on touch devices has become an accepted way of signing forms. Adaptive Forms has native support for Scribble Signatures and Adobe Sign for such use cases. Now, along with other already supported options, you can also use keyboard to Scribble signatures in an Adaptive Form. It also helps improve accessibility compliance.
 
-![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/scribble-keyboard-mobile.png)
+* [Adaptive Forms wizard](/help/forms/creating-adaptive-form.md): AEM Forms provides business user friendly wizard to quickly author Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form. This release brings following improvements to the wizard:
 
-* **Use Adaptive Forms wizard in local language**: You can use the wizard in language of your choice. It now supports all the languages supported by Adobe Experience Manager.
+  * Select or deselect fields: The wizard allows you to create an Adaptive Form based on JSON and Form Data Model schemas. You can now select subset of fields within a schema to include in an Adaptive Form. The selected fields are converted to corresponding Adaptive Form data capture components to quickly create the desired adaptive forms.
+
+  * Use Static Templates: Customers with existing investments in legacy static templates can continue their journey of cloud adoption by using static templates in wizard to author adaptive forms. This provides additional time to customers to migrate old static templates to modern editable templates.
+
+* [Remove hidden fields from a Document of Record (DoR) while server-side processing](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): You can generate the document of record PDF for end users containing only those fields which were visible to them during data capture experience. Upon form submission, the server validates which fields were hidden to the end user based on submitted data and excludes from document of record for consistency.
 
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
 
-<!-- 
+* **Adaptive Forms template editor**: Template editor allows you to pre-define the basic structure and appearance of Adaptive Forms of an organization. This release brings following improvements to the template editor:
+  * **[Form Data Model in template editor](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: You can associate a Form Data Model schema to an Adaptive Form template in the template editor. It helps reduce the time taken to create an Adaptive Form. The option is also added to Adaptive Forms editor to allows users to select or change Form Data Model for existing forms.
+  * **[Document of Record in template editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: You can now standardize Document of Record generation for all forms created using a template. This helps enhance compliance and standardization for org requirements.
 
-* **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
-
-![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) 
-
--->
-
-* **[Invoke DDX - An AEM Workflow step](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX documents are templates for the documents and describe the desired characteristics of source documents that should appear in resultant documents. A single DDX can be used with a range of source documents. You can use the Invoke step an AEM Workflow to perform various operations, like assembling disassembling documents, creating and modifying Acrobat and XFA Forms, and other operations described in [DDX Reference](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) documentation.
-
-* **[Convert to PDF/A - An AEM Workflow step](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A is an archival format for long-term preservation of the document’s content, all fonts are embedded and the file is uncompressed. Now, you can use the Convert to PDF/A step an AEM Workflow to convert your documents or files in any format to PDF/A format.
-
+* **[Launch the Adaptive Form wizard from a AEM Sites Page](/help/forms/embed-adaptive-form-aem-sites.md)**: AEM Sites page has extended support for Adaptive Forms. You can now create a new Adaptive Form or embed an existing Adaptive Form while remaining on AEM Sites page. 
+* **[Change display alignment for checkboxes and radiobutton in DoR](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: You can now set the desired alignment (Horizontal, Vertical, Same as Adaptive Forms) for checkbox and radio button on the Document of Record. This option determines the positioning of checkbox and radio button options in the Document of Record. 
 
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
 
-* Product catalog enrichment now supports AEM pages. This enables authors to manage page - product association.
+* Authors can dynamically enrich product lists with Experience Fragments (example: place banner between product listings).
+* The list component now supports associated product / category pages to dynamically show related pages.
+* Support for Peregrine 12.5 components was added.
+* Support for client-side price loading in product teaser and carousel was added.
 
-* Various CIF Core Component improvements
-
-### Bug fixes {#bug-fixes-cif}
-
-* Add login token to client-side price fetching
-
-* Wrong page component in datalayer
-
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
 ### What is New {#what-is-new-foundation}
 
-* The [Repository Browser](/help/implementing/developing/tools/repository-browser.md) now has a path input field, making it possible to jump directly to a specific folder in the repository hierarchy
-* Sling Content Distribution (SCD) now supports an explicit "invalidation" action in order to invalidate content without that content being published. Refer to the [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) page for further details.
-* mod_macro is now available in AEM as a Cloud Service. Refer to [this table](/help/implementing/dispatcher/disp-overview.md) for a list of supported Apache modules.
+* AEM as a Cloud Service (Author Service) is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Refer to AEM as a [Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
 
-### AEM as a Cloud Service SDK Dispatcher Tools enhancements {#dispatcher-tools-enhancements}
+* As previously mentioned in release notes, using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is deprecated and will be enforced in the coming days. Please refer to [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) for the suggested approaches for replicating these large content packages.
 
-* Apache can be started with `update_sdk.sh` script, which will automatically load and validate any subsequent changes to apache and dispatcher configuration, thus improving developer velocity. Only supported for dispatcher tools flexible mode. Also, see [Debugging your Apache and Dispatcher configuration](/help/implementing/dispatcher/validation-debug.md#automatic-loading) for additional details about automatic loading and validation.
-* Local apache/dispatcher configuration will more closely track changes in cloud environments, increasing parity between the two environments.
-
-### New features available in [!DNL Experience Manager] prerelease channel {#prerelease-features-foundation}
-
-* AEM as a Cloud Service is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Refer to [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
-
-## Adobe Learning Manager Connectors {#learn-manage}
-
-* The new Adobe Learning Manager has connectors to Adobe Experience Manager Sites, Marketo Engage and Adobe Commerce. To learn more see: [Adobe Learning Manager User Guide](https://helpx.adobe.com/learning-manager/user-guide.html).
- 
+* Dispatcher configuration now references a file that lists common marketing campaign query parameters. Customers can choose to uncomment the parameters that are relevant to them, resulting in better caching. Refer to [Marketing campaign parameters](/help/implementing/dispatcher/caching.md#marketing-parameters) for more details.
 
 ## Cloud Manager {#cloud-manager}
 

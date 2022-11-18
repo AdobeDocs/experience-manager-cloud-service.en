@@ -73,7 +73,7 @@ In order to generate a Docker build context, you need a Maven module that:
 * Produces an archive that contains a `Dockerfile` and every other file necessary to build the Docker image with your tests.
 * Tags the archive with the `ui-test-docker-context` classifier.
 
-The simplest way to do this is to configure the [Maven Assembly Plugin](http://maven.apache.org/plugins/maven-assembly-plugin/) to create the Docker build context archive and assign the right classifier to it.
+The simplest way to do this is to configure the [Maven Assembly Plugin](https://maven.apache.org/plugins/maven-assembly-plugin/) to create the Docker build context archive and assign the right classifier to it.
 
 You can build UI tests with different technologies and frameworks, but this section assumes that your project is laid out in a way similar to the following.
 
