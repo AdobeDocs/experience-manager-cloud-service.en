@@ -83,7 +83,7 @@ Once you've added an RDE for your program using Cloud Manager, you can interact 
 
    `aio login`
 
-   The response on a successful login should resemble this output:
+   The response on a successful login should resemble the output below. Make sure the org is correct, but you can ignore the project and workspace values.
 
    ```
    ...
