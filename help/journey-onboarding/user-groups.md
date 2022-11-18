@@ -3,8 +3,8 @@ title: User Groups for Notifications
 description: Learn how to create a user group in the Admin Console to manage receipt of important email notifications.
 feature: Onboarding
 role: Admin, User, Developer
+exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 ---
-
 # User Groups for Notifications {#user-groups}
 
 Learn how to create a user group in the Admin Console to manage receipt of important email notifications.
