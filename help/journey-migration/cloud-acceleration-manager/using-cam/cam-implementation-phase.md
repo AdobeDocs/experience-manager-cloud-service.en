@@ -104,7 +104,7 @@ Follow this section to explore the Content Transfer activity card:
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
-### Estimating Content Transfer Time {#calculating}
+<!--### Estimating Content Transfer Time {#calculating}
 
 A Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
 
@@ -115,7 +115,7 @@ A Content Transfer Tool calculator has been provided to estimate how long it cou
 
 To estimate the size of the AEM Repository, you can run the Disk Usage report under `http://HOST:PORT/etc/reports/diskusage.html`. 
 
-You can also estimate the size of specific repository paths by using the `path` parameter, for example, `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
+You can also estimate the size of specific repository paths by using the `path` parameter, for example, `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`. -->
 
 ## What's Next {#whats-next}
 
