@@ -191,9 +191,9 @@ If the Docker image is implemented with other programming languages or test runn
 
 ### Capture Screenshots and Videos {#capture-screenshots}
 
-The Docker image may generate additional test output (e.g. screenshots, videos) and save them in the path specified by the environment variable `REPORTS_PATH`. Any file found below the `REPORTS_PATH` will be included in the test result archive.
+The Docker image may generate additional test output (e.g. screenshots, videos) and save them in the path specified by the environment variable `REPORTS_PATH`. Any file found below the `REPORTS_PATH` are included in the test result archive.
 
-If a test result archive has been created during an UI test execution, the test log file will contain at the end a reference to the location of the test result archive.
+If a test result archive has been created during a UI test execution, the test log file contains at the end a reference to the location of the test result archive.
 
 ```
 [...]
