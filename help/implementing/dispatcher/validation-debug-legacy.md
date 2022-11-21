@@ -48,6 +48,7 @@ The structure of the project's Dispatcher subfolder (in legacy mode) is as follo
     ├── cache
     │   ├── default_invalidate.any
     │   ├── default_rules.any
+    │   ├── marketing_query_parameters.any
     │   └── rules.any
     ├── clientheaders
     │   ├── clientheaders.any
