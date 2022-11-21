@@ -189,7 +189,7 @@ The Docker image must generate test reports in the JUnit XML format and save the
 
 If the Docker image is implemented with other programming languages or test runners, check the documentation for the chosen tools for how to generate JUnit XML reports.
 
-### Capturing Screenshots and Videos {#generate-test-reports}
+### Capture Screenshots and Videos {#capture-screenshots}
 
 The Docker image may generate additional test output (e.g. screenshots, videos) and save them in the path specified by the environment variable `REPORTS_PATH`. Any file found below the `REPORTS_PATH` will be included in the test result archive.
 
