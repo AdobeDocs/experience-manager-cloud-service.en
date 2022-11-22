@@ -119,7 +119,7 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
    * `https://outlook.office365.com/Mail.Send`
    * `https://outlook.office365.com/Mail.Read`
    * `https://outlook.office365.com/SMTP.Send`
-1. Create an OSGI property file `called com.day.cq.mailer.impl.DefaultMailService.cfg.json`
+1. Create an OSGI property file `called com.day.cq.mailer.DefaultMailService.cfg.json`
 under `/apps/<my-project>/osgiconfig/config`  with the following syntax:
    
    ```
