@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service Team and Product Profiles
-description: Learn how AEM as a Cloud Service team and product profiles and grant and limit access to your licensed Adobe solutions.
+description: Learn how AEM as a Cloud Service team and product profiles can grant and limit access to your licensed Adobe solutions.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 ---
 # AEM as a Cloud Service Team and Product Profiles {#product-profiles}
 
-Learn how AEM as a Cloud Service team and product profiles and grant and limit access to your licensed Adobe solutions.
+Learn how AEM as a Cloud Service team and product profiles can grant and limit access to your licensed Adobe solutions.
 
 ## Product Profiles {#profiles}
 
@@ -25,11 +25,14 @@ Your AEM as a Cloud Service team members will be added and assigned to one or mo
 
 >[!NOTE]
 >
->Every user assigned to an AEM as a Cloud Service product profile has (read only) access to Cloud Manager.
+>Every user assigned to an AEM as a Cloud Service product profile has read-only access to Cloud Manager via the **Cloud Manager User** role.
+>
+>Users with only the **Cloud Manager User** role can log into Cloud Manager and navigate to the AEM author environments (if they exist) by using the **Programs** menu options. The **Cloud Manager User** role is not sufficient to access program details. If such access is needed, users must be granted additional roles by their system administrator.
 
 >[!TIP]
 >
->For more information on the onboarding process, please refer to the [onboarding journey.](/help/journey-onboarding/overview.md)
+>* To learn more about about AEM product profiles, please see the document [Assigning AEM Product Profiles.](/help/journey-onboarding/assign-profiles-aem.md)
+>* For more information on the onboarding process, please refer to the [onboarding journey.](/help/journey-onboarding/overview.md)
 
 ## Cloud Manager Product Profiles {#cloud-manager-product-profiles}
 
@@ -41,7 +44,7 @@ Cloud Manager has pre-configured product profiles which can be thought of as rol
 
 Each of the product profiles have specific permissions associated with them.
 
-* **Business Owner** - In this role you have the permission to add a new program or edit a program, add or update an environment, add/edit/delete/run pipelines, deploy code to AEM environment, or execute code quality checks.
+* **Business Owner** - In this role you have the permission to add a new program or edit a program, add or update an environment, deploy code to AEM environment, or execute code quality checks.
 * **Deployment Manager** - In this role, you have the permission to add or update an environment, run any pipeline, and deploy code to AEM environment, or execute code quality checks.
 * **Developer** - In this role, you have the permission to generate personal access tokens to access git.
 * **Program Manager** - In this role, you have the permission to schedule pipelines, override the 3-tier quality gates, and provide production approval.
@@ -57,3 +60,8 @@ Your Cloud Manager team will include at least:
 >[!NOTE]
 >
 >To be granted access to AEM as a Cloud Service, users must belong to one of two product profiles: `AEM Users` or `AEM Administrators`. Permissions to administer Cloud Manager will not suffice.
+
+>[!TIP]
+>
+>* To learn more about about Cloud Manager product profiles, please see the document [Assigning Team Members to Cloud Manager Product Profiles.](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+>* For more information on the onboarding process, please refer to the [onboarding journey.](/help/journey-onboarding/overview.md)
