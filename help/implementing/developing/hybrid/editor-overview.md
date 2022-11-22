@@ -165,19 +165,18 @@ Additional custom selectors can be defined and used as part of an SPA developed 
 If you want to use the in place editor of a text component created in SPA there is additional configuration required.
 
 1. Set an attribute (it can be any) on the container wrapper element containing the text HTML. In case of the WKND SPA Project, it's a `<div>` element and the selector that has been used is `data-rte-editelement`.
-1. Set the configuration `editElementQuery` on the corresponding AEM text component's `cq:InplaceEditingConfig` that points to that selector e.g. `data-rte-editelement`. This lets the editor know which HTML element wraps the HTML text.
+1. Set the configuration `editElementQuery` on the corresponding AEM text component's `cq:InplaceEditingConfig` that points to that selector for example, `data-rte-editelement`. This lets the editor know which HTML element wraps the HTML text.
 
 For additional information about the `editElementQuery` property and the configuration of the rich text editor, see [Configure the Rich Text Editor.](/help/implementing/developing/extending/rich-text-editor.md)
 
 ### Limitations {#limitations}
 
-The AEM SPA Editor SDK is fully supported by Adobe and as a new feature it continues to be enhanced and expanded. The following AEM features are not yet supported by the SPA Editor:
+The AEM SPA Editor SDK is fully supported by Adobe and it continues to be enhanced and expanded. The following AEM features are not yet supported by the SPA Editor:
 
 * Target mode
 * ContextHub
 * Inline image editing
 * Edit configs (eg. listeners)
-* Style System
 * Undo / Redo
 * Page diff and Time Warp
 * Features performing HTML rewriting server-side such as Link Checker, CDN rewriter service, URL shortening etc.
