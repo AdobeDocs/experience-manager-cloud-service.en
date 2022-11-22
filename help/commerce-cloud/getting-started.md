@@ -3,7 +3,7 @@ title: Getting started with AEM Commerce as a Cloud Service
 description: Learn how to deploy a commerce-enabled AEM project to a running AEM as a Cloud service environment. Use features of Adobe Cloud Manager and a CI/CD pipeline to build the Venia reference storefront to a running environment.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
@@ -135,3 +135,5 @@ For more complex setups using multiple AEM site structures combined with differe
 - [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 - [Commerce Multi-Store Setup](configuring/multi-store-setup.md)
+- [Multiple Commerce Systems Setup](configuring/multiple-commerce-systems-setup.md)
+
