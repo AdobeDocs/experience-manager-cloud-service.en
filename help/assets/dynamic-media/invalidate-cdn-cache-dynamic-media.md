@@ -17,11 +17,11 @@ Dynamic Media assets are cached by the CDN (Content Delivery Network) for fast d
 
 If you have enabled [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) on your account and you are using the Adobe-bundled CDN, you can purge all URLs with different query strings by purging the single base URL.
 
-For example, invalidating `https://weekendsite.scene7.com/is/image/grundfos/image`, also invalidates the following URLs:
+For example, invalidating `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image`, also invalidates the following URLs:
 
-* `https://weekendsite.scene7.com/is/image/grundfos/image`
-* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
-* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image?$PLP$`
 * and so on.
 
 This invalidation, however, is not the case for generic domains that do not support Smart Imaging, such as `s7d1.scene7.com`. Such domains still need the full URL to have invalidation work successfully.

@@ -45,7 +45,7 @@ To include a `testing.properties` file in the build artifact, add an `include` s
 <includes>
     <include>Dockerfile</include>
     <include>wait-for-grid.sh</include>
-    <include>testing.properties</include> <!- opt-in test module in Cloud Manager -->
+    <include>testing.properties</include> <!-- opt-in test module in Cloud Manager -->
 </includes>
 [...]
 ```
@@ -73,7 +73,7 @@ In order to generate a Docker build context, you need a Maven module that:
 * Produces an archive that contains a `Dockerfile` and every other file necessary to build the Docker image with your tests.
 * Tags the archive with the `ui-test-docker-context` classifier.
 
-The simplest way to do this is to configure the [Maven Assembly Plugin](http://maven.apache.org/plugins/maven-assembly-plugin/) to create the Docker build context archive and assign the right classifier to it.
+The simplest way to do this is to configure the [Maven Assembly Plugin](https://maven.apache.org/plugins/maven-assembly-plugin/) to create the Docker build context archive and assign the right classifier to it.
 
 You can build UI tests with different technologies and frameworks, but this section assumes that your project is laid out in a way similar to the following.
 
@@ -188,6 +188,25 @@ Once the Selenium's status endpoint answers with a positive response, the tests 
 The Docker image must generate test reports in the JUnit XML format and save them in the path specified by the environment variable `REPORTS_PATH`. The JUnit XML format is a widely-used format for reporting the results of tests. If the Docker image uses Java and Maven, standard test modules such as [Maven Surefire Plugin](https://maven.apache.org/surefire/maven-surefire-plugin/) and [Maven Failsafe Plugin](https://maven.apache.org/surefire/maven-failsafe-plugin/) can generate such reports out of the box.
 
 If the Docker image is implemented with other programming languages or test runners, check the documentation for the chosen tools for how to generate JUnit XML reports.
+
+### Capture Screenshots and Videos {#capture-screenshots}
+
+The Docker image may generate additional test output (e.g. screenshots, videos) and save them in the path specified by the environment variable `REPORTS_PATH`. Any file found below the `REPORTS_PATH` are included in the test result archive.
+
+If a test result archive has been created during a UI test execution, the test log file contains at the end a reference to the location of the test result archive.
+
+```
+[...]
+
+===============================================================
+The detailed test results can be downloaded from the URL below.
+Note: the link will expire after 60 days
+
+    https://results-host/test-results.zip
+
+===============================================================
+
+```
 
 ### Upload Files {#upload-files}
 

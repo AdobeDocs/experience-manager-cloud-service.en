@@ -69,7 +69,7 @@ An organization typically has multiple templates. For example, one template each
 
 ### Invoke an API
 
-The [API reference documentation](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also provides API defination file in the .yaml format. You can download the .yaml file and upload it to postman to check functionality of the APIs.
+The [API reference documentation](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also provides API defination file in the .yaml format. You can download the .yaml file and upload it to postman to check functionality of the APIs.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
