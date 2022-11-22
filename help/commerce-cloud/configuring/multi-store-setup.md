@@ -2,7 +2,7 @@
 title: Commerce Multi-Store Setup
 description: Learn how map multiple store views from Adobe Commerce to AEM. This allows projects to support multi-tenant and multi-lingual use cases.
 sub-product: Commerce
-version: cloud-service
+version: Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -46,7 +46,7 @@ To connect an AEM site and AEM CIF Core Components so too to a dedicated store v
 4. Assign the child configuration to an AEM site
 
    * Go to AEM Sites console
-   * Navigate to the region or language root of your site structure e.g. /content/venia/us _or_ /content/venia/us/en for the Venia sample page
+   * Navigate to the region or language root of your site structure for example, /content/venia/us _or_ /content/venia/us/en for the Venia sample page
    * Select the page and open page properties
    * Select the Advanced tab
    * In the `Configuration` section select the configuration you created at step 3

@@ -13,7 +13,7 @@ This article outlines the changes required to Adobe Experience Manager Maven pro
 
 AEM application deployments must be comprised of a single AEM package. This package should in turn contain sub-packages that comprise everything required by the application to function, including code, configuration and any supporting baseline content.
 
-AEM requires a separation of **content** and **code**, which means a single content package **cannot** deploy to **both** `/apps` and runtime-writable areas (e.g. `/content`, `/conf`, `/home`, or anything not `/apps`) of the repository. Instead, the application must separate code and content into discrete packages for deployment into AEM.
+AEM requires a separation of **content** and **code**, which means a single content package **cannot** deploy to **both** `/apps` and runtime-writable areas (for example, `/content`, `/conf`, `/home`, or anything not `/apps`) of the repository. Instead, the application must separate code and content into discrete packages for deployment into AEM.
 
 The package structure outlined in this document is compatible with **both** local development deployments and AEM Cloud Service deployments.
 
@@ -138,12 +138,12 @@ For example, an AEM project that includes 2 vendor AEM applications might look l
 
 Packages are to be marked with their declared package type. Package types help clarify the purpose and deployment of a package.
 
-+ Container packages must set their `packageType` to `container`. Container packages must not contain regular nodes. Only OSGi bundles, configurations and sub packages are allowed. Containers in AEM as a Cloud Service are not allowed to use [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html).
++ Container packages must set their `packageType` to `container`. Container packages must not contain regular nodes. Only OSGi bundles, configurations and sub packages are allowed. Containers in AEM as a Cloud Service are not allowed to use [install hooks](https://jackrabbit.apache.org/filevault/installhooks.html).
 + Code (immutable) packages must set their `packageType` to `application`.
 + Content (mutable) packages must set their `packageType` to `content`.
 
 
-For more information see [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit Package Types](http://jackrabbit.apache.org/filevault/packagetypes.html), and the [FileVault Maven configuration snippet](#marking-packages-for-deployment-by-adoube-cloud-manager) below.
+For more information see [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit Package Types](https://jackrabbit.apache.org/filevault/packagetypes.html), and the [FileVault Maven configuration snippet](#marking-packages-for-deployment-by-adoube-cloud-manager) below.
 
 >[!TIP]
 >
@@ -620,4 +620,4 @@ In the `all/pom.xml` add the `maven-clean-plugin` plug-in which will clean the t
 ## Additional Resources {#additional-resources}
 
 + [Managing Packages Using Maven](/help/implementing/developing/tools/maven-plugin.md)
-+ [FileVault Content Package Maven Plug-in](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault Content Package Maven Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
