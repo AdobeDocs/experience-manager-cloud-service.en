@@ -53,7 +53,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-For the JCR-based implementation, which maps `Tags` onto JCR `Nodes`, you can directly use Sling's `adaptTo` mechanism if you have the resource (e.g. such as `/content/cq:tags/default/my/tag`):
+For the JCR-based implementation, which maps `Tags` onto JCR `Nodes`, you can directly use Sling's `adaptTo` mechanism if you have the resource (for example, such as `/content/cq:tags/default/my/tag`):
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -115,7 +115,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## The Tag Garbage Collector {#the-tag-garbage-collector}
 
-The tag garbage collector is a background service that cleans up the tags that are hidden and unused. Hidden and unused tags are tags below `/content/cq:tags` that have a `cq:movedTo` property and are not used on a content node. They have a count of zero. By using this lazy deletion process, the content node (i.e. the `cq:tags` property) does not have to be updated as part of the move or the merge operation. The references in the `cq:tags` property are automatically updated when the `cq:tags` property is updated, e.g. through the page properties dialog.
+The tag garbage collector is a background service that cleans up the tags that are hidden and unused. Hidden and unused tags are tags below `/content/cq:tags` that have a `cq:movedTo` property and are not used on a content node. They have a count of zero. By using this lazy deletion process, the content node (i.e. the `cq:tags` property) does not have to be updated as part of the move or the merge operation. The references in the `cq:tags` property are automatically updated when the `cq:tags` property is updated, for example, through the page properties dialog.
 
 The tag garbage collector runs by default once a day. This can be configured at:
 
@@ -130,7 +130,7 @@ The search for tags and the tag listing work as follows:
 
 ## Tags in Different Languages {#tags-in-different-languages}
 
-A tag `title` can be defined in different languages. A language sensitive property is then added to the tag node. This property has the format `jcr:title.<locale>`, e.g. `jcr:title.fr` for the French translation. `<locale>` must be a lower case ISO locale string and use underscore (`_`) instead of hyphen/dash (`-`), for example: `de_ch`.
+A tag `title` can be defined in different languages. A language sensitive property is then added to the tag node. This property has the format `jcr:title.<locale>`, for example, `jcr:title.fr` for the French translation. `<locale>` must be a lower case ISO locale string and use underscore (`_`) instead of hyphen/dash (`-`), for example: `de_ch`.
 
 For example when the **Animals** tag is added to the **Products** page, the value `stockphotography:animals` is added to the property `cq:tags` of the node `/content/wknd/en/products/jcr:content`. The translation is referenced from the tag node.
 
@@ -153,7 +153,7 @@ For tagging, localization depends on the context as tag `titles` can be displaye
 
 ### Adding a New Language to the Edit Tag Dialog {#adding-a-new-language-to-the-edit-tag-dialog}
 
-The following procedure describes how to add a new language (e.g. Finnish) to the **Tag Edit** dialog:
+The following procedure describes how to add a new language (for example, Finnish) to the **Tag Edit** dialog:
 
 1. In **CRXDE**, edit the multi-value property `languages` of the node `/content/cq:tags`.
 1. Add `fi_fi`, which represents the Finnish locale, and save the changes.

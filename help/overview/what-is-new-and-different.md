@@ -61,26 +61,27 @@ This enables autoscaling for varying usage patterns:
 
 ## AEM Updates {#aem-updates}
 
+AEM as a Cloud Service now uses continuous integration and continuous delivery (CI/CD) to ensure that your projects are on the most current AEM version. This means that production and stageing instances are updated to the latest AEM version without any interruption of service for users. 
+
 >[!NOTE]
+>
+>If the update to production environment fails, Cloud Manager will automatically roll back the staging environment. This is done automatically to make sure that after an update completes, both the staging and production environments are on same AEM version.
+
+There are two types of AEM version updates:
+
+* **AEM Maintenance Updates**
+
+  * Can be released on a daily basis.
+  * Are mostly for maintenance purposes, including the latest bug-fixes and security updates.
+  * Have minimal impact since changes are applied regularly.
+
+* **New Feature Updates**
+
+   * Are released via a predictable monthly schedule.
+
+>[!TIP]
+>
 >For further details see the [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md).
-
-AEM as a Cloud Service now uses Continuous Integration and Continuous Delivery (CI/CD) to ensure that your projects are on the most current AEM version. This means that Production and Stage instances are updated to the latest AEM version without any interruption of service for users.
-
->[!NOTE]
-> If the update to production environment fails, Cloud Manager will automatically rollback the stage environment. This is done automatically to make sure that after an update completes, both stage and production environments are at on same AEM version.
-
-AEM version updates are of two types:
-
-* **AEM Push updates**
-
-   * Can be released on a daily basis.
-   * Mostly maintenance, including the latest bug-fixes and security updates.
-
-     As changes are applied regularly the impact is incremental, reducing the impact on your service.
-
-* **New Feature updates**
-
-   * Released via a predictable monthly schedule.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -119,10 +120,6 @@ Cloud Manager creates environments in datacenters across many geographic regions
 
 ## Onboarding {#onboarding}
 
->[!NOTE]
->
->For further details see [Onboarding](/help/onboarding/home.md).
-
 Starting and managing an AEM project is straightforward when using AEM as a Cloud service as Adobe is responsible for many aspects:
 
 * Baseline AEM images are optimized for specific use-cases.
@@ -145,6 +142,10 @@ It is also significantly different as there is now:
 
   * Content migration
 
+>[!TIP]
+>
+>For a complete overview of the onboarding process, see the [onboarding journey.](/help/journey-onboarding/overview.md)
+
 ## Developing {#developing}
 
 >[!NOTE]
@@ -165,7 +166,7 @@ For existing AEM applications to run on AEM as a Cloud Service, the following st
 
 This process is commonly referred to as Cloud-first development. Since the end-to-end duration is expected to take minutes (from 20 to 50 depending on the complexity of the application), it is necessary to embrace rapid development methodologies before the pending code and configuration changes are attempted in the cloud.
 
-The Web Console, where OSGI bundles and their associated configuration are managed, and previously part of the AEM QuickStart, is no longer directly accessible to users of a AEM as a Cloud Service environment. This interface can still be accessed in read-only mode by using a new developer console. With this console, developers can select and login directly to any particular node of an author or publish service, then access the areas blocked by default.
+The Web Console, where OSGI bundles and their associated configuration are managed, and previously part of the AEM QuickStart, is no longer available in AEM as a Cloud Service. The new developer console provides a read-only interface for most of runtime information. With this console, developers can select and login directly to any particular node of an author or publish service, and view the relevant information.
 
 >[!NOTE]
 >
@@ -267,6 +268,6 @@ For further information see:
 
 >[!TIP]
 >
->Once you have an overview of AEM as a Cloud Service, you can onboard quickly by reviewing the [Onboarding Journey.](/help/journey-onboarding/home.md)
+>Once you have an overview of AEM as a Cloud Service, you can onboard quickly by reviewing the [Onboarding Journey.](/help/journey-onboarding/overview.md)
 >
 >Already onboarded or ready to dive into testing AEM's features? Install the [AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) to explore AEM's powerful features using rich examples.

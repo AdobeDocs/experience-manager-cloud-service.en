@@ -53,7 +53,7 @@ Login can be implemented with the following two approaches:
 Customers can write their own custom components. To learn more, consider becoming familiar with:
 
 * The [Sling Authentication Framework](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html) 
-* And consider [asking the AEM Community Experts session](http://bit.ly/ATACEFeb15) about login.
+* And consider [asking the AEM Community Experts session](https://bit.ly/ATACEFeb15) about login.
 
 ### Integration with an Identity Provider {#integration-with-an-idp}
 
@@ -67,7 +67,7 @@ Customers can use SAML-based authentication via their preferred SAML IdP. When u
 >
 >Only the initial authentication of the user's credentials are authenticated by the IdP, and subsequent requests to AEM are performed using an AEM login token cookie, as long as the cookie is available.
 
-See documentation for more information about the [SAML 2.0 Authentication Handler](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=en#saml-authentication-handler).
+See documentation for more information about the [SAML 2.0 Authentication Handler](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html).
 
 **OAuth/SSO**
 
