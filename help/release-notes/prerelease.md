@@ -23,28 +23,40 @@ The prerelease features can be experienced in different ways:
 
 ### Cloud Environments {#cloud-environments}
 
-To see new features in the Sites console on cloud dev environments as well as the result of any project customizations:
+To update a Cloud environment to use the prerelease, add a new [environment variable](../implementing/cloud-manager/environment-variables.md) using the Environment Configuration UI in Cloud Manager:
 
-* Using the [Cloud Manager API's environment variables endpoint](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables), set the **AEM_RELEASE_CHANNEL** environment variable to the value **prerelease**. 
+1. Navigate to the **Program** > **Environment** > **Environment Configuration** you wish to update.
+1. Add a new [environment variable](../implementing/cloud-manager/environment-variables.md):
 
-```
-PATCH /program/{programId}/environment/{environmentId}/variables
-[
-        {
-                "name" : "AEM_RELEASE_CHANNEL",
-                "value" : "prerelease",
-                "type" : "string"
-        }
-]
-```
+    | Name | Value | Service Applied | Type |
+    |------|-------|-----------------|------|
+    | `AEM_RELEASE_CHANNEL` | `prerelease` | All | Variable|
 
-The Cloud Manager CLI can also be used, as per the instructions at [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
+1. Save the changes and the environment will refresh with prerelease feature toggles enabled.
+
+    ![New environment variable](assets/env-configuration-prerelease.png)
+
+
+**Alternatively** you can use the Cloud Manager API and CLI to update the environment variables:
+
+* Use [Cloud Manager API's environment variables endpoint](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), set the **AEM_RELEASE_CHANNEL** environment variable to the value **prerelease**. 
+
+    ```
+    PATCH /program/{programId}/environment/{environmentId}/variables
+    [
+            {
+                    "name" : "AEM_RELEASE_CHANNEL",
+                    "value" : "prerelease",
+                    "type" : "string"
+            }
+    ]
+    ```
+
+* The Cloud Manager CLI can also be used, as per the instructions at [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
  ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
  
 
-The variable can be deleted or set back to a different value if you want the environment to be restored to the behavior of the regular (non-prerelease) channel
-
-* Alternatively, you can also configure environment variables from the [Cloud Manager UI](/help/implementing/cloud-manager/environment-variables.md).
+The variable can be deleted or set back to a different value if you want the environment to be restored to the behavior of the regular (non-prerelease) channel.
 
 ### Local SDK {#local-sdk}
 

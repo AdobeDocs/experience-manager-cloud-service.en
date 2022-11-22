@@ -833,9 +833,9 @@ You can monitor progress, including failed encoding/YouTube publish.
    >
    >It can take a long time for failure/error messages to finally be recorded due to multiple workflow configurations on **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** from [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), for example:
    >
-   >    * Apache Sling Job Queue Configuration
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * Granite Workflow Timeout Queue
+   >* Apache Sling Job Queue Configuration
+   >* Adobe Granite Workflow External Process Job Handler
+   >* Granite Workflow Timeout Queue
    >
    >You can adjust the **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** properties in these configurations.
 
@@ -865,12 +865,9 @@ You can monitor progress, including failed encoding/YouTube publish.
    >
    >It can take a long time for the error message to finally be recorded due to multiple workflow configurations on **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** from [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), for example:
    >
-   >
-   >
-   >    * Apache Sling Job Queue Configuration
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * Granite Workflow Timeout Queue
-   >
+   >* Apache Sling Job Queue Configuration
+   >* Adobe Granite Workflow External Process Job Handler
+   >* Granite Workflow Timeout Queue
    >
    >You can adjust the **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** properties in these configurations.
 
@@ -1114,7 +1111,7 @@ You can use the following sample as an example of the format you use to create a
 
 ### WebVTT file with video chapter navigation {#webvtt-file-with-video-chapter-navigation}
 
-```xml
+```xml {.line-numbers}
 WEBVTT
 Chapter 1
 00:00.000 --> 01:04.364

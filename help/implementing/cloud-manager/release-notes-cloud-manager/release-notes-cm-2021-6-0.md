@@ -1,5 +1,5 @@
 ---
-title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.5.0
+title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.6.0
 description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.5.0
 feature: Release Information
 exl-id: 9a0a53d3-31d4-493d-ba2e-b4bb22f60351
