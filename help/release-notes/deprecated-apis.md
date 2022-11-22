@@ -47,7 +47,7 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>org.apache.fop.apps</td>
     <td></td>
     <td>3/1/21</td>
-    <td>6/1/21</td>
+    <td>removed</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml.xerces.dom<br>org.apache.jackrabbit.vault.util.xml.xerces.util<br>org.apache.jackrabbit.vault.util.xml.xerces.xni<br>org.apache.jackrabbit.vault.util.xml.xerces.xni.parser</td>
@@ -173,6 +173,36 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>This internal log4j API is not supported by AEM as a Cloud Service.</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
+  </tr>
+  <tr>
+    <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
+    <td>Apache Log4j 1 has reached end of life in 2015 and is no longer supported.</td>
+    <td>1/27/2022</td>
+    <td>3/24/2022</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
+    <td>This internal logback API is not supported by AEM as a Cloud Service.</td>
+    <td>1/27/2022</td>
+    <td>removed</td>
+  </tr>
+  <tr>
+    <td>com.github.jknack.handlebars.js</td>
+    <td>Handlebars upgrade required from 4.0.5 to 4.3.0 due to security vulnerability. This package no longer present in the upgraded handlebars.</td>
+    <td>5/5/2022</td>
+    <td>8/5/2022</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.resourceresolverhelper</td>
+    <td>This API is not supported anymore. Use org.apache.sling.api.resource.ResourceResolverFactory instead.</td>
+    <td>9/29/2022</td>
+    <td>11/24/2022</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.contentsync.handler.util</td>
+    <td>This API is deprecated. Please use Apache Sling's Builders instead.</td>
+    <td>10/31/2022</td>
+    <td>01/01/2023</td>
   </tr>
 </tbody>
 </table>

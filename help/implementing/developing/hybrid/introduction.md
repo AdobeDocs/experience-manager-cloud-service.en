@@ -170,7 +170,7 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
 
    ![JSON of the WKND SPA Project home page](assets/wknd-json.png)
 
-   The AEM SPA Editor leverages [AEM Content Services](/help/assets/content-fragments/content-fragments.md) to deliver the entire content of the page as a JSON model.
+   The AEM SPA Editor leverages [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) to deliver the entire content of the page as a JSON model.
 
    By implementing specific interfaces, Sling Models provide the information necessary to the SPA. The delivery of the JSON data is delegated downward to each component (from page, to paragraph, to component, etc.).
 
