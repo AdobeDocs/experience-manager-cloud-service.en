@@ -21,7 +21,7 @@ See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-pr
 
 ## 360 Video in action {#video-in-action}
 
-Select [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) to open a browser window and watch a 360° video. During video playback, drag the pointer to a new location to change the viewing angle.
+Select [Space Station 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) to open a browser window and watch a 360° video. During video playback, drag the pointer to a new location to change the viewing angle.
 
 ![360 Video sample](assets/6_5_360videoiss_simplified.png)
 *Video frame from Space Station 360*
@@ -37,18 +37,18 @@ See [Edit 360/VR video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-
 360 video assets that are uploaded into [!DNL Experience Manager] are labeled as **Multimedia** on an Asset page, similar to normal video asset.
 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
-*An uploaded 360 video asset seen in the Card view. The asset is labeled as Multimedia.*
+*An uploaded 360-video asset seen in the Card view. The asset is labeled as Multimedia.*
 
 **Upload assets for use with the 360 Video viewer:**
 
-1. Created a folder that is dedicated to your 360 video asset.
+1. Created a folder that is dedicated to your 360-video asset.
 1. [Apply an adaptive video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-   Rendering 360 video content places higher requirements for source video resolution and for encoded renditions resolution than standard non-360 video content.
+   Rendering 360-video content places higher requirements for source video resolution and for encoded renditions resolution than standard non-360 video content.
 
-   You can use the out-of-the-box Adaptive Video Profile that already comes with Dynamic Media. However, it results in perceptibly lower 360 video quality than you would get for non-360 video encoded with the same settings rendered with a non-360 video viewer. Therefore, if high quality 360 video is required, do the following:
+   You can use the out-of-the-box Adaptive Video Profile that already comes with Dynamic Media. However, it results in perceptibly lower 360-video quality than you would get for non-360 video encoded with the same settings rendered with a non-360 video viewer. Therefore, if high quality 360 video is required, do the following:
 
-    * Ideally, your original 360 video content has either one of the following resolutions:
+    * Ideally, your original 360-video content has either one of the following resolutions:
 
         * 1080p - 1920 x 1080, known as Full HD or FHD resolution or,
         * 2160p - 3840 x 2160, known as 4k, UHD, or Ultra HD resolution. This large display resolution is most often found on premium television sets and computer monitors. The 2160p resolution is often called "4k" because the width is close to 4000 pixels. In other words, it offers four times the pixels of 1080p.
@@ -59,7 +59,7 @@ See [Edit 360/VR video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-
         * Width=auto; Height=1080; Bit rate=5000 kbps
         * Width=auto; Height=1440; Bit rate=6600 kbps
 
-    * Process 360 video content in a folder that is dedicated exclusively to 360 video assets.
+    * Process 360-video content in a folder that is dedicated exclusively to 360 video assets.
 
    This approach places greater demands on the network and CPU of the end user.
 
@@ -104,7 +104,7 @@ See [Adding Dynamic Media Assets to pages](/help/assets/dynamic-media/adding-dyn
 
    ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
-   To preview the video, select the 360 video asset.
+   To preview the video, select the 360-video asset.
 
 1. On the preview page, near the upper-left corner of the page, select the drop-down list, then select **[!UICONTROL Viewers]**.
 
@@ -115,7 +115,7 @@ See [Adding Dynamic Media Assets to pages](/help/assets/dynamic-media/adding-dyn
     * To alter the viewing angle of the static scene, drag the pointer across the video.
     * To begin playback, select the video's **[!UICONTROL Play]** button. As the video plays, drag the pointer across the video to alter your viewing angle.
 
-   ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)*A 360 video screenshot.*
+   ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)*A 360-video screenshot.*
 
     * From the Viewers list, select **[!UICONTROL Video360VR]**.
 
