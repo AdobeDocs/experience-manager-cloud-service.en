@@ -137,12 +137,12 @@ No matter what your learning style, Adobe wants you to succeed as you get starte
 While it is recommended that you move on to the next part of the headless development journey by reviewing the document [How to Model Your Content as AEM Content Models,](model-your-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
-* [Headless Development for AEM Sites as a Cloud Service](/help/implementing/developing/headless/introduction.md) - A quick introduction to orient the AEM Headless developer with the necessary features
+* [Headless Development for AEM Sites as a Cloud Service](/help/headless/introduction.md) - A quick introduction to orient the AEM Headless developer with the necessary features
 * [AEM Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use these hands-on tutorials to explore how to use the various options for delivering content to headless endpoints with AEM and chose what's right for you.
 * [Headless Content Management Using GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - Follow this course for an overview of the GraphQL API implemented in AEM. Authentication via AdobeID is required.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
 * [Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - A complete overview of AEM's architecture
-* [Headless Getting Started Guide](/help/implementing/developing/headless/introduction.md#getting-started) - A quick introduction to AEM's headless features for users already knowledgeable of AEM.
-* [Create Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Technical documentation on Content Fragment Models
-* [Create Content Fragments](/help/assets/content-fragments/content-fragments.md) - Technical documentation on Content Fragments
-* [Query content with GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) - Technical documentation on the GraphQL API
+* [Headless Setup](/help/headless/introduction.md#getting-started) - A quick introduction to AEM's headless features for users already knowledgeable of AEM.
+* [Create Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - Technical documentation on Content Fragment Models
+* [Create Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Technical documentation on Content Fragments
+* [Query content with GraphQL](/help/headless/graphql-api/content-fragments.md) - Technical documentation on the GraphQL API

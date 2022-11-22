@@ -1,6 +1,7 @@
 ---
 title: Cloud Manager Environment Variables
 description: Standard environment variables can be configured and managed via Cloud Manager and be provided to the run time environment, to be used in OSGi configuration.
+exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 ---
 
 # Cloud Manager Environment Variables {#environment-variables}
@@ -24,6 +25,10 @@ Typical use cases for using environment variables include:
 * When multiple development environments exist in a program and some configuration differs from one environment to the next
 
 ## Adding Environment Variables {#add-variables}
+
+>[!NOTE]
+>
+>You must be a member of the [**Deployment Manager** role](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) in order to add or modify environment variables.
 
 1. Log into Adobe Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Cloud Manager lists the various programs available. Select the one you wish to manage.
@@ -84,3 +89,15 @@ After you have created environment variables, you can update them using the **Ad
 >[!TIP]
 >
 >If you wish to update multiple variables, it is recommended to use the **Environment Configuration** dialog to update all of the necessary variables at once before tapping or clicking **Save**. This way you can add them with one update to the environment.
+
+## Using Environment Variables {#using}
+
+Environment variables can make your `pom.xml` configurations more secure and flexible. For example, passwords needn't be hard coded and your configuration can adapt based on the values in environment variables.
+
+You can access environment variables and secrets via XML as follows.
+
+* `${env.VARIABLE_NAME}`
+
+See the document [Setting Up Project](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) for an example of how to use both types of variables in a `pom.xml` file.
+
+See the [official Maven documentation](https://maven.apache.org/settings.html#quick-overview) for more details.

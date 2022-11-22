@@ -1,8 +1,6 @@
 ---
-title: Managing Content Fragments
+title: Managing Content Fragments (Assets - Content Fragments)
 description: Learn how to use the Assets console to manage your AEM Content Fragments, the basis of your headless content.
-feature: Content Fragments
-role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 ---
 # Managing Content Fragments {#managing-content-fragments}
@@ -30,7 +28,7 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 
 >[!NOTE]
 >
->Content Fragments are stored as **Assets**, so are primarily managed from the **Assets** console.
+>Content Fragments are stored as **Assets**. They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** console, though they can still be managed from the **Assets** console. This section covers management from the **Assets** console.
 
 ## Creating Content Fragments {#creating-content-fragments}
 
@@ -351,11 +349,17 @@ You can revert to a specific version of your fragment:
 >
 >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
 
-Content Fragments must be published for use in the publish environment. They can be published:
+Content Fragments must be published for use in the publish environment. This is done using the standard Assets functionality:
+
+* [Quick Publish](/help/assets/manage-publication.md#quick-publish)
+* [Manage Publication](/help/assets/manage-publication.md#manage-publication) 
+
+This can be accessed:
 
 * After creation; using [actions available in the Assets console](#actions-for-a-content-fragment-assets-console).
 * From the [Content Fragment Editor](#toolbar-actions-in-the-content-fragment-editor).
-* When you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment will be listed in the page references.
+
+In addition, when you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment will be listed in the page references.
 
 >[!CAUTION]
 >

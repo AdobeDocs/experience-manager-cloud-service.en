@@ -8,8 +8,8 @@ role: Developer, Architect
 level: Beginner
 kt: 9460
 thumbnail: 339249.jpg
+exl-id: f0f3f254-0efa-4fab-b2fd-96571bbb719f
 ---
-
 # App Builder security
 
 >[!IMPORTANT]

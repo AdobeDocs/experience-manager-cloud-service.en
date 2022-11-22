@@ -1,8 +1,6 @@
 ---
 title: In-built [!DNL AEM Forms] as a Cloud Service  Groups 
-seo-title: [!DNL AEM Forms] as a Cloud Service User Groups
 description: List of out of the box user groups and permissions assigned to each group 
-seo-description: List of out of the box user groups and permissions assigned to each group
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 ---
 # Groups and permissions {#aem-forms-on-osgi-groups-and-privileges}

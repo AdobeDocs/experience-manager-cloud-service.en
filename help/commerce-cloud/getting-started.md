@@ -3,7 +3,7 @@ title: Getting started with AEM Commerce as a Cloud Service
 description: Learn how to deploy a commerce-enabled AEM project to a running AEM as a Cloud service environment. Use features of Adobe Cloud Manager and a CI/CD pipeline to build the Venia reference storefront to a running environment.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
@@ -26,7 +26,7 @@ Once you have been provisioned with the CIF add-on, it will be applied to any ex
 
 The second step is self-service for each AEM as a Cloud Service environment. There are some additional configurations you will need to do after the initial provisioning of the CIF add-on.
 
-## Connecting AEM with a Commerce Solution {#magento}
+## Connecting AEM with a Commerce Solution {#solution}
 
 To connect the CIF add-on & the [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) with a commerce solution, you need to provide the  GraphQL endpoint URL via a Cloud Manager environment variable. The variable name is `COMMERCE_ENDPOINT`. A secure connection via HTTPS must be configured.
 
@@ -37,7 +37,7 @@ This environment variable is used in two places:
 
 A different  GraphQL endpoint URL can be used for each AEM as a Cloud Service environment. That way projects can connect AEM staging environments with commerce staging systems and AEM production environment to a commerce production system. That GraphQL endpoint must be publicly available, private VPN or local connections are not supported. Optionally, an authentication header can be provided in order to use additional CIF features that require authentication.
 
-Optional and only for Adobe Commerce Enterprise / Cloud the CIF add-on supports the use of staged catalog data for AEM authors. This requieres to configure an authorization token. The configured authorization token is only available and used on AEM author instances for security reasons. AEM publish instances cannot show staged data.
+Optionally and only for Adobe Commerce Enterprise / Cloud the CIF add-on supports the use of staged catalog data for AEM authors. This requieres to configure an authorization header. This header is only available and used on AEM author instances for security reasons. AEM publish instances cannot show staged data.
 
 There are two options to configure the endpoint:
 
@@ -53,7 +53,7 @@ Clicking this button opens a dialog:
 
 ![CM Commerce Endpoint](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-After the endpoint (optionally an authentication token for staged catalog support) is set, the endpoint will be displayed on the detail page. Clicking the Edit icon will open the same dialog where the endpoint can be modified if necessary.
+After the endpoint and optionally an authorization header for staged catalog support is set, the endpoint will be displayed on the detail page. Clicking the Edit icon will open the same dialog where the endpoint can be modified if necessary.
 
 ![CM Enviornment Information](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
@@ -75,7 +75,7 @@ To connect AEM with a commerce solution via Adobe I/O CLI, follow these steps:
 
     See [CLI docs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) for details.
 
-    The commerce GraphQL endpoint URL must point to commerce's GraphQl service and use a secure HTTPS connection. For example: `https://<yourmagentosystem>/graphql`.
+    The commerce GraphQL endpoint URL must point to commerce's GraphQl service and use a secure HTTPS connection. For example: `https://<yourcommercesystem>/graphql`.
 
 4. Enable Staged catalog features that require authentication (Optional)
 
@@ -97,7 +97,7 @@ With this, you are ready to use AEM Commerce as a Cloud Service and can deploy y
 
 ## Configuring stores and catalogs {#catalog}
 
-The CIF add-on and the [CIF Core Components](https://github.com/adobe/aem-core-cif-components) can be used on multiple AEM site structures connected to different commerce stores (or store views, etc) .By default, the CIF add-on is deployed with a default config connecting to Adobe Commerce's default store and catalog (Magento).
+The CIF add-on and the [CIF Core Components](https://github.com/adobe/aem-core-cif-components) can be used on multiple AEM site structures connected to different commerce stores (or store views, etc) .By default, the CIF add-on is deployed with a default config connecting to Adobe Commerce's default store and catalog.
 
 This configuration can be adjusted for the project via the CIF Cloud Service config following these steps:
 
@@ -112,7 +112,7 @@ This configuration can be adjusted for the project via the CIF Cloud Service con
 The following properties can be configured:
 
 - GraphQL Client - select the configured GraphQL client for commerce backend communication. This should typically stay at default.
-- Store View - the (Magento) store view identifier. If empty, the default store view will be used.
+- Store View - the store view identifier. If empty, the default store view will be used.
 - GraphQL Proxy Path - the URL path GraphQL Proxy in AEM use to proxy requests to the commerce backend GraphQL endpoint.
     >[!NOTE]
     >
@@ -120,7 +120,7 @@ The following properties can be configured:
 - Enable Catalog UID Support - enable support for UID instead of ID in the commerce backend GraphQL calls.
     >[!NOTE]
     >
-    > Support for UIDs got introduced in Adobe Commerce (Magento) 2.4.2. Only enable this if your commerce backend supports a GraphQL schema of version 2.4.2 or later.
+    > Support for UIDs got introduced in Adobe Commerce 2.4.2. Only enable this if your commerce backend supports a GraphQL schema of version 2.4.2 or later.
 - Catalog Root Category Identifier - the identifier (UID or ID) of the store catalog root
     >[!CAUTION]
     >
@@ -135,3 +135,5 @@ For more complex setups using multiple AEM site structures combined with differe
 - [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 - [Commerce Multi-Store Setup](configuring/multi-store-setup.md)
+- [Multiple Commerce Systems Setup](configuring/multiple-commerce-systems-setup.md)
+

@@ -1,9 +1,8 @@
 ---
 title: Release Notes for 2021.10.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2021.10.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 ---
-
-
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 The following section outlines the general Release Notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
@@ -76,7 +75,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 * Authors can add links to product and catalog pages in text fields using the rich text editor (RTE). A CIF icon has been added to the RTE toolbar that will open up the pickers to quickly search and select the product or category without leaving the context.
 
-* Existing pop-up shopping cart and checkout have been replaced with dedicated AEM shopping cart and checkout pages. The components on these pages are built using Magento's extensible Peregrine components
+* Existing pop-up shopping cart and checkout have been replaced with dedicated AEM shopping cart and checkout pages. The components on these pages are built using Adobe Commerce's extensible Peregrine components
 
 * Merchants can hide certain product catalog categories in the navigation using the Commerce backend. The CIF Navigation Core Component respects the commerce backend configuration "include in menu" to show / hide categories in navigation
 
