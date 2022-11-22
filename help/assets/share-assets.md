@@ -1,9 +1,9 @@
 ---
 title: Distribute and share assets, folders, and collections
 description: Distribute your digital assets using methods like share as a link, downloading, and via [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
-contentOwner: AG
-feature: Asset Management,Collaboration,Asset Distribution
-role: User,Admin
+contentOwner: Vishabh Gupta
+feature: Asset Management, Collaboration, Asset Distribution
+role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 ---
 # Share and distribute assets managed in [!DNL Experience Manager] {#share-assets-from-aem}
@@ -18,26 +18,71 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 
 ## Share assets as a link {#sharelink}
 
-Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to [!DNL Assets]. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
+Sharing assets through a link is a convenient way of making the resources available to external parties, marketers, and other [!DNL Experience Manager] users. The functionality allows anonymous users to access and download the assets shared with them. When downloading assets from a shared link, [!DNL Experience Manager Assets] uses an asynchronous service that offers faster and uninterrupted download. The assets to be downloaded are queued in the background into ZIP archives of manageable file size. For large downloads, the download is bundled into multiple files of 100 GB per file size.
 
-![Link Sharing dialog](assets/link-share-dialog.png)
+<!--
+Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
+-->
 
 >[!NOTE]
 >
 >* You need Edit ACL permission on the folder or the asset that you want to share as a link.
->* Before you share a link with users, [enable outbound emails](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Otherwise, an error occurs.
+>* [Enable outbound emails](/help/implementing/developing/introduction/development-guidelines.md#sending-email) before sharing a link with the users. 
 
-1. In the [!DNL Assets] user interface, select the asset to share as a link.
-1. From the toolbar, click the **[!UICONTROL Share Link]**. The [!UICONTROL Link Sharing] dialog appears which contains an auto-generated asset link in the **[!UICONTROL Share Link]** field. 
+There are two ways of sharing the assets using the link sharing functionality:
+
+1. Generate a shared link, [copy, and share the asset link](#copy-and-share-assets-link) with other users. The default expiration time of the link is one day. You cannot change the expiration time when sharing the copied link with other users.
+
+1. Generate a shared link and [share the asset link through email](#share-assets-link-through-email). In this case, you can modify the default values such as expiration date and time, and allow downloading the original assets and its renditions. You can send email to multiple users by adding their email addresses.      
+
+![Link Sharing dialog](assets/link-sharing-dialog.png)
+
+### Copy and share the asset link{#copy-and-share-asset-link}
+
+To share assets as a public URL:
+
+1. Log in to [!DNL Experience Manager Assets] and navigate to **[!UICONTROL Files]**.
+1. Select the assets or folder containing assets. From the toolbar, click **[!UICONTROL Share Link]**. 
+1. The **[!UICONTROL Link Sharing]** dialog appears which contains an auto-generated asset link in the **[!UICONTROL Share Link]** field.
+1. Copy the asset link and share it with the users. 
+
+### Share asset link through email notification {#share-assets-link-through-email}
+
+To share assets through email: 
+
+1. Select the assets or folder containing assets. From the toolbar, click **[!UICONTROL Share Link]**. 
+1. The **[!UICONTROL Link Sharing]** dialog appears which contains an auto-generated asset link in the **[!UICONTROL Share Link]** field. 
 
    * In the email address box, type the email ID of the user with whom you want to share the link. You can share the link with multiple users. If the user is a member of your organization, select their email ID from the suggestions that appear in the drop-down list. If the user is external, type the complete email ID and press **[!UICONTROL Enter]**; the email ID is added to the list of users.
 
-   * In the **[!UICONTROL Subject]** box, type a subject for the asset you want to share.
+   * In the **[!UICONTROL Subject]** box, type a subject to specify the purpose of the assets that are shared.
    * In the **[!UICONTROL Message]** box, type a message if necessary.
-   * In the **[!UICONTROL Expiration]** field, use the date picker to specify an expiration date and time for the link. By default, the expiry date is set to 7 days from the date on which you share the link.
-   * Enable the **[!UICONTROL Allow downlod of original file]** check box to allow the recepients to download the original rendition. 
+   * In the **[!UICONTROL Expiration]** field, use the date picker to specify an expiration date and time for the link.
+   * Enable the **[!UICONTROL Allow download of original file]** check box to allow the recipients to download the original rendition. 
 
-1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users. Users receive an email containing the shared link.
+1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users. The users receive an email containing the shared link. 
+
+![Link Sharing email](assets/link-sharing-email-notification.png)
+
+### Download assets using the asset link
+
+Any user having access to the shared asset link can download the assets bundled in a zip folder. The download process is same, whether a user is accessing the copied asset link, or using the asset link shared through the email. 
+
+* Click on the asset link or paste the URL in your browser. The [!UICONTROL Link Share] interface opens wherein you can switch to the [!UICONTROL Card View] or [!UICONTROL List View]. 
+
+* In the [!UICONTROL Card View], you can hover the mouse over the shared asset or shared assets folder to either select the assets or queue them for download.
+
+* By default, the user interface shows the **[!UICONTROL Download Inbox]** option. It reflects the list of all the shared assets or folders that are queued for download along with their status. 
+
+* On selecting the assets or folder, a **[!UICONTROL Queue Download]** option appears on the screen. Click the **[!UICONTROL Queue Download]** option to initiate the download process.  
+
+  ![Queue download](assets/queue-download.png)
+
+* While the download file is prepared, click on the **[!UICONTROL Download Inbox]** option to view the status of your download. For large downloads, click on the **[!UICONTROL Refresh]** button to update the status. 
+
+  ![Download inbox](assets/link-sharing-download-inbox.png)
+
+* Once the processing is complete, click on the **[!UICONTROL Download]** button to download the zip file.  
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -46,6 +91,7 @@ You can also copy the auto-generated link and share it with the users. The defau
    >[!NOTE]
    >
    >If a shared asset is moved to a different location, its link stops working. Re-create the link and reshare with the users.
+
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -114,7 +160,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## Download and share assets {#download-and-share-assets}
+## Download assets and share separately {#download-and-share-assets}
 
 Users can download the required assets and share these outside of [!DNL Experience Manager]. For more information, see [how to search assets](/help/assets/search-assets.md), [how to download assets](/help/assets/download-assets-from-aem.md), and [how to download collections](manage-collections.md#download-a-collection)
 
@@ -139,6 +185,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >[!NOTE]
    >
    >If you want to share links from your Author instance to external entities, ensure that you expose only the following URLs for `GET` requests. Block other URLs to ensure that your Author instance is secure.
+   >
    >* `[aem_server]:[port]/linkshare.html`
    >* `[aem_server]:[port]/linksharepreview.html`
    >* `[aem_server]:[port]/linkexpired.html`

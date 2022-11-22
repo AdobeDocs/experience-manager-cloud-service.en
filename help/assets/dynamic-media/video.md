@@ -34,7 +34,7 @@ The following step-by-step workflow description is designed to help you get up a
 
     * Upload your primary source videos to the folders. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
 
-        * Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 50 x 50.
+        * Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 25 x 25.
         * You can upload video files that are up to 15 GB each.
         * [Upload your videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
         * Learn more about [Supported input file formats](/help/assets/file-format-support.md).
@@ -96,7 +96,7 @@ The following step-by-step workflow description is designed to help you get up a
 
 ## Work with video in Dynamic Media {#working-with-video-in-dynamic-media}
 
-Video in Dynamic Media is an end-to-end solution that makes it easy to publish high-quality Adaptive Video for streaming across multiple screens, including desktop, iOS, Android™, BlackBerry®, and Windows® mobile devices. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. The desktop computer or mobile device detects the available bandwidth.
+Video in Dynamic Media is an end-to-end solution that makes it easy to publish high-quality Adaptive Video for streaming across multiple screens, including desktops, tablets, and mobile devices. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. The desktop computer or mobile device detects the available bandwidth.
 
 For example, on an iOS mobile device, it detects a bandwidth such as 3G, 4G, or Wi-Fi. Then, it automatically selects the right encoded video from among the various video bit rates within the Adaptive Video Set. The video is streamed to desktops, mobile devices, or tablets.
 
@@ -121,13 +121,13 @@ For managing single video and Adaptive Video Sets, the following is supported:
 
 * Video captioning in all HTML5 video viewers.
 * Organize, browse, and search video with full metadata support for efficient management of video assets.
-* Deliver Adaptive Video Sets to the web and desktops, and to mobile devices, including the iPhone, iPad, Android™, BlackBerry®, and Windows® phone.
+* Deliver Adaptive Video Sets to the web and desktops, tablets, and mobile devices.
 
 Adaptive video streaming is supported on various iOS platforms. See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
-Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry® devices that support this video format at the following: [Supported video formats on BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+<!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry® devices that support this video format at the following: [Supported video formats on BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-You can find Windows® devices that support this video format at the following [Supported video formats on Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
+OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows® devices that support this video format at the following [Supported video formats on Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 * Play back the video using Dynamic Media Video Viewer Presets, including the following:
 
@@ -232,13 +232,15 @@ The following table describes the device, browser, and playback method of videos
    <td>Chrome (iOS)</td>
    <td>HLS</td>
   </tr>
-  <tr>
+ </tbody>
+</table>
+
+<!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
    <td>BlackBerry®</td>
    <td>HLS</td>
   </tr>
- </tbody>
-</table>
+ -->
 
 ## Architecture of Dynamic Media video solution {#architecture-of-dynamic-media-video-solution}
 
@@ -265,7 +267,7 @@ The following are best-practice tips for encoding source video files.
 
 When you encode a video file, use a source video file of the highest possible quality. Avoid using previously encoded video files because these files are already compressed, and further encoding creates a subpar quality video.
 
-* Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 50 x 50.
+* Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 25 x 25.
 * You can upload primary source video files that are up to 15 GB each.
 
 The following table describes the recommended size, aspect ratio, and minimum bit rate that your source video files must have before you encode them:
@@ -416,7 +418,7 @@ You can also [unpublish videos to remove them from YouTube](#unpublishing-videos
 
 ### Configure Google Cloud settings {#configuring-google-cloud-settings}
 
-To publish to YouTube, you need a Google account. If you have a GMAIL account, then you already have a Google account; if you do not have a Google account, you can easily create one. You need the account because you need credentials to publish video assets to YouTube. If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel).
+To publish to YouTube, you need a Google account. If you have a GMAIL account, then you already have a Google account; if you do not have a Google account, you can easily create one. You need the account because you need credentials to publish video assets to YouTube. <!-- hidden March 3 2022 If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel). -->
 
 The account used with Google Cloud and the Google account used for YouTube do not need to be the same.
 
@@ -424,26 +426,23 @@ Google periodically changes their user interface. As such, the steps to publish 
 
 >[!NOTE]
 >
->The following steps were accurate at the time of this writing. However, Google periodically updates their websites without notice. As such, these steps can be slightly different.
+>The following steps were accurate at the time of writing. However, Google periodically updates their cloud web pages without notice. As such, some configuration options may be named slightly differently in the Google user interface from the name used in the steps.
 
 **To configure Google Cloud settings:**
 
 1. Create a Google account.
-   [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
+   [https://accounts.google.com/signup/v2?service=mail&flowName=GlifWebSignIn&flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&flowName=GlifWebSignIn&flowEntry=SignUp)
 
-   If you already have a Google account, skip to the next step.
+   If you already have a Google account, you can skip to the next step.
 
 1. Go to [https://cloud.google.com/](https://cloud.google.com/).
-1. On the Google Cloud page, near the upper-right corner, select **[!UICONTROL Console]**.
+1. On the **[!UICONTROL Google Cloud]** page, near the upper-right corner, select **[!UICONTROL Console]**.
 
    If necessary, **[!UICONTROL Sign in]** using your Google account credentials to see the **[!UICONTROL Console]** option.
 
-1. On the Dashboard page, to the right of **[!UICONTROL Google Cloud Platform]**, select the Project drop-down list to open the Select a Project dialog box.
-1. In the Select a project dialog box, select **[!UICONTROL New Project]**.
-
-   ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
-
-1. In the New Project dialog box, in the Project Name field, type the name of your new project.
+1. On the **[!UICONTROL Dashboard]** page, to the right of **[!UICONTROL Google Cloud Platform]**, select the **[!UICONTROL Project]** drop-down list to open the **[!UICONTROL Select a project]** dialog box.
+1. In the **[!UICONTROL Select a project]** dialog box, select **[!UICONTROL New Project]**.
+1. In the **[!UICONTROL New Project]** dialog box, in the **[!UICONTROL Project name]** field, type the name of your new project.
 
    Your Project ID is based on your project name. As such, choose the project name carefully; it cannot be changed after it is created. Also, you must enter the same Project ID again when you set up YouTube in Experience Manager later on. Therefore, write it down.
 
@@ -451,72 +450,64 @@ Google periodically changes their user interface. As such, the steps to publish 
 
 1. Do either one of the following:
 
-    * On your project’s Dashboard, in the Getting Started card, select **[!UICONTROL Explore and enable APIs]**.
-    * On your project's Dashboard, in the APIs card, select **[!UICONTROL Go to APIs overview]**.
+    * On your project’s Dashboard, in the **[!UICONTROL Getting Started]** card, select **[!UICONTROL Explore and enable APIs]**.
+    * On your project's Dashboard, in the **[!UICONTROL APIs]** card, select **[!UICONTROL Go to APIs overview]**.
 
-   ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
+1. Near the top middle of the **[!UICONTROL APIs & Services]** page, select **[!UICONTROL ENABLE APIS AND SERVICES]**.<!-- NEXT STEP BELOW IS STEP 10 --> 
+1. On the **[!UICONTROL API Library]** page, on the left side, under **[!UICONTROL Category]**, select **[!UICONTROL YouTube]**. On the right side of the page, select **[!UICONTROL YouTube]**.
+1. On the **[!UICONTROL YouTube]** page, select **[!UICONTROL YouTube Data API v3]**.
+1. On the **[!UICONTROL YouTube Data API v3]** page, select **[!UICONTROL MANAGE]**.
 
-1. Near the top of the APIs & Services page, select **[!UICONTROL Enable APIs and Services]**.
-1. On the API Library page, on the left side, under **[!UICONTROL Category]**, select **[!UICONTROL YouTube]**. On the right side of the page, select **[!UICONTROL YouTube Data API]**.
-1. On the YouTube Data API v3 page, select **[!UICONTROL Enable]**.
+   ![6_5_googleaccount-apis-manage](assets/6_5_googleaccount-apis-manage.png)
 
-   ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
+1. To use the API, you need credentials. If necessary, on the left side of the **[!UICONTROL APIs & Services]** page, select **[!UICONTROL Credentials]**.
+1. On the **[!UICONTROL Credentials]** page, near the top, select **[!UICONTROL CREATE CREDENTIALS]**, then select **[!UICONTROL OAuth client ID]**.
+1. On the **[!UICONTROL Create OAuth client ID]** page, in the **[!UICONTROL Application type]** drop-down list, select **[!UICONTROL Web application]**.
 
-1. To use the API, you need credentials. If necessary, select **[!UICONTROL Create Credentials]**.
+   ![6_5_googleaccount-apis-applicationtype](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
 
-   ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
+1. Do one of the following:
 
-1. On the **[!UICONTROL Add credentials to your project]** page, step 1, do the following:
+   * In the **[!UICONTROL Name]** field, enter a unique name for your OAuth 2.0 client.
+   * Use the default name that Google already provided in the **[!UICONTROL Name]** field.
 
-    * From the **[!UICONTROL Which API are you using?]** drop-down list, select **[!UICONTROL YouTube Data API v3]**.
+1. Under the **[!UICONTROL Authorized JavaScript origins]** heading, select **[!UICONTROL ADD URI]**.
 
-    * From the **[!UICONTROL Where are you calling the API from?]** drop-down list, select **[!UICONTROL Web Server (for example, node.js, Tomcat)]**.
+   ![6_5_googleaccount-apis-nameauthorizations](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-nameauthorizations.png)
 
-    * From the **[!UICONTROL What data are you accessing?]** drop-down list, select **[!UICONTROL User data]**.
-
-   ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
-
-1. Select **[!UICONTROL What credentials do I need?]**
-1. On the **[!UICONTROL Add credentials to your project]** page, step 2, under the **[!UICONTROL Create an OAuth 2.0 client ID]** heading, in the Name field, enter a unique name if desired. Or, you can use the default name specified by Google.
-1. Under the **[!UICONTROL Authorized JavaScript origins]** heading, in the text field, enter the following path, substituting your own domain and port number in the path, then press **[!UICONTROL Enter]** to add the path to the list:
+1. In the **[!UICONTROL URIs]** text field, enter the following path, substituting your own domain and port number in the path, then press **[!UICONTROL Enter]** to add the path to the list:
 
    `https://<servername.domain>:<port_number>`
 
    For example, `https://1a2b3c.mycompany.com:4321`
 
-   **Note**: The path examples above is intended for explanation purposes only.
+   >[!NOTE]
+   >
+   >The URI path example above is hypothetical and for explanation purposes only.
 
-   ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
-
-1. Under the **[!UICONTROL Authorized redirect URIs]** heading, in the text field, enter the following path, substituting your own domain and port number in the path, then press **[!UICONTROL Enter]** to add the path to the list:
+1. Under the **[!UICONTROL Authorized redirect URIs]** heading, select ADD URI.
+1. In the **[!UICONTROL URIs]** text field, enter the following path, substituting your own domain and port number in the path, then press **[!UICONTROL Enter]** to add the path to the list:
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    For example, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **Note**: The path example above is intended for explanation purposes only.
+   >[!NOTE]
+   >
+   >The URI path example above is hypothetical and for explanation purposes only.
 
-1. Select **[!UICONTROL Create OAuth client ID]**.
-1. On the **[!UICONTROL Add credentials to your project]** page, step 3, under the **[!UICONTROL Set up the OAuth 2.0 consent screen]** heading, select the Gmail email address that you are currently using.
+1. Near the bottom of the **[!UICONTROL Create OAuth client ID]** page, select **[!UICONTROL Create]**.
+1. On the **[!UICONTROL OAuth client created]** dialog box, do the following:
 
-   ![6_5_googleaccount-apis-createcredentials-consentscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
+   * (Optional) Copy the values in the **[!UICONTROL Your Client ID]** and **[!UICONTROL Your Client Secret]** fields, and save.
+   * Select **[!UICONTROL DOWNLOAD JSON]**, then save the JSON file.
 
-1. Under the **[!UICONTROL Product name shown to users]** heading, in the text field, enter what you want to show on the consent screen.
+   You need this downloaded JSON file when you set up YouTube in Adobe Experience Manager later on.
 
-   The consent screen is displayed to the Experience Manager administrator when they authenticate to YouTube. Experience Manager contacts YouTube for permission.
+   ![6_5_googleaccount-apis-oauthclientcreated](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
 
-1. Select **[!UICONTROL Continue]**.
-1. On the Add credentials to your project page, step 4, under the **[!UICONTROL Download credentials]** heading, select **[!UICONTROL Download]**.
-
-   ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
-
-1. Save the `client_id.json` file.
-
-   You need this downloaded json file when you set up YouTube in Adobe Experience Manager later on.
-
-1. Select **[!UICONTROL Done]**.
-
-   Log out of your Google account. Now create a YouTube channel.
+1. On the **[!UICONTROL OAuth client created]** dialog box, select **[!UICONTROL OK]**.
+1. Log out of your Google account. Now create a YouTube channel.
 
 ### Create a YouTube channel {#creating-a-youtube-channel}
 
@@ -842,9 +833,9 @@ You can monitor progress, including failed encoding/YouTube publish.
    >
    >It can take a long time for failure/error messages to finally be recorded due to multiple workflow configurations on **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** from [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), for example:
    >
-   >    * Apache Sling Job Queue Configuration
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * Granite Workflow Timeout Queue
+   >* Apache Sling Job Queue Configuration
+   >* Adobe Granite Workflow External Process Job Handler
+   >* Granite Workflow Timeout Queue
    >
    >You can adjust the **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** properties in these configurations.
 
@@ -874,12 +865,9 @@ You can monitor progress, including failed encoding/YouTube publish.
    >
    >It can take a long time for the error message to finally be recorded due to multiple workflow configurations on **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** from [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), for example:
    >
-   >
-   >
-   >    * Apache Sling Job Queue Configuration
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * Granite Workflow Timeout Queue
-   >
+   >* Apache Sling Job Queue Configuration
+   >* Adobe Granite Workflow External Process Job Handler
+   >* Granite Workflow Timeout Queue
    >
    >You can adjust the **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** properties in these configurations.
 
@@ -1123,7 +1111,7 @@ You can use the following sample as an example of the format you use to create a
 
 ### WebVTT file with video chapter navigation {#webvtt-file-with-video-chapter-navigation}
 
-```xml
+```xml {.line-numbers}
 WEBVTT
 Chapter 1
 00:00.000 --> 01:04.364
