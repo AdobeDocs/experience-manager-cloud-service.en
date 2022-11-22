@@ -59,7 +59,7 @@ The following table summarizes the ratings and failure thresholds for each of th
 
 >[!NOTE]
 >
->Refer to [SonarQube's metric definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
+>Refer to [SonarQube's Metric Definitions](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) for more detailed definitions.
 
 >[!NOTE]
 >
