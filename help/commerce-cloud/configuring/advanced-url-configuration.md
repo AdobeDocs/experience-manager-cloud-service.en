@@ -2,7 +2,7 @@
 title: Advanced URL Configurations
 description: Learn how to customize the URLs for product and category pages. This allows implementations to optimize URLs for search engines and promote discovery.
 sub-product: Commerce
-version: cloud-service
+version: Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -44,10 +44,10 @@ This configures the URLs of the product pages and supports the following options
 In the case of the [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` will be replaced by `/content/venia/us/en/products/product-page`
-* `{{sku}}` will be replaced by the product's sku, e.g. `VP09`
-* `{{url_key}}` will be replaced by the product's `url_key` property, e.g. `lenora-crochet-shorts`
-* `{{url_path}}` will be replaced by the product's `url_path`, e.g. `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` will be replaced by the currently selected variant, e.g. `VP09-KH-S`
+* `{{sku}}` will be replaced by the product's sku, for example, `VP09`
+* `{{url_key}}` will be replaced by the product's `url_key` property, for example, `lenora-crochet-shorts`
+* `{{url_path}}` will be replaced by the product's `url_path`, for example, `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` will be replaced by the currently selected variant, for example, `VP09-KH-S`
 
 Since the `url_path` got deprecated, the pre-defined product URL formats use a product's `url_rewrites` and pick the one with the most path segmenents as alternative if the `url_path` is not available.
 
@@ -177,6 +177,18 @@ The `UrlProvider` is pre-configured to generate deep links to specific category 
 
 On publish tier instances on the other hand, catalog page URLs should be kept stable to not lose gains on search engine rankings for example. Because of that publish tier instances will not render deep links to specific catalog pages per default. To change this behaviour, the _CIF URL Provider Specific Page Strategy_ can be configured to always generate specific page URLs.
 
+### Multiple Catalog Pages {#multiple-product-pages}
+
+When editors want to have full control of the top level navigation of a site, using a single catalog page to render the top level categories of a catalog may not be desired. Instead editors can create multiple catalog pages, one for each category of the catalog they want to include in the top level navigation.
+
+For that use case, each of the catalog pages may have a reference to a product and category page specific to the category configured for the catalog page. The `UrlProvider` will use these to create links for the pages and categories in the configured category. However, for performance reasons only the direct catalog page children of a Site's navigation root / landing page are considered.
+
+It is recommended that the product and category pages of a catalog page are descendant to that catalog page, otherwise components like the Navigation or Breadcrumb may not work correctly. 
+
+>[!NOTE]
+>
+> Full support for multiple catalog pages requires [CIF Core Components 2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) or newer.
+
 ## Customizations {#customization}
 
 ### Custom URL Formats {#custom-url-format}
@@ -211,11 +223,11 @@ _**Balance between URL length and encoded information.**_
 
 Depending on the catalog size, in particular the size and depth of the category tree, it may not be reasonable to encode the full `url_path` of categories into the URL. In that case the URL length could be reduced by including only the category's `url_key` instead. This will support most of the features that are available when using the category `url_path`.
 
-Additionally, make use of [Sling Mappings](#sling-mapping) in order to combine the sku with the product `url_key`. In most e-commerce systems the sku follows a particular format and separating the sku from the `url_key` for incoming requests should eaesily be possible. With that in mind, it should be posible to rewrite a product page URL to `/p/{{category}}/{{sku}}-{{url_key}}.html`, and a category URL to `/c/{{url_key}}.html` respecitively. The `/p` and `/c` prefix are still necessaary in order to distinguish product and category pages from other content pages.
+Additionally, make use of [Sling Mappings](#sling-mapping) in order to combine the sku with the product `url_key`. In most e-commerce systems the sku follows a particular format and separating the sku from the `url_key` for incoming requests should eaesily be possible. With that in mind, it should be posible to rewrite a product page URL to `/p/{{category}}/{{sku}}-{{url_key}}.html`, and a category URL to `/c/{{url_key}}.html` respecitively. The `/p` and `/c` prefix are still necessary in order to distinguish product and category pages from other content pages.
 
 ### Migrating to a new URL Format {#migrate-url-formats}
 
-Many of the default URL formats are somehow compatible with each other, meaing that URLs foramtted by one may be parsed by another one. That helps migrating between URL formats.
+Many of the default URL formats are somehow compatible with each other, meaing that URLs formatted by one may be parsed by another one. That helps migrating between URL formats.
 
 On the other hand, search engines will need some time to re-crawl all catalog pages with the new URL format. To support this process and also to improve the end user experience, it is recommended to provide redirects that forward the user from the old URLs to the new ones.
 

@@ -14,6 +14,7 @@ This document helps you understand creating and managing channels for your AEM S
 
 * understand how to create channels to Screens Content Provider
 * manage and edit content in your channels
+* activation schedule for your channels
 
 ## Steps to Create a New Sequence Channel in Screens as a Cloud Service {#create-new-channel}
 
@@ -81,7 +82,90 @@ The following templates are available while using the **Create** channel wizard:
 |Sequence Channel|Allows to create a channel that plays the components sequentially (one by one in a slide show).|
 |Left or Right L-Bar Split Screen Channel|Allows content authors to view different types of assets in appropriately sized zones.|
 
+## Use default assignment details for channels {#default-channels}
+
+This capability allows you to define a default activation schedule for a channel, and use it by default for every assignment for a display. This provides a method so that the cumbersome schedule definition does not need to be repeated.
+
+### Create default assignment details for a channel {#create-default}
+
+1. Navigate to the details page for the channel you want to configure.
+1. Locate the **Default assignment details** tile on the page.
+
+   ![image](/help/screens-cloud/assets/display/Assignment1.png)
+
+1. Click **Set default details**.
+1. Configure the default assignment details, including priority, start & end dates, as well as recurrence patterns for the channel, and click **Assign**.
+
+   ![image](/help/screens-cloud/assets/display/Assignments2.png)
+
+1. Notice the details of the assignment are shown in the **Default assignment details** tile:
+
+   ![image](/help/screens-cloud/assets/display/Assignments3.png)
+
+This tile displays the following information:
+* Default priority of the channel in the display.
+* Activation start and end dates when the channel is scheduled to play.
+* Synthetic view of the recurrence (Hourly/Daily/Weekly/Monthly/Yearly as well as name given to that recurrence).
+
+### Use the default assignment details when assigning to a display {#default-display}
+
+Channels having default assignment details can be assigned to displays the same way regular channels are, with the added option to leverage the default assignment details instead of manually defining custom ones each time.
+
+1. Navigate to the display details page you want to assign the channel to and click the **Assign channel**.
+alternatively, select the desired display in the inventory view and click the **Assign channel**.
+1. The channel assignment dialog opens.
+
+   ![image](/help/screens-cloud/assets/display/Assignments4.png)
+
+1. Select the desired channel that has the default assignment details from the channel picker.
+1. Notice the channel assignment dialog changes to let you choose the default assignment details, or select custom ones:
+
+   ![image](/help/screens-cloud/assets/display/Assignments5.png)
+
+1. Click **Assign** to finalize the assignment, or click **Set custom assignment details** if you prefer overriding the defaults with some other values in the context of that particular display.
+
+   ![image](/help/screens-cloud/assets/display/Assignments6.png)
+
+1. Notice the **Assigned channels** tile is updated with the new assignment:
+
+   ![image](/help/screens-cloud/assets/display/Assignments7.png)
+
+1. Notice that the channels will have a different icon depending on if they are using custom schedules (Clock icon) or inheriting the default details (World clock icon), and clicking those will show the scheduling details.
+1. Also notice that available actions for each type will differ.
+
+   ![image](/help/screens-cloud/assets/display/Assignments8.png)
+
+**Note:** A channel assignment that leverages the default assignment details will not be editable in the context of the display.
+
+* If you need to change it to a custom assignment, you'll have to first remove it and then re-add it using the **Set custom assignment details** option.
+* If you need to change the properties of the default assignment details, you'll have to do this directly from the channel details page.
+
+### Remove default assignment details from a channel {#remove-display}
+
+1. Navigate to the details page for the channel you want to remove the default assignment details.
+1. Locate the **Default assignment details** tile in the page
+1. Click the **Remove default**.
+
+   ![image](/help/screens-cloud/assets/display/Assignments9.png)
+
+1. A confirmation dialog will be shown, and details will be match one of the following conditions:
+**a.** Channel is not used in any display.
+
+   ![image](/help/screens-cloud/assets/display/Assignments10.png)
+
+**b.** Channel is used in a single display.
+
+   ![image](/help/screens-cloud/assets/display/Assignment11.png)
+
+**c.** Channel is used in several displays.
+
+   ![image](/help/screens-cloud/assets/display/Assignments12.png)
+
+1. Click the *Remove* to validate the change.
+
+**Note:** Removing the default assignment details from a channel will remove the matching assignments on all displays that were using it.
+As a consequence, this may lead to blank screens if there is no alternate content to be played on those displays.
 
 ## What's Next {#whats-next}
 
-Now, that you have setup an AEM Screens channel in your project, you need to publish your channel. Refer to [Publishing Channels in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en) before managing your players from Screens Services Provider.
+Now, that you have setup an AEM Screens channel in your project, you need to publish your channel. Refer to [Publishing Channels in Screens as a Cloud Service](manage-publish.md) before managing your players from Screens Services Provider.

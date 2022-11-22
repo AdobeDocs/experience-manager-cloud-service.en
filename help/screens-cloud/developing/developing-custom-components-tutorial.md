@@ -149,7 +149,7 @@ AEM Screens has some interesting constraints that are not necessarily true for t
 
    The component renders a `div` and an `h1` tag with text. `${properties.message}` is a portion of HTL script that will output the contents of a JCR property named `message`. A dialog is created later that allows a user to enter a value for the `message` property text.
 
-   Also note that BEM (Block Element Modifier) notation is used with the component. BEM is a CSS coding convention that makes it easier to create reusable components. BEM is the notation used by [AEM's Core Components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/wiki/CSS-coding-conventions). More info can be found at: [https://getbem.com/](https://getbem.com/)
+   Also note that BEM (Block Element Modifier) notation is used with the component. BEM is a CSS coding convention that makes it easier to create reusable components. BEM is the notation used by [AEM's Core Components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/wiki/CSS-coding-conventions). <!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
 
 1. Create a file beneath `/apps/weretail-run/components/content/helloworld` named `edit.html.`
 

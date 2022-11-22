@@ -12,10 +12,6 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 >abstract="Custom UI testing is an optional feature that enables you to create and automatically run UI tests for your applications. UI tests are Selenium-based tests packaged in a Docker image in order to allow a wide choice in language and frameworks (such as Java and Maven, Node and WebDriver.io, or any other framework and technology built upon Selenium)."
 
 Custom UI testing is an optional feature that enables you to create and automatically run UI tests for your applications.
-
->[!NOTE]
-> Stage and production pipelines created before February 10, 2021 need to be updated in order to use the UI tests as described on this page.
-> See [CI-CD Pipelines in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) for information about pipeline configuration.
  
 ## Overview {#custom-ui-testing}
 
@@ -49,19 +45,16 @@ To include a `testing.properties` file in the build artifact, add an `include` s
 <includes>
     <include>Dockerfile</include>
     <include>wait-for-grid.sh</include>
-    <include>testing.properties</include> <!- opt-in test module in Cloud Manager -->
+    <include>testing.properties</include> <!-- opt-in test module in Cloud Manager -->
 </includes>
 [...]
 ```
 
 >[!NOTE]
 >
->If your project does not include this line, you will need to edit this file to opt into UI testing. If the file has a line advising not to edit it, please disregard that advice.
-
->[!NOTE]
+>If your project does not include this line, you will need to edit the file to opt into UI testing.
 >
->Production pipelines created before February 10, 2021 will need to be updated in order to use the UI tests as described in this section. This essentially means the User must edit Production pipeline and click **Save** from the UI even if no changes were made. 
->Refer to [Configuring your CI-CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) to learn more about pipeline configuration. 
+>The file may contain a line advising not to edit it. This is due to it being introduced into your project before opt-in UI testing was introduced and client's were not intended to edit the file. This can be safely ignored.
 
 ## Building UI Tests {#building-ui-tests}
 
@@ -80,7 +73,7 @@ In order to generate a Docker build context, you need a Maven module that:
 * Produces an archive that contains a `Dockerfile` and every other file necessary to build the Docker image with your tests.
 * Tags the archive with the `ui-test-docker-context` classifier.
 
-The simplest way to do this is to configure the [Maven Assembly Plugin](http://maven.apache.org/plugins/maven-assembly-plugin/) to create the Docker build context archive and assign the right classifier to it.
+The simplest way to do this is to configure the [Maven Assembly Plugin](https://maven.apache.org/plugins/maven-assembly-plugin/) to create the Docker build context archive and assign the right classifier to it.
 
 You can build UI tests with different technologies and frameworks, but this section assumes that your project is laid out in a way similar to the following.
 
@@ -171,7 +164,7 @@ The following environment variables will be passed to your Docker image at run t
 |Variable|Examples|Description|
 |---|---|---|
 |`SELENIUM_BASE_URL`|`http://my-ip:4444`|The URL of the Selenium server|
-|`SELENIUM_BROWSER`|`chrome`, `firefox`|The browser implementation used by the Selenium Server|
+|`SELENIUM_BROWSER`|`chrome`|The browser implementation used by the Selenium Server|
 |`AEM_AUTHOR_URL`|`http://my-ip:4502/context-path`|The URL of the AEM author instance|
 |`AEM_AUTHOR_USERNAME`|`admin`|The user name to login to the AEM author instance|
 |`AEM_AUTHOR_PASSWORD`|`admin`|The password to login to the AEM author instance|
@@ -192,9 +185,28 @@ Once the Selenium's status endpoint answers with a positive response, the tests 
 
 ### Generate Test Reports {#generate-test-reports}
 
-The Docker image must generate test reports in the JUnit XML format and save them in the path specified by the environment variable `REPORTS_PATH`. The JUnit XML format is a widely-used format for reporting the results of tests. If the Docker image uses Java and Maven, both the [Maven Surefire Plugin](https://maven.apache.org/surefire/maven-surefire-plugin/) and the [Maven Failsafe Plugin](https://maven.apache.org/surefire/maven-failsafe-plugin/).
+The Docker image must generate test reports in the JUnit XML format and save them in the path specified by the environment variable `REPORTS_PATH`. The JUnit XML format is a widely-used format for reporting the results of tests. If the Docker image uses Java and Maven, standard test modules such as [Maven Surefire Plugin](https://maven.apache.org/surefire/maven-surefire-plugin/) and [Maven Failsafe Plugin](https://maven.apache.org/surefire/maven-failsafe-plugin/) can generate such reports out of the box.
 
 If the Docker image is implemented with other programming languages or test runners, check the documentation for the chosen tools for how to generate JUnit XML reports.
+
+### Capture Screenshots and Videos {#capture-screenshots}
+
+The Docker image may generate additional test output (e.g. screenshots, videos) and save them in the path specified by the environment variable `REPORTS_PATH`. Any file found below the `REPORTS_PATH` are included in the test result archive.
+
+If a test result archive has been created during a UI test execution, the test log file contains at the end a reference to the location of the test result archive.
+
+```
+[...]
+
+===============================================================
+The detailed test results can be downloaded from the URL below.
+Note: the link will expire after 60 days
+
+    https://results-host/test-results.zip
+
+===============================================================
+
+```
 
 ### Upload Files {#upload-files}
 
