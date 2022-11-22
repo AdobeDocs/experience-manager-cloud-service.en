@@ -28,7 +28,7 @@ A new version of the Content Transfer Tool is available which integrates the con
 
 * Self-service way to extract a migration set once and ingest it into multiple environments in parallel
 * Improved user experience via better loading states, guardrails, and error handling
-* Ingestion logs are persisted and are always available for toubleshooting 
+* Ingestion logs are persisted and are always available for troubleshooting 
 
 To start using the new version, you will need to uninstall older versions of the Content Transfer Tool because there was a major architectural change in the tool. 
 
