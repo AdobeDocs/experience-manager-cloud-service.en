@@ -11,6 +11,10 @@ exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 >
 >The Repository Browser is available on AEM versions 6582 and higher.
 
+>[!INFO]
+>
+>You can also watch [this clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) for a quick video introduction on how to use the Repository Browser to debug AEM as a Cloud Service.
+
 ## Introduction {#introduction}
 
 The repository browser is a developer tool that provides a read-only view into the repository for all environments on author, publish and preview tiers. It is designed to facilitate viewing of the content structure in order to make it easier to see or debug content.
@@ -55,6 +59,14 @@ The repository browser can be launched by following the steps below.
 You can use the left hand navigation pane to nagivate through the content hierarchy. Clicking on each folder or node will reveal its children. The folder structure reflects the Sling Resource tree, which is a super-set of the JCR Node tree.
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
+
+Alternatively, you can navigate directly to a path by entering it in the **Path** field, as shown below. This will also expand its location in the content hierarcy view on the left.
+
+![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
+
+Whenever you click a folder on the left, the Path field automatically populates with its location. This is useful for copying and pasting the value for later usage.
+
+Additionally, when you click on a folder, the URL is dynamically modified to include the path to that folder. This allows for bookmarkable URLs.
 
 For publish, by default, the Repository Browser will only show public content, thus certain folders like `/conf` or `/home` will not be visible. 
 

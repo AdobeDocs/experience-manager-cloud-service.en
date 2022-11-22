@@ -90,7 +90,7 @@ Using the **Structure Tree** tab of the Content Fragment Editor you can navigate
 >
 >Using the breadcrumbs in the main panel you can navigate back to your starting point.
 
-![Content Fragment Structure Tree](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+![Content Fragment Structure Tree](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
 
 ## Ad Hoc References {#adhoc-references}
 
@@ -104,21 +104,21 @@ Now that you have learned about references and structure in Content Fragments, t
 
 ## Additional Resources {#additional-resources}
 
-* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
  
-  * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
+  * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-    * [Apply the Configuration to your Assets Folder](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * [Apply the Configuration to your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
   
-    * [Creating a Content Fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+    * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
   
-  * [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
+  * [Variations - Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-  * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-    * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
+    * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
   
-    * [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#properties)
+    * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
 * Getting Started Guides
   * [Creating an Assets Folder - Headless Setup](/help/headless/setup/create-assets-folder.md)

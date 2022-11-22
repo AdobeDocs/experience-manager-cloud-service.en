@@ -204,7 +204,7 @@ The sections below describe how to request, configure, and send email.
 
 ### Enabling Outbound Email {#enabling-outbound-email}
 
-By default, ports used to send email are disabled. To activate a port, configure [advanced networking](/help/security/configuring-advanced-networking.md), making sure to set for each needed environment the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint's port forwarding rules, which maps the intended port (e.g., 465 or 587) to a proxy port.
+By default, ports used to send email are disabled. To activate a port, configure [advanced networking](/help/security/configuring-advanced-networking.md), making sure to set for each needed environment the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint's port forwarding rules, which maps the intended port (for example, 465 or 587) to a proxy port.
 
 It is recommended to configure advanced networking with a `kind` parameter set to `flexiblePortEgress` since Adobe can optimize performance of flexible port egress traffic. If a unique egress IP address is necessary, choose a `kind` parameter of `dedicatedEgressIp`. If you have already configured VPN for other reasons, you can use the unique IP address provided by that advanced networking variation as well.
 
@@ -223,15 +223,17 @@ See the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experien
 * The SMTP server host name should be set to $[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * The SMTP server port should be set to the value of the original proxy port set in the portForwards parameter used in the API call when configuring up advanced networking. For example, 30465 (rather than 465)
 
-It is also recommended that if port 465 has been requested:
+The SMTP server port should be set as the `portDest` value set in the portForwards parameter used in the API call when configuring advanced networking and the `portOrig` value should be a meaningful value that is within the required range of 30000 - 30999. For example, if the SMTP server port is 465, port 30465 should be used as the `portOrig` value.
 
-* set `smtp.port` to `465`
-* set `smtp.ssl` to `true`
+In this case and assuming SSL needs to be enabled, in the configuration of the **Day CQ Mail Service OSGI** service:
 
-and if port 587 has been requested:
+* Set `smtp.port` to `30465`
+* Set `smtp.ssl` to `true`
 
-* set `smtp.port` to `587`
-* set `smtp.ssl` to `false`
+Alternatively, if the destination port is 587, a `portOrig` value of 30587 should be used. And assuming that SSL should be disabled, the configuration of the Day CQ Mail Service OSGI service:
+
+* Set `smtp.port` to `30587`
+* Set `smtp.ssl` to `false`
 
 The `smtp.starttls` property will automatically be set by AEM as a Cloud Service at runtime to an appropriate value. Thus, if `smtp.ssl` is set to true, `smtp.startls` is ignored. If `smtp.ssl` is set to false, `smtp.starttls` is set to true. This is regardless of the `smtp.starttls` values set in your OSGI configuration.
 

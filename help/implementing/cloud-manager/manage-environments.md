@@ -46,7 +46,7 @@ The capabilities of individual environments depend upon the solutions enabled in
 1. In the **Add environment** dialog that appears:
    
    * Select an **Environment type**.
-     * The number of available/used environments is displayed in parenthesis behind the Development environment type.
+     * The number of available/used environments is displayed in parentheses behind the Development environment type.
    * Provide an **Environment name**.
    * Provide an **Environment description**.
    * Select a **Cloud Region**.
@@ -99,9 +99,9 @@ A user with requisite permissions must complete the steps of the following optio
 
 1. Create an appropriate IP allow list, apply it to the preview service, and immediately un-apply the `Preview Default [<envId>]` allow list.
 
-   * Refer to [Un-Applying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) for more details.
+   * Please refer to the document [Applying and Un-Applying IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) for more details.
   
-1. Use the update **IP Allow List** workflow to remove the default IP and add IPs as appropriate. Refer to [Viewing and Updating an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) to learn more. 
+1. Use the update **IP Allow List** workflow to remove the default IP and add IPs as appropriate. Refer to [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) to learn more. 
 
 Once access to preview service is unlocked, the lock icon ahead of the preview service name will no longer be displayed.
 
@@ -209,13 +209,11 @@ The following actions can be performed on the publish service for your environme
 
 * [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-* [Viewing and Updating a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+* [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
 
-* [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+* [Checking Status of Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) or an [SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
-* [Checking Status of Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) or an [SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
-
-* [Checking Status of an IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+* [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
 
 
 ## Managing IP Allow Lists {#manage-ip-allow-lists} 

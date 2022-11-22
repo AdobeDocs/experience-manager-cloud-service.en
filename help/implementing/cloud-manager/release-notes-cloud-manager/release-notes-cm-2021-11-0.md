@@ -14,8 +14,8 @@ This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager in AEM as a Cloud Service 2021.11.0 is 4 November 2021.
-The next release is planned for 16 December 2021.
+The release date for Cloud Manager in AEM as a Cloud Service 2021.11.0 is November 4, 2021.
+The next release is planned for December 16, 2021.
 
 ## What's New {#what-is-new}
 

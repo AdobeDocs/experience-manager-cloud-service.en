@@ -25,7 +25,7 @@ Experience Audit in Cloud Manager ensures that the end user's experience on the 
 
 The audit results are informational and allow the deployment manager to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment.
 
-Experience Audit is powered by Google Lighthouse, an open source tool from Googl and is enabled in all Cloud Manager production pipelines.
+Experience Audit is powered by Google Lighthouse, an open source tool from Google and is enabled in all Cloud Manager production pipelines.
 
 ## Understanding Experience Audit Results {#understanding-experience-audit-results}
 
