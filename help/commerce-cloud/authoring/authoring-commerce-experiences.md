@@ -93,6 +93,6 @@ Using Omnisearch is an easy way for practitioners to find AEM content and produc
 
 The result is grouped by type.
 
-    >[!NOTE]
-    >
-    > Full-text search in Omnisearch does not support associated Content Fragments. Use SKU or UID to find associated Content Fragments.
+>[!NOTE]
+>
+> Full-text search in Omnisearch does not support associated Content Fragments. Use SKU or UID to find associated Content Fragments.

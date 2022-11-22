@@ -1,45 +1,83 @@
 ---
 title: Checking Domain Name Status
-description: Checking Domain Name Status
+description: Learn how to determine whether your custom domain name has been verified successfully by Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 ---
+
 # Checking Domain Name Status {#check-status}
 
-You can determine whether your domain name has been verified successfully by clicking the Status icon for the domain name from the table on Environments from the Domain Settings page. 
+You can determine status of your custom domain name within Cloud Manager.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+
+1. Navigate to the **Environments** screen from the **Overview** page.
+
+1. Click on **Domain Settings** in the left navigation panel.
+
+1. Click the **Status** icon for the domain name.
+
+Cloud Manager will verify domain ownership via the TXT value and displays one of the following status messages.
+
+* **Domain Verification Failed** - The TXT value is either missing or is detected with errors.
+
+  * Follow the instructions provided to resolve the issue.
+  * When ready, you must select the **Verify Again** icon next to the status.
+
+* **Domain Verification In Progress** - Verification is in progress.
+
+  * This status is typically seen after you select the **Verify Again** icon next to the status.
+
+* **Verified, Deployment Failed** - The TXT verification was successful, but the CDN deployment failed. 
+
+  * In such cases, please contact your Adobe representative.
+
+* **Domain Verified & Deployed** - This status indicates that your custom domain name is ready to be used.
+
+  * At this point, your custom domain name is ready for testing and to be pointed to the Cloud Manager domain name.
+  * Please refer to the document [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) to learn more.
+
+* **Deleting** - The deletion of a custom domain name is in progress.
+
+* **Deletion Failed** - The deletion of custom domain name failed and must be retried.
+
+  * Please refer to the document [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more.
+
+Cloud Manager will automatically trigger a TXT verification when you select **Save** on the verification step of the **Add Custom Domain** wizard. For subsequent verifications, you must actively select the verify again icon next to the status.
+
+## Domain Name Errors {#domain-error}
+
+The following are some common domain name errors and their typical resolutions.
+
+### Domain Not Installed Error {#domain-not-installed}
+
+ This error may occur during domain validation of the TXT record even after you've checked that the record has been updated appropriately.
+
+#### Error Cause {#cause}
+
+Fastly locks a domain to the initial account that registered it and no other account can register a subdomain without asking for permission. Furthermore, Fastly only allows you to assign an apex domain and associated subdomains to one Fastly service and account. If you have an existing Fastly account that links the same apex and subdomains used for your AEM Cloud Service domains you will see this error.
+
+#### Error Resolution {#resolution}
+
+The error is fixed as follows:
+
+* Remove the apex and subdomains from the existing account before installing the domain in Cloud Manager.
+
+* Use this option to link the apex domain and all subdomains to the AEM as a Cloud Service Fastly account. See [Working with Domains in the Fastly documentation](https://docs.fastly.com/en/guides/working-with-domains) for additional details.
+
+* If your apex domain has multiple subdomains for AEM as a Cloud Service and non-AEM as a Cloud Service sites that you want to link to different Fastly accounts, then try to install the domain in Cloud Manager. If the domain installation fails, create a Customer Support ticket with Fastly so Adobe can followup with Fastly on your behalf.
+
+>[!TIP]
+>
+>Solving domain delegation issues with Fastly typically takes 1-2 business days. For this reason, it is highly recommended to install the domains well before their go live date.
 
 >[!NOTE]
->Cloud Manager will automatically trigger a TXT verification when you select Save on the verification step of the Add Custom Domain wizard. For subsequent verifications, you must actively select the **verify again** icon next to the status.
+>
+>Do not route the DNS of your site to AEM as a Cloud Service IPs if the domain was not installed successfully.
 
-Cloud Manager will verify domain ownership via the TXT value and displays one of the following status messages:
+## Pre-Existing CDN Configurations for Custom Domain Names {#pre-existing-cdn}
 
-* **Domain Verification Failed** 
-   TXT value is either missing or is detected with errors. Follow instructions and retry. When ready, you must select the *verify again* icon next to the status.
+If you have a pre-existing CDN configuration for your custom domain names, there will be an informative message on the the **Custom Domain Names** and **Environment** pages, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
 
-* **Domain Verification In Progress**
-   Verification in progress. This status is typically seen after you select the *verify again* icon next to the status.
+The message disappears once all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
 
-* **Verified, Deployment Failed** 
-   TXT verification was successful. However, the CDN deployment failed. Please contact your Adobe representative.
-
-* **Domain Verified & Deployed**
-   This status indicates that your custom domain name is ready to be used. 
-   >[!NOTE]
-   >At this point, your custom domain name is ready for testing and to be pointed to the Cloud Manager domain name. Refer to [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) to learn more.
-
-* **Deleting** 
-   Deletion of Custom Domain name is in process.
-
-* **Deletion Failed** 
-   Deletion of Custom Domain name failed. You must retry. Refer to [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) to learn more.
-
-
-## Pre-existing CDN Configurations for Custom Domain Names {#pre-existing-cdn}
-
-Customers with environments that includes pre-existing CDN configurations for IP Allow Lists, SSL Certificates or Custom Domain Names will see the following message in the the **IP Allow List** and the **Environment** details page. The message displayed on the UI will disappear once the customer has fully migrated all pre-existing environment configurations via the UI and it may take 1-2 business days for the message to disappear.
-
->[!NOTE]
->In order to see and manage the pre-existing configurations they must be added via the UI. Refer to [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) for more details.
-
-![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
-
-![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
+Please refer to the document [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) for more details.
