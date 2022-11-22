@@ -5,7 +5,7 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 ---
 # Adding Page Annotations {#adding-page-annotations}
 
-Creating content for your digital experience is often requires discussion and feedback prior to publication. To aid this feedback process, AEM allows you to add annotations to your content.
+Creating content for your digital experience often requires discussion and feedback prior to publication. To aid this feedback process, AEM allows you to add annotations to your content.
 
 An annotation places a simple sketch or note (think real-world sticky-note) on the page. The annotation allows you to leave comments or questions for other authors and reviewers.
 
