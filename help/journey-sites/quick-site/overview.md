@@ -1,8 +1,8 @@
 ---
 title: AEM Quick Site Creation Journey
 description: Start here for a guided journey through the easy-to-use AEM Quick Site Creation tool to streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
+exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 ---
-
 # AEM Quick Site Creation Journey {#quick-site-creation-journey}
 
 Start here for a guided journey through the easy-to-use AEM Quick Site Creation tool to streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.

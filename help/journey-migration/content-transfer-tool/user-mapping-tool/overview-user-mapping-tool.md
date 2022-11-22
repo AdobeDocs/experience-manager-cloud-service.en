@@ -1,8 +1,8 @@
 ---
 title: Overview to User Mapping Tool
 description: Overview to User Mapping Tool
+exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 ---
-
 # Overview to User Mapping Tool {#overview-user-mapping-tool}
 
 >[!CONTEXTUALHELP]

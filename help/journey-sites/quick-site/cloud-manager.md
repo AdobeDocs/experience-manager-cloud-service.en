@@ -1,8 +1,8 @@
 ---
 title: Understand Cloud Manager and the Quick Site Creation Workflow
 description: Learn about Cloud Manager and how it ties together the new Quick Site Creation process.
+exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 ---
-
 # Understand Cloud Manager and the Quick Site Creation Workflow {#understand-cloud-manager}
 
 Learn about Cloud Manager and how it ties together the new Quick Site Creation process.
@@ -76,11 +76,17 @@ For the purposes of this journey, a complete understanding of Cloud Manager is n
 
 ![Cloud Manager structure](assets/cloud-manager-structure.png)
 
-* **TENANT** - Every customer is provisioned with a tenant. **WKND Travel and Adventure Enterprises** might be a tenant.
-* **PROGRAMS** - Each tenant has one or more programs. The **WKND Travel and Adventure Enterprises** tenant might have a **WKND Nightlife** and a **WKND Afternoon Projects** program.
-* **ENVIRONMENTS** - Each program has multiple environments such as production for live content, and staging and dev for development purposes. **WKND Nightlife** and **WKND Afternoon Projects** programs would both have dev, stage, and production environments.
+* **TENANT** - Every customer is provisioned with a tenant.
+* **PROGRAMS** - Each tenant has one or more programs, which often reflect the customer's licensed solutions.
+* **ENVIRONMENTS** - Each program has multiple environments such as production for live content, one for staging, and one for development purposes.
 * **REPOSITORY** - The environments have git repositories where application and front-end code is maintained.
 * **TOOLS &amp; WORKFLOWS** - Pipelines manage the deployment of code from the repositories to the environments.
+
+An example is often helpful in contextualizing this hierarchy.
+
+* WKND Travel and Adventure Enterprises might be a **tenant** that focuses on travel-related media.
+* The WKND Travel and Adventure Enterprises tenant might have two **programs**: one Sites program for WKND Magazine and one Assets program for WKND Media.
+* The WKND Magazine and WKND Media programs would both have dev, stage, and production **environments**.
 
 ## The Quick Site Creation Front-End Development Flow {#flow}
 

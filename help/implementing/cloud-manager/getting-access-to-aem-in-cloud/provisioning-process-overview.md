@@ -3,47 +3,48 @@ title: Provisioning Process - Overview
 description: Provisioning Process - Overview
 ---
 
-# AEM as a Cloud Service: Onboarding and Access  
+# AEM as a Cloud Service: Onboarding and Access
 
-This page lists the self-help resources about provisioning process for Experience Manager as a Cloud Service. 
+This page lists the self-help resources about provisioning process for Experience Manager as a Cloud Service.
 
 ## AEM as a Cloud Service Provisioning Process Overview
 
 This section covers the key articles focussed on:
 
-* Accessing AEM as a Cloud Service  
-* Adobe Experience Manager as a Cloud Service Onboarding and Provisioning Process  
+* Accessing AEM as a Cloud Service
+* Adobe Experience Manager as a Cloud Service Onboarding and Provisioning Process
 * Help and Resources
 
 
-### Accessing AEM as a Cloud Service  
+### Accessing AEM as a Cloud Service
 
 Once auto-provisioning is complete:
 
 * Access Rights Granted – Adobe will create an Organization within Adobe Identity Management System (IMS)
 * Designated Administrator will have administrator permissions by default
 * Administrator can add users and roles for additional team members through the Admin Console
-* Review role-based permissions for users to determine permission assignments in Cloud Manager 
+* Review role-based permissions for users to determine permission assignments in Cloud Manager
 
-> ![processoverview.jpg](./assets/processOverview.jpg)
+![processoverview.jpg](assets/processOverview.jpg)
  
 
 For more information, please visit [Onboarding to Experience Manager as a Cloud Service on Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
 
-### Resources and Links 
+### Resources and Links
 
-• [IMS Support for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)   
-• [Role Based Permissions in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)  
-• [Accessing Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)  
+* [IMS Support for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)   
+* [Role Based Permissions in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)  
+* [Accessing Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)  
 
 
 ## Adobe Experience Manager as a Cloud Service Onboarding Process
 
 ### 1. Purchase order Triggers autoprovisioning. 
 
-### 2. Onboard Organizations to Adobe Admin Console:   
+### 2. Onboard Organizations to Adobe Admin Console:
 
- >   ![processoverview2.jpg](./assets/processOverview2.jpg) 
+![processoverview2.jpg](assets/processOverview2.jpg) 
+
 * System Administrator:  
     * Provision AEM programs and environments.
     * Navigate to Admin Console for administrative tasks.  
@@ -53,9 +54,9 @@ For more information, please visit [Onboarding to Experience Manager as a Cloud 
 * AEM Administrator:  
     * Manage local groups, permissions, and privileges.
 
-### 3. Onboard Users and Manage Access in Admin Console: 
+### 3. Onboard Users and Manage Access in Admin Console:
  
->   ![processoverview3.jpg](./assets/processOverview3.jpg) 
+![processoverview3.jpg](assets/processOverview3.jpg) 
 
 Three methods to onboard users, depending on size and preference:
 * Manually create users in Admin Console

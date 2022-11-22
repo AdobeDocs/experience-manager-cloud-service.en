@@ -279,10 +279,10 @@ While it is recommended that you move on to the next part of the headless develo
 * [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md) - Technical documentation of page naming restrictions in AEM
 * [Multi Site Manager and Translation](/help/sites-cloud/administering/msm-and-translation.md) - Technical documentation on AEM's powerful translation features
 * [AEM workflows](/help/sites-cloud/authoring/workflows/overview.md) - Technical documentation on how to automate workflows in AEM
-* [Content Fragments](/help/assets/content-fragments/content-fragments.md) - Technical documentation for Content Fragments.
-* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Technical documentation for Content Fragment Models.
+* [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Technical documentation for Content Fragments.
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - Technical documentation for Content Fragment Models.
 * [GraphQL Technical Documentation](https://graphql.org) - The GraphQL definition (external link)
-* [GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) - Technical documentation that explains how to create requests to access and deliver Content Fragments
+* [GraphQL API](/help/headless/graphql-api/content-fragments.md) - Technical documentation that explains how to create requests to access and deliver Content Fragments
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - Technical documentation that explains how to create and modify Content Fragments (and other assets)
-* [Persisted Queries](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching) - Technical documentation on persisted queries in AEM
+* [Persisted Queries](/help/headless/graphql-api/persisted-queries.md) - Technical documentation on persisted queries in AEM
 * [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) - A complete discussion of the headless integration levels available in AEM

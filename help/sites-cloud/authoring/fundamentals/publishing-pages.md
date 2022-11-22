@@ -11,6 +11,10 @@ This is referred to as publishing a page. When you want to remove a page from th
 
 You can publish/unpublish a page immediately or at a predefined date/time in the future.
 
+>[!NOTE]
+>
+>Publishing an Experience Fragment basically follows the same procedure as for publishing a page, though from the Experience Fragments console or editor.
+
 ## Terminology {#terminology}
 
 You may encounter different terms related to publishing as you work with Adobe Experience Manager (AEM) as a Cloud Service.
@@ -22,7 +26,7 @@ You may encounter different terms related to publishing as you work with Adobe E
   * These terms are synonymous with publish/unpublish.
   * These terms were used in previous versions of AEM.
 * **Replicate / Replication**
-  * These are the technical terms describing the movement of data (e.g. page content, files, code, user comments) from one environment to another when you publish a page.
+  * These are the technical terms describing the movement of data (for example, page content, files, code, user comments) from one environment to another when you publish a page.
   * These terms are primarily used by developers.
 
 ## Publishing Pages {#publishing-pages-1}
@@ -205,9 +209,9 @@ To publish or unpublish a page using Manage Publication:
 
 ## Unpublishing Pages {#unpublishing-pages}
 
-Unpublishing a page will remove it from your publish environment so that it is no longer available to your readers.
+Unpublishing a page will remove it from your publish, or [preview](/help/sites-cloud/authoring/fundamentals/previewing-content.md), environment so that it is no longer available to your readers.
 
-In a [manner similar to publishing](#publishing-pages), one or more pages can be unpublished:
+In a [manner similar to publishing](#publishing-pages), one or more pages can be unpublished from the desired destination:
 
 * [From the page editor](#unpublishing-from-the-editor)
 * [From the sites console](#unpublishing-from-the-console)
@@ -234,6 +238,9 @@ Just as you [use the Manage Publication option to publish](#manage-publication),
    >[!NOTE]
    >
    >If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) to terminate the corresponding workflow.
+
+   >[!NOTE]
+   >If you have a [Preview](/help/sites-cloud/authoring/fundamentals/previewing-content.md) environment you can select the **Destination** during Manage Publication.
 
 1. To complete the un-publication, continue through the wizard as you would to [publish the page](#manage-publication).
 

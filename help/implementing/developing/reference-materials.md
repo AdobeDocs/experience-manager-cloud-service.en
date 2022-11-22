@@ -28,7 +28,7 @@ AEM relies on a number of additional open-source APIs.
 |API|Description|
 |---|---|
 |[Apache Sling](https://sling.apache.org/apidocs/sling11/)|Web framework that uses a Java Content Repository (JCR) to store and manage content|
-|[Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html)|Implementation a scalable and high-performance hierarchical Java Content Repository (JCR) for use as the foundation of modern world-class web sites|
+|[Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)|Implementation a scalable and high-performance hierarchical Java Content Repository (JCR) for use as the foundation of modern world-class web sites|
 |[Java Content Repository](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)|Specification for the JCR Version 2.0|
 |[Apache Felix](https://felix.apache.org)|Implementation of the Open Services Gateway initiative (OSGi) framework and service platform|
 
@@ -40,7 +40,7 @@ AEM is built on the following four primary Java API sets in descending order of 
 |---|---|---|
 |1|[Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html)|Product abstractions such as pages, assets, workflows, etc.|
 |2|[Apache Sling](https://sling.apache.org/apidocs/sling11/)|REST and resource-based abstractions such as resources, value maps, and HTTP requests.|
-|3|[Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html)|Data and content abstractions such as node, properties and sessions.|
+|3|[Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)|Data and content abstractions such as node, properties and sessions.|
 |4|[Apache Felix](https://felix.apache.org/)|OSGi application container abstractions such as services and (OSGi) components.|
 
 If an API is provided by AEM, prefer it over Sling, JCR, and OSGi. If AEM doesn’t provide an API, then prefer Sling over JCR and OSGi.
@@ -60,7 +60,7 @@ AEM offers customizable components and content delivery options.
 |[Enabling JSON Export for a Component](/help/implementing/developing/components/enabling-json-exporter.md)|Generate JSON export of component content based on a modeler framework|
 |[Assets API](/help/assets/mac-api-assets.md)|Allows for create-read-update-delete (CRUD) operations on assets, including binary, metadata, renditions, and comments. See AEM Assets HTTP API|
 |[Content Fragments HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)|Access Content Fragment content directly over the HTTP API via CRUD operations|
-|[Content Fragment GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)|Enable the efficient delivery of Content Fragments to JavaScript clients in headless CMS implementations|
+|[Content Fragment GraphQL API](/help/headless/graphql-api/content-fragments.md)|Enable the efficient delivery of Content Fragments to JavaScript clients in headless CMS implementations|
 |[Content Fragments Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html)|Eexact format of supported HTTP asset requests|
 
 ## SPA-Specific APIs {#spa-apis}

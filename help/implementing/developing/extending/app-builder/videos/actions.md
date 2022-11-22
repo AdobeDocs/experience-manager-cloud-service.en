@@ -8,8 +8,8 @@ role: Developer, Architect
 level: Beginner
 kt: 9456, 9475, 9476, 9477
 thumbnail: 327313.jpg
+exl-id: f1a67f80-7366-4337-8bcd-062a3412acc9
 ---
-
 # App Builder actions
 
 >[!IMPORTANT]

@@ -3,8 +3,8 @@ title: Creating a Site
 description: Learn how to use AEM to create a site using site templates to define the style and structure of your site.
 feature: Administering
 role: Admin
+exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 ---
-
 # Creating a Site {#creating-site}
 
 Learn how to use AEM create a site using site templates to define the style and structure of your site.

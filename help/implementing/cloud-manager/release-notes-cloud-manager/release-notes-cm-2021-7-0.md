@@ -2,6 +2,7 @@
 title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.7.0
 description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.7.0
 feature: Release Information
+exl-id: 7ef738a5-4657-482d-848b-e95e4fb816f9
 ---
 # Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.7.0 {#release-notes}
 
@@ -46,4 +47,3 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.7.0 is July 15
 ### Known Issues {#known-issues}
 
 Customers switching to use the Azul JDKs should be aware that not all existing applications will compile without error on Azul JDK. It is highly recommended to test locally before switching.
-

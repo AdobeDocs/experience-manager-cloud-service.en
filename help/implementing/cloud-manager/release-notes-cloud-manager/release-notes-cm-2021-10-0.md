@@ -2,6 +2,7 @@
 title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.10.0
 description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.10.0
 feature: Release Information
+exl-id: f8a87b00-52ce-42a6-a955-45cb14703b40
 ---
 # Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.10.0 {#release-notes}
 
@@ -44,4 +45,3 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.10.0 is Octobe
 * Certain internal requests made during environment creation were not being retried.
 
 * If deployment failed error occurs following domain name verification, the error message has been corrected to request the customer to contact their Adobe representative.
-

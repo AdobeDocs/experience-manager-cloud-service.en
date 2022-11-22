@@ -1,8 +1,6 @@
 ---
-title: Working with Content Fragments
-description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to design, create, curate, and use page-independent content, ideal for headless delivery.
-feature: Content Fragments
-role: User
+title: Working with Content Fragments (Assets - Content Fragments)
+description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to design, create, curate, and use page-independent content, ideal for page authoring and headless delivery.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 ---
 # Working with Content Fragments {#working-with-content-fragments}
@@ -28,6 +26,10 @@ Content fragments can also be delivered in JSON format, using the Sling Model (J
 * enables you to use the component to manage which elements of a fragment to deliver
 * allows bulk-delivery, by adding multiple content fragment core components on the page being used for API delivery
 
+>[!NOTE]
+>
+>Content Fragments are stored as **Assets**. They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** console, though they can still be managed from the **Assets** console. This section covers management from the **Assets** console.
+
 This and the following pages cover the tasks for creating, configuring, maintaining and using your content fragments:
 
 * [Enable Content Fragment functionality for your instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
@@ -47,12 +49,12 @@ This and the following pages cover the tasks for creating, configuring, maintain
 >* [Customizing and Extending Content Fragments](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
->* [AEM GraphQL API for use with Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
 
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 
-* Physical channel; e.g. desktop, mobile.
-* Form of delivery in a physical channel; e.g. the "product detail page", "product category page" for desktop, or "mobile web", "mobile app" for mobile.
+* Physical channel; for example, desktop, mobile.
+* Form of delivery in a physical channel; for example, the "product detail page", "product category page" for desktop, or "mobile web", "mobile app" for mobile.
 
 However, you (probably) do not want to use exactly the same content for all channels - you need to optimize your content according to the specific channel.
 
@@ -95,7 +97,7 @@ Together with the JSON export capabilities of AEM core components, this structur
 
 >[!NOTE]
 >
->See [Headless and AEM](/help/implementing/developing/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
+>See [Headless and AEM](/help/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
 
 >[!NOTE]
 >
@@ -118,7 +120,7 @@ Content fragments are:
 
   * The **Content Fragment** component is available to page authors. It allows them to reference, and deliver, the required content fragment in either HTML or JSON format.
 
-* Accessible using the [AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md).
+* Accessible using the [AEM GraphQL API](/help/headless/graphql-api/content-fragments.md).
 
 Content Fragments are a content structure that:
 

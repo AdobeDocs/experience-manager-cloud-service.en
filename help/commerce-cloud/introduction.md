@@ -1,6 +1,6 @@
 ---
 title: Introduction and overview
-description: Introduction and overview of content and commerce. Experience Manager Commerce Integration Framework (CIF) is Adobe's recommended pattern to integrate and extend commerce services from Magento and other third-party commerce solutions with the Experience Cloud.
+description: Introduction and overview of content and commerce. Experience Manager Commerce Integration Framework (CIF) is Adobe's recommended pattern to integrate and extend commerce services from Adobe Commerce and other third-party commerce solutions with the Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
 ---
@@ -58,7 +58,7 @@ CIF is built for continuous innovation with an always up-to-date add-on, allowin
 
 ### Integrations {#integrations}
 
-Connect your ecosystem (e.g. commerce solution) with the Experience Cloud using  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), a micro-service based server-less PaaS, and [CIF's reference implementation](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+Connect your ecosystem (for example, commerce solution) with the Experience Cloud using  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), a micro-service based server-less PaaS, and [CIF's reference implementation](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## Proven Patterns and Best Practices {#proven}
 

@@ -1,6 +1,7 @@
 ---
 title: Product Cockpit
 description: Working with Product Cockpit
+exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
 ---
 # Product Cockpit {#product-cockpit}
 

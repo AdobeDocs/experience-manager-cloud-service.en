@@ -152,7 +152,7 @@ The layer switcher is available as a drop down from the toolbar (at the top of t
 
 ### Component Toolbar {#component-toolbar}
 
-Each instance of a component will reveal its toolbar when clicked (either once or with a slow double-click). The toolbar contains the specific actions (e.g. copy, paste, open-editor) that are available for the component instance on the page.
+Each instance of a component will reveal its toolbar when clicked (either once or with a slow double-click). The toolbar contains the specific actions (for example, copy, paste, open-editor) that are available for the component instance on the page.
 
 Depending on the space available, the component toolbars are positioned at the top-, or bottom-, right corner of the appropriate component.
 

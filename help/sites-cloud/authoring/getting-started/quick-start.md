@@ -243,15 +243,15 @@ These actions can all be triggered by:
 
    Then, dependent on your action:
 
-    * Copy:
+    * [Copy](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page):
 
         * You will then need to navigate to the new location and paste.
 
-    * Move:
+    * [Move](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
         * The wizard will open to collect the information needed to move the page. Follow the on-screen instructions.
 
-    * Delete:
+    * [Delete](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
         * You will be asked to confirm the action.
 

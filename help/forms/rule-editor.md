@@ -531,6 +531,7 @@ Accompanying `jsdoc` is required:
 * If you want custom configuration and description
 * Because there are multiple ways to declare a function in `JavaScript,` and comments let you keep a track of the functions.
 
+Rule editor supports JavaScript ES2015 syntax for scripts and custom functions.
 For more information, see [jsdoc.app](https://jsdoc.app/).
 
 Supported `jsdoc` tags:

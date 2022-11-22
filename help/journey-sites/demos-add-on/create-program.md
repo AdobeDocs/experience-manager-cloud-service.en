@@ -1,15 +1,15 @@
 ---
 title: Create Program
 description: Learn how to set up a new program and pipeline to deploy the add-on.
+exl-id: 06287618-0328-40b1-bba8-84002283f23f
 ---
-
 # Create Program {#creating-a-program}
 
 Learn how to set up a new program and pipeline to deploy the add-on.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Quick Site Creation journey, [Understand Reference Demo Add-On Installation,](installation.md) you learned how the installation process of the Reference Demos Add-On works, illustrating how the different pieces work together. You should now:
+In the previous document of the AEM Reference Demos Add-On journey, [Understand Reference Demo Add-On Installation,](installation.md) you learned how the installation process of the Reference Demos Add-On works, illustrating how the different pieces work together. You should now:
 
 * Have a basic understanding of Cloud Manager.
 * Understand how pipelines deliver content and configuration to AEM.
@@ -70,7 +70,7 @@ After logging in to Cloud Manager, you can create a new sandbox program for your
 
    ![Edit program dialog](assets/edit-program-dialog.png)
 
-1. On the **Solutions &amp; Add-ons** tab, expand the **Sites** entry in the list and then check **Reference Demos**. Tap or click **Update**.
+1. On the **Solutions &amp; Add-ons** tab, expand the **Sites** entry in the list and then check **Reference Demos**. If you also wish to create demos for AEM Screens, check the **Screens** option in the list as well. Tap or click **Update**.
 
    ![Check reference demos option](assets/edit-program-add-on.png)
 

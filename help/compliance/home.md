@@ -1,11 +1,12 @@
 ---
 title: Compliance
-description: This page lists self-help resources providing information on compliance in Experience Manager as a Cloud Service.
+description: Get an overview on compliance in Experience Manager as a Cloud Service.
 landing-page-description: For an overview on compliance in AEM as a Cloud service, including an privacy and accessibility, start here.
+exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
 ---
 # Compliance in AEM as a Cloud Service {#aem-compliance}
 
-This page lists self-help resources providing information on compliance in Experience Manager as a Cloud Service.
+Get an overview on compliance in Experience Manager as a Cloud Service.
 
 ## Key Overview Articles {#key-articles}
 
@@ -21,7 +22,7 @@ This page lists self-help resources providing information on compliance in Exper
 |---|---|
 |[Release Notes](/help/release-notes/home.md)|This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what is new, deprecated and removed features, and known issues.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
-|[Onboarding](/help/onboarding/home.md)|This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
+|[Onboarding Journey](/help/journey-onboarding/overview.md)|This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.|
 |[Assets User Guide](/help/assets/home.md)|Understand how to use and administer Experience Manager Assets as a Cloud Service.|
 |[Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md)|Understand the transition journey to Cloud Service.|
@@ -37,7 +38,7 @@ This page lists self-help resources providing information on compliance in Exper
 * [Dispatcher Documentation](/help/implementing/dispatcher/overview.md)
 * [HTL Documentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager Documentation](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+* [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [Adobe Experience Manager as a Cloud Service Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
