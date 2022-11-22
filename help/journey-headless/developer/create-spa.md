@@ -120,5 +120,5 @@ The following are some additional resources that do a deeper dive on some concep
 * [SPA Editor Overview](/help/implementing/developing/hybrid/editor-overview.md) - Details of how the SPA Editor works
 * [Server Side Rendering](/help/implementing/developing/hybrid/ssr.md) - How to configure SSR for AEM SPAs
 * [SPA Reference Documents](/help/implementing/developing/hybrid/reference-materials.md) - JavaScript API references and links to the open source AEM SPA GitHub projects
-* [Content Fragments](/help/assets/content-fragments/content-fragments.md) - How to create Content Fragments
+* [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) - How to create Content Fragments
 * [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Maven template that creates a minimal, best-practices-based Adobe Experience Manager (AEM) project as a starting point for your website

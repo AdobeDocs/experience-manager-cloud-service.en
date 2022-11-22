@@ -33,8 +33,8 @@ The following translation vendors provide an implementation of the AEM API for t
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
-* [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
-* [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
+* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
+* [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
 After you install a connector package, you can create a cloud configuration for the connector. Typically, you need to provide your credentials for authenticating with the translation service. For information about adding a cloud configuration for the Microsoft Translator connector, see [Integrating with Microsoft Translator](connect-ms-translator.md).
@@ -61,11 +61,7 @@ After you configure a translation integration framework, you can [associate it w
 >
 >For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](overview.md).
 
-A single configuration of the framework controls how to translate page content and assets.
-
-![Translation configuration](../assets/translation-configuration.png)
-
-To create a new translation configuration:
+A single configuration of the framework controls how page content and assets are translated. To create a new translation configuration:
 
 1. In the [global navigation menu,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) click or tap **Tools -&gt; Cloud Services -&amp; Translation Cloud Services**.
 1. Navigate to where you wish to create the configuration in your content structure. This is often based on a particular site or can be global.
@@ -79,28 +75,35 @@ To create a new translation configuration:
 
 The **Sites** tab controls how the translation of page content is performed.
 
+![Translation configuration for Sites](../assets/translation-configuration.png)
+
 |Property|Description|
 |---|---|
-|Translation Workflow|This property defines the translation method that the framework performs for site content:<br>- Machine Translation: The translation provider performs the translation using machine translation in real time.<br>- Human Translation: Content is sent to the translation provider to be translated by translators.<br>- Do Not Translate: Content is not sent for translation. This is to skip certain content branches which would not be translated but could be updated with latest content.|
+|Translation Method|This property defines the translation method that the framework performs for site content:<br>- Machine Translation: The translation provider performs the translation using machine translation in real time.<br>- Human Translation: Content is sent to the translation provider to be translated by translators.<br>- Do Not Translate: Content is not sent for translation. This is to skip certain content branches which would not be translated but could be updated with latest content.|
 |Translation Provider|This property defines the translation provider to perform the translation. A provider appears in the list when its corresponding connector is installed.|
 |Content Category|(Machine Translation Only) This property is a category that describes the content that you are translating. The category can affect the choice of terminology and phrasing when translating content.|
 |Translate Tags|This option enables translating tags that are associated with the page.|
 |Translate Page Assets|This property defines how to translate assets that are added to components from the file system or referenced from assets:<br>- Do not translate: Page assets are not translated.<br>- Using sites translation workflow: Assets are handled according to the configuration properties on the **Sites** tab.<br>- Using assets translation workflow: Assets are handled according to the properties configured on the **Assets** tab.|
 |Auto-Execute Translation|Enable this property to execute translation jobs automatically after translation projects are created. You do not have an opportunity to review and scope the translation job when you select this option.|
+|Disable Update-Only Translation|When this option is checked, updating the translation project will submit all translatable fields for translation, not just the ones changed since last translation.|
 
 ### Assets Configuration Properties {#assets-configuration-properties}
 
 Assets properties control how to configure assets. For more information about translating assets, see [Creating Language Copies for Assets](/help/assets/translate-assets.md).
 
+![Translation configuration for Sites](../assets/translation-configuration-assets.png)
+
 |Property|Description|
 |---|---|
-|Translation Workflow|This property selects the type of translation that the framework performs for assets:<br>- Machine Translation: The translation provider performs the translation immediately using machine translation.<br>- Human Translation: Content is automatically sent to the translation provider to be manually translated.<br>-Do Not Translate: Assets are not sent for translation.|
+|Translation Method|This property selects the type of translation that the framework performs for assets:<br>- Machine Translation: The translation provider performs the translation immediately using machine translation.<br>- Human Translation: Content is automatically sent to the translation provider to be manually translated.<br>-Do Not Translate: Assets are not sent for translation.|
 |Translation Provider|This property defines the translation provider to perform the translation. A provider appears in the list when its corresponding connector is installed.|
 |Content Category|(Machine Translation only) This property describes the content that you are translating. The category can affect the choice of terminology and phrasing when translating content.|
 |Translate Assets|Activate this property to include assets in the translation project.|
 |Translate Metadata|Activate this property to translate asset metadata.|
 |Translate Tags|Activate this property to translate tags that are associated with the asset.|
 |Auto-Execute Translation|Select this property to execute translation jobs automatically after translation projects are created. You do not have an opportunity to review or scope the translation job when you select this option.|
+|Disable Update-Only Translation|When this option is checked, updating the translation project will submit all translatable fields for translation, not just the ones changed since last translation.|
+|Enable Content Model Fields for Translation|Enabling this option will use the **Translatable** field on [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) to determine if the field is translated and automatically creates [translation rules](rules.md) accordingly. This option supersedes any translation rules you may have created.|
 
 ## Configuring Pages for Translation {#configuring-pages-for-translation}
 
