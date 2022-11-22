@@ -1,12 +1,13 @@
 ---
-title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2022.02.0
-description: These are the release notes for Cloud Manager in AEM as a Cloud Service release 2022.02.0.
+title: Release Notes for Cloud Manager 2022.11.0 in Adobe Experience Manager as a Cloud Service
+description: These are the release notes for Cloud Manager 2022.11.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 ---
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2022.02.0 {#release-notes}
 
-This page outlines the release notes for Cloud Manager in AEM as a Cloud Service 2022.02.0.
+# Release Notes for Cloud Manager 2022.11.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+
+This page documents the release notes for Cloud Manager 2022.11.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -14,20 +15,19 @@ This page outlines the release notes for Cloud Manager in AEM as a Cloud Service
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager in AEM as a Cloud Service 2022.02.0 is 10 February 2022. The next release is planned for 10 March 2022.
+The release date for Cloud Manager release 2022.11.0 in AEM as a Cloud Service is 3 November 2022. The next release is planned for 29 November 2022.
 
 ## What's New {#what-is-new}
 
-* New accelerated [Web Tier Config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) have been introduced to exclusively deploy HTTPD/dispatcher configuration.
-  * You must be on AEM version `2021.12.6151.20211217T120950Z` or newer and [opt in to the flexible mode of the dispatcher tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) to use this feature.
-  * This feature will be rolled out in a phased approach over the two weeks following the 2022.02.0 release.
-* The Cloud Manager landing page experience has been refreshed to deliver improved navigation, easy switching between grid/tile views, and pop-overs for quick program summary.
-* A new failing threshold (`< D`) has been added to the [reliability rating metric.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
-  * Customers with severe quality issues that impact system stability, primarily related to invalid indexes and workflow processes, will not be able to deploy until those issues are resolved.
-* The severity of the `BannedPath` [quality rule](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) has been changed from blocker to critical.
-* The pipeline wizard will inform the user when an AEM environment update may be needed before configuring a [Web Tier Config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) associated with it.
+* The license dashboard for the AEM Sites solution will now display contract details, including whether or not the tenant is within its subscription.
+
+>[!NOTE]
+>
+> This feature will be rolled out in a phased manner over the coming weeks to all tenants.
+
+* When an environment associated with a pipeline has a status which does not allow the pipeline to be executed, the run action is disabled with an explanatory tooltip.
+* An improved message was added to the UI when the **Add Program** button is disabled due to insufficient entitlements for the tenant.
 
 ## Bug Fixes {#bug-fixes}
 
-* Old git repository passwords are now always invalidated when a new password is generated.
-* Updating environment variables through the API no longer interferes with a pipeline execution in rare situations.
+* Feedback during the edit production pipeline was improved to catch infrequent occurrences of one or more missing environments.
