@@ -60,7 +60,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. In Experience Manager as a Cloud Service, select the Experience Manager as a Cloud Service logo to access the global navigation console.
 1. On the left of the console, select the Tools icon, then go to **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. On the Dynamic Media Configuration Browser page, in the left pane, select **[!UICONTROL global]** (do not select the folder icon to the left of **[!UICONTROL global]**). Then select **[!UICONTROL Create]**.
-1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter a title, the Dynamic Media account email address, password, then select your region. This information is provided to you by Adobe in the provisioning email. Contact Adobe Customer Support if you did not receive this email.
+1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter the title, Dynamic Media account email address, and password of the company administrator of the Dynamic Media account, then select your region. This information is provided to you by Adobe in the provisioning email. Contact Adobe Customer Support if you did not receive this email. 
 1. Select **[!UICONTROL Connect to Dynamic Media]**.
 1. In the **[!UICONTROL Change Password]** dialog box, in the **[!UICONTROL New Password]** field, enter a new password that consists of 8-25 characters. The password must contain at least one of each of the following:
 
@@ -85,7 +85,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | Property | Description |
    |---|---|
-   | Company | The name of the Dynamic Media account. It is possible that you have multiple Dynamic Media accounts for different subbrands, divisions, or staging/production environments.<br>See also [Configure a Dynamic Media company alias account](/help/assets/dynamic-media/dm-alias-account.md). |
+   | Company | The name of the Dynamic Media account.<br>**Important**: Only one Dynamic Media Configuration in Cloud Services is supported on an instance of Experience Manager; do not add more than one configuration. Multiple Dynamic Media Configurations on an Experience Manager instance is _not_ supported or recommended by Adobe.<!-- CQDOC-19579 and CQDOC-19612 --><br>See also [Configure a Dynamic Media company alias account](/help/assets/dynamic-media/dm-alias-account.md). |
    | Company Root Folder Path | Your company's root folder path. |
    | Publishing Assets | You can choose from the following three options:<br>**[!UICONTROL Immediately]** - When assets are uploaded, the system ingests the assets and provides the URL/Embed instantly. There is no user intervention necessary to publish assets.<br>**[!UICONTROL On Activation]** - You must explicitly publish the asset first before a URL/Embed link is provided.<br>**[!UICONTROL Selective Publish]** - Assets are auto published for secure preview only. They can also be explicitly published to Experience Manager as a Cloud Service without publishing to DMS7 for delivery in the public domain. In the future, this option intends to publish assets to Experience Manager as a Cloud Service and publish assets to Dynamic Media, mutually exclusive of each other. That is, you can publish assets to DMS7 so you can use features such a Smart Crop or dynamic renditions. Or, you can publish assets exclusively in Experience Manager as a Cloud Service for previewing; those same assets are not published in DMS7 for delivery in the public domain. |
    | Secure Preview Server | Lets you specify the URL path to your secure renditions preview server. That is, after renditions are generated, Experience Manager as a Cloud Service can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the Experience Manager as a Cloud Service instance).<br>Unless you have a special arrangement to use your own company's server or a special server, Adobe recommends that you leave this setting as specified. |
@@ -227,7 +227,7 @@ To configure the default color properties for enabling color correction when req
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account using credentials provided during provisioning.
 1. Go to **[!UICONTROL Setup > Application Setup]**.
 1. Expand the **[!UICONTROL Publish Setup]** area and select **[!UICONTROL Image Server]**. Set **[!UICONTROL Publish Context]** to **[!UICONTROL Image Serving]** when setting defaults for publish instances.
-1. Scroll to the property you must change, for example a property in the **[!UICONTROL Color Management Attributes]** area.
+1. Scroll to the property that you must change, for example a property in the **[!UICONTROL Color Management Attributes]** area.
    You can set the following color correction properties:
 
    | Property | Description |
@@ -262,7 +262,11 @@ See [Upload assets](/help/assets/add-assets.md).
 
 **To edit MIME types for supported formats:**
 
-1. In Experience Manager as a Cloud Service, select the Experience Manager as a Cloud Service logo to access the global navigation console, then go to **[!UICONTROL General > CRXDE Lite]**.
+1. Sign in to your Experience Manager as a Cloud Service as the product administrator.
+1. In Experience Manager as a Cloud Service , select the Experience Manager as a Cloud Service logo to access the global navigation console, then go to **[!UICONTROL General > CRXDE Lite]**. 
+
+   If you do not have access to CRXDE Lite, see [Using CRXDE Lite](/help/implementing/developing/tools/crxde.md).
+
 1. In the left rail, navigate to the following:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -274,7 +278,7 @@ See [Upload assets](/help/assets/add-assets.md).
 
    * Double-tap the **[!UICONTROL enabled]** field. By default all asset MIME types are enabled (set to **[!UICONTROL true]**), which means the assets are synced to Dynamic Media for processing. If you want to exclude this asset MIME type from being processed, change this setting to **[!UICONTROL false]**.
 
-   * Double-tap **[!UICONTROL jobParam]** to open its associated text field. See [Supported MIME Types](/help/assets/file-format-support.md) for a list of permitted processing parameter values you can use for a given MIME type.
+   * Double-tap **[!UICONTROL jobParam]** to open its associated text field. See [Supported MIME Types](/help/assets/file-format-support.md) for a list of permitted processing parameter values that you can use for a given MIME type.
 
 1. Do one of the following:
    * Repeat steps 3-4 to edit more MIME types.
@@ -284,10 +288,11 @@ See [Upload assets](/help/assets/add-assets.md).
 
 #### Add MIME types for unsupported formats {#adding-mime-types-for-unsupported-formats}
 
-You can add custom MIME types for unsupported formats in Experience Manager Assets. To ensure that any new node you add in CRXDE Lite is not deleted by Experience Manager, move the MIME type before `image_`. Also, ensure that its enabled value is set to **[!UICONTROL false]**.
+You can add custom MIME types for unsupported formats in Experience Manager Assets. To ensure any new node that you add in CRXDE Lite is not deleted by Experience Manager, move the MIME type before `image_`. Also, ensure that its enabled value is set to **[!UICONTROL false]**.
 
 **To add MIME types for unsupported formats:**
 
+1. Sign in to your Experience Manager as a Cloud Service as the product administrator.
 1. From Experience Manager as a Cloud Service, go to **[!UICONTROL Tools > Operations > Web Console]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
@@ -316,6 +321,8 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
 1. Return to the browser tab that has your open Experience Manager as a Cloud Service console.
 1. From Experience Manager as a Cloud Service, go to **[!UICONTROL Tools > General > CRXDE Lite]**.
+
+   If you do not have access to CRXDE Lite, see [Using CRXDE Lite](/help/implementing/developing/tools/crxde.md).
 
    ![Tools > General > CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
@@ -369,6 +376,12 @@ See also [Adding MIME types for unsupported formats](#adding-mime-types-for-unsu
 
 The Granite Workflow queue is used for non-transient workflows. In Dynamic Media, it used to process video with the **[!UICONTROL Dynamic Media Encode Video]** workflow.
 
+>[!NOTE]
+>
+>You must be signed in to Experience Manager as a Cloud Service as the product administrator to complete this task.
+
+If you do not have access to OSGi, see [OSGi Configuration](/help/implementing/developing/components/overview.md#osgi-configuration).
+
 **To update the predefined Granite Workflow Queue (video assets) worker threads:**
 
 1. Navigate to `https://<server>/system/console/configMgr` and search for **Queue: Granite Workflow Queue**.
@@ -390,6 +403,10 @@ The Granite Workflow queue is used for non-transient workflows. In Dynamic Media
 #### Update the predefined Granite Transient Workflow Queue worker threads {#update-granite-transient-workflow-queue-worker-threads-images}
 
 The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asset]** workflow. In Dynamic Media, it is used for image and non-video asset ingestion and processing.
+
+>[!NOTE]
+>
+>You must be signed in to Experience Manager as a Cloud Service as the product administrator to complete this task.
 
 **To update the predefined Granite Transient Workflow queue worker threads:**
 
@@ -414,7 +431,11 @@ The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asse
 
 #### Update the maximum upload connections to the Dynamic Media Classic (Scene7) server {#update-max-s7-upload-connections}
 
-The Dynamic Media Classic (Scene7)) Upload Connection setting synchronizes Experience Manager assets to Dynamic Media Classic servers.
+The Dynamic Media Classic (Scene7) Upload Connection setting synchronizes Experience Manager assets to Dynamic Media Classic servers.
+
+>[!NOTE]
+>
+>You must be signed in to Experience Manager as a Cloud Service as the product administrator to complete this task.
 
 **To update the maximum upload connections to the Dynamic Media Classic (Scene7) server:**
 

@@ -7,7 +7,7 @@ exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 
 ## Getting Started {#getting-started}
 
-Users have the ability to reliably determine if all of the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. This validation feature works by comparing a digest of the nodes that were involved during extraction, with a digest of nodes that were involved during ingestion. If there are any node paths included in the extraction digest that are missing from the ingestion digest, the validation is considered to have failed, and additional manual validation may be necessary.
+Users have the ability to reliably determine if all of the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. This validation feature works by comparing a digest of the paths of all nodes that were involved during extraction, with a digest of the paths of all nodes that were involved during ingestion. If there are any node paths included in the extraction digest that are missing from the ingestion digest, the validation is considered to have failed, and additional manual validation may be necessary.
 
 >[!INFO]
 >
@@ -38,11 +38,11 @@ For a graphical illustration of this, please refer to the examples below:
 
 * **Extraction (Overwrite)**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
 
 * **Ingestion (Wipe)**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
 * **Notes**
 
@@ -52,11 +52,11 @@ For a graphical illustration of this, please refer to the examples below:
 
 * **Extraction**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
 * **Ingestion**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
 * **Notes**
 
@@ -121,28 +121,16 @@ Migration validation took 0 minutes
 
 The above failure example was achieved by running an ingestion, and then re-running the same ingestion again with Wipe disabled, such that no nodes were involved during ingestion — everything was already present on the target.
 
-In addition to being included in the ingestion log, the validation report can also be accessed from the Content Transfer Tool user interface. To do so, select a migration set, and click the **Validate** button from the action bar:
+In addition to being included in the ingestion log, the validation report can also be accessed from the **Ingestion Jobs** user interface in Cloud Acceleration Manager. To do so, click on the three dots (**...**)  then click on **Validation report** in the drop down to view the validation report. 
 
 
-![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
-
-The Validation Logs dialog will open:
-
-![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidationlogs.png)
-
-Use the **Validation Publish/Author Report** button to view the validation report for the most recent ingestion to the given tier of your target environment. See below an example from a small publish ingestion:
-
-![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidationreport.png)
-
->[!NOTE]
->
->The **Validation Publish/Author Report** link will appear once the ingestion is complete. Additionally, the validation reports are persisted, so they do not expire after ingestion completes, like the ingestion logs do. 
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
 ## Troubleshooting {#troubleshooting}
 
 ### Validation failed. What now? {#validation-fail}
 
-The first step is to determine if ingestion really did fail, or if the extracted content is already present on the target environment. This can occur if an ingestion is repeated with the **Wipe existing content on Cloud instance before ingestion** otpion disabled.
+The first step is to determine if ingestion really did fail, or if the extracted content is already present on the target environment. This can occur if an ingestion is repeated with the **Wipe existing content on Cloud instance before ingestion** option disabled.
 
 To verify, choose a path from the validation report and check if it is present on the target environment. If this is a publish environment, you may be limited to checking pages and assets directly. Please open a ticket with Customer Care if you need assistance with this step.
 

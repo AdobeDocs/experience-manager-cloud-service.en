@@ -2,7 +2,7 @@
 title: Manage digital assets
 description: Learn about various asset management and editing methods
 contentOwner: AG
-mini-toc-levels: 1
+mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
@@ -17,7 +17,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 >[!NOTE]
 >
->* Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Marketing Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
+>* Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Experience Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
 >* Experience Manager does not allow using `subassets` word as the name of a folder. It is a keyword reserved for node that contain subassets for compound assets
 
 1. Navigate to the place in your digital assets folder where you want to create a new folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
@@ -38,10 +38,6 @@ See [add digital assets to Experience Manager](add-assets.md).
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
 If a DAM user uploads one or more assets that already exist in the repository, [!DNL Experience Manager] detects the duplication and notifies the user. Duplicate detection is disabled by default as it can have performance impact depending on size of repository and number of assets uploaded.
-
->[!NOTE]
->
->This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information to enable the feature for your environment.
 
 To enable the feature:
 
@@ -604,7 +600,7 @@ The versioning functionality lets you do the following:
 
    ![compare_versions](assets/compare_versions.png)
 
-### Starte a workflow on an asset {#starting-a-workflow-on-an-asset}
+### Start a workflow on an asset {#starting-a-workflow-on-an-asset}
 
 1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
 1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.

@@ -47,21 +47,50 @@ Your account will have been configured with any privileges that you need. If you
 
 The first time you log in a small online tutorial will highlight some of the main features of the user interface.
 
-You can then use the Navigation Panel to access key areas of AEM. For Content Fragments you will be using the **Assets Console**. 
+You can then use the Navigation Panel to access key areas of AEM. For Content Fragments you will be using the **Content Fragments** console (for some actions you will also use the **Assets** console). 
 
+The Navigation Panel can be opened by selecting the Adobe icon at the top left, followed by the small compass icon.
+
+<!--
 The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
 
 ![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
+--> 
 
 >[!NOTE]
->Although Content Fragments are a feature of AEM **Sites**, they are found in the **Assets** console. This is a technical detail that should not affect you, but might be useful to know.
+>Although Content Fragments are a feature of AEM **Sites**, they are saved as **Assets**. This is a technical detail that should not affect you, but might be useful to know.
 
-Within the console you can select folders to navigate to your Content Fragment, or the breadcrumbs (in the header) to navigate back up the tree.
+Within the console you can select folders in the left panel to navigate to your Content Fragment. You can also filter and/or search.
 
-![Breadcrumbs](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
+![Content Fragments console](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
 
 ### Actions, Selecting, Viewing {#actions-selecting-viewing}
 
+In the **Content Fragments** console a range of actions are available for your content fragments from the toolbar:
+
+<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
+
+* **Open in Assets**
+* **Create**
+* The **Referenced By** column also provides a direct link to show all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages.
+* Hovering over the folder name will show the JCR path.
+
+After selection of your fragment all appropriate actions are available:
+
+<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
+
+* **Open**
+* **Publish** (and **Unpublish**)
+* **Copy**
+* **Move**
+* **Rename**
+* **Delete**
+
+>[!NOTE]
+>
+>Actions such as Publish, Unpublish, Delete, Move, Rename, Copy, trigger an asynchronous job. The progress of that job can be monitored via the AEM Async Jobs UI.
+
+<!--
 The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
 
 The Quick Actions are available for a single resource, see **Basel** in the example below:
@@ -79,6 +108,7 @@ You can select the format for viewing your resources with the View Selector:
 You can view additional information about items using the Rail Selector. This also gives access to additional actions.
 
 ![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
+--> 
 
 ## Authoring Content Fragments {#authoring-content-fragments}
 
@@ -92,7 +122,7 @@ Unless you have very few Content Fragments you will want to organize them - so t
 
 #### Creating a Folder {#creating-folder}
 
-You can do this by creating a series of folders within **Files** section of the Assets console. Select the **Create** option (top right), followed by **Folder**:
+You can do this by creating a series of folders within **Files** section of the **Assets** console. Select the **Create** option (top right), followed by **Folder**:
 
 ![Create Folder option](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -130,6 +160,21 @@ You will probably be given an initial folder where you can create your folders. 
 
 ### Creating a Content Fragment {#creating-fragment}
 
+In the **Content Fragments** console you can use **Create** to open the **New Content Fragment** dialog:
+
+![Content Fragments console - Creating a new fragment](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
+
+Specify the:
+
+* **Location**
+* **Content Fragment model**
+* **Title**
+* **Name**
+* **Description**
+
+Then confirm with either **Create** or **Create and open**.
+
+<!--
 Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
 
 ![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
@@ -143,10 +188,11 @@ After continuing with **Next** you can supply the details (**Basic** and **Advan
 ![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
 Confirm with **Create** and you can then **Open** your fragment in the editor.
+-->
 
 ### Editing a Fragment {#editing-fragment}
 
-You can open a fragment immediately after creating it, or by selecting it from the Assets console.
+You can open a fragment immediately after creating it, or by selecting it from the Content Fragments console (also from the Assets console).
 
 When the editor first opens you'll see:
 
@@ -211,7 +257,7 @@ OK, this might seem a slightly strange section, but once you open the Content Fr
 
 Once you have completed your fragment you can **Publish** it so that it is available to the headless applications.
 
-The publish actions are available in the editor (or from the toolbar of the **Assets** console):
+The publish actions are available in the editor (or from the toolbar of either the **Content Fragments** console or the **Assets** console):
 
 ![Content Fragment Editor - My Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
@@ -243,23 +289,23 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
 
     * [Manage Publication](/help/assets/manage-publication.md#manage-publication) 
 
-* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
  
-  * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
+  * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-    * [Apply the Configuration to your Assets Folder](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * [Apply the Configuration to your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
   
-    * [Creating a Content Fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+    * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
   
-  * [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
+  * [Variations - Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-  * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-    * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
+    * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
   
-    * [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#properties)
+    * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
-    *  [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+    *  [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 * Getting Started Guides
   * [Creating an Assets Folder Headless Setup](/help/headless/setup/create-assets-folder.md)
