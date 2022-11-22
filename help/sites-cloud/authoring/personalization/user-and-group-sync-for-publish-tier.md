@@ -53,7 +53,7 @@ Login can be implemented with the following two approaches:
 Customers can write their own custom components. To learn more, consider becoming familiar with:
 
 * The [Sling Authentication Framework](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html) 
-* And consider [asking the AEM Community Experts session](http://bit.ly/ATACEFeb15) about login.
+* And consider [asking the AEM Community Experts session](https://bit.ly/ATACEFeb15) about login.
 
 ### Integration with an Identity Provider {#integration-with-an-idp}
 
