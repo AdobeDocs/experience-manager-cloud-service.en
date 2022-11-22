@@ -1,19 +1,25 @@
 ---
 title: Manage Your Demo Sites
 description: Learn about the tools available to help you manage your demo sites and how to remove them.
+exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 ---
-
 # Manage Your Demo Sites {#manage-demo-sites}
 
 Learn about the tools available to help you manage your demo sites and how to remove them.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Quick Site Creation journey, [Create Site,](create-site.md) you created a new demo site based on the templates of the Reference Demo Add-On. You should now:
+In the previous document of the AEM Reference Demos Add-On journey, [Create Site,](create-site.md) you created a new demo site based on the templates of the Reference Demo Add-On. You should now:
 
 * Understand how to access the AEM authoring environment.
 * Know how to create a site based on a template.
 * Understand the basics of navigating the site structure and editing a page.
+
+If you also [enabled AEM Screens for your demo site,](screens.md) you should also:
+
+* Know the basics of AEM Screens.
+* Understand the We.Cafe demo content.
+* Know how to configure AEM Screens for We.Cafe.
 
 Now that you have your own demo site to explore, this article describes the tools available to help you manage your demo sites and how to remove them.
 

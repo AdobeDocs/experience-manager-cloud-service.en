@@ -256,7 +256,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 | URL  |  `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
 | Protocol  | HTTP/1.1  |
 | HTTP response status  | 200  |
-| HTTP request time in milliseconds  | 1141  |
+| Size of the response body in bytes  | 1141  |
 | Referrer  | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"`  |
 | User agent  | `"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"`  |
 
@@ -543,18 +543,22 @@ The network bandwidth associated with logs sent to Splunk are considered part of
 
 In the support request, customers should indicate:
 
-* Splunk HEC endpoint address
+* Splunk HEC endpoint address. This endpoint must have a valid SSL certificate and be publicly accessible.
 * The Splunk index
 * The Splunk port 
 * The Splunk HEC token. See [this page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) for more information.
 
-The properties above should be specified for each relevant program/environment type combination.  For example, if a customer wanted dev, staging, and production environments, they should provide three sets of information, as indicated below. 
+The properties above should be specified for each relevant program/environment type combination. For example, if a customer wanted dev, staging, and production environments, they should provide three sets of information, as indicated below. 
 
 >[!NOTE]
 >
 >Splunk forwarding for sandbox program environments is not supported.
 
-You should make sure that the initial request includes all dev environment that should be enabled, in addition to the stage/prod environments.
+>[!NOTE]
+>
+>The Splunk forwarding capability is not possible from a dedicated egress IP address.
+
+You should make sure that the initial request includes all dev environment that should be enabled, in addition to the stage/prod environments. Splunk must have an SSL certificate, and be public facing. 
 
 If any new dev environments created after the initial request are intended to have Splunk forwarding, but don't have it enabled, an additional request should be made.
 

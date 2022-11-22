@@ -1,6 +1,7 @@
 ---
 title: Getting Started with CIF Authoring
 description: Getting Started with CIF Authoring
+exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
 ---
 # Getting Started with AEM CIF Authoring {#getting-started}
 

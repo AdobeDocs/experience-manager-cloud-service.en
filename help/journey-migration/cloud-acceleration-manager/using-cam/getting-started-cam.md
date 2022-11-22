@@ -1,6 +1,7 @@
 ---
 title: Getting Started with Cloud Acceleration Manager
 description: This page provides an overview on how to use and get started with Cloud Acceleration Manager.
+exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 ---
 # Getting Started with Cloud Acceleration Manager {#get-started-cam}
 

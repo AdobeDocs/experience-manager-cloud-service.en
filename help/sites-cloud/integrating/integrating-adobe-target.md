@@ -30,7 +30,7 @@ Adobe Launch is necessary for managing client-side properties for both Analytics
 
 ### IMS Configuration {#ims-configuration}
 
-An IMS configuration for both Launch and Target is necessary to properly integrate Target with AEM and Launch. While the IMS configuration for Launch is preconfigured in AEM as a Cloud Service, the Target IMS configuration must be created (after Target is provisioned). Refer to [this video](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) and [this page](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html) to learn how to create the Target IMS configuration.
+An IMS configuration for both Launch and Target is necessary to properly integrate Target with AEM and Launch. While the IMS configuration for Launch is preconfigured in AEM as a Cloud Service, the Target IMS configuration must be created (after Target is provisioned). Refer to [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) and [this page](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html) to learn how to create the Target IMS configuration.
 
 ### Adobe Target Tenant ID and Adobe Target Client Code {#tenant-client}
 
@@ -131,9 +131,20 @@ To learn how to build and publish please refer to this [page](https://experience
 
 ## Changes in content structure between Classic and Touch UI configurations {#changes-content-structure}
 
-| **Change** | **Classic UI Configuration** | **Touch UI Configuration** | **Consequences** |
-|---|---|---|---|
-| Location of the Target Configuration. | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | Earlier multiple configurations were present under /etc/cloudservices/testandtarget but now a single configuration is present under a tenant. |
+<table style="table-layout:auto">
+  <tr>
+    <th>Change</th>
+    <th>Classic UI Configuration</th>
+    <th>Touch UI Configuration</th>
+    <th>Consequences</th>
+  </tr>
+  <tr>
+    <td>Location of the Target Configuration.</td>
+    <td>/etc/cloudservices/testandtarget/</td>
+    <td>/conf/tenant/settings/cloudservices/target/</td>
+    <td> Earlier multiple configurations were present under /etc/cloudservices/testandtarget but now a single configuration is present under a tenant.</td>
+  </tr>
+</table>
 
 >[!NOTE]
 >

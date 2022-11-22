@@ -7,13 +7,13 @@ exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 
 Within Adobe Experience Manager as a Cloud Service a content fragment extends a standard asset; see:
 
-* [Creating and Managing Content Fragments](/help/assets/content-fragments/content-fragments.md) and [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md) for further information about content fragments.
+* [Creating and Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) and [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md) for further information about content fragments.
 
 * [Managing Assets](/help/assets/manage-digital-assets.md) for further information about standard assets.
 
 ## Architecture {#architecture}
 
-The basic [constituent parts](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) of a content fragment are:
+The basic [constituent parts](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) of a content fragment are:
 
 * A *Content Fragment*,
 * consisting of one or more *Content Elements*,
@@ -58,10 +58,10 @@ Content fragments, based on a content fragment model, are mapped to a single ass
     `jcr:content/data/master`
 
   * Variations are stored under a sub-node that carries the name of the variation:
-    e.g. `jcr:content/data/myvariation`
+    for example, `jcr:content/data/myvariation`
 
   * The data of each element is stored in the respective sub-node as a property with the element name:
-    e.g. the content of element `text` is stored as property `text` on `jcr:content/data/master`
+    for example, the content of element `text` is stored as property `text` on `jcr:content/data/master`
 
 * Metadata and associated content is stored below `jcr:content/metadata`
   Except for the title and description, which are not considered traditional metadata and stored on `jcr:content`
@@ -74,7 +74,7 @@ As with standard assets, a content fragment is held under:
 
 #### Asset Permissions {#asset-permissions}
 
-For further details see [Content Fragment - Delete Considerations](/help/assets/content-fragments/content-fragments-delete.md).
+For further details see [Content Fragment - Delete Considerations](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
 
 #### Feature Integration {#feature-integration}
 
@@ -176,7 +176,7 @@ The following three interfaces can serve as entry points:
 
   The interface provides you with the means to:
 
-  * Manage basic data (e.g. get name; get/set title/description)
+  * Manage basic data (for example, get name; get/set title/description)
   * Access meta data
   * Access elements:
 
@@ -321,7 +321,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Example: Specifying the auto-save interval {#example-specifying-the-auto-save-interval}
 
-The [auto save interval](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions) (measured in seconds) can be defined using the configuration manager (ConfMgr):
+The [auto save interval](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#save-close-and-versions) (measured in seconds) can be defined using the configuration manager (ConfMgr):
 
 * Node: `<conf-root>/settings/dam/cfm/jcr:content`
 * Property Name: `autoSaveInterval`
