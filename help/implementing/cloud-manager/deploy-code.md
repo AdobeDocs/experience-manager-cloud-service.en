@@ -49,7 +49,7 @@ The build process deploys your code through three phases.
 
 The **Stage Deployment** phase. involves these steps.
 
-* **Validation**  - This step ensures that the pipeline is configured to use the currently available resources. E.g. testing that the configured branch exists and that the environments are available.
+* **Validation**  - This step ensures that the pipeline is configured to use the currently available resources. for example, testing that the configured branch exists and that the environments are available.
 * **Build &amp; Unit Testing** - This step runs a containerized build process.
   * Please see the document [Build Environment Details](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for details on the build environment.
 * **Code Scanning** - This step evaluates the quality of your application code.
@@ -116,6 +116,10 @@ The following steps will timeout if left waiting for user feedback:
 
 All Cloud Service deployments follow a rolling process to ensure zero downtime. Please refer to the document [How Rolling Deployments Work](/help/implementing/deploying/overview.md#how-rolling-deployments-work) to learn more.
 
+>[!NOTE]
+>
+>The Dispatcher cache is wiped out on each deployment. It is subsequently warmed up before the new publish nodes accept traffic.
+
 ## Re-Execute a Production Deployment {#Reexecute-Deployment}
 
 Re-execution of the production deployment step is supported for executions where the production deploy step has completed. The type  of completion is not important – the deployment could be cancelled, or unsuccessful. That said, the primary use case is expected to be cases where the production deployment step failed for transient reasons. Re-execution creates a new execution using the same pipeline. This new execution consists of three steps:
@@ -143,20 +147,20 @@ To identify if an execution is a re-execute execution, the trigger  field can be
 
 ### Triggering a new execution
 
-To trigger a re-execution, a PUT request needs to be made to the HAL Link <(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> on the production deploy step state. If this link is present, the execution can be restarted from that step. If it is absent, the execution cannot be restarted from that step. In the initial release, this link will only ever be present on the production deploy step but future releases may support starting the pipeline from other steps. Example:
+To trigger a re-execution, a PUT request needs to be made to the HAL Link <(<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> on the production deploy step state. If this link is present, the execution can be restarted from that step. If it is absent, the execution cannot be restarted from that step. In the initial release, this link will only ever be present on the production deploy step but future releases may support starting the pipeline from other steps. Example:
 
 ``` Javascript
  {
   "_links": {
-    "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
+    "https://ns.adobe.com/adobecloud/rel/pipeline/logs": {
       "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/logs",
       "templated": false
     },
-    "http://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
+    "https://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
       "href": "/api/program/4/pipeline/1/execution?stepId=2983530",
       "templated": false
     },
-    "http://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
+    "https://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
       "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/metrics",
       "templated": false
     },

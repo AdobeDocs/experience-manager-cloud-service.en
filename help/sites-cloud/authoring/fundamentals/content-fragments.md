@@ -145,7 +145,7 @@ If you have [associated content](/help/sites-cloud/administering/content-fragmen
 
 >[!NOTE]
 >
->There are various methods of adding [visual assets (e.g. images)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
+>There are various methods of adding [visual assets (for example, images)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ From here you can drag the assets to the required location (either to an existin
 
 ### Assets Inserted into the Fragment {#assets-inserted-into-the-fragment}
 
-If assets (e.g. images) have been inserted into the fragment itself (as [mixed-media fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
+If assets (for example, images) have been inserted into the fragment itself (as [mixed-media fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
 
 For example, for an image you can
 
