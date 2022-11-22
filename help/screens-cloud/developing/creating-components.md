@@ -1,8 +1,8 @@
 ---
 title: Creating Components
 description: AEM components are used to hold, format, and render the content made available on your webpages. Follow this page to learn about authoring channels and rendering components.
+exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
 ---
-
 # Creating Components {#creating-components}
 
 AEM components are used to hold, format, and render the content made available on your webpages.

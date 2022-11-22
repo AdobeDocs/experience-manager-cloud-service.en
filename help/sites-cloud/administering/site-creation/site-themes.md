@@ -3,8 +3,8 @@ title: Site Themes
 description: Learn how AEM site themes can be used to customize the style and design of your site.
 feature: Administering
 role: Admin
+exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 ---
-
 # Site Themes {#site-themes}
 
 Learn how AEM site themes can be used to customize the style and design of your site.
@@ -41,7 +41,7 @@ Site themes are simply packages with a logical structure that clearly reflects t
 
 ## Standard Site Theme {#standard-site-theme}
 
-Adobe provides a best-practices reference theme that you can use as a basis for creating your own theme. [The Standard Site Theme is available on GitHub.](https://github.com/adobe/aem-site-template-standard-theme-e2e)
+Adobe provides a best-practices reference theme that you can use as a basis for creating your own theme. [The Standard Site Theme is available on GitHub](https://github.com/adobe/aem-site-template-standard/tree/main/theme).
 
 ## Developing Site Themes {#developing-themes}
 

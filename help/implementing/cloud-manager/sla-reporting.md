@@ -1,45 +1,45 @@
 ---
-title: SLA Reporting - Cloud Service
-description: SLA Reporting - Cloud Service
+title: SLA Reporting
+description: Learn how to see the performance of your production AEM environment relative to the contracted Service Level Agreement (SLA).
+exl-id: 03932415-a029-4703-b44a-f86a87edb328
 ---
+
 # SLA Reporting {#sla-reporting} 
 
-Follow the sections below to learn about SLA Reporting in AEM as a Cloud Service.
+Learn how to see the performance of your production AEM environment relative to the contracted Service Level Agreement (SLA).
 
 ## Introduction {#introduction}
 
-Customers are able to see the performance of their production AEM environment relative to their contracted Service Level Agreement (SLA). This is available through a menu on the Reports tab, accessible from the main header. 
+SLA reporting data is available for every production program via the **Reports** tab. Follow these steps to access.
 
-Follow the example below, that is a graph showing the monthly SLA attainment for 2021.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-![](assets/sla-reporting-1.png)
+1. Navigate to the **Reports** tab from the **Overview** page.
 
+1. Click on the year desired to see the SLA data graphed.
 
-Rolling over a data point shows the specific values for that month.
+![SLA graph example](assets/sla-reporting-1.png)
 
-![](assets/sla-reporting-b.png)
+Roll your cursor over a data point to show the specific values for that point.
 
->[!NOTE]
->These reports will be made available to customers on a progressive basis. If you do not see the Reports option in the main navigation, contact your Adobe representative to understand when your reports will be made available.
-
-The Event Analysis section under this graph shows the set of incidents which occurred for the program during the currently selected year. 
-
-Each of the incidents has a time range, a cause, and a set of comments, as shown in the figure below.
-
-![](assets/sla-reporting-c.png)
-
+![Showing detailed data](assets/sla-reporting-b.png)
 
 ## SLA Metrics {#sla-metrics}
 
-* **Publish Tier Contract**
-   This is the SLA defined in your contract with Adobe for the publish tier.
+The graph of the selected year includes a number of data sets.
 
-* **Publish Tier Actual** 
-   This is the measured uptime of the production publish tier factoring incidents caused by Adobe or our vendors.
+* **Publish Tier Contract** - This is the SLA defined in your contract with Adobe for the publish tier.
 
-* **Author Tier Contract**
-   This is the SLA defined in your contract with Adobe for the author tier.
+* **Publish Tier Actual** - This is the measured uptime of the production publish tier factoring incidents caused by Adobe or Adobe's vendors.
 
-* **Author Tier Actual** 
-   This is the measured uptime of the production author tier factoring incidents caused by Adobe or our vendors.
+* **Author Tier Contract** - This is the SLA defined in your contract with Adobe for the author tier.
 
+* **Author Tier Actual** - This is the measured uptime of the production author tier factoring incidents caused by Adobe or Adobe's vendors.
+
+## Event Analysis {#event-analysis}
+
+The **Event Analysis** section under the graph shows the set of incidents which occurred for the program during the selected year. 
+
+Each of the incidents has a time range, a cause, and a set of comments.
+
+![Event Analysis example](assets/sla-reporting-c.png)

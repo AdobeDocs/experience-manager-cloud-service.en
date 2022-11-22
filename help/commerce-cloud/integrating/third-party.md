@@ -44,4 +44,15 @@ We recommend to use [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplat
 
 The [reference implementation](https://github.com/adobe/commerce-cif-graphql-integration-reference) is a great starting point to build the integration to your commerce solution. Although it supports GraphQL, it can also be integrated with any other type of API such as REST.
 
-This integration layer is not required if a 3rd party layer is available (e.g. Mulesoft) or the integration gets build on top of the 3rd party solution.
+This integration layer is not required if a 3rd party layer is available (for example, Mulesoft) or the integration gets build on top of the 3rd party solution.
+
+## Pre-built connectors {#connectors}
+
+Connectors provide a good starting for projects. They come with a commerce solution specific connection and default API mapping. These connectors are built by 3rd parties and not maintained by Adobe. Please reach out to the respective partner for information.
+
+* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), built by Diconium
+* [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), built by Diconium
+
+>[!TIP]
+>
+>While connectors help projects to accelerate the commerce integration, they are not plug-n-play. Enterprise commerce solutions are usually heavily customized and require a custom integration. Good knowledge of the commerce platform, Adobe Commerce GraphQL schemas, and Adobe I/O Runtime is required.

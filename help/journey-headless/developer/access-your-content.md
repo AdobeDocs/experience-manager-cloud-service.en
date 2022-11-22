@@ -236,13 +236,10 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Before starting with queries on your content you need to:
 
 * Enable your endpoint
-  * Use Tools -> Assets -> GraphQL
-  * [Enabling your GraphQL Endpoint](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+  * Use Tools -> General -> GraphQL
+  * [Enabling your GraphQL Endpoint](/help/headless/graphql-api/graphql-endpoint.md)
+    * This will also enable the GraphiQL IDE.
   
-* Install GraphiQL (if required)
-  * Installed as a dedicated package
-  * [Installing the AEM GraphiQL interface](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
-
 ### Sample Structure {#sample-structure}
 
 To actually use the AEM GraphQL API in a query, we can use the two very basic Content Fragment Model structures:
@@ -264,9 +261,10 @@ The fragment models will be used:
 
 ### Where to Test Your Queries {#where-to-test-your-queries}
 
-The queries can be entered in the GraphiQL interface, for example at:
+The queries can be entered in the GraphiQL interface. You can access the query editor from either: 
 
-* `http://localhost:4502/content/graphiql.html`
+* **Tools** -> **General** -> **GraphQL Query Editor**
+* directly; for example, `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
 
@@ -357,18 +355,18 @@ Now that you have learned how to access and query your headless content using th
   * [Variables](https://graphql.org/learn/queries/#variables)
   * [GraphQL Java libraries](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
-* [Learning to use GraphQL with AEM](/help/assets/content-fragments/graphql-api-content-fragments.md)
-  * [Enabling your GraphQL Endpoint](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
-  * [Installing the AEM GraphiQL interface](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
-* [The Sample Content Fragment Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Learning to use GraphQL with AEM - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
-  * [Sample Query - A Single Specific City Fragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
-  * [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
-  * [Sample Query - All Cities with a Named Variation](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
-* [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
-* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
-  * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
-  * [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md)
+* [Learning to use GraphQL with AEM](/help/headless/graphql-api/content-fragments.md)
+  * [Enabling your GraphQL Endpoint](/help/headless/graphql-api/graphql-endpoint.md)
+  * [Installing the AEM GraphiQL interface](/help/headless/graphql-api/graphiql-ide.md)
+* [The Sample Content Fragment Structure](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
+* [Learning to use GraphQL with AEM - Sample Content and Queries](/help/headless/graphql-api/sample-queries.md)
+  * [Sample Query - A Single Specific City Fragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+  * [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+  * [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+* [Enable Content Fragment Functionality in Configuration Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+  * [JSON output](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
 * [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
 * [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [Getting Started with AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - A short video tutorial series giving an overview of using AEM's headless features, including content modeling and GraphQL.

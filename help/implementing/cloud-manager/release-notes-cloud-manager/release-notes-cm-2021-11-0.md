@@ -1,21 +1,23 @@
 ---
 title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.11.0
-description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.11.0
+description: These are the release notes for Cloud Manager in AEM as a Cloud Service release 2021.11.0
 feature: Release Information
+exl-id: 98fd6d8a-ddc2-4f53-9dfc-d8e21af0c14d
 ---
 # Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.11.0 {#release-notes}
 
 This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
->To see the current Release Notes for Adobe Experience Manager as a Cloud Service, click [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>
+>Refer to [this page](/help/release-notes/release-notes-cloud/release-notes-current.md) for the current release notes for Adobe Experience Manager as a Cloud Service.
 
 ## Release Date {#release-date}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.11.0 is November 04, 2021.
+The release date for Cloud Manager in AEM as a Cloud Service 2021.11.0 is November 4, 2021.
 The next release is planned for December 16, 2021.
 
-### What's New {#what-is-new}
+## What's New {#what-is-new}
 
 * Users can now leverage new Front End pipelines to exclusively deploy front end code in an accelerated manner. See [Cloud Manager Front End Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) to learn more.
 
@@ -44,7 +46,7 @@ The next release is planned for December 16, 2021.
 
 * The quality issue CSV file will now contain the timestamp for each quality issue. 
 
-### Bug Fixes {#bug-fixes}
+## Bug Fixes {#bug-fixes}
 
 * Certain unorthodox build configurations resulted in unnecessary files being stored in the pipeline's Maven artifact cache which resulted in extraneous network I/O when starting and stopping the build container. 
 
@@ -54,5 +56,4 @@ The next release is planned for December 16, 2021.
 
 * Error message when max number of repositories has been reached did not specify the reason for the error.
 
-* In rare cases, pipelines were failing due to inappropriate retry handling of certain response codes. 
-
+* In rare cases, pipelines were failing due to inappropriate retry handling of certain response codes.

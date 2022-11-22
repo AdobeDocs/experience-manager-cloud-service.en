@@ -3,6 +3,7 @@ title: Validating and Debugging using Dispatcher Tools
 description: Validating and Debugging using Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
+
 ---
 # Validating and Debugging using Dispatcher Tools {#Dispatcher-in-the-cloud}
 
@@ -44,6 +45,7 @@ The structure of the project's Dispatcher subfolder is as follows:
     ├── cache
     │   ├── default_invalidate.any
     │   ├── default_rules.any
+    │   ├── marketing_query_parameters.any
     │   └── rules.any
     ├── clientheaders
     │   ├── clientheaders.any
@@ -72,6 +74,10 @@ The following files are customizable and will get transferred to your Cloud inst
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
 You can have one or more of these files. They contain `<VirtualHost>` entries that match host names and allow Apache to handle each domain traffic with different rules. Files are created in the `available_vhosts` directory and enabled with a symbolic link in the `enabled_vhosts` directory. From the `.vhost` files, other files like rewrites and variables will be included.
+
+>[!NOTE]
+>
+>In flexible mode you should use relative paths instead of absolute paths.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -120,6 +126,8 @@ It is recommended that the above files reference the immutable files listed belo
 * `conf.d/available_vhosts/default.vhost`
 
 Contains a sample virtual host. For your own virtual host, create a copy of this file, customize it, go to `conf.d/enabled_vhosts` and create a symbolic link to your customized copy.
+
+Ensure that a virtual host is always available that matches ServerAlias `\*.local` and also localhost, needed for internal Adobe processes.
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -217,6 +225,10 @@ The script has the following three phases:
 
 During a Cloud Manager deployment, the `httpd -t` syntax check will be executed as well and any errors will be included in the Cloud Manager `Build Images step failure` log.
 
+>[!NOTE]
+>
+>See the [Automatic reloading and validation](#automatic-loading) section for an efficient alternative to running `validate.sh` after each configuration modification.
+
 ### Phase 1 {#first-phase}
 
 If a directive is not allowlisted, the tool logs an error and returns a non-zero exit code. Also, it further scans all files with pattern `conf.dispatcher.d/enabled_farms/*.farm` and checks that:
@@ -268,12 +280,12 @@ There are four sections in your farm configuration where you're allowed to inclu
 | `/rules`         | `../cache/rules.any`                 |
 | `/virtualhosts`  | `../virtualhosts/virtualhosts.any`   |
 
-Alternatively, you can include the **default** version of those files, whose names are prepended with the word `default_`, e.g. `../filters/default_filters.any`.
+Alternatively, you can include the **default** version of those files, whose names are prepended with the word `default_`, for example, `../filters/default_filters.any`.
 
 **include statement at (...), outside any known location: ...**
 
 Apart from the six sections mentioned in the paragraphs above, you are not allowed
-to use the `$include` statement, e.g. the following would generate this error:
+to use the `$include` statement, for example, the following would generate this error:
 
 ```
 /invalidate {
@@ -288,7 +300,7 @@ This error is generated when you don't specify an include for `/renders` and `/a
 
 **filter must not use glob pattern to allow requests**
 
-It is not secure to allow requests with a `/glob` style rule, which is matched against the complete request line, e.g.
+It is not secure to allow requests with a `/glob` style rule, which is matched against the complete request line, for example,
 
 ```
 
@@ -302,13 +314,26 @@ This statement is meant to allow requests for `css` files, but it also allows re
 
 **included file (...) does not match any known file**
 
-There are two types of files in your Apache virtual host configuration that can be specified as includes: rewrites and variables.
-The included files need to be named as follows:
+By default, two types of files in your Apache virtual host configuration can be specified as includes: rewrites and variables.
 
 | Type      | Include file name               |
 |-----------|---------------------------------|
 | Rewrites  | `conf.d/rewrites/rewrite.rules` |
 | Variables | `conf.d/variables/custom.vars`  |
+
+In flexible mode, other files can also be included, as long as they are located in subdirectories (at any level) of `conf.d` directory prefixed as follows.
+
+| Include file upper directory prefix |
+|-------------------------------------|
+| `conf.d/includes`                   |
+| `conf.d/modsec`                     |
+| `conf.d/rewrites`                   |
+
+For exmaple, you can include a file in some newly-created directory under `conf.d/includes` directory as follows:
+
+```
+Include conf.d/includes/mynewdirectory/myincludefile.conf
+```
 
 Alternatively, you can include the **default** version of the rewrite rules, whose name is `conf.d/rewrites/default_rewrite.rules`.
 Note, that there is no default version of the variables files.
@@ -351,7 +376,7 @@ This phase checks the apache syntax by starting Docker in an image. Docker must 
 >
 >Windows users need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer.
 
-This phase can also be run independently through `bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080`.
+This phase can also be run independently through `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
 During a Cloud Manager deployment, the `httpd -t` syntax check will also be executed and any errors will be included in the Cloud Manager Build Images step failure log.
 
@@ -417,6 +442,43 @@ When running Dispatcher locally, logs are printed directly to the terminal outpu
 
 Logs for cloud environments are exposed through the logging service available in Cloud Manager.
 
+### Automatic reloading and validation {#automatic-reloading}
+
+>[!NOTE]
+>
+>Due to a Windows operating system limitation, this feature is available only for macOS and Linux users.
+
+Instead of running local validation (`validate.sh`) and starting the docker container (`docker_run.sh`) each time the configuration is modified, you can alternatively run the `docker_run_hot_reload.sh` script.  The script watches for any changes to the configuration and will automatically reload it and re-run the validation. By using this option you can save a significant amount of time when debugging.
+
+You can run the script by using the following command: `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
+
+Note that the first lines of output will look similar to what would run for `docker_run.sh`, for example:
+
+```
+~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
+opt-in USE_SOURCES_DIRECTLY marker file detected
+Running script /docker_entrypoint.d/10-check-environment.sh
+Running script /docker_entrypoint.d/15-check-pod-name.sh
+Running script /docker_entrypoint.d/20-create-docroots.sh
+Running script /docker_entrypoint.d/30-wait-for-backend.sh
+Waiting until host.docker.internal is available
+host.docker.internal resolves to 192.168.65.2
+Running script /docker_entrypoint.d/40-generate-allowed-clients.sh
+Running script /docker_entrypoint.d/50-check-expiration.sh
+Running script /docker_entrypoint.d/60-check-loglevel.sh
+Running script /docker_entrypoint.d/70-check-forwarded-host-secret.sh
+Running script /docker_entrypoint.d/80-frontend-domain.sh
+Running script /docker_entrypoint.d/zzz-import-sdk-config.sh
+WARN Mon Jul  4 09:53:54 UTC 2022: Pseudo symlink conf.d seems to point to a non-existing file!
+INFO Mon Jul  4 09:53:55 UTC 2022: Copied customer configuration to /etc/httpd.
+INFO Mon Jul  4 09:53:55 UTC 2022: Start testing
+Cloud manager validator 2.0.43
+2022/07/04 09:53:55 No issues found
+INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
+INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+
+```
+
 ## Different Dispatcher configurations per environment {#different-dispatcher-configurations-per-environment}
 
 Currently, the same Dispatcher configuration is applied to all AEM as a Cloud Service environments. The runtime will have an environment variable `ENVIRONMENT_TYPE` that contains the current run mode (dev, stage or prod) as well as a define. The define can be `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` or `ENVIRONMENT_PROD`. In the Apache configuration, the variable can be used directly in an expression. Alternatively, the define can be used to build logic:
@@ -447,6 +509,8 @@ In the Dispatcher configuration, the same environment variable is available. If 
 }
 
 ```
+
+Alternatively, you can use Cloud Manager environment variables in your httpd/dispatcher configuration, although not environment secrets. This method is especially important if a program has multiple dev environments and some of those dev environments have different values for httpd/dispatcher configuration. The same ${VIRTUALHOST} syntax would be used as in the example above, however the Define declarations in the above variables file would not be used. Read the [Cloud Manager documentation](/help/implementing/cloud-manager/environment-variables.md) for instructions on configuring Cloud Manager environment variables.
 
 When testing your configuration locally, you can simulate different environment types by passing the variable `DISP_RUN_MODE` to the `docker_run.sh` script directly:
 
@@ -491,11 +555,14 @@ $ docker exec d75fbd23b29 httpd-test
 With the Cloud Manager 2021.7.0 release, new Cloud Manager programs generate maven project structures with [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) or higher,which includes the file **opt-in/USE_SOURCES_DIRECTLY**. This removes previous limitations of the [legacy mode](/help/implementing/dispatcher/validation-debug-legacy.md) around the number and size of files, also causing the SDK and runtime to validate and deploy the configuration in an improved way. If your dispatcher configuration does not have this file, it is highly recommended that you migrate. Use the following steps to ensure a safe transition:
 
 1. **Local testing.** Using the most recent dispatcher tools SDK, add the folder and file `opt-in/USE_SOURCES_DIRECTLY`. Follow the "local validation" instructions in this article to test that the dispatcher works locally.
-2. **Cloud development testing:**
+1. **Cloud development testing:**
    * Commit the file `opt-in/USE_SOURCES_DIRECTLY` to a git branch that is deployed by the non-production pipeline to a Cloud development environment.
    * Use Cloud Manager to deploy to a Cloud development environment.
    * Test thoroughly. It is critical to validate that your apache and dispatcher configuration behaves as you expect before deploying changes to higher environments. Check all behavior related to your custom configuration! File a customer support ticket if you believe the deployed dispatcher configuration does not reflect your custom configuration.
-3. **Deploy to production:**
+   >[!NOTE]
+   >
+   >In flexible mode you should use relative paths instead of absolute paths.
+1. **Deploy to production:**
    * Commit the file `opt-in/USE_SOURCES_DIRECTLY` to a git branch that is deployed by the production pipeline to the Cloud stage and production environments.
    * Use Cloud Manager to deploy to staging.
    * Test thoroughly. It is critical to validate that your apache and dispatcher configuration behaves as you expect before deploying changes to higher environments. Check all behavior related to your custom configuration! File a customer support ticket if you believe the deployed dispatcher configuration does not reflect your custom configuration.

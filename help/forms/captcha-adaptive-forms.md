@@ -49,7 +49,7 @@ To implement the reCAPTCHA service in [!DNL AEM Forms]:
 
 1. Configure the cloud service for reCAPTCHA.
 
-    1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) &gt; **[!UICONTROL Cloud Services]**.
+    1. On your Experience Manager author instance, go to ![tools-1](assets/tools-1.png) &gt; **[!UICONTROL Cloud Services]**.
     1. Tap **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container created in the previous step and tap **[!UICONTROL Create]**.
     1. Specify Name, Site key, and Secret Key for reCAPTCHA service and tap **[!UICONTROL Create]** to create the cloud service configuration.
     1. In the Edit Component dialog, specify the site and secret keys obtained in step 1. Tap **[!UICONTROL Save Settings]** and then tap **[!UICONTROL OK]** to complete the configuration.
@@ -78,11 +78,14 @@ To use CAPTCHA in Adaptive Forms:
 
 1. Select the Captcha component you added and tap ![cmppr](assets/configure-icon.svg) to edit its properties.
 1. Specify a title for the CAPTCHA widget. The default value is **[!UICONTROL Captcha]**. Select **[!UICONTROL Hide title]** if you do not want title to appear.
-1. From the **[!UICONTROL Captcha service]** drop-down, select **[!UICONTROL reCaptcha]** to enable reCAPTCHA service if you configured it as described in [ReCAPTCHA service by Google](#google-recaptcha). Select a configuration from the Settings drop-down. Also, select the size as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget.
+1. From the **[!UICONTROL Captcha service]** drop-down, select **[!UICONTROL reCaptcha]** to enable reCAPTCHA service if you configured it as described in [ReCAPTCHA service by Google](#google-recaptcha). Select a configuration from the Settings drop-down.
+1. Select the type as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. You can also select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity. The protected by reCAPTCHA badge, displayed below, is displayed on the protected forms.  
+
+    ![Google protected by reCAPTCHA badge](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >Do not select **[!UICONTROL Default]** from the Captcha service drop-down as the default AEM CAPTCHA service is deprecated.
+   >Do not select **[!UICONTROL Default]** from the Captcha service drop-down as the default Experience Manager CAPTCHA service is deprecated.
 
 1. Save the properties.
 
@@ -124,7 +127,7 @@ The following is an example of a `ValidateCAPTCHA` API to validate CAPTCHA using
 
 ```javascript
 if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
-    	GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
+     GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
         String formPath = slingRequest.getResource().getPath();
         String captchaData = slingRequest.getParameter(GuideConstants.GUIDE_CAPTCHA_DATA);
         if (!apiProvider.validateCAPTCHA(formPath, captchaData).isCaptchaValid()){

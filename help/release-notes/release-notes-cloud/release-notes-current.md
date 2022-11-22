@@ -17,121 +17,100 @@ The following section outlines the general Release Notes for the current (latest
 >
 >See [Recent Documentation Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) for details of documentation updates not directly related to a release.
 
+>[!CAUTION]
+>
+>**Planned Maintenance Exclusion Period**
+>
+> No automatic AEMaaCS maintenance will be executed during the following timeframes, beginning and ending at midnight (00:00) CET:
+>
+>* Monday, November 21 until Monday, December 5
+>* Monday, December 19 until Tuesday, January 3
+
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2021.11.0) is December 16, 2021.
-The following release (2022.1.0) is on January 27, 2022.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current monthly release (2022.10.0) is November 10, 2022. The next monthly release (2023.1.0) is planned for January 26, 2023.
 
 ## Release Video {#release-video}
 
-Have a look at the [December 2021 Release Overview](https://video.tv.adobe.com/v/339278) video for a summary of the features added in the 2021.11.0 (November 2021) release.
+Have a look at the October 2022 Release Overview video for a summary of the features added in the 2022.10.0 release:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3409801/?quality=12)
+
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+
+### New features in [!DNL Sites] {#sites-features}
+ 
+* The [Personalization Tab for Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) allows segmentation specification capabilities to the Experience Fragment Editor as well as the flexibility to create nested Experience Fragments whereby headers and footers variations can be created for multiple segments. Prior to the launch of this feature, personalization offered by AEM is only available for site pages, but not for Experience Fragments
+
+* The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now enables users to efficiently manage translated content fragments. A 1-click access has been provided to view all the language copies as well. Users are also able to filter the table view by the locale of their interest.
+
+![Content Fragments Languages](/help/release-notes/assets/cfconsole-languages.png)
+
+* Further reduce page load time for visitors by optimizing image sizes settings in templates. Find more information for the image component at [Core WCM Component](https://github.com/adobe/aem-core-wcm-components)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* Dynamic Media Image Smart Crop and Swatch is now powered by latest Sensei services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits will be preserved on reprocessing, if there is no change in the width and height in the Image Profile.
+* Experience Manager Assets now allows you to upload documents in other supported format types and[ preview them using the included Document Cloud viewer](/help/assets/manage-pdf-documents.md). The supported format types include TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, and XLSX.
 
-### New features in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
+  ![PDF rendition for other formats](/help/release-notes/assets/multi-page-other-formats.png)
 
-* [!DNL Dynamic Media] - You can now use AEM Dynamic Media interface to configure General Settings and Publish Setup instead of having to go through the Dynamic Media Classic desktop application.
 
-* [!DNL Dynamic Media] now supports ingestion, preview, playback and publish for MXF videos. Annotation and shoppable video for MXF videos is not yet supported.
+### New features in [!DNL Assets] prerelease {#prerelease-features-assets}
 
-* After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the [update, delete, rename, and move operations](../../assets/use-assets-across-connected-assets-instances.md) on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment.
+* Experience Manager Assets now uses an improved artificial intelligence framework for image Smart Tags. This content intelligence results in better relevancy and precision of Smart Tags available to all image assets on ingestion. In addition, orientation information is populated in `cq:tags`, which enables better Search results using the Orientation filter.
+
+   If you are interested in participating in the Beta, [fill this form](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) by November 14.
+
+* Experience Manager Assets now [supports SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) in addition to the Access Key for authentication while connecting to Azure Blob Storage data source for ingesting assets using the Bulk Import tool.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### What is new in [!DNL Forms] {#what-is-new-forms}
+### New features available in [!DNL Forms] {#new-features-available-in-channel}
 
-* **Externalize AEM Workflow data for secure processing**: You can store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) elements in a customer-managed repository for secure processing. The data elements and workflow variables are not stored in AEM repository and are fetched on demand from a customer-managed repository while processing the Workflow.
+
+* [Adaptive Forms wizard](/help/forms/creating-adaptive-form.md): AEM Forms provides business user friendly wizard to quickly author Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form. This release brings following improvements to the wizard:
+
+  * Select or deselect fields: The wizard allows you to create an Adaptive Form based on JSON and Form Data Model schemas. You can now select subset of fields within a schema to include in an Adaptive Form. The selected fields are converted to corresponding Adaptive Form data capture components to quickly create the desired adaptive forms.
+
+  * Use Static Templates: Customers with existing investments in legacy static templates can continue their journey of cloud adoption by using static templates in wizard to author adaptive forms. This provides additional time to customers to migrate old static templates to modern editable templates.
+
+* [Remove hidden fields from a Document of Record (DoR) while server-side processing](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): You can generate the document of record PDF for end users containing only those fields which were visible to them during data capture experience. Upon form submission, the server validates which fields were hidden to the end user based on submitted data and excludes from document of record for consistency.
 
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) help you combine a template and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
+* **Adaptive Forms template editor**: Template editor allows you to pre-define the basic structure and appearance of Adaptive Forms of an organization. This release brings following improvements to the template editor:
+  * **[Form Data Model in template editor](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: You can associate a Form Data Model schema to an Adaptive Form template in the template editor. It helps reduce the time taken to create an Adaptive Form. The option is also added to Adaptive Forms editor to allows users to select or change Form Data Model for existing forms.
+  * **[Document of Record in template editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: You can now standardize Document of Record generation for all forms created using a template. This helps enhance compliance and standardization for org requirements.
 
-  * Generate documents by populating template files (PDF and XDP) with XML data.
-  * Generate output forms in various formats, including non-interactive PDF print streams.
-
-* **Custom fonts for Document of Record and PDF documents created with Communications APIs**: You can now use brand approved fonts in PDF documents generated using Communications APIs to align with your organizational requirements.
-
-* **Forms Portal**: You can use [Forms Portal](/help/forms/configure-forms-portal.md) to list your published adaptive forms on an AEM Sites page. It helps a site visitor discover all available forms. Moreover, the visitor can use forms portal to save and access draft of an adaptive form and look at the PDF version of a submitted adaptive form.
+* **[Launch the Adaptive Form wizard from a AEM Sites Page](/help/forms/embed-adaptive-form-aem-sites.md)**: AEM Sites page has extended support for Adaptive Forms. You can now create a new Adaptive Form or embed an existing Adaptive Form while remaining on AEM Sites page. 
+* **[Change display alignment for checkboxes and radiobutton in DoR](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: You can now set the desired alignment (Horizontal, Vertical, Same as Adaptive Forms) for checkbox and radio button on the Document of Record. This option determines the positioning of checkbox and radio button options in the Document of Record. 
 
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
 
-* Extended myAccount components that are based on Commerce's extensible Peregrine components
+* Authors can dynamically enrich product lists with Experience Fragments (example: place banner between product listings).
+* The list component now supports associated product / category pages to dynamically show related pages.
+* Support for Peregrine 12.5 components was added.
+* Support for client-side price loading in product teaser and carousel was added.
 
-![Extended myAccount components](/help/assets/CIF/extended-myAccount-components.png)
+## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
-* Authors can create ad-hoc Commerce Product Recommendations using additional recommendation types
+### What is New {#what-is-new-foundation}
 
-* Support for gift cards in AEM Storefront
+* AEM as a Cloud Service (Author Service) is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Refer to AEM as a [Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
+
+* As previously mentioned in release notes, using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is deprecated and will be enforced in the coming days. Please refer to [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) for the suggested approaches for replicating these large content packages.
+
+* Dispatcher configuration now references a file that lists common marketing campaign query parameters. Customers can choose to uncomment the parameters that are relevant to them, resulting in better caching. Refer to [Marketing campaign parameters](/help/implementing/dispatcher/caching.md#marketing-parameters) for more details.
 
 ## Cloud Manager {#cloud-manager}
 
-This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.11.0.
+You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
-### Release Date {#release-date-cm-nov}
+## Migration Tools {#migration-tools}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.11.0 is November 04, 2021.
-The next release is planned for December 09, 2021.
-
-### What's New {#what-is-new-cm-nov}
-
-* Users can now leverage new Front End pipelines to exclusively deploy front end code in an accelerated manner. See [Cloud Manager Front End Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) to learn more.
-
-   >[!IMPORTANT]
-   >You must be on AEM version `2021.10.5933.20211012T154732Z` or higher to leverage new Front End pipelines.
-
-* Code Quality pipeline duration is significantly reduced by performing the code analysis in a more efficient way without the need of building a whole AEM image. This change will roll out progressively over the weeks following the release.
-
-* The Git Commit ID will now be displayed in the pipeline execution details making it easier to track the code that was built.
-
-* Program Creation is now available via publicly exposed API.
-
-* Environment Creation is now available via publicly exposed API.
-
-* The `x-request-id` response header is now visible in the API Playground on [www.adobe.io](https://www.adobe.io/). This header is useful when submitting customer care issues for troubleshooting.
-
-* As a user, I see  Pipeline card with zero pipelines provide me with appropriate guidance. 
-
-* A new Activity Page is now available where activities such as pipeline and code executions can be viewed along with their associated details. Over time, the activities listed in this page will expand in scope along with the details provided.
-
-* A new Pipelines page with an on-hover, status popover for easy view of the summary of details is now available. Pipeline executions can be viewed along with their associated details.
-
-* The Edit Pipeline API now supports changing the environment used in the deploy phases.
-
-* An optimization in the OakPal scanning process has been introduced for large packages.
-
-* The quality issue CSV file will now contain the timestamp for each quality issue. 
-
-### Bug Fixes {#bug-fixes-nov}
-
-* Certain unorthodox build configurations resulted in unnecessary files being stored in the pipeline's Maven artifact cache which resulted in extraneous network I/O when starting and stopping the build container. 
-
-* Pipeline PATCH API fails if deploy phase does not exist.
-
-* The `ClientlibProxyResourceCheck` quality rule was producing false positive issues when there were client libraries with common base paths.
-
-* Error message when max number of repositories has been reached did not specify the reason for the error.
-
-* In rare cases, pipelines were failing due to inappropriate retry handling of certain response codes. 
-
-## Best Practices Analyzer {#bpa-release}
-
-### Release Date {#release-date-bpa}
-
-The Release Date for Best Practices Analyzer v2.1.22 is December 01, 2021.
-
-### What's New {#what-is-new-bpa}
-
-* Ability to detect and report on the version of ACS commons used.
-* Ability to detect and report on the number of users and sub-groups in a group.
-* Ability to detect and report on node property values in MongoDB that exceed 16MB.
-
-### Bug Fixes {#bug-fixes-bpa}
-
-* Detection of Foundation components was refined to reduce false negatives.
-* For AEM Forms customers, BPA messaging regarding `EMAIL_PDF_SUBMIT_ACTION` not being available on AEM as a Cloud Service has been fixed. 
+You can find a complete list of Migration Tools releases [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).

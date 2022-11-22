@@ -3,8 +3,8 @@ title: Package Manager
 description: Learn the basics of AE; package management with Package Manager.
 feature: Administering
 role: Admin
+exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
 ---
-
 # Package Manager {#working-with-packages}
 
 Packages enable the importing and exporting of repository content. You can use packages to install new content, transfer content between instances, and back up repository content.
@@ -27,7 +27,7 @@ Content packages created for AEM as a Cloud Service applications must have a cle
 
 >[!NOTE]
 >
->Packages can only contain content. Any functionality (e.g. content stored under `/apps`) must be [deployed using your CI/CD pipeline in Cloud Manager.](/help/implementing/cloud-manager/deploy-code.md)
+>Packages can only contain content. Any functionality (for example, content stored under `/apps`) must be [deployed using your CI/CD pipeline in Cloud Manager.](/help/implementing/cloud-manager/deploy-code.md)
 
 >[!IMPORTANT]
 >

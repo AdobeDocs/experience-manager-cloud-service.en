@@ -3,7 +3,7 @@ title: Develop AEM Commerce for AEM as a Cloud Service
 description: Learn how to generate a commerce-enabled AEM project using the AEM project archetype. Learn how to build and deploy the project to a local development environment using the AEM as a Cloud Service SDK.
 topics: Commerce, Development
 feature: Commerce Integration Framework
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
@@ -62,25 +62,25 @@ For local CIF Add-on development using the AEM as a Cloud Service SDK following
 
     The CIF add-on zip file contains two Sling Feature archive `.far` files. Make sure to use the correct one for AEM Author or AEM Publish, depending on how you plan to run the local AEM as a Cloud Service SDK.
 
-1. Create a local OS environment variable named `COMMERCE_ENDPOINT` holding the Magento GraphQL endpoint.
+1. Create a local OS environment variable named `COMMERCE_ENDPOINT` holding the Adobe Commerce GraphQL endpoint.
 
     Example Mac OSX:
 
     ```bash
-    export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+    export COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
     ```
 
     Example Windows:
 
     ```bash
-    set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+    set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
     ```
 
     This variable is used by AEM to connect to your commerce system. Also, the CIF add-on includes a local reverse proxy make the Commerce GraphQL endpoint available locally. This is used by the CIF authoring tools (product console and pickers) and for the CIF client-side components doing direct GraphQL calls.
 
     This variable must be set up for the AEM as a Cloud Service environment as well. For more information on variables, see [Configuring OSGi for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
-1. (Optional) To enable staged catalog features, you must create an integration token for your Magento instance. Please follow the steps at [Getting Started](./getting-started.md#staging) to create the token.
+1. (Optional) To enable staged catalog features, you must create an integration token for your Adobe Commerce instance. Please follow the steps at [Getting Started](./getting-started.md#staging) to create the token.
 
     Set an OSGi secret  with the name `COMMERCE_AUTH_HEADER` to the following value:
 
@@ -108,23 +108,20 @@ The [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) is t
 
 >[!TIP]
 >
->Use [AEM Project Archetype 24 or later](https://github.com/adobe/aem-project-archetype/releases) to generate the project.
+>Always use the latest version of the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/releases) to generate the project.
 
 See AEM Project Archetype [usage instructions](https://github.com/adobe/aem-project-archetype#usage) on how to generate an AEM project. To include CIF into the project use the `includeCommerce` option.
 
 For example:
 
 ```bash
-mvn -B archetype:generate \
- -D archetypeGroupId=com.adobe.granite.archetypes \
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
+ -D archetypeGroupId=com.adobe.aem \
  -D archetypeArtifactId=aem-project-archetype \
- -D archetypeVersion=24 \
- -D aemVersion=cloud \
+ -D archetypeVersion=35 \
  -D appTitle="My Site" \
  -D appId="mysite" \
  -D groupId="com.mysite" \
- -D frontendModule=general \
- -D includeExamples=n \
  -D includeCommerce=y
 ```
 

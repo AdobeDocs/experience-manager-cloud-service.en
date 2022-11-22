@@ -1,8 +1,8 @@
 ---
 title: Developing Sites with the Front-End Pipeline
 description: With the front-end pipeline, more independence is given to front-end developers and the development process can gain substantial velocity.
+exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 ---
-
 # Developing Sites with the Front-End Pipeline {#developing-site-with-front-end-pipeline}
 
 [With the front-end pipeline,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) more independence is given to the front-end developers and the development process can gain substantial velocity. This document describes how this process works along with some considerations to be aware of in order to get the full potential out of this process.

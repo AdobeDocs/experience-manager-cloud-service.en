@@ -29,33 +29,43 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 1. Customers can see whether the indexing job is complete on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
 
-1. Limitations:
-* Currently, index management on AEM as a Cloud Service is only supported for indexes of type lucene.
-* Only standard analyzers are supported (that is, those that are shipped with the product). Custom analyzers are not supported.
-
 ## How to Use {#how-to-use}
 
-Defining indexes can comprise of theese three use cases:
+Defining indexes can comprise of these three use cases:
 
-1. Adding a new customer index definition
-1. Updating an existing index definition. This effectively means adding a new version of an existing index definition
+1. Adding a new customer index definition.
+1. Updating an existing index definition. This effectively means adding a new version of an existing index definition.
 1. Removing an existing index that is redundant or obsolete.
 
 For both points 1 and 2 above, you need to create a new index definition as part of your custom code base in the respective Cloud Manager release schedule. For more information, see the [Deploying to AEM as a Cloud Service documentation](/help/implementing/deploying/overview.md).
 
-### Preparing the New Index Definition {#preparing-the-new-index-definition}
+## Index Names {#index-names}
+
+An index definition can be either be:
+
+1. An out-of-the-box index. One example is `/oak:index/cqPageLucene-2`.
+1. A customization of an out-of-the-box index. Such customizations are defined by the customer. One example is `/oak:index/cqPageLucene-2-custom-1`.
+1. A fully custom index. One example is `/oak:index/acme.product-1-custom-2`. To avoid naming collisions, we require that fully custom indexes have a prefix, for example, `acme.`
+
+Notice that both customization of an out-of-the-box index, as well as fully custom indexes, need to contain `-custom-`. Only fully custom indexes must start with a prefix.
+
+## Preparing the New Index Definition {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->If customizing an out of the box index, for example `damAssetLucene-6`, please copy the latest out of the box index definition from a *Cloud Service environment* and add your customizations on top, this ensures that required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-6/tika` is a required node and should be part of your customized index as well and it doesn't exist on the Cloud SDK.
+>If customizing an out-of-the-box index, for example `damAssetLucene-6`, please copy the latest out-of-the-box index definition from a *Cloud Service environment* using the CRX DE Package Manager (`/crx/packmgr/`) . Then rename the configuration, for example to `damAssetLucene-6-custom-1`, and add your customizations on top. This ensures that required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-6/tika` is required in the customized index of the cloud service. It doesn't exist on the Cloud SDK.
 
 You need to prepare a new index definition package that contains the actual index definition, following this naming pattern:
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-which then needs to go under `ui.apps/src/main/content/jcr_root`. Sub root folders are not supported as of now.
+which then needs to go under `ui.apps/src/main/content/jcr_root`. All customized and custom index definitions need to be stored under `/oak:index`.
 
-The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+The filter for the package needs to be set such that existing (out-of-the-box indexes) are retained. In the file `ui.apps/src/main/content/META-INF/vault/filter.xml`, each custom (or customized) index needs to be listed, for example as `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. If the index version is later changed, the filter needs to be adjusted.
+
+<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
 
 >[!NOTE]
 >
@@ -63,17 +73,71 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 >
 >`noIntermediateSaves=true`
 
-### Deploying Index Definitions {#deploying-index-definitions}
+## Deploying Index Definitions {#deploying-index-definitions}
 
->[!NOTE]
->
->There is a known issue with Jackrabbit Filevault Maven Package Plugin version **1.1.0** which does not allow you to add `oak:index` to modules of `<packageType>application</packageType>`. You should update to a more recent version of that plugin.
-
-Index definitions are now marked as custom and versioned:
+Index definitions are marked as custom and versioned:
 
 * The index definition itself (for example `/oak:index/ntBaseLucene-custom-1`)
 
-Therefore, in order to deploy an index, the index definition (`/oak:index/definitionname`) needs to be delivered via `ui.apps` via Git and the Cloud Manager deployment process.
+To deploy a custom or customized index, the index definition (`/oak:index/definitionname`) needs to be delivered via `ui.apps` via Git and the Cloud Manager deployment process. In the FileVault filter, for example, `ui.apps/src/main/content/META-INF/vault/filter.xml`, list each custom and customized index individually, for example `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. The custom / customized index definition itself will then be stored in the file `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, as follows:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:oak="https://jackrabbit.apache.org/oak/ns/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="[async,nrt]"
+        compatVersion="{Long}2"
+        ...
+        </indexRules>
+        <tika jcr:primaryType="nt:unstructured">
+            <config.xml jcr:primaryType="nt:file"/>
+        </tika>
+</jcr:root>
+```
+
+The above example contains a configuration for Apache Tika. The Tika configuration file would be stored under `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
+
+### Project Configuration
+
+Depending on which version of the Jackrabbit Filevault Maven Package Plugin is used, some more configuration in the project is required. When using the Jackrabbit Filevault Maven Package Plugin version **1.1.6** or newer, then the file `pom.xml` needs to contain the following section in plugin configuration for the `filevault-package-maven-plugin`, in `configuration/validatorsSettings` (just before `jackrabbit-nodetypes`):
+
+```xml
+<jackrabbit-packagetype>
+    <options>
+        <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+    </options>
+</jackrabbit-packagetype>
+```
+
+Also, in this case the `vault-validation` version needs to be upgraded to a newer version:
+
+```xml
+<dependency>
+    <groupId>org.apache.jackrabbit.vault</groupId>
+    <artifactId>vault-validation</artifactId>
+    <version>3.5.6</version>
+</dependency>
+```
+
+Then, in `ui.apps.structure/pom.xml` and `ui.apps/pom.xml`, the configuration of the `filevault-package-maven-plugin` needs to have `allowIndexDefinitions` as well as `noIntermediateSaves` enabled. The option `noIntermediateSaves` ensures that the index configurations are added atomically.
+
+```xml
+<groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    <configuration>
+        <allowIndexDefinitions>true</allowIndexDefinitions>
+        <properties>
+            <cloudManagerTarget>none</cloudManagerTarget>
+            <noIntermediateSaves>true</noIntermediateSaves>
+        </properties>
+    ...
+```
+
+In `ui.apps.structure/pom.xml`, the `filters` section for this plugin needs to contain a filter root as follows:
+
+```xml
+<filter><root>/oak:index</root></filter>
+```
 
 Once the new index definition is added, the new application needs to be deployed via Cloud Manager. Upon deployment two jobs are started, responsible for adding (and merging if needed) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. The underlying repositories are being reindexed with the new index definitions, before the Blue-Green switch is taking place.
 
@@ -113,7 +177,9 @@ During development, or when using on premise installations, indexes can be added
 
 ### Index Management With Blue-Green Deployment {#index-management-with-blue-green-deployment}
 
-With blue-green deployments, there is no downtime. However, for index management, this requires that indexes are only used by certain versions of the application. For example, when adding an index in version 2 of the application, you would not want it to be used by version 1 of the application yet. The reverse is the case when an index is removed: an index removed in version 2 is still needed in version 1. When changing an index definition, we want the old version of the index only to be used for version 1, and the new version of the index only to be used for version 2.
+With blue-green deployments, there is no downtime. During an upgrade, for some time, both the old version (for example, version 1) of the application, as well as the new version (version 2), are running concurrently, against the same repository. If version 1 requires a certain index to be available, then this index must not be removed in version 2: the index should be removed later, for example in version 3, at which point it is guaranteed that version 1 of the application is no longer running. Also, applications should be written such that version 1 works well, even if version 2 is running, and if indexes of version 2 are available.
+
+After upgrading to the new version is complete, old indexes can be garbage collected by the system. The old indexes might still stay for some time, in order to speed up rollbacks (if a rollback should be needed).
 
 The following table shows five index definitions: index `cqPageLucene` is used in both versions while index `damAssetLucene-custom-1` is used only in version 2.
 
@@ -144,11 +210,15 @@ Once Adobe changes an out-of-the-box index like "damAssetLucene" or "cqPageLucen
 
 ### Current Limitations {#current-limitations}
 
-Index management is currently only supported for indexes of type `lucene`.
+Index management is currently only supported for indexes of type `lucene`, with `compatVersion` set to `2`. Internally, other indexes might be configured and used for queries, for example Elasticsearch indexes. Queries that are written against the `damAssetLucene` index might, on AEM as a Cloud Service, in fact be executed against an Elasticsearch version of this index. This difference is invisible to the application end user, however certain tools such as the `explain` feature will report a different index. For differences between Lucene and Elasticsearch indexes, see [the Elasticsearch documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers cannot and do not need to configure Elasticsearch indexes directly.
+
+Only built-in analyzers are supported (that is, those that are shipped with the product). Custom analyzers are not supported.
+
+For best operational performance, indexes should not be excessively large. The total size of all indexes can be used as a guide: If this increases by more than 100%  after custom indexes have been added and standard indices have been adjusted on a development environment, custom index definitions should be adjusted. AEM as a Cloud Service can prevent the deployment of indexes that would negatively impact system stability and performance. 
 
 ### Adding an Index {#adding-an-index}
 
-To add an index named `/oak:index/acme.product-custom-1` to be used in a new version of the application and later, the index must be configured as follows:
+To add a fully custom index named `/oak:index/acme.product-custom-1` to be used in a new version of the application and later, the index must be configured as follows:
 
 `acme.product-1-custom-1`
 
@@ -205,17 +275,8 @@ If an index is to be removed in a later version of the application, you can defi
 
 If it is no longer needed to have a customization of an out-of-the-box index, then you must copy the out-of-the-box index definition. For example, if you have already deployed `damAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetLucene-8` index, then you must add an index `damAssetLucene-8-custom-4` that contains the index definition of `damAssetLucene-8`.
 
-## Index optimizations {#index-optimizations}
+## Index and Query Optimizations {#index-query-optimizations}
 
-Apache Jackrabbit Oak enables flexible index configurations to efficiently handle search queries. Indexes are especially important for larger repositories. Please ensure that all queries are backed by an appropriate index. Queries without a suitable index may read thousands of nodes, which is then logged as a warning. Such queries should be identified by analyzing the log files, so that index definitions can be optimized. Please see [this page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) for more information.
+Apache Jackrabbit Oak enables flexible index configurations to efficiently handle search queries. Indexes are especially important for larger repositories. Please ensure that all queries are backed by an appropriate index. Queries without a suitable index may read thousands of nodes, which is then logged as a warning.
 
-### Lucene full text index on AEM as a Cloud Service {#index-lucene}
-
-The fulltext index `/oak:index/lucene-2` can become very large because it indexes all the nodes in the AEM repository by default.  Following Adobe’s plans to retire this index it will no longer be used on the product side in AEM as a Cloud Service and it should not be required to run customer code. For AEM as a Cloud Service environments with common Lucene Indexes, Adobe is working with customers individually for a coordinated approach to compensate for this index and to use better, optimized indexes. No action is required by customers without further notice from Adobe. AEM as a Cloud Service customers will be informed by Adobe when there is a need for action with regard to this optimization. If this index is required for custom queries, as a temporary solution, a copy of this index should be created using a different name, for example, `/oak:index/acme.lucene-1-custom-1`, as described [here](/help/operations/indexing.md).
-This optimization does not apply by default to other AEM environments either hosted on-premises or managed by Adobe Managed Services.
-
-## Query optimizations {#index-query}
-
-The **Query Performance** tool allows you to observe both popular and slow JCR queries. Additionally, it is able to analyze queries and display various information about, most notably if an index is being used for this query or not.
-
-Unlike in AEM on premise, AEM as a Cloud Service does not display the **Query Performance** tool in the UI anymore. Instead it is now available via the Developer Console (in Cloud Manager) on the [Queries](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) tab.
+Please see [this document](query-and-indexing-best-practices.md) for information on how queries and indexes can be optimized.

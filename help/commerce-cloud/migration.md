@@ -37,7 +37,7 @@ Importing product catalog data is not supported anymore. Using the CIF add-on pr
 
 >[!TIP]
 >
->If no real-time APIs are available, an external product cache with APIs should be used for the integration. Example [Magento open-source](https://magento.com/products/magento-open-source).
+>If no real-time APIs are available, an external product cache with APIs should be used for the integration. Example [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
 
 ## Product catalog experiences with AEM rendering
 
@@ -45,4 +45,4 @@ If you use catalog blueprint with Classic CIF, you need to update the product ca
 
 ## Non-cacheable data and shopping interaction
 
-Client-side requests for non-cacheable data and interactions (e.g. add-to-cart, search) should go directly to the commerce endpoint (either commerce solution or integration layer) via CDN / Dispatcher. Remove any calls where AEM was just a proxy.
+Client-side requests for non-cacheable data and interactions (for example, add-to-cart, search) should go directly to the commerce endpoint (either commerce solution or integration layer) via CDN / Dispatcher. Remove any calls where AEM was just a proxy.

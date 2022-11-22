@@ -8,8 +8,8 @@ role: Developer, Architect
 level: Beginner
 kt: 9452, 9464, 9465, 9466
 thumbnail: 339158.jpg
+exl-id: c6fc96a0-ff95-4fb9-8674-71e60d23ef5c
 ---
-
 # Introduction to App Builder
 
 >[!IMPORTANT]
