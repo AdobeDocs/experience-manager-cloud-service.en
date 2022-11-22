@@ -17,11 +17,11 @@ Learn how to use the GraphQL API for headless delivery of Content Fragment conte
 
 The remainder of this guide will focus on GraphQL access and Content Fragment delivery.
 
-## Enable GraphQL Endpoint
+## Enable GraphQL Endpoint {#enable-graphql-endpoint}
 
 Before the GraphQL APIs can be used, a GraphQL endpoint must be created.
 
-1. Navigate to **Tools**, **Assets**, then select **GraphQL**.
+1. Navigate to **Tools**, **General**, then select **GraphQL**.
 1. Select **Create**.
 1. The **Create new GraphQL Endpoint** dialog will open. Here you can specify:
    * **Name**: name of the endpoint; you can enter any text.
@@ -39,15 +39,22 @@ More details about enabling [GraphQL endpoints can be found here](/help/headless
 
 Information architects will need to design queries for their channel endpoints in order to deliver content. These queries will generally only need to be considered once per endpoint per model. For the purposes of this getting started guide we will only need to create one.
 
-GraphiQL is an IDE that can be installed on an AEM environment. Follow the steps on [Using the GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) to install on your AEM environment. 
+GraphiQL is an IDE, included in your AEM environment; it is accessible/visible after you [configure your endpoints](#enable-graphql-endpoint). 
 
 1. Log into AEM as a Cloud Service and access the GraphiQL interface:
-   * For example: `https://<host>:<port>/content/graphiql.html`.
 
-1. The GraphiQL IDE is an in-browser query editor for GraphQL. You can use it to build queries to retrieve Content Fragments to deliver them headlesly as JSON.
-   * The left panel allows you to build your query.
-   * The right panel displays the results.
+   You can access the query editor from either: 
+
+   * **Tools** -> **General** -> **GraphQL Query Editor**
+   * directly; for example, `http://localhost:4502/aem/graphiql.html`
+
+1. The GraphiQL IDE is an in-browser query editor for GraphQL. You can use it to build queries to retrieve Content Fragments to deliver them headlessly as JSON.
+   * The drop-down top-right allows you to select the endpoint.
+   * A far-left panel lists the persisted queries (when available)
+   * The middle-left panel allows you to build your query.
+   * The middle-right panel displays the results.
    * The query editor features code completion and hotkeys to easily execute the query.
+
    ![GraphiQL editor](../assets/graphiql.png)
 
 1. Assuming that the model we created was called `person` with fields `firstName`, `lastName`, and `position`, we can build a simple query to retrieve the content of our Content Fragment.
@@ -83,6 +90,6 @@ GraphQL can avoid iterative API requests as well as over-delivery, and instead a
 
 That's it! You now have a basic understanding of headless content management in AEM. Of course there are many more resources where you can dive deeper for a comprehensive understanding of the features available.
 
-* **[Content Fragments](/help/assets/content-fragments/content-fragments.md)** - For details about creating and managing Content Fragments
+* **[Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)** - For details about creating and managing Content Fragments
 * **[Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)** - For details on accessing AEM content directly over the HTTP API, via CRUD operations (Create, Read, Update, Delete)
 * **[GraphQL API](/help/headless/graphql-api/content-fragments.md)** - For details on how to deliver Content Fragments headlessly

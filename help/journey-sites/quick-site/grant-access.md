@@ -98,4 +98,4 @@ Build on this knowledge and continue your AEM Quick Site Creation journey by nex
 
 While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Retrieve Front-End Developer Credentials,](retrieve-access.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
-* [Onboarding Journey](/help/journey-onboarding/home.md) - This guide serves as your starting point to ensure that your teams are set up and have access to AEM as a Cloud Service.
+* [Onboarding Journey](/help/journey-onboarding/overview.md) - This guide serves as your starting point to ensure that your teams are set up and have access to AEM as a Cloud Service.

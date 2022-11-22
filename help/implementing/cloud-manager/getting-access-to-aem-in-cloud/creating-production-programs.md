@@ -28,11 +28,11 @@ Follow these steps to create a production program.
 
    ![Cloud manager landing page](assets/first_timelogin1.png) 
 
-1. Select **Set up for Production** in the Create Program wizard to create a production program. You can accept the default program name or edit it before selecting **Create**.
+1. Select **Set up for Production** in the Create Program wizard to create a production program. You can accept the default program name or edit it before clicking **Continue**.
 
    ![Creating program wizard](assets/create-prod1.png)
 
-1. In the next tab, select the solutions to include in the program.
+1. On the **Solutions &amp; Add-ons** tab, select the solutions to include in the program.
 
    ![Select solutions](assets/setup-prod-select.png)
 
@@ -40,7 +40,16 @@ Follow these steps to create a production program.
 
    ![Select add-ons](assets/setup-prod-commerce.png)
 
-1. With your solutions and add-ons selected, click **Create**.
+1. With your solutions and add-ons selected, click **Continue**.
+
+1. On the **Go-Live Date** tab, enter the date you plan your production program to go live.
+
+   ![Define planned go-live date](assets/setup-go-live.png)
+
+   * This date can be edited at any time.
+   * This date is for informational use only and triggers the Go Live widget on the program overview page to provide in-product links to AEM as a Cloud Service best practice documentation in a timely manner to align with your journey culminating in a successful and smooth Go Live experience.
+
+1. Click **Create**.
 
 Your program is created by Cloud Manager and is displayed and selectable on the landing page.
 

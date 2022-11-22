@@ -27,13 +27,13 @@ The main differences are found in the following areas:
 
 * [/apps and /libs are immutable at runtime](#apps-libs-immutable)
 
-* [OSGi bundles and settings must be repository-based](#osgi)
+* [OSGi bundles and configurations must be treated as code](#osgi)
 
 * [Changes to publish repository are not allowed](#changes-to-publish-repo)
 
 * [Custom runmodes are not allowed](#custom-runmodes)
 
-* [Removal of Replication Agents](#replication-agents)
+* [Removal of Replication Agents and related changes](#replication-agents)
 
 * [Removal of Classic UI](#classic-ui)
 
@@ -47,7 +47,7 @@ The main differences are found in the following areas:
 
 * No changes in `/libs` are allowed at all.
   * This is not new rule, however this was not enforced in previous on-premise versions of AEM.
-* Overlays for areas in `/libs` that are allowed to be overlaid are are still permitted within `/apps`.
+* Overlays for areas in `/libs` that are allowed to be overlaid are still permitted within `/apps`.
   * Such overlays must come from Git via the CI/CD pipeline.
 * Static Template design information that is stored in `/apps` can't be edited via UI.
   * It is recommended that you leverage Editable Templates instead.
@@ -55,12 +55,14 @@ The main differences are found in the following areas:
 * MSM Blueprint and custom MSM roll-out configurations must be installed from Git via the CI/CD pipeline.
 * I18n translation changes need to come from Git via the CI/CD pipeline.
 
-## OSGi bundles and settings must be repository-based {#osgi}
+## OSGi bundles and configurations must be treated as code {#osgi}
 
-The Web Console, used in previous versions of AEM to change OSGi settings, is not available in AEM Cloud Service. Therefore changes to OSGi must be introduced via the CI/CD pipeline.
+Changes to OSGi bundles and configurations must be introduced via the CI/CD pipeline.
 
-* Changes to OSGi settings can only come via Git persistence as JCR-based OSGi settings.
-* New or updated OSGi bundles must be introduced via Git as part of the CI/CD pipeline build process.
+* New or updated OSGi bundles must be introduced through Git via the CI/CD pipeline.
+* Changes to OSGi configurations can only come from Git via the CI/CD pipeline.
+
+The Web Console, used in previous versions of AEM to change OSGi bundles and configurations, is not available in AEM Cloud Service.
 
 ## Changes to publish repository are not allowed {#changes-to-publish-repo}
 
@@ -87,13 +89,15 @@ The following runmodes are provided out-of-the-box for AEM Cloud Service:
 
 Additional or custom run modes are not possible in AEM Cloud Service.
 
-## Removal of Replication Agents {#replication-agents}
+## Removal of Replication Agents and related changes {#replication-agents}
 
 In AEM Cloud Service, content is published using [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html). The replication agents used in previous versions of AEM are no longer used or provided, which might impact the following areas of existing AEM projects:
 
 * Custom workflows that push content to replication agents of preview servers for example.
 * Customization to replication agents to transform content
 * Using Reverse Replication to bring content from publish back to author
+
+In addition, note that the pause and disable buttons have been removed from the replication agent administration console.
 
 ## Removal of Classic UI {#classic-ui}
 
@@ -107,4 +111,4 @@ For project transitioning from AMS or an on-premises installation Adobe strongly
 
 ## Asset Handling and Delivery {#asset-handling}
 
-Asset upload, processing, and download is optimized in [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] is now more efficient, enables more scaling, and lets you upload and download at much faster rate. Also, it impacts the existing custom code and some operations. For a list of changes and for parity with [!DNL Experience Manager] 6.5 features, see the [changes to [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Asset upload, processing, and download are optimized in [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] is now more efficient, enables more scaling, and lets you upload and download at much faster rate. Also, it impacts the existing custom code and some operations. For a list of changes and for parity with [!DNL Experience Manager] 6.5 features, see the [changes to [!DNL Assets]](/help/assets/assets-cloud-changes.md).

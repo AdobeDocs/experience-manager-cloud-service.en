@@ -1,8 +1,6 @@
 ---
-title: Content Fragment Models
+title: Content Fragment Models (Assets - Content Fragments)
 description: Learn how Content Fragment Models serve as a foundation for your headless content in AEM and how to create Content Fragments with structured content.
-feature: Content Fragments
-role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 ---
 # Content Fragment Models {#content-fragment-models}
@@ -13,13 +11,13 @@ To use Content Fragment Models you:
 
 1. [Enable Content Fragment Model functionality for your instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Create](#creating-a-content-fragment-model), and [configure](#defining-your-content-fragment-model), your Content Fragment Models
-1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments for use when creating Content Fragments
+1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments 
 1. [Allow your Content Fragment Models on the required Assets folders](#allowing-content-fragment-models-assets-folder) by configuring **Policies**.
 
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
-1. Navigate to the folder appropriate to your [configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
+1. Navigate to the folder appropriate to your [configuration, or sub-configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Use **Create** to open the wizard.
 
    >[!CAUTION]
@@ -40,7 +38,7 @@ The content fragment model effectively defines the structure of the resulting co
 >
 >Editing an existing content fragment model can impact dependent fragments.
 
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
+1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
 
 1. Navigate to the folder holding your content fragment model.
 1. Open the required model for **Edit**; use either the quick action, or select the model and then the action from the toolbar.
@@ -69,7 +67,7 @@ The content fragment model effectively defines the structure of the resulting co
 
        >[!CAUTION]
        >
-       >When manually updating the property **Property Name** for a data type, note that names must contain only Latin characters, numerical digits and underscore "_" as special character.
+       >When manually updating the property **Property Name** for a data type, note that names must contain only A-Z, a-z, 0-9 and underscore "_" as special character.
        >
        >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
 
@@ -134,7 +132,7 @@ Many properties are self-explanatory, for certain properties additional details 
 
 * **Property Name**
 
-  When manually updating this property for a data type, note that names **must** contain *only* Latin characters, numerical digits and underscore "_" as special character.
+  When manually updating this property for a data type, note that names **must** contain *only* A-Z, a-z, 0-9 and underscore "_" as special character.
 
   >[!CAUTION]
   >
@@ -178,13 +176,12 @@ Many properties are self-explanatory, for certain properties additional details 
 
 * See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
 
-<!--
 * **Translatable**
+  
   Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
 
   * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
   * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
--->
 
 ## Validation {#validation}
 
@@ -392,7 +389,7 @@ The Content Fragment Models allowed for a folder are resolved as follows:
 
 To delete a content fragment model:
 
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
+1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
 
 1. Navigate to the folder holding your content fragment model.
 1. Select your model, followed by **Delete** from the toolbar.
@@ -407,7 +404,7 @@ Content fragment models need to be published when/before any dependent content f
 
 To publish a content fragment model:
 
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
+1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
 
 1. Navigate to the folder holding your content fragment model.
 1. Select your model, followed by **Publish** from the toolbar.
@@ -423,7 +420,7 @@ Content fragment models can be unpublished if they are not referenced by any fra
 
 To unpublish a content fragment model:
 
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
+1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
 
 1. Navigate to the folder holding your content fragment model.
 1. Select your model, followed by **Unpublish** from the toolbar.
