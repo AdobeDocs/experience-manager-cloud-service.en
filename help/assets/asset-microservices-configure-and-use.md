@@ -179,7 +179,7 @@ To verify that assets are processed, preview the generated renditions in the [!U
 
 For a situation, where additional processing of assets is required that cannot be achieved using the processing profiles, additional post-processing workflows can be added to the configuration. Post-processing lets you add completely customized processing on top of the configurable processing using asset microservices.
 
-Post-processing workflows, if configured, are automatically executed by [!DNL Experience Manager] after the microservices processing finishes. There is no need to add workflow launchers manually to trigger the workflows. The examples include:
+Post-processing workflows, or [Auto-start workflow](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html), if configured, are automatically executed by [!DNL Experience Manager] after the microservices processing finishes. There is no need to add workflow launchers manually to trigger the workflows. The examples include:
 
 * Custom workflow steps to process assets.
 * Integrations to add metadata or properties to assets from external systems, for example, product or process information.
@@ -227,6 +227,32 @@ You can configure the custom workflow runner service for the advanced configurat
 * Post-processing workflows by expression (`postProcWorkflowsByExpression`): Multiple workflow models can be listed, based on different regular expressions. Expressions and models should be separated by a colon. The regular expression should point to the Asset node directly, and not one of the renditions or files. For example: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 To know how to deploy an OSGi configuration, see [deploy to [!DNL Experience Manager]](/help/implementing/deploying/overview.md). 
+
+#### Disable post-processing workflow execution
+
+When post-processing is not needed, create and use an "empty" Workflow Model in the __Auto-start Workflow__ selection.
+
+##### Create the Disabled Auto-start Workflow Model
+
+1. Navigate to __Tools > Workflow > Models__
+1. Select __Create > Create Model__ form the top action bar
+1. Provide a title and name for the new Workflow Model, for example:
+    * Title: Disable Auto-start Workflow
+    * Name: disable-auto-start-workflow
+1. Select __Done__ to create the Workflow Model
+1. __Select__ and __Edit__ the newly created Workflow Model
+1. In the Workflow Model editor, select __Step 1__ from the model definition and delete it
+1. Open the __Side Panel__, and select __Steps__
+1. Drag the __DAM Update Asset Workflow Completed__ step into the model definition
+1. Select the __Page Information__ button (next to the __Side Panel__ toggle), and select __Open Properties__
+1. Under the __Basic__ tab, select __Transient Workflow__
+1. Select __Save & Close__ from the top action bar
+1. Select __Sync__ in the top action bar
+1. Close the Workflow Model editor 
+
+##### Apply the Disabled Auto-start Workflow Model
+
+Follow the steps outlined in [apply a workflow model to a folder](#apply-workflow-model-to-folder) and set the __Disable Auto-start Workflow__ as the __Auto-start Workflow__ for folders do not require post-processing of assets.
 
 ## Best practices and limitations {#best-practices-limitations-tips}
 

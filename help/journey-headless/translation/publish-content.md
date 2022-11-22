@@ -1,9 +1,9 @@
 ---
-title: Publish Translated Content
+title: Publish Translated Headless Content
 description: Learn how to publish your translated content and update the translations as the content updates.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 ---
-# Publish Translated Content {#publish-content}
+# Publish Translated Headless Content {#publish-content}
 
 Learn how to publish your translated content and update the translations as the content updates.
 
