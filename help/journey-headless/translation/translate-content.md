@@ -1,24 +1,25 @@
 ---
-title: Translate Content
-description: Use the translation connector and rules to translate your headless content.
+title: Translate Headless Content
+description: Use the translation connector to translate your headless content.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 ---
-# Translate Content {#translate-content}
 
-Use the translation connector and rules to translate your headless content.
+# Translate Headless Content {#translate-content}
+
+Use the translation connector to translate your headless content.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM headless translation journey, [Configure Translation Rules](translation-rules.md) you learned how to use AEM's translation rules to identify your translation content. You should now:
+In the previous document of the AEM headless translation journey, [Configure Translation Connector](configure-connector.md) you learned about the translation framework in AEM. You should now:
 
-* Understand what the translation rules do.
-* Be able to define your own translation rules.
+* Understand the important parameters of the Translation Integration Framework in AEM.
+* Be able to set up your own connection to your translation service.
 
-Now that your connector and translations rules are set up, this article takes you through the next step of translating your headless content.
+Now that your connector is set up, this article takes you through the next step of translating your headless content.
 
 ## Objective {#objective}
 
-This document helps you understand how to use AEM's translation projects along with the connector and your translations rules to translate content. After reading this document you should:
+This document helps you understand how to use AEM's translation projects along with the connector to translate content. After reading this document you should:
 
 * Understand what a translation project is.
 * Be able to create new translation projects.
@@ -119,7 +120,7 @@ How you use a translation project depends on how it was created: either automati
 
 ### Using an Automatically Created Translation Project {#using-automatic-project}
 
-When automatically creating the translation project, AEM evaluates the headless content under the path you selected  based on the translation rules that you previously defined. Based on that evaluation, it extracts the content that requires translation into a new translation project.
+When automatically creating the translation project, AEM evaluates the headless content under the path you selected. Based on that evaluation, it extracts the content that requires translation into a new translation project. I knows what fields to translate based on the fields flagged as **Translatable** by the content architect.
 
 To see the detail of the headless content included in this project:
 
