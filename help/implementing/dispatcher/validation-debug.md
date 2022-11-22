@@ -3,6 +3,7 @@ title: Validating and Debugging using Dispatcher Tools
 description: Validating and Debugging using Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
+
 ---
 # Validating and Debugging using Dispatcher Tools {#Dispatcher-in-the-cloud}
 
@@ -44,6 +45,7 @@ The structure of the project's Dispatcher subfolder is as follows:
     ├── cache
     │   ├── default_invalidate.any
     │   ├── default_rules.any
+    │   ├── marketing_query_parameters.any
     │   └── rules.any
     ├── clientheaders
     │   ├── clientheaders.any
@@ -278,12 +280,12 @@ There are four sections in your farm configuration where you're allowed to inclu
 | `/rules`         | `../cache/rules.any`                 |
 | `/virtualhosts`  | `../virtualhosts/virtualhosts.any`   |
 
-Alternatively, you can include the **default** version of those files, whose names are prepended with the word `default_`, e.g. `../filters/default_filters.any`.
+Alternatively, you can include the **default** version of those files, whose names are prepended with the word `default_`, for example, `../filters/default_filters.any`.
 
 **include statement at (...), outside any known location: ...**
 
 Apart from the six sections mentioned in the paragraphs above, you are not allowed
-to use the `$include` statement, e.g. the following would generate this error:
+to use the `$include` statement, for example, the following would generate this error:
 
 ```
 /invalidate {
@@ -298,7 +300,7 @@ This error is generated when you don't specify an include for `/renders` and `/a
 
 **filter must not use glob pattern to allow requests**
 
-It is not secure to allow requests with a `/glob` style rule, which is matched against the complete request line, e.g.
+It is not secure to allow requests with a `/glob` style rule, which is matched against the complete request line, for example,
 
 ```
 
@@ -312,13 +314,26 @@ This statement is meant to allow requests for `css` files, but it also allows re
 
 **included file (...) does not match any known file**
 
-There are two types of files in your Apache virtual host configuration that can be specified as includes: rewrites and variables.
-The included files need to be named as follows:
+By default, two types of files in your Apache virtual host configuration can be specified as includes: rewrites and variables.
 
 | Type      | Include file name               |
 |-----------|---------------------------------|
 | Rewrites  | `conf.d/rewrites/rewrite.rules` |
 | Variables | `conf.d/variables/custom.vars`  |
+
+In flexible mode, other files can also be included, as long as they are located in subdirectories (at any level) of `conf.d` directory prefixed as follows.
+
+| Include file upper directory prefix |
+|-------------------------------------|
+| `conf.d/includes`                   |
+| `conf.d/modsec`                     |
+| `conf.d/rewrites`                   |
+
+For exmaple, you can include a file in some newly-created directory under `conf.d/includes` directory as follows:
+
+```
+Include conf.d/includes/mynewdirectory/myincludefile.conf
+```
 
 Alternatively, you can include the **default** version of the rewrite rules, whose name is `conf.d/rewrites/default_rewrite.rules`.
 Note, that there is no default version of the variables files.
