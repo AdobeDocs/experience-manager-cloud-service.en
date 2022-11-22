@@ -1,11 +1,11 @@
 ---
 title: Release Notes for 2021.4.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2021.4.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
 ---
-
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the general Release Notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
+The following section outlines the general Release Notes for the current (latest) version of [!DNL Adobe Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >From here you can navigate to release notes of previous versions; for example, for those in 2020, 2021 and so on.
@@ -187,4 +187,3 @@ The Release Date for Best Practices Analyzer v2.1.12 is April 12, 2021.
 
 * Duplicate rows were seen in the BPA reported. This has been fixed.
 * BPA UI on AEM version 6.4.2 was throwing a JS error that was disabling the Generate Report button. This has been fixed
-

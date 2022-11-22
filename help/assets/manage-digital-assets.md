@@ -2,7 +2,7 @@
 title: Manage digital assets
 description: Learn about various asset management and editing methods
 contentOwner: AG
-mini-toc-levels: 1
+mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
@@ -17,7 +17,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 >[!NOTE]
 >
->* Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Marketing Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
+>* Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Experience Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
 >* Experience Manager does not allow using `subassets` word as the name of a folder. It is a keyword reserved for node that contain subassets for compound assets
 
 1. Navigate to the place in your digital assets folder where you want to create a new folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
@@ -37,16 +37,26 @@ See [add digital assets to Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-If a DAM user uploads one or more assets that already exist in the repository, [!DNL Experience Manager] detects the duplication and notifies the user. Duplicate detection is disabled by default as it can have performance impact depending on size of repository and number of assets uploaded. To enable the feature, configure [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. See [how to do OSGi configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). The duplication detection is based on the unique `dam:sha1` value stored at `jcr:content/metadata/dam:sha1`. It means that duplicate assets are detected even if the filenames are different.
+If a DAM user uploads one or more assets that already exist in the repository, [!DNL Experience Manager] detects the duplication and notifies the user. Duplicate detection is disabled by default as it can have performance impact depending on size of repository and number of assets uploaded.
 
-You can add the configuration file `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` in custom code and the file can contain the following:
+To enable the feature:
 
-```json
-{
-  "enabled":true,
-  "detectMetadataField":"dam:sha1"
-}
-```
+1. Navigate to **[!UICONTROL Tools > Assets > Assets Configurations]**.
+
+1. Click **[!UICONTROL Asset Duplication Detector]**.
+
+1. On the [!UICONTROL Asset Duplication Detector page], click **[!UICONTROL Enabled]**.
+
+   `dam:sha1` value for the Detect Metadata field ensures that duplicate assets are detected even if the filenames are different.
+
+1. Click **[!UICONTROL Save]**.
+
+   ![Asset Duplication Detector](assets/asset-duplication-detector.png)
+
+>[!NOTE]
+>
+>If you have configured Duplication Detector using `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` configuration file (OSGi configuration), you can continue to use it, however, Adobe recommends to use the new method.
+ 
 
 Once enabled, Experience Manager sends notifications of duplicate assets to the Experience Manager Inbox. It is an aggregated result for multiple duplicates. Users can choose to remove the assets based on the results.
 
@@ -590,7 +600,7 @@ The versioning functionality lets you do the following:
 
    ![compare_versions](assets/compare_versions.png)
 
-### Starte a workflow on an asset {#starting-a-workflow-on-an-asset}
+### Start a workflow on an asset {#starting-a-workflow-on-an-asset}
 
 1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
 1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.

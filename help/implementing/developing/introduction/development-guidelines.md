@@ -5,6 +5,12 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 ---
 # AEM as a Cloud Service Development Guidelines {#aem-as-a-cloud-service-development-guidelines}
 
+>[!CONTEXTUALHELP]
+>id="development_guidelines"
+>title="AEM as a Cloud Service Development Guidelines"
+>abstract="In this tab, you can view the recommended best practices for coding in AEM as a Cloud Service. Coding can be substatially different than AMS or On-Prem deployments."
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Demo of Package Structure"
+
 Code running in AEM as a Cloud Service must be aware of the fact that it is always running in a cluster. This means that there is always more than one instance running. The code must be resilient especially as an instance might be stopped at any point in time.
 
 During the update of AEM as a Cloud Service, there will be instances with old and new code running in parallel. Therefore, old code must not break with content created by new code and new code must be able to deal with old content.
@@ -43,15 +49,19 @@ Similarly, with everything that is asynchronously happening, like acting on obse
 
 ## Outgoing HTTP Connections {#outgoing-http-connections}
 
-It is strongly recommended that any outgoing HTTP connections set reasonable connect and read timeouts. For code that does not apply these timeouts, AEM instances running on AEM as a Cloud Service will enforce a global timeouts. These timeout values are 10 seconds for connect calls and 60 seconds for read calls for connections used by the following popular Java libraries:
+It is strongly recommended that any outgoing HTTP connections set reasonable connect and read timeouts; suggested values are 1 second for the connection timeout and 5 seconds for read timeout. The exact numbers must be determined based on the performance of the backend system handling these requests.
+
+For code that does not apply these timeouts, AEM instances running on AEM as a Cloud Service will enforce a global timeouts. These timeout values are 10 seconds for connect calls and 60 seconds for read calls for connections.
 
 Adobe recommends the use of the provided [Apache HttpComponents Client 4.x library](https://hc.apache.org/httpcomponents-client-ga/) for making HTTP connections.
 
 Alternatives that are known to work, but may require providing the dependency yourself are:
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) and/or [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (Provided by AEM)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) and/or [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (Provided by AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (not recommended as it is outdated and replaced by version 4.x)
 * [OK Http](https://square.github.io/okhttp/) (Not provided by AEM)
+
+Next to providing timeouts also a proper handling of such timeouts as well as unexpected HTTP status codes should be implemented.
 
 ## No Classic UI Customizations {#no-classic-ui-customizations}
 
@@ -93,15 +103,38 @@ To change the log levels for Cloud environments, the Sling Logging OSGI configur
 
 **Activating the DEBUG Log Level**
 
-The default log level is INFO, that is, DEBUG messages are not logged.
-To activate DEBUG log level, set the
+The default log level is INFO, that is, DEBUG messages are not logged. To activate DEBUG log level, update the following property to debug mode.
 
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+`/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
-property to debug. Do not leave the log at the DEBUG log level longer than necessary, as it generates a lot of logs.
+For example, set `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` with the following value.
+
+```json
+{
+   "org.apache.sling.commons.log.names": [
+      "com.example"
+   ],
+   "org.apache.sling.commons.log.level": "DEBUG",
+   "org.apache.sling.commons.log.file": "logs/error.log",
+   "org.apache.sling.commons.log.additiv": "false"
+}
+```
+
+Do not leave the log at the DEBUG log level longer than necessary, as this generates lots of entries.
+
+Discrete log levels can be set for the different AEM environments using run mode-based OSGi configuration targeting if it's desirable to always log at `DEBUG` during development. For example:
+
+| Environment | OSGi configuration location by run mode | `org.apache.sling.commons.log.level` property value |
+| - | - | - |
+|  Development | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG |
+|  Stage | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN |
+|  Production | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
+
 A line in the debug file usually starts with DEBUG, and then provides the log level, the installer action and the log message. For example:
 
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+```text
+DEBUG 3 WebApp Panel: WebApp successfully deployed
+```
 
 The log levels are as follows:
 
@@ -126,6 +159,8 @@ Note that on local development (using the SDK), `/apps` and `/libs` can be writt
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
 Customers can access CRXDE lite on the author tier's development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
+
+Instead, the Repository Browser can be launched from the Developer Console, providing a read-only view into the repository for all environments on author, publish, and preview tiers. Read more about the Repository Browser [here](/help/implementing/developing/tools/repository-browser.md).
 
 A set of tools for debugging AEM as a Cloud Service developer environments are available in the Developer Console for dev, stage, and production environments. The url can be determined by adjusting the Author or Publish service urls as follows:
 
@@ -153,11 +188,7 @@ Also useful for debugging, the Developer console has a link to the Explain Query
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-For Production programs, access to the Developer Console is defined by the "Cloud Manager - Developer Role" in the Admin Console, while for sandbox programs, the Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For all programs, "Cloud Manager - Developer Role" is needed for status dumps and users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services in order to view status dump data from both services. For more information about setting up user permissions, see [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-
-### AEM Staging and Production Service {#aem-staging-and-production-service}
-
-Customers will not have access to developer tooling for staging and production environments.
+For Production programs, access to the Developer Console is defined by the "Cloud Manager - Developer Role" in the Admin Console, while for sandbox programs, the Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For all programs, "Cloud Manager - Developer Role" is needed for status dumps and the repository browser and users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services in order to view data from both services. For more information about setting up user permissions, see [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Performance Monitoring {#performance-monitoring}
 
@@ -173,9 +204,9 @@ The sections below describe how to request, configure, and send email.
 
 ### Enabling Outbound Email {#enabling-outbound-email}
 
-By default, ports used to send email are disabled. To activate a port, configure [advanced networking](/help/security/configuring-advanced-networking.md), making sure to set for each needed environment the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint's port forwarding rules, which maps the intended port (e.g., 465 or 587) to a proxy port.
+By default, ports used to send email are disabled. To activate a port, configure [advanced networking](/help/security/configuring-advanced-networking.md), making sure to set for each needed environment the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint's port forwarding rules, which maps the intended port (for example, 465 or 587) to a proxy port.
 
-It is recommended to configure advanced networking with a `kind` parameter set to `flexiblePortEgress` since Adobe can optimize performance of flexible port egress traffic. If a unique egress IP address is necessary, choose a `kind` parameter of `dedicatedEgressIp`. If you have already configured VPN for other reasons, you can use the unique IP address provided by that advanced networking variation as well. 
+It is recommended to configure advanced networking with a `kind` parameter set to `flexiblePortEgress` since Adobe can optimize performance of flexible port egress traffic. If a unique egress IP address is necessary, choose a `kind` parameter of `dedicatedEgressIp`. If you have already configured VPN for other reasons, you can use the unique IP address provided by that advanced networking variation as well.
 
 You must send email through a mail server rather than directly to email clients. Otherwise, the emails may be blocked.
 
@@ -192,15 +223,17 @@ See the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experien
 * The SMTP server host name should be set to $[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * The SMTP server port should be set to the value of the original proxy port set in the portForwards parameter used in the API call when configuring up advanced networking. For example, 30465 (rather than 465)
 
-It is also recommended that if port 465 has been requested:
+The SMTP server port should be set as the `portDest` value set in the portForwards parameter used in the API call when configuring advanced networking and the `portOrig` value should be a meaningful value that is within the required range of 30000 - 30999. For example, if the SMTP server port is 465, port 30465 should be used as the `portOrig` value.
 
-* set `smtp.port` to `465`
-* set `smtp.ssl` to `true`
+In this case and assuming SSL needs to be enabled, in the configuration of the **Day CQ Mail Service OSGI** service:
 
-and if port 587 has been requested:
+* Set `smtp.port` to `30465`
+* Set `smtp.ssl` to `true`
 
-* set `smtp.port` to `587`
-* set `smtp.ssl` to `false`
+Alternatively, if the destination port is 587, a `portOrig` value of 30587 should be used. And assuming that SSL should be disabled, the configuration of the Day CQ Mail Service OSGI service:
+
+* Set `smtp.port` to `30587`
+* Set `smtp.ssl` to `false`
 
 The `smtp.starttls` property will automatically be set by AEM as a Cloud Service at runtime to an appropriate value. Thus, if `smtp.ssl` is set to true, `smtp.startls` is ignored. If `smtp.ssl` is set to false, `smtp.starttls` is set to true. This is regardless of the `smtp.starttls` values set in your OSGI configuration.
 

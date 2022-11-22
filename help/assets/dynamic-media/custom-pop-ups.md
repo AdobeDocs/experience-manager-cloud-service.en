@@ -1,11 +1,11 @@
 ---
 title: Create custom pop-ups using Quickview
-description: "Learn about how the default Quickview is used in ecommerce experiences whereby a pop-up window is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-up Windows®."
+description: "Learn about how the default Quickview is used in ecommerce experiences whereby a pop-up window is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-up window."
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 ---
-# Create custom pop-up Windows® using Quickview {#using-quickviews-to-create-custom-pop-ups}
+# Create custom pop-ups using Quickview {#using-quickviews-to-create-custom-pop-ups}
 
 The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. However, you can trigger custom content to display in the pop-ups. Depending on the viewer that you use, customers can select a hotspot, a thumbnail image, or an image map to see information or related content.
 
@@ -17,11 +17,11 @@ Quickview is supported by the following viewers in Dynamic Media:
 
 While the functionality of each viewer differs, the process of creating a Quickview is the same across all three supported viewers.
 
-**To create custom pop-up Windows® using Quickview:**
+**To create custom pop-ups using Quickview:**
 
 1. Create a Quickview for an uploaded asset.
 
-   You typically create a Quickview the same time you edit an asset for use with the viewer you are using.
+   You typically create a Quickview the same time that you edit an asset for use with the viewer you are using.
 
    <table>
     <tbody>
@@ -82,7 +82,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    **Using the sample embed code example from above, you have the following code:**
 
-   ```xml
+   ```xml {.line-numbers}
    s7interactiveimageviewer.setHandlers({
        quickViewActivate": function(inData) {
            var sku=inData.sku;
@@ -113,7 +113,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    Map other variables from the Quickview too, as in the following:
 
-   ```
+   ```xml {.line-numbers}
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
@@ -142,7 +142,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
       For example, the following writes the value of SKU to the browser console:
 
-   ```xml
+   ```xml {.line-numbers}
    function loadQuickView(sku){
        console.log ("quickview sku value is " + sku);
    }
@@ -155,7 +155,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 1. You can now use a function to invoke a simple pop-up in the Quickview. The following example uses a `DIV` for a popup.
 1. Style the pop-up `DIV` in the following manner. Add extra styling as desired.
 
-   ```xml
+   ```xml {.line-numbers}
    <style type="text/css">
        #quickview_div{
            position: absolute;
@@ -169,7 +169,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    One of the elements is set with an ID that is updated with SKU value when the user invokes a Quickview. The example also includes a simple button to hide the pop-up again after it becomes visible.
 
-   ```xml
+   ```xml {.line-numbers}
    <div id="quickview_div" >
        <table>
            <tr><td><input id="btnClosePopup" type="button" value="Close"        onclick='document.getElementById("quickview_div").style.display="none"' /><br /></td></tr>
@@ -180,7 +180,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
 1. To update the SKU value in the pop-up window, add a function. Make the pop-up window visible by replacing the simple function created in step 5 with the following:
 
-   ```xml
+   ```xml {.line-numbers}
    <script type="text/javascript">
        function loadQuickView(sku){
            document.getElementById("txtSku").setAttribute("value",sku); // write sku value
@@ -198,7 +198,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    The `initComplete` handler is invoked after the viewer is initialized.
 
-   ```xml
+   ```xml {.line-numbers}
    "initComplete":function() { code block }
    ```
 
@@ -209,7 +209,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
 1. To attach the pop-up--described in the previous steps--to the viewer, use the following code:
 
-   ```xml
+   ```xml {.line-numbers}
    "initComplete":function() {
        var popup = document.getElementById('quickview_div');
        popup.parentNode.removeChild(popup);
@@ -228,7 +228,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
 1. Your entire setHandlers code is similar to the following (Interactive Video viewer was used):
 
-   ```xml
+   ```xml {.line-numbers}
    s7interactivevideoviewer.setHandlers({
        "quickViewActivate": function(inData) {
            var sku=inData.sku;
