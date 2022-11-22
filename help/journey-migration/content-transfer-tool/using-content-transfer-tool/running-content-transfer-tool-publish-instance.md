@@ -20,8 +20,6 @@ Follow the recommended approach as described below:
 
 * Only a single publish node needs to be migrated. It should be removed from the load balancer prior to beginning the extraction.
 
-* When creating the migration set, use the URL of the author AEM as a Cloud Service environment.
-
 * During ingestion to publish, the publish tier will not be scaled down (unlike the author). 
 
    >[!IMPORTANT]

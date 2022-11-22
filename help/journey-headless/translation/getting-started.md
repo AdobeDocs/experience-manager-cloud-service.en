@@ -1,5 +1,5 @@
 ---
-title: Get started with AEM headless translation
+title: Get Started with AEM Headless Translation
 description: Get to know how to organize your headless content and how AEM's translation tools work.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 ---
@@ -72,7 +72,7 @@ The content architect works early in the project to define this structure. As th
 
 Because the Content Models define the structure of your content, you need to know which fields of your models must be translated. Generally you work with the content architect to define this. To browse the fields of your content models, follow the steps below.
 
-1. Navigate to **Tools** -&gt; **Assets** -&gt; **Content Fragment Models**.
+1. Navigate to **Tools** -&gt; **General** -&gt; **Content Fragment Models**.
 1. Content Fragment Models are generally stored in a folder structure. Tap or click on the folder for your project.
 1. The models are listed. Tap or click on the model to see the details.
 ![Content Fragment Models](assets/content-fragment-models.png)
@@ -82,12 +82,11 @@ Because the Content Models define the structure of your content, you need to kno
 ![Content Fragment Model Editor](assets/content-fragment-model-editor.png)
 1. Tap or click one of the fields of the model. AEM marks it and the details of that field are shown in the right column.
 ![Content Fragment Model Editor detail](assets/content-fragment-model-editor-detail.png)
-
-Take note of the field **Property Name** for all fields that must be translated. You will need this information later in the journey. These **Property Name**s are required to inform AEM which fields of your content must be translated.
+1. The content architect enables the **Translatable** field on every Content Model field that needs to be translated.
 
 >[!TIP]
 >
->Generally the content architect provides the translation specialist with the **Property Name**s of all of the fields required for translation. These field names are needed for later in the journey. The prior steps are provided for the understanding of the translation specialist.
+>Generally the content architect is responsible for identifying which fields are required for translation. The prior steps are provided for the understanding of the translation specialist.
 
 ### Content Fragments {#content-fragments}
 
@@ -161,10 +160,9 @@ You should take note of the specific path of your content as it will be required
 Now that you understand what Content Fragments are and the importance of content structure, we can look at how to translate this content. The translation tools in AEM are quite powerful, but are simple to understand at a high level.
 
 * **Translation Connector** - The connector is the link between AEM and the translation service that you use.
-* **Translation Rules** - Rules define what content under particular paths should be translated.
 * **Translation Projects** - Translation projects gather content that should be addressed as a single translation effort and tracks the progress of the translation, interfacing with the connector to transmit the content to be translated and receive it back from the translation service.
 
-You generally only set up your connector once for your instance and rules per headless project. Then you use translation projects to translate your content and keep its translations up to date on a continual basis.
+You generally only set up your connector once for your instance. Then you use translation projects to translate your content and keep its translations up to date on a continual basis.
 
 ## What's Next {#what-is-next}
 
