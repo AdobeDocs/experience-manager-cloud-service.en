@@ -12,6 +12,10 @@ It facilitates previewing page experiences that would not be otherwise visible f
 
 For more details about the preview environments, please see the document [Manage Environments.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
+>[!NOTE]
+>
+>Publishing an Experience Fragment to Preview basically follows the same procedure as for a page, though from the Experience Fragments console or editor.
+
 ## Publishing Content to Preview {#publishing-content-to-preview}
 
 You can publish content to the preview service by using the **Managed Publication** UI.
@@ -35,6 +39,12 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 See the document [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for more information on how retrieve the URLs for your environments.
 
 Content may also be published to preview by using a [publish content tree workflow](/help/operations/replication.md#publish-content-tree-workflow) with the `agentId` parameter set to `preview` or by using the [replication API](/help/operations/replication.md#replication-api) with an `AgentFilter` configured for preview.
+
+## Unpublishing Content from Preview {#unpublishing-content-from-preview}
+
+Unpublishing content from your **Preview** environment is basically the same process as [unpublishing pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) from the **Publish** environment. 
+
+The only difference is that you can select the **Destination** to be **Preview**.
 
 ## Configuring OSGi Settings for the Preview Tier {#configuring-osgi-settings-for-the-preview-tier}
 

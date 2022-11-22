@@ -1,5 +1,5 @@
 ---
-title: Configure Translation Rules
+title: Configure Translation Rules for Headless Content
 description: Learn how to define translation rules to identify content for translation.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 ---
@@ -15,6 +15,14 @@ In the previous document of the AEM headless translation journey, [Configure tra
 * Be able to set up your own connection to your translation service.
 
 Now that your connector is set up, this article takes you through the next step of identifying what content you need to translate.
+
+>[!CAUTION]
+>
+>This step of the documentation journey is only necessary if you are not using the **Translatable** flag on Content Fragments.
+>
+>* The **Translatable** flag automatically creates translation rules for you and requires no intervention.
+>* The **Translatable** flag is only used if the Translation Integration Framework configuration is set to **[Enable Content Model Fields for Translation.](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* Enabling this option in the TIF configuration will supersede any manually-created translation rules.| 
 
 ## Objective {#objective}
 
