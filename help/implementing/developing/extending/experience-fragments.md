@@ -1,5 +1,5 @@
 ---
-title: Experience Fragments
+title: Experience Fragments Overview
 description: Extend Adobe Experience Manager as a Cloud Service Experience Fragments.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 ---
@@ -43,29 +43,6 @@ The plain rendition selector uses a transformer as opposed to additional scripts
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
-## Social Variations {#social-variations}
-
-Social variants can be posted on social media (text and image). In AEM these social variants can contain components; for example, text components, image components.
-
-The image and text for the social post can be taken from any image resource type or text resource type at any level of depth (in either the building block or layout container).
-
-Social variations also allow building blocks and take them into consideration when making social actions (on the publish environment).
-
-To post the correct text and image to the social media network, some conventions need to be respected if you are developing your own customized components.
-
-For this, the following properties must be used:
-
-* For extracting the image
-
-    * `fileReference`
-    * `fileName`
-
-* For extracting the text
-
-    * `text`
-
-Components that do not use this convention, will not be taken into consideration.
-
 ## Templates for Experience Fragments {#templates-for-experience-fragments}
 
 >[!CAUTION]
@@ -84,12 +61,12 @@ To create an experience fragment template that is detected by the **Create Exper
 
 1. Both:
 
-    1. The resource type of the template (the initial node) must inherit from:
-       `cq/experience-fragments/components/xfpage`
+   1. The resource type of the template (the initial node) must inherit from:
+      `cq/experience-fragments/components/xfpage`
 
-    1. And the name of the template must begin with:
-       `experience-fragments`
-       This allows users to create experience fragments in /content/experience-fragments as the `cq:allowedTemplates` property of this folder includes all the templates that have names beginning with `experience-fragment`. Customers can update this property to include their own naming scheme or template locations.
+   1. And the name of the template must begin with:
+      `experience-fragments`
+      This allows users to create experience fragments in /content/experience-fragments as the `cq:allowedTemplates` property of this folder includes all the templates that have names beginning with `experience-fragment`. Customers can update this property to include their own naming scheme or template locations.
 
 1. [Allowed templates](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) can be configured in the Experience Fragments console.
    
@@ -154,10 +131,10 @@ After you generate the HTML page, the Sling Rewriter pipeline makes modification
 
    To determine the links to modify, AEM follows this pattern for attributes of HTML elements:
 
-    1. `src` attributes
-    2. `href` attributes
-    3. `*-src` attributes (like data-src, custom-src, etc)
-    4. `*-href` attributes (like `data-href`, `custom-href`, `img-href`, etc)
+   1. `src` attributes
+   2. `href` attributes
+   3. `*-src` attributes (like data-src, custom-src, etc)
+   4. `*-href` attributes (like `data-href`, `custom-href`, `img-href`, etc)
 
    >[!NOTE]
    >
@@ -238,12 +215,12 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 
 For the service to work, there are now three methods that need to be implemented inside the service:
 
-* ` [shouldRewrite](#shouldrewrite)`
-* ` [rewriteLink](#rewritelink)`
+* `[shouldRewrite](#shouldrewrite)`
+* `[rewriteLink](#rewritelink)`
 
-    * `rewriteLinkExample2`
+  * `rewriteLinkExample2`
 
-* ` [getPriority](#priorities-getpriority)`
+* `[getPriority](#priorities-getpriority)`
 
 #### shouldRewrite {#shouldrewrite}
 

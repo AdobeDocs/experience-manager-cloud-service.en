@@ -11,9 +11,13 @@ A user with administrator access in [!DNL Adobe Experience Manager] as a [!DNL C
 
 >[!IMPORTANT]
 >
->Adobe requires deployment and configuration of the [!DNL Adobe Workfront for Experience Manager enhanced connector] only via certified partners or [!DNL Adobe Professional Services]. If deployed and configured without a certified partner or [!DNL Adobe Professional Services], it is not supported by Adobe.
+>* Adobe requires deployment and configuration of the [!DNL Adobe Workfront for Experience Manager enhanced connector] only via certified partners or [!DNL Adobe Professional Services]. If deployed and configured without a certified partner or [!DNL Adobe Professional Services], it is not supported by Adobe.
 >
->Adobe may release updates to [!DNL Adobe Workfront] and [!DNL Adobe Experience Manager] that make this connector redundant; if this occurs, customers may be required to transition from the use of this connector.
+>* Adobe may release updates to [!DNL Adobe Workfront] and [!DNL Adobe Experience Manager] that make this connector redundant; if this occurs, customers may be required to transition from the use of this connector.
+>
+>* Adobe supports enhanced connector versions 1.7.4 and higher. Previous prerelease and custom versions are not supported. To check the enhanced connector version, see step 5(a) of [enhanced connector installation instructions](workfront-connector-install.md). 
+>
+>* See [Partner certification exam for Workfront for Experience Manager Assets enhanced connector](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). For information about the exam, see [Exam Guide](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 Before you install the connector, follow these pre-installation steps:
 
@@ -28,6 +32,7 @@ Before you install the connector, follow these pre-installation steps:
    * `/apps/dam/gui/content/foldermetadataschemaeditor`
    * `/apps/dam/cfm/models/editor/components/datatypeproperties`
    * `/apps/settings/dam/cfm/models/formbuilderconfig`
+   * `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
 
 1. This installation requires the knowledge to set a Maven project in [!DNL Experience Manager] as a [!DNL Cloud Service]. Use the following resources to understand how to include a third-party package in your Maven project:
 
@@ -35,6 +40,23 @@ Before you install the connector, follow these pre-installation steps:
    * [Deploy with [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html).
 
 To install the add-on in [!DNL Experience Manager] as a [!DNL Cloud Service], follow these steps:
+
+1. Download the enhanced connector from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
+
+1. [Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) and clone your AEM as a Cloud Service repository from Cloud Manager.
+
+1. Open the cloned AEM as a Cloud Service repository using an IDE of your choice.
+
+1. Place the enhanced connector zip file downloaded in Step 1 at the following path:
+
+   ```TXT
+      /ui.apps/src/main/resources/<zip file>
+   ```
+
+   >[!NOTE]
+   >
+   >If the `resources` folder does not exist, create the folder.
+
 
 1. Add `pom.xml` dependencies:
 
@@ -45,47 +67,28 @@ To install the add-on in [!DNL Experience Manager] as a [!DNL Cloud Service], fo
          <groupId>digital.hoodoo</groupId>
          <artifactId>workfront-tools.ui.apps</artifactId>
          <type>zip</type>
-         <version>1.7.4</version>
+         <version>enhanced connector version number</version>
+         <scope>system</scope>
+         <systemPath>${project.basedir}/ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
       </dependency>
       ```
 
-   1. Add a dependency in all module [!DNL pom.xml].
+       >[!NOTE]
+       >
+       >Ensure to update the enhanced connector version number before copying the dependency to the parent `pom.xml`.
+
+   1. Add a dependency in `all module pom.xml`.
 
       ```XML
          <dependency>
             <groupId>digital.hoodoo</groupId>
             <artifactId>workfront-tools.ui.apps</artifactId>
             <type>zip</type>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
          </dependency>
       ```
 
-1. Add `pom.xml` authentication. 
-
-   1. Include the below repository configuration in the pom.xml within adobe-public profile, so the connector dependencies (above) can be resolved at build time (both locally, and by Cloud Manager). Credentials for repository access will be provided upon the purchase of a license. The credentials will need to be added to the settings.xml file in the servers section.
-
-      ```XML
-      <repository>
-         <id>hoodoo-maven</id>
-         <name>Hoodoo Repository</name>
-         <url>https://gitlab.com/api/v4/projects/12715200/packages/maven</url>
-      </repository>
-      ```
-
-   1. Create a file named `./cloudmanager/maven/settings.xml` in the project root. To support a password-protected Maven repository, see [how to set up your project](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md). Additionally, an example `settings.xml` file for reference. Lastly, update your local `settings.xml` to compile locally.
-
-      ```XML
-         <server>
-            <id>hoodoo-maven</id>
-            <configuration>
-               <httpHeaders>
-                     <property>
-                        <name>Deploy-Token</name>
-                        <value>xxxxxxxxxxxxxxxx</value>
-                     </property>
-               </httpHeaders>
-            </configuration>
-         </server>
-      ```
 
 1. Add `pom.xml` embeds. Add the [!DNL Workfront for Experience Manager enhanced connector] packages to `embeddeds` section of the `pom.xml` of all your subproject. Needs it embedded in the all module `pom.xml`.
 
@@ -99,7 +102,15 @@ To install the add-on in [!DNL Experience Manager] as a [!DNL Cloud Service], fo
       </embedded>
       ```
 
+   The target of the embedded section is set to `/apps/<path-to-project-install-folder>/install`. This JCR path `/apps/<path-to-project-install-folder>` must be included in the filter rules in the `all/src/main/content/META-INF/vault/filter.xml` file. The filter rules for the repository are usually derived from the program name. Use the name of the folder as the target in the existing rules.
+
+1. Push the changes to the repository.
+
+1. Run the pipeline to [deploy the changes to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+
 1. To create a system user configuration, create `wf-workfront-users` in [!DNL Experience Manager] User Group and assign the permission `jcr:all` to `/content/dam`. A system user `workfront-tools` is automatically created and the required permissions are managed automatically. All users from [!DNL Workfront] who use the enhanced connector are automatically added as a part of this group.
+
+For information to update the [!DNL Workfront for Experience Manager enhanced connector] from a previous version to the latest version, click [here](update-workfront-enhanced-connector.md).
 
 ## Configure the connection between [!DNL Experience Manager] as a [!DNL Cloud Service] and [!DNL Workfront] {#configure-connection}
 

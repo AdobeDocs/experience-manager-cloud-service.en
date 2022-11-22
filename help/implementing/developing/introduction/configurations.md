@@ -1,8 +1,8 @@
 ---
 title: Configurations and the Configuration Browser
 description: Understand AEM configurations and how they manage workspace settings in AEM.
+exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 ---
-
 # Configurations and the Configuration Browser {#configuration-browser}
 
 AEM configurations serve to manage settings in AEM and serve as workspaces.
@@ -28,7 +28,7 @@ The AEM administrator as well as authors can consider configurations as workspac
 Configurations can be created for many different features within AEM.
 
 * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 * [Editable Templates](/help/sites-cloud/authoring/features/templates.md)
 * various Cloud Configurations
 
@@ -74,7 +74,7 @@ It is very simple to create a new configuration in AEM by using the Configuratio
      * It can be adjusted if necessary.
 1. Check the type of configurations you wish to allow.
    * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+   * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
    * [Editable Templates](/help/sites-cloud/authoring/features/templates.md)
    * various Cloud Configurations
 1. Tap or click **Create**.

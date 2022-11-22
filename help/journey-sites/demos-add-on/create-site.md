@@ -1,21 +1,21 @@
 ---
 title: Create Demo Site
 description: Create a demo site in AEM based on a library of pre-configured templates.
+exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 ---
-
 # Create Demo Site {#creating-a-site}
 
 Create a demo site in AEM based on a library of pre-configured templates.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Quick Site Creation journey, [Create Program,](create-program.md) you took the first configuration step to create a program for testing purposes and used a pipeline to deploy the add-on content. You should now:
+In the previous document of the AEM Reference Demos Add-On journey, [Create Program,](create-program.md) you took the first configuration step to create a program for testing purposes and used a pipeline to deploy the add-on content. You should now:
 
 * Understand how to use Cloud Manager to create a new program.
 * Know how to activate the Reference Demos Add-On for the new program.
 * Be able to run a pipeline to deploy the add-on content.
 
-This article describes the next step of the process by creating a new site in AEM based on the templates of the Reference Demo Add-On.
+This article describes the next step of the process by creating a new site or AEM Screens project in AEM based on the templates of the Reference Demo Add-On.
 
 ## Objective {#objective}
 
@@ -25,7 +25,7 @@ This document helps you understand how to create a new site based on the templat
 * Know how to create a site based on a template.
 * Understand the basics of navigating the site structure and editing a page.
 
-## Create a Demo Site {#create-site}
+## Create a Demo Site or Screens Project {#create-site}
 
 Once the pipeline has deployed the Reference Demo Add-On, you can access the AEM authoring environment to create demo sites based on the add-on content.
 
@@ -41,11 +41,11 @@ Once the pipeline has deployed the Reference Demo Add-On, you can access the AEM
 
    ![Create site from template](assets/create-site-from-template.png)
 
-1. The site creation wizard starts. In the left column you can see the demo templates that the pipeline deployed to your authoring instance. Tap or click one to select it and show details in the right column. Tap or click **Next**.
+1. The site creation wizard starts. In the left column you can see the demo templates that the pipeline deployed to your authoring instance. Tap or click one to select it and show details in the right column. If you wish to test or demo AEM Screens, be sure to choose the **We.Cafe Site Template**. Tap or click **Next**.
 
    ![Site creation wizard](assets/site-creation-wizard.png)
 
-1. In the next screen, provide a title for your site. A site name can be provided or will be generated from the title if omitted. Tap or click **Create**.
+1. In the next screen, provide a title for your site or Screens project. A site name can be provided or will be generated from the title if omitted. Tap or click **Create**.
 
    * The site title appears in the browsers title bar.
    * The site name becomes part of the URL.
@@ -95,7 +95,10 @@ Now that you have completed this part of the AEM Reference Demo Add-On journey y
 * Know how to create a site based on a template.
 * Understand the basics of navigating the site structure and editing a page.
 
-You can now test the features of AEM using add-on content. To understand how to manage this demo content, continue your AEM Reference Demo Add-On journey by next reviewing the document [Manage Your Demo Sites,](manage.md) where you will learn about the tools available to help you manage your demo sites and how to remove them.
+You can now test the features of AEM using add-on content. You have two options to continue your journey:
+
+* If you wish to fully demo and test AEM Screens content, make sure that you have deployed a site based on the **We.Cafe Site Template** as described previously and continue to [Enable AEM Screens for Your Demo Site.](screens.md)
+* If you only with to demo Sites content, continue to [Manage Your Demo Sites,](manage.md) where you will learn about the tools available to help you manage your demo sites and how to remove them.
 
 ## Additional Resources {#additional-resources}
 
