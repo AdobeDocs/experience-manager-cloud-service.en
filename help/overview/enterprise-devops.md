@@ -1,8 +1,8 @@
 ---
 title: Enterprise DevOps
 description: Learn about the processes, methods and communication required to ease deployment and simplify collaboration.
+exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
 ---
-
 # Enterprise DevOps{#enterprise-devops}
 
 DevOps covers the processes, methods and communication required to:
@@ -102,7 +102,7 @@ Code should always be propagated from bottom to top:
 * then tested again on the staging environments
 * only then should code be deployed to the production environments
 
-The code (e.g. customized web application functionality and design templates) is usually transferred by exporting and importing packages between the different content repositories. Where meaningful, this replication can be configured as an automatic process.
+The code (for example, customized web application functionality and design templates) is usually transferred by exporting and importing packages between the different content repositories. Where meaningful, this replication can be configured as an automatic process.
 
 AEM as a Cloud Service projects often trigger code deployment:
 

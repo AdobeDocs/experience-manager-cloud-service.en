@@ -5,17 +5,15 @@ exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 ---
 # Use AEM Forms as a Cloud Service Communications {#frequently-asked-questions}
 
-**Document manipulation APIs are in pre-release phase and subject to change before actual release.**
-
-Communications capability helps you to create brand-approved, personalized, and standardized documents such as business correspondences, statements, claim processing letters, benefit notices, monthly bills, or welcome kits. 
+Communications capability helps you to create brand-approved, personalized, and standardized documents such as business correspondences, statements, claim processing letters, benefit notices, monthly bills, or welcome kits.
 
 The capability provides APIs to generate and manipulate the documents. You can generate or manipulate a document on demand or create a batch job to generate multiple documents at defined intervals. Communications APIs provide:
 
 * streamlined on-demand and batch documentation generation capabilities.
 
-* capability to combine, rearrange, and validate PDF documents on-demand. 
+* capability to combine, rearrange, and validate PDF documents on-demand.
 
-* HTTP APIs for easier integration with external systems. Separate APIs for on demand (low-latency) and batch operations (high-throughput operations) are included. 
+* HTTP APIs for easier integration with external systems. Separate APIs for on demand (low-latency) and batch operations (high-throughput operations) are included.
 
 * a secure access to data. Communications APIs connect to and access data only from customer designated data repositories, making Communications highly secure.
 
@@ -24,22 +22,22 @@ A credit card statement can be created using Communications APIs. This sample st
 
 ## Document generation
 
-Communications document generation APIs help to combine a template (XFA or PDF) with customer data ([XML data](#form-data)) to generate documents in PDF and Print Formats like PS, PCL, DPL, IPL, and ZPL formats. These APIs utilize [PDF and XFA templates](#supported-document-types) with [XML data](communications-known-issues-limitations.md#form-data) to generate a single document on demand or multiple documents using a batch job.
+Communications document generation APIs help to combine a template (XFA or PDF) with customer data (XML) to generate documents in PDF and Print Formats like PS, PCL, DPL, IPL, and ZPL formats. These APIs utilize PDF and XFA templates with [XML data](communications-known-issues-limitations.md#form-data) to generate a single document on demand or multiple documents using a batch job.
 
 Typically, you create a template using [Designer](use-forms-designer.md) and use Communications APIs to merge data with the template. Your application can send the output document to a network printer, a local printer, or to a storage system for archival. A typical out of the box and custom workflows look like the following:
 
 ![Communications document generation Workflow](assets/communicaions-workflow.png)
 
-Depending on the use case, you can also make these documents available for download via your Website or a storage server. 
+Depending on the use case, you can also make these documents available for download via your Website or a storage server.
 
-Some examples of document generation APIs are: 
+Some examples of document generation APIs are:
 
 ### Create PDF documents {#create-pdf-documents}
 
 You can use the document generation APIs to create a PDF document that is based on a form design and XML form data. The output is a non-interactive PDF document. That is, users cannot enter or modify the form data. A basic workflow is to merge XML form data with a form design to create a PDF document. The following Illustration shows the merging of a form design and XML form data to produce a PDF document.
 
 ![Create PDF documents](assets/outPutPDF_popup.png)
-Figure: Typical workflow to create a PDF document 
+Figure: Typical workflow to create a PDF document
 
 ### Create PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) document {#create-PS-PCL-ZPL-documents}
 
@@ -57,7 +55,7 @@ The following illustration shows Communications APIs processing an XML data file
 
 ### Processing batch data to create multiple documents {#processing-batch-data-to-create-multiple-documents}
 
-You can use document generation APIs to create separate documents for each record within an XML batch data source. You can generate documents in bulk and asynchronous mode. You can configure various parameters for the conversion and then start the batch process. 
+You can use document generation APIs to create separate documents for each record within an XML batch data source. You can generate documents in bulk and asynchronous mode. You can configure various parameters for the conversion and then start the batch process.
 
 ![Create PDF Documents](assets/ou_OutputBatchMany_popup.png)
 
@@ -91,14 +89,13 @@ An interactive PDF document contains various elements that constitute a form. Th
 
 When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form. -->
 
+## Document manipulation
 
-## (Pre-release) Document manipulation
-
-Communications document manipulation APIs help to combine, rearrange, and validate PDF documents. Typically, you create a DDX and submit it to document manipulation APIs to assemble or rearrange a document. The DDX document provides instructions on how to use the source documents to produce a set of required documents. The DDX reference documentation provides detailed information about all the supported operations. Some examples of document manipulation are: 
+Communications document manipulation APIs help to combine, rearrange, and validate PDF documents. Typically, you create a DDX and submit it to document manipulation APIs to assemble or rearrange a document. The [DDX document](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) provides instructions on how to use the source documents to produce a set of required documents. The DDX reference documentation provides detailed information about all the supported operations. Some examples of document manipulation are:
 
 ### Assemble PDF documents
 
-You can use the document manuaplation APIs to assemble two or more PDF or XDP documents into a single PDF document or PDF Portfolio. Here are some of the ways you can assemble PDF documents:
+You can use the document manipulation APIs to assemble two or more PDF or XDP documents into a single PDF document or PDF Portfolio. Here are some of the ways you can assemble PDF documents:
 
 * Assemble a simple PDF document
 * Create a PDF Portfolio
@@ -111,7 +108,7 @@ Figure: Assembling a simple PDF document from multiple PDF documents
 
 ### Disassemble PDF documents
 
-You can use the document manuaplation APIs to disassemble a PDF document. The APIs can extract pages from the source document or divide a source document based on bookmarks. Typically, this task is useful if the PDF document was originally created from many individual documents, such as a collection of statements.
+You can use the document manipulation APIs to disassemble a PDF document. The APIs can extract pages from the source document or divide a source document based on bookmarks. Typically, this task is useful if the PDF document was originally created from many individual documents, such as a collection of statements.
 
 * Extract pages from a source document
 * Divide a source document based on bookmarks
@@ -121,7 +118,7 @@ Figure: Dividing a source document based on bookmarks into multiple documents
 
 ### Convert to and validate PDF/A-compliant documents
 
-You can use the document manuaplation APIs to convert a PDF document to a PDF/A-compliant document and to determine whether a PDF document is PDF/A-compliant. PDF/A is an archival format meant for long-term preservation of the document’s content. The fonts are embedded within the document, and the file is uncompressed. As a result, a PDF/A document is typically larger than a standard PDF document. Also, a PDF/A document does not contain audio and video content.
+You can use the document manipulation APIs to convert a PDF document to a PDF/A-compliant document and to determine whether a PDF document is PDF/A-compliant. PDF/A is an archival format meant for long-term preservation of the document’s content. The fonts are embedded within the document, and the file is uncompressed. As a result, a PDF/A document is typically larger than a standard PDF document. Also, a PDF/A document does not contain audio and video content.
 
 ## Types of communications APIs
 
@@ -137,7 +134,7 @@ Communications capability is available as a standalone and add-on module for For
 
 After onboarding, to enable Communications capability for your  Forms as a Cloud Service environment:
 
-1. Log in to Cloud Manager and open your AEM Forms as a Cloud Service Instance. 
+1. Log in to Cloud Manager and open your AEM Forms as a Cloud Service Instance.
 
 1. Open the Edit Program option, go to the Solutions & Add-ons tab, and select the **[!UICONTROL Forms - Communications]** option.
 
@@ -145,7 +142,7 @@ After onboarding, to enable Communications capability for your  Forms as a Cloud
 
     If you have already enabled the **[!UICONTROL Forms - Digital Enrollment]** option, then select the **[!UICONTROL Forms - Communications Add-On]** option.  
 
-   ![Addon](assets/add-on.png) 
+   ![Addon](assets/add-on.png)
 
 1. Click **[!UICONTROL Update]**.
 
@@ -153,11 +150,10 @@ After onboarding, to enable Communications capability for your  Forms as a Cloud
 
 >[!NOTE]
 >
-> To enable and configure document manipulation APIs, add the following rule to [Dispatcher configuration](setup-local-development-environment.md#forms-specific-rules-to-dispatcher): 
+> To enable and configure document manipulation APIs, add the following rule to [Dispatcher configuration](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
-
 
 <!--
 
@@ -207,8 +203,6 @@ Communications APIs can create separate documents for each record within an XML 
 The following illustration also shows Communications APIs processing an XML data file that contains multiple records. However, assume that you instruct the APIs to create a single PDF document that contains all data records. In this situation, the APIs generate one document that contains all of the records.
 
 The following illustration shows Communications APIs processing an XML data file that contains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
-
-
 
 ### Processing batch data to create multiple documents {#processing-batch-data-to-create-multiple-documents}
 
