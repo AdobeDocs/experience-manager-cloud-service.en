@@ -35,6 +35,10 @@ Customers are advised to review if they use the feature/capability in their curr
 | [!DNL Assets]       | [Certain workflow steps](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in `DAM Asset Update` workflow are not supported, including calling command-line tools like [!DNL ImageMagick]. | [Asset microservices](/help/assets/asset-microservices-overview.md) provide a replacement for many workflows. For custom processing, use [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets]       | FFmpeg transcoding of videos. | For FFmpeg thumbnail generation, use [Asset microservices](/help/assets/asset-microservices-overview.md). For FFmpeg transcoding, use [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation]       | Tree replication UI under the replication agent's "Distribute" tab (removal after September 30, 2021) | [Manage publication](/help/operations/replication.md#manage-publication) or [publish content tree workflow](/help/operations/replication.md#publish-content-tree-workflow) approaches |
+| [!DNL Foundation]       | Neither the replication agent admin screen's Distribute tab nor the Replication API can be used to replicate content packages over 10MB (enforcement after September 12, 2022) | [Manage publication](/help/operations/replication.md#manage-publication) or [publish content tree workflow](/help/operations/replication.md#publish-content-tree-workflow) approaches |
+
+
+| [!DNL Foundation]       | Neither the replication agent admin screen's Distribute tab nor the Replication API can be used to replicate content packages over 10MB. Instead, use either [Manage publication](/help/operations/replication.md#manage-publication) or [publish content tree workflow](/help/operations/replication.md#publish-content-tree-workflow) |
 
 ## Removed Features {#removed-features}
 

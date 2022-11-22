@@ -1,11 +1,11 @@
 ---
-title: Overview of Adobe Experience Manager as a Cloud Service
-description: Adobe Experience Manager as a Cloud Service overview self-help resources and documentation links
+title: Getting started with Experience Manager as a Cloud Service
+description: Learn how Experience Manager as a Cloud Service works and what the software can do for you.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
 ---
 # Experience Manager as a Cloud Service Overview {#aem-overview-guide}
 
-This page lists self-help resources giving an introduction to, and overview of, Experience Manager as a Cloud Service.
+Start here to learn how Experience Manager as a Cloud Service works and what the software can do for you.
 
 ## Key Overview Articles {#key-articles}
 
@@ -20,7 +20,7 @@ This page lists self-help resources giving an introduction to, and overview of, 
 |---|---|
 |[Release Notes](/help/release-notes/home.md)|This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what is new, deprecated and removed features, and known issues.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
-|[Onboarding](/help/onboarding/home.md)|This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
+|[Onboarding](/help/journey-onboarding/overview.md)|This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.|
 |[Assets User Guide](/help/assets/home.md)|Understand how to use and administer Experience Manager Assets as a Cloud Service.|
 |[Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md)|Understand the transition journey to Cloud Service.|
@@ -36,7 +36,7 @@ This page lists self-help resources giving an introduction to, and overview of, 
 * [Dispatcher Documentation](/help/implementing/dispatcher/overview.md)
 * [HTL Documentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager Documentation](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+* [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [GDPR Readiness](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)

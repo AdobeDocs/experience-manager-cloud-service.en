@@ -1,6 +1,6 @@
 ---
 title: Remove external dependencies for existing installations
-description: Install [!DNL Workfront for Experience Manager enhanced connector]
+description: Remove external dependencies for existing installations
 feature: Integrations
 exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
 ---

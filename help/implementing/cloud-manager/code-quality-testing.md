@@ -36,6 +36,12 @@ Issues identified by code quality testing are assigned to one of three categorie
 
 * **Info** - These are issues which are provided purely for informational purposes and have no impact on the pipeline execution
 
+>[!NOTE]
+>
+>In a code quality only pipeline, important failures in the Code Quality gate cannot be overridden since the code quality testing step is the final step in the pipeline.
+
+### Ratings {#ratings}
+
 The results of this step is delivered as **Ratings**. 
 
 The following table summarizes the ratings and failure thresholds for each of the critical, important and information categories.
@@ -53,7 +59,7 @@ The following table summarizes the ratings and failure thresholds for each of th
 
 >[!NOTE]
 >
->Refer to [SonarQube's metric definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
+>Refer to [SonarQube's Metric Definitions](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) for more detailed definitions.
 
 >[!NOTE]
 >

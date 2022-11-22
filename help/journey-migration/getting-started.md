@@ -29,9 +29,13 @@ The migration journey to Cloud Service involves the following phases:
 * Once everything is in place, you can perform the migration with the [Go-Live Phase](/help/journey-migration/go-live.md)
 * Finally, make sure to monitor for issues and improve performance after the migration is complete, in the [Post Go-live Phase](/help/journey-migration/post-go-live.md).
 
-The figure below shows a pictorial representation of the recommended transition journey to AEM as a Cloud Service.
+The figure below shows a high level representation of the recommended transition journey to AEM as a Cloud Service.
 
 ![image](/help/journey-migration/assets/move-aemcloud-process.png)
+
+You can also consult the diagram below for a more detailed, granular view of the migration journey.
+
+![image](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 
