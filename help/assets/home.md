@@ -1,14 +1,14 @@
 ---
-title: [!DNL Assets] as a [!DNL Cloud Service] Guide
-description: [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] self-help resources and documentation links
+title: Assets as a Cloud Service guide
+description: Learn about Assets as a Cloud Service and get updated on what's new.
 landing-page-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
 ---
-# [!DNL Assets] as a [!DNL Cloud Service] Guide {#aem-assets-guide}
+# [!DNL Assets as a Cloud Service] guide {#aem-assets-guide}
 
-The following self-help resources are available for [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
+Learn about [!DNL AEM Assets as a Cloud Service] and get updated on what's new.
 
 ## Key [!DNL Assets] articles {#key-articles}
 
@@ -24,7 +24,7 @@ The following self-help resources are available for [!DNL Experience Manager Ass
 |[Overview](/help/overview/home.md)|Introductory overview, and glossary, of [!DNL Experience Manager] as a [!DNL Cloud Service].|
 |[Release Notes](/help/release-notes/home.md)|Release notes, what is new, deprecated and removed features, and the known issues.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding [!DNL Experience Manager] as a [!DNL Cloud Service].|
-|[Onboarding](/help/onboarding/home.md)|Get started with [!DNL Experience Manager] as a [!DNL Cloud Service] &mdash; get access and protect important data.|
+|[Onboarding Journey](/help/journey-onboarding/overview.md)|Get started with [!DNL Experience Manager] as a [!DNL Cloud Service] &mdash; get access and protect important data.|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to author with, and administer, [!DNL Experience Manager Sites] as a [!DNL Cloud Service].|
 |[Implementing User Guide](/help/implementing/home.md)|Understand how to build and customize experiences using Experience Manager's powerful features by exploring these development and deployment topics.|
 |[Headless Developer Journey](/help/journey-headless/developer/overview.md)|Explore this guided journey through the powerful and flexible headless features of Experience Manager to prepare for your first headless project.|
