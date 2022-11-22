@@ -52,7 +52,7 @@ The following table lists the names of events that occur for the ContextHub UI.
 | `ContextHub.Constants.EVENT_UI_CONTAINER_OPENED` |Fired when the ContextHub UI is opened |`ui-container-opened` |
 | `ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED` |Fired when the ContextHub UI is collapsed |`ui-container-closed` |
 | `ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED` |Fired when a property is modified |`ui-property-modified` |
-| `ContextHub.Constants.EVENT_UI_RENDERED` |Fired every time the ContextHub UI is rendered (e.g. after a property change) |`ui-rendered` |
+| `ContextHub.Constants.EVENT_UI_RENDERED` |Fired every time the ContextHub UI is rendered (for example, after a property change) |`ui-rendered` |
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` |Fired when UI container gets initialized |`ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` |Indicates active UI mode |`/_/active-ui-mode` |
 
