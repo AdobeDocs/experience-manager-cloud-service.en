@@ -1,17 +1,22 @@
 ---
-title: Headless Content Delivery using Content Fragments with GraphQL
-description: Learn how to use AEM's Content Fragments with GraphQL for headless content delivery.
-feature: Content Fragments
-role: User
+title: Headless Content Delivery using Content Fragments with GraphQL (Assets - Content Fragments)
+description: Learn the basic concepts of realizing an AEM Headless CMS using Content Fragments with GraphQL for headless content delivery.
+feature: Content Fragments, GraphQL API
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 ---
 # Headless Content Delivery using Content Fragments with GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-With Adobe Experience Manager (AEM) as a Cloud Service, you can use Content Fragments, together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to headlessly deliver structured content for use in your applications. The ability to customize a single API query allows you to retrieve and deliver the specific content that you want/need to render (as the response to the single API query).
+With Content Fragments and the GraphQL API you can use Adobe Experience Manager (AEM) as a Cloud Service as a Headless Content Management System (CMS). 
+
+This is achieved using Content Fragments, together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to headlessly deliver structured content for use in your applications. The ability to customize a single API query allows you to retrieve and deliver the specific content that you want/need to render (as the response to the single API query).
 
 >[!NOTE]
 >
->See [Headless and AEM](/help/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
+>See also:
+>
+>* [What is Headless?](/help/headless/what-is-headless.md) for an introduction to Headless concepts and terminology.
+>
+>* [Headless and AEM](/help/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
 
 >[!NOTE]
 >
@@ -22,11 +27,7 @@ With Adobe Experience Manager (AEM) as a Cloud Service, you can use Content Frag
 
 ## Headless CMS {#headless-cms}
 
-A Headless Content Management System (CMS) is:
-
-* "*A headless content management system, or headless CMS, is a back-end only content management system (CMS) built from the ground up as a content repository that makes content accessible via an API for display on any device.*
-
-  See [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+A Headless Content Management System (CMS) is a back-end only content management system, designed and built explicitly as a content repository that makes content accessible via an API, for display on any device.
 
 In terms of authoring Content Fragments in AEM this means that:
 

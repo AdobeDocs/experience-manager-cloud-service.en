@@ -1,12 +1,12 @@
 ---
-title: Adobe Experience Manager as a Cloud Service Sites
-description: Adobe Experience Manager as a Cloud Service Sites self-help resources and documentation links
+title: Support resources for Experience Manager as a Cloud Service Sites
+description: Get a complete list of all our AEM Cloud Services support resources. Find answers to your AEM Sites as Cloud Service questions.
 landing-page-description: Understand how to author with, and administer, AEM Sites as a Cloud Service.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 ---
 # AEM Sites as a Cloud Service {#aem-sites-guide}
 
-This page lists the self-help resources regarding Sites on Experience Manager as a Cloud Service.
+This page provides a complete list of all our AEM Cloud Services support resources. Get answers to your [!DNL AEM Sites as a Cloud Service] questions.
 
 ## Key Sites Articles {#key-articles}
 
@@ -28,7 +28,7 @@ This page lists the self-help resources regarding Sites on Experience Manager as
 |[Overview](/help/overview/home.md)|This guide provides an overview of Experience Manager as a Cloud service, including an introduction, terminology, architecture, etc.|
 |[Release Notes](/help/release-notes/home.md)|This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what is new, deprecated and removed features, and known issues.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
-|[Onboarding](/help/onboarding/home.md)|This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
+|[Onboarding Journey](/help/journey-onboarding/overview.md)|This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
 |[Assets User Guide](/help/assets/home.md)|Understand how to use and administer Experience Manager Assets as a Cloud Service.|
 |[Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md)|Understand the transition journey to Cloud Service.|
 |[Implementing User Guide](/help/implementing/home.md)|Understand how to build and customize experiences using AEM's powerful features by exploring these development and deployment topics.|
@@ -43,7 +43,7 @@ This page lists the self-help resources regarding Sites on Experience Manager as
 * [Dispatcher Documentation](/help/implementing/dispatcher/overview.md)
 * [HTL Documentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager Documentation](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+* [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [GDPR Readiness](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)

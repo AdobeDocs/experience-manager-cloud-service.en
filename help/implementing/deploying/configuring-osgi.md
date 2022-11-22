@@ -12,7 +12,7 @@ exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 
 [OSGi](https://www.osgi.org/) is a fundamental element in the technology stack of Adobe Experience Manager (AEM). It is used to control the composite bundles of AEM and its configurations.
 
-OSGi provides the standardized primitives that allow applications to be constructed from small, reusable, and collaborative components. These components can be composed into an application and deployed. This allows easy management of OSGi bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component is contained in one of the various bundles. For more information, see the [OSGi specification](https://www.osgi.org/Specifications/HomePage).
+OSGi provides the standardized primitives that allow applications to be constructed from small, reusable, and collaborative components. These components can be composed into an application and deployed. This allows easy management of OSGi bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component is contained in one of the various bundles. For more information, see the [OSGi specification](https://help.eclipse.org/latest/index.jsp).
 
 You can manage the configuration settings for OSGi components through configuration files that are part of an AEM code project.
 
@@ -32,13 +32,17 @@ an OSGi configuration file is defined at:
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-following the cfg.json OSGi configuration format.
+following the `cfg.json` OSGi configuration format.
 
 >[!NOTE]
 >
->Prior versions of AEM supported OSGi configuration files using different file formats such as .cfg., .config and as XML sling:OsgiConfig resource definitions. These formats are superseded by the cfg.json OSGi configuration format.
+>Prior versions of AEM supported OSGi configuration files using different file formats such as `.cfg`, `.config` and as XML `sling:OsgiConfig` resource definitions. These formats are superseded by the `.cfg.json` OSGi configuration format.
 
 ## Runmode Resolution {#runmode-resolution}
+
+>[!TIP]
+>
+>AEM 6.x supports custom runmodes, however AEM as a Cloud Service does not. AEM as a Cloud Service support an [exact set of runmodes](./overview.md#runmodes). Any variation in OSGi configurations between AEM as a Cloud Service environments must be handled using [OSGi configuration environment variables](#environment-specific-configuration-values).
 
 Specific OSGi configurations can be targeted to specific AEM instances by using runmodes. To use runmode, create config folders under `/apps/example` (where example is your project name), in the format:
 
@@ -54,9 +58,35 @@ This rule's granularity is at a PID level. This means you cannot define some pro
 
 >[!NOTE]
 >
->A `config.preview` OSGI configuration folder **cannot** be declared in the same way a `config.publish` can be declared folder. Instead, the preview tier inherits its OSGI configuration from the publish tier's values. 
+>A `config.preview` OSGi configuration folder **cannot** be declared in the same way a `config.publish` can be declared folder. Instead, the preview tier inherits its OSGi configuration from the publish tier's values. 
 
-When developing locally, a runmode startup parameter can be passed in to dictate which runmode OSGI configuration is used.
+When developing locally, a runmode startup parameter, `-r`, is used to specify the runmode OSGI configuration.
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
+
+### Verifying runmodes
+
+AEM as a Cloud Service runmodes are well defined based on the environment type and service. Review the [complete list of available AEM as a Cloud Service runmodes](./overview.md#runmodes).
+
+OSGi configuration values specified by runmode can be verified by:
+
+1. Opening the AEM as a Cloud Services environment's [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
+1. Selecting the service tier(s) to inspect, using the __Pod__ dropdown
+1. Selecting the __Status__ tab
+1. Selecting __Configurations__ from the __Status Dump__ dropdown
+1. Selecting the __Get Status__ button
+
+The resulting view displays all OSGi component configurations for the selected tier(s) with their applicable OSGi configuration values. These values can be cross-referenced with the OSGi configuration values in the AEM project's source code under `/apps/example/osgiconfig/config.<runmode(s)>`.
+
+
+To verify the appropriate OSGi configuration values are applied:
+
+1. In the Developer Console's Configuration output
+1. Locate the `pid` representing the OSGi configuration to verify; this is the name of the OSGi configuration file in the AEM project's source code.
+1. Inspect the `properties` list for the `pid` and verify the key and values match the OSGi configuration file in the AEM project source code for the runmode being verified.=
+
 
 ## Types of OSGi Configuration Values {#types-of-osgi-configuration-values}
 
@@ -86,7 +116,7 @@ There are three varieties of OSGi configuration values that can be used with Ado
    }
    ```
 
-   Note that a single OSGi configuration file can use any combination of these configuration value types in conjunction. For example:
+   A single OSGi configuration file can use any combination of these configuration value types in conjunction. For example:
 
    ```json
    {
@@ -138,7 +168,7 @@ There are two ways create OSGi configurations, as described below. The former ap
 JSON formatted OSGi configuration files can be written by hand directly in the AEM project. This is often the quickest way to create OSGi configurations for well-known OSGi components, and especially custom OSGi components that have been designed and developed by the same developer defining the configurations. This approach can also be used to copy/paste and update configurations for the same OSGi component across various runmode folders.
 
 1. In your IDE, open the `ui.apps` project, locate or create the config folder (`/apps/.../config.<runmode>`) which targets the runmodes the new OSGi configuration need to effect
-1. In this config folder, create a new `<PID>.cfg.json` file. The PID is the Persistent Identity of the OSGi component. It is usually the full class name of the OSGi component implementation. For example:
+1. In this config folder, create a `<PID>.cfg.json` file. The PID is the Persistent Identity of the OSGi component. It is usually the full class name of the OSGi component implementation. For example:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
    Note that OSGi configuration factory file names use the `<factoryPID>-<name>.cfg.json` naming convention
 1. Open the new `.cfg.json` file, and define the key/value combinations for the OSGi property and value pairs, following the [JSON OSGi configuration format](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
@@ -166,7 +196,7 @@ The AEM SDK Quickstart Jar's AEM Web Console can be used configure OSGi componen
 1. The OSGi Configuration in JSON format will display in the Serialized Configuration Properties section
    ![OSGi Installer Configuration Printer](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. In your IDE, open the `ui.apps` project, locate or create the config folder (`/apps/.../config.<runmode>`) which targets the runmodes the new OSGi configuration need to effect.
-1. In this config folder, create a new `<PID>.cfg.json` file. The PID is the same value from Step 5.
+1. In this config folder, create a `<PID>.cfg.json` file. The PID is the same value from Step 5.
 1. Paste the Serialized Configuration Properties from Step 10 into the `.cfg.json` file.
 1. Save your changes to the new `.cfg.json` file.
 1. Add and commit your new OSGi configuration file to Git.
@@ -194,7 +224,7 @@ OSGi configuration should assign a placeholder for the variable that is intended
 use $[env:ENV_VAR_NAME]
 ```
 
-Customers should only use this technique for OSGI configuration properties related to their custom code; it must not be used to override Adobe-defined OSGI configuration.
+Customers should only use this technique for OSGi configuration properties related to their custom code; it must not be used to override Adobe-defined OSGi configuration.
 
 >[!NOTE]
 >
@@ -259,14 +289,28 @@ The values for secrets are read from files. Therefore for each placeholder using
 
 For example if `$[secret:server_password]` is used, a text file named **server_password** must be created. All these secret files must be stored in the same directory and the framework property `org.apache.felix.configadmin.plugin.interpolation.secretsdir` must be configured with that local directory.
 
+>[!CAUTION]
+>
+>File extensions are not allowed for the text file.
+>
+>So for the above example, the text file must be named **server_password** - without a file extension.
+
+The `org.apache.felix.configadmin.plugin.interpolation.secretsdir` is an Sling framework property; so this property is not set in the felix console (/system/console), but it is set in the sling.properties file that is used when the system boots. This file can be found in the /conf subdir of the extracted Jar/install folder (crx-quickstart/conf).
+
+example: add this line to the end of the 'crx-quickstart/conf/sling.properties'-file to configure 'crx-quickstart/secretsdir' as secret folder:
+
+```
+org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secretsdir
+```
+
 ### Author versus Publish Configuration {#author-vs-publish-configuration}
 
-If an OSGI property requires different values for author versus publish:
+If an OSGi property requires different values for author versus publish:
 
 * Separate `config.author` and `config.publish` OSGi folders must be used, as described in the [Runmode Resolution section](#runmode-resolution).
 * There are two options of creating the independent variable names that should be used:
-  * the first option, which is recommended: in all OSGI folders (like `config.author` and `config.publish`) declared to define different values, use the same variable name. For example
-  `$[env:ENV_VAR_NAME;default=<value>]`, where the default corresponds to the default value for that tier (author or publish). When setting the environment variable via [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) or via a client, differentiate between the tiers using the "service" parameter as described in this [API reference documentation](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). The "service" parameter will bind the variable's value to the appropriate OSGI tier. It can be "author" or "publish" or "preview".
+  * the first option, which is recommended: in all OSGi folders (like `config.author` and `config.publish`) declared to define different values, use the same variable name. For example
+  `$[env:ENV_VAR_NAME;default=<value>]`, where the default corresponds to the default value for that tier (author or publish). When setting the environment variable via [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) or via a client, differentiate between the tiers using the "service" parameter as described in this [API reference documentation](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). The "service" parameter will bind the variable's value to the appropriate OSGi tier. It can be "author" or "publish" or "preview".
   * the second option, which is to declare distinct variables using a prefix such as `author_<samevariablename>` and `publish_<samevariablename>`
 
 ### Configuration Examples {#configuration-examples}
@@ -275,7 +319,7 @@ In the examples below, assume that there are three dev environments, in addition
 
 **Example 1**
 
-The intent is for the value of the OSGI property `my_var1` to be the same for stage and prod, but differ for each of the three dev environments.
+The intent is for the value of the OSGi property `my_var1` to be the same for stage and prod, but differ for each of the three dev environments.
 
 <table>
 <tr>
@@ -318,7 +362,7 @@ config.dev
 
 **Example 2**
 
-The intent is for the value of the OSGI property `my_var1` to differ for stage, prod, and for each of the three dev environments. Thus the Cloud Manager API must be called to set the value for `my_var1` for each dev env.
+The intent is for the value of the OSGi property `my_var1` to differ for stage, prod, and for each of the three dev environments. Thus the Cloud Manager API must be called to set the value for `my_var1` for each dev env.
 
 <table>
 <tr>
@@ -459,7 +503,7 @@ config.dev
 
 ## Cloud Manager API Format for Setting Properties {#cloud-manager-api-format-for-setting-properties}
 
-See [this page](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) about how the API has to be configured. 
+See [this page](https://developer.adobe.com/experience-cloud/cloud-manager/docs/) about how the API has to be configured. 
 >[!NOTE]
 >
 >Ensure that the used Cloud Manager API has assigned the role "Deployment Manager - Cloud Service". Other roles are not able to execute all below commands.
@@ -490,7 +534,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >[!NOTE]
 >Default variables are not set via API, but rather in the OSGi property itself.
 >
->See [this page](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) for more information.
+>See [this page](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) for more information.
 
 ### Getting values via API {#getting-values-via-api}
 
@@ -498,7 +542,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 GET /program/{programId}/environment/{environmentId}/variables
 ```
 
-See [this page](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables) for more information.
+See [this page](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) for more information.
 
 ### Deleting values via API {#deleting-values-via-api}
 
@@ -508,7 +552,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 To delete a variable, include it with an empty value.
 
-See [this page](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) for more information.
+See [this page](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) for more information.
 
 ### Getting Values via the Command Line {#getting-values-via-cli}
 

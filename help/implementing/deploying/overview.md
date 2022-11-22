@@ -61,7 +61,7 @@ As application changes due to the Blue-Green deployment pattern are enabled by a
 
 For customers with existing code bases, it is critical to go through the repository restructuring exercise described in AEM documentation to ensure that content formerly under the /etc is moved to the right location.
 
-Some additional restrictions apply for these code packages, for example [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html) are not supported.
+Some additional restrictions apply for these code packages, for example [install hooks](https://jackrabbit.apache.org/filevault/installhooks.html) are not supported.
 
 ## OSGI Configuration {#osgi-configuration}
 
@@ -98,7 +98,7 @@ After switchover to new version of application:
   * Folders (add, modify, remove)
   * Editable templates (add, modify, remove)
   * Context Aware configuration (anything under `/conf`) (add, modify, remove)
-  * Scripts (packages can trigger Install hooks at various stages of the install process of package installation. See the [Jackrabbit filevault documentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. Note that AEM CS currently uses Filevault version 3.4.0, which limits install hooks to admin users, system users,and member of the administrators group)).
+  * Scripts (packages can trigger Install hooks at various stages of the install process of package installation. <!-- MISDIRECTED REQUEST, 421 ERROR, CAN'T FIND CORRECT PATH See the [Jackrabbit filevault documentation](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. --> Note that AEM CS currently uses Filevault version 3.4.0, which limits install hooks to admin users, system users,and member of the administrators group)).
 
 It is possible to limit mutable content installation to author or publish by embedding packages in an install.author or install.publish folder under `/apps`. Restructuring to reflect this separation was done in AEM 6.5 and details around recommended project restructuring can be found in the [AEM 6.5 documentation.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
@@ -185,7 +185,7 @@ Any content-packages installed via Cloud Manager (both mutable and immutable) wi
 
 It is common for customers to include pre-built packages from third party sources such as software vendors like Adobe's translation partners. The recommendation is to host these packages in a remote repository and reference them in the `pom.xml`. This is possible for public repositories and also for private repositories with password protection, as described in [password protected maven repositories](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
-If storing the package in a remote repository is not possible, customers can place in a local, file system based Maven repository, which is committed to SCM as part of the project, and referenced by whatever depends on it. The repository would be declared in the project pomas illustrated below:
+If storing the package in a remote repository is not possible, customers can place in a local, file system based Maven repository, which is committed to SCM as part of the project, and referenced by whatever depends on it. The repository would be declared in the project pom as illustrated below:
 
 
 ```
@@ -200,7 +200,7 @@ If storing the package in a remote repository is not possible, customers can pla
 
 Any included third party packages must be adhere to the AEM as a Cloud Service Service coding and packaging guidelines described in this article, otherwise its inclusion will result in a deployment failure.
 
-The following Maven POM XML snippet shows how 3rd party packages can be embedded in the project's "Container" package, typically named **'all'**, via the **filevault-package-maven-plugin** Maven plugin configuration.
+The following Maven `POM.xml` snippet shows how 3rd party packages can be embedded in the project's "Container" package, typically named **'all'**, via the **filevault-package-maven-plugin** Maven plugin configuration.
 
 ```
 ...
@@ -210,26 +210,18 @@ The following Maven POM XML snippet shows how 3rd party packages can be embedded
   <extensions>true</extensions>
   <configuration>
       ...
-      <subPackages>
-           
-          <!-- Include the application's ui.apps and ui.content packages -->
+      <embeddeds>
+
           ...
- 
-          <!-- Include any other extra packages such as AEM WCM Core Components -->
-          <!-- Set the version for all dependencies, including 3rd party packages, in the project's Reactor POM -->
-          <subPackage>
-              <groupId>com.adobe.cq</groupId>
-              <artifactId>core.wcm.components.all</artifactId>
-              <filter>true</filter>
-          </subPackage>
- 
- 
-          <subPackage>
-              <groupId>com.3rdparty.groupId</groupId>
-              <artifactId>core.3rdparty.artifactId</artifactId>
-              <filter>true</filter>
-          </subPackage>
-      <subPackages>
+
+          <!-- Include any other extra packages  -->
+          <embedded>
+              <groupId>com.vendor.x</groupId>
+              <artifactId>vendor.plug-in.all</artifactId>
+              <type>zip</type>
+              <target>/apps/vendor-packages/container/install</target>
+          </embedded>
+      <embeddeds>
   </configuration>
 </plugin>
 ...
@@ -303,13 +295,17 @@ The supported runmode configurations are:
 * **config.publish.dev** (*Applies to AEM Dev Publish service*)
 * **config.publish.stage** (*Applies to AEM Staging Publish service*)
 * **config.publish.prod** (*Applies to AEM Production Publish service*) 
-* **config.dev** (*Applies to AEM Dev services)
-* **config.stage** (*Applies to AEM Staging services)
-* **config.prod** (*Applies to AEM Production services)
+* **config.dev** (*Applies to AEM Dev services*)
+* **config.stage** (*Applies to AEM Staging services*)
+* **config.prod** (*Applies to AEM Production services*)
 
 The OSGI configuration that has the most matching runmodes is used.
 
-When developing locally, a runmode startup parameter can be passed in to dictate which runmode OSGI configuration will be used.
+When developing locally, a runmode startup parameter, `-r`, is used to specify the runmode OSGI configuration.
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
 
 <!-- ### Performance Monitoring {#performance-monitoring}
 

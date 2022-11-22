@@ -19,7 +19,19 @@ Communications provide APIs for on-demand and scheduled document generation. You
 
 ## Use Synchronous operations {#batch-operations}
 
-A synchronous operation is a process of generating documents in a linear manner. It supports two type of authentication: 
+A synchronous operation is a process of generating documents in a linear manner. Separate APIs are available to:
+
+* Generates a PDF Document from a template and merge data to it.
+* Generate a PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) document from an XDP file or PDF document.
+* Assemble PDF documents
+* Disassemble PDF documents
+* Convert a document to PDF/A-compliant document
+* Validate a PDF/A-compliant document
+
+
+### Authenticate an API call
+
+Synchronous operations support two type of authentication:
 
 * **Basic authentication**: Basic authentication is a simple authentication scheme built into the HTTP protocol. The client sends HTTP requests with the Authorization header that contains the word Basic followed by a space and a base64-encoded string username:password. For example, to authorize as admin / admin the client sends Basic [base64-encoded string username]: [base64-encoded string password].
 
@@ -35,7 +47,8 @@ A synchronous operation is a process of generating documents in a linear manner.
     >
     >Adobe recommends using token-based authentication on a production environment. 
 
-### Pre-requisites {#pre-requisites}
+
+### (Only for Document Generation APIs) Configure assets and permissions 
 
 To use Synchronous APIs, the following is required: 
 
@@ -44,7 +57,7 @@ To use Synchronous APIs, the following is required:
 * Users with Experience Manager administrator privileges
 * Upload templates and other assets to your Experience Manager Forms Cloud Service instance
 
-#### Upload templates and other assets to your Experience Manager instance
+### (Only for Document Generation APIs) Upload templates and other assets to your Experience Manager instance
 
 An organization typically has multiple templates. For example, one template each for credit card statements, benefits statements, and claim applications. Upload all such XDP and PDF templates to your Experience Manager instance. To upload a template:
 
@@ -53,18 +66,13 @@ An organization typically has multiple templates. For example, one template each
 1. Click Create > Folder and create a folder. Open the folder.
 1. Click Create > File Upload and upload the templates.
 
-### Use synchronous API to generate documents
 
-Separate APIs are available to:
+### Invoke an API
 
-* Generates a PDF Document from a template and merge data to it.
-* Generate a PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) document from an XDP file or PDF document.
-
-The [API reference documentation](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml for [synchronous APIs](assets/sync.yaml) and upload it to postman to check functionality of the APIs.
+The [API reference documentation](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also provides API defination file in the .yaml format. You can download the .yaml file and upload it to postman to check functionality of the APIs.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
 >[!NOTE]
 >
 >Only members of forms-users group can access Communications APIs.
-
