@@ -68,14 +68,28 @@ The most basic way to organize assets is to save the assets in folders. It is an
 
 ## Organize assets using tags {#use-tags-to-organize-assets}
 
-Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
+Adding tags to assets makes them more easy to retrieve during a search, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
 
-[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
+[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets.
+
+Following are the steps to add tags to an asset:
+
+1. Log in to [!DNL Experience Manager Assets].
+1. Click **[!UICONTROL Assets]** > **[!UICONTROL Files]**, select the asset and click **[!UICONTROL Properties]** to open the asset properties. 
+1. In the **[!UICONTROL Basic]** tab, click on the folder icon in **[!UICONTROL Tags]** metadata. A popup window opens. 
+1. Search or select the appropriate tags from the existing tags in `cq-tags`. You can assign multiple tags to the asset. 
+
+   You can sort the tags structure in ascending or descending order based on the **[!UICONTROL Name]** (alphabetical order), **[!UICONTROL Created]** date, or **[!UICONTROL Modified]** date. In the following Illustration, the tag structure is sorted alphabetically based on the **[!UICONTROL Name]**. 
+
+   ![add-tags](assets/add-tags-to-asset.png) 
+
+1. Click **Save** to update the asset metadata changes.
 
 For more information, see the following articles:
 
 * [Edit asset metadata](meta-edit.md)
 * [Smart Tags in Assets](smart-tags.md)
+* [Add tags predicate to the search panel](/help/assets/search-facets.md/#adding-a-tags-predicate)
 
 ## Organize as collections {#organize-as-collections}
 

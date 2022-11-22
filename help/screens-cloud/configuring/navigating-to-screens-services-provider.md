@@ -30,9 +30,8 @@ Follow the steps below to setup Screens Services Provider:
    ![image](/help/screens-cloud/assets/configure/configure-screens0.png)
 
 3. Enter the following details in the Edit Settings dialog box.
-   o **Base Url** - AEM Publish URL
-   o **Author Url** - AEM Author URL
-   o **Channel Provider Path** - /screens/channels.json 
+   * **Publish Url** - AEM publish URL (for example, `https://publish-p12345-e12345.adobeaemcloud.com`)
+   * **Author Url** - AEM author URL (for example, `https://author-p12345-e12345.adobeaemcloud.com`)
    
     ![image](/help/screens-cloud/assets/configure/configure-screens4.png)
 
