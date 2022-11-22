@@ -164,14 +164,27 @@ Populate your language copy so that it contains content from the master language
 
 ### Updating Translation Memory {#updating-translation-memory}
 
-Manual edits of translated content can be synchronized back to the Translation Management System (TMS) to train its Translation Memory.
+Manual edits of translated content can be synchronized back to the Translation Management System (TMS) to train its translation memory.
 
 1. From the sites console, after updating text content in a translated page, select **Update Translation Memory**.
 1. A list view shows a side-by-side comparison of the source and the translation for every text component that was edited. Select which translation updates should be synchronized to translation memory, and select **Update Memory**.
 
 ![Compare changes for translation memory](../assets/update-translation-memory-compare.png)
 
-AEM will send the selected strings back to the Translation Management System.
+AEM updates the translation of the existing strings in the translation memory of the configured TMS.
+
+* The action updates the translation of existing strings in the translation memory of the configured TMS. 
+* It does not create new translation jobs.
+* It sends the translations back to the TMS, via AEM translation API (see below).
+
+To use this feature:
+
+* A TMS must be configured for use with AEM.
+* The connector needs to implement the method [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+  * Code within this method determines what happens to the translation memory update request.
+  * The AEM translation framework sends the string value pairs (original and updated translation) back to the TMS  via this method implementation. 
+
+The translation memory updates can be intercepted and sent to a custom destination, for cases where a proprietary translation memory is used.
 
 ### Checking Translation Status of a Page {#check-translation-status}
 
