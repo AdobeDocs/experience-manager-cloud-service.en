@@ -65,7 +65,6 @@ To handle 500 errors, the file name of the error handler script must be the same
 >[!NOTE]
 >
 >In AEM as Cloud Service, the CDN serves a generic error page when a 5XX error is received from the backend. In order to allow the actual response of the backend to pass through you need to add the following header to the response: `x-aem-error-pass: true`.
->
 >This works only for responses coming from AEM or the Apache/Dispatcher layer. Other unexpected errors coming from intermediate infrastructure layers will still display the generic error page.
 
 >[!CAUTION]
