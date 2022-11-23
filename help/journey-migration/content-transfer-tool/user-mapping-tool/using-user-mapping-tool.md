@@ -16,7 +16,7 @@ Follow the steps below to set this up:
 1. Navigate to [Adobe Developer Console](https://console.adobe.io) using your Adobe ID.
 1. Create a new project or open an existing project.
 1. Add an API - Click **Add to Project** and select **API**
-1. Choose User Management API.  You might need to get permissions to have this option.
+1. Choose User Management API.  You must have System Administrator permissions to have this option available.
 1. Create a JWT credential.
 1. Generate a key pair, or Upload a public key (rsa is no good).  There is a button, **Generate a public/private keypair**, which will do this for you.  Make sure you save both the public and private keys.
 1. Navigate to the User Management API.
