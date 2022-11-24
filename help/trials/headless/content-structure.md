@@ -94,6 +94,10 @@ In this module, you learned how to create a Content Fragment model to represent 
 
 Now that you have your own Content Fragment model, you can use the model to create Content Fragments. The module [Create New Content](create-content.md) details to use your new Content Fragment model to create headless content.
 
+You can return to your trial home screen by clicking **Solutions** button at the top-right of the navigation bar and selecting **Experience Manager**.
+
+![Navigate home](assets/content-structure/home.png)
+
 ## Additional Resources {#additional-resources}
 
 For more information about Content Fragments and AEM, consider reviewing this additional documentation.
