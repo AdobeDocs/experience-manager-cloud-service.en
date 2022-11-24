@@ -149,13 +149,13 @@ Now that you have run the two primary types of queries, you are ready to set up 
 
 This is how your content can be delivered to omnichannel digital experiences. See the [Additional Resources section](#additional-resources) for additional sample queries and learn how much more you can do with the GraphQL API.
 
-## You've learned how to query content {#conclusion}
+## You've learned how to query content! {#conclusion}
 
 Great work! You've learned about the two basic types of queries and how to query your own content. Be sure to check out the [Additional Resources section](#additional-resources) for additional sample queries and learn how much more you can do with the GraphQL API.
 
 You can return to your trial home screen by clicking **Solutions** button at the top-right of the navigation bar and selecting **Experience Manager**.
 
-![Navigate home](assets/create-content/home.png)
+![Navigate home](assets/extract-content/home.png)
 
 ## Additional Resources {#additional-resources}
 
