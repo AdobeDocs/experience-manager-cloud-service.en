@@ -7,6 +7,10 @@ exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 
 Learn the steps to enable the full AEM Screens as a Cloud Service experience on your demo site.
 
+>[!NOTE]
+>
+>AEM Screens Demo requires Screens Add-on to be added to Cloud Manager Program. Learn [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html) how to add it.
+
 ## The Story So Far {#story-so-far}
 
 In the previous document of the AEM Reference Demos Add-On journey, [Create Demo Site,](create-site.md) you created a new demo site based on the templates of the Reference Demo Add-On. You should now:
