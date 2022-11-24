@@ -78,3 +78,9 @@ Now that your content is created and published, you can now extract that content
 You can return to your trial home screen by clicking **Solutions** button at the top-right of the navigation bar and selecting **Experience Manager**.
 
 ![Navigate home](assets/create-content/home.png)
+
+## Additional Resources {#additional-resources}
+
+For more information about Content Fragments and AEM, consider reviewing this additional documentation.
+
+* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Documentation on how to navigate and use AEM for new users
