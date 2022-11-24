@@ -15,11 +15,11 @@ To help you understand how this is done, this module of AEM Trials takes you thr
 
 ## The Content Fragment Model Console {#content-fragment-model-console}
 
-You start on the Content Fragment models console. The Content Fragment console can be thought of as your library of models. You use the console to create new models and manage exiting models. Your console starts empty, so let's create a new one!
+You start on the Content Fragment models console. The Content Fragment models console can be thought of as your library of models. You use the console to create new models and manage exiting models. Your console starts empty, so let's create a new model!
 
 ![The Content Fragment model console](assets/content-structure/content-fragment-model-console.png)
 
-If you wish to navigate to the Content Fragment model yourself outside of the in-app guidance, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here, you choose the **Tools** tab and then **General** -&gt; **Content Fragment Models**.
+If you wish to navigate to the Content Fragment model console yourself outside of the in-app guidance, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here, you choose the **Tools** tab and then **General** -&gt; **Content Fragment Models**.
 
 >[!TIP]
 >
