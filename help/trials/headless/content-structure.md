@@ -92,9 +92,7 @@ Using the Content Fragment model editor, you can define fields for the Content F
 
 In this module, you learned how to create a Content Fragment model to represent the structure of your headless data. First you created the model and then populated it with data types and their related properties, thereby defining a schema for your headless content.
 
-## Next Steps {#next-steps}
-
-Now that you have your own Content Fragment model, continue on to the module [Create New Content](create-content.md) to use your new Content Fragment model to create headless content.
+Now that you have your own Content Fragment model, you can use the model to create Content Fragments. The module [Create New Content](create-content.md) details to use your new Content Fragment model to create headless content.
 
 ## Additional Resources {#additional-resources}
 
