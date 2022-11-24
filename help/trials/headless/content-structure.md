@@ -27,62 +27,64 @@ If you wish to navigate to the Content Fragment Model yourself outside of the in
  
 ## Create a Model {#create-model}
 
-In the Content Fragment Model console, click the **Create** button at the top-right of the screen to begin creating a Content Fragment model.
+Once you are in the Content Fragment model console, you can create a new model to represent your own headless content.
 
-The Create Model wizard starts, which guides you through creating a Content Fragment model. 
+1. In the Content Fragment Model console, click the **Create** button at the top-right of the screen to begin creating a Content Fragment model.
 
-![Content Fragment Model wizard](assets/content-structure/model-wizard.png)
+1. The Create Model wizard starts, which guides you through creating a Content Fragment model. 
 
-Provide the mandatory information.
+   ![Content Fragment Model wizard](assets/content-structure/model-wizard.png)
 
-* **Model Title** - This is a brief description of the model, and usually indicates its purpose.
-* **Enable model** - This option is checked by default and must be checked to be able to create Content Fragments later based on this model.
+   Provide the mandatory information.
 
-You can also choose to add a longer **Description** to the model as well as **Tags** to categorize it and differentiate it for your users later within the Content Fragment model console.
+   * **Model Title** - This is a brief description of the model, and usually indicates its purpose.
+   * **Enable model** - This option is checked by default and must be checked to be able to create Content Fragments later based on this model.
 
->[!TIP]
->
->If you are interested in how tags can organize your content, see the [Additional Resources section](#additional-resources) of this document for more information on tagging in AEM.
+   You can also choose to add a longer **Description** to the model as well as **Tags** to categorize it and differentiate it for your users later within the Content Fragment model console.
 
-Once the mandatory fields are populated, you click **Create** at the top-left to create the model. 
+   >[!TIP]
+   >
+   >If you are interested in how tags can organize your content, see the [Additional Resources section](#additional-resources) of this document for more information on tagging in AEM.
 
-The **Success** dialog confirms that the model was created.
+1. Once the mandatory fields are populated, you click **Create** at the top-left to create the model. 
 
-![Success dialog for creating a new Content Fragment Model](assets/content-structure/success.png)
+1. The **Success** dialog confirms that the model was created.
 
-Before you can use the model, you also need to define the structure of its data. Click **Open** in the dialog to open it and continue defining the model.
+   ![Success dialog for creating a new Content Fragment Model](assets/content-structure/success.png)
+
+1. Before you can use the model, you also need to define the structure of its data. Click **Open** in the dialog to open it and continue defining the model.
 
 ## Add Fields to the Model {#configure-model}
 
-The Content Fragment model is essentially a schema for your Content Fragments. I.e. it defines what fields/data types that the model contains. Using the Content Fragment model editor, you can define fields for the Content Fragment model using a drag-and-drop interface.
+The Content Fragment model is essentially a schema for your Content Fragments. I.e. it defines what fields/data types that the model contains. 
 
 ![The Content Fragment Model Editor](assets/content-structure/model-editor.png)
 
-Drag a field from the **Data Types** panel at the right of the screen and drop it onto your Content Fragment Model. There are multiple data types to choose from such as a single-line text, multi-line text, number, and references to other fragments.
+Using the Content Fragment model editor, you can define fields for the Content Fragment model using a drag-and-drop interface.
 
-![Add a data type](assets/content-structure/drop-fields.png)
+1. Drag a field from the **Data Types** panel at the right of the screen and drop it onto your Content Fragment Model. There are multiple data types to choose from such as a single-line text, multi-line text, number, and references to other fragments.
 
->[!TIP]
->
->If you would like more information about the data types available to you, see the [Additional Resources section](#additional-resources) of this document for the detailed Content Fragment Models documentation.
+   ![Add a data type](assets/content-structure/drop-fields.png)
 
-## Define Data Properties {#data-properties}
+   >[!TIP]
+   >
+   >If you would like more information about the data types available to you, see the [Additional Resources section](#additional-resources) of this document for the detailed Content Fragment Models documentation.
 
-Once a data type is placed, the **Data Types** column automatically changed to the **Properties** tab, where you can define the details of the data type you just placed.
+1. Once a data type is placed, the **Data Types** column automatically changed to the **Properties** tab, where you can define the details of the data type you just placed.
 
-![The Properties tab for the data field](assets/content-structure/data-type-properties.png)
+   ![The Properties tab for the data field](assets/content-structure/data-type-properties.png)
 
-Properties of the model may include the name of the field, the type of field, the length of the field, if it is mandatory, etc.
+    Properties of the model may include the name of the field, the type of field, the length of the field, if it is mandatory, etc.
 
-Use the **Properties** tab of the selected data type to define properties such as default value, maximum length, if it a required field, etc.
+1. Use the **Properties** tab of the selected data type to define properties such as default value, maximum length, if it a required field, etc.
 
->[!TIP]
->
->If you would like more information about the properties available to you, see the [Additional Resources section](#additional-resources) of this document for the detailed Content Fragment Models documentation.
+   >[!TIP]
+   >
+   >If you would like more information about the properties available to you, see the [Additional Resources section](#additional-resources) of this document for the detailed Content Fragment Models documentation.
 
-Once you have added all of the fields necessary for the Content Fragment Model, click **Save** at the top-right of the window.
+1. Once you have added all of the fields necessary for the Content Fragment Model, click **Save** at the top-right of the window.
 
-This saves the model and returns you to the Content Fragment Model Console where you can add more models are necessary.
+1. This saves the model and returns you to the Content Fragment Model Console where you can add more models are necessary.
 
 ![Module complete](assets/content-structure/content-fragment-model-console-populated.png)
 
