@@ -7,55 +7,61 @@ index: no
 
 # Customize Content in a Sample React App {#customize-app}
 
-Use a sample React app to learn how to customize content using the headless feature set in AEM as a Cloud Service.
+AEM Trials for headless comes preloaded with a simple React app to showcase headless content. In this module, you will learn how to preview that app and make changes to its content by swapping an image and creating a shoppable moment for it.
 
-## Step 1 - Introduction to Customizing a Sample React App {#customize-sample-app}
+The app itself is based on the structure of Content Fragments. Using the Content Fragment editor in AEM, you can modify your apps content. To help you understand how this is done, this module of AEM Trials takes you through the process with a quick, interactive tour. 
 
-AEM Trials for headless comes preloaded with a simple React app to showcase headless content. In this module, you will learn how to preview that app and make changes to the content of that app by swapping an image and creating a shoppable moment for it.
+## Content Fragment Editor {#fragment-editor}
 
-![Introduction](assets/customize-app/step-1.png)
+You begin in the Content Fragment editor for the sample app.
 
-Tap or click the **Begin tour** button to start!
+![Content Fragment editor](assets/customize-app/content-fragment-editor.png)
 
-## Step 2 - Preview {#preview}
+If you wish to navigate to the Content Fragment editor yourself outside of the in-app guidance, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here, you choose the **Navigation** tab and then **Assets** -&gt; **Content Fragments**.
 
-You begin in the Content Fragment editor for the sample app. To view the app in its current state, tap or click the **Preview** button at the top-right of the editor screen.
+![Navigate to app in Content Fragments console](assets/customize-app/navigate-to-app.png)
 
-![Preview](assets/customize-app/step-2.png)
+This opens the Content Fragment console. From there, you use the content tree in the left panel to navigate to the location of the app. In this case under **Content Fragments** -&gt; **Sample WKND App** -&gt; **English** -&gt; **Content Fragments** -&gt; **pages**.
+
+Tap or click on the **WKND Home** page displayed to start the editor for the app.
+
+>[!TIP]
+>
+>If you would like to know more about navigation in AEM, see the [Additional Resources section](#additional-resources) of this document for more information on AEM basic handling.
+
+## Preview the App {#preview}
+
+Before you begin modifying the app, first get familiar with it by previewing its current state. Tap or click the **Preview** button at the top-right of the editor screen.
 
 The demo app opens in a new tab.
 
 ![Demo app preview](assets/customize-app/preview-demo-app.png)
 
-Return to the tab of the Content Fragment editor to continue the module.
+Return to the tab of the Content Fragment editor to continue.
 
-## Step 3 - Edit a Page {#edit-page}
+## Step 3 - Edit the App {#edit-app}
 
-The editor displays the basic layout of the app. The **Panels** represent different pages of the app.
+As previously mentioned, the app itself is made up of Content Fragments. These fragments are linked together in a structure to create the app.
 
-Tap or click **Mtn Biker in Canyon** in the **Panels** section.
+The Content Fragment editor displays the basic layout of the app as a page. This page is a Content Fragment, which itself ia a collection of other fragments. The **Panels** represent different pages of the app, each of which is its own Content Fragment. By modifying these fragments, you can change the content of the app.
 
-![Edit a page](assets/customize-app/step-3.png)
+1. Tap or click **Mtn Biker in Canyon** in the **Panels** section.
 
-## Step 4 - Change the Header's text {#change-text}
+   ![Tap Mtn Biker in Canyon fragment](assets/customize-app/mtn-biker-in-canyon.png)
 
-The editor opens up the header panel. Each panel is made up of layers, representing different content within a page of the app.
+1. The editor opens up the header panel for the mountain biker. Each panel is made up of layers, representing different content within a page of the app.
 
-![Change the header's text](assets/customize-app/step-4.png)
-
-You can use the editor to change the heading text for example.
+   ![Panels](assets/customize-app/panels.png)
 
 1. Select the text layer **Mtn Biker in Canyon Text Layer**. This opens the detail of the layer in the editor. The layer is made up of multiple Content Fragments.
 
-   ![Select the Mtn Biker in Canyon Title text item](assets/customize-app/layer-detail.png)
+   ![Select the Mtn Biker in Canyon Title](assets/customize-app/mtn-biker-in-canyon-text-layer.png)
 
 1. Select the **Mtn Biker in Canyon Title** text item. This opens the Content Fragment editor, showing the content of this fragment and allowing you to modify it.
 
-   ![Select the Mtn Biker in Canyon Title text item](assets/customize-app/edit-fragment.png)
+   ![Select the Mtn Biker in Canyon Title text item](assets/customize-app/mtn-biker-in-canyon-title.png)
 
 1. Change the text from `The most exciting experience` to `Choose your own adventure`. The change is saved automatically by the editor.
-
-   ![Change the text](assets/customize-app/edited-fragment.png)
 
 1. Click preview to see your changes. The demo app opens in a new tab.
 
@@ -63,15 +69,15 @@ You can use the editor to change the heading text for example.
 
 Return to the tab of the Content Fragment editor to continue the module.
 
-## Step 5 - Navigate Back to the Layer Screen {#navigate-back}
+## Change the Site's Main Image {#change-image}
 
-Return to the Content Fragment editor where you viewed the layers. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy.
+Now that you made a change to some text in the app, try changing the app's main image. First you will need to locate that content.
 
-![Navigate back to the layout screen](assets/customize-app/step-5.png)
+The breadcrumbs at the top-left of the editor show where you are in your content hierarchy.
 
-Tap or Click **Mtn Biker in Canyon** in the breadcrumbs to return to that page.
+1. Tap or Click **Mtn Biker in Canyon** in the breadcrumbs to return to that page.
 
-## Step 6 - Change the Site's Main Image {#change-image}
+   ![Breadcrumbs](assets/customize-app/breadcrumbs.png)
 
 The layers don't represent just text content. They represent all content in your app. You can swap images using the Content Fragment editor as well.
 
