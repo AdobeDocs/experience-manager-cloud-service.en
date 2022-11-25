@@ -84,3 +84,5 @@ You can return to your trial home screen by clicking **Solutions** button at the
 For more information about Content Fragments and AEM, consider reviewing this additional documentation.
 
 * [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Documentation on how to navigate and use AEM for new users
+* [Content Fragments](/help/assets/content-fragments/content-fragments.md) - Overview of Content Fragments and links to complete documentation on Content Fragments
+* [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - How to create and manage Content Fragments
