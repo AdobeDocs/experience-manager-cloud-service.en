@@ -153,6 +153,8 @@ This is how your content can be delivered to omnichannel digital experiences. Se
 
 Great work! You've learned about the two basic types of queries and how to query your own content. Be sure to check out the [Additional Resources section](#additional-resources) for additional sample queries and learn how much more you can do with the GraphQL API.
 
+If you'd like to learn how extracted content is then used in a custom React app, be sure to review the module [Customize Content in a Sample React App.](customize-app.md)
+
 You can return to your trial home screen by clicking **Solutions** button at the top-right of the navigation bar and selecting **Experience Manager**.
 
 ![Navigate home](assets/extract-content/home.png)
