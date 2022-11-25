@@ -79,19 +79,19 @@ The breadcrumbs at the top-left of the editor show where you are in your content
 
    ![Breadcrumbs](assets/customize-app/breadcrumbs.png)
 
-The layers don't represent just text content. They represent all content in your app. You can swap images using the Content Fragment editor as well.
+1. Return to the panel with the app's various layers. The layers don't represent just text content. They represent all content in your app. You can swap images using the Content Fragment editor as well.
 
-![Change the site's main image](assets/customize-app/step-6.png)
+      ![Panels](assets/customize-app/panels.png)
 
-1. Select the **Mtn Biking - Biker image layer**. This opens the Content Fragment editor, showing the content of this fragment and allowing you to modify it.
+1. Select the **Mtn Biking - Biker** image layer. This opens the Content Fragment editor, showing the content of this fragment and allowing you to modify it.
 
-   ![Edit image fragment](assets/customize-app/edit-image-fragment.png)
+   ![Edit image fragment](assets/customize-app/mtn-biking-biker.png)
 
-1. Click **X** to remove the biker image. The image disappears and the editor shows an error since the image is required data for this Content Fragment model.
+1. Tap or click the **X** to remove the biker image. The image disappears and the editor shows an error since the image is required data for this Content Fragment model.
 
-   ![Image removed from fragment](assets/customize-app/edit-image-fragment-removed.png)
+   ![Image removed from fragment](assets/customize-app/mtn-biking-biker-no-image.png)
 
-1. Select **Add asset** and locate the yellow biker image in **sample-wknd-app** &gt; **en** &gt; **image-files**. Use the tree view at the left side of the **Select Assets** dialog to navigate the content hierarchy.
+1. Tap or click **Add asset** and locate the yellow biker image in **sample-wknd-app** &gt; **en** &gt; **image-files**. Use the tree view at the left side of the **Select Assets** dialog to navigate the content hierarchy.
 
    ![Select assets dialog](assets/customize-app/select-assets.png)
 
@@ -103,51 +103,67 @@ The layers don't represent just text content. They represent all content in your
 
    ![Select asset](assets/customize-app/select-asset.png)
 
-The image of the biker was replaced with the selected image. The editor automatically saves the changes.
+1. The image of the biker was replaced with the selected image. The editor automatically saves the changes.
 
-![Edited fragment of biker image](assets/customize-app/edited-fragment-image.png)
+   ![Edited fragment of biker image](assets/customize-app/mtn-biking-biker-edited.png)
 
-## Step 7 - Navigate Back to the Layer Screen {#navigate-back-2}
+## Create a Shoppable Moment {#create-moment}
 
-Return to the Content Fragment editor where you viewed the page components. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy.
+Now that you updated the image of the biker, you can add a shoppable moment for the biker’s yellow shorts.
 
-![Navigate back to the layout screen](assets/customize-app/step-7.png)
+1. Start by returning to the Content Fragment editor for the page fragment. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Tap or click **WKND Home** in the breadcrumbs to return to that page.
 
-Tap or Click **WKND Home** in the breadcrumbs to return to that page.
+   ![Navigate back to the layout screen](assets/customize-app/breadcrumbs-2.png)
 
-## Step 8 - Create a Shoppable Moment {#create-moment}
+1. Select the **Mtn Biker on WKND Yellow** panel.
 
-Now that you updated the image of the biker, you can add a shoppable moment for the biker’s yellow shorts. Because the moment is for the image of the biker, select the **Mtn Biker on WKND Yellow** panel.
+   ![Create a shoppable moment](assets/customize-app/mtn-biker-on-wknd-yellow.png)
 
-![Create a shoppable moment](assets/customize-app/step-8.png)
+1. You can now see the layers that make up the image of the biker. Add a shoppable moment to the biker’s yellow shorts by selecting the **Mtn Biking - Shoppable** layer.
 
-## Step 9 - Select the Shoppable Moment Layer {#select-layer}
+   ![Select shoppable moment layer](assets/customize-app/mtn-biking-shoppable.png)
 
-You can now see the layers that make up the image of the biker. Add a shoppable moment to the biker’s yellow shorts by selecting the **Mtn Biking - Shoppable** layer.
+1. In order to create a shoppable moment, you must create a new Content Fragment that represents that moment. Tap or click the **+ Create new fragment** button to add shoppable moment for the biker’s shorts.
 
-![Select shoppable moment layer](assets/customize-app/step-9.png)
+   ![Add a shoppable moment](assets/customize-app/create-new-fragment.png)
 
-## Step 10 - Add a Shoppable Moment {#add-moment}
+1. Because Content Fragments represent structured headless data, whenever you create a Content Fragment, you must first choose a model on which to base it. Select the **Shoppable Moment Item** model from the **Content Fragment model** drop-down.
 
-In order to create a shoppable moment, you must create a new Content Fragment that represents that moment. Tap or click the **+ Create new fragment** button to add shoppable moment for the biker’s pants.
+   ![Choose the Content Fragment model](assets/customize-app/new-content-fragment.png)
 
-![Add a shoppable moment](assets/customize-app/step-10.png)
+1. Give the Content Fragment that will represent this new shoppable moment a name. For example enter `Shorts` into the **Name** field.
 
-## Step 11 - Choose the Content Fragment Model {#choose-model}
+   ![Name the shoppable moment](assets/customize-app/step-12.png)
 
-Because Content Fragments represent structured headless data, whenever you create a Content Fragment, you must first choose a model to base it on.
+1. Tap or click **Create and open**.
 
-Select the **Shoppable Moment Item** model from the **Content Fragment model** drop-down. 
+1. The editor opens for your new Content Fragment.
+   * Give the shoppable moment a name in the **Text** field such as `Yellow shorts`.
+   * Set an X and Y, location for where this shoppable moment should be overlaid.
+     * **X**: `-18`
+     * **Y**: `-28`
+   * Changes to the fragment are automatically saved by the editor
 
-![Choose the Content Fragment model](assets/customize-app/step-11.png)
+   ![Edit the shoppable moment](assets/customize-app/edit-shoppable-moment.png)
 
-## Step 12 - Name the Shoppable Moment {#name-moment}
+1. Tap or click **Preview** to test this positioning and make adjustments as needed.
 
-Give the Content Fragment that will represent this new shoppable moment layer a name. For example enter **Shorts** into the **Name** field.
+## You’ve learned to customize a sample React app! {#conclusion}
 
-![Name the shoppable moment](assets/customize-app/step-12.png)
+In this module you learned how to customize a sample React app. First you learned how to edit existing ext. Then an image was swapped with another instance of that image. Finally you saw how a shoppable moment item is created and positioned.
 
-## Step 13 - Create and Open {#create-open}
+Be sure to check out the [Additional Resources section](#additional-resources) for additional resources about using AEM and its Content Fragments.
 
-![Create and open](assets/customize-app/step-13.png)
+If you'd like to learn how Content Fragments and headless content is created for consumption by custom apps, you can start by reviewing the module [Create the Content Structure for Your App.](content-structure.md)
 
+You can return to your trial home screen by clicking **Solutions** button at the top-right of the navigation bar and selecting **Experience Manager**.
+
+![Navigate home](assets/customize-app/home.png)
+
+## Additional Resources {#additional-resources}
+
+For more information about Content Fragments and AEM, consider reviewing this additional documentation.
+
+* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Complete documentation on Content Fragment models
+* [Content Fragments](/help/assets/content-fragments/content-fragments.md) -  Overview of Content Fragments and links to complete documentation on Content Fragments
+* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Documentation on how to navigate and use AEM for new users
