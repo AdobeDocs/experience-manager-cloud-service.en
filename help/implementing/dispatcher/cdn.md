@@ -86,7 +86,8 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->When using your own CDN, there is no need to install the domains and certificates in Cloud Manager. The routing in the Adobe CDN will be done by using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>When using your own CDN, you do not need to install domains and certificates in Cloud Manager. The routing in the Adobe CDN will be done by using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` which should be sent in the request `Host` header. Overwriting the request `Host` header with a custom domain name can cause the request to be incorrectly routed by the Adobe CDN.
+
 
 >[!NOTE]
 >
@@ -118,19 +119,6 @@ Presented below are several configuration examples from a number of leading CDN 
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
-
-## Content Disposition {#content-disposition}
-
-For the publish tier, the default for serving blobs is as an attachment. This can overridden using the standard [content disposition header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) in the dispatcher.
-
-Below is an example of how the configuration should look like:
-
-```
-<LocationMatch "^\/content\/dam.*\.(pdf).*">
- Header unset Content-Disposition
- Header set Content-Disposition inline
-</LocationMatch>
-```
 
 ## Geolocation Headers {#geo-headers}
 

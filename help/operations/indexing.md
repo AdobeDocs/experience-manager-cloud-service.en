@@ -61,7 +61,9 @@ which then needs to go under `ui.apps/src/main/content/jcr_root`. All customized
 
 The filter for the package needs to be set such that existing (out-of-the-box indexes) are retained. In the file `ui.apps/src/main/content/META-INF/vault/filter.xml`, each custom (or customized) index needs to be listed, for example as `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. If the index version is later changed, the filter needs to be adjusted.
 
-The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
 
 >[!NOTE]
 >
@@ -264,7 +266,11 @@ Once Adobe changes an out-of-the-box index like "damAssetLucene" or "cqPageLucen
 
 ### Current Limitations {#current-limitations}
 
-Index management is currently only supported for indexes of type `lucene`. Internally, other indexes might be configured and used for queries, for example elastic indexes.
+Index management is currently only supported for indexes of type `lucene`, with `compatVersion` set to `2`. Internally, other indexes might be configured and used for queries, for example Elasticsearch indexes. Queries that are written against the `damAssetLucene` index might, on AEM as a Cloud Service, in fact be executed against an Elasticsearch version of this index. This difference is invisible to the application end user, however certain tools such as the `explain` feature will report a different index. For differences between Lucene and Elasticsearch indexes, see [the Elasticsearch documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers cannot and do not need to configure Elasticsearch indexes directly.
+
+Only built-in analyzers are supported (that is, those that are shipped with the product). Custom analyzers are not supported.
+
+For best operational performance, indexes should not be excessively large. The total size of all indexes can be used as a guide: If this increases by more than 100%  after custom indexes have been added and standard indices have been adjusted on a development environment, custom index definitions should be adjusted. AEM as a Cloud Service can prevent the deployment of indexes that would negatively impact system stability and performance. 
 
 ### Adding an Index {#adding-an-index}
 

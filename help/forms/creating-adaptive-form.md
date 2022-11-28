@@ -54,10 +54,15 @@ You require the following to create an Adaptive Form:
 
    After you are logged in, in the upper-left corner, tap **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
 
-1. Tap **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens.s
+1. Tap **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens.
 1. In the Source tab, select a template: 
 
    * When you select an Editable template, a theme and submit action specified in the template are auto-selected, and the **[!UICONTROL Create]** button is enabled. You can go to the **[!UICONTROL Style]** or **[!UICONTROL Submission]** tabs to select a different theme or submit action. If the selected Editable template does not specify a theme, the create button remains disabled. You can go to the **[!UICONTROL Styles]** tab to manually select a theme.
+   
+      >[!NOTE]
+      >
+      > You can also create [!UICONTROL Document of Record] template using an Apadtive Form editor. For more information, see [Document of Record Support in Adaptive Form Editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
    * When you select a static template, the data, style, submission, delivery, and preview options are not available. When you are create a new Adaptive Form, it is recommended to use an Editable template.
 
 1. In the Style tab, select a theme:
@@ -153,3 +158,15 @@ You can change the form model for an Adaptive Form (JSON-based or Form Data Mode
     * If the Adaptive Form is based on a form model, you can choose another <!-- form template, --> XML or JSON schema, or Form Data Model for the same form model.
 
 1. Tap **[!UICONTROL Save]** to save the properties.
+
+You can also modify the form model properties from the Adaptive Form editor or Adaptive Form template editor. 
+
+1.  Select the **[!UICONTROL Adaptive Form container (Root)]** component.
+1. Click ![Configure Icon](/help/forms/assets/configure-icon.svg) icon to open the **[!UICONTROL Properties]** of the Adaptive Form container.
+1. Select the **[!UICONTROL Data Model]** tab and do one the following:
+
+    * If the Adaptive Form is without a form model, you can choose a form model and accordingly select <!-- a form template, --> XML or JSON schema, or form data model.
+    * If the Adaptive Form is based on a form model, you can not change the form model. You can choose another <!-- form template, --> XML or JSON schema, or Form Data Model for the same form model as applicable.
+1. Tap ![Save](/help/forms/assets/check-button.png) to save the properties.
+
+ ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)
