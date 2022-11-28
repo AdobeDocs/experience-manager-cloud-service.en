@@ -2,8 +2,8 @@
 title: Release Notes for Cloud Manager 2022.9.0 in Adobe Experience Manager as a Cloud Service
 description: These are the release notes for Cloud Manager 2022.9.0 in AEM as a Cloud Service.
 feature: Release Information
+exl-id: d61ef0fe-f632-4222-bb7b-10a337010942
 ---
-
 # Release Notes for Cloud Manager 2022.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
 This page documents the release notes for Cloud Manager 2022.9.0 in AEM as a Cloud Service.
