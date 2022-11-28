@@ -7,11 +7,9 @@ index: no
 
 # Create the Content Structure for Your App {#content-structure}
 
-Learn how to create the structure which serves as the foundation for all of your headless content using AEM's Content Fragment models by following the in-product learning module. This document serves as a supplement of the interactive tour, covering the same steps and linking to additional resources where appropriate.
-
 Content Fragments allow you to design, create, curate, and publish page-independent content. Using them you can  prepare content that is ready for use in multiple locations and over multiple channels, ideal for headless delivery. Content Fragment models are used to define the structure of this content and are the first thing you need to create in order to manage your headless content.
 
-To help you understand how this is done, this module of AEM Trials takes you through the process with a quick, interactive tour first creating the model and then adding its structure. 
+To help you understand how this is done, this module of AEM Trials takes you through the process with a quick, interactive tour first creating the model and then adding its structure. This document serves as a supplement to the in-product tour, covering the same steps and linking to additional resources where appropriate.
 
 ## The Content Fragment Model Console {#content-fragment-model-console}
 
@@ -37,7 +35,7 @@ Once you are in the Content Fragment model console, you can create a new model t
 
    Provide the mandatory information.
 
-   * **Model Title** - This is a brief description of the model, and usually indicates its purpose.
+   * **Model Title** - This is a brief description of the model and usually indicates its purpose.
    * **Enable model** - This option is checked by default and must be checked to be able to create Content Fragments later based on this model.
 
    You can also choose to add a longer **Description** to the model as well as **Tags** to categorize it and differentiate it for your users later within the Content Fragment model console.
@@ -102,7 +100,9 @@ You can return to your trial home screen by clicking **Solutions** button at the
 
 For more information about Content Fragments and AEM, consider reviewing this additional documentation.
 
-* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Complete documentation on Content Fragment models
-* [Content Fragments](/help/assets/content-fragments/content-fragments.md) -  Overview of Content Fragments and links to complete documentation on Content Fragments
 * [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Documentation on how to navigate and use AEM for new users
 * [Using Tags](/help/sites-cloud/authoring/features/tags.md) - Documentation on how to use tags in AEM to organize content
+* [Content Fragments](/help/assets/content-fragments/content-fragments.md) -  Overview of Content Fragments and links to complete documentation on Content Fragments
+* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Complete documentation on Content Fragment models
+* [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types) - Details on the various data types available for Content Fragment models
+* [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#data-types) - Details on the various properties available for Content Fragment models data types
