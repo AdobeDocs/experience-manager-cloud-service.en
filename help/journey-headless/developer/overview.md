@@ -56,6 +56,8 @@ Although you can go directly to a particular part of the journey, many concepts 
 |8|[How to go live with your headless application](go-live.md)|Learn how to deploy the application live and take your local code in Git and move it to Cloud Manager Git for CI/CD pipeline.|
 |9|[Optional - How to create single page applications (SPAs) with AEM](create-spa.md)|Explore how to combine headful and headless delivery and learn how you can create editable SPAs using AEM's SPA Editor framework.|
 
+{style="table-layout:auto"}
+
 ## What's Next {#what-is-next}
 
 Get started by checking out the next article: [Learn about CMS Headless Development.](learn-about.md)

@@ -29,6 +29,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + General AEMaaCS Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
       + [Release Notes for 2022.7.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
       + [Release Notes for 2022.6.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
       + [Release Notes for 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
@@ -139,7 +140,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md)
     + [Developer and Deployment Manager Tasks](/help/journey-onboarding/developers.md)
     + [AEM User Tasks](/help/journey-onboarding/aem-users.md)
-    + [User Groups](/help/journey-onboarding/user-groups.md)
   + AEM Reference Demos Add-On Journey {#demo-add-on}
     + [Overview](/help/journey-sites/demos-add-on/overview.md)
     + [Installation](/help/journey-sites/demos-add-on/installation.md)
@@ -150,6 +150,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Other Onboarding Concepts {#concepts}
     + [Introduction to Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
     + [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md)
+    + [Notification User Groups](/help/journey-onboarding/user-groups.md)
 + AEM as a Cloud Service Migration Journey {#migration-journey}
   + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/getting-started.md)
   + [Readiness Phase](/help/journey-migration/readiness.md)
@@ -382,6 +383,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Watermark assets](/help/assets/watermark-assets.md)
     + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
     + [Color tags for images](/help/assets/color-tag-images.md)
+    + [Manage PDF documents](/help/assets/manage-pdf-documents.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
@@ -495,9 +497,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Review and correct converted forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
   + Create and publish an Adaptive Form {#create-an-adaptive-form}
     + Before you start {#before-you-start}
+      + [Introduction to authoring of an Adaptive Forms](/help/forms/introduction-forms-authoring.md)
       + [Create a template](/help/forms/template-editor.md)
       + [Create a theme](/help/forms/themes.md)
       + [Connect your data sources to Cloud Service](/help/forms/data-integration.md)
+      + [Reference Assets](/help/forms/reference-assets.md)
     + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
       + [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
       + [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)
@@ -529,19 +533,21 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + Improve accessibility of an Adaptive Form {#accessible-adaptive-forms}
       + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
     + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
-  + Integrate a form with one or more data sources {#use-form-data-model}
-    + [Configure data sources](/help/forms/configure-data-sources.md)
-    + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-    + [Configure [!DNL Azure] storage](/help/forms/configure-azure-storage.md)
-    + [Configure [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
-    + [Create Form Data Model](/help/forms/create-form-data-models.md)
-    + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
-    + [Use Form Data Model](/help/forms/using-form-data-model.md)
-  + [Integrate with Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
-  + [Integrate with DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
-  + [Integrate with Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
-  + [Integrate with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-  + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+  + Integrate {#integrate}
+    + Integrate a form with one or more data sources {#use-form-data-model}
+      + [Configure data sources](/help/forms/configure-data-sources.md)
+      + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+      + [Configure [!DNL Azure] storage](/help/forms/configure-azure-storage.md)
+      + [Configure [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
+      + [Create Form Data Model](/help/forms/create-form-data-models.md)
+     + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
+      + [Use Form Data Model](/help/forms/using-form-data-model.md)
+    + [Integrate with Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+    + [Integrate with DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
+    + [Integrate with Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
+    + [Integrate with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+    + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+    + [Embed Adaptive Forms in AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
   + Create and use workflows {#create-form-centric-workflows}
     + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)
     + [Use variables in a Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
@@ -633,6 +639,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + Headless {#headless}
   + [What is a Headless CMS?](/help/headless/what-is-headless.md)
   + [Introduction to AEM Headless](/help/headless/introduction.md)
+  + [Developer Portal (Additional Resources)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
   + Setup {#setup}
     + [Introduction](/help/headless/setup/introduction.md)
     + [Configuration](/help/headless/setup/create-configuration.md)
@@ -680,6 +687,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [How to put it all together](/help/journey-headless/developer/put-it-all-together.md)
       + [How to go live with your headless application](/help/journey-headless/developer/go-live.md)
       + [Optional - How to create single page applications with AEM](/help/journey-headless/developer/create-spa.md)
+      + [Developer Portal (Additional Resources)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
     + Headless Content Architect Journey {#architect}
       + [AEM Headless Content Architect Journey Overview](/help/journey-headless/architect/overview.md)
       + [Content Modeling for Headless with AEM - An Introduction](/help/journey-headless/architect/introduction.md)
@@ -861,6 +869,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Extending Experience Fragments](/help/implementing/developing/extending/experience-fragments.md)
     + [Customizing and Extending Content Fragments](/help/implementing/developing/extending/content-fragments-customizing.md)
     + [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+    + [Customizing the Content Fragment Console](/help/implementing/developing/extending/content-fragment-console-customizing.md)
     + Manage Search Forms {#manage-search-forms}
       + [Configuring Search Forms](/help/implementing/developing/extending/search-forms.md)
       + [Configure search filters for Inbox](/help/implementing/developing/extending/configure-inbox-search-rail.md)
@@ -893,6 +902,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Operations and Maintenance on AEM as a Cloud Service](/help/operations/home.md)
   + [Content Search and indexing](/help/operations/indexing.md)
   + [Content Replication Service](/help/operations/replication.md)
+  + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Backup and Restore](/help/operations/backup.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)

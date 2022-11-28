@@ -38,23 +38,23 @@ The following table illustrates the maintenance tasks that are available at the 
   <tr>
     <td>Version Purge</td>
     <td>Adobe</td>
-    <td>In order for the author tier to remain performant, older versions of each piece of content under the <code>/content</code> node of the repository are purged according to the following behavior:<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>For existing environments (those created before March 1, 2023), purging is disabled and will not be enabled in the future unless explicitly enabled by the customer, at which time they may also configure it with custom values.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->New environments (those created starting March 1, 2023) will have purging enabled by default with the values below, with customers being able to configure with custom values.
      <ol>
        <li>Versions older than 30 days are removed</li>
        <li>The most recent 5 versions in the last 30 days are kept</li>
        <li>Irrespective of the rules above, the most recent version is preserved.</li>
-     </ol><br>NOTE: the behavior described above is enforced by default for new environments created after March 14, 2022. Please submit a customer support ticket if you require different settings.</td>
+     </ol></td>
   </td>
   </tr>
   <tr>
     <td>Audit Log Purge</td>
     <td>Adobe</td>
-    <td>In order for the author tier to remain performant, older audit logs under the <code>/content</code> node of the repository are purged according to the following behavior:<br><br> <!-- See above for the two line breaks -->
+    <td>For existing environments (those created before March 1, 2023), purging is disabled and will not be enabled in the future unless explicitly enabled by the customer, at which time they may also configure it with custom values.<br><br> <!-- See above for the two line breaks -->New environments (those created starting March 1, 2023) will have purging enabled by default under the <code>/content</code> node of the repository according to the following behavior:
      <ol>
        <li>For replication auditing, audit logs older than 3 days are removed</li>
        <li>For DAM (Assets) auditing, audit logs older than 30 days are removed</li>
        <li>For page auditing, logs older than 3 days are removed.</li>
-     </ol><br>NOTE: the behavior described above is enforced by default for new environments created after March 14, 2022. Please submit a customer support ticket if you require different settings.</td>
+     </ol></td>
    </td>
   </tr>
   <tr>
@@ -68,7 +68,7 @@ The following table illustrates the maintenance tasks that are available at the 
     <td>Customer</td>
     <td>
     <p>Must be done in git. Override the out-of-the-box Maintenance window configuration node under <code>/libs</code> by creating properties under the the folder <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> or <code>granite_daily</code>.</p>
-    <p>See the Maintenance Window table below for additional configuration details. Enable the maintenance task by adding another node under the node above (name it <code>granite_TaskPurgeTask</code>) with the appropriate properties. Configure the OSGI properties.</p>
+    <p>See the Maintenance Window table below for additional configuration details. Enable the maintenance task by adding another node under the node above. Name it <code>granite_TaskPurgeTask</code>, with attribute <code>sling:resourceType</code> set to <code>granite/operations/components/maintenance/task</code> and attribute <code>granite.maintenance.name</code> set to <code>TaskPurge</code>. Configure the OSGI properties, see <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> for the list of properties.</p>
   </td>
   </tr>
     <tr>
