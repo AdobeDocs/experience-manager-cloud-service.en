@@ -15,7 +15,7 @@ In AEM as a Cloud Service, Content Fragments are pieces of headless content base
 
 ![Editing the content of your fragment](assets/create-content/content-fragment-console.png)
 
-If you wish to navigate to the Content Fragment console yourself outside of the in-app guidance, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here, you choose the **Navigation** tab and then **Assets** -&gt; **Content Fragments**.
+If you wish to navigate to the Content Fragment console yourself outside of the in-app guidance, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here, you choose the **Navigation** tab and then **Content Fragments**.
 
 >[!TIP]
 >
