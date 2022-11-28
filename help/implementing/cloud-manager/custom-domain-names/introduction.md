@@ -49,7 +49,7 @@ Adding a custom domain name requires interaction between the DNS service and Clo
 
 |Step|Description|Responsibility|Learn More|
 |--- |--- |--- |---|
-|1|Add SLL certificate to Cloud Manager|Customer|[Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)|
+|1|Add SSL certificate to Cloud Manager|Customer|[Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)|
 |2|Add TXT record to verify domain|Customer|[Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)|
 |3|Review Domain Verification Status|Customer|[Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)|
 |3a|If domain verification fails with the status `Domain Verification Failure`|Customer|[Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)|
