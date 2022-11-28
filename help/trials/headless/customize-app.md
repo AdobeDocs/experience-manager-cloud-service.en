@@ -9,7 +9,7 @@ index: no
 
 AEM Trials for headless comes preloaded with a simple React app to showcase headless content. In this module, you will learn how to preview that app and make changes to its content by swapping an image and creating a shoppable moment for it.
 
-The app itself is based on the structure of Content Fragments. Using the Content Fragment editor in AEM, you can modify your apps content. To help you understand how this is done, this module of AEM Trials takes you through the process with a quick, interactive tour. 
+The app itself is based on the structure of Content Fragments. Using the Content Fragment editor in AEM, you can modify your apps content. To help you understand how this is done, this module of AEM Trials takes you through the process with a quick, interactive tour. This document serves as a supplement of the interactive tour, covering the same steps and linking to additional resources where appropriate.
 
 ## Content Fragment Editor {#fragment-editor}
 
@@ -23,11 +23,11 @@ If you wish to navigate to the Content Fragment editor yourself outside of the i
 
 This opens the Content Fragment console. From there, you use the content tree in the left panel to navigate to the location of the app. In this case under **Content Fragments** -&gt; **Sample WKND App** -&gt; **English** -&gt; **Content Fragments** -&gt; **pages**.
 
-Tap or click on the **WKND Home** page displayed to start the editor for the app.
-
 >[!TIP]
 >
 >If you would like to know more about navigation in AEM, see the [Additional Resources section](#additional-resources) of this document for more information on AEM basic handling.
+
+Tap or click on the **WKND Home** page displayed to start the editor for the app.
 
 ## Preview the App {#preview}
 
@@ -39,7 +39,7 @@ The demo app opens in a new tab.
 
 Return to the tab of the Content Fragment editor to continue.
 
-## Step 3 - Edit the App {#edit-app}
+## Edit Text in the App {#edit-app}
 
 As previously mentioned, the app itself is made up of Content Fragments. These fragments are linked together in a structure to create the app.
 
@@ -69,7 +69,7 @@ The Content Fragment editor displays the basic layout of the app as a page. This
 
 Return to the tab of the Content Fragment editor to continue the module.
 
-## Change the Site's Main Image {#change-image}
+## Change the App's Main Image {#change-image}
 
 Now that you made a change to some text in the app, try changing the app's main image. First you will need to locate that content.
 
@@ -79,7 +79,7 @@ The breadcrumbs at the top-left of the editor show where you are in your content
 
    ![Breadcrumbs](assets/customize-app/breadcrumbs.png)
 
-1. Return to the panel with the app's various layers. The layers don't represent just text content. They represent all content in your app. You can swap images using the Content Fragment editor as well.
+1. Return to the panel with the app's various layers. The layers don't just represent text content. They represent all content in your app. Therefore, you can swap images using the Content Fragment editor as well.
 
       ![Panels](assets/customize-app/panels.png)
 
