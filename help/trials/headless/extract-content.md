@@ -17,7 +17,7 @@ First you will learn how to run two different types of queries: **list** and **b
 >
 >If you'd like more details about the GraphQL API, see the [Additional Resources section](#additional-resources) at the end of this module for the GraphQL API guide.
 
-## The Content Fragment Model Console {#content-fragment-model-console}
+## GraphQL Explorer {#graphql-explorer}
 
 You start on the GraphQL Explorer. Here you can build and run queries against your headless content.
 
