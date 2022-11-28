@@ -37,6 +37,8 @@ The demo app opens in a new tab.
 
 ![Demo app preview](assets/customize-app/preview-demo-app.png)
 
+The app itself is a simple e-commerce app for the fictional WKND outdoor lifestyle brand implemented in React. Click around to navigate the sample content.
+
 Return to the tab of the Content Fragment editor to continue.
 
 ## Edit Text in the App {#edit-app}
@@ -61,11 +63,11 @@ The Content Fragment editor displays the basic layout of the app as a page. This
 
    ![Select the Mtn Biker in Canyon Title text item](assets/customize-app/mtn-biker-in-canyon-title.png)
 
-1. Change the text from `The most exciting experience` to `Choose your own adventure`. The change is saved automatically by the editor.
+1. Change the text from `Your next great adventure is calling` to `Choose your own adventure`. The change is saved automatically by the editor.
 
 1. Click preview to see your changes. The demo app opens in a new tab.
 
-   ![Demo app preview](assets/customize-app/preview-demo-app.png)
+   ![Demo app preview](assets/customize-app/preview-demo-app-text.png)
 
 Return to the tab of the Content Fragment editor to continue the module.
 
@@ -147,6 +149,8 @@ Now that you updated the image of the biker, you can add a shoppable moment for 
    ![Edit the shoppable moment](assets/customize-app/edit-shoppable-moment.png)
 
 1. Tap or click **Preview** to test this positioning and make adjustments as needed.
+
+   ![Preview your new shoppable moment](assets/customize-app/preview-demo-app-shoppable.png)
 
 ## You’ve learned to customize a sample React app! {#conclusion}
 
