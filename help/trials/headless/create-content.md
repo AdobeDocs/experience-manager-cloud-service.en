@@ -1,6 +1,6 @@
 ---
 title: Create Headless Content
-description: Use the Content Fragment model you created previously to create content which can be used for page authoring, or as the basis for your headless content.
+description: Use the Content Fragment model that you created previously to create content which can be used for page authoring, or as the basis for your headless content.
 hidefromtoc: yes
 index: no
 ---
@@ -23,7 +23,7 @@ If you wish to navigate to the Content Fragment console yourself outside of the 
 
 ## Create a Content Fragment {#create-fragment}
 
-Content Fragments represent your headless content. But they can only be created based on a predefined content structure. The Content Fragment model you created previously serves as that structure.
+Content Fragments represent your headless content. But they can only be created based on a predefined content structure. The Content Fragment model that you created previously serves as that structure.
 
 1. Tap or click the **Create** button at the top-right of the console to open the **New Content Fragment** dialog to start creating a new Content Fragment.
 
@@ -75,7 +75,7 @@ Once you save your new Content Fragment, the Content Fragment editor opens, wher
 
 ## You've learned how to create a Content Fragment! {#conclusion}
 
-In this module you learned how to create a Content Fragment based on the model you made previously. This is how a content author would create structured headless content.
+In this module, you learned how to create a Content Fragment based on the model you made previously. This is how a content author would create structured headless content.
 
 Now that your content is created and published, you can now extract that content via Graph QL via AEM's APIs. You will learn about this in the module [Extract Content via the GraphQL API.](extract-content.md)
 
@@ -88,6 +88,6 @@ You can return to your trial home screen by clicking **Solutions** button at the
 For more information about Content Fragments and AEM, consider reviewing this additional documentation.
 
 * [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Documentation on how to navigate and use AEM for new users
-* [Managing Content Fragments - Publishing and Referenecing](/help/assets/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment) - Details on how to publish content in AEM
+* [Managing Content Fragments - Publishing and Referencing](/help/assets/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment) - Details on how to publish content in AEM
 * [Content Fragments](/help/assets/content-fragments/content-fragments.md) - Overview of Content Fragments and links to complete documentation on Content Fragments
 * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - How to create and manage Content Fragments
