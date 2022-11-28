@@ -9,17 +9,21 @@ index: no
 
 Now that you have [created your own Content Fragment models](content-structure.md) as well created your own headless content as [Content Fragments,](create-content.md) learn how to use Content Fragments and the GraphQL API as a headless content management system to deliver your content.
 
-GraphQL provides a query-based API allowing external client applications to query AEM for only the content it needs using a single API call. See the [Additional Resources section] at the end of this module for the GraphQL API guide.
+GraphQL provides a query-based API allowing external client applications to query AEM for only the content it needs using a single API call. 
 
-First you will learn how to run two different types of queries: **list** and **byPath** queries. Then you will learn how to retrieve content from the Content Fragment you created previously.
+First you will learn how to run two different types of queries: **list** and **byPath** queries. Then you will learn how to retrieve content from the Content Fragment you created previously. This document serves as a supplement of the interactive tour, covering the same steps and linking to additional resources where appropriate.
+
+>[!TIP]
+>
+>If you'd like more details about the GraphQL API, see the [Additional Resources section](#additional-resources) at the end of this module for the GraphQL API guide.
 
 ## The Content Fragment Model Console {#content-fragment-model-console}
 
-You start on the GraphQL Query Editor. Here you can build and run queries against your headless content.
+You start on the GraphQL Explorer. Here you can build and run queries against your headless content.
 
 ![The GraphQL Query Editor](assets/extract-content/query-editor.png)
 
-If you wish to navigate to the GraphQL Query Editor yourself outside of the in-app guidance, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here, you choose the **Tools** tab and then **General** -&gt; **GraphQL Query Editor**.
+If you wish to navigate to the GraphQL Explorer yourself outside of the in-app guidance, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here, you choose the **Tools** tab and then **General** -&gt; **GraphQL Query Editor**.
 
 >[!TIP]
 >
@@ -125,7 +129,7 @@ Now that you have run the two primary types of queries, you are ready to set up 
 
    ![Select your own endpoint](assets/extract-content/select-endpoint.png)
 
-1. Start by selecting and deleting all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your Content Fragment model. Select the model ending in `List`.
+1. Start by selecting and deleting all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your Content Fragment model. Select the model you created that ends in `List`.
 
    ![Auto complete models in query editor](assets/extract-content/auto-complete-models.png)
 
