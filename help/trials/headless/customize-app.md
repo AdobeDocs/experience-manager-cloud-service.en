@@ -7,7 +7,7 @@ index: no
 
 # Customize Content in a Sample React App {#customize-app}
 
-AEM Trials for headless comes preloaded with a simple React app to showcase headless content. In this module, you will learn how to preview that app and make changes to its content by swapping an image and creating a shoppable moment for it.
+AEM Trials for headless comes preloaded with a simple React app to showcase headless content. In this module, you will learn how to preview that app and modify its content by swapping an image and creating a shoppable moment for it.
 
 The app itself is based on the structure of Content Fragments. Using the Content Fragment editor in AEM, you can modify your apps content. To help you understand how this is done, this module of AEM Trials takes you through the process with a quick, interactive tour. This document serves as a supplement of the interactive tour, covering the same steps and linking to additional resources where appropriate.
 
@@ -71,7 +71,7 @@ Return to the tab of the Content Fragment editor to continue the module.
 
 ## Change the App's Main Image {#change-image}
 
-Now that you made a change to some text in the app, try changing the app's main image. First you will need to locate that content.
+Now that you modified some text in the app, try changing the app's main image. First you will need to locate that content.
 
 The breadcrumbs at the top-left of the editor show where you are in your content hierarchy.
 
@@ -131,7 +131,7 @@ Now that you updated the image of the biker, you can add a shoppable moment for 
 
    ![Choose the Content Fragment model](assets/customize-app/new-content-fragment.png)
 
-1. Give the Content Fragment that will represent this new shoppable moment a name. For example enter `Shorts` into the **Name** field.
+1. Give the Content Fragment that will represent this new shoppable moment a name. For example, enter `Shorts` into the **Name** field.
 
    ![Name the shoppable moment](assets/customize-app/step-12.png)
 
@@ -150,7 +150,7 @@ Now that you updated the image of the biker, you can add a shoppable moment for 
 
 ## You’ve learned to customize a sample React app! {#conclusion}
 
-In this module you learned how to customize a sample React app. First you learned how to edit existing ext. Then an image was swapped with another instance of that image. Finally you saw how a shoppable moment item is created and positioned.
+In this module, you learned how to customize a sample React app. First you learned how to edit existing ext. Then an image was swapped with another instance of that image. Finally you saw how a shoppable moment item is created and positioned.
 
 Be sure to check out the [Additional Resources section](#additional-resources) for additional resources about using AEM and its Content Fragments.
 
