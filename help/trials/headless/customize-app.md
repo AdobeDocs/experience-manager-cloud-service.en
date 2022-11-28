@@ -17,17 +17,17 @@ You begin in the Content Fragment editor for the sample app.
 
 ![Content Fragment editor](assets/customize-app/content-fragment-editor.png)
 
-If you wish to navigate to the Content Fragment editor yourself outside of the in-app guidance, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here, you choose the **Navigation** tab and then **Assets** -&gt; **Content Fragments**.
+If you wish to navigate to the Content Fragment editor yourself outside of the in-app guidance, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here, you choose the **Navigation** tab and then **Content Fragments**.
 
 ![Navigate to app in Content Fragments console](assets/customize-app/navigate-to-app.png)
 
-This opens the Content Fragment console. From there, you use the content tree in the left panel to navigate to the location of the app. In this case under **Content Fragments** -&gt; **Sample WKND App** -&gt; **English** -&gt; **Content Fragments** -&gt; **pages**.
+This opens the Content Fragment console. From there, you use the content tree in the left panel to navigate to the location of the app content. In this case under **Content Fragments** -&gt; **Sample WKND App** -&gt; **English** -&gt; **Content Fragments** -&gt; **pages**.
+
+Tap or click on the **WKND Home** page fragment displayed in the console to the right of the content tree to start the editor for the app content.
 
 >[!TIP]
 >
 >If you would like to know more about navigation in AEM, see the [Additional Resources section](#additional-resources) of this document for more information on AEM basic handling.
-
-Tap or click on the **WKND Home** page displayed to start the editor for the app.
 
 ## Preview the App {#preview}
 
@@ -150,7 +150,7 @@ Now that you updated the image of the biker, you can add a shoppable moment for 
 
 ## You’ve learned to customize a sample React app! {#conclusion}
 
-In this module, you learned how to customize a sample React app. First you learned how to edit existing ext. Then an image was swapped with another instance of that image. Finally you saw how a shoppable moment item is created and positioned.
+In this module, you learned how to customize a sample React app. First you learned how to edit existing text. Then an image was swapped with another instance of that image. Finally you saw how a shoppable moment item is created and positioned.
 
 Be sure to check out the [Additional Resources section](#additional-resources) for additional resources about using AEM and its Content Fragments.
 
