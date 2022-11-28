@@ -129,7 +129,7 @@ Now that you have run the two primary types of queries, you are ready to set up 
 
    ![Select your own endpoint](assets/extract-content/select-endpoint.png)
 
-1. Start by selecting and deleting all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your Content Fragment model. Select the model you created that ends in `List`.
+1. Start by selecting and deleting all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your Content Fragment model. Select the model that you created that ends in `List` from the list.
 
    ![Auto complete models in query editor](assets/extract-content/auto-complete-models.png)
 
