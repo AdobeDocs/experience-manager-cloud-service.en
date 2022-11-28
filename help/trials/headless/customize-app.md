@@ -133,7 +133,7 @@ Now that you updated the image of the biker, you can add a shoppable moment for 
 
 1. Give the Content Fragment that will represent this new shoppable moment a name. For example, enter `Shorts` into the **Name** field.
 
-   ![Name the shoppable moment](assets/customize-app/step-12.png)
+   ![Name the shoppable moment](assets/customize-app/new-content-fragment.png)
 
 1. Tap or click **Create and open**.
 
