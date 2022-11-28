@@ -74,7 +74,7 @@ Using the Content Fragment model editor, you can define fields for the Content F
 
     Properties of the model may include the name of the field, the type of field, the length of the field, if it is mandatory, etc.
 
-1. Use the **Properties** tab of the selected data type to define properties such as default value, maximum length, if it a required field, etc.
+1. Use the **Properties** tab of the selected data type to define properties such as default value, maximum length, if it is a required field, etc.
 
    >[!TIP]
    >
