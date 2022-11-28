@@ -23,11 +23,11 @@ You require the following to activate Brand Portal on your Experience Manager As
 
 >[!NOTE]
 >
->An Experience Manager Assets as a [!DNL Cloud Service] instance is entitled to connect with only one Brand Portal tenant. You can have multiple environments (development, production, and stage) for your Experience Manager Assets as a [!DNL Cloud Service] instance, wherein Brand Portal is activated on one environment.
+>An Experience Manager Assets as a [!DNL Cloud Service] instance is entitled to connect with only one Brand Portal tenant. You must have production environment for your Experience Manager Assets as a [!DNL Cloud Service] instance, wherein Brand Portal is activated on one environment.
 
 **Steps to activate Brand Portal**
 
-You can activate Brand Portal while creating the environments for your Experience Manager Assets as a [!DNL Cloud Service] instance, or separately. Let us assume that the environments were already created, and you are now required to activate Brand Portal.
+You can activate Brand Portal while creating the production environments for your Experience Manager Assets as a [!DNL Cloud Service] instance, or separately. Let us assume that the environment was already created, and you are now required to activate Brand Portal.
 
 1. Log in to Adobe Cloud Manager and navigate to **[!UICONTROL Environments]**.
    
@@ -74,7 +74,7 @@ Wherein, the Tenant id is the IMS org.
 Perform the following steps if you are not sure of the Brand Portal URL:
 
 1. Log in to [Admin Console](https://adminconsole.adobe.com/) and navigate to **[!UICONTROL Products]**.
-1. From the left rail, select **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]**.
+1. From the left panel, select **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]**.
 1. Click on **[!UICONTROL Go to Brand Portal]** to directly open Brand Portal in the browser.
 
    Or copy the Brand Portal tenant URL from the **[!UICONTROL Go to Brand Portal]** link and paste it in your browser to open the Brand Portal interface.
