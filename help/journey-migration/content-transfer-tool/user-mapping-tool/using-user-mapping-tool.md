@@ -9,6 +9,8 @@ The User Mapping Tool uses an API that allows it to look up Adobe Identity Manag
 
 ## Setting up the User Mapping Tool {#setting-up-user-mapping}
 
+**Prerequisite:** User mapping requires that each user to be mapped to its IMS ID has an email address in its profile in AEM, and in IMS.  Note that even if the user uses an email address as a user ID for logging in, mapping will not work for that user unless the email address is also in the profile, and also in IMS.
+
 Follow the steps below to set this up:
 
 1. Navigate to [Adobe Developer Console](https://console.adobe.io) using your Adobe ID.
