@@ -23,7 +23,7 @@ You require the following to activate Brand Portal on your Experience Manager As
 
 >[!NOTE]
 >
->An Experience Manager Assets as a [!DNL Cloud Service] instance is entitled to connect with only one Brand Portal tenant. You must have production environment for your Experience Manager Assets as a [!DNL Cloud Service] instance, wherein Brand Portal is activated on one environment.
+>A production environment is required to an Experience Manager Assets as a [!DNL Cloud Service] instance to connect with Brand Portal tenant.
 
 **Steps to activate Brand Portal**
 
