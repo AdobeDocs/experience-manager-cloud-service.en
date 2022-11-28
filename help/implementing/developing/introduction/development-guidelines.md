@@ -268,7 +268,7 @@ Warnings are logged by default after exceeding 1000. They are similar to the fol
 org.apache.jackrabbit.oak.jcr.session.NodeImpl Large multi valued property [/path/to/property] detected (1029 values). 
 ```
 
-Large MVPs can lead to errors due to the mongo document exceeding 16 MB, resulting in errors similar to the following.
+Large MVPs can lead to errors due to the MongoDB document exceeding 16 MB, resulting in errors similar to the following.
 
 ```text
 Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
