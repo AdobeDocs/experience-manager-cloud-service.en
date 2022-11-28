@@ -86,7 +86,8 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->When using your own CDN, there is no need to install the domains and certificates in Cloud Manager. The routing in the Adobe CDN will be done by using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>When using your own CDN, you do not need to install domains and certificates in Cloud Manager. The routing in the Adobe CDN will be done by using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` which should be sent in the request `Host` header. Overwriting the request `Host` header with a custom domain name can cause the request to be incorrectly routed by the Adobe CDN.
+
 
 >[!NOTE]
 >
