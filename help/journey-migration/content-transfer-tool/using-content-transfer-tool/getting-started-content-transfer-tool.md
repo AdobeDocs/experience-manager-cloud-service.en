@@ -31,6 +31,9 @@ The source AEM instance may be running behind a firewall where it can only reach
 * The Azure blob storage service: `casstorageprod.blob.core.windows.net`
 * The User Mapping IO endpoint: `usermanagement.adobe.io`
 
+>[!NOTE] 
+>If extraction fails due to the following error : "javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target" then this can be resolved by importing the relevant CA certificate.
+
 ### Enable SSL Logging {#enable-ssl-logging}
 
 Understanding SSL/TLS connection problems can sometimes be difficult. To toubleshoot connection issues during an extraction process, you can enable SSL logging via the System Console of the source AEM environment by following these steps:
