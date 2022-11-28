@@ -7,7 +7,7 @@ index: no
 
 # Extract Content via the GraphQL API {#extract-content}
 
-Now that you have [created your own Content Fragment models](content-structure.md) as well created your own headless content as [Content Fragments,](create-content.md) learn how to use Content Fragments and the GraphQL API as a headless content management system to deliver your content.
+So far in AEM Trials for headless, you have [created your own Content Fragment models](content-structure.md) as well created your own headless content as [Content Fragments.](create-content.md) Now you can learn how to use Content Fragments and the GraphQL API as a headless content management system to deliver your content.
 
 GraphQL provides a query-based API allowing external client applications to query AEM for only the content it needs using a single API call. 
 
@@ -33,7 +33,7 @@ AEM Trials come with an endpoint preloaded with content from which you can extra
 
 ![Select endpoint](assets/extract-content/select-endpoint.png)
 
-Select the **AEM demo assets** endpoint from the **Endpoint** drop-down menu at the top-right corner of the editor if it is not already.
+Select the **AEM demo assets** endpoint from the **Endpoint** drop-down menu at the top-right corner of the editor, if it is not already.
 
 ## Copy and Run a List Query {#list-query}
 
@@ -62,7 +62,7 @@ Start with a simple list query in order to orient yourself with how AEM as a Clo
     }
    ```
 
-1. Then replace the existing content in the query editor to the left by pasting the copied code.
+1. Then replace the existing content in the query editor by pasting the copied code.
 
     ![List query](assets/extract-content/list-query.png)
 
@@ -105,7 +105,7 @@ Running a byPath query allows you to retrieve assets for a specific Content Frag
    }
    ```
 
-1. Then replace the existing content in the query editor to the left by pasting the copied code.
+1. Then replace the existing content in the query editor by pasting the copied code.
 
    ![byPath query](assets/extract-content/bypath-query.png)
 
