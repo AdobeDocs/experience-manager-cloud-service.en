@@ -29,7 +29,7 @@ You require the following to activate Brand Portal on your Experience Manager As
 
 You can activate Brand Portal while creating the production environments for your Experience Manager Assets as a [!DNL Cloud Service] instance, or separately. Let us assume that the environment was already created, and you are now required to activate Brand Portal.
 
-1. Log in to Adobe Cloud Manager and navigate to **[!UICONTROL Environments]**.
+1. Login to Adobe Cloud Manager and navigate to **[!UICONTROL Environments]**.
    
    The **[!UICONTROL Environments]** page displays the list of all the existing environments.
 
@@ -63,9 +63,9 @@ You can activate Brand Portal while creating the production environments for you
 * [Manage environments in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
 
-**Log in to your Brand Portal tenant**:
+**Login to your Brand Portal tenant**:
 
-After activation of your Brand Portal tenant in Cloud Manager, you can log in to Brand Portal from Admin Console or by directly using the tenant URL.
+After activation of your Brand Portal tenant in Cloud Manager, you can login to Brand Portal from Admin Console or by directly using the tenant URL.
 
 The default URL of your Brand Portal tenant is: `https://<tenant-id>.brand-portal.adobe.com/`.
 
@@ -73,7 +73,7 @@ Wherein, the Tenant id is the IMS org.
 
 Perform the following steps if you are not sure of the Brand Portal URL:
 
-1. Log in to [Admin Console](https://adminconsole.adobe.com/) and navigate to **[!UICONTROL Products]**.
+1. Login to [Admin Console](https://adminconsole.adobe.com/) and navigate to **[!UICONTROL Products]**.
 1. From the left panel, select **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]**.
 1. Click on **[!UICONTROL Go to Brand Portal]** to directly open Brand Portal in the browser.
 
@@ -86,7 +86,7 @@ Perform the following steps if you are not sure of the Brand Portal URL:
 
 Perform the following steps to validate the connection between your Experience Manager Assets as a [!DNL Cloud Service] instance and Brand Portal tenant:
 
-1. Log in to Experience Manager Assets.
+1. Login to Experience Manager Assets.
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
@@ -224,7 +224,7 @@ IMS configuration includes two steps:
 
 The public key (certificate) authenticates your profile on Adobe Developer Console.
 
-1. Log in to Experience Manager Assets.
+1. Login to Experience Manager Assets.
 1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 1. In Adobe IMS Configurations page, click **[!UICONTROL Create]**. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. By default, the **Certificate** tab opens.
 1. Select **[!UICONTROL Adobe Brand Portal]** in the **[!UICONTROL Cloud Solution]** dropdown list.  
@@ -251,7 +251,7 @@ In Adobe Developer Console, projects and APIs are configured at Brand Portal ten
 
 Perform the following steps to generate the service account credentials and JWT payload:
 
-1. Log in to Adobe Developer Console with system administrator privileges on the IMS organization (Brand Portal tenant). The default URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Login to Adobe Developer Console with system administrator privileges on the IMS organization (Brand Portal tenant). The default URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -373,7 +373,7 @@ Perform the following steps to configure the IMS account.
 
 Perform the following steps to configure the Brand Portal cloud service:
 
-1. Log in to Experience Manager Assets.
+1. Login to Experience Manager Assets.
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
@@ -398,7 +398,7 @@ You can now test the configuration by checking the distribution agent and publis
 
 Perform the following steps to validate the configuration:
 
-1. Log in to AEM Assets.
+1. Login to AEM Assets.
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
