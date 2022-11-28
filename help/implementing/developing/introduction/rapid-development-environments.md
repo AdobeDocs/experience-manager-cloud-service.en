@@ -13,7 +13,7 @@ Once the changes have been tested in an RDE, they can be deployed to a regular C
 
 ## Introduction {#introduction}
 
-RDEs can be used for code, content, and Apache or Dispatcher configurations. Unlike regular Cloud Development environments, developers can use local command-line tools to sync code built with the local SDK to an RDE.
+RDEs can be used for code, content, and Apache or Dispatcher configurations. Unlike regular Cloud Development environments, developers can use local command-line tools to sync code built locally to an RDE.
 
 Every program is provisioned with an RDE. In case of Sandbox accounts, they will be hibernated after a few hours of non-use.
 
@@ -64,7 +64,14 @@ For more information about using Cloud Manager to create environments, manage wh
 Once you've added an RDE for your program using Cloud Manager, you can interact with it by setting up the command-line tools as described in the following steps:
 
 1. Install the Adobe I/O CLI tools according by following the steps in [this article](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#aio-cli), or by following the procedure [here](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
-1. Install the Adobe I/O CLI tools tools cloud manager plugin, and configure them as described [here](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+1. Install the Adobe I/O CLI tools cloud manager plugin, and configure them as described [here](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+1. Install the Adobe I/O CLI tools AEM RDE plugin by running these commands:
+
+   ```
+   aio plugins:install @adobe/aio-cli-plugin-aem-rde
+   aio plugins:update
+   ```
+
 1. Configure the cloud manager plugin for your IMS org:
    
    `aio config:set cloudmanager_orgid 9E07EZC05D54GS1A0B49431C@AdobeOrg`
@@ -100,16 +107,9 @@ Once you've added an RDE for your program using Cloud Manager, you can interact 
 
    This should list all programs under your configured organization.
 
-1. Finally, install the Adobe I/O CLI tools tools AEM RDE plugin by running these commands:
+   Note the above requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
 
-   ```
-   aio plugins:install @adobe/aio-cli-plugin-aem-rde
-   aio plugins:update
-   ```
-
-   Note the above requires you be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
-
-   Alternatively, you can confirm that you can have this developer role if you can login to the developer console by running this command:
+   Alternatively, you can confirm that you have this developer role if you can login to the developer console by running this command:
 
    `aio cloudmanager:environment:open-developer-console`
 
