@@ -68,7 +68,7 @@ The following table illustrates the maintenance tasks that are available at the 
     <td>Customer</td>
     <td>
     <p>Must be done in git. Override the out-of-the-box Maintenance window configuration node under <code>/libs</code> by creating properties under the the folder <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> or <code>granite_daily</code>.</p>
-    <p>See the Maintenance Window table below for additional configuration details. Enable the maintenance task by adding another node under the node above (name it <code>granite_TaskPurgeTask</code>) with the appropriate properties. Configure the OSGI properties.</p>
+    <p>See the Maintenance Window table below for additional configuration details. Enable the maintenance task by adding another node under the node above. Name it <code>granite_TaskPurgeTask</code>, with attribute <code>sling:resourceType</code> set to <code>granite/operations/components/maintenance/task</code> and attribute <code>granite.maintenance.name</code> set to <code>TaskPurge</code>. Configure the OSGI properties, see <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> for the list of properties.</p>
   </td>
   </tr>
     <tr>
