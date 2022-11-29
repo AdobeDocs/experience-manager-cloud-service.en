@@ -1,13 +1,12 @@
 ---
-title: Release Notes for Cloud Manager 2022.12.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2022.12.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2022.11.0 in Adobe Experience Manager as a Cloud Service
+description: These are the release notes for Cloud Manager 2022.11.0 in AEM as a Cloud Service.
 feature: Release Information
-exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 ---
 
-# Release Notes for Cloud Manager 2022.12.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release Notes for Cloud Manager 2022.11.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager 2022.12.0 in AEM as a Cloud Service.
+This page documents the release notes for Cloud Manager 2022.11.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -15,7 +14,7 @@ This page documents the release notes for Cloud Manager 2022.12.0 in AEM as a Cl
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2022.12.0 in AEM as a Cloud Service is 29 November 2022. The next release is planned for 19 January 2023.
+The release date for Cloud Manager release 2022.11.0 in AEM as a Cloud Service is 3 November 2022. The next release is planned for 29 November 2022.
 
 ## What's New {#what-is-new}
 
