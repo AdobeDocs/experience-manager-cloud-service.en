@@ -19,11 +19,11 @@ The release date for Cloud Manager release 2022.12.0 in AEM as a Cloud Service i
 
 ## What's New {#what-is-new}
 
-* AEM Maintenance Update notification via UI will be rolled out in a phased manner over the next weeks.
-* When an ingestion via Content Transfer Tool (CTT) is in progress, environment status in both Developer Console and in Cloud Manager will display as 'Ingestion in Progress'
-* Improvements to availability and reliability of Cloud Manager pipelines.
+* Notifications for [AEM maintenance updates](/help/overview/what-is-new-and-different.md#aem-updates) will be surfaced in the Cloud Manager UI. This change will be rolled out in a phased manner in the weeks after the 2022.12.0 release.
+* When an ingestion via the [Content Transfer Tool (CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) is in progress, the environment status in both the developer console and in Cloud Manager will display as `Ingestion in Progress`.
+* Improvements to the availability and reliability of [Cloud Manager pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) were made.
 
 ## Bug Fixes {#bug-fixes}
 
-* Front-End pipelines were prevented from running while a pipeline execution was in progress on the same environment. (CMGR-40575)
-* PATCH /program//environment//variables request was incorrectly allowed for environments in status failed.
+* A change was made to prevent [front-end pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) from running while a pipeline execution is in progress on the same environment.
+* A change was made to prevent a `PATCH /program//environment//variables` request for environments with the `FAILED` status.
