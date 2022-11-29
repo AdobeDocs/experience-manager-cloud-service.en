@@ -19,15 +19,11 @@ The release date for Cloud Manager release 2022.12.0 in AEM as a Cloud Service i
 
 ## What's New {#what-is-new}
 
-* The license dashboard for the AEM Sites solution will now display contract details, including whether or not the tenant is within its subscription.
-
->[!NOTE]
->
-> This feature will be rolled out in a phased manner over the coming weeks to all tenants.
-
-* When an environment associated with a pipeline has a status which does not allow the pipeline to be executed, the run action is disabled with an explanatory tooltip.
-* An improved message was added to the UI when the **Add Program** button is disabled due to insufficient entitlements for the tenant.
+* AEM Maintenance Update notification via UI will be rolled out in a phased manner over the next weeks.
+* When an ingestion via Content Transfer Tool (CTT) is in progress, environment status in both Developer Console and in Cloud Manager will display as 'Ingestion in Progress'
+* Improvements to availability and reliability of Cloud Manager pipelines.
 
 ## Bug Fixes {#bug-fixes}
 
-* Feedback during the edit production pipeline was improved to catch infrequent occurrences of one or more missing environments.
+* Front-End pipelines were prevented from running while a pipeline execution was in progress on the same environment. (CMGR-40575)
+* PATCH /program//environment//variables request was incorrectly allowed for environments in status failed.
