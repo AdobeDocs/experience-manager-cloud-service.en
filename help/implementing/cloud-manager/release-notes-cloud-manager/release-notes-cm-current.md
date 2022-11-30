@@ -1,13 +1,13 @@
 ---
-title: Release Notes for Cloud Manager 2022.11.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2022.11.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2022.12.0 in Adobe Experience Manager as a Cloud Service
+description: These are the release notes for Cloud Manager 2022.12.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 ---
 
-# Release Notes for Cloud Manager 2022.11.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release Notes for Cloud Manager 2022.12.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager 2022.11.0 in AEM as a Cloud Service.
+This page documents the release notes for Cloud Manager 2022.12.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -15,19 +15,15 @@ This page documents the release notes for Cloud Manager 2022.11.0 in AEM as a Cl
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2022.11.0 in AEM as a Cloud Service is 3 November 2022. The next release is planned for 29 November 2022.
+The release date for Cloud Manager release 2022.12.0 in AEM as a Cloud Service is 29 November 2022. The next release is planned for 19 January 2023.
 
 ## What's New {#what-is-new}
 
-* The license dashboard for the AEM Sites solution will now display contract details, including whether or not the tenant is within its subscription.
-
->[!NOTE]
->
-> This feature will be rolled out in a phased manner over the coming weeks to all tenants.
-
-* When an environment associated with a pipeline has a status which does not allow the pipeline to be executed, the run action is disabled with an explanatory tooltip.
-* An improved message was added to the UI when the **Add Program** button is disabled due to insufficient entitlements for the tenant.
+* Notifications for [AEM maintenance updates](/help/overview/what-is-new-and-different.md#aem-updates) will be surfaced in the Cloud Manager UI. This change will be rolled out in a phased manner in the weeks after the 2022.12.0 release.
+* When an ingestion via the [Content Transfer Tool (CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) is in progress, the environment status in both the developer console and in Cloud Manager will display as `Ingestion in Progress`.
+* Improvements to the availability and reliability of [Cloud Manager pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) were made.
 
 ## Bug Fixes {#bug-fixes}
 
-* Feedback during the edit production pipeline was improved to catch infrequent occurrences of one or more missing environments.
+* A change was made to prevent [front-end pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) from running while a pipeline execution is in progress on the same environment.
+* A change was made to prevent a `PATCH /program//environment//variables` request for environments with the `FAILED` status.
