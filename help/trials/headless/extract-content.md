@@ -141,7 +141,7 @@ Now that you have run the two primary types of queries, you are ready to set up 
 
    ![Auto complete fields in query editor](assets/extract-content/auto-complete-fields.png)
 
-1. Delimit multiple fields with a comma (`,`) and press Ctrl+Space or Option+Space again to select additional fields.
+1. Delimit multiple fields with a comma (`,`) or space and press Ctrl+Space or Option+Space again to select additional fields.
 
 1. As you work, you can tap or click the **Prettify** button to automatically format your code so that it is easier to read.
 
