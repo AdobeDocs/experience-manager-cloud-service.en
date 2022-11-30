@@ -43,6 +43,7 @@ The following table illustrates the maintenance tasks that are available at the 
        <li>Versions older than 30 days are removed</li>
        <li>The most recent 5 versions in the last 30 days are kept</li>
        <li>Irrespective of the rules above, the most recent version is preserved.</li>
+       <li>It is recommended that customers, who have regulatory requirements to render site pages exactly as they appeared on a specific date, integrate with specialized, external services.<li>
      </ol></td>
   </td>
   </tr>
@@ -54,6 +55,7 @@ The following table illustrates the maintenance tasks that are available at the 
        <li>For replication auditing, audit logs older than 3 days are removed</li>
        <li>For DAM (Assets) auditing, audit logs older than 30 days are removed</li>
        <li>For page auditing, logs older than 3 days are removed.</li>
+       <li>It is recommended that customers, who have regulatory requirements to produce uneditable audit logs, integrate with specialized, external services.<li>
      </ol></td>
    </td>
   </tr>
