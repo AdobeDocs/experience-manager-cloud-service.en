@@ -14,12 +14,12 @@ Adobe Experience Manager as a Cloud Service  uses the [Sling Content Distributio
 ## Methods of Publishing Content {#methods-of-publishing-content}
 
 >[!NOTE]
- >
- >If you are interested in bulk publishing content, please use the [Publish Content Tree Workflow](#publish-content-tree-workflow). 
- >This workflow step is built specifically for Cloud Service and can efficiently handle large payloads. 
- >It is not recommended to build your own bulk publishing custom code. 
- >If you do need to customize for whatever reason, you can trigger this workflow / workflow step by using existing Workflow APIs. 
- >While it is always a good practice to only publish content that needs to be published and to be prudent about not trying to publish large number of content if not necessary, there are no limits to how much content you can send through the Publish Content Tree Workflow.
+>
+>If you are interested in bulk publishing content, please use the [Publish Content Tree Workflow](#publish-content-tree-workflow). 
+>This workflow step is built specifically for Cloud Service and can efficiently handle large payloads. 
+>It is not recommended to build your own bulk publishing custom code. 
+>If you do need to customize for whatever reason, you can trigger this workflow / workflow step by using existing Workflow APIs. 
+>While it is always a good practice to only publish content that needs to be published and to be prudent about not trying to publish large number of content if not necessary, there are no limits to how much content you can send through the Publish Content Tree Workflow.
 
 ### Quick Un/Publish - Planned Un/Publish {#publish-unpublish}
 
