@@ -3,8 +3,8 @@ title: Create Headless Content
 description: Use the Content Fragment model that you created previously to create content which can be used for page authoring, or as the basis for your headless content.
 hidefromtoc: yes
 index: no
+exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 ---
-
 # Create Headless Content {#create-content}
 
 By following the in-product learning module, learn how to use [the Content Fragment models you created previously](content-structure.md) to create content which can be used for page authoring, or as the basis for your headless content. This document serves as a supplement of the interactive tour, covering the same steps and linking to additional resources where appropriate.
