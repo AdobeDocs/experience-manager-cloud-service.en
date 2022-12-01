@@ -43,7 +43,7 @@ The following are the details of the functionalities available through various t
 
 | Feature   |Description  | [!DNL Workfront] and [!DNL Assets Essentials] *No Connector (OOTB)* | [!DNL Workfront] for [!DNL AEM] connector *Requires Connector*| [!DNL Workfront for Experience Manager enhanced connector] *Requires Connector*| Workfront and [!DNL Experience Manager as a Cloud Service] *No Connector (OOTB)*|
 |----|----|----|------|-----|-----|
-| Deployment methods   | Appropriate for which [!DNL Assets] offering. | Assets Essentials| Cloud Service, Adobe Managed Services, On-premise | Cloud Service, Adobe Managed Services, On-premise| Cloud Service, Adobe Managed Services, On-premise|
+| Deployment methods   | Appropriate for which [!DNL Assets] offering. | Assets Essentials| Cloud Service, Adobe Managed Services, On-premise | Cloud Service, Adobe Managed Services, On-premise| Cloud Service|
 | **General** |
 | Send digital files from [!DNL Workfront] to [!DNL Assets]| Latest version of a WF document can be uploaded to AEM Assets which will be linked as a new version of the document.  | &#10003; | &#10003;   | &#10003;  | &#10003; |
 | Manually Link AEM Folders to Workfront Objects| Existing AEM folders can be linked as a Workfront folder and its child assets are linked as new Workfront documents.  | &#10003; | &#10003;   | &#10003;  | &#10003; |
@@ -59,7 +59,7 @@ The following are the details of the functionalities available through various t
 | Assets Linked in Workfront when Clicked Direct User to AEM| Users are directed to AEM to preview a linked asset from within Workfront.| &#10003; | &#10003;   | &#10003; | Upcoming |
 | Automatically Create Linked AEM Folders in Workfront    | Automatically create linked AEM folders in Workfront using project statuses. Automatically, configure AEM folders based on Workfront Portfolios, Programs, and Projects.   | No  | No    | &#10003;  | No |
 | Navigate directly to AEM repositories from Workfront| Allow users to navigate to available AEM repositories configured within Workfront. | &#10003; | No   | No  | &#10003; |
-| Automatically create linked AEM folders in Workfront| Automatically create linked AEM folders in Workfront using the option available in the Documents tab. | &#10003; | No   | No  | &#10003; |
+| Create linked AEM folders in Workfront| Manually create linked AEM folders in Workfront using the option available in the Documents tab. | &#10003; | No   | No  | &#10003; |
 | Comment Syncing| Automatically sync comments for assets from [!DNL Workfront] to [!DNL Assets]| No  | &#10003;   | &#10003;  | No |
 | Support multiple Workfront environments connecting to a single AEM environment| Users from multiple Workfront environments can connect to a single AEM environment. | &#10003; | No   | No  | &#10003; |
 | Support multiple AEM environments connecting to a single Workfront environment| Users within a single Workfront environment can send or link assets between multiple AEM environments. | &#10003; | &#10003;   | &#10003;  | &#10003; |
