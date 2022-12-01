@@ -49,19 +49,28 @@ Sharpening is described in [Sharpening Images](/help/assets/dynamic-media/assets
 
 ## Crop options {#crop-options}
 
-When you implement Smart Crop on images, Adobe recommends the following best practice and enforces the following limit:
+When you implement smart crop on images, Adobe recommends the following best practice and enforces the following limit:
 
 | Limit type | Best practice | Limit imposed |
 | --- | --- | --- |
-| Number of Smart Crops per image | 5 | 100 |
+| Number of smart crops per image | 5 | 100 |
 
 See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-Smart Crop coordinates are aspect ratio dependent. For the smart crop settings in an Image Profile, if the aspect ratio is the same for the added dimensions in the Image Profile, then the same aspect ratio is sent to Dynamic Media. Adobe recommends that you use the same crop area. Doing so ensures that there is no impact to different dimensions used in the Image Profile.
+Smart crop coordinates are aspect ratio dependent. For the Smart Crop settings in an Image Profile, if the aspect ratio is the same for the added dimensions in the Image Profile, then the same aspect ratio is sent to Dynamic Media. Adobe recommends that you use the same crop area. Doing so ensures that there is no impact to different dimensions used in the Image Profile.
 
-Each Smart Crop generation that you create requires extra processing. For example, adding more than five Smart Crop aspect ratios may result in a slow asset ingestion rate. It may also cause an increased load on systems. Because you can apply Smart Crop at the folder level, Adobe recommends that you use it on folders *only* where it is needed.
+Each smart crop generation that you create requires extra processing. For example, adding more than five smart crop aspect ratios may result in a slow asset ingestion rate. It may also cause an increased load on systems. Because you can apply Smart Crop at the folder level, Adobe recommends that you use it on folders *only* where it is needed.
+
+**Guidelines for defining Smart Crop in an Image Profile**
+To keep Smart Crop usage under control, and to optimize for processing time and storage of crops, Adobe recommends the following guidelines and tips:
+
+* Avoid creating duplicate smart crop profiles that have the same width and height values.
+* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.
+* Create page-wise/asset type-wise Image profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
+* An Image profile that you apply to subfolders overrides an Image profile that is applied to the folder.
+* Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time.
 
 You have two image crop options from which to choose. You can also choose to automate the creation of color and image swatches or preserve crop content across target resolutions.
 
@@ -123,7 +132,7 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 ## Edit or delete Dynamic Media Image Profiles {#editing-or-deleting-image-profiles}
 
 1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
-1. Select the Image Profile you want to edit or remove. To edit it, select **[!UICONTROL Edit Image Processing Profile]**. To remove it, select **[!UICONTROL Delete Image Processing Profile]**.
+1. Select the Image Profile that you want to edit or remove. To edit it, select **[!UICONTROL Edit Image Processing Profile]**. To remove it, select **[!UICONTROL Delete Image Processing Profile]**.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
