@@ -427,6 +427,7 @@ Setting of the Document of Record component are available under its properties. 
 
 * **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based Adaptive Form in Document of Record. By default it is true.
 * **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
+
 ## Use a custom XCI file
 
 An XCI file helps you set various properties of a document. Forms as a Cloud Service has a master XCI file. You can use a custom XCI file to override one or more default properties specified in the master XCI file. For example, you can choose to embed a font into a document or enable tagged property for all the documents. The following table specifies the XCI options:
