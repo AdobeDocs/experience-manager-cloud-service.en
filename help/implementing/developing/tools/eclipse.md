@@ -190,7 +190,7 @@ Once done, you should have your package running on your instance, and on save, a
 
 If you wish to re-build a package out of your project, right-click on the `PROJECT.ui.apps` or `PROJECT.ui.content` and choose **Run As** -&gt; **Maven Install**.
 
-You now have a target folder that has been created with your package inside (called e.g. `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+You now have a target folder that has been created with your package inside (called for example, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Troubleshooting {#troubleshooting}
 

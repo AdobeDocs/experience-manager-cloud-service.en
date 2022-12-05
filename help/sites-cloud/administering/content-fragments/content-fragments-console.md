@@ -1,7 +1,9 @@
 ---
 title: Content Fragments Console
 description: Learn how to manage Content Fragments from the Content Fragments Console.
-landing-page-description: Learn how to manage Content Fragments from the Content Fragments Console that is focused on high volume use of Content Fragments for Headless use-cases, but also used when page authoring.
+landing-page-description: Learn how to manage Content Fragments from the Content Fragments Console that is focused on the high volume use of Content Fragments for Headless use-cases, but also used when page authoring.
+feature: Content Fragments
+role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 ---
 # Content Fragments Console  {#content-fragments-console}
@@ -24,6 +26,10 @@ The Content Fragments console is dedicated to managing, searching for, and creat
 >[!NOTE]
 >
 >A selection of [keyboard shortcuts are available for use in this console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+
+>[!NOTE]
+>
+>Your project team can customize the console if required. See [Customizing the Content Fragment Console](/help/implementing/developing/extending/content-fragment-console-customizing.md) for further details.
 
 The Content Fragments console can be directly accessed from the top level of the Global Navigation:
 
