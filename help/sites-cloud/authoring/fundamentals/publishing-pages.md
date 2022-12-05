@@ -26,7 +26,7 @@ You may encounter different terms related to publishing as you work with Adobe E
   * These terms are synonymous with publish/unpublish.
   * These terms were used in previous versions of AEM.
 * **Replicate / Replication**
-  * These are the technical terms describing the movement of data (e.g. page content, files, code, user comments) from one environment to another when you publish a page.
+  * These are the technical terms describing the movement of data (for example, page content, files, code, user comments) from one environment to another when you publish a page.
   * These terms are primarily used by developers.
 
 ## Publishing Pages {#publishing-pages-1}

@@ -214,7 +214,7 @@ Some builds require additional system packages to be installed to function fully
         </profile>
 ```
 
-This same technique can be used to install language-specific packages, e.g. using `gem` for RubyGems or `pip` for Python Packages.
+This same technique can be used to install language-specific packages, for example, using `gem` for RubyGems or `pip` for Python Packages.
 
 >[!NOTE]
 >

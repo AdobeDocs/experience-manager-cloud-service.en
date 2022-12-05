@@ -68,7 +68,7 @@ You can configure the scheduler using the following properties:
 1. Open [!DNL Experience Manager] Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time-based Scheduler]** is selected, which 
 
-1.  For example, the example expression '0 0 0 &ast; &ast; ?' triggers the job at 0000 hrs.
+1. For example, the example expression '0 0 0 &ast; &ast; ?' triggers the job at 0000 hrs.
 
 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 

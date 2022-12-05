@@ -59,7 +59,7 @@ The meta resource properties that describe the SPA content:
 
 ## Meta Properties {#meta-properties}
 
-* `cq:wcmmode`: WCM mode of the editors (e.g. page, template)
+* `cq:wcmmode`: WCM mode of the editors (for example, page, template)
 * `cq:pagemodel_root_url`: URL of the root model of the App. Crucial when directly accessing a child page since the child page model is a fragment of the app root model. The `PageModelManager` then systematically recomposes the application initial model as entering the application from its root entry point.
 * `cq:pagemodel_router`: Enable or disable the [`ModelRouter`](routing.md) of the `PageModelManager` library
 * `cq:pagemodel_route_filters`: Comma separated list or regular expressions to provide routes the [`ModelRouter`](routing.md) must ignore.

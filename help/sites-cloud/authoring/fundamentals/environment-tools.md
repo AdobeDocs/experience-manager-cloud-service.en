@@ -52,7 +52,7 @@ When you open the side panel it will slide open from the left side (select the *
 
 The actual appearance and handling is dependent on the device type you are using:
 
-* **Mobile device (e.g. iPad)**
+* **Mobile device (for example, iPad)**
 
   The component browser completely covers the page being edited.
 
@@ -224,7 +224,7 @@ Select the appropriate reference type for more information. In certain situation
 
 ## Events - Timeline {#events-timeline}
 
-For appropriate resources (e.g. pages from the **Sites** console, or assets from the **Assets** console) the [timeline can be used to show the recent activity on any selected items](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
+For appropriate resources (for example, pages from the **Sites** console, or assets from the **Assets** console) the [timeline can be used to show the recent activity on any selected items](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
 
 Open the required console, then navigate to the required resource and open **Timeline**, using:
 
@@ -276,7 +276,7 @@ You can access these using the icons in the top right corner. The actual icon wi
 >* Depending on the characteristics of the page, some modes my not be available.
 >* Access to some modes require the appropriate permissions/privileges.
 >* Developer mode is not available on mobile devices due to space restrictions.
->* There is a [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) to toggle between **Preview** and the currently selected mode (e.g. **Edit**, **Layout**, etc).
+>* There is a [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) to toggle between **Preview** and the currently selected mode (for example, **Edit**, **Layout**, etc).
 >
 
 ## Path Selection {#path-selection}
