@@ -13,6 +13,14 @@ Adobe Experience Manager as a Cloud Service  uses the [Sling Content Distributio
 
 ## Methods of Publishing Content {#methods-of-publishing-content}
 
+>[!NOTE]
+>
+>If you are interested in bulk publishing content, please use the [Publish Content Tree Workflow](#publish-content-tree-workflow). 
+>This workflow step is built specifically for Cloud Service and can efficiently handle large payloads. 
+>It is not recommended to build your own bulk publishing custom code. 
+>If you do need to customize for whatever reason, you can trigger this workflow / workflow step by using existing Workflow APIs. 
+>While it is always a good practice to only publish content that needs to be published and to be prudent about not trying to publish large number of content if not necessary, there are no limits to how much content you can send through the Publish Content Tree Workflow.
+
 ### Quick Un/Publish - Planned Un/Publish {#publish-unpublish}
 
 This allows you to publish the selected page(s) immediately, without the additional options possible through the Manage Publication approach.
@@ -78,7 +86,7 @@ Alternatively, you can also achieve this by creating a Workflow Model that uses 
 * `enableVersion` (boolean value, default: `true`). This parameter determines if a new version is created upon replication.
 * `agentId` (string value, default means only agents for publish are used). It is recommended to be explicit about the agentId; for example, setting it the value: publish. Setting the agent to `preview` will publish to the preview service
 * `filters` (string value, default means all paths are activated). Available values are: 
-  * `onlyActivated` - only paths which are marked as activated will be activated.
+  * `onlyActivated` - only activate pages that have (already) been activated. Acts as a form of reactivation.
   * `onlyModified` - activate only paths which are already activated and have a modification date later than the activation date.
   * The above can be ORed with a pipe "|". For example, `onlyActivated|onlyModified`.  
 
