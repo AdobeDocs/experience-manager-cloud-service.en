@@ -63,7 +63,7 @@ Smart crop coordinates are aspect ratio dependent. For the Smart Crop settings i
 
 Each smart crop generation that you create requires extra processing. For example, adding more than five smart crop aspect ratios may result in a slow asset ingestion rate. It may also cause an increased load on systems. Because you can apply Smart Crop at the folder level, Adobe recommends that you use it on folders *only* where it is needed.
 
-**Guidelines for defining Smart Crop in an Image Profile**
+**Guidelines for defining Smart Crop in an Image profile**
 To keep Smart Crop usage under control, and to optimize for processing time and storage of crops, Adobe recommends the following guidelines and tips:
 
 * Avoid creating duplicate smart crop profiles that have the same width and height values.
