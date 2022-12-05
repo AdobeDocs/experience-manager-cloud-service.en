@@ -41,15 +41,15 @@ The asset ID or name, `AdobeStock_28563982` is in green. Notice that the asset h
 
 And finally, there are some image processing parameters, `?wid=1000&fmt=jpeg&qlt=85`, shown in yellow on the end.
 
-The entire URL path is live. [Try it](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&fmt=jpeg&qlt=85).
+The entire URL path is live. [Try it](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&fmt=jpeg&qlt=85){target="_blank"}.
 
 With your browser window still open to the Dynamic Media URL and the watch image, let's look closer at how you can create renditions of the image just by changing the URL.
 
 ### Rendering the watch image through the URL
 
-Begin by manually deleting only the image processing rules in the URL path; leave the server name, account name, and the asset ID or image name. [Try it](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982).
+Begin by manually deleting only the image processing rules in the URL path; leave the server name, account name, and the asset ID or image name. [Try it](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982){target="_blank"}.
 
-Now add an image processing parameter to the end of the URL. In the URL field, to the right of the image name, type `?wid=500`, then press **[!UICONTROL Enter]**. [Try it](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500).
+Now add an image processing parameter to the end of the URL. In the URL field, to the right of the image name, type `?wid=500`, then press **[!UICONTROL Enter]**. [Try it](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500){target="_blank"}.
 
 Notice that a new rendition of the watch is generated. A key take away to understand from this simple exercise of changing the image's width, is that the image seen is generated 100% dynamically.
 
@@ -58,9 +58,9 @@ The moment you press **[!UICONTROL Enter]**, the browser goes back to the Dynami
 
 Dynamic Media has numerous image processing parameters that you can use to fine-tune your image assets on web pages. You can [see a list of them here](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en). 
 
-Now try adding a rotation parameter to the watch image. And the end of the URL path, immediately following `wid=1000`, type `&rotate=90`, and then press **[!UICONTROL Enter]**. [Try it](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90).
+Now try adding a rotation parameter to the watch image. And the end of the URL path, immediately following `wid=1000`, type `&rotate=90`, and then press **[!UICONTROL Enter]**. [Try it](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90){target="_blank"}.
 
-The watch is still slightly skewed to the left. Change the rotate value of `90` to `92`, and then press **[!UICONTROL Enter]**. [Try it](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=9)
+The watch is still slightly skewed to the left. Change the rotate value of `90` to `92`, and then press **[!UICONTROL Enter]**. [Try it](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=9){target="_blank"}.
 
 Again, the moment you press **[!UICONTROL Enter]**, a new rendition of the watch is generated nearly instantaneously. You can see the kind of performance that you get, which explains why Dynamic Media can deliver more than 800,000 image requests, _per second_, on a busy weekend, or major holiday.
 
@@ -122,7 +122,7 @@ When you are finished, you save the preset, and now it is available for all imag
 ![Applying the image preset *Medium* to generate a rendition of an image](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Applying the image preset Medium to generate a rendition of an image._
 
-You copy the URL, then paste it into your browser to check the appearance of the image. [Try it](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$). In your browser, notice the name of the image preset _Medium_ in the full URL path.
+You copy the URL, then paste it into your browser to check the appearance of the image. [Try it](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target="_blank"}. In your browser, notice the name of the image preset _Medium_ in the full URL path.
 
 You can see the kind of clarity that is displayed in the image. That quality is partially due to the way the bowl of chocolate was shot. Also, it's partially because with Dynamic Media, you can store larger images than what is being delivered to digital channels.
 
@@ -153,7 +153,7 @@ _The start of creating an Image set._
 
 To create the Image set, you choose **[!UICONTROL Image Set]** from the **[!UICONTROL Create]** pull-down menu. Notice on the menu that there are also options to create a **[!UICONTROL Mixed Media Set]**, a **[!UICONTROL Spin Set]**, and a **[!UICONTROL Carousel Set]**. You create those sets in much the same way as an Image set. 
 
-A Mixed Media set can contain images, swatch sets, spin sets, videos, and Adaptive Video sets. [Try it](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). A Spin set simulates the real-world act of turning an object to examine it. Spin sets make it possible to view key visual details from any angle. [Try it](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&stagesize=500,400).
+A Mixed Media set can contain images, swatch sets, spin sets, videos, and Adaptive Video sets. [Try it](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). A Spin set simulates the real-world act of turning an object to examine it. Spin sets make it possible to view key visual details from any angle. [Try it](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&stagesize=500,400){target="_blank"}.
 
 Creating an Image set is straightforward. You simply add the image assets that you want to include in the set.
 
@@ -179,13 +179,13 @@ Notice in the preview that you can select the running shoe swatches and zoom in 
 ![The Running image set with the Flyout viewer applied to it](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
 _The `Running` Image set with the Flyout viewer applied to it._
 
-In this case, the `Flyout` viewer was selected. At this point, you can preview the image set in the viewer. But, it is best to see it in your browser, just how a customer sees it. You select **[!UICONTROL URL]** in the lower left, then copy the URL and paste it into your browser. [Try it](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/Flyout).   
+In this case, the `Flyout` viewer was selected. At this point, you can preview the image set in the viewer. But, it is best to see it in your browser, just how a customer sees it. You select **[!UICONTROL URL]** in the lower left, then copy the URL and paste it into your browser. [Try it](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/Flyout){target="_blank"}.   
 
 The single URL lets you use the image set and viewer where you need them on your website. You may have noticed in the previous example that **[!UICONTROL Embed]** is to the right of the URL button. By selecting **[!UICONTROL Embed]**, you can copy the code for this image set/viewer, and add it into a web page or an Experience Manager Sites component.
 
 The Flyout viewer is a default, out-of-box viewer whose properties you can edit. Or, just like creating an image preset, you can create your own, custom viewer.
 
-Now, supposed your sales and marketing team doesn't like the Flyout viewer. They like the zoom feature but they want customers to see the zoom effect directly over the shoes. In such case, you simply apply the InlineZoom viewer to the image set and copy and paste its URL in your browser to see how it behaves. [Try it](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/InlineZoom).
+Now, supposed your sales and marketing team doesn't like the Flyout viewer. They like the zoom feature but they want customers to see the zoom effect directly over the shoes. In such case, you simply apply the InlineZoom viewer to the image set and copy and paste its URL in your browser to see how it behaves. [Try it](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/InlineZoom){target="_blank"}.
 
 When you move the mouse pointer over the shoe, you zoom in to that image, and you can see more detail as you move the pointer around. And the reason for that is simply the size of the image that was initially uploaded into Dynamic Media.
 
@@ -195,8 +195,8 @@ You just read a little bit about image sets and viewers. Let's look at a couple 
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
-* `ZoomVertical_dark` viewer applied to an image asset. [Try it](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&config=jpearldemo/ZoomVertical_dark).
-* `Zoom_light` viewer applied to an image. [Try it](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&config=jpearldemo/Zoom_light).
+* `ZoomVertical_dark` viewer applied to an image asset. [Try it](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&config=jpearldemo/ZoomVertical_dark){target="_blank"}.
+* `Zoom_light` viewer applied to an image. [Try it](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&config=jpearldemo/Zoom_light){target="_blank"}.
 
 ## Optional - Learn more
 
