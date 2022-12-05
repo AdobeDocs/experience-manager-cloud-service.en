@@ -20,13 +20,11 @@ A new version of the Content Transfer Tool is available which integrates the con
 * Improved user experience via better loading states, guardrails, and error handling 
 * Ingestion logs are persisted and are always available for toubleshooting
 
-To start using the new version (v2.0.10) you will need to uninstall older versions of the Content Transfer Tool. This is needed because the new version comes with a major architectural change. With v2.0.10, you will need to create new migration sets and re-run extraction and ingestion on the new migration sets. If a migration is already in progress, you may continue using the prior version of CTT until the migration is complete.
+To start using the new version you will need to uninstall older versions of the Content Transfer Tool. This is needed because the new version comes with a major architectural change. With v2.0.10, you will need to create new migration sets and re-run extraction and ingestion on the new migration sets. If a migration is already in progress, you may continue using the prior version of CTT until the migration is complete.
 
 The following Guidelines and Best Practices apply to the new version of the Content Transfer Tool:
 
 * It is advisable to run [Revision Cleanup](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) and [data store consistency checks](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) on the **source** repository to identify potential problems and reduce the size of the repository.
-
-* If the AEM Cloud Author Content Delivery Network (CDN) config is configured to have a whitelist of IPs then it should be ensured that the source environment IPs are also added to the allowlist so that the source environment and AEM Cloud environment can communicate with each other.
 
 * In the ingestion phase, it is recommended to run the ingestion using the *wipe* mode enabled where the existing repository (author or publish) in the target AEM Cloud Service environment will be completely deleted and then updated with the migration set data. This mode is much faster than the non-wipe mode,  where the migration set is applied on top of the current content.
 
@@ -54,11 +52,11 @@ Follow the section below to understand the important considerations while runnin
 
 * If you are using a *Sandbox Environment*, ensure that your environment is current and upgraded to the latest release. If you are using a *Production Environment*, it is automatically updated.
 
-* To use the Content Transfer Tool, you need to be an admin user on your source instance and belong to the local AEM **administrators** group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to start ingestions.
+* To start an ingestion, you need to belong to the local AEM **administrators** group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to start ingestions without manually providing the migration token.
 
 * If the setting **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group. The user must be re-added to the **administrators** group in order to retrieve the access token for the Content Transfer Tool.
 
-* The Content Transfer Tool does not support merging content from multiple sources into the target Cloud Service instance if the content from the two sources is moved to the same paths on the target. To move content from multiple sources into a single target Cloud Service instance, you need to ensure that there is no overlap of the content paths from the sources.
+* Ingestions do not support merging content from multiple sources into the target Cloud Service instance if the content from the two sources is moved to the same paths on the target. To move content from multiple sources into a single target Cloud Service instance, you need to ensure that there is no overlap of the content paths from the sources.
 
 * The extraction key is valid for 14 days from the time it was created/renewed. It can be renewed at any time. If the extraction key has expired, you will not be able to perform an extraction.
 

@@ -130,7 +130,7 @@ In addition to being included in the ingestion log, the validation report can al
 
 ### Validation failed. What now? {#validation-fail}
 
-The first step is to determine if ingestion really did fail, or if the extracted content is already present on the target environment. This can occur if an ingestion is repeated with the **Wipe existing content on Cloud instance before ingestion** otpion disabled.
+The first step is to determine if ingestion really did fail, or if the extracted content is already present on the target environment. This can occur if an ingestion is repeated with the **Wipe existing content on Cloud instance before ingestion** option disabled.
 
 To verify, choose a path from the validation report and check if it is present on the target environment. If this is a publish environment, you may be limited to checking pages and assets directly. Please open a ticket with Customer Care if you need assistance with this step.
 
