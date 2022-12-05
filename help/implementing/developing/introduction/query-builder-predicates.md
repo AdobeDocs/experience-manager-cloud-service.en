@@ -239,10 +239,11 @@ It does not support facet extraction.
 * **`path`** - This defines the path pattern.
   * Depending on the `exact` property, either the entire subtree will match (like appending `//*` in xpath, but note that this does not include the base path) or only an exact path matches, which can include wildcards (`*`).
     * Defaults to `true`
-  * If the `self`property is set, the entire subtree including the base node will be searched.
+<!---   * If the `self`property is set, the entire subtree including the base node will be searched.--->
 * **`exact`** - if `exact` is `true`, the exact path must match, but it can contain simple wildcards (`*`), that match names, but not `/`; if it is `false` (default) all descendants are included (optional)
 * **`flat`** - searches only the direct children (like appending `/*` in xpath) (only used if `exact` is not true, optional)
-* **`self`** - searches the subtree but includes the base node given as path (no wildcards)
+* **`self`** - searches the subtree but includes the base node given as path (no wildcards).
+  * *Important Note*: An issue has been identified with `self` property in the current implementation of querybuilder and using it in queries may not produce correct search results. Changing the current implementation of `self` property is also not feasible since it might break the existing applications that rely on it. Due to this, `self` property has been deprecated and it is advised to avoid using it.
 
 ### property {#property}
 
@@ -260,7 +261,7 @@ It supports facet extraction and provides buckets for each unique property value
   * `equals` for exact match (default)
   * `unequals` for inequality comparison
   * `like` for using the `jcr:like` xpath function (optional)
-  * `not` for no match (e.g. `not(@prop)` in xpath, value param will be ignored)
+  * `not` for no match (for example, `not(@prop)` in xpath, value param will be ignored)
   * `exists` for existence check
     * `true` the property must exist
     * `false` is the same as `not` and is the default
@@ -270,7 +271,7 @@ It supports facet extraction and provides buckets for each unique property value
 
 This predicate matches a JCR property against an interval. This applies to properties with linear types such as `LONG`, `DOUBLE` and `DECIMAL`. For `DATE` please see the [`daterange`](#daterange) predicate that has optimized date format input.
 
-You can define a lower bound, an upper bound, or both. The operation (e.g. lesser than or lesser than or equal to) can also be specified for lower and upper bound individually.
+You can define a lower bound, an upper bound, or both. The operation (for example, lesser than or lesser than or equal to) can also be specified for lower and upper bound individually.
 
 It does not support facet extraction.
 
@@ -365,7 +366,7 @@ It does not support facet extraction.
 
 * **`tagsearch`** - keyword to search for in tag titles
 * **`property`** - property (or relative path to property) to consider (default `cq:tags`)
-* **`lang`** - to search in a certain localized tag title only (e.g. `de`)
+* **`lang`** - to search in a certain localized tag title only (for example, `de`)
 * **`all`** - boolean value to search entire tag fulltext, i.e. all titles, description etc. (takes precedence over `lang`)
 
 ### type {#type}

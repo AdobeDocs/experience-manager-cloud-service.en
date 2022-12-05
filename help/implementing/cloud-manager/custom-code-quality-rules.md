@@ -1,6 +1,6 @@
 ---
 title: Custom Code Quality Rules
-description: This page describes the custom code quality rules executed by Cloud Manager as part of [code quality testing. They are based on best practices from AEM Engineering.
+description: This page describes the custom code quality rules executed by Cloud Manager as part of code quality testing. They are based on best practices from AEM Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 ---
 # Custom Code Quality Rules {#custom-code-quality-rules} 
@@ -10,7 +10,7 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 >title="Custom Code Quality Rules"
 >abstract="This page describes the custom code quality rules executed by Cloud Manager as part of code quality testing. They are based on best practices from AEM Engineering."
 
-This page describes the custom code quality rules executed by Cloud Manager as part of [code quality testing.](/help/implementing/cloud-manager/code-quality-testing.md) They are based on best practices from AEM Engineering.
+This page describes the custom code quality rules executed by Cloud Manager as part of [code quality testing](/help/implementing/cloud-manager/code-quality-testing.md). They are based on best practices from AEM Engineering.
 
 >[!NOTE]
 >

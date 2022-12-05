@@ -183,7 +183,7 @@ To create a new folder, you can either do this:
     * Type: `String`
     * Value: The title (for the folder) you want to appear in the **Templates** console.
 
-1. In addition to the standard authoring permissions and privileges (e.g. `content-authors`) you now need to assign group(s) and define the required access rights (ACLs) for your authors to be able to create templates in the new folder.
+1. In addition to the standard authoring permissions and privileges (for example, `content-authors`) you now need to assign group(s) and define the required access rights (ACLs) for your authors to be able to create templates in the new folder.
 
    The `template-authors` group is the default group that needs to be assigned. See the section [ACLs and Groups](#acls-and-groups) for details.
 

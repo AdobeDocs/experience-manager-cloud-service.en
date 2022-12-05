@@ -49,7 +49,7 @@ The build process deploys your code through three phases.
 
 The **Stage Deployment** phase. involves these steps.
 
-* **Validation**  - This step ensures that the pipeline is configured to use the currently available resources. E.g. testing that the configured branch exists and that the environments are available.
+* **Validation**  - This step ensures that the pipeline is configured to use the currently available resources. for example, testing that the configured branch exists and that the environments are available.
 * **Build &amp; Unit Testing** - This step runs a containerized build process.
   * Please see the document [Build Environment Details](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for details on the build environment.
 * **Code Scanning** - This step evaluates the quality of your application code.
@@ -115,6 +115,10 @@ The following steps will timeout if left waiting for user feedback:
 ## Deployment Process {#deployment-process}
 
 All Cloud Service deployments follow a rolling process to ensure zero downtime. Please refer to the document [How Rolling Deployments Work](/help/implementing/deploying/overview.md#how-rolling-deployments-work) to learn more.
+
+>[!NOTE]
+>
+>The Dispatcher cache is wiped out on each deployment. It is subsequently warmed up before the new publish nodes accept traffic.
 
 ## Re-Execute a Production Deployment {#Reexecute-Deployment}
 

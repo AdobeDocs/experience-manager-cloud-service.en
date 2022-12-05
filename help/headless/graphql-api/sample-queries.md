@@ -24,6 +24,10 @@ To help with this see:
 
 * And some [sample GraphQL queries](#graphql-sample-queries), based on the sample content fragment structure (Content Fragment Models and related Content Fragments).
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_headless_graphql_sample"
+>title="Learning to use GraphQL with AEM - Sample Content and Queries"
+>abstract="Learn to use GraphQL with AEM to serve content headlessly by exploring sample content and queries."
 
 ## GraphQL - Sample Queries using the Sample Content Fragment Structure {#graphql-sample-queries-sample-content-fragment-structure}
 
