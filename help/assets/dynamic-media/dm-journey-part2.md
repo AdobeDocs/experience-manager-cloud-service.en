@@ -53,7 +53,7 @@ Now add an image processing parameter to the end of the URL. In the URL field, t
 
 Notice that a new rendition of the watch is generated. A key take away to understand from this simple exercise of changing the image's width, is that the image seen is generated 100% dynamically.
 
-Now change the width value of `500` pixels to `1000` pixels, and then press **[!UICONTROL Enter]**. [Try it](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000). 
+Now change the width value of `500` pixels to `1000` pixels, and then press **[!UICONTROL Enter]**. [Try it](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}. 
 The moment you press **[!UICONTROL Enter]**, the browser goes back to the Dynamic Media Image Server. It generates a brand-new rendition of the watch, based on the new width value you just entered, then delivers the new image back to the browser, and caches it. 
 
 Dynamic Media has numerous image processing parameters that you can use to fine-tune your image assets on web pages. You can [see a list of them here](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en). 
@@ -122,7 +122,9 @@ When you are finished, you save the preset, and now it is available for all imag
 ![Applying the image preset *Medium* to generate a rendition of an image](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Applying the image preset Medium to generate a rendition of an image._
 
-You copy the URL, then paste it into your browser to check the appearance of the image. [Try it](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target="_blank"}. In your browser, notice the name of the image preset _Medium_ in the full URL path.
+You copy the URL, then paste it into your browser to check the appearance of the image. [Try it](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target="_blank"}. 
+
+In your browser, notice the name of the image preset _Medium_ in the full URL path.
 
 You can see the kind of clarity that is displayed in the image. That quality is partially due to the way the bowl of chocolate was shot. Also, it's partially because with Dynamic Media, you can store larger images than what is being delivered to digital channels.
 
