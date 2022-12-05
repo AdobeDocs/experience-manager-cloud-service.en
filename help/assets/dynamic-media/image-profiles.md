@@ -11,7 +11,8 @@ When uploading images, you can automatically crop the image upon upload by apply
 
 >[!IMPORTANT]
 >
->Image Profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
+>&bull; CMYK image format is not supported with smart crop.
+>&bull; Image profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
 
 ## Unsharp Mask option {#unsharp-mask}
 
@@ -48,25 +49,35 @@ Sharpening is described in [Sharpening Images](/help/assets/dynamic-media/assets
 
 ## Crop options {#crop-options}
 
-When you implement Smart Crop on images, Adobe recommends the following best practice and enforces the following limit:
+When you implement smart crop on images, Adobe recommends the following best practice and enforces the following limit:
 
-| Limit type | Best practice | Limit imposed | Change to limit on December 31, 2022 |
-| --- | --- | --- | --- |
-| Number of Smart Crops per image | 5 | 100 | 20 |
+| Limit type | Best practice | Limit imposed |
+| --- | --- | --- |
+| Number of smart crops per image | 5 | 100 |
 
 See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-Smart Crop coordinates are aspect ratio dependent. For the smart crop settings in an Image Profile, if the aspect ratio is the same for the added dimensions in the Image Profile, then the same aspect ratio is sent to Dynamic Media. Adobe recommends that you use the same crop area. Doing so ensures that there is no impact to different dimensions used in the Image Profile.
+Smart crop coordinates are aspect ratio dependent. For the Smart Crop settings in an Image Profile, if the aspect ratio is the same for the added dimensions in the Image Profile, then the same aspect ratio is sent to Dynamic Media. Adobe recommends that you use the same crop area. Doing so ensures that there is no impact to different dimensions used in the Image Profile.
 
-Each Smart Crop generation that you create requires extra processing. For example, adding more than five Smart Crop aspect ratios may result in a slow asset ingestion rate. It may also cause an increased load on systems. Because you can apply Smart Crop at the folder level, Adobe recommends that you use it on folders *only* where it is needed.
+Each smart crop generation that you create requires extra processing. For example, adding more than five smart crop aspect ratios may result in a slow asset ingestion rate. It may also cause an increased load on systems. Because you can apply Smart Crop at the folder level, Adobe recommends that you use it on folders *only* where it is needed.
+
+**Guidelines for defining Smart Crop in an Image profile**
+To keep Smart Crop usage under control, and to optimize for processing time and storage of crops, Adobe recommends the following guidelines and tips:
+
+* Avoid creating duplicate smart crop profiles that have the same width and height values.
+* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.
+* Create page-wise/asset type-wise Image profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
+* An Image profile that you apply to subfolders overrides an Image profile that is applied to the folder.
+* Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time.
 
 You have two image crop options from which to choose. You can also choose to automate the creation of color and image swatches or preserve crop content across target resolutions.
 
 >[!IMPORTANT]
 >
->Adobe recommends that you review any generated crops and swatches to ensure that they are appropriate and relevant to your brand and values.
+>&bull; Adobe recommends that you review any generated crops and swatches to ensure that they are appropriate and relevant to your brand and values.
+>&bull; CMYK image format is not supported with smart crop.
 
 | Option | When to use | Description |
 | --- | --- | --- |
@@ -81,11 +92,12 @@ The maximum supported input file size resolution is 16K.
 
 >[!NOTE]
 >
->16K resolution is a display resolution with approximately 16,000 pixels horizontally. The most commonly discussed 16K resolution is 15360 × 8640, which doubles the pixel count of 8K UHD in each dimension, for a total of four times as many pixels. This resolution has 132.7 megapixels, 16 times as many pixels as 4K resolution and 64 times as many pixels as 1080p resolution.
+>16K resolution is a display resolution with approximately 16,000 pixels horizontally. The most commonly discussed 16K resolution is 15360 × 8640, which doubles the pixel count of 8K UHD in each dimension, for a total of four times as many pixels. This resolution has 132.7 megapixels, 16 times as many pixels as 4K resolution and 64 times as many pixels as 1080p resolution.
 
 | Image format | Case-insensitive file extension | MIME type | Supported input color space | Maximum supported input file size | Supported image format? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Yes |
+| CMYK | | | | | No |
 | EPS | | | | | No |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Yes; the first frame of the animated GIF is used for the rendition. You cannot configure or change the first frame. |
 | JPEG | `.jpg` and `.jpeg` | image/jpeg | sRGB | 15 GB | Yes |
@@ -120,7 +132,7 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 ## Edit or delete Dynamic Media Image Profiles {#editing-or-deleting-image-profiles}
 
 1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
-1. Select the Image Profile you want to edit or remove. To edit it, select **[!UICONTROL Edit Image Processing Profile]**. To remove it, select **[!UICONTROL Delete Image Processing Profile]**.
+1. Select the Image Profile that you want to edit or remove. To edit it, select **[!UICONTROL Edit Image Processing Profile]**. To remove it, select **[!UICONTROL Delete Image Processing Profile]**.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -195,7 +207,8 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 >[!IMPORTANT]
 >
->Adobe recommends that you review any generated smart crops and smart swatches to ensure that they are appropriate and relevant to your brand and values.
+>&bull; Adobe recommends that you review any generated smart crops and smart swatches to ensure that they are appropriate and relevant to your brand and values.
+>&bull; CMYK image format is not supported with smart crop.
 
 You can manually realign or resize the smart crop window of an image to further refine its focal point.
 
@@ -228,6 +241,11 @@ See also [Edit the smart crop or smart swatch of multiple images](#editing-the-s
 1. Near the upper-right corner of the page, select **[!UICONTROL Save]**, then select **[!UICONTROL Close]** to return to the folder of assets.
 
 ## Edit the smart crop or smart swatch of multiple images {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+>
+>&bull; Adobe recommends that you review any generated smart crops and smart swatches to ensure that they are appropriate and relevant to your brand and values.
+>&bull; CMYK image format is not supported with smart crop.
 
 After you apply an Image Profile &ndash; containing Smart Crop &ndash; to a folder, all images in that folder have a crop applied to them. If desired, you can *manually* realign or resize the smart crop window in multiple images to further refine their focal point.
 

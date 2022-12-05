@@ -18,8 +18,6 @@ The release date for Cloud Manager release 2022.6.0 in AEM as a Cloud Service is
 
 ## What's New {#what-is-new}
 
-* The Cloud Manager UI now allows [self-service content restoration](/help/operations/backup.md) to a known good state of the AEM cloud environment.
-  * This feature will be rolled out in a phased approach over the weeks following the 2022.06.0 release.
 * A new welcome card on the Cloud Manager landing page gives users quick access to onboarding tutorials and progress metrics related to the tenant.
   * This feature will be rolled out in a phased approach over the week following the 2022.06.0 release.
 * Users with requisite permissions can access a new [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md) on the Cloud Manager landing page to view details of entitlements available to the tenant.

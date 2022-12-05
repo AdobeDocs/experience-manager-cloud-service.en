@@ -324,27 +324,36 @@ To localize the branding information that you enter in the Document of Record ta
 1. Select a panel (root panel) in the Document of Record and then tap ![configure](assets/configure.png).
 1. Tap ![dortab](assets/dortab.png). The Document of Record tab appears.
 1. Select either the default template or a custom template for rendering the Document of Record. If you select the default template, a thumbnail preview of the Document of Record appears below the Template drop-down.
+1. Based on whether you select a default or a custom template, some or all of the following properties appear in the Document of Record tab. Specify the below mentioned properties to define the appearance of the Document of Record:
 
-   ![brandingtemplate](assets/brandingtemplate.png)
+    1. **Basic Properties**: 
+        * **Template**:  If you choose to select a custom template, browse a select an XDP on your [!DNL AEM Forms] server. If you want to use a template that is not already on your [!DNL AEM Forms] server, you should first upload the XDP to your [!DNL AEM Forms] server.
+         * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF.
+         * **Font Family**: Font family of the text in the Document of Record PDF.
+         * **Include form objects that are not bound to data model**: Setting the property includes unbound fields from Schema based Adaptive Form in Document of Record. 
+         * **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.
+         * **Hide description of panels**: Setting the property excludes description of the panel/table from Document of Record. Applicable for panel and table.
 
-   If you choose to select a custom template, browse a select an XDP on your [!DNL AEM Forms] server. If you want to use a template that is not already on your [!DNL AEM Forms] server, you should first upload the XDP to your [!DNL AEM Forms] server.
+         ![Basic Properties](/help/forms/assets/basicpropertiesdor.png)
 
-1. Based on whether you select a default or a custom template, some or all of the following properties appear in the Document of Record tab. Specify these appropriately:
+    1. **Form Field Properties**: 
+        * **For Check Box and Radio Button components, show only the selected values**: Setting the property displays only selected values of check box and radio button in [!UICONTROL Document of Record].
+        * **Separator for multiple value(s)**: You can choose any separator such as comma or line break to display multiple values.
+        * **Options Alignment**: You can select the desired alignment (Horizontal, Vertical, Same as adaptive Form) to set the alignment for the fields such as check box or radio button to be displayed on [!UICONTROL Document of Record]. By default, the vertical alignment is set for the fields in [!UICONTROL Document of Record]. Setting the properties from the [!UICONTROL Form Field Properties] of DoR overwrites the properties set in the [!UICONTROL Item Alignment] for the fields on an Adaptive Form. In case, you select [!UICONTROL Same as Aaptive form] option, the alignment as configured in an Adaptive Form author instance is used for [!UICONTROL Document of Record] fields.  
+        * **Number of options for horizontal alignment**:You can set the number of options to be displayed on the Document of Record for the horizontal alignment. 
+        
+        ![Form Field Properties](/help/forms/assets/formfieldpropertiesdor.png)
 
-    * **Logo Image**: You can either choose to use the logo image from the Adaptive Form, choose one from DAM, or upload one from your computer.
-    * **Form Title**
-    * **Header Text**
-    * **Disclaimer Label**
-    * **Disclaimer**
-    * **Disclaimer Text**
-    * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF
-    * **Font Family**: Font family of the text in the Document of Record PDF
-    * **For Check Box and Radio Button components, show only the selected values**
-    * **Separator for multiple selected value(s)**
-    * **Include form objects that are not bound to data model**
-    * **Exclude hidden fields from the Document of Record**
-    * **Hide description of panels**
+    1. **Master Page Properties**:
+        * **Logo Image**: You can either choose to use the logo image from the Adaptive Form, choose one from DAM, or upload one from your computer.
+        * **Form Title**: Title of the DoR.
+        * **Header Text**: Text that appears at the header section of the Document of Record.
+        * **Disclaimer Label**: Label of disclaimer.
+        * **Disclaimer**: Text which specifies the scope of rights and obligations on the Document of Record.
+        * **Disclaimer Text**: Text of disclaimer.
 
+        ![Master Page Properties](/help/forms/assets/masterpagepropertiesdor.png)
+  
    >[!NOTE]
    >
    >If you are using an Adaptive Form template created with a version of Designer prior to 6.3, for Accent Color and Font Family properties to work, ensure that the following is present in your Adaptive Form template under the root subform:
@@ -361,7 +370,30 @@ To localize the branding information that you enter in the Document of Record ta
    </proto>
    ```
 
-1. To save the branding changes, tap Done.
+1. To save the branding changes, tap **[!UICONTROL Done]**.
+
+## Document of Record Support in Adaptive Form Editor {#dor-support-in-adaptiveform}
+
+You can configure the [!UICONTROL Document of Record] template directly from the Adaptive Form editor or Adaptive Form template editor. 
+
+Perform the following steps from the author instance of Adaptive Form editor: 
+
+1.  Select the **[!UICONTROL Adaptive Form container (Root)]** component.
+1. Click ![Configure Icon](/help/forms/assets/configure-icon.svg) icon to open the **[!UICONTROL Properties]** of the Adaptive Form container.
+1. Open the **[!UICONTROL Document of Record Template]** tab and select from the following options:
+   * **[!UICONTROL None]**: When this option is selected no [!UICONTROL Document of Record] template created for your Adaptive Form.
+
+    * **[!UICONTROL Associate Form Template as Document of Record Template]**:When this option is selected, XFA Form is used as a template for Document of Record.
+
+    * **[!UICONTROL Generate Document of Record]**: When this option is selected, the [!UICONTROL Document of Record] template is automatically generated for your Adaptive Form. 
+    
+1. Tap ![Save](/help/forms/assets/check-button.png) to save the properties.
+
+  ![Document of Record Template Support](/help/forms/assets/dor-templatesupport.png)
+
+>[!NOTE]
+>
+>When [!UICONTROL Document of Record] template is created using an Adaptive Form Template editor, then only two options are available under [!UICONTROL Document of Record Template] tab as [!UICONTROL None] and [!UICONTROL Generate Document of Record].
 
 ## Table and column layouts for panels in Document of Record {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -394,7 +426,7 @@ Setting of the Document of Record component are available under its properties. 
 **Form level settings**
 
 * **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based Adaptive Form in Document of Record. By default it is true.
-* **Exclude fields from DoR if hidden:** Setting the property overrides the behavior of “Exclude From Document of Record” field level property when it’s not true. If fields are hidden at the time of form submission, they are excluded from Document of Record if the property is set true, provided “Exclude From Document of Record” property is not set. Setting [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) property to true identifies the hidden fields for exclusion from document of record on server-side.
+* **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
 
 ## Use a custom XCI file
 

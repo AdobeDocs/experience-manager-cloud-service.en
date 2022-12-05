@@ -146,9 +146,16 @@ When you create a template, it is added as a draft. Enable the template to use i
 
 A form works with its template. When you download an Adaptive Form created using a customized template, the template is not downloaded. When you import the ftocorm on a different [!DNL AEM Forms] instance, it is imported without its template. If a form is imported but its template is not available, the form is not rendered. You can package the custom template from `/conf` node in `https://<server>:<port>/crx/packmgr`, and port it in the [!DNL AEM Forms] instance where you want to upload the form. You can also [Create a template using AEM Archeype and deploy it to your Cloud Services instance](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites). 
 
+>[!NOTE]
+>
+> * You can associate a [!UICONTROL Form Data Model Schema] to an Adaptive Form template in a template editor. See [Creating an Adaptive Form](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) for more information.
+> * You can also configure the [!UICONTROL Document of Record] template directly from the Adaptive Form editor or Adaptive Form template editor. For more information, see [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
 ## Creating an Adaptive Form using the template {#creating-an-adaptive-form-using-the-template}
 
 After you create and enable a template, it is available in the forms manager when you create an Adaptive Form. To use a template and create an Adaptive Form, see [Creating an Adaptive Form](creating-adaptive-form.md).
+
 
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}
