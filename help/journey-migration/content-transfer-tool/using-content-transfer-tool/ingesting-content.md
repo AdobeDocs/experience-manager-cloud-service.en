@@ -17,6 +17,9 @@ Follow the steps below to ingest your migration set from the Content Transfer To
    >[!NOTE]
    >You can run the optional pre-copy step to significantly speed up the ingestion phase. The pre-copy step is most effective for the 1st full extraction and ingestion. Refer to [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details. 
 
+   >[!NOTE]
+   >Did you remember to log a support ticket for this ingestion? See [Important Considerations Before Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) for that and other considerations to help make the ingestion successful.
+
 1. Go to Cloud Acceleration Manager. Click on your project card and click on the Content Transfer card. Navigate to **Ingestion Jobs** and click on **New Ingestion** 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
@@ -89,8 +92,9 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
 ## Top Up Ingestion {#top-up-ingestion-process}
 
->[!CONTEXTUALHELP] 
->id="aemcloud_ctt_ingestion_topup" title="Top Up Ingestion" 
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion_topup"
+>title="Top Up Ingestion"
 >abstract="Use the top up feature to move  modified content since the previous content transfer activity. Upon completion of Ingestion, check the logs for any error/warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe Customer Care." 
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="Viewing Logs"
 
