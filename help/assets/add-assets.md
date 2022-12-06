@@ -232,25 +232,23 @@ Files or folders with names matching these conditions are skipped during the imp
 For asset filenames, the JCR name and path is sanitized using the API: `JcrUtil.escapeIllegalJcrChars`.
 
 * Unicode characters are not changed
-* Replace the special characters with their URL Escape Code, for example, `new asset.png` is updated to `new%20asset.png`:
+* Replace the special characters with their URL Escape Code, for example, `new%asset.png` is updated to `new%25asset.png`:
 
   ```
                   URL escape code   
-  
+
   "               %22
   %               %25
   '               %27
   *               %2A
-  .               %2E
   /               %2F
   :               %3A
   [               %5B
-  \n              %5Cn
-  \r              %5Cr
-  \t              %5Ct
+  \n              %0A
+  \r              %0D
+  \t              %09
   ]               %5D
   |               %7C
-  space char      %20
   ```
 
 **Handling folder name in bulk import**
