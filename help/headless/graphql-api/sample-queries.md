@@ -1101,6 +1101,7 @@ These sample queries are based on the WKND project. This has:
 
 * Content Fragments (and other content) available under:
   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
 
 >[!NOTE]
 >
