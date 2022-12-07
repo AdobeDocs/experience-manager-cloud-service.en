@@ -1,0 +1,25 @@
+{
+    "ignorePatterns": [
+        {
+            "pattern": "^.*example.com"
+        },
+        {
+            "pattern": "^.*INSERT-DOMAIN-AND-PATH-TO-CODE-HERE"
+        },
+        {
+            "pattern": "^.*github.com"
+        },
+        {
+            "pattern": "^.*html2canvas.hertzen.com"
+        },
+        {
+            "pattern": "^.*adobe.io"
+        },
+        {
+            "pattern": "^.*sling.apache.org"
+        },
+        {
+            "pattern": "^.*localhost.*"
+        }
+    ]
+}
