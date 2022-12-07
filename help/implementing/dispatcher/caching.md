@@ -215,6 +215,10 @@ In general, it will not be necessary to invalidate the Dispatcher cache. Instead
 
 Like previous versions of AEM, publishing or unpublishing pages clears the content from the Dispatcher cache. If a caching issue is suspected, customers should republish the pages in question and ensure that a virtual host is available that matches the `ServerAlias` localhost, which is required for Dispatcher cache invalidation.
 
+>[!NOTE]
+>In your custom vhost file, you need to make sure that the following are in place, else the dispatcher invalidation might not work properly:
+ServerAlias "127.0.0.1" "localhost" "*.local" "*.adobeaemcloud.com" "*.adobeaemcloud.net"
+
 When the publish instance receives a new version of a page or asset from the author, it uses the flush agent to invalidate appropriate paths on its Dispatcher. The updated path is removed from the Dispatcher cache, together with its parents, up to a level (you can configure this with the [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
 ## Explicit invalidation of the Dispatcher cache {#explicit-invalidation}
