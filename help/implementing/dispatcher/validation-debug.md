@@ -26,11 +26,12 @@ The structure of the project's Dispatcher subfolder is as follows:
 ./
 ├── conf.d
 │   ├── available_vhosts
+│   │   ├── my_site.vhost # Created by customer
 │   │   └── default.vhost
 │   ├── dispatcher_vhost.conf
 │   ├── enabled_vhosts
 │   │   ├── README
-│   │   └── default.vhost -> ../available_vhosts/default.vhost
+│   │   └── my_site.vhost -> ../available_vhosts/my_site.vhost  # Created by customer
 │   └── rewrites
 │   │   ├── default_rewrite.rules
 │   │   └── rewrite.rules
@@ -41,6 +42,7 @@ The structure of the project's Dispatcher subfolder is as follows:
 │   └── USE_SOURCES_DIRECTLY
 └── conf.dispatcher.d
     ├── available_farms
+    │   ├── my_farm.farm # Created by customer
     │   └── default.farm
     ├── cache
     │   ├── default_invalidate.any
@@ -53,7 +55,7 @@ The structure of the project's Dispatcher subfolder is as follows:
     ├── dispatcher.any
     ├── enabled_farms
     │   ├── README
-    │   └── default.farm -> ../available_farms/default.farm
+    │   └── my_farm.farm -> ../available_farms/my_farm.farm  # Created by customer
     ├── filters
     │   ├── default_filters.any
     │   └── filters.any
@@ -126,6 +128,7 @@ It is recommended that the above files reference the immutable files listed belo
 * `conf.d/available_vhosts/default.vhost`
 
 Contains a sample virtual host. For your own virtual host, create a copy of this file, customize it, go to `conf.d/enabled_vhosts` and create a symbolic link to your customized copy.
+Do not copy the default.vhost file directly into `conf.d/enabled_vhosts`. 
 
 Ensure that a virtual host is always available that matches ServerAlias `\*.local` and also localhost, needed for internal Adobe processes.
 
