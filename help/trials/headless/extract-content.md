@@ -3,8 +3,8 @@ title: Extract Content via the GraphQL API
 description: Learn how to use Content Fragments and the GraphQL API as a headless content management system.
 hidefromtoc: yes
 index: no
+exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 ---
-
 # Extract Content via the GraphQL API {#extract-content}
 
 So far in AEM Trials for headless, you have [created your own Content Fragment models](content-structure.md) as well created your own headless content as [Content Fragments.](create-content.md) Now you can learn how to use Content Fragments and the GraphQL API as a headless content management system to deliver your content.
