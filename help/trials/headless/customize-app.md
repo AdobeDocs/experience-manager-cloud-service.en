@@ -3,8 +3,8 @@ title: Customize Content in a Sample React App
 description: Use a sample React app to learn how to customize content using the headless feature set in AEM as a Cloud Service.
 hidefromtoc: yes
 index: no
+exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 ---
-
 # Customize Content in a Sample React App {#customize-app}
 
 AEM Trials for headless comes preloaded with a simple React app to showcase headless content. In this module, you will learn how to preview that app and modify its content by swapping an image and creating a shoppable moment for it.
