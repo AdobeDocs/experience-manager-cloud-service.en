@@ -33,6 +33,10 @@ There are two different type of programs:
 
 Since they serve different purposes, the different environments have different options. However the process of creating them is similar. For this onboarding journey we will create a sandbox environment.
 
+>[!TIP]
+>
+>If you need to create a production program, see the [Additional Resources](#additional-resources) section for a link to documentation describing programs in detail.
+
 ## Creating a Sandbox Program {#create-sandbox}
 
 Follow these steps to create a sandbox program.
