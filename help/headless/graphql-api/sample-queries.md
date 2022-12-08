@@ -65,7 +65,7 @@ This will return all `types` for all available schemas.
 
 **Sample Result**
 
-```graphql
+```json
 {
   "data": {
     "__schema": {
@@ -169,7 +169,7 @@ When executed, the system will automatically expand the query to include all fie
 
 **Sample Results**
 
-```graphql
+```json
 {
   "data": {
     "cityList": {
@@ -240,7 +240,7 @@ query {
 
 **Sample Results**
 
-```graphql
+```json
 {
   "data": {
     "cityList": {
@@ -294,7 +294,7 @@ This is a query to return the details of a single fragment entry at a specific l
 
 **Sample Results**
 
-```graphql
+```json
 {
   "data": {
     "cityByPath": {
@@ -335,7 +335,7 @@ If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the 
 
 **Sample Results**
 
-```graphql
+```json
 {
   "data": {
     "cityList": {
@@ -391,7 +391,7 @@ query {
 
 **Sample Results**
 
-```graphql
+```json
 {
   "data": {
     "companyList": {
@@ -515,7 +515,7 @@ query {
 
 **Sample Results**
 
-```graphql
+```json
 {
   "data": {
     "personList": {
@@ -566,7 +566,7 @@ query {
 
 **Sample Results**
 
-```graphql
+```json
 {
   "data": {
     "personList": {
@@ -633,7 +633,7 @@ query {
 
 **Sample Results**
 
-```graphql
+```json
 {
   "data": {
     "adventureList": {
@@ -692,7 +692,7 @@ query {
 
 **Sample Results**
 
-```graphql
+```json
 {
   "data": {
     "cityList": {
@@ -743,7 +743,7 @@ query {
 
 **Sample Results**
 
-```graphql
+```json
 {
   "data": {
     "cityList": {
@@ -794,7 +794,7 @@ query {
 
 **Sample Results**
 
-```graphql
+```json
 {
   "data": {
     "cityList": {
@@ -854,7 +854,7 @@ query {
 
 **Sample Results**
 
-```graphql
+```json
 {
   "data": {
     "cityList": {
@@ -912,7 +912,7 @@ query {
 
 **Sample Results**
 
-```graphql
+```json
 {
   "data": {
     "companyList": {
@@ -988,7 +988,7 @@ query {
 
 **Sample Results**
 
-```graphql
+```json
 {
   "data": {
     "companyList": {
@@ -1065,7 +1065,7 @@ query {
 
 **Sample Results**
 
-```graphql
+```json
 {
   "data": {
     "awardList": {
@@ -1111,14 +1111,14 @@ These sample queries are based on the WKND project. This has:
 >
 >Various queries reference the variation `variation1`. This is not in the standard WKND package. It must be created for testing. 
 >
->If `variation1` does not exist, then the `Master`variation will be returned as default.
+>If `variation1` does not exist, then the `master`variation will be returned as default.
 
 ### Sample Query for all Content Fragments of a certain model with the specified properties {#sample-wknd-all-model-properties}
 
 This sample query interrogates:
 
 * for all Content Fragments of type `article`
-* with the `_path`and properties of the `authorFragment`.
+* with the `_path` and properties of the `authorFragment`.
 
 **Sample Query**
 
@@ -1129,7 +1129,6 @@ This sample query interrogates:
       _path
       authorFragment {
         _path
-        _variation
         firstName
         lastName
         birthDay
@@ -1215,12 +1214,11 @@ This sample query interrogates:
 
 ```graphql
 {
-  articleByPath (_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures") {
+  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures") {
     item {
         _path
         authorFragment {
           _path
-          _variation
           firstName
           lastName
           birthDay
@@ -1470,9 +1468,8 @@ This query interrogates:
 
 ```graphql
 {
-  articleByPath (_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
     item {
-      _path
       authorFragment {
         _path
         _variation
@@ -1501,9 +1498,10 @@ This query interrogates:
 
 ```graphql
 {
-  articleList (variation: "variation1") {
+  articleList(variation: "variation1") {
     items {
       _path
+      _variation
       authorFragment {
         _path
         _variation
@@ -1532,12 +1530,11 @@ This query interrogates:
 
 ```graphql
 { 
-  articleList (_locale: "fr") {
+  articleList(_locale: "fr") {
     items {
       _path
       authorFragment {
         _path
-        _variation
         firstName
         lastName
         birthDay
@@ -1562,12 +1559,11 @@ This query interrogates:
 **Sample Query**
 
 ```graphql
-query {
-   articleList(offset: 5, limit:5) {
+{
+   articleList(offset: 5, limit: 5) {
     items {
       authorFragment {
         _path
-        _variation
         firstName
         lastName
         birthDay
@@ -1587,7 +1583,7 @@ This query interrogates:
 **Sample Query**
 
 ```graphql
-query {
+{
     adventurePaginated(first: 5, after: "ODg1MmMyMmEtZTAzMy00MTNjLThiMzMtZGQyMzY5ZTNjN2M1") {
         edges {
           cursor

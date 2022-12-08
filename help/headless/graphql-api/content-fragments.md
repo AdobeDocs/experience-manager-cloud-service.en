@@ -556,19 +556,20 @@ This feature allows you to sort the query results according to a specified field
 The sorting criteria:
 
 * is a comma separated list of values representing the field path
+  * the first field in the list will define the primary sort order, the second field will be used if two values of the primary sort criterion are equal, the third one if the first two criteria are equal, etc.
   * dotted notation, i.e field1.subfield.subfield etc...
 * with an optional order direction
   * ASC (ascending) or DESC (descending); as default ASC is applied
+  * the direction can be specified per field; this means that you can sort one field in ascending order, another one in descending order (name, firstName DESC)
 
 For example:
 
 ```graphql
 query {
-  authorList(sort:"lastName, firstName") {
+  authorList(sort: "lastName, firstName") {
     items {
       firstName
       lastName
-      _path
     }
   }
 }
@@ -582,7 +583,6 @@ And also:
     items {
         lastName
         firstName
-        _path
     }
   }
 }
@@ -590,24 +590,25 @@ And also:
 
 <!-- to be included? -->
 
-You can also sort on a field within a nested fragment, using the format of `nestedFragmentname.fieldname`
+You can also sort on a field within a nested fragment, using the format of `nestedFragmentname.fieldname`.
+
+>[!NOTE]
+>
+>This might have a negative impact on performance.
 
 For example:
 
 ```graphql
 query {
-  articleList(sort:"authorFragment.lastName")  {
+  articleList(sort: "authorFragment.lastName")  {
     items {
       title
       authorFragment {
-        _path
-        _variation
         firstName
         lastName
         birthDay
       }
       slug
-      _path
     }
   }
 }
@@ -631,13 +632,12 @@ For example, to output the page of results containing up to five articles, start
 
 ```graphql
 query {
-   articleList(offset: 5, limit:5) {
+   articleList(offset: 5, limit: 5) {
     items {
       authorFragment {
         lastName
         firstName
       }
-      _path
     }
   }
 }
@@ -649,7 +649,7 @@ query {
 
 >[!NOTE]
 >
->* Paging is impacted by the order to the jcr query result set. By default it uses `jcr:path` to make sure the order is always the same. If a different sort order is used, and if that sorting cannot be done at jcr query level, then there will be a negative performance impact as the paging cannot be done in memory.
+>* Paging requires a stable sort order to work correctly across multiple queries requesting different pages of the same result set. By default it uses the repository path of each item of the result set to make sure the order is always the same. If a different sort order is used, and if that sorting cannot be done at jcr query level, then there will be a negative performance impact as the entire result set must be loaded into memory before the pages can be determined.
 >
 >* The higher the offset, the more time it will take to skip the items from the complete jcr query result set. An alternative solution for large result sets is to use the Paginated query with `first` and `after` method.
 
@@ -660,7 +660,7 @@ The `...Paginated` query type reuses most of the `...List` query type features (
 * `first`: The `n` first items to return. 
   The default is `50`. 
   The maximum is `100`.
-* `after`: The cursor-id as returned in the complete result set - if `cursor` is selected.
+* `after`: The cursor that determines the beginning of the requested page; note that the item represented by the cursor is not included in the result set; the cursor of an item is determined by the `cursor` field of the `edges` structure.
 
 For example, output the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list:
 
@@ -686,9 +686,9 @@ query {
 
 >[!NOTE]
 >
->* Paging defaults use the UUID of the repository node representing the fragment for ordering to ensure the order of results is always the same. When `sort` is used, the UUID is implicitly used to ensure a unique sort; even for two items with identical sort keys.
+>* By default paging use the UUID of the repository node representing the fragment for ordering to ensure the order of results is always the same. When `sort` is used, the UUID is implicitly used to ensure a unique sort; even for two items with identical sort keys.
 >
->* Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level.
+>* Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. This is also the recommended way if you want to query large paginated result sets.
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
