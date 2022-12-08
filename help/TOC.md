@@ -4,7 +4,7 @@ product: Adobe Experience Manager
 sub-product: Adobe Experience Manager as a Cloud Service
 solution-title: Experience Cloud
 feature: Release Information
-user-guide-description: Adobe Experience Manager as a Cloud Service overview self-help resources and documentation links
+user-guide-description: Learn how Experience Manager as a Cloud Service works and what the software can do for you.
 breadcrumb-title: User Guide
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
@@ -63,6 +63,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-11-0.md)
       + [Release Notes for 2022.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-10-0.md)
       + [Release Notes for 2022.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
       + [Release Notes for 2022.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
@@ -151,6 +152,12 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Introduction to Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
     + [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md)
     + [Notification User Groups](/help/journey-onboarding/user-groups.md)
++ AEMaaCS Trials {#trials}
+  + Headless Trials {#headless}
+    + [Customize Content in a Sample React App](/help/trials/headless/customize-app.md)
+    + [Create the Content Structure for Your App](/help/trials/headless/content-structure.md)
+    + [Create Headless Content](/help/trials/headless/create-content.md)
+    + [Extract Content via the GraphQL API](/help/trials/headless/extract-content.md)
 + AEM as a Cloud Service Migration Journey {#migration-journey}
   + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/getting-started.md)
   + [Readiness Phase](/help/journey-migration/readiness.md)

@@ -62,6 +62,11 @@ Otherwise, the response code is set to 500, but the `500.jsp` script is not exec
 
 To handle 500 errors, the file name of the error handler script must be the same as the exception class (or superclass). To handle all such exceptions you can create a script `/apps/sling/servlet/errorhandler/Throwable.jsp` or `/apps/sling/servlet/errorhandler/Exception.jsp`.
 
+>[!NOTE]
+>
+>In AEM as Cloud Service, the CDN serves a generic error page when a 5XX error is received from the backend. In order to allow the actual response of the backend to pass through you need to add the following header to the response: `x-aem-error-pass: true`.
+>This works only for responses coming from AEM or the Apache/Dispatcher layer. Other unexpected errors coming from intermediate infrastructure layers will still display the generic error page.
+
 >[!CAUTION]
 >
 >On an author instance, [CQ WCM Debug Filter](/help/implementing/deploying/configuring-osgi.md) is enabled by default. This always results in the response code 200. The default error handler responds by writing the full stack trace to the response.

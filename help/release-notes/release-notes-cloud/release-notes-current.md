@@ -23,7 +23,7 @@ The following section outlines the general Release Notes for the current (latest
 >
 > No automatic AEMaaCS maintenance will be executed during the following timeframes, beginning and ending at midnight (00:00) CET:
 >
->* Monday, November 21 until Monday, December 5
+>* Monday, November 21 until Monday, December 12
 >* Monday, December 19 until Tuesday, January 3
 
 ## Release Date {#release-date}
