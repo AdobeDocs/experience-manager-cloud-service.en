@@ -439,6 +439,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 ```
  
 **Query Variables**:
+
 ```json
 {
     "includePrice": true
