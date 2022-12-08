@@ -50,6 +50,12 @@ Follow these steps to edit a program.
 
 Any time a program is edited, including adding or removing a solution or add-on, those changes will take effect following the next deployment.
 
+If your production program had enhanced security enabled, an additional **Enhanced Security** tab will be available in the **Edit Program** window to confirm that the feature is active for the program.
+
+![Enhanced Security active for a program](assets/edit-program-enhanced.png)
+
+This setting can not be modified once the program is created. For more information about the enhanced security option, please see the [Creating Production Programs](creating-production-programs.md) document.
+
 ## Deleting Sandbox Programs {#delete-sandbox-program}
 
 Deleting a sandbox program will remove all environments and pipelines associated with it.
