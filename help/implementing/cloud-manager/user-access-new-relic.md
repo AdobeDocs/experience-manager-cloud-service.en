@@ -20,7 +20,7 @@ When a new production program is created, the New Relic One sub-account associat
 
 New Relic One APM for AEM as a Cloud Service has many features.
 
-* Direct access to a dedicated New Relic One account (access managed by Adobe Support)
+* Direct access to a dedicated New Relic One account
 
 * Instrumented New Relic One APM agent that shows exact method calls with line numbers, including external dependencies and databases
 
