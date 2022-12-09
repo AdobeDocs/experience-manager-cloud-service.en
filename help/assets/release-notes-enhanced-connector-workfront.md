@@ -29,7 +29,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 * The Document Version metadata does not synchronize appropriately between Workfront and Experience Manager.
 * Issues while creating a folder that is linked to Experience Manager in Workfront when the folder is using a schema that is missing definition in the global configuration.
-* The metadata schema editor form stops responding when you click any field due to a load time that is longer than expected. Added specific OSGi configuration for custom forms to resolve the issue.
+* The metadata schema editor form stops responding when you click any field due to a load time that is longer than expected. Added specific OSGi configuration for custom forms to resolve the issue. The names of the custom forms that you add to the metadata schema editor are available in the logs.
  
 >[!IMPORTANT]
 >
