@@ -26,13 +26,26 @@ Follow these steps to create a production program.
 
 1. Click on **Add Program** from the top-right corner of the screen.
 
-   ![Cloud manager landing page](assets/first_timelogin1.png) 
+   ![Cloud manager landing page](assets/log-in.png) 
 
-1. Select **Set up for Production** in the Create Program wizard to create a production program. You can accept the default program name or edit it before clicking **Continue**.
+1. Select **Set up for Production** in the Create Program wizard to create a production program.
 
-   ![Creating program wizard](assets/create-prod1.png)
+   1. You can accept the default program name or edit it.
+   1. You can optionally drag and drop a thumbnail image to identify your program.
+   1. Tap or click **Continue**.
+
+   ![Creating program wizard](assets/create-production-program.png)
+
+1. If you have enhanced security entitlements, the **Enhanced Security** tab will provide the option to **Enable Enhanced Security** for your production program. If required, check the option to enable enhanced security and tap or click **Continue**.
+
+   * Enhanced security cannot be enabled or disabled after program creation.
+   * [Learn more](https://www.adobe.com/go/hipaa-ready) about Adobe's HIPAA ready solution implementation.
+
+   ![Enhanced Security option](assets/create-production-program-enhanced.png)
 
 1. On the **Solutions &amp; Add-ons** tab, select the solutions to include in the program.
+
+   * If you selected the **Enable Enhanced Security** previously, you will be allowed to select only as many solutions for which HIPAA entitlements are available.
 
    ![Select solutions](assets/setup-prod-select.png)
 
