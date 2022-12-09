@@ -17,7 +17,11 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 **Enhancements**
 
+<!--
+
 * Workfront enhanced connector now allows you to use new search parameters to be more specific while defining folder names on large repositories.
+
+-->
 
 * Workfront enhanced connector now supports performing full-text search on assets and folders.
 
