@@ -9,11 +9,39 @@ The following section outlines the general Release Notes for [!DNL Workfront for
 
 ## Release Date {#release-date}
 
-The release date for the latest version 1.9.5 of [!DNL Workfront for Experience Manager enhanced connector] is November 11, 2022.
+The release date for the latest version 1.9.6 of [!DNL Workfront for Experience Manager enhanced connector] is December 09, 2022.
 
 ## Release highlights {#release-highlights}
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following enhancements and bug fixes:
+
+**Enhancement**
+
+* Workfront enhanced connector now uses new search parameters to reduce the size of search on large repositories.
+
+**Bug Fixes**
+
+* The Document Version metadata does not synchronize appropriately between Workfront and Experience Manager.
+* Issues while creating a folder that is linked to Experience Manager in Workfront.
+* The metadata schema editor form stops responding when you click any field due to a load time that is longer than expected.
+* The enhanced connector performs a property search on the node name instead of the full-text search.
+
+ 
+>[!IMPORTANT]
+>
+>Adobe recommends you to [upgrade to the latest 1.9.6 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+
+## Known Issues {#known-issues}
+
+* While configuring project linked folders with AEM 6.4, Experience Manager do not save the values for **[!UICONTROL sub-folders]** and **[!UICONTROL Create linked folder in projects with portfolio]** fields. The value for the **[!UICONTROL sub-folders]** field updates to **[!UICONTROL undefined]** and the value for the **[!UICONTROL Create linked folder in projects with portfolio]** field updates to **[!UICONTROL Default Portfolio]** automatically after saving the configuration.
+
+* When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** dropdown list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** dropdown list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** dropdown list as well as the **[!UICONTROL Document Actions]** dropdown list available in the new Workfront experience.
+
+## Previous releases {#previous-releases}
+
+### November 2022 release {#november-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] version 1.9.5, released on November 11, includes the following updates:
 
 * When you define only one value for a multi-value field in Workfront, the field value is not appropriately mapped to Experience Manager.
 
@@ -52,19 +80,6 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
     >[!NOTE]
     >
     >If you have already deleted the wrong event subscriptions before executing the steps mentioned in this procedure, you can skip the last step of this procedure.
-
- 
->[!IMPORTANT]
->
->Adobe recommends you to [upgrade to the latest 1.9.5 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
-
-## Known Issues {#known-issues}
-
-* While configuring project linked folders with AEM 6.4, Experience Manager do not save the values for **[!UICONTROL sub-folders]** and **[!UICONTROL Create linked folder in projects with portfolio]** fields. The value for the **[!UICONTROL sub-folders]** field updates to **[!UICONTROL undefined]** and the value for the **[!UICONTROL Create linked folder in projects with portfolio]** field updates to **[!UICONTROL Default Portfolio]** automatically after saving the configuration.
-
-* When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** dropdown list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** dropdown list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** dropdown list as well as the **[!UICONTROL Document Actions]** dropdown list available in the new Workfront experience.
-
-## Previous releases {#previous-releases}
 
 ### October 2022 release {#october-2022-release}
 
