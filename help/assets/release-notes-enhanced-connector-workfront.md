@@ -15,17 +15,17 @@ The release date for the latest version 1.9.6 of [!DNL Workfront for Experience 
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following enhancements and bug fixes:
 
-**Enhancement**
+**Enhancements**
 
-* Workfront enhanced connector now uses new search parameters to reduce the size of search on large repositories.
+* Workfront enhanced connector now allows you to use new search parameters to be more specific while defining folder names on large repositories.
+
+* Workfront enhanced connector now supports performing full-text search on assets and folders.
 
 **Bug Fixes**
 
 * The Document Version metadata does not synchronize appropriately between Workfront and Experience Manager.
-* Issues while creating a folder that is linked to Experience Manager in Workfront.
+* Issues while creating a folder that is linked to Experience Manager in Workfront when the folder is using a schema that is missing definition in the global configuration.
 * The metadata schema editor form stops responding when you click any field due to a load time that is longer than expected.
-* The enhanced connector performs a property search on the node name instead of the full-text search.
-
  
 >[!IMPORTANT]
 >
