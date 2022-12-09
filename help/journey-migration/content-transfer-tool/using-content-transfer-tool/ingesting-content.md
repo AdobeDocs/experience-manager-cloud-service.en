@@ -25,7 +25,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
    
    
-1. Review the ingestion checklist and ensure that all the steps have been completed. These are necessary steps to ensure a successful ingestion. You will be able to proceed to the **Next** step only if the checklist has been completed.  
+1. Review the ingestion checklist and ensure that all the steps have been completed. These are necessary steps to ensure a successful ingestion. You will be able to proceed to the **Next** step only if the checklist has been completed.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
@@ -113,7 +113,7 @@ You can do this by creating a new Ingestion Job and ensure that **Wipe** is disa
 
 ### CAM Unable to Retrieve the Migration Token {#cam-unable-to-retrieve-the-migration-token}
 
-The automatic retrieval of the migration token may fail for different reasons, including you [setting up an IP allow list via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) on the target Cloud Service environment.  In such scenarios you will see the following dialog when you attempt to start an ingestion:
+The automatic retrieval of the migration token may fail for different reasons, including you [setting up an IP allow list via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) on the target Cloud Service environment. In such scenarios you will see the following dialog when you attempt to start an ingestion:
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -128,6 +128,14 @@ You will need to retrieve the migration token manually by clicking on the "Get t
 You will be able to kick-off an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you don't belong to the AEM administrators group, you will see an error as shown below when you try to start an ingestion. You can either ask your administrator to add you to the local **AEM administrators** or ask for the token itself, which you can then paste into the **Migration token input** field.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
+
+### Automatic Updates through Release Orchestrator is still enabled
+
+Release Orchestrator automatically keeps environments up to date by applying updates automatically. If the update is triggerred when an ingestion is being performed, it can cause unpredictable results including the corruption of the environment. That is one of the reasons a support ticket should be logged before starting an ingestion (see "Note" above), so that temporarily disabling the Release Orchestrator can be scheduled.
+
+If Release Orchestrator is still running when an ingestion is being started, the UI will present this error message. You may choose to continue anyway, accepting the risk, by checking the field and pressing the button again.
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
 ## What's Next {#whats-next}
 
