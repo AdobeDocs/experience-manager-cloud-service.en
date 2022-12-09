@@ -15,7 +15,7 @@ The release date for the latest version 1.9.6 of [!DNL Workfront for Experience 
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following enhancements and bug fixes:
 
-**Enhancements**
+**Enhancement**
 
 <!--
 
