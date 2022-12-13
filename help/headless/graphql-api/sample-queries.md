@@ -1107,12 +1107,6 @@ These sample queries are based on the WKND project. This has:
 >
 >As the results can be extensive they are not reproduced here.
 
->[!NOTE]
->
->Various queries reference the variation `variation1`. This is not in the standard WKND package. It must be created for testing. 
->
->If `variation1` does not exist, then the `master`variation will be returned as default.
-
 ### Sample Query for all Content Fragments of a certain model with the specified properties {#sample-wknd-all-model-properties}
 
 This sample query interrogates:
@@ -1462,27 +1456,19 @@ This query interrogates:
 This query interrogates:
 
 * for a single Content Fragment of type `article` at a specific path
-  * within that, the data related to the variation: `variation1`
+  * within that, the data related to the variation: `another`
 
 **Sample Query**
 
 ```graphql
 {
-  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/ian-provo", variation: "another") {
     item {
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
@@ -1492,29 +1478,23 @@ This query interrogates:
 
 This query interrogates:
 
-* for Content Fragments of type `article` with a specific variation: `variation1`
+* for Content Fragments of type `article` with a specific variation: `another`
+
+>[!NOTE]
+>
+>This will demonstrate fallback for Content Fragments that do not have a [Variation](/help/headless/graphql-api/content-fragments.md#variations) of the specified name.
 
 **Sample Query**
 
 ```graphql
 {
-  articleList(variation: "variation1") {
+  authorList(variation: "another") {
     items {
-      _path
-      _variation
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
