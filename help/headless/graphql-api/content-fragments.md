@@ -115,10 +115,8 @@ While GraphQL also supports GET requests, these can hit limits (for example the 
 >
 >To allow direct, and/or POST, queries in the Dispatcher you can ask your System Administrator to:
 >
->* Create a Cloud Manager environment variable called `ENABLE_GRAPHQL_ENDPOINT`
+>* Create a [Cloud Manager environment variable](/help/implementing/cloud-manager/environment-variables.md) called `ENABLE_GRAPHQL_ENDPOINT`
 >* with the value `true`
-
-<!-- maybe add a link to the documentation that explains how to create that environment variable -->
 
 >[!NOTE]
 >
@@ -253,7 +251,7 @@ These [helper fields](#helper-fields) are marked with a preceding `_` to disting
 
 #### Path {#path}
 
-The path field is used as an identifier in AEM GraphQL. It represents the path of the Content Fragment asset inside the AEM repository. We have chosen this as the identifier of a content fragment, because it:
+The path field is used as an identifier in AEM GraphQL. It represents the path of the Content Fragment asset inside the AEM repository. We have chosen this as the identifier of a Content Fragment, because it:
 
 * is unique within AEM,
 * can be easily fetched.
@@ -288,7 +286,7 @@ See [Sample Query - A Single Specific City Fragment](/help/headless/graphql-api/
 
 #### Metadata {#metadata}
 
-Through GraphQL, AEM also exposes the metadata of a Content Fragment. Metadata is the information that describes a content fragment, such as the title of a content fragment, the thumbnail path, the description of a Content Fragment, the date it was created, amongst others.
+Through GraphQL, AEM also exposes the metadata of a Content Fragment. Metadata is the information that describes a Content Fragment, such as the title of a Content Fragment, the thumbnail path, the description of a Content Fragment, the date it was created, amongst others.
 
 Because Metadata is generated through the Schema Editor and as such does not have a specific structure, the `TypedMetaData` GraphQL type was implemented to expose the metadata of a Content Fragment. `TypedMetaData` exposes the information grouped by the following scalar types:
 
@@ -493,8 +491,8 @@ Some types also allow to specify additional options that modify how an expressio
 
 | Option | Type(s) | Description |
 |--- |--- |--- |
-| _ignoreCase | String | Ignores the case of a string, e.g. a value of `time` will match `TIME`, `time`, `tImE`, ... |
-| _sensitiveness | Float | Allows a certain margin for float values to be considered the same (to work around technical limitations due to the internal representation of float values; should be avoided, as this option might have a negative impact on performance |
+| `_ignoreCase` | `String` | Ignores the case of a string, e.g. a value of `time` will match `TIME`, `time`, `tImE`, ... |
+| `_sensitiveness` | `Float` | Allows a certain margin for `float` values to be considered the same (to work around technical limitations due to the internal representation of `float` values; should be avoided, as this option might have a negative impact on performance |
 
 Expressions can be combined to a set with the help of a logical operator (`_logOp`):
 
@@ -505,7 +503,7 @@ Each field can be filtered by its own set of expressions. The expression sets of
 
 A filter definition (passed as the `filter` argument to a query) contains:
 
-* A sub-definition for each field (the field can be accessed through its name, e.g. there's a `lastName` field in the filter for the `lastName` field in the field type)
+* A sub-definition for each field (the field can be accessed through its name, e.g. there's a `lastName` field in the filter for the `lastName` field in the Data (field) Type)
 * Each sub-definition contains the `_expressions` array, providing the expression set, and the `_logOp` field that defines the logical operator the expressions should be combined with
 * Each expression is defined by the value (`value` field) and the operator (`_operator` field) the content of a field should be compared to
 
@@ -644,15 +642,15 @@ query {
 }
 ```
 
-<!-- When available link to BP and replace "jcr query level" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query level" with a more neutral term. -->
 
-<!-- When available link to BP and replace "jcr query result set" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query result set" with a more neutral term. -->
 
 >[!NOTE]
 >
->* Paging requires a stable sort order to work correctly across multiple queries requesting different pages of the same result set. By default it uses the repository path of each item of the result set to make sure the order is always the same. If a different sort order is used, and if that sorting cannot be done at jcr query level, then there will be a negative performance impact as the entire result set must be loaded into memory before the pages can be determined.
+>* Paging requires a stable sort order to work correctly across multiple queries requesting different pages of the same result set. By default it uses the repository path of each item of the result set to make sure the order is always the same. If a different sort order is used, and if that sorting cannot be done at JCR query level, then there will be a negative performance impact as the entire result set must be loaded into memory before the pages can be determined.
 >
->* The higher the offset, the more time it will take to skip the items from the complete jcr query result set. An alternative solution for large result sets is to use the Paginated query with `first` and `after` method.
+>* The higher the offset, the more time it will take to skip the items from the complete JCR query result set. An alternative solution for large result sets is to use the Paginated query with `first` and `after` method.
 
 ### Paginated query - first and after {#paginated-first-after}
 
