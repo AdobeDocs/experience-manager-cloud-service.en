@@ -1455,7 +1455,7 @@ This query interrogates:
 
 This query interrogates:
 
-* for a single Content Fragment of type `article` at a specific path
+* for a single Content Fragment of type `author` at a specific path
   * within that, the data related to the variation: `another`
 
 **Sample Query**
@@ -1478,7 +1478,7 @@ This query interrogates:
 
 This query interrogates:
 
-* for Content Fragments of type `article` with a specific variation: `another`
+* for Content Fragments of type `author` with a specific variation: `another`
 
 >[!NOTE]
 >
