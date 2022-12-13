@@ -22,7 +22,7 @@ To help with this see:
 
 * A [sample Content Fragment structure](#content-fragment-structure-graphql) 
 
-* And some [sample GraphQL queries](#graphql-sample-queries), based on the sample content fragment structure (Content Fragment Models and related Content Fragments).
+* And some [sample GraphQL queries](#graphql-sample-queries), based on the sample Content Fragment structure (Content Fragment Models and related Content Fragments).
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
