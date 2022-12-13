@@ -9,6 +9,11 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 
 By following the in-product learning module, learn how to use [the Content Fragment models you created previously](content-structure.md) to create content which can be used for page authoring, or as the basis for your headless content. This document serves as a supplement of the interactive tour, covering the same steps and linking to additional resources where appropriate.
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content"
+>title="Create new content"
+>abstract="Building on the models you created in module 1, you'll learn how to create content which can be used for page authoring, or as the basis of your headless content."
+
 ## Content Fragments {#introduction}
 
 In AEM as a Cloud Service, Content Fragments are pieces of headless content based on the structure defined by a Content Fragment model. You can create your own Content Fragment by starting in the Content Fragment console. The Content Fragment console can be thought of as your library of headless content. You use the console to create new Content Fragments and manage exiting fragments. Your console starts empty, so let's create a new fragment!
