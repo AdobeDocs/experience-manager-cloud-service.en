@@ -232,6 +232,10 @@ A successful deployment will generate a response resembles the following:
 ```
 ..
 #5 deploy completed for dispatcher-config dispatcher.zip on author,publish - done by 9E0735C05T54FE1A0B49431C@AdobeID at 2022-10-03T10:26:31.286Z
+Logs:
+  Cloud manager validator 2.0.49
+  2022/10/03 10:26:37 No issues found
+  Syntax OK
 ```
 
 Code deployed to RDE does not undergo a Cloud Manager pipeline and its associated quality gates, however the code does go through some analysis, which will report the errors, as illustrated in the code sample below:
