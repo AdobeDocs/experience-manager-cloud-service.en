@@ -19,14 +19,15 @@ The goal of this introduction and walkthrough is to demonstrate to an AEM develo
 
 ## Requirements {#requirements}
 
-The walkthrough is based on standard AEM functionality and the sample We.Retail Journal app. To follow along with this walkthrough, you must have the following available.
+The walkthrough is based on standard AEM functionality and the sample WKND SPA Project app. To follow along with this walkthrough, you must have the following available.
 
-* [AEM version 6.4 with service pack 2 or newer](/help/release-notes/release-notes.md)
+* [Latest development SDK of AEMaaCS](/help/release-notes/release-notes-cloud/release-notes-current.md)
   * It should be running as a local development environment.
   * You must have admin rights to the system.
-* [The sample We.Retail Journal app available on GitHub](https://github.com/adobe/aem-sample-we-retail-journal)
-  * Download the [latest release.](https://github.com/adobe/aem-sample-we-retail-journal/releases)
-  * [Use package manager](/help/implementing/developing/tools/package-manager.md) to install the app and start it as a you would any other package in AEM.
+* [The sample WKND SPA Project app available on GitHub](https://github.com/adobe/aem-guides-wknd-spa)
+  * Download the [latest release of the React app](https://github.com/adobe/aem-guides-wknd-spa/releases) named similar to `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`.
+  * Download the [latest sample images for the app](https://github.com/adobe/aem-guides-wknd-spa/releases) named similar to `wknd-spa-sample-images-X.Y.Z.zip`.
+  * [Use package manager](/help/implementing/developing/tools/package-manager.md) to install both packages as a you would any other package in AEM.
   * The app does not need to be installed using Maven for the purposes of this walkthrough.
 
 ### What is a SPA? {#what-is-a-spa}
