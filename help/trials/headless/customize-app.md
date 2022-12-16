@@ -11,6 +11,11 @@ AEM Trials for headless comes preloaded with a simple React app to showcase head
 
 The app itself is based on the structure of Content Fragments. Using the Content Fragment editor in AEM, you can modify your apps content. To help you understand how this is done, this module of AEM Trials takes you through the process with a quick, interactive tour. This document serves as a supplement of the interactive tour, covering the same steps and linking to additional resources where appropriate.
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app"
+>title="Customize content in a sample React app"
+>abstract="We've set up a modern React app which you can use to learn how to customize content using the headless feature set."
+
 ## Content Fragment Editor {#fragment-editor}
 
 You begin in the Content Fragment editor for the sample app.
