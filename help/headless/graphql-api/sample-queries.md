@@ -1107,12 +1107,6 @@ These sample queries are based on the WKND project. This has:
 >
 >As the results can be extensive they are not reproduced here.
 
->[!NOTE]
->
->Various queries reference the variation `variation1`. This is not in the standard WKND package. It must be created for testing. 
->
->If `variation1` does not exist, then the `master`variation will be returned as default.
-
 ### Sample Query for all Content Fragments of a certain model with the specified properties {#sample-wknd-all-model-properties}
 
 This sample query interrogates:
@@ -1461,28 +1455,20 @@ This query interrogates:
 
 This query interrogates:
 
-* for a single Content Fragment of type `article` at a specific path
-  * within that, the data related to the variation: `variation1`
+* for a single Content Fragment of type `author` at a specific path
+  * within that, the data related to the variation: `another`
 
 **Sample Query**
 
 ```graphql
 {
-  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/ian-provo", variation: "another") {
     item {
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
@@ -1492,29 +1478,23 @@ This query interrogates:
 
 This query interrogates:
 
-* for Content Fragments of type `article` with a specific variation: `variation1`
+* for Content Fragments of type `author` with a specific variation: `another`
+
+>[!NOTE]
+>
+>This will demonstrate fallback for Content Fragments that do not have a [Variation](/help/headless/graphql-api/content-fragments.md#variations) of the specified name.
 
 **Sample Query**
 
 ```graphql
 {
-  articleList(variation: "variation1") {
+  authorList(variation: "another") {
     items {
-      _path
-      _variation
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
@@ -1666,29 +1646,29 @@ The following fragments are used for the appropriate model.
 | Company Name | CEO | Employees |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-| Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
+| Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### Person {#fragment-person}
 
 | Name | First Name | Awards |
 |--- |--- |--- |
-| Lincoln | Abe | |
-| Smith | Adam | |
-| Slade | Cutter | Gameblitz<br>Gamestar |
-| Marsh | Duke | | 
-| Smith | Joe | |
-| Croft | Lara | Gamestar |
-| Caulfield | Max | Gameblitz |
-| Jobs | Steve | |
+| Lincoln | Abe | |
+| Smith | Adam | |
+| Slade | Cutter | Gameblitz<br>Gamestar |
+| Marsh | Duke | | 
+| Smith | Joe | |
+| Croft | Lara | Gamestar |
+| Caulfield | Max | Gameblitz |
+| Jobs | Steve | |
 
 #### Award {#fragment-award}
 
 | Shortcut/ID | Title |
 |--- |--- |
 | GB | Gameblitz |
-| GS | Gamestar |
-| OSC | Oscar |
+| GS | Gamestar |
+| OSC | Oscar |
 
 #### City {#fragment-city}
 
@@ -1696,8 +1676,8 @@ The following fragments are used for the appropriate model.
 |--- |--- |--- |--- |
 | Basel | Switzerland | 172258 | city:emea |
 | Berlin | Germany | 3669491 | city:capital<br>city:emea |
-| Bucharest | Romania | 1821000 | city:capital<br>city:emea |
-| San Francisco | USA | 883306 | city:beach<br>city:na |
-| San Jose | USA | 102635 | city:na |
-| Stuttgart | Germany | 634830 | city:emea |
-| Zurich | Switzerland | 415367 | city:capital<br>city:emea |
+| Bucharest | Romania | 1821000 | city:capital<br>city:emea |
+| San Francisco | USA | 883306 | city:beach<br>city:na |
+| San Jose | USA | 102635 | city:na |
+| Stuttgart | Germany | 634830 | city:emea |
+| Zurich | Switzerland | 415367 | city:capital<br>city:emea |
