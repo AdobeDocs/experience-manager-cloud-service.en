@@ -1646,29 +1646,29 @@ The following fragments are used for the appropriate model.
 | Company Name | CEO | Employees |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-| Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
+| Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### Person {#fragment-person}
 
 | Name | First Name | Awards |
 |--- |--- |--- |
-| Lincoln | Abe | |
-| Smith | Adam | |
-| Slade | Cutter | Gameblitz<br>Gamestar |
-| Marsh | Duke | | 
-| Smith | Joe | |
-| Croft | Lara | Gamestar |
-| Caulfield | Max | Gameblitz |
-| Jobs | Steve | |
+| Lincoln | Abe | |
+| Smith | Adam | |
+| Slade | Cutter | Gameblitz<br>Gamestar |
+| Marsh | Duke | | 
+| Smith | Joe | |
+| Croft | Lara | Gamestar |
+| Caulfield | Max | Gameblitz |
+| Jobs | Steve | |
 
 #### Award {#fragment-award}
 
 | Shortcut/ID | Title |
 |--- |--- |
 | GB | Gameblitz |
-| GS | Gamestar |
-| OSC | Oscar |
+| GS | Gamestar |
+| OSC | Oscar |
 
 #### City {#fragment-city}
 
@@ -1676,8 +1676,8 @@ The following fragments are used for the appropriate model.
 |--- |--- |--- |--- |
 | Basel | Switzerland | 172258 | city:emea |
 | Berlin | Germany | 3669491 | city:capital<br>city:emea |
-| Bucharest | Romania | 1821000 | city:capital<br>city:emea |
-| San Francisco | USA | 883306 | city:beach<br>city:na |
-| San Jose | USA | 102635 | city:na |
-| Stuttgart | Germany | 634830 | city:emea |
-| Zurich | Switzerland | 415367 | city:capital<br>city:emea |
+| Bucharest | Romania | 1821000 | city:capital<br>city:emea |
+| San Francisco | USA | 883306 | city:beach<br>city:na |
+| San Jose | USA | 102635 | city:na |
+| Stuttgart | Germany | 634830 | city:emea |
+| Zurich | Switzerland | 415367 | city:capital<br>city:emea |
