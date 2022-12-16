@@ -299,7 +299,7 @@ Because Metadata is generated through the Schema Editor and as such does not hav
 |`floatMetadata:[FloatMetadata]!`|
 |`floatArrayMetadata:[FloatArrayMetadata]!`|
 |`booleanMetadata:[BooleanMetadata]!`|
-|`booleanArrayMetadata:[booleanArrayMetadata]!` |
+|`booleanArrayMetadata:[booleanArrayMetadata]!` |
 |`calendarMetadata:[CalendarMetadata]!`|
 |`calendarArrayMetadata:[CalendarArrayMetadata]!`|
 
