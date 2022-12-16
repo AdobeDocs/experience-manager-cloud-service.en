@@ -17,15 +17,17 @@ This article introduces the basic concepts of SPAs before leading the reader thr
 
 The goal of this introduction and walkthrough is to demonstrate to an AEM developer why SPAs are relevant, how they generally work, how a SPA is handled by the AEM SPA Editor, and how it is different from a standard AEM application.
 
-The walkthrough is based on standard AEM functionality and the sample WKND SPA Project app. To follow along, please [download and install the sample WKND SPA Project app from GitHub here.](https://github.com/adobe/aem-guides-wknd-spa)
+## Requirements {#requirements}
 
->[!CAUTION]
->
->This document uses the [WKND SPA Project app](https://github.com/adobe/aem-guides-wknd-spa) for demonstration purposes only. It should not be used for any project work.
+The walkthrough is based on standard AEM functionality and the sample We.Retail Journal app. To follow along with this walkthrough, you must have the following available.
 
->[!TIP]
->
->Any AEM project should leverage the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
+* [AEM version 6.4 with service pack 2 or newer](/help/release-notes/release-notes.md)
+  * It should be running as a local development environment.
+  * You must have admin rights to the system.
+* [The sample We.Retail Journal app available on GitHub](https://github.com/adobe/aem-sample-we-retail-journal)
+  * Download the [latest release.](https://github.com/adobe/aem-sample-we-retail-journal/releases)
+  * [Use package manager](/help/implementing/developing/tools/package-manager.md) to install the app and start it as a you would any other package in AEM.
+  * The app does not need to be installed using Maven for the purposes of this walkthrough.
 
 ### What is a SPA? {#what-is-a-spa}
 
