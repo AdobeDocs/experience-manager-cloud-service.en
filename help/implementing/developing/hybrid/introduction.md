@@ -30,6 +30,14 @@ The walkthrough is based on standard AEM functionality and the sample WKND SPA P
   * [Use package manager](/help/implementing/developing/tools/package-manager.md) to install both packages as a you would any other package in AEM.
   * The app does not need to be installed using Maven for the purposes of this walkthrough.
 
+>[!CAUTION]
+>
+>This document uses the [WKND SPA Project app](https://github.com/adobe/aem-guides-wknd-spa) for demonstration purposes only. It should not be used for any project work.
+
+>[!TIP]
+>
+>Any AEM project should leverage the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
+
 ### What is a SPA? {#what-is-a-spa}
 
 A single-page application (SPA) differs from a conventional page in that it is rendered client-side and is primarily Javascript-driven, relying on Ajax calls to load data and dynamically update the page. Most or all content is retrieved once in a single page load with additional resources loaded asynchronously as needed based on user interaction with the page.
