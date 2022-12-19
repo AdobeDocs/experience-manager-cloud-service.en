@@ -114,9 +114,9 @@ Front-end pipelines help your teams streamline your design and development proce
 >
 >A user with the **Deployment Manager** role can create and run multiple front-end pipelines concurrently.
 >
->There is, however, a maximum limit of 300 pipelines per program (across all types). These can be  front-end code quality or front-end deployment pipelines.
+>There is, however, a maximum limit of 300 pipelines per program (across all types).
 
-Front-end pipelines can be code quality pipelines or deployment.
+Front-end pipelines can be code quality pipelines or deployment pipelines.
 
 ### Before you Configure Front-End Pipelines {#before-start}
 
