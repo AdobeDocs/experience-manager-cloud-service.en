@@ -1,6 +1,6 @@
 ---
 title: Developing Sites with the Front-End Pipeline
-description: With the front-end pipeline, more independence is given to front-end developers and the development process can gain substantial velocity.
+description: With the front-end pipeline, more independence is given to front-end developers and the development process can gain substantial velocity. This document describes some particular considerations of the front-end build process that should be given.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 ---
 # Developing Sites with the Front-End Pipeline {#developing-site-with-front-end-pipeline}
@@ -10,6 +10,14 @@ exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 >[!TIP]
 >
 >If you are not yet familiar with how to use the front-end pipeline and the benefits it can bring, check out the [Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) for an example of how to quickly deploy a new site and customize its theme completely independent of back-end development.
+
+## Front-End Build Contract {#front-end-build-contract}
+
+Front-end projects are built using the same build environment established for AEMaaCS projects.
+
+Developers have some flexibility in this pipeline so long as the following front-end contract is observed.
+
+The front-end pipeline requires the front-end npm project to use the `build` script directive to generate the build that will be deployed by the front-end pipeline.
 
 ## Single Source of Truth {#single-source-of-truth}
 
