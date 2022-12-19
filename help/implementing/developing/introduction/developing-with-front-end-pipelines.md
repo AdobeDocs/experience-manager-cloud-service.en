@@ -3,6 +3,7 @@ title: Developing Sites with the Front-End Pipeline
 description: With the front-end pipeline, more independence is given to front-end developers and the development process can gain substantial velocity. This document describes some particular considerations of the front-end build process that should be given.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 ---
+
 # Developing Sites with the Front-End Pipeline {#developing-site-with-front-end-pipeline}
 
 [With the front-end pipeline,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) more independence is given to the front-end developers and the development process can gain substantial velocity. This document describes how this process works along with some considerations to be aware of in order to get the full potential out of this process.
@@ -13,13 +14,17 @@ exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 
 ## Front-End Build Contract {#front-end-build-contract}
 
-Front-end projects are built using the same build environment established for AEMaaCS projects.
-
-Developers have some flexibility in this pipeline so long as the following front-end contract is observed.
+Similar to the [full-stack build environment,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) the front-end pipeline has its own environment. Developers have some flexibility in this pipeline so long as the following front-end build contract is observed.
 
 The front-end pipeline requires the front-end Node.js project to use the `build` script directive to generate the build that will be deployed by the front-end pipeline. I.e. Cloud Manager uses the command `npm run build` to generate the deployable project to the `dist` folder.
 
-The contents of the `dist` folder is what is ultimately deployed to AEM as a Cloud Service from the Cloud Manager pipeline.
+The content of the `dist` folder is what is ultimately deployed to AEM as a Cloud Service from the Cloud Manager pipeline.
+
+### Node Versions {#node-versions}
+
+By default the front-end pipeline uses Node 14, but 16 and 16 are also available.
+
+You can use the `CM_CUSTOM_VAR_NODE_VERSION` environment variable to set the desired version.
 
 ## Single Source of Truth {#single-source-of-truth}
 
