@@ -140,6 +140,12 @@ To finish the configuration of the web-tier code non-production pipeline, follow
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
+## Developing Sites with the Front-End Pipeline {#developing-with-front-end-pipeline}
+
+With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
+
+Please refer to the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of in order to get the full potential out of this process.
+
 ## Skip Dispatcher Packages {#skip-dispatcher-packages}
 
 If you want dispatcher packages built as part of your pipeline, but do not want them published to build storage, you can disable publishing them, which may reduce pipeline run duration.
