@@ -17,7 +17,9 @@ Front-end projects are built using the same build environment established for AE
 
 Developers have some flexibility in this pipeline so long as the following front-end contract is observed.
 
-The front-end pipeline requires the front-end npm project to use the `build` script directive to generate the build that will be deployed by the front-end pipeline.
+The front-end pipeline requires the front-end Node.js project to use the `build` script directive to generate the build that will be deployed by the front-end pipeline. I.e. Cloud Manager uses the command `npm run build` to generate the deployable project to the `dist` folder.
+
+The contents of the `dist` folder is what is ultimately deployed to AEM as a Cloud Service from the Cloud Manager pipeline.
 
 ## Single Source of Truth {#single-source-of-truth}
 
