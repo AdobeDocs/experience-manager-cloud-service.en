@@ -22,6 +22,13 @@ First you will learn how to run two different types of queries: **list** and **b
 >title="Extract content using the GraphQL API"
 >abstract="In this module you'll learn how you can use Content Fragments and the GraphQL API as a Headless Content Management System."
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
+>title="Launch the GraphQL Explorer"
+>abstract="GraphQL provides a query-based API allowing external client applications to query AEM for only the content it needs, using a single API call. Follow this guide to learn how to run two different types of queries, then retrieve content from the content fragment you created in a previous module.<br><br>Launch the feature in a new tab by clicking below."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Placeholder for the intro video"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Video thumbnail: GraphQL's quick content extraction"
+
 ## GraphQL Explorer {#graphql-explorer}
 
 You start on the GraphQL Explorer. Here you can build and run queries against your headless content.
