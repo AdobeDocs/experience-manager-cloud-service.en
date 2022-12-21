@@ -27,7 +27,6 @@ First you will learn how to run two different types of queries: **list** and **b
 >title="Launch the GraphQL Explorer"
 >abstract="GraphQL provides a query-based API allowing external client applications to query AEM for only the content it needs, using a single API call. Follow this guide to learn how to run two different types of queries, then retrieve content from the content fragment you created in a previous module.<br><br>Launch the feature in a new tab by clicking below."
 >additional-url="https://video.tv.adobe.com/v/328618" text="Placeholder for the intro video"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Video thumbnail: GraphQL's quick content extraction"
 
 ## GraphQL Explorer {#graphql-explorer}
 

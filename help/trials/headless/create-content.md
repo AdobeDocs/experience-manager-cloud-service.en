@@ -19,7 +19,6 @@ By following the in-product learning module, learn how to use [the Content Fragm
 >title="Launch the Content Fragment console"
 >abstract="In AEM headless CMS, “content fragments” are all pieces of content that fit into the predefined structure called a “content fragment model”. In this walkthrough, you will learn how to create content for your content fragment model.<br><br>Click below to launch the feature in a new tab, and follow this learning document to create your first content fragment."
 >additional-url="https://video.tv.adobe.com/v/328618" text="Placeholder for the intro video"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Video thumbnail: Adding content - the winning recipe"
 
 ## Content Fragments {#introduction}
 
