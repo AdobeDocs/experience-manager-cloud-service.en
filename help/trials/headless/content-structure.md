@@ -21,7 +21,6 @@ To help you understand how this is done, this module of AEM Trials takes you thr
 >title="Launch the model editor"
 >abstract="Building a content fragment model begins with creating a model item in the model administration workflow, then adding structure elements to it using the content fragment model editor.<br><br>Click below to launch the feature in a new tab, and follow this learning document to create your first content fragment model."
 >additional-url="https://video.tv.adobe.com/v/328618" text="Placeholder for the intro video"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Video thumbnail: The building blocks of AEM Headless"
 
 ## The Content Fragment Model Console {#content-fragment-model-console}
 
