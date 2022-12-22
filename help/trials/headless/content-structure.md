@@ -12,19 +12,15 @@ Content Fragments allow you to design, create, curate, and publish page-independ
 To help you understand how this is done, this module of AEM Trials takes you through the process with a quick, interactive tour first creating the model and then adding its structure. This document serves as a supplement to the in-product tour, covering the same steps and linking to additional resources where appropriate.
 
 >[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_overview_guide_br_test"
->title="Launch the model editor"
->abstract="Building a content fragment model begins with creating a model item in the model administration workflow, then adding structure elements to it using the content fragment model editor.<br><br>Click below to launch the feature in a new tab, and follow this learning document to create your first content fragment."
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_overview_guide_newline_test"
->title="Launch the model editor"
->abstract="Building a content fragment model begins with creating a model item in the model administration workflow, then adding structure elements to it using the content fragment model editor.\n\nClick below to launch the feature in a new tab, and follow this learning document to create your first content fragment."
-
->[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Create the content structure for your app"
 >abstract="As you follow our series of interactive guides you'll learn to create the structure (also known as the content fragment model) which serves as the foundation for all of your headless content."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
+>title="Launch the model editor"
+>abstract="Building a content fragment model begins with creating a model item in the model administration workflow, then adding structure elements to it using the content fragment model editor.<br><br>Click below to launch the feature in a new tab, and follow this learning document to create your first content fragment model."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Placeholder for the intro video"
 
 ## The Content Fragment Model Console {#content-fragment-model-console}
 
