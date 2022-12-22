@@ -25,9 +25,11 @@ A synchronous operation is a process of generating documents in a linear manner.
 * Document generation APIs
 * Document manipulation APIs
 
+<!-- 
 ### Multi-tenant APIs
 
-* Document utility APIs
+* Document utility APIs -->
+
 
 ### Authenticate a single-tenant API
 
@@ -47,11 +49,14 @@ Single-tenant API operations support two type of authentication:
     >
     >Adobe recommends using token-based authentication on a production environment.
 
+<!-- 
+
 ### Authenticate a multi-tenant API
 
 #### Authentication Headers
 
-Every inbound HTTP API call to the Cloud Manager API must contain these three headers:
+Every inbound HTTP API call to the multi-tenant API must contain these three headers:
+
 
 * `x-api-key`
 * `x-gw-ims-org-id`
@@ -76,6 +81,7 @@ To set up authentication APIs, create a project in Adobe Developer Console and a
 To programmatically generate an access token, generate a JSON Web Token (JWT) and exchange it with the Adobe Identity Management Service (IMS) for an access token.
 
 Use the following keys, referred to as claims, to construct JWT JSON object:
+
 
 * `exp`- the requested expiration of the access token, expressed as a number of seconds since January 1, 1970 GMT. For most use cases, this is a relatively small value. For example, 5 minutes, for five minutes from now, this value should be 1670923791.
 * `iss` - the Organization ID from the Adobe Developer Console project, in the format org_ident@AdobeOrg.
@@ -102,6 +108,8 @@ This JSON object must be then base64 encoded and signed using the private key fo
 #### Language Support for JWT
 
 While it is possible to do the entire JWT generation and exchange process in custom code, it is more common to use a higher-level library to do so. A number of such libraries are listed on the [Adobe I/O JWT Documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/).
+
+-->
 
 ### (Only for Document Generation APIs) Configure assets and permissions
 
