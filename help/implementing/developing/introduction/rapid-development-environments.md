@@ -72,11 +72,11 @@ Once you've added an RDE for your program using Cloud Manager, you can interact 
    aio plugins:update
    ```
 
-1. Configure the cloud manager plugin for your IMS org:
+1. Configure the cloud manager plugin for your organization ID:
    
-   `aio config:set cloudmanager_orgid 9E07EZC05D54GS1A0B49431C@AdobeOrg`
+   `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   and replace the alpha numeric string with the one of your organization
+   and replace the alpha numeric string with your own organization ID, which can be looked up using the strategy [here](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. Next, configure your program id:
 
