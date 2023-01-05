@@ -763,8 +763,8 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
     * `_tags` : to reveal the IDs of Content Fragments or Variations that contain tags; this is an array of `cq:tags` identifiers. 
 
-      * See [Sample Query - Names of All Cities Tagged as City Breaks](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
-      * See [Sample Query for Content Fragment Variations of a given Model that have a specific tag attached](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
+      * See [Sample Query - Names of All Cities Tagged as City Breaks](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
+      * See [Sample Query for Content Fragment Variations of a given Model that have a specific tag attached](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
 
       >[!NOTE]
       >
