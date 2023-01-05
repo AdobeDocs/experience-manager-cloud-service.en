@@ -21,7 +21,7 @@ Typically, an RDE would be used by a single developer at a given time, for testi
 
 <!-- Temporarily hiding this. See CQDOC-19795 for more details
 
-Additional RDEs may be purchased for Production programs beginning with late January. -->
+Additional RDEs may be purchased for Production programs -->
 
 ## Enabling RDE in a Program {#enabling-rde-in-a-program}
 
@@ -117,19 +117,19 @@ Once you've added an RDE for your program using Cloud Manager, you can interact 
 
 Adobe recommends the following workflow for developing a new feature:
 
-* When an intermediate milestone is reached and successfully validated locally with the AEM as a Cloud Service SDK, the code should be committed to a git feature branch that is not yet part of the main line, although committing to git is optional. What constitutes an "intermediate milestone" varies based on team habits. Examples include a few new lines of code, half a day's of work, or completing a subfeature.
+* When an intermediate milestone is reached and successfully validated locally with the AEM as a Cloud Service SDK, the code should be committed to a git feature branch that is not yet part of the main line, although committing to git is optional. What constitutes an "intermediate milestone" varies based on team habits. Examples include a few new lines of code, half a day of work, or completing a sub-feature.
 
 * Reset the RDE if it has been used by another feature and you want to [reset it to a default state](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Reset will take a few minutes and all existing content and code will be deleted. You can use the RDE status command to confirm the RDE is ready.
 
 * Using the RDE command-line interface, sync local code to the RDE. Options include installing a content package, a specific bundle, an OSGI configuration file, a content file, and a zip file of an Apache/Dispatcher configuration. Referencing a remote content package is also possible. See the [RDE Command Line Tools](#rde-cli-commands) section for more information. You can use the status command to validate that the deployment was successful. Optionally, use Package Manager to install content packages.
 
-* Test the code. Author and Publish URLs are available in Cloud Manager.
+* Test the code in the RDE. Author and Publish URLs are available in Cloud Manager.
 
 * If the code does not behave as expected, use standard debugging techniques to understand the problem and make the appropriate changes. Without committing the code modifications to git (since they haven't been validated), use the local CLI to sync the code to the RDE. Keep iterating until the issue is resolved.
 
 * Once the code behaves as expected, commit the code to the git feature branch.
 
-* Code synced to RDE does not use a Cloud Manager pipeline so now you should use Cloud Manager to deploy the git feature branch to the Cloud Development environment. This validates that the code passes the Cloud Manager quality gates and lets you be confident the code will later be successfully deployed using the Cloud Manager production pipeline.  
+* Code synced to RDE does not use a Cloud Manager pipeline so now you should use a Cloud Manager non-production pipeline to deploy the git feature branch to the Cloud Development environment. This validates that the code passes the Cloud Manager quality gates and lets you be confident the code will later be successfully deployed using the Cloud Manager production pipeline.  
 
 * Repeat the steps above for each intermediate milestone until all code for the feature is ready, and runs well on both the RDE and the Cloud Development environment.
 
@@ -375,7 +375,7 @@ Log levels can be set by modifying OSGi configurations. Check the [documentation
 
 ## How are RDEs Different from Cloud Development Environments? {#how-are-rds-different-from-cloud-development-environments}
 
-While the RDE is in many ways similar to a Cloud Development Environment, there are some minor architectural differences in order to allow for quick syncing of code. The mechanism for getting code to RDE is different. One syncs code from a local development environment to the RDE, while the other is deploying code via Cloud Manager to the Cloud Development Environment.
+While the RDE is in many ways similar to a Cloud Development Environment, there are some minor architectural differences in order to allow for quick syncing of code. The mechanism for getting code to RDE is different -- for RDEs, one syncs code from a local development environment, while for Cloud Development Environments, one deploys code via Cloud Manager.
 
 For these reasons, it is recommended that after validating code on an RDE environment, you should deploy the code to a Cloud Development Environment using the non-production pipeline. Finally, test the code before deploying with the production pipeline.
 
