@@ -54,7 +54,7 @@ You can:
 
 * Assign **Tags** to the current variation; the tags can be added, updated and removed
 
-  * [Tags](/help/sites-authoring/tags.md) are particularly powerful when organizing your fragments as they can be used for content classification and taxonomy. Tags can be used for the purpose of finding content (by tags) and applying bulk operations. 
+  * [Tags](/help/sites-cloud/authoring/features/tags.md) are particularly powerful when organizing your fragments as they can be used for content classification and taxonomy. Tags can be used for the purpose of finding content (by tags) and applying bulk operations. 
 
     * Searches for a tag will return the fragment, with the tagged variation highlighted. 
     * Variation tags can also be used to group variations for a specific Content Delivery Network (CDN) profile (for CDN caching), instead of using the variation name. 
