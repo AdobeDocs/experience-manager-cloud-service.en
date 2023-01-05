@@ -4,11 +4,11 @@ description: Learn how to leverage Rapid Development Environments for rapid deve
 hidefromtoc: yes 
 ---
 
+# Rapid Development Environments {#rapid-development-environments}
+
 >[!AVAILABILITY]
 >
 >This feature is not yet available.
-
-# Rapid Development Environments {#rapid-development-environments}
 
 In order to deploy changes, current Cloud Development environments require the use of a process that employs extensive code security and quality rules called a CI/CD pipeline. For situations where quick and iterative changes are needed, Adobe has introduced Rapid Development Environments (RDEs for short).
 
