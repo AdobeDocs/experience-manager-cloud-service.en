@@ -29,7 +29,7 @@ Unlike custom functional tests, which are HTTP tests written in Java, UI tests c
 
 ### Customer Opt-In {#customer-opt-in}
 
-In order for Cloud Manager to build and execute you UI tests, you must opt into this feature by adding a file to your repository. 
+In order for Cloud Manager to build and execute your UI tests, you must opt into this feature by adding a file to your repository. 
 
 * The file name must be `testing.properties`.
 * The file contents must be `ui-tests.version=1`.
