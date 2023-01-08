@@ -38,7 +38,7 @@ The initiator of such actions can check their status in a new UI at `/mnt/overla
 
 ## New Reference Site and Tutorial {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/), a new AEM reference site, has been updated and published to reflect best practices for to build a web site with AEM, and the comprehensive set of capabilities, components, and deployment models that are available in AEM. The new reference site and [accompanying tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) covers fundamental topics like project setup, Core Components, Editable Templates, client libraries, and component development with Adobe Experience Manager Sites.
+[WKND](https://wknd.site/), a new AEM reference site, has been updated and published to reflect best practices to build a web site with AEM, and the comprehensive set of capabilities, components, and deployment models that are available in AEM. The new reference site and [accompanying tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) covers fundamental topics like project setup, Core Components, Editable Templates, client libraries, and component development with Adobe Experience Manager Sites.
 
 Previously, We.Retail was installed by default with AEM (except when started in production mode).  Now, a reference site will not be installed by default going forward.  Instead the [git repo](https://github.com/adobe/aem-guides-wknd/) and [accompanying tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) with the updated WKND reference site code is provided.
 
