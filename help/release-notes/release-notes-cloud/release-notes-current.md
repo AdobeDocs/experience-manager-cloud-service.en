@@ -93,7 +93,9 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 ### What is New {#what-is-new-foundation}
 
-* The type of environment that the user is logged into on the AEM Author service is now displayed on the Unified Shell top-header. Refer to [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
+* The type of environment that the user is logged into on the AEM Author service is now displayed on the Unified Shell top-header as shown below. Refer to [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
+
+![image](/help/release-notes/assets/unifiedshell-header-label.png)
 
 * As previously mentioned in release notes, using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is deprecated and will be enforced in the coming days. Please refer to [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) for the suggested approaches for replicating these large content packages.
 
