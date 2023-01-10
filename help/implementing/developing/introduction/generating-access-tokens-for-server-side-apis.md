@@ -27,6 +27,34 @@ The server-to-server flow involves the following steps:
 
 ### Fetch the AEM as a Cloud Service Credentials {#fetch-the-aem-as-a-cloud-service-credentials}
 
+Users with access to the AEM as a Cloud Service developer console will see the integrations tab in the Developer Console for a given environment, as well as two buttons. A user with the AEM as a Cloud Service Environment administrator role can create, view or manage credentials.
+
+Clicking the **Create new technical account** button a new set of credentials will be created that includes client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
+
+![Creating a new Technical Account](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
+
+A new browser tab will open up displaying the credentials. You can use this view to download the credentials by pressing the download icon next to the status title:
+
+![Download Credentials](/help/implementing/developing/introduction/assets/s2s-credentialdownload.png)
+
+After the credentials are created, they will appear under the **Technical Accounts** tab in the **Integrations** section:
+
+![View Credentials](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
+
+Users can later view or modify the credentials for the same technical account by creating a new private key or certificate, for cases when the certificate needs to be renewed or revoked. This is described later in this article.
+
+Users with the AEM as a Cloud Service Environment Administrator role can later create new credentials for additional technical accounts. This is useful when different APIs have differing access requirements. For example, read vs read-write.
+
+>[!NOTE]
+>
+>Customers can create up to 10 technical accounts, including those that have already been deleted.
+
+>[!IMPORTANT]
+>
+>An IMS org administrator (typically the same user who provisioned the environment via Cloud Manager), who should also be member of the AEM Users or AEM Administrators Product Profile on AEM Author, must first access the Developer Console and click the **Create new technical account** button in order for the credentials to be generated and later retrieved by a user with admin permissions to the AEM as a Cloud Service environment. If the IMS org administrator has not done this, a message will inform them that they need the IMS org Administrator role.
+
+<!-- Alexandru: Drafting for now 
+
 Users with access to the AEM as a Cloud Service developer console will see the integrations tab in the Developer Console for a given environment, as well as two buttons. A user with the AEM as a Cloud Service Environment administrator role can click the **Generate Service Credentials** button to generate and display the service credentials json, which will contain all the information required for the non AEM server, including client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
 
 ![JWT Generation](assets/JWTtoken3.png)
@@ -57,7 +85,7 @@ After being generated, the credentials can be retrieved at a later date by press
 
 >[!IMPORTANT]
 >
->An IMS org administrator (typically the same user who provisioned the environment via Cloud Manager), who should also be member of the AEM Users or AEM Administrators Product Profile on AEM Author, must first access the Developer Console and click the **Generate Service Credentials** button in order for the credentials to be generated and later retrieved by a user with admin permissions to the AEM as a Cloud Service environment. If the IMS org administrator has not done this, a message will inform them that they need the IMS org Administrator role.
+>An IMS org administrator (typically the same user who provisioned the environment via Cloud Manager), who should also be member of the AEM Users or AEM Administrators Product Profile on AEM Author, must first access the Developer Console and click the **Generate Service Credentials** button in order for the credentials to be generated and later retrieved by a user with admin permissions to the AEM as a Cloud Service environment. If the IMS org administrator has not done this, a message will inform them that they need the IMS org Administrator role. -->
 
 ### Install the AEM Service Credentials on a Non AEM Server {#install-the-aem-service-credentials-on-a-non-aem-server}
 
@@ -91,6 +119,9 @@ The same exchange can be performed in any language capable of generating a signe
 
 The access token will define when it expires, which is typically 24 hours. There is sample code in the git repository to manage an access token and refresh it before it expires.
 
+>[!NOTE]
+>If there are multiple credentials, make sure to reference the appropriate json file for the API call to AEM that will later be invoked.
+
 ### Calling the AEM API {#calling-the-aem-api}
 
 Make the appropriate server-to-server API calls to an AEM as a Cloud Service environment, including the access token in the header. So for the "Authorization" header, use the value `"Bearer <access_token>"`. For example, using `curl`:
@@ -101,11 +132,90 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ### Set the Appropriate Permissions for the Technical Account User in AEM {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
 
+<!-- Alexandru: drafting for now
+
 Once the technical account user is created in AEM (this occurs after the first request with the corresponding access token), the technical account user must be properly permissioned **in** AEM.
 
 Note that by default, on the AEM Author service, the technical account user is added to the Contributors user group which provides read access AEM.
 
-This technical account user in AEM can be further provisioned with permissions using the usual methods.
+This technical account user in AEM can be further provisioned with permissions using the usual methods. -->
+
+First, a new product profile needs to be created in the Adobe Admin Console. You can achieve this by following these steps:
+
+1. Go to the Adobe Admin Console at [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/)
+1. Press the **Manage** link under the **Products and Services** column on the left.
+1. Select **AEM as a Cloud Service**
+1. Press the **New Profile** button
+   
+   ![New Profile](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)
+
+1. Name the profile and press **Save**
+
+   ![Save Profile](/help/implementing/developing/introduction/assets/s2s-saveprofile.png)
+   
+1. Select the profile you just created from the profile list
+1. Press the **Add User** button
+
+   ![Add User](/help/implementing/developing/introduction/assets/s2s-addusers.png)
+
+1. Add the technical account you just created (in this case `84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`) and press **Save**
+
+   ![Add Tech Account](/help/implementing/developing/introduction/assets/s2s-addtechaccount.png)
+
+1. Wait 10 minutes for the changes to take effect and make an API call to AEM with an access token generated from the new credential. It would be represented like this as a cURL command:
+
+   `curl -H "Authorization: Bearer <access_token>" https://author-pXXXXX-eXXXXX-cmstg.adobeaemcloud.net/content/dam.json `
+
+
+After making the API call, the product profile will appear as a user group in the AEM as a Cloud Service author instance, with the appropriate technical account as a member of that group.
+
+To check this, you need to:
+
+1. Login to the author instance
+1. Go to **Tools** - **Security** and click the **Groups** card
+1. Locate the name of the profile you created in the list of groups and click on it:
+
+   ![Group Profile](/help/implementing/developing/introduction/assets/s2s-groupprofile.png)
+
+1. In the following window, switch over to the **Members** tab and check if the technical account is correctly listed there:
+
+   ![Members tab](/help/implementing/developing/introduction/assets/s2s-techaccountmembers.png)
+
+
+Alternatively, you can also verify that the technical account appears in the users list by performing the below steps on the author instance:
+
+1. Go to **Tools** - **Security** - **Users**
+1. Check that your technical account is the user list and click on it
+1. Click on the **Groups** tab to verify that the user is a part of the group that corresponds to your product profile. This user also is a member of a handful of other groups, including Contributors:
+
+   ![Group Membership](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
+
+>[!NOTE]
+>
+>Before January 26th 2023, customers were not guided to create product profiles in the Adobe Admin console and thus the technical accounts were not associated with a group other than "Contributors" in the AEM as a Cloud Service instance. For the sake of consistency, it is recommended that for those technical accounts, you create new product profiles in the Adobe Admin Console as described above, and add the existing technical accounts to that group.
+
+<u>**Set the Appropiate Group Permissions**</u>
+
+Finally, configure the group with the appropriate permissions needed to in order to invoke or lock down your APIs appropriately. You can do this by:
+
+1. Logging in to the appropiate author instance and going to **Settings** - **Security** - **Permissions**
+1. Search for the name of the group corresponding to the product profile in the left hand pane (in this case Read-only APIs) and click on it:
+
+   ![Search for Group](/Users/sarchiz/Documents/repos/experience-manager-cloud-service.en/help/implementing/developing/introduction/assets/s2s-searchforgroup.png)
+   
+1. Click the Edit button in the following window:
+
+   ![Edit permissions](/help/implementing/developing/introduction/assets/s2s-editpermissions.png) 
+
+1. Modify the permissions appropriately and click **Save**
+
+   ![Confirm editing of permissions](/help/implementing/developing/introduction/assets/s2s-confirmeditpermissions.png)
+
+>[!INFO]
+>
+>Learn more about the Adobe Identity Management System (IMS) and AEM users and groups by consultng the [documentation](/help/security/ims-support.md).
+
+<!-- Alexandru: resume from here -->
 
 ## Developer Flow {#developer-flow}
 
