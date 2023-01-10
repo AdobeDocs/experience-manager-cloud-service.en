@@ -22,7 +22,7 @@ To help with this see:
 
 * A [sample Content Fragment structure](#content-fragment-structure-graphql) 
 
-* And some [sample GraphQL queries](#graphql-sample-queries), based on the sample content fragment structure (Content Fragment Models and related Content Fragments).
+* And some [sample GraphQL queries](#graphql-sample-queries), based on the sample Content Fragment structure (Content Fragment Models and related Content Fragments).
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
@@ -52,7 +52,7 @@ This will return all `types` for all available schemas.
 
 **Sample Query**
 
-```xml
+```graphql
 {
   __schema {
     types {
@@ -65,7 +65,7 @@ This will return all `types` for all available schemas.
 
 **Sample Result**
 
-```xml
+```json
 {
   "data": {
     "__schema": {
@@ -144,7 +144,7 @@ This will return all `types` for all available schemas.
 To retrieve all information about all cities, you can use the very basic query:
 **Sample Query**
 
-```xml
+```graphql
 {
   cityList {
     items
@@ -154,7 +154,7 @@ To retrieve all information about all cities, you can use the very basic query:
 
 When executed, the system will automatically expand the query to include all fields:
 
-```xml
+```graphql
 {
   cityList {
     items {
@@ -169,7 +169,7 @@ When executed, the system will automatically expand the query to include all fie
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -228,7 +228,7 @@ This is a straightforward query to return the `name`of all entries in the `city`
 
 **Sample Query**
 
-```xml
+```graphql
 query {
   cityList {
     items {
@@ -240,7 +240,7 @@ query {
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -278,7 +278,7 @@ This is a query to return the details of a single fragment entry at a specific l
 
 **Sample Query**
 
-```xml
+```graphql
 {
   cityByPath (_path: "/content/dam/sample-content-fragments/cities/berlin") {
     item {
@@ -294,7 +294,7 @@ This is a query to return the details of a single fragment entry at a specific l
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "cityByPath": {
@@ -319,7 +319,7 @@ If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the 
 
 **Sample Query**
 
-```xml
+```graphql
 {
   cityList (variation: "berlin_center") {
     items {
@@ -335,7 +335,7 @@ If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the 
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -362,7 +362,7 @@ Using the structure of the nested fragments, this query returns the full details
 
 **Sample Query**
 
-```xml
+```graphql
 query {
   companyList {
     items {
@@ -391,7 +391,7 @@ query {
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -490,7 +490,7 @@ This will filter all `persons` for any that have the name `Jobs`or `Smith`.
 
 **Sample Query**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -515,7 +515,7 @@ query {
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -544,7 +544,7 @@ This will filter all `persons` for any that have the name `Jobs`or `Smith`.
 
 **Sample Query**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -566,7 +566,7 @@ query {
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -611,7 +611,7 @@ All `adventures` where `_path` starts with a specific prefix (`/content/dam/wknd
 
 **Sample Query**
 
-```xml
+```graphql
 query {
   adventureList(
     filter: {
@@ -633,7 +633,7 @@ query {
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "adventureList": {
@@ -656,7 +656,7 @@ Here a combination of fields are filtered on. An `AND` (implicit) is used to sel
 
 **Sample Query**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     population: {
@@ -692,7 +692,7 @@ query {
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -719,7 +719,7 @@ This query interrogates for all cities that have `SAN` in the name, irrespective
 
 **Sample Query**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     name: {
@@ -743,7 +743,7 @@ query {
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -770,7 +770,7 @@ This query filters on an array with an item (`city:na`) that must occur at least
 
 **Sample Query**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -794,7 +794,7 @@ query {
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -828,7 +828,7 @@ This query filters on an exact array value.
 
 **Sample Query**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -854,7 +854,7 @@ query {
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -880,7 +880,7 @@ This query illustrates filtering for any `person` of `name` "Smith", returning i
 
 **Sample Query**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -912,7 +912,7 @@ query {
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -946,7 +946,7 @@ This query illustrates filtering across three nested fragments - `company`, `emp
 
 **Sample Query**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -988,7 +988,7 @@ query {
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -1038,7 +1038,7 @@ This query illustrates filtering across three nested fragments - `company`, `emp
 
 **Sample Query**
 
-```xml
+```graphql
 query {
   awardList(filter: {
       id: {
@@ -1065,7 +1065,7 @@ query {
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "awardList": {
@@ -1101,6 +1101,7 @@ These sample queries are based on the WKND project. This has:
 
 * Content Fragments (and other content) available under:
   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
 
 >[!NOTE]
 >
@@ -1111,18 +1112,23 @@ These sample queries are based on the WKND project. This has:
 This sample query interrogates:
 
 * for all Content Fragments of type `article`
-* with the `path`and `author` properties.
+* with the `_path` and properties of the `authorFragment`.
 
 **Sample Query**
 
-```xml
+```graphql
 {
   articleList {
     items {
       _path
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
     }
-  }
+ }
 }
 ```
 
@@ -1135,7 +1141,7 @@ This query interrogates:
 
 **Sample Query**
 
-```xml
+```graphql
 {
   adventureList {
     items {
@@ -1200,12 +1206,17 @@ This sample query interrogates:
 
 **Sample Query**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures") {
+  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures") {
     item {
         _path
-        author
+        authorFragment {
+          _path
+          firstName
+          lastName
+          birthDay
+        }
         main {
           html
           markdown
@@ -1226,12 +1237,12 @@ This sample query interrogates:
   
 **Sample Query**
 
-```xml
+```graphql
 {
-  adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
       _path
-      adventureTitle
+      title
       _model {
         _path
         title
@@ -1254,15 +1265,15 @@ This query interrogates:
 
 **Sample Query**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
+      _path
+      title
+      _model {
         _path
-        author
-        referencearticle {
-          _path
-          author
+        title
       }
     }
   }
@@ -1280,7 +1291,9 @@ This query interrogates:
 >
 >The field `fragments` has the Data type `fragment-reference`, with the models `Article`, `Adventure` selected.
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
     items {
@@ -1315,7 +1328,9 @@ These queries interrogate:
 
 The following query returns all content references by using `_references`:
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
      _references {
@@ -1355,7 +1370,9 @@ The following query returns all `attachments` - a specific field (sub-group) of 
 >
 >The field `attachments` has the Data type `content-reference`, with various forms selected.
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
     items {
@@ -1397,9 +1414,11 @@ This query interrogates:
 >
 >The RTE inline references are hydrated in `_references`.
 
+<!-- need replacement query -->
+
 **Sample Query**
 
-```xml
+```graphql
 {
   bookmarkByPath(_path: "/content/dam/wknd/en/bookmarks/skitouring") {
     item {
@@ -1436,23 +1455,20 @@ This query interrogates:
 
 This query interrogates:
 
-* for a single Content Fragment of type `article` at a specific path
-  * within that, the data related to the variation: `variation1`
+* for a single Content Fragment of type `author` at a specific path
+  * within that, the data related to the variation: `another`
 
 **Sample Query**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/ian-provo", variation: "another") {
     item {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
     }
   }
 }
@@ -1462,22 +1478,23 @@ This query interrogates:
 
 This query interrogates:
 
-* for Content Fragments of type `article` with a specific variation: `variation1`
+* for Content Fragments of type `author` with a specific variation: `another`
+
+>[!NOTE]
+>
+>This will demonstrate fallback for Content Fragments that do not have a [Variation](/help/headless/graphql-api/content-fragments.md#variations) of the specified name.
 
 **Sample Query**
 
-```xml
+```graphql
 {
-  articleList (variation: "variation1") {
+  authorList(variation: "another") {
     items {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
     }
   }
 }
@@ -1491,12 +1508,17 @@ This query interrogates:
 
 **Sample Query**
 
-```xml
+```graphql
 { 
-  articleList (_locale: "fr") {
+  articleList(_locale: "fr") {
     items {
       _path
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1508,10 +1530,6 @@ This query interrogates:
 }
 ```
 
-<!-- CQDOC-19418 -->
-
-<!--
-
 ### Sample List Query using offset and limit {#sample-list-offset-limit}
 
 This query interrogates:
@@ -1520,11 +1538,16 @@ This query interrogates:
 
 **Sample Query**
 
-```xml
-query {
-   articleList(offset: 5, limit:5) {
+```graphql
+{
+   articleList(offset: 5, limit: 5) {
     items {
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
       _path
     }
   }
@@ -1539,13 +1562,13 @@ This query interrogates:
 
 **Sample Query**
 
-```xml
-query {
+```graphql
+{
     adventurePaginated(first: 5, after: "ODg1MmMyMmEtZTAzMy00MTNjLThiMzMtZGQyMzY5ZTNjN2M1") {
         edges {
           cursor
           node {
-            adventureTitle
+            title
           }
         }
         pageInfo {
@@ -1555,8 +1578,6 @@ query {
     }
 }
 ```
-
--->
 
 ## The Sample Content Fragment Structure (used with GraphQL) {#content-fragment-structure-graphql}
 
@@ -1625,29 +1646,29 @@ The following fragments are used for the appropriate model.
 | Company Name | CEO | Employees |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-| Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
+| Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### Person {#fragment-person}
 
 | Name | First Name | Awards |
 |--- |--- |--- |
-| Lincoln | Abe | |
-| Smith | Adam | |
-| Slade | Cutter | Gameblitz<br>Gamestar |
-| Marsh | Duke | | 
-| Smith | Joe | |
-| Croft | Lara | Gamestar |
-| Caulfield | Max | Gameblitz |
-| Jobs | Steve | |
+| Lincoln | Abe | |
+| Smith | Adam | |
+| Slade | Cutter | Gameblitz<br>Gamestar |
+| Marsh | Duke | | 
+| Smith | Joe | |
+| Croft | Lara | Gamestar |
+| Caulfield | Max | Gameblitz |
+| Jobs | Steve | |
 
 #### Award {#fragment-award}
 
 | Shortcut/ID | Title |
 |--- |--- |
 | GB | Gameblitz |
-| GS | Gamestar |
-| OSC | Oscar |
+| GS | Gamestar |
+| OSC | Oscar |
 
 #### City {#fragment-city}
 
@@ -1655,8 +1676,8 @@ The following fragments are used for the appropriate model.
 |--- |--- |--- |--- |
 | Basel | Switzerland | 172258 | city:emea |
 | Berlin | Germany | 3669491 | city:capital<br>city:emea |
-| Bucharest | Romania | 1821000 | city:capital<br>city:emea |
-| San Francisco | USA | 883306 | city:beach<br>city:na |
-| San Jose | USA | 102635 | city:na |
-| Stuttgart | Germany | 634830 | city:emea |
-| Zurich | Switzerland | 415367 | city:capital<br>city:emea |
+| Bucharest | Romania | 1821000 | city:capital<br>city:emea |
+| San Francisco | USA | 883306 | city:beach<br>city:na |
+| San Jose | USA | 102635 | city:na |
+| Stuttgart | Germany | 634830 | city:emea |
+| Zurich | Switzerland | 415367 | city:capital<br>city:emea |
