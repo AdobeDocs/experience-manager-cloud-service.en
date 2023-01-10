@@ -3,18 +3,18 @@ title: Getting started with Experience Manager as a Cloud Service
 description: Learn how Experience Manager as a Cloud Service works and what the software can do for you.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
 ---
-# Experience Manager as a Cloud Service Overview {#aem-overview-guide}
+# Experience Manager as a Cloud Service documentation {#aem-overview-guide}
 
 Start here to learn how Experience Manager as a Cloud Service works and what the software can do for you.
 
-## Key Overview Articles {#key-articles}
+## Key overview articles {#key-articles}
 
 * [Introduction](introduction.md)
 * [Terminology](terminology.md)
 * [What is new and different](what-is-new-and-different.md)
 * [Introduction to the Architecture](architecture.md)
 
-## Experience Manager as a Cloud Service Guides {#aem-guides}
+## Experience Manager as a Cloud Service guides {#aem-guides}
 
 |User Guide|Description|
 |---|---|
@@ -30,7 +30,7 @@ Start here to learn how Experience Manager as a Cloud Service works and what the
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service such as indexing and maintenance tasks.|
 |[Commerce User Guide](/help/commerce-cloud/home.md)|Learn about Commerce Integration Framework on AEM as a Cloud Service.|
 
-## Other Experience Manager Resources {#other-resources}
+## Other Experience Manager help resources {#other-resources}
 
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html#AEMasaCloudService) 
 * [Dispatcher Documentation](/help/implementing/dispatcher/overview.md)

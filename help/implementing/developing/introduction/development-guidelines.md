@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service Development Guidelines
-description: AEM as a Cloud Service Development Guidelines
+description: Learn guidelines for developing on AEM as a Cloud Service and about important ways in which it differs from AEM on premises and AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 ---
 # AEM as a Cloud Service Development Guidelines {#aem-as-a-cloud-service-development-guidelines}
@@ -8,18 +8,16 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="AEM as a Cloud Service Development Guidelines"
->abstract="In this tab, you can view the recommended best practices for coding in AEM as a Cloud Service. Coding can be substatially different than AMS or On-Prem deployments."
+>abstract="Learn guidelines for developing on AEM as a Cloud Service and about important ways in which it differs from AEM on premises and AEM in AMS."
 >additional-url="https://video.tv.adobe.com/v/330555/" text="Demo of Package Structure"
+
+This document presents guidelines for developing on AEM as a Cloud Service and about important ways in which it differs from AEM on premises and AEM in AMS.
+
+## Code Must Be Cluster-Aware {#cluster-aware}
 
 Code running in AEM as a Cloud Service must be aware of the fact that it is always running in a cluster. This means that there is always more than one instance running. The code must be resilient especially as an instance might be stopped at any point in time.
 
 During the update of AEM as a Cloud Service, there will be instances with old and new code running in parallel. Therefore, old code must not break with content created by new code and new code must be able to deal with old content.
-<!--
-
->[!NOTE]
-> All of the best practices mentioned here hold true for on-premise deployments of AEM, if not stated otherwise. An instance can always stop due to various reasons. However, with Skyline it is more likely to happen therefore an instance stopping is the rule not an exception.
-
--->
 
 If there is the need to identify the primary in the cluster, the Apache Sling Discovery API can be used to detect it.
 
@@ -260,7 +258,24 @@ The `smtp.starttls` property will automatically be set by AEM as a Cloud Service
 
 The SMTP server host should be set to that of your mail server.
 
+## Avoid Large Multi-Value Properties {#avoid-large-mvps}
+
+The Oak content repository that underlies AEM as a Cloud Service is not intended to be used with an excessive number of multi-value properties (MVPs). A rule-of-thumb is to keep MVPs below 1000. However actual performance depends on many factors.
+
+Warnings are logged by default after exceeding 1000. They are similar to the following.
+
+```text
+org.apache.jackrabbit.oak.jcr.session.NodeImpl Large multi valued property [/path/to/property] detected (1029 values). 
+```
+
+Large MVPs can lead to errors due to the MongoDB document exceeding 16 MB, resulting in errors similar to the following.
+
+```text
+Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
+```
+
+Please see the [Apache Oak documentation](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) for more details.
 
 ## [!DNL Assets] development guidelines and use cases {#use-cases-assets}
 
-To know about the development use cases, recommendations, and reference materials for Assets as a Cloud Service, see [Developer references for Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+To learn about the development use cases, recommendations, and reference materials for Assets as a Cloud Service, see [Developer references for Assets.](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
