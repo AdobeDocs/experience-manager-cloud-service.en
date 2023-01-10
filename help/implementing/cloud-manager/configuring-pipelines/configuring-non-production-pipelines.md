@@ -4,6 +4,7 @@ description: Learn how to configuring non-production pipelines to test the quali
 index: yes
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 ---
+
 # Configuring Non-Production Pipelines {#configuring-non-production-pipelines}
 
 Learn how to configuring non-production pipelines to test the quality of your code before deploying to production environments.
@@ -139,6 +140,12 @@ To finish the configuration of the web-tier code non-production pipeline, follow
 >If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
+
+## Developing Sites with the Front-End Pipeline {#developing-with-front-end-pipeline}
+
+With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
+
+Please refer to the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of in order to get the full potential out of this process.
 
 ## Skip Dispatcher Packages {#skip-dispatcher-packages}
 

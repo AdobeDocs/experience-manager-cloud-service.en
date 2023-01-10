@@ -70,6 +70,8 @@ This can be useful, for example, when your business logic requires fine tuning o
 
    ```
 
+* While HTML content set to private will not be cached at the CDN, it can be cached at the dispatcher if [Permission Sensitive Caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) is configured, efficiently ensuring that only authorized users can be served the content. 
+
    >[!NOTE]
    >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
 
@@ -78,7 +80,7 @@ This can be useful, for example, when your business logic requires fine tuning o
 
 ### Client-Side libraries (js,css) {#client-side-libraries}
 
-* by using AEM's Client-Side library framework, JavaScript and CSS code is generated in such a way that browsers can cache it indefinitely, since any changes manifest as new files with a unique path.  In other words, HTML that references the client libraries will be produced as needed so customers can experience new content as it is published. The cache-control is set to "immutable" or 30 days for older browsers who don't respect the "immutable" value.
+* When using AEM's Client-Side library framework, JavaScript and CSS code is generated in such a way that browsers can cache it indefinitely, since any changes manifest as new files with a unique path.  In other words, HTML that references the client libraries will be produced as needed so customers can experience new content as it is published. The cache-control is set to "immutable" or 30 days for older browsers who don't respect the "immutable" value.
 * see the section [Client-side libraries and version consistency](#content-consistency) for additional details.
 
 ### Images and any content large enough to be stored in blob storage {#images}
@@ -115,6 +117,8 @@ The AEM layer will not cache blob content by default.
 
 >[!NOTE]
 >It is recommended to change the older default behavior to be consistent with the new behavior (program ids that are higher than 65000) by setting the Cloud Manager environment variable AEM_BLOB_ENABLE_CACHING_HEADERS to true. If the program is already live, make sure you verify that after the changes, content behaves as you expect.
+
+At present, images in blob storage that are marked private cannot be cached at the dispatcher using [Permission Sensitive Caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). The image is always requested from the AEM origin and served if the user is authorized.  
 
 >[!NOTE]
 >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override the values.
@@ -209,7 +213,10 @@ In general, it will not be necessary to invalidate the Dispatcher cache. Instead
 
 ### Dispatcher Cache Invalidation during Activation/Deactivation {#cache-activation-deactivation}
 
-Like previous versions of AEM, publishing or unpublishing pages clears the content from the Dispatcher cache. If a caching issue is suspected, customers should republish the pages in question and ensure that a virtual host is available that matches the `ServerAlias` localhost, which is required for Dispatcher cache invalidation.
+Like previous versions of AEM, publishing or unpublishing pages clears the content from the Dispatcher cache. If a caching issue is suspected, you should republish the pages in question and ensure that a virtual host is available that matches the `ServerAlias` localhost, which is required for Dispatcher cache invalidation.
+
+>[!NOTE]
+>For proper dispatcher invalidation, make sure that requests from "127.0.0.1", "localhost", ".local", ".adobeaemcloud.com", and ".adobeaemcloud.net" are all matched and handled by a vhost configuration so those request can be served. You can do this by either global matching "*" in a catch-all vhost configuration following the pattern in the reference [AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) or by ensuring that the previously mentioned list is caught by one of the vhosts.
 
 When the publish instance receives a new version of a page or asset from the author, it uses the flush agent to invalidate appropriate paths on its Dispatcher. The updated path is removed from the Dispatcher cache, together with its parents, up to a level (you can configure this with the [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
