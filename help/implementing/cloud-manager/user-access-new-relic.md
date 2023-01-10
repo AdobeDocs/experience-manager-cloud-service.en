@@ -20,7 +20,7 @@ When a new production program is created, the New Relic One sub-account associat
 
 New Relic One APM for AEM as a Cloud Service has many features.
 
-* Direct access to a dedicated New Relic One account (access managed by Adobe Support)
+* Direct access to a dedicated New Relic One account
 
 * Instrumented New Relic One APM agent that shows exact method calls with line numbers, including external dependencies and databases
 
@@ -140,7 +140,7 @@ If you don't receive an email from New Relic:
 
 The following limitations apply to adding users to New Relic One:
 
-* A maximum of 25 users can be added. If the maximum number of users has been reached, remove users in order to be able to add new users.
+* A maximum of 30 users can be added. If the maximum number of users has been reached, remove users in order to be able to add new users.
 * Users added to New Relic will be of the type **Restricted** refer to [the New Relic documentation for details.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&text=One%20or%20more%20individuals%20who,change)%20any%20New%20Relic%20features.)
 * AEM as a Cloud Service only offers the New Relic One APM solution and does not provide support for alerting, logging, or API integrations.
 
@@ -166,7 +166,7 @@ Please note:
 
 ### Who can access the New Relic One cloud service data? {#access-new-relic-cloud}
 
-Full read access will be granted for up to 10 members of your team. Read access will include all APM metrics collected by the New Relic One agent.
+Full read access will be granted for up to 30 members of your team. Read access will include all APM metrics collected by the New Relic One agent.
 
 ### Is custom SSO configuration supported? {#custom-sso}
 
