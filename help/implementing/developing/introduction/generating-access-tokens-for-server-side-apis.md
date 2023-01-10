@@ -201,7 +201,7 @@ Finally, configure the group with the appropriate permissions needed to in order
 1. Logging in to the appropiate author instance and going to **Settings** - **Security** - **Permissions**
 1. Search for the name of the group corresponding to the product profile in the left hand pane (in this case Read-only APIs) and click on it:
 
-   ![Search for Group](/Users/sarchiz/Documents/repos/experience-manager-cloud-service.en/help/implementing/developing/introduction/assets/s2s-searchforgroup.png)
+   ![Search for Group](/help/implementing/developing/introduction/assets/s2s-searchforgroup.png)
    
 1. Click the Edit button in the following window:
 
