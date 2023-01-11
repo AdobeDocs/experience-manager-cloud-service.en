@@ -215,8 +215,6 @@ Finally, configure the group with the appropriate permissions needed to in order
 >
 >Learn more about the Adobe Identity Management System (IMS) and AEM users and groups by consultng the [documentation](/help/security/ims-support.md).
 
-<!-- Alexandru: resume from here -->
-
 ## Developer Flow {#developer-flow}
 
 Developers will likely want to test using a development instance of their non-AEM application (either running on their laptop or hosted) that makes requests to a development AEM as a Cloud Service dev environment. However, since developers do not necessarily have IMS admin role permissions, we cannot assume they can generate the JWT bearer described in the regular server-to-server flow. Thus, we provide a mechanism for a developer to generate an access token directly that can be used in requests to AEM as a Cloud Service environments which they have access to. 
@@ -238,9 +236,10 @@ Developers can also make API calls to an AEM project running on their local mach
 
 ### Generating the Access Token {#generating-the-access-token}
 
-Click the **Get Local Development Token** button in the Developer Console to generate an access token.
+1. Go to the **Local token** under **Integrations**
+1. Click the **Get Local Development Token** button in the Developer Console to generate an access token.
 
-### Call then AEM Application with an Access Token {#call-the-aem-application-with-an-access-token}
+### Call the AEM Application with an Access Token {#call-the-aem-application-with-an-access-token}
 
 Make the appropriate server-to-server API calls from the non-AEM application to an AEM as a Cloud Service environment, including the access token in the header. So for the "Authorization" header, use the value `"Bearer <access_token>"`.
 
@@ -248,23 +247,41 @@ Make the appropriate server-to-server API calls from the non-AEM application to 
 
 By default, the AEM as a Cloud Service credentials expire after a year. To ensure service continuity, developers have the option of refreshing the credentials, extending their availability for an extra year.
 
-To achieve this, you can use the **Refresh Service Credentials** button from the **Integrations** tab in the Developer Console, as shown below.
+To achieve this, you can:
 
-![Credential Refresh](assets/credential-refresh.png)
+* Use the **Add certificate** button under **Integrations** - **Technical Accounts** in the Developer Console, as shown below
 
-After pressing the button, a new set of credentials will be generated. You can update your secret storage with the new credentials and validate that they work as they should.
+  ![Credential Refresh](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
->[!NOTE]
->
-> After clicking the **Refresh Service Credentials** button, the old credentials remain registered until they expire, but only the most recent set is available to be seen from the Developer Console at any one time.
+* After pressing the button, a new set of credentials will be generated. Install the new credentials on your off-AEM server and ensure that connectivity is as expected, without removing the old credentials  
+* Make sure the new credentials are invoked instead of the old ones when generating the access token
+* Optionally revoke (and then delete) the prior certificate so it can no longer be used to authenticate with AEM as a Cloud Service.
 
-## Service Credentials Revocation {#service-credentials-revocation}
+## Credentials Revocation {#credentials-revocation}
 
-If the credentials need to be revoked, you need to submit a request to customer support using these steps:
+If the private key is compromised, you need to create a new certificate with a new private key. After configuring it to generate access tokens, you can revoke and delete the old certificates.
 
-1. Disable the technical account user for the Adobe Admin Console in the User Interface:
-   * In Cloud Manager, press the **...** button next to your environment. This will open the product profiles page
-   * Now, click on the **AEM Users** profile, to show a list of the users
-   * Click the **API Credentials** tab, then find the appropriate technical account user and delete it
-2. Contact customer support, and request that the service credentials for that specific environment are deleted
-3. Finally, you can generate the credentials again, as described in this documentation. Also make sure that the new technical account user that is created has the appropriate permissions.
+You can do this by following these steps:
+
+1. First, add the new key. This will generate credentials with a new private key and a new certificate. The new private key will be marked in the UI as **current** and will thus be used for all new credentials for this technical account going forward. Note that the credentials associated with the older private keys will still be valid until revoked. To achieve this, press the three dots (**...**) under your current technical account and press **Add new private key**:
+
+   ![Add new private key](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
+
+1. Press **Add** at the prompt that follows:
+
+   ![Confirm adding of new private key](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
+
+   A new browse tab with the new crendetials will open and the UI will be updated to show both private keys, with the new one marked as **current**:
+
+   ![Private keys in the UI](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
+
+1. Install the new credentials on off-AEM server and ensure connectivity works as expected. See the [Server to Server Flow section](#the-server-to-server-flow) for details on how to do this
+1. Revoke the old certificate. You can do this by selecting the three dots (**...**) to the right of the certificate and pressing **Revoke**:
+
+   ![Revoke certificate](/help/implementing/developing/introduction/assets/s2s-revokecert.png)
+
+   Then, confirm the revocation in the following prompt by pressing the **Revoke** button:
+
+   ![Revoke certificate confirmation](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
+
+1. Finally, delete the compromised certificate. 
