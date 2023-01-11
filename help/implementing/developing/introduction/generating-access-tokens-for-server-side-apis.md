@@ -53,40 +53,6 @@ Users with the AEM as a Cloud Service Environment Administrator role can later c
 >
 >An IMS org administrator (typically the same user who provisioned the environment via Cloud Manager), who should also be member of the AEM Users or AEM Administrators Product Profile on AEM Author, must first access the Developer Console and click the **Create new technical account** button in order for the credentials to be generated and later retrieved by a user with admin permissions to the AEM as a Cloud Service environment. If the IMS org administrator has not done this, a message will inform them that they need the IMS org Administrator role.
 
-<!-- Alexandru: Drafting for now 
-
-Users with access to the AEM as a Cloud Service developer console will see the integrations tab in the Developer Console for a given environment, as well as two buttons. A user with the AEM as a Cloud Service Environment administrator role can click the **Generate Service Credentials** button to generate and display the service credentials json, which will contain all the information required for the non AEM server, including client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
-
-![JWT Generation](assets/JWTtoken3.png)
-
-The output will be similar to the following:
-
-```
-{
-  "ok": true,
-  "integration": {
-    "imsEndpoint": "ims-na1.adobelogin.com",
-    "metascopes": "ent_aem_cloud_sdk,ent_cloudmgr_sdk",
-    "technicalAccount": {
-      "clientId": "cm-p123-e1234",
-      "clientSecret": "4AREDACTED17"
-    },
-    "email": "abcd@techacct.adobe.com",
-    "id": "ABCDAE10A495E8C@techacct.adobe.com",
-    "org": "1234@AdobeOrg",
-    "privateKey": "-----BEGIN RSA PRIVATE KEY-----\r\REDACTED\r\n==\r\n-----END RSA PRIVATE KEY-----\r\n",
-    "publicKey": "-----BEGIN CERTIFICATE-----\r\nREDACTED\r\n-----END CERTIFICATE-----\r\n"
-  },
-  "statusCode": 200
-}
-```
-
-After being generated, the credentials can be retrieved at a later date by pressing the **Get Service Credentials** button in the same location.
-
->[!IMPORTANT]
->
->An IMS org administrator (typically the same user who provisioned the environment via Cloud Manager), who should also be member of the AEM Users or AEM Administrators Product Profile on AEM Author, must first access the Developer Console and click the **Generate Service Credentials** button in order for the credentials to be generated and later retrieved by a user with admin permissions to the AEM as a Cloud Service environment. If the IMS org administrator has not done this, a message will inform them that they need the IMS org Administrator role. -->
-
 ### Install the AEM Service Credentials on a Non AEM Server {#install-the-aem-service-credentials-on-a-non-aem-server}
 
 The non-AEM application making calls to AEM should be able to access the AEM as a Cloud Service credentials, treating it as a secret.
@@ -131,14 +97,6 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 ```
 
 ### Set the Appropriate Permissions for the Technical Account User in AEM {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
-
-<!-- Alexandru: drafting for now
-
-Once the technical account user is created in AEM (this occurs after the first request with the corresponding access token), the technical account user must be properly permissioned **in** AEM.
-
-Note that by default, on the AEM Author service, the technical account user is added to the Contributors user group which provides read access AEM.
-
-This technical account user in AEM can be further provisioned with permissions using the usual methods. -->
 
 First, a new product profile needs to be created in the Adobe Admin Console. You can achieve this by following these steps:
 
@@ -284,4 +242,4 @@ You can do this by following these steps:
 
    ![Revoke certificate confirmation](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
 
-1. Finally, delete the compromised certificate. 
+1. Finally, delete the compromised certificate.
