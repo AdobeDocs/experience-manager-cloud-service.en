@@ -33,7 +33,9 @@ Smart Tags is automatically provisioned for AEM as a Cloud Service.
 You can tag the following types of assets:
 ![Smart-tag-types](assets/smart-tags-types.png)
 
-### Generic smart tags
+### Out of the box smart tags
+
+[!DNL Adobe Sensei] powered smart tagging feature uses artificial intelligence models to analyze video content and add tags to the assets. Thereby-reducing time for DAM users to deliver rich experiences to their customers. The smart tags are displayed in descending order of their [confidence score](#confidence-score) in asset [!UICONTROL Properties]. 
 
 #### Text-based assets 
 
@@ -44,20 +46,30 @@ For supported assets, Experience Manager already extracts the text, which is the
 
 All types of supported assets are automatically tagged by [!DNL Experience Manager Assets] when uploaded. Tagging is enabled and works, by default. [!DNL Experience Manager] applies the appropriate tags in near-real-time.
 
-![Image Smart Tag](assets/image-smart-tag.png)
-
 #### Image-based assets
 
-For images and videos, the Smart Tags are based on some visual aspect.Images in many formats are tagged using the Adobe Sensei's smart content services. You [create a training model](#/help/assets/smart-tags-training.md) and then the uploaded images are automatically tagged. Smart Tags are applied to the supported file types that generate renditions in JPG and PNG format.
+For images and videos, the Smart Tags are based on some visual aspect. Images in many formats are tagged using the Adobe Sensei's smart content services. You [create a training model](#/help/assets/smart-tags-training.md) and then the uploaded images are automatically tagged. Smart Tags are applied to the supported file types that generate renditions in JPG and PNG format.
+
+![Image Smart Tag](assets/image-smart-tag.png)
 
 #### Video-based assets
-For video-based assets, tagging is enabled by default in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. [Videos are auto-tagged](/help/assets/smart-tags-video-assets.md) when you upload new videos or reprocess existing ones.
 
-### Trainable smart tags
+For video-based assets, tagging is enabled by default in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. [Videos are auto-tagged](/help/assets/smart-tags-video-assets.md) when you upload new videos or reprocess existing ones. [!DNL Adobe Sensei] generates two sets of tags for a video. One set corresponds to objects, scenes, and attributes in that video, whereas, the other set relates to actions such as drinking, running, and jogging. 
+Videos are auto-tagged when you upload new videos or reprocess existing ones. [!DNL Experience Manager] also creates the thumbnails and extracts metadata of the video files. Also check [opt out video smart tagging](#opt-out-video-smart-tagging).
+
+### Trainable smart tags check 
 
 Image type smart tags can be trained to provide more accuracy and efficacy in the tags. Refer to the [smart tags training](#/help/assets/smart-tags-training.md) to understand the training of images with custom or enhanced smart tags.
 
-### Supported file formats for smart tags
+#### Determining the requirement of smart tags training {#smart-tag-training-requirement}
+
+Smart tags training is required in the following scenarios:
+* To add an automated labeler to save iterations of adding labels every time you upload the same asset.
+* To improve the ability of assets to apply relevant tags.
+* To increase accuracy of the tags appearing for an asset.
+* To add unavailable or missing labels.
+
+### Supported file formats for smart tags {#supported-file-formats}
 
 |Images (MIME types) | Text-based assets (file formats) | Video assets (file formats and codecs) |
 |----|-----|------|
@@ -86,8 +98,60 @@ Image type smart tags can be trained to provide more accuracy and efficacy in th
 
 Smart tags are implemented in AEM Assets using the following workflow:
 1.  Create or upload an asset in AEM.
-1.  Text-based tags are generated automatically based upon the type of asset you have created or uploaded. If you find that specific tags are not generated then you can train your tags accordingly. You can perform custom tags training for [smart tags for images](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/custom-smart-tags.html?lang=en) and [smart tags for videos](/help/assets/smart-tags-video-assets.md).
+1.  Text-based tags are generated automatically based on the type of asset that you have created or uploaded. If you find that specific tags are not generated, then you can train your tags accordingly. You can perform custom tags training for [smart tags for images](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/custom-smart-tags.html?lang=en). As of now, the custom training is available for images only. Refer to [smart tags training](#smart-tags-training.md).
 1.  Once smart tags are trained, the tags identification are saved in AEM so that you apply these tags on a similar set of assets.
+
+## Preparing asset for smart tagging
+
+When you [upload assets](add-assets.md#upload-assets) to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], the uploaded assets are processed. Once the processing is complete, see the [!UICONTROL Basic] tab of asset [!UICONTROL Properties] page. Smart tags are automatically added to the assets under [!UICONTROL Smart Tags]. Asset microservices uses [!DNL Adobe Sensei] to create these smart tags.
+
+![Smart Tags are added to videos and seen in Basic tab of asset Properties](assets/smart-tags-added-to-videos.png)
+
+The applied smart tags are sorted in descending order of [confidence score](#confidence-score), combined for object and action tags, within [!UICONTROL Smart Tags].
+
+>[!IMPORTANT]
+>
+>You are advised to review these automatically generated tags to ensure that they conform to your brand and its values.
+
+## Smart tagging existing assets in DAM {#smart-tag-existing-assets}
+
+The existing assets in DAM are not smart tagged automatically. You need to [!UICONTROL Reprocess Assets] manually to generate smart tags for them.
+
+To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
+
+1. Select the [!DNL Adobe Experience Manager] logo and then select assets from the [!UICONTROL Navigation] page.
+
+1. Select [!UICONTROL Files] to display the Assets interface.
+
+1. Navigate to the folder to which you want to apply smart tags.
+
+1. Select the entire folder or specific assets.
+
+1. Select ![Reprocess assets icon](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets] icon and select the [!UICONTROL Full Process] option.
+
+![Reprocess assets to add tags to videos existing DAM repository](assets/reprocess.gif)
+
+Once the process completes, navigate to the [!UICONTROL Properties] page of any asset within the folder. The automatically added tags are seen in [!UICONTROL Smart Tags] section in [!UICONTROL Basic] tab. These applied smart tags are sorted in descending order of [confidence score](#confidence-score).
+
+## Moderate smart tags {#moderate-smart-tags}
+
+[!DNL Adobe Experience Manager] allows you to curate the smart tags to:
+
+* remove inaccurate tags assigned to your brand videos.
+
+* refine tag-based searches for assets by ensuring that your asset appears in search results for the most relevant tags. It, therefore, eliminates the chances of unrelated assets from showing up in search results.
+
+* assign a higher rank to a tag to increase its relevance with respect to an asset. Promoting a tag for an asset increases the chances of the particular asset appearing in search results when a search is performed based on that tag.
+
+To know more about how to moderate the smart tags for assets, see [Manage smart tags](smart-tags.md#manage-smart-tags-and-searches).
+
+![Moderate video smart tags](assets/manage-video-smart-tags.png)
+
+>[!NOTE]
+>
+>Any tags that are moderated using the steps in [Manage smart tags](smart-tags.md#manage-smart-tags-and-searches) are not remembered on reprocessing of the asset. The original sets of tags are displayed again.
+
+
 
 ## Manage smart tags and asset searches {#manage-smart-tags-and-searches}
 
@@ -127,6 +191,47 @@ The search results that match all search terms in metadata fields are displayed 
 1. matches of `woman running` in smart tags.
 1. matches of `woman` or of `running` in smart tags.
 
+## Confidence score {#confidence-score}
+
+[!DNL Adobe Experience Manager] applies a minimum confidence threshold for object and action-smart tags to avoid having too many tags for each asset, which slows down indexing. Your asset search results are ranked based on the confidence scores, which generally improve search results beyond what an inspection of the assigned tags of any asset suggests. Inaccurate tags often have low confidence scores so they seldom appear at the top of the Smart Tags list for assets.
+
+The default threshold for action and object tags in [!DNL Adobe Experience Manager] for an image is 0.5 and for video it is 0.7 (should be value from 0 through 1). If some assets are not tagged by a specific tag, then it indicates that the algorithm is less than 70% confident in the predicted tags. The default threshold might not always be optimal for all the users. You can, therefore, change the confidence score value in OSGI configuration.
+
+To add the confidence score OSGI configuration to the project deployed to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] through [!DNL Cloud Manager]:
+
+* In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` with the following contents:
+
+```json
+{
+  "minVideoActionConfidenceScore":0.5,
+  "minVideoObjectConfidenceScore":0.5,
+}
+```
+
+>[!NOTE]
+>
+>Manual tags are assigned a confidence of 100% (maximum confidence). Therefore, if there are assets with manual tags that match the search query, they are displayed before smart tags matching the search query.
+
+## Opt out of video smart tagging {#opt-out-video-smart-tagging}
+
+As the automated tagging of videos runs in parallel to other asset processing tasks like thumbnail creation and metadata extraction, it can be time consuming. To expedite the asset processing, you can opt out of video smart tagging on upload at folder level.
+
+To opt out of automated video smart tags generation for assets uploaded to specific folder:
+
+1. Open [!UICONTROL Asset Processing] tab in folder [!UICONTROL Properties].
+
+1. In [!UICONTROL Smart Tags for Videos] menu, [!UICONTROL Inherited] option is selected by default and video smart tag is enabled.
+
+    When the [!UICONTROL Inherited] option is selected, the inherited folder path is also visible along with the information whether it is set to [!UICONTROL Enable] or [!UICONTROL Disable].
+
+    ![Disable video smart tagging](assets/disable-video-tagging.png)
+
+1. Select [!UICONTROL Disable] to opt out of smart tagging of videos uploaded to the folder.
+
+>[!IMPORTANT]
+>
+>If you have opted out of tagging videos on a folder at the time of upload and want to smart tag the videos after upload, then **[!UICONTROL Enable Smart Tags for Videos]** from [!UICONTROL Asset Processing] tab of the folder [!UICONTROL Properties] and use [[!UICONTROL Reprocess Asset] option](#smart-tag-existing-videos) to add smart tags to the video.
+
 ## Limitations and best practices related to smart tags {#limitations}
 
 [Enhanced smart tagging](/help/assets/smart-tags-training.md) is based on learning models of images and their tags. These models are not always perfect at identifying tags. The current version of the Smart Tags has the following limitations:
@@ -140,10 +245,39 @@ The search results that match all search terms in metadata fields are displayed 
   * Fine visual differences in products such as shirts with and without collars or small product logos embedded on products.
 
 * To train the model, use the most appropriate images. The training cannot be reverted or training model cannot be removed. Your tagging accuracy depends on the current training, so do it carefully.
+* You cannot train the service that applies Smart Tags to videos using any specific videos. It works with default [!DNL Adobe Sensei] settings.
+* Tagging progress is not displayed.
+* Only the videos smaller than 300 MB in file size are auto-tagged. The [!DNL Adobe Sensei] service skips video files that are larger in size.
 * To search for files with smart tags (regular or enhanced), use the [!DNL Assets] search (full-text search). There is no separate search predicate for smart tags.
-* In comparison of general tags, the assets that are tagged using business taxonomy are easier to identify and retrive by tag-based searches.
+* In comparison of general tags, the assets that are tagged using business taxonomy are easier to identify and retrieve by tag-based searches.
 
 >[!NOTE]
 >
 >The ability of the Smart Tags to train on your tags and apply them on other images depends on the quality of images you use for training.
 >For best results, Adobe recommends that you use visually similar images to train the service for each tag.
+
+## Frequently asked questions
+
+* **How do smart tags improve search experience of an asset?**
+  Adobe Sensei tags the assets automatically once you upload them. The automated process runs so fast at the backend that you will see tags added in your assets after a few seconds once the upload is completed.
+
+* **What happens if the smart tag list is inaccurate or showing unwanted tag?**
+  An inaccurate or unwanted tag can be removed from the list. For example, as an automobile dealer, you might want to remove "damaged" tag from the list. Performing such actions will teach the tool how to avoid occurrences of this kind in future assets.
+
+* **How can you prioritize assets containing same tags?**
+  Luckily, you can prioritize assets containing the same tags. You can promote a tag into the Smart Tags list of an asset to perform prioritization. Promoting a tag allows you to prioritize the images appearing in the search results for that particular tag.
+
+* **Is the application of Smart Tags limited to a particular folder?**
+  Smart tags are configurable and can be applied on any folder inside DAM.
+
+* **How smart is smart tagging feature?**
+  The smart tagging feature is progressively learning. The feature increases the accuracy of the tags that it includes going forward with each deletion or promotion made by a user.
+
+* **How may I know that tagging needs training?**
+  Refer to [Determining the requirement of smart tags training](#smart-tag-training-requirement).
+
+* **What are the supported file formats for tagging an asset?**
+  Refer to [Supported file formats](##supported-file-formats).
+
+* **I do not want to use video smart tagging anymore.**
+You can [opt out video smart tagging](#opt-out-video-smart-tagging) anytime you want to discontinue.
