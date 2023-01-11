@@ -137,6 +137,18 @@ If Release Orchestrator is still running when an ingestion is being started, the
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
+### Top-up Ingestion Failure
+
+A common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a conflict in node ids. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
+
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
+
+Each node in AEM must have a unique uuid. This error indicates that a node that is being ingested has the same uuid as one that already exists at a different path on the target instance.
+This can happen if a node is moved on the source between an extraction and a subsequent [Top-Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
+It can also happen if a node on the target is moved between an ingestion and a subsequent top-up ingestion.
+
+This conflict must be resolved manually. Someone familiar with the content must decide which of the two nodes must be deleted, keeping in mind other content that references it. The solution may require that the top-up extraction is done again without the offending node. 
+
 ## What's Next {#whats-next}
 
 Once you have completed Ingesting Content into Target, you can view logs of each step (extraction and ingestion) and look for errors. See [Viewing Logs for a Migration Set](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) to learn more.
