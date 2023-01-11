@@ -253,11 +253,11 @@ For asset filenames, the JCR name and path is sanitized using the API: `JcrUtil.
 
 **Handling folder name in bulk import**
 
-For folder filenames, the JCR name and path is sanitized using the API: `JcrUtil.createValidName`.
+For folder filenames, the JCR name and path is sanitized using the API: `DamUtil.getSanitizedFolderName`.
 
 * Upper case characters are converted to lower case
 * Unicode characters are not changed
-* Replace the special characters with dash ('-'), for example, `new asset.png` is updated to `new-asset.png`:
+* Replace the special characters with dash ('-'), for example, `new folder` is updated to `new-folder`:
 
   ```
   
