@@ -44,13 +44,35 @@ Before any content can be copied a content set must be defined. Follow these ste
 
 1. Tap or click the **Add Content Set** button at the top-right of the screen.
 
+   ![Content Sets](assets/content-sets.png)
+
 1. On the **Details** tab of the the wizard, provide a name and description for the content set and tap or click **Continue**.
+
+   ![Content set details](assets/add-content-set-details.png)
 
 1. On the **Content Paths** tab of the wizard, specify the paths of the mutable content to be included in the content set.
 
-   * Tap or click the **Add Path** button to open the path browser and select a path.
-   * You can add as many paths as necessary.
-   * Paths can be marked to be excluded to finely tune your content set.
+   1. Enter the path in the **Add Include Path** field.
+   1. Tap or click the **Add Path** button to add the path to the content set.
+   1. Repeat these steps to add as many paths as necessary.
+
+   ![Add paths to content set](assets/add-content-set-paths.png)
+
+1. If you need to refine or restrict your content set, paths can be marked to be excluded.
+
+   1. In the list of included paths, tap or click the **Add exclude sub-paths** icon next to the path you need to restrict.
+   1. Enter the sub-path to exclude beneath the selected path.
+   1. Tap or click **Exclude Path**.
+   1. Tap or click **Add exclude sub-paths** again to add additional paths to exclude as necessary.
+
+   ![Excluding paths](assets/add-content-set-paths-excluded.png)
+
+1. You can modify the specified paths if required.
+
+   1. Tap or click the X next to excluded sub-paths to delete them.
+   1. Tap or click the ellipsis button next to paths to reveal **Edit** and **Delete** options.
+
+   ![Editing path list](assets/add-content-set-excluded-paths.png)
 
 1. Tap or click **Create** to create the content set.
 
@@ -59,6 +81,10 @@ The content set can now be used to copy content between environments.
 ## Editing a Content Set {#edit-content-set}
 
 Follow similar steps as when creating a content step. Instead of tapping or clicking **Add Content Set**, select an existing set from the console and select **Edit** from the ellipsis menu.
+
+![Edit content set](assets/edit-content-set.png)
+
+Note that when editing your content set, you may need to expand the configured paths to reveal the excluded sub-paths.
 
 ## Copying Content {#copy-content}
 
@@ -72,6 +98,8 @@ Once a content set has been created, you can use it to copy content. Follow thes
 
 1. Select an content set from the console and select **Copy Content** from the ellipsis menu.
 
+   ![Content copy](assets/copy-content.png)
+
    >[!NOTE]
    >
    >An environment may not be selectable if:
@@ -80,6 +108,8 @@ Once a content set has been created, you can use it to copy content. Follow thes
    >* The environment has a running pipeline or a copy content operation in progress.
 
 1. In the **Copy content** dialog, specify the source and destination for your content copy action and tap or click **Copy**.
+
+   ![Copying content](assets/copying-content.png)
 
 The copy process starts. The status of the copy process is reflected in the console for the selected content set. The process can have one of the following statuses.
 
@@ -106,4 +136,5 @@ The content copy tool has the following limitations.
 * The content copy tool should not be used as a cloning or mirroring tool because it can not track moved or deleted content on the source.
 * The content copy tool has no versioning capability and can not automatically detect modified content or newly created content on the source environment in a content set since the last content copy operation.
   * If you wish to update your destination environment with content changes only since the last content copy operation, you need to create a content set and specify the paths on the source instance where changes were made since the last content copy operation.
+* Version information is not included in a content copy.
   
