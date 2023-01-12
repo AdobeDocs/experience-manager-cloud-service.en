@@ -50,12 +50,68 @@ The capabilities of individual environments depend upon the solutions enabled in
    * Provide an **Environment name**.
    * Provide an **Environment description**.
    * Select a **Cloud Region**.
+     * Note that this can not be changed after environment creation.
+     * Depending on your available entitlements, you may be able to configure [multiple regions.](#multiple-regions)
 
    ![Add environment dialog](assets/add-environment2.png)
 
 1. Click **Save** to add the specified environment.
 
 The **Overview** screen now displays your new environment in the **Environments** card. You can now set up pipelines for your new environment.
+
+## Multiple Publish Regions {#multiple-regions}
+
+A user with the **Business Owner** role can configure prod and staging environments to include up to two additional publish regions in addition to the primary region. Additional publish regions can improve availability.
+
+### Adding Multiple Publish Regions to a New Environment {#add-regions}
+
+When adding a new environment, you can elect to configure additional regions in addition to the primary region.
+
+1. Select the **Primary region**.
+   * Note that this can not be changed after environment creation.
+1. Select the option **Add additional publish regions** and a new **Additional publish regions** drop-down appears.
+1. In the **Additional publish regions** drop-down, select an additional region.
+1. The region selected is added below the drop-down to indicate its selection.
+   * Tap or click the X next to the selected region to de-select it.
+1. Select another region from the **Additional publish regions** drop down to add another region.
+1. Tap or click **Save** when you are ready to create your environment.
+
+![Selecting multiple regions](assets/select-multiple-regions.png)
+
+The selected regions will apply to both production and staging environments.
+
+If you do not specify any additional regions, [you can do so later after the environments are created.](#edit-regions)
+
+If you wish to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended to do this before adding additional publish regions to the environments. Otherwise the additional publish regions' traffic will go through the primary region's proxy.
+
+### Editing Multiple Publish Regions {#edit-regions}
+
+If you did not specify any additional regions initially, you can do so after the environments are created.
+
+You can also add additional regions if you didn't select the maximum number allowed when you created the environment as well as remove additional publish regions.
+
+1. From the Program Overview console of your program, click the ellipsis button for your production environment and select **Edit** from the menu.
+
+   ![Edit environment](assets/select-edit-environment.png)
+
+1. In the **Edit Production Environment** dialog, make the necessary changes to the additional publish regions.
+   * Use the **Additional publish regions** drop-down to select additional regions.
+   * Click the X next to selected additional publish regions to de-select them.
+
+   ![Edit environment](assets/edit-environment.png)
+
+1. Tap or click **Save** to save the changes.
+
+Changes made to the production environment will apply to both production and staging environments.
+
+If you wish to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended to do this before adding additional publish regions to the environments. Otherwise the additional publish regions' traffic will go through the primary region's proxy.
+
+### Multiple Region Limitations {#limitations}
+
+* Additional regions can only be added if associated entitlements are available and unused in the tenant.
+* A maximum of two additional publish regions can be added to any individual environment.
+* Additional regions are available on production programs only. It is not available in sandbox programs.
+* Additional regions are available only if the program has the Sites solution enabled.
 
 ## Environment Details {#viewing-environment}
 
