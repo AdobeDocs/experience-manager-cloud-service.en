@@ -15,7 +15,7 @@ For an instance, the words saved in the dictionary in an alphabetical order are 
 
 ## Prerequisites and configuration
 
-Smart Tags is automatically provisioned for AEM as a Cloud Service.
+Smart Tags is automatically provisioned for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ## Smart Tags workflow
 
