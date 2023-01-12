@@ -27,7 +27,7 @@ The server-to-server flow involves the following steps:
 
 ### Fetch the AEM as a Cloud Service Credentials {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Users with access to the AEM as a Cloud Service developer console will see the integrations tab in the Developer Console for a given environment, as well as two buttons. A user with the AEM as a Cloud Service Environment administrator role can create, view or manage credentials.
+Users with access to the AEM as a Cloud Service developer console will see the integrations tab in the Developer Console for a given environment. A user with the AEM as a Cloud Service Environment administrator role can create, view or manage credentials.
 
 Clicking the **Create new technical account** button a new set of credentials will be created that includes client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
 
