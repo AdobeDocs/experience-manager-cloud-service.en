@@ -92,9 +92,9 @@ Once a content set has been created, you can use it to copy content. Follow thes
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to **Environments** screen from the **Overview** page.
+1. Navigate to the **Environments** screen from the **Overview** page.
 
-1. Navigate to **Content Sets** page from the **Environments** screen.
+1. Navigate to the **Content Sets** page from the **Environments** screen.
 
 1. Select an content set from the console and select **Copy Content** from the ellipsis menu.
 
@@ -106,12 +106,33 @@ Once a content set has been created, you can use it to copy content. Follow thes
    >
    >* The user does not have the appropriate permissions.
    >* The environment has a running pipeline or a copy content operation in progress.
+   >* The environment is hibernating or starting up.
 
-1. In the **Copy content** dialog, specify the source and destination for your content copy action and tap or click **Copy**.
+1. In the **Copy content** dialog, specify the source and destination for your content copy action.
 
    ![Copying content](assets/copying-content.png)
 
-The copy process starts. The status of the copy process is reflected in the console for the selected content set. The process can have one of the following statuses.
+1. If required you can also elect to **Include Access Control Lists** in your copy process.
+
+1. Tap or click **Copy**.
+
+The copy process starts. The status of the copy process is reflected in the console for the selected content set.
+
+## Content Copy Activity {#copy-activity}
+
+You can monitor the status of your copy processes in the **Copy Content Activity** page.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+
+1. Navigate to the **Environments** screen from the **Overview** page.
+
+1. Navigate to the **Copy Content Activity** page from the **Environments** screen.
+
+![Content Copy Activity](assets/copy-content-activity.png)
+
+### Content Copy Statuses {#statuses}
+
+Once you start copying content, the process can have one of the following statuses.
 
 |Status|Description|
 |---|---|
@@ -120,7 +141,13 @@ The copy process starts. The status of the copy process is reflected in the cons
 |Completed|Content copy operation completed successfully|
 |Cancelled|User cancels a content copy operation after starting it|
 
-If you need to abort a content copy operation after starting it, you have the option to cancel it. To do so, on the **Copy Content** page, can select the **Cancel** action from the ellipsis menu of the copy you previously started.
+### Cancelling a Copy Process {#cancelling}
+
+If you need to abort a content copy operation after starting it, you have the option to cancel it.
+
+To do so, on the **Copy Content Activity** page, select the **Cancel** action from the ellipsis menu of the copy process you previously started.
+
+![Cancel content copy](assets/content-copy-cancel.png)
 
 >[!NOTE]
 >
