@@ -9,7 +9,7 @@ exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 
 # Smart Tags Training
 
-[!DNL Experience Manager] as a [!DNL Cloud Service] auto-generate the Smart Tags to the text-based assets and to videos by default. To auto-add Smart Tags to images, complete the following tasks:
+Smart tags training allows you to train your tags so that you can specify the particulars if the relevant tags are not there. It uses an artificially intelligent framework of [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. [!DNL Experience Manager Assets] automatically applies smart tags to uploaded assets, by default. [!DNL Experience Manager] as a [!DNL Cloud Service] auto-generate the Smart Tags to the text-based assets and to videos by default. To auto-add Smart Tags to images, complete the following tasks:
 
 * [Understand tag models and guidelines](#understand-tag-models-guidelines)
 * [Train the model](#train-model)
@@ -97,7 +97,6 @@ Ensure that the images in the training set conform to the following guidelines:
 >
 >You can use the same images to train different tag models. However, do not associate an image with more than one tag in a tag model. It is possible to tag the same image with different tags belonging to different tag models. 
 >You cannot undo the training. The above guidelines should help you choose good images to train.
-
 
 ## Train the model for your custom tags {#train-model}
 
