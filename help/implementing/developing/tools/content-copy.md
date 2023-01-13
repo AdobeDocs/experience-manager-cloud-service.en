@@ -9,7 +9,7 @@ The content copy tool enables users to copy mutable content on-demand from their
 
 ## Introduction {#introduction}
 
-Current, real data is extremely valuable for testing, validation, and user-acceptance purposes. The content copy tool allows you to copy content from your production AEM environment to a staging or development environment for such testing.
+Current, real data is valuable for testing, validation, and user-acceptance purposes. The content copy tool allows you to copy content from your production AEM environment to a staging or development environment for such testing.
 
 The content to copy is defined by a content set. A content set consists of a list of JCR paths that contain the mutable content to be copied from a source environment to a target environment within the same Cloud Manager program. The following paths are permitted in a content set.
 
@@ -24,8 +24,8 @@ The content to copy is defined by a content set. A content set consists of a lis
 >
 >A user needs to belong to the following roles/groups to be able to use the content copy tool:
 >
->* The **Deployment Manager** role in the source and target environments
->* The **AEM Administrator** group inn the source and target environments
+>* In order to create or modify [content sets,](#create-content-set) the user must be in the **AEM Administrator** group in the source and target environments.
+>* In order to [start or stop the copy process,](#copy-content) the user must be have the **Deployment Manager** role in the source and target environments
 
 When copying content, the source environment is the source of truth.
 
@@ -34,13 +34,13 @@ When copying content, the source environment is the source of truth.
 
 ## Creating a Content Set {#create-content-set}
 
-Before any content can be copied a content set must be defined. Follow these steps to create a content set.
+Before any content can be copied a content set must be defined. Once defined, content sets can be reused to copy content. Follow these steps to create a content set.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to **Environments** screen from the **Overview** page.
+1. Navigate to the **Environments** screen from the **Overview** page.
 
-1. Navigate to **Content Sets** page from the **Environments** screen.
+1. Navigate to the **Content Sets** page from the **Environments** screen.
 
 1. Tap or click the **Add Content Set** button at the top-right of the screen.
 
@@ -54,11 +54,11 @@ Before any content can be copied a content set must be defined. Follow these ste
 
    1. Enter the path in the **Add Include Path** field.
    1. Tap or click the **Add Path** button to add the path to the content set.
-   1. Repeat these steps to add as many paths as necessary.
+   1. Tap or click the **Add Path** button again as necessary.
 
    ![Add paths to content set](assets/add-content-set-paths.png)
 
-1. If you need to refine or restrict your content set, paths can be marked to be excluded.
+1. If you need to refine or restrict your content set, sub-paths can be excluded.
 
    1. In the list of included paths, tap or click the **Add exclude sub-paths** icon next to the path you need to restrict.
    1. Enter the sub-path to exclude beneath the selected path.
@@ -139,7 +139,6 @@ Once you start copying content, the process can have one of the following status
 |In progress|Content copy operation is ongoing|
 |Failed|Content copy operation failed|
 |Completed|Content copy operation completed successfully|
-|Cancelled|User cancels a content copy operation after starting it|
 
 ### Cancelling a Copy Process {#cancelling}
 
@@ -158,10 +157,11 @@ To do so, on the **Copy Content Activity** page, select the **Cancel** action fr
 The content copy tool has the following limitations.
 
 * A content copy can not be performed from a lower environment to a higher environment.
+* Content can only be copied from and to authoring environments.
 * Cross-program content copy is not possible.
 * Running concurrent content copy operations on the same environment is not possible.
+* Up to ten paths can be specified per content set. There is no limitation on excluded paths.
 * The content copy tool should not be used as a cloning or mirroring tool because it can not track moved or deleted content on the source.
 * The content copy tool has no versioning capability and can not automatically detect modified content or newly created content on the source environment in a content set since the last content copy operation.
   * If you wish to update your destination environment with content changes only since the last content copy operation, you need to create a content set and specify the paths on the source instance where changes were made since the last content copy operation.
 * Version information is not included in a content copy.
-  
