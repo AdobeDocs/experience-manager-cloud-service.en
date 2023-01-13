@@ -20,17 +20,19 @@ The content to copy is defined by a content set. A content set consists of a lis
 /conf/**/settings/graphql/persistentQueries
 ```
 
->[!NOTE]
->
->A user needs to belong to the following roles/groups to be able to use the content copy tool:
->
->* In order to create or modify [content sets,](#create-content-set) the user must be in the **AEM Administrator** group in the source and target environments.
->* In order to [start or stop the copy process,](#copy-content) the user must be have the **Deployment Manager** role in the source and target environments
-
 When copying content, the source environment is the source of truth.
 
 * If content has been modified in the destination environment, it will be overwritten by content in the source, if the paths are the same.
 * If the paths are different, content from the source will be merged with the content in the destination.
+
+## Permissions {#permissions}
+
+In order to use the content copy tool, certain permissions are required in both the source and target environments.
+
+| Content Copy Feature | In AEM Administrator Group? | In the Deployment Manager Role? |
+|---|---|---|
+| Create and modify [content sets](#create-content-set) | Yes | No |
+| Start or cancel the [content copy process](#copy-content) | Yes | Yes |
 
 ## Creating a Content Set {#create-content-set}
 
