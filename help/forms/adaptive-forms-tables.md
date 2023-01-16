@@ -53,8 +53,11 @@ To add, delete, or move the row, click any cell of the row. open the content bro
  
  * The **[!UICONTROL Delete Column]** operation deletes the selected row.
 
-The drop-down menu on the content section for the row also provides the Edit operation to edit row properties, settings, and styling options.
 ![add-delete-move-row-column](assets/add-delete-move-row.png)
+
+Double click on the row to configure properties of a row, such as Name, Bind Reference, Repeat Settings, CSS Class.
+![add-delete-move-row-column](assets/row-properties-image.png)
+
 
 #### Add or delete a column
 
@@ -126,7 +129,7 @@ You can define the style for a table by using the Style mode in the page toolbar
 
 >[!NOTE]
 >
->You can change the color theme for header and body rows by changing the values of [LESS variables](https://lesscss.org//). For more information, see [Themes in AEM Forms](/help/forms/using/themes.md).
+>You can change the color theme for header and body rows by changing the values of [LESS variables](https://lesscss.org//). For more information, see [Themes in AEM Forms](/help/forms/themes.md).
 
 ## Add or delete a row dynamically {#add-or-delete-a-row-dynamically}
 
