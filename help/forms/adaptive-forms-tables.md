@@ -6,7 +6,7 @@ seo-description: The Table component in AEM Forms lets you create tables in adap
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 ---
-# Tables in adaptive forms {#tables-in-adaptive-forms}
+# Tables in Adaptive Form {#tables-in-adaptive-forms}
 
 Using tables is an effective, simplified, and organized way of presenting complex data. It helps users in identifying information easily and providing inputs in an ordered arrangement of rows and columns. Most forms from financial services and government organizations require large data tables to put numbers and perform calculations.
 
@@ -54,19 +54,13 @@ To add, delete, or move the row, click any cell of the row. open the content bro
  * The **[!UICONTROL Delete Column]** operation deletes the selected row.
 
 The drop-down menu on the content section for the row also provides the Edit operation to edit row properties, settings, and styling options.
+![add-delete-move-row-column](assets/add-delete-move-row.png)
 
 #### Add or delete a column
 
 To add or delete a column, click on the text cell in the header section, a toolbar opens with the options to add or delete a column:
 
-**Add, delete, or move a row**
-![add-delete-move-row-column](assets/add-delete-move-row.png)
-
-
-**Add or delete a column**
 ![add-delete-move-row-column](assets/add-delet-column.png)
-
-
 
 >[!NOTE]
 >
