@@ -92,7 +92,11 @@ For example:
 
 ## Managing cache for your persisted queries {#managing-cache}
 
-[Persisted queries](/help/headless/graphql-api/persisted-queries.md) are recommended as they can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application. By default AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL). 
+[Persisted queries](/help/headless/graphql-api/persisted-queries.md) are recommended as they can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application. By default AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL).
+
+>[!NOTE]
+>
+> Any Custom rewrite rules on the Dispatcher Level might override defaults from AEM publish side. In case, you are sending TTL based cache-control headers from dispatcher, ensure that you are excluding /graphql/execute.json/* URLs in your LocationMatch patterns.
 
 Using GraphQL you can configure the HTTP Cache Headers  to control these parameters for your individual persisted query.
 
