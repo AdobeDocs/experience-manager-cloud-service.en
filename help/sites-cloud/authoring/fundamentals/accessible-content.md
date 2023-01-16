@@ -97,12 +97,12 @@ Specific types of non-text content that require text alternatives might include:
 * Illustrative photos: These are images of people, objects or places. It is important to think about the role of the photo in the page, and generally recommended to describe the image content, as assistive technology will announce the element type (for example, `graphic` or `image`); it can increase clarity to use `screenshot` or `illustration` in the alternative text descriptions, but this depends on the context. Consistency is a big factor, a decision should be made for an entire authoring team and this applied throughout the user experience.
 * Icons: These are small pictograms (graphics) conveying specific information. They must be consistently used across a page and site. All instances of the icon on a page or site should have the same short and succinct text alternative, unless doing so results in unnecessary duplication of adjacent text.
 * Charts and graphs: These typically represent numerical data. So one option for providing a text alternative might be to include a brief summary of the main trends shown in the chart or graphic. If necessary, also provide a more detailed description in text using the **Description** field in the **Advanced** image properties tab. Additionally, you could provide the source data in tabular form elsewhere in the page or site.
-* Maps, diagrams, flowcharts: For graphics providing spatial data (for example, to support describing relationships between objects or a process), ensure that the key message is provided in text format, and that this text information is positioned near each associated data point. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image’s alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
+* Maps, diagrams, flowcharts: For graphics providing spatial data (for example, to support describing relationships between objects or a process), ensure that the key message is provided in text format, and that this text information is positioned near each associated data point. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image's alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
 * CAPTCHAs: A CAPTCHA is a *Completely Automated Public Turing test to tell Computers and Humans Apart*. It is a security check used on web pages to distinguish humans from malicious software, but which can cause accessibility barriers. They are images that require users to describe what they see in order to pass a security test. Providing a text alternative for the image is obviously not possible, so instead you will need to consider alternative non-graphic solutions. The W3C provides a number of suggestions, such as:Each of these approaches has their own merits and drawbacks.
   * Logic puzzles
   * The use of sound output instead of images
   * Limited use accounts and spam filters.
-* Background images: These are achieved using Cascading Style Sheets (CSS) rather than in HTML. This means it is not possible to specify an alternative text value. Therefore background images should not provide important textual information - if they do, this information must also be provided in the page’s text. However, it is important that an alternative background is displayed when the image cannot be displayed.
+* Background images: These are achieved using Cascading Style Sheets (CSS) rather than in HTML. This means it is not possible to specify an alternative text value. Therefore background images should not provide important textual information - if they do, this information must also be provided in the page's text. However, it is important that an alternative background is displayed when the image cannot be displayed.
 
 >[!NOTE]
 >
@@ -426,7 +426,7 @@ Follow the guidelines under [How to Meet Success Criteria 1.3.2](https://www.w3.
 
 #### Purpose - Sensory Characteristics (1.3.3) {#purpose-sensory-characteristics}
 
-Designers often focus on visual design features, such as color, shape, text style, or a piece of content’s absolute or relative position when presenting information. These can be very powerful design techniques in conveying information (and can improve the overall accessibility for sighted users with cognitive accessibility needs), but people who are blind or visually impaired may be unable to access information that requires visual identification of attributes such as position, color or shape.
+Designers often focus on visual design features, such as color, shape, text style, or a piece of content's absolute or relative position when presenting information. These can be very powerful design techniques in conveying information (and can improve the overall accessibility for sighted users with cognitive accessibility needs), but people who are blind or visually impaired may be unable to access information that requires visual identification of attributes such as position, color or shape.
 
 Similarly, information that requires distinguishing between different sounds (for example, male or female spoken content) will present accessibility barriers to people with hearing impairment, if it is not reflected in any text alternative for the audio content.
 
@@ -443,7 +443,7 @@ Make sure that any information that relies on visual characteristics of page con
 
 >[!NOTE]
 >
->The use of descriptive terms will be acceptable if they’re understood to have meaning in a non-visual context. For example, using *above* and *below* would generally be acceptable, as they respectively imply content before and after a particular item of content; this would still make sense when the content is spoken aloud.
+>The use of descriptive terms will be acceptable if they're understood to have meaning in a non-visual context. For example, using *above* and *below* would generally be acceptable, as they respectively imply content before and after a particular item of content; this would still make sense when the content is spoken aloud.
 
 #### More information - Sensory Characteristics (1.3.3) {#more-information-sensory-characteristics}
 
@@ -552,15 +552,15 @@ Make sure that the text contrasts sufficiently with its background. Contrast rat
 
 >[!NOTE]
 >
->The following sites can help with conversions to other units:
+>The following tools can help you convert to other units:
 >
->* [Px to Em Calculater - Omni](https://www.omnicalculator.com/conversion/px-to-em)
->* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: PX to EM conversion made simple](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+>* [Px to Em Calculator](https://www.omnicalculator.com/conversion/px-to-em)
+>* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/)
+>* [Pixel to EM Converter](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 To check contrast ratios, use a color contrast tool, such as the [Paciello Group Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) or the [WebAIM color contrast checker](https://webaim.org/resources/contrastchecker/). These tools allow you to check pairs of colors and report on any contrast problems.
 
-Alternatively, if you are less concerned about specifying the appearance of your page, you can choose not to specify background and foreground text colors. No contrast checking is required, as the user’s browser will determine the colors of the text and background.
+Alternatively, if you are less concerned about specifying the appearance of your page, you can choose not to specify background and foreground text colors. No contrast checking is required, as the user's browser will determine the colors of the text and background.
 
 If it is not possible to meet the recommended contrast levels, you will need to provide a link to an alternative, equivalent version of the page (which has no color contrast issues), or allow the user to adjust the contrast of the page color scheme to their own requirements.
 
@@ -848,14 +848,14 @@ At the time of writing, there are some issues surrounding the use of title attri
 
 So, while the title attribute can be used to provide extra context to a link, be aware of its limitations and do not use it as an alternative to appropriate link text.
 
-Where the link is made up of an image, make sure that the alternative text for the image describes the destination of the link. For example, if an image of a bookshelf is set as a link to a person’s publications, the alternative text should read **John Smith’s publications** and not **Bookshelf**.
+Where the link is made up of an image, make sure that the alternative text for the image describes the destination of the link. For example, if an image of a bookshelf is set as a link to a person's publications, the alternative text should read **John Smith's publications** and not **Bookshelf**.
 
 Alternatively, if the link anchor contains text that describes the purpose of the link in addition to the image element (and thus the text appears alongside the image), use an empty alt attribute for the image:
 
 ```xml
 <a href="publications.html">
 <img src = "bookshelf.jpg" alt = "" />
-John Smith’s publications
+John Smith's publications
 </a>
 ```
 
@@ -936,7 +936,7 @@ The purpose of this success criterion is to help a person know which element has
 
 It must be possible for a person to know which element among multiple elements has the keyboard focus. If there is only one keyboard actionable control on the screen, the success criterion would be met because the visual design presents only one keyboard actionable item.
 
-Where the success criterion says “mode of operation”, this is to account for platforms which may not always show a focus indicator. In most cases there is only one mode of operation so this success criteria applies.
+Where the success criterion says "mode of operation", this is to account for platforms which may not always show a focus indicator. In most cases there is only one mode of operation so this success criteria applies.
 
 #### How to Meet - Focus Visible (2.4.7) {#how-to-meet-focus-visible}
  
@@ -970,10 +970,10 @@ The purpose of this success criterion is to make sure that text and other lingui
 To meet this success criterion, the default language of a web page can be identified using the `lang` attribute within the `<html>` element at the top of the page. For example:
 
 * If a page is written in English, the `<html>` element should read:
-  `<html lang = “en”>`
+  `<html lang = "en">`
 
 * Whereas a page to be rendered in Spanish should adopt the following standard:
-  `<html lang = “es”>`
+  `<html lang = "es">`
 
 In AEM, the default language of your page is set when creating the page, but may also be changed when editing [Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md).
 
@@ -1005,7 +1005,7 @@ Pages applying this success criterion allow:
 
 #### How to Meet - Language of Parts (3.1.2) {#how-to-meet-language-of-parts}
 
-Tthe `lang` attribute can be used to identify changes in the language of content. For example, a quotation in German (ISO 639-1 code “de”) can be shown as follows:
+Tthe `lang` attribute can be used to identify changes in the language of content. For example, a quotation in German (ISO 639-1 code "de") can be shown as follows:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
@@ -1020,7 +1020,7 @@ Tthe `lang` attribute can be used to identify changes in the language of content
 Similarly, the browser can render an uncommon loan word or phrase correctly if the `span` element is used as follows:
 
 ```xml
-<p>The only French phrase I know is <span lang = “fr”>je ne sais quoi</code>.</p>
+<p>The only French phrase I know is <span lang = "fr">je ne sais quoi</code>.</p>
 ```
 
 >[!NOTE]
