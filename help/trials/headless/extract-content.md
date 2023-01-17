@@ -28,7 +28,6 @@ GraphQL provides a query-based API allowing external client applications to quer
 >title="Launch the GraphQL Explorer"
 >abstract="Great job! You've authored a Content Fragment and now understand how content teams can create and manage content for apps and websites independent of development cycles."
 
-
 ## Query for a List of Sample Content {#list-query}
 
 Clicking the **Launch the GraphQL Explorer** button above opens the GraphQL Explorer in a new tab.
