@@ -15,7 +15,7 @@ The server-to-server flow is described below, along with a simplified flow for d
 
 ## The Server-to-server Flow {#the-server-to-server-flow}
 
-A user with an IMS org administrator role, and who is also a member of the AEM Users or AEM Administrators Product Profile on AEM Author, can generate a set of AEM as a Cloud Service credentials, each of which is a JSON payload that includes a certificate (the public key), a private key, and a technical account consisting of a `clientId` and `clientSecret`. Those credentials can subsequently be retrieved by a user with the AEM as a Cloud Service Environment administrator role and should be installed on the server and needs be treated carefully as a secret key. This JSON format file contains all the data required to integrate with an AEM as a Cloud Service API. The data is used to create a signed JWT token, which is exchanged with IMS for an IMS access token. This access token can then be used as a Bearer authentication token to make requests to AEM as a Cloud Service. The certificate in the credentials expire after one year by default, but they can be refreshed when needed, as described [here](#refresh-credentials).
+A user with an IMS org administrator role, and who is also a member of the AEM Users or AEM Administrators Product Profile on AEM Author, can generate a set of AEM as a Cloud Service credentials, each of which is a JSON payload that includes a certificate (the public key), a private key, and a technical account consisting of a `clientId` and `clientSecret`. Those credentials can subsequently be retrieved by a user with the AEM as a Cloud Service Environment administrator role and should be installed on a non-AEM server and treated carefully as a secret key. This JSON format file contains all the data required to integrate with an AEM as a Cloud Service API. The data is used to create a signed JWT token, which is exchanged with the Adobe Identity Management Services (IMS) for an IMS access token. This access token can then be used as a Bearer authentication token to make requests to AEM as a Cloud Service. The certificate in the credentials expire after one year by default, but they can be refreshed when needed, as described [here](#refresh-credentials).
 
 The server-to-server flow involves the following steps:
 
@@ -29,7 +29,7 @@ The server-to-server flow involves the following steps:
 
 Users with access to the AEM as a Cloud Service developer console will see the integrations tab in the Developer Console for a given environment. A user with the AEM as a Cloud Service Environment administrator role can create, view or manage credentials.
 
-Clicking the **Create new technical account** button a new set of credentials will be created that includes client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
+Clicking the **Create new technical account** button, a new set of credentials will be created that includes client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
 
 ![Creating a new Technical Account](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
 
@@ -41,7 +41,7 @@ After the credentials are created, they will appear under the **Technical Accoun
 
 ![View Credentials](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
 
-Users can later view or modify the credentials for the same technical account by creating a new private key or certificate, for cases when the certificate needs to be renewed or revoked. This is described later in this article.
+Users can later view the credentials using the View action. In addition, as described later in the article, users can modify the credentials for the same technical account by creating a new private key or certificate, for cases when the certificate needs to be renewed or revoked.
 
 Users with the AEM as a Cloud Service Environment Administrator role can later create new credentials for additional technical accounts. This is useful when different APIs have differing access requirements. For example, read vs read-write.
 
@@ -55,7 +55,7 @@ Users with the AEM as a Cloud Service Environment Administrator role can later c
 
 ### Install the AEM Service Credentials on a Non AEM Server {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-The non-AEM application making calls to AEM should be able to access the AEM as a Cloud Service credentials, treating it as a secret.
+The application making calls to AEM should be able to access the AEM as a Cloud Service credentials, treating it as a secret.
 
 ### Generate a JWT Token and Exchange It for an Access Token {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
@@ -120,9 +120,9 @@ First, a new product profile needs to be created in the Adobe Admin Console. You
 
    ![Add Tech Account](/help/implementing/developing/introduction/assets/s2s-addtechaccount.png)
 
-1. Wait 10 minutes for the changes to take effect and make an API call to AEM with an access token generated from the new credential. It would be represented like this as a cURL command:
+1. Wait 10 minutes for the changes to take effect and make an API call to AEM with an access token generated from the new credential. As a cURL command, it would be represented similar to this example:
 
-   `curl -H "Authorization: Bearer <access_token>" https://author-pXXXXX-eXXXXX-cmstg.adobeaemcloud.net/content/dam.json `
+   `curl -H "Authorization: Bearer <access_token>" https://author-pXXXXX-eXXXXX.adobeaemcloud.net/content/dam.json `
 
 
 After making the API call, the product profile will appear as a user group in the AEM as a Cloud Service author instance, with the appropriate technical account as a member of that group.
@@ -150,7 +150,7 @@ Alternatively, you can also verify that the technical account appears in the use
 
 >[!NOTE]
 >
->Before January 26th 2023, customers were not guided to create product profiles in the Adobe Admin console and thus the technical accounts were not associated with a group other than "Contributors" in the AEM as a Cloud Service instance. For the sake of consistency, it is recommended that for those technical accounts, you create new product profiles in the Adobe Admin Console as described above, and add the existing technical accounts to that group.
+>Before mid-2023, before it was possible to create multiple credentials, customers were not guided to create a product profile in the Adobe Admin console and thus the technical account was not associated with a group other than "Contributors" in the AEM as a Cloud Service instance. For the sake of consistency, it is recommended that for this technical account, you create a new product profile in the Adobe Admin Console as described above, and add the existing technical account to that group.
 
 <u>**Set the Appropiate Group Permissions**</u>
 
@@ -211,13 +211,13 @@ To achieve this, you can:
 
   ![Credential Refresh](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
-* After pressing the button, a new set of credentials will be generated. Install the new credentials on your off-AEM server and ensure that connectivity is as expected, without removing the old credentials  
-* Make sure the new credentials are invoked instead of the old ones when generating the access token
+* After pressing the button, a set of credentials that includes a new certificate will be generated. Install the new credentials on your off-AEM server and ensure that connectivity is as expected, without removing the old credentials  
+* Make sure the new credentials are used instead of the old ones when generating the access token
 * Optionally revoke (and then delete) the prior certificate so it can no longer be used to authenticate with AEM as a Cloud Service.
 
 ## Credentials Revocation {#credentials-revocation}
 
-If the private key is compromised, you need to create a new certificate with a new private key. After configuring it to generate access tokens, you can revoke and delete the old certificates.
+If the private key is compromised, you need to create credentials with a new certificate and new private key. After your application uses the new credentials to generate access tokens, you can revoke and delete the old certificates.
 
 You can do this by following these steps:
 
@@ -233,7 +233,7 @@ You can do this by following these steps:
 
    ![Private keys in the UI](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 
-1. Install the new credentials on off-AEM server and ensure connectivity works as expected. See the [Server to Server Flow section](#the-server-to-server-flow) for details on how to do this
+1. Install the new credentials on the non-AEM server and ensure connectivity works as expected. See the [Server to Server Flow section](#the-server-to-server-flow) for details on how to do this
 1. Revoke the old certificate. You can do this by selecting the three dots (**...**) to the right of the certificate and pressing **Revoke**:
 
    ![Revoke certificate](/help/implementing/developing/introduction/assets/s2s-revokecert.png)
