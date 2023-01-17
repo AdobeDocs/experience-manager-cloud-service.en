@@ -18,13 +18,12 @@ Learn how to use [the Content Fragment models you created previously](content-st
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Launch the Content Fragment console"
->abstract="Creating consistent, high-quality content that works seamlessly across your apps and websites leads to great customer experiences. This module guides you through creating your first Content Fragment to illustrate how to make this happen.<br><br>Launch this module in a new tab by clicking the button below, then follow this guide.
->additional-url="https://video.tv.adobe.com/v/328618" text="Creat new content intro video"
+>abstract="Creating consistent, high-quality content that works seamlessly across your apps and websites leads to great customer experiences. This module guides you through creating your first Content Fragment to illustrate how to make this happen.<br><br>Launch this module in a new tab by clicking the button below, then follow this guide."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Create new content intro video"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
 >title="Launch the Content Fragment console"
->abstract="Great job! In this module, you learned how to author a Content Fragment based on the model you made previously. You now understand how content teams can create and manage content for apps and websites independent of development cycles."
 
 ## Create a Content Fragment {#create-fragment}
 
