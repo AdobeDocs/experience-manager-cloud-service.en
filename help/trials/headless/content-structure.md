@@ -26,7 +26,6 @@ To help you understand how this is done, this module of AEM Trials takes you thr
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
 >title="Launch the model console"
->abstract="Congratulations! By creating a Content Fragment model, you took the first step to delivering omni-channel content in a scaled and standard way."
 
 ## Create a Model {#create-model}
 

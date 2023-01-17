@@ -21,12 +21,11 @@ GraphQL provides a query-based API allowing external client applications to quer
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
 >title="Launch the GraphQL Explorer"
 >abstract="GraphQL provides a query-based API allowing external client applications to query AEM for only the content it needs, using a single API call. Follow this module to learn how to run two different types of queries. Then you will learn how to retrieve the content from the Content Fragment you created in a previous module.<br><br>Launch this module in a new tab by clicking below."
->additional-url="https://video.tv.adobe.com/v/328618" text="Placeholder for the intro video"
+>additional-url="https://video.tv.adobe.com/v/328618" text="Extract content intro video"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
 >title="Launch the GraphQL Explorer"
->abstract="Great job! You've authored a Content Fragment and now understand how content teams can create and manage content for apps and websites independent of development cycles."
 
 ## Query for a List of Sample Content {#list-query}
 
