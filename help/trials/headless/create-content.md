@@ -24,7 +24,7 @@ Learn how to use [the Content Fragment models you created previously](content-st
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
 >title="Launch the Content Fragment console"
->abstract="Great job! You've authored a Content Fragment and now understand how content teams can create and manage content for apps and websites independent of development cycles."
+>abstract="Great job! In this module, you learned how to author a Content Fragment based on the model you made previously. You now understand how content teams can create and manage content for apps and websites independent of development cycles."
 
 ## Create a Content Fragment {#create-fragment}
 
