@@ -21,12 +21,11 @@ The app itself is based on the structure of Content Fragments. Using the Content
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Launch the Content Fragment editor"
 >abstract="Your AEM headless trial comes integrated with a sample React app, so you can see ho easy it is for anyone to independently manage content without development time.<br><br>Launch this module in a new tab by clicking below, then follow this guide."
->additional-url="https://video.tv.adobe.com/v/328618" text="Placeholder for the intro video"
+>additional-url="https://video.tv.adobe.com/v/328618" text="Customize app intro video"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
 >title="Launch the Content Fragment editor"
->abstract="Now you understand how easy managing headless content is for websites and apps that are powered by AEM's headless capabilities."
 
 ## Preview the App {#preview}
 
