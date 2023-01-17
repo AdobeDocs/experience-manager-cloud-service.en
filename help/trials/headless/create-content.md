@@ -7,18 +7,25 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 ---
 # Create Headless Content {#create-content}
 
-By following the in-product learning module, learn how to use [the Content Fragment models you created previously](content-structure.md) to create content which can be used for page authoring, or as the basis for your headless content. This document serves as a supplement of the interactive tour, covering the same steps and linking to additional resources where appropriate.
+Learn how to use [the Content Fragment models you created previously](content-structure.md) to create content which can be used for page authoring, or as the basis for your headless content.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Create new content"
->abstract="Building on the models you created in module 1, you'll learn how to create content which can be used for page authoring, or as the basis of your headless content."
+>abstract="Using the models you created in the previous module, you'll learn how to create content which can be used for page authoring, or as the basis of your headless content."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Launch the Content Fragment console"
->abstract="In AEM headless CMS, “content fragments” are all pieces of content that fit into the predefined structure called a “content fragment model”. In this walkthrough, you will learn how to create content for your content fragment model.<br><br>Click below to launch the feature in a new tab, and follow this learning document to create your first content fragment."
->additional-url="https://video.tv.adobe.com/v/328618" text="Placeholder for the intro video"
+>abstract="Creating consistent, high-quality content that works seamlessly across your apps and websites leads to great customer experiences. This module guides you through creating your first Content Fragment to illustrate how to make this happen.
+>
+>
+>additional-url="https://video.tv.adobe.com/v/328618" text="Creat new content intro video"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
+>title="Launch the Content Fragment console"
+>abstract="Great job! You've authored a Content Fragment and now understand how content teams can create and manage content for apps and websites independent of development cycles."
 
 ## Content Fragments {#introduction}
 
