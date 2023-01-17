@@ -520,6 +520,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Use CAPTCHA in an Adaptive Form](/help/forms/captcha-adaptive-forms.md)
       + [Use Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
       +  [Apply Scribble Signature](/help/forms/signing-forms-using-scribble.md)
+      + [Add a table to an adaptive form](/help/forms/adaptive-forms-tables.md)
     + Configure layout and apply style to an Adaptive Form{#configure-layout-of-an-adaptive-form}
       + [Set layout of an Adaptive Form](/help/forms/layout-capabilities-adaptive-forms.md)
       + [Use Layout mode to resize components](/help/forms/resize-using-layout-mode.md)
