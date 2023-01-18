@@ -8,10 +8,6 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 
 # Create the Content Structure for Your App {#content-structure}
 
-Content Fragments allow you to design, create, curate, and publish page-independent content. Using them you can  prepare content that is ready for use in multiple locations and over multiple channels, ideal for headless delivery. Content Fragment models are used to define the structure of this content and are the first thing you need to create in order to manage your headless content.
-
-To help you understand how this is done, this module of AEM Trials takes you through the process with a quick, interactive tour first creating the model and then adding its structure.
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Create the content structure for your app"
@@ -70,7 +66,3 @@ Before you can use the model, you need to define the structure of its data. Clic
 The model is saved and you return to the Content Fragment model Console where you can add more models are necessary.
 
 ![Module complete](assets/content-structure/content-fragment-model-console-populated.png)
-
-## You've Learned to Create a Content Fragment Model. {#conclusion}
-
-Congratulations! You learned how to create a Content Fragment model to represent the structure of your headless data and took the first step to delivering omni-channel content in a scaled and standard way.
