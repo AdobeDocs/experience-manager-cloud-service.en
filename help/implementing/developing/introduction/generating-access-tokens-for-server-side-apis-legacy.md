@@ -1,5 +1,5 @@
 ---
-title: Generating Access Tokens for Server Side APIs
+title: Generating Access Tokens for Server Side APIs (Legacy)
 description: Learn how to facilitate communication between a third party server and AEM as a Cloud Service by generating a secure JWT Token
 hidefromtoc: yes
 ---
