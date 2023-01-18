@@ -8,10 +8,6 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 
 # Extract Content via the GraphQL API {#extract-content}
 
-So far in AEM Trials for headless, you have [created your own Content Fragment models](content-structure.md) as well created your own headless content as [Content Fragments.](create-content.md) Now you can learn how to use Content Fragments and the GraphQL API as a headless content management system to deliver your content.
-
-GraphQL provides a query-based API allowing external client applications to query AEM for only the content it needs using a single API call. 
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql"
 >title="Extract content using the GraphQL API"
@@ -149,7 +145,3 @@ Now that you have run the two primary types of queries, you are ready to query y
 1. The results are displayed in the right panel, next to the query editor.
 
 This is how your content can be delivered to omnichannel digital experiences
-
-## You've learned how to query content! {#conclusion}
-
-Nice work! You've learned about the two basic types of queries and how to query your own content. You now understand how to use the AEM GraphQL API to create efficient queries that deliver content in a format that you app expects.

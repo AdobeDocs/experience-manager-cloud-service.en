@@ -8,8 +8,6 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 
 # Create Headless Content {#create-content}
 
-Learn how to use [the Content Fragment models you created previously](content-structure.md) to create content which can be used for page authoring, or as the basis for your headless content.
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Create new content"
@@ -69,7 +67,3 @@ Once you save and open your new Content Fragment, the Content Fragment editor op
    ![Confirmation of publication](assets/create-content/publish-confirm.png)
 
 Your content is published and ready to be delivered to your app or website as a Content Fragment.
-
-## You've learned how to create a Content Fragment! {#conclusion}
-
-Great job! In this module, you learned how to author a Content Fragment based on the model you made previously. You now understand how content teams can create and manage content for apps and websites independent of development cycles.

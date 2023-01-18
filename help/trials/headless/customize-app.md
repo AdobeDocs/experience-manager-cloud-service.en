@@ -8,10 +8,6 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 
 # Customize Content in a Sample React App {#customize-app}
 
-AEM Trials for headless comes preloaded with a simple React app to showcase headless content. In this module, you will learn how to preview that app and modify its content by swapping an image and creating a shoppable moment for it.
-
-The app itself is based on the structure of Content Fragments. Using the Content Fragment editor in AEM, you can modify your apps content. To help you understand how this is done, this module of your AEM headless trial takes you through the process with a quick, interactive tour.
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app"
 >title="Customize content in a sample React app"
@@ -147,12 +143,3 @@ Now that you updated the image of the biker, let's walk through how to add new c
    ![Preview your new shoppable moment](assets/customize-app/preview-demo-app-shoppable.png)
 
 Now you understand how creating new content and referencing it as a Content Fragment in your app can be completed without any development cycles.
-
-## You’ve learned to customize a sample React app! {#conclusion}
-
-In this module, you learned how to customize a sample React app.
-
-Time to market: Accelerated!
-Development cycles: Reduced!
-
-Now you understand how easy managing headless content is for websites and apps that are powered by AEM's headless capabilities.
