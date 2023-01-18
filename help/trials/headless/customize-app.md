@@ -104,7 +104,7 @@ It's that easy to update images and assets in your apps with AEM headless CMS.
 
 ## Add a reference to a new Content Fragment in the app {#create-moment}
 
-Now that you updated the image of the biker, let's walk through how to add new content to an app by creating and reference a new Content Fragment. We'll add a product call-out managed by a "shoppable moment" Content Fragment to the second panel of the app.
+Now that you updated the image of the biker, let's walk through how to add new content to an app by creating and reference a new Content Fragment. You will add a product call-out managed by a "shoppable moment" Content Fragment to the second panel of the app.
 
 ![Example of a shoppable moment](assets/customize-app/example-shoppable-moment.png)
 

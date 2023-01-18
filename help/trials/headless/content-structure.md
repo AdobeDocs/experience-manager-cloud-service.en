@@ -11,7 +11,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Create the content structure for your app"
->abstract="As you follow our series of interactive guides you'll learn to create a structure (known as the Content Fragment model) which serves as the foundation for your headless content."
+>abstract="As you follow this series of interactive guides you learn to create a structure (known as the Content Fragment model) which serves as the foundation for your headless content."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
