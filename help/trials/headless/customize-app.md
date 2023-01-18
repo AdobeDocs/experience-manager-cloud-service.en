@@ -48,7 +48,7 @@ The Content Fragment editor displays the basic layout of the app as a page Conte
 
    ![Tap Mtn Biker in Canyon fragment](assets/customize-app/mtn-biker-in-canyon.png)
 
-1. The editor opens up the header panel of the app for the mountain biker. Each panel is made up of layers, representing different images and text that compose the experience..
+1. The editor opens up the header panel of the app for the mountain biker. Each panel is made up of layers, representing different images and text that compose the experience.
 
    ![Panels](assets/customize-app/panels.png)
 
@@ -84,7 +84,7 @@ Now that you modified a headline in the app, try changing an image.
 
    ![Image removed from fragment](assets/customize-app/mtn-biking-biker-no-image.png)
 
-1. Tap or click **Add asset** and locate the yellow biker image in **sample-wknd-app** &gt; **en** &gt; **image-files** &gt; **biker-yellow.png**. Select the image and then tap or click **Select**.
+1. Tap or click **Add asset** the path **sample-wknd-app** &gt; **en** &gt; **image-files** is automatically selected for you in the **Select Assets** dialog. Select the image `biker-yellow.png` and then tap or click **Select**.
 
    ![Select asset](assets/customize-app/select-asset.png)
 
@@ -120,8 +120,6 @@ Now that you updated the image of the biker, let's walk through how to add new c
 
 1. You must first choose a model on which to base the new Content Fragment. Select the **Shoppable Moment Item** model from the **Content Fragment model** drop-down.
 
-   ![Choose the Content Fragment model](assets/customize-app/new-content-fragment.png)
-
 1. Give the Content Fragment a name. For example, enter `Shorts` into the **Name** field.
 
    ![Name the shoppable moment](assets/customize-app/new-content-fragment.png)
@@ -139,7 +137,5 @@ Now that you updated the image of the biker, let's walk through how to add new c
    ![Edit the shoppable moment](assets/customize-app/edit-shoppable-moment.png)
 
 1. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab. Click refresh on the browser to test the positioning and make adjustments as needed.
-
-   ![Preview your new shoppable moment](assets/customize-app/preview-demo-app-shoppable.png)
 
 Now you understand how creating new content and referencing it as a Content Fragment in your app can be completed without any development cycles.
