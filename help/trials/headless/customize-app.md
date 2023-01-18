@@ -16,7 +16,7 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Launch the Content Fragment editor"
->abstract="Your AEM headless trial comes integrated with a sample React app, so you can see ho easy it is for anyone to independently manage content without development time.<br><br>Launch this module in a new tab by clicking below, then follow this guide."
+>abstract="Your AEM headless trial comes integrated with a sample React app, so you can see how easy it is for anyone to independently manage content without development time.<br><br>Launch this module in a new tab by clicking below, then follow this guide."
 >additional-url="https://video.tv.adobe.com/v/328618" text="Customize app intro video"
 
 >[!CONTEXTUALHELP]
@@ -30,15 +30,15 @@ Clicking the **Launch the Content Fragment editor** button above opens the Conte
 
 ![Content Fragment editor](assets/customize-app/content-fragment-editor.png)
 
-You begin in the Content Fragment editor for the sample app provided with your AEM headless trial. It is powered by Content Fragments delivered via GraphQL. First, get familiar with the content you will be editing by previewing the sample.
+The sample app provided with your AEM headless trial is powered by Content Fragments delivered via GraphQL. Use the Content Fragment editor to get familiar with the content by previewing the sample.
 
 1. Tap or click the **Preview** button at the top-right of the editor screen.
 
 1. The demo app opens in a new tab. The app is for the fictional WKND outdoor lifestyle brand. Click around to navigate the sample content.
 
-![Demo app preview](assets/customize-app/preview-demo-app.png)
+   ![Demo app preview](assets/customize-app/preview-demo-app.png)
 
-1. Return to the tab of the Content Fragment editor to continue.
+1. Return to the browser tab of the Content Fragment editor to continue.
 
 ## Edit a header in the App {#edit-app}
 
@@ -72,7 +72,9 @@ That's how easy it is to update content within a React app when integrated into 
 
 Now that you modified a headline in the app, try changing an image.
 
-1. First, you will need to return to the correct place in the Content Fragment editor. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Tap or Click **Mtn Biker in Canyon** in the breadcrumbs to return to that page.
+1. Return to the browser tab of the Content Fragment editor.
+
+1. You need to return to the correct place in the Content Fragment editor. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Tap or Click **Mtn Biker in Canyon** in the breadcrumbs to return to that page.
 
    ![Breadcrumbs](assets/customize-app/breadcrumbs.png)
 
@@ -84,7 +86,11 @@ Now that you modified a headline in the app, try changing an image.
 
    ![Image removed from fragment](assets/customize-app/mtn-biking-biker-no-image.png)
 
-1. Tap or click **Add asset** the path **sample-wknd-app** &gt; **en** &gt; **image-files** is automatically selected for you in the **Select Assets** dialog. Select the image `biker-yellow.png` and then tap or click **Select**.
+1. Tap or click **Add asset**.
+
+1. The **Select Asset** dialog opens and the path **sample-wknd-app** &gt; **en** &gt; **image-files** is automatically selected for you.
+
+1. Select the image `biker-yellow.png` and then tap or click **Select**.
 
    ![Select asset](assets/customize-app/select-asset.png)
 
@@ -102,7 +108,9 @@ Now that you updated the image of the biker, let's walk through how to add new c
 
 ![Example of a shoppable moment](assets/customize-app/example-shoppable-moment.png)
 
-1. Start by returning to the Content Fragment editor. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Tap or click **WKND Home** in the breadcrumbs to return to that page.
+1. Return to the browser tab of the Content Fragment editor.
+
+1. You need to return to the correct place in the Content Fragment editor. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Tap or click **WKND Home** in the breadcrumbs to return to that page.
 
    ![Navigate back to the layout screen](assets/customize-app/breadcrumbs-2.png)
 
@@ -136,6 +144,6 @@ Now that you updated the image of the biker, let's walk through how to add new c
 
    ![Edit the shoppable moment](assets/customize-app/edit-shoppable-moment.png)
 
-1. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab. Click refresh on the browser to test the positioning and make adjustments as needed.
+1. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab. Click refresh on the browser to test the positioning and make adjustments as needed in the editor.
 
 Now you understand how creating new content and referencing it as a Content Fragment in your app can be completed without any development cycles.

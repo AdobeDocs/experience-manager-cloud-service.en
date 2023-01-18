@@ -11,12 +11,12 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql"
 >title="Extract content using the GraphQL API"
->abstract="In this module you'll learn how you can use Content Fragments and the GraphQL API as a Headless Content Management System."
+>abstract="In this module you'll learn how you can use Content Fragments and the GraphQL API as a headless content management system."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
 >title="Launch the GraphQL Explorer"
->abstract="GraphQL provides a query-based API allowing external client applications to query AEM for only the content it needs, using a single API call. Follow this module to learn how to run two different types of queries. Then you will learn how to retrieve the content from the Content Fragment you created in a previous module.<br><br>Launch this module in a new tab by clicking below."
+>abstract="GraphQL provides a query-based API allowing external client applications to query AEM for only the content it needs, using a single API call. Follow this module to learn how to run two different types of queries. Then you will learn how to retrieve the content from the Content Fragment you created in the previous module.<br><br>Launch this module in a new tab by clicking below."
 >additional-url="https://video.tv.adobe.com/v/328618" text="Extract content intro video"
 
 >[!CONTEXTUALHELP]
@@ -30,9 +30,9 @@ Clicking the **Launch the GraphQL Explorer** button above opens the GraphQL Expl
 
 ![The GraphQL Query Editor](assets/extract-content/query-editor.png)
 
-Using the GraphQL Explorer you can build and validate queries against your headless content before using them to power the content in your app or website.
+Using the GraphQL Explorer you can build and validate queries against your headless content before using them to power the content in your app or website. Let's see how that's done!
 
-1. AEM Trials come with an endpoint preloaded with Content Fragments from which you can extract content for testing purposes. Select the **AEM Demo Assets** endpoint from the **Endpoint** drop-down menu at the top-right corner of the editor.
+1. Your AEM headless trial comes with an endpoint preloaded with Content Fragments from which you can extract content for testing purposes. Select the **AEM Demo Assets** endpoint from the **Endpoint** drop-down menu at the top-right corner of the editor.
 
    ![Select endpoint](assets/extract-content/select-endpoint.png)
 
@@ -59,7 +59,7 @@ Using the GraphQL Explorer you can build and validate queries against your headl
     }
    ```
 
-1. Then replace the existing content in the query editor by pasting the copied code.
+1. Replace the existing content in the query editor by pasting the copied code.
 
     ![List query](assets/extract-content/list-query.png)
 
@@ -73,7 +73,7 @@ You've just validated a list query for a full list of all Content Fragments. Thi
 
 ## Query for a Specific Piece of Sample Content {#bypath-query}
 
-Running a byPath query allows you to retrieve content for a specific Content Fragment. Product detail pages and pages that focus on a specific set of content typically require this type of query.
+Running a byPath query allows you to retrieve content for a specific Content Fragment. Product detail pages and pages that focus on a specific set of content typically require this type of query. Let's see how it works!
 
 1. Copy the following code snippet for a byPath query of the preloaded **AEM Demo Assets** endpoint.
 
@@ -100,7 +100,7 @@ Running a byPath query allows you to retrieve content for a specific Content Fra
    }
    ```
 
-1. Then replace the existing content in the query editor by pasting the copied code.
+1. Replace the existing content in the query editor by pasting the copied code.
 
    ![byPath query](assets/extract-content/bypath-query.png)
 
@@ -114,7 +114,7 @@ You've just validated a byPath query to retrieve a specific Content Fragment ide
 
 ## Query Your Own Content {#own-queries}
 
-Now that you have run the two primary types of queries, you are ready to query your own content.
+Now that you have run the two primary types of queries, you are ready to query your own content!
 
 1. To run queries against your own Content Fragments, change the endpoint from the **AEM Demo Assets** folder to the **Your Project** folder.
 
@@ -128,7 +128,7 @@ Now that you have run the two primary types of queries, you are ready to query y
 
    ![Auto complete items in query editor](assets/extract-content/auto-complete-items.png)
 
-1. Define the fields that the query should contain for the content fragment model you selected. Again, type open bracket `{`, then press Ctrl+Space or Option+Space for an auto-complete list of available fields in the Content Fragment model. Select fields that you wish from your model from the list.
+1. Define the fields that the query should contain for the content fragment model you selected. Once more, type open bracket `{`, then press Ctrl+Space or Option+Space for an auto-complete list of available fields in the Content Fragment model. Select fields that you wish from your model from the list.
 
    ![Auto complete fields in query editor](assets/extract-content/auto-complete-fields.png)
 
@@ -144,4 +144,4 @@ Now that you have run the two primary types of queries, you are ready to query y
 
 1. The results are displayed in the right panel, next to the query editor.
 
-This is how your content can be delivered to omnichannel digital experiences
+This is how your content can be delivered to omnichannel digital experiences.
