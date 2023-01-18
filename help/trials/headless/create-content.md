@@ -11,7 +11,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Create new content"
->abstract="Using the model you created in the previous module, you'll learn how to create content which can be used for page authoring, or as the basis of your headless content."
+>abstract="Using the model that you created in the previous module, you'll learn how to create content which can be used for page authoring, or as the basis of your headless content."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
@@ -30,11 +30,11 @@ Clicking the **Launch the Content Fragment console** button above opens the Cont
 
 ![Editing the content of your fragment](assets/create-content/content-fragment-console.png)
 
-Content Fragments represent your headless content and are based on predefined structures, called Content Fragment models. Think of the the Content Fragment console as your library of headless content. Use it to create new Content Fragments and manage existing ones. Your console starts empty, so let's create a new fragment!
+Content Fragments represent your headless content and are based on predefined structures, called Content Fragment models. Think of the Content Fragment console as your library of headless content. Use it to create new Content Fragments and manage existing ones. Your console starts empty, so let's create a new fragment!
 
 1. Tap or click the **Create** button at the top-right of the console.
 
-1. The **New Content Fragment** dialog opens where you can  start creating a new Content Fragment. **Location** will be automatically populated with where the new content will be saved.
+1. The **New Content Fragment** dialog opens where you can  start creating a new Content Fragment. **Location** is automatically populated with where the new content will be saved.
 
    ![Create Content Fragment dialog](assets/create-content/create-content-fragment.png)
 

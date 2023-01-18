@@ -11,12 +11,12 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql"
 >title="Extract content using the GraphQL API"
->abstract="In this module you'll learn how you can use Content Fragments and the GraphQL API as a headless content management system."
+>abstract="In this module you learn how you can use Content Fragments and the GraphQL API as a headless content management system."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
 >title="Launch the GraphQL Explorer"
->abstract="GraphQL provides a query-based API allowing external client applications to query AEM for only the content it needs, using a single API call. Follow this module to learn how to run two different types of queries. Then you will learn how to retrieve the content from the Content Fragment you created in the previous module.<br><br>Launch this module in a new tab by clicking below."
+>abstract="GraphQL provides a query-based API allowing external client applications to query AEM for only the content it needs, using a single API call. Follow this module to learn how to run two different types of queries. Then learn how to retrieve the content from the Content Fragment you created in the previous module.<br><br>Launch this module in a new tab by clicking below."
 >additional-url="https://video.tv.adobe.com/v/328618" text="Extract content intro video"
 
 >[!CONTEXTUALHELP]
