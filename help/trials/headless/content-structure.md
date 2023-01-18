@@ -19,13 +19,14 @@ To help you understand how this is done, this module of AEM Trials takes you thr
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
->title="Launch the model editor"
->abstract="Let's explore how to create a reusable schema, called a Content Fragment model, for your content in Adobe Experience Manager as a Cloud Service. What the video to understand why this is an important step. Launch this module in a new tab by clicking the button below and then follow this guide."
+>title="Launch the model console"
+>abstract="Let's explore how to create a reusable schema, called a Content Fragment model, for your content in Adobe Experience Manager as a Cloud Service. What the video to understand why this is an important step. <br><br>Launch this module in a new tab by clicking the button below and then follow this guide."
 >additional-url="https://video.tv.adobe.com/v/3413261" text="Content structure intro video"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
->title="Launch the model console"
+>title="Congratulations! You learned how to create a Content Fragment model to represent the structure of your headless data and took the first step to delivering omni-channel content in a scaled and standard way."
+>abstract=""
 
 ## Create a Model {#create-model}
 

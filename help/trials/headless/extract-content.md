@@ -25,7 +25,8 @@ GraphQL provides a query-based API allowing external client applications to quer
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
->title="Launch the GraphQL Explorer"
+>title="Nice work! You've learned about the two basic types of queries and how to query your own content. You now understand how to use the AEM GraphQL API to create efficient queries that deliver content in a format that you app expects."
+>abstract=""
 
 ## Query for a List of Sample Content {#list-query}
 

@@ -25,7 +25,8 @@ The app itself is based on the structure of Content Fragments. Using the Content
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
->title="Launch the Content Fragment editor"
+>title="In this module, you learned how to customize a sample React app.<br><br>Time to market: Accelerated!<br>Development cycles: Reduced!<br><br>Now you understand how easy managing headless content is for websites and apps that are powered by AEM's headless capabilities."
+>abstract=""
 
 ## Preview the App {#preview}
 
