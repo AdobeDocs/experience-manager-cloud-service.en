@@ -19,6 +19,16 @@ The release date for Cloud Manager release 2023.1.0 in AEM as a Cloud Service is
 
 ## What's New {#what-is-new}
 
+* Enhancements were made to usability by updating cursor styles that distinguish between user action versus the default pointer.
+
+* The Custom UI Test Reports are now copied to Cloud Manager storage and can be accessed via Cloud Manager API call.
+
+* Users can now transition between go-live widget states using left-right arrows.
+
+  ![Go-live widget transitions](assets/go-live-transitions.gif)
+
+* Self-service [creation of HIPAA-enabled programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) is now possible when corresponding entitlements and permissions are available.
 
 ## Bug Fixes {#bug-fixes}
 
+* Cloud Manager will prevent two pipeline executions from starting at (or nearly at) the same time, thus avoiding pipeline failures.
