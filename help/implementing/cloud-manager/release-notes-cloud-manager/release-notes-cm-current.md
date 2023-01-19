@@ -1,13 +1,13 @@
 ---
-title: Release Notes for Cloud Manager 2022.12.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2022.12.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2023.1.0 in Adobe Experience Manager as a Cloud Service
+description: These are the release notes for Cloud Manager 2024.1.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 ---
 
-# Release Notes for Cloud Manager 2022.12.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release Notes for Cloud Manager 2023.1.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager 2022.12.0 in AEM as a Cloud Service.
+This page documents the release notes for Cloud Manager release 2023.1.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -15,15 +15,20 @@ This page documents the release notes for Cloud Manager 2022.12.0 in AEM as a Cl
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2022.12.0 in AEM as a Cloud Service is 29 November 2022. The next release is planned for 19 January 2023.
+The release date for Cloud Manager release 2023.1.0 in AEM as a Cloud Service is 19 January 2023. The next release is planned for 16 February 2023.
 
 ## What's New {#what-is-new}
 
-* Notifications for [AEM maintenance updates](/help/overview/what-is-new-and-different.md#aem-updates) will be surfaced in the Cloud Manager UI. This change will be rolled out in a phased manner in the weeks after the 2022.12.0 release.
-* When an ingestion via the [Content Transfer Tool (CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) is in progress, the environment status in both the developer console and in Cloud Manager will display as `Ingestion in Progress`.
-* Improvements to the availability and reliability of [Cloud Manager pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) were made.
+* Usability enhancements were by updating cursor styles that distinguish between where users can take action versus the default pointer.
+
+* The Custom UI Test Reports are now copied to Cloud Manager storage and can be accessed via Cloud Manager API call.
+
+* Users can now transition between go-live widget states using left-right arrows.
+
+  ![Go-live widget transitions](assets/go-live-transitions.gif)
+
+* Self-service [creation of HIPAA-enabled programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) is now possible when corresponding entitlements and permissions are available.
 
 ## Bug Fixes {#bug-fixes}
 
-* A change was made to prevent [front-end pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) from running while a pipeline execution is in progress on the same environment.
-* A change was made to prevent a `PATCH /program//environment//variables` request for environments with the `FAILED` status.
+* Cloud Manager will prevent two pipeline executions from starting at (or nearly at) the same time, thus avoiding pipeline failures.
