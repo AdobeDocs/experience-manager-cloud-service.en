@@ -93,6 +93,8 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 ### What is New {#what-is-new-foundation}
 
+* Rapid Development Environments - Increase your team's development productivity through quicker cloud validation and debugging sessions! RDEs are new types of Cloud Environments intended for swiftly validating that code working locally also behaves as expected in the Cloud. Using Command Line Tools, developers quickly "sync" content packages, bundles, content files, OSGI configuration, or dispatcher configuration to the RDE. After successfully validating code in the RDE, customers are encouraged to deploy to a Cloud Dev Environment to exercise the Cloud Manager quality gates, before deploying via production pipeline to stage and production environments. Each program includes one RDE and optionally, more can be licensed.
+
 * Extended support for server-side API access tokens – You can now generate multiple credentials, which is useful for scenarios where APIs have different characteristics. It is also now possible to revoke credentials in a self-service manner.
 
 ## Cloud Manager {#cloud-manager}
