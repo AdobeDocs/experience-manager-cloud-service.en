@@ -15,7 +15,7 @@ The capability provides APIs to generate and manipulate the documents. You can g
 
 * HTTP APIs for easier integration with external systems. Separate APIs for on demand (low-latency) and batch operations (high-throughput operations) are included.
 
-* a secure access to data. Communications APIs connect to and access data only from customer designated data repositories, making Communications highly secure.
+* a secure access to data. Communications APIs connect to and access data only from customer-designated data repositories, making Communications highly secure.
 
 ![A sample credit card statement](assets/statement.png)
 A credit card statement can be created using Communications APIs. This sample statement uses same template but separate data for each customer depending on their usage of credit card.
@@ -120,13 +120,39 @@ Figure: Dividing a source document based on bookmarks into multiple documents
 
 You can use the document manipulation APIs to convert a PDF document to a PDF/A-compliant document and to determine whether a PDF document is PDF/A-compliant. PDF/A is an archival format meant for long-term preservation of the document’s content. The fonts are embedded within the document, and the file is uncompressed. As a result, a PDF/A document is typically larger than a standard PDF document. Also, a PDF/A document does not contain audio and video content.
 
+<!-- 
+
+## Document utilities
+
+Document utilities synchronous APIs helps you convert documents between PDF and XDP file formats, and query information about a PDF document. For example, you can determine whether a PDF document contains comments or attachments. 
+
+### Retrieve PDF document properties
+
+You can [query a PDF document](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) for the following information:
+
+* Is a PDF Document: Check whether the source document is a PDF document.
+* Is a fillable form: Check whether the source PDF document is a fillable form.
+* Form Type: Retrieve the form type of the document.
+* Check for Attachments: Check whether the source PDF document has any attachments.
+* Check for Comments: Check whether the source PDF document has any review comments.
+* Is a PDF Package: Check whether the document is a PDF package.
+* Get the PDF Version: Retrieve the [version of the PDF document](https://en.wikipedia.org/wiki/History_of_PDF).
+* Recommended Acrobat Version: Retrieve the required version of Acrobat (Reader) to open the PDF document.
+* Is an XFA Document: Check whether the source PDF document is an XFA-based PDF document.
+* Is Shell PDF: Check whether the source PDF document is shell PDF. A shell PDF contains only an XFA stream, font and image resources, and one page that is either blank or contains a warning that the document must be opened using Acrobat or Adobe Reader. The shell PDF is used with PDF transformation to optimize delivery of PDFForm transformations only.
+* Get the XFA Version: Retrieve the [XFA Version for an XFA-based PDF document](https://en.wikipedia.org/wiki/XFA#XFA_versions).
+
+### Convert PDF Documents into XDP Documents
+
+The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
+
 ## Types of communications APIs
 
 Communications provide HTTP APIs for on-demand and batch document generation:
 
-* **[Synchronous APIs](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** are suitable for on-demand, low latency, and single record document generation scenarios. These APIs are more suitable for user-action based use cases. For example, generating a document after a user completes filling a form.
+* **[Synchronous APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** are suitable for on-demand, low latency, and single record document generation scenarios. These APIs are more suitable for user-action based use cases. For example, generating a document after a user completes filling a form.
 
-* **[Batch APIs (Asynchronous APIs)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** are suitable for scheduled, high throughput, and multiple document generation scenarios. These APIs generate documents in batches. For example, phone bills, credit card statements, and benefits statements generated every month.
+* **[Batch APIs (Asynchronous APIs)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** are suitable for scheduled, high throughput, and multiple document generation scenarios. These APIs generate documents in batches. For example, phone bills, credit card statements, and benefits statements generated every month.
 
 ## Onboarding
 
