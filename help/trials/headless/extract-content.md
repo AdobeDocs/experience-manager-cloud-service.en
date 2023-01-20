@@ -55,13 +55,11 @@ You start on the GraphQL Explorer in a new tab. Here you can build and validate 
 
 3. Replace the existing content in the query editor by pasting the copied code.
 
-    ![List query](assets/extract-content/list-query-1-3-4-5.png)
-
 4. Once pasted, click the **Play** button at the top left of the query editor to execute the query.
 
 5. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
 
-![List query results](assets/extract-content/list-query-results.png)
+   ![List query](assets/extract-content/list-query-1-3-4-5.png)
 
 You've just validated a list query for a full list of all Content Fragments. This process helps to ensure that the response is what your app expects, with results that illustrate how your apps and websites will retrieve the content created in AEM. 
 
