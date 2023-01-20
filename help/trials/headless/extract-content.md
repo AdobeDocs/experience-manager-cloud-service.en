@@ -30,7 +30,7 @@ You start on the GraphQL Explorer in a new tab. Here you can build and validate 
 
 1. Your AEM headless trial comes with an endpoint preloaded with Content Fragments from which you can extract content for testing purposes. Make sure that the **AEM Demo Assets** endpoint is selected in the **Endpoint** drop-down menu at the top-right corner of the editor.
 
-2. Copy the following code snippet for a list query of the preloaded **AEM Demo Assets** endpoint. A list query returns a list of all content that uses a specific Content Fragment model. Inventory and category pages typically use this query format.
+1. Copy the following code snippet for a list query of the preloaded **AEM Demo Assets** endpoint. A list query returns a list of all content that uses a specific Content Fragment model. Inventory and category pages typically use this query format.
 
    ```text
    {
@@ -53,11 +53,11 @@ You start on the GraphQL Explorer in a new tab. Here you can build and validate 
     }
    ```
 
-3. Replace the existing content in the query editor by pasting the copied code.
+1. Replace the existing content in the query editor by pasting the copied code.
 
-4. Once pasted, click the **Play** button at the top left of the query editor to execute the query.
+1. Once pasted, click the **Play** button at the top left of the query editor to execute the query.
 
-5. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
+1. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
 
    ![List query](assets/extract-content/list-query-1-3-4-5.png)
 
@@ -92,11 +92,11 @@ Running a byPath query allows you to retrieve content for a specific Content Fra
    }
    ```
 
-2. Replace the existing content in the query editor by pasting the copied code.
+1. Replace the existing content in the query editor by pasting the copied code.
 
-3. Once pasted, click the **Play** button at the top left of the query editor to execute the query.
+1. Once pasted, click the **Play** button at the top left of the query editor to execute the query.
 
-4. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
+1. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
 
    ![byPath query results](assets/extract-content/bypath-query-2-3-4.png)
 
@@ -108,17 +108,17 @@ Now that you have run the two primary types of queries, you are ready to query y
 
 1. To run queries against your own Content Fragments, change the endpoint from the **AEM Demo Assets** folder to the **Your Project** folder.
 
-2. Delete all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your endpoint. Select the model that you created that ends in `List` from the options.
+1. Delete all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your endpoint. Select the model that you created that ends in `List` from the options.
 
    ![Start custom query](assets/extract-content/custom-query-1-2.png)
 
-3. Define the items that the query should contain for the Content Fragment model you selected. Again, type open bracket `{`, then press Ctrl+Space or Option+Space for an auto-complete list. Select `items` from the options.
+1. Define the items that the query should contain for the Content Fragment model you selected. Again, type open bracket `{`, then press Ctrl+Space or Option+Space for an auto-complete list. Select `items` from the options.
 
-4. Tap or click the **Prettify** button to automatically format your code so that it is easier to read.
+1. Tap or click the **Prettify** button to automatically format your code so that it is easier to read.
 
-5. Once complete, tap or click the **Play** button at the top left of the editor to run the query. The editor auto-complete the `items` and the query runs.
+1. Once complete, tap or click the **Play** button at the top left of the editor to run the query. The editor auto-complete the `items` and the query runs.
 
-6. The results are displayed in the right panel, next to the query editor.
+1. The results are displayed in the right panel, next to the query editor.
 
    ![Run custom query](assets/extract-content/custom-query-3-4-5-6.png)
 
