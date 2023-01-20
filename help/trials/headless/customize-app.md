@@ -34,7 +34,7 @@ You start in the Content Fragment editor with the sample app provided with your 
 
 1. Return to the browser tab of the Content Fragment editor to continue.
 
-![Preview the app](assets/customize-app/preview-app-1.png)
+![Preview the app](assets/do-not-localize/preview-app-1.png)
 
 ## Edit a header in the App {#edit-app}
 
@@ -42,7 +42,7 @@ The Content Fragment editor displays the basic layout of the app as a page Conte
 
 1. Tap or click **Mtn Biker in Canyon** in the **Panels** section.
 
-   ![Select text panel](assets/customize-app/edit-header-1.png)
+   ![Select text panel](assets/do-not-localize/edit-header-1.png)
 
 1. The editor opens up the header panel of the app for the mountain biker. Each panel is made up of layers, representing different images and text that compose the experience.
 
@@ -54,7 +54,7 @@ The Content Fragment editor displays the basic layout of the app as a page Conte
 
 1. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab.
 
-   ![Demo app preview](assets/customize-app/edit-header-5-6.png)
+   ![Demo app preview](assets/do-not-localize/edit-header-5-6.png)
 
 That's how easy it is to update content within a React app when integrated into AEM headless CMS.
 
@@ -66,13 +66,13 @@ Now that you modified a headline in the app, try changing an image.
 
 1. You need to return to the correct place in the Content Fragment editor. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Tap or Click **Mtn Biker in Canyon** in the breadcrumbs to return to that page.
 
-   ![Breadcrumbs](assets/customize-app/swap-image-2.png)
+   ![Breadcrumbs](assets/do-not-localize/swap-image-2.png)
 
 1. Select the **Mtn Biking - Biker** image layer. This opens the Content Fragment editor
 
 1. Tap or click the **X** to remove the biker image. The image disappears and the editor shows an error since the image is required data for this Content Fragment model.
 
-   ![Remove image from fragment](assets/customize-app/swap-image-4.png)
+   ![Remove image from fragment](assets/do-not-localize/swap-image-4.png)
 
 1. Tap or click **Add asset**.
 
@@ -90,7 +90,7 @@ It's that easy to update images and assets in your apps with AEM headless CMS.
 
 Now that you updated the image of the biker, let's walk through how to add new content to an app by creating and reference a new Content Fragment. You will add a product call-out managed by a "shoppable moment" Content Fragment to the second panel of the app.
 
-![Example of a shoppable moment](assets/customize-app/example-shoppable-moment.png)
+![Example of a shoppable moment](assets/do-not-localize/example-shoppable-moment.png)
 
 1. Return to the browser tab of the Content Fragment editor from the preview tab.
 
@@ -102,7 +102,7 @@ Now that you updated the image of the biker, let's walk through how to add new c
 
 1. In order to create a new call-out on this panel, you must create a new shoppable moment Content Fragment. Tap or click the **+ Create new fragment** button.
 
-   ![Add a shoppable moment](assets/customize-app/add-reference-1-5.png)
+   ![Add a shoppable moment](assets/do-not-localize/add-reference-1-5.png)
 
 1. You must first choose a model on which to base the new Content Fragment. Select the **Shoppable Moment Item** model from the **Content Fragment model** drop-down.
 
@@ -110,7 +110,7 @@ Now that you updated the image of the biker, let's walk through how to add new c
 
 1. Tap or click **Create and open**.
 
-   ![Name the shoppable moment](assets/customize-app/add-reference-6-7-8.png)
+   ![Name the shoppable moment](assets/do-not-localize/add-reference-6-7-8.png)
 
 1. The editor opens for your new Content Fragment.
 
@@ -123,6 +123,6 @@ Now that you updated the image of the biker, let's walk through how to add new c
 
 1. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab. Click refresh on the browser to test the positioning and make adjustments as needed in the editor.
 
-   ![Preview](assets/customize-app/add-reference-10-11-12.png)
+   ![Preview](assets/do-not-localize/add-reference-10-11-12.png)
 
 Now you understand how creating new content and referencing it as a Content Fragment in your app can be completed without any development cycles.

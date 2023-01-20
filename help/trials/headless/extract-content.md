@@ -59,7 +59,7 @@ You start on the GraphQL Explorer in a new tab. Here you can build and validate 
 
 1. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
 
-   ![List query](assets/extract-content/list-query-1-3-4-5.png)
+   ![List query](assets/do-not-localize/list-query-1-3-4-5.png)
 
 You've just validated a list query for a full list of all Content Fragments. This process helps to ensure that the response is what your app expects, with results that illustrate how your apps and websites will retrieve the content created in AEM. 
 
@@ -98,7 +98,7 @@ Running a byPath query allows you to retrieve content for a specific Content Fra
 
 1. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
 
-   ![byPath query results](assets/extract-content/bypath-query-2-3-4.png)
+   ![byPath query results](assets/do-not-localize/bypath-query-2-3-4.png)
 
 You've just validated a byPath query to retrieve a specific Content Fragment identified by the path of that fragment.
 
@@ -110,7 +110,7 @@ Now that you have run the two primary types of queries, you are ready to query y
 
 1. Delete all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your endpoint. Select the model that you created that ends in `List` from the options.
 
-   ![Start custom query](assets/extract-content/custom-query-1-2.png)
+   ![Start custom query](assets/do-not-localize/custom-query-1-2.png)
 
 1. Define the items that the query should contain for the Content Fragment model you selected. Again, type open bracket `{`, then press Ctrl+Space or Option+Space for an auto-complete list. Select `items` from the options.
 
@@ -120,6 +120,6 @@ Now that you have run the two primary types of queries, you are ready to query y
 
 1. The results are displayed in the right panel, next to the query editor.
 
-   ![Run custom query](assets/extract-content/custom-query-3-4-5-6.png)
+   ![Run custom query](assets/do-not-localize/custom-query-3-4-5-6.png)
 
 This is how your content can be delivered to omnichannel digital experiences.
