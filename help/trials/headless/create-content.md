@@ -38,7 +38,7 @@ Content Fragments represent your headless content and are based on predefined st
 
 1. Tap or click **Create and open**.
 
-![Creating a new Content Fragment](assets/create-content/create-content-3-4-5.png)
+![Creating a new Content Fragment](assets/do-not-localize/create-content-3-4-5.png)
 
 ## Add Content to your Content Fragment {#add-content}
 
@@ -50,11 +50,11 @@ Once you save and open your new Content Fragment, the Content Fragment editor op
 
 1. Select **Now** from the drop-down. You can also schedule it to publish at a later time.
 
-   ![Create content](assets/create-content/add-content-1-2.png)
+   ![Create content](assets/do-not-localize/add-content-1-2.png)
 
 1. The **Publish Content Fragments** dialog appears. AEM automatically performs a reference check to make sure that all necessary resources are published for your Content Fragment. In this case, you will also need to publish the model that you created. Tap or click **Publish**.
 
-   ![Publish and reference check](assets/create-content/publish-4.png)
+   ![Publish and reference check](assets/do-not-localize/publish-4.png)
 
 1. The publication is confirmed in a banner.
 
