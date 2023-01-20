@@ -51,6 +51,6 @@ Before you can use your model, you need to define the structure of its data. The
 
 3. Once you have added all of the fields necessary for the Content Fragment model, click **Save** at the top-right of the window.
 
-4. The model is saved and you return to the Content Fragment model Console
+4. The model is saved and you return to the Content Fragment model Console.
 
 ![Steps one, two, and three of adding fields to the model](assets/content-structure/define-model-fields-1-2-3.png)
