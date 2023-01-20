@@ -39,7 +39,7 @@ The Content Fragment models console opens in a new tab. Think of the Content Fra
 
 1. The **Success** dialog confirms that the model was created. Click **Open** in the dialog to open your new Content Fragment Model in the editor in a new tab. Then continue on to the next step to adding data fields to your model.
 
-![Steps two and three of creating a Content Fragment model](assets/content-structure/create-model-2-3.png)
+![Steps two and three of creating a Content Fragment model](assets/do-not-localize/create-model-2-3.png)
 
 ## Add Fields to the Model {#configure-model}
 
@@ -53,4 +53,4 @@ Before you can use your model, you need to define the structure of its data. The
 
 1. The model is saved and you return to the Content Fragment model Console.
 
-![Steps one, two, and three of adding fields to the model](assets/content-structure/define-model-fields-1-2-3.png)
+![Steps one, two, and three of adding fields to the model](assets/do-not-localize/define-model-fields-1-2-3.png)
