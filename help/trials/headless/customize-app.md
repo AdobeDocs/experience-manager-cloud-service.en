@@ -30,9 +30,9 @@ You start in the Content Fragment editor with the sample app provided with your 
 
 1. Tap or click the **Preview** button at the top-right of the editor screen.
 
-2. The demo app opens in a new tab. The app is for the fictional WKND outdoor lifestyle brand. Click around to navigate the sample content.
+1. The demo app opens in a new tab. The app is for the fictional WKND outdoor lifestyle brand. Click around to navigate the sample content.
 
-3. Return to the browser tab of the Content Fragment editor to continue.
+1. Return to the browser tab of the Content Fragment editor to continue.
 
 ![Preview the app](assets/customize-app/preview-app-1.png)
 
@@ -44,15 +44,15 @@ The Content Fragment editor displays the basic layout of the app as a page Conte
 
    ![Select text panel](assets/customize-app/edit-header-1.png)
 
-2. The editor opens up the header panel of the app for the mountain biker. Each panel is made up of layers, representing different images and text that compose the experience.
+1. The editor opens up the header panel of the app for the mountain biker. Each panel is made up of layers, representing different images and text that compose the experience.
 
-3. Select the text layer **Mtn Biker in Canyon Text Layer** to open the detail of the layer in the editor. The layer is made up of multiple Content Fragments that control the text that is displayed in this panel of the app.
+1. Select the text layer **Mtn Biker in Canyon Text Layer** to open the detail of the layer in the editor. The layer is made up of multiple Content Fragments that control the text that is displayed in this panel of the app.
 
-4. Select the **Mtn Biker in Canyon Title** text item. This opens the Content Fragment editor showing the content of this fragment and allowing you to modify it.
+1. Select the **Mtn Biker in Canyon Title** text item. This opens the Content Fragment editor showing the content of this fragment and allowing you to modify it.
 
-5. Change the text from `Your next great adventure is calling` to `Choose your own adventure`. The change is saved automatically by the editor.
+1. Change the text from `Your next great adventure is calling` to `Choose your own adventure`. The change is saved automatically by the editor.
 
-6. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab.
+1. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab.
 
    ![Demo app preview](assets/customize-app/edit-header-5-6.png)
 
@@ -64,25 +64,25 @@ Now that you modified a headline in the app, try changing an image.
 
 1. Return to the browser tab of the Content Fragment editor from the preview.
 
-2. You need to return to the correct place in the Content Fragment editor. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Tap or Click **Mtn Biker in Canyon** in the breadcrumbs to return to that page.
+1. You need to return to the correct place in the Content Fragment editor. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Tap or Click **Mtn Biker in Canyon** in the breadcrumbs to return to that page.
 
    ![Breadcrumbs](assets/customize-app/swap-image-2.png)
 
-3. Select the **Mtn Biking - Biker** image layer. This opens the Content Fragment editor
+1. Select the **Mtn Biking - Biker** image layer. This opens the Content Fragment editor
 
-4. Tap or click the **X** to remove the biker image. The image disappears and the editor shows an error since the image is required data for this Content Fragment model.
+1. Tap or click the **X** to remove the biker image. The image disappears and the editor shows an error since the image is required data for this Content Fragment model.
 
    ![Remove image from fragment](assets/customize-app/swap-image-4.png)
 
-5. Tap or click **Add asset**.
+1. Tap or click **Add asset**.
 
-6. The **Select Asset** dialog opens and the path **sample-wknd-app** &gt; **en** &gt; **image-files** is automatically selected for you.
+1. The **Select Asset** dialog opens and the path **sample-wknd-app** &gt; **en** &gt; **image-files** is automatically selected for you.
 
-7. Select the image `biker-yellow.png` and then tap or click **Select**.
+1. Select the image `biker-yellow.png` and then tap or click **Select**.
 
-8. The image of the biker is replaced with the selected image. The editor automatically saves the changes.
+1. The image of the biker is replaced with the selected image. The editor automatically saves the changes.
 
-9. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab. Click refresh on the browser and you should see your new biker image with yellow shorts in the app.
+1. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab. Click refresh on the browser and you should see your new biker image with yellow shorts in the app.
 
 It's that easy to update images and assets in your apps with AEM headless CMS.
 
@@ -94,34 +94,34 @@ Now that you updated the image of the biker, let's walk through how to add new c
 
 1. Return to the browser tab of the Content Fragment editor from the preview tab.
 
-2. You need to return to the correct place in the Content Fragment editor. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Tap or click **WKND Home** in the breadcrumbs to return to that page.
+1. You need to return to the correct place in the Content Fragment editor. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Tap or click **WKND Home** in the breadcrumbs to return to that page.
 
-3. Select the **Mtn Biker on WKND Yellow** panel.
+1. Select the **Mtn Biker on WKND Yellow** panel.
 
-4. Select the **Mtn Biking - Shoppable** layer.
+1. Select the **Mtn Biking - Shoppable** layer.
 
-5. In order to create a new call-out on this panel, you must create a new shoppable moment Content Fragment. Tap or click the **+ Create new fragment** button.
+1. In order to create a new call-out on this panel, you must create a new shoppable moment Content Fragment. Tap or click the **+ Create new fragment** button.
 
    ![Add a shoppable moment](assets/customize-app/add-reference-1-5.png)
 
-6. You must first choose a model on which to base the new Content Fragment. Select the **Shoppable Moment Item** model from the **Content Fragment model** drop-down.
+1. You must first choose a model on which to base the new Content Fragment. Select the **Shoppable Moment Item** model from the **Content Fragment model** drop-down.
 
-7. Give the Content Fragment a name. For example, enter `Shorts` into the **Name** field.
+1. Give the Content Fragment a name. For example, enter `Shorts` into the **Name** field.
 
-8. Tap or click **Create and open**.
+1. Tap or click **Create and open**.
 
    ![Name the shoppable moment](assets/customize-app/add-reference-6-7-8.png)
 
-9. The editor opens for your new Content Fragment.
+1. The editor opens for your new Content Fragment.
 
-10. Give the shoppable moment a name in the **Text** field such as `Yellow shorts`.
+1. Give the shoppable moment a name in the **Text** field such as `Yellow shorts`.
 
-11. Set values for **X** and **Y**. This is where this call-out should be overlaid on the panel. Changes to the fragment are automatically saved by the editor
+1. Set values for **X** and **Y**. This is where this call-out should be overlaid on the panel. Changes to the fragment are automatically saved by the editor
 
    * **X**: `-5`
    * **Y**: `-10`
 
-12. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab. Click refresh on the browser to test the positioning and make adjustments as needed in the editor.
+1. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab. Click refresh on the browser to test the positioning and make adjustments as needed in the editor.
 
    ![Preview](assets/customize-app/add-reference-10-11-12.png)
 

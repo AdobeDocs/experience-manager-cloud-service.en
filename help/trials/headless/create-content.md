@@ -30,13 +30,13 @@ Content Fragments represent your headless content and are based on predefined st
 
 1. Tap or click the **Create** button at the top-right of the console.
 
-2. The **New Content Fragment** dialog opens where you can  start creating a new Content Fragment. **Location** is automatically populated with where the new content will be saved.
+1. The **New Content Fragment** dialog opens where you can  start creating a new Content Fragment. **Location** is automatically populated with where the new content will be saved.
 
-3. In the **Content Fragment model** drop-down, select the Content Fragment model you created previously.
+1. In the **Content Fragment model** drop-down, select the Content Fragment model you created previously.
 
-4. Add a **Title** for the Content Fragment.
+1. Add a **Title** for the Content Fragment.
 
-5. Tap or click **Create and open**.
+1. Tap or click **Create and open**.
 
 ![Creating a new Content Fragment](assets/create-content/create-content-3-4-5.png)
 
@@ -46,16 +46,16 @@ Once you save and open your new Content Fragment, the Content Fragment editor op
 
 1. The Content Fragment editor shows the fields you defined in the selected model. Here you can add content to each field to complete your Content Fragment. Your progress is saved automatically. 
 
-2. Once you are finished adding content, tap or click the **Publish** button at the top-right of the editor. This makes your Content Fragment available for consumption by external apps. 
+1. Once you are finished adding content, tap or click the **Publish** button at the top-right of the editor. This makes your Content Fragment available for consumption by external apps. 
 
-3. Select **Now** from the drop-down. You can also schedule it to publish at a later time.
+1. Select **Now** from the drop-down. You can also schedule it to publish at a later time.
 
    ![Create content](assets/create-content/add-content-1-2.png)
 
-4. The **Publish Content Fragments** dialog appears. AEM automatically performs a reference check to make sure that all necessary resources are published for your Content Fragment. In this case, you will also need to publish the model that you created. Tap or click **Publish**.
+1. The **Publish Content Fragments** dialog appears. AEM automatically performs a reference check to make sure that all necessary resources are published for your Content Fragment. In this case, you will also need to publish the model that you created. Tap or click **Publish**.
 
    ![Publish and reference check](assets/create-content/publish-4.png)
 
-5. The publication is confirmed in a banner.
+1. The publication is confirmed in a banner.
 
 Your content is published and ready to be delivered to your app or website as a Content Fragment.
