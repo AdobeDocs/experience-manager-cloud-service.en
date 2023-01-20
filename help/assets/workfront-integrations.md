@@ -42,7 +42,7 @@ See the platform support and [prerequisites for the enhanced connector](https://
 The following are the details of the functionalities available through various types of integrations between [!DNL Assets] and [!DNL Workfront].
 
 | Feature   |Description  | [!DNL Workfront] and [!DNL Assets Essentials] *No Connector (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Requires Connector*| Workfront and [!DNL Experience Manager as a Cloud Service] *No Connector (OOTB)*|
-|----|----|----|------|-----|-----|
+|----|----|----|-----|-----|
 | Deployment methods   | Appropriate for which [!DNL Assets] offering. | Assets Essentials| Cloud Service, Adobe Managed Services, On-premise| Cloud Service|
 | **General** |
 | Send digital files from [!DNL Workfront] to [!DNL Assets]| Latest version of a WF document can be uploaded to AEM Assets which will be linked as a new version of the document.  | &#10003; | &#10003;  | &#10003; |
