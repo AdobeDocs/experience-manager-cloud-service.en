@@ -26,17 +26,11 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 
 ## Query for a List of Sample Content {#list-query}
 
-Clicking the **Launch the GraphQL Explorer** button above opens the GraphQL Explorer in a new tab.
+You start on the GraphQL Explorer in a new tab. Here you can build and validate queries against your headless content before using them to power the content in your app or website.
 
-![The GraphQL Query Editor](assets/extract-content/query-editor.png)
+1. Your AEM headless trial comes with an endpoint preloaded with Content Fragments from which you can extract content for testing purposes. Make sure that the **AEM Demo Assets** endpoint is selected in the **Endpoint** drop-down menu at the top-right corner of the editor.
 
-Using the GraphQL Explorer you can build and validate queries against your headless content before using them to power the content in your app or website. Let's see how that's done!
-
-1. Your AEM headless trial comes with an endpoint preloaded with Content Fragments from which you can extract content for testing purposes. Select the **AEM Demo Assets** endpoint from the **Endpoint** drop-down menu at the top-right corner of the editor.
-
-   ![Select endpoint](assets/extract-content/select-endpoint.png)
-
-1. Copy the following code snippet for a list query of the preloaded **AEM Demo Assets** endpoint. A list query returns a list of all content that uses a specific Content Fragment model. Inventory and category pages typically use this query format.
+2. Copy the following code snippet for a list query of the preloaded **AEM Demo Assets** endpoint. A list query returns a list of all content that uses a specific Content Fragment model. Inventory and category pages typically use this query format.
 
    ```text
    {
@@ -59,21 +53,21 @@ Using the GraphQL Explorer you can build and validate queries against your headl
     }
    ```
 
-1. Replace the existing content in the query editor by pasting the copied code.
+3. Replace the existing content in the query editor by pasting the copied code.
 
-    ![List query](assets/extract-content/list-query.png)
+    ![List query](assets/extract-content/list-query-1-3-4-5.png)
 
-1. Once pasted, click the **Play** button at the top left of the query editor to execute the query.
+4. Once pasted, click the **Play** button at the top left of the query editor to execute the query.
 
-1. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
+5. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
 
-   ![List query results](assets/extract-content/list-query-results.png)
+![List query results](assets/extract-content/list-query-results.png)
 
 You've just validated a list query for a full list of all Content Fragments. This process helps to ensure that the response is what your app expects, with results that illustrate how your apps and websites will retrieve the content created in AEM. 
 
 ## Query for a Specific Piece of Sample Content {#bypath-query}
 
-Running a byPath query allows you to retrieve content for a specific Content Fragment. Product detail pages and pages that focus on a specific set of content typically require this type of query. Let's see how it works!
+Running a byPath query allows you to retrieve content for a specific Content Fragment. Product detail pages and pages that focus on a specific set of content typically require this type of query.
 
 1. Copy the following code snippet for a byPath query of the preloaded **AEM Demo Assets** endpoint.
 
@@ -84,11 +78,11 @@ Running a byPath query allows you to retrieve content for a specific Content Fra
      ) {
        item {
          _path
-         adventureTitle
-         adventureDescription {
+         title
+         description {
            json
          }
-         adventurePrimaryImage {
+         primaryImage {
            ... on ImageRef {
              _path
              width
@@ -100,48 +94,34 @@ Running a byPath query allows you to retrieve content for a specific Content Fra
    }
    ```
 
-1. Replace the existing content in the query editor by pasting the copied code.
+2. Replace the existing content in the query editor by pasting the copied code.
 
-   ![byPath query](assets/extract-content/bypath-query.png)
+3. Once pasted, click the **Play** button at the top left of the query editor to execute the query.
 
-1. Once pasted, click the **Play** button at the top left of the query editor to execute the query.
+4. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
 
-1. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
-
-   ![byPath query results](assets/extract-content/bypath-query-results.png)
+   ![byPath query results](assets/extract-content/bypath-query-2-3-4.png)
 
 You've just validated a byPath query to retrieve a specific Content Fragment identified by the path of that fragment.
 
 ## Query Your Own Content {#own-queries}
 
-Now that you have run the two primary types of queries, you are ready to query your own content!
+Now that you have run the two primary types of queries, you are ready to query your own content.
 
 1. To run queries against your own Content Fragments, change the endpoint from the **AEM Demo Assets** folder to the **Your Project** folder.
 
-   ![Select your own endpoint](assets/extract-content/select-endpoint.png)
+2. Delete all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your endpoint. Select the model that you created that ends in `List` from the options.
 
-1. Delete all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your endpoint. Select the model that you created that ends in `List` from the options.
+   ![Start custom query](assets/extract-content/custom-query-1-2.png)
 
-   ![Auto complete models in query editor](assets/extract-content/auto-complete-models.png)
+3. Define the items that the query should contain for the Content Fragment model you selected. Again, type open bracket `{`, then press Ctrl+Space or Option+Space for an auto-complete list. Select `items` from the options.
 
-1. Define the items that the query should contain for the Content Fragment model you selected. Again, type open bracket `{`, then press Ctrl+Space or Option+Space for an auto-complete list. Select `items` from the options.
+4. Tap or click the **Prettify** button to automatically format your code so that it is easier to read.
 
-   ![Auto complete items in query editor](assets/extract-content/auto-complete-items.png)
+5. Once complete, tap or click the **Play** button at the top left of the editor to run the query. The editor auto-complete the `items` and the query runs.
 
-1. Define the fields that the query should contain for the content fragment model you selected. Once more, type open bracket `{`, then press Ctrl+Space or Option+Space for an auto-complete list of available fields in the Content Fragment model. Select fields that you wish from your model from the list.
+6. The results are displayed in the right panel, next to the query editor.
 
-   ![Auto complete fields in query editor](assets/extract-content/auto-complete-fields.png)
-
-1. Delimit multiple fields with a comma (`,`) or space and press Ctrl+Space or Option+Space again to select additional fields.
-
-1. As you work, you can tap or click the **Prettify** button to automatically format your code so that it is easier to read.
-
-   ![Prettify](assets/extract-content/prettify.png)
-
-1. Once complete, tap or click the **Play** button at the top left of the editor to run the query.
-
-   ![Results of your own query](assets/extract-content/custom-query-results.png)
-
-1. The results are displayed in the right panel, next to the query editor.
+   ![Run custom query](assets/extract-content/custom-query-3-4-5-6.png)
 
 This is how your content can be delivered to omnichannel digital experiences.
