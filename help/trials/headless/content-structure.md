@@ -30,14 +30,14 @@ The Content Fragment models console opens in a new tab. Think of the Content Fra
 
 1. Click the **Create** button at the top-right of the screen to begin creating a Content Fragment model.
 
-1. The Create Model wizard starts, which guides you. Provide the mandatory information.
+2. The Create Model wizard starts, which guides you. Provide the mandatory information.
 
    * **Model Title** - This is a brief description of the model and usually indicates the purpose of the model.
    * **Enable model** - This option is checked by default and must be checked to be able to create Content Fragments based on this model.
 
-1. Once the mandatory fields are populated, click **Create** at the top-left to create the model. 
+3. Once the mandatory fields are populated, click **Create** at the top-left to create the model. 
 
-1. The **Success** dialog confirms that the model was created. Click **Open** in the dialog to open your new Content Fragment Model in the editor in a new tab. Then continue on to the next step to adding data fields to your model.
+4. The **Success** dialog confirms that the model was created. Click **Open** in the dialog to open your new Content Fragment Model in the editor in a new tab. Then continue on to the next step to adding data fields to your model.
 
 ![Steps two and three of creating a Content Fragment model](assets/content-structure/create-model-2-3.png)
 
@@ -47,10 +47,10 @@ Before you can use your model, you need to define the structure of its data. The
 
 1. Drag a field from the **Data Types** panel at the right of the editor and drop it onto your Content Fragment model. 
 
-1. Once a data type is placed, the **Data Types** column automatically changed to the **Properties** tab, where you can define the details of the data type you just placed.
+2. Once a data type is placed, the **Data Types** column automatically changed to the **Properties** tab, where you can define the details of the data type you just placed.
 
-1. Once you have added all of the fields necessary for the Content Fragment model, click **Save** at the top-right of the window.
+3. Once you have added all of the fields necessary for the Content Fragment model, click **Save** at the top-right of the window.
 
-1. The model is saved and you return to the Content Fragment model Console
+4. The model is saved and you return to the Content Fragment model Console
 
 ![Steps one, two, and three of adding fields to the model](assets/content-structure/define-model-fields-1-2-3.png)
