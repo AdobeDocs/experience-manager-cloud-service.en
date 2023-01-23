@@ -382,6 +382,11 @@ While the RDE is in many ways similar to a Cloud Development Environment, there 
 
 For these reasons, it is recommended that after validating code on an RDE environment, you should deploy the code to a Cloud Development Environment using the non-production pipeline. Finally, test the code before deploying with the production pipeline.
 
+Also note the following solution-specific considerations: 
+
+* RDEs do not currently support viewing and debugging front-end code deployed using the Cloud Manager Front-End Pipeline.
+
+
 ## How many RDEs do I need? {#how-many-rds-do-i-need}
 
 An RDE is available for each licensed solution and Adobe also offers additional RDEs, which can be licensed for Production (non-sandbox) programs.
