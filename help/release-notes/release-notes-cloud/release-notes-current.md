@@ -45,18 +45,18 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* Experience Manager Assets now allows you to upload documents in other supported format types and[ preview them using the included Document Cloud viewer](/help/assets/manage-pdf-documents.md). The supported format types include TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, and XLSX.
+* Assets Reports now includes the ability for Administrators to [generate assets download reports](/help/assets/asset-reports.md) from the Experience Manager Assets as a Cloud Service deployment. This data further empowers Admins to derive insights from key success metrics in order to measure the adoption of Assets within your enterprise and by customers.
 
-  ![PDF rendition for other formats](/help/release-notes/assets/multi-page-other-formats.png)
+   ![PDF rendition for other formats](/help/release-notes/assets/choose_report.png)
+
+* Experience Manager Assets now [supports SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) in addition to the Access Key for authentication while connecting to Azure Blob Storage data source for ingesting assets using the Bulk Import tool.  
 
 
 ### New features in [!DNL Assets] prerelease {#prerelease-features-assets}
 
-* Experience Manager Assets now uses an improved artificial intelligence framework for image Smart Tags. This content intelligence results in better relevancy and precision of Smart Tags available to all image assets on ingestion. In addition, orientation information is populated in `cq:tags`, which enables better Search results using the Orientation filter.
+* To be updated soon
 
-   If you are interested in participating in the Beta, [fill this form](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) by November 14.
 
-* Experience Manager Assets now [supports SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) in addition to the Access Key for authentication while connecting to Azure Blob Storage data source for ingesting assets using the Bulk Import tool.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
