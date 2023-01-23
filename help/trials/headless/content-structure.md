@@ -26,45 +26,31 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 
 ## Create a Model {#create-model}
 
-Clicking the **Launch the model console** button above opens the Content Fragment models console in a new tab. 
+The Content Fragment models console opens in a new tab. Think of the Content Fragment model console as your library of models, where you create new models and manage exiting models.
 
-![The Content Fragment model console](assets/content-structure/content-fragment-model-console.png)
+1. Click the **Create** button at the top-right of the screen to begin creating a Content Fragment model.
 
-Think of the Content Fragment model console as your library of models, where you create new models and manage exiting models. Your console starts empty, so let's create a new model!
-
-1. In the Content Fragment model console, click the **Create** button at the top-right of the screen to begin creating a Content Fragment model.
-
-1. The Create Model wizard starts, which guides you. 
-
-   ![Content Fragment model wizard](assets/content-structure/model-wizard.png)
-
-   Provide the mandatory information.
+1. The Create Model wizard starts, which guides you. Provide the mandatory information.
 
    * **Model Title** - This is a brief description of the model and usually indicates the purpose of the model.
    * **Enable model** - This option is checked by default and must be checked to be able to create Content Fragments based on this model.
 
 1. Once the mandatory fields are populated, click **Create** at the top-left to create the model. 
 
-1. The **Success** dialog confirms that the model was created.
+1. The **Success** dialog confirms that the model was created. Click **Open** in the dialog to open your new Content Fragment Model in the editor in a new tab. Then continue on to the next step to adding data fields to your model.
 
-   ![Success dialog for creating a new Content Fragment model](assets/content-structure/success.png)
+![Steps two and three of creating a Content Fragment model](assets/do-not-localize/create-model-2-3.png)
 
 ## Add Fields to the Model {#configure-model}
 
-Before you can use the model, you need to define the structure of its data.
-
-1. Click **Open** in the **Success** dialog from the previous step to open your new model in the Content Fragment model editor where you can define its fields.
+Before you can use your model, you need to define the structure of its data. The Content Fragment Model editor is where you configure the data types and properties that define the content of your model.
 
 1. Drag a field from the **Data Types** panel at the right of the editor and drop it onto your Content Fragment model. 
 
-   ![Add a data type](assets/content-structure/drop-fields.png)
-
 1. Once a data type is placed, the **Data Types** column automatically changed to the **Properties** tab, where you can define the details of the data type you just placed.
-
-   ![The Properties tab for the data field](assets/content-structure/data-type-properties.png)
 
 1. Once you have added all of the fields necessary for the Content Fragment model, click **Save** at the top-right of the window.
 
-The model is saved and you return to the Content Fragment model Console where you can add more models as necessary.
+1. The model is saved and you return to the Content Fragment model Console.
 
-![Module complete](assets/content-structure/content-fragment-model-console-populated.png)
+![Steps one, two, and three of adding fields to the model](assets/do-not-localize/define-model-fields-1-2-3.png)
