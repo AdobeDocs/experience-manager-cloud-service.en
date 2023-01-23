@@ -17,7 +17,6 @@ The following section outlines the general Release Notes for the current (latest
 >
 >See [Recent Documentation Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) for details of documentation updates not directly related to a release.
 
-
 ## Release Date {#release-date}
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current monthly release (2023.1.0) is January 26, 2023. The next monthly release (2023.2.0) is planned for February 23, 2023.
