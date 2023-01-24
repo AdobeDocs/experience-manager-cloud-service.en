@@ -29,9 +29,8 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-
 ### New features in [!DNL Sites] {#sites-features}
- 
+
 * The [Personalization Tab for Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) allows segmentation specification capabilities to the Experience Fragment Editor as well as the flexibility to create nested Experience Fragments whereby headers and footers variations can be created for multiple segments. Prior to the launch of this feature, personalization offered by AEM is only available for site pages, but not for Experience Fragments
 
 * The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now enables users to efficiently manage translated content fragments. A 1-click access has been provided to view all the language copies as well. Users are also able to filter the table view by the locale of their interest.
@@ -50,7 +49,6 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 * Experience Manager Assets now [supports SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) in addition to the Access Key for authentication while connecting to Azure Blob Storage data source for ingesting assets using the Bulk Import tool.  
 
-
 ### New features in [!DNL Assets] prerelease {#prerelease-features-assets}
 
 * To be updated soon
@@ -61,23 +59,13 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 ### New features available in [!DNL Forms] {#new-features-available-in-channel}
 
+* **Data capture core components to build Adaptive Forms**: Use Adaptive Forms editor to create forms based on standardized data capture components (Core Components). These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrolment experiences.
+* **Frontend pipeline support for styling core component based Adaptive Forms**: Utilize easily customizable BEM-based themes for Core Components-based Adaptive Forms by deploying them with Frontend Deployment pipeline to enhance the look and feel of your forms.
+* **Submit Adaptive Forms to Microsoft SharePoint and Microsoft OneDrive**: Streamline data submission with the ability to directly send Adaptive Form data to both Microsoft SharePoint and Microsoft OneDrive. You can submit both schema-based and schema-less data. These submit actions are in addition to already available submit actions. 
+* **Efficient form-building with the Save an Adaptive Form as a template feature**: Streamline your form-building process by saving an Adaptive Form as a template and reusing the templates for your next Adaptive Form. 
+* **Workflow steps to generate non-interactive PDF documents and printable output**: Automate the creation of non-interactive PDF documents and printable output for your business processes with AEM Workflow steps, streamlining your document generation process and saving time.
+* **Quicky deploy forms with Rapid Development environment**: Use Rapid Development environment to swiftly develop and deploy forms. This minimizes the amount of time needed for testing, as features are already proven to work in a local development environment. The result is a streamlined and efficient development process that saves time and resources.
 
-* [Adaptive Forms wizard](/help/forms/creating-adaptive-form.md): AEM Forms provides business user friendly wizard to quickly author Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form. This release brings following improvements to the wizard:
-
-  * Select or deselect fields: The wizard allows you to create an Adaptive Form based on JSON and Form Data Model schemas. You can now select subset of fields within a schema to include in an Adaptive Form. The selected fields are converted to corresponding Adaptive Form data capture components to quickly create the desired adaptive forms.
-
-  * Use Static Templates: Customers with existing investments in legacy static templates can continue their journey of cloud adoption by using static templates in wizard to author adaptive forms. This provides additional time to customers to migrate old static templates to modern editable templates.
-
-* [Remove hidden fields from a Document of Record (DoR) while server-side processing](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): You can generate the document of record PDF for end users containing only those fields which were visible to them during data capture experience. Upon form submission, the server validates which fields were hidden to the end user based on submitted data and excludes from document of record for consistency.
-
-### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
-
-* **Adaptive Forms template editor**: Template editor allows you to pre-define the basic structure and appearance of Adaptive Forms of an organization. This release brings following improvements to the template editor:
-  * **[Form Data Model in template editor](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: You can associate a Form Data Model schema to an Adaptive Form template in the template editor. It helps reduce the time taken to create an Adaptive Form. The option is also added to Adaptive Forms editor to allows users to select or change Form Data Model for existing forms.
-  * **[Document of Record in template editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: You can now standardize Document of Record generation for all forms created using a template. This helps enhance compliance and standardization for org requirements.
-
-* **[Launch the Adaptive Form wizard from a AEM Sites Page](/help/forms/embed-adaptive-form-aem-sites.md)**: AEM Sites page has extended support for Adaptive Forms. You can now create a new Adaptive Form or embed an existing Adaptive Form while remaining on AEM Sites page. 
-* **[Change display alignment for checkboxes and radiobutton in DoR](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: You can now set the desired alignment (Horizontal, Vertical, Same as Adaptive Forms) for checkbox and radio button on the Document of Record. This option determines the positioning of checkbox and radio button options in the Document of Record. 
 
 ## CIF Add-on {#cloud-services-cif}
 
@@ -92,7 +80,7 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 ### What is New {#what-is-new-foundation}
 
-* Rapid Development Environments - Increase your team's development productivity through quicker cloud validation and debugging sessions! RDE is a new type of Cloud Environment intended for swiftly validating that code working locally also behaves as expected in the Cloud. Using Command Line Tools, developers quickly "sync" content packages, bundles, content files, OSGI configuration, or dispatcher configuration to the RDE. After successfully validating code in the RDE, customers are encouraged to deploy to a Cloud Dev Environment to exercise the Cloud Manager quality gates, before deploying via production pipeline to stage and production environments. Each program includes one RDE and optionally, more can be licensed. This feature will be gradually rolled out over the next few weeks; you can send an email to aemcs-rdesupport@adobe.com to skip to the front of the line! 
+* Rapid Development Environments - Increase your team's development productivity through quicker cloud validation and debugging sessions! RDE is a new type of Cloud Environment intended for swiftly validating that code working locally also behaves as expected in the Cloud. Using Command Line Tools, developers quickly "sync" content packages, bundles, content files, OSGI configuration, or dispatcher configuration to the RDE. After successfully validating code in the RDE, customers are encouraged to deploy to a Cloud Dev Environment to exercise the Cloud Manager quality gates, before deploying via production pipeline to stage and production environments. Each program includes one RDE and optionally, more can be licensed. This feature will be gradually rolled out over the next few weeks; you can send an email to aemcs-rdesupport@adobe.com to skip to the front of the line!
 
 * [Extended support for server-side API access tokens](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) – You can now generate multiple credentials, which is useful for scenarios where APIs have different characteristics. It is also now possible to revoke credentials in a self-service manner.
 
