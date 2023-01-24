@@ -5,180 +5,124 @@ hidefromtoc: yes
 index: no
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 ---
+
 # Customize Content in a Sample React App {#customize-app}
-
-AEM Trials for headless comes preloaded with a simple React app to showcase headless content. In this module, you will learn how to preview that app and modify its content by swapping an image and creating a shoppable moment for it.
-
-The app itself is based on the structure of Content Fragments. Using the Content Fragment editor in AEM, you can modify your apps content. To help you understand how this is done, this module of AEM Trials takes you through the process with a quick, interactive tour. This document serves as a supplement of the interactive tour, covering the same steps and linking to additional resources where appropriate.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app"
 >title="Customize content in a sample React app"
->abstract="We've set up a modern React app which you can use to learn how to customize content using the headless feature set."
+>abstract="Your AEM headless trial comes integrated with a sample React app, which you can customize."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Launch the Content Fragment editor"
->abstract="AEM Trials for headless comes preloaded with a simple React app to showcase headless content. The app is based on the structure of Content Fragments. Using the Content Fragment editor in AEM, you can modify your app’s content.<br><br>Launch the feature in a new tab by clicking below, then follow this guide."
->additional-url="https://video.tv.adobe.com/v/328618" text="Placeholder for the intro video"
+>abstract="Your AEM headless trial comes integrated with a sample React app, so you can see how easy it is for anyone to independently manage content without development time.<br><br>Launch this module in a new tab by clicking below, then follow this guide."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Customize app intro video"
 
-## Content Fragment Editor {#fragment-editor}
-
-You begin in the Content Fragment editor for the sample app.
-
-![Content Fragment editor](assets/customize-app/content-fragment-editor.png)
-
-If you wish to navigate to the Content Fragment editor yourself outside of the in-app guidance, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here, you choose the **Navigation** tab and then **Content Fragments**.
-
-![Navigate to app in Content Fragments console](assets/customize-app/navigate-to-app.png)
-
-This opens the Content Fragment console. From there, you use the content tree in the left panel to navigate to the location of the app content. In this case under **Content Fragments** -&gt; **Sample WKND App** -&gt; **English** -&gt; **Content Fragments** -&gt; **pages**.
-
-Tap or click on the **WKND Home** page fragment displayed in the console to the right of the content tree to start the editor for the app content.
-
->[!TIP]
->
->If you would like to know more about navigation in AEM, see the [Additional Resources section](#additional-resources) of this document for more information on AEM basic handling.
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
+>title="In this module, you learned how to customize a sample React app.<br><br>Time to market: Accelerated!<br>Development cycles: Reduced!<br><br>Now you understand how easy managing headless content is for websites and apps that are powered by AEM's headless capabilities."
+>abstract=""
 
 ## Preview the App {#preview}
 
-Before you begin modifying the app, first get familiar with it by previewing its current state. Tap or click the **Preview** button at the top-right of the editor screen.
+You start in the Content Fragment editor with the sample app provided with your AEM headless trial already loaded. The sample app is powered by Content Fragments delivered via GraphQL. Use the Content Fragment editor to get familiar with the editor by previewing the sample app.
 
-The demo app opens in a new tab.
+1. Tap or click the **Preview** button at the top-right of the editor screen.
 
-![Demo app preview](assets/customize-app/preview-demo-app.png)
+1. The demo app opens in a new tab. The app is for the fictional WKND outdoor lifestyle brand. Click around to navigate the sample content.
 
-The app itself is a simple e-commerce app for the fictional WKND outdoor lifestyle brand implemented in React. Click around to navigate the sample content.
+1. Return to the browser tab of the Content Fragment editor to continue.
 
-Return to the tab of the Content Fragment editor to continue.
+![Preview the app](assets/do-not-localize/preview-app-1.png)
 
-## Edit Text in the App {#edit-app}
+## Edit a header in the App {#edit-app}
 
-As previously mentioned, the app itself is made up of Content Fragments. These fragments are linked together in a structure to create the app.
-
-The Content Fragment editor displays the basic layout of the app as a page. This page is a Content Fragment, which itself ia a collection of other fragments. The **Panels** represent different pages of the app, each of which is its own Content Fragment. By modifying these fragments, you can change the content of the app.
+The Content Fragment editor displays the basic layout of the app as a page Content Fragment. The **Panels** represent different pages of the app, each of which is its own Content Fragment. By modifying these fragments, you can change the content of the app.
 
 1. Tap or click **Mtn Biker in Canyon** in the **Panels** section.
 
-   ![Tap Mtn Biker in Canyon fragment](assets/customize-app/mtn-biker-in-canyon.png)
+   ![Select text panel](assets/do-not-localize/edit-header-1.png)
 
-1. The editor opens up the header panel for the mountain biker. Each panel is made up of layers, representing different content within a page of the app.
+1. The editor opens up the header panel of the app for the mountain biker. Each panel is made up of layers, representing different images and text that compose the experience.
 
-   ![Panels](assets/customize-app/panels.png)
+1. Select the text layer **Mtn Biker in Canyon Text Layer** to open the detail of the layer in the editor. The layer is made up of multiple Content Fragments that control the text that is displayed in this panel of the app.
 
-1. Select the text layer **Mtn Biker in Canyon Text Layer**. This opens the detail of the layer in the editor. The layer is made up of multiple Content Fragments.
-
-   ![Select the Mtn Biker in Canyon Title](assets/customize-app/mtn-biker-in-canyon-text-layer.png)
-
-1. Select the **Mtn Biker in Canyon Title** text item. This opens the Content Fragment editor, showing the content of this fragment and allowing you to modify it.
-
-   ![Select the Mtn Biker in Canyon Title text item](assets/customize-app/mtn-biker-in-canyon-title.png)
+1. Select the **Mtn Biker in Canyon Title** text item. This opens the Content Fragment editor showing the content of this fragment and allowing you to modify it.
 
 1. Change the text from `Your next great adventure is calling` to `Choose your own adventure`. The change is saved automatically by the editor.
 
-1. Click preview to see your changes. The demo app opens in a new tab.
+1. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab.
 
-   ![Demo app preview](assets/customize-app/preview-demo-app-text.png)
+   ![Demo app preview](assets/do-not-localize/edit-header-5-6.png)
 
-Return to the tab of the Content Fragment editor to continue the module.
+That's how easy it is to update content within a React app when integrated into AEM headless CMS.
 
-## Change the App's Main Image {#change-image}
+## Swap an image in the app {#change-image}
 
-Now that you modified some text in the app, try changing the app's main image. First you will need to locate that content.
+Now that you modified a headline in the app, try changing an image.
 
-The breadcrumbs at the top-left of the editor show where you are in your content hierarchy.
+1. Return to the browser tab of the Content Fragment editor from the preview.
 
-1. Tap or Click **Mtn Biker in Canyon** in the breadcrumbs to return to that page.
+1. You need to return to the correct place in the Content Fragment editor. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Tap or Click **Mtn Biker in Canyon** in the breadcrumbs to return to that page.
 
-   ![Breadcrumbs](assets/customize-app/breadcrumbs.png)
+   ![Breadcrumbs](assets/do-not-localize/swap-image-2.png)
 
-1. Return to the panel with the app's various layers. The layers don't just represent text content. They represent all content in your app. Therefore, you can swap images using the Content Fragment editor as well.
-
-      ![Panels](assets/customize-app/panels.png)
-
-1. Select the **Mtn Biking - Biker** image layer. This opens the Content Fragment editor, showing the content of this fragment and allowing you to modify it.
-
-   ![Edit image fragment](assets/customize-app/mtn-biking-biker.png)
+1. Select the **Mtn Biking - Biker** image layer. This opens the Content Fragment editor
 
 1. Tap or click the **X** to remove the biker image. The image disappears and the editor shows an error since the image is required data for this Content Fragment model.
 
-   ![Image removed from fragment](assets/customize-app/mtn-biking-biker-no-image.png)
+   ![Remove image from fragment](assets/do-not-localize/swap-image-4.png)
 
-1. Tap or click **Add asset** and locate the yellow biker image in **sample-wknd-app** &gt; **en** &gt; **image-files**. Use the tree view at the left side of the **Select Assets** dialog to navigate the content hierarchy.
+1. Tap or click **Add asset**.
 
-   ![Select assets dialog](assets/customize-app/select-assets.png)
+1. The **Select Asset** dialog opens and the path **sample-wknd-app** &gt; **en** &gt; **image-files** is automatically selected for you.
 
-1. Filter for the text `yellow`. Use the **Search all assets** field at the top of the **Select Assets** window to search for the image. Enter the search text and press enter or return to search.
+1. Select the image `biker-yellow.png` and then tap or click **Select**.
 
-   ![Searching assets](assets/customize-app/search-assets.png)
+1. The image of the biker is replaced with the selected image. The editor automatically saves the changes.
 
-1. Tap or click to select the `biker-yellow.png` image, then tap or click **Select**.
+1. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab. Click refresh on the browser and you should see your new biker image with yellow shorts in the app.
 
-   ![Select asset](assets/customize-app/select-asset.png)
+It's that easy to update images and assets in your apps with AEM headless CMS.
 
-1. The image of the biker was replaced with the selected image. The editor automatically saves the changes.
+## Add a reference to a new Content Fragment in the app {#create-moment}
 
-   ![Edited fragment of biker image](assets/customize-app/mtn-biking-biker-edited.png)
+Now that you updated the image of the biker, let's walk through how to add new content to an app by creating and reference a new Content Fragment. You will add a product call-out managed by a "shoppable moment" Content Fragment to the second panel of the app.
 
-## Create a Shoppable Moment {#create-moment}
+![Example of a shoppable moment](assets/do-not-localize/example-shoppable-moment.png)
 
-Now that you updated the image of the biker, you can add a shoppable moment for the biker’s yellow shorts.
+1. Return to the browser tab of the Content Fragment editor from the preview tab.
 
-1. Start by returning to the Content Fragment editor for the page fragment. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Tap or click **WKND Home** in the breadcrumbs to return to that page.
-
-   ![Navigate back to the layout screen](assets/customize-app/breadcrumbs-2.png)
+1. You need to return to the correct place in the Content Fragment editor. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Tap or click **WKND Home** in the breadcrumbs to return to that page.
 
 1. Select the **Mtn Biker on WKND Yellow** panel.
 
-   ![Create a shoppable moment](assets/customize-app/mtn-biker-on-wknd-yellow.png)
+1. Select the **Mtn Biking - Shoppable** layer.
 
-1. You can now see the layers that make up the image of the biker. Add a shoppable moment to the biker’s yellow shorts by selecting the **Mtn Biking - Shoppable** layer.
+1. In order to create a new call-out on this panel, you must create a new shoppable moment Content Fragment. Tap or click the **+ Create new fragment** button.
 
-   ![Select shoppable moment layer](assets/customize-app/mtn-biking-shoppable.png)
+   ![Add a shoppable moment](assets/do-not-localize/add-reference-1-5.png)
 
-1. In order to create a shoppable moment, you must create a new Content Fragment that represents that moment. Tap or click the **+ Create new fragment** button to add shoppable moment for the biker’s shorts.
+1. You must first choose a model on which to base the new Content Fragment. Select the **Shoppable Moment Item** model from the **Content Fragment model** drop-down.
 
-   ![Add a shoppable moment](assets/customize-app/create-new-fragment.png)
-
-1. Because Content Fragments represent structured headless data, whenever you create a Content Fragment, you must first choose a model on which to base it. Select the **Shoppable Moment Item** model from the **Content Fragment model** drop-down.
-
-   ![Choose the Content Fragment model](assets/customize-app/new-content-fragment.png)
-
-1. Give the Content Fragment that will represent this new shoppable moment a name. For example, enter `Shorts` into the **Name** field.
-
-   ![Name the shoppable moment](assets/customize-app/new-content-fragment.png)
+1. Give the Content Fragment a name. For example, enter `Shorts` into the **Name** field.
 
 1. Tap or click **Create and open**.
 
+   ![Name the shoppable moment](assets/do-not-localize/add-reference-6-7-8.png)
+
 1. The editor opens for your new Content Fragment.
-   * Give the shoppable moment a name in the **Text** field such as `Yellow shorts`.
-   * Set an X and Y, location for where this shoppable moment should be overlaid.
-     * **X**: `-18`
-     * **Y**: `-28`
-   * Changes to the fragment are automatically saved by the editor
 
-   ![Edit the shoppable moment](assets/customize-app/edit-shoppable-moment.png)
+1. Give the shoppable moment a name in the **Text** field such as `Yellow shorts`.
 
-1. Tap or click **Preview** to test this positioning and make adjustments as needed.
+1. Set values for **X** and **Y**. This is where this call-out should be overlaid on the panel. Changes to the fragment are automatically saved by the editor
 
-   ![Preview your new shoppable moment](assets/customize-app/preview-demo-app-shoppable.png)
+   * **X**: `-5`
+   * **Y**: `-10`
 
-## You’ve learned to customize a sample React app! {#conclusion}
+1. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab. Click refresh on the browser to test the positioning and make adjustments as needed in the editor.
 
-In this module, you learned how to customize a sample React app. First you learned how to edit existing text. Then an image was swapped with another instance of that image. Finally you saw how a shoppable moment item is created and positioned.
+   ![Preview](assets/do-not-localize/add-reference-10-11-12.png)
 
-Be sure to check out the [Additional Resources section](#additional-resources) for additional resources about using AEM and its Content Fragments.
-
-If you'd like to learn how Content Fragments and headless content is created for consumption by custom apps, you can start by reviewing the module [Create the Content Structure for Your App.](content-structure.md)
-
-You can return to your trial home screen by clicking **Solutions** button at the top-right of the navigation bar and selecting **Experience Manager**.
-
-![Navigate home](assets/customize-app/home.png)
-
-## Additional Resources {#additional-resources}
-
-For more information about Content Fragments and AEM, consider reviewing this additional documentation.
-
-* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Complete documentation on Content Fragment models
-* [Content Fragments](/help/assets/content-fragments/content-fragments.md) -  Overview of Content Fragments and links to complete documentation on Content Fragments
-* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Documentation on how to navigate and use AEM for new users
+Now you understand how creating new content and referencing it as a Content Fragment in your app can be completed without any development cycles.
