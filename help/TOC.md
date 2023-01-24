@@ -63,6 +63,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-12-0.md)
       + [Release Notes for 2022.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-11-0.md)
       + [Release Notes for 2022.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-10-0.md)
       + [Release Notes for 2022.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
@@ -519,6 +520,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Use CAPTCHA in an Adaptive Form](/help/forms/captcha-adaptive-forms.md)
       + [Use Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
       +  [Apply Scribble Signature](/help/forms/signing-forms-using-scribble.md)
+      + [Add a table to an adaptive form](/help/forms/adaptive-forms-tables.md)
     + Configure layout and apply style to an Adaptive Form{#configure-layout-of-an-adaptive-form}
       + [Set layout of an Adaptive Form](/help/forms/layout-capabilities-adaptive-forms.md)
       + [Use Layout mode to resize components](/help/forms/resize-using-layout-mode.md)
@@ -786,6 +788,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
     + [API Reference Materials](/help/implementing/developing/reference-materials.md)
     + [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+    + [Generating Access Tokens for Server Side APIs (Legacy)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
     + [Quick Site Creation and Front-End Customization](/help/implementing/developing/introduction/quick-site-creation.md)
     + [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
     + [Customizing Site Templates and Themes](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
