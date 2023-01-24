@@ -51,7 +51,7 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 ### New features in [!DNL Assets] prerelease {#prerelease-features-assets}
 
-* Experience Manager Assets now supports [large-scale ingestion of assets from Google Cloud Platform](/help/assets/add-assets.md#asset-bulk-ingestor)) using the Bulk Import tool.
+* Experience Manager Assets now supports [large-scale ingestion of assets from Google Cloud Platform](/help/assets/add-assets.md#asset-bulk-ingestor) using the Bulk Import tool.
 
 
 
