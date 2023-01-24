@@ -5,7 +5,7 @@ description: Latest Maintenance Release Notes of [!DNL Adobe Experience Manager]
 
 # Maintenance Release Notes {#maintenance-release-notes}
 
-## Release 10488 {#release}
+## Release 10675 {#release}
 
 Please find below the continuous improvements for release 10488 applied to production today (January 25, 2022), which is an update from last release 9398. 
 
