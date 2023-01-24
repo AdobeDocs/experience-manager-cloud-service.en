@@ -100,6 +100,10 @@ When a report is generated, you are notified via <!-- through an email (optional
 
    Click **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
 
+   >[!NOTE]
+   >
+   >You can generate reports based on the events that occurred during the past 360 days. Experience Manager retains the user ID data for 30 days.
+
 ## Add custom columns to reports {#add-custom-columns}
 
 You can add custom columns to the following reports to display more data for your custom requirements:
