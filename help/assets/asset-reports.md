@@ -102,7 +102,7 @@ When a report is generated, you are notified via <!-- through an email (optional
 
    >[!NOTE]
    >
-   >You can generate reports based on the events that occurred during the past 360 days. Experience Manager retains the user ID data for 30 days.
+   >You can generate reports based on the events generated during the past 360 days. Experience Manager retains the user ID data for 30 days.
 
 ## Add custom columns to reports {#add-custom-columns}
 
