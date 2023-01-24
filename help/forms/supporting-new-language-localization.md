@@ -143,5 +143,5 @@ Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add
 * It is recommended to create translation project at the end of an Adaptive Form authoring.
 
 * When new fields are added in an existing Adaptive Form:
-  * Re-create the dictionary and run the translation job again, in case of the machine translation.
-  * Export the dictionary through `[localhost]/libs/cq/i18n/gui/translator.html`, update it and import it again, in case of human translation.
+  * **In case of the machine translation**: Re-create the dictionary and run the translation job again, .
+  * **In case of human translation**: Export the dictionary through `[localhost]/libs/cq/i18n/gui/translator.html`, update it and import it again.
