@@ -7,10 +7,24 @@ description: Latest Maintenance Release Notes of [!DNL Adobe Experience Manager]
 
 ## Release 10675 {#release}
 
-Please find below the continuous improvements for release 10488 applied to production today (January 25, 2022), which is an update from last release 9398. 
+Summarized below are the continuous improvements for release 10675, which was publicly released on January 18th 2023. This release is an update from release 9850. 
+
+Note that feature activation will provide you full features of the release. You can find more informations on features here : 
+
+### Core Components {#corecomponents}
+Version 2.21.2
 
 ### Sites {#sites}
+Total Changes : 85 Changes
 
-SITES-XXXX: changes and bug fixes
-SITES-XXXX: changes and bug fixes
+### Assets {#assets}
+Total Changes : 113 Changes
 
+### Forms {#forms}
+Total Changes : 207 Changes
+
+### Dispatcher {#dispatcher}
+Total Changes : 131 changes
+
+### Helm Chart {#helmchart}
+Total Changes : 284 changes
