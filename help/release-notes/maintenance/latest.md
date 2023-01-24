@@ -12,19 +12,25 @@ Summarized below are the continuous improvements for release 10675, which was pu
 Note that feature activation will provide you full features of the release. You can find more informations on features here : 
 
 ### Core Components {#corecomponents}
+
 Version 2.21.2
 
 ### Sites {#sites}
+
 Total Changes : 85 Changes
 
 ### Assets {#assets}
+
 Total Changes : 113 Changes
 
 ### Forms {#forms}
+
 Total Changes : 207 Changes
 
 ### Dispatcher {#dispatcher}
+
 Total Changes : 131 changes
 
 ### Helm Chart {#helmchart}
+
 Total Changes : 284 changes
