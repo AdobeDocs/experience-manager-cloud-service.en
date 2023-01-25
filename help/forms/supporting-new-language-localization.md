@@ -100,7 +100,7 @@ Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hie
 
 Commit the changes to the GIT repository after adding a new locale support. Deploy your code using the full stack pipeline. Learn [how to set up a pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) to add new locale support.
 
-Once the pipeline is complete, the newly added locale appears in the AEM environment. You can validate it by clicking on **Add Dictionary** option in the Forms tab. 
+Once the pipeline is complete, the newly added locale appears in the AEM environment. 
 
 ### Use added locale in Adaptive Forms {#use-added-locale-in-af}
 
