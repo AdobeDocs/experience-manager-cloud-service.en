@@ -164,7 +164,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Package Manager - Migrating Mutable Content Packages"
->abstract="Explore usage of package manager for use cases where a content package should be installed as “one off” which includes importing specific content from production on to staging in order to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments and more."
+>abstract="Explore usage of package manager for use cases where a content package should be installed as "one off" which includes importing specific content from production on to staging in order to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments and more."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Content Transfer Tool"
 
 There are use cases where a content package should be installed as a "one off". For example importing specific content from production on to staging in order to debug a production issue. For these scenarios, [Package Manager](/help/implementing/developing/tools/package-manager.md) can be used in AEM as a Cloud Service environments.
@@ -275,7 +275,7 @@ If a failure is reported or detected after the deployment, it is possible that a
 
 ## Runmodes {#runmodes}
 
-In existing AEM solutions, customers have the option of running instances with arbitrary run modes and apply OSGI configuration or install OSGI bundles to those specific instances. Run modes that are defined typically include the *service* (author and publish) and the environment (dev, stage, prod).
+In existing AEM solutions, customers have the option of running instances with arbitrary run modes and apply OSGI configuration or install OSGI bundles to those specific instances. Run modes that are defined typically include the *service* (author and publish) and the environment (rde, dev, stage, prod).
 
 AEM as a Cloud Service on the other hand is more opinionated about which run modes are available and how OSGI bundles and OSGI configuration can be mapped to them:
 
@@ -286,16 +286,19 @@ Like the existing AEM solutions, there is no way to use run modes to install jus
 
 The supported runmode configurations are:
 
-* **config** (*The default, applies to all AEM Services*)
+* **config** (*The default, applies to all AEM services*)
 * **config.author** (*Applies to all AEM Author service*)
 * **config.author.dev** (*Applies to AEM Dev Author service*)
+* **config.author.rde** (*Applies to AEM RDE Author service*)
 * **config.author.stage** (*Applies to AEM Staging Author service*)
 * **config.author.prod** (*Applies to AEM Production Author service*)
 * **config.publish** (*Applies to AEM Publish service*)
 * **config.publish.dev** (*Applies to AEM Dev Publish service*)
+* **config.publish.rde** (*Applies to AEM RDE Publish service*)
 * **config.publish.stage** (*Applies to AEM Staging Publish service*)
 * **config.publish.prod** (*Applies to AEM Production Publish service*) 
 * **config.dev** (*Applies to AEM Dev services*)
+* **config.rde** (*Applies to AEM Rapid Development Environment (RDE) services*)
 * **config.stage** (*Applies to AEM Staging services*)
 * **config.prod** (*Applies to AEM Production services*)
 
