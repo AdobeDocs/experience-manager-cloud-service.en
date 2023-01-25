@@ -116,6 +116,15 @@ Once you've added an RDE for your program using Cloud Manager, you can interact 
 
    `aio cloudmanager:environment:open-developer-console`
 
+>[!TIP]
+>
+>   In case, if you see the `Warning: cloudmanager:list-programs is not a aio command.` error, you need to install the [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) by running below command:
+>
+>   ```
+>   aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+>   ```
+
+
 ## Using RDE while Developing a New Feature {#using-rde-while-developing-a-new-feature}
 
 Adobe recommends the following workflow for developing a new feature:
