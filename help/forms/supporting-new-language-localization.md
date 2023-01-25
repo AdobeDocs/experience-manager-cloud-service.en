@@ -72,9 +72,10 @@ To add support for a new locale at Adaptive Forms runtime:
 
 1. Add **js.txt** containing the following:
 
-        *text
-        i18n.js
-        LogMessages.js*
+    ```text
+      i18n.js
+        LogMessages.js
+    ```
 
 ### 4. Add locale support for the dictionary {#add-locale-support-for-the-dictionary-br}
 
@@ -108,8 +109,7 @@ Steps to use and render an Adaptive Form using a newly added locale:
 
 1. Log in to your AEM author instance.
 1. Go to **Forms** >  **Forms and Documents**.
-1. Select an Adaptive Form and click **Add Dictionary**.
-1. Once **Add Dictionary** is clicked, **Add Dictionary To Translation Project** wizard appears.
+1. Select an Adaptive Form and click **Add Dictionary** and **Add Dictionary To Translation Project** wizard appears.
 1. Specify the **Project Title** and select the **Target Languages** from the drop-down menu in the **Add Dictionary To Translation Project** wizard.
 1. Click **Done** and execute the created translation project.
 1. Select an Adaptive Form and click **Preview as HTML**.
