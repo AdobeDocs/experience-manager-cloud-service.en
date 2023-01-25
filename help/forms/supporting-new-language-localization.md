@@ -4,7 +4,7 @@ seo-title: Supporting new locales for adaptive forms localization
 description: AEM Forms allow you to add new locales for localizing adaptive forms. English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales.
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
 ---
-# Supporting new locales for adaptive forms localization{#supporting-new-locales-for-adaptive-forms-localization}
+# Supporting new locales for Adaptive Forms localization{#supporting-new-locales-for-adaptive-forms-localization}
 
 ## About locale dictionaries {#about-locale-dictionaries}
 
@@ -23,22 +23,22 @@ Steps to support new localization for AEM Forms:
 
 AEM Forms currently support localization of Adaptive Forms content in English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales.
 
-To add support for a new locale at adaptive forms runtime:
+To add support for a new locale at Adaptive Forms runtime:
 
 1. [Clone your repository](#1-clone-the-repository-clone-the-repository)
 1. [Add a locale to the GuideLocalizationService service](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [Add locale-name specific folder](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
 1. [Add XFA client library for a locale](#3-add-xfa-client-library-for-a-locale)
-1. [Add adaptive form client library for a locale](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+1. [Add Adaptive Form client library for a locale](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [Add locale support for the dictionary](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [Commit the changes in the repository and deploy the pipeline](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
 ### 1. Clone the repository {#clone-the-repository}
 
-1. From the command line, navigate to where you would like to clone the repository.
+1. From the command line, navigate to where you would like to clone the Forms Cloud Service repository.
 1. Execute the command that you [retrieved from Cloud Manager.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) It is similar to `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. 
 1. Use the git user name and password to clone the repository. 
-1. Open the cloned repository folder in your preferred editor. 
+1. Open the cloned Forms Cloud Service repository folder in your preferred editor. 
 
 ### 2. Add a locale to the Guide Localization service {#add-a-locale-to-the-guide-localization-service-br}
 
@@ -51,18 +51,18 @@ To add support for a new locale at adaptive forms runtime:
 ### 3. Add locale-name specific folder client library {#add-locale-name-specific-folder}
 
 1. In UI.content folder, create `etc/clientlibs` folder.
-1. Further create a folder named as `locale-name` under `etc/clientlibs/locale_name` to serve as a container for xfa and af clientlibs.
+1. Further create a folder named as `locale-name` under `etc/clientlibs` to serve as a container for xfa and af clientlibs.
 
 #### 3.1 Add XFA client library for a locale in locale-name folder 
 
-1. Create a node named as `[locale-name]_xfa` and type as `cq:ClientLibraryFolder` under `etc/<folderHierarchy>`, with category `xfaforms.I18N.<locale>`, and add the following files:
+1. Create a node named as `[locale-name]_xfa` and type as `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, with category `xfaforms.I18N.<locale>`, and add the following files:
 * **I18N.js** defining `xfalib.locale.Strings` for the `<locale>` as defined in `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
 * **js.txt** containing the following:
             */libs/fd/xfaforms/clientlibs/I18N/Namespace.js
             I18N.js
             /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
             
-#### 3.2. Add adaptive form client library for a locale locale-name folder {#add-adaptive-form-client-library-for-a-locale-br}
+#### 3.2. Add Adaptive Form client library for a locale locale-name folder {#add-adaptive-form-client-library-for-a-locale-br}
 
 1. Create a node named as `[locale-name]_af` and type as `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, with category as `guides.I18N.<locale>` and and dependencies as `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` and `guide.common`.
 1. Create a folder named as `javascript` and add the following files:
@@ -104,6 +104,18 @@ Once the pipeline is complete, the newly added locale appears in the AEM environ
 
 ### Use added locale in Adaptive Forms {#use-added-locale-in-af}
 
+Steps to use and render an Adaptive Form using a newly added locale:
+
+1. Log in to your AEM author instance.
+1. Go to **Forms** >  **Forms and Documents**.
+1. Select an Adaptive Form and click **Add Dictionary**.
+1. Once **Add Dictionary** is clicked, **Add Dictionary To Translation Project** wizard appears.
+1. Specify the **Project Title** and select the **Target Languages** from the drop-down menu in the **Add Dictionary To Translation Project** wizard.
+1. Click **Done** and execute the created translation project.
+1. Select an Adaptive Form and click **Preview as HTML**.
+1. Add `&afAcceptLang=<locale-name>` in the URL of an Adaptive Form.
+1. Refresh the page and Adaptive Form is rendered in a specified locale. 
+
 There are two methods to identify the locale of an Adaptive Form. When an Adaptive Form is rendered, it identifies the requested locale by : 
 
 * looking at the `[local]` selector in the adaptive form URL. The format of the URL is `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Using `[local]` selector allows caching an Adaptive Form. 
@@ -118,17 +130,6 @@ There are two methods to identify the locale of an Adaptive Form. When an Adapti
 
 If a client library for the requested locale doesn't exist, it checks for a client library for the language code present in the locale. For example, if the requested locale is `en_ZA` (South African English) and the client library for `en_ZA` doesn't exist, the adaptive form uses the client library for `en` (English) language, if it exists. However, if none of them exist, the Adaptive Form uses the dictionary for `en` locale.
 
-Steps to use and render an Adaptive Form using a newly added locale:
-
-1. Log in to your AEM author instance.
-1. Go to **Forms** >  **Forms and Documents**.
-1. Select an Adaptive Form and click **Add Dictionary**.
-1. Once **Add Dictionary** is clicked, **Add Dictionary To Translation Project** wizard appears.
-1. Specify the **Project Title** and select the **Target Languages** from the drop-down menu in the **Add Dictionary To Translation Project** wizard.
-1. Click **Done** and execute the created translation project.
-1. Select an Adaptive Form and click **Preview as HTML**.
-1. Add `&afAcceptLang=<locale-name>` in the URL of an Adaptive Form.
-1. Refresh the page and Adaptive Form is rendered in a specified locale. 
 
 Once the locale is identified, the Adaptive Form picks the form-specific dictionary. If the form-specific dictionary for the requested locale is not found, it uses the dictionary for language in which Adaptive Form is authored.
 
@@ -141,5 +142,5 @@ Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add
 * Adobe recommends to create translation project after creating an Adaptive Form.
 
 * When new fields are added in an existing Adaptive Form:
-  * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. Hence, it is advised to create  a translation project after  
-  * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary with the newly added fields and upload it.
+  * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
+  * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
