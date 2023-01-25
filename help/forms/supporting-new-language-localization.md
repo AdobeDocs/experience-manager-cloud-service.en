@@ -19,7 +19,7 @@ Steps to support new localization for AEM Forms:
 1. [Add localization support for non-supported locales](#add-localization-support-for-non-supported-locales-add-localization-support-for-non-supported-locales)
 1. [Use added locales in Adaptive Forms](#use-added-locale-in-adaptive-forms-use-added-locale-in-af)
 
-## 1. Add localization support for non-supported locales {#add-localization-support-for-non-supported-locales}
+## Add localization support for non-supported locales {#add-localization-support-for-non-supported-locales}
 
 AEM Forms currently support localization of Adaptive Forms content in English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales.
 
