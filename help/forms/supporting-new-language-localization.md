@@ -72,9 +72,9 @@ To add support for a new locale at Adaptive Forms runtime:
 
 1. Add **js.txt** containing the following:
 
-    ```text
+    ```
       i18n.js
-        LogMessages.js
+      LogMessages.js
     ```
 
 ### 4. Add locale support for the dictionary {#add-locale-support-for-the-dictionary-br}
