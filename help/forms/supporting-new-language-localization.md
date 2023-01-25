@@ -28,8 +28,8 @@ To add support for a new locale at Adaptive Forms runtime:
 1. [Clone your repository](#1-clone-the-repository-clone-the-repository)
 1. [Add a locale to the GuideLocalizationService service](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [Add locale-name specific folder](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-  * [Add XFA client library for a locale](#3-add-xfa-client-library-for-a-locale)
-  * [Add Adaptive Form client library for a locale](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+    * [Add XFA client library for a locale](#3-add-xfa-client-library-for-a-locale)
+    * [Add Adaptive Form client library for a locale](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [Add locale support for the dictionary](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [Commit the changes in the repository and deploy the pipeline](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
