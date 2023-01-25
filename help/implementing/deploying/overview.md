@@ -165,7 +165,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Package Manager - Migrating Mutable Content Packages"
 >abstract="Explore usage of package manager for use cases where a content package should be installed as "one off" which includes importing specific content from production on to staging in order to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments and more."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Content Transfer Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#cloud-migration" text="Content Transfer Tool"
 
 There are use cases where a content package should be installed as a "one off". For example importing specific content from production on to staging in order to debug a production issue. For these scenarios, [Package Manager](/help/implementing/developing/tools/package-manager.md) can be used in AEM as a Cloud Service environments.
 
