@@ -28,8 +28,8 @@ To add support for a new locale at Adaptive Forms runtime:
 1. [Clone your repository](#1-clone-the-repository-clone-the-repository)
 1. [Add a locale to the GuideLocalizationService service](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [Add locale-name specific folder](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-  3.1 [Add XFA client library for a locale](#3-add-xfa-client-library-for-a-locale)
-  3.2 [Add Adaptive Form client library for a locale](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+    * [Add XFA client library for a locale](#3-add-xfa-client-library-for-a-locale)
+    * [Add Adaptive Form client library for a locale](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [Add locale support for the dictionary](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [Commit the changes in the repository and deploy the pipeline](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
@@ -56,12 +56,12 @@ To add support for a new locale at Adaptive Forms runtime:
 #### 3.1 Add XFA client library for a locale in locale-name folder 
 
 1. Create a node named as `[locale-name]_xfa` and type as `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, with category `xfaforms.I18N.<locale>`, and add the following files:
-* **I18N.js** defining `xfalib.locale.Strings` for the `<locale>` as defined in `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
-* **js.txt** containing the following:
-            */libs/fd/xfaforms/clientlibs/I18N/Namespace.js
-            I18N.js
-            /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
-            
+    * **I18N.js** defining `xfalib.locale.Strings` for the `<locale>` as defined in `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
+    * **js.txt** containing the following:
+              */libs/fd/xfaforms/clientlibs/I18N/Namespace.js
+              I18N.js
+              /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+              
 #### 3.2. Add Adaptive Form client library for a locale locale-name folder {#add-adaptive-form-client-library-for-a-locale-br}
 
 1. Create a node named as `[locale-name]_af` and type as `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, with category as `guides.I18N.<locale>` and and dependencies as `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` and `guide.common`.
@@ -72,9 +72,9 @@ To add support for a new locale at Adaptive Forms runtime:
 
 1. Add **js.txt** containing the following:
 
-    ```text
+    ```
       i18n.js
-        LogMessages.js
+      LogMessages.js
     ```
 
 ### 4. Add locale support for the dictionary {#add-locale-support-for-the-dictionary-br}
@@ -137,7 +137,7 @@ If no locale information is present, Adaptive Form is delivered in the original 
 
 Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add support for new locale. You need to change the content of the folder in the required locale.
 
-### Best Practices to support for new localization {#best-practices}
+## Best Practices to support for new localization {#best-practices}
 
 * Adobe recommends to create translation project after creating an Adaptive Form.
 
