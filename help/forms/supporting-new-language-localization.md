@@ -56,8 +56,8 @@ To add support for a new locale at Adaptive Forms runtime:
 #### 3.1 Add XFA client library for a locale in locale-name folder 
 
 1. Create a node named as `[locale-name]_xfa` and type as `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, with category `xfaforms.I18N.<locale>`, and add the following files:
-  * **I18N.js** defining `xfalib.locale.Strings` for the `<locale>` as defined in `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
-  * **js.txt** containing the following:
+    * **I18N.js** defining `xfalib.locale.Strings` for the `<locale>` as defined in `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
+    * **js.txt** containing the following:
               */libs/fd/xfaforms/clientlibs/I18N/Namespace.js
               I18N.js
               /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
