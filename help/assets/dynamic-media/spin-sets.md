@@ -1,6 +1,7 @@
 ---
 title: Spin Sets
 description: Learn how to work with spin sets in Dynamic Media.
+contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
@@ -9,7 +10,7 @@ exl-id: ed470472-62d9-4684-971b-30df3919c180
 
 A Spin Set simulates the real-world act of turning an object to examine it. Spin Sets make it possible to view items from any angle, gaining the key visual details from any angle.
 
-A Spin Set simulates a 360&deg; viewing experience. Dynamic Media offers single-axis Spin Sets in which viewers can rotate an item. Moreover, users can “free-form” zoom and pan any of the views with a few simple mouse-clicks. In this way, users can examine an item more closely from a particular viewpoint.
+A Spin Set simulates a 360&deg; viewing experience. Dynamic Media offers single-axis Spin Sets in which viewers can rotate an item. Moreover, users can "free-form" zoom and pan any of the views with a few simple mouse-clicks. In this way, users can examine an item more closely from a particular viewpoint.
 
 Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In addition, if the Spin Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
 
