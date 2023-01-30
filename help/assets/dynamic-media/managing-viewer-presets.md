@@ -1,6 +1,7 @@
 ---
 title: Manage viewer presets
 description: Learn how to create and manage viewer presets in Dynamic Media.
+contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
@@ -60,9 +61,9 @@ All out-of-the-box Viewer Presets that come with Dynamic Media are fully compati
 * Desktops
 * Apple iPhone
 * Apple iPad
-* Android™ Smartphone
-* Android™ Tablet
-<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
+* Android&trade; Smartphone
+* Android&trade; Tablet
+<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry&reg;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 ### Rich media types for Viewer Presets {#rich-media-types-for-viewer-presets}
 
@@ -130,7 +131,7 @@ Administrators can add and customize the following rich media types when creatin
    <td><strong>Vertical Zoom</strong></td>
    <td><p>The Vertical Zoom viewer lets you maximize a product imagery viewing experience to give your users the best representation of a product. The vertical location of swatches does the following:</p>
     <ul>
-     <li>Ensures that swatches are “above the fold”.<br/> With horizontal swatches, depending on the user’s desktop screen size, swatches are not visible until the user scrolled down the page. By placing the swatches vertically in the viewer, it ensures that they are visible no matter the user's screen size.</li>
+     <li>Ensures that swatches are "above the fold".<br/> With horizontal swatches, depending on the user's desktop screen size, swatches are not visible until the user scrolled down the page. By placing the swatches vertically in the viewer, it ensures that they are visible no matter the user's screen size.</li>
      <li>Maximizes main image size.<br /> With horizontal swatches, it is necessary to reserve space on the page to ensure that they are visible. This positioning decreased the size of the main image. With a vertical swatch layout, however, you do not need to allocate this space. As such, you can maximize the main image size.</li>
     </ul> </td>
   </tr>
@@ -306,7 +307,7 @@ See "Viewers release notes" in the table of contents of the [Viewers Reference G
 
 ### Supported mobile viewers gestures matrix {#supported-mobile-viewers-gestures-matrix}
 
-The following table identifies the mobile viewer gestures that are supported on iOS, Android™ 2.x, and Android™ 3.x devices.
+The following table identifies the mobile viewer gestures that are supported on iOS, Android&trade; 2.x, and Android&trade; 3.x devices.
 
 <table>
  <tbody>
@@ -337,14 +338,14 @@ The following table identifies the mobile viewer gestures that are supported on 
   <tr>
    <td><p><strong>Pinch open</strong></p> </td>
    <td><p>Does not apply</p> </td>
-   <td><p>Zooms in (iOS and Android™ 3x only)</p> </td>
-   <td><p>Zooms in (iOS and Android™ 3x only)</p> </td>
+   <td><p>Zooms in (iOS and Android&trade; 3x only)</p> </td>
+   <td><p>Zooms in (iOS and Android&trade; 3x only)</p> </td>
   </tr>
   <tr>
    <td><p><strong>Pinch close</strong></p> </td>
    <td><p>Does not apply</p> </td>
-   <td><p>Zooms out (iOS and Android™ 3x only)</p> </td>
-   <td><p>Zooms out (iOS and Android™ 3x only)</p> </td>
+   <td><p>Zooms out (iOS and Android&trade; 3x only)</p> </td>
+   <td><p>Zooms out (iOS and Android&trade; 3x only)</p> </td>
   </tr>
   <tr>
    <td><p><strong>Swipe</strong></p> </td>
