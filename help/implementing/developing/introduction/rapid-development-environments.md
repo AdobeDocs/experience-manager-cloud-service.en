@@ -386,6 +386,20 @@ You can also reset the RDE using the ellipsis button directly from the **Environ
 
 For more information about how to use Cloud Manager to manage your environments, please see [the Cloud Manager documentation.](/help/implementing/cloud-manager/manage-environments.md)
 
+## Runmodes {#runmodes}
+
+RDE specific OSGI configuration can be applied by using suffixes on the folder name, like in the examples below:
+
+* `config.rde`
+* `config.author.rde`
+* `config.publish.rde`
+
+See the [runmode documentation](/help/implementing/deploying/overview.md#runmodes) for general information about runmodes.
+
+>[!NOTE]
+>
+>RDE OSGI configuration is unique in that it inherits the values of any OSGI properties declared by the bundle's `dev` run mode.
+
 ## Logging {#logging}
 
 Log levels can be set by modifying OSGi configurations. Check the [documentation](/help/implementing/developing/introduction/logging.md) for more information.
