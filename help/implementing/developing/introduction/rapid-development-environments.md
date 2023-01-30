@@ -45,7 +45,7 @@ Follow these steps to use Cloud Manager to create an RDE for your program.
      ![Environments tab](/help/implementing/cloud-manager/assets/environments-tab.png)
 
    * The **Add Environment** option may be disabled due to lack of permissions or depending on the licensed resources.
-   
+
 1. In the **Add environment** dialog that appears:
 
    * Select **Rapid Development** under the **Select environment type** heading.
@@ -66,6 +66,11 @@ For more information about using Cloud Manager to create environments, manage wh
 
 Once you've added an RDE for your program using Cloud Manager, you can interact with it by setting up the command-line tools as described in the following steps:
 
+>[!IMPORTANT]
+>
+>Make sure you have latest version of [Node and NPM installed](https://nodejs.org/en/download/) for Adobe I/O CLI and related plugins to work properly.
+
+
 1. Install the Adobe I/O CLI tools according by following the procedure [here](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 1. Install the Adobe I/O CLI tools cloud manager plugin, and configure them as described [here](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 1. Install the Adobe I/O CLI tools AEM RDE plugin by running these commands:
@@ -76,7 +81,7 @@ Once you've added an RDE for your program using Cloud Manager, you can interact 
    ```
 
 1. Configure the cloud manager plugin for your organization ID:
-   
+
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
    and replace the alpha numeric string with your own organization ID, which can be looked up using the strategy [here](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
@@ -115,6 +120,15 @@ Once you've added an RDE for your program using Cloud Manager, you can interact 
    Alternatively, you can confirm that you have this developer role if you can login to the developer console by running this command:
 
    `aio cloudmanager:environment:open-developer-console`
+
+   >[!TIP]
+   >
+   >If you see the `Warning: cloudmanager:list-programs is not a aio command.` error, you need to install the [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) by running the command below:
+   >
+   >```
+   >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+   >```
+
 
 ## Using RDE while Developing a New Feature {#using-rde-while-developing-a-new-feature}
 
@@ -371,6 +385,20 @@ You can also reset the RDE using the ellipsis button directly from the **Environ
 ![Reset RDE from Environments card](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
 For more information about how to use Cloud Manager to manage your environments, please see [the Cloud Manager documentation.](/help/implementing/cloud-manager/manage-environments.md)
+
+## Runmodes {#runmodes}
+
+RDE specific OSGI configuration can be applied by using suffixes on the folder name, like in the examples below:
+
+* `config.rde`
+* `config.author.rde`
+* `config.publish.rde`
+
+See the [runmode documentation](/help/implementing/deploying/overview.md#runmodes) for general information about runmodes.
+
+>[!NOTE]
+>
+>RDE OSGI configuration is unique in that it inherits the values of any OSGI properties declared by the bundle's `dev` run mode.
 
 ## Logging {#logging}
 

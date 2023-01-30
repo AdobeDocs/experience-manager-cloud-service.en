@@ -33,23 +33,23 @@ You start on the GraphQL Explorer in a new tab. Here you can build and validate 
 
    ```text
    {
-       adventureList {
-         items {
-            _path
-            adventureTitle
-            adventurePrice
-            adventureTripLength
-            adventurePrimaryImage {
-              ... on ImageRef {
-               _path
-               mimeType
-               width
-               height
-             }
-           }
+    adventureList {
+     items {
+       _path
+       title
+       price
+       tripLength
+       primaryImage {
+         ... on ImageRef {
+           _path
+           mimeType
+           width
+           height
          }
-      }
+       }
+     }
     }
+   }
    ```
 
 1. Replace the existing content in the query editor by pasting the copied code.
