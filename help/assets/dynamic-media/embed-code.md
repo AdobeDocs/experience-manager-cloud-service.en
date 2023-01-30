@@ -1,6 +1,7 @@
 ---
 title: Embed the Dynamic Media Video or Image viewer on a web page
 description: Learn how to embed Dynamic Media video or image assets on a web page.
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61

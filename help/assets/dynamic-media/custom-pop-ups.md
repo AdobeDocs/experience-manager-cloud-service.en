@@ -1,6 +1,7 @@
 ---
 title: Create custom pop-ups using Quickview
-description: "Learn about how the default Quickview is used in ecommerce experiences whereby a pop-up window is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-up window."
+description: Learn about how the default Quickview is used in ecommerce experiences whereby a pop-up window is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-up window.
+contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
