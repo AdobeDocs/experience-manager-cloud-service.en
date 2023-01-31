@@ -197,6 +197,8 @@ Optionally, you can reference a remote repository:
 
 `aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
 
+By default, artifacts are deployed to both author and publish tiers, but the "-s" flag can be used to target a specific tier.
+
 <u>Deploying an OSGI Configuration</u>
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
@@ -410,9 +412,10 @@ While the RDE is in many ways similar to a Cloud Development Environment, there 
 
 For these reasons, it is recommended that after validating code on an RDE environment, you should deploy the code to a Cloud Development Environment using the non-production pipeline. Finally, test the code before deploying with the production pipeline.
 
-Also note the following solution-specific considerations: 
+Also note the following considerations: 
 
 * RDEs do not currently support viewing and debugging front-end code deployed using the Cloud Manager Front-End Pipeline.
+* RDEs do not currently support the prerelease channel.
 
 
 ## How many RDEs do I need? {#how-many-rds-do-i-need}
