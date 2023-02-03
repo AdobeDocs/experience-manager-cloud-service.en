@@ -141,7 +141,7 @@ If you don't receive an email from New Relic:
 The following limitations apply to adding users to New Relic One:
 
 * A maximum of 30 users can be added. If the maximum number of users has been reached, remove users in order to be able to add new users.
-* Users added to New Relic will be of the type **Restricted** refer to [the New Relic documentation for details.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&text=One%20or%20more%20individuals%20who,change)%20any%20New%20Relic%20features.)
+* Users added to New Relic will be of the type **Restricted** refer to [the New Relic documentation for details.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service only offers the New Relic One APM solution and does not provide support for alerting, logging, or API integrations.
 
 For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, please open a support ticket via the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).

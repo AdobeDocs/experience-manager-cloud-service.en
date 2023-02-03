@@ -63,6 +63,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-12-0.md)
       + [Release Notes for 2022.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-11-0.md)
       + [Release Notes for 2022.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-10-0.md)
       + [Release Notes for 2022.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
@@ -518,7 +519,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
       + [Use CAPTCHA in an Adaptive Form](/help/forms/captcha-adaptive-forms.md)
       + [Use Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-      +  [Apply Scribble Signature](/help/forms/signing-forms-using-scribble.md)
+      + [Apply Scribble Signature](/help/forms/signing-forms-using-scribble.md)
+      + [Supporting New Language Localization](/help/forms/supporting-new-language-localization.md)
+      + [Add a table to an adaptive form](/help/forms/adaptive-forms-tables.md)
     + Configure layout and apply style to an Adaptive Form{#configure-layout-of-an-adaptive-form}
       + [Set layout of an Adaptive Form](/help/forms/layout-capabilities-adaptive-forms.md)
       + [Use Layout mode to resize components](/help/forms/resize-using-layout-mode.md)
@@ -779,12 +782,14 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
     + [AEM Project Repository Structure Package](/help/implementing/developing/introduction/repository-structure-package.md)
     + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+    + [AEM Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md)
     + [AEM as a Cloud Service Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md)
     + [Logging](/help/implementing/developing/introduction/logging.md)
     + [Configurations and the Configuration Browser](/help/implementing/developing/introduction/configurations.md)
     + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
     + [API Reference Materials](/help/implementing/developing/reference-materials.md)
     + [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+    + [Generating Access Tokens for Server Side APIs (Legacy)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
     + [Quick Site Creation and Front-End Customization](/help/implementing/developing/introduction/quick-site-creation.md)
     + [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
     + [Customizing Site Templates and Themes](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
