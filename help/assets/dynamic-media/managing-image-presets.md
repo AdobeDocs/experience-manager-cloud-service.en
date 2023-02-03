@@ -1,6 +1,7 @@
 ---
 title: Manage Image Presets
 description: Learn about image presets and how to create, modify, and manage image presets.
+contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
@@ -47,7 +48,7 @@ You manage your image presets in Experience Manager by selecting the Experience 
 >
 >The system shows various renditions when you select **[!UICONTROL Renditions]** in an asset's Detail View. You can increase or decrease the number of image presets that display. See [Increase the number of image presets that are displayed](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Adobe Illustrator (AI), PostScript® (EPS), and PDF file formats {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Adobe Illustrator (AI), PostScript&reg; (EPS), and PDF file formats {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
 If you intend to support the ingestion of AI, EPS, and PDF files so that you can generate dynamic renditions of these file formats, review the following information before you create image presets.
 
@@ -100,7 +101,7 @@ Using the default process arguments, the first page of a PDF/AI document is rast
 
 Max Width and Max Height limit the resolution at which to rasterize. For example, if the maximums are unchanged, and Resolution is set to 300 ppi, a US Letter document is rasterized at 186 ppi. That is, the document is 1581 x 2046 pixels.
 
-The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java™ Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size.
+The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java&trade; Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size.
 
 ### InDesign (INDD) file format {#indesign-indd-file-format}
 
@@ -184,7 +185,7 @@ Create image presets so you can apply settings consistently across images when y
 
 If you intend to support the ingestion of AI, PDF, and EPS files so that you can generate dynamic rendition of these file formats, review the following information before you create image presets.
 
-See [Adobe Illustrator (AI), PostScript® (EPS), and PDF file formats](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
+See [Adobe Illustrator (AI), PostScript&reg; (EPS), and PDF file formats](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 If you intend to support the ingestion of INDD files so that you can generate dynamic rendition of this file format, review the following information before you create image presets.
 
@@ -223,7 +224,7 @@ Leaving them blank tells Experience Manager that this image preset is responsive
 
 ### Image preset options {#image-preset-options}
 
-When you create or edit image presets, you have the options described in this section. In addition, Adobe recommends these “best practice” option choices to start:
+When you create or edit image presets, you have the options described in this section. In addition, Adobe recommends these "best practice" option choices to start:
 
 * **[!UICONTROL Format]** (**[!UICONTROL Basic]** tab) - Select **[!UICONTROL JPEG]** or another format that meets your requirements. All web browsers support the JPEG image format; it offers a good balance between small files sizes and image quality. However, JPEG format images use a lossy compression scheme that can introduce unwanted image artifacts if the compression setting is too low. For that reason, Adobe recommends setting the compression quality to 75. This setting offers a good balance between image quality and small file size.
 
@@ -280,7 +281,7 @@ When you create or edit image presets, you have the options described in this se
     <ul>
      <li>Select <strong>None</strong> if you want to disable sharpening.</li>
      <li>Select <strong>Sharpen </strong>to apply a basic sharpening filter to the image after all scaling takes place. Sharpening can help compensate for blurriness that can result when you display an image at a different size. </li>
-     <li>Select<strong> Unsharp mask</strong> if you want to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels) and a threshold of contrast that is ignored. This effect uses the same options as Photoshop’s “Unsharp Mask” filter.</li>
+     <li>Select<strong> Unsharp mask</strong> if you want to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels) and a threshold of contrast that is ignored. This effect uses the same options as Photoshop's "Unsharp Mask" filter.</li>
     </ul> <p>In <strong>Unsharp Mask</strong>, you have the following options:</p>
     <ul>
      <li><strong>Amount</strong> - Controls the amount of contrast applied to edge pixels. The default real number value is 1.0. For high-resolution images, you can increase it to as high as 5.0. Think of Amount as a measure of filter intensity.</li>

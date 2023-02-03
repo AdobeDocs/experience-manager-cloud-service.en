@@ -1,6 +1,7 @@
 ---
 title: Interactive images
 description: Learn how to work with Interactive Images in Dynamic Media.
+contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
@@ -56,7 +57,7 @@ See [(Optional) Creating an Interactive Image viewer preset](/help/assets/dynami
 >This task is only required if the following are true:
 >
 >* You want to add interactivity to your image by triggering to Quick views.
->* Your implementation of Experience Manager does *not* use an eCommerce integration framework to pull product data into Experience Manager from any eCommerce solution. Such solutions include IBM® WebSphere® Commerce, Elastic Path, SAP Hybris, or Intershop.
+>* Your implementation of Experience Manager does *not* use an eCommerce integration framework to pull product data into Experience Manager from any eCommerce solution. Such solutions include IBM&reg; WebSphere&reg; Commerce, Elastic Path, SAP Hybris, or Intershop.
 >
 >If your implementation of Experience Manager uses eCommerce, you can skip this task and proceed to the next task.
 
@@ -141,7 +142,7 @@ Consider the following examples of Quickview URLs and their resulting hotspot va
 
 You can apply the same approach used in the three examples above to the [demo web page](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
-The demo web page has several product thumbnails, each having a Quickview button labeled “See More”. With your web browser's debugging tool still activated, select each button and note the recorded Quickview URLs. After you activate all four product Quick views available on the page, you have the following list of Quickview requests made to the backend:
+The demo web page has several product thumbnails, each having a Quickview button labeled "See More". With your web browser's debugging tool still activated, select each button and note the recorded Quickview URLs. After you activate all four product Quick views available on the page, you have the following list of Quickview requests made to the backend:
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
@@ -492,4 +493,4 @@ The [final demo website with the fully integrated interactive image](https://exp
 
 ## Create custom pop-ups using Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-See [Create custom pop-up Windows® using Quickview](/help/assets/dynamic-media/custom-pop-ups.md).
+See [Create custom pop-up Windows&reg; using Quickview](/help/assets/dynamic-media/custom-pop-ups.md).
