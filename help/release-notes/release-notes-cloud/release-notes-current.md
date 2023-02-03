@@ -27,6 +27,12 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413479/?quality=12)
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### New features in [!DNL Sites] prerelease {#prerelease-features-sites}
+
+* GraphQL [Paging](/help/headless/graphql-api/content-fragments.md#paging) and [Sorting](/help/headless/graphql-api/content-fragments.md#sorting)
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
