@@ -5,6 +5,8 @@ description: Latest Maintenance Release Notes of [!DNL Adobe Experience Manager]
 
 # Maintenance Release Notes {#maintenance-release-notes}
 
+The following section outlines the technical Release Notes for the latest maintenance release of Experience Manager as a Cloud Service.
+
 ## Release 10912 {#release-10912}
  
 >[!IMPORTANT]
