@@ -1,6 +1,7 @@
 ---
 title: Interactive Videos
 description: Learn how to work with interactive video and shoppable video in Dynamic Media.
+contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
@@ -62,8 +63,8 @@ Interactive video steps:
 
 1. **(Optional) Identify Quickview variables** - Start by identifying dynamic variables used by your existing Quickview implementation. You use the variables to map product thumbnails to their corresponding product Quickview when you create your interactive video. See [(Optional) Identifying Quickview variables](#optional-identifying-quickview-variables).
    **This step is only required if all the following are true:**
-   • You want to add interactivity to your video by triggering to Quick views.
-   • Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM® WebSphere® Commerce, Elastic Path, SAP Hybris, or Intershop.
+   * You want to add interactivity to your video by triggering to Quick views.
+   * Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM&reg; WebSphere&reg; Commerce, Elastic Path, SAP Hybris, or Intershop.
 
 1. **(Optional) Create an Interactive Video viewer preset** - Customize the appearance and behavior of various components that make up the player such as the video scrubber and the interactive thumbnails.
    Creating your own Interactive Video viewer preset is not required if you intend to use the out-of-the-box Interactive Video viewer presets `Shoppable_Video_Light` or `Shoppable_Video_Dark` instead.
@@ -93,7 +94,7 @@ Interactive video steps:
 >This task is only required if the following are true:
 >
 >* You want to add interactivity to your video by triggering to Quick views.
->* Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM® WebSphere® Commerce, Elastic Path, SAP Hybris, or Intershop. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
+>* Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM&reg; WebSphere&reg; Commerce, Elastic Path, SAP Hybris, or Intershop. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
 >If your implementation of Experience Manager uses eCommerce, you can skip this task and proceed to the next task.
 
@@ -116,9 +117,9 @@ The approach, therefore, is to visit different areas of your existing website wh
 
 Normally there is no need for you to use any specialized debugging tools. Modern web browsers feature web inspectors that do an adequate job. The following are a few examples of web browsers that include web inspectors:
 
-* To see all outgoing HTTP requests in Google Chrome, press **F12** (Windows®) or **Command+Options+I** (Mac) to open the Developer Tools panel, and then select the **Network** tab.
+* To see all outgoing HTTP requests in Google Chrome, press **F12** (Windows&reg;) or **Command+Options+I** (Mac) to open the Developer Tools panel, and then select the **Network** tab.
 
-* In Firefox, you can either activate the Firebug plug-in by pressing **F12** (Windows®) or **Command+Option+I** (Mac) and use its **[!UICONTROL Net]** tab, or you can use the built-in Inspector tool and its Network tab.
+* In Firefox, you can either activate the Firebug plug-in by pressing **F12** (Windows&reg;) or **Command+Option+I** (Mac) and use its **[!UICONTROL Net]** tab, or you can use the built-in Inspector tool and its Network tab.
 
 * In Internet Explorer, activate the debugger tool by pressing **F12**.
 
@@ -436,7 +437,7 @@ After you save your interactive video, the video is immediately opened into Prev
       </tr> 
       <tr> 
       <td>To change the text label of a thumbnail image</td> 
-      <td><p>By default, the text label uses the thumbnail image’s <code>Title</code> metadata field. If <code>Title</code> is not present, the thumbnail image's filename is used instead, but without the extension.</p> <p>To change the text label of a thumbnail image, under the <strong>Actions </strong>tab, directly below the image asset that is displayed, enter the desired text. See the image below.</p> <p>The new text label is used only by the video player itself and the thumbnail text that is displayed in the timeline segment. The label change does not affect the thumbnail image's Title metadata field nor its filename.</p> </td> 
+      <td><p>By default, the text label uses the thumbnail image's <code>Title</code> metadata field. If <code>Title</code> is not present, the thumbnail image's filename is used instead, but without the extension.</p> <p>To change the text label of a thumbnail image, under the <strong>Actions </strong>tab, directly below the image asset that is displayed, enter the desired text. See the image below.</p> <p>The new text label is used only by the video player itself and the thumbnail text that is displayed in the timeline segment. The label change does not affect the thumbnail image's Title metadata field nor its filename.</p> </td> 
       </tr> 
       <tr> 
       <td>To revert a change</td> 
@@ -766,6 +767,6 @@ The final demo website with the fully integrated interactive video appears like 
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## Create custom pop-up Windows® using Quickview {#using-quickviews-to-create-custom-pop-ups}
+## Create custom pop-up Windows&reg; using Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-See [Create custom pop-up Windows® using Quickview](/help/assets/dynamic-media/custom-pop-ups.md).
+See [Create custom pop-up Windows&reg; using Quickview](/help/assets/dynamic-media/custom-pop-ups.md).
