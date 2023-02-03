@@ -31,7 +31,7 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 ### New features in [!DNL Sites] prerelease {#prerelease-features-sites}
 
-* GraphQL [Paging](/help/headless/graphql-api/content-fragments.md#paging) and [Sorting](/help/headless/graphql-api/content-fragments.md#sorting)
+* The AEM GraphQL content delivery API now supports GraphQL [Paging](/help/headless/graphql-api/content-fragments.md#paging) and [Sorting](/help/headless/graphql-api/content-fragments.md#sorting), to make fetching and rendering large content sets more efficient. GraphQL pagination allows to improve query response time by returning results in sub-sets as opposed to all at once. GraphQL sorting allows putting content sets in a desired order, making it easier for a client appliation to process the content.  Query response time is further improved with Hybrid Filtering in the AEM GraphQL engine. Content is now read from JCR in smaller sets that correspond with query filters. 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
