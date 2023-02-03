@@ -139,7 +139,7 @@ Now let's have a look at the corresponding JCR content:
       - cq:conf = "/conf/wknd"
     + image.png [dam:Asset]
 
-/conf/wkns
+/conf/wknd
     + settings
       + dam
         + imageserver [cq:Page]
