@@ -10,9 +10,9 @@ description: Latest Maintenance Release Notes of [!DNL Adobe Experience Manager]
 >[!IMPORTANT]
 > Do not upgrade if you are using CORS. We identified an issue impacting GraphQL content delivery part on this release. A change in default AEM dispatcher config around how GraphQL persisted queries are cached can break the GraphQL content delivery of persisted queries for customers using a CORS configuration.
 
-Summarized below are the continuous improvements for release 10912, which was publicly released on February 3, 2023. This release is an update from release 10675.
+Summarized below are the continuous improvements for release 10912, which was publicly released on February 3, 2023. This release is an update from previous release 9850.
 
-Note that feature enablement for this release will provide you full feature set. Latest new feature set is available here : 
+Note that feature enablement for this release will provide you full feature set. Please find latest feature set is available here : 
 
 ### Core Components {#corecomponents}
 
