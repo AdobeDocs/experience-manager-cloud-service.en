@@ -1,6 +1,7 @@
 ---
 title: Dynamic Media Video Profiles
 description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. You can also add smart crop to your videos.
+contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
@@ -17,7 +18,7 @@ The following are other factors that determine the quality of your videos:
 
 * **Video player size**
 
-  By default, the "Width" in the Adaptive Video Encoding profile is set to “Auto.” Again, during playback, the best quality is used based on the size of the player.
+  By default, the "Width" in the Adaptive Video Encoding profile is set to "Auto." Again, during playback, the best quality is used based on the size of the player.
 
 See [Best Practices for Video Encoding](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
