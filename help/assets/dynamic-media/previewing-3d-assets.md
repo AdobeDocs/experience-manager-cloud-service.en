@@ -1,6 +1,7 @@
 ---
 title: Preview 3D assets
 description: Learn how to preview 3D assets in Experience Manager.
+contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
