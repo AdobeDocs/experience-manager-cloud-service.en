@@ -1,6 +1,7 @@
 ---
 title: Preview assets
 description: Learn how to preview assets in Dynamic Media.
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
