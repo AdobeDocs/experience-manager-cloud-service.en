@@ -12,7 +12,7 @@ description: Latest Maintenance Release Notes of [!DNL Adobe Experience Manager]
 
 Summarized below are the continuous improvements for release 10912, which was publicly released on February 3, 2023. This release is an update from previous release 9850.
 
-Note that feature enablement for this release will provide you full feature set. Please find latest feature set is available here : 
+Feature enablement for this release will provide you with the full feature set. See the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
 ### Core Components {#corecomponents}
 
