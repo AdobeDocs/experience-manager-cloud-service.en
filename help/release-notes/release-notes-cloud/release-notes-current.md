@@ -35,7 +35,9 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
    ![PDF rendition for other formats](/help/release-notes/assets/choose_report.png)
 
-* Experience Manager Assets now [supports SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) in addition to the Access Key for authentication while connecting to Azure Blob Storage data source for ingesting assets using the Bulk Import tool.  
+* Experience Manager Assets now [supports SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) in addition to the Access Key for authentication while connecting to Azure Blob Storage data source for ingesting assets using the Bulk Import tool.
+
+* Improved management of CMYK images in Asset Compute, enabling you to generate Smart Crop and Smart Tags for CMYK images.
 
 ### New features in [!DNL Assets] prerelease {#prerelease-features-assets}
 
