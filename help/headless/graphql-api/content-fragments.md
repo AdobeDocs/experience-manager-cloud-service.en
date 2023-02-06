@@ -689,6 +689,121 @@ query {
 >
 >* Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. This is also the recommended way if you want to query large paginated result sets.
 
+## Updating your content for Paging and Sorting {#updating-content-for-paging-and-sorting}
+
+To optimize the performance of your GraphQL filters you need to run a procedure to update your Content Fragments.
+
+To run the procedure use the following steps:
+
+1. Ensure that (as a minimum) you have the 2023.1.0 release of AEM as a Cloud Service.
+
+1. Enable the update by setting the following variables for your instance using the Cloud Manager UI:
+
+   <table>
+    <tbody>
+     <tr>
+      <th>&nbsp;</th>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Default Value</th>
+      <th>Service</th>
+      <th>Applied</th>
+      <th>Type</th>
+      <th>Notes</th>
+     </tr>
+     <tr>
+      <td>1</td>
+      <td>`AEM_RELEASE_CHANNEL` </td>
+      <td>`prerelease` </td>
+      <td> </td>
+      <td>All </td>
+      <td> </td>
+      <td>Variable </td>
+      <td>Required to enable the feature. </td>
+     </tr>
+     <tr>
+      <td>2</td>
+      <td>`CF_MIGRATION_ENABLED` </td>
+      <td>`1` </td>
+      <td>`0` </td>
+      <td>All </td>
+      <td> </td>
+      <td>Variable </td>
+      <td>Enables(!=0) or disables(0) triggering of Content Fragment migration job. </td>
+     </tr>
+     <tr>
+      <td>3</td>
+      <td>`CF_MIGRATION_ENFORCE` </td>
+      <td>`1` </td>
+      <td>`0` </td>
+      <td>All </td>
+      <td> </td>
+      <td>Variable </td>
+      <td>Enforce (!=0) re-migration of Content Fragments.<br>Setting this flag to 0 will do an incremental migration of CFs. This means, if the job is terminated due to any reason, then next run of the job will start migration from the pont where it got terminated. Note that, the very first migration is recommended to be enforced (value=1). </td>
+     </tr>
+     <tr>
+      <td>4</td>
+      <td>`CF_MIGRATION_BATCH` </td>
+      <td>`50` </td>
+      <td>`50` </td>
+      <td>All </td>
+      <td> </td>
+      <td>Variable </td>
+      <td>Size of the batch for saving number of Content Fragments after migration.<br>This is relevant to how many CFs will be saved to repository in one batch, and can be used to optimize number of writes to repository. </td>
+     </tr>
+     <tr>
+      <td>5</td>
+      <td>`CF_MIGRATION_LIMIT` </td>
+      <td>`1000` </td>
+      <td>`1000` </td>
+      <td>All </td>
+      <td> </td>
+      <td>Variable </td>
+      <td>Max number of Content Fragments to process at a time.<br>See also notes for `CF_MIGRATION_INTERVAL`. </td>
+     </tr>
+     <tr>
+      <td>6</td>
+      <td>`CF_MIGRATION_INTERVAL` </td>
+      <td>`60` </td>
+      <td>`600` </td>
+      <td>All </td>
+      <td> </td>
+      <td>Variable </td>
+      <td>Interval (seconds) to process remaining Content Fragments up till next Limit<br>This interval is also considered as a wait-time before starting the job, as well as a delay between processing of each subsequent CF_MIGRATION_LIMIT number of CFs.<br>(*)</td>
+     </tr>
+    </tbody>
+   </table>
+
+   >[!NOTE]  
+   >
+   >(*)
+   >
+   >The value of `CF_MIGRATION_INTERVAL` can also help to approximate the total execution time of the migration job. 
+   >
+   >For example:
+   >
+   >* Total number of Content Fragments = 20,000
+   >* CF_MIGRATION_LIMIT = 1000
+   >* CF_MIGRATION_INTERNAL = 60 (Sec)
+   >* Approximate time required to complete the migration = 60 + (20,000/1000 * 60) = 1260 Sec = 21 Minutes
+   >  Note: the additional "60" seconds being added at the start is due to the first delay for starting of the job.
+   >
+   >You should also be aware that this is only the *minimum* time required to complete the job, and does not include the I/O time. The actual time taken could be significantly more than this estimation.  
+
+   >[!CAUTION]
+   >
+   >Please be aware of the following limitations:
+   >
+   >* Optimization of the performance of GraphQL filters will only be possible after a complete update of all your Content Fragments (indicated by the presence of the `cfGlobalVersion` property for the JCR node `/content/dam`)
+   >
+   >* If Content Fragments are imported from a content package (using `crx/de`) after the update procedure is run, then those Content Fragments will not be considered in the GraphQL query results, until the update procedure is executed again. 
+
+1. Monitor the progress, and completion of the update.
+
+1. Disable the update procedure.
+
+1. Verify completion of the update procedure.
+
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
 The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
