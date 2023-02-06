@@ -90,19 +90,9 @@ In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, 
 >
 >Manual tags are assigned a confidence of 100% (maximum confidence). Therefore, if there are assets with manual tags that match the search query, they are displayed before smart tags matching the search query.
 
-### Trainable smart tags check 
-
 Image type smart tags can be trained to provide more accuracy and efficacy in the tags. Refer to the [smart tags training](#/help/assets/smart-tags-training.md) to understand the training of images with custom or enhanced smart tags.
 
-#### Determining the requirement of smart tags training {#smart-tag-training-requirement}
-
-Smart tags training is required in the following scenarios:
-* To add an automated labeler to save iterations of adding labels every time you upload the same asset.
-* To improve the ability of assets to apply relevant tags.
-* To increase accuracy of the tags appearing for an asset.
-* To add unavailable or missing labels.
-
-### Supported file formats for smart tags {#supported-file-formats}
+## Supported file formats for smart tags {#supported-file-formats}
 
 |Images (MIME types) | Text-based assets (file formats) | Video assets (file formats and codecs) |
 |----|-----|------|
@@ -125,9 +115,9 @@ Smart tags training is required in the following scenarios:
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-## Older untagged assets in DAM {#smart-tag-existing-assets}
+## Untagged Assets in DAM {#smart-tag-existing-assets}
 
-The existing assets in DAM are not smart tagged automatically. You need to [!UICONTROL Reprocess Assets] manually to generate smart tags for them.
+The existing or older assets in DAM are not smart tagged automatically. You need to [!UICONTROL Reprocess Assets] manually to generate smart tags for them.
 
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
 
@@ -240,17 +230,9 @@ These models are not always perfect at identifying tags. The current version of 
   * Non-visual, abstract aspects. For example, the year or season of release of a product, mood or emotion evoked by an image, and a subjective connotation of a video.
   * Fine visual differences in products such as shirts with and without collars or small product logos embedded on products.
 
-* To train the model, use the most appropriate images. The training cannot be reverted or training model cannot be removed. Your tagging accuracy depends on the current training, so do it carefully.
-* You cannot train the service that applies Smart Tags to videos using any specific videos. It works with default [!DNL Adobe Sensei] settings.
-* Tagging progress is not displayed.
 * Only the videos smaller than 300 MB in file size are auto-tagged. The [!DNL Adobe Sensei] service skips video files that are larger in size.
 * To search for files with smart tags (regular or enhanced), use the [!DNL Assets] search (full-text search). There is no separate search predicate for smart tags.
 * In comparison of general tags, the assets that are tagged using business taxonomy are easier to identify and retrieve by tag-based searches.
-
->[!NOTE]
->
->The ability of the Smart Tags to train on your tags and apply them on other images depends on the quality of images you use for training.
->For best results, Adobe recommends that you use visually similar images to train the service for each tag.
 
 ## Frequently asked questions
 
