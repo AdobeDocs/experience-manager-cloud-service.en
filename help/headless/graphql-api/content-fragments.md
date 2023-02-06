@@ -802,6 +802,37 @@ To run the procedure use the following steps:
 
 1. Disable the update procedure.
 
+   After the update procedure has run, set the cloud environment variable `CF_MIGRATION_ENABLED` to '0', to trigger the recycling of all pods.
+
+   <table>
+    <tbody>
+     <tr>
+      <th>&nbsp;</th>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Default Value</th>
+      <th>Service</th>
+      <th>Applied</th>
+      <th>Type</th>
+      <th>Notes</th>
+     </tr>
+     <tr>
+      <td></td>
+      <td>`CF_MIGRATION_ENABLED` </td>
+      <td>`0` </td>
+      <td>`0` </td>
+      <td>All </td>
+      <td> </td>
+      <td>Variable </td>
+      <td>Disables(0) (or Enables(!=0)) triggering of Content Fragment migration job. </td>
+     </tr>
+    </tbody>
+   </table>
+
+   >[!NOTE]
+   >
+   >This is particularly important for the publish tier, as the content update is only done on golden-publish, and on recycling of pods, all normal publish pods are based on the golden-publish.
+
 1. Verify completion of the update procedure.
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
