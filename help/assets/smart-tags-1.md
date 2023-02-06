@@ -125,7 +125,7 @@ Smart tags training is required in the following scenarios:
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-## Smart tagging existing assets in DAM {#smart-tag-existing-assets}
+## Older untagged assets in DAM {#smart-tag-existing-assets}
 
 The existing assets in DAM are not smart tagged automatically. You need to [!UICONTROL Reprocess Assets] manually to generate smart tags for them.
 
