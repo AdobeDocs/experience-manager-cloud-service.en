@@ -9,7 +9,24 @@ exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 
 # Smart Tags Training
 
-Smart tags training allows you to train your tags so that you can specify the particulars if the relevant tags are not there. It uses an artificially intelligent framework of [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. [!DNL Experience Manager Assets] automatically applies smart tags to uploaded assets, by default. [!DNL Experience Manager] as a [!DNL Cloud Service] auto-generate the Smart Tags to the text-based assets and to videos by default. To auto-add Smart Tags to images, complete the following tasks:
+Smart tags training allows you to train your tags so that you can specify the particulars if the relevant tags are not there. It uses an artificially intelligent framework of [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. [!DNL Experience Manager Assets] automatically applies smart tags to uploaded assets, by default. 
+
+## Determining the requirement of smart tags training {#smart-tag-training-requirement}
+
+Smart tags training is required in the following scenarios:
+* To add an automated labeler to save iterations of adding labels every time you upload the same asset.
+* To improve the ability of assets to apply relevant tags.
+* To increase accuracy of the tags appearing for an asset.
+* To add unavailable or missing labels.
+
+
+>[!NOTE]
+>
+>Training smart tags is only applicable in an ***image-type*** of asset.
+
+## Steps involved in training smart tags
+
+[!DNL Experience Manager] as a [!DNL Cloud Service] auto-generates the Smart Tags to the text-based assets and to videos by default. To train smart Tags to images, complete the following tasks:
 
 * [Understand tag models and guidelines](#understand-tag-models-guidelines)
 * [Train the model](#train-model)
@@ -18,7 +35,7 @@ Smart tags training allows you to train your tags so that you can specify the pa
 
 ## Understand tag models and guidelines {#understand-tag-models-guidelines}
 
-A tag model is a group of related tags that are associated with various visual aspects of images being tagged. Tags relate with the distinctly different visual aspects of images so that when applied, the tags help in searching for specific types of images. For example, a shoes collection can have different tags but all the tags are related to shoes and can belong to the same tag model. When applied, the tags help find different types of shoes, say for example by design or by usage. To understand the content representation of a training model in [!DNL Experience Manager Cloud Service], visualize a training model as a top-level entity comprised of a group of manually added tags and example images for each tag. Each tag can be exclusively applied to an image.
+A tag model is a group of related tags that are associated with various visual aspects of images being tagged. Tags relate with the distinctly different visual aspects of images so that when applied, the tags help in searching for specific types of images. For example, a shoes collection can have different tags but all the tags are related to shoes and can belong to the same tag model. When applied, the tags help find different types of shoes, say for example by design or by usage.
 
 Before you create a tag model and train the service, identify a set of unique tags that best describe the objects in the images in the context of your business. Ensure that the assets in your curated set confirm to [the training guidelines](#training-guidelines).
 
@@ -136,4 +153,13 @@ To check whether the Smart Tags service is trained on your tags in the training 
 1. Review the details of the report. The report displays the training status for the tags you trained. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Tags service is trained for the tag. Yellow color indicates that the service is partially trained for a particular tag. To train the service completely for a tag, add more images with the particular tag and execute the training workflow. If you do not see your tags in this report, execute the training workflow again for these tags.Tags
 1. To download the report, select it from the list, and click **[!UICONTROL Download]** from the toolbar. The report downloads as a spreadsheet.
 
-Refer to [Determining the requirement of smart tags training](#smart-tag-training-requirement).
+## Limitations and best practices related to smart tags {#limitations-smart-tags-training}
+
+* To train the model, use the most appropriate images. The training cannot be reverted or training model cannot be removed. Your tagging accuracy depends on the current training, so do it carefully.
+* You cannot train the service that applies Smart Tags to videos using any specific videos. It works with default [!DNL Adobe Sensei] settings.
+
+
+>[!NOTE]
+>
+>The ability of the Smart Tags to train on your tags and apply them on other images depends on the quality of images you use for training.
+>For best results, Adobe recommends that you use visually similar images to train the service for each tag.
