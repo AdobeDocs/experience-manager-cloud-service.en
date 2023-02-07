@@ -14,11 +14,12 @@ Together with the updated JSON exporter, structured content fragments can also b
 >[!NOTE]
 >
 >**Content Fragments** and **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** are different features within AEM:
->
->* **Content Fragments** are editorial content, primarily text and related images. They are pure content, without design and layout.
->* **Experience Fragments** are fully laid out content and thus fragments of a web page.
+>* **Content Fragments** are editorial content, with definition and structure, but without additional visual design and/or layout. They can be used to access structured data, including texts, numbers, and dates, amongst others. 
+>* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
+>
+>For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!CAUTION]
 >
