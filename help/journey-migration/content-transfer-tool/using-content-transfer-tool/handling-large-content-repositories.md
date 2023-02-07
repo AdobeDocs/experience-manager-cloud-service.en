@@ -30,6 +30,9 @@ Follow the section below to understand the important considerations before start
 
 * Data Store Garbage Collection has been run within the previous 7 days on the source. For more details, refer to [Data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection). 
 
+### Additional Considerations when using AzCopy
+
+AzCopy does not currently support Windows servers or desktops. This is something that is a current work in progress.
 
 ### Additional Considerations if source AEM instance is configured to use an Amazon S3 or Azure Blob Storage Data Store {#additional-considerations-amazons3-azure}
 
