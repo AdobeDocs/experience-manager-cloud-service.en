@@ -32,7 +32,7 @@ Follow the section below to understand the important considerations before start
 
 ### Additional Considerations when using AzCopy
 
-AzCopy does not currently support Windows servers or desktops. This is something that is a current work in progress.
+CTT on Windows does not currently support AzCopy, this is something that is a current work in progress.
 
 ### Additional Considerations if source AEM instance is configured to use an Amazon S3 or Azure Blob Storage Data Store {#additional-considerations-amazons3-azure}
 
