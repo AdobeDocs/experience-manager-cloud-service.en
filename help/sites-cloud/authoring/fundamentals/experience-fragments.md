@@ -35,6 +35,16 @@ You can use Experience Fragments:
 
 >[!NOTE]
 >
+>**[Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** and **Experience Fragments** are different features within AEM:
+>* **Content Fragments** are editorial content, with definition and structure, but without additional visual design and/or layout. They can be used to access structured data, including texts, numbers, and dates, amongst others. 
+>* **Experience Fragments** are fully laid out content; a fragment of a web page.
+>
+>Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
+>
+>For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+
+>[!NOTE]
+>
 >Write access for experience fragments requires the user account to be registered in the group:
 >
 >* `experience-fragments-editors`
