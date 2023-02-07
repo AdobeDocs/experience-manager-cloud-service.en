@@ -22,19 +22,3 @@ Do not upgrade if you are using CORS. We identified an issue impacting GraphQL c
 |Technology|Version|Link|
 |---|---|---|
 |AEM WCM Core Components|Version 2.21.2|[GitHub](https://github.com/adobe/aem-core-wcm-components)|
-
-### Sites {#sites}
-
-Total Changes : 86 Changes
-
-### Assets {#assets}
-
-Total Changes : 115 Changes
-
-### Forms {#forms}
-
-Total Changes : 207 Changes
-
-### Foundation {#foundation}
-
-Total Changes : 323 changes
