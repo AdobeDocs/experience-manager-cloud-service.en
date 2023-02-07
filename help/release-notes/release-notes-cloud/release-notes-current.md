@@ -64,7 +64,19 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 ### What is New {#what-is-new-foundation}
 
-* Rapid Development Environments - Increase your team's development productivity through quicker cloud validation and debugging sessions! RDE is a new type of Cloud Environment intended for swiftly validating that code working locally also behaves as expected in the Cloud. Using Command Line Tools, developers quickly synchronize content packages, bundles, content files, OSGI configuration, or dispatcher configuration to the RDE. After successfully validating code in the RDE, customers are encouraged to deploy to a Cloud Dev Environment to exercise the Cloud Manager quality gates, before deploying via production pipeline to stage and production environments. Each program includes one RDE and optionally, more can be licensed. This feature will be gradually rolled out over the next few weeks; you can send an email to aemcs-rdesupport@adobe.com to skip to the front of the line!
+* [Rapid Development Environments](/help/implementing/developing/rapid-development-environments.md) - RDEs enable developers to rapidly troubleshoot issues and deploy new features on AEM as a Cloud Service.  
+
+  Rapid Development Environments are a new type of Cloud Environment intended as a fast, consistent, and extensible way of validating that code working locally also functions as expected in the Cloud. Using Command Line Tools, quickly "sync" content packages, bundles, content files, OSGI configuration, or dispatcher configuration to the RDE. See this in action in the video below:  
+  
+  >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)   
+ 
+  After successfully validating code in the RDE, it is encouraged to deploy to a Cloud Dev Environment to exercise the Cloud Manager quality gates, before deploying via production pipeline to stage and production environments.  
+
+  Each program includes one RDE and optionally, more can be licensed.  
+    
+  >[!NOTE]
+  >
+  >RDEs will be gradually rolled out over the next few weeks; you can send an email to aemcs-rde-support@adobe.com to skip to the front of the line.
 
 * [Extended support for server-side API access tokens](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) – You can now generate multiple credentials, which is useful for scenarios where APIs have different characteristics. It is also now possible to revoke credentials in a self-service manner.
 
