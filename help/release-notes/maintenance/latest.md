@@ -5,11 +5,11 @@ description: Latest Maintenance Release Notes of [!DNL Adobe Experience Manager]
 
 # Maintenance Release Notes {#maintenance-release-notes}
 
-The following section outlines the technical Release Notes for the latest maintenance release of Experience Manager as a Cloud Service.
+The following section outlines the technical release rotes for the latest maintenance release of Experience Manager as a Cloud Service.
 
 ## Release 10912 {#release-10912}
  
-Summarized below are the continuous improvements for maintenance release 10912, which was publicly released on February 3, 2023. This release is an update from previous maintenance release 9850.
+Summarized below are the continuous improvements for maintenance release 10912, which was publicly released on February 3, 2023. This mainteanance release is an update from previous maintenance release 9850.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
