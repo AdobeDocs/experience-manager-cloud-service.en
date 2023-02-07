@@ -5,10 +5,6 @@ exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 ---
 # Generating Access Tokens for Server Side APIs {#generating-access-tokens-for-server-side-apis}
 
->[!AVAILABILITY]
->
->Adobe is in the process of gradually rolling out the new  multi-credential and credentials revocation capabilities described in this article. If, upon checking the integrations tab in your organization's AEM developer console, you notice that the screen looks different from the screenshots below, it means that the new changes have not yet been rolled out to your organization. In this case, please refer to the [legacy documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md).
-
 Some architectures rely on making calls to AEM as a Cloud Service from an application hosted on a server outside of AEM infrastructure. For example, a mobile application that calls a server, which then makes API requests to AEM as a Cloud Service.
 
 The server-to-server flow is described below, along with a simplified flow for development. The AEM as a Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console) is used to generate tokens needed for the authentication process.
