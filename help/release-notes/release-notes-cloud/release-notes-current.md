@@ -64,7 +64,7 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 ### What is New {#what-is-new-foundation}
 
-* [Rapid Development Environments](/help/implementing/developing/rapid-development-environments.md) - RDEs enable developers to rapidly troubleshoot issues and deploy new features on AEM as a Cloud Service.  
+* [Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md) - RDEs enable developers to rapidly troubleshoot issues and deploy new features on AEM as a Cloud Service.  
 
   Rapid Development Environments are a new type of Cloud Environment intended as a fast, consistent, and extensible way of validating that code working locally also functions as expected in the Cloud. Using Command Line Tools, quickly "sync" content packages, bundles, content files, OSGI configuration, or dispatcher configuration to the RDE. See this in action in the video below:  
   
