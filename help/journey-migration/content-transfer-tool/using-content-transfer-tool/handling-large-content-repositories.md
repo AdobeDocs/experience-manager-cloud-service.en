@@ -32,7 +32,7 @@ Follow the section below to understand the important considerations before start
 
 ### Additional Considerations when using AzCopy
 
-CTT's extraction on Windows does not currently support AzCopy, this is something that is a current work in progress.
+Pre-copy using AzCopy is currently not supported on Windows during CTT extraction.
 
 ### Additional Considerations if source AEM instance is configured to use an Amazon S3 or Azure Blob Storage Data Store {#additional-considerations-amazons3-azure}
 
