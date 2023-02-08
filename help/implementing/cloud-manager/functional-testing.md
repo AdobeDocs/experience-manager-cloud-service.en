@@ -31,13 +31,14 @@ Both the product functional tests and sample custom functional tests are based o
 
 Product functional tests are a set of stable HTTP integration tests (ITs) of core functionality in AEM such as authoring and replication tasks. These tests are maintained by Adobe and are intended to prevent  changes to custom application code from being deployed if it breaks core functionality.
 
-Product functional tests run automatically whenever you deploy new code to Cloud Manager and cannot be skipped.
+* [Production Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md): Product functional tests run automatically whenever you deploy new code to Cloud Manager and cannot be skipped.
+* [Non-Production Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md): Product functional tests can be optionally selected to run whenever you execute your non-production pipeline.
 
 Product functional tests are maintained as an open source project. Please refer to [product functional tests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub for details.
 
 ## Custom Functional Testing {#custom-functional-testing}
 
-While product functional testing is defined by Adobe, you can write your own quality testing for your own application. This will be executed as custom functional testing as part of the production pipeline to ensure the quality of your application.
+While product functional testing is defined by Adobe, you can write your own quality testing for your own application. This will be executed as custom functional testing as part of the [production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) or optionally [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) to ensure the quality of your application.
 
 Custom functional testing is executed both for custom code deployments as well as push upgrades, which makes is especially important to write good functional tests which prevent AEM code changes from breaking your application code. The custom functional testing step is always present and cannot be skipped.
 
