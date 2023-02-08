@@ -70,7 +70,7 @@ This can be useful, for example, when your business logic requires fine tuning o
 
    ```
 
-* While HTML content set to private will not be cached at the CDN, it can be cached at the dispatcher if [Permission Sensitive Caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) is configured, efficiently ensuring that only authorized users can be served the content. 
+* While HTML content set to private will not be cached at the CDN, it can be cached at the dispatcher if [Permission Sensitive Caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) is configured, ensuring that only authorized users can be served the content.
 
    >[!NOTE]
    >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
