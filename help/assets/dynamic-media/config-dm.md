@@ -1,6 +1,7 @@
 ---
 title: Configure Dynamic Media Cloud Service
 description: Learn how to configure Dynamic Media in Adobe Experience Manager as a Cloud Service.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 ---
@@ -283,7 +284,7 @@ You can define which asset types are processed by Dynamic Media and customize ad
 
 * Convert an Adobe PDF to an eCatalog asset.
 * Convert an Adobe Photoshop Document (.PSD) to a banner template asset for personalization.
-* Rasterize an Adobe Illustrator file (.AI) or an Adobe Photoshop Encapsulated PostScript® file (.EPS).
+* Rasterize an Adobe Illustrator file (.AI) or an Adobe Photoshop Encapsulated PostScript&reg; file (.EPS).
 * [Video Profiles](/help/assets/dynamic-media/video-profiles.md) and [Image Profiles](/help/assets/dynamic-media/image-profiles.md) can be used to define processing of videos and images, respectively.
 
 See [Upload assets](/help/assets/add-assets.md).
@@ -386,12 +387,12 @@ In case you do want to turn on template creation, use the following parameters: 
 
 <!-- THIS PARAGRAPH WAS REPLACED WITH THE TWO PARAGRAPHS DIRECTLY ABOVE BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
-Adobe recommends using the following "tuned" job parameters for PDF, PostScript®, and PSD files:
+Adobe recommends using the following "tuned" job parameters for PDF, PostScript&reg;, and PSD files:
 
 | File type | Recommended job parameters |
 | ---| ---|
 | PDF | `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
-| PostScript® | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
+| PostScript&reg; | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=AppendName&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
 <!-- CQDOC-17657 for PSD entry in table above -->
