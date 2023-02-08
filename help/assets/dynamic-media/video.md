@@ -148,7 +148,11 @@ The Dynamic Media HTML5 Video viewer presets are robust video players. You can u
 
 On the design side of the player, you can design the video player's functionality using standard web development tools. For example, you can design the buttons, controls, and custom poster image background using HTML5 and CSS to help you reach your customers with a customized appearance.
 
-On the playback side of the viewer, it automatically detects the browser's video capability. It then serves the video using HLS (HTTP Live Streaming), also known as adaptive video streaming. Or, if those delivery methods are not present then HTML5 progressive is used instead.
+On the playback side of the viewer, it automatically detects the browser's video capability. It then serves the video using HLS or DASH (adaptive streaming), also known as adaptive video streaming. Or, if those delivery methods are not present then HTML5 progressive is used instead.
+
+>[!IMPORTANT]
+>
+>To see or use DASH, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
 
 You can combine into a single player the ability to design the playback components using HTML5 and CSS. It can have embedded playback, and use adaptive and progressive streaming depending on the browser's capability. All this functionality, means you can extend the reach of your rich media content to both desktop and mobile users and ensure a streamlined video experience.
 
@@ -158,9 +162,15 @@ See also [Viewers for Experience Manager Assets only](https://experienceleague.a
 
 For desktop and mobile adaptive video streaming, the videos used for bit rate switching are based on all MP4 videos in the Adaptive Video Set.
 
-Video playback occurs using either HLS or progressive video download. In prior versions of Experience Manager, such as 6.0, 6.1, and 6.2, videos were streamed over HTTP.
+Video playback occurs using either HLS or DASH, or progressive video download. In prior versions of Experience Manager, such as 6.0, 6.1, and 6.2, videos were streamed over HTTP.
 
-However, in Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, HLS) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming will always occur over HTTPS unless it is not supported by the browser. (see the following table). Therefore,
+However, in Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, HLS or DASH) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming will always occur over HTTPS unless it is not supported by the browser. (see the following table).
+
+>[!IMPORTANT]
+>
+>To see or use DASH, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
+
+Therefore,
 
 * If you have an HTTPS website with HTTPS video streaming, streaming is fine.
 * If you have an HTTP website with HTTPS video streaming, streaming is fine and there are no mixed content issues from the web browser.
@@ -196,17 +206,17 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 or later</td>
-   <td>HLS</td>
+   <td>HLS or DASH*</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>HLS</td>
+   <td>HLS or DASH*</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>HLS</td>
+   <td>HLS or DASH*</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -216,7 +226,7 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Mobile</td>
    <td>Chrome (Android&trade; 7 or later)</td>
-   <td>HLS</td>
+   <td>HLS or DASH*</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -226,20 +236,24 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Mobile</td>
    <td>Safari (iOS)</td>
-   <td>HLS</td>
+   <td>HLS or DASH*</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>Chrome (iOS)</td>
-   <td>HLS</td>
+   <td>HLS or DASH*</td>
   </tr>
  </tbody>
 </table>
 
+>[!IMPORTANT]
+>
+>*To see or use DASH, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
+
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
    <td>BlackBerry&reg;</td>
-   <td>HLS</td>
+   <td>HLS or DASH</td>
   </tr>
  -->
 

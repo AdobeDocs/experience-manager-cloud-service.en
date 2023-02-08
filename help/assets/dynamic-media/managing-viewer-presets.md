@@ -434,6 +434,12 @@ See [Special considerations for creating a Carousel Banner Viewer preset](#speci
 
 1. (Optional) Near the top of the Edit Viewer Preset page, select **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]**, or **[!UICONTROL Phone]** to uniquely define visual styles for different device and screen types.
 1. On the Viewer Preset Editor page, select the **[!UICONTROL Behavior]** tab. Alternatively, you can select any visual element in the viewer to select it for configuration.
+For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!UICONTROL Playback]**, you can select an adaptive streaming option to have videos only stream as **[!UICONTROL hls]** or **[!UICONTROL dash]**. 
+
+   >[!NOTE]
+   >
+   >To see and use the **[!UICONTROL dash]** option, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).
+
 1. From the **[!UICONTROL Selected Type]** pull-down menu, select a component whose behaviors you want to change.
 
    Many components in the visual editor have a detailed description associated with it. These descriptions appear within blue boxes when you expand a component to reveal its associated parameters.
@@ -451,6 +457,39 @@ See [Special considerations for creating a Carousel Banner Viewer preset](#speci
 1. Publish your new viewer preset. It is necessary to publish the preset before you can use it on your website.
 
    See [Publishing Viewer Presets](#publishing-viewer-presets).
+
+### Enable DASH on your account {#enable-dash}
+
+DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When you enable DASH, you get the option to choose from HLS or DASH for adaptive video streaming. You can also opt for both with automatic switching between players.
+
+Some key benefits from enabling DASH on your account include the following:
+     
+* Package DASH stream video for adaptive streaming. This methods leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.
+* Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.
+* You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.
+* Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of encodes are created for both HLS and DASH to optimize video storage costs.
+* Helps make video delivery more accessible for your customers.
+* Get the streaming URL by way of APIs, too.
+
+You initiate a request to use DASH; it is not automatically enabled on your account.
+
+   >[!IMPORTANT]
+   >
+   >Enabling DASH on your account is currently available only in North America. 
+
+Create a support case as described below. In your support case, be sure you mention that you want DASH enabled on your account.
+
+**To enable DASH on your account:**
+
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. Follow the instructions to create a support case while ensuring you provide the following information:
+
+    * Primary contact name, email, phone.
+    * You want DASH enable on your Dynamic Media account.
+   
+1. Adobe Customer Support adds you to the DASH customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for DASH enablement.
+1. You are notified after completion by Customer Support.
 
 ### Special considerations for creating an interactive viewer preset {#special-considerations-for-creating-an-interactive-viewer-preset}
 
