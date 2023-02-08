@@ -17,7 +17,6 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
 >title="Launch the GraphQL Explorer"
 >abstract="GraphQL provides a query-based API allowing external client applications to query AEM for only the content it needs, using a single API call. Follow this module to learn how to run two different types of queries. Then learn how to retrieve the content from the Content Fragment you created in the previous module.<br><br>Launch this module in a new tab by clicking below."
->additional-url="https://video.tv.adobe.com/v/328618" text="Extract content intro video"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
@@ -34,23 +33,23 @@ You start on the GraphQL Explorer in a new tab. Here you can build and validate 
 
    ```text
    {
-       adventureList {
-         items {
-            _path
-            adventureTitle
-            adventurePrice
-            adventureTripLength
-            adventurePrimaryImage {
-              ... on ImageRef {
-               _path
-               mimeType
-               width
-               height
-             }
-           }
+    adventureList {
+     items {
+       _path
+       title
+       price
+       tripLength
+       primaryImage {
+         ... on ImageRef {
+           _path
+           mimeType
+           width
+           height
          }
-      }
+       }
+     }
     }
+   }
    ```
 
 1. Replace the existing content in the query editor by pasting the copied code.
