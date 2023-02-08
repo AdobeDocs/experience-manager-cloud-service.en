@@ -7,9 +7,9 @@ description: Latest Maintenance Release Notes of [!DNL Adobe Experience Manager]
 
 The following section outlines the technical release rotes for the latest maintenance release of Experience Manager as a Cloud Service.
 
-## Release 10912 {#release-10912}
+## Release 10949 {#release-10949}
  
-Summarized below are the continuous improvements for maintenance release 10912, which was publicly released on February 3, 2023. This mainteanance release is an update from previous maintenance release 9850.
+Summarized below are the continuous improvements for maintenance release 10949, which was publicly released on February X, 2023. This mainteanance release is an update from previous maintenance release 10912.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
@@ -21,4 +21,4 @@ Do not upgrade if you are using CORS. We identified an issue impacting GraphQL c
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM WCM Core Components|Version 2.21.2|[GitHub](https://github.com/adobe/aem-core-wcm-components)|
+|AEM WCM Core Components|Version X|[GitHub](https://github.com/adobe/aem-core-wcm-components)|
