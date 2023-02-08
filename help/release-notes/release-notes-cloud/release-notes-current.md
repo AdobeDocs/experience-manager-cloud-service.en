@@ -7,7 +7,7 @@ mini-toc-levels: 1
 
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the general Release Notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
+The following section outlines the feature release notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -81,6 +81,10 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
   >RDEs will be gradually rolled out over the next few weeks; you can send an email to aemcs-rde-support@adobe.com to skip to the front of the line.
 
 * [Extended support for server-side API access tokens](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) – You can now generate multiple credentials, which is useful for scenarios where APIs have different characteristics. It is also now possible to revoke credentials in a self-service manner.
+
+## Maintenance Release Notes {#maintenance}
+
+You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
 ## Cloud Manager {#cloud-manager}
 
