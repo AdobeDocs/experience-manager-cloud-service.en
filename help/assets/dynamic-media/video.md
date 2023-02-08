@@ -148,7 +148,7 @@ The Dynamic Media HTML5 Video viewer presets are robust video players. You can u
 
 On the design side of the player, you can design the video player's functionality using standard web development tools. For example, you can design the buttons, controls, and custom poster image background using HTML5 and CSS to help you reach your customers with a customized appearance.
 
-On the playback side of the viewer, it automatically detects the browser's video capability. It then serves the video using HLS or DASH (adaptive streaming), also known as adaptive video streaming. Or, if those delivery methods are not present then HTML5 progressive is used instead.
+On the playback side of the viewer, it automatically detects the browser's video capability. It then serves the video using HLS or DASH, also known as adaptive video streaming. Or, if those delivery methods are not present then HTML5 progressive is used instead.
 
 >[!IMPORTANT]
 >
