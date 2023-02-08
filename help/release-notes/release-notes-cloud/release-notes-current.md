@@ -11,7 +11,8 @@ The following section outlines the general Release Notes for the current (latest
 
 >[!NOTE]
 >
->From here, you can navigate to release notes of previous versions; for example, for those in 2020, 2021, and so on.
+>From here, you can navigate to release notes of previous versions; for example, for those in 2021, 2022, and so on.
+>Have a look at the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) to learn about the upcoming feature activations for [!DNL Experience Manager] as a Cloud Service. 
 
 >[!NOTE]
 >
