@@ -26,7 +26,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Documentation Journeys](/help/journey-documentation/documentation-journeys.md)
 + Release Notes {#release-notes}
   + [Release Information](/help/release-notes/home.md)
-  + General AEMaaCS Release Notes {#release-notes}
+  + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2022 {#2022}
       + [Release Notes for 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
@@ -61,7 +61,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Release Notes for 2020.4.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
       + [Release Notes for 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
       + [Release Notes for 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
-  + Maintenance AEMaaCS Release Notes {#maintenance}
+  + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Latest Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
