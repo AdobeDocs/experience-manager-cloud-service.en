@@ -111,7 +111,7 @@ To finish the configuration of the full-stack code non-production pipeline, foll
    * **Ignore Web Tier Configuration** - When checked, the pipeline will not deploy your web tier configuration.
 
    * **Pipeline** - If your pipeline is a deployment pipeline, you can choose to run a testing phase. Check the options you wish to enable in this phase. If none of the options are selected, the testing phase will not be displayed during pipeline execution.
-   
+
      * **Product Functional Testing** - Execute [product functional tests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) against the development environment.
      * **Custom Functional Testing** - Execute [custom functional tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) against the development environment.
      * **Custom UI Testing** - Execute [custom UI tests](/help/implementing/cloud-manager/ui-testing.md) for custom applications.
