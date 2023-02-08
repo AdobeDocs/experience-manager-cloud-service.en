@@ -3,6 +3,7 @@ title: Managing Environments
 description: Learn about the types of environments you can create and how to create them for your Cloud Manager project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 ---
+
 # Managing Environments {#managing-environments} 
 
 Learn about the types of environments you can create and how to create them for your Cloud Manager project.
@@ -61,7 +62,11 @@ The **Overview** screen now displays your new environment in the **Environments*
 
 ## Multiple Publish Regions {#multiple-regions}
 
-A user with the **Business Owner** role can configure prod and staging environments to include up to two additional publish regions in addition to the primary region. Additional publish regions can improve availability.
+A user with the **Business Owner** role can configure prod and staging environments to include up to three additional publish regions in addition to the primary region. Additional publish regions can improve availability.
+
+>[!TIP]
+>
+>You can use the [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) to query a current list of available regions.
 
 ### Adding Multiple Publish Regions to a New Environment {#add-regions}
 
@@ -88,7 +93,7 @@ If you wish to provision [advanced networking](/help/security/configuring-advanc
 
 If you did not specify any additional regions initially, you can do so after the environments are created.
 
-You can also add additional regions if you didn't select the maximum number allowed when you created the environment as well as remove additional publish regions.
+You can also remove additional publish regions. However you can only add or only remove regions in one transaction.
 
 1. From the Program Overview console of your program, click the ellipsis button for your production environment and select **Edit** from the menu.
 
@@ -109,9 +114,10 @@ If you wish to provision [advanced networking](/help/security/configuring-advanc
 ### Multiple Region Limitations {#limitations}
 
 * Additional regions can only be added if associated entitlements are available and unused in the tenant.
-* A maximum of two additional publish regions can be added to any individual environment.
+* A maximum of three additional publish regions can be added to any individual environment.
 * Additional regions are available on production programs only. It is not available in sandbox programs.
 * Additional regions are available only if the program has the Sites solution enabled.
+* Additional publish regions may only be added to AEM Sites. Additional publish regions do not extend to other AEM solutions or related functionality deployed in the same program (e.g. AEM Forms or Adobe Learning Manager).
 
 ## Environment Details {#viewing-environment}
 
