@@ -463,8 +463,6 @@ For example, the expression
 
 would compare the content of the field with the value `some text` and succeeds if the content equals the value. Otherwise, the expression will fail.
 
-The 
-
 The following operators can be used to compare fields to a certain value:
 
 | Operator | Type(s) | The expression succeeds if ... |
