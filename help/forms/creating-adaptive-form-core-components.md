@@ -8,7 +8,7 @@ level: Beginner
 
 # Create an Adaptive Form (Core Components) {#creating-an-adaptive-form-core-components}
 
-Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provides business user friendly wizard to quickly author Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. Adaptive Forms provides two types of components: 
+Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provides business user friendly wizard to quickly create Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. Adaptive Forms provides two types of components: 
 
 * Adaptive Forms Core Components are standardized data capture components. These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrolment experiences. A developer can easily customize these components. Adobe recommends leveraging these modern and extensible components to develop Adaptive Forms.  
 
@@ -27,13 +27,11 @@ You require the following to create an Adaptive Form:
 
     * The `blank` template is included with every fresh AEM Forms as a Cloud Service program.
     * You can install the reference package, via package manager, to add the `blank` template to your AEM Forms as a Cloud Service program. 
-    * You can also [create a new Adaptive Forms (Core Components)](template-editor.md) from scratch.
+    * You can also [create a new Adaptive Forms template (Core Components)](template-editor.md) from scratch.
 
-*   **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. 
-
-    * The `Canvas` template is included with every fresh AEM Forms as a Cloud Service program.
-    * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
-    * You can also [create a new Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program.
+*   **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components.  The `Canvas` template is included with every fresh AEM Forms as a Cloud Service program.
+    <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
+    * You can also [create a new Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. --> 
 
 *   **Permissions**: Add your users to [!DNL forms-users] group. The members of the [!DNL forms-users] group have permissions to create an Adaptive Form. For detailed list of forms specific user groups, see [Groups and permissions](forms-groups-privileges-tasks.md).
 

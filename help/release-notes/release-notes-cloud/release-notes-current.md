@@ -55,12 +55,31 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 ### New features available in [!DNL Forms] {#new-features-available-in-channel}
 
-* **Data capture core components to build Adaptive Forms**: Use Adaptive Forms editor to create forms based on standardized data capture components (Core Components). These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrolment experiences.
-* **Frontend pipeline support for styling core component based Adaptive Forms**: Utilize easily customizable BEM-based themes for Core Components-based Adaptive Forms by deploying them with Frontend Deployment pipeline to enhance the look and feel of your forms.
-* **Submit Adaptive Forms to Microsoft SharePoint and Microsoft OneDrive**: Streamline data submission with the ability to directly send Adaptive Form data to both Microsoft SharePoint and Microsoft OneDrive. You can submit both schema-based and schema-less data. These submit actions are in addition to already available submit actions. 
-* **Efficient form-building with the Save an Adaptive Form as a template feature**: Streamline your form-building process by saving an Adaptive Form as a template and reusing the templates for your next Adaptive Form. 
-* **Workflow steps to generate non-interactive PDF documents and printable output**: Automate the creation of non-interactive PDF documents and printable output for your business processes with AEM Workflow steps, streamlining your document generation process and saving time.
-* **Quicky deploy forms with Rapid Development environment**: Use Rapid Development environment to swiftly develop and deploy forms. This minimizes the amount of time needed for testing, as features are already proven to work in a local development environment. The result is a streamlined and efficient development process that saves time and resources.
+* **[Workflow steps to generate non-interactive PDF documents and printable output](/help/forms/aem-forms-workflow-step-reference.md)**: Automate the creation of non-interactive PDF documents and printable output for your business processes with AEM Workflow steps, streamlining your document generation process and saving time.
+* **[Use Footnotes to provide citations or extra information in Adaptive Forms](/help/forms/footnotes-richtextsupport.md)**:  Use Footnotes in an adaptive form to display the information on how to complete or use a form. You can also use it to provide parenthetical information, copyright permissions, and other helpful information.
+
+### New features in [!DNL Forms] prerelease {#prerelease-features-forms}
+
+* **[Use data capture core components to build Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)**: Use Adaptive Forms editor to create forms based on standardized data capture components (Core Components). These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrolment experiences.
+* **[Frontend pipeline support for styling core component based Adaptive Forms](/help/forms/using-themes-in-core-components.md)**: Utilize easily customizable BEM-based themes for Core Components-based Adaptive Forms by deploying them with Frontend Deployment pipeline to enhance the look and feel of your forms.
+* **[Generate Document of Record for core component based Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)**: Create a record for core component based Adaptive Form on submission for long term archival, in print or in the document format. 
+
+![](/help/forms/assets/sample-core-components-based-adaptive-form.png)
+
+* **Share an Adaptive Form for review**: Use the Adaptive Forms review mechanism to allow one or more reviewers to review the form.
+* **[Submit Adaptive Forms to Microsoft SharePoint and Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Streamline data submission with the ability to directly send Adaptive Form data to both Microsoft SharePoint and Microsoft OneDrive. You can submit both schema-based and schema-less data. These submit actions are in addition to already available submit actions. 
+* **[Efficient form-building with the Save an Adaptive Form as a template feature](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Streamline your form-building process by saving an Adaptive Form as a template and reusing the templates for your next Adaptive Form. 
+* **[Connect Forms Data Model to databases that supports JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)**: Connect AEM Forms as a Cloud Service to a database that supports JDBC to read and write data to such databases. 
+* **Connect Form data Model to REST endpoints that support Open API specification version 3.0**: Connect AEM Forms as a Cloud Service to REST endpoints that support Open API specification version 3.0 to send and recieve data. 
+
+## CIF Add-on {#cloud-services-cif}
+
+### What is New {#what-is-new-cif}
+
+* Authors can dynamically enrich product lists with Experience Fragments (example: place banner between product listings).
+* The list component now supports associated product / category pages to dynamically show related pages.
+* Support for Peregrine 12.5 components was added.
+* Support for client-side price loading in product teaser and carousel was added.
 
 ## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 

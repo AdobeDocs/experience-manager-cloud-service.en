@@ -519,27 +519,27 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
+        + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
     + Authoring Adaptive Forms - Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
         + [Convert an existing PDF Form to an Adaptive Form](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
         + [Review and correct converted forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
-      + Before you start {#before-you-start}
+      + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
         + [Introduction to authoring of an Adaptive Forms](/help/forms/introduction-forms-authoring.md)
+        + [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
         + [Create a template](/help/forms/template-editor.md)
         + [Create a theme](/help/forms/themes.md)
-        + [Connect your data sources to Cloud Service](/help/forms/data-integration.md)
         + [Reference Assets](/help/forms/reference-assets.md)
-      + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
-        + [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
         + [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)
         + [Use Forms Designer](/help/forms/use-forms-designer.md)
         + [Improve performance of large forms with lazy loading](/help/forms/lazy-loading-adaptive-forms.md)
       + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
         + [Use CAPTCHA in an Adaptive Form](/help/forms/captcha-adaptive-forms.md)
         + [Use Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-        +  [Apply Scribble Signature](/help/forms/signing-forms-using-scribble.md)
+        + [Apply Scribble Signature](/help/forms/signing-forms-using-scribble.md)
         + [Add a table to an adaptive form](/help/forms/adaptive-forms-tables.md)
+        + [Add Footnotes support to an Adaptive Form](/help/forms/footnotes-richtextsupport.md)
       + Configure layout and apply style to an Adaptive Form{#configure-layout-of-an-adaptive-form}
         + [Set layout of an Adaptive Form](/help/forms/layout-capabilities-adaptive-forms.md)
         + [Use Layout mode to resize components](/help/forms/resize-using-layout-mode.md)
@@ -563,6 +563,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
       + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
     + Form Data Model {#use-form-data-model}
+      + [Connect your data sources to Cloud Service](/help/forms/data-integration.md)
       + [Configure data sources](/help/forms/configure-data-sources.md)
       + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
       + [Configure [!DNL Azure] storage](/help/forms/configure-azure-storage.md)
@@ -580,7 +581,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
-  + Developer API Reference {#aem-forms-developer-api-reference}
+    + Developer API Reference {#aem-forms-developer-api-reference}
     + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
     + [AEM Forms Cloud Service JavaScript API Reference](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
     + [AEM Forms Cloud Service Java API Reference](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
