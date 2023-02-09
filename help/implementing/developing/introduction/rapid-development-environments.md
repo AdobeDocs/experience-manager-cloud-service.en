@@ -21,7 +21,7 @@ RDEs can be used for code, content, and Apache or Dispatcher configurations. Unl
 
 Every program is provisioned with an RDE. In case of Sandbox accounts, they will be hibernated after a few hours of non-use.
 
-Upon creation, RDEs are set to the most recently available AEM version. An RDE reset, which can be performed using Cloud Manager, will cycle the RDE and set it the most recently available AEM version.
+Upon creation, RDEs are set to the most recently available AEM version. An RDE reset, which can be performed using Cloud Manager, will cycle the RDE and set it to the most recently available AEM version.
 
 Typically, an RDE would be used by a single developer at a given time, for testing and debugging a specific feature. When the development session is done, the RDE can be reset into a default state for the next usage.
 
@@ -61,7 +61,7 @@ Follow these steps to use Cloud Manager to create an RDE for your program.
 
 The **Overview** screen now displays your new environment in the **Environments** card.
 
-Upon creation, RDEs are set to the most recently available AEM version. An RDE reset, which can also be performed using Cloud Manager, will cycle the RDE and set it the most recently available AEM version.
+Upon creation, RDEs are set to the most recently available AEM version. An RDE reset, which can also be performed using Cloud Manager, will cycle the RDE and set it to the most recently available AEM version.
 
 For more information about using Cloud Manager to create environments, manage who has access to them, and assign custom domains, please see [the Cloud Manager documentation.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
