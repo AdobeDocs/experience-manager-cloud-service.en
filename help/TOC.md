@@ -675,11 +675,12 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
   + GraphQL API {#graphql-api}
     + [GraphQL API for Content Fragments](/help/headless/graphql-api/content-fragments.md)
-    + [Updating Content Fragments for GraphQL Filtering](/help/headless/graphql-api/graphql-paging-sorting-content-update.md)
     + [Manage GraphQL endpoints](/help/headless/graphql-api/graphql-endpoint.md)
     + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
-    + [Sample GraphQL queries](/help/headless/graphql-api/sample-queries.md)
     + [Persisted GraphQL queries](/help/headless/graphql-api/persisted-queries.md)
+    + [Optimizing GraphQL Queries](/help/headless/graphql-api/graphql-optimization.md)
+    + [Updating Content Fragments for GraphQL Filtering](/help/headless/graphql-api/graphql-paging-sorting-content-update.md)
+    + [Sample GraphQL queries](/help/headless/graphql-api/sample-queries.md)
   + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
   + Security {#security}
     + [Permissions](/help/headless/security/permissions.md)
