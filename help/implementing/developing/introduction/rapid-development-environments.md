@@ -1,7 +1,6 @@
 ---
 title: Rapid Development Environments
 description: Learn how to leverage Rapid Development Environments for rapid development iterations on a cloud environment.
-hidefromtoc: yes 
 ---
 
 # Rapid Development Environments {#rapid-development-environments}
