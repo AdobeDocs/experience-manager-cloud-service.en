@@ -87,7 +87,7 @@ The selected regions will apply to both production and staging environments.
 
 If you do not specify any additional regions, [you can do so later after the environments are created.](#edit-regions)
 
-If you wish to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended to do this before adding additional publish regions to the environments. Otherwise the additional publish regions' traffic will go through the primary region's proxy.
+If you wish to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended to do this before adding additional publish regions to the environments by using the Cloud Manager API. Otherwise the additional publish regions' traffic will go through the primary region's proxy.
 
 ### Editing Multiple Publish Regions {#edit-regions}
 
