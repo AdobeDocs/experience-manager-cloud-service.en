@@ -20,7 +20,7 @@ No known general issues are associated with this maintenance release.
 ### Fixed Issues {#fixed-issues}
 
 - CORS : pedro to update
-- 
+
 ### Embedded Technologies {#embedded-tech}
 
 |Technology|Version|Link|
