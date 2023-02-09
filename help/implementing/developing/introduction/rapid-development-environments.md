@@ -194,9 +194,13 @@ The response for a successful deployment resembles the following:
 
 Optionally, you can reference a remote repository:
 
-`aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+`aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 By default, artifacts are deployed to both author and publish tiers, but the "-s" flag can be used to target a specific tier.
+
+>[!IMPORTANT]
+>
+>The dispatcher configuration for the WKND project is not deployed via the above content-package installation. You will need to deploy it separately following the "Deploying an Apache/Dispatcher Configuration" steps.
 
 <u>Deploying an OSGI Configuration</u>
 
@@ -387,7 +391,7 @@ You can also reset the RDE using the ellipsis button directly from the **Environ
 
 For more information about how to use Cloud Manager to manage your environments, please see [the Cloud Manager documentation.](/help/implementing/cloud-manager/manage-environments.md)
 
-## Runmodes {#runmodes}
+## Run Modes {#runmodes}
 
 RDE specific OSGI configuration can be applied by using suffixes on the folder name, like in the examples below:
 
@@ -400,6 +404,20 @@ See the [runmode documentation](/help/implementing/deploying/overview.md#runmode
 >[!NOTE]
 >
 >RDE OSGI configuration is unique in that it inherits the values of any OSGI properties declared by the bundle's `dev` run mode.
+
+RDEs are distinct from other environments in that content can be installed in an install.rde folder (or install.author.rde or install.publish.rde) under /apps. This allows you to commit content to git and deliver it to the RDE using the command line tooling.
+
+## Populating with Content {#populating-content}
+
+When an RDE is reset, all content is removed and so if desired, explicit action must be taken to add content. As a best practice, consider assembling a set of content to be used as test content for validating or debugging features in the RDE. There are several possible strategies for populating the RDE with that content:
+
+1. Sync the content package explicitly to the RDE using the command line tooling
+
+1. Place and commit the sample content in git inside an install.rde folder under /apps and then sync the overarching content package to the RDE using the command line tooling.
+
+1. Use Package Manager
+
+Note that you are limited to 1GB when syncing content packages.
 
 ## Logging {#logging}
 
