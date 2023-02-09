@@ -6,10 +6,15 @@ role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
 ---
-# Create an Adaptive Form {#creating-an-adaptive-form}
+# Create an Adaptive Form (Foundation Components) {#creating-an-adaptive-form}
 
 
 Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provides business user friendly wizard to quickly author Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. 
+
+   >[!NOTE]
+   >
+   > This article describes an old approach to create an Adaptive Form. To create Adaptive Forms based on latest approach, see [Create an Adaptive Form (Core Components)](creating-adaptive-form.md).
+
 
 <!-- 
 
@@ -33,7 +38,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
-   Adaptive Forms created with this option don’t use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
+   Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
 
 ## Pre-requisites
 
@@ -48,6 +53,8 @@ You require the following to create an Adaptive Form:
 
 * **Permissions**: Add your users to [!DNL forms-users] to provide them permissions to create an Adaptive Form. For detailed list of forms specific user groups, see [Groups and permissions](forms-groups-privileges-tasks.md).
 
+## Create an Adaptive Form (Foundation Components) {#create-an-adaptive-form-foundation-components}
+
 1. Access [!DNL Experience Manager Forms] Author instance. It can be a Cloud instance or a local development instance.
 
 1. Enter your credentials on the Experience Manager login page.
@@ -61,15 +68,19 @@ You require the following to create an Adaptive Form:
    
       >[!NOTE]
       >
-      > You can also create [!UICONTROL Document of Record] template using an Apadtive Form editor. For more information, see [Document of Record Support in Adaptive Form Editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+      > You can also create [!UICONTROL Document of Record] template using an Adaptive Forms editor. For more information, see [Document of Record Support in Adaptive Form Editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
    * When you select a static template, the data, style, submission, delivery, and preview options are not available. When you are create a new Adaptive Form, it is recommended to use an Editable template.
 
-1. In the Style tab, select a theme:
+1. In the **[!UICONTROL Style]** tab, select a theme:
+
    * When the selected template specifies a theme, the theme is auto selected in the wizard. You can also choose a different theme from the Style tab.
    * If the selected template does not specify a theme, you can use the Style tab to choose a theme. The **[!UICONTROL Create]** button is enabled only after a theme is selected. 
-1. (Optional) In the Data Tab, select a data model:
+
+1. (Optional) In the **[!UICONTROL Data]** tab, select a data model:
+
    * **Form data model**: A [Form Data Model](data-integration.md) lets you integrate entities and services from disparate data sources to an Adaptive Form. Choose Form Data Model if the Adaptive Form that you are creating involves fetching and write data from and to multiple data source.
+   
    * **JSON Schema**: [JSON schema](adaptive-form-json-schema-form-model.md) represents the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms and all the fields are also added to newly created Adaptive Form.
 
    By default, all the fields of the data model are selected. When you create the Adaptive Form, all the selected data model fields are converted to corresponding Adaptive Form components. The wizard provides you checkboxes to select only those fields which should be included in the Adaptive Form.
@@ -80,7 +91,7 @@ You require the following to create an Adaptive Form:
    
    -->
 
-1. In the Submission Tab, select a submit action:
+1. In the **[!UICONTROL Submission]** tab, select a submit action:
 
    *  When you select a template, the submit action specified in the template is auto-selected. You can select a different submit action from the Submission tab. The **[!UICONTROL  Submission]** tab displays all the available submit actions. 
 
@@ -170,3 +181,7 @@ You can also modify the form model properties from the Adaptive Form editor or A
 1. Tap ![Save](/help/forms/assets/check-button.png) to save the properties.
 
  ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)
+
+>[!NOTE]
+>
+> You can also save an Adpative Form as a template. For more information, see [Create a template using an Adaptive Form](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
