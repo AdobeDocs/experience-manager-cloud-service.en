@@ -61,7 +61,7 @@ You can configure relational databases using [!DNL Experience Manager] Web Conso
       "datasource.name": "sqldatasourcename-mysql",
       "jdbc.driver.class": "com.mysql.jdbc.Driver",
       "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST;default=proxy.tunnel]:30001/sqldatasourcename"
-      ```
+   ```
 
    >[!NOTE]
    >
@@ -189,6 +189,7 @@ Set the following properties of the **[!UICONTROL Form Data Model HTTP Client Co
 
 The following JSON file displays a sample:
 
+
 ```json
 {   
    "http.connection.keep.alive.duration":"15",   
@@ -244,11 +245,13 @@ You can specify a regular expression that serves as the filter for absolute URLs
 
 Set the `importAllowlistPattern` property of the **[!UICONTROL Form Data Model SOAP Web Services Import Allowlist]** configuration to specify the regular expression. The following JSON file displays a sample:
 
+
 ```json
 {
   "importAllowlistPattern": ".*"
 }
 ```
+
 
 To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
