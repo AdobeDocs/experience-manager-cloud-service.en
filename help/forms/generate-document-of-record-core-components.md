@@ -110,11 +110,16 @@ After using the template for some time, organization decides to rename `invoice-
 
 ![Updated Template](assets/we-retail-new-invoice.png)
 
+<!--
+
 The developer uploads and applies to the updated template to the adaptive form. The adaptive form automatically detects and displays list of fields where binding has changed.
 
 ![Binding Error](assets/we-retail-binding-error.png)
 
 The form developer binds Adaptive Forms fields with corresponding Document of Record template.
+
+-->
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 Now, when the Adaptive Form is submitted, an updated  Document of Record of record is generated.
