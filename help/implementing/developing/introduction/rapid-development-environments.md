@@ -1,7 +1,6 @@
 ---
 title: Rapid Development Environments
 description: Learn how to leverage Rapid Development Environments for rapid development iterations on a cloud environment.
-hidefromtoc: yes 
 ---
 
 # Rapid Development Environments {#rapid-development-environments}
@@ -21,6 +20,8 @@ Once the changes have been tested in an RDE, they can be deployed to a regular C
 RDEs can be used for code, content, and Apache or Dispatcher configurations. Unlike regular Cloud Development environments, developers can use local command-line tools to sync code built locally to an RDE.
 
 Every program is provisioned with an RDE. In case of Sandbox accounts, they will be hibernated after a few hours of non-use.
+
+Upon creation, RDEs are set to the most recently available AEM version. An RDE reset, which can be performed using Cloud Manager, will cycle the RDE and set it to the most recently available AEM version.
 
 Typically, an RDE would be used by a single developer at a given time, for testing and debugging a specific feature. When the development session is done, the RDE can be reset into a default state for the next usage.
 
@@ -59,6 +60,8 @@ Follow these steps to use Cloud Manager to create an RDE for your program.
 1. Click **Save** to add the specified environment.
 
 The **Overview** screen now displays your new environment in the **Environments** card.
+
+Upon creation, RDEs are set to the most recently available AEM version. An RDE reset, which can also be performed using Cloud Manager, will cycle the RDE and set it to the most recently available AEM version.
 
 For more information about using Cloud Manager to create environments, manage who has access to them, and assign custom domains, please see [the Cloud Manager documentation.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
@@ -136,7 +139,12 @@ Adobe recommends the following workflow for developing a new feature:
 
 * When an intermediate milestone is reached and successfully validated locally with the AEM as a Cloud Service SDK, the code should be committed to a git feature branch that is not yet part of the main line, although committing to git is optional. What constitutes an "intermediate milestone" varies based on team habits. Examples include a few new lines of code, half a day of work, or completing a sub-feature.
 
-* Reset the RDE if it has been used by another feature and you want to [reset it to a default state](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Reset will take a few minutes and all existing content and code will be deleted. You can use the RDE status command to confirm the RDE is ready.
+* Reset the RDE if it has been used by another feature and you want to [reset it to a default state](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Reset will take a few minutes and all existing content and code will be deleted. You can use the RDE status command to confirm the RDE is ready. The RDE will come back up with the most recent AEM release version.  
+  
+  >[!IMPORTANT]
+  >
+  > If your staging and production environments are not receiving automatic AEM release updates and are far behind the most recent AEM release version, be mindful that the code running on the RDE may not match how the code will function on staging and production. In that case, it is especially important to perform thorough testing of the code on staging before deploying it to production.
+
 
 * Using the RDE command-line interface, sync local code to the RDE. Options include installing a content package, a specific bundle, an OSGI configuration file, a content file, and a zip file of an Apache/Dispatcher configuration. Referencing a remote content package is also possible. See the [RDE Command Line Tools](#rde-cli-commands) section for more information. You can use the status command to validate that the deployment was successful. Optionally, use Package Manager to install content packages.
 
@@ -195,9 +203,13 @@ The response for a successful deployment resembles the following:
 
 Optionally, you can reference a remote repository:
 
-`aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+`aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 By default, artifacts are deployed to both author and publish tiers, but the "-s" flag can be used to target a specific tier.
+
+>[!IMPORTANT]
+>
+>The dispatcher configuration for the WKND project is not deployed via the above content-package installation. You will need to deploy it separately following the "Deploying an Apache/Dispatcher Configuration" steps.
 
 <u>Deploying an OSGI Configuration</u>
 
@@ -330,6 +342,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 Resetting the RDE removes all custom code, configurations, and content from both the author and publish instances. This can be useful, for example, if the RDE has been used to test a specific feature and you want to reset it to a default state in order to test a different feature.
 
+A reset will set the RDE to the most recently available AEM version.
+
 <!-- Alexandru: hiding for now, please don't delete
 
 Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code will be deleted from the RDE.
@@ -388,7 +402,7 @@ You can also reset the RDE using the ellipsis button directly from the **Environ
 
 For more information about how to use Cloud Manager to manage your environments, please see [the Cloud Manager documentation.](/help/implementing/cloud-manager/manage-environments.md)
 
-## Runmodes {#runmodes}
+## Run Modes {#runmodes}
 
 RDE specific OSGI configuration can be applied by using suffixes on the folder name, like in the examples below:
 
@@ -401,6 +415,20 @@ See the [runmode documentation](/help/implementing/deploying/overview.md#runmode
 >[!NOTE]
 >
 >RDE OSGI configuration is unique in that it inherits the values of any OSGI properties declared by the bundle's `dev` run mode.
+
+RDEs are distinct from other environments in that content can be installed in an install.rde folder (or install.author.rde or install.publish.rde) under /apps. This allows you to commit content to git and deliver it to the RDE using the command line tooling.
+
+## Populating with Content {#populating-content}
+
+When an RDE is reset, all content is removed and so if desired, explicit action must be taken to add content. As a best practice, consider assembling a set of content to be used as test content for validating or debugging features in the RDE. There are several possible strategies for populating the RDE with that content:
+
+1. Sync the content package explicitly to the RDE using the command line tooling
+
+1. Place and commit the sample content in git inside an install.rde folder under /apps and then sync the overarching content package to the RDE using the command line tooling.
+
+1. Use Package Manager
+
+Note that you are limited to 1GB when syncing content packages.
 
 ## Logging {#logging}
 
@@ -427,3 +455,18 @@ The number of RDEs needed depends on the make-up and processes of an organizatio
 At the other extreme, a team with a single RDE may use internal processes to coordinate which developer can use the environment at a given time. This can possibly be whenever a developer has hit an intermediate feature milestone and is ready to validate in a Cloud environment where they can quickly make the changes they need.
 
 An in-between model is one where an organization purchases a number of RDEs so there is a greater likelihood of an unused RDE being available. One strategy could be to allocate an RDE per scrum team or major feature. Internal processes may be used to coordinate usage of the environments.
+
+## How a AEM Forms Cloud Service Rapid Development Environment (RDE) is different from other environments? {#how-are-forms-rds-different-from-cloud-development-environments}
+
+Forms developers can use AEM Forms Cloud Service Rapid Development Environment to quickly develop Adaptive Forms, Workflows, and customizations like customizing core components, integrations with third-party systems, and more. The AEM Forms Cloud Service Rapid Development Environment (RDE) has no support Communication APIs and for features and capabilities that requires Document of Record, like generating a Document of Record on submission of an Adaptive Form. The below listed AEM Forms features are not available on a Rapid Development Environment (RDE):
+ 
+* Configuring a Document of Record for an Adaptive Form
+* Generating a Document of Record on submission of an Adaptive Form or with a Workflow step
+* Send Document of Record as an attachment with Email Submit action or with Email step in a Workflow
+* Using Adobe Sign in an Adaptive Form or in a Workflow step
+* Communication APIs
+
+>[!NOTE]
+>
+> There is no change between UI of Rapid Development Environment (RDE) and other Cloud Service environments for Forms. All Document of Record related options, like selecting a document of record template for an adaptive form, continues to appear in UI. These environments has no Communication APIs and Document of Record capabilities to test such options. So, when you choose any option that requires Communication APIs or Document of Record capabilities, no action is performed, and an error message is displayed or returned.
+
