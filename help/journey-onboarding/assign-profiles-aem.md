@@ -28,6 +28,10 @@ To use AEM, your team members must be assigned to at least one AEM product profi
 
 Every user assigned to an AEM product profile will also gain read-only access to Cloud Manager. Write access to Cloud Manager may be granted via other product profiles.
 
+>[!CAUTION]
+>
+>Do not edit or delete the Product Profiles named AEM Administrators or AEM Users. Editing these profile names can break login to the AEM cloud instance.
+
 ## Prerequisites {#prerequisites}
 
 Before you start reading this section, you should have the following information available about your team who will use AEM.
