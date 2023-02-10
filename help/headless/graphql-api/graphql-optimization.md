@@ -5,4 +5,167 @@ description: Learn how to optimize your GraphQL queries when Filtering, Paging a
 
 # Optimizing GraphQL Queries {#optimizing-graphwl-queries}
 
-On an AEM instance with a lot of Content Fragments sharing the same model, GraphQL list queries can become costly.
+>[!NOTE]
+>
+>Prior to these optimization recommendations you need to [Update your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+
+On an AEM instance with a high number of Content Fragments that share the same model, GraphQL list queries can become costly (in terms of resources).
+
+This is because *all* fragments that share a model being used within the GraphQL query have to be loaded into memory. This consumes both time and memory. Filtering, which may reduce the number of items in the (final) result set, can only be applied **after** loading the entire result set into memory.
+
+This can lead to the impression that even small result sets (can) lead to bad performance. However, in reality the slowness is caused by the size of the initial result set, as it has to be handled internally, before filtering can be applied.
+
+To reduce performance and memory issues, this initial result set has to be kept as small as possible.
+
+AEM provides two approaches for optimizing GraphQL queries:
+
+* [Hybrid filtering](#hybrid-filtering)
+* [Paging](#paging) (or pagination)
+* and also [Sorting](#sorting)
+
+Hybrid filtering and paging are closely interconnected, sorting forms another part of the solution.
+
+Each approach has its own use-cases and limitations. This document provides information on Hybrid Filtering and Paging, with some [best practices](#best-practices) to optimize GraphQL queries.
+
+## Hybrid filtering {#hybrid-filtering}
+
+Hybrid filtering applies a JCR filter before loading the result set into memory for AEM filtering.
+
+This (should) reduce :
+
+* the result set loaded into memory, as the JCR filter removes superfluous results in advance
+
+* the cost of reading large sets of JCR nodes from the repository
+
+>[!NOTE]
+>
+>For technical reasons (e.g. flexibility, nesting of fragments), AEM cannot delegate the entire filtering to JCR. 
+
+This technique keeps the flexibility that GraphQL filters provide, while delegating as much of the filtering as possible to JCR.
+
+## Paging {#paging}
+
+GraphQL in AEM provides support for two types of pagination:
+
+* limit/offset-based pagination
+  This is used for list queries (ending with List; for example, `articleList`). 
+  To use it, you have to provide the position of the first item to return (the `offset`) and the number of items to return (the `limit`, or page size).
+
+* cursor-based pagination
+  This provides a unique ID for each item (the `cursor`). 
+  In the query, you specify the cursor of the last item of the previous page, plus the page size (the maximum number of items to be returned).
+
+<!-- does the following paragraph and note belong solely to cursor-based pagination? -->
+
+As cursor-based pagination does not fit within the data structures of list-based queries, AEM has introduced `Paginated` query type; for example, `articlePaginated`. The data structures and parameters used follow the [GraphQL Cursor ConnectionSpecification](https://relay.dev/graphql/connections.htm).
+
+>[!NOTE]
+>
+>AEM currently supports forward paging (using after/first parameters). 
+>
+>Backward paging (using before/last parameters) is not supported.
+
+## Sorting {#sorting}
+
+The following rule applies for sorting:
+
+* Sorting can only be efficient if all sort criteria are related to top-level fragments.
+
+  If the sorting order includes one, or more, fields that are located on a nested fragment, then all fragments sharing the top-level model must be loaded into memory. This causes a negative performance impact.
+
+>[!NOTE]
+>
+>Sorting always has an impact (of some degree) on performance.
+
+## Best Practices {#best-practices}
+
+The main goal of all optimizations is to reduce the initial result set. The best practices listed here provide ways to do so. They can (and should) be combined.
+
+### Filter on top-level properties only {#filter-top-level-properties-only}
+
+Currently, filtering at the JCR level only works for top-level fragments.
+
+If a filter addresses a nested fragment, AEM has to fall back to loading (into memory) all fragments that share the underlying model. 
+
+You can still optimize such GraphQL queries by combining filter expressions on fields of top-level fragments and those on fields of nested fragments with the [AND operator](#logical-operations-in-filter-expressions).
+
+### Use the content structure {#use-content-structure}
+
+In AEM, it is generally considered good practice to use the repository structure to narrow down the scope of content to be processed.
+
+This approach should also be applied to GraphQL queries.
+
+This can be done by applying a filter on the `_path` field of the top-level fragment:
+
+```graphql
+{
+  someList(filter: {
+    _path: {
+      _expressions: [ 
+        {
+          value: "/content/dam/some/sub/path/",
+          _operator: STARTS_WITH
+        }
+      ]
+    }
+  }) {
+    items {
+      # ...
+    }
+  }
+}
+```
+
+>[!NOTE]
+>
+>The trailing `/` on `value` is required to achieve the best performance. 
+
+### Use paging {#use-paging}
+
+You can also use paging to reduce the initial result set; especially if your requests do not use any filtering and sorting.
+
+If you filter or sort on nested fragments, paginated queries can still be slow, as AEM still needs to load the entire set of fragments sharing the top-level model into memory. Therefore, the same rules for filtering (as mentioned above) apply.
+
+For paging, sorting is equally important, as paginated results are always sorted - either in an explicit or an implicit way.
+
+If you are primarily interested in only retrieving the first few pages, there is no significant difference between using the `...List` or `...Paginated` queries. However, if your application is interested in reading more than just one or two pages, you should consider the `...Paginated` query, as it performs notably better with the later pages.
+
+### Logical operations in filter expressions {#logical-operations-in-filter-expressions}
+
+If you are filtering on nested fragments, you can still leverage JCR filtering by providing an accompanying filter on a top-level field that is combined using the `AND` operator.
+
+A typical use-case would be to restrict the scope of the query using a filter on the `_path` field of the top-level fragment, and then filter on additional fields that might be on the top-level, or on a nested fragment.
+
+In this case, the different filter expressions would be combined with `AND`. Therefore, the filter on `_path` can effectively limit the initial result set. All other filters on top-level fields can help with reducing the initial result set as well - as long as they are combined with `AND`.
+
+Filter expressions combined with `OR` cannot be optimized if nested fragments are involved. `OR` expressions can only be optimized if *no* nested fragments are involved.
+
+### Avoid filtering on multiline textfields {#avoid-filtering-multiline-textfields}
+
+The fields of a multiline textfield (html, markdown, plaintext, json) cannot be filtered through a JCR query, as the content of these fields have to be calculated on the fly.
+
+If you still need to filter on a multiline textfield, consider limiting the size of the initial result set by adding additional filter expressions and combine them with `AND`. Limiting the scope through filtering on the `_path` field is a good approach as well.
+
+### Avoid filtering on virtual fields {#avoid-filtering-virtual-fields}
+
+Virtual fields (most fields starting with `_`) are calculated while a GraphQL query is executed, and are therefore outside the scope of JCR-based filtering.
+
+One important exception is the `_path` field, which can be used effectively to reduce the size of the initial result set - if content is structured accordingly (see [Use the content structure](#use-content-structure)).
+
+### Filtering: Exclusions {#filtering-exclusions}
+
+There are several other situations where a filter expression cannot be evaluated on the JCR level (and therefore should be avoided to achieve the best performance):
+
+* Filter expressions on a `Float` value that use the `_sensitiveness` filter option, and where `_sensitiveness` is set to anything other than `0.0` .
+
+* Filter expressions on a `String` value using the `_ignoreCase` filter option.
+
+* Filtering on `null` values.
+
+* Filters on arrays with `_apply: ALL_OR_EMPTY`.
+
+* Filters on arrays with `_apply: INSTANCES`, `_instances: 0`.
+
+* Filter expressions using the `CONTAINS_NOT` operator.
+
+* Filter expressions on a `Calendar`, `Date` or `Time` value that use the `NOT_AT` operator.
