@@ -7,6 +7,11 @@ description: Learn how to update your Content Fragments for Paging and Sorting i
 
 To optimize the performance of your GraphQL filters you need to run a procedure to update your Content Fragments.
 
+>[!NOTE]
+>
+>After updating your Content Fragments you can follow the recommendations for [Optimizing GraphQL Queries](/help/headless/graphql-api/graphql-optimization.md).
+
+
 ## Prerequisites {#prerequisites}
 
 Ensure that you have a minimum of the 2023.1.0 release  of AEM as a Cloud Service.
