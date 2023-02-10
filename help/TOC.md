@@ -503,17 +503,17 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Configure Unified Storage Connector](/help/forms/configure-unified-storage-connector.md)
-  + Migrating {#setup-environment}
+  + Migrate {#setup-environment}
     + [Migrate to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-  + Administering {#administering}
+  + Configure and administer {#administering}
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
     + [Import, export, and organize Adaptive Forms, PDF forms, and other assets](/help/forms/import-export-forms-templates.md)
-  + Integrating {#integrate}
+  + Integrate {#integrate}
     + [Integrate AEM Forms as a Cloud Service with Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
     + [Integrate AEM Forms as a Cloud Service with DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
     + [Integrate AEM Forms as a Cloud Service with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
     + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-    + [Embed an Adaptive Forms in a AEM Sites page](/help/forms/embed-adaptive-form-aem-sites.md)
+    + [Embed an Adaptive Forms in an AEM Sites page](/help/forms/embed-adaptive-form-aem-sites.md)
   + Adaptive Forms {#adaptive-forms-authoring}
     + Authoring Adaptive Forms - Core Components {#authoring-adaptive-forms-core-components}
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
@@ -556,26 +556,28 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Create a custom Submit Action](/help/forms/custom-submit-action-form.md)
       + [Prefill Adaptive Form fields](/help/forms/prepopulate-adaptive-form-fields.md)
       + [Generate Document of Record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+      + [Add support for new locales to an adaptive form](/help/forms/supporting-new-language-localization.md)
       + Add or improve metadata {#manage-metadata}
         + [Add, remove, or edit metadata of an Adaptive Form](/help/forms/manage-form-metadata.md)
         + [Reuse metadata properties of an Adaptive Form](/help/forms/reusing-adaptive-forms.md)
       + Improve accessibility of an Adaptive Form {#accessible-adaptive-forms}
         + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
       + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
-    + Form Data Model {#use-form-data-model}
-      + [Connect your data sources to Cloud Service](/help/forms/data-integration.md)
-      + [Configure data sources](/help/forms/configure-data-sources.md)
-      + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-      + [Configure [!DNL Azure] storage](/help/forms/configure-azure-storage.md)
-      + [Configure [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
-      + [Create Form Data Model](/help/forms/create-form-data-models.md)
-      + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
-      + [Use Form Data Model](/help/forms/using-form-data-model.md)
-    + Forms Centric Workflows {#create-form-centric-workflows}
-      + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)
-      + [Use variables in a Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
-      + [Use the Out of Office option](/help/forms/configure-out-of-office-settings.md)
-  + Using Communications APIs {#using-communications}
+      + [Create and manage reviews](/help/forms/create-reviews-forms.md)
+  + Form Data Model {#use-form-data-model}
+    + [Connect your data sources to Cloud Service](/help/forms/data-integration.md)
+    + [Configure data sources](/help/forms/configure-data-sources.md)
+    + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+    + [Configure [!DNL Azure] storage](/help/forms/configure-azure-storage.md)
+    + [Configure [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
+    + [Create Form Data Model](/help/forms/create-form-data-models.md)
+    + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
+    + [Use Form Data Model](/help/forms/using-form-data-model.md)
+  + Forms Centric Workflows {#create-form-centric-workflows}
+    + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)
+    + [Use variables in a Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
+    + [Use the Out of Office option](/help/forms/configure-out-of-office-settings.md)
+  + Communications APIs {#using-communications}
     + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
     + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
