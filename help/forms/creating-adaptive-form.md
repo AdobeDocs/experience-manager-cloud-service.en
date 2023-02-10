@@ -11,9 +11,12 @@ exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
 
 Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provides business user friendly wizard to quickly author Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. 
 
-   >[!NOTE]
-   >
-   > This article describes an old approach to create an Adaptive Form. To create Adaptive Forms based on latest approach, see [Create an Adaptive Form (Core Components)](creating-adaptive-form.md).
+Before you start, learn about the type of Forms components available to you: 
+
+*   [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) are standardized data capture components. These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrolment experiences. A developer can easily customize and style these components. Adobe recommends leveraging these modern and extensible components to develop Adaptive Forms.  
+
+*   [Adaptive Forms Foundation Components](creating-adaptive-form.md) are classic (old) data capture components. You can continue to use these to edit your existing foundation components based Adaptive Form. If you are creating new forms, Adobe recommends using  [Adaptive Forms Core Components](creating-adaptive-form-core-components.md) to create an Adaptive Forms. 
+
 
 
 <!-- 

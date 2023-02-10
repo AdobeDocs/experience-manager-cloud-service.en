@@ -458,17 +458,15 @@ An in-between model is one where an organization purchases a number of RDEs so t
 
 ## How a AEM Forms Cloud Service Rapid Development Environment (RDE) is different from other environments? {#how-are-forms-rds-different-from-cloud-development-environments}
 
-Forms developers can use AEM Forms Cloud Service Rapid Development Environment to quickly develop Adaptive Forms, Workflows, and customizations like customizing core components, integrations with third-party systems, and more. The AEM Forms Cloud Service Rapid Development Environment (RDE) has no support for features and capabilities that requires Document of Record, like generating a Document of Record on submission of an Adaptive Form. The below listed features use Document of Record. These are not available for a Rapid Development Environment (RDE):
-
+Forms developers can use AEM Forms Cloud Service Rapid Development Environment to quickly develop Adaptive Forms, Workflows, and customizations like customizing core components, integrations with third-party systems, and more. The AEM Forms Cloud Service Rapid Development Environment (RDE) has no support Communication APIs and for features and capabilities that requires Document of Record, like generating a Document of Record on submission of an Adaptive Form. The below listed AEM Forms features are not available on a Rapid Development Environment (RDE):
+ 
 * Configuring a Document of Record for an Adaptive Form
 * Generating a Document of Record on submission of an Adaptive Form or with a Workflow step
 * Send Document of Record as an attachment with Email Submit action or with Email step in a Workflow
 * Using Adobe Sign in an Adaptive Form or in a Workflow step
 * Communication APIs
 
-You encounter an error messages on using a feature that requires Document of Record.
-
 >[!NOTE]
 >
-> There is no change between UI of Rapid Development Environment (RDE) and other Cloud Service environments for Forms. All Document of Record related options, like selecting a document of record template for an adaptive form, continues to appear in UI. These environments has no Document of Record capabilities to test such options. So, when you choose any Document of Record option, no action is performed, and an error message is displayed or returned.
+> There is no change between UI of Rapid Development Environment (RDE) and other Cloud Service environments for Forms. All Document of Record related options, like selecting a document of record template for an adaptive form, continues to appear in UI. These environments has no Communication APIs and Document of Record capabilities to test such options. So, when you choose any option that requires Communication APIs or Document of Record capabilities, no action is performed, and an error message is displayed or returned.
 
