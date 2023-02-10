@@ -1,6 +1,7 @@
 ---
 title: Troubleshoot Dynamic Media
 description: Troubleshooting tips when you use Dynamic Media.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 ---

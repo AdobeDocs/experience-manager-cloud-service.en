@@ -9,7 +9,7 @@ exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 
 ## Introduction {#introduction}
 
-AEM as a Cloud Service now uses continuous integration and continuous delivery (CI/CD) to ensure that your projects are on the most current AEM version. This means that production and stageing instances are updated to the latest AEM version without any interruption of service for users. 
+AEM as a Cloud Service now uses continuous integration and continuous delivery (CI/CD) to ensure that your projects are on the most current AEM version. This means that production and staging instances are updated to the latest AEM version without any interruption of service for users. 
 
 >[!NOTE]
 >
