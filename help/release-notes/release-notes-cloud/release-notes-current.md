@@ -7,11 +7,13 @@ mini-toc-levels: 1
 
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the general Release Notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
+The following section outlines the feature release notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->From here, you can navigate to release notes of previous versions; for example, for those in 2020, 2021, and so on.
+>From here, you can navigate to release notes of previous versions; for example, for those in 2021, 2022, and so on.
+>
+>Have a look at the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) to learn about the upcoming feature activations for [!DNL Experience Manager] as a Cloud Service. 
 
 >[!NOTE]
 >
@@ -19,65 +21,57 @@ The following section outlines the general Release Notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current monthly release (2022.10.0) is November 10, 2022. The next monthly release (2023.1.0) is planned for February 9, 2023.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.1.0) is February 9, 2023. The next feature release (2023.2.0) is planned for March 2, 2023.
 
 ## Release Video {#release-video}
 
-Have a look at the October 2022 Release Overview video for a summary of the features added in the 2022.10.0 release:
+Have a look at the January 2023 Release Overview video for a summary of the features added in the 2023.1.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3409801/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3413479/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+### New features in [!DNL Sites] prerelease {#prerelease-features-sites}
 
-### New features in [!DNL Sites] {#sites-features}
- 
-* The [Personalization Tab for Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) allows segmentation specification capabilities to the Experience Fragment Editor as well as the flexibility to create nested Experience Fragments whereby headers and footers variations can be created for multiple segments. Prior to the launch of this feature, personalization offered by AEM is only available for site pages, but not for Experience Fragments
-
-* The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now enables users to efficiently manage translated content fragments. A 1-click access has been provided to view all the language copies as well. Users are also able to filter the table view by the locale of their interest.
-
-![Content Fragments Languages](/help/release-notes/assets/cfconsole-languages.png)
-
-* Further reduce page load time for visitors by optimizing image sizes settings in templates. Find more information for the image component at [Core WCM Component](https://github.com/adobe/aem-core-wcm-components)
+* The AEM GraphQL content delivery API now supports GraphQL [Paging](/help/headless/graphql-api/content-fragments.md#paging) and [Sorting](/help/headless/graphql-api/content-fragments.md#sorting), to make fetching and rendering large content sets more efficient. GraphQL pagination allows to improve query response time by returning results in sub-sets as opposed to all at once. GraphQL sorting allows putting content sets in a desired order, making it easier for a client appliation to process the content.  Query response time is further improved with Hybrid Filtering in the AEM GraphQL engine. Content is now read from JCR in smaller sets that correspond with query filters. 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* Experience Manager Assets now allows you to upload documents in other supported format types and[ preview them using the included Document Cloud viewer](/help/assets/manage-pdf-documents.md). The supported format types include TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, and XLSX.
+* Assets Reports now includes the ability for Administrators to [generate assets download reports](/help/assets/asset-reports.md) from the Experience Manager Assets as a Cloud Service deployment. This data further empowers Admins to derive insights from key success metrics in order to measure the adoption of Assets within your enterprise and by customers.
 
-  ![PDF rendition for other formats](/help/release-notes/assets/multi-page-other-formats.png)
+   ![PDF rendition for other formats](/help/release-notes/assets/choose_report.png)
 
+* Experience Manager Assets now [supports SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) in addition to the Access Key for authentication while connecting to Azure Blob Storage data source for ingesting assets using the Bulk Import tool.
+
+* Improved management of CMYK images in Asset Compute, enabling you to generate Smart Crop and Smart Tags for CMYK images.
 
 ### New features in [!DNL Assets] prerelease {#prerelease-features-assets}
 
-* Experience Manager Assets now uses an improved artificial intelligence framework for image Smart Tags. This content intelligence results in better relevancy and precision of Smart Tags available to all image assets on ingestion. In addition, orientation information is populated in `cq:tags`, which enables better Search results using the Orientation filter.
-
-   If you are interested in participating in the Beta, [fill this form](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) by November 14.
-
-* Experience Manager Assets now [supports SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) in addition to the Access Key for authentication while connecting to Azure Blob Storage data source for ingesting assets using the Bulk Import tool.
+* Experience Manager Assets now supports [large-scale ingestion of assets from Google Cloud Platform](/help/assets/add-assets.md#asset-bulk-ingestor) using the Bulk Import tool.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### New features available in [!DNL Forms] {#new-features-available-in-channel}
 
+* **[Workflow steps to generate non-interactive PDF documents and printable output](/help/forms/aem-forms-workflow-step-reference.md)**: Automate the creation of non-interactive PDF documents and printable output for your business processes with AEM Workflow steps, streamlining your document generation process and saving time.
+* **[Use Footnotes to provide citations or extra information in Adaptive Forms](/help/forms/footnotes-richtextsupport.md)**:  Use Footnotes in an adaptive form to display the information on how to complete or use a form. You can also use it to provide parenthetical information, copyright permissions, and other helpful information.
 
-* [Adaptive Forms wizard](/help/forms/creating-adaptive-form.md): AEM Forms provides business user friendly wizard to quickly author Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form. This release brings following improvements to the wizard:
+### New features in [!DNL Forms] prerelease {#prerelease-features-forms}
 
-  * Select or deselect fields: The wizard allows you to create an Adaptive Form based on JSON and Form Data Model schemas. You can now select subset of fields within a schema to include in an Adaptive Form. The selected fields are converted to corresponding Adaptive Form data capture components to quickly create the desired adaptive forms.
+* **[Use data capture core components to build Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [Use Adaptive Forms editor](/help/forms/creating-adaptive-form-core-components.md) to create forms based on standardized data capture components (Core Components). These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrolment experiences.
+* **[Frontend pipeline support for styling core component based Adaptive Forms](/help/forms/using-themes-in-core-components.md)**: Utilize easily customizable BEM-based themes for Core Components-based Adaptive Forms by deploying them with Frontend Deployment pipeline to enhance the look and feel of your forms.
+* **[Generate Document of Record for core component based Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)**: Create a record for core component based Adaptive Form on submission for long term archival, in print or in the document format. 
 
-  * Use Static Templates: Customers with existing investments in legacy static templates can continue their journey of cloud adoption by using static templates in wizard to author adaptive forms. This provides additional time to customers to migrate old static templates to modern editable templates.
+![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* [Remove hidden fields from a Document of Record (DoR) while server-side processing](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): You can generate the document of record PDF for end users containing only those fields which were visible to them during data capture experience. Upon form submission, the server validates which fields were hidden to the end user based on submitted data and excludes from document of record for consistency.
+* **[Submit Adaptive Forms to Microsoft SharePoint and Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Streamline data submission with the ability to directly send Adaptive Form data to both Microsoft SharePoint and Microsoft OneDrive. You can submit both schema-based and schema-less data. These submit actions are in addition to already available submit actions. 
+* **[Efficient form-building with the Save an Adaptive Form as a template feature](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Streamline your form-building process by saving an Adaptive Form as a template and reusing the templates for your next Adaptive Form. 
+* **[Connect AEM Forms to JDBC-Supported databases](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: Easily connect your AEM Forms data model to databases that support JDBC, allowing you to read and write data seamlessly.
+* **[Integrate with REST Endpoints Using Open API 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Connect AEM Forms as a Cloud Service Form Data Models to REST endpoints that support Open API specification version 3.0, allowing you to send and receive data with ease.
+* **[Share an Adaptive Form for review](/help/forms/create-reviews-forms.md)**: Use the Adaptive Forms review mechanism to allow one or more reviewers to review the form.
 
-### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
-
-* **Adaptive Forms template editor**: Template editor allows you to pre-define the basic structure and appearance of Adaptive Forms of an organization. This release brings following improvements to the template editor:
-  * **[Form Data Model in template editor](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: You can associate a Form Data Model schema to an Adaptive Form template in the template editor. It helps reduce the time taken to create an Adaptive Form. The option is also added to Adaptive Forms editor to allows users to select or change Form Data Model for existing forms.
-  * **[Document of Record in template editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: You can now standardize Document of Record generation for all forms created using a template. This helps enhance compliance and standardization for org requirements.
-
-* **[Launch the Adaptive Form wizard from a AEM Sites Page](/help/forms/embed-adaptive-form-aem-sites.md)**: AEM Sites page has extended support for Adaptive Forms. You can now create a new Adaptive Form or embed an existing Adaptive Form while remaining on AEM Sites page. 
-* **[Change display alignment for checkboxes and radiobutton in DoR](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: You can now set the desired alignment (Horizontal, Vertical, Same as Adaptive Forms) for checkbox and radio button on the Document of Record. This option determines the positioning of checkbox and radio button options in the Document of Record. 
 
 ## CIF Add-on {#cloud-services-cif}
 
@@ -92,11 +86,25 @@ Have a look at the October 2022 Release Overview video for a summary of the feat
 
 ### What is New {#what-is-new-foundation}
 
-* AEM as a Cloud Service (Author Service) is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Refer to AEM as a [Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
+* [Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md) - RDEs enable developers to rapidly troubleshoot issues and deploy new features on AEM as a Cloud Service.  
 
-* As previously mentioned in release notes, using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is deprecated and will be enforced in the coming days. Please refer to [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) for the suggested approaches for replicating these large content packages.
+  Rapid Development Environments are a new type of Cloud Environment intended as a fast, consistent, and extensible way of validating that code working locally also functions as expected in the Cloud. Using Command Line Tools, quickly "sync" content packages, bundles, content files, OSGI configuration, or dispatcher configuration to the RDE. See this in action in the video below:  
+  
+  >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)   
+ 
+  After successfully validating code in the RDE, it is encouraged to deploy to a Cloud Dev Environment to exercise the Cloud Manager quality gates, before deploying via production pipeline to stage and production environments.  
 
-* Dispatcher configuration now references a file that lists common marketing campaign query parameters. Customers can choose to uncomment the parameters that are relevant to them, resulting in better caching. Refer to [Marketing campaign parameters](/help/implementing/dispatcher/caching.md#marketing-parameters) for more details.
+  Each program includes one RDE and optionally, more can be licensed.  
+    
+  >[!NOTE]
+  >
+  >RDEs will be gradually rolled out over the next few weeks; you can send an email to aemcs-rde-support@adobe.com to skip to the front of the line.
+
+* [Extended support for server-side API access tokens](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) – You can now generate multiple credentials, which is useful for scenarios where APIs have different characteristics. It is also now possible to revoke credentials in a self-service manner.
+
+## Maintenance Release Notes {#maintenance}
+
+You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
 ## Cloud Manager {#cloud-manager}
 
