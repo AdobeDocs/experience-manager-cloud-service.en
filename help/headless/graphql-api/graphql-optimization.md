@@ -7,7 +7,7 @@ description: Learn how to optimize your GraphQL queries when Filtering, Paging a
 
 >[!NOTE]
 >
->Prior to these optimization recommendations you need to [Update your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+>Prior to applying these optimization recommendations you need to [Update your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
 
 On an AEM instance with a high number of Content Fragments that share the same model, GraphQL list queries can become costly (in terms of resources).
 
@@ -29,11 +29,11 @@ Each approach has its own use-cases and limitations. This document provides info
 
 ## Hybrid filtering {#hybrid-filtering}
 
-Hybrid filtering applies a JCR filter before loading the result set into memory for AEM filtering.
+Hybrid filtering combines JCR filtering with AEM filtering.
 
-This (should) reduce :
+It applies a JCR filter before loading the result set into memory for AEM filtering. This (should) reduce :
 
-* the result set loaded into memory, as the JCR filter removes superfluous results in advance
+* the result set loaded into memory, as the JCR filter removes superfluous results prior to this
 
 * the cost of reading large sets of JCR nodes from the repository
 
@@ -47,11 +47,13 @@ This technique keeps the flexibility that GraphQL filters provide, while delegat
 
 GraphQL in AEM provides support for two types of pagination:
 
-* limit/offset-based pagination
+<!-- is cursor aka first and after? -->
+
+* [limit/offset-based pagination](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
   This is used for list queries (ending with List; for example, `articleList`). 
   To use it, you have to provide the position of the first item to return (the `offset`) and the number of items to return (the `limit`, or page size).
 
-* cursor-based pagination
+* [cursor-based pagination](/help/headless/graphql-api/content-fragments.md#paginated-first-after)
   This provides a unique ID for each item (the `cursor`). 
   In the query, you specify the cursor of the last item of the previous page, plus the page size (the maximum number of items to be returned).
 
