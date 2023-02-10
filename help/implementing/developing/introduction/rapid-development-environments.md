@@ -21,6 +21,8 @@ RDEs can be used for code, content, and Apache or Dispatcher configurations. Unl
 
 Every program is provisioned with an RDE. In case of Sandbox accounts, they will be hibernated after a few hours of non-use.
 
+Upon creation, RDEs are set to the most recently available AEM version. An RDE reset, which can be performed using Cloud Manager, will cycle the RDE and set it to the most recently available AEM version.
+
 Typically, an RDE would be used by a single developer at a given time, for testing and debugging a specific feature. When the development session is done, the RDE can be reset into a default state for the next usage.
 
 Additional RDEs may be licensed for Production (non-sandbox) programs.
@@ -58,6 +60,8 @@ Follow these steps to use Cloud Manager to create an RDE for your program.
 1. Click **Save** to add the specified environment.
 
 The **Overview** screen now displays your new environment in the **Environments** card.
+
+Upon creation, RDEs are set to the most recently available AEM version. An RDE reset, which can also be performed using Cloud Manager, will cycle the RDE and set it to the most recently available AEM version.
 
 For more information about using Cloud Manager to create environments, manage who has access to them, and assign custom domains, please see [the Cloud Manager documentation.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
@@ -135,7 +139,12 @@ Adobe recommends the following workflow for developing a new feature:
 
 * When an intermediate milestone is reached and successfully validated locally with the AEM as a Cloud Service SDK, the code should be committed to a git feature branch that is not yet part of the main line, although committing to git is optional. What constitutes an "intermediate milestone" varies based on team habits. Examples include a few new lines of code, half a day of work, or completing a sub-feature.
 
-* Reset the RDE if it has been used by another feature and you want to [reset it to a default state](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Reset will take a few minutes and all existing content and code will be deleted. You can use the RDE status command to confirm the RDE is ready.
+* Reset the RDE if it has been used by another feature and you want to [reset it to a default state](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Reset will take a few minutes and all existing content and code will be deleted. You can use the RDE status command to confirm the RDE is ready. The RDE will come back up with the most recent AEM release version.  
+  
+  >[!IMPORTANT]
+  >
+  > If your staging and production environments are not receiving automatic AEM release updates and are far behind the most recent AEM release version, be mindful that the code running on the RDE may not match how the code will function on staging and production. In that case, it is especially important to perform thorough testing of the code on staging before deploying it to production.
+
 
 * Using the RDE command-line interface, sync local code to the RDE. Options include installing a content package, a specific bundle, an OSGI configuration file, a content file, and a zip file of an Apache/Dispatcher configuration. Referencing a remote content package is also possible. See the [RDE Command Line Tools](#rde-cli-commands) section for more information. You can use the status command to validate that the deployment was successful. Optionally, use Package Manager to install content packages.
 
@@ -332,6 +341,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 ## Reset {#reset-rde}
 
 Resetting the RDE removes all custom code, configurations, and content from both the author and publish instances. This can be useful, for example, if the RDE has been used to test a specific feature and you want to reset it to a default state in order to test a different feature.
+
+A reset will set the RDE to the most recently available AEM version.
 
 <!-- Alexandru: hiding for now, please don't delete
 
