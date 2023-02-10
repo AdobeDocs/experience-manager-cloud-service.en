@@ -177,6 +177,23 @@ Perform the following steps to show and hide templates:
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
 
+## Save an Adaptive Form as template {#saving-adaptive-form-as-template}
+
+You can also save an Adaptive Form as a template for future use. To save a Adaptive Form as a template:
+
+1. Select an Adaptive Form to save it as a template.
+1. Click **[!UICONTROL Save as Template]**. A dialog box appears.
+1. Specify **[!UICONTROL Title]** (mandatory field), **[!UICONTROL Location]** (mandatory field) and **[!UICONTROL Description]** (optional field) for the template. 
+1. Click **[!UICONTROL Create]**.
+
+   ![Save as Form as Template](/help/forms/assets/saveformastemplate.png)
+
+
+
+>[!NOTE]
+>
+>To use the same container policy as of the source Adaptive Form, it is recommended to save the template in the same folder as of the source Adaptive Form. In case, the template is saved in any other folder, than the created template uses a default container policy.
+
 ## Recommendations {#recommendations}
 
 * When you modify properties of the form in template editor, do not use the BindReference property.
