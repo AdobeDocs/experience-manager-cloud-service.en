@@ -1,7 +1,6 @@
 ---
 title: Rapid Development Environments
 description: Learn how to leverage Rapid Development Environments for rapid development iterations on a cloud environment.
-hidefromtoc: yes 
 ---
 
 # Rapid Development Environments {#rapid-development-environments}
@@ -195,9 +194,13 @@ The response for a successful deployment resembles the following:
 
 Optionally, you can reference a remote repository:
 
-`aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+`aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 By default, artifacts are deployed to both author and publish tiers, but the "-s" flag can be used to target a specific tier.
+
+>[!IMPORTANT]
+>
+>The dispatcher configuration for the WKND project is not deployed via the above content-package installation. You will need to deploy it separately following the "Deploying an Apache/Dispatcher Configuration" steps.
 
 <u>Deploying an OSGI Configuration</u>
 
@@ -441,3 +444,20 @@ The number of RDEs needed depends on the make-up and processes of an organizatio
 At the other extreme, a team with a single RDE may use internal processes to coordinate which developer can use the environment at a given time. This can possibly be whenever a developer has hit an intermediate feature milestone and is ready to validate in a Cloud environment where they can quickly make the changes they need.
 
 An in-between model is one where an organization purchases a number of RDEs so there is a greater likelihood of an unused RDE being available. One strategy could be to allocate an RDE per scrum team or major feature. Internal processes may be used to coordinate usage of the environments.
+
+## How a AEM Forms Cloud Service Rapid Development Environment (RDE) is different from other environments? {#how-are-forms-rds-different-from-cloud-development-environments}
+
+Forms developers can use AEM Forms Cloud Service Rapid Development Environment to quickly develop Adaptive Forms, Workflows, and customizations like customizing core components, integrations with third-party systems, and more. The AEM Forms Cloud Service Rapid Development Environment (RDE) has no support for features and capabilities that requires Document of Record, like generating a Document of Record on submission of an Adaptive Form. The below listed features use Document of Record. These are not available for a Rapid Development Environment (RDE):
+
+* Configuring a Document of Record for an Adaptive Form
+* Generating a Document of Record on submission of an Adaptive Form or with a Workflow step
+* Send Document of Record as an attachment with Email Submit action or with Email step in a Workflow
+* Using Adobe Sign in an Adaptive Form or in a Workflow step
+* Communication APIs
+
+You encounter an error messages on using a feature that requires Document of Record.
+
+>[!NOTE]
+>
+> There is no change between UI of Rapid Development Environment (RDE) and other Cloud Service environments for Forms. All Document of Record related options, like selecting a document of record template for an adaptive form, continues to appear in UI. These environments has no Document of Record capabilities to test such options. So, when you choose any Document of Record option, no action is performed, and an error message is displayed or returned.
+
