@@ -90,7 +90,7 @@ The required options can be selected in **Page Properties** of the required fold
 
 1. Under **Cloud Service Configuration**, select **Adobe Target** from the drop-down list.
 
-<!-- is this note appropriate? -->
+   <!-- is this note appropriate? -->
 
    >[!NOTE]
    >
@@ -115,7 +115,7 @@ The required options can be selected in **Page Properties** of the required fold
 
    For example, for a folder:
 
-<!-- need a new screenshot -->
+   <!-- need a new screenshot -->
 
    ![Folder - Cloud Services](assets/xf-target-integration-01.png "Folder - Cloud Services")
 
@@ -368,6 +368,8 @@ After performing the preceding tasks, the Content Fragment displays on the Offer
 ## Deleting a Content Fragment already exported to Adobe Target {#deleting-a-content-fragment-already-exported-to-adobe-target}
 
 Deleting a content fragment that has already been exported to Target may cause problems if the fragment is already being used in an offer in Target. Deleting the fragment would render the offer unusable as the fragment content is being delivered by AEM.
+
+<!-- if the information about deleting-if-used correct, or is it not allowed at all? -->
 
 To avoid such situations:
 
