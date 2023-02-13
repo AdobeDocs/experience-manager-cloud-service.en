@@ -331,6 +331,8 @@ To export a Content Fragment from AEM to Target (after specifying the Cloud Conf
 
 1. Tap/click **Export to Adobe Target**.
 
+   ![Export to Adobe Target](assets/cfm-export-target-01.png)
+
    >[!NOTE]
    >
    >If the Content Fragment has already been exported, select **Update in Adobe Target**.
@@ -366,6 +368,10 @@ After performing the preceding tasks, the Content Fragment displays on the Offer
 >When viewing a Content Fragment in Adobe Target, the *last modified* date that is seen is the date that the fragment was last modified in AEM, not the date that the fragment was last exported to Adobe Target.
 
 ## Deleting a Content Fragment already exported to Adobe Target {#deleting-a-content-fragment-already-exported-to-adobe-target}
+
+Deleting a content fragment from Adobe Target can also be selected from the top toolbar once the fragment has been selected:
+
+![Delete in Adobe Target](assets/cfm-export-target-02.png)
 
 Deleting a content fragment that has already been exported to Target may cause problems if the fragment is already being used in an offer in Target. Deleting the fragment would render the offer unusable as the fragment content is being delivered by AEM.
 
