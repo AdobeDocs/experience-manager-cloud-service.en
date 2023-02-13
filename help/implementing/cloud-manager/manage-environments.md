@@ -93,7 +93,7 @@ If you wish to provision [advanced networking](/help/security/configuring-advanc
 
 If you did not specify any additional regions initially, you can do so after the environments are created.
 
-You can also remove additional publish regions. However you can only add or only remove regions in one transaction.
+You can also remove additional publish regions. However you can only add or only remove regions in one transaction. If you need to add one region and remove one region, first add, save your change and then remove (or vice versa).
 
 1. From the Program Overview console of your program, click the ellipsis button for your production environment and select **Edit** from the menu.
 
@@ -107,7 +107,7 @@ You can also remove additional publish regions. However you can only add or only
 
 1. Tap or click **Save** to save the changes.
 
-Changes made to the production environment will apply to both production and staging environments.
+Changes made to the production environment will apply to both production and staging environments. Changes to multiple publish regions can only be edited in the production environment.
 
 If you wish to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended to do this before adding additional publish regions to the environments. Otherwise the additional publish regions' traffic will go through the primary region's proxy.
 
