@@ -8,7 +8,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 
 ## Introduction {#introduction}
 
-The fundamentals of code development are similar in AEM as a Cloud Service compared to the AEM On Premise and Managed Services solutions. Developers write code and test it locally, which is then pushed to remote AEM as a Cloud Service environments. Cloud Manager, which was an optional content delivery tool for Managed Services, is required. This is now the sole mechanism for deploying code to AEM as a Cloud Service environments.
+The fundamentals of code development are similar in AEM as a Cloud Service compared to the AEM On Premise and Managed Services solutions. Developers write code and test it locally, which is then pushed to remote AEM as a Cloud Service environments. Cloud Manager, which was an optional content delivery tool for Managed Services, is required. This is now the sole mechanism for deploying code to AEM as a Cloud Service dev, stage, and production environments. For quick feature validation and debugging prior to deploying those aforementioned environments, code can be synced from a local environment to a [Rapid Development Environment](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 The update of the [AEM version](/help/implementing/deploying/aem-version-updates.md) is always a separate deployment event from pushing [custom code](#customer-releases). Viewed in another way, custom code releases should be tested against the AEM version that is on production since that is what it will be deployed on the top. AEM version updates that happen after that, which will be frequent and are automatically applied. They are intended to be backward compatible with the customer code already deployed.
 
@@ -164,7 +164,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Package Manager - Migrating Mutable Content Packages"
->abstract="Explore usage of package manager for use cases where a content package should be installed as “one off” which includes importing specific content from production on to staging in order to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments and more."
+>abstract="Explore usage of package manager for use cases where a content package should be installed as "one off" which includes importing specific content from production on to staging in order to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments and more."
 >abstract="Explore usage of package manager for use cases where a content package should be installed as 'one off' which includes importing specific content from production on to staging in order to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments and more."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Content Transfer Tool"
 
@@ -273,6 +273,12 @@ If changes to indexes are made, it is important that the Blue version continues 
 ### Conservative Coding for Rollbacks {#conservative-coding-for-rollbacks}
 
 If a failure is reported or detected after the deployment, it is possible that a rollback to the Blue version will be required. It would be wise to ensure that the Blue code is compatible with any new structures created by the Green version since the new structures (any mutable content content) will not be rolled back. If the old code is not compatible, fixes will need to be applied in subsequent customer releases.
+
+## Rapid Development Environments (RDE) {#rde}
+
+[Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md) (or RDEs for short) allow developers to quickly deploy and review changes, minimizing the amount of time needed to test features that are already proven to work on a local development environment.
+
+Unlike regular dev environments, which deploy code via Cloud Manager pipeline, developers use command line tools to sync code from a local development environment to the RDE. Once the changes have been successfully tested in an RDE, they should be deployed to a regular Cloud Development environment through the Cloud Manager pipeline, which will put the code through the appropriate quality gates. 
 
 ## Runmodes {#runmodes}
 
