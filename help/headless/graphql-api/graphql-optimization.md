@@ -13,7 +13,7 @@ On an AEM instance with a high number of Content Fragments that share the same m
 
 This is because *all* fragments that share a model being used within the GraphQL query have to be loaded into memory. This consumes both time and memory. Filtering, which may reduce the number of items in the (final) result set, can only be applied **after** loading the entire result set into memory.
 
-This can lead to the impression that even small result sets (can) lead to bad performance. However, in reality the slowness is caused by the size of the initial result set, as it has to be handled internally, before filtering can be applied.
+This can lead to the impression that even small result sets (can) lead to bad performance. However, in reality the slowness is caused by the size of the initial result set, as it has to be handled internally before filtering can be applied.
 
 To reduce performance and memory issues, this initial result set has to be kept as small as possible.
 
@@ -31,7 +31,7 @@ Each approach has its own use-cases and limitations. This document provides info
 
 Hybrid filtering combines JCR filtering with AEM filtering.
 
-It applies a JCR filter before loading the result set into memory for AEM filtering. This (should) reduce :
+It applies a JCR filter before loading the result set into memory for AEM filtering. This is to reduce:
 
 * the result set loaded into memory, as the JCR filter removes superfluous results prior to this
 
@@ -50,11 +50,11 @@ GraphQL in AEM provides support for two types of pagination:
 <!-- is cursor aka first and after? -->
 
 * [limit/offset-based pagination](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-  This is used for list queries (ending with List; for example, `articleList`). 
+  This is used for list queries; these end with `List`; for example, `articleList`. 
   To use it, you have to provide the position of the first item to return (the `offset`) and the number of items to return (the `limit`, or page size).
 
 * [cursor-based pagination](/help/headless/graphql-api/content-fragments.md#paginated-first-after)
-  This provides a unique ID for each item (the `cursor`). 
+  This provides a unique ID for each item; also known as the cursor. 
   In the query, you specify the cursor of the last item of the previous page, plus the page size (the maximum number of items to be returned).
 
 <!-- does the following paragraph and note belong solely to cursor-based pagination? -->
