@@ -1,6 +1,7 @@
 ---
 title: Dynamic Media Image Profiles
 description: Learn how to create Dynamic Media Image Profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both. Then, apply the profile to a folder of image assets.
+contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
@@ -11,12 +12,11 @@ When uploading images, you can automatically crop the image upon upload by apply
 
 >[!IMPORTANT]
 >
->&bull; CMYK image format is not supported with smart crop.
->&bull; Image profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
+>Image profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
 
 ## Unsharp Mask option {#unsharp-mask}
 
-When creating an Image Profile, you can use the **[!UICONTROL Unsharp mask]** option to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that is ignored. This effect uses the same options as Adobe Photoshop’s “Unsharp Mask” filter.
+When creating an Image Profile, you can use the **[!UICONTROL Unsharp mask]** option to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that is ignored. This effect uses the same options as Adobe Photoshop's "Unsharp Mask" filter.
 
 >[!NOTE]
 >
@@ -76,8 +76,7 @@ You have two image crop options from which to choose. You can also choose to aut
 
 >[!IMPORTANT]
 >
->&bull; Adobe recommends that you review any generated crops and swatches to ensure that they are appropriate and relevant to your brand and values.
->&bull; CMYK image format is not supported with smart crop.
+>Adobe recommends that you review any generated crops and swatches to ensure that they are appropriate and relevant to your brand and values.
 
 | Option | When to use | Description |
 | --- | --- | --- |
@@ -97,7 +96,7 @@ The maximum supported input file size resolution is 16K.
 | Image format | Case-insensitive file extension | MIME type | Supported input color space | Maximum supported input file size | Supported image format? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Yes |
-| CMYK | | | | | No |
+| CMYK | | | | | Yes |
 | EPS | | | | | No |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Yes; the first frame of the animated GIF is used for the rendition. You cannot configure or change the first frame. |
 | JPEG | `.jpg` and `.jpeg` | image/jpeg | sRGB | 15 GB | Yes |
@@ -207,8 +206,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 >[!IMPORTANT]
 >
->&bull; Adobe recommends that you review any generated smart crops and smart swatches to ensure that they are appropriate and relevant to your brand and values.
->&bull; CMYK image format is not supported with smart crop.
+>Adobe recommends that you review any generated smart crops and smart swatches to ensure that they are appropriate and relevant to your brand and values.
 
 You can manually realign or resize the smart crop window of an image to further refine its focal point.
 
@@ -244,8 +242,7 @@ See also [Edit the smart crop or smart swatch of multiple images](#editing-the-s
 
 >[!IMPORTANT]
 >
->&bull; Adobe recommends that you review any generated smart crops and smart swatches to ensure that they are appropriate and relevant to your brand and values.
->&bull; CMYK image format is not supported with smart crop.
+>Adobe recommends that you review any generated smart crops and smart swatches to ensure that they are appropriate and relevant to your brand and values.
 
 After you apply an Image Profile &ndash; containing Smart Crop &ndash; to a folder, all images in that folder have a crop applied to them. If desired, you can *manually* realign or resize the smart crop window in multiple images to further refine their focal point.
 

@@ -1,6 +1,7 @@
 ---
 title: Work with Dynamic Media
 description: Learn how to use Dynamic Media to deliver assets for consumption on web, mobile, and social sites.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 ---
@@ -31,7 +32,7 @@ Dynamic Media-only features include the following:
 * [Video](video.md)
 * [Delivering Dynamic Media Assets](delivering-dynamic-media-assets.md)
 * [Managing Assets](managing-assets.md)
-* [Using Quick views to create custom pop-up Windows®](custom-pop-ups.md)
+* [Using Quick views to create custom pop-up Windows&reg;](custom-pop-ups.md)
 
 See also [Setting up Dynamic Media](administering-dynamic-media.md).
 

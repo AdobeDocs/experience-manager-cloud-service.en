@@ -160,7 +160,7 @@ Customers can access CRXDE lite on the author tier's development environment but
 
 Instead, the Repository Browser can be launched from the Developer Console, providing a read-only view into the repository for all environments on author, publish, and preview tiers. Read more about the Repository Browser [here](/help/implementing/developing/tools/repository-browser.md).
 
-A set of tools for debugging AEM as a Cloud Service developer environments are available in the Developer Console for dev, stage, and production environments. The url can be determined by adjusting the Author or Publish service urls as follows:
+A set of tools for debugging AEM as a Cloud Service developer environments are available in the Developer Console for RDE, dev, stage, and production environments. The url can be determined by adjusting the Author or Publish service urls as follows:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
