@@ -1661,6 +1661,12 @@ query ($seoName: String!) {
 }
 ```
 
+If you save this as a persisted query with the name `dynamic-url-x`, you can then call the persisted query directly, for example: 
+
+`http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
+
+![Sample Query for Image Delivery using parameters](assets/cfm-graphiql-sample-image-delivery.png "Sample Query for Image Delivery using parameters")
+
 ## The Sample Content Fragment Structure (used with GraphQL) {#content-fragment-structure-graphql}
 
 The sample queries are based on the following structure, which uses:
