@@ -929,6 +929,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Operations and Maintenance on AEM as a Cloud Service](/help/operations/home.md)
   + [Content Search and indexing](/help/operations/indexing.md)
   + [Content Replication Service](/help/operations/replication.md)
+  + [Additional Publish Regions](/help/operations/additional-publish-regions.md)
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Backup and Restore](/help/operations/backup.md)
