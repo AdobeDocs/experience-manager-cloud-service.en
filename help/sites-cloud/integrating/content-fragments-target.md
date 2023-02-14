@@ -48,9 +48,9 @@ Content Fragments can be exported to the default workspace in Adobe Target, or t
 >For further information see also:
 >
 >* [Adobe Target development](https://developers.adobetarget.com/)
->* [Core Components - Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
->* [Adobe Target - How Do I Use Adobe Experience Manager (AEM) Content Fragments?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-content-fragments.html?lang=en)
->* [AEM 6.5 - Manually Configuring the Integration with Adobe Target - Creating a Target Cloud Configuration](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
+>* [Core Components - Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+>* [Adobe Target - How Do I Use Adobe Experience Manager (AEM) Content Fragments?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-content-fragments.html)
+>* [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
 
 ## Prerequisites {#prerequisites}
 
@@ -96,7 +96,7 @@ The required options can be selected in **Page Properties** of the required fold
    >
    >The JSON format of a Content Fragment offer can be customized. To do this define a customer Content Fragment component and then annotate how to export its properties in the component Sling Model.
    >
-   >See the core component: [Core Components - Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment.html)
+   >See the core component: [Core Components - Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 1. Under **Adobe Target** select:
 
@@ -322,20 +322,22 @@ When you associate a page with the framework, the child pages inherit the associ
 
 To export a Content Fragment from AEM to Target (after specifying the Cloud Configuration):
 
-1. Navigate to the Content Fragment console.
+1. Navigate to your Content Fragment in the **Assets** console.
 1. Select the Content Fragment you would like to export to target.
-
-   >[!NOTE]
-   >
-   >It has to be a Content Fragment Web variation.
 
 1. Tap/click **Export to Adobe Target**.
 
    ![Export to Adobe Target](assets/cfm-export-target-01.png)
 
+   <!-- this note doesn't seem to be accurate for CFs -->
+
+   <!--
+   
    >[!NOTE]
    >
    >If the Content Fragment has already been exported, select **Update in Adobe Target**.
+   
+   -->
 
 1. Tap/click **Export without publishing** or **Publish** as required.
 
@@ -369,7 +371,7 @@ After performing the preceding tasks, the Content Fragment displays on the Offer
 
 ## Deleting a Content Fragment already exported to Adobe Target {#deleting-a-content-fragment-already-exported-to-adobe-target}
 
-Deleting a content fragment from Adobe Target can also be selected from the top toolbar once the fragment has been selected:
+As with exporting, deleting a content fragment from Adobe Target can also be selected from the top toolbar of the **Assets** console once the fragment has been selected:
 
 ![Delete in Adobe Target](assets/cfm-export-target-02.png)
 
