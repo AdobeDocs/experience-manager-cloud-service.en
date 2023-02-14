@@ -689,6 +689,9 @@ query {
 
 ## Image Delivery {#image-delivery}
 
+<!-- why image delivery? isn't a new image being generated? -->
+<!-- in JSON delivery - what does that mean exactly? -->
+
 You can use AEM Dynamic Media to:
 
 * Pass [Dynamic Imaging commands](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api) into GraphQL queries. 
@@ -698,13 +701,18 @@ You can use AEM Dynamic Media to:
 
 The solution in GraphQL means you can:
 
+<!-- to do what? -->
+
 * use `_dynamicUrl` on the `ImageRef` reference
 
 * add `_assetTransform` to the list header where your filters are defined
 
 ### URL Transform Input Structure {#url-transform-input-structure}
 
-The structure of the url transform input field is structured to help you use it with enumerations, sub-structures and descriptions.
+<!-- what does URL transform input field actually mean? -->
+<!-- a method of transforming the asset and then delivering by URL? -->
+
+The structure of the URL transform input field is structured to help you use it with enumerations, sub-structures and descriptions.
 
 The syntax is:
 
