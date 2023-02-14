@@ -442,6 +442,7 @@ For these reasons, it is recommended that after validating code on an RDE enviro
 
 Also note the following considerations: 
 
+* RDEs do not include a preview tier
 * RDEs do not currently support viewing and debugging front-end code deployed using the Cloud Manager Front-End Pipeline.
 * RDEs do not currently support the prerelease channel.
 
