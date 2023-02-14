@@ -10,6 +10,12 @@ Welcome to the documentation for developers who are new to Adobe Experience Mana
 
 Learn about the powerful and flexible headless features, their capabilities, and how to leverage them on your first headless development project. This journey provides you with all the information you need to develop your first headless application.
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_headless_developer_resources"
+>title="AEM Headless developer resources"
+>abstract="Everything you need to learn about AEM headless CMS and build and ship better applications and faster experiences."
+>additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html" text="AEM Headless developer resources"
+
 ## Introduction {#introduction}
 
 The Headless implementation of AEM uses Content Fragments Models and Content Fragments to focus on the creation of structured, channel-neutral, and reusable fragments of content and their cross-channel delivery. To achieve this it forgoes page and component management as is traditional in full stack solutions. It is a modern and dynamic development pattern for implementing digital experiences.
