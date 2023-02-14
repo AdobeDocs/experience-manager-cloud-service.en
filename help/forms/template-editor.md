@@ -150,7 +150,7 @@ A form works with its template. When you download an Adaptive Form created using
 > * You can also configure the [!UICONTROL Document of Record] template directly from the Adaptive Form editor or Adaptive Form template editor. For more information, see [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 
-### Associate a Form Data Model Schema to a template {#associating-form-data-model-schema-in-template}
+## Associate a Form Data Model Schema to a template {#associating-form-data-model-schema-in-template}
 
 Authors can associate a [!UICONTROL Form Data Model Schema] to an Adaptive Form template in the template editor. It allows authors to select a schema from the template editor. When you associate a schema to a template and a form author creates a form based on the template, the schema is pre-selected for the form. It helps forms authors regulate the use of schema and saves time for forms author also. To select a form data model schema in template editor:
 
