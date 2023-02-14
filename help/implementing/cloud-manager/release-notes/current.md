@@ -19,12 +19,6 @@ The release date for Cloud Manager release 2023.2.0 in AEM as a Cloud Service is
 
 ## What's New {#what-is-new}
 
-* 
-
 ## Bug Fixes {#bug-fixes}
 
-* 
-
 ## API Changes {#api-changes}
-
-*
