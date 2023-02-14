@@ -8,7 +8,7 @@ description: Additional publish regions for increased availability and reduced l
 Additional Publish Regions can be licensed and enabled on programs set up with AEM Sites. It results in traffic on stage and production environments being routed to multiple publish farms, which has the following benefits:
 
 * Reduced latency - requests that route from the CDN to the AEM publish instances are directed to the nearest publish region, which is advantageous for websites and applications visited by users in multiple geographies
-* Higher availability - if a region is not available, the CDN directs traffic to the other available region(s). Note that if a request needs to retrieve files from the data store, but the primary region's data store in not reachable, those files will not be accessible.
+* Higher availability - if a region is not available, the CDN directs traffic to the other available region(s). Note that if a request needs to retrieve files from the data store, but the primary region's data store is not reachable, those files will not be accessible.
 
 Organizations may license up to three additional publish regions.
 
