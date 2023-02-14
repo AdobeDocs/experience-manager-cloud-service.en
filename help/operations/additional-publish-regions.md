@@ -32,4 +32,4 @@ After licensing an additional publish region, it is configured using Cloud Manag
 
 When an additional publish region is enabled on a program with advanced networking already configured, the traffic in the additional publish region that matches the advanced networking rules will by default route through the primary region. In order to take advantage of increased availability, it is recommended to enable advanced networking for the secondary region.
 
-Read the "Advanced Networking Considerations for Additional Publish Regions" (link) section in the Advanced Networking documentation for details, including how to add advanced networking configurations for additional regions without incurring loss of connectivity.
+Read the [Advanced Networking Considerations for Additional Publish Regions section](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) in the Advanced Networking documentation for details, including how to add advanced networking configurations for additional regions without incurring loss of connectivity.
