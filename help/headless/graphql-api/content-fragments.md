@@ -687,6 +687,56 @@ query {
 >
 >* Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. This is also the recommended way if you want to query large paginated result sets.
 
+## Image Delivery {#image-delivery}
+
+You can use AEM Dynamic Media to:
+
+* Pass [Dynamic Imaging commands](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api) into GraphQL queries. 
+  This means that the commands get applied during query execution, in the same way as URL parameters on GET requests for those images.
+
+* Dynamically create image renditions in JSON delivery. This avoids having to manually create and store those renditions in the repository.
+
+The solution in GraphQL means you can:
+
+* use `_dynamicUrl` on the `ImageRef` reference
+
+* add `_assetTransform` to the list header where your filters are defined
+
+### URL Transform Input Structure {#url-transform-input-structure}
+
+The structure of the url transform input field is structured to help you use it with enumerations, sub-structures and descriptions.
+
+The syntax is:
+
+* `format`: an enumeration will all supported formats by its extension: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL or WEBPLY
+* `seoName`: a string that will be used as file name instead of the node name
+* `crop`: a frame sub structure, if width or height is omitted then the height or width is used as the same value
+  * `xOrigin`: the x origin of the frame and is mandatory
+  * `yOrigin`: the y origin of the frame and is mandatory
+  * `width`: the width of the frame
+  * `height`: the height of the frame
+* `size`: a dimension sub structure, if width or height is omitted then the height or width is used as the same value
+  * `width`: the width of the dimension
+  * `height`: the height of the dimension
+* `rotation`: an enumeration of all supported rotations: R90, R180, R270
+* `flip`: an enumeration of HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
+* `quality`: an integer between 1 and 100 notating the percentage of the image quality
+* `width`: an integer that defines the width of the output image but will be ignored by the Image Generator
+* `preferWebp`: a boolean that indicates if webp is preferred (default value is false)
+
+The URL Transform is available to all query types: by path, list or paginated.
+
+### Limitations of Image Delivery {#image-delivery-limitations}
+
+The following limitations exist:
+
+* Modifiers applied to all images part of the query (global parameters)
+
+* Caching headers
+
+  * No caching on author
+  * Caching on publish - max-age of 10 minutes (cannot be changed by client)
+
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
 The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
@@ -750,6 +800,18 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
       >If the given variation does not exist for a Content Fragment, then the master variation will be returned as a (fallback) default.
 
       * See [Sample Query - All Cities with a Named Variation](#sample-cities-named-variation)
+
+  * For [image delivery](#image-delivery):
+
+    * `_dynamicUrl` on the `ImageRef` reference
+
+    * `_assetTransform` to the list header where your filters are defined
+
+    * See:
+    
+      * [Sample Query for Image Delivery](/help/headless/graphql-api/sample-queries.md#sample-image-delivery)
+
+      * [Sample Query for Image Delivery using parameters](/help/headless/graphql-api/sample-queries.md#sample-image-delivery-parameters)
 
   * And operations:
   
