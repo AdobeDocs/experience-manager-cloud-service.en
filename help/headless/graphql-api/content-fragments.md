@@ -726,6 +726,92 @@ The syntax is:
 
 The URL Transform is available to all query types: by path, list or paginated.
 
+### Image Delivery with full parameters {#image-delivery-full-parameters}
+
+This is a sample query for image delivery with a full set of parameters:
+
+```graphql
+{
+  articleList(
+    _assetTransform: {
+      format:GIF
+      seoName:"test"
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### Image Delivery with specified parameters {#image-delivery-specified-parameters}
+
+This example shows image delivery with specified parameters:
+
+```graphql
+query ($seoName: String!) {
+  articleList(
+    _assetTransform: {
+      format:GIF
+      seoName:$seoName
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+#### Image Delivery by URL {#image-delivery-url}
+
+If you save this as a persisted query (for example, with the name `dynamic-url-x`) you can then call the persisted query directly, for example: 
+
+`http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
+
+![Image Delivery using parameters](assets/cfm-graphiql-sample-image-delivery.png "Image Delivery using parameters")
+
 ### Limitations of Image Delivery {#image-delivery-limitations}
 
 The following limitations exist:
@@ -799,7 +885,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
       >
       >If the given variation does not exist for a Content Fragment, then the master variation will be returned as a (fallback) default.
 
-      * See [Sample Query - All Cities with a Named Variation](#sample-cities-named-variation)
+      * See [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
   * For [image delivery](#image-delivery):
 
@@ -809,9 +895,9 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
     * See:
     
-      * [Sample Query for Image Delivery](/help/headless/graphql-api/sample-queries.md#sample-image-delivery)
+      * [Sample Query for Image Delivery with full parameters](#image-delivery-full-parameters)
 
-      * [Sample Query for Image Delivery using parameters](/help/headless/graphql-api/sample-queries.md#sample-image-delivery-parameters)
+      * [Sample Query for Image Delivery with specified parameters](#image-delivery-specified-parameters)
 
   * And operations:
   
