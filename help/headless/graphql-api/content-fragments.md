@@ -803,9 +803,9 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
   * For [image delivery](#image-delivery):
 
-    * `_dynamicUrl` on the `ImageRef` reference
+    * `_dynamicUrl`: on the `ImageRef` reference
 
-    * `_assetTransform` to the list header where your filters are defined
+    * `_assetTransform`: on the list header where your filters are defined
 
     * See:
     
