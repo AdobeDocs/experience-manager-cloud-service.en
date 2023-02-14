@@ -14,7 +14,7 @@ Organizations may license up to three additional publish regions.
 
 >[!NOTE]
 >
->This feature is currently only available for AEM Sites. It also cannot be applied sandbox programs.
+>This feature is currently only available for AEM Sites. It also cannot be applied sandbox programs. In addition, please be aware that Additional Publish Regions require your program to be updated to AEM release version 10912 or higher.
 
 ## Scenarios {#scenarios}
 
