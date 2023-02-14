@@ -20,9 +20,9 @@ Organizations may license up to three additional publish regions.
 
 Below are a few scenarios where organizations can benefit from licensing additional publish regions:
 
-1. Organizations that receive significant or business-critical traffic from users far away from the primary region. Additional publish regions can reduce latency experienced by those visitors
-1. Organizations that may suffer significant monetary or reputational damage when a site is not available. This can be mitigated by using additional publish regions to make the AEM publish tier more resilient to regional failure
-1. Organizations whose content authors are located geographic location that is distant from the majority of publish tier visitors. The primary region can be chosen near the content authors' location, while additional publish regions can be configured near the publish side traffic, with both audiences benefiting from an optimized experience.
+1. Organizations that receive significant or business-critical traffic from users far away from the primary region. Additional publish regions can reduce latency experienced by those visitors.
+1. Organizations that may suffer significant monetary or reputational damage when a site is not available. This can be mitigated by using additional publish regions to make the AEM publish tier more resilient to regional failure.
+1. Organizations whose content authors are located in a geographic location that is distant from the majority of publish tier visitors. The primary region can be chosen near the content authors' location, while additional publish regions can be configured near the publish side traffic, with both audiences benefiting from an optimized experience.
 
 ## Enabling and Configuring {#enabling-and-configuring}
 
