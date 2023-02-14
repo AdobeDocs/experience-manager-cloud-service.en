@@ -12,7 +12,7 @@ Learn about the powerful and flexible headless features, their capabilities, and
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_developer_resources"
->title="AEM Headless developer resources"
+>title="AEM Headless developer resources, guides, and advanced documentation"
 >abstract="Everything you need to learn about AEM headless CMS and build and ship better applications and faster experiences."
 >additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html" text="AEM Headless developer resources"
 
