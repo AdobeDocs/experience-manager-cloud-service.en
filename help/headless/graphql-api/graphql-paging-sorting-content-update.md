@@ -192,6 +192,11 @@ To run the procedure use the following steps:
      * `_strucVersion` should have the value of `1`
      * `indexedData` structure must exist
 
+     >[!NOTE]
+     >
+     >The procedure will update Content Fragments on author and publish instances. 
+     >
+     >Therefore, it is recommended to perform the verification via repository browser for *at least* one author and one publish instance.
 
 ## Limitations {#limitations}
 
