@@ -177,6 +177,10 @@ To connect AEM Forms to your MicroSoft Sharepoint Storage:
     * In the Microsoft Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
     * Add the API permissions `offline_access` and `Sites.Manage.All` to provide read/write permissions.
     * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft Azure portal.
+
+    >[!NOTE]
+    >
+    > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application configured to use a client secret, it is mandatory to provide the client secret.
     
 1. Click **[!UICONTROL Connect]**. On a sucessful connection, the `Connection Successful` message appears. 
 
@@ -231,6 +235,10 @@ To connect AEM Forms to your MicroSoft OneDrive Storage:
     * In the Microsoft Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
     * Add the API permissions `offline_access` and `Files.ReadWrite.All` to provide read/write permissions.
     * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft Azure portal.
+
+    >[!NOTE]
+    >
+    > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application configured to use a client secret, it is mandatory to provide the client secret.
     
 1. Click **[!UICONTROL Connect]**. On a sucessful connection, the `Connection Successful` message appears. 
 
