@@ -320,8 +320,11 @@ To localize the branding information that you enter in the Document of Record ta
         * **Template**:  If you want to select a custom template, browse and select an XDP on your [!DNL AEM Forms] server. If you want to use a template that is not available on your [!DNL AEM Forms] server, you should first upload the XDP to your [!DNL AEM Forms] server.
          * **Accent Color**: The color in which header text and separator lines are rendered in the document of record PDF.
          * **Font Family**: Font family of the text in the Document of Record PDF.
-         * **Include form objects that are not bound to data model**: Setting the property includes unbound fields from Schema based Adaptive Form in the Document of Record.
-         * **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.
+
+          * **Include form objects that are not bound to data model**: Setting the property includes unbound fields from Schema based Adaptive Form in the Document of Record.
+
+          <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+
          * **Hide description of panels**: Setting the property excludes description of the panel/table from the Document of Record. Applicable for panel and table.
 
          
@@ -395,4 +398,4 @@ Setting of the Document of Record component are available under its properties. 
 **Form level settings**
 
 * **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based Adaptive Form in Document of Record. By default it is true.
-* **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
+<!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>
