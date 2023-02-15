@@ -18,9 +18,10 @@ A new version of the Content Transfer Tool is available which integrates the con
 
 * Self-service way to extract a migration set once and ingest it into multiple environments in parallel
 * Improved user experience via better loading states, guardrails, and error handling 
-* Ingestion logs are persisted and are always available for toubleshooting
+* Ingestion logs are persisted and are always available for troubleshooting
 
 To start using the new version you will need to uninstall older versions of the Content Transfer Tool. This is needed because the new version comes with a major architectural change. With v2.0.10, you will need to create new migration sets and re-run extraction and ingestion on the new migration sets. If a migration is already in progress, you may continue using the prior version of CTT until the migration is complete.
+Versions earlier than 2.0.0 will no longer be supported, and it is advisable to use the most recent version.
 
 The following Guidelines and Best Practices apply to the new version of the Content Transfer Tool:
 
