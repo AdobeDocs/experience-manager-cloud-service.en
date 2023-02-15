@@ -15,6 +15,11 @@ RDEs allow developers to swiftly deploy and review changes, minimizing the amoun
 
 Once the changes have been tested in an RDE, they can be deployed to a regular Cloud Development environment through the Cloud Manager pipeline.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
+
+
+You can refer to additional videos demonstrating [how to set it up](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [how to use it](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html), and the [development life cycle](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) using RDE.
+
 ## Introduction {#introduction}
 
 RDEs can be used for code, content, and Apache or Dispatcher configurations. Unlike regular Cloud Development environments, developers can use local command-line tools to sync code built locally to an RDE.
@@ -132,6 +137,7 @@ Once you've added an RDE for your program using Cloud Manager, you can interact 
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
+For more information and demonstration, see the [how to set up an RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) video tutorial.
 
 ## Using RDE while Developing a New Feature {#using-rde-while-developing-a-new-feature}
 
@@ -250,13 +256,23 @@ where the response for a successful deployment resembles the following:
 
 <u>Deploying an Apache/Dispatcher Configuration</u>
 
-The entire folder structure needs to be in the form of a zip file for this type of configuration. You can zip it by running this command from the root of a dispatcher configuration folder:
+The entire folder structure needs to be in the form of a zip file for this type of configuration. 
 
-`zip -y -r dispatcher.zip`
+From the `dispathcer` module of an AEM project, you can zip the dispatcher configuration by running the below maven command:
+
+`mvn clean package`
+
+or using the below zip command from the `src` directory of the `dispatcher` module:
+
+`zip -y -r dispatcher.zip .`
 
 then deploy the configuration by this command:
 
-`aio aem:rde:install -t dispatcher-config dispatcher-wknd-2.1.0.zip`
+`aio aem:rde:install target/aem-guides-wknd.dispatcher.cloud-X.X.X-SNAPSHOT.zip`
+
+>[!TIP]
+>
+>The above command assumes you are deploying the [WKND](https://github.com/adobe/aem-guides-wknd) project's dispatcher configurations. Please make sure to replace the `X.X.X` with the corresponding WKND project version number or your project-specific version number when deploying your project's dispatcher configuration..
 
 A successful deployment will generate a response resembles the following:
 
@@ -337,6 +353,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
+
+For more information and demonstration, see the [how to use RDE commands](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html) video tutorial.
 
 ## Reset {#reset-rde}
 
@@ -459,7 +477,7 @@ An in-between model is one where an organization purchases a number of RDEs so t
 
 ## How a AEM Forms Cloud Service Rapid Development Environment (RDE) is different from other environments? {#how-are-forms-rds-different-from-cloud-development-environments}
 
-Forms developers can use AEM Forms Cloud Service Rapid Development Environment to quickly develop Adaptive Forms, Workflows, and customizations like customizing core components, integrations with third-party systems, and more. The AEM Forms Cloud Service Rapid Development Environment (RDE) has no support Communication APIs and for features and capabilities that requires Document of Record, like generating a Document of Record on submission of an Adaptive Form. The below listed AEM Forms features are not available on a Rapid Development Environment (RDE):
+Forms developers can use AEM Forms Cloud Service Rapid Development Environment to quickly develop Adaptive Forms, Workflows, and customizations like customizing core components, integrations with third-party systems, and more. The AEM Forms Cloud Service Rapid Development Environment (RDE) has no support for Communication APIs and for features and capabilities that require Document of Record, like generating a Document of Record on submission of an Adaptive Form. The below listed AEM Forms features are not available on a Rapid Development Environment (RDE):
  
 * Configuring a Document of Record for an Adaptive Form
 * Generating a Document of Record on submission of an Adaptive Form or with a Workflow step
@@ -469,5 +487,9 @@ Forms developers can use AEM Forms Cloud Service Rapid Development Environment t
 
 >[!NOTE]
 >
-> There is no change between UI of Rapid Development Environment (RDE) and other Cloud Service environments for Forms. All Document of Record related options, like selecting a document of record template for an adaptive form, continues to appear in UI. These environments has no Communication APIs and Document of Record capabilities to test such options. So, when you choose any option that requires Communication APIs or Document of Record capabilities, no action is performed, and an error message is displayed or returned.
+> There is no difference between the UI of Rapid Development Environment (RDE) and other Cloud Service environments for Forms. All Document of Record related options, like selecting a document of record template for an adaptive form, continues to appear in UI. These environments have no Communication APIs and Document of Record capabilities to test such options. So, when you choose any option that requires Communication APIs or Document of Record capabilities, no action is performed, and an error message is displayed or returned.
+
+## RDE tutorial
+
+To learn about RDE in AEM as a Cloud Service, refer to the [video tutorial that demonstrates how to set it up, how to use it, and the development life cycle](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
 
