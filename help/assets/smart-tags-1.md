@@ -214,6 +214,7 @@ To opt out of automated smart tags generation for assets uploaded to specific fo
 ## Benefits of smart tags to your assets {#benefits-of-smart-tags}
 
 Following are the benefits of using smart tags in your AEM Assets:
+*  Makes an asset searchable.
 *  Smart tags are generated automatically to your assets, thus, it minimizes your effort to perform tagging manually.
 *  It allows the usage of the same vocabulary, tag structure, and taxonomy so that you need not to worry about tagging if by chance you miss tagging at first.
 *  Whether you are tagging "runners" or "running" shoes, you do not need to worry about typos, wrong spellings, or alternative search terms as smart tags know it already!
@@ -236,23 +237,44 @@ These models are not always perfect at identifying tags. The current version of 
 
 ## Frequently asked questions
 
-* **How do smart tags improve search experience of an asset?**
++++**How do smart tags improve search experience of an asset?**
+  
   Adobe Sensei tags the assets automatically once you upload them. The automated process runs so fast at the backend that you will see tags added in your assets after a few seconds once the upload is completed.
 
-* **What happens if the smart tags list is inaccurate or showing unwanted tag?**
++++
+
++++**What happens if the smart tags list is inaccurate or showing unwanted tag?**
+  
   An inaccurate or unwanted tag can be removed from the list. For example, as an automobile dealer, you might want to remove "damaged" tag from the list.
 
-* **How can you prioritize assets containing same tags?**
++++
+
++++**How can you prioritize assets containing same tags?**
+  
   Yes, you can prioritize assets containing the same tags. You can promote a tag into the Smart Tags list of an asset to perform prioritization. Promoting a tag allows you to prioritize the images appearing in the search results for that particular tag.
 
-* **Is the application of Smart Tags limited to a particular folder?**
++++
+
++++**Is the application of Smart Tags limited to a particular folder?**
+  
   Smart tags are configurable and can be applied on any folder inside DAM.
 
-* **How may I know that tagging needs training?**
++++
+
++++**How may I know that tagging needs training?**
+  
   Refer to [Determining the requirement of smart tags training](#smart-tag-training-requirement).
 
-* **What are the supported file formats for tagging an asset?**
++++
+
++++**What are the supported file formats for tagging an asset?**
+  
   Refer to [Supported file formats](##supported-file-formats).
 
-* **I do not want to use video smart tagging anymore.**
++++
+
++++**I do not want to use video smart tagging anymore.**
+
 You can [opt out smart tagging](#opt-out-smart-tagging) anytime you want to discontinue.
+
++++

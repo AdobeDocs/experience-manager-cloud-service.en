@@ -153,6 +153,11 @@ To check whether the Smart Tags service is trained on your tags in the training 
 1. Review the details of the report. The report displays the training status for the tags you trained. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Tags service is trained for the tag. Yellow color indicates that the service is partially trained for a particular tag. To train the service completely for a tag, add more images with the particular tag and execute the training workflow. If you do not see your tags in this report, execute the training workflow again for these tags.Tags
 1. To download the report, select it from the list, and click **[!UICONTROL Download]** from the toolbar. The report downloads as a spreadsheet.
 
+>[!NOTE]
+>
+>**Question:** What if I want to transfer Smart Tags traning from one instance to another via an export?
+>**Answer:** You do not need to export Smart Tags training if the environment belongs to the same IMS org. It is automatically shared. If the environment is across IMS orgs, then there is no way to share or export Smart Tags training.
+
 ## Limitations and best practices related to smart tags {#limitations-smart-tags-training}
 
 * To train the model, use the most appropriate images. The training cannot be reverted or training model cannot be removed. Your tagging accuracy depends on the current training, so do it carefully.
