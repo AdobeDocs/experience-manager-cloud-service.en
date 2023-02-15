@@ -196,7 +196,7 @@ To run the procedure use the following steps:
      >
      >The procedure will update Content Fragments on author and publish instances. 
      >
-     >Therefore, it is recommended to perform the verification via repository browser for *at least* one author and one publish instance.
+     >Therefore, it is recommended to perform the verification via repository browser for *at least* one author *and* one publish instance.
 
 ## Limitations {#limitations}
 
