@@ -21,6 +21,23 @@ No known general issues are associated with this maintenance release.
 
 - CORS : pedro to update
 
+### Sites {#sites-issues}
+
+- 
+
+
+### Assets {#assets-issues}
+
+- 
+
+### Forms {#forms-issues}
+
+- 
+
+### platform {#platform-issues}
+
+- 
+
 ### Embedded Technologies {#embedded-tech}
 
 |Technology|Version|Link|
