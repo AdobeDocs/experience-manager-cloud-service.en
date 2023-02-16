@@ -23,20 +23,20 @@ No known general issues are associated with this maintenance release.
 
 ### Sites {#sites-issues}
 
-- 
+- (placeholder)
 
 
 ### Assets {#assets-issues}
 
-- 
+- (placeholder)
 
 ### Forms {#forms-issues}
 
-- 
+- (placeholder)
 
 ### Platform {#platform-issues}
 
-- 
+- (placeholder)
 
 ### Embedded Technologies {#embedded-tech}
 
