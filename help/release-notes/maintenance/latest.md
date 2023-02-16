@@ -34,7 +34,7 @@ No known general issues are associated with this maintenance release.
 
 - 
 
-### platform {#platform-issues}
+### Platform {#platform-issues}
 
 - 
 
@@ -44,5 +44,5 @@ No known general issues are associated with this maintenance release.
 |---|---|---|
 |AEM OAK |Version 1.48-T20230202132234-aa49252 ||
 |AEM SLING API |Version 2.27.0 ||
-|AEM SLING SIGHTLY |Version : 1.4.20-1.4.0 ||
+|AEM SLING SIGHTLY |Version 1.4.20-1.4.0 ||
 |AEM WCM Core Components|Version 2.21.2|[GitHub](https://github.com/adobe/aem-core-wcm-components)|
