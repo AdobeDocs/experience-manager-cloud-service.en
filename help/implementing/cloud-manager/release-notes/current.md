@@ -27,3 +27,4 @@ The release date for Cloud Manager release 2023.2.0 in AEM as a Cloud Service is
 ## API Changes {#api-changes}
 
 * API changes were made to support [RDEs.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Rapid-Development-Environments)
+* The API now allows retrieval of [execution artifacts.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Execution-Artifacts)
