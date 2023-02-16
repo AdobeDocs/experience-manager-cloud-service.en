@@ -467,7 +467,7 @@ For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!
 
    >[!IMPORTANT]
    >
-   >For old videos that use an adaptive streaming profile, the URL will continue to play as usual -- with HLS streaming -- until you [reprocess the video assets](help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). After reprocessing, the same URL will continue to work but now with *both* DASH and HLS streaming enabled.
+   >For old videos that use an adaptive streaming profile, the URL will continue to play as usual -- with HLS streaming -- until you [reprocess the video assets](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). After reprocessing, the same URL will continue to work but now with *both* DASH and HLS streaming enabled.
 
 ### Enable DASH on your account {#enable-dash}
 
