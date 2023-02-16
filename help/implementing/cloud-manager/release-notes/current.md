@@ -19,6 +19,13 @@ The release date for Cloud Manager release 2023.2.0 in AEM as a Cloud Service is
 
 ## What's New {#what-is-new}
 
+* Users can download [custom UI test](/help/implementing/cloud-manager/ui-testing.md) results from the UI.
+* [Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md) (RDEs) are a new type of Cloud Environment intended as a fast, consistent, and extensible way to validate that code that works locally also functions as expected in the Cloud.
+  * RDEs enable developers to rapidly troubleshoot issues and deploy new features on AEM as a Cloud Service.
+  * Using command line tools, developers can quickly sync content packages, bundles, content files, OSGi configurations, or dispatcher configurations to RDEs.
+
 ## Bug Fixes {#bug-fixes}
 
 ## API Changes {#api-changes}
+
+* API changes were made to support [RDEs.](/https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Rapid-Development-Environments)
