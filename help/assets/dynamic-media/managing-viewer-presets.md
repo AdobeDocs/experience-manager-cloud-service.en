@@ -434,7 +434,14 @@ See [Special considerations for creating a Carousel Banner Viewer preset](#speci
 
 1. (Optional) Near the top of the Edit Viewer Preset page, select **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]**, or **[!UICONTROL Phone]** to uniquely define visual styles for different device and screen types.
 1. On the Viewer Preset Editor page, select the **[!UICONTROL Behavior]** tab. Alternatively, you can select any visual element in the viewer to select it for configuration.
-For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!UICONTROL Playback]**, you can select an adaptive streaming option to have videos only stream as **[!UICONTROL hls]** or **[!UICONTROL dash]**. 
+For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!UICONTROL Playback]**, you can select from one of three adaptive streaming options:
+
+   * **[!UICONTROL dash]** - Videos stream as dash only.
+   * **[!UICONTROL hls]** - Videos stream as hls only.
+   * **[!UICONTROL auto]** - Best practice. The creation of DASH and HLS streams is storage-optimised. Therefore, Adobe recommends that you always select **[!UICONTROL auto]** as the playback type. Videos stream as dash, hls, or progressive. That is, 
+     * If the browser supports DASH, then DASH streaming is used, first. 
+     * If the browser does not support DASH, then HLS streaming is used, second.
+     * If the browser does not support either DASH or HLS, then progessive playback is used, lastly.
 
    >[!NOTE]
    >
@@ -454,9 +461,13 @@ For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!
    >After you type a value in the text field, select elsewhere in the user interface to submit the change and close the virtual keyboard. If you select **[!UICONTROL Enter]**, no action occurs.
 
 1. Near the upper-right corner of the page, select **[!UICONTROL Save]**.
-1. Publish your new viewer preset. It is necessary to publish the preset before you can use it on your website.
+1. Publish your new viewer preset. It is necessary to publish the preset so you can use its resulting URL on your website.
 
    See [Publishing Viewer Presets](#publishing-viewer-presets).
+
+   >[!IMPORTANT]
+   >
+   >For old videos that use an adaptive streaming profile, the URL will continue to play as usual -- with HLS streaming -- until you [reprocess the video assets](help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). After reprocessing, the same URL will continue to work but now with *both* DASH and HLS streaming enabled.
 
 ### Enable DASH on your account {#enable-dash}
 
@@ -490,6 +501,7 @@ Create a support case as described below. In your support case, be sure you ment
 1. Adobe Customer Support adds you to the DASH customer Wait List based on the order in which requests are submitted.
 1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for DASH enablement.
 1. You are notified after completion by Customer Support.
+1. Create your [video viewer preset](#creating-a-new-viewer-preset) as usual.
 
 ### Special considerations for creating an interactive viewer preset {#special-considerations-for-creating-an-interactive-viewer-preset}
 
