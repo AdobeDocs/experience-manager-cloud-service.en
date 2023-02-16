@@ -114,7 +114,7 @@ You can now configure Adobe Experience Manager Assets to [restrict the type of a
  
 ## Cloud Manager {#cloud-manager}
 
-You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+You can find a complete list of Cloud Manager monthly releases [here.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Migration Tools {#migration-tools}
 
