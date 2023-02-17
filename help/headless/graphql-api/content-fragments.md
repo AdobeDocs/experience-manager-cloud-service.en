@@ -865,9 +865,9 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
 ### Dynamic Image Delivery by URL {#dynamic-image-delivery-url}
 
-If you save your query as a persisted query (for example, with the name `dynamic-url-x`) you can then call the persisted query directly.
+If you save your query as a persisted query (for example, with the name `dynamic-url-x`) you can then [execute the persisted query directly](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
 
-For example, to directly call the previous samples (saved as persisted queries), use the following URLs:
+For example, to directly execute the previous samples (saved as persisted queries), use the following URLs:
 
 * [Single Parameter](#dynamic-image-delivery-single-specified-parameter); Persisted Query named `dynamic-url-x`
 
