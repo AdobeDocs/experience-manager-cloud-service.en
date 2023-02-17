@@ -141,10 +141,10 @@ This indicates that the Cloud Acceleration Manager was unable to reach the targe
 > 
 > The "Migration token" field is shown because in a few cases retrieving that token is what is actually disallowed. By allowing it to be manually provided, it may allow the user to start the ingestion quickly, without any additional help. If the token is provided, and the message still appears, than retrieving the token was not the problem.
 
- * AEM as a Cloud Service maintains the environment state, and occasionally may need to restart the migration service for a number of normal reasons. If that service is restarting, it cannot be reached, but will be available soon.
- * It is possible another process is being run on the instance. For instance, if Release Orchestrator is applying an update, the system may be busy and the migration service regularly unavailable. That, and the possibility of corrupting the stage or production instance, is why pausing updates during an ingestion is very strongly recommended.
- * If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it will block Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is very dynamic. Currently, the only solution is to disable the IP allow list while the ingestion is running.
- * There may be other reasons that need investigation. If the ingestion continues to fail, please contact Adobe Customer Care.
+* AEM as a Cloud Service maintains the environment state, and occasionally may need to restart the migration service for a number of normal reasons. If that service is restarting, it cannot be reached, but will be available soon.
+* It is possible another process is being run on the instance. For instance, if Release Orchestrator is applying an update, the system may be busy and the migration service regularly unavailable. That, and the possibility of corrupting the stage or production instance, is why pausing updates during an ingestion is very strongly recommended.
+* If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it will block Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is very dynamic. Currently, the only solution is to disable the IP allow list while the ingestion is running.
+* There may be other reasons that need investigation. If the ingestion still continues to fail, please contact Adobe Customer Care.
 
 ### Automatic Updates through Release Orchestrator is still enabled
 
