@@ -7,7 +7,7 @@ description: Learn how to optimize your GraphQL queries when Filtering, Paging a
 
 >[!NOTE]
 >
->Prior to applying these optimization recommendations consider to [Update your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-paging-sorting-content-update.md) for best performance.
+>Prior to applying these optimization recommendations consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-paging-sorting-content-update.md) for best performance.
 
 On an AEM instance with a high number of Content Fragments that share the same model, GraphQL list queries can become costly (in terms of resources).
 
@@ -21,9 +21,8 @@ AEM provides two approaches for optimizing GraphQL queries:
 
 * [Hybrid filtering](#hybrid-filtering)
 * [Paging](#paging) (or pagination)
-* and also [Sorting](#sorting)
 
-Hybrid filtering and paging are closely interconnected, sorting forms another part of the solution.
+  * [Sorting](#sorting) is not directly related to optimization, but is related to paging
 
 Each approach has its own use-cases and limitations. This document provides information on Hybrid Filtering and Paging, with some [best practices](#best-practices) to optimize GraphQL queries.
 
@@ -31,11 +30,7 @@ Each approach has its own use-cases and limitations. This document provides info
 
 Hybrid filtering combines JCR filtering with AEM filtering.
 
-It applies a JCR filter (in the form of a query constraint) before loading the result set into memory for AEM filtering. This is to reduce:
-
-* the result set loaded into memory, as the JCR filter removes superfluous results prior to this
-
-* the cost of reading large sets of JCR nodes from the repository
+It applies a JCR filter (in the form of a query constraint) before loading the result set into memory for AEM filtering. This is to reduce the result set loaded into memory, as the JCR filter removes superfluous results prior to this.
 
 >[!NOTE]
 >
@@ -47,25 +42,21 @@ This technique keeps the flexibility that GraphQL filters provide, while delegat
 
 GraphQL in AEM provides support for two types of pagination:
 
-<!-- is cursor aka first and after? -->
-
 * [limit/offset-based pagination](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
   This is used for list queries; these end with `List`; for example, `articleList`. 
   To use it, you have to provide the position of the first item to return (the `offset`) and the number of items to return (the `limit`, or page size).
 
-* [cursor-based pagination](/help/headless/graphql-api/content-fragments.md#paginated-first-after)
+* [cursor-based pagination](/help/headless/graphql-api/content-fragments.md#paginated-first-after) (represented by `first`and `after`)
   This provides a unique ID for each item; also known as the cursor. 
   In the query, you specify the cursor of the last item of the previous page, plus the page size (the maximum number of items to be returned).
 
-<!-- does the following paragraph and note belong solely to cursor-based pagination? -->
+  As cursor-based pagination does not fit within the data structures of list-based queries, AEM has introduced `Paginated` query type; for example, `articlePaginated`. The data structures and parameters used follow the [GraphQL Cursor ConnectionSpecification](https://relay.dev/graphql/connections.htm).
 
-As cursor-based pagination does not fit within the data structures of list-based queries, AEM has introduced `Paginated` query type; for example, `articlePaginated`. The data structures and parameters used follow the [GraphQL Cursor ConnectionSpecification](https://relay.dev/graphql/connections.htm).
-
->[!NOTE]
->
->AEM currently supports forward paging (using `after`/`first` parameters). 
->
->Backward paging (using `before`/`last` parameters) is not supported.
+  >[!NOTE]
+  >
+  >AEM currently supports forward paging (using `after`/`first` parameters). 
+  >
+  >Backward paging (using `before`/`last` parameters) is not supported.
 
 ## Sorting {#sorting}
 
