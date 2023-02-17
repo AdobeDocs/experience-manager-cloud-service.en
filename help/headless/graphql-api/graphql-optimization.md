@@ -75,7 +75,7 @@ Sorting can only be efficient if all sort criteria are related to top-level frag
 
 >[!NOTE]
 >
->Sorting always has an impact (of some degree) on performance.
+>Sorting on top-level fields also has an (albeit small) impact on performance.
 
 ## Best Practices {#best-practices}
 
