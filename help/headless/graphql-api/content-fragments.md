@@ -701,6 +701,10 @@ Dynamic image delivery allows you to use a Graphql query to:
 
 * Return the URL as part of the JSON delivery
 
+<!-- are either of the following two points relevant for public docs? -->
+<!-- and if so, which one? -->
+
+<!--
 You can use AEM to:
 
 * Pass [Dynamic Media Imaging commands](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api) into GraphQL queries. 
@@ -708,8 +712,9 @@ You can use AEM to:
 
 * Pass [AssetDelivery](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/wcm/spi/AssetDelivery.html) commands into GraphQL queries. 
   This means that the commands get applied during query execution, in the same way as URL parameters on GET requests for those images.
+-->
 
-* Dynamically create image renditions for JSON delivery. This avoids having to manually create and store those renditions in the repository.
+This allows you to dynamically create image renditions for JSON delivery. This avoids having to manually create and store those renditions in the repository.
 
 The solution in GraphQL means you can:
 
