@@ -4,6 +4,7 @@ description: Learn how to configuring production pipelines to build and deploy y
 index: yes
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 ---
+
 # Configuring a Production Pipeline {#configure-production-pipeline}
 
 Learn how to configuring Production pipelines to build and deploy your code to Production environments. A Production pipeline deploys code first to Stage environment, and upon approval deploys the same code to the Production environment.
@@ -165,6 +166,12 @@ To finish the configuration of the full-stack code production pipeline, follow t
 >If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
+
+## Developing Sites with the Front-End Pipeline {#developing-with-front-end-pipeline}
+
+With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
+
+Please refer to the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of in order to get the full potential out of this process.
 
 ## Skip Dispatcher Packages {#skip-dispatcher-packages}
 

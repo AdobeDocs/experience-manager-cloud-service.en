@@ -26,9 +26,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Documentation Journeys](/help/journey-documentation/documentation-journeys.md)
 + Release Notes {#release-notes}
   + [Release Information](/help/release-notes/home.md)
-  + General AEMaaCS Release Notes {#release-notes}
+  + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
       + [Release Notes for 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
       + [Release Notes for 2022.7.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
       + [Release Notes for 2022.6.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
@@ -60,48 +61,54 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Release Notes for 2020.4.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
       + [Release Notes for 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
       + [Release Notes for 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
+  + AEMaaCS Maintenance Release Notes {#maintenance}
+    + [Latest Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
   + Release Notes for Cloud Manager {#cloud-manager}
-    + [Current Release Notes](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
+    + 2023 {#2023}
+      + [Release Notes for 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
     + 2022 {#2022}
-      + [Release Notes for 2022.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-11-0.md)
-      + [Release Notes for 2022.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-10-0.md)
-      + [Release Notes for 2022.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
-      + [Release Notes for 2022.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
-      + [Release Notes for 2022.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
-      + [Release Notes for 2022.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
-      + [Release Notes for 2022.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
-      + [Release Notes for 2022.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
-      + [Release Notes for 2022.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
-      + [Release Notes for 2022.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
-      + [Release Notes for 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
+      + [Release Notes for 2022.12.0](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
+      + [Release Notes for 2022.11.0](/help/implementing/cloud-manager/release-notes/2022/2022-11-0.md)
+      + [Release Notes for 2022.10.0](/help/implementing/cloud-manager/release-notes/2022/2022-10-0.md)
+      + [Release Notes for 2022.9.0](/help/implementing/cloud-manager/release-notes/2022/2022-9-0.md)
+      + [Release Notes for 2022.8.0](/help/implementing/cloud-manager/release-notes/2022/2022-8-0.md)
+      + [Release Notes for 2022.7.0](/help/implementing/cloud-manager/release-notes/2022/2022-7-0.md)
+      + [Release Notes for 2022.6.0](/help/implementing/cloud-manager/release-notes/2022/2022-6-0.md)
+      + [Release Notes for 2022.5.0](/help/implementing/cloud-manager/release-notes/2022/2022-5-0.md)
+      + [Release Notes for 2022.4.0](/help/implementing/cloud-manager/release-notes/2022/2022-4-0.md)
+      + [Release Notes for 2022.3.0](/help/implementing/cloud-manager/release-notes/2022/2022-3-0.md)
+      + [Release Notes for 2022.2.0](/help/implementing/cloud-manager/release-notes/2022/2022-2-0.md)
+      + [Release Notes for 2022.1.0](/help/implementing/cloud-manager/release-notes/2022/2022-1-0.md)
     + 2021 {#2021}
-      + [Release Notes for 202.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-12-0.md)
-      + [Release Notes for 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
-      + [Release Notes for 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
-      + [Release Notes for 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
-      + [Release Notes for 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
-      + [Release Notes for 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
-      + [Release Notes for 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
-      + [Release Notes for 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
-      + [Release Notes for 2021.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
-      + [Release Notes for 2021.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
-      + [Release Notes for 2021.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
-      + [Release Notes for 2021.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
+      + [Release Notes for 2021.12.0](/help/implementing/cloud-manager/release-notes/2021/2021-12-0.md)
+      + [Release Notes for 2021.11.0](/help/implementing/cloud-manager/release-notes/2021/2021-11-0.md)
+      + [Release Notes for 2021.10.0](/help/implementing/cloud-manager/release-notes/2021/2021-10-0.md)
+      + [Release Notes for 2021.9.0](/help/implementing/cloud-manager/release-notes/2021/2021-9-0.md)
+      + [Release Notes for 2021.8.0](/help/implementing/cloud-manager/release-notes/2021/2021-8-0.md)
+      + [Release Notes for 2021.7.0](/help/implementing/cloud-manager/release-notes/2021/2021-7-0.md)
+      + [Release Notes for 2021.6.0](/help/implementing/cloud-manager/release-notes/2021/2021-6-0.md)
+      + [Release Notes for 2021.5.0](/help/implementing/cloud-manager/release-notes/2021/2021-5-0.md)
+      + [Release Notes for 2021.4.0](/help/implementing/cloud-manager/release-notes/2021/2021-4-0.md)
+      + [Release Notes for 2021.3.0](/help/implementing/cloud-manager/release-notes/2021/2021-3-0.md)
+      + [Release Notes for 2021.2.0](/help/implementing/cloud-manager/release-notes/2021/2021-2-0.md)
+      + [Release Notes for 2021.1.0](/help/implementing/cloud-manager/release-notes/2021/2021-1-0.md)
     + 2020 {#2020}
-      + [Release Notes for 2020.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
-      + [Release Notes for 2020.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
-      + [Release Notes for 2020.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
-      + [Release Notes for 2020.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
-      + [Release Notes for 2020.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
-      + [Release Notes for 2020.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
-      + [Release Notes for 2020.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
-      + [Release Notes for 2020.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
-      + [Release Notes for 2020.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
-      + [Release Notes for 2020.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
-      + [Release Notes for 2020.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+      + [Release Notes for 2020.12.0](/help/implementing/cloud-manager/release-notes/2020/2020-12-0.md)
+      + [Release Notes for 2020.11.0](/help/implementing/cloud-manager/release-notes/2020/2020-11-0.md)
+      + [Release Notes for 2020.10.0](/help/implementing/cloud-manager/release-notes/2020/2020-10-0.md)
+      + [Release Notes for 2020.9.0](/help/implementing/cloud-manager/release-notes/2020/2020-9-0.md)
+      + [Release Notes for 2020.8.0](/help/implementing/cloud-manager/release-notes/2020/2020-8-0.md)
+      + [Release Notes for 2020.7.0](/help/implementing/cloud-manager/release-notes/2020/2020-7-0.md)
+      + [Release Notes for 2020.6.0](/help/implementing/cloud-manager/release-notes/2020/2020-6-0.md)
+      + [Release Notes for 2020.5.0](/help/implementing/cloud-manager/release-notes/2020/2020-5-0.md)
+      + [Release Notes for 2020.4.0](/help/implementing/cloud-manager/release-notes/2020/2020-4-0.md)
+      + [Release Notes for 2020.3.0](/help/implementing/cloud-manager/release-notes/2020/2020-3-0.md)
+      + [Release Notes for 2020.2.0](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
       + [Release Notes for 2022.7.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
       + [Release Notes for 2022.5.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
       + [Release Notes for 2022.4.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
@@ -486,89 +493,102 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
     + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)    
 + Forms {#forms}
-  + [Introduction](/help/forms/home.md)
-  + [Key features](/help/forms/key-features.md)
-  + [Notable changes](/help/forms/notable-changes.md)
-  + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
-  + Setup and configure the service {#setup-environment}
+  + Overview {#forms-overview}
+    + [Introduction](/help/forms/home.md)
+    + [Key features](/help/forms/key-features.md)
+    + [Notable changes](/help/forms/notable-changes.md)
+    + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
+    + [Frequently asked questions](/help/forms/faq.md)
+    + [Known issues](/help/forms/known-issues.md)
+  + Setup and migrate {#setup-configure-migrate}
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Configure Unified Storage Connector](/help/forms/configure-unified-storage-connector.md)
-  + Manage user groups, forms, and related assets {#manage-forms-and-related-assets}
+    + [Migrate to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
     + [Import, export, and organize Adaptive Forms, PDF forms, and other assets](/help/forms/import-export-forms-templates.md)
-  + Convert PDF forms to Adaptive Forms {#afcs}
-    + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
-    + [Convert an existing PDF Form to an Adaptive Form](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
-    + [Review and correct converted forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
-  + Create and publish an Adaptive Form {#create-an-adaptive-form}
-    + Before you start {#before-you-start}
-      + [Introduction to authoring of an Adaptive Forms](/help/forms/introduction-forms-authoring.md)
-      + [Create a template](/help/forms/template-editor.md)
-      + [Create a theme](/help/forms/themes.md)
-      + [Connect your data sources to Cloud Service](/help/forms/data-integration.md)
-      + [Reference Assets](/help/forms/reference-assets.md)
-    + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
-      + [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
-      + [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)
-      + [Use Forms Designer](/help/forms/use-forms-designer.md)
-      + [Improve performance of large forms with lazy loading](/help/forms/lazy-loading-adaptive-forms.md)
-    + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
-      + [Use CAPTCHA in an Adaptive Form](/help/forms/captcha-adaptive-forms.md)
-      + [Use Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-      +  [Apply Scribble Signature](/help/forms/signing-forms-using-scribble.md)
-    + Configure layout and apply style to an Adaptive Form{#configure-layout-of-an-adaptive-form}
-      + [Set layout of an Adaptive Form](/help/forms/layout-capabilities-adaptive-forms.md)
-      + [Use Layout mode to resize components](/help/forms/resize-using-layout-mode.md)
-      + [Create multi-step data capture experience](/help/forms/introduction-form-sequence.md)
-      + [Apply inline CSS styles to individual Adaptive Form components](/help/forms/inline-style-adaptive-forms.md)
-    + Add rules and use expressions in an Adaptive Form {#add-rules-and-use-expressions-in-an-adaptive-form}
-      + [Add rules to an Adaptive Form](/help/forms/rule-editor.md)
-    + Use [!DNL Adobe Sign] {#use-adobe-sign}
-      + [Use Adobe Sign to e-sign an Adaptive Form](/help/forms/working-with-adobe-sign.md)
-    + Configure Submit Actions and metadata submission {#configure-submit-actions-and-metadata-submission}
-      + [Set Submit Action for an Adaptive Form](/help/forms/configuring-submit-actions.md)
-      + [Configure redirect page](/help/forms/configuring-redirect-page.md)
-      + [Configure asynchronous submission for an Adaptive Form](/help/forms/asynchronous-submissions-adaptive-forms.md)
-      + [Create a custom Submit Action](/help/forms/custom-submit-action-form.md)
-    + [Prefill Adaptive Form fields](/help/forms/prepopulate-adaptive-form-fields.md)
-    + [Generate Document of Record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-    + Add or improve metadata {#manage-metadata}
-      + [Add, remove, or edit metadata of an Adaptive Form](/help/forms/manage-form-metadata.md)
-      + [Reuse metadata properties of an Adaptive Form](/help/forms/reusing-adaptive-forms.md)
-    + Improve accessibility of an Adaptive Form {#accessible-adaptive-forms}
-      + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
-    + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
   + Integrate {#integrate}
-    + Integrate a form with one or more data sources {#use-form-data-model}
+    + Services {#services}
+      + [Integrate AEM Forms as a Cloud Service with Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+      + [Integrate AEM Forms as a Cloud Service with DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
+      + [Integrate AEM Forms as a Cloud Service with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+      + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+      + [Embed an Adaptive Forms in an AEM Sites page](/help/forms/embed-adaptive-form-aem-sites.md)
+    + Form Data Model {#use-form-data-model}
+      + [Connect your data sources to Cloud Service](/help/forms/data-integration.md)
       + [Configure data sources](/help/forms/configure-data-sources.md)
       + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
       + [Configure [!DNL Azure] storage](/help/forms/configure-azure-storage.md)
       + [Configure [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
       + [Create Form Data Model](/help/forms/create-form-data-models.md)
-     + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
+      + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
       + [Use Form Data Model](/help/forms/using-form-data-model.md)
-    + [Integrate with Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
-    + [Integrate with DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
-    + [Integrate with Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
-    + [Integrate with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-    + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-    + [Embed Adaptive Forms in AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
-  + Create and use workflows {#create-form-centric-workflows}
+  + Adaptive Forms {#adaptive-forms-authoring}
+    + Authoring Adaptive Forms - Core Components {#authoring-adaptive-forms-core-components}
+      + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
+        + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+        + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
+        + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+    + Authoring Adaptive Forms - Foundation Components {#authoring-adaptive-forms-foundation-components}
+      + Convert your PDF forms to Adaptive Forms {#afcs}
+        + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
+        + [Convert an existing PDF Form to an Adaptive Form](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
+        + [Review and correct converted forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
+      + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
+        + [Introduction to authoring of an Adaptive Forms](/help/forms/introduction-forms-authoring.md)
+        + [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
+        + [Create a template](/help/forms/template-editor.md)
+        + [Create a theme](/help/forms/themes.md)
+        + [Reference Assets](/help/forms/reference-assets.md)
+        + [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)
+        + [Use Forms Designer](/help/forms/use-forms-designer.md)
+        + [Improve performance of large forms with lazy loading](/help/forms/lazy-loading-adaptive-forms.md)
+      + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
+        + [Use CAPTCHA in an Adaptive Form](/help/forms/captcha-adaptive-forms.md)
+        + [Use Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+        + [Apply Scribble Signature](/help/forms/signing-forms-using-scribble.md)
+        + [Add a table to an adaptive form](/help/forms/adaptive-forms-tables.md)
+        + [Add Footnotes support to an Adaptive Form](/help/forms/footnotes-richtextsupport.md)
+      + Configure layout and apply style to an Adaptive Form{#configure-layout-of-an-adaptive-form}
+        + [Set layout of an Adaptive Form](/help/forms/layout-capabilities-adaptive-forms.md)
+        + [Use Layout mode to resize components](/help/forms/resize-using-layout-mode.md)
+        + [Create multi-step data capture experience](/help/forms/introduction-form-sequence.md)
+        + [Apply inline CSS styles to individual Adaptive Form components](/help/forms/inline-style-adaptive-forms.md)
+      + Add rules and use expressions in an Adaptive Form {#add-rules-and-use-expressions-in-an-adaptive-form}
+        + [Add rules to an Adaptive Form](/help/forms/rule-editor.md)
+      + Use [!DNL Adobe Sign] {#use-adobe-sign}
+        + [Use Adobe Sign to e-sign an Adaptive Form](/help/forms/working-with-adobe-sign.md)
+      + Configure Submit Actions and metadata submission {#configure-submit-actions-and-metadata-submission}
+        + [Set Submit Action for an Adaptive Form](/help/forms/configuring-submit-actions.md)
+        + [Configure redirect page](/help/forms/configuring-redirect-page.md)
+        + [Configure asynchronous submission for an Adaptive Form](/help/forms/asynchronous-submissions-adaptive-forms.md)
+        + [Create a custom Submit Action](/help/forms/custom-submit-action-form.md)
+      + [Prefill Adaptive Form fields](/help/forms/prepopulate-adaptive-form-fields.md)
+      + [Generate Document of Record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+      + [Add support for new locales to an adaptive form](/help/forms/supporting-new-language-localization.md)
+      + Add or improve metadata {#manage-metadata}
+        + [Add, remove, or edit metadata of an Adaptive Form](/help/forms/manage-form-metadata.md)
+        + [Reuse metadata properties of an Adaptive Form](/help/forms/reusing-adaptive-forms.md)
+      + Improve accessibility of an Adaptive Form {#accessible-adaptive-forms}
+        + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
+      + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
+      + [Create and manage reviews](/help/forms/create-reviews-forms.md)
+  + Forms Centric Workflows {#create-form-centric-workflows}
     + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)
     + [Use variables in a Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
     + [Use the Out of Office option](/help/forms/configure-out-of-office-settings.md)
-  + Using Communications {#using-communications}
+  + Communications APIs {#using-communications}
     + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
     + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
-  + [Migrate to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-  + [Frequently asked questions](/help/forms/faq.md)
-  + [Known issues](/help/forms/known-issues.md)
-  + Troubleshoot {#troubleshooting-aem-forms-cloud-service}
+  + Developer API Reference {#aem-forms-developer-api-reference}
+    + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+    + [AEM Forms Cloud Service JavaScript API Reference](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+    + [AEM Forms Cloud Service Java API Reference](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
+  + Troubleshooting {#troubleshooting-aem-forms-cloud-service}
     + [Installation and configuration](/help/forms/troubleshooting-installation-and-configuration.md)
     + [Dispatcher and CDN caching](/help/forms/troubleshooting-caching-performance.md)
 + Screens {#screens-as-cloud-service}
@@ -749,8 +769,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
       + [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md)
       + [Functional Testing](/help/implementing/cloud-manager/functional-testing.md)
-      + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
+      + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
     + [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md)
     + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
     + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
@@ -778,12 +798,14 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
     + [AEM Project Repository Structure Package](/help/implementing/developing/introduction/repository-structure-package.md)
     + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+    + [AEM Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md)
     + [AEM as a Cloud Service Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md)
     + [Logging](/help/implementing/developing/introduction/logging.md)
     + [Configurations and the Configuration Browser](/help/implementing/developing/introduction/configurations.md)
     + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
     + [API Reference Materials](/help/implementing/developing/reference-materials.md)
     + [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+    + [Generating Access Tokens for Server Side APIs (Legacy)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
     + [Quick Site Creation and Front-End Customization](/help/implementing/developing/introduction/quick-site-creation.md)
     + [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
     + [Customizing Site Templates and Themes](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
