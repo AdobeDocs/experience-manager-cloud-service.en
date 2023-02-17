@@ -867,11 +867,13 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
 If you save your query as a persisted query (for example, with the name `dynamic-url-x`) you can then call the persisted query directly.
 
-For example, for the previous samples
+For example, to directly call the previous samples (saved as persisted queries), use the following URLs:
 
 * [Single Parameter](#dynamic-image-delivery-single-specified-parameter); Persisted Query named `dynamic-url-x`
 
   * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
+
+    The response will look like:
 
     ![Image Delivery using parameters](assets/cfm-graphiql-sample-image-delivery.png "Image Delivery using parameters")
 
@@ -879,9 +881,9 @@ For example, for the previous samples
 
   * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
 
-  >[!CAUTION]
-  >
-  >The trailing `;`is mandatory to cleanly terminate the list of parameters.
+    >[!CAUTION]
+    >
+    >The trailing `;`is mandatory to cleanly terminate the list of parameters.
 
 ### Limitations of Image Delivery {#image-delivery-limitations}
 
