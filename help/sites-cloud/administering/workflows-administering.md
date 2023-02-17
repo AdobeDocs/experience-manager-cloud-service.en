@@ -57,6 +57,12 @@ A range of consoles are available for administering your workflows. Use the [glo
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
+   >[!NOTE]
+   >
+   >
+   >In order to terminate or abort a workflow, it must be in a state of waiting for user intervention, such as in a Participant Step. Attempting to abort a workflow that is currently executing jobs (active threads that are under execution) may not produce the expected results.
+
+
 ## Viewing Archived Workflows {#viewing-archived-workflows}
 
 1. Using Navigation select **Tools**, then **Workflow**.
@@ -70,6 +76,7 @@ A range of consoles are available for administering your workflows. Use the [glo
    >
    >* use of the **Terminate** action
    >* when a page, that is subject to a workflow, is (force) deleted, then the workflow will be terminated
+
 
 1. Select a specific item, then **Open History** to see more details:
 
