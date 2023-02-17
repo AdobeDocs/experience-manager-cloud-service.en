@@ -31,7 +31,7 @@ Each approach has its own use-cases and limitations. This document provides info
 
 Hybrid filtering combines JCR filtering with AEM filtering.
 
-It applies a JCR filter before loading the result set into memory for AEM filtering. This is to reduce:
+It applies a JCR filter (in the form of a query constraint) before loading the result set into memory for AEM filtering. This is to reduce:
 
 * the result set loaded into memory, as the JCR filter removes superfluous results prior to this
 
