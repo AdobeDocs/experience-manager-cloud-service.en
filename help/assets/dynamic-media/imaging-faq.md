@@ -1,6 +1,7 @@
 ---
 title: Smart imaging
 description: Learn how Smart Imaging with Adobe Sensei AI applies each user's unique viewing characteristics to automatically serve the right images optimized for their experience, resulting in better performance and engagement.
+contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 3
@@ -18,7 +19,7 @@ And now, get a better Google Core Web Vital score for LCP (Largest Contentful Pa
 >
 >Smart Imaging requires that you use the out-of-the-box CDN (Content Delivery Network) that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom CDN is not supported with this feature.
 
-Smart Imaging benefits from the added performance boost of being fully integrated with Adobe’s best-in-class premium CDN (Content Delivery Network) service. This service finds the optimal Internet route between servers, networks, and peering points. It finds a route that has the lowest latency and lowest packet loss rate instead of using the default route on the Internet.
+Smart Imaging benefits from the added performance boost of being fully integrated with Adobe's best-in-class premium CDN (Content Delivery Network) service. This service finds the optimal Internet route between servers, networks, and peering points. It finds a route that has the lowest latency and lowest packet loss rate instead of using the default route on the Internet.
 
 The following image asset examples depict the added Smart Imaging optimization:
 
@@ -64,7 +65,7 @@ See also [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-r
 
 ### About Device Pixel Ratio (dpr) optimization {#dpr}
 
-Device Pixel Ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device’s physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate.
+Device Pixel Ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device's physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate.
 
 Enabling Device Pixel Ratio optimization renders the image at the native resolution of the screen which makes it appear crisp.
 
@@ -256,7 +257,7 @@ During the initial transition, the non-cached images directly hit Adobe's origin
 
 1. Ensure that cache is disabled when developer tools are open.
 
-    * On Windows®, navigate to settings in the developer tool pane, then select **[!UICONTROL Disable cache (while devtools is open)]** check box.
+    * On Windows&reg;, navigate to settings in the developer tool pane, then select **[!UICONTROL Disable cache (while devtools is open)]** check box.
     * On macOS, in the developer pane, under the **[!UICONTROL Network]** tab, select **[!UICONTROL disable cache]**.
 
 1. Observe the Content Type is transformed to the appropriate format. The following screenshot shows a PNG image being converted dynamically to WebP on Chrome. If your domain has AVIF enabled, you can also expect to see AVIF in the Content Type.
