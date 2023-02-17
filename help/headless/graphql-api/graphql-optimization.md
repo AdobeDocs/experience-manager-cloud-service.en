@@ -69,9 +69,7 @@ As cursor-based pagination does not fit within the data structures of list-based
 
 ## Sorting {#sorting}
 
-The following rule applies for sorting:
-
-* Sorting can only be efficient if all sort criteria are related to top-level fragments.
+Sorting can only be efficient if all sort criteria are related to top-level fragments.
 
   If the sorting order includes one, or more, fields that are located on a nested fragment, then all fragments sharing the top-level model must be loaded into memory. This causes a negative performance impact.
 
