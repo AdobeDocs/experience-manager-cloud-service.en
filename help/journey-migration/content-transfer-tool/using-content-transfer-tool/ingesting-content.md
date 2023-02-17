@@ -95,7 +95,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Top Up Ingestion"
->abstract="Use the top up feature to move  modified content since the previous content transfer activity. Upon completion of Ingestion, check the logs for any error/warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe Customer Care." 
+>abstract="Use the top up feature to move modified content since the previous content transfer activity. Upon completion of Ingestion, check the logs for any error/warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe Customer Care."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="Viewing Logs"
 
 The Content Transfer Tool has a feature that supports differential content *top-up* where it is possible to transfer only changes made since the previous content transfer activity.
@@ -129,11 +129,28 @@ You will be able to kick-off an ingestion to the destination environment only if
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
+### Unable to reach migration service {#unable-to-reach-migration-service}
+
+After an ingestion is requested, a message like the following may be presented to the user: "The migration service on the destination environment is currently unreachable. Please try again later or contact Adobe support."
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
+
+This indicates that the Cloud Acceleration Manager was unable to reach the target environment's migration service to start the ingestion. This can happen for a number of reasons.
+
+>[!NOTE]
+> 
+> The "Migration token" field is shown because in a few cases retrieving that token is what is actually disallowed. By allowing it to be manually provided, it may allow the user to start the ingestion quickly, without any additional help. If the token is provided, and the message still appears, than retrieving the token was not the problem.
+
+ * AEM as a Cloud Service maintains the environment state, and occasionally may need to restart the migration service for a number of normal reasons. If that service is restarting, it cannot be reached, but will be available soon.
+ * It is possible another process is being run on the instance. For instance, if Release Orchestrator is applying an update, the system may be busy and the migration service regularly unavailable. That, and the possibility of corrupting the stage or production instance, is why pausing updates during an ingestion is very strongly recommended.
+ * If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it will block Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is very dynamic. Currently, the only solution is to disable the IP allow list while the ingestion is running.
+ * There may be other reasons that need investigation. If the ingestion continues to fail, please contact Adobe Customer Care.
+
 ### Automatic Updates through Release Orchestrator is still enabled
 
 Release Orchestrator automatically keeps environments up to date by applying updates automatically. If the update is triggerred when an ingestion is being performed, it can cause unpredictable results including the corruption of the environment. That is one of the reasons a support ticket should be logged before starting an ingestion (see "Note" above), so that temporarily disabling the Release Orchestrator can be scheduled.
 
-If Release Orchestrator is still running when an ingestion is being started, the UI will present this error message. You may choose to continue anyway, accepting the risk, by checking the field and pressing the button again.
+If Release Orchestrator is still running when an ingestion is being started, the UI will present this message. You may choose to continue anyway, accepting the risk, by checking the field and pressing the button again.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
