@@ -687,34 +687,41 @@ query {
 >
 >* Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. This is also the recommended way if you want to query large paginated result sets.
 
-## Image Delivery {#image-delivery}
+## Dynamic Image Delivery {#dynamic-image-delivery}
 
-<!-- why image delivery? isn't a new image being generated? -->
-<!-- in JSON delivery - what does that mean exactly? -->
+Dynamic image delivery allows you to use a Graphql query to:
 
-You can use AEM Dynamic Media to:
+* Request a URL to an AEM Asset image
 
-* Pass [Dynamic Imaging commands](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api) into GraphQL queries. 
+* Pass parameters with the query, so that a specific rendition of the image is automatically generated and returned
+  
+  >[!NOTE]
+  >
+  >The rendition specified is not stored in AEM Assets. The rendition is generated and held in cache for a short period.
+
+* Return the URL as part of the JSON delivery
+
+You can use AEM to:
+
+* Pass [Dynamic Media Imaging commands](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api) into GraphQL queries. 
   This means that the commands get applied during query execution, in the same way as URL parameters on GET requests for those images.
 
-* Dynamically create image renditions in JSON delivery. This avoids having to manually create and store those renditions in the repository.
+* Pass [AssetDelivery](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/wcm/spi/AssetDelivery.html) commands into GraphQL queries. 
+  This means that the commands get applied during query execution, in the same way as URL parameters on GET requests for those images.
+
+* Dynamically create image renditions for JSON delivery. This avoids having to manually create and store those renditions in the repository.
 
 The solution in GraphQL means you can:
-
-<!-- to do what? -->
 
 * use `_dynamicUrl` on the `ImageRef` reference
 
 * add `_assetTransform` to the list header where your filters are defined
 
-### URL Transform Input Structure {#url-transform-input-structure}
+### Structure of the Transformation Request {#structure-transformation-request}
 
-<!-- what does URL transform input field actually mean? -->
-<!-- a method of transforming the asset and then delivering by URL? -->
+`AssetTransform` (`_assetTransform`) is used to make the URL transformation requests. 
 
-The structure of the URL transform input field is structured to help you use it with enumerations, sub-structures and descriptions.
-
-The syntax is:
+The structure and syntax is:
 
 * `format`: an enumeration will all supported formats by its extension: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL or WEBPLY
 * `seoName`: a string that will be used as file name instead of the node name
@@ -734,9 +741,9 @@ The syntax is:
 
 The URL Transform is available to all query types: by path, list or paginated.
 
-### Image Delivery with full parameters {#image-delivery-full-parameters}
+### Dynamic Image Delivery with full parameters {#dynamic-image-delivery-full-parameters}
 
-This is a sample query for image delivery with a full set of parameters:
+This is a sample query with a full set of parameters:
 
 ```graphql
 {
@@ -773,9 +780,9 @@ This is a sample query for image delivery with a full set of parameters:
 }
 ```
 
-### Image Delivery with specified parameters {#image-delivery-specified-parameters}
+### Dynamic Image Delivery with a single specified parameter {#dynamic-image-delivery-single-specified-parameter}
 
-This example shows image delivery with specified parameters:
+This example shows the use of a single specified parameter:
 
 ```graphql
 query ($seoName: String!) {
@@ -812,13 +819,64 @@ query ($seoName: String!) {
 }
 ```
 
-#### Image Delivery by URL {#image-delivery-url}
+### Dynamic Image Delivery with multiple specified parameters {#dynamic-image-delivery-multiple-specified-parameters}
 
-If you save this as a persisted query (for example, with the name `dynamic-url-x`) you can then call the persisted query directly, for example: 
+This example shows the use of multiple specified parameters:
 
-`http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
+```graphql
+query ($seoName: String!, $format: AssetTransformFormat!) {
+  articleList(
+    _assetTransform: {
+      format:$format
+      seoName:$seoName
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
 
-![Image Delivery using parameters](assets/cfm-graphiql-sample-image-delivery.png "Image Delivery using parameters")
+### Dynamic Image Delivery by URL {#dynamic-image-delivery-url}
+
+If you save your query as a persisted query (for example, with the name `dynamic-url-x`) you can then call the persisted query directly.
+
+For example, for the previous samples
+
+* [Single Parameter](#dynamic-image-delivery-single-specified-parameter); Persisted Query named `dynamic-url-x`
+
+  * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
+
+    ![Image Delivery using parameters](assets/cfm-graphiql-sample-image-delivery.png "Image Delivery using parameters")
+
+* [Multiple Parameters](#dynamic-image-delivery-multiple-specified-parameters); Persisted Query named `dynamic`
+
+  * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
+
+  >[!CAUTION]
+  >
+  >The trailing `;`is mandatory to cleanly terminate the list of parameters.
 
 ### Limitations of Image Delivery {#image-delivery-limitations}
 
@@ -905,7 +963,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
     
       * [Sample Query for Image Delivery with full parameters](#image-delivery-full-parameters)
 
-      * [Sample Query for Image Delivery with specified parameters](#image-delivery-specified-parameters)
+      * [Sample Query for Image Delivery with a single specified parameter](#image-delivery-single-specified-parameter)
 
   * And operations:
   
