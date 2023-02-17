@@ -550,7 +550,7 @@ For further examples, see:
 
 >[!NOTE]
 >
->You need to [Update your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+>For best performance consider to [Update your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
 
 This feature allows you to sort the query results according to a specified field.
 
