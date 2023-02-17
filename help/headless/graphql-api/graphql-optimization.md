@@ -85,7 +85,7 @@ The main goal of all optimizations is to reduce the initial result set. The best
 
 Currently, filtering at the JCR level only works for top-level fragments.
 
-If a filter addresses a nested fragment, AEM has to fall back to loading (into memory) all fragments that share the underlying model. 
+If a filter addresses the fields of a nested fragment, AEM has to fall back to loading (into memory) all fragments that share the underlying model. 
 
 You can still optimize such GraphQL queries by combining filter expressions on fields of top-level fragments and those on fields of nested fragments with the [AND operator](#logical-operations-in-filter-expressions).
 
