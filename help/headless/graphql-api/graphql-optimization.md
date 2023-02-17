@@ -124,7 +124,7 @@ This can be done by applying a filter on the `_path` field of the top-level frag
 
 You can also use paging to reduce the initial result set; especially if your requests do not use any filtering and sorting.
 
-If you filter or sort on nested fragments, paginated queries can still be slow, as AEM still needs to load the entire set of fragments sharing the top-level model into memory. Therefore, the same rules for filtering (as mentioned above) apply.
+If you filter or sort on nested fragments, paginated queries can still be slow, as AEM may still need to load larger amounts of fragments into memory. Therefore, if you combine filtering and paging, consider the rules for filtering (as mentioned above).
 
 For paging, sorting is equally important, as paginated results are always sorted - either in an explicit or an implicit way.
 
