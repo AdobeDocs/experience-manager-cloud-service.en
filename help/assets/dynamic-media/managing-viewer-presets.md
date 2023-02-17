@@ -43,9 +43,9 @@ You can add, edit, delete, publish, unpublish, and preview viewer presets in Ado
 >
 >By default, the system shows 15 viewer presets when you select Viewers in an asset's detail view. You can increase this limit. See [Increase the number of viewer presets that display](#increasing-the-number-of-viewer-presets-that-display).
 
-### Viewer support for responsive designed web pages {#viewer-support-for-responsive-designed-web-pages}
+### Viewer support for responsive-designed web pages {#viewer-support-for-responsive-designed-web-pages}
 
-Different web pages have different needs. For example, sometimes you want a web page that provides a link that opens the HTML5 Viewer in a separate browser window. In other cases, it is necessary to embed the HTML5 Viewer directly on the hosting page. In the latter case, the web page has a static layout. Or, it is "responsive" and displays differently on different devices or for different browser window sizes. To accommodate these needs, all the pre-defined, out-of-the-box HTML5 Viewers that come with Dynamic Media support both static web pages and responsive designed web pages.
+Different web pages have different needs. For example, sometimes you want a web page that provides a link that opens the HTML5 Viewer in a separate browser window. In other cases, it is necessary to embed the HTML5 Viewer directly on the hosting page. In the latter case, the web page has a static layout. Or, it is "responsive" and displays differently on different devices or for different browser window sizes. To accommodate these needs, all the pre-defined, out-of-the-box HTML5 Viewers that come with Dynamic Media support both static web pages and responsive-designed web pages.
 
 See [Responsive Static Image library](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) in the *Dynamic Media Image Serving and Rendering API Help* for more information on how to embed responsive viewers onto your web pages.
 
@@ -438,14 +438,14 @@ For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!
 
    * **[!UICONTROL dash]** - Videos stream as dash only.
    * **[!UICONTROL hls]** - Videos stream as hls only.
-   * **[!UICONTROL auto]** - Best practice. The creation of DASH and HLS streams is storage-optimised. Therefore, Adobe recommends that you always select **[!UICONTROL auto]** as the playback type. Videos stream as dash, hls, or progressive. That is, 
+   * **[!UICONTROL auto]** - Best practice. The creation of DASH and HLS streams is storage optimized. Therefore, Adobe recommends that you always select **[!UICONTROL auto]** as the playback type. Videos stream as dash, hls, or progressive, as in the following: 
      * If the browser supports DASH, then DASH streaming is used, first. 
      * If the browser does not support DASH, then HLS streaming is used, second.
-     * If the browser does not support either DASH or HLS, then progessive playback is used, lastly.
+     * If the browser does not support either DASH or HLS, then progressive playback is used, lastly.
 
    >[!NOTE]
    >
-   >To see and use the **[!UICONTROL dash]** option, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).
+   >To see and use the **[!UICONTROL dash]** option, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](/help/assets/dynamic-media/video.md#enable-dash).
 
 1. From the **[!UICONTROL Selected Type]** pull-down menu, select a component whose behaviors you want to change.
 
@@ -467,47 +467,13 @@ For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!
 
    >[!IMPORTANT]
    >
-   >For old videos that use an adaptive streaming profile, the URL will continue to play as usual -- with HLS streaming -- until you [reprocess the video assets](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). After reprocessing, the same URL will continue to work but now with *both* DASH and HLS streaming enabled.
-
-### Enable DASH on your account {#enable-dash}
-
-DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When you enable DASH, you get the option to choose from HLS or DASH for adaptive video streaming. You can also opt for both with automatic switching between players.
-
-Some key benefits from enabling DASH on your account include the following:
-     
-* Package DASH stream video for adaptive streaming. This methods leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.
-* Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.
-* You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.
-* Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of encodes are created for both HLS and DASH to optimize video storage costs.
-* Helps make video delivery more accessible for your customers.
-* Get the streaming URL by way of APIs, too.
-
-You initiate a request to use DASH; it is not automatically enabled on your account.
-
-   >[!IMPORTANT]
-   >
-   >Enabling DASH on your account is currently available only in North America. 
-
-Create a support case as described below. In your support case, be sure you mention that you want DASH enabled on your account.
-
-**To enable DASH on your account:**
-
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-1. Follow the instructions to create a support case while ensuring you provide the following information:
-
-    * Primary contact name, email, phone.
-    * You want DASH enable on your Dynamic Media account.
-   
-1. Adobe Customer Support adds you to the DASH customer Wait List based on the order in which requests are submitted.
-1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for DASH enablement.
-1. You are notified after completion by Customer Support.
-1. Create your [video viewer preset](#creating-a-new-viewer-preset) as usual.
+   >For old videos that use an adaptive streaming profile, the URL continues to play as usual -- with HLS streaming -- until you [reprocess the video assets](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). After reprocessing, the same URL will continue to work but now with *both* DASH and HLS streaming enabled.
 
 ### Special considerations for creating an interactive viewer preset {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **About Display Modes for image thumbnails in the panel:**
 
-When you create or edit an Interactive Video viewer preset, you have the choice of which Display mode setting to use. This choice occurs when you select `InteractiveSwatches` from the **[!UICONTROL Selected Component]** pull-down menu under the **[!UICONTROL Behavior]** tab. The Display mode you choose affects how and when thumbnails appear while the video is playing. You can choose either a `segment`Display mode (default) or a `continuous` Display mode.
+When you create or edit an Interactive Video viewer preset, you have the choice of which Display mode setting to use. This choice occurs when you select `InteractiveSwatches` from the **[!UICONTROL Selected Component]** pull-down menu under the **[!UICONTROL Behavior]** tab. The Display mode that you choose affects how and when thumbnails appear while the video is playing. You can choose either a `segment`Display mode (default) or a `continuous` Display mode.
 
 <table>
  <tbody>
@@ -526,7 +492,7 @@ When you create or edit an Interactive Video viewer preset, you have the choice 
  </tbody>
 </table>
 
-**About auto scrolling behavior in the Interactive Video viewer:**
+**About auto-scrolling behavior in the Interactive Video viewer:**
 
 The auto scroll behavior of thumbnails in the Interactive Video viewer functions independently of the display mode that you chose.
 

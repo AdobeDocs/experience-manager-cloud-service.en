@@ -1,6 +1,6 @@
 ---
 title: Video in Dynamic Media
-description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, publishing videos to YouTube, viewing video reports, and adding closed captioning, subtitles, or chapter markers to videos.
+description: Learn how to work with video in Dynamic Media. Review best practices for encoding videos, publishing videos to YouTube, viewing video reports, and adding closed captioning, subtitles, or chapter markers to videos.
 contentOwner: Rick Brough
 feature: Video Profiles
 role: User
@@ -12,7 +12,7 @@ This section describes working with video in Dynamic Media.
 
 ## Quick Start: Videos {#quick-start-videos}
 
-The following step-by-step workflow description is designed to help you get up and running quickly with adaptive video sets in Dynamic Media. After each step is cross-references to topic headings where you can find more information.
+The following step-by-step workflow description is designed to help you get up and running quickly with adaptive video sets in Dynamic Media. After each step, there are cross-references to topic headings where you can find more information.
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ For detailed technical information about the algorithm, see [https://android.goo
 
 For managing single video and Adaptive Video Sets, the following is supported:
 
-* Uploading video from numerous supported video formats and audio formats and encoding video to MP4 H.264 format for playback across multiple screens. You can use predefined adaptive video presets, single video encoding presets, or customize your own encoding to control the quality and size of the video.
+* Uploading video from numerous-supported video formats and audio formats and encoding video to MP4 H.264 format for playback across multiple screens. You can use predefined adaptive video presets, single video encoding presets, or customize your own encoding to control the quality and size of the video.
 
   * When an adaptive video set is generated, it includes MP4 videos.
   * **Note**: Primary/source videos are not added to an Adaptive Video Set.
@@ -157,6 +157,7 @@ On the playback side of the viewer, it automatically detects the browser's video
 You can combine into a single player the ability to design the playback components using HTML5 and CSS. It can have embedded playback, and use adaptive and progressive streaming depending on the browser's capability. All this functionality, means you can extend the reach of your rich media content to both desktop and mobile users and ensure a streamlined video experience.
 
 See also [Viewers for Experience Manager Assets only](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
+
 
 ### Playback of video on desktop computers and mobile devices using the HTML5 video viewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -206,17 +207,17 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 or later</td>
-   <td>HLS or DASH*</td>
+   <td>HLS or DASH* adaptive streaming</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>HLS or DASH*</td>
+   <td>HLS or DASH* adaptive streaming</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>HLS or DASH*</td>
+   <td>HLS or DASH* adaptive streaming</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -226,7 +227,7 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Mobile</td>
    <td>Chrome (Android&trade; 7 or later)</td>
-   <td>HLS or DASH*</td>
+   <td>HLS or DASH* adaptive streaming/td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -236,12 +237,12 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Mobile</td>
    <td>Safari (iOS)</td>
-   <td>HLS or DASH*</td>
+   <td>HLS or DASH* adaptive streaming</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>Chrome (iOS)</td>
-   <td>HLS or DASH*</td>
+   <td>HLS or DASH* adaptive streaming</td>
   </tr>
  </tbody>
 </table>
@@ -295,7 +296,7 @@ The following table describes the recommended size, aspect ratio, and minimum bi
 
 ### Obtain a file's metadata {#obtaining-a-file-s-metadata}
 
-You can obtain a file's metadata by viewing its metadata using a video editing tool, or using an application designed for obtaining metadata. Following are instructions for using MediaInfo, a third-party application, to obtain a video file's metadata:
+You can obtain a file's metadata by viewing its metadata using an editing tool for videos, or using an application designed for obtaining metadata. Following are instructions for using MediaInfo, a third-party application, to obtain a video file's metadata:
 
 1. Go to [MediaInfo Download](https://mediaarea.net/en/MediaInfo/Download).
 1. Select and download the installer for the GUI version, and follow the installation instructions.
@@ -333,7 +334,7 @@ When selecting a bitrate encoding, there are two types you can choose:
 * **[!UICONTROL Constant Bitrate Encoding]** (CBR) - During CBR encoding, the bitrate, or the number of bits per second is kept the same throughout the encoding process. CBR encoding persists the set data rate to your setting over the entire video. Also, CBR encoding does not optimize media files for quality but does save on storage space.
   Use CBR if your video contains a similar motion level throughout the entire video. CBR is most commonly used for streaming video content. See also [Use custom-added video encoding parameters](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **[!UICONTROL Variable Bitrate Encoding]** (VBR) - VBR encoding adjusts the data rate down and to the upper limit you set, based on the data required by the compressor. This functionality means that during a VBR encoding process the bitrate of the media file dynamically increases or decreases depending on the media files bitrate needs.
+* **[!UICONTROL Variable Bitrate Encoding]** (VBR) - VBR encoding adjusts the data rate down and to the upper limit that you set, based on the data required by the compressor. This functionality means that during a VBR encoding process the bitrate of the media file dynamically increases or decreases depending on the media files bitrate needs.
   VBR takes longer to encode but produces the most favorable results; the quality of the media file is superior. VBR is most commonly used for http progressive delivery of video content.
 
 When do you use VBR versus CRB?
@@ -407,6 +408,41 @@ As an example, suppose that your source video is 1920 x 1080. In the following t
 ### Encoded video file format {#encoded-video-file-format}
 
 Dynamic Media recommends using MP4 H.264 video encoding presets. Because MP4 files use the H.264 video codec, it provides high-quality video but in a compressed file size.
+
+### Enable DASH on your account {#enable-dash}
+
+DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When you enable DASH, you get the option to choose from HLS or DASH for adaptive video streaming. You can also opt for both with automatic switching between players.
+
+Some key benefits from enabling DASH on your account include the following:
+     
+* Package DASH stream video for adaptive streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.
+* Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.
+* You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.
+* Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodes are created for both HLS and DASH to optimize video storage costs.
+* Helps make video delivery more accessible for your customers.
+* Get the streaming URL by way of APIs, too.
+
+You initiate a request to use DASH; it is not automatically enabled on your account.
+
+   >[!IMPORTANT]
+   >
+   >Enabling DASH on your account is currently available only in North America. 
+
+Create a support case as described below. In your support case, be sure you mention that you want DASH enabled on your account.
+
+**To enable DASH on your account:**
+
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. Follow the instructions to create a support case while ensuring you provide the following information:
+
+    * Primary contact name, email, phone.
+    * You want DASH enable on your Dynamic Media account.
+   
+1. Adobe Customer Support adds you to the DASH customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for DASH enablement.
+1. You are notified after completion by Customer Support.
+1. Create your [video viewer preset](#creating-a-new-viewer-preset) as usual.
+
 
 ## Publish videos to YouTube {#publishing-videos-to-youtube}
 
@@ -614,9 +650,9 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 1. To display the list of available tags in Experience Manager, select the drop-down list icon (upside-down caret).
 1. To add them, select one or more tags.
 
-   To delete a tag you have added, select the tag, and select **[!UICONTROL X]**.
+   To delete a tag that you have added, select the tag, and select **[!UICONTROL X]**.
 
-1. When you are finished adding the tags you want, select **[!UICONTROL Save]**.
+1. When you are finished adding the tags that you want, select **[!UICONTROL Save]**.
 
    Now you publish videos to your YouTube channel.
 
@@ -660,9 +696,9 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 1. To display the list of available tags in Experience Manager, select the drop-down list icon (upside-down caret).
 1. To add them, select one or more tags.
 
-   To delete a tag you have added, select the tag, and select **X**.
+   To delete a tag that you have added, select the tag, and select **X**.
 
-1. When you are finished adding the tags you want, select **[!UICONTROL OK]**.
+1. When you are finished adding the tags that you want, select **[!UICONTROL OK]**.
 
    Now you publish videos to your YouTube channel.
 
@@ -785,7 +821,7 @@ You can obtain a YouTube URL string that is generated by Dynamic Media after you
 
 To link YouTube URLs to your web application:
 
-1. Navigate to the *YouTube published* video asset whose URL you want to copy, then select it.
+1. Navigate to the *YouTube published* video asset whose URL that you want to copy, then select it.
 
    Remember that YouTube URLs are only available to copy *after* you have first *published* the video assets to YouTube.
 
@@ -824,7 +860,7 @@ When you upload a new video to a folder that has video encoding applied or, you 
 
 You can monitor progress, including failed encoding/YouTube publish.
 
-1. View video encoding progress in your assets folder:
+1. View video-encoding progress in your assets folder:
 
     * In card view, video encoding progress displays on the asset by percent. If there is an error, this information also displays on the asset.
 
@@ -1051,7 +1087,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 ## Add closed captions or subtitles to video {#adding-captions-to-video}
 
-You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
+You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning, you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
 
 Closed captioning also allows for greater accessibility for people who are deaf or hard of hearing.
 
@@ -1069,7 +1105,7 @@ See [Serving static (non-image) contents](https://experienceleague.adobe.com/doc
 
 1. Use a third-party application or service to create your video caption/subtitle file.
 
-   Ensure that the file you create follows the WebVTT (Web Video Text Tracks) standard. The captioning filename extension is .VTT. You can learn more information about the WebVTT captioning standard.
+   Ensure the file that you create follows the WebVTT (Web Video Text Tracks) standard. The captioning filename extension is .VTT. You can learn more information about the WebVTT captioning standard.
 
    See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
