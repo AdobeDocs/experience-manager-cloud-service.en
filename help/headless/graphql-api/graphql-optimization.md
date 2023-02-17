@@ -63,9 +63,9 @@ As cursor-based pagination does not fit within the data structures of list-based
 
 >[!NOTE]
 >
->AEM currently supports forward paging (using after/first parameters). 
+>AEM currently supports forward paging (using `after`/`first` parameters). 
 >
->Backward paging (using before/last parameters) is not supported.
+>Backward paging (using `before`/`last` parameters) is not supported.
 
 ## Sorting {#sorting}
 
