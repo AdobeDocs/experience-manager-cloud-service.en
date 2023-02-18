@@ -1359,7 +1359,7 @@ T**o add a custom video thumbnail**,
 
 -->
 
-## Changing the Dynamic Media URL for Dynamic Media assets
+## Change the Dynamic Media URL for Dynamic Media assets
 
 Videos processed into Dynamic Media can be used by way of out-of-the-box viewers and also by directly accessing the manifest URLs and playing them through your own custom viewers. The following is the API for fetching manifest URLs for a video. 
 
@@ -1421,8 +1421,7 @@ dependency>
 </dependency> 
 ```
 
-+++
-**Sample servlet** 
++++**Sample servlet** 
 
 ```java
 @Component
@@ -1499,8 +1498,7 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
-+++
-**Response Class for servlet** 
++++**Response Class for servlet** 
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1527,10 +1525,8 @@ public abstract class VideoResponse {
 ```
 
 +++
-
  
-+++
-**Constants file referenced in servlet** 
++++**Constants file referenced in servlet** 
 
 ```java
 public final class Constants { 
@@ -1547,8 +1543,7 @@ public final class Constants {
 
 +++
 
-+++
-**ServletContext** 
++++**ServletContext** 
 
 Mount the above servlet using a `servletContext`. The following is an example of `servletContext`. 
 
