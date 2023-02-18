@@ -150,9 +150,9 @@ On the design side of the player, you can design the video player's functionalit
 
 On the playback side of the viewer, it automatically detects the browser's video capability. It then serves the video using HLS or DASH, also known as adaptive video streaming. Or, if those delivery methods are not present then HTML5 progressive is used instead.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->To see or use DASH, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
+>To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
 
 You can combine into a single player the ability to design the playback components using HTML5 and CSS. It can have embedded playback, and use adaptive and progressive streaming depending on the browser's capability. All this functionality, means you can extend the reach of your rich media content to both desktop and mobile users and ensure a streamlined video experience.
 
@@ -167,9 +167,9 @@ Video playback occurs using either HLS or DASH, or progressive video download. I
 
 However, in Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, HLS or DASH) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming will always occur over HTTPS unless it is not supported by the browser. (see the following table).
 
->[!IMPORTANT]
+>[!NOTE]
 >
->To see or use DASH, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
+>To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
 
 Therefore,
 
@@ -249,7 +249,7 @@ The following table describes the device, browser, and playback method of videos
 
 >[!IMPORTANT]
 >
->*To see or use DASH, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
+>*To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
