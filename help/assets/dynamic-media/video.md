@@ -1408,9 +1408,13 @@ The API returns null if there are errors. Exceptions are logged in Experience Ma
 *   `IOException` gets logged when there is an issue connecting to Dynamic Media. 
 *   `UnsupportedOperationException` gets logged when a `manifestType` parameter passed is `ManifestType.DASH`, while the video has not been processed using DASH format. 
 
-The following is an example of the above API using servlets written in *HTTPWhiteBoard* specification.
+The following is an example of the above API using servlets written in *HTTPWhiteBoard* specification. Select each tab for the code syntax.
 
-**Add dependency in pom.xml** 
+>[!BEGINTABS]
+
+>[!TAB Add dependency in pom.xml]
+
++++**Add dependency in pom.xml** 
 
 ```java
 dependency> 
@@ -1421,7 +1425,7 @@ dependency>
 </dependency> 
 ```
 
->[!BEGINTABS]
++++
 
 >[!TAB Sample servlet]
 
@@ -1662,6 +1666,19 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 +++
 
 >[!ENDTABS]
+
++++**Add dependency in pom.xml** 
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
 
 +++**Sample servlet** 
 
