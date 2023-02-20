@@ -251,7 +251,7 @@ You can use the helper functions to create screenshots through your tests.
 * JavaScript: [takeScreenshot command](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java: [Commands](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-If a test result archive is created during a UI test execution, you can download it from Cloud Manager using the `Download Details` button under the [dedicated **Custom UI Testing** step.](/help/implementing/cloud-manager/deploy-code.md)
+If a test result archive is created during a UI test execution, you can download it from Cloud Manager using the `Download Details` button under the [**Custom UI Testing** step.](/help/implementing/cloud-manager/deploy-code.md)
 
 ### Upload Files {#upload-files}
 
