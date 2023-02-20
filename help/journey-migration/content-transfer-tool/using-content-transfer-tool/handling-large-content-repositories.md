@@ -95,7 +95,7 @@ In short, you will most likely want to download the Linux x86-64 binary from the
 
 AzCopy support for Amazon S3, Azure Blob Storage and File Data Store is included in latest CTT release.
 You can download the latest release of CTT from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
-
+It should be noted that only versions 2.0.0 and higher will be supported, and it is advisable to use the most recent version.
 
 ### 3. Configure an azcopy.config file {#configure-azcopy-config-file}
 
