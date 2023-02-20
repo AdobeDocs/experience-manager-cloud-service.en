@@ -714,7 +714,7 @@ You can use AEM to:
   This means that the commands get applied during query execution, in the same way as URL parameters on GET requests for those images.
 -->
 
-This allows you to dynamically create image renditions for JSON delivery. This avoids having to manually create and store those renditions in the repository.
+This allows you to dynamically create image renditions for JSON delivery, which avoids having to manually create and store those renditions in the repository.
 
 The solution in GraphQL means you can:
 
@@ -744,11 +744,11 @@ The structure and syntax is:
 * `width`: an integer that defines the width of the output image but will be ignored by the Image Generator
 * `preferWebp`: a boolean that indicates if webp is preferred (default value is false)
 
-The URL Transform is available to all query types: by path, list or paginated.
+The URL transform is available for all query types: by path, list or paginated.
 
 ### Dynamic Image Delivery with full parameters {#dynamic-image-delivery-full-parameters}
 
-This is a sample query with a full set of parameters:
+The following is a sample query with a full set of parameters:
 
 ```graphql
 {
@@ -787,7 +787,7 @@ This is a sample query with a full set of parameters:
 
 ### Dynamic Image Delivery with a single specified parameter {#dynamic-image-delivery-single-specified-parameter}
 
-This example shows the use of a single specified parameter:
+The following example shows the use of a single specified parameter:
 
 ```graphql
 query ($seoName: String!) {
@@ -826,7 +826,7 @@ query ($seoName: String!) {
 
 ### Dynamic Image Delivery with multiple specified parameters {#dynamic-image-delivery-multiple-specified-parameters}
 
-This example shows the use of multiple specified parameters:
+The following example shows the use of multiple specified parameters:
 
 ```graphql
 query ($seoName: String!, $format: AssetTransformFormat!) {
@@ -863,7 +863,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 }
 ```
 
-### Dynamic Image Delivery by URL {#dynamic-image-delivery-url}
+### Dynamic Image Delivery Request by URL {#dynamic-image-delivery-request-url}
 
 If you save your query as a persisted query (for example, with the name `dynamic-url-x`) you can then [execute the persisted query directly](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
 
