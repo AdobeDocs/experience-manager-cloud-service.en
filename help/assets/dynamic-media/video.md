@@ -1,6 +1,6 @@
 ---
 title: Video in Dynamic Media
-description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, publishing videos to YouTube, viewing video reports, and adding closed captioning, subtitles, or chapter markers to videos.
+description: Learn how to work with video in Dynamic Media. Review best practices for encoding videos, publishing videos to YouTube, viewing video reports, and adding closed captioning, subtitles, or chapter markers to videos.
 contentOwner: Rick Brough
 feature: Video Profiles
 role: User
@@ -12,7 +12,7 @@ This section describes working with video in Dynamic Media.
 
 ## Quick Start: Videos {#quick-start-videos}
 
-The following step-by-step workflow description is designed to help you get up and running quickly with adaptive video sets in Dynamic Media. After each step is cross-references to topic headings where you can find more information.
+The following step-by-step workflow description is designed to help you get up and running quickly with adaptive video sets in Dynamic Media. After each step, there are cross-references to topic headings where you can find more information.
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ For detailed technical information about the algorithm, see [https://android.goo
 
 For managing single video and Adaptive Video Sets, the following is supported:
 
-* Uploading video from numerous supported video formats and audio formats and encoding video to MP4 H.264 format for playback across multiple screens. You can use predefined adaptive video presets, single video encoding presets, or customize your own encoding to control the quality and size of the video.
+* Uploading video from numerous-supported video formats and audio formats and encoding video to MP4 H.264 format for playback across multiple screens. You can use predefined adaptive video presets, single video encoding presets, or customize your own encoding to control the quality and size of the video.
 
   * When an adaptive video set is generated, it includes MP4 videos.
   * **Note**: Primary/source videos are not added to an Adaptive Video Set.
@@ -148,19 +148,30 @@ The Dynamic Media HTML5 Video viewer presets are robust video players. You can u
 
 On the design side of the player, you can design the video player's functionality using standard web development tools. For example, you can design the buttons, controls, and custom poster image background using HTML5 and CSS to help you reach your customers with a customized appearance.
 
-On the playback side of the viewer, it automatically detects the browser's video capability. It then serves the video using HLS (HTTP Live Streaming), also known as adaptive video streaming. Or, if those delivery methods are not present then HTML5 progressive is used instead.
+On the playback side of the viewer, it automatically detects the browser's video capability. It then serves the video using HLS or DASH, also known as adaptive video streaming. Or, if those delivery methods are not present then HTML5 progressive is used instead.
+
+>[!NOTE]
+>
+>To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
 
 You can combine into a single player the ability to design the playback components using HTML5 and CSS. It can have embedded playback, and use adaptive and progressive streaming depending on the browser's capability. All this functionality, means you can extend the reach of your rich media content to both desktop and mobile users and ensure a streamlined video experience.
 
 See also [Viewers for Experience Manager Assets only](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
+
 ### Playback of video on desktop computers and mobile devices using the HTML5 video viewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 For desktop and mobile adaptive video streaming, the videos used for bit rate switching are based on all MP4 videos in the Adaptive Video Set.
 
-Video playback occurs using either HLS or progressive video download. In prior versions of Experience Manager, such as 6.0, 6.1, and 6.2, videos were streamed over HTTP.
+Video playback occurs using either HLS or DASH, or progressive video download. In prior versions of Experience Manager, such as 6.0, 6.1, and 6.2, videos were streamed over HTTP.
 
-However, in Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, HLS) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming will always occur over HTTPS unless it is not supported by the browser. (see the following table). Therefore,
+However, in Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, HLS or DASH) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming will always occur over HTTPS unless it is not supported by the browser. (see the following table).
+
+>[!NOTE]
+>
+>To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
+
+Therefore,
 
 * If you have an HTTPS website with HTTPS video streaming, streaming is fine.
 * If you have an HTTP website with HTTPS video streaming, streaming is fine and there are no mixed content issues from the web browser.
@@ -196,17 +207,17 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 or later</td>
-   <td>HLS</td>
+   <td>HLS or DASH* adaptive streaming</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>HLS</td>
+   <td>HLS or DASH* adaptive streaming</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>HLS</td>
+   <td>HLS or DASH* adaptive streaming</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -216,7 +227,7 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Mobile</td>
    <td>Chrome (Android&trade; 7 or later)</td>
-   <td>HLS</td>
+   <td>HLS or DASH* adaptive streaming/td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -226,20 +237,24 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Mobile</td>
    <td>Safari (iOS)</td>
-   <td>HLS</td>
+   <td>HLS or DASH* adaptive streaming</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>Chrome (iOS)</td>
-   <td>HLS</td>
+   <td>HLS or DASH* adaptive streaming</td>
   </tr>
  </tbody>
 </table>
 
+>[!IMPORTANT]
+>
+>*To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
+
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
    <td>BlackBerry&reg;</td>
-   <td>HLS</td>
+   <td>HLS or DASH</td>
   </tr>
  -->
 
@@ -281,7 +296,7 @@ The following table describes the recommended size, aspect ratio, and minimum bi
 
 ### Obtain a file's metadata {#obtaining-a-file-s-metadata}
 
-You can obtain a file's metadata by viewing its metadata using a video editing tool, or using an application designed for obtaining metadata. Following are instructions for using MediaInfo, a third-party application, to obtain a video file's metadata:
+You can obtain a file's metadata by viewing its metadata using an editing tool for videos, or using an application designed for obtaining metadata. Following are instructions for using MediaInfo, a third-party application, to obtain a video file's metadata:
 
 1. Go to [MediaInfo Download](https://mediaarea.net/en/MediaInfo/Download).
 1. Select and download the installer for the GUI version, and follow the installation instructions.
@@ -319,7 +334,7 @@ When selecting a bitrate encoding, there are two types you can choose:
 * **[!UICONTROL Constant Bitrate Encoding]** (CBR) - During CBR encoding, the bitrate, or the number of bits per second is kept the same throughout the encoding process. CBR encoding persists the set data rate to your setting over the entire video. Also, CBR encoding does not optimize media files for quality but does save on storage space.
   Use CBR if your video contains a similar motion level throughout the entire video. CBR is most commonly used for streaming video content. See also [Use custom-added video encoding parameters](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **[!UICONTROL Variable Bitrate Encoding]** (VBR) - VBR encoding adjusts the data rate down and to the upper limit you set, based on the data required by the compressor. This functionality means that during a VBR encoding process the bitrate of the media file dynamically increases or decreases depending on the media files bitrate needs.
+* **[!UICONTROL Variable Bitrate Encoding]** (VBR) - VBR encoding adjusts the data rate down and to the upper limit that you set, based on the data required by the compressor. This functionality means that during a VBR encoding process the bitrate of the media file dynamically increases or decreases depending on the media files bitrate needs.
   VBR takes longer to encode but produces the most favorable results; the quality of the media file is superior. VBR is most commonly used for http progressive delivery of video content.
 
 When do you use VBR versus CRB?
@@ -393,6 +408,41 @@ As an example, suppose that your source video is 1920 x 1080. In the following t
 ### Encoded video file format {#encoded-video-file-format}
 
 Dynamic Media recommends using MP4 H.264 video encoding presets. Because MP4 files use the H.264 video codec, it provides high-quality video but in a compressed file size.
+
+### Enable DASH on your account {#enable-dash}
+
+DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When you enable DASH, you get the option to choose from HLS or DASH for adaptive video streaming. You can also opt for both with automatic switching between players.
+
+Some key benefits from enabling DASH on your account include the following:
+     
+* Package DASH stream video for adaptive streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.
+* Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.
+* You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.
+* Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodes are created for both HLS and DASH to optimize video storage costs.
+* Helps make video delivery more accessible for your customers.
+* Get the streaming URL by way of APIs, too.
+
+You initiate a request to use DASH; it is not automatically enabled on your account.
+
+   >[!IMPORTANT]
+   >
+   >Enabling DASH on your account is currently available only in North America. 
+
+Create a support case as described below. In your support case, be sure you mention that you want DASH enabled on your account.
+
+**To enable DASH on your account:**
+
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. Follow the instructions to create a support case while ensuring you provide the following information:
+
+    * Primary contact name, email, phone.
+    * You want DASH enable on your Dynamic Media account.
+   
+1. Adobe Customer Support adds you to the DASH customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for DASH enablement.
+1. You are notified after completion by Customer Support.
+1. Create your [video viewer preset](#creating-a-new-viewer-preset) as usual.
+
 
 ## Publish videos to YouTube {#publishing-videos-to-youtube}
 
@@ -600,9 +650,9 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 1. To display the list of available tags in Experience Manager, select the drop-down list icon (upside-down caret).
 1. To add them, select one or more tags.
 
-   To delete a tag you have added, select the tag, and select **[!UICONTROL X]**.
+   To delete a tag that you have added, select the tag, and select **[!UICONTROL X]**.
 
-1. When you are finished adding the tags you want, select **[!UICONTROL Save]**.
+1. When you are finished adding the tags that you want, select **[!UICONTROL Save]**.
 
    Now you publish videos to your YouTube channel.
 
@@ -646,9 +696,9 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 1. To display the list of available tags in Experience Manager, select the drop-down list icon (upside-down caret).
 1. To add them, select one or more tags.
 
-   To delete a tag you have added, select the tag, and select **X**.
+   To delete a tag that you have added, select the tag, and select **X**.
 
-1. When you are finished adding the tags you want, select **[!UICONTROL OK]**.
+1. When you are finished adding the tags that you want, select **[!UICONTROL OK]**.
 
    Now you publish videos to your YouTube channel.
 
@@ -771,7 +821,7 @@ You can obtain a YouTube URL string that is generated by Dynamic Media after you
 
 To link YouTube URLs to your web application:
 
-1. Navigate to the *YouTube published* video asset whose URL you want to copy, then select it.
+1. Navigate to the *YouTube published* video asset whose URL that you want to copy, then select it.
 
    Remember that YouTube URLs are only available to copy *after* you have first *published* the video assets to YouTube.
 
@@ -810,7 +860,7 @@ When you upload a new video to a folder that has video encoding applied or, you 
 
 You can monitor progress, including failed encoding/YouTube publish.
 
-1. View video encoding progress in your assets folder:
+1. View video-encoding progress in your assets folder:
 
     * In card view, video encoding progress displays on the asset by percent. If there is an error, this information also displays on the asset.
 
@@ -1037,7 +1087,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 ## Add closed captions or subtitles to video {#adding-captions-to-video}
 
-You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
+You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning, you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
 
 Closed captioning also allows for greater accessibility for people who are deaf or hard of hearing.
 
@@ -1055,7 +1105,7 @@ See [Serving static (non-image) contents](https://experienceleague.adobe.com/doc
 
 1. Use a third-party application or service to create your video caption/subtitle file.
 
-   Ensure that the file you create follows the WebVTT (Web Video Text Tracks) standard. The captioning filename extension is .VTT. You can learn more information about the WebVTT captioning standard.
+   Ensure the file that you create follows the WebVTT (Web Video Text Tracks) standard. The captioning filename extension is .VTT. You can learn more information about the WebVTT captioning standard.
 
    See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
@@ -1308,3 +1358,584 @@ T**o add a custom video thumbnail**,
    The custom thumbnail is added to your video.
 
 -->
+
+## Change the Dynamic Media URL for Dynamic Media assets
+
+Videos processed into Dynamic Media can be used by way of out-of-the-box viewers and also by directly accessing the manifest URLs and playing them through your own custom viewers. The following is the API for fetching manifest URLs for a video. 
+
+### About the getVideoManifestURI API
+
+The `getVideoManifestURI`API is exposed through c`q-scene7-api:com.day.cq.dam.scene7.api` and can be used to generate the following manifest URLs: 
+ 
+``` java
+/**   
+* Returns the manifest url for videos 
+* @param resource video resource 
+* @param manifestType type of video streaming manifest being requested 
+* @param onlyIfPublished return a manifest only if the video is published 
+* @return the manifest url for videos 
+* 
+* @throws Exception 
+*/
+@Nullable 
+String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean onlyIfPublished) throws Exception;
+```
+
+#### getVideoManifestURI API parameters 
+
+This API takes in the following three parameters:
+
+| Parameter | Description |
+| --- | --- |
+| `resource` | The resource corresponding to the video that Dynamic Media has ingested.|
+| `manifestType` | Can be either `ManifestType.DASH` or `ManifestType.HLS`|
+| `onlyIfPublished` | Set to true in case the manifest uri is generated only if it is published and available on the delivery tier.|
+
+To fetch the manifest URLs for videos using the method above, add a [video encoding profile](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) to an "upload videos" folder. Dynamic Media processes these videos based on the encodings found in the video encoding file that was assigned to the folder. Now you can invoke the above API for fetching manifest URLs for the uploaded videos. 
+
+### Error scenarios 
+
+The API returns null if there are errors. Exceptions are logged in Experience Manager error logs. All such logged errors start with `Could not generate Video Manifest URI`. The following scenarios can make such errors occur: 
+
+*   An `IllegalArgumentException` gets logged for any of the following: 
+
+    * The `resource` parameter passed is null.
+    * The `resource` parameter passed is not a video.
+    * The `manifestType` parameter passed is null.
+    * The `onlyIfPublished` parameter is passed as true, but the video is not published. 
+    * The video was not ingested using an adaptive video set from Dynamic Media.
+
+*   `IOException` gets logged when there is an issue connecting to Dynamic Media. 
+*   `UnsupportedOperationException` gets logged when a `manifestType` parameter passed is `ManifestType.DASH`, while the video has not been processed using DASH format. 
+
+The following is an example of the above API using servlets written in *HTTPWhiteBoard* specification. Select each tab for the code syntax.
+
+>[!BEGINTABS]
+
+>[!TAB Add dependency in pom.xml]
+
++++**Add dependency in pom.xml** 
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
+
+>[!TAB Sample servlet]
+
++++**Sample servlet** 
+
+```java
+@Component
+        service = Servlet.class 
+) 
+@HttpWhiteboardServletPattern(value = ManifestServlet.SERVLET_PATTERN) 
+@HttpWhiteboardContextSelect(value = Constants.SERVLET_CONTEXT_SELECTOR) 
+public class ManifestServlet extends HttpServlet { 
+
+   private static final Logger LOGGER = LoggerFactory.getLogger(ManifestServlet.class); 
+
+   private final ObjectMapper objectMapper; 
+
+    @Reference 
+    private Scene7Service scene7Service; 
+
+   public static final String SERVLET_PATTERN = Constants.VIDEO_API_PREFIX + "/manifestUrl"; 
+
+   public ManifestServlet() {
+         this.objectMapper = new ObjectMapper(); 
+         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); 
+   }
+
+   @Override 
+
+   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        final ResourceResolver resolver = getResourceResolver(request); 
+        String assetPath = request.getParameter("assetPath"); 
+        String manifest = request.getParameter("manifestType"); 
+        String onlyIfPublished = request.getParameter("onlyIfPublished"); 
+        Resource resource = resolver.getResource(assetPath); 
+        response.setCharacterEncoding(StandardCharsets.UTF_8.toString()); 
+        response.setContentType("application/json"); 
+        if(resource == null) { 
+            LOGGER.info("could not retrieve the resource from JCR"); 
+            error("could not retrieve the resource from JCR", response); 
+            return; 
+        }
+
+        String manifestUri = null; 
+
+        try{ 
+            ManifestType manifestType =  ManifestType.DASH; 
+            if(manifest != null) { 
+                manifestType = ManifestType.valueOf(manifest); 
+            } 
+            manifestUri = scene7Service.getVideoManifestURI(resource, manifestType, onlyIfPublished != null); 
+            objectMapper.writeValue(response.getWriter(), new ManifestUrl(manifestUri)); 
+            response.setContentType("application/json"); 
+        } catch (Exception e) { 
+            LOGGER.error(e.getMessage(), e); 
+            error(String.format("Unable to get the manifest url for %s. %s", assetPath, e.getMessage()), response); 
+        } 
+    } 
+
+    private ResourceResolver getResourceResolver(HttpServletRequest request) { 
+        Object rr = request.getAttribute(AuthenticationSupport.REQUEST_ATTRIBUTE_RESOLVER); 
+        if (!(rr instanceof ResourceResolver)) { 
+            throw new IllegalStateException( 
+                    "The request does not seem to have been created via Apache Sling's authentication mechanism."); 
+        } else { 
+            return (ResourceResolver) rr; 
+        } 
+    } 
+
+    private void error(String errorMessage, HttpServletResponse response) throws IOException { 
+        ManifestUrl errorManifest = new ManifestUrl(null); 
+        errorManifest.setErrorMessage(errorMessage); 
+        response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
+        objectMapper.writeValue(response.getWriter(), errorManifest); 
+    } 
+} 
+```
+
++++
+
+>[!TAB Response Class for servlet]
+
++++**Response Class for servlet** 
+
+```java
+public class ManifestUrl extends VideoResponse { 
+     String manifestUrl; 
+     public ManifestUrl(String manifestUrl) { 
+         this.manifestUrl = manifestUrl; 
+     } 
+     public String getManifestUrl() { 
+         return manifestUrl; 
+     } 
+} 
+
+public abstract class VideoResponse { 
+     String errorString; 
+
+     public String getErrorString() { 
+         return errorString; 
+     } 
+
+     public void setErrorMessage(String errorString) { 
+         this.errorString = errorString; 
+     } 
+} 
+```
+
++++
+
+>[!TAB Constants file referenced in servlet]
+
++++**Constants file referenced in servlet** 
+
+```java
+public final class Constants { 
+
+     private Constants() { 
+     } 
+
+     public static final String VIDEO_API_PREFIX = "/dynamicmedia/video"; 
+     public static final String SERVLET_CONTEXT_SELECTOR = "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "=" + 
+             DMSampleApiHttpContext.CONTEXT_NAME + ")"; 
+
+ } 
+```
+
++++
+
+>[!TAB ServletContext]
+
++++**ServletContext** 
+
+Mount the above servlet using a `servletContext`. The following is an example of `servletContext`. 
+
+```java
+public class DMSampleApiHttpContext extends ServletContextHelper { 
+
+ public static final String CONTEXT_NAME = "com.adobe.dmSample"; 
+ public static final String CONTEXT_PATH = "/dmSample"; 
+
+ private final MimeTypeService mimeTypeService; 
+
+ private final AuthenticationSupport authenticationSupport; 
+
+ /** 
+  * Constructs a new context that will use the given dependencies. 
+  * 
+  * @param mimeTypeService Used when providing mime type of requests. 
+  * @param authenticationSupport Used to authenticate requests with sling. 
+  */ 
+ @Activate 
+ public DMSampleApiHttpContext(@Reference final MimeTypeService mimeTypeService, 
+                               @Reference final AuthenticationSupport authenticationSupport) { 
+     this.mimeTypeService = mimeTypeService; 
+     this.authenticationSupport = authenticationSupport; 
+ } 
+
+ // ---------- HttpContext interface ---------------------------------------- 
+ /** 
+  * Returns the MIME type as resolved by the <code>MimeTypeService</code> or 
+  * <code>null</code> if the service is not available. 
+  */ 
+ @Override 
+ public String getMimeType(String name) { 
+     MimeTypeService mtservice = mimeTypeService; 
+     if (mtservice != null) { 
+         return mtservice.getMimeType(name); 
+     } 
+     return null; 
+ } 
+
+ /** 
+  * Returns the real context path that is used to mount this context. 
+  * @param req servlet request 
+  * @return the context path 
+  */ 
+ public static String getRealContextPath(HttpServletRequest req) { 
+     final String path = req.getContextPath(); 
+     if (path.equals(CONTEXT_PATH)) { 
+         return ""; 
+     } 
+     return path.substring(CONTEXT_PATH.length()); 
+ } 
+
+ /** 
+  * Returns a request wrapper that transforms the context path back to the original one 
+  * @param req request 
+  * @return the request wrapper 
+  */ 
+ public static HttpServletRequest createContextPathAdapterRequest(HttpServletRequest req) { 
+     return new HttpServletRequestWrapper(req) { 
+
+         @Override 
+         public String getContextPath() { 
+             return getRealContextPath((HttpServletRequest) getRequest()); 
+         } 
+
+     }; 
+
+ } 
+
+ /** 
+  * Always returns <code>null</code> because resources are all provided 
+  * through individual endpoint implementations. 
+  */ 
+ @Override 
+ public URL getResource(String name) { 
+     return null; 
+ } 
+
+ /** 
+  * Tries to authenticate the request using the 
+  * <code>SlingAuthenticator</code>. If the authenticator or the Repository 
+  * is missing this method returns <code>false</code> and sends a 503/SERVICE 
+  * UNAVAILABLE status back to the client. 
+  */ 
+ @Override 
+ public boolean handleSecurity(HttpServletRequest request, 
+                               HttpServletResponse response) throws IOException { 
+
+     final AuthenticationSupport authenticator = this.authenticationSupport; 
+     if (authenticator != null) { 
+         return authenticator.handleSecurity(createContextPathAdapterRequest(request), response); 
+     } 
+
+     // send 503/SERVICE UNAVAILABLE, flush to ensure delivery 
+     response.sendError(HttpServletResponse.SC_SERVICE_UNAVAILABLE, 
+             "AuthenticationSupport service missing. Cannot authenticate request."); 
+     response.flushBuffer(); 
+
+     // terminate this request now 
+     return false; 
+ } 
+}
+```
+
++++
+
+>[!ENDTABS]
+
++++**Add dependency in pom.xml** 
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
+
++++**Sample servlet** 
+
+```java
+@Component
+        service = Servlet.class 
+) 
+@HttpWhiteboardServletPattern(value = ManifestServlet.SERVLET_PATTERN) 
+@HttpWhiteboardContextSelect(value = Constants.SERVLET_CONTEXT_SELECTOR) 
+public class ManifestServlet extends HttpServlet { 
+
+   private static final Logger LOGGER = LoggerFactory.getLogger(ManifestServlet.class); 
+
+   private final ObjectMapper objectMapper; 
+
+    @Reference 
+    private Scene7Service scene7Service; 
+
+   public static final String SERVLET_PATTERN = Constants.VIDEO_API_PREFIX + "/manifestUrl"; 
+
+   public ManifestServlet() {
+         this.objectMapper = new ObjectMapper(); 
+         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); 
+   }
+
+   @Override 
+
+   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        final ResourceResolver resolver = getResourceResolver(request); 
+        String assetPath = request.getParameter("assetPath"); 
+        String manifest = request.getParameter("manifestType"); 
+        String onlyIfPublished = request.getParameter("onlyIfPublished"); 
+        Resource resource = resolver.getResource(assetPath); 
+        response.setCharacterEncoding(StandardCharsets.UTF_8.toString()); 
+        response.setContentType("application/json"); 
+        if(resource == null) { 
+            LOGGER.info("could not retrieve the resource from JCR"); 
+            error("could not retrieve the resource from JCR", response); 
+            return; 
+        }
+
+        String manifestUri = null; 
+
+        try{ 
+            ManifestType manifestType =  ManifestType.DASH; 
+            if(manifest != null) { 
+                manifestType = ManifestType.valueOf(manifest); 
+            } 
+            manifestUri = scene7Service.getVideoManifestURI(resource, manifestType, onlyIfPublished != null); 
+            objectMapper.writeValue(response.getWriter(), new ManifestUrl(manifestUri)); 
+            response.setContentType("application/json"); 
+        } catch (Exception e) { 
+            LOGGER.error(e.getMessage(), e); 
+            error(String.format("Unable to get the manifest url for %s. %s", assetPath, e.getMessage()), response); 
+        } 
+    } 
+
+    private ResourceResolver getResourceResolver(HttpServletRequest request) { 
+        Object rr = request.getAttribute(AuthenticationSupport.REQUEST_ATTRIBUTE_RESOLVER); 
+        if (!(rr instanceof ResourceResolver)) { 
+            throw new IllegalStateException( 
+                    "The request does not seem to have been created via Apache Sling's authentication mechanism."); 
+        } else { 
+            return (ResourceResolver) rr; 
+        } 
+    } 
+
+    private void error(String errorMessage, HttpServletResponse response) throws IOException { 
+        ManifestUrl errorManifest = new ManifestUrl(null); 
+        errorManifest.setErrorMessage(errorMessage); 
+        response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
+        objectMapper.writeValue(response.getWriter(), errorManifest); 
+    } 
+} 
+```
+
++++
+
++++**Response Class for servlet** 
+
+```java
+public class ManifestUrl extends VideoResponse { 
+     String manifestUrl; 
+     public ManifestUrl(String manifestUrl) { 
+         this.manifestUrl = manifestUrl; 
+     } 
+     public String getManifestUrl() { 
+         return manifestUrl; 
+     } 
+} 
+
+public abstract class VideoResponse { 
+     String errorString; 
+
+     public String getErrorString() { 
+         return errorString; 
+     } 
+
+     public void setErrorMessage(String errorString) { 
+         this.errorString = errorString; 
+     } 
+} 
+```
+
++++
+ 
++++**Constants file referenced in servlet** 
+
+```java
+public final class Constants { 
+
+     private Constants() { 
+     } 
+
+     public static final String VIDEO_API_PREFIX = "/dynamicmedia/video"; 
+     public static final String SERVLET_CONTEXT_SELECTOR = "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "=" + 
+             DMSampleApiHttpContext.CONTEXT_NAME + ")"; 
+
+ } 
+```
+
++++
+
++++**ServletContext** 
+
+Mount the above servlet using a `servletContext`. The following is an example of `servletContext`. 
+
+```java
+public class DMSampleApiHttpContext extends ServletContextHelper { 
+
+ public static final String CONTEXT_NAME = "com.adobe.dmSample"; 
+ public static final String CONTEXT_PATH = "/dmSample"; 
+
+ private final MimeTypeService mimeTypeService; 
+
+ private final AuthenticationSupport authenticationSupport; 
+
+ /** 
+  * Constructs a new context that will use the given dependencies. 
+  * 
+  * @param mimeTypeService Used when providing mime type of requests. 
+  * @param authenticationSupport Used to authenticate requests with sling. 
+  */ 
+ @Activate 
+ public DMSampleApiHttpContext(@Reference final MimeTypeService mimeTypeService, 
+                               @Reference final AuthenticationSupport authenticationSupport) { 
+     this.mimeTypeService = mimeTypeService; 
+     this.authenticationSupport = authenticationSupport; 
+ } 
+
+ // ---------- HttpContext interface ---------------------------------------- 
+ /** 
+  * Returns the MIME type as resolved by the <code>MimeTypeService</code> or 
+  * <code>null</code> if the service is not available. 
+  */ 
+ @Override 
+ public String getMimeType(String name) { 
+     MimeTypeService mtservice = mimeTypeService; 
+     if (mtservice != null) { 
+         return mtservice.getMimeType(name); 
+     } 
+     return null; 
+ } 
+
+ /** 
+  * Returns the real context path that is used to mount this context. 
+  * @param req servlet request 
+  * @return the context path 
+  */ 
+ public static String getRealContextPath(HttpServletRequest req) { 
+     final String path = req.getContextPath(); 
+     if (path.equals(CONTEXT_PATH)) { 
+         return ""; 
+     } 
+     return path.substring(CONTEXT_PATH.length()); 
+ } 
+
+ /** 
+  * Returns a request wrapper that transforms the context path back to the original one 
+  * @param req request 
+  * @return the request wrapper 
+  */ 
+ public static HttpServletRequest createContextPathAdapterRequest(HttpServletRequest req) { 
+     return new HttpServletRequestWrapper(req) { 
+
+         @Override 
+         public String getContextPath() { 
+             return getRealContextPath((HttpServletRequest) getRequest()); 
+         } 
+
+     }; 
+
+ } 
+
+ /** 
+  * Always returns <code>null</code> because resources are all provided 
+  * through individual endpoint implementations. 
+  */ 
+ @Override 
+ public URL getResource(String name) { 
+     return null; 
+ } 
+
+ /** 
+  * Tries to authenticate the request using the 
+  * <code>SlingAuthenticator</code>. If the authenticator or the Repository 
+  * is missing this method returns <code>false</code> and sends a 503/SERVICE 
+  * UNAVAILABLE status back to the client. 
+  */ 
+ @Override 
+ public boolean handleSecurity(HttpServletRequest request, 
+                               HttpServletResponse response) throws IOException { 
+
+     final AuthenticationSupport authenticator = this.authenticationSupport; 
+     if (authenticator != null) { 
+         return authenticator.handleSecurity(createContextPathAdapterRequest(request), response); 
+     } 
+
+     // send 503/SERVICE UNAVAILABLE, flush to ensure delivery 
+     response.sendError(HttpServletResponse.SC_SERVICE_UNAVAILABLE, 
+             "AuthenticationSupport service missing. Cannot authenticate request."); 
+     response.flushBuffer(); 
+
+     // terminate this request now 
+     return false; 
+ } 
+}
+```
+
++++
+
+### Use the sample servlet
+
+You invoke the servlet by performing a `GET` operation at `/dmSample/dynamicmedia/video/manifestUrl`. The following query parameters are passed: 
+
+| Query parameter | Description |
+| --- | --- |
+| `assetPath` | Mandatory. The path to the video for which `manifestUrl` is generated. |
+| `manifestType` | Optional. Parameter can be DASH or HLS. If it is not passed, it defaults to DASH. |
+| `onlyIfPublished` | Optional. If passed, the `manifestUrl` is returned only if the video is published.  |
+
+In this example, let us assume the following setup: 
+
+* The company is `samplecompany`.
+* The authoring instance is `http://sample-aem-author.com`.
+* The folder `/content/dam/video-example` has a video encoding profile applied to it. 
+* The video `scenery.mp4` is uploaded to the folder `/content/dam/video-example`.
+
+You can invoke the servlet in following ways: 
+     
+| Type | Description |
+| :--- | --- |
+| HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>In case DASH delivery is enabled:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>In case DASH delivery is disabled:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
+| DASH | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>In case DASH delivery is enabled:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>In case DASH delivery is disabled:<br>`{}` |
+| Error: asset path is wrong | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
+
+
+
+
+ 
