@@ -23,6 +23,7 @@ Before you start, learn about the type of Forms components available to you:
 
 You require the following to create an Adaptive Form:
 
+*   **Enable Adaptive Forms Core Components for your environment**: If you using AEM Archetype version 40 or later based program, the Core Components are auto enabled for your environment. To enable Adaptive Forms Core Components for your AEM Forms as a Cloud Service environment based on older versions of Archetype, see, [Enable Adaptive Forms Core Components for your environment](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
 *   **An Adaptive Form template**: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an Adaptive Form. For example, sending the collected data to a data source. The cloud service provides an OOTB template, named blank:
 
     * The `blank` template is included with every fresh AEM Forms as a Cloud Service program.
