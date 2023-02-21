@@ -72,7 +72,7 @@ These content fragments can then be assembled to provide experiences over a vari
 >[!NOTE]
 >
 >**Content Fragments** and **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** are different features within AEM:
->* **Content Fragments** are editorial content, that can be used to access structured data, including texts, numbers, and dates, amongst others. They are pure content, with definition and structure, but without additional visual design and/or layout.
+>* **Content Fragments** are editorial content, with definition and structure, but without additional visual design and/or layout. They can be used to access structured data, including texts, numbers, and dates, amongst others. 
 >* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
