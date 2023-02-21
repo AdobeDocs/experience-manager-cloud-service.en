@@ -26,7 +26,7 @@ To run the procedure use the following steps:
 
    The available variables are:
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th>&nbsp;</th>
