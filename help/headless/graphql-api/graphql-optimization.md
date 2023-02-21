@@ -7,7 +7,7 @@ description: Learn how to optimize your GraphQL queries when Filtering, Paging a
 
 >[!NOTE]
 >
->Prior to applying these optimization recommendations consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-paging-sorting-content-update.md) for best performance.
+>Prior to applying these optimization recommendations consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md) for best performance.
 
 On an AEM instance with a high number of Content Fragments that share the same model, GraphQL list queries can become costly (in terms of resources).
 
