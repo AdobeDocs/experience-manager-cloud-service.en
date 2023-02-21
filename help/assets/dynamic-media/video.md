@@ -197,7 +197,7 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Desktop</td>
    <td>Internet Explorer 11+</td>
-   <td>On Windows&reg; 8 and Windows&reg; 10 - Force use of HTTPS whenever HLS is requested. Known limitation: HTTP on HLS does not work in this browser/operating system combination<br /> <br /> On Windows&reg; 7 - Progressive download. Uses standard logic for selecting HTTP versus HTTPS protocol.</td>
+   <td>On Windows&reg; 8 and Windows&reg; 10 - Force use of HTTPS whenever DASH or HLS is requested. Known limitation: HTTP on DASH or HLS does not work in this browser/operating system combination<br /> <br /> On Windows&reg; 7 - Progressive download. Uses standard logic for selecting HTTP versus HTTPS protocol.</td>
   </tr>
   <tr>
    <td>Desktop</td>
@@ -441,8 +441,7 @@ Create a support case as described below. In your support case, be sure you ment
 1. Adobe Customer Support adds you to the DASH customer Wait List based on the order in which requests are submitted.
 1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for DASH enablement.
 1. You are notified after completion by Customer Support.
-1. Create your [video viewer preset](#creating-a-new-viewer-preset) as usual.
-
+1. Create your [video viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
 
 ## Publish videos to YouTube {#publishing-videos-to-youtube}
 
