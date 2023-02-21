@@ -151,7 +151,7 @@ To run the procedure use the following steps:
 
    After the update procedure has run, reset the cloud environment variable `CF_MIGRATION_ENABLED` to '0', to trigger the recycling of all pods.
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th>&nbsp;</th>
