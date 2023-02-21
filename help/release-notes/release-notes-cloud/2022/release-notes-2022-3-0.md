@@ -97,7 +97,7 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ## Cloud Manager {#cloud-manager}
 
-You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+You can find a complete list of Cloud Manager monthly releases [here.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Content Transfer Tool {#ctt-release}
 
