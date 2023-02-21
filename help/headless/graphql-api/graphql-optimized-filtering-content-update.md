@@ -1,9 +1,9 @@
 ---
-title: Updating your Content Fragments for Paging and Sorting 
-description: Learn how to update your Content Fragments for Paging and Sorting in Adobe Experience Manager as a Cloud Service for headless content delivery.
+title: Updating your Content Fragments for Optimized GraphQL Filtering 
+description: Learn how to update your Content Fragments for Optimized GraphQL Filtering in Adobe Experience Manager as a Cloud Service for headless content delivery.
 ---
 
-# Updating your Content Fragments for Paging and Sorting in GraphQL Filtering {#updating-content-fragments-for-paging-and-sorting-graphql-filtering}
+# Updating your Content Fragments for optimized GraphQL Filtering {#updating-content-fragments-for-optimized-graphql-filtering}
 
 To optimize the performance of your GraphQL filters you need to run a procedure to update your Content Fragments.
 
@@ -26,7 +26,7 @@ To run the procedure use the following steps:
 
    The available variables are:
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th>&nbsp;</th>
@@ -151,7 +151,7 @@ To run the procedure use the following steps:
 
    After the update procedure has run, reset the cloud environment variable `CF_MIGRATION_ENABLED` to '0', to trigger the recycling of all pods.
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th>&nbsp;</th>
