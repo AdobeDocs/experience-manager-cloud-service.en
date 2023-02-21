@@ -696,7 +696,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
     + [Persisted GraphQL queries](/help/headless/graphql-api/persisted-queries.md)
     + [Optimizing GraphQL Queries](/help/headless/graphql-api/graphql-optimization.md)
-    + [Updating Content Fragments for GraphQL Filtering](/help/headless/graphql-api/graphql-paging-sorting-content-update.md)
+    + [Updating your Content Fragments for optimized GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
     + [Sample GraphQL queries](/help/headless/graphql-api/sample-queries.md)
   + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
   + Security {#security}
