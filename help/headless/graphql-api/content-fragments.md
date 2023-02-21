@@ -463,8 +463,6 @@ For example, the expression
 
 would compare the content of the field with the value `some text` and succeeds if the content equals the value. Otherwise, the expression will fail.
 
-The 
-
 The following operators can be used to compare fields to a certain value:
 
 | Operator | Type(s) | The expression succeeds if ... |
@@ -550,6 +548,10 @@ For further examples, see:
 
 ## Sorting {#sorting}
 
+>[!NOTE]
+>
+>For best performance consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+
 This feature allows you to sort the query results according to a specified field.
 
 The sorting criteria:
@@ -587,8 +589,6 @@ And also:
 }
 ```
 
-<!-- to be included? -->
-
 You can also sort on a field within a nested fragment, using the format of `nestedFragmentname.fieldname`.
 
 >[!NOTE]
@@ -614,6 +614,10 @@ query {
 ```
 
 ## Paging {#paging}
+
+>[!NOTE]
+>
+>For best performance consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
 
 This feature allows you to perform paging on query types that returns a list. Two methods are provided:
 
