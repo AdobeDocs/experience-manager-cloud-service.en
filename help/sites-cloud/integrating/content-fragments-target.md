@@ -54,17 +54,18 @@ Content Fragments can be exported to the default workspace in Adobe Target, or t
 
 ## Prerequisites {#prerequisites}
 
-Various actions are required:
+The following action is required:
 
 1. You have to [integrate AEM with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-<!-- link rewriter? -->
+<!-- link rewriter - targets in content-fragments-customizing don't exist yet
 
 1. Content Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Content Fragment are externalized for web delivery.
 
    >[!NOTE]
    >
    >For link rewriting not covered by the default, the [Content Fragment Link Rewriter Provider](/help/implementing/developing/extending/content-fragments-customizing.md#the-content-fragment-link-rewriter-provider-html) is available. With this, customized rules can be developed for your instance.
+-->
 
 ## Add the Cloud Configuration {#add-the-cloud-configuration}
 
