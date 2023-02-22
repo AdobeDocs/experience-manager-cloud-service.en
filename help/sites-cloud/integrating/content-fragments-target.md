@@ -118,7 +118,7 @@ The required options can be selected in **Page Properties** of the required fold
 
    <!-- need a new screenshot -->
 
-   ![Folder - Cloud Services](assets/xf-target-integration-01.png "Folder - Cloud Services")
+   ![Folder - Cloud Services](assets/cf-target-integration-01.png "Folder - Cloud Services")
 
 1. **Save & Close**.
 
