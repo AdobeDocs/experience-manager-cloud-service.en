@@ -167,10 +167,6 @@ Video playback occurs using either HLS or DASH, or progressive video download. I
 
 However, in Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, HLS or DASH) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming will always occur over HTTPS unless it is not supported by the browser. (see the following table).
 
->[!NOTE]
->
->To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
-
 Therefore,
 
 * If you have an HTTPS website with HTTPS video streaming, streaming is fine.
@@ -217,7 +213,7 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>HLS or DASH* adaptive streaming</td>
+   <td>HLS adaptive streaming</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -237,7 +233,7 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Mobile</td>
    <td>Safari (iOS)</td>
-   <td>HLS or DASH* adaptive streaming</td>
+   <td>HLS adaptive streaming</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -1360,7 +1356,7 @@ T**o add a custom video thumbnail**,
 
 ## Change the Dynamic Media URL for Dynamic Media assets
 
-Videos processed into Dynamic Media can be used by way of out-of-the-box viewers and also by directly accessing the manifest URLs and playing them through your own custom viewers. The following is the API for fetching manifest URLs for a video. 
+Videos processed in Dynamic Media can be used by way of out-of-the-box viewers and also by directly accessing the manifest URLs and playing them through your own custom viewers. The following is the API for fetching manifest URLs for a video. 
 
 ### About the getVideoManifestURI API
 
@@ -1406,6 +1402,8 @@ The API returns null if there are errors. Exceptions are logged in Experience Ma
 
 *   `IOException` gets logged when there is an issue connecting to Dynamic Media. 
 *   `UnsupportedOperationException` gets logged when a `manifestType` parameter passed is `ManifestType.DASH`, while the video has not been processed using DASH format. 
+
+<!-- THE REMAINING SECTION IS FOR 6.5 ONLY 
 
 The following is an example of the above API using servlets written in *HTTPWhiteBoard* specification. Select each tab for the code syntax.
 
@@ -1666,248 +1664,7 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 
 >[!ENDTABS]
 
-+++**Add dependency in pom.xml** 
 
-```java
-dependency> 
-     <groupId>com.day.cq.dam</groupId> 
-     <artifactId>cq-scene7-api</artifactId> 
-     <version>5.12.64</version> 
-     <scope>provided</scope> 
-</dependency> 
-```
-
-+++
-
-+++**Sample servlet** 
-
-```java
-@Component
-        service = Servlet.class 
-) 
-@HttpWhiteboardServletPattern(value = ManifestServlet.SERVLET_PATTERN) 
-@HttpWhiteboardContextSelect(value = Constants.SERVLET_CONTEXT_SELECTOR) 
-public class ManifestServlet extends HttpServlet { 
-
-   private static final Logger LOGGER = LoggerFactory.getLogger(ManifestServlet.class); 
-
-   private final ObjectMapper objectMapper; 
-
-    @Reference 
-    private Scene7Service scene7Service; 
-
-   public static final String SERVLET_PATTERN = Constants.VIDEO_API_PREFIX + "/manifestUrl"; 
-
-   public ManifestServlet() {
-         this.objectMapper = new ObjectMapper(); 
-         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); 
-   }
-
-   @Override 
-
-   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        final ResourceResolver resolver = getResourceResolver(request); 
-        String assetPath = request.getParameter("assetPath"); 
-        String manifest = request.getParameter("manifestType"); 
-        String onlyIfPublished = request.getParameter("onlyIfPublished"); 
-        Resource resource = resolver.getResource(assetPath); 
-        response.setCharacterEncoding(StandardCharsets.UTF_8.toString()); 
-        response.setContentType("application/json"); 
-        if(resource == null) { 
-            LOGGER.info("could not retrieve the resource from JCR"); 
-            error("could not retrieve the resource from JCR", response); 
-            return; 
-        }
-
-        String manifestUri = null; 
-
-        try{ 
-            ManifestType manifestType =  ManifestType.DASH; 
-            if(manifest != null) { 
-                manifestType = ManifestType.valueOf(manifest); 
-            } 
-            manifestUri = scene7Service.getVideoManifestURI(resource, manifestType, onlyIfPublished != null); 
-            objectMapper.writeValue(response.getWriter(), new ManifestUrl(manifestUri)); 
-            response.setContentType("application/json"); 
-        } catch (Exception e) { 
-            LOGGER.error(e.getMessage(), e); 
-            error(String.format("Unable to get the manifest url for %s. %s", assetPath, e.getMessage()), response); 
-        } 
-    } 
-
-    private ResourceResolver getResourceResolver(HttpServletRequest request) { 
-        Object rr = request.getAttribute(AuthenticationSupport.REQUEST_ATTRIBUTE_RESOLVER); 
-        if (!(rr instanceof ResourceResolver)) { 
-            throw new IllegalStateException( 
-                    "The request does not seem to have been created via Apache Sling's authentication mechanism."); 
-        } else { 
-            return (ResourceResolver) rr; 
-        } 
-    } 
-
-    private void error(String errorMessage, HttpServletResponse response) throws IOException { 
-        ManifestUrl errorManifest = new ManifestUrl(null); 
-        errorManifest.setErrorMessage(errorMessage); 
-        response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
-        objectMapper.writeValue(response.getWriter(), errorManifest); 
-    } 
-} 
-```
-
-+++
-
-+++**Response Class for servlet** 
-
-```java
-public class ManifestUrl extends VideoResponse { 
-     String manifestUrl; 
-     public ManifestUrl(String manifestUrl) { 
-         this.manifestUrl = manifestUrl; 
-     } 
-     public String getManifestUrl() { 
-         return manifestUrl; 
-     } 
-} 
-
-public abstract class VideoResponse { 
-     String errorString; 
-
-     public String getErrorString() { 
-         return errorString; 
-     } 
-
-     public void setErrorMessage(String errorString) { 
-         this.errorString = errorString; 
-     } 
-} 
-```
-
-+++
- 
-+++**Constants file referenced in servlet** 
-
-```java
-public final class Constants { 
-
-     private Constants() { 
-     } 
-
-     public static final String VIDEO_API_PREFIX = "/dynamicmedia/video"; 
-     public static final String SERVLET_CONTEXT_SELECTOR = "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "=" + 
-             DMSampleApiHttpContext.CONTEXT_NAME + ")"; 
-
- } 
-```
-
-+++
-
-+++**ServletContext** 
-
-Mount the above servlet using a `servletContext`. The following is an example of `servletContext`. 
-
-```java
-public class DMSampleApiHttpContext extends ServletContextHelper { 
-
- public static final String CONTEXT_NAME = "com.adobe.dmSample"; 
- public static final String CONTEXT_PATH = "/dmSample"; 
-
- private final MimeTypeService mimeTypeService; 
-
- private final AuthenticationSupport authenticationSupport; 
-
- /** 
-  * Constructs a new context that will use the given dependencies. 
-  * 
-  * @param mimeTypeService Used when providing mime type of requests. 
-  * @param authenticationSupport Used to authenticate requests with sling. 
-  */ 
- @Activate 
- public DMSampleApiHttpContext(@Reference final MimeTypeService mimeTypeService, 
-                               @Reference final AuthenticationSupport authenticationSupport) { 
-     this.mimeTypeService = mimeTypeService; 
-     this.authenticationSupport = authenticationSupport; 
- } 
-
- // ---------- HttpContext interface ---------------------------------------- 
- /** 
-  * Returns the MIME type as resolved by the <code>MimeTypeService</code> or 
-  * <code>null</code> if the service is not available. 
-  */ 
- @Override 
- public String getMimeType(String name) { 
-     MimeTypeService mtservice = mimeTypeService; 
-     if (mtservice != null) { 
-         return mtservice.getMimeType(name); 
-     } 
-     return null; 
- } 
-
- /** 
-  * Returns the real context path that is used to mount this context. 
-  * @param req servlet request 
-  * @return the context path 
-  */ 
- public static String getRealContextPath(HttpServletRequest req) { 
-     final String path = req.getContextPath(); 
-     if (path.equals(CONTEXT_PATH)) { 
-         return ""; 
-     } 
-     return path.substring(CONTEXT_PATH.length()); 
- } 
-
- /** 
-  * Returns a request wrapper that transforms the context path back to the original one 
-  * @param req request 
-  * @return the request wrapper 
-  */ 
- public static HttpServletRequest createContextPathAdapterRequest(HttpServletRequest req) { 
-     return new HttpServletRequestWrapper(req) { 
-
-         @Override 
-         public String getContextPath() { 
-             return getRealContextPath((HttpServletRequest) getRequest()); 
-         } 
-
-     }; 
-
- } 
-
- /** 
-  * Always returns <code>null</code> because resources are all provided 
-  * through individual endpoint implementations. 
-  */ 
- @Override 
- public URL getResource(String name) { 
-     return null; 
- } 
-
- /** 
-  * Tries to authenticate the request using the 
-  * <code>SlingAuthenticator</code>. If the authenticator or the Repository 
-  * is missing this method returns <code>false</code> and sends a 503/SERVICE 
-  * UNAVAILABLE status back to the client. 
-  */ 
- @Override 
- public boolean handleSecurity(HttpServletRequest request, 
-                               HttpServletResponse response) throws IOException { 
-
-     final AuthenticationSupport authenticator = this.authenticationSupport; 
-     if (authenticator != null) { 
-         return authenticator.handleSecurity(createContextPathAdapterRequest(request), response); 
-     } 
-
-     // send 503/SERVICE UNAVAILABLE, flush to ensure delivery 
-     response.sendError(HttpServletResponse.SC_SERVICE_UNAVAILABLE, 
-             "AuthenticationSupport service missing. Cannot authenticate request."); 
-     response.flushBuffer(); 
-
-     // terminate this request now 
-     return false; 
- } 
-}
-```
-
-+++
 
 ### Use the sample servlet
 
@@ -1933,6 +1690,8 @@ You can invoke the servlet in following ways:
 | HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>In case DASH delivery is enabled:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>In case DASH delivery is disabled:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
 | DASH | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>In case DASH delivery is enabled:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>In case DASH delivery is disabled:<br>`{}` |
 | Error: asset path is wrong | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
+
+-->
 
 
 
