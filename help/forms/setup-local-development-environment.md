@@ -252,8 +252,8 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
     ```shell
 
-    mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y" includeFormsheadless="y"    
-
+    mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=40 -D aemVersion="cloud" -D appTitle="Borgo AEM Forms" -D appId="bgaemforms" -D groupId="com.bgaemforms" -D includeFormsenrollment="y" -D includeFormscommunications="y" -D includeExamples="y" -D 
+    
     ```
 
     Change the `appTitle`, `appId`, and `groupId` in the above command to reflect your environment. Also, set value for includeFormsenrollment, includeFormscommunications, and includeFormsheadless to `y` or `n` depending on your license and requirements. The includeFormsheadless is mandatory to create Adaptive Forms based on Core Components. 
@@ -261,8 +261,6 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
     * Use the `includeFormsenrollment=y` option to include Forms specific configurations, themes, templates, Core Components, and dependencies required to create Adaptive Forms. If you use Forms Portal, set the `includeExamples=y` option. It also adds Forms Portal core components to the project.
 
     * Use the `includeFormscommunications=y` option to include Forms Core Components and dependencies required to include Customer Communications functionality.
-
-    * Use the `includeFormsheadless` option to add artifacts and libraries required to create Headless Adaptive Forms. 
 
 1. Deploy the project to your local development environment. You can use the following command to deploy to your local development environment
 
