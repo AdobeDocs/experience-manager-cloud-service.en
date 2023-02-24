@@ -38,9 +38,11 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!ENDTABS] -->
 
-| Adaptive Forms | Automated Forms Conversion Service | Communications APIs | Forms Analytics |
-|---|---|---|---|
-|Adaptive Forms allows businesses to create and manage interactive, data-driven forms for their websites and other digital channels responsive, mobile-friendly forms. | Automated Forms Conversion Service allows businesses to convert legacy PDF-based forms into interactive, digital forms that can be easily managed and distributed online. | Communications APIs are a set of RESTful APIs (Application Programming Interfaces) that enable businesses to automate the creation, management, and delivery of personalized, data-driven communications.| The service provides OOTB support to connect with Adobe Analytics. Connecting forms with Adobe Analytics provides several benefits for businesses, including Improved understanding of user behavior, Better targeting of marketing efforts, Reduced error state, Improved ROI. |
+
+| Adaptive Forms | Automated Forms Conversion Service | Communications APIs | Integrations | Forms Workflows|
+|---|---|---|---|---|
+|Adaptive Forms allows businesses to create and manage interactive, data-driven forms for their websites and other digital channels responsive, mobile-friendly forms. | Automated Forms Conversion Service allows businesses to convert legacy PDF-based forms into interactive, digital forms that can be easily managed and distributed online. | Communications APIs are a set of RESTful APIs (Application Programming Interfaces) that enable businesses to automate the creation, management, and delivery of personalized, data-driven communications.| The platform can integrate with Adobe Sign and DocuSign, making it easy for users to send and track digital signature requests directly from their adaptive forms. </br></br>Additionally, the platform can integrate with Adobe Analytics, allowing organizations to gain valuable insights into user behavior and preferences. </br></br> Finally, AEM Forms Cloud Service allows users to embed adaptive forms directly into AEM Sites pages, creating a seamless user experience | Forms-centric workflows in Adobe Experience Manager (AEM) Forms are designed to automate business processes involving forms. These workflows automate the routing, review, and approval of forms as they move through different stages of a business process. Forms-centric workflows can be created visually using the AEM Forms Workflow Designer and can be integrated with AEM Forms to trigger workflows when a form is submitted. Workflows can be configured to route forms to different users or groups based on specific criteria and can include automatic notifications and reminders to ensure forms are processed in a timely manner. Overall, forms-centric workflows in AEM Forms help organizations streamline their business processes, improve efficiency, and reduce errors.|
+
 
 <!--
 | | |
