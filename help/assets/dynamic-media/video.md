@@ -238,7 +238,7 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Mobile</td>
    <td>Chrome (iOS)</td>
-   <td>HLS or DASH* adaptive streaming</td>
+   <td>HLS adaptive streaming</td>
   </tr>
  </tbody>
 </table>
@@ -407,7 +407,7 @@ Dynamic Media recommends using MP4 H.264 video encoding presets. Because MP4 fil
 
 ### Enable DASH on your account {#enable-dash}
 
-DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When you enable DASH, you get the option to choose from HLS or DASH for adaptive video streaming. You can also opt for both with automatic switching between players.
+DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.
 
 Some key benefits from enabling DASH on your account include the following:
      
@@ -418,13 +418,13 @@ Some key benefits from enabling DASH on your account include the following:
 * Helps make video delivery more accessible for your customers.
 * Get the streaming URL by way of APIs, too.
 
-You initiate a request to use DASH; it is not automatically enabled on your account.
-
    >[!IMPORTANT]
    >
    >Enabling DASH on your account is currently available only in North America. 
 
-Create a support case as described below. In your support case, be sure you mention that you want DASH enabled on your account.
+You initiate a request to use DASH; it is not automatically enabled on your account.
+
+To enable DASH on your account, create a customer support case as described below. In your support case, specify that you want to enable DASH on your Dynamic Media account and on Experience Manager. 
 
 **To enable DASH on your account:**
 
@@ -432,7 +432,8 @@ Create a support case as described below. In your support case, be sure you ment
 1. Follow the instructions to create a support case while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
-    * You want DASH enable on your Dynamic Media account.
+    * Name of your Dynamic Media account.
+    * Specify that you want DASH enabled on your Dynamic Media account and on Experience Manager.
    
 1. Adobe Customer Support adds you to the DASH customer Wait List based on the order in which requests are submitted.
 1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for DASH enablement.
