@@ -47,7 +47,7 @@ The UI is divided into four main areas.
 
 The Experience Cloud header is always present at the top of the screen. It is an anchor that tells you where you are within Experience Cloud and helps you navigate to other Experience Cloud apps.
 
-![The Experience Cloud header](assets/header.png)
+![The Experience Cloud header](assets/experience-cloud-header.png)
 
 #### Experience Manager {#experience-manager}
 
