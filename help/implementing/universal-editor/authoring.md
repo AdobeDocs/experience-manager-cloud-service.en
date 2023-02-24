@@ -32,7 +32,9 @@ Please see the document [Getting Started with the Universal Editor in AEM](getti
 
 Once the app is instrumented to work with the Universal Editor, you will need to sign into the Universal Editor. You will need an Adobe ID to sign in.
 
-## The UI {#ui}
+Once you are signed in, enter the URL of the page you wish to edit in the [address bar.](#address-bar) in order to start [editing the content.](#edit-content)
+
+## Understand The UI {#ui}
 
 The UI is divided into four main areas.
 
