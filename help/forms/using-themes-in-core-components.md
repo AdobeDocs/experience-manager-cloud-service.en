@@ -214,7 +214,7 @@ Your customizations are now safely stored in the Git repository.
 ### 7. Run the frontend pipeline {#deploy-pipeline}
 
 1. Create the front-end pipeline to deploy the customized theme. Learn [how to set up a frontline pipeline to deploy customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline). 
-1. Run the frontend pipeline to deploy customized theme folder. 
+1. Run the created frontend pipeline to deploy customized theme folder under the **[!UICONTROL Style]** tab of an Adaptive Form creation wizard. 
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ Your customizations are now safely stored in the Git repository.
 1. Open an Adaptive Form created using core components.
 1. Start the local proxy server using the command prompt and click **SIGN IN LOCALLY (ADMIN TASKS ONLY)**.
 1. Once signed in, you are redirected to the browser and see the applied theme. 
-1. Download the Canvas theme and extract the downloaded zip folder.
+1. Download the [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas) and extract the downloaded zip folder.
 1. Open the extracted zip folder in your preferred editor.
 1. Create a `.env` file in the theme folder and add parameters: **AEM URL**, **AEM_ADAPTIVE_FORM** and **AEM_PROXY_PORT**.
 1. Open the CSS file of the textbox in the Canvas theme folder and change its border color to say `red` color and save the changes.
