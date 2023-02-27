@@ -45,7 +45,7 @@ To customize a theme,
 
 To customize a Canvas theme:
 1. [Clone the Canvas theme](#1-download-canvas-theme-download-canvas-theme)
-1. [Understand the structure of structure of the theme](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
+1. [Understand the structure of the theme](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
 1. [Change name in package.json and package_lock.json](#changename-packagelock-packagelockjson) 
 1. [Create the `.env` file in the theme folder](#3-create-the-env-file-in-a-theme-folder-creating-env-file-theme-folder)
 1. [Start the local proxy server](#4-start-a-local-proxy-server-starting-a-local-proxy-server)
@@ -76,7 +76,7 @@ An Adaptive Form theme is a package containing the CSS, JavaScript, and static r
 * `src/theme.ts`: The main entry point of your JavaScript & CSS theme
 * `src\theme.scss`: JavaScript & CSS files that apply to the entire theme 
 
-The `src/components` folder has JavaScript and CSS files specific for all AEM core components such as button, checkbox, container,footer etc. You can style button or checkbox by editing the CSS file specific to the AEM component. 
+The `src/components` folder has JavaScript and CSS files specific for all AEM core components such as button, checkbox, container, footer etc. You can style button or checkbox by editing the CSS file specific to the AEM component. 
 
    ![Editing the theme](/help/forms/assets/theme_structure.png)
 
@@ -88,7 +88,7 @@ Update the name and version of Canvas theme in the `package.json` and `package_l
 
 >[!NOTE]
 >
-> Names should not have `@aemforms` tag. It should be simple text as user provided name. 
+> Names should not have `@aemforms` tag. It should be simple text as user-provided name. 
 
 ![Canvas Theme Pic](/help/forms/assets/changename_canvastheme.png)
 
