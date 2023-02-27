@@ -45,7 +45,8 @@ To customize a theme,
 
 To customize a Canvas theme:
 1. [Clone the Canvas theme](#1-download-canvas-theme-download-canvas-theme)
-1. [Understand the structure of structure of the theme](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme) 
+1. [Understand the structure of structure of the theme](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
+1. [Change name in package.json and package_lock.json](#changename-packagelock-packagelockjson) 
 1. [Create the `.env` file in the theme folder](#3-create-the-env-file-in-a-theme-folder-creating-env-file-theme-folder)
 1. [Start the local proxy server](#4-start-a-local-proxy-server-starting-a-local-proxy-server)
 1. [Customize the theme](#customize-the-theme-customizing-theme)
@@ -63,9 +64,9 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
  >[!NOTE]
  >
- > The Style tab of Form Creation Wizard displays the same theme name as package.json .
+ > The Style tab of Form Creation Wizard displays the same theme name as in package.json .
 
-### 2. Understand the structure of structure of the theme {#structure-of-canvas-theme}
+### 2. Understand the structure of the theme {#structure-of-canvas-theme}
 
 An Adaptive Form theme is a package containing the CSS, JavaScript, and static resources that define the styling of your form and complies with the structure of an Adaptive Form theme. An Adaptive Form theme has the following structure typical of a front-end project:
 
@@ -81,12 +82,22 @@ The `src/components` folder has JavaScript and CSS files specific for all AEM co
 
 To customize the theme, you can start the local proxy server to see the theme customizations in real time based on actual AEM content.
 
+### 4. Change name in package.json and package_lock.json of Canvas theme {#changename-packagelock-packagelockjson} 
+
+Update the name and version of Canvas theme in the `package.json` and `package_lock.json` files.
+
+>[!NOTE]
+>
+> Names should not have `@aemforms` tag. It should be simple text as user provided name. 
+
+![Canvas Theme Pic](/help/forms/assets/changename_canvastheme.png)
+
 ### 3. Create the .env file in a theme folder {#creating-env-file-theme-folder}
 
 Create a `.env` file in the theme folder and add the following parameters:
 
 * **AEM url**
-AEM_URL=https://[author-instance] or http://localhost:[port]/
+AEM_URL=https://[author-instance] 
 
 * **AEM site name**
 AEM_ADAPTIVE_FORM=Form_name
@@ -105,7 +116,7 @@ AEM_PROXY_PORT=7000
 
    ![npm run live](/help/forms/assets/theme_proxy.png)
 
-1. When the proxy server starts, it automatically opens a browser to `http://localhost:[port]/`. 
+ 
 1. Tap or click **SIGN IN LOCALLY (ADMIN TASKS ONLY)** and sign in with the proxy user credentials provided to you by the AEM administrator.
 
    ![Sign in locally](/help/forms/assets/local_signin.png)
@@ -163,13 +174,29 @@ After making changes to the theme and testing it with a local proxy server, comm
 
 Before you commit changes to the git repository of your AEM Forms Cloud Service, you require a clone of the repository on your local machine. To clone the repository:
 
-1.  Open the command prompt and run the below command after replacing [my-org] and [my-program] with values provided by your AEM administrator. You can also find details in your [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git):
+1. Create a new theme repository by clicking the **[!UICONTROL Repositories]** option. 
+
+   ![create new theme repo](/help/forms/assets/createrepo_canvastheme.png)
+
+1. Click **[!UICONTROL Add Repository]** and specify the **Repository Name** in the **Add Repository** dialog box. Click **[!UICONTROL Save]**.
+
+   ![Add Canvas Theme Repo](/help/forms/assets/addcanvasthemerepo.png)
+
+1. Click **[!UICONTROL Copy Repository URL]** to copy the URL of the created repository.  
+
+   ![Canvas theme URL](/help/forms/assets/copyurl_canvastheme.png)
+
 
     ```
-    git clone https://git.cloudmanager.adobe.com/[my-org]/[my-org]/
+
+1. Open the command prompt and execute the below command.
+ 
     ```
-1. Move the theme project that you were editing into the cloned repo with a command similar to `mv <theme-sources> <cloned-repo>`.
-1. Make the desired changes in the theme component folders by modifying its CSS file. 
+    git clone https://git.cloudmanager.adobe.com/[IMS]/[orgprogram]/
+   
+1. Move the theme repository that you are editing into the cloned repository with a command similar to
+   `move <theme-source> <cloned-repo>`.
+1. Make the customizations in the theme component folders by modifying the component's CSS file. 
 1. In the directory of the cloned repository, commit the theme files that you just moved into with the following commands.
 
    ```text
