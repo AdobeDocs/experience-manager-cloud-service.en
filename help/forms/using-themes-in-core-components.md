@@ -4,7 +4,7 @@ description: You can use themes to stylize and provide a visual identity to an A
 
 ---
 
-# Introduction to Themes for Adaptive Form  using Core Components {#introduction-to-themes-for-af-using-core-components}
+# Themes in Adaptive Forms (Core Components) {#themes-for-af-using-core-components}
 
 You can create and apply themes to stylize an Adaptive Form using core components. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. Theme is managed independently without a reference to an Adaptive Form.
 
