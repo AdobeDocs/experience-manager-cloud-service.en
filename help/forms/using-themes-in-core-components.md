@@ -82,7 +82,7 @@ The `src/components` folder has JavaScript and CSS files specific for all AEM co
 
 To customize the theme, you can start the local proxy server to see the theme customizations in real time based on actual AEM content.
 
-### 4. Change name in package.json and package_lock.json of Canvas theme {#changename-packagelock-packagelockjson} 
+### 3. Change name in package.json and package_lock.json of Canvas theme {#changename-packagelock-packagelockjson} 
 
 Update the name and version of Canvas theme in the `package.json` and `package_lock.json` files.
 
@@ -92,7 +92,7 @@ Update the name and version of Canvas theme in the `package.json` and `package_l
 
 ![Canvas Theme Pic](/help/forms/assets/changename_canvastheme.png)
 
-### 3. Create the .env file in a theme folder {#creating-env-file-theme-folder}
+### 4. Create the .env file in a theme folder {#creating-env-file-theme-folder}
 
 Create a `.env` file in the theme folder and add the following parameters:
 
@@ -108,7 +108,7 @@ AEM_PROXY_PORT=7000
 
 ![Canvas Theme Structure](/help/forms/assets/env-file-canvas-theme.png)
 
-### 4. Start a local proxy server {#starting-a-local-proxy-server}
+### 5. Start a local proxy server {#starting-a-local-proxy-server}
 
 1. From the command line, navigate to the root of the theme on your local machine.
 1. Execute `npm install` and npm retrieves dependencies and installs the project.
@@ -134,7 +134,7 @@ AEM_PROXY_PORT=7000
 
 Navigate to an Adaptive Form to see Canvas theme applied to an Adaptive Form. 
 
-### 5. Customize the theme {#customize-theme}
+### 6. Customize the theme {#customize-theme}
 
 1. In your editor, open the file `<your-theme-sources>/src/site/_variables.scss`.
 
@@ -168,7 +168,7 @@ Navigate to an Adaptive Form to see Canvas theme applied to an Adaptive Form.
 
 Before committing the changes into the AEM Git repository, you need to access your [Git repository information](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git).
 
-### 6. Commit the Changes {#committing-the-changes}
+### 7. Commit the Changes {#committing-the-changes}
 
 After making changes to the theme and testing it with a local proxy server, commit the changes to the Git repository of your AEM Forms Cloud Service. It makes the customized theme available in your Forms Cloud Service environment  for Adaptive Forms authors to use. 
 
@@ -211,7 +211,7 @@ Before you commit changes to the Git repository of your AEM Forms Cloud Service,
 Your customizations are now safely stored in the Git repository.    
 
 
-### 7. Run the frontend pipeline {#deploy-pipeline}
+### 8. Run the frontend pipeline {#deploy-pipeline}
 
 1. Create the front-end pipeline to deploy the customized theme. Learn [how to set up a frontline pipeline to deploy customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline). 
 1. Run the created frontend pipeline to deploy customized theme folder under the **[!UICONTROL Style]** tab of an Adaptive Form creation wizard. 
