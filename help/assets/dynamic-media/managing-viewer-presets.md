@@ -436,8 +436,8 @@ See [Special considerations for creating a Carousel Banner Viewer preset](#speci
 1. On the Viewer Preset Editor page, select the **[!UICONTROL Behavior]** tab. Alternatively, you can select any visual element in the viewer to select it for configuration.
 For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!UICONTROL Playback]**, you can select from one of three adaptive streaming options:
 
-   * **[!UICONTROL dash]** - Videos stream as dash only.
-   * **[!UICONTROL hls]** - Videos stream as hls only.
+   * **[!UICONTROL dash]** - Videos stream as DASH only. However, on Safari/iOS devices, you must select **[!UICONTROL hls]** as the type, instead.
+   * **[!UICONTROL hls]** - Videos stream as HLS only.
    * **[!UICONTROL auto]** - Best practice. The creation of DASH and HLS streams is storage optimized. Therefore, Adobe recommends that you always select **[!UICONTROL auto]** as the playback type. Videos stream as dash, hls, or progressive, as in the following: 
      * If the browser supports DASH, then DASH streaming is used, first. 
      * If the browser does not support DASH, then HLS streaming is used, second.
