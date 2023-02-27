@@ -10,6 +10,8 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] offers a cloud-native, 
 
 You can use the service to create and rollout interactive and engaging digital forms. For example, take an organization that is looking to digitize its customer enrollment journey. They have multiple data sources with existing customer data. They are looking to pre-populate forms, add e-sign their forms, and archive filled forms as PDF files. Besides, the organization has multiple print forms (PDF forms), they are also looking to convert all of their print forms to digital forms.
 
+
+
 The organization can use [!DNL AEM Forms] as a Cloud Service to create digital forms, connect forms to existing data sources, integrate forms with [!DNL Adobe Sign] to add e-signatures to forms, and generate Document of Record (DoR) to archive submitted forms as PDF files. The organization can also use the service to convert their existing PDF forms to digital forms.
 
 The organization can use [!DNL AEM Forms] as a Cloud Service and get all these features in the cloud without requiring any local infrastructure. The service also frees organizations from complex upgrade cycles as it is always up to date with the latest features.
@@ -38,9 +40,9 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!ENDTABS] -->
 
-| Adaptive Forms | Automated Forms Conversion Service | Communications APIs | Forms Workflows | E-Sign| Forms Analytics|
-|---|---|---|---|---|---|
-|Adaptive Forms allows businesses to create and manage interactive, data-driven forms for their websites and other digital channels responsive, mobile-friendly forms. | Automated Forms Conversion Service allows businesses to convert legacy PDF-based forms into interactive, digital forms that can be easily managed and distributed online. | Communications APIs are a set of RESTful APIs (Application Programming Interfaces) that enable businesses to automate the creation, management, and delivery of personalized, data-driven communications.| Forms-centric workflows are designed to automate business processes involving forms and document services. These workflows automate the routing, review, and approval of forms and document generation as they move through different stages of a business process.| The platform can integrate with Adobe Analytics, allowing organizations to gain valuable insights into user behavior and preferences. | The platform provides out of the box integration with Adobe Sign. You can also integrate it with and DocuSign, making it easy for users to send Forms for e-signatures. |
+| Adaptive Forms | Communications APIs  | Automated Forms Conversion Service | Forms Workflows | E-Sign | Forms Analytics | Data Model | 
+|---|---|---|---|---|---| ---|
+|Create and manage interactive, dynamic, responsive, mobile-friendly, and data-driven forms for your websites, apps, and other digital and Print channels. | Automate creation, management, and delivery of personalized, data-driven communications with RESTful APIs (Application Programming Interfaces) on-demand or at scheduled intervals. | Convert legacy PDF-based forms into Adaptive Forms that can be easily managed and distributed online. | Automate business processes involving forms and document services. Assign, route, review, and approve forms and document as these move through different stages of a business process.| Integrate with Adobe Sign and DocuSign to easliy send send Forms and documents to users for e-signatures. | Use Adobe Analytics to gain valuable insights into user behavior and preferences. | Easily connect your forms and documents with external data sources to retieve and send data. |
 
 <!--
 | | |
@@ -58,51 +60,34 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!TAB Headless Adaptive Forms​]
 
-[Headless Adaptive Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) is a solution for creating and managing headless web forms within the Adobe Experience Manager platform. This feature enables organizations to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. AEM Headless Adaptive Forms allows for greater flexibility and scalability in form development and deployment, as well as improved user experience through the ability to tailor form design and functionality to specific needs. By utilizing the capabilities of AEM and headless technology, this solution provides a robust platform for creating, managing, and deploying web forms for various use cases and applications.
+|||
+|--|--|
+|![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?lang=en)| Create and manage [headless web forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) within the Adobe Experience Manager platform. Enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. <br/> <br/> These forms are designed to be submitted without the need for a traditional HTML form interface. In other words, they allow you to submit form data programmatically via an API or backend code without requiring any visible form elements on the front-end. <br/> <br/> Headless forms are useful in various scenarios, such as when building single-page applications, progressive web apps, or mobile applications, where a traditional HTML form interface may not be necessary or practical. By allowing developers to submit form data directly through APIs or backend code, headless forms help streamline workflows and improve the overall performance of web applications.|
+
+
 
 
 >[!TAB Core Components]
 
-The [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) are a set of 24 open-source, BEM-compliant components that are built on the foundation of the Adobe Experience Manager WCM Core Components. They are specifically designed to be used for creating Adaptive Forms, which are forms that adapt to the device, browser and screen size of the user.
+|||
+|--|--|
+|![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?lang=en) | The [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) are a set of 24 open-source, BEM-compliant components that are built on the foundation of the Adobe Experience Manager WCM Core Components. They are specifically designed to be used for creating Adaptive Forms, which are forms that adapt to the device, browser and screen size of the user. <br/> <br/> These components can be used to create exceptional data capture and enrollment experiences by providing a wide range of form field options, including text fields, checkboxes, drop-down menus, and more. They also include features like validation, conditional logic, and responsive design, which can be used to create forms that are user-friendly and easy to use. <br/> <br/>  Additionally, as these components are open-source, developers have the ability to easily customize and extend the components to match the specific needs of their organization. And, These components are built on BEM methodology which ensures that they are scalable and maintainable.|
 
-These components can be used to create exceptional data capture and enrollment experiences by providing a wide range of form field options, including text fields, checkboxes, drop-down menus, and more. They also include features like validation, conditional logic, and responsive design, which can be used to create forms that are user-friendly and easy to use.
-
-Additionally, as these components are open-source, developers have the ability to easily customize and extend the components to match the specific needs of their organization. And, These components are built on BEM methodology which ensures that they are scalable and maintainable.
 
 
 >[!TAB Microsoft PowerAutomate Connector​]
 
-Microsoft Power Automate Connector for AEM Forms is a connector that allows you to integrate Adobe Experience Manager (AEM) Forms with Microsoft Power Automate (previously known as Microsoft Flow). Power Automate is a cloud-based service that allows you to create automated workflows between different applications and services.
+|||
+|--|--|
+|![](https://powerusers.microsoft.com/t5/image/serverpage/image-id/182924i17C4BEA1C045D731/image-size/large/is-moderation-mode/true?v=1.0&px=999)| AEM Forms Power Automate Connector allows you to integrate Adobe Experience Manager (AEM) Forms with Microsoft Power Automate (previously known as Microsoft Flow). Power Automate is a cloud-based service that allows you to create automated workflows between different applications and services.  <br/> <br/> With AEM Form Power Automate Connector, you can create workflows that automatically trigger based on submission of an Adaptive Form. For example, you could create a workflow that automatically sends an email notification to a specific person when a user submits a form or create a task in Microsoft Planner when a user completes a form.  <br/> <br/> The AEM Forms Power Automate Connector  is a powerful tool that enables you to automate and integrate your Adaptive Forms with other applications and services that connect with Microsoft Power Automate, allowing you to work with a wider range of tools. You can create workflows tailored to your specific needs, with the ability to add custom actions, conditions, and triggers. In addition, Power Automate provides detailed analytics and reporting, allowing you to monitor and optimize your workflows over time.|
 
-With the Power Automate Connector for AEM Form, you can create workflows that automatically trigger based on submission of an Adaptive Form. For example, you could create a workflow that automatically sends an email notification to a specific person when a user submits a form or create a task in Microsoft Planner when a user completes a form.
-
-There are many benefits to using the Power Automate Connector for AEM Forms, including:
-
-*   **Automation**: You can automate routine tasks and streamline processes, saving time and reducing errors.
-
-*   **Integration**: The connector enables you to integrate Adobe Experience Manager Forms with other applications and services, allowing you to work with a wider range of tools.
-
-*   **Customization**: You can create workflows tailored to your specific needs, with the ability to add custom actions, conditions, and triggers.
-
-*   **Analytics**: Power Automate provides detailed analytics and reporting, allowing you to monitor and optimize your workflows over time.
-
-Overall, the Power Automate Connector for AEM Forms is a powerful tool that enables you to automate and integrate your AEM Forms with other applications and services, improving efficiency and productivity.
 
 >[!TAB Microsoft Storage Connectors: OneDrive and Sharepoint]
 
-AEM Forms Microsoft Storage Connectors for OneDrive and SharePoint are connectors that allow you to integrate Adobe Experience Manager (AEM) Forms with Microsoft OneDrive and SharePoint. These connectors enable you to store and manage AEM Forms data and documents within Microsoft's cloud-based storage solutions.
+|||
+|--|--|
+|![](/help/forms/assets/onedrive-and-sharepoint.jpg)|AEM Forms Microsoft Storage Connectors for OneDrive and SharePoint are connectors that allow you to integrate Adobe Experience Manager (AEM) Forms with Microsoft OneDrive and SharePoint. These connectors enable you to store and manage AEM Forms data and documents within Microsoft's cloud-based storage solutions. <br/> <br/> These conneectors enables you to store and manage AEM Forms data and documents within Microsoft OneDrive. With this connector, you can upload data files and attachments to OneDrive and SharePoint directly from AEM Forms. <br/> <br/> There are several benefits to using AEM Forms Microsoft Storage Connectors for OneDrive and SharePoint: <ul><li> **Integration**: These connectors enable you to integrate AEM Forms with Microsoft's cloud-based storage solutions, allowing you to leverage the power of these platforms. </li> <li> **Collaboration**: OneDrive and SharePoint are collaboration platforms that enable team members to work together on files and documents. By integrating AEM Forms with these platforms, you can improve collaboration and teamwork. </li> <li> **Security**: OneDrive and SharePoint provide robust security features, ensuring that your data and documents are stored and accessed securely. </li> <br/> Overall, AEM Forms Microsoft Storage Connectors for OneDrive and SharePoint are powerful tools that enable you to store and manage AEM Forms data and documents within Microsoft's cloud-based storage solutions, improving collaboration and security.|
 
-These conneectors enables you to store and manage AEM Forms data and documents within Microsoft OneDrive. With this connector, you can upload data files and attachments to OneDrive and SharePoint directly from AEM Forms. 
-
-There are several benefits to using AEM Forms Microsoft Storage Connectors for OneDrive and SharePoint:
-
-*   **Integration**: These connectors enable you to integrate AEM Forms with Microsoft's cloud-based storage solutions, allowing you to leverage the power of these platforms.
-
-*   **Collaboration**: OneDrive and SharePoint are collaboration platforms that enable team members to work together on files and documents. By integrating AEM Forms with these platforms, you can improve collaboration and teamwork.
-
-*   **Security**: OneDrive and SharePoint provide robust security features, ensuring that your data and documents are stored and accessed securely.
-
-Overall, AEM Forms Microsoft Storage Connectors for OneDrive and SharePoint are powerful tools that enable you to store and manage AEM Forms data and documents within Microsoft's cloud-based storage solutions, improving collaboration and security.
 
 >[!ENDTABS]
 
