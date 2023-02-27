@@ -64,7 +64,7 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
  >[!NOTE]
  >
- > The Style tab of Form Creation Wizard displays the same theme name as in package.json .
+ > The Style tab of Form Creation Wizard displays the same theme name as in the package.json file.
 
 ### 2. Understand the structure of the theme {#structure-of-canvas-theme}
 
@@ -172,7 +172,7 @@ Before committing the changes into the AEM Git repository, you need to access yo
 
 After making changes to the theme and testing it with a local proxy server, commit the changes to the Git repository of your AEM Forms Cloud Service. It makes the customized theme available in your Forms Cloud Service environment  for Adaptive Forms authors to use. 
 
-Before you commit changes to the git repository of your AEM Forms Cloud Service, you require a clone of the repository on your local machine. To clone the repository:
+Before you commit changes to the Git repository of your AEM Forms Cloud Service, you require a clone of the repository on your local machine. To clone the repository:
 
 1. Create a new theme repository by clicking the **[!UICONTROL Repositories]** option. 
 
@@ -186,22 +186,21 @@ Before you commit changes to the git repository of your AEM Forms Cloud Service,
 
    ![Canvas theme URL](/help/forms/assets/copyurl_canvastheme.png)
 
-
-    ```
-
-1. Open the command prompt and execute the below command.
+1. Open the command prompt and clone the above created cloud repository.
  
     ```
-    git clone https://git.cloudmanager.adobe.com/[IMS]/[orgprogram]/
+    git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
+
+    ```
    
-1. Move the theme repository that you are editing into the cloned repository with a command similar to
-   `move <theme-source> <cloned-repo>`.
-1. Make the customizations in the theme component folders by modifying the component's CSS file. 
-1. In the directory of the cloned repository, commit the theme files that you just moved into with the following commands.
+1. Move the files of theme repository that you are editing into the cloud repository with a command similar to
+   `cp -r [source-theme-folder]/* [destination-cloud-repo]`
+   For example, use this command `cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]` 
+1. In the directory of the cloud repository, commit the theme files that you moved into with the following commands.
 
    ```text
-   git add <theme-file-name>
-   git commit -m "Adding theme sources"
+   git add .
+   git commit -a -m "Adding theme files"
    git push
    ```
 
@@ -212,10 +211,10 @@ Before you commit changes to the git repository of your AEM Forms Cloud Service,
 Your customizations are now safely stored in the Git repository.    
 
 
-### 7. Deploy the frontend pipeline {#deploy-pipeline}
+### 7. Run the frontend pipeline {#deploy-pipeline}
 
-Deploy your customized theme using the front-end pipeline. Learn [how to set up a frontline pipeline to deploy customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline). 
-
+1. Create the front-end pipeline to deploy the customized theme. Learn [how to set up a frontline pipeline to deploy customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline). 
+1. Run the frontend pipeline to deploy customized theme folder. 
 
 >[!NOTE]
 >
@@ -233,9 +232,9 @@ Deploy your customized theme using the front-end pipeline. Learn [how to set up 
 1. Open the CSS file of the textbox in the Canvas theme folder and change its border color to say `red` color and save the changes.
 1. Reopen the browser again and you see the changes are reflected immediately in an Adaptive Form. 
 1. Move the canvas theme folder in your cloned repository.
-1. Commit the changes and deploy the fronend pipeline.
+1. Commit the changes and run the fronend pipeline.
 
-Once the pipeline is executed, the theme is available under Style tab. 
+Once the pipeline is executed, the theme is available under the Style tab. 
 
 ## Best practices {#best-practices}
 
