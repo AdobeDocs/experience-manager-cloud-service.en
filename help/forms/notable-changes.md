@@ -1,8 +1,8 @@
 ---
 title: What has changed between AEM 6.5 Forms and AEM Cloud Services
 description: Are you an Experience Manager Forms user and looking to upgrade to Adobe Experience Manager Forms as a Cloud Service? Learn the most prominent changes before upgrading or migrating to Cloud Service.  
-contentOwner: khsingh
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
+contentOwner: khsingh
 ---
 # Notable changes for existing Adobe Experience Manager 6.5 Forms users  {#notable-changes-for-existing-AEM-Forms-users}
 
@@ -10,39 +10,39 @@ Adobe Experience Manager Forms as a Cloud Service brings some notable changes to
 
 | Feature/Capability | [!DNL AEM Forms] as a Cloud Service | AEM 6.5 Forms  | 
 |---|---|---|
-| Cloud-native architecture | &#x2611;  | &#x2612; |
-| Auto-scaling based on load | &#x2611;  | &#x2612; |
-| Zero downtime for upgrades | &#x2611;  | &#x2612; |
+| Cloud-native architecture | &#x2705;  | &#9932; |
+| Auto-scaling based on load | &#x2705;  | &#9932; |
+| Zero downtime for upgrades | &#x2705;  | &#9932; |
 | Feature roll-out frequency | Agile*  | Quarterly |
-| CDN (content delivery network) included | &#x2611;  | &#x2612; | 
-| Topologies optimized for maximum resilience and efficiency| &#x2611;  | &#x2612; | 
-| Cloud-native development environment | &#x2611;  | &#x2612; | 
-| Self-Service via Cloud Manager | &#x2611;  | &#x2612; | 
-| Automated upgrades with Continuous Integration and Continuous Delivery (CI/CD) | &#x2611;  | &#x2612; | 
-| Integration with [!DNL Micosoft Power Automate] | &#x2611; | &#x2612; | 
-| Integration with [!DNL DocuSign] | &#x2611; | &#x2612; | 
-| Easy connectivity with Microsoft Dynamics and Salesforce | &#x2611; | &#x2612; |
-| Easy connectivity with Microsoft Azure data store  | &#x2611; | &#x2612; |
-| Hardened Rule editor | &#x2611; | &#x2612; | 
-| Form creation wizard | &#x2611; | &#x2612; | 
-| Custom XCI support for Document of Record| &#x2611; | &#x2612; |
-| Adaptive Forms <sup>1</sup> | &#x2611; | &#x2611; | 
-| Data Integration with multiple data sources| &#x2611; | &#x2611; | 
-| Communications APIs (Document Services) <sup>2,3</sup> | &#x2611; | &#x2611; | 
-| Automated Forms Conversion Service <sup>4</sup> | &#x2611; | &#x2611; | 
-| Integration with [!DNL Adobe Sign] | &#x2611; | &#x2611; | 
-| Integration with [!DNL AEM Sites] | &#x2611; | &#x2611; | 
-| Integration with [!DNL Adobe Launch] | &#x2611; | &#x2611; | 
-| Integration with [!DNL Adobe Analytics] | &#x2611; | &#x2611; | 
-| Forms Portal <sup>5</sup>| &#x2611; | &#x2611; | 
-| AEM Workflows | &#x2611; | &#x2611; | 
-| Document of Record | &#x2611; | &#x2611; | 
-| Invisible Captcha | &#x2611; | &#x2611; |
-| Reusable Form Data Model configurations | &#x2611; | &#x2611; |
-| Acroform-based Document of Record | &#x2611; | &#x2611; | 
-| Government ID based identity authentication for Adobe Sign enabled Adaptive Forms | &#x2611; | &#x2611; | 
-| HTML5 <sup>6</sup>| &#x2612; | &#x2611; |
-| Document Security | &#x2612; | &#x2611; |
+| CDN (content delivery network) included | &#x2705;  | &#9932; | 
+| Topologies optimized for maximum resilience and efficiency| &#x2705;  | &#9932; | 
+| Cloud-native development environment | &#x2705;  | &#9932; | 
+| Self-Service via Cloud Manager | &#x2705;  | &#9932; | 
+| Automated upgrades with Continuous Integration and Continuous Delivery (CI/CD) | &#x2705;  | &#9932; | 
+| Integration with [!DNL Micosoft Power Automate] | &#x2705; | &#9932; | 
+| Integration with [!DNL DocuSign] | &#x2705; | &#9932; | 
+| Easy connectivity with Microsoft Dynamics and Salesforce | &#x2705; | &#9932; |
+| Easy connectivity with Microsoft Azure data store  | &#x2705; | &#9932; |
+| Hardened Rule editor | &#x2705; | &#9932; | 
+| Form creation wizard | &#x2705; | &#9932; | 
+| Custom XCI support for Document of Record| &#x2705; | &#9932; |
+| Adaptive Forms <sup>1</sup> | &#x2705; | &#x2705; | 
+| Data Integration with multiple data sources| &#x2705; | &#x2705; | 
+| Communications APIs (Document Services) <sup>2,3</sup> | &#x2705; | &#x2705; | 
+| Automated Forms Conversion Service <sup>4</sup> | &#x2705; | &#x2705; | 
+| Integration with [!DNL Adobe Sign] | &#x2705; | &#x2705; | 
+| Integration with [!DNL AEM Sites] | &#x2705; | &#x2705; | 
+| Integration with [!DNL Adobe Launch] | &#x2705; | &#x2705; | 
+| Integration with [!DNL Adobe Analytics] | &#x2705; | &#x2705; | 
+| Forms Portal <sup>5</sup>| &#x2705; | &#x2705; | 
+| AEM Workflows | &#x2705; | &#x2705; | 
+| Document of Record | &#x2705; | &#x2705; | 
+| Invisible Captcha | &#x2705; | &#x2705; |
+| Reusable Form Data Model configurations | &#x2705; | &#x2705; |
+| Acroform-based Document of Record | &#x2705; | &#x2705; | 
+| Government ID based identity authentication for Adobe Sign enabled Adaptive Forms | &#x2705; | &#x2705; | 
+| HTML5 <sup>6</sup>| &#9932; | &#x2705; |
+| Document Security | &#9932; | &#x2705; |
 
 Before proceeding with the service, please take into account the following exceptional cases:
 
