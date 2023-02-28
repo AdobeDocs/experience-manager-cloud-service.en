@@ -192,6 +192,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
       + [Validating Content Transfers](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
       + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+      + [User Mapping and Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
       + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
       + [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
       + [Viewing Logs for a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
