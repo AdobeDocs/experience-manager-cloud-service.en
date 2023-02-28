@@ -51,9 +51,7 @@ Follow these steps to add a certificate using Cloud Manager.
 
    * Enter a name for your certificate in **Certificate Name**.
      * This is for informational purposes only and can be any name that helps you reference your certificate easily.
-   * Paste the **Certificate**, **Private key**, and **Certificate chain** values into their respective fields.
-     * You can use the paste icon to the right of the input box. 
-     * All three fields are mandatory.
+   * Paste the **Certificate**, **Private key**, and **Certificate chain** values into their respective fields. All three fields are mandatory.
 
    ![Add SSL Certificate dialog](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
   

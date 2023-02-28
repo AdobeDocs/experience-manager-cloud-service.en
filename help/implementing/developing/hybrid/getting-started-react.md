@@ -134,7 +134,7 @@ This is a standard use of this function, not unique to this example app.
 
 #### Static Instantiation {#static-instantiation}
 
-When the component is instantiated statically using the component template (e.g. JSX), the value must be passed from the model to the properties of the component.
+When the component is instantiated statically using the component template (for example, JSX), the value must be passed from the model to the properties of the component.
 
 ### App.js {#app-js}
 

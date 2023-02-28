@@ -35,7 +35,7 @@ Typically you would create a master site in one language and for a specific coun
 >
 >Limit the use of Multi Site Manager to content within one language.
 >
->E.g. use the English master to create the English version of pages for the US, Canada, UK, etc. pages and use the French master to create the French version of pages for France, Switzerland, Canada, etc.
+>For example, use the English master to create the English version of pages for the US, Canada, UK, etc. pages and use the French master to create the French version of pages for France, Switzerland, Canada, etc.
 
 The following diagram illustrates how the main concepts intersect (but does not show all levels/elements involved):
 

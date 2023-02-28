@@ -35,6 +35,16 @@ You can use Experience Fragments:
 
 >[!NOTE]
 >
+>**[Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** and **Experience Fragments** are different features within AEM:
+>* **Content Fragments** are editorial content, with definition and structure, but without additional visual design and/or layout. They can be used to access structured data, including texts, numbers, and dates, amongst others. 
+>* **Experience Fragments** are fully laid out content; a fragment of a web page.
+>
+>Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
+>
+>For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+
+>[!NOTE]
+>
 >Write access for experience fragments requires the user account to be registered in the group:
 >
 >* `experience-fragments-editors`
@@ -302,12 +312,68 @@ When editing an Experience Fragment available Building Blocks are displayed in t
 
 ![Selecting Building Blocks](/help/sites-cloud/authoring/assets/xf-14.png)
 
+## Personalization on your Experience Fragment {#personalization-experience-fragment}
+
+Personalization on your Experience Fragment allows  you, as a marketer, to define target audiences for the Experience Fragment just once, then re-use the fragment in any page. This:
+
+* eliminates the need to specify the required variations for each audience every time the fragment is used
+* maintains styling across the offers
+
+You can create an Experience Fragment with multiple components grouped inside this single fragment. You can also create variations of the fragment for each specific audience segment, then reuse these Experience Fragments across the required channels. 
+
+Personalization is achieved by defining the **Personalization** properties on either the Experience Fragment or variation, or the folder containing the fragments; this means that inheritance can override personalization properties.
+
+Configuring these properties also enables the **Targeting** mode in the Experience Fragment editor.
+
+### Defining Personalization for your Experience Fragment {#defining-personalization-experience-fragment}
+
+To personalize your fragment:
+
+1. Navigate to the required location in the **Experience Fragments** console.
+
+1. Select either a folder or your fragment, then **Properties** from the toolbar.
+
+   >[!NOTE]
+   >
+   >Personalization properties defined on a folder will be inherited by all child folders down through the sub-tree, and Experience Fragments (and variations) within that sub-tree. They can be overridden by breaking the inheritance.
+
+1. Open the **Personalization** tab to define and save your settings. For example, on a folder:
+
+   ![Experience Fragment - Personlization Properties](/help/sites-cloud/authoring/assets/xf-personalization-properties.png)
+
+   >[!CAUTION]
+   >
+   >When a fragment is embedded in a Sites page, and **Personalization** has been configured, then only the personalization version of the page will be used at page rendering time.
+   >
+   >For the targeting performed on the components in a fragment to work at page rendering, the following conditions must be met:
+   >
+   >The **ContextHub Path** selected in the **Personalization** tab must be either:
+   >
+   >* the same path as the one configured for the page where the fragment will be rendered
+   >Or:
+   >* a path that contains a subset of the stores defined in the ContextHub configured for the page
+   >
+   >&nbsp;
+   >The **Segments Path** selected in the **Personalization** tab must be either:
+   >
+   >* the same path as the one configured for the page where the fragment will be rendered
+   >Or
+   >* a path that contains a subset of the segments configured for the page
+
+### Defining Targeting for your Experience Fragment {#defining-targeting-experience-fragment}
+
+Once the personalization properties have been configured, the Targeting mode will be available when the fragment is opened for editing.
+
+![Experience Fragment Editor - Targeting mode](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
+
+This mode operates in the same manner as for page editing. See [Targeting mode for the Page Editor](/help/sites-cloud/authoring/personalization/targeted-content.md) for more details.
+
 ## Details of your Experience Fragment {#details-of-your-experience-fragment}
 
 Details of your fragment can be seen:
 
 1. Navigate to the location of your Experience Fragments (do not navigate further down to the variations within the fragment). 
-   Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an export to Target: <!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
+   Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-cloud/integrating/integrating-adobe-target.md):
 
    ![Experience Fragment details](/help/sites-cloud/authoring/assets/xf-15.png)
 

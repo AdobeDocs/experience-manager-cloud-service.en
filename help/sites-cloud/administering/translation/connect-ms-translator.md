@@ -7,7 +7,7 @@ exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 ---
 # Connecting to Microsoft Translator {#connecting-to-microsoft-translator}
 
-Create a configuration for the [Microsoft Translator](https://hub.microsofttranslator.com) cloud service to use your Microsoft Translation account for translating AEM page content or assets.
+Create a configuration for the [Microsoft Translator](https://www.microsoft.com/en-us/translator/business/) cloud service to use your Microsoft Translation account for translating AEM page content or assets.
 
 >[!TIP]
 >

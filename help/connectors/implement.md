@@ -31,7 +31,7 @@ Useful Documentation
 
 Experience Manager as a Cloud Service [documentation](../overview/introduction.md) provides valuable insights into developing in AEM. Below are some specific technical topics and references that you may find useful while implementing an AEM connector:
 
-*   Adobe Consulting Services (ACS) [AEM Samples](http://adobe-consulting-services.github.io/acs-aem-samples/) for well-commented code to help educate AEM developers
+*   Adobe Consulting Services (ACS) [AEM Samples](https://adobe-consulting-services.github.io/acs-aem-samples/) for well-commented code to help educate AEM developers
 *   The various documentation links in the Common Integration Patterns section of this article
 
 Community Resources 
@@ -39,9 +39,9 @@ Community Resources
 
 In addition to the static documentation above, Adobe and the AEM community offer resources to help bring a connector to market:
 
-*   The Adobe Community's [AEM Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) is an active site where your peers ask and respond to questions
+*   The Adobe Community's [AEM Forum](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) is an active site where your peers ask and respond to questions
 *   Additional Adobe technical resources are available to certain partner levels. Learn more about the [Adobe Exchange Program](https://partners.adobe.com/exchangeprogram/experiencecloud).
-*   If your organization would like implementation help, consider Adobe's [Professional Services](http://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) team or see the [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) for a list of Adobe's partners across the globe
+*   If your organization would like implementation help, consider Adobe's [Professional Services](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) team or see the [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) for a list of Adobe's partners across the globe
 
 Package structure rules
 -----------------------

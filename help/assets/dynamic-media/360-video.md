@@ -1,6 +1,7 @@
 ---
 title: 360/VR Video
 description: Learn how to work with 360 and Virtual Reality (VR) Video in Dynamic Media.
+contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
@@ -21,9 +22,9 @@ See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-pr
 
 ## 360 Video in action {#video-in-action}
 
-Select [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) to open a browser window and watch a 360° video. During video playback, drag the pointer to a new location to change the viewing angle.
+Select [Space Station 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) to open a browser window and watch a 360° video. During video playback, drag the pointer to a new location to change the viewing angle.
 
-![360 Video sample](assets/6_5_360videoiss_simplified.png)
+![Video frame from Space Station 360 video](assets/6_5_360videoiss_simplified.png)
 *Video frame from Space Station 360*
 
 ## 360/VR Video and Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
@@ -36,19 +37,19 @@ See [Edit 360/VR video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-
 
 360 video assets that are uploaded into [!DNL Experience Manager] are labeled as **Multimedia** on an Asset page, similar to normal video asset.
 
-![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
-*An uploaded 360 video asset seen in the Card view. The asset is labeled as Multimedia.*
+![An uploaded 360-video asset seen in the Card view](assets/6_5_360video-selecttopreview.png)
+*An uploaded 360-video asset seen in the Card view. The asset is labeled as Multimedia.*
 
 **Upload assets for use with the 360 Video viewer:**
 
-1. Created a folder that is dedicated to your 360 video asset.
+1. Created a folder that is dedicated to your 360-video asset.
 1. [Apply an adaptive video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-   Rendering 360 video content places higher requirements for source video resolution and for encoded renditions resolution than standard non-360 video content.
+   Rendering 360-video content places higher requirements for source video resolution and for encoded renditions resolution than standard non-360 video content.
 
-   You can use the out-of-the-box Adaptive Video Profile that already comes with Dynamic Media. However, it results in perceptibly lower 360 video quality than you would get for non-360 video encoded with the same settings rendered with a non-360 video viewer. Therefore, if high quality 360 video is required, do the following:
+   You can use the out-of-the-box Adaptive Video Profile that already comes with Dynamic Media. However, it results in perceptibly lower 360-video quality than you would get for non-360 video encoded with the same settings rendered with a non-360 video viewer. Therefore, if high quality 360 video is required, do the following:
 
-    * Ideally, your original 360 video content has either one of the following resolutions:
+    * Ideally, your original 360-video content has either one of the following resolutions:
 
         * 1080p - 1920 x 1080, known as Full HD or FHD resolution or,
         * 2160p - 3840 x 2160, known as 4k, UHD, or Ultra HD resolution. This large display resolution is most often found on premium television sets and computer monitors. The 2160p resolution is often called "4k" because the width is close to 4000 pixels. In other words, it offers four times the pixels of 1080p.
@@ -59,7 +60,7 @@ See [Edit 360/VR video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-
         * Width=auto; Height=1080; Bit rate=5000 kbps
         * Width=auto; Height=1440; Bit rate=6600 kbps
 
-    * Process 360 video content in a folder that is dedicated exclusively to 360 video assets.
+    * Process 360-video content in a folder that is dedicated exclusively to 360 video assets.
 
    This approach places greater demands on the network and CPU of the end user.
 
@@ -102,26 +103,26 @@ See [Adding Dynamic Media Assets to pages](/help/assets/dynamic-media/adding-dyn
 
 1. In **[!UICONTROL Assets]**, navigate to an existing 360 Video that you have created. To open it in preview mode, select the 360 Video asset.
 
-   ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
+   ![Screenshot of an uploaded 360 video asset as seen in the Card view of Experience Manager.](assets/6_5_360video-selecttopreview-1.png)
 
-   To preview the video, select the 360 video asset.
+   To preview the video, select the 360-video asset.
 
 1. On the preview page, near the upper-left corner of the page, select the drop-down list, then select **[!UICONTROL Viewers]**.
 
-   ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
+   ![Screenshot of selecting Viewers to see list of available video viewers.](assets/6_5_360video-preview-viewers.png)
 
    From the Viewers list, select **[!UICONTROL Video360_social]**, then do one of the following:
 
     * To alter the viewing angle of the static scene, drag the pointer across the video.
     * To begin playback, select the video's **[!UICONTROL Play]** button. As the video plays, drag the pointer across the video to alter your viewing angle.
 
-   ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)*A 360 video screenshot.*
+   ![Screenshot of a user selecting the Video360_Social viewer to preview a 360 degree video.](assets/6_5_360video-preview-video360-social.png)*A 360-video screenshot.*
 
     * From the Viewers list, select **[!UICONTROL Video360VR]**.
 
         Virtual Reality (VR) video is immersive video content that is accessed by using virtual reality headsets. As with ordinary videos, you create VR videos at the beginning when a video is being recorded or captured using 360° video cameras.
 
-   ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
+   ![Screenshot of a user hovering their mouse pointer over the Video360VR Viewer option.](assets/6_5_360video-preview-video360vr.png)
    *A 360 VR video screenshot.*
 
 1. Near the upper right of the preview page, select **[!UICONTROL Close]**.

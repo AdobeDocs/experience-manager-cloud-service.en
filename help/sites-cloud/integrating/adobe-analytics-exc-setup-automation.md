@@ -1,17 +1,17 @@
 ---
 title: Integrate Adobe Analytics with Experience Cloud Setup Automation
-description: Experience Cloud Setup Automation provides a simple and automated way to integrate and instrument Experience Manager Sites with Experience Platform Launch and Adobe Analytics with a simple UI wizard interface. Learn how to use the automated setup with your own site.
+description: Experience Cloud Setup Automation provides a simple and automated way to integrate and instrument Experience Manager Sites with Experience Platform Tags and Adobe Analytics with a simple UI wizard interface. Learn how to use the automated setup with your own site.
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 ---
 # Integrate Adobe Analytics with Experience Cloud Setup Automation {#integrate-adobe-analytics-automation-setup}
 
-Experience Cloud Setup Automation provides a simple and automated way to integrate and instrument Experience Manager Sites with Experience Platform Launch and Adobe Analytics with a simple UI wizard interface.
+Experience Cloud Setup Automation provides a simple and automated way to integrate and instrument Experience Manager Sites with Experience Platform Tags and Adobe Analytics with a simple UI wizard interface.
 
 It has never been simpler to integrate Adobe Analytics with AEM Sites. With Experience Cloud Setup Automation, setting up, integrating, and instrumenting your site to capture performance analytics to understand how well your customers are engaging and converting is all taken care of with just a few clicks.
 
-This video explores how an AEM site is integrated with Experience Platform Launch and Analytics using Experience Cloud Setup Automation:
+This video explores how an AEM site is integrated with Experience Platform Tags and Analytics using Experience Cloud Setup Automation:
 
 >[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
@@ -51,7 +51,7 @@ The environment should now be ready for Experience Cloud Setup Automation.
     The automation setup occurs asynchronously. The **Check Integration Status** will show the current status of the integration.
 
     * **In progress** - indicates that the job is running.
-    * **Integration Complete** - indicates that the job has completed integrating Analytics and Launch, setting up Launch extensions and Launch rules, and creating the new Report Suite in Adobe Analytics.
+    * **Integration Complete** - indicates that the job has completed integrating Analytics and Tags, setting up Tags extensions and Tags rules, and creating the new Report Suite in Adobe Analytics.
     * **Failure** - indicates that the automated job was unable to complete successfully. Check the log files for this job by clicking on the Logs link.
 
 ## Validate AEM setup
@@ -60,7 +60,7 @@ Once the automation is complete, validate that your site is now firing the Analy
 
 1. Open up a page in your site using the **Sites Editor**.
 1. Use the **View as Published** option to load a published version of the page.
-1. Use the browser's developer tools to inspect the network traffic and that **Launch** and `AppMeasurement.js` files are now being loaded.
+1. Use the browser's developer tools to inspect the network traffic and that **Tags** and `AppMeasurement.js` files are now being loaded.
 1. Inspect the browser's console to see that page and component level events are fired and collected by the Adobe Client Data Layer.
 
 ## Validate Analytics setup
