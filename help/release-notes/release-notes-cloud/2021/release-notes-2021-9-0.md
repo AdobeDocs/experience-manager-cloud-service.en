@@ -72,7 +72,7 @@ CQ-4328183 was not reported on CS so not documented here.
   * Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository. 
   * Store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) in a customer-managed repository.  
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) help you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) help you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
   * Generate documents by populating template files with XML data.
   * Generate output forms in various formats, including non-interactive PDF print streams.
   * Generate print PDF files from an XFA form PDF and Adobe Acrobat Form.

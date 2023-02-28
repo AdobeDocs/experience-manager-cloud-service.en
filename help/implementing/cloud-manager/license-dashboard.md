@@ -49,7 +49,7 @@ Each section summarizes what is available and how it is currently used, if at al
 
 ### What is a content request? {#what-is-a-content-request}
 
-A content request is a request coming into AEM Sites or any customer-provided caching system  such as a content delivery network to deliver content or data in either HTML format as a page view or in JSON format as an API call.
+A content request is a request coming into AEM Sites or any customer-provided caching system  such as a content delivery network to deliver content or data in either HTML format as a page view or in JSON format as an API call.
 
 One content request is counted for each page view or for every five API calls, measured at the ingress of the first caching system to receive a content request. Content requests are counted against production environments only.
 
@@ -57,7 +57,7 @@ Content Requests exclude requests or activity initiated by or on behalf of Adobe
 
 ### How does Adobe Experience Manager measure content requests? {#how-are-content-requests-measured}
 
-Content requests are tracked on AEM as a Cloud Service's edge servers. Origin traffic does not count towards content requests. The CDN built into AEM as a Cloud Service tracks valid HTML and JSON requests.
+Content requests are tracked on AEM as a Cloud Service's edge servers. Origin traffic does not count towards content requests. The CDN built into AEM as a Cloud Service tracks valid HTML and JSON requests.
 
 AEM also has rules in place to exclude well-known bots, including well-known services visiting the site regularly to refresh their search index or service.
 
@@ -77,6 +77,10 @@ Content Requests will have variances with an organization's Analytics reporting 
 |Traffic Blockers|Using a tracker blocker in a browser may opt out some requests from being tracked.|
 |Firewalls|Firewalls may block Analytics tracking. This is more frequent with corporate firewalls.|
 
+### What if I would like to learn more about my content request volume? {#current-request-volumes}
+
+If you would like additional insights into the content request volume shown in the License Dashboard, your Adobe team can provide a report that shows the top volume drivers of content requests. Please reach out to your Adobe team or to Adobe Customer Care to request a top usage report.
+
 ### What if I am using my own CDN? {#using-own-cdn}
 
-The Content Request Dashboard in Cloud Manager will not show tracking for your own CDN.
+The License Dashboard will only show data tracked by the Cloud Service CDN.  If you choose to bring your own CDN (BYOCDN), you will report your content request volume back to Adobe on an annual basis, as stated in your contract.  

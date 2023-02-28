@@ -135,3 +135,5 @@ For more complex setups using multiple AEM site structures combined with differe
 - [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 - [Commerce Multi-Store Setup](configuring/multi-store-setup.md)
+- [Multiple Commerce Systems Setup](configuring/multiple-commerce-systems-setup.md)
+

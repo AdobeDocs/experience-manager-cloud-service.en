@@ -313,7 +313,7 @@ components:
             $ref: '#/components/schemas/OutputType'
           description: >-
             It contains details of the output formats requested for generation. PDF, representing PDF format;
-            and PRINT representing all non-PDF formats e.g. PCL, PostScript etc.
+            and PRINT representing all non-PDF formats for example, PCL, PostScript etc.
         template:
           type: string
           description: >-

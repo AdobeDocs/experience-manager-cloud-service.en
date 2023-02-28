@@ -11,12 +11,13 @@ Learn about the types of environments you can create and how to create them for 
 
 A user with the requisite permissions can create the following environment types (within the bounds of what is available to the specific tenant).
 
-* **Production and Stage** - The production and staging environments are available as a pair and are used for production and testing purposes, respectively.
+* **Production + Stage** - The production and staging environments are available as a pair and are used for production and testing purposes, respectively.
 
 * **Development** - A development environment can be created for development as well as testing purposes and can be associated with non-production pipelines only.
 
+* **Rapid Development** - A rapid development environment (RDE) allows a developer to swiftly deploy and review changes, minimizing the amount of time needed to test features that are proven to work on a local development environment. Please see [the rapid development environment documentation](/help/implementing/developing/introduction/rapid-development-environments.md) for details about how to use an RDE.
 
-The capabilities of individual environments depend upon the solutions enabled in the containing [program.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+The capabilities of individual environments depend upon the solutions enabled in the [program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) of the environment.
 
 * [Sites](/help/sites-cloud/home.md)
 * [Assets](/help/assets/home.md)
@@ -45,12 +46,13 @@ The capabilities of individual environments depend upon the solutions enabled in
    
 1. In the **Add environment** dialog that appears:
    
-   * Select an **Environment type**.
-     * The number of available/used environments is displayed in parentheses behind the Development environment type.
-   * Provide an **Environment name**.
-   * Provide an **Environment description**.
-   * Select a **Cloud Region**.
-
+   * Select an [**environment type**.](#environment-types)
+     * The number of available/used environments is displayed in parentheses behind the environment type name.
+   * Provide an environment **Name**.
+   * Provide an environment **Description**.
+   * Select a **Primary region** from the drop-down.
+     * Note that this can not be changed after creation.
+   * If you are adding a **Production + Stage** environment, you need to provide a environment name and description for both your production and staging environments.
    ![Add environment dialog](assets/add-environment2.png)
 
 1. Click **Save** to add the specified environment.
@@ -95,7 +97,7 @@ Upon creation, the preview service will have a default IP allow list applied to 
 
 ![Preview service and its allow list](assets/preview-ip-allow.png)
 
-A user with requisite permissions must complete the steps of the following options in advance of sharing the preview service URL with any of your teams in order to ensure access to the preview URL.
+A user with requisite permissions must complete the following steps before sharing the preview service URL in order to ensure access to it.
 
 1. Create an appropriate IP allow list, apply it to the preview service, and immediately un-apply the `Preview Default [<envId>]` allow list.
 
@@ -103,13 +105,13 @@ A user with requisite permissions must complete the steps of the following optio
   
 1. Use the update **IP Allow List** workflow to remove the default IP and add IPs as appropriate. Refer to [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) to learn more. 
 
-Once access to preview service is unlocked, the lock icon ahead of the preview service name will no longer be displayed.
+Once access to preview service is unlocked, the lock icon in front of the preview service name will no longer be displayed.
 
 Once activated, you can publish content to the preview service by using the Manage Publication UI inside AEM. Please refer to the document [Previewing Content](/help/sites-cloud/authoring/fundamentals/previewing-content.md) for more details.
 
 >[!NOTE]
 >
->Your environment must be on AEM version `2021.05.5368.20210529T101701Z` or newer. Make sure an update pipeline has successfully run on your environment to do this.
+>Your environment must be on AEM version `2021.05.5368.20210529T101701Z` or newer to use the preview service. Make sure an update pipeline has successfully run on your environment to do this.
 
 ## Updating Environments {#updating-dev-environment}
 

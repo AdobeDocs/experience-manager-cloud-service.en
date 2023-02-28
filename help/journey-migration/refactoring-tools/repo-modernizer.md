@@ -15,7 +15,7 @@ The Repository Modernizer creates a compatible AEM Cloud Service project structu
 
 * `ui.apps` package deploys to `/apps` and contains all the code
 
-* `ui.content` package deploys to runtime-writable areas (e.g. `/content`, `/conf`, `/home`, or anything  not `/apps`) and contains all the content and configuration.
+* `ui.content` package deploys to runtime-writable areas (for example, `/content`, `/conf`, `/home`, or anything  not `/apps`) and contains all the content and configuration.
 
 * `all` package is a container package that contains the sub-packages `ui.apps` and `ui.content`.
 

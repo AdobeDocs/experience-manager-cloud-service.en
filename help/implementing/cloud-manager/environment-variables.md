@@ -26,6 +26,10 @@ Typical use cases for using environment variables include:
 
 ## Adding Environment Variables {#add-variables}
 
+>[!NOTE]
+>
+>You must be a member of the [**Deployment Manager** role](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) in order to add or modify environment variables.
+
 1. Log into Adobe Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Cloud Manager lists the various programs available. Select the one you wish to manage.
 1. Select the **Environments** tab for the chosen program then select the environment for which you want to create an environment variable in the left navigation panel.
@@ -97,3 +101,29 @@ You can access environment variables and secrets via XML as follows.
 See the document [Setting Up Project](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) for an example of how to use both types of variables in a `pom.xml` file.
 
 See the [official Maven documentation](https://maven.apache.org/settings.html#quick-overview) for more details.
+
+## Environment Variable Availability {#availability}
+
+Environment variables can be used in a number of places.
+
+### Author, Preview, and Publish {#author-preview-publish}
+
+Both regular environment variables and secrets can be used in the authoring, preview, and publishing environments.
+
+### Dispatcher {#dispatcher}
+
+Only regular environment variables can be used with [the dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) Secrets can not be used.
+
+However environment variables can not be used in `IfDefine` directives.
+
+>[!TIP]
+>
+>You should validate your use of environment variables with the [dispatcher locally](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) before deploying.
+
+### OSGi Configurations {#osgi}
+
+Both regular environment variables and secrets can be used in [OSGi configurations.](/help/implementing/deploying/configuring-osgi.md)
+
+### Pipeline Variables {#pipeline}
+
+In addition to environment variables, there are also pipeline variables, which are exposed during the build phase. [Learn more about pipeline variables here.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
