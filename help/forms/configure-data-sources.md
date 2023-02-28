@@ -8,17 +8,17 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 ---
 # Configure data sources {#configure-data-sources}
 
- ![Data integration](do-not-localize/data-integeration.png)
+![Data integration](do-not-localize/data-integeration.png)
 
 [!DNL Experience Manager Forms] Data Integration allows you to configure and connect to disparate data sources. The following types are supported out-of-the-box:
 
- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
+* Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
 * RESTful web services  
 * SOAP-based web services
 * OData services (Version 4.0)
-* Microsoft® Dynamics
+* Microsoft&reg; Dynamics
 * SalesForce
-* Microsoft® Azure Blob Storage
+* Microsoft&reg; Azure Blob Storage
 
 Data integration supports OAuth2.0, Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> and connector for [!DNL Experience Manager] user profile are configured in [!DNL Experience Manager] web console.
 
@@ -46,7 +46,7 @@ You can configure relational databases using [!DNL Experience Manager] Web Conso
 
 1. In the configuration dialog, specify the details for the database you want to configure, such as:
 
-    * Java™ class name for the JDBC driver
+    * Java&trade; class name for the JDBC driver
     * JDBC connection URI
     * Username and password to establish connection with the JDBC driver
     * Specify a SQL SELECT query in the **[!UICONTROL Validation Query]** field to validate connections from the pool. The query must return at least one row. Based on your database, specify one of the following:
@@ -261,7 +261,7 @@ An OData service is identified by its service root URL. To configure an OData se
 >[!NOTE]
 >
 > Form data model supports [OData version 4](https://www.odata.org/documentation/).
->For step-by-step guide to configure [!DNL Microsoft® Dynamics 365], online or on-premises, see [[!DNL Microsoft® Dynamics] OData Configuration](ms-dynamics-odata-configuration.md).
+>For step-by-step guide to configure [!DNL Microsoft&reg; Dynamics 365], online or on-premises, see [[!DNL Microsoft&reg; Dynamics] OData Configuration](ms-dynamics-odata-configuration.md).
 
 1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tap to select the folder where you want to create a cloud configuration.
 
@@ -277,7 +277,7 @@ An OData service is identified by its service root URL. To configure an OData se
 
    >[!NOTE]
    >
-   >You must select OAuth 2.0 authentication type to connect with [!DNL Microsoft® Dynamics] services using OData endpoint as the service root.
+   >You must select OAuth 2.0 authentication type to connect with [!DNL Microsoft&reg; Dynamics] services using OData endpoint as the service root.
 
 1. Tap **[!UICONTROL Create]** to create the cloud configuration for the OData service.
 
