@@ -65,7 +65,7 @@ The following diagram explains all the hidden, but powerful, request parameters 
 Sling is *content-centric*. This means that processing is focused on the content as each (HTTP) request is mapped onto content in the form of a JCR resource (a repository node):
 
 * The first target is the resource (JCR node) holding the content
-* Secondly, the representation, or script, is located from the resource properties in combination with certain parts of the request (e.g. selectors and/or the extension)
+* Secondly, the representation, or script, is located from the resource properties in combination with certain parts of the request (for example, selectors and/or the extension)
 
 ### RESTful Sling {#restful-sling}
 
@@ -117,8 +117,8 @@ With Sling, you specify which script renders a certain entity (by setting the `s
 
 The request is broken down and the necessary information extracted. The repository is searched for the requested resource (content node):
 
-* First Sling checks whether a node exists at the location specified in the request; e.g. `../content/corporate/jobs/developer.html`
-* If no node is found, the extension is dropped and the search repeated; e.g. `../content/corporate/jobs/developer`
+* First Sling checks whether a node exists at the location specified in the request; for example, `../content/corporate/jobs/developer.html`
+* If no node is found, the extension is dropped and the search repeated; for example, `../content/corporate/jobs/developer`
 * If no node is found then Sling will return the http code 404 (Not Found).
 
 Sling also allows things other than JCR nodes to be resources, but this is an advanced feature.
@@ -140,7 +140,7 @@ All Sling scripts are stored in subfolders of either `/apps` (mutable, user scri
 
 A few other points to note are:
 
-* When the method (GET, POST) is required, it will be specified in uppercase as according to the HTTP specification e.g. `jobs.POST.esp`
+* When the method (GET, POST) is required, it will be specified in uppercase as according to the HTTP specification for example, `jobs.POST.esp`
 * Various script engines are supported, but the common, recommended scripts are HTL and JavaScript.
 
 The list of script engines supported by the given instance of AEM are listed on the Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`).
@@ -272,7 +272,7 @@ This enables you to perform the following actions on any of the packages within 
 * Update
 * Uninstall
 * See the current status
-* Access more detailed information (e.g. symbolic name, version, location, etc) about the specific bundles
+* Access more detailed information (for example, symbolic name, version, location, etc) about the specific bundles
 
 See [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) for more information.
 

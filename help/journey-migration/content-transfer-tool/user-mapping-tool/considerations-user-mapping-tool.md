@@ -10,13 +10,15 @@ exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 
 The following specific cases will be logged: 
 
-1. If a user has no email address in the `profile/email` field of their *jcr* node the user or group in question will be migrated but not mapped.
+1. If a user has no email address in the `profile/email` field of their *jcr* node the user or group in question will be migrated but not mapped.  This will be the case even if the email address is used as a user name for logging in.
 
 1. If a given email is not found on the Adobe Identity Management System (IMS) system for the Organization ID used (or if the IMS ID cannot be retrieved for another reason) the user or group in question will be migrated but not mapped. 
 
 1. If the user is currently disabled, it is treated the same as if it were not disabled. It will be mapped and migrated as normal, and will remain disabled on the cloud instance.
 
 1. If a user exists on the target AEM Cloud Service instance with the same user name (rep:principalName) as one of the users on the source AEM instance the user or group in question will be not be migrated.
+
+1. If a user is migrated without first being mapped via User Mapping, on the target cloud system they will not be able to log in using their IMS ID.  They might be able to log in using the traditional AEM method, but keep in mind this is not normally what is wanted or expected.
 
 ## Additional Considerations {#additional-considerations}
 

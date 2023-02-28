@@ -299,7 +299,7 @@ Once you have entered Bulk Editing you can:
   * You can update the values in the fields available.
     * The new values will be applied to all selected pages when you select **Done**.
     * When the field is multi-value (for example Tags), you can either append a new value or remove a common value.
-  * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. Care should be taken when editing such fields to prevent data loss.
+  * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. 
 
 >[!NOTE]
 >

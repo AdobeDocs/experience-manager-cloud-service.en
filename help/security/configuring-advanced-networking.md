@@ -42,7 +42,7 @@ Flexible port egress is the recommended choice if you don't need VPN and don't n
 
 ### Configuration {#configuring-flexible-port-egress-provision}
 
-Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked, simply passing the value of `flexiblePortEgress` for the `kind` parameter and region. The endpoint responds with the `network_id`, as well as other information including the status. The full set of parameters and exact syntax should be referenced in the API docs.
+Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked, simply passing the value of `flexiblePortEgress` for the `kind` parameter and region. The endpoint responds with the `network_id`, as well as other information including the status. The full set of parameters and exact syntax, as well as important information like what parameters cannot be changed later, [can be referenced in the API docs.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 Once called, it typically takes approximately 15 minutes for the networking infrastructure to be provisioned. A call to the Cloud Manager's [network infrastructure GET endpoint](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) would show a status of "ready".
 
@@ -331,7 +331,7 @@ In order to validate that traffic is indeed outgoing on the expected dedicated I
 ## Legacy Dedicated Egress Address Customers {#legacy-dedicated-egress-address-customers}
 
 If you have been provisioned with a dedicated egress IP before 2021.09.30, your dedicated egress IP feature only supports HTTP and HTTPS ports.
-This includes HTTP/1.1, and HTTP/2 when encrypted.
+This includes HTTP/1.1, and HTTP/2 when encrypted. Additionally, one dedicated egress endpoint can talk to any target only over HTTP/HTTPS on ports 80/443 respectively.
 
 ## Virtual Private Network (VPN) {#vpn}
 

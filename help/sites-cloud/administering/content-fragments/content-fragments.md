@@ -1,6 +1,8 @@
 ---
 title: Working with Content Fragments
 description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to design, create, curate, and use page-independent content, ideal for page authoring and headless delivery.
+feature: Content Fragments
+role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 ---
 # Working with Content Fragments {#working-with-content-fragments}
@@ -54,8 +56,8 @@ This and the following pages cover the tasks for creating, configuring, maintain
 
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 
-* Physical channel; e.g. desktop, mobile.
-* Form of delivery in a physical channel; e.g. the "product detail page", "product category page" for desktop, or "mobile web", "mobile app" for mobile.
+* Physical channel; for example, desktop, mobile.
+* Form of delivery in a physical channel; for example, the "product detail page", "product category page" for desktop, or "mobile web", "mobile app" for mobile.
 
 However, you (probably) do not want to use exactly the same content for all channels - you need to optimize your content according to the specific channel.
 
@@ -73,7 +75,7 @@ These content fragments can then be assembled to provide experiences over a vari
 >[!NOTE]
 >
 >**Content Fragments** and **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** are different features within AEM:
->* **Content Fragments** are editorial content, that can be used to access structured data, including texts, numbers, and dates, amongst others. They are pure content, with definition and structure, but without additional visual design and/or layout.
+>* **Content Fragments** are editorial content, with definition and structure, but without additional visual design and/or layout. They can be used to access structured data, including texts, numbers, and dates, amongst others. 
 >* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.

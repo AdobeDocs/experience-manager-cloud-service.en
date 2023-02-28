@@ -17,7 +17,7 @@ AEM allows you to easily personalize your users' experiences. It also allows you
 
 The [Audiences](audiences.md) console is used to manage segments for ContextHub as well as audiences for your Adobe Target account. This documentation covers managing segments for ContextHub.
 
-To access your segments, in global navigation select **Navigation &gt; Personalization &gt; Audiences**.
+To access your segments, in global navigation select **Navigation &gt; Personalization &gt; Audiences**. Select your configuration (for example, WKND Site) to see your segments:
 
 ![Managing audiences](../assets/contexthub-segmentation-audiences.png)
 
@@ -80,7 +80,7 @@ The following references are available out-of-the-box to link directly to a scri
 
 To define your new segment:
 
-1. After [accessing the segments](#accessing-segments), [navigate to the folder](#organizing-segments) where you would like to create the segment, or leave it in the root.
+1. After [accessing the segments](#accessing-segments), [navigate to the folder](#organizing-segments) where you would like to create the segment.
 
 1. Tap or click the **Create** button and select **Create ContextHub Segment**.
 

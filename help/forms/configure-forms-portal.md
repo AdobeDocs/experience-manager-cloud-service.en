@@ -53,9 +53,7 @@ To import out-of-the-box Forms Portal components on AEM Forms as a Cloud Service
 
     Also, change `appTitle`, `appId`, and `groupId`, in the above command to reflect your environment.
 
-1. **In Prerelease, perform the following steps to use the Forms Portal components:**
-    * [Enable the prerelease channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en).
-    * Replace `core-forms-components-*` version with the desired prerelease version (for example, 1.0.4-PRERELEASE-20211223) in your `Cloud Manager/AEM Archetype` project by updating the `<core.forms.components.version>x.y.z</core.forms.components.version>` property in the top-level `pom.xml` of the Archetype project. 
+    After the project is ready, update the `<core.forms.components.version>x.y.z</core.forms.components.version>` property in the top-level `pom.xml` of the Archetype project to reflect the latest version of [core-forms-components](https://github.com/adobe/aem-core-forms-components) in your `AEM Archetype` project. 
  
 1. **Deploy the project to your local development environment:** You can use the following command to deploy to your local development environment
 

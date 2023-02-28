@@ -1,6 +1,8 @@
 ---
 title: Associated Content
-description: Understand how AEM's associated content feature provides the connection so that assets can be optionally used with the fragment when it is added to a content page, adding additional flexibility to both page authoring and headless content delivery.
+description: Understand how the associated content feature for Content Fragments provides the connection for assets to be (optionally) used with the fragment, adding additional flexibility to both page authoring and headless content delivery.
+feature: Content Fragments
+role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
 ---
 # Associated Content{#associated-content}
@@ -11,7 +13,7 @@ AEM's Associated content feature provides the connection so that assets can be o
 
 >[!NOTE]
 >
->There are various methods of adding [visual assets (e.g. images)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
+>There are various methods of adding [visual assets (for example, images)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
 To make the association you first need to [add your media asset(s) to a collection](/help/assets/manage-collections.md). After that is done you can:
 
