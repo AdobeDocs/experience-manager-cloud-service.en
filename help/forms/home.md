@@ -4,26 +4,14 @@ description: Discover AEM Forms and learn how it helps you produce business-read
 landing-page-description: Understand how to use forms in AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 ---
-# Introduction {#introduction}
+# Introduction to AEM Forms as a Cloud Service {#introduction}
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] offers a cloud-native, Platform as a Service (PaaS) solution for businesses to create, manage, publish, and update complex digital forms while integrating submitted data with back-end processes, business rules, and saving data in an external data store. 
 
 The service is always current, always available, and always learning. Organizations can use [!DNL AEM Forms] as a Cloud Service and get all these features in the cloud without requiring any local infrastructure. The service also frees organizations from complex upgrade cycles as it is always up to date with the latest features.
 
-Adobe [!DNL Experience Manager Forms as a Cloud Service] is a customer-centric solution to support every step of the journey:
+Adobe [!DNL Experience Manager Forms as a Cloud Service] is a customer-centric solution to support every step of the customer journey: 
 
-
-![](/help/forms/assets/customer-journey.png)
-
-
-
-
-
-## Ease access to forms to improve awareness
-
-In large enterprises, forms are often created once and reused by copying to a content management system. Keeping a large database of forms up to date and making them discoverable can be a considerable challenge. AEM provides a customizable Forms Portal that ensures that customers find and access forms they need across both web and mobile channels.
-
-You can customize appearance, branding, and logos of Forms Portal to meet specific requirements of your organization. 
 
 ## Digitize and streamline enrollment and onboarding experience 
 
@@ -34,12 +22,7 @@ The organization can use [!DNL AEM Forms] as a Cloud Service to create digital f
 ![Responsive Form Design](/help/forms/assets/data-collection.jpeg "Adaptive Forms experiences for multiple devices"){width="70%" align="center"}
 
 
-## Automate back-office workflows
-
-Use forms-centric workflows to automate the processing and routing of form data to various stakeholders, such as managers or departments, for review, approval, or further processing. 
-
-These workflows help your organization to minimize risk and maintain compliance by ensuring consistent and auditable processing of form data, automate manual tasks, provide role-based access control, and help comply with regulatory requirements. 
-
+In large enterprises, forms are often created once and reused by copying to a content management system. Keeping a large database of forms up to date and making them discoverable can be a considerable challenge. AEM provides a customizable Forms Portal that ensures that customers find and access forms they need across both web and mobile channels. You can customize appearance, branding, and logos of Forms Portal to meet specific requirements of your organization. 
 
 ## Deliver personalized communications
 
@@ -47,10 +30,16 @@ An important component of an efficient self-service digital experience is to com
 
 Using AEM Forms, business users can create compelling personalized user experiences by customizing document templates and incorporating information from back-end processes to the templates. A set of intuitive APIs helps business set rules that decide when to generate a communication based on an inquiry, or at regular interval in batches. 
 
+![Personalized invoice](/help/forms/assets/personalized-communication.jpeg "Personalized PDF invoices generated on demand"){width="70%" align="center"}
+
 Personalized documents, like, receipts, welcome kits, and statements can be easily generated. Organizations can drive traffic to personalized web portals resulting in enrollment or purchase of additional services.
 
 
-![Personalized invoice](/help/forms/assets/personalized-communication.jpeg "Personalized PDF invoices generated on demand"){width="70%" align="center"}
+## Automate back-office workflows
+
+Use forms-centric workflows to automate the processing and routing of form data to various stakeholders, such as managers or departments, for review, approval, or further processing. 
+
+These workflows help your organization to minimize risk and maintain compliance by ensuring consistent and auditable processing of form data, automate manual tasks, provide role-based access control, and help comply with regulatory requirements. 
 
 
 ## Optimize forms performance 
