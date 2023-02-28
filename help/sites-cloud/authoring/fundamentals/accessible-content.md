@@ -22,11 +22,11 @@ In addition, see:
 * [Accessibility in Assets](/help/assets/accessibility.md)
 * [Configuring the Rich Text Editor for producing accessible content](/help/implementing/developing/extending/rte-accessible-content.md)
 
-The guidelines are graded according to three conformance levels: Level A (lowest), Level AA and Level AAA (highest). Briefly, the levels are defined as follows:
+The guidelines are graded according to three conformance levels: Level A (lowest), Level AA, and Level AAA (highest). Briefly, the levels are defined as follows:
 
 * **Level A:** Your site reaches a basic, minimum level of accessibility. To meet this level, all Level A Success Criteria are satisfied.
 * **Level AA:** This is an ideal level of accessibility to strive for, in which your site reaches a foundational level of accessibility, so that it is accessible to most people in most situations using most technologies. To meet this level, all Level A and Level AA Success Criteria are satisfied.
-* **Level AAA:** Your site reaches a very high level of accessibility. To meet this level, all Level A, Level AA and Level AAA Success Criteria are satisfied.
+* **Level AAA:** Your site reaches a high level of accessibility. To meet this level, all Level A, Level AA, and Level AAA Success Criteria are satisfied.
 
 When creating your site, you should determine the overall level to which you would like your site to conform.
 
@@ -34,7 +34,7 @@ The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w
 
 >[!NOTE]
 >
->In this document we are using:
+>In this document, we are using the following:
 >
 >* The [short names for the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
 >* The [numbering used in the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) to aid cross-referencing with the WCAG website.
@@ -45,7 +45,7 @@ The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w
 
 ### Text Alternatives (1.1) {#text-alternatives}
 
-[Guideline 1.1 Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.](https://www.w3.org/TR/WCAG/#text-alternatives)
+[Guideline 1.1 Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols, or simpler language.](https://www.w3.org/TR/WCAG/#text-alternatives)
 
 ### Non-text Content (1.1.1) {#non-text-content}
 
@@ -55,7 +55,7 @@ The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w
 
 #### Purpose - Non-text Content (1.1.1) {#purpose-non-text-content}
 
-Information on a web page can be provided in many different non-text formats, such as pictures, videos, animations, charts and graphs. People who are blind or have severe visual impairments are unable to see non-text content, but they can access text content by having it read to them by a screen reader or presented in tactile form by a Braille display device. So, by providing text alternatives to content in graphical format, people who cannot see the graphical content can access an equivalent version of the information the content provides.
+Information on a web page can be provided in many different non-text formats, such as pictures, videos, animations, charts, and graphs. People who are blind or have severe visual impairments are unable to see non-text content, but they can access text content by having it read to them by a screen reader or presented in tactile form by a Braille display device. So, by providing text alternatives to content in graphical format, people who cannot see the graphical content can access an equivalent version of the information the content provides.
 
 A useful additional benefit is that text alternatives enable non-text content to be indexed by search engine technology.
 
@@ -67,17 +67,17 @@ For static graphics, the basic requirement is to provide an equivalent text alte
 >
 >Some out-of-the-box Core Components, such as **[Carousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
 >
->When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see Adding Support for Additional HTML Elements and Attributes).
+>When implementing versions of these for your AEM instance, your development team must configure such components to support the `alt` attribute so that authors can add it to the content (see Adding Support for Additional HTML Elements and Attributes).
 >
 >Some out-of-the-box Core Components, such as **[Carousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component.
 >
->When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>When implementing versions of these for your AEM instance, your development team must configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 AEM requires the **Alternative Text** field to be filled by default. If the image is purely decorative and alternative text would be unnecessary, the **Image is decorative** option can be checked.
 
 #### Creating Good Text Alternatives {#creating-good-text-alternatives}
 
-There are various forms of non-text content, so the value of the text alternative depends on the role the graphic plays in the web page. Some general rules of thumb to follow include:
+There are various forms of non-text content, so the value of the text alternative depends on the role the graphic plays in the web page. Some general rules you may find helpful include the following:
 
 * Text alternatives should be succinct yet clearly capture the essential information provided by the non-text content.
 * Overly long descriptions (over 100 characters) should be avoided. If a text alternative requires more detail:
@@ -97,12 +97,12 @@ Specific types of non-text content that require text alternatives might include:
 * Illustrative photos: These are images of people, objects or places. It is important to think about the role of the photo in the page, and generally recommended to describe the image content, as assistive technology will announce the element type (for example, `graphic` or `image`); it can increase clarity to use `screenshot` or `illustration` in the alternative text descriptions, but this depends on the context. Consistency is a big factor, a decision should be made for an entire authoring team and this applied throughout the user experience.
 * Icons: These are small pictograms (graphics) conveying specific information. They must be consistently used across a page and site. All instances of the icon on a page or site should have the same short and succinct text alternative, unless doing so results in unnecessary duplication of adjacent text.
 * Charts and graphs: These typically represent numerical data. So one option for providing a text alternative might be to include a brief summary of the main trends shown in the chart or graphic. If necessary, also provide a more detailed description in text using the **Description** field in the **Advanced** image properties tab. Additionally, you could provide the source data in tabular form elsewhere in the page or site.
-* Maps, diagrams, flowcharts: For graphics providing spatial data (for example, to support describing relationships between objects or a process), ensure that the key message is provided in text format, and that this text information is positioned near each associated data point. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image’s alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
+* Maps, diagrams, flowcharts: For graphics providing spatial data (for example, to support describing relationships between objects or a process), ensure that the key message is provided in text format, and that this text information is positioned near each associated data point. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image's alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
 * CAPTCHAs: A CAPTCHA is a *Completely Automated Public Turing test to tell Computers and Humans Apart*. It is a security check used on web pages to distinguish humans from malicious software, but which can cause accessibility barriers. They are images that require users to describe what they see in order to pass a security test. Providing a text alternative for the image is obviously not possible, so instead you will need to consider alternative non-graphic solutions. The W3C provides a number of suggestions, such as:Each of these approaches has their own merits and drawbacks.
   * Logic puzzles
   * The use of sound output instead of images
   * Limited use accounts and spam filters.
-* Background images: These are achieved using Cascading Style Sheets (CSS) rather than in HTML. This means it is not possible to specify an alternative text value. Therefore background images should not provide important textual information - if they do, this information must also be provided in the page’s text. However, it is important that an alternative background is displayed when the image cannot be displayed.
+* Background images: These are achieved using Cascading Style Sheets (CSS) rather than in HTML. This means it is not possible to specify an alternative text value. Therefore background images should not provide important textual information - if they do, this information must also be provided in the page's text. However, it is important that an alternative background is displayed when the image cannot be displayed.
 
 >[!NOTE]
 >
@@ -251,7 +251,7 @@ Follow the guidance provided for [Captions (Prerecorded)](#captions-prerecorded)
 
 Detailed instructions are beyond the scope of this document, but the following resources provide helpful information:
 
-* [WebAIM: Real Time Captioning](https://www.webaim.org/techniques/captions/realtime.php)
+* [WebAIM: Real Time Captioning](https://webaim.org/techniques/captions/realtime.php)
 
 * [AccessComputing project (University of Washington): Can captions be generated automatically using speech recognition?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
@@ -426,9 +426,9 @@ Follow the guidelines under [How to Meet Success Criteria 1.3.2](https://www.w3.
 
 #### Purpose - Sensory Characteristics (1.3.3) {#purpose-sensory-characteristics}
 
-Designers often focus on visual design features, such as color, shape, text style, or a piece of content’s absolute or relative position when presenting information. These can be very powerful design techniques in conveying information (and can improve the overall accessibility for sighted users with cognitive accessibility needs), but people who are blind or visually impaired may be unable to access information that requires visual identification of attributes such as position, color or shape.
+Designers often focus on visual design features, such as color, shape, text style, or a piece of content's absolute or relative position when presenting information. These can be very powerful design techniques in conveying information (and can improve the overall accessibility for sighted users with cognitive accessibility needs), but people who are blind or visually impaired may be unable to access information that requires visual identification of attributes such as position, color or shape.
 
-Similarly, information that requires distinguishing between different sounds (e.g. male or female spoken content) will present accessibility barriers to people with hearing impairment, if it is not reflected in any text alternative for the audio content.
+Similarly, information that requires distinguishing between different sounds (for example, male or female spoken content) will present accessibility barriers to people with hearing impairment, if it is not reflected in any text alternative for the audio content.
 
 >[!NOTE]
 >
@@ -439,11 +439,11 @@ Similarly, information that requires distinguishing between different sounds (e.
 Make sure that any information that relies on visual characteristics of page content is also presented in an alternative format.
 
 * Do not rely on visual position to give information. For example, if you want to refer users to a menu on the right hand side of the page for access to further information, do not refer to *the menu on the right*; instead, name the menu (for example via a heading) and refer to that name in text.
-* Do not rely on text styling (e.g. bold or italicized text) as the only way to convey information.
+* Do not rely on text styling (for example, bold or italicized text) as the only way to convey information.
 
 >[!NOTE]
 >
->The use of descriptive terms will be acceptable if they’re understood to have meaning in a non-visual context. For example, using *above* and *below* would generally be acceptable, as they respectively imply content before and after a particular item of content; this would still make sense when the content is spoken aloud.
+>The use of descriptive terms will be acceptable if they're understood to have meaning in a non-visual context. For example, using *above* and *below* would generally be acceptable, as they respectively imply content before and after a particular item of content; this would still make sense when the content is spoken aloud.
 
 #### More information - Sensory Characteristics (1.3.3) {#more-information-sensory-characteristics}
 
@@ -480,7 +480,7 @@ Wherever color is used to convey information, make sure that the information is 
 
 For example, make sure that information provided by color is also provided explicitly in text.
 
-If color is used as a cue to provide information, you should provide an additional visual cue, such as changing the style (e.g. bold, italics) or font. This helps people with low vision or who have color vision deficiency to identify the information. However, it cannot be relied on entirely, as it will not help people who cannot see the page at all. Therefore it is (sometimes) useful to provide hidden text or to use programmatic solutions, such as the [Accessible Rich Internet Applications (ARIA) suite of web standards](https://www.w3.org/WAI/standards-guidelines/aria/), to convey this information to non-sighted users.
+If color is used as a cue to provide information, you should provide an additional visual cue, such as changing the style (for example, bold, italics) or font. This helps people with low vision or who have color vision deficiency to identify the information. However, it cannot be relied on entirely, as it will not help people who cannot see the page at all. Therefore it is (sometimes) useful to provide hidden text or to use programmatic solutions, such as the [Accessible Rich Internet Applications (ARIA) suite of web standards](https://www.w3.org/WAI/standards-guidelines/aria/), to convey this information to non-sighted users.
 
 #### More Information - Use of Color (1.4.1) {#more-information-use-of-color}
 
@@ -552,15 +552,15 @@ Make sure that the text contrasts sufficiently with its background. Contrast rat
 
 >[!NOTE]
 >
->The following sites can help with conversions to other units:
+>The following tools can help you convert to other units:
 >
->* [Px to Em Calculater - Omni](https://www.omnicalculator.com/conversion/px-to-em)
->* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: PX to EM conversion made simple](http://pxtoem.com)
+>* [Px to Em Calculator](https://www.omnicalculator.com/conversion/px-to-em)
+>* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/)
+>* [Pixel to EM Converter](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
-To check contrast ratios, use a color contrast tool, such as the [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) or the [WebAIM color contrast checker](https://www.webaim.org/resources/contrastchecker/). These tools allow you to check pairs of colors and report on any contrast problems.
+To check contrast ratios, use a color contrast tool, such as the [Paciello Group Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) or the [WebAIM color contrast checker](https://webaim.org/resources/contrastchecker/). These tools allow you to check pairs of colors and report on any contrast problems.
 
-Alternatively, if you are less concerned about specifying the appearance of your page, you can choose not to specify background and foreground text colors. No contrast checking is required, as the user’s browser will determine the colors of the text and background.
+Alternatively, if you are less concerned about specifying the appearance of your page, you can choose not to specify background and foreground text colors. No contrast checking is required, as the user's browser will determine the colors of the text and background.
 
 If it is not possible to meet the recommended contrast levels, you will need to provide a link to an alternative, equivalent version of the page (which has no color contrast issues), or allow the user to adjust the contrast of the page color scheme to their own requirements.
 
@@ -602,7 +602,7 @@ As well as following the guidelines under [How to Meet Success Criteria 1.4.4](h
 
 #### Purpose - Images of Text (1.4.5) {#purpose-images-of-text}
 
-Images of text are often used when a particular style of text is preferred; for example, a logotype or if text has been generated from another source (e.g. a scan of a paper document). However, compared to text presented in HTML and styled using CSS, images of text lack the flexibility to change size or appearance that might be necessary for people with visual impairments or reading difficulties.
+Images of text are often used when a particular style of text is preferred; for example, a logotype or if text has been generated from another source (for example, a scan of a paper document). However, compared to text presented in HTML and styled using CSS, images of text lack the flexibility to change size or appearance that might be necessary for people with visual impairments or reading difficulties.
 
 #### How to Meet - Images of Text (1.4.5) {#how-to-meet-images-of-text}
 
@@ -848,14 +848,14 @@ At the time of writing, there are some issues surrounding the use of title attri
 
 So, while the title attribute can be used to provide extra context to a link, be aware of its limitations and do not use it as an alternative to appropriate link text.
 
-Where the link is made up of an image, make sure that the alternative text for the image describes the destination of the link. For example, if an image of a bookshelf is set as a link to a person’s publications, the alternative text should read **John Smith’s publications** and not **Bookshelf**.
+Where the link is made up of an image, make sure that the alternative text for the image describes the destination of the link. For example, if an image of a bookshelf is set as a link to a person's publications, the alternative text should read **John Smith's publications** and not **Bookshelf**.
 
 Alternatively, if the link anchor contains text that describes the purpose of the link in addition to the image element (and thus the text appears alongside the image), use an empty alt attribute for the image:
 
 ```xml
 <a href="publications.html">
 <img src = "bookshelf.jpg" alt = "" />
-John Smith’s publications
+John Smith's publications
 </a>
 ```
 
@@ -936,7 +936,7 @@ The purpose of this success criterion is to help a person know which element has
 
 It must be possible for a person to know which element among multiple elements has the keyboard focus. If there is only one keyboard actionable control on the screen, the success criterion would be met because the visual design presents only one keyboard actionable item.
 
-Where the success criterion says “mode of operation”, this is to account for platforms which may not always show a focus indicator. In most cases there is only one mode of operation so this success criteria applies.
+Where the success criterion says "mode of operation", this is to account for platforms which may not always show a focus indicator. In most cases there is only one mode of operation so this success criteria applies.
 
 #### How to Meet - Focus Visible (2.4.7) {#how-to-meet-focus-visible}
  
@@ -970,10 +970,10 @@ The purpose of this success criterion is to make sure that text and other lingui
 To meet this success criterion, the default language of a web page can be identified using the `lang` attribute within the `<html>` element at the top of the page. For example:
 
 * If a page is written in English, the `<html>` element should read:
-  `<html lang = “en”>`
+  `<html lang = "en">`
 
 * Whereas a page to be rendered in Spanish should adopt the following standard:
-  `<html lang = “es”>`
+  `<html lang = "es">`
 
 In AEM, the default language of your page is set when creating the page, but may also be changed when editing [Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md).
 
@@ -1005,7 +1005,7 @@ Pages applying this success criterion allow:
 
 #### How to Meet - Language of Parts (3.1.2) {#how-to-meet-language-of-parts}
 
-Tthe `lang` attribute can be used to identify changes in the language of content. For example, a quotation in German (ISO 639-1 code “de”) can be shown as follows:
+Tthe `lang` attribute can be used to identify changes in the language of content. For example, a quotation in German (ISO 639-1 code "de") can be shown as follows:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
@@ -1020,7 +1020,7 @@ Tthe `lang` attribute can be used to identify changes in the language of content
 Similarly, the browser can render an uncommon loan word or phrase correctly if the `span` element is used as follows:
 
 ```xml
-<p>The only French phrase I know is <span lang = “fr”>je ne sais quoi</code>.</p>
+<p>The only French phrase I know is <span lang = "fr">je ne sais quoi</code>.</p>
 ```
 
 >[!NOTE]
@@ -1054,7 +1054,7 @@ The intent of this Success Criterion is to ensure that functionality is predicta
 * new windows launched when a component receives focus;
 * focus is changed to another component when that component receives focus;
 
-Focus may be moved to a control either via the keyboard (e.g. tabbing to a control) or the mouse (e.g. clicking on a text field). Moving the mouse over a control does not move the focus unless scripting implements this behavior. Note that for some types of controls, clicking on a control may also activate the control (e.g. button), which may, in turn, initiate a change in context.
+Focus may be moved to a control either via the keyboard (for example, tabbing to a control) or the mouse (for example, clicking on a text field). Moving the mouse over a control does not move the focus unless scripting implements this behavior. Note that for some types of controls, clicking on a control may also activate the control (for example, button), which may, in turn, initiate a change in context.
 
 #### How to Meet - On Focus (3.2.1) {#how-to-meet-on-focus}
  
@@ -1203,7 +1203,7 @@ The positioning of labels is also important as it helps them to locate appropria
 
 * Checkboxes or radio buttons:
   Labels are positioned immediately to the right of the field.
-* All other form components (e.g. text boxes, combo boxes):
+* All other form components (for example, text boxes, combo boxes):
   Labels are positioned either immediately above or immediately to the left of the field.
 
 In simple forms with very limited functionality, appropriately labelling a `Submit` button can act as a label for the adjacent field (for example `Search`). This is useful in situations when finding space for the label text might be difficult.

@@ -32,13 +32,13 @@ Before using the AEM Developer Tools, you need to:
 
 ## How to Install the AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Once you have fulfilled the [requirements](#requirements) above, you can install the plugin as follows:
+When you have fulfilled the [requirements](#requirements) above, you can install the plugin as follows:
 
-1. Open the [AEM Developer Tools Web Site.](https://eclipse.adobe.com/aem/dev-tools/)
+1. Open the [AEM Developer Tools Web Site](https://eclipse.adobe.com/aem/dev-tools/). <!-- RB: This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. Copy the **Installation Link**.
 
-   Note that alternatively you can download an archive instead of using the installation link. This allows offline installation but you will miss automatic update notifications this way.
+   Note that alternatively you can download an archive instead of using the installation link. This method allows offline installation but you do not receive miss automatic update notifications this way.
 
 1. In Eclipse, open the **Help** menu.
 1. Click **Install New Software**.
@@ -190,7 +190,7 @@ Once done, you should have your package running on your instance, and on save, a
 
 If you wish to re-build a package out of your project, right-click on the `PROJECT.ui.apps` or `PROJECT.ui.content` and choose **Run As** -&gt; **Maven Install**.
 
-You now have a target folder that has been created with your package inside (called e.g. `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+You now have a target folder created with your package inside (called, for example `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Troubleshooting {#troubleshooting}
 
@@ -210,7 +210,7 @@ Eclipse downloads the required dependencies. This may take a moment.
 
 The official Apache Sling IDE tooling for Eclipse website provides you with useful information:
 
-* The [**Apache Sling IDE tooling for Eclipse** User Guide](https://sling.apache.org/documentation/development/ide-tooling.html), this documentation will guide you through the overall concepts, server integration and deployment capabilities supported by the AEM Development Tools.
+* The [**Apache Sling IDE tooling for Eclipse** User Guide](https://sling.apache.org/documentation/development/ide-tooling.html), this documentation guides you through the overall concepts, server integration and deployment capabilities supported by the AEM Development Tools.
 * The [Troubleshooting section](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * The [Known issues list](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 

@@ -1,6 +1,8 @@
 ---
 title: Variations - Authoring Fragment Content
 description: Understand how variations allow you to author content for the fragment, then create variations of that content according to purpose. This provides added flexibility for both headless delivery and page authoring.
+feature: Content Fragments
+role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
 ---
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
@@ -304,7 +306,7 @@ They will be added to the paragraph sequence of the fragment without any formatt
 >
 >These assets cannot be moved or deleted on a referencing page, this must be done in the fragment editor.
 >
->However, formatting of the asset (e.g. size) must be done in the [page editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
+>However, formatting of the asset (for example, size) must be done in the [page editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
 
 >[!NOTE]
 >
@@ -344,7 +346,7 @@ They will be added as a reference, in your current location in your fragment.
 >
 >These assets cannot be moved or deleted on a referencing page, this must be done in the fragment editor.
 >
->However, formatting of the asset (e.g. size) must be done in the [page editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
+>However, formatting of the asset (for example, size) must be done in the [page editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
 
 >[!NOTE]
 >
@@ -371,6 +373,12 @@ They will be added as a reference, in your current location in your fragment.
    >* **Markdown**: the reference will remain.
 
 ## Managing Variations {#managing-variations}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_contentfragments_variations"
+>title="Variations - Authoring Fragment Content"
+>abstract="Learn how make variations of content for use with specific channels."
+>additional-url="https://video.tv.adobe.com/v/333295" text="Content Fragment Variations"
 
 ### Creating a Variation {#creating-a-variation}
 

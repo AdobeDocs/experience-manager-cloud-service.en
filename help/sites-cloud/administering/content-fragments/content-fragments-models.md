@@ -1,6 +1,8 @@
 ---
 title: Content Fragment Models
 description: Learn how Content Fragment Models serve as a foundation for your Content Fragments in AEM. These allow you to create structured content for use in headless delivery, or page authoring.
+feature: Content Fragments
+role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
 ---
 # Content Fragment Models {#content-fragment-models}
@@ -11,7 +13,7 @@ To use Content Fragment Models you:
 
 1. [Enable Content Fragment Model functionality for your instance](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
 1. [Create](#creating-a-content-fragment-model), and [configure](#defining-your-content-fragment-model), your Content Fragment Models
-1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments for use when creating Content Fragments
+1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments 
 1. [Allow your Content Fragment Models on the required Assets folders](#allowing-content-fragment-models-assets-folder) by configuring **Policies**.
 
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}

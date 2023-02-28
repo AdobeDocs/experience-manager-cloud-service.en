@@ -1,6 +1,7 @@
 ---
 title: Configure Dynamic Media Cloud Service
 description: Learn how to configure Dynamic Media in Adobe Experience Manager as a Cloud Service.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 ---
@@ -85,11 +86,11 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | Property | Description |
    |---|---|
-   | Company | The name of the Dynamic Media account. It is possible that you have multiple Dynamic Media accounts for different subbrands, divisions, or staging/production environments.<br>See also [Configure a Dynamic Media company alias account](/help/assets/dynamic-media/dm-alias-account.md). |
+   | Company | The name of the Dynamic Media account.<br>**Important**: Only one Dynamic Media Configuration in Cloud Services is supported on an instance of Experience Manager; do not add more than one configuration. Multiple Dynamic Media Configurations on an Experience Manager instance is _not_ supported or recommended by Adobe.<!-- CQDOC-19579 and CQDOC-19612 --><br>See also [Configure a Dynamic Media company alias account](/help/assets/dynamic-media/dm-alias-account.md). |
    | Company Root Folder Path | Your company's root folder path. |
    | Publishing Assets | You can choose from the following three options:<br>**[!UICONTROL Immediately]** - When assets are uploaded, the system ingests the assets and provides the URL/Embed instantly. There is no user intervention necessary to publish assets.<br>**[!UICONTROL On Activation]** - You must explicitly publish the asset first before a URL/Embed link is provided.<br>**[!UICONTROL Selective Publish]** - Assets are auto published for secure preview only. They can also be explicitly published to Experience Manager as a Cloud Service without publishing to DMS7 for delivery in the public domain. In the future, this option intends to publish assets to Experience Manager as a Cloud Service and publish assets to Dynamic Media, mutually exclusive of each other. That is, you can publish assets to DMS7 so you can use features such a Smart Crop or dynamic renditions. Or, you can publish assets exclusively in Experience Manager as a Cloud Service for previewing; those same assets are not published in DMS7 for delivery in the public domain. |
    | Secure Preview Server | Lets you specify the URL path to your secure renditions preview server. That is, after renditions are generated, Experience Manager as a Cloud Service can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the Experience Manager as a Cloud Service instance).<br>Unless you have a special arrangement to use your own company's server or a special server, Adobe recommends that you leave this setting as specified. |
-   | Sync all content | Selected by default. Deselect this option if you want to selectively include or exclude assets from the sync to Dynamic Media. Deselecting this option lets you can choose from the following two Dynamic Media sync modes:<br>**[!UICONTROL Dynamic Media sync mode]**<br>**[!UICONTROL Enable by default]** - The configuration is applied to all folders by default unless you mark a folder specifically for exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabled by default]** - The configuration is not applied to any folder until you explicitly mark a selected folder for sync to Dynamic Media.<br>To mark a selected folder for sync to Dynamic Media, select an asset folder, then in the toolbar, select **[!UICONTROL Properties]**. On the **[!UICONTROL Details]** tab, in the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options. When you are done, select **[!UICONTROL Save]**. *Remember: these three options are not available if you selected **Sync all content** earlier.* See also [Work with Selective Publish at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Inherited]** - No explicit sync value on the folder. Instead, the folder inherits the sync value from one of its ancestor folders or the default mode in the cloud configuration. The detailed status for inherited shows by way of a tooltip.<br>**[!UICONTROL Enable for subfolders]** - Include everything in this subtree for sync to Dynamic Media. The folder-specific settings override the default mode in the cloud configuration.<br>**[!UICONTROL Disabled for subfolders]** - Exclude everything in this subtree from syncing to Dynamic Media. |
+   | Sync all content | Selected by default. Deselect this option if you want to selectively include or exclude assets from the sync to Dynamic Media. Deselecting this option lets you can choose from the following two Dynamic Media sync modes:<br>**[!UICONTROL Dynamic Media sync mode]**<br>**[!UICONTROL Enable by default]** - The configuration is applied to all folders by default unless you mark a folder specifically for exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabled by default]** - The configuration is not applied to any folder until you explicitly mark a selected folder for sync to Dynamic Media.<br>To mark a selected folder for sync to Dynamic Media, select an asset folder, then in the toolbar, select **[!UICONTROL Properties]**. On the **[!UICONTROL Details]** tab, in the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options. When you are done, select **[!UICONTROL Save]**. _Remember: these three options are not available if you selected **Sync all content** earlier._ See also [Work with Selective Publish at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Inherited]** - No explicit sync value on the folder. Instead, the folder inherits the sync value from one of its ancestor folders or the default mode in the cloud configuration. The detailed status for inherited shows by way of a tooltip.<br>**[!UICONTROL Enable for subfolders]** - Include everything in this subtree for sync to Dynamic Media. The folder-specific settings override the default mode in the cloud configuration.<br>**[!UICONTROL Disabled for subfolders]** - Exclude everything in this subtree from syncing to Dynamic Media. |
 
    >[!NOTE]
    >
@@ -122,7 +123,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 You are now finished with the basic configuration; you are ready to use Dynamic Media.
 
-If you want to further customize your configuration, you can optionally complete any of the tasks under [Configure Advanced Settings in Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+If you want to further customize your configuration, such as enabling ACL (Access Control List) permissions, you can optionally complete any of the tasks under [Configure Advanced Settings in Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 ### Troubleshoot a new Dynamic Media configuration {#troubleshoot-dm-config}
 
@@ -178,8 +179,9 @@ The changed password is saved when you select **[!UICONTROL Save]** in the upper
 
 ## (Optional) Configure Advanced Settings in Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-To further customize the configuration and setup of Dynamic Media, or optimize its performance, you can complete one or more of the following *optional* tasks:
+To further customize the configuration and setup of Dynamic Media, or optimize its performance, you can complete one or more of the following _optional_ tasks:
 
+* [(Optional) Enable ACL permissions in Dynamic Media](#optional-enable-acl)
 * [(Optional) Setup and configuration of Dynamic Media settings](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [(Optional) Tune the performance of Dynamic Media](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
@@ -188,6 +190,33 @@ To further customize the configuration and setup of Dynamic Media, or optimize i
 * [(Optional) Filtering assets for replication](#optional-filtering-assets-for-replication)
 
 -->
+
+### (Optional) Enable Access Control List permissions in Dynamic Media {#optional-enable-acl}
+
+When you run Dynamic Media on AEM, it currently forwards `/is/image` requests to Secure Preview Image Serving without checking ACL (Access Control List) permissions on the PlatformServerServlet. You can, however, _enable_ ACL permissions. Doing so forwards the authorized `/is/image` requests. If a user is not authorized to access the asset, a "403 - Forbidden" error is displayed.
+
+**To enable ACL permissions in Dynamic Media:**
+
+1. From Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+
+   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+
+1. A new browser tab opens to the **[!UICONTROL Adobe Experience Manager Web Console Configuration]** page.
+
+   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
+
+1. On the page, scroll to the name _Adobe CQ Scene7 PlatformServer_.
+
+1. To the right of the name, select the pencil icon (**[!UICONTROL Edit the configuration values]**).
+
+1. On the **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** page, select the check box for the following two settings:
+
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` &ndash; When enabled, this setting caches permission results for two minutes (default) to save.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` &ndash; When enabled, this setting validates a user's access while they preview assets by way of Dynamic Media Image Server.
+
+   ![Enable Access Control List settings in Dynamic Media - Scene7 mode](/help/assets/dynamic-media/assets/acl.png)
+
+1. Near the lower-right corner of the page, select **[!UICONTROL Save]**.
 
 ### (Optional) Setup and configuration of Dynamic Media settings {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
@@ -255,7 +284,7 @@ You can define which asset types are processed by Dynamic Media and customize ad
 
 * Convert an Adobe PDF to an eCatalog asset.
 * Convert an Adobe Photoshop Document (.PSD) to a banner template asset for personalization.
-* Rasterize an Adobe Illustrator file (.AI) or an Adobe Photoshop Encapsulated PostScript® file (.EPS).
+* Rasterize an Adobe Illustrator file (.AI) or an Adobe Photoshop Encapsulated PostScript&reg; file (.EPS).
 * [Video Profiles](/help/assets/dynamic-media/video-profiles.md) and [Image Profiles](/help/assets/dynamic-media/image-profiles.md) can be used to define processing of videos and images, respectively.
 
 See [Upload assets](/help/assets/add-assets.md).
@@ -358,12 +387,12 @@ In case you do want to turn on template creation, use the following parameters: 
 
 <!-- THIS PARAGRAPH WAS REPLACED WITH THE TWO PARAGRAPHS DIRECTLY ABOVE BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
-Adobe recommends using the following "tuned" job parameters for PDF, PostScript®, and PSD files:
+Adobe recommends using the following "tuned" job parameters for PDF, PostScript&reg;, and PSD files:
 
 | File type | Recommended job parameters |
 | ---| ---|
 | PDF | `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
-| PostScript® | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
+| PostScript&reg; | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=AppendName&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
 <!-- CQDOC-17657 for PSD entry in table above -->

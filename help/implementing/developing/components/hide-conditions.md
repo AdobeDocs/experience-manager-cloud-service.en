@@ -37,7 +37,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 When defining your hide expression keep in mind:
 
-* To be valid, the scope in which property is found should be expressed (e.g. `cqDesign.myProperty`).
+* To be valid, the scope in which property is found should be expressed (for example, `cqDesign.myProperty`).
 * Values are read only.
 * Functions (if required) should be limited to a given set provided by the service.
 

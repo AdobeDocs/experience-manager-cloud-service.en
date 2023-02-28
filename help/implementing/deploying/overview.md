@@ -8,7 +8,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 
 ## Introduction {#introduction}
 
-The fundamentals of code development are similar in AEM as a Cloud Service compared to the AEM On Premise and Managed Services solutions. Developers write code and test it locally, which is then pushed to remote AEM as a Cloud Service environments. Cloud Manager, which was an optional content delivery tool for Managed Services, is required. This is now the sole mechanism for deploying code to AEM as a Cloud Service environments.
+The fundamentals of code development are similar in AEM as a Cloud Service compared to the AEM On Premise and Managed Services solutions. Developers write code and test it locally, which is then pushed to remote AEM as a Cloud Service environments. Cloud Manager, which was an optional content delivery tool for Managed Services, is required. This is now the sole mechanism for deploying code to AEM as a Cloud Service dev, stage, and production environments. For quick feature validation and debugging prior to deploying those aforementioned environments, code can be synced from a local environment to a [Rapid Development Environment](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 The update of the [AEM version](/help/implementing/deploying/aem-version-updates.md) is always a separate deployment event from pushing [custom code](#customer-releases). Viewed in another way, custom code releases should be tested against the AEM version that is on production since that is what it will be deployed on the top. AEM version updates that happen after that, which will be frequent and are automatically applied. They are intended to be backward compatible with the customer code already deployed.
 
@@ -61,7 +61,7 @@ As application changes due to the Blue-Green deployment pattern are enabled by a
 
 For customers with existing code bases, it is critical to go through the repository restructuring exercise described in AEM documentation to ensure that content formerly under the /etc is moved to the right location.
 
-Some additional restrictions apply for these code packages, for example [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html) are not supported.
+Some additional restrictions apply for these code packages, for example [install hooks](https://jackrabbit.apache.org/filevault/installhooks.html) are not supported.
 
 ## OSGI Configuration {#osgi-configuration}
 
@@ -98,7 +98,7 @@ After switchover to new version of application:
   * Folders (add, modify, remove)
   * Editable templates (add, modify, remove)
   * Context Aware configuration (anything under `/conf`) (add, modify, remove)
-  * Scripts (packages can trigger Install hooks at various stages of the install process of package installation. See the [Jackrabbit filevault documentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. Note that AEM CS currently uses Filevault version 3.4.0, which limits install hooks to admin users, system users,and member of the administrators group)).
+  * Scripts (packages can trigger Install hooks at various stages of the install process of package installation. <!-- MISDIRECTED REQUEST, 421 ERROR, CAN'T FIND CORRECT PATH See the [Jackrabbit filevault documentation](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. --> Note that AEM CS currently uses Filevault version 3.4.0, which limits install hooks to admin users, system users,and member of the administrators group)).
 
 It is possible to limit mutable content installation to author or publish by embedding packages in an install.author or install.publish folder under `/apps`. Restructuring to reflect this separation was done in AEM 6.5 and details around recommended project restructuring can be found in the [AEM 6.5 documentation.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
@@ -164,7 +164,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Package Manager - Migrating Mutable Content Packages"
->abstract="Explore usage of package manager for use cases where a content package should be installed as “one off” which includes importing specific content from production on to staging in order to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments and more."
+>abstract="Explore usage of package manager for use cases where a content package should be installed as 'one off' which includes importing specific content from production on to staging in order to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments and more."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Content Transfer Tool"
 
 There are use cases where a content package should be installed as a "one off". For example importing specific content from production on to staging in order to debug a production issue. For these scenarios, [Package Manager](/help/implementing/developing/tools/package-manager.md) can be used in AEM as a Cloud Service environments.
@@ -273,29 +273,38 @@ If changes to indexes are made, it is important that the Blue version continues 
 
 If a failure is reported or detected after the deployment, it is possible that a rollback to the Blue version will be required. It would be wise to ensure that the Blue code is compatible with any new structures created by the Green version since the new structures (any mutable content content) will not be rolled back. If the old code is not compatible, fixes will need to be applied in subsequent customer releases.
 
+## Rapid Development Environments (RDE) {#rde}
+
+[Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md) (or RDEs for short) allow developers to quickly deploy and review changes, minimizing the amount of time needed to test features that are already proven to work on a local development environment.
+
+Unlike regular dev environments, which deploy code via Cloud Manager pipeline, developers use command line tools to sync code from a local development environment to the RDE. Once the changes have been successfully tested in an RDE, they should be deployed to a regular Cloud Development environment through the Cloud Manager pipeline, which will put the code through the appropriate quality gates. 
+
 ## Runmodes {#runmodes}
 
-In existing AEM solutions, customers have the option of running instances with arbitrary run modes and apply OSGI configuration or install OSGI bundles to those specific instances. Run modes that are defined typically include the *service* (author and publish) and the environment (dev, stage, prod).
+In existing AEM solutions, customers have the option of running instances with arbitrary run modes and apply OSGI configuration or install OSGI bundles to those specific instances. Run modes that are defined typically include the *service* (author and publish) and the environment (rde, dev, stage, prod).
 
 AEM as a Cloud Service on the other hand is more opinionated about which run modes are available and how OSGI bundles and OSGI configuration can be mapped to them:
 
-* OSGI configuration run modes must reference dev, stage, prod for the environment or author, publish for the service. A combination of `<service>.<environment_type>` is being supported whereas these have to be used in this particular order (for example `author.dev` or `publish.prod`). The OSGI tokens should be referenced directly from code rather than using the `getRunModes` method, which will no longer include the `environment_type` at runtime. For more information, see [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+* OSGI configuration run modes must reference RDE, dev, stage, prod for the environment or author, publish for the service. A combination of `<service>.<environment_type>` is being supported whereas these have to be used in this particular order (for example `author.dev` or `publish.prod`). The OSGI tokens should be referenced directly from code rather than using the `getRunModes` method, which will no longer include the `environment_type` at runtime. For more information, see [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * OSGI bundles run modes are limited to the service (author, publish). Per-run mode OSGI bundles should be installed in the content package under either `install/author` or `install/publish`.
 
 Like the existing AEM solutions, there is no way to use run modes to install just content for specific environments or services. If it was desired to seed a dev environment with data or HTML that isn't on stage or production, package manager could be used.
 
 The supported runmode configurations are:
 
-* **config** (*The default, applies to all AEM Services*)
+* **config** (*The default, applies to all AEM services*)
 * **config.author** (*Applies to all AEM Author service*)
 * **config.author.dev** (*Applies to AEM Dev Author service*)
+* **config.author.rde** (*Applies to AEM RDE Author service*)
 * **config.author.stage** (*Applies to AEM Staging Author service*)
 * **config.author.prod** (*Applies to AEM Production Author service*)
 * **config.publish** (*Applies to AEM Publish service*)
 * **config.publish.dev** (*Applies to AEM Dev Publish service*)
+* **config.publish.rde** (*Applies to AEM RDE Publish service*)
 * **config.publish.stage** (*Applies to AEM Staging Publish service*)
 * **config.publish.prod** (*Applies to AEM Production Publish service*) 
 * **config.dev** (*Applies to AEM Dev services*)
+* **config.rde** (*Applies to RDE services*)
 * **config.stage** (*Applies to AEM Staging services*)
 * **config.prod** (*Applies to AEM Production services*)
 

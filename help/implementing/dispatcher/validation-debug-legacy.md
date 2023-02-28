@@ -48,6 +48,7 @@ The structure of the project's Dispatcher subfolder (in legacy mode) is as follo
     ├── cache
     │   ├── default_invalidate.any
     │   ├── default_rules.any
+    │   ├── marketing_query_parameters.any
     │   └── rules.any
     ├── clientheaders
     │   ├── clientheaders.any
@@ -270,12 +271,12 @@ There are four sections in your farm configuration where you're allowed to inclu
 | `/rules`         | `../cache/rules.any`                 |
 | `/virtualhosts`  | `../virtualhosts/virtualhosts.any`   |
 
-Alternatively, you can include the **default** version of those files, whose names are prepended with the word `default_`, e.g. `../filters/default_filters.any`.
+Alternatively, you can include the **default** version of those files, whose names are prepended with the word `default_`, for example, `../filters/default_filters.any`.
 
 **include statement at (...), outside any known location: ...**
 
 Apart from the six sections mentioned in the paragraphs above, you are not allowed
-to use the `$include` statement, e.g. the following would generate this error:
+to use the `$include` statement, for example, the following would generate this error:
 
 ```
 /invalidate {
@@ -290,7 +291,7 @@ This error is generated when you don't specify an include for `/renders` and `/a
 
 **filter must not use glob pattern to allow requests**
 
-It is not secure to allow requests with a `/glob` style rule, which is matched against the complete request line, e.g.
+It is not secure to allow requests with a `/glob` style rule, which is matched against the complete request line, for example,
 
 ```
 
@@ -311,6 +312,10 @@ The included files need to be named as follows:
 |-----------|---------------------------------|
 | Rewrites  | `conf.d/rewrites/rewrite.rules` |
 | Variables | `conf.d/variables/custom.vars`  |
+
+>[!TIP]
+>
+>To be able to include more files in much less limited way, you might want to switch to flexible dispatcher config mode. Please see the document [Validating and Debugging using Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md) for more details on flexible mode.
 
 Alternatively, you can include the **default** version of the rewrite rules, whose name is `conf.d/rewrites/default_rewrite.rules`.
 Note, that there is no default version of the variables files.

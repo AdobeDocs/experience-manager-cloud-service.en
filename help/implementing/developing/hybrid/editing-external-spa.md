@@ -182,7 +182,7 @@ The `AEMText` component is now authorable on AEM.
 ### AEM Authorable Pages {#aem-authorable-pages}
 
 1. Identify a page to be added for authoring in the SPA. This example uses `/content/wknd-spa-react/us/en/home.html`.
-1. Create a new file (e.g. `Page.js`) for the authorable Page Component. Here, we can reuse the Page Component provided in `@adobe/cq-react-editable-components`.
+1. Create a new file (for example, `Page.js`) for the authorable Page Component. Here, we can reuse the Page Component provided in `@adobe/cq-react-editable-components`.
 1. Repeat step four in the section [AEM authorable leaf components.](#authorable-leaf-components) Use the wrapper function `withMappable` on the component.
 1. As was done previously, apply `MapTo` to the AEM resource types for all the child components within the page.
 
@@ -351,6 +351,10 @@ To enable editing within AEM for this example SPA, the following steps are requi
 1. Verify editing the page in AEM.
 
    * Deploy the project to AEM and navigate to the newly created `test` page. The page content is now rendered and AEM components are editable.
+
+## Framework Limitations {#framework-limitations}
+
+The RemotePage component expects that the implementation provides an asset-manifest like the one [found here.](https://github.com/shellscape/webpack-manifest-plugin) The RemotePage component, however, has only been tested to work with the React framework (and Next.js via the remote-page-next component), and therefore doesn't support remotely loading applications from other frameworks, such as Angular.
 
 ## Additional Resources {#additional-resources}
 

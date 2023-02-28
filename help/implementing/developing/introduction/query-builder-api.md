@@ -273,7 +273,7 @@ property.3_value=Whistler Mountain Biking
 
 ## Refining What is Returned {#refining-what-is-returned}
 
-By default, the QueryBuilder JSON Servlet will return a default set of properties for each node in the search result (e.g. path, name, title, etc.). In order to gain control over which properties are returned, you can do one of the following:
+By default, the QueryBuilder JSON Servlet will return a default set of properties for each node in the search result (for example, path, name, title, etc.). In order to gain control over which properties are returned, you can do one of the following:
 
 Specify
 

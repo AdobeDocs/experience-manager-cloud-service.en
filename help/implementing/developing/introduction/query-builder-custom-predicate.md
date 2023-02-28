@@ -41,7 +41,7 @@ A custom predicate could also perform other things not directly possible with XP
 
 A predicate evaluator handles the evaluation of certain predicates, which are the defining constraints of a query.
 
-It maps a higher-level search constraint (such as `width>200`) to a specific JCR query that fits the actual content model (e.g. `metadata/@width > 200`). Or it can manually filter nodes and check their constraints.
+It maps a higher-level search constraint (such as `width>200`) to a specific JCR query that fits the actual content model (for example, `metadata/@width > 200`). Or it can manually filter nodes and check their constraints.
 
 >[!TIP]
 >
@@ -53,7 +53,7 @@ As an example this section describes how to create a custom predicate evaluator 
 
 * `cq:lastReplicated` that stores the date of the last replication action
 * `cq:lastReplicatedBy` that stores the id of the user who triggered the last replication action
-* `cq:lastReplicationAction` that stores the last replication action (e.g. Activation, Deactivation)
+* `cq:lastReplicationAction` that stores the last replication action (for example, Activation, Deactivation)
 
 #### Querying Replication Metadata with Default Predicate Evaluators {#querying-replication-metadata-with-default-predicate-evaluators}
 

@@ -5,20 +5,11 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 ---
 # Overview {#overview-content-transfer-tool}
 
-
 >[!CONTEXTUALHELP] 
 >id="aemcloud_ctt_overview" 
 >title="Overview" 
 >abstract="Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. This tool also transfers principals (users or groups) automatically."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en" text="Guidelines and Best Practices"
-
-<!-- Alexandru: Old version of contextual help, keep for failover/debugging
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="Overview"
->abstract="Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. This tool also transfers principals (users or groups) automatically."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extraction Process"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Ingestion Process" -->
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Guidelines and Best Practices"
 
 The Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. 
 
@@ -28,9 +19,9 @@ A new version of the Content Transfer Tool is available which integrates the con
 
 * Self-service way to extract a migration set once and ingest it into multiple environments in parallel
 * Improved user experience via better loading states, guardrails, and error handling
-* Ingestion logs are persisted and are always available for toubleshooting 
+* Ingestion logs are persisted and are always available for troubleshooting 
 
-To start using the new version (v2.0.10) <!-- update when version is available --> you will need to uninstall older versions of the Content Transfer Tool because there was a major architectural change in the tool. 
+To start using the new version, you will need to uninstall older versions of the Content Transfer Tool because there was a major architectural change in the tool. 
 
 >[!NOTE]
 >

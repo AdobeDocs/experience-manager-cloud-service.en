@@ -57,7 +57,7 @@ AEM Commerce is now available on Cloud Service.
 
 Release 2.11.0 of the [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
-* Introduction of a new [PDF Viewer Component](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html).
+* Introduction of a new [PDF Viewer Component](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * Accelerated Mobile Pages (AMP) support of Core Components is now available. It helps to produce faster customer experiences by making the page transition instantaneously when entering the site from a Google mobile search result, which improves user engagement and SEO.
    Refer to [AMP Support for the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) for more details.

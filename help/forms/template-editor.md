@@ -43,8 +43,7 @@ When you open a template for editing, you can see the following AEM Editor compo
     * **Toggle Side Panel**: Lets you show or hide the sidebar.
     * **Page Information**: Lets you specify information such as the publish/unpublish time, thumbnails, client-side libraries, page policy, and page design client-side library.
    <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-    * **Mode selector:** Lets you change the mode.
-      You can choose **[!UICONTROL Structure]** mode, **[!UICONTROL Initial Content]**, **[!UICONTROL Layout Control]** mode. Structure mode lets you add and customize the header and footer. Initial Content mode lets you customize the form content.
+    * **Mode selector:** Lets you change the mode.You can choose **[!UICONTROL Structure]** mode, **[!UICONTROL Initial Content]**, **[!UICONTROL Layout Control]** mode. Structure mode lets you add and customize the header and footer. Initial Content mode lets you customize the form content.
     * **Preview:** Lets you preview how the template looks when you publish it. You can use Layer Selector and Preview to toggle editing and preview modes.
 * **Sidebar:** Provides the Content, Properties, Assets, and Components browsers.
 * **Component toolbar:** When you select a component, you see a toolbar that lets you customize the component.
@@ -144,11 +143,30 @@ When you create a template, it is added as a draft. Enable the template to use i
 
 ## Importing or exporting a template {#importing-or-exporting-a-template}
 
-A form works with its template. When you download an Adaptive Form created using a customized template, the template is not downloaded. When you import the ftocorm on a different [!DNL AEM Forms] instance, it is imported without its template. If a form is imported but its template is not available, the form is not rendered. You can package the custom template from `/conf` node in `https://<server>:<port>/crx/packmgr`, and port it in the [!DNL AEM Forms] instance where you want to upload the form. You can also [Create a template using AEM Archeype and deploy it to your Cloud Services instance](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites). 
+A form works with its template. When you download an Adaptive Form created using a customized template, the template is not downloaded. When you import the form on a different [!DNL AEM Forms] instance, it is imported without its template. If a form is imported but its template is not available, the form is not rendered. You can package the custom template from `/conf` node in `https://<server>:<port>/crx/packmgr`, and port it in the [!DNL AEM Forms] instance where you want to upload the form. You can also [Create a template using AEM Archeype and deploy it to your Cloud Services instance](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites). 
+
+>[!NOTE]
+>
+> * You can also configure the [!UICONTROL Document of Record] template directly from the Adaptive Form editor or Adaptive Form template editor. For more information, see [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+## Associate a Form Data Model Schema to a template {#associating-form-data-model-schema-in-template}
+
+Authors can associate a [!UICONTROL Form Data Model Schema] to an Adaptive Form template in the template editor. It allows authors to select a schema from the template editor. When you associate a schema to a template and a form author creates a form based on the template, the schema is pre-selected for the form. It helps forms authors regulate the use of schema and saves time for forms author also. To select a form data model schema in template editor:
+
+1. Tap **[!UICONTROL Content Browser]** located on the left hand side.
+1. Go to the form container **[!UICONTROL Setting]**.
+1. Select **[!UICONTROL Data Model]**. 
+1. Choose your form data model through **[!UICONTROL Select Form Data Model]** and save the configuration.
+
+![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img.png)
+
+
 
 ## Creating an Adaptive Form using the template {#creating-an-adaptive-form-using-the-template}
 
 After you create and enable a template, it is available in the forms manager when you create an Adaptive Form. To use a template and create an Adaptive Form, see [Creating an Adaptive Form](creating-adaptive-form.md).
+
 
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}
@@ -169,6 +187,23 @@ Perform the following steps to show and hide templates:
     * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
+
+## Save an Adaptive Form as a template {#saving-adaptive-form-as-template}
+
+You can also save an Adaptive Form as a template for future use. To save a Adaptive Form as a template:
+
+1. Select an Adaptive Form to save it as a template.
+1. Click **[!UICONTROL Save as Template]**. A dialog box appears.
+1. Specify **[!UICONTROL Title]** (mandatory field), **[!UICONTROL Location]** (mandatory field) and **[!UICONTROL Description]** (optional field) for the template. 
+1. Click **[!UICONTROL Create]**.
+
+   ![Save as Form as Template](/help/forms/assets/saveformastemplate.png)
+
+
+
+>[!NOTE]
+>
+>To use the same container policy as of the source Adaptive Form, it is recommended to save the template in the same folder as of the source Adaptive Form. In case, the template is saved in any other folder, than the created template uses a default container policy.
 
 ## Recommendations {#recommendations}
 

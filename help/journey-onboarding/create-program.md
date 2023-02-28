@@ -33,6 +33,10 @@ There are two different type of programs:
 
 Since they serve different purposes, the different environments have different options. However the process of creating them is similar. For this onboarding journey we will create a sandbox environment.
 
+>[!TIP]
+>
+>If you need to create a production program, see the [Additional Resources](#additional-resources) section for a link to documentation describing programs in detail.
+
 ## Creating a Sandbox Program {#create-sandbox}
 
 Follow these steps to create a sandbox program.
@@ -65,3 +69,4 @@ Follow the additional resources to learn about:
 * [Creating Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Learn how to use Cloud Manager to create your own sandbox program for training, demo, POC, or other non-production purposes.
 * [Creating Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) - Learn how to use Cloud Manager to create your own production program to host live traffic.
 * [Using Adobe Cloud Manager - Programs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) - Cloud Manager programs represent sets of AEM environments supporting logical sets of business initiatives, typically corresponding to a purchased Service Level Agreement (SLA).
+* [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) - Learn how AEM as a Cloud Service team and product profiles can grant and limit access to your licensed Adobe solutions.
