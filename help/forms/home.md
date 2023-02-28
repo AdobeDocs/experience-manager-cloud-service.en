@@ -14,7 +14,7 @@ You can use the service to create and rollout interactive and engaging digital f
 
 The organization can use [!DNL AEM Forms] as a Cloud Service to create digital forms, connect forms to existing data sources, integrate forms with [!DNL Adobe Sign] to add e-signatures to forms, and generate Document of Record (DoR) to archive submitted forms as PDF files. The organization can also use the service to convert their existing PDF forms to digital forms.
 
-![Data Collection - Responsive Form Design](/help/forms/assets/data-collection.jpeg)
+![Data Collection - Responsive Form Design](/help/forms/assets/data-collection.jpeg){width="40%"}
 Responsive Form Design
 
 In large enterprises, forms are often created once and reused by copying to a content management system. Keeping a large database of forms up-to-date and making them discoverable can be a considerable challenge. AEM provides a customizable Forms Portal that ensures that customers find and access forms they need across both web and mobile channels.
@@ -28,7 +28,7 @@ Using AEM Forms, business users can create compelling personalized user experien
 Personalized documents, like, receipts, welcome kits, and statements can easily be easily generated. Organizations can drive traffic to personalized web portals resulting in enrollment or purchase of additional services.
 
 
-![Personalized Communication - Responsive Design](/help/forms/assets/personalized-communication.jpeg)
+![Personalized Communication - Responsive Design](/help/forms/assets/personalized-communication.jpeg){width="40%"}
 Personalized invoice 
 
 The service is always current, always available, and always learning. Organizations can use [!DNL AEM Forms] as a Cloud Service and get all these features in the cloud without requiring any local infrastructure. The service also frees organizations from complex upgrade cycles as it is always up to date with the latest features.
