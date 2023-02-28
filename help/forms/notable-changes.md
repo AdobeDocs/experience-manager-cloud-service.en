@@ -93,7 +93,7 @@ Support for anonymous use of Forms Portal is not available out of the box (OOTB)
 +++
 
 
-+++ 7. HTML5 Forms (Mobile Forms)
++++ 7. HTML5 Forms
 
 *   The service does not support HTML5 Forms (Mobile Forms). If you render your XDP-based forms as HTML5 Forms, you can continue using the feature on AEM 6.5 Forms.
 
