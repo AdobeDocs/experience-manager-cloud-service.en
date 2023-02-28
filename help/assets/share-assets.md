@@ -237,7 +237,7 @@ See [how to configure [!DNL Assets] to use it with [!DNL Adobe Asset Link]](http
 ## Best practices and troubleshooting {#bestpractices}
 
 * Asset folders or collections that contain a whitespace in their name may not get shared.
-* If users cannot download the shared assets, check with your Experience Manager administrator what the [download limits](#maxdatasize) are.
+* If users cannot download the shared assets, check with your Experience Manager administrator what the download limits are. The default value is 100 MB.
 * For a user to preview a video that is shared using link sharing, the video must have a static video rendition available at `/jcr:content/renditions` location in the video's node in the repository. The preview is not dependent on the availability of a [!DNL Dynamic Media] rendition.
 * When downloading a video asset via link share, the [!DNL Dynamic Media] renditions are not included in the downloaded archive.
 
