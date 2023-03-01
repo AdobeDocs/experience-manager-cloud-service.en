@@ -1,6 +1,7 @@
 ---
 title: Universal Editor Authentication
 description: Learn how the Universal Editor authenticates.
+feature: Experience Manager Sites
 hide: yes
 hidefromtoc: yes
 index: no

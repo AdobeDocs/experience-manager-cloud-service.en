@@ -1,6 +1,7 @@
 ---
 title: Universal Editor Architecture
 description: Learn about the architecture of the Universal Editor and how data flows between its services and layers.
+feature: Experience Manager Sites
 hide: yes
 hidefromtoc: yes
 index: no
