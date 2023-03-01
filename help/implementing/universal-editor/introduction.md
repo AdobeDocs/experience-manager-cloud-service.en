@@ -45,9 +45,9 @@ A content author should have the same powerful editing experience formerly offer
 
 For a content author, content is not just about the information contained, but how it is rendered ane received. Content comes with additional meta-data and instrumentation rules, which the Universal Editor can understand and edit including:
 
-**Applying Layout &amp; Style** - By using a style system, the marketing practitioner and content author can apply different styles to their content and create different layouts such as columns, carousels, tabs, accordions, etc.
-**Performing Experimentation** - By publishing a new content version that challenges the existing content, the marketing practitioner can experiment with content improvements and measure the impact.
-**Personalizing Variations** - By creating and managing content variations that are specific for given audiences, marketing practitioners can personalize the content that is delivered.
+* **Applying Layout &amp; Style** - By using a style system, the marketing practitioner and content author can apply different styles to their content and create different layouts such as columns, carousels, tabs, accordions, etc.
+* **Performing Experimentation** - By publishing a new content version that challenges the existing content, the marketing practitioner can experiment with content improvements and measure the impact.
+* **Personalizing Variations** - By creating and managing content variations that are specific for given audiences, marketing practitioners can personalize the content that is delivered.
 
 ## Value {#value}
 
@@ -80,3 +80,13 @@ A marketing practitioner wants to create content that is tailored to the layout 
 It is important to note that the Universal Editor is a work in progress and the capabilities laid out in this document are a vision of the final editor and not necessarily of its current capabilities.
 
 Please speak with your Adobe contact for details on the upcoming features planned for the Universal Editor
+
+## Additional Resources {#additional-resources}
+
+To learn more about the Universal Editor, see these documents.
+
+* [Authoring Content with the Universal Editor](authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
+* [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
+* [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
+* [Attributes and Types](attribute-types.md) - Learn about the data attributes and types that the Universal Editor requires.
+* [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.
