@@ -5,12 +5,17 @@ exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 ---
 # Overview to User Mapping Tool {#overview-user-mapping-tool}
 
+
+<!-- Alexandru: drafting this for now
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="User Mapping Tool"
 >abstract="The Content Transfer Tool helps you move users and groups from your existing AEM system to AEM as a Cloud Service. Existing users and groups need to be mapped to their IMS IDs to avoid duplicate users and groups on the Cloud Service author instance."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Important Considerations for using User Mapping Tool"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="Using User Mapping Tool"
+
+-->
 
 ## Introduction {#introduction}
 
