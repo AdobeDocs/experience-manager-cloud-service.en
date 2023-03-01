@@ -20,7 +20,7 @@ To significantly speed up the extraction and ingestion phases of the content tra
 
 Follow the section below to understand the important considerations before starting: 
 
-* Starting from version 2.0.16 of CTT, the Precopy setup will be done automatically when the bundle is installed. Additionally, if the migration set size is greater than 200GB, the extraction process will automatically utilize the Precopy feature. The azcopy.config file is created in the crx-quickstart/cloud-migration/ directory. You do not need to manually do the Precopy setup if you are using CTT version 2.0.16 or later.
+* Starting from version 2.0.16 of CTT, the precopy setup will be done automatically when the bundle is installed. Additionally, if the migration set size is greater than 200GB, the extraction process will automatically utilize the precopy feature. The azcopy.config file is created in the crx-quickstart/cloud-migration/ directory. You do not need to manually do the precopy setup if you are using CTT version 2.0.16 or later.
 
 * Source AEM version needs to be 6.3 - 6.5.
 
@@ -52,7 +52,7 @@ Follow the section below to understand the important considerations before start
 ## Setting up to Use AzCopy as a Pre-Copy Step {#setting-up-pre-copy-step}
 
 >[!NOTE]
->Starting from version 2.0.16 of CTT, the Precopy setup will be done automatically when the bundle is installed. Additionally, if the migration set size is greater than 200GB, the extraction process will automatically utilize the Precopy feature. The azcopy.config file is created in the crx-quickstart/cloud-migration/ directory. If you would like to update the configuration of the file manually, please review the sections below.
+>Starting from version 2.0.16 of CTT, the precopy setup will be done automatically when the bundle is installed. Additionally, if the migration set size is greater than 200GB, the extraction process will automatically utilize the precopy feature. The azcopy.config file is created in the crx-quickstart/cloud-migration/ directory. If you would like to update the configuration of the file manually, please review the sections below.
 
 Follow this section to learn how to set up to use AzCopy as a pre-copy step with Content Transfer Tool to migrate the content to AEM as a Cloud Service:
 
