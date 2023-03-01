@@ -237,7 +237,7 @@ The following section shows the important steps and associated tasks that can be
   * Clones author and publish - one node each in case of a cluster or publish farm
 * Choose a subset of the content that will be migrated so that:
   * It is a mix of all the available content types
-  * Contains all users and groups in case
+  * Contains all users and groups
 * Includes either 25% of the content or up to 1 TB of content, whichever is less.
 * Execute at least one full and [top-up](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) migration, from the production clone into the AEM as a Cloud Service non-production environment
 * Resolve any potential issues like:
