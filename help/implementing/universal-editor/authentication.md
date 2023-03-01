@@ -2,6 +2,9 @@
 title: Universal Editor Authentication
 description: Learn how the Universal Editor authenticates.
 feature: Universal Editor
+hide: yes
+hidefromtoc: yes
+index: no
 ---
 
 # Universal Editor Authentication {#authentication}
