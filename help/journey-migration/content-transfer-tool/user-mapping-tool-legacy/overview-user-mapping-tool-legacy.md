@@ -31,4 +31,4 @@ The Content Transfer Tool (without User Mapping) will migrate any users and grou
 
 ### What's Next {#whats-next}
 
-Once you have learned what a User Mapping tool is, you are now ready to review important considerations and exceptional cases before using the User Mapping Tool. See [Important Considerations for User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md) for more details.
+Once you have learned what a User Mapping tool is, you are now ready to review important considerations and exceptional cases before using the User Mapping Tool. See [Important Considerations for User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md) for more details.
