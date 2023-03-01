@@ -2,6 +2,9 @@
 title: Universal Editor Architecture
 description: Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 feature: Universal Editor
+hide: yes
+hidefromtoc: yes
+index: no
 ---
 
 # Universal Editor Architecture {#architecture}
