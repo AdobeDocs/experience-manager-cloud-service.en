@@ -12,7 +12,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 Before you start, learn about the type of Forms components available to you: 
 
-*   [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): These are standardized data capture components. These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrolment experiences. A developer can easily customize and style these components. Adobe recommends leveraging these modern and extensible components to develop Adaptive Forms.  
+*   [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): These are standardized data capture components. These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrollment experiences. A developer can easily customize and style these components. Adobe recommends leveraging these modern and extensible components to develop Adaptive Forms.  
 
 *   [Adaptive Forms Foundation Components](creating-adaptive-form.md): These are classic (old) data capture components. You can continue to use these to edit your existing foundation components based Adaptive Form. If you are creating new forms, Adobe recommends using  [Adaptive Forms Core Components](creating-adaptive-form-core-components.md) to create an Adaptive Forms. 
 
@@ -28,7 +28,7 @@ You require the following to create an Adaptive Form:
 *   **An Adaptive Form template**: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an Adaptive Form. For example, sending the collected data to a data source. The cloud service provides an OOTB template, named blank:
 
     * The `blank` template is included with every fresh AEM Forms as a Cloud Service program.
-    * You can install the reference package, via package manager, to add the `blank` template to your AEM Forms as a Cloud Service program. 
+    * You can install the reference package, via Package Manager, to add the `blank` template to your AEM Forms as a Cloud Service program. 
     * You can also [create a new Adaptive Forms template (Core Components)](template-editor.md) from scratch.
 
 *   **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components.  The `Canvas` template is included with every fresh AEM Forms as a Cloud Service program.
@@ -89,7 +89,7 @@ Now, you can drag-and-drop the Adaptive Forms Core Components to Adaptive Forms 
 
 ## Available Adaptive Forms Core Components
 
-Adaptive Forms Core Components are standardized data capture components. These components provide customization capabilities, help reduce development time, and lower maintenance costs for your digital enrolment experiences. [Adaptive Forms Core Components documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) has detailed list of available components along with detailed information about capabilities of each component. You can also visit [https://aemcomponents.dev/](https://aemcomponents.dev/) to view available core components in action. 
+Adaptive Forms Core Components are standardized data capture components. These components provide customization capabilities, help reduce development time, and lower maintenance costs for your digital enrollment experiences. [Adaptive Forms Core Components documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) has detailed list of available components along with detailed information about capabilities of each component. You can also visit [https://aemcomponents.dev/](https://aemcomponents.dev/) to view available core components in action. 
 
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model}
 
