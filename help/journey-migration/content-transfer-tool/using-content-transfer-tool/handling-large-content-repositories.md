@@ -20,6 +20,8 @@ To significantly speed up the extraction and ingestion phases of the content tra
 
 Follow the section below to understand the important considerations before starting: 
 
+* Starting from version 2.0.16 of CTT, the Precopy setup will be done automatically when the bundle is installed. Additionally, if the migration set size is greater than 200GB, the extraction process will automatically utilize the Precopy feature. The azcopy.config file is created in the crx-quickstart/cloud-migration/ directory. You do not need to manually do the Precopy setup if you are using CTT version 2.0.16 or later.
+
 * Source AEM version needs to be 6.3 - 6.5.
 
 * Source AEM's data store is configured to use Amazon S3 or Azure Blob Storage. For more details, refer [Configuring node stores and data stores in AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en).
@@ -28,9 +30,7 @@ Follow the section below to understand the important considerations before start
 
 * You will need access to install [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) on the instance (or VM) running the source AEM instance.
 
-* Data Store Garbage Collection has been run within the previous 7 days on the source. For more details, refer to [Data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection). 
-
-* Starting from version 2.0.16 of CTT, the Precopy setup will be done automatically when the bundle is installed. Additionally, if the migration set size is greater than 200GB, the extraction process will automatically utilize the Precopy feature. The azcopy.config file is created in the crx-quickstart/cloud-migration/ directory.
+* Data Store Garbage Collection has been run within the previous 7 days on the source. For more details, refer to [Data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection).  
 
 >[!NOTE]
 >Currently, text renditions are not functioning correctly on Windows machines and this is a known issue. However, we will address this problem in the upcoming release and provide a fix for it.
@@ -50,6 +50,9 @@ Follow the section below to understand the important considerations before start
 * Once AzCopy has been used to copy over the existing datastore, disable it for delta or top-up extractions.
 
 ## Setting up to Use AzCopy as a Pre-Copy Step {#setting-up-pre-copy-step}
+
+>[!NOTE]
+>Starting from version 2.0.16 of CTT, the Precopy setup will be done automatically when the bundle is installed. Additionally, if the migration set size is greater than 200GB, the extraction process will automatically utilize the Precopy feature. The azcopy.config file is created in the crx-quickstart/cloud-migration/ directory. If you would like to update the configuration of the file manually, please review the sections below.
 
 Follow this section to learn how to set up to use AzCopy as a pre-copy step with Content Transfer Tool to migrate the content to AEM as a Cloud Service:
 
