@@ -726,7 +726,7 @@ The solution in GraphQL means you can:
 
 The structure and syntax is:
 
-* `format`: an enumeration will all supported formats by its extension: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL or WEBPLY
+* `format`: an enumeration with all supported formats by its extension: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL or WEBPLY
 * `seoName`: a string that will be used as file name instead of the node name
 * `crop`: a frame sub structure, if width or height is omitted then the height or width is used as the same value
   * `xOrigin`: the x origin of the frame and is mandatory
