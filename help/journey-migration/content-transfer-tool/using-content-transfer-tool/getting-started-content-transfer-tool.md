@@ -17,6 +17,8 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 
 The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via [Package Manager](/help/implementing/developing/tools/package-manager.md) on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version. For more details on the latest version, refer to [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
+Only version 2.0.0 and higher will be supported, and it is advisable to use the most recent version.
+
 >[!NOTE]
 >Download the Content Transfer Tool, from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
 

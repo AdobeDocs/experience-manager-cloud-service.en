@@ -27,6 +27,10 @@ The audit results are informational and allow the deployment manager to see the 
 
 Experience Audit is powered by Google Lighthouse, an open source tool from Google and is enabled in all Cloud Manager production pipelines.
 
+>[!TIP]
+>
+>You configure what pages are included in the Experience Audit when you [set up your pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+
 ## Understanding Experience Audit Results {#understanding-experience-audit-results}
 
 Experience Audit provides aggregate and detailed page-level test results via the [production pipeline execution page.](/help/implementing/cloud-manager/deploy-code.md)
@@ -53,7 +57,6 @@ The change metric can have one of the following values.
 * **N/A** - There was no previous score available to compare.
 
 ![Experience Audit results](/help/implementing/cloud-manager/assets/exp-audit-1.png)
-
 
 ### Page-Level Scores {#page-level-scores}
 
