@@ -97,7 +97,7 @@ Connections which are used in the app are stored as `<meta>` tags in the page's 
 
 The short identifier `auecon` stands for Adobe Universal Editor Connection.
 
-`ItemId`s will use the `urn` prefix to shorten the identifier.
+`itemid`s will use the `urn` prefix to shorten the identifier.
 
 ```html
 itemid="urn:<referenceName>:<resource>"
@@ -105,6 +105,10 @@ itemid="urn:<referenceName>:<resource>"
 
 * `<referenceName>` - This is the named reference mentioned in the `<meta>` tag. E.g. `aemconnection`
 * `<resource>` - This is a pointer to the resource in the target system. E.g. an AEM content path such as `/content/page/jcr:content`
+
+>[!TIP]
+>
+>See the document [Attributes and Types](attribute-types.md) for further details about the data attributes and types that the Universal Editor requires.
 
 ### Example Connection {#example}
 
@@ -183,6 +187,8 @@ In case a different scope is required for a sub-structure within the structure o
 ## You're Ready to Use the Universal Editor {#youre-ready}
 
 Your app is now instrumented to use the Universal Editor!
+
+Please refer to the document [Authoring Content with the Universal Editor](authoring.md) to learn how easy and intuitive it is for content authors to create content using the Universal Editor.
 
 ## Additional Resources {#additional-resources}
 
