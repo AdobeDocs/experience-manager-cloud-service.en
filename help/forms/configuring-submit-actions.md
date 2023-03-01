@@ -180,7 +180,7 @@ To connect AEM Forms to your Microsoft® Sharepoint Storage:
 
     >[!NOTE]
     >
-    > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application configured to use a client secret, it is mandatory to provide the client secret.
+    > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
     
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears. 
 
@@ -238,7 +238,7 @@ To connect AEM Forms to your Microsoft® OneDrive Storage:
 
     >[!NOTE]
     >
-    > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application configured to use a client secret, it is mandatory to provide the client secret.
+    > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
     
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears. 
 
