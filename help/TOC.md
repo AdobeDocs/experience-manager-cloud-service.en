@@ -504,9 +504,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Setup and migrate {#setup-configure-migrate}
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
-    + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Configure Unified Storage Connector](/help/forms/configure-unified-storage-connector.md)
-    + [Migrate to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+    + [Migrate from [!DNL AEM 6.5 Forms] or earlier to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
     + [Import, export, and organize Adaptive Forms, PDF forms, and other assets](/help/forms/import-export-forms-templates.md)
   + Integrate {#integrate}
@@ -543,7 +542,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Create a theme](/help/forms/themes.md)
         + [Reference Assets](/help/forms/reference-assets.md)
         + [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)
-        + [Use Forms Designer](/help/forms/use-forms-designer.md)
         + [Improve performance of large forms with lazy loading](/help/forms/lazy-loading-adaptive-forms.md)
       + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
         + [Use CAPTCHA in an Adaptive Form](/help/forms/captcha-adaptive-forms.md)
@@ -583,6 +581,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
     + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+    + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
+    + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
   + Developer API Reference {#aem-forms-developer-api-reference}
