@@ -64,3 +64,12 @@ The Universal Editor dispatches all content changes to a centralized service cal
 
 ![Client side rendering](assets/client-side.png)
 
+## Additional Resources {#additional-resources}
+
+To learn more about the Universal Editor, see these documents.
+
+* [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation in order to deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
+* [Authoring Content with the Universal Editor](authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
+* [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
+* [Attributes and Types](attribute-types.md) - Learn about the data attributes and types that the Universal Editor requires.
+* [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.
