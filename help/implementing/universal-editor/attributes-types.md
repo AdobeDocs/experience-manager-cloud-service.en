@@ -1,6 +1,7 @@
 ---
 title: Attributes and Types
 description: Learn about the data attributes and types that the Universal Editor requires.
+feature: Experience Manager Sites
 hide: yes
 hidefromtoc: yes
 index: no
