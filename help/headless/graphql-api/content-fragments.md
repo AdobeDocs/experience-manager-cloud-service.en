@@ -693,7 +693,7 @@ query {
 >
 >* Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. This is also the recommended way if you want to query large paginated result sets.
 
-## Web-optimized image delivery {#web-optimized-image-delivery}
+## Web-optimized image delivery in GraphQL queries {#web-optimized-image-delivery-in-graphql-queries}
 
 Web-optimized image delivery allows you to use a Graphql query to:
 
