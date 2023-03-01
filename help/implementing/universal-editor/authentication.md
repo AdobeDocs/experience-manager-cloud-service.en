@@ -44,7 +44,7 @@ To use third-party backend systems, the IMS bearer token can not be used to auth
 1. The Unified Shell stores the IMS token in the session store.
 1. The Universal Editor triggers the [plugin](#plugin) to retrieve a token based on the contract.
 1. The token is stored in the session store as well.
-1. On CRUD operations, the Universal Editor sends the IMS token and the token that belongs to the connection defined via the [`itemid`.](attribute-types.md)
+1. On CRUD operations, the Universal Editor sends the IMS token and the token that belongs to the connection defined via the [`itemid`.](attributes-types.md)
 1. The Universal Editor service validates the IMS token to ensure only authenticated users are passed through the service.
 1. The Universal Editor service passes the IMS token and the custom token to the plugin.
 1. The custom [plugin](#plugin) decides which tokens will be passed to the backend system to authenticate the request.
@@ -83,4 +83,4 @@ To learn more about the Universal Editor, see these documents.
 * [Authoring Content with the Universal Editor](authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
 * [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
-* [Attributes and Types](attribute-types.md) - Learn about the data attributes and types that the Universal Editor requires.
+* [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
