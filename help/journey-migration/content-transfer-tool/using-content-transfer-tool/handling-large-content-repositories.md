@@ -30,7 +30,10 @@ Follow the section below to understand the important considerations before start
 
 * Data Store Garbage Collection has been run within the previous 7 days on the source. For more details, refer to [Data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection). 
 
-* Starting from version 2.0.14 of CTT, the Precopy setup will be done automatically when the bundle is installed. Additionally, if the migration set size is greater than 200GB, the extraction process will automatically utilize the Precopy feature. The azcopy.config file is created in the crx-quickstart/cloud-migration/ directory.
+* Starting from version 2.0.16 of CTT, the Precopy setup will be done automatically when the bundle is installed. Additionally, if the migration set size is greater than 200GB, the extraction process will automatically utilize the Precopy feature. The azcopy.config file is created in the crx-quickstart/cloud-migration/ directory.
+
+>[!NOTE]
+>For now, text renditions are not working properly on Windows machines . This issue will be fixed in the next released.
 
 ### Additional Considerations if source AEM instance is configured to use an Amazon S3 or Azure Blob Storage Data Store {#additional-considerations-amazons3-azure}
 
