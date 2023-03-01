@@ -33,8 +33,7 @@ Follow the section below to understand the important considerations before start
 * Starting from version 2.0.16 of CTT, the Precopy setup will be done automatically when the bundle is installed. Additionally, if the migration set size is greater than 200GB, the extraction process will automatically utilize the Precopy feature. The azcopy.config file is created in the crx-quickstart/cloud-migration/ directory.
 
 >[!NOTE]
->For now, text renditions are not working properly on Windows machines . This issue will be fixed in the next released.
-
+>Currently, text renditions are not functioning correctly on Windows machines and this is a known issue. However, we will address this problem in the upcoming release and provide a fix for it
 ### Additional Considerations if source AEM instance is configured to use an Amazon S3 or Azure Blob Storage Data Store {#additional-considerations-amazons3-azure}
 
 * Since there is a cost associated with transferring data out of both Amazon S3 and Azure Blob Storage, the transfer cost will be relative to the total amount of data in your existing storage container (whether referenced in AEM, or not). Refer to [Amazon S3](https://aws.amazon.com/s3/pricing/) and [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) for more details.
