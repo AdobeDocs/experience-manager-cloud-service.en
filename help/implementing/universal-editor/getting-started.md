@@ -1,6 +1,7 @@
 ---
 title: Getting Started with the Universal Editor in AEM
 description: Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
+feature: Experience Manager Sites
 hide: yes
 hidefromtoc: yes
 index: no
