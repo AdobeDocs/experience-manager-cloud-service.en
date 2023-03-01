@@ -783,9 +783,9 @@ The following is a sample query with a full set of parameters:
 }
 ```
 
-### Dynamic Image Delivery with a single specified parameter {#dynamic-image-delivery-single-specified-parameter}
+### Dynamic Image Delivery with a single query variable {#dynamic-image-delivery-single-specified-parameter}
 
-The following example shows the use of a single specified parameter:
+The following example shows the use of a single query variable:
 
 ```graphql
 query ($seoName: String!) {
