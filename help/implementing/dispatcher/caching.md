@@ -65,7 +65,7 @@ This can be useful, for example, when your business logic requires fine tuning o
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
       Header unset Cache-Control
       Header unset Expires
-      Header always set Cache-Control “private”
+      Header always set Cache-Control "private"
      </LocationMatch>
 
    ```
@@ -140,6 +140,7 @@ At present, images in blob storage that are marked private cannot be cached at t
 * Some examples follow for various content types, which can be used as a guide when setting up your own caching rules. Please carefully consider and test for your specific setup and requirements:
 
    * Cache mutable client library resources for 12h and background refresh after 12h.
+   
       ```
       <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
          Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
@@ -148,6 +149,7 @@ At present, images in blob storage that are marked private cannot be cached at t
       ```
 
    * Cache immutable client library resources long-term (30 days) with background refresh to avoid MISS.
+
       ```
       <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
          Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
@@ -156,6 +158,7 @@ At present, images in blob storage that are marked private cannot be cached at t
       ```
 
    * Cache HTML pages for 5min with background refresh 1h on browser and 12h on CDN. Cache-Control headers will always be added so it is important to ensure that matching html pages under /content/* are intended to be public. If not, consider using a more specific regex.
+
       ```
       <LocationMatch "^/content/.*\.html$">
          Header unset Cache-Control
@@ -166,6 +169,7 @@ At present, images in blob storage that are marked private cannot be cached at t
       ```
 
    * Cache content services/Sling model exporter json responses for 5min with background refresh 1h on browser and 12h on CDN.
+
       ```
       <LocationMatch "^/content/.*\.model\.json$">
          Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
@@ -175,6 +179,7 @@ At present, images in blob storage that are marked private cannot be cached at t
       ```
 
    * Cache immutable URLs from the core image component long-term (30 days) with background refresh to avoid MISS.
+
       ```
       <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
          Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
@@ -183,6 +188,7 @@ At present, images in blob storage that are marked private cannot be cached at t
       ```
 
    * Cache mutable resources from the DAM like images and video for 24h and background refresh after 12h to avoid MISS
+
       ```
       <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
          Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
@@ -312,7 +318,7 @@ Also, from the table, we observe that:
 
 * SCD API is needed when every event must be guaranteed, for example, syncing with an external system that requires accurate knowledge. If there is a publish tier upscaling event at the time of the invalidation call, an additional event is raised when each new publish processes the invalidation.
 
-* Using the Replication API isn’t a common use case, but should be used in cases where the trigger to invalidate the cache comes from the publish tier and not the author tier. This might be useful if dispatcher TTL is configured.
+* Using the Replication API isn't a common use case, but should be used in cases where the trigger to invalidate the cache comes from the publish tier and not the author tier. This might be useful if dispatcher TTL is configured.
 
 In conclusion, if you are looking to invalidate the Dispatcher cache, the recommended option is to use the SCD API Invalidate action from Author. Additionally, you can also listen for the event so you can then trigger further downstream actions.
 
@@ -416,7 +422,7 @@ ReplicationOptions options = new ReplicationOptions();
 options.setSynchronous(true);
 options.setFilter( new AgentFilter {
   public boolean isIncluded (Agent agent) {
-   return agent.getId().equals(“flush”);
+   return agent.getId().equals("flush");
   }
 });
 
