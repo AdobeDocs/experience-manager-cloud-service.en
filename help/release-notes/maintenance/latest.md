@@ -9,7 +9,7 @@ The following section outlines the technical release rotes for the latest mainte
 
 ## Release XXXXX {#release-11012}
  
-Summarized below are the continuous improvements for maintenance release XXXXX, which was publicly released on March X, 2023. This mainteanance release is an update from previous maintenance release 10912.
+Summarized below are the continuous improvements for maintenance release XXXXX, which was publicly released on March X, 2023. This maintenance release is an update from previous maintenance release 10912.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
