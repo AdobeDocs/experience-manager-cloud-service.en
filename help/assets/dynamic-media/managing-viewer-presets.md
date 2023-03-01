@@ -1,6 +1,7 @@
 ---
 title: Manage viewer presets
 description: Learn how to create and manage viewer presets in Dynamic Media.
+contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
@@ -42,9 +43,9 @@ You can add, edit, delete, publish, unpublish, and preview viewer presets in Ado
 >
 >By default, the system shows 15 viewer presets when you select Viewers in an asset's detail view. You can increase this limit. See [Increase the number of viewer presets that display](#increasing-the-number-of-viewer-presets-that-display).
 
-### Viewer support for responsive designed web pages {#viewer-support-for-responsive-designed-web-pages}
+### Viewer support for responsive-designed web pages {#viewer-support-for-responsive-designed-web-pages}
 
-Different web pages have different needs. For example, sometimes you want a web page that provides a link that opens the HTML5 Viewer in a separate browser window. In other cases, it is necessary to embed the HTML5 Viewer directly on the hosting page. In the latter case, the web page has a static layout. Or, it is "responsive" and displays differently on different devices or for different browser window sizes. To accommodate these needs, all the pre-defined, out-of-the-box HTML5 Viewers that come with Dynamic Media support both static web pages and responsive designed web pages.
+Different web pages have different needs. For example, sometimes you want a web page that provides a link that opens the HTML5 Viewer in a separate browser window. In other cases, it is necessary to embed the HTML5 Viewer directly on the hosting page. In the latter case, the web page has a static layout. Or, it is "responsive" and displays differently on different devices or for different browser window sizes. To accommodate these needs, all the pre-defined, out-of-the-box HTML5 Viewers that come with Dynamic Media support both static web pages and responsive-designed web pages.
 
 See [Responsive Static Image library](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) in the *Dynamic Media Image Serving and Rendering API Help* for more information on how to embed responsive viewers onto your web pages.
 
@@ -60,9 +61,9 @@ All out-of-the-box Viewer Presets that come with Dynamic Media are fully compati
 * Desktops
 * Apple iPhone
 * Apple iPad
-* Android™ Smartphone
-* Android™ Tablet
-<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
+* Android&trade; Smartphone
+* Android&trade; Tablet
+<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry&reg;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 ### Rich media types for Viewer Presets {#rich-media-types-for-viewer-presets}
 
@@ -130,7 +131,7 @@ Administrators can add and customize the following rich media types when creatin
    <td><strong>Vertical Zoom</strong></td>
    <td><p>The Vertical Zoom viewer lets you maximize a product imagery viewing experience to give your users the best representation of a product. The vertical location of swatches does the following:</p>
     <ul>
-     <li>Ensures that swatches are “above the fold”.<br/> With horizontal swatches, depending on the user’s desktop screen size, swatches are not visible until the user scrolled down the page. By placing the swatches vertically in the viewer, it ensures that they are visible no matter the user's screen size.</li>
+     <li>Ensures that swatches are "above the fold".<br/> With horizontal swatches, depending on the user's desktop screen size, swatches are not visible until the user scrolled down the page. By placing the swatches vertically in the viewer, it ensures that they are visible no matter the user's screen size.</li>
      <li>Maximizes main image size.<br /> With horizontal swatches, it is necessary to reserve space on the page to ensure that they are visible. This positioning decreased the size of the main image. With a vertical swatch layout, however, you do not need to allocate this space. As such, you can maximize the main image size.</li>
     </ul> </td>
   </tr>
@@ -306,7 +307,7 @@ See "Viewers release notes" in the table of contents of the [Viewers Reference G
 
 ### Supported mobile viewers gestures matrix {#supported-mobile-viewers-gestures-matrix}
 
-The following table identifies the mobile viewer gestures that are supported on iOS, Android™ 2.x, and Android™ 3.x devices.
+The following table identifies the mobile viewer gestures that are supported on iOS, Android&trade; 2.x, and Android&trade; 3.x devices.
 
 <table>
  <tbody>
@@ -337,14 +338,14 @@ The following table identifies the mobile viewer gestures that are supported on 
   <tr>
    <td><p><strong>Pinch open</strong></p> </td>
    <td><p>Does not apply</p> </td>
-   <td><p>Zooms in (iOS and Android™ 3x only)</p> </td>
-   <td><p>Zooms in (iOS and Android™ 3x only)</p> </td>
+   <td><p>Zooms in (iOS and Android&trade; 3x only)</p> </td>
+   <td><p>Zooms in (iOS and Android&trade; 3x only)</p> </td>
   </tr>
   <tr>
    <td><p><strong>Pinch close</strong></p> </td>
    <td><p>Does not apply</p> </td>
-   <td><p>Zooms out (iOS and Android™ 3x only)</p> </td>
-   <td><p>Zooms out (iOS and Android™ 3x only)</p> </td>
+   <td><p>Zooms out (iOS and Android&trade; 3x only)</p> </td>
+   <td><p>Zooms out (iOS and Android&trade; 3x only)</p> </td>
   </tr>
   <tr>
    <td><p><strong>Swipe</strong></p> </td>
@@ -433,6 +434,19 @@ See [Special considerations for creating a Carousel Banner Viewer preset](#speci
 
 1. (Optional) Near the top of the Edit Viewer Preset page, select **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]**, or **[!UICONTROL Phone]** to uniquely define visual styles for different device and screen types.
 1. On the Viewer Preset Editor page, select the **[!UICONTROL Behavior]** tab. Alternatively, you can select any visual element in the viewer to select it for configuration.
+For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!UICONTROL Playback]**, you can select from one of three adaptive bitrate streaming options:
+
+   * **[!UICONTROL dash]** - Videos stream as DASH only. However, on Safari/iOS devices, you must select **[!UICONTROL hls]** as the type, instead.
+   * **[!UICONTROL hls]** - Videos stream as HLS only.
+   * **[!UICONTROL auto]** - Best practice. The creation of DASH and HLS streams is storage optimized. Therefore, Adobe recommends that you always select **[!UICONTROL auto]** as the playback type. Videos stream as dash, hls, or progressive, as in the following: 
+     * If the browser supports DASH, then DASH streaming is used, first. 
+     * If the browser does not support DASH, then HLS streaming is used, second.
+     * If the browser does not support either DASH or HLS, then progressive playback is used, lastly.
+
+   >[!NOTE]
+   >
+   >To see and use the **[!UICONTROL dash]** option, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](/help/assets/dynamic-media/video.md#enable-dash).
+
 1. From the **[!UICONTROL Selected Type]** pull-down menu, select a component whose behaviors you want to change.
 
    Many components in the visual editor have a detailed description associated with it. These descriptions appear within blue boxes when you expand a component to reveal its associated parameters.
@@ -447,15 +461,19 @@ See [Special considerations for creating a Carousel Banner Viewer preset](#speci
    >After you type a value in the text field, select elsewhere in the user interface to submit the change and close the virtual keyboard. If you select **[!UICONTROL Enter]**, no action occurs.
 
 1. Near the upper-right corner of the page, select **[!UICONTROL Save]**.
-1. Publish your new viewer preset. It is necessary to publish the preset before you can use it on your website.
+1. Publish your new viewer preset. It is necessary to publish the preset so you can use its resulting URL on your website.
 
    See [Publishing Viewer Presets](#publishing-viewer-presets).
+
+   >[!IMPORTANT]
+   >
+   >For old videos that use an adaptive bitrate streaming profile, the URL continues to play as usual -- with HLS streaming -- until you [reprocess the video assets](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). After reprocessing, the same URL will continue to work but now with *both* DASH and HLS streaming enabled.
 
 ### Special considerations for creating an interactive viewer preset {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **About Display Modes for image thumbnails in the panel:**
 
-When you create or edit an Interactive Video viewer preset, you have the choice of which Display mode setting to use. This choice occurs when you select `InteractiveSwatches` from the **[!UICONTROL Selected Component]** pull-down menu under the **[!UICONTROL Behavior]** tab. The Display mode you choose affects how and when thumbnails appear while the video is playing. You can choose either a `segment`Display mode (default) or a `continuous` Display mode.
+When you create or edit an Interactive Video viewer preset, you have the choice of which Display mode setting to use. This choice occurs when you select `InteractiveSwatches` from the **[!UICONTROL Selected Component]** pull-down menu under the **[!UICONTROL Behavior]** tab. The Display mode that you choose affects how and when thumbnails appear while the video is playing. You can choose either a `segment`Display mode (default) or a `continuous` Display mode.
 
 <table>
  <tbody>
@@ -474,7 +492,7 @@ When you create or edit an Interactive Video viewer preset, you have the choice 
  </tbody>
 </table>
 
-**About auto scrolling behavior in the Interactive Video viewer:**
+**About auto-scrolling behavior in the Interactive Video viewer:**
 
 The auto scroll behavior of thumbnails in the Interactive Video viewer functions independently of the display mode that you chose.
 

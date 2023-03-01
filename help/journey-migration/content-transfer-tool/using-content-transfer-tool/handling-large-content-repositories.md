@@ -30,6 +30,9 @@ Follow the section below to understand the important considerations before start
 
 * Data Store Garbage Collection has been run within the previous 7 days on the source. For more details, refer to [Data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection). 
 
+### Additional Considerations when using AzCopy
+
+Pre-copy using AzCopy is currently not supported on Windows during CTT extraction.
 
 ### Additional Considerations if source AEM instance is configured to use an Amazon S3 or Azure Blob Storage Data Store {#additional-considerations-amazons3-azure}
 
@@ -92,7 +95,7 @@ In short, you will most likely want to download the Linux x86-64 binary from the
 
 AzCopy support for Amazon S3, Azure Blob Storage and File Data Store is included in latest CTT release.
 You can download the latest release of CTT from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
-
+It should be noted that only versions 2.0.0 and higher will be supported, and it is advisable to use the most recent version.
 
 ### 3. Configure an azcopy.config file {#configure-azcopy-config-file}
 

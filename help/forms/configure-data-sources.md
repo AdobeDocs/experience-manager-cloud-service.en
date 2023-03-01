@@ -8,18 +8,17 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 ---
 # Configure data sources {#configure-data-sources}
 
- ![Data integration](do-not-localize/data-integeration.png)
+![Data integration](do-not-localize/data-integeration.png)
 
 [!DNL Experience Manager Forms] Data Integration allows you to configure and connect to disparate data sources. The following types are supported out-of-the-box:
 
- <!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
-* [!DNL Experience Manager] user profile  -->
+* Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
 * RESTful web services  
 * SOAP-based web services
 * OData services (Version 4.0)
-* Microsoft Dynamics
+* Microsoft&reg; Dynamics
 * SalesForce
-* Microsoft Azure Blob Storage
+* Microsoft&reg; Azure Blob Storage
 
 Data integration supports OAuth2.0, Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> and connector for [!DNL Experience Manager] user profile are configured in [!DNL Experience Manager] web console.
 
@@ -27,40 +26,49 @@ Data integration supports OAuth2.0, Basic Authentication, and API Key authentica
 >
 >[!UICONTROL Experience Manager Forms] does not support relational database.
 
-<!-- ## Configure relational database {#configure-relational-database}
+## Configure relational database {#configure-relational-database}
+
+### Prerequisites
+
+Before configuring relational databases using [!DNL Experience Manager] Web Console Configuration, it is mandatory to:
+* [Enable advanced networking through cloud manager API](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), as ports are disabled by default.  
+* [Add JDBC driver dependencies in Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
+
+
+### Steps to configure relational database
 
 You can configure relational databases using [!DNL Experience Manager] Web Console Configuration. Do the following:
 
 1. Go to [!DNL Experience Manager] web console at `https://server:host/system/console/configMgr`.
-1. Look for **[!UICONTROL Apache Sling Connection Pooled DataSource]** configuration. Tap to open the configuration in edit mode.
+1. Locate **[!UICONTROL Day Commons JDBC Connections Pools]** configuration. Tap to open the configuration in edit mode.
+
+   ![JDBC Connector Pool](/help/forms/assets/jdbc_connector.png)
+
 1. In the configuration dialog, specify the details for the database you want to configure, such as:
 
-    * Name of the data source
-    * Data source service property that stores the data source name
-    * Java class name for the JDBC driver
+    * Java&trade; class name for the JDBC driver
     * JDBC connection URI
     * Username and password to establish connection with the JDBC driver
+    * Specify a SQL SELECT query in the **[!UICONTROL Validation Query]** field to validate connections from the pool. The query must return at least one row. Based on your database, specify one of the following:
+      * SELECT 1 (MySQL and MS SQL) 
+      * SELECT 1 from dual (Oracle)
+    * Name of the data source
+
+   Sample strings for configuring relational database:
+
+   ```text
+      "datasource.name": "sqldatasourcename-mysql",
+      "jdbc.driver.class": "com.mysql.jdbc.Driver",
+      "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST;default=proxy.tunnel]:30001/sqldatasourcename"
+   ```
 
    >[!NOTE]
    >
-   >Ensure that you encrypt sensitive information like passwords before configuring the data source. To encrypt:
-   >
-   >    
-   >    
-   >    1. Go to https://'[server]:[port]'/system/console/crypto.
-   >    1. In the **[!UICONTROL Plain Text]** field, specify the password or any string to encrypt and tap **[!UICONTROL Protect]**.
-   >    
-   >    
-   >    
-   >The encrypted text appears in the Protected Text field that you can specify in the configuration.
+   > Refer [SQL connections using JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) for more detailed information.
+    
+1. Tap **[!UICONTROL Save]** to save the configuration.
 
-1. Enable **[!UICONTROL Test on Borrow]** or **[!UICONTROL Test on Return]** to specify that the objects are validated before being borrowed or returned from and to the pool, respectively.
-1. Specify a SQL SELECT query in the **[!UICONTROL Validation Query]** field to validate connections from the pool. The query must return at least one row. Based on your database, specify one of the following:
-
-    * SELECT 1 (MySQL and MS SQL) 
-    * SELECT 1 from dual (Oracle)
-
-1. Tap **[!UICONTROL Save]** to save the configuration. -->
+Now, you can use the configured relational database with your Form Data Model. 
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -102,14 +110,14 @@ To configure the folder for cloud service configurations:
     1. Tap **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
 
 1. In the **[!UICONTROL Configuration Browser]**, tap **[!UICONTROL Create]**.
-1. In the **[!UICONTROL Create Configuration]** dialog, specify a title for the folder and enable **[!UICONTROL Cloud Configurations]**.
+1. In the **[!UICONTROL Create Configuration]** dialog, specify a title for the folder, and enable **[!UICONTROL Cloud Configurations]**.
 1. Tap **[!UICONTROL Create]** to create the folder enabled for cloud service configurations.
 
 ## Configure RESTful web services {#configure-restful-web-services}
 
-RESTful web service can be described using [Swagger specifications](https://swagger.io/specification/v2/) in JSON or YAML format in a [!DNL Swagger] definition file. To configure RESTful web service in [!DNL Experience Manager] as a Cloud Service, ensure that you have either the [!DNL Swagger] file ([Swagger Version 2.0](https://swagger.io/specification/v2/)) on your file system or the URL where the file is hosted.
+RESTful web service can be described using [Swagger specifications](https://swagger.io/specification/v2/) in JSON or YAML format in a [!DNL Swagger] definition file. To configure RESTful web service in [!DNL Experience Manager] as a Cloud Service, ensure that you have either the [!DNL Swagger] file ([Swagger Version 2.0](https://swagger.io/specification/v2/)) or [!DNL Swagger] file ([Swagger Version 3.0](https://swagger.io/specification/v3/)) on your file system or the URL where the file is hosted.
 
-Do the following to configure RESTful services:
+### Configure RESTful services for Open API Specification version 2.0 {#configure-restful-services-open-api-2.0}
 
 1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tap to select the folder where you want to create a cloud configuration.
 
@@ -119,7 +127,7 @@ Do the following to configure RESTful services:
 1. Specify the following details for the RESTful service:
 
     * Select URL or File from the [!UICONTROL Swagger Source] drop-down, and accordingly specify the [!DNL Swagger URL] to the[!DNL  Swagger] definition file or upload the [!DNL Swagger] file from your local file system.
-    * Based on the[!DNL  Swagger] Source input, the following fields are pre-populated with values:
+    * Based on the[!DNL  Swagger] Source input., the following fields are pre-populated with values:
 
         * Scheme: The transfer protocols used by the REST API. The number of scheme types that display in the drop-down list depend on the schemes defined in the [!DNL Swagger] source.
         * Host: The domain name or IP address of the host that serves the REST API. It is a mandatory field.
@@ -133,6 +141,34 @@ Do the following to configure RESTful services:
     <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. Tap **[!UICONTROL Create]** to create the cloud configuration for the RESTful service.
+
+### Configure RESTful services for Open API Specification version 3.0 {#configure-restful-services-open-api-3.0}
+
+1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tap to select the folder where you want to create a cloud configuration.
+
+   See [Configure folder for cloud service configurations](configure-data-sources.md#cloud-folder) for information about creating and configuring a folder for cloud service configurations.
+
+1. Tap **[!UICONTROL Create]** to open the **[!UICONTROL Create Data Source Configuration wizard]**. Specify a name and optionally a title for the configuration, select **[!UICONTROL RESTful Service]** from the **[!UICONTROL Service Type]** drop-down, optionally browse and select a thumbnail image for the configuration, and tap **[!UICONTROL Next]**.
+1. Specify the following details for the RESTful service:
+
+    * Select URL or File from the [!UICONTROL Swagger Source] drop-down, and accordingly specify the [!DNL Swagger 3.0 URL] to the[!DNL  Swagger] definition file or upload the [!DNL Swagger] file from your local file system.
+    * Based on the[!DNL  Swagger] Source input, the connection information with the target server is displayed.
+    * Select the authentication type — None, OAuth2.0, Basic Authentication, API Key, or Custom Authentication — to access the RESTful service, and accordingly provide details for authentication.
+
+    If you select **[!UICONTROL API Key]** as the authentication type, specify the value for the API key. The API key can be sent as a request header or as a query parameter. Select one of these options from the **[!UICONTROL Location]** drop-down list and specify the name of the header or the query parameter in the **[!UICONTROL Parameter Name]** field accordingly.
+
+    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
+
+1. Tap **[!UICONTROL Create]** to create the cloud configuration for the RESTful service.
+
+Some of the operations not supported by RESTful services Open API Specification version 3.0  are:
+* Callbacks
+* oneof/anyof
+* Remote reference
+* Links
+* Different request bodies for different MIME types for a single operation
+
+You can refer to [OpenAPI 3.0 Specification](https://swagger.io/specification/v3/) for detailed information. 
 
 ### Form data model HTTP client configuration to optimize performance {#fdm-http-client-configuration}
 
@@ -152,6 +188,7 @@ Set the following properties of the **[!UICONTROL Form Data Model HTTP Client Co
 
 The following JSON file displays a sample:
 
+
 ```json
 {   
    "http.connection.keep.alive.duration":"15",   
@@ -163,20 +200,13 @@ The following JSON file displays a sample:
 } 
 ```
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
-
-
-Perform the following steps to configure the form data model HTTP client:
-
-1. Log in to [!DNL Experience Manager Forms] Author Instance as an administrator and go to [!DNL Experience Manager] web console bundles. The default URL is [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-
 1. Tap **[!UICONTROL Form Data Model HTTP Client Configuration for REST data source]**.
 
 1. In the [!UICONTROL Form Data Model HTTP Client Configuration for REST data source] dialog:
 
    * Specify the maximum number of permitted connections between form data model and RESTful web services in the **[!UICONTROL Connection limit in total]** field. The default value is 20 connections.
 
-   * Specify the maximum number of permitted connections for each route in the **[!UICONTROL Connection limit on per route basis]** field. The default value is 2 connections.
+   * Specify the maximum number of permitted connections for each route in the **[!UICONTROL Connection limit on per route basis]** field. The default value is two connections.
 
    * Specify the duration, for which a persistent HTTP connection is kept alive, in the **[!UICONTROL Keep alive]** field. The default value is 15 seconds.
 
@@ -214,11 +244,13 @@ You can specify a regular expression that serves as the filter for absolute URLs
 
 Set the `importAllowlistPattern` property of the **[!UICONTROL Form Data Model SOAP Web Services Import Allowlist]** configuration to specify the regular expression. The following JSON file displays a sample:
 
+
 ```json
 {
   "importAllowlistPattern": ".*"
 }
 ```
+
 
 To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
@@ -229,7 +261,7 @@ An OData service is identified by its service root URL. To configure an OData se
 >[!NOTE]
 >
 > Form data model supports [OData version 4](https://www.odata.org/documentation/).
->For step-by-step guide to configure [!DNL Microsoft Dynamics 365], online or on-premises, see [[!DNL Microsoft Dynamics] OData Configuration](ms-dynamics-odata-configuration.md).
+>For step-by-step guide to configure [!DNL Microsoft&reg; Dynamics 365], online or on-premises, see [[!DNL Microsoft&reg; Dynamics] OData Configuration](ms-dynamics-odata-configuration.md).
 
 1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tap to select the folder where you want to create a cloud configuration.
 
@@ -245,13 +277,13 @@ An OData service is identified by its service root URL. To configure an OData se
 
    >[!NOTE]
    >
-   >You must select OAuth 2.0 authentication type to connect with [!DNL Microsoft Dynamics] services using OData endpoint as the service root.
+   >You must select OAuth 2.0 authentication type to connect with [!DNL Microsoft&reg; Dynamics] services using OData endpoint as the service root.
 
 1. Tap **[!UICONTROL Create]** to create the cloud configuration for the OData service.
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
-When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other’s identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
+When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.
@@ -264,4 +296,4 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## Next steps {#next-steps}
 
-You have configured the data sources. Next you can create a Form Data Model or if you have already created a Form Data Model without a data source, you can associate it with the data sources you just configured. See [Create form data model](create-form-data-models.md) for details.
+You have configured the data sources. Next you can create a Form Data Model or if you have already created a Form Data Model without a data source, you can associate it with the data sources you configured. See [Create form data model](create-form-data-models.md) for details.
