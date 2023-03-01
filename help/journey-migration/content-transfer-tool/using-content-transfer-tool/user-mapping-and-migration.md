@@ -1,7 +1,6 @@
 ---
 title: User Mapping and Principal Migration
 description: Overview of User Mapping and Principal Migration
-exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 ---
 # User Mapping and Principal Migration {#user-mapping-and-principal-migration}
 
