@@ -1,6 +1,6 @@
 ---
 title: How to migrate from an AEM 6.5 Forms and AEM 6.4 Forms to [!DNL AEM Forms] as a Cloud Service environment?
-description: Migrate from an [!DNL AEM Forms] On-Premise environment to [!DNL AEM Forms] as a Cloud Service environment
+description: Migrate from an [!DNL AEM Forms] (On-Premise and AMS environments) to [!DNL AEM Forms] as a Cloud Service environment
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
@@ -8,7 +8,7 @@ level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 ---
-# Migrate to [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
+# Migrate from an [!DNL AEM Forms] (On-Premise and AMS environments) to [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
 You can migrate your Adaptive Forms, themes, templates, and cloud configurations from <!-- AEM 6.3 Forms--> AEM 6.4 Forms on OSGi and AEM 6.5 Forms on OSGi to [!DNL AEM] as a Cloud Service. Before migrating these assets, use the Migration Utility to convert the format used in the earlier versions to the format used in [!DNL AEM] as a Cloud Service. When you run Migration Utility, the following assets are updated:
 
@@ -19,14 +19,16 @@ You can migrate your Adaptive Forms, themes, templates, and cloud configurations
 
 ## Considerations {#consideration}
 
-* The service helps migrate content from only [!DNL AEM Forms] on OSGi environments. Migrating content from [!DNL AEM Forms] on JEE to a Cloud Service environment is not supported.
+*   The service helps migrate content from only [!DNL AEM Forms] on OSGi environments. Migrating content from [!DNL AEM Forms] on JEE to a Cloud Service environment is not supported.
 
-* (Only for AEM 6.3 Forms or a previous version environment upgraded to AEM 6.4 Forms or AEM 6.5 Forms) Adaptive Forms based on out-of-the-box templates and themes available in AEM 6.3 Forms or previous version are not supported on [!DNL AEM Forms] as a Cloud Service.
+*   (Only for AEM 6.3 Forms or a previous version environment upgraded to AEM 6.4 Forms or AEM 6.5 Forms) Adaptive Forms based on out-of-the-box templates and themes available in AEM 6.3 Forms or previous version are not supported on [!DNL AEM Forms] as a Cloud Service.
 
-* The Verify step is not available. Remove the verify step from your existing Adaptive Forms before moving such forms to a Cloud Service environment. 
+*   Adobe Experience Manager Forms as a Cloud Service brings some notable changes to existing features in comparison to Adobe Experience Manager 6.5 Forms (On-Premise and Adobe-Managed Service) environments. Before proceeding with migrating to the service, [learn about these noteable changes](notable-changes.md) and the [feature level differences](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report) to decide to migrate based on features your organization requires. 
 
-* The Signature Step for Adaptive Forms is not available. Remove the Signature step from an existing Adaptive Form. Configure your Adaptive Form to use in-browser signing experience. It displays Adobe Sign agreement to sign the agreement within browser on submission of an adaptive form. In-browser signing experience helps provide a faster signing experience and saves time for the signer.
+ 
 
+
+<!-- 
 ## Difference with AEM 6.5 Forms 
 
 | Feature         | Difference with AEM 6.5 Forms    |
@@ -36,7 +38,7 @@ You can migrate your Adaptive Forms, themes, templates, and cloud configurations
 | Form Data Model | <li>Forms data model supports only HTTP and HTTPs endpoints to submit data. </li><li>Forms as a Cloud Service allows to use Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive, and services supporting general CRUD (Create, Read, Update, and Delete) operations as data stores. The service does not support JDBC connector, Mutual SSL for Rest connector, and x509 certificate-based authentication for SOAP data sources. </li>|
 | Automated Forms Conversion Service     | The service does not provide meta-model for Automated Forms Conversion Service. You can [download it from Automated Forms Conversion Service documentation](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model).|
 |Configurations|<li>Email support only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) to enable ports for sending emails and to enable SMTP protocol for your environment. </li> <li>If you use custom bundles, recompile your code with latest version of adobe-aemfd-docmanager before using these bundles with Forms as a Cloud Service.</li> |
-| Document Manipulation APIs (Assembler Service)| The service does not support operations dependent on other services or applications: <li>Conversion of documents in a non-PDF format to a PDF format is not supported. For example, Microsoft Word to PDF, Microsoft Excel to PDF, and HTML to PDF are not supported</li><li>Adobe Distiller-based conversions are not supported. For example, PostScript(PS) to PDF</li><li>Forms Service-based conversions are not supported. For example, XDP to PDF Forms.</li><li>The service does not support converting a Signed PDF or Transparent PDF to another PDF format.</li>|
+| Document Manipulation APIs (Assembler Service)| The service does not support operations dependent on other services or applications: <li>Conversion of documents in a non-PDF format to a PDF format is not supported. For example, Microsoft Word to PDF, Microsoft Excel to PDF, and HTML to PDF are not supported</li><li>Adobe Distiller-based conversions are not supported. For example, PostScript(PS) to PDF</li><li>Forms Service-based conversions are not supported. For example, XDP to PDF Forms.</li><li>The service does not support converting a Signed PDF or Transparent PDF to another PDF format.</li>| -->
 
 ## Prerequisites {#prerequisites}
 
@@ -50,7 +52,8 @@ You can migrate your Adaptive Forms, themes, templates, and cloud configurations
 * Accounts with administrator privileges on [!DNL AEM Forms] as a Cloud Service and your local [!DNL AEM Forms] environment.
 * Download and install Best Practice Analyzer, Content Transfer Tool, and [!DNL AEM Forms] Migration Utility from [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
 
-* Run the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration) tool and fix the reported issue.
+* Run the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration) tool and fix the reported issue. For the possible issues related to migrating from Adobe Experience Manager Forms to Adobe Experience Manager Forms as a Cloud Service, see [AEM Pattern Detection for Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report).  
+
 
 <!-- * Download the latest [compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases) for your [!DNL AEM Forms] version. -->
 
@@ -119,7 +122,7 @@ Perform the following steps to make your [!DNL AEM Forms] assets compatible with
 
 * **Workflow Model**: You can find AEM Workflow Models at `/conf/global/settings/workflow/models/`. For example, for an workflow model titled WKND Registration add path `/conf/global/settings/workflow/models/wknd-registration`
 
-You can add top level folder paths listed below or specific folder paths as described below. It enables you to migrate a certain assets and all the assets and forms at once.
+You can add top level folder paths listed below or specific folder paths as described below. It enables you to migrate a certain asset and all the assets and forms at once.
 
 * /content/dam/formsanddocuments-fdm
 * /content/dam/formsanddocuments/themes
