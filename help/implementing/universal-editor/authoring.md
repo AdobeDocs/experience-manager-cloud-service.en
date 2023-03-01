@@ -195,5 +195,5 @@ To learn more about the Universal Editor, see these documents.
 * [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation in order to deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
 * [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
-* [Attributes and Types](attribute-types.md) - Learn about the data attributes and types that the Universal Editor requires.
+* [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
 * [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.

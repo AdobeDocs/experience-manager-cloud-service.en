@@ -953,5 +953,5 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Authoring Content with the Universal Editor](/help/implementing/universal-editor/authoring.md)
   + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
   + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
-  + [Attributes and Types](/help/implementing/universal-editor/attribute-types.md)
+  + [Attributes and Types](/help/implementing/universal-editor/attributes-types.md)
   + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
