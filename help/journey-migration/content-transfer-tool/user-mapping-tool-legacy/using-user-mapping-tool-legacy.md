@@ -1,6 +1,6 @@
 ---
-title: Using User Mapping Tool
-description: Using User Mapping Tool
+title: Using User Mapping Tool (Legacy)
+description: Using User Mapping Tool (Legacy)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 ---
 # Using the User Mapping Tool {#using-user-mapping-tool}
