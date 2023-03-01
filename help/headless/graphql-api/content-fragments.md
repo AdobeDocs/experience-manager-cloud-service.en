@@ -822,9 +822,9 @@ query ($seoName: String!) {
 }
 ```
 
-### Dynamic Image Delivery with multiple specified parameters {#dynamic-image-delivery-multiple-specified-parameters}
+### Dynamic Image Delivery with multiple query variables {#dynamic-image-delivery-multiple-specified-parameters}
 
-The following example shows the use of multiple specified parameters:
+The following example shows the use of multiple query variables:
 
 ```graphql
 query ($seoName: String!, $format: AssetTransformFormat!) {
