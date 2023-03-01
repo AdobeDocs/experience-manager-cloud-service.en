@@ -26,7 +26,9 @@ To do this, it provides content authors with an intuitive UI that requires minim
 
 In order to author content for an app using the Universal Editor, the app must be instrumented by a developer to support the editor.
 
-Please see the document [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of how to configure and AEM app to work with the Universal Editor.
+>[!TIP]
+>
+>Please see the document [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of how to configure an AEM app to work with the Universal Editor.
 
 ## Sign In {#sign-in}
 
@@ -53,7 +55,7 @@ The Experience Cloud header is always present at the top of the screen. It is an
 
 #### Experience Manager {#experience-manager}
 
-Select the Adobe Experience Cloud link at the left of the header to navigate to the root of your Experience Manager solution to access tools such as [Cloud Manager,](|help/onboarding/cloud-manager-introduction.md) [Cloud Acceleration Manager,(/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) and [Software Distribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+Select the Adobe Experience Cloud link at the left of the header to navigate to the root of your Experience Manager solution to access tools such as [Cloud Manager,](/help/onboarding/cloud-manager-introduction.md) [Cloud Acceleration Manager,](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) and [Software Distribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 
 ![Global Navigation button](assets/global-navigation.png)
 
@@ -95,19 +97,23 @@ The Universal Editor header is always present at the top of the screen just belo
 
 #### The Hamburger Menu {#hamburger-menu}
 
-The hamburger menu is not implemented.
+The hamburger menu is not yet implemented.
 
 ![Hambuger menu](assets/hamburger-menu.png)
 
 #### Address Bar {#address-bar}
 
-The address bar shows you the location of the page you are editing. Tap or click to enter the address of another page to edit. Note that any page that you wish to edit with the Universal Editor must be instrumented to support he Universal Editor.
+The address bar shows you the location of the page you are editing. Tap or click to enter the address of another page to edit.
 
 ![Address bar](assets/address-bar.png)
 
 >[!TIP]
 >
 >Use the hot key `L` to open the address bar.
+
+>[!NOTE]
+>
+>Any page that you wish to edit with the Universal Editor must be [instrumented to support he Universal Editor.](getting-started.md)
 
 #### Collaboration Indicator {#collaboration}
 
