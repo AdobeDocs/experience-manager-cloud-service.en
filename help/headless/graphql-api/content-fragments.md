@@ -693,9 +693,9 @@ query {
 >
 >* Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. This is also the recommended way if you want to query large paginated result sets.
 
-## Dynamic Image Delivery {#dynamic-image-delivery}
+## Web-optimized image delivery {#web-optimized-image-delivery}
 
-Dynamic image delivery allows you to use a Graphql query to:
+Web-optimized image delivery allows you to use a Graphql query to:
 
 * Request a URL to an AEM Asset image
 
@@ -710,7 +710,8 @@ Dynamic image delivery allows you to use a Graphql query to:
 You can use AEM to:
 
 * Pass [Web-Optimized Image Delivery](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) into GraphQL queries. 
-  This means that the commands get applied during query execution, in the same way as URL parameters on GET requests for those images.
+
+This means that the commands get applied during query execution, in the same way as URL parameters on GET requests for those images.
 
 This allows you to dynamically create image renditions for JSON delivery, which avoids having to manually create and store those renditions in the repository.
 
@@ -744,7 +745,7 @@ The structure and syntax is:
 
 The URL transform is available for all query types: by path, list or paginated.
 
-### Dynamic Image Delivery with full parameters {#dynamic-image-delivery-full-parameters}
+### Web-optimized image delivery with full parameters {#web-optimized-image-delivery-full-parameters}
 
 The following is a sample query with a full set of parameters:
 
@@ -783,7 +784,7 @@ The following is a sample query with a full set of parameters:
 }
 ```
 
-### Dynamic Image Delivery with a single query variable {#dynamic-image-delivery-single-specified-parameter}
+### Web-optimized image delivery with a single query variable {#web-optimized-image-delivery-single-query-variable}
 
 The following example shows the use of a single query variable:
 
@@ -822,7 +823,7 @@ query ($seoName: String!) {
 }
 ```
 
-### Dynamic Image Delivery with multiple query variables {#dynamic-image-delivery-multiple-specified-parameters}
+### Web-optimized image delivery with multiple query variables {#web-optimized-image-delivery-multiple-query-variables}
 
 The following example shows the use of multiple query variables:
 
@@ -861,7 +862,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 }
 ```
 
-### Dynamic Image Delivery Request by URL {#dynamic-image-delivery-request-url}
+### Web-optimized image delivery request by URL {#web-optimized-image-delivery-request-url}
 
 If you save your query as a persisted query (for example, with the name `dynamic-url-x`) you can then [execute the persisted query directly](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
 
