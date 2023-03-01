@@ -26,7 +26,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 
 ## Create a Model {#create-model}
 
-The Content Fragment models console opens in a new tab. Think of the Content Fragment model console as your library of models, where you create new models and manage existing models.
+The Content Fragment model console opens in a new tab. Think of the Content Fragment model console as your library of models, where you create new models and manage existing models.
 
 1. Click the **Create** button at the top-right of the screen to begin creating a Content Fragment model.
 
