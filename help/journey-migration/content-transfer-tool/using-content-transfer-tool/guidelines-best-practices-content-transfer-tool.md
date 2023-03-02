@@ -7,12 +7,16 @@ exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 
 ## Guidelines and Best Practices {#best-practices}
 
+<!-- Alexandru: hiding for now
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_guidelines"
 >title="Guidelines and Best Practices"
 >abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="Important Considerations for using Content Transfer Tool"
->additional-url="/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md#important-considerations" text="Important Considerations when Mapping and Migrating Users"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.md#important-considerations" text="Important Considerations when Mapping and Migrating Users" 
+
+-->
 
 A new version of the Content Transfer Tool is available which integrates the content transfer process with Cloud Acceleration Manager. It is highly recommended to switch over to this new version to leverage all the benefits it provides:
 
