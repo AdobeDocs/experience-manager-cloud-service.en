@@ -32,8 +32,6 @@ Various keyboard shortcuts are available throughout AEM. Some apply when [editin
 |Select one, or more, Content Fragments|`u`|Open the unpublish now dialog|
 |Any open dialog|`esc`|Dialog is dismissed|
 
-To select multiple Content Fragments, hold the `Shift` key while navigating the table rows with arrow keys. 
-
 Various keyboard shortcuts are also available for desktop users. Some apply when [editing pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), others to the general [use of consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 >[!NOTE]
