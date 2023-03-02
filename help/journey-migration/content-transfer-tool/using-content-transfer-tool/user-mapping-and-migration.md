@@ -9,6 +9,9 @@ description: Overview of User Mapping and Principal Migration
 >title="User Mapping"
 >abstract="The Content Transfer Tool helps you move users and groups from your existing AEM system to AEM as a Cloud Service. Existing users must be mapped to their IMS IDs to avoid having them duplicated on the Cloud Service author instance."
 
+>[!NOTE]
+>For previous versions of the User Mapping Tool, see the [legacy documentation](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md) 
+
 ## Introduction {#introduction}
 
 As part of the transition journey to Adobe Experience Manager (AEM) as a Cloud Service, you need to move users and groups from your existing AEM system to AEM as a Cloud Service. This is done by the Content Transfer Tool.
