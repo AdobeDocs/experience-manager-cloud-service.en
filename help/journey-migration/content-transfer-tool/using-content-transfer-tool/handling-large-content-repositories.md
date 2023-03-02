@@ -11,7 +11,7 @@ exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 >id="aemcloud_ctt_precopy"
 >title="Handling Large Content Repositories"
 >abstract="To significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service, CTT can leverage AzCopy as an optional pre-copy step. Once this pre-step is configured, in the extraction phase, AzCopy copies blobs from Amazon S3 or Azure Blob Storage to the migration set blob store. In the ingestion phase, AzCopy copies blobs from the migration set blob store to the destination AEM as a Cloud Service blob store."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step" text="Getting started with AzCopy as a Pre-Copy step"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step" text="Getting started with AzCopy as a Pre-Copy step"
 
 Copying a large number of blobs with the Content Transfer Tool (CTT) may take multiple days. 
 To significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service, CTT can leverage [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) as an optional pre-copy step. This pre-copy step can be used when the source AEM instance is configured to use an Amazon S3, Azure Blob Storage data store, or File Data Store. The pre-copy step is most effective for the 1st full extraction and ingestion. However, using pre-copy for subsequent top-ups is not recommended (if the top-up size is less than 200GB) because it may add time to the entire process. Once this pre-step is configured, in the extraction phase, AzCopy copies blobs from Amazon S3,  Azure Blob Storage, or File data store to the migration set blob store. In the ingestion phase, AzCopy copies blobs from the migration set blob store to the destination AEM as a Cloud Service blob store. 
@@ -24,13 +24,13 @@ Follow the section below to understand the important considerations before start
 
 * Source AEM version needs to be 6.3 - 6.5.
 
-* Source AEM's data store is configured to use Amazon S3 or Azure Blob Storage. For more details, refer [Configuring node stores and data stores in AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en).
+* Source AEM's data store is configured to use Amazon S3 or Azure Blob Storage. For more details, refer [Configuring node stores and data stores in AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html).
 
 * Each migration set will copy the entire data store, so only a single migration set should be used.
 
 * You will need access to install [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) on the instance (or VM) running the source AEM instance.
 
-* Data Store Garbage Collection has been run within the previous 7 days on the source. For more details, refer to [Data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection).  
+* Data Store Garbage Collection has been run within the previous 7 days on the source. For more details, refer to [Data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).  
 
 >[!NOTE]
 >Currently, text renditions are not functioning correctly on Windows machines and this is a known issue. However, we will address this problem in the upcoming release and provide a fix for it.
@@ -159,7 +159,7 @@ With the above configuration file in place, the AzCopy pre-copy phase will run a
 >If AzCopy is not configured correctly you would see this message in the logs:
 >`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
-1. Begin an extraction from the CTT UI. Refer to [Getting Started with Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) and the [Extraction Process](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en) for more details.
+1. Begin an extraction from the CTT UI. Refer to [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) and the [Extraction Process](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) for more details.
 
 1. Confirm the following line is printed in the extraction log:
 
@@ -195,7 +195,7 @@ When AzCopy is running for source file dataStore, you should see messages like t
 
 ### 5. Ingesting with AzCopy {#ingesting-azcopy}
 
-Refer to [Ingesting Content into Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html)
+Refer to [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
 for general information about ingesting content into the target from the Cloud Acceleration Manager (CAM), including
 instruction on how to use AzCopy (pre-copy), or not, in the "New Ingestion" dialog.
 
