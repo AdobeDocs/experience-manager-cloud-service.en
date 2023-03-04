@@ -15,9 +15,11 @@ The release date for the latest version 1.9.8 of [!DNL Workfront for Experience 
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following updates:
 
-* Performance improvements in Experience Manager while creating a folder linked to Workfront.
+* Performance improvements in Experience Manager while creating project linked folders in Workfront.
 
-* When you delete a comment from a document or a folder in Workfront, the updates are not reflected in Experience Manager.
+* Comment deletions in Workfront are now reflected in Experience Manager.
+
+* Capability to manage blocking net-new customers on Experience Manager as a Cloud Service from configuring the connector.
 
 
 >[!IMPORTANT]
