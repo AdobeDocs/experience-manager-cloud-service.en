@@ -54,7 +54,7 @@ This section lists features and capabilities that have been removed from [!DNL E
 | [!DNL Foundation]       | Support for Apache Sling datasources (OSGi bundle org.apache.sling.datasource) | N/A | Removed |
 | [!DNL Foundation]       | Suppport for JST scripting templates (OSGi bundle org.apache.sling.scripting.jst) | N/A | Removed |
 | [!DNL Foundation]       | Support for the Apache Felix Http Whiteboard | OSGi Http Whiteboard | March 2022 |
-| [!DNL Foundation]       | Support for com.adobe.granite.oauth.server | N/A | March 2023 |
+| [!DNL Foundation]       | Support for com.adobe.granite.oauth.server | Adobe IMS Integration | March 2023 |
 
 
 ## Java API {#java-api}
