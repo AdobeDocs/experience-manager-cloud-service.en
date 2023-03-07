@@ -421,23 +421,23 @@ Log levels for those modules are defined by the variables `DISP_LOG_LEVEL` and `
 
 # Log level for the dispatcher
 #
-# Possible values are: Error, Warn, Info, Debug and Trace1
-# Default value: Warn
+# Possible values are: error, warn, info, debug and trace1
+# Default value: warn
 #
-# Define DISP_LOG_LEVEL Warn
+# Define DISP_LOG_LEVEL warn
  
 # Log level for mod_rewrite
 #
-# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
-# Default value: Warn
+# Possible values are: error, warn, info, debug and trace1 - trace8
+# Default value: warn
 #
 # To debug your RewriteRules, it is recommended to raise your log
-# level to Trace2.
+# level to trace2.
 #
 # More information can be found at:
 # https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
 #
-# Define REWRITE_LOG_LEVEL Warn
+# Define REWRITE_LOG_LEVEL warn
 
 ```
 
