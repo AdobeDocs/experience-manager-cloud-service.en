@@ -11,11 +11,9 @@ description: Exporting Content Fragments to Adobe Target
 
 You can export [Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md), created in Adobe Experience Manager as a Cloud Service (AEM), to Adobe Target (Target). They can then be used as offers in Target activities, to test and personalize experiences at scale.
 
-There are three options available for exporting a content fragment to Adobe Target:
+There is the option available for exporting a content fragment to Adobe Target:
 
-* HTML (default): Support for web and hybrid content delivery
 * JSON: Support for headless content delivery
-* HTML & JSON
 
 <!-- * GraphQL query ??? -->
 
@@ -389,7 +387,7 @@ To avoid such situations:
 
   * The Target offer with AEM Content Fragment may show undesired behavior
 
-    * The offer will likely still render, as the Content Fragment HTML was pushed to Target
+    * The offer will likely still render, as the Content Fragment was pushed to Target
     * Any references in the Content Fragment may not work correctly if referenced assets were deleted in AEM as well.
 
   * Of course, any further modifications to the Content Fragment are impossible as the Content Fragment does not exist anymore in AEM.
