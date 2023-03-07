@@ -58,7 +58,7 @@ Here you can see that there are three main areas:
         * Show information about references
         * Show information about language versions of the fragment
       * You can [select one, or more, Content Fragments to show the available actions](#actions-selected-content-fragment)
-    * You can select a column header to sort the table according to that column; select again to toggle between ascending and descending
+    * You can select a column header to sort the table according to that column; select again to toggle between ascending and descending. Currently, sorting is supported on the **Title**, **Modified**, and **Modified By** columns.
   * **[Create](#creating-new-content-fragment)** a new Content Fragment
   * [Filter](#filtering-fragments) the Content Fragments according to a selection of predicates, and save the filter for future use
   * [Search](#searching-fragments) the Content Fragments 
