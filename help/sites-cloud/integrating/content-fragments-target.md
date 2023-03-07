@@ -39,17 +39,6 @@ Content Fragments can be exported to the default workspace in Adobe Target, or t
 >
 >Adobe Target workspaces can be used to allow members of an organization (group) to create and manage offers and activities for this organization only; without giving access to other users. For example, country-specific organizations within a global concern.
 
-<!-- check links in note -->
-
->[!NOTE]
->
->For further information see also:
->
->* [Adobe Target development](https://developers.adobetarget.com/)
->* [Core Components - Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
->* [Adobe Target - How Do I Use Adobe Experience Manager (AEM) Content Fragments?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-content-fragments.html)
->* [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
-
 ## Prerequisites {#prerequisites}
 
 The following action is required:
@@ -362,7 +351,7 @@ To export a Content Fragment from AEM to Target (after specifying the Cloud Conf
 
 ## Using your Content Fragments in Adobe Target {#using-your-content-fragments-in-adobe-target}
 
-After performing the preceding tasks, the Content Fragment displays on the Offers page in Target. Please have a look at the [specific Target documentation](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-content-fragments.html) to learn about what you can achieve there.
+After performing the preceding tasks, the Content Fragment displays on the Offers page in Target. Please have a look at the [specific Target documentation](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html) to learn about what you can achieve there.
 
 >[!NOTE]
 >
@@ -391,3 +380,17 @@ To avoid such situations:
     * Any references in the Content Fragment may not work correctly if referenced assets were deleted in AEM as well.
 
   * Of course, any further modifications to the Content Fragment are impossible as the Content Fragment does not exist anymore in AEM.
+
+## Further Resources {#further-resources}
+
+For further information see also:
+
+* [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
+
+* [Core Components - Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+
+* [Adobe Target development](https://developers.adobetarget.com/)
+
+* [Adobe Target - Using AEM Content Fragments in Target activities to aid optimization or personalization](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
+
+* [Adobe Target - AEM Experience Fragments and Content Fragments overview](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)
