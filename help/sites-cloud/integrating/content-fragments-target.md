@@ -385,7 +385,9 @@ To avoid such situations:
 
 For further information see also:
 
+<!--
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
+-->
 
 * [Core Components - Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
