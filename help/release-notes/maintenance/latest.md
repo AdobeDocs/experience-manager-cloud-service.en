@@ -43,7 +43,7 @@ Do not upgrade if you are using CORS. We identified an issue impacting GraphQL c
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM OAK |1.44-T20221206170501-6d59064 |[Oak API 1.48.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/latest/index.html)| 
+|AEM OAK |1.44-T20221206170501-6d59064 |[Oak API 1.44.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.44.0/index.html)| 
 |AEM SLING API |Version 2.27.0 |[Apache Sling API 2.27.0 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL|Version 1.4.20-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|AEM WCM Core Components|Version 2.21.2|[GitHub](https://github.com/adobe/aem-core-wcm-components)|
+|AEM Core Components|Version 2.21.2|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
