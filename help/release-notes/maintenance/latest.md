@@ -7,15 +7,15 @@ description: Latest Maintenance Release Notes of [!DNL Adobe Experience Manager]
 
 The following section outlines the technical release rotes for the latest maintenance release of Experience Manager as a Cloud Service.
 
-## Release 11289 {#release-11289}
+## Release 11358 {#release-11358}
  
-Summarized below are the continuous improvements for maintenance release 11289, which was publicly released on March 7th, 2023. This maintenance release is an update from previous maintenance release 10912.
+Summarized below are the continuous improvements for maintenance release 11358, which was publicly released on March 10, 2023. This maintenance release is an update from previous maintenance release 11289.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
 ### Known Issues {#known-issues}
 
-Do not upgrade if you are using CORS. An issue impacting the GraphQL content delivery functionality was identified in this release. A change in the default AEM dispatcher configuration regarding how GraphQL persisted queries are cached can break GraphQL content delivery of such queries. This issue will be fixed in our next maintenance release.
+to fill
 
 ### Fixed Issues {#fixed-issues}
 
