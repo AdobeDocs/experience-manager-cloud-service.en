@@ -22,3 +22,19 @@ The Release Date for Best Practices Analyzer v2.1.40 is March 03, 2023.
 ### Bug Fixes {#bug-fixes-bpa}
 
 * BPA was reporting false positives on `grouprendercondition`. This has been fixed.
+
+## Content Transfer Tool {#ctt-release}
+
+### Release Date {#release-date-ctt}
+
+The Release Date for Content Transfer Tool v2.0.16 is March 08, 2022.
+
+### What's New {#what-is-new-ctt}
+
+* User mapping has been streamlined and integrated into the content extraction step. No setup is needed and by default user mapping will be done automatically when the user initiates content extraction. User has the option to disable user mapping if needed. Learn more [here.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=en#user-mapping-detail)
+* The precopy step using [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) has been integrated with the Content Transfer Tool to speed up content extractions siginificantly. Precopy is automatically configured and installed when this version of the CTT is installed. By default, when extraction is initiated, precopy will run automatically for migration sets larger than 200GB. User has the option to disable it if needed. Learn more [here.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)
+* CTT can now be used on Windows servers.
+
+### Bug Fixes {#bug-fixes-ctt}
+
+* Multiple bug fixes to improve content extraction resiliency.
