@@ -18,7 +18,7 @@ Click on your project card to open the project landing page and navigate to the 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
    >[!NOTE]
-   >Refer to [Creating and Managing a Project in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project) to learn more.
+   >Refer to [Creating and Managing a Project in Cloud Acceleration Manager](getting-started-cam.md#create-project) to learn more.
 
 
 ## Using Local Development Card {#local-development}
@@ -96,7 +96,7 @@ Follow this section to explore the Content Transfer activity card:
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
-   >Please note that a migration set will expire after a prolonged period of inactivity. Please review [Migration Set Expiry](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/deleting-migrationset.html#migration-set-expiry) for details.
+   >Please note that a migration set will expire after a prolonged period of inactivity. Please review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md#migration-set-expiry) for details.
 
    >[!NOTE]
    >Please review the [prerequisites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) and the [best practices and guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) before using the Content Transfer Tool.

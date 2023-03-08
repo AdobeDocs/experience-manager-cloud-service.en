@@ -32,7 +32,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 1. Provide the required information to create a new ingestion.
 
    * Select the migration set that contains the extracted data as the Source.
-     * Migration Sets will expire after a prolonged period of inactivity, so it is expected that the ingestion occurs relatively soon after the extraction has been performed. Review [Migration Set Expiry](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/deleting-migrationset.html#migration-set-expiry) for details.
+     * Migration Sets will expire after a prolonged period of inactivity, so it is expected that the ingestion occurs relatively soon after the extraction has been performed. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md#migration-set-expiry) for details.
    * Select the destination environment. This is where the content of the migration set will be ingested. Select the tier. (Author/Publish).
 
    >[!NOTE]
