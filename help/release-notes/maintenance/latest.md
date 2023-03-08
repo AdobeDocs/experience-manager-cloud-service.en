@@ -22,13 +22,13 @@ Do not upgrade if you are using CORS. We identified an issue impacting GraphQL c
 
 #### Sites {#sites-issues}
 
-- SITES-11584 Live Copies cannot be created for pages with annotations
+- SITES-11584 Fixed issue with Live Copies that could not be created for pages with annotations
 - SITES-11683 Disabled MSM Live Copies with partially broken inheritance
 
 
 #### Assets {#assets-issues}
 
-- ASSETS-21020 Unable to download assets - Image profile doesn't exist after moving asset
+- ASSETS-21020 Fixed issue with borken asset download - Image profile doesn't exist after moving asset
 - ASSETS-21023 Fixed issue with image renditions in Dynamic Media preventing access through the API
 
 #### Forms {#forms-issues}
