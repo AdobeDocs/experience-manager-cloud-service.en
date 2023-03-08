@@ -15,7 +15,7 @@ Feature enablement for this maintenance release will provide you with the full f
 
 ### Known Issues {#known-issues}
 
-Do not upgrade if you are using CORS. We identified an issue impacting GraphQL content delivery part on this release. A change in default AEM dispatcher config around how GraphQL persisted queries are cached can break the GraphQL content delivery of persisted queries for customers using a CORS configuration. This issue will be fixed in our next maintenance release.
+Do not upgrade if you are using CORS. An issue impacting the GraphQL content delivery functionality was identified in this release. A change in the default AEM dispatcher configuration regarding how GraphQL persisted queries are cached can break GraphQL content delivery of such queries. This issue will be fixed in our next maintenance release.
 
 ### Fixed Issues {#fixed-issues}
 
