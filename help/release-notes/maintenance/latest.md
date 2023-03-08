@@ -21,22 +21,19 @@ to fill
 
 #### Sites {#sites-issues}
 
-- SITES-11584 Fixed issue with Live Copies that could not be created for pages with annotations
-- SITES-11683 Disabled MSM Live Copies with partially broken inheritance
+to fill
 
 #### Assets {#assets-issues}
 
-- ASSETS-20879 Fixed regression preventing Asset Reports UI from working correctly and resulted in incorrect results in generated reports.
-- ASSETS-21020 Fixed issue with broken asset download - Image profile doesn't exist after moving asset
-- ASSETS-21023 Fixed issue with image renditions in Dynamic Media preventing access through the API
+to fill
 
 #### Forms {#forms-issues}
 
-- None
+to fill
 
 #### Platform {#platform-issues}
 
-- GRANITE-44467 - Fixed issue causing import to fail, when updating an existing node, Filevault under certain instances did not preserve mixin types and child nodes
+to fill
 
 ### Embedded Technologies {#embedded-tech}
 
