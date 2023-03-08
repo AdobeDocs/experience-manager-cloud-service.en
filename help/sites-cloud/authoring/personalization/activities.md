@@ -78,6 +78,10 @@ Add an activity or edit an existing activity to focus your marketing efforts on 
 
 >[!NOTE]
 >
+>To be able to **Select a Target Configuration** you must be in the **Target Activity Authors** group. 
+
+>[!NOTE]
+>
 >New Adobe Target activities need to be *created* in the targeted content editor, not in the **Activities** console, as synchronization to Adobe Target will fail.
 >
 >You can, however, edit existing Adobe Target activities in the console.
