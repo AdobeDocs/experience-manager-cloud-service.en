@@ -24,7 +24,7 @@ A new version of the Content Transfer Tool is available which integrates the con
 * Improved user experience via better loading states, guardrails, and error handling 
 * Ingestion logs are persisted and are always available for troubleshooting
 
-To start using the new version you will need to uninstall older versions of the Content Transfer Tool. This is needed because the new version comes with a major architectural change. With v2.0.10, you will need to create new migration sets and re-run extraction and ingestion on the new migration sets. If a migration is already in progress, you may continue using the prior version of CTT until the migration is complete.
+To start using the new version you will need to uninstall older versions of the Content Transfer Tool. This is needed because the new version comes with a major architectural change. With version 2.x, you will need to create new migration sets and re-run extraction and ingestion on the new migration sets.
 Versions earlier than 2.0.0 will no longer be supported, and it is advisable to use the most recent version.
 
 The following Guidelines and Best Practices apply to the new version of the Content Transfer Tool:
@@ -81,11 +81,13 @@ Follow the section below to understand the important considerations while runnin
 
 * When using `Amazon S3` or `Azure` as the data store on the source AEM system, the data store should be configured so that the blobs stored cannot be deleted (garbage collected). This ensures integrity of index data and failure to configure this way may result in failed extractions due to lack of integrity of this index data.
 
-* If you are using custom indexes, you must ensure to configure  the custom indexes with `tika` node before running Content Transfer Tool. Refer to [Preparing the New Index Definition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) for more details.
+* If you are using custom indexes, you must ensure to configure  the custom indexes with `tika` node before running Content Transfer Tool. Refer to [Preparing the New Index Definition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) for more details.
 
 * If you intend to do top ups, it is essential that the content structure of existing content is not changed from the time the initial extraction is taken to when the top-up extraction is run. Top-ups cannot be run on content whose structure has been changed since the initial extraction. Please ensure you restrict this during the migration process.
 
 * If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
+
+* A migration set will expire after a prolonged period of inactivity, after which its data will no longer be available. Please review [Migration Set Expiry](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#extraction-setup-phase) for more details.
 
 ## What's Next {#whats-next}
 
