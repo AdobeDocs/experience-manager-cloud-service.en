@@ -28,7 +28,7 @@ Do not upgrade if you are using CORS. We identified an issue impacting GraphQL c
 #### Assets {#assets-issues}
 
 - ASSETS-20879 Fixed regression preventing Asset Reports UI from working correctly and resulted in incorrect results in generated reports.
-- ASSETS-21020 Fixed issue with borken asset download - Image profile doesn't exist after moving asset
+- ASSETS-21020 Fixed issue with broken asset download - Image profile doesn't exist after moving asset
 - ASSETS-21023 Fixed issue with image renditions in Dynamic Media preventing access through the API
 
 #### Forms {#forms-issues}
