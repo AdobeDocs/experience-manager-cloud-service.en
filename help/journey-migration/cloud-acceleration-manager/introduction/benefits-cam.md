@@ -9,7 +9,7 @@ exl-id: d7a6c4f6-0f50-4f44-8a62-4a5769c76bd5
 >id="aemcloud_cam_benefits"
 >title="Benefits of using Cloud Acceleration Manager"
 >abstract="Cloud Acceleration Manager (CAM) equips your teams with a guided experience with Adobe-recommended best practices and methodology to help your teams plan, implement and, Go Live with confidence."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en" text="Get Started with Cloud Acceleration Manager"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html" text="Get Started with Cloud Acceleration Manager"
 
 With a wide range of business requirements and customizations, moving to cloud can be an involved project. Cloud Acceleration Manager (CAM) equips your teams with a guided experience with Adobe-recommended best practices and methodology to help your teams plan, implement and, Go Live with confidence.
 
