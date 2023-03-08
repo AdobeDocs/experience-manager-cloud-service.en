@@ -14,7 +14,7 @@ The following shortcuts are available for the Sites, Assets, Users, Groups, Proj
 ||`Left Arrow`|Navigate up the tree structure / collapse tree node|
 ||`Down Arrow`|Move down a list of pages at the same level|
 ||`Up Arrow`|Move up a list of pages at the same level|
-|Console - Column View|`Shift-Up/Down Arrow`|Move up a list of pages at the same level|
+|Console - Column View|`Shift-Up/Down Arrow`|Move up/down, and select, a list of pages at the same level|
 ||`Esc`|Move up a list of pages at the same level|
 |Consoles|`?`|Keyboard shortcut help|
 ||`/`|Invoke [search](/help/sites-cloud/authoring/getting-started/search.md)|
