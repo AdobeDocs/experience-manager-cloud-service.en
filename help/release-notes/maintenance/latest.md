@@ -37,7 +37,7 @@ Do not upgrade if you are using CORS. We identified an issue impacting GraphQL c
 
 #### Platform {#platform-issues}
 
-- GRANITE-44467 - Fixed regression with latest version of FileVault
+- GRANITE-44467 - Fixed issue causing import to fail, when updating an existing node, Filevault under certain instances did not preserve mixin types and child nodes
 
 ### Embedded Technologies {#embedded-tech}
 
