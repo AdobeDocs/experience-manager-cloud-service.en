@@ -7,42 +7,43 @@ description: Latest Maintenance Release Notes of [!DNL Adobe Experience Manager]
 
 The following section outlines the technical release rotes for the latest maintenance release of Experience Manager as a Cloud Service.
 
-## Release XXXXX {#release-11012}
+## Release 11289 {#release-11289}
  
-Summarized below are the continuous improvements for maintenance release XXXXX, which was publicly released on March X, 2023. This maintenance release is an update from previous maintenance release 10912.
+Summarized below are the continuous improvements for maintenance release 11289, which was publicly released on March 7th, 2023. This maintenance release is an update from previous maintenance release 10912.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
 ### Known Issues {#known-issues}
 
-No known general issues are associated with this maintenance release.
+IMPORTANT
+Do not upgrade if you are using CORS. We identified an issue impacting GraphQL content delivery part on this release. A change in default AEM dispatcher config around how GraphQL persisted queries are cached can break the GraphQL content delivery of persisted queries for customers using a CORS configuration. This issue will be fixed in our next maintenance release.
 
 ### Fixed Issues {#fixed-issues}
 
-- CORS : pedro to update
+#### Sites {#sites-issues}
 
-### Sites {#sites-issues}
+- SITES-11584 Live Copies cannot be created for pages with annotations
+- SITES-11683 Disabled MSM Live Copies with partially broken inheritance
 
-- (placeholder)
 
+#### Assets {#assets-issues}
 
-### Assets {#assets-issues}
+- ASSETS-21020 Unable to download assets - Image profile doesn't exist after moving asset
+- ASSETS-21023 Fixed issue with image renditions in Dynamic Media preventing access through the API
 
-- (placeholder)
+#### Forms {#forms-issues}
 
-### Forms {#forms-issues}
+- None
 
-- (placeholder)
+#### Platform {#platform-issues}
 
-### Platform {#platform-issues}
-
-- (placeholder)
+- GRANITE-44467 - Fixed regression with latest version of FileVault
 
 ### Embedded Technologies {#embedded-tech}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM OAK |Version 1.48-T20230202132234-aa49252 |[Oak API 1.48.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/latest/index.html)|
+|AEM OAK |1.44-T20221206170501-6d59064 |[Oak API 1.48.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/latest/index.html)| 
 |AEM SLING API |Version 2.27.0 |[Apache Sling API 2.27.0 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL|Version 1.4.20-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |AEM WCM Core Components|Version 2.21.2|[GitHub](https://github.com/adobe/aem-core-wcm-components)|
