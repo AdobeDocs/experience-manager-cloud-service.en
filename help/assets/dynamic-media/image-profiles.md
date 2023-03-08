@@ -51,9 +51,9 @@ Sharpening is described in [Sharpening Images](/help/assets/dynamic-media/assets
 
 When you implement smart crop on images, Adobe recommends the following best practice and enforces the following limit:
 
-| Limit type | Best practice | Limit imposed |
+| Asset - Limit type | Best practice | Limit imposed |
 | --- | --- | --- |
-| Number of smart crops per image | 5 | 100 |
+| **Image** - Number of Smart Crops per image | 5 | 100 |
 
 See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
 

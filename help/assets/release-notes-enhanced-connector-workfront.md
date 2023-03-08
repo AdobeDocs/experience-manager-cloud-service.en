@@ -9,20 +9,22 @@ The following section outlines the general Release Notes for [!DNL Workfront for
 
 ## Release Date {#release-date}
 
-The release date for the latest version 1.9.7 of [!DNL Workfront for Experience Manager enhanced connector] is February 02, 2023.
+The release date for the latest version 1.9.8 of [!DNL Workfront for Experience Manager enhanced connector] is March 03, 2023.
 
 ## Release highlights {#release-highlights}
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following updates:
 
-* The metadata editor does not list Workfront custom forms properties after installing the 1.9.6 release.
+* Performance improvements in Experience Manager while creating project linked folders in Workfront.
 
-* The dev console displays `/content/dam/jcr:content/metadata/wfProjectURL not found` error message after installing the Workfront enhanced connector and opening the Assets home page.
+* Comment deletions in Workfront are now reflected in Experience Manager.
 
- 
+* Capability to manage blocking net-new customers on Experience Manager as a Cloud Service from configuring the connector.
+
+
 >[!IMPORTANT]
 >
->Adobe recommends you to [upgrade to the latest 1.9.7 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recommends you to [upgrade to the latest 1.9.8 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Known Issues {#known-issues}
 
@@ -31,6 +33,14 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** dropdown list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** dropdown list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** dropdown list as well as the **[!UICONTROL Document Actions]** dropdown list available in the new Workfront experience.
 
 ## Previous releases {#previous-releases}
+
+### January 2022 release {#january-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] version 1.9.7, released on February 02, 2023 includes the following updates:
+
+* The metadata editor does not list Workfront custom forms properties after installing the 1.9.6 release.
+
+* The dev console displays `/content/dam/jcr:content/metadata/wfProjectURL not found` error message after installing the Workfront enhanced connector and opening the Assets home page.
 
 ### December 2022 release {#december-2022-release}
 
