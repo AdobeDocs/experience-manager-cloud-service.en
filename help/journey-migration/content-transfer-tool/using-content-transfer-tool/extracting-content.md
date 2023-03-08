@@ -44,6 +44,7 @@ Follow the steps below to extract your migration set from the Content Transfer T
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
    You can also monitor the Extraction phase progress from Cloud Acceleration Manager by visiting the Content Transfer page.
+Andrew Top -> update this image
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
