@@ -8,7 +8,7 @@ exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 ---
 # Dynamic Media Video Profiles{#video-profiles}
 
-Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. When you encode your primary source videos using the Adaptive Video Encoding profile, during playback the video player automatically adjusts the quality of the video stream based on the Internet connection speed of your customers. This action is known as adaptive streaming.
+Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. When you encode your primary source videos using the Adaptive Video Encoding profile, during playback, the video player automatically adjusts the quality of the video stream based on the Internet connection speed of your customers. This action is known as adaptive bitrate streaming.
 
 The following are other factors that determine the quality of your videos:
 
@@ -39,7 +39,7 @@ See also [Profiles for Processing Metadata, Images, and Videos](/help/assets/dyn
 
 ## Adaptive video encoding presets {#adaptive-video-encoding-presets}
 
-The following table identifies best practice encoding profiles for adaptive video streaming to mobile and tablet devices, and desktop computers. You can use these presets for any aspect ratio video.
+The following table identifies best practices when encoding profiles for adaptive video streaming to mobile and tablet devices, and desktop computers. You can use these presets for any aspect ratio video.
 
 <table>
  <tbody>
@@ -98,7 +98,7 @@ The maximum supported video file size for smart crop is the following criteria:
 * 30 frames per second (FPS).
 * File size of 300 MB.
 
-Adobe Sensei is limited to 9000 frames. That is, five minutes at 30 FPS. If your video has a higher FPS, the maximum supported video duration decreases. For example, a 60 FPS video must be two and a half minutes long to be supported by Adobe Sensei and smart crop.
+Adobe Sensei is limited to 9000 frames. That is, five minutes at 30 FPS. If your video has a higher FPS, the maximum-supported video duration decreases. For example, a 60 FPS video must be two and a half minutes long to be supported by Adobe Sensei and smart crop.
 
 ![Smart Crop for Video](assets/smart-crop-video.png)
 
@@ -106,7 +106,7 @@ Adobe Sensei is limited to 9000 frames. That is, five minutes at 30 FPS. If your
 >
 >For video smart crop to work, you must include one or more video encoding presets with your Video Profile.
 
-To use smart crop for video, you create an adaptive or progressive video encoding profile. As part of your profile, use the **[!UICONTROL Smart Crop Ratio]** tool to select pre-defined aspect ratios. As an example, after you define your video encoding presets, you can add a "Mobile Landscape" definition with an aspect ratio of 16x9, and a "Mobile Portrait" definition with an aspect ratio of 9x16. Other aspect or crop ratios from which you can choose include 1x1, 4x3, and 4x5.
+To use smart crop for video, you create an adaptive or progressive video encoding profile. As part of your profile, use the **[!UICONTROL Smart Crop Ratio]** tool to select pre-defined aspect ratios. As an example, after you define your video encoding presets, you can add a "Mobile Landscape" definition with an aspect ratio of 16x9, and a "Mobile Portrait" definition with an aspect ratio of 9x16. Other aspect or crop ratios from which you can choose to include 1x1, 4x3, and 4x5.
 
 ![Edit a video encoding profile with smart crop](assets/edit-smart-crop-video2.png)
 
@@ -118,15 +118,15 @@ See [Apply Video Profiles to specific folders](#applying-video-profiles-to-speci
 
 See also [Smart crop for images](image-profiles.md).
 
-## Create a Video Profile for adaptive streaming {#creating-a-video-encoding-profile-for-adaptive-streaming}
+## Create a Video Profile for adaptive bitrate streaming {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 Dynamic Media already comes with a predefined Adaptive Video Encoding profile-a group of video upload settings for MP4 H.264-that is optimized for the best viewing experience. You can use this profile when you upload your videos.
 
-However, if this predefined profile does not meet your needs, you can choose to create your own adaptive video encoding profile. As a best practice, when you use the setting **[!UICONTROL Encode for adaptive streaming]**, all encoding presets that you add to the profile are validated. This functionality ensures that all videos have the same aspect ratio. In addition, the encoded videos are treated as a multi-bitrate set for streaming.
+However, if this predefined profile does not meet your needs, you can choose to create your own adaptive video encoding profile. As a best practice, when you use the setting **[!UICONTROL Encode for adaptive streaming]**, all encoding presets that you add to the profile are validated. This functionality ensures that all videos have the same aspect ratio. In addition, the encoded videos are treated as a multibitrate set for streaming.
 
 When you create the video encoding profile, you notice that most encoding options are pre-populated with recommended default settings to help you. However, if you select a value other than the recommended default, it can result in poor video quality during playback and other performance issues.
 
-So, for all MP4 H.264 video encoding presets in the profile, the following values are validated to ensure that they are the same across individual encoding presets in the profile, making adaptive streaming possible:
+So, for all MP4 H.264 video encoding presets in the profile, the following values are validated to ensure that they are the same across individual encoding presets in the profile, making adaptive bitrate streaming possible:
 
 * Video Format Codec - MP4 H.264 (.mp4)
 * Audio Codec
@@ -137,7 +137,7 @@ So, for all MP4 H.264 video encoding presets in the profile, the following value
 * H264 Profile
 * Audio Sampling Rate
 
-If the values are not the same, you can continue creating the profile as is. However, adaptive streaming is not possible. Instead, users experience single-bitrate streaming. It is recommended that you edit the encoding settings to use the same values across individual encoding presets in the profile. (The Video Profile/preset editor enforces parity of the adaptive video encoding settings if "Encode for adaptive streaming" is enabled.)
+If the values are not the same, you can continue creating the profile as is. However, adaptive bitrate streaming is not possible. Instead, users experience single-bitrate streaming. It is recommended that you edit the encoding settings to use the same values across individual encoding presets in the profile. (The Video Profile/preset editor enforces parity of the adaptive video encoding settings if "Encode for adaptive streaming" is enabled.)
 
 See also [Create a video encoding profile for progressive streaming](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -145,7 +145,7 @@ See also [Best practices for video encoding](/help/assets/dynamic-media/video.md
 
 To define advanced processing parameters for other asset types, see [Configure asset processing](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**To create a Video Profile for adaptive streaming**,
+**To create a Video Profile for adaptive bitrate streaming**,
 
 1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Select **[!UICONTROL Create]**.
@@ -188,7 +188,7 @@ If you choose not to use the option **[!UICONTROL Encode for adaptive streaming]
 
 The supported video format codecs are H.264 (.mp4) and WebM.
 
-See also [Create a video encoding profile for adaptive streaming](#creating-a-video-encoding-profile-for-adaptive-streaming).
+See also [Create a video encoding profile for adaptive bitrate streaming](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
 See also [Best Practices for Video Encoding](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -237,7 +237,7 @@ You can now apply the profile to folders that contain videos. See [Apply a Video
 
 ## Use custom-added video encoding parameters {#using-custom-added-video-encoding-parameters}
 
-You can edit an existing video encoding profile to take advantage of advanced video encoding parameters that are not found in the user interface when you create or edit a Video Profile in Experience Manager. You can custom-add one or more advanced parameters, such as minBitrate and maxBitrate, to your existing profile.
+You can edit an existing encoding profile for video to take advantage of advanced video encoding parameters that are not found in the user interface when you create or edit a Video Profile in Experience Manager. You can custom-add one or more advanced parameters, such as minBitrate and maxBitrate, to your existing profile.
 
 **To use custom-added video encoding parameters:**
 
@@ -260,7 +260,7 @@ You can edit an existing video encoding profile to take advantage of advanced vi
   </tr>
   <tr>
    <td><code>h264Level</code></td>
-   <td>H.264 level to use for encoding. Normally this level is automatically determined based on the encoding settings you are using.</td>
+   <td>H.264 level to use for encoding. Normally this level is automatically determined based on the encoding settings that you are using.</td>
    <td><code>String</code></td>
    <td><p>10 * h264 level</p> <p>For example, 3.0 = 30, 1.3 = 13)</p> <p>No default value.</p> </td>
   </tr>
@@ -268,7 +268,7 @@ You can edit an existing video encoding profile to take advantage of advanced vi
    <td><code>keyframe</code></td>
    <td>The target number of frames between keyframes. Calculate this value so you can generate a keyframe every 2-10 seconds. For example, at 30 frames per second, the keyframe interval is 60-300.<br /> <br /> Lower keyframe intervals improve stream seeking and stream switching behavior for adaptive video encodings and can also improve the quality for videos that have lot of motion. However, because keyframes increase a file's size, a lower keyframe interval usually results in lower overall video quality at a given bitrate.</td>
    <td><code>String</code></td>
-   <td><p>Positive number.</p> <p>Default is 300.</p> <p>Recommended value for HLS (HTTP Live Streaming) is 60-90.</p> </td>
+   <td><p>Positive number.</p> <p>Default is 300.</p> <p>Recommended value for HLS or DASH (adaptive bitrate streaming) is 60-90. (To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See <a href="/help/assets/dynamic-media/video.md#enable-dash">Enable DASH on your account</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -286,7 +286,7 @@ You can edit an existing video encoding profile to take advantage of advanced vi
    <td><code>audioBitrateCustom</code></td>
    <td>Set value to <code>true</code> to force a constant bitrate for the audio stream, if supported by audio codec.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>Default is <code>false</code>.</p> <p>Recommended value for HLS (HTTP Live Streaming) is <code>false</code>.</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>Default is <code>false</code>.</p> <p>Recommended value for HLS or DASH is <code>false</code>. (To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See <a href="/help/assets/dynamic-media/video.md#enable-dash">Enable DASH on your account</a>.)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -318,7 +318,7 @@ To define advanced processing parameters for other asset types, see [Configure a
 1. On the toolbar, select **[!UICONTROL Edit]**.
 1. On the Video Encoding Profile page, edit the name and description, as desired.
 1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected.
-   Select the information icon for a description of adaptive streaming. (If you are editing a progressive Video Profile, do not select this check box.)
+   Select the information icon for a description of adaptive bitrate streaming. (If you are editing a progressive Video Profile, do not select this check box.)
 1. Under the Video Encoding Presets heading, add, edit, or delete video encoding presets that make up the profile.
 
    Select the information icon next to each option on the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs for more descriptions or recommended settings based on the selected video format codec.
@@ -331,7 +331,7 @@ To define advanced processing parameters for other asset types, see [Configure a
 1. On the Video Profiles page, check one Video Profile name.
 1. On the toolbar, select **[!UICONTROL Copy]**.
 1. On the Video Encoding Profile page, enter a new name for the profile.
-1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected. Select the information icon for a description of adaptive streaming. (If you are copying a progressive Video Profile, do not select the check box.)
+1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected. Select the information icon for a description of adaptive bitrate streaming. (If you are copying a progressive Video Profile, do not select the check box.)
 
    In Dynamic Media - Hybrid mode, if a WebM video preset is part of the Video Profile, then **[!UICONTROL Encode for adaptive streaming]** is not possible because all presets must be MP4.
 1. Under the Video Encoding Presets heading, add, edit, or delete video encoding presets that make up the profile.
