@@ -1,9 +1,14 @@
 ---
-title: Overview to User Mapping Tool
-description: Overview to User Mapping Tool
+title: Overview to User Mapping Tool (Legacy)
+description: Overview to User Mapping Tool (Legacy)
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
+hide: yes
+hidefromtoc: yes
 ---
 # Overview to User Mapping Tool {#overview-user-mapping-tool}
+
+
+<!-- Alexandru: drafting this for now
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
@@ -11,6 +16,8 @@ exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 >abstract="The Content Transfer Tool helps you move users and groups from your existing AEM system to AEM as a Cloud Service. Existing users and groups need to be mapped to their IMS IDs to avoid duplicate users and groups on the Cloud Service author instance."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Important Considerations for using User Mapping Tool"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="Using User Mapping Tool"
+
+-->
 
 ## Introduction {#introduction}
 
@@ -22,6 +29,6 @@ A major change to AEM as a Cloud Service is the fully integrated use of Adobe ID
 
 The Content Transfer Tool (without User Mapping) will migrate any users and groups associated with the content being migrated. The User Mapping Tool is a part of Content Transfer Tool, and its sole purpose is to modify the users so that they can be recognized correctly by IMS, the single-sign-on functionality used by AEM as a Cloud Service. Once these modifications are done, the Content Transfer Tool migrates the specified content's users and groups as usual.
 
-### What’s Next {#whats-next}
+### What's Next {#whats-next}
 
-Once you have learned what a User Mapping tool is, you are now ready to review important considerations and exceptional cases before using the User Mapping Tool. See [Important Considerations for User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md) for more details.
+Once you have learned what a User Mapping tool is, you are now ready to review important considerations and exceptional cases before using the User Mapping Tool. See [Important Considerations for User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md) for more details.
