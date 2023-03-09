@@ -31,7 +31,6 @@ Only version 2.0.0 and higher will be supported, and it is advisable to use the 
 The source AEM instance may be running behind a firewall where it can only reach certain hosts which have been added to an Allow List. In order to successfully run an extraction, the following endpoints will need to be accessible from the instance that is running AEM:
 
 * The Azure blob storage service: `casstorageprod.blob.core.windows.net`
-* The User Mapping IO endpoint: `usermanagement.adobe.io`
 
 >[!NOTE] 
 >If extraction fails due to the following error : "javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target" then this can be resolved by importing the relevant CA certificate.
@@ -188,4 +187,4 @@ Follow the steps below to run a size check:
 
 ## What's Next {#whats-next}
 
-Once you have learned how to create a migration set, you are now ready to learn about Extraction and Ingestion Processes in Content Transfer Tool. Before you learn these processes, you must review [Handling Large Content Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) to significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service.
+Once you have learned how to create a migration set, you are now ready to learn about Extraction and Ingestion Processes in Content Transfer Tool. Before you learn these processes, you must review [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) to significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service.
