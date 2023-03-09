@@ -84,7 +84,7 @@ The following section applies to the new version of the Content Transfer Tool. F
 
    The following dialog will be presented. Notice that a migration set will expire after a prolonged period of inactivity. After warnings are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md#migration-set-expiry) for details.
 
-   Andrew Top -> ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png) New image
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
 1. You should now see your migration list in the list view. Click on the three dots symbol (**...**) to open the dropdown and click on **Copy Extraction key**. You will need this key during the Extraction phase. Copy this Extraction key.
 

@@ -17,7 +17,6 @@ Migration sets can be deleted from Cloud Acceleration Manager.
 To delete a migration set, follow the steps below:
 
 1. Navigate to the Migration Set list view in Cloud Acceleration Manager and click on the three dots (**...**) next to the migration set that you want to delete. The **Delete** action should be visible as shown below.
-Andrew Top - update this image.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
@@ -46,5 +45,4 @@ All migration sets will eventually expire after a prolonged period of inactivity
 
 The expiry of a migration set can be monitored on the Migration Set row. A helpful visual indicator that a migration set is approaching its expiry date also added the project's card.
 
-Andrew Top - add project card image, and migration set row image.
-
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
