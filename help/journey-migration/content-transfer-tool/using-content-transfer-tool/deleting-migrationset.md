@@ -7,8 +7,8 @@ exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_delete_migrationset"
->title="Deletion or Expiration of a Migration Set"
->abstract="Learn about the deletion and expiry of a migration set."
+>title="Deletion of a Migration Set"
+>abstract="Learn about the deletion of a migration set."
 
 Migration sets can be deleted from Cloud Acceleration Manager.
 
@@ -33,16 +33,3 @@ To delete a migration set, follow the steps below:
 To delete the migration set from the Content Transfer wizard, select the migration set and click on **Delete** in the action bar.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam27.png)
-
-## Migration Set Expiry {#migration-set-expiry}
-
-All migration sets will eventually expire after a prolonged period of inactivity of approximately 90 days. After indicators are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. The expiry time can easily be extended by acting upon the migration set by:
-
-* editing its description
-* getting its extraction key
-* performing an extraction to it
-* performing an ingestion from it
-
-The expiry of a migration set can be monitored on the Migration Set row. A helpful visual indicator that a migration set is approaching its expiry date also added the project's card.
-
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
