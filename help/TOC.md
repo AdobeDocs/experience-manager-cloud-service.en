@@ -65,6 +65,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Release Notes for 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Latest Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
+    + 2023 {#2023}
+      + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2023 {#2023}
@@ -195,16 +197,17 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
       + [Validating Content Transfers](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
       + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+      + [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
       + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
       + [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
       + [Viewing Logs for a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
       + [Deleting a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [Running the Content Transfer Tool on a Publish Instance](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
       + [Troubleshooting Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-      + User Mapping Tool {#user-mapping-tool}
-        + [Overview](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
-        + [Important Considerations](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
-        + [Using User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
+      + Legacy User Mapping Tool (Legacy){#legacy-user-mapping-tool}
+        + [Overview](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
+        + [Important Considerations](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
+        + [Using User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
       + Legacy Content Transfer Tool {#legacy}
         + [Overview](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
         + [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
