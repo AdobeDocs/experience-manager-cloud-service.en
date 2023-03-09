@@ -20,23 +20,6 @@ Micro Frontend Asset Selector provides many benefits, such as:
 *   Easy to maintain as you can update the Assets Selector package to deploy and load the latest Micro Frontend on your application automatically. There are no updates required within your application to view the latest Micro Frontend modifications.
 *   Ease of customization as there are properties available to customize the Asset Selector display within your application.
 
-## Prerequisites {#prerequisites}
-
-Prerequisites for the non-IMS flow that the users should be aware about before integration:
-
-*   discoveryURL
-*   imsOrg
-*   imsToken
-*   apikey
-
-Prerequisites for the IMS flow:
-
-*   imsClientId
-*   imsScope
-*   redirectUrl
-*   discoveryURL
-*   imsOrg
-*   apikey 
 
 <!--
 
@@ -55,6 +38,28 @@ The authentication to the Experience Manager Assets as a Cloud Service repositor
 *   You already have an Identity Management System (IMS) token generated for authentication.
 *   You are not integrating an Adobe application on Unified Shell and do not have an IMS token generated for authentication.
 The first two scenarios are referred to as non-IMS flow in this article and the third scenario is referred to as an IMS flow.
+
+## Prerequisites {#prerequisites}
+
+**Non-IMS flow**
+
+*   discoveryURL
+*   imsOrg
+*   imsToken
+*   apikey
+
+For more information on these properties, refer to [Asset Selector Properties](#props).
+
+**IMS flow**
+
+*   imsClientId
+*   imsScope
+*   redirectUrl
+*   discoveryURL
+*   imsOrg
+*   apikey
+
+For more information on these properties, refer to [Example for the IMS flow](#ims-vanilla) and [Asset Selector Properties](#props).
 
 #### Example for the non-IMS flow {#non-ims-vanilla}
 
@@ -306,7 +311,9 @@ Asset Selector also provids out-of-the-box filter options to refine your search 
 
 *   `File type`: includes folder, file, images, documents, or video
 *   `MIME type`: includes JPG, GIF, PPTX, PNG, MP4, DOCX, TIFF, PDF, XLSX
-*   `Image type`: includes minimum/maximum width, minimum/maximum height of image 
+*   `Image Size`: includes minimum/maximum width, minimum/maximum height of image
+
+   ![rail-view-example](assets/filters-asset-selector.png)
 
 <!--
 
