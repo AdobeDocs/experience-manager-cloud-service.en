@@ -7,7 +7,7 @@ description: Learn how to leverage Rapid Development Environments for rapid deve
 
 >[!AVAILABILITY]
 >
->This feature is planned to gradually roll out to customers throughout the month of February.
+>This feature is planned to gradually roll out to customers.
 
 In order to deploy changes, current Cloud Development environments require the use of a process that employs extensive code security and quality rules called a CI/CD pipeline. For situations where quick and iterative changes are needed, Adobe has introduced Rapid Development Environments (RDEs for short).
 
@@ -258,7 +258,7 @@ where the response for a successful deployment resembles the following:
 
 The entire folder structure needs to be in the form of a zip file for this type of configuration. 
 
-From the `dispathcer` module of an AEM project, you can zip the dispatcher configuration by running the below maven command:
+From the `dispatcher` module of an AEM project, you can zip the dispatcher configuration by running the below maven command:
 
 `mvn clean package`
 
@@ -273,6 +273,10 @@ then deploy the configuration by this command:
 >[!TIP]
 >
 >The above command assumes you are deploying the [WKND](https://github.com/adobe/aem-guides-wknd) project's dispatcher configurations. Please make sure to replace the `X.X.X` with the corresponding WKND project version number or your project-specific version number when deploying your project's dispatcher configuration..
+
+>[!NOTE]
+>
+>RDE supports "Flexible mode" dispatcher configuration, but not "Legacy mode" dispatcher configuration. See [dispatcher documentation](/help/implementing/dispatcher/disp-overview.md#validation-debug) for information about the two modes. You can also consult the documentation on [migrating to Flexible mode](/help/implementing/dispatcher/validation-debug.md#migrating), if you have not done so already.
 
 A successful deployment will generate a response resembles the following:
 

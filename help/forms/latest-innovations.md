@@ -1,6 +1,6 @@
 ---
-title: Key features and capabilities of Adobe Experience Manager (AEM) Forms as a Cloud Service 
-description: "[!DNL AEM Forms] as a Cloud Service is a platform to create, manage, publish enterprise-class forms and business processes."
+title: Discover the latest innovations in Adobe Experience Manager Forms as a Cloud Service.
+description: "Discover the latest capabilities of [!DNL AEM Forms] as a Cloud Service to create, manage, and publish enterprise-class forms and business processes."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
 ---
 <!-- # Introduction to [!DNL AEM Forms] as a Cloud Service {#overview}
@@ -13,11 +13,26 @@ The organization can use [!DNL AEM Forms] as a Cloud Service to create digital f
 
 An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start using all these features without waiting to buy and set up a local infrastructure. The service also frees the organizations from the cycle of upgrades as it is always up to date and always offers the latest feature.  -->
 
+
+# Latest innovations {#latest-innovations}
+
+Some of the latest innovations in AEM Forms as a Cloud Service include:
+
+| Feature| Details| 
+|---|---|
+|Headless Adaptive Forms | Create and manage [Headless Adaptive Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) within the Adobe Experience Manager platform. Enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. <br/> <br/> These forms are designed to be submitted without the need for a traditional HTML form interface. In other words, they allow you to submit form data programmatically via an API or backend code without requiring any visible form elements on the front end. <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?)<br/> Headless forms are useful in various scenarios, such as when building single-page applications, progressive web apps, or mobile applications, where a traditional HTML form interface may not be necessary or practical. By allowing developers to submit form data directly through APIs or backend code, headless forms help streamline workflows and improve the overall performance of web applications.| 
+|Core Components |The [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) are a set of 24 open-source, BEM-compliant components that are built on the foundation of the Adobe Experience Manager WCM Core Components. They are specifically designed to be used for creating Adaptive Forms, which are forms that adapt to the device, browser and screen size of the user. <br/> <br/> These components can be used to create exceptional data capture and enrollment experiences by providing a wide range of form field options, including text fields, checkboxes, drop-down menus, and more. They also include features like validation, conditional logic, and responsive design, which can be used to create forms that are user friendly and easy to use. <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?)<br/>  Additionally, as these components are open-source, developers have the ability to easily customize and extend the components to match the specific needs of their organization. And, These components are built on BEM methodology which ensures that they are scalable and maintainable. | 
+|Microsoft PowerAutomate Connector | AEM Forms Power Automate Connector allows you to integrate Adobe Experience Manager (AEM) Forms with Microsoft Power Automate (previously known as Microsoft Flow). Power Automate is a cloud-based service that allows you to create automated workflows between different applications and services.  <br/> <br/> With AEM Form Power Automate Connector, you can create workflows that automatically trigger based on submission of an Adaptive Form. For example, you could create a workflow that automatically sends an email notification to a specific person when a user submits a form or create a task in Microsoft Planner when a user completes a form.  <br/> ![](https://powerusers.microsoft.com/t5/image/serverpage/image-id/182924i17C4BEA1C045D731/image-size/large/is-moderation-mode/true?v=1.0&px=999) <br/> The AEM Forms Power Automate Connector  is a powerful tool that enables you to automate and integrate your Adaptive Forms with other applications and services that connect with Microsoft Power Automate, allowing you to work with a wider range of tools. You can create workflows tailored to your specific needs, with the ability to add custom actions, conditions, and triggers. In addition, Power Automate provides detailed analytics and reporting, allowing you to monitor and optimize your workflows over time. | 
+|Microsoft Storage Connectors | AEM Forms Microsoft Storage Connectors for <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-sharedrive">OneDrive</a>, <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-sharedrive"> SharePoint, </a> and <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-azure-blob-storage"> Azure Blob Storage </a> are connectors that allow you to integrate Adobe Experience Manager (AEM) Forms with Microsoft OneDrive and SharePoint. With this connector, you can upload data files and attachments to OneDrive and SharePoint directly from Adaptive Forms. <br/> ![](/help/forms/assets/onedrive-and-sharepoint.jpg) <br/>OneDrive and SharePoint can integrate with other business applications, such as CRM systems, accounting software, and project management tools. This enables you to streamline your business processes, reduce manual data entry, and improve overall efficiency.| 
+
+
+<!-- 
+
 # Key features and capabilities {#key-features}
 
 [!DNL AEM Forms] as a Cloud Service provides several cloud-native capabilities such as a cloud-native architecture, auto-scaling, zero downtime for upgrades, a CDN (Content Delivery Network), cloud-native development environment, and ability to self-Service the environments via Cloud Manager. You can use the service to: 
 
-* [Create Adaptive Forms](creating-adaptive-form.md#strong-create-an-adaptive-form-strong) that automatically render for a user’s device and browser.
+* [Create Adaptive Forms](creating-adaptive-form.md#strong-create-an-adaptive-form-strong) that automatically render for a user's device and browser.
 
     ![Adaptive Forms](assets/rule-editor-example.gif)
 
@@ -33,7 +48,7 @@ In addition to above [!DNL AEM Forms] as a Cloud Service offers the following fe
 
 * An easy-to-use graphical user interface to let business users easily import, manage, preview, and publish forms
 * A responsive forms directory with powerful search features using keywords, tags, and metadata
-* Dynamic detection of a user’s device and location to render the form appropriately across web and mobile channels
+* Dynamic detection of a user's device and location to render the form appropriately across web and mobile channels
 * [Integration with Adobe Sign](adobe-sign-integration-adaptive-forms.md) services or Scribble to electronically sign documents containing confidential information
 * Ability to [connect the service to various types of data sources](data-integration.md#create-an-adaptive-form) to send and retrieve data. The service supports sending and retrieving data from RESTful web services, SOAP-based web services, and OData enabled services.
 * Integration with AEM Sites. It allows to embed an adaptive form in an AEM Sites page. You can also integrate an adaptive form to any webpage. 
