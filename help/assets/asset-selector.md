@@ -218,25 +218,25 @@ Vlad to provide inputs on this
 
 | Property | Type | Required | Default | Description |
 |---|---|---|---|---|
-| *rail* | boolean | No | false | If marked `true`, it displays the asset selector in a left panel and ease the drag and drop of an asset. If it is marked `false` then the presentation of asset selector is in default or modal view. |
-| *discoveryURL* | string | No | | It is a URL that triggers the MFE Asset Selector application integrated with your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Assets directly in case your application has the discovery information. (For example, https://aem-discovery.adobe.io) |
-| *imsOrg* | string | No | | It is an Adobe Identification Management System (IMS) id that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The imsORG key authenticates whether the org is under Adobe IMS or not. (For example, 745F37C35E4B776E0A49421B@AdobeOrg) |
-| *imsToken* | string | No | | It is the IMS bearer token used for authentication |
-| *apiKey* | string | No | | It is the API key used for accessing the AEM Discovery service (For example, aem-assets-backend-nr-1) |
-| *rootPath* | string | No | AEM_ROOT_PATH | It is the path where the Asset Selector is mounted. For example, /content/dam/marketing/subfolder. Anything outside this path is not accessible. |
-| *path* | string | No | | It is the path that is used to navigate to a specific directory of assets on first render. |
-| *filterSchema* | array | No | | It is a model that is used to configure properties that you want to specify for the filter. |
-| *filterFormProps* | object | No | | Specify the filter properties that you want to use to refine your search. For example, MIME type JPG, PNG, GIF. |
-| *selectedAssets* | Array `<object>` | No | | It is used to specify selected Assets on first appearance. An array of objects is required that contains an id property of the assets. For example, [{id: 'urn:234}, {id: 'urn:555'}]. An asset must be available in current directory. If you want to use a different directory, then provide the `path` of assets in tandem. |
-| *acvConfig* | object | No | | It is the Asset Collection View property that contains object containing custom configuration to override defaults. |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No | | If the OOTB translations are insufficient for your application needs, you can use this property to specify your own custom-localized values. Adding this overrides the default translations so that you can use the custom ones. You should pass a valid object (message descriptor) to the key of i18nSymbols that you want to override. |
-| *intl* | object | No | | The intl property is used to format text or date and time in localized format. |
-| *repositoryId* | string | No | '' | Provide repository ID from where the selector loads the content. |
-| *additionalAemSolutions* | `Array<string>` | No | [ ] | It allows you to add a list of additional AEM repositories. If no information is provided in this property, then only repositories having media library or AEM Assets are considered. |
-| *hideTreeNav* | boolean | No | | Specifies whether to show or hide assets tree navigation sidebar. This is used in modal view only and hence there is no effect of it in rail view. | 
+| *rail* | boolean | No | false | If marked `true`, it displays the Asset Selector in a left rail view. If it is marked `false`, the Asset Selector displays in modal view. |
+| *discoveryURL* | string | No | | A URL that triggers the Micro Frontend Asset Selector application integrated with your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Assets directly in case your application has the discovery information. (For example, https://aem-discovery.adobe.io) |
+| *imsOrg* | string | No | | Adobe Identification Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The imsORG key authenticates whether the org is under Adobe IMS or not.|
+| *imsToken* | string | No | | IMS bearer token used for authentication |
+| *apiKey* | string | No | | API key used for accessing the AEM Discovery service.|
+| *rootPath* | string | No | AEM_ROOT_PATH | Folder name from which you can select your assets. For example, /content/dam/marketing/subfolder. You cannot access and select assets from any other folder.  |
+| *path* | string | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
+| *filterSchema* | array | No | | Model that is used to configure properties that you need to specify for the filter. |
+| *filterFormProps* | object | No | | Specify the filter properties that you need to use to refine your search. For example, MIME type JPG, PNG, GIF. |
+| *selectedAssets* | Array `<object>` | No | | Specify selected Assets when the Asset Selector is rendered. An array of objects is required that contains an id property of the assets. For example, [{id: 'urn:234}, {id: 'urn:555'}]. An asset must be available in current directory. If you need to use a different directory, provide a value for the `path` property as well. |
+| *acvConfig* | object | No | | Asset Collection View property that contains object containing custom configuration to override defaults. |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No | | If the OOTB translations are insufficient for your application needs, you can use this property to specify your own custom-localized values. Adding these values overrides the default translations so that you can use the custom ones. You should pass a valid object (message descriptor) to the key of i18nSymbols that you need to override. |
+| *intl* | object | No | | Format text or date and time in localized format. |
+| *repositoryId* | string | No | '' | Repository from where the Asset Selector loads the content. |
+| *additionalAemSolutions* | `Array<string>` | No | [ ] | It allows you to add a list of additional AEM repositories. If no information is provided in this property, then only media library or AEM Assets repositories are considered. |
+| *hideTreeNav* | boolean | No | | Specifies whether to show or hide assets tree navigation sidebar. This is used in modal view only and hence there is no effect of this property in rail view. | 
 | *onDrop* | function | No | | The property allows the drop functionality of an asset. |
-| *dropOptions* | `{allowList?: object}` | No | | It configures drop options using 'allowList'. |
-| *showForcedLoading* | boolean | No | false | It indicates whether to show or not Asset Selector on loading screen. This is useful when you are waiting for an imsToken to be available in SUSI flow. Asset Selector stops rendering assets if `showForcedLoading` is true. However, it still sends pre-flight requests to discovery. |
+| *dropOptions* | `{allowList?: object}` | No | | Configures drop options using 'allowList'. |
+| *showForcedLoading* | boolean | No | false | Indicates whether to show Asset Selector on loading screen. This is useful when you are waiting for an imsToken to be available in SUSI flow. Asset Selector stops rendering assets if `showForcedLoading` is true. However, it still sends pre-flight requests to discovery. |
 
 ## Examples to use Asset Selector properties {#usage-examples}
 
