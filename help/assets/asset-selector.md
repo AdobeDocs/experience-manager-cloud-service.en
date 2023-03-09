@@ -333,7 +333,7 @@ You can sort assets in Asset Selector by name, dimension, or size of an asset. Y
 
 ### Types of view
 
-Asset Selector allows you to view the asset four different views:
+Asset Selector allows you to view the asset in four different views:
 
 *   `List view`: The list view displays scrollable files and folders in a single column.
 *   `Grid view`: The grid view displays scrollable files and folders in a grid of rows and columns.
