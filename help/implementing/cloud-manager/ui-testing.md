@@ -215,7 +215,7 @@ The following environment variables will be passed to your Docker image at run t
 The Adobe test samples provide helper functions to access the configuration parameters:
 
 * JavaScript: See the [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) module
-* Java: See the [Config](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
+* Java: See the [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
 
 ### Waiting for Selenium to be Ready {#waiting-for-selenium}
 
@@ -249,22 +249,9 @@ The test samples provided by Adobe by default create screenshots for any failed 
 You can use the helper functions to create screenshots through your tests.
 
 * JavaScript: [takeScreenshot command](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [Commands](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+* Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-If a test result archive is created during a UI test execution, the test log file contains a reference to the location of the test result archive at the end.
-
-```
-[...]
-
-===============================================================
-The detailed test results can be downloaded from the URL below.
-Note: the link will expire after 60 days
-
-    https://results-host/test-results.zip
-
-===============================================================
-
-```
+If a test result archive is created during a UI test execution, you can download it from Cloud Manager using the `Download Details` button under the [**Custom UI Testing** step.](/help/implementing/cloud-manager/deploy-code.md)
 
 ### Upload Files {#upload-files}
 
@@ -277,7 +264,7 @@ Tests sometimes must upload files to the application being tested. In order to k
    * Consult the documentation and libraries of the programming language used in the Docker image to know how to perform such an HTTP request.
    * The Adobe test samples provide helper functions for uploading files:
      * JavaScript: See the [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) command.
-     * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class.
+     * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class.
 1. If the upload is successful, the request returns a `200 OK` response of type `text/plain`.
    * The content of the response is an opaque file handle.
    * You can use this handle in place of a file path in an `<input>` element to test file uploads in your application.
@@ -339,4 +326,4 @@ For running the UI tests from your local machine, create a user with admin-like 
 >
 >* The log files will be stored in the `target/reports` folder of your repository.
 >
->For details, please refer to the [AEM Test Samples repository.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/README.MD)
+>For details, please refer to the [AEM Test Samples repository.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)
