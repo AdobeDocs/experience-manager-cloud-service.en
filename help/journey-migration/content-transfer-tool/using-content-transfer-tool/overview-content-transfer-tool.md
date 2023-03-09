@@ -43,7 +43,7 @@ There are two phases associated with content transfer:
    See [Ingestion Process in Content Transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) for more details.
 
 ## Attributes of a Migration Set {#attributes-migration-set}
-  
+ 
 A migration set has the following attributes:
 
 * With the new version, you can create a maximum of five migration sets within a project created in Cloud Acceleration Manager.
@@ -57,6 +57,24 @@ The Content Transfer Tool has a feature that supports differential content top-u
 In the extraction phase, to ***top-up*** an existing migration set, the *overwrite* option must be disabled. Refer to [Top Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) for more details.
 
 In the ingestion phase, to apply the delta content on top of the current content, the *wipe* option must be disabled. Refer to [Top Up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) for more details.
+
+## Migration Set Expiry {#migration-set-expiry}
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_migrationset_expiry"
+>title="Expiration of a Migration Set"
+>abstract="Learn about the expiry of a migration set."
+
+All migration sets will eventually expire after a prolonged period of inactivity of approximately 90 days. After indicators are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. The expiry time can easily be extended by acting upon the migration set by:
+
+* editing its description
+* getting its extraction key
+* performing an extraction to it
+* performing an ingestion from it
+
+The expiry of a migration set can be monitored on the Migration Set row. A helpful visual indicator that a migration set is approaching its expiry date also added the project's card.
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
+
 
 ## What's Next {#whats-next}
 
