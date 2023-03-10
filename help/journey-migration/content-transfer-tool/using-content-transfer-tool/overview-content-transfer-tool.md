@@ -59,6 +59,7 @@ In the extraction phase, to ***top-up*** an existing migration set, the *overwri
 In the ingestion phase, to apply the delta content on top of the current content, the *wipe* option must be disabled. Refer to [Top Up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) for more details.
 
 ## Migration Set Expiry {#migration-set-expiry}
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_migrationset_expiry"
 >title="Expiration of a Migration Set"
