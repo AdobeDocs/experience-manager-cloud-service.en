@@ -82,7 +82,7 @@ The following section applies to the new version of the Content Transfer Tool. F
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   The following dialog will be presented. Notice that a migration set will expire after a prolonged period of inactivity. After warnings are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md#migration-set-expiry) for details.
+   The following dialog will be presented. Notice that a migration set will expire after a prolonged period of inactivity. After warnings are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
