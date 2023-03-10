@@ -96,7 +96,7 @@ Follow this section to explore the Content Transfer activity card:
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
-   >Please note that a migration set will expire after a prolonged period of inactivity. Please review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md#migration-set-expiry) for details.
+   >Please note that a migration set will expire after a prolonged period of inactivity. Please review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
 
    >[!NOTE]
    >Please review the [prerequisites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) and the [best practices and guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) before using the Content Transfer Tool.
