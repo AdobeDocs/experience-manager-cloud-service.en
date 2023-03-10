@@ -87,7 +87,7 @@ Follow the section below to understand the important considerations while runnin
 
 * If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
 
-* A migration set will expire after a prolonged period of inactivity, after which its data will no longer be available. Please review [Migration Set Expiry](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#extraction-setup-phase) for more details.
+* A migration set will expire after a prolonged period of inactivity, after which its data will no longer be available. Please review [Migration Set Expiry](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) for more details.
 
 ## What's Next {#whats-next}
 
