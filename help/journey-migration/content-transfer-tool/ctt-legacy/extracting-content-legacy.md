@@ -11,10 +11,10 @@ exl-id: 9f43356c-ba51-48bc-97f5-f1f5db81e7f3
 
 Follow the steps below to extract your migration set from the Content Transfer Tool:
    >[!NOTE]
-   >If Amazon S3 or Azure Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the extraction phase. To do so you will need to configure an `azcopy.config` file before running extraction. Refer to [Handling Large Content Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) for more details. 
+   >If Amazon S3 or Azure Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the extraction phase. To do so, you need to configure an `azcopy.config` file before running extraction. Refer to [Handling Large Content Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) for more details. 
 
    >[!IMPORTANT]
-   >You should run User Mapping tool before extracting content from source. See [Using the User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) for more details.
+   >You should run User Mapping tool before extracting content from source. See [Using the User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en) for more details.
 
 1. Select a migration set from **Content Transfer** wizard and click **Extract** to start extraction. 
 
@@ -25,10 +25,10 @@ Follow the steps below to extract your migration set from the Content Transfer T
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-02.png) 
 
    >[!NOTE]
-   >You have the option to overwrite staging container during the extraction phase.
+   >You can optionally overwrite staging container during the extraction phase.
 
    >[!IMPORTANT]
-   >If the User Mapping has not been run on this migration set prior to extracting content from source, you will see a warning displaying that User Mapping step is pending, as shown in the figure below. Click on **Map Users** to run the User Mapping tool.
+   >If the User Mapping has not been run on this migration set before extracting content from source, you see a warning displaying that User Mapping step is pending, as shown in the figure below. Select **Map Users** to run the User Mapping tool.
    >![image](/help/journey-migration/content-transfer-tool/assets-ctt/user-mapping-extract.png) 
   
 1. The **Extraction** field now displays the **RUNNING** status to indicate that the extraction is in-progress.
@@ -49,7 +49,7 @@ The Content Transfer Tool has a feature that supports differential content top-u
 
 >[!NOTE]
 >After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service. 
->Additionally, it is essential that the content structure of existing content is not changed from the time the initial extraction is taken to when the top-up extraction is run. Top-ups cannot be run on content whose structure has been changed since the initial extraction. Please ensure you restrict this during the migration process.
+>Also, be sure that the content structure of existing content is not changed from the time the initial extraction is taken to when the top-up extraction is run. Top ups cannot be run on content whose structure has been changed since the initial extraction. Please ensure you restrict this during the migration process.
 
 Once the extraction process is complete, you can transfer delta content, by using the top-up extraction method. 
 
@@ -68,4 +68,4 @@ Follow the steps below:
 
 ## What's Next {#whats-next}
 
-Once you have learned Extracting Content from Source in Content Transfer Tool, you are now ready to learn the Ingestion Process in Content Transfer Tool. See [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) to learn how to ingest your migration set from the Content Transfer Tool.
+After you have learned about "Extracting Content from Source" in Content Transfer Tool, you are now ready to learn the Ingestion Process in Content Transfer Tool. See [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) to learn how to ingest your migration set from the Content Transfer Tool.
