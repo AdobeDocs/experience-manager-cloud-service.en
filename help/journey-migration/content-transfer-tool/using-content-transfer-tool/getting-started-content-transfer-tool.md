@@ -31,7 +31,6 @@ Only version 2.0.0 and higher will be supported, and it is advisable to use the 
 The source AEM instance may be running behind a firewall where it can only reach certain hosts which have been added to an Allow List. In order to successfully run an extraction, the following endpoints will need to be accessible from the instance that is running AEM:
 
 * The Azure blob storage service: `casstorageprod.blob.core.windows.net`
-* The User Mapping IO endpoint: `usermanagement.adobe.io`
 
 >[!NOTE] 
 >If extraction fails due to the following error : "javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target" then this can be resolved by importing the relevant CA certificate.
@@ -55,7 +54,7 @@ Understanding SSL/TLS connection problems can sometimes be difficult. To toubles
 >title="Running Content Transfer Tool"
 >abstract="Learn how to use Content Transfer Tool to migrate the content to AEM as a Cloud Service (Author/Publish)."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" See Demo"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial - using Content Transfer Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Tutorial - using Content Transfer Tool"
 
 The following section applies to the new version of the Content Transfer Tool. Follow this section to learn how to use the Content Transfer Tool to migrate content to AEM as a Cloud Service:
 
@@ -64,8 +63,8 @@ The following section applies to the new version of the Content Transfer Tool. F
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction_setup"
 >title="Extraction Setup Phase"
->abstract="Learn how to create a migration set and copy the extraction key."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial - using Content Transfer Tool"
+>abstract="Learn how to create and manage a migration set and how to copy the extraction key."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Tutorial - using Content Transfer Tool"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 
@@ -79,9 +78,11 @@ The following section applies to the new version of the Content Transfer Tool. F
 
    >[!NOTE]
    >
-   >A maximum of five migration sets can be created per project in Cloud Acceleration Manager.
+   >A maximum of five migration sets, including expired sets, can be created per project in Cloud Acceleration Manager.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
+
+   The following dialog will be presented. Notice that a migration set will expire after a prolonged period of inactivity. After warnings are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
@@ -188,4 +189,4 @@ Follow the steps below to run a size check:
 
 ## What's Next {#whats-next}
 
-Once you have learned how to create a migration set, you are now ready to learn about Extraction and Ingestion Processes in Content Transfer Tool. Before you learn these processes, you must review [Handling Large Content Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) to significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service.
+Once you have learned how to create a migration set, you are now ready to learn about Extraction and Ingestion Processes in Content Transfer Tool. Before you learn these processes, you must review [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) to significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service.
