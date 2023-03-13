@@ -94,7 +94,7 @@ Specific types of non-text content that require text alternatives might include:
 * Icons: These are small pictograms (graphics) conveying specific information. They must be consistently used across a page and site. All instances of the icon on a page or site should have the same short and succinct text alternative, unless doing so results in unnecessary duplication of adjacent text.
 * Charts and graphs: These typically represent numerical data. So one option for providing a text alternative might be to include a brief summary of the main trends shown in the chart or graphic. If necessary, also provide a more detailed description in text using the **Description** field in the **Advanced** image properties tab. Also, you could provide the source data in tabular form elsewhere in the page or site.
 * Maps, diagrams, flowcharts: For graphics providing spatial data (for example, to support describing relationships between objects or a process), ensure that the key message is provided in text format, and that this text information is positioned near each associated data point. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image's alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
-* CAPTCHAs: A CAPTCHA is a *Completely Automated Public Turing test to tell Computers and Humans Apart*. It is a security check used on web pages to distinguish humans from malicious software, but which can cause accessibility barriers. They are images that require users to describe what they see in order to pass a security test. Providing a text alternative for the image is not possible, so instead you must consider alternative non-graphic solutions. The W3C provides several suggestions. Each of these approaches has their own merits and drawbacks.
+* CAPTCHA: A CAPTCHA is a *Completely Automated Public Turing test to tell Computers and Humans Apart*. It is a security check used on web pages to distinguish humans from malicious software, but which can cause accessibility barriers. They are images that require users to describe what they see in order to pass a security test. Providing a text alternative for the image is not possible, so instead you must consider alternative non-graphic solutions. The W3C provides several suggestions. Each of these approaches has their own merits and drawbacks.
 
     * Logic puzzles
     * The use of sound output instead of images
@@ -110,7 +110,7 @@ Specific types of non-text content that require text alternatives might include:
 
 * [Understanding Success Criteria 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [How to Meet Success Criteria 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
-* [W3C explanation of and alternatives to CAPTCHAs](https://www.w3.org/TR/turingtest/)
+* [W3C explanation of and alternatives to CAPTCHA](https://www.w3.org/TR/turingtest/)
 
 <!--
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
@@ -195,7 +195,7 @@ If you must use open captions, embed the text into the video track. This can be 
 * [Understanding Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [How to Meet Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-<!--
+c
 * [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/)
 * [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
 -->
@@ -249,7 +249,7 @@ Follow the guidance provided for [Captions (Prerecorded)](#captions-prerecorded)
 
 Detailed instructions are beyond the scope of this document, but the following resources provide helpful information:
 
-* [WebAIM: Real Time Captioning](https://webaim.org/techniques/captions/realtime)
+* [WebAIM: Real-time Captioning](https://webaim.org/techniques/captions/realtime)
 
 * [AccessComputing project (University of Washington): Can captions be generated automatically using speech recognition?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
@@ -550,13 +550,13 @@ Make sure that the text contrasts sufficiently with its background. Contrast rat
 
 >[!NOTE]
 >
->The following tools can help you convert to other units:
+>Perform a web search on the following phrases to find tools that can help you convert to other units:
 >
->* [Px to Em Calculator](https://www.omnicalculator.com/conversion/px-to-em)
->* [Font size conversion: pixel-point-em-rem-percent](https://www.websemantics.uk/tools/)
->* [Pixel to EM Converter](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+>* Px to Em Calculator <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
+>* Font size conversion: pixel-point-em-rem-percent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
+>* Pixel to EM Converter <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
 
-To check contrast ratios, use a color contrast tool, such as the [Paciello Group Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) or the [WebAIM color contrast checker](https://webaim.org/resources/contrastchecker/). These tools allow you to check pairs of colors and report on any contrast problems.
+To check contrast ratios, use a color contrast tool, such as the [Paciello Group Color Contrast Analyzer](https://www.tpgi.com/resources/contrast-analyser.html) or the [WebAIM color contrast checker](https://webaim.org/resources/contrastchecker/). These tools allow you to check pairs of colors and report on any contrast problems.
 
 Alternatively, if you are less concerned about specifying the appearance of your page, you can choose not to specify background and foreground text colors. No contrast checking is required, as the user's browser determines the colors of the text and background.
 
@@ -823,7 +823,7 @@ Follow the guidelines under [How to Meet Success Criteria 2.4.3](https://www.w3.
 
 #### Purpose - Link Purpose (In Context) (2.4.4) {#purpose-link-purpose-in-context}
 
-For all users, regardless of impairment, clearly indicating the direction of a link through appropriate link text is vital. This helps users decide whether they actually want to follow a link. For sighted users, meaningful link text is useful where there are several links on a page (particularly if the page is text-heavy), as meaningful link text provides a clearer indication of the functionality of the target page. Users of some assistive technologies, which can generate a list of all the links on a single page, can more easily understand the link text out of context if that link text is both unique and informative. However, sighted individuals with cognitive disabilities may become confused if a link does not provide enough information to accurately describe where the link takes them.
+For all users, regardless of impairment, clearly indicating the direction of a link through appropriate link text is vital. This helps users decide whether they actually want to follow a link. For sighted users, meaningful link text is useful where there are several links on a page (particularly if the page is text heavy), as meaningful link text provides a clearer indication of the functionality of the target page. Users of some assistive technologies, which can generate a list of all the links on a single page, can more easily understand the link text out of context if that link text is both unique and informative. However, sighted individuals with cognitive disabilities may become confused if a link does not provide enough information to accurately describe where the link takes them.
 
 #### How to Meet - Link Purpose (In Context) (2.4.4) {#how-to-meet-link-purpose-in-context}
 
@@ -861,7 +861,7 @@ John Smith's publications
 >
 >The above snippet is an illustration, it is recommended to use the **Image** component.
 
-While it is advisable to provide link text that identifies the purpose of the link without needing additional context, it is recognized that this is not always possible. Context-free links can be used in the following cases, HTML examples of which can be found in [How to Meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+While it is recommended that you provide link text that identifies the purpose of the link without needing additional context, it is recognized that this is not always possible. Context-free links can be used in the following cases, HTML examples of which can be found in [How to Meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * Where the link text is part of a list of closely related links and when the list item enclosing the link provides enough context.
 * Where the purpose of a link can be clearly identified from the *preceding* (not the following) paragraph text.
