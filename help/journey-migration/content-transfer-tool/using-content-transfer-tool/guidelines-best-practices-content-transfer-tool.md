@@ -24,7 +24,7 @@ A new version of the Content Transfer Tool is available which integrates the con
 * Improved user experience via better loading states, guardrails, and error handling 
 * Ingestion logs are persisted and are always available for troubleshooting
 
-To start using the new version you will need to uninstall older versions of the Content Transfer Tool. This is needed because the new version comes with a major architectural change. With v2.0.10, you will need to create new migration sets and re-run extraction and ingestion on the new migration sets. If a migration is already in progress, you may continue using the prior version of CTT until the migration is complete.
+To start using the new version you will need to uninstall older versions of the Content Transfer Tool. This is needed because the new version comes with a major architectural change. With version 2.x, you will need to create new migration sets and re-run extraction and ingestion on the new migration sets.
 Versions earlier than 2.0.0 will no longer be supported, and it is advisable to use the most recent version.
 
 The following Guidelines and Best Practices apply to the new version of the Content Transfer Tool:
@@ -65,9 +65,9 @@ Follow the section below to understand the important considerations while runnin
 
 * The extraction key is valid for 14 days from the time it was created/renewed. It can be renewed at any time. If the extraction key has expired, you will not be able to perform an extraction.
 
-* The Content Transfer Tool (CTT) does not perform any kind of content analysis before transferring content from the source instance to the target instance. For example, CTT does not differentiate between published and unpublished content while ingesting content into a Publish environment. Whatever content is specified in the migration set will be ingested into the chosen target instance. User has the ability to ingest a migration set into an Author instance or Publish instance or both. It is recommended that while moving content to a Production instance, CTT be installed on the source Author instance to move content to the target Author instance and similarly, install CTT on the source Publish instance to move content to the target Publish instance. Refer to [Running the Content Transfer Tool on a Publish instance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.md?lang=en#running-ctt-on-publish) for more details.
+* The Content Transfer Tool (CTT) does not perform any kind of content analysis before transferring content from the source instance to the target instance. For example, CTT does not differentiate between published and unpublished content while ingesting content into a Publish environment. Whatever content is specified in the migration set will be ingested into the chosen target instance. User has the ability to ingest a migration set into an Author instance or Publish instance or both. It is recommended that while moving content to a Production instance, CTT be installed on the source Author instance to move content to the target Author instance and similarly, install CTT on the source Publish instance to move content to the target Publish instance. See [Running the Content Transfer Tool on a Publish instance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) for more details.
 
-* The Users and Groups transferred by the Content Transfer Tool are only those that are required by the content to satisfy permissions. The _Extraction_ process copies the entire `/home` into the migration set, and it does User Mapping by adding a field made from each user's email address. For more information, see [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).  The _Ingestion_ process copies all users and groups referenced in the migrated content ACLs.
+* The Users and Groups transferred by the Content Transfer Tool are only those that are required by the content to satisfy permissions. The _Extraction_ process copies the entire `/home` into the migration set, and it does User Mapping by adding a field made from each user's email address. For more information, see [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). The _Ingestion_ process copies all users and groups referenced in the migrated content ACLs.
 
 * During the extraction phase, the Content Transfer Tool is executed on an active AEM source instance.
 
@@ -81,11 +81,13 @@ Follow the section below to understand the important considerations while runnin
 
 * When using `Amazon S3` or `Azure` as the data store on the source AEM system, the data store should be configured so that the blobs stored cannot be deleted (garbage collected). This ensures integrity of index data and failure to configure this way may result in failed extractions due to lack of integrity of this index data.
 
-* If you are using custom indexes, you must ensure to configure  the custom indexes with `tika` node before running Content Transfer Tool. Refer to [Preparing the New Index Definition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) for more details.
+* If you are using custom indexes, you must ensure to configure  the custom indexes with `tika` node before running Content Transfer Tool. Refer to [Preparing the New Index Definition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) for more details.
 
 * If you intend to do top ups, it is essential that the content structure of existing content is not changed from the time the initial extraction is taken to when the top-up extraction is run. Top-ups cannot be run on content whose structure has been changed since the initial extraction. Please ensure you restrict this during the migration process.
 
 * If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
+
+* A migration set will expire after a prolonged period of inactivity, after which its data will no longer be available. Please review [Migration Set Expiry](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) for more details.
 
 ## What's Next {#whats-next}
 
