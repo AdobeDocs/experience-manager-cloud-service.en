@@ -18,7 +18,7 @@ Click on your project card to open the project landing page and navigate to the 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
    >[!NOTE]
-   >Refer to [Creating and Managing a Project in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) to learn more.
+   >Refer to [Creating and Managing a Project in Cloud Acceleration Manager](getting-started-cam.md#create-project) to learn more.
 
 
 ## Using Local Development Card {#local-development}
@@ -96,11 +96,14 @@ Follow this section to explore the Content Transfer activity card:
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
-   >Please review the [prerequisites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) and the [best practices and guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) before using the Content Transfer Tool.
+   >Please note that a migration set will expire after a prolonged period of inactivity. Please review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
 
-1. You will need to download and install the Content Transfer Tool to populate the migration set and complete the Extraction phase of content transfer. Review [Getting Started with Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) to learn how to use the Content Transfer Tool.
+   >[!NOTE]
+   >Please review the [prerequisites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) and the [best practices and guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) before using the Content Transfer Tool.
 
-1. To ingest content from the Migration set into an environment on AEM as a Cloud Service, you will need to start an ingestion. Navigate to **Ingestion Jobs** and click on **New ingestion**. Review [Ingesting Content into Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) to learn how to complete the Ingestion phase of content transfer.
+1. You will need to download and install the Content Transfer Tool to populate the migration set and complete the Extraction phase of content transfer. Review [Getting Started with Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html) to learn how to use the Content Transfer Tool.
+
+1. To ingest content from the Migration set into an environment on AEM as a Cloud Service, you will need to start an ingestion. Navigate to **Ingestion Jobs** and click on **New ingestion**. Review [Ingesting Content into Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) to learn how to complete the Ingestion phase of content transfer.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
@@ -119,4 +122,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## What's Next {#whats-next}
 
-Once you have learnt how to log into Cloud Acceleration Manager and how utilize the Implementation phase, you are now ready to move on to reviewing the next step in the [Go Live Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en).
+Once you have learnt how to log into Cloud Acceleration Manager and how utilize the Implementation phase, you are now ready to move on to reviewing the next step in the [Go Live Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html).
