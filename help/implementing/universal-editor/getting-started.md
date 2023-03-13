@@ -11,6 +11,10 @@ index: no
 
 Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 
+>[!TIP]
+>
+>If you would prefer to dive right into an example, you can review the [Universal Editor Sample App on GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
+
 ## Onboarding Steps {#onboarding}
 
 Although the Universal Editor can edit content from any source, this document will use an AEM app as an example.
@@ -35,13 +39,21 @@ In case you do not have access, it can be requested via a form linked on the sam
 Before your app can be instrumented for use with the Universal Editor, it needs to include following dependency.
 
 ```javascript
-@aem-sites/universal-editor-cors
+@adobe/universal-editor-cors
 ```
 
 To activate the instrumentation, the following import needs to be added to your `index.js`.
 
 ```javascript
-import "@aem-sites/universal-editor-cors";
+import "@adobe/universal-editor-cors";
+```
+
+### Alternative for Non-React Apps {#alternative}
+
+If you are not implementing a React app and/or require server-side rendering and alternative method is to include the following to the document body.
+
+```html
+<script src="https://github.com/adobe/universal-editor-cors/blob/main/dist/universal-editor-embedded.js"></script>
 ```
 
 ## Add the Necessary OSGi Configurations {#osgi-configurations}
