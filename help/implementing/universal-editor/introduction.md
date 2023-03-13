@@ -46,7 +46,7 @@ A content author should have the same powerful editing experience formerly offer
 
 ### Any Aspect {#any-aspect}
 
-For a content author, content is not just about the information contained, but how it is rendered ane received. Content comes with additional meta-data and instrumentation rules, which the Universal Editor can understand and edit including:
+For a content author, content is not just about the information contained, but how it is rendered and received. Content comes with additional meta-data and instrumentation rules, which the Universal Editor can understand and edit including:
 
 * **Applying Layout &amp; Style** - By using a style system, the marketing practitioner and content author can apply different styles to their content and create different layouts such as columns, carousels, tabs, accordions, etc.
 * **Performing Experimentation** - By publishing a new content version that challenges the existing content, the marketing practitioner can experiment with content improvements and measure the impact.
