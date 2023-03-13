@@ -11,16 +11,13 @@ exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 >id="aemcloud_ctt_extraction"
 >title="Content Extraction"
 >abstract="Extraction refers to extracting content from the source AEM instance into a temporary area called migration set. A migration set is a cloud storage area provided by Adobe to temporarily store the transferred content between the source AEM instance and the Cloud Service AEM instance."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Top Up Extraction"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-extraction-process" text="Top Up Extraction"
 
 
 Follow the steps below to extract your migration set from the Content Transfer Tool:
 
-   >[!NOTE]
-   >If Amazon S3, Azure Data Store, or File Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the extraction phase. The pre-copy step is most effective for the 1st full extraction and ingestion. To do so you will need to configure an `azcopy.config` file before running extraction. Refer to [Handling Large Content Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) for more details. 
-
-   >[!IMPORTANT]
-   >You should run User Mapping tool before extracting content from source. See [Using the User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) for more details.
+>[!NOTE]
+>If Amazon S3, Azure Data Store, or File Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the extraction phase. The pre-copy step is most effective for the 1st full extraction and ingestion. Refer to [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) for more details.
 
 1. Select a migration set from **Content Transfer** wizard and click **Extract** to start extraction. 
 
@@ -37,9 +34,6 @@ Follow the steps below to extract your migration set from the Content Transfer T
 
    >[!NOTE]
    >You have the option to overwrite the staging container during the extraction phase. If **Overwrite staging container** is disabled it can speed up extractions for subsequent migrations where the content paths or include versions settings have not changed. However, if the content paths or include versions settings have changed, then **Overwrite staging container** should be enabled.
-
-   >[!IMPORTANT]
-   >If the User Mapping has not been run on this migration set prior to extracting content from source, you will see a warning displaying that User Mapping step is pending, as shown in the figure above. Click on **Map Users** to run the User Mapping tool.
 
 1. The **Extraction** field now displays the **RUNNING** status to indicate that the extraction is in-progress.
 
