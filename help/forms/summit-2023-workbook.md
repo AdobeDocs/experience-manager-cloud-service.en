@@ -5,6 +5,7 @@ description: Build Engaging Forms Using Core Components and Headless
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: yes
+hidefromtoc: yes
 ---
 
 # Build Engaging Forms Using Core Components and Headless
@@ -242,8 +243,6 @@ Set up local repository of the theme:
     *   **AEM_ADAPTIVE_FORM**: Specify the path of the form. For example, if the form path is `/content/forms/af/registration`, the value of this variable would be `registration`.
 
     ![](/help/forms/assets/screenshot2028116429.png)
-
-    ![](/help/forms/assets/screenshot20228116569.png)
     
 
 1.  In the Command Prompt window, run the following command:
@@ -275,10 +274,9 @@ Set up local repository of the theme:
 
     >[!NOTE]
     >
-    >If you experience a blank screen in browser after executing the `npm run live` command, change `localhost` in browser URL to 127.0.0.1 and hit **Enter**. 
+    >If you experience a blank screen in browser after executing the `npm run live` command for more than 3-4 minutes, change `localhost` in browser URL to 127.0.0.1 and hit **Enter**. 
 
     
-
     ![](/help/forms/assets/screenshot2028115129.png)
 
 
@@ -395,7 +393,8 @@ To render the form hosted on your cloud service publish environment:
 
     >[!NOTE]
     >
-    >If you experience a blank screen in browser after executing the `npm start` command, change `localhost` in browser URL to 127.0.0.1 and hit **Enter**. 
+    > 
+    > If you experience a blank screen in browser after executing the `npm start` command for more than 3-4 minutes, change `localhost` in browser URL to 127.0.0.1 and hit **Enter**. 
 
     ![](/help/forms/assets/screenshot2028118229.png)
 
@@ -557,7 +556,7 @@ To render the form hosted on your cloud service publish environment:
 
     >[!NOTE]
     >
-    >If you experience a blank screen in browser after executing the `npm start` command, change `localhost` in browser URL to 127.0.0.1 and hit **Enter**. 
+    >If you experience a blank screen in browser after executing the `npm start` command for more than 3-4 minutes, change `localhost` in browser URL to 127.0.0.1 and hit **Enter**. 
 
     ![](/help/forms/assets/screenshot2028127229.png)
 
