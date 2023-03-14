@@ -1,6 +1,7 @@
 ---
 title: Notification Center
 description: Leverage the Notification Center to conveniently take action on incidents and other important information
+hidefromtoc: yes
 ---
 
 # Notification Center {#notification-center}
