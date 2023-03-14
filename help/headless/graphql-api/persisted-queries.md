@@ -302,7 +302,7 @@ If none of these are defined, then the defaults used by AEM are:
 
 ### Managing HTTP Cache Headers in the GraphiQL IDE {#http-cache-headers-graphiql-ide}
 
-The GraphiQL IDE - see [Saving Persisted Queries](/help/assets/content-fragments/graphiql-ide.md#managing-cache)
+The GraphiQL IDE - see [Saving Persisted Queries](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
 
 #### Managing Cache at the Persisted Query Level {#cache-persisted-query-level}
 
