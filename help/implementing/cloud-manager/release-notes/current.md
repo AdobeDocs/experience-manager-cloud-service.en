@@ -19,7 +19,9 @@ The release date for Cloud Manager release 2023.3.0 in AEM as a Cloud Service is
 
 ## What's New {#what-is-new}
 
+* All automated tests can now be run on development instances prior to deploying to staging and production in order to validate that the code is working as expected in the lower instances.
 
+## Bug Fixes {#bug-fixes}
 
-## API Changes {#api-changes}
-
+* An issue was fixed where the go-live widget incorrectly set the previously set date.
+* The commerce tile on the **Learn** tab of Cloud Manager now navigates the user to the correct page.
