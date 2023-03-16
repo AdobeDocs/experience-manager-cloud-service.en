@@ -19,7 +19,7 @@ The release date for Cloud Manager release 2023.3.0 in AEM as a Cloud Service is
 
 ## What's New {#what-is-new}
 
-* All automated tests can now be run on development instances prior to deploying to staging and production in order to validate that the code is working as expected in the lower instances.
+* [All automated tests](/help/implementing/cloud-manager/functional-testing.md) can now be run on [non-production instances](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) prior to deploying to staging and production in order to validate that the code is working as expected in the lower instances.
 
 ## Bug Fixes {#bug-fixes}
 
