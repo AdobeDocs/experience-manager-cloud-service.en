@@ -31,10 +31,12 @@ The properties are distributed across several tabs.
 
   Apply a consistent brand identity across pages by appending a brand slug to each page title. This functionality requires use of the Page Component from release 2.14.0 or later of the [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
-  * **Override** - Check to define the brand slug on this page.
-    * The value will be inherited by any child pages unless they also have their **Override** values set.
-  * **Override value** - The text of the brand slug to be appended to the page title.
-    * The value is appended to the page title after a pipe character such as "Cycling Tuscany | Always ready for the WKND"
+  * **Brand Slug** 
+
+    * **Override** - Check to define the brand slug on this page.
+      * The value will be inherited by any child pages unless they also have their **Override** values set.
+    * **Override value** - The text of the brand slug to be appended to the page title.
+      * The value is appended to the page title after a pipe character such as "Cycling Tuscany | Always ready for the WKND"
 
 * **HTML ID**
 
@@ -104,7 +106,9 @@ The properties are distributed across several tabs.
 
 * **Configuration**
 
-  * **Cloud Configuration** - The path to the configuration
+  * **Inherited from &lt;path&gt;** - enable/disable inheritance; toggles availability of **Cloud Configuration** for selection
+
+  * **Cloud Configuration** - The path to the selected configuration
 
 * **Template Settings**
 
@@ -124,14 +128,40 @@ The properties are distributed across several tabs.
 
   * **Export Configuration** - Specifies an export configuration
 
-### Thumbnail {#thumbnail}
+* **SEO**
 
-Configure the page thumbnail
+  * **Canonical Url** - can be used to overwrite the page's canonical Url; if left blank the page's Url will be its canonical Url
 
-* **Generate Preview** - Generate a preview of the page to use as thumbnail
-* **Upload Image** - Upload an image to use as thumbnail
-* **Select Image** - Select an existing Asset to use as the thumbnail
-* **Revert** - This option becomes available after you have made a change to the thumbnail. If you do not want to keep your change, you can revert that change before saving.
+  * **Robots Tags** - select the robots tags to control the behavior of search engine crawlers.
+
+    [!NOTE]
+    >
+    >Some of the options conflict with each other. In case of a conflict the more permissive option takes precedence.
+
+  * **Generate Sitemap** - when selected, a sitemap.xml will be generated for this page, and its descendants
+
+### Images {#images}
+
+* **Featured Image**
+
+  Select, and configure, the image to be featured. This is used in components referencing the page; for example, teasers, page lists, etc.
+
+  * **Image**
+
+    You can **Pick** an Asset, or browse for a file to upload, then **Edit**, or **Clear**.
+
+  * **Alternative Text** - a text used to represent the meaning and/or function of the image; for example, for use by screen readers.
+
+  * **Inherit - Value taken from the DAM asset** - when checked this will populate the alternative text with the value of the `dc:description`metadata in DAM
+
+* **Thumbnail**
+
+  Configure the page thumbnail
+
+  * **Generate Preview** - Generate a preview of the page to use as thumbnail
+  * **Upload Image** - Upload an image to use as thumbnail
+  * **Select Image** - Select an existing Asset to use as the thumbnail
+  * **Revert** - This option becomes available after you have made a change to the thumbnail. If you do not want to keep your change, you can revert that change before saving.
 
 ### Social Media {#social-media}
 
@@ -155,6 +185,8 @@ Configure the page thumbnail
 
 * **ContextHub Configurations**
 
+  * **Inherited from &lt;path&gt;** - enable/disable inheritance; toggles availability of **ContextHub Pathn** and **Segments Path** for selection
+
   * **ContextHub Path** - Define the [ContextHub configuration](/help/sites-cloud/authoring/personalization/contexthub.md)
   * **Segments Path** - Define the [Segments path](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
   
@@ -169,9 +201,9 @@ Configure the page thumbnail
 
 * **Permissions**
 
-  * Add Permissions
-  * Edit Closed User Group
-  * View the Effective Permissions
+  * **Add Permissions**
+  * **Edit Closed User Group**
+  * View the **Effective Permissions**
   
   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
   
@@ -188,6 +220,8 @@ This tab is only visible for pages that serve as blueprints. Blueprints serve as
 * **Rollout Configs** - Controls the circumstances under which modifications will be propagated to the Live Copy
 
 ### Live Copy {#live-copy}
+
+This tab is only visible for pages that are configured as live copies.
 
 * **Synchronize** - Synchronize Live Copy with Blueprint, keeping local modifications
 * **Reset** - Reset Live Copy to state of Blueprint, removing local modifications
@@ -213,6 +247,32 @@ This tab is only visible for pages that serve as blueprints. Blueprints serve as
 When a Preview environment is enabled you will see:
 
 * Preview URL - the URL used for accessing the content on the Preview environment
+
+<!--
+### Progressive Web App {#progressive-web-app}
+
+Make your site behave like a native app by making it installable on the visitors' home screen and available offline.
+
+* **Configure installable experience**
+
+  * **Enable PWA**
+  * **StartupURL**
+  * **Display Mode**
+  * **Screen orientation**
+  * **Theme color**
+  * **Background color**
+  * **Icon**
+
+* **Cache management (Advanced)**
+
+  * **Caching strategy and frequency of content refresh**
+  * **Files to cache for offline use**
+    * **File pre-caching (technical preview)**
+    * **Client-side Libraries**
+    * **Path inclusions**
+    * **Path exclusions**
+
+-->
 
 ## Editing Page Properties {#editing-page-properties-1}
 
