@@ -17,10 +17,6 @@ This page documents the release notes for Cloud Manager release 2023.3.0 in AEM 
 
 The release date for Cloud Manager release 2023.3.0 in AEM as a Cloud Service is 16 March 2023. The next release is planned for 13 April 2023.
 
-## What's New {#what-is-new}
-
-* [All automated tests](/help/implementing/cloud-manager/functional-testing.md) can now be run on [non-production instances](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) prior to deploying to staging and production in order to validate that the code is working as expected in the lower instances.
-
 ## Bug Fixes {#bug-fixes}
 
 * An issue was fixed where the go-live widget incorrectly set the previously set date.
