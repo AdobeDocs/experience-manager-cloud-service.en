@@ -354,7 +354,7 @@ The child node of type `cq:DropTargetConfig` defines a drop target in the compon
 
 ### In-Place Editing - cq:inplaceEditing {#cq-inplaceediting}
 
-An in-place editor allows the user to edit content directly in the content flow, without the need to open a dialog. For example, the standard **Text** and **Title** components both have an inp-lace editor.
+An in-place editor allows the user to edit content directly in the content flow, without the need to open a dialog. For example, the standard **Text** and **Title** components both have an in-place editor.
 
 An in-place editor is not necessary/meaningful for every component type.
 
@@ -366,7 +366,7 @@ The `cq:inplaceEditing` node (node type `cq:InplaceEditingConfig`) defines an in
 |`configPath`|`String`|Path of the editor configuration, which can be specified by a configuration node|
 |`editorType`|`String`|The available types are: `plaintext` for non HTML content, `title` converts graphical titles into a plaintext before editing begins, and `text` uses the Rich Text Editor|
 
-The following configuration enables the inp-lace editing of the component and defines `plaintext` as the editor type:
+The following configuration enables the in-place editing of the component and defines `plaintext` as the editor type:
 
 ```text
     <cq:inplaceEditing
