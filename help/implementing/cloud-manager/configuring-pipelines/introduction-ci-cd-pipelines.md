@@ -103,7 +103,7 @@ Full-stack pipelines can be code quality pipelines or deployment.
 
 ## Front-End Pipelines {#front-end}
 
-Front-end code is any code that is served as a static files. It is separate from UI code served by AEM and may include site themes, customer-defined SPAs, Firefly SPAs, and other solutions. 
+Front-end code is any code that is served as a static files. It is separate from UI code served by AEM and may include site themes, customer-defined SPAs, SPAs, and other solutions. 
 
 Front-end pipelines help your teams streamline your design and development process by enabling accelerated deployment of front-end code asynchronous of back-end development. This dedicated pipeline deploys JavaScript and CSS to the AEM distribution layer as a theme, resulting in a new theme version which may be referenced from pages delivered by AEM.
 
