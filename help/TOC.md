@@ -502,7 +502,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
-    + [Latest innovations](/help/forms/latest-innovations.md)
+    + [Top Adobe Experience Manager Forms innovations](/help/forms/latest-innovations.md)
     + [Notable changes](/help/forms/notable-changes.md)
     + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
     + [Frequently asked questions](/help/forms/faq.md)
