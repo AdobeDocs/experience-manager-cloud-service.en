@@ -12,10 +12,6 @@ exl-id: 6cd06ddc-2ce3-4e59-bd62-baee44763591
 ---
 # Event-driven App Builder applications
 
->[!IMPORTANT]
->
-> _Adobe Project Firefly, as mentioned in the videos in this series, is now named App Builder_
-
 ## Introduction to event-driven App Builder applications
 
 Learn what about event-driven architecture, Adobe I/O events, and custom events.
