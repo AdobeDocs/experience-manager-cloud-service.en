@@ -12,10 +12,6 @@ exl-id: 6e080945-8789-4dfa-b093-9df10c278e11
 ---
 # Create an App Builder application
 
->[!IMPORTANT]
->
-> _Adobe Project Firefly, as mentioned in the videos in this series, is now named App Builder_
-
 ## Set up your first project
 
 Learn the fundamentals of creating your first App Builder project.
