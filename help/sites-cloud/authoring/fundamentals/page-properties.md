@@ -99,10 +99,7 @@ The properties are distributed across several tabs.
     * For example, if you define an alias of `private` for the page `/content/wknd/us/en/magazine/members-only`, then this page can also be accessed via `/content/wknd/us/en/magazine/private`
     * Creating an alias sets the `sling:alias` property on the page node, which only impacts the resource, not the repository path.
     * Pages accessed by aliases in the editor can not be published. [Publish options](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) in the editor are only available for pages accessed via their actual paths. 
-
-  <!--
-  >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
-  -->
+    * For further details see [Localized page names under SEO and URL Management Best Practices](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuration**
 
@@ -134,7 +131,7 @@ The properties are distributed across several tabs.
 
   * **Robots Tags** - select the robots tags to control the behavior of search engine crawlers.
 
-    [!NOTE]
+    >[!NOTE]
     >
     >Some of the options conflict with each other. In case of a conflict the more permissive option takes precedence.
 
@@ -177,9 +174,6 @@ The properties are distributed across several tabs.
 ### Cloud Services {#cloud-services}
 
 * **Cloud Service Configurations** - Define properties for cloud services
-  
-  <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
-  -->
 
 ### Personalization {#personalization}
 
@@ -204,13 +198,7 @@ The properties are distributed across several tabs.
   * **Add Permissions**
   * **Edit Closed User Group**
   * View the **Effective Permissions**
-  
-  <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-  
-  <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-  
-  <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
-  
+    
 ### Blueprint {#blueprint}
 
 This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies are are part of [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md)
@@ -248,31 +236,32 @@ When a Preview environment is enabled you will see:
 
 * Preview URL - the URL used for accessing the content on the Preview environment
 
-<!--
 ### Progressive Web App {#progressive-web-app}
 
-Make your site behave like a native app by making it installable on the visitors' home screen and available offline.
+Through a simple configuration, a content author can now enable progressive web app (PWA) features for experiences created in AEM Sites.
+
+>[!NOTE]
+>
+>For further details see [Enabling Progressive Web App Features](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **Configure installable experience**
 
-  * **Enable PWA**
-  * **StartupURL**
-  * **Display Mode**
-  * **Screen orientation**
-  * **Theme color**
-  * **Background color**
-  * **Icon**
+  * **Enable PWA** - enable/disable the feature; allows users to install the site as a PWA
+  * **StartupURL** - the preferred startup Url
+  * **Display Mode** - how the browser should be hidden or otherwise presented to the user on the local device
+  * **Screen orientation** - how the PWA will handle device orientations
+  * **Theme color** - the color of the app that affects how the local user's operating system displays the native UI toolbar and navigation controls
+  * **Background color** - the background color of the app, which is shown as the app loads
+  * **Icon** - the icon that represents the app on the user's device
 
 * **Cache management (Advanced)**
 
-  * **Caching strategy and frequency of content refresh**
+  * **Caching strategy and frequency of content refresh** - defines the caching model for your PWA
   * **Files to cache for offline use**
-    * **File pre-caching (technical preview)**
-    * **Client-side Libraries**
-    * **Path inclusions**
-    * **Path exclusions**
-
--->
+    * **File pre-caching (technical preview)** - files hosted on AEM will be saved to the local browser cache when the service worker is installing and before it is used
+    * **Client-side Libraries** - client-side libraries to cache for offline experience
+    * **Path inclusions** - network requests for the defined paths are intercepted and cached content is returned in accordance with the configured Caching strategy and frequency of content refresh
+    * **Path exclusions** - these files will never be cached regardless of the settings under File pre-caching and Path inclusions
 
 ## Editing Page Properties {#editing-page-properties-1}
 
