@@ -49,7 +49,7 @@ import "@adobe/universal-editor-cors";
 If you are not implementing a React app and/or require server-side rendering and alternative method is to include the following to the document body.
 
 ```html
-<script src="https://github.com/adobe/universal-editor-cors/blob/main/dist/universal-editor-embedded.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
 ```
 
 ## Add the Necessary OSGi Configurations {#osgi-configurations}
