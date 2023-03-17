@@ -1,10 +1,6 @@
 ---
 title: Universal Editor Authentication
 description: Learn how the Universal Editor authenticates.
-feature: Page Editor
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Universal Editor Authentication {#authentication}
