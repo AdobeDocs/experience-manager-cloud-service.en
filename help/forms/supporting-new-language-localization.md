@@ -6,13 +6,13 @@ seo-description: AEM Forms allows you to add new locales for localizing adaptive
 ---
 # Supporting new locales for Adaptive Forms localization {#supporting-new-locales-for-adaptive-forms-localization}
 
-AEM Forms provides out of the box support for English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. You can add support for more locales also, like Hindi(hi_IN). 
+AEM Forms provide out of the box support for English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. You can add support for more locales also, like Hindi(hi_IN). 
 
 ## Understanding locale dictionaries {#about-locale-dictionaries}
 
 The localization of adaptive forms relies on two types of locale dictionaries:
 
-*   **Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions, and so on. It is managed as a set of XLIFF files for each locale and you can access it at `[author-instance]/libs/cq/i18n/gui/translator.html`.
+*   **Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions. It is managed as a set of XLIFF files for each locale and you can access it at `[author-instance]/libs/cq/i18n/gui/translator.html`.
 
 *   **Global dictionaries** There are two global dictionaries, managed as JSON objects, in AEM client library. These dictionaries contain default error messages, month names, currency symbols, date and time patterns, and so on. You can find these dictionaries at `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. These locations contain separate folders for each locale. Because global dictionaries are not updated frequently, keeping separate JavaScript files for each locale enables browsers to cache them and reduce network bandwidth usage when accessing different adaptive forms on same server.
 
@@ -67,7 +67,7 @@ Create a node named as `[locale-name]_xfa` and type as `cq:ClientLibraryFolder` 
               
 ##### 3.2. Add Adaptive Form client library for a locale locale-name folder 
 
-1.  Create a node named as `[locale-name]_af` and type as `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, with category as `guides.I18N.<locale>` and and dependencies as `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` and `guide.common`.
+1.  Create a node named as `[locale-name]_af` and type as `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, with category as `guides.I18N.<locale>` and dependencies as `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` and `guide.common`.
 1.  Create a folder named as `javascript` and add the following files:
 
     * **i18n.js** defining `guidelib.i18n`, having patterns of "calendarSymbols", `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` for the `<locale>` as per the XFA specifications described in [Locale Set Specification](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf). 
@@ -119,9 +119,9 @@ Perform the following steps to use and render an Adaptive Form using a newly add
 
 There are two methods to identify the locale of an Adaptive Form. When an Adaptive Form is rendered, it identifies the requested locale by: 
 
-*   Retreving the `[local]` selector in the adaptive form URL. The format of the URL is `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Using `[local]` selector allows caching an Adaptive Form. 
+*   Retrieving the `[local]` selector in the adaptive form URL. The format of the URL is `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Using `[local]` selector allows caching an Adaptive Form. 
 
-*   Retreving the following parameters in the listed order:
+*   Retrieving the following parameters in the listed order:
   
     *   Request parameter `afAcceptLang`
   To override the browser locale of users, you can pass the `afAcceptLang` request parameter to force the locale. For example, the following URL forces to render the form in Canadian-French locale:
@@ -140,7 +140,7 @@ Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add
 
 ## Best Practices to support for new localization {#best-practices}
 
-*   Adobe recommends to create translation project after creating an Adaptive Form.
+*   Adobe recommends creating translation project after creating an Adaptive Form.
 
 *   When new fields are added in an existing Adaptive Form:
     * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
