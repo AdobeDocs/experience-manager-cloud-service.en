@@ -8,7 +8,7 @@ seo-description: AEM Forms allows you to add new locales for localizing adaptive
 
 AEM Forms provides out of the box support for English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. You can add support for more locales also, like Hindi(hi_IN). 
 
-## Undestanding locale dictionaries {#about-locale-dictionaries}
+## Understanding locale dictionaries {#about-locale-dictionaries}
 
 The localization of adaptive forms relies on two types of locale dictionaries:
 
@@ -20,8 +20,8 @@ The localization of adaptive forms relies on two types of locale dictionaries:
 
 Perform the following to steps add support for a new locale: 
 
-1. [Add localization support for non-supported locales](#add-localization-support-for-non-supported-locales-add-localization-support-for-non-supported-locales)
-1. [Use added locales in Adaptive Forms](#use-added-locale-in-adaptive-forms-use-added-locale-in-af)
+1. [Add localization support for non-supported locales](#add-localization-support-for-non-supported-locales)
+1. [Use added locales in Adaptive Forms](#use-added-locale-in-af)
 
 ### Add localization support for non-supported locales {#add-localization-support-for-non-supported-locales}
 
@@ -29,11 +29,11 @@ AEM Forms currently support localization of Adaptive Forms content in English (e
 
 To add support for a new locale at Adaptive Forms runtime:
 
-1.  [Clone your repository](#1-clone-the-repository-clone-the-repository)
-1.  [Add a locale to the GuideLocalizationService service](#2-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
-1.  [Add locale-name specific folder](#3-add-locale-name-specific-folder-client-library-add-locale-name-specific-folder)
-1.  [Add locale support for the dictionary](#about-locale-dictionaries-about-locale-dictionaries)
-1.  [Commit the changes in the repository and deploy the pipeline](#5-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-chnages-in-repo-deploy-pipeline)
+1.  [Clone your repository](#clone-the-repository)
+1.  [Add a locale to the GuideLocalizationService service](#add-a-locale-to-the-guide-localization-service)
+1.  [Add locale-name specific folder](#add-locale-name-specific-folder)
+1.  [Add locale support for the dictionary](#add-locale-support-for-the-dictionary)
+1.  [Commit the changes in the repository and deploy the pipeline](#commit-changes-in-repo-deploy-pipeline)
 
 #### 1. Clone the repository {#clone-the-repository}
 
@@ -42,13 +42,13 @@ To add support for a new locale at Adaptive Forms runtime:
 1. Use the git user name and password to clone the repository. 
 1. Open the cloned Forms Cloud Service repository folder in your preferred editor. 
 
-#### 2. Add a locale to the Guide Localization service {#add-a-locale-to-the-guide-localization-service-br}
+#### 2. Add a locale to the Guide Localization service {#add-a-locale-to-the-guide-localization-service}
 
 1.  Locate the `Guide Localization Service.cfg.json` file and add the locale you want to add to the list of supported locales.
 
     >[!NOTE]
     >
-    >* Create a file with the name as `Guide Localization Service.cfg.json` file, if already not present.
+    > Create a file with the name as `Guide Localization Service.cfg.json` file, if already not present.
     
 #### 3. Add locale-name specific folder client library {#add-locale-name-specific-folder}
 
@@ -65,7 +65,7 @@ Create a node named as `[locale-name]_xfa` and type as `cq:ClientLibraryFolder` 
               I18N.js
               /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
               
-##### 3.2. Add Adaptive Form client library for a locale locale-name folder {#add-adaptive-form-client-library-for-a-locale-br}
+##### 3.2. Add Adaptive Form client library for a locale locale-name folder 
 
 1.  Create a node named as `[locale-name]_af` and type as `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, with category as `guides.I18N.<locale>` and and dependencies as `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` and `guide.common`.
 1.  Create a folder named as `javascript` and add the following files:
@@ -80,30 +80,28 @@ Create a node named as `[locale-name]_xfa` and type as `cq:ClientLibraryFolder` 
       LogMessages.js
     ```
 
-#### 4. Add locale support for the dictionary {#add-locale-support-for-the-dictionary-br}
+#### 4. Add locale support for the dictionary {#add-locale-support-for-the-dictionary}
 
 Perform this step only if the `<locale>` you are adding is not among `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
-1.  Create a folder `languages` under `etc`, if not present already.
+1. Create a folder `languages` under `etc`, if not present already.
 
-1.  Add a multi-valued string property `languages` to the node, if not present already.
-1.  Add the `<locale-name>` default locale values `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, if not present already.
+1. Add a multi-valued string property `languages` to the node, if not present already.
+1. Add the `<locale-name>` default locale values `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, if not present already.
 
-1.  Add the `<locale>` to the values of the `languages` property of `/etc/languages`.
+1. Add the `<locale>` to the values of the `languages` property of `/etc/languages`.
+1. Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hierarchy] as: 
 
-
-```text
-Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hierarchy] as:
-<filter root="/etc/clientlibs/[locale-name]"/>
-<filter root="/etc/languages"/>
-```
+    ```
+    <filter root="/etc/clientlibs/[locale-name]"/>
+    <filter root="/etc/languages"/>
+    ```
 
  Before committing the changes into the AEM Git repository, you need to access your [Git repository information](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 
-#### 5. Commit the changes in the repository and deploy the pipeline {#commit-chnages-in-repo-deploy-pipeline}
+#### 5. Commit the changes in the repository and deploy the pipeline {#commit-changes-in-repo-deploy-pipeline}
 
 Commit the changes to the GIT repository after adding a new locale support. Deploy your code using the full stack pipeline. Learn [how to set up a pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) to add new locale support.
-
 Once the pipeline is complete, the newly added locale appears in the AEM environment. 
 
 ### Use added locale in Adaptive Forms {#use-added-locale-in-af}
