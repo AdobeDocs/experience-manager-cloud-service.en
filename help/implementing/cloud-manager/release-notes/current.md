@@ -1,13 +1,13 @@
 ---
-title: Release Notes for Cloud Manager 2023.2.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2023.2.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2023.3.0 in Adobe Experience Manager as a Cloud Service
+description: These are the release notes for Cloud Manager 2023.3.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 ---
 
-# Release Notes for Cloud Manager 2023.2.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release Notes for Cloud Manager 2023.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager release 2023.2.0 in AEM as a Cloud Service.
+This page documents the release notes for Cloud Manager release 2023.3.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -15,16 +15,9 @@ This page documents the release notes for Cloud Manager release 2023.2.0 in AEM 
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2023.2.0 in AEM as a Cloud Service is 16 February 2023. The next release is planned for 16 March 2023.
+The release date for Cloud Manager release 2023.3.0 in AEM as a Cloud Service is 16 March 2023. The next release is planned for 13 April 2023.
 
-## What's New {#what-is-new}
+## Bug Fixes {#bug-fixes}
 
-* Users can download [custom UI test](/help/implementing/cloud-manager/ui-testing.md) results from the UI.
-* [Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md) (RDEs) are a new type of Cloud Environment intended as a fast, consistent, and extensible way to validate that code that works locally also functions as expected in the Cloud.
-  * RDEs enable developers to rapidly troubleshoot issues and deploy new features on AEM as a Cloud Service.
-  * Using command line tools, developers can quickly sync content packages, bundles, content files, OSGi configurations, or dispatcher configurations to RDEs.
-
-## API Changes {#api-changes}
-
-* API changes were made to support [RDEs.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Rapid-Development-Environments)
-* The API now allows retrieval of [execution artifacts.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Execution-Artifacts)
+* An issue was fixed where the go-live widget incorrectly set the previously set date.
+* The commerce tile on the **Learn** tab of Cloud Manager now navigates the user to the correct page.
