@@ -68,6 +68,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
       + [Release Notes for 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
     + 2022 {#2022}
       + [Release Notes for 2022.12.0](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
@@ -499,7 +500,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
-    + [Latest innovations](/help/forms/latest-innovations.md)
+    + [Top Adobe Experience Manager Forms innovations](/help/forms/latest-innovations.md)
     + [Notable changes](/help/forms/notable-changes.md)
     + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
     + [Frequently asked questions](/help/forms/faq.md)
@@ -533,6 +534,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
         + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+        + [Summit Workbook](/help/forms/summit-2023-workbook.md)
     + Authoring Adaptive Forms - Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -935,6 +937,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Maintaining an AEM Connector](/help/connectors/maintain.md)
 + Operations {#operations}
   + [Operations and Maintenance on AEM as a Cloud Service](/help/operations/home.md)
+  + [Notification Center](/help/operations/notification-center.md)
   + [Content Search and indexing](/help/operations/indexing.md)
   + [Content Replication Service](/help/operations/replication.md)
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
