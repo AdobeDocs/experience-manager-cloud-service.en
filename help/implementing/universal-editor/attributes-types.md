@@ -1,10 +1,6 @@
 ---
 title: Attributes and Types
 description: Learn about the data attributes and types that the Universal Editor requires.
-feature: Page Editor
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Attributes and Types {#attributes-types}

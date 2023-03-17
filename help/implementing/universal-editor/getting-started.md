@@ -1,10 +1,6 @@
 ---
 title: Getting Started with the Universal Editor in AEM
 description: Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
-feature: Page Editor
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Getting Started with the Universal Editor in AEM {#getting-started}

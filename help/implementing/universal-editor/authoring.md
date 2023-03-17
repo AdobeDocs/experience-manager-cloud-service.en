@@ -1,10 +1,6 @@
 ---
 title: Authoring Content with the Universal Editor
 description: Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
-feature: Page Editor
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Authoring Content with the Universal Editor {#authoring}
