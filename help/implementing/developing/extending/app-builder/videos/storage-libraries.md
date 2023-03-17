@@ -12,10 +12,6 @@ exl-id: 3ddd452c-6291-4560-aabc-dcd6e628f7ab
 ---
 # App Builder storage libraries
 
->[!IMPORTANT]
->
-> _Adobe Project Firefly, as mentioned in the videos in this series, is now named App Builder_
-
 ## Introduction to storage libraries
 
 Learn about App Builder storage options, and why storage is important in an App Builder application.
