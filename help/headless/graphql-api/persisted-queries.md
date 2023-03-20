@@ -259,7 +259,7 @@ Persisted queries are recommended as they can be cached at the [Dispatcher](/hel
 
 By default AEM will invalidate cache based on a Time To Live (TTL) definition. These TTLs can be defined by the following parameters. These parameters can be accessed by various means, with variations in the names according to the mechanism used:
 
-|Cache Type |[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control?retiredLocale=de) |Curl |OSGi Configuration |Cloud Manager |
+|Cache Type |[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control) |Curl |OSGi Configuration |Cloud Manager |
 |--- |--- |--- |--- |--- |
 |Dispatcher |`max-age` |`cache-control : max-age` |`cacheControlMaxAge` |`graphqlCacheControl` |
 |CDN |`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |`graphqlSurrogateControl` |60 |
@@ -280,15 +280,15 @@ These:
 * cannot be overwritten:
   * with an OSGi configuration
 * can be overwritten:
-  * in a HTTP Header request
+  * in a HTTP Header request: for example, using a curl request that includes suitable settings for cache-control and/or surrogate-control (see examples under Managing Cache at the Persisted Query Level)
   * if you specify values in the **Headers** dialog of the [GraphiQL IDE](#http-cache-headers-graphiql-ide)
 
 ### Publish instances {#publish-instances}
 
-For author instances the default values are:
+For publish instances the default values are:
 
 * `max-age`  : 60
-* `s-maxage` : 7200
+* `s-maxage` : 60
 * `stale-while-revalidate` : 86400
 * `stale-if-error` : 86400
 
@@ -296,18 +296,11 @@ These can be overwritten:
 
 * [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
 
-* [at the Persisted Query Level](#cache-persisted-query-level)
+* [at the Persisted Query Level](#cache-persisted-query-level); this involves posting the query to AEM using CURL in your command line interface.
 
 * [with Cloud Manager variables](#cache-cloud-manager-variables)
 
 * [with an OSGi configuration](#cache-osgi-configration)
-
-If none of these are defined, then the defaults used by AEM are:
-
-* `max-age`  : 60
-* `s-maxage` : 60
-* `stale-while-revalidate` : 86400
-* `stale-if-error` : 86400
 
 ### Managing HTTP Cache Headers in the GraphiQL IDE {#http-cache-headers-graphiql-ide}
 
