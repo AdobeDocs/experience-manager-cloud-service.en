@@ -280,7 +280,7 @@ These:
 * cannot be overwritten:
   * with an OSGi configuration
 * can be overwritten:
-  * in a HTTP Header request: for example, using a curl request that includes suitable settings for cache-control and/or surrogate-control (see examples under Managing Cache at the Persisted Query Level)
+  * can be overwritten by a request that defines HTTP header settings using curl; it should include suitable settings for `cache-control` and/or `surrogate-control`
   * if you specify values in the **Headers** dialog of the [GraphiQL IDE](#http-cache-headers-graphiql-ide)
 
 ### Publish instances {#publish-instances}
@@ -288,7 +288,7 @@ These:
 For publish instances the default values are:
 
 * `max-age`  : 60
-* `s-maxage` : 60
+* `s-maxage` : 7200
 * `stale-while-revalidate` : 86400
 * `stale-if-error` : 86400
 
@@ -371,12 +371,7 @@ The OSGi configuration for publish instances:
   | `surrogateControlStaleWhileRevalidate` | reads | `graphqlStaleWhileRevalidate` |
   | `surrogateControlStaleIfError` | reads | `graphqlStaleIfError` |
 
-* and if not available, uses the following default values: 
-
-  * `cacheControlMaxAge` : 60
-  * `surrogateControlMaxAge` : 7200
-  * `surrogateControlStaleWhileRevalidate` : 86400
-  * `surrogateControlStaleIfError` : 86400
+* and if not available, the OSGi configuration uses the [default values for publish instances](#publish-instances).
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
