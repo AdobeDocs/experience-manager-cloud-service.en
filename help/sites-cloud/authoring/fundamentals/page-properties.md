@@ -160,17 +160,6 @@ The properties are distributed across several tabs.
   * **Select Image** - Select an existing Asset to use as the thumbnail
   * **Revert** - This option becomes available after you have made a change to the thumbnail. If you do not want to keep your change, you can revert that change before saving.
 
-### Social Media {#social-media}
-
-* **Social Media sharing**
-
-  Defines the sharing options available on the page. Exposes the options available to the [Sharing core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html).
-
-  * **Enable user sharing for Facebook**
-  * **Enable user sharing for Pinterest**
-  * **Preferred XF variation**
-    * Define experience fragment variation used for generating metadata for page
-
 ### Cloud Services {#cloud-services}
 
 * **Cloud Service Configurations** - Define properties for cloud services
@@ -201,7 +190,7 @@ The properties are distributed across several tabs.
     
 ### Blueprint {#blueprint}
 
-This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies are are part of [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md)
+This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies, and are part of [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md)
 
 * **Current Live Copies** - Lists pages that are based on (i.e. are Live Copies of) this blueprint page
 
@@ -209,7 +198,7 @@ This tab is only visible for pages that serve as blueprints. Blueprints serve as
 
 ### Live Copy {#live-copy}
 
-This tab is only visible for pages that are configured as live copies.
+This tab is only visible for pages that are configured as live copies. As with Blueprints, Live Copies are part of [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md).
 
 * **Synchronize** - Synchronize Live Copy with Blueprint, keeping local modifications
 * **Reset** - Reset Live Copy to state of Blueprint, removing local modifications
