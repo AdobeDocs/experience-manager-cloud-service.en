@@ -63,7 +63,7 @@ You can:
 
   >[!NOTE]
   >
-  >**Tags** can also be added (to the **Master** variation) as part of the [Metadata](/help/assets/content-fragments/content-fragments-metadata.md)
+  >**Tags** can also be added (to the **Master** variation) as part of the [Metadata](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
 * [Create and manage variations](#managing-variations) of the **Master** content.
 
