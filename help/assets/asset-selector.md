@@ -7,19 +7,32 @@ role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 ---
 
-# Micro Frontend Asset Selector {#Overview}
+# Micro-Frontend Asset Selector {#Overview}
 
-Micro Frontend Asset Selector provides a user interface embedded within your application that interacts with the [!DNL Assets as a Cloud Service] repository. As a result, you can easily browse or search digital assets available in the repository and use them in your application experience.
-The Micro Frontend user interface is made available in your application experience using the Asset Selector package. You can import the package and the latest deployed Micro Frontend loads automatically within your application.
+Micro-Frontend Asset Selector provides a user interface that easily integrates with the [!DNL Experience Manager Assets as a Cloud Service] repository so that you can browse or search digital assets available in the repository and use them in your application authoring experience.
+
+The Micro-Frontend user interface is made available in your application experience using the Asset Selector package. You can import the package and the latest deployed Micro-Frontend loads automatically within your application.
 
 ![Overview](assets/overview.png)
 
-Micro Frontend Asset Selector provides many benefits, such as:
+Asset Selector provides many benefits, such as:
 
 *   Ease of integration with any of the Adobe or non-Adobe applications using Vanilla JavaScript library.
-*   Easy to maintain as you can update the Assets Selector package to deploy and load the latest Micro Frontend on your application automatically. There are no updates required within your application to view the latest Micro Frontend modifications.
-*   Ease of customization as there are properties available to customize the Asset Selector display within your application.
+*   Easy to maintain as updates to the Assets Selector package are automatically deployed to the Micro-Frontend available for your application. There are no updates required within your application to load the latest Micro-Frontend modifications.
+*   Ease of customization as there are properties available that control the Asset Selector display within your application.
 
+* Full-text search, out-of-the-box, and customized filters to quickly navigate to assets for use within the authoring experience.
+
+* Ability to switch repositories within an IMS organization for asset selection.
+
+* Ability to sort assets by name, dimension, and size and view them in List, Grid, Gallery, or  Waterfall view.
+
+Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets as a Cloud Service] repository:
+
+* [Integrate Asset Selector using Vanilla JS](#integration-with-vanilla-js)
+
+* [Define Asset Selector display properties](#asset-selector-properties)
+* [Use Asset Selector](#using-asset-selector)
 
 <!--
 
@@ -29,43 +42,48 @@ Asset Selector is implemented for the usage in Enterprise Service Management (ES
 
 -->
 
-### Integrate Micro Frontend Asset Selector using Vanilla JS {#integration-with-vanilla-js}
+### Integrate Asset Selector using Vanilla JS {#integration-with-vanilla-js}
 
 You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository and select assets from within the application. 
-The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. Edit the `index.html` file to define the authentication details to access the Assets as a Cloud Service repository and to configure the Asset Selector display properties.
-The authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository depends on various factors such as:
+
+The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. Edit the `index.html` file or a similar file within your implementation to define the authentication details to access the Assets as a Cloud Service repository and to configure the Asset Selector display properties.
+
+Asset Selector supports authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID`. Authentication using these IMS properties is referred to as SUSI (Sign Up Sign In) flow in this article.
+
+You can perform authentication without defining `imsScope` or `imsClientID` IMS properties if:
+
 *   You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
-*   You already have an Identity Management System (IMS) token generated for authentication.
-*   You are not integrating an [!DNL Adobe] application on Unified Shell and do not have an IMS token generated for authentication.
-The first two scenarios are referred to as non-IMS flow in this article and the third scenario is referred to as an IMS flow.
+*   You already have an IMS token generated for authentication.
+
+Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining `imsScope` or `imsClientID` IMS properties is referred to as a non-SUSI flow in this article.
 
 ## Prerequisites {#prerequisites}
 
-**Non-IMS flow**
+Define the prerequisites in the `index.html` file or a similar file within your implementation to define the authentication details to access the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository. The prerequisites vary based on if you are authenticating using a SUSI flow or a non-SUSI flow.
 
-*   discoveryURL
+**Non-SUSI flow**
+
 *   imsOrg
 *   imsToken
 *   apikey
 
-For more information on these properties, refer to [Asset Selector Properties](#props).
+For more information on these properties, refer to [Asset Selector Properties](#asset-selector-properties).
 
-**IMS flow**
+**SUSI flow**
 
 *   imsClientId
 *   imsScope
 *   redirectUrl
-*   discoveryURL
 *   imsOrg
 *   apikey
 
-For more information on these properties, refer to [Example for the IMS flow](#ims-vanilla) and [Asset Selector Properties](#props).
+For more information on these properties, refer to [Example for the IMS flow](#ims-vanilla) and [Asset Selector Properties](#asset-selector-properties).
 
-#### Example for the non-IMS flow {#non-ims-vanilla}
+#### Example for the non-SUSI flow {#non-ims-vanilla}
 
 Use this example `index.html` file for authentication if you are integrating an [!DNL Adobe] application on Unified Shell or if you already have an IMS token generated for authentication.
 Access the Asset Selector package using the `Script` tag, as shown in *line 9* to *line 11* of the example `index.html` file. Define the authentication and other Assets as a Cloud Service access-related properties in the const props section, as shown in *line 20* to *line 27* of the `index.html` file.
-The `PureJSSelectors` global variable, mentioned in *line 29*, is used to render the Micro Frontend Asset Selector in the web browser.
+The `PureJSSelectors` global variable, mentioned in *line 29*, is used to render the Asset Selector in the web browser.
 Asset Selector is rendered on the `<div>` container element, as mentioned in *line 35* and *line 36*.
 
 ```html {line-numbers="true"}
@@ -78,7 +96,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
     <title>Asset Selectors</title>
     <link rel="stylesheet" href="index.css">
     <script id="asset-selector"
-        src="selector.js"></script>
+        src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/asset-selectors.js"></script>
     <script>
 
         // container element on which you want to render the AssetSelector/DestinationSelector component
@@ -111,9 +129,9 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 ```
 
-#### Example for the IMS flow {#ims-vanilla}
+#### Example for the SUSI flow {#ims-vanilla}
 
-Use this example `index.html` file for authentication if you are not integrating an [!DNL Adobe] application on Unified Shell or if you do not have an IMS token generated for authentication.
+Use this example `index.html` file for authentication if you are integrating your application using SUSI flow.
 
 Access the Asset Selector package using the `Script` Tag, as shown in *line 9* to *line 11* of the example `index.html` file.
 
@@ -123,7 +141,7 @@ As you do not have an `imsToken` generated, use the `registerAssetSelectorsIms` 
 
 Define the authentication and other Assets as a Cloud Service access-related properties in the `const props` section, as shown in *line 54* to *line 60* of the example `index.html` file.
 
-The `PureJSSelectors` global variable, mentioned in *line 65*, is used to render the Micro Frontend Asset Selector in the web browser.
+The `PureJSSelectors` global variable, mentioned in *line 65*, is used to render the Asset Selector in the web browser.
 
 Asset Selector is rendered on the `<div>` container element, as mentioned in *line 74* to *line 81*. The example uses a dialog to display the Asset Selector.
 
@@ -137,7 +155,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
     <title>Asset Selectors</title>
     <link rel="stylesheet" href="index.css">
     <script id="asset-selector"
-        src="selector.js"></script>
+        src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/asset-selectors.js"></script>
     <script>
 
         const imsProps = {
@@ -219,12 +237,12 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 Vlad to provide inputs on this
 
-## Use Asset Selector properties {#props}
+## Use Asset Selector properties {#asset-selector-properties}
 
 | Property | Type | Required | Default | Description |
 |---|---|---|---|---|
 | *rail* | boolean | No | false | If marked `true`, it displays the Asset Selector in a left rail view. If it is marked `false`, the Asset Selector displays in modal view. |
-| *discoveryURL* | string | No | | A URL that triggers the Micro Frontend Asset Selector application integrated with your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Assets directly in case your application has the discovery information. |
+| *discoveryURL* | string | No | | A URL that triggers the Asset Selector application integrated with your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Assets directly in case your application has the discovery information. |
 | *imsOrg* | string | No | | Adobe Identification Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The imsORG key authenticates whether the org is under Adobe IMS or not.|
 | *imsToken* | string | No | | IMS bearer token used for authentication |
 | *apiKey* | string | No | | API key used for accessing the AEM Discovery service.|
@@ -291,7 +309,7 @@ In addition to the faceted search, Assets Selector allows you to customize vario
 
 ## Using Asset Selector {#using-asset-selector}
 
-Once the Micro Frontend Asset Selector is set up and you are authenticated to use Asset Selector with your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application, you can select assets or perform various other operations to search for your assets within the repository.
+Once the Asset Selector is set up and you are authenticated to use Asset Selector with your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application, you can select assets or perform various other operations to search for your assets within the repository.
 
 ### Hide/Show panel 
 
