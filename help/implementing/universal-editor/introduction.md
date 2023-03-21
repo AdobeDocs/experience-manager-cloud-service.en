@@ -1,11 +1,11 @@
 ---
 title: Universal Visual Editor Introduction
-description: Learn how the Universal Visual Editor (aka Universal Editor) enables WYSIWIG editing of any experience for all headless and headful experiences. Understand how that will help content authors to deliver exceptional experiences, to increase their content velocity, and how it will provide a state-of-the-art developer experience.
+description: Learn how the Universal Visual Editor (a.k.a. Universal Editor) enables what-you-see-is-what-you-get (WYSIWYG) editing of any headless and headful experience. Understand how it can help content authors deliver exceptional experiences, increase their content velocity, and how provides a state-of-the-art developer experience.
 ---
 
 # Universal Visual Editor Introduction {#introduction}
 
-Learn how the Universal Visual Editor (aka Universal Editor) enables WYSIWIG editing of any experience for all headless and headful experiences. Understand how that will help content authors to deliver exceptional experiences, to increase their content velocity, and how it will provide a state-of-the-art developer experience.
+Learn how the Universal Visual Editor (a.k.a. Universal Editor) enables what-you-see-is-what-you-get (WYSIWYG) editing of any headless and headful experience. Understand how it can help content authors deliver exceptional experiences, increase their content velocity, and how provides a state-of-the-art developer experience.
 
 ## Background {#background}
 
@@ -29,13 +29,13 @@ The requirements for an implementation to leverage the Universal Editor is very 
 
 * **Any Architecture** - Server-side rendering, edge-side rendering, client-side rendering, etc.
 * **Any Framework** - Vanilla AEM, or any third-party framework like React, Next.js, Angular, etc.
-* **Any Hosting** - Can be hosted locally to AEM, or on a remote domain.
+* **Any Hosting** - Can be hosted locally to AEM, or on a remote domain
 
 ### Any Content {#any-content}
 
 A content author should have the same powerful editing experience formerly offered by the AEM page editor. But the Universal Editor allows content authors to edit **any** content visually and in-context and supports:
 
-* **AEM Page Structures** - Nested `cq:Components` of `cq:Pages`, including Experience Fragments.
+* **AEM Page Structures** - Nested `cq:Components` of `cq:Pages`, including Experience Fragments
 * **AEM Content Fragments** - Edit content from Content Fragments as they appear in-context of the experience.
 * **Documents** - Proof of concepts have shown that also Word, Excel, Google Docs or Markdown documents can also be edited the same way (this is WIP).
 
@@ -73,9 +73,9 @@ A marketing practitioner wants to create content that is tailored to the layout 
 
 ## Road Map {#road-map}
 
-It is important to note that the Universal Editor is a work in progress and some of the capabilities laid out in this document are a vision of the final editor and not necessarily of its current capabilities.
+It is important to note that the Universal Editor is a work in progress and some of the capabilities laid out in this document are a vision of the final editor and not necessarily representative of its current capabilities.
 
-Please speak with your Adobe contact for details on the upcoming features planned for the Universal Editor
+Please speak with your Adobe contact for details on the upcoming features planned for the Universal Editor.
 
 ## Additional Resources {#additional-resources}
 
