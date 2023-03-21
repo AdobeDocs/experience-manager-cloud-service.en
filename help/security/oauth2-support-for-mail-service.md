@@ -96,6 +96,8 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
 >[!NOTE]
 >
 > You can get the Postman API collection from [this location](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+>
+> Please check MSFT OAuth documentation at https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth for more details.
 
 ### Integration with AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 
