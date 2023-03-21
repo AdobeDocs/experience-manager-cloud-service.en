@@ -1,11 +1,11 @@
 ---
 title: Asynchronous Jobs
-description: Adobe Experience Manager optimizes performance by asynchronously completing some resource-intensive tasks.
+description: Adobe Experience Manager optimizes performance by asynchronously completing some resource-intensive tasks as background operations.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 ---
 # Asynchronous Operations {#asynchronous-operations}
 
-To reduce negative impact on performance, Adobe Experience Manger processes certain long-running and resource-intensive operations asynchronously. Asynchronous processing involves enqueuing multiple jobs and running them in a serial manner subject to the availability of system resources.
+To reduce negative impact on performance, Adobe Experience Manger processes certain long-running and resource-intensive operations asynchronously as background operations. Asynchronous processing involves enqueuing multiple jobs and running them in a serial manner subject to the availability of system resources.
 
 These operations include:
 
@@ -16,7 +16,7 @@ These operations include:
 * Moving pages
 * Rolling out Live Copies
 
-You can view the status of asynchronous jobs from the **[!UICONTROL Async Job Status]** dashboard at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**.
+You can view the status of asynchronous jobs from the **[!UICONTROL Background Operations]** dashboard at **Global Navigation** -&gt; **Tools** -&gt; **General** -&gt; **Jobs**.
 
 >[!NOTE]
 >
@@ -28,11 +28,11 @@ You can view the status of asynchronous jobs from the **[!UICONTROL Async Job St
 
 Whenever AEM processes an operation asynchronously, you receive a notification in your [inbox](/help/sites-cloud/authoring/getting-started/inbox.md) and via email (if enabled).
 
-To view the status of the asynchronous operations in detail, navigate to the **[!UICONTROL Async Job Status]** page.
+To view the status of the asynchronous operations in detail, navigate to the **[!UICONTROL Background Operations]** page.
 
-1. In the Experience Manager interface click **[!UICONTROL Operations]** &gt; **[!UICONTROL Jobs]**.
+1. In the Experience Manager interface select **Global Navigation** -&gt; **Tools** -&gt; **General** -&gt; **Jobs**.
 
-1. In the **[!UICONTROL Async Job Status]** page, review the details of the operations.
+1. In the **[!UICONTROL Background Operations]** page, review the details of the operations.
 
     ![Status and details of Asynchronous operations](assets/async-operation-status.png)
 
@@ -64,13 +64,22 @@ To view the status of the asynchronous operations in detail, navigate to the **[
    >
    >You cannot delete a job if its status is either **Active** or **Queued**.
 
-## Purge Completed Jobs {#purging-completed-jobs}
+## Configuring Asynchronous Job Processing Options {#configure}
 
-AEM runs a purge job everyday at 01:00 to delete completed asynchronous jobs that are more than a day old.
+There are a number of options around asynchronous jobs that can be configured. The following examples show how this can be done using the configuration manager on a local development system.
+
+>[!NOTE]
+>
+>[OSGi configurations](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) are considered mutable content and any such configurations must be deployed as a content package for a production environment.
+
+### Purge Completed Jobs {#purging-completed-jobs}
+
+AEM runs a purge job every day at 01:00 to delete completed asynchronous jobs that are more than a day old.
 
 You can modify the schedule for the purge job and the duration for which details of completed jobs are retained before they are deleted. You can also configure the maximum number of completed jobs for which details are retained at any point of time.
 
-1. From the Global Navigation click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user.
+1. Navigate to **OSGi** &gt; **Configuration**
 1. Open the **[!UICONTROL Adobe Granite Async Jobs Purge Scheduled Job]** job.
 1. Specify:
    * The threshold number of days after which completed jobs are deleted.
@@ -81,15 +90,12 @@ You can modify the schedule for the purge job and the duration for which details
 
 1. Save the changes.
 
-## Configure Asynchronous Processing {#configuring-asynchronous-processing}
-
-You can configure the threshold number of assets, pages, or references for AEM to process a particular operation asynchronously as well as toggle email notifications for when the jobs are processed.
-
 ### Configure Asynchronous Asset Delete Operations {#configuring-synchronous-delete-operations}
 
 If the number of assets or folders to be deleted exceeds the threshold number, the delete operation is performed asynchronously.
 
-1. From the Global Navigation click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user.
+1. Navigate to **OSGi** &gt; **Configuration**
 1. From the web console, open the **[!UICONTROL Async Process Default Queue Configuration.]**
 1. In the **[!UICONTROL Threshold number of assets]** box, specify the threshold number of assets/folders for asynchronous processing of delete operations.
 
@@ -102,7 +108,8 @@ If the number of assets or folders to be deleted exceeds the threshold number, t
 
 If the number of assets/folders or references to be moved exceeds the threshold number, the move operation is performed asynchronously.
 
-1. From the Global Navigation click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user.
+1. Navigate to **OSGi** &gt; **Configuration**
 1. From the web console, open the **[!UICONTROL Async Move Operation Job Processing Configuration.]**
 1. In the **[!UICONTROL Threshold number of assets/references]** box, specify the threshold number of assets/folders or references for asynchronous processing of move operations.
 
@@ -115,7 +122,8 @@ If the number of assets/folders or references to be moved exceeds the threshold 
 
 If the number of references to the page(s) to be moved exceeds the threshold number, the move operation is performed asynchronously.
 
-1. From the Global Navigation click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user.
+1. Navigate to **OSGi** &gt; **Configuration**
 1. From the web console, open the **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
 1. In the **[!UICONTROL Threshold number of references]** field, specify the threshold number of references for asynchronous processing of page move operations.
 
@@ -126,7 +134,8 @@ If the number of references to the page(s) to be moved exceeds the threshold num
 
 ### Configure Asynchronous MSM Operations {#configuring-asynchronous-msm-operations}
 
-1. From the Global Navigation click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user.
+1. Navigate to **OSGi** &gt; **Configuration**
 1. From the web console, open the **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
 1. Check the option **Enable email notification** to receive email notifications for this job status. For example, success, failed.
 
