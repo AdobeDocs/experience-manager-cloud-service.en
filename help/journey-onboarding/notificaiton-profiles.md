@@ -21,12 +21,12 @@ For the correct users to receive these notifications, you need to configure and 
 
 ## Prerequisites {#prerequisites}
 
-Because user profiles are created and maintained in the Admin Console, before creating user groups for notifications, you must:
+Because user profiles are created and maintained in the Admin Console, before creating profiles for notifications, you must:
 
 * Have permissions to add and profile memberships.
 * Have a valid Adobe Admin Console profile.
 
-## Create New Cloud Manager Product Profiles {#create-groups}
+## Create New Cloud Manager Product Profiles {#create-profiles}
 
 To properly set up receipt of notifications you will need to create two user profiles. These steps must only be done once.
 
@@ -70,11 +70,11 @@ Your two new notification profiles are created.
 >
 >In case of error or if the profiles have not been defined, Adobe will default to notifying existing users assigned to the **Cloud Manager Developer** or **Deployment Manager** profiles.
 
-## Assign the  Users to the new notification product profiles {#add-users}
+## Assign Users to the Notification Profiles {#add-users}
 
-Now that the groups have been created, you must assign the appropriate users. You can do this when creating new users or by updating existing users.
+Now that the profiles have been created, you must assign the appropriate users. You can do this when creating new users or by updating existing users.
 
-### Add New Users to Groups {#new-user}
+### Add New Users to Profiles {#new-user}
 
 Follow these steps to add users for whom federated IDs have not yet been set up.
 
@@ -82,11 +82,13 @@ Follow these steps to add users for whom federated IDs have not yet been set up.
 
 1. Log in to Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) if you are not still logged in.
 
+1. Ensure you have selected the appropriate organization.
+
 1. From the **Overview** page, select **Adobe Experience Manager as a Cloud Service** from the **Products and services** card.
 
    ![Users](assets/product_services.png)
 
-1. If the federated ID for your team members has not yet been set up, select the **Users** tab from the top navigation, then select **Add User**. Otherwise skip to the section [Add Existing Users to Groups.](#existing-users)
+1. If the federated ID for your team members has not yet been set up, select the **Users** tab from the top navigation, then select **Add User**. Otherwise skip to the section [Add Existing Users to Profiles.](#existing-users)
 
    ![Users](assets/cloud_manager_add_user.png)
 
@@ -94,7 +96,7 @@ Follow these steps to add users for whom federated IDs have not yet been set up.
 
 1. Click the plus button under the **Select products** heading to begin product selection.
 
-1. Select **Adobe Experience Manager as a Cloud Service** and assign one or both of the new groups to the user.
+1. Select **Adobe Experience Manager as a Cloud Service** and assign one or both of the new profiles to the user.
 
    * **Incident Notification - Cloud Service**
    * **Proactive Notification - Cloud Service**
@@ -103,7 +105,7 @@ Follow these steps to add users for whom federated IDs have not yet been set up.
 
 The invited user will now receive the notifications. Repeat these steps for the users on your team that you would like to receive notifications.
 
-### Add Existing Users to Groups {#existing-user}
+### Add Existing Users to Profiles {#existing-user}
 
 Follow these steps to add users for whom federated IDs already exist.
 
@@ -111,17 +113,19 @@ Follow these steps to add users for whom federated IDs already exist.
 
 1. Log in to Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) if you are not still logged in.
 
+1. Ensure that you have selected the appropriate organization.
+
 1. From the **Overview** page, select **Adobe Experience Manager as a Cloud Service** from the **Products and services** card.
 
 1. Select the **Users** tab from the top navigation.
 
-1. If the federated ID already exists for the team member whom you want to add to a notification group, located that user in the list and click it. Otherwise skip to the section [Add New Users to Groups.](#add-user)
+1. If the federated ID already exists for the team member whom you want to add to a notification profile, located that user in the list and click it. Otherwise skip to the section [Add New Users to Profiles.](#add-user)
 
 1. In the **Products** section of the user details window, click the ellipsis button and then select **Edit**.
 
 1. In the **Edit products** window, click the pencil button below the **Select products** heading to begin product selection.
 
-1. Select **Adobe Experience Manager as a Cloud Service** and assign one or both of the new groups to the user.
+1. Select **Adobe Experience Manager as a Cloud Service** and assign one or both of the new profiles to the user.
 
    * **Incident Notification - Cloud Service**
    * **Proactive Notification - Cloud Service**
