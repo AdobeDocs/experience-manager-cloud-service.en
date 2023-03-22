@@ -233,10 +233,6 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 ```
 
-### Subscribe to I/O service
-
-Vlad to provide inputs on this
-
 ## Use Asset Selector properties {#asset-selector-properties}
 
 | Property | Type | Required | Default | Description |
@@ -311,6 +307,17 @@ In addition to the faceted search, Assets Selector allows you to customize vario
 
 Once the Asset Selector is set up and you are authenticated to use Asset Selector with your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application, you can select assets or perform various other operations to search for your assets within the repository.
 
+   ![using-asset-selector](assets/using-asset-selector.png)
+
+*   **A** Hide/Show panel
+*   **B** Repository switcher
+*   **C** Filters
+*   **D** Assets repository
+*   **E** Search bar
+*   **F** Sorting
+*   **G** Sorting in ascending or descending order
+*   **H** View
+
 ### Hide/Show panel 
 
 To hide folders in the left navigation, click **[!UICONTROL Hide folders]** icon. To undo the changes, click the **[!UICONTROL Hide folders]** icon again.
@@ -318,10 +325,6 @@ To hide folders in the left navigation, click **[!UICONTROL Hide folders]** icon
 ### Repository switcher
 
 Asset Selector also allows you to switch repositories for asset selection. You can select the repository of your choice from the drop-down available in the left panel. The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file.
-
-### Search bar
-
-Asset Selector allows you to perform full text search of assets within the selected repository. For example, if you type the keyword `wave` in the search bar, all the assets with the `wave` keyword mentioned in any of the metadata properties are displayed.
 
 ### Out-of-the-box filters
 
@@ -344,6 +347,10 @@ Apart from the full-text search, Asset Selector microfront end allows you to sea
 You can also create default search filter to save your most search fields and use them later. To create custom search for your assets, you can use `filterSchema` property.
 
 -->
+
+### Search bar
+
+Asset Selector allows you to perform full text search of assets within the selected repository. For example, if you type the keyword `wave` in the search bar, all the assets with the `wave` keyword mentioned in any of the metadata properties are displayed.
 
 ### Sorting
 
