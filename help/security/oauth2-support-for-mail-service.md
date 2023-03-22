@@ -31,6 +31,7 @@ For more information on the AEM as a Cloud Service Mail Service, see [Sending Em
    * `offline_access`
    * `email`
    * `profile`
+   * `https://outlook.office365.com/SMTP.Send`
 1. Go to **Authentication** - **Add a platform** - **Web**, and in the **Redirect Urls** section, add the below URLs - one with and one without a forward slash:
    * `http://localhost/`
    * `http://localhost`
@@ -63,7 +64,7 @@ You can do this by following these steps:
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_5vR5dAQAAALDXP9gOAAAAwIpkkQEAAACT2T_YDgAAAA' \
    --data-urlencode 'client_id=<clientID>' \
-   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
+   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access https://outlook.office365.com/SMTP.Send' \
    --data-urlencode 'redirect_uri=http://localhost' \
    --data-urlencode 'grant_type=authorization_code' \
    --data-urlencode 'client_secret=<clientSecret>' \
@@ -83,7 +84,7 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_IezHLAQAAAPeNSdgOAAAA' \
    --data-urlencode 'client_id=<client_id>' \
-   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
+   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access https://outlook.office365.com/SMTP.Send' \
    --data-urlencode 'redirect_uri=http://localhost' \
    --data-urlencode 'grant_type=refresh_token' \
    --data-urlencode 'client_secret=<client_secret>' \
@@ -95,6 +96,8 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
 >[!NOTE]
 >
 > You can get the Postman API collection from [this location](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+>
+> Please check the MSFT OAuth documentation [here](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) for more details.
 
 ### Integration with AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 
@@ -126,6 +129,7 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
    * `offline_access`
    * `email`
    * `profile`
+   * `https://outlook.office365.com/SMTP.Send`
 1. Create an OSGI property file `called com.day.cq.mailer.DefaultMailService.cfg.json`
 under `/apps/<my-project>/osgiconfig/config`  with the following syntax:
    
