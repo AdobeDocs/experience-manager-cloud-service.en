@@ -309,24 +309,24 @@ Once the Asset Selector is set up and you are authenticated to use Asset Selecto
 
    ![using-asset-selector](assets/using-asset-selector.png)
 
-*   **A** Hide/Show panel
-*   **B** Repository switcher
-*   **C** Filters
-*   **D** Assets repository
-*   **E** Search bar
-*   **F** Sorting
-*   **G** Sorting in ascending or descending order
-*   **H** View
+*   **A** [Hide/Show panel](#hide-show-panel)
+*   **B** [Repository switcher](#repository-switcher)
+*   **C** [Filters](#filters)
+*   **D** [Assets](#repository)
+*   **E** [Search bar](#search-bar)
+*   **F** [Sorting](#sorting)
+*   **G** [Sorting in ascending or descending order](#sorting)
+*   **H** [View](#types-of-view)
 
-### Hide/Show panel 
+### Hide/Show panel{#hide-show-panel}
 
 To hide folders in the left navigation, click **[!UICONTROL Hide folders]** icon. To undo the changes, click the **[!UICONTROL Hide folders]** icon again.
 
-### Repository switcher
+### Repository switcher{#repository-switcher}
 
 Asset Selector also allows you to switch repositories for asset selection. You can select the repository of your choice from the drop-down available in the left panel. The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file.
 
-### Out-of-the-box filters
+### Out-of-the-box filters{#filters}
 
 Asset Selector also provides out-of-the-box filter options to refine your search results. The following filters are available:
 
@@ -336,7 +336,9 @@ Asset Selector also provides out-of-the-box filter options to refine your search
 
    ![rail-view-example](assets/filters-asset-selector.png)
 
-<!--
+### Assets repository
+
+It is a collection of assets folders that you can use to perform operations.  
 
 ### Custom search
 
@@ -346,17 +348,15 @@ Apart from the full-text search, Asset Selector microfront end allows you to sea
 
 You can also create default search filter to save your most search fields and use them later. To create custom search for your assets, you can use `filterSchema` property.
 
--->
-
-### Search bar
+### Search bar{#search-bar}
 
 Asset Selector allows you to perform full text search of assets within the selected repository. For example, if you type the keyword `wave` in the search bar, all the assets with the `wave` keyword mentioned in any of the metadata properties are displayed.
 
-### Sorting
+### Sorting{#sorting}
 
 You can sort assets in Asset Selector by name, dimension, or size of an asset. You can also sort the assets in ascending or descending order.
 
-### Types of view
+### Types of view{#types-of-view}
 
 Asset Selector allows you to view the asset in four different views:
 
