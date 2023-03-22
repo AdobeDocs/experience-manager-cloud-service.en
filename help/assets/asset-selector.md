@@ -107,7 +107,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
         }
 
         const props = {
-            discoveryURL: 'discoveryurl',
+            discoveryURL: 'https://aem-discovery.adobe.io/',
             apiKey: 'apikey',
             imsOrg: 'imsorg',
             imsToken: "imstoken",
@@ -200,7 +200,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
             // any other props supported by asset selector
             }
             const assetSelectorProps = {
-                "discoveryURL": "discoveryurl",
+                "discoveryURL": "https://aem-discovery.adobe.io/",
                 "imsOrg": "imsorg",
                 apiKey: "apikey",
                 env: "",
@@ -238,7 +238,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 | Property | Type | Required | Default | Description |
 |---|---|---|---|---|
 | *rail* | boolean | No | false | If marked `true`, it displays the Asset Selector in a left rail view. If it is marked `false`, the Asset Selector displays in modal view. |
-| *discoveryURL* | string | No | | A URL that triggers the Asset Selector application integrated with your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Assets directly in case your application has the discovery information. |
+| *discoveryURL* | string | No | | A URL that provokes the Asset Selector application integrated with your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Assets directly in case your application has the discovery information. |
 | *imsOrg* | string | No | | Adobe Identification Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The imsORG key authenticates whether the org is under Adobe IMS or not.|
 | *imsToken* | string | No | | IMS bearer token used for authentication |
 | *apiKey* | string | No | | API key used for accessing the AEM Discovery service.|
@@ -269,7 +269,7 @@ If the value of the AssetSelector `rail` is set to `false` or is not mentioned i
 
 ### Example 2: Use selectedAssets property in addition to the path property
 
-Use the `path` property to define the folder name that displays automatically when the Asset Selector is rendered. In addition, use the `selectedAssets` property to define the IDs for the assets that you need to select within the folder. 
+Use the `path` property to define the folder name that displays automatically when the Asset Selector is rendered. In addition, use the `selectedAssets` property to define the IDs for the assets that you need to select within the folder. Moreover, when you want to display assets that are pre-defined within the folder, you can use selectedAssets property.
 
    ![selected-assets-example](assets/selected-assets-example-vanilla.png)
 
@@ -324,7 +324,7 @@ To hide folders in the left navigation, click **[!UICONTROL Hide folders]** icon
 
 ### Repository switcher{#repository-switcher}
 
-Asset Selector also allows you to switch repositories for asset selection. You can select the repository of your choice from the drop-down available in the left panel. The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file.
+Asset Selector also allows you to switch repositories for asset selection. You can select the repository of your choice from the drop-down available in the left panel. The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 
 ### Out-of-the-box filters{#filters}
 
