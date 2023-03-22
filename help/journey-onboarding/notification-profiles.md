@@ -119,7 +119,7 @@ Follow these steps to add users for whom federated IDs already exist.
 
 1. Select the **Users** tab from the top navigation.
 
-1. If the federated ID already exists for the team member whom you want to add to a notification profile, located that user in the list and click it. Otherwise skip to the section [Add New Users to Profiles.](#add-user)
+1. If the federated ID already exists for the team member whom you want to add to a notification profile, locate that user in the list and click it. Otherwise skip to the section [Add New Users to Profiles.](#add-user)
 
 1. In the **Products** section of the user details window, click the ellipsis button and then select **Edit**.
 
