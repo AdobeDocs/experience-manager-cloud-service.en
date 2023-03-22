@@ -11,14 +11,14 @@ exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 
 Micro-Frontend Asset Selector provides a user interface that easily integrates with the [!DNL Experience Manager Assets as a Cloud Service] repository so that you can browse or search digital assets available in the repository and use them in your application authoring experience.
 
-The Micro-Frontend user interface is made available in your application experience using the Asset Selector package. You can import the package and the latest deployed Micro-Frontend loads automatically within your application.
+The Micro-Frontend user interface is made available in your application experience using the Asset Selector package. You can import the package and the latest deployed Asset Selector loads automatically within your application.
 
 ![Overview](assets/overview.png)
 
 Asset Selector provides many benefits, such as:
 
 *   Ease of integration with any of the Adobe or non-Adobe applications using Vanilla JavaScript library.
-*   Easy to maintain as updates to the Assets Selector package are automatically deployed to the Micro-Frontend available for your application. There are no updates required within your application to load the latest Micro-Frontend modifications.
+*   Easy to maintain as updates to the Assets Selector package are automatically deployed to the Asset Selector available for your application. There are no updates required within your application to load the latest modifications.
 *   Ease of customization as there are properties available that control the Asset Selector display within your application.
 
 * Full-text search, out-of-the-box, and customized filters to quickly navigate to assets for use within the authoring experience.
@@ -238,7 +238,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 | Property | Type | Required | Default | Description |
 |---|---|---|---|---|
 | *rail* | boolean | No | false | If marked `true`, it displays the Asset Selector in a left rail view. If it is marked `false`, the Asset Selector displays in modal view. |
-| *discoveryURL* | string | No | | A URL that provokes the Asset Selector application integrated with your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Assets directly in case your application has the discovery information. |
+| *discoveryURL* | string | No | | URL to the Experience Manager as a Cloud Service Discovery Service. You can specify the Experience Manager as a Cloud Service URL directly if your application already called the Discovery Service. For example, https://aem-discovery.adobe.io. |
 | *imsOrg* | string | No | | Adobe Identification Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The imsORG key authenticates whether the org is under Adobe IMS or not.|
 | *imsToken* | string | No | | IMS bearer token used for authentication |
 | *apiKey* | string | No | | API key used for accessing the AEM Discovery service.|
@@ -309,24 +309,24 @@ Once the Asset Selector is set up and you are authenticated to use Asset Selecto
 
    ![using-asset-selector](assets/using-asset-selector.png)
 
-*   **A** [Hide/Show panel](#hide-show-panel)
-*   **B** [Repository switcher](#repository-switcher)
-*   **C** [Filters](#filters)
-*   **D** [Assets](#repository)
-*   **E** [Search bar](#search-bar)
-*   **F** [Sorting](#sorting)
-*   **G** [Sorting in ascending or descending order](#sorting)
-*   **H** [View](#types-of-view)
+*   **A**: [Hide/Show panel](#hide-show-panel)
+*   **B**: [Repository switcher](#repository-switcher)
+*   **C**: [Filters](#filters)
+*   **D**: [Assets](#repository)
+*   **E**: [Search bar](#search-bar)
+*   **F**: [Sorting](#sorting)
+*   **G**: [Sorting in ascending or descending order](#sorting)
+*   **H**: [View](#types-of-view)
 
-### Hide/Show panel{#hide-show-panel}
+### Hide/Show panel {#hide-show-panel}
 
 To hide folders in the left navigation, click **[!UICONTROL Hide folders]** icon. To undo the changes, click the **[!UICONTROL Hide folders]** icon again.
 
-### Repository switcher{#repository-switcher}
+### Repository switcher {#repository-switcher}
 
 Asset Selector also allows you to switch repositories for asset selection. You can select the repository of your choice from the drop-down available in the left panel. The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 
-### Out-of-the-box filters{#filters}
+### Out-of-the-box filters {#filters}
 
 Asset Selector also provides out-of-the-box filter options to refine your search results. The following filters are available:
 
@@ -348,15 +348,15 @@ Apart from the full-text search, Asset Selector microfront end allows you to sea
 
 You can also create default search filter to save your most search fields and use them later. To create custom search for your assets, you can use `filterSchema` property.
 
-### Search bar{#search-bar}
+### Search bar {#search-bar}
 
 Asset Selector allows you to perform full text search of assets within the selected repository. For example, if you type the keyword `wave` in the search bar, all the assets with the `wave` keyword mentioned in any of the metadata properties are displayed.
 
-### Sorting{#sorting}
+### Sorting {#sorting}
 
 You can sort assets in Asset Selector by name, dimension, or size of an asset. You can also sort the assets in ascending or descending order.
 
-### Types of view{#types-of-view}
+### Types of view {#types-of-view}
 
 Asset Selector allows you to view the asset in four different views:
 
