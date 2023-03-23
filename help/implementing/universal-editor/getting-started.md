@@ -46,7 +46,7 @@ import "@adobe/universal-editor-cors";
 
 ### Alternative for Non-React Apps {#alternative}
 
-If you are not implementing a React app and/or require server-side rendering and alternative method is to include the following to the document body.
+If you are not implementing a React app and/or require server-side rendering an alternative method is to include the following to the document body.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
