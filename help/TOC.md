@@ -164,7 +164,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Other Onboarding Concepts {#concepts}
     + [Introduction to Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
     + [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md)
-    + [Notification User Groups](/help/journey-onboarding/user-groups.md)
+    + [Notification Profiles](/help/journey-onboarding/notification-profiles.md)
 + AEMaaCS Trials {#trials}
   + Headless Trials {#headless}
     + [Customize Content in a Sample React App](/help/trials/headless/customize-app.md)
