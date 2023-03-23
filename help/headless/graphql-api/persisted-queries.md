@@ -280,7 +280,7 @@ These:
 * cannot be overwritten:
   * with an OSGi configuration
 * can be overwritten:
-  * can be overwritten by a request that defines HTTP header settings using cURL; it should include suitable settings for `cache-control` and/or `surrogate-control`; for examples, see [Managing Cache at the Persisted Query Level](#cache-persisted-query-level)
+  * by a request that defines HTTP header settings using cURL; it should include suitable settings for `cache-control` and/or `surrogate-control`; for examples, see [Managing Cache at the Persisted Query Level](#cache-persisted-query-level)
   * if you specify values in the **Headers** dialog of the [GraphiQL IDE](#http-cache-headers-graphiql-ide)
 
 ### Publish instances {#publish-instances}
@@ -296,7 +296,7 @@ These can be overwritten:
 
 * [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
 
-* [at the Persisted Query Level](#cache-persisted-query-level); this involves posting the query to AEM using cURL in your command line interface.
+* [at the Persisted Query Level](#cache-persisted-query-level); this involves posting the query to AEM using cURL in your command line interface, and publishing the Persisted Query.
 
 * [with Cloud Manager variables](#cache-cloud-manager-variables)
 
@@ -332,25 +332,12 @@ The `cache-control` can be set at the creation time (PUT) or later on (for examp
 
 ### Managing Cache with Cloud Manager variables {#cache-cloud-manager-variables}
 
-[Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md) can be defined with Cloud Manager to define the required values.
+[Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md) can be defined with Cloud Manager to define the required values:
 
-An example of defining such variables:
-
-```bash
-{
-  "name": "graphqlStaleIfError",
-  "value": "86400",
-  "type": "string",
-  "status": "ready"
-}
-
-{
-  "name": "graphqlSurrogateControl",
-  "value": "600",
-  "type": "string",
-  "status": "ready"
-}
-```
+| Name | Value | ... |
+|--- |--- |--- |
+|`graphqlStaleIfError` |86400 | ... |
+|`graphqlSurrogateControl` |600 | ... |
 
 ### Managing Cache with an OSGi configuration {#cache-osgi-configration}
 
@@ -360,7 +347,7 @@ To manage the cache globally, you can [configure the OSGi settings](/help/implem
 >
 >The OSGi configuration is only appropriate for publish instances. The configuration exists on author instances, but is ignored.
 
-The OSGi configuration for publish instances:
+The default OSGi configuration for publish instances:
 
 * reads the Cloud Manager variables if available: 
 
