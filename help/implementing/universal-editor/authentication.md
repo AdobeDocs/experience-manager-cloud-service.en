@@ -13,11 +13,6 @@ The Universal Editor uses Adobe's Identity Management System (IMS) authenticatio
 
 All applications/remote pages are responsible for authentication to required backend systems. The Universal Editor service needs this authentication to backend systems to perform CRUD operations as it is a standalone service.
 
-Depending on how you are using the Universal Editor, there are different options of implementation.
-
-* [Standard Flow](#standard-flow) - For AEM as a Cloud Service or AMS using IMS
-* [Third-Party Flow](#third-party-flow) - For AEM on-premise or AMS without IMS
-
 ## Standard Flow {#standard-flow}
 
 This is the solution for AEM as a Cloud Service and AMS using IMS to use the Universal editor.
