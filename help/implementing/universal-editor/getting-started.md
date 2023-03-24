@@ -46,7 +46,7 @@ import "@adobe/universal-editor-cors";
 
 ### Alternative for Non-React Apps {#alternative}
 
-If you are not implementing a React app and/or require server-side rendering and alternative method is to include the following to the document body.
+If you are not implementing a React app and/or require server-side rendering an alternative method is to include the following to the document body.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -151,50 +151,6 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-### Universal Editor Translation Service {#translation}
-
-The Universal Editor performs translation based on the instrumentation metadata.
-
-#### Basic Translation Principle {#principle}
-
-Consider the following selection from the previous example.
-
-```html
-<meta name="urn:auecon:aemconnection" content="aem:https://localhost:4502">
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-```
-
-The editor will perform replacements and internally the `itemid` will be re-written to the following.
-
-```html
-itemid="urn:aem:https://localhost:4502/content/example/list"
-```
-
-This results in the term `aemconnection` being replaced by the content of the `<meta>` tag.
-
-#### Query Selector {#query-selector}
-
-This replacement will result into following query string for John Smith.
-
-```html
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-  <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="urn:fcs:type/fragment">.  
-    <p itemprop="name" itemtype="text">John Smith</p>
-    <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
-    <img itemprop="avatar" src="urn:fcs:missing" itemtype="image" alt="avatar"/>
-  </li>
-```
-
-`[itemid="urn:fcs:https://example.franklin.adobe.com/345fcdd/content/example/list][itemprop="name"]`
-
-If you want to alter the tile of John Smith, the selector will be the following.
-
-`[itemid="urn:aem:https://localhost:4502/content/example/another-source"][itemprop="title"]`
-
-Instead of inheritance of `itemid`s and resources, the Universal Editor works with scopes. A scope can be defined on a node level and be inherited by the entire sub-structure.
-
-In case a different scope is required for a sub-structure within the structure or a defined leave, another `itemid` can be defined.
-
 ## You're Ready to Use the Universal Editor {#youre-ready}
 
 Your app is now instrumented to use the Universal Editor!
@@ -207,6 +163,7 @@ To learn more about the Universal Editor, see these documents.
 
 * [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation in order to deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
 * [Authoring Content with the Universal Editor](authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
+* [Publishing Content with the Universal Editor](publishing.md) - Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
 * [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.
