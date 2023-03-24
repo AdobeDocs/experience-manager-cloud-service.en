@@ -209,12 +209,12 @@ Destination Selector is rendered on the `<div>` container element, as mentioned 
 | *imsToken* | string | No | | IMS bearer token used for authentication |
 | *apiKey* | string | No | | API key used for accessing the AEM Discovery service.|
 | *rootPath* | string | No | AEM_ROOT_PATH | Folder name from which you can select your assets. For example, /content/dam/marketing/subfolder. You cannot access and select assets from any other folder.  |
-| *hasMore* | boolean | No | | Path |
+| *hasMore* | boolean | No | | When the application has more content to display, you can use this property to add a loader that loads the content to make it visible in the application. |
 | *orgName* | boolean | No | | Path |
 | *initRepoID* | string | No | | Path |
-| *onCreateFolder* | string | No | | Path |
+| *onCreateFolder* | string | No | | The `onCreateFolder` property allows you to add icon that adds a new folder in the application. |
 | *onConfirm* | string | No | | Path |
-| *confirmDisabled* | string | No | | Path |
+| *confirmDisabled* | string | No | | This property controls the toggle of the confirm button. |
 | *viewType* | string | No | | Path |
 | *viewTypeOptions* | string | No | | Path |
 | *itemNameFormatter* | string | No | | Path |
@@ -263,10 +263,6 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 In addition to the faceted search, Assets Selector allows you to customize various attributes to refine your search from !DNL Adobe Experience Manager] as a [!DNL Cloud Service] application.![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/kkour/Desktop/MDs/asset%20selector/rail-view.png)
 
 -->
-
-<!-- Property details to be added here -->
-
-
 
 ## Using Destination Selector {#using-destination-selector}
 
