@@ -71,11 +71,7 @@ For more information on these properties, refer to [Asset Selector Properties](#
 
 For more information on these properties, refer to [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
 
-<<<<<<< HEAD
-### Example for the non-SUSI flow {#non-ims-vanilla}
-=======
 #### Example for the non-SUSI flow {#non-susi-vanilla}
->>>>>>> 0e4a3a850f03cfb7381d64c197c6769dd08698e7
 
 Use this example `index.html` file for authentication if you are integrating an [!DNL Adobe] application on Unified Shell or if you already have an IMS token generated for authentication.
 Access the Asset Selector package using the `Script` tag, as shown in *line 9* to *line 11* of the example `index.html` file. Define the authentication and other Assets as a Cloud Service access-related properties in the const props section, as shown in *line 20* to *line 27* of the `index.html` file.
@@ -125,11 +121,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 ```
 
-<<<<<<< HEAD
-### Example for the SUSI flow {#ims-vanilla}
-=======
 #### Example for the SUSI flow {#susi-vanilla}
->>>>>>> 0e4a3a850f03cfb7381d64c197c6769dd08698e7
 
 Use this example `index.html` file for authentication if you are integrating your application using SUSI flow.
 
@@ -252,7 +244,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 | *intl* | object | No | | Format text or date and time in localized format. |
 | *repositoryId* | string | No | '' | Repository from where the Asset Selector loads the content. |
 | *additionalAemSolutions* | `Array<string>` | No | [ ] | It allows you to add a list of additional AEM repositories. If no information is provided in this property, then only media library or AEM Assets repositories are considered. |
-| *hideTreeNav* | boolean | No | | Specifies whether to show or hide assets tree navigation sidebar. This is used in modal view only and hence there is no effect of this property in rail view. | 
+| *hideTreeNav* | boolean | No | | Specifies whether to show or hide assets tree navigation sidebar. It is used in modal view only and hence there is no effect of this property in rail view. | 
 | *onDrop* | function | No | | The property allows the drop functionality of an asset. |
 | *dropOptions* | `{allowList?: object}` | No | | Configures drop options using 'allowList'. |
 | *showForcedLoading* | boolean | No | false | Indicates whether to show Asset Selector on loading screen. This is useful when you are waiting for an imsToken to be available in SUSI flow. Asset Selector stops rendering assets if `showForcedLoading` is true. However, it still sends pre-flight requests to discovery. |
