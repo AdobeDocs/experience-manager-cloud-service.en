@@ -244,7 +244,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 | *intl* | object | No | | Format text or date and time in localized format. |
 | *repositoryId* | string | No | '' | Repository from where the Asset Selector loads the content. |
 | *additionalAemSolutions* | `Array<string>` | No | [ ] | It allows you to add a list of additional AEM repositories. If no information is provided in this property, then only media library or AEM Assets repositories are considered. |
-| *hideTreeNav* | boolean | No | | Specifies whether to show or hide assets tree navigation sidebar. This is used in modal view only and hence there is no effect of this property in rail view. | 
+| *hideTreeNav* | boolean | No | | Specifies whether to show or hide assets tree navigation sidebar. It is used in modal view only and hence there is no effect of this property in rail view. | 
 | *onDrop* | function | No | | The property allows the drop functionality of an asset. |
 | *dropOptions* | `{allowList?: object}` | No | | Configures drop options using 'allowList'. |
 | *showForcedLoading* | boolean | No | false | Indicates whether to show Asset Selector on loading screen. This is useful when you are waiting for an imsToken to be available in SUSI flow. Asset Selector stops rendering assets if `showForcedLoading` is true. However, it still sends pre-flight requests to discovery. |
