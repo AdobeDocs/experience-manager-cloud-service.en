@@ -34,15 +34,7 @@ Perform the following tasks to integrate and use Asset Selector with your [!DNL 
 * [Define Asset Selector display properties](#asset-selector-properties)
 * [Use Asset Selector](#using-asset-selector)
 
-<!--
-
-## Configuration {#configuration}
-
-Asset Selector is implemented for the usage in Enterprise Service Management (ESM), Common JavaScript (CJS), and Universal Module Definition (UMD) export. It eases its integration with various JavaScript frameworks including React, Angular, Vanilla, and so on, using the provided bindings.
-
--->
-
-### Integrate Asset Selector using Vanilla JS {#integration-with-vanilla-js}
+## Integrate Asset Selector using Vanilla JS {#integration-with-vanilla-js}
 
 You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository and select assets from within the application. 
 
@@ -79,7 +71,11 @@ For more information on these properties, refer to [Asset Selector Properties](#
 
 For more information on these properties, refer to [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
 
+<<<<<<< HEAD
+### Example for the non-SUSI flow {#non-ims-vanilla}
+=======
 #### Example for the non-SUSI flow {#non-susi-vanilla}
+>>>>>>> 0e4a3a850f03cfb7381d64c197c6769dd08698e7
 
 Use this example `index.html` file for authentication if you are integrating an [!DNL Adobe] application on Unified Shell or if you already have an IMS token generated for authentication.
 Access the Asset Selector package using the `Script` tag, as shown in *line 9* to *line 11* of the example `index.html` file. Define the authentication and other Assets as a Cloud Service access-related properties in the const props section, as shown in *line 20* to *line 27* of the `index.html` file.
@@ -129,7 +125,11 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 ```
 
+<<<<<<< HEAD
+### Example for the SUSI flow {#ims-vanilla}
+=======
 #### Example for the SUSI flow {#susi-vanilla}
+>>>>>>> 0e4a3a850f03cfb7381d64c197c6769dd08698e7
 
 Use this example `index.html` file for authentication if you are integrating your application using SUSI flow.
 
@@ -238,7 +238,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 | Property | Type | Required | Default | Description |
 |---|---|---|---|---|
 | *rail* | boolean | No | false | If marked `true`, it displays the Asset Selector in a left rail view. If it is marked `false`, the Asset Selector displays in modal view. |
-| *discoveryURL* | string | No | | URL to the Experience Manager as a Cloud Service Discovery Service. You can specify the Experience Manager as a Cloud Service URL directly if your application already called the Discovery Service. For example, https://aem-discovery.adobe.io. |
+| *discoveryURL* | string | No | Optional | URL to the Experience Manager as a Cloud Service Discovery Service. You can specify the Experience Manager as a Cloud Service URL directly if your application already called the Discovery Service. For example, https://aem-discovery.adobe.io. |
 | *imsOrg* | string | No | | Adobe Identification Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The imsORG key authenticates whether the org is under Adobe IMS or not.|
 | *imsToken* | string | No | | IMS bearer token used for authentication |
 | *apiKey* | string | No | | API key used for accessing the AEM Discovery service.|
@@ -275,7 +275,7 @@ Use the `path` property to define the folder name that displays automatically wh
 
 ### Example 3: Custom filter property in rail view
 
-In addition to the faceted search, Assets Selector allows you to customize various attributes to refine your search from [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application. You need to add the following code to add customized search filters in your application. In the example below, we have added `Type Filter` search that filters the asset type among Images, Documents, or Videos or the filter type that you have added for the search.
+In addition to the faceted search, Assets Selector allows you to customize various attributes to refine your search from [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application. You need to add the following code to add customized search filters in your application. In the example below, the `Type Filter` search that filters the asset type among Images, Documents, or Videos or the filter type that you have added for the search.
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
