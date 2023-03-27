@@ -11,7 +11,7 @@ exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 
 Micro-Frontend Asset Selector provides a user interface that easily integrates with the [!DNL Experience Manager Assets as a Cloud Service] repository so that you can browse or search digital assets available in the repository and use them in your application authoring experience.
 
-The Micro-Frontend user interface is made available in your application experience using the Asset Selector package. You can import the package and the latest deployed Asset Selector loads automatically within your application.
+The Micro-Frontend user interface is made available in your application experience using the Asset Selector package. Any updates to the package are automatically imported and the latest deployed Asset Selector loads automatically within your application.
 
 ![Overview](assets/overview.png)
 
