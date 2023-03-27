@@ -38,11 +38,11 @@ Perform the following tasks to integrate and use Asset Selector with your [!DNL 
 
 You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository and select assets from within the application. 
 
-The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. Edit the `index.html` file or a similar file within your implementation to define the authentication details to access the Assets as a Cloud Service repository and to configure the Asset Selector display properties.
+The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. Edit the `index.html` file or a similar file within your application implementation to define the authentication details to access the Assets as a Cloud Service repository and to configure the Asset Selector display properties.
 
 Asset Selector supports authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID`. Authentication using these IMS properties is referred to as SUSI (Sign Up Sign In) flow in this article.
 
-You can perform authentication without defining `imsScope` or `imsClientID` IMS properties if:
+You can perform authentication without defining some of the IMS properties, such as `imsScope` or `imsClientID`, if:
 
 *   You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
 *   You already have an IMS token generated for authentication.
@@ -51,7 +51,7 @@ Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository 
 
 ## Prerequisites {#prerequisites}
 
-Define the prerequisites in the `index.html` file or a similar file within your implementation to define the authentication details to access the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository. The prerequisites vary based on if you are authenticating using a SUSI flow or a non-SUSI flow.
+Define the prerequisites in the `index.html` file or a similar file within your application implementation to define the authentication details to access the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository. The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
 
 **Non-SUSI flow**
 
@@ -69,9 +69,13 @@ For more information on these properties, refer to [Asset Selector Properties](#
 *   imsOrg
 *   apikey
 
-For more information on these properties, refer to [Example for the IMS flow](#ims-vanilla) and [Asset Selector Properties](#asset-selector-properties).
+For more information on these properties, refer to [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
 
+<<<<<<< HEAD
 ### Example for the non-SUSI flow {#non-ims-vanilla}
+=======
+#### Example for the non-SUSI flow {#non-susi-vanilla}
+>>>>>>> 0e4a3a850f03cfb7381d64c197c6769dd08698e7
 
 Use this example `index.html` file for authentication if you are integrating an [!DNL Adobe] application on Unified Shell or if you already have an IMS token generated for authentication.
 Access the Asset Selector package using the `Script` tag, as shown in *line 9* to *line 11* of the example `index.html` file. Define the authentication and other Assets as a Cloud Service access-related properties in the const props section, as shown in *line 20* to *line 27* of the `index.html` file.
@@ -121,7 +125,11 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 ```
 
+<<<<<<< HEAD
 ### Example for the SUSI flow {#ims-vanilla}
+=======
+#### Example for the SUSI flow {#susi-vanilla}
+>>>>>>> 0e4a3a850f03cfb7381d64c197c6769dd08698e7
 
 Use this example `index.html` file for authentication if you are integrating your application using SUSI flow.
 
@@ -321,11 +329,11 @@ It is a collection of assets folders that you can use to perform operations.
 
 ### Custom search
 
-Apart from the full-text search, Asset Selector microfront end allows you to search assets within files using customized search. You can use custom search filters in both Modal view and Rail view modes.
+Apart from the full-text search, Asset Selector allows you to search assets within files using customized search. You can use custom search filters in both Modal view and Rail view modes.
 
 ![custom-search](assets/custom-search.png)
 
-You can also create default search filter to save your most search fields and use them later. To create custom search for your assets, you can use `filterSchema` property.
+You can also create default search filter to save the fields that you frequently search for and use them later. To create custom search for your assets, you can use `filterSchema` property.
 
 ### Search bar {#search-bar}
 
