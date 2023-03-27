@@ -9,6 +9,31 @@ exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 
 # Micro-Frontend Destination Selector {#Overview}
 
+Micro-Frontend Asset Selector provides a user interface that easily integrates with the [!DNL Experience Manager Assets as a Cloud Service] repository so that you can browse or search digital assets available in the repository and use them in your application authoring experience.
+
+The Micro-Frontend user interface is made available in your application experience using the Destination Selector package. Any updates to the package are automatically imported and the latest deployed Destination Selector loads automatically within your application.
+
+![Overview](assets/overview.png)
+
+Destination Selector provides many benefits, such as:
+
+*   Ease of integration with any of the Adobe or non-Adobe applications using Vanilla JavaScript library.
+*   Easy to maintain as updates to the Assets Selector package are automatically deployed to the Asset Selector available for your application. There are no updates required within your application to load the latest modifications.
+*   Ease of customization as there are properties available that control the Asset Selector display within your application.
+
+* Full-text search, out-of-the-box, and customized filters to quickly navigate to assets for use within the authoring experience.
+
+* Ability to switch repositories within an IMS organization for asset selection.
+
+* Ability to sort assets by name, dimension, and size and view them in List, Grid, Gallery, or  Waterfall view.
+
+Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets as a Cloud Service] repository:
+
+* [Integrate Asset Selector using Vanilla JS](#integration-with-vanilla-js)
+
+* [Define Asset Selector display properties](#asset-selector-properties)
+* [Use Asset Selector](#using-asset-selector)
+
 ### Integrate Destination Selector using Vanilla JS {#integration-with-vanilla-js}
 
 You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository and select assets from within the application. 
