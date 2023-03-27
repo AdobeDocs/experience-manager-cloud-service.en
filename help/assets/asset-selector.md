@@ -261,7 +261,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 You can define the Asset Selector [properties](#props) in the `index.html` file to customize the Asset Selector display within your application.
 
-### Example 1: Asset Selector in rail view.
+### Example 1: Asset Selector in rail view
 
    ![rail-view-example](assets/rail-view-example-vanilla.png)
 
@@ -273,13 +273,11 @@ Use the `path` property to define the folder name that displays automatically wh
 
    ![selected-assets-example](assets/selected-assets-example-vanilla.png)
 
-<!--
+### Example 3: Custom filter property in rail view
 
-*   **An example of Custom Filter**
+In addition to the faceted search, Assets Selector allows you to customize various attributes to refine your search from [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application. You need to add the following code to add customized search filters in your application. In the example below, we have added `Type Filter` search that filters the asset type among Images, Documents, or Videos or the filter type that you have added for the search.
 
-    ![custom-filter-example](assets/custom-filter-example.png)
-
--->
+![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
 <!--
 
@@ -290,17 +288,6 @@ Use the `path` property to define the folder name that displays automatically wh
 Assets display panel shows the out of the box metadata that can be displayed in the info of the asset. In addition to this, [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application allows configuration of the asset selector by adding custom metadata that is shown in info panel of the asset.
 
 <!-- Property details to be added here. Referred the ticket https://jira.corp.adobe.com/browse/ASSETS-19023-->
-
-<!--
-
-### Custom filter
-
-In addition to the faceted search, Assets Selector allows you to customize various attributes to refine your search from !DNL Adobe Experience Manager] as a [!DNL Cloud Service] application.![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/kkour/Desktop/MDs/asset%20selector/rail-view.png)
-
--->
-
-<!-- Property details to be added here -->
-
 
 
 ## Using Asset Selector {#using-asset-selector}
