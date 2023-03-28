@@ -12,10 +12,6 @@ exl-id: f1a67f80-7366-4337-8bcd-062a3412acc9
 ---
 # App Builder actions
 
->[!IMPORTANT]
->
-> _Adobe Project Firefly, as mentioned in the videos in this series, is now named App Builder_
-
 ## Introduction to actions
 
 Learn about Adobe I/O Runtime, actions and how to create actions.
