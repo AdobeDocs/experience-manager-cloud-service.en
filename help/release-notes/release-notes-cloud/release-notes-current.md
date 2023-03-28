@@ -26,7 +26,7 @@ The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] cu
 
 Have a look at the February 2023 Release Overview video for a summary of the features added in the 2023.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3413479/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3416885/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
