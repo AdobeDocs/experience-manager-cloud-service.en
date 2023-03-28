@@ -5,7 +5,7 @@ exl-id: 50d82745-5deb-4bfa-961b-714842403601
 ---
 # Extending [!DNL Adobe Experience Manager] as a Cloud Service using Adobe Developer App Builder {#extend-using-app-builder}
 
-## What is App Builder for AEM as a Cloud Service {#project-firefly}
+## What is App Builder for AEM as a Cloud Service {#project-appbuilder}
 
 The new Adobe Developer App Builder provides an extensibility framework for a developer to easily extend AEM as a Cloud Service functionalities. 
 
@@ -17,7 +17,7 @@ App Builder provides a way for customers to easily extend Adobe Experience Manag
 * Core Services Extensibility - Extend core application capabilities by extending the default behavior with custom features & business logic.
 * User Experience Extensibility - Extend core experience to support business requirements or build customer-specific digital properties, storefronts & back-office apps.
 
-App Builder (previously known as Project Firefly) has been available to enterprise customers and partners via our Developer Preview since Summer 2020. General availability (GA) of App Builder is scheduled for December 2021. We welcome developers to try out App Builder through our [Trial Program](https://adobe.ly/appbuilder-trial).
+App Builder has been available to enterprise customers and partners via our Developer Preview since Summer 2020. General availability (GA) of App Builder is scheduled for December 2021. We welcome developers to try out App Builder through our [Trial Program](https://adobe.ly/appbuilder-trial).
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Instead of an out-of-the-box solution, Adobe Developer App Builder provides a co
 
 The following diagram illustrates how a standard application built on App Builder leverages these functionalities:
 
-![Architecture](/help/implementing/developing/extending/assets/firefly-architecture.jpg)
+![Architecture](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 
 For more details about the App Builder architecture, have a look at [Architecture Overview](https://www.adobe.io/app-builder/docs/guides/).
 
@@ -56,7 +56,3 @@ App Builder provides videos and documentation for developers including guides, a
 Ready to start developing? We have lots of sample applications to help you get going quickly:
 
 * [App Builder Code Labs on Adobe Developer Website](https://www.adobe.io/app-builder/docs/resources/)
-
-## Support {#support}
-
-For developer support type of requests, we encourage developers to use our [Experience League forum](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly).

@@ -68,6 +68,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
       + [Release Notes for 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
     + 2022 {#2022}
       + [Release Notes for 2022.12.0](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
@@ -161,7 +162,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Other Onboarding Concepts {#concepts}
     + [Introduction to Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
     + [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md)
-    + [Notification User Groups](/help/journey-onboarding/user-groups.md)
+    + [Notification Profiles](/help/journey-onboarding/notification-profiles.md)
 + AEMaaCS Trials {#trials}
   + Headless Trials {#headless}
     + [Customize Content in a Sample React App](/help/trials/headless/customize-app.md)
@@ -195,16 +196,17 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
       + [Validating Content Transfers](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
       + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+      + [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
       + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
       + [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
       + [Viewing Logs for a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
       + [Deleting a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [Running the Content Transfer Tool on a Publish Instance](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
       + [Troubleshooting Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-      + User Mapping Tool {#user-mapping-tool}
-        + [Overview](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
-        + [Important Considerations](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
-        + [Using User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
+      + Legacy User Mapping Tool (Legacy){#legacy-user-mapping-tool}
+        + [Overview](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
+        + [Important Considerations](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
+        + [Using User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
       + Legacy Content Transfer Tool {#legacy}
         + [Overview](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
         + [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
@@ -498,7 +500,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
-    + [Latest innovations](/help/forms/latest-innovations.md)
+    + [Top Adobe Experience Manager Forms innovations](/help/forms/latest-innovations.md)
     + [Notable changes](/help/forms/notable-changes.md)
     + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
     + [Frequently asked questions](/help/forms/faq.md)
@@ -532,6 +534,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
         + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+        + [Summit Workbook](/help/forms/summit-2023-workbook.md)
     + Authoring Adaptive Forms - Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -934,6 +937,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Maintaining an AEM Connector](/help/connectors/maintain.md)
 + Operations {#operations}
   + [Operations and Maintenance on AEM as a Cloud Service](/help/operations/home.md)
+  + [Notification Center](/help/operations/notification-center.md)
   + [Content Search and indexing](/help/operations/indexing.md)
   + [Content Replication Service](/help/operations/replication.md)
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
@@ -951,3 +955,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Accessibility {#accessibility}
     + [AEM as a Cloud Service and the Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
++ Universal Editor {#universal-editor}
+  + [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md)
+  + [Authoring Content with the Universal Editor](/help/implementing/universal-editor/authoring.md)
+  + [Publishing Content with the Universal Editor](/help/implementing/universal-editor/publishing.md)
+  + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
+  + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
+  + [Attributes and Types](/help/implementing/universal-editor/attributes-types.md)
+  + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
