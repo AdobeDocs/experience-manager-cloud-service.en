@@ -334,10 +334,10 @@ The `cache-control` can be set at the creation time (PUT) or later on (for examp
 
 [Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md) can be defined with Cloud Manager to define the required values:
 
-| Name | Value | ... |
-|--- |--- |--- |
-|`graphqlStaleIfError` |86400 | ... |
-|`graphqlSurrogateControl` |600 | ... |
+| Name | Value | Service Applied | Type | 
+|--- |--- |--- |--- |
+|`graphqlStaleIfError` |86400 | *as appropriate* | *as appropriate* |
+|`graphqlSurrogateControl` |600 | *as appropriate* | *as appropriate* |
 
 ### Managing Cache with an OSGi configuration {#cache-osgi-configration}
 
