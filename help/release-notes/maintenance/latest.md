@@ -9,7 +9,7 @@ The following section outlines the technical release rotes for the latest mainte
 
 ## Release 11382 {#release-11382}
  
-Summarized below are the continuous improvements for maintenance release 11358, which was publicly released on March 10, 2023. This maintenance release is an update from previous maintenance release 11289.
+Summarized below are the continuous improvements for maintenance release 11382, which was publicly released on March 28, 2023. This maintenance release is an update from previous maintenance release 11289.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
