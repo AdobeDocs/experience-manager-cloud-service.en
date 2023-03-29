@@ -1,42 +1,39 @@
 ---
-title: Latest Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Latest Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Current Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Current Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
 ---
 
 # Maintenance Release Notes {#maintenance-release-notes}
 
-The following section outlines the technical release rotes for the latest maintenance release of Experience Manager as a Cloud Service.
+The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 11289 {#release-11289}
+## Release 11382 {#release-11382}
  
-Summarized below are the continuous improvements for maintenance release 11289, which was publicly released on March 7th, 2023. This maintenance release is an update from previous maintenance release 10912.
+Summarized below are the continuous improvements for maintenance release 11382, which was publicly released on March 28, 2023. This maintenance release is an update from previous maintenance release 11289.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
-### Known Issues {#known-issues}
-
-Do not upgrade if you are using CORS. An issue impacting the GraphQL content delivery functionality was identified in this release. A change in the default AEM dispatcher configuration regarding how GraphQL persisted queries are cached can break GraphQL content delivery of such queries. This issue will be fixed in our next maintenance release.
-
 ### Fixed Issues {#fixed-issues}
+
+- ASSETS-21023 - Fixed Smart Crop rendition, where customers could observe a Null Pointer exception on the Publisher instance of all AEM environments when  tried to access these renditions through the API.
+- SKYOPS-49280 - When installing a config or bundle update using RDE into Publish the result may not be observable because the Publish dispatcher cache isn't invalidated
 
 #### Sites {#sites-issues}
 
-- SITES-11584 Fixed issue with Live Copies that could not be created for pages with annotations
-- SITES-11683 Disabled MSM Live Copies with partially broken inheritance
+- SITES-7796 - Ability for content author to publish the Master Content Fragment and its respective Variations when exporting to target
 
 #### Assets {#assets-issues}
 
-- ASSETS-20879 Fixed regression preventing Asset Reports UI from working correctly and resulted in incorrect results in generated reports.
-- ASSETS-21020 Fixed issue with broken asset download - Image profile doesn't exist after moving asset
-- ASSETS-21023 Fixed issue with image renditions in Dynamic Media preventing access through the API
+- ASSETS-20076 - Add support for video watermarking that matches the current image watermarking support
+- ASSETS-21428 - Added exclusions for CSS changes
 
 #### Forms {#forms-issues}
 
-- None
+- CQ-4351502 - Updating service user mapping to allow read access in Sites
 
 #### Platform {#platform-issues}
 
-- GRANITE-44467 - Fixed issue causing import to fail, when updating an existing node, Filevault under certain instances did not preserve mixin types and child nodes
+- SITES-11040 - Conditional enablement of GraphQL persisted query caching in dispatcher
 
 ### Embedded Technologies {#embedded-tech}
 
