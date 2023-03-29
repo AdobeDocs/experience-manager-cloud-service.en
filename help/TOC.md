@@ -127,7 +127,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
-  + [Known issues](/help/release-notes/known-issues.md)
   + [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md)
   + [Deprecated APIs](/help/release-notes/deprecated-apis.md)
   + [Prerelease Channel](/help/release-notes/prerelease.md)
