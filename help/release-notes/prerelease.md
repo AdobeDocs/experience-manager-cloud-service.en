@@ -10,7 +10,7 @@ Learn how to use the prerelease channel to get a preview of upcoming features to
 
 ## Introduction {#introduction}
 
-Adobe Experience Manager as a Cloud Service delivers new features on a regular cadence, according to the [Experience Manager releases road map.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+Adobe Experience Manager as a Cloud Service delivers new features on a regular cadence, according to the [Experience Manager releases roadmap.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
 
 In order to become familiar with the features scheduled to go live the following feature release, you can subscribe to the prerelease channel, which is accessible by configuring your development environments or any sandbox environments. You can preview changes accessible via the AEM UI as well as build code against any new prerelease APIs.
 
@@ -56,7 +56,7 @@ You can also [check the known issues](/help/release-notes/maintenance/latest.md)
 
 ## Enable the Prerelease Channel to Access and Try New Features {#new-features}
 
-The prerelease channel can be enabled on any development or sandbox environment. Prerelease can not be enabled on staging or production environments.
+The prerelease channel can be enabled on any development or sandbox environment. Prerelease cannot be enabled on staging or production environments.
 
 The prerelease features can be experienced in different ways:
 
