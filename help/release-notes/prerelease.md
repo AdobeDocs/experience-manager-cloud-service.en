@@ -52,7 +52,7 @@ Once you have the release dates marked in your calendar, be sure to check the [A
 
 Each release is accompanied by release notes that document not only what is new in that release, but also the features that are available for prerelease evaluation. Get in the know ahead of time, and plan to take advantage of the latest features from AEMaaCS!
 
-You can also [check the known issues](/help/release-notes/known-issues.md) that are published along with every release so you can also be aware of any technical issues that may present a challenge to your evaluation or eventual adoption of any new features.
+You can also [check the known issues](/help/release-notes/maintenance/latest.md) that are published along with every release so you can also be aware of any technical issues that may present a challenge to your evaluation or eventual adoption of any new features.
 
 ## Enable the Prerelease Channel to Access and Try New Features {#new-features}
 
