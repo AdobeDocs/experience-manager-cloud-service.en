@@ -10,22 +10,22 @@ Learn how to use the prerelease channel to get a preview of upcoming features to
 
 ## Introduction {#introduction}
 
-Adobe Experience Manager as a Cloud Service delivers new features on a monthly cadence, according to the [Experience Manager releases road map.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+Adobe Experience Manager as a Cloud Service delivers new features on a regular cadence, according to the [Experience Manager releases road map.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
 
-In order to become familiar with the features scheduled to go live the following month, you can subscribe to the prerelease channel, which is accessible by configuring your development environments or any sandbox environments. You can preview changes accessible via the AEM UI as well as build code against any new prerelease APIs.
+In order to become familiar with the features scheduled to go live the following feature release, you can subscribe to the prerelease channel, which is accessible by configuring your development environments or any sandbox environments. You can preview changes accessible via the AEM UI as well as build code against any new prerelease APIs.
 
-The list of prerelease features for a given month is posted within the [monthly release notes.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+The list of prerelease features for a given feature release is posted within the [release notes.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## AEM as a Cloud Service Releases {#releases}
 
 AEM as a Cloud Service has two types of releases.
 
-* **Monthly Releases** add capabilities and features to AEM as a Cloud Service
-* **Critical Updates** add security updates, performance enhancements, and bug fixes, and are applied on a daily basis.
+* **Feature Releases** add capabilities and features to AEM as a Cloud Service, upon activation
+* **Maintenance Releases** add security updates, performance enhancements, and bug fixes, and are applied on a regular and frequent basis.
 
 This pattern ensures continuous releases with no interruption of service.
 
-The prerelease channel allows you to preview features scheduled for the upcoming monthly release in order to evaluate upcoming functionality and plan for its possible implementation for your own projects. It allows you to plan ahead for the next monthly release.
+The prerelease channel allows you to preview features scheduled for the upcoming feature release in order to evaluate upcoming functionality and plan for its possible implementation for your own projects. It allows you to plan ahead for the next feature release.
 
 For example if it is May and you are subscribed to the prerelease channel, you can evaluate features in the upcoming June release.
 
@@ -42,7 +42,7 @@ Effectively taking advantage of the prerelease channel requires four steps.
 
 ## Mark Your Calendars {#mark-calendars}
 
-Monthly releases are scheduled well in advance and the release dates are published on [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+Feature releases are scheduled well in advance and the feature release activation dates are published on [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
 
 Take note of the release dates so you can plan time to review and test the upcoming features.
 
