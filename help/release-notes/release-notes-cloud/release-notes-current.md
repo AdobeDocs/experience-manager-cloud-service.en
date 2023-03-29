@@ -30,6 +30,8 @@ Have a look at the February 2023 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+### New features in [!DNL Experience Manager Sites] prelease {#prerelease-sites}
+*  Export content fragments from AEM as a cloud service to Adobe target as JSON offers
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
