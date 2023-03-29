@@ -25,7 +25,7 @@ Feature enablement for this maintenance release will provide you with the full f
 
 >[!NOTE]
 >
-> Regarding SITES-97, some improvements have been made in the GraphQL implementation that might cause unexpected behavior. See [AEM GraphQL changes regarding handling of null values](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html) for more information.
+> In SITES-97, some improvements have been made in the GraphQL implementation that might cause unexpected behavior. See [AEM GraphQL changes regarding handling of null values](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html) for more information.
 
 #### Assets {#assets-issues}
 
