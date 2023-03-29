@@ -15,25 +15,30 @@ Feature enablement for this maintenance release will provide you with the full f
 
 ### Known Issues {#known-issues}
 
-to fill
 
 ### Fixed Issues {#fixed-issues}
 
+ASSETS-21023 - Fixed Smart Crop rendition, where customers could observe a Null Pointer exception on the Publisher instance of all AEM environments when  tried to access these renditions through the API.
+SKYOPS-49280 - When installing a config or bundle update using RDE into Publish the result may not be observable because the Publish dispatcher cache isn't invalidated
+
 #### Sites {#sites-issues}
 
-to fill
+SITES-7796 - Ability for content author to publish the Master Content Fragment and its respective Variations when exporting to target
+
 
 #### Assets {#assets-issues}
 
-to fill
+ASSETS-20076 - Add support for video watermarking that matches the current image watermarking support
+ASSETS-21428 - Added exclusions for CSS changes
+
 
 #### Forms {#forms-issues}
 
-to fill
+CQ-4351502 - Updating service user mapping to allow read access in Sites
 
 #### Platform {#platform-issues}
 
-to fill
+SITES-11040 - Conditional enablement of GraphQL persisted query caching in dispatcher
 
 ### Embedded Technologies {#embedded-tech}
 
