@@ -13,32 +13,27 @@ Summarized below are the continuous improvements for maintenance release 11382, 
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
-### Known Issues {#known-issues}
-
-
 ### Fixed Issues {#fixed-issues}
 
-ASSETS-21023 - Fixed Smart Crop rendition, where customers could observe a Null Pointer exception on the Publisher instance of all AEM environments when  tried to access these renditions through the API.
-SKYOPS-49280 - When installing a config or bundle update using RDE into Publish the result may not be observable because the Publish dispatcher cache isn't invalidated
+- ASSETS-21023 - Fixed Smart Crop rendition, where customers could observe a Null Pointer exception on the Publisher instance of all AEM environments when  tried to access these renditions through the API.
+- SKYOPS-49280 - When installing a config or bundle update using RDE into Publish the result may not be observable because the Publish dispatcher cache isn't invalidated
 
 #### Sites {#sites-issues}
 
-SITES-7796 - Ability for content author to publish the Master Content Fragment and its respective Variations when exporting to target
-
+- SITES-7796 - Ability for content author to publish the Master Content Fragment and its respective Variations when exporting to target
 
 #### Assets {#assets-issues}
 
-ASSETS-20076 - Add support for video watermarking that matches the current image watermarking support
-ASSETS-21428 - Added exclusions for CSS changes
-
+- ASSETS-20076 - Add support for video watermarking that matches the current image watermarking support
+- ASSETS-21428 - Added exclusions for CSS changes
 
 #### Forms {#forms-issues}
 
-CQ-4351502 - Updating service user mapping to allow read access in Sites
+- CQ-4351502 - Updating service user mapping to allow read access in Sites
 
 #### Platform {#platform-issues}
 
-SITES-11040 - Conditional enablement of GraphQL persisted query caching in dispatcher
+- SITES-11040 - Conditional enablement of GraphQL persisted query caching in dispatcher
 
 ### Embedded Technologies {#embedded-tech}
 
