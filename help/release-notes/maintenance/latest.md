@@ -21,6 +21,11 @@ Feature enablement for this maintenance release will provide you with the full f
 #### Sites {#sites-issues}
 
 - SITES-7796 - Ability for content author to publish the Master Content Fragment and its respective Variations when exporting to target
+- SITES-97 - GraphQL: Pagination & Sorting, hybrid filtering
+
+>[!NOTE]
+>
+> In SITES-97, some improvements have been made in the GraphQL implementation that might cause unexpected behavior. See [AEM GraphQL changes regarding handling of null values](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html) for more information.
 
 #### Assets {#assets-issues}
 
