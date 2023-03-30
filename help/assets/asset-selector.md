@@ -71,7 +71,7 @@ For more information on these properties, refer to [Asset Selector Properties](#
 
 For more information on these properties, refer to [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
 
-#### Example for the non-SUSI flow {#non-susi-vanilla}
+### Example for the non-SUSI flow {#non-susi-vanilla}
 
 Use this example `index.html` file for authentication if you are integrating an [!DNL Adobe] application on Unified Shell or if you already have an IMS token generated for authentication.
 Access the Asset Selector package using the `Script` tag, as shown in *line 9* to *line 11* of the example `index.html` file. Define the authentication and other Assets as a Cloud Service access-related properties in the const props section, as shown in *line 20* to *line 27* of the `index.html` file.
@@ -121,7 +121,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 ```
 
-#### Example for the SUSI flow {#susi-vanilla}
+### Example for the SUSI flow {#susi-vanilla}
 
 Use this example `index.html` file for authentication if you are integrating your application using SUSI flow.
 
