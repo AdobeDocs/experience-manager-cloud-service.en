@@ -266,6 +266,8 @@ By default AEM will invalidate cache based on a Time To Live (TTL) definition. T
 |CDN |`stale-while-revalidate` |`surrogate-control : stale-while-revalidate `|`surrogateControlStaleWhileRevalidate` |`graphqlStaleWhileRevalidate` |
 |CDN |`stale-if-error` |`surrogate-control : stale-if-error` |`surrogateControlStaleIfError` |`graphqlStaleIfError` |
 
+{style="table-layout:auto"}
+
 ### Author instances {#author-instances}
 
 For author instances the default values are:
@@ -339,6 +341,8 @@ The `cache-control` can be set at the creation time (PUT) or later on (for examp
 |`graphqlStaleIfError` |86400 | *as appropriate* | *as appropriate* |
 |`graphqlSurrogateControl` |600 | *as appropriate* | *as appropriate* |
 
+{style="table-layout:auto"}
+
 ### Managing Cache with an OSGi configuration {#cache-osgi-configration}
 
 To manage the cache globally, you can [configure the OSGi settings](/help/implementing/deploying/configuring-osgi.md) for the **Persisted Query Service Configuration**.
@@ -357,6 +361,8 @@ The default OSGi configuration for publish instances:
   | `surrogateControlMaxAge` | reads | `graphqlSurrogateControl` |
   | `surrogateControlStaleWhileRevalidate` | reads | `graphqlStaleWhileRevalidate` |
   | `surrogateControlStaleIfError` | reads | `graphqlStaleIfError` |
+
+  {style="table-layout:auto"}
 
 * and if not available, the OSGi configuration uses the [default values for publish instances](#publish-instances).
 
