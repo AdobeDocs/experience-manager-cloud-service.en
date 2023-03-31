@@ -60,6 +60,7 @@ The following legend describes the level of support for each format.
 | SGI         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 | SVG         | &#10003;             | -                   | &#10003;     | &#10003; |
 | TIFF        | &#10003;             | &#10003;            | &#10003;     | -        |
+| WebP         | &#10003;             | &#10003;                   | &#10003;     | &#10003; |
 
 ## 3D formats {#support-3d-formats}
 

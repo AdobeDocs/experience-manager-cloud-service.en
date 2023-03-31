@@ -31,10 +31,12 @@ The properties are distributed across several tabs.
 
   Apply a consistent brand identity across pages by appending a brand slug to each page title. This functionality requires use of the Page Component from release 2.14.0 or later of the [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
-  * **Override** - Check to define the brand slug on this page.
-    * The value will be inherited by any child pages unless they also have their **Override** values set.
-  * **Override value** - The text of the brand slug to be appended to the page title.
-    * The value is appended to the page title after a pipe character such as "Cycling Tuscany | Always ready for the WKND"
+  * **Brand Slug** 
+
+    * **Override** - Check to define the brand slug on this page.
+      * The value will be inherited by any child pages unless they also have their **Override** values set.
+    * **Override value** - The text of the brand slug to be appended to the page title.
+      * The value is appended to the page title after a pipe character such as "Cycling Tuscany | Always ready for the WKND"
 
 * **HTML ID**
 
@@ -97,14 +99,13 @@ The properties are distributed across several tabs.
     * For example, if you define an alias of `private` for the page `/content/wknd/us/en/magazine/members-only`, then this page can also be accessed via `/content/wknd/us/en/magazine/private`
     * Creating an alias sets the `sling:alias` property on the page node, which only impacts the resource, not the repository path.
     * Pages accessed by aliases in the editor can not be published. [Publish options](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) in the editor are only available for pages accessed via their actual paths. 
-
-  <!--
-  >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
-  -->
+    * For further details see [Localized page names under SEO and URL Management Best Practices](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuration**
 
-  * **Cloud Configuration** - The path to the configuration
+  * **Inherited from &lt;path&gt;** - enable/disable inheritance; toggles availability of **Cloud Configuration** for selection
+
+  * **Cloud Configuration** - The path to the selected configuration
 
 * **Template Settings**
 
@@ -124,36 +125,50 @@ The properties are distributed across several tabs.
 
   * **Export Configuration** - Specifies an export configuration
 
-### Thumbnail {#thumbnail}
+* **SEO**
 
-Configure the page thumbnail
+  * **Canonical Url** - can be used to overwrite the page's canonical Url; if left blank the page's Url will be its canonical Url
 
-* **Generate Preview** - Generate a preview of the page to use as thumbnail
-* **Upload Image** - Upload an image to use as thumbnail
-* **Select Image** - Select an existing Asset to use as the thumbnail
-* **Revert** - This option becomes available after you have made a change to the thumbnail. If you do not want to keep your change, you can revert that change before saving.
+  * **Robots Tags** - select the robots tags to control the behavior of search engine crawlers.
 
-### Social Media {#social-media}
+    >[!NOTE]
+    >
+    >Some of the options conflict with each other. In case of a conflict the more permissive option takes precedence.
 
-* **Social Media sharing**
+  * **Generate Sitemap** - when selected, a sitemap.xml will be generated for this page, and its descendants
 
-  Defines the sharing options available on the page. Exposes the options available to the [Sharing core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html).
+### Images {#images}
 
-  * **Enable user sharing for Facebook**
-  * **Enable user sharing for Pinterest**
-  * **Preferred XF variation**
-    * Define experience fragment variation used for generating metadata for page
+* **Featured Image**
+
+  Select, and configure, the image to be featured. This is used in components referencing the page; for example, teasers, page lists, etc.
+
+  * **Image**
+
+    You can **Pick** an Asset, or browse for a file to upload, then **Edit**, or **Clear**.
+
+  * **Alternative Text** - a text used to represent the meaning and/or function of the image; for example, for use by screen readers.
+
+  * **Inherit - Value taken from the DAM asset** - when checked this will populate the alternative text with the value of the `dc:description`metadata in DAM
+
+* **Thumbnail**
+
+  Configure the page thumbnail
+
+  * **Generate Preview** - Generate a preview of the page to use as thumbnail
+  * **Upload Image** - Upload an image to use as thumbnail
+  * **Select Image** - Select an existing Asset to use as the thumbnail
+  * **Revert** - This option becomes available after you have made a change to the thumbnail. If you do not want to keep your change, you can revert that change before saving.
 
 ### Cloud Services {#cloud-services}
 
 * **Cloud Service Configurations** - Define properties for cloud services
-  
-  <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
-  -->
 
 ### Personalization {#personalization}
 
 * **ContextHub Configurations**
+
+  * **Inherited from &lt;path&gt;** - enable/disable inheritance; toggles availability of **ContextHub Pathn** and **Segments Path** for selection
 
   * **ContextHub Path** - Define the [ContextHub configuration](/help/sites-cloud/authoring/personalization/contexthub.md)
   * **Segments Path** - Define the [Segments path](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -169,25 +184,21 @@ Configure the page thumbnail
 
 * **Permissions**
 
-  * Add Permissions
-  * Edit Closed User Group
-  * View the Effective Permissions
-  
-  <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-  
-  <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-  
-  <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
-  
+  * **Add Permissions**
+  * **Edit Closed User Group**
+  * View the **Effective Permissions**
+    
 ### Blueprint {#blueprint}
 
-This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies are are part of [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md)
+This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies, and are part of [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md)
 
 * **Current Live Copies** - Lists pages that are based on (i.e. are Live Copies of) this blueprint page
 
 * **Rollout Configs** - Controls the circumstances under which modifications will be propagated to the Live Copy
 
 ### Live Copy {#live-copy}
+
+This tab is only visible for pages that are configured as live copies. As with Blueprints, Live Copies are part of [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md).
 
 * **Synchronize** - Synchronize Live Copy with Blueprint, keeping local modifications
 * **Reset** - Reset Live Copy to state of Blueprint, removing local modifications
@@ -213,6 +224,33 @@ This tab is only visible for pages that serve as blueprints. Blueprints serve as
 When a Preview environment is enabled you will see:
 
 * Preview URL - the URL used for accessing the content on the Preview environment
+
+### Progressive Web App {#progressive-web-app}
+
+Through a simple configuration, a content author can now enable progressive web app (PWA) features for experiences created in AEM Sites.
+
+>[!NOTE]
+>
+>For further details see [Enabling Progressive Web App Features](/help/sites-cloud/authoring/features/enable-pwa.md).
+
+* **Configure installable experience**
+
+  * **Enable PWA** - enable/disable the feature; allows users to install the site as a PWA
+  * **StartupURL** - the preferred startup Url
+  * **Display Mode** - how the browser should be hidden or otherwise presented to the user on the local device
+  * **Screen orientation** - how the PWA will handle device orientations
+  * **Theme color** - the color of the app that affects how the local user's operating system displays the native UI toolbar and navigation controls
+  * **Background color** - the background color of the app, which is shown as the app loads
+  * **Icon** - the icon that represents the app on the user's device
+
+* **Cache management (Advanced)**
+
+  * **Caching strategy and frequency of content refresh** - defines the caching model for your PWA
+  * **Files to cache for offline use**
+    * **File pre-caching (technical preview)** - files hosted on AEM will be saved to the local browser cache when the service worker is installing and before it is used
+    * **Client-side Libraries** - client-side libraries to cache for offline experience
+    * **Path inclusions** - network requests for the defined paths are intercepted and cached content is returned in accordance with the configured Caching strategy and frequency of content refresh
+    * **Path exclusions** - these files will never be cached regardless of the settings under File pre-caching and Path inclusions
 
 ## Editing Page Properties {#editing-page-properties-1}
 
