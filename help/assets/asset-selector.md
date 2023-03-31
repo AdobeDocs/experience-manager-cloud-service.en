@@ -345,7 +345,6 @@ Asset Selector allows you to view the asset in four different views:
 *   `Waterfall view`: The waterfall view displays files or folders in the form of a Bridge.
 
 <!--
-
 ### Modes to view Asset Selector
 
 Asset Selector supports two types of out of the box views:
