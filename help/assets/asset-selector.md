@@ -129,7 +129,7 @@ Access the Asset Selector package using the `Script` Tag, as shown in *line 9* t
 
 *Line 14* to *line 38* of the example describes the IMS flow properties, such as `imsClientId`, `imsScope`, and `redirectURL`. The function requires that you define at least one of the `imsClientId` and `imsScope` properties. If you do not define a value for `redirectURL`, the registered redirect URL for the client ID is used.
 
-As you do not have an `imsToken` generated, use the `registerAssetSelectorsIms` and `renderAssetSelectorWithIms` functions, as shown in line 40 to line 50 of the example `index.html` file. Use the `registerAssetSelectorsIms` function before `renderAssetSelectorWithIms` to register the `imsToken` with the Asset Selector. [!DNL Adobe] recommends to call `registerAssetSelectorsIms` when you instantiate the component.
+As you do not have an `imsToken` generated, use the `registerAssetsSelectorsAuthService` and `renderAssetSelectorWithAuthFlow` functions, as shown in line 40 to line 50 of the example `index.html` file. Use the `registerAssetsSelectorsAuthService` function before `renderAssetSelectorWithAuthFlow` to register the `imsToken` with the Asset Selector. [!DNL Adobe] recommends to call `registerAssetsSelectorsAuthService` when you instantiate the component.
 
 Define the authentication and other Assets as a Cloud Service access-related properties in the `const props` section, as shown in *line 54* to *line 60* of the example `index.html` file.
 
@@ -178,7 +178,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
         }
 
         function load() {
-            const registeredTokenService = PureJSSelectors.registerAssetSelectorsIms(imsProps);
+            const registeredTokenService = PureJSSelectors.registerAssetsSelectorsAuthService(imsProps);
             imsInstance = registeredTokenService;
         };
 
@@ -187,7 +187,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
         
 
         //function that will render the asset selector
-        async function renderAssetSelectorWithImsFlow() {
+        async function renderAssetSelectorWithAuthFlowFlow() {
             const otherProps = {
             // any other props supported by asset selector
             }
@@ -202,7 +202,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
             const container = document.getElementById('asset-selector');
 
             /// Use the PureJSSelectors in globals to render the AssetSelector/DestinationSelector component
-            PureJSSelectors.renderAssetSelectorWithIms(container, assetSelectorProps, () => {
+            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () => {
                 const assetSelectorDialog = document.getElementById('asset-selector-dialog');
                 assetSelectorDialog.showModal();
             });
@@ -212,7 +212,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 </head>
 <body class="asset-selectors">
     <div>
-        <button onclick="renderAssetSelectorWithImsFlow()">Asset Selector - Select Assets with Ims Flow</button>
+        <button onclick="renderAssetSelectorWithAuthFlowFlow()">Asset Selector - Select Assets with Ims Flow</button>
     </div>
         <dialog id="asset-selector-dialog">
             <div id="asset-selector" style="height: calc(100vh - 80px); width: calc(100vw - 60px); margin: -20px;">
