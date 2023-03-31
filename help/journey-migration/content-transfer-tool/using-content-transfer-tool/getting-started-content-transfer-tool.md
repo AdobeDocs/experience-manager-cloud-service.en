@@ -54,7 +54,7 @@ Understanding SSL/TLS connection problems can sometimes be difficult. To toubles
 >title="Running Content Transfer Tool"
 >abstract="Learn how to use Content Transfer Tool to migrate the content to AEM as a Cloud Service (Author/Publish)."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" See Demo"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial - using Content Transfer Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Tutorial - using Content Transfer Tool"
 
 The following section applies to the new version of the Content Transfer Tool. Follow this section to learn how to use the Content Transfer Tool to migrate content to AEM as a Cloud Service:
 
@@ -63,8 +63,8 @@ The following section applies to the new version of the Content Transfer Tool. F
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction_setup"
 >title="Extraction Setup Phase"
->abstract="Learn how to create a migration set and copy the extraction key."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial - using Content Transfer Tool"
+>abstract="Learn how to create and manage a migration set and how to copy the extraction key."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Tutorial - using Content Transfer Tool"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 
@@ -78,9 +78,11 @@ The following section applies to the new version of the Content Transfer Tool. F
 
    >[!NOTE]
    >
-   >A maximum of five migration sets can be created per project in Cloud Acceleration Manager.
+   >A maximum of five migration sets, including expired sets, can be created per project in Cloud Acceleration Manager.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
+
+   The following dialog will be presented. Notice that a migration set will expire after a prolonged period of inactivity. After warnings are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 

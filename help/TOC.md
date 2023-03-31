@@ -62,12 +62,13 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Release Notes for 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
       + [Release Notes for 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
   + AEMaaCS Maintenance Release Notes {#maintenance}
-    + [Latest Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
+    + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2023 {#2023}
       + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
       + [Release Notes for 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
     + 2022 {#2022}
       + [Release Notes for 2022.12.0](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
@@ -126,7 +127,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
-  + [Known issues](/help/release-notes/known-issues.md)
   + [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md)
   + [Deprecated APIs](/help/release-notes/deprecated-apis.md)
   + [Prerelease Channel](/help/release-notes/prerelease.md)
@@ -161,7 +161,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Other Onboarding Concepts {#concepts}
     + [Introduction to Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
     + [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md)
-    + [Notification User Groups](/help/journey-onboarding/user-groups.md)
+    + [Notification Profiles](/help/journey-onboarding/notification-profiles.md)
 + AEMaaCS Trials {#trials}
   + Headless Trials {#headless}
     + [Customize Content in a Sample React App](/help/trials/headless/customize-app.md)
@@ -499,7 +499,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
-    + [Latest innovations](/help/forms/latest-innovations.md)
+    + [Top Adobe Experience Manager Forms innovations](/help/forms/latest-innovations.md)
     + [Notable changes](/help/forms/notable-changes.md)
     + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
     + [Frequently asked questions](/help/forms/faq.md)
@@ -533,6 +533,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
         + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+        + [Summit Workbook](/help/forms/summit-2023-workbook.md)
     + Authoring Adaptive Forms - Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -935,6 +936,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Maintaining an AEM Connector](/help/connectors/maintain.md)
 + Operations {#operations}
   + [Operations and Maintenance on AEM as a Cloud Service](/help/operations/home.md)
+  + [Notification Center](/help/operations/notification-center.md)
   + [Content Search and indexing](/help/operations/indexing.md)
   + [Content Replication Service](/help/operations/replication.md)
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
@@ -952,3 +954,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Accessibility {#accessibility}
     + [AEM as a Cloud Service and the Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
++ Universal Editor {#universal-editor}
+  + [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md)
+  + [Authoring Content with the Universal Editor](/help/implementing/universal-editor/authoring.md)
+  + [Publishing Content with the Universal Editor](/help/implementing/universal-editor/publishing.md)
+  + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
+  + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
+  + [Attributes and Types](/help/implementing/universal-editor/attributes-types.md)
+  + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
