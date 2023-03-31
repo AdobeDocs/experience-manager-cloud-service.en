@@ -356,6 +356,7 @@ Asset Selector supports two types of out of the box views:
 **  Rail view:** The rail view represents Assets folders in a left panel. The drag and drop of assets can be performed in this view. Use `<AssetSelector rail={true}>` to enable rail view.
 
     ![rail-view](assets/rail-view.png)
+-->
 
 <!--
 ### Application Integration
@@ -368,7 +369,6 @@ Asset Selector is flexible and can be integrated within your existing [!DNL Adob
 -->
 
 <!--
-
 ### Support for multiple instances
 
 The micro front-end design supports the display of multiple instances of Asset Selector on a single screen.
@@ -393,5 +393,4 @@ Asset Selector allows you to know the status of your uploaded assets. The status
 ### Localization
 
 The integration of Asset Selector with [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] allows localized content appear in your application.
-
 -->
