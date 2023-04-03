@@ -39,10 +39,12 @@ Have a look at the February 2023 Release Overview video for a summary of the fea
 
 ### New features in [!DNL Assets] {#assets-features}
 
-New protocol (DASH - Dynamic Adaptive Streaming over HTTP) support launched for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled):
-* Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos
-* DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
-* Available in NA, to be enabled via support ticket, coming soon in APAC, EMEA
+* New protocol (DASH - Dynamic Adaptive Streaming over HTTP) support launched for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled):
+   * Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos
+   * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
+   * Available in NA, to be enabled via support ticket, coming soon in APAC, EMEA
+
+* Added support for WebP images to automatically generate thumbnails and custom renditions, and extract metadata. Smart Tag and Smart Crop capabilities are also now supported for these files.
 
 ### New features in [!DNL Assets] prerelease {#prerelease-features-assets}
 
