@@ -46,9 +46,6 @@ Have a look at the February 2023 Release Overview video for a summary of the fea
 
 * Added support for WebP images to automatically generate thumbnails and custom renditions, and extract metadata. Smart Tag and Smart Crop capabilities are also now supported for these files.
 
-### New features in [!DNL Assets] prerelease {#prerelease-features-assets}
-
-
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### New features available in [!DNL Forms] {#new-features-available-in-channel}
