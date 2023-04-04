@@ -32,7 +32,7 @@ In case you do not have access, it can be requested via a form linked on the sam
 
 ![Request access to the Universal Editor](assets/request-access.png)
 
-Click **Request access** and an Adobe representative will review your request and reach out to discuss your use case.
+Click **Request access** and fill out the form as directed to request access. An Adobe representative will review your request and reach out to discuss your use case.
 
 ## Include the Universal Editor Core Library {#core-library}
 
