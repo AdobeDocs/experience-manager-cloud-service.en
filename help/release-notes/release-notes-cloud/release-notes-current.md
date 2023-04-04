@@ -44,7 +44,7 @@ Have a look at the February 2023 Release Overview video for a summary of the fea
    * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
    * Available in NA, to be enabled via support ticket, coming soon in APAC, EMEA
 
-* Added support for WebP images to automatically generate thumbnails and custom renditions, and extract metadata. Smart Tag and Smart Crop capabilities are also now supported for these files.
+* Added support for WebP images to automatically extract metadata, generate thumbnails and custom renditions. Smart Tag and Smart Crop capabilities are also now supported for these files.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
