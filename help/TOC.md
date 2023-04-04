@@ -511,7 +511,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Migrate from [!DNL AEM 6.5 Forms] or earlier to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
     + [Import, export, and organize Adaptive Forms, PDF forms, and other assets](/help/forms/import-export-forms-templates.md)
-    + [Reference themes, templates, and data models](/help/forms/reference-themes-templates-data-models.md)
   + Integrate {#integrate}
     + Services {#services}
       + [Integrate AEM Forms as a Cloud Service with Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -543,9 +542,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
         + [Introduction to authoring of an Adaptive Forms](/help/forms/introduction-forms-authoring.md)
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
+        + [Reference themes, templates, and data models](/help/forms/reference-themes-templates-data-models.md)
         + [Create a template](/help/forms/template-editor.md)
         + [Create a theme](/help/forms/themes.md)
-        + [Reference Assets](/help/forms/reference-assets.md)
         + [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)
         + [Improve performance of large forms with lazy loading](/help/forms/lazy-loading-adaptive-forms.md)
       + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
