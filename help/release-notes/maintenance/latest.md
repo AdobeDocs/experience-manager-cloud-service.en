@@ -13,12 +13,16 @@ Summarized below are the continuous improvements for maintenance release 11382, 
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
-### Fixed Issues {#fixed-issues}
+### Known Issues {#known-issues-11382}
+
+- SITES-12573 - GraphQL queries using variables inside of a filter will fail if one variable is not specified. Please do not update to this relase shall you use GraphQL with AEM as a Cloud Service.
+
+### Fixed Issues {#fixed-issues-11382}
 
 - ASSETS-21023 - Fixed Smart Crop rendition, where customers could observe a Null Pointer exception on the Publisher instance of all AEM environments when  tried to access these renditions through the API.
 - SKYOPS-49280 - When installing a config or bundle update using RDE into Publish the result may not be observable because the Publish dispatcher cache isn't invalidated
 
-#### Sites {#sites-issues}
+#### Sites {#sites-issues-11382}
 
 - SITES-7796 - Ability for content author to publish the Master Content Fragment and its respective Variations when exporting to target
 - SITES-97 - GraphQL: Pagination & Sorting, hybrid filtering
@@ -27,20 +31,20 @@ Feature enablement for this maintenance release will provide you with the full f
 >
 > In SITES-97, some improvements have been made in the GraphQL implementation that might cause unexpected behavior. See [AEM GraphQL changes regarding handling of null values](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html) for more information.
 
-#### Assets {#assets-issues}
+#### Assets {#assets-issues-11382}
 
 - ASSETS-20076 - Add support for video watermarking that matches the current image watermarking support
 - ASSETS-21428 - Added exclusions for CSS changes
 
-#### Forms {#forms-issues}
+#### Forms {#forms-issues-11382}
 
 - CQ-4351502 - Updating service user mapping to allow read access in Sites
 
-#### Platform {#platform-issues}
+#### Platform {#platform-issues-11382}
 
 - SITES-11040 - Conditional enablement of GraphQL persisted query caching in dispatcher
 
-### Embedded Technologies {#embedded-tech}
+### Embedded Technologies {#embedded-tech-11382}
 
 |Technology|Version|Link|
 |---|---|---|
