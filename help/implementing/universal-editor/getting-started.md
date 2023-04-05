@@ -26,9 +26,13 @@ This document will guide you through these steps.
 
 ## Request Access to the Universal Editor {#request-access}
 
-You first need to request access to the Universal Editor. Please go to [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor) and validate if you have access to the Universal Editor.
+You first need to request access to the Universal Editor. Please go to [https://experience.adobe.com/#/aem/editor,](https://experience.adobe.com/#/aem/editor) sign in, and validate if you have access to the Universal Editor.
 
 In case you do not have access, it can be requested via a form linked on the same page.
+
+![Request access to the Universal Editor](assets/request-access.png)
+
+Click **Request access** and fill out the form as directed to request access. An Adobe representative will review your request and reach out to discuss your use case.
 
 ## Include the Universal Editor Core Library {#core-library}
 

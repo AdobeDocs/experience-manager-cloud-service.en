@@ -20,11 +20,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 * SalesForce
 * Microsoft&reg; Azure Blob Storage
 
-Data integration supports OAuth2.0, Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> and connector for [!DNL Experience Manager] user profile are configured in [!DNL Experience Manager] web console.
-
->[!NOTE]
->
->[!UICONTROL Experience Manager Forms] does not support relational database.
+Data integration supports OAuth2.0, Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in [!DNL Experience Manager] as a Cloud Service, JDBC for relational databases and connector for [!DNL Experience Manager] user profile are configured in [!DNL Experience Manager] web console.
 
 ## Configure relational database {#configure-relational-database}
 
