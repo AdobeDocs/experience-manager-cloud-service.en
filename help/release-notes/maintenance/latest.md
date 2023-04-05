@@ -15,7 +15,7 @@ Feature enablement for this maintenance release will provide you with the full f
 
 ### Known Issues {#known-issues-11382}
 
-- SITES-12573 - GraphQL queries using variables inside of a filter will fail if one variable is not specified. Please do not update to this relase shall you use GraphQL with AEM as a Cloud Service.
+- SITES-12573 - GraphQL queries using variables inside of a filter will fail if one variable is not specified. Please do not update to this release shall you use GraphQL with AEM as a Cloud Service.
 
 ### Fixed Issues {#fixed-issues-11382}
 
