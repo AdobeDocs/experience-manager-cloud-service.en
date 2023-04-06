@@ -19,7 +19,7 @@ To do this, it provides content authors with an intuitive UI that requires minim
 
 >[!NOTE]
 >
->The Universal Editor is still in development and currently can only author text.
+>The Universal Editor is still in development and can currently not edit all content types.
 
 ## Prepare the App {#prepare-app}
 
@@ -100,11 +100,11 @@ The hamburger menu is not yet implemented.
 
 ![Hambuger menu](assets/hamburger-menu.png)
 
-#### Address Bar {#address-bar}
+#### Location Bar {#Location-bar}
 
-The address bar shows you the location of the page you are editing. Tap or click to enter the address of another page to edit.
+The location bar shows you the address of the page you are editing. Tap or click to enter the address of another page to edit.
 
-![Address bar](assets/address-bar.png)
+![Location bar](assets/address-bar.png)
 
 >[!TIP]
 >
@@ -113,12 +113,6 @@ The address bar shows you the location of the page you are editing. Tap or click
 >[!NOTE]
 >
 >Any page that you wish to edit with the Universal Editor must be [instrumented to support he Universal Editor.](getting-started.md)
-
-#### Collaboration Indicator {#collaboration}
-
-If there are other authors with the same page loaded in the Universal Editor, the images of those authors will be shown. Hover the mouse over an image to see the full user name
-
-![Collaboration indicator](assets/collaboration.png)
 
 #### Open App Preview {#open-app-preview}
 
@@ -135,6 +129,10 @@ Tap or click the open app preview icon to open the page you are currently editin
 Tap or click the publish button in order to publish the changes to the content live for consumption by your readers.
 
 ![Publish button](assets/publish.png)
+
+>[!TIP]
+>
+>See the document [Publishing Content with the Universal Visual Editor](publishing.md) for more information on publishing with the Universal Editor.
 
 ### The Rail {#rail}
 
@@ -189,6 +187,7 @@ Note that in preview mode, tapping or clicking on content reacts as it would to 
 To learn more about the Universal Editor, see these documents.
 
 * [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation in order to deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
+* [Publishing Content with the Universal Editor](publishing.md) - Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
 * [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.

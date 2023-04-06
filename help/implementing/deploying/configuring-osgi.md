@@ -159,7 +159,7 @@ Adobe Experience Manager as a Cloud Service requires the use of environment-spec
 
 Use secret environment-specific configurations to store the value for secrets on all Adobe Experience Manager as a Cloud Service environments, including Stage and Production.
 
-## Creating OSGi Configurations {#creating-sogi-configurations}
+## Creating OSGi Configurations {#creating-osgi-configurations}
 
 There are two ways create OSGi configurations, as described below. The former approach is typically used for configuring custom OSGi components which have well-known OSGi properties and values by the developer, and the latter for AEM-provided OSGi components.
 
@@ -183,8 +183,8 @@ The AEM SDK Quickstart Jar's AEM Web Console can be used configure OSGi componen
 >
 >The AEM Web Console's Configuration UI does write `.cfg.json` files into the repository. Therefore, be aware of this in order to avoid potential unexpected behavior during local development, when the AEM Project-defined OSGi configurations may differ from the generated configurations.
 
-1. Log in to the AEM SDK Quickstart Jar's AEM Web console as the admin user
-1. Navigate to OSGi > Configuration
+1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user
+1. Navigate to **OSGi** &gt; **Configuration**
 1. To configure, locate the OSGi component and tap its title to edit
    ![OSGi Configuration](./assets/configuring-osgi/configuration.png)
 1. Edit the OSGi configuration property values via the Web UI as needed
