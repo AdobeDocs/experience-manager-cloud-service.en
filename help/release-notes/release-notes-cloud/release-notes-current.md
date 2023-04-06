@@ -74,7 +74,7 @@ Have a look at the February 2023 Release Overview video for a summary of the fea
 ![Submit Adaptive Forms to Microsoft SharePoint and Microsoft OneDrive](/help/forms/assets/onedrive-and-sharepoint.jpg)
 
 
-## Headless Adaptive Forms early adopter program {forms-early-adopter}
+## Headless Adaptive Forms early adopter program {#forms-early-adopter}
 
 Use Headless Adaptive Forms to enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. Headless adaptive forms help you: 
 
