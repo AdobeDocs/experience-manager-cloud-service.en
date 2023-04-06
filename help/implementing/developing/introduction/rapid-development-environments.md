@@ -213,6 +213,8 @@ Optionally, you can reference a remote repository:
 
 By default, artifacts are deployed to both author and publish tiers, but the "-s" flag can be used to target a specific tier.
 
+Any AEM package can be deployed, such as packages with code, content, or a [container package](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) (also called the "all" package).
+
 >[!IMPORTANT]
 >
 >The dispatcher configuration for the WKND project is not deployed via the above content-package installation. You will need to deploy it separately following the "Deploying an Apache/Dispatcher Configuration" steps.
