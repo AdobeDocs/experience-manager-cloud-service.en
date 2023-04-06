@@ -189,13 +189,13 @@ The following asset types and functionalities are currently not supported:
 * Web-to-print
 * UGC (User-Generated Content) services
 
->[!IMPORTANT]
->
->Starting May 1, 2023, UGC assets in Dynamic Media will be available for use up to 60 days from the date of upload. After 60 days, the assets will be removed.
+  >[!IMPORTANT]
+  >
+  >Starting May 1, 2023, UGC assets in Dynamic Media will be available for use up to 60 days from the date of upload. After 60 days, the assets will be removed.
 
->[!NOTE]
->
->Support for new or existing UGC vector image assets in Adobe Dynamic Media ended on September 30, 2021.
+  >[!NOTE]
+  >
+  >Support for new or existing UGC vector image assets in Adobe Dynamic Media ended on September 30, 2021.
 
 ### Test the Secure Testing service {#test-secure-testing-service}
 
