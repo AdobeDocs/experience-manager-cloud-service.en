@@ -82,8 +82,6 @@ In either case, the query showing in the editor panel is the query that will be 
 
 ## Query variables {#query-variables}
 
-<!-- more details needed here? -->
-
 The GraphiQL IDE also allows you to manage your [Query Variables](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 For example:
@@ -93,6 +91,10 @@ For example:
 ## Managing cache for your persisted queries {#managing-cache}
 
 [Persisted queries](/help/headless/graphql-api/persisted-queries.md) are recommended as they can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application. By default AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL).
+
+>[!NOTE]
+>
+>For further details see [Caching your persisted queries](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >
