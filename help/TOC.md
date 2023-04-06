@@ -62,7 +62,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Release Notes for 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
       + [Release Notes for 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
   + AEMaaCS Maintenance Release Notes {#maintenance}
-    + [Latest Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
+    + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2023 {#2023}
       + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
   + Release Notes for Cloud Manager {#cloud-manager}
@@ -127,7 +127,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
-  + [Known issues](/help/release-notes/known-issues.md)
   + [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md)
   + [Deprecated APIs](/help/release-notes/deprecated-apis.md)
   + [Prerelease Channel](/help/release-notes/prerelease.md)
@@ -162,7 +161,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Other Onboarding Concepts {#concepts}
     + [Introduction to Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
     + [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md)
-    + [Notification User Groups](/help/journey-onboarding/user-groups.md)
+    + [Notification Profiles](/help/journey-onboarding/notification-profiles.md)
 + AEMaaCS Trials {#trials}
   + Headless Trials {#headless}
     + [Customize Content in a Sample React App](/help/trials/headless/customize-app.md)
@@ -543,9 +542,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
         + [Introduction to authoring of an Adaptive Forms](/help/forms/introduction-forms-authoring.md)
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
+        + [Reference themes, templates, and data models](/help/forms/reference-themes-templates-data-models.md)
         + [Create a template](/help/forms/template-editor.md)
         + [Create a theme](/help/forms/themes.md)
-        + [Reference Assets](/help/forms/reference-assets.md)
         + [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)
         + [Improve performance of large forms with lazy loading](/help/forms/lazy-loading-adaptive-forms.md)
       + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
@@ -958,6 +957,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + Universal Editor {#universal-editor}
   + [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md)
   + [Authoring Content with the Universal Editor](/help/implementing/universal-editor/authoring.md)
+  + [Publishing Content with the Universal Editor](/help/implementing/universal-editor/publishing.md)
   + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
   + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
   + [Attributes and Types](/help/implementing/universal-editor/attributes-types.md)
