@@ -28,7 +28,7 @@ From the Notification Center screen, you can select a specific program and envir
 
 You can follow the steps below to configure receiving notifications:
 
-1. Create the following Product Profiles, as described [in this article](/help/journey-onboarding/user-groups.md), assigning the appropriate Adobe IDs from your organization to those profiles.
+1. Create the following Product Profiles, as described [in this article](/help/journey-onboarding/notification-profiles.md), assigning the appropriate Adobe IDs from your organization to those profiles.
 1. Determine the notification configuration settings. [On this page](https://experience.adobe.com/preferences/notification-section), make sure the Experience Manager Subscription is enabled and the **Others** checkbox is selected. In addition, it is recommended that the Emails section is set to **Instant Notifications** so you receive notifications immediately after an incident occurs.
 
 >[!NOTE]
