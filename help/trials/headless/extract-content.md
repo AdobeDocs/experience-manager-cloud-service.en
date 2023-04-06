@@ -29,6 +29,10 @@ You start on the GraphQL Explorer in a new tab. Here you can build and validate 
 
 1. Your AEM headless trial comes with an endpoint preloaded with Content Fragments from which you can extract content for testing purposes. Make sure that the **AEM Demo Assets** endpoint is selected in the **Endpoint** drop-down menu at the top-right corner of the editor.
 
+1. Known issue: if the **AEM Demo Assets** endpoint is not present in the drop-down menu, navigate to Package Manager (`/crx/packmgr` path on your AEM environment) and reinstall the `aem-demo-assets.ui.content-{VERSION}.zip` package:
+
+   ![Reinstall package](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
+
 1. Copy the following code snippet for a list query of the preloaded **AEM Demo Assets** endpoint. A list query returns a list of all content that uses a specific Content Fragment model. Inventory and category pages typically use this query format.
 
    ```text
