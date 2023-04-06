@@ -86,9 +86,6 @@ Use Headless Adaptive Forms to enable your developers to create, publish, and ma
 You can send an email to aem-forms-headless@adobe.com from your official email ID to join the early adopter program. 
 
 
-
-
-
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
