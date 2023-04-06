@@ -70,16 +70,6 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 * **[Integrate with REST Endpoints Using Open API 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Connect AEM Forms as a Cloud Service Form Data Models to REST endpoints that support Open API specification version 3.0, allowing you to send and receive data with ease.
 * **[Share an Adaptive Form for review](/help/forms/create-reviews-forms.md)**: Use the Adaptive Forms review mechanism to allow one or more reviewers to review the form.
 
-
-## CIF Add-on {#cloud-services-cif}
-
-### What is New {#what-is-new-cif}
-
-* Authors can dynamically enrich product lists with Experience Fragments (example: place banner between product listings).
-* The list component now supports associated product / category pages to dynamically show related pages.
-* Support for Peregrine 12.5 components was added.
-* Support for client-side price loading in product teaser and carousel was added.
-
 ## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
 ### What is New {#what-is-new-foundation}
