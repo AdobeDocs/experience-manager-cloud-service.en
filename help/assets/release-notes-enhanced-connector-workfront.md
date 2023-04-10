@@ -36,7 +36,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 ## Previous releases {#previous-releases}
 
-### March 2022 release {#march-2022-release}
+### March 2023 release {#march-2023-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] version 1.9.8, released on March 03, 2023 includes the following updates:
 
@@ -47,7 +47,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * Capability to manage blocking net-new customers on Experience Manager as a Cloud Service from configuring the connector.
 
 
-### January 2022 release {#january-2022-release}
+### January 2023 release {#january-2022-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] version 1.9.7, released on February 02, 2023 includes the following updates:
 
