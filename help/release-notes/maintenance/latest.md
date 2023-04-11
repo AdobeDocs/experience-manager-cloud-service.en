@@ -1,44 +1,50 @@
 ---
-title: Latest Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Latest Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Current Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Current Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
 ---
 
 # Maintenance Release Notes {#maintenance-release-notes}
 
-The following section outlines the technical release rotes for the latest maintenance release of Experience Manager as a Cloud Service.
+The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 11289 {#release-11289}
+## Release 11382 {#release-11382}
  
-Summarized below are the continuous improvements for maintenance release 11289, which was publicly released on March 7th, 2023. This maintenance release is an update from previous maintenance release 10912.
+Summarized below are the continuous improvements for maintenance release 11382, which was publicly released on March 28, 2023. This maintenance release is an update from previous maintenance release 11289.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
-### Known Issues {#known-issues}
+### Known Issues {#known-issues-11382}
 
-Do not upgrade if you are using CORS. An issue impacting the GraphQL content delivery functionality was identified in this release. A change in the default AEM dispatcher configuration regarding how GraphQL persisted queries are cached can break GraphQL content delivery of such queries. This issue will be fixed in our next maintenance release.
+- SITES-12573 - GraphQL queries using variables inside of a filter will fail if one variable is not specified. Please do not update to this release shall you use GraphQL with AEM as a Cloud Service.
 
-### Fixed Issues {#fixed-issues}
+### Fixed Issues {#fixed-issues-11382}
 
-#### Sites {#sites-issues}
+- ASSETS-21023 - Fixed Smart Crop rendition, where customers could observe a Null Pointer exception on the Publisher instance of all AEM environments when  tried to access these renditions through the API.
+- SKYOPS-49280 - When installing a config or bundle update using RDE into Publish the result may not be observable because the Publish dispatcher cache isn't invalidated
 
-- SITES-11584 Fixed issue with Live Copies that could not be created for pages with annotations
-- SITES-11683 Disabled MSM Live Copies with partially broken inheritance
+#### Sites {#sites-issues-11382}
 
-#### Assets {#assets-issues}
+- SITES-7796 - Ability for content author to publish the Master Content Fragment and its respective Variations when exporting to target
+- SITES-97 - GraphQL: Pagination & Sorting, hybrid filtering
 
-- ASSETS-20879 Fixed regression preventing Asset Reports UI from working correctly and resulted in incorrect results in generated reports.
-- ASSETS-21020 Fixed issue with broken asset download - Image profile doesn't exist after moving asset
-- ASSETS-21023 Fixed issue with image renditions in Dynamic Media preventing access through the API
+>[!NOTE]
+>
+> In SITES-97, some improvements have been made in the GraphQL implementation that might cause unexpected behavior. See [AEM GraphQL changes regarding handling of null values](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html) for more information.
 
-#### Forms {#forms-issues}
+#### Assets {#assets-issues-11382}
 
-- None
+- ASSETS-20076 - Add support for video watermarking that matches the current image watermarking support
+- ASSETS-21428 - Added exclusions for CSS changes
 
-#### Platform {#platform-issues}
+#### Forms {#forms-issues-11382}
 
-- GRANITE-44467 - Fixed issue causing import to fail, when updating an existing node, Filevault under certain instances did not preserve mixin types and child nodes
+- CQ-4351502 - Updating service user mapping to allow read access in Sites
 
-### Embedded Technologies {#embedded-tech}
+#### Platform {#platform-issues-11382}
+
+- SITES-11040 - Conditional enablement of GraphQL persisted query caching in dispatcher
+
+### Embedded Technologies {#embedded-tech-11382}
 
 |Technology|Version|Link|
 |---|---|---|
