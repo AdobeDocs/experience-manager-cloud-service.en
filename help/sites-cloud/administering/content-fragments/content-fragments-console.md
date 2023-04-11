@@ -62,7 +62,7 @@ Here you can see that there are three main areas:
   * **[Create](#creating-new-content-fragment)** a new Content Fragment
   * [Filter](#filtering-fragments) the Content Fragments according to a selection of predicates, and save the filter for future use
   * [Search](#searching-fragments) the Content Fragments 
-  * [Customize the table view to show selected columns of information](#selectuse-available-columns)
+  * [Customize the table view to show selected columns of information](#select-available-columns)
   * Use **Open in Assets** to directly open the current location in the **Assets** console
 
     >[!NOTE]
