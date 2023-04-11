@@ -13,16 +13,13 @@ The release date for the latest version 1.9.9 of [!DNL Workfront for Experience 
 
 ## Release highlights {#release-highlights}
 
-The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following enhancements:
-
-* You can now configure a threshold limit on the number of new set of project linked folders.
-
-
-The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fixes:
+The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the updates:
 
 * Experience Manager displays an `DateTimeParseException` exception when it receives last modified date from Workfront during linked folder creation.
 
 * Issues while creating multiple linked project folders within a short duration.
+
+* Inability to configure a threshold limit on the number of new set of project linked folders.
 
 >[!IMPORTANT]
 >
