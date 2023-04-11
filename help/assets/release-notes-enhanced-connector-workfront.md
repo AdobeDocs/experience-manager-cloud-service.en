@@ -13,7 +13,7 @@ The release date for the latest version 1.9.9 of [!DNL Workfront for Experience 
 
 ## Release highlights {#release-highlights}
 
-The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the updates:
+The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following updates:
 
 * Experience Manager displays an `DateTimeParseException` exception when it receives last modified date from Workfront during linked folder creation.
 
