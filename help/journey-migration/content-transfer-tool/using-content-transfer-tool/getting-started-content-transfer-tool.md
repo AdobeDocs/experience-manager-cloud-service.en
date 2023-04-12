@@ -37,7 +37,7 @@ The source AEM instance may be running behind a firewall where it can only reach
 
 ### Enable SSL Logging {#enable-ssl-logging}
 
-Understanding SSL/TLS connection problems can sometimes be difficult. To toubleshoot connection issues during an extraction process, you can enable SSL logging via the System Console of the source AEM environment by following these steps:
+Understanding SSL/TLS connection problems can sometimes be difficult. To troubleshoot connection issues during an extraction process, you can enable SSL logging via the System Console of the source AEM environment by following these steps:
 
 1. Navigate to the Adobe Experience Manager Web Console on your source instance, by going to **Tools - Operations - Web Console** or directly to the URL at *https://serveraddress:serverport/system/console/configMgr*
 1. Search for **Content Transfer Tool Extraction Service Configuration**
@@ -170,7 +170,7 @@ Follow the steps below to run a size check:
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Click on **Check Size** to start the process. You will then return to the migration set list view and you should see a message indicating that **Check Size** is running.
+1. Click on **Check Size** to start the process. You will then return to the migration set list view, and you should see a message indicating that **Check Size** is running.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
