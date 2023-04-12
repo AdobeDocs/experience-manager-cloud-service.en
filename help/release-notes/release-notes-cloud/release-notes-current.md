@@ -32,8 +32,8 @@ Have a look at the February 2023 Release Overview video for a summary of the fea
 
 ### New features in [!DNL Experience Manager Sites] prelease {#prerelease-sites}
 
-* Export content fragments from AEM as a cloud service to Adobe target as JSON offers
-* Support for GraphQL pagination and sorting, along with internal caching enhancements, now help improve the performance of decoupled client applications when fetching large content sets from AEM using complex GraphQL queries and filters
+* Export content fragments from AEM as a cloud service to Adobe target as JSON offers.
+* Support for GraphQL pagination and sorting, along with internal caching enhancements, now help improve the performance of decoupled client applications when fetching large content sets from AEM using complex GraphQL queries and filters.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
