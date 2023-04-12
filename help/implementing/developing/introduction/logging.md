@@ -489,6 +489,10 @@ Define DISP_LOG_LEVEL debug
 </IfDefine>
 ```
 
+>[!NOTE]
+>
+>For production environments, it is recommended that you do not set the log level to trace.
+
 ## How to Access Logs {#how-to-access-logs}
 
 ### Cloud Environments {#cloud-environments}
