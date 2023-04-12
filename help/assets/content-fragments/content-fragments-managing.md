@@ -125,10 +125,6 @@ To open your fragment for editing:
 >
 >To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
 
->[!CAUTION]
->
->To edit a content fragment you need the appropriate permissions. Please contact your system administrator if you are experiencing issues.
-
 1. Use the **Assets** console to navigate to the location of your content fragment.
 1. Open the fragment for editing, by either:
 
