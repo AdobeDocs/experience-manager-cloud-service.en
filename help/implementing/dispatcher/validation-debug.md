@@ -445,6 +445,11 @@ When running Dispatcher locally, logs are printed directly to the terminal outpu
 
 Logs for cloud environments are exposed through the logging service available in Cloud Manager.
 
+>[!NOTE]
+>
+>For production environments, it is recommended that you do not set the log level to trace.
+
+
 ### Automatic reloading and validation {#automatic-reloading}
 
 >[!NOTE]
