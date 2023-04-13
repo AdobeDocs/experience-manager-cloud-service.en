@@ -156,6 +156,19 @@ The Filter panel offers:
 
 ![Content Fragments console - Filtering](assets/cfc-console-filter.png)
 
+### Fast Filtering {#fast-filtering}
+
+You can also select a predicate by selecting a specific column value in the list. For example, **Published** in the **Status** column:
+
+>[!NOTE]
+>
+>Fast filtering is only supported for the **Model**, **Status**, **Modified By**, and **Published By** columns.
+
+![Content Fragments console - Filtering](assets/cfc-console-fast-filter-01.png)
+
+Once selected, this will be shown as a filter predicate in the header, and the list will be filtered:
+
+![Content Fragments console - Filtering](assets/cfc-console-fast-filter-02.png)
 ## Searching Fragments {#searching-fragments}
 
 The search box supports full-text search. Entering your search terms in the search box:
