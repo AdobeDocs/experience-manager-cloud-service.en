@@ -420,7 +420,7 @@ Some key benefits from enabling DASH on your account include the following:
 
    >[!IMPORTANT]
    >
-   >Enabling DASH on your account is currently available only in North America. 
+   >Enabling DASH on your account is currently available only in Asia-Pacific and North America; coming soon in Europe-Middle East-Africa.
 
 You initiate a request to use DASH; it is not automatically enabled on your account.
 

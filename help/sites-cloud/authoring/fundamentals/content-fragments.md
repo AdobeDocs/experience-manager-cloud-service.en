@@ -177,3 +177,10 @@ Fragments need to be published so they can used used on your published web pages
 
 * A fragment can be published after [creating the fragment in the Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment). 
 * If an *unpublished fragment* is used on a page that is being published, the fragment can also be published at this time.
+
+## Exporting Content Fragments {#exporting-content-fragments}
+
+For export to Adobe Target, JSON can be used to deliver the fragment. See:
+
+* [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+* [Exporting Content Fragments to Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
