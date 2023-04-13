@@ -313,7 +313,7 @@ To export a Content Fragment from AEM to Target (after specifying the Cloud Conf
 1. Navigate to your Content Fragment in the **Assets** console.
 1. Select the Content Fragment you would like to export to target.
 
-1. Tap/click **Export to Adobe Target**.
+1. Tap/click **Export to Adobe Target Offers**.
 
    ![Export to Adobe Target](assets/cfm-export-target-01.png)
 
@@ -331,7 +331,13 @@ To export a Content Fragment from AEM to Target (after specifying the Cloud Conf
 
    >[!NOTE]
    >
-   >Selecting **Publish** will publish the Content Fragment right away and send it to Target.
+   >The actual actions shown will be dependent on the status of your fragment and related assets. 
+   >
+   >If everything has already been published, and nothing has been modified since, then this step will be passed over.
+
+   >[!NOTE]
+   >
+   >Selecting **Publish** will publish the Content Fragment immediately, and send it to Target.
 
 1. Tap/click **OK** in the confirmation dialog.
 
