@@ -15,7 +15,8 @@ Feature enablement for this maintenance release will provide you with the full f
 
 >[!IMPORTANT]
 >
->Due to the late deployment of the 11382 release, and delayed activation of the 2023.02 features, there is a discrepancy with the Cloud Manager UI - which is showing an ID of “2023.3.11382”.
+> A discrepancy can be noted on the CloudManager UI, showing "2023.3.11382", while the official release is "2023.02". This is due to the late deployment of the 11382 release, and delayed activation of the 2023.02 features.
+> We are working on fixing this for upcoming releases.
 
 ### Known Issues {#known-issues-11382}
 
