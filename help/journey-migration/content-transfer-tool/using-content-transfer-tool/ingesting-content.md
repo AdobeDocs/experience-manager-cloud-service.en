@@ -32,8 +32,9 @@ Follow the steps below to ingest your migration set from the Content Transfer To
      * Migration Sets will expire after a prolonged period of inactivity, so it is expected that the ingestion occurs relatively soon after the extraction has been performed. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
    * Select the destination environment. This is where the content of the migration set will be ingested. Select the tier. (Author/Publish). Rapid Development Environments are not supported.
 
-   >[!NOTE] The following notes apply to ingesting content:
+   >[!NOTE]
    >
+      The following notes apply to ingesting content:
       * If the source was Author, it is recommended to ingest it into the Author tier on the target. Similarly, if source was Publish, target should be Publish as well.
       * If the target tier is `Author`, the author instance will be shutdown during the length of the ingestion and will be unavailable to users (for example, authors or anyone performing maintenance, etc.). This is to protect the system, and prevent any changes which could either be lost or cause an ingestion conflict. Please ensure that your team is aware of this fact. Also note that the environment will appear hibernated during the author ingestion.
       * You can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
