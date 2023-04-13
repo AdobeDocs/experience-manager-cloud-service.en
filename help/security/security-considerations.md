@@ -28,4 +28,4 @@ In order to support asymmetric, cryptographic operations, AEM stores certificate
 
 ## Anonymous Permission Hardening Package {#anonymous-permission-hardening-package}
 
-For more information on the Anonymous Hardening Package, please see the [Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#anonymous-permission-hardening-package)
+For more information on the Anonymous Hardening Package, please see the [Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#anonymous-permission-hardening-package).
