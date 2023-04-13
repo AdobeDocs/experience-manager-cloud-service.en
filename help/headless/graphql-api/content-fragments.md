@@ -963,9 +963,9 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
       >If the given variation does not exist for a Content Fragment, then the master variation will be returned as a (fallback) default.
 
       >[!CAUTION]
+      >
       >The system-generated field `_variation` cannot be used together with the filter `includeVariations`.
 
-      * See [Sample Query - All Cities with a Named Variation](#sample-cities-named-variation)
       * See [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
   * For [image delivery](#image-delivery):
