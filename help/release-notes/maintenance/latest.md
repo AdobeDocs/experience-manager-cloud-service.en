@@ -13,6 +13,11 @@ Summarized below are the continuous improvements for maintenance release 11382, 
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
+>[!IMPORTANT]
+>
+> A discrepancy can be noted on the CloudManager UI, showing "2023.3.11382", while the official release is "2023.02". This is due to the delayed activation of the 2023.02 features.
+> We are working on fixing this for upcoming releases.
+
 ### Known Issues {#known-issues-11382}
 
 - SITES-12573 - GraphQL queries using variables inside of a filter will fail if one variable is not specified. Please do not update to this release shall you use GraphQL with AEM as a Cloud Service.
