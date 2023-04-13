@@ -158,7 +158,9 @@ The Filter panel offers:
 
 ### Fast Filtering {#fast-filtering}
 
-You can also select a predicate by selecting a specific column value in the list. For example, **Published** in the **Status** column:
+You can also select a predicate by clicking on a specific column value in the list. You can select one, or more, values to combine predicates. 
+
+For example, select **Published** in the **Status** column:
 
 >[!NOTE]
 >
@@ -166,7 +168,7 @@ You can also select a predicate by selecting a specific column value in the list
 
 ![Content Fragments console - Filtering](assets/cfc-console-fast-filter-01.png)
 
-Once selected, this will be shown as a filter predicate in the header, and the list will be filtered:
+Once selected, this will be shown as a filter predicate, and the list will be filtered accordingly:
 
 ![Content Fragments console - Filtering](assets/cfc-console-fast-filter-02.png)
 ## Searching Fragments {#searching-fragments}
