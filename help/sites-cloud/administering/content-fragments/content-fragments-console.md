@@ -171,6 +171,7 @@ For example, select **Published** in the **Status** column:
 Once selected, this will be shown as a filter predicate, and the list will be filtered accordingly:
 
 ![Content Fragments console - Filtering](assets/cfc-console-fast-filter-02.png)
+
 ## Searching Fragments {#searching-fragments}
 
 The search box supports full-text search. Entering your search terms in the search box:
