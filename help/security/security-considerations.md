@@ -7,14 +7,6 @@ hide: yes
 
 # AEM as a Cloud Service Security Considerations {#security-considerations}
 
-## Anonymous Permission Hardening Package {#anonymous-permission-hardening-package}
-
-By default, AEM stores system metadata, such as `jcr:createdBy` or `jcr:lastModifiedBy` as node properties, next to regular content, in the repository. Depending on the configuration and the access control setup, in some cases this could lead to exposure of personally identifiable information (PII), for example when such nodes are rendered as raw JSON or XML. 
-
-Like all repository data, these properties are mediated by the Oak authorization stack. Access  to them should be restricted in accordance with the principle of least privilege.
-
-To support this, Adobe provides a permission hardening package as a basis for customers to build upon. It works by installing a "deny" access control entry at the repository root, restricting anonymous access to commonly used system properties. The package is available for download [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) and can be installed on all supported versions of AEM. Please see the release notes for more information.
-
 ## AEM Trust Store {#aem-trust-store}
 
 In order to support asymmetric, cryptographic operations, AEM stores certificates inside the content repository, in a global trust-store. Its contents are public and, by default, are anonymously accessible by everyone on publisher instances.
@@ -29,3 +21,9 @@ In order to support asymmetric, cryptographic operations, AEM stores certificate
   ![Trust Store Management](/help/security/assets/global-trust-store-modified.png)
 
 * Access to the trust-store can be further restricted by repository access control depending on the use-case.
+
+Adobe recommends the default access controls be used for the Trust Store, which means that it remains publicly accessible. For the most secure configuration, you can use a policy of deny jcr:all for everyone.
+
+## Anonymous Permission Hardening Package {#anonymous-permission-hardening-package}
+
+For more information on the Anonymous Hardening Package, please see the [Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#anonymous-permission-hardening-package)
