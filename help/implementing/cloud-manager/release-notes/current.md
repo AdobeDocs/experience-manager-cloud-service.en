@@ -23,6 +23,6 @@ The release date for Cloud Manager release 2023.4.0 in AEM as a Cloud Service is
 
 ## Bug Fixes {#bug-fixes}
 
-* When a [certificate]((/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)) expires, [domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) and [IP allow lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) associated with the certificate will no longer be removed from the CDN.  In such cases, the site will continue to be reachable.
+* When a [certificate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) expires, [domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) and [IP allow lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) associated with the certificate will no longer be removed from the CDN.  In such cases, the site will continue to be reachable.
 * The Cloud Manager UI will provide more visible advance warnings that the [SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) is about to expire.
 * A rare situation was fixed where customers were unable to create a new environment or delete an environment.
