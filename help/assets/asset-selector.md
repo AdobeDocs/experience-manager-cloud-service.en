@@ -153,14 +153,8 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
         const imsProps = {
             imsClientId: "<obtained from IMS team>",
             imsScope: "openid, <other scopes>",
-            redirectUrl: window.location.href, // redirect url to be used for ims flow, if empty it will use the registered redirect url for the client id.
+            redirectUrl: window.location.href,
             modalMode: true, // false to open in a full page reload flow
-            adobeImsOptions: {
-                modalSettings: {
-                    allowOrigin: window.location.origin,
-                },
-                useLocalStorage: true,
-            },
             onImsServiceInitialized: (service) => {
                 // invoked when the ims service is initialized and is ready
                 console.log("onImsServiceInitialized", service);
@@ -187,15 +181,11 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
         
 
         //function that will render the asset selector
-        async function renderAssetSelectorWithAuthFlowFlow() {
             const otherProps = {
             // any other props supported by asset selector
             }
             const assetSelectorProps = {
-                "discoveryURL": "https://aem-discovery.adobe.io/",
                 "imsOrg": "imsorg",
-                apiKey: "apikey",
-                env: "",
                 ...otherProps
             }
              // container element on which you want to render the AssetSelector/DestinationSelector component
@@ -247,7 +237,6 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 | *hideTreeNav* | boolean | No | | Specifies whether to show or hide assets tree navigation sidebar. It is used in modal view only and hence there is no effect of this property in rail view. | 
 | *onDrop* | function | No | | The property allows the drop functionality of an asset. |
 | *dropOptions* | `{allowList?: object}` | No | | Configures drop options using 'allowList'. |
-| *showForcedLoading* | boolean | No | false | Indicates whether to show Asset Selector on loading screen. This is useful when you are waiting for an imsToken to be available in SUSI flow. Asset Selector stops rendering assets if `showForcedLoading` is true. However, it still sends pre-flight requests to discovery. |
 
 ## Examples to use Asset Selector properties {#usage-examples}
 
@@ -290,8 +279,8 @@ Once the Asset Selector is set up and you are authenticated to use Asset Selecto
 
 *   **A**: [Hide/Show panel](#hide-show-panel)
 *   **B**: [Repository switcher](#repository-switcher)
-*   **C**: [Filters](#filters)
-*   **D**: [Assets](#repository)
+*   **C**: [Assets](#repository)
+*   **D**: [Filters](#filters)
 *   **E**: [Search bar](#search-bar)
 *   **F**: [Sorting](#sorting)
 *   **G**: [Sorting in ascending or descending order](#sorting)
@@ -303,7 +292,14 @@ To hide folders in the left navigation, click **[!UICONTROL Hide folders]** icon
 
 ### Repository switcher {#repository-switcher}
 
-Asset Selector also allows you to switch repositories for asset selection. You can select the repository of your choice from the drop-down available in the left panel. The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
+Asset Selector also allows you to switch repositories for asset selection. You can select the repository of your choice from the drop-down available in the left panel. The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. It is based on the environments from the selected IMS org that is accessed by the logged in user. Consumers can pass a preferred `repositoryID` and in that case the Asset Selector stops rendering the repo switcher and render assets from the given repository only.
+<!-->
+It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
+-->
+
+### Assets repository
+
+It is a collection of assets folders that you can use to perform operations. 
 
 ### Out-of-the-box filters {#filters}
 
@@ -313,11 +309,7 @@ Asset Selector also provides out-of-the-box filter options to refine your search
 *   `MIME type`: includes JPG, GIF, PPTX, PNG, MP4, DOCX, TIFF, PDF, XLSX
 *   `Image Size`: includes minimum/maximum width, minimum/maximum height of image
 
-   ![rail-view-example](assets/filters-asset-selector.png)
-
-### Assets repository
-
-It is a collection of assets folders that you can use to perform operations.  
+   ![rail-view-example](assets/filters-asset-selector.png) 
 
 ### Custom search
 
