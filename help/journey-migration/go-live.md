@@ -101,7 +101,7 @@ Please take into account that the entire ingestion fails if any of the following
 Compared to the section above the ingestion **does not** fail due to the following asset concerns. However, it is highly recommended you take the appropriate steps in these scenarios:
 
 * Any asset that has the original rendition missing
-* Any folder that has a missing `jcr:content` node
+* Any folder that has a missing `jcr:content` node.
 
 Both of the above items will be identified and reported in the [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) report.
 
