@@ -26,6 +26,10 @@ In order to support asymmetric, cryptographic operations, AEM stores certificate
 >
 >Adobe recommends the default access controls be used for the Trust Store, which means that it remains publicly accessible. For the most secure configuration, you can use a policy of deny jcr:all for everyone.
 
+<!--
+Commenting out section for now as requested by Lars
+
 ## Anonymous Permission Hardening Package {#anonymous-permission-hardening-package}
 
 For more information on the Anonymous Hardening Package, please see the [Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#anonymous-permission-hardening-package).
+-->
