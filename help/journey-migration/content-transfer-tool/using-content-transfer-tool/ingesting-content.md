@@ -33,30 +33,17 @@ Follow the steps below to ingest your migration set from the Content Transfer To
    * Select the destination environment. This is where the content of the migration set will be ingested. Select the tier. (Author/Publish). Rapid Development Environments are not supported.
 
    >[!NOTE]
-   >
-   >If the source was Author, it is recommended to ingest it into the Author tier on the target. Similarly, if source was Publish, target should be Publish as well.
-
-   >[!NOTE]
-   >
-   >If the target tier is `Author`, the author instance will be shutdown during the length of the ingestion and will be unavailable to users (for example, authors or anyone performing maintenance, etc.). This is to protect the system, and prevent any changes which could either be lost or cause an ingestion conflict. Please ensure that your team is aware of this fact. Also note that the environment will appear hibernated during the author ingestion.
-
-   >[!NOTE]
-   >
-   >You can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
-   > 
-   >If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later.
-
-   >[!NOTE]
-   >
-   >Ingestions do not support a Rapid Development Environment (RDE) destination. They will not appear as a possible destination choice, even if the user has access to it.
+   >The following notes apply to ingesting content:
+   > If the source was Author, it is recommended to ingest it into the Author tier on the target. Similarly, if source was Publish, target should be Publish as well.
+   > If the target tier is `Author`, the author instance will be shutdown during the length of the ingestion and will be unavailable to users (for example, authors or anyone performing maintenance, etc.). This is to protect the system, and prevent any changes which could either be lost or cause an ingestion conflict. Please ensure that your team is aware of this fact. Also note that the environment will appear hibernated during the author ingestion.
+   > You can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
+   > If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later.
+   > Ingestions do not support a Rapid Development Environment (RDE) destination. They will not appear as a possible destination choice, even if the user has access to it.
 
    >[!IMPORTANT]
-   >
-   >You will be able to initiate an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you are unable to start an ingestion, refer to [Unable to Start Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) for more details.
-
-   >[!IMPORTANT]
-   >
-   >If the setting **Wipe** is enabled before ingestion, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group. You will need to be re-added to the administrators group in order to start an ingestion.
+   > The following important notices apply to ingesting content:
+   > You will be able to initiate an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you are unable to start an ingestion, refer to [Unable to Start Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) for more details.
+   > If the setting **Wipe** is enabled before ingestion, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group. You will need to be re-added to the administrators group in order to start an ingestion.
 
 1. Click on **Ingest**
 
