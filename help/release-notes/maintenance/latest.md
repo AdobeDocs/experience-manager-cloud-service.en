@@ -23,7 +23,7 @@ Feature enablement for this maintenance release will provide you with the full f
 - SITES-12573 - GraphQL queries using variables inside of a filter will fail if one variable is not specified. Please do not update to this release shall you use GraphQL with AEM as a Cloud Service.
 - SKYOPS-51970 - Identified regression of the FACT version used in the buildImage step, leading to un-matching user mapping.
 - GRANITE-44542 - Issues have been reported for customers who did not specify a package nodetype (by providing a .content.xml with jcr:primaryType) for folders included in the package filter. This caused these folders to be treated as nt:folder, creating issues in various cases.
-- SKYOPS-56928 - Apache HTTPD regression might cause 404 errors. For safety reasons, it is recommended to rollback to the previous version and to avoid any pipeline running during that tme period.
+- SKYOPS-56928 - Apache HTTPD regression might cause 404 errors. For safety reasons, it is recommended to rollback to the previous version and to avoid any pipeline running during that time period.
 
 ### Fixed Issues {#fixed-issues-11382}
 
