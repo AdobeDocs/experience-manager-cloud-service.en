@@ -248,11 +248,20 @@ You can define the Asset Selector [properties](#props) in the `index.html` file 
 
 If the value of the AssetSelector `rail` is set to `false` or is not mentioned in the properties, Asset Selector displays in the Modal view by default.
 
+<!--
 ### Example 2: Use selectedAssets property in addition to the path property
 
 Use the `path` property to define the folder name that displays automatically when the Asset Selector is rendered. In addition, use the `selectedAssets` property to define the IDs for the assets that you need to select within the folder. Moreover, when you want to display assets that are pre-defined within the folder, you can use selectedAssets property.
 
    ![selected-assets-example](assets/selected-assets-example-vanilla.png)
+-->
+
+### Example 2: Metadata popover
+
+Use various properties to define the metadata that you want to view over the asset using an info icon.
+
+   ![metadata-popover-example](assets/metadata-popover.png)
+
 
 ### Example 3: Custom filter property in rail view
 
