@@ -17,8 +17,10 @@ Learn about the three different types of functional testing built into the [AEM 
 
 The purpose of the functional testing steps in the Cloud Manager pipeline is to ensure that the essential functionality of your application is working as expected.
 
-This testing phase is the last level of automated testing before deploying your code to production, 
-Functional testing does not replace,rather, it should only serve to complement and extend other testing strategies such as unit testing or integration testing.
+This testing phase is the last level of automated testing before deploying your code to production.
+
+Functional testing should not replace, but rather complement and extend other testing strategies such as unit testing,
+integration testing, or functional testing performed outside the pipeline execution in Cloud Manager.
 
 ## Overview {#overview}
 
@@ -49,12 +51,12 @@ While product functional testing is defined by Adobe, you can write your own qua
 
 Custom functional testing is executed both for custom code deployments as well as push upgrades, which makes it especially important to write good functional tests which prevent AEM code changes from breaking your application code. The custom functional testing step is always present and cannot be skipped.
 
-Please refer to the document [Java Functional Tests](/help/implementing/cloud-manager/java-functional-testing) for more information.
+Please refer to [Java Functional Tests](/help/implementing/cloud-manager/java-functional-testing) for more information.
 
 
 ### Custom UI Testing {#custom-ui-testing}
 
 Custom UI testing is an optional feature that enables you to create and automatically run UI tests for your applications. UI tests are Selenium-based tests packaged in a Docker image in order to allow for a wide choice of language and frameworks such as Java and Maven, Node and WebDriver.io, or any other framework and technology built upon Selenium.
 
-Please refer to the document [Custom UI Testing](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) for more information.
+Please refer to [Custom UI Testing](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) for more information.
 
