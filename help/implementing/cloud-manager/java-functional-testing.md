@@ -1,7 +1,6 @@
 ---
 title: Java Functional Tests
 description: Learn how to write java functional tests for AEM as a Cloud Service
-exl-id: ?
 ---
 
 ## Getting Started with Functional Tests {#getting-started-functional-tests}
@@ -86,7 +85,7 @@ Please refer to the [`aem-testing-clients` GitHub repo](https://github.com/adobe
 >
 >For running the functional tests from your local machine, create a user with admin-like permissions to achieve the same behavior.
 
-2. The containerized infrastructure that is scoped for functional testing is limited the following boundaries:
+2. The containerized infrastructure that is scoped for functional testing is limited by the following boundaries:
 
 
 | Type    | Value | Description                                                 |

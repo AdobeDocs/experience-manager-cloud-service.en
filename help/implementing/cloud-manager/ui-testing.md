@@ -276,7 +276,7 @@ Tests sometimes must upload files to the application being tested. In order to k
 >
 >For running the functional tests from your local machine, create a user with admin-like permissions to achieve the same behavior.
 
-2. The containerized infrastructure that is scoped for functional testing is limited the following boundaries:
+2. The containerized infrastructure that is scoped for functional testing is limited by the following boundaries:
 
 | Type    | Value | Description                                                 |
 |---------|-------|-------------------------------------------------------------|
@@ -291,7 +291,9 @@ Tests sometimes must upload files to the application being tested. In order to k
 
 ## Running UI Tests Locally {#run-ui-tests-locally}
 
-Before activating UI tests in a Cloud Manager pipeline, it's recommended to run the UI tests locally towards the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) or in an actual AEM as a Cloud Service instance.
+Before activating UI tests in a Cloud Manager pipeline, it's recommended to run the UI tests locally against 
+the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 
+or against an actual AEM as a Cloud Service instance.
 
 ### JavaScript Test Sample {#javascript-sample}
 
