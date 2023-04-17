@@ -928,7 +928,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Accessing the Author Tier](/help/implementing/author-tier/accessing-the-author-tier.md)
     + [Securing the Author Tier](/help/implementing/author-tier/securing-the-author-tier.md)
   + Preview Tier {#preview-tier}
-    + [Configuring OSGi Settings for the Preview Tier](help/implementing/preview-tier/preview-tier-configuring-osgi.md)
+    + [Configuring OSGi Settings for the Preview Tier](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
   + Content Delivery Overview {#content-delivery}
     + [Content Delivery Flow](/help/implementing/dispatcher/overview.md)
     + [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md)
