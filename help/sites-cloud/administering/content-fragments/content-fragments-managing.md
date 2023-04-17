@@ -241,7 +241,7 @@ You can publish your Content Fragments to:
 
   >[!CAUTION]
   >
-  >>Publishing to the **Preview Service** is only available from the **Publish** options in the [Content Fragments console](help/sites-cloud/administering/content-fragments/content-fragments-console.md).
+  >>Publishing to the **Preview Service** is only available from the **Publish** options in the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
 
 >[!CAUTION]
 >
