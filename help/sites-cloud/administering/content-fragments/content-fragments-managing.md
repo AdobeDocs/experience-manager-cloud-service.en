@@ -241,15 +241,23 @@ You can publish your Content Fragments to:
 
   >[!CAUTION]
   >
-  >>Publishing to the **Preview Service** is only available from the **Publish** options in the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
+  >Publishing Content Fragments to the **Preview Service** is only available from the **Publish** options in the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
+
+  >[!NOTE]
+  >
+  >For more details about the preview environments, please see:
+  >
+  >* [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+  >* [Configuring OSGi Settings for the Preview Tier](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+  >* [Debugging Preview Using the Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+
+To publish your Content Fragments from the **Publish** option in the toolbar of the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
 
 >[!CAUTION]
 >
 >If your fragment is based on a model, then you should ensure that the [model has been published](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
 >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
-
-To publish your Content Fragments from the **Publish** option in the toolbar of the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
 
 1. Select one, or more, of your fragments from the list.
 
