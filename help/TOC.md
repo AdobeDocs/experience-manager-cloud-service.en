@@ -781,7 +781,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Overview](/help/implementing/cloud-manager/overview-test-results.md)
       + [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
       + [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md)
-      + [Functional Testing](/help/implementing/cloud-manager/functional-testing.md)
+      + Functional Testing {#functional-testing}
+        + [Functional Testing Overview](/help/implementing/cloud-manager/functional-testing.md)
         + [Java Functional Testing](/help/implementing/cloud-manager/java-functional-testing.md)
         + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
       + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
