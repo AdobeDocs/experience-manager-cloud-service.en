@@ -91,11 +91,12 @@ Please refer to the [`aem-testing-clients` GitHub repo](https://github.com/adobe
 1. The containerized infrastructure that is scoped for functional testing is limited by the following boundaries:
 
 
-| Type    | Value | Description                                                 |
-|---------|-------|-------------------------------------------------------------|
-| CPU     | 0.5   | Amount of CPU-time reserved per test execution              |
-| Memory  | 0.5Gi | Amount of memory allocated the the test, value in gibibytes |
-| Timeout | 30m   | The duration after which the test will be terminated.       |
+| Type                 | Value | Description                                                        |
+|----------------------|-------|--------------------------------------------------------------------|
+| CPU                  | 0.5   | Amount of CPU-time reserved per test execution                     |
+| Memory               | 0.5Gi | Amount of memory allocated the the test, value in gibibytes        |
+| Timeout              | 30m   | The duration after which the test will be terminated.              |
+| Recommended Duration | 15m   | We recommend to write the tests to not take longer than this time. |
 
 >[!NOTE]
 >
