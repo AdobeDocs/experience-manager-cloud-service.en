@@ -51,7 +51,7 @@ While product functional testing is defined by Adobe, you can write your own qua
 
 Custom functional testing is executed both for custom code deployments as well as push upgrades, which makes it especially important to write good functional tests which prevent AEM code changes from breaking your application code. The custom functional testing step is always present and cannot be skipped.
 
-Please refer to [Java Functional Tests](/help/implementing/cloud-manager/java-functional-testing) for more information.
+Please refer to [Java Functional Tests](/help/implementing/cloud-manager/java-functional-testing.md) for more information.
 
 
 ### Custom UI Testing {#custom-ui-testing}
