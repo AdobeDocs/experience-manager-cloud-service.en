@@ -83,11 +83,11 @@ Selecting a specific fragment will open a toolbar focused on the actions availab
 ![Content Fragments console - toolbar for a selected fragment](assets/cfc-fragment-toolbar.png)
 
 * **Open**
-* [**Publish**](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment) (and [**Unpublish**](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#unpublishing-a-fragment))
+* **[Publish](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)** (and **[Unpublish](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#unpublishing-a-fragment)**)
 * **Copy**
 * **Move**
 * **Rename**
-* [**Delete**](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+* **[Delete](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#deleting-a-fragment)**
 
 >[!NOTE]
 >

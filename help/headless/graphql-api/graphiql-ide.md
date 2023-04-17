@@ -17,7 +17,6 @@ An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-o
 >[!NOTE]
 >You must have [configured your endpoints](/help/headless/graphql-api/graphql-endpoint.md) in the [configuration browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) before using the GraphiQL IDE.
 
-
 The **GraphiQL** tool allows you to test and debug your GraphQL queries by enabling you to:
 * select the **Endpoint** appropriate to the Sites configuration that you want to use for your queries
 * directly input new queries 
@@ -25,7 +24,7 @@ The **GraphiQL** tool allows you to test and debug your GraphQL queries by enabl
 * run your queries to immediately see the the results
 * manage **Query Variables** 
 * save, and manage **Persisted Queries**
-* publish, or unpublish, **Persisted Queries** (for example, to/from `dev-publish`)
+* publish, or unpublish, **Persisted Queries**, to either your **Publish** or **Preview** service; for example, to/from `dev-publish`
 * see the **History** of your previous queries
 * use the **Documentation Explorer** to access the documentation; helping you to learn and understand what methods are available.
 
@@ -129,7 +128,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 Once you have selected your persisted query from the list (left panel) you can use the **Publish** and **Unpublish** actions. 
 
-This will activate the query to either your **Publish** environment (for example, `dev-publish`), **Preview** environment for easy access by your applications when testing.
+This will activate the query to (or deactivate from) either your **Publish** environment (for example, `dev-publish`), or your **Preview** environment, for easy access by your applications when testing.
 
 ![GraphiQL -Published Persisted Query](assets/cfm-graphiql-publish.png "GraphiQL - Publish Persisted Query")
 
