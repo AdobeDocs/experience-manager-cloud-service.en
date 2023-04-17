@@ -125,9 +125,13 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 1. Select **Save** to persist the changes.
 
-## Publishing persisted queries {#publishing-persisted-queries}
+## Publishing and previewing persisted queries {#publishing-previewing-persisted-queries}
 
-Once you have selected your persisted query from the list (left panel) you can use the **Publish** and **Unpublish** actions. This will activate them to your publish environment (for example, `dev-publish`) for easy access by your applications when testing.
+Once you have selected your persisted query from the list (left panel) you can use the **Publish** and **Unpublish** actions. 
+
+This will activate the query to either your **Publish** environment (for example, `dev-publish`), **Preview** environment for easy access by your applications when testing.
+
+![GraphiQL -Published Persisted Query](assets/cfm-graphiql-publish.png "GraphiQL - Publish Persisted Query")
 
 >[!NOTE]
 >
