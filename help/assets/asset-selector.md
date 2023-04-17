@@ -258,7 +258,7 @@ Use the `path` property to define the folder name that displays automatically wh
 
 ### Example 2: Metadata popover
 
-Use various properties to define metadata of an asset that you want to view using an info icon. The info popover provides the collection of information about asset or the folder including title, dimensions, date of modification, location, and description of an asset. In the example below, various properties are used to display metadata of an asset, for example, `repo:path` property specifies the location of an asset. `repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the assset or folder is triggered.
+Use various properties to define metadata of an asset that you want to view using an info icon. The info popover provides the collection of information about asset or the folder including title, dimensions, date of modification, location, and description of an asset. In the example below, various properties are used to display metadata of an asset, for example, `repo:path` property specifies the location of an asset. `repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the assset or folder is rendered.
     
    ![metadata-popover-example](assets/metadata-popover.png)
 
