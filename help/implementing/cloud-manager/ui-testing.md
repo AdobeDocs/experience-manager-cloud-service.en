@@ -276,7 +276,7 @@ Tests sometimes must upload files to the application being tested. In order to k
 >
 >For running the functional tests from your local machine, create a user with admin-like permissions to achieve the same behavior.
 
-2. The containerized infrastructure that is scoped for functional testing is limited by the following boundaries:
+1. The containerized infrastructure that is scoped for functional testing is limited by the following boundaries:
 
 | Type    | Value | Description                                                 |
 |---------|-------|-------------------------------------------------------------|
