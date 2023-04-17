@@ -110,6 +110,16 @@ Together with the JSON export capabilities of AEM core components, this structur
 >
 >AEM also supports the translation of fragment content. See [Translating Assets](/help/assets/translate-assets.md) for further information.
 
+## Publish and Preview {#publish-and-preview}
+
+As with all content, eventually you will want to publish your Content Fragments to the **[Publish Service](/help/overview/architecture.md#runtime-architecture)**.
+
+Prior to that, you can also preview an experience delivered using Content Fragments, by [publishing your Content Fragments](help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) to the AEM **[Preview Service](/help/overview/architecture.md#runtime-architecture)**.
+
+>[!CAUTION]
+>
+>Publishing to the **Preview Service** is only available from the **Content Fragments** console.
+
 ## Content Type {#content-type}
 
 Content fragments are:
