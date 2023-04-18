@@ -159,8 +159,8 @@ Some features in the top toolbar are available from multiple modes:
 * The three dots (**...**) drop-down provides access to additional actions:
   * **Update page references**
     * This updates any page references. 
-  * **[Quick publish](#publishing-and-previewing-a-fragment)**
-  * **[Manage Publication](#publishing-and-previewing-a-fragment)**
+  * **[Quick Publish](/help/assets/manage-publication.md#quick-publish)**
+  * **[Manage Publication](/help/assets/manage-publication.md#manage-publication)** 
 
 <!--
 This updates any page references and ensures that the Dispatcher is flushed as required. -->
@@ -241,17 +241,17 @@ You can publish your Content Fragments to:
 
   >[!CAUTION]
   >
-  >Publishing Content Fragments to the **Preview Service** is only available from the **Publish** options in the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
+  >Publishing Content Fragments to the **Preview Service** is only available from the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); using the **Publish** action.
 
   >[!NOTE]
   >
-  >For more details about the preview environments, please see:
+  >For more details about the Preview environments, please see:
   >
   >* [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   >* [Configuring OSGi Settings for the Preview Tier](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
   >* [Debugging Preview Using the Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
-To publish your Content Fragments from the **Publish** option in the toolbar of the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
+To publish your Content Fragments using the **Publish** option in the toolbar of the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
 
 >[!CAUTION]
 >
@@ -273,8 +273,8 @@ To publish your Content Fragments from the **Publish** option in the toolbar of 
 1. Confirm the publish action.
 
 You can also publish to the **Publish Service** from the [Content Fragment Editor](#toolbar-actions-in-the-content-fragment-editor) using:
-* [**Quick Publish**](/help/assets/manage-publication.md#quick-publish)
-* [**Manage Publication**](/help/assets/manage-publication.md#manage-publication) 
+* **Quick Publish**
+* **Manage Publication** 
 
 >[!NOTE]
 >
