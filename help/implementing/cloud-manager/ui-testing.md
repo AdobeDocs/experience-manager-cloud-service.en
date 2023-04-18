@@ -272,6 +272,7 @@ Tests sometimes must upload files to the application being tested. In order to k
 ### Prerequisites {#prerequisites}
 
 1. The tests in Cloud Manager will be executed using a technical admin user.
+
 >[!NOTE]
 >
 >For running the functional tests from your local machine, create a user with admin-like permissions to achieve the same behavior.

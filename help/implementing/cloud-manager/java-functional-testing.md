@@ -1,10 +1,10 @@
 ---
 title: Java Functional Tests
-description: Learn how to write java functional tests for AEM as a Cloud Service
+description: Learn how to write Java functional tests for AEM as a Cloud Service
 ---
 # Java Functional Testing
 
-Learn how to write java functional tests for AEM as a Cloud Service
+Learn how to write Java functional tests for AEM as a Cloud Service
 
 ## Getting Started with Functional Tests {#getting-started-functional-tests}
 
@@ -36,7 +36,7 @@ In addition, the JAR must have the `Cloud-Manager-TestType` manifest header set 
 
 The following is an example configuration for the `maven-assembly-plugin`.
 
-```java
+```XML
 <build>
     <plugins>
         <!-- Create self-contained jar with dependencies -->
@@ -65,6 +65,7 @@ The following is an example configuration for the `maven-assembly-plugin`.
             </executions>
         </plugin>
     </plugins>
+</build>
 ```
 
 Within this JAR file, the class names of the actual tests to be executed must end in `IT`.
@@ -84,6 +85,7 @@ Please refer to the [`aem-testing-clients` GitHub repo](https://github.com/adobe
 ### Prerequisites {#prerequisites}
 
 1. The tests in Cloud Manager will be executed using a technical admin user.
+
 >[!NOTE]
 >
 >For running the functional tests from your local machine, create a user with admin-like permissions to achieve the same behavior.
@@ -115,15 +117,19 @@ However, when running these tests, it will be necessary to set a variety of syst
 
 The system properties are as follows.
 
-* `sling.it.instances - should be set to 2`
-* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
-* `sling.it.instance.runmode.1 - should be set to author`
-* `sling.it.instance.adminUser.1 - should be set to the author admin user, for example, admin`
-* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
-* `sling.it.instance.url.2 - should be set to the publish URL, for example, http://localhost:4503`
-* `sling.it.instance.runmode.2 - should be set to publish`
-* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
-* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+| Property                            | Description                                                      | Example                 |
+|-------------------------------------|------------------------------------------------------------------|-------------------------|
+| `sling.it.instances`                | amount of instances, to match cloud service should be set to `2` | `2`                     |
+| `sling.it.instance.url.1`           | should be set to the author URL                                  | `http://localhost:4502` | 
+| `sling.it.instance.runmode.1`       | runmode of the first instance, should be set to `author`         | `author`                | 
+| `sling.it.instance.adminUser.1`     | should be set to the author admin user.                          | `admin`                 | 
+| `sling.it.instance.adminPassword.1` | should be set to the author admin password.                      |                         | 
+| `sling.it.instance.url.2`           | should be set to the publish URL                                 | `http://localhost:4503` |
+| `sling.it.instance.runmode.2`       | runmode of the second instance, should be set to `publish`       | `publish`               | 
+| `sling.it.instance.adminUser.2`     | should be set to the publish admin user.                         | `admin`                 | 
+| `sling.it.instance.adminPassword.2` | should be set to the publish admin password.                     |                         | 
+
+
 
 #### Running All Tests Using Maven {#using-maven}
 
