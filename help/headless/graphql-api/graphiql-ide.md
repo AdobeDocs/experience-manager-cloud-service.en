@@ -126,15 +126,23 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ## Publishing and previewing persisted queries {#publishing-previewing-persisted-queries}
 
-Once you have selected your persisted query from the list (left panel) you can use the **Publish** and **Unpublish** actions. 
+Once you have selected your persisted query from the list (left panel) you can use the **Publish** action. 
 
-This will activate the query to (or deactivate from) either your **Publish** environment (for example, `dev-publish`), or your **Preview** environment, for easy access by your applications when testing.
+This will activate the query to either your **Publish** environment (for example, `dev-publish`), or your **Preview** environment, for easy access by your applications when testing.
 
 ![GraphiQL -Published Persisted Query](assets/cfm-graphiql-publish.png "GraphiQL - Publish Persisted Query")
 
 >[!NOTE]
 >
 >The definition of the persisted query's cache `Time To Live` {"cache-control":"parameter":value} has a default value of 2 hours (7200 seconds).
+
+## Unpublishing persisted queries {#unpublishing-persisted-queries}
+
+As when publishing, once you have selected your persisted query from the list (left panel) you can use the **Unpublish** action. 
+
+This will deactivate the query from either your **Publish** environment (for example, `dev-publish`), or your **Preview** environment.
+
+You should also ensure that you have made the necessary changes to your client application - to avoid potential issues.
 
 ## Copy URL to directly access the query {#copy-url}
 
