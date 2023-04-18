@@ -28,6 +28,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Release Information](/help/release-notes/home.md)
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
+    + 2023 {#2023}
+      + [Release Notes for 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
     + 2022 {#2022}
       + [Release Notes for 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
       + [Release Notes for 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
@@ -62,10 +64,14 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Release Notes for 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
       + [Release Notes for 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
   + AEMaaCS Maintenance Release Notes {#maintenance}
-    + [Latest Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
+    + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
+    + 2023 {#2023}
+      + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)      
+      + [Release Notes for 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
       + [Release Notes for 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
     + 2022 {#2022}
       + [Release Notes for 2022.12.0](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
@@ -108,6 +114,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2022 {#2022}
+      + [Release Notes for 2022.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-12-0.md)
       + [Release Notes for 2022.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
       + [Release Notes for 2022.7.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
       + [Release Notes for 2022.5.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
@@ -123,7 +130,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
-  + [Known issues](/help/release-notes/known-issues.md)
   + [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md)
   + [Deprecated APIs](/help/release-notes/deprecated-apis.md)
   + [Prerelease Channel](/help/release-notes/prerelease.md)
@@ -134,6 +140,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support.md)
   + [Same Site Cookie Support for AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
+  + [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
 + Onboarding {#onboarding}
   + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
   + Onboarding Journey {#journey}
@@ -158,13 +165,14 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Other Onboarding Concepts {#concepts}
     + [Introduction to Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
     + [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md)
-    + [Notification User Groups](/help/journey-onboarding/user-groups.md)
+    + [Notification Profiles](/help/journey-onboarding/notification-profiles.md)
 + AEMaaCS Trials {#trials}
   + Headless Trials {#headless}
     + [Customize Content in a Sample React App](/help/trials/headless/customize-app.md)
     + [Create the Content Structure for Your App](/help/trials/headless/content-structure.md)
     + [Create Headless Content](/help/trials/headless/create-content.md)
     + [Extract Content via the GraphQL API](/help/trials/headless/extract-content.md)
+    + [Fetch JSON content with JavaScript](/help/trials/headless/code-playground.md)
 + AEM as a Cloud Service Migration Journey {#migration-journey}
   + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/getting-started.md)
   + [Readiness Phase](/help/journey-migration/readiness.md)
@@ -192,16 +200,17 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
       + [Validating Content Transfers](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
       + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+      + [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
       + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
       + [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
       + [Viewing Logs for a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
       + [Deleting a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [Running the Content Transfer Tool on a Publish Instance](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
       + [Troubleshooting Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-      + User Mapping Tool {#user-mapping-tool}
-        + [Overview](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
-        + [Important Considerations](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
-        + [Using User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
+      + Legacy User Mapping Tool (Legacy){#legacy-user-mapping-tool}
+        + [Overview](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
+        + [Important Considerations](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
+        + [Using User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
       + Legacy Content Transfer Tool {#legacy}
         + [Overview](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
         + [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
@@ -357,6 +366,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Integrating with Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
     + [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
     + [IMS Configuration for use when Integrating with Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
+    + [Exporting Content Fragments to Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
     + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
@@ -495,7 +505,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
-    + [Key features](/help/forms/key-features.md)
+    + [Top Adobe Experience Manager Forms innovations](/help/forms/latest-innovations.md)
     + [Notable changes](/help/forms/notable-changes.md)
     + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
     + [Frequently asked questions](/help/forms/faq.md)
@@ -503,9 +513,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Setup and migrate {#setup-configure-migrate}
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
-    + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Configure Unified Storage Connector](/help/forms/configure-unified-storage-connector.md)
-    + [Migrate to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+    + [Migrate from [!DNL AEM 6.5 Forms] or earlier to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
     + [Import, export, and organize Adaptive Forms, PDF forms, and other assets](/help/forms/import-export-forms-templates.md)
   + Integrate {#integrate}
@@ -530,6 +539,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
         + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+        + [Summit Workbook](/help/forms/summit-2023-workbook.md)
     + Authoring Adaptive Forms - Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -538,11 +548,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
         + [Introduction to authoring of an Adaptive Forms](/help/forms/introduction-forms-authoring.md)
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
+        + [Reference themes, templates, and data models](/help/forms/reference-themes-templates-data-models.md)
         + [Create a template](/help/forms/template-editor.md)
         + [Create a theme](/help/forms/themes.md)
-        + [Reference Assets](/help/forms/reference-assets.md)
         + [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)
-        + [Use Forms Designer](/help/forms/use-forms-designer.md)
         + [Improve performance of large forms with lazy loading](/help/forms/lazy-loading-adaptive-forms.md)
       + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
         + [Use CAPTCHA in an Adaptive Form](/help/forms/captcha-adaptive-forms.md)
@@ -582,6 +591,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
     + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+    + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
+    + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
   + Developer API Reference {#aem-forms-developer-api-reference}
@@ -916,6 +927,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Author Tier {#author-tier}
     + [Accessing the Author Tier](/help/implementing/author-tier/accessing-the-author-tier.md)
     + [Securing the Author Tier](/help/implementing/author-tier/securing-the-author-tier.md)
+  + Preview Tier {#preview-tier}
+    + [Configuring OSGi Settings for the Preview Tier](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
   + Content Delivery Overview {#content-delivery}
     + [Content Delivery Flow](/help/implementing/dispatcher/overview.md)
     + [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md)
@@ -931,6 +944,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Maintaining an AEM Connector](/help/connectors/maintain.md)
 + Operations {#operations}
   + [Operations and Maintenance on AEM as a Cloud Service](/help/operations/home.md)
+  + [Notification Center](/help/operations/notification-center.md)
   + [Content Search and indexing](/help/operations/indexing.md)
   + [Content Replication Service](/help/operations/replication.md)
   + [Additional Publish Regions](/help/operations/additional-publish-regions.md)
@@ -949,3 +963,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Accessibility {#accessibility}
     + [AEM as a Cloud Service and the Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
++ Universal Editor {#universal-editor}
+  + [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md)
+  + [Authoring Content with the Universal Editor](/help/implementing/universal-editor/authoring.md)
+  + [Publishing Content with the Universal Editor](/help/implementing/universal-editor/publishing.md)
+  + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
+  + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
+  + [Attributes and Types](/help/implementing/universal-editor/attributes-types.md)
+  + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
