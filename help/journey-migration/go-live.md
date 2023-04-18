@@ -101,7 +101,7 @@ Please take into account that the entire ingestion fails if any of the following
 Compared to the section above the ingestion **does not** fail due to the following asset concerns. However, it is highly recommended you take the appropriate steps in these scenarios:
 
 * Any asset that has the original rendition missing
-* Any folder that has a missing `jcr:content` node
+* Any folder that has a missing `jcr:content` node.
 
 Both of the above items will be identified and reported in the [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) report.
 
@@ -147,7 +147,7 @@ Please review this list of activities to ensure that you perform a smooth and su
     * If you have a very high TTL, updates to your DNS record will take longer to propagate. 
 * Run performance and security tests that meet your business requirements and objectives.
 * Cut over and make sure that the actual go-live is performed without any new deployment or content update.
-* Create Admin Console user Notification Groups. See [User Groups for Notifications](/help/journey-onboarding/user-groups.md)
+* Create Admin Console user Notification Profiles. See [Notification Profiles](/help/journey-onboarding/notification-profiles.md)
 
 You can always reference the list in case you need to recalibrate your tasks while performing the migration.
 

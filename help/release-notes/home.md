@@ -7,7 +7,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2023.1.0 |
+| Version | 2023.2.0 |
 | Type | Continuous Updates |
 | Availability date | Continuous Update |
 
@@ -18,7 +18,7 @@ With the continuous release model in [!DNL Adobe Experience Manager] as a Cloud 
 * [Feature releases](/help/release-notes/release-notes-cloud/release-notes-current.md) are done with a predictable monthly frequency and are focused on new capabilities and product innovations.
 * [Maintenance releases](/help/release-notes/maintenance/latest.md) are done frequently and are focused on security updates, bug fixes, and performance enhancements. This ensures that [!DNL Adobe Experience Manager] as a Cloud Service is always up-to-date with any critical fixes.
 
-In addition to the speed of innovation, [!DNL Adobe Experience Manager] as a Cloud Service also provides the flexibility to preview upcoming features a full month in advance before the features are released into production. This allows you to assess the impact of an upcoming release on their organization by test driving the features in your own custom environment and train/prepare the internal users well in advance. 
+In addition to the speed of innovation, [!DNL Adobe Experience Manager] as a Cloud Service also provides the flexibility to preview upcoming features a full month in advance before the features are released into production. This allows you to assess the impact of an upcoming release on their organization by test driving the features in your own custom environment and train/prepare the internal users well in advance. If you have an AEM add-on, such as forms, you can ensure that it gets updated as well by selecting the solution in the [program settings](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 >[!NOTE]
 >
@@ -33,10 +33,10 @@ To prepare for a release:
 
 ## Key Release Information {#key-articles}
 
-* [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [Feature Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
 * [What is New](what-is-new.md)
 * [Notable Changes](aem-cloud-changes.md)
-* [Known Issues](known-issues.md)
 * [Deprecated and Removed Features](deprecated-removed-features.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
