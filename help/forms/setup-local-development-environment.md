@@ -329,7 +329,7 @@ Your local development environment is ready.
 
 ## Enable Adaptive Forms Core Components for an existing AEM Archetype based project {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
 
-If you using AEM Archetype version 40 or later based program for AEM Forms as a Cloud Service, the Core Components are auto enabled for your environment. 
+If you using AEM Archetype version 40 or later based program for AEM Forms as a Cloud Service, the Core Components are auto enabled for your environment. On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** template and canvas theme is added to your environment. If your AEM SDK version older than 2023.02.0, [ensure that you have `prerelease` flag enabled on your environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) as Adaptive Forms Core Components were part of pre-prelease before the 2023.02.0 release.   
 
 To enable Adaptive Forms Core Components for your AEM Forms as a Cloud Service environment based on older versions of Archetype, embed both WCM Core Component Examples artifacts and Forms Core Component artifacts (including examples) in your project:
 
