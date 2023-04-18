@@ -31,13 +31,13 @@ You can buy a domain name from a domain name registrar, a company or organizatio
 
 There are a number of limitations to using custom domain names with AEMaaCS.
 
-* Custom domain names are supported in Cloud Manager for both publish and preview Services for Sites programs. Custom domains on the author side are not supported.
-* Each Cloud Manager Environment can host up to a maximum of 500 custom domains per environment.
-* AEM as a Cloud Service does not support wildcard domains.
-* Before adding a custom domain name, a valid SSL certificate that contains the custom domain name must be installed for your program. Refer to Adding an SSL Certificate to learn more.
-* Domain names cannot be added to environments while there is a current running pipeline attached to those environments.
+* Custom domain names are supported in Cloud Manager for both publish and preview services for Sites programs. Custom domains for author services are not supported.
+* Each Cloud Manager environment can host up to a maximum of 500 custom domains per environment.
+* Domain names can not be added to environments while there is a current running pipeline attached to those environments.
+* The same domain name can not be used on more than one environment.
 * Only one domain name can be added at a time.
-* The same domain name cannot be used on more than one environment.
+* AEM as a Cloud Service does not support wildcard domains such `*.example.com`.
+* Before adding a custom domain name, a valid SSL certificate that contains the custom domain name (wildcard certificates are valid) must be installed for your program. Please refer to [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) to learn more.
 
 >[!NOTE]
 >
