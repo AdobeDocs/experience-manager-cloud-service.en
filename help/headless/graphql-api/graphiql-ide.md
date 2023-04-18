@@ -128,7 +128,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 Once you have selected your persisted query from the list (left panel) you can use the **Publish** action. 
 
-This will activate the query to either your **Publish** environment (for example, `dev-publish`), or your **Preview** environment, for easy access by your applications when testing.
+This will activate the query to the environment you select. You can choose either your **Publish** environment (for example, `dev-publish`), or your **Preview** environment for easy access by your applications when testing.
 
 ![GraphiQL -Published Persisted Query](assets/cfm-graphiql-publish.png "GraphiQL - Publish Persisted Query")
 
@@ -140,9 +140,11 @@ This will activate the query to either your **Publish** environment (for example
 
 As when publishing, once you have selected your persisted query from the list (left panel) you can use the **Unpublish** action. 
 
-This will deactivate the query from either your **Publish** environment (for example, `dev-publish`), or your **Preview** environment.
+This will deactivate the query from the environment you select; either your **Publish** environment, or your **Preview** environment.
 
-You should also ensure that you have made the necessary changes to your client application - to avoid potential issues.
+>[!NOTE]
+>
+>You should also ensure that you have made the necessary changes to your client application - to avoid potential issues.
 
 ## Copy URL to directly access the query {#copy-url}
 

@@ -293,7 +293,7 @@ When the relevant dialog opens you can select the appropriate service:
 
 >[!NOTE]
 >
->The **Unpublish** action will be visible when published fragments are available.
+>The **Unpublish** action will be only visible when published fragments are available.
 
 >[!CAUTION]
 >
