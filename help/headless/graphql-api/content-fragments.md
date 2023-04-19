@@ -126,12 +126,16 @@ While GraphQL also supports GET requests, these can hit limits (for example the 
 
 You can test and debug GraphQL queries using the [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md).
 
-## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
+## Use Cases for Author, Preview and Publish {#use-cases-author-preview-publish}
 
 The use cases can depend on the type of AEM as a Cloud Service environment:
 
 * Publish environment; used to: 
   * Query data for JS application (standard use-case)
+
+* Preview environment; used to: 
+  * Preview queries prior to deploying on the Publish environment
+    * Query data for JS application (standard use-case)
 
 * Author environment; used to: 
   * Query data for "content management purposes":
