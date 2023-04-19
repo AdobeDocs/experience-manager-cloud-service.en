@@ -20,7 +20,7 @@ Feature enablement for this maintenance release will provide you with the full f
 - GRANITE-44542 - Issues have been reported for customers who did not specify a package nodetype (by providing a .content.xml with jcr:primaryType) for folders included in the package filter. This caused these folders to be treated as nt:folder, creating issues in various cases.
 - SKYOPS-56928 - Apache HTTPD regression might cause 404 errors. If you experience those issues, for safety reasons, it is recommended to rollback to the previous version and to avoid any pipeline running during that time period.
 
-### Embedded Technologies {#embedded-tech-11825}
+### Embedded Technologies {#embedded-tech-11835}
 
 |Technology|Version|Link|
 |---|---|---|
