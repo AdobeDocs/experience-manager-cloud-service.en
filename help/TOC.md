@@ -28,6 +28,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Release Information](/help/release-notes/home.md)
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
+    + 2023 {#2023}
+      + [Release Notes for 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
     + 2022 {#2022}
       + [Release Notes for 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
       + [Release Notes for 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
@@ -68,6 +70,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)      
       + [Release Notes for 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
       + [Release Notes for 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
     + 2022 {#2022}
@@ -137,6 +140,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support.md)
   + [Same Site Cookie Support for AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
+  + [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
 + Onboarding {#onboarding}
   + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
   + Onboarding Journey {#journey}
@@ -168,6 +172,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Create the Content Structure for Your App](/help/trials/headless/content-structure.md)
     + [Create Headless Content](/help/trials/headless/create-content.md)
     + [Extract Content via the GraphQL API](/help/trials/headless/extract-content.md)
+    + [Fetch JSON content with JavaScript](/help/trials/headless/code-playground.md)
 + AEM as a Cloud Service Migration Journey {#migration-journey}
   + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/getting-started.md)
   + [Readiness Phase](/help/journey-migration/readiness.md)
@@ -361,6 +366,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Integrating with Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
     + [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
     + [IMS Configuration for use when Integrating with Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
+    + [Exporting Content Fragments to Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
     + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
@@ -921,6 +927,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Author Tier {#author-tier}
     + [Accessing the Author Tier](/help/implementing/author-tier/accessing-the-author-tier.md)
     + [Securing the Author Tier](/help/implementing/author-tier/securing-the-author-tier.md)
+  + Preview Tier {#preview-tier}
+    + [Configuring OSGi Settings for the Preview Tier](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
   + Content Delivery Overview {#content-delivery}
     + [Content Delivery Flow](/help/implementing/dispatcher/overview.md)
     + [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md)
