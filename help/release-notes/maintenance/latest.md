@@ -7,13 +7,13 @@ description: Current Maintenance Release Notes of [!DNL Adobe Experience Manager
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 11825 {#release-11825}
+## Release 11835 {#release-11835}
  
-Summarized below are the continuous improvements for maintenance release 11825, which was publicly released on April 19, 2023. This maintenance release is an update from previous maintenance release 11382.
+Summarized below are the continuous improvements for maintenance release 11835, which was publicly released on April 19, 2023. This maintenance release is an update from previous maintenance release 11382.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
-### Fixed Issues {#fixed-issues-11825}
+### Fixed Issues {#fixed-issues-11835}
 
 - SITES-12573 - GraphQL queries using variables inside of a filter will fail if one variable is not specified. Please do not update to this release shall you use GraphQL with AEM as a Cloud Service.
 - SKYOPS-51970 - Identified regression of the FACT version used in the buildImage step, leading to un-matching user mapping.
