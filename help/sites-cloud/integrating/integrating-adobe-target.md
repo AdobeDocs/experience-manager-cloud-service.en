@@ -12,7 +12,9 @@ As part of the Adobe Marketing Cloud, Adobe Target lets you increase content rel
 * using the Touch UI to create a Target Configuration in AEM as a Cloud Service (IMS configuration required).
 * adding and configuring Adobe Target as an extension in [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
-Adobe Launch is necessary for managing client-side properties for both Analytics and Target in AEM pages (JS libraries/tags). That said, the integration with Launch is needed for "experience targeting". For the Experience Fragments export to Target, you only need the Adobe Target Configuration and IMS.
+Adobe Launch is necessary for managing client-side properties for both Analytics and Target in AEM pages (JS libraries/tags). That said, the integration with Launch is needed for "experience targeting". 
+
+For the export of Experience Fragments and/or Content Fragments to Target, you only need the [Adobe Target Configuration and IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
 
 >[!NOTE]
 >
