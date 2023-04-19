@@ -309,7 +309,7 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
 
     * From the **Content Fragments** Console
 
-      * [Publishing and Previewing a Content Fragment](help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
+      * [Publishing and Previewing a Content Fragment](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
 
   * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
