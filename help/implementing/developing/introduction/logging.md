@@ -491,7 +491,7 @@ Define DISP_LOG_LEVEL debug
 
 >[!NOTE]
 >
->For production environments, it is recommended that you do not set the log level to trace.
+>For AEM as a Cloud Service environments, debug is the maximal verbosity level. The trace log level is not supported and you should not set it when working in cloud environments.
 
 ## How to Access Logs {#how-to-access-logs}
 

@@ -447,8 +447,7 @@ Logs for cloud environments are exposed through the logging service available in
 
 >[!NOTE]
 >
->For production environments, it is recommended that you do not set the log level to trace.
-
+>For AEM as a Cloud Service environments, debug is the maximal verbosity level. The trace log level is not supported and you should not set it when working in cloud environments.
 
 ### Automatic reloading and validation {#automatic-reloading}
 
