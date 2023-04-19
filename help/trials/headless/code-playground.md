@@ -63,13 +63,13 @@ Finally, the function `fetchJsonFromGraphQL()` is used to perform the fetch requ
 
 On line 25 we indicate which GraphQL persisted query the app should fetch data from. The persisted query name is a combination of the name of the project (ie. `your-project`), followed by a forward slash, and then the name of the query. 
 
-1. Update the `persistedQueryName` variable to use the persisted query you created in the previous module. If you followed the naming suggestion exactly you would have created a persisted query named `adventures` in the `your-project` project, and you would set the `persistedQueryName` variable to `your-project/adventures`:
+1. Update the `persistedQueryName` variable to use the persisted query you created in the previous module. If you followed the naming suggestion exactly you would have created a persisted query named `adventure-list` in the `your-project` project, and you would set the `persistedQueryName` variable to `your-project/adventure-list`:
 
 ```javascript
 //
 // TODO: Use your persisted query here
 //
-persistedQueryName = 'your-project/adventures';
+persistedQueryName = 'your-project/adventure-list';
 ```
 
 1. Once this change is made the app should automatically refresh, and print the raw JSON response from your persisted query to the `#output` div. If you see an error message, check the console for additional details. Reach out to us [on Slack](https://adobe-dx-support.slack.com) if you are still having issues with this step.
