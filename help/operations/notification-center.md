@@ -2,8 +2,8 @@
 title: Notification Center
 description: Leverage the Notification Center to conveniently take action on incidents and other important information
 hidefromtoc: yes
+exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 ---
-
 # Notification Center {#notification-center}
 
 >[!NOTE]
