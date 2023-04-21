@@ -57,8 +57,10 @@ The Content Fragment Model editor is where you configure the data types and prop
 
 1. Once a data type is placed, the **Data Types** column automatically changed to the **Properties** tab, where you can define the details of the data type you just placed. For this first field, we want to store the title of the trip or adventure. Enter the following properties.
 
-   * **Render As:** Text Field
-   * **Field Label:** Title
+   * **Render As:** **Text Field** - When you create an adventure, this field will store the title of the adventure.
+   * **Field Label:** `Title` - This is the label that is displayed for this field when creating a new adventure.
+
+1. Once you define the properties of the field you can switch back to the **Data Types** tab in the right panel and add additional fields by dragging and dropping.
 
 In this way, you can add as many fields as necessary to your model to support whatever kind of data structure you may need. The types of data fields vary, but the process of adding them to your model remains the same.
 
@@ -68,7 +70,7 @@ Continue on to the next section to add the fields necessary to complete the **Ad
 
 ## Add Fields to the Model {#additional-fields}
 
-We already have a field for the title of the adventure. Now we need to add fields to capture the description, duration, and type of the trip.
+We already have a field for the title of the adventure. Now we need to add fields to capture the description, price, itinerary, and a representative image of the trip.
 
 >[!TIP]
 >
@@ -78,20 +80,23 @@ Follow the same steps as above to add these additional fields. The only differen
 
 1. Add a field to store the description of the adventure by dragging and dropping a **Multi line text** field and enter the following properties:
 
-   * **Render As:** Text Area
-   * **Field Label:** Description
-   * **Description:** An overview of the trip
-
-1. Add a field to store the type of trip. This field will provide a list of predefined values, known as an enumeration. Drag and drop an **Enumeration** field and enter the following properties:
-
-   * **Render As:** Drop down
-   * **Field Label:** Trip type
-   * Options: add the following options: Day Trip, Overnight Trip
+   * **Render As:** **Text Area** - When you create an adventure, this field will store a brief description of the trip.
+   * **Field Label:** `Description` - This is the label that is displayed for this field when creating a new adventure.
 
 1. Add a field to store the price of the adventure by dragging and dropping a **Single line text** field and enter the following properties:
 
-   * **Render As:** Text field
-   * **Field Label:** Price
+   * **Render As:** **Text field** - When you create an adventure, this field will store the price of the trip.
+   * **Field Label:** `Price` - This is the label that is displayed for this field when creating a new adventure.
+
+1. Add a field to store the detailed itinerary of the adventure by dragging and dropping a **Multi line text** field and enter the following properties:
+
+   * **Render As:** **Text Area** - When you create an adventure, this field will store the itinerary of the trip.
+   * **Field Label:** `Itinerary` - This is the label that is displayed for this field when creating a new adventure.
+
+1. Add a field to store an image representing the trip. Images in AEM are stored as another type of content called **Assets**. So to create a field for them you need to drag and drop a **Content reference** field that will reference the asset of the image.
+
+   * **Render As:** **Content Reference** - When you create an adventure, this field will point to the image asset representing this trip.
+   * **Field Label:** `Image` - This is the label that is displayed for this field when creating a new adventure.
 
 1. Once you have added all of the fields necessary for the Content Fragment model, click **Save** at the top-right of the window.
 
