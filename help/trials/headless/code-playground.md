@@ -24,16 +24,25 @@ index: no
 
 ## CodePen app {#codepen-app}
 
-You begin in the CodePen app, which serves as a minimal example of fetching JSON data using the [AEM Headless Client for JavaScript](https://github.com/adobe/aem-headless-client-js). The sample app is designed to render any JSON content which is returned, regardless of the structure of the underlying content fragment model. The CodePen app tries to be verbose with any errors that are encountered, so you may see the following error message printed to the bottom pane of the app:
+CodePen is an online code editor and playground for front-end web development. It allows you to write HTML, CSS, and JavaScript code in your browser, and see the results of your work almost instantly. You can also save your work and share it with others. We've created a CodePen app that you can use to fetch JSON data from your trial environment using the [AEM Headless Client for JavaScript](https://github.com/adobe/aem-headless-client-js). You can use this app as-is, or fork it into your own CodePen account to customize further.
+
+Clicking the "Launch" button above will take you to the CodePen app, which serves as a minimal example of fetching JSON data with JavaScript. The sample app is designed to render any JSON content which is returned, regardless of the structure of the underlying Content Fragment model. Out of the box, the app will fetch data from an `aem-demo-assets` Persisted Query that is included in your trial environment. You should see a JSON response similar to the following:
 
 ```
 {
-  "status": "Failed to fetch persisted query: your-project/USE-YOUR-QUERY-HERE from publishHost: ...",
-  "message": "[AEMHeadless:REQUEST_ERROR] General Request error: Failed to fetch."
-}
+  "data": {
+    "adventureList": {
+      "items": [
+        {
+          "_path": "/content/dam/aem-demo-assets/en/adventures/bali-surf-camp/bali-surf-camp",
+          "title": "Bali Surf Camp",
+          "price": "$5000 USD",
+          ...
 ```
 
-This error is expected, as the app is not yet configured to use the persisted query that you saved and published in a previous module. You will configure the app to fetch data from your specific query in the following steps.
+If you see an error instead, check the browser console for more detail or reach out to us [on Slack](https://adobe-dx-support.slack.com). 
+
+Next, you will configure the app to fetch data from the Persisted Query you created in a previous module.
 
 ## JavaScript code walkthrough {#code-walkthrough}
 
@@ -61,9 +70,9 @@ Finally, the function `fetchJsonFromGraphQL()` is used to perform the fetch requ
 
 ## Fetch data from your persisted query {#use-persisted-query}
 
-On line 25 we indicate which GraphQL persisted query the app should fetch data from. The persisted query name is a combination of the name of the project (ie. `your-project`), followed by a forward slash, and then the name of the query. 
+On line 25 we indicate which GraphQL persisted query the app should fetch data from. The persisted query name is a combination of the name of the endpoint (ie. `your-project` or `aem-demo-assets`), followed by a forward slash, and then the name of the query. If you followed the earlier module instructions exactly, the Persisted Query you created will be in the `your-project` endpoint.
 
-1. Update the `persistedQueryName` variable to use the persisted query you created in the previous module. If you followed the naming suggestion exactly you would have created a persisted query named `adventure-list` in the `your-project` project, and you would set the `persistedQueryName` variable to `your-project/adventure-list`:
+1. Update the `persistedQueryName` variable to use the persisted query you created in the previous module. If you followed the naming suggestion you would have created a persisted query named `adventure-list` in the `your-project` endpoint, and you would set the `persistedQueryName` variable to `your-project/adventure-list`:
 
 ```javascript
 //
@@ -74,7 +83,7 @@ persistedQueryName = 'your-project/adventure-list';
 
 1. Once this change is made the app should automatically refresh, and print the raw JSON response from your persisted query to the `#output` div. If you see an error message, check the console for additional details. Reach out to us [on Slack](https://adobe-dx-support.slack.com) if you are still having issues with this step.
 
-1. Does this JSON contain the exact properties your app needs? If not, head back to your AEM Author environment, Tools, GraphQL Query Editor (or navigate to the `/aem/graphiql.html` path) and make changes to your persisted query. Don't forget to save and publish the query once you are done.
+1. Does this JSON contain the exact properties your app needs? If not, head back to the [Extract content using the GraphQL API](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql) learning guide to make changes. Don't forget to save and publish your query once you are done.
 
 ## Change the JSON rendering {#change-rendering}
 
@@ -99,3 +108,5 @@ persistedQueryName = 'aem-demo-assets/adventures-all';
 This query will yield a JSON response that includes images, and the `resultToDom()` function will render them inline.
 
 ![Result of the adventures-all query and the resultToDom rendering function](assets/do-not-localize/adventures-all-query-result.png)
+
+Now that you've done the work to build the models and queries, your content team can take over with ease. We'll show off the content author flow in the next module.
