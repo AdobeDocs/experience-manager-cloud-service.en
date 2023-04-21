@@ -53,7 +53,7 @@ Once you save and open your new Content Fragment, the Content Fragment editor op
 
 1. Provide a **Title** for your fragment by entering `Tuscan adventure`.
 
-1. Provide a **Description** for your fragment by pasting in the following text: `Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour will be rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality.  Tuscany’s natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
+1. Provide a **Description** for your fragment by pasting in the following text: `Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour will be rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality.  Tuscany’s natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.`
 
 1. Provide a **Price** for your fragment by entering in `$700`.
 
