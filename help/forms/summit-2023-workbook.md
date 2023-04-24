@@ -6,8 +6,8 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: yes
 hidefromtoc: yes
+exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
 ---
-
 # Build Engaging Forms Using Core Components and Headless
 
 ## Lab Overview
@@ -679,5 +679,3 @@ Now that you have learned how to build adaptive forms and deliver them to multip
 *   [Headless adaptive forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=en)
 
 *   [Using Headless React starter kit](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=en)
-
-
