@@ -88,11 +88,6 @@ Follow the same steps as above to add these additional fields. The only differen
    * **Render As:** **Text field** - When you create an adventure, this field will store the price of the trip.
    * **Field Label:** `Price` - This is the label that is displayed for this field when creating a new adventure.
 
-1. Add a field to store the detailed itinerary of the adventure by dragging and dropping a **Multi line text** field and enter the following properties:
-
-   * **Render As:** **Text Area** - When you create an adventure, this field will store the itinerary of the trip.
-   * **Field Label:** `Itinerary` - This is the label that is displayed for this field when creating a new adventure.
-
 1. Add a field to store an image representing the trip. Images in AEM are stored as another type of content called **Assets**. So to create a field for them you need to drag and drop a **Content Reference** field that will reference the asset of the image.
 
    * **Render As:** **Content Reference** - When you create an adventure, this field will point to the image asset representing this trip.
