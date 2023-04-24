@@ -1,8 +1,8 @@
 ---
 title: Current Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 ---
-
 # Maintenance Release Notes {#maintenance-release-notes}
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
