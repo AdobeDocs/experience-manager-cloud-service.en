@@ -380,11 +380,17 @@ You can [configure the OSGi settings](/help/implementing/deploying/configuring-o
 >
 >The **Persisted Query Service Configuration** is also used for [managing cache](#cache-osgi-configration).
 
-The field `Respond with application/graphql-response+json` can be defined as required:
+The field `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) can be defined as required:
 
-* If the setting is `false` (the default value) then it does not matter whether the persisted query is successful or not. The `/execute.json/persisted-query` will return the status code `200` and the Content-Type header returned will be `application/json`.
+* `false` (default value):
+  It does not matter whether the persisted query is successful or not. The `/execute.json/persisted-query` will return the status code `200` and the `Content-Type` header returned will be `application/json`.
 
-* If the setting is `true` the endpoint will return `400` when there is some form error upon running the persisted query. Also the returned Content-Type will be `application/graphql-response+json`.
+* `true`:
+  The endpoint will return `400` when there is any form of error upon running the persisted query. Also the returned `Content-Type` will be `application/graphql-response+json`.
+
+  >[!NOTE]
+  >
+  >For further details see https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
