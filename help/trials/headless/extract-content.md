@@ -64,7 +64,7 @@ You've just validated a list query for a full list of all Content Fragments. Thi
 
 >[!NOTE]
 >
->If you are not able to select the **AEM Demo Assets** endpoint from the drop-down, please contact Adobe Customer Care.
+>If you are not able to select the **AEM Demo Assets** endpoint from the drop-down, please contact Adobe Customer Care or reach out on the [AEM Trials Slack channel.](https://adobe-dx-support.slack.com/)
 
 ## Query for a Specific Piece of Sample Content {#bypath-query}
 
@@ -127,7 +127,7 @@ Now that you have run the two primary types of queries, you are ready to query y
 
 This is how your content can be delivered to omnichannel digital experiences.
 
-## Persistent Query {#persistent-query}
+## Persisted Query {#persisted-query}
 
 Persisted queries are the preferred mechanism for exposing the GraphQL API to client applications. Once a query has been persisted, it can be requested using a GET request and cached for fast retrieval.
 
@@ -178,5 +178,9 @@ You will create a persisted query that includes data you would like to consume f
 1. In the **Query name** pop-up, give your query the name `adventure-list` and click **Save As**.
 
 1. The query is persisted as confirmed by a banner message at the bottom of the screen. The query also now appears in the left panel of persisted queries in the window.
+
+1. In order for the persisted query to be available publicly, it will need to be published, much like how your Content Fragments need to be published. Click the **Publish** button at the top right of the query editor to publish the query.
+
+1. The publication is confirmed by a banner notification.
 
 You now have a new persisted query which will contain only the specific properties and formats that you defined.
