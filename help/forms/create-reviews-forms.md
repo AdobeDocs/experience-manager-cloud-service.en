@@ -1,9 +1,10 @@
 ---
 title: Creating and managing reviews in forms
 seo-title: Creating and managing reviews in forms
-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form. 
-seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form. 
+description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
+seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 topic-tags: forms-manager
+exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 ---
 # Creating and managing reviews for assets in forms{#creating-and-managing-reviews-for-assets-in-forms}
 
@@ -105,5 +106,3 @@ This section describes, what happens on Review Update/End:
     1. **Initiator**: The task assigned to the Review initiator is marked complete. The task is removed from the Notification section of the review initiator.
     1. **All**: The review appears in the Previous Reviews section. No further comments can be added.
 ![review complete](assets/review-complete-imgg.png)
-   
-
