@@ -1,8 +1,8 @@
 ---
 title: Configuring OSGi Settings for the Preview Tier
 description: Learn how to configure the AEM preview service to preview content before going live.
+exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
 ---
-
 # Configuring OSGi Settings for the Preview Tier {#configure-osgi-preview-tier}
 
 AEM offers a Sites preview service that lets developers and content authors preview a website's final experience before it reaches the publish environment and is available publicly.
