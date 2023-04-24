@@ -1,8 +1,8 @@
 ---
-title: Updating your Content Fragments for Optimized GraphQL Filtering 
+title: Updating your Content Fragments for Optimized GraphQL Filtering
 description: Learn how to update your Content Fragments for Optimized GraphQL Filtering in Adobe Experience Manager as a Cloud Service for headless content delivery.
+exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 ---
-
 # Updating your Content Fragments for optimized GraphQL Filtering {#updating-content-fragments-for-optimized-graphql-filtering}
 
 To optimize the performance of your GraphQL filters you need to run a procedure to update your Content Fragments.
@@ -204,4 +204,4 @@ Please be aware of the following limitations:
 
 * Optimization of the performance of GraphQL filters will only be possible after a complete update of all your Content Fragments (indicated by the presence of the `cfGlobalVersion` property for the JCR node `/content/dam`)
 
-* If Content Fragments are imported from a content package (using `crx/de`) after the update procedure is run, then those Content Fragments will not be considered in the GraphQL query results, until the update procedure is executed again. 
+* If Content Fragments are imported from a content package (using `crx/de`) after the update procedure is run, then those Content Fragments will not be considered in the GraphQL query results, until the update procedure is executed again.

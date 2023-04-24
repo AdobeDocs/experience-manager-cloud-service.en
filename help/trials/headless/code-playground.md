@@ -3,8 +3,8 @@ title: Fetch JSON content with JavaScript
 description: Explore fetching JSON content from your trial environment with a CodePen app and the AEM Headless Client for JavaScript.
 hidefromtoc: yes
 index: no
+exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 ---
-
 # Fetch JSON content with JavaScript {#fetch-json}
 
 >[!CONTEXTUALHELP]
