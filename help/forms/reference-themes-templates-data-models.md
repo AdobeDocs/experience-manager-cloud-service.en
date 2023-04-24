@@ -3,6 +3,7 @@ title: Reference Themes, Templates, and Form Data models
 seo-title: Reference Themes, Templates, and Form Data models
 description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
 seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
+exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 ---
 # Reference Themes, Templates, and Form Data models {#reference-themes-templates-and-data-models}
 
@@ -113,9 +114,3 @@ You can get the following Form Data Models by installing the [Reference content 
 * Salesforce 
 
 For information on using these models, see [Configure Microsoft Dynamics 365 and Salesforce cloud services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
-
-
-
-
-
-
