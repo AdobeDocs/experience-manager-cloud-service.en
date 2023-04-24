@@ -1,8 +1,8 @@
 ---
 title: Authoring Content with the Universal Editor
 description: Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
+exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 ---
-
 # Authoring Content with the Universal Editor {#authoring}
 
 Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
