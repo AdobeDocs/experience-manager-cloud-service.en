@@ -13,6 +13,8 @@ Summarized below are the continuous improvements for maintenance release X, whic
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
+### Enhancements {#enhancements}
+
 ### Known Issues {#known-issues-x}
 
 ### Fixed Issues {#fixed-issues-x}
