@@ -35,17 +35,17 @@ In this module you will create a new Content Fragment based on that model by usi
 
 1. In the **Content Fragment model** drop-down, select the **Adventure** Content Fragment model you created previously.
 
-1. Add `Tuscany` as a descriptive **Title** for the Content Fragment. This is to identify your fragment in the console in a new browser tab.
+1. Add `Tuscany` as a descriptive **Title** for the Content Fragment. This is to identify your fragment in the console.
 
 1. Tap or click **Create and open**.
 
-![Creating a new Content Fragment](assets/do-not-localize/create-content-3-4-5.png)
+![Creating a new Content Fragment](assets/do-not-localize/create-content.png)
 
 >[!TIP]
 >
 >Depending on your browser settings, the new browser tab might be suppressed by a pop-up blocker. If your new fragment does not open after clicking **Create and open**, please check your browser settings.
 
-## Add Content to your Content Fragment {#add-content}
+## Add Content to Your Content Fragment {#add-content}
 
 Once you save and open your new Content Fragment, the Content Fragment editor opens on a new tab. Here you can add the content of your new fragment.
 
@@ -79,11 +79,11 @@ Once you save and open your new Content Fragment, the Content Fragment editor op
 
 1. Once you are finished adding content, tap or click the **Publish** button at the top-right of the editor. This makes your Content Fragment available for consumption by external apps. Then select **Now** from the drop-down. You can also schedule it to publish at a later time.
 
-   ![Create content](assets/do-not-localize/add-content-1-2.png)
+   ![Publish content](assets/do-not-localize/publish.png)
 
 1. The **Publish Content Fragments** dialog appears. AEM automatically performs a reference check to make sure that all necessary resources are published for your Content Fragment. In this case, you will also need to publish the model that you created. Tap or click **Publish**.
 
-   ![Publish and reference check](assets/do-not-localize/publish-4.png)
+   ![Publish and reference check](assets/do-not-localize/publish-confirm.png)
 
 1. The publication is confirmed in a banner.
 
