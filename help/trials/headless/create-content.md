@@ -63,12 +63,13 @@ Once you save and open your new Content Fragment, the Content Fragment editor op
 
 1. Provide an **Image** that is representative of the trip.
 
-   1. Under the **Image** field, click **Add asset**.
-   1. Magic happens.
+   1. In the **Image** field, tap or click **Add asset**.
+   1. In the asset pop-up, tap or click **Browse Assets** to select from an existing asset in the assets library.
+   1. The **Select Asset** dialog opens. Using the tree navigator in the left panel, navigate to **All assets** &gt; **aem-demo-assets** &gt; **en** &gt; **adventures** &gt; **cycling-tuscany**.
+   1. The contents of the **cycling-tuscany** folder are displayed to the right. Select the image `ADOBESTOCK_141786166.JPEG` and tap or click **Select**.
+   1. The selected image is shown in the content fragment. The editor automatically saves the changes.
 
-Once you are finished adding content, tap or click the **Publish** button at the top-right of the editor. This makes your Content Fragment available for consumption by external apps. 
-
-1. Select **Now** from the drop-down. You can also schedule it to publish at a later time.
+1. Once you are finished adding content, tap or click the **Publish** button at the top-right of the editor. This makes your Content Fragment available for consumption by external apps. Then select **Now** from the drop-down. You can also schedule it to publish at a later time.
 
    ![Create content](assets/do-not-localize/add-content-1-2.png)
 
