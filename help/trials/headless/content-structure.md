@@ -1,6 +1,6 @@
 ---
 title: Create the Content Structure for Your App
-description: Learn how to use AEM's Content Fragment models to create your content structure, which serves as the foundation for all of your headless content.
+description: Learn how to use AEM's Content Fragment models to create your content structure, which serves as the foundation for your headless content.
 hidefromtoc: yes
 index: no
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
