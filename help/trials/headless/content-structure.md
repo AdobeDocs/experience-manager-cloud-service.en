@@ -41,7 +41,7 @@ For our example, we will create a model that represents the data structure of a 
 
 1. The **Success** dialog confirms that the model was created. Click **Open** in the dialog to open your new Content Fragment Model in the editor in a new tab. Then continue on to the next step to adding data fields to your model.
 
-![Steps two and three of creating a Content Fragment model](assets/do-not-localize/create-model-2-3.png)
+![Steps two and three of creating a Content Fragment model](assets/do-not-localize/create-model.png)
 
 ## Using the Model Editor {#configure-model}
 
@@ -62,15 +62,17 @@ The Content Fragment Model editor is where you configure the data types and prop
 
 1. Once you define the properties of the field you can switch back to the **Data Types** tab in the right panel and add additional fields by dragging and dropping.
 
+1. Tap or click **Save** to save your model.
+
 In this way, you can add as many fields as necessary to your model to support whatever kind of data structure you may need. The types of data fields vary, but the process of adding them to your model remains the same.
 
 Continue on to the next section to add the fields necessary to complete the **Adventure** model.
 
-![Steps one, two, and three of adding fields to the model](assets/do-not-localize/define-model-fields-1-2-3.png)
+![Steps one, two, and three of adding fields to the model](assets/do-not-localize/define-model-fields.png)
 
 ## Add Fields to the Model {#additional-fields}
 
-We already have a field for the title of the adventure. Now we need to add fields to capture the description, price, itinerary, and a representative image of the trip.
+You already have a field for the title of the adventure. Now you need to add fields to capture the description, price, and a representative image of the trip.
 
 >[!TIP]
 >
