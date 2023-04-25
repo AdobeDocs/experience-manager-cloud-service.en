@@ -7,20 +7,17 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 11835 {#release-11835}
+## Release X {#release-x}
  
-Summarized below are the continuous improvements for maintenance release 11835, which was publicly released on April 19, 2023. This maintenance release is an update from previous maintenance release 11382.
+Summarized below are the continuous improvements for maintenance release X, which was publicly released on April X, 2023. This maintenance release is an update from previous maintenance release 11835.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
-### Fixed Issues {#fixed-issues-11835}
+### Known Issues {#known-issues-x}
 
-- SITES-12573 - GraphQL queries using variables inside of a filter will fail if one variable is not specified. Please do not update to this release shall you use GraphQL with AEM as a Cloud Service.
-- SKYOPS-51970 - Identified regression of the FACT version used in the buildImage step, leading to un-matching user mapping.
-- GRANITE-44542 - Issues have been reported for customers who did not specify a package nodetype (by providing a .content.xml with jcr:primaryType) for folders included in the package filter. This caused these folders to be treated as nt:folder, creating issues in various cases.
-- SKYOPS-56928 - Apache HTTPD regression might cause 404 errors. If you experience those issues, for safety reasons, it is recommended to rollback to the previous version and to avoid any pipeline running during that time period.
+### Fixed Issues {#fixed-issues-x}
 
-### Embedded Technologies {#embedded-tech-11835}
+### Embedded Technologies {#embedded-tech-x}
 
 |Technology|Version|Link|
 |---|---|---|
