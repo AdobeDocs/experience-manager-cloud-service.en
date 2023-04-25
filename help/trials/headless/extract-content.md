@@ -170,9 +170,15 @@ You will create a persisted query that includes data you would like to consume f
 
 1. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
 
+   ![Create own query](assets/do-not-localize/own-query.png)
+
 1. When satisfied with your query, click the **Save As** button at the top of the query editor to persist the query.
 
-1. In the **Query name** pop-up, give your query the name `adventure-list` and click **Save As**.
+1. In the **Query name** pop-up, give your query the name `adventure-list`.
+
+1. Tap or click **Save As**.
+
+   ![Persist query](assets/do-not-localize/persist-query.png)
 
 1. The query is persisted as confirmed by a banner message at the bottom of the screen. The query also now appears in the left panel of persisted queries in the window.
 
