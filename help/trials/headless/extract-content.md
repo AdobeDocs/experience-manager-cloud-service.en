@@ -127,7 +127,7 @@ Now that you have run the two primary types of queries, you are ready to query y
 
 This is how your content can be delivered to omnichannel digital experiences.
 
-## Persisted Query {#persisted-query}
+## Persisted Queries {#persisted-queries}
 
 Persisted queries are the preferred mechanism for exposing the GraphQL API to client applications. Once a query has been persisted, it can be requested using a GET request and cached for fast retrieval.
 
