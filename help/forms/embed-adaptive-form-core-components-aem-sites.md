@@ -5,6 +5,7 @@ description: You can use Adaptive Form (Core Components) in an AEM Sites page to
 feature: Adaptive Forms
 hide: yes
 hidefromtoc: yes
+exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
 ---
 # Add Adaptive Forms to an AEM Sites page {#add-an-adaptive-form-to-aem-sites-page}
 
@@ -265,4 +266,3 @@ To modify any configuration or property of the embedded Adaptive Form, do one of
 ![AF-layout-support](/help/forms/assets/afsite-layoutsupport.gif)
 
 AEM sites page maintains a reference to the Adaptive Form. When you translate an AEM Sites page, it automatically translates an Adaptive Form and its associated referenced assets using the [translation projects](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) into other languages.
-
