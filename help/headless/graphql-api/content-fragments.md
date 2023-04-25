@@ -689,7 +689,7 @@ query {
 
 >[!NOTE]
 >
->* By default paging use the UUID of the repository node representing the fragment for ordering to ensure the order of results is always the same. When `sort` is used, the UUID is implicitly used to ensure a unique sort; even for two items with identical sort keys.
+>* By default, paging uses the UUID of the repository node representing the fragment for ordering to ensure the order of results is always the same. When `sort` is used, the UUID is implicitly used to ensure a unique sort; even for two items with identical sort keys.
 >
 >* Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. This is also the recommended way if you want to query large paginated result sets.
 
@@ -899,6 +899,9 @@ The following limitations exist:
 
 The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
 
+* If you require a single result:
+  * use the model name; eg city
+
 * If you expect a list of results:
   * add `List` to the model name; for example,  `cityList`
   * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
@@ -916,13 +919,6 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
     * [A Paginated query with first and after](#paginated-first-after)
   * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
-* If you require a single result:
-  * use the model name; eg city
-
-* If you expect a list of results:
-  * add `List` to the model name; for example,  `cityList`
-  * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
-  
 * If you want to use a logical OR:
   * use ` _logOp: OR`
   * See [Sample Query - All Persons that have a name of "Jobs" or "Smith"](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
