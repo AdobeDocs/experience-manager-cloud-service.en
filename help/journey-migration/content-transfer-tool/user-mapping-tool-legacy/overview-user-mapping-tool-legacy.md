@@ -5,7 +5,7 @@ exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: yes
 hidefromtoc: yes
 ---
-# Overview to User Mapping Tool {#overview-user-mapping-tool}
+# Overview to User Mapping Tool (Legacy) {#overview-user-mapping-tool}
 
 
 <!-- Alexandru: drafting this for now
