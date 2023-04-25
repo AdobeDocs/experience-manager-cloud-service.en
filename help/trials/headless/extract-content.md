@@ -153,9 +153,6 @@ You will create a persisted query that includes data you would like to consume f
              mimeType
            }
          }
-         itinerary {
-           plaintext
-         }
        }
      }
    }
