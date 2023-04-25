@@ -1,12 +1,12 @@
 ---
-title: Render your content in a simple app
+title: Render Your Content in a Simple App
 description: Explore fetching JSON content from your trial environment with a CodePen example app and the AEM Headless Client for JavaScript.
 hidefromtoc: yes
 index: no
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 ---
 
-# Render your content in a simple app {#render-content-simple-app}
+# Render Your Content in a Simple App {#render-content-simple-app}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript"
@@ -23,7 +23,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 >title="In this module, you learned how to use the AEM Headless Client for JavaScript to fetch JSON data from your trial environment using GraphQL persisted queries.<br><br>Now you understand how you can use this client to consume data from within your own web application."
 >abstract=""
 
-## CodePen app {#codepen-app}
+## CodePen {#codepen}
 
 CodePen is an online code editor and playground for front-end web development. It allows you to write HTML, CSS, and JavaScript code in your browser, and see the results of your work almost instantly. You can also save your work and share it with others. We've created a CodePen app that you can use to fetch JSON data from your trial environment using the [AEM Headless Client for JavaScript](https://github.com/adobe/aem-headless-client-js). You can use this app as-is, or fork it into your own CodePen account to customize further.
 
@@ -45,7 +45,7 @@ If you see an error instead, check the browser console for more detail or reach 
 
 Next, you will configure the app to fetch data from the Persisted Query you created in a previous module.
 
-## JavaScript code walkthrough {#code-walkthrough}
+## JavaScript Code Walkthrough {#code-walkthrough}
 
 The JS (Javascript) pane on CodePen contains the brains of the example app. Beginning on line 2, we import the AEM Headless Client for JavaScript from the Skypack CDN. Skypack is used to facilitate development without a build step, but you can also use the AEM Headless Client with NPM or Yarn in your own projects. Check out the usage instructions in the [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) for further detail.
 
@@ -69,7 +69,7 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 Finally, the function `fetchJsonFromGraphQL()` is used to perform the fetch request using the AEM Headless Client. It is called each time the code is changed, or can be triggered by pressing the "Refetch" link. The actual `aemHeadlessClient.runPersistedQuery(..)` call occurs on line 34. A bit later we'll make a change to the way this JSON data is rendered, but for now we'll just print it to the `#output` div using the `resultToPreTag(queryResult)` function.
 
-## Fetch data from your persisted query {#use-persisted-query}
+## Fetch Data from Your Persisted Query {#use-persisted-query}
 
 On line 25 we indicate which GraphQL persisted query the app should fetch data from. The persisted query name is a combination of the name of the endpoint (ie. `your-project` or `aem-demo-assets`), followed by a forward slash, and then the name of the query. If you followed the earlier module instructions exactly, the Persisted Query you created will be in the `your-project` endpoint.
 
@@ -86,7 +86,7 @@ persistedQueryName = 'your-project/adventure-list';
 
 1. Does this JSON contain the exact properties your app needs? If not, head back to the [Extract content using the GraphQL API](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql) learning guide to make changes. Don't forget to save and publish your query once you are done.
 
-## Change the JSON rendering {#change-rendering}
+## Change the JSON Rendering {#change-rendering}
 
 Currently, the JSON is being rendered as-is into a `pre` tag, which is not very creative. We can switch our CodePen to use the `resultToDom()` function instead to illustrate how the JSON response can be iterated over to create a more interesting result.
 
