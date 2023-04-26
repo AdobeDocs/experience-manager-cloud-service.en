@@ -145,7 +145,6 @@ You will create a persisted query that includes data you would like to consume f
          description {
            plaintext
          }
-         title
          price
          image {
            ... on ImageRef {
