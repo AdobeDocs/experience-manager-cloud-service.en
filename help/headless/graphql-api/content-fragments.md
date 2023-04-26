@@ -126,12 +126,16 @@ While GraphQL also supports GET requests, these can hit limits (for example the 
 
 You can test and debug GraphQL queries using the [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md).
 
-## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
+## Use Cases for Author, Preview and Publish {#use-cases-author-preview-publish}
 
 The use cases can depend on the type of AEM as a Cloud Service environment:
 
 * Publish environment; used to: 
   * Query data for JS application (standard use-case)
+
+* Preview environment; used to: 
+  * Preview queries prior to deploying on the Publish environment
+    * Query data for JS application (standard use-case)
 
 * Author environment; used to: 
   * Query data for "content management purposes":
@@ -233,15 +237,17 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 
 | Content Fragment Model - Data Type | GraphQL Type | Description |
 |--- |--- |--- |
-| Single line Text | String, [String] | Used for simple strings such as author names, location names, etc. |
-| Multi line Text | String, [String] | Used for outputting text such as the body of an article |
-| Number | Float, [Float] | Used to display floating point number and regular numbers |
-| Boolean | Boolean | Used to display checkboxes → simple true/false statements |
-| Date And Time | Calendar | Used to display date and time in an ISO 8601 format. Depending on the type selected, there are three flavors available for use in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
-| Enumeration | String | Used to display an option from a list of options defined at model creation |
-| Tags | [String] | Used to display a list of Strings representing Tags used in AEM |
-| Content Reference | String, [String] | Used to display the path towards another asset in AEM |
-| Fragment Reference | *A model type* | Used to reference another Content Fragment of a certain Model Type, defined when the model was created |
+| Single line Text | `String`, `[String]` | Used for simple strings such as author names, location names, etc. |
+| Multi line Text | `String`, `[String]` | Used for outputting text such as the body of an article |
+| Number | `Float`, `[Float]` | Used to display floating point number and regular numbers |
+| Boolean | `Boolean` | Used to display checkboxes → simple true/false statements |
+| Date And Time | `Calendar` | Used to display date and time in an ISO 8601 format. Depending on the type selected, there are three flavors available for use in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
+| Enumeration | `String` | Used to display an option from a list of options defined at model creation |
+| Tags | `[String]` | Used to display a list of Strings representing Tags used in AEM |
+| Content Reference | `String`, `[String]` | Used to display the path towards another asset in AEM |
+| Fragment Reference | *A model type* <br><br>Single field: `Model` - Model type, referenced directly <br><br>Multifield, with one referenced type: `[Model]` - Array of type `Model`, referenced directly from array <br><br>Multifield, with multiple referenced types: `[AllFragmentModels]` - Array of all model types, referenced from array with union type | Used to reference one, or more, Content Fragments of certain Model Types, defined when the model was created |
+
+{style="table-layout:auto"}
 
 ### Helper Fields {#helper-fields}
 
