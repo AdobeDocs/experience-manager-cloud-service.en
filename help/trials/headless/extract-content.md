@@ -111,7 +111,7 @@ Now that you have run the two primary types of queries, you are ready to query y
 
 1. To run queries against your own Content Fragments, change the endpoint from the **AEM Demo Assets** folder to the **Your Project** folder.
 
-1. Delete all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your endpoint. Select the model that you created that ends in `List` from the options.
+1. Delete all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your endpoint. Select the model that you created that ends in `List` from the options. If you followed the examples in the previous modules, you should find `adventureList` in the auto-complete list.
 
    ![Start custom query](assets/do-not-localize/custom-query-1.png)
 
