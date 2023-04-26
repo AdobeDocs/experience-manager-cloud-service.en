@@ -7,6 +7,9 @@ hidefromtoc: yes
 ---
 # Important Considerations for User Mapping Tool (Legacy) {#important-considerations}
 
+>[!INFO]
+>
+>This documentation refers to a deprecated version of the tool. For more information on the latest version, see [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 ## Exceptional cases {#exceptional-cases}
 
