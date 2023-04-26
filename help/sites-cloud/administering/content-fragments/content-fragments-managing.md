@@ -30,7 +30,7 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 
 >[!NOTE]
 >
->Content Fragments are stored as **Assets**. They are primarily managed from the **Content Fragments** console, but can also be managed from the **Assets** console.
+>Content Fragments are stored as **Assets**. They are primarily managed from the **Content Fragments** console, but can also be managed from the [Assets](/help/assets/content-fragments/content-fragments-managing.md) console.
 
 ## The Content Fragments Console {#content-fragments-console}
 
@@ -159,8 +159,8 @@ Some features in the top toolbar are available from multiple modes:
 * The three dots (**...**) drop-down provides access to additional actions:
   * **Update page references**
     * This updates any page references. 
-  * **[Quick publish](#publishing-and-referencing-a-fragment)**
-  * **[Manage Publication](#publishing-and-referencing-a-fragment)**
+  * **[Quick Publish](/help/assets/manage-publication.md#quick-publish)**
+  * **[Manage Publication](/help/assets/manage-publication.md#manage-publication)** 
 
 <!--
 This updates any page references and ensures that the Dispatcher is flushed as required. -->
@@ -231,7 +231,27 @@ You can also [associate content](/help/sites-cloud/administering/content-fragmen
 
 You can view, and edit, the properties of a fragment using the [Metadata](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md) tab.
 
-## Publishing and Referencing a Fragment {#publishing-and-referencing-a-fragment}
+## Publishing and Previewing a Fragment {#publishing-and-previewing-a-fragment}
+
+You can publish your Content Fragments to:
+
+* the **[Publish Service](/help/overview/architecture.md#runtime-architecture)** - for full, public access
+
+* the **[Preview Service](/help/overview/architecture.md#runtime-architecture)** - to preview the content prior to full availability
+
+  >[!CAUTION]
+  >
+  >Publishing Content Fragments to the **Preview Service** is only available from the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); using the **Publish** action.
+
+  >[!NOTE]
+  >
+  >For more details about the Preview environments, please see:
+  >
+  >* [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+  >* [Configuring OSGi Settings for the Preview Tier](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+  >* [Debugging Preview Using the Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+
+To publish your Content Fragments using the **Publish** option in the toolbar of the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
 
 >[!CAUTION]
 >
@@ -239,20 +259,26 @@ You can view, and edit, the properties of a fragment using the [Metadata](/help/
 >
 >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
 
-Content Fragments must be published for use in the publish environment. 
+1. Select one, or more, of your fragments from the list.
 
-* From the **Publish** option in the toolbar of the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
-  * **Now** - after confirmation, the fragment will be published immediately
-  * **Schedule** - you can select the date and time when the fragment will be published
-  
-  When necessary you will be required to specify the **Activation date** and which references to publish. For example:
-  ![Publish dialog](assets/cfm-publish-01.png)
+1. From the toolbar, select **Publish** and then either of the following to open the appropriate dialog:
 
-* From the [Content Fragment Editor](#toolbar-actions-in-the-content-fragment-editor)
-  * [**Quick Publish**](/help/assets/manage-publication.md#quick-publish)
-  * [**Manage Publication**](/help/assets/manage-publication.md#manage-publication) 
+   * **Now** - select either the **Publish service**, or the **Preview service**; after confirmation, the fragment will be published immediately
+   * **Schedule** - in addition to the required service, you can also select the date and time when the fragment will be published
 
-In addition, when you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment will be listed in the page references.
+   When necessary you will be required to specify the references to publish. By default, references also get published to the Preview service to ensure that there is no break in the content. 
+   For example, for a scheduled publish request:
+   ![Publish dialog](assets/cfm-publish-01.png)
+
+1. Confirm the publish action.
+
+You can also publish to the **Publish Service** from the [Content Fragment Editor](#toolbar-actions-in-the-content-fragment-editor) using:
+* **Quick Publish**
+* **Manage Publication** 
+
+>[!NOTE]
+>
+>After you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment will be listed in the page references.
 
 >[!CAUTION]
 >
@@ -260,11 +286,14 @@ In addition, when you [publish a page that uses the fragment](/help/sites-cloud/
 
 ## Unpublishing a Fragment {#unpublishing-a-fragment}
 
-To unpublish Content Fragments, select one or more fragments, then **Unpublish**.
+To unpublish Content Fragments, select one or more fragments, then **Unpublish** in the toolbar of the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). You can select **Now** or **Scheduled**.
+
+When the relevant dialog opens you can select the appropriate service:
+![Unpublish dialog](assets/cfm-unpublish-01.png)
 
 >[!NOTE]
 >
->The **Unpublish** action will be visible when published fragments are available.
+>The **Unpublish** action will be only visible when published fragments are available.
 
 >[!CAUTION]
 >
