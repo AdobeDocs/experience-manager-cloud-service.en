@@ -1,4 +1,4 @@
- ---
+---
 title: AEM GraphQL API for use with Content Fragments
 description: Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for headless content delivery.
 feature: Content Fragments,GraphQL API
@@ -917,13 +917,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
     * [A List query with offset and limit](#list-offset-limit)
     * [A Paginated query with first and after](#paginated-first-after)
-  * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
-* If you require a single result:
-  * use the model name; eg city
-
-* If you expect a list of results:
-  * add `List` to the model name; for example,  `cityList`
   * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 * The filter `includeVariations` is included in the `List` query type.  To retrieve Content Fragment Variations in the query results, then the `includeVariations` filter must be set to `true`.
