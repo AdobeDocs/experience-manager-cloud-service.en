@@ -279,6 +279,65 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 
 <!-- Property details to be added here. Referred the ticket https://jira.corp.adobe.com/browse/ASSETS-19023-->
 
+## Asset Selector Object Schema {#object-schema}
+
+Schema describes the object properties associated with an asset selected using Asset Selector. It uses the combination of data types and their values to validate the object describing the selected Asset using an Asset Selector.
+
+**Schema Syntax**
+````
+interface SelectedAsset {
+    'repo:id': string;
+    'repo:name': string;
+    'repo:path': string;
+    'repo:size': number;
+    'repo:createdBy': string;
+    'repo:createDate': string;
+    'repo:modifiedBy': string; 
+    'repo:modifyDate': string; 
+    'dc:format': string; 
+    'tiff:imageWidth': number;
+    'tiff:imageLength': number;
+    'repo:state': string;
+    computedMetadata: Record<string, any>;
+    _links: {
+        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
+            href: string;
+            type: string;
+            'repo:size': number;
+            width: number;
+            height: number;
+            [others: string]: any;
+        }>;
+    };
+}
+````
+
+**Query Parameters**
+
+| Parameter | Type | Description |
+|---|---|---|
+| repo:id | string | ID of an Asset |
+| repo:name | string | The name of an Asset |
+| repo:path | string | The path of an Asset |
+| repo:size | number | Size of an Asset (in bytes) |
+| repo:createdBy | string | ID of a user who created an Asset |
+| repo: createdDate | string | The timestamp when an asset was created |
+| repo:modifiedBy | string | ID of a user who modified the asset recently |
+| repo:modifyDate | string | The timestamp when the asset was last modified |
+| dc:format | string | MIME type of an Asset |
+| tiff:imageWidth | number | The width of an image type of Asset |
+| tiff:imageLength | number | The height of an image type of Asset |
+| repo:state | string | The `Approved`, `Rejected`, or `Expired`state of an Asset |
+| computedMetadata | string | It is an object that represents a bucket for all the Asset's metadata of all kinds (repository, application or embedded metadata) |
+| _links | string | It represents the collection of links used in the Asset Selector. The links are represented in the form of an array. The parameters of an array include: `href`, `type`, `repo:size`, `width`, `height`, etc.  |
+
+For the detailed example of Object Schema, click 
+
+## Handling selection of Assets using Object Schema {#handling-selection}
+
+The `handleSelection` property is used to handle single or multiple selection of Assets in Assets Selector. The example below states the syntax of usage of `handleSelection`. 
+
+![handle-selection](assets/handling-selection.png)
 
 ## Using Asset Selector {#using-asset-selector}
 
