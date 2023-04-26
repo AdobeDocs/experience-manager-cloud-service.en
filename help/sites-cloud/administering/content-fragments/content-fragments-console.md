@@ -62,21 +62,32 @@ Here you can see that there are three main areas:
       * Sort - select the appropriate action for either ascending or descending
         This will sort the entire table according to that column. Sorting is only available on appropriate columns.
       * Resize the column - using either the action, or width sliders
-    * You can [select one, or more, Content Fragments to show the available actions](#actions-selected-content-fragment)
-  * **[Create](#creating-new-content-fragment)** a new Content Fragment
-  * [Filter](#filtering-fragments) the Content Fragments according to a selection of predicates, and save the filter for future use
-  * [Search](#searching-fragments) the Content Fragments 
-  * [Customize the table view to show selected columns of information](#select-available-columns)
-  * Use **Open in Assets** to directly open the current location in the **Assets** console
 
-    >[!NOTE]
-    >
-    >The **Assets** console is used to access assets, such as images, videos, etc.  This console can be accessed:
-    >
-    >* using the **Open in Assets** link (in the Content Fragments console)
-    >* directly from the global navigation pane
+## Actions {#actions}
 
-## Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
+Within the console there is a range of actions that you can use, either directly, or after selecting a specific fragment:
+
+* Various actions are directly [available from the console](#available-actions)
+* You can [select one, or more, Content Fragments to show appropriate actions](#actions-selected-content-fragment)
+
+### Actions (unselected) {#actions-unselected}
+
+Certain actions are available from the console - without selecting a specific Content Fragment:
+
+* **[Create](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)** a new Content Fragment
+* [Filter](#filtering-fragments) the Content Fragments according to a selection of predicates, and save the filter for future use
+* [Search](#searching-fragments) the Content Fragments 
+* [Customize the table view to show selected columns of information](#select-available-columns)
+* Use **Open in Assets** to directly open the current location in the **Assets** console
+
+  >[!NOTE]
+  >
+  >The **Assets** console is used to access assets, such as images, videos, etc.  This console can be accessed:
+  >
+  >* using the **Open in Assets** link (in the Content Fragments console)
+  >* directly from the global navigation pane
+
+### Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
 
 Selecting a specific fragment will open a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
 
@@ -139,12 +150,6 @@ As with other consoles you can configure the columns that are visible, and avail
 This will present a list of columns that you can hide or show:
 
 ![Content Fragments console - column configuration](assets/cfc-console-column-selection.png)
-
-## Creating a new Content Fragment {#creating-new-content-fragment}
-
-Selecting **Create** opens the compact **New Content Fragment** dialog:
-
-![Content Fragments console - Creating a new fragment](assets/cfc-console-create.png)
 
 ## Filtering Fragments {#filtering-fragments}
 

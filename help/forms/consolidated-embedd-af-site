@@ -1,0 +1,43 @@
+---
+title: Embed an Adaptive Form (Core Components) in AEM Sites page
+seo-title: How to add an Adaptive Form (Core Components) to an AEM Sites page?
+description: You can use AEM Forms Container component to add or embed Adaptive Forms (Core Components)  to an AEM Sites page to fill and submit a form without leaving the AEM Sites pages.
+feature: Adaptive Forms
+---
+
+# Embed an Adaptive Form (Core Components) to an AEM sites page {#embed-an-adaptive-form-to-aem-sites-page}
+
+AEM Forms allow form developers to seamlessly embed Adaptive Forms (Core Components) in an AEM Sites page or a web page hosted outside AEM. The embedded Adaptive Form (Core Components) is fully functional and users can fill and submit the form without leaving the page. It helps user remain in context of other elements on the web page and simultaneously interact with the form.
+
+In AEM Sites page, you can add an Adaptive Form using:
+
+* [Adaptive Form Container component](#af-container-component) 
+The Adaptive Form Container component facilitates the creation and editing of an Adaptive Form (core components) within your site page.
+* [AEM Forms Container component](#aem-container-component)
+AEM Forms provide a component that you can add to your site pages. The AEM Forms Container component lets you embed an Adaptive Form.
+* **Asset browser**
+  All the forms are available under Assets. You can drag-drop the form as an asset on your page.
+
+
+|Adaptive Form (V2)|Adaptive Form (V1)|
+|---|---|
+|[Adaptive Form Container component](#af-container-component),[AEM Forms Container component](#aem-container-component)|[AEM Forms Container component](#aem-container-component)
+|---|---|
+
+<table>
+  <thead>
+    <tr>
+      <th>Adaptive Form (Core Components)</th>
+      <th>Adaptive Form (V1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[Adaptive Form Container component](#af-container-component),[AEM Forms Container component](#aem-container-component)</td>
+      <td>Data</td>
+      
+    </tr>
+  </tbody>
+
+
+

@@ -274,7 +274,7 @@ and:
 
 **file included at unknown location: ...**
 
-There are four sections in your farm configuration where you're allowed to include your own file: `/clientheaders`, `filters`, `/rules` in `/cache` section and `/virtualhosts`. The included files need to be named as follows:
+There are four sections in your farm configuration where you're allowed to include your own files: `/clientheaders`, `filters`, `/rules` in `/cache` section and `/virtualhosts`. The included files need to be named as follows:
 
 | Section          | Include file name                    |
 |------------------|--------------------------------------|
@@ -444,6 +444,10 @@ Log levels for those modules are defined by the variables `DISP_LOG_LEVEL` and `
 When running Dispatcher locally, logs are printed directly to the terminal output. Most of the time, you want these logs to be in DEBUG, which can be done by passing the Debug level as a parameter when running Docker. For example: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 Logs for cloud environments are exposed through the logging service available in Cloud Manager.
+
+>[!NOTE]
+>
+>For AEM as a Cloud Service environments, debug is the maximal verbosity level. The trace log level is not supported so you should avoid setting it when working in cloud environments.
 
 ### Automatic reloading and validation {#automatic-reloading}
 
