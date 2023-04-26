@@ -62,11 +62,9 @@ The Content Fragment Model editor is where you configure the data types and prop
 
 1. Once you define the properties of the field you can switch back to the **Data Types** tab in the right panel and add additional fields by dragging and dropping.
 
-1. Tap or click **Save** to save your model.
-
 In this way, you can add as many fields as necessary to your model to support whatever kind of data structure you may need. The types of data fields vary, but the process of adding them to your model remains the same.
 
-Continue on to the next section to add the fields necessary to complete the **Adventure** model.
+Continue on to the next section to add the fields necessary to complete and save the **Adventure** model
 
 ![Steps one, two, and three of adding fields to the model](assets/do-not-localize/define-model-fields.png)
 
@@ -98,4 +96,3 @@ Follow the same steps as above to add these additional fields. The only differen
 1. Once you have added all of the fields necessary for the Content Fragment model, click **Save** at the top-right of the window.
 
 1. The model is saved and you return to the Content Fragment model Console.
-
