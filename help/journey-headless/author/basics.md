@@ -22,12 +22,13 @@ This article builds on these so you understand how to author your own content fo
 
 Before you get to grips with Content Fragments, here is a (very) quick introduction to using AEM....but nothing really replaces the experience of signing in and trying to use the system.
 
-### Author, Preview and Publish {#author-preview-publish}
+### Author, Preview, and Publish {#author-preview-publish}
 
-An AEM installation generally consists of at least two environments:
+An AEM installation generally consists of three environments:
 
 * Author
 * Publish
+* Preview
 
 You log into, and use the author environment to generate your content. When ready you then publish your content so that it becomes generally available. For headless this would be to other applications, for web pages this would be to readers on the web.
 
