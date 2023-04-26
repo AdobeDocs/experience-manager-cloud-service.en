@@ -113,17 +113,17 @@ Now that you have run the two primary types of queries, you are ready to query y
 
 1. Delete all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your endpoint. Select the model that you created that ends in `List` from the options.
 
-   ![Start custom query](assets/do-not-localize/custom-query-1-2.png)
+   ![Start custom query](assets/do-not-localize/custom-query-1.png)
 
 1. Define the items that the query should contain for the Content Fragment model you selected. Again, type open bracket `{`, then press Ctrl+Space or Option+Space for an auto-complete list. Select `items` from the options.
 
 1. Tap or click the **Prettify** button to automatically format your code so that it is easier to read.
 
-1. Once complete, tap or click the **Play** button at the top left of the editor to run the query. The editor auto-complete the `items` and the query runs.
+1. Once complete, tap or click the **Play** button at the top left of the editor to run the query. The editor auto-complete the `items`, which are briefly highlighted in yellow, and the query runs.
 
 1. The results are displayed in the right panel, next to the query editor.
 
-   ![Run custom query](assets/do-not-localize/custom-query-3-4-5-6.png)
+   ![Run custom query](assets/do-not-localize/custom-query-2.png)
 
 This is how your content can be delivered to omnichannel digital experiences.
 
