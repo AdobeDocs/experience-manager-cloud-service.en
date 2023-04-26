@@ -1,4 +1,4 @@
----
+ ---
 title: AEM GraphQL API for use with Content Fragments
 description: Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for headless content delivery.
 feature: Content Fragments,GraphQL API
@@ -689,7 +689,7 @@ query {
 
 >[!NOTE]
 >
->* By default paging use the UUID of the repository node representing the fragment for ordering to ensure the order of results is always the same. When `sort` is used, the UUID is implicitly used to ensure a unique sort; even for two items with identical sort keys.
+>* By default, paging uses the UUID of the repository node representing the fragment for ordering to ensure the order of results is always the same. When `sort` is used, the UUID is implicitly used to ensure a unique sort; even for two items with identical sort keys.
 >
 >* Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. This is also the recommended way if you want to query large paginated result sets.
 
@@ -898,6 +898,9 @@ The following limitations exist:
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
 The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
+
+* If you require a single result:
+  * use the model name; eg city
 
 * If you expect a list of results:
   * add `List` to the model name; for example,  `cityList`
