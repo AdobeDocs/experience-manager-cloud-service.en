@@ -83,6 +83,25 @@ You can have one or more of these files. They contain `<VirtualHost>` entries th
 
 Please ensure that at least one virtual host is always available that matches ServerAlias `\*.local`, `localhost` and `127.0.0.1` which are needed for the dispatcher invalidation. The server aliases `*.adobeaemcloud.net` and `*.adobeaemcloud.com` are also required in at least one vhost configuration and are needed for internal Adobe processes. 
 
+If you want to match the exact host because you have multiple vhost files you can follow the below example:
+
+```
+<VirtualHost *:80>
+	ServerName	"example.com"
+	# Put names of which domains are used for your published site/content here
+	ServerAlias	 "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
+	# Use a document root that matches the one in conf.dispatcher.d/default.farm
+	DocumentRoot "${DOCROOT}"
+	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+	AllowEncodedSlashes NoDecode
+	# Add header breadcrumbs for help in troubleshooting which vhost file is chosen
+	<IfModule mod_headers.c>
+		Header add X-Vhost "publish-example-com"
+	</IfModule>
+  ...
+</VirtualHost>
+```
+
 * `conf.d/rewrites/rewrite.rules`
 
 This file is included from inside your `.vhost` files. It has a set of rewrite rules for `mod_rewrite`.
