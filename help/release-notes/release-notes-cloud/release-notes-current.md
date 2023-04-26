@@ -2,8 +2,8 @@
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
+exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 ---
-
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 The following section outlines the feature release notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
@@ -20,7 +20,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.2.0) is April 12, 2023. The next feature release (2023.4.0) is planned for May 4, 2023.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.2.0) is April 12, 2023. The next feature release (2023.4.0) is planned for May 18, 2023.
 
 ## Release Video {#release-video}
 
