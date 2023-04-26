@@ -35,7 +35,7 @@ You start in the Content Fragment editor with the sample app provided with your 
 
 ![Preview the app](assets/do-not-localize/preview-app-1.png)
 
-## Edit a header in the App {#edit-app}
+## Edit a Header in the App {#edit-app}
 
 The Content Fragment editor displays the basic layout of the app as a page Content Fragment. The **Panels** represent different pages of the app, each of which is its own Content Fragment. By modifying these fragments, you can change the content of the app.
 
@@ -57,7 +57,7 @@ The Content Fragment editor displays the basic layout of the app as a page Conte
 
 That's how easy it is to update content within a React app when integrated into AEM headless CMS.
 
-## Swap an image in the app {#change-image}
+## Swap an Image in the App {#change-image}
 
 Now that you modified a headline in the app, try changing an image.
 
@@ -85,7 +85,7 @@ Now that you modified a headline in the app, try changing an image.
 
 It's that easy to update images and assets in your apps with AEM headless CMS.
 
-## Add a reference to a new Content Fragment in the app {#create-moment}
+## Add a Reference to a New Content Fragment in the app {#create-moment}
 
 Now that you updated the image of the biker, let's walk through how to add new content to an app by creating and referencing a new Content Fragment. You will add a product call-out managed by a "shoppable moment" Content Fragment to the second panel of the app.
 
