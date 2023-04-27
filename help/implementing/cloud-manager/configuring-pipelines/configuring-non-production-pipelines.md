@@ -32,7 +32,10 @@ Once you have set up your program and have at least one environment using the Cl
 
    ![Add non-production pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. On the **Configuration** tab of the **Add Non-Production Pipeline** dialog, select the type of non-production pipeline you with to add, either **Code Quality Pipeline** or **Deployment Pipeline**.
+1. On the **Configuration** tab of the **Add Non-Production Pipeline** dialog, select the type of non-production pipeline you with to add.
+
+   * **Code Quality Pipeline** - Create a pipeline that builds your code, runs unit tests, and evaluates code quality but does NOT deploy.
+   * **Deployment Pipeline** - Create a pipeline that builds your code, runs unit tests, evaluates code quality, and deploys to an environment.
 
    ![Add Non-Production pipeline dialog](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
@@ -41,7 +44,13 @@ Once you have set up your program and have at least one environment using the Cl
    * **Deployment Trigger** - You have the following options when defining the deployment triggers to start the pipeline.
    
      * **Manual** - Use this option to manually start the pipeline.
-     * **On Git Changes** - This options starts the CI/CD pipeline whenever commits are added to the configured git branch. With this option, you can still start the pipeline manually as required.  
+     * **On Git Changes** - This options starts the CI/CD pipeline whenever commits are added to the configured git branch. With this option, you can still start the pipeline manually as required.
+
+1. If you choose to create a **Deployment Pipeline** you will also need to define the **Important Metric Failures Behavior**.
+
+   * **Ask every time** - This is the default setting and requires manual intervention on any important failure.
+   * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
+   * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an important failure occurs. This is essentially emulating a user manually approving each failure.
 
 1. Click **Continue**.
 
@@ -80,6 +89,11 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 ### Full Stack Code {#full-stack-code}
 
+>[!NOTE]
+>
+>* This feature is not yet generally available. It is expected to roll out in June 2023.
+>* If you would like to try out the feature and provide feedback for improvement, please contact your Adobe representative.
+
 A full-stack code pipeline simultaneously deploys back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configuration. See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) for more information about this type of pipeline.
 
 >[!NOTE]
@@ -100,6 +114,12 @@ To finish the configuration of the full-stack code non-production pipeline, foll
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
      * Enter the first few characters of the branch name and the auto-complete feature of this field will find the matching branches to help you select.
    * **Ignore Web Tier Configuration** - When checked, the pipeline will not deploy your web tier configuration.
+
+   * **Pipeline** - If your pipeline is a deployment pipeline, you can choose to run a testing phase. Check the options you wish to enable in this phase. If none of the options are selected, the testing phase will not be displayed during pipeline execution.
+
+     * **Product Functional Testing** - Execute [product functional tests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) against the development environment.
+     * **Custom Functional Testing** - Execute [custom functional tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) against the development environment.
+     * **Custom UI Testing** - Execute [custom UI tests](/help/implementing/cloud-manager/ui-testing.md) for custom applications.
 
    ![Full-stack pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
