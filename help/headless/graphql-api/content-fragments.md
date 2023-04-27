@@ -922,10 +922,12 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
   * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
-* The filter `includeVariations` is included in the `List` query type.  To retrieve Content Fragment Variations in the query results, then the `includeVariations` filter must be set to `true`.
+* The filter `includeVariations` is included in the `List` and `Paginated` query types.  To retrieve Content Fragment Variations in the query results, then the `includeVariations` filter must be set to `true`.
+
+  * See [Sample Query for multiple Content Fragments, and their Variations, of a given Model](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
   >[!CAUTION]
-  >The filter `includeVariations` cannot be used together with the system-generated field `_variation`.
+  >The filter `includeVariations` and the system-generated field `_variation` cannot be used together in the same query definition.
 
 * If you want to use a logical OR:
   * use ` _logOp: OR`
