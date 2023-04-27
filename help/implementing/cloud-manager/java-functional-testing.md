@@ -1,6 +1,7 @@
 ---
 title: Java Functional Tests
 description: Learn how to write Java functional tests for AEM as a Cloud Service
+exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
 ---
 # Java Functional Testing
 
