@@ -30,7 +30,6 @@ Asset Selector provides many benefits, such as:
 Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets as a Cloud Service] repository:
 
 * [Integrate Asset Selector using Vanilla JS](#integration-with-vanilla-js)
-
 * [Define Asset Selector display properties](#asset-selector-properties)
 * [Use Asset Selector](#using-asset-selector)
 
