@@ -25,7 +25,7 @@ Asset Selector provides many benefits, such as:
 
 * Ability to switch repositories within an IMS organization for asset selection.
 
-* Ability to sort assets by name, dimension, and size and view them in List, Grid, Gallery, or  Waterfall view.
+* Ability to sort assets by name, dimensions, and size and view them in List, Grid, Gallery, or  Waterfall view.
 
 Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets as a Cloud Service] repository:
 
@@ -39,7 +39,7 @@ Perform the following tasks to integrate and use Asset Selector with your [!DNL 
 You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository and select assets from within the application. 
 
 The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. Edit the `index.html` file or a similar file within your application implementation to define the authentication details to access the Assets as a Cloud Service repository and to configure the Asset Selector display properties.
-
+<!--
 Asset Selector supports authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID`. Authentication using these IMS properties is referred to as SUSI (Sign Up Sign In) flow in this article.
 
 You can perform authentication without defining some of the IMS properties, such as `imsScope` or `imsClientID`, if:
@@ -48,10 +48,21 @@ You can perform authentication without defining some of the IMS properties, such
 *   You already have an IMS token generated for authentication.
 
 Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining `imsScope` or `imsClientID` IMS properties is referred to as a non-SUSI flow in this article.
+-->
+
+You can perform authentication without defining some of the IMS properties, if:
+
+*   You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
+*   You already have an IMS token generated for authentication.
 
 ## Prerequisites {#prerequisites}
 
-Define the prerequisites in the `index.html` file or a similar file within your application implementation to define the authentication details to access the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository. The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
+Define the prerequisites in the `index.html` file or a similar file within your application implementation to define the authentication details to access the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository. The prerequisites include:
+*   imsOrg
+*   imsToken
+*   apikey
+
+<!-- The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
 
 **Non-SUSI flow**
 
@@ -70,6 +81,7 @@ For more information on these properties, refer to [Asset Selector Properties](#
 *   apikey
 
 For more information on these properties, refer to [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
+-->
 
 ### Example for the non-SUSI flow {#non-susi-vanilla}
 
@@ -120,7 +132,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 </html>
 
 ```
-
+<!--
 ### Example for the SUSI flow {#susi-vanilla}
 
 Use this example `index.html` file for authentication if you are integrating your application using SUSI flow.
@@ -214,6 +226,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 </html>
 
 ```
+-->
 
 ## Use Asset Selector properties {#asset-selector-properties}
 
@@ -258,7 +271,7 @@ Use the `path` property to define the folder name that displays automatically wh
 
 ### Example 2: Metadata popover
 
-Use various properties to define metadata of an asset that you want to view using an info icon. The info popover provides the collection of information about asset or the folder including title, dimensions, date of modification, location, and description of an asset. In the example below, various properties are used to display metadata of an asset, for example, `repo:path` property specifies the location of an asset. `repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the assset or folder is rendered.
+Use various properties to define metadata of an asset that you want to view using an info icon. The info popover provides the collection of information about asset or the folder including title, dimensions, date of modification, location, and description of an asset. In the example below, various properties are used to display metadata of an asset, for example, `repo:path` property specifies the location of an asset. `repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the asset or folder is rendered.
     
    ![metadata-popover-example](assets/metadata-popover.png)
 
@@ -393,7 +406,7 @@ Asset Selector allows you to perform full text search of assets within the selec
 
 ### Sorting {#sorting}
 
-You can sort assets in Asset Selector by name, dimension, or size of an asset. You can also sort the assets in ascending or descending order.
+You can sort assets in Asset Selector by name, dimensions, or size of an asset. You can also sort the assets in ascending or descending order.
 
 ### Types of view {#types-of-view}
 
