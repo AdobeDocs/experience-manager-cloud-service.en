@@ -189,7 +189,7 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
 * [Connected assets](use-assets-across-connected-assets-instances.md)
 * [Metadata schemas](metadata-schemas.md)
 * [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata)
+* [Manage metadata](manage-metadata.md)
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)

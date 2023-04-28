@@ -327,7 +327,7 @@ If you are not assigned an administrator role, here is a list of permissions you
 * [Asset reports](asset-reports.md)
 * [Metadata schemas](metadata-schemas.md)
 * [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata)
+* [Manage metadata](manage-metadata.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
 
