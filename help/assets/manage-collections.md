@@ -258,7 +258,7 @@ You can run a workflow for the assets within a collection. If the collection con
 * [Asset reports](asset-reports.md)
 * [Metadata schemas](metadata-schemas.md)
 * [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata)
+* [Manage metadata](manage-metadata.md)
 * [Search facets](search-facets.md)
 * [Bulk metadata import](metadata-import-export.md)
 

@@ -180,7 +180,7 @@ Using the demo package, you can enable Adobe Assets Insights to capture data fro
 * [Asset reports](asset-reports.md)
 * [Metadata schemas](metadata-schemas.md)
 * [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata)
+* [Manage metadata](manage-metadata.md)
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)

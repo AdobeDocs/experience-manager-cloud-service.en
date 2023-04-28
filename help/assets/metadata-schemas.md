@@ -257,7 +257,7 @@ You can define mandatory fields at a folder level, which is enforced on assets t
 * [Connected assets](use-assets-across-connected-assets-instances.md)
 * [Asset reports](asset-reports.md)
 * [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata)
+* [Manage metadata](manage-metadata.md)
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
