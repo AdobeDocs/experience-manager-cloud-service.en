@@ -134,7 +134,7 @@ If you do not need the download functionality, then disable the servlet to preve
 * [Connected assets](use-assets-across-connected-assets-instances.md)
 * [Asset reports](asset-reports.md)
 * [Metadata schemas](metadata-schemas.md)
-* [Manage metadata](manage-metadata)
+* [Manage metadata](manage-metadata.md)
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)

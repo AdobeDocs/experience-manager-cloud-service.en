@@ -133,7 +133,7 @@ For the multiple page preview of other supported document formats, perform the f
 * [Asset reports](asset-reports.md)
 * [Metadata schemas](metadata-schemas.md)
 * [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata)
+* [Manage metadata](manage-metadata.md)
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
