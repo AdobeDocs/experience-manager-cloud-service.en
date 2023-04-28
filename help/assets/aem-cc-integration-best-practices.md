@@ -222,3 +222,18 @@ You can leverage the following upload capabilities:
 If you use Network File Shares to manage digital assets, just using the network share mapped by Experience Manager desktop app could be seen as a convenient substitute. When transitioning from network file shares, Experience Manager web interface provides a rich set of Digital Asset Management capabilities that go well beyond what is possible on a network share (search, collections, metadata, collaboration, previews, and so on), and Experience Manager desktop app provides a handy link to connect the server-side DAM repository with the work on desktop.
 
 Avoid using Experience Manager desktop app to manage assets directly in the network share of Experience Manager Assets. For example, avoid using Experience Manager desktop app to move/copy multiple files. Instead, use the Experience Manager Assets web UI to drag folders from Finder/Explorer to the network share or use the Experience Manager Assets Folder Upload feature.
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
