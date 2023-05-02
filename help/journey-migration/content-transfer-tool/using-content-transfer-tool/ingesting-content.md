@@ -137,9 +137,13 @@ This indicates that the Cloud Acceleration Manager was unable to reach the targe
 
 ### Automatic Updates through Release Orchestrator is still enabled
 
-Release Orchestrator automatically keeps environments up to date by applying updates automatically. If the update is triggerred when an ingestion is being performed, it can cause unpredictable results including the corruption of the environment. That is one of the reasons a support ticket should be logged before starting an ingestion (see "Note" above), so that temporarily disabling the Release Orchestrator can be scheduled.
+Release Orchestrator automatically keeps environments up to date by applying updates automatically. If the update is triggered when an ingestion is being performed, it can cause unpredictable results including the corruption of the environment. That is one of the reasons a support ticket should be logged before starting an ingestion (see "Note" above), so that temporarily disabling the Release Orchestrator can be scheduled.
 
 If Release Orchestrator is still running when an ingestion is being started, the UI will present this message. You may choose to continue anyway, accepting the risk, by checking the field and pressing the button again.
+
+>[!NOTE]
+>
+> Release Orchestrator is now being deployed to Development environments, so pausing updates on those environments should be done as well.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
