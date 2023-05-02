@@ -415,7 +415,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
     + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
     + [Configure transcription for audio and video assets](/help/assets/configure-transcription.md)
-    + [Multilingual assets and translation](/help/assets/translate-assets.md)
+    + [Translate assets](/help/assets/translate-assets.md)
     + [Search facets](/help/assets/search-facets.md)
     + [Assets HTTP API](/help/assets/mac-api-assets.md)
     + [Content Fragments support in Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
