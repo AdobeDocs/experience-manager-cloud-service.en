@@ -7,9 +7,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#release-x}
+## Release 11873 {#release-11873}
  
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on April X, 2023. This maintenance release is an update from previous maintenance release 11835.
+Summarized below are the continuous improvements for maintenance release 11873, which was publicly released on May 3rd, 2023. This maintenance release is an update from previous maintenance release 11835.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
