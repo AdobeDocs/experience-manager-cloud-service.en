@@ -9,15 +9,16 @@ The content copy tool enables users to copy mutable content on-demand from their
 
 ## Introduction {#introduction}
 
-Current, real data is valuable for testing, validation, and user-acceptance purposes. The content copy tool allows you to copy content from your production AEM environment to a staging or development environment for such testing.
+Current, real data is valuable for testing, validation, and user-acceptance purposes. The content copy tool allows you to copy content from a production AEM environment to a staging, development, or [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) environment for such testing.
 
-The content to copy is defined by a content set. A content set consists of a list of JCR paths that contain the mutable content to be copied from a source environment to a target environment within the same Cloud Manager program. The following paths are permitted in a content set.
+The content to copy is defined by a content set. A content set consists of a list of JCR paths that contain the mutable content to be copied from a source authoring service environment to a target authoring service environment within the same Cloud Manager program. The following paths are permitted in a content set.
 
 ```text
 /content
 /conf/**/settings/wcm
 /conf/**/settings/dam/cfm/models
 /conf/**/settings/graphql/persistentQueries
+/etc/clientlibs/fd/themes
 ```
 
 When copying content, the source environment is the source of truth.
@@ -29,10 +30,10 @@ When copying content, the source environment is the source of truth.
 
 In order to use the content copy tool, certain permissions are required in both the source and target environments.
 
-| Content Copy Feature | In AEM Administrator Group? | In the Deployment Manager Role? |
+| Content Copy Feature | AEM Administrator Group | Deployment Manager Role |
 |---|---|---|
-| Create and modify [content sets](#create-content-set) | Yes | No |
-| Start or cancel the [content copy process](#copy-content) | Yes | Yes |
+| Create and modify [content sets](#create-content-set) | Required | Not Required |
+| Start or cancel the [content copy process](#copy-content) | Required | Required |
 
 ## Creating a Content Set {#create-content-set}
 
@@ -57,6 +58,7 @@ Before any content can be copied a content set must be defined. Once defined, co
    1. Enter the path in the **Add Include Path** field.
    1. Tap or click the **Add Path** button to add the path to the content set.
    1. Tap or click the **Add Path** button again as necessary.
+      * Up to fifty paths are allowed.
 
    ![Add paths to content set](assets/add-content-set-paths.png)
 
@@ -66,6 +68,8 @@ Before any content can be copied a content set must be defined. Once defined, co
    1. Enter the sub-path to exclude beneath the selected path.
    1. Tap or click **Exclude Path**.
    1. Tap or click **Add exclude sub-paths** again to add additional paths to exclude as necessary.
+      * Excluded paths must be relative to the included path.
+      * There is no limit on the number of excluded paths.
 
    ![Excluding paths](assets/add-content-set-paths-excluded.png)
 
@@ -114,6 +118,11 @@ Once a content set has been created, you can use it to copy content. Follow thes
 
    ![Copying content](assets/copying-content.png)
 
+   * Content can only be copied from a higher environment to a lower environment or between development/RDE environments where the hierarchy of environments is as follows (from highest to lowest):
+     * Production
+     * Staging
+     * Development / RDE
+
 1. If required you can also elect to **Include Access Control Lists** in your copy process.
 
 1. Tap or click **Copy**.
@@ -141,6 +150,7 @@ Once you start copying content, the process can have one of the following status
 |In progress|Content copy operation is ongoing|
 |Failed|Content copy operation failed|
 |Completed|Content copy operation completed successfully|
+|Cancelled|User cancels a content copy operation after starting it|
 
 ### Cancelling a Copy Process {#cancelling}
 
@@ -158,11 +168,11 @@ To do so, on the **Copy Content Activity** page, select the **Cancel** action fr
 
 The content copy tool has the following limitations.
 
-* A content copy can not be performed from a lower environment to a higher environment.
-* Content can only be copied from and to authoring environments.
+* Content can not be copied from a lower environment to a higher environment.
+* Content can only be copied from and to authoring services.
 * Cross-program content copy is not possible.
 * Running concurrent content copy operations on the same environment is not possible.
-* Up to ten paths can be specified per content set. There is no limitation on excluded paths.
+* Up to fifty paths can be specified per content set. There is no limitation on excluded paths.
 * The content copy tool should not be used as a cloning or mirroring tool because it can not track moved or deleted content on the source.
 * The content copy tool has no versioning capability and can not automatically detect modified content or newly created content on the source environment in a content set since the last content copy operation.
   * If you wish to update your destination environment with content changes only since the last content copy operation, you need to create a content set and specify the paths on the source instance where changes were made since the last content copy operation.
