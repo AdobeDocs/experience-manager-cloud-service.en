@@ -386,7 +386,7 @@ The field `Respond with application/graphql-response+json` (`responseContentType
   It does not matter whether the persisted query is successful or not. The `/execute.json/persisted-query` will return the status code `200` and the `Content-Type` header returned will be `application/json`.
 
 * `true`:
-  The endpoint will return `400` when there is any form of error upon running the persisted query. Also the returned `Content-Type` will be `application/graphql-response+json`.
+  The endpoint will return `400` or `500` as appropriate when there is any form of error upon running the persisted query. Also the returned `Content-Type` will be `application/graphql-response+json`.
 
   >[!NOTE]
   >
