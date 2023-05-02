@@ -27,12 +27,12 @@ You can buy a domain name from a domain name registrar, a company or organizatio
 >
 >Cloud Manager is not a domain name registrar and does not provide DNS services.
 
-## Custom Domains and BYO CDNs {#byo-cdn}
+## Custom Domain Names and BYO CDNs {#byo-cdn}
 
 AEM as a Cloud Service offers a built-in content delivery network (CDN) service, but also allows you to bring-your-own (BYO) CDN to use with AEM. Custom domains can be installed either in the AEM-managed CDN or a CDN you manage.
 
-* Custom domains (and certificates) that are installed in the AEM-managed CDN are managed via Cloud Manager.
-* Custom domains (and certificates) that are installed in your own CDN are managed in that specific CDN. 
+* Custom domain names (and certificates) that are installed in the AEM-managed CDN are managed via Cloud Manager.
+* Custom domain names (and certificates) that are installed in your own CDN are managed in that specific CDN. 
 
 Domains managed in your own CDN do not need to be installed via Cloud Manager. They will be made available to AEM via X-Forwarded-Host and will match the vhosts defined in the dispatcher. [Please see the CDN documentation for more information.](/help/implementing/dispatcher/cdn.md)
 
