@@ -1,6 +1,7 @@
 ---
 title: Footnotes Support
 description: RTE support for footnotes.
+exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 ---
 # Footnote Component {#footnotecomponent}
 
@@ -45,4 +46,4 @@ To add footnote in Adaptive Forms, perform the following steps:
 
 1. Save the properties.
 
-At runtime, number appears on the text as a superscript and its corresponding description appears in the **[!UICONTROL Footnote]** component at the position where [!UICONTROL Footnote Placeholder] is placed on the Adaptive Form. You can directly navigate to the footnote description by clicking its corresponding number on the [!UICONTROL Footnote]. 
+At runtime, number appears on the text as a superscript and its corresponding description appears in the **[!UICONTROL Footnote]** component at the position where [!UICONTROL Footnote Placeholder] is placed on the Adaptive Form. You can directly navigate to the footnote description by clicking its corresponding number on the [!UICONTROL Footnote].

@@ -414,7 +414,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
     + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
     + [Configure transcription for audio and video assets](/help/assets/configure-transcription.md)
-    + [Multilingual assets and translation](/help/assets/translate-assets.md)
+    + [Translate assets](/help/assets/translate-assets.md)
     + [Search facets](/help/assets/search-facets.md)
     + [Assets HTTP API](/help/assets/mac-api-assets.md)
     + [Content Fragments support in Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
@@ -540,6 +540,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
         + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+        + [Create an Adaptive Forms - Core Components in an AEM Sites page](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
         + [Summit Workbook](/help/forms/summit-2023-workbook.md)
     + Authoring Adaptive Forms - Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
@@ -782,8 +783,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Overview](/help/implementing/cloud-manager/overview-test-results.md)
       + [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
       + [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md)
-      + [Functional Testing](/help/implementing/cloud-manager/functional-testing.md)
-      + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
+      + Functional Testing {#functional-testing}
+        + [Functional Testing Overview](/help/implementing/cloud-manager/functional-testing.md)
+        + [Java Functional Testing](/help/implementing/cloud-manager/java-functional-testing.md)
+        + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
       + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
     + [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md)
     + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)

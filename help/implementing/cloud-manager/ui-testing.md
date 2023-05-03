@@ -269,15 +269,33 @@ Tests sometimes must upload files to the application being tested. In order to k
    * The content of the response is an opaque file handle.
    * You can use this handle in place of a file path in an `<input>` element to test file uploads in your application.
 
-## Running UI Tests Locally {#run-ui-tests-locally}
-
-Before activating UI tests in a Cloud Manager pipeline, it's recommended to run the UI tests locally towards the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) or in an actual AEM as a Cloud Service instance.
-
 ### Prerequisites {#prerequisites}
 
-The tests in Cloud Manager will be executed using a technical admin user.
+1. The tests in Cloud Manager will be executed using a technical admin user.
 
-For running the UI tests from your local machine, create a user with admin-like permissions to achieve the same behavior.
+>[!NOTE]
+>
+>For running the functional tests from your local machine, create a user with admin-like permissions to achieve the same behavior.
+
+1. The containerized infrastructure that is scoped for functional testing is limited by the following boundaries:
+
+| Type                 | Value | Description                                                        |
+|----------------------|-------|--------------------------------------------------------------------|
+| CPU                  | 2.0   | Amount of CPU-time reserved per test execution                     |
+| Memory               | 1Gi   | Amount of memory allocated the the test, value in gibibytes        |
+| Timeout              | 30m   | The duration after which the test will be terminated.              |
+| Recommended Duration | 15m   | We recommend to write the tests to not take longer than this time. |
+
+>[!NOTE]
+>
+> Should you need more resources, please create a Customer Care case and describe your use-case; our team will review your request and provide appropriate assistance.
+
+
+## Running UI Tests Locally {#run-ui-tests-locally}
+
+Before activating UI tests in a Cloud Manager pipeline, it's recommended to run the UI tests locally against 
+the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 
+or against an actual AEM as a Cloud Service instance.
 
 ### JavaScript Test Sample {#javascript-sample}
 
