@@ -230,7 +230,7 @@ Enhanced smart tagging is based on learning models of images and their tags. The
 
 * Inability to recognize subtle differences in images. For example, slim-fit versus regular-fit shirts.
 * Inability to identify tags based on tiny patterns or parts of an image. For example, logos on shirts.
-* Tagging is supported in the languages that [!DNL Experience Manager] supports. For a list of languages, see [Smart Content Service release notes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* Tagging is supported in the languages that [!DNL Experience Manager] supports.
 * The tags that are not handled relate to:
 
   * Non-visual, abstract aspects. For example, the year or season of release of a product, mood of or emotion evoked by an image, and a subjective connotation of a video.
