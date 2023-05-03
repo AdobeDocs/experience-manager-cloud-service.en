@@ -1287,11 +1287,11 @@ This query interrogates:
 This query interrogates:
 
 * for multiple Content Fragments of type `bookmark`
-  * with Fragment References to other fragment of the specific model type `article`
+  * with Fragment References to other fragments of the specific model type `article`
 
 >[!NOTE]
 >
->The field `fragments` has the Data type `fragment-reference`, with the model `Article` selected. Query delivers `fragments` as an array of `[Article]`
+>The field `fragments` has the Data type `fragment-reference`, with the model `Article` selected. Query delivers `fragments` as an array of `[Article]`.
 
 ```graphql
 {
@@ -1306,7 +1306,7 @@ This query interrogates:
 }
 ```
 
-#### Multiple referenced modlel types
+#### Multiple referenced model types
 
 This query interrogates:
 
@@ -1315,7 +1315,7 @@ This query interrogates:
 
 >[!NOTE]
 >
->The field `fragments` has the Data type `fragment-reference`, with the models `Article`, `Adventure` selected. Query deliver `fragments` as an array of `[AllFragmentModels]` which is dereferenced with union type.
+>The field `fragments` has the Data type `fragment-reference`, with the models `Article`, `Adventure` selected. Query delivers `fragments` as an array of `[AllFragmentModels]`, which is dereferenced with union type.
 
 ```graphql
 {
