@@ -1298,9 +1298,8 @@ This query interrogates:
   bookmarkList {
     items {
         fragments {
-            _path
-            author
-          }
+          _path
+          author
         }
      }
   }
