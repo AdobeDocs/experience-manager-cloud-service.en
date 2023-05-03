@@ -163,6 +163,8 @@ To do so, on the **Copy Content Activity** page, select the **Cancel** action fr
 >[!NOTE]
 >
 >When you cancel a content copy operation, it can result in a partial copy of the content in the destination environment. This can leave the destination environment in an unusable state.
+>
+>If your environment is in such a state due to cancellation, please reach out to Adobe Customer Care for assistance.
 
 ## Limitations {#limitations}
 
