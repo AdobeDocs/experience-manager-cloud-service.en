@@ -1282,16 +1282,40 @@ This query interrogates:
 
 ### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
 
+#### Single referenced model type
+
 This query interrogates:
 
 * for multiple Content Fragments of type `bookmark`
-  * with Fragment References to other fragments of the specific model types `article` and `adventure`
+  * with Fragment References to other fragment of the specific model type `article`
 
 >[!NOTE]
 >
->The field `fragments` has the Data type `fragment-reference`, with the models `Article`, `Adventure` selected.
+>The field `fragments` has the Data type `fragment-reference`, with the model `Article` selected. Query delivers `fragments` as an array of `[Article]`
 
-<!-- need replacement query -->
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### Multiple referenced modlel types
+
+This query interrogates:
+
+* for multiple Content Fragments of type `bookmark`
+  * with Fragment References to other fragments of the specific model types `Article` and `Adventure`
+
+>[!NOTE]
+>
+>The field `fragments` has the Data type `fragment-reference`, with the models `Article`, `Adventure` selected. Query deliver `fragments` as an array of `[AllFragmentModels]` which is dereferenced with union type.
 
 ```graphql
 {
