@@ -16,7 +16,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Launch the sample CodePen app"
->abstract="This guide walks through querying JSON data from your trial environment into a basic JavaScript web app. We'll use the Content Fragments you modelled and created in the earlier learning modules, so please work through those guides first before jumping into this one.<br><br>To demonstrate how content can be queried from a JavaScript web app, we've set up a CodePen which you can use as-is, or fork into your own account to customize further."
+>abstract="This guide walks through querying JSON data from your trial environment into a basic JavaScript web app. We'll use the Content Fragments you modelled and created in the earlier learning modules, so please work through those guides first before jumping into this one."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
@@ -45,7 +45,7 @@ If you see an error instead, check the browser console for more detail or reach 
 
 Now that you know a bit about CodePen, next you will configure the app to fetch data from the persisted query you created in a previous module.
 
-## JavaScript Code Walkthrough {#code-walkthrough}
+## Connecting an app to AEM {#code-walkthrough}
 
 The **JS** pane to the right in CodePen contains the Javascript of the example app. Beginning on line 2, we import the AEM Headless Client for JavaScript from the Skypack CDN. Skypack is used to facilitate development without a build step, but you can also use the AEM Headless Client with NPM or Yarn in your own projects. Check out the usage instructions in the [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) for further detail.
 
