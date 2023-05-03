@@ -1,8 +1,8 @@
 ---
 title: Rapid Development Environments
 description: Learn how to leverage Rapid Development Environments for rapid development iterations on a cloud environment.
+exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 ---
-
 # Rapid Development Environments {#rapid-development-environments}
 
 In order to deploy changes, current Cloud Development environments require the use of a process that employs extensive code security and quality rules called a CI/CD pipeline. For situations where quick and iterative changes are needed, Adobe has introduced Rapid Development Environments (RDEs for short).
@@ -494,4 +494,3 @@ Forms developers can use AEM Forms Cloud Service Rapid Development Environment t
 ## RDE tutorial
 
 To learn about RDE in AEM as a Cloud Service, refer to the [video tutorial that demonstrates how to set it up, how to use it, and the development life cycle](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
-
