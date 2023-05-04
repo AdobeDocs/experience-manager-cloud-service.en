@@ -220,7 +220,7 @@ Using **[!UICONTROL Adaptive Forms - Embed]** component, you can either embed ne
 1. Save the settings. The Adaptive Form  is now embedded in the page.
 
  >[!VIDEO](/help/forms/assets/adaptiveformembed_embedform.mp4)
-
+ 
 #### Configure Adaptive Form _ Embed Properties
 
 You can customize the advanced settings of the [!UICONTROL Adaptive Form - Embed] component. In the [!UICONTROL Edit Adaptive Forms - Embed] dialog, you can specify the following.
