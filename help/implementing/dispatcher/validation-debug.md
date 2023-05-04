@@ -81,6 +81,27 @@ You can have one or more of these files. They contain `<VirtualHost>` entries th
 >
 >In flexible mode you should use relative paths instead of absolute paths.
 
+Please ensure that at least one virtual host is always available that matches ServerAlias `\*.local`, `localhost` and `127.0.0.1` which are needed for the dispatcher invalidation. The server aliases `*.adobeaemcloud.net` and `*.adobeaemcloud.com` are also required in at least one vhost configuration and are needed for internal Adobe processes. 
+
+If you want to match the exact host because you have multiple vhost files you can follow the below example:
+
+```
+<VirtualHost *:80>
+	ServerName	"example.com"
+	# Put names of which domains are used for your published site/content here
+	ServerAlias	 "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
+	# Use a document root that matches the one in conf.dispatcher.d/default.farm
+	DocumentRoot "${DOCROOT}"
+	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+	AllowEncodedSlashes NoDecode
+	# Add header breadcrumbs for help in troubleshooting which vhost file is chosen
+	<IfModule mod_headers.c>
+		Header add X-Vhost "publish-example-com"
+	</IfModule>
+  ...
+</VirtualHost>
+```
+
 * `conf.d/rewrites/rewrite.rules`
 
 This file is included from inside your `.vhost` files. It has a set of rewrite rules for `mod_rewrite`.
@@ -130,7 +151,7 @@ It is recommended that the above files reference the immutable files listed belo
 Contains a sample virtual host. For your own virtual host, create a copy of this file, customize it, go to `conf.d/enabled_vhosts` and create a symbolic link to your customized copy.
 Do not copy the default.vhost file directly into `conf.d/enabled_vhosts`. 
 
-Ensure that a virtual host is always available that matches ServerAlias `\*.local` and also localhost, needed for internal Adobe processes.
+Ensure that a virtual host is always available that matches ServerAlias `\*.local`, `localhost` and `127.0.0.1` which are needed for the dispatcher invalidation. The server aliases `*.adobeaemcloud.net` and `*.adobeaemcloud.com` are needed for internal Adobe processes. 
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -223,8 +244,8 @@ Phase 3 finished
 The script has the following three phases:
 
 1. It runs the validator. If the configuration isn't valid, the script fails.
-2. It executes the `httpd -t` command to test if syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment.
-3. Checks that the subset of the Dispatcher SDK configuration files, which are intended to be immutable as described in the [File structure section](##flexible-mode-file-structure), has not been modified.
+2. It executes the `httpd -t` command to test if the syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment.
+3. Checks that the subset of the Dispatcher SDK configuration files, which are intended to be immutable as described in the [File structure section](##flexible-mode-file-structure), has not been modified and match the current SDK version.
 
 During a Cloud Manager deployment, the `httpd -t` syntax check will be executed as well and any errors will be included in the Cloud Manager `Build Images step failure` log.
 
@@ -274,7 +295,7 @@ and:
 
 **file included at unknown location: ...**
 
-There are four sections in your farm configuration where you're allowed to include your own file: `/clientheaders`, `filters`, `/rules` in `/cache` section and `/virtualhosts`. The included files need to be named as follows:
+There are four sections in your farm configuration where you're allowed to include your own files: `/clientheaders`, `filters`, `/rules` in `/cache` section and `/virtualhosts`. The included files need to be named as follows:
 
 | Section          | Include file name                    |
 |------------------|--------------------------------------|
@@ -373,11 +394,12 @@ Avoid this error by copying and pasting the path from Windows Explorer and then 
 
 ### Phase 2 {#second-phase}
 
-This phase checks the apache syntax by starting Docker in an image. Docker must be installed locally, but note that it’s not necessary for AEM to be running.
+This phase checks the apache syntax by starting Apache HTTPD in a docker container. Docker must be installed locally, but note that it’s not necessary for AEM to be running.
 
 >[!NOTE]
 >
 >Windows users need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer.
+>For both Windows and macOS we recommend using Docker Desktop.
 
 This phase can also be run independently through `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
@@ -406,6 +428,8 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 ```
 
 This phase can also be run independently through `bin/docker_immutability_check.sh src/dispatcher`.
+
+Your local immutable files can be updated by running the `bin/update_maven.sh src/dispatcher` script on your dispatcher folder, where `src/dispatcher` is your dispatcher configuration directory. This will also update any pom.xml file in the parent directory so that the maven immutability checks get updated as well.
 
 ## Debugging your Apache and Dispatcher configuration {#debugging-apache-and-dispatcher-configuration}
 
@@ -444,6 +468,10 @@ Log levels for those modules are defined by the variables `DISP_LOG_LEVEL` and `
 When running Dispatcher locally, logs are printed directly to the terminal output. Most of the time, you want these logs to be in DEBUG, which can be done by passing the Debug level as a parameter when running Docker. For example: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 Logs for cloud environments are exposed through the logging service available in Cloud Manager.
+
+>[!NOTE]
+>
+>For AEM as a Cloud Service environments, debug is the maximal verbosity level. The trace log level is not supported so you should avoid setting it when working in cloud environments.
 
 ### Automatic reloading and validation {#automatic-reloading}
 

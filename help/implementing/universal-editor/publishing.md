@@ -1,8 +1,8 @@
 ---
 title: Publishing Content with the Universal Visual Editor
 description: Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
+exl-id: aee34469-37c2-4571-806b-06c439a7524a
 ---
-
 # Publishing Content with the Universal Visual Editor {#publishing}
 
 Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
