@@ -151,7 +151,7 @@ On the playback side of the viewer, it automatically detects the browser's video
 
 >[!NOTE]
 >
->To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
+>To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).
 
 You can combine into a single player the ability to design the playback components using HTML5 and CSS. It can have embedded playback, and use adaptive and progressive streaming depending on the browser's capability. All this functionality, means you can extend the reach of your rich media content to both desktop and mobile users and ensure a streamlined video experience.
 
