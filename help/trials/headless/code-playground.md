@@ -16,7 +16,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Launch the sample CodePen app"
->abstract="This guide walks through querying JSON data from your trial environment into a basic JavaScript web app. We'll use the Content Fragments you modelled and created in the earlier learning modules, so please work through those guides first before jumping into this one.<br><br>To demonstrate how content can be queried from a JavaScript web app, we've set up a CodePen which you can use as-is, or fork into your own account to customize further."
+>abstract="This guide walks through querying JSON data from your trial environment into a basic JavaScript web app. We'll use the Content Fragments you modelled and created in the earlier learning modules, so please work through those guides first before jumping into this one."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
@@ -55,7 +55,7 @@ import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headles
 
 On line 6 we read your publish host details from the `publishHost` query parameter. This is the host that the AEM Headless Client will fetch data from. This would typically be coded into your app, but we are using a query parameter to make it easier for the CodePen app to work with different environments.
 
-We configure the AEM Headless Client on line 12 to use a proxy Adobe IO Runtime function to avoid CORS issues. This is not required for your own projects, but is required for the CodePen app to work with your trial environment. The proxy function is configured to use the `publishHost` value that was provided in the query parameter.
+We configure the AEM Headless Client on line 12:
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -66,6 +66,10 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
   }
 });
 ```
+
+>[!NOTE]
+>
+>The **serviceURL** is set to use a proxy Adobe IO Runtime function to avoid CORS issues. This is not required for your own projects, but is required for the CodePen app to work with your trial environment. The proxy function is configured to use the **publishHost** value that was provided in the query parameter.
 
 Finally, the function `fetchJsonFromGraphQL()` is used to perform the fetch request using the AEM Headless Client. It is called each time the code is changed, or can be triggered by clicking the **Refetch** link. The actual `aemHeadlessClient.runPersistedQuery(..)` call occurs on line 34. A bit later we'll make a change to the way this JSON data is rendered, but for now we'll just print it to the `#output` div using the `resultToPreTag(queryResult)` function.
 
