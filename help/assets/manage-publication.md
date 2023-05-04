@@ -90,7 +90,7 @@ After applying the filters, click **[!UICONTROL OK]**, and then click **[!UICONT
 
 In the above Illustration, you can see different values for the **[!UICONTROL Publish Target]** attribute. Let us recollect the fact that you have opted for publishing to [!DNL Experience Manager Assets] (`Destination: Publish`). Then, why is it showing that only a folder and an asset are published to `AEM`, and the other two assets are published to both `AEM` and `Dynamic Media`?
 
-Here, you must understand the role of folder properties. A folder’s **[!UICONTROL Dynamic Media Publishing mode]** property plays an important role in publication. To view a folder’s properties, select a folder and click **[!UICONTROL Properties]** from the toolbar. For an asset, see the properties of its parent folder. 
+Here, you must understand the role of folder properties. A folder's **[!UICONTROL Dynamic Media Publishing mode]** property plays an important role in publication. To view a folder's properties, select a folder and click **[!UICONTROL Properties]** from the toolbar. For an asset, see the properties of its parent folder. 
 
 The following table explains how the publication occurs depending on the defined **[!UICONTROL Destination]** and **[!UICONTROL Dynamic Media Publish mode]**:
 
@@ -177,3 +177,18 @@ You can publish assets, folders, and collections to the [!DNL Experience Manager
 * Empty folders are not published.
 * If you publish an asset that is being processed, only the original content is published. The renditions are missing. Either wait for the processing to complete and then publish or republish the asset once the processing completes.
 * While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because they may be referred by other published assets.
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
