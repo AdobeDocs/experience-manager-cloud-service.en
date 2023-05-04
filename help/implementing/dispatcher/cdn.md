@@ -24,10 +24,6 @@ Follow the sections below to use Cloud Manager self-service UI to prepare for co
 1. [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
->[!NOTE]
->
->Custom domains are supported in Cloud Manager **only** if you are using the AEM managed CDN. If you bring your own CDN and [point it to the AEM managed CDN](#point-to-point-CDN) you will have to use that specific CDN to manage domains not Cloud Manager.
-
 **Restricting traffic**
 
 By default, for an AEM managed CDN setup, all public traffic can make its way to the publish service, for both production and non-production (development and stage) environments. If you wish to limit traffic to the publish service for a given environment (for example, limiting staging by a range of IP addresses) you can do this in a self-service way via Cloud Manager UI.
