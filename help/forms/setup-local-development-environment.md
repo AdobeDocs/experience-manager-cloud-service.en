@@ -463,7 +463,7 @@ To enable Adaptive Forms Core Components for your AEM Forms as a Cloud Service e
     
     ```
 
-    > [!NOTE]
+    >[!NOTE]
     >
     >  Replace ${appId} with the appId of your archetype.
 
