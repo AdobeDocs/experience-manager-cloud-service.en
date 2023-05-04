@@ -5,7 +5,7 @@ description: Learn how AEM as a Cloud Service supports additional publish region
 
 # Additional Publish Regions {#additional-publish-regions}
 
-Additional Publish Regions can be licensed and enabled on programs set up with AEM Sites. When configured, traffic on stage and production environments is routed to multiple publish farms, which has the following benefits:
+Additional publish regions can be licensed and enabled on programs set up with AEM Sites. When configured, traffic on stage and production environments is routed to multiple publish farms, which has the following benefits:
 
 * Reduced Latency - Requests that route from the CDN to the AEM publish instances are directed to the nearest publish region, which is advantageous for websites and applications visited by users in multiple geographies.
 * Higher Availability - If a region is not available, the CDN directs traffic to the other available region(s).
@@ -15,8 +15,8 @@ Organizations may license up to three additional publish regions.
 
 >[!NOTE]
 >
->This feature is currently only available for AEM Sites. It also cannot be applied to sandbox programs. In addition, please be aware that Additional Publish Regions require your program to be updated to AEM release version 10912 or higher.
-
+>This feature is currently only available for AEM Sites. It also cannot be applied to sandbox programs. In addition, please be aware that additional publish regions feature requires your program to be updated to AEM release version 10912 or higher.
+ß
 ## Use Cases {#use-cases}
 
 Below are a few use cases where organizations can benefit from licensing additional publish regions.
@@ -36,3 +36,14 @@ Additional publish regions are applied to stage and production environments, but
 When an additional publish region is enabled on a program with advanced networking already configured, the traffic in the additional publish region that matches the advanced networking rules will by default route through the primary region. In order to take advantage of increased availability, it is recommended to enable advanced networking for the secondary region.
 
 Please refer to the [Advanced Networking Considerations for Additional Publish Regions section](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) in the Advanced Networking documentation for details, including how to add advanced networking configurations for additional regions without incurring loss of connectivity.
+
+## Limitations {#limitations}
+
+Please keep these limitations in mind when considering using additional publish regions.
+
+* Additional publish regions may only be added to AEM Sites. Additional publish regions do not extend to other AEM solutions or related functionality deployed in the same program (e.g. AEM Forms or Adobe Learning Manager).
+* Additional regions can only be added if associated entitlements are available and unused in the tenant.
+* A maximum of three additional publish regions can be added to any individual environment.
+* Additional regions are available on production programs only. The feature is not available in sandbox programs.
+* Additional publish regions are applied to stage and production environments only, not to RDE or development environments.
+* Additional publish regions require your program to be updated to AEM release version 10912 or higher.
