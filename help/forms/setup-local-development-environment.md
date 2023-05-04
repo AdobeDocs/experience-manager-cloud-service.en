@@ -533,7 +533,7 @@ To enable Adaptive Forms Core Components for your AEM Forms as a Cloud Service e
     > `<artifactId>core-forms-components-core</artifactId>`
     > `</dependency>`
 
-1. [Run the pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). After the successful pipeline run, Adaptive Forms Core Components are enabled for your environment. Also, Adaptive Forms (Core Componets) template and Canvas theme are added to your Forms as a Cloud Service environment. 
+1. [Run the pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). After the successful pipeline run, Adaptive Forms Core Components are enabled for your environment. Also, Adaptive Forms (Core Components) template and Canvas theme are added to your Forms as a Cloud Service environment. 
 
 
 ## Upgrade your local development environment {#upgrade-your-local-development-environment}
