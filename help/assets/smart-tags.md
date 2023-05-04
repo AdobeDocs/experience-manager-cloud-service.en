@@ -230,7 +230,7 @@ Enhanced smart tagging is based on learning models of images and their tags. The
 
 * Inability to recognize subtle differences in images. For example, slim-fit versus regular-fit shirts.
 * Inability to identify tags based on tiny patterns or parts of an image. For example, logos on shirts.
-* Tagging is supported in the languages that [!DNL Experience Manager] supports. For a list of languages, see [Smart Content Service release notes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* Tagging is supported in the languages that [!DNL Experience Manager] supports.
 * The tags that are not handled relate to:
 
   * Non-visual, abstract aspects. For example, the year or season of release of a product, mood of or emotion evoked by an image, and a subjective connotation of a video.
@@ -246,6 +246,21 @@ To search for files with smart tags (regular or enhanced), use the [!DNL Assets]
 >
 >The ability of the Smart Tags to train on your tags and apply them on other images depends on the quality of images you use for training.
 >For best results, Adobe recommends that you use visually similar images to train the service for each tag.
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
