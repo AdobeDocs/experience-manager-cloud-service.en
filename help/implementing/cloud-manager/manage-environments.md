@@ -64,7 +64,7 @@ The **Overview** screen now displays your new environment in the **Environments*
 
 ## Multiple Publish Regions {#multiple-regions}
 
-A user with the **Business Owner** role can configure prod and staging environments to include up to three additional publish regions in addition to the primary region. Additional publish regions can improve availability.
+A user with the **Business Owner** role can configure prod and staging environments to include up to three additional publish regions in addition to the primary region. Additional publish regions can improve availability. See the [Additional Publish Regions documentation](/help/operations/additional-publish-regions.md) for more details.
 
 >[!TIP]
 >
@@ -112,14 +112,6 @@ You can also remove additional publish regions. However you can only add or only
 Changes made to the production environment will apply to both production and staging environments. Changes to multiple publish regions can only be edited in the production environment.
 
 If you wish to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended to do this before adding additional publish regions to the environments. Otherwise the additional publish regions' traffic will go through the primary region's proxy.
-
-### Multiple Region Limitations {#limitations}
-
-* Additional regions can only be added if associated entitlements are available and unused in the tenant.
-* A maximum of three additional publish regions can be added to any individual environment.
-* Additional regions are available on production programs only. It is not available in sandbox programs.
-* Additional regions are available only if the program has the Sites solution enabled.
-* Additional publish regions may only be added to AEM Sites. Additional publish regions do not extend to other AEM solutions or related functionality deployed in the same program (e.g. AEM Forms or Adobe Learning Manager).
 
 ## Environment Details {#viewing-environment}
 
