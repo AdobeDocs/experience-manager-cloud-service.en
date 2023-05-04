@@ -50,11 +50,11 @@ This:
 
 * Allows AEM as a Cloud Service to accommodate your traffic patterns as they change.
 
-The scaling of per-tenant instances of the service can be automatic or manual, on the two axes:
+The scaling of per-tenant instances of the service applies to the two axes:
 
-* Vertical: allocated memory and CPU capacity can be scaled up or down for a fixed number of nodes.
+* Horizontal: the number of nodes for a given service are increased or decreased automatically, still allowing for individual default configurations.
 
-* Horizontal: the number of nodes for a given service can be increased or decreased.
+* Vertical: allocated memory and CPU capacity can be scaled up or down via configuration for a fixed number of nodes to address individual requirements as needed.
 
 ## Environments {#environments}
 
