@@ -9,7 +9,9 @@ exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
 ---
 # Reuse assets using MSM for [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
-Multi Site Manager (MSM) functionality in [!DNL Adobe Experience Manager] enables users to reuse content that is authored once and is reused across multiple web-locations. The same functionality is available for digital assets by the name MSM for [!DNL Assets]. Using MSM for [!DNL Assets], you can:
+Multi Site Manager (MSM) functionality in [!DNL Adobe Experience Manager] enables users to reuse content that is authored once and is reused across multiple web-locations. The same functionality is available for digital assets by the name MSM for [!DNL Assets]. This functionality includes Content Fragments (a Sites feature stored as Assets). 
+
+Using MSM for [!DNL Assets], you can:
 
 * Create assets once and then make copies of these assets to reuse in other areas of the site.
 * Keep multiple copies in synchronization and update the original primary copy once to push the changes to the child copies.
@@ -55,7 +57,7 @@ To create live copy from one or more source assets or folders, follow either of 
 * Method 1: Select the source assets and click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]** from toolbar at the top.
 * Method 2: In [!DNL Experience Manager] user interface, click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]** from upper-right corner of the interface.
 
-You can create live copies of an asset or a folder one at a time. You can create live copies that are derived from an asset or a folder that is a live copy itself. Content Fragments (CFs) are not supported for the use case. When attempting to create their live copies, CFs are copied over as is without any relationship. The copied CFs are a snapshot in time and does not update when original CFs are updated.
+You can create live copies of an asset or a folder one at a time. You can create live copies that are derived from an asset or a folder that is a live copy itself.
 
 To create live copies using the first method, follow these steps:
 
@@ -312,8 +314,6 @@ In more scenarios, MSM for [!DNL Assets] matches the behavior of MSM for Sites f
 
 Following are limitations of MSM for [!DNL Assets].
 
-* Content Fragments are not supported. When attempting to create the live copies, Content Fragments are copied as is without any relationship. The copied Content Fragments are a snapshot in time and do not update when you update the original Content Fragments.
-
 * MSM does not work with metadata writeback enabled. Upon writeback, the inheritance breaks.
 
 **See also**
@@ -330,3 +330,4 @@ Following are limitations of MSM for [!DNL Assets].
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
