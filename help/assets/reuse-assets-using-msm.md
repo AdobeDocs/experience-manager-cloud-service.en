@@ -19,9 +19,15 @@ Using MSM for [!DNL Assets], you can:
 
 >[!NOTE]
 >
->The MSM for Assets functionality includes Content Fragments, which are stored as Assets (though considered a Sites feature). 
+>The MSM for [!DNL Assets] functionality includes Content Fragments, which are stored as [!DNL Assets] (though considered a Sites feature).
 
-## Understand the benefits and the concepts oF MSM {#concepts}
+>[!CAUTION]
+>
+>MSM for Content Fragments is only available when using Content Fragments via the **[!UICONTROL Assets]** console. 
+>
+>MSM functionality is *not* available when using the **[!UICONTROL Content Fragments]** console.
+
+## Understand the benefits and the concepts of MSM {#concepts}
 
 ### How it works and the benefits {#how-it-works-and-the-benefits}
 
@@ -348,7 +354,7 @@ In more scenarios, MSM for [!DNL Assets] matches the behavior of MSM for Sites f
 
 >[!NOTE]
 >
->Please remember that MSM for Content Fragments uses the Assets functionality; this is because they are stored as Assets (though considered a Sites feature). 
+>Please remember that MSM for Content Fragments (accessed through the **[!UICONTROL Assets]** console) uses the Assets functionality; this is because they are stored as Assets (though considered a Sites feature). 
 
 ## Limitations and known issues of MSM for [!DNL Assets] {#limitations}
 
