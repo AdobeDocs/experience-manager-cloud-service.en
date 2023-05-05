@@ -9,13 +9,17 @@ exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
 ---
 # Reuse assets using MSM for [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
-Multi Site Manager (MSM) functionality in [!DNL Adobe Experience Manager] enables users to reuse content that is authored once and is reused across multiple web-locations. The same functionality is available for digital assets by the name MSM for [!DNL Assets]. This functionality includes Content Fragments (a Sites feature stored as Assets). 
+Multi Site Manager (MSM) functionality in [!DNL Adobe Experience Manager] enables users to reuse content that is authored once and is reused across multiple web-locations. The same functionality is available for digital assets by the name MSM for [!DNL Assets]. 
 
 Using MSM for [!DNL Assets], you can:
 
 * Create assets once and then make copies of these assets to reuse in other areas of the site.
 * Keep multiple copies in synchronization and update the original primary copy once to push the changes to the child copies.
 * Make local changes by temporarily or permanently suspending the linking between parent and child assets.
+
+>[!NOTE]
+>
+>The MSM for Assets functionality includes Content Fragments, which are stored as Assets (though considered a Sites feature). 
 
 ## Understand the benefits and the concepts oF MSM {#concepts}
 
@@ -34,7 +38,7 @@ MSM maintains a live relationship between the source asset and its live copies s
 
 **Live copy:** The copy of the source assets/folders that is in synchronization with its source. Live copies can be a source of further live copies. See how to create LCs.
 
-**Inheritance:** A link/reference between a live copy asset/folder and its source that the system uses to remember where to send the updates. Inheritance exists at a granular level for metadata fields. Inheritance can be removed for selective metadata fields while preserving the live relationship between source and its live copy.
+**Inheritance:** A link/reference between a live copy asset/folder and its source that the system uses to remember where to send the updates. Inheritance exists at a granular level for metadata fields, also Content Fragment variations and fields. Inheritance can be removed for selected items while preserving the live relationship between source and its live copy.
 
 **Rollout:** An action that pushes the modifications made to the source downstream to its live copies. It is possible to update one or more live copies in one go using rollout action. See rollout.
 
@@ -309,6 +313,10 @@ In more scenarios, MSM for [!DNL Assets] matches the behavior of MSM for Sites f
 * Removing the chapters step in the create site wizard is not supported in MSM for [!DNL Assets].
 * Configuring MSM locks on page properties is not supported in MSM for [!DNL Assets].
 * For MSM for [!DNL Assets], use only the **[!UICONTROL Standard rollout config]**. The other rollout configurations are not available for MSM for [!DNL Assets].
+
+>[!NOTE]
+>
+>Please remember that MSM for Content Fragments uses the Assets functionality; this is because they are stored as Assets (though considered a Sites feature). 
 
 ## Limitations and known issues of MSM for [!DNL Assets] {#limitations}
 
