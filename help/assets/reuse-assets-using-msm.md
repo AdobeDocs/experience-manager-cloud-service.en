@@ -228,6 +228,38 @@ To see the statuses and information related to a synchronize action, see [Inform
 >
 >If the relationship is suspended, the synchronize action is not available in the toolbar. While synchronize action is available in the References rail, the modifications are not propagated even upon a successful rollout.
 
+## Canceling, and re-enabling, inheritance for individual items {#canceling-reenabling-inheritance-individual-items}
+
+You can cancel the Live Copy inheritance for a:
+
+* metadata field
+* Content Fragment variation
+* Content Fragment data field
+
+This will mean that the item is no longer synchronized with the source component. You can enable inheritance at a later point if required.
+
+### Cancel Inheritance {#cancel-inheritance}
+
+To cancel inheritance:
+
+1. Select the **Cancel Inheritance** icon, next to the required item:
+
+   ![Synchronize action pulls the changes made to the source](assets/cancel-inheritance-icon.png)
+
+1. In the Cancel Inheritance dialog box, confirm the action with Yes.
+
+### Re-enable Inheritance {#reenable-inheritance}
+
+To re-enable inheritance:
+
+1. To enable inheritance for an item, select the **Re-enable Inheritance** icon next to the required item: 
+
+   ![Synchronize action pulls the changes made to the source](assets/re-enable-inheritance-icon.png)
+
+   >[!NOTE]
+   >
+   >When you re-enable inheritance, the item is not automatically synchronized with the source. You can manually request a synchronization if this is required.
+
 ## Suspend and resume relationship {#suspend-resume}
 
 You can temporarily suspend the relationship to prevent a live copy from receiving modifications made to the source asset or folder. The relationship can also be resumed for live copy to start receiving the modifications from source.
