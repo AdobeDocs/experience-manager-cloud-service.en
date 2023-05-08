@@ -53,6 +53,7 @@ This and the following pages cover the tasks for creating, configuring, maintain
 >* [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
+>* [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md) (only available through the Assets console)
 
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 

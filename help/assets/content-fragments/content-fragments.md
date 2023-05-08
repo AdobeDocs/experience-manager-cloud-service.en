@@ -40,6 +40,7 @@ This and the following pages cover the tasks for creating, configuring, maintain
 * [Using Associated Content](/help/assets/content-fragments/content-fragments-assoc-content.md) - adding associated content
 * [Metadata - Fragment Properties](/help/assets/content-fragments/content-fragments-metadata.md) - viewing and editing the fragment properties
 * Use [Content Fragments, together with GraphQL, to deliver content](/help/assets/content-fragments/content-fragments-graphql.md) for use in your applications. To help with this, you can preview [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md).
+* [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md)
 
 >[!NOTE]
 >
