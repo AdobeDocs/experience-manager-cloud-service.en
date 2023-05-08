@@ -252,8 +252,6 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
     ```shell
 
-    mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=40 -D aemVersion="cloud" -D appTitle="Borgo AEM Forms" -D appId="bgaemforms" -D groupId="com.bgaemforms" -D includeFormsenrollment="y" -D includeFormscommunications="y" -D includeExamples="y" -D 
-
     mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion="41" -D appTitle=mysite -D appId=mysite -D groupId=com.mysite -D includeFormsenrollment="y" -D aemVersion="cloud"
     
     ```
@@ -335,7 +333,7 @@ To enable Adaptive Forms Core Components for your AEM Forms as a Cloud Service e
 
 1.  Open your AEM Archetype project folder in a plain text code editor. For example, VS Code.
     
-1.  Open top level .pom file (parent pom) of your AEM Archetype project in your local environment, add the following properties to the file and save it. 
+1.  Open top level `.pom` file (parent pom) of your AEM Archetype project in your local environment, add the following properties to the file and save it. 
     
     ```XML
 
@@ -348,75 +346,181 @@ To enable Adaptive Forms Core Components for your AEM Forms as a Cloud Service e
 
     For the latest version of `core.forms.components` and `core.wcm.components`, check [core components documentation](https://github.com/adobe/aem-core-forms-components).
 
-1.  In the dependencies section of the top level (parent) ppm.xml file, add the following dependencies:
+1.  In the dependencies section of the top level (parent) `pom.xml` file, add the following dependencies:
 
     ```XML
 
-        <!-- Forms Core Component Dependencies -->
-                <dependency>
-                    <groupId>com.adobe.aem</groupId>
-                    <artifactId>core-forms-components-core</artifactId>
-                    <version>${core.forms.components.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>com.adobe.aem</groupId>
-                    <artifactId>core-forms-components-apps</artifactId>
-                    <version>${core.forms.components.version}</version>
-                    <type>zip</type>
-                </dependency>
-                <dependency>
-                    <groupId>com.adobe.aem</groupId>
-                    <artifactId>core-forms-components-af-core</artifactId>
-                    <version>${core.forms.components.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>com.adobe.aem</groupId>
-                    <artifactId>core-forms-components-af-apps</artifactId>
-                    <version>${core.forms.components.version}</version>
-                    <type>zip</type>
-                </dependency>
-                <dependency>
-                    <groupId>com.adobe.aem</groupId>
-                    <artifactId>core-forms-components-examples-apps</artifactId>
-                    <type>zip</type>
-                    <version>${core.forms.components.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>com.adobe.aem</groupId>
-                    <artifactId>core-forms-components-examples-content</artifactId>
-                    <type>zip</type>
-                    <version>${core.forms.components.version}</version>
-                </dependency>
-        <!-- End of AEM Forms Core Component Dependencies -->
+        <!-- WCM Core Component Examples Dependencies -->
+            <dependency>
+                <groupId>com.adobe.cq</groupId>
+                <artifactId>core.wcm.components.examples.ui.apps</artifactId>
+                <type>zip</type>
+                <version>${core.wcm.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.cq</groupId>
+                <artifactId>core.wcm.components.examples.ui.content</artifactId>
+                <type>zip</type>
+                <version>${core.wcm.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.cq</groupId>
+                <artifactId>core.wcm.components.examples.ui.config</artifactId>
+                <version>${core.wcm.components.version}</version>
+                <type>zip</type>
+            </dependency>    
+            <!-- End of WCM Core Component Examples Dependencies -->
+             <!-- Forms Core Component Dependencies -->
+            <dependency>
+                <groupId>com.adobe.aem</groupId>
+                <artifactId>core-forms-components-core</artifactId>
+                <version>${core.forms.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.aem</groupId>
+                <artifactId>core-forms-components-apps</artifactId>
+                <version>${core.forms.components.version}</version>
+                <type>zip</type>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.aem</groupId>
+                <artifactId>core-forms-components-af-core</artifactId>
+                <version>${core.forms.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.aem</groupId>
+                <artifactId>core-forms-components-af-apps</artifactId>
+                <version>${core.forms.components.version}</version>
+                <type>zip</type>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.aem</groupId>
+                <artifactId>core-forms-components-examples-apps</artifactId>
+                <type>zip</type>
+                <version>${core.forms.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.aem</groupId>
+                <artifactId>core-forms-components-examples-content</artifactId>
+                <type>zip</type>
+                <version>${core.forms.components.version}</version>
+            </dependency>
+      <!-- End of AEM Forms Core Component Dependencies -->
     
     ```
 
-1.  Open the all/pom.xml file and add the following dependencies to add Adaptive Forms Core Components artifacts to your AEM Archetype project: 
+1.  Open the `all/pom.xml` file and add the following dependencies in the `embedded` section to add Adaptive Forms Core Components artifacts to your AEM Archetype project: 
 
     ```XML
 
-        <dependency>
+        <!-- WCM Core Component Examples Dependencies -->
+            
+            <!-- inside plugin config of filevault-package-maven-plugin -->  
+            <!-- embed wcm core components examples artifacts -->
+        
+            <embedded>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.wcm.components.examples.ui.apps</artifactId>
+            <type>zip</type>
+            <target>/apps/${appId}-vendor-packages/content/install</target>
+            </embedded>
+            <embedded>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.wcm.components.examples.ui.content</artifactId>
+            <type>zip</type>
+            <target>/apps/${appId}-vendor-packages/content/install</target>
+             </embedded>
+            <embedded>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.wcm.components.examples.ui.config</artifactId>
+            <type>zip</type>
+            <target>/apps/${appId}-vendor-packages/content/install</target>
+            </embedded>
+            <!-- embed forms core components artifacts -->
+            <embedded>
             <groupId>com.adobe.aem</groupId>
             <artifactId>core-forms-components-af-apps</artifactId>
             <type>zip</type>
-        </dependency>
-        <dependency>
+            <target>/apps/${appId}-vendor-packages/application/install</target>
+             </embedded>
+            <embedded>
+            <groupId>com.adobe.aem</groupId>
+            <artifactId>core-forms-components-af-core</artifactId>
+            <target>/apps/${appId}-vendor-packages/application/install</target>
+             </embedded>
+            <embedded>
             <groupId>com.adobe.aem</groupId>
             <artifactId>core-forms-components-examples-apps</artifactId>
             <type>zip</type>
-        </dependency>
-        <dependency>
+            <target>/apps/${appId}-vendor-packages/content/install</target>
+            </embedded>
+            <embedded>
             <groupId>com.adobe.aem</groupId>
             <artifactId>core-forms-components-examples-content</artifactId>
             <type>zip</type>
-        </dependency>
+            <target>/apps/${appId}-vendor-packages/content/install</target>
+            </embedded>
+    
+    ```
 
+    >[!NOTE]
+    >
+    >  Replace ${appId} with the appId of your archetype.
+
+1. In the dependencies section of the `all/pom.xml` file, add the following dependencies:
+
+    ```XML
+
+        <!-- Other existing dependencies -->
+        <!-- wcm core components examples dependencies -->
+         <dependency>
+         <groupId>com.adobe.cq</groupId>
+         <artifactId>core.wcm.components.examples.ui.apps</artifactId>
+         <type>zip</type>
+        </dependency>
+        <dependency>
+         <groupId>com.adobe.cq</groupId>
+         <artifactId>core.wcm.components.examples.ui.config</artifactId>
+         <type>zip</type>
+         </dependency>
+        <dependency>
+         <groupId>com.adobe.cq</groupId>
+         <artifactId>core.wcm.components.examples.ui.content</artifactId>
+         <type>zip</type>
+        </dependency>
+         <!-- forms core components dependencies -->
+        <dependency>
+         <groupId>com.adobe.aem</groupId>
+         <artifactId>core-forms-components-af-apps</artifactId>
+         <type>zip</type>
+        </dependency>
+        <dependency>
+         <groupId>com.adobe.aem</groupId>
+         <artifactId>core-forms-components-examples-apps</artifactId>
+         <type>zip</type>
+        </dependency>
+         <dependency>
+         <groupId>com.adobe.aem</groupId>
+         <artifactId>core-forms-components-examples-content</artifactId>
+         <type>zip</type>
+        </dependency>
+    
+    ```
+
+1. Include `af-core bundle` dependency in the `ui.apps/pom.xml`
+
+    ```XML
+
+         <dependency>
+        <groupId>com.adobe.aem</groupId>
+        <artifactId>core-forms-components-af-core</artifactId>
+        </dependency>
+    
     ```
 
     >[!NOTE]
     >
     >Ensure that the following Adaptive Forms Core Components artifacts are not included in your project.
-    > 
     > `<dependency>`
     > `<groupId>com.adobe.aem</groupId>` 
     > `<artifactId>core-forms-components-apps</artifactId>`
@@ -429,7 +533,7 @@ To enable Adaptive Forms Core Components for your AEM Forms as a Cloud Service e
     > `<artifactId>core-forms-components-core</artifactId>`
     > `</dependency>`
 
-1. [Run the pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). After the successful pipeline run, Adaptive Forms Core Components are enabled for your environment. Also, Adaptive Forms (Core Componets) template and Canvas theme are added to your Forms as a Cloud Service environment. 
+1. [Run the pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). After the successful pipeline run, Adaptive Forms Core Components are enabled for your environment. Also, Adaptive Forms (Core Components) template and Canvas theme are added to your Forms as a Cloud Service environment. 
 
 
 ## Upgrade your local development environment {#upgrade-your-local-development-environment}
