@@ -174,6 +174,10 @@ Many properties are self-explanatory, for certain properties additional details 
   >
   >Variations can have the same *unique* value as variations of the same fragment, but not the same value as used in any variation of other fragments.
 
+  >[!CAUTION]
+  >
+  >If you want to use MSM (which creates copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective Content Fragment Models. MSM for Content Fragments is only available from the **Assets** console.
+
 * See **[Content Reference](#content-reference)** for more details about that specific data type and its properties.
 
 * See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
