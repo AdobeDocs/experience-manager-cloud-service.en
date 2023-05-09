@@ -54,8 +54,7 @@ In this lesson, you familiarize yourself with AEM Forms as a Cloud Service envir
 
 ### Exercise
 
-1.  Open your browser and enter the URL of the Cloud Service author environment. For example:
-    [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
+1.  Open your browser and enter the URL of the Cloud Service author environment.
 
 1.  Log in to the Cloud Service author environment. The login credentials for your author environment will be shared with you during the lab. 
 
@@ -421,8 +420,8 @@ Let's check the execution of rules in this headless form:
 
 Let's make changes on the form on the server as a business user and view changes reflected in the headless form automatically.
 
-1.  Open the AEM Forms management interface in the browser. For example, [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
-
+1.  Open the AEM Forms management interface in the browser.
+\
 1.  Select the **registration** form and click **Edit.** It opens the form in the adaptive forms editor.
 
     ![](/help/forms/assets/screenshot2028118529.png)
@@ -536,7 +535,7 @@ To render the form hosted on your cloud service publish environment:
 
 1.  Set the following values for the variables in the .env file. After updating variables, save the file. Use the **CTRL + S** switch combination to save the file. 
 
-    *   **AEM_URL**: Specify the URL of the cloud service publish environment. For example, [https://publish-p105303-e986623.adobeaemcloud.com](https://publish-p105303-e986623.adobeaemcloud.com/)
+    *   **AEM_URL**: Specify the URL of the cloud service publish environment.
 
     *   **AEM_FORM_PATH**: Specify the path of the adaptive form created in the previous lesson. For example, /content/forms/af/registration/
 
