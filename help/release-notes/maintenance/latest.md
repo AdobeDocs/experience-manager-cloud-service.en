@@ -14,18 +14,18 @@ Summarized below are the continuous improvements for maintenance release 11873, 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
 ### Enhancements {#enhancements}
-SITES-1200 - Enhance Search API with tags based filtering
-SITES-11922 - Unpublish from preview does not remove sync status
-ASSETS-21648 - Permission Issue with Asset Relate Functionality
-GRANITE-42939 - Add deprecation annotations and warnings to oauth-server code
-support the synchronisation of diffs for the profile. The solution would serialise and send only the properties that changed.
+- SITES-1200 - Search API enhancements with tags based filtering
+- GRANITE-42939 - Add deprecation annotations and warnings to oauth-server code
 
 ### Known Issues {#known-issues-x}
 None
 
 ### Fixed Issues {#fixed-issues-x}
-SKYSI-19884/SKYOPS-53745 - PublishPageRenderingErrorsHigh
-GRANITE-4388 - Throughput degradation after large number of DAM asset-writes on Mongo
+- SKYSI-19884/SKYOPS-53745 - Fixed issue with PublishPageRenderingErrorsHigh
+- GRANITE-4388 - Fixed the throughput degradation after large number of DAM asset-writes on Mongo
+- SITES-11922 - Fixed issue with unpublish from preview that did not remove sync status
+- ASSETS-21648 - Fixed permission issue with Asset Relate Functionality
+
 
 ### Embedded Technologies {#embedded-tech-x}
 
