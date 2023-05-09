@@ -86,6 +86,10 @@ The following section applies to the new version of the Content Transfer Tool. F
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
+   >[!NOTE]
+   >
+   >The name must follow the same conventions of an AEM node so cannot contain any of these characters: . / : [ ] | *
+
 1. You should now see your migration list in the list view. Click on the three dots symbol (**...**) to open the dropdown and click on **Copy Extraction key**. You will need this key during the Extraction phase. Copy this Extraction key.
 
    >[!NOTE]
