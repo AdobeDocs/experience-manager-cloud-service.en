@@ -18,14 +18,14 @@ Feature enablement for this maintenance release will provide you with the full f
 - GRANITE-42939 - Add deprecation annotations and warnings to oauth-server code
 
 ### Known Issues {#known-issues-x}
-None
+
+None.
 
 ### Fixed Issues {#fixed-issues-x}
 - SKYSI-19884/SKYOPS-53745 - Fixed issue with PublishPageRenderingErrorsHigh
 - GRANITE-4388 - Fixed the throughput degradation after large number of DAM asset-writes on Mongo
 - SITES-11922 - Fixed issue with unpublish from preview that did not remove sync status
 - ASSETS-21648 - Fixed permission issue with Asset Relate Functionality
-
 
 ### Embedded Technologies {#embedded-tech-x}
 
