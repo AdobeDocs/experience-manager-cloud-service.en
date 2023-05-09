@@ -981,14 +981,16 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
       * [Sample Query for Image Delivery with a single specified parameter](#image-delivery-single-specified-parameter)
 
-    * `_tags` : to reveal the IDs of Content Fragments or Variations that contain tags; this is an array of `cq:tags` identifiers. 
+  * `_tags` : to reveal the IDs of Content Fragments or Variations that contain tags; this is an array of `cq:tags` identifiers. 
 
-      * See [Sample Query - Names of All Cities Tagged as City Breaks](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
-      * See [Sample Query for Content Fragment Variations of a given Model that have a specific tag attached](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
+    * See [Sample Query - Names of All Cities Tagged as City Breaks](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
+    * See [Sample Query for Content Fragment Variations of a given Model that have a specific tag attached](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
+    * See [Sample Query with filtering by _tags ID and excluding variatons](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+    * See [Sample Query with filtering by _tags ID and including variatons](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
 
-      >[!NOTE]
-      >
-      >Tags can also be queried by listing the Metadata of a Content Fragment.
+    >[!NOTE]
+    >
+    >Tags can also be queried by listing the Metadata of a Content Fragment.
 
   * And operations:
   

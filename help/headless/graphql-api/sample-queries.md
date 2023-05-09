@@ -1711,6 +1711,84 @@ This query interrogates:
 }
 ```
 
+### Sample Query with filtering by _tags ID and excluding variatons {#sample-filtering-tag-not-variations}
+
+This query interrogates:
+
+* for Content Fragments of type `vehicle` having the tag `big-block`
+* excluding variations
+
+**Sample Query**
+
+```graphql
+query {
+  vehicleList(
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    items {
+      _variation
+      _path
+      type
+      name
+      model
+      fuel
+      _tags
+    }
+  }
+} 
+```
+
+### Sample Query with filtering by _tags ID and including variatons {#sample-filtering-tag-with-variations}
+
+This query interrogates:
+
+* for Content Fragments of type `vehicle` having the tag `big-block`
+* including variations
+
+**Sample Query**
+
+```graphql
+{
+  enginePaginated(after: "SjkKNmVkODFmMGQtNTQyYy00NmQ4LTljMzktMjhlNzQwZTY1YWI2Cmo5", first: 9 ,includeVariations:true, sort: "name",
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    edges{
+    node {
+        _variation
+        _path
+        name
+        type
+        size
+        _tags
+        _metadata {
+          stringArrayMetadata {
+            name
+            value
+          }
+        }
+    }
+      cursor
+    }
+  }
+} 
+```
+
 ## The Sample Content Fragment Structure (used with GraphQL) {#content-fragment-structure-graphql}
 
 The sample queries are based on the following structure, which uses:
