@@ -56,12 +56,17 @@ You can perform authentication without defining some of the IMS properties, if:
 
 ## Prerequisites {#prerequisites}
 
+If your application requires user based authentication, out-of-the-box Asset Selector also supports a flow for authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS.)
+
+You can use properties such as `imsScope` or `imsClientID` for Asset Selector to use in order to retrieve `imsToken` automatically. In this article, the utilization of this method and IMS properties is denoted as the SUSI (Sign Up Sign In) flow. Alternatively, you can obtain your own imsToken and pass to Asset Selector by integrating within [!DNL Adobe] application on Unified Shell or if you already have an imsToken obtained via other methods (e.g technical account). Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining IMS properties (For example, `imsScope` and `imsClientID`) is referred to as a non-SUSI flow in this article.
+
+<!--
 Define the prerequisites in the `index.html` file or a similar file within your application implementation to define the authentication details to access the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository. The prerequisites include:
 *   imsOrg
 *   imsToken
 *   apikey
 
-<!-- The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
+The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
 
 **Non-SUSI flow**
 
@@ -80,6 +85,103 @@ For more information on these properties, refer to [Asset Selector Properties](#
 *   apikey
 
 For more information on these properties, refer to [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
+-->
+
+## Installation {#installation}
+
+Assets Selectors is available via both ESM CDN (For example, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) and [UMD](https://github.com/umdjs/umd) version.
+
+In browsers using **UMD version** (recommended):
+
+```
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+
+<script>
+  const { renderAssetSelector } = PureJSSelectors;
+</script>
+```
+
+In browsers with `import maps` support using **ESM CDN version**:
+
+```
+<script type="module">
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+</script>
+```
+
+In Deno/Webpack Module Federation using **ESM CDN version**:
+
+```
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+```
+<!--
+## Asset Selector APIs
+
+## Asset Selector APIs {#asset-selector-apis}
+
+When you install Asset Selector via a method outlined in [installation](#installation-installation) section, the package will export the global identifier `PureJSSelectors` when installed via UMD. And, named exports `PureJSSelectors, AssetSelector, AssetSelectorWithAuthFlow, DestinationSelector, DestinationSelectorWithAuthFlow, registerAssetsSelectorsAuthService` when installed via ESM CDN. There are no default exports.
+
+Below are the API description exported by this package in identifier `PureJSSelectors` and its equivalent JSX components that are available via ESM imports.
+</br>
+
+### PureJSSelectors.`renderAssetSelector` or `<AssetSelector/>`
+
+Renders the AssetSelector component on the provided container element and accepts all of the properties described in the [AssetSelector Props](#asset-selector-properties-asset-selector-props).
+
+> This method assumes that you supply a valid _imsToken_ that you could have obtained using [`ImsAuthService.getImsToken()`](#imsauthservice-ims-auth-service) or another medium. If you do not have an _imsToken_, you can use [renderAssetSelectorWithAuthFlow](#purejsselectorsrenderassetselectorwithauthflow-or-assetselectorwithauthflow) which implements an authentication flow to obtain a user based _imsToken_.
+
+###### Parameters
+
+* `container` (`HTMLElement`) — render AssetSelector into the DOM in the supplied container
+* `props` (`AssetSelectorProps`) — properties for the AssetSelector component. See [AssetSelector Props](#asset-selector-properties-asset-selector-props) for more details.
+* `onRenderComplete` (`Function?`, default: `undefined`) — optional callback function that is invoked when the component is rendered or updated.
+
+```js
+PureJSSelectors.renderAssetSelector(container: HTMLElement, props: AssetSelectorProps, onRenderComplete?: Function): void
+
+// JSX
+
+<AssetSelector {...props} />
+```
+
+### PureJSSelectors.`renderAssetSelectorWithAuthFlow` or `<AssetSelectorWithAuthFlow />`
+
+Renders the AssetSelector component on the provided container element and accepts all of the properties described in the [AssetSelector Props](#asset-selector-properties-asset-selector-props). The _AssetSelectorWithAuthFlow_ component extends the _AssetSelector_ component to include an authentication flow. When there's no _`imsToken`_ present, the _AssetSelectorWithAuthFlow_ component will show a _Adobe_ login flow to obtain the _imsToken_ and then render the _AssetSelector_ component.
+
+> It is **recommended** that you call [_registerAssetsSelectorsAuthService_](#purejsselectorsregisterassetsselectorsauthservice) on your page load before calling renderAssetSelectorWithAuthFlow or `<AssetSelectorWithAuthFlow/>`. In the event where you cannot call _registerAssetsSelectorsAuthService_, you can supply both [ImsAuthProps](#imsauthprops-ims-auth-props) along with [AssetSelectorProps](#asset-selector-properties-asset-selector-props) as props to _AssetSelectorWithAuthFlow_. However, this could result in a poor user experience.
+
+###### Parameters
+
+* `container` (`HTMLElement`) — render AssetSelector into the DOM in the supplied container
+* `props` (`AssetSelectorProps`) — properties for the AssetSelector component. See [AssetSelector Props](#asset-selector-properties-asset-selector-props) for more details.
+* `onRenderComplete` (`Function?`, default: `undefined`) — optional callback function that is invoked when the component is rendered or updated.
+
+```js
+PureJSSelectors.renderAssetSelectorWithAuthFlow(container: HTMLElement, props: AssetSelectorProps, onRenderComplete?: Function): void
+
+// JSX
+
+<AssetSelectorWithAuthFlow {...props} />
+```
+
+### PureJSSelectors.`registerAssetsSelectorsAuthService`
+
+Instantiates the [_ImsAuthService_](#imsauthservice-ims-auth-service) process. This process registers the authorization service for your AEM CS Assets repository and subscribes to authorization flow events.
+
+> It is recommended that you call this function on your application page load. You must also call this function if you're using the [AssetSelectorWithAuthFlow](#purejsselectorsrenderassetselectorwithauthflow-or-assetselectorwithauthflow) component. This API is not required if you're using the [AssetSelector](#purejsselectorsrenderassetselector-or-assetselector) component and already obtained a valid _imsToken_.
+
+##### Parameters
+
+* `authProps` (`ImsAuthProps`) — required properties for the ImsAuthService. See [ImsAuthProps](#imsauthprops-ims-auth-props) for more details.
+
+##### Returns
+
+* @returns (`ImsAuthService`) — an instance of the ImsAuthService. See [ImsAuthService](#imsauthservice-ims-auth-service) for more details.
+
+```js
+PureJSSelectors.registerAssetsSelectorsAuthService(authProps: ImsAuthProps): ImsAuthService
+```
+
 -->
 
 ### Example for the non-SUSI flow {#non-susi-vanilla}
@@ -229,26 +331,33 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 ## Use Asset Selector properties {#asset-selector-properties}
 
-| Property | Type | Required | Default | Description |
+You can use the Asset Selector properties to customize the way the Asset Selector is rendered. The following table lists the properties that you can use to customize and leverage the Asset Selector.
+
+| Property | Type | Required | Default |Description |
 |---|---|---|---|---|
-| *rail* | boolean | No | false | If marked `true`, it displays the Asset Selector in a left rail view. If it is marked `false`, the Asset Selector displays in modal view. |
-| *discoveryURL* | string | No | Optional | URL to the Experience Manager as a Cloud Service Discovery Service. You can specify the Experience Manager as a Cloud Service URL directly if your application already called the Discovery Service. For example, https://aem-discovery.adobe.io. |
-| *imsOrg* | string | No | | Adobe Identification Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The imsORG key authenticates whether the org is under Adobe IMS or not.|
-| *imsToken* | string | No | | IMS bearer token used for authentication |
-| *apiKey* | string | No | | API key used for accessing the AEM Discovery service.|
-| *rootPath* | string | No | AEM_ROOT_PATH | Folder name from which you can select your assets. For example, /content/dam/marketing/subfolder. You cannot access and select assets from any other folder.  |
+| *rail*| boolean | No | false | If marked `true`, Asset Selector will be rendered in a left rail view. If it is marked `false`, the Asset Selector will be rendered in modal view. |
+| *imsOrg*| string | Yes | | Adobe Identification Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The `imsOrg` key is needed to authenticate whether the organization you're accessing is under Adobe IMS or not. |
+| *imsToken* | string | No | | IMS bearer token used for authentication. `imsToken` is not required if you're using the SUSI flow. However, it is required if you're using the non-SUSI flow. |
+| *apiKey* | string | No | | API key used for accessing the AEM Discovery service. `apiKey` is not required if you're using the SUSI flow. However, it is required in non-SUSI flow. |
+| *rootPath* | string | No | /content/dam/ | Folder path from which Asset Selector will display your assets. `rootPath` can also be used in the form of encapsulation. For example given the following path, `/content/dam/marketing/subfolder/`, Asset Selector will not allow you to traverse through any parent folder, but will only display the children folders. |
 | *path* | string | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
-| *filterSchema* | array | No | | Model that is used to configure properties that you need to specify for the filter. |
-| *filterFormProps* | object | No | | Specify the filter properties that you need to use to refine your search. For example, MIME type JPG, PNG, GIF. |
-| *selectedAssets* | Array `<object>` | No | | Specify selected Assets when the Asset Selector is rendered. An array of objects is required that contains an id property of the assets. For example, [{id: 'urn:234}, {id: 'urn:555'}]. An asset must be available in current directory. If you need to use a different directory, provide a value for the `path` property as well. |
-| *acvConfig* | object | No | | Asset Collection View property that contains object containing custom configuration to override defaults. |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No | | If the OOTB translations are insufficient for your application needs, you can use this property to specify your own custom-localized values. Adding these values overrides the default translations so that you can use the custom ones. You should pass a valid object (message descriptor) to the key of i18nSymbols that you need to override. |
-| *intl* | object | No | | Format text or date and time in localized format. |
-| *repositoryId* | string | No | '' | Repository from where the Asset Selector loads the content. |
-| *additionalAemSolutions* | `Array<string>` | No | [ ] | It allows you to add a list of additional AEM repositories. If no information is provided in this property, then only media library or AEM Assets repositories are considered. |
-| *hideTreeNav* | boolean | No | | Specifies whether to show or hide assets tree navigation sidebar. It is used in modal view only and hence there is no effect of this property in rail view. | 
-| *onDrop* | function | No | | The property allows the drop functionality of an asset. |
-| *dropOptions* | `{allowList?: object}` | No | | Configures drop options using 'allowList'. |
+| *filterSchema* | array | No | | Model that is used to configure filter properties. This is useful when you want to limit certain filter options in Asset Selector.|
+| *filterFormProps*| Object | No | | Specify the filter properties that you need to use to refine your search. For example, MIME type JPG, PNG, GIF. |
+| *selectedAssets* | Array `<Object>` | No       |                 | Specify selected Assets when the Asset Selector is rendered. An array of objects is required that contains an id property of the assets. For example, `[{id: 'urn:234}, {id: 'urn:555'}]` An asset must be available in the current directory. If you need to use a different directory, provide a value for the `path` property as well. |
+| *acvConfig* | Object | No | | Asset Collection View property that contains object containing custom configuration to override defaults. |
+| *i18nSymbols*            | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No       |                 | If the OOTB translations are insufficient for your application's needs, we expose an interface through which you can pass your own custom localized values through the `i18nSymbols` prop.  Passing a value through this interface will override the default translations provided and instead use your own.  In order to perform the override, you must pass a valid [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) object to the key of `i18nSymbols` that you want to override. |
+| *intl* | Object | No  | | Asset Selector provides default, OOTB translations. You can select the translation language by providing a valid locale string through the `intl.locale` prop. For example: `intl={{ locale: "es-es" }}` </br></br> The locale strings supported follow the [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) for the representation of names of languages standards. </br></br> List of supported locales: English - 'en-us' (default) Spanish - 'es-es' German - 'de-de' French - 'fr-fr' Italian - 'it-it' Japanese - 'ja-jp' Korean - 'ko-kr' Portuguese - 'pt-br' Chinese (Traditional) - 'zh-cn' Chinese (Taiwan) - 'zh-tw' |
+| *repositoryId* | string | No | ''| Repository from where the Asset Selector loads the content. |
+| *additionalAemSolutions* | `Array<string>` | No | [ ] | It allows you to add a list of additional AEM repositories. If no information is provided in this property, then only media library or AEM Assets repositories are considered.|
+| *hideTreeNav*| boolean | No |  | Specifies whether to show or hide assets tree navigation sidebar. It is used in modal view only and hence there is no effect of this property in rail view. |
+| *onDrop* | Function | No | | The property allows the drop functionality of an asset. |
+| *dropOptions* | `{allowList?: Object}` | No | | Configures drop options using 'allowList'.  |
+| *colorScheme* | string | No | | Configure theme (`light` or `dark`) for the Asset Selector. |
+| *handleSelection* | Function | No | | Invoked with array of Asset items when assets are selected and the `Select` button on the modal is clicked. This function is only invoked in modal view. For rail view, use the `handleAssetSelection` or `onDrop` functions. Example: <pre>handleSelection=(assets: Asset[])=> {...}</pre> See [Selected Asset Type](#asset-type-selected-asset-type) for details.|
+| *handleAssetSelection*| Function | No | | Invoked with array of items as the assets are being selected or unselected. This is useful when you want to listen for assets as user selects them. Example: <pre>handleSelection=(assets: Asset[])=> {...}</pre> See [Selected Asset Type](#asset-type-selected-asset-type) for details. |
+| *onClose* | Function | No | | Invoked when `Close` button in modal view is pressed. This is only called in `modal` view and disregarded in `rail` view. |
+| *onFilterSubmit* | Function | No | | Invoked with filter items as user changes different filter criteria. |
+| *selectionType* | string | No | single | Configuration for `single` or `multiple` selection of assets at a time. |
 
 ## Examples to use Asset Selector properties {#usage-examples}
 
