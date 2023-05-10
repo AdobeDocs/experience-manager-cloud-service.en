@@ -53,7 +53,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-6. Click on (i) button in the row to get more information about the ingestion job. You can see the duration of each step of the Ingestion when it is executing or completed by clicking on **...** and then on **View durations**. The information from the extraction is also shown to realize what is being ingested.
+1. Click on **(i)** button in the row to get more information about the ingestion job. You can see the duration of each step of the Ingestion when it is executing or completed by clicking on **...** and then on **View durations**. The information from the extraction is also shown to realize what is being ingested.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
