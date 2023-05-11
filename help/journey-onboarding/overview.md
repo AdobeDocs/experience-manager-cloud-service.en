@@ -94,4 +94,4 @@ If you want to know how Adobe recommends how to get your team onboarded onto you
 
 The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
-* [AEM Champion Tips and Tricks - Cloud Manager Onboarding Playbook](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/onboarding-playbook.md) - Watch this video to learn Cloud Manager onboarding tips and trick from an AEM champion.
+* [AEM Champion Tips and Tricks - Cloud Manager Onboarding Playbook](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/onboarding-playbook.md) - Watch this video to learn Cloud Manager onboarding tips and trick from an AEM champion.

@@ -80,5 +80,5 @@ The following are additional, optional resources if you would like to go beyond 
 
 * [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) - Learn about the types of environments you can create and how to create them for your Cloud Manager project
 * [Using Adobe Cloud Manager - Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) - Cloud Manager environments are composed of AEM authoring, publishing, and dispatcher services. Learn how different environments support roles and can be engaged using different CI/CD Pipelines.
-* [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion.
+* [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion.
 * [Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md) - See this documentation for details about how to use an RDE
