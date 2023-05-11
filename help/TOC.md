@@ -883,6 +883,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Developer Tools {#developer-tools}
     + [Developer Mode](/help/implementing/developing/tools/developer-mode.md)
     + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
+    + [Content Copy](/help/implementing/developing/tools/content-copy.md)
     + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
     + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
     + [Using CRXDE Lite](/help/implementing/developing/tools/crxde.md)
