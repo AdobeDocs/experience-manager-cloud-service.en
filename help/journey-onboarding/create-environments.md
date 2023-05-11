@@ -79,3 +79,4 @@ Follow the additional resources to learn about:
 
 * [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) - Learn about the types of environments you can create and how to create them for your Cloud Manager project
 * [Using Adobe Cloud Manager - Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) - Cloud Manager environments are composed of AEM authoring, publishing, and dispatcher services. Learn how different environments support roles and can be engaged using different CI/CD Pipelines.
+* [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion.
