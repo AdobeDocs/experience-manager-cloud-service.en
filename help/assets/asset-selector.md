@@ -442,7 +442,7 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 
 ## Examples to use Asset Selector properties {#usage-examples}
 
-You can define the Asset Selector [properties](#props) in the `index.html` file to customize the Asset Selector display within your application.
+You can define the Asset Selector [properties](#asset-selector-properties) in the `index.html` file to customize the Asset Selector display within your application.
 
 ### Example 1: Asset Selector in rail view
 
