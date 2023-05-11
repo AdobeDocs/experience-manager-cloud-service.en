@@ -19,9 +19,9 @@ The release date for Cloud Manager release 2023.5.0 in AEM as a Cloud Service is
 
 ## What's New {#what-is-new}
 
-* Product, functional, and UI testing support has been extended to non-production pipeline testing.
-* In addition to enabling testing upstream, UI testing support has been extended to Cypress testing.
-* Self-service copy content is now available from a higher to a lower environment via the Cloud Manager UI. 
+* Product, functional, and UI testing support has been extended to [non-production pipeline testing.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+* In addition to enabling testing upstream, [UI testing support has been extended to Cypress testing.](/help/implementing/cloud-manager/ui-testing.md)
+* [Self-service content copy](/help/implementing/developing/tools/content-copy.md) is now available from a higher to a lower environment via the Cloud Manager UI. 
 * The pipeline execution validation step has been enhanced to validate the state of the replication queues early in the execution process. This ensures the deployment steps are not affected by blocked queues that should be addressed by AEM administrator users directly in the authoring environment.
 
 ## Bug Fixes {#bug-fixes}
