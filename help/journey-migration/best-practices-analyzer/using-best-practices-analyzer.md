@@ -22,7 +22,7 @@ Follow the section below to understand the important considerations for running 
 * BPA is supported on AEM instances with version 6.1 and above.
 
    >[!NOTE]
-   > Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
+   >Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
 
 * BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
 
@@ -94,14 +94,14 @@ To filter out findings related to [ACS Commons](https://adobe-consulting-service
    ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
-   > The left rail icon will appear only if the BPA detects usage of ACS Commons.
+   >The left rail icon will appear only if the BPA detects usage of ACS Commons.
 
 1. Unselect the box to filter out all findings related to ACS Commons. You should see a **Filtered Finding Count** on the report as shown in the image below. The filter is also applied to the report when it is exported in a comma-separated-value (CSV) format.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   > The ACS Commons findings should not be ignored. Refer to [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) to determine compatibility with AEM as a Cloud Service. 
+   >The ACS Commons findings should not be ignored. Refer to [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) to determine compatibility with AEM as a Cloud Service. 
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
