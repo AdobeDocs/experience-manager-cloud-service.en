@@ -75,7 +75,7 @@ Therefore you should continue your onboarding journey by next reviewing the docu
 
 ## Additional Resources {#additional-resources}
 
-Follow the additional resources to learn about:
+The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
 * [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) - Learn about the types of environments you can create and how to create them for your Cloud Manager project
 * [Using Adobe Cloud Manager - Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) - Cloud Manager environments are composed of AEM authoring, publishing, and dispatcher services. Learn how different environments support roles and can be engaged using different CI/CD Pipelines.
