@@ -129,3 +129,4 @@ Follow the additional resources to learn about:
 * [Introduction to Cloud Manager](/help/onboarding/cloud-manager-introduction.md) - 
 Learn about Cloud Manager, Cloud Manager programs, and environments.
 * [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) - Learn how AEM as a Cloud Service team and product profiles can grant and limit access to your licensed Adobe solutions.
+* [AEM Champion Tips and Tricks - Cloud Manager UI](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-manager-ui.md) - Watch this video for an overview of Cloud Manager's UI from an AEM champion.

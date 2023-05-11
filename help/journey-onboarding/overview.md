@@ -89,3 +89,9 @@ You are now ready to start your AEM as a Cloud Service onboarding journey. We en
 Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
 
 If you want to know how Adobe recommends how to get your team onboarded onto your new AEM as a Cloud Service application, this is where to start!
+
+## Additional Resources {#additional-resources}
+
+The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
+
+* [AEM Champion Tips and Tricks - Cloud Manager Onboarding Playbook](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/onboarding-playbook.md) - Watch this video to learn Cloud Manager onboarding tips and trick from an AEM champion.
