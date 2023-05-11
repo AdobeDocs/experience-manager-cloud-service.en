@@ -218,7 +218,6 @@ interface SelectedAsset {
 }
 ````
 The following table describes some of the important properties of the Selected Asset object.
-You can find an example of the complete list of properties in [Selected Asset Type data file](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 | Property | Type | Explanation |
 |---|---|---|
@@ -237,14 +236,16 @@ You can find an example of the complete list of properties in [Selected Asset Ty
 | *dc:format*| string | The format of the asset, such as the file type (For example, JPEG, PNG, etc.).|
 | *tiff:imageWidth* | number| The width of an asset.|
 | *tiff:imageLength* | number | The height of an asset. |
-| *computedMetadata* | `Record<string, any>` | An object which represents a bucket for all the asset's metadata of all kinds (repository, application or embedded metadata). |
-| *_links* | `Record<string, any>` | Represents hypermedia links for the associated asset. Includes links for resources such as metadata and renditions. |
+| *computedMetadata* | `Record<string, any>` | An object which represents a bucket for all the asset's metadata of all kinds (repository, application, or embedded metadata). |
+| *_links* | `Record<string, any>` | Hypermedia links for the associated asset. Includes links for resources such as metadata and renditions. |
 | *_links.http://ns.adobe.com/adobecloud/rel/rendition* | `Array<Object>`| Array of objects containing information about renditions of the asset. |
 | *_links.http://ns.adobe.com/adobecloud/rel/rendition[].href* | string | The URI to the rendition.|
 | *_links.http://ns.adobe.com/adobecloud/rel/rendition[].type* | string | The MIME type of the rendition.|
 | *_links.http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size'* | number | The size of the rendition in bytes.|
 | *_links.http://ns.adobe.com/adobecloud/rel/rendition[].width* | number | The rendition's width. |
 | *_links.http://ns.adobe.com/adobecloud/rel/rendition[].height* | number | The rendition's height. |
+
+For a complete list of properties and detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 <!--
 ### ImsAuthProps {#ims-auth-props}
@@ -277,9 +278,9 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 ### Example for the non-SUSI flow {#non-susi-vanilla}
 
-This example demonstrates how to use Asset Selector with a non-SUSI flow when running an [!DNL Adobe] application under Unified Shell or when you already have `imsToken` generated for authentication by another means.
+This example demonstrates how to use Asset Selector with a non-SUSI flow when running an [!DNL Adobe] application under Unified Shell or when you already have `imsToken` generated for authentication.
 
-Include the Asset Selector package in your code using the `script` tag, as shown in _lines 9 to 11_ of the example below. Once the script is loaded, the `PureJSSelectors` global variable will be available for use. Define the Asset Selector [properties](#asset-selector-properties) as shown in _lines 20 to 27_. The `imsOrg` and `imsToken` properties are both required for authentication in non-SUSI flow. The `handleSelection` property is used to handle the selected assets. To render the Asset Selector, call the `renderAssetSelector` function as mentioned in _line 29_. The Asset Selector will be displayed in the `<div>` container element, as shown in _lines 35 and 36_.
+Include the Asset Selector package in your code using the `script` tag, as shown in _lines 9 to 11_ of the example below. Once the script is loaded, the `PureJSSelectors` global variable is available for use. Define the Asset Selector [properties](#asset-selector-properties) as shown in _lines 20 to 27_. The `imsOrg` and `imsToken` properties are both required for authentication in non-SUSI flow. The `handleSelection` property is used to handle the selected assets. To render the Asset Selector, call the `renderAssetSelector` function as mentioned in _line 29_. The Asset Selector is displayed in the `<div>` container element, as shown in _lines 35 and 36_.
 
 By following these steps, you can use Asset Selector with a non-SUSI flow in your [!DNL Adobe] application.
 
@@ -411,21 +412,21 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 ## Use Asset Selector properties {#asset-selector-properties}
 
-You can use the Asset Selector properties to customize the way the Asset Selector is rendered. The following table lists the properties that you can use to customize and leverage the Asset Selector.
+You can use the Asset Selector properties to customize the way the Asset Selector is rendered. The following table lists the properties that you can use to customize and use the Asset Selector.
 
 | Property | Type | Required | Default |Description |
 |---|---|---|---|---|
 | *rail*| boolean | No | false | If marked `true`, Asset Selector will be rendered in a left rail view. If it is marked `false`, the Asset Selector will be rendered in modal view. |
-| *imsOrg*| string | Yes | | Adobe Identification Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The `imsOrg` key is needed to authenticate whether the organization you're accessing is under Adobe IMS or not. |
+| *imsOrg*| string | Yes | | Adobe Identification Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The `imsOrg` key is required to authenticate whether the organization you're accessing is under Adobe IMS or not. |
 | *imsToken* | string | No | | IMS bearer token used for authentication. `imsToken` is not required if you're using the SUSI flow. However, it is required if you're using the non-SUSI flow. |
 | *apiKey* | string | No | | API key used for accessing the AEM Discovery service. `apiKey` is not required if you're using the SUSI flow. However, it is required in non-SUSI flow. |
-| *rootPath* | string | No | /content/dam/ | Folder path from which Asset Selector will display your assets. `rootPath` can also be used in the form of encapsulation. For example given the following path, `/content/dam/marketing/subfolder/`, Asset Selector will not allow you to traverse through any parent folder, but will only display the children folders. |
+| *rootPath* | string | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | string | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *filterSchema* | array | No | | Model that is used to configure filter properties. This is useful when you want to limit certain filter options in Asset Selector.|
 | *filterFormProps*| Object | No | | Specify the filter properties that you need to use to refine your search. For example, MIME type JPG, PNG, GIF. |
 | *selectedAssets* | Array `<Object>` | No       |                 | Specify selected Assets when the Asset Selector is rendered. An array of objects is required that contains an id property of the assets. For example, `[{id: 'urn:234}, {id: 'urn:555'}]` An asset must be available in the current directory. If you need to use a different directory, provide a value for the `path` property as well. |
 | *acvConfig* | Object | No | | Asset Collection View property that contains object containing custom configuration to override defaults. |
-| *i18nSymbols*            | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No       |                 | If the OOTB translations are insufficient for your application's needs, we expose an interface through which you can pass your own custom localized values through the `i18nSymbols` prop.  Passing a value through this interface will override the default translations provided and instead use your own.  In order to perform the override, you must pass a valid [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) object to the key of `i18nSymbols` that you want to override. |
+| *i18nSymbols*            | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No       |                 | If the OOTB translations are insufficient for your application's needs, you can expose an interface through which you can pass your own custom localized values through the `i18nSymbols` prop. Passing a value through this interface overrides the default translations provided and instead use your own.  To perform the override, you must pass a valid [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) object to the key of `i18nSymbols` that you want to override. |
 | *intl* | Object | No  | | Asset Selector provides default, OOTB translations. You can select the translation language by providing a valid locale string through the `intl.locale` prop. For example: `intl={{ locale: "es-es" }}` </br></br> The locale strings supported follow the [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) for the representation of names of languages standards. </br></br> List of supported locales: English - 'en-us' (default) Spanish - 'es-es' German - 'de-de' French - 'fr-fr' Italian - 'it-it' Japanese - 'ja-jp' Korean - 'ko-kr' Portuguese - 'pt-br' Chinese (Traditional) - 'zh-cn' Chinese (Taiwan) - 'zh-tw' |
 | *repositoryId* | string | No | ''| Repository from where the Asset Selector loads the content. |
 | *additionalAemSolutions* | `Array<string>` | No | [ ] | It allows you to add a list of additional AEM repositories. If no information is provided in this property, then only media library or AEM Assets repositories are considered.|
@@ -433,8 +434,8 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 | *onDrop* | Function | No | | The property allows the drop functionality of an asset. |
 | *dropOptions* | `{allowList?: Object}` | No | | Configures drop options using 'allowList'.  |
 | *colorScheme* | string | No | | Configure theme (`light` or `dark`) for the Asset Selector. |
-| *handleSelection* | Function | No | | Invoked with array of Asset items when assets are selected and the `Select` button on the modal is clicked. This function is only invoked in modal view. For rail view, use the `handleAssetSelection` or `onDrop` functions. Example: <pre>handleSelection=(assets: Asset[])=> {...}</pre> See [Selected Asset Type](#asset-type-selected-asset-type) for details.|
-| *handleAssetSelection*| Function | No | | Invoked with array of items as the assets are being selected or unselected. This is useful when you want to listen for assets as user selects them. Example: <pre>handleSelection=(assets: Asset[])=> {...}</pre> See [Selected Asset Type](#asset-type-selected-asset-type) for details. |
+| *handleSelection* | Function | No | | Invoked with array of Asset items when assets are selected and the `Select` button on the modal is clicked. This function is only invoked in modal view. For rail view, use the `handleAssetSelection` or `onDrop` functions. Example: <pre>handleSelection=(assets: Asset[])=> {...}</pre> See [Selected Asset Type](#selected-asset-type) for details.|
+| *handleAssetSelection*| Function | No | | Invoked with array of items as the assets are being selected or unselected. This is useful when you want to listen for assets as user selects them. Example: <pre>handleSelection=(assets: Asset[])=> {...}</pre> See [Selected Asset Type](#selected-asset-type) for details. |
 | *onClose* | Function | No | | Invoked when `Close` button in modal view is pressed. This is only called in `modal` view and disregarded in `rail` view. |
 | *onFilterSubmit* | Function | No | | Invoked with filter items as user changes different filter criteria. |
 | *selectionType* | string | No | single | Configuration for `single` or `multiple` selection of assets at a time. |
@@ -538,7 +539,7 @@ For the detailed example of Object Schema, click
 
 ## Handling selection of Assets using Object Schema {#handling-selection}
 
-The `handleSelection` property is used to handle single or multiple selection of Assets in Assets Selector. The example below states the syntax of usage of `handleSelection`. 
+The `handleSelection` property is used to handle single or multiple selections of Assets in Assets Selector. The example below states the syntax of usage of `handleSelection`. 
 
 ![handle-selection](assets/handling-selection.png)
 
@@ -605,7 +606,7 @@ Asset Selector allows you to view the asset in four different views:
 *   **![list view](assets/do-not-localize/list-view.png) [!UICONTROL List View]**: The list view displays scrollable files and folders in a single column.
 *   **![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL Grid View]**: The grid view displays scrollable files and folders in a grid of rows and columns.
 *  **![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL Gallery View]**: The gallery view displays files or folders in a center-locked horizontal list.
-*   **![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View]**: The waterfall view displays files or folders in the form of a bridge.
+*   **![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View]**: The waterfall view displays files or folders in the form of a Bridge.
 
 <!--
 ### Modes to view Asset Selector
