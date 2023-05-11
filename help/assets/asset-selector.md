@@ -37,7 +37,11 @@ Perform the following tasks to integrate and use Asset Selector with your [!DNL 
 
 You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository and select assets from within the application. 
 
-The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. Edit the `index.html` file or a similar file within your application implementation to define the authentication details to access the Assets as a Cloud Service repository and to configure the Asset Selector display properties.
+The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. You need to edit an `index.html` or the markdown file within your application to-
+*   Define the authentication details
+*   Access the Assets as a Cloud Service repository
+*   Configure the Asset Selector display properties
+
 <!--
 Asset Selector supports authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID`. Authentication using these IMS properties is referred to as SUSI (Sign Up Sign In) flow in this article.
 
@@ -58,7 +62,7 @@ You can perform authentication without defining some of the IMS properties, if:
 
 If your application requires user based authentication, out-of-the-box Asset Selector also supports a flow for authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS.)
 
-You can use properties such as `imsScope` or `imsClientID` for Asset Selector to use in order to retrieve `imsToken` automatically. In this article, the utilization of this method and IMS properties is denoted as the SUSI (Sign Up Sign In) flow. Alternatively, you can obtain your own imsToken and pass to Asset Selector by integrating within [!DNL Adobe] application on Unified Shell or if you already have an imsToken obtained via other methods (e.g technical account). Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining IMS properties (For example, `imsScope` and `imsClientID`) is referred to as a non-SUSI flow in this article.
+You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken` automatically. You can useSUSI (Sign Up Sign In) flow and IMS properties. Alternatively, you can obtain your own imsToken and pass it to Asset Selector by integrating within [!DNL Adobe] application on Unified Shell or if you already have an imsToken obtained via other methods (for example, using technical account). Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining IMS properties (For example, `imsScope` and `imsClientID`) is referred to as a non-SUSI flow.
 
 <!--
 Define the prerequisites in the `index.html` file or a similar file within your application implementation to define the authentication details to access the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository. The prerequisites include:
@@ -114,12 +118,10 @@ In Deno/Webpack Module Federation using **ESM CDN version**:
 ```
 import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
 ```
-<!--
-## Asset Selector APIs
 
 ## Asset Selector APIs {#asset-selector-apis}
 
-When you install Asset Selector via a method outlined in [installation](#installation-installation) section, the package will export the global identifier `PureJSSelectors` when installed via UMD. And, named exports `PureJSSelectors, AssetSelector, AssetSelectorWithAuthFlow, DestinationSelector, DestinationSelectorWithAuthFlow, registerAssetsSelectorsAuthService` when installed via ESM CDN. There are no default exports.
+When you install Asset Selector using a method outlined in [installation](#installation) section, the package exports the global identifier `PureJSSelectors` when installed via UMD. And, named exports `PureJSSelectors, AssetSelector, AssetSelectorWithAuthFlow, DestinationSelector, DestinationSelectorWithAuthFlow, registerAssetsSelectorsAuthService` when installed via ESM CDN. There are no default exports.
 
 Below are the API description exported by this package in identifier `PureJSSelectors` and its equivalent JSX components that are available via ESM imports.
 </br>
@@ -182,7 +184,64 @@ Instantiates the [_ImsAuthService_](#imsauthservice-ims-auth-service) process. T
 PureJSSelectors.registerAssetsSelectorsAuthService(authProps: ImsAuthProps): ImsAuthService
 ```
 
--->
+### Selected Asset Type {#selected-asset-type}
+
+Selected Asset Type is an array of objects that contains the asset information when using the `handleSelection`, `handleAssetSelection`, and `onDrop` functions. The following table describes some of the important properties of the Selected Asset object.
+
+You can find an example of the complete list of properties in [Selected Asset Type data file](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+
+| Property | Type | Explanation |
+|---|---|---|
+| `repo:repositoryId` | string | Unique identifier for the repository where the asset is stored. |
+| `repo:id`| string | Unique identifier for the asset. |
+| `repo:assetClass` | string | The classification of the asset (For example, image, video, document). |
+| `repo:name`| string | The name of the asset, including the file extension. |
+| `repo:size`| number| The size of the asset in bytes.|
+| `repo:path`| string | The location of the asset within the repository. |
+| `repo:ancestors`| `Array<string>`| An array of ancestor items for the asset in the repository. |
+| `repo:state`| string | Current state of the asset in the repository (e.g., active, deleted). |
+| `repo:createdBy`| string | The user or system that created the asset. |
+| `repo:createDate` | string | The date and time when the asset was created. |
+| `repo:modifiedBy` | string | The user or system that last modified the asset. |
+| `repo:modifyDate` | string| The date and time when the asset was last modified. |
+| `dc:format`| string | The format of the asset, such as the file type (For example, JPEG, PNG, etc.).|
+| `tiff:imageWidth` | number| The width of an asset.|
+| `tiff:imageLength` | number | The height of an asset. |
+| `computedMetadata` | `Record<string, any>` | An object which represents a bucket for all the asset's metadata of all kinds (repository, application or embedded metadata). |
+| `_links` | `Record<string, any>` | Represents hypermedia links for the associated asset. Includes links for resources such as metadata and renditions. |
+| `_links.http://ns.adobe.com/adobecloud/rel/rendition` | `Array<Object>`| Array of objects containing information about renditions of the asset. |
+| `_links.http://ns.adobe.com/adobecloud/rel/rendition[].href` | string | The URI to the rendition.|
+| `_links.http://ns.adobe.com/adobecloud/rel/rendition[].type` | string | The MIME type of the rendition.|
+| `_links.http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size'` | number | The size of the rendition in bytes.|
+| `_links.http://ns.adobe.com/adobecloud/rel/rendition[].width` | number | The rendition's width. |
+| `_links.http://ns.adobe.com/adobecloud/rel/rendition[].height` | number | The rendition's height. |
+
+### ImsAuthProps {#ims-auth-props}
+
+The `ImsAuthProps` properties define the authentication information and flow that the Asset Selector uses to obtain an `imsToken`. By setting these properties, you can control how the authentication flow should behave and register listeners for various authentication events.
+
+| Property Name | Description|
+|---|---|
+| `imsClientId`| A string value representing the IMS client ID used for authentication purposes. This value is provided by Adobe and is specific to your Adobe AEM CS organization.|
+| `imsScope`| Describes the scopes used in authentication. The scopes determine the level of access that the application has to your organization resources. Multiple scopes can be separated by commas.|
+| `redirectUrl` | Represents the URL where the user is redirected after authentication. This value is typically set to the current URL of the application. If a `redirectUrl` is not supplied, `ImsAuthService` will use the redirectUrl used to register the `imsClientId`|
+| `modalMode`| A boolean indicating whether the authentication flow should be displayed in a modal (pop-up) or not. If set to `true`, the authentication flow is displayed in a pop-up. If set to `false`, the authentication flow is displayed in a full page reload. _Note:_ for better UX, you can dynamically control this value if the user has browser pop-up disabled. |
+| `onImsServiceInitialized`| A callback function that is called when the Adobe IMS authentication service is initialized. This function takes one parameter, `service`, which is an object representing the Adobe IMS service. See [`ImsAuthService`](#imsauthservice-ims-auth-service) for more details.|
+| `onAccessTokenReceived`| A callback function that is called when an `imsToken` is received from the Adobe IMS authentication service. This function takes one parameter, `imsToken`, which is a string representing the access token. |
+| `onAccessTokenExpired`| A callback function that is called when an access token has expired. This function is typically used to trigger a new authentication flow to obtain a new access token. |
+| `onErrorReceived`| A callback function that is called when an error occurs during authentication. This function takes two parameters: the error type and error message. The error type is a string representing the type of error and the error message is a string representing the error message. |
+
+### ImsAuthService {#ims-auth-service}
+
+`ImsAuthService` class handles the authentication flow for the Asset Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the Adobe Experience Manager (AEM) CS Assets repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) function to register the _ImsAuthService_ instance with the Asset Selector. The following functions are available on the `ImsAuthService` class. However, if you're using the _registerAssetsSelectorsAuthService_ function, you do not need to call these functions directly.
+
+| Function Name | Description |
+|---|---|
+| `isSignedInUser` | Determines whether the user is currently signed in to the service and returns a boolean value accordingly.|
+| `getImsToken`    | Retrieves the authentication `imsToken` for the currently signed-in user, which can be used to authenticate requests to other services such as generating asset _rendition.|
+| `signIn`| Initiates the sign-in process for the user. This function uses the `ImsAuthProps` to show authentication in either a pop-up or a full page reload |
+| `signOut`| Signs the user out of the service, invalidating their authentication token and requiring them to sign in again to access protected resources. Invoking this function will reload the current page.|
+| `refreshToken`| Refreshes the authentication token for the currently signed-in user, preventing it from expiring and ensuring uninterrupted access to protected resources. Returns a new authentication token that can be used for subsequent requests. |
 
 ### Example for the non-SUSI flow {#non-susi-vanilla}
 
