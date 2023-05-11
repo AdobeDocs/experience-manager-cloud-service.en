@@ -99,6 +99,8 @@ You are ready to continue your onboarding journey by learning how to [assign tea
 
 ## Additional Resources {#additional-resources}
 
+The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
+
 * [Admin Console Overview](https://helpx.adobe.com/enterprise/using/admin-console.html) - A comprehensive overview of the Admin Console
 * [Create or Update Your Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Learn how to create an Adobe ID, change it, and manage multiple Adobe IDs.
 * [SAML 2.0 Authentication Handler](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html) - AEM ships with a SAML authentication handler. This handler provides support for the SAML 2.0 Authentication Request Protocol (Web-SSO profile) using the HTTP POST binding.

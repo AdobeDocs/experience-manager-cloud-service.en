@@ -63,7 +63,7 @@ Now that your first program is created, you can create environments for it. You 
 
 ## Additional Resources {#additional-resources}
 
-Follow the additional resources to learn about:
+The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
 * [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) - Learn about the hierarchy of Cloud Manager and how the different types of programs fit into its structure and how they differ.
 * [Creating Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Learn how to use Cloud Manager to create your own sandbox program for training, demo, POC, or other non-production purposes.

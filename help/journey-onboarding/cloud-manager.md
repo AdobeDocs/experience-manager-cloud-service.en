@@ -124,7 +124,7 @@ You should continue your onboarding journey by next reviewing the document [Crea
 
 ## Additional Resources {#additional-resources}
 
-Follow the additional resources to learn about:
+The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
 * [Introduction to Cloud Manager](/help/onboarding/cloud-manager-introduction.md) - 
 Learn about Cloud Manager, Cloud Manager programs, and environments.
