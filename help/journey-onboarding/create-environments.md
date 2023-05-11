@@ -24,12 +24,13 @@ Environments sit below programs within the hierarchy of Cloud Manager. While pro
 
 If you recall the example of the theoretical WKND Travel and Adventure Enterprises, who is a tenant that focuses on travel-related media, they might have two programs: one Sites program for its WKND Magazine division and one Assets program for WKND Media division. Each program would likely have a couple of environments such as one production environment which serves the actual traffic of the site and one development environment for testing new application code.
 
-There are three different types of environments:
+There are four different types of environments:
 
 * **Production and Stage** - The production and staging environments are available as a pair and are used for production and testing purposes, respectively.
 * **Development** - A development environment can be created for development as well as testing purposes and can be associated with non-production pipelines only.
+* **Rapid Development** - A rapid development environment (RDE) allows a developer to swiftly deploy and review changes, minimizing the amount of time needed to test features that are proven to work on a local development environment.
 
-For the purposes of this onboarding journey, you will create a development environment.
+For the purposes of this onboarding journey, in order to get you started with a minimal you will create a development environment that you can use to explore AEM as a Cloud Service's capabilities.
 
 ## Create Environments {#creating-environments}
 
@@ -80,3 +81,4 @@ The following are additional, optional resources if you would like to go beyond 
 * [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) - Learn about the types of environments you can create and how to create them for your Cloud Manager project
 * [Using Adobe Cloud Manager - Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) - Cloud Manager environments are composed of AEM authoring, publishing, and dispatcher services. Learn how different environments support roles and can be engaged using different CI/CD Pipelines.
 * [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion.
+* [Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md) - See this documentation for details about how to use an RDE
