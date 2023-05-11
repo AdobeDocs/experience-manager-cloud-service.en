@@ -201,18 +201,18 @@ This section describes the conventions that the Docker image containing your UI 
 
 The following environment variables will be passed to your Docker image at run time, depending on your framework.
 
-|Variable|Examples|Description|
-|---|---|---|
-|`SELENIUM_BASE_URL`|`http://my-ip:4444`|The URL of the Selenium server|
-|`SELENIUM_BROWSER`|`chrome`|The browser implementation used by the Selenium Server|
-|`AEM_AUTHOR_URL`|`http://my-ip:4502/context-path`|The URL of the AEM author instance|
-|`AEM_AUTHOR_USERNAME`|`admin`|The user name to log in to the AEM author instance|
-|`AEM_AUTHOR_PASSWORD`|`admin`|The password to log in to the AEM author instance|
-|`AEM_PUBLISH_URL`|`http://my-ip:4503/context-path`|The URL of the AEM publish instance|
-|`AEM_PUBLISH_USERNAME`|`admin`|The user name to log in to the AEM publish instance|
-|`AEM_PUBLISH_PASSWORD`|`admin`|The password  to log in to the AEM publish instance|
-|`REPORTS_PATH`|`/usr/src/app/reports`|The path where the XML report of the test results must be saved|
-|`UPLOAD_URL`|`http://upload-host:9090/upload`|The URL where file must be uploaded to in order to make them accessible to Selenium|
+|Variable|Examples|Description|Testing Framework|
+|---|---|---|---|
+|`SELENIUM_BASE_URL`|`http://my-ip:4444`|The URL of the Selenium server|Selenium only|
+|`SELENIUM_BROWSER`|`chrome`|The browser implementation used by the Selenium Server|Selenium only|
+|`AEM_AUTHOR_URL`|`http://my-ip:4502/context-path`|The URL of the AEM author instance|All|
+|`AEM_AUTHOR_USERNAME`|`admin`|The user name to log in to the AEM author instance|All|
+|`AEM_AUTHOR_PASSWORD`|`admin`|The password to log in to the AEM author instance|All|
+|`AEM_PUBLISH_URL`|`http://my-ip:4503/context-path`|The URL of the AEM publish instance|All|
+|`AEM_PUBLISH_USERNAME`|`admin`|The user name to log in to the AEM publish instance|All|
+|`AEM_PUBLISH_PASSWORD`|`admin`|The password  to log in to the AEM publish instance|All|
+|`REPORTS_PATH`|`/usr/src/app/reports`|The path where the XML report of the test results must be saved|All|
+|`UPLOAD_URL`|`http://upload-host:9090/upload`|The URL where file must be uploaded to in order to make them accessible to the testing framework|All|
 
 The Adobe test samples provide helper functions to access the configuration parameters:
 
