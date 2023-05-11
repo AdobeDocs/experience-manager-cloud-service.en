@@ -23,8 +23,8 @@ Using the [Assign step](https://experienceleague.adobe.com/docs/experience-manag
 1. Tap ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Assign Task]** dialog opens.
 1. Open [!UICONTROL Form and Document] tab and open [!UICONTROL Pre-populated] drop-down and specify:
 
- * Select input data file using
- * Select input attachments using
+   * Select input data file using
+   * Select input attachments using
 
     ![Review step](/help/forms/assets/assigntask-review1.gif)
 
