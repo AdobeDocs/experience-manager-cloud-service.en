@@ -2,6 +2,7 @@
 title: Notification Center
 description: Leverage the Notification Center to conveniently take action on incidents and other important information
 hidefromtoc: yes
+hide: yes
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 ---
 # Notification Center {#notification-center}
@@ -31,7 +32,9 @@ From the Notification Center, you can select a specific program and environment,
 Follow the steps below to configure receiving notifications:
 
 1. Create the following Product Profiles, as described [in this article](/help/journey-onboarding/notification-profiles.md), also assigning the appropriate Adobe IDs from your organization to those profiles. This allows an administrator to determine which users qualify to receive these notifications.
-1. Each assigned user assigned in the previous step can configure how they would like to receive their notifications. On the [Experience Cloud preferences page](https://experience.adobe.com/preferences/notification-section), make sure the Experience Manager subscription is enabled, and the **Operational incidents** and **Proactive recommendations** checkboxes are selected. In addition, it is recommended that the Emails section is set to **Instant Notifications** so notifications are received immediately when an incident occurs.
+1. Each assigned user assigned in the previous step can configure how they would like to receive their notifications. On the [Experience Cloud preferences page](https://experience.adobe.com/preferences/notification-section), make sure the Experience Manager subscription is enabled, and the **Operational incidents** and **Proactive recommendations** checkboxes are selected for both the in-app and email columns (see image below). In addition, it is recommended that the Emails section is set to **Instant Notifications** so notifications are received immediately when an incident occurs.
+
+![Configure Subscriptions](/help/operations/assets/configure-subscriptions.png)
 
 >[!NOTE]
 >Notifications function at the organization level so subscribers will receive notifications for all programs and environments within those programs.
