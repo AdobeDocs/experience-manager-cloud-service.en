@@ -37,7 +37,7 @@ Perform the following tasks to integrate and use Asset Selector with your [!DNL 
 
 You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository and select assets from within the application. 
 
-The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. You need to edit an `index.html` or the markdown file within your application to-
+The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. You need to edit an `index.html` or any appropriate file within your application to-
 *   Define the authentication details
 *   Access the Assets as a Cloud Service repository
 *   Configure the Asset Selector display properties
@@ -60,16 +60,17 @@ You can perform authentication without defining some of the IMS properties, if:
 
 ## Prerequisites {#prerequisites}
 
+<!--
 If your application requires user based authentication, out-of-the-box Asset Selector also supports a flow for authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS.)
 
-You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken` automatically. You can useSUSI (Sign Up Sign In) flow and IMS properties. Alternatively, you can obtain your own imsToken and pass it to Asset Selector by integrating within [!DNL Adobe] application on Unified Shell or if you already have an imsToken obtained via other methods (for example, using technical account). Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining IMS properties (For example, `imsScope` and `imsClientID`) is referred to as a non-SUSI flow.
+You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken` automatically. You can use SUSI (Sign Up Sign In) flow and IMS properties. Also, you can obtain your own imsToken and pass it to Asset Selector by integrating within [!DNL Adobe] application on Unified Shell or if you already have an imsToken obtained via other methods (for example, using technical account). Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining IMS properties (For example, `imsScope` and `imsClientID`) is referred to as a non-SUSI flow.
+-->
 
-<!--
 Define the prerequisites in the `index.html` file or a similar file within your application implementation to define the authentication details to access the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository. The prerequisites include:
 *   imsOrg
 *   imsToken
 *   apikey
-
+<!--
 The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
 
 **Non-SUSI flow**
@@ -118,13 +119,12 @@ In Deno/Webpack Module Federation using **ESM CDN version**:
 ```
 import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
 ```
-
+<!--
 ## Asset Selector APIs {#asset-selector-apis}
 
 When you install Asset Selector using a method outlined in [installation](#installation) section, the package exports the global identifier `PureJSSelectors` when installed via UMD. And, named exports `PureJSSelectors, AssetSelector, AssetSelectorWithAuthFlow, DestinationSelector, DestinationSelectorWithAuthFlow, registerAssetsSelectorsAuthService` when installed via ESM CDN. There are no default exports.
 
 Below are the API description exported by this package in identifier `PureJSSelectors` and its equivalent JSX components that are available via ESM imports.
-</br>
 
 ### PureJSSelectors.`renderAssetSelector` or `<AssetSelector/>`
 
@@ -183,39 +183,70 @@ Instantiates the [_ImsAuthService_](#imsauthservice-ims-auth-service) process. T
 ```js
 PureJSSelectors.registerAssetsSelectorsAuthService(authProps: ImsAuthProps): ImsAuthService
 ```
+-->
 
 ### Selected Asset Type {#selected-asset-type}
 
-Selected Asset Type is an array of objects that contains the asset information when using the `handleSelection`, `handleAssetSelection`, and `onDrop` functions. The following table describes some of the important properties of the Selected Asset object.
+Selected Asset Type is an array of objects that contains the asset information when using the `handleSelection`, `handleAssetSelection`, and `onDrop` functions. 
 
+**Schema Syntax**
+````
+interface SelectedAsset {
+    'repo:id': string;
+    'repo:name': string;
+    'repo:path': string;
+    'repo:size': number;
+    'repo:createdBy': string;
+    'repo:createDate': string;
+    'repo:modifiedBy': string; 
+    'repo:modifyDate': string; 
+    'dc:format': string; 
+    'tiff:imageWidth': number;
+    'tiff:imageLength': number;
+    'repo:state': string;
+    computedMetadata: Record<string, any>;
+    _links: {
+        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
+            href: string;
+            type: string;
+            'repo:size': number;
+            width: number;
+            height: number;
+            [others: string]: any;
+        }>;
+    };
+}
+````
+The following table describes some of the important properties of the Selected Asset object.
 You can find an example of the complete list of properties in [Selected Asset Type data file](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 | Property | Type | Explanation |
 |---|---|---|
-| `repo:repositoryId` | string | Unique identifier for the repository where the asset is stored. |
-| `repo:id`| string | Unique identifier for the asset. |
-| `repo:assetClass` | string | The classification of the asset (For example, image, video, document). |
-| `repo:name`| string | The name of the asset, including the file extension. |
-| `repo:size`| number| The size of the asset in bytes.|
-| `repo:path`| string | The location of the asset within the repository. |
-| `repo:ancestors`| `Array<string>`| An array of ancestor items for the asset in the repository. |
-| `repo:state`| string | Current state of the asset in the repository (e.g., active, deleted). |
-| `repo:createdBy`| string | The user or system that created the asset. |
-| `repo:createDate` | string | The date and time when the asset was created. |
-| `repo:modifiedBy` | string | The user or system that last modified the asset. |
-| `repo:modifyDate` | string| The date and time when the asset was last modified. |
-| `dc:format`| string | The format of the asset, such as the file type (For example, JPEG, PNG, etc.).|
-| `tiff:imageWidth` | number| The width of an asset.|
-| `tiff:imageLength` | number | The height of an asset. |
-| `computedMetadata` | `Record<string, any>` | An object which represents a bucket for all the asset's metadata of all kinds (repository, application or embedded metadata). |
-| `_links` | `Record<string, any>` | Represents hypermedia links for the associated asset. Includes links for resources such as metadata and renditions. |
-| `_links.http://ns.adobe.com/adobecloud/rel/rendition` | `Array<Object>`| Array of objects containing information about renditions of the asset. |
-| `_links.http://ns.adobe.com/adobecloud/rel/rendition[].href` | string | The URI to the rendition.|
-| `_links.http://ns.adobe.com/adobecloud/rel/rendition[].type` | string | The MIME type of the rendition.|
-| `_links.http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size'` | number | The size of the rendition in bytes.|
-| `_links.http://ns.adobe.com/adobecloud/rel/rendition[].width` | number | The rendition's width. |
-| `_links.http://ns.adobe.com/adobecloud/rel/rendition[].height` | number | The rendition's height. |
+| *repo:repositoryId* | string | Unique identifier for the repository where the asset is stored. |
+| *repo:id*| string | Unique identifier for the asset. |
+| *repo:assetClass* | string | The classification of the asset (For example, image, or video, document). |
+| *repo:name*| string | The name of the asset, including the file extension. |
+| *repo:size*| number| The size of the asset in bytes.|
+| *repo:path*| string | The location of the asset within the repository. |
+| *repo:ancestors*| `Array<string>`| An array of ancestor items for the asset in the repository. |
+| *repo:state*| string | Current state of the asset in the repository (For example, active, deleted, etc.). |
+| *repo:createdBy*| string | The user or system that created the asset. |
+| *repo:createDate* | string | The date and time when the asset was created. |
+| *repo:modifiedBy* | string | The user or system that last modified the asset. |
+| *repo:modifyDate* | string| The date and time when the asset was last modified. |
+| *dc:format*| string | The format of the asset, such as the file type (For example, JPEG, PNG, etc.).|
+| *tiff:imageWidth* | number| The width of an asset.|
+| *tiff:imageLength* | number | The height of an asset. |
+| *computedMetadata* | `Record<string, any>` | An object which represents a bucket for all the asset's metadata of all kinds (repository, application or embedded metadata). |
+| *_links* | `Record<string, any>` | Represents hypermedia links for the associated asset. Includes links for resources such as metadata and renditions. |
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition* | `Array<Object>`| Array of objects containing information about renditions of the asset. |
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].href* | string | The URI to the rendition.|
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].type* | string | The MIME type of the rendition.|
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size'* | number | The size of the rendition in bytes.|
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].width* | number | The rendition's width. |
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].height* | number | The rendition's height. |
 
+<!--
 ### ImsAuthProps {#ims-auth-props}
 
 The `ImsAuthProps` properties define the authentication information and flow that the Asset Selector uses to obtain an `imsToken`. By setting these properties, you can control how the authentication flow should behave and register listeners for various authentication events.
@@ -242,56 +273,46 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 | `signIn`| Initiates the sign-in process for the user. This function uses the `ImsAuthProps` to show authentication in either a pop-up or a full page reload |
 | `signOut`| Signs the user out of the service, invalidating their authentication token and requiring them to sign in again to access protected resources. Invoking this function will reload the current page.|
 | `refreshToken`| Refreshes the authentication token for the currently signed-in user, preventing it from expiring and ensuring uninterrupted access to protected resources. Returns a new authentication token that can be used for subsequent requests. |
+-->
 
 ### Example for the non-SUSI flow {#non-susi-vanilla}
 
-Use this example `index.html` file for authentication if you are integrating an [!DNL Adobe] application on Unified Shell or if you already have an IMS token generated for authentication.
-Access the Asset Selector package using the `Script` tag, as shown in *line 9* to *line 11* of the example `index.html` file. Define the authentication and other Assets as a Cloud Service access-related properties in the const props section, as shown in *line 20* to *line 27* of the `index.html` file.
-The `PureJSSelectors` global variable, mentioned in *line 29*, is used to render the Asset Selector in the web browser.
-Asset Selector is rendered on the `<div>` container element, as mentioned in *line 35* and *line 36*.
+This example demonstrates how to use Asset Selector with a non-SUSI flow when running an [!DNL Adobe] application under Unified Shell or when you already have `imsToken` generated for authentication by another means.
+
+Include the Asset Selector package in your code using the `script` tag, as shown in _lines 9 to 11_ of the example below. Once the script is loaded, the `PureJSSelectors` global variable will be available for use. Define the Asset Selector [properties](#asset-selector-properties) as shown in _lines 20 to 27_. The `imsOrg` and `imsToken` properties are both required for authentication in non-SUSI flow. The `handleSelection` property is used to handle the selected assets. To render the Asset Selector, call the `renderAssetSelector` function as mentioned in _line 29_. The Asset Selector will be displayed in the `<div>` container element, as shown in _lines 35 and 36_.
+
+By following these steps, you can use Asset Selector with a non-SUSI flow in your [!DNL Adobe] application.
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <title>Asset Selectors</title>
-    <link rel="stylesheet" href="index.css">
-    <script id="asset-selector"
-        src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/asset-selectors.js"></script>
+    <title>Asset Selector</title>
+    <script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
     <script>
-
-        // container element on which you want to render the AssetSelector/DestinationSelector component
-        const container = document.getElementById('asset-selector');
-
-        const otherProps = {
-            // any other props supported by asset selector
-        }
-
-        const props = {
-            discoveryURL: 'https://aem-discovery.adobe.io/',
-            apiKey: 'apikey',
-            imsOrg: 'imsorg',
-            imsToken: "imstoken",
-            rail: true,
-            ...otherProps
+        // get the container element in which we want to render the AssetSelector component
+        const container = document.getElementById('asset-selector-container');
+        // imsOrg and imsToken are required for authentication in non-SUSI flow
+        const assetSelectorProps = {
+            imsOrg: 'example-ims@AdobeOrg',
+            imsToken: "example-imsToken",
+            apiKey: "example-apiKey-associated-with-imsOrg",
+            handleSelection: (assets: SelectedAssetType[]) => {},
         };
-        // Use the PureJSSelectors in globals to render the AssetSelector/DestinationSelector component
-        PureJSSelectors.renderAssetSelector(container, props);
+        // Call the `renderAssetSelector` available in PureJSSelectors globals to render AssetSelector
+        PureJSSelectors.renderAssetSelector(container, assetSelectorProps);
     </script>
-
 </head>
 
-<body class="asset-selectors">
-    <div id="asset-selector" style="height: calc(100vh - 80px); width: calc(100vw - 60px); margin: -20px;">
+<body>
+    <div id="asset-selector-container" style="height: calc(100vh - 80px); width: calc(100vw - 60px); margin: -20px;">
     </div>
 </body>
 
 </html>
-
 ```
+For detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+
 <!--
 ### Example for the SUSI flow {#susi-vanilla}
 
@@ -459,6 +480,7 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 
 <!-- Property details to be added here. Referred the ticket https://jira.corp.adobe.com/browse/ASSETS-19023-->
 
+<!--
 ## Asset Selector Object Schema {#object-schema}
 
 Schema describes the object properties associated with an asset selected using Asset Selector. It uses the combination of data types and their values to validate the object describing the selected Asset using an Asset Selector.
@@ -512,6 +534,7 @@ interface SelectedAsset {
 | _links | string | It represents the collection of links used in the Asset Selector. The links are represented in the form of an array. The parameters of an array include: `href`, `type`, `repo:size`, `width`, `height`, etc.  |
 
 For the detailed example of Object Schema, click 
+-->
 
 ## Handling selection of Assets using Object Schema {#handling-selection}
 
