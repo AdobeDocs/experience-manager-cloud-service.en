@@ -103,7 +103,7 @@ The instrumentation attributes added to the page consist mostly of [HTML Microda
 Connections which are used in the app are stored as `<meta>` tags in the page's `<head>`.
 
 ```html
-<meta name="urn:auecon:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
 ```
 
 * `<referenceName>` - This is a short name which is reused in the document to identify the connection. E.g. `aemconnection`
