@@ -417,7 +417,7 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 | Property | Type | Required | Default |Description |
 |---|---|---|---|---|
 | *rail*| boolean | No | false | If marked `true`, Asset Selector will be rendered in a left rail view. If it is marked `false`, the Asset Selector will be rendered in modal view. |
-| *imsOrg*| string | Yes | | Adobe Identification Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The `imsOrg` key is required to authenticate whether the organization you're accessing is under Adobe IMS or not. |
+| *imsOrg*| string | Yes | | Adobe Identity Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The `imsOrg` key is required to authenticate whether the organization you're accessing is under Adobe IMS or not. |
 | *imsToken* | string | No | | IMS bearer token used for authentication. `imsToken` is not required if you're using the SUSI flow. However, it is required if you're using the non-SUSI flow. |
 | *apiKey* | string | No | | API key used for accessing the AEM Discovery service. `apiKey` is not required if you're using the SUSI flow. However, it is required in non-SUSI flow. |
 | *rootPath* | string | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
