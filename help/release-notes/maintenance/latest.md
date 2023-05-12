@@ -20,7 +20,10 @@ Feature enablement for this maintenance release will provide you with the full f
 
 ### Known Issues {#known-issues-11873}
 
-None.
+- SITES-13253 - RecursionTooDeepException in Core Components v2.22.6
+- SITES-13256 - Core WCM Teaser configured with special URL breaks page rendering
+- GRANITE-45462 - Messaging Client Multi Region Config Issue
+- GRANITE-45562 - Issues with image combinaison returning 200 instead of 404
 
 ### Fixed Issues {#fixed-issues-11873}
 
