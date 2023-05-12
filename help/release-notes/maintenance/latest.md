@@ -7,32 +7,25 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 11873 {#release-11873}
+## Release 11983 {#release-11983}
  
-Summarized below are the continuous improvements for maintenance release 11873, which was publicly released on May 3, 2023. This maintenance release is an update from previous maintenance release 11835.
+Summarized below are the continuous improvements for maintenance release 11983, which was publicly released on May X, 2023. This maintenance release is an update from previous maintenance release 11873.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
-### Enhancements {#enhancements}
+### Enhancements {#enhancements-11983}
 
-- SITES-1200 - Search API enhancements with tags based filtering
-- GRANITE-42939 - Add deprecation annotations and warnings to oauth-server code
+- 
 
-### Known Issues {#known-issues-11873}
+### Known Issues {#known-issues-11983}
 
-- SITES-13253 - RecursionTooDeepException in Core Components v2.22.6
-- SITES-13256 - Core WCM Teaser configured with special URL breaks page rendering
-- GRANITE-45462 - Messaging Client Multi Region Config
-- GRANITE-45562 - Issues with image combination returning 200 instead of 404
+- 
 
-### Fixed Issues {#fixed-issues-11873}
+### Fixed Issues {#fixed-issues-11983}
 
-- SKYSI-19884/SKYOPS-53745 - Fixed issue with PublishPageRenderingErrorsHigh
-- GRANITE-4388 - Fixed the throughput degradation after large number of DAM asset-writes on Mongo
-- SITES-11922 - Fixed issue with unpublish from preview that did not remove sync status
-- ASSETS-21648 - Fixed permission issue with Asset Relate Functionality
+- 
 
-### Embedded Technologies {#embedded-tech-11873}
+### Embedded Technologies {#embedded-tech-11983}
 
 |Technology|Version|Link|
 |---|---|---|
