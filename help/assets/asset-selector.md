@@ -280,7 +280,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 This example demonstrates how to use Asset Selector with a non-SUSI flow when running an [!DNL Adobe] application under Unified Shell or when you already have `imsToken` generated for authentication.
 
-Include the Asset Selector package in your code using the `script` tag, as shown in _lines 9 to 11_ of the example below. Once the script is loaded, the `PureJSSelectors` global variable is available for use. Define the Asset Selector [properties](#asset-selector-properties) as shown in _lines 20 to 27_. The `imsOrg` and `imsToken` properties are both required for authentication in non-SUSI flow. The `handleSelection` property is used to handle the selected assets. To render the Asset Selector, call the `renderAssetSelector` function as mentioned in _line 29_. The Asset Selector is displayed in the `<div>` container element, as shown in _lines 35 and 36_.
+Include the Asset Selector package in your code using the `script` tag, as shown in _lines 6 to 15_ of the example below. Once the script is loaded, the `PureJSSelectors` global variable is available for use. Define the Asset Selector [properties](#asset-selector-properties) as shown in _lines 16 to 23_. The `imsOrg` and `imsToken` properties are both required for authentication in non-SUSI flow. The `handleSelection` property is used to handle the selected assets. To render the Asset Selector, call the `renderAssetSelector` function as mentioned in _line 17_. The Asset Selector is displayed in the `<div>` container element, as shown in _lines 21 and 22_.
 
 By following these steps, you can use Asset Selector with a non-SUSI flow in your [!DNL Adobe] application.
 
