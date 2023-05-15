@@ -47,6 +47,7 @@ Follow these steps to edit a program.
    ![Edit go-live settings](assets/edit-program-go-live.png)
 
    * This date is for informational use only and triggers the Go Live widget on the program overview page to provide in-product links to AEM as a Cloud Service best practice documentation in a timely manner to align with your journey culminating in a successful and smooth Go Live experience.
+   * This tab is not available for sandbox programs.
 
 1. Click on **Update** to save your changes to the program.
 
