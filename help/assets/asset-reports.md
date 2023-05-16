@@ -8,6 +8,11 @@ exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 ---
 # Asset reports {#asset-reports}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 Asset reporting lets you assess the utility of your [!DNL Adobe Experience Manager Assets] deployment. With [!DNL Assets], you can generate various reports for your digital assets. The reports provide useful information about your system's usage, how users interact with assets, and which assets are <!-- downloaded and --> shared.
 
 Use the information in the reports to derive key success metrics to measure the adoption of [!DNL Assets] within your enterprise and by customers.
@@ -160,7 +165,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## Troubleshooting information {#tips-troubleshoot}
 
-* If the [!UICONTROL Disk Usage Report] does not generate and if you are using [!DNL Dynamic Media], ensure that all assets are proceed correctly. To resolve, reprocess the assets and generate the report again.
+* If the [!UICONTROL Disk Usage Report] does not generate and if you are using [!DNL Dynamic Media], ensure that all assets are processed correctly. To resolve, reprocess the assets and generate the report again.
 
 <!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 
@@ -179,3 +184,17 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >
    >The [!UICONTROL Download] report displays details of only those assets which are downloaded after selecting individually or are downloaded using Quick Action. However, it does not include the details of the assets that are inside a downloaded folder.
 -->
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)

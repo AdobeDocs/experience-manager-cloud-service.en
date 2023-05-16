@@ -6,8 +6,8 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: yes
 hidefromtoc: yes
+exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
 ---
-
 # Build Engaging Forms Using Core Components and Headless
 
 ## Lab Overview
@@ -54,8 +54,7 @@ In this lesson, you familiarize yourself with AEM Forms as a Cloud Service envir
 
 ### Exercise
 
-1.  Open your browser and enter the URL of the Cloud Service author environment. For example:
-    [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
+1.  Open your browser and enter the URL of the Cloud Service author environment.
 
 1.  Log in to the Cloud Service author environment. The login credentials for your author environment will be shared with you during the lab. 
 
@@ -421,8 +420,8 @@ Let's check the execution of rules in this headless form:
 
 Let's make changes on the form on the server as a business user and view changes reflected in the headless form automatically.
 
-1.  Open the AEM Forms management interface in the browser. For example, [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
-
+1.  Open the AEM Forms management interface in the browser.
+\
 1.  Select the **registration** form and click **Edit.** It opens the form in the adaptive forms editor.
 
     ![](/help/forms/assets/screenshot2028118529.png)
@@ -536,7 +535,7 @@ To render the form hosted on your cloud service publish environment:
 
 1.  Set the following values for the variables in the .env file. After updating variables, save the file. Use the **CTRL + S** switch combination to save the file. 
 
-    *   **AEM_URL**: Specify the URL of the cloud service publish environment. For example, [https://publish-p105303-e986623.adobeaemcloud.com](https://publish-p105303-e986623.adobeaemcloud.com/)
+    *   **AEM_URL**: Specify the URL of the cloud service publish environment.
 
     *   **AEM_FORM_PATH**: Specify the path of the adaptive form created in the previous lesson. For example, /content/forms/af/registration/
 
@@ -672,12 +671,10 @@ Now that you have learned how to build adaptive forms and deliver them to multip
 
 *   [Adaptive Form core components introduction](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)
 
-*   [Create adaptive form using core components](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+*   [Create adaptive form using core components](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 *   [Update styling for core component-based AF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=en)
 
 *   [Headless adaptive forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=en)
 
 *   [Using Headless React starter kit](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=en)
-
-

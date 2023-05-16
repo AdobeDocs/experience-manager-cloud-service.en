@@ -9,6 +9,11 @@ exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 
 # Add smart tags to your assets and improve search experience {#smart-tag-assets-for-faster-search}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 Organizations that deal with digital assets increasingly use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for their digital assets. Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved in searches.
 
 Compared to natural language vocabularies, tagging based on business taxonomy helps align the assets with a company's business and ensures that the most relevant assets appear in searches. For example, a car manufacturer can tag car images with model names so only relevant images are displayed when searched to design a promotion campaign.
@@ -230,7 +235,7 @@ Enhanced smart tagging is based on learning models of images and their tags. The
 
 * Inability to recognize subtle differences in images. For example, slim-fit versus regular-fit shirts.
 * Inability to identify tags based on tiny patterns or parts of an image. For example, logos on shirts.
-* Tagging is supported in the languages that [!DNL Experience Manager] supports. For a list of languages, see [Smart Content Service release notes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* Tagging is supported in the languages that [!DNL Experience Manager] supports.
 * The tags that are not handled relate to:
 
   * Non-visual, abstract aspects. For example, the year or season of release of a product, mood of or emotion evoked by an image, and a subjective connotation of a video.
@@ -246,6 +251,21 @@ To search for files with smart tags (regular or enhanced), use the [!DNL Assets]
 >
 >The ability of the Smart Tags to train on your tags and apply them on other images depends on the quality of images you use for training.
 >For best results, Adobe recommends that you use visually similar images to train the service for each tag.
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

@@ -37,7 +37,7 @@ The source AEM instance may be running behind a firewall where it can only reach
 
 ### Enable SSL Logging {#enable-ssl-logging}
 
-Understanding SSL/TLS connection problems can sometimes be difficult. To toubleshoot connection issues during an extraction process, you can enable SSL logging via the System Console of the source AEM environment by following these steps:
+Understanding SSL/TLS connection problems can sometimes be difficult. To troubleshoot connection issues during an extraction process, you can enable SSL logging via the System Console of the source AEM environment by following these steps:
 
 1. Navigate to the Adobe Experience Manager Web Console on your source instance, by going to **Tools - Operations - Web Console** or directly to the URL at *https://serveraddress:serverport/system/console/configMgr*
 1. Search for **Content Transfer Tool Extraction Service Configuration**
@@ -85,6 +85,10 @@ The following section applies to the new version of the Content Transfer Tool. F
    The following dialog will be presented. Notice that a migration set will expire after a prolonged period of inactivity. After warnings are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
+
+   >[!NOTE]
+   >
+   >The name must follow the same conventions of an AEM node so cannot contain any of these characters: . / : [ ] | *
 
 1. You should now see your migration list in the list view. Click on the three dots symbol (**...**) to open the dropdown and click on **Copy Extraction key**. You will need this key during the Extraction phase. Copy this Extraction key.
 
@@ -170,7 +174,7 @@ Follow the steps below to run a size check:
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Click on **Check Size** to start the process. You will then return to the migration set list view and you should see a message indicating that **Check Size** is running.
+1. Click on **Check Size** to start the process. You will then return to the migration set list view, and you should see a message indicating that **Check Size** is running.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 

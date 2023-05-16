@@ -1,8 +1,8 @@
 ---
 title: Getting Started with the Universal Editor in AEM
 description: Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
+exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 ---
-
 # Getting Started with the Universal Editor in AEM {#getting-started}
 
 Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
@@ -26,9 +26,13 @@ This document will guide you through these steps.
 
 ## Request Access to the Universal Editor {#request-access}
 
-You first need to request access to the Universal Editor. Please go to [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor) and validate if you have access to the Universal Editor.
+You first need to request access to the Universal Editor. Please go to [https://experience.adobe.com/#/aem/editor,](https://experience.adobe.com/#/aem/editor) sign in, and validate if you have access to the Universal Editor.
 
 In case you do not have access, it can be requested via a form linked on the same page.
+
+![Request access to the Universal Editor](assets/request-access.png)
+
+Click **Request access** and fill out the form as directed to request access. An Adobe representative will review your request and reach out to discuss your use case.
 
 ## Include the Universal Editor Core Library {#core-library}
 
@@ -99,14 +103,14 @@ The instrumentation attributes added to the page consist mostly of [HTML Microda
 Connections which are used in the app are stored as `<meta>` tags in the page's `<head>`.
 
 ```html
-<meta name="urn:auecon:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
 ```
 
 * `<referenceName>` - This is a short name which is reused in the document to identify the connection. E.g. `aemconnection`
 * `<protocol>` - This indicates which persistence plugin of the Universal Editor Persistence Service to use. E.g. `aem`
 * `<url>` - Ths is the URL to the system where the changes shall be persisted. E.g. `http://localhost:4502`
 
-The short identifier `auecon` stands for Adobe Universal Editor Connection.
+The identifier `adobe:aem:editor` represents the connection for the Adobe Universal Editor.
 
 `itemid`s will use the `urn` prefix to shorten the identifier.
 
@@ -126,8 +130,8 @@ itemid="urn:<referenceName>:<resource>"
 ```html
 <html>
 <head>
-    <meta name="urn:auecon:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:auecon:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aem:editor:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>

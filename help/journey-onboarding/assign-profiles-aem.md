@@ -95,6 +95,8 @@ However if you would like to better understand how authors and developers use th
 
 ## Additional Resources {#additional-resources}
 
+The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
+
 * [Managing Products and User Access in Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Learn how to use the Admin Console to manage use access.
 * [Configuring access to AEM walk-through](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en) - Check out this abridged walk-though to learn about configuring Adobe IMS users, user groups, and product profiles in the Admin Console.
 

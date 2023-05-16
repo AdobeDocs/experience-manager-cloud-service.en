@@ -9,6 +9,11 @@ exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 ---
 # Adobe Experience Manager and Creative Cloud integration best practices {#aem-and-creative-cloud-integration-best-practices}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 Adobe Experience Manager Assets is a digital asset management (DAM) solution that can integrate with Adobe Creative Cloud to help DAM users work together with creative teams, streamlining collaboration in the content creation process.
 
 Adobe Creative Cloud provides creative teams with an ecosystem of solutions and services to help them to create digital assets. It includes desktop and mobile applications, cloud services like storage with desktop sync or web experience, as well as marketplaces like Adobe Stock.
@@ -222,3 +227,18 @@ You can leverage the following upload capabilities:
 If you use Network File Shares to manage digital assets, just using the network share mapped by Experience Manager desktop app could be seen as a convenient substitute. When transitioning from network file shares, Experience Manager web interface provides a rich set of Digital Asset Management capabilities that go well beyond what is possible on a network share (search, collections, metadata, collaboration, previews, and so on), and Experience Manager desktop app provides a handy link to connect the server-side DAM repository with the work on desktop.
 
 Avoid using Experience Manager desktop app to manage assets directly in the network share of Experience Manager Assets. For example, avoid using Experience Manager desktop app to move/copy multiple files. Instead, use the Experience Manager Assets web UI to drag folders from Finder/Explorer to the network share or use the Experience Manager Assets Folder Upload feature.
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)

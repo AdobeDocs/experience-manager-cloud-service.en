@@ -28,6 +28,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Release Information](/help/release-notes/home.md)
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
+    + 2023 {#2023}
+      + [Release Notes for 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
     + 2022 {#2022}
       + [Release Notes for 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
       + [Release Notes for 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
@@ -64,10 +66,13 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2023 {#2023}
+      + [Maintenance Release Notes for 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
       + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
+      + [Release Notes for 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)      
       + [Release Notes for 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
       + [Release Notes for 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
     + 2022 {#2022}
@@ -137,6 +142,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support.md)
   + [Same Site Cookie Support for AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
+  + [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
 + Onboarding {#onboarding}
   + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
   + Onboarding Journey {#journey}
@@ -168,6 +174,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Create the Content Structure for Your App](/help/trials/headless/content-structure.md)
     + [Create Headless Content](/help/trials/headless/create-content.md)
     + [Extract Content via the GraphQL API](/help/trials/headless/extract-content.md)
+    + [Fetch JSON content with JavaScript](/help/trials/headless/code-playground.md)
 + AEM as a Cloud Service Migration Journey {#migration-journey}
   + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/getting-started.md)
   + [Readiness Phase](/help/journey-migration/readiness.md)
@@ -361,6 +368,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Integrating with Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
     + [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
     + [IMS Configuration for use when Integrating with Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
+    + [Exporting Content Fragments to Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
     + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
@@ -407,7 +415,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
     + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
     + [Configure transcription for audio and video assets](/help/assets/configure-transcription.md)
-    + [Multilingual assets and translation](/help/assets/translate-assets.md)
+    + [Translate assets](/help/assets/translate-assets.md)
     + [Search facets](/help/assets/search-facets.md)
     + [Assets HTTP API](/help/assets/mac-api-assets.md)
     + [Content Fragments support in Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
@@ -533,6 +541,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
         + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+        + [Create an Adaptive Forms - Core Components in an AEM Sites page](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
         + [Summit Workbook](/help/forms/summit-2023-workbook.md)
     + Authoring Adaptive Forms - Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
@@ -542,9 +551,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
         + [Introduction to authoring of an Adaptive Forms](/help/forms/introduction-forms-authoring.md)
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
+        + [Reference themes, templates, and data models](/help/forms/reference-themes-templates-data-models.md)
         + [Create a template](/help/forms/template-editor.md)
         + [Create a theme](/help/forms/themes.md)
-        + [Reference Assets](/help/forms/reference-assets.md)
         + [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)
         + [Improve performance of large forms with lazy loading](/help/forms/lazy-loading-adaptive-forms.md)
       + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
@@ -775,8 +784,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Overview](/help/implementing/cloud-manager/overview-test-results.md)
       + [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
       + [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md)
-      + [Functional Testing](/help/implementing/cloud-manager/functional-testing.md)
-      + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
+      + Functional Testing {#functional-testing}
+        + [Functional Testing Overview](/help/implementing/cloud-manager/functional-testing.md)
+        + [Java Functional Testing](/help/implementing/cloud-manager/java-functional-testing.md)
+        + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
       + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
     + [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md)
     + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
@@ -872,6 +883,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Developer Tools {#developer-tools}
     + [Developer Mode](/help/implementing/developing/tools/developer-mode.md)
     + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
+    + [Content Copy](/help/implementing/developing/tools/content-copy.md)
     + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
     + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
     + [Using CRXDE Lite](/help/implementing/developing/tools/crxde.md)
@@ -921,6 +933,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Author Tier {#author-tier}
     + [Accessing the Author Tier](/help/implementing/author-tier/accessing-the-author-tier.md)
     + [Securing the Author Tier](/help/implementing/author-tier/securing-the-author-tier.md)
+  + Preview Tier {#preview-tier}
+    + [Configuring OSGi Settings for the Preview Tier](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
   + Content Delivery Overview {#content-delivery}
     + [Content Delivery Flow](/help/implementing/dispatcher/overview.md)
     + [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md)

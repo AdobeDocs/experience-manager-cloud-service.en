@@ -138,6 +138,8 @@ If you are interested in how content authors access and use AEM as a Cloud servi
 
 ## Additional Resources {#additional-resources}
 
+The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
+
 * [Accessing Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - Learn how to access and manage your git repository using the self-service git account management from Cloud Manager.
 * [Using git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Learn how to use Cloud Manager's git repositories and how to integrate your own on-premise customer-managed git repository with Cloud Manager.
 * [Local Development Environment Set up](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) - This tutorial walks you through setting up a local development environment for Adobe Experience Manager (AEM) using the AEM as a Cloud Service SDK. 

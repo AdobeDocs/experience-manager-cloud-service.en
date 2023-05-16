@@ -1,13 +1,13 @@
 ---
-title: Release Notes for Cloud Manager 2023.3.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2023.3.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2023.5.0 in Adobe Experience Manager as a Cloud Service
+description: These are the release notes for Cloud Manager 2023.5.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 ---
 
-# Release Notes for Cloud Manager 2023.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release Notes for Cloud Manager 2023.5.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager release 2023.3.0 in AEM as a Cloud Service.
+This page documents the release notes for Cloud Manager release 2023.5.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -15,9 +15,15 @@ This page documents the release notes for Cloud Manager release 2023.3.0 in AEM 
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2023.3.0 in AEM as a Cloud Service is 16 March 2023. The next release is planned for 13 April 2023.
+The release date for Cloud Manager release 2023.5.0 in AEM as a Cloud Service is 11 May 2023. The next release is planned for 8 June 2023.
+
+## What's New {#what-is-new}
+
+* Product, functional, and UI testing support has been extended to [non-production pipeline testing.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+* In addition to enabling testing upstream, [UI testing support has been extended to Cypress testing.](/help/implementing/cloud-manager/ui-testing.md)
+* [Self-service content copy](/help/implementing/developing/tools/content-copy.md) is now available from a higher to a lower environment via the Cloud Manager UI. 
+* The pipeline execution validation step has been enhanced to validate the state of the replication queues early in the execution process. This ensures the deployment steps are not affected by blocked queues that should be addressed by AEM administrator users directly in the authoring environment.
 
 ## Bug Fixes {#bug-fixes}
 
-* An issue was fixed where the go-live widget incorrectly set the previously set date.
-* The commerce tile on the **Learn** tab of Cloud Manager now navigates the user to the correct page.
+* Environment creation no longer fails when multi-byte characters are used in the environment's name.

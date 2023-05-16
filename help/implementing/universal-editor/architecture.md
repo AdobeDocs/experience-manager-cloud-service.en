@@ -1,8 +1,8 @@
 ---
 title: Universal Editor Architecture
 description: Learn about the architecture of the Universal Editor and how data flows between its services and layers.
+exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 ---
-
 # Universal Editor Architecture {#architecture}
 
 Learn about the architecture of the Universal Editor and how data flows between its services and layers.
