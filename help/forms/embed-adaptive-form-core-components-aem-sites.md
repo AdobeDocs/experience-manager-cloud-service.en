@@ -46,7 +46,7 @@ The [!UICONTROL Adaptive Form Container] component allows building digital enrol
   1. Click the [!UICONTROL Policy] and select the **Core Components Examples - Adaptive Form** checkbox.
   1. Click [!UICONTROL Done].
 
-  >[!VIDEO](/help/forms/assets/adaptiveformcontainer.mp4)
+  >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
 +++
 
@@ -94,7 +94,7 @@ To create an Adaptive Form using [!UICONTROL Adaptive Forms Container] component
 1. Create an Adaptive Form using the Adaptive Forms components. 
 1. Save the settings. 
 
->[!VIDEO](/help/forms/assets/formcreationbyadaptiveformcontainer.mp4)
+>[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 Your form is ready. When you publish the AEM Sites page, it automatically publishes an Adaptive Form and its associated referenced assets.
 
@@ -156,7 +156,7 @@ Using **[!UICONTROL Adaptive Forms - Embed (V2)]** component, you can either emb
   1. Click the [!UICONTROL Policy] and select the **Core Content** checkbox.
   1. Click [!UICONTROL Done].
 
-  >[!VIDEO](/help/forms/assets/enableadaptiveform-embedtemplate.mp4)
+  >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
 
 +++
 
@@ -212,7 +212,7 @@ Using **[!UICONTROL Adaptive Forms - Embed (V2)]** component, you can either emb
 1. The [!UICONTROL Asset Path] already includes the path of a created Adaptive Form
 1. Save the settings. The Adaptive Form  is now embedded in the page.
 
- >[!VIDEO](/help/forms/assets/adaptiveformembed_createform.mp4)
+ >[!VIDEO](https://video.tv.adobe.com/v/3419366/adaptive-form-aem-forms?quality=12&learn=on)
  
 ### Embed existing Adaptive Form {#embed-existing-af}
 
@@ -222,7 +222,7 @@ Using **[!UICONTROL Adaptive Forms - Embed (V2)]** component, you can either emb
 1. Browse and select the Adaptive Form to embed in the [!UICONTROL Asset Path]. 
 1. Save the settings. The Adaptive Form  is now embedded in the page.
 
- >[!VIDEO](/help/forms/assets/adaptiveformembed_embedform.mp4)
+ >[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
  
 #### Configure Adaptive Form _ Embed Properties
 
