@@ -37,7 +37,7 @@ Perform the following tasks to integrate and use Asset Selector with your [!DNL 
 
 You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository and select assets from within the application. 
 
-The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. You need to edit an `index.html` or any appropriate file within your application to-
+The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. You need to edit an `index.html` or any appropriate file within your application to -
 *   Define the authentication details
 *   Access the Assets as a Cloud Service repository
 *   Configure the Asset Selector display properties
