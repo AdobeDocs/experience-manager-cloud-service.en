@@ -43,8 +43,8 @@ The [!UICONTROL Adaptive Form Container] component allows building digital enrol
   To enable [!UICONTROL Adaptive Forms Container] component in template's policy, perform the following steps:
 
   1. Go to the [!UICONTROL Page Information] > [!UICONTROL Edit Template]
-  1. Click the [!UICONTROL Policy] and select the **Core Components Examples - Adaptive Form** checkbox.
-  1. Click [!UICONTROL Done].
+  1. Click the [!UICONTROL Policy] and select the **[!UICONTROL Adaptive Forms Container]**  checkbox under the **[AEM Archetype Project Name] - Adaptive Form**.
+  1. Click **[!UICONTROL Done]**.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
@@ -149,12 +149,12 @@ Using **[!UICONTROL Adaptive Forms - Embed (V2)]** component, you can either emb
 
 +++ Enable the **Adaptive Forms - Embed** component in the associated template's policy.
 
-  To enable [!UICONTROL Adaptive Forms - Embed(V2)] component in template's policy, perform the following steps:
+  To enable [!UICONTROL Adaptive Forms - Embed(v2)] component in template's policy, perform the following steps:
 
   1. Go to the [!UICONTROL Page Information] > [!UICONTROL Edit Template]
 
-  1. Click the [!UICONTROL Policy] and select the **Core Content** checkbox.
-  1. Click [!UICONTROL Done].
+  1. Click the [!UICONTROL Policy] and select the **[UICONTROL Adaptive Form - Embed (v2)]** checkbox under the **[UICONTROL [AEM Archetype Project Name] - Forms]** group .
+  1. Click **[!UICONTROL Done]**.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
 
