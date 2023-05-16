@@ -44,18 +44,9 @@ To run the procedure use the following steps:
       <th>Type</th>
       <th>Notes</th>
      </tr>
+
      <tr>
       <td>1</td>
-      <td>`AEM_RELEASE_CHANNEL` </td>
-      <td>`prerelease` </td>
-      <td> </td>
-      <td>All </td>
-      <td> </td>
-      <td>Variable </td>
-      <td>Required to enable the feature. </td>
-     </tr>
-     <tr>
-      <td>2</td>
       <td>`CF_MIGRATION_ENABLED` </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -65,7 +56,7 @@ To run the procedure use the following steps:
       <td>Enables(!=0) or disables(0) triggering of Content Fragment migration job. </td>
      </tr>
      <tr>
-      <td>3</td>
+      <td>2</td>
       <td>`CF_MIGRATION_ENFORCE` </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -75,7 +66,7 @@ To run the procedure use the following steps:
       <td>Enforce (!=0) re-migration of Content Fragments.<br>Setting this flag to 0 will do an incremental migration of CFs. This means, if the job is terminated due to any reason, then next run of the job will start migration from the pont where it got terminated. Note that, the very first migration is recommended to be enforced (value=1). </td>
      </tr>
      <tr>
-      <td>4</td>
+      <td>3</td>
       <td>`CF_MIGRATION_BATCH` </td>
       <td>`50` </td>
       <td>`50` </td>
@@ -85,7 +76,7 @@ To run the procedure use the following steps:
       <td>Size of the batch for saving number of Content Fragments after migration.<br>This is relevant to how many CFs will be saved to repository in one batch, and can be used to optimize number of writes to repository. </td>
      </tr>
      <tr>
-      <td>5</td>
+      <td>4</td>
       <td>`CF_MIGRATION_LIMIT` </td>
       <td>`1000` </td>
       <td>`1000` </td>
@@ -95,7 +86,7 @@ To run the procedure use the following steps:
       <td>Max number of Content Fragments to process at a time.<br>See also notes for `CF_MIGRATION_INTERVAL`. </td>
      </tr>
      <tr>
-      <td>6</td>
+      <td>5</td>
       <td>`CF_MIGRATION_INTERVAL` </td>
       <td>`60` </td>
       <td>`600` </td>
