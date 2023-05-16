@@ -153,7 +153,7 @@ Using **[!UICONTROL Adaptive Forms - Embed (V2)]** component, you can either emb
 
   1. Go to the [!UICONTROL Page Information] > [!UICONTROL Edit Template]
 
-  1. Click the [!UICONTROL Policy] and select the **[!UICONTROL Adaptive Form - Embed (v2)]** checkbox under the **[UICONTROL [AEM Archetype Project Name] - Forms]** group .
+  1. Click the [!UICONTROL Policy] and select the **[!UICONTROL Adaptive Form - Embed (v2)]** checkbox under the **[!UICONTROL [AEM Archetype Project Name] - Forms]** group .
   1. Click **[!UICONTROL Done]**.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
