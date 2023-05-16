@@ -126,7 +126,7 @@ Selected Asset Type is an array of objects that contains the asset information w
 
 **Schema Syntax**
 
-````
+```
 interface SelectedAsset {
     'repo:id': string;
     'repo:name': string;
@@ -152,7 +152,8 @@ interface SelectedAsset {
         }>;
     };
 }
-````
+```
+
 The following table describes some of the important properties of the Selected Asset object.
 
 | Property | Type | Explanation |
