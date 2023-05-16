@@ -20,7 +20,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 * SalesForce
 * Microsoft&reg; Azure Blob Storage
 
-Data integration supports OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in [!DNL Experience Manager] as a Cloud Service, JDBC for relational databases and connector for [!DNL Experience Manager] user profile are configured in [!DNL Experience Manager] web console.
+Data integration supports OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->, Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in [!DNL Experience Manager] as a Cloud Service, JDBC for relational databases and connector for [!DNL Experience Manager] user profile are configured in [!DNL Experience Manager] web console.
 
 ## Configure relational database {#configure-relational-database}
 
@@ -130,7 +130,7 @@ RESTful web service can be described using [Swagger specifications](https://swag
         * Base Path: The URL prefix for all API paths. It is an optional field.  
           If necessary, edit the pre-populated values for these fields.
 
-    * Select the authentication type — None, OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, API Key, or Custom Authentication — to access the RESTful service, and accordingly provide details for authentication.
+    * Select the authentication type — None, OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->, Basic Authentication, API Key, or Custom Authentication — to access the RESTful service, and accordingly provide details for authentication.
 
     If you select **[!UICONTROL API Key]** as the authentication type, specify the value for the API key. The API key can be sent as a request header or as a query parameter. Select one of these options from the **[!UICONTROL Location]** drop-down list and specify the name of the header or the query parameter in the **[!UICONTROL Parameter Name]** field accordingly.
 
@@ -149,7 +149,7 @@ RESTful web service can be described using [Swagger specifications](https://swag
 
     * Select URL or File from the [!UICONTROL Swagger Source] drop-down, and accordingly specify the [!DNL Swagger 3.0 URL] to the[!DNL  Swagger] definition file or upload the [!DNL Swagger] file from your local file system.
     * Based on the[!DNL  Swagger] Source input, the connection information with the target server is displayed.
-    * Select the authentication type — None, OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, API Key, or Custom Authentication — to access the RESTful service, and accordingly provide details for authentication.
+    * Select the authentication type — None, OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->, Basic Authentication, API Key, or Custom Authentication — to access the RESTful service, and accordingly provide details for authentication.
 
     If you select **[!UICONTROL API Key]** as the authentication type, specify the value for the API key. The API key can be sent as a request header or as a query parameter. Select one of these options from the **[!UICONTROL Location]** drop-down list and specify the name of the header or the query parameter in the **[!UICONTROL Parameter Name]** field accordingly.
 
@@ -225,7 +225,7 @@ To configure SOAP-based web service in [!DNL Experience Manager] as a Cloud Serv
 
     * WSDL URL for the web service.
     * Service Endpoint. Specify a value in this field to override the service endpoint mentioned in WSDL.
-    * Select the authentication type — None, OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, or Custom Authentication — to access the SOAP service, and accordingly provide the details for authentication.
+    * Select the authentication type — None, OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->, Basic Authentication, or Custom Authentication — to access the SOAP service, and accordingly provide the details for authentication.
 
       <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
       <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
@@ -267,7 +267,7 @@ An OData service is identified by its service root URL. To configure an OData se
 1. Specify the following details for the OData service:
 
     * Service Root URL for the OData service to be configured.
-    * Select the authentication type — None, OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, API Key, or Custom Authentication — to access the OData service, and accordingly provide the details for authentication.
+    * Select the authentication type — None, OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->, Basic Authentication, API Key, or Custom Authentication — to access the OData service, and accordingly provide the details for authentication.
 
     If you select **[!UICONTROL API Key]** as the authentication type, specify the value for the API key. The API key can be sent as a request header or as a query parameter. Select one of these options from the **[!UICONTROL Location]** drop-down list and specify the name of the header or the query parameter in the **[!UICONTROL Parameter Name]** field accordingly.
 
