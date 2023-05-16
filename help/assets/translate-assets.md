@@ -8,6 +8,11 @@ exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
 ---
 # Translate assets in AEM {#multilingual-assets}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 Multilingual assets means assets with binaries, metadata, and tags in multiple languages. Generally, binaries, metadata, and tags for assets exist in one language, which are then translated to other languages for use in multilingual projects. Adobe Experience Manager Assets lets you automate workflows to translate assets (including binaries, metadata, and tags) to generate assets in other languages for use in multilingual projects.
 
 To automate AEM asset translation, you integrate translation service providers with Experience Manager and create projects for translating assets into multiple languages. Experience Manager supports human and machine translation workflows.
