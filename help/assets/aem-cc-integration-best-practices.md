@@ -9,6 +9,11 @@ exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 ---
 # Adobe Experience Manager and Creative Cloud integration best practices {#aem-and-creative-cloud-integration-best-practices}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 Adobe Experience Manager Assets is a digital asset management (DAM) solution that can integrate with Adobe Creative Cloud to help DAM users work together with creative teams, streamlining collaboration in the content creation process.
 
 Adobe Creative Cloud provides creative teams with an ecosystem of solutions and services to help them to create digital assets. It includes desktop and mobile applications, cloud services like storage with desktop sync or web experience, as well as marketplaces like Adobe Stock.
