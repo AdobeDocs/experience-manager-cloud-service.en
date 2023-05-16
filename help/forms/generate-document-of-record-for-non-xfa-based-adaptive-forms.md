@@ -1,6 +1,7 @@
 ---
-title: Generate Document of Record for Adaptive Forms
+title: Generate a document of record for Adaptive Forms
 description: Explains how you can generate a template for a Document of Record (DoR) for Adaptive Forms.
+exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 ---
 # Generate Document of Record for Adaptive Forms
 
