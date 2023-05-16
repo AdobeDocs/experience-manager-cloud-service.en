@@ -8,6 +8,11 @@ exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
 ---
 # Generate For Placement Only renditions for Adobe InDesign {#fpo-renditions}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/configure-fpo-renditions.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 When placing large-sized assets from Experience Manager into Adobe InDesign documents, a creative professional must wait for a substantial time after they [place an asset](https://helpx.adobe.com/indesign/using/placing-graphics.html). Meanwhile, the user is blocked from using InDesign. This interrupts creative flow and negatively impacts the user experience. Adobe enables temporarily placing small-sized renditions in InDesign documents to begin with. When the final output is required, say for print and publishing workflows, the original, full-resolution assets replace the temporary rendition in background. This asynchronous update in the background speeds up the design process to enhance productivity and doesn't hinder the creative process.
 
 Assets provides renditions that are used for placement only (FPO). These FPO renditions have a small file size but are of the same aspect ratio. If an FPO rendition is not available for an asset, Adobe InDesign uses the original asset instead. This fallback mechanism ensures that the creative workflow proceeds without any breaks.
@@ -50,3 +55,18 @@ You can check the generated FPO renditions after the workflow completes. In Expe
 Click **[!UICONTROL FPO rendition]** to load its preview. Optionally, you can right click the rendition and save it to your file system. Check for available renditions in the left rail.
 
 ![rendition_list](assets/list-renditions.png)
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)

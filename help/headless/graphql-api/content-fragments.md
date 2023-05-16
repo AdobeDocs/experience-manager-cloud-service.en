@@ -233,15 +233,17 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 
 | Content Fragment Model - Data Type | GraphQL Type | Description |
 |--- |--- |--- |
-| Single line Text | String, [String] | Used for simple strings such as author names, location names, etc. |
-| Multi line Text | String, [String] | Used for outputting text such as the body of an article |
-| Number | Float, [Float] | Used to display floating point number and regular numbers |
-| Boolean | Boolean | Used to display checkboxes → simple true/false statements |
-| Date And Time | Calendar | Used to display date and time in an ISO 8601 format. Depending on the type selected, there are three flavors available for use in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
-| Enumeration | String | Used to display an option from a list of options defined at model creation |
-| Tags | [String] | Used to display a list of Strings representing Tags used in AEM |
-| Content Reference | String, [String] | Used to display the path towards another asset in AEM |
-| Fragment Reference | *A model type* | Used to reference another Content Fragment of a certain Model Type, defined when the model was created |
+| Single line Text | `String`, `[String]` | Used for simple strings such as author names, location names, etc. |
+| Multi line Text | `String`, `[String]` | Used for outputting text such as the body of an article |
+| Number | `Float`, `[Float]` | Used to display floating point number and regular numbers |
+| Boolean | `Boolean` | Used to display checkboxes → simple true/false statements |
+| Date And Time | `Calendar` | Used to display date and time in an ISO 8601 format. Depending on the type selected, there are three flavors available for use in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
+| Enumeration | `String` | Used to display an option from a list of options defined at model creation |
+| Tags | `[String]` | Used to display a list of Strings representing Tags used in AEM |
+| Content Reference | `String`, `[String]` | Used to display the path towards another asset in AEM |
+| Fragment Reference | *A model type* <br><br>Single field: `Model` - Model type, referenced directly <br><br>Multifield, with one referenced type: `[Model]` - Array of type `Model`, referenced directly from array <br><br>Multifield, with multiple referenced types: `[AllFragmentModels]` - Array of all model types, referenced from array with union type | Used to reference one, or more, Content Fragments of certain Model Types, defined when the model was created |
+
+{style="table-layout:auto"}
 
 ### Helper Fields {#helper-fields}
 
@@ -689,13 +691,218 @@ query {
 
 >[!NOTE]
 >
->* By default paging use the UUID of the repository node representing the fragment for ordering to ensure the order of results is always the same. When `sort` is used, the UUID is implicitly used to ensure a unique sort; even for two items with identical sort keys.
+>* By default, paging uses the UUID of the repository node representing the fragment for ordering to ensure the order of results is always the same. When `sort` is used, the UUID is implicitly used to ensure a unique sort; even for two items with identical sort keys.
 >
 >* Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. This is also the recommended way if you want to query large paginated result sets.
+
+## Web-optimized image delivery in GraphQL queries {#web-optimized-image-delivery-in-graphql-queries}
+
+Web-optimized image delivery allows you to use a Graphql query to:
+
+* Request a URL to an AEM Asset image
+
+* Pass parameters with the query, so that a specific rendition of the image is automatically generated and returned
+  
+  >[!NOTE]
+  >
+  >The rendition specified is not stored in AEM Assets. The rendition is generated and held in cache for a short period.
+
+* Return the URL as part of the JSON delivery
+
+You can use AEM to:
+
+* Pass [Web-Optimized Image Delivery](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) into GraphQL queries. 
+
+This means that the commands get applied during query execution, in the same way as URL parameters on GET requests for those images.
+
+This allows you to dynamically create image renditions for JSON delivery, which avoids having to manually create and store those renditions in the repository.
+
+The solution in GraphQL means you can:
+
+* use `_dynamicUrl` on the `ImageRef` reference
+
+* add `_assetTransform` to the list header where your filters are defined
+
+### Structure of the Transformation Request {#structure-transformation-request}
+
+`AssetTransform` (`_assetTransform`) is used to make the URL transformation requests. 
+
+The structure and syntax is:
+
+* `format`: an enumeration with all supported formats by its extension: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL or WEBPLY
+* `seoName`: a string that will be used as file name instead of the node name
+* `crop`: a frame sub structure, if width or height is omitted then the height or width is used as the same value
+  * `xOrigin`: the x origin of the frame and is mandatory
+  * `yOrigin`: the y origin of the frame and is mandatory
+  * `width`: the width of the frame
+  * `height`: the height of the frame
+* `size`: a dimension sub structure, if width or height is omitted then the height or width is used as the same value
+  * `width`: the width of the dimension
+  * `height`: the height of the dimension
+* `rotation`: an enumeration of all supported rotations: R90, R180, R270
+* `flip`: an enumeration of HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
+* `quality`: an integer between 1 and 100 notating the percentage of the image quality
+* `width`: an integer that defines the width of the output image but will be ignored by the Image Generator
+* `preferWebp`: a boolean that indicates if webp is preferred (default value is false)
+
+The URL transform is available for all query types: by path, list or paginated.
+
+### Web-optimized image delivery with full parameters {#web-optimized-image-delivery-full-parameters}
+
+The following is a sample query with a full set of parameters:
+
+```graphql
+{
+  articleList(
+    _assetTransform: {
+      format:GIF
+      seoName:"test"
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### Web-optimized image delivery with a single query variable {#web-optimized-image-delivery-single-query-variable}
+
+The following example shows the use of a single query variable:
+
+```graphql
+query ($seoName: String!) {
+  articleList(
+    _assetTransform: {
+      format:GIF
+      seoName:$seoName
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### Web-optimized image delivery with multiple query variables {#web-optimized-image-delivery-multiple-query-variables}
+
+The following example shows the use of multiple query variables:
+
+```graphql
+query ($seoName: String!, $format: AssetTransformFormat!) {
+  articleList(
+    _assetTransform: {
+      format:$format
+      seoName:$seoName
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### Web-optimized image delivery request by URL {#web-optimized-image-delivery-request-url}
+
+If you save your query as a persisted query (for example, with the name `dynamic-url-x`) you can then [execute the persisted query directly](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
+
+For example, to directly execute the previous samples (saved as persisted queries), use the following URLs:
+
+* [Single Parameter](#dynamic-image-delivery-single-specified-parameter); Persisted Query named `dynamic-url-x`
+
+  * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
+
+    The response will look like:
+
+    ![Image Delivery using parameters](assets/cfm-graphiql-sample-image-delivery.png "Image Delivery using parameters")
+
+* [Multiple Parameters](#dynamic-image-delivery-multiple-specified-parameters); Persisted Query named `dynamic`
+
+  * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
+
+    >[!CAUTION]
+    >
+    >The trailing `;`is mandatory to cleanly terminate the list of parameters.
+
+### Limitations of Image Delivery {#image-delivery-limitations}
+
+The following limitations exist:
+
+* Modifiers applied to all images part of the query (global parameters)
+
+* Caching headers
+
+  * No caching on author
+  * Caching on publish - max-age of 10 minutes (cannot be changed by client)
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
 The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
+
+* If you require a single result:
+  * use the model name; eg city
 
 * If you expect a list of results:
   * add `List` to the model name; for example,  `cityList`
@@ -714,13 +921,6 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
     * [A Paginated query with first and after](#paginated-first-after)
   * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
-* If you require a single result:
-  * use the model name; eg city
-
-* If you expect a list of results:
-  * add `List` to the model name; for example,  `cityList`
-  * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
-  
 * If you want to use a logical OR:
   * use ` _logOp: OR`
   * See [Sample Query - All Persons that have a name of "Jobs" or "Smith"](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
@@ -755,7 +955,19 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
       >
       >If the given variation does not exist for a Content Fragment, then the master variation will be returned as a (fallback) default.
 
-      * See [Sample Query - All Cities with a Named Variation](#sample-cities-named-variation)
+      * See [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+
+  * For [image delivery](#image-delivery):
+
+    * `_dynamicUrl`: on the `ImageRef` reference
+
+    * `_assetTransform`: on the list header where your filters are defined
+
+    * See:
+    
+      * [Sample Query for Image Delivery with full parameters](#image-delivery-full-parameters)
+
+      * [Sample Query for Image Delivery with a single specified parameter](#image-delivery-single-specified-parameter)
 
   * And operations:
   

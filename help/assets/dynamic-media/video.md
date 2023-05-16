@@ -89,8 +89,7 @@ The following step-by-step workflow description is designed to help you get up a
 
         * Integrate video using embed code on web page:
           [Embed the video viewer on a web page](/help/assets/dynamic-media/embed-code.md).
-
-    * [Publish videos to YouTube](#publishing-videos-to-youtube).
+    
     * [Generate video reports](#viewing-video-reports).
 
     * [Add captions to video](#adding-captions-to-video).
@@ -152,7 +151,7 @@ On the playback side of the viewer, it automatically detects the browser's video
 
 >[!NOTE]
 >
->To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
+>To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).
 
 You can combine into a single player the ability to design the playback components using HTML5 and CSS. It can have embedded playback, and use adaptive and progressive streaming depending on the browser's capability. All this functionality, means you can extend the reach of your rich media content to both desktop and mobile users and ensure a streamlined video experience.
 
@@ -266,7 +265,7 @@ The following graphic shows the overall authoring workflow of videos that are up
 
 ## Best practices for encoding videos {#best-practices-for-encoding-videos}
 
-The **Dynamic Media Encode Video** workflow encodes video if you have enabled Dynamic Media and set up video Cloud Services. This workflow captures workflow process history and failure information. See [Monitor video encoding and YouTube publishing progress](#monitoring-video-encoding-and-youtube-publishing-progress). If you have enabled Dynamic Media and set up video Cloud Services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
+The **Dynamic Media Encode Video** workflow encodes video if you have enabled Dynamic Media and set up video Cloud Services. This workflow captures workflow process history and failure information. If you have enabled Dynamic Media and set up video Cloud Services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
 
 The following are best-practice tips for encoding source video files.
 
@@ -420,7 +419,7 @@ Some key benefits from enabling DASH on your account include the following:
 
    >[!IMPORTANT]
    >
-   >Enabling DASH on your account is currently available only in North America. 
+   >Enabling DASH on your account is currently available only in Asia-Pacific and North America; coming soon in Europe-Middle East-Africa.
 
 You initiate a request to use DASH; it is not automatically enabled on your account.
 
