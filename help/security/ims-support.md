@@ -136,11 +136,15 @@ You will see a list of existing instances:
 
 Under each Product Context instance, there will be instances spanning Author or Publish services across Production, Stage, or Development environments. Each instance will be associated to Product Profiles or Cloud Manager roles. These product profiles are used for assigning access to Users and Groups with the required privileges.
 
-The **Administrator_xxx** profile will be used to grant Administrator privileges in the associated AEM instance while the **User_xxx** profile is used to add regular users.
+The **AEM Administrators_xxx** profile will be used to grant Administrator privileges in the associated AEM instance while the **AEM Users_xxx** profile is used to add regular users.
 
 Any users and groups added under this product profile will be able to login to that particular instance as shown in the example below:
 
 ![Product Profile](/help/security/assets/ims8.png)
+
+>[!WARNING]
+>
+>The **AEM Administrators** product profile name must not be changed. Changing the name of the **AEM Administrators** product profile will remove administrator rights from all users assigned to that profile.
 
 ### Logging into Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
