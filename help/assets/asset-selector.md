@@ -249,6 +249,7 @@ By following these steps, you can use Asset Selector with a non-SUSI flow in you
 
 </html>
 ```
+
 For detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 <!--
