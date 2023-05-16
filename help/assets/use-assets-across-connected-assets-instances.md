@@ -239,10 +239,6 @@ Sites authors can preview the available updates on the Sites deployment and then
 
 Experience Manager displays an `expired` status visual indicator on assets in Remote Assets Content Finder to stop site authors from using the asset on a Sites page. If you use an asset with an `expired` status on a Sites page, the asset fails to display on the Experience Manager publish instance. 
 
->[!NOTE]
->
->The updates to assets in remote DAM are made available to the Sites deployment only if remote DAM and Sites deployments are on Experience Manager as a Cloud Service.
-
 ## Frequently Asked Questions {#frequently-asked-questions}
 
 +++**Should  you configure Connected Assets if you need to use assets available on your [!DNL Sites] deployment?**
@@ -353,3 +349,17 @@ To troubleshoot common errors, follow these steps:
 * If remote references are not retrieved and results in an error message, check if [!DNL Sites] deployment is available and check for network connectivity issues. Retry later to check. [!DNL Assets] deployment attempts twice to establish connection with [!DNL Sites] deployment and then reports a failure.
 
   ![failure to retrieve asset remote references](assets/reference-report-failure.png)
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)

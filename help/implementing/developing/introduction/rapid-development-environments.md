@@ -1,13 +1,9 @@
 ---
 title: Rapid Development Environments
 description: Learn how to leverage Rapid Development Environments for rapid development iterations on a cloud environment.
+exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 ---
-
 # Rapid Development Environments {#rapid-development-environments}
-
->[!AVAILABILITY]
->
->This feature is planned to gradually roll out to customers.
 
 In order to deploy changes, current Cloud Development environments require the use of a process that employs extensive code security and quality rules called a CI/CD pipeline. For situations where quick and iterative changes are needed, Adobe has introduced Rapid Development Environments (RDEs for short).
 
@@ -212,6 +208,8 @@ Optionally, you can reference a remote repository:
 `aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 By default, artifacts are deployed to both author and publish tiers, but the "-s" flag can be used to target a specific tier.
+
+Any AEM package can be deployed, such as packages with code, content, or a [container package](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) (also called the "all" package).
 
 >[!IMPORTANT]
 >
@@ -448,6 +446,8 @@ When an RDE is reset, all content is removed and so if desired, explicit action 
 
 1. Place and commit the sample content in git inside an install.rde folder under /apps and then sync the overarching content package to the RDE using the command line tooling.
 
+1. Use the [content copy tool](/help/implementing/developing/tools/content-copy.md) to copy a defined content set from prod, stage, or dev environments, or from another RDE.
+
 1. Use Package Manager
 
 Note that you are limited to 1GB when syncing content packages.
@@ -496,4 +496,3 @@ Forms developers can use AEM Forms Cloud Service Rapid Development Environment t
 ## RDE tutorial
 
 To learn about RDE in AEM as a Cloud Service, refer to the [video tutorial that demonstrates how to set it up, how to use it, and the development life cycle](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
-

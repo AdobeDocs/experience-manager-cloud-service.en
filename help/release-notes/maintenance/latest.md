@@ -1,46 +1,38 @@
 ---
 title: Current Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 ---
-
 # Maintenance Release Notes {#maintenance-release-notes}
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 11382 {#release-11382}
+## Release 11873 {#release-11873}
  
-Summarized below are the continuous improvements for maintenance release 11382, which was publicly released on March 28, 2023. This maintenance release is an update from previous maintenance release 11289.
+Summarized below are the continuous improvements for maintenance release 11873, which was publicly released on May 3, 2023. This maintenance release is an update from previous maintenance release 11835.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
-### Fixed Issues {#fixed-issues}
+### Enhancements {#enhancements}
 
-- ASSETS-21023 - Fixed Smart Crop rendition, where customers could observe a Null Pointer exception on the Publisher instance of all AEM environments when  tried to access these renditions through the API.
-- SKYOPS-49280 - When installing a config or bundle update using RDE into Publish the result may not be observable because the Publish dispatcher cache isn't invalidated
+- SITES-1200 - Search API enhancements with tags based filtering
+- GRANITE-42939 - Add deprecation annotations and warnings to oauth-server code
 
-#### Sites {#sites-issues}
+### Known Issues {#known-issues-11873}
 
-- SITES-7796 - Ability for content author to publish the Master Content Fragment and its respective Variations when exporting to target
-- SITES-97 - GraphQL: Pagination & Sorting, hybrid filtering
+- SITES-13253 - RecursionTooDeepException in Core Components v2.22.6
+- SITES-13256 - Core WCM Teaser configured with special URL breaks page rendering
+- GRANITE-45462 - Messaging Client Multi Region Config
+- GRANITE-45562 - Issues with image combination returning 200 instead of 404
 
->[!NOTE]
->
-> In SITES-97, some improvements have been made in the GraphQL implementation that might cause unexpected behavior. See [AEM GraphQL changes regarding handling of null values](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html) for more information.
+### Fixed Issues {#fixed-issues-11873}
 
-#### Assets {#assets-issues}
+- SKYSI-19884/SKYOPS-53745 - Fixed issue with PublishPageRenderingErrorsHigh
+- GRANITE-4388 - Fixed the throughput degradation after large number of DAM asset-writes on Mongo
+- SITES-11922 - Fixed issue with unpublish from preview that did not remove sync status
+- ASSETS-21648 - Fixed permission issue with Asset Relate Functionality
 
-- ASSETS-20076 - Add support for video watermarking that matches the current image watermarking support
-- ASSETS-21428 - Added exclusions for CSS changes
-
-#### Forms {#forms-issues}
-
-- CQ-4351502 - Updating service user mapping to allow read access in Sites
-
-#### Platform {#platform-issues}
-
-- SITES-11040 - Conditional enablement of GraphQL persisted query caching in dispatcher
-
-### Embedded Technologies {#embedded-tech}
+### Embedded Technologies {#embedded-tech-11873}
 
 |Technology|Version|Link|
 |---|---|---|
