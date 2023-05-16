@@ -119,77 +119,13 @@ In Deno/Webpack Module Federation using **ESM CDN version**:
 ```
 import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
 ```
-<!--
-## Asset Selector APIs {#asset-selector-apis}
-
-When you install Asset Selector using a method outlined in [installation](#installation) section, the package exports the global identifier `PureJSSelectors` when installed via UMD. And, named exports `PureJSSelectors, AssetSelector, AssetSelectorWithAuthFlow, DestinationSelector, DestinationSelectorWithAuthFlow, registerAssetsSelectorsAuthService` when installed via ESM CDN. There are no default exports.
-
-Below are the API description exported by this package in identifier `PureJSSelectors` and its equivalent JSX components that are available via ESM imports.
-
-### PureJSSelectors.`renderAssetSelector` or `<AssetSelector/>`
-
-Renders the AssetSelector component on the provided container element and accepts all of the properties described in the [AssetSelector Props](#asset-selector-properties-asset-selector-props).
-
-> This method assumes that you supply a valid _imsToken_ that you could have obtained using [`ImsAuthService.getImsToken()`](#imsauthservice-ims-auth-service) or another medium. If you do not have an _imsToken_, you can use [renderAssetSelectorWithAuthFlow](#purejsselectorsrenderassetselectorwithauthflow-or-assetselectorwithauthflow) which implements an authentication flow to obtain a user based _imsToken_.
-
-###### Parameters
-
-* `container` (`HTMLElement`) — render AssetSelector into the DOM in the supplied container
-* `props` (`AssetSelectorProps`) — properties for the AssetSelector component. See [AssetSelector Props](#asset-selector-properties-asset-selector-props) for more details.
-* `onRenderComplete` (`Function?`, default: `undefined`) — optional callback function that is invoked when the component is rendered or updated.
-
-```js
-PureJSSelectors.renderAssetSelector(container: HTMLElement, props: AssetSelectorProps, onRenderComplete?: Function): void
-
-// JSX
-
-<AssetSelector {...props} />
-```
-
-### PureJSSelectors.`renderAssetSelectorWithAuthFlow` or `<AssetSelectorWithAuthFlow />`
-
-Renders the AssetSelector component on the provided container element and accepts all of the properties described in the [AssetSelector Props](#asset-selector-properties-asset-selector-props). The _AssetSelectorWithAuthFlow_ component extends the _AssetSelector_ component to include an authentication flow. When there's no _`imsToken`_ present, the _AssetSelectorWithAuthFlow_ component will show a _Adobe_ login flow to obtain the _imsToken_ and then render the _AssetSelector_ component.
-
-> It is **recommended** that you call [_registerAssetsSelectorsAuthService_](#purejsselectorsregisterassetsselectorsauthservice) on your page load before calling renderAssetSelectorWithAuthFlow or `<AssetSelectorWithAuthFlow/>`. In the event where you cannot call _registerAssetsSelectorsAuthService_, you can supply both [ImsAuthProps](#imsauthprops-ims-auth-props) along with [AssetSelectorProps](#asset-selector-properties-asset-selector-props) as props to _AssetSelectorWithAuthFlow_. However, this could result in a poor user experience.
-
-###### Parameters
-
-* `container` (`HTMLElement`) — render AssetSelector into the DOM in the supplied container
-* `props` (`AssetSelectorProps`) — properties for the AssetSelector component. See [AssetSelector Props](#asset-selector-properties-asset-selector-props) for more details.
-* `onRenderComplete` (`Function?`, default: `undefined`) — optional callback function that is invoked when the component is rendered or updated.
-
-```js
-PureJSSelectors.renderAssetSelectorWithAuthFlow(container: HTMLElement, props: AssetSelectorProps, onRenderComplete?: Function): void
-
-// JSX
-
-<AssetSelectorWithAuthFlow {...props} />
-```
-
-### PureJSSelectors.`registerAssetsSelectorsAuthService`
-
-Instantiates the [_ImsAuthService_](#imsauthservice-ims-auth-service) process. This process registers the authorization service for your AEM CS Assets repository and subscribes to authorization flow events.
-
-> It is recommended that you call this function on your application page load. You must also call this function if you're using the [AssetSelectorWithAuthFlow](#purejsselectorsrenderassetselectorwithauthflow-or-assetselectorwithauthflow) component. This API is not required if you're using the [AssetSelector](#purejsselectorsrenderassetselector-or-assetselector) component and already obtained a valid _imsToken_.
-
-##### Parameters
-
-* `authProps` (`ImsAuthProps`) — required properties for the ImsAuthService. See [ImsAuthProps](#imsauthprops-ims-auth-props) for more details.
-
-##### Returns
-
-* @returns (`ImsAuthService`) — an instance of the ImsAuthService. See [ImsAuthService](#imsauthservice-ims-auth-service) for more details.
-
-```js
-PureJSSelectors.registerAssetsSelectorsAuthService(authProps: ImsAuthProps): ImsAuthService
-```
--->
 
 ### Selected Asset Type {#selected-asset-type}
 
 Selected Asset Type is an array of objects that contains the asset information when using the `handleSelection`, `handleAssetSelection`, and `onDrop` functions. 
 
 **Schema Syntax**
+
 ````
 interface SelectedAsset {
     'repo:id': string;
@@ -478,6 +414,7 @@ In addition to the faceted search, Assets Selector allows you to customize vario
 ### Custom metadata
 
 Assets display panel shows the out of the box metadata that can be displayed in the info of the asset. In addition to this, [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application allows configuration of the asset selector by adding custom metadata that is shown in info panel of the asset.
+-->
 
 <!-- Property details to be added here. Referred the ticket https://jira.corp.adobe.com/browse/ASSETS-19023-->
 
@@ -621,8 +558,8 @@ Asset Selector supports two types of out of the box views:
 
     ![rail-view](assets/rail-view.png)
 -->
-
 <!--
+
 ### Application Integration
 
 Asset Selector is flexible and can be integrated within your existing [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application. It is accessible and localized to add, search, and select assets in your application. With Asset Selector you can:
@@ -631,17 +568,22 @@ Asset Selector is flexible and can be integrated within your existing [!DNL Adob
 *   **Accessible** With Asset Selector, you can reach the desired asset in an easy manner.
 *   **Localize** Assets can be availed for the various locales available as per Adobe's localization standards.
 -->
-
 <!--
+
 ### Support for multiple instances
 
 The micro front-end design supports the display of multiple instances of Asset Selector on a single screen.
 
 ![multiple-instance](assets/multiple-instance.png)
+-->
+
+<!--
 
 ### Controlled selection with multi-select
 
 You can make default multi-selection of assets by specifying the assets to the component using `selectedAssets` property. You should specify an array of asset IDs. For example, `[{id: 'urn:234}, {id: 'urn:555'}].`
+-->
+<!--
 
 ### Action buttons
 
@@ -649,10 +591,14 @@ When you customize your application with Asset Selector based on ReactJS, you ar
 *   **Open in media library** Allows you to open the asset in media library.
 *   **Upload** Allows you to upload an asset directly.
 *   **Download** Downloads the asset in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+-->
+<!--
 
 ### Status of an asset
 
 Asset Selector allows you to know the status of your uploaded assets. The status can be `Approved`, `Rejected`, or `Expired` of the asset. 
+-->
+<!--
 
 ### Localization
 
