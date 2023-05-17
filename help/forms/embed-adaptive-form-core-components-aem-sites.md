@@ -17,22 +17,16 @@ You can choose one the following methods to author or embed an Adaptive Form in 
 
 * **Create an Adaptive Form by dragging and dropping form components to Adaptive Forms Container Component**: Use the [Adaptive Forms Container](#af-container-component) component to create a space within your web page that would host the Adaptive Form. You can drag and drop Adaptive Form component in this space to create a form. For example, see the below video to learn how to create an Adaptive Form using [!UICONTROL Adaptive Forms Container] component:
 
->[!VIDEO](/help/forms/assets/formcreationbyadaptiveformcontainer.mp4)
-
 The [Adaptive Form Container](#af-container-component) component  allows you to build digital enrollment experiences by utilizing Adaptive Forms components directly within the AEM Sites editor. This integration provides a seamless experience to AEM Sites authors who want to create and manage forms within their AEM Sites pages.
  
-* **Embed an existing Adaptive Form**: The [Adaptive Forms - Embed](#embed-existing-af) component allows you to easily incorporate a pre-existing Adaptive Form into a page within AEM Sites. For example, embed an Adaptive Form using the [!UICONTROL Adaptive Forms - Embed] component in Site's page as illustrated in the following video: 
-
->[!VIDEO](/help/forms/assets/embednewform_embed.mp4)
+* **Embed an existing Adaptive Form**: The [Adaptive Forms - Embed(V2)](#embed-existing-af) component allows you to easily incorporate a pre-existing Adaptive Form into a page within AEM Sites. For example, embed an Adaptive Form using the [!UICONTROL Adaptive Forms - Embed] component in Site's page as illustrated in the following video: 
 
 This feature enhances the adaptability and reusability of Adaptive Forms. This integration provides a convenient way for customers to reuse Adaptive Forms they have already created. 
 
 * **Use Adaptive Forms Wizard to create a form**:
 
-  Use the [Adaptive Forms - Embed](#embed-new-af) component to create an Adaptive Form from within the AEM Sites editor using Form Creation wizard. The form is saved as an external entity. You can reuse this form in other Sites pages and standalone forms also. 
+  Use the [Adaptive Forms - Embed(v2)](#embed-new-af) component to create an Adaptive Form from within the AEM Sites editor using Form Creation wizard. The form is saved as an external entity. You can reuse this form in other Sites pages and standalone forms also. 
 For example, see the below video to learn how to create and embed a newly created Adaptive Form using the [!UICONTROL Adaptive Forms - Embed] component in Site's page. 
-
->[!VIDEO](/help/forms/assets/createnewform_embed.mp4)
 
 ### Consideration {#considerations}
  
@@ -47,11 +41,12 @@ The [!UICONTROL Adaptive Form Container] component allows building digital enrol
 +++ Enable **[!UICONTROL Adaptive Forms Container]** component in the associated template's policy.
 
   To enable [!UICONTROL Adaptive Forms Container] component in template's policy, perform the following steps:
-  1. Go to the [!UICONTROL Page Information] > [!UICONTROL Edit Template]
-  1. Click the [!UICONTROL Policy] and select the **Core Components Examples - Adaptive Form** checkbox.
-  1. Click [!UICONTROL Done].
 
-  >[!VIDEO](/help/forms/assets/adaptiveformcontainer.mp4)
+  1. Go to the [!UICONTROL Page Information] > [!UICONTROL Edit Template]
+  1. Click the [!UICONTROL Policy] and select the **[!UICONTROL Adaptive Forms Container]**  checkbox under the **[AEM Archetype Project Name] - Adaptive Form**.
+  1. Click **[!UICONTROL Done]**.
+
+  >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
 +++
 
@@ -99,7 +94,7 @@ To create an Adaptive Form using [!UICONTROL Adaptive Forms Container] component
 1. Create an Adaptive Form using the Adaptive Forms components. 
 1. Save the settings. 
 
->[!VIDEO](/help/forms/assets/af-container.mp4)
+>[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 Your form is ready. When you publish the AEM Sites page, it automatically publishes an Adaptive Form and its associated referenced assets.
 
@@ -142,11 +137,11 @@ In the [!UICONTROL Edit Adaptive Forms Container] dialog, you can specify the fo
 * **Show Message**
   * **Message Content**: Write a message using the rich text editor to show on form submission. This option is available only when you choose to show a thank you message.
 
-## Embed an existing Adaptive Form  {#aem-container-component}
+## Embed an Adaptive Form  {#aem-container-component}
 
-Using **[!UICONTROL Adaptive Forms - Embed]** component, you can either embed new Adaptive Form or embed an existing Adaptive Form in the Site's page. The [!UICONTROL Adaptive Forms - Embed] component allows you to:
+Using **[!UICONTROL Adaptive Forms - Embed (V2)]** component, you can either embed new Adaptive Form or embed an existing Adaptive Form in the Site's page. The [!UICONTROL Adaptive Forms - Embed] component allows you to:
 
-* [Embe an existing Adaptive Form](#embed-new-af)
+* [Embed an existing Adaptive Form](#embed-new-af)
 
 * [Create and embed a new Adaptive Form](#embed-existing-af)
 
@@ -154,12 +149,14 @@ Using **[!UICONTROL Adaptive Forms - Embed]** component, you can either embed ne
 
 +++ Enable the **Adaptive Forms - Embed** component in the associated template's policy.
 
-  To enable [!UICONTROL Adaptive Forms - Embed] component in template's policy, perform the following steps:
-  1. Go to the [!UICONTROL Page Information] > [!UICONTROL Edit Template]
-  1. Click the [!UICONTROL Policy] and select the **Core Content** checkbox.
-  1. Click [!UICONTROL Done].
+  To enable [!UICONTROL Adaptive Forms - Embed(v2)] component in template's policy, perform the following steps:
 
-  >[!VIDEO](/help/forms/assets/enableadaptiveform-embedtemplate.mp4)
+  1. Go to the [!UICONTROL Page Information] > [!UICONTROL Edit Template]
+
+  1. Click the [!UICONTROL Policy] and select the **[!UICONTROL Adaptive Form - Embed (v2)]** checkbox under the **[!UICONTROL [AEM Archetype Project Name] - Forms]** group .
+  1. Click **[!UICONTROL Done]**.
+
+  >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
 
 +++
 
@@ -206,7 +203,7 @@ Using **[!UICONTROL Adaptive Forms - Embed]** component, you can either embed ne
 ### Embed new Adaptive Form {#embed-new-af}
 
 1. Open the AEM Sites page in edit mode.
-1. From the Component browser panel, drag-drop the [!UICONTROL Adaptive Forms - Embed] component on the page.
+1. From the Component browser panel, drag-drop the [!UICONTROL Adaptive Forms - Embed(v2)] component on the page.
 1. Click the **Plus** icon and you are redirected to the form creation wizard.
 
       ![Adaptive Forms - Embed Component](/help/forms/assets/aemformcontainer.png)
@@ -215,6 +212,8 @@ Using **[!UICONTROL Adaptive Forms - Embed]** component, you can either embed ne
 1. The [!UICONTROL Asset Path] already includes the path of a created Adaptive Form
 1. Save the settings. The Adaptive Form  is now embedded in the page.
 
+ >[!VIDEO](https://video.tv.adobe.com/v/3419366/adaptive-form-aem-forms?quality=12&learn=on)
+ 
 ### Embed existing Adaptive Form {#embed-existing-af}
 
 1. Open the AEM Sites page in edit mode.
@@ -223,9 +222,12 @@ Using **[!UICONTROL Adaptive Forms - Embed]** component, you can either embed ne
 1. Browse and select the Adaptive Form to embed in the [!UICONTROL Asset Path]. 
 1. Save the settings. The Adaptive Form  is now embedded in the page.
 
+ >[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
+ 
 #### Configure Adaptive Form _ Embed Properties
 
-You can customize the advanced settings of the [!UICONTROL Adaptive Form - Embed] component. In the [!UICONTROL Edit Adaptive Forms - Embed] dialog, you can specify the following.
+You can customize the advanced settings of the [!UICONTROL Adaptive Form - Embed(v2)] component. In the [!UICONTROL Edit Adaptive Forms - Embed(v2)] dialog, you can specify the following.
+
 * **Asset Path**: Browse and select the Adaptive Form to embed. It is auto-populated if you dropped it from the Assets browser.
 * **Post Submission** : Select the action to trigger on form submission. You can choose to show a thank you message or a thank you page.
   * **Show Thank You Message**: Write a message using the rich text editor to show on form submission. This option is available only when you choose to show a thank you message.

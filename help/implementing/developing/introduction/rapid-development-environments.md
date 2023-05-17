@@ -446,6 +446,8 @@ When an RDE is reset, all content is removed and so if desired, explicit action 
 
 1. Place and commit the sample content in git inside an install.rde folder under /apps and then sync the overarching content package to the RDE using the command line tooling.
 
+1. Use the [content copy tool](/help/implementing/developing/tools/content-copy.md) to copy a defined content set from prod, stage, or dev environments, or from another RDE.
+
 1. Use Package Manager
 
 Note that you are limited to 1GB when syncing content packages.
