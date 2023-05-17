@@ -9,6 +9,11 @@ exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 ---
 # Manage assets {#manage-assets}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 This article describes how to manage and edit assets in [!DNL Adobe Experience Manager Assets]. To manage [!DNL Content Fragments], see [[!DNL Content Fragments]](content-fragments/content-fragments.md) assets.
 
 ## Create folders {#creating-folders}
