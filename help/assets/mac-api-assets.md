@@ -8,6 +8,11 @@ exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 ---
 # [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 ## Overview {#overview}
 
 The [!DNL Assets] HTTP API allows for create-read-update-delete (CRUD) operations on digital assets, including on metadata, on renditions, and on comments, together with structured content using [!DNL Experience Manager] Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](/help/assets/content-fragments/assets-api-content-fragments.md).
