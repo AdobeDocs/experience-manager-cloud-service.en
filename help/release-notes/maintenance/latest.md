@@ -15,11 +15,11 @@ Feature enablement for this maintenance release will provide you with the full f
 
 ### Enhancements {#enhancements-11983}
 
-none
+None.
 
 ### Known Issues {#known-issues-11983}
 
-none
+None.
 
 ### Fixed Issues {#fixed-issues-11983}
 
