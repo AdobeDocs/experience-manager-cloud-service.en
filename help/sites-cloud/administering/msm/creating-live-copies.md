@@ -131,7 +131,7 @@ To create a Live Copy:
 1. (Optional) To specify one or more rollout configurations to use for the Live Copy, use the **Rollout Configs** drop-down list to select them. Selected configurations will be shown underneath the drop-down selector.
 1. Click or tap **Create**. A confirmation message will be shown, from here you can select either **Open** or **Done**.
 
->[!NOTE]
+   >[!NOTE]
    >
    >An error dialog may appear with the message "Fail to submit the form". This happens due to a network timeout. However, the process to create the live copy is running in the background. Wait a few minutes and check the pages of the live copy were correctly created.
 
