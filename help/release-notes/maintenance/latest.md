@@ -9,7 +9,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 11983 {#release-11983}
  
-Summarized below are the continuous improvements for maintenance release 11983, which was publicly released on May X, 2023. This maintenance release is an update from previous maintenance release 11873.
+Summarized below are the continuous improvements for maintenance release 11983, which was publicly released on May 17, 2023. This maintenance release is an update from previous maintenance release 11873.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
@@ -23,7 +23,10 @@ Feature enablement for this maintenance release will provide you with the full f
 
 ### Fixed Issues {#fixed-issues-11983}
 
-- 
+- SITES-13253 - Fixed issue with RecursionTooDeepException in Core Components v2.22.6
+- SITES-13256 - Fixed issue with Core WCM Teaser configured with special URL breaks page rendering
+- GRANITE-45462 - Fixed issue with Messaging Client Multi Region Config
+- GRANITE-45562 - Fixed issue with Issues with image combination returning 200 instead of 404
 
 ### Embedded Technologies {#embedded-tech-11983}
 
