@@ -51,7 +51,7 @@ Once you save and open your new Content Fragment, the Content Fragment editor op
 
 1. The Content Fragment editor shows the fields you defined in the selected model. Here you can add content to each field to complete your Content Fragment. Your progress is saved automatically.
 
-1. Provide a **Title** for your fragment by entering `Tuscan adventure`.
+1. Provide a **Title** for your fragment by entering `Tuscan Adventure`.
 
 1. Provide a **Description** for your fragment by pasting in the following text.
 
