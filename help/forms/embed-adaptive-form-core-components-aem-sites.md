@@ -15,11 +15,11 @@ You can choose one the following methods to create or add an Adaptive Form to an
 
 * **Create an Adaptive Form using Adaptive Forms Container component**: The [Adaptive Form Container](#af-container-component) component  allows you to build digital enrollment experiences by utilizing Adaptive Forms components directly within the AEM Sites editor. This integration provides a seamless experience to AEM Sites authors who want to create and manage forms within their AEM Sites pages.
  
-* **Add an existing Adaptive Form**: The [Adaptive Forms - Embed(v2)](#embed-existing-af) component allows you to easily add a pre-existing Adaptive Form into a page within AEM Sites.  This feature enhances the adaptability and reusability of Adaptive Forms. This integration provides a convenient way for customers to reuse Adaptive Forms they have already created. 
+* **Add an existing Adaptive Form**: The [Adaptive Forms - Embed(v2)](#embed-existing-af) component allows you to easily add a pre-existing Adaptive Form into a page within AEM Sites. This feature enhances the adaptability and reusability of Adaptive Forms. This integration provides a convenient way for customers to reuse Adaptive Forms they have already created. 
 
-* **Use Adaptive Forms Wizard to create a form**:
+* **Use Adaptive Forms Wizard to create a form**: Use the [Adaptive Forms - Embed(v2)](#embed-new-af) component to create an Adaptive Form from within the AEM Sites editor using Form Creation wizard. The form is saved as an external entity. You can reuse this form in other Sites pages and standalone forms also. 
 
-  Use the [Adaptive Forms - Embed(v2)](#embed-new-af) component to create an Adaptive Form from within the AEM Sites editor using Form Creation wizard. The form is saved as an external entity. You can reuse this form in other Sites pages and standalone forms also. 
+* **Add multiple Adaptive Forms in AEM Sites page**: To add multiple Adaptive Forms in an AEM Sites page, use the AEM Forms container components - [Adaptive Forms - Embed(v2)](#embed-new-af) and [Adaptive Form Container](#af-container-component). In case, you need to add more than one Adaptive Form as a div within an AEM Sites page, you can use the Adaptive Form Container component.
 
 You can use the Rule Editor to add or control the dynamic behavior of Adaptive Form components. For example, hide or show a component. The Rule Editor is not available for non-Adaptive Form components. So, use your diligence while using non-Adaptive Form components in AEM Forms Container component.
 
@@ -95,7 +95,7 @@ You can customize the advanced settings of the [!UICONTROL Adaptive Form Contain
 
 * You can configure the Prefill Service to load an Adaptive Form with pre-filled values on a Site's page. 
 * You can configure the Data Model settings to associate the Adaptive Form with a data source. 
-* You can configure the submit actions to send the data on Microsoft OneDrive, Microsoft OneDrive, or other data sources on submission of a form. You can also create and select a custom Submit action for your Adaptive Forms.
+* You can configure the submit actions to send the data on Microsoft&reg; OneDrive, Microsoft&reg; OneDrive, or other data sources on submission of a form. You can also create and select a custom Submit action for your Adaptive Forms.
 
 To set the properties for the **[!UICONTROL Adaptive Forms Container]** component, click the ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) on the action bar. The **[!UICONTROL Edit Adaptive Forms Container]** dialog opens. 
 
