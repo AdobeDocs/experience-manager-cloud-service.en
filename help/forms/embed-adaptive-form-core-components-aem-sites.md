@@ -19,7 +19,7 @@ You can choose one the following methods to create or add an Adaptive Form to an
 
 * **Use Adaptive Forms Wizard to create a form**: Use the [Adaptive Forms - Embed(v2)](#embed-new-af) component to create an Adaptive Form from within the AEM Sites editor using Form Creation wizard. The form is saved as an external entity. You can reuse this form in other Sites pages and standalone forms also. 
 
-* **Add multiple Adaptive Forms in AEM Sites page**: To add multiple Adaptive Forms in an AEM Sites page, use the AEM Forms container components - [Adaptive Forms - Embed(v2)](#embed-new-af) and [Adaptive Form Container](#af-container-component). In case, you need to add more than one Adaptive Form as a div within an AEM Sites page, you can use the Adaptive Form Container component.
+* **Add multiple Adaptive Forms in an AEM Sites page**: To add multiple Adaptive Forms in an AEM Sites page, use the AEM Forms container components - [Adaptive Forms - Embed(v2)](#embed-new-af) and [Adaptive Form Container](#af-container-component). In case, you need to add more than one Adaptive Form as a div within an AEM Sites page, you can use the Adaptive Form Container component.
 
 You can use the Rule Editor to add or control the dynamic behavior of Adaptive Form components. For example, hide or show a component. The Rule Editor is not available for non-Adaptive Form components. So, use your diligence while using non-Adaptive Form components in AEM Forms Container component.
 
