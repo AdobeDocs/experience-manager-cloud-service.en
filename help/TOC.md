@@ -380,6 +380,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Overview of asset microservices](/help/assets/asset-microservices-overview.md)
   + [Accessibility in [!DNL Assets]](/help/assets/accessibility.md)
   + Manage digital assets {#manage}
+    + [Micro-Frontend Asset Selector](/help/assets/asset-selector.md)
     + [Share assets](/help/assets/share-assets.md)
     + [Monitor activities and DAM tasks](/help/assets/assets-activity-history.md)
     + [Get started using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
