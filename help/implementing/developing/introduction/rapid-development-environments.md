@@ -112,14 +112,8 @@ Once you've added an RDE for your program using Cloud Manager, you can interact 
    3. Workspace: <no workspace selected>
 
    ```
-
-1. Verify that the login completed successfully by running
-
-   `aio cloudmanager:list-programs`
-
-   This should list all programs under your configured organization.
-
-   Note the above requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
+   
+   Note this step requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
 
    Alternatively, you can confirm that you have this developer role if you can login to the developer console by running this command:
 
@@ -133,6 +127,13 @@ Once you've added an RDE for your program using Cloud Manager, you can interact 
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
+1. Verify that the login completed successfully by running
+
+   `aio cloudmanager:list-programs`
+
+   This should list all programs under your configured organization.
+
+   
 For more information and demonstration, see the [how to set up an RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) video tutorial.
 
 ## Using RDE while Developing a New Feature {#using-rde-while-developing-a-new-feature}
