@@ -2,7 +2,7 @@
 title: Asset Selector for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Use Asset selector to search, find, and retrieve assets' metadata and renditions within your application.
 contentOwner: Adobe
-feature: asset selector
+feature: A user interface that easily integrates with the Experience Manager Assets as a Cloud Service repository so that you can browse or search digital assets available in the repository and use them in your application authoring experience. 
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 ---
