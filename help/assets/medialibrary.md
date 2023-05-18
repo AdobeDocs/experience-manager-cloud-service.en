@@ -17,6 +17,11 @@ Define what is not included
 
 # Use Media Library for basic asset management {#manage-assets-using-media-library}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/medialibrary.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 [!DNL Adobe Experience Manager] platform provides different capabilities to manage assets. Media Library allows the users to upload a small number of assets to the repository, search and use those in the webpages, and accomplish simple asset management tasks on the assets.
 
 Media Library is a lightweight Digital Asset Management (DAM) solution that comes complimentary with [!DNL Adobe Experience Manager Sites] license. [!DNL Sites] is a Web Content Management (WCM) offering. Media Library works with all capabilities of Experience Manager.
