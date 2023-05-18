@@ -112,14 +112,8 @@ Once you've added an RDE for your program using Cloud Manager, you can interact 
    3. Workspace: <no workspace selected>
 
    ```
-
-1. Verify that the login completed successfully by running
-
-   `aio cloudmanager:list-programs`
-
-   This should list all programs under your configured organization.
-
-   Note the above requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
+   
+   Note this step requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
 
    Alternatively, you can confirm that you have this developer role if you can login to the developer console by running this command:
 
@@ -133,6 +127,13 @@ Once you've added an RDE for your program using Cloud Manager, you can interact 
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
+1. Verify that the login completed successfully by running
+
+   `aio cloudmanager:list-programs`
+
+   This should list all programs under your configured organization.
+
+   
 For more information and demonstration, see the [how to set up an RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) video tutorial.
 
 ## Using RDE while Developing a New Feature {#using-rde-while-developing-a-new-feature}
@@ -445,6 +446,8 @@ When an RDE is reset, all content is removed and so if desired, explicit action 
 1. Sync the content package explicitly to the RDE using the command line tooling
 
 1. Place and commit the sample content in git inside an install.rde folder under /apps and then sync the overarching content package to the RDE using the command line tooling.
+
+1. Use the [content copy tool](/help/implementing/developing/tools/content-copy.md) to copy a defined content set from prod, stage, or dev environments, or from another RDE.
 
 1. Use Package Manager
 
