@@ -29,6 +29,10 @@ Your AEM as a Cloud Service team members will be added and assigned to one or mo
 >
 >Users with only the **Cloud Manager User** role can log into Cloud Manager and navigate to the AEM author environments (if they exist) by using the **Programs** menu options. The **Cloud Manager User** role is not sufficient to access program details. If such access is needed, users must be granted additional roles by their system administrator.
 
+>[!WARNING]
+>
+>The **AEM Administrators** product profile name must not be changed. Changing the name of the **AEM Administrators** product profile will remove administrator rights from all users assigned to that profile.
+
 >[!TIP]
 >
 >* To learn more about about AEM product profiles, please see the document [Assigning AEM Product Profiles.](/help/journey-onboarding/assign-profiles-aem.md)
