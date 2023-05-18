@@ -27,8 +27,9 @@ All of your AEM as a Cloud Service environments are monitored for availability. 
 
 With Custom monitoring, customers have the option to provide up to five distinct web property URLs prior to [going live](/help/journey-migration/go-live.md). These URLs should be valid and return an HTTP 200 response code. These monitors support customers who [bring their own CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) in front of the Adobe CDN  and any external traffic routing employed in front of AEM as a Cloud Service that is not under Adobe’s control. Alerts resulting from Custom Monitoring checks will engage Adobe's support teams and processes.
 
-Note:
-This functionality is only offered for customers with Advanced Cloud Support.  If any questions please raise a support case via the Admin console.
+>[!NOTE]
+>
+> This functionality is only offered for customers with Advanced Cloud Support. If ou have any questions, please raise a support case via the Admin console.
 
 ## Internal Module Monitoring {#module-monitoring}
 
