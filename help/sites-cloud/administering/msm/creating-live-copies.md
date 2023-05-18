@@ -131,6 +131,10 @@ To create a Live Copy:
 1. (Optional) To specify one or more rollout configurations to use for the Live Copy, use the **Rollout Configs** drop-down list to select them. Selected configurations will be shown underneath the drop-down selector.
 1. Click or tap **Create**. A confirmation message will be shown, from here you can select either **Open** or **Done**.
 
+   >[!NOTE]
+   >
+   >An error dialog may appear with the message "Fail to submit the form". This happens due to a network timeout. However, the process to create the live copy is running in the background. Wait a few minutes and check the pages of the live copy were correctly created.
+
 ### Creating a Live Copy of a Site from a Blueprint Configuration {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
 Create a Live Copy using a blueprint configuration to create a site based on the blueprint (source) content. When you create a Live Copy from a blueprint configuration, you select one or more language branches of the blueprint source to copy, then you select the chapters to copy from the language branches. See [Creating a Blueprint Configuration](#creating-a-blueprint-configuration).
