@@ -9,7 +9,7 @@ The following section outlines the general Release Notes for [!DNL Workfront for
 
 ## Release Date {#release-date}
 
-The release date for the latest version 1.9.10 of [!DNL Workfront for Experience Manager enhanced connector] is May 16, 2023.
+The release date for the latest version 1.9.10 of [!DNL Workfront for Experience Manager enhanced connector] is May 18, 2023.
 
 ## Release highlights {#release-highlights}
 
