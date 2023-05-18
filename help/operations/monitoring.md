@@ -29,7 +29,7 @@ With Custom monitoring, customers have the option to provide up to five distinct
 
 >[!NOTE]
 >
-> This functionality is only offered for customers with Advanced Cloud Support. If ou have any questions, please raise a support case via the Admin console.
+> This functionality is only offered for customers with Advanced Cloud Support. If you have any questions, please raise a support case via the Admin console.
 
 ## Internal Module Monitoring {#module-monitoring}
 
