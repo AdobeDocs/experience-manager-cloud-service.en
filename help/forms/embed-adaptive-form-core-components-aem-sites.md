@@ -251,15 +251,15 @@ To modify any configuration or property of an Adaptive Form, do one of the follo
 * Open the original form in an Adaptive Form  in respective editor and modify them.
 * Tap the Adaptive Form  from within the site page in edit mode and then tap **[!UICONTROL Edit in a new window]**. The original form opens in edit mode that you can modify.
 
-### Best practices {#best-practices}
-
-* Header and footer in the original form are not included in the embedded form.
-* User drafts and submissions of embedded forms are supported and visible in Drafts and Submitted Forms tabs on the Forms Portal.
-
-## Change Layout of an Adaptive Form added to AEM Sites page {#change-layout-af-aem-sites-page} 
+## Change Layout of an Adaptive Form added to an AEM Sites page {#change-layout-af-aem-sites-page} 
 
 In AEM Sites page, the [Layout mode](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/responsive-layout.html?#defining-layouts-layout-mode) enables you to resize an Adaptive Form that is created or added to an AEM Sites page.
 
 ![AF-layout-support](/help/forms/assets/afsite-layoutsupport.gif)
 
 AEM sites page maintains a reference to the Adaptive Form. When you translate an AEM Sites page, it automatically translates an Adaptive Form and its associated referenced assets using the [translation projects](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) into other languages.
+
+## Best practices {#best-practices}
+
+* Header and footer in the original form are not included in the embedded form.
+* User drafts and submissions of embedded forms are supported and visible in Drafts and Submitted Forms tabs on the Forms Portal.
