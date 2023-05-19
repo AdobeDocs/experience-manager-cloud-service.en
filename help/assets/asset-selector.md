@@ -26,6 +26,8 @@ Asset Selector provides many benefits, such as:
 
 * Ability to sort assets by name, dimensions, and size and view them in List, Grid, Gallery, or  Waterfall view.
 
+The scope of this article is to demonstrate how to use Asset Selector with an [!DNL Adobe] application under Unified Shell or when you already have an imsToken generated for authentication. These workflows are referred to as non-SUSI flow in this article. 
+
 Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets as a Cloud Service] repository:
 
 * [Integrate Asset Selector using Vanilla JS](#integration-with-vanilla-js)
@@ -355,8 +357,8 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 |---|---|---|---|---|
 | *rail*| boolean | No | false | If marked `true`, Asset Selector will be rendered in a left rail view. If it is marked `false`, the Asset Selector will be rendered in modal view. |
 | *imsOrg*| string | Yes | | Adobe Identity Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The `imsOrg` key is required to authenticate whether the organization you're accessing is under Adobe IMS or not. |
-| *imsToken* | string | No | | IMS bearer token used for authentication. `imsToken` is not required if you're using the SUSI flow. However, it is required if you're using the non-SUSI flow. |
-| *apiKey* | string | No | | API key used for accessing the AEM Discovery service. `apiKey` is not required if you're using the SUSI flow. However, it is required in non-SUSI flow. |
+| *imsToken* | string | No | | IMS bearer token used for authentication. `imsToken` is required if you are using the non-SUSI flow. |
+| *apiKey* | string | No | | API key used for accessing the AEM Discovery service. `apiKey` is required if you are using the non-SUSI flow.|
 | *rootPath* | string | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | string | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *filterSchema* | array | No | | Model that is used to configure filter properties. This is useful when you want to limit certain filter options in Asset Selector.|
