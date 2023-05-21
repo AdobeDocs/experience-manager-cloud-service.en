@@ -46,7 +46,7 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
 * New protocol (DASH - Dynamic Adaptive Streaming over HTTP) support launched for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled):
    * Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos
    * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
-   * Available in NA, to be enabled via support ticket, coming soon in APAC, EMEA
+   * Available in all regions, to be enabled via support ticket
 
 * Added support for WebP images to automatically extract metadata, generate thumbnails and custom renditions. Smart Tags capability is also now supported for these files. Dynamic Media capabilities are not supported for WebP as an input format.
 * Dynamic Media _Snapshot_ - Experiment with test images or Dynamic Media URLs, to see the output of different image modifiers, and Smart Imaging optimizations for file size (with WebP and AVIF delivery), network bandwidth, and Device Pixel Ratio. See [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
