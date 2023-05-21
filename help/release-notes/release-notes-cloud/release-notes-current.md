@@ -43,12 +43,24 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
 
 ### New features in [!DNL Assets] {#assets-features}
 
+* Added support for WebP images to automatically extract metadata, generate thumbnails and custom renditions. Smart Tags capability is also now supported for these files. Dynamic Media capabilities are not supported for WebP as an input format.
+
+* Search experience enhancements - You can now quickly perform the following operations on the assets that display in the search results:
+
+   * Create a workflow
+   * Create a new version
+   * Relate or Unrelate assets
+
+     You do not need to navigate to the asset location and view its properties to perform these operations.
+
+* Color Search facet usability improvements - Input field for color values is now editable and search results update only when you exit the color picker. 
+
 * New protocol (DASH - Dynamic Adaptive Streaming over HTTP) support launched for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled):
    * Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos
    * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
    * Available in all regions, to be enabled via support ticket
 
-* Added support for WebP images to automatically extract metadata, generate thumbnails and custom renditions. Smart Tags capability is also now supported for these files. Dynamic Media capabilities are not supported for WebP as an input format.
+
 * Dynamic Media _Snapshot_ - Experiment with test images or Dynamic Media URLs, to see the output of different image modifiers, and Smart Imaging optimizations for file size (with WebP and AVIF delivery), network bandwidth, and Device Pixel Ratio. See [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
