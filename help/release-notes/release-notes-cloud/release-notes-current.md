@@ -60,8 +60,7 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
    * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
    * Available in all regions, to be enabled via support ticket
 
-
-* Dynamic Media _Snapshot_ - Experiment with test images or Dynamic Media URLs, to see the output of different image modifiers, and Smart Imaging optimizations for file size (with WebP and AVIF delivery), network bandwidth, and Device Pixel Ratio. See [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* Added support for WebP images to automatically extract metadata, generate thumbnails and custom renditions. Smart Tag capability is also now supported for these files.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
