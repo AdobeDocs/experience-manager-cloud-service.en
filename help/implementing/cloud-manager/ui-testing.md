@@ -27,9 +27,9 @@ Unlike custom functional tests, which are HTTP tests written in Java, UI tests c
 
 >[!TIP]
 >
->Adobe recommends following the structure and language (JavaScript and WDIO) provided in the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
->
->Adobe also provides a UI test module example based on Java and WebDriver. Please refer to the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver) for details. 
+>Adobe recommends to use uses Cypress for UI testing, following the code provided in the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress). 
+> 
+>Adobe also provide UI test module examples based on JavaScript with WebdriverIO (provided in the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) and  Java with WebDriver (refer to the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)). 
 
 ## Get Started with UI Tests {#get-started-ui-tests}
 
@@ -67,7 +67,7 @@ This section describes the steps needed to add a UI tests project to your reposi
 
 ### Generate a Docker Build Context {#generate-docker-build-context}
 
-In order to generate a Docker build context, you need a Maven module that:
+To generate a Docker build context, you need a Maven module that:
 
 * Produces an archive that contains a `Dockerfile` and every other file necessary to build the Docker image with your tests.
 * Tags the archive with the `ui-test-docker-context` classifier.
@@ -154,7 +154,7 @@ The build should produce either zero or one archive. If it produces zero archive
 
 ### Customer Opt-In {#customer-opt-in}
 
-In order for Cloud Manager to build and execute your UI tests, you must opt into this feature by adding a file to your repository.
+For Cloud Manager to build and execute your UI tests, you must opt into this feature by adding a file to your repository.
 
 * The file name must be `testing.properties`.
 * The file contents must be `ui-tests.version=1`.
@@ -274,7 +274,7 @@ The Adobe UI test samples handle this with the script `wait-for-grid.sh`, which 
 
 ### Capture Screenshots and Videos {#capture-screenshots}
 
-The Docker image may generate additional test output (e.g. screenshots or videos) and save them in the path specified by the environment variable `REPORTS_PATH`. Any file found below the `REPORTS_PATH` are included in the test result archive.
+The Docker image may generate additional test output (for example, screenshots or videos) and save them in the path specified by the environment variable `REPORTS_PATH`. Any file found below the `REPORTS_PATH` are included in the test result archive.
 
 The test samples provided by Adobe by default create screenshots for any failed test.
 
@@ -287,7 +287,7 @@ If a test result archive is created during a UI test execution, you can download
 
 ### Upload Files {#upload-files}
 
-Tests sometimes must upload files to the application being tested. In order to keep the deployment of Selenium flexible relative to your tests, it is not possible to directly upload an asset directly to Selenium. Instead, uploading a file requires the following steps.
+Tests sometimes must upload files to the application being tested. To keep the deployment of Selenium flexible relative to your tests, it is not possible to directly upload an asset directly to Selenium. Instead, uploading a file requires the following steps.
 
 1. Upload the file at the URL specified by the `UPLOAD_URL` environment variable.
    * The upload must be performed in one POST request with a multipart form.
