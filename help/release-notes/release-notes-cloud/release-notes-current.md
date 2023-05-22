@@ -26,25 +26,42 @@ The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] cu
 
 Have a look at the April 2023 Release Overview video for a summary of the features added in the 2023.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3416885/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3418681/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### New features in [!DNL Experience Manager Sites] prelease {#prerelease-sites}
+### New features in [!DNL Experience Manager Sites] {#sites-features}
 
 * Export content fragments from AEM as a cloud service to Adobe target as JSON offers.
 * Support for GraphQL pagination and sorting, along with internal caching enhancements, now help improve the performance of decoupled client applications when fetching large content sets from AEM using complex GraphQL queries and filters.
+
+### New features in [!DNL Experience Manager Sites] prelease {#prerelease-sites}
+
+* Content Fragments and their references can now be published to the [AEM Preview Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) using the [Content Fragment Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), allowing users to preview the final experience on a decoupled preview application before going live.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
 
+* Added support for WebP images to automatically extract metadata, generate thumbnails and custom renditions. Smart Tags capability is also now supported for these files. Dynamic Media capabilities are not supported for WebP as an input format.
+
+* [Search experience enhancements](/help/assets/search-assets.md#aftersearch) - You can now quickly perform the following operations on the assets that display in the search results:
+
+   * Create a workflow
+   * Create a new version
+   * Relate or Unrelate assets
+
+     You do not need to navigate to the asset location and view its properties to perform these operations.
+
+* Color Search facet usability improvements - Input field for color values is now editable and search results update only when you exit the color picker. 
+
 * New protocol (DASH - Dynamic Adaptive Streaming over HTTP) support launched for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled):
    * Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos
    * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
-   * Available in NA, to be enabled via support ticket, coming soon in APAC, EMEA
+   * Available in all regions, to be enabled via support ticket
 
-* Added support for WebP images to automatically extract metadata, generate thumbnails and custom renditions. Smart Tag and Smart Crop capabilities are also now supported for these files.
+
+* Dynamic Media _Snapshot_ - Experiment with test images or Dynamic Media URLs, to see the output of different image modifiers, and Smart Imaging optimizations for file size (with WebP and AVIF delivery), network bandwidth, and Device Pixel Ratio. See [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
