@@ -27,7 +27,7 @@ Unlike custom functional tests, which are HTTP tests written in Java, UI tests c
 
 >[!TIP]
 >
->Adobe recommends to use uses Cypress for UI testing, following the code provided in the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress). 
+>Adobe recommends using Cypress for UI testing, following the code provided in the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress). 
 > 
 >Adobe also provides UI test module examples based on JavaScript with WebdriverIO (refer to the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) and  Java with WebDriver (refer to the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)). 
 
@@ -244,12 +244,12 @@ If the Docker image is implemented with other programming languages or test runn
 
 * The containerized infrastructure that is scoped for functional testing is limited by the following boundaries:
 
-| Type                 | Value | Description                                                            |
-|----------------------|-------|------------------------------------------------------------------------|
-| CPU                  | 2.0   | Amount of CPU-time reserved per test execution                         |
-| Memory               | 1Gi   | Amount of memory allocated to the test, value in gibibytes             |
-| Timeout              | 30m   | The duration after which the test will be terminated.                  |
-| Recommended Duration | 15m   | Adobe recommends to write the tests to not take longer than this time. |
+| Type                 | Value | Description                                                           |
+|----------------------|-------|-----------------------------------------------------------------------|
+| CPU                  | 2.0   | Amount of CPU-time reserved per test execution                        |
+| Memory               | 1Gi   | Amount of memory allocated to the test, value in gibibytes            |
+| Timeout              | 30m   | The duration after which the test will be terminated.                 |
+| Recommended Duration | 15m   | Adobe recommends writing the tests to not take longer than this time. |
 
 >[!NOTE]
 >
