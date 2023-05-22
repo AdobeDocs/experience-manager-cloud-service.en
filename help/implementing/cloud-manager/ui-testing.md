@@ -29,7 +29,7 @@ Unlike custom functional tests, which are HTTP tests written in Java, UI tests c
 >
 >Adobe recommends to use uses Cypress for UI testing, following the code provided in the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress). 
 > 
->Adobe also provide UI test module examples based on JavaScript with WebdriverIO (provided in the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) and  Java with WebDriver (refer to the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)). 
+>Adobe also provides UI test module examples based on JavaScript with WebdriverIO (refer to the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) and  Java with WebDriver (refer to the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)). 
 
 ## Get Started with UI Tests {#get-started-ui-tests}
 
