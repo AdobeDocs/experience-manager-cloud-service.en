@@ -45,7 +45,7 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
 
 * Added support for WebP images to automatically extract metadata, generate thumbnails and custom renditions. Smart Tags capability is also now supported for these files. Dynamic Media capabilities are not supported for WebP as an input format.
 
-* Search experience enhancements - You can now quickly perform the following operations on the assets that display in the search results:
+* [Search experience enhancements](/help/assets/search-assets.md#aftersearch) - You can now quickly perform the following operations on the assets that display in the search results:
 
    * Create a workflow
    * Create a new version
