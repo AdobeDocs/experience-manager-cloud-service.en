@@ -50,29 +50,28 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
 
 ### New features available in [!DNL Forms] {#new-features-available-in-channel}
 
-* **[Use data capture core components to build Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [Use Adaptive Forms editor](/help/forms/creating-adaptive-form-core-components.md) to create forms based on standardized data capture components (Core Components). These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrolment experiences.
-
-*   **[Frontend pipeline support for styling core component based Adaptive Forms](/help/forms/using-themes-in-core-components.md)**: Utilize standardized BEM-based themes for Core Components-based Adaptive Forms by deploying them with Frontend Deployment pipeline to enhance the look and feel of your forms and align with your organization's brand approved design guidelines.
-
-*   **[Generate Document of Record for core component based Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)**: Create a document of record containing submitted data for Adaptive Forms built using core components for archival or reference to end users, in print or in the document format. 
-
-![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
-
-*   **[Efficient form-building with the Save an Adaptive Form as a template feature](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Expedite and standardize form development by saving existing brand approved forms as form templates for quick reuse.
-
-*   **[Connect AEM Forms to JDBC-Supported databases](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: Connect to enterprise databases directly from AEM Cloud service using JDBC protocol, without the need to expose them over REST API.
-
-*   **[Integrate with REST Endpoints Using Open API 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Seamlessly integrate into systems of record which support Open API 3.0 to store and fetch data using form data models.
-
-*   **[Share an Adaptive Form for review](/help/forms/create-reviews-forms.md)**: Use the Adaptive Forms review mechanism to allow one or more reviewers to review the form.
-
-
-### Features in [!DNL Forms] prerelease {#prerelease-features-forms}
-
 * **[Submit Adaptive Forms to Microsoft SharePoint and Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Improve business user agility to launch new forms quickly and store submitted data in everyday tools they use like Microsoft SharePoint site or OneDrive folder.
 
 ![Submit Adaptive Forms to Microsoft SharePoint and Microsoft OneDrive](/help/forms/assets/onedrive-and-sharepoint.jpg)
 
+
+### Features in [!DNL Forms] prerelease {#prerelease-features-forms}
+
+*   Enhanced Adobe Acrobat Sign integration and compliance: AEM Forms now integrate with Adobe Acrobat Sign for Government, providing an advanced level of compliance and security for e-Signatures with Adaptive Form submissions for government associated accounts (Government departments and agencies).
+
+   Integration with Adobe Acrobat Sign for Government enables our partners and government customers to use electronic signatures in Adaptive Forms for some of the most mission-critical and sensitive lines of business. This additional layer of security ensures that all e-signatures are fully compliant with FedRAMP moderated compliances, providing our government customers with peace of mind.
+
+*   Adaptive Forms within AEM Sites editor: You can now use AEM Sites editor to quickly create and add multiple forms to your sites pages. This capability allows content authors to create seamless data capture experiences within Sites pages using the power of adaptive forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. You can: 
+
+      * Create an Adaptive Form by dragging and dropping form components to Adaptive Forms Container Component in AEM Sites editor.  
+      *   Use the Adaptive Forms Wizard within AEM Sites editor to create forms independent of any Sites page, providing you the freedom to reuse such forms across multiple pages.
+      *   Add multiple forms to a Sites page, streamlining the user experience and providing greater flexibility.
+
+      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+  
+*   [Enhance error handling with custom error handlers in rule editor](): You can now invoke a custom function (using Client Library) in response to an error returned by an external service and provide a tailored response to end users or take specific actions for errors returned by a service. For instance, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down.
+
+   This helps improve your overall error-handling capability by introducing standards-based error responses, that are backward compatible with OOTB error handlers, with greater flexibility and control.
 
 ## Headless Adaptive Forms early adopter program {#forms-early-adopter}
 
