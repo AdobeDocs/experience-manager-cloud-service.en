@@ -244,16 +244,16 @@ If the Docker image is implemented with other programming languages or test runn
 
 * The containerized infrastructure that is scoped for functional testing is limited by the following boundaries:
 
-| Type                 | Value | Description                                                        |
-|----------------------|-------|--------------------------------------------------------------------|
-| CPU                  | 2.0   | Amount of CPU-time reserved per test execution                     |
-| Memory               | 1Gi   | Amount of memory allocated to the test, value in gibibytes         |
-| Timeout              | 30m   | The duration after which the test will be terminated.              |
-| Recommended Duration | 15m   | We recommend to write the tests to not take longer than this time. |
+| Type                 | Value | Description                                                            |
+|----------------------|-------|------------------------------------------------------------------------|
+| CPU                  | 2.0   | Amount of CPU-time reserved per test execution                         |
+| Memory               | 1Gi   | Amount of memory allocated to the test, value in gibibytes             |
+| Timeout              | 30m   | The duration after which the test will be terminated.                  |
+| Recommended Duration | 15m   | Adobe recommends to write the tests to not take longer than this time. |
 
 >[!NOTE]
 >
-> Should you need more resources, please create a Customer Care case and describe your use-case; our team will review your request and provide appropriate assistance.
+> Should you need more resources, please create a Customer Care case and describe your use-case; Adobe will review your request and provide appropriate assistance.
 
 ## Selenium-specific details
 
