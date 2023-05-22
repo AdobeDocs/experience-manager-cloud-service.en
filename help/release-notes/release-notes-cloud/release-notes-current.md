@@ -43,19 +43,19 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* Added support for WebP images to automatically extract metadata, generate thumbnails and custom renditions. Smart Tags capability is also now supported for these files. Dynamic Media capabilities are not supported for WebP as an input format.
+*   Added support for WebP images to automatically extract metadata, generate thumbnails and custom renditions. Smart Tags capability is also now supported for these files. Dynamic Media capabilities are not supported for WebP as an input format.
 
-* [Search experience enhancements](/help/assets/search-assets.md#aftersearch) - You can now quickly perform the following operations on the assets that display in the search results:
+*   [Search experience enhancements](/help/assets/search-assets.md#aftersearch) - You can now quickly perform the following operations on the assets that display in the search results:
 
    * Create a workflow
    * Create a new version
    * Relate or Unrelate assets
 
-     You do not need to navigate to the asset location and view its properties to perform these operations.
+      You do not need to navigate to the asset location and view its properties to perform these operations.
 
-* Color Search facet usability improvements - Input field for color values is now editable and search results update only when you exit the color picker. 
+*   Color Search facet usability improvements - Input field for color values is now editable and search results update only when you exit the color picker. 
 
-* New protocol (DASH - Dynamic Adaptive Streaming over HTTP) support launched for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled):
+*   New protocol (DASH - Dynamic Adaptive Streaming over HTTP) support launched for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled):
    * Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos
    * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
    * Available in all regions, to be enabled via support ticket
@@ -79,11 +79,12 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
 
 *   Adaptive Forms within AEM Sites editor: You can now use AEM Sites editor to quickly create and add multiple forms to your sites pages. This capability allows content authors to create seamless data capture experiences within Sites pages using the power of adaptive forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. You can: 
 
-      * Create an Adaptive Form by dragging and dropping form components to Adaptive Forms Container Component in AEM Sites editor.  
-      *   Use the Adaptive Forms Wizard within AEM Sites editor to create forms independent of any Sites page, providing you the freedom to reuse such forms across multiple pages.
-      *   Add multiple forms to a Sites page, streamlining the user experience and providing greater flexibility.
+    * Create an Adaptive Form by dragging and dropping form components to Adaptive Forms Container Component in AEM Sites editor.  
+    * Use the Adaptive Forms Wizard within AEM Sites editor to create forms independent of any Sites page, providing you the freedom to reuse such forms across multiple pages.
+    * Add multiple forms to a Sites page, streamlining the user experience and providing greater flexibility.
 
-      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+   
+    >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
   
 *   Enhance error handling with custom error handlers in rule editor: You can now invoke a custom function (using Client Library) in response to an error returned by an external service and provide a tailored response to end users or take specific actions for errors returned by a service. For instance, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down.
 
@@ -98,7 +99,7 @@ Use Headless Adaptive Forms to enable your developers to create, publish, and ma
 * reuse your proprietary UI components with forms applications 
 * leverage the power of Adobe Experience Manager Forms 
 
-You can send an email to aem-forms-headless@adobe.com from your official email ID to join the early adopter program. 
+You can send an email to `aem-forms-headless@adobe.com` from your official email ID to join the early adopter program. 
 
 ## Maintenance Release Notes {#maintenance}
 
