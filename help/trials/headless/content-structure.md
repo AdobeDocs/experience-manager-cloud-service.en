@@ -16,7 +16,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Launch the model console"
->abstract="Let's explore how to create a reusable schema, called a Content Fragment model, for your content in Adobe Experience Manager as a Cloud Service. Watch the video to understand why this is an important step. <br><br>In this learning module we'll use a travel site as our example and walk through creating a model that represents a trip. We will refer to this model in later modules, so make sure you follow the naming schema as provided.<br><br>Launch this module in a new tab by clicking the button below and then follow this guide."
+>abstract="Let's explore how to create a reusable schema, called a Content Fragment model, for your content in Adobe Experience Manager as a Cloud Service. Watch the video to understand why this is an important step. <br><br>In this learning module we'll use a travel site as our example and walk through creating a model that represents a trip.<br><br>Launch this module in a new tab by clicking the button below and then follow this guide."
 >additional-url="https://video.tv.adobe.com/v/3413261" text="Content structure intro video"
 
 >[!CONTEXTUALHELP]
@@ -28,13 +28,13 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 
 The Content Fragment model console opens in a new tab. Think of the Content Fragment model console as your library of models, where you create new models and manage existing models.
 
-For our example, we will create a model that represents the data structure of a trip that is featured on a travel website. We will refer to a trip in this model as an **Adventure.**
+For our example, we will create a model that represents the data structure of a trip that is featured on a travel website. We will refer to a trip using this model as an **Adventure**.
 
 1. Click the **Create** button at the top-right of the screen to begin creating a Content Fragment model.
 
 1. The Create Model wizard starts, which guides you through creating your model. Provide the mandatory information.
 
-   * **Model Title** - This is a brief description of the model and usually indicates the purpose of the model. We will call our new model `Adventure`.
+   * **Model Title** - This is a brief label of the model and usually indicates the purpose of the model. We will call our new model `Adventure`.
    * **Enable model** - This option is checked by default and must be checked to be able to create Content Fragments based on this model.
 
 1. Once the mandatory fields are populated, click **Create** at the top-left to create the model. 
@@ -45,13 +45,13 @@ For our example, we will create a model that represents the data structure of a 
 
 ## Using the Model Editor {#configure-model}
 
-We now have a model called **Adventure** to represent trips on a travel website, but it has no details like duration, destination, activities, etc. Before you can use your model, you need to define the structure of its data. 
+We now have a model called **Adventure**, but it has no details like duration, destination, activities, etc. Before you can use your model, you need to define the structure of its data. 
 
 The Content Fragment Model editor is where you configure the data types and properties that define the content of your model.
 
 >[!TIP]
 >
->We will add a few important fields for the **Adventure**. In later modules we'll use and add to the model, so please follow the naming schema as provided.
+>It’s important to follow the naming schemas in the following instructions since we will refer to these specific names in later modules.
 
 1. Drag a **Single line text** field from the **Data Types** panel at the right of the editor and drop it onto your Content Fragment model. 
 
@@ -70,11 +70,11 @@ Continue on to the next section to add the fields necessary to complete and save
 
 ## Add Fields to the Model {#additional-fields}
 
-You already have a field for the title of the adventure. Now you need to add fields to capture the description, price, and a representative image of the trip.
+You already have a field for the title of the adventure. Now you need to add fields to capture the description, price, and a representative image of the adventure.
 
 >[!TIP]
 >
->The **Adventure** model is based on the WKND sample site for AEM. You can [visit the site here](https://wknd.site/us/en/adventures/yosemite-backpacking.html) to learn more about it if you wish, but knowledge of it is not necessary for these learning modules.
+>The **Adventure** model is based on the WKND sample site for AEM. You can [visit the site here](https://wknd.site/us/en/adventures/yosemite-backpacking.html) to see content that uses the **Adventure** model.
 
 Follow the same steps as above to add these additional fields. The only difference are the properties you need to set.
 

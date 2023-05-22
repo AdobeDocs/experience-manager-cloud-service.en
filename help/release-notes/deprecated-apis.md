@@ -204,5 +204,14 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>10/31/2022</td>
     <td>01/01/2023</td>
   </tr>
+  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
+    <td>This API is not supported by AEM as a Cloud Service.</td>
+    <td>5/15/2023</td>
+    <td>6/15/2023</td>
+  </tr><td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
+    <td>The Google Guava Core Libraries are deprecated.</td>
+    <td>5/15/2023</td>
+    <td>6/15/2023</td>
+  </tr>
 </tbody>
 </table>
