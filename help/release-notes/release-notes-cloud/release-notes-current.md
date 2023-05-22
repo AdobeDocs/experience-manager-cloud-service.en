@@ -86,7 +86,7 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
 
       >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
   
-*   [Enhance error handling with custom error handlers in rule editor](): You can now invoke a custom function (using Client Library) in response to an error returned by an external service and provide a tailored response to end users or take specific actions for errors returned by a service. For instance, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down.
+*   Enhance error handling with custom error handlers in rule editor: You can now invoke a custom function (using Client Library) in response to an error returned by an external service and provide a tailored response to end users or take specific actions for errors returned by a service. For instance, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down.
 
    This helps improve your overall error-handling capability by introducing standards-based error responses, that are backward compatible with OOTB error handlers, with greater flexibility and control.
 
