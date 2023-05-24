@@ -64,7 +64,7 @@ Alternatively, you can also achieve this by creating a Workflow Model that uses 
    ![Process Step](/help/operations/assets/processstep.png)
 
 1. Click the Process step in the flow and select **Configure** by pressing the wrench icon
-1. Click on the **Process** tab and select `Publish Content Tree` from the drop down list
+1. Click on the **Process** tab and select `Publish Content Tree` from the drop down list, then check the **Handler Advance** check box
    
    ![Treeactivation](/help/operations/assets/newstep.png)
 
