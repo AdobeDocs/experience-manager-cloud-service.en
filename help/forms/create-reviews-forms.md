@@ -6,22 +6,22 @@ seo-description: A Review is a mechanism that allows one or more reviewers to co
 topic-tags: forms-manager
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 ---
-# Creating and managing reviews for assets in forms{#creating-and-managing-reviews-for-assets-in-forms}
+# Creating and managing reviews to forms{#creating-and-managing-reviews-to-forms}
 
 ## Review {#review}
 
-A review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
+A review is a mechanism that allows one or more reviewers to comment on forms.
 
 ## Setting up a review {#setting-up-a-review}
 
-1.  Navigate to the forms browser and select a form to review its assets.
+1.  Navigate to the forms browser and select a form to review.
 1.  If the Form does not have a review in progress, a **Start Review** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon appears in the Action bar. Click the **Start Review** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon.
 1.  Enter the following information:
 
     * **Title**: Mandatory, can contain alphanumeric characters, hyphen, and underscore.
     * **Description**: Optional, description of the purpose / content for review.
     * **Deadline**: Optional, the date on which the review ends. When past the deadline the task appears as 'Overdue'.
-    * **Reviewer Name**: A minimum of one is mandatory. use the combo-box to add reviewers, typing a name lists all matching names; select a name and click Add. On the next section of the **Reviewers** tab shows the name of all the reviewers.
+    * **Reviewer Name**: A minimum of one is mandatory. Use the combo-box to add reviewers, typing a name list of all matching names; select a name and click **Add**. On the next section of the **Reviewers** tab shows the name of all the reviewers.
 
 1.  Click the **Start** to start a review.
 
@@ -41,17 +41,18 @@ This section describes what happens when a review is created or set up.
 
    Reviewer Notification Alert
 
-1. The comment box is available to the reviewers of the form. Others can view the comments, but cannot comment.
+1. The comment box is available to the reviewers of the form. Others can read the comments but not add their own.
 
 ## Managing a review {#managing-a-review}
 
 >[!NOTE]
 >
->* Only reviews that are in progress can be modified. Reviews that are complete cannot be modified.
+>* Only reviews that are in progress can be modified.
+>* Reviews that are complete cannot be modified.
 
 1. Navigate to the forms tab and select a form. 
 
-1. If an asset has a review in progress and you are the initiator of the review, a **Manage Review** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icons appears in the Action bar. Only review initiator can manage (Update/End) the review.
+1. If a form has a review in progress and you are the initiator of the review, a **Manage Review** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon appears in the action bar. Only the review initiator can manage (Update/End) the review.
 
    Click the **Manage Review** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)icon.
 
