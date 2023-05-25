@@ -4,12 +4,12 @@ description: Learn how Smart Imaging with Adobe Sensei AI applies each user's un
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: 3
+mini-toc-levels: 
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 ---
 # Smart Imaging {#smart-imaging}
 
-## What is "Smart Imaging"? {#what-is-smart-imaging}
++++**What is "Smart Imaging"?** {#what-is-smart-imaging}
 
 Smart Imaging technology applies Adobe Sensei AI capabilities and works with existing "image presets". It works to enhance image delivery performance by automatically optimizing image format, size, and quality based on client browser capabilities.
 
@@ -54,7 +54,9 @@ See also [Image Optimization with Next-gen Image Formats (WebP and AVIF)](https:
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-## What are the key benefits of the latest Smart Imaging? {#what-are-the-key-benefits-of-smart-imaging}
++++
+
++++## What are the key benefits of the latest Smart Imaging? {#what-are-the-key-benefits-of-smart-imaging}
 
 Smart Imaging provides better image delivery performance by automatically optimizing image file size based on client browser in use, the device display & network conditions. Because images constitute most of a page's load time, any performance improvement can have a profound impact on business KPIs such as higher conversion rates, time spent on a site, and lower site bounce rates.
 
@@ -119,6 +121,8 @@ DPR and network bandwidth values are based on the detected client-side values of
 * TTL (Time To Live) independent. Previously, a minimum TTL of 12 hours was mandatory for Smart Imaging to work.
 * Previously, both the original and derivative images were cached, and it was a 2-step process to invalidate cache. In latest Smart Imaging, only the derivatives get cached, allowing a single-step cache invalidation process.
 * Customers that use custom headers in their ruleset benefit from the latest Smart Imaging, as these headers are not blocked, unlike the previous version of Smart Imaging. For example, "Timing Allow Origin", "X-Robot" as suggested in [Add a custom header value to image responses|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
+
++++
 
 ## Are there any licensing costs associated with Smart Imaging? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
