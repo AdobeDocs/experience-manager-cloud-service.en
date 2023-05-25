@@ -4,12 +4,12 @@ description: Learn how Smart Imaging with Adobe Sensei AI applies each user's un
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: 3
+mini-toc-levels: 
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 ---
 # Smart Imaging {#smart-imaging}
 
-## What is "Smart Imaging"? {#what-is-smart-imaging}
++++**What is "Smart Imaging"?** {#what-is-smart-imaging}
 
 Smart Imaging technology applies Adobe Sensei AI capabilities and works with existing "image presets". It works to enhance image delivery performance by automatically optimizing image format, size, and quality based on client browser capabilities.
 
@@ -54,7 +54,9 @@ See also [Image Optimization with Next-gen Image Formats (WebP and AVIF)](https:
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-## What are the key benefits of the latest Smart Imaging? {#what-are-the-key-benefits-of-smart-imaging}
++++
+
++++## What are the key benefits of the latest Smart Imaging? {#what-are-the-key-benefits-of-smart-imaging}
 
 Smart Imaging provides better image delivery performance by automatically optimizing image file size based on client browser in use, the device display & network conditions. Because images constitute most of a page's load time, any performance improvement can have a profound impact on business KPIs such as higher conversion rates, time spent on a site, and lower site bounce rates.
 
@@ -66,7 +68,9 @@ The newest key benefits of the latest Smart Imaging include the following:
 * Device Pixel Ratio (`dpr`)
 * Network bandwidth (`network`)
 
-### About Browser Format Conversion (bfc) {#bfc} 
++++
+
+**About Browser Format Conversion (bfc)** {#bfc} 
 
 Turning on Browser Format Conversion by appending `bfc=on` to the image URL automatically converts JPEG and PNG to lossy AVIF, lossy WebP, lossy JPEGXR, lossy JPEG2000 for different browsers. For browsers that do not support those formats, Smart Imaging continues to serve the JPEG or PNG. Along with the format, the quality of the new format is recalculated by Smart Imaging.
 
@@ -74,7 +78,7 @@ Smart Imaging can also be turned off by appending `bfc=off` to the image's URL.
 
 See also [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) in the Dynamic Media Image Serving and Rendering API.
 
-### About Device Pixel Ratio (dpr) optimization {#dpr}
+**About Device Pixel Ratio (dpr)** optimization {#dpr}
 
 Device Pixel Ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device's physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate.
 
@@ -99,7 +103,7 @@ Currently, the pixel density of the display comes from Akamai CDN header values.
 
 See also [When working with images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-### About Network Bandwidth optimization {#network}
+**About Network Bandwidth optimization** {#network}
 
 Turning on Network Bandwidth automatically adjusts the image quality that is served based on actual network bandwidth. For poor network bandwidth, DPR (Device Pixel Ratio) optimization is automatically turned off, even if it is already on.
 
@@ -111,7 +115,7 @@ If desired, your company can opt out of network bandwidth optimization at the in
 
 DPR and network bandwidth values are based on the detected client-side values of the bundled CDN. These values are sometimes inaccurate. For example, iPhone5 with DPR=2 and iPhone12 with `dpr=3`, both show `dpr=2`. Still, for high-resolution devices, sending `dpr=2` is better than sending `dpr=1`. The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md).
 
-### Additional key benefits of Smart Imaging
+**Additional key benefits of Smart Imaging**
 
 * Improved Google SEO ranking for web pages that use the latest Smart Imaging.
 * Serves optimized content immediately (at runtime).
@@ -120,7 +124,9 @@ DPR and network bandwidth values are based on the detected client-side values of
 * Previously, both the original and derivative images were cached, and it was a 2-step process to invalidate cache. In latest Smart Imaging, only the derivatives get cached, allowing a single-step cache invalidation process.
 * Customers that use custom headers in their ruleset benefit from the latest Smart Imaging, as these headers are not blocked, unlike the previous version of Smart Imaging. For example, "Timing Allow Origin", "X-Robot" as suggested in [Add a custom header value to image responses|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## Are there any licensing costs associated with Smart Imaging? {#are-there-any-licensing-costs-associated-with-smart-imaging}
++++
+
++++**Are there any licensing costs associated with Smart Imaging?** {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
 No. Smart Imaging is included with your existing license. This rule is true for either Dynamic Media Classic or Experience Manager - Dynamic Media (On-prem, AMS, and Experience Manager as a Cloud Service).
 
@@ -128,7 +134,9 @@ No. Smart Imaging is included with your existing license. This rule is true for 
 >
 >Smart Imaging is not available to Dynamic Media - Hybrid customers.
 
-## How does Smart Imaging work? {#how-does-smart-imaging-work}
++++
+
++++**How does Smart Imaging work?** {#how-does-smart-imaging-work}
 
 When an image is requested by a consumer, Smart Imaging checks the user characteristics and converts it to the appropriate image format based on the browser in use. These format conversions are done in a manner that does not degrade visual fidelity. Smart imaging automatically converts images to different formats based on browser capability in the following manner.
 
@@ -145,6 +153,8 @@ When an image is requested by a consumer, Smart Imaging checks the user characte
 * For browsers that do not support these formats, the originally requested image format is served. 
 
 If the original image size is smaller than what Smart Imaging produces, then the original image is served.
+
++++
 
 ## What image formats are supported? {#what-image-formats-are-supported}
 
