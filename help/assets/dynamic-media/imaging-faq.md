@@ -1,5 +1,5 @@
 ---
-title: Smart Imaging FAQ
+title: Smart Imaging
 description: Learn how Smart Imaging with Adobe Sensei AI applies each user's unique viewing characteristics to automatically serve the right images optimized for their experience, resulting in better performance and engagement.
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
@@ -9,7 +9,7 @@ exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 ---
 # Smart Imaging FAQ {#smart-imaging}
 
-+++**What is "Smart Imaging"?**
+## About Smart Imaging
 
 Smart Imaging technology applies Adobe Sensei AI capabilities and works with existing "image presets". It works to enhance image delivery performance by automatically optimizing image format, size, and quality based on client browser capabilities.
 
@@ -54,9 +54,7 @@ See also [Image Optimization with Next-gen Image Formats (WebP and AVIF)](https:
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-+++
-
-+++**What are the key benefits of the latest Smart Imaging?**
+**Benefits of Smart Imaging**
 
 Smart Imaging provides better image delivery performance by automatically optimizing image file size based on client browser in use, the device display & network conditions. Because images constitute most of a page's load time, any performance improvement can have a profound impact on business KPIs such as higher conversion rates, time spent on a site, and lower site bounce rates.
 
@@ -64,11 +62,11 @@ The newest key benefits of the latest Smart Imaging include the following:
 
 * Now supports next generation AVIF format.
 * PNG to WebP and AVIF now supports lossy conversion. Because PNG is a lossless format, earlier WebP and AVIF being delivered were lossless.
-* Browser Format Conversion (`bfc`)
-* Device Pixel Ratio (`dpr`)
-* Network bandwidth (`network`)
+* [Browser Format Conversion](#bfc)
+* [Device Pixel Ratio](#dpr)
+* [Network bandwidth](#bandwidth)
 
-**About Browser Format Conversion (bfc)**
+### About Browser Format Conversion {#bfc}
 
 Turning on Browser Format Conversion by appending `bfc=on` to the image URL automatically converts JPEG and PNG to lossy AVIF, lossy WebP, lossy JPEGXR, lossy JPEG2000 for different browsers. For browsers that do not support those formats, Smart Imaging continues to serve the JPEG or PNG. Along with the format, the quality of the new format is recalculated by Smart Imaging.
 
@@ -76,7 +74,7 @@ Smart Imaging can also be turned off by appending `bfc=off` to the image's URL.
 
 See also [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) in the Dynamic Media Image Serving and Rendering API.
 
-**About Device Pixel Ratio (dpr)** optimization
+### About Device Pixel Ratio optimization** {#dpr}
 
 Device Pixel Ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device's physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate.
 
@@ -101,7 +99,7 @@ Currently, the pixel density of the display comes from Akamai CDN header values.
 
 See also [When working with images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-**About Network Bandwidth optimization**
+### About Network Bandwidth optimization {#bandwidth}
 
 Turning on Network Bandwidth automatically adjusts the image quality that is served based on actual network bandwidth. For poor network bandwidth, DPR (Device Pixel Ratio) optimization is automatically turned off, even if it is already on.
 
@@ -121,8 +119,6 @@ DPR and network bandwidth values are based on the detected client-side values of
 * TTL (Time To Live) independent. Previously, a minimum TTL of 12 hours was mandatory for Smart Imaging to work.
 * Previously, both the original and derivative images were cached, and it was a 2-step process to invalidate cache. In latest Smart Imaging, only the derivatives get cached, allowing a single-step cache invalidation process.
 * Customers that use custom headers in their ruleset benefit from the latest Smart Imaging, as these headers are not blocked, unlike the previous version of Smart Imaging. For example, "Timing Allow Origin", "X-Robot" as suggested in [Add a custom header value to image responses|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
-
-+++
 
 +++**Are there licensing costs associated with Smart Imaging?**
 
@@ -151,6 +147,26 @@ When an image is requested by a consumer, Smart Imaging checks the user characte
 * For browsers that do not support these formats, the originally requested image format is served. 
 
 If the original image size is smaller than what Smart Imaging produces, then the original image is served.
+
++++
+
++++**Can Smart Imaging be turned off for any request?**
+
+Yes. You can turn off Smart Imaging by adding any of the following modifiers:
+
+* `bfc=off` to turn off Browser Format Conversion. See also [Browser Format Conversion](#bfc).
+* `dpr=off` to turn off Device Pixel Ratio. See also [Device Pixel Ratio](#dpr).
+* `network=off` to turn off network bandwidth. See also [Network Bandwidth](#network).
+
++++
+
++++**Is it possible to "tune" Smart Imaging?**
+
+Yes. Smart Imaging has three options that you can enable or disable. 
+
+* [Browser Format Conversion](#bfc)
+* [Device Pixel Ratio](#dpr)
+* [Network Bandwidth](#network)
 
 +++
 
@@ -336,26 +352,6 @@ This header tells you the following:
 +++**Can I disable AVIF optimization in Smart Imaging?**
 
 Yes. If you want to switch back to serving WebP by default, create a support case for the same. As usual, you can turn off Smart Imaging by adding the parameter `bfc=off` to the image's URL. However, you cannot select WebP or AVIF in the URL modifier for Smart Imaging. This ability is maintained at your company account-level.
-
-+++
-
-+++**Can Smart Imaging be turned off for any request?**
-
-Yes. You can turn off Smart Imaging by adding any of the following modifiers:
-
-* `bfc=off` to turn off Browser Format Conversion. See also [Browser Format Conversion](#bfc).
-* `dpr=off` to turn off Device Pixel Ratio. See also [Device Pixel Ratio](#dpr).
-* `network=off` to turn off network bandwidth. See also [Network Bandwidth](#network).
-
-+++
-
-+++**Is it possible to "tune" Smart Imaging?**
-
-Yes. Smart Imaging has three options that you can enable or disable. 
-
-* [Browser Format Conversion](#bfc)
-* [Device Pixel Ratio](#dpr)
-* [Network Bandwidth](#network)
 
 +++
 
