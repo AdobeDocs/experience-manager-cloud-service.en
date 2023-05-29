@@ -7,6 +7,11 @@ exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
 ---
 # Search facets {#search-facets}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 An enterprise-wide deployment of Adobe Experience Manager Assets has the capacity to store many assets. Sometimes, finding the right asset can be arduous and time-consuming if you only use the generic search capabilities of Experience Manager.
 
 Use search facets in the Filters panel to add more granularity to your search experience and make the search functionality more efficient and versatile. Search facets add multiple dimensions (predicates) that enable you to perform more intricate searches. The Filters panel includes a few standard facets. You can also add custom search facets.
