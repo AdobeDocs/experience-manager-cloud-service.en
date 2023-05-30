@@ -8,6 +8,11 @@ exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 ---
 # Publish assets to Brand Portal {#publish-assets-to-brand-portal}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/brand-portal-publish-folder.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 As an Adobe Experience Manager (AEM) Assets administrator, you can publish assets, folders, and collections to the AEM Assets Brand Portal instance. Also, you can schedule the publish workflow of an asset or folder to a later date or time. Once published, the Brand Portal users can access and further distribute the assets, folders, and collections to other users. 
 
 However, you must first configure AEM Assets with Brand Portal. For details, see [Configure AEM Assets with Brand Portal](configure-aem-assets-with-brand-portal.md). 
