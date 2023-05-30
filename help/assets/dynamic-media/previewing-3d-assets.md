@@ -10,7 +10,7 @@ exl-id: e873bd25-f841-4063-824f-7e48f40bb678
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=en)                  |
 | AEM as a Cloud Service     | This article         |
 
 Experience Manager supports the upload, delivery, and interactive preview of 3D assets as part of the authoring process. 
