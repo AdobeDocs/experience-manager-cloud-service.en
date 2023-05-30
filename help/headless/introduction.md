@@ -15,6 +15,8 @@ You can read detailed documentation of the various features involved and/or foll
 >
 >See also [What is Headless?](/help/headless/what-is-headless.md) for an introduction to Headless concepts and terminology.
 
+{{headless-trials-promotion}}
+
 ## Overview {#overview}
 
 AEM Headless is a CMS solution from Experience Manager that allows structured content (Content Fragments) in AEM to be consumed by any app over HTTP using GraphQL. Headless implementations enable delivery of experiences across platforms and channels at scale.
