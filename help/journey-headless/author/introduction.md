@@ -7,6 +7,8 @@ exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 
 In this part of the [AEM Headless Content Author Journey](overview.md), you can learn the (basic) concepts and terminology necessary to understand authoring content when using Adobe Experience Manager (AEM) as a Cloud Service as a Headless CMS. This involves structuring, and creating, your content for headless content delivery.
 
+{{headless-trials-promotion}}
+
 ## Objective {#objective}
 
 * **Audience**: Beginner
