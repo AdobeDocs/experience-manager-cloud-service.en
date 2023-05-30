@@ -120,7 +120,7 @@ DPR and network bandwidth values are based on the detected client-side values of
 * Previously, both the original and derivative images were cached, and it was a 2-step process to invalidate cache. In latest Smart Imaging, only the derivatives get cached, allowing a single-step cache invalidation process.
 * Customers that use custom headers in their ruleset benefit from the latest Smart Imaging, as these headers are not blocked, unlike the previous version of Smart Imaging. For example, "Timing Allow Origin", "X-Robot" as suggested in [Add a custom header value to image responses|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## How Smart Imaging works**
+## How Smart Imaging works
 
 When an image is requested by a consumer, Smart Imaging checks the user characteristics and converts it to the appropriate image format based on the browser in use. These format conversions are done in a manner that does not degrade visual fidelity. Smart imaging automatically converts images to different formats based on browser capability in the following manner.
 
@@ -138,7 +138,7 @@ When an image is requested by a consumer, Smart Imaging checks the user characte
 
 If the original image size is smaller than what Smart Imaging produces, then the original image is served.
 
-## Supported image formats in Smart Imaging
+## Image format support in Smart Imaging
 
 The following image formats are supported for Smart Imaging:
 
@@ -149,10 +149,11 @@ For JPEG image file format, the quality of the new format is recalculated by Sma
 
 For image file formats that support transparency like PNG, you can configure Smart Imaging to deliver lossy AVIF and WebP. For the lossy format conversion, Smart Imaging uses the quality mentioned in the image's URL, or else the quality configured in the Dynamic Media company account.
 
-## Image serving commands that are ignored and supported by Smart Imaging
+## Image serving command support in Smart Imaging
 
-The only Image Serving commands that are ignored by Smart Imaging are `fmt` and `qlt`. All remaining commands are supported.
+The Image Serving commands `fmt` and `qlt` are not supported; all remaining commands are supported.
 
+## Frequently Asked Questions about Smart Imaging
 
 +++**Are there licensing costs associated with Smart Imaging?**
 
