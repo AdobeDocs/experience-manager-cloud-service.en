@@ -7,28 +7,25 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 11983 {#release-11983}
+## Release 11983 {#release-12142}
  
-Summarized below are the continuous improvements for maintenance release 11983, which was publicly released on May 17, 2023. This maintenance release is an update from previous maintenance release 11873.
+Summarized below are the continuous improvements for maintenance release 12142, which was publicly released on May 31, 2023. This maintenance release is an update from previous maintenance release 11983.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
-### Enhancements {#enhancements-11983}
+### Enhancements {#enhancements-12142}
 
 None.
 
-### Known Issues {#known-issues-11983}
+### Known Issues {#known-issues-12142}
 
 None.
 
-### Fixed Issues {#fixed-issues-11983}
+### Fixed Issues {#fixed-issues-12142}
 
-- SITES-13253 - Fixed issue with RecursionTooDeepException in Core Components v2.22.6
-- SITES-13256 - Fixed issue with Core WCM Teaser configured with special URL breaks page rendering
-- GRANITE-45462 - Fixed issue with Messaging Client Multi Region Config
-- GRANITE-45562 - Fixed issue with Issues with image combination returning 200 instead of 404
+To add
 
-### Embedded Technologies {#embedded-tech-11983}
+### Embedded Technologies {#embedded-tech-12142}
 
 |Technology|Version|Link|
 |---|---|---|
