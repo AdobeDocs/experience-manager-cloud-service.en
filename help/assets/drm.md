@@ -8,6 +8,11 @@ exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
 ---
 # Digital Rights Management for digital assets {#digital-rights-management-in-assets}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 Digital assets are often associated with a license that specifies the terms and the duration of use. Using the [!DNL Experience Manager] platform, you can efficiently manage asset expiration information and licensing information.
 
 ## Asset expiration {#asset-expiration}

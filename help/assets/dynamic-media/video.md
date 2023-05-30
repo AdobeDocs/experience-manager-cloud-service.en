@@ -417,10 +417,6 @@ Some key benefits from enabling DASH on your account include the following:
 * Helps make video delivery more accessible for your customers.
 * Get the streaming URL by way of APIs, too.
 
-   >[!IMPORTANT]
-   >
-   >Enabling DASH on your account is currently available only in Asia-Pacific and North America; coming soon in Europe-Middle East-Africa.
-
 You initiate a request to use DASH; it is not automatically enabled on your account.
 
 To enable DASH on your account, create a customer support case as described below. In your support case, specify that you want to enable DASH on your Dynamic Media account and on Experience Manager. 
@@ -428,7 +424,7 @@ To enable DASH on your account, create a customer support case as described belo
 **To enable DASH on your account:**
 
 1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-1. Follow the instructions to create a support case while ensuring you provide the following information:
+1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
     * Name of your Dynamic Media account.

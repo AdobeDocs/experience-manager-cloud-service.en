@@ -8,6 +8,11 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 ---
 # Configure Experience Manager Assets with Brand Portal {#configure-aem-assets-with-brand-portal}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 Configuring Adobe Experience Manager Assets Brand Portal allows you to publish approved brand assets from Adobe Experience Manager Assets as a [!DNL Cloud Service] instance to Brand Portal and distribute them to the Brand Portal users.
 
 ## Activate Brand Portal using Cloud Manager {#activate-brand-portal}
@@ -400,7 +405,7 @@ The egress IPs are as follows:
 | **Region**  | **Egress IP** |
 |--- |--- |
 | NA | 130.248.160.68, 20.94.203.130  |
-| EMEA | 185.34.189.3, 51.132.146.75 |
+| EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.248.244.210, 130.248.244.211, 130.248.244.212  |
 | APAC | 63.140.44.54 |
 
 <!--
