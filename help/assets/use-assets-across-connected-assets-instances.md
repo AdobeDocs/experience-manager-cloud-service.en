@@ -310,6 +310,7 @@ You can add assets to the [!DNL Sites] deployment, however, those assets cannot 
 ## Limitations and best practices {#tip-and-limitations}
 
 * To get insights about asset usage, configure the [Assets Insight](/help/assets/assets-insights.md) functionality on the [!DNL Sites] instance.
+* Usage of path browser in authoring components are not supported in connected assets.
 
 ### Permissions and asset management {#permissions-and-managing-assets}
 
