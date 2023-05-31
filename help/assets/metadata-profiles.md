@@ -100,7 +100,7 @@ You can reprocess assets in a folder that already has an existing metadata profi
 
 **To apply a metadata profile globally, do one of the following**
 
-* Navigate to `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` and apply the appropriate profile and click **[!UICONTROL Save]**.
+* Navigate to `https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam` and apply the appropriate profile and click **[!UICONTROL Save]**.
 
 * Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Click **Save All**.
 
