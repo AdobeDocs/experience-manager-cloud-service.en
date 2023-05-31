@@ -24,7 +24,7 @@ None.
 ### Fixed Issues {#fixed-issues-12142}
 
 - SITES-13636 - Fixed issue with clientlib dependencies of the image and carousel site clientlib missing.
-- SITES-13475 - Fixed issue with backward compatilibity break for PanelContainer.js in 2.22.10 Core Components Version.
+- SITES-13475 - Fixed issue with backward compatibility break for PanelContainer.js in 2.22.10 Core Components Version.
 
 ### Embedded Technologies {#embedded-tech-12142}
 
