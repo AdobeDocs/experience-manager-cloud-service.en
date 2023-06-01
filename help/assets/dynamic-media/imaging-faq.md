@@ -7,9 +7,9 @@ role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 ---
-# Smart Imaging FAQ {#smart-imaging}
+# Smart Imaging {#smart-imaging}
 
-## About Smart Imaging
+## About Smart Imaging{#about-smart-imaging}
 
 Smart Imaging technology applies Adobe Sensei AI capabilities and works with existing "image presets". It works to enhance image delivery performance by automatically optimizing image format, size, and quality based on client browser capabilities.
 
@@ -120,7 +120,7 @@ DPR and network bandwidth values are based on the detected client-side values of
 * Previously, both the original and derivative images were cached, and it was a 2-step process to invalidate cache. In latest Smart Imaging, only the derivatives get cached, allowing a single-step cache invalidation process.
 * Customers that use custom headers in their ruleset benefit from the latest Smart Imaging, as these headers are not blocked, unlike the previous version of Smart Imaging. For example, "Timing Allow Origin", "X-Robot" as suggested in [Add a custom header value to image responses|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## How Smart Imaging works
+## How Smart Imaging works{#how-smart-imaging-works}
 
 When an image is requested by a consumer, Smart Imaging checks the user characteristics and converts it to the appropriate image format based on the browser in use. These format conversions are done in a manner that does not degrade visual fidelity. Smart imaging automatically converts images to different formats based on browser capability in the following manner.
 
@@ -138,7 +138,7 @@ When an image is requested by a consumer, Smart Imaging checks the user characte
 
 If the original image size is smaller than what Smart Imaging produces, then the original image is served.
 
-## Image format support in Smart Imaging
+## Image format support in Smart Imaging{#image-format-support}
 
 The following image formats are supported for Smart Imaging:
 
@@ -149,11 +149,11 @@ For JPEG image file format, the quality of the new format is recalculated by Sma
 
 For image file formats that support transparency like PNG, you can configure Smart Imaging to deliver lossy AVIF and WebP. For the lossy format conversion, Smart Imaging uses the quality mentioned in the image's URL, or else the quality configured in the Dynamic Media company account.
 
-## Image serving command support in Smart Imaging
+## Image serving command support in Smart Imaging{#imaging-serving-command-support}
 
 The Image Serving commands `fmt` and `qlt` are not supported; all remaining commands are supported.
 
-## Frequently Asked Questions about Smart Imaging
+## Frequently Asked Questions about Smart Imaging{#smart-imaging-faq}
 
 +++**Are there licensing costs associated with Smart Imaging?**
 
