@@ -503,6 +503,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Setup and migrate {#setup-configure-migrate}
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
+    + [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
     + [Configure Unified Storage Connector](/help/forms/configure-unified-storage-connector.md)
     + [Migrate from [!DNL AEM 6.5 Forms] or earlier to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
@@ -964,3 +965,4 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
   + [Attributes and Types](/help/implementing/universal-editor/attributes-types.md)
   + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
+  
