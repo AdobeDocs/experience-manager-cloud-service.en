@@ -56,7 +56,7 @@ Like all support tickets, it will appear in the [Adobe Admin Console's Support C
 
 ## Which Notifications Appear? {#which-notification}
 
-AEM as a Cloud Service has several types of notifications, but only a subset appear in the Actions Center, as illustrated in the table below.
+AEM as a Cloud Service has several types of notifications, but only a subset appears in the Actions Center, as illustrated in the table below.
 
 | Notification Type  | Description  | How to configure  | Appears in Alerts Center | 
 |---|---|---|---|
