@@ -18,7 +18,7 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 1. Customers will be able to set up alerts according to their needs.
 1. SREs are monitoring system health 24/7 and will take action as needed and as early as possible.
 1. Index configuration is changed via deployments. Index definition changes are configured like other content changes.
-1. At a high level on AEM as a Cloud Service, with the introduction of the [Blue-Green deployment model](#index-management-using-blue-green-deployments) two sets of indexes will exist: one set for the old version (blue), and one set for the new version (green).
+1. At a high level on AEM as a Cloud Service, with the introduction of the [rolling deployment model](#index-management-using-rolling-deployments) two sets of indexes will exist: one set for the old version, and one set for the new version.
 1. Customers can see whether the indexing job is complete on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
 
 Limitations:
@@ -137,7 +137,7 @@ In `ui.apps.structure/pom.xml`, the `filters` section for this plugin needs to c
 <filter><root>/oak:index</root></filter>
 ```
 
-Once the new index definition is added, the new application needs to be deployed via Cloud Manager. Upon deployment two jobs are started, responsible for adding (and merging if needed) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. The underlying repositories are being reindexed with the new index definitions, before the Blue-Green switch is taking place.
+Once the new index definition is added, the new application needs to be deployed via Cloud Manager. Upon deployment two jobs are started, responsible for adding (and merging if needed) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. The underlying repositories are being reindexed with the new index definitions, before the switch is taking place.
 
 ### NOTE
 
@@ -201,19 +201,19 @@ Below is an example of where to place the above configuration in the pom.
 >
 >For further details on the required package structure for AEM as a Cloud Service, see the document [AEM Project Structure.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
-## Index Management using Blue-Green Deployments {#index-management-using-blue-green-deployments}
+## Index Management using Rolling Deployments {#index-management-using-rolling-deployments}
 
 ### What is Index Management {#what-is-index-management}
 
 Index management is about adding, removing, and changing indexes. Changing the *definition* of an index is fast, but applying the change (often called "building an index", or, for existing indexes, "reindexing") requires time. It is not instantaneous: the repository has to be scanned for data to be indexed.
 
-### What is Blue-Green Deployment {#what-is-blue-green-deployment}
+### What are Rolling Deployments {#what-are-rolling-deployments}
 
-Blue-Green deployment can reduce downtime. It also allows for zero downtime upgrades and provides fast rollbacks. The old version of the application (blue) runs at the same time as the new version of the application (green).
+A rolling deployment can reduce downtime. It also allows for zero downtime upgrades and provides fast rollbacks. The old version of the application runs at the same time as the new version of the application.
 
 ### Read-Only and Read-Write Areas {#read-only-and-read-write-areas}
 
-Certain areas of the repository (read-only parts of the repository) can be different in the old (blue) and in the new (green) version of the application. The read-only areas of the repository are typically "`/app`" and "`/libs`". In the following example, italic is used to mark read-only areas, while bold is used for read-write areas.
+Certain areas of the repository (read-only parts of the repository) can be different in the old and in the new version of the application. The read-only areas of the repository are typically "`/app`" and "`/libs`". In the following example, italic is used to mark read-only areas, while bold is used for read-write areas.
 
 * **/**
 * */apps (read-only)*
@@ -227,13 +227,13 @@ Certain areas of the repository (read-only parts of the repository) can be diffe
 
 The read-write areas of the repository are shared between all versions of the application, while for each version of the application, there is a specific set of `/apps` and `/libs`.
 
-### Index Management Without Blue-Green Deployment {#index-management-without-blue-green-deployment}
+### Index Management Without Rolling Deployments {#index-management-without-rolling-deployments}
 
 During development, or when using on premise installations, indexes can be added, removed, or changed at runtime. Indexes are used as soon as they are available. If an index is not supposed to be used in the old version of the application yet, then the index is typically built during a scheduled downtime. The same occurs when removing an index, or changing an existing index. When removing an index, it becomes unavailable as soon as it is removed.
 
-### Index Management With Blue-Green Deployment {#index-management-with-blue-green-deployment}
+### Index Management With Rolling Deployments {#index-management-with-rolling-deployments}
 
-With blue-green deployments, there is no downtime. During an upgrade, for some time, both the old version (for example, version 1) of the application, as well as the new version (version 2), are running concurrently, against the same repository. If version 1 requires a certain index to be available, then this index must not be removed in version 2: the index should be removed later, for example in version 3, at which point it is guaranteed that version 1 of the application is no longer running. Also, applications should be written such that version 1 works well, even if version 2 is running, and if indexes of version 2 are available.
+With rolling deployments, there is no downtime. During an upgrade, for some time, both the old version (for example, version 1) of the application, as well as the new version (version 2), are running concurrently, against the same repository. If version 1 requires a certain index to be available, then this index must not be removed in version 2: the index should be removed later, for example in version 3, at which point it is guaranteed that version 1 of the application is no longer running. Also, applications should be written such that version 1 works well, even if version 2 is running, and if indexes of version 2 are available.
 
 After upgrading to the new version is complete, old indexes can be garbage collected by the system. The old indexes might still stay for some time, in order to speed up rollbacks (if a rollback should be needed).
 
