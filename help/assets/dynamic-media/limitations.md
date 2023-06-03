@@ -1,7 +1,7 @@
 ---
 title: Dynamic Media limitations
 description: Learn about the best practices and enforced limits when you create an Image Set or a Spin Set, or upload a PDF. Also learn about unsupported web browser and operating system combinations for Dynamic Media.
-contentOwner: admin
+contentOwner: Rick Brough
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
@@ -22,13 +22,13 @@ This topic includes the following sections:
 
 When you create a Spin Set or an Image Set, or upload PDFs for page extraction, Adobe recommends the following best practices and enforces the following limits:
 
-| Asset - Limit type | Best practice | Limit imposed | Change to limit on December 31, 2022 |
-| --- | --- | --- | --- |
-| **Image** - Number of Smart Crops per image | 5 | 100 | Not applicable |
-| **All sets** - Number of duplicate assets per set | No duplicates | 20 | Not applicable |
-| **All sets** - Maximum number of assets per set | 5-10 images per set  | 1000 | Not applicable |
-| **Spin Set** - Maximum number of rows/columns per 2D set | 12-18 images per set | 1000 | Not applicable |
-| **PDF** - Maximum number of pages for a PDF to be considered for extraction || 5000 (for new uploads) | 100 (for all PDFs) |
+| Asset - Limit type | Best practice | Limit imposed |
+| --- | --- | --- |
+| **Image** - Number of Smart Crops per image | 5 | 100 |
+| **All sets** - Number of duplicate assets per set | No duplicates | 20 |
+| **All sets** - Maximum number of assets per set | 5-10 images per set  | 1000 |
+| **Spin Set** - Maximum number of rows/columns per 2D set | 12-18 images per set | 1000 |
+| **PDF** - Maximum number of pages for a PDF to be considered for extraction || 100 (for all PDFs) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 

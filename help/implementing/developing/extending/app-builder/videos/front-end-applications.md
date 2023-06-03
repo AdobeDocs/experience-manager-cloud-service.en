@@ -12,10 +12,6 @@ exl-id: 0e5319ea-b053-44bf-ac9c-9b0dee51eac4
 ---
 # Front-end applications for App Builder
 
->[!IMPORTANT]
->
-> _Adobe Project Firefly, as mentioned in the videos in this series, is now named App Builder_
-
 ## Introduction to front-end App Builder applications
 
 Learn what about front-end App Builder applications including project initialization options and Adobe Spectrum.

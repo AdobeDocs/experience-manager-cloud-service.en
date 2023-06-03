@@ -9,6 +9,11 @@ exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
 ---
 # Reuse assets using MSM for [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 Multi Site Manager (MSM) functionality in [!DNL Adobe Experience Manager] enables users to reuse content that is authored once and is reused across multiple web-locations. The same functionality is available for digital assets by the name MSM for [!DNL Assets]. Using MSM for [!DNL Assets], you can:
 
 * Create assets once and then make copies of these assets to reuse in other areas of the site.
@@ -315,3 +320,18 @@ Following are limitations of MSM for [!DNL Assets].
 * Content Fragments are not supported. When attempting to create the live copies, Content Fragments are copied as is without any relationship. The copied Content Fragments are a snapshot in time and do not update when you update the original Content Fragments.
 
 * MSM does not work with metadata writeback enabled. Upon writeback, the inheritance breaks.
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)

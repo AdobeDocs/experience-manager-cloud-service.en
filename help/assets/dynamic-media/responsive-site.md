@@ -1,6 +1,7 @@
 ---
 title: Deliver optimized images for a responsive site
 description: Learn how to use the responsive code feature to deliver optimized images from Dynamic Media.
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5

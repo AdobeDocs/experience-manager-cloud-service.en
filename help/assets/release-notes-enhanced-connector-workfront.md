@@ -9,11 +9,59 @@ The following section outlines the general Release Notes for [!DNL Workfront for
 
 ## Release Date {#release-date}
 
-The release date for the latest version 1.9.6 of [!DNL Workfront for Experience Manager enhanced connector] is December 09, 2022.
+The release date for the latest version 1.9.10 of [!DNL Workfront for Experience Manager enhanced connector] is May 18, 2023.
 
 ## Release highlights {#release-highlights}
 
-The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following enhancements and bug fixes:
+The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following updates:
+
+* Workfront returns a 409 HTTP response for duplicate event subscriptions based on a REST call from Experience Manager to Workfront, which leads to a null pointer exception.
+
+
+>[!IMPORTANT]
+>
+>Adobe recommends you to [upgrade to the latest 1.9.10 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+
+## Known Issues {#known-issues}
+
+* While configuring project linked folders with AEM 6.4, Experience Manager do not save the values for **[!UICONTROL sub-folders]** and **[!UICONTROL Create linked folder in projects with portfolio]** fields. The value for the **[!UICONTROL sub-folders]** field updates to **[!UICONTROL undefined]** and the value for the **[!UICONTROL Create linked folder in projects with portfolio]** field updates to **[!UICONTROL Default Portfolio]** automatically after saving the configuration.
+
+* When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** dropdown list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** dropdown list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** dropdown list as well as the **[!UICONTROL Document Actions]** dropdown list available in the new Workfront experience.
+
+## Previous releases {#previous-releases}
+
+### April 2023 release {#april-2023-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] version 1.9.9, released on April 10, 2023 includes the following updates:
+
+* Experience Manager displays an `DateTimeParseException` exception when it receives last modified date from Workfront during linked folder creation.
+
+* Issues while creating multiple linked project folders within a short duration.
+
+* Inability to configure a threshold limit on the number of new set of project linked folders.
+
+### March 2023 release {#march-2023-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] version 1.9.8, released on March 03, 2023 includes the following updates:
+
+* Performance improvements in Experience Manager while creating project linked folders in Workfront.
+
+* Comment deletions in Workfront are now reflected in Experience Manager.
+
+* Capability to manage blocking net-new customers on Experience Manager as a Cloud Service from configuring the connector.
+
+
+### January 2023 release {#january-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] version 1.9.7, released on February 02, 2023 includes the following updates:
+
+* The metadata editor does not list Workfront custom forms properties after installing the 1.9.6 release.
+
+* The dev console displays `/content/dam/jcr:content/metadata/wfProjectURL not found` error message after installing the Workfront enhanced connector and opening the Assets home page.
+
+### December 2022 release {#december-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] version 1.9.6, released on December 09, includes the following updates:
 
 **Enhancement**
 
@@ -30,18 +78,6 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * The Document Version metadata does not synchronize appropriately between Workfront and Experience Manager.
 * Issues while creating a folder that is linked to Experience Manager in Workfront when the folder is using a schema that is missing definition in the global configuration.
 * The metadata schema editor form stops responding when you click any field due to a load time that is longer than expected. Added specific OSGi configuration for custom forms to resolve the issue. The names of the custom forms that you add to the metadata schema editor are available in the logs.
- 
->[!IMPORTANT]
->
->Adobe recommends you to [upgrade to the latest 1.9.6 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
-
-## Known Issues {#known-issues}
-
-* While configuring project linked folders with AEM 6.4, Experience Manager do not save the values for **[!UICONTROL sub-folders]** and **[!UICONTROL Create linked folder in projects with portfolio]** fields. The value for the **[!UICONTROL sub-folders]** field updates to **[!UICONTROL undefined]** and the value for the **[!UICONTROL Create linked folder in projects with portfolio]** field updates to **[!UICONTROL Default Portfolio]** automatically after saving the configuration.
-
-* When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** dropdown list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** dropdown list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** dropdown list as well as the **[!UICONTROL Document Actions]** dropdown list available in the new Workfront experience.
-
-## Previous releases {#previous-releases}
 
 ### November 2022 release {#november-2022-release}
 
@@ -147,4 +183,3 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 >[!MORELIKETHIS]
 >
 >* [Integrate [!DNL Workfront for Experience Manager enhanced connector] with Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
->* [Integrate [!DNL Workfront for Experience Manager enhanced connector] with Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-integrations.html?lang=en)

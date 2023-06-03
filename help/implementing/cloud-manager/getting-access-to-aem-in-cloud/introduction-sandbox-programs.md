@@ -58,9 +58,12 @@ Please refer to the document [Updating Environment](/help/implementing/cloud-man
 
 ### Hibernation and Deletion {#hibernation}
 
-Environments in a sandbox program are automatically hibernated after 8 hours of inactivity. Once 
-hibernated, they can be manually de-hibernated.
+Environments in a sandbox program are automatically hibernated after eight hours of inactivity. Sandbox environments are deleted after six continuous months of hibernation.
 
-Sandbox programs are deleted after 6 months of being in continuous hibernation mode, after which time, they can be recreated.
+Please refer to [Hibernating and De-hibernating Sandbox Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) for more details about how to de-hibernate environments and automatic sandbox deletion.
 
-Please refer to [Hibernating and De-hibernating Sandbox Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) for more details.
+### No Technical Support {#no-support}
+
+Because a sandbox program is typically created to serve the purposes of training, running demos, enablement, or proof of concepts (POCs), technical support is not available for issues experienced in a sandbox program.
+
+If you experience issues creating and managing your sandbox programs, this is still within the scope of technical support.

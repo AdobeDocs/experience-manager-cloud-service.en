@@ -91,7 +91,7 @@ The Adobe Experience Manager Forms project is a custom code base. It contains co
 
 Set up the following development tools to use for your [!DNL Adobe Experience Manager] project for development:
 
-* [Java™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#local-development-environment-set-up)
+* [Java&trade;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#local-development-environment-set-up)
 * [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-git)
 * [Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#node-js)
 * [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-maven)
@@ -180,11 +180,11 @@ AEM Forms as a Cloud Services provides a docker-based SDK environment for easier
 
 1. Install and Configure Docker:
 
-    * (For Microsoft® Windows) Install [Docker Desktop](https://www.docker.com/products/docker-desktop). It configures `Docker Engine` and `docker-compose` on your machine.
+    * (For Microsoft&reg; Windows) Install [Docker Desktop](https://www.docker.com/products/docker-desktop). It configures `Docker Engine` and `docker-compose` on your machine.
 
     * (Apple macOS) Install [Docker Desktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac). It includes Docker Engine, Docker CLI client, Docker Compose, Docker Content Trust, Kubernetes, and Credential Helper.
 
-    * (For Linux®) Install [Docker Engine](https://docs.docker.com/engine/install/#server) and [Docker Compose](https://docs.docker.com/compose/install/) on your machine.
+    * (For Linux&reg;) Install [Docker Engine](https://docs.docker.com/engine/install/#server) and [Docker Compose](https://docs.docker.com/compose/install/) on your machine.
 
     >[!NOTE]
     >
@@ -209,8 +209,8 @@ AEM Forms as a Cloud Services provides a docker-based SDK environment for easier
 
 1. Ensure that your local AEM Author instance is up and running. Run the following command to start the SDK:
 
-    * (on Microsoft® Windows) `sdk.bat start`
-    * (on Linux® or Apple macOS) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
+    * (on Microsoft&reg; Windows) `sdk.bat start`
+    * (on Linux&reg; or Apple macOS) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
 
     >[!NOTE]
     >
@@ -226,7 +226,7 @@ Use this project to create Adaptive Forms, deploy configuration updates, overlay
 
 |Themes | Templates | Form Data Models |
 ---------|----------|---------
-| Canvas 3.0 | Basic | Microsoft® Dynamics 365 |
+| Canvas 3.0 | Basic | Microsoft&reg; Dynamics 365 |
 | Tranquil   | Blank | Salesforce |
 | Urbane |   |  |
 | Ultramarine |  |  |
@@ -234,7 +234,7 @@ Use this project to create Adaptive Forms, deploy configuration updates, overlay
 
 >[!NOTE]
 >
-> Setup AEM Archetype version 30 or later based project to get and use Microsoft® Dynamics 365 and Salesforce Form Data Models with AEM Forms as a Cloud Service.
+> Setup AEM Archetype version 30 or later based project to get and use Microsoft&reg; Dynamics 365 and Salesforce Form Data Models with AEM Forms as a Cloud Service.
 > Setup AEM Archetype version 32 or later based project to get and use Tranquil, Urbane, and Ultramarine themes with AEM Forms as a Cloud Service.
 
 To set up the project:
@@ -246,21 +246,21 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 **Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
-1. **Create an [!DNL Experience Manager Forms] as a [Cloud Service] project:** Create an [!DNL Experience Manager Forms] as a [Cloud Service] project based on [AEM Archetype 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) or later. The archetype  help developers easily start developing for [!DNL AEM Forms] as a Cloud Service. It also includes some sample themes and templates to help you started quickly.
+1. **Create an [!DNL Experience Manager Forms] as a [Cloud Service] project:** Create an [!DNL Experience Manager Forms] as a [Cloud Service] project based on latest [AEM Archetype](https://github.com/adobe/aem-project-archetype) or later. The archetype  help developers easily start developing for [!DNL AEM Forms] as a Cloud Service. It also includes some sample themes and templates to help you started quickly.
 
     Open the command prompt and run the below command to create an [!DNL Experience Manager Forms] as a Cloud Service project.
 
     ```shell
 
-    mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y"
-
+    mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion="41" -D appTitle=mysite -D appId=mysite -D groupId=com.mysite -D includeFormsenrollment="y" -D aemVersion="cloud"
+    
     ```
 
-    Change the `appTitle`, `appId`, and `groupId` in the above command to reflect your environment.
+    Change the `appTitle`, `appId`, and `groupId` in the above command to reflect your environment. Also, set value for includeFormsenrollment, includeFormscommunications, and includeFormsheadless to `y` or `n` depending on your license and requirements. The includeFormsheadless is mandatory to create Adaptive Forms based on Core Components. 
 
-    * Use the `includeFormsenrollment=y` option to include Forms specific configurations, themes, templates, Core Components, and dependencies required to create Adaptive Forms. If you use Forms Portal, set the `includeExamples=y` option. It adds Forms Portal core components to the project.
+    * Use the `includeFormsenrollment=y` option to include Forms specific configurations, themes, templates, Core Components, and dependencies required to create Adaptive Forms. If you use Forms Portal, set the `includeExamples=y` option. It also adds Forms Portal core components to the project.
 
-    * Use the `includeFormscommunications=y` option includes Forms Core Components and dependencies required to include Customer Communications functionality.
+    * Use the `includeFormscommunications=y` option to include Forms Core Components and dependencies required to include Customer Communications functionality.
 
 1. Deploy the project to your local development environment. You can use the following command to deploy to your local development environment
 
@@ -324,6 +324,13 @@ Perform the following steps to configure Dispatcher cache for Experience Manager
 * When you use URL Format `http://host:port/content/forms/af/<adaptivefName>.html`, and Use Browser Locale in configuration manager is enabled, a localized version of the Adaptive Form is served, if available. The language of the localized Adaptive Form is based on the locale configured for your browser (browser locale). It can lead to [caching only first instance of an Adaptive Form]. To prevent the issue from happening on your instance, see [only first instance of an Adaptive Form is cached](troubleshooting-caching-performance.md) in troubleshooting section.
 
 Your local development environment is ready.
+
+## Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment
+
+Enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service, allows you to start creating, publishing, and delivering Core Components based Adaptive Forms and Headless Forms using your AEM Forms Cloud Service instances to multiple channels. You require Adaptive Forms Core Components enabled environment to use Headless Adaptive Forms.
+
+For instructions, see [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
+
 
 ## Upgrade your local development environment {#upgrade-your-local-development-environment}
 
