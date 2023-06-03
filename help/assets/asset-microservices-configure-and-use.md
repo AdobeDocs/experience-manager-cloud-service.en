@@ -105,10 +105,10 @@ It can transform image, video, document, and other file formats into different r
 
 Developers can use the [!DNL Asset Compute Service] to [create custom applications](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) for the supported use cases. [!DNL Experience Manager] can call these custom applications from the user interface by using custom profiles that administrators configure. [!DNL Asset Compute Service] supports the following use cases of invoking external services:
 
-* Use [!DNL Adobe Photoshop]'s [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) and save the result as rendition.
+* Use [!DNL Adobe Photoshop]'s [ImageCutout API](https://developer.adobe.com/photoshop/photoshop-api-docs/) and save the result as rendition.
 * Call third-party systems to update data, for example, a PIM system.
 * Use [!DNL Photoshop] API to generate variety of renditions based on Photoshop template.
-* Use [Adobe Lightroom API](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) to optimize the ingested assets and save those as renditions.
+* Use [Adobe Lightroom API](https://developer.adobe.com/photoshop/photoshop-api-docs/) to optimize the ingested assets and save those as renditions.
 
 >[!NOTE]
 >
@@ -123,17 +123,17 @@ To create a custom profile, following these steps:
 1. Provide the following information.
 
    * File name of each rendition and a supported file extension.
-   * [End-point URL of a Firefly custom app](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). The app must be from the same organization as the Experience Manager account is.
+   * [End-point URL of a App Builder custom app](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). The app must be from the same organization as the Experience Manager account is.
    * Add Service Parameters to [pass extra information or parameters to the custom application](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend).
    * Included and excluded MIME types to limit the processing to a few specific file formats.
 
    Click **[!UICONTROL Save]**.
 
-The custom applications are headless [Project Firefly](https://github.com/AdobeDocs/project-firefly) apps. Custom application gets all the provided files if they are setup with a processing profile. The application must filter the files.
+The custom applications are headless [Project App Builder](https://developer.adobe.com/app-builder/docs/overview/) apps. Your custom application gets all the provided files if they are setup with a processing profile. The application must filter the files.
 
 >[!CAUTION]
 >
->If the Firefly app and [!DNL Experience Manager] account are not from the same organization, the integration does not work.
+>If the App Builder app and [!DNL Experience Manager] account are not from the same organization, the integration does not work.
 
 ### An example of a custom profile {#custom-profile-example}
 
@@ -259,6 +259,21 @@ Follow the steps outlined in [apply a workflow model to a folder](#apply-workflo
 * Consider your needs for all types of renditions when designing workflows. If you do not foresee the need of a rendition in the future, remove its creation step from the workflow. Renditions cannot be deleted in bulk afterwards. Undesired renditions may take up a lot of storage space after prolonged use of [!DNL Experience Manager]. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can either customize [!DNL Experience Manager] to delete specific renditions or delete the assets and upload those again.
 * Currently, the support is limited to generating renditions. Generating new asset is not supported.
 * Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading very large assets, sometimes metadata extraction operation fails.
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

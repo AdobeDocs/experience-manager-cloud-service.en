@@ -253,11 +253,11 @@ For asset filenames, the JCR name and path is sanitized using the API: `JcrUtil.
 
 **Handling folder name in bulk import**
 
-For folder filenames, the JCR name and path is sanitized using the API: `JcrUtil.createValidName`.
+For folder filenames, the JCR name and path is sanitized using the API: `DamUtil.getSanitizedFolderName`.
 
 * Upper case characters are converted to lower case
 * Unicode characters are not changed
-* Replace the special characters with dash ('-'), for example, `new asset.png` is updated to `new-asset.png`:
+* Replace the special characters with dash ('-'), for example, `new folder` is updated to `new-folder`:
 
   ```
   
@@ -386,6 +386,21 @@ Technical details of the upload APIs and protocol, and links to open-source SDK 
 
 <!-- TBD: Link to file name handling in DA docs when it is documented. 
 -->
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

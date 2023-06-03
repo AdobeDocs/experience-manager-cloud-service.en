@@ -3,9 +3,9 @@ title: Release Notes for 2022.5.0 release of [!DNL Adobe Experience Manager] as 
 description: Release Notes for 2022.5.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
 ---
-# Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# 2022.5.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the general Release Notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
+The following section outlines the feature release Notes for the 2022.5.0 version of [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ If you continue to use older versions of TLS as 1.0, 1.1, you could potentially 
 
 ## Cloud Manager {#cloud-manager}
 
-You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+You can find a complete list of Cloud Manager monthly releases [here.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Migration Tools {#migration-tools}
 

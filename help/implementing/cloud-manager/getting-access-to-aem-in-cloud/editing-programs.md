@@ -12,9 +12,11 @@ Users with requisite permissions can edit [production programs created in your o
 * Add a second, unused solution entitlement to either an existing program or as a new Program.
 * Delete sandbox programs.
 
->[!NOTE]
->
->You must be a member of the **Business Owner** role to edit programs or delete sandbox programs.
+## Permissions {#permissions}
+
+You must be a member of the **Business Owner** role to edit programs or delete sandbox programs.
+
+## Editing a Program {#editing}
 
 Follow these steps to edit a program.
 
@@ -45,6 +47,7 @@ Follow these steps to edit a program.
    ![Edit go-live settings](assets/edit-program-go-live.png)
 
    * This date is for informational use only and triggers the Go Live widget on the program overview page to provide in-product links to AEM as a Cloud Service best practice documentation in a timely manner to align with your journey culminating in a successful and smooth Go Live experience.
+   * This tab is not available for sandbox programs.
 
 1. Click on **Update** to save your changes to the program.
 

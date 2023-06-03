@@ -390,23 +390,23 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 The mod_rewrite log levels are defined by the variable REWRITE_LOG_LEVEL in the file `conf.d/variables/global.var`.
 
-It can be set to Error, Warn, Info, Debug and Trace1 - Trace8, with a default value of Warn. To debug your RewriteRules, it is recommended to raise the log level to Trace2.
+It can be set to error, warn, info, debug and trace1 - trace8, with a default value of warn. To debug your RewriteRules, it is recommended to raise the log level to trace2.
 
 See the [mod_rewrite module documentation](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) for more information.
 
 To set the log level per environment, use the appropriate conditional branch in the global.var file, as described below:
 
 ```
-Define REWRITE_LOG_LEVEL Debug
+Define REWRITE_LOG_LEVEL debug
   
 <IfDefine ENVIRONMENT_STAGE>
   ...
-  Define REWRITE_LOG_LEVEL Warn
+  Define REWRITE_LOG_LEVEL warn
   ...
 </IfDefine>
 <IfDefine ENVIRONMENT_PROD>
   ...
-  Define REWRITE_LOG_LEVEL Error
+  Define REWRITE_LOG_LEVEL error
   ...
 </IfDefine>
 ```
@@ -468,26 +468,30 @@ Define REWRITE_LOG_LEVEL Debug
 
 The dispatcher log levels is defined by the variable DISP_LOG_LEVEL in the file `conf.d/variables/global.var`.
 
-It can be set to Error, Warn, Info, Debug and Trace1, with a default value of Warn.
+It can be set to error, warn, info, debug and trace1, with a default value of warn.
 
 While Dispatcher logging supports several other levels of logging granularity, the AEM as a Cloud Service recommends using the levels described below.
 
 To set the log level per environment, use the appropriate conditional branch in the `global.var` file, as described below:
 
 ```
-Define DISP_LOG_LEVEL Debug
+Define DISP_LOG_LEVEL debug
   
 <IfDefine ENVIRONMENT_STAGE>
   ...
-  Define DISP_LOG_LEVEL Warn
+  Define DISP_LOG_LEVEL warn
   ...
 </IfDefine>
 <IfDefine ENVIRONMENT_PROD>
   ...
-  Define DISP_LOG_LEVEL Error
+  Define DISP_LOG_LEVEL error
   ...
 </IfDefine>
 ```
+
+>[!NOTE]
+>
+>For AEM as a Cloud Service environments, debug is the maximal verbosity level. The trace log level is not supported so you should avoid setting it when working in cloud environments.
 
 ## How to Access Logs {#how-to-access-logs}
 

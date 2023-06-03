@@ -1,20 +1,25 @@
 ---
-title: Create and manage digital assets in multiple languages
-description: Learn how to automate workflows for translating assets, including binaries, metadata, and tags into multiple languages.
+title: How to translate assets in AEM?
+description: Learn how to automate workflows to translate assets in AEM, including binaries, metadata, and tags into multiple languages.
 contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
 ---
-# Multilingual assets {#multilingual-assets}
+# Translate assets in AEM {#multilingual-assets}
 
-Multilingual assets means assets with binaries, metadata, and tags in multiple languages. Generally, binaries, metadata, and tags for assets exist in one language, which are then translated to other languages for use in multilingual projects. Adobe Experience Manager Assets lets you automate translation workflows on assets (including binaries, metadata, and tags) to generate assets in other languages for use in multilingual projects.
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
 
-To automate translation workflows, you integrate translation service providers with Experience Manager and create projects for translating assets into multiple languages. Experience Manager supports human and machine translation workflows.
+Multilingual assets means assets with binaries, metadata, and tags in multiple languages. Generally, binaries, metadata, and tags for assets exist in one language, which are then translated to other languages for use in multilingual projects. Adobe Experience Manager Assets lets you automate workflows to translate assets (including binaries, metadata, and tags) to generate assets in other languages for use in multilingual projects.
 
-Human translation: The translated assets are returned and imported into Experience Manager. When your translation provider is integrated with Experience Manager, assets are automatically sent between Experience Manager and the translation provider.
+To automate AEM asset translation, you integrate translation service providers with Experience Manager and create projects for translating assets into multiple languages. Experience Manager supports human and machine translation workflows.
 
-Machine translation: The machine translation service immediately translates the metadata and tags for assets.
+Human asset translation in AEM: The translated assets are returned and imported into Experience Manager. When your translation provider is integrated with Experience Manager, assets are automatically sent between Experience Manager and the translation provider.
+
+Machine asset translation in AEM: The machine translation service immediately translates the metadata and tags for assets.
 
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
@@ -42,7 +47,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 -->
 
-## Prepare assets for translation {#prepare-assets-for-translation}
+## Prepare to translate assets {#prepare-to-translate-assets}
 
 Multilingual assets means assets with binaries, metadata, and tags in multiple languages. Generally, binaries, metadata, and tags for assets exist in one language, which are then translated to other languages for use in multilingual projects.
 
@@ -64,7 +69,7 @@ The language copy for which you originally add assets is the language primary. T
         |- zh
 ```
 
-Perform the following steps to prepare your assets for translation:
+Perform the following steps for preparing to translate assets:
 
 1. Create the language root of your language primary. For example, the language root of the English language copy in the sample folder hierarchy is `/content/dam/en`. Ensure that the language root is correctly configured according to the information in [Create a language root](#create-a-language-root).
 
@@ -269,3 +274,17 @@ If you want to apply a custom connector for the translation services you want to
 1. Run any translation workflow described in creating translation projects after you apply the custom connector. Verify the details of the connector in the **[!UICONTROL Translation Summary]** tile of the translation project in the **[!UICONTROL Projects]** console.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
+
+**See also**
+
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)

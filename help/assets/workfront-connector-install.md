@@ -7,6 +7,11 @@ exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
 ---
 # Install [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 A user with administrator access in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] installs the enhanced connector. Before you install, review the platform support and other [prerequisites for the connector](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
@@ -41,7 +46,7 @@ Before you install the connector, follow these pre-installation steps:
 
 To install the add-on in [!DNL Experience Manager] as a [!DNL Cloud Service], follow these steps:
 
-1. Download the enhanced connector from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
+1. Download the enhanced connector from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 
 1. [Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) and clone your AEM as a Cloud Service repository from Cloud Manager.
 

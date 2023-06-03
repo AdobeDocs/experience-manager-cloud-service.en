@@ -82,8 +82,6 @@ In either case, the query showing in the editor panel is the query that will be 
 
 ## Query variables {#query-variables}
 
-<!-- more details needed here? -->
-
 The GraphiQL IDE also allows you to manage your [Query Variables](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 For example:
@@ -92,7 +90,17 @@ For example:
 
 ## Managing cache for your persisted queries {#managing-cache}
 
-[Persisted queries](/help/headless/graphql-api/persisted-queries.md) are recommended as they can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application. By default AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL). 
+[Persisted queries](/help/headless/graphql-api/persisted-queries.md) are recommended as they can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application. By default AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL).
+
+>[!NOTE]
+>
+>For further details see [Caching your persisted queries](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+
+>[!NOTE]
+>
+>Custom rewrite rules on the Dispatcher might override defaults from AEM publish. 
+>
+>In the case that you are sending TTL-based cache-control headers from the dispatcher, based on a location match pattern, then, if necessary, you might want to exclude `/graphql/execute.json/*` from the matches.
 
 Using GraphQL you can configure the HTTP Cache Headers  to control these parameters for your individual persisted query.
 
