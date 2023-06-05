@@ -84,7 +84,8 @@ import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-a
 Destination Selector receives a callback from `onItemSelect`, `onTreeToggleItem`, or `onTreeSelectionChange` with the selected directory that contains the object (directory, image, and so on).
 
 **Schema Syntax**
-````
+
+```
 interface SelectedDestination {
   id: string;
   children: SelectedDestination[];
@@ -111,7 +112,8 @@ interface SelectedDestination {
 
   { orderBy: string; count: number; };
 }
-````
+```
+
 The following table describes some of the important properties of the selected destination.
 
 | Property | Type | Explanation |
@@ -129,7 +131,7 @@ The following table describes some of the important properties of the selected d
 | *repo:modifiedBy* | string | The user or system that last modified the asset. |
 | *repo:modifyDate* | string| The date and time when the asset was last modified. |
 | *dc:format*| string | The format of the asset.|
-| *_page* | orderBy: string; count: number; | Includes page number of the document.
+| *_page* | orderBy: string; count: number; | Includes page number of the document.|
 
 For a complete list of properties and detailed example, visit [Destination Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
@@ -169,6 +171,7 @@ By following these steps, you can use Destination Selector with a non-SUSI flow 
 
 </html>
 ```
+
 For detailed example, visit [Destination Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 ## Use Destination Selector properties {#destination-selector-properties}
