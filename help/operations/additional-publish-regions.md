@@ -9,7 +9,6 @@ Additional publish regions can be licensed and enabled on programs set up with A
 
 * Reduced Latency - Requests that route from the CDN to the AEM publish instances are directed to the nearest publish region, which is advantageous for websites and applications visited by users in multiple geographies.
 * Higher Availability - If a region is not available, the CDN directs traffic to the other available region(s).
-  * Note that if a request needs to retrieve files from the data store, but the primary region's data store is not reachable, those files will not be accessible.
 
 Organizations may license up to three additional publish regions.
 
@@ -33,9 +32,9 @@ Additional publish regions are applied to stage and production environments, but
 
 ## Advanced Networking Considerations {#advanced-networking-considerations}
 
-When an additional publish region is enabled on a program with advanced networking already configured, the traffic in the additional publish region that matches the advanced networking rules will by default route through the primary region. In order to take advantage of increased availability, it is recommended to enable advanced networking for the secondary region.
+When an additional publish region is enabled on a program with advanced networking already configured, the traffic in the additional publish region that matches the advanced networking rules will by default route through the primary region. In order to take advantage of increased availability, it is recommended to enable advanced networking on the additional regions.
 
-Please refer to the [Advanced Networking Considerations for Additional Publish Regions section](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) in the Advanced Networking documentation for details, including how to add advanced networking configurations for additional regions without incurring loss of connectivity.
+Please refer to the [Advanced Networking Configuration for Additional Publish Regions](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) section in the Advanced Networking documentation for details, including how to add advanced networking configurations to additional regions without incurring loss of connectivity.
 
 ## Limitations {#limitations}
 
