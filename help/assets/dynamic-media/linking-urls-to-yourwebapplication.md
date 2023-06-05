@@ -1,6 +1,7 @@
 ---
 title: Link URLs to your web application
 description: Learn how to link URLs to your web application in Dynamic Media.
+contentOwner: Rick Brough
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
 ---
@@ -127,7 +128,7 @@ Dynamic Media supports the delivery of static assets, which are other assets bey
    For example, if the registration ID was `87654321|MyCompany`, the customer name would be `MyCompany`.
 
 1. Near the upper-left corner of the page, select **[!UICONTROL Cloud Services]**, then select the Experience Manager icon and navigate to **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
-1. Copy down the entire video rendition path from the JCR (Java™ Content Repository).
+1. Copy down the entire video rendition path from the JCR (Java&trade; Content Repository).
 
    For example, the video's rendition path could appear similar to the following:
 
@@ -145,7 +146,7 @@ Dynamic Media supports the delivery of static assets, which are other assets bey
 
    This path is the complete video URL for a published video rendition.
 
-## Obtain a video URL for adaptive streaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Obtain a video URL for adaptive bitrate streaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. In Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. On the **[!UICONTROL Cloud Services]** page, scroll down to the **[!UICONTROL Dynamic Media Cloud Services]** heading, then select **[!UICONTROL Show Configurations]**.

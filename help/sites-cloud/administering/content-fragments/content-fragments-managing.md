@@ -239,7 +239,7 @@ You can view, and edit, the properties of a fragment using the [Metadata](/help/
 >
 >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
 
-Content Fragments must be published for use in the publish environment. This is done using the standard Assets functionality
+Content Fragments must be published for use in the publish environment. 
 
 * From the **Publish** option in the toolbar of the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
   * **Now** - after confirmation, the fragment will be published immediately

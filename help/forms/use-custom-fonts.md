@@ -25,6 +25,7 @@ To add custom fonts to your Cloud Service environment:
 
 1. Open pom.xml file of the fonts module of the development project.
 1. Add jar plugin to the pom file:
+
     ``` xml
 
     <plugin>
@@ -42,7 +43,6 @@ To add custom fonts to your Cloud Service environment:
     </plugin>
 
     ```
-
 
 1. Add the `<Font-Archive-Version>` manifest entry the .pom file and set value of version to 1:
 

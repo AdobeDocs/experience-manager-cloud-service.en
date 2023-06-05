@@ -1,144 +1,110 @@
 ---
-title: What has changed between AEM 6.5 Forms and AEM Cloud Services
-description: Are you an Experience Manager Forms user and looking to upgrade to Adobe Experience Manager Forms as a Cloud Service? Learn the most prominent changes before upgrading or migrating to Cloud Service.  
-contentOwner: khsingh
+title: Differences between AEM 6.5 Forms and AEM Cloud Services
+description: Are you an Experience Manager Forms user and looking to upgrade to Adobe Experience Manager Forms as a Cloud Service? Compare AEM 6.5 Forms and AEM Cloud Services and learn the most prominent changes before upgrading or migrating to Cloud Service.  
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
+contentOwner: khsingh
 ---
-# Notable changes for existing Adobe Experience Manager Forms users  {#notable-changes-for-existing-AEM-Forms-users}
+# Notable changes for existing Adobe Experience Manager 6.5 Forms users  {#notable-changes-for-existing-AEM-Forms-users}
 
-Adobe Experience Manager Forms as a Cloud Service brings some notable changes to existing features in comparison to Adobe Experience Manager FormsOn-Premise and [!DNL Adobe-Managed Service] environments. The key differences are listed below:
+Adobe Experience Manager Forms as a Cloud Service brings some notable changes to existing features in comparison to Adobe Experience Manager Forms On-Premise and [!DNL Adobe-Managed Service] environments. The key differences are listed below:
 
-* The service provides a local and a cloud-native development environment. You can use a [local development environment](setup-local-development-environment.md) to develop and test your custom code, components, templates, themes, Adaptive Forms, other assets before deploying these assets to a cloud environment. It helps speed up the development process.
-* [!DNL AEM] as Cloud Service is shipped with a built-in CDN. Its main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications.
-* A cloud-native environment does not have web console (configuration manager). You can use [[!DNL AEM Forms] as a Cloud Service SDK to generate configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) and CI/CD pipeline to [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
+## Cloud native capabilities
 
-* URL convention of localized Adaptive Forms now supports specifying a locale in the URL. New URL convention enables caching localized forms on a Dispatcher or CDN. On Cloud Service environment, use the URL format `http://host:port/content/forms/af/<afName>.<locale>.html` to request a localized version of an Adaptive Form instead of `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe recommends using Dispatcher or CDN caching. It helps improve rendering speed of prefilled forms.
-* Prefill service merges data with an Adaptive Form on a client. It helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager FormsServer.
-* Email support only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) to enable ports for sending emails and to enable SMTP protocol for your environment.
-* Adobe Experience Manager Forms as a Cloud Service brings many new features and possibilities into your AEM Projects. However, there are some changes required to Adobe Experience Manager Maven projects to be compatible with AEM Cloud Service. At a high-level, AEM requires a separation of content and code into discrete subpackages to respect the split between mutable and immutable content. Use the [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) tool to restructure existing project packages by separating content and code into discrete packages to be compatible with the project structure defined for Adobe Experience Manager as a Cloud Service.
+*   The service has a Cloud-native architecture that allows auto-scaling based on load, Zero downtime for upgrades, frequent and after roll-out of new features and updates, and topologies optimized for maximum resilience and efficiency. 
 
-<!--  If your Cloud Configuration contains a secret (password), create a separate Cloud Configuration for every Author instance (Developer, Stage, and Production). If a Cloud Configuration is also required on Publish instances, publish/replicate a separate Cloud Configuration for every Publish instance (Developer, Stage, and Production). 
+*   The service includes no submit actions that stores data to Adobe Experience Manager Cloud Service instances, making it super secure. Data captured via forms is sent directly to configured data stores.
 
-* When you create a Cloud Configuration that contains a secret, each Cloud Service instance (Developer, Stage, and Production) uses its own encryption key to encrypt the password before storing it. So, manually create such Cloud Configuration for every Cloud Service instance (Developer, Stage, and Production). Also, do not store secrets used in a Cloud Configuration to your Cloud Manager Git repository.
-
-* Use [!DNL Cloud Manager] [APIs to convert and provide your passwords as secrets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#setting-values-via-api). Do not store plain text password or secrets on your environments. -->
-
-* Use of environment-specific configurations for secret OSGi configuration values, such as passwords, private API keys, or any other values. These cannot be store into in Git for security reasons. [Use secret environment-specific configurations to store the value for secrets on all Adobe Experience Manager as a Cloud Service environments, including Stage and Production](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#when-to-use-secret-environment-specific-configuration-values).
-
-For a comprehensive list of changes in Adobe Experience Manager as a Cloud Service, See [What is New and What is Different](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html).
-
-<!-- ## Feature comparison {#comparison}
-
-[!DNL AEM Forms] as a Cloud Service and Experience Manager 6.5 Forms share a common set of features: Adaptive Forms, data integration, integration with [!DNL Adobe Sign], themes, templates, and forms management interface are identical. You can easily port your existing Adaptive Forms from an Experience Manager 6.5 Forms or an earlier version to [!DNL AEM Forms] as a Cloud Service.
-
-### Features of AEM 6.5 Forms and [!DNL AEM Forms] as a Cloud Service {#feature-comparison}
-
-The following table lists the major features of Experience Manager 6.5 Forms and provides information about whether the feature is partially or fully supported in [!DNL AEM Forms] as a Cloud Service, with a link to more information about the feature. The table also lists extra features available in [!DNL AEM Forms] as a Cloud Service.
+*   A free CDN (content delivery network) is also included to help you deliver and render forms at a faster pace. 
 
 
-| Feature/Capability | AEM 6.5 Forms | [!DNL AEM Forms] as a Cloud Service |
-| - | - | - |
-| Adaptive Forms | &#x2611; | &#x2611; |
-| Data Integration | &#x2611; | &#x2611;(With some changes) |
-| Automated Forms Conversion Service | &#x2611; | &#x2611; |
-| Integration with Adobe Sign | &#x2611; | &#x2611;(With some changes) |
-| Themes and Templates | &#x2611; | &#x2611; ([With some changes](themes.md#difference-in-themes))|
-| Rule editor | &#x2611; | &#x2611; (With some changes) |
-| Forms Portal | &#x2611; | --- |
-| Integration with Adobe Analytics | &#x2611; | &#x2612; |
-| Document Security | &#x2611; | &#x2612; | -->
+## Updates to development flow 
 
-<!-- ## New features {#comparison} -->
+*   The service provides an SDK to develop and test custom code in a local environment (local machine) before deploying the code to a Cloud Service. Developers develop and test custom components, themes, workflows applications, configurations, templates, and more using the SDK on their local machines. After testing the custom code in their local development environment, they deploy the custom code to a [Forms CS environment development or stage environment](/help/implementing/cloud-manager/deploy-code.md) for further testing before promoting it to a production environment. 
+
+*   Developers maintain code for Cloud Service and local development environment in a common [git repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html). A git repository, based on AEM Archetype, is auto created on creation of an AEM as a Cloud Service program. 
+
+    ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+
+*   Development flow for Forms as a Cloud Service aligns with AEM Archetype for AEM Cloud Service. However, there are some changes required to Adobe Experience Manager Maven projects to be compatible with AEM Cloud Service. At a high-level, AEM requires a separation of content and code into discrete subpackages to respect the split between mutable and immutable content. Use the [Repository Modernizer tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) to restructure existing project packages by separating content and code into discrete packages to be compatible with the project structure defined for Adobe Experience Manager as a Cloud Service.
+
+*   Before using your customer bundles with Forms as a Cloud Service, recompile your custom code with the latest version of adobe-aemfd-docmanager.
+
+*   Use [AEM Forms as a Cloud Service migration utility](/help/forms/migrate-to-forms-as-a-cloud-service.md) to prepare and migrate your Adaptive Forms, themes, templates, and cloud configurations from <!-- AEM 6.3 Forms--> AEM 6.4 Forms on OSGi and AEM 6.5 Forms on OSGi to [!DNL AEM] as a Cloud Service. Use [Git repository of your program](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to import existing Adaptive Form templates.
+
+*   Email supports only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) to enable ports for sending emails and to enable SMTP protocol for your environment.
+
+## Localization
+
+*   URL convention of localized Adaptive Forms now supports specifying a locale in the URL. New URL convention enables caching localized forms on a Dispatcher or CDN. On a Cloud Service environment, use the URL format `http://host:port/content/forms/af/<afName>.<locale>.html` to request a localized version of an Adaptive Form instead of `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. 
+
+*   Adobe recommends using Dispatcher or CDN caching. It helps improve rendering speed of prefilled forms. 
 
 
+## Adaptive Forms
 
-## Key enhancements {#whats-new}
+*   **Rule editor:** AEM Forms as a Cloud Service provides a hardened [Rule editor](rule-editor.md#visual-rule-editor). The code editor is not available on Forms as a Cloud Service. 
 
-<!-- [!DNL AEM Forms] as a Cloud Service offers benefits like auto-scaling, cost-effectiveness, zero downtime for upgrades, and cloud-native development environment and more. The list does not stop here. The following features are are start and are available only for [!DNL AEM Forms] as a Cloud Service: -->
+    The [migration utility](/help/forms/migrate-to-forms-as-a-cloud-service.md) helps you migrate your forms that have custom rules (created in code editor). The utility converts such rules into custom functions supported on Forms as a Cloud Service. You can use the reusable functions with Rule editor to continue obtaining results obtained with rule scripts. The `onSubmitError` or `onSubmitSuccess` functions are now available as actions in the Rule Editor.  
 
-The following features and enhancements are available only on [!DNL AEM Forms] as a Cloud Service: 
+*   **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server. 
 
-**Enhanced Visual Rule editor**
-The service provides a hardened [Visual Rule editor](rule-editor.md#visual-rule-editor). The service has added following features to Visual rule editor to help you write capable rules:
+*   **Submit actions:** The **Email** submit action provide options to send attachments and attach Document of Record (DoR) with email. You can use it inplace of the **Email as PDF** action available in AEM 6.5 Forms.
 
-* [New submission events](working-with-adobe-sign.md#available-operator-types-and-events-in-rule-editor): `Navigation`, `Step Completion`, `Successful Submission`, and `Error`
+*   **Automated Forms Conversion Service**: The service does not provide meta-model for Automated Forms Conversion Service. You can [download it from Automated Forms Conversion Service documentation](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model).
 
-* [New data type `scope`](rule-editor.md#custom-functions). You can use the `scope` data type in a custom function to pass the entire scope of a form.
+*   **XSD-Based Adaptive Forms:** You can use XDP-template to design a template for Document for Record. The service does not support XFA based Adaptive Forms 
 
-* Ability to use [@this to specify a JSDoc in a custom function](rule-editor.md#custom-functions). It allows invoking a custom function by using @this in an active component.
+*   **Components**:  You can use [Adaptive Forms Core-Components](/help/forms/creating-adaptive-form-core-components.md) to design your forms. These components are based on WCM Core Components, follow BEM standards, and can be easily customized. The service does not support in-form signing experience and does not include the Summary and Verify components for Adaptive Form
 
-* Ability to add conditions for property-based rules.
+## Forms Portal
 
-**Core Components**
-The [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en) are a set of standardized Web Content Management (WCM) components for AEM to speed up development time and reduce maintenance cost. [!DNL AEM Forms] as a Cloud Service supports **[!UICONTROL AEM Forms Container]** Core Component. You can use the component to embed an Adaptive Form to an AEM Sites page.  
+*   You can use the Search & Lister, Drafts and Submission, and Link components of Forms Portal to list forms for logged-in users. Support for anonymous use of Forms Portal is not available out of the box (OOTB). You can customize the Forms Portal to enable displaying forms for non-logged in users.
 
-**AEM Archetype for Forms as a Cloud Service**
-[AEM Archetype](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) helps you start developing for [!DNL AEM Forms] as a Cloud Service. You can use Archetype version 27 or later to create a project template compatible with [!DNL AEM Forms] as a Cloud Service environment. The Archetype also includes some sample themes and templates to help you started quickly.
+*   The service does not retain metadata for drafts and submitted Adaptive Forms.
 
-**Secure and improved information flow between forms and Sign**
-[Adaptive Forms and Adobe Sign integration](working-with-adobe-sign.md) on Cloud Service offer simultaneous submission of data and signing activity. It makes form submission independent of signing status paving a way for faster submissions. On top of it, the service does not save any data on Cloud Service instances making the signing process super secure.
+## Document Services: 
 
-**Best Practices Analyzer and migration tooling**
-Best Practices Analyzer provides an assessment of your current AEM implementation. Run the tool before [migrating to Forms as a Cloud Service](migrate-to-forms-as-a-cloud-service.md). It  assesses readiness to move from an existing Adobe Experience Manager (AEM) deployment to AEM as a Cloud Service.
+Forms as a Cloud Service provide Document Generation and Document Manipulation RESTful APIs. You can use these APIs to generate or manipulate docs on demand or in batches, as required:
 
-The service also provides an [improved migration experience](migrate-to-forms-as-a-cloud-service.md) to help you easily migrate from [!DNL AEM 6.4 Forms] and [!DNL AEM 6.5 Forms] to [!DNL AEM Forms] as a Cloud Service.
+*   **Document Services: Document Generation APIs (Output Service)**: In a single API call or batch, you can use only one template with multiple DATA XML files. Using multiple templates with multiple data files in a single API call is not supported.
 
-**Faster form renditions and Faster server-side validations**
-The service uses CDN and Dispatcher caching to deliver faster renditions and server-side validations for Adaptive Forms.
+*   **Document Manipulation APIs (Assembler Service)**:  
 
-**Improved CAPTCHA**
-You can now [validate CAPTCHA](captcha-adaptive-forms.md) either on Adaptive Form submission or on a business logic. You can also add conditions to validate CAPTCHA on a user action and show or hide the CAPTCHA component in an Adaptive Form based on rules. 
+    *   The operations that rely on document services or applications are not available. For example, Microsoft Word to PDF, Microsoft Excel to PDF, and HTML to PDF, PostScript (PS) to PDF, XDP to PDF Forms are not supported. These operations rely on Microsoft Office, Adobe Acrobat, Adobe Distiller, Forms Document Service respectively.   
+    
+    *   Convert documents that are in a non-PDF format into a PDF format before using those with Communications Document Manipulation APIs. For example, if your documents are in Microsoft Office, HTML, PostScript (PS), XDP format, convert these documents to PDF format before using those with PDF documents. You can use the [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) service for such conversions. 
 
-The CAPTCHA component provides an out-of-the-box integration with Google reCAPTCHA. You can also configure more CAPTCHA services for the component, if necessary.
+*   You can use an AEM 6.5 Forms environment for Digital Signature, Encryption, Reader Extension, Send to printer, Convert PDF, and Barcoded Forms service.
 
-**Multiple master pages for Document of Record**
-You can now use a different master page for each page of a Document of Record and control placement of an Adaptive Form panel on a Document of Record with pagination options.
 
-**Add columns to headless tables**
-You can add and delete columns to tables without headers. Hidden headers are added to such tables to help you add and delete columns. These headers are visible during authoring but remain hidden in the published form. Tables without headers are mostly found in Adaptive Forms created using the Automated Forms Conversion Service.
+## Data integration (Form Data Model)
 
-**Improved Submit Actions**
-You can use the [Send Email](configuring-submit-actions.md#send-email#send-email) Submit Action to send a Document of Record (DoR) PDF as an attachment.
+*   The service also provides support for JDBC connector, Microsoft Dynamics, SalesForce, SOAP-based web services, and services that support OData.
 
-**Group email for workflow**
-You can choose to [send notification emails](aem-forms-workflow-step-reference.md#assign-task-step) from the Assign Task step to a single person or a group.
+*   You can also connect AEM user profile to retrieve and update user information.
 
-**Enhanced Invoke Form Data Model step**
-You can now specify path of folder for the Relative to Payload option of input service arguments in an Invoke Form Data Model step. It helps you map a file present in the specified folder to the service argument without specifying the exact filename.
+*   Forms data model supports only HTTP and HTTPS endpoints to submit data. The service does not support Mutual SSL for REST connector and x509 certificate-based authentication for SOAP data sources.
 
-**Improved readability of translation files**
-On Forms as a Cloud Service, reading order of the fields and panels of an Adaptive Form and message keys of corresponding translation files (.XLIFF files) has similar structure. It helps improving manual translation speeds. 
+*   Forms as a Cloud Service allows to use Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive, and services supporting general CRUD (Create, Read, Update, and Delete) operations as data stores, both Open API specification 2.0 and Open API 3.0 specification are supported.
 
-<!-- ## Feature comparison {#feature-comparison}
 
-[!DNL AEM Forms] as a Cloud Service and [!DNL AEM 6.5 Forms] share some features like Adaptive Forms, Data Integration, and Forms Portal. You can easily port your existing Adaptive Forms from an [!DNL AEM 6.5 Forms] or an earlier version to [!DNL AEM Forms] as a Cloud Service.
+## E-Sign
 
-### Features of [!DNL AEM 6.5 Forms] and [!DNL AEM Forms] as a Cloud Service {#aem-6.5-vs-aem-forms-as-a-cloud-service}
+*   The service provides an OOTB integration with Adobe Sign and supports DocuSign for e-signatures. 
 
-The following table lists the major features of [!DNL AEM 6.5 Forms] and provides information about the features coming soon to [!DNL AEM Forms] as a Cloud Service:
+*   The service also supports Adobe Sign roles. You can configure the roles in Adaptive Forms editor for business users to easily configure signing workflows.
 
-| Feature/Capability | AEM 6.5 Forms  | [!DNL AEM Forms] as a Cloud Service |
-|---|---|---|
-| Cloud-native architecture | &#x2612; | &#x2611;  |
-| Auto-scaling based on load | &#x2612; | &#x2611;  |
-| Zero downtime for upgrades | &#x2612; | &#x2611;  |
-| Feature roll-out frequency | Quarterly | Agile*  |
-| CDN (content delivery network) included | &#x2612; | &#x2611;  |
-| Topologies optimized for maximum resilience and efficiency | &#x2612; | &#x2611;  |
-| Cloud-native development environment | &#x2612; | &#x2611;  |
-| Self-Service via Cloud Manager | &#x2612; | &#x2611;  |
-| Automated upgrades with Continuous Integration and Continuous Delivery (CI/CD)| &#x2611; | &#x2611;  |
-| Adaptive Forms | &#x2611; | &#x2611; |
-| Data Integration | &#x2611; | &#x2611; |
-| Automated Forms Conversion Service | &#x2611; | &#x2611; |
-| Integration with [!DNL Adobe Sign] | &#x2611; | &#x2611; |
-| Integration with [!DNL AEM Sites] | &#x2611; | &#x2611; |
-| Enhanced Visual Rule editor | &#x2612; | &#x2611; |
-| Forms Portal | &#x2611; | Coming Soon |
-| Integration with [!DNL Adobe Analytics] | &#x2611; | Coming Soon |
-| Integration with [!DNL Adobe Target] | &#x2611; | Coming Soon |
-| Document Security | &#x2611; | &#x2612; |
 
-`*` New features every month and bug fix updates on daily basis.
+## HTML5 Forms
 
-For a comprehensive list of changes in AEM as a Cloud Service, See [What is New and What is Different](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/overview/what-is-new-and-different.html) and [Notable changes in [!DNL AEM Forms] as a Cloud Service](notable-changes.md) -->
+*   You can use an AEM 6.5 Forms environment to:
+
+    *   render your XDP-based forms as HTML5 Forms. The service does not support HTML5 Forms (Mobile Forms).
+
+    *   capture data offline and sync it the next time you return online with [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) app. 
+
+## Interactive Communications
+
+* You can use Communications APIs to produce personalized documents on-demand or in batches on Forms as a Cloud Service. You can use an AEM 6.5 Forms environment for Interactive Communications and Agent UI use-cases.
+
+

@@ -1,6 +1,7 @@
 ---
 title: Deliver Dynamic Media assets
 description: With Dynamic Media, you have several options to deliver your Dynamic Media assets - both video and images - to your website.
+contentOwner: Rick Brough
 ---
 
 # Deliver Dynamic Media assets{#delivering-dynamic-media-assets}

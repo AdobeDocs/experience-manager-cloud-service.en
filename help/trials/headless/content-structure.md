@@ -1,123 +1,98 @@
 ---
 title: Create the Content Structure for Your App
-description: Learn how to create the structure which serves as the foundation for all of your headless content using AEM's Content Fragment models.
+description: Learn how to use AEM's Content Fragment models to create your content structure, which serves as the foundation for your headless content.
 hidefromtoc: yes
 index: no
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 ---
+
 # Create the Content Structure for Your App {#content-structure}
-
-Content Fragments allow you to design, create, curate, and publish page-independent content. Using them you can  prepare content that is ready for use in multiple locations and over multiple channels, ideal for headless delivery. Content Fragment models are used to define the structure of this content and are the first thing you need to create in order to manage your headless content.
-
-To help you understand how this is done, this module of AEM Trials takes you through the process with a quick, interactive tour first creating the model and then adding its structure. This document serves as a supplement to the in-product tour, covering the same steps and linking to additional resources where appropriate.
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_overview_guide_br_test"
->title="Launch the model editor"
->abstract="Building a content fragment model begins with creating a model item in the model administration workflow, then adding structure elements to it using the content fragment model editor.<br><br>Click below to launch the feature in a new tab, and follow this learning document to create your first content fragment."
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_overview_guide_newline_test"
->title="Launch the model editor"
->abstract="Building a content fragment model begins with creating a model item in the model administration workflow, then adding structure elements to it using the content fragment model editor.\n\nClick below to launch the feature in a new tab, and follow this learning document to create your first content fragment."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Create the content structure for your app"
->abstract="As you follow our series of interactive guides you'll learn to create the structure (also known as the content fragment model) which serves as the foundation for all of your headless content."
+>abstract="As you follow this series of interactive guides you learn to create a structure (known as the Content Fragment model) which serves as the foundational structure for your headless content."
 
-## The Content Fragment Model Console {#content-fragment-model-console}
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
+>title="Launch the model console"
+>abstract="Let's explore how to create a reusable schema, called a Content Fragment model, for your content in Adobe Experience Manager as a Cloud Service. Watch the video to understand why this is an important step. <br><br>In this learning module we'll use a travel site as our example and walk through creating a model that represents a trip.<br><br>Launch this module in a new tab by clicking the button below and then follow this guide."
+>additional-url="https://video.tv.adobe.com/v/3413261" text="Content structure intro video"
 
-You start on the Content Fragment models console. The Content Fragment models console can be thought of as your library of models. You use the console to create new models and manage exiting models. Your console starts empty, so let's create a new model!
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
+>title="Congratulations! You learned how to create a Content Fragment model to represent the structure of your headless data and took the first step to delivering omni-channel content in a scaled and standard way."
+>abstract=""
 
-![The Content Fragment model console](assets/content-structure/content-fragment-model-console.png)
+## Create a Model {#create-model}
 
-If you wish to navigate to the Content Fragment model console yourself outside of the in-app guidance, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here, you choose the **Tools** tab and then **General** -&gt; **Content Fragment Models**.
+The Content Fragment model console opens in a new tab. Think of the Content Fragment model console as your library of models, where you create new models and manage existing models.
+
+For our example, we will create a model that represents the data structure of a trip that is featured on a travel website. We will refer to a trip using this model as an **Adventure**.
+
+1. Click the **Create** button at the top-right of the screen to begin creating a Content Fragment model.
+
+1. The Create Model wizard starts, which guides you through creating your model. Provide the mandatory information.
+
+   * **Model Title** - This is a brief label of the model and usually indicates the purpose of the model. We will call our new model `Adventure`.
+   * **Enable model** - This option is checked by default and must be checked to be able to create Content Fragments based on this model.
+
+1. Once the mandatory fields are populated, click **Create** at the top-left to create the model. 
+
+1. The **Success** dialog confirms that the model was created. Click **Open** in the dialog to open your new Content Fragment Model in the editor in a new tab. Then continue on to the next step to adding data fields to your model.
+
+![Steps two and three of creating a Content Fragment model](assets/do-not-localize/create-model.png)
+
+## Using the Model Editor {#configure-model}
+
+We now have a model called **Adventure**, but it has no details like duration, destination, activities, etc. Before you can use your model, you need to define the structure of its data. 
+
+The Content Fragment Model editor is where you configure the data types and properties that define the content of your model.
 
 >[!TIP]
 >
->If you would like to know more about navigation in AEM, see the [Additional Resources section](#additional-resources) of this document for more information on AEM basic handling.
- 
-## Create a Model {#create-model}
+>It’s important to follow the naming schemas in the following instructions since we will refer to these specific names in later modules.
 
-Once you are in the Content Fragment model console, you can create a new model to represent your own headless content.
+1. Drag a **Single line text** field from the **Data Types** panel at the right of the editor and drop it onto your Content Fragment model. 
 
-1. In the Content Fragment model console, click the **Create** button at the top-right of the screen to begin creating a Content Fragment model.
+1. Once a data type is placed, the **Data Types** column automatically changed to the **Properties** tab, where you can define the details of the data type you just placed. For this first field, we want to store the title of the trip or adventure. Enter the following properties.
 
-1. The Create Model wizard starts, which guides you through creating a Content Fragment model. 
+   * **Render As:** **Text Field** - When you create an adventure, this field will store the title of the adventure.
+   * **Field Label:** `Title` - This is the label that is displayed for this field when creating a new adventure.
 
-   ![Content Fragment model wizard](assets/content-structure/model-wizard.png)
+1. Once you define the properties of the field you can switch back to the **Data Types** tab in the right panel and add additional fields by dragging and dropping.
 
-   Provide the mandatory information.
+In this way, you can add as many fields as necessary to your model to support whatever kind of data structure you may need. The types of data fields vary, but the process of adding them to your model remains the same.
 
-   * **Model Title** - This is a brief description of the model and usually indicates its purpose.
-   * **Enable model** - This option is checked by default and must be checked to be able to create Content Fragments later based on this model.
+Continue on to the next section to add the fields necessary to complete and save the **Adventure** model
 
-   You can also choose to add a longer **Description** to the model as well as **Tags** to categorize it and differentiate it for your users later within the Content Fragment model console.
+![Steps one, two, and three of adding fields to the model](assets/do-not-localize/define-model-fields.png)
 
-   >[!TIP]
-   >
-   >If you are interested in how tags can organize your content, see the [Additional Resources section](#additional-resources) of this document for more information on tagging in AEM.
+## Add Fields to the Model {#additional-fields}
 
-1. Once the mandatory fields are populated, you click **Create** at the top-left to create the model. 
+You already have a field for the title of the adventure. Now you need to add fields to capture the description, price, and a representative image of the adventure.
 
-1. The **Success** dialog confirms that the model was created.
+>[!TIP]
+>
+>The **Adventure** model is based on the WKND sample site for AEM. You can [visit the site here](https://wknd.site/us/en/adventures/yosemite-backpacking.html) to see content that uses the **Adventure** model.
 
-   ![Success dialog for creating a new Content Fragment model](assets/content-structure/success.png)
+Follow the same steps as above to add these additional fields. The only difference are the properties you need to set.
 
-1. Before you can use the model, you also need to define the structure of its data. Click **Open** in the dialog to open it and continue defining the model.
+1. Add a field to store the description of the adventure by dragging and dropping a **Multi line text** field and enter the following properties:
 
-## Add Fields to the Model {#configure-model}
+   * **Render As:** **Text Area** - When you create an adventure, this field will store a brief description of the trip.
+   * **Field Label:** `Description` - This is the label that is displayed for this field when creating a new adventure.
 
-The Content Fragment model is essentially a schema for your Content Fragments. I.e. it defines what fields/data types that the model contains. 
+1. Add a field to store the price of the adventure by dragging and dropping a **Single line text** field and enter the following properties:
 
-![The Content Fragment model Editor](assets/content-structure/model-editor.png)
+   * **Render As:** **Text field** - When you create an adventure, this field will store the price of the trip.
+   * **Field Label:** `Price` - This is the label that is displayed for this field when creating a new adventure.
 
-Using the Content Fragment model editor, you can define fields for the Content Fragment model using a drag-and-drop interface.
+1. Add a field to store an image representing the trip. Images in AEM are stored as another type of content called **Assets**. So to create a field for them you need to drag and drop a **Content Reference** field that will reference the asset of the image.
 
-1. Drag a field from the **Data Types** panel at the right of the screen and drop it onto your Content Fragment model. There are multiple data types to choose from such as a single-line text, multi-line text, number, and references to other fragments.
-
-   ![Add a data type](assets/content-structure/drop-fields.png)
-
-   >[!TIP]
-   >
-   >If you would like more information about the data types available to you, see the [Additional Resources section](#additional-resources) of this document for the detailed Content Fragment models documentation.
-
-1. Once a data type is placed, the **Data Types** column automatically changed to the **Properties** tab, where you can define the details of the data type you just placed.
-
-   ![The Properties tab for the data field](assets/content-structure/data-type-properties.png)
-
-    Properties of the model may include the name of the field, the type of field, the length of the field, if it is mandatory, etc.
-
-1. Use the **Properties** tab of the selected data type to define properties such as default value, maximum length, if it is a required field, etc.
-
-   >[!TIP]
-   >
-   >If you would like more information about the properties available to you, see the [Additional Resources section](#additional-resources) of this document for the detailed Content Fragment models documentation.
+   * **Render As:** **Content Reference** - When you create an adventure, this field will point to the image asset representing this trip.
+   * **Field Label:** `Image` - This is the label that is displayed for this field when creating a new adventure.
 
 1. Once you have added all of the fields necessary for the Content Fragment model, click **Save** at the top-right of the window.
 
-1. This saves the model and returns you to the Content Fragment model Console where you can add more models are necessary.
-
-![Module complete](assets/content-structure/content-fragment-model-console-populated.png)
-
-## You've Learned to Create a Content Fragment Model {#conclusion}
-
-In this module, you learned how to create a Content Fragment model to represent the structure of your headless data. First you created the model and then populated it with data types and their related properties, thereby defining a schema for your headless content.
-
-Now that you have your own Content Fragment model, you can use the model to create Content Fragments. The module [Create New Content](create-content.md) details to use your new Content Fragment model to create headless content.
-
-You can return to your trial home screen by clicking **Solutions** button at the top-right of the navigation bar and selecting **Experience Manager**.
-
-![Navigate home](assets/content-structure/home.png)
-
-## Additional Resources {#additional-resources}
-
-For more information about Content Fragments and AEM, consider reviewing this additional documentation.
-
-* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Documentation on how to navigate and use AEM for new users
-* [Using Tags](/help/sites-cloud/authoring/features/tags.md) - Documentation on how to use tags in AEM to organize content
-* [Content Fragments](/help/assets/content-fragments/content-fragments.md) -  Overview of Content Fragments and links to complete documentation on Content Fragments
-* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Complete documentation on Content Fragment models
-* [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types) - Details on the various data types available for Content Fragment models
-* [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#data-types) - Details on the various properties available for Content Fragment models data types
+1. The model is saved and you return to the Content Fragment model Console.

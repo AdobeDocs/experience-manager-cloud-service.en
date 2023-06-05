@@ -1,6 +1,7 @@
 ---
 title: Dynamic Media newsletter archive
-description: The Dynamic Media newsletter by Experience League is a monthly newsletter. It is designed to help you get up to speed with Dynamic Media and Dynamic Media Classic so that you can realize value right away. Valuable knowledge-building resources are available in this one-stop shop newsletter. For example, there are how-to videos and solution overviews. Read about some of the key features and capabilities like image presets, viewer presets, video profiles, and more. 
+description: The Dynamic Media newsletter by Experience League is a monthly newsletter. It is designed to help you get up to speed with Dynamic Media and Dynamic Media Classic so that you can realize value right away. Valuable knowledge-building resources are available in this one-stop shop newsletter. For example, there are how-to videos and solution overviews. Read about some of the key features and capabilities like image presets, viewer presets, video profiles, and more.
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
@@ -31,7 +32,7 @@ In this one-stop shop archived newsletter, you can find valuable knowledge-build
     * Summit customer spotlight: Under Armour.
     * Never miss an Experience Insider webinar.
     * Public sector spotlight: The urgent need for digital enrollment.
-    * Look what’s new in Experience Manager Innovation.
+    * Look what's new in Experience Manager Innovation.
     * Build your Experience Manager skills *live* with the Adobe pros.
     * Connect with the Adobe Experience Manager Community.
     * Fast-track your Adobe expertise with Adobe Experience League. -->
@@ -45,7 +46,7 @@ In this one-stop shop archived newsletter, you can find valuable knowledge-build
   * Watch the on-demand Skill Builder webinars for Dynamic Media Classic.
   * View the Dynamic Media sessions from Online Adobe Summit 2020.
   * Learn more about Adobe's free Dynamic Media Classic audits.
-  * Meet `John Monroe`, Senior Program Manager for Customer Success Services.
+  * Meet `John Monroe`, Senior Program Manager for Adobe Account Team.
 
 * **[February 2020, Issue 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 

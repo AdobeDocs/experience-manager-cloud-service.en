@@ -1,6 +1,7 @@
 ---
 title: Carousel Banners
 description: Learn how to work with Carousel Banners in Dynamic Media.
+contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
@@ -119,8 +120,8 @@ The approach then is to visit different areas of the existing website where the 
 
 Normally there is no need for you to use any specialized debugging tools. Modern web browsers feature web inspectors that do an adequate job. The following are a few examples of web browsers that include web inspectors:
 
-* To see all outgoing HTTP requests in Google Chrome, press F12 (Windows®) or Command-Option-I (Mac) to open the Developer tool panel. Select the Network tab.
-* In Firefox, you can either activate the Firebug plug-in by pressing F12 (Windows®) or Command-Option-I (Mac). Use its Network tab, or use the built-in Inspector tool and its Network tab.
+* To see all outgoing HTTP requests in Google Chrome, press F12 (Windows&reg;) or Command-Option-I (Mac) to open the Developer tool panel. Select the Network tab.
+* In Firefox, you can either activate the Firebug plug-in by pressing F12 (Windows&reg;) or Command-Option-I (Mac). Use its Network tab, or use the built-in Inspector tool and its Network tab.
 
 When network monitoring is turned on in the browser, trigger the Quickview on the page.
 
@@ -459,6 +460,6 @@ See [Identify hotspot and image map variables](#identifying-hotspot-and-image-ma
 
 The last step to trigger the Quick view URL and activate the Quick view panel most likely requires the assistance of a front-end IT person from your IT department. They have the knowledge to know best how to accurately trigger the Quick view implementation from the proper step, having a ready-to-use Quick view URL.
 
-## Create custom pop-up Windows® using Quickview {#using-quickviews-to-create-custom-pop-ups}
+## Create custom pop-up Windows&reg; using Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-See [Create custom pop-up Windows® using Quickview](/help/assets/dynamic-media/custom-pop-ups.md).
+See [Create custom pop-up Windows&reg; using Quickview](/help/assets/dynamic-media/custom-pop-ups.md).

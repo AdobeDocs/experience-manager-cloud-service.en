@@ -154,7 +154,12 @@ Gathering data can help you plan the migration activities and associated tasks. 
 * Total amount of time taken for top-up [extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
 * Total amount of time taken for top-up [ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
 
+
+<!-- Alexandru: hiding this for now
+
 One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+
+-->
 
 These data points can also help you [Establish KPI's](/help/journey-migration/readiness.md#establish-kpis) and other migration related tasks.
 
@@ -232,7 +237,7 @@ The following section shows the important steps and associated tasks that can be
   * Clones author and publish - one node each in case of a cluster or publish farm
 * Choose a subset of the content that will be migrated so that:
   * It is a mix of all the available content types
-  * Contains all users and groups in case [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md) is required
+  * Contains all users and groups
 * Includes either 25% of the content or up to 1 TB of content, whichever is less.
 * Execute at least one full and [top-up](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) migration, from the production clone into the AEM as a Cloud Service non-production environment
 * Resolve any potential issues like:

@@ -43,6 +43,8 @@ You can also navigate to Cloud Manager’s Programs and Products page from Adobe
 |Pipeline Delete|Allow pipeline deletion||x|||
 |Execution Cancel|Cancel current execution||x|||
 |Generate Personal Access Token|Access git||x||x|
+|Create RDE|Create a Rapid Development Environment|x|||x|
+|Reset RDE|Reset a Rapid Development Environment|x|||x|
 
 >[!NOTE]
 >

@@ -49,6 +49,7 @@ Here you can see that there are three main areas:
 * The left panel
   * Here you can hide, or reveal, the folder tree
   * You can select a specific branch of the tree
+  * This can be resized to show nested folders
 * The main/right panel - from here you can:
   * See the list of all Content Fragments in the selected branch of the tree:
     * The location is indicated by the breadcrumbs; these can also be used to change the location
@@ -57,22 +58,36 @@ Here you can see that there are three main areas:
         * Open the appropriate fragment in the editor
         * Show information about references
         * Show information about language versions of the fragment
-      * You can [select one, or more, Content Fragments to show the available actions](#actions-selected-content-fragment)
-    * You can select a column header to sort the table according to that column; select again to toggle between ascending and descending
-  * **[Create](#creating-new-content-fragment)** a new Content Fragment
-  * [Filter](#filtering-fragments) the Content Fragments according to a selection of predicates, and save the filter for future use
-  * [Search](#searching-fragments) the Content Fragments 
-  * [Customize the table view to show selected columns of information](#selectuse-available-columns)
-  * Use **Open in Assets** to directly open the current location in the **Assets** console
+    * By using mouse-over on the column headers a drop-down action selector, and width sliders, will be shown. These allow you to:
+      * Sort - select the appropriate action for either ascending or descending
+        This will sort the entire table according to that column. Sorting is only available on appropriate columns.
+      * Resize the column - using either the action, or width sliders
 
-    >[!NOTE]
-    >
-    >The **Assets** console is used to access assets, such as images, videos, etc.  This console can be accessed:
-    >
-    >* using the **Open in Assets** link (in the Content Fragments console)
-    >* directly from the global navigation pane
+## Actions {#actions}
 
-## Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
+Within the console there is a range of actions that you can use, either directly, or after selecting a specific fragment:
+
+* Various actions are directly [available from the console](#available-actions)
+* You can [select one, or more, Content Fragments to show appropriate actions](#actions-selected-content-fragment)
+
+### Actions (unselected) {#actions-unselected}
+
+Certain actions are available from the console - without selecting a specific Content Fragment:
+
+* **[Create](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)** a new Content Fragment
+* [Filter](#filtering-fragments) the Content Fragments according to a selection of predicates, and save the filter for future use
+* [Search](#searching-fragments) the Content Fragments 
+* [Customize the table view to show selected columns of information](#select-available-columns)
+* Use **Open in Assets** to directly open the current location in the **Assets** console
+
+  >[!NOTE]
+  >
+  >The **Assets** console is used to access assets, such as images, videos, etc.  This console can be accessed:
+  >
+  >* using the **Open in Assets** link (in the Content Fragments console)
+  >* directly from the global navigation pane
+
+### Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
 
 Selecting a specific fragment will open a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
 
@@ -136,21 +151,31 @@ This will present a list of columns that you can hide or show:
 
 ![Content Fragments console - column configuration](assets/cfc-console-column-selection.png)
 
-## Creating a new Content Fragment {#creating-new-content-fragment}
-
-Selecting **Create** opens the compact **New Content Fragment** dialog:
-
-![Content Fragments console - Creating a new fragment](assets/cfc-console-create.png)
-
 ## Filtering Fragments {#filtering-fragments}
 
 The Filter panel offers:
 
-* a selection of predicates that can be selected and combined
+* a selection of predicates; one, or more, predicates can be selected and combined to create the filter
 * the opportunity to **Save** your configuration
 * the option to retrieve a saved search filter for reuse
 
 ![Content Fragments console - Filtering](assets/cfc-console-filter.png)
+
+### Fast Filtering {#fast-filtering}
+
+You can also select a predicate by clicking on a specific column value in the list. You can select one, or more, values to combine predicates. 
+
+For example, select **Published** in the **Status** column:
+
+>[!NOTE]
+>
+>Fast filtering is only supported for the **Model**, **Status**, **Modified By**, and **Published By** columns.
+
+![Content Fragments console - Filtering](assets/cfc-console-fast-filter-01.png)
+
+Once selected, this will be shown as a filter predicate, and the list will be filtered accordingly:
+
+![Content Fragments console - Filtering](assets/cfc-console-fast-filter-02.png)
 
 ## Searching Fragments {#searching-fragments}
 

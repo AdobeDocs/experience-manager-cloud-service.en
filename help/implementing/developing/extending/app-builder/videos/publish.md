@@ -12,10 +12,6 @@ exl-id: ebbc1249-ed82-47c3-96ce-27a4d9c8ee99
 ---
 # Publishing App Builder applications
 
->[!IMPORTANT]
->
-> _Adobe Project Firefly, as mentioned in the videos in this series, is now named App Builder_
-
 Learn how to submit your App Builder application for review and approval, and how to run a newly published application.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339251/?quality=12&learn=on)

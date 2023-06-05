@@ -23,6 +23,10 @@ Before you begin using [!DNL AEM Forms] as a Cloud Service, review the following
 
 * When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file are not sent and a 0 byte file is received at the other end. This is a known issue in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
+* AEM Forms as a Cloud Service does not generate thumbnails for XDP and JSON schema files. The service displays default icons in place of thumbnails.
+
+    ![Forms Thumbnail known issue](/help/forms/assets/forms-tumbnail-known-issue.png)
+
 
 ## Limitations {#limitations}
 

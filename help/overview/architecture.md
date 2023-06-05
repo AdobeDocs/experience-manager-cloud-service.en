@@ -50,11 +50,11 @@ This:
 
 * Allows AEM as a Cloud Service to accommodate your traffic patterns as they change.
 
-The scaling of per-tenant instances of the service can be automatic or manual, on the two axes:
+The scaling of per-tenant instances of the service applies to the two axes:
 
-* Vertical: allocated memory and CPU capacity can be scaled up or down for a fixed number of nodes.
+* Horizontal: the number of nodes for a given service are increased or decreased automatically, still allowing for individual default configurations.
 
-* Horizontal: the number of nodes for a given service can be increased or decreased.
+* Vertical: allocated memory and CPU capacity can be scaled up or down via configuration for a fixed number of nodes to address individual requirements as needed.
 
 ## Environments {#environments}
 
@@ -73,6 +73,8 @@ There are three types of environments available with AEM as a Cloud Service:
 
    Refer to [Managing Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) for more details.
 
+* **Rapid development environment**: allows for rapid development iterations for debugging new or existing code.
+
 ## Programs {#programs}
 
 Any new AEM project is always bound to exactly one specific codebase, where you can store both configuration and custom code for your project. This information is stored in a code repository, accessible via the usual Git clients, made available to you at the time new programs are created. 
@@ -84,7 +86,7 @@ An AEM program is the container that includes:
 | Code repository (Git) | 1 |
 | Baseline image (Sites or Assets) | 1 |
 | Stage and production environment set (1:1) | 0 or 1 |
-| Non-production environments (development or demonstration) | 0 to N |
+| Non-production environments (RDE, development or demonstration) | 0 to N |
 | Pipeline for each environment | 0 or 1 |
 
 Two types of programs are initially available for AEM as a Cloud Service:

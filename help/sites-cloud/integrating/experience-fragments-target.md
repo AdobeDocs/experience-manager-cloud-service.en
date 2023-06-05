@@ -189,7 +189,7 @@ You can now select the new configuration for editing.
 
      >[!NOTE]
      >
-     >The Target Library file, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html), is a new implementation library for Adobe Target that is designed for both typical web implementations and single-page applications. 
+     >The Target Library file, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), is a new implementation library for Adobe Target that is designed for both typical web implementations and single-page applications. 
      >
      >mbox.js has been deprecated and will be removed at a later stage.
      >

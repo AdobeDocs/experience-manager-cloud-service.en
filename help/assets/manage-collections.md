@@ -9,6 +9,11 @@ exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
 ---
 # Manage collections {#manage-collections}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 A collection is a set of assets within Adobe Experience Manager Assets. Use collections to share assets between users. The set can be static collection or a dynamic collection that is based on search results.
 
 Unlike folders, a collection can include assets from different locations. You can share collections with various users that are assigned different levels of privileges, including viewing, editing, and so on.
@@ -247,6 +252,20 @@ You can run a workflow for the assets within a collection. If the collection con
 1. In the **[!UICONTROL Start Workflow]** section, select a workflow model from the list. For example, select the **[!UICONTROL DAM Update Asset]** model.
 1. Enter a title for the workflow, and tap/click **[!UICONTROL Start]**.
 1. In the dialog, tap/click **[!UICONTROL Proceed]**. The workflow runs on all the assets in the collection.
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Bulk metadata import](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

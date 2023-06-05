@@ -1,6 +1,7 @@
 ---
 title: Manage Dynamic Media assets
 description: Learn how to work with Dynamic Media assets.
+contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
