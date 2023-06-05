@@ -1,6 +1,7 @@
 ---
 title: Use Smart Imaging with client-side Device Pixel Ratio
 description: Learn how to use client-side Device Pixel Ratio with Smart Imaging in Adobe Experience Manager as a Cloud Service with Dynamic Media.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
 ---

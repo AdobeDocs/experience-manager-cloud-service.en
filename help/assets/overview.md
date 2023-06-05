@@ -18,7 +18,7 @@ Businesses require support for a wide variety of file formats and content resolu
 
 To begin with, understand the [benefits of a cloud-native offering](#solution-benefits). Check out the notable [changes to Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) that also impact Experience Manager Assets followed up the notable [changes to Assets](/help/assets/assets-cloud-changes.md).
 
-Read on to know the [details of the new Assets capabilities](#whats-new-assets) and the [known issues](/help/release-notes/known-issues.md). See a list of [deprecated or removed functionality](/help/release-notes/deprecated-removed-features.md) to know what is removed in this release and see this [list of upcoming capabilities](/help/release-notes/known-issues.md#upcoming-assets-capabilities) to know what's coming shortly. Finally, understand the Experience Manager terms with the help of this [glossary](/help/overview/terminology.md).
+Read on to know the [details of the new Assets capabilities](#whats-new-assets) and the [known issues](/help/release-notes/maintenance/latest.md). See a list of [deprecated or removed functionality](/help/release-notes/deprecated-removed-features.md) to know what is removed in this release. Finally, understand the Experience Manager terms with the help of this [glossary](/help/overview/terminology.md).
 
 ## Solution benefits {#solution-benefits}
 
@@ -37,3 +37,18 @@ The significant new capabilities are:
 
 * [Asset microservices](/help/assets/asset-microservices-overview.md)
 * [Asset upload methods](/help/assets/add-assets.md)
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)

@@ -7,6 +7,11 @@ exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
 ---
 # Configure [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 A user with administrator access in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] configures the enhanced connector after installing it. For instructions to install, see [Install the connector](/help/assets/workfront-integrations.md).
 
 >[!IMPORTANT]
@@ -117,14 +122,14 @@ This workflow step lets a user map a property to a [!DNL Workfront] custom form 
   * An AEM property. This reference should be relative to the workflow payload.
   * A named value. These should be surrounded by brackets.
   * A concatenation of the above 3 items. Specify it using `{+}`.
-  * An alteration of the above 3 items by surrounding the value with `{replace(<value>,”old-char”,”new-char”)}`.
+  * An alteration of the above 3 items by surrounding the value with `{replace(<value>,"old-char","new-char")}`.
 
 * Some example are:
 
   * `status="INP"`
   * `DE:Asset Type=jcr:content/metadata/assetType`
   * `DE:Path={path}`
-  * `URL=”https://my-aem-author/assets.html”{+}{path}`
+  * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![Configuration to map property](/help/assets/assets/wf-map-property-config.png)
 

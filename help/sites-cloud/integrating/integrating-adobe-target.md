@@ -12,7 +12,9 @@ As part of the Adobe Marketing Cloud, Adobe Target lets you increase content rel
 * using the Touch UI to create a Target Configuration in AEM as a Cloud Service (IMS configuration required).
 * adding and configuring Adobe Target as an extension in [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
-Adobe Launch is necessary for managing client-side properties for both Analytics and Target in AEM pages (JS libraries/tags). That said, the integration with Launch is needed for "experience targeting". For the Experience Fragments export to Target, you only need the Adobe Target Configuration and IMS.
+Adobe Launch is necessary for managing client-side properties for both Analytics and Target in AEM pages (JS libraries/tags). That said, the integration with Launch is needed for "experience targeting". 
+
+For the export of Experience Fragments and/or Content Fragments to Target, you only need the [Adobe Target Configuration and IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
 
 >[!NOTE]
 >
@@ -30,7 +32,7 @@ Adobe Launch is necessary for managing client-side properties for both Analytics
 
 ### IMS Configuration {#ims-configuration}
 
-An IMS configuration for both Launch and Target is necessary to properly integrate Target with AEM and Launch. While the IMS configuration for Launch is preconfigured in AEM as a Cloud Service, the Target IMS configuration must be created (after Target is provisioned). Refer to [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) and [this page](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html) to learn how to create the Target IMS configuration.
+An IMS configuration for both Launch and Target is necessary to properly integrate Target with AEM and Launch. While the IMS configuration for Launch is preconfigured in AEM as a Cloud Service, the Target IMS configuration must be created (after Target is provisioned). Refer to [IMS Configuration for use when Integrating with Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) and the video [Integrating Experience Platform Launch and AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) to learn how to create the Target IMS configuration.
 
 ### Adobe Target Tenant ID and Adobe Target Client Code {#tenant-client}
 
@@ -141,7 +143,7 @@ To learn how to build and publish please refer to this [page](https://experience
   <tr>
     <td>Location of the Target Configuration.</td>
     <td>/etc/cloudservices/testandtarget/</td>
-    <td>/conf/tenant/settings/cloudservices/target/</td>
+    <td>/conf/tenant/settings/cloudconfigs/target/</td>
     <td> Earlier multiple configurations were present under /etc/cloudservices/testandtarget but now a single configuration is present under a tenant.</td>
   </tr>
 </table>

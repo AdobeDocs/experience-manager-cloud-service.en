@@ -5,87 +5,72 @@ hidefromtoc: yes
 index: no
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 ---
+
 # Extract Content via the GraphQL API {#extract-content}
-
-So far in AEM Trials for headless, you have [created your own Content Fragment models](content-structure.md) as well created your own headless content as [Content Fragments.](create-content.md) Now you can learn how to use Content Fragments and the GraphQL API as a headless content management system to deliver your content.
-
-GraphQL provides a query-based API allowing external client applications to query AEM for only the content it needs using a single API call. 
-
-First you will learn how to run two different types of queries: **list** and **byPath** queries. Then you will learn how to retrieve content from the Content Fragment you created previously. This document serves as a supplement of the interactive tour, covering the same steps and linking to additional resources where appropriate.
-
->[!TIP]
->
->If you'd like more details about the GraphQL API, see the [Additional Resources section](#additional-resources) at the end of this module for the GraphQL API guide.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql"
 >title="Extract content using the GraphQL API"
->abstract="In this module you'll learn how you can use Content Fragments and the GraphQL API as a Headless Content Management System."
+>abstract="In this module you learn how you can use Content Fragments and the GraphQL API as a headless content management system."
 
-## GraphQL Explorer {#graphql-explorer}
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
+>title="Launch the GraphQL Explorer"
+>abstract="GraphQL provides a query-based API allowing external client applications to query AEM for only the content it needs, using a single API call. Follow this module to learn how to run two different types of queries. Then learn how to retrieve the content from the Content Fragment you created in the previous module.<br><br>Launch this module in a new tab by clicking below."
 
-You start on the GraphQL Explorer. Here you can build and run queries against your headless content.
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
+>title="Nice work! You've learned about the two basic types of queries and how to query your own content. You now understand how to use the AEM GraphQL API to create efficient queries that deliver content in a format that you app expects."
+>abstract=""
 
-![The GraphQL Query Editor](assets/extract-content/query-editor.png)
+## Query for a List of Sample Content {#list-query}
 
-If you wish to navigate to the GraphQL Explorer yourself outside of the in-app guidance, it is found using the Adobe icon at the top-left of the page. This opens the global navigation of AEM. From here, you choose the **Tools** tab and then **General** -&gt; **GraphQL Query Editor**.
+You start on the GraphQL Explorer in a new tab. Here you can build and validate queries against your headless content before using them to power the content in your app or website.
 
->[!TIP]
->
->If you would like to know more about navigation in AEM, see the [Additional Resources section](#additional-resources) of this document for more information on AEM basic handling.
+1. Your AEM headless trial comes with an endpoint preloaded with Content Fragments from which you can extract content for testing purposes. Make sure that the **AEM Demo Assets** endpoint is selected in the **Endpoint** drop-down menu at the top-right corner of the editor.
 
-AEM Trials come with an endpoint preloaded with content from which you can extract content for testing purposes.
-
-![Select endpoint](assets/extract-content/select-endpoint.png)
-
-Select the **AEM demo assets** endpoint from the **Endpoint** drop-down menu at the top-right corner of the editor, if it is not already.
-
-## Copy and Run a List Query {#list-query}
-
-Start with a simple list query in order to orient yourself with how AEM as a Cloud Service's GraphQL APIs work. This list query example will return a list of all content that uses a specific Content Fragment model. Inventory and category pages typically use this query format.
-
-1. Copy the following code snippet.
+1. Copy the following code snippet for a list query of the preloaded **AEM Demo Assets** endpoint. A list query returns a list of all content that uses a specific Content Fragment model. Inventory and category pages typically use this query format.
 
    ```text
    {
-       adventureList {
-         items {
-            _path
-            adventureTitle
-            adventurePrice
-            adventureTripLength
-            adventurePrimaryImage {
-              ... on ImageRef {
-               _path
-               mimeType
-               width
-               height
-             }
-           }
+    adventureList {
+     items {
+       _path
+       title
+       price
+       tripLength
+       primaryImage {
+         ... on ImageRef {
+           _path
+           mimeType
+           width
+           height
          }
-      }
+       }
+     }
     }
+   }
    ```
 
-1. Then replace the existing content in the query editor by pasting the copied code.
-
-    ![List query](assets/extract-content/list-query.png)
+1. Replace the existing content in the query editor by pasting the copied code.
 
 1. Once pasted, click the **Play** button at the top left of the query editor to execute the query.
 
-1. Once the query successfully executes, the results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
+1. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
 
-   ![List query results](assets/extract-content/list-query-results.png)
+   ![List query](assets/do-not-localize/list-query-1-3-4-5.png)
 
-You've just validated a list query for a full list of all content fragments. This process helps to ensure that the response is what your app expects, with results that illustrate how your apps and websites will retrieve the content created in AEM. 
+You've just validated a list query for a full list of all Content Fragments. This process helps to ensure that the response is what your app expects, with results that illustrate how your apps and websites will retrieve the content created in AEM. 
 
-The different channels and platforms where your content needs to appear can now use this query or similar to retrieve your headless content.
+>[!NOTE]
+>
+>If you are not able to select the **AEM Demo Assets** endpoint from the drop-down, please contact Adobe Customer Care or reach out on the [AEM Trials Slack channel.](https://adobe-dx-support.slack.com/)
 
-## Copy and Run a byPath Query {#bypath-query}
+## Query for a Specific Piece of Sample Content {#bypath-query}
 
-Running a byPath query allows you to retrieve assets for a specific Content Fragment. Product detail pages and pages that focus on a specific set of content typically require this type of query.
+Running a byPath query allows you to retrieve content for a specific Content Fragment. Product detail pages and pages that focus on a specific set of content typically require this type of query.
 
-1. Copy the following code snippet.
+1. Copy the following code snippet for a byPath query of the preloaded **AEM Demo Assets** endpoint.
 
    ```text
     {
@@ -94,11 +79,11 @@ Running a byPath query allows you to retrieve assets for a specific Content Frag
      ) {
        item {
          _path
-         adventureTitle
-         adventureDescription {
+         title
+         description {
            json
          }
-         adventurePrimaryImage {
+         primaryImage {
            ... on ImageRef {
              _path
              width
@@ -110,68 +95,94 @@ Running a byPath query allows you to retrieve assets for a specific Content Frag
    }
    ```
 
-1. Then replace the existing content in the query editor by pasting the copied code.
-
-   ![byPath query](assets/extract-content/bypath-query.png)
+1. Replace the existing content in the query editor by pasting the copied code.
 
 1. Once pasted, click the **Play** button at the top left of the query editor to execute the query.
 
-1. Once the query successfully executes, the results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
+1. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
 
-1. Once the query successfully executes, the results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
+   ![byPath query results](assets/do-not-localize/bypath-query-2-3-4.png)
 
-   ![byPath query results](assets/extract-content/bypath-query-results.png)
+You've just validated a byPath query to retrieve a specific Content Fragment identified by the path of that fragment.
 
-You've just validated a list query for a full list of all content fragments. This process helps to ensure that the response is what your app expects, with results that illustrate how your apps and websites will retrieve the content created in AEM. 
+## Query Your Own Content {#own-queries}
 
-The different channels and platforms where your content needs to appear can now use this query or similar to retrieve your headless content.
-
-## Run Queries on Your Own Content {#own-queries}
-
-Now that you have run the two primary types of queries, you are ready to set up and run queries for content that you created yourself.
+Now that you have run the two primary types of queries, you are ready to query your own content.
 
 1. To run queries against your own Content Fragments, change the endpoint from the **AEM Demo Assets** folder to the **Your Project** folder.
 
-   ![Select your own endpoint](assets/extract-content/select-endpoint.png)
+1. Delete all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your endpoint. Select the model that you created that ends in `List` from the options. If you followed the examples in the previous modules, you should find `adventureList` in the auto-complete list.
 
-1. Start by selecting and deleting all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your Content Fragment model. Select the model that you created that ends in `List` from the list.
+   ![Start custom query](assets/do-not-localize/custom-query-1.png)
 
-   ![Auto complete models in query editor](assets/extract-content/auto-complete-models.png)
+1. Define the items that the query should contain for the Content Fragment model you selected. Again, type open bracket `{`, then press Ctrl+Space or Option+Space for an auto-complete list. Select `items` from the options.
 
-1. Define the items that the query should contain for the content fragment model you selected. Again, type open bracket `{`, then press Ctrl+Space or Option+Space for an auto-complete list. Select `items` from the list.
+1. Tap or click the **Prettify** button to automatically format your code so that it is easier to read.
 
-   ![Auto complete items in query editor](assets/extract-content/auto-complete-items.png)
+1. Once complete, tap or click the **Play** button at the top left of the editor to run the query. The editor auto-complete the `items`, which are briefly highlighted in yellow, and the query runs.
 
-1. Define the fields that the query should contain for the content fragment model you selected. Again, type open bracket `{`, then press Ctrl+Space or Option+Space for an auto-complete list of available fields in the Content Fragment model. Select fields that you wish from your model from the list.
+1. The results are displayed in the right panel, next to the query editor.
 
-   ![Auto complete fields in query editor](assets/extract-content/auto-complete-fields.png)
+   ![Run custom query](assets/do-not-localize/custom-query-2.png)
 
-1. Delimit multiple fields with a comma (`,`) or space and press Ctrl+Space or Option+Space again to select additional fields.
+This is how your content can be delivered to omnichannel digital experiences.
 
-1. As you work, you can tap or click the **Prettify** button to automatically format your code so that it is easier to read.
+## Persisted Queries {#persisted-queries}
 
-   ![Prettify](assets/extract-content/prettify.png)
+Persisted queries are the preferred mechanism for exposing the GraphQL API to client applications. Once a query has been persisted, it can be requested using a GET request and cached for fast retrieval.
 
-1. Once complete, tap or click the **Play** button at the top left of the editor to run the query.
+You will create a persisted query that includes data you would like to consume from your client application.
 
-   ![Results of your own query](assets/extract-content/custom-query-results.png)
+1. You will use the data that you created as a content fragment earlier, so make sure that the **Your Project** endpoint is selected in the **Endpoint** drop-down menu at the top-right corner of the editor.
 
-This is how your content can be delivered to omnichannel digital experiences. See the [Additional Resources section](#additional-resources) for additional sample queries and learn how much more you can do with the GraphQL API.
+1. Copy the following code snippet.
 
-## You've learned how to query content! {#conclusion}
+   ```text
+      {
+      adventureList {
+       items {
+         title
+         description {
+           plaintext
+         }
+         price
+         image {
+           ... on ImageRef {
+             _publishUrl
+             mimeType
+           }
+         }
+       }
+     }
+   }
+   ```
 
-Great work! You've learned about the two basic types of queries and how to query your own content. Be sure to check out the [Additional Resources section](#additional-resources) for additional sample queries and learn how much more you can do with the GraphQL API.
+1. Replace the existing content in the query editor by pasting the copied code. 
 
-If you'd like to learn how extracted content is then used in a custom React app, be sure to review the module [Customize Content in a Sample React App.](customize-app.md)
+   >[!NOTE]
+   >
+   >If you did not use the same field descriptions as described in the previous modules, you will need to update the field names in this query.
+   >
+   >Use the GraphQL autocomplete (Ctrl+Space or Option+Space) feature as described previously to help identify the available properties.
 
-You can return to your trial home screen by clicking **Solutions** button at the top-right of the navigation bar and selecting **Experience Manager**.
+1. Once pasted, click the **Play** button at the top left of the query editor to execute the query.
 
-![Navigate home](assets/extract-content/home.png)
+1. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
 
-## Additional Resources {#additional-resources}
+   ![Create own query](assets/do-not-localize/own-query.png)
 
-For more information about Content Fragments and AEM, consider reviewing this additional documentation.
+1. When satisfied with your query, click the **Save As** button at the top of the query editor to persist the query.
 
-* [The GraphQL API guide](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/explore-graphql-api.html)
-* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Documentation on how to navigate and use AEM for new users
-* [Learning to use GraphQL with AEM - Sample Content and Queries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html)
+1. In the **Query name** pop-up, give your query the name `adventure-list`.
+
+1. Tap or click **Save As**.
+
+   ![Persist query](assets/do-not-localize/persist-query.png)
+
+1. The query is persisted as confirmed by a banner message at the bottom of the screen. The query also now appears in the left panel of persisted queries in the window.
+
+1. In order for the persisted query to be available publicly, it will need to be published, much like how your Content Fragments need to be published. Click the **Publish** button at the top right of the query editor to publish the query.
+
+1. The publication is confirmed by a banner notification.
+
+You now have a new persisted query which will contain only the specific properties and formats that you defined.
