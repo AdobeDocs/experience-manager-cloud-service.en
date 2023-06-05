@@ -35,7 +35,8 @@ Smart Tags is automatically provisioned for [!DNL Adobe Experience Manager] as a
   For text-based assets, the efficacy of Smart Tags does not depend on the amount of text in the asset but on the relevant keywords or entities present in the text of the asset. 
 
 ![Smart-tag-types](assets/smart-tags-types.png)
-Smart Tags are implemented in AEM Assets using the following workflow:
+
+<br/>Smart Tags are implemented in AEM Assets using the following workflow:
 1.  Create or upload an asset in AEM. Out of the box tags are generated for image, video, and text based Assets.
 1.  If you find that specific tags are not generated, then you can train your image-type tags accordingly. Refer to [Smart Tags training](#smart-tags-training.md).
 
