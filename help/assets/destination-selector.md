@@ -2,7 +2,6 @@
 title: Destination Selector for AEM as a Cloud Service
 description: Use the AEM Destination Selector to show and select assets that you can use as a copy of the original asset.
 contentOwner: Adobe
-feature: destination selector
 role: Admin,User
 ---
 
