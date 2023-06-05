@@ -11,7 +11,7 @@ exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 
 Organizations have many digital assets and these are growing continuously. Searching the desired asset while dealing with such enormous amount of data is a significant challenge. To deal with this challenge, *metadata* and *tags* are used to enhance the search capability of digital assets. Organizations use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for their digital assets. The Smart Tags are the keywords that appear in the text but the ones that best describe the asset. Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved in searches.
 
-For an instance, the words saved in the dictionary in an alphabetical order are easier in search, rather than searching the scattered words. Tagging also solves the same purpose. It aligns assets based on business taxonomy and ensures that the most relevant assets appear in searches. For example, a car manufacturer can tag car images with model names so only relevant images are displayed when searched to design a promotion campaign.
+For an instance, the words saved in the dictionary in an alphabetical order are easier in search, rather than searching the scattered words. Tagging also solves the same purpose. It aligns assets based on business taxonomy and ensures that the most relevant assets appear in searches. For example, a car manufacturer can tag car images with model names so only relevant images are displayed when searched to design a promotion campaign.Therefore, whether you are tagging "runners" or "running" shoes, you do not need to worry about typos, wrong spellings, or alternative search terms as Smart Tags know it already!
 
 In the background, the functionality uses the artificially intelligent framework of [Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) to automatically applies smart tags to uploaded assets, by default along with the text related to business taxonomy.
 
@@ -175,12 +175,9 @@ The search results that match all search terms in metadata fields are displayed 
 
 ## Opt out of smart tagging {#opt-out-smart-tagging}
 
-As the automated tagging of assets runs in parallel to other asset processing tasks like thumbnail creation and metadata extraction, it can be time consuming. To expedite the asset processing, you can opt out of smart tagging on upload at folder level.
-
-To opt out of automated Smart Tags generation for assets uploaded to specific folder:
+As the automated tagging of assets runs in parallel to other asset processing tasks like thumbnail creation and metadata extraction, it can be time consuming. To expedite the asset processing, you can opt out of smart tagging on upload at folder level. To opt out of automated Smart Tags generation for assets uploaded to specific folder:
 
 1. Open [!UICONTROL Asset Processing] tab in folder [!UICONTROL Properties].
-
 1. In [!UICONTROL Smart Tags for Videos] menu, for example, [!UICONTROL Inherited] option is selected by default and video smart tag is enabled.
 
     When the [!UICONTROL Inherited] option is selected, the inherited folder path is also visible along with the information whether it is set to [!UICONTROL Enable] or [!UICONTROL Disable].
@@ -188,11 +185,13 @@ To opt out of automated Smart Tags generation for assets uploaded to specific fo
     ![Disable smart tagging](assets/disable-tagging.png)
 
 1. Select [!UICONTROL Disable] to opt out of smart tagging uploaded to the folder.
+1.  Similarly, you can opt out smart tagging for [!UICONTROL Smart Tags for Text], [!UICONTROL Smart Tags for Image], and [!UICONTROL Color Tags for Images].
 
 >[!IMPORTANT]
 >
->If you have opted out of tagging on a folder at the time of upload and want to smart tag the after upload, then **[!UICONTROL Enable Smart Tags]** from [!UICONTROL Asset Processing] tab of the folder [!UICONTROL Properties] and use [[!UICONTROL Reprocess Asset] option](#smart-tag-existing-assets) to add Smart Sags to the assets.
+>If you have opted out of tagging on a folder at the time of upload and want to smart tag the after upload, then **[!UICONTROL Enable Smart Tags]** from [!UICONTROL Asset Processing] tab of the folder [!UICONTROL Properties] and use [[!UICONTROL Reprocess Asset] option](#smart-tag-existing-assets) to add Smart Tags to the assets.
 
+<!--
 ## Benefits of Smart Tags to your assets {#benefits-of-smart-tags}
 
 Following are the benefits of using Smart Tags in your AEM Assets:
@@ -201,6 +200,7 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 *  It allows the usage of the same vocabulary, tag structure, and taxonomy so that you need not to worry about tagging if by chance you miss tagging at first.
 *  Whether you are tagging "runners" or "running" shoes, you do not need to worry about typos, wrong spellings, or alternative search terms as Smart Tags know it already!
 *  Helps your assets to become organized and categorized.
+-->
 
 ## Limitations and best practices related to Smart Tags {#limitations}
 
@@ -221,7 +221,7 @@ These models are not always perfect at identifying tags. The current version of 
 
 +++**How do Smart Tags improve search experience of an asset?**
   
-  Adobe Sensei tags the assets automatically once you upload them. The automated process runs so fast at the backend that you will see tags added in your assets after a few seconds once the upload is completed.
+  [! DNL Adobe] Sensei tags the assets automatically once you upload them. The automated process runs so fast at the backend that you will see tags added in your assets after a few seconds once the upload is completed.
 
 +++
 
@@ -251,11 +251,11 @@ These models are not always perfect at identifying tags. The current version of 
 
 +++**What are the supported file formats for tagging an asset?**
   
-  Refer to [Supported file formats](##supported-file-formats).
+  Refer to [Supported file formats](#supported-file-formats).
 
 +++
 
-+++**I do not want to use video Smart Tagging anymore.**
++++**I do not want to use Smart Tagging anymore.**
 
 You can [opt out Smart Tagging](#opt-out-smart-tagging) anytime you want to discontinue.
 
