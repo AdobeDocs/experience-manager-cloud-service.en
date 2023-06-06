@@ -538,10 +538,7 @@ If downtime would cause significant business impact, contact customer support fo
 
 ## Advanced Networking Configuration for Additional Publish Regions {#advanced-networking-configuration-for-additional-publish-regions}
 
-When an additional region is added to an environment which already has advanced networking configured, traffic from the additional publish region that matches the advanced networking rules will by default route through the primary region. An implication is that if the primary region becomes unavailable, the advanced networking traffic will be dropped. 
-
-If you wish to optimize latency and increase availability in case one of the regions undergoes an outage, it is necessary to enable advanced networking for the additional publish region(s). Two different scenarios are described in the following sections.
-
+When an additional region is added to an environment which already has advanced networking configured, traffic from the additional publish region that matches the advanced networking rules will by default route through the primary region. However, if the primary region becomes unavailable, the advanced networking traffic will be dropped if advanced networking hasn’t been enabled in the additional region. If you wish to optimize latency and increase availability in case one of the regions undergoes an outage, it is necessary to enable advanced networking for the additional publish region(s). Two different scenarios are described in the following sections.
 
 >[!NOTE]
 >
