@@ -9,6 +9,11 @@ exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 ---
 # Manage metadata of your digital assets {#managing-metadata-for-digital-assets}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 [!DNL Adobe Experience Manager Assets] keeps metadata for every asset. It allows easier categorization and organization of assets and it helps people who are looking for a specific asset. With the ability to extract metadata from files uploaded to [!DNL Experience Manager Assets], metadata management integrates with the creative workflow. With the ability to keep and manage metadata with your assets, you can automatically organize and process assets based on their metadata.
 
 <!-- 

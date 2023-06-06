@@ -20,7 +20,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.2.0) is April 12, 2023. The next feature release (2023.4.0) is planned for May 25, 2023.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.2.0) is April 12, 2023. The next feature release (2023.4.0) is planned for June 7, 2023.
 
 ## Release Video {#release-video}
 
@@ -44,7 +44,7 @@ Have a look at the February 2023 Release Overview video for a summary of the fea
    * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
    * Available in NA, to be enabled via support ticket, coming soon in APAC, EMEA
 
-* Added support for WebP images to automatically extract metadata, generate thumbnails and custom renditions. Smart Tag and Smart Crop capabilities are also now supported for these files.
+* Added support for WebP images to automatically extract metadata, generate thumbnails and custom renditions. Smart Tag capability is also now supported for these files.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
