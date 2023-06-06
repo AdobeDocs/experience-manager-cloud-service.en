@@ -103,14 +103,14 @@ The instrumentation attributes added to the page consist mostly of [HTML Microda
 Connections which are used in the app are stored as `<meta>` tags in the page's `<head>`.
 
 ```html
-<meta name="urn:auecon:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
 ```
 
 * `<referenceName>` - This is a short name which is reused in the document to identify the connection. E.g. `aemconnection`
 * `<protocol>` - This indicates which persistence plugin of the Universal Editor Persistence Service to use. E.g. `aem`
 * `<url>` - Ths is the URL to the system where the changes shall be persisted. E.g. `http://localhost:4502`
 
-The short identifier `auecon` stands for Adobe Universal Editor Connection.
+The identifier `adobe:aem:editor` represents the connection for the Adobe Universal Editor.
 
 `itemid`s will use the `urn` prefix to shorten the identifier.
 
@@ -130,8 +130,8 @@ itemid="urn:<referenceName>:<resource>"
 ```html
 <html>
 <head>
-    <meta name="urn:auecon:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:auecon:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aem:editor:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>

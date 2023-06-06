@@ -7,6 +7,11 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 ---
 # Assigning AEM Product Profiles {#assign-profiles-aem}
 
+>[!CONTEXTUALHELP]
+>id="assets_user_entitlements"
+>title="Assign AEM Product Profiles"
+>abstract="You are not entitled to use Experience Manager Assets. Please contact your administrator."
+
 In this part of the [onboarding journey,](overview.md) you will learn how to grant you team access to AEM using AEM product profiles.
 
 ## Objective {#objective}
@@ -94,6 +99,8 @@ However if you would like to better understand how authors and developers use th
 * [AEM User Tasks](aem-users.md) - Where you will learn how to access the AEM environment where you can start creating content.
 
 ## Additional Resources {#additional-resources}
+
+The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
 * [Managing Products and User Access in Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Learn how to use the Admin Console to manage use access.
 * [Configuring access to AEM walk-through](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en) - Check out this abridged walk-though to learn about configuring Adobe IMS users, user groups, and product profiles in the Admin Console.

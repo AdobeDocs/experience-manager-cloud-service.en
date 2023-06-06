@@ -45,12 +45,16 @@ Follow these steps to create a sandbox program.
  
 1. From Cloud Manager's landing page click on **Add Program** in the top-right corner of the screen.
 
-   ![Cloud Manager landing page](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png) 
+   ![Cloud Manager landing page](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png) 
 
-1. From the create program wizard, select **Set up a sandbox**, provide a program name, and then click **Create**.
+1. From the create program wizard, select **Set up a sandbox** and provide a program name and tap or click **Continue**.
 
    ![Program type creation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
+1. In the **Set up your sandbox** dialog, you can choose which solutions you wish to enable in your sandbox program. The **Sites** and **Assets** solutions are always included in sandbox programs and are automatically selected. This is sufficient for our onboarding example. Click **Create**.
+
+   ![Solution selection](assets/set-up-sandbox-onboarding.png)
+   
 You will see a new sandbox program card on the landing page with a status indicator as the setup process progresses.
 
 ![Sandbox creation from overview page](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/program-create-setupdemo2.png)
@@ -63,7 +67,7 @@ Now that your first program is created, you can create environments for it. You 
 
 ## Additional Resources {#additional-resources}
 
-Follow the additional resources to learn about:
+The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
 * [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) - Learn about the hierarchy of Cloud Manager and how the different types of programs fit into its structure and how they differ.
 * [Creating Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Learn how to use Cloud Manager to create your own sandbox program for training, demo, POC, or other non-production purposes.

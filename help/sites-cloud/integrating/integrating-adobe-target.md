@@ -143,7 +143,7 @@ To learn how to build and publish please refer to this [page](https://experience
   <tr>
     <td>Location of the Target Configuration.</td>
     <td>/etc/cloudservices/testandtarget/</td>
-    <td>/conf/tenant/settings/cloudservices/target/</td>
+    <td>/conf/tenant/settings/cloudconfigs/target/</td>
     <td> Earlier multiple configurations were present under /etc/cloudservices/testandtarget but now a single configuration is present under a tenant.</td>
   </tr>
 </table>

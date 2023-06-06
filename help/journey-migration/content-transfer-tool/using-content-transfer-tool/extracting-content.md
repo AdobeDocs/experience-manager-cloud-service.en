@@ -43,13 +43,13 @@ Follow the steps below to extract your migration set from the Content Transfer T
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   You can also monitor the Extraction phase progress from Cloud Acceleration Manager by visiting the Content Transfer page.
+   You can also monitor the Extraction phase progress from Cloud Acceleration Manager by visiting the Content Transfer page, and see it in more detail by clicking on **...** and then on **View details**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. Once Extraction is completed, review the other columns like **Source** and **Paths** for details of the migration set that you populated by clicking on **...** and then on **View details**. 
+1. Once Extraction is completed, review the other columns like **Source** and **Paths** for details of the migration set that you populated by clicking on **...** and then on **View details** to see details, including duration of each step of the extraction. View this dialog during the extraction to see how the steps are progressing. 
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18.png)   
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
 
 ## Top-Up Extraction {#top-up-extraction-process}

@@ -7,24 +7,30 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 11835 {#release-11835}
+## Release 12142 {#release-12142}
  
-Summarized below are the continuous improvements for maintenance release 11835, which was publicly released on April 19, 2023. This maintenance release is an update from previous maintenance release 11382.
+Summarized below are the continuous improvements for maintenance release 12142, which was publicly released on May 31, 2023. This maintenance release is an update from previous maintenance release 11983.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
-### Fixed Issues {#fixed-issues-11835}
+### Enhancements {#enhancements-12142}
 
-- SITES-12573 - GraphQL queries using variables inside of a filter will fail if one variable is not specified. Please do not update to this release shall you use GraphQL with AEM as a Cloud Service.
-- SKYOPS-51970 - Identified regression of the FACT version used in the buildImage step, leading to un-matching user mapping.
-- GRANITE-44542 - Issues have been reported for customers who did not specify a package nodetype (by providing a .content.xml with jcr:primaryType) for folders included in the package filter. This caused these folders to be treated as nt:folder, creating issues in various cases.
-- SKYOPS-56928 - Apache HTTPD regression might cause 404 errors. If you experience those issues, for safety reasons, it is recommended to rollback to the previous version and to avoid any pipeline running during that time period.
+None.
 
-### Embedded Technologies {#embedded-tech-11835}
+### Known Issues {#known-issues-12142}
+
+None.
+
+### Fixed Issues {#fixed-issues-12142}
+
+- SITES-13636 - Fixed issue with clientlib dependencies of the image and carousel site clientlib missing.
+- SITES-13475 - Fixed issue with backward compatibility break for PanelContainer.js in 2.22.10 Core Components Version.
+
+### Embedded Technologies {#embedded-tech-12142}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM OAK |1.44-T20221206170501-6d59064 |[Oak API 1.44.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.44.0/index.html)| 
+|AEM OAK |1.50-T20230405052634-f9df4aa|[Oak API 1.50.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.50.0/index.html)| 
 |AEM SLING API |Version 2.27.0 |[Apache Sling API 2.27.0 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL|Version 1.4.20-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|AEM Core Components|Version 2.21.2|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM Core Components|Version 2.22.12|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
