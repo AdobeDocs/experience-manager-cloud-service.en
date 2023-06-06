@@ -101,6 +101,12 @@ Use Headless Adaptive Forms to enable your developers to create, publish, and ma
 
 You can send an email to `aem-forms-headless@adobe.com` from your official email ID to join the early adopter program. 
 
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### What is New {#what-is-new-foundation}
+
+* Additional Publish Regions: Sites Customers may license up to 3 publish regions, in addition to the primary region. Traffic is routed to additional publish farms, which results in lowered latency for certain requests, as well as increased resilience against regional outages. Contact your Adobe Account Manager for information about licensing [Additional Publish Regions](/help/operations/additional-publish-regions.md) for your programs.
+
 ## Maintenance Release Notes {#maintenance}
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
