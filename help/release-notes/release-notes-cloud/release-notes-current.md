@@ -75,14 +75,13 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
 
 *   Enhanced Adobe Acrobat Sign integration and compliance: AEM Forms now integrate with Adobe Acrobat Sign for Government, providing an advanced level of compliance and security for e-Signatures with Adaptive Form submissions for government associated accounts (Government departments and agencies).
 
-   Integration with Adobe Acrobat Sign for Government enables our partners and government customers to use electronic signatures in Adaptive Forms for some of the most mission-critical and sensitive lines of business. This additional layer of security ensures that all e-signatures are fully compliant with FedRAMP moderated compliances, providing our government customers with peace of mind.
+   Integration with Adobe Acrobat Sign for Government enables our partners and government customers to use electronic signatures in Adaptive Forms for some of the most mission-critical and sensitive lines of business. This additional layer of security ensures that all e-signatures are fully compliant with FedRAMP Moderate compliance, providing our government customers with peace of mind.
 
 *   Adaptive Forms within AEM Sites editor: You can now use AEM Sites editor to quickly create and add multiple forms to your sites pages. This capability allows content authors to create seamless data capture experiences within Sites pages using the power of adaptive forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. You can: 
 
     * Create an Adaptive Form by dragging and dropping form components to Adaptive Forms Container Component in AEM Sites editor.  
     * Use the Adaptive Forms Wizard within AEM Sites editor to create forms independent of any Sites page, providing you the freedom to reuse such forms across multiple pages.
     * Add multiple forms to a Sites page, streamlining the user experience and providing greater flexibility.
-
    
     >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
   
@@ -105,7 +104,7 @@ You can send an email to `aem-forms-headless@adobe.com` from your official email
 
 ### What is New {#what-is-new-foundation}
 
-* Additional Publish Regions: Sites Customers may license up to 3 publish regions, in addition to the primary region. Traffic is routed to additional publish farms, which results in lowered latency for certain requests, as well as increased resilience against regional outages. Contact your Adobe Account Manager for information about licensing [Additional Publish Regions](/help/operations/additional-publish-regions.md) for your programs.
+* Additional Publish Regions: Sites Customers may license up to three publish regions, in addition to the primary region. Traffic is routed to additional publish farms, which results in lowered latency for certain requests, as well as increased resilience against regional outages. Contact your Adobe Account Manager for information about licensing [Additional Publish Regions](/help/operations/additional-publish-regions.md) for your programs.
 
 ## Maintenance Release Notes {#maintenance}
 
