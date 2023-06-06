@@ -14,21 +14,21 @@ Organizations may license up to three additional publish regions.
 
 >[!NOTE]
 >
->This feature is currently only available for AEM Sites. It also cannot be applied to sandbox programs. In addition, please be aware that additional publish regions feature requires your program to be updated to AEM release version 10912 or higher.
+>This feature is currently only available for AEM Sites. It also cannot be applied to sandbox programs. In addition, please be aware that additional publish regions feature requires your program to be updated to AEM release version 12142 or higher.
 
 ## Use Cases {#use-cases}
 
-Below are a few use cases where organizations can benefit from licensing additional publish regions.
+The following are a few use cases where organizations can benefit from licensing additional publish regions.
 
-1. Organizations that receive significant or business-critical traffic from users far away from the primary region. Additional publish regions can reduce latency experienced by those visitors.
-1. Organizations that may suffer significant monetary or reputational damage when a site is not available. This can be mitigated by using additional publish regions to make the AEM publish tier more resilient to regional failure.
-1. Organizations whose content authors are located in a geographic location that is distant from the majority of publish tier visitors. The primary region can be chosen near the content authors' location, while additional publish regions can be configured near the publish side traffic, with both audiences benefiting from an optimized experience.
+1. For organizations that receive significant or business-critical traffic from users far away from the primary region, additional publish regions can reduce latency experienced by those visitors.
+1. For organizations that may suffer significant monetary or reputational damage when a site is not available, this can be mitigated by using additional publish regions to make the AEM publish tier more resilient to regional failure.
+1. For organizations whose content authors are located in a geographic location that is distant from the majority of publish tier visitors, the primary region can be chosen near the content authors' location, while additional publish regions can be configured near the publish side traffic, with both audiences benefiting from an optimized experience.
 
 ## Enabling and Configuring {#enabling-and-configuring}
 
-After licensing an additional publish region, it is configured using Cloud Manager. See the [Cloud Manager documentation](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) for detailed instructions.
+After licensing an additional publish region, the regions are configured using Cloud Manager. See the [Cloud Manager documentation](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) for detailed instructions.
 
-Additional publish regions are applied to stage and production environments, but not RDE or development environments.
+Additional publish regions are applied to stage and production environments, but not to RDE or development environments.
 
 ## Advanced Networking Considerations {#advanced-networking-considerations}
 
@@ -45,4 +45,4 @@ Please keep these limitations in mind when considering using additional publish 
 * A maximum of three additional publish regions can be added to any individual environment.
 * Additional regions are available on production programs only. The feature is not available in sandbox programs.
 * Additional publish regions are applied to stage and production environments only, not to RDE or development environments.
-* Additional publish regions require your program to be updated to AEM release version 10912 or higher.
+* Additional publish regions require your program to be updated to AEM release version 12142 or higher.
