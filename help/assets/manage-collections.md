@@ -9,6 +9,11 @@ exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
 ---
 # Manage collections {#manage-collections}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 A collection is a set of assets within Adobe Experience Manager Assets. Use collections to share assets between users. The set can be static collection or a dynamic collection that is based on search results.
 
 Unlike folders, a collection can include assets from different locations. You can share collections with various users that are assigned different levels of privileges, including viewing, editing, and so on.

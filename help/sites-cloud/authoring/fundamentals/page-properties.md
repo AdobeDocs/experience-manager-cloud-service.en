@@ -337,12 +337,4 @@ Once you have entered Bulk Editing you can:
   * You can update the values in the fields available.
     * The new values will be applied to all selected pages when you select **Done**.
     * When the field is multi-value (for example Tags), you can either append a new value or remove a common value.
-  * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. 
-
->[!NOTE]
->
->The page component can be configured to specify the fields available for bulk editing. See Configuring your page for bulk editing of page properties.
-
-<!--
->The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
--->
+  * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`.

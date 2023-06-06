@@ -13,6 +13,8 @@ hidefromtoc: yes
 
 <!-- Alexandru: drafting this for now
 
+NOTE: "LEGACY" for user mapping includes everything before (i.e. not including) 2.0.16 of CTT.
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="User Mapping Tool"
