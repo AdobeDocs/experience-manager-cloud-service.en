@@ -45,6 +45,10 @@ The following video provides a high level overview on how to deploy code to AEM 
 
 ### Deployments via Cloud Manager {#deployments-via-cloud-manager}
 
+<!-- Alexandru: temporarily commenting this out, until I get some clarification from Brian 
+
+![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
+
 Customers deploy custom code to cloud environments through Cloud Manager. It should be noted that Cloud Manager transforms locally assembled content packages into an artifact conforming to the Sling Feature Model, which is how an AEM as a Cloud Service application is described when running in a cloud environment. As a result, when looking at the packages in [Package Manager](/help/implementing/developing/tools/package-manager.md) on Cloud environments, the name will include "cp2fm" and the transformed packages have all metadata removed. They cannot be interacted with, meaning they cannot be downloaded, replicated, or opened. Detailed documentation about the converter can be [found here](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Content packages written for AEM as a Cloud Service applications must have a clean separation between immutable and mutable content and Cloud Manager will only install the mutable content, also outputting a message like:
@@ -57,7 +61,7 @@ The rest of this section will describe the composition and implications of immut
 
 All content and code persisted in the immutable repository must be checked into git and deployed through Cloud Manager. In other words, unlike current AEM solutions, code is never deployed directly to a running AEM instance. This ensures that the code running for a given release in any Cloud environment is identical, which eliminates the risk of unintentional code variation on production. As an example, OSGI configuration should be committed to source control rather than managed at runtime via the AEM web console's configuration manager.
 
-As application changes due to the Blue-Green deployment pattern are enabled by a switch, they cannot depend on changes in the mutable repository with the exception of service users, their ACLs, nodetypes and index definition changes.
+As application changes due to the deployment pattern are enabled by a switch, they cannot depend on changes in the mutable repository with the exception of service users, their ACLs, nodetypes, and index definition changes.
 
 For customers with existing code bases, it is critical to go through the repository restructuring exercise described in AEM documentation to ensure that content formerly under the /etc is moved to the right location.
 
@@ -229,23 +233,23 @@ The following Maven `POM.xml` snippet shows how 3rd party packages can be embedd
 
 ## How Rolling Deployments Work {#how-rolling-deployments-work}
 
-Like AEM updates, customer releases are deployed using a rolling deployment strategy in order to eliminate author cluster downtime under the right circumstances. The general sequence of events is as described below, where **Blue** is the old version of customer code and **Green** is the new version. Both Blue and Green are running the same version of AEM code.
+Like AEM updates, customer releases are deployed using a rolling deployment strategy in order to eliminate author cluster downtime under the right circumstances. The general sequence of events is described below, where nodes with both the old and new versions of customer code are running the same version of AEM code.
 
-* Blue version is active and a release candidate for Green is built and available
-* If there are any new or updated index definitions, the corresponding indexes are processed. Note that the blue deployment will always use the old indexes, while the green will always use the new indexes.
-* Green is starting up while Blue is still serving
-* Blue is running and serving while Green is being checked for readiness via health checks
-* Green nodes that are ready accept traffic and replace Blue nodes, which are brought down
-* Over time, Blue nodes are replaced by Green nodes until only Green remain, thus completing the deployment
-* Any new or modified mutable content is deployed
+* Nodes with the old version are active and a release candidate for the new version is built and becomes available.
+* If there are any new or updated index definitions, the corresponding indexes are processed. Note that nodes with the old version will always use the old indexes, while nodes with the new version will always use the new indexes.
+* Nodes with the new version start up while old versions still serve traffic.
+* Nodes with the old version are running and keep serving while nodes with the new version are checked for readiness via health checks.
+* Nodes with the new version that are ready will accept traffic and replace the nodes with the old version, which are brought down.
+* Over time, the nodes with the old version are replaced by nodes with the new version until only nodes with new versions remain, thus completing the deployment.
+* Any new or modified mutable content is then deployed.
 
 ## Indexes {#indexes}
 
-New or modified indexes will cause an additional indexing or re-indexing step before the new (Green) version can take on traffic. Details about index management in AEM as a Cloud Service can be found in [this article](/help/operations/indexing.md). You can check the status of the indexing job on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
+New or modified indexes will cause an additional indexing or re-indexing step before the new version can take on traffic. Details about index management in AEM as a Cloud Service can be found in [this article](/help/operations/indexing.md). You can check the status of the indexing job on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
 
 >[!NOTE]
 >
->The time needed for a rolling deployment will vary depending on the size of the index, since the Green version cannot accept traffic until the new index has been generated.
+>The time needed for a rolling deployment will vary depending on the size of the index, since the new version cannot accept traffic until the new index has been generated.
 
 At this time, AEM as a Cloud Service does not work with index management tools such as ACS Commons Ensure Oak Index tool.
 
@@ -263,15 +267,15 @@ In addition, the old release should be tested for compatibility with any new mut
 
 ### Service Users and ACL Changes {#service-users-and-acl-changes}
 
-Changing service users or ACLs needed to access content or code could lead to errors in the older AEM versions resulting in access to that content or code with outdated service users. To address this behavior, a recommendation is to make changes spread across at least 2 releases, with the first release acting as a bridge before cleaning up in the subsequent release.
+Changing service users or ACLs needed to access content or code could lead to errors in the older AEM versions resulting in access to that content or code with outdated service users. To address this behavior, the recommendation is to make changes spread across at least two releases, with the first release acting as a bridge before cleaning up in the subsequent release.
 
 ### Index Changes {#index-changes}
 
-If changes to indexes are made, it is important that the Blue version continues to use its indexes until it is terminated, while the Green version uses its own modified set of indexes. The developer should follow the index management techniques described [in this article](/help/operations/indexing.md).
+If changes to indexes are made, it is important that the new version continues to use its indexes until it is terminated, while the old version uses its own modified set of indexes. The developer should follow the index management techniques described [in this article](/help/operations/indexing.md).
 
 ### Conservative Coding for Rollbacks {#conservative-coding-for-rollbacks}
 
-If a failure is reported or detected after the deployment, it is possible that a rollback to the Blue version will be required. It would be wise to ensure that the Blue code is compatible with any new structures created by the Green version since the new structures (any mutable content content) will not be rolled back. If the old code is not compatible, fixes will need to be applied in subsequent customer releases.
+If a failure is reported or detected after the deployment, it is possible that a rollback to the old version will be required. It is recommended to ensure that the new code is compatible with any new structures created by that new version since the new structures (any mutable content content) will not be rolled back. If the old code is not compatible, fixes will need to be applied in subsequent customer releases.
 
 ## Rapid Development Environments (RDE) {#rde}
 
