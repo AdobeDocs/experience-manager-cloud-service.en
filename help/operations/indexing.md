@@ -137,7 +137,7 @@ In `ui.apps.structure/pom.xml`, the `filters` section for this plugin needs to c
 <filter><root>/oak:index</root></filter>
 ```
 
-Once the new index definition is added, the new application needs to be deployed via Cloud Manager. Upon deployment two jobs are started, responsible for adding (and merging if needed) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. The underlying repositories are being reindexed with the new index definitions, before the switch is taking place.
+Once the new index definition is added, the new application needs to be deployed via Cloud Manager. Upon deployment, two jobs are started that are responsible for adding (and merging if needed) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. The underlying repositories are reindexed with the new index definitions, before the switch takings place.
 
 ### NOTE
 
@@ -213,7 +213,7 @@ A rolling deployment can reduce downtime. It also allows for zero downtime upgra
 
 ### Read-Only and Read-Write Areas {#read-only-and-read-write-areas}
 
-Certain areas of the repository (read-only parts of the repository) can be different in the old and in the new version of the application. The read-only areas of the repository are typically "`/app`" and "`/libs`". In the following example, italic is used to mark read-only areas, while bold is used for read-write areas.
+Certain areas of the repository (read-only parts of the repository) can be different in the old and in the new version of the application. The read-only areas of the repository are typically `/app` and `/libs`. In the following example, italic is used to mark read-only areas, while bold is used for read-write areas.
 
 * **/**
 * */apps (read-only)*
@@ -233,7 +233,7 @@ During development, or when using on premise installations, indexes can be added
 
 ### Index Management With Rolling Deployments {#index-management-with-rolling-deployments}
 
-With rolling deployments, there is no downtime. During an upgrade, for some time, both the old version (for example, version 1) of the application, as well as the new version (version 2), are running concurrently, against the same repository. If version 1 requires a certain index to be available, then this index must not be removed in version 2: the index should be removed later, for example in version 3, at which point it is guaranteed that version 1 of the application is no longer running. Also, applications should be written such that version 1 works well, even if version 2 is running, and if indexes of version 2 are available.
+With rolling deployments, there is no downtime. For some time during an update, both the old version (for example, version 1) of the application, as well as the new version (version 2), run concurrently against the same repository. If version 1 requires a certain index to be available, then this index must not be removed in version 2. The index should be removed later, for example in version 3, at which point it is guaranteed that version 1 of the application is no longer running. Also, applications should be written such that version 1 works well, even if version 2 is running, and if indexes of version 2 are available.
 
 After upgrading to the new version is complete, old indexes can be garbage collected by the system. The old indexes might still stay for some time, in order to speed up rollbacks (if a rollback should be needed).
 
