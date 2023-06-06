@@ -7,6 +7,11 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 ---
 # Assigning AEM Product Profiles {#assign-profiles-aem}
 
+>[!CONTEXTUALHELP]
+>id="assets_user_entitlements"
+>title="Assign AEM Product Profiles"
+>abstract="You are not entitled to use Experience Manager Assets. Please contact your administrator."
+
 In this part of the [onboarding journey,](overview.md) you will learn how to grant you team access to AEM using AEM product profiles.
 
 ## Objective {#objective}

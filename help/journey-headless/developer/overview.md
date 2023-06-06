@@ -10,6 +10,8 @@ Welcome to the documentation for developers who are new to Adobe Experience Mana
 
 Learn about the powerful and flexible headless features, their capabilities, and how to leverage them on your first headless development project. This journey provides you with all the information you need to develop your first headless application.
 
+{{headless-trials-promotion}}
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_developer_resources"
 >title="AEM Headless developer resources and advanced documentation"
