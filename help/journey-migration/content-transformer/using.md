@@ -8,22 +8,22 @@ description: Using Content Transformer
 
 Follow the section below to understand the important considerations for using the Content Transformer (CT):
 
-* To use the Content Transformer, you must first run the Best Practices Analyzer on your AEM environment. 
+* To use the Content Transformer, you must first run the Best Practices Analyzer on your Adobe Experience Manager (AEM) environment. 
 * Although you can run the Content Transformer on your Production environment, it is recommended that you run the Content Transformer on a clone of your Production environment. More importantly, you need to ensure that the BPA and the CT are run on the same environment.
 * You need to be an admin on the environment where you want to run the Content Transformer.
-* Any operation that can change the source content ( move/remove/rename ) will by default create a backup package of the source paths under `/etc/packages/content-transformation` before the transformation. Although each operation dialog has an option to disable/enable backup package creation, it is strictly recommended to always have the enable packag creation selected.
+* Any operation that can change the source content ( move/remove/rename ) will by default create a backup package of the source paths under `/etc/packages/content-transformation` before the transformation. Although each operation dialog has an option to disable/enable backup package creation, it is strictly recommended to always have the enable package creation selected.
 * Each page in the CT is configured to list a maximum of 50 findings hence at a time a maximum of 50 findings can be transformed. This is done to provide a timeliness response on the UI. 
 
 ## Availability {#availability-ct}
 
-The Content Transformer is bundled with the [Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) that can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
+The Content Transformer is bundled with the [Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) that can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source AEM instance.
 
 >[!NOTE]
 >The Content Transformer is available with CTT version vXX.xx or higher.
 
 ## Opening the Content Transformer {#opening-ct}
 
-1. Log in to the source AEM instance as an administrator and go to aem start page: https://host:port/aem/start.html.
+1. Log in to the source AEM instance as an administrator and go to the start page: https://host:port/aem/start.html.
 1. Navigate to Tools > Operations > Content Migration
 
    ![image](/help/journey-migration/content-transformer/assets/ct-1.png)
@@ -31,7 +31,7 @@ The Content Transformer is bundled with the [Content Transfer Tool](/help/journe
    >[!NOTE]
    > Ensure that you have run the BPA report before, and verify it with the URL http://host:port/apps/best-practices-analyzer/content/BestPracticesReport.html
 
-1. Click on the card with title **Content Transformer for BPA report**
+1. Click the card with title **Content Transformer for BPA report**
 
    ![image](/help/journey-migration/content-transformer/assets/ct-2.png)
 
@@ -56,7 +56,7 @@ The Content Transformer is bundled with the [Content Transfer Tool](/help/journe
    >[!NOTE]
    > Any operation that can change the source content (`move`/`remove`/`rename`) will by default create a backup package of the source paths under `/etc/packages/content-transformation` before the transformation. Although each operation dialog has an option to disable/enable backup package creation, it is strictly recommended to always have the enable package creation selected.
 
-1. An example of a backup package created for the move operation of the paths is shown below, click on install to bring back the source paths. Note that the installation will only bring the source paths back to their original location and not delete the paths where they were moved during transformation, to delete the paths in the moved location, click on **Add Paths** button to add the location (for example `/etc/packages/content-transformation/paths`) and select the location and click on remove. 
+1. An example of a backup package created for the move operation of the paths is shown below, click install to bring back the source paths. Note that the installation will only bring the source paths back to their original location and not delete the paths where they were moved during transformation, to delete the paths in the moved location, click **Add Paths** button to add the location (for example `/etc/packages/content-transformation/paths`) and select the location and click **Remove**. 
 
    >[!CAUTION]
    > Do not delete `/etc/packages/content-transformation` as this is the location where backup packages reside, only when you are sure that you don't need these packages anymore, you can delete this location to reduce repository size.
