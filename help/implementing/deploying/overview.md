@@ -61,7 +61,7 @@ The rest of this section will describe the composition and implications of immut
 
 All content and code persisted in the immutable repository must be checked into git and deployed through Cloud Manager. In other words, unlike current AEM solutions, code is never deployed directly to a running AEM instance. This ensures that the code running for a given release in any Cloud environment is identical, which eliminates the risk of unintentional code variation on production. As an example, OSGI configuration should be committed to source control rather than managed at runtime via the AEM web console's configuration manager.
 
-As application changes due to the deployment pattern are enabled by a switch, they cannot depend on changes in the mutable repository with the exception of service users, their ACLs, nodetypes and index definition changes.
+As application changes due to the deployment pattern are enabled by a switch, they cannot depend on changes in the mutable repository with the exception of service users, their ACLs, nodetypes, and index definition changes.
 
 For customers with existing code bases, it is critical to go through the repository restructuring exercise described in AEM documentation to ensure that content formerly under the /etc is moved to the right location.
 
@@ -233,15 +233,15 @@ The following Maven `POM.xml` snippet shows how 3rd party packages can be embedd
 
 ## How Rolling Deployments Work {#how-rolling-deployments-work}
 
-Like AEM updates, customer releases are deployed using a rolling deployment strategy in order to eliminate author cluster downtime under the right circumstances. The general sequence of events is as described below, where nodes with both the old and new versions of customer code are both running the same version of AEM code.
+Like AEM updates, customer releases are deployed using a rolling deployment strategy in order to eliminate author cluster downtime under the right circumstances. The general sequence of events is described below, where nodes with both the old and new versions of customer code are running the same version of AEM code.
 
-* Nodes with the old version are active and a release candidate for the new version is built and available
-* If there are any new or updated index definitions, the corresponding indexes are processed. Note that nodes with the old  version will always use the old indexes, while nodes with the new version will always use the new indexes.
-* Nodes with the new version start up while old versions are still serving
-* Nodes with the old version are running and serving while nodes with the new version are being checked for readiness via health checks
-* Nodes with the new version that are ready will accept traffic and replace the nodes with the old version, which are brought down
-* Over time, the nodes with the old version are replaced by nodes with the new version until only nodes with new versions remain, thus completing the deployment
-* Any new or modified mutable content is deployed
+* Nodes with the old version are active and a release candidate for the new version is built and becomes available.
+* If there are any new or updated index definitions, the corresponding indexes are processed. Note that nodes with the old version will always use the old indexes, while nodes with the new version will always use the new indexes.
+* Nodes with the new version start up while old versions still serve traffic.
+* Nodes with the old version are running and keep serving while nodes with the new version are checked for readiness via health checks.
+* Nodes with the new version that are ready will accept traffic and replace the nodes with the old version, which are brought down.
+* Over time, the nodes with the old version are replaced by nodes with the new version until only nodes with new versions remain, thus completing the deployment.
+* Any new or modified mutable content is then deployed.
 
 ## Indexes {#indexes}
 
@@ -267,7 +267,7 @@ In addition, the old release should be tested for compatibility with any new mut
 
 ### Service Users and ACL Changes {#service-users-and-acl-changes}
 
-Changing service users or ACLs needed to access content or code could lead to errors in the older AEM versions resulting in access to that content or code with outdated service users. To address this behavior, a recommendation is to make changes spread across at least 2 releases, with the first release acting as a bridge before cleaning up in the subsequent release.
+Changing service users or ACLs needed to access content or code could lead to errors in the older AEM versions resulting in access to that content or code with outdated service users. To address this behavior, the recommendation is to make changes spread across at least two releases, with the first release acting as a bridge before cleaning up in the subsequent release.
 
 ### Index Changes {#index-changes}
 
@@ -275,7 +275,7 @@ If changes to indexes are made, it is important that the new version continues t
 
 ### Conservative Coding for Rollbacks {#conservative-coding-for-rollbacks}
 
-If a failure is reported or detected after the deployment, it is possible that a rollback to the old version will be required. It would be wise to ensure that the new code is compatible with any new structures created by that new version since the new structures (any mutable content content) will not be rolled back. If the old code is not compatible, fixes will need to be applied in subsequent customer releases.
+If a failure is reported or detected after the deployment, it is possible that a rollback to the old version will be required. It is recommended to ensure that the new code is compatible with any new structures created by that new version since the new structures (any mutable content content) will not be rolled back. If the old code is not compatible, fixes will need to be applied in subsequent customer releases.
 
 ## Rapid Development Environments (RDE) {#rde}
 
