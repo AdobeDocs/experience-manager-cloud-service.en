@@ -43,8 +43,8 @@ If the update to production environment fails, Cloud Manager will automatically 
 
 ## Composite Node Store {#composite-node-store}
 
-Updates in most cases will incur zero downtime, including for the authoring instance, which is a cluster of nodes. Rolling updates are possible due to [the composite node store feature in Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+In most cases, updates will incur zero downtime, including for the authoring instance, which is a cluster of nodes. Rolling updates are possible due to [the composite node store feature in Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-This feature allows AEM to reference multiple repositories simultaneously. In a rolling [blue-green deployment,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) the new green AEM version contains its own `/libs` (the TarMK based immutable repository), distinct from the older blue AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content` , `/conf` , `/etc` and others. 
+This feature allows AEM to reference multiple repositories simultaneously. In a [rolling deployment,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) the new AEM version contains its own `/libs` (the TarMK based immutable repository), distinct from the older AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content` , `/conf` , `/etc` and others. 
 
-Because both the blue and the green have their own versions of `/libs`, they can both be active during the rolling update, both taking on traffic until the blue is fully replaced by the green.
+Because both the old and the new versions have their own versions of `/libs`, they can both be active during the rolling update, and both can take on traffic until the old is fully replaced by the new.
