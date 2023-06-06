@@ -51,7 +51,7 @@ The capabilities of individual environments depend upon the solutions enabled in
      * The number of available/used environments is displayed in parentheses behind the environment type name.
    * Provide an environment **Name**.
    * Provide an environment **Description**.
-   * If you are adding a **Production + Stage** environment, you need to provide a environment name and description for both your production and staging environments.
+   * If you are adding a **Production + Stage** environment, you need to provide an environment name and description for both your production and staging environments.
    * Select a **Primary region** from the drop-down.
      * Note that this can not be changed after creation.
      * Depending on your available entitlements, you may be able to configure [multiple regions.](#multiple-regions)
@@ -93,7 +93,7 @@ If you wish to provision [advanced networking](/help/security/configuring-advanc
 
 ### Editing Multiple Publish Regions {#edit-regions}
 
-If you did not specify any additional regions initially, you can do so after the environments are created.
+If you did not specify any additional regions initially, you can do so after the environments are created if you have the necessary entitlements.
 
 You can also remove additional publish regions. However you can only add or only remove regions in one transaction. If you need to add one region and remove one region, first add, save your change and then remove (or vice versa).
 
