@@ -923,7 +923,15 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
     * [A List query with offset and limit](#list-offset-limit)
     * [A Paginated query with first and after](#paginated-first-after)
+
   * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
+
+* The filter `includeVariations` is included in the `List` and `Paginated` query types.  To retrieve Content Fragment Variations in the query results, then the `includeVariations` filter must be set to `true`.
+
+  * See [Sample Query for multiple Content Fragments, and their Variations, of a given Model](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+
+  >[!CAUTION]
+  >The filter `includeVariations` and the system-generated field `_variation` cannot be used together in the same query definition.
 
 * If you want to use a logical OR:
   * use ` _logOp: OR`
@@ -959,6 +967,10 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
       >
       >If the given variation does not exist for a Content Fragment, then the master variation will be returned as a (fallback) default.
 
+      >[!CAUTION]
+      >
+      >The system-generated field `_variation` cannot be used together with the filter `includeVariations`.
+
       * See [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
   * For [image delivery](#image-delivery):
@@ -972,6 +984,17 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
       * [Sample Query for Image Delivery with full parameters](#image-delivery-full-parameters)
 
       * [Sample Query for Image Delivery with a single specified parameter](#image-delivery-single-specified-parameter)
+
+  * `_tags` : to reveal the IDs of Content Fragments or Variations that contain tags; this is an array of `cq:tags` identifiers. 
+
+    * See [Sample Query - Names of All Cities Tagged as City Breaks](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
+    * See [Sample Query for Content Fragment Variations of a given Model that have a specific tag attached](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
+    * See [Sample Query with filtering by _tags ID and excluding variatons](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+    * See [Sample Query with filtering by _tags ID and including variatons](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+
+    >[!NOTE]
+    >
+    >Tags can also be queried by listing the Metadata of a Content Fragment.
 
   * And operations:
   
