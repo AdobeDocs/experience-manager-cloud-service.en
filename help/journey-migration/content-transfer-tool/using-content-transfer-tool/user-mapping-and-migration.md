@@ -19,9 +19,13 @@ As part of the transition journey to Adobe Experience Manager (AEM) as a Cloud S
 
 A major change to AEM as a Cloud Service is the fully integrated use of Adobe IDs for accessing the author tier. This process requires use of the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) for managing users and user groups. The user-profile information is centralized in the Adobe Identity Management System (IMS) that provides single sign-on across all Adobe cloud applications. For more details, refer to [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Because of this change, existing users must be mapped to their IMS IDs to avoid duplicate users on the Cloud Service author instance. Since groups in traditional AEM are fundamentally different from groups in IMS, groups are not mapped, but the two sets of groups must be reconciled after the migration is complete.
 
-## User Mapping and Migration Details {#user-mapping-detail}
+## User Migration Details {#user-migration-detail}
 
-The Content Transfer Tool and Cloud Acceleration Manager migrate any users associated with the content being migrated. This mapping is done automatically, and whether it is done can be controlled by a toggle before extraction is started. The toggle's default setting can be overridden by the user when starting extraction.
+The Content Transfer Tool and Cloud Acceleration Manager will migrate to the cloud system any users associated with the content being migrated.
+
+## User Mapping Details {#user-mapping-detail}
+
+AEM users can be mapped to corresponding Adobe IMS users with the same email address.  This mapping can be done automatically in CTT, and whether it is done can be controlled by a toggle before extraction is started. The toggle's default setting can be overridden by the user when starting extraction.
 
 * If the source system is an author instance, by default the choice to do the mapping is _on_, because it is the recommended process.
 * If the source system is a publish instance, by default the choice to do the mapping is _off_, because users are not normally migrated or used on publish instances.
