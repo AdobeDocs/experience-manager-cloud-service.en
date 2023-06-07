@@ -24,6 +24,10 @@ This page provides an overview of reusing content with MSM. The following pages 
 * [MSM Rollout Conflicts](rollout-conflicts.md)
 * [MSM Best Practices](best-practices.md)
 
+>[!NOTE]
+>
+>MSM can also be used for Assets, including Content Fragments. For further details see [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md) (only available through the Assets console).
+
 ## Possible Scenarios {#possible-scenarios}
 
 There are many use-cases for MSM and Live Copies. Some scenarios include:

@@ -30,6 +30,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2023 {#2023}
       + [Release Notes for 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
+      + [Release Notes for 2023.2.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
     + 2022 {#2022}
       + [Release Notes for 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
       + [Release Notes for 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
@@ -943,6 +944,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Actions Center](/help/operations/actions-center.md)
   + [Content Search and indexing](/help/operations/indexing.md)
   + [Content Replication Service](/help/operations/replication.md)
+  + [Additional Publish Regions](/help/operations/additional-publish-regions.md)
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Backup and Restore](/help/operations/backup.md)
@@ -966,4 +968,3 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
   + [Attributes and Types](/help/implementing/universal-editor/attributes-types.md)
   + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
-  

@@ -34,7 +34,7 @@ To configure receiving Actions Center email notifications, create the Product Pr
 
 ## Detailed User Flow {#detailed-user-flow}
 
-Clicking on the email will bring you to the Alerts Center, with a popup showing context for the notification you clicked on and in some cases, links to additional information describing how to take corrective action.
+Clicking on the email will bring you to the Actions Center, with a popup showing context for the notification you clicked on and in some cases, links to additional information describing how to take corrective action.
 
 ![Incident details](/help/operations/assets/incident-details.png)
 
@@ -58,7 +58,7 @@ Like all support tickets, it will appear in the [Adobe Admin Console's Support C
 
 AEM as a Cloud Service has several types of notifications, but only a subset appears in the Actions Center, as illustrated in the table below.
 
-| Notification Type  | Description  | How to configure  | Appears in Alerts Center | 
+| Notification Type  | Description  | How to configure  | Appears in Actions Center | 
 |---|---|---|---|
 | Operational incidents  | Critical incidents requiring immediate action  | User assigned to "Incident Notification - Cloud Service" product profile|  X |
 | Proactive recommendations  | Optimizations that should be planned  | User assigned to "Proactive Notification - Cloud Service" product profile|  X |
