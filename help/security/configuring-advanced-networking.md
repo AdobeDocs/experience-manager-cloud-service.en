@@ -535,3 +535,34 @@ It is possible to migrate between advanced networking types by following the fol
 > 
 
 If downtime would cause significant business impact, contact customer support for assistance, describing what has already been created and the reason for the change.
+
+## Advanced Networking Configuration for Additional Publish Regions {#advanced-networking-configuration-for-additional-publish-regions}
+
+When an additional region is added to an environment which already has advanced networking configured, traffic from the additional publish region that matches the advanced networking rules will by default route through the primary region. However, if the primary region becomes unavailable, the advanced networking traffic will be dropped if advanced networking hasn’t been enabled in the additional region. If you wish to optimize latency and increase availability in case one of the regions undergoes an outage, it is necessary to enable advanced networking for the additional publish region(s). Two different scenarios are described in the following sections.
+
+>[!NOTE]
+>
+>All regions share the same [environment advanced networking configuration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration), so it is not possible to route traffic to different destinations based on the region the traffic is egressing out of. 
+
+### Dedicated Egress IP Addresses {#additional-publish-regions-dedicated-egress}
+
+#### Advanced networking already enabled in the primary region {#already-enabled}
+
+If an advanced networking configuration is already enabled in the primary region, follow these steps:
+
+1. If you have locked down your infrastructure such that the dedicated AEM IP address is allow listed, it is recommended to temporarily disable any deny rules in that infrastructure. If this is not done, there will be a short period where requests from the new region's IP addresses will be denied by your own infrastructure. Note that this is not necessary if you have locked down your infrastructure via Fully Qualified Domain Name (FQDN), (`p1234.external.adobeaemcloud.com`, for example), since all AEM regions egress advanced networking traffic from the same FQDN
+1. Create the program-scoped networking infrastructure for the secondary region through a POST call to the Cloud Manager Create Network Infrastructure API, as described in advanced networking documentation. The only difference in the payload's JSON configuration relative to primary region will be the region property
+1. If your infrastructure needs to be locked down by IP to allow AEM traffic, add the IPs that match `p1234.external.adobeaemcloud.com`. There should be one per region. 
+
+#### Advanced networking not yet configured in any region {#not-yet-configured}
+
+The procedure is mostly similar to the previous instructions. However, if the production environment has not yet been enabled for advanced networking, there is an opportunity to test the configuration by first enabling it in a staging environment:
+
+1. Create networking infrastructure for all regions through POST call to the [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). The only difference in the payload's JSON configuration relative to primary region will be the region property.
+1. For the staging environment, enable and configure the environment scoped advanced networking by running `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. For more information, please consult the API documentation [here](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. If necessary, lock down external infrastructure, preferably by FQDN (for example `p1234.external.adobeaemcloud.com`). You can otherwise do it by IP address
+1. If the staging environment works as expected, enable and configure the environment-scoped advanced networking configuration for production. 
+
+#### VPN {#vpn-regions}
+
+The procedure is nearly identical to the dedicated egress IP addresses instructions. The only difference is that in addition to the region property being configured differently from the primary region, the `connections.gateway` field can optionally be configured to route to a different VPN endpoint operated by your organization, perhaps geographically closer to the new region.
