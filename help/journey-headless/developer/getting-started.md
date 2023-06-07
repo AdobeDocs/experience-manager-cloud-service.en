@@ -40,6 +40,10 @@ Content begins on the author instance. This is where content authors create thei
 
 Once content is created in the author instance, it must be published to be available to other services to consume. A publish instance contains all content that has been published.
 
+### Preview Service {#preview}
+
+Prior to publishing to the Publish instance you can also publish your Content Fragment to the **Preview Service** for testing and reviewing. This is done from the **Content Fragments** console.
+
 ### Replication {#replication}
 
 Replication is the act of transferring content from the author instance to the publish instance. This is done automatically by AEM when an author or other user with appropriate rights publishes content.

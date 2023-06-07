@@ -22,16 +22,19 @@ This article builds on these so you understand how to author your own content fo
 
 Before you get to grips with Content Fragments, here is a (very) quick introduction to using AEM....but nothing really replaces the experience of signing in and trying to use the system.
 
-### Author and Publish {#author-preview-publish}
+### Author, Preview, and Publish {#author-preview-publish}
 
-An AEM installation generally consists of at least two environments:
+An AEM installation generally consists of three environments:
 
 * Author
 * Publish
+* Preview
 
 You log into, and use the author environment to generate your content. When ready you then publish your content so that it becomes generally available. For headless this would be to other applications, for web pages this would be to readers on the web.
 
 For more details see the Authoring Concepts.
+
+From the **Content Fragments** console, you can also publish to the **Preview Service**, for testing and previewing, prior to Publish. See Publishing and Previewing a Fragment.
 
 ### Signing In {#signing-in}
 
@@ -257,9 +260,13 @@ OK, this might seem a slightly strange section, but once you open the Content Fr
 
 Once you have completed your fragment you can **Publish** it so that it is available to the headless applications.
 
-The publish actions are available in the editor (or from the toolbar of either the **Content Fragments** console or the **Assets** console):
+The publish actions are available in the editor:
 
 ![Content Fragment Editor - My Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
+
+>[!NOTE]
+>
+>You can also publish your fragment from either the **Assets** or **Content Fragments** console.
 
 ## What's Next {#whats-next}
 
@@ -283,21 +290,27 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
   
   * [Rail Selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-  * Publishing
-
-    * [Quick Publish](/help/assets/manage-publication.md#quick-publish)
-
-    * [Manage Publication](/help/assets/manage-publication.md#manage-publication) 
-
 * [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
  
   * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-    * [Apply the Configuration to your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+  * [Apply the Configuration to your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
   
-    * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+  * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
   
   * [Variations - Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+
+  * Publishing
+
+    * From the editor, or **Assets** console
+
+      * [Quick Publish](/help/assets/manage-publication.md#quick-publish)
+
+      * [Manage Publication](/help/assets/manage-publication.md#manage-publication) 
+
+    * From the **Content Fragments** Console
+
+      * [Publishing and Previewing a Content Fragment](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
 
   * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
