@@ -349,7 +349,11 @@ To manage the cache globally, you can [configure the OSGi settings](/help/implem
 
 >[!NOTE]
 >
->The OSGi configuration is only appropriate for publish instances. The configuration exists on author instances, but is ignored.
+>For cache control, the OSGi configuration is only appropriate for publish instances. The configuration exists on author instances, but is ignored.
+
+>[!NOTE]
+>
+>The **Persisted Query Service Configuration** is also used for [configuring the query response code](#configuring-query-response-code).
 
 The default OSGi configuration for publish instances:
 
@@ -365,6 +369,28 @@ The default OSGi configuration for publish instances:
   {style="table-layout:auto"}
 
 * and if not available, the OSGi configuration uses the [default values for publish instances](#publish-instances).
+
+## Configuring the query response code {#configuring-query-response-code}
+
+By default the `PersistedQueryServlet` sends a `200` response when it executes a query, regardless of the actual result.
+
+You can [configure the OSGi settings](/help/implementing/deploying/configuring-osgi.md) for the **Persisted Query Service Configuration** to control which status code is returned by the `/execute.json/persisted-query` endpoint, when there is an error in the persisted query.
+
+>[!NOTE]
+>
+>The **Persisted Query Service Configuration** is also used for [managing cache](#cache-osgi-configration).
+
+The field `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) can be defined as required:
+
+* `false` (default value):
+  It does not matter whether the persisted query is successful or not. The `/execute.json/persisted-query` will return the status code `200` and the `Content-Type` header returned will be `application/json`.
+
+* `true`:
+  The endpoint will return `400` or `500` as appropriate when there is any form of error upon running the persisted query. Also the returned `Content-Type` will be `application/graphql-response+json`.
+
+  >[!NOTE]
+  >
+  >For further details see https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
