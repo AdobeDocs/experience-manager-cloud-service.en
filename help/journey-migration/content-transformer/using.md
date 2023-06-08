@@ -19,7 +19,7 @@ Follow the section below to understand the important considerations for using th
 The Content Transformer is bundled with the [Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) that can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source AEM instance.
 
 >[!NOTE]
->The Content Transformer is available with CTT version vXX.xx or higher.
+>The Content Transformer is available with Content Transfer Tool v2.0.20  or higher.
 
 ## Opening the Content Transformer {#opening-ct}
 
