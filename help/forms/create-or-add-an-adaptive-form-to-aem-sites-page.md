@@ -271,4 +271,4 @@ On submission of a form, you can redirect the user to another webpage or a messa
 * [Style you Core Components based Adaptive Forms](using-themes-in-core-components.md)
 * [Use the rule editor to add dynamic behavior to Adaptive Forms](rule-editor.md)
 * [Change Layout of an Adaptive Form](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [Generate document of record](generate-document-of-record-core-components.md)
+

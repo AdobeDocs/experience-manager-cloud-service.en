@@ -189,11 +189,7 @@ You can have one or multiple recipients for an Adobe Sign agreement. When you ad
       >
       >Ensure that the email address of the first recipient or the only recipient (if there is single recipient) is not identical to [!DNL Adobe Sign] account used to configure AEM Cloud Services.
 
-    * **[!UICONTROL Recipient Authentication Method]:** Specify the method to authenticate a recipient before opening the Adobe Sign agreement. You can choose between phone, knowledge base, social identity-based authentication, and [Government ID](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) for [!DNL Adobe Acrobat Sign]. 
-
-       <!-- 
-      For [!DNL Adobe Acrobat Sign for Government] you can choose between phone and knowledge-based authentication.
-      -->
+    * **[!UICONTROL Recipient Authentication Method]:** Specify the method to authenticate a recipient before opening the Adobe Sign agreement. You can choose between phone, knowledge base, social identity-based authentication, and [Government ID](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) for [!DNL Adobe Acrobat Sign]. For [!DNL Adobe Acrobat Sign for Government] you can choose between phone and knowledge-based authentication.
 
    >[!NOTE]
    >
@@ -314,11 +310,9 @@ After [editing Adaptive Form properties for Adobe Sign](working-with-adobe-sign.
     * Cloud signatures: Sign with a [digital ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) hosted by a trust service provider. 
     * Adobe Acrobat or Reader: Download and open the document with Adobe Acrobat or Reader to sign using a smart card, USB token, or file-based digital ID.
 
-      <!-- 
       >[!NOTE]
       >
-      > * [!DNL Adobe Acrobat Sign for Government] can use Digitial Signature but can not use Cloud Signatures in the current version.
-      -->
+      > Digital Signature is also applicable to [!DNL Adobe Acrobat Sign for Government] but you can not apply it using Cloud Signatures.
 
    After adding the cloud signature field to the Adaptive Form, perform the following steps to complete the configuration process:
 
