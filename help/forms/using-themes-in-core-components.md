@@ -43,6 +43,7 @@ To customize a theme,
 * You should have a [basic knowledge of Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git) and Cloud Service Git repositories.
 
 To customize a Canvas theme:
+
 1. [Clone the Canvas theme](#1-download-canvas-theme-download-canvas-theme)
 1. [Understand the structure of the theme](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
 1. [Change name in package.json and package_lock.json](#changename-packagelock-packagelockjson) 
