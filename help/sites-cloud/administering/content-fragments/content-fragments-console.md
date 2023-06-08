@@ -120,7 +120,7 @@ The main/right panel (table view) of the console provides a range of information
 * **Preview**
   * Information only:
     * **In sync**: Content Fragment is in-sync on the **Author** and **Preview** services.
-    * **Out of sync**: Content Fragment is out-of-sync on the **Author** and ****Preview** services. You need to **Publish** to **Preview** to ensure that the two instances return to being in-sync.
+    * **Out of sync**: Content Fragment is out-of-sync on the **Author** and **Preview** services. You need to **Publish** to **Preview** to ensure that the two instances return to being in-sync.
     * blank: The Content Fragment does not exist on the **Preview** service.
 * **Modified**
   * Information only
