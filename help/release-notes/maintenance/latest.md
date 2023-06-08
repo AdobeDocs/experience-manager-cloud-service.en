@@ -7,26 +7,25 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 12142 {#release-12142}
+## Release 12255 {#release-12255}
  
-Summarized below are the continuous improvements for maintenance release 12142, which was publicly released on May 31, 2023. This maintenance release is an update from previous maintenance release 11983.
+Summarized below are the continuous improvements for maintenance release 12255, which was publicly released on June 14, 2023. This maintenance release is an update from previous maintenance release 12142.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
-### Enhancements {#enhancements-12142}
+### Enhancements {#enhancements-12255}
 
 None.
 
-### Known Issues {#known-issues-12142}
+### Known Issues {#known-issues-12255}
 
 None.
 
-### Fixed Issues {#fixed-issues-12142}
+### Fixed Issues {#fixed-issues-12255}
 
-- SITES-13636 - Fixed issue with clientlib dependencies of the image and carousel site clientlib missing.
-- SITES-13475 - Fixed issue with backward compatibility break for PanelContainer.js in 2.22.10 Core Components Version.
+None.
 
-### Embedded Technologies {#embedded-tech-12142}
+### Embedded Technologies {#embedded-tech-12255}
 
 |Technology|Version|Link|
 |---|---|---|
