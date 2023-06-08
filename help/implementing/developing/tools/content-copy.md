@@ -97,7 +97,7 @@ Note that when editing your content set, you may need to expand the configured p
 Once a content set has been created, you can use it to copy content. Follow these steps to copy content.
 
 >[!NOTE]
-> Content Copy should not be initiated on an environment while a [content transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) operation is running on that environment. 
+> Content Copy should not be initiated on an environment while a [content transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) operation is running on that environment. 
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
