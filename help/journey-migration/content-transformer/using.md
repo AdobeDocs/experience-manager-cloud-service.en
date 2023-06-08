@@ -35,7 +35,7 @@ The Content Transformer is bundled with the [Content Transfer Tool](/help/journe
 
    ![image](/help/journey-migration/content-transformer/assets/ct-2.png)
 
-   Below is an example of how the Content Transformer Overview page will look if the creation of the BPA report was successful and if it found content related issues:
+   Below is an example of how the Content Transformer Overview page will look like if the creation of the BPA report was successful and if it found content related issues:
 
    On the side rail, the time left for the BPA report to expire is also shown. It is recommended to run the Content transformer with the latest BPA report to avoid missing any content-related findings. Each page in the CT is configured to list a maximum of 50 findings hence at a time a maximum of 50 findings can be transformed. This is done to provide a timeliness response on the UI. 
 
