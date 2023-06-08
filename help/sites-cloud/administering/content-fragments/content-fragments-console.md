@@ -94,11 +94,11 @@ Selecting a specific fragment will open a toolbar focused on the actions availab
 ![Content Fragments console - toolbar for a selected fragment](assets/cfc-fragment-toolbar.png)
 
 * **Open**
-* **Publish** (and **Unpublish**)
+* **[Publish](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)** (and **[Unpublish](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#unpublishing-a-fragment)**)
 * **Copy**
 * **Move**
 * **Rename**
-* **Delete**
+* **[Delete](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#deleting-a-fragment)**
 
 >[!NOTE]
 >
@@ -117,6 +117,11 @@ The main/right panel (table view) of the console provides a range of information
     Hovering over the folder name will show the JCR path.
 * **Status**
   * Information only
+* **Preview**
+  * Information only:
+    * **In sync**: Content Fragment is in-sync on the **Author** and **Preview** services.
+    * **Out of sync**: Content Fragment is out-of-sync on the **Author** and **Preview** services. You need to **Publish** to **Preview** to ensure that the two instances return to being in-sync.
+    * blank: The Content Fragment does not exist on the **Preview** service.
 * **Modified**
   * Information only
 * **Modified By**
