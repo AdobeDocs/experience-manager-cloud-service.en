@@ -8,6 +8,9 @@ hidefromtoc: yes
 
 # Create or add an Adaptive Form to AEM Sites page {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
+|Caution|[!BADGE pre-release documentation]{type=Caution tooltip="Yellow status"}|
+<span class="preview"> This is pre-release documentation and subject to change.</span>
+
 With AEM Forms, you can seamlessly incorporate adaptive forms into your web pages. This allows your visitors to conveniently fill and submit forms without ever leaving the page they are on. By doing so, they can effortlessly stay engaged with other elements of the website while actively interacting with the form. 
 
 You can use AEM page editor to quickly create and add multiple forms to your AEM Sites pages. Using AEM Sites editor allows content authors to create seamless data capture experiences within a Sites page using the power of adaptive forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also allows you to use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager.
@@ -116,7 +119,7 @@ To enable complete functionality of the Adaptive Forms Container component, add 
 
 +++ 
 
-+++ Enable **[!UICONTROL Adaptive Forms Container]
++++ Enable Adaptive Forms Container
 
 To enable [!UICONTROL Adaptive Forms Container] component in template's policy, perform the following steps:
 
@@ -240,7 +243,7 @@ You can use the Form Data Model Prefill service to prepopulate fields of a form 
 
 ### Use Forms Portal Draft Prefill service {#forms-portal-prefill-service} 
 
-You can use the Forms Portal Draft Prefill service to prepopulate fields of a form using a draft of the saved adaptive form. Before using the Forms Portal Draft Prefill service, ensure [Adaptive Forms Portal components are enabled and configured ](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) for your environment.
+You can use the Forms Portal Draft Prefill service to prepopulate fields of a form using a draft of the saved adaptive form. Before using the Forms Portal Draft Prefill service, ensure that [Adaptive Forms Portal components are enabled and configured ](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) for your environment.
 
 1. Open the AEM Sites page editor or Experience Fragment that contains the Adaptive Form.
 1. Open the properties of the page and configure the Cloud Configuration.
@@ -261,7 +264,7 @@ On submission of a form, you can redirect the user to another webpage or a messa
 1. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box to configure Data Models opens. 
 1. Open the **[!UICONTROL Submission]** tab. 
 
-    * To configure a Redirect URL, for on Submit option, select the Redirect to URL option, and provide an absoulte address or a Redirect URL or relative path of an AEM Sites page.  
+    * To configure a Redirect URL, for on Submit option, select the Redirect to URL option, and provide an absolute address or a Redirect URL or relative path of an AEM Sites page.  
   
     * To configure a custom or thank you message, for on Submit option, select the Show Message option, and provide a message in the Message content box. It is a rich text box, you can use the full screen option to view all the available rich text items. 
 
