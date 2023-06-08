@@ -197,6 +197,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + Best Practices Analyzer {#best-practices-analyzer}
       + [Overview](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [Using Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
+    + Content Transformer {#content-transformer}
+      + [Overview](/help/journey-migration/content-transformer/overview.md)
+      + [Using Content Transformer](/help/journey-migration/content-transformer/using.md) 
     + Content Transfer Tool {#content-transfer-tool}
       + [Overview](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
       + [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
