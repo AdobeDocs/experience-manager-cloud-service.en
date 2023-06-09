@@ -56,7 +56,7 @@ To upload a file (or multiple files), you can either select them on your desktop
 
 >[!IMPORTANT]
 >
->Assets that you upload into Experience Manager that have a file name greater than 100 characters has a shortened name when they are used in Dynamic Media.
+>Assets that you upload into Experience Manager that have a file name greater than 100 characters have a shortened name when they are used in Dynamic Media.
 >
 >The first 100 characters in the file name are used as is; any remaining characters are replaced by an alphanumeric string. This renaming method ensures a unique name when the asset is used in Dynamic Media. It is also meant to accommodate the maximum asset file name length allowed in Dynamic Media.
 
