@@ -70,10 +70,6 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
 
 ### Features in [!DNL Forms] prerelease {#prerelease-features-forms}
 
-* [Enhanced Adobe Acrobat Sign integration and compliance](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms now integrate with Adobe Acrobat Sign for Government, providing an advanced level of compliance and security for e-Signatures with Adaptive Form submissions for government associated accounts (Government departments and agencies).
-
-    Integration with Adobe Acrobat Sign for Government enables our partners and government customers to use electronic signatures in Adaptive Forms for some of the most mission-critical and sensitive lines of business. This additional layer of security ensures that all e-signatures are fully compliant with FedRAMP Moderate compliance, providing our government customers with peace of mind.
-
 * [Adaptive Forms within AEM Page Editor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): You can now use AEM Page Editor to quickly create and add multiple forms to your sites pages. This capability allows content authors to create seamless data capture experiences within Sites pages using the power of adaptive forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. You can: 
 
     * Create an Adaptive Form by dragging and dropping form components to Adaptive Forms Container Component in AEM Sites editor or Experience Fragments.  
@@ -81,7 +77,11 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
     * Add multiple forms to a Sites page, streamlining the user experience and providing greater flexibility.
    
         >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
-  
+
+* [Enhanced Adobe Acrobat Sign integration and compliance](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms now integrate with Adobe Acrobat Sign for Government, providing an advanced level of compliance and security for e-Signatures with Adaptive Form submissions for government associated accounts (Government departments and agencies).
+
+    Integration with Adobe Acrobat Sign for Government enables our partners and government customers to use electronic signatures in Adaptive Forms for some of the most mission-critical and sensitive lines of business. This additional layer of security ensures that all e-signatures are fully compliant with FedRAMP Moderate compliance, providing our government customers with peace of mind.
+
 * Enhance error handling with custom error handlers in rule editor: You can now invoke a custom function (using Client Library) in response to an error returned by an external service and provide a tailored response to end users or take specific actions for errors returned by a service. For instance, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down.
 
     This helps improve your overall error-handling capability by introducing standards-based error responses, that are backward compatible with OOTB error handlers, with greater flexibility and control.

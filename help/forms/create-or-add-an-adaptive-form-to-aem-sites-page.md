@@ -130,14 +130,15 @@ To enable [!UICONTROL Adaptive Forms Container] component in template's policy, 
 
 ## Create an Adaptive Form {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
-You can create a brand-new form from scratch, tailoring it specifically to your requirements and design preferences, directly in an AEM sites page or in Experience Fragment. For single-use forms, direct authoring to an AEM sites page is recommended, while Experience Fragments are ideal for forms that need to be reused across multiple pages on your website.
+You can create a brand-new form from scratch, tailoring it specifically to your requirements and design preferences, directly in an AEM Sites page or in Experience Fragment. For single-use forms, direct authoring to an AEM Sites page is recommended, while Experience Fragments are ideal for forms that need to be reused across multiple pages on your website.
 
 * [Create a form in an AEM Sites page](#create-an-adaptive-form-in-sites-editor)
 * [Create a form in an Experience Fragment](#create-an-adaptive-form-in-experience-fragment) 
+* [Convert an Adaptive Form in AEM Sites page to an Experience Fragment](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment) 
 
 ### Create a form in an AEM Sites page {#create-an-adaptive-form-in-sites-editor}
 
-You can use the Adaptive Form Container component in AEM Sites editor to create a custom form. The component allows you to create a form by dragging and dropping the form components. The form components are based on Core Components. You can easily customize these as per the requirement of your organization. 
+You can use the Adaptive Form Container component in AEM Page Editor to create a custom form. The component allows you to create a form by dragging and dropping the form components. The form components are based on Core Components. You can easily customize these as per the requirement of your organization. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
@@ -163,7 +164,7 @@ To create an Adaptive Form in an Experience Fragment:
 
 Next, you [set the Submit Action](#configure-submit-action-for-form) and advanced properties. 
 
-### Convert an Adaptive Form in AEM Sites page to an Experience Fragment
+### Convert an Adaptive Form in AEM Sites page to an Experience Fragment {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
 You can convert an existing Adaptive Form in a Sites Page Editor to an Experience Fragment to reuse the form across multiple pages or sites. 
 
