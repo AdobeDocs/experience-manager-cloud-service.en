@@ -79,7 +79,7 @@ To use CAPTCHA in Adaptive Forms:
 1. Select the Captcha component you added and tap ![cmppr](assets/configure-icon.svg) to edit its properties.
 1. Specify a title for the CAPTCHA widget. The default value is **[!UICONTROL Captcha]**. Select **[!UICONTROL Hide title]** if you do not want title to appear.
 1. From the **[!UICONTROL Captcha service]** drop-down, select **[!UICONTROL reCaptcha]** to enable reCAPTCHA service if you configured it as described in [ReCAPTCHA service by Google](#google-recaptcha). Select a configuration from the Settings drop-down.
-1. Select the type as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. You can also select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity. The protected by reCAPTCHA badge, displayed below, is displayed on the protected forms.  
+1. Select the type as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. You can also select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity. The protected by reCAPTCHA badge, displayed below, is displayed on the protected forms. 
 
     ![Google protected by reCAPTCHA badge](assets/google-recaptcha-v2.png)
 
@@ -100,6 +100,10 @@ For example, the CAPTCHA component must display in an Adaptive Form only if the 
 Tap the **[!UICONTROL Currency Value]** field in the form and create the following rules:
 
 ![Show or hide rules](assets/rules-show-hide-captcha.png)
+
+   >[!NOTE]
+   >
+   >If you have selected **[!UICONTROL Invisible]** option for CAPTCHA component then show/hide option is not applicable.
 
 ### Validate CAPTCHA {#validate-captcha}
 
