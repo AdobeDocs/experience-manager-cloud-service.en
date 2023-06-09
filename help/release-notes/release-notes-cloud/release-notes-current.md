@@ -74,7 +74,7 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
 
     Integration with Adobe Acrobat Sign for Government enables our partners and government customers to use electronic signatures in Adaptive Forms for some of the most mission-critical and sensitive lines of business. This additional layer of security ensures that all e-signatures are fully compliant with FedRAMP Moderate compliance, providing our government customers with peace of mind.
 
-* [Adaptive Forms within AEM Sites editor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): You can now use AEM Sites editor to quickly create and add multiple forms to your sites pages. This capability allows content authors to create seamless data capture experiences within Sites pages using the power of adaptive forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. You can: 
+* [Adaptive Forms within AEM Page Editor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): You can now use AEM Page Editor to quickly create and add multiple forms to your sites pages. This capability allows content authors to create seamless data capture experiences within Sites pages using the power of adaptive forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. You can: 
 
     * Create an Adaptive Form by dragging and dropping form components to Adaptive Forms Container Component in AEM Sites editor or Experience Fragments.  
     * Use the Adaptive Forms Wizard within AEM Sites editor to create forms independent of any Sites page, providing you the freedom to reuse such forms across multiple pages.
@@ -86,7 +86,7 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
 
     This helps improve your overall error-handling capability by introducing standards-based error responses, that are backward compatible with OOTB error handlers, with greater flexibility and control.
 
-## Headless Adaptive Forms early adopter program {#forms-early-adopter}
+### Headless Adaptive Forms early adopter program {#forms-early-adopter}
 
 Use Headless Adaptive Forms to enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. Headless adaptive forms help you: 
 
