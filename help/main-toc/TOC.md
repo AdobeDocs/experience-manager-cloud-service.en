@@ -30,6 +30,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2023 {#2023}
       + [Release Notes for 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
+      + [Release Notes for 2023.2.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
     + 2022 {#2022}
       + [Release Notes for 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
       + [Release Notes for 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
@@ -71,6 +72,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
       + [Release Notes for 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
       + [Release Notes for 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)      
       + [Release Notes for 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
@@ -115,6 +117,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Release Notes for 2020.2.0](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+    + 2023 {#2023}
+      + [Release Notes for 2023.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-03-0.md)
     + 2022 {#2022}
       + [Release Notes for 2022.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-12-0.md)
       + [Release Notes for 2022.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
@@ -195,6 +199,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + Best Practices Analyzer {#best-practices-analyzer}
       + [Overview](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [Using Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
+    + Content Transformer {#content-transformer}
+      + [Overview](/help/journey-migration/content-transformer/overview.md)
+      + [Using Content Transformer](/help/journey-migration/content-transformer/using.md) 
     + Content Transfer Tool {#content-transfer-tool}
       + [Overview](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
       + [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
@@ -213,19 +220,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Overview](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
         + [Important Considerations](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
         + [Using User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
-      + Legacy Content Transfer Tool {#legacy}
-        + [Overview](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
-        + [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
-        + [Guidelines and Best Practices for Using Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
-        + [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
-        + [Validating Content Transfers](/help/journey-migration/content-transfer-tool/ctt-legacy/validating-content-transfers-legacy.md)
-        + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/ctt-legacy/handling-large-content-repositories-legacy.md)
-        + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/ctt-legacy/extracting-content-legacy.md)
-        + [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/ctt-legacy/ingesting-content-legacy.md)
-        + [Viewing Logs for a Migration Set](/help/journey-migration/content-transfer-tool/ctt-legacy/viewing-logs-legacy.md)
-        + [Deleting a Migration Set](/help/journey-migration/content-transfer-tool/ctt-legacy/deleting-migrationset-legacy.md)
-        + [Running the Content Transfer Tool on a Publish Instance](/help/journey-migration/content-transfer-tool/ctt-legacy/running-content-transfer-tool-publish-instance-legacy.md)
-        + [Troubleshooting Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/troubleshooting-content-transfer-tool-legacy.md)
   + Code Refactoring Tools {#refactoring-tools}
     + [Unified Experience](/help/journey-migration/unified-experience.md)
     + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
@@ -381,6 +375,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Accessibility in [!DNL Assets]](/help/assets/accessibility.md)
   + Manage digital assets {#manage}
     + [Micro-Frontend Asset Selector](/help/assets/asset-selector.md)
+    + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
     + [Share assets](/help/assets/share-assets.md)
     + [Monitor activities and DAM tasks](/help/assets/assets-activity-history.md)
     + [Get started using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
@@ -516,6 +511,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Setup and migrate {#setup-configure-migrate}
     + [Onboard to Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
     + [Setup a local development environment](/help/forms/setup-local-development-environment.md)
+    + [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
     + [Configure Unified Storage Connector](/help/forms/configure-unified-storage-connector.md)
     + [Migrate from [!DNL AEM 6.5 Forms] or earlier to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
@@ -527,6 +523,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Integrate AEM Forms as a Cloud Service with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
       + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
       + [Embed an Adaptive Forms in an AEM Sites page](/help/forms/embed-adaptive-form-aem-sites.md)
+      + [Create or add an Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
     + Form Data Model {#use-form-data-model}
       + [Connect your data sources to Cloud Service](/help/forms/data-integration.md)
       + [Configure data sources](/help/forms/configure-data-sources.md)
@@ -951,9 +948,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Maintaining an AEM Connector](/help/connectors/maintain.md)
 + Operations {#operations}
   + [Operations and Maintenance on AEM as a Cloud Service](/help/operations/home.md)
-  + [Notification Center](/help/operations/notification-center.md)
+  + [Actions Center](/help/operations/actions-center.md)
   + [Content Search and indexing](/help/operations/indexing.md)
   + [Content Replication Service](/help/operations/replication.md)
+  + [Additional Publish Regions](/help/operations/additional-publish-regions.md)
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Backup and Restore](/help/operations/backup.md)
