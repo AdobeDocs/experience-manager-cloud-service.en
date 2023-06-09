@@ -17,7 +17,7 @@ For more information on the AEM as a Cloud Service Mail Service, see [Sending Em
 1. Search for **Azure Active Directory** in the search bar and click on the result. Alternatively, you can browse directly to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Click on **App Registration** - **New Registration**
 
-   ![](assets/oauth-outlook1.png)
+   ![Start app registration process](assets/oauth-outlook1.png)
 
 1. Fill in the information according to your requirements, then click on **Register**
 1. Go to the newly created app, and select **API Permissions** 
