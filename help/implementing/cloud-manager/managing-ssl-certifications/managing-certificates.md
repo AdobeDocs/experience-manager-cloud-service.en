@@ -28,6 +28,7 @@ When a certificate expires any domains that are in use with the expired certific
 1. Navigate to the **SSL Certificates** screen from the **Environments** screen.
 1. You will see a table with a row for each SSL certificate that has been successfully installed in your program. Click on the ellipsis button at the far right in the row of the certificate you wish to update and select **View &amp; Update**.
 1. The certificate details are displayed and can be updated.
+1. Run the pipeline in order to deploy the updated certificate(s).
 
 >[!NOTE]
 >
@@ -50,6 +51,7 @@ Follow these steps to delete an SSL certificate.
 1. Navigate to the **SSL Certificates** screen from the **Environments** screen.
 1. You will see a table with a row for each SSL certificate that has been successfully installed in your program. Click on the ellipsis button at the far right in the row of the certificate you wish to delete and select **Delete**.
 1. Confirm the deletion in the **Delete SSL Certificate** dialog.
+1. Run the pipeline in order to deploy the updated certificate(s).
 
 >[!NOTE]
 >
