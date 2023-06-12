@@ -65,9 +65,11 @@ Next to providing timeouts also a proper handling of such timeouts as well as un
 
 AEM as a Cloud Service only supports the Touch UI for 3rd party customer code. Classic UI is not available for customization.
 
-## Avoid Native Binaries {#avoid-native-binaries}
+## No Native Binaries or Native Libraries {#avoid-native-binaries}
 
-Code will not be able to download binaries at runtime nor modify them. For example, it will not be able to unpack `jar` or `tar` files.
+Native binaries and libraries must not be deployed to or installed in cloud environments.
+
+In addition, code should not attempt to download native binaries or native java extensions (e.g., JNI) at runtime.
 
 ## No Streaming Binaries through AEM as a Cloud Service {#no-streaming-binaries}
 
