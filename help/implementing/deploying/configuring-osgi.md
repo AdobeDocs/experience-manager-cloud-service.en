@@ -24,7 +24,7 @@ Configuration changes are defined in the AEM Project's code packages (`ui.apps`)
 
 The format of OSGi configuration files is JSON-based using the `.cfg.json` format defined by the Apache Sling project.
 
-OSGi configurations target OSGi components via their Persistent Identity (PID), which defaults to the OSGi component's Java™ class name. For example, to provide OSGi configuration for an OSGi service implemented by:
+OSGi configurations target OSGi components via their Persistent Identity (PID), which defaults to the OSGi component's Java&trade; class name. For example, to provide OSGi configuration for an OSGi service implemented by:
 
 `com.example.workflow.impl.ApprovalWorkflow.java`
 
@@ -130,7 +130,7 @@ There are three varieties of OSGi configuration values that can be used with Ado
 
 The common case for OSGi uses inline OSGi configuration values. Environment-specific configurations are used only for specific use cases where a value differs between dev environments.
 
-![](assets/choose-configuration-value-type_res1.png)
+![Decisional tree on how to use the appropiate configuration value type](assets/choose-configuration-value-type_res1.png)
 
 Environment-specific configurations extend the traditional, statically defined OSGi configurations that contain inline values, providing the ability to manage the OSGi configuration values externally via the Cloud Manager API. It is important to understand when the common and traditional approach of defining inline values and storing them in Git, should be used, versus abstracting the values into environment-specific configurations.
 
@@ -277,7 +277,7 @@ With a default value provided, the placeholder is replaced either with the per-e
 
 The following applies to both environment specific and secret configuration values.
 
-Variables can be defined in the local environment so they are picked up by the local AEM at runtime. For example, on Linux®:
+Variables can be defined in the local environment so they are picked up by the local AEM at runtime. For example, on Linux&reg;:
 
 ```bash
 export ENV_VAR_NAME=my_value

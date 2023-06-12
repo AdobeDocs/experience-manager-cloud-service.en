@@ -23,7 +23,7 @@ Cloud Manager makes it easy to retrieve your repository info by using the **Acce
    * The git username.
    * The git password, the value of which is shown when the **Generate Password** button is clicked.
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
+   ![Repo Info View](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
 Using these credentials, the user can clone a local copy of the repository, and make changes in that local repository, and when ready can commit any code changes back to the remote code repository in Cloud Manager.
 
