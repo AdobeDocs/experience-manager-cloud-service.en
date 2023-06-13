@@ -19,11 +19,30 @@ None.
 
 ### Known Issues {#known-issues-12255}
 
-None.
+- ASSETS-25729 - View switcher menu is cut off 
+- ASSETS-25728 - Reprocess Asset option not available in search view
 
 ### Fixed Issues {#fixed-issues-12255}
 
-None.
+- Various accessibility related updates
+- ASSETS-15116 - "Go to location" option available in Assets search view 
+- ASSETS-17453 - (Dynamic Media) Unable to select a custom thumbnail for videos
+- ASSETS-19279 - Assets download archive for large files
+- ASSETS-19544 - Last modified by user for asset updates
+- ASSETS-20146 - (Touch UI) Assets Download Report Failed Reports due to validation errors show up always on the top of the list page for reports
+- ASSETS-21056 - Optimize Asset Reference Performance to minimize writes
+- ASSETS-21909 - Not able to see smart crop video when vtt fails to download
+- ASSETS-22261 - Linkshare downloads folder structure inconsistent with Assets UI downloads
+- ASSETS-22550 - Search filter panel now open by default 
+- ASSETS-22920 - Unpublishing folder from Brand Portal does not mark the assets within as unpublished\
+- ASSETS-22922 - Disabled Viewer presets show up in Dynamic Media component
+- ASSETS-23461 - Brand Portal Quick Publish from Assets search view 
+- ASSETS-23466 - Indesign Server inaccessible link handling fails to resolve AAL links containing spaces
+- ASSETS-23469 - Default Asset Filters collide with custom filters
+- ASSETS-23981 - Sorting Function for Titles Not Working in Collection Links
+- ASSETS-24723 - Published Assets were reprocessed again without user intervention
+- GRANITE-45385 - Migrate Tree Activation to use sling job instead of workflow
+- SITES-13838 - Release Core Components 2.23.0
 
 ### Embedded Technologies {#embedded-tech-12255}
 
