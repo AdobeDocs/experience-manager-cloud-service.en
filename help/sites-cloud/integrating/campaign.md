@@ -16,8 +16,8 @@ There are a number of Adobe Campaign Classic (ACC) versions. The support for int
 
 |ACC Version|Integration with AEMaaCS|
 |---|---|
-|v7|Unsupported|
-|v8|Unsupported|
+|[v7](https://experienceleague.adobe.com/docs/campaign-classic.html)|Unsupported|
+|[v8](https://experienceleague.adobe.com/docs/campaign-v8.html)|Unsupported|
 |Web UI*|Supported|
 
 *The Web UI for Adobe Campaign Classic is anticipated by the end of 2023.
