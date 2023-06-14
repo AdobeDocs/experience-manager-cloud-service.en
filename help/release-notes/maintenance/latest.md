@@ -42,7 +42,6 @@ None.
 - ASSETS-23981 - Sorting Function for Titles Not Working in Collection Links
 - ASSETS-24723 - Published Assets were reprocessed again without user intervention
 - GRANITE-45385 - Migrate Tree Activation to use sling job instead of workflow
-- SITES-13838 - Release Core Components 2.23.0
 
 ### Embedded Technologies {#embedded-tech-12255}
 
