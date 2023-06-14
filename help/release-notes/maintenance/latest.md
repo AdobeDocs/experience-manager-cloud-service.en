@@ -9,7 +9,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 12255 {#release-12255}
  
-Summarized below are the continuous improvements for maintenance release 12255, which was publicly released on June 14, 2023. This maintenance release is an update from previous maintenance release 12142.
+Summarized below are the continuous improvements for maintenance release 12255, which was publicly released on June 13, 2023. This maintenance release is an update from previous maintenance release 12142.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
