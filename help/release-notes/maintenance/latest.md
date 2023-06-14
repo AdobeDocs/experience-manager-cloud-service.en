@@ -7,43 +7,25 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 12255 {#release-12255}
+## Release 12255 {#release-X}
  
-Summarized below are the continuous improvements for maintenance release 12255, which was publicly released on June 13, 2023. This maintenance release is an update from previous maintenance release 12142.
+Summarized below are the continuous improvements for maintenance release X, which was publicly released on June X, 2023. This maintenance release is an update from previous maintenance release 12255.
 
 Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
 
-### Enhancements {#enhancements-12255}
+### Enhancements {#enhancements-X}
 
 None.
 
-### Known Issues {#known-issues-12255}
+### Known Issues {#known-issues-X}
 
-- ASSETS-25729 - View switcher menu is cut off 
-- ASSETS-25728 - Reprocess Asset option not available in search view
+None.
 
-### Fixed Issues {#fixed-issues-12255}
+### Fixed Issues {#fixed-issues-X}
 
-- Various accessibility-related updates
-- ASSETS-15116 - "Go to location" option available in Assets search view 
-- ASSETS-17453 - (Dynamic Media) Unable to select a custom thumbnail for videos
-- ASSETS-19279 - Assets download archive for large files
-- ASSETS-19544 - Last modified by user for asset updates
-- ASSETS-20146 - (Touch UI) Assets Download Report Failed Reports due to validation errors show up always on the top of the list page for reports
-- ASSETS-21056 - Optimize Asset Reference Performance to minimize writes
-- ASSETS-21909 - Not able to see smart crop video when vtt fails to download
-- ASSETS-22261 - Linkshare downloads folder structure inconsistent with Assets UI downloads
-- ASSETS-22550 - Search filter panel now open by default 
-- ASSETS-22920 - Unpublishing folder from Brand Portal does not mark the assets within as unpublished
-- ASSETS-22922 - Disabled Viewer presets show up in Dynamic Media component
-- ASSETS-23461 - Brand Portal Quick Publish from Assets search view 
-- ASSETS-23466 - InDesign Server inaccessible link handling fails to resolve AAL links containing spaces
-- ASSETS-23469 - Default Asset Filters collide with custom filters
-- ASSETS-23981 - Sorting Function for Titles Not Working in Collection Links
-- ASSETS-24723 - Published Assets were reprocessed again without user intervention
-- GRANITE-45385 - Migrate Tree Activation to use sling job instead of workflow
+None.
 
-### Embedded Technologies {#embedded-tech-12255}
+### Embedded Technologies {#embedded-tech-X}
 
 |Technology|Version|Link|
 |---|---|---|
