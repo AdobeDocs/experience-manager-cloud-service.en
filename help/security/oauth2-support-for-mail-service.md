@@ -129,14 +129,14 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
    * `email`
    * `profile`
 1. Create an OSGI property file `called com.day.cq.mailer.DefaultMailService.cfg.json`
-under `/apps/<my-project>/osgiconfig/config`  with the following syntax:
+under `/apps/<my-project>/osgiconfig/config` with the syntax below. Note that the value of the smtp.port reflects the advanced networking configuration's portForward.portOrig, as described in the [Email Service tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
    
    ```
    {
     "smtp.host": "<smtp hostname>"
     "smtp.user": "<user account that logged into get the oauth tokens>",
     "smtp.password": "value not used",
-    "smtp.port": 587,
+    "smtp.port": 30465,
     "from.address": "<from address used for sending>"
     "smtp.ssl": false,
     "smtp.starttls": true,
