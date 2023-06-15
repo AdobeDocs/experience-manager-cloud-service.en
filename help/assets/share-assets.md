@@ -21,6 +21,27 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 * Share using [[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
 * Share using [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
+You need Administrator privileges to [configure Sharing Assets as a Link](#config-link-share-service) before you create a shared link for the Assets.
+
+## Configure link share service {#config-link-share-service}
+
+Before you share Assets as links, you must configure the service. Below are the steps to consider to configure link share service:
+
+1. Click the [!DNL Experience Manager] logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Assets Configuration]** &gt; **[!UICONTROL Link Share]**.
+1. Initial Settings: 
+   *  **Include Originals:** 
+      *  Check or uncheck the `Select Include Originals` checkbox in case you want default selection to appear in the Shared Links dialog. 
+      *  Specify the behavior by choosing the appropriate option to make the Shared Link editable, read-only, or hidden.
+   *  **Include Renditions:** 
+      *  Check or uncheck the `Select Include Renditions` checkbox in case you want default selection to appear in the Shared Links dialog.  
+      *  Select the behavior by choosing the appropriate option to include the renditions in the Shared Link while making the link editable, read-only, or hidden.
+1. Link share button in the action bar:
+   *  The Link Share button visible to everyone, by default. Though you can make modifications in its visibility by configuring it. To do this, select `Allow only for groups` if you want to allow specific email groups to share link with. Otherwise, select `Deny from groups` to deny shared link from specific groups. Once you select any of these options, specify the group names using `Select Groups` field to add the group names that you want to allow or deny.
+
+For more Email Configuration related settings, visit [Email Service Documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
+
+   ![Configure Email Service](config-email-service.png)
+
 ## Share assets as a link {#sharelink}
 
 Sharing assets through a link is a convenient way of making the resources available to external parties, marketers, and other [!DNL Experience Manager] users. The functionality allows anonymous users to access and download the assets shared with them. When downloading assets from a shared link, [!DNL Experience Manager Assets] uses an asynchronous service that offers faster and uninterrupted download. The assets to be downloaded are queued in the background into ZIP archives of manageable file size. For large downloads, the download is bundled into multiple files of 100 GB per file size.
@@ -36,9 +57,9 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 There are two ways of sharing the assets using the link sharing functionality:
 
-1. Generate a shared link, [copy, and share the asset link](#copy-and-share-assets-link) with other users. The default expiration time of the link is one day.
+1. Generate a shared link, [copy, and share the asset link](#copy-and-share-assets-link) with other users.
 
-1. Generate a shared link and [share the asset link through email](#share-assets-link-through-email). You can modify the default values such as expiration date and time, and allow downloading the original assets and its renditions. You can send email to multiple users by adding their email addresses. To do this, you must [configure shared asset link for email](#share-assets-link-through-email).
+1. Generate a shared link and [share the asset link through email](#share-assets-link-through-email). You can modify the default values such as expiration date and time, and allow downloading the original assets and its renditions. You can send email to multiple users by adding their email addresses.
 
 ![Link Sharing dialog](assets/share-link.png)
 
@@ -196,22 +217,6 @@ To generate the URL for assets that you want to share with users, use the Link S
    >* `[aem_server]:[port]/linkshare.html`
    >* `[aem_server]:[port]/linksharepreview.html`
    >* `[aem_server]:[port]/linkexpired.html`
-
-## Configure email service {#config-email-service}
-
-Before you can share assets as links, you must configure the email service.
-
-1. Click the [!DNL Experience Manager] logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Web Console]** &gt; **[!UICONTROL Assets Configuration]** &gt; **[!UICONTROL Link Share]**.
-1. Initial Settings
-   *  **Include Originals:** Check or uncheck the `Select Include Originals` checkbox in case you want to make the Shared Link editable, read-only, or hidden.
-   *  **Include Renditions:** Check or uncheck the `Select Include Renditions` checkbox in case you want to include the renditions in the Shared Link while making the link editable, read-only, or hidden.
-   *  Set the default validity of the expiration date of the shared link in the number of hours, days, months, or years.
-1. Link share button in the action bar
-The Link Share button visible to everyone, by default. Though you can make modifications in its visibility by configuring it. To do this, select `Allow only for groups` if you want to allow specific email groups to share link with. Otherwise, select `Deny from groups` to deny shared link from specific groups. Once you select any of these options, specify the group names beneath `Select Groups` field to add the group names that you want to allow or deny.
-
-For more Email Configuration related settings, visit [Email Service Documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
-
-   ![Configure Email Service](config-email-service.png)
 
 <!--
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
