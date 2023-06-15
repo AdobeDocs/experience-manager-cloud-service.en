@@ -36,11 +36,13 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 There are two ways of sharing the assets using the link sharing functionality:
 
-1. Generate a shared link, [copy, and share the asset link](#copy-and-share-assets-link) with other users. The default expiration time of the link is one day. You cannot change the expiration time when sharing the copied link with other users.
+1. Generate a shared link, [copy, and share the asset link](#copy-and-share-assets-link) with other users. The default expiration time of the link is one day.
 
-1. Generate a shared link and [share the asset link through email](#share-assets-link-through-email). In this case, you can modify the default values such as expiration date and time, and allow downloading the original assets and its renditions. You can send email to multiple users by adding their email addresses.      
+1. Generate a shared link and [share the asset link through email](#share-assets-link-through-email). You can modify the default values such as expiration date and time, and allow downloading the original assets and its renditions. You can send email to multiple users by adding their email addresses. To do this, you must [configure shared asset link for email](#share-assets-link-through-email).
 
-![Link Sharing dialog](assets/link-sharing-dialog.png)
+![Link Sharing dialog](assets/share-link.png)
+
+In both cases, you can modify the default values such as expiration date and time, and allow downloading the original assets and its renditions.
 
 ### Copy and share the asset link{#copy-and-share-asset-link}
 
@@ -73,7 +75,7 @@ To share assets through email:
 
 Any user having access to the shared asset link can download the assets bundled in a zip folder. The download process is same, whether a user is accessing the copied asset link, or using the asset link shared through the email. 
 
-* Click on the asset link or paste the URL in your browser. The [!UICONTROL Link Share] interface opens wherein you can switch to the [!UICONTROL Card View] or [!UICONTROL List View]. 
+* Click the asset link or paste the URL in your browser. The [!UICONTROL Link Share] interface opens wherein you can switch to the [!UICONTROL Card View] or [!UICONTROL List View]. 
 
 * In the [!UICONTROL Card View], you can hover the mouse over the shared asset or shared assets folder to either select the assets or queue them for download.
 
@@ -83,11 +85,11 @@ Any user having access to the shared asset link can download the assets bundled 
 
   ![Queue download](assets/queue-download.png)
 
-* While the download file is prepared, click on the **[!UICONTROL Download Inbox]** option to view the status of your download. For large downloads, click on the **[!UICONTROL Refresh]** button to update the status. 
+* While the download file is prepared, click the **[!UICONTROL Download Inbox]** option to view the status of your download. For large downloads, click the **[!UICONTROL Refresh]** button to update the status. 
 
   ![Download inbox](assets/link-sharing-download-inbox.png)
 
-* Once the processing is complete, click on the **[!UICONTROL Download]** button to download the zip file.  
+* Once the processing is complete, click the **[!UICONTROL Download]** button to download the zip file.  
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -185,7 +187,7 @@ The different options to share the assets require specific configuration and hav
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to [!DNL Assets].
+To generate the URL for assets that you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to [!DNL Assets].
 
    >[!NOTE]
    >
@@ -195,21 +197,30 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >* `[aem_server]:[port]/linksharepreview.html`
    >* `[aem_server]:[port]/linkexpired.html`
 
+## Configure email service {#config-email-service}
+
+Before you can share assets as links, you must configure the email service.
+
+1. Click the [!DNL Experience Manager] logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Web Console]** &gt; **[!UICONTROL Assets Configuration]** &gt; **[!UICONTROL Link Share]**.
+1. Initial Settings
+   *  **Include Originals:** Check or uncheck the `Select Include Originals` checkbox in case you want to make the Shared Link editable, read-only, or hidden.
+   *  **Include Renditions:** Check or uncheck the `Select Include Renditions` checkbox in case you want to include the renditions in the Shared Link while making the link editable, read-only, or hidden.
+   *  Set the default validity of the expiration date of the shared link in the number of hours, days, months, or years.
+1. Link share button in the action bar
+The Link Share button visible to everyone, by default. Though you can make modifications in its visibility by configuring it. To do this, select `Allow only for groups` if you want to allow specific email groups to share link with. Otherwise, select `Deny from groups` to deny shared link from specific groups. Once you select any of these options, specify the group names beneath `Select Groups` field to add the group names that you want to allow or deny.
+
+For more Email Configuration related settings, visit [Email Service Documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
+
+   ![Configure Email Service](config-email-service.png)
+
 <!--
-## Configure Day CQ mail service {#configmailservice}
-
-Before you can share assets as links, configure the email service.
-
-1. Click or tap the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
-1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
+1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service** with the details mentioned against their names:
 
     * SMTP server host name: email server host name
     * SMTP server port: email server port
     * SMTP user: email server user name
     * SMTP password: email server password
-
-1. Click/tap **[!UICONTROL Save]**.
 -->
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
