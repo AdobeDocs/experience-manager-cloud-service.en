@@ -21,6 +21,8 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 * Share using [[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
 * Share using [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
+## Prerequisites {#prerequisites}
+
 You need Administrator privileges to [configure Sharing Assets as a Link](#config-link-share-service) before you create a shared link for the Assets.
 
 ## Configure link share service {#config-link-share-service}
