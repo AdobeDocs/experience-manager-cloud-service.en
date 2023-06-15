@@ -47,6 +47,8 @@ Understanding SSL/TLS connection problems can sometimes be difficult. To toubles
 
    ![image](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
+>[!NOTE]
+>This flag is only for debugging SSL issues. Please ensure that the flag is disabled before running the extraction.
 
 ## Running the Content Transfer Tool {#running-tool}
 
