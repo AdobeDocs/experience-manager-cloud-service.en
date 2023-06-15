@@ -51,7 +51,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 Since network traffic is variable and is always less than the advertised maximum theoretical value, try using an online internet connection speed test tool.
 
-Note that internet speeds are almost always different for uploads and downloads. Assuming that you will need to both upload and download packages, you should use the lower value (usually upload speed) in you calculation.
+Internet speeds are almost always different for uploads and downloads. Assuming that you will need to both upload and download packages, you should use the lower value (usually upload speed) in you calculation.
 
 ### Example {#example}
 
@@ -63,6 +63,12 @@ Using an internet speed test tool, I see that my current upload speed is about 1
 ````
 
 So any packages that I create should be smaller than 750 MB.
+
+>[!NOTE]
+>
+>Network speeds are subject to current, local conditions. Even with a recent speed test, your actual throughput may vary.
+>
+>Therefore the formula provided is a guideline only and your actual maximum recommended package size may vary.
 
 ## Package Manager {#package-manager}
 
