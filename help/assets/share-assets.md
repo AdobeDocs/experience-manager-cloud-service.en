@@ -60,7 +60,6 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 There are two ways of sharing the assets using the link sharing functionality:
 
 1. Generate a shared link, [copy, and share the asset link](#copy-and-share-assets-link) with other users.
-
 1. Generate a shared link and [share the asset link through email](#share-assets-link-through-email). You can modify the default values such as expiration date and time, and allow downloading the original assets and its renditions. You can send email to multiple users by adding their email addresses.
 
 ![Link Sharing dialog](assets/share-link.png)
@@ -74,6 +73,9 @@ To share assets as a public URL:
 1. Log in to [!DNL Experience Manager Assets] and navigate to **[!UICONTROL Files]**.
 1. Select the assets or folder containing assets. From the toolbar, click **[!UICONTROL Share Link]**. 
 1. The **[!UICONTROL Link Sharing]** dialog appears which contains an auto-generated asset link in the **[!UICONTROL Share Link]** field.
+1. Set the expiration date of the shared link as required.
+1. Under **[!UICONTROL Link Settings]**, check or uncheck `Include Originals` or `Include Renditions` to include or exclude either of the two. Choosing at least option is mandatory. 
+1. The names of selected Assets appears in the left column of the [!DNL Share Link] dialog box.
 1. Copy the asset link and share it with the users. 
 
 ### Share asset link through email notification {#share-assets-link-through-email}
