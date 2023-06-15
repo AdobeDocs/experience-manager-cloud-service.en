@@ -39,6 +39,31 @@ Content packages created for AEM as a Cloud Service applications must have a cle
 
 For more details on how to manage packages for AEMaaCS, please review the document [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md) in the deploying user guide.
 
+## Package Size {#package-size}
+
+Adobe recommends that you avoid creating large packages. This is to avoid timeout issues when uploading and downloading packages.
+
+As a general rule, a package should be transmitted in its entirety within 60 seconds. This provides the following formula as a guide.
+
+```text
+MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
+```
+
+Since network traffic is variable and is always less than the advertised maximum theoretical value, try using an online internet connection speed test tool.
+
+Note that internet speeds are almost always different for uploads and downloads. Assuming that you will need to both upload and download packages, you should use the lower value (usually upload speed) in you calculation.
+
+### Example {#example}
+
+Using an internet speed test tool, I see that my current upload speed is about 100 Mbps.
+
+```text
+100 Mbps = 12.5 MB/s
+12.5 MB/s * 60 s = 750 MB
+````
+
+So any packages that I create should be smaller than 750 MB.
+
 ## Package Manager {#package-manager}
 
 Package Manager manages the packages on your AEM installation. After you have [assigned the necessary permissions](#permissions-needed-for-using-the-package-manager) you can use Package Manager for various actions, including configuring, building, downloading, and installing your packages.
@@ -231,6 +256,10 @@ There are many actions that can be taken on a package.
 
 It is not compulsory to immediately build the package after creating it. An unbuilt package contains no content and consists of only the filter data and other metadata of the package.
 
+>[!TIP]
+>
+>To avoid timeouts, Adobe recommends [not creating large packages.](#package-size)
+
 ### Building a Package {#building-a-package}
 
 A package is often built at the same time as you [create the package](#creating-a-new-package), but you can return at a later point to either build or rebuild the package. This can be useful if the content within the repository has changed or the package filters have changed.
@@ -242,6 +271,10 @@ A package is often built at the same time as you [create the package](#creating-
 1. Click **Build**. A dialog asks for confirmation that you do want to build the package since any existing package contents will be overwritten.
 
 1. Click **OK**. AEM builds the package, listing all content added to the package as it does so in the activity list. When complete AEM displays a confirmation that the package was built and (when you close the dialog) updates the package list information.
+
+>[!TIP]
+>
+>To avoid timeouts, Adobe recommends [not creating large packages.](#package-size)
 
 ### Editing a Package {#edit-package}
 
@@ -307,6 +340,10 @@ After a package has been built, you can view the contents.
 
 1. AEM downloads the package to your computer.
 
+>[!TIP]
+>
+>To avoid timeouts, Adobe recommends [not creating large packages.](#package-size)
+
 ### Uploading Packages from Your File System {#uploading-packages-from-your-file-system}
 
 1. [Access Package Manager.](#accessing)
@@ -325,6 +362,10 @@ After a package has been built, you can view the contents.
 1. Click **OK** and the selected package is uploaded and the package list is updated accordingly.
 
 The package content now exists on AEM, but o make the content available for use, be sure to [install the package](#installing-packages).
+
+>[!TIP]
+>
+>To avoid timeouts, Adobe recommends [not creating large packages.](#package-size)
 
 ### Validating Packages {#validating-packages}
 
