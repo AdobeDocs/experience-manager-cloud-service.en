@@ -41,7 +41,7 @@ For more details on how to manage packages for AEMaaCS, please review the docume
 
 ## Package Size {#package-size}
 
-Adobe recommends that you avoid creating large packages. This is to avoid timeout issues when uploading and downloading packages.
+Adobe recommends not to create large packages. This is to avoid timeout issues when uploading and downloading packages.
 
 As a general rule, a package should be transmitted in its entirety within 60 seconds. This provides the following formula as a guide.
 
@@ -258,7 +258,7 @@ It is not compulsory to immediately build the package after creating it. An unbu
 
 >[!TIP]
 >
->To avoid timeouts, Adobe recommends [not creating large packages.](#package-size)
+>To avoid timeouts, Adobe recommends [not to create large packages.](#package-size)
 
 ### Building a Package {#building-a-package}
 
@@ -274,7 +274,7 @@ A package is often built at the same time as you [create the package](#creating-
 
 >[!TIP]
 >
->To avoid timeouts, Adobe recommends [not creating large packages.](#package-size)
+>To avoid timeouts, Adobe recommends [not to create large packages.](#package-size)
 
 ### Editing a Package {#edit-package}
 
@@ -342,7 +342,7 @@ After a package has been built, you can view the contents.
 
 >[!TIP]
 >
->To avoid timeouts, Adobe recommends [not creating large packages.](#package-size)
+>To avoid timeouts, Adobe recommends [not to create large packages.](#package-size)
 
 ### Uploading Packages from Your File System {#uploading-packages-from-your-file-system}
 
@@ -365,7 +365,7 @@ The package content now exists on AEM, but o make the content available for use,
 
 >[!TIP]
 >
->To avoid timeouts, Adobe recommends [not creating large packages.](#package-size)
+>To avoid timeouts, Adobe recommends [not to create large packages.](#package-size)
 
 ### Validating Packages {#validating-packages}
 
