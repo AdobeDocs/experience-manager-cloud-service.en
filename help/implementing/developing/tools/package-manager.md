@@ -60,7 +60,7 @@ Using an internet speed test tool, I see that my current upload speed is about 1
 ```text
 100 Mbps = 12.5 MB/s
 12.5 MB/s * 60 s = 750 MB
-````
+```
 
 So any packages that I create should be smaller than 750 MB.
 
