@@ -15,7 +15,11 @@ The release date for the latest version 1.9.11 of [!DNL Workfront for Experience
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following updates:
 
-* When you have whitelisted internal Adobe IP addresses, there are issues while sending binary objects from Adobe Workfront to AEM as a Cloud Service. 
+* When you have advanced networking configured, there are issues while sending content from Adobe Workfront to AEM as a Cloud Service.
+
+>[!NOTE]
+>
+>AEM 6.4 has reached the end of extended support. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/?lang=en).
 
 
 >[!IMPORTANT]
