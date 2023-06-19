@@ -23,24 +23,29 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 
 ## Prerequisites {#prerequisites}
 
-You need Administrator privileges to [configure Sharing Assets as a Link](#config-link-share-service) before you create a shared link for the Assets.
+You need Administrator privileges to [configure settings for sharing assets as a Link](#config-link-share-settings).
 
-## Configure link share service {#config-link-share-service}
+## Configure link share settings {#config-link-share-settings}
 
-Before you share Assets as links, you must configure the service. Below are the steps to consider to configure link share service:
+Experience Manager Assets allows you to configure the default link share settings.
 
 1. Click the [!DNL Experience Manager] logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Assets Configuration]** &gt; **[!UICONTROL Link Share]**.
-1. Initial Settings: 
-   *  **Include Originals:** 
-      *  Check or uncheck the `Select Include Originals` checkbox in case you want default selection to appear in the Shared Links dialog. 
-      *  Specify the behavior by choosing the appropriate option to make the Shared Link editable, read-only, or hidden.
-   *  **Include Renditions:** 
-      *  Check or uncheck the `Select Include Renditions` checkbox in case you want default selection to appear in the Shared Links dialog.  
-      *  Select the behavior by choosing the appropriate option to include the renditions in the Shared Link while making the link editable, read-only, or hidden.
-1. Link share button in the action bar:
-   *  The Link Share button visible to everyone, by default. Though you can make modifications in its visibility by configuring it. To do this, select `Allow only for groups` if you want to allow specific email groups to share link with. Otherwise, select `Deny from groups` to deny shared link from specific groups. Once you select any of these options, specify the group names using `Select Groups` field to add the group names that you want to allow or deny.
+1. Initial Settings:
 
-For more Email Configuration related settings, visit [Email Service Documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
+   * **Include Originals:** 
+
+      * Select `Select Include Originals` to select the `Include Originals` option by default in the link share dialog. 
+      * Specify the behavior by choosing the appropriate option to make the `Include Originals` option editable, read-only, or hidden.
+   * **Include Renditions:** 
+      * Select `Select Include Renditions` option to select the `Include Renditions` option by default in the link share dialog.   
+      * Select the behavior by choosing the appropriate option to make the `Include Renditions` option editable, read-only, or hidden.
+
+1. Specify the default validity period for the link in the `Validity Period` field in the `Expiration date` section.
+
+1. Link share button in the action bar:
+   * The Link Share button is visible to everyone, by default. You can configure to display this option only for the defined groups or you can also deny this option from specific groups. Select `Allow only for groups` if you want to allow specific groups to view the `Share Link` option. Select `Deny from groups` to deny the `Share Link` option from specific groups. Once you select any of these options, specify the group names using `Select Groups` field to add the group names that you need to allow or deny.
+
+For Email Configuration related settings, visit [Email Service Documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
 
    ![Configure Email Service](config-email-service.png)
 
@@ -75,7 +80,7 @@ To share assets as a public URL:
 1. The **[!UICONTROL Link Sharing]** dialog appears which contains an auto-generated asset link in the **[!UICONTROL Share Link]** field.
 1. Set the expiration date of the shared link as required.
 1. Under **[!UICONTROL Link Settings]**, check or uncheck `Include Originals` or `Include Renditions` to include or exclude either of the two. Choosing at least option is mandatory. 
-1. The names of selected Assets appears in the left column of the [!DNL Share Link] dialog box.
+1. The names of selected Assets appears in the right column of the [!DNL Share Link] dialog box.
 1. Copy the asset link and share it with the users. 
 
 ### Share asset link through email notification {#share-assets-link-through-email}
