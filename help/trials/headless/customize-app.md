@@ -29,7 +29,7 @@ You start in the Content Fragment editor with the sample app provided with your 
 
 1. Tap or click the **Preview** button at the top-right of the editor screen.
 
-1. The demo app opens in a new tab. The app is for the fictional WKND outdoor lifestyle brand. Click around to navigate the sample content.
+1. The demo app opens in a new tab. The app is for the fictional WKND outdoor lifestyle brand. Scroll down the page to navigate the sample content.
 
 1. Return to the browser tab of the Content Fragment editor to continue.
 
