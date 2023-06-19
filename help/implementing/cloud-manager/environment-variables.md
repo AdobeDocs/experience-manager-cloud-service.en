@@ -53,7 +53,7 @@ Typical use cases for using environment variables include:
 
 1. Select **Save** to persist your variables.
 
-An indicator with the status **Updating** is shown at the top of the table and next to the newly added variable to indicate that the environment is being updated with the configuration. Once complete, the new environment variable will be visible in the table.
+An indicator with the status **Updating** is shown at the top of the table and next to the newly added variable to indicate that the environment is being updated with the configuration. After completion, the new environment variable is visible in the table.
 
 ![Updating variables](assets/updating-variables.png)
 
@@ -84,7 +84,7 @@ After you have created environment variables, you can update them using the **Ad
 
 1. Once you've made all of the required configuration changes, select **Save**.
 
-[As when adding variables,](#add-variables) an indicator with the status **Updating** is shown at the top of the table and next to the newly updated variable(s) to indicate that the environment is being updated with the configuration. Once complete, the updated environment variable(s) will be visible in the table.
+[As when adding variables,](#add-variables) an indicator with the status **Updating** is shown at the top of the table and next to the newly updated variable(s) to indicate that the environment is being updated with the configuration. After completion, the updated environment variables are visible in the table.
 
 >[!TIP]
 >

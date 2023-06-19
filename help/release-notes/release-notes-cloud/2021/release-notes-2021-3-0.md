@@ -84,7 +84,7 @@ The next release is planned for April 08, 2021.
 
 ### What's New {#what-is-new-march}
 
-* Customers with environments with pre-existing Custom Domain Name configurations for [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) and [Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) will see a message about their previously existing configurations and will be able to self-serve via the UI. 
+* Customers with environments with pre-existing Custom Domain Name configurations for [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) and [Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) see a message about their previously existing configurations and can self-serve by way of the user interface. 
 
 * Users with requisite permissions can now edit a Program, allowing them to do the following in a self-service manner: 
 
@@ -122,7 +122,7 @@ The next release is planned for April 08, 2021.
 
 * On occasion, user may see a green "active" status next to an IP Allowlist even when that configuration was not deployed.
 
-* All existing production pipelines will be automatically enabled with the Experience Audit step.
+* All existing production pipelines are automatically enabled with the Experience Audit step.
 
 ## Content Transfer Tool {#content-transfer-tool}
 

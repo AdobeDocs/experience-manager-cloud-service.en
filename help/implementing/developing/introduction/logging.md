@@ -539,7 +539,7 @@ Depending on the traffic and the amount of log statement written by Debug, this 
 
 ## Splunk Logs {#splunk-logs}
 
-Customers who have Splunk accounts may request via customer support ticket that their AEM Cloud Service logs are forwarded to the appropriate index. The logging data is equivalent to what is available through the Cloud Manager log downloads, but customers may find it convenient to leverage the query features available in the Splunk product.
+Customers who have Splunk accounts may request via customer support ticket that their AEM Cloud Service logs are forwarded to the appropriate index. The logging data is equivalent to what is available through the Cloud Manager log downloads, but customers may find it convenient to use the query features available in the Splunk product.
 
 The network bandwidth associated with logs sent to Splunk are considered part of the customer's Network I/O usage.
 

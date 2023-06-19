@@ -9,16 +9,16 @@ exl-id: 51b98c24-5566-4088-9010-bd39841a1633
 
 >[!TIP]
 >
->If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 ## General {#general}
 
 Creating or expanding a global web presence can be a complex process, but with good forethought and planning AEM can simplify your efforts and support your global business goals.
 
 * **Plan for global expansion** before implementing your first site. Adapting an existing site for global coverage when the site was implemented at short notice is typically harder than planning for global expansion at the beginning:
-  * Assess the current state of your organization’s localization maturity. Determine whether you have the **tools**, **processes** and **resources** in place to support global expansion.
+  * Assess the current state of your organization's localization maturity. Determine whether you have the **tools**, **processes** and **resources** in place to support global expansion.
   * Be aware of **global regulations** and **regional language preferences**. Design flexible content structures and processes that can accommodate a changing global business environment.
-* Determine a **governance** model that supports your global business and use AEM mechanisms like MSM and user permissions to enforce your chosen model. For example, determine if content will be centrally authored and "pushed" or "pulled" to regions/countries. Determine what content can be unlocked and altered in the geographies. Determine who is responsible for initiating and managing translations.
+* Determine a **governance** model that supports your global business and use AEM mechanisms like MSM and user permissions to enforce your chosen model. For example, determine if content is centrally authored and "pushed" or "pulled" to regions/countries. Determine what content can be unlocked and altered in the geographies. Determine who is responsible for initiating and managing translations.
 * If resources allow, it is best to manage translation activity from a central team who can develop expertise in the necessary tools, processes and vendor relationships.
 * **Plan**, **prototype** and **test** your global structure and processes to ensure that they support the business and that you have the required support from stakeholders in the geographies.
 

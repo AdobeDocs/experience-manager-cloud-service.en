@@ -15,7 +15,7 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 1. Users will not change Indexes on a single AEM Instance nor will they have to worry about consistency checks or reindexing anymore.
 1. In general, index changes are initiated before going to production to not circumvent quality gateways in the Cloud Manager CI/CD pipelines and not impact Business KPIs in production.
 1. All related metrics including search performance in production is available for customers at runtime to provide the holistic view on the topics of Search and Indexing.
-1. Customers will be able to set up alerts according to their needs.
+1. Customers are able to set up alerts according to their needs.
 1. SREs are monitoring system health 24/7 and will take action as needed and as early as possible.
 1. Index configuration is changed via deployments. Index definition changes are configured like other content changes.
 1. At a high level on AEM as a Cloud Service, with the introduction of the [rolling deployment model](#index-management-using-rolling-deployments) two sets of indexes will exist: one set for the old version, and one set for the new version.
@@ -251,7 +251,7 @@ The following table shows five index definitions: index `cqPageLucene` is used i
 | /oak:index/acme.product-custom-2  | No  | No  | Yes  |
 | /oak:index/cqPageLucene  | Yes  | Yes  | Yes  |
 
-The version number is incremented each time the index is changed. In order to avoid custom index names colliding with index names of the product itself, custom indexes, as well as changes to out of the box indexes must end with `-custom-<number>`.
+The version number is incremented each time the index is changed. To avoid custom index names colliding with index names of the product itself, custom indexes, as well as changes to out of the box indexes must end with `-custom-<number>`.
 
 ### Changes to Out-of-the-Box Indexes {#changes-to-out-of-the-box-indexes}
 

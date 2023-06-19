@@ -9,7 +9,7 @@ Since version 80, Chrome, and later Safari, introduced a new model for cookie se
 
 The default value of this setting (`SameSite=Lax`) might cause authentication between AEM instances or services to not work. This is because the domains or URL structures of these services might not fall under the constraints of this cookie policy.
 
-In order to get around this, you need to set the SameSite cookie attribute to `None` for the login token.
+To get around this, you need to set the SameSite cookie attribute to `None` for the login token.
 
 >[!CAUTION]
 >
@@ -30,4 +30,4 @@ You can add the setting by following the below steps:
 1. Generate the JSON format configurations for this particular setting by following the steps outlined in [Generating OSGi Configurations using the AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)
 1. Apply the settings by following the steps in the [Cloud Manager API Format for Setting Properties](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi documentation.
 
-Once this setting is updated and users are logged out and logged in again, `login-token` cookies will have the `None` attribute set and will be included in cross-site requests.
+After this setting is updated and users are logged off and logged on again, `login-token` cookies has the `None` attribute set and is included in cross-site requests.

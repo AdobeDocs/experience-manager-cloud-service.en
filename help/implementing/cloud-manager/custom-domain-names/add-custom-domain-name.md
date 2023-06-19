@@ -36,7 +36,7 @@ Follow these steps to add a custom domain name from the **Domain Settings** page
    >
    >Do not include `http://`, `https://`, or spaces when entering in your domain. 
 
-1. Select the **Environment** whose service will be associated with the domain name.
+1. Select the **Environment** whose service is associated with the domain name.
 
 1. Select either the **Publish** or **Preview** service.
 

@@ -34,7 +34,7 @@ AEM as a Cloud Service offers a built-in content delivery network (CDN) service,
 * Custom domain names (and certificates) that are installed in the AEM-managed CDN are managed via Cloud Manager.
 * Custom domain names (and certificates) that are installed in your own CDN are managed in that specific CDN. 
 
-Domains managed in your own CDN do not need to be installed via Cloud Manager. They will be made available to AEM via X-Forwarded-Host and will match the vhosts defined in the dispatcher. [Please see the CDN documentation for more information.](/help/implementing/dispatcher/cdn.md)
+Domains managed in your own CDN do not need to be installed by way of Cloud Manager. They are made available to AEM by way of X-Forwarded-Host and match the vhosts defined in the Dispatcher. See the [CDN documentation](/help/implementing/dispatcher/cdn.md).
 
 In one environment you can have both domains installed in the AEM-managed CDN and installed in your own CDN.
 

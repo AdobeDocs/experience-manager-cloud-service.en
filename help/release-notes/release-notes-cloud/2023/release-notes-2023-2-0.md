@@ -80,7 +80,7 @@ Use Headless Adaptive Forms to enable your developers to create, publish, and ma
 * build high-quality multi-channel forms in the programming language of your choice 
 * natively integrate forms to your desktop and mobile apps, websites, and chat applications 
 * reuse your proprietary UI components with forms applications 
-* leverage the power of Adobe Experience Manager Forms 
+* use the power of Adobe Experience Manager Forms 
 
 You can send an email to aem-forms-headless@adobe.com from your official email ID to join the early adopter program. 
 

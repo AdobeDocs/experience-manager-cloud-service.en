@@ -42,7 +42,7 @@ In general, the rollout rule in MSM regarding the synchronization of components 
 * Components are rolled out syncing any resources contained in the blueprint.
 * Containers synchronize only the current resource.
 
-This means that components are treated as an aggregate, and in a rollout the component itself and all its children are replaced with those in the blueprints. This means that if a resource is added to such a component locally, it will be lost to the content of the blueprint at rollout.
+This means that components are treated as an aggregate, and in a rollout the component itself and all its children are replaced with those in the blueprints. This means that if a resource is added to such a component locally, it is lost to the content of the blueprint at rollout.
 
 To support the nesting of components such that locally added components are maintained in a rollout, the component must be declared as a container.
 

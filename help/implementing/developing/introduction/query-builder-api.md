@@ -273,7 +273,7 @@ property.3_value=Whistler Mountain Biking
 
 ## Refining What is Returned {#refining-what-is-returned}
 
-By default, the QueryBuilder JSON Servlet will return a default set of properties for each node in the search result (for example, path, name, title, etc.). In order to gain control over which properties are returned, you can do one of the following:
+By default, the QueryBuilder JSON Servlet will return a default set of properties for each node in the search result (for example, path, name, and title). To gain control over which properties are returned, you can do one of the following:
 
 Specify
 
@@ -281,7 +281,7 @@ Specify
 p.hits=full
 ```
 
-in which case all properties will be included for each node:
+In which case, all properties are included for each node:
 
 `http://<host>:<port>/bin/querybuilder.json?p.hits=full&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 
@@ -314,7 +314,7 @@ p.hits=selective
 p.properties=sling:resourceType jcr:primaryType
 ```
 
-Another thing you can do is include child nodes in the Query Builder response. In order to do this you need to specify
+Another thing you can do is include child nodes in the Query Builder response. To do this you need to specify
 
 ```xml
 p.nodedepth=n

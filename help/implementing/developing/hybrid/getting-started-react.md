@@ -25,7 +25,7 @@ For more detail on how SPAs work in AEM, see the following documents:
 
 >[!NOTE]
 >
->In order to be able to author content within a SPA, the content must be stored in AEM and be exposed by the content model.
+>To be able to author content within a SPA, the content must be stored in AEM and be exposed by the content model.
 >
 >A SPA developed outside of AEM will not be authorable if it does not respect the content model contract.
 
@@ -33,7 +33,7 @@ This document will walk through the structure of a simplified SPA created using 
 
 ## Dependencies, Configuration, and Building {#dependencies-configuration-and-building}
 
-In addition to the expected React dependency, the sample SPA can leverage additional libraries to make the creation of the SPA more efficient.
+In addition to the expected React dependency, the sample SPA can use additional libraries to make the creation of the SPA more efficient.
 
 ### Dependencies {#dependencies}
 
@@ -54,7 +54,7 @@ Because this example is based on the React framework, there are two React-specif
  react-dom
 ```
 
-The `aem-clientlib-generator` is leveraged to make the creation of client libraries automatic as part of the build process.
+The `aem-clientlib-generator` is used to make the creation of client libraries automatic as part of the build process.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -91,7 +91,7 @@ module.exports = {
 
 ### Building {#building}
 
-Actually building the app leverages [Webpack](https://webpack.js.org/) for transpilation in addition to the aem-clientlib-generator for automatic client library creation. Therefore the build command will resemble:
+Actually building the app uses [Webpack](https://webpack.js.org/) for transpilation in addition to the aem-clientlib-generator for automatic client library creation. Therefore the build command will resemble:
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -99,7 +99,7 @@ Once built, the package can be uploaded to an AEM instance.
 
 ### AEM Project Archetype {#aem-project-archetype}
 
-Any AEM project should leverage the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
+Any AEM project should use the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and uses the SPA SDK.
 
 ## Application Structure {#application-structure}
 
@@ -128,7 +128,7 @@ ReactDOM.render(
 });
 ```
 
-The main function of `index.js` is to leverage the `ReactDOM.render` function to determine where in the DOM to inject the application.
+The main function of `index.js` is to use the `ReactDOM.render` function to determine where in the DOM to inject the application.
 
 This is a standard use of this function, not unique to this example app.
 

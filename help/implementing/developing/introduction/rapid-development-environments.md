@@ -1,11 +1,11 @@
 ---
 title: Rapid Development Environments
-description: Learn how to leverage Rapid Development Environments for rapid development iterations on a cloud environment.
+description: Learn how to use Rapid Development Environments for rapid development iterations on a cloud environment.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 ---
 # Rapid Development Environments {#rapid-development-environments}
 
-In order to deploy changes, current Cloud Development environments require the use of a process that employs extensive code security and quality rules called a CI/CD pipeline. For situations where quick and iterative changes are needed, Adobe has introduced Rapid Development Environments (RDEs for short).
+To deploy changes, current Cloud Development environments require the use of a process that employs extensive code security and quality rules called a CI/CD pipeline. For situations where quick and iterative changes are needed, Adobe has introduced Rapid Development Environments (RDEs for short).
 
 RDEs allow developers to swiftly deploy and review changes, minimizing the amount of time needed to test features that are proven to work on a local development environment.
 
@@ -20,7 +20,7 @@ You can refer to additional videos demonstrating [how to set it up](https://expe
 
 RDEs can be used for code, content, and Apache or Dispatcher configurations. Unlike regular Cloud Development environments, developers can use local command-line tools to sync code built locally to an RDE.
 
-Every program is provisioned with an RDE. In case of Sandbox accounts, they will be hibernated after a few hours of non-use.
+Every program is provisioned with an RDE. In case of Sandbox accounts, they are hibernated after a few hours of non-use.
 
 Upon creation, RDEs are set to the most recently available AEM version. An RDE reset, which can be performed using Cloud Manager, will cycle the RDE and set it to the most recently available AEM version.
 
@@ -142,7 +142,7 @@ Adobe recommends the following workflow for developing a new feature:
 
 * When an intermediate milestone is reached and successfully validated locally with the AEM as a Cloud Service SDK, the code should be committed to a git feature branch that is not yet part of the main line, although committing to git is optional. What constitutes an "intermediate milestone" varies based on team habits. Examples include a few new lines of code, half a day of work, or completing a sub-feature.
 
-* Reset the RDE if it has been used by another feature and you want to [reset it to a default state](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Reset will take a few minutes and all existing content and code will be deleted. You can use the RDE status command to confirm the RDE is ready. The RDE will come back up with the most recent AEM release version.  
+* Reset the RDE if it has been used by another feature and you want to [reset it to a default state](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Reset will take a few minutes and all existing content and code is deleted. You can use the RDE status command to confirm the RDE is ready. The RDE will come back up with the most recent AEM release version.  
   
   >[!IMPORTANT]
   >
@@ -347,7 +347,7 @@ You can delete configurations and bundles that have previously been deployed to 
 
 For example, if `com.adobe.granite.demo.MyServlet.cfg.json` has been installed, the `bsn` is just `com.adobe.granite.demo.MyServlet`, without the **cfg.json** suffix.
 
-Deletion of content packages or content files is not supported. In order to remove them, the RDE should be reset, which will return it to a default state.
+Deletion of content packages or content files is not supported. To remove them, the RDE should be reset, which will return it to a default state.
 
 See the example below for more details:
 
@@ -367,7 +367,7 @@ A reset will set the RDE to the most recently available AEM version.
 
 <!-- Alexandru: hiding for now, please don't delete
 
-Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code will be deleted from the RDE.
+Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
 >[NOTE!]
 >

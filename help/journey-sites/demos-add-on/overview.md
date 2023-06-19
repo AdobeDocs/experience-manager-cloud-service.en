@@ -9,7 +9,7 @@ Start here for a guided journey through how to easily add the AEM Reference Demo
 
 ## Introduction {#introduction}
 
-AEM is a powerful tool set for creating and managing digital experiences. Content authors can easily create digital experiences using the sites editor and organize the content using the sites console, all while being able to see the content live as it will be delivered by AEM to your audiences across channels.
+AEM is a powerful tool set for creating and managing digital experiences. Content authors can easily create digital experiences using the sites editor and organize the content using the sites console, all while being able to see the content live as it is delivered by AEM to your audiences across channels.
 
 Without sample content and configuration, it can be difficult to test the powerful features of AEM for new and experienced clients alike. The AEM Reference Demos Add-On allows for the easy creation of sandbox environments pre-loaded with sample content and pre-configured using the latest Adobe best practices guidelines. With the add-on, you can easily evaluate AEM Sites and AEM Screens features in context and with hardly any configuration.
 

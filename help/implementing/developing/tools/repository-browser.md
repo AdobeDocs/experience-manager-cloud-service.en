@@ -25,12 +25,12 @@ Accessible from the Developer Console, it can be used to browse the repository o
 
 These following conditions must be met to access the Developer Console or the Repository browser
 
-In order to access Developer Console:
+To access Developer Console:
 
 * For Production programs, users must have the **Cloud Manager - Developer Role** in the Admin Console
 * For sandbox programs, it is available to any user with a product profile giving them access to AEM as a Cloud Service.
 
-In order to access the Repository Browser:
+To access the Repository Browser:
 
 * Users must have the **Cloud Manager - Developer** Role in the Admin Console to view Author and Publish instances.
 * In addition, for author, users with the AEM Users Product Profile can view the repository browser with minimal read access; the user's permissions are respected when browsing the repository. Users with the AEM Administrators Product Profile can view the repository browser with full read access.
@@ -70,7 +70,7 @@ Additionally, when you click on a folder, the URL is dynamically modified to inc
 
 For publish, by default, the Repository Browser will only show public content, thus certain folders like `/conf` or `/home` will not be visible. 
 
-In order to make those locations visible, you need to follow the below procedure.
+To make those locations visible, do the following.
 
 1. Click the three dots next to the environment of your choice and select **Manage Access**
 

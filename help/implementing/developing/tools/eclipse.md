@@ -98,7 +98,7 @@ Follow these steps to create the sample project:
 
 1. You then configure an AEM server to which Eclipse connects.
 
-   In order to use the debugger feature, you need to have started AEM in debug mode - which can be achieved, for by adding the following to the command line:
+   To use the debugger feature, you need to have started AEM in debug mode - which can be achieved, for by adding the following to the command line:
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123

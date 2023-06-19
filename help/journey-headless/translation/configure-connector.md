@@ -93,7 +93,7 @@ To create a new translation configuration:
    1. **Translate Metadata** - Check this to translate asset metadata.
    1. **Translate Tags** - Check this to translate tags that are associated with the asset.
    1. **Auto-Execute Translation** - Check this property if you want translations to be automatically sent to your translation service.
-   1. **Disable Update-Only Translation** - When this option is checked, updating the translation project will submit all translatable fields for translation, not just the ones changed since last translation. Updating your translation project will be discussed later in the journey.
+   1. **Disable Update-Only Translation** - When this option is checked, updating the translation project will submit all translatable fields for translation, not just the ones changed since last translation. Updating your translation project is discussed later in the journey.
    1. **Enable Content Model Fields for Translation** - Check this option so the translation configuration automatically recognizes fields in the Content Models based on the **Translatable** flag.
 
 1. Tap or click **Save &amp; Close**.

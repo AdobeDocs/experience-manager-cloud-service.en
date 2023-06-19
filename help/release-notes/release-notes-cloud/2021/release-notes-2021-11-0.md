@@ -28,7 +28,7 @@ Have a look at the [December 2021 Release Overview](https://video.tv.adobe.com/v
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* Dynamic Media Image Smart Crop and Swatch is now powered by latest Sensei services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits will be preserved on reprocessing, if there is no change in the width and height in the Image Profile.
+* Dynamic Media Image Smart Crop and Swatch is now powered by latest Sensei services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits are preserved on reprocessing, if there is no change in the width and height in the Image Profile.
 
 ### New features in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
@@ -78,10 +78,10 @@ The next release is planned for December 09, 2021.
 
 ### What's New {#what-is-new-cm-nov}
 
-* Users can now leverage new Front End pipelines to exclusively deploy front end code in an accelerated manner. See [Cloud Manager Front End Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) to learn more.
+* Users can now use new Front End pipelines to exclusively deploy front end code in an accelerated manner. See [Cloud Manager Front End Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) to learn more.
 
    >[!IMPORTANT]
-   >You must be on AEM version `2021.10.5933.20211012T154732Z` or higher to leverage new Front End pipelines.
+   >You must be on AEM version `2021.10.5933.20211012T154732Z` or higher to use new Front End pipelines.
 
 * Code Quality pipeline duration is significantly reduced by performing the code analysis in a more efficient way without the need of building a whole AEM image. This change will roll out progressively over the weeks following the release.
 

@@ -68,7 +68,7 @@ A full AEM environment is made up of an Author, Publish, and Dispatcher. These s
 
 ## The Local Development Workflow {#the-local-development-workflow}
 
-The local development project is built on Apache Maven and is using Git for source control. In order to update the project, developers can use their preferred integrated development environment, such as Eclipse, Visual Studio Code, or IntelliJ, among others.
+The local development project is built on Apache Maven and is using Git for source control. To update the project, developers can use their preferred integrated development environment, such as Eclipse, Visual Studio Code, or IntelliJ, among others.
 
 To test code or content updates that are ingested by your headless application, you must deploy the updates to the local AEM runtime, which includes local instances of the AEM author and publish services.
 
@@ -78,7 +78,7 @@ In a production system, a Dispatcher and an http Apache server will always sit i
 
 ## Previewing Your Code and Content Locally with The Local Development Environment {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-In order to prepare your AEM headless project for launch, you need to make sure that all constituent parts of your project are functioning well.
+To prepare your AEM headless project for launch, you need to make sure that all constituent parts of your project are functioning well.
 
 To do that, you must put everything together: code, content, and configuration and test it in a local development environment for go live readiness.
 

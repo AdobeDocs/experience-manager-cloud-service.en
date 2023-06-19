@@ -95,7 +95,7 @@ A **Convert to experience fragment variation** option, and workflow, has been im
 >
 >Therefore, the recommended option is to use Experience Fragments, not this option. 
 
-For customers with pre-existing legacy offers, the **Use Offer Template** options will be visible when targeting components that are **not** Experience Fragments:
+For customers with pre-existing legacy offers, the **Use Offer Template** options are visible when targeting components that are **not** Experience Fragments:
 
    ![Convert to Experience Fragment Variation dialog](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 

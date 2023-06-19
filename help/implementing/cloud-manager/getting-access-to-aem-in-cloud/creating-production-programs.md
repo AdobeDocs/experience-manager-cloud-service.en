@@ -36,7 +36,7 @@ Follow these steps to create a production program.
 1. On the **Solutions &amp; Add-ons** tab, select the solutions to include in the program.
 
    * If you are not sure if you need one or more programs for the various solutions you have available, select the one most of interest to you. You can activate additional solutions by [editing the program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) later. See the [Introduction to Production Programs document](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more program setup recommendations.
-   * If you selected the **Enable Enhanced Security** previously, you will be allowed to select only as many solutions for which HIPAA entitlements are available.
+   * If you selected the **Enable Enhanced Security** previously, you are allowed to select only as many solutions for which HIPAA entitlements are available.
 
    ![Select solutions](assets/setup-prod-select.png)
 

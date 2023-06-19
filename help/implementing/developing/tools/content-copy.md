@@ -23,12 +23,12 @@ The content to copy is defined by a content set. A content set consists of a lis
 
 When copying content, the source environment is the source of truth.
 
-* If content has been modified in the destination environment, it will be overwritten by content in the source, if the paths are the same.
-* If the paths are different, content from the source will be merged with the content in the destination.
+* If content has been modified in the destination environment, it is overwritten by content in the source, if the paths are the same.
+* If the paths are different, content from the source is merged with the content in the destination.
 
 ## Permissions {#permissions}
 
-In order to use the content copy tool, certain permissions are required in both the source and target environments.
+To use the content copy tool, certain permissions are required in both the source and target environments.
 
 | Content Copy Feature | AEM Administrator Group | Deployment Manager Role |
 |---|---|---|

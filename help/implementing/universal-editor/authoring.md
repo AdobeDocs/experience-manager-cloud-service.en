@@ -23,7 +23,7 @@ To do this, it provides content authors with an intuitive UI that requires minim
 
 ## Prepare the App {#prepare-app}
 
-In order to author content for an app using the Universal Editor, the app must be instrumented by a developer to support the editor.
+To author content for an app using the Universal Editor, the app must be instrumented by a developer to support the editor.
 
 >[!TIP]
 >
@@ -78,13 +78,13 @@ The help icon provides quick access to learning and support resources.
 
 #### Notifications {#notifications}
 
-This icon will be badged with the number of currently assigned incomplete [notifications.](/help/implementing/cloud-manager/notifications.md)
+This icon is badged with the number of currently assigned incomplete [notifications.](/help/implementing/cloud-manager/notifications.md)
 
 ![Notifications](assets/notifications.png)
 
 #### User Properties {#user-properties}
 
-Tap or click the icon representing your user to access your user settings. If you do not have a user picture configured, an icon will be randomly assigned.
+Tap or click the icon representing your user to access your user settings. If you do not have a user picture configured, an icon is randomly assigned.
 
 ![User properties](assets/user-properties.png)
 
@@ -166,7 +166,7 @@ Depending on if the editor is in [edit mode](#edit-mode) or [preview mode,](#edi
 
 ## Editing Content {#editing-content}
 
-Editing content is simple and intuitive. In [edit mode,](#edit-mode) as you mouse over content in the editor, editable content will be highlighted with a blue box.
+Editing content is simple and intuitive. In [edit mode,](#edit-mode) as you mouse over content in the editor, editable content is highlighted with a blue box.
 
 ![Editable content is highlighted by a blue box](assets/editable-content.png)
 

@@ -68,13 +68,13 @@ Use **Save As** to persist your new query.
 
 Select the query you want to update from the list in the **Persisted Queries** panel (far left).
 
-The query will be shown in the editor panel. Make any changes you need, then use **Save** to commit your updates to the persisted query.
+The query is shown in the editor panel. Make any changes you need, then use **Save** to commit your updates to the persisted query.
 
 ## Running queries {#running-queries}
 
-You can run a new query immediately, or you can load and run a persisted query. To load a persisted query, select it from the list - the query will be shown in the editor panel.
+You can run a new query immediately, or you can load and run a persisted query. To load a persisted query, select it from the list - the query is shown in the editor panel.
 
-In either case, the query showing in the editor panel is the query that will be executed when you either:
+In either case, the query showing in the editor panel is the query that is run when you either:
 
 * click/tap on the **Execute Query** icon
 * use the keyboard combination `Control-Enter`

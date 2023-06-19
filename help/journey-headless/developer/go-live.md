@@ -95,7 +95,7 @@ Follow these best practices as a general approach to debugging:
 
 ### Logging a Bug with Support {#logging-a-bug-with-support}
 
-In order to efficiently log a bug with Support in case you need further assistance, follow the below steps:
+To efficiently log a bug with Support in case you need further assistance, do the following:
 
 * Take screenshots of the problem, if necessary
 * Document a way to reproduce the issue

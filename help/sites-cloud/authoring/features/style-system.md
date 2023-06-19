@@ -116,7 +116,7 @@ For a component to work with AEM's Style System and show the style tab in its de
 >[!NOTE]
 >This uses [overlays](/help/implementing/developing/introduction/overlays.md), by means of the [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
-With the component configured, the styles configured by the page authors will be automatically inserted by AEM on the decoration element that AEM automatically wraps around every editable component. The component itself need not do anything else to make this happen.
+With the component configured, the styles configured by the page authors are automatically inserted by AEM on the decoration element that AEM automatically wraps around every editable component. The component itself need not do anything else to make this happen.
 
 ### Enable Styles Tab in Edit Dialog {#enable-styles-tab-edit}
 
