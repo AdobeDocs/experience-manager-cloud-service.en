@@ -231,6 +231,10 @@ Select **Manage Access** from the ellipsis menu of the environment on the **Envi
 
 ![Manage access option](assets/environ-access.png)
 
+>[!TIP]
+>
+>See the document [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) to learn how AEM as a Cloud Service team and product profiles can grant and limit access to your licensed Adobe solutions.
+
 ## Accessing the Developer Console {#accessing-developer-console}
 
 Select **Developer Console** from the ellipsis menu of the environment on the **Environments** card. This will open a new tab in your browser with the login page to the **Developer Console**. 
