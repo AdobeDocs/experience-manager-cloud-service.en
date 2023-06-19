@@ -23,8 +23,8 @@ Keep in mind that a Live Copy can be created using either [regular pages](creati
 
 The additional benefits of using a blueprint configuration are that they:
 
-* Allow the author to use the **Rollout** option on a blueprint in order to explicitly push modifications to Live Copies that inherit from this blueprint.
-* Allow the author to use **Create Site** in order to easily select languages and configure the structure of the Live Copy.
+* Allow the author to use the **Rollout** option on a blueprint to explicitly push modifications to Live Copies that inherit from this blueprint.
+* Allow the author to use **Create Site** to easily select languages and configure the structure of the Live Copy.
 * Define a default rollout configuration for Live Copies that have a relationship with the blueprint.
 
 In the case that a blueprint configuration is not referenced, rollouts can only be initiated from the Live Copies themselves, essentially pulling content from source.

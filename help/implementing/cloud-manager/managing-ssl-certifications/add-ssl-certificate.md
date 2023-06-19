@@ -67,7 +67,7 @@ Once saved, you will see your certificate displayed as a new row in the table.
 
 >[!NOTE]
 >
->A user must be a member of the **Business Owner** or **Deployment Manager** role in order to install an SSL certificate in Cloud Manager.
+>A user must be a member of the **Business Owner** or **Deployment Manager** role to install an SSL certificate in Cloud Manager.
 
 ## Certificate Errors {#certificate-errors}
 

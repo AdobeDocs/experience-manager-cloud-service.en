@@ -12,7 +12,7 @@ In this part of the AEM as a Cloud Service Migration Journey, you will learn abo
 This document helps you understand why you should use a cloud native version of AEM, as well as the different phases of migrating to AEM as a Cloud Service. After reading, you should:
 
 * Understand the benefits of moving AEM as a Cloud Service
-* Familiarize yourself with the broad steps that you must take in order to transition to the cloud
+* Familiarize yourself with the broad steps that you must take so you can transition to the cloud
 
 ## Benefits of Moving to AEM as a Cloud Service {#benefits-of-moving-to-aem-as-a-cloud-service}
 

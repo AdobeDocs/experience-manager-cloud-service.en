@@ -5,7 +5,7 @@ exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 ---
 # OAuth2 Support for the Mail Service {#oauth2-support-for-the-mail-service}
 
-AEM as a Cloud Service offers OAuth2 support for its integrated Mail Service, in order to allow organizations to adhere to secure email requirements.
+AEM as a Cloud Service offers OAuth2 support for its integrated Mail Service to allow organizations to adhere to secure email requirements.
 
 You can configure OAuth for multiple email providers. Below are step-by-step instructions for configuring the AEM Mail Service to authenticate via OAuth2 with Microsoft Office 365 Outlook. Other vendors can be configured in a similar manner.
 

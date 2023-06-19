@@ -59,7 +59,7 @@ Follow the section below to understand the important considerations while runnin
 
 * To start an ingestion, you need to belong to the local AEM **administrators** group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to start ingestions without manually providing the migration token.
 
-* If the setting **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group. The user must be re-added to the **administrators** group in order to retrieve the access token for the Content Transfer Tool.
+* If the setting **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group. The user must be re-added to the **administrators** group to retrieve the access token for the Content Transfer Tool.
 
 * Ingestions do not support merging content from multiple sources into the target Cloud Service instance if the content from the two sources is moved to the same paths on the target. To move content from multiple sources into a single target Cloud Service instance, you need to ensure that there is no overlap of the content paths from the sources.
 

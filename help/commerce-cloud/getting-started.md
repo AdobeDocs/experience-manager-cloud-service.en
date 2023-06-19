@@ -35,7 +35,7 @@ This environment variable is used in two places:
 - GraphQL calls from AEM to commerce backend, via some common shareable GraphQl client, used by the AEM CIF Core Components and customer project components.
 - Setup a GraphQL proxy URL on each AEM environment the variable is set available at `/api/graphql`. This is used by the AEM commerce authoring tools (CIF add-on) and CIF client-side components.
 
-A different  GraphQL endpoint URL can be used for each AEM as a Cloud Service environment. That way projects can connect AEM staging environments with commerce staging systems and AEM production environment to a commerce production system. That GraphQL endpoint must be publicly available, private VPN or local connections are not supported. Optionally, an authentication header can be provided in order to use additional CIF features that require authentication.
+A different  GraphQL endpoint URL can be used for each AEM as a Cloud Service environment. That way projects can connect AEM staging environments with commerce staging systems and AEM production environment to a commerce production system. That GraphQL endpoint must be publicly available, private VPN or local connections are not supported. Optionally, an authentication header can be provided to use additional CIF features that require authentication.
 
 Optionally and only for Adobe Commerce Enterprise / Cloud the CIF add-on supports the use of staged catalog data for AEM authors. This requieres to configure an authorization header. This header is only available and used on AEM author instances for security reasons. AEM publish instances cannot show staged data.
 

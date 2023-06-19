@@ -68,7 +68,7 @@ The recommended application deployment structure is as follows:
 
 >[!NOTE]
 >
->The same code must be deployed to all environments. This is needed in order to ensure a level of confidence validations on the stage environment are also in production. For more information, see the section on [Runmodes](/help/implementing/deploying/overview.md#runmodes).
+>The same code must be deployed to all environments. This code is needed to ensure a level of confidence validations on the stage environment are also in production. For more information, see the section on [Runmodes](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Content Packages

@@ -7,7 +7,7 @@ exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 ---
 # Creating and Synchronizing Live Copies {#creating-and-synchronizing-live-copies}
 
-You can create a Live Copy from a page or blueprint configuration in order to reuse that content across your site. Manage inheritance and synchronization, you can control how changes to the content are propagated.
+You can create a Live Copy from a page or blueprint configuration to reuse that content across your site. Manage inheritance and synchronization, you can control how changes to the content are propagated.
 
 ## Managing Blueprint Configurations {#managing-blueprint-configurations}
 
@@ -329,7 +329,7 @@ To change Live Copy content, you can:
 >
 >If you manually create a new page in the Live Copy, the new page is local to the Live Copy, meaning it does not have a corresponding source page to which it is attached.
 >
->As a best practice in order to create a local page that is part of the relationship is to create the local page in the source and perform a deep rollout. This will create the page locally as Live Copies.
+>As a best practice so you can create a local page that is part of the relationship is to create the local page in the source and perform a deep rollout. This will create the page locally as Live Copies.
 
 >[!NOTE]
 >
@@ -538,7 +538,7 @@ To enable inheritance for a property, click or tap the **Revert Inheritance** ic
 
 ### Resetting a Live Copy Page {#resetting-a-live-copy-page}
 
-You can reset a Live Copy page in order to:
+You can reset a Live Copy page to do the following:
 
 * Remove all inheritance cancellations and
 * Return the page to the same state as the source page.

@@ -168,10 +168,10 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Package Manager - Migrating Mutable Content Packages"
->abstract="Explore usage of package manager for use cases where a content package should be installed as 'one off' which includes importing specific content from production on to staging in order to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments and more."
+>abstract="Explore usage of package manager for use cases where a content package should be installed as 'one off' which includes importing specific content from production on to staging to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments and more."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Content Transfer Tool"
 
-There are use cases where a content package should be installed as a "one off". For example importing specific content from production on to staging in order to debug a production issue. For these scenarios, [Package Manager](/help/implementing/developing/tools/package-manager.md) can be used in AEM as a Cloud Service environments.
+There are use cases where a content package should be installed as a "one off". For example importing specific content from production on to staging to debug a production issue. For these scenarios, [Package Manager](/help/implementing/developing/tools/package-manager.md) can be used in AEM as a Cloud Service environments.
 
 Since Package Manager is a runtime concept, it is not possible to install content or code into the immutable repository, so these content packages should only consist of mutable content (mainly `/content` or `/conf`). If the content package includes content that is mixed (both mutable and immutable content), only the mutable content will be installed.
 
@@ -233,7 +233,7 @@ The following Maven `POM.xml` snippet shows how 3rd party packages can be embedd
 
 ## How Rolling Deployments Work {#how-rolling-deployments-work}
 
-Like AEM updates, customer releases are deployed using a rolling deployment strategy in order to eliminate author cluster downtime under the right circumstances. The general sequence of events is described below, where nodes with both the old and new versions of customer code are running the same version of AEM code.
+Like AEM updates, customer releases are deployed using a rolling deployment strategy to eliminate author cluster downtime under the right circumstances. The general sequence of events is described below, where nodes with both the old and new versions of customer code are running the same version of AEM code.
 
 * Nodes with the old version are active and a release candidate for the new version is built and becomes available.
 * If there are any new or updated index definitions, the corresponding indexes are processed. Note that nodes with the old version will always use the old indexes, while nodes with the new version will always use the new indexes.

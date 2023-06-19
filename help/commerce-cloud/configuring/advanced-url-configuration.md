@@ -199,7 +199,7 @@ The custom URL format implementations must implement a pair of methods to build 
 
 ### Combine with Sling Mappings {#sling-mapping}
 
-In addition to the `UrlProvider`, it is also possible to configure [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) in order to rewrite and process URLs. The AEM Archetype project also provides [an example configuration](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) to configure some Sling Mappings for port 4503 (publish) and 80 (dispatcher).
+In addition to the `UrlProvider`, it is also possible to configure [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) to rewrite and process URLs. The AEM Archetype project also provides [an example configuration](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) to configure some Sling Mappings for port 4503 (publish) and 80 (dispatcher).
 
 ### Combine with AEM Dispatcher {#dispatcher}
 
@@ -223,7 +223,7 @@ _**Balance between URL length and encoded information.**_
 
 Depending on the catalog size, in particular the size and depth of the category tree, it may not be reasonable to encode the full `url_path` of categories into the URL. In that case the URL length could be reduced by including only the category's `url_key` instead. This will support most of the features that are available when using the category `url_path`.
 
-Additionally, make use of [Sling Mappings](#sling-mapping) in order to combine the sku with the product `url_key`. In most e-commerce systems the sku follows a particular format and separating the sku from the `url_key` for incoming requests should eaesily be possible. With that in mind, it should be posible to rewrite a product page URL to `/p/{{category}}/{{sku}}-{{url_key}}.html`, and a category URL to `/c/{{url_key}}.html` respecitively. The `/p` and `/c` prefix are still necessary in order to distinguish product and category pages from other content pages.
+Additionally, make use of [Sling Mappings](#sling-mapping) to combine the sku with the product `url_key`. In most e-commerce systems the sku follows a particular format and separating the sku from the `url_key` for incoming requests should eaesily be possible. With that in mind, it should be posible to rewrite a product page URL to `/p/{{category}}/{{sku}}-{{url_key}}.html`, and a category URL to `/c/{{url_key}}.html` respecitively. The `/p` and `/c` prefix are still necessary to distinguish product and category pages from other content pages.
 
 ### Migrating to a new URL Format {#migrate-url-formats}
 

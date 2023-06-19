@@ -251,7 +251,7 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 
 ### Helper Fields {#helper-fields}
 
-In addition to the data types for user generated fields, GraphQL for AEM also generates a number of *helper* fields in order to help identify a Content Fragment, or to provide additional information about a Content Fragment.
+In addition to the data types for user generated fields, GraphQL for AEM also generates a number of *helper* fields to help identify a Content Fragment, or to provide additional information about a Content Fragment.
 
 These [helper fields](#helper-fields) are marked with a preceding `_` to distinguish between what has been defined by the user and what has been auto-generated.
 
@@ -1040,4 +1040,4 @@ Questions that have arisen:
 
 ## Tutorial - Getting Started with AEM Headless and GraphQL {#tutorial}
 
-Looking for a hands-on tutorial? Check out [Getting Started with AEM Headless and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end tutorial illustrating how to build-out and expose content using AEM’s GraphQL APIs and consumed by an external app, in a headless CMS scenario.
+Looking for a hands-on tutorial? Check out [Getting Started with AEM Headless and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end tutorial illustrating how to build-out and expose content using AEM's GraphQL APIs and consumed by an external app, in a headless CMS scenario.

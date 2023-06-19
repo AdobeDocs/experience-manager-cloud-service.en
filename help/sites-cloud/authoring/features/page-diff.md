@@ -13,7 +13,7 @@ The page diff feature allows for the convenient side-by-side comparison of two p
 
 >[!NOTE]
 >
->The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
+>The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` to use the feature.
 >
 >See [Developing and Page Diff](/help/implementing/developing/introduction/page-diff.md#operation-details) for more technical details on this feature.
 

@@ -19,7 +19,7 @@ There are some accepted best practices in URLs.
 
 In your AEM project, when evaluating your URLs, ask yourself the following:
 
-*“If a user sees this URL and none of the content on the page, could they describe what this page was about?”*
+*"If a user sees this URL and none of the content on the page, could they describe what this page was about?"*
 
 If the answer is yes, then it is likely that the URL works well for a search engine.
 
@@ -73,7 +73,7 @@ Here are some general tips on how to construct your URLs for SEO:
 
   * Sometimes sites will be served over `http` until a user reaches a page with, for example, a checkout or login form, at which point it switches to `https`. When linking from this page, if the user can return to `http` pages and access them through `https`, the search engine tracks these as two separate pages.
 
-  * Google currently prefers `https` pages to `http` ones. For this reason, it often makes everyone’s life easier to serve the whole site over `https`.
+  * Google currently prefers `https` pages to `http` ones. For this reason, it often makes everyone's life easier to serve the whole site over `https`.
 
 ### Server configuration {#server-configuration}
 
@@ -145,7 +145,7 @@ There are a few points to be considered with this approach:
 The SCR annotation for this type of servlet would look something like this:
 
 ```
-@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
+@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 
 ```
 
@@ -186,7 +186,7 @@ You may want to display localized page names to users of translated content. For
 * It would be better for the URL to be:
   `www.mydomain.com/es/casa.html`.
 
-The challenge with localizing the name of the page is that many of the localization tools available on the AEM platform rely on having the page names match across locales in order to keep the content synchronized.
+The challenge with localizing the name of the page is that many of the localization tools available on the AEM platform rely on having the page names match across locales to keep the content synchronized.
 
 The `sling:alias` property allows you to have our cake and eat it too. `sling:alias` can be added as a property to any resource to allow for an alias name for the resource. In the previous example, you would have:
 
@@ -311,7 +311,7 @@ Examples:
 Both would apply the following tag to the head of the page:
 
 ```xml
-<link rel=”canonical” href=”my-brand/my-page.html”/>
+<link rel="canonical" href="my-brand/my-page.html"/>
 
 ```
 

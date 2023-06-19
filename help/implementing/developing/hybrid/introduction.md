@@ -69,7 +69,7 @@ By being faster, fluid, and more like a native application, a SPA becomes a very
 
 ### How Does a SPA Work? {#how-does-a-spa-work}
 
-The primary idea behind a SPA is that calls to and dependency on a server are reduced in order to minimize delays caused by server latency so that the SPA approaches the responsiveness of a native application.
+The primary idea behind a SPA is that calls to, and dependency on, a server are reduced to minimize delays caused by server latency so that the SPA approaches the responsiveness of a native application.
 
 In a traditional, sequential webpage, only the data needed for the immediate page is loaded. This means that when the visitor moves to another page, the server is called for the additional resources. Additional calls might be necessary as the visitor interacts with elements on the page. These multiple calls can give a sense of lag or delay as the page has to catch up with the visitor's requests.
 

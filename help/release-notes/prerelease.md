@@ -25,7 +25,7 @@ AEM as a Cloud Service has two types of releases.
 
 This pattern ensures continuous releases with no interruption of service.
 
-The prerelease channel allows you to preview features scheduled for the upcoming feature release in order to evaluate upcoming functionality and plan for its possible implementation for your own projects. It allows you to plan ahead for the next feature release.
+The prerelease channel lets you preview features scheduled for the upcoming feature release so you can evaluate upcoming functionality and plan for its possible implementation for your own projects. It lets you plan ahead for the next feature release.
 
 For example if it is May and you are subscribed to the prerelease channel, you can evaluate features in the upcoming June release.
 
@@ -105,7 +105,7 @@ You can also use the Cloud Manager API and CLI to update the environment variabl
 * [The Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) can also be used
 
     ```shell
-    aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease
+    aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL "prerelease
     ```
 
 The variable can be deleted or set back to a different value if you want the environment to be restored to the behavior of the regular (non-prerelease) channel.

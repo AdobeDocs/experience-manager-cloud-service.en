@@ -19,7 +19,7 @@ This document aims to:
 
 * Introduce you to Cloud Manager, AEM's continuous integration and delivery framework used to deploy code to AEM as a Cloud Service
 * Get you up to speed with the content transfer tool
-* Describe the code refactoring tools you have to use in order to modernize your code for AEM as a Cloud Service
+* Describe the code refactoring tools you have to use so you can modernize your code for AEM as a Cloud Service
 
 ## Using Cloud Manager {#using-cloud-manager}
 
@@ -43,7 +43,7 @@ The following figure shows the main steps involved in the phase that involves co
 
 ![image](/help/journey-migration/assets/exec-image1.png)
 
-We will start detailing the tools you need to use in order to achieve this in the chapters below.
+We will start detailing the tools you must use so you can achieve this in the chapters below.
 
 ## Content Migration {#content-migration}
 
@@ -64,7 +64,7 @@ It is time to start refactoring the existing features to be compatible with Clou
 In order to do this, you need to take a look at the documentation detailing the basic tooling you will need to start refactoring your code:
 
 
-* During planning, it is a good idea to have a list of areas that must be refactored in order to be compatible with AEM as a Cloud Service. You can review [Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md) for more details on how to refactor and optimize code for Cloud Service.  
+* During planning, it is a good idea to have a list of areas that must be refactored to be compatible with AEM as a Cloud Service. You can review [Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md) for more details on how to refactor and optimize code for Cloud Service.  
 * Read up on how to [Manage Configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=en#what-is-a-configuration) in AEM as a Cloud Service.
 * Learn how to set up a Local Development Environment by downloading the [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
 * Finally, familiarize yourself with the [AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).

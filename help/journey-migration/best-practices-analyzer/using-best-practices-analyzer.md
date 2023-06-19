@@ -229,7 +229,7 @@ The following response values are possible:
 
 ### Cache Lifetime Adjustment {#cache-adjustment}
 
-The default BPA cache lifetime is 24 hours. With the option for refreshing a report, and regenerating the cache, in both the AEM instance and the HTTP interface, this default value is likely to be appropriate for most uses of the BPA. If the report generation time is particularly long for your AEM instance, you may wish to adjust the cache lifetime in order to minimize the regeneration of the report.
+The default BPA cache lifetime is 24 hours. With the option for refreshing a report, and regenerating the cache, in both the AEM instance and the HTTP interface, this default value is likely to be appropriate for most uses of the BPA. If the report generation time is particularly long for your AEM instance, you may want to adjust the cache lifetime to minimize the regeneration of the report.
 
 The cache lifetime value is stored as the `maxCacheAge` property on the following repository node:
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`

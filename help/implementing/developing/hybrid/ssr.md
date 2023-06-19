@@ -53,7 +53,7 @@ This is done via the **RemoteContentRenderer - Configuration Factory OSGi servic
 
 The following fields are available for the configuration:
 
-* **Content path pattern** - Regular expression in order to match a portion of the content, if necessary
+* **Content path pattern** - Regular expression to match a portion of the content, if necessary
 * **Remote endpoint URL** - URL of the endpoint that is responsible for generating the content
   * Use the secured HTTPS protocol if not in local network.
 * **Additional request headers** - Additional headers to be added to the request sent to the remote endpoint
@@ -154,7 +154,7 @@ This service is internally used by the [RemoteContentRendererRequestHandlerServl
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-The `RemoteContentRendererRequestHandlerServlet` can be used to programmatically set the request configuration. `DefaultRemoteContentRendererRequestHandlerImpl`, the provided default request handler implementation, allows you to create multiple OSGi configurations in order to map a location in the content structure to a remote endpoint.
+The `RemoteContentRendererRequestHandlerServlet` can be used to programmatically set the request configuration. `DefaultRemoteContentRendererRequestHandlerImpl`, the provided default request handler implementation, lets you create multiple OSGi configurations so you can map a location in the content structure to a remote endpoint.
 
 To add a custom request Handler, implement the `RemoteContentRendererRequestHandler` interface. Be sure to set the `Constants.SERVICE_RANKING` component property to an integer higher than 100, which is the ranking of the `DefaultRemoteContentRendererRequestHandlerImpl`.
 

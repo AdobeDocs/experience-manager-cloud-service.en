@@ -41,7 +41,7 @@ There are a number of requirements before you begin working with SPAs in AEM.
 
 * Development experience creating SPAs with React or Angular frameworks
 * Basic AEM skills creating Content Fragments and using the editor
-* Be sure to review the document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) in order to understand the various levels of SPA integration possible.
+* Be sure to review the document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) so you can understand the various levels of SPA integration possible.
 
 ### Tools {#tools}
 

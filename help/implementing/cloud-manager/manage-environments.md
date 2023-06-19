@@ -147,11 +147,11 @@ Cloud Manager provides a preview service (delivered as an additional publish ser
 
 Using the service you can preview a website's final experience before it reaches the actual publish environment and is available publicly.
 
-Upon creation, the preview service will have a default IP allow list applied to it, labeled `Preview Default [<envId>]`, which blocks all traffic to the preview service. You must actively un-apply the default IP allow list from the preview service in order to enable access.
+Upon creation, the preview service will have a default IP allow list applied to it, labeled `Preview Default [<envId>]`, which blocks all traffic to the preview service. You must actively un-apply the default IP allow list from the preview service to enable access.
 
 ![Preview service and its allow list](assets/preview-ip-allow.png)
 
-A user with requisite permissions must complete the following steps before sharing the preview service URL in order to ensure access to it.
+A user with requisite permissions must complete the following steps before sharing the preview service URL to ensure access to it.
 
 1. Create an appropriate IP allow list, apply it to the preview service, and immediately un-apply the `Preview Default [<envId>]` allow list.
 
@@ -284,9 +284,9 @@ To manage IP allow lists, navigate to the **Environments** tab of the **Overview
 
 ### Applying an IP Allow List {#apply-ip-allow-list}
 
-Applying an IP allow list associates all IP ranges included in the definition of the allow list with an author or publish service in an environment. A user in the **Business Owner** or **Deployment Manager** role must be logged in in order to be able to apply an IP allow list.
+Applying an IP allow list associates all IP ranges included in the definition of the allow list with an author or publish service in an environment. A user in the **Business Owner** or **Deployment Manager** role must be logged in to be able to apply an IP allow list.
 
-The IP allow list must exist in Cloud Manager in order to apply it to an environment. To learn more about IP allow lists in Cloud Manager please refer to the document[Introduction to IP Allow Lists in Cloud Manager.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+The IP allow list must exist in Cloud Manager to apply it to an environment. To learn more about IP allow lists in Cloud Manager please refer to the document[Introduction to IP Allow Lists in Cloud Manager.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 
 Follow these steps to apply an IP allow list.
 
@@ -296,7 +296,7 @@ Follow these steps to apply an IP allow list.
 
 ### Un-Applying an IP Allow List {#unapply-ip-allow-list}
 
-Un-applying an IP allow list disassociates all IP ranges included in the definition of the allow  list from an author or publisher service in an environment. A user in the **Business Owner** or **Deployment Manager** role must be logged in in order to be able to un-apply an IP allow list.
+Un-applying an IP allow list disassociates all IP ranges included in the definition of the allow  list from an author or publisher service in an environment. A user in the **Business Owner** or **Deployment Manager** role must be logged in to be able to un-apply an IP allow list.
 
 Follow these steps to un-apply an IP allow list.
 

@@ -61,7 +61,7 @@ The application making calls to AEM should be able to access the AEM as a Cloud 
 
 ### Generate a JWT Token and Exchange It for an Access Token {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-Use the credentials to create a JWT token in a call to Adobe's IMS service in order to retrieve an access token, which is valid for 24 hours.
+Use the credentials to create a JWT token in a call to Adobe's IMS service to retrieve an access token, which is valid for 24 hours.
 
 The AEM CS Service Credentials may be exchanged for an access token using client libraries designed for this purpose. The client libraries are available from [Adobe's public GitHub repository](https://github.com/adobe/aemcs-api-client-lib), which contains more detailed guidance and latest information.
 
@@ -156,7 +156,7 @@ Alternatively, you can also verify that the technical account appears in the use
 
 <u>**Set the Appropiate Group Permissions**</u>
 
-Finally, configure the group with the appropriate permissions needed to in order to invoke or lock down your APIs appropriately. You can do this by:
+Finally, configure the group with the appropriate permissions needed to invoke or lock down your APIs appropriately. You can do this by:
 
 1. Logging in to the appropiate author instance and going to **Settings** - **Security** - **Permissions**
 1. Search for the name of the group corresponding to the product profile in the left hand pane (in this case Read-only APIs) and click on it:

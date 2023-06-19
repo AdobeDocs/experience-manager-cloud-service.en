@@ -88,7 +88,7 @@ The parameters in the following table are common to all goals except when noted 
 |`serverId`|`String`|No|The server ID from which to retrieve the user name and password for authentication|All goals except `package`|
 |`targetURL`|`String`|Yes|`http://localhost:4502/crx/packmgr/service.jsp`|The URL of the HTTP service API of the AEM package manager|All goals except `package`|
 |`timeout`|`int`|No|`5`|The connection timeout for communicating with the package manager service, in seconds|All goals except `package`|
-|`useProxy`|`boolean`|No|`true`|A value of `true` causes Maven to use the first active proxy configuration found in order to proxy requests to the Package Manager.|All goals except `package`|
+|`useProxy`|`boolean`|No|`true`|A value of `true` causes Maven to use the first active proxy configuration found to proxy requests to the Package Manager.|All goals except `package`|
 |`userId`|`String`|Yes|`admin`|The user name to authenticate with AEM|All goals except `package`|
 |`verbose`|`boolean`|No|`false`|Enables or disables verbose logging|All goals except `package`|
 

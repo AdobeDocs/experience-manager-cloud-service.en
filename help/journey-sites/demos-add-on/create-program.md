@@ -31,7 +31,7 @@ After logging in to Cloud Manager, you can create a new sandbox program for your
 
 >[!NOTE]
 >
->Your user must be a member of the **Business Owner** role in Cloud Manager in your organization in order to create programs.
+>Your user must be a member of the **Business Owner** role in Cloud Manager in your organization to create programs.
 
 1. Log into Adobe Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 

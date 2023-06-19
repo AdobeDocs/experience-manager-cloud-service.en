@@ -44,7 +44,7 @@ To get your AEM headless application ready for launch, follow the best practices
   * Use persisted queries whenever possible.
   * Provide CDN TTL above 600 seconds in order for the CDN to cache them.
   * AEM can calculate the impact of a model change to existing queries.
-* Split JSON files/GraphQL queries between low and high content change rate in order to reduce client traffic to CDN and assign higher TTL. This minimizes the CDN revalidating the JSON with the origin server.
+* Split JSON files/GraphQL queries between low and high content change rate so you can reduce client traffic to CDN and assign higher TTL. This minimizes the CDN revalidating the JSON with the origin server.
 * To actively invalidate content from the CDN use Soft Purge. This allows the CDN to redownload the content without causing a cache miss.
 
 ## Improve Time to Download Headless Content {#improve-download-time}
