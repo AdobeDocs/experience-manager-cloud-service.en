@@ -31,7 +31,12 @@ To use AEM, your team members must be assigned to at least one AEM product profi
 * `AEM Users` - This group includes normal users who perform everyday content authoring tasks.
 * `AEM Administrators` - This group includes users who are responsible for advanced features or AEM.
 
-Every user assigned to an AEM product profile will also gain read-only access to Cloud Manager. Write access to Cloud Manager may be granted via other product profiles.
+>[!NOTE]
+>
+>Every user assigned to an AEM as a Cloud Service product profile has read-only access to Cloud Manager via the **Cloud Manager User** role.
+>
+>Users with the **Cloud Manager** User role only can log into Cloud Manager and navigate to the AEM author environments (if they exist) by using the Programs menu options. The **Cloud Manager User** role is not sufficient to access program details. If such access is needed, users must be granted additional roles by their system administrator.
+>See the [Additional Resources section below](#additional-resources) for more information about Cloud Manager user roles.
 
 >[!CAUTION]
 >
@@ -102,6 +107,7 @@ However if you would like to better understand how authors and developers use th
 
 The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
+* [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) - Learn how AEM as a Cloud Service team and product profiles can grant and limit access to your licensed Adobe solutions.
 * [Managing Products and User Access in Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Learn how to use the Admin Console to manage use access.
-* [Configuring access to AEM walk-through](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en) - Check out this abridged walk-though to learn about configuring Adobe IMS users, user groups, and product profiles in the Admin Console.
+* [Configuring access to AEM walk-through](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) - Check out this abridged walk-though to learn about configuring Adobe IMS users, user groups, and product profiles in the Admin Console.
 

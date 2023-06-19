@@ -3,6 +3,7 @@ title: Managing Environments
 description: Learn about the types of environments you can create and how to create them for your Cloud Manager project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 ---
+
 # Managing Environments {#managing-environments} 
 
 Learn about the types of environments you can create and how to create them for your Cloud Manager project.
@@ -50,14 +51,67 @@ The capabilities of individual environments depend upon the solutions enabled in
      * The number of available/used environments is displayed in parentheses behind the environment type name.
    * Provide an environment **Name**.
    * Provide an environment **Description**.
+   * If you are adding a **Production + Stage** environment, you need to provide an environment name and description for both your production and staging environments.
    * Select a **Primary region** from the drop-down.
      * Note that this can not be changed after creation.
-   * If you are adding a **Production + Stage** environment, you need to provide a environment name and description for both your production and staging environments.
+     * Depending on your available entitlements, you may be able to configure [multiple regions.](#multiple-regions)
+  
    ![Add environment dialog](assets/add-environment2.png)
 
 1. Click **Save** to add the specified environment.
 
 The **Overview** screen now displays your new environment in the **Environments** card. You can now set up pipelines for your new environment.
+
+## Multiple Publish Regions {#multiple-regions}
+
+A user with the **Business Owner** role can configure prod and staging environments to include up to three additional publish regions in addition to the primary region. Additional publish regions can improve availability. See the [Additional Publish Regions documentation](/help/operations/additional-publish-regions.md) for more details.
+
+>[!TIP]
+>
+>You can use the [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) to query a current list of available regions.
+
+### Adding Multiple Publish Regions to a New Environment {#add-regions}
+
+When adding a new environment, you can elect to configure additional regions in addition to the primary region.
+
+1. Select the **Primary region**.
+   * Note that this can not be changed after environment creation.
+1. Select the option **Add additional publish regions** and a new **Additional publish regions** drop-down appears.
+1. In the **Additional publish regions** drop-down, select an additional region.
+1. The region selected is added below the drop-down to indicate its selection.
+   * Tap or click the X next to the selected region to de-select it.
+1. Select another region from the **Additional publish regions** drop down to add another region.
+1. Tap or click **Save** when you are ready to create your environment.
+
+![Selecting multiple regions](assets/select-multiple-regions.png)
+
+The selected regions will apply to both production and staging environments.
+
+If you do not specify any additional regions, [you can do so later after the environments are created.](#edit-regions)
+
+If you wish to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended to do this before adding additional publish regions to the environments by using the Cloud Manager API. Otherwise the additional publish regions' traffic will go through the primary region's proxy.
+
+### Editing Multiple Publish Regions {#edit-regions}
+
+If you did not specify any additional regions initially, you can do so after the environments are created if you have the necessary entitlements.
+
+You can also remove additional publish regions. However you can only add or only remove regions in one transaction. If you need to add one region and remove one region, first add, save your change and then remove (or vice versa).
+
+1. From the Program Overview console of your program, click the ellipsis button for your production environment and select **Edit** from the menu.
+
+   ![Edit environment](assets/select-edit-environment.png)
+
+1. In the **Edit Production Environment** dialog, make the necessary changes to the additional publish regions.
+   * Use the **Additional publish regions** drop-down to select additional regions.
+   * Click the X next to selected additional publish regions to de-select them.
+
+   ![Edit environment](assets/edit-environment.png)
+
+1. Tap or click **Save** to save the changes.
+
+Changes made to the production environment will apply to both production and staging environments. Changes to multiple publish regions can only be edited in the production environment.
+
+If you wish to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended to do this before adding additional publish regions to the environments. Otherwise the additional publish regions' traffic will go through the primary region's proxy.
 
 ## Environment Details {#viewing-environment}
 
@@ -176,6 +230,10 @@ The delete option is also available from the **Environments** tab of the **Overv
 Select **Manage Access** from the ellipsis menu of the environment on the **Environments** card. You can navigate to the author instance directly and manage access for your environment.
 
 ![Manage access option](assets/environ-access.png)
+
+>[!TIP]
+>
+>See the document [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) to learn how AEM as a Cloud Service team and product profiles can grant and limit access to your licensed Adobe solutions.
 
 ## Accessing the Developer Console {#accessing-developer-console}
 
