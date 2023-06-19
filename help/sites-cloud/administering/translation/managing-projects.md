@@ -305,7 +305,7 @@ The following table describes each status that a job or an item in the job can h
 
 |Status|Description|
 |---|---|
-|**Draft**|The translation job has not been started. Translation jobs are in **Draft**** status when they are created.|
+|**Draft**|The translation job has not been started. Translation jobs are in **Draft** status when they are created.|
 |**Submitted**|Files in the translation job have this status when they have been successfully sent to the translation service. This status can occur after the **Request Scope** command or the **Start** command is issued.|
 |**Scope Requested**|For the human translation workflow, the files in the job have been submitted to the translation vendor for scoping. This status appears after the **Request Scope** command is issued.|
 |**Scope Completed**|The vendor has scoped the translation job.|

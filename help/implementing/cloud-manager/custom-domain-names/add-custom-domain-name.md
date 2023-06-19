@@ -76,11 +76,11 @@ Follow these steps to add a custom domain name from the **Environments** page.
    1. Select the SSL certificate associated with this name from the drop-down list.
    1. Click on **+Add**.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
+   ![Add Custom Domain Name](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
 1. Check the values selected in the **Add Domain Name** dialog box and click **Continue**.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
+   ![Domain Name Window](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
 
    >[!NOTE]
    >
