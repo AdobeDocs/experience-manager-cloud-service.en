@@ -21,11 +21,11 @@ The Universal Editor can be instrumented for any implementation, for any content
 
 ### Any Implementation {#any-implementation}
 
-Because experiences can be built in many different ways, any implementation can leverage the Universal Editor so authors can perform in-context editing.
+Because experiences can be built in many different ways, any implementation can use the Universal Editor so authors can perform in-context editing.
 
-Users often think that a headless implementation limits the authors to editing all content in a form-based UI, but his isn’t true with the Universal Editor
+Users often think that a headless implementation limits the authors to editing all content in a form-based UI, but his isn't true with the Universal Editor
 
-The requirements for an implementation to leverage the Universal Editor is very straight-forward and supports:
+The requirements for an implementation to use the Universal Editor is straight-forward and supports the following:
 
 * **Any Architecture** - Server-side rendering, edge-side rendering, client-side rendering, etc.
 * **Any Framework** - Vanilla AEM, or any third-party framework like React, Next.js, Angular, etc.
@@ -51,7 +51,7 @@ By decoupling the content editing experience from any particular content deliver
 
 ![The value of the Universal Editor](assets/value.png)
 
-* **Deliver Exceptional Experiences** - In order to enable practitioners to create a compelling experience for visitors, the Universal Editor allows practitioners to create and edit the content in the context of the preview. This allows them to create content that fits the design of the experience and that constitutes a meaningful journey for visitors.
+* **Deliver Exceptional Experiences** - To enable practitioners to create a compelling experience for visitors, the Universal Editor allows practitioners to create and edit the content in the context of the preview. This allows them to create content that fits the design of the experience and that constitutes a meaningful journey for visitors.
 * **Increase Content Velocity** - To streamline the management workflow of practitioners, the Universal Editor allows editing content within the preview to guide practitioners by showing only the options that are relevant to that context and makes the workflow independent from the content sources.
 * **State-of-the-art Developer Experience** - To support real-world heterogeneous application landscape, the Universal Editor is completely fully decoupled and technology-agnostic, allowing developers to use their preferred technology stack to implement the experience.
 

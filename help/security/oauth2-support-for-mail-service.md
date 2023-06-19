@@ -40,15 +40,15 @@ For more information on the AEM as a Cloud Service Mail Service, see [Sending Em
 
 To recap, you will need to the following information to configure OAuth2 for the Mail service on the AEM side:
 
-* The Auth URL, which will be constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
-* The Token URL, which will be constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* The Refresh URL, which will be constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* The Auth URL, which is constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* The Token URL, which is constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* The Refresh URL, which is constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
 * The Client ID
 * The Client Secret
 
 ### Generating the Refresh Token {#generating-the-refresh-token}
 
-Next, you need to generate the refresh token, which will be a part of the OSGi configuration in a subsequent step.
+Next, you need to generate the refresh token, which is a part of the OSGi configuration in a subsequent step.
 
 You can do this by following these steps:
 

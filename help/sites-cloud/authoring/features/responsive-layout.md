@@ -153,7 +153,7 @@ As with other components, you can select and then take action on (cut, copy, del
 
 1. If the layout component is nested, selecting the **Parent** option presents a drop-down selection, allowing you to select the nested layout container or its parent(s).
 
-   When you mouse over the container names in the drop-down, their outlines will be displayed on the page.
+   When you mouse over the container names in the drop-down, their outlines are displayed on the page.
 
     * The lowest nested layout container will be outlined in blue.
     * Every successive container will be lin a lighter shade of blue.
@@ -187,7 +187,7 @@ When in layout mode you can perform various actions on a grid:
 
   >[!NOTE]
   >
-  >Proportions and ratios will be maintained when components such as **Images** are resized.
+  >Proportions and ratios are maintained when components such as **Images** are resized.
 
 * Click/tap on a content component, the toolbar allows you to:
   * **Parent** - Allows you to select the entire layout container component for taking action on the whole.

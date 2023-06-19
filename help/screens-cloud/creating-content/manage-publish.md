@@ -34,7 +34,7 @@ Follow the steps below to publish the channel:
     ![](/help/screens-cloud/assets/create-content/managepub-2.png)
 
     >[!NOTE]
-    >Click **+ Include Children** from the action bar and un-check all the options to publish all the modules in your project and click Add to publish. By default, all the boxes will be checked and you will have to manually un-check the boxes to publish all the modules in your project.
+    >Click **Include Children** from the action bar and un-check all the options to publish all the modules in your project and click Add to publish. By default, all the boxes are checked and you have to manually un-check the boxes to publish all the modules in your project.
 
 1. After selecting the channel from the **Manage Publication** wizard, click on **Publish** to publish the channel.
 

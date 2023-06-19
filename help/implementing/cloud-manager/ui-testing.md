@@ -161,7 +161,7 @@ For Cloud Manager to build and execute your UI tests, you must opt into this fea
 * The file must be under the maven submodule for UI tests next to the `pom.xml` file of the UI tests submodule.
 * The file must be at the root of the built `tar.gz` file.
 
-The UI tests build and executions will be skipped if this file is not present.
+The UI tests build and executions are skipped if this file is not present.
 
 To include a `testing.properties` file in the build artifact, add an `include` statement in the `assembly-ui-test-docker-context.xml` file.
 
@@ -201,7 +201,7 @@ This section describes the conventions that the Docker image containing your UI 
 
 ### Environment Variables {#environment-variables}
 
-The following environment variables will be passed to your Docker image at run time, depending on your framework.
+The following environment variables are passed to your Docker image at run time, depending on your framework.
 
 |Variable|Examples|Description|Testing Framework|
 |---|---|---|---|
@@ -236,7 +236,7 @@ If the Docker image is implemented with other programming languages or test runn
 
 ### Prerequisites {#prerequisites}
 
-* The tests in Cloud Manager will be executed using a technical admin user.
+* The tests in Cloud Manager are run using a technical admin user.
 
 >[!NOTE]
 >
@@ -248,7 +248,7 @@ If the Docker image is implemented with other programming languages or test runn
 |----------------------|-------|-----------------------------------------------------------------------|
 | CPU                  | 2.0   | Amount of CPU-time reserved per test execution                        |
 | Memory               | 1Gi   | Amount of memory allocated to the test, value in gibibytes            |
-| Timeout              | 30m   | The duration after which the test will be terminated.                 |
+| Timeout              | 30m   | The duration after which the test is ended.                 |
 | Recommended Duration | 15m   | Adobe recommends writing the tests to not take longer than this time. |
 
 >[!NOTE]
@@ -337,7 +337,7 @@ Before activating UI tests in a Cloud Manager pipeline, it's recommended to run 
 
 >[!NOTE]
 >
->The log files will be stored in the `target/` folder of your repository.
+>The log files are stored in the `target/` folder of your repository.
 >
 >For details, refer to the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
@@ -384,6 +384,6 @@ Before activating UI tests in a Cloud Manager pipeline, it's recommended to run 
 
 >[!NOTE]
 >
->The log files will be stored in the `target/reports` folder of your repository.
+>The log files are stored in the `target/reports` folder of your repository.
 >
 >For details, refer to the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).

@@ -49,7 +49,7 @@ This means you only need to redefine the required differences, as opposed to red
 
 ### Content Logic and Rendering Markup  {#content-logic-and-rendering-markup}
 
-Your component will be rendered with [HTML.](https://www.w3schools.com/htmL/html_intro.asp) Your component needs to define the HTML needed to take the required content and then render it as required, on both the author and publish environments.
+Your component is rendered with [HTML](https://www.w3schools.com/htmL/html_intro.asp). Your component needs to define the HTML needed to take the required content and then render it as required, on both the author and publish environments.
 
 It is recommended to keep the code responsible for markup and rendering separate from the code that controls the logic used to select the component's content.
 
@@ -117,11 +117,11 @@ The icon or abbreviation for the component is defined via JCR properties of the 
     * The abbreviation should be limited to two characters.
     * Providing an empty string will build the abbreviation from first two characters of the `jcr:title` property.
         * For example "Im" for "Image"
-        * The localized title will be used to build the abbreviation.
+        * The localized title is used to build the abbreviation.
     * The abbreviation is only translated if the component has an `abbreviation_commentI18n` property, which is then used as translation hint.
 1. `cq:icon.png` or `cq:icon.svg` - Icon for this component, which is shown in the Component Browser
     * 20 x 20 pixels is the size of icons of standard components.
-        * Larger icons will be downsized (client-side).
+        * Larger icons are downsized (client-side).
     * The recommended color is rgb(112, 112, 112) &gt; #707070
     * The background of standard component icons is transparent.
     * Only `.png` and `.svg` files are supported.
@@ -167,7 +167,7 @@ A component is a node of type `cq:Component` and has the following properties an
 |`cq:editConfig`|`cq:EditConfig`|This defines the [edit configuration of the component.](#edit-behavior)|
 |`cq:htmlTag`|`nt:unstructured`|This returns additional tag attributes that are added to the surrounding HTML tag. Enables addition of attributes to the automatically generated divs.|
 |`cq:noDecoration`|`Boolean`|If true, the component is not rendered with automatically generated div and css classes.|
-|`cq:template`|`nt:unstructured`|If found, this node will be used as a content template when the component is added from the Components Browser.|
+|`cq:template`|`nt:unstructured`|If found, this node is used as a content template when the component is added from the Components Browser.|
 |`jcr:created`|`Date`|This is the date of creation of the component.|
 |`jcr:description`|`String`|This is the description of the component.|
 |`jcr:title`|`String`|This is the title of the component.|

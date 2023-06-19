@@ -12,7 +12,7 @@ Learn how to use the prerelease channel to get a preview of upcoming features to
 
 Adobe Experience Manager as a Cloud Service delivers new features on a regular cadence, according to the [Experience Manager releases roadmap.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
 
-In order to become familiar with the features scheduled to go live the following feature release, you can subscribe to the prerelease channel, which is accessible by configuring your development environments or any sandbox environments. You can preview changes accessible via the AEM UI as well as build code against any new prerelease APIs.
+To become familiar with the features scheduled to go live the following feature release, you can subscribe to the prerelease channel, which is accessible by configuring your development environments or any sandbox environments. You can preview changes accessible via the AEM UI as well as build code against any new prerelease APIs.
 
 The list of prerelease features for a given feature release is posted within the [release notes.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
@@ -151,7 +151,7 @@ Javadocs are published to Maven Central.
      </dependency>
    ```
 
-   In order to change to the prerelease SDK, simply change the dependency from `com.adobe.aem:aem-sdk-api` to `com.adobe.aem:aem-prerelease-sdk-api` as noted below:
+   To change to the prerelease SDK, simply change the dependency from `com.adobe.aem:aem-sdk-api` to `com.adobe.aem:aem-prerelease-sdk-api` as noted below:
 
    ```
    <dependencyManagement>
@@ -183,7 +183,7 @@ The [AEM CS SDK build Analyzer maven plugin v1.0 and higher](https://experiencel
 
 ## Train Your Users {#train-users}
 
-Once you have tested the new features in the prerelease channel and have decided to leverage them in your projects, you need to train your users.
+Once you have tested the new features in the prerelease channel and have decided to use them in your projects, you need to train your users.
 
 Adobe Experience League offers lots of resources to learn AEMaaCS.
 

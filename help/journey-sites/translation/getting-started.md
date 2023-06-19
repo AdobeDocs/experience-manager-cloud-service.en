@@ -51,7 +51,7 @@ There are a number of requirements before you begin translating your AEM content
 
 ## How AEM Stores Content {#content-in-aem}
 
-For the translation specialist, it is not important to understand in-depth how AEM manages content. However being familiar with the basic concepts and terminology will be helpful as you later use AEM's translation tools. Most importantly, you need to understand your own content and how it is structured to effectively translate it.
+For the translation specialist, it is not important to understand in-depth how AEM manages content. However, being familiar with the basic concepts and terminology is helpful as you later use AEM's translation tools. Most importantly, you need to understand your own content and how it is structured to effectively translate it.
 
 ### Sites Console {#sites-console}
 
@@ -169,7 +169,7 @@ The final structure may look something like the following.
     |- ...
 ```
 
-You should take note of the specific path of your content as it will be required later to configure your translation.
+You should take note of the specific path of your content because it is required later to configure your translation.
 
 >[!NOTE]
 >

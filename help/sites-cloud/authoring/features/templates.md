@@ -85,7 +85,7 @@ When creating a new editable template you:
 >
 >Never enter any information that needs to be internationalized into a template. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->For template elements such as headers and footers that must be localized, leverage the [localization features of the core components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
+>For template elements such as headers and footers that must be localized, use the [localization features of the core components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
 ### Creating a Template Folder - Admin {#creating-a-template-folder-admin}
 
@@ -196,7 +196,7 @@ A template can be made available or unavailable for certain page branches.
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
-   The order of the paths is irrelevant, all paths will be scanned and any templates retrieved.
+   The order of the paths is irrelevant. All paths are scanned and any templates retrieved.
 
    >[!NOTE]
    >

@@ -71,7 +71,7 @@ Here are some general tips on how to construct your URLs for SEO:
 
 * Make sure that each page is only served from one protocol.
 
-  * Sometimes sites will be served over `http` until a user reaches a page with, for example, a checkout or login form, at which point it switches to `https`. When linking from this page, if the user can return to `http` pages and access them through `https`, the search engine tracks these as two separate pages.
+  * Sometimes sites are served over `http` until a user reaches a page with, for example, a checkout or login form, at which point it switches to `https`. When linking from this page, if the user can return to `http` pages and access them through `https`, the search engine tracks these as two separate pages.
 
   * Google currently prefers `https` pages to `http` ones. For this reason, it often makes everyone's life easier to serve the whole site over `https`.
 
@@ -372,7 +372,7 @@ For example, consider a site that defines a top-level sitemap root at `my-page` 
 
 In the default configuration, the Page Properties Dialog provides an option to mark a Page as a sitemap root and so, as described above, generate a sitemap of itself and its descendants. This behavior is implemented by implementations of the `SitemapGenerator` interface and may be extended by adding alternative implementations. However, as the frequency on which to regenerate the XML sitemaps highly depends on the content authoring workflows and workloads, the product does not ship any `SitemapScheduler` configuration. This makes the feature effectively opt-in. 
 
-In order to enable the background job that generates the XML sitemaps a `SitemapScheduler` must be configured. To do so, create an OSGI configuration for the PID `org.apache.sling.sitemap.impl.SitemapScheduler`. The scheduler expression `0 0 0 * * ?` can be used as a starting point to regenerate all XML sitemaps once a day at midnight. 
+To enable the background job that generates the XML sitemaps a `SitemapScheduler` must be configured. To do so, create an OSGI configuration for the PID `org.apache.sling.sitemap.impl.SitemapScheduler`. The scheduler expression `0 0 0 * * ?` can be used as a starting point to regenerate all XML sitemaps once a day at midnight. 
 
 ![Apache Sling Sitemap - Scheduler](assets/sling-sitemap-scheduler.png) 
 

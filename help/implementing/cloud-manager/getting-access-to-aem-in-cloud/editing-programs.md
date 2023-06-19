@@ -53,7 +53,7 @@ Follow these steps to edit a program.
 
 Any time a program is edited, including adding or removing a solution or add-on, those changes will take effect following the next deployment.
 
-If your production program had enhanced security enabled, an additional **Enhanced Security** tab will be available in the **Edit Program** window to confirm that the feature is active for the program.
+If your production program had enhanced security enabled, an additional **Enhanced Security** tab is available in the **Edit Program** window to confirm that the feature is active for the program.
 
 ![Enhanced Security active for a program](assets/edit-program-enhanced.png)
 

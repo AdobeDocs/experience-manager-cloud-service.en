@@ -150,4 +150,4 @@ To learn how to build and publish please refer to this [page](https://experience
 
 >[!NOTE]
 >
->Legacy configurations are still supported for existing customers (without the option to edit or create new ones). Legacy configurations will be part of content-packages uploaded by customers using VSTS.
+>Legacy configurations are still supported for existing customers (without the option to edit or create new ones). Legacy configurations are part of content-packages uploaded by customers using VSTS.

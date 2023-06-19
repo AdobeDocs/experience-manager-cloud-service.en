@@ -108,7 +108,7 @@ Each technique has a unique number, which relates to its collection. For example
 
 Techniques may be Sufficient, Advisory, or a Failure:
 
-* A *Sufficient Technique* is one, which, if followed, will be enough to meet a particular success criterion.
+* A *Sufficient Technique* is one, which, if followed, is enough to meet a particular success criterion.
 * An *Advisory Technique* is one, which, if followed, will have a positive impact on accessibility, but may not be enough on its own to ensure a particular success criterion is met.
 * A *Failure* is a technique describing specific example of where a success criteria would not be met.
 

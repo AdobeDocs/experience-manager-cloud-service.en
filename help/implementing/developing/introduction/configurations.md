@@ -69,8 +69,8 @@ It is very simple to create a new configuration in AEM by using the Configuratio
    ![Create configuration](assets/configuration-create.png)
 
    * The **Title** should be descriptive.
-   * The **Name** will become the node name in the repository.
-     * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](naming-conventions.md)
+   * The **Name** becomes the node name in the repository.
+     * It is automatically generated based on the title and adjusted according to [AEM naming conventions.](naming-conventions.md)
      * It can be adjusted if necessary.
 1. Check the type of configurations you wish to allow.
    * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)

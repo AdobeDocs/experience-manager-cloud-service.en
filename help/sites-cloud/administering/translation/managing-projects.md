@@ -11,7 +11,7 @@ Translation projects enable you to manage the translation of AEM content. A tran
 
 >[!TIP]
 >
->If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 When resources are added to a translation project, a translation job is created for them. Jobs provide commands and status information that you use to manage the human translation and machine translation workflows that execute on the resources.
 
@@ -368,7 +368,7 @@ You can also start all translation jobs for a project.
 
 1. In the project console, select the translation project.
 1. In the tool bar tap or click **Start Translation Job(s)**.
-1. In the dialog, review the list of jobs that will be started and then confirm with **Start** or abort with **Cancel**.
+1. In the dialog box, review the list of jobs that are started and then confirm with **Start** or abort with **Cancel**.
 
 ### Canceling a Translation Job {#canceling-a-translation-job}
 
@@ -384,7 +384,7 @@ When the content comes back after translation and is in **Ready for Review** sta
 
 If you select **Reject Translation**, you have the option to add a comment.
 
-Rejecting content sends it back to translation vendor where they will be able to see the comment.
+Rejecting content sends it back to the translation vendor where they are able to see the comment.
 
 ### Completing and Archiving Translation Jobs {#completing-and-archiving-translation-jobs}
 
@@ -437,7 +437,7 @@ To compare language copies to the language master:
 
    ![Compare language copies](../assets/language-copy-compare.png)
 
-1. The two pages (launch and source) will be opened side-by-side.
+1. The two pages (launch and source) are opened side-by-side.
    * For full information about using this feature see [Page Diff](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Moving or Renaming a Source Page {#move-source}

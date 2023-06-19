@@ -210,7 +210,7 @@ The **Update** option's behavior varies depending on the configuration and curre
 
 ## Deleting Development Environments {#deleting-environment}
 
-User with the requisite permissions will be able to delete a development environment. 
+User with the requisite permission is able to delete a development environment. 
 
 From the **Overview** screen of the program on the **Environments** card, click on the ellipsis button of the development environment you want to delete.
 

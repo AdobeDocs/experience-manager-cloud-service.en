@@ -175,7 +175,7 @@ In addition to the following parameters, see the description of the `name` param
 |`prefix`|`java.lang.String`|No|None||
 |`project`|`org.apache.maven.project.MavenProject`|Yes|None|The Maven project|
 |`properties`|`java.util.Map`|No|None|These parameters define additional properties that you can set in the `properties.xml` file. These properties cannot overwrite the following predefined properties: `group` (use `group` parameter to set), `name` (use `name` parameter to set), `version` (use `version` parameter to set), `description` (set from the project description), `groupId` (`groupId` of the Maven project descriptor), `artifactId` (`artifactId` of the Maven project descriptor), `dependencies` (use `dependencies` parameter to set), `createdBy` (the value of the `user.name` system property), `created` (the current system time), `requiresRoot` (use `requiresRoot` parameter to set), `packagePath` (automatically generated from the group and package name)|
-|`requiresRoot`|`boolean`|Yes|false|Defines whether the package requires root. This will become the `requiresRoot` property of the `properties.xml` file.|
+|`requiresRoot`|`boolean`|Yes|false|Defines whether the package requires root. Becomes the `requiresRoot` property of the `properties.xml` file.|
 |`subPackages`|`java.util.List`|No|None||
 |`version`|`java.lang.String`|Yes|The version defined in the Maven project|The version of the content package|
 |`workDirectory`|`java.io.File`|Yes|The directory defined in the Maven project (build phase)|The directory that contains the content to include in the package|
