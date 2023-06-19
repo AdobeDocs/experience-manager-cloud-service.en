@@ -92,7 +92,7 @@ With Cloud Manager’s git repository and the production pipeline, the full prod
 
 In contrast, without such a system in place, because each team can deploy separately there is a risk that an update from a single team can lead to production stability issues. In addition, it requires coordination and planned downtime to roll out updates. With an increasing number of teams, the coordination effort will become much more complex and quickly unmanageable.
 
-If a problem is detected in the quality gates, production is not affected, and the problem can be detected and fixed without Adobe personnel required to step in. Without Cloud Service and without always testing the whole deployment, partial deployments can cause outages requiring a request to rollback or even a full restore from a backup. The partial testing might also lead to other problems which then need to be fixed after the fact again requiring coordination and support from Adobe personnel.
+If a problem is detected in the quality gates, production is not affected, and the problem can be detected and fixed without Adobe personnel required to step in. Without Cloud Service and without always testing the whole deployment, partial deployments can cause outages requiring a request to roll back or even a full restore from a backup. The partial testing might also lead to other problems which then need to be fixed after the fact again requiring coordination and support from Adobe personnel.
 
 >[!TIP]
 >
