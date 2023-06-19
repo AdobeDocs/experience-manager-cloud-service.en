@@ -12,7 +12,7 @@ You can add a custom domain name from two locations in Cloud Manager:
 
 >[!NOTE]
 >
->A user must have the **Business Owner** or **Deployment Manager** role in order to add a custom domain name in Cloud Manager
+>A user must have the **Business Owner** or **Deployment Manager** role to add a custom domain name in Cloud Manager
 
 ## Adding a Custom Domain Name from the Domain Settings Page {#adding-cdn-settings}
 

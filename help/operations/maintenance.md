@@ -8,9 +8,9 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
 >title="Maintenance Tasks"
->abstract="Maintenance Tasks are processes that run on a schedule in order to optimize the repository. With AEM as a Cloud Service, the need for customers to configure the operational properties of maintenance tasks is minimal. Customers can focus their resources on application-level concerns, leaving the infrastructure operations to Adobe."
+>abstract="Maintenance Tasks are processes that run on a schedule to optimize the repository. With AEM as a Cloud Service, the need for customers to configure the operational properties of maintenance tasks is minimal. Customers can focus their resources on application-level concerns, leaving the infrastructure operations to Adobe."
 
-Maintenance Tasks are processes that run on a schedule in order to optimize the repository. With AEM as a Cloud Service, the need for customers to configure the operational properties of maintenance tasks is minimal. Customers can focus their resources on application-level concerns, leaving the infrastructure operations to Adobe.
+Maintenance Tasks are processes that run on a schedule to optimize the repository. With AEM as a Cloud Service, the need for customers to configure the operational properties of maintenance tasks is minimal. Customers can focus their resources on application-level concerns, leaving the infrastructure operations to Adobe.
 
 ## Configuring maintenance tasks {#maintenance-tasks-configuring}
 
@@ -18,7 +18,7 @@ In previous versions of AEM, you could configure maintenance tasks by using the 
 
 >[!CAUTION]
 >
->Adobe reserves the right to override a customer's maintenance task configuration settings in order to mitigate issues such as performance degradation.
+>Adobe reserves the right to override a customer's maintenance task configuration settings to mitigate issues such as performance degradation.
 
 The following table illustrates the maintenance tasks that are available at the time of release of AEM as a Cloud Service.
 

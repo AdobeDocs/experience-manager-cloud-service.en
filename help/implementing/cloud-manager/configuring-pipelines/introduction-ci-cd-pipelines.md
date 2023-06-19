@@ -91,7 +91,7 @@ Full-stack pipelines may deploy web tier configurations if a [web tier config pi
 
 The following restrictions apply.
 
-* A user must be logged with the **Deployment Manager** role in order to configure or run pipelines.
+* A user must be logged with the **Deployment Manager** role to configure or run pipelines.
 * At any time, there can only be one full-stack pipeline per environment.
 
 In addition, be aware of how the full-stack pipeline will behave if you choose to introduce a [web tier config pipeline.](#web-tier-config-pipelines)
@@ -134,7 +134,7 @@ To learn how to configure front-end pipelines, please refer to the following doc
 
 With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
 
-Please refer to the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of in order to get the full potential out of this process.
+Please refer to the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
 
 ### Configuring Full-Stack Pipelines {#configure-full-stack}
 
@@ -156,7 +156,7 @@ The following restrictions apply.
 
 * You must be on AEM version `2021.12.6151.20211217T120950Z` or newer to leverage web-tier config pipelines.
 * You must [opt in to the flexible mode of the dispatcher tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) to leverage web-tier config pipelines.
-* A user must be logged with the **Deployment Manager** role in order to configure or run pipelines.
+* A user must be logged with the **Deployment Manager** role to configure or run pipelines.
 * At any time, there can only be one web tier config pipeline per environment.
 * The user can not configure a web tier config pipeline when its corresponding full-stack pipeline is running.
 * The web tier structure must adhere to the flexible mode structure, as defined in the document [Dispatcher in the Cloud.](/help/implementing/dispatcher/disp-overview.md#validation-debug)

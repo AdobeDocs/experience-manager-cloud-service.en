@@ -23,7 +23,7 @@ This article aims to help you understand how to put your AEM headless applicatio
 
 ## The AEM SDK {#the-aem-sdk}
 
-The AEM SDK is used to build and deploy custom code. It is the main tool that you need in order to develop and test your headless application before going live. It contains the following artifacts:
+The AEM SDK is used to build and deploy custom code. It is the main tool that you need so you can develop and test your headless application before going live. It contains the following artifacts:
 
 * The Quickstart jar - an executable jar file that can be used to set up both an author and a publish instance
 * Dispatcher tools - the Dispatcher module and its dependencies for Windows and UNIX® based systems
@@ -58,7 +58,7 @@ Node.js is a JavaScript runtime environment used to work with the front-end asse
 
 Next, let's look at the constituent parts of an AEM environment.
 
-A full AEM environment is made up of an Author, Publish, and Dispatcher. These same components are made available in the local development runtime in order to make it easier for you to preview your code and content before going live.
+A full AEM environment is made up of an Author, Publish, and Dispatcher. These same components are made available in the local development runtime so you can make it easier for you to preview your code and content before going live.
 
 * **The Author service** is where internal users create, manage, and preview content.
 

@@ -17,13 +17,13 @@ exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 
 ## Introduction {#introduction}
 
-The repository browser is a developer tool that provides a read-only view into the repository for all environments on author, publish and preview tiers. It is designed to facilitate viewing of the content structure in order to make it easier to see or debug content.
+The repository browser is a developer tool that provides a read-only view into the repository for all environments on author, publish and preview tiers. It is designed to facilitate viewing of the content structure to make it easier to see or debug content.
 
 Accessible from the Developer Console, it can be used to browse the repository of an author or publish instance for a selected environment.
 
 ### Access Prerequisites {#access-prerequisites}
 
-These following conditions must be met in order to access the Developer Console or the Repository browser
+These following conditions must be met to access the Developer Console or the Repository browser
 
 In order to access Developer Console:
 

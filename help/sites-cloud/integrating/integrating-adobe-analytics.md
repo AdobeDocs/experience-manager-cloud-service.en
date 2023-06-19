@@ -9,7 +9,7 @@ exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 
 Integrating Adobe Analytics and AEM as a Cloud Service allows you to track your web page activity. The integration requires:
 
-* using the Touch UI to create an Analytics configuration in AEM as a Cloud Service. Please note that IMS authentication is required in order to integrate Adobe Analytics with AEM as a Cloud Service.
+* using the Touch UI to create an Analytics configuration in AEM as a Cloud Service. IMS authentication is required to integrate Adobe Analytics with AEM as a Cloud Service.
 * adding and configuring Adobe Analytics as an extension in [Adobe Launch](#analytics-launch). For more details about Adobe Launch, see [this page](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
 Compared to previous versions of AEM, framework support is not provided in the Analytics Configuration in AEM as a Cloud Service. Instead, it is now done through Adobe Launch, which is the defacto tool for instrumenting an AEM site with Analytics capabilities (JS libraries). In Adobe Launch, a property is created where the Adobe Analytics extension can be configured and rules are created to send data to Adobe Analytics. Adobe Launch has replaced the task of analytics provided by the sitecatalyst.
@@ -41,7 +41,7 @@ The fields present in the configuration window are as follows :
 
 ### Adobe Analytics with IMS authentication {#configuration-parameters-ims}
 
-An IMS configuration is required in order to properly integrate Adobe Analytics with AEM as a Cloud Service. This configuration must be created so please refer to this [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) to learn how to create the Analytics IMS configuration.
+An IMS configuration is required to properly integrate Adobe Analytics with AEM as a Cloud Service. This configuration must be created so please refer to this [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) to learn how to create the Analytics IMS configuration.
 
 ### Adding a configuration to a site {#add-configuration}
 

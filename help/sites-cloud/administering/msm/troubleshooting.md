@@ -49,7 +49,7 @@ The prior servlets returned computed information based on the MSM-specific nodes
 
 The information present in these properties should be reflected in the UI, however when troubleshooting it may be helpful to observe MSM behavior directly in the repository as MSM actions occur.
 
-Knowing those properties can be also useful in order to query your repository and find out sets of pages that are in particular states. For example:
+Knowing those properties can be also useful so you can query your repository and find out sets of pages that are in particular states. For example:
 
 * `select * from cq:LiveSync` returns all Live Copy root pages.
 

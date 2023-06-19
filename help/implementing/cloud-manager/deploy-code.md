@@ -83,7 +83,7 @@ The **Stage testing** phase involves these steps.
 
 ## Production Deployment Phase {#deployment-production}
 
-The process for deploying to production topologies differs slightly in order to minimize impact visitors to an AEM site.
+The process for deploying to production topologies differs slightly to minimize impact visitors to an AEM site.
 
 Production deployments generally follow the same steps as previously described, but in a rolling manner.
 

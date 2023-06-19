@@ -56,7 +56,7 @@ Please refer to [Java Functional Tests](/help/implementing/cloud-manager/java-fu
 
 ### Custom UI Testing {#custom-ui-testing}
 
-Custom UI testing is an optional feature that enables you to create and automatically run UI tests for your applications. UI tests are Selenium-based tests packaged in a Docker image in order to allow for a wide choice of language and frameworks such as Java and Maven, Node and WebDriver.io, or any other framework and technology built upon Selenium.
+Custom UI testing is an optional feature that enables you to create and automatically run UI tests for your applications. UI tests are Selenium-based tests packaged in a Docker image to allow for a wide choice of language and frameworks such as Java and Maven, Node and WebDriver.io, or any other framework and technology built upon Selenium.
 
 Please refer to [Custom UI Testing](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) for more information.
 

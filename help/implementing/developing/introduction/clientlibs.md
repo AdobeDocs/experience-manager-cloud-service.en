@@ -65,7 +65,7 @@ Client library folders contain the following items:
 
 ## Creating Client-Side Library Folders {#creating-clientlib-folders}
 
-Client libraries must be located under `/apps`. This is in order to better isolate code from content and configuration.
+Client libraries must be located under `/apps`. This rule necessary to better isolate code from content and configuration.
 
 In order for the client libraries under `/apps` to be accessible, a proxy servelt is used. The ACLs are still enforced on the client library folder, but the servlet allows for the content to be read via `/etc.clientlibs/` if the `allowProxy` property is set to `true`.
 
@@ -178,7 +178,7 @@ Additional client library settings can be controlled through the **Adobe Granite
 
 Additional folder properties include allow control of dependencies and embeds, but are generally no longer needed and their use is discouraged:
 
-* `dependencies`: This is a list of other client library categories on which this library folder depends. For example, given two `cq:ClientLibraryFolder` nodes `F` and `G`, if a file in `F` requires another file in `G` in order to function properly, then at least one of the `categories` of `G` should be among the `dependencies` of `F`.
+* `dependencies`: This is a list of other client library categories on which this library folder depends. For example, given two `cq:ClientLibraryFolder` nodes `F` and `G`, if a file in `F` requires another file in `G` to function properly, then at least one of the `categories` of `G` should be among the `dependencies` of `F`.
 * `embed`: Used to embed code from other libraries. If node `F` embeds nodes `G` and `H`, the resulting HTML will be a concatenation of content from nodes `G` and `H`.
 
 ### Linking to Dependencies {#linking-to-dependencies}

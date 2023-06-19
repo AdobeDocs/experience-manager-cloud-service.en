@@ -1,12 +1,12 @@
 ---
 title: AEM Documentation Journeys
-description: Documentation Journeys provide a narrative structure within AEM documentation by tying together complex and disparate features in order to solve a business goal in a best-practices fashion. Designed with AEM beginners in mind, journeys introduce the concepts and features to achieve a goal from A to Z.
+description: Documentation Journeys provide a narrative structure within AEM documentation by tying together complex and disparate features so you can solve a business goal in a best-practices fashion. Designed with AEM beginners in mind, journeys introduce the concepts and features to achieve a goal from A to Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: yes
 ---
 # AEM Documentation Journeys {#aem-documentation-journeys}
 
-Documentation Journeys provide a narrative structure within AEM documentation by tying together complex and disparate features in order to solve a business goal in a best-practices fashion. Designed with AEM beginners in mind, journeys introduce the concepts and features to achieve a goal from A to Z.
+Documentation Journeys provide a narrative structure within AEM documentation by tying together complex and disparate features so you can solve a business goal in a best-practices fashion. Designed with AEM beginners in mind, journeys introduce the concepts and features to achieve a goal from A to Z.
 
 ## What is a Documentation Journey? {#what-is}
 
@@ -76,7 +76,7 @@ Documentation Journeys are intended as a complement to existing AEM technical do
 
 ## What Journeys Are There? {#journeys}
 
-There are a number of Documentation Journeys already available to you. Since each journey is designed as a narrative, please start with the introduction and read all the way through in order to get a full understanding of the topic in the context of AEM.
+There are a number of Documentation Journeys already available to you. Since each journey is designed as a narrative, please start with the introduction and read all the way through so you can get a full understanding of the topic in the context of AEM.
 
 |Journey|Description|
 |---|---|

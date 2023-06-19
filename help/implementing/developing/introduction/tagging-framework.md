@@ -1,6 +1,6 @@
 ---
 title: AEM Tagging Framework
-description: Tag content and leverage the AEM Tagging infrastructure in order to categorize and organize it.
+description: Tag content and leverage the AEM Tagging infrastructure to categorize and organize it.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 ---
 # The AEM Tagging Framework {#aem-tagging-framework}

@@ -1,6 +1,6 @@
 ---
 title: Live Copy Overview Console
-description: Learn about the basics of the Live Copy Overview Console to quickly understand the status of your Live Copies in order to synchronize content.
+description: Learn about the basics of the Live Copy Overview Console to quickly understand the status of your Live Copies to synchronize content.
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c

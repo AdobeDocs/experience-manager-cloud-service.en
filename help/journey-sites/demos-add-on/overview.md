@@ -28,7 +28,7 @@ If you want to know how Adobe recommends how to solve sites business cases with 
 
 ## Audience {#audience}
 
-This journey lays out the requirements, steps, and approach to create a new program and set up an AEM sandbox with the AEM Reference Demos Add-On including Sites and/or Screens demo content. Its primary audience is the **system administrator** who is assigned the role **Business Owner** in Cloud Manager. This is usually the same person who would be in charge of environment management. However once the Reference Demos Add-On is installed, that administrator may grant other users access to the AEM environment in order to test the features that have been enabled by the add-on.
+This journey lays out the requirements, steps, and approach to create a new program and set up an AEM sandbox with the AEM Reference Demos Add-On including Sites and/or Screens demo content. Its primary audience is the **system administrator** who is assigned the role **Business Owner** in Cloud Manager. This is usually the same person who would be in charge of environment management. However, after the Reference Demos Add-On is installed, that administrator may grant other users access to the AEM environment to test the features that have been enabled by the add-on.
 
 ## The AEM Reference Demo Add-On Journey {#the-journey}
 

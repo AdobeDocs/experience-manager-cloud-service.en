@@ -31,7 +31,7 @@ If you want to know how Adobe recommends how to solve sites business cases with 
 
 ## Audience {#audience}
 
-This journey lays out the requirements, steps, and approach to customize AEM Sites themes. Its primary audience is the front-end developer, who needs no knowledge of AEM. However, in order to illustrate the entire process, the journey involves administrators, who are assumed to have basic AEM Sites and Cloud Manager knowledge. In practice, multiple people can serve multiple roles and this journey supports perspectives from both admins and front-end developers.
+This journey lays out the requirements, steps, and approach to customize AEM Sites themes. Its primary audience is the front-end developer, who needs no knowledge of AEM. However, to illustrate the entire process, the journey involves administrators, who are assumed to have basic AEM Sites and Cloud Manager knowledge. In practice, multiple people can serve multiple roles and this journey supports perspectives from both admins and front-end developers.
 
 |Persona|Description|Role in Journey|
 |---|---|---|

@@ -5,7 +5,7 @@ exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 ---
 # Components Reference Guide {#components-reference-guide}
 
-Components are at the core of building an experience in AEM. The [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) make it simple to get started with a tool set of ready-made, robust components. The [WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) takes the developer through how to use these tools and how to build custom components in order to create a new AEM site.
+Components are at the core of building an experience in AEM. The [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) make it simple to get started with a tool set of ready-made, robust components. The [WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) takes the developer through how to use these tools and how to build custom components to create an AEM site.
 
 >[!TIP]
 >
@@ -266,11 +266,11 @@ You can also use render conditions (`rendercondition`) to control who has access
 
 ## Using Components {#using-components}
 
-Once you have create a component, you need to enable it in order to use it. Using it shows how the structure of the component relates to the structure of the resulting content in the repository.
+After you have create a component, you must enable it to use it. Using it shows how the structure of the component relates to the structure of the resulting content in the repository.
 
 ### Adding your Component to the Template {#adding-your-component-to-the-template}
 
-Once a component has been defined it must be made available for use. To make a component available for use in a template, you must enable the component in the policy of the layout container of the template.
+After a component has been defined it must be made available for use. To make a component available for use in a template, you must enable the component in the policy of the layout container of the template.
 
 See the [template documentation](/help/sites-cloud/authoring/features/templates.md) for details on how templates are created.
 

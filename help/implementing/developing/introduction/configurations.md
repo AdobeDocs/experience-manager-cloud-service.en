@@ -56,7 +56,7 @@ The Configuration Browser allows an administrator to easily create, manage, and 
 
 >[!NOTE]
 >
->It is only possible to create configurations using the Configuration Browser if your user has `admin` rights. `admin` rights are also required in order to assign access rights to the configuration or otherwise modify a configuration.
+>It is only possible to create configurations using the Configuration Browser if your user has `admin` rights. `admin` rights are also required to assign access rights to the configuration or otherwise modify a configuration.
 
 #### Creating a Configuration {#creating-a-configuration}
 
@@ -85,7 +85,7 @@ It is very simple to create a new configuration in AEM by using the Configuratio
 
 #### Editing Configurations and Their Access Rights {#access-rights}
 
-If you think of configurations as workspaces, access rights can be set on those configurations in order to enforce who may and may not access those workspaces.
+If you think of configurations as workspaces, access rights can be set on those configurations to enforce who may and may not access those workspaces.
 
 1. Log into AEM as a Cloud Service and from the main menu select **Tools** -&gt; **General** -&gt; **Configuration Browser**.
 1. Select the configuration you wish to modify and then tap or click **Properties** in the tool bar.

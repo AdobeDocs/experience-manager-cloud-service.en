@@ -58,7 +58,7 @@ Once the users are defined, New Relic sends a confirmation email to each user to
 
 >[!NOTE]
 >
->If you are managing the New Relic One users, you must also add yourself as a user in order to also have access. Being the **Business Owner** or **Deployment Manager** does not suffice to have access to New Relic One. You must create yourself as a user as well.
+>If you are managing the New Relic One users, you must also add yourself as a user to also have access. Being the **Business Owner** or **Deployment Manager** does not suffice to have access to New Relic One. You must create yourself as a user as well.
 
 ## Activate Your New Relic One User Account {#activate-account}
 
@@ -140,7 +140,7 @@ If you don't receive an email from New Relic:
 
 The following limitations apply to adding users to New Relic One:
 
-* A maximum of 30 users can be added. If the maximum number of users has been reached, remove users in order to be able to add new users.
+* A maximum of 30 users can be added. If the maximum number of users has been reached, remove users to be able to add new users.
 * Users added to New Relic will be of the type **Restricted** refer to [the New Relic documentation for details.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service only offers the New Relic One APM solution and does not provide support for alerting, logging, or API integrations.
 

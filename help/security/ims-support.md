@@ -53,7 +53,7 @@ Once a customer exists as an IMS Organization, they will have to configure their
 1. The designated System Administrator receives an invite to log in to Cloud Manager. After logging into Cloud manager, the System Administrators can choose to provision AEM programs and environments or navigate to Admin Console for Administrative tasks.
 1. The System Administrator claims a domain to confirm the ownership of the respective domain (for example acme.com)
 1. The System Administrator sets up User Directories
-1. The System Administrator does IDP configuration in Admin Console in order to set up Single Sign On.
+1. The System Administrator does IDP configuration in Admin Console to set up Single Sign On.
 1. The AEM Administrator manages the local groups and permissions and privileges as usual.
 
 The Adobe Identity Management basics including IDP configuration are covered [here](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
@@ -80,9 +80,9 @@ For easy handling of user creation, a `.csv` file can be uploaded for adding use
 
 User Sync Tool (UST in short) enables our enterprise customers to create and manage Adobe users utilizing Active Directory. This also works for other tested OpenLDAP directory services. The target users are IT Identity Administrators (Enterprise Directory or System Admins) who will be able to install and configure the tool. The open source tool is customizable so that customers you modify it to suit your own particular requirements.
 
-When User Sync runs, it fetches a list of users from the organization’s Active Directory and compares it with the list of users within the Admin Console.  It then calls the Adobe User Management API so that the Admin Console is synchronized with the organization’s directory. The change flow is entirely one way. Any edits made in the Admin Console do not get pushed out to the directory.
+When User Sync runs, it fetches a list of users from the organization's Active Directory and compares it with the list of users within the Admin Console.  It then calls the Adobe User Management API so that the Admin Console is synchronized with the organization's directory. The change flow is entirely one way. Any edits made in the Admin Console do not get pushed out to the directory.
 
-The tool allows the system admin to map user groups in the customer’s directory with product configuration and user groups in the Admin Console.
+The tool allows the system admin to map user groups in the customer's directory with product configuration and user groups in the Admin Console.
 
 To set up User Sync, the organization needs to create a set of credentials in the same way they would use the [User Management API](https://www.adobe.io/apis/experienceplatform/umapi-new.html).
 
@@ -118,7 +118,7 @@ The AEM IMS configuration required will be auto-configured when the AEM environm
 
 The overall approach is to configure Adobe IMS as an OAuth provider. The **Apache Jackrabbit Oak Default Sync Handler** can be modified just like for LDAP synchronization.
 
-Below are the key OSGI configurations that need to be modified in order to change properties like User Auto Membership or Groups Mappings.
+Below are the key OSGI configurations that need to be modified to change properties like User Auto Membership or Groups Mappings.
 
 <!-- Arun to provide list of osgi configs -->
 

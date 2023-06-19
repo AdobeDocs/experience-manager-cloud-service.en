@@ -40,7 +40,7 @@ Further [help-related resources are available from consoles](/help/sites-cloud/a
 
 ## Components Browser {#components-browser}
 
-Components are the building blocks of AEM content. You place multiple components on a page and configure their options in order to build your content page with AEM.
+Components are the building blocks of AEM content. You place multiple components on a page and configure their options to build your content page with AEM.
 
 The components browser shows all components that are available for use on your current page. These can be dragged to the appropriate location, then edited to add your content.
 

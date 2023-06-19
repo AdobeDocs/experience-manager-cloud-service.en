@@ -193,7 +193,7 @@ Folders can also be restricted to only allow certain types of content (based on 
 * Prevents content authors from authoring content that do not belong in the folder.
 * Optimizes the content creation process by filtering the types of content allowed in the folder during creation to only show valid types of content.
 
-By creating an appropriate content structure, it becomes easier to coordinate headless content authoring across channels in order to maximize content reuse. Leveraging content across multiple channels greatly improves content production efficiency and change management.
+By creating an appropriate content structure, it becomes easier to coordinate headless content authoring across channels so you can maximize content reuse. Leveraging content across multiple channels greatly improves content production efficiency and change management.
 
 ##### Establish Good Naming Conventions {#naming-conventions}
 

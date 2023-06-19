@@ -39,7 +39,7 @@ At the AEM Foundation level, the Personal Data that is stored is held in the Use
 
 ### HTTP API {#http-api}
 
-As mentioned, Adobe provides APIs for accessing user data, in order to facilitate automation. There are several types of APIs which you can use:
+As mentioned, Adobe provides APIs for accessing user data, to facilitate automation. There are several types of APIs which you can use:
 
 **UserProperties API**
 

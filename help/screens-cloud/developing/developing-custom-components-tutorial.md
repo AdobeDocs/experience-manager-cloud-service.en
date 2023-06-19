@@ -179,7 +179,7 @@ AEM Screens has some interesting constraints that are not necessarily true for t
 
    Above is the edit markup for the Hello World Component. The first block displays an edit version of the component if the dialog message has been populated.
 
-   The second block is rendered if no dialog message has been entered. The `cq-placeholder` and `data-emptytext` render the label ***Hello World*** as a place holder in that case. The string for the label can be internationalized using i18n in order to support authoring in multiple locales.
+   The second block is rendered if no dialog message has been entered. The `cq-placeholder` and `data-emptytext` render the label ***Hello World*** as a place holder in that case. The string for the label can be internationalized using i18n to support authoring in multiple locales.
 
 1. **Copy Screens Image Dialog to be used for the Hello World component.**
 

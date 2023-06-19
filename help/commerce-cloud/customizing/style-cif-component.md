@@ -449,7 +449,7 @@ After the code for the project has been deployed to AEM, we should now be able t
 
     ![Updated Product Teaser style](../assets/style-cif-component/product-teaser-new-style.png)
 
-1. Experiment by adding additional Product teasers. Use Layout Mode to change the width and offset of the components in order to display multiple teasers in a row.
+1. Experiment by adding additional Product teasers. Use Layout Mode to change the width and offset of the components to display multiple teasers in a row.
 
     ![Multiple Product Teasers](../assets/style-cif-component/multiple-teasers-final.png)
 

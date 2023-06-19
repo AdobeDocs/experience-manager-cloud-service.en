@@ -9,7 +9,7 @@ Learn how easy and intuitive it is for content authors to create content using t
 
 ## Introduction {#introduction}
 
-The Universal Editor enables editing any aspect of any content in any implementation in order to deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
+The Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
 
 To do this, it provides content authors with an intuitive UI that requires minimal training to be able to simply jump in and begin editing content.
 
@@ -33,7 +33,7 @@ In order to author content for an app using the Universal Editor, the app must b
 
 Once the app is instrumented to work with the Universal Editor, you will need to sign into the Universal Editor. You will need an Adobe ID to sign in and [have access to the Universal Editor.](getting-started.md#request-access)
 
-Once you are signed in, enter the URL of the page you wish to edit in the [address bar.](#address-bar) in order to start [editing the content.](#edit-content)
+After you are signed in, enter the URL of the page you want to edit in the [address bar.](#address-bar) so you can start [editing the content.](#edit-content)
 
 ## Understand The UI {#ui}
 
@@ -126,7 +126,7 @@ Tap or click the open app preview icon to open the page you are currently editin
 
 #### Publish {#publish}
 
-Tap or click the publish button in order to publish the changes to the content live for consumption by your readers.
+Tap or click the publish button so you can publish the changes to the content live for consumption by your readers.
 
 ![Publish button](assets/publish.png)
 
@@ -186,7 +186,7 @@ Note that in preview mode, tapping or clicking on content reacts as it would to 
 
 To learn more about the Universal Editor, see these documents.
 
-* [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation in order to deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
+* [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
 * [Publishing Content with the Universal Editor](publishing.md) - Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
 * [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
