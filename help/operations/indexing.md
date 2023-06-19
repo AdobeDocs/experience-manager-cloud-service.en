@@ -35,31 +35,29 @@ Defining indexes can comprise of these three use cases:
 1. Updating an existing index definition. This effectively means adding a new version of an existing index definition.
 1. Removing an existing index that is redundant or obsolete.
 
-For both points 1 and 2 above, you need to create a new index definition as part of your custom code base in the respective Cloud Manager release schedule. For more information, see the [Deploying to AEM as a Cloud Service documentation](/help/implementing/deploying/overview.md).
+For both points 1 and 2 above, you need to create a new index definition as part of your custom code base in the respective Cloud Manager release schedule. For more information, see the [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md) documentation.
 
 ## Index Names {#index-names}
 
-An index definition can be either be:
+An index definition can either be:
 
-1. An out-of-the-box index. One example is `/oak:index/cqPageLucene-2`.
-1. A customization of an out-of-the-box index. Such customizations are defined by the customer. One example is `/oak:index/cqPageLucene-2-custom-1`.
+1. An out-of-the-box index, like: `/oak:index/cqPageLucene-2`.
+1. A customization of an out-of-the-box index. Such customizations are defined by the customer like: `/oak:index/cqPageLucene-2-custom-1`.
 1. A fully custom index. One example is `/oak:index/acme.product-1-custom-2`. To avoid naming collisions, we require that fully custom indexes have a prefix, for example, `acme.`
 
-Notice that both customization of an out-of-the-box index, as well as fully custom indexes, need to contain `-custom-`. Only fully custom indexes must start with a prefix.
+Notice that both customization of an out-of-the-box index, as well as fully custom indexes, need to contain `-custom-`. A complete set of rules are given in the [Preparing the New Index Definition](#preparing-the-new-index-definition) section.
 
 ## Preparing the New Index Definition {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->If customizing an out-of-the-box index, for example `damAssetLucene-6`, please copy the latest out-of-the-box index definition from a *Cloud Service environment* using the CRX DE Package Manager (`/crx/packmgr/`) . Then rename the configuration, for example to `damAssetLucene-6-custom-1`, and add your customizations on top. This ensures that required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-6/tika` is required in the customized index of the cloud service. It doesn't exist on the Cloud SDK.
+>If customizing an out-of-the-box index, for example `damAssetLucene-8`, please copy the latest out-of-the-box index definition from a *Cloud Service environment* using the CRX DE Package Manager (`/crx/packmgr/`) . Rename it to `damAssetLucene-8-custom-1` (or higher), and add your customizations inside the XML file. This ensures that required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-8/tika` is required in the customized index of the cloud service. It doesn't exist on the Cloud SDK.
 
 You need to prepare a new index definition package that contains the actual index definition, following this naming pattern:
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-which then needs to go under `ui.apps/src/main/content/jcr_root`. All customized and custom index definitions need to be stored under `/oak:index`.
-
-The filter for the package needs to be set such that existing (out-of-the-box indexes) are retained. In the file `ui.apps/src/main/content/META-INF/vault/filter.xml`, each custom (or customized) index needs to be listed, for example as `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. If the index version is later changed, the filter needs to be adjusted.
+Only fully custom indexes must start with a prefix.
 
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 
@@ -71,54 +69,162 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 >
 >`noIntermediateSaves=true`
 
-## Deploying Index Definitions {#deploying-index-definitions}
+## Deploying Custom Index Definitions {#deploying-index-definitions}
+For demonstration purposes, we will show how to deploy a customization of the out-of-the-box index `damAssetLucene-8`. First we change the name to: `damAssetLucene-8-custom-1`. Then the steps are as follows: 
 
-Index definitions are marked as custom and versioned:
+1. Add a folder with the new name under `ui.apps`:
+    * `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
+2. Add custom the configuration as a file named `.content.xml` under the new folder: 
+    * `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
-* The index definition itself (for example `/oak:index/ntBaseLucene-custom-1`)
 
-To deploy a custom or customized index, the index definition (`/oak:index/definitionname`) needs to be delivered via `ui.apps` via Git and the Cloud Manager deployment process. In the FileVault filter, for example, `ui.apps/src/main/content/META-INF/vault/filter.xml`, list each custom and customized index individually, for example `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. The custom / customized index definition itself will then be stored in the file `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, as follows:
-
+Filename: damAssetLucene-8-custom-1/.content.xml
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:oak="https://jackrabbit.apache.org/oak/ns/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
-        jcr:primaryType="oak:QueryIndexDefinition"
-        async="[async,nrt]"
-        compatVersion="{Long}2"
-        ...
-        </indexRules>
-        <tika jcr:primaryType="nt:unstructured">
-            <config.xml jcr:primaryType="nt:file"/>
-        </tika>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="oak:QueryIndexDefinition"
+    async="[async,nrt]"
+    compatVersion="{Long}2"
+    evaluatePathRestrictions="{Boolean}true"
+    includedPaths="[/content/dam]"
+    maxFieldLength="{Long}100000"
+    reindex="{Boolean}false"
+    reindexCount="{Long}1"
+    seed="{Long}-1290430931455096831"
+    tags="[visualSimilaritySearch]"
+    type="lucene">
+    <aggregates jcr:primaryType="nt:unstructured">
+        <dam:Asset jcr:primaryType="nt:unstructured">
+            <include0
+                jcr:primaryType="nt:unstructured"
+                path="jcr:content"/>
+            <include1
+                jcr:primaryType="nt:unstructured"
+                path="jcr:content/metadata"/>
+            <include2
+                jcr:primaryType="nt:unstructured"
+                path="jcr:content/metadata/*"/>
+            <include3
+                jcr:primaryType="nt:unstructured"
+                path="jcr:content/renditions"/>
+            <include4
+                jcr:primaryType="nt:unstructured"
+                path="jcr:content/renditions/original"/>
+            <include5
+                jcr:primaryType="nt:unstructured"
+                path="jcr:content/renditions/original/jcr:content"/>
+            <include6
+                jcr:primaryType="nt:unstructured"
+                path="jcr:content/comments"/>
+            <include7
+                jcr:primaryType="nt:unstructured"
+                path="jcr:content/comments/*"/>
+            <include8
+                jcr:primaryType="nt:unstructured"
+                path="jcr:content/data/master"/>
+            <include9
+                jcr:primaryType="nt:unstructured"
+                path="jcr:content/usages"/>
+            <include10
+                jcr:primaryType="nt:unstructured"
+                path="jcr:content/renditions/cqdam.text.txt/jcr:content"/>
+        </dam:Asset>
+    </aggregates>
+    <facets
+        jcr:primaryType="nt:unstructured"
+        secure="statistical"
+        topChildren="100"/>
+    <indexRules jcr:primaryType="nt:unstructured">
+        <dam:Asset jcr:primaryType="nt:unstructured">
+            <properties jcr:primaryType="nt:unstructured">
+                <cqTags
+                    jcr:primaryType="nt:unstructured"
+                    name="jcr:content/metadata/cq:tags"
+                    nodeScopeIndex="{Boolean}true"
+                    propertyIndex="{Boolean}true"
+                    useInSpellcheck="{Boolean}true"
+                    useInSuggest="{Boolean}true"/>
+                <dcFormat
+                    jcr:primaryType="nt:unstructured"
+                    analyzed="{Boolean}true"
+                    facets="{Boolean}true"
+                    name="jcr:content/metadata/dc:format"
+                    propertyIndex="{Boolean}true"/>
+            </properties>
+        </dam:Asset>
+    </indexRules>
+    <tika jcr:primaryType="nt:folder">
+        <config.xml jcr:primaryType="nt:file"/>
+    </tika>
 </jcr:root>
+
+```
+3. Add an entry for each new index to the FileVault filter in `ui.apps/src/main/content/META-INF/vault/filter.xml`:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/{yourAppId}/clientlibs"/>
+    <filter root="/apps/{yourAppId}/components"/>
+    <filter root="/apps/{yourAppId}/i18n"/>
+    <filter root="/oak:index/damAssetLucene-8-custom-1"/> *** add this line ***
+</workspaceFilter>
+```
+4. Add a tika configuration file under: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`:
+```xml
+<properties>
+  <detectors>
+    <detector class="org.apache.tika.detect.TypeDetector"/>
+  </detectors>
+  <parsers>
+    <parser class="org.apache.tika.parser.DefaultParser">
+      <mime>text/plain</mime>
+    </parser>
+  </parsers>
+  <service-loader initializableProblemHandler="ignore" dynamic="true"/>
+</properties>
 ```
 
 The above example contains a configuration for Apache Tika. The Tika configuration file would be stored under `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
 
-### Project Configuration
-
-Depending on which version of the Jackrabbit Filevault Maven Package Plugin is used, some more configuration in the project is required. When using the Jackrabbit Filevault Maven Package Plugin version **1.1.6** or newer, then the file `pom.xml` needs to contain the following section in plugin configuration for the `filevault-package-maven-plugin`, in `configuration/validatorsSettings` (just before `jackrabbit-nodetypes`):
-
+## Project Configuration
+### src/pom.xml
+It is recommended to use the latest version of the Jackrabbit Filevault Maven Package Plugin, which is currently **1.3.2**. To use this version, add the follwing to the top level `pom.xml` file: 
 ```xml
-<jackrabbit-packagetype>
-    <options>
-        <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
-    </options>
-</jackrabbit-packagetype>
+<validatorsSettings>
+    <jackrabbit-packagetype>
+        <options>
+            <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+        </options>
+    </jackrabbit-packagetype>
+</validatorsSettings>
 ```
+Below is a sample of the top level `pom.xml` file of the project with the above configurations added: 
 
-Also, in this case the `vault-validation` version needs to be upgraded to a newer version:
-
+Filename: `pom.xml`
 ```xml
-<dependency>
-    <groupId>org.apache.jackrabbit.vault</groupId>
-    <artifactId>vault-validation</artifactId>
-    <version>3.5.6</version>
-</dependency>
+<plugin>
+    <groupId>org.apache.jackrabbit</groupId>
+        <artifactId>filevault-package-maven-plugin</artifactId>
+        ...
+        <version>1.3.2</version>
+        <configuration>
+            ...
+            <allowIndexDefinitions>true</allowIndexDefinitions>
+            <validatorsSettings>
+                <jackrabbit-packagetype>
+                    <options>
+                        <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+                    </options>
+                </jackrabbit-packagetype>
+            </validatorsSettings>
+            ...
+</plugin>
 ```
+### ui.apps and ui.apps.structure
+Inside `ui.apps.structure/pom.xml` and `ui.apps/pom.xml`, the configuration of the `filevault-package-maven-plugin` needs to have `allowIndexDefinitions` as well as `noIntermediateSaves` enabled. The option `allowIndexDefinitions` allows custom index definitions while `noIntermediateSaves` ensures that the index configurations are added atomically. 
 
-Then, in `ui.apps.structure/pom.xml` and `ui.apps/pom.xml`, the configuration of the `filevault-package-maven-plugin` needs to have `allowIndexDefinitions` as well as `noIntermediateSaves` enabled. The option `noIntermediateSaves` ensures that the index configurations are added atomically.
-
+Filenames: `ui.apps/pom.xml` and `ui.apps.structure/pom.xml`
 ```xml
 <groupId>org.apache.jackrabbit</groupId>
     <artifactId>filevault-package-maven-plugin</artifactId>
@@ -131,71 +237,16 @@ Then, in `ui.apps.structure/pom.xml` and `ui.apps/pom.xml`, the configuration of
     ...
 ```
 
-In `ui.apps.structure/pom.xml`, the `filters` section for this plugin needs to contain a filter root as follows:
+In `ui.apps.structure/pom.xml` you also need to add a filter for `oak:index`:
 
 ```xml
-<filter><root>/oak:index</root></filter>
+<filters>
+    ...
+    <filter><root>/oak:index</root></filter>
+</filters>
 ```
 
 Once the new index definition is added, the new application needs to be deployed via Cloud Manager. Upon deployment, two jobs are started that are responsible for adding (and merging if needed) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. The underlying repositories are reindexed with the new index definitions, before the switch takings place.
-
-### NOTE
-
-In case you observe the following error in filevault validation <br>
-`[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
-Then either of the following steps can be followed to fix the issue - <br>
-1. Downgrade filevault to version 1.0.4 and add the following to the top level pom :
-
-```xml
-<allowIndexDefinitions>true</allowIndexDefinitions>
-```
-
-Below is an example of where to place the above configuration in the pom.
-
-```xml
-<plugin>
-    <groupId>org.apache.jackrabbit</groupId>
-    <artifactId>filevault-package-maven-plugin</artifactId>
-    <configuration>
-        <properties>
-        ...
-        </properties>
-        ...
-        <allowIndexDefinitions>true</allowIndexDefinitions>
-        <repositoryStructurePackages>
-        ...
-        </repositoryStructurePackages>
-        <dependencies>
-        ...
-        </dependencies>
-    </configuration>
-</plugin>
-```
-
-1. Disable nodetype validation. Set the following property in the  jackrabbit-nodetypes section of the configuration of the filevault plugin:
-
-```xml
-<isDisabled>true</isDisabled>
-```
-
-Below is an example of where to place the above configuration in the pom.
-
-```xml
-<plugin>
-    <groupId>org.apache.jackrabbit</groupId>
-    <artifactId>filevault-package-maven-plugin</artifactId>
-    ...
-    <configuration>
-    ...
-        <validatorsSettings>
-        ...
-            <jackrabbit-nodetypes>
-                <isDisabled>true</isDisabled>
-            </jackrabbit-nodetypes>
-        </validatorsSettings>
-    </configuration>
-</plugin>
-```
 
 >[!TIP]
 >
