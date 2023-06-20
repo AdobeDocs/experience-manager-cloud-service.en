@@ -9,7 +9,7 @@ This document is designed to give an overview of basic handling when using the A
 
 >[!NOTE]
 >
->* Some functionality is not available in all consoles and additional functionality may be available in some consoles. Specific information about the individual consoles and their related functionality will be covered in more detail on other pages.
+>* Some functionality is not available in all consoles and additional functionality may be available in some consoles. Specific information about the individual consoles and their related functionality are covered in more detail on other pages.
 >* Keyboard shortcuts are available throughout AEM. In particular when [using consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) and [editing pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 ## A Touch-Enabled UI {#a-touch-enabled-ui}
@@ -104,7 +104,7 @@ The header is always present at the top of the screen. While most options in the
 
   ![Notifications button](/help/sites-cloud/authoring/assets/notifications.png)
 
-  This icon will be badged with the number of currently assigned incomplete notifications.
+  This icon is badged with the number of currently assigned incomplete notifications.
   
 * [User Properties](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
@@ -293,15 +293,15 @@ Selecting a resource in the leftmost column will display the child resources in 
 
 * You can navigate up and down in the tree by tapping or clicking on the resource name or the chevron to the right of the resource name.
 
-  * The resource name and chevron will be highlighted when tapped or clicked.
+  * The resource name and chevron are highlighted when tapped or clicked.
   * The children of the clicked/tapped resource are displayed in the column to the right of the clicked/tapped resource.
   * If you tap or click on a resource name that has no children, its details are displayed in the final column.
 
 * Tapping or clicking on the thumbnail selects the resource.
 
-  * When selected, a check mark will be overlaid on the thumbnail and the resource name will be highlighted as well.
-  * The details of the selected resource will be shown in the final column.
-  * The action toolbar will become available.
+  * When selected, a check mark is overlaid on the thumbnail and the resource name is highlighted as well.
+  * The details of the selected resource are shown in the final column.
+  * The action toolbar becomes available.
 
   When a page is selected in column view, the selected page is displayed in the final colum along with the following details:
 

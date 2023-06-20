@@ -51,7 +51,7 @@ In addition to viewing the annotations, Annotate mode allows you to create, edit
 
 1. Click or tap the Add Annotation icon (plus symbol at the left of the toolbar) to start adding annotations.
 
-1. Click or tap the required component (components that can be annotated will be highlighted with a blue border) to add the annotation and open the dialog:
+1. Click or tap the required component (components that can be annotated are highlighted with a blue border) to add the annotation and open the dialog:
 
    ![Adding an Annotation](/help/sites-cloud/authoring/assets/annotation-adding.png)
 

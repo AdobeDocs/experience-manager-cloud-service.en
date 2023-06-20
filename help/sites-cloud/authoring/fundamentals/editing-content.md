@@ -106,7 +106,7 @@ If the page is subject to multiple workflows, the number of workflows is display
 
 ## Component Placeholder {#component-placeholder}
 
-The component placeholder is an indicator to show where a component will be positioned when you drop it - above the component you are currently hovering over.
+The component placeholder is an indicator to show where a component is positioned when you drop it - above the component you are currently hovering over.
 
 * When adding a new component to the page (dragging from the component browser):
 
@@ -120,7 +120,7 @@ The component placeholder is an indicator to show where a component will be posi
 
 ### Inserting a Component from the Components Browser {#inserting-a-component-from-the-components-browser}
 
-You can add a new component by using the [component browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). The [component placeholder](#component-placeholder) shows you where the component will be positioned:
+You can add a new component by using the [component browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). The [component placeholder](#component-placeholder) shows you where the component is positioned:
 
 1. Make sure that your page is in [**Edit** mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Open the [component browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
@@ -148,7 +148,7 @@ You can add a new component by using the **Drag components here** box of the par
 
       ![Insert New Component dialog](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
-1. The selected component will be added to the bottom of the page. [Edit](#edit-content) the component as required.
+1. The selected component is added to the bottom of the page. [Edit](#edit-content) the component as required.
 
 ### Inserting a Component using the Assets Browser {#inserting-a-component-using-the-assets-browser}
 
@@ -160,9 +160,9 @@ To create a component by dragging one of the above asset types:
 
 1. Make sure that your page is in [**Edit** mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Open the [asset browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
-1. Drag the required asset to the required position. The [component placeholder](#component-placeholder) shows you where the component will be positioned.
+1. Drag the required asset to the required position. The [component placeholder](#component-placeholder) shows you where the component is positioned.
 
-   A component, appropriate for the asset type, will be created at the required location - it will contain the selected asset.
+   A component, appropriate for the asset type, is created at the required location - it contains the selected asset.
 
 1. [Edit](#edit-content) the component if required.
 
@@ -178,19 +178,19 @@ If when browsing the assets you find that you need to make a quick change to an 
 
 Selecting a component will open the toolbar. This provides access to various actions that can be performed on the component.
 
-The actual actions available to the user will be shown as appropriate and not all actions may be described here.
+The actual actions available to the user are shown as appropriate and not all actions may be described here.
 
 ![Component Toolbar](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
 * **Edit**
 
-  [Dependent on the component type](/help/sites-cloud/authoring/fundamentals/components.md) this will allow you to [edit the content of the component](#edit-content). Often a toolbar will be provided.
+  [Dependent on the component type](/help/sites-cloud/authoring/fundamentals/components.md), this lets you [edit the content of the component](#edit-content). Often a toolbar is provided.
 
   ![Edit button](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
 
 * **Configure**
 
-  [Dependent on the component type](/help/sites-cloud/authoring/fundamentals/components.md) this will allow you to edit and configure the properties of the component. Often a dialog will be opened.
+  [Dependent on the component type](/help/sites-cloud/authoring/fundamentals/components.md), this lets you edit and configure the properties of the component. Often a dialog is opened.
 
   ![Configure button](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
 
@@ -202,7 +202,7 @@ The actual actions available to the user will be shown as appropriate and not al
 
 * **Cut**
 
-  This will copy the component to the clipboard. After the paste action, the original component will be removed.
+  This will copy the component to the clipboard. After the paste action, the original component is removed.
 
   ![Cut button](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
 
@@ -223,7 +223,7 @@ The actual actions available to the user will be shown as appropriate and not al
   This will paste the component from the clipboard to the page. Whether the original remains, depends on whether you used copy or cut.
 
   * You can paste to the same page or to a different page.
-  * The pasted item will be pasted above the item where you select the paste action.
+  * The pasted item is pasted above the item where you select the paste action.
   * The Pate action will only be shown if there is content on the clipboard.
 
   ![Paste button](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)

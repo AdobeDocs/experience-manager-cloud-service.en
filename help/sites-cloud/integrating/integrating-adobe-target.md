@@ -45,7 +45,7 @@ In both cases, be aware that:
 
 * By default, the Client Code (if added first) is also automatically copied into the Tenant ID field.
 * You have the option to change the default Tenant ID set.
-* Accordingly, the backend calls to Target will be based on the Tenant ID and the client side calls to Target will be based on the Client Code.
+* Accordingly, the backend calls to Target are based on the Tenant ID and the client side calls to Target are based on the Client Code.
 
 As stated previously, the first case is the most common for AEM as a Cloud Service. Either way, make sure that **both** fields contain the correct information depending on your requirements.
 
@@ -106,7 +106,7 @@ A property is a container that is filled with extensions, rules, data elements.
 3. Select the **Configure** button. Notice the configuration window with the Target account credentials imported, and the at.js version for this extension.
 4. Select **Save** to add the Target extension to your Launch property. You should be able to see the Target extension listed under the **Installed Extensions** list.
 ![Save Extension](assets/configure_extension1.png "Save Extension")
-5. Repeat the steps above to search for the **Adobe ContextHub** extension and install it (this is required for the integration with contexthub parameters, based on which targeting will be done).
+5. Repeat the steps above to search for the **Adobe ContextHub** extension and install it (this is required for the integration with contexthub parameters, based on which targeting is done).
 
 ### Creating a Data Element {#data-element}
 
@@ -124,7 +124,7 @@ In **Rule** we define and order a sequence of actions, which are executed on sit
 
 1. Add a set of actions as exemplified in the screenshot.
 ![Actions](assets/rules1.png "Actions")
-2. In Add Params to All Mboxes add the data element configured earlier (see data element above), to the parameter which will be sent in the mbox call.
+2. In Add Params to All Mboxes, add the data element configured earlier (see data element above), to the parameter which is sent in the mbox call.
 ![Mbox](assets/map_data1.png "Actions")
 
 ### Build and Publish {#build-publish}

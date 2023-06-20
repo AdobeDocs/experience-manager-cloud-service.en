@@ -116,7 +116,7 @@ You can specify details:
 
     * An existing resource to see additional actions:
 
-        * **Include children** to specify that children of that resource will be included in the workflow.
+        * **Include children** to specify that children of that resource are included in the workflow.
           A dialog will open allowing you to refine the selection according to:
 
             * Include only immediate children.
