@@ -21,6 +21,7 @@ None.
 
 - ASSETS-25729 - View switcher menu is cut off 
 - ASSETS-25728 - Reprocess Asset option not available in search view
+- ASSETS-22603 - Some Download-type Asset Report columns display "null" values in the UI. Downloadable CSV is not affected.
 
 ### Fixed Issues {#fixed-issues-12255}
 
