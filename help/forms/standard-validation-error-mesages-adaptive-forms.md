@@ -276,6 +276,7 @@ if (responseJson) {
 };
 
 ```
+
 You can view the SOM expression of any field in an Adaptive Form by tapping the field and selecting View SOM Expression from the **[!UICONTROL More Options (...)]** menu.  
 
 A custom error handler function provides you with the flexibility to tailor error handling to your specific needs. By designing your own custom error handler, you can take control of how errors are detected, reported, and resolved. 
