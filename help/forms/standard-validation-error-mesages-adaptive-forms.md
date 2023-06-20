@@ -99,30 +99,6 @@ Where:
 * `originCode` contains the error code returned by the external service
 * `originMessage` contains the raw error data returned by the external service.
 
-Sample code of error format based on the SOM expression of the Adaptive Form field:
-
-```javascript
-
-    {
-    "type": "VALIDATION_ERROR",
-    "title": "Validation error",
-    "detail": "Please check value.",
-    "instance": "abc",
-    "validationErrors": [
-        {
-        "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
-        "dataRef": "",
-        "details": [
-            "Invalid ID supplied. Provided value is not correct!"
-        ]
-        }
-    ]
-    }
-
-```
-
-You can view the SOM expression of any field in an adaptive form by tapping the field and selecting **[!UICONTROL View SOM Expression]**.
-
 
 ## Add error handler using Rule Editor {#add-error-handler-using-rule-editor}
 
@@ -147,7 +123,7 @@ To understand how to use a default error handler using the [Rule Editor's](rule-
 
  ![default error handler](/help/forms/assets/default-error-handler.png)
 
-As a result of this rule, the values that you enter for Pet ID get validated for Pet Name and the error messages are displayed at the field level if the validation criteria based on the data source fails.
+As a result of this rule, the values that you enter for **Pet ID** get validated for **Pet Name** and the error messages are displayed at the field level if the validation criteria based on the data source fails.
 
  ![default error message](/help/forms/assets/default-error-message.png)
 
@@ -156,8 +132,9 @@ As a result of this rule, the values that you enter for Pet ID get validated for
 
 You can add a custom error handler function to:
 * handle error responses and display error messages on fields if the error response is not in the standard schema expected by an Adaptive Form.
-* send any analytics events.
-* display any modal dialog in case of an error by calling any other custom code.
+* send analytics events.
+* display modal dialog in case of an error by calling any other custom code.
+
 Perform the following steps to add and use a custom error handler in an Adaptive Form:
 1. [Create a custom error function](#create-custom-error-message) 
 1. [Configure custom error handler using Rule Editor's Invoke service action](#configure-custom-error-handler)
@@ -175,6 +152,11 @@ To add custom error functions, perform the following steps:
         Sample code used here for handling error responses and display error messages on fields if the error response is not in the standard schema is:
 
         ```javascript
+        /**
+        * Custom Error handler
+        * @name customErrorHandler Custom Error Handler Function
+        * @errorHandler
+        */
         function customErrorHandler(response, headers)
         {
             console.log("Custom Error Handler processing start...");
@@ -185,7 +167,7 @@ To add custom error functions, perform the following steps:
         }
         ```
 
-    The above custom error handler function displays the response and headers in the console along with the JSON string. To call the default error handler after the custom error handler, the following line of the sample code is used:
+        The above custom error handler function displays the response and headers in the console along with the JSON string. To call the default error handler after the custom error handler, the following line of the sample code is used:
         `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
 
     * **js.txt** contains:
