@@ -43,7 +43,7 @@ Experience Manager Assets allows you to configure the default link share setting
 1. Specify the default validity period for the link in the `Validity Period` field in the `Expiration date` section.
 
 1. Link share button in the action bar:
-   * The Link Share button is visible to everyone, by default. You can configure to display this option only for the defined groups or you can also deny this option from specific groups. Select `Allow only for groups` if you want to allow specific groups to view the `Share Link` option. Select `Deny from groups` to deny the `Share Link` option from specific groups. Once you select any of these options, specify the group names using `Select Groups` field to add the group names that you need to allow or deny.
+   * To make the Link Share button visible to all the users, you need to configure `jcr:modifyAccessControl` permission. The Link Share button is visible to everyone, by default. You can configure to display this option only for the defined groups or you can also deny this option from specific groups. Select `Allow only for groups` if you want to allow specific groups to view the `Share Link` option. Select `Deny from groups` to deny the `Share Link` option from specific groups. Once you select any of these options, specify the group names using `Select Groups` field to add the group names that you need to allow or deny.
 
 For Email Configuration related settings, visit [Email Service Documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
 
@@ -90,7 +90,7 @@ To share assets through email:
 1. Select the assets or folder containing assets. From the toolbar, click **[!UICONTROL Share Link]**. 
 1. The **[!UICONTROL Link Sharing]** dialog appears which contains an auto-generated asset link in the **[!UICONTROL Share Link]** field. 
 
-   * In the email address box, type the email ID of the user with whom you want to share the link. You can share the link with multiple users. If the user is a member of your organization, select their email ID from the suggestions that appear in the drop-down list. If the user is external, type the complete email ID and press **[!UICONTROL Enter]**; the email ID is added to the list of users.
+   * In the email address box, type the email address of the user with whom you want to share the link. You can share the link with multiple users. If the user is a member of your organization, select their email address from the suggestions that appear in the drop-down list. In the email address text field, type the email address of the user with whom you want to share the link and click [!UICONTROL Enter]. You can share the link with multiple users.
 
    * In the **[!UICONTROL Subject]** box, type a subject to specify the purpose of the assets that are shared.
    * In the **[!UICONTROL Message]** box, type a message if necessary.
