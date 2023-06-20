@@ -65,20 +65,23 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->Any content package containing index definitions should have the following property set in in the properties file of the content package, located at `/META-INF/vault/properties.xml`:
+>Any content package containing index definitions should have the following properties set in in the properties file of the content package, located at `<package_name>/META-INF/vault/properties.xml`:
 >
 >`noIntermediateSaves=true`
 
-## Deploying Custom Index Definitions {#deploying-index-definitions}
+>`allowIndexDefinitions=true`
+
+## Deploying Custom Index Definitions {#deploying-custom-index-definitions}
+
 For demonstration purposes, we will show how to deploy a customization of the out-of-the-box index `damAssetLucene-8`. First we change the name to: `damAssetLucene-8-custom-1`. Then the steps are as follows: 
 
 1. Add a folder with the new name under `ui.apps`:
-    * `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
+    * Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 2. Add custom the configuration as a file named `.content.xml` under the new folder: 
-    * `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+    * Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
+Filename: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
-Filename: damAssetLucene-8-custom-1/.content.xml
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:rep="internal"
@@ -158,19 +161,20 @@ Filename: damAssetLucene-8-custom-1/.content.xml
         <config.xml jcr:primaryType="nt:file"/>
     </tika>
 </jcr:root>
-
 ```
-3. Add an entry for each new index to the FileVault filter in `ui.apps/src/main/content/META-INF/vault/filter.xml`:
+
+3. Add an entry to the FileVault filter in `ui.apps/src/main/content/META-INF/vault/filter.xml`:
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/apps/{yourAppId}/clientlibs"/>
-    <filter root="/apps/{yourAppId}/components"/>
-    <filter root="/apps/{yourAppId}/i18n"/>
-    <filter root="/oak:index/damAssetLucene-8-custom-1"/> *** add this line ***
+    ...
+    <filter root="/oak:index/damAssetLucene-8-custom-1"/> 
 </workspaceFilter>
 ```
+
 4. Add a tika configuration file under: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`:
+
 ```xml
 <properties>
   <detectors>
@@ -188,20 +192,23 @@ Filename: damAssetLucene-8-custom-1/.content.xml
 The above example contains a configuration for Apache Tika. The Tika configuration file would be stored under `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
 
 ## Project Configuration
-### src/pom.xml
-It is recommended to use the latest version of the Jackrabbit Filevault Maven Package Plugin, which is currently **1.3.2**. To use this version, add the follwing to the top level `pom.xml` file: 
+
+It is recommended to use the latest version of the Jackrabbit Filevault Maven Package Plugin, which is currently **1.3.2**. If not added already, there are configurations that need to be contained in the top level `pom.xml` file: 
+
 ```xml
 <validatorsSettings>
     <jackrabbit-packagetype>
-        <options>
+        <options>   
             <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
         </options>
     </jackrabbit-packagetype>
 </validatorsSettings>
 ```
+
 Below is a sample of the top level `pom.xml` file of the project with the above configurations added: 
 
 Filename: `pom.xml`
+
 ```xml
 <plugin>
     <groupId>org.apache.jackrabbit</groupId>
@@ -210,7 +217,6 @@ Filename: `pom.xml`
         <version>1.3.2</version>
         <configuration>
             ...
-            <allowIndexDefinitions>true</allowIndexDefinitions>
             <validatorsSettings>
                 <jackrabbit-packagetype>
                     <options>
@@ -219,12 +225,16 @@ Filename: `pom.xml`
                 </jackrabbit-packagetype>
             </validatorsSettings>
             ...
+        </configuration>
 </plugin>
 ```
+
 ### ui.apps and ui.apps.structure
+
 Inside `ui.apps.structure/pom.xml` and `ui.apps/pom.xml`, the configuration of the `filevault-package-maven-plugin` needs to have `allowIndexDefinitions` as well as `noIntermediateSaves` enabled. The option `allowIndexDefinitions` allows custom index definitions while `noIntermediateSaves` ensures that the index configurations are added atomically. 
 
 Filenames: `ui.apps/pom.xml` and `ui.apps.structure/pom.xml`
+
 ```xml
 <groupId>org.apache.jackrabbit</groupId>
     <artifactId>filevault-package-maven-plugin</artifactId>
@@ -237,7 +247,7 @@ Filenames: `ui.apps/pom.xml` and `ui.apps.structure/pom.xml`
     ...
 ```
 
-In `ui.apps.structure/pom.xml` you also need to add a filter for `oak:index`:
+In `ui.apps.structure/pom.xml` you also need to add a filter for `/oak:index`:
 
 ```xml
 <filters>
