@@ -11,7 +11,7 @@ Learn how AEM site templates can be used to predefine site structure and initial
 
 ## Overview {#overview}
 
-In order to allow AEM administrators to quickly create sites adapted to business needs, AEM supports creating new sites by using site templates and site themes.
+To allow AEM administrators to quickly create sites adapted to business needs, AEM supports creating new sites by using site templates and site themes.
 
 * An **AEM site template** generally contains base site content and structure as well as site styling information, known as the site theme, to get new site started quickly. Templates are powerful because they are reusable as well as customizable. And since you can have multiple templates available in your AEM installation, you have the flexibility to create different sites to meet various business needs.
 * An **AEM site theme** is a package containing the CSS, JavaScript, and static resources that define the styling of your AEM site and complies with the structure of an AEM site theme.

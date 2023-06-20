@@ -43,7 +43,7 @@ For example, when manipulating variations; also when editing metadata or managin
 >
 >The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission assigned through User and/or Group Management. <!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-The permissions needed to edit/update a fragment need to be applied to either the node containing the content fragment, or an appropriate parent node (at any level under `/content/dam`). When assigned to such a parent node, the permissions will be applied to all nodes within that branch.
+The permissions needed to edit/update a fragment need to be applied to either the node containing the content fragment, or an appropriate parent node (at any level under `/content/dam`). When assigned to such a parent node, the permissions are applied to all nodes within that branch.
 
 For example, a folder that will hold all content fragments, such as:
 

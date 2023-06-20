@@ -23,8 +23,8 @@ In order for an app to be editable by the Universal Editor, it must be properly 
 |`itemprop`|Attribute of the resource, see the section [Instrument the Page of the document Getting Started with the Universal Editor in AEM](getting-started.md#instrument-thepage)|
 |`itemtype`|Type of the editable item (e.g.text, image, reference, etc.)|
 |`data-editor-itemfilter`|Defines which references can be used|
-|`data-editor-itemlabel`|Defines a custom label for a selectable item which is displayed in the editor <br>In case `itemmodel` is set, the label will be retrieved via the model|
-|`data-editor-itemmodel`|Defines a model which will be used for form-based editing in the properties rail|
+|`data-editor-itemlabel`|Defines a custom label for a selectable item which is displayed in the editor <br>In case `itemmodel` is set, the label is retrieved by way of the model|
+|`data-editor-itemmodel`|Defines a model which is used for form-based editing in the properties rail|
 |`data-editor-behavior`|Defines the behavior of an instrumentation, e.g.  stand alone text or image can also mimic a component to make it moveable or deletable|
 
 ## Item Types {#item-types}
@@ -32,10 +32,10 @@ In order for an app to be editable by the Universal Editor, it must be properly 
 |`itemtype`|Description|`itemid`|`itemprop`|`data-editor-itemfilter`|`data-editor-itemlabel`|`data-editor-itemmodel`|`data-editor-behvior`|
 |---|---|---|---|---|---|---|---|
 |`text`|Text is editable within the HTML tags, but only in simple text format, no rich text formatting available, this is commonly used on title components, for example|Optional|Required|n/a|Optional|n/a|Optional|
-|`richtext`|Text is editable with full rich text capabilities. RTE will be shown in the right panel|Optional|Required|n/a|Optional|n/a|Optional|
+|`richtext`|Text is editable with full rich text capabilities. RTE is shown in the right panel|Optional|Required|n/a|Optional|n/a|Optional|
 |`media`|The editable is an asset, e.g. image or video|Optional|Required|Optional<br>list of image or video filter criteria which is passed on to the asset selector|Optional|n/a|Optional|
 |`container`|The editable behaves as container for components aka Paragraph System.|Depends <br>see below|Depends <br>see below|Optional<br>a list of allowed components|Optional|n/a|n/a|
-|`component`|The editable is a component. Doesn't add additional functionality, will be required to indicate movable/deletable parts of the DOM and for opening the properties rail and its fields|Required|n/a|n/a|Optional|Optional|n/a|
+|`component`|The editable is a component. Doesn't add additional functionality, is required to indicate movable/deletable parts of the DOM and for opening the properties rail and its fields|Required|n/a|n/a|Optional|Optional|n/a|
 |`reference`|The editable is a reference, e.g. Content Fragment, Experience Fragment or Product|Depends <br>see below|Depends <br>see below|Optional<br>list of Content Fragment, Product, or Experience Fragment filter criteria which is passed on to the reference selector|Optional|Optional|n/a|
 
 Depending on the use case `itemprop` or `itemid` may or may not be required. For example:
@@ -53,7 +53,7 @@ Depending on the use case `itemprop` or `itemid` may or may not be required. For
 
 To learn more about the Universal Editor, see these documents.
 
-* [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation in order to deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
+* [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
 * [Authoring Content with the Universal Editor](authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
 * [Publishing Content with the Universal Editor](publishing.md) - Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
 * [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.

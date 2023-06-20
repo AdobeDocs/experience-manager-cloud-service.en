@@ -77,10 +77,10 @@ Once you have created a version of your page, there are various methods of reins
 >To illustrate:  
 >
 >1. Create versions of any page.
->1. The initial labels and version node names will be 1.0, 1.1, 1.2 and so forth.  
+>1. The initial labels and version node names are 1.0, 1.1, 1.2 and so forth.  
 >1. Reinstate the first version; i.e. 1.0.
 >1. Create new versions again.
->1. The generated labels and node names will now be 1.0.0, 1.0.1, 1.0.2, etc.
+>1. The generated labels and node names are now 1.0.0, 1.0.1, 1.0.2, and so on.
 
 ### Revert to a Version {#revert-to-a-version}
 
@@ -88,8 +88,8 @@ To **Revert** the selected page to a previous version:
 
 1. Navigate to show the page you want to revert to a previous version.
 1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Open the **Timeline** column and select either **Show All** or **Versions**. The page versions for the selected page will be listed.
-1. Select the version you want to revert to. The possible options will be shown:
+1. Open the **Timeline** column and select either **Show All** or **Versions**. The page versions for the selected page are listed.
+1. Select the version you want to revert to. The possible options are shown:
 
    ![Revert to this Version](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -111,7 +111,7 @@ This method can be used to restore versions of specified pages within the curren
    >
    >Then the display will be empty as there are no versions applicable.
 
-1. The available versions will be listed:
+1. The available versions are listed:
 
    ![Restore Version - List of all pages in folder](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
@@ -143,9 +143,9 @@ This method can be used to restore a version of a tree as at a specified date an
 
 1. Set the flag **Preserved Non Versioned Pages** as required:
 
-   * If active (selected), then any non-versioned pages will be maintained and not impacted by the restore. 
+   * If active (selected), any non-versioned pages are maintained and not impacted by the restore. 
 
-   * If inactive (unselected), then any non-versioned pages will be removed as they did not exist in the versioned tree.
+   * If inactive (unselected), any non-versioned pages are removed as they did not exist in the versioned tree.
 
 1. Select **Restore** for the selected version of the tree to be restored as the *current* version.
 
@@ -156,7 +156,7 @@ You can preview a specific version:
 1. Navigate to show the page you want to compare.
 1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
-1. The page versions will be listed. Select the version you want to preview:
+1. The page versions are listed. Select the version you want to preview:
 
    ![Preview version](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -175,7 +175,7 @@ To compare a previous version with the current page:
 1. Navigate to show the page you want to compare.
 1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
-1. The page versions will be listed. Select the version you want to compare:
+1. The page versions are listed. Select the version you want to compare:
 
    ![Compare versions](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -189,7 +189,7 @@ Timewarp is a feature designed to simulate the *published* state of a page at sp
 >
 >[Timewarp can also be used with Launches to preview the future.](/help/sites-cloud/authoring/launches/preview.md)
 
-Because content creation is an ongoing and collaborative process, the purpose of Timewarp is to allow authors to track the published website over time in order to understand how the content has changed. This feature uses the page versions to determine the state of the publish environment.
+Because content creation is an ongoing and collaborative process, the purpose of Timewarp is to allow authors to track the published website over time so they can understand how the content has changed. This feature uses the page versions to determine the state of the publish environment.
 
 To do this:
 

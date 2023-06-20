@@ -28,7 +28,7 @@ Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335
 
 ### What's New {#what-is-new-foundation}
 
-* More flexible dispatcher configuration: Projects can be more easily organized. For example, you can now include multiple rewrite rule files that reflect your site structure. [Learn about](/help/implementing/dispatcher/disp-overview.md#validation-debug) this flexible mode, including how to structure your dispatcher configuration in order to take advantage of it.
+* More flexible dispatcher configuration: Projects can be more easily organized. For example, you can now include multiple rewrite rule files that reflect your site structure. [Learn about](/help/implementing/dispatcher/disp-overview.md#validation-debug) this flexible mode, including how to structure your dispatcher configuration so you can take advantage of it.
 * The tree replication UI under the replication agent's "Distribute" tab should be considered deprecated and is planned to be removed after September 30. [Learn about](/help/operations/replication.md#tree-activation) alternative replication strategies.
 * Bundle `org.apache.sling.datasource-1.0.4.jar` for Sling datasource support has been removed, as it has outdated functionality and is not in use by customers.
 
@@ -36,9 +36,9 @@ Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* Content Automation functionality lets [!DNL Experience Manager Assets] leverage the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of the same asset. The functionality does not require any programming and works from within the DAM. See [generate variations of assets using Creative Cloud integration](/help/assets/cc-api-integration.md).
+* Content Automation functionality lets [!DNL Experience Manager Assets] use the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of the same asset. The functionality does not require any programming and works from within the DAM. See [generate variations of assets using Creative Cloud integration](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] includes the [!DNL Document Cloud] PDF Viewer to preview PDF documents natively. This feature lets users preview multi-page PDF files without any file processing or conversion. This feature improves the parity with [!DNL Experience Manager] 6.5. The controls available in the viewer include zoom, navigate to pages, undock controls, and to view in full screen. Users case also preview and jump to pages and bookmarks. Comments on the file itself are supported and commenting and annotations on content within the PDF file will be added in a future release.
+* [!DNL Experience Manager Assets] includes the [!DNL Document Cloud] PDF Viewer to preview PDF documents natively. This feature lets users preview multi-page PDF files without any file processing or conversion. This feature improves the parity with [!DNL Experience Manager] 6.5. The controls available in the viewer include zoom, navigate to pages, undock controls, and to view in full screen. Users case also preview and jump to pages and bookmarks. Comments on the file itself are supported. Commenting and annotations on content within the PDF file will be added in a future release.
 
   ![Preview PDF files in [!DNL Experience Manager] using PDF Viewer](/help/assets/assets/preview-pdf-file-viewer.png)
 

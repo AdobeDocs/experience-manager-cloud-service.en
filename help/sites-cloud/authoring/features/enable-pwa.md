@@ -16,7 +16,7 @@ Through a simple configuration, a content author can now enable progressive web 
 >* Understanding of caching strategies
 >* Support from your development team
 >
->Before using this feature is is recommended that you discuss this with your development team to define the best way to leverage it for your project.
+>Before using this feature is is recommended that you discuss this with your development team to define the best way to use it for your project.
 
 ## Introduction {#introduction}
 
@@ -44,7 +44,7 @@ These are technical steps that the author will need to coordinate with the devel
 
 ### Use Core Components {#adjust-components}
 
-Core Components release 2.15.0 and later fully support the PWA features of AEM sites. Since AEMaaCS always includes the latest version of the Core Components, you can leverage PWA features out-of-the-box. Your AEMaaCS project automatically fulfills this requirement.
+Core Components release 2.15.0 and later fully support the PWA features of AEM sites. Since AEMaaCS always includes the latest version of the Core Components, you can use PWA features out-of-the-box. Your AEMaaCS project automatically fulfills this requirement.
 
 >[!NOTE]
 >

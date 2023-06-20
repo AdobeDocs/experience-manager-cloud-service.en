@@ -19,7 +19,7 @@ All modules use the same basic layout, in AEM this can be seen as:
 
 The layout adheres to a responsive design style and will accommodate itself to the size of the device/window you are using.
 
-For example, when the resolution goes below 1024px (as on a mobile device) the display will be adjusted accordingly:
+For example, when the resolution goes below 1024px (as on a mobile device), the display is adjusted accordingly:
 
 ![Sites console mobile view](assets/ui-sites-mobile.png)
 

@@ -63,7 +63,7 @@ A Screens project's source code is typically managed as a multi-module Maven pro
 
    Representation of the ui.apps code in CRXDE Lite
 
-   The **helloworld** component is currently just a placeholder. Over the course of the tutorial, functionality will be added allowing an author to update the message displayed by the component.
+   The **helloworld** component is currently just a placeholder. Over the course of the tutorial, functionality is added allowing an author to update the message displayed by the component.
 
 1. The **screens-weretail-run.ui.content** package installs code beneath:
 
@@ -179,7 +179,7 @@ AEM Screens has some interesting constraints that are not necessarily true for t
 
    Above is the edit markup for the Hello World Component. The first block displays an edit version of the component if the dialog message has been populated.
 
-   The second block is rendered if no dialog message has been entered. The `cq-placeholder` and `data-emptytext` render the label ***Hello World*** as a place holder in that case. The string for the label can be internationalized using i18n in order to support authoring in multiple locales.
+   The second block is rendered if no dialog message has been entered. The `cq-placeholder` and `data-emptytext` render the label ***Hello World*** as a place holder in that case. The string for the label can be internationalized using i18n to support authoring in multiple locales.
 
 1. **Copy Screens Image Dialog to be used for the Hello World component.**
 
@@ -237,7 +237,7 @@ AEM Screens has some interesting constraints that are not necessarily true for t
                                    jcr:primaryType="nt:unstructured"
                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
                                    defaultValue=""
-                                   fieldDescription="Amount of time the image will be shown in the sequence, in milliseconds"
+                                   fieldDescription="Amount of time the image is shown in the sequence, in milliseconds"
                                    fieldLabel="Duration (ms)"
                                    min="0"
                                    name="./duration"/>
@@ -251,7 +251,7 @@ AEM Screens has some interesting constraints that are not necessarily true for t
 
    ```
 
-   The textfield for the Message will be saved to a property named `message` and that the numberfield for the Duration will be saved to a property named `duration`. These two properties are both referenced in `/apps/weretail-run/components/content/helloworld/production.html` by HTL as `${properties.message}` and `${properties.duration}`.
+   The textfield for the Message is saved to a property named `message` and that the numberfield for the Duration is saved to a property named `duration`. These two properties are both referenced in `/apps/weretail-run/components/content/helloworld/production.html` by HTL as `${properties.message}` and `${properties.duration}`.
 
    ![Hello World - completed dialog](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
 
@@ -261,7 +261,7 @@ AEM Screens has some interesting constraints that are not necessarily true for t
 
 Client-Side Libraries provide a mechanism to organize and manage CSS and JavaScript files necessary for an AEM implementation. 
 
-AEM Screens components are rendered differently in Edit mode vs. Preview/Production mode. Two client libraries will be created, one for Edit mode and a second for Preview/Production.
+AEM Screens components are rendered differently in Edit mode versus Preview/Production mode. Two client libraries are created: one for Edit mode, and one for Preview/Production.
 
 1. Create a folder for client-side libraries for the Hello World component.
 
@@ -444,7 +444,7 @@ The Hello World component is intended to be used on a Sequence Channel. To test 
 
 In case your custom component is using external resources such as assets (images, videos, fonts, icons, etc.), specific asset renditions or client-side libraries (css, js, etc.), then these are not automatically added to the offline configuration as we only bundle the HTML markup by default.
 
-In order to let you customize and optimize the exact assets that are downloaded to the player, we offer an extension mechanism for custom components to expose their dependencies to the offline caching logic in Screens.
+To let you customize and optimize the exact assets that are downloaded to the player, we offer an extension mechanism for custom components to expose their dependencies to the offline caching logic in Screens.
 
 The section below showcases the template for custom offline resource handlers and the minimum requirements in the `pom.xml` for that specific project.
 

@@ -99,7 +99,7 @@ First you need to update the Maven dependencies of your project. The `PredicateE
 
 >[!NOTE]
 >
->The scope of the `cq-search` dependency is set to `provided` because `cq-search` will be provided by the `OSGi` container.
+>The scope of the `cq-search` dependency is set to `provided` because `cq-search` is provided by the `OSGi` container.
 
 The following snippet shows the differences in the `pom.xml` file, in [unified diff format](https://en.wikipedia.org/wiki/Diff#Unified_format)
 

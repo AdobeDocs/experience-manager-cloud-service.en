@@ -68,7 +68,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 * Content Audit has been relabeled as Experience Audit.
 * The build process has been separated into three separate Maven commands.
-* If the Git Repository fails to be cloned, it will be reattempted up to three times.
+* If the Git Repository fails to be cloned, it is reattempted up to three times.
 
 ### Bug Fixes {#bug-fixes-cm}
 
