@@ -27,7 +27,7 @@ You need Administrator privileges to [configure settings for sharing assets as a
 
 ## Configure link share settings {#config-link-share-settings}
 
-Experience Manager Assets allows you to configure the default link share settings.
+[!DNL Experience Manager Assets] allows you to configure the default link share settings.
 
 1. Click the [!DNL Experience Manager] logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Assets Configuration]** &gt; **[!UICONTROL Link Share]**.
 1. Initial Settings:
@@ -42,8 +42,8 @@ Experience Manager Assets allows you to configure the default link share setting
 
 1. Specify the default validity period for the link in the `Validity Period` field in the `Expiration date` section.
 
-1. Link share button in the action bar:
-   * To make the Link Share button visible to all the users, you need to configure `jcr:modifyAccessControl` permission. The Link Share button is visible to everyone, by default. You can configure to display this option only for the defined groups or you can also deny this option from specific groups. Select `Allow only for groups` if you want to allow specific groups to view the `Share Link` option. Select `Deny from groups` to deny the `Share Link` option from specific groups. Once you select any of these options, specify the group names using `Select Groups` field to add the group names that you need to allow or deny.
+1. **[!UICONTROL Link share]** button in the action bar:
+   * All users with `jcr:modifyAccessControl` permissions can view the [!UICONTROL Link share] option. It is visible to all administrators by default. The [!UICONTROL Link share] button is visible to everyone, by default. You can configure to display this option only for the defined groups or you can also deny this option from specific groups. Select `Allow only for groups` if you want to allow specific groups to view the `Share Link` option. Select `Deny from groups` to deny the `Share Link` option from specific groups. Once you select any of these options, specify the group names using `Select Groups` field to add the group names that you need to allow or deny.
 
 For Email Configuration related settings, visit [Email Service Documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
 
