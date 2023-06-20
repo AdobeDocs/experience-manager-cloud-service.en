@@ -691,7 +691,7 @@ Binds a function to an event. The function is called every time the event occurs
 
 When the `triggerForPastEvents` argument is `true`, this function returns a `boolean` value that indicates whether the event occurred in the past:
 
-* `true`: The event occurred in the past and the handler will be called.
+* `true`: The event occurred in the past and the handler is called.
 * `false`: The event has not occurred in the past.
 
 If `triggerForPastEvents` is `false`, this function returns no value.
@@ -731,7 +731,7 @@ Binds a function to an event. The function is called only once, for the first oc
 
 When the `triggerForPastEvents` argument is `true`, this function returns a `boolean` value that indicates whether the event occurred in the past:
 
-* `true`: The event occurred in the past and the handler will be called.
+* `true`: The event occurred in the past and the handler is called.
 * `false`: The event has not occurred in the past.
 
 If `triggerForPastEvents` is `false`, this function returns no value.

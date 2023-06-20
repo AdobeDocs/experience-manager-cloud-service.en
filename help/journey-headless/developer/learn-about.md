@@ -17,7 +17,7 @@ This document helps you understand headless content delivery and why it should b
 
 ## Full-Stack Content Delivery {#full-stack}
 
-Ever since the rise of easy-to-use, large-scale content management systems (CMSes), organizations have leveraged them as a central location to manage messaging, branding, and communications. Using the CMS as a central point for administering experiences improved efficiency by eliminating the need to duplicate tasks in disparate systems.
+Ever since the rise of easy-to-use, large-scale content management systems (CMSes), organizations have used them as a central location to manage messaging, branding, and communications. Using the CMS as a central point for administering experiences improved efficiency by eliminating the need to duplicate tasks in disparate systems.
 
 ![The classic full-stack CMS](assets/full-stack.png)
 
@@ -78,7 +78,7 @@ There is still a need for robust REST APIs. However REST requests can be large a
 
 Headless content delivery often makes use of GraphQL APIs. GraphQL allows for a similar stateless transfer, but allows for more targeted queries, reducing the total number of queries required, and improving performance. It is common to see solutions use a mixture of REST and GraphQL, essentially choosing the best tool for the job at hand.
 
-Whatever your chosen API is, by defining a headless system based on common APIs, you can leverage the latest browser and other web technologies such as progressive web apps (PWA). APIs create a standard interface that is easily extensible and adaptable.
+Whatever your chosen API is, by defining a headless system based on common APIs, you can use the latest browser and other web technologies such as progressive web apps (PWA). APIs create a standard interface that is easily extensible and adaptable.
 
 Typically, content is rendered on the client side. This normally means someone calls up your content on a mobile device, your CMS delivers the content, and then the mobile device (the client) is responsible for rendering the content that you served. If the device is old or otherwise slow, your digital experience is likewise slow.
 
@@ -104,7 +104,7 @@ As you continue through this developer journey, you will learn how AEM supports 
 
 As an industry leader in digital experience management, Adobe realizes that the ideal solution to real-world challenges that experience creators face is rarely a binary choice. This is why AEM not only supports both models, but also uniquely allows the seamless hybrid combination of the two, blending the advantages of headless and full stack, to help you best serve the consumers of your content, wherever they are.
 
-This journey focuses on the headless-only model of content delivery. However once you have this foundational knowledge, you can further explore how to leverage the power of both models.
+This journey focuses on the headless-only model of content delivery. However once you have this foundational knowledge, you can further explore how to use the power of both models.
 
 ## What's Next {#what-is-next}
 

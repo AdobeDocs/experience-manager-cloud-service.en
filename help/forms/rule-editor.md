@@ -588,7 +588,7 @@ Supported `jsdoc` tags:
       /**
       * @function myTestFunction
       * @this currentComponent
-      * @param {scope} scope in which code inside function will be executed.
+      * @param {scope} scope in which code inside function is run.
       */
       myTestFunction = function (scope) {
          if(this.value == "O"){

@@ -58,7 +58,7 @@ Once the users are defined, New Relic sends a confirmation email to each user to
 
 >[!NOTE]
 >
->If you are managing the New Relic One users, you must also add yourself as a user in order to also have access. Being the **Business Owner** or **Deployment Manager** does not suffice to have access to New Relic One. You must create yourself as a user as well.
+>If you are managing the New Relic One users, you must also add yourself as a user to also have access. Being the **Business Owner** or **Deployment Manager** does not suffice to have access to New Relic One. You must create yourself as a user as well.
 
 ## Activate Your New Relic One User Account {#activate-account}
 
@@ -140,8 +140,8 @@ If you don't receive an email from New Relic:
 
 The following limitations apply to adding users to New Relic One:
 
-* A maximum of 30 users can be added. If the maximum number of users has been reached, remove users in order to be able to add new users.
-* Users added to New Relic will be of the type **Restricted** refer to [the New Relic documentation for details.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&text=One%20or%20more%20individuals%20who,change)
+* A maximum of 30 users can be added. If the maximum number of users has been reached, remove users to be able to add new users.
+* Users added to New Relic are of the type **Restricted**, see [the New Relic documentation for details.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service only offers the New Relic One APM solution and does not provide support for alerting, logging, or API integrations.
 
 For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, please open a support ticket via the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
@@ -166,7 +166,7 @@ Please note:
 
 ### Who can access the New Relic One cloud service data? {#access-new-relic-cloud}
 
-Full read access will be granted for up to 30 members of your team. Read access will include all APM metrics collected by the New Relic One agent.
+Full read access is granted for up to 30 members of your team. Read access will include all APM metrics collected by the New Relic One agent.
 
 ### Is custom SSO configuration supported? {#custom-sso}
 
@@ -178,7 +178,7 @@ New Relic One is the new observability platform from New Relic and it enables Ad
 
 New Relic One provides users the ability to search across all accounts where they have access and visualize the data from all services and hosts in one view.
 
-While Adobe support will monitor the AEM as a Cloud Service application using New Relic One and other in-house tools as part of your service, your teams can continue to leverage New Relic for on-premises hosted services and infrastructure. They will be able to visualize the data from both Adobe New Relic One account and customer-managed New Relic accounts.
+While Adobe support will monitor the AEM as a Cloud Service application using New Relic One and other in-house tools as part of your service, your teams can continue to use New Relic for on-premises hosted services and infrastructure. They are able to visualize the data from both Adobe New Relic One account and customer-managed New Relic accounts.
 
 >[!NOTE]
 >
