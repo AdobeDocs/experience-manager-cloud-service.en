@@ -47,7 +47,7 @@ An index definition can fall into one of the following three categories:
 
 3. Fully custom index: It is possible to create an entirely new index from scratch. These custom indexes must have a prefix to avoid naming conflicts. For instance: `/oak:index/acme.product-1-custom-2`. In this case, the prefix is `acme.`
 
-Please note that both customized out-of-the-box indexes and fully custom indexes must include the -custom- keyword. Further details and guidelines can be found in the [preparing-the-new-index-definition]
+Please note that both customized out-of-the-box indexes and fully custom indexes must include the -custom- keyword. Further details and guidelines can be found in the [Preparing the New Index Definition](#preparing-the-new-index-definition-preparing-the-new-index-definition) section. 
 
 ## Preparing the New Index Definition {#preparing-the-new-index-definition}
 
