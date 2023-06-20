@@ -69,9 +69,9 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 >
 >Any content package containing index definitions should have the following properties set in in the properties file of the content package, located at `<package_name>/META-INF/vault/properties.xml`:
 >
-> - `noIntermediateSaves=true`
+> * `noIntermediateSaves=true`
 >
-> - `allowIndexDefinitions=true`
+> * `allowIndexDefinitions=true`
 
 ## Deploying Custom Index Definitions {#deploying-custom-index-definitions}
 
@@ -167,6 +167,7 @@ To illustrate the deployment of a customized version of the out-of-the-box index
     ```
 
 3. Add an entry to the FileVault filter in `ui.apps/src/main/content/META-INF/vault/filter.xml`:
+
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <workspaceFilter version="1.0">
