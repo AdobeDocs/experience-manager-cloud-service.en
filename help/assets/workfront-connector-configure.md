@@ -16,7 +16,7 @@ A user with administrator access in [!DNL Adobe Experience Manager] as a [!DNL C
 
 >[!IMPORTANT]
 >
->* As of June 2022, Adobe released a new native integration for connecting Workfront with Adobe Experience Manager Assets as a Cloud Service. This integration has become the required method for connecting these two solutions. Any future new implementation of the enhanced connector (1.9.8 and later) to connect Workfront with AEM Assets as a Cloud Service is blocked.
+> As of June 2022, Adobe released a new native integration for connecting Workfront with Adobe Experience Manager Assets as a Cloud Service. This integration has become the required method for connecting these two solutions. Any future new implementation of the enhanced connector (1.9.8 and later) to connect Workfront with AEM Assets as a Cloud Service is blocked.
 
 >[!IMPORTANT]
 >
