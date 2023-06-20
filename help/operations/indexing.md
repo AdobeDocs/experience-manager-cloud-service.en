@@ -69,129 +69,127 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 >
 >Any content package containing index definitions should have the following properties set in in the properties file of the content package, located at `<package_name>/META-INF/vault/properties.xml`:
 >
->`noIntermediateSaves=true`
-
->`allowIndexDefinitions=true`
+> - `noIntermediateSaves=true`
+>
+> - `allowIndexDefinitions=true`
 
 ## Deploying Custom Index Definitions {#deploying-custom-index-definitions}
 
 To illustrate the deployment of a customized version of the out-of-the-box index `damAssetLucene-8`, we will provide a step-by-step guide. In this example, we will rename it to `damAssetLucene-8-custom-1`. The deployment process involves the following steps:
 
 1. Create a new folder with the updated index name within the ui.apps directory: 
-* Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
+    * Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
 2. Inside the newly created folder, add a configuration file named `.content.xml` that contains the custom configuration. Below is an example showcasing a customization where nodes from the original out-of-the-box index are removed:
-* Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+    * Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
+    Filename: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
-Filename: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:rep="internal"
-    jcr:mixinTypes="[rep:AccessControllable]"
-    jcr:primaryType="oak:QueryIndexDefinition"
-    async="[async,nrt]"
-    compatVersion="{Long}2"
-    evaluatePathRestrictions="{Boolean}true"
-    includedPaths="[/content/dam]"
-    maxFieldLength="{Long}100000"
-    reindex="{Boolean}false"
-    reindexCount="{Long}1"
-    seed="{Long}-1290430931455096831"
-    tags="[visualSimilaritySearch]"
-    type="lucene">
-    <aggregates jcr:primaryType="nt:unstructured">
-        <dam:Asset jcr:primaryType="nt:unstructured">
-            <include0
-                jcr:primaryType="nt:unstructured"
-                path="jcr:content"/>
-            <include1
-                jcr:primaryType="nt:unstructured"
-                path="jcr:content/metadata"/>
-            <include2
-                jcr:primaryType="nt:unstructured"
-                path="jcr:content/metadata/*"/>
-            <include3
-                jcr:primaryType="nt:unstructured"
-                path="jcr:content/renditions"/>
-            <include4
-                jcr:primaryType="nt:unstructured"
-                path="jcr:content/renditions/original"/>
-            <include5
-                jcr:primaryType="nt:unstructured"
-                path="jcr:content/renditions/original/jcr:content"/>
-            <include6
-                jcr:primaryType="nt:unstructured"
-                path="jcr:content/comments"/>
-            <include7
-                jcr:primaryType="nt:unstructured"
-                path="jcr:content/comments/*"/>
-            <include8
-                jcr:primaryType="nt:unstructured"
-                path="jcr:content/data/master"/>
-            <include9
-                jcr:primaryType="nt:unstructured"
-                path="jcr:content/usages"/>
-            <include10
-                jcr:primaryType="nt:unstructured"
-                path="jcr:content/renditions/cqdam.text.txt/jcr:content"/>
-        </dam:Asset>
-    </aggregates>
-    <facets
-        jcr:primaryType="nt:unstructured"
-        secure="statistical"
-        topChildren="100"/>
-    <indexRules jcr:primaryType="nt:unstructured">
-        <dam:Asset jcr:primaryType="nt:unstructured">
-            <properties jcr:primaryType="nt:unstructured">
-                <cqTags
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:rep="internal"
+        jcr:mixinTypes="[rep:AccessControllable]"
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="[async,nrt]"
+        compatVersion="{Long}2"
+        evaluatePathRestrictions="{Boolean}true"
+        includedPaths="[/content/dam]"
+        maxFieldLength="{Long}100000"
+        reindex="{Boolean}false"
+        reindexCount="{Long}1"
+        seed="{Long}-1290430931455096831"
+        tags="[visualSimilaritySearch]"
+        type="lucene">
+        <aggregates jcr:primaryType="nt:unstructured">
+            <dam:Asset jcr:primaryType="nt:unstructured">
+                <include0
                     jcr:primaryType="nt:unstructured"
-                    name="jcr:content/metadata/cq:tags"
-                    nodeScopeIndex="{Boolean}true"
-                    propertyIndex="{Boolean}true"
-                    useInSpellcheck="{Boolean}true"
-                    useInSuggest="{Boolean}true"/>
-                <dcFormat
+                    path="jcr:content"/>
+                <include1
                     jcr:primaryType="nt:unstructured"
-                    analyzed="{Boolean}true"
-                    facets="{Boolean}true"
-                    name="jcr:content/metadata/dc:format"
-                    propertyIndex="{Boolean}true"/>
-            </properties>
-        </dam:Asset>
-    </indexRules>
-    <tika jcr:primaryType="nt:folder">
-        <config.xml jcr:primaryType="nt:file"/>
-    </tika>
-</jcr:root>
-```
+                    path="jcr:content/metadata"/>
+                <include2
+                    jcr:primaryType="nt:unstructured"
+                    path="jcr:content/metadata/*"/>
+                <include3
+                    jcr:primaryType="nt:unstructured"
+                    path="jcr:content/renditions"/>
+                <include4
+                    jcr:primaryType="nt:unstructured"
+                    path="jcr:content/renditions/original"/>
+                <include5
+                    jcr:primaryType="nt:unstructured"
+                    path="jcr:content/renditions/original/jcr:content"/>
+                <include6
+                    jcr:primaryType="nt:unstructured"
+                    path="jcr:content/comments"/>
+                <include7
+                    jcr:primaryType="nt:unstructured"
+                    path="jcr:content/comments/*"/>
+                <include8
+                    jcr:primaryType="nt:unstructured"
+                    path="jcr:content/data/master"/>
+                <include9
+                    jcr:primaryType="nt:unstructured"
+                    path="jcr:content/usages"/>
+                <include10
+                    jcr:primaryType="nt:unstructured"
+                    path="jcr:content/renditions/cqdam.text.txt/jcr:content"/>
+            </dam:Asset>
+        </aggregates>
+        <facets
+            jcr:primaryType="nt:unstructured"
+            secure="statistical"
+            topChildren="100"/>
+        <indexRules jcr:primaryType="nt:unstructured">
+            <dam:Asset jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <cqTags
+                        jcr:primaryType="nt:unstructured"
+                        name="jcr:content/metadata/cq:tags"
+                        nodeScopeIndex="{Boolean}true"
+                        propertyIndex="{Boolean}true"
+                        useInSpellcheck="{Boolean}true"
+                        useInSuggest="{Boolean}true"/>
+                    <dcFormat
+                        jcr:primaryType="nt:unstructured"
+                        analyzed="{Boolean}true"
+                        facets="{Boolean}true"
+                        name="jcr:content/metadata/dc:format"
+                        propertyIndex="{Boolean}true"/>
+                </properties>
+            </dam:Asset>
+        </indexRules>
+        <tika jcr:primaryType="nt:folder">
+            <config.xml jcr:primaryType="nt:file"/>
+        </tika>
+    </jcr:root>
+    ```
 
 3. Add an entry to the FileVault filter in `ui.apps/src/main/content/META-INF/vault/filter.xml`:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<workspaceFilter version="1.0">
-    ...
-    <filter root="/oak:index/damAssetLucene-8-custom-1"/> 
-</workspaceFilter>
-```
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <workspaceFilter version="1.0">
+        ...
+        <filter root="/oak:index/damAssetLucene-8-custom-1"/> 
+    </workspaceFilter>
+    ```
 
 4. Add a tika configuration file under: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`:
 
-```xml
-<properties>
-  <detectors>
-    <detector class="org.apache.tika.detect.TypeDetector"/>
-  </detectors>
-  <parsers>
-    <parser class="org.apache.tika.parser.DefaultParser">
-      <mime>text/plain</mime>
-    </parser>
-  </parsers>
-  <service-loader initializableProblemHandler="ignore" dynamic="true"/>
-</properties>
-```
+    ```xml
+    <properties>
+    <detectors>
+        <detector class="org.apache.tika.detect.TypeDetector"/>
+    </detectors>
+    <parsers>
+        <parser class="org.apache.tika.parser.DefaultParser">
+        <mime>text/plain</mime>
+        </parser>
+    </parsers>
+    <service-loader initializableProblemHandler="ignore" dynamic="true"/>
+    </properties>
+    ```
 
 The above example contains a configuration for Apache Tika. The Tika configuration file should be stored under `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`.
 
