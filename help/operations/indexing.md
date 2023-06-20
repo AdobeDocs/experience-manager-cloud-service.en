@@ -39,13 +39,15 @@ For both points 1 and 2 above, you need to create a new index definition as part
 
 ## Index Names {#index-names}
 
-An index definition can either be:
+An index definition can fall into one of the following three categories:
 
-1. An out-of-the-box index, like: `/oak:index/cqPageLucene-2`.
-1. A customization of an out-of-the-box index. Such customizations are defined by the customer like: `/oak:index/cqPageLucene-2-custom-1`.
-1. A fully custom index. One example is `/oak:index/acme.product-1-custom-2`. To avoid naming collisions, we require that fully custom indexes have a prefix, for example, `acme.`
+1. Out-of-the-box index: This refers to a predefined index option provided as-is. For instance: `/oak:index/cqPageLucene-2`.
 
-Notice that both customization of an out-of-the-box index, as well as fully custom indexes, need to contain `-custom-`. A complete set of rules are given in the [Preparing the New Index Definition](#preparing-the-new-index-definition) section.
+2. Customization of an out-of-the-box index: customers can tailor existing indexes to meet their specific requirements. These customizations are indicated by appending `-custom-` followed by a numerical identifier to the original index name. For example: `/oak:index/cqPageLucene-2-custom-1`.
+
+3. Fully custom index: It is possible to create an entirely new index from scratch. These custom indexes must have a prefix to avoid naming conflicts. For instance: `/oak:index/acme.product-1-custom-2`. In this case, the prefix is `acme.`
+
+Please note that both customized out-of-the-box indexes and fully custom indexes must include the -custom- keyword. Further details and guidelines can be found in the [preparing-the-new-index-definition]
 
 ## Preparing the New Index Definition {#preparing-the-new-index-definition}
 
@@ -73,12 +75,14 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ## Deploying Custom Index Definitions {#deploying-custom-index-definitions}
 
-For demonstration purposes, we will show how to deploy a customization of the out-of-the-box index `damAssetLucene-8`. First we change the name to: `damAssetLucene-8-custom-1`. Then the steps are as follows: 
+To illustrate the deployment of a customized version of the out-of-the-box index `damAssetLucene-8`, we will provide a step-by-step guide. In this example, we will rename it to `damAssetLucene-8-custom-1`. The deployment process involves the following steps:
 
-1. Add a folder with the new name under `ui.apps`:
-    * Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
-2. Add custom the configuration as a file named `.content.xml` under the new folder: 
-    * Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+1. Create a new folder with the updated index name within the ui.apps directory: 
+* Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
+
+2. Inside the newly created folder, add a configuration file named `.content.xml` that contains the custom configuration. Below is an example showcasing a customization where nodes from the original out-of-the-box index are removed:
+* Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+
 
 Filename: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
@@ -189,11 +193,12 @@ Filename: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-
 </properties>
 ```
 
-The above example contains a configuration for Apache Tika. The Tika configuration file would be stored under `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
+The above example contains a configuration for Apache Tika. The Tika configuration file should be stored under `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`.
 
 ## Project Configuration
 
-It is recommended to use the latest version of the Jackrabbit Filevault Maven Package Plugin, which is currently **1.3.2**. If not added already, there are configurations that need to be contained in the top level `pom.xml` file: 
+It is advisable to use the most recent version of the Jackrabbit `filevault-package-maven-plugin`, which is currently at version 1.3.2. 
+To use this, there are specific configurations that needs to be incorporated into the top-level `pom.xml` file if it does not already contains so: 
 
 ```xml
 <validatorsSettings>
