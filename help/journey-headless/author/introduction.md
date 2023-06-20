@@ -49,7 +49,7 @@ This all means that it can be used as a:
   (And as a double-whammy, these fragments can also be used when constructing AEM web pages - if you want.)
 
 * "Traditional" CMS
-  * Content is authored for web pages, using a range of components that define how the content will be rendered on your website. Even here AEM is extremely flexible as your project team can develop customized components.
+  * Content is authored for web pages, using a range of components that define how the content is rendered on your website. Even here AEM is extremely flexible as your project team can develop customized components.
 
 ## Content Modeling {#content-modeling}
 

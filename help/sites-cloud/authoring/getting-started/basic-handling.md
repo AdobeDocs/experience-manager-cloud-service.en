@@ -295,7 +295,7 @@ Selecting a resource in the leftmost column will display the child resources in 
 
   * The resource name and chevron will be highlighted when tapped or clicked.
   * The children of the clicked/tapped resource are displayed in the column to the right of the clicked/tapped resource.
-  * If you tap or click on a resource name that has no children, its details will be displayed in the final column.
+  * If you tap or click on a resource name that has no children, its details are displayed in the final column.
 
 * Tapping or clicking on the thumbnail selects the resource.
 

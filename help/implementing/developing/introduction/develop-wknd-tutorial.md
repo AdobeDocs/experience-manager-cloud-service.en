@@ -19,7 +19,7 @@ The goal for this multi-part tutorial is to teach a developer who is new to AEM 
 
 ## Core Concepts {#core-concepts}
 
-The tutorial implementation leverages many powerful features of AEM. The site will be implemented using:
+The tutorial implementation uses many powerful features of AEM. The site is implemented using:
 
 * [Maven AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)

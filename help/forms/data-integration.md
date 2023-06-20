@@ -34,7 +34,7 @@ Once you have created a form data model, you can use it in various Adaptive Form
 
 ## Get started with data integration {#get-started-with-data-integration}
 
-The first step to implement data integration is to identify and configure data sources that store information you want to leverage in Adaptive Forms and interactive communications use cases. Next, you create a Form Data Model that uses data model object, properties, and services from one or more data sources. You can create Adaptive Forms and interactive communications based on a Form Data Model where Adaptive Form fields or placeholders in interactive communications are bound to respective data source properties.
+The first step to implement data integration is to identify and configure data sources that store information you want to use in Adaptive Forms and interactive communications use cases. Next, you create a Form Data Model that uses data model object, properties, and services from one or more data sources. You can create Adaptive Forms and interactive communications based on a Form Data Model where Adaptive Form fields or placeholders in interactive communications are bound to respective data source properties.
 
 [!DNL AEM Forms] also allows you to create a Form Data Model independent of data sources and associate or bind data model objects and properties in the Form Data Model with data source later. It eliminates any dependencies on data sources while you work on a form data model.
 

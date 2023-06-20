@@ -13,7 +13,7 @@ The ContextHub Diagnostics page provides information about the stores and UI mod
 
 >[!NOTE]
 >
->In order for diagnostic information to be returned, debug mode must be enabled, otherwise the diagnostics page will be blank. Please see [this document](configuring-contexthub.md#debugging-contexthub) for details on how to enable debug mode.
+>In order for diagnostic information to be returned, debug mode must be enabled, otherwise the diagnostics page is blank. Please see [this document](configuring-contexthub.md#debugging-contexthub) for details on how to enable debug mode.
 
 ## Stores {#stores}
 

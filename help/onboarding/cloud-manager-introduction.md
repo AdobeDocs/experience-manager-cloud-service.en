@@ -69,7 +69,7 @@ A user can create a **Sandbox** or a **Production** program.
 
 ## Cloud Manager Environments {#cloud-manager-environments}
 
-Your cloud environments will be created, accessed and viewed via Cloud Manager. These environments can be production, staging, or development environments. Different environments serve different purposes and can be used with different CI/CD pipelines. Environments are composed of services such as:
+Your cloud environments are created, accessed and viewed via Cloud Manager. These environments can be production, staging, or development environments. Different environments serve different purposes and can be used with different CI/CD pipelines. Environments are composed of services such as:
 
 * [AEM Authoring Services](#author-services)
 * [AEM Publishing Services](#publish-services)

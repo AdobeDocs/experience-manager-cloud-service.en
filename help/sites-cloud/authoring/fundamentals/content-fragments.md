@@ -142,7 +142,7 @@ For in-between content you can:
 
 ### Using Associated Content {#using-associated-content}
 
-If you have [associated content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/sites-cloud/administering/content-fragments/content-fragments.md) these assets will be available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for [in-between content](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments). 
+If you have [associated content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/sites-cloud/administering/content-fragments/content-fragments.md) these assets are available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for [in-between content](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments). 
 
 >[!NOTE]
 >
