@@ -135,6 +135,7 @@ Using Rule Editor, you can:
 
 A default error handler is supported by default to display error messages on fields if the error response is not in standard schema or in case of server-side validation failure. 
 To understand how to use a default error handler using the [Rule Editor's](rule-editor.md) Invoke Service action, take a simple Adaptive Form with two fields, **Pet ID** and **Pet Name**. Now, use a default error handler at the **Pet ID** field to check for various validation criteria based on the data source. To add a default error handler using the Rule Editor's Invoke Service action, execute the following steps:
+
 1. Open an Adaptive Form in authoring mode, select a form object (for which you need to perform a validation check), and tap **[UICONTROL Rule Editor]** to open the rule editor.
 1. Tap **[UICONTROL Create]**.
 1. Create a condition in the **When** section of the rule. For example, **When[Name of Pet ID field]** is changed. Select is changed from the **Select State** drop-down list.
@@ -183,6 +184,7 @@ To add custom error functions, perform the following steps:
             console.log("Custom Error Handler processing end...");
         }
         ```
+
     The above custom error handler function displays the response and headers in the console along with the JSON string. To call the default error handler after the custom error handler, the following line of the sample code is used:
         `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
 
@@ -199,7 +201,6 @@ To add custom error functions, perform the following steps:
     >
     > To learn more about how to create custom functions, click [custom functions in the Rule Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules).
 
-
 1. 	Add, commit, and push the changes in the repository using the below commands:
          
     ```javascript
@@ -209,19 +210,20 @@ To add custom error functions, perform the following steps:
         git push
     ```
 
-4.	Run the full stack pipeline.
+1. Run the full stack pipeline.
 
 #### Configure custom error handler using Rule Editor's Invoke service action {#configure-custom-error-handler}
 
 To add a custom error handler using the **[!UICONTROL Rule Editor's Invoke Service]** action:
+
 1. Open an Adaptive Form in authoring mode, select a form object (for which you need to perform a validation check), and tap **[!UICONTROL Rule Editor]** to open the rule editor.
-2.	Tap **[!UICONTROL Create]**.
-3.	Create a condition in the **When** section of the rule. For example, When **[Name of Pet ID field]** is changed, select **is changed** from the **Select State** drop-down list.
-4.	In the **Then** section, select **[!UICONTROL Invoke Service ]** from the **Select Action** drop-down list.
-5.	Select a **Post service** and its corresponding data bindings from the **Input** section. For example, to validate **Pet ID**, select a **Post service** as **GET /pet/{petId}** and select **Pet ID** in the **Input** section.
-6.	Select the data bindings from the **Output** section. Select **Pet Name** in the **Output** section.
-7.	Select **[!UICONTROL Custom Error Handler]** from the **[!UICONTROL Error Handler]** section. 
-8.	Click **[!UICONTROL Done]**.
+1. Tap **[!UICONTROL Create]**.
+1. Create a condition in the **When** section of the rule. For example, When **[Name of Pet ID field]** is changed, select **is changed** from the **Select State** drop-down list.
+1. In the **Then** section, select **[!UICONTROL Invoke Service ]** from the **Select Action** drop-down list.
+1. Select a **Post service** and its corresponding data bindings from the **Input** section. For example, to validate **Pet ID**, select a **Post service** as **GET /pet/{petId}** and select **Pet ID** in the **Input** section.
+1. Select the data bindings from the **Output** section. Select **Pet Name** in the **Output** section.
+1. Select **[!UICONTROL Custom Error Handler]** from the **[!UICONTROL Error Handler]** section. 
+1. Click **[!UICONTROL Done]**.
 
  ![custom error handler](/help/forms/assets/custom-error-handler.png)
 
