@@ -115,7 +115,7 @@ A **Title** field containing invalid characters is accepted, but the name derive
 
 #### Name {#name}
 
-When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.
+When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters, the field is highlighted with an explanatory message.
 
 ![Example of entering an invalid page name](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -127,7 +127,7 @@ When you supply a page **Name** when creating a new page, AEM will [validate the
 
 ### Templates {#templates}
 
-In AEM, a template specifies a specialized type of page. A template will be used as the basis for any new page being created.
+In AEM, a template specifies a specialized type of page. A template is used as the basis for any new page being created.
 
 The template defines the structure of a page including a thumbnail image and other properties. For example, you may have separate templates for product pages, sitemaps, and contact information. Templates are comprised of [components](#components).
 
@@ -198,7 +198,7 @@ Unless all pages have been created for you in advance, you must create a page be
 
         * This is used to generate the URI. If not specified, the name is derived from the title.
         * If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and JCR.
-        * You **cannot submit invalid characters** in the **Name** field. When AEM detects invalid characters the field will be highlighted and an explanatory message shown to indicate the characters that need removing/replacing.
+        * You **cannot submit invalid characters** in the **Name** field. When AEM detects invalid characters the field is highlighted and an explanatory message shown to indicate the characters that need removing/replacing.
 
    >[!TIP]
    >
@@ -214,7 +214,7 @@ Unless all pages have been created for you in advance, you must create a page be
 
    >[!NOTE]
    >
-   >If you create a page using a name that already exists at that location, the system will automatically generate a variation of the name by appending a number. For example if `beach` already exists a new page will become `beach1`.
+   >If you create a page using a name that already exists at that location, the system will automatically generate a variation of the name by appending a number. For example if `beach` already exists, a new page becomes `beach1`.
 
 1. If you return to the console you will see your new page:
 
@@ -239,7 +239,7 @@ After creating a page, or navigating to an existing page (in the console), you c
 
    ![Edit button](/help/sites-cloud/authoring/assets/edit.png)
 
-1. The page will be opened and you can [edit the page](/help/sites-cloud/authoring/fundamentals/editing-content.md) as required.
+1. The page is opened and you can [edit the page](/help/sites-cloud/authoring/fundamentals/editing-content.md) as required.
 
 >[!NOTE]
 >
@@ -274,7 +274,7 @@ You can copy a page and all of its sub-pages to a new location:
 
 >[!NOTE]
 >
->If you copy the page to a location where a page with the same name as the original already exists, the system will automatically generate a variation of the name by appending a number. For example if `beach` already exists a new page with the name `beach` will become `beach1`.
+>If you copy the page to a location where a page with the same name as the original already exists, the system will automatically generate a variation of the name by appending a number. For example if `beach` already exists, a new page with the name `beach` becomes `beach1`.
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
    >[!NOTE]
    >
-   >If you move a page to a location where a page with the same name already exists, the system will automatically generate a variation of the name by appending a number. For example if `beach` already exists a new page with the name `beach` will become `beach1`.
+   >If you move a page to a location where a page with the same name already exists, the system will automatically generate a variation of the name by appending a number. For example, if `beach` already exists, a new page with the name `beach` becomes `beach1`.
 
 1. From the **Select Destination** stage of the wizard you can either:
 
@@ -326,13 +326,13 @@ AEM offers you the functionality to update any internal links that refer to the 
 
    >[!NOTE]
    >
-   >By default the parent of the page you are moving/renaming will be selected as the destination.
+   >By default the parent of the page you are moving or renaming is selected as the destination.
 
    ![Select page move destination](/help/sites-cloud/authoring/assets/move-page-destination.png)
 
    >[!NOTE]
    >
-   >If you move a page to a location where a page with the same name already exists, the system will automatically generate a variation of the name by appending a number. For example if `winter` already exists `winter` will become `winter1`.
+   >If you move a page to a location where a page with the same name already exists, the system will automatically generate a variation of the name by appending a number. For example, if `winter` already exists, `winter` becomes `winter1`.
 
 1. If the page is linked to or referenced, or has been published, then the details are listed in the **Adjust/Republish** step.
 
@@ -348,11 +348,11 @@ AEM offers you the functionality to update any internal links that refer to the 
 
 >[!NOTE]
 >
->If the page was already published, moving the page will automatically unpublish it. By default, it will be republished when the move is complete, but this can changed by un-checking the **Republish** field in the **Adjust/Republish** step.
+>If the page was already published, moving the page automatically unpublishes it. By default, it is republished when the move is complete, but this can changed by un-checking the **Republish** field in the **Adjust/Republish** step.
 
 >[!NOTE]
 >
->If the page is not referenced in any way, then the **Adjust/Republish** step will be skipped.
+>If the page is not referenced in any way, then the **Adjust/Republish** step is skipped.
 
 >[!NOTE]
 >
@@ -366,7 +366,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
 Normally a page move or rename action is carried out immediately. This is considered synchronous processing and further action in the UI is blocked until the action is complete.
 
-However, if the number of pages impacted is above a defined limit, the action will be processed asynchronously, allowing the user to continue authoring in the UI unimpeded by the page move or rename action.
+However, if the number of pages impacted is above a defined limit, the action is processed asynchronously, allowing the user to continue authoring in the UI unimpeded by the page move or rename action.
 
 * When clicking **Move** in the last step above, AEM checks the configured limit.
 * If the number of pages impacted is below the limit, it performs a synchronous operation.
@@ -398,13 +398,13 @@ The status of asynchronous jobs can be checked in the [**Async Jobs Status** das
 
    ![Delete dialog](/help/sites-cloud/authoring/assets/delete-page.png)
 
-    * **Do you want to archive pages before deletion?** - If checked, versions of the pages selected for deletion will be created upon deletion.
+    * **Do you want to archive pages before deletion?** - If checked, versions of the pages selected for deletion are created on deletion.
       * [Versions can be restored at a later date.](/help/sites-cloud/authoring/features/page-versions.md)
       * Pages deleted without previous versions can not be restored.
     * **Cancel** to abort the action
     * **Delete** to confirm the action:
 
-      * If the page has no references, the page will be deleted.
+      * If the page has no references, the page is deleted.
       * If the page has references, a message box will inform you that **One or more pages are referenced.** You can select **Force Delete** or **Cancel**.
 
 >[!NOTE]

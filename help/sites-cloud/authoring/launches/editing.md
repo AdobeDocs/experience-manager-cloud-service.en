@@ -48,7 +48,7 @@ To track the changes you have made, you can view the launch in **References** an
 
    ![Comparing launch to source](/help/sites-cloud/authoring/assets/launches-compare.png)
 
-1. The two pages (launch and source) will be opened side-by-side.
+1. The two pages (launch and source) are opened side-by-side.
 
    For full information about using this feature see [Page Diff](/help/sites-cloud/authoring/features/page-diff.md).
 
