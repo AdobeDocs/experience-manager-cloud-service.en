@@ -80,7 +80,7 @@ In addition, if you selected an XML schema or XDP form template as the form mode
 
     * **Tags**: Tags metadata for the fragment.
 
-    * **Target Path**: Repository path where the fragment will be saved. If you do not specify a path, a node with the same name as that of the fragment gets created next to the node containing the Adaptive Form. The fragment is saved in this node.
+    * **Target Path**: Repository path where the fragment is saved. If you do not specify a path, a node with the same name as that of the fragment gets created next to the node containing the Adaptive Form. The fragment is saved in this node.
 
     * **Form Model**: Depending on the form model for the Adaptive Form, this field displays the **XML Schema**, **Form Template**, or **None**. It is a non-editable field.
 
@@ -225,7 +225,7 @@ To localize an Adaptive Form that contains Adaptive Form Fragments, you need to 
 ## Key points to remember when working with fragments {#key-points-to-remember-when-working-with-fragments}
 
 * Ensure that the fragment name is unique. The fragment fails to create if there is an existing fragment with the same name.
-* In an XDP-based Adaptive Form, if you save a panel as fragment that includes another XDP fragment, the resulting fragment will be automatically bound to the child XDP fragment. In case of an XSD-based Adaptive Form, the resulting fragment will be bound to the schema root.
+* In an XDP-based Adaptive Form, if you save a panel as fragment that includes another XDP fragment, the resulting fragment is automatically bound to the child XDP fragment. In case of an XSD-based Adaptive Form, the resulting fragment is bound to the schema root.
 * When you create an Adaptive Form Fragment, a fragment node gets created, which is similar to the guideContainer node for an Adaptive Form, in CRXDe Lite.
 * A fragment in an Adaptive Form that uses a different Form Data Model is not supported. For example, an XDP-based fragment is not supported in an XSD-based Adaptive Form and vice-versa.
 * Adaptive Form Fragments are available for use through the Adaptive Form Fragments tab in AEM content finder.

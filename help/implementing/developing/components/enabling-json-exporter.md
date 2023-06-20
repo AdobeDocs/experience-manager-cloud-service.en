@@ -60,7 +60,7 @@ To be taken into account by the JSON Exporter framework, the Model interface sho
 
 The corresponding Sling Model interface (`MyComponent`) would be then annotated using [Jackson annotations](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) to define how it should be exported (serialized).
 
-The Model interface needs to be properly annotated to define which methods should be serialized. By default, all methods that respect the usual naming convention for getters will be serialized and will derive their JSON property names naturally from the getter names. This can be prevented or overridden using `@JsonIgnore` or `@JsonProperty` to rename the JSON property.
+The Model interface needs to be properly annotated to define which methods should be serialized. By default, all methods that respect the usual naming convention for getters are serialized and will derive their JSON property names naturally from the getter names. This can be prevented or overridden using `@JsonIgnore` or `@JsonProperty` to rename the JSON property.
 
 ## Example {#example}
 

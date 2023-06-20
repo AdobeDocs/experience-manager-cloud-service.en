@@ -191,7 +191,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
    The **Create Configuration** dialog will open.
 
-1. Enter a **Title** and, if you want, a **Name** (if left blank this will be generated from the title).
+1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
    You can also select the required template (if more than one is available).
 

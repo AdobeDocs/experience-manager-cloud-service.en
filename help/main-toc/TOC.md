@@ -67,6 +67,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2023 {#2023}
+      + [Maintenance Release Notes for 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
       + [Maintenance Release Notes for 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
       + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
   + Release Notes for Cloud Manager {#cloud-manager}
@@ -540,6 +541,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
         + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
         + [Create an Adaptive Forms - Core Components in an AEM Sites page](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+        + [Use machine translation or human translation to translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
         + [Configuring redirect page or thank you message](/help/forms/configure-redirect-page-or-thank-you-message.md)
     + Authoring Adaptive Forms - Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}

@@ -7,7 +7,7 @@ exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 
 Single page applications (SPAs) can offer the user a rich, dynamic experience that reacts and behaves in familiar ways, often just like a native application. [This is achieved by relying on the client to load the content up front and then do the heavy lifting of handling user interaction](introduction.md#how-does-a-spa-work) and thus minimizing the amount of communication needed between the client and the server, making the app more reactive.
 
-However this can lead to longer initial load times, especially if the SPA is large and rich in its content. In order to optimize load times, some of the content can be rendered server-side. Using server side rendering (SSR) can accelerate the initial load of the page and then pass further rendering on to the client.
+However this can lead to longer initial load times, especially if the SPA is large and rich in its content. To optimize load times, some of the content can be rendered server-side. Using server side rendering (SSR) can accelerate the initial load of the page and then pass further rendering on to the client.
 
 ## When to Use SSR {#when-to-use-ssr}
 
@@ -53,7 +53,7 @@ This is done via the **RemoteContentRenderer - Configuration Factory OSGi servic
 
 The following fields are available for the configuration:
 
-* **Content path pattern** - Regular expression in order to match a portion of the content, if necessary
+* **Content path pattern** - Regular expression to match a portion of the content, if necessary
 * **Remote endpoint URL** - URL of the endpoint that is responsible for generating the content
   * Use the secured HTTPS protocol if not in local network.
 * **Additional request headers** - Additional headers to be added to the request sent to the remote endpoint
@@ -66,7 +66,7 @@ The following fields are available for the configuration:
 
 >[!NOTE]
 >
->This configuration leverages the [Remote Content Renderer,](#remote-content-renderer) which has additional extension and customization options available.
+>This configuration uses the [Remote Content Renderer,](#remote-content-renderer) which has additional extension and customization options available.
 
 ## AEM-Driven Communication Flow {#aem-driven-communication-flow}
 
@@ -124,15 +124,15 @@ Both models are valid and supported by AEM. However, one should consider the adv
 
 ## Planning for SSR {#planning-for-ssr}
 
-Generally only part of an application needs to be rendered server side. The common example is the content that will be displayed above the fold on the initial load of the page is rendered server side. This saves time by delivering to the client, already rendered content. As the user interacts with the SPA, the additional content is rendered by the client.
+Generally, only part of an application needs to be rendered server side. The common example is the content that is displayed above the fold on the initial load of the page is rendered server side. This saves time by delivering to the client, already rendered content. As the user interacts with the SPA, the additional content is rendered by the client.
 
-As you consider implementing server side rendering for your SPA, you need to review for what parts of the app it will be necessary.
+As you consider implementing server side rendering for your SPA, you need to review for what parts of the app it is necessary.
 
 ## Developing an SPA using SSR {#developing-an-spa-using-ssr}
 
-SPA components could be rendered by the client (in the browser) or server side. When rendered server side, browser properties such as window size and location are not present. Therefore SPA components should be isomorphic, making no assumption about where they will be rendered.
+SPA components could be rendered by the client (in the browser) or server side. When rendered server side, browser properties such as window size and location are not present. Therefore SPA components should be isomorphic, making no assumption about where they are rendered.
 
-To leverage SSR, you will need to deploy your code in AEM as well as on Adobe I/O Runtime, which is responsible for the server side rendering. Most of the code will be the same, however server-specific tasks will differ.
+To use SSR, you must deploy your code in AEM and on Adobe I/O Runtime, which is responsible for the server side rendering. Most of the code is the same, however server-specific tasks differ.
 
 ## SSR for SPAs in AEM {#ssr-for-spas-in-aem}
 
@@ -154,7 +154,7 @@ This service is internally used by the [RemoteContentRendererRequestHandlerServl
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-The `RemoteContentRendererRequestHandlerServlet` can be used to programmatically set the request configuration. `DefaultRemoteContentRendererRequestHandlerImpl`, the provided default request handler implementation, allows you to create multiple OSGi configurations in order to map a location in the content structure to a remote endpoint.
+The `RemoteContentRendererRequestHandlerServlet` can be used to programmatically set the request configuration. `DefaultRemoteContentRendererRequestHandlerImpl`, the provided default request handler implementation, lets you create multiple OSGi configurations so you can map a location in the content structure to a remote endpoint.
 
 To add a custom request Handler, implement the `RemoteContentRendererRequestHandler` interface. Be sure to set the `Constants.SERVICE_RANKING` component property to an integer higher than 100, which is the ranking of the `DefaultRemoteContentRendererRequestHandlerImpl`.
 
@@ -188,4 +188,4 @@ Usually, the HTL template of a page component is the main recipient of such a fe
 
 ### Requirements {#requirements}
 
-The servlets leverage the Sling Model Exporter to serialize the component data. By default, both the `com.adobe.cq.export.json.ContainerExporter` and `com.adobe.cq.export.json.ComponentExporter` are supported as Sling Model adapters. If necessary, you can add classes that the request should be adapted to using the `RemoteContentRendererServlet` and implementing the `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. The additional classes must extend the `ComponentExporter`.
+The servlets use the Sling Model Exporter to serialize the component data. By default, both the `com.adobe.cq.export.json.ContainerExporter` and `com.adobe.cq.export.json.ComponentExporter` are supported as Sling Model adapters. If necessary, you can add classes that the request should be adapted to using the `RemoteContentRendererServlet` and implementing the `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. The additional classes must extend the `ComponentExporter`.

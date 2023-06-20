@@ -5,7 +5,7 @@ exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 ---
 # OAuth2 Support for the Mail Service {#oauth2-support-for-the-mail-service}
 
-AEM as a Cloud Service offers OAuth2 support for its integrated Mail Service, in order to allow organizations to adhere to secure email requirements.
+AEM as a Cloud Service offers OAuth2 support for its integrated Mail Service to allow organizations to adhere to secure email requirements.
 
 You can configure OAuth for multiple email providers. Below are step-by-step instructions for configuring the AEM Mail Service to authenticate via OAuth2 with Microsoft Office 365 Outlook. Other vendors can be configured in a similar manner.
 
@@ -40,15 +40,15 @@ For more information on the AEM as a Cloud Service Mail Service, see [Sending Em
 
 To recap, you will need to the following information to configure OAuth2 for the Mail service on the AEM side:
 
-* The Auth URL, which will be constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
-* The Token URL, which will be constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* The Refresh URL, which will be constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* The Auth URL, which is constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* The Token URL, which is constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* The Refresh URL, which is constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
 * The Client ID
 * The Client Secret
 
 ### Generating the Refresh Token {#generating-the-refresh-token}
 
-Next, you need to generate the refresh token, which will be a part of the OSGi configuration in a subsequent step.
+Next, you need to generate the refresh token, which is a part of the OSGi configuration in a subsequent step.
 
 You can do this by following these steps:
 
@@ -129,15 +129,15 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
    * `email`
    * `profile`
 1. Create an OSGI property file `called com.day.cq.mailer.DefaultMailService.cfg.json`
-under `/apps/<my-project>/osgiconfig/config`  with the following syntax:
+under `/apps/<my-project>/osgiconfig/config` with the syntax below. Note that the smtp.host and smtp.port values reflects advanced networking configuration, as described in the [Email Service tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
    
    ```
    {
-    "smtp.host": "<smtp hostname>"
+    "smtp.host": "$[env:AEM_PROXY_HOST;default=proxy.tunnel]",
     "smtp.user": "<user account that logged into get the oauth tokens>",
     "smtp.password": "value not used",
-    "smtp.port": 587,
-    "from.address": "<from address used for sending>"
+    "smtp.port": 30465,
+    "from.address": "<from address used for sending>",
     "smtp.ssl": false,
     "smtp.starttls": true,
     "smtp.requiretls": true,

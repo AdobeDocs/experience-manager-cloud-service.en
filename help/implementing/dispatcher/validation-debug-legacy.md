@@ -75,7 +75,7 @@ The following files are customizable and will get transferred to your Cloud inst
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-You can have one or more of these files. They contain `<VirtualHost>` entries that match host names and allow Apache to handle each domain traffic with different rules. Files are created in the `available_vhosts` directory and enabled with a symbolic link in the `enabled_vhosts` directory. From the `.vhost` files, other files like rewrites and variables will be included.
+You can have one or more of these files. They contain `<VirtualHost>` entries that match host names and allow Apache to handle each domain traffic with different rules. Files are created in the `available_vhosts` directory and enabled with a symbolic link in the `enabled_vhosts` directory. From the `.vhost` files, other files like rewrites and variables are included.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -95,7 +95,7 @@ This file is included from inside the `dispatcher_vhost.conf` file. You can chan
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-You can have one or more of these files, and they contain farms to match host names and allow the Dispatcher module to handle each farm with different rules. Files are created in the `available_farms` directory and enabled with a symbolic link in the `enabled_farms` directory. From the `.farm` files, other files like filters, cache rules and others will be included.
+You can have one or more of these files, and they contain farms to match host names and allow the Dispatcher module to handle each farm with different rules. Files are created in the `available_farms` directory and enabled with a symbolic link in the `enabled_farms` directory. From the `.farm` files, other files like filters, cache rules and others are included.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -119,7 +119,7 @@ The above files reference the immutable configuration files listed below. Change
 
 These files are part of the base framework and enforce standards and best practices. The files are considered immutable because modifying or deleting them locally will have no impact on your deployment, as they will not get transferred to your Cloud instance.
 
-It is recommended that the above files reference the immutable files listed below, followed by any additional statements or overrides. When Dispatcher configuration is deployed to a cloud environment, the latest version of the immutable files will be used, regardless of what version was used in local development.
+It is recommended that the above files reference the immutable files listed below, followed by any additional statements or overrides. When Dispatcher configuration is deployed to a cloud environment, the latest version of the immutable files are used, regardless of what version was used in local development.
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -215,10 +215,10 @@ Phase 3 finished
 The script does the following:
 
 1. It runs the validator. If the configuration isn't valid, the script fails.
-2. It executes the `httpd -t` command to test if syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment.
+2. It runs the `httpd -t` command to test if syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment.
 3. Checks that the subset of the Dispatcher SDK configuration files, which are intended to be immutable as described in the [File structure section](##legacy-mode-file-structure), has not been modified. This is a new check, introduced with AEM SDK version v2021.1.4738 that also includes Dispatcher Tools version 2.0.36. Before this update, customers might have incorrectly assumed that any local SDK modifications of those immutable files would also be applied to the Cloud environment.
 
-During a Cloud Manager deployment, the `httpd -t` syntax check will be executed as well and any errors will be included in the Cloud Manager `Build Images step failure` log.
+During a Cloud Manager deployment, the `httpd -t` syntax check is run as well and any errors are included in the Cloud Manager `Build Images step failure` log.
 
 ### Phase 1 {#first-phase}
 
@@ -356,14 +356,14 @@ Avoid this error by copying and pasting the path from Windows Explorer and then 
 
 ### Phase 2 {#second-phase}
 
-This phase checks the apache syntax by starting Docker in an image. Docker must be installed locally, but note that it’s not necessary for AEM to be running.
+This phase checks the apache syntax by starting Docker in an image. Docker must be installed locally, but note that it's not necessary for AEM to be running.
 
 >[!NOTE]
 >Windows users need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer.
 
 This phase can also be run independently through `validator full -d out src/dispatcher`, which generates an out directory, needed by the next command `bin/docker_run.sh out host.docker.internal:4503 8080`.
 
-During a Cloud Manager deployment, the `httpd -t` syntax check will also be executed and any errors will be included in the Cloud Manager Build Images step failure log.
+During a Cloud Manager deployment, the `httpd -t` syntax check is run and any errors are included in the Cloud Manager Build Images step failure log.
 
 ### Phase 3 {#third-phase}
 

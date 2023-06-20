@@ -84,7 +84,7 @@ The last image on the entrance channels is also targeted (i.e. dynamically chang
 
 ## Deploy a Demo Screens Project {#deploy-project}
 
-In order to use the demo content in the sandbox you created in the [Create Program](create-program.md) step, a site must be created based on a template.
+To use the demo content in the sandbox you created in the [Create Program](create-program.md) step, a site must be created based on a template.
 
 If you have not already created a We.Cafe demo site, simply follow the same steps as in the [Create Demo Site](create-site.md) section. When selecting the template, simply choose the **We.Cafe Website Template**.
 
@@ -201,7 +201,7 @@ Now that you have created your data source as a Google Sheets spreadsheet and en
    }
    ```
 
-AEM Screens can use this same service to access the simulated weather data. This will be configured in the next step.
+AEM Screens can use this same service to access the simulated weather data that is configured in the next step.
 
 ### Configure ContextHub {#configure-contexthub}
 

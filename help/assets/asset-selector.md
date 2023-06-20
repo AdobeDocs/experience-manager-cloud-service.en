@@ -354,7 +354,7 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 
 | Property | Type | Required | Default |Description |
 |---|---|---|---|---|
-| *rail*| boolean | No | false | If marked `true`, Asset Selector will be rendered in a left rail view. If it is marked `false`, the Asset Selector will be rendered in modal view. |
+| *rail*| boolean | No | false | If marked `true`, Asset Selector is rendered in a left rail view. If it is marked `false`, the Asset Selector is rendered in modal view. |
 | *imsOrg*| string | Yes | | Adobe Identity Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The `imsOrg` key is required to authenticate whether the organization you're accessing is under Adobe IMS or not. |
 | *imsToken* | string | No | | IMS bearer token used for authentication. `imsToken` is required if you are using the non-SUSI flow. |
 | *apiKey* | string | No | | API key used for accessing the AEM Discovery service. `apiKey` is required if you are using the non-SUSI flow.|

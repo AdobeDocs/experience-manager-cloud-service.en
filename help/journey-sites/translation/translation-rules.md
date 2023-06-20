@@ -61,7 +61,7 @@ AEM automatically creates translation rules for all content. To view these rules
 
    ![Translation rules editor](assets/translation-rules-editor.png)
 
-1. Page properties that will be translated are located under the **General** section of the list. You can add or update an existing property names that you want to explicitly include in translation.
+1. Page properties that are translated are located under the **General** section of the list. You can add or update an existing property names that you want to explicitly include in translation.
    1. Enter the property name in the **New Property** field.
    1. The options **Translate** and **Inherit** are checked automatically.
    1. Tap or click **Add**.

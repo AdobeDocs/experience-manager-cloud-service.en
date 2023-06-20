@@ -36,7 +36,7 @@ Follow the steps below to use Best Practices Analysis card:
 1. Follow these steps to download Best Practices Analyzer (BPA).
 
       >[!NOTE]
-      >In order to avoid an impact on business critical instances, it is recommended that you run BPA on an Author environment that is as close as possible to the Production environment in the areas of customizations, configurations, content and user applications. Alternatively, it can be run on a clone of the production Author environment.
+      >To avoid an impact on business critical instances, it is recommended that you run BPA on an Author environment that is as close as possible to the Production environment in the areas of customizations, configurations, content and user applications. Alternatively, it can be run on a clone of the production Author environment.
 
    1. Navigate to [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal and download the Best Practices Analyzer as a zip file.
 

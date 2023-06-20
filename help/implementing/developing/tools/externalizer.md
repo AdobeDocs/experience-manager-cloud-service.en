@@ -67,7 +67,7 @@ To define a domain mapping for the Externalizer service:
     * **`scheme`** is usually http or https, but can be another protocol.
 
         * It is recommended to use https to enforce https links.
-        * It will be used if the client code does not override the scheme when asking for externalization of a URL.
+        * It is used if the client code does not override the scheme when asking for externalization of a URL.
 
     * **`server`** is the host name (either a domain name or ip address).
     * **`port`** (optional) is the port number.
