@@ -58,7 +58,7 @@ Launches allow you to:
   * Automatically - this involves the following:
     * The **Launch**(**Live**) **date** field: this can be set when creating or editing a launch.  
     * The **Production Ready** flag: this can only be set when editing a launch.
-    * If the **Production Ready** flag is set, the launch will be automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. After the promotion, the production pages are automatically published.  
+    * If the **Production Ready** flag is set, the launch is automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. After the promotion, the production pages are automatically published.  
           If no date has been set, the flag will have no effect.
 * Update your source and launch pages in parallel:
   * Changes to the source pages are automatically implemented in the launch copy (if set up as with inheritance; i.e. as a live copy).  
@@ -86,7 +86,7 @@ Launches allow you to:
 
 1. In the **Sites** console, navigate to the source of the launch(es).
 1. Open the **References** rail and select the source page.
-1. Select **Launches**, the existing launch(es) will be listed, together with access to the **Launches Console**:
+1. Select **Launches**, the existing launches are listed, together with access to the **Launches Console**:
 
    ![References of launches in sites console](/help/sites-cloud/authoring/assets/launches-references.png)
 

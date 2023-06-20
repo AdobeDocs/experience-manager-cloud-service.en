@@ -90,7 +90,7 @@ As well as searching by a wide range of facets you can also save a particular se
 
    ![Saving a search with a name](/help/sites-cloud/authoring/assets/search-save-name.png)
 
-1. Your saved search will be available from the selector the next time you access the search panel:
+1. Your saved search is available from the selector the next time you access the search panel:
 
    ![Saved searches](/help/sites-cloud/authoring/assets/saved-searches.png)
 

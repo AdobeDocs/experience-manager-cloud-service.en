@@ -75,7 +75,7 @@ Finally, the function `fetchJsonFromGraphQL()` is used to perform the fetch requ
 
 ## Fetch Data from Your Persisted Query {#use-persisted-query}
 
-On line 25 we indicate which GraphQL persisted query the app should fetch data from. The persisted query name is a combination of the name of the endpoint (ie. `your-project` or `aem-demo-assets`), followed by a forward slash, and then the name of the query. If you followed the earlier module instructions exactly, the persisted query you created will be in the `your-project` endpoint.
+On line 25 we indicate which GraphQL persisted query the app should fetch data from. The persisted query name is a combination of the name of the endpoint (ie. `your-project` or `aem-demo-assets`), followed by a forward slash, and then the name of the query. If you followed the earlier module instructions exactly, the persisted query you created is in the `your-project` endpoint.
 
 1. Update the `persistedQueryName` variable to use the persisted query you created in the previous module. If you followed the naming suggestion you would have created a persisted query named `adventure-list` in the `your-project` endpoint, and you would set the `persistedQueryName` variable to `your-project/adventure-list`:
 
