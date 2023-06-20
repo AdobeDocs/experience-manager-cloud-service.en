@@ -42,10 +42,10 @@ Follow the steps below to create video renditions in Screens as a Cloud Service 
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Please ensure to use the Encoding name that starts with "screens-", only these video renditions will be considered to play the video experience in Screens as a Cloud Service. Enter the bitrate that works your videos (2500kbps for 720px video and 5000 kbps for 1080px).
+   >Please ensure to use the Encoding name that starts with "screens-", only these video renditions are considered to play the video experience in Screens as a Cloud Service. Enter the bitrate that works your videos (2500kbps for 720px video and 5000 kbps for 1080px).
 
    >[!NOTE]
-   >Multiple video renditions can be added with varying width/height/bitrate to work your videos. Please remember that all the screens- renditions will be downloaded by the Screens devices, even though the device plays only video rendition.
+   >Multiple video renditions can be added with varying width/height/bitrate to work your videos. All the screens, renditions are downloaded by the Screens devices, even though the device plays only video rendition.
 
 1. Click on **Save**.
 

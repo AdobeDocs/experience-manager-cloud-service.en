@@ -25,6 +25,10 @@ There are three methods that you can use to add metadata and tags:
 * When first creating your fragment (from the **Assets** console):
 
   ![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+
+* The **Variations** tab of the Content Fragment editor allows you to add predefined **Tags** from your project: 
+
+  ![Content Fragment Editor - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
   
 * The **Metadata** tab of the Content Fragment editor allows you to add both various fields of metadata, and predefined **Tags** from your project: 
 

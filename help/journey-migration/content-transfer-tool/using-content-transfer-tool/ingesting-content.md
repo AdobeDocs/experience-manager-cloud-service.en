@@ -14,8 +14,6 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="Top Up Ingestion"
 
 Follow the steps below to ingest your migration set from the Content Transfer Tool:
-   >[!NOTE]
-   >You can run the optional pre-copy step to significantly speed up the ingestion phase. The pre-copy step is most effective for the 1st full extraction and ingestion. Refer to [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details. 
 
    >[!NOTE]
    >Did you remember to log a support ticket for this ingestion? See [Important Considerations Before Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) for that and other considerations to help make the ingestion successful.
@@ -23,38 +21,29 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 1. Go to Cloud Acceleration Manager. Click on your project card and click on the Content Transfer card. Navigate to **Ingestion Jobs** and click on **New Ingestion** 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
-   
-   
-1. Review the ingestion checklist and ensure that all the steps have been completed. These are necessary steps to ensure a successful ingestion. You will be able to proceed to the **Next** step only if the checklist has been completed.
+
+1. Review the ingestion checklist and ensure that all the steps have been completed. These are necessary steps to ensure a successful ingestion. Proceed to the **Next** step only if the checklist is completed.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
 1. Provide the required information to create a new ingestion.
 
-   * Select the migration set that you just extracted as the Source
-   * Select the destination environment. This is where the content of the migration set will be ingested. Select the tier. (Author/Publish).
+   * Select the migration set that contains the extracted data as the Source.
+     * Migration Sets will expire after a prolonged period of inactivity, so it is expected that the ingestion occurs relatively soon after the extraction has been performed. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
+   * Select the destination environment. This environment is where the content of the migration set is ingested. Select the tier. (Author/Publish). Rapid Development Environments are not supported.
 
    >[!NOTE]
-   >
-   >If the source was Author, it is recommended to ingest it into the Author tier on the target. Similarly, if source was Publish, target should be Publish as well.
-
-   >[!NOTE]
-   >
-   >If the target tier is `Author`, the author instance will be shutdown during the length of the ingestion and will be unavailable to users (for example, authors or anyone performing maintenance, etc.). This is to protect the system, and prevent any changes which could either be lost or cause an ingestion conflict. Please ensure that your team is aware of this fact. Also note that the environment will appear hibernated during the author ingestion.
-
-   >[!NOTE]
-   >
-   >You can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
-   > 
-   >If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later.
+   >The following notes apply to ingesting content:
+   > If the source was Author, it is recommended to ingest it into the Author tier on the target. Similarly, if source was Publish, target should be Publish as well.
+   > If the target tier is `Author`, the author instance is shutdown during the length of the ingestion and becomes unavailable to users (for example, authors or anyone performing maintenance). The reason is to protect the system, and prevent any changes which could either be lost or cause an ingestion conflict. Ensure that your team is aware of this fact. Also note that the environment appears hibernated during the author ingestion.
+   > You can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
+   > If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. Doing so speeds up the Publish ingestion when it is run later.
+   > Ingestions do not support a Rapid Development Environment (RDE) destination and do not appear as a possible destination choice, even if the user has access to it.
 
    >[!IMPORTANT]
-   >
-   >You will be able to kick-off an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you are unable to start an ingestion, refer to [Unable to Start Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) for more details.
-   
-   >[!IMPORTANT]
-   >
-   >If the setting **Wipe** is enabled before ingestion, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group. You will need to be re-added to the administrators group in order to start an ingestion.
+   > The following important notices apply to ingesting content:
+   > You can initiate an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you are unable to start an ingestion, refer to [Unable to Start Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) for more details.
+   > If the setting **Wipe** is enabled before ingestion, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group. You must be re-added to the administrators group to start an ingestion.
 
 1. Click on **Ingest**
 
@@ -64,7 +53,9 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. Once Ingestion is completed, click on (i) button on the top right corner of the screen to get more information about the ingestion job. 
+1. Click on **(i)** button in the row to get more information about the ingestion job. You can see the duration of each step of the Ingestion when it is executing or completed by clicking on **...** and then on **View durations**. The information from the extraction is also shown to realize what is being ingested.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 
@@ -84,7 +75,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
    
-   Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) to learn more.
+   Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
 
@@ -96,7 +87,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 >id="aemcloud_ctt_ingestion_topup"
 >title="Top Up Ingestion"
 >abstract="Use the top up feature to move modified content since the previous content transfer activity. Upon completion of Ingestion, check the logs for any error/warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe Customer Care."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="Viewing Logs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Viewing Logs"
 
 The Content Transfer Tool has a feature that supports differential content *top-up* where it is possible to transfer only changes made since the previous content transfer activity.
 
@@ -121,11 +112,11 @@ You will need to retrieve the migration token manually by clicking on the "Get t
 
 >[!NOTE]
 >
->The token will be available to users who belong to the local **AEM administrators** group on the destination Cloud Service author service. 
+>The token is available to users who belong to the local **AEM administrators** group on the destination Cloud Service author service. 
 
 ### Unable to Start Ingestion {#unable-to-start-ingestion}
 
-You will be able to kick-off an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you don't belong to the AEM administrators group, you will see an error as shown below when you try to start an ingestion. You can either ask your administrator to add you to the local **AEM administrators** or ask for the token itself, which you can then paste into the **Migration token input** field.
+You can initiate an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you don't belong to the AEM administrators group, you will see an error as shown below when you try to start an ingestion. You can either ask your administrator to add you to the local **AEM administrators** or ask for the token itself, which you can then paste into the **Migration token input** field.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -141,16 +132,20 @@ This indicates that the Cloud Acceleration Manager was unable to reach the targe
 > 
 > The "Migration token" field is shown because in a few cases retrieving that token is what is actually disallowed. By allowing it to be manually provided, it may allow the user to start the ingestion quickly, without any additional help. If the token is provided, and the message still appears, than retrieving the token was not the problem.
 
-* AEM as a Cloud Service maintains the environment state, and occasionally may need to restart the migration service for a number of normal reasons. If that service is restarting, it cannot be reached, but will be available soon.
+* AEM as a Cloud Service maintains the environment state, and occasionally may need to restart the migration service for a number of normal reasons. If that service is restarting, it cannot be reached, but is usually available soon.
 * It is possible another process is being run on the instance. For instance, if Release Orchestrator is applying an update, the system may be busy and the migration service regularly unavailable. That, and the possibility of corrupting the stage or production instance, is why pausing updates during an ingestion is very strongly recommended.
 * If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it will block Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is very dynamic. Currently, the only solution is to disable the IP allow list while the ingestion is running.
 * There may be other reasons that need investigation. If the ingestion still continues to fail, please contact Adobe Customer Care.
 
 ### Automatic Updates through Release Orchestrator is still enabled
 
-Release Orchestrator automatically keeps environments up to date by applying updates automatically. If the update is triggerred when an ingestion is being performed, it can cause unpredictable results including the corruption of the environment. That is one of the reasons a support ticket should be logged before starting an ingestion (see "Note" above), so that temporarily disabling the Release Orchestrator can be scheduled.
+Release Orchestrator automatically keeps environments up to date by applying updates automatically. If the update is triggered when an ingestion is being performed, it can cause unpredictable results including the corruption of the environment. That is one of the reasons a support ticket should be logged before starting an ingestion (see "Note" above), so that temporarily disabling the Release Orchestrator can be scheduled.
 
 If Release Orchestrator is still running when an ingestion is being started, the UI will present this message. You may choose to continue anyway, accepting the risk, by checking the field and pressing the button again.
+
+>[!NOTE]
+>
+> Release Orchestrator is now being deployed to Development environments, so pausing updates on those environments should be done as well.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
@@ -168,4 +163,4 @@ This conflict must be resolved manually. Someone familiar with the content must 
 
 ## What's Next {#whats-next}
 
-Once you have completed Ingesting Content into Target, you can view logs of each step (extraction and ingestion) and look for errors. See [Viewing Logs for a Migration Set](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) to learn more.
+Once you have completed Ingesting Content into Target, you can view logs of each step (extraction and ingestion) and look for errors. See [Viewing Logs for a Migration Set](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html) to learn more.

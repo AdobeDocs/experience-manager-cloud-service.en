@@ -9,7 +9,7 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
-exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
+exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 ---
 # Commerce Multi-Store Setup {#multi-store}
 
@@ -37,7 +37,7 @@ To connect an AEM site and AEM CIF Core Components so too to a dedicated store v
    * Select the base configuration you created
    * Create a new configuration using the steps described at point 2 above
 
-   This new configuration will be created as a child configuration of the base one. You can now go to Tools -> General -> Configuration Browser and create the configuration settings.
+   This new configuration is created as a child configuration of the base one. You can now go to Tools -> General -> Configuration Browser and create the configuration settings.
 
    >[!TIP]
    >

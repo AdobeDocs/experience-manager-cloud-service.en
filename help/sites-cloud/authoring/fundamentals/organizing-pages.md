@@ -77,7 +77,7 @@ When creating a new page there are two keys fields:
 
 The page **Title** and **Name** can be created separately but are related:
 
-* When creating a page, only the **Title** field is required. If no **Name** is provided at page creation, AEM will generate a name from the first 64 characters of the title (observing the validation set out below). Only the first 64 characters are used in order to support the best practice of short page names.
+* When creating a page, only the **Title** field is required. If no **Name** is provided at page creation, AEM will generate a name from the first 64 characters of the title (observing the validation set out below). Only the first 64 characters are used to support the best practice of short page names.
 * If a page name is manually specified by the author, the 64 character limit does not apply, however other technical limitations on the page name length may.
 
 >[!TIP]
@@ -106,7 +106,7 @@ Full details of all characters allowed can be found in [the naming conventions](
 
 If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and JCR.
 
-A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters substituted. For example:
+A **Title** field containing invalid characters is accepted, but the name derived has the invalid characters substituted. For example:
 
 | Title |Derived Name |
 |---|---|
@@ -334,7 +334,7 @@ AEM offers you the functionality to update any internal links that refer to the 
    >
    >If you move a page to a location where a page with the same name already exists, the system will automatically generate a variation of the name by appending a number. For example if `winter` already exists `winter` will become `winter1`.
 
-1. If the page is linked to or referenced, or has been published, then the details will be listed in the **Adjust/Republish** step.
+1. If the page is linked to or referenced, or has been published, then the details are listed in the **Adjust/Republish** step.
 
    You can indicate which should be adjusted and/or republished as appropriate.
 

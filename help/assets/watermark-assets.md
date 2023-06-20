@@ -8,6 +8,11 @@ exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
 ---
 # Watermark your assets {#watermark-assets}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 [!DNL Adobe Experience Manager Assets] lets you add a digital watermark to images. [!DNL Assets] supports applying an image as a watermark to other image files. Watermarks can help users verify the authenticity and copyright ownership of the assets. Also, a watermark can be used to indicate a document's state like confidential, draft, validity, and so on.
 
 To configure [!DNL Experience Manager] to watermark assets:
@@ -31,7 +36,7 @@ To configure [!DNL Experience Manager] to watermark assets:
    >If you have configured System Watermarking Profile using `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` configuration file (OSGi configuration), you can continue to use it, however, Adobe recommends to use the new method.
 
    
-1. [Create a processing profile](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) to leverage asset microservices to apply the watermark.
+1. [Create a processing profile](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) to use asset microservices to apply the watermark.
 
    ![Asset processing profile to create watermark](assets/watermark-processing-profile.png)
 
@@ -44,6 +49,21 @@ To configure [!DNL Experience Manager] to watermark assets:
 * You can use a single configuration to watermark all your assets. Only one image is used for watermarking and its width is fixed.
 * You can place the watermark at the center without tiling.
 * Text-based watermarks are not supported.
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

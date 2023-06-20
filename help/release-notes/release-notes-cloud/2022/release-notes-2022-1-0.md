@@ -3,9 +3,9 @@ title: Release Notes for 2022.1.0 release of [!DNL Adobe Experience Manager] as 
 description: Release Notes for 2022.1.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
 ---
-# Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# 2022.1.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the general Release Notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
+The following section outlines the feature release Notes for the 2022.1.0 version of [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ The release date for Cloud Manager in AEM as a Cloud Service 2022.01.0 is 20 Jan
 * Cloud Manager will [avoid rebuilding the code base when it detects that the same git commit is used](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in multiple full-stack pipeline executions.
 * Accessing the AEM environment log now requires the **Deployment Manager** product profile. Users without this profile will see a disabled button in the user interface.
 *  The UI will not allow front-end pipeline configuration for a program where Sites is not enabled as a solution. 
-* Upon generating a git password, the expiration date will be displayed.
+* In generating a git password, the expiration date is displayed.
 
 ### Bug Fixes {#bug-fixes-cm}
 

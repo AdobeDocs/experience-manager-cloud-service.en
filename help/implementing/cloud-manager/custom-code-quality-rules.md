@@ -14,6 +14,10 @@ This page describes the custom code quality rules executed by Cloud Manager as p
 
 >[!NOTE]
 >
+>Full SonarQube rules are not available for download due to Adobe proprietary information. You can download the complete list of rules [using this link.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Continue reading this document for descriptions and examples of the rules.
+
+>[!NOTE]
+>
 >The code samples provided here are only for illustrative purposes. See the SonarQube [Concepts documentation](https://docs.sonarqube.org/latest/) to learn about SonarQube concepts and quality rules.
 
 ## SonarQube rules {#sonarqube-rules}
@@ -102,7 +106,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Severity**: Critical
 * **Since**: Version 2018.6.0
 
-When executing HTTP requests from inside an Experience Manager application, it is critical to ensure that proper timeouts are configured in order to avoid unnecessary thread consumption. Unfortunately, the default behavior of both Java&trade;'s default HTTP Client (`java.net.HttpUrlConnection`) and the commonly used Apache HTTP Components client is to never time out, so timeouts must be explicitly set. Further, as a best practice, these timeouts should be no more than 60 seconds.
+When executing HTTP requests from inside an Experience Manager application, it is critical to ensure that proper timeouts are configured to avoid unnecessary thread consumption. Unfortunately, the default behavior of both Java&trade;'s default HTTP Client (`java.net.HttpUrlConnection`) and the commonly used Apache HTTP Components client is to never time out, so timeouts must be explicitly set. Further, as a best practice, these timeouts should be no more than 60 seconds.
 
 #### Non-compliant code {#non-compliant-code-2}
 
@@ -751,7 +755,7 @@ Similar to the [Packages Should Not Contain Duplicate OSGi Configurations rule,]
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
-The OSGi configuration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` defines the default authoring mode within Experience Manager. Because [the Classic UI has been deprecated since Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html), an issue is now raised when the default authoring mode is configured to Classic UI.
+The OSGi configuration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` defines the default authoring mode within Experience Manager. Because the Classic UI has been deprecated since Experience Manager 6.4, an issue is now raised when the default authoring mode is configured to Classic UI.
 
 ### Components with dialogs should have touch UI dialogs {#oakpal-components-dialogs}
 
@@ -801,7 +805,7 @@ Customers using reverse replication should contact Adobe for alternative solutio
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-Experience Manager client libraries may contain static resources like images and fonts. As described in the document [Using Preprocessors,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) when using proxied client libraries these static resources must be contained in a child folder named `resources` in order to be effectively referenced on the publish instances.
+Experience Manager client libraries may contain static resources like images and fonts. As described in the document [Using Preprocessors,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) when using proxied client libraries these static resources must be contained in a child folder named `resources` to be effectively referenced on the publish instances.
 
 #### Non-compliant code {#non-compliant-proxy-enabled}
 
@@ -854,7 +858,7 @@ Migration from static to editable templates can be largely automated using the [
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-The legacy Foundation Components (i.e. components under `/libs/foundation`) have been [deprecated for several Experience Manager releases](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html) in favor of the Core Components. Usage of the Foundation Components as the basis for custom components (whether by overlay or inheritance) is discouraged and should be converted to the corresponding Core Components.
+The legacy Foundation Components (i.e. components under `/libs/foundation`) have been deprecated for several Experience Manager releases in favor of the Core Components. Usage of the Foundation Components as the basis for custom components (whether by overlay or inheritance) is discouraged and should be converted to the corresponding Core Components.
 
 This conversion can be facilitated by the [Experience Manager Modernization Tools.](https://opensource.adobe.com/aem-modernize-tools/)
 

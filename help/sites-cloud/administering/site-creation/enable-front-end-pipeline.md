@@ -1,13 +1,13 @@
 ---
 title: Enabling the Front-End Pipeline
-description: Learn how you can enable the front-end pipeline for existing sites to leverage site themes to more quickly customize your site.
+description: Learn how you can enable the front-end pipeline for existing sites to use site themes to more quickly customize your site.
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 ---
 # Enabling the Front-End Pipeline {#enable-front-end-pipeline}
 
-Learn how you can enable the front-end pipeline for existing sites to leverage site themes to more quickly customize your site.
+Learn how you can enable the front-end pipeline for existing sites to use site themes to more quickly customize your site.
 
 ## Overview {#overview}
 
@@ -15,7 +15,7 @@ The front-end pipeline is a mechanism that can quickly deploy just the front-end
 
 Instead of deploying the full-stack, only front-end code is handled by this pipeline making the process faster and also allows front-end developers to easily and quickly customize your site without knowledge of AEM.
 
-Sites based on site templates can leverage the front-end pipeline by default. This document describes how you can adapt your existing sites to take advantage of the front-end pipeline.
+Sites based on site templates can use the front-end pipeline by default. This document describes how you can adapt your existing sites to take advantage of the front-end pipeline.
 
 >[!TIP]
 >
@@ -50,7 +50,7 @@ Enabling your site is done from the Sites console using the [Site rail.](site-ra
 
    ![Enable front-end pipeline](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)
 
-1. AEM prompts you to confirm with an overview of the changes that will be made. Confirm and your site is adapted.
+1. AEM prompts you to confirm with an overview of the changes that will made. Confirm and your site is adapted.
 
 Now your site is ready to use the front-end pipeline. To learn more about the front-end pipeline and managing your site theme see:
 

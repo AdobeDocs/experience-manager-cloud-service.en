@@ -51,7 +51,7 @@ The following release (2021.3.0) will be on March 25, 2021.
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] is entitled to have a pre-configured [!DNL Brand Portal] instance. The [!DNL Cloud Manager] user can activate [!DNL Brand Portal] on [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. See [activate Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en).
 
-* Businesses can now source assets using [!DNL Brand Portal]. Asset sourcing feature leverages [!DNL Brand Portal] to help customers engage with agency users to source assets for new marketing campaigns, photoshoots and projects. See [asset sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+* Businesses can now source assets using [!DNL Brand Portal]. Asset sourcing feature uses [!DNL Brand Portal] to help customers engage with agency users to source assets for new marketing campaigns, photoshoots and projects. See [asset sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
 * The [!DNL Brand Portal] usage report now displays only the active users. The inactive users are not displayed now. Active users are the ones whose account is assigned to a product profile in the [!DNL Admin Console]. See [[!DNL Brand Portal] reports](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
@@ -95,7 +95,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is Februar
 
 * Cloud Manager UI will inform the user who may not temporarily not be able to add/update domain name because the associated environment either has a running pipeline attached to it or currently in the waiting for the approval step.
 
-* Properties set in customer `pom.xml` files prefixed with sonar will now be dynamically removed in order to avoid build and quality scanning failures.
+* Properties set in customer `pom.xml` files prefixed with sonar are now dynamically removed to avoid build and quality scanning failures.
 
 * Cloud Manager UI will inform the user who may not temporarily not be able to select an SSL certificate if it is in use by a Domain name that's currently being deployed.
 
@@ -121,7 +121,7 @@ The Release Date for Content Transfer Tool v1.2.4 is February 10, 2021.
 
 ### Bug Fixes {#bug-fixes-ctt}
 
-* When mapping multiple users, some users’ IMS IDs were being mapped incorrectly. This has been fixed.
+* When mapping multiple users, some users' IMS IDs were being mapped incorrectly. This has been fixed.
 
 ### Release Date {#release-date-ctt-feb}
 

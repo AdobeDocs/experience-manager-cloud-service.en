@@ -137,7 +137,7 @@ The custom applications are headless [Project App Builder](https://developer.ado
 
 ### An example of a custom profile {#custom-profile-example}
 
-To illustrate custom profile's usage, let's consider a use case to apply some custom text to campaign images. You can create a processing profile that leverages the Photoshop API to edit the images.
+To illustrate custom profile's usage, let's consider a use case to apply some custom text to campaign images. You can create a processing profile that uses the Photoshop API to edit the images.
 
 Asset Compute Service integration allows Experience Manager to pass these parameters to the custom application using the [!UICONTROL Service Parameters] field. The custom application then calls Photoshop API and passes these values to the API. For example, you can pass font name, text color, text weight and text size to add the custom text to campaign images.
 
@@ -259,6 +259,21 @@ Follow the steps outlined in [apply a workflow model to a folder](#apply-workflo
 * Consider your needs for all types of renditions when designing workflows. If you do not foresee the need of a rendition in the future, remove its creation step from the workflow. Renditions cannot be deleted in bulk afterwards. Undesired renditions may take up a lot of storage space after prolonged use of [!DNL Experience Manager]. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can either customize [!DNL Experience Manager] to delete specific renditions or delete the assets and upload those again.
 * Currently, the support is limited to generating renditions. Generating new asset is not supported.
 * Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading very large assets, sometimes metadata extraction operation fails.
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

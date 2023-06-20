@@ -8,6 +8,11 @@ exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
 ---
 # XMP metadata {#xmp-metadata}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 XMP (Extensible Metadata Platform) is the metadata standard used by Experience Manager Assets for all metadata management. XMP provides a standard format for the creation, processing, and interchange of metadata for a wide variety of applications.
 
 Aside from offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich [content model](#xmp-core-concepts) and is [supported by Adobe](#advantages-of-xmp) and other companies, so that users of XMP in combination with [!DNL Assets] have a powerful platform to build upon.
@@ -22,7 +27,7 @@ XMP standardizes how metadata is defined, created, and processed by providing a 
 
 All legacy metadata from EXIF, ID3, or Microsoft Office is automatically translated to XMP, which can be extended to support customer-specific metadata schema, such as product catalogs.
 
-Metadata in XMP consists of a set of properties. These properties are always associated with a specific entity referred to as a resource; that is, the properties are “about” the resource. In the case of XMP, the resource is always the asset.
+Metadata in XMP consists of a set of properties. These properties are always associated with a specific entity referred to as a resource; that is, the properties are "about" the resource. In the case of XMP, the resource is always the asset.
 
 XMP defines a [metadata](https://en.wikipedia.org/wiki/Metadata) model that can be used with any defined set of metadata items. XMP also defines particular [schemas](https://en.wikipedia.org/wiki/XML_schema) for basic properties useful for recording the history of a resource as it passes through multiple processing steps, from being photographed, [scanned](https://en.wikipedia.org/wiki/Image_scanner), or authored as text, through photo editing steps (such as [cropping](https://en.wikipedia.org/wiki/Cropping_%28image%29) or color adjustment), to assembly into a final image. XMP allows each software program or device along the way to add its own information to a digital resource, which can then be retained in the final digital file.
 
@@ -134,3 +139,18 @@ For the XMP write-back feature to propagate metadata to the rendition thumbnails
 
 The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
 -->
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)

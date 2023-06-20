@@ -3,9 +3,9 @@ title: Release Notes for 2022.3.0 release of [!DNL Adobe Experience Manager] as 
 description: Release Notes for 2022.3.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
 ---
-# Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# 2022.3.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the general Release Notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
+The following section outlines the feature release Notes for the 2022.3.0 version of [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -85,13 +85,13 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### What is New {#what-is-new-foundation}
 
-* For more efficient and effective troubleshooting of custom features in Cloud environments, we’ve released a new developer tool – [the Repository Browser](/help/implementing/developing/tools/repository-browser.md). It’s a lightweight, read-only, HTML browser that you can launch from the Developer Console. Get visibility into the content repository on the publisher, author, and preview tiers—and in all environments, including production, stage, and dev. Browse the content structure, view properties, and preview and download binaries.
+* For more efficient and effective troubleshooting of custom features in Cloud environments, we've released a new developer tool – [the Repository Browser](/help/implementing/developing/tools/repository-browser.md). It's a lightweight, read-only, HTML browser that you can launch from the Developer Console. Get visibility into the content repository on the publisher, author, and preview tiers—and in all environments, including production, stage, and dev. Browse the content structure, view properties, and preview and download binaries.
 
   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
 * The credentials used to authenticate server-to-server API calls (for example, for GraphQL API requests) can now be refreshed before expiration in a self-serve way from the Developer Console. See the [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) for more info.
 
-* Version purge and audit log purge maintenance tasks, which had not previously been enabled, will be enabled for new environments. See the associated values in the [Maintenance Task](/help/operations/maintenance.md) article.
+* Version purge and audit log purge maintenance tasks, which had not previously been enabled, are now enabled for new environments. See the associated values in the [Maintenance Task](/help/operations/maintenance.md) article.
 
 * AEM as a Cloud Service SDK Dispatcher Tools now support Mac computers with the  M1 chip
 
@@ -107,7 +107,7 @@ The Release Date for Content Transfer Tool v1.9.0 is February 28, 2022.
 
 ### What's New {#what-is-new-ctt}
 
-* Check Size Guardrails - The Content Transfer Tool Check Size feature helps reduce failed content transfers.  With the Check Size feature, users can 1) determine whether they have sufficient disk space in the `crx-quickstart` subdirectory before extraction, and 2) estimate the migration set size and verify if it’s supported. If one or both these checks are violated, users will see warnings in the CTT UI. With this guardrail, you can avoid content transfer failures and proactively discuss migration options with Adobe Customer Care. Refer to [Determining migration set size and disk space](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) for more details.
+* Check Size Guardrails - The Content Transfer Tool Check Size feature helps reduce failed content transfers.  With the Check Size feature, users can 1) determine whether they have sufficient disk space in the `crx-quickstart` subdirectory before extraction, and 2) estimate the migration set size and verify if it's supported. If one or both these checks are violated, users will see warnings in the CTT UI. With this guardrail, you can avoid content transfer failures and proactively discuss migration options with Adobe Customer Care. Refer to [Determining migration set size and disk space](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) for more details.
 
 ## Best Practices Analyzer {#bpa-release}
 

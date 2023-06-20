@@ -20,8 +20,13 @@ MSM registers several servlets that can be requested with selectors on the resou
 
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Use this on a blueprint page to retrieve the list of all Live Copies linked to it, with additional Live Copy status information.
+   * for example:
+     `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Use this on Live Copy pages to retrieve advanced information on their connection with their blueprint pages. If the page is not a Live Copy, nothing is returned.
+   * for example:
+     `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Those servlets generate DEBUG Log messages through the `com.day.cq.wcm.msm` logger that can also be helpful.
 
@@ -44,7 +49,7 @@ The prior servlets returned computed information based on the MSM-specific nodes
 
 The information present in these properties should be reflected in the UI, however when troubleshooting it may be helpful to observe MSM behavior directly in the repository as MSM actions occur.
 
-Knowing those properties can be also useful in order to query your repository and find out sets of pages that are in particular states. For example:
+Knowing those properties can be also useful so you can query your repository and find out sets of pages that are in particular states. For example:
 
 * `select * from cq:LiveSync` returns all Live Copy root pages.
 
@@ -71,9 +76,9 @@ As an alternative you can either:
 
 If a blueprint page is rolled out, it will either update its Live Copy page or create a new Live Copy page if it didn't exist yet (for example, when it is rolled out for the first time or the Live Copy page was manually deleted).
 
-In this latter case however, if a page without a `cq:LiveRelationship` property exists with the same name, this page will be renamed accordingly, before the Live Copy page is created.
+In this latter case however, if a page without a `cq:LiveRelationship` property exists with the same name, this page is renamed accordingly, before the Live Copy page is created.
 
-By default, the rollout expects either a linked Live Copy page, to which the updates of the blueprints will be rolled out, or no page at, when a Live Copy page is created.
+By default, the rollout expects either a linked Live Copy page, to which the updates of the blueprints are rolled out, or no page at, when a Live Copy page is created.
 
 If a "standalone" page is found, MSM chooses to rename this page, and create a separate, linked Live Copy page.
 

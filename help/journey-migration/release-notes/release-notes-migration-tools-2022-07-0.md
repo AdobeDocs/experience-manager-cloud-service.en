@@ -36,7 +36,7 @@ The Release Date for Content Transfer Tool v2.0.12 is July 19, 2022.
 * To help debug SSL/TLS connection problems during extractions, users are now able to enable SSL Logging.
 * To help debug source connectivity issues, sub domain names are now printed in the logs when connection to Azure fails.
 * To help debug issues during pre-copy, AzCopy logs are now appended to the extraction logs when pre-copy fails.
-* To avoid stale Check Size results, users will be able to re-run Check Size only after a previous Check Size is completed.
+* To avoid stale Check Size results, users are able to re-run Check Size only after a previous Check Size is completed.
 
 ### Bug Fixes {#bug-fixes-ctt}
 

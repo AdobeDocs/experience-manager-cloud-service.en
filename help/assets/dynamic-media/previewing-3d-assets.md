@@ -8,6 +8,11 @@ exl-id: e873bd25-f841-4063-824f-7e48f40bb678
 ---
 # Preview 3D assets in Adobe Experience Manager{#previewing-3d-assets}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 Experience Manager supports the upload, delivery, and interactive preview of 3D assets as part of the authoring process. 
 
 The interactive 3D viewer is available from the asset details page in Experience Manager. The viewer includes, among other things, a collection of interactive camera controls that let you orbit, zoom, and pan the 3D asset.

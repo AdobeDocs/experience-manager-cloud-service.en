@@ -3,9 +3,9 @@ title: Release Notes for 2022.7.0 release of [!DNL Adobe Experience Manager] as 
 description: Release Notes for 2022.7.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
 ---
-# Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# 202278.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the general Release Notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
+The following section outlines the feature release Notes for the 2022.7.0 version of [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -33,9 +33,9 @@ Have a look at the July 2022 Release Overview video for a summary of the feature
 
 * The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now supports [keyboard shortcuts](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md). 
 
-* AEM as Cloud Service’s [web-optimized image delivery](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) allows to significantly improve page speed by delivering formats such as WebP. This new service also offers more flexible image resizing and transformation options. All versions of the [Core Image Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) allow to leverage this service and to deliver images as WebP by the click of an option in the policy of the image component.
+* AEM as Cloud Service's [web-optimized image delivery](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) allows to significantly improve page speed by delivering formats such as WebP. This new service also offers more flexible image resizing and transformation options. All versions of the [Core Image Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) allow to use this service and to deliver images as WebP by the click of an option in the policy of the image component.
 
-* AEM personalization activities can now leverage experience fragments in lieu of our legacy offers. This feature:
+* AEM personalization activities can now use experience fragments in lieu of our legacy offers. This feature:
   * enables a migration path where AEM content would promote experience fragment offers rather than legacy library offers to provide appropriately styled content that align with the personalization at scale going forward.
   * prevents content authors from accidentally serving unstyled content on their site. 
   * allows targeting mode of any component to be converted to an experience fragment (both JSON and HTML types) which uses editable templates.
@@ -74,7 +74,7 @@ You can now configure Adobe Experience Manager Assets to [restrict the type of a
 
 * **[Invoke DDX - An AEM Workflow step](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX documents are templates for the documents and describe the desired characteristics of source documents that should appear in resultant documents. A single DDX can be used with a range of source documents. You can use the Invoke step an AEM Workflow to perform various operations, like assembling disassembling documents, creating and modifying Acrobat and XFA Forms, and other operations described in [DDX Reference](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) documentation.
 
-* **[Convert to PDF/A - An AEM Workflow step](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A is an archival format for long-term preservation of the document’s content, all fonts are embedded and the file is uncompressed. Now, you can use the Convert to PDF/A step an AEM Workflow to convert your documents or files in any format to PDF/A format.
+* **[Convert to PDF/A - An AEM Workflow step](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A is an archival format for long-term preservation of the document's content, all fonts are embedded and the file is uncompressed. Now, you can use the Convert to PDF/A step an AEM Workflow to convert your documents or files in any format to PDF/A format.
 
 
 ## CIF Add-on {#cloud-services-cif}
@@ -96,7 +96,7 @@ You can now configure Adobe Experience Manager Assets to [restrict the type of a
 ### What is New {#what-is-new-foundation}
 
 * The [Repository Browser](/help/implementing/developing/tools/repository-browser.md) now has a path input field, making it possible to jump directly to a specific folder in the repository hierarchy
-* Sling Content Distribution (SCD) now supports an explicit "invalidation" action in order to invalidate content without that content being published. Refer to the [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) page for further details.
+* Sling Content Distribution (SCD) now supports an explicit "invalidation" action to invalidate content without that content being published. Refer to the [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) page for further details.
 * mod_macro is now available in AEM as a Cloud Service. Refer to [this table](/help/implementing/dispatcher/disp-overview.md) for a list of supported Apache modules.
 
 ### AEM as a Cloud Service SDK Dispatcher Tools enhancements {#dispatcher-tools-enhancements}

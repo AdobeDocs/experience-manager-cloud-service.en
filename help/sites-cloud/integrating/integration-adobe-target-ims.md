@@ -81,7 +81,7 @@ Open the Adobe Developer Console to create a Project with Adobe Target that AEM 
    >
    >If you are subscribed to Adobe Target, but do not see it listed then you should check the [Prerequisites](#prerequisites).
 
-   ![](assets/integration-target-ims-12.png)
+   ![Select Adobe Target](assets/integration-target-ims-12.png)
 
 1. **Upload your public key**, and when complete, continue with **Next**:
 
@@ -201,7 +201,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
    The **Create Configuration** dialog will open.
 
-1. Enter a **Title** and, if you want, a **Name** (if left blank this will be generated from the title).
+1. Enter a **Title** and, if you want, a **Name** (if left blank it is generated from the title).
 
    You can also select the required template (if more than one is available).
 

@@ -1,6 +1,6 @@
 ---
 title: Content Fragments - Configuration Browser
-description: Learn how to enable Content Fragment and GraphQL functionality in the Configuration Browser to leverage AEM headless delivery features.
+description: Learn how to enable Content Fragment and GraphQL functionality in the Configuration Browser to use AEM headless delivery features.
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
@@ -55,8 +55,8 @@ To [use certain Content Fragment functionality](#creating-a-content-fragment-mod
 1. Use **Create** to open the dialog, where you:
 
    1. Specify a **Title**.
-   1. The **Name** will become the node name in the repository.
-      * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/implementing/developing/introduction/naming-conventions.md)
+   1. The **Name** becomes the node name in the repository.
+      * It isautomatically generated based on the title and adjusted according to [AEM naming conventions.](/help/implementing/developing/introduction/naming-conventions.md)
       * You can adjust it if necessary.
    1. To enable their use select 
       * **Content Fragment Models** 

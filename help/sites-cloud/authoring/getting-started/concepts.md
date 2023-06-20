@@ -46,6 +46,12 @@ Additionally, there are administrative tasks that help you manage your content:
 >
 >AEM is also administered from the author environment.
 
+## Previewing Content {#previewing-content}
+
+AEM also offers a Sites preview service that lets developers and content authors preview a website’s final experience before it reaches the publish environment and is available publicly.
+
+See [Previewing Content](/help/sites-cloud/authoring/fundamentals/previewing-content.md) for further details.
+
 ## Publish Environment {#publish-environment}
 
 When ready, your site's content is published to the **publish environment**. Here the website's pages are made available to the intended audience in accordance with the look-and-feel of the designed interface.

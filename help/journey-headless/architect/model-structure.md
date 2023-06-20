@@ -39,7 +39,7 @@ Then the Content Fragments Models can be created and the structure defined. This
 
 After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
 
-The option **Enable model** is activated by default. This means that your model will be available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
+The option **Enable model** is activated by default. This means that your model is available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
 
 ![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
@@ -90,7 +90,7 @@ Content fragment models need to be published when/before any dependent content f
 
 >[!NOTE]
 >
->If an author tries to publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
+>If an author tries to publish a content fragment for which the model has not yet been published, a selection list indicates this and the model is published with the fragment.
 
 As soon as a model is published it is *locked* into a READ-ONLY mode on author. This aims to prevent changes that would result in errors to existing GraphQL schemas and queries, especially on the publish environment. It is indicated in the console by **Locked**. 
 

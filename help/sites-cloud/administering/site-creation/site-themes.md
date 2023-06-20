@@ -17,7 +17,7 @@ Sites created with AEM site templates allow for the easy download, customization
 
 >[!NOTE]
 >
->AEM site themes should not be confused with [AEM site templates.](site-templates.md) AEM site themes only contain the styling information for an AEM site. AEM site templates define site structure and initial content as well as contain an AEM site theme in order to allow for [quick site creation.](create-site.md)
+>AEM site themes should not be confused with [AEM site templates.](site-templates.md) AEM site themes only contain the styling information for an AEM site. AEM site templates define site structure and initial content, and contain an AEM site theme to allow for [quick site creation.](create-site.md)
 
 ## Using Site Themes {#using-themes}
 

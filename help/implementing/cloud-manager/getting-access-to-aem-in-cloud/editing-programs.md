@@ -47,12 +47,13 @@ Follow these steps to edit a program.
    ![Edit go-live settings](assets/edit-program-go-live.png)
 
    * This date is for informational use only and triggers the Go Live widget on the program overview page to provide in-product links to AEM as a Cloud Service best practice documentation in a timely manner to align with your journey culminating in a successful and smooth Go Live experience.
+   * This tab is not available for sandbox programs.
 
 1. Click on **Update** to save your changes to the program.
 
 Any time a program is edited, including adding or removing a solution or add-on, those changes will take effect following the next deployment.
 
-If your production program had enhanced security enabled, an additional **Enhanced Security** tab will be available in the **Edit Program** window to confirm that the feature is active for the program.
+If your production program had enhanced security enabled, an additional **Enhanced Security** tab is available in the **Edit Program** window to confirm that the feature is active for the program.
 
 ![Enhanced Security active for a program](assets/edit-program-enhanced.png)
 

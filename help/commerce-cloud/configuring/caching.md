@@ -1,7 +1,7 @@
 ---
 title: Caching & Performance
 description: Learn about the different configurations available to enable GraphQL and content caching to optimize the performance of your commerce implementation.
-exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
+exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
 ---
 # Caching & Performance {#caching}
 
@@ -47,7 +47,7 @@ In addition to pure AEM managed content CIF a page can typically display commerc
 
 To make sure that CIF pages can be cached for a limited amount of time in the AEM dispatcher, we hence recommend the use of [Time Based Cache Invalidation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (also known as TTL-based caching) when caching CIF pages in the AEM Dispatcher. This feature can be configured in AEM with using the extra [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) package.
 
-With TTL-based caching, a developer typically defines one or multiple caching durations for selected AEM pages. This ensures that CIF pages are only cached in the AEM dispatcher up to the configured duration and that the content will be frequently updated.
+With TTL-based caching, a developer typically defines one or multiple caching durations for selected AEM pages. This ensures that CIF pages are only cached in the AEM dispatcher up to the configured duration and that the content is frequently updated.
 
 >[!NOTE]
 >

@@ -1,14 +1,14 @@
 ---
-title: How to Create an Adaptive Form?
-description: Learn how to create an Adaptive Form using [!DNL Experience Manager Forms]. Adaptive Forms are responsive HTML5 forms that streamline information gathering and processing. Dig deeper on how to create an Adaptive Form based on a Form Data Model and XML or JSON schema. 
+title: How to create an Adaptive Form
+description: Learn how to create an Adaptive Form using [!DNL Experience Manager Forms]. Adaptive Forms are responsive HTML5 forms that streamline information gathering and processing. Dig deeper on how to create an Adaptive Form based on a Form Data Model and XML or JSON schema.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
+exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
 ---
-
 # Create an Adaptive Form (Core Components) {#creating-an-adaptive-form-core-components}
 
-Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provides business user friendly wizard to quickly create Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. 
+Adaptive Forms let you create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provides business user friendly wizard to quickly create Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. 
 
 Before you start, learn about the type of Forms components available to you: 
 
@@ -23,7 +23,7 @@ Before you start, learn about the type of Forms components available to you:
 
 You require the following to create an Adaptive Form:
 
-*   **Enable Adaptive Forms Core Components for your environment**: When you create a new program, the Adaptive Forms Core Components already enabled for your environment. If you have an Forms as a Cloud Service environment based on Archetype 39 or earlier, [Enable Adaptive Forms Core Components for your environment](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** template and canvas theme is added to your environment.  
+*   **Enable Adaptive Forms Core Components for your environment**: When you create a new program, the Adaptive Forms Core Components already enabled for your environment. If you have an Forms as a Cloud Service environment based on Archetype 39 or earlier, [Enable Adaptive Forms Core Components for your environment](enable-adaptive-forms-core-components.md). On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** template and canvas theme is added to your environment. If your AEM SDK version older than 2023.02.0, [ensure that you have `prerelease` flag enabled on your environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) as Adaptive Forms Core Components were part of pre-prelease before the 2023.02.0 release.   
 
 *   **An Adaptive Form template**: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an Adaptive Form. For example, sending the collected data to a data source. The cloud service provides an OOTB template, named blank:
 

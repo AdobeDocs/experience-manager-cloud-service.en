@@ -56,7 +56,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 AEM Forms has helped many organizations deliver great onboarding and enrollment experiences over the years. These experiences have helped organizations convert leads to sales, process captured customer data, deliver responsive experiences based on the audience profile, and much more. Now, AEM Forms is available as a cloud service.
 
-You can use [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) to create digital forms, connect forms to existing data sources, integrate forms with Adobe Sign to add e-signatures to forms, generate Document of Record (DoR) to archive submitted forms as PDF files. The service can also convert your existing PDF forms to digital forms. In addition to standard AEM Forms features, the service offers several cloud-native capabilities like auto-scaling, zero downtime for upgrades, and cloud-native development environment. Read [this blog post](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) to learn about capabilities and features of AEM Forms as a Cloud Service.
+You can use [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) to create digital forms, connect forms to existing data sources, integrate forms with Adobe Sign to add e-signatures to forms, generate Document of Record (DoR) to archive submitted forms as PDF files. The service can also convert your existing PDF forms to digital forms. In addition to standard AEM Forms features, the service offers several cloud-native capabilities like auto-scaling, zero downtime for upgrades, and cloud-native development environment.
 
 You can reach out to your Adobe representative for a demo or to sign up for the service.
 
@@ -84,7 +84,7 @@ The next release is planned for April 08, 2021.
 
 ### What's New {#what-is-new-march}
 
-* Customers with environments with pre-existing Custom Domain Name configurations for [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) and [Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) will see a message about their previously existing configurations and will be able to self-serve via the UI. 
+* Customers with environments with pre-existing Custom Domain Name configurations for [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) and [Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) see a message about their previously existing configurations and can self-serve by way of the user interface. 
 
 * Users with requisite permissions can now edit a Program, allowing them to do the following in a self-service manner: 
 
@@ -122,7 +122,7 @@ The next release is planned for April 08, 2021.
 
 * On occasion, user may see a green "active" status next to an IP Allowlist even when that configuration was not deployed.
 
-* All existing production pipelines will be automatically enabled with the Experience Audit step.
+* All existing production pipelines are automatically enabled with the Experience Audit step.
 
 ## Content Transfer Tool {#content-transfer-tool}
 

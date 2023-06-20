@@ -8,6 +8,11 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 ---
 # Share and distribute assets managed in [!DNL Experience Manager] {#share-assets-from-aem}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 [!DNL Adobe Experience Manager Assets] lets you share assets, folders, and collections with members of your organization and external entities, including partners and vendors. Use the following methods to share assets from [!DNL Experience Manager Assets] as a [!DNL Cloud Service]:
 
 * [Share as a link](#sharelink).
@@ -248,3 +253,18 @@ See [how to configure [!DNL Assets] to use it with [!DNL Adobe Asset Link]](http
 
 <!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)

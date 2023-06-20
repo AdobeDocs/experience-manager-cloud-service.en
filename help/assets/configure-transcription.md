@@ -17,9 +17,9 @@ exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
 Transcription is the process of translating the audio from an audio or video file into text (speech to text) using the speech recognition technology. 
 [!DNL Adobe Experience Manager Assets] is configured with [!DNL Azure Media Services] which automatically generates text transcript of the spoken language in a supported audio or video file in the WebVTT (.vtt) format. When an audio or video asset is processed in [!DNL Experience Manager Assets], the transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The [!DNL Experience Manager Assets] transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content as well as increase the ROI of these assets by supporting accessibility and localization.
 
-Transcripts are text versions of spoken content; an example is a movie that you are watching on any OTT platform which often includes caption or subtitles to help with accessibility or consuming the content in other languages. Or any audio or video file used for marketing, learning, or entertainment purpose. These experiences start with a transcription that is then formatted or translated as appropriate. Transcribing audio or video is a time intensive and error-prone process when performed manually. It is also a challenge to scale the manual process, given the ever-increasing need for audio-video content. [!DNL Experience Manager Assets] uses the Azure’s AI-based transcription which allows high-scale processing of the audio and video assets and generates the text transcripts (.vtt files) along with the timestamp details. Along with Assets, the transcription feature is also supported with Dynamic Media.
+Transcripts are text versions of spoken content; an example is a movie that you are watching on any OTT platform which often includes caption or subtitles to help with accessibility or consuming the content in other languages. Or any audio or video file used for marketing, learning, or entertainment purpose. These experiences start with a transcription that is then formatted or translated as appropriate. Transcribing audio or video is a time intensive and error-prone process when performed manually. It is also a challenge to scale the manual process, given the ever-increasing need for audio-video content. [!DNL Experience Manager Assets] uses the Azure's AI-based transcription which allows high-scale processing of the audio and video assets and generates the text transcripts (.vtt files) along with the timestamp details. Along with Assets, the transcription feature is also supported with Dynamic Media.
 
-The transcription feature is available without any cost in [!DNL Experience Manager Assets]. However, the administrators require the user’s Azure credentials to configure the transcription service in [!DNL Experience Manager Assets]. You can also [get the trial credentials](https://azure.microsoft.com/en-us/pricing/details/media-services/) directly from Microsoft® to experience the audio or video transcription feature in Assets.
+The transcription feature is available without any cost in [!DNL Experience Manager Assets]. However, the administrators require the user's Azure credentials to configure the transcription service in [!DNL Experience Manager Assets]. You can also [get the trial credentials](https://azure.microsoft.com/en-us/pricing/details/media-services/) directly from Microsoft&reg; to experience the audio or video transcription feature in Assets.
 
 ## Transcription prerequisites {#prerequisites}
 
@@ -95,7 +95,7 @@ Once the processing profile is configured for transcription of audio and video f
 >
 >A processing profile applied to a folder works for the entire tree, however, can be over-ridden with another profile applied to a subfolder. 
 >
->When assets are uploaded to a folder, Experience Manager communicates with the containing folder’s properties to identify the processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.
+>When assets are uploaded to a folder, Experience Manager communicates with the containing folder's properties to identify the processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.
 
 
 ## Generate transcription of your audio or video assets {#generate-transcription}
@@ -139,7 +139,7 @@ The following audio and video file formats are supported for transcription:
 |Windows Media Video (WMV)/ASF| (.wmv, .asf)|
 |AVI (Uncompressed 8bit/10bit)| (.avi)|
 |MP4| (.mp4, .m4a, .m4v)|
-|Microsoft® Digital Video Recording (DVR-MS)| (.dvr-ms)|
+|Microsoft&reg; Digital Video Recording (DVR-MS)| (.dvr-ms)|
 |Matroska/WebM| (.mkv)|
 |WAVE/WAV| (.wav)|
 |QuickTime| (.mov)|
@@ -160,3 +160,18 @@ The following audio and video file formats are supported for transcription:
 ## Troubleshooting tips {#troubleshooting}
 
 Log in to your [!DNL Azure Media Services] account with the same credentials (that you have used for configuration) to verify the request status. Contact [!DNL Azure] support if your request is not processed successfully.
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)

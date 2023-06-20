@@ -7,6 +7,8 @@ exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 
 In this part of the [AEM Headless Content Author Journey](overview.md), you can learn the (basic) concepts and terminology necessary to understand authoring content when using Adobe Experience Manager (AEM) as a Cloud Service as a Headless CMS. This involves structuring, and creating, your content for headless content delivery.
 
+{{headless-trials-promotion}}
+
 ## Objective {#objective}
 
 * **Audience**: Beginner
@@ -47,7 +49,7 @@ This all means that it can be used as a:
   (And as a double-whammy, these fragments can also be used when constructing AEM web pages - if you want.)
 
 * "Traditional" CMS
-  * Content is authored for web pages, using a range of components that define how the content will be rendered on your website. Even here AEM is extremely flexible as your project team can develop customized components.
+  * Content is authored for web pages, using a range of components that define how the content is rendered on your website. Even here AEM is extremely flexible as your project team can develop customized components.
 
 ## Content Modeling {#content-modeling}
 

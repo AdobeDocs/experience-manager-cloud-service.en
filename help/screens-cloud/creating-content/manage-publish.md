@@ -10,7 +10,7 @@ exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
 You can publish content from AEM Screens. The Manage Publication feature allows you to deliver content updates from author to publish to player. You can publish or un-publish content for your entire AEM Screens project or only for one of your channels, location, player, or an application.
 
 >[!IMPORTANT]
->Once you create you channel or channels in your project, it is mandatory to publish the channels in order to display the channel/channel(s) in inventory list view in AEM Screens Services Provider.
+>After you create you channel or channels in your project, it is mandatory to publish the channels to display the channel/channels in inventory list view in AEM Screens Services Provider.
 
 ## Objective {#objective}
 
@@ -34,7 +34,7 @@ Follow the steps below to publish the channel:
     ![](/help/screens-cloud/assets/create-content/managepub-2.png)
 
     >[!NOTE]
-    >Click **+ Include Children** from the action bar and un-check all the options to publish all the modules in your project and click Add to publish. By default, all the boxes will be checked and you will have to manually un-check the boxes to publish all the modules in your project.
+    >Click **Include Children** from the action bar and un-check all the options to publish all the modules in your project and click Add to publish. By default, all the boxes are checked and you have to manually un-check the boxes to publish all the modules in your project.
 
 1. After selecting the channel from the **Manage Publication** wizard, click on **Publish** to publish the channel.
 

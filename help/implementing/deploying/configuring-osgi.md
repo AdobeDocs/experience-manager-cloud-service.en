@@ -24,7 +24,7 @@ Configuration changes are defined in the AEM Project's code packages (`ui.apps`)
 
 The format of OSGi configuration files is JSON-based using the `.cfg.json` format defined by the Apache Sling project.
 
-OSGi configurations target OSGi components via their Persistent Identity (PID), which defaults to the OSGi component's Java™ class name. For example, to provide OSGi configuration for an OSGi service implemented by:
+OSGi configurations target OSGi components via their Persistent Identity (PID), which defaults to the OSGi component's Java&trade; class name. For example, to provide OSGi configuration for an OSGi service implemented by:
 
 `com.example.workflow.impl.ApprovalWorkflow.java`
 
@@ -54,7 +54,7 @@ For example, if AEM is using the runmodes author and dev, configuration nodes in
 
 If multiple configurations for the same PID are applicable, the configuration with the highest number of matching run modes is applied.
 
-This rule's granularity is at a PID level. This means you cannot define some properties for the same PID in `/apps/example/config.author/` and more specific ones in `/apps/example/config.author.dev/` for the same PID. The configuration with the highest number of matching runmodes will be effective for the entire PID.
+This rule's granularity is at a PID level. This means you cannot define some properties for the same PID in `/apps/example/config.author/` and more specific ones in `/apps/example/config.author.dev/` for the same PID. The configuration with the highest number of matching runmodes is effective for the entire PID.
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ There are three varieties of OSGi configuration values that can be used with Ado
 
 The common case for OSGi uses inline OSGi configuration values. Environment-specific configurations are used only for specific use cases where a value differs between dev environments.
 
-![](assets/choose-configuration-value-type_res1.png)
+![Decisional tree on how to use the appropiate configuration value type](assets/choose-configuration-value-type_res1.png)
 
 Environment-specific configurations extend the traditional, statically defined OSGi configurations that contain inline values, providing the ability to manage the OSGi configuration values externally via the Cloud Manager API. It is important to understand when the common and traditional approach of defining inline values and storing them in Git, should be used, versus abstracting the values into environment-specific configurations.
 
@@ -159,7 +159,7 @@ Adobe Experience Manager as a Cloud Service requires the use of environment-spec
 
 Use secret environment-specific configurations to store the value for secrets on all Adobe Experience Manager as a Cloud Service environments, including Stage and Production.
 
-## Creating OSGi Configurations {#creating-sogi-configurations}
+## Creating OSGi Configurations {#creating-osgi-configurations}
 
 There are two ways create OSGi configurations, as described below. The former approach is typically used for configuring custom OSGi components which have well-known OSGi properties and values by the developer, and the latter for AEM-provided OSGi components.
 
@@ -181,10 +181,10 @@ The AEM SDK Quickstart Jar's AEM Web Console can be used configure OSGi componen
 
 >[!NOTE] 
 >
->The AEM Web Console's Configuration UI does write `.cfg.json` files into the repository. Therefore, be aware of this in order to avoid potential unexpected behavior during local development, when the AEM Project-defined OSGi configurations may differ from the generated configurations.
+>The AEM Web Console's Configuration UI does write `.cfg.json` files into the repository. Therefore, be aware of this workflow to avoid potential unexpected behavior during local development, when the AEM Project-defined OSGi configurations may differ from the generated configurations.
 
-1. Log in to the AEM SDK Quickstart Jar's AEM Web console as the admin user
-1. Navigate to OSGi > Configuration
+1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user
+1. Navigate to **OSGi** &gt; **Configuration**
 1. To configure, locate the OSGi component and tap its title to edit
    ![OSGi Configuration](./assets/configuring-osgi/configuration.png)
 1. Edit the OSGi configuration property values via the Web UI as needed
@@ -254,7 +254,7 @@ Values for the variables must not exceed 2048 characters.
 >
 >There are rules related to the use of certain prefixes for variable names:
 >
->1. Variable names prefixed with `INTERNAL_`, `ADOBE_`, or `CONST_` are reserved by Adobe. Any customer-set variables that start with these prefixes will be ignored.
+>1. Variable names prefixed with `INTERNAL_`, `ADOBE_`, or `CONST_` are reserved by Adobe. Any customer-set variables that start with these prefixes are ignored.
 >
 >1. Customers must not reference variables prefixed with `INTERNAL_` or `ADOBE_` either.
 >
@@ -277,7 +277,7 @@ With a default value provided, the placeholder is replaced either with the per-e
 
 The following applies to both environment specific and secret configuration values.
 
-Variables can be defined in the local environment so they are picked up by the local AEM at runtime. For example, on Linux®:
+Variables can be defined in the local environment so they are picked up by the local AEM at runtime. For example, on Linux&reg;:
 
 ```bash
 export ENV_VAR_NAME=my_value
@@ -510,7 +510,7 @@ See [this page](https://developer.adobe.com/experience-cloud/cloud-manager/docs/
 
 ### Setting Values via API {#setting-values-via-api}
 
-Calling the API deploys the new variables and values to a Cloud environment, similar to a typical customer code deployment pipeline. The author and publish services will be restarted and reference the new values, typically taking a few minutes.
+Calling the API deploys the new variables and values to a Cloud environment, similar to a typical customer code deployment pipeline. The author and publish services are restarted and reference the new values, typically taking a few minutes.
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -588,7 +588,7 @@ Up to 200 variables per environment can be declared.
 
 Because the secret and environment-specific configuration values live outside of Git, and therefore, are not part of the formal Adobe Experience Manager as a Cloud Service deployment mechanisms, the customer should manage, govern, and integrate into the Adobe Experience Manager as a Cloud Service deployment process.
 
-As mentioned above, calling the API deploys the new variables and values to Cloud environments, similar to a typical customer code deployment pipeline. The author and publish services will be restarted and reference the new values, typically taking a few minutes. Note that the quality gates and tests that are executed by Cloud Manager during a regular code deployment are not performed during this process.
+As mentioned above, calling the API deploys the new variables and values to Cloud environments, similar to a typical customer code deployment pipeline. The author and publish services are restarted and reference the new values, typically taking a few minutes. Note that the quality gates and tests that are executed by Cloud Manager during a regular code deployment are not performed during this process.
 
 Typically, customers would call the API to set environment variables before deploying code that relies on them in Cloud Manager. In some situations, one might want to modify an existing variable after code has already been deployed. 
 

@@ -79,7 +79,7 @@ Using a template to create a new site is very easy.
 
    ![Select a template](assets/select-site-template.png)
 
-1. Provide a title for your site. A site name can be provided or will be generated from the title if omitted.
+1. Provide a title for your site. A site name can be provided or generated from the title, if omitted.
 
    * The site title appears in the browsers title bar.
    * The site name becomes part of the URL.

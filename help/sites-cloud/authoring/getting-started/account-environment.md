@@ -42,11 +42,11 @@ Each user can set certain properties for himself or herself.
 
   * **Multiple Windows** (Default)
 
-    * Pages will be opened in a new window.
+    * Pages are opened in a new window.
 
   * **Single Window**
 
-    * Pages will be opened in the current window.
+    * Pages are opened in the current window.
 
 * **Show desktop actions for Assets**
 

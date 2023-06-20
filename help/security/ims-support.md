@@ -25,14 +25,14 @@ AEM as a Cloud Service offers IMS authentication support only for Author, Admin 
 
 * The Admin Console will represent customers as IMS Organizations, Author and Publish Instances in an environment as Product Context Instances. This will allow System and Product administrators to manage access to instances.
 * Product Profiles in the Admin Console will determine which Instances a user can access.
-* Customers will be able to use their own SAML 2 compliant Identity Providers (IDP for short) for Single Sign On.
-* Only Enterprise or Federated IDs for customer Single Sign On will be supported, no personal Adobe IDs.
+* Customers can use their own SAML 2 compliant Identity Providers (IDP for short) for Single Sign On.
+* Only Enterprise or Federated IDs for customer Single Sign On are supported, no personal Adobe IDs.
 
 ## Architecture {#architecture}
 
 IMS Authentication works using OAuth protocol between AEM and the Adobe IMS endpoint. Once a user has been added to IMS and has an Adobe Identity, they can log in to AEM author service using IMS credentials.
 
-The user login flow is shown below, the user will be redirected to IMS and optionally to the customer IDP for SSO and then redirected back to AEM.
+The user log on flow is shown below, the user is redirected to IMS and optionally to the customer IDP for SSO and then redirected back to AEM.
 
 ![IMS Architecture](/help/security/assets/ims1.png)
 
@@ -44,7 +44,7 @@ The customer onboarding to Adobe Admin Console is a prerequisite to using Adobe 
 
 As the first step, customers need to have an Organization provisioned in Adobe IMS. Adobe Enterprise customers are represented as IMS Organizations in the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) This is the portal used by Adobe customers to manage their product entitlements for their users and groups.
 
-AEM customers should already have an Organization provisioned, and as part of the IMS provisioning, the customer instances will be made available in Admin Console for managing user entitlements and access.
+AEM customers should already have an Organization provisioned, and as part of the IMS provisioning, the customer instances are made available in Admin Console for managing user entitlements and access.
 
 Once a customer exists as an IMS Organization, they will have to configure their system as summarized below:
 
@@ -53,7 +53,7 @@ Once a customer exists as an IMS Organization, they will have to configure their
 1. The designated System Administrator receives an invite to log in to Cloud Manager. After logging into Cloud manager, the System Administrators can choose to provision AEM programs and environments or navigate to Admin Console for Administrative tasks.
 1. The System Administrator claims a domain to confirm the ownership of the respective domain (for example acme.com)
 1. The System Administrator sets up User Directories
-1. The System Administrator does IDP configuration in Admin Console in order to set up Single Sign On.
+1. The System Administrator does IDP configuration in Admin Console to set up Single Sign On.
 1. The AEM Administrator manages the local groups and permissions and privileges as usual.
 
 The Adobe Identity Management basics including IDP configuration are covered [here](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
@@ -78,11 +78,11 @@ For easy handling of user creation, a `.csv` file can be uploaded for adding use
 
 **User Sync Tool**
 
-User Sync Tool (UST in short) enables our enterprise customers to create and manage Adobe users utilizing Active Directory. This also works for other tested OpenLDAP directory services. The target users are IT Identity Administrators (Enterprise Directory or System Admins) who will be able to install and configure the tool. The open source tool is customizable so that customers you modify it to suit your own particular requirements.
+User Sync Tool (UST in short) enables our enterprise customers to create and manage Adobe users utilizing Active Directory. This also works for other tested OpenLDAP directory services. The target users are IT Identity Administrators (Enterprise Directory or System Admins) who are able to install and configure the tool. The open source tool is customizable so that customers you modify it to suit your own particular requirements.
 
-When User Sync runs, it fetches a list of users from the organization’s Active Directory and compares it with the list of users within the Admin Console.  It then calls the Adobe User Management API so that the Admin Console is synchronized with the organization’s directory. The change flow is entirely one way. Any edits made in the Admin Console do not get pushed out to the directory.
+When User Sync runs, it fetches a list of users from the organization's Active Directory and compares it with the list of users within the Admin Console.  It then calls the Adobe User Management API so that the Admin Console is synchronized with the organization's directory. The change flow is entirely one way. Any edits made in the Admin Console do not get pushed out to the directory.
 
-The tool allows the system admin to map user groups in the customer’s directory with product configuration and user groups in the Admin Console.
+The tool allows the system admin to map user groups in the customer's directory with product configuration and user groups in the Admin Console.
 
 To set up User Sync, the organization needs to create a set of credentials in the same way they would use the [User Management API](https://www.adobe.io/apis/experienceplatform/umapi-new.html).
 
@@ -112,13 +112,13 @@ The User Management API that is used by the User Sync Tool is covered [here](htt
 
 >[!NOTE]
 >
->The AEM IMS configuration required will be automatically configured when the AEM environments and instances are provisioned. However, the administrator may modify it as per their requirements using the method described [here](/help/implementing/deploying/overview.md).
+>The AEM IMS configuration required is automatically configured when the AEM environments and instances are provisioned. However, the administrator may modify it as per their requirements using the method described [here](/help/implementing/deploying/overview.md).
 
-The AEM IMS configuration required will be auto-configured when the AEM environments and instances are provisioned.  Customer administrators may modify part of the configuration as per their requirements
+The AEM IMS configuration required is auto-configured when the AEM environments and instances are provisioned.  Customer administrators may modify part of the configuration as per their requirements
 
 The overall approach is to configure Adobe IMS as an OAuth provider. The **Apache Jackrabbit Oak Default Sync Handler** can be modified just like for LDAP synchronization.
 
-Below are the key OSGI configurations that need to be modified in order to change properties like User Auto Membership or Groups Mappings.
+Below are the key OSGI configurations that need to be modified to change properties like User Auto Membership or Groups Mappings.
 
 <!-- Arun to provide list of osgi configs -->
 
@@ -134,13 +134,17 @@ You will see a list of existing instances:
 
 ![Instances login2](/help/security/assets/ims7.png)
 
-Under each Product Context instance, there will be instances spanning Author or Publish services across Production, Stage, or Development environments. Each instance will be associated to Product Profiles or Cloud Manager roles. These product profiles are used for assigning access to Users and Groups with the required privileges.
+Under each Product Context instance, there are instances spanning Author or Publish services across Production, Stage, or Development environments. Each instance is associated to Product Profiles or Cloud Manager roles. These product profiles are used for assigning access to Users and Groups with the required privileges.
 
-The **Administrator_xxx** profile will be used to grant Administrator privileges in the associated AEM instance while the **User_xxx** profile is used to add regular users.
+The **AEM Administrators_xxx** profile is used to grant Administrator privileges in the associated AEM instance while the **AEM Users_xxx** profile is used to add regular users.
 
-Any users and groups added under this product profile will be able to login to that particular instance as shown in the example below:
+Any users and groups added under this product profile are able to log on to that particular instance as shown in the example below:
 
 ![Product Profile](/help/security/assets/ims8.png)
+
+>[!WARNING]
+>
+>The **AEM Administrators** product profile name must not be changed. Changing the name of the **AEM Administrators** product profile will remove administrator rights from all users assigned to that profile.
 
 ### Logging into Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
@@ -169,11 +173,11 @@ They will then be redirected to the IMS login screen and will need to enter thei
 
 ![IMS Login3](/help/security/assets/ims12.png)
 
-If a federated IDP is configured during initial Admin Console setup, then the user will be redirected to the customer IDP for SSO:
+If a federated IDP is configured during initial Admin Console setup, then the user is redirected to the customer IDP for SSO:
 
 ![IMS Login4](/help/security/assets/ims13.png)
 
-After authentication is complete, the user will be redirected back to AEM and logged in:
+After authentication is complete, the user is redirected back to AEM and logged in:
 
 ![IMS Login5](/help/security/assets/ims14.png)
 
@@ -231,7 +235,7 @@ Refer to Role Definitions to learn more about roles for users which govern the a
 >[!IMPORTANT]
 >The steps mentioned in the preceding section must have already been completed before you are granted access to an instance in AEM as a Cloud Service.
 
-In order to have access to an AEM instance within the **Admin Console**, you should see the Cloud Manager Program and the environments within the program in the product list on the **Admin Console**.
+To have access to an AEM instance within the **Admin Console**, you should see the Cloud Manager Program and the environments within the program in the product list on the **Admin Console**.
 
 For example, in the screenshot below, you will see two available environments namely *dev author* and a *publish*.
 

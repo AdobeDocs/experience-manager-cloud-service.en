@@ -56,13 +56,13 @@ Follow the steps below to use thumbnail in videos:
 
 1. Click on **Preview**.
 
-1. If a video is set on the component, the video will play. If not, and the thumbnail is set, then the thumbnail will play. Otherwise the component is considered not configured and will be skipped.
+1. If a video is set on the component, the video plays. If not, and the thumbnail is set, then the thumbnail plays. Otherwise, the component is considered not configured and is skipped.
 
 ## Supported Use Cases while using Thumbnail in Videos {#understand-use-case}
 
 Thumbnail in videos supports the following use cases:
 
-* A video component with nothing set up will be skipped.
+* A video component with nothing set up is skipped.
 
 * A video component with only the thumbnail set will play the thumbnail.
 

@@ -10,12 +10,14 @@ exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 >id="aemcloud_ctt_logs"
 >title="Viewing Logs"
 >abstract="Upon completion of Extraction of Ingestion, Check the logs for any error/warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe support."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#troubleshooting" text="Troubleshooting"
->additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="Contacting Adobe Support"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#troubleshooting" text="Troubleshooting"
+>additional-url="https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html" text="Contacting Adobe Support"
 
 Upon completion of each step (extraction and ingestion) check the logs and look for errors.  Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe support.
 
 ## Steps for Viewing Logs {#viewing-logs}
+
+### Extraction Logs
 
 To view the Extraction Logs, go to your source Adobe Experience Manager instance, then select the desired migration set. 
 
@@ -28,6 +30,8 @@ Or, click the **FINISHED** status to view logs in a new tab.
 
 1. To tail the logs without using the user interface, you can SSH into your source AEM environment and tail the `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
 
-1. To view Ingestion logs, go to the Ingestion Jobs list in Cloud Acceleration Manager and click on the three dots (**...**). You can then click on **Download log** to download logs.
+### Ingestion Logs
+
+To view Ingestion logs, go to the Ingestion Jobs list in Cloud Acceleration Manager, then find the desired migration job and click on the three dots (**...**) of the job. You can then click on **Download log** to download logs.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

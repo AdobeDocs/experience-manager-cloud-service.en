@@ -8,6 +8,11 @@ exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 ---
 # Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 You can download assets including static and dynamic renditions. Alternatively, you can send emails with links to assets directly from [!DNL Adobe Experience Manager Assets]. Downloaded assets are bundled in a ZIP file. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
 <!--
@@ -68,7 +73,7 @@ To download assets, follow these steps:
 
    | Download option | Description |
    |---|---|
-   | **[!UICONTROL Create separate folder for each asset]** | Select this option to create a folder for each asset containing all of the downloaded renditions for the asset. If unselected, each asset (and its renditions if selected for download) will be contained in the parent folder of the generated archive. |
+   | **[!UICONTROL Create separate folder for each asset]** | Select this option to create a folder for each asset containing all of the downloaded renditions for the asset. If unselected, each asset (and its renditions if selected for download) is contained in the parent folder of the generated archive. |
    | **[!UICONTROL Email]** | Select this option to send an email notification (containing a link to your download) to another user. The recipient user must be a member of the `dam-users` group. Standard emails templates are available at the following locations:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Templates that you customize during deployment are available at the following locations: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>You can store tenant-specific custom templates at the following locations:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Asset(s)]** | Select this option to download the asset in its original form.<br>The subassets option is available if the original asset has subassets.|
    | **[!UICONTROL Rendition(s)]** | A rendition is the binary representation of an asset. Assets have a primary representation - that of the uploaded file. They can have any number of representations. <br> With this option, you can select the renditions you want downloaded. The renditions that are available depend on the asset you selected. |
@@ -124,6 +129,20 @@ If you do not need the download functionality, then disable the servlet to preve
 ## Tips and limitations {#tips-limitations}
 
 * If you download an empty folder, [!DNL Experience Manager] conveys a success message about creating a ZIP archive, but the archive is not created.
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

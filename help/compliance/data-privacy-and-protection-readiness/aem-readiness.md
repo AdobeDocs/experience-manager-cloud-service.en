@@ -88,6 +88,6 @@ See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/hel
 These Adobe Experience Manager as a Cloud Service integrations are with data protection and privacy (for example, GDPR) ready services. No personal data from Adobe Target or Adobe Analytics is stored in AEM in relation to the integrations.
 For further information see:
 
-* [Adobe Target - Privacy Overview](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/privacy.html)  
+* [Adobe Target - Privacy Overview](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)  
 
 * [Adobe Analytics Data Privacy Workflow](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html)

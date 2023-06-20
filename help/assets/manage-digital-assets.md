@@ -9,6 +9,11 @@ exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 ---
 # Manage assets {#manage-assets}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 This article describes how to manage and edit assets in [!DNL Adobe Experience Manager Assets]. To manage [!DNL Content Fragments], see [[!DNL Content Fragments]](content-fragments/content-fragments.md) assets.
 
 ## Create folders {#creating-folders}
@@ -474,7 +479,7 @@ You can view only one annotation at a time.
 
 >[!NOTE]
 >
->If you are selecting multiple annotations, the latest annotation will be visible on the user interface.
+>If you are selecting multiple annotations, the latest annotation is visible on the user interface.
 >
 >Multi-select is supported only for printing the annotated asset as PDF.
 
@@ -655,3 +660,18 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 ```
 
 To know more, see how to [browse DAM assets using desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) and [how to use Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)

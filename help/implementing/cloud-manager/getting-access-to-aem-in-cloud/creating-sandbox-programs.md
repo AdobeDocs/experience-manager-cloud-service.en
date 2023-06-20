@@ -17,17 +17,31 @@ Follow these steps to create a sandbox program.
  
 1. From Cloud Manager's landing page click on **Add Program** in the top-right corner of the screen.
 
-   ![Cloud Manager landing page](assets/first_timelogin1.png) 
+   ![Cloud Manager landing page](assets/cloud-manager-my-programs.png) 
 
-1. From the create program wizard, select **Set up a sandbox**, provide a program name, and then click **Create**.
+1. From the create program wizard, select **Set up a sandbox** and provide a program name.
 
    ![Program type creation](assets/create-sandbox.png)
 
+1. Optionally, you can add an image to the program by dragging and dropping an image file to the **Add a program image** target or clicking it to select an image from a file browser. Tap or click **Continue**.
+
+   * The image serves only as the tile in the program overview window and helps to identify the program.
+
+1. In the **Set up your sandbox** dialog, choose which solutions you wish to enable in your sandbox program by checking the options in the **Solutions &amp; Add-Ons** table.
+   
+   * Use the chevrons next to the solution names to show additional, optional add-ons for the solutions.
+   
+   * The **Sites** and **Assets** solutions are always included in sandbox programs and can not be de-selected.
+
+   ![Select solutions and add-ons for a sandbox](assets/sandbox-solutions-add-ons.png)
+
+1. Once you have selected the solutions and add-ons for your sandbox program, tap click **Create**.
+
 You will see a new sandbox program card on the landing page with a status indicator as the setup process progresses.
 
-![Sandbox creation from overview page](assets/program-create-setupdemo2.png)
+![Sandbox creation from overview page](assets/sandbox-setup.png)
 
-## Access Your Sandbox {#access}
+## Sandbox Access {#access}
 
 You can view the detail of your sandbox setup as well as access the environment (once available) by viewing the program overview page.
 
@@ -35,7 +49,7 @@ You can view the detail of your sandbox setup as well as access the environment 
 
    ![Accessing program overview](assets/program-overview-sandbox.png)
 
-1. Once the project creation step completes, you can access the **Access Repo Info** link in order to be able to use your git repo.
+1. After the project creation step completes, you can access the **Access Repo Info** link to be able to use your git repo.
 
    ![Program configuration](assets/create-program4.png)
    

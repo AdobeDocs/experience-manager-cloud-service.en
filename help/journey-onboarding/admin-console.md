@@ -26,7 +26,7 @@ The Adobe Admin Console is a central place to administer and manage your Adobe p
 
 To sign into the Admin Console, you will need an Adobe ID. And Adobe ID is an account tied to a specific email address that is required to login and access AEM as a Cloud Service or any of your Adobe solutions. By using your Adobe ID you keep all your Adobe plans and products associated with a single account.
 
-When you as the system administrator set up your team in the Admin Console, you specify the email address that will be used as the Adobe ID.
+When you, as system administrator, set up your team in the Admin Console, you specify the email address that is used as the Adobe ID.
 
 There are three types of Adobe IDs:
 
@@ -98,6 +98,8 @@ Now that you have read this document, you should:
 You are ready to continue your onboarding journey by learning how to [assign team members to Cloud Manager Product Profiles](assign-profiles-cloud-manager.md) so that you colleagues can also access AEMaaCS.
 
 ## Additional Resources {#additional-resources}
+
+The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
 * [Admin Console Overview](https://helpx.adobe.com/enterprise/using/admin-console.html) - A comprehensive overview of the Admin Console
 * [Create or Update Your Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Learn how to create an Adobe ID, change it, and manage multiple Adobe IDs.

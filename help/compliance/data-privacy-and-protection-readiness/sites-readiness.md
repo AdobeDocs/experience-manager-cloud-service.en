@@ -50,7 +50,7 @@ To Opt-out:
 
 1. Select the referenced link; currently titled **here**.
 
-1. You will be presented with the following details, together with the options to opt out or in:
+1. You are presented with the following details, together with the options to opt out or in:
 
     * To opt-out of aggregation and analysis of data about your visit to this site, it is necessary to install a cookie on your browser. This cookie identifies that you have opted-out.
 
@@ -76,7 +76,7 @@ For further information on managing data subject requests related to Adobe Analy
 
 AEM Sites includes an optional integration with Personalization Foundation by Target which uses functionality within the Adobe Target On-demand Service.
 
-For further information on managing data subject requests related to Adobe Target see [Adobe Target - Privacy and General Data Protection Regulation](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+For further information on managing data subject requests related to Adobe Target see [Adobe Target - Privacy and General Data Protection Regulation](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -168,7 +168,7 @@ To preview persistance used ContextHub, a user can:
         * `ContextHub.Utils.Persistence.Modes.COOKIE`
         * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      The ContextHub store defines which persistence layer will be used, thus to view the current state of the persistence all layers should be checked.
+      The ContextHub store defines which persistence layer is used, thus to view the current state of the persistence all layers should be checked.
 
 For example, to view data stored in localStorage:
 
@@ -197,7 +197,7 @@ To preview persistance used ContextHub, a user can:
         * `ContextHub.Utils.Persistence.Modes.COOKIE`
         * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      The ContextHub store defines which persistence layer will be used, thus to view the current state of the persistence all layers should be checked.
+      The ContextHub store defines which persistence layer is used, thus to view the current state of the persistence all layers should be checked.
 
 For example, to view data stored in localStorage:
 
@@ -213,7 +213,7 @@ To clear the ContextHub persistence:
 * To clear persistence of currently loaded stores:
 
   ```
-  // in order to be able to fully access persistence layer, Opt-Out must be turned off
+  // to be able to fully access persistence layer, Opt-Out must be turned off
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
 
   // following call asks all currently loaded stores to clear their data

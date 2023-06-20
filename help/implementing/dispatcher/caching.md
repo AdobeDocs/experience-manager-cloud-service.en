@@ -6,7 +6,7 @@ exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 ---
 # Introduction {#intro}
 
-Traffic passes through the CDN to an Apache web server layer, which supports modules including Dispatcher. In order to increase performance, Dispatcher is used primarily as a cache to limit processing on the publish nodes.
+Traffic passes through the CDN to an Apache web server layer, which supports modules including Dispatcher. To increase performance, Dispatcher is used primarily as a cache to limit processing on the publish nodes.
 Rules can be applied to the Dispatcher configuration to modify any default cache expiration settings, resulting in caching at the CDN. Note that Dispatcher also respects the resulting cache expiration headers if `enableTTL` is enabled in the Dispatcher configuration, implying that it will refresh specific content even outside of content being republished.
 
 This page also describes how the Dispatcher cache is invalidated and how caching works at the browser level with regards to client-side libraries.
@@ -39,7 +39,7 @@ This can be useful, for example, when your business logic requires fine tuning o
    >[!NOTE]
    >The Surrogate-Control header applies to the Adobe managed CDN. If using a [customer managed CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), a different header may be required depending on your CDN provider.
 
-   Exercise caution when setting either global cache control headers or those that match a wide regex so they are not applied to content that you need to keep private. Consider using multiple directives to ensure rules are applied in a fine-grained manner. With that said, AEM as a Cloud Service will remove the cache header if it detects that it has been applied to what it detects to be uncacheable by Dispatcher, as described in Dispatcher documentation. In order to force AEM to always apply the caching headers, one can add the **always** option as follows:
+   Exercise caution when setting either global cache control headers or those that match a wide regex so they are not applied to content that you need to keep private. Consider using multiple directives to ensure rules are applied in a fine-grained manner. With that said, AEM as a Cloud Service will remove the cache header if it detects that it has been applied to what it detects to be uncacheable by Dispatcher, as described in Dispatcher documentation. To force AEM to always apply the caching headers, one can add the **always** option as follows:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -80,7 +80,7 @@ This can be useful, for example, when your business logic requires fine tuning o
 
 ### Client-Side libraries (js,css) {#client-side-libraries}
 
-* When using AEM's Client-Side library framework, JavaScript and CSS code is generated in such a way that browsers can cache it indefinitely, since any changes manifest as new files with a unique path.  In other words, HTML that references the client libraries will be produced as needed so customers can experience new content as it is published. The cache-control is set to "immutable" or 30 days for older browsers who don't respect the "immutable" value.
+* When using AEM's Client-Side library framework, JavaScript and CSS code is generated in such a way that browsers can cache it indefinitely, since any changes manifest as new files with a unique path.  In other words, HTML that references the client libraries are produced as needed so customers can experience new content as it is published. The cache-control is set to "immutable" or 30 days for older browsers who don't respect the "immutable" value.
 * see the section [Client-side libraries and version consistency](#content-consistency) for additional details.
 
 ### Images and any content large enough to be stored in blob storage {#images}
@@ -101,7 +101,7 @@ When modifying the caching headers at the Dispatcher layer, please be cautious n
 
 #### New default caching behavior {#new-caching-behavior}
 
-The AEM layer will set cache headers depending on whether the cache header has already been set and the value of the request type. Please note that if no cache control header has been set, public content is cached and authenticated traffic is set to private. If a cache control header has been set, the cache headers will be left untouched.
+The AEM layer will set cache headers depending on whether the cache header has already been set and the value of the request type. Please note that if no cache control header has been set, public content is cached and authenticated traffic is set to private. If a cache control header has been set, the cache headers are left untouched.
 
 | Cache control header exists? | Request type  | AEM sets cache headers to                      |
 |------------------------------|---------------|------------------------------------------------|
@@ -198,11 +198,11 @@ At present, images in blob storage that are marked private cannot be cached at t
 
 ### HEAD request behavior {#request-behavior}
 
-When a HEAD request is received at the Adobe CDN for a resource that is **not** cached, the request is transformed and received by the Dispatcher and/or AEM instance as a GET request. If the response is cacheable, then subsequent HEAD requests will be served from the CDN. If the response is not cacheable, then subsequent HEAD requests will be passed to the Dispatcher and/or AEM instance for a period of time that depends on the `Cache-Control` TTL.
+When a HEAD request is received at the Adobe CDN for a resource that is **not** cached, the request is transformed and received by the Dispatcher and/or AEM instance as a GET request. If the response is cacheable, then subsequent HEAD requests are served from the CDN. If the response is not cacheable, then subsequent HEAD requests are passed to the Dispatcher, or AEM instance, or both, for a period of time that depends on the `Cache-Control` TTL.
 
 ### Marketing campaign parameters {#marketing-parameters}
 
-Website URLs frequently include marketing campaign parameters that are used to track a campaign's success. In order to use the dispatcher cache effectively, it is recommended that you configure the dispatcher configuration's `ignoreUrlParams` property as [documented here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+Website URLs frequently include marketing campaign parameters that are used to track a campaign's success. To use the dispatcher cache effectively, it is recommended that you configure the dispatcher configuration's `ignoreUrlParams` property as [documented here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
 
 The `ignoreUrlParams` section must be uncommented and should reference the file `conf.dispatcher.d/cache/marketing_query_parameters.any`. The file can be modified by uncommenting the lines corresponding to the parameters that are relevant to your marketing channels. You may add other parameters as well.
 
@@ -455,11 +455,11 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 ## Client-Side libraries and Version Consistency {#content-consistency}
 
-Pages are composed of HTML, Javascript, CSS, and images. Customers are encouraged to leverage the [Client-Side Libraries (clientlibs) framework](/help/implementing/developing/introduction/clientlibs.md) to import Javascript and CSS resources into HTML pages, taking into account dependencies between JS libraries.
+Pages are composed of HTML, Javascript, CSS, and images. Customers are encouraged to use the [Client-Side Libraries (clientlibs) framework](/help/implementing/developing/introduction/clientlibs.md) to import Javascript and CSS resources into HTML pages, taking into account dependencies between JS libraries.
 
-The clientlibs framework provides automatic version management, meaning that developers can check in changes to JS libraries in source control and the latest version will be made available when a customer pushes their release. Without this, developers would need to manually change HTML with references to the new version of the library, which is especially onerous if many HTML templates share the same library.
+The clientlibs framework provides automatic version management, meaning that developers can check in changes to JS libraries in source control and the latest version is made available when a customer pushes their release. Without this, developers would need to manually change HTML with references to the new version of the library, which is especially onerous if many HTML templates share the same library.
 
-When the new versions of libraries are released to production, the referencing HTML pages are updated with new links to those updated library versions. Once the browser cache has expired for a given HTML page, there is no concern that the old libraries will be loaded from the browser cache since the refreshed page (from AEM) now is guaranteed to reference the new versions of the libraries. In other words, a refreshed HTML page will include all the latest library versions.
+When the new versions of libraries are released to production, the referencing HTML pages are updated with new links to those updated library versions. After the browser cache expires for a given HTML page, there is no concern that the old libraries are loaded from the browser cache since the refreshed page (from AEM) now is guaranteed to reference the new versions of the libraries. In other words, a refreshed HTML page will include all the latest library versions.
 
 The mechanism for this is a serialized hash, which is appended to the client library link, ensuring a unique, versioned url for the browser to cache the CSS/JS. The serialized hash is only updated when the contents of the client library changes. This means that if unrelated updates occur (i.e no changes to the underlying css/js of the client library) even with a new deployment, the reference remains the same, ensuring less disruption to the browser cache.
 
@@ -488,4 +488,4 @@ To enable strict clientlib versioning in the local SDK Quickstart perform the fo
    * Check the checkbox to enable Strict Versioning
    * In the field labeled Long term client side cache key, enter the value of /.*;hash
 1. Save the changes. It is not necessary to save this configuration in source control since AEM as a Cloud Service automatically enables this configuration in dev, stage and production environments.
-1. Any time the contents of the client library are changed, a new hash key is generated and the HTML reference will be updated.
+1. Any time the contents of the client library are changed, a new hash key is generated and the HTML reference is updated.
