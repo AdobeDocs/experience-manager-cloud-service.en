@@ -5,7 +5,7 @@ exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 ---
 # Content Fragments - Configuration Browser{#content-fragments-configuration-browser}
 
-Learn how to enable certain Content Fragment functionality in the Configuration Browser in order to leverage AEM's powerful headless delivery features.
+Learn how to enable certain Content Fragment functionality in the Configuration Browser to use AEM's powerful headless delivery features.
 
 ## Enable Content Fragment Functionality for your Instance {#enable-content-fragment-functionality-instance}
 
@@ -53,8 +53,8 @@ To [use certain Content Fragment functionality](#creating-a-content-fragment-mod
 1. Use **Create** to open the dialog, where you:
 
    1. Specify a **Title**.
-   1. The **Name** will become the node name in the repository.
-      * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/implementing/developing/introduction/naming-conventions.md)
+   1. The **Name** becomes the node name in the repository.
+      * It is automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/implementing/developing/introduction/naming-conventions.md)
       * You can adjust it if necessary.
    1. To enable their use select 
       * **Content Fragment Models** 

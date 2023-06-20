@@ -22,7 +22,7 @@ As part of the default filters, [GraphQL endpoints](/help/headless/graphql-api/g
 /0060 { /type "allow" /method '(POST|OPTIONS)' /url "/content/_cq_graphql/*/endpoint.json" }
 ```
 
-The `*` wildcard opens multiple endpoints on the AEM instance. Querying using a GraphQL endpoint will be made using `POST` and the response will **not** be cached.
+The `*` wildcard opens multiple endpoints on the AEM instance. Querying using a GraphQL endpoint is made using `POST` and the response will **not** be cached.
 
 ## GraphQL Persisted Queries
 

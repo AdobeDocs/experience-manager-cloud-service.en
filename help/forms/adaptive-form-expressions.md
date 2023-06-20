@@ -232,7 +232,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
      gb.connect(function (){
 
-        //this function will be called after Adaptive Form is initialized
+        //this function is called after Adaptive Form is initialized
 
      })
 

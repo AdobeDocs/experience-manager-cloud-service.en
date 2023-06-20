@@ -61,7 +61,7 @@ At any time you can either add or remove pages to/from the range of source pages
      * Select **Edit**.
    * [References (Sites console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) to show the available actions:
      * Select **Edit Launch**.
-     * The source pages will be shown.
+     * The source pages are shown.
 1. Make your required changes, then confirm with **Save**.
 
 >[!NOTE]
@@ -77,7 +77,7 @@ At any time you can edit the properties for a launch:
      * Select **Properties**.
    * [References (Sites console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) to show the available actions:
      * Select **Edit Properties**.
-     * The details will be shown.
+     * The details are shown.
 1. Make your required changes, then confirm with **Save**.
    * See [Launches - the Order of Events](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) for information about the purpose and interaction of the **Launch Date** and **Production Ready** fields.
 

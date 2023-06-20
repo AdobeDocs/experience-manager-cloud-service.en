@@ -36,7 +36,7 @@ The intention of WCAG 2.1 is to provide guidelines that:
   Each guideline is written in such a way that it can be objectively tested to ensure that a group of accessibility experts would generally agree that the guideline has been met. One of the challenges of accessibility guidelines is that while some can be technically testable, others require human judgment to ascertain whether or not the guideline has been successfully met. 
 
 * Support **prioritized and contextual implementation:**
-  WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies and/or browsers in order to benefit from accessibility features.
+  WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies, and browsers, or both to benefit from accessibility features.
 
 These aims have significantly influenced the structure of WCAG 2.1.
 
@@ -108,7 +108,7 @@ Each technique has a unique number, which relates to its collection. For example
 
 Techniques may be Sufficient, Advisory, or a Failure:
 
-* A *Sufficient Technique* is one, which, if followed, will be enough to meet a particular success criterion.
+* A *Sufficient Technique* is one, which, if followed, is enough to meet a particular success criterion.
 * An *Advisory Technique* is one, which, if followed, will have a positive impact on accessibility, but may not be enough on its own to ensure a particular success criterion is met.
 * A *Failure* is a technique describing specific example of where a success criteria would not be met.
 
@@ -120,15 +120,15 @@ The list of techniques is not complete and WAI is constantly updating the list w
 
 This refers to a series of documents, which provide advice helping readers to appreciate the purpose of specific guidelines and success criteria. You can [download an introduction, plus links to more detailed information](https://www.w3.org/WAI/WCAG21/Understanding/).
 
-Each individual guideline and success criterion also has its own ‘Understanding’ page, providing information on:
+Each individual guideline and success criterion also has its own 'Understanding' page, providing information on:
 
 * The intent of the guideline;
 * Specific success criteria;
 * Advisory techniques, which help in meeting the requirements of the guideline, but which do not fall under any specific success criterion.
 
-Each success criterion’s individual "understanding" page provides information on:
+Each success criterion's individual "understanding" page provides information on:
 
-* The success criterion’s intent;
+* The success criterion's intent;
 * General examples of how the success criterion can be met;
 * Related (non W3C) resources on how to meet the success criterion;
 * Techniques and failures: specific and detailed examples of how the success criterion can be met (described in more detail below)
@@ -138,7 +138,7 @@ An example can be found at: [Understanding Success Criterion 1.1.1 ("Non-text co
 
 ### How to Meet WCAG 2.1 {#how-to-meet-wcag}
 
-The ‘How to Meet’ section is available on the [How To Meet WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) page. This section provides an alternative presentation of WCAG, allowing readers to refine the content of the guidelines to those most relevant to their own interests and/or circumstances. Readers can filter the success criteria techniques they would like to view by specifying particular web content technologies such as Cascading Style Sheets or scripting, or specifying a particular priority level(s).
+The 'How to Meet' section is available on the [How To Meet WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) page. This section provides an alternative presentation of WCAG, allowing readers to refine the content of the guidelines to those most relevant to their own interests and/or circumstances. Readers can filter the success criteria techniques they would like to view by specifying particular web content technologies such as Cascading Style Sheets or scripting, or specifying a particular priority level(s).
 
 Without filtering, this resource provides all success criteria grouped by guideline. For each success criterion, the following is provided:
 

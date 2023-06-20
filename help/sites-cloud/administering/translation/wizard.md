@@ -39,7 +39,7 @@ To access the wizard:
 
    >[!NOTE]
    >
-   >If you selected multiple languages in the previous step, multiple translation projects will be created.
+   >If you selected multiple languages in the previous step, multiple translation projects are created.
 
    ![Translation step of wizard](../assets/language-copy-wizard-translate.png)
 

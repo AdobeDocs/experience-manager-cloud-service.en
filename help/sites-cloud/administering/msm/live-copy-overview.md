@@ -1,6 +1,6 @@
 ---
 title: Live Copy Overview Console
-description: Learn about the basics of the Live Copy Overview Console to quickly understand the status of your Live Copies in order to synchronize content.
+description: Learn about the basics of the Live Copy Overview Console to quickly understand the status of your Live Copies to synchronize content.
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
@@ -43,7 +43,7 @@ The **Live Copy Overview** can be opened from the **References** side panel of t
 The **Live Copy Overview** can be opened when viewing properties of a blueprint page:
 
 1. Open **Properties** for the appropriate blueprint page.
-1. Open the **Blueprint** tab - the **Live Copy Overview** option will be shown in the top toolbar:
+1. Open the **Blueprint** tab - the **Live Copy Overview** option is shown in the top toolbar:
 
    ![Blueprint Properties tab](../assets/live-copy-blueprint-tab.png)
 
@@ -66,7 +66,7 @@ For example, a rollout configuration is defined as `targetActivate`. Therefore, 
 The **Live Copy Overview** can also be used to perform actions on the Live Copy:
 
 1. Open the **Live Copy Overview**.
-1. Select the required blueprint or Live Copy page and the toolbar will be updated to show the available actions. The [actions](overview.md#terms-used) available depend on whether you select a [blueprint](#actions-for-a-blueprint-page) or [Live Copy](#actions-for-a-live-copy-page) page.
+1. Select the required blueprint or Live Copy page and the toolbar is updated to show the available actions. The [actions](overview.md#terms-used) available depend on whether you select a [blueprint](#actions-for-a-blueprint-page) or [Live Copy](#actions-for-a-live-copy-page) page.
 
 ### Actions for a Blueprint Page {#actions-for-a-blueprint-page}
 

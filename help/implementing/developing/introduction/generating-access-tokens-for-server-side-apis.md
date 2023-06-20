@@ -31,7 +31,7 @@ The server-to-server flow involves the following steps:
 
 Users with access to the AEM as a Cloud Service developer console will see the integrations tab in the Developer Console for a given environment. A user with the AEM as a Cloud Service Environment administrator role can create, view or manage credentials.
 
-Clicking the **Create new technical account** button, a new set of credentials will be created that includes client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
+Clicking the **Create new technical account** button, a new set of credentials are created that includes client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
 
 ![Creating a new Technical Account](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
 
@@ -61,7 +61,7 @@ The application making calls to AEM should be able to access the AEM as a Cloud 
 
 ### Generate a JWT Token and Exchange It for an Access Token {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-Use the credentials to create a JWT token in a call to Adobe's IMS service in order to retrieve an access token, which is valid for 24 hours.
+Use the credentials to create a JWT token in a call to Adobe's IMS service to retrieve an access token, which is valid for 24 hours.
 
 The AEM CS Service Credentials may be exchanged for an access token using client libraries designed for this purpose. The client libraries are available from [Adobe's public GitHub repository](https://github.com/adobe/aemcs-api-client-lib), which contains more detailed guidance and latest information.
 
@@ -156,7 +156,7 @@ Alternatively, you can also verify that the technical account appears in the use
 
 <u>**Set the Appropiate Group Permissions**</u>
 
-Finally, configure the group with the appropriate permissions needed to in order to invoke or lock down your APIs appropriately. You can do this by:
+Finally, configure the group with the appropriate permissions needed to invoke or lock down your APIs appropriately. You can do this by:
 
 1. Logging in to the appropiate author instance and going to **Settings** - **Security** - **Permissions**
 1. Search for the name of the group corresponding to the product profile in the left hand pane (in this case Read-only APIs) and click on it:
@@ -213,7 +213,7 @@ To achieve this, you can:
 
   ![Credential Refresh](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
-* After pressing the button, a set of credentials that includes a new certificate will be generated. Install the new credentials on your off-AEM server and ensure that connectivity is as expected, without removing the old credentials  
+* After pressing the button, a set of credentials that includes a new certificate is generated. Install the new credentials on your off-AEM server and ensure that connectivity is as expected, without removing the old credentials  
 * Make sure the new credentials are used instead of the old ones when generating the access token
 * Optionally revoke (and then delete) the prior certificate so it can no longer be used to authenticate with AEM as a Cloud Service.
 
@@ -223,7 +223,7 @@ If the private key is compromised, you need to create credentials with a new cer
 
 You can do this by following these steps:
 
-1. First, add the new key. This will generate credentials with a new private key and a new certificate. The new private key will be marked in the UI as **current** and will thus be used for all new credentials for this technical account going forward. Note that the credentials associated with the older private keys will still be valid until revoked. To achieve this, press the three dots (**...**) under your current technical account and press **Add new private key**:
+1. First, add the new key. This key generates credentials with a new private key and a new certificate. The new private key is marked in the UI as **current** and will thus be used for all new credentials for this technical account going forward. Note that the credentials associated with the older private keys will still be valid until revoked. To achieve this, press the three dots (**...**) under your current technical account and press **Add new private key**:
 
    ![Add new private key](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
@@ -231,7 +231,7 @@ You can do this by following these steps:
 
    ![Confirm adding of new private key](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
 
-   A new browse tab with the new crendetials will open and the UI will be updated to show both private keys, with the new one marked as **current**:
+   A new browse tab with the new credentials opens and the user interface is updated to show both private keys with the new one marked as **current**:
 
    ![Private keys in the UI](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 

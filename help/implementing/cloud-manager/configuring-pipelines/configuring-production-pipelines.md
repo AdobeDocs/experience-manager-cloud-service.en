@@ -45,7 +45,7 @@ Once you have set up your program and have at least one environment using the [!
     **Important Metric Failures Behavior** - During pipeline setup or edit, the **Deployment Manager** has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates. The available options are:
 
     * **Ask every time** - This is the default setting and requires manual intervention on any important failure.
-    * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
+    * **Fail Immediately** - If selected, the pipeline is cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
     * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an important failure occurs. This is essentially emulating a user manually approving each failure.
 
     ![Production pipeline configuration](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
@@ -89,7 +89,7 @@ A full-stack code pipeline simultaneously deploys back-end and front-end code bu
 
 >[!NOTE]
 >
->If a full-stack code pipeline already exists for the selected environment, this selection will be disabled.
+>If a full-stack code pipeline already exists for the selected environment, this selection is disabled.
 
 To finish the configuration of the full-stack code production pipeline, follow these steps.
 
@@ -120,18 +120,18 @@ To finish the configuration of the full-stack code production pipeline, follow t
 
    ![Defining a path for the Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. Click **Add Page** and the path will be auto-completed with the address of your environment and added to the table of paths.
+1. Click **Add Page** and the path is auto-completed with the address of your environment and added to the table of paths.
 
    ![Saving path to the table](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
 1. Continue to add paths as necessary by repeating the previous two steps.
 
    * You can add a maximum of 25 paths.
-   * If you don't define any paths, the homepage of the site will be included in the Experience Audit by default.
+   * If you don't define any paths, the homepage of the site is included in the Experience Audit by default.
 
 1. Click on **Save** to save your pipeline.
 
-Paths configured for the Experience Audit will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests when the pipeline runs. Refer to [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+Paths configured for the Experience Audit are submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests when the pipeline runs. Refer to [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
@@ -171,7 +171,7 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
 
-Please refer to the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of in order to get the full potential out of this process.
+Please refer to the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
 
 ## Skip Dispatcher Packages {#skip-dispatcher-packages}
 

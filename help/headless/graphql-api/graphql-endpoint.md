@@ -27,7 +27,7 @@ There are two types of endpoints in AEM:
 >
 >The Content Fragment Editor can allow a Content Fragment of one Sites configuration to reference a Content Fragment of another Sites configuration (via polices). 
 >
->In such a case not all content will be retrievable using a Sites configuration specific endpoint. 
+>In such a case, not all content is retrievable using a Sites configuration specific endpoint. 
 >
 >The content author should control this scenario; for example, it may be useful to consider putting shared Content Fragment Models under the Global Sites configuration.
 

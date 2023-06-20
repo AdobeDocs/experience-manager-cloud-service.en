@@ -194,7 +194,7 @@ This tab is only visible for pages that serve as blueprints. Blueprints serve as
 
 * **Current Live Copies** - Lists pages that are based on (i.e. are Live Copies of) this blueprint page
 
-* **Rollout Configs** - Controls the circumstances under which modifications will be propagated to the Live Copy
+* **Rollout Configs** - Controls the circumstances under which modifications are propagated to the Live Copy
 
 ### Live Copy {#live-copy}
 
@@ -217,7 +217,7 @@ This tab is only visible for pages that are configured as live copies. As with B
 
   * **Live Copy Inheritance** - If checked, Live Copy configuration is effective on all children
   * **Inherit Rollout Configs from Parent** - If checked, the rollout configuration is inherited from the parent of the page
-  * **Choose Rollout Config** - Defines the circumstances under which modifications will be propagated from the Blueprint and only available when **Inherit Rollout Configs from Parent** is not selected
+  * **Choose Rollout Config** - Defines the circumstances under which modifications are propagated from the Blueprint and only available when **Inherit Rollout Configs from Parent** is not selected
 
 ### Preview {#preview}
 
@@ -270,7 +270,7 @@ Clicking or tapping **Properties** to define the page properties:
 1. Select the **Properties** option for the required page using either:
    * [Quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
-   * The page properties will be shown using the appropriate tabs.
+   * The page properties are shown using the appropriate tabs.
 1. Either view or edit the properties as required.
 1. Then use **Save** to save your updates followed by **Close** to return to the console.
 
@@ -306,7 +306,7 @@ You can select multiple pages for bulk editing by various methods, including:
 * When browsing the **Sites** console
 * After using **Search** to locate a set of pages
 
-After selecting the pages and then clicking or tapping the **Properties option**, the bulk properties will be shown:
+After selecting the pages and then clicking or tapping the **Properties option**, the bulk properties are shown:
 
 ![Bulk editing page properties](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
@@ -335,6 +335,6 @@ Once you have entered Bulk Editing you can:
 * **Edit**
 
   * You can update the values in the fields available.
-    * The new values will be applied to all selected pages when you select **Done**.
+    * The new values are applied to all selected pages when you select **Done**.
     * When the field is multi-value (for example Tags), you can either append a new value or remove a common value.
-  * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`.
+  * Fields that are common, but have different values across the various pages are indicated with a special value such as the text `<Mixed Entries>`.

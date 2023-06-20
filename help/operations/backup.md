@@ -9,14 +9,14 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
 >title="Backup & Restore"
->abstract="AEM as a Cloud Service can restore a customer's full application (code and content) to specific, predetermined times in the last seven days, replacing what was on production. This feature should be used only when there are serious issues with either code or content. The recent data between the time of the restored backup and the present will be lost. Staging will also be restored to the old version."
+>abstract="AEM as a Cloud Service can restore a customer's full application (code and content) to specific, predetermined times in the last seven days, replacing what was on production. This feature should be used only when there are serious issues with either code or content. The recent data between the time of the restored backup and the present is lost. Staging will also be restored to the old version."
 
 Should content or data corruption occur, AEM as a Cloud Service can restore a customer's full application (code and content) to specific, predetermined times in the last seven days, replacing what was on production.
 If a customer's deployment, meaning the deployed application code is either broken or buggy, it is preferable to fix it and roll forward to a new release rather than restoring it from backup. Backup is performed in a manner that has no impact on the runtime performance of an application.
 
 >[!CAUTION]
 >
->This feature should be used only when there are serious issues with either code or content. The recent data between the time of the restored backup and the present will be lost. Staging will also be restored to the old version.
+>This feature should be used only when there are serious issues with either code or content. The recent data between the time of the restored backup and the present is lost. Staging is also restored to the old version.
 
 ## How to Use {#how-to-use}
 
@@ -26,13 +26,13 @@ AEM as a Cloud Service supports:
 
 * Backup and restore for stage, production and development environments.
 * 24 hour point in time recovery, meaning that the system can be restored to any point in the last 24 hours.
-* Restore from a specific, Adobe-defined timestamp taken twice a day for the last 7 days.  Any replication messages (deletes, updates, creates) will be preserved.
+* Restore from a specific, Adobe-defined timestamp taken twice a day for the last 7 days.  Any replication messages (deletes, updates, creates) is preserved.
 
-In all cases, the custom code version will be the taken from the last successful deployment before the restore point.
+In all cases, the custom code version is the taken from the last successful deployment before the restore point.
 
 The Recovery Time Objective (RTO) can vary, but as a general guideline, the recovery sequence takes between 60 and 90 minutes on average depending on several factors, such as repository size. Preview environments and multi-region publishers may extend the restore time objective.
 
-Following a restore, the AEM version will be updated to the most recent.
+Following a restore, the AEM version is updated to the most recent.
 
 >[!CAUTION]
 >
