@@ -42,7 +42,7 @@ The next release is planned for July 15, 2021.
 
 ### What's New {#what-is-new-junecm}
 
-* Preview Service will be deployed on a rolling basis to all Programs. Customers will be notified in-product when their Program is enabled for Preview Service. Refer to [Accessing Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) for more details.
+* Preview Service will be deployed on a rolling basis to all Programs. Customers are notified in-product when their Program is enabled for Preview Service. Refer to [Accessing Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) for more details.
 
 * Maven Dependencies downloaded during the build step will now be cached between pipeline executions. This feature will be enabled for customers over the next several weeks.
 
@@ -82,7 +82,7 @@ The next release is planned for July 15, 2021.
 
 ### New features in [!DNL Assets] {#ga-features-assets}
 
-* Content Automation functionality lets [!DNL Experience Manager Assets] leverage the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of same asset. The functionality does not require any code and works from within the DAM.
+* Content Automation functionality lets [!DNL Experience Manager Assets] use the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of same asset. The functionality does not require any code and works from within the DAM.
 * [!DNL Adobe Asset Link] v3.0 for [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] and [!DNL Adobe Asset Link] v2.0 for [!DNL Adobe XD] is released. It provides:
 
   * Support for [!DNL Assets Essentials].

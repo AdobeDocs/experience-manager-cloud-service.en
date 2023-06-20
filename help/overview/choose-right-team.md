@@ -72,4 +72,4 @@ Now that you know what roles are required, look at the chart below to see when e
 
 >[!TIP]
 >
-> Learn more about Adobe Experience Cloud and leverage resources on [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) and get certified through [Adobe Digital Learning](https://learning.adobe.com/certification.html).
+> Learn more about Adobe Experience Cloud and use resources on [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) and get certified through [Adobe Digital Learning](https://learning.adobe.com/certification.html).

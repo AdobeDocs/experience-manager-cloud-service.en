@@ -153,7 +153,7 @@ After you generate the HTML page, the Sling Rewriter pipeline makes modification
    >
    >In most cases, the internal links in the HTML are relative links, but there may be cases when custom components provide full URLs in the HTML. By default, AEM ignores these fully fledged URLs and makes no modifications.
 
-   The links in these attributes are run through the AEM Link Externalizer `publishLink()` in order to recreate the URL as if it was on a published instance, and as such, publicly available.
+   The links in these attributes are run through the AEM Link Externalizer `publishLink()` to recreate the URL as if it was on a published instance, and as such, publicly available.
 
 When using an out-of-the-box implementation, the process described above should be sufficient to generate the Target Offer from the Experience Fragment and then export it to Adobe Target. However, there are some use cases that are not accounted for in this process; these include:
 
@@ -194,7 +194,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 To use the interface you first need to create a bundle containing a new service component that implements the Link Rewriter Provider interface.
 
-This service will be used to plug into the Experience Fragment Export to Target rewriting in order to have access to the various links.
+This service is used to plug into the Experience Fragment Export to Target rewriting so it can have access to the various links.
 
 For example, `ComponentService`:
 

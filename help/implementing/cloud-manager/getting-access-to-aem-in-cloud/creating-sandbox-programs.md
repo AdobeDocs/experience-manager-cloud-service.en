@@ -49,7 +49,7 @@ You can view the detail of your sandbox setup as well as access the environment 
 
    ![Accessing program overview](assets/program-overview-sandbox.png)
 
-1. Once the project creation step completes, you can access the **Access Repo Info** link in order to be able to use your git repo.
+1. After the project creation step completes, you can access the **Access Repo Info** link to be able to use your git repo.
 
    ![Program configuration](assets/create-program4.png)
    

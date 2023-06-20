@@ -5,7 +5,7 @@ exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 ---
 # Composite Components in SPAs {#composite-components-in-spas}
 
-Composite components leverage the modular nature of AEM components by combining multiple base components into a single component. A common composite component use case is the card component, made of a combination of the image and text components.
+Composite components use the modular nature of AEM components by combining multiple base components into a single component. A common composite component use case is the card component, made of a combination of the image and text components.
 
 When composite components are properly implemented within the AEM Single Page Application (SPA) Editor framework, the content authors can drag and drop such components as they would any other component, but still have the ability to individually edit each component making up the composite component.
 
@@ -50,7 +50,7 @@ Start by creating the components that will make up the composite component, i.e.
    export const AEMText = withMappable(Text, TextEditConfig); 
    ```
 
-The text component will be similar to the following.
+The text component is similar to the following.
 
 ```javascript
 import React from 'react';

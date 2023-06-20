@@ -75,7 +75,7 @@ The following files are customizable and will get transferred to your Cloud inst
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-You can have one or more of these files. They contain `<VirtualHost>` entries that match host names and allow Apache to handle each domain traffic with different rules. Files are created in the `available_vhosts` directory and enabled with a symbolic link in the `enabled_vhosts` directory. From the `.vhost` files, other files like rewrites and variables will be included.
+You can have one or more of these files. They contain `<VirtualHost>` entries that match host names and allow Apache to handle each domain traffic with different rules. Files are created in the `available_vhosts` directory and enabled with a symbolic link in the `enabled_vhosts` directory. From the `.vhost` files, other files like rewrites and variables are included.
 
 >[!NOTE]
 >
@@ -87,17 +87,17 @@ If you want to match the exact host because you have multiple vhost files you ca
 
 ```
 <VirtualHost *:80>
-	ServerName	"example.com"
-	# Put names of which domains are used for your published site/content here
-	ServerAlias	 "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
-	# Use a document root that matches the one in conf.dispatcher.d/default.farm
-	DocumentRoot "${DOCROOT}"
-	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
-	AllowEncodedSlashes NoDecode
-	# Add header breadcrumbs for help in troubleshooting which vhost file is chosen
-	<IfModule mod_headers.c>
-		Header add X-Vhost "publish-example-com"
-	</IfModule>
+    ServerName    "example.com"
+    # Put names of which domains are used for your published site/content here
+    ServerAlias     "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
+    # Use a document root that matches the one in conf.dispatcher.d/default.farm
+    DocumentRoot "${DOCROOT}"
+    # URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+    AllowEncodedSlashes NoDecode
+    # Add header breadcrumbs for help in troubleshooting which vhost file is chosen
+    <IfModule mod_headers.c>
+        Header add X-Vhost "publish-example-com"
+    </IfModule>
   ...
 </VirtualHost>
 ```
@@ -116,7 +116,7 @@ This file is included from inside the `dispatcher_vhost.conf` file. You can chan
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-You can have one or more of these files, and they contain farms to match host names and allow the Dispatcher module to handle each farm with different rules. Files are created in the `available_farms` directory and enabled with a symbolic link in the `enabled_farms` directory. From the `.farm` files, other files like filters, cache rules and others will be included.
+You can have one or more of these files, and they contain farms to match host names and allow the Dispatcher module to handle each farm with different rules. Files are created in the `available_farms` directory and enabled with a symbolic link in the `enabled_farms` directory. From the `.farm` files, other files like filters, cache rules, and others are included.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -144,7 +144,7 @@ The above files reference the immutable configuration files listed below. Change
 
 These files are part of the base framework and enforce standards and best practices. The files are considered immutable because modifying or deleting them locally will have no impact on your deployment, as they will not get transferred to your Cloud instance.
 
-It is recommended that the above files reference the immutable files listed below, followed by any additional statements or overrides. When Dispatcher configuration is deployed to a cloud environment, the latest version of the immutable files will be used, regardless of what version was used in local development.
+It is recommended that the above files reference the immutable files listed below, followed by any additional statements or overrides. When Dispatcher configuration is deployed to a cloud environment, the latest version of the immutable files are used, regardless of what version was used in local development.
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -247,7 +247,7 @@ The script has the following three phases:
 2. It executes the `httpd -t` command to test if the syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment.
 3. Checks that the subset of the Dispatcher SDK configuration files, which are intended to be immutable as described in the [File structure section](##flexible-mode-file-structure), has not been modified and match the current SDK version.
 
-During a Cloud Manager deployment, the `httpd -t` syntax check will be executed as well and any errors will be included in the Cloud Manager `Build Images step failure` log.
+During a Cloud Manager deployment, the `httpd -t` syntax check will be executed as well and any errors are included in the Cloud Manager `Build Images step failure` log.
 
 >[!NOTE]
 >
@@ -257,7 +257,7 @@ During a Cloud Manager deployment, the `httpd -t` syntax check will be executed 
 
 If a directive is not allowlisted, the tool logs an error and returns a non-zero exit code. Also, it further scans all files with pattern `conf.dispatcher.d/enabled_farms/*.farm` and checks that:
 
-* No filter rule exists that uses allows via `/glob` (see [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) for more details.
+* No filter rule exists that uses allows via `/glob` (see [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957)) for more details.
 * No admin feature is exposed. For example, access to paths such as `/crx/de or /system/console`. 
 
 Note that the validation tool reports only the prohibited use of Apache directives that have not been allowlisted. It does not report syntactical or semantical problems with your Apache configuration, as this information is only available to Apache modules in a running environment.
@@ -394,7 +394,7 @@ Avoid this error by copying and pasting the path from Windows Explorer and then 
 
 ### Phase 2 {#second-phase}
 
-This phase checks the apache syntax by starting Apache HTTPD in a docker container. Docker must be installed locally, but note that it’s not necessary for AEM to be running.
+This phase checks the apache syntax by starting Apache HTTPD in a docker container. Docker must be installed locally, but note that it's not necessary for AEM to be running.
 
 >[!NOTE]
 >
@@ -403,7 +403,7 @@ This phase checks the apache syntax by starting Apache HTTPD in a docker contain
 
 This phase can also be run independently through `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
-During a Cloud Manager deployment, the `httpd -t` syntax check will also be executed and any errors will be included in the Cloud Manager Build Images step failure log.
+During a Cloud Manager deployment, the `httpd -t` syntax check is also run and any errors are included in the Cloud Manager Build Images step failure log.
 
 ### Phase 3 {#third-phase}
 

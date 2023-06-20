@@ -45,7 +45,7 @@ Once the pipeline has deployed the Reference Demo Add-On, you can access the AEM
 
    ![Site creation wizard](assets/site-creation-wizard.png)
 
-1. In the next screen, provide a title for your site or Screens project. A site name can be provided or will be generated from the title if omitted. Tap or click **Create**.
+1. In the next screen, provide a title for your site or Screens project. A site name can be provided or generated from the title, if omitted. Tap or click **Create**.
 
    * The site title appears in the browsers title bar.
    * The site name becomes part of the URL.
