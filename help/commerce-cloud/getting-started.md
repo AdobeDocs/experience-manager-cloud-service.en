@@ -22,7 +22,7 @@ The onboarding for AEM Commerce as a Cloud Service is a two-step process:
 
 The first onboarding step is done by Adobe. For more details on pricing and provisioning, you need to reach out to your sales representative.
 
-Once you have been provisioned with the CIF add-on, it will be applied to any existing Cloud Manager programs. In case, you don't have a Cloud Manager Program, you will need to create a new one. For more details, refer to [Setup your Program](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
+After you are provisioned with the CIF add-on, it is applied to any existing Cloud Manager programs. In case, you don't have a Cloud Manager Program, you will need to create a new one. For more details, refer to [Setup your Program](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
 
 The second step is self-service for each AEM as a Cloud Service environment. There are some additional configurations you will need to do after the initial provisioning of the CIF add-on.
 
@@ -35,7 +35,7 @@ This environment variable is used in two places:
 - GraphQL calls from AEM to commerce backend, via some common shareable GraphQl client, used by the AEM CIF Core Components and customer project components.
 - Setup a GraphQL proxy URL on each AEM environment the variable is set available at `/api/graphql`. This is used by the AEM commerce authoring tools (CIF add-on) and CIF client-side components.
 
-A different  GraphQL endpoint URL can be used for each AEM as a Cloud Service environment. That way projects can connect AEM staging environments with commerce staging systems and AEM production environment to a commerce production system. That GraphQL endpoint must be publicly available, private VPN or local connections are not supported. Optionally, an authentication header can be provided in order to use additional CIF features that require authentication.
+A different  GraphQL endpoint URL can be used for each AEM as a Cloud Service environment. That way projects can connect AEM staging environments with commerce staging systems and AEM production environment to a commerce production system. That GraphQL endpoint must be publicly available, private VPN or local connections are not supported. Optionally, an authentication header can be provided to use additional CIF features that require authentication.
 
 Optionally and only for Adobe Commerce Enterprise / Cloud the CIF add-on supports the use of staged catalog data for AEM authors. This requieres to configure an authorization header. This header is only available and used on AEM author instances for security reasons. AEM publish instances cannot show staged data.
 
@@ -45,7 +45,7 @@ There are two options to configure the endpoint:
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
-This can be done using a dialog on the Environment Details page. When viewing this page for a Commerce-enabled program, a button will be displayed if the endpoint is not currently configured:
+This can be done using a dialog on the Environment Details page. When viewing this page for a Commerce-enabled program, a button is displayed if the endpoint is not currently configured:
 
 ![CM Enviornment Information](/help/commerce-cloud/assets/commerce-cmui.png)
 
@@ -53,7 +53,7 @@ Clicking this button opens a dialog:
 
 ![CM Commerce Endpoint](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-After the endpoint and optionally an authorization header for staged catalog support is set, the endpoint will be displayed on the detail page. Clicking the Edit icon will open the same dialog where the endpoint can be modified if necessary.
+After the endpoint and optionally an authorization header for staged catalog support is set, the endpoint is displayed on the detail page. Clicking the Edit icon will open the same dialog where the endpoint can be modified if necessary.
 
 ![CM Enviornment Information](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
@@ -112,7 +112,7 @@ This configuration can be adjusted for the project via the CIF Cloud Service con
 The following properties can be configured:
 
 - GraphQL Client - select the configured GraphQL client for commerce backend communication. This should typically stay at default.
-- Store View - the store view identifier. If empty, the default store view will be used.
+- Store View - the store view identifier. If empty, the default store view is used.
 - GraphQL Proxy Path - the URL path GraphQL Proxy in AEM use to proxy requests to the commerce backend GraphQL endpoint.
     >[!NOTE]
     >

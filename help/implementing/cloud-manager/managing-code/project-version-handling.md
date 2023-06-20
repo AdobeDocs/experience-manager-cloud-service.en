@@ -16,7 +16,7 @@ If the original project version meets certain criteria, the updated Maven projec
 >
 >This original project version value must be statically set in the `<version>` element of the top-level `pom.xml` file in the git repository branch.
 
-If the original version does meet these criteria, then the generated version will be appended to the original version as a new version segment. The generated version will also be slightly modified to include proper sorting and version handling. For example, assuming a generated version of `2019.926.121356.0000020490` would have the following results.
+If the original version does meet these criteria, then the generated version is appended to the original version as a new version segment. The generated version will also be slightly modified to include proper sorting and version handling. For example, assuming a generated version of `2019.926.121356.0000020490` would have the following results.
 
 | Version | Version in `pom.xml` | Comment |
 |---|---|---|

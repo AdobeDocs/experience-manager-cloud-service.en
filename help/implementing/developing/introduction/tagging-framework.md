@@ -1,6 +1,6 @@
 ---
 title: AEM Tagging Framework
-description: Tag content and leverage the AEM Tagging infrastructure in order to categorize and organize it.
+description: Tag content and use the AEM Tagging infrastructure to categorize and organize it.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 ---
 # The AEM Tagging Framework {#aem-tagging-framework}
@@ -10,11 +10,11 @@ Tagging allows content to be categorized and organized. Tags can be classified b
 * See [Using Tags](/help/sites-cloud/authoring/features/tags.md) for information about tagging content as a content author.
 * See Administering Tags for an administrator?s perspective about creating and managing tags, as well as to which content tags have been applied.
 
-This article focuses on the underlying framework which supports tagging in AEM and how to leverage it as a developer.
+This article focuses on the underlying framework which supports tagging in AEM and how to use it as a developer.
 
 ## Introduction {#introduction}
 
-To tag content and leverage the AEM Tagging infrastructure :
+To tag content and use the AEM Tagging infrastructure :
 
 * The tag must exist as a node of type [`cq:Tag`](#cq-tag-node-type) under the [taxonomy root node.](#taxonomy-root-node)
 * The tagged content node's `NodeType` must include the [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin.
@@ -149,7 +149,7 @@ The `cq:tags` property is a `String` array used to store one or more `TagID`s wh
 
 >[!NOTE]
 >
->To leverage AEM tagging functionality, custom developed applications should not define tag properties other than `cq:tags`.
+>To use AEM tagging functionality, custom developed applications should not define tag properties other than `cq:tags`.
 
 ## Moving and Merging Tags {#moving-and-merging-tags}
 

@@ -127,7 +127,7 @@ For example, the UI can adapt following approach:
   * `total=43`, `more=false` - Indicates that total number of hits is 43. The UI can show up to ten results as part of the first page and provide pagination for the next three pages. You can also use this implementation to display a descriptive text like **"43 results found"**.
   * `total=100`, `more=true` - Indicates that the total number of hits is greater than 100 and the exact count is not known. The UI can show up to ten as part of the first page and provide pagination for the next ten pages. You can also use this to display a text like **"more than 100 results found"**. As the user goes to the next pages calls made to the Query Builder would increase the limit of `guessTotal` and also of the `offset` and `limit` parameters.
 
-`guessTotal` should also be used in cases where the UI needs to make use of infinite scrolling, in order to avoid the Query Builder from determining the exact hit count.
+`guessTotal` should also be used in cases where the UI needs to make use of infinite scrolling to avoid the Query Builder from determining the exact hit count.
 
 ### Find jar Files and Order Them, Newest First {#find-jar-files-and-order-them-newest-first}
 
@@ -273,7 +273,7 @@ property.3_value=Whistler Mountain Biking
 
 ## Refining What is Returned {#refining-what-is-returned}
 
-By default, the QueryBuilder JSON Servlet will return a default set of properties for each node in the search result (for example, path, name, title, etc.). In order to gain control over which properties are returned, you can do one of the following:
+By default, the QueryBuilder JSON Servlet will return a default set of properties for each node in the search result (for example, path, name, and title). To gain control over which properties are returned, you can do one of the following:
 
 Specify
 
@@ -281,7 +281,7 @@ Specify
 p.hits=full
 ```
 
-in which case all properties will be included for each node:
+In which case, all properties are included for each node:
 
 `http://<host>:<port>/bin/querybuilder.json?p.hits=full&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 
@@ -314,7 +314,7 @@ p.hits=selective
 p.properties=sling:resourceType jcr:primaryType
 ```
 
-Another thing you can do is include child nodes in the Query Builder response. In order to do this you need to specify
+Another thing you can do is include child nodes in the Query Builder response. To do this you need to specify
 
 ```xml
 p.nodedepth=n

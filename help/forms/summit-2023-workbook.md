@@ -56,7 +56,7 @@ In this lesson, you familiarize yourself with AEM Forms as a Cloud Service envir
 
 1.  Open your browser and enter the URL of the Cloud Service author environment.
 
-1.  Log in to the Cloud Service author environment. The login credentials for your author environment will be shared with you during the lab. 
+1.  Log in to the Cloud Service author environment. The login credentials for your author environment are shared with you during the lab. 
 
 1.  After you are logged in, navigate to the AEM Forms UI. Click **Forms**.
 

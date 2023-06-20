@@ -104,7 +104,7 @@ The next release is planned for June 03, 2021.
 
 * The repository endpoint in the Public API now includes the Git URL.
 
-* Deployment log downloaded by a Cloud Manager user will be more insightful and will now include details about failures and success scenarios.
+* Deployment log downloaded by a Cloud Manager user are more insightful and include details about failures and success scenarios.
 
 * Intermittent failures encountered while pushing code to Adobe git have now been resolved.
 
@@ -142,7 +142,7 @@ The Release Date for Content Transfer Tool v1.4.6 is May 27, 2021.
 
 * New logging statement was added to the quickstart's error log, if the user doesn't have execute permission on the Java executable.
 
-* When a user deletes a migration set from the CTT UI, where an extraction was performed, the `tmp` folder associated with that migration set will be deleted to save space.
+* When a user deletes a migration set from the CTT user interface, where an extraction was performed, the `tmp` folder associated with that migration set is deleted to save space.
 
 ### Bug Fixes {#bug-fixes-ctt-latest}
 

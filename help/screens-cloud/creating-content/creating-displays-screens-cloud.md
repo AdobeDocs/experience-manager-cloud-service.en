@@ -7,7 +7,7 @@ exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 
 Once you have published your channel, it is now time to create your display in the Screens Services Provider.
 
-A Display is a virtual grouping of screens that are usually positioned next to each other. The display is usually permanent in respect to an installation. This will be the object content authors will work with and always reference to as logical display rather than their physical counter part(s).
+A Display is a virtual grouping of screens that are usually positioned next to each other. The display is usually permanent in respect to an installation. This object content is what authors work with and always reference to as logical display rather than their physical counter parts.
 
 ## Objective {#objective}
 
@@ -122,7 +122,7 @@ All folder operations are accessible via the selection action bar in inventory v
 
 1. In the inventory view, select the desired child folder you want to delete and ensure it is empty.
 
-1. Click the **Delete** action in the selection action bar. The action will be disabled if the folder is not empty.
+1. Click **Delete** action in the selection action bar. The action is disabled if the folder is not empty.
 
 
 ## What's Next {#whats-next}

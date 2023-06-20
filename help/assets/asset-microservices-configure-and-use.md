@@ -137,7 +137,7 @@ The custom applications are headless [Project App Builder](https://developer.ado
 
 ### An example of a custom profile {#custom-profile-example}
 
-To illustrate custom profile's usage, let's consider a use case to apply some custom text to campaign images. You can create a processing profile that leverages the Photoshop API to edit the images.
+To illustrate custom profile's usage, let's consider a use case to apply some custom text to campaign images. You can create a processing profile that uses the Photoshop API to edit the images.
 
 Asset Compute Service integration allows Experience Manager to pass these parameters to the custom application using the [!UICONTROL Service Parameters] field. The custom application then calls Photoshop API and passes these values to the API. For example, you can pass font name, text color, text weight and text size to add the custom text to campaign images.
 

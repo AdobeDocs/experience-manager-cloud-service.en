@@ -52,7 +52,7 @@ If you choose another provider your administrator must install the connector pac
 >
 >If you choose to use the Microsoft Translator connector for testing purposes, you do not need to carry out the steps in the next two sections: [Creating a Translation Integration Configuration](#create-config) and [Associate the Configuration with Your Content.](#associate) However you are advised to read them so that you are familiar with the steps for when you need to configure your preferred connector.
 >
->The trial license of the Microsoft Translator connector is not intended for production purposes and if you decide to license it, the system administrator must follow the steps detailed in the [Additional Resources](#additional-resources) section at the end of this document in order to configure that license.
+>The trial license of the Microsoft Translator connector is not intended for production purposes and if you decide to license it, the system administrator must follow the steps detailed in the [Additional Resources](#additional-resources) section at the end of this document so you can configure that license.
 
 ## Creating a Translation Integration Configuration {#create-config}
 
@@ -93,7 +93,7 @@ To create a new translation configuration:
    1. **Translate Metadata** - Check this to translate asset metadata.
    1. **Translate Tags** - Check this to translate tags that are associated with the asset.
    1. **Auto-Execute Translation** - Check this property if you want translations to be automatically sent to your translation service.
-   1. **Disable Update-Only Translation** - When this option is checked, updating the translation project will submit all translatable fields for translation, not just the ones changed since last translation. Updating your translation project will be discussed later in the journey.
+   1. **Disable Update-Only Translation** - When this option is checked, updating the translation project will submit all translatable fields for translation, not just the ones changed since last translation. Updating your translation project is discussed later in the journey.
    1. **Enable Content Model Fields for Translation** - Check this option so the translation configuration automatically recognizes fields in the Content Models based on the **Translatable** flag.
 
 1. Tap or click **Save &amp; Close**.

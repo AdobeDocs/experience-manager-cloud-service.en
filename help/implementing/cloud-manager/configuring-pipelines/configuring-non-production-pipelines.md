@@ -49,7 +49,7 @@ Once you have set up your program and have at least one environment using the Cl
 1. If you choose to create a **Deployment Pipeline** you will also need to define the **Important Metric Failures Behavior**.
 
    * **Ask every time** - This is the default setting and requires manual intervention on any important failure.
-   * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
+   * **Fail Immediately** - If selected, the pipeline is cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
    * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an important failure occurs. This is essentially emulating a user manually approving each failure.
 
 1. Click **Continue**.
@@ -93,7 +93,7 @@ A full-stack code pipeline simultaneously deploys back-end and front-end code bu
 
 >[!NOTE]
 >
->If a full-stack code pipeline already exists for the selected environment, this selection will be disabled.
+>If a full-stack code pipeline already exists for the selected environment, this selection is disabled.
 
 To finish the configuration of the full-stack code non-production pipeline, follow these steps.
 
@@ -128,7 +128,7 @@ A web tier config pipeline Deploys HTTPD/Dispatcher configurations. See the docu
 
 >[!NOTE]
 >
->If a web-tier code pipeline already exists for the selected environment, this selection will be disabled.
+>If a web-tier code pipeline already exists for the selected environment, this selection is disabled.
 
 To finish the configuration of the web-tier code non-production pipeline, follow these steps.
    
@@ -160,7 +160,7 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
 
-Please refer to the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of in order to get the full potential out of this process.
+See the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
 
 ## Skip Dispatcher Packages {#skip-dispatcher-packages}
 

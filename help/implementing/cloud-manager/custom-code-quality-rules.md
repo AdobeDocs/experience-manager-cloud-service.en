@@ -106,7 +106,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Severity**: Critical
 * **Since**: Version 2018.6.0
 
-When executing HTTP requests from inside an Experience Manager application, it is critical to ensure that proper timeouts are configured in order to avoid unnecessary thread consumption. Unfortunately, the default behavior of both Java&trade;'s default HTTP Client (`java.net.HttpUrlConnection`) and the commonly used Apache HTTP Components client is to never time out, so timeouts must be explicitly set. Further, as a best practice, these timeouts should be no more than 60 seconds.
+When executing HTTP requests from inside an Experience Manager application, it is critical to ensure that proper timeouts are configured to avoid unnecessary thread consumption. Unfortunately, the default behavior of both Java&trade;'s default HTTP Client (`java.net.HttpUrlConnection`) and the commonly used Apache HTTP Components client is to never time out, so timeouts must be explicitly set. Further, as a best practice, these timeouts should be no more than 60 seconds.
 
 #### Non-compliant code {#non-compliant-code-2}
 
@@ -805,7 +805,7 @@ Customers using reverse replication should contact Adobe for alternative solutio
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-Experience Manager client libraries may contain static resources like images and fonts. As described in the document [Using Preprocessors,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) when using proxied client libraries these static resources must be contained in a child folder named `resources` in order to be effectively referenced on the publish instances.
+Experience Manager client libraries may contain static resources like images and fonts. As described in the document [Using Preprocessors,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) when using proxied client libraries these static resources must be contained in a child folder named `resources` to be effectively referenced on the publish instances.
 
 #### Non-compliant code {#non-compliant-proxy-enabled}
 

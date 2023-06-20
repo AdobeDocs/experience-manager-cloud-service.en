@@ -39,19 +39,19 @@ In this video, learn basic branching strategies.
 
 ## Feature Branch Development {#feature-development}
 
-Use a feature branch to isolate code changes in a customer-managed git repository and synchronize with Cloud Manager's git repository in order to use a non-production pipeline for code quality and validation testing.
+Use a feature branch to isolate code changes in a customer-managed git repository and synchronize with Cloud Manager's git repository to use a non-production pipeline for code quality and validation testing.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
 
 ## Production Deployment {#production-deployment}
 
-Prepare code for a production release in a customer-managed git repository and synchronize with Cloud Manager's git repository in order to deploy to stage and production environments.
+Prepare code for a production release in a customer-managed git repository and synchronize with Cloud Manager's git repository to deploy to stage and production environments.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
 ## Synchronizing Release Tags {#sync-tags}
 
-Synchronize release tags from a Cloud Manager git repository into a customer-managed git repository in order to provide visibility for what code has been deployed to staging and production environments.
+Synchronize release tags from a Cloud Manager git repository into a customer-managed git repository to provide visibility for what code has been deployed to staging and production environments.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
 

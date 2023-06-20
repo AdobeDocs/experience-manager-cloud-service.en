@@ -40,7 +40,7 @@ Clicking on the email will bring you to the Actions Center, with a popup showing
 
 Clicking the **Learn More** link navigates the user to this article, where the notification type can be referenced in the [supported notification types table](#supported-notification-types) below, which provides guidance on what action to take.
 
-In the Actions Center, you can see a list of other recent notifications. It is recommended that using the Actions list, you acknowledge a notification in order to signal to Adobe that your organization is aware of the task, and to later resolve the notification when corrective action has been taken.
+In the Actions Center, you can see a list of other recent notifications. It is recommended that using the Actions list, you acknowledge a notification to signal to Adobe that your organization is aware of the task, and to later resolve the notification when corrective action has been taken.
 
 ![Notification list](/help/operations/assets/notification-list.png)
 
