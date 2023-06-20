@@ -63,9 +63,9 @@ The User Mapping Tool is integrated into the Content Transfer Tool. You can down
    * **Access Token**: Enter the Access Token that you saved from the Setup step.
 
       >[!NOTE]
-      >The Access Token expires every 24 hours and a new one needs to be created. To create a new token, go back into [Adobe Developer Console](https://console.adobe.io), choose your project, click on **User Management API** and paste the same private key into the box.
+      >The Access Token expires every 24 hours and a new one needs to be created. To create a new token, go back into [Adobe Developer Console](https://console.adobe.io), choose your project, click **User Management API**, and paste the same private key into the box.
 
-1. After populating the fields, click on **Test Configuration** to test the connection to the User Management API service. If the connection is successful, you will be able to click on **Save** to save the configuration. 
+1. After populating the fields, click **Test Configuration** to test the connection to the User Management API service. If the connection is successful, you can click **Save** to save the configuration. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
@@ -82,12 +82,12 @@ The User Mapping Tool is integrated into the Content Transfer Tool. You can down
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
 
 
-1. Once User Mapping is complete, click on **Results** to view the summary.
+1. After User Mapping is complete, click **Results** to view the summary.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
-   >* Once User Mapping is complete, you can navigate back to Content Migration page using the breadcrumb. The User Mapping card displays the status and timestamp. Click on **Content Transfer** to create a migration Set to run extraction. Refer to [Running the Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) for more details.
+   >* After User Mapping is complete, you can navigate back to Content Migration page using the breadcrumb. The User Mapping card displays the status and timestamp. Click on **Content Transfer** to create a migration Set to run extraction. Refer to [Running the Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) for more details.
 
 ### Resuming the User Mapping Process {#resume-user-mapping-process}
 
@@ -102,21 +102,21 @@ If the User Mapping process is stopped due to any of the following reasons:
    
 Follow the steps below to resume the User Mapping process:
 
-1. Click on **View Log** to review the User Mapping log to check the saved progress.
+1. Click **View Log** to review the User Mapping log to check the saved progress.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
 
-1. Click on the **Start User Mapping** button again to resume from where it left off. 
+1. Click **Start User Mapping** button again to resume from where it left off. 
 
    >[!NOTE]
    >Ensure before restarting that the access token is still valid or has been refreshed.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
 
-1. Click on **Start** from the the dialog box to resume the User Mapping process.
+1. Click **Start** from the the dialog box to resume the User Mapping process.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
-   Once the User Mapping process completes, you will view the **Status** as **FINISHED** for that specific configuration.
+   After the User Mapping process completes, you can view the **Status** as **FINISHED** for that specific configuration.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)

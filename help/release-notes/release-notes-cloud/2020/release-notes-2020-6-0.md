@@ -42,9 +42,9 @@ Release 2.9.0 of the [Core Components](https://experienceleague.adobe.com/docs/e
 
 ## What's New in Foundations in AEM as a Cloud Service {#foundations}
 
-AEM project build times will improve by removing all references in the AEM project’s pom.xml to the remote repository `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+AEM project build times will improve by removing all references in the AEM project's pom.xml to the remote repository `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-The AEM as a Cloud Service SDK API Jar, which was previously hosted in that location, is now located in Maven Central, which is Maven’s default artifact repository.
+The AEM as a Cloud Service SDK API Jar, which was previously hosted in that location, is now located in Maven Central, which is Maven's default artifact repository.
 
 ## What's New in Cloud Manager {#cloud-manager}
 
@@ -66,7 +66,7 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 * A **LEARN** page is now available in Cloud Manager, accessible via the top navigation. This page includes resources to help users learn about the most frequently used work-flows as relevant to their roles assigned in Cloud Manager.
 
-* Sandbox Programs are now identified by means of a **Sandbox** badge that will be displayed on the program card on the landing page as well as next to the program name in the **Program Overview** page.
+* Sandbox Programs are now identified by means of a **Sandbox** badge that is displayed on the program card on the landing page as well as next to the program name in the **Program Overview** page.
 
 * A user in the SysAdmin role now has one-click access to the location in Admin Console from where user roles or permissions to Cloud Manager can be managed. A **Manage Access** button is now available on the landing page next to the **Add Program** button.
   
@@ -92,7 +92,7 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 ### Known Issues {#known-issues-cm}
 
-* Environments within a Sandbox program will be hibernated when no activity is detected for a certain duration. This status will not be observed in Cloud Manager. The status can however be observed via Developer Console. This will be addressed in an upcoming release.
+* Environments within a Sandbox program are hibernated when no activity is detected for a certain duration. This status will not be observed in Cloud Manager. The status can however be observed via Developer Console. This will be addressed in an upcoming release.
 
 * The link to the Developer Console directly from Cloud Manager will not display the option to de-hibernate/hibernate a Sandbox Program's environment. To address this, once at the Developer Console, add the pattern `#release-cm-p1234-e5678` to the end of the url, where *1234* is the Program ID and *5678* is the Environment ID. This will be addressed in an upcoming release.
 
@@ -170,7 +170,7 @@ The release provides the following other enhancements:
 * Ability to reprocess assets with asset processing profiles, giving users full control of the process (run full asset processing, just apply specific processing profile, and decide if post-processing workflow should be run).
 * Search queries return results faster now when the underlying cluster instance has been restarted behind the scenes (the initial search run could last longer in such a case before).
 * Sort by 'Name' when viewing assets in list view in Assets interface and in the search results. See [search assets](/help/assets/search-assets.md#sort).
-* Sort on ‘Created’ (Date) when viewing assets in list view in Assets interface and in the search results. See [search assets](/help/assets/search-assets.md#sort).
+* Sort on 'Created' (Date) when viewing assets in list view in Assets interface and in the search results. See [search assets](/help/assets/search-assets.md#sort).
 * Support to convert EPS files to images using asset microservices.
 
 ### Bug Fixes {#assets-bug-fixes}

@@ -63,8 +63,8 @@ Follow these steps to check the status of IP allow lists.
 * **Delete Failed** - One or more un-applications failed during a delete operation.
 
   * Each un-application is listed along with the status **Complete** or **Failed**.
-  * The status will be **Delete Failed** if one un-application fails. 
-  * The status will remain as **Delete Failed** until all failures are cleared.
+  * The status becomes **Delete Failed** if one un-application fails. 
+  * The status remains as **Delete Failed** until all failures are cleared.
     * You must select **Delete** from the ellipsis menu at the far right of the row in the table to clear any failure.
   * You can not update an IP allow list while the status is **Failed**.
 
@@ -84,7 +84,7 @@ Deleting an IP allow list automatically un-applies it from all services and dele
 
 ## Pre-Existing CDN Configurations {#pre-existing-cdn}
 
-If you have a pre-existing CDN configuration for your IP allow lists, there will be an informative message on the the **IP Allow List** page, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
+If you have a pre-existing CDN configuration for your IP allow lists, there is an informative message on the the **IP Allow List** page, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
 
 The message disappears once all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
 

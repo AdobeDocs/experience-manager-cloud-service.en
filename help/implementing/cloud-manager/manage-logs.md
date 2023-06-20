@@ -48,7 +48,7 @@ You can also tail logs via the command line interface.
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-In order to obtain the environment Id (1884 in this example) and the available service or log name options you can use the following commands.
+To obtain the environment Id (1884 in this example) and the available service or log name options you can use the following commands.
 
 ```shell
 $ aio cloudmanager:list-environments
