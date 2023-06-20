@@ -5,7 +5,7 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 ---
 # Editing Page Properties {#editing-page-properties}
 
-You can define the required properties for a page. These can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.
+You can define the required properties for a page. These can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information is available as appropriate.
 
 ## Page Properties {#page-properties}
 
@@ -20,7 +20,7 @@ The properties are distributed across several tabs.
   * **Tags** - Here you can add, or remove tags from the page by updating the list in the selection box.
     * After selecting a tag is it listed below the selection box. You can remove a tag from this list using the x.
     * A completely new tag can be entered by typing the name in an empty selection box.
-      * The new tag will be created when you hit enter.
+      * The new tag is created when you press enter.
       * The new tag will then be shown with a small star on the right indicating that it is a new tag.
     * With the drop-down functionality you can select from existing tags.
     * An x appears when you mouse-over a tag entry in the selection box, which can be used to remove that tag for this page.
@@ -34,7 +34,7 @@ The properties are distributed across several tabs.
   * **Brand Slug** 
 
     * **Override** - Check to define the brand slug on this page.
-      * The value will be inherited by any child pages unless they also have their **Override** values set.
+      * The value is inherited by any child pages unless they also have their **Override** values set.
     * **Override value** - The text of the brand slug to be appended to the page title.
       * The value is appended to the page title after a pipe character such as "Cycling Tuscany | Always ready for the WKND"
 
@@ -44,8 +44,8 @@ The properties are distributed across several tabs.
 
 * **More Titles and Description**
 
-  * **Page Title** - A title to be used on the page. Typically used by title components. If empty the **Title** will be used.
-  * **Navigation Title** - You can specify a separate title for use in the navigation (for example, if you want something more concise). If empty, the **Title** will be used.
+  * **Page Title** - A title to be used on the page. Typically used by title components. If empty, the **Title** is used.
+  * **Navigation Title** - You can specify a separate title for use in the navigation (for example, if you want something more concise). If empty, the **Title** is used.
   * **Subtitle** - A subtitle for use on the page.
   * **Description** - Your description of the page, its purpose, or any other details you want to add.
 
@@ -56,15 +56,15 @@ The properties are distributed across several tabs.
   > See [On and Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) for details of how to configure the related automatic replication.
 
   >[!NOTE]
-  >If either the **On Time** or **Off Time** is in the past, and automatic replication is configured, then the relevant action will be triggered immediately.
+  >If either the **On Time** or **Off Time** is in the past, and automatic replication is configured, then the relevant action is triggered immediately.
 
-  * **On Time** - The date and time at which the published page will be made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
+  * **On Time** - The date and time at which the published page is made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
 
-    * If already [published (manually)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) this page will be kept dormant (hidden) until rendering at the specified time.
-    * If not published, and configured for auto-replication, the page will be automatically published, then rendered, at the specified time.
-    * If not published, and not configured for auto-replication, the page will not be automatically published, so a 404 will be seen when an attempt to access the page is made.
+    * If already [published (manually)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) this page is kept dormant (hidden) until rendering at the specified time.
+    * If not published, and configured for auto-replication, the page is automatically published, then rendered, at the specified time.
+    * If not published, and not configured for auto-replication, the page is not automatically published, so a 404 is seen when an attempt to access the page is made.
   
-  * **Off Time** - Similar to and often used in combination with **On Time**, this defines the time at which the published page will be hidden on the publish environment.
+  * **Off Time** - Similar to and often used in combination with **On Time**, this defines the time at which the published page is hidden on the publish environment.
 
   * Leave these fields (**On Time** and **Off Time**) empty for pages you want to publish immediately and have available on the publish environment until they are deactivated (the normal scenario).
 
@@ -109,7 +109,7 @@ The properties are distributed across several tabs.
 
 * **Template Settings**
 
-  * **Allowed Templates** - [Defines the list of templates that will be available](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch
+  * **Allowed Templates** - [Defines the list of templates that are available](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch
 
 * **Authentication Requirement**
 
@@ -127,7 +127,7 @@ The properties are distributed across several tabs.
 
 * **SEO**
 
-  * **Canonical Url** - can be used to overwrite the page's canonical Url; if left blank the page's Url will be its canonical Url
+  * **Canonical Url** - can be used to overwrite the page's canonical Url; if left blank the page's Url is its canonical Url
 
   * **Robots Tags** - select the robots tags to control the behavior of search engine crawlers.
 
@@ -135,7 +135,7 @@ The properties are distributed across several tabs.
     >
     >Some of the options conflict with each other. In case of a conflict the more permissive option takes precedence.
 
-  * **Generate Sitemap** - when selected, a sitemap.xml will be generated for this page, and its descendants
+  * **Generate Sitemap** - when selected, a sitemap.xml is generated for this page, and its descendants
 
 ### Images {#images}
 
@@ -247,7 +247,7 @@ Through a simple configuration, a content author can now enable progressive web 
 
   * **Caching strategy and frequency of content refresh** - defines the caching model for your PWA
   * **Files to cache for offline use**
-    * **File pre-caching (technical preview)** - files hosted on AEM will be saved to the local browser cache when the service worker is installing and before it is used
+    * **File pre-caching (technical preview)** - files hosted on AEM are saved to the local browser cache when the service worker is installing and before it is used
     * **Client-side Libraries** - client-side libraries to cache for offline experience
     * **Path inclusions** - network requests for the defined paths are intercepted and cached content is returned in accordance with the configured Caching strategy and frequency of content refresh
     * **Path exclusions** - these files will never be cached regardless of the settings under File pre-caching and Path inclusions
@@ -314,7 +314,7 @@ You can only bulk edit pages that:
 
 * Share the same resource type
 * Are not part of a livecopy
-  * If any of the pages are in a live copy then a message will be shown when the properties are opened.
+  * If any of the pages are in a live copy, then a message is shown when the properties are opened.
 
 Once you have entered Bulk Editing you can:
 

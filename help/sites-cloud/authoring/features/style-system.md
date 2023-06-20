@@ -148,7 +148,7 @@ This property is set on the `cq:Component` node. For example:
 >
 >1. HTL takes precedence over everything: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Then among multiple active styles, the first style in the list of styles configured in the component's policy is taken.
->1. Finally, the component's `cq:htmlTag`/ `cq:tagName` will be considered as a fallback value.
+>1. Finally, the component's `cq:htmlTag`/ `cq:tagName` is considered as a fallback value.
 >
 
 This ability to define style names is useful for generic components, like the Layout Container, or the Content Fragment component, to provide them with additional meaning.

@@ -63,7 +63,7 @@ Before exporting a fragment you need to add the **Cloud Configuration** for **Ad
 * select a Target workspace as destination
 * select an externalizer domain for rewriting references in the Content Fragment (optional)
 
-The required options can be selected in **Page Properties** of the required folder and/or fragment; the specification will be inherited as necessary.
+The required options can be selected in **Page Properties** of the required folder, or fragment, or both; the specification is inherited as necessary.
 
 1. Navigate to the **Assets** console.
 
@@ -332,9 +332,9 @@ To export a Content Fragment from AEM to Target (after specifying the Cloud Conf
 
    >[!NOTE]
    >
-   >The actual actions shown will be dependent on the status of your fragment and related assets. 
+   >The actual actions shown are dependent on the status of your fragment and related assets. 
    >
-   >If everything has already been published, and nothing has been modified since, then this step will be passed over.
+   >If everything has already been published, and nothing has been modified since, then this step is passed over.
 
    >[!NOTE]
    >

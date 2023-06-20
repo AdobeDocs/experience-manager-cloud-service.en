@@ -106,7 +106,7 @@ For both views (List and Calendar) you can define settings:
 >
 >Although it is possible to select more than one item, actions can only be taken on one item at a time.
 
-1. To take an action on an item, select the thumbnail for the appropriate item. Icons for the actions that are applicable to that item will be shown in the toolbar:
+1. To take an action on an item, select the thumbnail for the appropriate item. Icons for the actions that are applicable to that item are shown in the toolbar:
 
    ![Select inbox item](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
@@ -130,11 +130,11 @@ For both views (List and Calendar) you can define settings:
    >
    >* Workflow items - [Participating in Workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
-2. Depending on the item selected an action will be started, for example:
+2. Depending on the item selected, an action is started, for example:
 
-    * A dialog appropriate to the action will be opened
-    * An action wizard will be started
-    * A documentation page will be opened
+    * A dialog box appropriate to the action is opened
+    * An action wizard is started
+    * A documentation page is opened
 
    For example, **Delegate** will open a dialog:
 
