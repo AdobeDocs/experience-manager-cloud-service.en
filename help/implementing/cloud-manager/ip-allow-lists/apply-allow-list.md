@@ -16,7 +16,7 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 1. Navigate to the **Environments** screen from the **Overview** page.
 1. Navigate to the specific environment details page on the **Environments** screen and navigate to the **IP Allow List** table.
 1. Use the input fields at the top of the table to select the IP allow list and the author or publish service to which you wish to apply it.
-   * The IP Allow List must exist in Cloud Manager in order to apply it.
+   * The IP Allow List must exist in Cloud Manager to apply it.
 1. Click **Apply** and confirm your submission.
 
 ## Un-Applying Allow Lists {#un-applying}

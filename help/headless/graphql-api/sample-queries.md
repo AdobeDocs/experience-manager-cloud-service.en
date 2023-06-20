@@ -356,6 +356,58 @@ If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the 
 }
 ```
 
+### Sample Query - Names of All Cities Tagged as City Breaks {#sample-names-all-cities-tagged-city-breaks}
+
+If you:
+
+* create a variety of tags, named `Tourism` : `Business`, `City Break`, `Holiday`
+* and assign these to the Master variation of various `City` instances
+
+Then you can use a query to return details of the `name` and `tags`of all entries tagged as City Breaks in the `city`schema.
+
+**Sample Query**
+
+```xml
+query {
+  cityList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "tourism:city-break", _operator: CONTAINS}]}}
+  ){
+    items {
+      name,
+      _tags
+    }
+  }
+}
+```
+
+**Sample Results**
+
+```xml
+{
+  "data": {
+    "cityList": {
+      "items": [
+        {
+          "name": "Berlin",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
+          ]
+        },
+        {
+          "name": "Zurich",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
 ### Sample Query - Full Details of a Company's CEO and Employees {#sample-full-details-company-ceos-employees}
 
 Using the structure of the nested fragments, this query returns the full details of a company's CEO and all its employees.
@@ -1282,16 +1334,40 @@ This query interrogates:
 
 ### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
 
+#### Single referenced model type
+
 This query interrogates:
 
 * for multiple Content Fragments of type `bookmark`
-  * with Fragment References to other fragments of the specific model types `article` and `adventure`
+  * with Fragment References to other fragments of the specific model type `Article`
 
 >[!NOTE]
 >
->The field `fragments` has the Data type `fragment-reference`, with the models `Article`, `Adventure` selected.
+>The field `fragments` has the Data type `fragment-reference`, with the model `Article` selected. Query delivers `fragments` as an array of `[Article]`.
 
-<!-- need replacement query -->
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### Multiple referenced model types
+
+This query interrogates:
+
+* for multiple Content Fragments of type `bookmark`
+  * with Fragment References to other fragments of the specific model types `Article` and `Adventure`
+
+>[!NOTE]
+>
+>The field `fragments` has the Data type `fragment-reference`, with the models `Article`, `Adventure` selected. Query delivers `fragments` as an array of `[AllFragmentModels]`, which is dereferenced with union type.
 
 ```graphql
 {
@@ -1500,6 +1576,62 @@ This query interrogates:
 }
 ```
 
+### Sample Query for multiple Content Fragments, and their Variations, of a given Model {#sample-wknd-multiple-fragment-variations-given-model}
+
+This query interrogates:
+
+* for Content Fragments of type `article` and all variations
+
+**Sample Query**
+
+```xml
+query {
+  articleList(
+    includeVariations: true  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
+### Sample Query for Content Fragment Variations of a given Model that have a specific tag attached{#sample-wknd-fragment-variations-given-model-specific-tag}
+
+This query interrogates:
+
+* for Content Fragments of type `article` with one, or more, Variations having the tag `WKND : Activity / Hiking`
+
+**Sample Query**
+
+```xml
+{
+  articleList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "wknd:activity/hiking", _operator: CONTAINS}]}}
+  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
 ### Sample Query for multiple Content Fragments of a given locale {#sample-wknd-multiple-fragments-given-locale}
 
 This query interrogates:
@@ -1577,6 +1709,84 @@ This query interrogates:
         }
     }
 }
+```
+
+### Sample Query with filtering by _tags ID and excluding variatons {#sample-filtering-tag-not-variations}
+
+This query interrogates:
+
+* for Content Fragments of type `vehicle` having the tag `big-block`
+* excluding variations
+
+**Sample Query**
+
+```graphql
+query {
+  vehicleList(
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    items {
+      _variation
+      _path
+      type
+      name
+      model
+      fuel
+      _tags
+    }
+  }
+} 
+```
+
+### Sample Query with filtering by _tags ID and including variatons {#sample-filtering-tag-with-variations}
+
+This query interrogates:
+
+* for Content Fragments of type `vehicle` having the tag `big-block`
+* including variations
+
+**Sample Query**
+
+```graphql
+{
+  enginePaginated(after: "SjkKNmVkODFmMGQtNTQyYy00NmQ4LTljMzktMjhlNzQwZTY1YWI2Cmo5", first: 9 ,includeVariations:true, sort: "name",
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    edges{
+    node {
+        _variation
+        _path
+        name
+        type
+        size
+        _tags
+        _metadata {
+          stringArrayMetadata {
+            name
+            value
+          }
+        }
+    }
+      cursor
+    }
+  }
+} 
 ```
 
 ## The Sample Content Fragment Structure (used with GraphQL) {#content-fragment-structure-graphql}

@@ -27,21 +27,16 @@ You can buy a domain name from a domain name registrar, a company or organizatio
 >
 >Cloud Manager is not a domain name registrar and does not provide DNS services.
 
-## Limitations {#limitations}
+## Custom Domain Names and BYO CDNs {#byo-cdn}
 
-There are a number of limitations to using custom domain names with AEMaaCS.
+AEM as a Cloud Service offers a built-in content delivery network (CDN) service, but also allows you to bring-your-own (BYO) CDN to use with AEM. Custom domains can be installed either in the AEM-managed CDN or a CDN you manage.
 
-* Custom domain names are supported in Cloud Manager for both publish and preview Services for Sites programs. Custom domains on the author side are not supported.
-* Each Cloud Manager Environment can host up to a maximum of 500 custom domains per environment.
-* AEM as a Cloud Service does not support wildcard domains.
-* Before adding a custom domain name, a valid SSL certificate that contains the custom domain name must be installed for your program. Refer to Adding an SSL Certificate to learn more.
-* Domain names cannot be added to environments while there is a current running pipeline attached to those environments.
-* Only one domain name can be added at a time.
-* The same domain name cannot be used on more than one environment.
+* Custom domain names (and certificates) that are installed in the AEM-managed CDN are managed via Cloud Manager.
+* Custom domain names (and certificates) that are installed in your own CDN are managed in that specific CDN. 
 
->[!NOTE]
->
->Custom domains are supported in Cloud Manager **only** if you are using the AEM managed CDN. If you bring your own CDN and [point it to the AEM managed CDN](/help/implementing/dispatcher/cdn.md) you will have to use that specific CDN to manage domains not Cloud Manager.
+Domains managed in your own CDN do not need to be installed by way of Cloud Manager. They are made available to AEM by way of X-Forwarded-Host and match the vhosts defined in the Dispatcher. See the [CDN documentation](/help/implementing/dispatcher/cdn.md).
+
+In one environment you can have both domains installed in the AEM-managed CDN and installed in your own CDN.
 
 ## Workflow {#workflow}
 
@@ -62,3 +57,15 @@ Adding a custom domain name requires interaction between the DNS service and Clo
 >[!TIP]
 >
 >Setting up custom domain names with AEM as a Cloud service is typically a simple process. However on occasion domain domain delegation issues can occur which can take 1-2 business days to resolve. For this reason, it is highly recommended to install the domains well before their go live date. See the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more information.
+
+## Limitations {#limitations}
+
+There are a number of limitations to using custom domain names with AEMaaCS.
+
+* Custom domain names are supported in Cloud Manager for both publish and preview services for Sites programs. Custom domains for author services are not supported.
+* Each Cloud Manager environment can host up to a maximum of 500 custom domains per environment.
+* Domain names can not be added to environments while there is a current running pipeline attached to those environments.
+* The same domain name can not be used on more than one environment.
+* Only one domain name can be added at a time.
+* AEM as a Cloud Service does not support wildcard domains such as `*.example.com`.
+* Before adding a custom domain name, a valid SSL certificate that contains the custom domain name (wildcard certificates are valid) must be installed for your program. Please refer to [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) to learn more.

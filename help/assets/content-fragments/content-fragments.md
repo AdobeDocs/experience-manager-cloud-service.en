@@ -40,6 +40,7 @@ This and the following pages cover the tasks for creating, configuring, maintain
 * [Using Associated Content](/help/assets/content-fragments/content-fragments-assoc-content.md) - adding associated content
 * [Metadata - Fragment Properties](/help/assets/content-fragments/content-fragments-metadata.md) - viewing and editing the fragment properties
 * Use [Content Fragments, together with GraphQL, to deliver content](/help/assets/content-fragments/content-fragments-graphql.md) for use in your applications. To help with this, you can preview [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md).
+* [Reuse Content Fragments using MSM for Assets](#reusing-content-fragments-with-msm-assets)
 
 >[!NOTE]
 >
@@ -101,11 +102,17 @@ Together with the JSON export capabilities of AEM core components, this structur
 
 >[!NOTE]
 >
->AEM also supports the translation of fragment content. 
-
->[!NOTE]
->
 >AEM also supports the translation of fragment content. See [Translating Assets](/help/assets/translate-assets.md) for further information.
+
+## Reusing Content Fragments with MSM for Assets {#reusing-content-fragments-with-msm-assets}
+
+When accessed through the **Assets** console you can use MSM and create Live Copies for your fragments.
+
+For further details see [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md).
+
+>[!CAUTION]
+>
+>If you want to use MSM (which creates copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md).
 
 ## Content Type {#content-type}
 
@@ -282,7 +289,7 @@ To use your Content Fragments for page authoring you also need:
 
 ## Example Usage {#example-usage}
 
-A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment you need to consider what will be used where.
+A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment, consider what is used and where.
 
 ### WKND Sample {#wknd-sample}
 

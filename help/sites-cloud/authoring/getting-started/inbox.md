@@ -168,7 +168,7 @@ From the inbox you can create tasks:
 
     * **Advanced**
 
-        * **Name**:This will be used to form the URL and if blank it will be based on the **Title**.
+        * **Name**: Used to form the URL and if blank it is based on the **Title**.
 
    ![Inbox add task advanced options](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 

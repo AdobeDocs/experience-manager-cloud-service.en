@@ -7,7 +7,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2023.1.0 |
+| Version | 2023.4.0 |
 | Type | Continuous Updates |
 | Availability date | Continuous Update |
 
@@ -33,10 +33,10 @@ To prepare for a release:
 
 ## Key Release Information {#key-articles}
 
-* [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [Feature Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
 * [What is New](what-is-new.md)
 * [Notable Changes](aem-cloud-changes.md)
-* [Known Issues](known-issues.md)
 * [Deprecated and Removed Features](deprecated-removed-features.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}

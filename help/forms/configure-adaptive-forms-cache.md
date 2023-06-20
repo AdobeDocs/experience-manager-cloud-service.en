@@ -176,7 +176,7 @@ When the Adaptive Form URL does not have any localization information, and **[!U
         RewriteRule "^/content/forms/af/(.*)[.](.*).html$" "/content/forms/af/$1.$2.html" [PT]
  
         # Handle selector based redirection basded on browser language
-        # The Rewrite Cond(ition) is looking for the Accept-Lanague header and if found takes the first two character which most likely will be the desired language selector.
+        # The Rewrite Cond(ition) is looking for the Accept-Lanague header and if found takes the first two characters which most likely is the desired language selector.
         RewriteCond %{HTTP:Accept-Language} ^(..).*$ [NC]
         RewriteRule "^/content/forms/af/(.*).html$" "/content/forms/af/$1.%1.html" [R]
    </VirtualHost>

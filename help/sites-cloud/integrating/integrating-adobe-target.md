@@ -12,7 +12,9 @@ As part of the Adobe Marketing Cloud, Adobe Target lets you increase content rel
 * using the Touch UI to create a Target Configuration in AEM as a Cloud Service (IMS configuration required).
 * adding and configuring Adobe Target as an extension in [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
-Adobe Launch is necessary for managing client-side properties for both Analytics and Target in AEM pages (JS libraries/tags). That said, the integration with Launch is needed for "experience targeting". For the Experience Fragments export to Target, you only need the Adobe Target Configuration and IMS.
+Adobe Launch is necessary for managing client-side properties for both Analytics and Target in AEM pages (JS libraries/tags). That said, the integration with Launch is needed for "experience targeting". 
+
+For the export of Experience Fragments and/or Content Fragments to Target, you only need the [Adobe Target Configuration and IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
 
 >[!NOTE]
 >
@@ -141,11 +143,11 @@ To learn how to build and publish please refer to this [page](https://experience
   <tr>
     <td>Location of the Target Configuration.</td>
     <td>/etc/cloudservices/testandtarget/</td>
-    <td>/conf/tenant/settings/cloudservices/target/</td>
+    <td>/conf/tenant/settings/cloudconfigs/target/</td>
     <td> Earlier multiple configurations were present under /etc/cloudservices/testandtarget but now a single configuration is present under a tenant.</td>
   </tr>
 </table>
 
 >[!NOTE]
 >
->Legacy configurations are still supported for existing customers (without the option to edit or create new ones). Legacy configurations will be part of content-packages uploaded by customers using VSTS.
+>Legacy configurations are still supported for existing customers (without the option to edit or create new ones). Legacy configurations are part of content-packages uploaded by customers using VSTS.

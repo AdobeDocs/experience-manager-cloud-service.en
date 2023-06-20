@@ -9,22 +9,22 @@ The following section outlines the general Release Notes for [!DNL Workfront for
 
 ## Release Date {#release-date}
 
-The release date for the latest version 1.9.8 of [!DNL Workfront for Experience Manager enhanced connector] is March 03, 2023.
+The release date for the latest version 1.9.11 of [!DNL Workfront for Experience Manager enhanced connector] is June 19, 2023.
 
 ## Release highlights {#release-highlights}
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following updates:
 
-* Performance improvements in Experience Manager while creating project linked folders in Workfront.
+* When you have advanced networking configured, there are issues while sending content from Adobe Workfront to AEM as a Cloud Service.
 
-* Comment deletions in Workfront are now reflected in Experience Manager.
-
-* Capability to manage blocking net-new customers on Experience Manager as a Cloud Service from configuring the connector.
+>[!NOTE]
+>
+>AEM 6.4 has reached the end of extended support. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/?lang=en).
 
 
 >[!IMPORTANT]
 >
->Adobe recommends you to [upgrade to the latest 1.9.8 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recommends you to [upgrade to the latest 1.9.11 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Known Issues {#known-issues}
 
@@ -34,7 +34,32 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 ## Previous releases {#previous-releases}
 
-### January 2022 release {#january-2022-release}
+### May 2023 release {#may-2023-release}
+
+* Workfront returns a 409 HTTP response for duplicate event subscriptions based on a REST call from Experience Manager to Workfront, which leads to a null pointer exception.
+
+### April 2023 release {#april-2023-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] version 1.9.9, released on April 10, 2023 includes the following updates:
+
+* Experience Manager displays an `DateTimeParseException` exception when it receives last modified date from Workfront during linked folder creation.
+
+* Issues while creating multiple linked project folders within a short duration.
+
+* Inability to configure a threshold limit on the number of new set of project linked folders.
+
+### March 2023 release {#march-2023-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] version 1.9.8, released on March 03, 2023 includes the following updates:
+
+* Performance improvements in Experience Manager while creating project linked folders in Workfront.
+
+* Comment deletions in Workfront are now reflected in Experience Manager.
+
+* Capability to manage blocking net-new customers on Experience Manager as a Cloud Service from configuring the connector.
+
+
+### January 2023 release {#january-2022-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] version 1.9.7, released on February 02, 2023 includes the following updates:
 
@@ -166,4 +191,3 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 >[!MORELIKETHIS]
 >
 >* [Integrate [!DNL Workfront for Experience Manager enhanced connector] with Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
->* [Integrate [!DNL Workfront for Experience Manager enhanced connector] with Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-integrations.html?lang=en)

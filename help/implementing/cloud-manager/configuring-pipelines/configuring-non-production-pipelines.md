@@ -32,7 +32,10 @@ Once you have set up your program and have at least one environment using the Cl
 
    ![Add non-production pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. On the **Configuration** tab of the **Add Non-Production Pipeline** dialog, select the type of non-production pipeline you with to add, either **Code Quality Pipeline** or **Deployment Pipeline**.
+1. On the **Configuration** tab of the **Add Non-Production Pipeline** dialog, select the type of non-production pipeline you with to add.
+
+   * **Code Quality Pipeline** - Create a pipeline that builds your code, runs unit tests, and evaluates code quality but does NOT deploy.
+   * **Deployment Pipeline** - Create a pipeline that builds your code, runs unit tests, evaluates code quality, and deploys to an environment.
 
    ![Add Non-Production pipeline dialog](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
@@ -41,7 +44,13 @@ Once you have set up your program and have at least one environment using the Cl
    * **Deployment Trigger** - You have the following options when defining the deployment triggers to start the pipeline.
    
      * **Manual** - Use this option to manually start the pipeline.
-     * **On Git Changes** - This options starts the CI/CD pipeline whenever commits are added to the configured git branch. With this option, you can still start the pipeline manually as required.  
+     * **On Git Changes** - This options starts the CI/CD pipeline whenever commits are added to the configured git branch. With this option, you can still start the pipeline manually as required.
+
+1. If you choose to create a **Deployment Pipeline** you will also need to define the **Important Metric Failures Behavior**.
+
+   * **Ask every time** - This is the default setting and requires manual intervention on any important failure.
+   * **Fail Immediately** - If selected, the pipeline is cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
+   * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an important failure occurs. This is essentially emulating a user manually approving each failure.
 
 1. Click **Continue**.
 
@@ -84,7 +93,7 @@ A full-stack code pipeline simultaneously deploys back-end and front-end code bu
 
 >[!NOTE]
 >
->If a full-stack code pipeline already exists for the selected environment, this selection will be disabled.
+>If a full-stack code pipeline already exists for the selected environment, this selection is disabled.
 
 To finish the configuration of the full-stack code non-production pipeline, follow these steps.
 
@@ -101,6 +110,12 @@ To finish the configuration of the full-stack code non-production pipeline, foll
      * Enter the first few characters of the branch name and the auto-complete feature of this field will find the matching branches to help you select.
    * **Ignore Web Tier Configuration** - When checked, the pipeline will not deploy your web tier configuration.
 
+   * **Pipeline** - If your pipeline is a deployment pipeline, you can choose to run a testing phase. Check the options you wish to enable in this phase. If none of the options are selected, the testing phase will not be displayed during pipeline execution.
+
+     * **Product Functional Testing** - Execute [product functional tests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) against the development environment.
+     * **Custom Functional Testing** - Execute [custom functional tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) against the development environment.
+     * **Custom UI Testing** - Execute [custom UI tests](/help/implementing/cloud-manager/ui-testing.md) for custom applications.
+
    ![Full-stack pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
 1. Click **Save**.
@@ -113,7 +128,7 @@ A web tier config pipeline Deploys HTTPD/Dispatcher configurations. See the docu
 
 >[!NOTE]
 >
->If a web-tier code pipeline already exists for the selected environment, this selection will be disabled.
+>If a web-tier code pipeline already exists for the selected environment, this selection is disabled.
 
 To finish the configuration of the web-tier code non-production pipeline, follow these steps.
    
@@ -145,7 +160,7 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
 
-Please refer to the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of in order to get the full potential out of this process.
+See the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
 
 ## Skip Dispatcher Packages {#skip-dispatcher-packages}
 

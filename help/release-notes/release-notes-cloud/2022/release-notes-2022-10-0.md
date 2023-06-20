@@ -1,11 +1,11 @@
 ---
 title: Release Notes for 2022.10.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2022.10.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
 ---
+# 2022.10.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-# Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
-
-The following section outlines the general Release Notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
+The following section outlines the feature release Notes for the 2022.10.0 version of [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ Have a look at the October 2022 Release Overview video for a summary of the feat
 
 * AEM as a Cloud Service (Author Service) is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Refer to AEM as a [Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
 
-* As previously mentioned in release notes, using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is deprecated and will be enforced in the coming days. Please refer to [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) for the suggested approaches for replicating these large content packages.
+* As previously mentioned in release notes, using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is now deprecated and enforced. See [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) for suggested approaches to replicating these large content packages.
 
 * Dispatcher configuration now references a file that lists common marketing campaign query parameters. Customers can choose to uncomment the parameters that are relevant to them, resulting in better caching. Refer to [Marketing campaign parameters](/help/implementing/dispatcher/caching.md#marketing-parameters) for more details.
 

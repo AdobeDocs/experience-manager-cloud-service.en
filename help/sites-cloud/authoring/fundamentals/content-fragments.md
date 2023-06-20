@@ -142,7 +142,7 @@ For in-between content you can:
 
 ### Using Associated Content {#using-associated-content}
 
-If you have [associated content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/sites-cloud/administering/content-fragments/content-fragments.md) these assets will be available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for [in-between content](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments). 
+If you have [associated content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/sites-cloud/administering/content-fragments/content-fragments.md) these assets are available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for [in-between content](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments). 
 
 >[!NOTE]
 >
@@ -175,5 +175,12 @@ Other changes, such as move, copy, delete must be made in the fragment editor.
 
 Fragments need to be published so they can used used on your published web pages:
 
-* A fragment can be published after [creating the fragment in the Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment). 
+* A fragment can be published after [creating the fragment in the Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment). 
 * If an *unpublished fragment* is used on a page that is being published, the fragment can also be published at this time.
+
+## Exporting Content Fragments {#exporting-content-fragments}
+
+For export to Adobe Target, JSON can be used to deliver the fragment. See:
+
+* [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+* [Exporting Content Fragments to Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)

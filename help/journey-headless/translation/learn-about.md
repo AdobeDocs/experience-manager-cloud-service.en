@@ -16,7 +16,7 @@ This document helps you understand headless content delivery, how AEM supports h
 
 ## Full-Stack Content Delivery {#full-stack}
 
-Ever since the rise of easy-to-use, large-scale content management systems (CMSes), organizations have leveraged them as a central location to manage messaging, branding, and communications. Using the CMS as a central point for administering experiences improved efficiency by eliminating the need to duplicate tasks in disparate systems.
+Ever since the rise of easy-to-use, large-scale content management systems (CMSes), organizations have used them as a central location to manage messaging, branding, and communications. Using the CMS as a central point for administering experiences improved efficiency by eliminating the need to duplicate tasks in disparate systems.
 
 ![The classic full-stack CMS](/help/journey-headless/developer/assets/full-stack.png)
 

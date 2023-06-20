@@ -10,22 +10,22 @@ Learn how to use the prerelease channel to get a preview of upcoming features to
 
 ## Introduction {#introduction}
 
-Adobe Experience Manager as a Cloud Service delivers new features on a monthly cadence, according to the [Experience Manager releases road map.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+Adobe Experience Manager as a Cloud Service delivers new features on a regular cadence, according to the [Experience Manager releases roadmap.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
 
-In order to become familiar with the features scheduled to go live the following month, you can subscribe to the prerelease channel, which is accessible by configuring your development environments or any sandbox environments. You can preview changes accessible via the AEM UI as well as build code against any new prerelease APIs.
+To become familiar with the features scheduled to go live the following feature release, you can subscribe to the prerelease channel, which is accessible by configuring your development environments or any sandbox environments. You can preview changes accessible via the AEM UI as well as build code against any new prerelease APIs.
 
-The list of prerelease features for a given month is posted within the [monthly release notes.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+The list of prerelease features for a given feature release is posted within the [release notes.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## AEM as a Cloud Service Releases {#releases}
 
 AEM as a Cloud Service has two types of releases.
 
-* **Monthly Releases** add capabilities and features to AEM as a Cloud Service
-* **Critical Updates** add security updates, performance enhancements, and bug fixes, and are applied on a daily basis.
+* **Feature Releases** add capabilities and features to AEM as a Cloud Service, upon activation
+* **Maintenance Releases** add security updates, performance enhancements, and bug fixes, and are applied on a regular and frequent basis.
 
 This pattern ensures continuous releases with no interruption of service.
 
-The prerelease channel allows you to preview features scheduled for the upcoming monthly release in order to evaluate upcoming functionality and plan for its possible implementation for your own projects. It allows you to plan ahead for the next monthly release.
+The prerelease channel lets you preview features scheduled for the upcoming feature release so you can evaluate upcoming functionality and plan for its possible implementation for your own projects. It lets you plan ahead for the next feature release.
 
 For example if it is May and you are subscribed to the prerelease channel, you can evaluate features in the upcoming June release.
 
@@ -42,7 +42,7 @@ Effectively taking advantage of the prerelease channel requires four steps.
 
 ## Mark Your Calendars {#mark-calendars}
 
-Monthly releases are scheduled well in advance and the release dates are published on [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+Feature releases are scheduled well in advance and the feature release activation dates are published on [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
 
 Take note of the release dates so you can plan time to review and test the upcoming features.
 
@@ -52,11 +52,11 @@ Once you have the release dates marked in your calendar, be sure to check the [A
 
 Each release is accompanied by release notes that document not only what is new in that release, but also the features that are available for prerelease evaluation. Get in the know ahead of time, and plan to take advantage of the latest features from AEMaaCS!
 
-You can also [check the known issues](/help/release-notes/known-issues.md) that are published along with every release so you can also be aware of any technical issues that may present a challenge to your evaluation or eventual adoption of any new features.
+You can also [check the known issues](/help/release-notes/maintenance/latest.md) that are published along with every release so you can also be aware of any technical issues that may present a challenge to your evaluation or eventual adoption of any new features.
 
 ## Enable the Prerelease Channel to Access and Try New Features {#new-features}
 
-The prerelease channel can be enabled on any development or sandbox environment. Prerelease can not be enabled on staging or production environments.
+The prerelease channel can be enabled on any development or sandbox environment. Prerelease cannot be enabled on staging or production environments.
 
 The prerelease features can be experienced in different ways:
 
@@ -105,7 +105,7 @@ You can also use the Cloud Manager API and CLI to update the environment variabl
 * [The Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) can also be used
 
     ```shell
-    aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease
+    aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL "prerelease
     ```
 
 The variable can be deleted or set back to a different value if you want the environment to be restored to the behavior of the regular (non-prerelease) channel.
@@ -151,7 +151,7 @@ Javadocs are published to Maven Central.
      </dependency>
    ```
 
-   In order to change to the prerelease SDK, simply change the dependency from `com.adobe.aem:aem-sdk-api` to `com.adobe.aem:aem-prerelease-sdk-api` as noted below:
+   To change to the prerelease SDK, simply change the dependency from `com.adobe.aem:aem-sdk-api` to `com.adobe.aem:aem-prerelease-sdk-api` as noted below:
 
    ```
    <dependencyManagement>
@@ -183,7 +183,7 @@ The [AEM CS SDK build Analyzer maven plugin v1.0 and higher](https://experiencel
 
 ## Train Your Users {#train-users}
 
-Once you have tested the new features in the prerelease channel and have decided to leverage them in your projects, you need to train your users.
+Once you have tested the new features in the prerelease channel and have decided to use them in your projects, you need to train your users.
 
 Adobe Experience League offers lots of resources to learn AEMaaCS.
 

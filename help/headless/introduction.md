@@ -1,13 +1,13 @@
 ---
 title: Introduction to Headless for AEM
-description: Learn about Headless in Adobe Experience Manager (AEM) with a combination of detailed documentation and headless journeys. Learn how features like Content Models, Content Fragments, and a GraphQL API are used to power headless experiences. 
+description: Learn about Headless in Adobe Experience Manager (AEM) with a combination of detailed documentation and headless journeys. Learn how features like Content Fragment Models, Content Fragments, and a GraphQL API are used to power headless experiences. 
 landing-page-description: Understand how to use and administer Headless in Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 ---
 
 # Introduction to Adobe Experience Manager as a Headless CMS {#introduction-aem-headless}
 
-Learn how to use Adobe Experience Manager (AEM) as a Headless CMS, with features such as Content Models, Content Fragments, and a GraphQL API that power headless experiences at scale.
+Learn how to use Adobe Experience Manager (AEM) as a Headless CMS (Content Management System), with features such as Content Fragment Models, Content Fragments, and a GraphQL API that together power headless experiences at scale.
 
 You can read detailed documentation of the various features involved and/or follow the selection of [Headless Journeys to get an overview of the first steps](#first-steps).
 
@@ -15,11 +15,13 @@ You can read detailed documentation of the various features involved and/or foll
 >
 >See also [What is Headless?](/help/headless/what-is-headless.md) for an introduction to Headless concepts and terminology.
 
+{{headless-trials-promotion}}
+
 ## Overview {#overview}
 
 AEM Headless is a CMS solution from Experience Manager that allows structured content (Content Fragments) in AEM to be consumed by any app over HTTP using GraphQL. Headless implementations enable delivery of experiences across platforms and channels at scale.
 
-Headless implementation forgoes page and component management as is traditional in full stack and hybrid solutions and focuses on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. It is a modern and dynamic development pattern for implementing web experiences.
+Headless implementation forgoes page and component management, as is traditional in full stack and hybrid solutions. Instead it focuses on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. It is a modern and dynamic development pattern for implementing web experiences.
 
 ![AEM Implementation Models](assets/aem-implementation-models.png)
 
@@ -27,14 +29,14 @@ Headless implementation forgoes page and component management as is traditional 
 
 AEM as a Cloud Service is a flexible tool for the headless implementation model by offering three powerful features:
 
-1. **Content Models**
-   * Content Models are structured representation of content.
-   * Content Models are defined by information architects in the AEM Content Fragment Model editor.
-   * Content Models serve as a basis for Content Fragments.
+1. **Content Fragment Models**
+   * Content Fragment Models are structured representations of content.
+   * Content Fragment Models are defined by information architects in the AEM Content Fragment Model editor.
+   * Content Fragment Models serve as a basis for Content Fragments.
 1. **Content Fragments**
-   * Content Fragments are created based on a Content Model.
-   * Created by content authors using the AEM Content Fragment editor.
-   * Content Fragments are stored in AEM Assets and managed in Assets Admin UI.
+   * A Content Fragment is created based on a Content Fragment Model.
+   * Content Fragments are created by content authors, using the AEM Content Fragment editor.
+   * Content Fragments are stored as AEM Assets, but can be managed through either the Assets Console, or the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
 1. **Content API for delivery**
    * The AEM GraphQL API supports Content Fragment delivery.
    * The AEM Assets REST API supports Content Fragment CRUD operations.

@@ -50,11 +50,11 @@ This:
 
 * Allows AEM as a Cloud Service to accommodate your traffic patterns as they change.
 
-The scaling of per-tenant instances of the service can be automatic or manual, on the two axes:
+The scaling of per-tenant instances of the service applies to the two axes:
 
-* Vertical: allocated memory and CPU capacity can be scaled up or down for a fixed number of nodes.
+* Horizontal: the number of nodes for a given service are increased or decreased automatically, still allowing for individual default configurations.
 
-* Horizontal: the number of nodes for a given service can be increased or decreased.
+* Vertical: allocated memory and CPU capacity can be scaled up or down via configuration for a fixed number of nodes to address individual requirements as needed.
 
 ## Environments {#environments}
 
@@ -119,8 +119,16 @@ There are various main components of this new architecture:
 
   * The preview tier is comprised of a single preview node. This used for quality assurance of content before publishing to the publish tier.
 
-  * The publish tier is comprised of two or more nodes within a single publish farm: they can operate independently from each other. Each node consists of an AEM publisher and a web server equipped with the AEM Dispatcher module. It scales automatically with site traffic needs.
-  
+  * The publish tier is comprised of two or more nodes within a single publish farm.
+    
+    * The nodes can operate independently from each other.
+    
+    * Each node consists of an AEM publisher and a web server equipped with the AEM Dispatcher module.
+    
+    * It scales automatically with site traffic needs.
+    
+    * By default there is a single publish farm in the primary region, however [additional publish regions](/help/operations/additional-publish-regions.md) may be licensed.
+    
     * End users, or site visitors, visit the website via the AEM Publish Service.
 
 * For AEM Assets as a Cloud Service:

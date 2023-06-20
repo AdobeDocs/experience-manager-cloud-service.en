@@ -27,7 +27,7 @@ Before beginning the quick start guide, here is a small collection of general ti
 
 * Re-ordering Pages
 
-  * This can be done in [List View](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). The changes will be applied and be visible in other views.
+  * This can be done in [List View](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). The changes are applied and visible in other views.
 
 ### Page Authoring {#page-authoring}
 
@@ -106,7 +106,7 @@ How to select a page depends on which view you are using in the console:
 [Quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) are available:
 
 1. [Navigate to the page](#finding-your-page) you want to take action on.
-1. Hover your mouse pointer over the card that represents your required resource. The quick actions will be shown:
+1. Hover your mouse pointer over the card that represents your required resource. The quick actions are shown:
 
    ![Card actions](/help/sites-cloud/authoring/assets/card-actions.png)
 
@@ -139,7 +139,7 @@ To edit your page:
     * [Edit the content of an existing component](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) on the page:
 
         * Open the component toolbar with either tap or click. Use the **Edit** (pencil) icon to open the dialog.
-        * Open the in place editor for the component with either tap-and-hold or a double-slow-click. The available actions will be shown (for some components, this will be a limited selection).
+        * Open the in place editor for the component with either tap-and-hold or a double-slow-click. The available actions are shown (for some components, it is a limited selection).
         * To see all actions available enter full-screen mode using:
 
           ![Full screen button](/help/sites-cloud/authoring/assets/full-screen.png)
@@ -195,7 +195,7 @@ There are two (main) methods of [editing page properties](/help/sites-cloud/auth
 
         ![Properties button](/help/sites-cloud/authoring/assets/properties.png)
 
-    1. The page properties will be shown. You can make updates as required, then use Save to persist these
+    1. The page properties are shown. You can make updates as required, then use Save to persist these
 
 * When [editing your page](#editing-your-page-content):
 
@@ -307,7 +307,7 @@ The same basic mechanism is used when restoring and/or comparing versions of you
 
    ![Timeline view option](/help/sites-cloud/authoring/assets/timeline.png)
 
-   If a version of your page has already been saved, this will be listed in the Timeline.
+   If a version of your page has already been saved, it is listed in the Timeline.
 
 1. Tap/click on the version you want to restore - this will reveal additional action buttons:
 

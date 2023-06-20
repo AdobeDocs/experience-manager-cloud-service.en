@@ -1,9 +1,8 @@
 ---
 title: Creating and using themes
 description: You can use themes to stylize and provide a visual identity to an Adaptive Form using core components. You can share a theme across any number of Adaptive Forms.
-
+exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 ---
-
 # Themes in Adaptive Forms (Core Components) {#themes-for-af-using-core-components}
 
 You can create and apply themes to stylize an Adaptive Form using core components. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. Theme is managed independently without a reference to an Adaptive Form.
@@ -12,7 +11,7 @@ When you [create an Adaptive Form](/help/forms/creating-adaptive-form.md) using 
 
 >[!NOTE]
 >
->An Adaptive Form theme should not be confused with [Adaptive Form templates.](/help/forms/template-editor.md) Adaptive Form themes only contain the styling information for an Adaptive Form. Adaptive Form templates define form structure and initial content and contain a theme in order to allow for the creation of new [Adaptive Form.](/help/forms/creating-adaptive-form.md)
+>An Adaptive Form theme should not be confused with [Adaptive Form templates.](/help/forms/template-editor.md) Adaptive Form themes only contain the styling information for an Adaptive Form. Adaptive Form templates define form structure and initial content and contain a theme to allow for the creation of new [Adaptive Form.](/help/forms/creating-adaptive-form.md)
 
 ## Using Canvas theme in Adaptive Forms using core components {#using-theme-in-adaptive-form}
 
@@ -44,6 +43,7 @@ To customize a theme,
 * You should have a [basic knowledge of Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git) and Cloud Service Git repositories.
 
 To customize a Canvas theme:
+
 1. [Clone the Canvas theme](#1-download-canvas-theme-download-canvas-theme)
 1. [Understand the structure of the theme](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
 1. [Change name in package.json and package_lock.json](#changename-packagelock-packagelockjson) 

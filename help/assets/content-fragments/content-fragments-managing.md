@@ -70,9 +70,9 @@ The method of creating a content fragment is:
 
         * **Name**
 
-          The name; will be used to form the URL.
+          The name; is used to form the URL.
 
-          Mandatory; will be automatically derived from the title, but can be updated.
+          Mandatory; is automatically derived from the title, but can be updated.
 
 1. Select **Create** to complete the action, then either **Open** the fragment for editing or return to the console with **Done**.
 
@@ -125,10 +125,6 @@ To open your fragment for editing:
 >
 >To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
 
->[!CAUTION]
->
->To edit a content fragment you need the appropriate permissions. Please contact your system administrator if you are experiencing issues.
-
 1. Use the **Assets** console to navigate to the location of your content fragment.
 1. Open the fragment for editing, by either:
 
@@ -173,7 +169,7 @@ Some features in the top toolbar are available from multiple modes:
 
 ![modes](assets/cfm-managing-top-toolbar.png)
 
-* A message will be shown when the fragment is already referenced on a content page. You can **Close** the message.
+* A message is shown when the fragment is already referenced on a content page. You can **Close** the message.
 
 * The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
@@ -313,7 +309,7 @@ This will open:
 
 * the selected version **v&lt;*x.y*&gt;** (right)
 
-They will be shown side by side, where:
+They is shown side by side, where:
 
 * Any differences are highlighted
 
@@ -347,7 +343,7 @@ You can revert to a specific version of your fragment:
 >
 >If your fragment is based on a model, then you should ensure that the [model has been published](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
->If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
+>If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model is published with the fragment.
 
 Content Fragments must be published for use in the publish environment. This is done using the standard Assets functionality:
 
@@ -359,7 +355,7 @@ This can be accessed:
 * After creation; using [actions available in the Assets console](#actions-for-a-content-fragment-assets-console).
 * From the [Content Fragment Editor](#toolbar-actions-in-the-content-fragment-editor).
 
-In addition, when you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment will be listed in the page references.
+In addition, when you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment is listed in the page references.
 
 >[!CAUTION]
 >
@@ -381,4 +377,4 @@ To delete a fragment:
 
    >[!CAUTION]
    >
-   >If the fragment is already referenced in a page you will then see a warning message and be required to confirm that you want to proceed with a **Force Delete**. The fragment, together with its content fragment component, will be deleted from any content pages.
+   >If the fragment is already referenced in a page you will then see a warning message and be required to confirm that you want to proceed with a **Force Delete**. The fragment, together with its content fragment component, is deleted from any content pages.
