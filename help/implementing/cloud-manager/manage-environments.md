@@ -239,7 +239,7 @@ Select **Manage Access** from the ellipsis menu of the environment on the **Envi
 
 Select **Developer Console** from the ellipsis menu of the environment on the **Environments** card. A new tab is opened in your browser with the log on page to the **Developer Console**. 
 
-![](assets/environ-devconsole.png)
+![Login to the Developer Console](assets/environ-devconsole.png)
 
 Only a user with the **Developer** role has access to the **Developer Console**. However, for sandbox programs, any user with access to the sandbox program has access to **Developer Console**.
 
