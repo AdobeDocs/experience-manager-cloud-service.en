@@ -36,11 +36,14 @@ Follow the steps below to use thumbnail in videos:
 
 1. Select the channel. On the action bar, click **Edit** to open the editor.
 
-   ![Edit button on Action bar.](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+
+   ![Edit button on action bar.](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
 1. Add or edit an existing video component, as shown in the figure below.
 
    ![Highlighted image of a video asset.](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+
+1. Add or edit an existing video component, as shown in the figure below.
 
 1. Select the video and click the Configure (*wrench*) icon to open the video properties.
 
