@@ -32,22 +32,22 @@ Limitations:
 Defining indexes can comprise of these three use cases:
 
 1. Adding a new customer index definition.
-1. Updating an existing index definition. This effectively means adding a new version of an existing index definition.
-1. Removing an existing index that is redundant or obsolete.
+2. Updating an existing index definition. This effectively means adding a new version of an existing index definition.
+3. Removing an existing index that is redundant or obsolete.
 
 For both points 1 and 2 above, you need to create a new index definition as part of your custom code base in the respective Cloud Manager release schedule. For more information, see the [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md) documentation.
 
 ## Index Names {#index-names}
 
-An index definition can fall into one of the following three categories:
+An index definition can fall into one of the following categories:
 
-1. Out-of-the-box index: This refers to a predefined index option provided as-is. For instance: `/oak:index/cqPageLucene-2`.
+1. Out-of-the-box index. For instance: `/oak:index/cqPageLucene-2` or `/oak:index/damAssetLucene-8`.
 
-2. Customization of an out-of-the-box index: customers can tailor existing indexes to meet their specific requirements. These customizations are indicated by appending `-custom-` followed by a numerical identifier to the original index name. For example: `/oak:index/cqPageLucene-2-custom-1`.
+2. Customization of an out-of-the-box index. These are indicated by appending `-custom-` followed by a numerical identifier to the original index name. For example: `/oak:index/damAssetLucene-8-custom-1`. 
 
 3. Fully custom index: It is possible to create an entirely new index from scratch. These custom indexes must have a prefix to avoid naming conflicts. For instance: `/oak:index/acme.product-1-custom-2`. In this case, the prefix is `acme.`
 
-Please note that both customized out-of-the-box indexes and fully custom indexes must include the -custom- keyword. Further details and guidelines can be found in the [Preparing the New Index Definition](#preparing-the-new-index-definition-preparing-the-new-index-definition) section. 
+A complete set of guidelines is in the [Preparing the New Index Definition](#preparing-the-new-index-definition-preparing-the-new-index-definition) section. 
 
 ## Preparing the New Index Definition {#preparing-the-new-index-definition}
 
@@ -80,8 +80,7 @@ To illustrate the deployment of a customized version of the out-of-the-box index
 1. Create a new folder with the updated index name within the ui.apps directory: 
     * Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. Inside the newly created folder, add a configuration file named `.content.xml` that contains the custom configuration. Below is an example showcasing a customization where nodes from the original out-of-the-box index are removed:
-    * Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+2. Add a configuration file named `.content.xml` with the custom configurations inside the newly created folder. Below is an example of a customization:
 
     Filename: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
@@ -95,48 +94,7 @@ To illustrate the deployment of a customized version of the out-of-the-box index
         evaluatePathRestrictions="{Boolean}true"
         includedPaths="[/content/dam]"
         maxFieldLength="{Long}100000"
-        reindex="{Boolean}false"
-        reindexCount="{Long}1"
-        seed="{Long}-1290430931455096831"
-        tags="[visualSimilaritySearch]"
         type="lucene">
-        <aggregates jcr:primaryType="nt:unstructured">
-            <dam:Asset jcr:primaryType="nt:unstructured">
-                <include0
-                    jcr:primaryType="nt:unstructured"
-                    path="jcr:content"/>
-                <include1
-                    jcr:primaryType="nt:unstructured"
-                    path="jcr:content/metadata"/>
-                <include2
-                    jcr:primaryType="nt:unstructured"
-                    path="jcr:content/metadata/*"/>
-                <include3
-                    jcr:primaryType="nt:unstructured"
-                    path="jcr:content/renditions"/>
-                <include4
-                    jcr:primaryType="nt:unstructured"
-                    path="jcr:content/renditions/original"/>
-                <include5
-                    jcr:primaryType="nt:unstructured"
-                    path="jcr:content/renditions/original/jcr:content"/>
-                <include6
-                    jcr:primaryType="nt:unstructured"
-                    path="jcr:content/comments"/>
-                <include7
-                    jcr:primaryType="nt:unstructured"
-                    path="jcr:content/comments/*"/>
-                <include8
-                    jcr:primaryType="nt:unstructured"
-                    path="jcr:content/data/master"/>
-                <include9
-                    jcr:primaryType="nt:unstructured"
-                    path="jcr:content/usages"/>
-                <include10
-                    jcr:primaryType="nt:unstructured"
-                    path="jcr:content/renditions/cqdam.text.txt/jcr:content"/>
-            </dam:Asset>
-        </aggregates>
         <facets
             jcr:primaryType="nt:unstructured"
             secure="statistical"
@@ -151,12 +109,6 @@ To illustrate the deployment of a customized version of the out-of-the-box index
                         propertyIndex="{Boolean}true"
                         useInSpellcheck="{Boolean}true"
                         useInSuggest="{Boolean}true"/>
-                    <dcFormat
-                        jcr:primaryType="nt:unstructured"
-                        analyzed="{Boolean}true"
-                        facets="{Boolean}true"
-                        name="jcr:content/metadata/dc:format"
-                        propertyIndex="{Boolean}true"/>
                 </properties>
             </dam:Asset>
         </indexRules>
@@ -176,7 +128,7 @@ To illustrate the deployment of a customized version of the out-of-the-box index
     </workspaceFilter>
     ```
 
-4. Add a tika configuration file under: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`:
+4. Add a configuration file for Apache Tika in: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`:
 
     ```xml
     <properties>
@@ -192,12 +144,12 @@ To illustrate the deployment of a customized version of the out-of-the-box index
     </properties>
     ```
 
-The above example contains a configuration for Apache Tika. The Tika configuration file should be stored under `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`.
+5. Ensure that your configuration conforms to the guidelines provided in the [Project Configuration](#project-configuration) section. Make any necessary adaptations accordingly.
 
 ## Project Configuration
 
-It is advisable to use the most recent version of the Jackrabbit `filevault-package-maven-plugin`, which is currently at version 1.3.2. 
-To use this, there are specific configurations that needs to be incorporated into the top-level `pom.xml` file if it does not already contains so: 
+It is recommended to utilize the latest version (1.3.2) of the Jackrabbit `filevault-package-maven-plugin`. To integrate this plugin, the below configurations must be added to the top-level `pom.xml` file if they are not already present:
+
 
 ```xml
 <validatorsSettings>
@@ -209,7 +161,7 @@ To use this, there are specific configurations that needs to be incorporated int
 </validatorsSettings>
 ```
 
-Below is a sample of the top level `pom.xml` file of the project with the above configurations added: 
+Here is a sample of the project's top-level `pom.xml` file with the aforementioned configurations included:
 
 Filename: `pom.xml`
 
@@ -235,7 +187,12 @@ Filename: `pom.xml`
 
 ### ui.apps and ui.apps.structure
 
-Inside `ui.apps.structure/pom.xml` and `ui.apps/pom.xml`, the configuration of the `filevault-package-maven-plugin` needs to have `allowIndexDefinitions` as well as `noIntermediateSaves` enabled. The option `allowIndexDefinitions` allows custom index definitions while `noIntermediateSaves` ensures that the index configurations are added atomically. 
+It is necessary in:
+
+* `ui.apps/pom.xml` 
+* `ui.apps.structure/pom.xml`
+
+to enable the `allowIndexDefinitions` and `noIntermediateSaves` options in the configuration of `filevault-package-maven-plugin`. Enabling `allowIndexDefinitions` allows for custom index definitions, while `noIntermediateSaves` ensures that the configurations are added atomically. 
 
 Filenames: `ui.apps/pom.xml` and `ui.apps.structure/pom.xml`
 
@@ -251,7 +208,7 @@ Filenames: `ui.apps/pom.xml` and `ui.apps.structure/pom.xml`
     ...
 ```
 
-In `ui.apps.structure/pom.xml` you also need to add a filter for `/oak:index`:
+Additionally, it is necessary to include a filter for `/oak:index` in `ui.apps.structure/pom.xml`:
 
 ```xml
 <filters>
@@ -260,7 +217,7 @@ In `ui.apps.structure/pom.xml` you also need to add a filter for `/oak:index`:
 </filters>
 ```
 
-Once the new index definition is added, the new application needs to be deployed via Cloud Manager. Upon deployment, two jobs are started that are responsible for adding (and merging if needed) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. The underlying repositories are reindexed with the new index definitions, before the switch takings place.
+After adding the new index definition, deploy the new application using Cloud Manager. This deployment initiates two jobs, responsible for adding (and merging if necessary) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. Prior to the switch, the underlying repositories undergo reindexing with the updated index definitions.
 
 >[!TIP]
 >
