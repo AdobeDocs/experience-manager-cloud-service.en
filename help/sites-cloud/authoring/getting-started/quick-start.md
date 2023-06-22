@@ -84,11 +84,11 @@ How to select a page depends on which view you are using in the console:
 
 1. Column View:
 
-    * Tap/click on the thumbnail for the required resource - the thumbnail will be overlaid with a tick to show that it has been selected.
+    * Tap/click on the thumbnail for the required resource - the thumbnail is overlaid with a tick to show that it has been selected.
 
 1. List View:
 
-    * Tap/click on the thumbnail for the required resource - the thumbnail will be overlaid with a tick to show that it has been selected.
+    * Tap/click on the thumbnail for the required resource - the thumbnail is overlaid with a tick to show that it has been selected.
 
 1. Card View:
 
@@ -97,7 +97,7 @@ How to select a page depends on which view you are using in the console:
         * On a mobile device: tap-and-hold the card
         * On a desktop device: use the [quick action](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) represented by the tick icon:
 
-    * The card will be overlaid with a tick to show that the page has been selected.
+    * The card is overlaid with a tick to show that the page has been selected.
 
     ![Example card](/help/sites-cloud/authoring/assets/card.png)
 
@@ -253,7 +253,7 @@ These actions can all be triggered by:
 
     * [Delete](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
-        * You will be asked to confirm the action.
+        * You are asked to confirm the action.
 
    >[!NOTE]
    >
@@ -313,8 +313,8 @@ The same basic mechanism is used when restoring and/or comparing versions of you
 
     * **Revert to this Version**
 
-        * The version will be restored.
+        * The version is restored.
 
     * **Show Differences**
 
-        * The page will be opened with differences (between the two versions) highlighted.
+        * The page is opened with differences (between the two versions) highlighted.

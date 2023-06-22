@@ -73,7 +73,7 @@ You can create a launch from either the Sites or Launches console:
 1. In the **Properties** step of the wizard you can specify:
 
     * **Launch Title**: The name of the Launch. The name should be meaningful for authors.
-    * **with existing content**: the original content will be used to create the launch.
+    * **with existing content**: the original content is used to create the launch.
     * **use a new template to replace the page**: See [Create Launch with New Template](#create-launch-with-new-template) for more details.
     * **Inherit source page live data**: Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [Live Copy](/help/sites-cloud/administering/msm/overview.md). By default, this option is selected.-->
     * **Launch Date**: The date and time when the launch copy is to be activated (dependent on the **Production Ready** flag; see [Launches - the Order of Events](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
@@ -106,7 +106,7 @@ Selecting this will:
 
 >[!CAUTION]
 >
->As a different template is used the new page will be empty. Due to the different page structure no content will be copied over.
+>As a different template is used, the new page is empty. Due to the different page structure no content is copied over.
 >
 >This mechanism can be used to change the template of an [existing page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) - though the loss of content must be considered.
 

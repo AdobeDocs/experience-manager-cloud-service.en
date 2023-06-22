@@ -264,7 +264,7 @@ There are various modes when editing a page allowing for different actions:
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - allows you to view a pages state at a particular point in time.
 * [Live Copy Status](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) - allows a quick overview of the live copy status and which components are/are not inherited.
 * [Developer Mode](/help/implementing/developing/tools/developer-mode.md)
-* [Preview](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - used to view the page as it will be shown on the publish environment; or to navigate using links in the content.
+* [Preview](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - used to view the page as it is shown on the publish environment; or to navigate using links in the content.
 * [Annotate](/help/sites-cloud/authoring/fundamentals/annotations.md) - used to add or view annotations on the page.
 
 You can access these using the icons in the top right corner. The actual icon will change to reflect the mode you are currently using:

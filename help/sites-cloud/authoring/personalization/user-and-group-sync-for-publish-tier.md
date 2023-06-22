@@ -17,7 +17,7 @@ Web applications often provide account management features for end users to regi
 
 >[!IMPORTANT]
 >
->In order for the functionality described in this article to work, the User Data Synchronization feature must be enabled, which at this time requires a request to customer support indicating the appropriate program and environments. If not enabled, user information will be persisted for just a short period (1 to 24 hours) before disappearing.
+>In order for the functionality described in this article to work, the User Data Synchronization feature must be enabled, which at this time requires a request to customer support indicating the appropriate program and environments. If not enabled, user information is persisted for just a short period (1 to 24 hours) before disappearing.
 
 ## Registration {#registration}
 
@@ -77,7 +77,7 @@ The `com.adobe.granite.auth.oauth.provider` interface can be implemented with th
 
 ### Sticky sessions and Encapsulated Tokens {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service has cookie-based sticky sessions enabled, which ensures that an end-user is routed to the same publish node on each request. To increase performance, the encapsulated token feature is enabled by default so the user record in the repository does not need to be referenced on each request. If the publish node which an end-user has an affinity to is replaced, their user id record will be available on the new publish node, as described in the data synchronization section below.
+AEM as a Cloud Service has cookie-based sticky sessions enabled, which ensures that an end-user is routed to the same publish node on each request. To increase performance, the encapsulated token feature is enabled by default so the user record in the repository does not need to be referenced on each request. If the publish node which an end-user has an affinity to is replaced, their user id record is available on the new publish node, as described in the data synchronization section below.
 
 ## User Profile {#user-profile}
 

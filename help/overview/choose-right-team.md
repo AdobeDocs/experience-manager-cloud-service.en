@@ -41,7 +41,7 @@ Now that you know what roles are required, look at the chart below to see when e
 
 <br>
 
-![](assets/team_involvement.png)
+![Review roles for implementation](assets/team_involvement.png)
 
 **Review this list with your implementation team** and make sure you have people with relevant qualifications in each role. Team members who are less familiar with Adobe Experience Cloud can use [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) learning resources to get certified through [Adobe Digital Learning](https://learning.adobe.com/certification.html).
 
