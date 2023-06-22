@@ -223,6 +223,7 @@ Sample code of standard external service error response using the Adaptive Form 
 
 * **`Header`**: `content-type:application/problem+json`
 * **`Response`**:
+
     ```
     { "type": "VALIDATION_ERROR", 
     "validationErrors": 
@@ -238,6 +239,7 @@ Sample code of standard external service error response using the Adaptive Form 
 
 * **`Header`**: `content-type:application/problem+json`
 * **`Response`**:
+
     ```
     { "type": "VALIDATION_ERROR", 
     "validationErrors": [ 
