@@ -58,7 +58,7 @@ A **Convert to experience fragment variation** option, and workflow, has been im
 
    ![Converting Legacy Offer to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 
-1. A dialog will be shown. Here you can select the required **Action**:
+1. A dialog box is shown. Here you can select the required **Action**:
 
    * Create a new Experience Fragment
    * Add the content to an existing Experience Fragment

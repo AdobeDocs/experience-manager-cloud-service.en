@@ -16,7 +16,7 @@ The layout container:
   * For example, you can customize the component size or whether the component can be seen on specific devices.
 * Can be nested to allow column control.
 
-The user can then see how the content will be rendered for specific devices using the emulator.
+The user can then see how the content is rendered for specific devices using the emulator.
 
 AEM realizes responsive layout for your pages using a combination of mechanisms:
 
@@ -29,7 +29,7 @@ AEM realizes responsive layout for your pages using a combination of mechanisms:
   Once the layout container is positioned on your page you can use the **Layout** mode to position content within the responsive grid.
 
 * [**Emulator**](#selecting-a-device-to-emulate)
-  This allows you to create and edit responsive websites that rearrange the layout according to device/window size by resizing components interactively. The user can then see how the content will be rendered using the emulator.
+  This allows you to create and edit responsive websites that rearrange the layout according to device/window size by resizing components interactively. The user can then see how the content is rendered using the emulator.
 
 With these responsive grid mechanisms you can:
 
@@ -68,9 +68,9 @@ The device **Desktop**, which does not have a specific width, relates to the def
 >
 >It would be possible to define breakpoints for every individual device, but this would drastically increase the effort required for layout definition and maintenance.
 
-When using the emulator, you select a specific device for emulation and layout definition and the related breakpoint will be highlighted too. Any layout changes that you make will be applicable for other devices to which the breakpoint applies, i.e. any devices positioned to the left of the active breakpoint marker, but before the next breakpoint marker.
+When using the emulator, you select a specific device for emulation and layout definition and the related breakpoint is highlighted too. Any layout changes that you make are applicable for other devices to which the breakpoint applies. That is, any devices positioned to the left of the active breakpoint marker, but before the next breakpoint marker.
 
-For example, when you select the device **iPhone 6 Plus** (defined with a width of 540 pixels) for emulation and layout, the breakpoint **Phone** (defined as 768 pixels) will be activated too. Any layout changes you make for the **iPhone 6** will be applicable to other devices under the **Phones** breakpoint, such as **iPhone 5** (defined as 320 pixels).
+For example, when you select the device **iPhone 6 Plus** (defined with a width of 540 pixels) for emulation and layout, the breakpoint **Phone** (defined as 768 pixels) is activated too. Any layout changes you make for the **iPhone 6** are applicable to other devices under the **Phones** breakpoint, such as **iPhone 5** (defined as 320 pixels).
 
 ![Emulators](/help/sites-cloud/authoring/assets/responsive-layout-emulators.png)
 
@@ -151,16 +151,16 @@ As with other components, you can select and then take action on (cut, copy, del
 
    ![Parent button](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-1. If the layout component is nested, selecting the **Parent** option presents a drop-down selection, allowing you to select the nested layout container or its parent(s).
+1. If the layout component is nested, selecting the **Parent** option presents a drop-down selection, letting you to select the nested layout container or its parents.
 
    When you mouse over the container names in the drop-down, their outlines are displayed on the page.
 
-    * The lowest nested layout container will be outlined in blue.
-    * Every successive container will be lin a lighter shade of blue.
+    * The lowest nested layout container is outlined in blue.
+    * Every successive container is outlined a lighter shade of blue.
 
    ![Nested containers](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
-1. This will highlight the entire grid with its content. The action toolbar will be shown, from where you can select an action such as **Delete.**
+1. The entire grid is highlighted with its content. The action toolbar is shown, from where you can select an action such as **Delete.**
 
 ## Defining Layouts (Layout mode) {#defining-layouts-layout-mode}
 
@@ -181,7 +181,7 @@ To configure the layout of a responsive grid implemented with the Layout Contain
 
 When in layout mode you can perform various actions on a grid:
 
-* Resize the content components using the blue dots. Resizing will always snap-to-grid. When resizing the background grid will be shown to aid alignment:
+* Resize the content components using the blue dots. Resizing will always snap-to-grid. When resizing, the background grid is shown to aid alignment:
 
   ![Resize components](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
@@ -191,14 +191,14 @@ When in layout mode you can perform various actions on a grid:
 
 * Click/tap on a content component, the toolbar allows you to:
   * **Parent** - Allows you to select the entire layout container component for taking action on the whole.
-  * **Float to new line** - The component will be moved to a new line, dependent on the space available within the grid.
-  * **Hide component** - The component will be made invisible (it can be restored from the toolbar of the layout container).
+  * **Float to new line** - The component is moved to a new line, dependent on the space available within the grid.
+  * **Hide component** - The component is made invisible (it can be restored from the toolbar of the layout container).
 
   ![Hide component](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* In **Layout** mode you can tap/click on the **Drag components here** to select the entire component. This will show the toolbar for this mode.
+* In **Layout** mode you can tap/click on the **Drag components here** to select the entire component. The toolbar is shown for this mode.
 
-  The toolbar will have different options depending on the state of the layout component and the components belonging to it. For example:
+  The toolbar has different options depending on the state of the layout component and the components belonging to it. For example:
 
   * **Parent** - Select the parent component.
 
@@ -208,7 +208,7 @@ When in layout mode you can perform various actions on a grid:
 
     ![Show hidden components button](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
-  * **Revert breakpoint layout** - Revert to the default layout. This means that no customized layout will be imposed.
+  * **Revert breakpoint layout** - Revert to the default layout. No customized layout is imposed.
 
     ![Revert breakpoint layout button](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 

@@ -35,7 +35,7 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
 * Export content fragments from AEM as a cloud service to Adobe target as JSON offers.
 * Support for GraphQL pagination and sorting, along with internal caching enhancements, now help improve the performance of decoupled client applications when fetching large content sets from AEM using complex GraphQL queries and filters.
 
-### New features in [!DNL Experience Manager Sites] prelease {#prerelease-sites}
+### New features in [!DNL Experience Manager Sites] prerelease {#prerelease-sites}
 
 * Content Fragments and their references can now be published to the [AEM Preview Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) using the [Content Fragment Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), allowing users to preview the final experience on a decoupled preview application before going live.
 
