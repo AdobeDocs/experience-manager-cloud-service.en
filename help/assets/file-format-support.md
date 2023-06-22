@@ -35,6 +35,7 @@ The following legend describes the level of support for each format.
 | AI          | &#10003;             | -                   | &#10003;            | &#10003;     |
 | COLLAGE     | -                    | -                   | &#10003;            | -            |
 | DN          | &#10003;             | -                   | &#10003;            | &#10003;     |
+| SBSAR       | &#10003;             | -                   | &#10003;            | &#10003;     |
 | IDEAS       | -                    | -                   | &#10003;            | -            |
 | INDD        | &#10003;             | -                   | &#10003;            | &#10003; *   |
 | INDT        | -                    | -                   | &#10003;            | -            |
@@ -60,7 +61,7 @@ The following legend describes the level of support for each format.
 | SGI         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 | SVG         | &#10003;             | -                   | &#10003;     | &#10003; |
 | TIFF        | &#10003;             | &#10003;            | &#10003;     | -        |
-| WebP         | &#10003;             | &#10003;                   | &#10003;     | &#10003; |
+| WebP        | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 
 ## 3D formats {#support-3d-formats}
 
@@ -71,11 +72,14 @@ See also [Work with 3D assets in Dynamic Media](/help/assets/dynamic-media/asset
 | Format | Storage | Versioning | Workflow | Publishing | Access control | Thumbnail preview | 3D preview | Dynamic Media delivery |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | &#10003; | &#10003; | &#10003; |- | &#10003; | &#10003; | -| -|
-| gLB | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | -| &#10003; | &#10003; |
+| gLB | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
 | gLTF | &#10003; | &#10003; | &#10003; |- | &#10003; |- | &#10003; |- |
-| OBJ | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- | &#10003; | &#10003; |
+| OBJ | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
 | STL | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- | &#10003; | &#10003; |
-| USDz |&#10003;| &#10003; | &#10003; | &#10003; | &#10003; |- |- | &#10003; |
+| FBX | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- |
+| 3DS | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- |
+| USDz |&#10003;| &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- | &#10003; |
+| SBSAR |&#10003;| &#10003; | &#10003; |- | &#10003; | &#10003; |- |- |
 
 ## [!DNL Camera RAW] formats {#camera-raw-formats}
 
@@ -249,7 +253,7 @@ See also [3D formats supported](/help/assets/file-format-support.md#support-3d-f
 | GLB | Binary GL Transmission|model/gltf-binary | Includes the materials and textures as a single asset. |
 | OBJ | WaveFront 3D Object File|application/x-tgif | |
 | STL | Stereolithography|application/vnd.ms-pki.stl | |
-| USDZ | Universal Scene Description Zip archive|model/vnd.usdz+zip |*Support for ingestion only; no viewing or interaction is available.* USDZ is a proprietary 3D format that can be viewed natively by Safari or iOS. |
+| USDZ | Universal Scene Description Zip archive|model/vnd.usdz+zip |*Support for ingestion and thumbnail generation; 3D preview not yet supported.* USDZ is a 3D format that can be viewed natively by Safari or iOS. |
 
 **See also**
 
