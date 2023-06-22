@@ -69,7 +69,7 @@ Before exporting a fragment you need to add the **Cloud Configuration** for **Ad
 * select a Target workspace as destination
 * select an externalizer domain for rewriting references in the Experience Fragment (optional)
 
-The required options can be selected in **Page Properties** of the required folder and/or fragment; the specification will be inherited as necessary.
+The required options can be selected in **Page Properties** of the required folder, or fragment, or both; the specification is inherited as necessary.
 
 1. Navigate to the **Experience Fragments** console.
 
