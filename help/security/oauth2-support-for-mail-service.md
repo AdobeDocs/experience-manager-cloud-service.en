@@ -52,7 +52,7 @@ Next, you need to generate the refresh token, which is a part of the OSGi config
 
 You can do this by following these steps:
 
-1. Open the following URL in the browser after replacing `clientID` and `tenantID` with the values specific to your account: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize?client_id=<clientId>&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access&state=12345`
+1. Open the following URL in the browser after replacing `clientID` and `tenantID` with the values specific to your account: `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
 1. Allow permission when asked
 1. The URL will redirect to a new location, constructed in this format: `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
 1. Copy the value of `<code>` in the example above
