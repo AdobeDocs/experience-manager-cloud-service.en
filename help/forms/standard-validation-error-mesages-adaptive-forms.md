@@ -52,8 +52,8 @@ Where:
 
 * `errorCausedBy` describes the reason for failure.
 * `errors` mention the SOM expression of the fields that failed the validation criteria along with the validation error message.
-* `originCode` contains the http status code returned by the external service.
-* `originMessage` contains the raw error data returned by the external service.
+* `originCode` field added by AEM and contains the http status code returned by the external service.
+* `originMessage` field added by AEM and contains the raw error data returned by the external service.
 
 With the improvements in features and subsequent updates in the versions of AEM Forms, the existing failure response structure changed into new format based on RFC7807, which is backward compatible with the existing failure response structure:
 
@@ -97,9 +97,8 @@ Where:
     * `fieldname` mentions the SOM expression of the fields that failed the validation criteria.
     * `dataRef` represents the JSON path or XPath of the fields that failed the validation.
     * `details` contain the validation error message with the erroneous field. 
-* `originCode (optional)` contains the http status code returned by the external service
-* `originMessage (optional)` contains the raw error data returned by the external service.
-
+* `originCode (optional)` field added by AEM and contains the http status code returned by the external service
+* `originMessage (optional)` field added by AEM and contains the raw error data returned by the external service.
 
 ## Add error handler using Rule Editor {#add-error-handler-using-rule-editor}
 
