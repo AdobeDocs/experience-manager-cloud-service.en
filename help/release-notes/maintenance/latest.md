@@ -11,7 +11,7 @@ The following section outlines the technical release notes for the current maint
  
 Summarized below are the continuous improvements for maintenance release 12255, which was publicly released on June 13, 2023. This maintenance release is an update from previous maintenance release 12142.
 
-Feature activation for this maintenance release will provide you with the full feature set. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
+Feature activation 2022.6.0 will provide you with the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
 ### Enhancements {#enhancements-12255}
 
