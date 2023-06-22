@@ -221,8 +221,8 @@ Open the console and check the response and header for the validation error mess
 
 Sample code of standard external service error response using the Adaptive Form fieldName:
 
-* **`Header`**: `content-type:application/problem+json`
-* **`Response`**:
+* **`Header:`** `content-type:application/problem+json`
+* **`Response:`**
 
     ```
     { "type": "VALIDATION_ERROR", 
@@ -237,8 +237,8 @@ Sample code of standard external service error response using the Adaptive Form 
 
 Sample code of standard external service error response using the Adaptive Form dataRef:
 
-* **`Header`**: `content-type:application/problem+json`
-* **`Response`**:
+* **`Header:`** `content-type:application/problem+json`
+* **`Response:`**
 
     ```
     { "type": "VALIDATION_ERROR", 
