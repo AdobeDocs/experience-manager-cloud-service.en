@@ -1,8 +1,8 @@
 ---
-title: Standard validation error messages for adaptive forms
-seo-title: Standard validation error messages for adaptive forms
-description: Transform the validation error messages for adaptive forms into standard format using custom error handlers
-seo-description: Transform the validation error messages for adaptive forms into standard format using custom error handlerss
+title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
+seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
+description: AEM Forms provides out-of-the-box success and error handlers for form submissions:- default error handler and custom error habdler
+seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling.
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
@@ -13,7 +13,7 @@ AEM Forms provides out-of-the-box success and error handlers for form submission
 
 Adaptive Form validates the inputs that you provide in fields based on pre-set validation criteria. The validation criteria refer to the acceptable input values for fields in an Adaptive Form. You can set the validation criteria based on the data source that you use with the Adaptive Form. For example, if you use RESTful web services as the data source, you can define the validation criteria in a Swagger definition file.
 
-If the input values meet the validation criteria, the values are submitted to the data source else, the Adaptive Form displays an error message using an error handler. Similar to this approach, Adaptive Forms integrates with custom error handlers to perform data validations. If the input values do not meet the validation criteria and the validation error message that the server returns are in the standard message format, the error messages display at a field level in the Adaptive Form.
+If the input values meet the validation criteria, the values are submitted to the data source else, the Adaptive Form displays an error message using an error handler. Similar to this approach, Adaptive Forms integrates with custom error handlers to perform data validations. If the input values do not meet the validation criteria, the error messages display at a field level in the Adaptive Form. This occurs when the validation error message returned by the server is in the standard message format.
 
 ## Uses of error handlers {#uses-of-error-handler}
 
@@ -103,14 +103,14 @@ Where:
 
 ## Add error handler using Rule Editor {#add-error-handler-using-rule-editor}
 
-Using the [Rule Editor's](rule-editor.md) Invoke Service action, you define the validation criteria based on the data source that you use with the Adaptive Form. In case, you use RESTful web services as the data source, you can define the validation criteria in a Swagger definition file. By utilizing the error handler functions and Rule Editor in Adaptive Forms, you can effectively manage and customize error handling. You define the conditions using Rule Editor and configure the desired actions to be performed when the rule is triggered. Adaptive Form validates the inputs you enter in fields based on pre-set validation criteria. In case, the input values do not meet the validation criteria, the error messages are displayed at the field level in an Adaptive Form. 
+Using the [Rule Editor's](rule-editor.md) Invoke Service action, you define the validation criteria based on the data source that you use with the Adaptive Form. In case, you use RESTful web services as the data source, you can define the validation criteria in a Swagger definition file. By utilizing the error handler functions and Rule Editor in Adaptive Forms, you can effectively manage and customize error handling. You define the conditions using Rule Editor and configure the desired actions to be performed when the rule is triggered. Adaptive Form validates the inputs that you enter in fields based on pre-set validation criteria. In case, the input values do not meet the validation criteria, the error messages are displayed at the field level in an Adaptive Form. 
 Using Rule Editor, you can:
 * [Add default error handler function](#add-default-errror-handler)
 * [Add custom error handler function](#add-custom-error-handler)
 
 ### Add default error handler function {#add-default-errror-handler}
 
-A default error handler is supported by default to display error messages on fields if the error response is in standard schema or in case of server-side validation failure. 
+A default error handler is supported by default to display error messages on fields if the error response is in standard schema or in server-side validation failure. 
 To understand how to use a default error handler using the [Rule Editor's](rule-editor.md) Invoke Service action, take a simple Adaptive Form with two fields, **Pet ID** and **Pet Name**. Now, use a default error handler at the **Pet ID** field to check for various validation criteria based on the data source. To add a default error handler using the Rule Editor's Invoke Service action, execute the following steps:
 
 1. Open an Adaptive Form in authoring mode, select a form object (for which you need to perform a validation check), and tap **[!UICONTROL Rule Editor]** to open the rule editor.
@@ -124,7 +124,7 @@ To understand how to use a default error handler using the [Rule Editor's](rule-
 
  ![default error handler](/help/forms/assets/default-error-handler.png)
 
-As a result of this rule, the values that you enter for **Pet ID** get validated for **Pet Name** and the error messages are displayed at the field level if the validation criteria based on the data source fails.
+As a result of this rule, the values you enter for **Pet ID** checks validation for **Pet Name**. If the validation criteria based on the data source fail, the error messages are displayed at the field level.
 
  ![default error message](/help/forms/assets/default-error-message.png)
 
@@ -134,9 +134,9 @@ As a result of this rule, the values that you enter for **Pet ID** get validated
 You can add a custom error handler function to:
 * handle error responses and display error messages on fields if the error response is not in the standard schema expected by an Adaptive Form.
 * send analytics events.
-* display modal dialog in case of an error by calling any other custom code.
+* display modal dialog in an error by calling any other custom code.
 
-Perform the following steps to add and use a custom error handler in an Adaptive Form:
+To add and use a custom error handler in an Adaptive Form, perform the following steps:
 1. [Create a custom error function](#create-custom-error-message) 
 1. [Configure custom error handler using Rule Editor's Invoke service action](#configure-custom-error-handler)
 
@@ -210,7 +210,9 @@ To add a custom error handler using the **[!UICONTROL Rule Editor's Invoke Servi
 
  ![custom error handler](/help/forms/assets/custom-error-handler.png)
 
-As a result of this rule, the values that you enter for **Pet ID** get validated for **Pet Name** and the error messages are displayed at the field level if the validation criteria based on the data source fails. 
+
+As a result of this rule, the values you enter for **Pet ID** checks validation for **Pet Name**. If the validation criteria based on the data source fail, the error messages are displayed at the field level.
+
 
  ![custom error handler message](/help/forms/assets/custom-error-handler-message.png)
 
