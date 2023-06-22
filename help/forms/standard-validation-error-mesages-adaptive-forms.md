@@ -225,16 +225,16 @@ Sample code of standard external service error response using the Adaptive Form 
 
     ```
     {
-  "type": "VALIDATION_ERROR",
-  "validationErrors": [
-    {
-      "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
-      "dataRef": "",
-      "details": [
+        "type": "VALIDATION_ERROR",
+        "validationErrors": [
+        {
+        "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
+        "dataRef": "",
+        "details": [
         "Invalid ID supplied. Provided value is not correct!"
       ]
     }
-    ]}
+        ]}
     ```
 
     You can view the SOM expression of any field in an Adaptive Form by tapping the field and selecting the **[!UICONTROL View SOM Expression]**.
@@ -246,16 +246,16 @@ Sample code of standard external service error response using the Adaptive Form 
 
     ```
     {
-  "type": "VALIDATION_ERROR",
-  "validationErrors": [
-    {
-      "fieldName": "",
-      "dataRef": "/Pet/id",
-      "details": [
-        "Invalid ID supplied. Provided value is not correct!"
-      ]
-    }
-  ]}
+        "type": "VALIDATION_ERROR",
+        "validationErrors": [
+        {
+            "fieldName": "",
+            "dataRef": "/Pet/id",
+            "details": [
+            "Invalid ID supplied. Provided value is not correct!"
+            ]
+            }
+    ]}
     ```
 
 The custom error handler function is responsible for executing additional actions such as displaying a modal dialog or sending an analytics event, based on the error response. A custom error handler function provides the flexibility to tailor error handling to the specific needs. 
