@@ -44,7 +44,7 @@ You can promote launches from either the **Sites** console or the **Launches** c
      1. Select **Promote launch** to open the wizard.
    * The **Sites** console when navigating launch pages:
      1. Select the required launch page using [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md).
-     1. The **Promote** action will be available in the toolbar.
+     1. The **Promote** action is available in the toolbar.
    * The **Launches** console:
      1. Select your launch (tap/click on the thumbnail).
      1. Select **Promote**.
@@ -93,7 +93,7 @@ After creating a nested launch you can promote it back to any of the sources, in
 1. Enter the required details:
    * **Target**
      * **Promotion target** - You can promote to any of the sources.
-     * **Delete launch after promotion** - After promotion the selected launch, and any launches nested within it, will be deleted.
+     * **Delete launch after promotion** - After promotion, the selected launch, and any launches nested within it, are deleted.
    * **Scope** - Here you can select whether to promote the entire launch, or only pages that have actually been edited. If the latter, you can then select to include/exclude sub-pages. The default configuration is to only promote page changes for the current page:
       * **Promote full launch**
       * **Promote modified pages**

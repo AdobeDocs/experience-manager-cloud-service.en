@@ -5,7 +5,7 @@ exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 ---
 # Creating Page Templates {#creating-page-templates}
 
-When creating a page you must select a template, which will be used as the basis for creating the new page. The template defines the structure of the resultant page, any initial content, and the components that can be used.
+When creating a page, you must select a template, which is used as the basis for creating the new page. The template defines the structure of the resultant page, any initial content, and the components that can be used.
 
 With the **Template Editor**, creating and maintaining templates is no longer a developer-only task. A type of power-user, who is called a **template author**, can be involved too. Developers are still required to setup the environment, create client libraries, and create the components to be used, but once these basics are in place the **template author** has the flexibility to create and configure templates without a development project.
 
@@ -114,7 +114,7 @@ A template folder should be created for your project to hold your project-specif
     * **Template Name**
     * **Description**
 
-1. Select **Create**. A confirmation will be shown, select **Open** to start editing the template or **Done** to return to the template console.
+1. Select **Create**. A confirmation is shown, select **Open** to start editing the template or **Done** to return to the template console.
 
    >[!NOTE]
    >
@@ -157,7 +157,7 @@ To define the template thumbnail:
 1. Choose if you wish to upload a thumbnail or have it generated from the template content.
     * If you wish to upload a thumbnail, click or tap **Upload Image**
     * If you wish to generate a thumbnail, click or tap **Generate Preview**
-1. For both methods a preview of the thumbnail will be displayed.
+1. For both methods a preview of the thumbnail is displayed.
    * If it is not satisfactory, click or tap **Clear** to upload another image or re-generate the thumbnail.
 1. When you are satisfied with the thumbnail, click or tap **Save & Close**.
 
@@ -174,7 +174,7 @@ A template can be enabled or disabled to make it available or unavailable in the
 
 >[!CAUTION]
 >
->Once a template is enabled a warning will be displayed when a template author starts to update the template further. This is to inform the user that the template might be referenced, so any changes might affect the pages referencing the template.
+>After a template is enabled, a warning is displayed when a template author starts to update the template further. This is to inform the user that the template might be referenced, so any changes might affect the pages referencing the template.
 
 1. In the **Templates Console**, select the template.
 1. Select **Enable** or **Disable** from the toolbar, and again in the confirmation dialog.
@@ -200,7 +200,7 @@ A template can be made available or unavailable for certain page branches.
 
    >[!NOTE]
    >
-   >If the **Allowed Templates** list is left empty then the tree will be ascended until a value/list is found.
+   >If the **Allowed Templates** list is left empty, then the tree is ascended until a value/list is found.
    >
    >
    >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
@@ -238,7 +238,7 @@ While the **Page Policy** option on the **Page Information** menu allows you to 
 
 >[!CAUTION]
 >
->If an author starts to edit a template that has already been enabled a warning will be displayed. This is to inform the user that the template might be referenced, so any changes might affect the pages referencing the template.
+>If an author starts to edit a template that has already been enabled, a warning is displayed. This is to inform the user that the template might be referenced, so any changes might affect the pages referencing the template.
 
 ### Template Attributes {#template-attributes}
 
@@ -256,7 +256,7 @@ When components are locked you can add content, which cannot be edited by page a
 
 #### Initial Content {#template-initial-content}
 
-When a component has been unlocked you can define the [initial content](#editing-a-template-initial-content-author) that will be copied to the resultant page(s), created from the template. These unlocked components can be edited on the resulting page(s).
+When a component has been unlocked you can define the [initial content](#editing-a-template-initial-content-author) that is copied to the resultant page(s), created from the template. These unlocked components can be edited on the resulting page(s).
 
 >[!NOTE]
 >
@@ -307,7 +307,7 @@ Once added, each component is marked with:
 >
 >When you add an out-of-the-box **Title** component to the template it will contain the default text **structure**.
 >
->If you change this, and add your own text, then this updated text will be used when a page is created from the template.
+>If you change this, and add your own text, then this updated text is used when a page is created from the template.
 >
 >If you leave the default text (structure) then the title will default to the name of the subsequent page.
 
@@ -362,7 +362,7 @@ A new policy can be added by selecting the add button next to the **Select polic
 
 ![Add Policy button](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-The selected existing policy in the **Select policy** dropdown can be copied as a new policy using the copy button next to the dropdown. A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
+The selected existing policy in the **Select policy** dropdown can be copied as a new policy using the copy button next to the dropdown. A new title should then be given in the **Policy Title** field. By default the copied policy is titled **Copy of X**, where X is the title of the copied policy.
 
 ![Copy Policy button](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -421,7 +421,7 @@ The policy and properties settings of a layout container are similar to the gene
 
 >[!NOTE]
 >
->Configuring a policy is mandatory for container components as it enables you to define components that will be available in the container.
+>Configuring a policy is mandatory for container components as it enables you to define components that are available in the container.
 
 The configuration window is divided in two, just as in the general usage of the window.
 
@@ -472,14 +472,14 @@ You unlock/lock components to define whether the content is available for change
 When a component has been unlocked:
 
 * An open padlock indicator is shown in the border.
-* The component toolbar will be adjusted accordingly.
+* The component toolbar is adjusted accordingly.
 * Any content already entered will no longer be shown in **Structure** mode.
   * Already entered content is considered initial content and is only visible in **Initial Content** mode.
 * The parents of the unlocked component cannot be moved, cut or deleted.
 
 ![Lock component button](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-This includes unlocking container components so that further components can be added, either in **Initial Content** mode or on resulting pages. If you have already added components/content to the container before unlocking it, then these will no longer be shown when in **Structure** mode but they will be shown in **Initial Content** mode. In **Structure Mode**, only the container component itself will be shown with its list of **Allowed Components**.
+This includes unlocking container components so that further components can be added, either in **Initial Content** mode or on resulting pages. If you have already added components/content to the container before unlocking it, then these are no longer be shown when in **Structure** mode, but they are shown in **Initial Content** mode. In **Structure Mode**, only the container component itself is shown with its list of **Allowed Components**.
 
 ![Allowed Components](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
   
@@ -534,7 +534,7 @@ You can define the template layout for a range of devices. [Responsive layout](/
 
 >[!NOTE]
 >
->Changes to the layout will be reflected in **Initial Content** mode, but no change is seen in **Structure** mode.
+>Changes to the layout are reflected in **Initial Content** mode, but no change is seen in **Structure** mode.
 
 ![Edit template layout](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
@@ -566,7 +566,7 @@ You can apply a content policy to either the template or resultant pages. This d
 
   ![Add Policy button](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  The selected existing policy in the **Select policy** dropdown can be copied as a new policy using the copy button next to the dropdown. A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
+  The selected existing policy in the **Select policy** dropdown can be copied as a new policy using the copy button next to the dropdown. A new title should then be given in the **Policy Title** field. By default the copied policy is titled **Copy of X**, where X is the title of the copied policy.
 
   ![Copy Policy button](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -647,7 +647,7 @@ When creating templates you should consider:
     * Locking or unlocking components on enabled templates.
     * This can have side-effects, as existing pages can already be using it. Typically:
 
-        * Unlocking components (that were locked) will be missing on existing pages.
+        * Unlocking components (that were locked) are missing on existing pages.
         * Locking components (that were editable) will hide that content from being displayed on the pages.
 
    >[!NOTE]
