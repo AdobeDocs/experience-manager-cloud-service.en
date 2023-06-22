@@ -11,17 +11,11 @@ The following section outlines the technical release notes for the current maint
  
 Summarized below are the continuous improvements for maintenance release 12255, which was publicly released on June 13, 2023. This maintenance release is an update from previous maintenance release 12142.
 
-Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
+Feature enablement for this maintenance release will provide you with the full feature set with feature activation 2023.6.0. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
 ### Enhancements {#enhancements-12255}
 
 None.
-
-### Known Issues {#known-issues-12255}
-
-- ASSETS-25729 - View switcher menu is cut off 
-- ASSETS-25728 - Reprocess Asset option not available in search view
-- ASSETS-22603 - Some Download-type Asset Report columns display "null" values in the UI. Downloadable CSV is not affected.
 
 ### Fixed Issues {#fixed-issues-12255}
 
@@ -43,6 +37,12 @@ None.
 - ASSETS-23981 - Sorting Function for Titles Not Working in Collection Links
 - ASSETS-24723 - Published Assets were reprocessed again without user intervention
 - GRANITE-45385 - Migrate Tree Activation to use sling job instead of workflow
+
+### Known Issues {#known-issues-12255}
+
+- ASSETS-25729 - View switcher menu is cut off 
+- ASSETS-25728 - Reprocess Asset option not available in search view
+- ASSETS-22603 - Some Download-type Asset Report columns display "null" values in the UI. Downloadable CSV is not affected.
 
 ### Embedded Technologies {#embedded-tech-12255}
 
