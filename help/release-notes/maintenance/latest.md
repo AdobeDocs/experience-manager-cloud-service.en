@@ -17,12 +17,6 @@ Feature enablement for this maintenance release will provide you with the full f
 
 None.
 
-### Known Issues {#known-issues-12255}
-
-- ASSETS-25729 - View switcher menu is cut off 
-- ASSETS-25728 - Reprocess Asset option not available in search view
-- ASSETS-22603 - Some Download-type Asset Report columns display "null" values in the UI. Downloadable CSV is not affected.
-
 ### Fixed Issues {#fixed-issues-12255}
 
 - Various accessibility-related updates
@@ -43,6 +37,12 @@ None.
 - ASSETS-23981 - Sorting Function for Titles Not Working in Collection Links
 - ASSETS-24723 - Published Assets were reprocessed again without user intervention
 - GRANITE-45385 - Migrate Tree Activation to use sling job instead of workflow
+
+### Known Issues {#known-issues-12255}
+
+- ASSETS-25729 - View switcher menu is cut off 
+- ASSETS-25728 - Reprocess Asset option not available in search view
+- ASSETS-22603 - Some Download-type Asset Report columns display "null" values in the UI. Downloadable CSV is not affected.
 
 ### Embedded Technologies {#embedded-tech-12255}
 
