@@ -55,7 +55,7 @@ The configuration changes reflect when you open the Filters page. The filter lab
 
 >[!NOTE]
 >
->The article lists the latest user interface options. The option names will be updated on the user interface in the upcoming release.
+>The article lists the latest user interface options. The option names are updated on the user interface in the upcoming release.
 
 ## Configure Text Predicate {#text-predicate}
 

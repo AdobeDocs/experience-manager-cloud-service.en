@@ -43,11 +43,11 @@ This configures the URLs of the product pages and supports the following options
 
 In the case of the [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` will be replaced by `/content/venia/us/en/products/product-page`
-* `{{sku}}` will be replaced by the product's sku, for example, `VP09`
-* `{{url_key}}` will be replaced by the product's `url_key` property, for example, `lenora-crochet-shorts`
-* `{{url_path}}` will be replaced by the product's `url_path`, for example, `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` will be replaced by the currently selected variant, for example, `VP09-KH-S`
+* `{{page}}` is replaced by `/content/venia/us/en/products/product-page`
+* `{{sku}}` is replaced by the product's sku, for example, `VP09`
+* `{{url_key}}` is replaced by the product's `url_key` property, for example, `lenora-crochet-shorts`
+* `{{url_path}}` is replaced by the product's `url_path`, for example, `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` is replaced by the currently selected variant, for example, `VP09-KH-S`
 
 Since the `url_path` got deprecated, the pre-defined product URL formats use a product's `url_rewrites` and pick the one with the most path segmenents as alternative if the `url_path` is not available.
 
@@ -62,9 +62,9 @@ This configures the URLs of the category or product list pages and supports the 
 
 In the case of the [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` will be replaced by `/content/venia/us/en/products/category-page`
-* `{{url_key}}` will be replaced by the category's `url_key` property
-* `{{url_path}}` will be replaced by the category's `url_path`
+* `{{page}}` is replaced by `/content/venia/us/en/products/category-page`
+* `{{url_key}}` is replaced by the category's `url_key` property
+* `{{url_path}}` is replaced by the category's `url_path`
 
 With the above example data, a category page URL formatted using the default URL format will look like `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
@@ -199,7 +199,7 @@ The custom URL format implementations must implement a pair of methods to build 
 
 ### Combine with Sling Mappings {#sling-mapping}
 
-In addition to the `UrlProvider`, it is also possible to configure [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) in order to rewrite and process URLs. The AEM Archetype project also provides [an example configuration](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) to configure some Sling Mappings for port 4503 (publish) and 80 (dispatcher).
+In addition to the `UrlProvider`, it is also possible to configure [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) to rewrite and process URLs. The AEM Archetype project also provides [an example configuration](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) to configure some Sling Mappings for port 4503 (publish) and 80 (dispatcher).
 
 ### Combine with AEM Dispatcher {#dispatcher}
 
@@ -223,7 +223,7 @@ _**Balance between URL length and encoded information.**_
 
 Depending on the catalog size, in particular the size and depth of the category tree, it may not be reasonable to encode the full `url_path` of categories into the URL. In that case the URL length could be reduced by including only the category's `url_key` instead. This will support most of the features that are available when using the category `url_path`.
 
-Additionally, make use of [Sling Mappings](#sling-mapping) in order to combine the sku with the product `url_key`. In most e-commerce systems the sku follows a particular format and separating the sku from the `url_key` for incoming requests should eaesily be possible. With that in mind, it should be posible to rewrite a product page URL to `/p/{{category}}/{{sku}}-{{url_key}}.html`, and a category URL to `/c/{{url_key}}.html` respecitively. The `/p` and `/c` prefix are still necessary in order to distinguish product and category pages from other content pages.
+Additionally, make use of [Sling Mappings](#sling-mapping) to combine the sku with the product `url_key`. In most e-commerce systems the sku follows a particular format and separating the sku from the `url_key` for incoming requests should eaesily be possible. With that in mind, it should be posible to rewrite a product page URL to `/p/{{category}}/{{sku}}-{{url_key}}.html`, and a category URL to `/c/{{url_key}}.html` respecitively. The `/p` and `/c` prefix are still necessary to distinguish product and category pages from other content pages.
 
 ### Migrating to a new URL Format {#migrate-url-formats}
 

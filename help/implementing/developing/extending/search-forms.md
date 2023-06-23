@@ -31,7 +31,7 @@ The **Search Forms** provide an out-of-the-box selection of [predicates](#predic
 
 ## Default Forms {#default-forms}
 
-When you first access the **Search Forms** console you can see that all the configurations have a padlock symbol. This indicates that the corresponding configuration is the default (out-of-the-box) configuration - and cannot be deleted. Once you have customized, and saved, a configuration the lock will disappear. It will reappear when you [delete your customized configuration](#deleting-a-configuration-to-reinstate-the-default), in which case the default (and the padlock indicator) will be reinstated.
+When you first access the **Search Forms** console you can see that all the configurations have a padlock symbol. This indicates that the corresponding configuration is the default (out-of-the-box) configuration - and cannot be deleted. Once you have customized, and saved, a configuration the lock will disappear. It will reappear when you [delete your customized configuration](#deleting-a-configuration-to-reinstate-the-default), in which case the default (and the padlock indicator) is reinstated.
 
 ![configuring search forms overview](assets/csf-overview.png)
 
@@ -587,7 +587,7 @@ You can add or edit fields and define/update their settings:
 
    ![preview icon](assets/csf-preview-icon.png)
 
-1. This will display the search forms as they will be shown (fully expanded) in the Search column of the appropriate console.
+1. Displays the search forms as they are shown (fully expanded) in the Search column of the appropriate console.
 
    ![preview form](assets/csf-preview-form.png)
 
@@ -618,7 +618,7 @@ Deleting a customized configuration is done from the console:
 
    ![restore default](assets/csf-restore-default.png)
 
-1. The customized configuration will be deleted and the default reinstated (this is indicated by the reappearance of the padlock symbol in the console).
+1. The customized configuration is deleted and the default reinstated (this is indicated by the reappearance of the padlock symbol in the console).
 
 ### Adding Options Predicates {#adding-options-predicates}
 
@@ -669,7 +669,7 @@ The following example (to search according to the template used to create a page
    ![Option predicates](assets/csf-options-predicate-02.png)
 
 1. Select **Done** to save your configuration.
-1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search - Filters** rail. The newly defined search forms, together with the various options will be visible. Select the required option to see the search results.
+1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search - Filters** rail. The newly defined search forms, together with the various options are visible. Select the required option to see the search results.
 
    ![options being used](assets/csf-options-usage.png)
 
