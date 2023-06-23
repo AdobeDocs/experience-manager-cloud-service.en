@@ -13,9 +13,9 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 1. Users will not have access to the Index Manager of a single AEM Instance to debug, configure or maintain indexing anymore. It is only used for local development and on-prem deployments.
 1. Users will not change Indexes on a single AEM Instance nor will they have to worry about consistency checks or reindexing anymore.
-1. In general, index changes are initiated before going to production in order to not circumvent quality gateways in the Cloud Manager CI/CD pipelines and not impact Business KPIs in production.
-1. All related metrics including search performance in production will be available for customers at runtime in order to provide the holistic view on the topics of Search and Indexing.
-1. Customers will be able to set up alerts according to their needs.
+1. In general, index changes are initiated before going to production to not circumvent quality gateways in the Cloud Manager CI/CD pipelines and not impact Business KPIs in production.
+1. All related metrics including search performance in production is available for customers at runtime to provide the holistic view on the topics of Search and Indexing.
+1. Customers are able to set up alerts according to their needs.
 1. SREs are monitoring system health 24/7 and will take action as needed and as early as possible.
 1. Index configuration is changed via deployments. Index definition changes are configured like other content changes.
 1. At a high level on AEM as a Cloud Service, with the introduction of the [rolling deployment model](#index-management-using-rolling-deployments) two sets of indexes will exist: one set for the old version, and one set for the new version.
@@ -257,7 +257,7 @@ During development, or when using on premise installations, indexes can be added
 
 With rolling deployments, there is no downtime. For some time during an update, both the old version (for example, version 1) of the application, as well as the new version (version 2), run concurrently against the same repository. If version 1 requires a certain index to be available, then this index must not be removed in version 2. The index should be removed later, for example in version 3, at which point it is guaranteed that version 1 of the application is no longer running. Also, applications should be written such that version 1 works well, even if version 2 is running, and if indexes of version 2 are available.
 
-After upgrading to the new version is complete, old indexes can be garbage collected by the system. The old indexes might still stay for some time, in order to speed up rollbacks (if a rollback should be needed).
+After upgrading to the new version is complete, old indexes can be garbage collected by the system. The old indexes might still stay for some time, to speed up rollbacks (if a rollback should be needed).
 
 The following table shows five index definitions: index `cqPageLucene` is used in both versions while index `damAssetLucene-custom-1` is used only in version 2.
 
@@ -273,7 +273,7 @@ The following table shows five index definitions: index `cqPageLucene` is used i
 | /oak:index/acme.product-custom-2  | No  | No  | Yes  |
 | /oak:index/cqPageLucene  | Yes  | Yes  | Yes  |
 
-The version number is incremented each time the index is changed. In order to avoid custom index names colliding with index names of the product itself, custom indexes, as well as changes to out of the box indexes must end with `-custom-<number>`.
+The version number is incremented each time the index is changed. To avoid custom index names colliding with index names of the product itself, custom indexes, as well as changes to out of the box indexes must end with `-custom-<number>`.
 
 ### Changes to Out-of-the-Box Indexes {#changes-to-out-of-the-box-indexes}
 

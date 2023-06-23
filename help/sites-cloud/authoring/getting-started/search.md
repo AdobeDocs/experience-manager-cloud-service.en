@@ -27,16 +27,16 @@ With the search rail you can:
 
 To search and filter your resources:
 
-1. Open **Search** (with the magnifying glass in the toolbar) and enter your search term. Suggestions will be made and can be selected:
+1. Open **Search** (with the magnifying glass in the toolbar) and enter your search term. Suggestions are made and can be selected:
 
    ![Search term](/help/sites-cloud/authoring/assets/search-term.png)
 
-   By default the search results will be limited to your current location (i.e. console and related resource type):
+   By default the search results are limited to your current location (that is, console and related resource type):
 
    ![Search location](/help/sites-cloud/authoring/assets/search-term-location.png)
 
 1. If required, you can remove the location filter (select **X** on the filter you want removed) to search across all consoles/resource types.
-1. The results will be shown, grouped according to console and related resource type.
+1. The results are shown, grouped according to console and related resource type.
 
    You can either select a specific resource (for further action), or drill down by selecting the required resource type; for example **View All Sites**:
 
@@ -90,7 +90,7 @@ As well as searching by a wide range of facets you can also save a particular se
 
    ![Saving a search with a name](/help/sites-cloud/authoring/assets/search-save-name.png)
 
-1. Your saved search will be available from the selector the next time you access the search panel:
+1. Your saved search is available from the selector the next time you access the search panel:
 
    ![Saved searches](/help/sites-cloud/authoring/assets/saved-searches.png)
 

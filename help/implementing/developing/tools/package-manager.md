@@ -274,7 +274,7 @@ A package is often built at the same time as you [create the package](#creating-
 
 1. Open the package details from the package list by clicking the package name.
 
-1. Click **Build**. A dialog asks for confirmation that you do want to build the package since any existing package contents will be overwritten.
+1. Click **Build**. A dialog box asks for confirmation that you do want to build the package because any existing package contents will be overwritten.
 
 1. Click **OK**. AEM builds the package, listing all content added to the package as it does so in the activity list. When complete AEM displays a confirmation that the package was built and (when you close the dialog) updates the package list information.
 
@@ -439,7 +439,7 @@ To resolve this issue, the maintainer of the overlay file in `/apps` must review
 
 **What's Checked**
 
-This validation checks which permissions are being added, how they will be handled (merge/replace), and if the current permissions will be impacted.
+This validation checks which permissions are being added, how they are handled (merge/replace), and if the current permissions are impacted.
 
 **How It's Reported**
 
@@ -447,7 +447,7 @@ The permissions are described in the Activity Log of Package Manager.
 
 **Error States**
 
-No explicit errors can be provided. The validation simply indicates whether any new ACL permissions will be added or impacted by installing the package.
+No explicit errors can be provided. The validation simply indicates whether any new ACL permissions are added or impacted by installing the package.
 
 **Error Resolution**
 
@@ -516,13 +516,13 @@ Packages are defined by their filters. You can have Package Manager apply filter
 
 ### Installing Packages {#installing-packages}
 
-Uploading a package only adds the package content to the repository, but it is not accessible. You must install the uploaded package in order to use the package's content.
+Uploading a package only adds the package content to the repository, but it is not accessible. You must install the uploaded package to use the package's content.
 
 >[!CAUTION]
 >
 >Installing a package can overwrite or delete existing content. Only upload a package if you are sure that it does not delete or overwrite content that you need.
 
-Prior to installation of your package, Package Manager automatically creates a snapshot package that contains the content that will be overwritten. This snapshot will be reinstalled if you uninstall your package.
+Prior to installation of your package, Package Manager automatically creates a snapshot package that contains the content that is overwritten. This snapshot is reinstalled if you uninstall your package.
 
 1. [Access Package Manager.](#accessing)
 

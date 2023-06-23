@@ -184,7 +184,7 @@ Data processed by workflows is stored in the Adobe provided storage (JCR). This 
 
 At the level of workflow model, a flag is provided to indicate that the model (and its runtime instances) has external storage of metadata. Workflow variables will not be persisted in JCR for the workflow instances of the models marked for external storage. 
 
-The property *userMetadataPersistenceEnabled* will be stored on the *jcr:content node* of the workflow model. This flag will be persisted in workflow metadata as *cq:userMetaDataCustomPersistenceEnabled*.
+The property *userMetadataPersistenceEnabled* is stored on the *jcr:content node* of the workflow model. This flag is persisted in workflow metadata as *cq:userMetaDataCustomPersistenceEnabled*.
 
 The illustration below shows have to set the flag on a workflow.
 

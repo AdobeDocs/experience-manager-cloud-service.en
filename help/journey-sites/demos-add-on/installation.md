@@ -64,7 +64,7 @@ Programs can be either production programs or sandbox programs.
 * **A production program** is created to eventually allow live traffic when your program is ready to go live.
 * **A sandbox program** is created for training, running demos, enablement, POCs, etc. and is not meant for live traffic.
 
-In order to install the AEM Reference Demos Add-On, you will need to create a new sandbox program.
+To install the AEM Reference Demos Add-On, create a sandbox program.
 
 >[!NOTE]
 >

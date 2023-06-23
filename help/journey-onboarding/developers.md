@@ -45,7 +45,7 @@ Depending on your organizational needs, the same user(s) can have both roles.
 Before you begin the tasks described in this document as a developer or deployment manager, ensure that your system administrator has completed all the steps in this onboarding journey. This means that:
  
 * Your system administrator has assigned developers and deployment managers to their respective product profiles.
-* Developers must additionally be assigned to **AEM Users** or **AEM Administrators** product profiles in order to also use AEM.
+* Developers must additionally be assigned to **AEM Users** or **AEM Administrators** product profiles ito also use AEM.
 * Cloud resources have been set up.
 
 ## Accessing git {#accessing-git}
@@ -121,7 +121,7 @@ You can see the details of the run by clicking the ellipsis button again and sel
 
 Congratulations! You have now deployed code from your git repository to a non-production environment!
 
-## What’s Next {#whats-next}
+## What's Next {#whats-next}
 
 Now that you have read this document you should:
 
