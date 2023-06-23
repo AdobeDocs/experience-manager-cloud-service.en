@@ -112,7 +112,7 @@ Using Rule Editor, you can:
 ### Add default error handler function {#add-default-errror-handler}
 
 A default error handler is supported by default to display error messages on fields if the error response is in standard schema or in server-side validation failure. 
-To understand how to use a default error handler using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, take a simple Adaptive Form with two fields, **Pet ID** and **Pet Name**. Now, use a default error handler at the **Pet ID** field to check for various validation criteria based on the data source, for example, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. To add a default error handler using the Rule Editor's Invoke Service action, execute the following steps:
+To understand how to use a default error handler using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, take an example of a simple Adaptive Form with two fields, **Pet ID** and **Pet Name** and use a default error handler at the **Pet ID** field to check for various validation criteria based on the data source, for example, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. To add a default error handler using the Rule Editor's Invoke Service action, execute the following steps:
 
 1. Open an Adaptive Form in authoring mode, select a form object (for which you need to perform a validation check), and tap **[!UICONTROL Rule Editor]** to open the rule editor.
 1. Tap **[!UICONTROL Create]**.
@@ -221,7 +221,7 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 
  ![custom error handler message](/help/forms/assets/custom-error-handler-message.png)
 
-Open the console and check the response and header for the validation error message using the custom error handler function. 
+Open the browser console and check the response and header, received from the REST Service Endpoint, for the validation error message. 
 
 
 Sample code of standard external service error response using the Adaptive Form fieldName:
