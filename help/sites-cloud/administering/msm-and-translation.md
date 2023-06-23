@@ -18,35 +18,35 @@ These two features can be combined to cater for websites that are both [multinat
 
 >[!TIP]
 >
->If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey](/help/journey-sites/translation/overview.md). It is a guided path through translating your AEM Sites content using AEM's powerful translation tools; ideal if you have no AEM or translation experience.
 
 ## Multinational and Multilingual Sites {#multinational-and-multilingual-sites}
 
 You can efficiently create content for multinational and multilingual sites through the combined use of the Multi Site Manager and the translation workflow.
 
-Typically you would create a master site in one language and for a specific country, then use that content as a basis for the other sites, using translation where required.
+Typically, you create a primary site in one language and for a specific country, then use that content as a basis for the other sites, using translation where required.
 
-1. [Translate](translation/overview.md) the master site into different languages.
+1. [Translate](translation/overview.md) the primary site into different languages.
 1. Use [Multi Site Manager](msm/overview.md) to:
-   1. Re-use content from the master site and its translations to create sites for other countries and cultures.
+   1. Reuse content from the primary site and its translations to create sites for other countries and cultures.
    1. Where required, detach elements of the Live Copies to add localization details.
 
 >[!TIP]
 >
 >Limit the use of Multi Site Manager to content within one language.
 >
->For example, use the English master to create the English version of pages for the US, Canada, UK, etc. pages and use the French master to create the French version of pages for France, Switzerland, Canada, etc.
+>For example, use the primary English to create the English version of pages for the US, Canada, and UK pages. Then, use the primary French to create the French version of pages for France, Switzerland, Canada, and so on.
 
 The following diagram illustrates how the main concepts intersect (but does not show all levels/elements involved):
 
 ![Localization overview](assets/localization-overview.png)
 
-In this, and comparable, scenarios MSM does not manage the different language versions as such.
+In this scenario, and comparable ones, MSM does not manage the different language versions as such.
 
-* [MSM](msm/overview.md) manages the deployment of translated content from a blueprint (i.e. a global master) to the Live Copies (i.e. the local sites), within the boundaries of a language.
-* The [translation](translation/overview.md) integration capabilities of AEM, in conjunction with third-party translation management services, manages the languages and translating content into these different languages.
+* [MSM](msm/overview.md) manages the deployment of translated content from a blueprint (that is, a primary global) to the Live Copies (that is, the local sites), within the boundaries of a language.
+* The [translation](translation/overview.md) integration capabilities of AEM, with third-party translation management services, manages the languages and translating content into these different languages.
 
-For more advanced use-cases, MSM may be used across language masters as well.
+For more advanced use-cases, MSM may be used across primary languages, too.
 
 >[!TIP]
 >

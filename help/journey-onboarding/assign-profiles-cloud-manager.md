@@ -83,9 +83,9 @@ Knowing what these roles are and what they do, review your list of team members 
 
 You are now ready to add users and assign them to the **Business Owner** product profile.
 
-1. Identify the user(s) who need to manage Cloud Manager programs. These will be your **Business Owners**.
+1. Identify the users who need to manage Cloud Manager programs. These are your **Business Owners**.
 
-1. Log in to the Admin Console at `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` and on the **Overview** page, select **Adobe Experience Manager as a Cloud Service** product from **Products and services** card.
+1. Log on to the Admin Console at `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` and on the **Overview** page, select **Adobe Experience Manager as a Cloud Service** product from **Products and services** card.
 
    ![Products and services](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -160,7 +160,7 @@ Your **Deployment Manager**s have been assigned and can now access Cloud Manager
 
 Your **Developer**s have been assigned and can now access Cloud Manager. Depending on your future responsibilities, you may or may not need to also assign yourself as the system administrator to the **Developer** profile.
 
-## What’s Next {#whats-next}
+## What's Next {#whats-next}
 
 Congratulations! Your newly formed Cloud Manager team (including yourself assigned to the **Business Owner** profile) has been set up. In the role of **Business Owner**, you are now just one step away from logging in to Cloud Manager and enabling the creation of your cloud resources.
 
@@ -179,5 +179,5 @@ It is recommend to continue on the onboarding journey as described previously. T
 
 * [Cloud Manager Introduction](/help/onboarding/cloud-manager-introduction.md) - Learn about Cloud Manager, Cloud Manager programs, and environments.
 * [Cloud Manager Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) - Learn about AEM as a Cloud Service team and product profiles.
-* [Identity types on Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - Adobe’s identity management system helps admins create and manage user's access to applications and services. Adobe offers these identities types or accounts to authenticate and authorize users.
+* [Identity types on Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - Adobe's identity management system helps admins create and manage user's access to applications and services. Adobe offers these identities types or accounts to authenticate and authorize users.
 

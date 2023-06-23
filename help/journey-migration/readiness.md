@@ -1,6 +1,6 @@
 ---
 title: Readiness Phase
-description: Learn about the steps you need to take in order to make sure that your AEM installation is ready to be moved to the cloud
+description: Learn about the steps you need to take so you can make sure that your AEM installation is ready to be moved to the cloud
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 ---
 # Readiness Phase {#readiness-phase}
@@ -15,11 +15,11 @@ In this phase of the AEM as a Cloud Service Migration Journey, you will familiar
 
 ## The Story So Far {#story-so-far}
 
-The previous document, [Getting Started with Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md), outlines a list of phases you need to undergo in order to migrate to AEM as a Cloud Service, as well as the benefits of doing so.
+The previous document, [Getting Started with Moving to AEM as a Cloud Service](/help/journey-migration/getting-started.md), outlines a list of phases you need to undergo so you can migrate to AEM as a Cloud Service, as well as the benefits of doing so.
 
 ## Objective {#objective}
 
-This document helps you understand what factors you must consider in order to make sure that your AEM installation is ready to be moved to the cloud:
+This document helps you understand what factors you must consider so you can make sure that your AEM installation is ready to be moved to the cloud:
 
 * Learn about notable changes and deprecated features
 * Understand how to plan for the migration to AEM as a Cloud Service
@@ -54,7 +54,7 @@ The list of items in the below table is the subset of the changes most relevant 
   <tr>
     <td>Custom Run modes are not allowed</td>
     <td></td>
-    <td>Only run modes provided out of the box with AEM as a Cloud Service are supported.<br>When additional Development environments are added all of them tie to the “dev” run mode.</td>
+    <td>Only run modes provided out of the box with AEM as a Cloud Service are supported.<br>When additional Development environments are added all of them tie to the "dev" run mode.</td>
   </tr>
   <tr>
     <td>Cloud Manager Pipeline Execution is the only way to deploy</td>
@@ -84,7 +84,7 @@ The list of items in the below table is the subset of the changes most relevant 
   <tr>
     <td>Switch to Asynchronous Operations</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">Configuring Asynchronous Operations</a></td>
-    <td>To improve the overall performance of your environments, certain operations are executed in async mode. The async jobs will be queued and executed when system resources are available.</td>
+    <td>To improve the overall performance of your environments, certain operations are executed in async mode. The async jobs are queued and run when system resources are available.</td>
   </tr>
   <tr>
     <td>Token-based authentication and integration strategies</td>
@@ -144,7 +144,7 @@ The list of items in the below table is the subset of the changes most relevant 
   <tr>
     <td>Changes to Authentication</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">IMS Support for AEM as a Cloud Service</td>
-    <td>If you were previously using SAML 2.0 integration on both author and publish prior to moving to Cloud Service, the main change is that AEM as a Cloud Service Author only integrates with Adobe IMS. However, AEM as a Cloud Service Publish tier can still leverage SAML or other authentication integrations. AEM as a Cloud Service offers IMS authentication support only for Author, Admin and Dev users. The IMS authentication does not offer support for external end users of customer sites like site visitors.</td>
+    <td>If you were previously using SAML 2.0 integration on both author and publish prior to moving to Cloud Service, the main change is that AEM as a Cloud Service Author only integrates with Adobe IMS. However, AEM as a Cloud Service Publish tier can still use SAML or other authentication integrations. AEM as a Cloud Service offers IMS authentication support only for Author, Admin and Dev users. The IMS authentication does not offer support for external end users of customer sites like site visitors.</td>
   </tr>
 </tbody>
 </table>
@@ -157,7 +157,7 @@ We recommend you consult the [Deprecated Features](https://experienceleague.adob
 
 ## Plan for a Review of your AEM Installation {#review-planning}
 
-Once you have accustomed yourself with the changes introduced with AEM as a Cloud Service, it is time to start planning for a review of your existing installation, in order to gauge the level of changes required in order to move it to the cloud.
+After you have accustomed yourself with the changes introduced with AEM as a Cloud Service, it is time to start planning for a review of your existing installation. Doing so helps you gauge the level of changes required to move it to the cloud.
 
 The following figure showcases key steps involved during the review phase:
 
@@ -167,7 +167,7 @@ Next, we will explore what each of these steps means in detail.
 
 ### Assessing Cloud Service Readiness {#assess-cloud-readiness}
 
-The first step is to assess your readiness to move from your existing AEM version to Cloud Service and determine areas that will require refactoring in order to be compatible with AEM as a Cloud Service.
+The first step is to assess your readiness to move from your existing AEM version to Cloud Service and determine areas that require refactoring to be compatible with AEM as a Cloud Service.
 
 You will need to undertake a comprehensive assessment of your current AEM source code against the notable changes and deprecated features to determine the level of effort expected in the transition journey.
 
@@ -192,7 +192,7 @@ A typical report should contain these inputs:
 
 **Socialize the Report**
 
-After the Best Practices Analyzer reports are complete, share them with the relevant teams in order to confirm your findings and plan for your next steps. Depending on preference, you can also distribute a printed version of the report by using [Print Preview](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
+After the Best Practices Analyzer reports are complete, share them with the relevant teams so you can confirm your findings and plan for your next steps. Depending on preference, you can also distribute a printed version of the report by using [Print Preview](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
 
 ### Reviewing Resource Planning {#review-resource-planning}
 

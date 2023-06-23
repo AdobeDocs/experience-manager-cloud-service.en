@@ -40,7 +40,7 @@ Further [help-related resources are available from consoles](/help/sites-cloud/a
 
 ## Components Browser {#components-browser}
 
-Components are the building blocks of AEM content. You place multiple components on a page and configure their options in order to build your content page with AEM.
+Components are the building blocks of AEM content. You place multiple components on a page and configure their options to build your content page with AEM.
 
 The components browser shows all components that are available for use on your current page. These can be dragged to the appropriate location, then edited to add your content.
 
@@ -166,7 +166,7 @@ When you open the side panel it will slide open (from the left side). Select the
 
 A page can easily be composed of many of the same type of components, so the content (component) tree displays descriptive text (in gray) after the name of the component type (in black). The descriptive text comes from common properties of the component such as title or text.
 
-Component types will be shown in the user language, whereas the component description text comes from the page language.
+Component types are shown in the user language, whereas the component description text comes from the page language.
 
 Clicking the chevron next to a component will collapse or expand that level.
 
@@ -264,7 +264,7 @@ There are various modes when editing a page allowing for different actions:
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - allows you to view a pages state at a particular point in time.
 * [Live Copy Status](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) - allows a quick overview of the live copy status and which components are/are not inherited.
 * [Developer Mode](/help/implementing/developing/tools/developer-mode.md)
-* [Preview](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - used to view the page as it will be shown on the publish environment; or to navigate using links in the content.
+* [Preview](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - used to view the page as it is shown on the publish environment; or to navigate using links in the content.
 * [Annotate](/help/sites-cloud/authoring/fundamentals/annotations.md) - used to add or view annotations on the page.
 
 You can access these using the icons in the top right corner. The actual icon will change to reflect the mode you are currently using:

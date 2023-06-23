@@ -63,12 +63,12 @@ Make sure to add this new Maven sub-project to the parent projects `<modules>` l
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <properties>
-                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                    <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                     <cloudManagerTarget>none</cloudManagerTarget>
                 </properties>
                 <configuration>
                     <properties>
-                        <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                        <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
                     <filters>
@@ -165,7 +165,7 @@ In this case:
 
 ## Errors and Debugging
 
-If the repository structure packages are not set-up correctly, at Maven build an error will be reported:
+If the repository structure packages are not set-up correctly, at Maven build an error is reported:
 
 ```
 1 error(s) detected during dependency analysis.
