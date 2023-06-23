@@ -29,7 +29,7 @@ You start in the Content Fragment editor with the sample app provided with your 
 
 1. Tap or click the **Preview** button at the top-right of the editor screen.
 
-1. The demo app opens in a new tab. The app is for the fictional WKND outdoor lifestyle brand. Click around to navigate the sample content.
+1. The demo app opens in a new tab. The app is for the fictional WKND outdoor lifestyle brand. Scroll down the page to navigate the sample content.
 
 1. Return to the browser tab of the Content Fragment editor to continue.
 
@@ -99,7 +99,7 @@ Now that you updated the image of the biker, let's walk through how to add new c
 
 1. Select the **Mtn Biking - Shoppable** layer.
 
-1. In order to create a new call-out on this panel, you must create a new shoppable moment Content Fragment. Tap or click the **+ Create new fragment** button.
+1. To create a new call-out on this panel, you must create a new shoppable moment Content Fragment. Tap or click the **+ Create new fragment** button.
 
    ![Add a shoppable moment](assets/do-not-localize/add-reference-1-5.png)
 

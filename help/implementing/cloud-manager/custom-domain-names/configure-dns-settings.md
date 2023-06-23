@@ -9,9 +9,9 @@ After your custom domain name is successfully verified and deployed, you are rea
 
 ## What are DNS Settings? {#dns-settings}
 
-A `CNAME` or A record, once provisioned will route all internet traffic for the domain to wherever it is pointing. If that location is not provisioned to serve the traffic, there will be an outage. If it has not been tested, there may be errors in the content. This is why this step is always done after testing is complete and you are ready to go live.
+A `CNAME` or A record, once provisioned will route all internet traffic for the domain to wherever it is pointing. If that location is not provisioned to serve the traffic, there is an outage. If it has not been tested, there may be errors in the content. This is why this step is always done after testing is complete and you are ready to go live.
 
-In order to configure these settings, you need to determine if a `CNAME` or Apex record must be configured to point your custom domain name to the Cloud Manager domain name. The following sections will help you determine which type of record is appropriate for your DNS configuration.
+To configure these settings, you need to determine if a `CNAME` or Apex record must be configured to point your custom domain name to the Cloud Manager domain name. The following sections will help you determine which type of record is appropriate for your DNS configuration.
 
 >[!NOTE]
 >

@@ -142,7 +142,7 @@ By default, credential on AEM as a Cloud Service expire after a year. To ensure 
 
 ![Credential Refresh](assets/credential-refresh.png)
 
-After pressing the button, a new set of credentials will be generated. You can update your secret storage with the new credentials and validate that they work as they should.
+After pressing the button, a new set of credentials is generated. You can update your secret storage with the new credentials and validate that they work as they should.
 
 >[!NOTE]
 >

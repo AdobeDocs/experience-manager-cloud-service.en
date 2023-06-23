@@ -56,7 +56,7 @@ The content fragments enable:
    >
    >An alternative method is to drag a specific content fragment directly onto the page. This will automatically create the associated component (Content Fragment).
 
-4. Initially the content from the **Main** Element and **Master** (variation) will be shown. You can [select other elements and/or variations](#selecting-the-element-or-variation) as required.
+4. Initially, the content from the **Main** Element and **Master** (variation) are shown. You can [select other elements and/or variations](#selecting-the-element-or-variation) as required.
 
    ![Content Fragments in the Assets Browser](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -83,15 +83,15 @@ In the appropriate configuration dialog you can select the available parameters,
   * **Single Text Element**
   * **Multiple Elements**
 * **Element**
-  * A selection will be available dependent on the model used.
+  * A selection is available dependent on the model used.
 
   >[!NOTE]
   >
   >The elements available depend on the model used.
 
 * **Variation**
-  * The default **Master** will always be available.
-  * A selection will be available if variations were created for the fragment.
+  * The default **Master** is always be available.
+  * A selection is available if variations were created for the fragment.
 
 * **ID**
 
@@ -142,7 +142,7 @@ For in-between content you can:
 
 ### Using Associated Content {#using-associated-content}
 
-If you have [associated content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/sites-cloud/administering/content-fragments/content-fragments.md) these assets will be available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for [in-between content](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments). 
+If you have [associated content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/sites-cloud/administering/content-fragments/content-fragments.md) these assets are available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for [in-between content](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments). 
 
 >[!NOTE]
 >
@@ -154,7 +154,7 @@ If you have [associated content](/help/sites-cloud/administering/content-fragmen
 
 Once you have added a fragment with associated content to your page a new tab (**Associated Content**) is opened in the side panel.
 
-From here you can drag the assets to the required location (either to an existing component or to the required position where the appropriate component will be created):
+From here you can drag the assets to the required location (either to an existing component or to the required position where the appropriate component is created):
 
 ![Inserting an image](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 

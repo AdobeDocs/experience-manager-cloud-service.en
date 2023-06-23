@@ -17,7 +17,7 @@ The prerequisites are simple.
 
 * Ensure an instance of AEM is running locally.
 * Create a base AEM SPA project using [the AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties)
-  * This will form the basis of the AEM project which will be updated to include the external SPA.
+  * Forms the basis of the AEM project which is updated to include the external SPA.
   * For the samples in this document, we are using the starting point of [the WKND SPA project.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor)
 * Have the working, external React SPA that you wish to integrate at hand.
 
@@ -75,7 +75,7 @@ In this example, the `ModelManager` is initialized and an empty `ModelStore` is 
 
 ### AEM Authorable Leaf Components {#authorable-leaf-components}
 
-1. Create/identify an AEM component for which an authorable React component will be created. In this example, we are using the WKND project's text component.
+1. Create/identify an AEM component for which an authorable React component is created. In this example, we are using the WKND project's text component.
 
    ![WKND text component](assets/external-spa-text-component.png)
 
@@ -231,7 +231,7 @@ The `TestPage` component looks like the following after adding the virtual compo
 >
 >Ensure the `AEMText` component has its `resourceType` set in the configuration to enable this feature.
 
-You can now deploy the changes to AEM following the steps in the section [Verify Editing of Text Content on AEM.](#verify-text-edit) A placeholder will be displayed for the currently non-existing `text_20` node.
+You can now deploy the changes to AEM following the steps in the section [Verify Editing of Text Content on AEM.](#verify-text-edit) A placeholder is displayed for the currently non-existing `text_20` node.
 
 ![The text_20 node in aem](assets/external-spa-text20-aem.png)
 
@@ -247,7 +247,7 @@ There are a number of requirements to add virtual leaf components as well as som
 * The page node provided at the path in `pagePath` must exist in the AEM project.
 * The name of the node to be created must be provided in the `itemPath`.
 * The component can be created at any level.
-  * If we provide an `itemPath='text_20'` in the previous example, the new node will be created directly under the page i.e. `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
+  * If we provide an `itemPath='text_20'` in the previous example, the new node is created directly under the page i.e. `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
 * The path to the node where a new node is created must be valid when provided via `itemPath`.
   * In this example, `root/responsivegrid` must exist so that the new node `text_20` can be created there.
 * Only leaf component creation is supported. Virtual container and page will be supported in future versions.
@@ -276,13 +276,13 @@ Once the author adds a child component to the container, the new container node 
 
 ![Container with content in JCR](assets/container-with-content-jcr.png)
 
-More components and content can be added to the container now as the author requires and the changes will be persisted.
+More components and content can be added to the container now as the author requires and the changes are persisted.
 
 #### Requirements and Limitations {#container-limitations}
 
 There are a number of requirements to add virtual containers as well as some limitations.
 
-* The policy for determining which components can be added will be inherited from the parent container.
+* The policy for determining which components can be added are inherited from the parent container.
 * The immediate parent of the container to be created must already exist in AEM.
   * If the container `root/responsivegrid` already exists in the AEM container, then a new container can be created by providing the path `root/responsivegrid/newContainer`.
   * However `root/responsivegrid/newContainer/secondNewContainer` is not possible.
@@ -320,7 +320,7 @@ For example, assume we have a SPA in which the application is rendered inside a 
 
 If the external React SPA application has multiple pages, [it can use routing to determine the page/component to render.](/help/implementing/developing/hybrid/routing.md) The basic use case is to match the currently active URL against the path provided for a route. To enable editing on such routing enabled applications, the path to be matched against needs to be transformed to accommodate AEM-specific info.
 
-In the following example we have a simple React application with two pages. The page to be rendered is determined by matching the path provided to the router against the active URL. For example, if we are on `mydomain.com/test`, `TestPage` will be rendered.
+In the following example we have a simple React application with two pages. The page to be rendered is determined by matching the path provided to the router against the active URL. For example, if we are on `mydomain.com/test`, `TestPage` is rendered.
 
 ![Routing in an external SPA](assets/external-spa-routing.png)
 

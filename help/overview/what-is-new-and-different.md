@@ -186,7 +186,7 @@ Due to the clear separation of code and content, developers can use a particular
 
 ### Local Development {#aem-as-a-cloud-service-developing-local-development}
 
-In order to support rapid iterations and development, it is also possible to develop AEM applications outside the AEM as a Cloud Service context. For this purpose, the following artifacts are made available to the developers:
+To support rapid iterations and development, it is also possible to develop AEM applications outside the AEM as a Cloud Service context. For this purpose, the following artifacts are made available to the developers:
 
 * The AEM as a Cloud Service QuickStart: a `.jar` based, standalone installer of the latest AEM code base, with the same functional and API surface.
 
@@ -236,7 +236,7 @@ This combines the benefits of:
 >
 >For further details, the [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) is a good starting point.
 
-The basic principles of the authoring user interface (UI), for both Sites and Assets, will be very familiar to anyone who has used AEM in the past.
+The basic principles of the authoring user interface (UI), for both Sites and Assets, willvery familiar to anyone who has used AEM in the past.
 
 The main difference is that the UI is purely touch-enabled; the classic UI is no longer available. Otherwise the basics remain unchanged, with only small changes apparent. 
 

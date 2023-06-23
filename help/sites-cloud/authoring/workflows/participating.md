@@ -18,11 +18,11 @@ Workflows typically include steps that require a person to perform an activity o
 
 When you are assigned a work item (for example, **Approve Content**) various alerts and/or notifications appear:
 
-* Your [notification](/help/sites-cloud/authoring/getting-started/inbox.md) indicator (toolbar) will be incremented:
+* Your [notification](/help/sites-cloud/authoring/getting-started/inbox.md) indicator (toolbar) is incremented:
 
   ![Notification toolbar](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* The item will be listed in your notification [Inbox](/help/sites-cloud/authoring/getting-started/inbox.md):
+* The item is listed in your notification [Inbox](/help/sites-cloud/authoring/getting-started/inbox.md):
 
   ![Notifications in inbox](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
@@ -42,7 +42,7 @@ When you are assigned a work item (for example, **Approve Content**) various ale
   >
   >Actions are shown when the current user is directly involved in the current step of the workflow.
 
-* When **Timeline** is open for the resource, the workflow step will be shown. When you click/tap on the alert banner, the available actions will also be shown:
+* When **Timeline** is open for the resource, the workflow step is shown. When you click/tap on the alert banner, the available actions will also be shown:
 
   ![Workflow in the timeline](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
