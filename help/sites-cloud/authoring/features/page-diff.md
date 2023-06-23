@@ -13,7 +13,7 @@ The page diff feature allows for the convenient side-by-side comparison of two p
 
 >[!NOTE]
 >
->The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
+>The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` to use the feature.
 >
 >See [Developing and Page Diff](/help/implementing/developing/introduction/page-diff.md#operation-details) for more technical details on this feature.
 
@@ -59,7 +59,7 @@ The diff detects changes at the component and HTML level. Items that have been c
 
 ### Fullscreen and Exiting {#fullscreen-and-exiting}
 
-In order to focus on particular content, you can click on the full screen icon for either "side" of the side-by-side diff to enlarge it to the full browser window.
+To focus on particular content, you can click on the full screen icon for either "side" of the side-by-side diff to enlarge it to the full browser window.
 
 ![Full screen button](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 
@@ -69,7 +69,7 @@ The selected side will fill the entire window, but the bar will remain at the to
 
 >[!NOTE]
 >
->If the browser width can not accommodate both page names in full screen view, only the name of the page being displayed will be shown and the other will be available behind ellipsis.
+>If the browser width can not accommodate both page names in full screen view, only the name of the page being displayed is shown and the other is available behind ellipsis.
 
 You can also choose to close the full screen view by clicking the exit full screen icon.
 

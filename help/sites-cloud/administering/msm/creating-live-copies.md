@@ -7,7 +7,7 @@ exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 ---
 # Creating and Synchronizing Live Copies {#creating-and-synchronizing-live-copies}
 
-You can create a Live Copy from a page or blueprint configuration in order to reuse that content across your site. Manage inheritance and synchronization, you can control how changes to the content are propagated.
+You can create a Live Copy from a page or blueprint configuration to reuse that content across your site. Manage inheritance and synchronization, you can control how changes to the content are propagated.
 
 ## Managing Blueprint Configurations {#managing-blueprint-configurations}
 
@@ -71,7 +71,7 @@ You can edit or delete an existing blueprint configuration:
 
    ![Blueprint configurations](../assets/blueprint-configurations.png)
 
-1. Select the required blueprint configuration - the appropriate actions will become available in the toolbar:
+1. Select the required blueprint configuration - the appropriate actions become available in the toolbar:
 
     * **Properties**; you can use this to view and then edit the properties of the configuration.
     * **Delete**
@@ -95,7 +95,7 @@ You can create a Live Copy of any page:
 
 The only difference is that availability of the **Rollout** command on the source/blueprint pages is dependent on whether source is referenced by a blueprint configuration:
 
-* If you create the Live Copy from a source page that **is** referenced in a blueprint configuration, then the Rollout command will be available on the source/blueprint page(s).
+* If you create the Live Copy from a source page that **is** referenced in a blueprint configuration, then the Rollout command is available on the source/blueprint page(s).
 * If you create the Live Copy from a source page that **is not** referenced in a blueprint configuration, then the Rollout command will not be available on the source/blueprint page(s).
 
 To create a Live Copy:
@@ -128,8 +128,8 @@ To create a Live Copy:
     * Selected: create a Live Copy of the selected page only (shallow Live Copy)
     * Not Selected: create a Live Copy that includes all descendants of the selected page (deep Live Copy)
 
-1. (Optional) To specify one or more rollout configurations to use for the Live Copy, use the **Rollout Configs** drop-down list to select them. Selected configurations will be shown underneath the drop-down selector.
-1. Click or tap **Create**. A confirmation message will be shown, from here you can select either **Open** or **Done**.
+1. (Optional) To specify one or more rollout configurations to use for the Live Copy, use the **Rollout Configs** drop-down list to select them. Selected configurations are shown underneath the drop-down selector.
+1. Click or tap **Create**. A confirmation message is shown, from here you can select either **Open** or **Done**.
 
    >[!NOTE]
    >
@@ -250,7 +250,7 @@ Rollouts are processed as asynchronous jobs and can be checked on the [***Async 
 
    ![Rollout blueprint from references rail](../assets/rollout-blueprint-from-references.png)
 
-1. You will be asked to confirm details of the rollout:
+1. You are asked to confirm details of the rollout:
 
     * **Rollout scope**:
 
@@ -303,7 +303,7 @@ Synchronize a Live Copy to pull changes from the source to the Live Copy.
 
    ![Synchronize button](../assets/synchronize.png)
 
-   Confirmation will be requested, use **Sync** to proceed.
+   Confirmation is requested, use **Sync** to proceed.
 
 #### Synchronize a Live Copy from the Live Copy Overview {#synchronize-a-live-copy-from-the-live-copy-overview}
 
@@ -329,7 +329,7 @@ To change Live Copy content, you can:
 >
 >If you manually create a new page in the Live Copy, the new page is local to the Live Copy, meaning it does not have a corresponding source page to which it is attached.
 >
->As a best practice in order to create a local page that is part of the relationship is to create the local page in the source and perform a deep rollout. This will create the page locally as Live Copies.
+>As a best practice so you can create a local page that is part of the relationship is to create the local page in the source and perform a deep rollout. This will create the page locally as Live Copies.
 
 >[!NOTE]
 >
@@ -411,13 +411,13 @@ Once [suspended](#suspending-inheritance-from-page-properties) the **Resume** ac
 
 ![Resume button](../assets/resume.png)
 
-When selected, the dialog will be shown. You can select a synchronization, if required, then confirm the action.
+When selected, the dialog box is shown. You can select a synchronization, if required, then confirm the action.
 
 #### Resume a Live Copy Page from the Live Copy Overview {#resume-a-live-copy-page-from-the-live-copy-overview}
 
 The [Resume action is also available from the Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview), when a Live Copy page is selected.
 
-1. Open the [Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview) and select a Live Copy Page that has been suspended. The page will be shown as **INHERITANCE CANCELLED**.
+1. Open the [Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview) and select a suspended Live Copy Page. The page is shown as **INHERITANCE CANCELLED**.
 1. Select **Resume** from the toolbar.
 1. Indicate whether you want to synchronize the page after reverting inheritance, then confirm the **Resume** action in the **Resume Live Copy** dialog.
 
@@ -492,7 +492,7 @@ To enable inheritance for a component, click or tap the **Re-enable Inheritance*
 If a Live Copy contains components that are part of a paragraph system, the inheritance of that paragraph system observes the following rules:
 
 * The order of components in an inherited paragraph system can be modified, even with inheritance established.
-* On rollout, the order of the components will be restored from the blueprint. If new components were added to the Live Copy before rollout, they will be reordered along with the components above which they were added.
+* On rollout, the order of the components are restored from the blueprint. If new components were added to the Live Copy before rollout, they are reordered along with the components above which they were added.
 * If inheritance of the paragraph system is cancelled, the order of components will not be restored on rollout and will remain as-is in the Live Copy.
 
 >[!NOTE]
@@ -538,7 +538,7 @@ To enable inheritance for a property, click or tap the **Revert Inheritance** ic
 
 ### Resetting a Live Copy Page {#resetting-a-live-copy-page}
 
-You can reset a Live Copy page in order to:
+You can reset a Live Copy page to do the following:
 
 * Remove all inheritance cancellations and
 * Return the page to the same state as the source page.
@@ -584,7 +584,7 @@ To track the changes you have made, you can view the blueprint page in **Referen
 
    ![Comparing Live Copies](../assets/compare-live-copy.png)
 
-1. The Live Copy and blueprint pages will be opened side-by-side.
+1. The Live Copy and blueprint pages are opened side-by-side.
 
    For full information about using the comparison feature see [Page Diff](/help/sites-cloud/authoring/features/page-diff.md).
 
@@ -635,7 +635,7 @@ To detach a Live Copy:
 
    ![Detach button](../assets/detach-button.png)
 
-1. A confirmation dialog will be shown, select **Detach** to complete the action.
+1. A confirmation dialo box is shown, select **Detach** to complete the action.
 
 ### Detach a Live Copy Page from the Live Copy Overview {#detach-a-live-copy-page-from-the-live-copy-overview}
 

@@ -23,7 +23,7 @@ To make the association you first need to [add your media asset(s) to a collecti
 
 1. Depending on whether any collections have already been associated, or not - select either:
 
-   * **Associate Content** - this will be the first associated collection
+   * **Associate Content** - the first associated collection
    * **Associate Collection** - associated collections already are already configured
 
 1. Select the required collection.
@@ -32,7 +32,7 @@ To make the association you first need to [add your media asset(s) to a collecti
 
    ![Select collection](assets/cfm-assoc-content-02.png)
 
-1. Confirm (with **Select**). The collection will be listed as associated.
+1. Confirm (with **Select**). The collection is listed as associated.
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 

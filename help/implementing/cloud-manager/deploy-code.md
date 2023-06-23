@@ -76,14 +76,14 @@ The **Stage testing** phase involves these steps.
 * **Experience Audit** - This step in the pipeline is always executed and cannot be skipped. As a production pipeline is executed, an experience audit step is included after custom functional testing that will run the checks.
    * The pages that are configured are submitted to the service and evaluated. 
    * The results are informational and show the scores and the change between the current and previous scores.
-   * This insight is valuable to determine if there is a regression that will be introduced with the current deployment.
+   * This insight is valuable to determine if there is a regression that is introduced with the current deployment.
    * Please refer to the document [Understanding Experience Audit results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 
 ![Stage Testing](assets/stage-testing.png)
 
 ## Production Deployment Phase {#deployment-production}
 
-The process for deploying to production topologies differs slightly in order to minimize impact visitors to an AEM site.
+The process for deploying to production topologies differs slightly to minimize impact visitors to an AEM site.
 
 Production deployments generally follow the same steps as previously described, but in a rolling manner.
 
@@ -143,7 +143,7 @@ Limitations:
 
 ### Identifying a re-execute execution
 
-To identify if an execution is a re-execute execution, the trigger  field can be examined. Its value will be *RE_EXECUTE*.
+To identify if an execution is a re-execute execution, the trigger  field can be examined. Its value is *RE_EXECUTE*.
 
 ### Triggering a new execution
 
@@ -187,4 +187,4 @@ To trigger a re-execution, a PUT request needs to be made to the HAL Link <(<htt
 
 The syntax of the HAL link's _href_  value above is not intended to be used as a point of reference. The actual value should always be read from the HAL link and not generated.
 
-Submitting a *PUT* request to this endpoint will result in a *201* response if successful and the response body will be the representation of the new  execution. This is similar to starting a regular execution through the API.
+Submitting a *PUT* request to this endpoint results in a *201* response if successful, and the response body is the representation of the new  execution. This is similar to starting a regular execution through the API.

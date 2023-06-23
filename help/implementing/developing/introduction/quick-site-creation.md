@@ -23,8 +23,8 @@ For a complete overview of how the Quick Site Creation tool works and to get sta
 
 ## Additional Resources {#additional-resources}
 
-Because the Quick Site Creation tool leverages many AEM features, these additional resources may be helpful.
+Because the Quick Site Creation tool uses many AEM features, these additional resources may be helpful.
 
 * [Site Templates](/help/sites-cloud/administering/site-creation/site-templates.md) - Learn how AEM site templates can be used to predefine site structure and initial content to allow you to quickly create new sites.
 * [Site Themes](/help/sites-cloud/administering/site-creation/site-themes.md) - Learn how AEM site themes can be used to customize the style and design of your site.
-* [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - With the front-end pipeline, more independence is given to the front-end developers and the development process can gain substantial velocity. This document describes some considerations to be aware of in order to get the full potential out of this process.
+* [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - With the front-end pipeline, more independence is given to the front-end developers and the development process can gain substantial velocity. This document describes some considerations to be aware of to get the full potential out of this process.

@@ -1,13 +1,13 @@
 ---
 title: AEM Version Updates
-description: Learn how AEM as a Cloud Service uses continuous integration and delivery (CI/CD) in order to keep you projects on the latest version. 
+description: Learn how AEM as a Cloud Service uses continuous integration and delivery (CI/CD) to keep your projects on the latest version. 
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 ---
 
 # AEM Version Updates {#aem-version-updates}
 
-Learn how AEM as a Cloud Service uses continuous integration and delivery (CI/CD) in order to keep you projects on the latest version.
+Learn how AEM as a Cloud Service uses continuous integration and delivery (CI/CD) to keep your projects on the latest version.
 
 ## CI/CD {#ci-cd}
 

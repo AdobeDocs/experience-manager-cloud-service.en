@@ -1,11 +1,11 @@
 ---
 title: API Reference Materials
-description: AEM has extensive and powerful APIs that you can leverage for your digital experience project.
+description: AEM has extensive and powerful APIs that you can use for your digital experience project.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 ---
 # API Reference Materials {#api-reference-materials}
 
-Adobe Experience Manager (AEM) provides many APIs for developing applications and extending AEM. AEM is built on top of a number of open-source technologies, which can also be leveraged.
+Adobe Experience Manager (AEM) provides many APIs for developing applications and extending AEM. AEM is built on top of a number of open-source technologies, which can also be used.
 
 ## AEM Core APIs {#core-aem-apis}
 

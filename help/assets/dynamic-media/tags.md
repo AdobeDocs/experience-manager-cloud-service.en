@@ -414,7 +414,7 @@ As part of the configuration, be sure you have access to a company in Adobe Expe
 
 ## Configure Adobe Analytics for the integration {#configuring-adobe-analytics-for-the-integration}
 
-After you configure Adobe Analytics, the following will be set up for the integration:
+After you configure Adobe Analytics, the following is set up for the integration:
 
 * A Report Suite is in place and selected.
 * Analytics Variables are available to receive tracking data.
@@ -454,7 +454,7 @@ See also [Analytics Implementation Guide](https://experienceleague.adobe.com/doc
 
    See [Overview of props and eVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars).
 
-   For the purposes of this documentation, only a Custom Traffic (props) variable will be used because they become available in an Analytics Report within a few minutes after an action occurs on a web page.
+   For the purposes of this documentation, only a Custom Traffic (props) variable is used because they become available in an Analytics Report within a few minutes after an action occurs on a web page.
 
    To enable a new Custom Traffic variable, in Adobe Analytics, on the toolbar, go to **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
@@ -481,7 +481,7 @@ See also [Analytics Implementation Guide](https://experienceleague.adobe.com/doc
 
 ## Configure Experience Platform Tags for the integration {#configuring-adobe-launch-for-the-integration}
 
-After you configure Experience Platform Tags, the following will be set up for the integration:
+After you configure Experience Platform Tags, the following is set up for the integration:
 
 * The creation of a new Property to keep all your configurations together.
 * The installation and setup of extensions. The client-side code of all extensions installed in the Property is compiled together into a library. This library is used by the web page later.
@@ -565,7 +565,7 @@ As of this writing, the *Dynamic Media Viewers* extension is only available if t
 
 See [Create a property in Experience Platform Tags](#creating-a-property-in-adobe-launch).
 
-After the extensions are installed and setup, at minimum, the following five extensions (four if you are not tracking video) will be listed in the Extensions &gt; Installed area.
+After the extensions are installed and setup, at minimum, the following five extensions (four if you are not tracking video) wil listed in the Extensions &gt; Installed area.
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 

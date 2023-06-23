@@ -88,7 +88,7 @@ This table refers to the product version numbers. Java build numbers or installa
 
 >[!NOTE]
 >
->Starting April 2022, Oracle JDK will be the default JDK for the development and operation of AEM applications. Cloud Manager's build process will automatically switch to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. Please refer to the April release notes once published for further details.
+>Starting April 2022, Oracle JDK becomes the default JDK for the development and operation of AEM applications. Cloud Manager's build process automatically switches to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. See the April 2022 release notes.
 
 #### Alternate Maven Execution JDK Version {#alternate-maven-jdk-version}
 

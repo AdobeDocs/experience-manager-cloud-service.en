@@ -50,7 +50,7 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
 
-* **Integrate Adaptive Forms with Microsoft® Power Automate**: You can now configure an Adaptive Form to run a Microsoft® Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft® Power Automate to build business logics around captured data and automate customer workflows.
+* **Integrate Adaptive Forms with Microsoft&reg; Power Automate**: You can now configure an Adaptive Form to run a Microsoft&reg; Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft&reg; Power Automate to build business logics around captured data and automate customer workflows.
 
 * **Wizard to create an Adaptive Form**: You can use business user friendly wizard to quickly author Adaptive Forms. The wizard provides a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form.
 
@@ -73,19 +73,19 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 ### What is New {#what-is-new-foundation}
 
-*  The "Add tree” option under the replication agent admin screen's **Distribute tab**, which was previously announced as deprecated, will be removed on June 20, 2022 or soon thereafter. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow).
+*  The "Add tree" option under the replication agent admin screen's **Distribute tab**, which was previously announced as deprecated, was removed June 20, 2022 or soon thereafter. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow).
 
-*  Using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is deprecated and will be enforced on September 12, 2022 or soon thereafter. Instead, [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) must be used to replicate these large content packages. In July, a warning message will appear in the  replication agent admin screen's **Distribute tab** if attempting to replicate these large content packages and also in the AEM error log whenever the replication API is used to replicate these large content packages. In September, warnings will be replaced by errors. Please adjust your processes accordingly.
+*  Using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is deprecated and enforced on September 12, 2022 or soon thereafter. Instead, [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) must be used to replicate these large content packages. In July, a warning message will appear in the  replication agent admin screen's **Distribute tab** if attempting to replicate these large content packages and also in the AEM error log whenever the replication API is used to replicate these large content packages. In September, warnings were replaced by errors. Adjust your processes accordingly.
 
 ### New features available in [!DNL Experience Manager] prerelease channel {#prerelease-features-foundation}
 
-* AEM as a Cloud Service is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Refer to [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
+* AEM as a Cloud Service is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. See [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Security {#foundation-security}
 
 ### TLS 1.0, 1.1 deprecation
 
-Starting June 30th 2022, Experience Manager as a Cloud Service will require a more secure network communication and data exchange with users systems. AEM will use exclusively Transport Layer Security (TLS), 1.2 protocol. Older TLS versions 1.0 and 1.1 will be deprecated.
+Starting June 30th 2022, Experience Manager as a Cloud Service will require a more secure network communication and data exchange with users systems. AEM will use exclusively Transport Layer Security (TLS), 1.2 protocol. Older TLS versions 1.0 and 1.1 are now deprecated.
 
 If you continue to use older versions of TLS as 1.0, 1.1, you could potentially lose access to Experience Manager as a Cloud Service.  
 
