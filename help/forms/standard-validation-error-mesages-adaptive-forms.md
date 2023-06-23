@@ -11,7 +11,7 @@ feature: Adaptive Forms
 
 AEM Forms provides out-of-the-box success and error handlers for form submissions. It also provides feature to customize error handler functions. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down. Handlers are client-side functions that execute based on the server response. When an external service is invoked using APIs, the data is transmitted to the server for validation, which returns a response to the client with information about the success or error event for the submission. The information is passed as parameters to the relevant handler to execute the function. An error handler helps to manage and display errors or validation issues encountered. 
 
- ![error handler workflow](/help/forms/assets/error-handler-workflow.png)
+![error handler workflow](/help/forms/assets/error-handler-workflow.png)
 
 Adaptive Form validates the inputs that you provide in fields based on pre-set validation criteria. The validation criteria refer to the acceptable input values for fields in an Adaptive Form. You can set the validation criteria based on the data source that you use with the Adaptive Form. For example, if you use RESTful web services as the data source, you can define the validation criteria in a Swagger definition file.
 
@@ -81,7 +81,7 @@ With the improvements in features and subsequent updates in the versions of AEM 
 
 >[!NOTE]
 >
-> * Ensure that the error response structure includes either fieldName or dataRef.
+> * Ensure that the error response structure includes either **fieldName** or **dataRef**.
 > * Ensure that the **ContentType** header is **application/problem+json**.
 
 Where:
@@ -112,7 +112,7 @@ Using Rule Editor, you can:
 ### Add default error handler function {#add-default-errror-handler}
 
 A default error handler is supported by default to display error messages on fields if the error response is in standard schema or in server-side validation failure. 
-To understand how to use a default error handler using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, take a simple Adaptive Form with two fields, **Pet ID** and **Pet Name**. Now, use a default error handler at the **Pet ID** field to check for various validation criteria based on the data source. To add a default error handler using the Rule Editor's Invoke Service action, execute the following steps:
+To understand how to use a default error handler using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, take a simple Adaptive Form with two fields, **Pet ID** and **Pet Name**. Now, use a default error handler at the **Pet ID** field to check for various validation criteria based on the data source, for example, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. To add a default error handler using the Rule Editor's Invoke Service action, execute the following steps:
 
 1. Open an Adaptive Form in authoring mode, select a form object (for which you need to perform a validation check), and tap **[!UICONTROL Rule Editor]** to open the rule editor.
 1. Tap **[!UICONTROL Create]**.
@@ -132,13 +132,15 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
  
 ### Add custom error handler function {#add-custom-errror-handler}
 
-You can add a custom error handler function to:
-* handle error responses or display error messages that use non-standard error responses. It is important to note that these non-standard error responses do not comply with the standard schema of error responses as described in the [Failure/error response format](#failureerror-response-format) section.
-* send analytics events to any analytics platforms. For example, Google Analytics or Adobe Analytics etc.
+You can add a custom error handler function to perform some of the actions like:
+* handle error responses or display error messages that use non-standard error responses. It is important to note that these non-standard error responses do not comply with the [standard schema of error responses](#failure-response-format).
+* send analytics events to any analytics platforms. For example, Adobe Analytics.
 * display modal dialog with error messages.
 
-The custom error handler is a function (Client Library) designed to respond to errors returned by an external service and deliver a customized response to end users. To load a custom error handler function, provide an annotation as `@errorHandler`. This annotation helps to identify the error handler function specified in the js file. 
-To understand how to create and configure a custom error handler using the [Rule Editor's Invoke service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, the Adaptive Form with two fields, **Pet ID** and **Pet Name** is used. Now, use a custom error handler at the **Pet ID** field to check it for various validation criteria based on the data source. 
+In addition to the mentioned actions, the custom error handlers can be utilized to execute customized functions that meet specific user requirements.
+
+The custom error handler is a function (Client Library) designed to respond to errors returned by an external service and deliver a customized response to end users. Any Client Library with annotation `@errorHandler` is considered as a custom error handler function. This annotation helps to identify the error handler function specified in the `.js` file. 
+To understand how to create and use a custom error handler using the [Rule Editor's Invoke service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, let's take an example of Adaptive Form with two fields, **Pet ID** and **Pet Name** and use a custom error handler at the **Pet ID** field to check it for various validation criteria based on the data source, for example, `200 - OK`,`404 - Not Found`, `400 - Bad Request`.  
 
 To add and use a custom error handler in an Adaptive Form, perform the following steps:
 1. [Create a custom error function](#create-custom-error-message) 
@@ -147,11 +149,12 @@ To add and use a custom error handler in an Adaptive Form, perform the following
 #### 1. Create a custom error function {#create-custom-error-message}
 
 To add custom error functions, perform the following steps:
-1. [Clone the repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html). You can clone a local copy of the repository, and make changes in that local repository.
-1. Navigate to  `/apps/[AEM Project Folder]/clientlibs/` and add the following:
-    * **js folder**:  Add a `js` file for a custom function in the js folder. For example, add a `js` file named `function.js`. The `function.js` comprises the custom functions. 
-
-        Sample code used here for handling error responses and display error messages on fields if the error response is not in the standard schema is:
+1. [Clone your AEM Forms as a Cloud Service Repository.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
+1. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/`.
+1. Create a folder named `js`.
+1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
+1. Add a JavaScript file, for example `function.js`. The file comprises the code for custom error handler.
+Let's add the following code to the JavaScript file to display the response and headers, received from the REST Service Endpoint, in the browser console.
 
         ```javascript
         /**
@@ -169,17 +172,18 @@ To add custom error functions, perform the following steps:
         }
         ```
 
-        The above custom error handler function displays the response and headers in the console along with the JSON string. To call the default error handler after the custom error handler, the following line of the sample code is used:
+    To call the default error handler after the custom error handler, the following line of the sample code is used:
         `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
-
-    * **js.txt** contains:
-
-            
-        ```javascript
+1. Save the `function.js` file.
+1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
+1. Add a text file as `js.txt`. The file contains:
+  
+    ```javascript
         #base=js
         functions.js
-        ```
-     
+    ```
+
+1. Save the `js.txt` file.     
 
     >[!NOTE]
     >
@@ -194,7 +198,7 @@ To add custom error functions, perform the following steps:
         git push
     ```
 
-1. Run the full stack pipeline.
+1. [Run the pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)
 
 #### 2. Use the Rule Editor's Invoke service action to implement a custom error handler {#use-custom-error-handler}
 
@@ -278,7 +282,7 @@ Before adding custom handler, you must configure the adaptive form for asynchron
 1. Select the Submit Action:
 
     * Select **[!UICONTROL Submit using Form Data Model]** and select the appropriate data model, if you are using RESTful web service based [form data model](work-with-form-data-model.md) as the data source.
-    * Select **[!UICONTROL Submit to REST endpoint]** and specify the **[!UICONTROL Redirect URL/Path]**, if you are using RESTful web services as the data source.
+    * Select **[!UICONTROL Submit to REST Service endpoint]** and specify the **[!UICONTROL Redirect URL/Path]**, if you are using RESTful web services as the data source.
 
     ![adaptive form submission properties](assets/af_submission_properties.png)
 
