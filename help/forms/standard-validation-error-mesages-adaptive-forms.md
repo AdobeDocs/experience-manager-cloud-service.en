@@ -200,6 +200,8 @@ Let's add the following code to the JavaScript file to display the response and 
 
 1. [Run the pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)
 
+Once the pipeline is executed successfully, the custom error handler becomes available for your instance. Now, let's understand how to configure and use a custom error handler using the Rule Editor's Invoke service in AEM Forms.
+
 #### 2. Use the Rule Editor's Invoke service action to implement a custom error handler {#use-custom-error-handler}
 
 To use a custom error handler using the **[!UICONTROL Rule Editor's Invoke Service]** action:
