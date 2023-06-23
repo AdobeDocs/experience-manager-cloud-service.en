@@ -148,7 +148,7 @@ To add and use a custom error handler in an Adaptive Form, perform the following
 
 #### 1. Create a custom error function {#create-custom-error-message}
 
-To add custom error functions, perform the following steps:
+To create a custom error function, perform the following steps:
 1. [Clone your AEM Forms as a Cloud Service Repository.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
 1. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/`.
 1. Create a folder named `js`.
@@ -202,7 +202,7 @@ Let's add the following code to the JavaScript file to display the response and 
 
 #### 2. Use the Rule Editor's Invoke service action to implement a custom error handler {#use-custom-error-handler}
 
-To add a custom error handler using the **[!UICONTROL Rule Editor's Invoke Service]** action:
+To use a custom error handler using the **[!UICONTROL Rule Editor's Invoke Service]** action:
 
 1. Open an Adaptive Form in authoring mode, select a form object (for which you need to perform a validation check), and tap **[!UICONTROL Rule Editor]** to open the rule editor.
 1. Tap **[!UICONTROL Create]**.
