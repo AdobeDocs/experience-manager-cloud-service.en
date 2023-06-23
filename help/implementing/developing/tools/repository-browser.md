@@ -17,20 +17,20 @@ exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 
 ## Introduction {#introduction}
 
-The repository browser is a developer tool that provides a read-only view into the repository for all environments on author, publish and preview tiers. It is designed to facilitate viewing of the content structure in order to make it easier to see or debug content.
+The repository browser is a developer tool that provides a read-only view into the repository for all environments on author, publish and preview tiers. It is designed to facilitate viewing of the content structure to make it easier to see or debug content.
 
 Accessible from the Developer Console, it can be used to browse the repository of an author or publish instance for a selected environment.
 
 ### Access Prerequisites {#access-prerequisites}
 
-These following conditions must be met in order to access the Developer Console or the Repository browser
+These following conditions must be met to access the Developer Console or the Repository browser
 
-In order to access Developer Console:
+To access Developer Console:
 
 * For Production programs, users must have the **Cloud Manager - Developer Role** in the Admin Console
 * For sandbox programs, it is available to any user with a product profile giving them access to AEM as a Cloud Service.
 
-In order to access the Repository Browser:
+To access the Repository Browser:
 
 * Users must have the **Cloud Manager - Developer** Role in the Admin Console to view Author and Publish instances.
 * In addition, for author, users with the AEM Users Product Profile can view the repository browser with minimal read access; the user's permissions are respected when browsing the repository. Users with the AEM Administrators Product Profile can view the repository browser with full read access.
@@ -70,7 +70,7 @@ Additionally, when you click on a folder, the URL is dynamically modified to inc
 
 For publish, by default, the Repository Browser will only show public content, thus certain folders like `/conf` or `/home` will not be visible. 
 
-In order to make those locations visible, you need to follow the below procedure.
+To make those locations visible, do the following.
 
 1. Click the three dots next to the environment of your choice and select **Manage Access**
 

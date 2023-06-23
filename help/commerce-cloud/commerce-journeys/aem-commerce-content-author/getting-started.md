@@ -83,7 +83,7 @@ The remaining tabs show all AEM content that is associated with the product. We 
 Using Omnisearch is an easy way to find AEM content using full-text search. CIF extends Omnisearch with full-text search of product catalogs with its associated AEM content.
 ![commerce menu item](assets/omnisearch.png)
 
-Omnisearch will run a full-text search in the commerce backend to find all related products. The result is listed under **View All Products**. Omnisearch will also search AEM for content that is associated to the searched product. The results will be listed under the respective AEM categories. In this example, one Content Fragment is related to the product.
+Omnisearch will run a full-text search in the commerce backend to find all related products. The result is listed under **View All Products**. Omnisearch will also search AEM for content that is associated to the searched product. The results are listed under the respective AEM categories. In this example, one Content Fragment is related to the product.
 
 ## What's Next {#what-is-next}
 

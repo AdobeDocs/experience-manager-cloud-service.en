@@ -23,12 +23,12 @@ The content to copy is defined by a content set. A content set consists of a lis
 
 When copying content, the source environment is the source of truth.
 
-* If content has been modified in the destination environment, it will be overwritten by content in the source, if the paths are the same.
-* If the paths are different, content from the source will be merged with the content in the destination.
+* If content has been modified in the destination environment, it is overwritten by content in the source, if the paths are the same.
+* If the paths are different, content from the source is merged with the content in the destination.
 
 ## Permissions {#permissions}
 
-In order to use the content copy tool, certain permissions are required in both the source and target environments.
+To use the content copy tool, certain permissions are required in both the source and target environments.
 
 | Content Copy Feature | AEM Administrator Group | Deployment Manager Role |
 |---|---|---|
@@ -49,7 +49,7 @@ Before any content can be copied a content set must be defined. Once defined, co
 
    ![Content Sets](assets/content-sets.png)
 
-1. On the **Details** tab of the the wizard, provide a name and description for the content set and tap or click **Continue**.
+1. On the **Details** tab of the wizard, provide a name and description for the content set and tap or click **Continue**.
 
    ![Content set details](assets/add-content-set-details.png)
 
@@ -96,13 +96,16 @@ Note that when editing your content set, you may need to expand the configured p
 
 Once a content set has been created, you can use it to copy content. Follow these steps to copy content.
 
+>[!NOTE]
+> Content Copy should not be initiated on an environment while a [content transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) operation is running on that environment. 
+
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
 1. Navigate to the **Environments** screen from the **Overview** page.
 
 1. Navigate to the **Content Sets** page from the **Environments** screen.
 
-1. Select an content set from the console and select **Copy Content** from the ellipsis menu.
+1. Select a content set from the console and select **Copy Content** from the ellipsis menu.
 
    ![Content copy](assets/copy-content.png)
 
@@ -150,9 +153,9 @@ Once you start copying content, the process can have one of the following status
 |In progress|Content copy operation is ongoing|
 |Failed|Content copy operation failed|
 |Completed|Content copy operation completed successfully|
-|Cancelled|User cancels a content copy operation after starting it|
+|Canceled|User cancels a content copy operation after starting it|
 
-### Cancelling a Copy Process {#cancelling}
+### Canceling a Copy Process {#canceling}
 
 If you need to abort a content copy operation after starting it, you have the option to cancel it.
 
@@ -170,12 +173,12 @@ To do so, on the **Copy Content Activity** page, select the **Cancel** action fr
 
 The content copy tool has the following limitations.
 
-* Content can not be copied from a lower environment to a higher environment.
+* Content cannot be copied from a lower environment to a higher environment.
 * Content can only be copied from and to authoring services.
 * Cross-program content copy is not possible.
 * Running concurrent content copy operations on the same environment is not possible.
 * Up to fifty paths can be specified per content set. There is no limitation on excluded paths.
-* The content copy tool should not be used as a cloning or mirroring tool because it can not track moved or deleted content on the source.
-* The content copy tool has no versioning capability and can not automatically detect modified content or newly created content on the source environment in a content set since the last content copy operation.
+* The content copy tool should not be used as a cloning or mirroring tool because it cannot track moved or deleted content on the source.
+* The content copy tool has no versioning capability and cannot automatically detect modified content or newly created content on the source environment in a content set since the last content copy operation.
   * If you wish to update your destination environment with content changes only since the last content copy operation, you need to create a content set and specify the paths on the source instance where changes were made since the last content copy operation.
 * Version information is not included in a content copy.

@@ -175,7 +175,7 @@ So for example, if you:
 
 1. Install a package containing `Content-Fragment-Model-1` and `Content-Fragment-Model-2`:
  
-   1. GraphQL types for `Model-1` and `Model-2` will be generated.
+   1. GraphQL types for `Model-1` and `Model-2` are generated.
 
 1. Then modify `Content-Fragment-Model-2`:
 
@@ -254,7 +254,7 @@ To actually use the AEM GraphQL API in a query, we can use the two very basic Co
 
 As you can see, the CEO and Employees fields, reference the Person fragments.
 
-The fragment models will be used:
+The fragment models are used:
 
 * when creating the content in the Content Fragment Editor
 * to generate the GraphQL schemas that you will query

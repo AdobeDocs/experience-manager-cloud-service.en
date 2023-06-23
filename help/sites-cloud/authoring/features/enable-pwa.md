@@ -16,7 +16,7 @@ Through a simple configuration, a content author can now enable progressive web 
 >* Understanding of caching strategies
 >* Support from your development team
 >
->Before using this feature is is recommended that you discuss this with your development team to define the best way to leverage it for your project.
+>Before using this feature is is recommended that you discuss this with your development team to define the best way to use it for your project.
 
 ## Introduction {#introduction}
 
@@ -44,7 +44,7 @@ These are technical steps that the author will need to coordinate with the devel
 
 ### Use Core Components {#adjust-components}
 
-Core Components release 2.15.0 and later fully support the PWA features of AEM sites. Since AEMaaCS always includes the latest version of the Core Components, you can leverage PWA features out-of-the-box. Your AEMaaCS project automatically fulfills this requirement.
+Core Components release 2.15.0 and later fully support the PWA features of AEM sites. Since AEMaaCS always includes the latest version of the Core Components, you can use PWA features out-of-the-box. Your AEMaaCS project automatically fulfills this requirement.
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ Now that you have [configured your site to support PWA,](#enabling-pwa-for-your-
 1. You will see a new icon in the address bar of the browser, indicating that the site can be installed as a local app.
    * Depending on the browser, the icon may vary, and the browser may also display a notification (such as a banner or dialog box) indicating that it's possible to install as a local app.
 1. Install the app.
-1. The app will be installed on the home screen of your device.
+1. The app is installed on the home screen of your device.
 1. Open the app, browse a bit, and see that pages are available offline.
 
 ## Detailed Options {#detailed-options}
@@ -175,12 +175,12 @@ These settings make parts of this site available offline and available locally o
 
 * **Caching strategy and frequency of content refresh** - This setting defines the caching model for your PWA.
   * **Moderately** - [This setting](https://web.dev/stale-while-revalidate/) is the case for most sites and is the default value.
-    * With this setting, the content first viewed by the user will be loaded from the cache and while the user is consuming that content, the rest of the content in the cache will be revalidated.
+    * With this setting, the content first viewed by the user is loaded from the cache and while the user is consuming that content, the rest of the content in the cache is revalidated.
   * **Frequently** - This is the case for sites that need updates to be very fast such as auction houses.
     * With this setting, the app will look for the most recent content via the network first, and if it is not available will fall back to the local cache.
   * **Rarely** - This is the case for sites that are nearly static such as reference pages.
     * With this setting, the app will look for the content in the cache first, and if not available will fall back to the network to retrieve it.
-* **File pre-caching** - These files hosted on AEM will be saved to the local browser cache when the service worker is installing and before it is used. This guarantees that the web app is full functional when offline.
+* **File pre-caching** - These files hosted on AEM are saved to the local browser cache when the service worker is installing and before it is used. This guarantees that the web app is full functional when offline.
 * **Paths inclusions** - Network requests for the defined paths are intercepted and cached content is return in accordance with the configured **Caching strategy and frequency of content refresh**.
 * **Cache exclusions** - These files will never be cached regardless of the settings under **File pre-caching** and **Path inclusions**.
 

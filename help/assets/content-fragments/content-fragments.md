@@ -289,7 +289,7 @@ To use your Content Fragments for page authoring you also need:
 
 ## Example Usage {#example-usage}
 
-A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment you need to consider what will be used where.
+A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment, consider what is used and where.
 
 ### WKND Sample {#wknd-sample}
 

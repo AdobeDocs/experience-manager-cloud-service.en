@@ -34,7 +34,7 @@ For more information, see [this section](/help/implementing/deploying/configurin
 
 ## Debugging Preview Using the Developer Console {#debugging-preview-using-the-developer-console}
 
-Follow these steps in order to debug the preview tier using the Developer Console:
+Follow these steps so you can debug the preview tier using the Developer Console:
 
 * In the [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), select either **-- All Preview --** or a production environment that includes **prev** in its name
 * Generate the relevant information for the preview instance

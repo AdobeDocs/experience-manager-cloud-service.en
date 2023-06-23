@@ -56,7 +56,7 @@ You can use Experience Fragments:
 Experience Fragments should be used:
 
 * Whenever you want to reuse experiences.
-  * Experiences that will be reused with same or similar content.
+  * Experiences that are reused with same or similar content.
 * When you use AEM as a content delivery platform for third parties.
   * Any solution that wants to use AEM as the content delivery platform.
   * Embedding content in third party touchpoints.
@@ -178,7 +178,7 @@ To create an Experience Fragment:
 
 1. Enter the **Properties** for your **Experience Fragment**.
 
-   A **Title** is mandatory. If the **Name** is left blank it will be derived from the **Title**.
+   A **Title** is mandatory. If the **Name** is left blank it is derived from the **Title**.
 
    ![Experience Fragment properties](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -190,7 +190,7 @@ To create an Experience Fragment:
 
 1. Click **Create**.
 
-   A message will be displayed. Select:
+   A message is displayed. Select:
 
     * **Done** to return to the console
     * **Open** to open the fragment editor
@@ -235,7 +235,7 @@ You can create variations of your Experience Fragment, depending on your needs:
 
     * **Template**
     * **Title**
-    * **Name** - if left blank it will be derived from the Title
+    * **Name** - if left blank it is derived from the Title
     * **Description**
     * **Variation tags**
 
@@ -244,7 +244,7 @@ You can create variations of your Experience Fragment, depending on your needs:
    ![Variation properties](/help/sites-cloud/authoring/assets/xf-07.png)
 
 
-1. Confirm with **Done**, the new variation will be shown in the panel.
+1. Confirm with **Done**, the new variation is shown in the panel.
 
 ## Using your Experience Fragment {#using-your-experience-fragment}
 
@@ -287,7 +287,7 @@ To create a new Building Block:
 
    ![Name Building Block](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. The **Building Block** will be shown in the left tab (**Local**), and can be selected for further action:
+1. The **Building Block** is shown in the left tab (**Local**), and can be selected for further action:
 
    ![Building Block in the rail](/help/sites-cloud/authoring/assets/xf-12.png)
 
@@ -335,7 +335,7 @@ To personalize your fragment:
 
    >[!NOTE]
    >
-   >Personalization properties defined on a folder will be inherited by all child folders down through the sub-tree, and Experience Fragments (and variations) within that sub-tree. They can be overridden by breaking the inheritance.
+   >Personalization properties defined on a folder are inherited by all child folders down through the sub-tree, and Experience Fragments (and variations) within that sub-tree. They can be overridden by breaking the inheritance.
 
 1. Open the **Personalization** tab to define and save your settings. For example, on a folder:
 
@@ -343,26 +343,26 @@ To personalize your fragment:
 
    >[!CAUTION]
    >
-   >When a fragment is embedded in a Sites page, and **Personalization** has been configured, then only the personalization version of the page will be used at page rendering time.
+   >When a fragment is embedded in a Sites page, and **Personalization** has been configured, then only the personalization version of the page is used at page rendering time.
    >
    >For the targeting performed on the components in a fragment to work at page rendering, the following conditions must be met:
    >
    >The **ContextHub Path** selected in the **Personalization** tab must be either:
    >
-   >* the same path as the one configured for the page where the fragment will be rendered
+   >* the same path as the one configured for the page where the fragment is rendered
    >Or:
    >* a path that contains a subset of the stores defined in the ContextHub configured for the page
    >
    >&nbsp;
    >The **Segments Path** selected in the **Personalization** tab must be either:
    >
-   >* the same path as the one configured for the page where the fragment will be rendered
+   >* the same path as the one configured for the page where the fragment is rendered
    >Or
    >* a path that contains a subset of the segments configured for the page
 
 ### Defining Targeting for your Experience Fragment {#defining-targeting-experience-fragment}
 
-Once the personalization properties have been configured, the Targeting mode will be available when the fragment is opened for editing.
+After the personalization properties are configured, the Targeting mode is available when the fragment is opened for editing.
 
 ![Experience Fragment Editor - Targeting mode](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
 

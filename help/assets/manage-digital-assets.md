@@ -479,7 +479,7 @@ You can view only one annotation at a time.
 
 >[!NOTE]
 >
->If you are selecting multiple annotations, the latest annotation will be visible on the user interface.
+>If you are selecting multiple annotations, the latest annotation is visible on the user interface.
 >
 >Multi-select is supported only for printing the annotated asset as PDF.
 

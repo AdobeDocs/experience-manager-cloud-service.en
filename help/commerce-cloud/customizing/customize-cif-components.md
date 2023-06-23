@@ -22,7 +22,7 @@ The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a refe
 
 ## What You Will Build
 
-The Venia brand recently started manufacturing some products using sustainable materials and the business would like to display an **Eco Friendly** badge as part of the Product Teaser. A new custom attribute will be created in Adobe Commerce to indicate if a product uses the **Eco friendly** material. This custom attribute will then be added as part of the GraphQL query and displayed on the Product Teaser for specified products.
+The Venia brand recently started manufacturing some products using sustainable materials and the business would like to display an **Eco Friendly** badge as part of the Product Teaser. A new custom attribute is created in Adobe Commerce to indicate if a product uses the **Eco friendly** material. This custom attribute will then be added as part of the GraphQL query and displayed on the Product Teaser for specified products.
 
 ![Eco Friendly Badge Final Implementation](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -63,7 +63,7 @@ We will clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia)
 
 ## Author the Product Teaser {#author-product-teaser}
 
-The Product Teaser Component will be extended throughout this tutorial. As a first step, add a new instance of the Product Teaser to the Home page to understand the baseline functionality.
+The Product Teaser Component is extended throughout this tutorial. As a first step, add a new instance of the Product Teaser to the Home page to understand the baseline functionality.
 
 1. Navigate to the **Home Page** of the site: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
@@ -172,7 +172,7 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
 
    ![Sample GraphQL response](../assets/customize-cif-components/sample-graphql-query.png)
 
-   Note that the value of **Yes** is an integer of **1**. This will be useful when we write the GraphQL query in Java.
+   Note that the value of **Yes** is an integer of **1**. This is useful when we write the GraphQL query in Java.
 
    >[!TIP]
    >
@@ -431,7 +431,7 @@ In our case we want to render a banner on top of the teaser to indicate that the
 
 At this point the logic for when to display the **Eco Friendly** badge is working, however the plain text could use some styles. Next add an icon and styles to the `ui.frontend` module to complete the implementation.
 
-1. Download the [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) file. This will be used as the **Eco Friendly** badge.
+1. Download the [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) file. This is used as the **Eco Friendly** badge.
 1. Return to the IDE and navigate to the `ui.frontend` folder.
 1. Add the `eco_friendly.svg` file to the `ui.frontend/src/main/resources/images` folder:
 
