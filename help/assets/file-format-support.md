@@ -17,7 +17,7 @@ The highlights for asset conversion using asset microservices include:
 * Key [Adobe file formats](#adobe-formats) produced by Adobe applications and services, including [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], and [!DNL Adobe Acrobat] or PDF.
 * Key [imaging file formats](#image-formats).
 * [Camera Raw file formats](#camera-raw-formats) for a wide range of cameras, including Canon, Nikon, Fujifilm, Olympus, and other manufacturers (powered by Adobe Camera Raw).
-* Common [document formats](#document-formats), including Microsoft Office and Open Document formats.
+* Common [document formats](#document-formats), including Microsoft&reg; Office and Open Document formats.
 * Wide range of [video](#video-formats) and [audio](#audio-formats) formats.
 
 The following legend describes the level of support for each format.
@@ -35,6 +35,7 @@ The following legend describes the level of support for each format.
 | AI          | &#10003;             | -                   | &#10003;            | &#10003;     |
 | COLLAGE     | -                    | -                   | &#10003;            | -            |
 | DN          | &#10003;             | -                   | &#10003;            | &#10003;     |
+| SBSAR       | &#10003;             | -                   | &#10003;            | &#10003;     |
 | IDEAS       | -                    | -                   | &#10003;            | -            |
 | INDD        | &#10003;             | -                   | &#10003;            | &#10003; *   |
 | INDT        | -                    | -                   | &#10003;            | -            |
@@ -44,7 +45,7 @@ The following legend describes the level of support for each format.
 | PSD         | &#10003;             | -                   | &#10003;            | &#10003;     |
 | XD          | &#10003;             | -                   | &#10003;            | &#10003;     |
 
-\* For [!DNL Adobe InDesign] files (INDD), the size of rendition is determined by the preview embedded in the INDD file. Configure the preferences in [!DNL InDesign] (**[!UICONTROL Preferences > File Handling > Always Save Preview Images with Documents, Preview Size]**) to embed larger rendition.
+\* For [!DNL Adobe InDesign] files (INDD), the size of renditions are determined by the preview embedded in the INDD file. Configure the preferences in [!DNL InDesign] (**[!UICONTROL Preferences > File Handling > Always Save Preview Images with Documents, Preview Size]**) so you can embed larger renditions.
 
 ## Image formats {#image-formats}
 
@@ -57,10 +58,10 @@ The following legend describes the level of support for each format.
 | PNG         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 | RGB         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 | RGBA        | &#10003;             | &#10003;            | &#10003;     | &#10003; |
-| SGI         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
+| SGI&trade;         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 | SVG         | &#10003;             | -                   | &#10003;     | &#10003; |
 | TIFF        | &#10003;             | &#10003;            | &#10003;     | -        |
-| WebP         | &#10003;             | &#10003;                   | &#10003;     | &#10003; |
+| WebP        | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 
 ## 3D formats {#support-3d-formats}
 
@@ -71,13 +72,16 @@ See also [Work with 3D assets in Dynamic Media](/help/assets/dynamic-media/asset
 | Format | Storage | Versioning | Workflow | Publishing | Access control | Thumbnail preview | 3D preview | Dynamic Media delivery |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | &#10003; | &#10003; | &#10003; |- | &#10003; | &#10003; | -| -|
-| gLB | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | -| &#10003; | &#10003; |
+| gLB | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
 | gLTF | &#10003; | &#10003; | &#10003; |- | &#10003; |- | &#10003; |- |
-| OBJ | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- | &#10003; | &#10003; |
+| OBJ | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
 | STL | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- | &#10003; | &#10003; |
-| USDz |&#10003;| &#10003; | &#10003; | &#10003; | &#10003; |- |- | &#10003; |
+| FBX | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- |
+| 3DS | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- |
+| USDz |&#10003;| &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- | &#10003; |
+| SBSAR |&#10003;| &#10003; | &#10003; |- | &#10003; | &#10003; |- |- |
 
-## [!DNL Camera RAW] formats {#camera-raw-formats}
+## [!DNL Camera Raw] formats {#camera-raw-formats}
 
 | File format | Thumbnail generation | Metadata extraction | Width/Height |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -173,22 +177,22 @@ The document formats supported for asset management features are as follows.
 * MXF (.mxf)
 * MPEG2-PS, MPEG2-TS, 3GP (.ts, .ps, .3gp, .3gpp, .mpg)
 * Windows Media Video (WMV)/ASF (.wmv, .asf)
-* AVI (Uncompressed 8bit/10bit) (.avi)
+* AVI (Uncompressed 8 bit/10 bit) (.avi)
 * MP4 (.mp4, .m4a, .m4v)
-* Microsoft Digital Video Recording(DVR-MS) (.dvr-ms)
+* Microsoft&reg; Digital Video Recording(DVR-MS) (.dvr-ms)
 * Matroska/WebM (.mkv)
 * WAVE/WAV (.wav)
 * QuickTime (.mov)
 
 ## Tips and limitations {#limitations-and-tips}
 
-* Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading very large assets, sometimes metadata extraction operation fails.
+* Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading large assets, sometimes metadata extraction operation fails.
 
 ## Dynamic Media - Supported input video formats for transcoding {#video-dynamic-media-transcoding}
 
 | Video file extension | Container | Recommended video codecs | Unsupported video codecs |
 | --- | --- | --- | --- |
-| AVI                  | A/V Interleave     | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| AVI                  | A/V Interleave     | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft&reg; Video 1 (MS-CRAM) |
 | FLV, F4V             | Adobe Flash        | H264/AVC, Flix VP6, H263, Sorenson | SWF (vector animation files) |
 | M4V                  | Apple iTunes       | H264/AVC                    | &minus; |
 | MKV                  | Matroska           | H264/AVC                    | &minus; |
@@ -196,9 +200,9 @@ The document formats supported for asset management features are as follows.
 | MP4                  | MPEG-4             | H264/AVC (all profiles)     | &minus; |
 | MPG, VOB, M2V, MP2   | MPEG-2             | MPEG-2                      | &minus; |
 | MXF &Dagger;         | MXF                | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | &minus; |
-| OGV, OGG             | Ogg                | Theora, VP3, Dirac          | &minus; |
+| OGV, OGG             | OGG                | Theora, VP3, Dirac          | &minus; |
 | WebM                 | WebM               | Google VP8                  | &minus; |
-| WMV                  | Windows Media 9    | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4)  | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| WMV                  | Windows Media 9    | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4)  | Microsoft&reg; Screen (MSS2), Microsoft&reg; Photo Story (WVP2) |
 
 &Dagger; This video format is not yet supported for use with Interactive Videos in Dynamic Media or for use with Annotation in Experience Manager Assets.
 
@@ -231,7 +235,7 @@ The document formats supported for asset management features are as follows.
 
 ## Dynamic Media - Unsupported raster image formats {#unsupported-raster-image-formats-dm}
 
-The following sub-types of raster image file formats that are *not* supported in [!DNL Dynamic Media]:
+The following subtypes of raster image file formats that are *not* supported in [!DNL Dynamic Media]:
 
 * PNG files that have an IDAT chunk size greater than 100 MB.
 * PSB files.
@@ -249,7 +253,7 @@ See also [3D formats supported](/help/assets/file-format-support.md#support-3d-f
 | GLB | Binary GL Transmission|model/gltf-binary | Includes the materials and textures as a single asset. |
 | OBJ | WaveFront 3D Object File|application/x-tgif | |
 | STL | Stereolithography|application/vnd.ms-pki.stl | |
-| USDZ | Universal Scene Description Zip archive|model/vnd.usdz+zip |*Support for ingestion only; no viewing or interaction is available.* USDZ is a proprietary 3D format that can be viewed natively by Safari or iOS. |
+| USDZ | Universal Scene Description Zip archive|model/vnd.usdz+zip |*Support for ingestion and thumbnail generation; 3D previews not yet supported.* USDZ is a 3D format that can be viewed natively by Safari or iOS. |
 
 **See also**
 
