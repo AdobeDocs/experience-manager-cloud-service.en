@@ -15,7 +15,7 @@ exl-id: e873bd25-f841-4063-824f-7e48f40bb678
 
 Experience Manager Assets supports the ingestion, management, preview, and delivery of 3D assets. 
 
-You can preview 3D assets with the automatically generated thubnail rendtions or the interactive 3D viewer. The interactive 3D viewer is available from the asset details page in Experience Manager. The viewer includes, among other things, a collection of interactive camera controls that let you rotate, zoom, and pan around the 3D scene.
+You can preview 3D assets with the automatically generated thumbnail renditions or the interactive 3D viewer. The interactive 3D viewer is available from the asset details page in Experience Manager. The viewer includes, among other things, a collection of interactive camera controls that let you rotate, zoom, and pan around the 3D scene.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
