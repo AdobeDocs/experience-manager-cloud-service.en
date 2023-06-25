@@ -99,7 +99,7 @@ Please refer to the [`aem-testing-clients` GitHub repo](https://github.com/adobe
 | CPU                  | 0.5   | Amount of CPU-time reserved per test execution                     |
 | Memory               | 0.5Gi | Amount of memory allocated the the test, value in gibibytes        |
 | Timeout              | 30m   | The duration after which the test is terminated.              |
-| Recommended Duration | 15m   | We recommend to write the tests to not take longer than this time. |
+| Recommended Duration | 15m   | Adobe recommends writing the tests to not take longer than this time. |
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ The system properties are as follows.
 
 | Property                            | Description                                                      | Example                 |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances`                | amount of instances, to match cloud service should be set to `2` | `2`                     |
+| `sling.it.instances`                | number of instances, to match cloud service should be set to `2` | `2`                     |
 | `sling.it.instance.url.1`           | should be set to the author URL                                  | `http://localhost:4502` | 
 | `sling.it.instance.runmode.1`       | runmode of the first instance, should be set to `author`         | `author`                | 
 | `sling.it.instance.adminUser.1`     | should be set to the author admin user.                          | `admin`                 | 

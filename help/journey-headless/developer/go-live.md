@@ -36,7 +36,7 @@ To get your AEM headless application ready for launch, follow the best practices
 
 * Avoid creating queries that output more than 15kb of JSON (gzip compressed). Long JSON files are resource intensive for client application to parse.
 * Avoid more than five nested levels of fragment hierarchies. Additional levels make it hard for content authors to consider the impact of their changes.
-* Use multi-object queries instead of modeling queries with dependency hierarchies within the models. This allows more long-term flexibility to restructure JSON output without having to do a lot of content changes.
+* Use multi-object queries instead of modeling queries with dependency hierarchies within the models. This allows more long-term flexibility to restructure JSON output without having to do many content changes.
 
 ## Maximize CDN Cache-Hit Ratio {#maximize-cdn}
 

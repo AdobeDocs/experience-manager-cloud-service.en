@@ -37,7 +37,7 @@ The next section explores these levels of integration in more detail.
 
 >[!NOTE]
 >
->Of course you could also re-implement the web shop SPA as a fully-functioning AEM SPA [using the AEM SPA Editor framework.](/help/implementing/developing/hybrid/introduction.md) If you already have AEM and wish to create a new web shop or other SPA, this is the recommended method, but it out of the scope of this document.
+>Of course you could also re-implement the web shop SPA as a fully functioning AEM SPA [using the AEM SPA Editor framework.](/help/implementing/developing/hybrid/introduction.md) If you already have AEM and wish to create a new web shop or other SPA, this is the recommended method, but it out of the scope of this document.
 
 ## SPA Integration Levels {#integration-levels}
 

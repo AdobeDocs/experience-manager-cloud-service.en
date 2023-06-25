@@ -25,7 +25,7 @@ Take time to consider your site's purpose and planned content well in advance. T
 
 >[!TIP]
 >
->[The WKND reference site](https://wknd.site) provides a best-practices implementation of a fully-functional outdoor experiences brand website. Explore it to see how a well-built AEM site is structured.
+>[The WKND reference site](https://wknd.site) provides a best-practices implementation of a fully functional outdoor experiences brand website. Explore it to see how a well-built AEM site is structured.
 
 ## Site Templates {#site-templates}
 

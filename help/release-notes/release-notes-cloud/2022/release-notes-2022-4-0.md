@@ -66,7 +66,7 @@ It is strongly recommended to update your maven project with the latest version 
 
 ### TLS 1.0, 1.1 deprecation
 
-Starting June 30th 2022, Experience Manager as a Cloud Service will require a more secure network communication and data exchange with users systems. AEM intends to use exclusively Transport Layer Security (TLS), 1.2 protocol. Older TLS versions 1.0 and 1.1 are now deprecated.
+Starting June 30, 2022, Experience Manager as a Cloud Service will require a more secure network communication and data exchange with users systems. AEM intends to use exclusively Transport Layer Security (TLS), 1.2 protocol. Older TLS versions 1.0 and 1.1 are now deprecated.
 
 If you continue to use older versions of TLS as 1.0, 1.1, you could potentially lose access to Experience Manager as a Cloud Service.  
 

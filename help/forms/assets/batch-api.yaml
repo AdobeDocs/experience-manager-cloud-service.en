@@ -37,8 +37,8 @@ info:
     # Before you start
 
     Make user account of your developer or techincal account member of
-    forms-user group. If you do not have a technical account, make a call to AEM
-    as a Cloud Service. When you use service credential a techincal account is
+    forms-user group. If you do not have a technical account, contact AEM
+    as a Cloud Service. When you use service credential, a technical account is
     created on the first call.
 
 
@@ -48,7 +48,7 @@ info:
     organization. Send name of your organization, program details, and email
     address of your AEM as a Cloud Service administrator. Also, set up a [local
     development
-    environment](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html)
+    environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html)
     to test and develop the functionality using Communication APIs locally.
   title: AEM Forms as a Cloud Service - Communications
   version: 1.0.0-oas3
@@ -298,7 +298,7 @@ components:
           $ref: '#/components/schemas/ConfigName'
         dataSourceConfigUri:
           type: string
-          description: This is the location of data source configuration containing details of cloud config (authentication info for cloud account), source (location for data files), and destinatin (location for output files generated and failure information details).
+          description: The location of data source configuration containing details of cloud config (authentication info for cloud account), source (location for data files), and destination (location for output files generated and failure information details).
         dataSource:
           type: object
           description: This inline data source object gets returned as part of BatchState
@@ -313,7 +313,7 @@ components:
             $ref: '#/components/schemas/OutputType'
           description: >-
             It contains details of the output formats requested for generation. PDF, representing PDF format;
-            and PRINT representing all non-PDF formats for example, PCL, PostScript etc.
+            and PRINT representing all non-PDF formats, for example, PCL and PostScript.
         template:
           type: string
           description: >-
@@ -324,19 +324,19 @@ components:
           type: string
           description: >-
             The service uses an XCI configuration file to configure various
-            properties of the PDF document. The XCI parameter has an effect only
+            properties of the PDF document. The XCI parameter effects only
             when the template is of type XDP or an XDP-based PDF document.
         contentRoot:
           type: string
           description: Root location within an AEM repository to resolve template from.
         pdfOutputOptions:
           $ref: '#/components/schemas/PDFOutputOptions'
-          description: It contains detailled configuration parameters which allow control over PDF file generation.
+          description: Contains detailed configuration parameters which allow control over PDF file generation.
         printedOutputOptionsList:
           type: array
           items:
             $ref: '#/components/schemas/PrintedOutputOptions'
-          description: It contains detailled configuration parameters which allow control over PRINT file generation.
+          description: Contains detailed configuration parameters which allow control over PRINT file generation.
     BatchState:
       type: object
       properties:
@@ -346,7 +346,7 @@ components:
           $ref: '#/components/schemas/ExecutionId'
         config:
           $ref: '#/components/schemas/BatchConfig'
-          description: This contains details of the configuration used to run this execution instance of the batch.
+          description: Contains details of the configuration used to run this execution instance of the batch.
         status:
           $ref: '#/components/schemas/BatchStatus'
         outputStatuses:
@@ -356,15 +356,15 @@ components:
         recordsCount:
           type: integer
           format: int64
-          description: This contains total records count for the batch.
+          description: Contains total records count for the batch.
         startTime:
           type: integer
           format: int64
-          description: This contains details on when the batch execution was started, seconds since epoch (1970-01-01T00:00:00Z).
+          description: Contains details on when the batch execution was started, seconds since epoch (1970-01-01T00:00:00Z).
         endTime:
           type: integer
           format: int64
-          description: This contains details on when the batch execution ended, seconds since epoch (1970-01-01T00:00:00Z).
+          description: Contains details on when the batch execution ended, seconds since epoch (1970-01-01T00:00:00Z).
         errorInfo:
           $ref: '#/components/schemas/ErrorInfo'
     BatchStatus:
@@ -519,7 +519,7 @@ components:
           default: false
           description: >-
             Set true to retain PDF Form state while flattening PDF. This
-            parameter has effect only when source template is an XFA-based PDF
+            parameter has an affect only when source template is an XFA-based PDF
             Form and no input data is provided.
         retainUnsignedSignatureFields:
           type: boolean
@@ -585,7 +585,7 @@ components:
           schema:
             $ref: '#/components/schemas/ErrorResponse'
     RecordExists:
-      description: Record already exists
+      description: Record exists already
       content:
         application/json:
           schema:
@@ -593,7 +593,7 @@ components:
     InternalServer:
       description: >-
         Internal Server Error. The server has encountered an error and is unable
-        to process your request at this time.
+        to process your request currently.
       content:
         application/json:
           schema:
