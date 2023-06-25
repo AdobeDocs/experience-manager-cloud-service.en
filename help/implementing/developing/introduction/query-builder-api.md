@@ -248,7 +248,7 @@ type=cq:Page
 
 ### Search for Multiple Property Values {#search-for-multiple-property-values}
 
-To avoid big groups when you want to search for multiple values of a property (`"A" or "B" or "C"`), you can provide multiple values to the `property` predicate:
+To avoid large groups when you want to search for multiple values of a property (`"A" or "B" or "C"`), you can provide multiple values to the `property` predicate:
 
 `http://<host>:<port>/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Cycling%20Tuscany&property.2_value=Ski%20Touring&property.3_value=Whistler%20Mountain%20Biking`
 

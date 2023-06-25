@@ -55,7 +55,7 @@ Knowing those properties can be also useful so you can query your repository and
 
 ## FAQ {#faq}
 
-Here are some frequently-asked questions related to MSM and Live Copy.
+Here are some frequently asked questions related to MSM and Live Copy.
 
 ### Why are some properties (for example, title, annotations) are not updated during an MSM rollout? {#missing-properties}
 
