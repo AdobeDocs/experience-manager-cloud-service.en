@@ -53,7 +53,7 @@ When you first open a new model you will see - a large blank space to the left, 
 
 So - what's to be done?
 
-You can drag instances of the **Data Types** onto the left space - you're already defining your model!
+You can drag instances of the **Data Types** onto the left space - you are already defining your model!
 
 ![Defining fields](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png) 
 

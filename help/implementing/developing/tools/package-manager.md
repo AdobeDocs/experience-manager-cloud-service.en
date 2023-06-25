@@ -238,7 +238,7 @@ There are many actions that can be taken on a package.
 
    >[!TIP]
    >
-   >If your instance has a lot of packages, there might be a folder structure in place. In such cases, it is easier to navigate to the required target folder before creating the new package.
+   >If your instance has many packages, there might be a folder structure in place. In such cases, it is easier to navigate to the required target folder before creating the new package.
 
 1. In the **New Package** dialog, enter the following fields:
 

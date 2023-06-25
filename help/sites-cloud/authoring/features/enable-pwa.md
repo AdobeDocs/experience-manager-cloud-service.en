@@ -211,7 +211,7 @@ Client libraries are delivered with the addition of a cache selector observing t
 
 The Image Component of the AEM Core Components determines one the front end the best rendition to fetch. This mechanism also includes a timestamp that corresponds to the last modified time of that resource. This mechanism complicates the configuration of the PWA pre-cache.
 
-When configuring the pre-cache, the user needs to list all the path variations that can be fetched. These variations are composed of parameters like quality and width. It is strongly advised to reduce the number of these variations to a maximum of three - small, medium, large. You can do that via the content-policy dialog of the [Image Component.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)
+When configuring the pre-cache, the user needs to list all the path variations that can be fetched. These variations are composed of parameters like quality and width. It is advised reducing the number of these variations to a maximum of three - small, medium, large. You can do that via the content-policy dialog of the [Image Component.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)
 
 If not configured carefully, memory and network consumption can severely impact the performance of your PWA. Also if you intend to precache, say, 50 images, and have 3 widths per image, the user maintaining the site will have to maintain a list of up to 150 entries in the PWA pre-cache section of the page properties.
 

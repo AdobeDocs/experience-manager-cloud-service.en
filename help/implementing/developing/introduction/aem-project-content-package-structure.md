@@ -217,7 +217,7 @@ To target AEM author, AEM publish, or both, the package is embedded in the `all`
 
   `/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
-Breaking this folder structure down:
+Breaking down this folder structure:
 
 + The 1st-level folder **must be** `/apps`.
 + The 2nd-level folder represents the application with `-packages` post-fixed to the folder name. Often there is only a single 2nd-level folder all sub-packages are embedded under, however any number of 2nd-level folders can be created to best represent the application's logical structure:

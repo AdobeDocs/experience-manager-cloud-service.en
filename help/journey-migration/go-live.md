@@ -92,7 +92,7 @@ Remember, the load on the AEM source is greater during the extraction phase. You
 Please take into account that the entire ingestion fails if any of the following limitations are found as part of the extracted migration set:
 
 * A JCR Node that has a name longer than 150 characters
-* A JCR Node that is bigger than 16 MB
+* A JCR Node that is larger than 16 MB
 * Any User / Group with `rep:AuthorizableID` being ingested that is already present on AEM as a Cloud Service
 * If any asset that is extracted and ingested moves into a different path either on source or destination before the next iteration of the migration.
 

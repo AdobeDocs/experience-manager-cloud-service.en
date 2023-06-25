@@ -262,7 +262,7 @@ and:
 
 **file included at unknown location: ...**
 
-There are four sections in your farm configuration where you're allowed to include your own file: `/clientheaders`, `filters`, `/rules` in `/cache` section and `/virtualhosts`. The included files need to be named as follows:
+There are four sections in your farm configuration where you are allowed to include your own file: `/clientheaders`, `filters`, `/rules` in `/cache` section and `/virtualhosts`. The included files need to be named as follows:
 
 | Section          | Include file name                    |
 |------------------|--------------------------------------|
