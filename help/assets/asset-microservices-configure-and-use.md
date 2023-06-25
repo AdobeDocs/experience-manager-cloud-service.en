@@ -69,7 +69,7 @@ To create a standard processing profile, follow these steps:
 
 1. Administrators access **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**. Click **[!UICONTROL Create]**.
 1. Provide a name that helps you uniquely identify the profile when applying to a folder.
-1. To generate FPO renditions, on the **[!UICONTROL Image]** tab, enable **[!UICONTROL Create FPO Rendition]**. Input a **[!UICONTROL Quality]** value between 1 and 100.
+1. To generate FPO renditions, on the **[!UICONTROL Image]** tab, enable **[!UICONTROL Create FPO Rendition]**. Input a **[!UICONTROL Quality]** value from 1&ndash;100.
 1. To generate other renditions, click **[!UICONTROL Add New]** and provide the following information:
 
    * File name of each rendition.
@@ -95,7 +95,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Custom profile and use cases {#custom-config}
 
-The [!DNL Asset Compute Service] supports a variety of use cases such as default processing, processing Adobe-specific formats like Photoshop files, and implementing custom or organization-specific processing. The DAM Update Asset workflow customization required in the past, are either handled automatically or via processing profiles configuration. If the business needs are not met by these processing options, Adobe recommends developing and using [!DNL Asset Compute Service] to extend the default capabilities. For an overview, see [understand extensibility and when to use it](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
+The [!DNL Asset Compute Service] supports a variety of use cases such as default processing, processing Adobe-specific formats like Photoshop files, and implementing custom or organization-specific processing. The DAM Update Asset workflow customization required in the past, are either handled automatically or by way of processing profiles configuration. If the business needs are not met by these processing options, Adobe recommends developing and using [!DNL Asset Compute Service] to extend the default capabilities. For an overview, see [understand extensibility and when to use it](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
@@ -256,7 +256,7 @@ Follow the steps outlined in [apply a workflow model to a folder](#apply-workflo
 
 ## Best practices and limitations {#best-practices-limitations-tips}
 
-* Consider your needs for all types of renditions when designing workflows. If you do not foresee the need of a rendition in the future, remove its creation step from the workflow. Renditions cannot be deleted in bulk afterwards. Undesired renditions may take up a lot of storage space after prolonged use of [!DNL Experience Manager]. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can either customize [!DNL Experience Manager] to delete specific renditions or delete the assets and upload those again.
+* Consider your needs for all types of renditions when designing workflows. If you do not foresee the need of a rendition in the future, remove its creation step from the workflow. Renditions cannot be deleted in bulk afterwards. Undesired renditions may take up large amounts of storage space after prolonged use of [!DNL Experience Manager]. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can either customize [!DNL Experience Manager] to delete specific renditions or delete the assets and upload those again.
 * Currently, the support is limited to generating renditions. Generating new asset is not supported.
 * Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading very large assets, sometimes metadata extraction operation fails.
 

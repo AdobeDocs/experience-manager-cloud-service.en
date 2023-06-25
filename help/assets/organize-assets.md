@@ -42,7 +42,7 @@ You can limit who can access certain folders in Assets by making the folder part
 
 ## Use tags to organize assets {#use-tags-to-organize-assets}
 
-You can use folders or tags or both to organize assets. Adding tags to assets makes them more easy to retrieve during a search. To add tags to an asset, follow these steps:
+You can use folders or tags or both to organize assets. Adding tags to assets makes them easier to retrieve during a search. To add tags to an asset, follow these steps:
 
 1. In the Digital Asset Manager, double-click the asset to open it.
 1. In the **Tags** area, open the menu to reveal the available tags. Select tags as appropriate. To delete a tag, hover the pointer over the tag and click `X` to delete it.
@@ -73,7 +73,7 @@ The most basic way to organize assets is to save the assets in folders. It is an
 
 ## Organize assets using tags {#use-tags-to-organize-assets}
 
-Adding tags to assets makes them more easy to retrieve during a search, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
+Adding tags to assets makes them easier to retrieve during a search, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
 
 [!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets.
 

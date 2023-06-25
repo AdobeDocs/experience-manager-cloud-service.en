@@ -98,7 +98,7 @@ Once you've added an RDE for your program using Cloud Manager, you can interact 
 
    `aio config:set cloudmanager_environmentid 123456`
 
-1. Once you're done configuring the plugin, login by performing
+1. After you are done configuring the plugin, login by performing
 
    `aio login`
 
