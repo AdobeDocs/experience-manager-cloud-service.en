@@ -40,9 +40,9 @@ Depending on your location, you can publish:
 >
 >If you do not have the required privileges for publishing a specific page:
 >
->* A workflow will be triggered to notify the appropriate person of your request to publish.
+>* A workflow is triggered to notify the appropriate person of your request to publish.
 >* This workflow may have been customized by your development team.
->* A message will be displayed briefly to notify you that the workflow was triggered.
+>* A message is displayed briefly to notify you that the workflow was triggered.
 
 >[!NOTE]
 >
@@ -58,14 +58,14 @@ If you are editing a page, it can be published directly from the editor.
 
 1. Depending on whether the page has references that need publishing:
 
-   * The page will be published directly if there are no references to be published.
-   * If the page has references that need publishing, these will be listed in the **Publish** wizard, where you can either:
+   * The page is published directly if there are no references to be published.
+   * If the page has references that need publishing, these are listed in the **Publish** wizard, where you can either:
      * Specify which of the assets/tags/etc. you want to publish together with the page, then use **Publish** to complete the process.
      * Use **Cancel** to abort the action.
 
    ![Publishing references with the page](/help/sites-cloud/authoring/assets/publishing-references.png)
 
-1. Selecting **Publish** will replicate the page to the publish environment. In the page editor an information banner will be shown confirming the publish action.
+1. Selecting **Publish** will replicate the page to the publish environment. In the page editor, an information banner is shown confirming the publish action.
 
    ![Publish status info banner](/help/sites-cloud/authoring/assets/publishing-info.png)
 
@@ -162,11 +162,11 @@ To publish or unpublish a page using Manage Publication:
 
    ![Manage Publication Options](/help/sites-cloud/authoring/assets/publishing-manage-publication-references.png)
 
-   The **Published References** dialog displays the references for the selected content. By default they are all selected and will be published/unpublished, but you can un-check to deselect them so that they are not included in the action.
+   The **Published References** dialog displays the references for the selected content. By default, they are all selected and are published/unpublished, but you can un-check to deselect them so that they are not included in the action.
 
    Click **Done** to save your changes or **Cancel** to cancel the selection and return to the wizard.
 
-   Back in the wizard, the **References** column will be updated to reflect your selection of references to be published or unpublished.
+   Back in the wizard, the **References** column is updated to reflect your selection of references to be published or unpublished.
 
    ![Manage Publication selecting pages](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
@@ -197,7 +197,7 @@ To publish or unpublish a page using Manage Publication:
 
    >[!NOTE]
    >
-   >The **Workflows** step will be shown based on what rights your user may or may not have. See the previous note on this page regarding publishing privileges as well as Managing Access to Workflows and [Applying Workflows to Pages](/help/sites-cloud/authoring/workflows/applying.md) for details.
+   >The **Workflows** step is shown based on what rights your user may or may not have. See the previous note on this page regarding publishing privileges as well as Managing Access to Workflows and [Applying Workflows to Pages](/help/sites-cloud/authoring/workflows/applying.md) for details.
 
    The resources are grouped by the workflows triggered and each given options to:
 

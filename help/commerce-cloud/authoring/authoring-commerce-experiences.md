@@ -65,7 +65,7 @@ CIF product catalog pages are virtual pages that get rendered on the fly. Thus, 
 
     >[!NOTE]
     >
-    > If both category and product gets selected, the product will be taken.
+    > If both category and product gets selected, the product is taken.
 
 This creates a placeholder link that gets replaced with a real link when the page gets rendered.
 

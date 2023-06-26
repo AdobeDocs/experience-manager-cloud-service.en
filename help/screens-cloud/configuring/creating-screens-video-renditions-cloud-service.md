@@ -23,11 +23,11 @@ Follow the steps below to create video renditions in Screens as a Cloud Service 
 
 1. Click on the Tools section from the left navigation bar and click on **Assets** and then click on **Processing Profiles**.
 
-    ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+    ![Click on Processing Profiles](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. Click on **Create** to create new processing profile.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+   ![Click Create](/help/screens-cloud/assets/configure/screens-video-2.png)
 
 1. Enter the **Name**, such as **ScreensProcessingProfile**.
 
@@ -42,20 +42,20 @@ Follow the steps below to create video renditions in Screens as a Cloud Service 
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Please ensure to use the Encoding name that starts with "screens-", only these video renditions will be considered to play the video experience in Screens as a Cloud Service. Enter the bitrate that works your videos (2500kbps for 720px video and 5000 kbps for 1080px).
+   >Please ensure to use the Encoding name that starts with "screens-", only these video renditions are considered to play the video experience in Screens as a Cloud Service. Enter the bitrate that works your videos (2500kbps for 720px video and 5000 kbps for 1080px).
 
    >[!NOTE]
-   >Multiple video renditions can be added with varying width/height/bitrate to work your videos. Please remember that all the screens- renditions will be downloaded by the Screens devices, even though the device plays only video rendition.
+   >Multiple video renditions can be added with varying width/height/bitrate to work your videos. All the screens, renditions are downloaded by the Screens devices, even though the device plays only video rendition.
 
 1. Click on **Save**.
 
 1. Select the Processing profile and click on **Apply Profile to Folder(s)**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-5.png)
+   ![Apply Profile to Folder](/help/screens-cloud/assets/configure/screens-video-5.png)
 
 1. Select the folder(s) where Screens videos are kept and click on **Apply**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-6.png)
+   ![Click Apply](/help/screens-cloud/assets/configure/screens-video-6.png)
 
    >[!NOTE]
    >* You can create multiple Processing profiles and apply them to the corresponding folders, so that the videos in those folders get the specific video renditions.

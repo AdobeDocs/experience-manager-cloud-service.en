@@ -29,7 +29,7 @@ The page component for a SPA doesn't provide the HTML elements of its child comp
 
 ### Page Model Management {#page-model-management}
 
-The resolution and the management of the page model is delegated to a provided `PageModel` library. The SPA must use the Page Model library in order to be initialized and be authored by the SPA Editor. The Page Model library provided indirectly to the AEM Page component via the `aem-react-editable-components` npm. The Page Model is an interpreter between AEM and the SPA and therefore always must be present. When the page is authored, an additional library `cq.authoring.pagemodel.messaging` must be added in order to enable the communication with the page editor.
+The resolution and the management of the page model is delegated to a provided `PageModel` library. The SPA must use the Page Model library so it can be initialized and authored by the SPA Editor. The Page Model library provided indirectly to the AEM Page component via the `aem-react-editable-components` npm. The Page Model is an interpreter between AEM and the SPA and therefore always must be present. When the page is authored, an additional library `cq.authoring.pagemodel.messaging` must be added to enable communication with the page editor.
 
 If the SPA page component inherits from the page core component, there are two options for making the `cq.authoring.pagemodel.messaging` client library category available:
 
@@ -72,7 +72,7 @@ Keeping in mind the key elements of the SPA Editor, the high-level workflow of e
 1. SPA is loaded in a separate frame.
 1. SPA requests JSON content and renders components client-side.
 1. SPA Editor detects rendered components and generates overlays.
-1. Author clicks overlay, displaying the component’s edit toolbar.
+1. Author clicks overlay, displaying the component's edit toolbar.
 1. SPA Editor persists edits with a POST request to the server.
 1. SPA Editor requests updated JSON to the SPA Editor, which is sent to the SPA with a DOM Event.
 1. SPA re-renders the concerned component, updating its DOM.
@@ -154,7 +154,7 @@ Previous versions of these frameworks may work with the AEM SPA Editor SDK, but 
 
 ### Additional Frameworks {#additional-frameworks}
 
-Additional SPA frameworks can be implemented to work with the AEM SPA Editor SDK. Please see the [SPA Blueprint](blueprint.md) document for the requirements that a framework must fulfill in order to create a framework-specific layer composed of modules, components, and services to work with the AEM SPA Editor.
+Additional SPA frameworks can be implemented to work with the AEM SPA Editor SDK. Please see the [SPA Blueprint](blueprint.md) document for the requirements that a framework must fulfill to create a framework-specific layer composed of modules, components, and services to work with the AEM SPA Editor.
 
 ### Using Multiple Selectors {#multiple-selectors}
 

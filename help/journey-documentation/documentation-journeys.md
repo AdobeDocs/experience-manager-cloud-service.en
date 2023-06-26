@@ -1,18 +1,18 @@
 ---
 title: AEM Documentation Journeys
-description: Documentation Journeys provide a narrative structure within AEM documentation by tying together complex and disparate features in order to solve a business goal in a best-practices fashion. Designed with AEM beginners in mind, journeys introduce the concepts and features to achieve a goal from A to Z.
+description: Documentation Journeys provide a narrative structure within AEM documentation by tying together complex and disparate features so you can solve a business goal in a best-practices fashion. Designed with AEM beginners in mind, journeys introduce the concepts and features to achieve a goal from A to Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: yes
 ---
 # AEM Documentation Journeys {#aem-documentation-journeys}
 
-Documentation Journeys provide a narrative structure within AEM documentation by tying together complex and disparate features in order to solve a business goal in a best-practices fashion. Designed with AEM beginners in mind, journeys introduce the concepts and features to achieve a goal from A to Z.
+Documentation Journeys provide a narrative structure within AEM documentation by tying together complex and disparate features so you can solve a business goal in a best-practices fashion. Designed with AEM beginners in mind, journeys introduce the concepts and features to achieve a goal from A to Z.
 
 ## What is a Documentation Journey? {#what-is}
 
 A Documentation Journey ties together many different and complex topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
 
-Documentation Journeys contrast with AEM's existing technical docs that primarily focus on a single feature and documentation of tasks, assuming familiarity with AEM. By focusing on the concepts and deferring in-depth details to the existing technical documentation, Documentation Journeys give readers new to AEM a place to begin understanding how the platform can be leveraged by using best practices to address common business needs and workflows. For this reason, Documentation Journeys serve as a complement to and not a replacement for [AEM's existing technical documentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
+Documentation Journeys contrast with AEM's existing technical docs that primarily focus on a single feature and documentation of tasks, assuming familiarity with AEM. By focusing on the concepts and deferring in-depth details to the existing technical documentation, Documentation Journeys give readers new to AEM a place to begin understanding how the platform can be used by using best practices to address common business needs and workflows. For this reason, Documentation Journeys serve as a complement to and not a replacement for [AEM's existing technical documentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
 
 ### Learning By Narrative {#narrative}
 
@@ -76,7 +76,7 @@ Documentation Journeys are intended as a complement to existing AEM technical do
 
 ## What Journeys Are There? {#journeys}
 
-There are a number of Documentation Journeys already available to you. Since each journey is designed as a narrative, please start with the introduction and read all the way through in order to get a full understanding of the topic in the context of AEM.
+There are a number of Documentation Journeys already available to you. Since each journey is designed as a narrative, please start with the introduction and read all the way through so you can get a full understanding of the topic in the context of AEM.
 
 |Journey|Description|
 |---|---|

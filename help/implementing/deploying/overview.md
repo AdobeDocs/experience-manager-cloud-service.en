@@ -10,7 +10,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 
 The fundamentals of code development are similar in AEM as a Cloud Service compared to the AEM On Premise and Managed Services solutions. Developers write code and test it locally, which is then pushed to remote AEM as a Cloud Service environments. Cloud Manager, which was an optional content delivery tool for Managed Services, is required. This is now the sole mechanism for deploying code to AEM as a Cloud Service dev, stage, and production environments. For quick feature validation and debugging prior to deploying those aforementioned environments, code can be synced from a local environment to a [Rapid Development Environment](/help/implementing/developing/introduction/rapid-development-environments.md).
 
-The update of the [AEM version](/help/implementing/deploying/aem-version-updates.md) is always a separate deployment event from pushing [custom code](#customer-releases). Viewed in another way, custom code releases should be tested against the AEM version that is on production since that is what it will be deployed on the top. AEM version updates that happen after that, which will be frequent and are automatically applied. They are intended to be backward compatible with the customer code already deployed.
+The update of the [AEM version](/help/implementing/deploying/aem-version-updates.md) is always a separate deployment event from pushing [custom code](#customer-releases). Viewed another way, custom code releases should be tested against the AEM version that is on production because that is what it is deployed on the top. AEM version updates that happen after that, which are frequent and are automatically applied. They are intended to be backward compatible with the customer code already deployed.
 
 The rest of this document will describe how developers should adapt their practices so they work with both AEM as a Cloud Service's Version updates and customer updates. 
 
@@ -25,12 +25,12 @@ The rest of this document will describe how developers should adapt their practi
 
 For previous AEM solutions, the most current AEM version changed infrequently (roughly annually with quarterly service packs) and customers would update the production instances to the latest quickstart on their own time, referencing the API Jar. However, AEM as a Cloud Service applications are automatically updated to the latest version of AEM more often, so custom code for internal releases should be built against the latest AEM version.
 
-Like for existing non-cloud AEM versions, a local, offline development based on a specific quickstart will be supported and is expected to be the tool of choice for debugging in the majority of cases.
+Like for existing non-cloud AEM versions, a local, offline development based on a specific quickstart is supported and is expected to be the tool of choice for debugging in the majority of cases.
 
 >[!NOTE]
 >There are subtle operational differences between how the application behaves on a local machine versus the Adobe Cloud. These architectural differences must be respected during local development and could lead to a different behavior when deploying on the cloud infrastructure. Because of these differences it is important to perform the exhaustive tests on dev and stage environments before rolling out new custom code in production.
 
-In order to develop custom code for an internal release, the relevant version of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) should be downloaded and installed. For additional information about using the AEM as a Cloud Service Dispatcher Tools, see [this page](/help/implementing/dispatcher/disp-overview.md).
+To develop custom code for an internal release, the relevant version of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) should be downloaded and installed. For additional information about using the AEM as a Cloud Service Dispatcher Tools, see [this page](/help/implementing/dispatcher/disp-overview.md).
 
 The following video provides a high level overview on how to deploy code to AEM as a Cloud Service:
 
@@ -80,7 +80,7 @@ Read more about OSGI configuration at [Configuring OSGi for AEM as a Cloud Servi
 
 In some cases it might be useful to prepare content changes in source control so it can be deployed by Cloud Manager whenever an environment was updated. For example, it might be reasonable to seed certain root folder structures or line up changes in editable templates to enable policies in those for components that were updated by the application deployment.
 
-There are two strategies to describe the content that will be deployed by Cloud Manager to the mutable repository, mutable content packages and repoinit statements.
+There are two strategies to describe the content that is deployed by Cloud Manager to the mutable repository, mutable content packages and repoinit statements.
 
 ### Mutable Content Packages {#mutable-content-packages}
 
@@ -109,7 +109,7 @@ It is possible to limit mutable content installation to author or publish by emb
 >[!NOTE]
 >Content packages are deployed to all environment types (dev, stage, prod). It is not possible to limit deployment to a specific environment. This limitation is in place to ensure the option of a test run of automated execution. Content that is specific to an environment requires manual installation via [Package Manager.](/help/implementing/developing/tools/package-manager.md)
 
-Also, there is no mechanism to rollback the mutable content package changes after they've been applied. If customers detect a problem, they can choose to fix it in their next code release or as a last resort, restore the entire system to a point in time before the deployment.
+Also, there is no mechanism to roll back the mutable content package changes after they've been applied. If customers detect a problem, they can choose to fix it in their next code release or as a last resort, restore the entire system to a point in time before the deployment.
 
 Any included 3rd party packages must be validated as being AEM as a Cloud Service Service compatible, otherwise its inclusion will result in a deployment failure.
 
@@ -134,9 +134,9 @@ For the following cases, it is preferable to take the approach of hand coding ex
 Repoinit is preferable for these supported content modification use cases due to the following benefits:
 
 * Repoinit creates resources at startup so logic can take the existence of those resources for granted. In the mutable content package approach, resources are created after startup, so application code relying on them may fail.
-* Repoinit is a relatively safe instruction set as you explicitly control the action to be taken. Also, the only supported operations are additive with the exception of a few security related cases which allow removal of Users, Service Users, and Groups. In contrast, a removal of something in the mutable content package approach is explicit;  as you define a filter anything present covered by a filter will be deleted. Still, caution should be taken since with any content there are scenarios where the presence of new content can alter the behavior of the application.
+* Repoinit is a relatively safe instruction set as you explicitly control the action to be taken. Also, the only supported operations are additive with the exception of a few security related cases which allow removal of Users, Service Users, and Groups. In contrast, a removal of something in the mutable content package approach is explicit; as you define a filter, anything present covered by a filter is deleted. Still, caution should be taken since with any content there are scenarios where the presence of new content can alter the behavior of the application.
 * Repoinit performs fast and atomic operations. Mutable content packages in contrast can highly depend performance wise on the structures covered by a filter. Even if you update a single node, a snapshot of a large tree might be created.
-* It is possible to validate repoinit statements on a local dev environment at runtime since they will be executed when the OSGi configuration gets registered.
+* It is possible to validate repoinit statements on a local dev environment at runtime because they are run when the OSGi configuration gets registered.
 * Repoinit statements are atomic and explicit and will skip if the state is already matching.
 
 When Cloud Manager deploys the application, it executes these statements, independently from the installation of any content packages.
@@ -168,12 +168,12 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Package Manager - Migrating Mutable Content Packages"
->abstract="Explore usage of package manager for use cases where a content package should be installed as 'one off' which includes importing specific content from production on to staging in order to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments and more."
+>abstract="Explore usage of package manager for use cases where a content package should be installed as 'one off' which includes importing specific content from production on to staging to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments and more."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Content Transfer Tool"
 
-There are use cases where a content package should be installed as a "one off". For example importing specific content from production on to staging in order to debug a production issue. For these scenarios, [Package Manager](/help/implementing/developing/tools/package-manager.md) can be used in AEM as a Cloud Service environments.
+There are use cases where a content package should be installed as a "one off". For example importing specific content from production on to staging to debug a production issue. For these scenarios, [Package Manager](/help/implementing/developing/tools/package-manager.md) can be used in AEM as a Cloud Service environments.
 
-Since Package Manager is a runtime concept, it is not possible to install content or code into the immutable repository, so these content packages should only consist of mutable content (mainly `/content` or `/conf`). If the content package includes content that is mixed (both mutable and immutable content), only the mutable content will be installed.
+Since Package Manager is a runtime concept, it is not possible to install content or code into the immutable repository, so these content packages should only consist of mutable content (mainly `/content` or `/conf`). If the content package includes content that is mixed (both mutable and immutable content), only the mutable content is installed.
 
 >[!IMPORTANT]
 >
@@ -233,7 +233,7 @@ The following Maven `POM.xml` snippet shows how 3rd party packages can be embedd
 
 ## How Rolling Deployments Work {#how-rolling-deployments-work}
 
-Like AEM updates, customer releases are deployed using a rolling deployment strategy in order to eliminate author cluster downtime under the right circumstances. The general sequence of events is described below, where nodes with both the old and new versions of customer code are running the same version of AEM code.
+Like AEM updates, customer releases are deployed using a rolling deployment strategy to eliminate author cluster downtime under the right circumstances. The general sequence of events is described below, where nodes with both the old and new versions of customer code are running the same version of AEM code.
 
 * Nodes with the old version are active and a release candidate for the new version is built and becomes available.
 * If there are any new or updated index definitions, the corresponding indexes are processed. Note that nodes with the old version will always use the old indexes, while nodes with the new version will always use the new indexes.
@@ -257,7 +257,7 @@ At this time, AEM as a Cloud Service does not work with index management tools s
 
 The publication mechanism is backwards compatible with the [AEM Replication Java APIs](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html).
 
-In order to develop and test with replication with the cloud ready AEM quickstart, the classic replication capabilities needs to be used with an Author/Publish setup. In the case of the UI entry point on AEM Author has been removed for the cloud, users would go to `http://localhost:4502/etc/replication` for configuration.
+To develop and test with replication with the cloud ready AEM quickstart, the classic replication capabilities needs to be used with an Author/Publish setup. In the case of the UI entry point on AEM Author has been removed for the cloud, users would go to `http://localhost:4502/etc/replication` for configuration.
 
 ## Backwards Compatible Code for Rolling Deployments {#backwards-compatible-code-for-rolling-deployments}
 
@@ -275,7 +275,7 @@ If changes to indexes are made, it is important that the new version continues t
 
 ### Conservative Coding for Rollbacks {#conservative-coding-for-rollbacks}
 
-If a failure is reported or detected after the deployment, it is possible that a rollback to the old version will be required. It is recommended to ensure that the new code is compatible with any new structures created by that new version since the new structures (any mutable content content) will not be rolled back. If the old code is not compatible, fixes will need to be applied in subsequent customer releases.
+If a failure is reported or detected after the deployment, it is possible that a rollback to the old version is required. It is recommended to ensure that the new code is compatible with any new structures created by that new version since the new structures (any mutable content content) will not be rolled back. If the old code is not compatible, fixes will need to be applied in subsequent customer releases.
 
 ## Rapid Development Environments (RDE) {#rde}
 

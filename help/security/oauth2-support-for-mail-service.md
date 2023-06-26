@@ -5,7 +5,7 @@ exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 ---
 # OAuth2 Support for the Mail Service {#oauth2-support-for-the-mail-service}
 
-AEM as a Cloud Service offers OAuth2 support for its integrated Mail Service, in order to allow organizations to adhere to secure email requirements.
+AEM as a Cloud Service offers OAuth2 support for its integrated Mail Service to allow organizations to adhere to secure email requirements.
 
 You can configure OAuth for multiple email providers. Below are step-by-step instructions for configuring the AEM Mail Service to authenticate via OAuth2 with Microsoft Office 365 Outlook. Other vendors can be configured in a similar manner.
 
@@ -23,7 +23,7 @@ For more information on the AEM as a Cloud Service Mail Service, see [Sending Em
 1. Go to the newly created app, and select **API Permissions** 
 1. Go to **Add Permission** - **Graph Permission** - **Delegated Permissions**
 1. Select the below permissions for your app, then click **Add Permission**:
-   * `https://graph.microsoft.com/SMTP.Send`
+   * `https://outlook.office.com/SMTP.Send`
    * `https://graph.microsoft.com/Mail.Read`
    * `https://graph.microsoft.com/Mail.Send`
    * `https://graph.microsoft.com/User.Read`
@@ -40,19 +40,19 @@ For more information on the AEM as a Cloud Service Mail Service, see [Sending Em
 
 To recap, you will need to the following information to configure OAuth2 for the Mail service on the AEM side:
 
-* The Auth URL, which will be constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
-* The Token URL, which will be constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* The Refresh URL, which will be constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* The Auth URL, which is constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* The Token URL, which is constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* The Refresh URL, which is constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
 * The Client ID
 * The Client Secret
 
 ### Generating the Refresh Token {#generating-the-refresh-token}
 
-Next, you need to generate the refresh token, which will be a part of the OSGi configuration in a subsequent step.
+Next, you need to generate the refresh token, which is a part of the OSGi configuration in a subsequent step.
 
 You can do this by following these steps:
 
-1. Open the following URL in the browser after replacing `clientID` and `tenantID` with the values specific to your account: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize?client_id=<clientId>&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access&state=12345`
+1. Open the following URL in the browser after replacing `clientID` and `tenantID` with the values specific to your account: `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
 1. Allow permission when asked
 1. The URL will redirect to a new location, constructed in this format: `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
 1. Copy the value of `<code>` in the example above
@@ -63,7 +63,7 @@ You can do this by following these steps:
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_5vR5dAQAAALDXP9gOAAAAwIpkkQEAAACT2T_YDgAAAA' \
    --data-urlencode 'client_id=<clientID>' \
-   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
+   --data-urlencode 'scope=https://outlook.office.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
    --data-urlencode 'redirect_uri=http://localhost' \
    --data-urlencode 'grant_type=authorization_code' \
    --data-urlencode 'client_secret=<clientSecret>' \
@@ -83,7 +83,7 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_IezHLAQAAAPeNSdgOAAAA' \
    --data-urlencode 'client_id=<client_id>' \
-   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
+   --data-urlencode 'scope=https://outlook.office.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
    --data-urlencode 'redirect_uri=http://localhost' \
    --data-urlencode 'grant_type=refresh_token' \
    --data-urlencode 'client_secret=<client_secret>' \
@@ -120,7 +120,7 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
    
 1. Fill in the `authUrl`, `tokenUrl` and `refreshURL` by constructing them as described in the previous section.
 1. Add the following Scopes to the configuration:
-   * `https://graph.microsoft.com/SMTP.Send`
+   * `https://outlook.office.com/SMTP.Send`
    * `https://graph.microsoft.com/Mail.Read`
    * `https://graph.microsoft.com/Mail.Send`
    * `https://graph.microsoft.com/User.Read`
@@ -129,15 +129,15 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
    * `email`
    * `profile`
 1. Create an OSGI property file `called com.day.cq.mailer.DefaultMailService.cfg.json`
-under `/apps/<my-project>/osgiconfig/config`  with the following syntax:
+under `/apps/<my-project>/osgiconfig/config` with the syntax below. Note that the smtp.host and smtp.port values reflects advanced networking configuration, as described in the [Email Service tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
    
    ```
    {
-    "smtp.host": "<smtp hostname>"
+    "smtp.host": "$[env:AEM_PROXY_HOST;default=proxy.tunnel]",
     "smtp.user": "<user account that logged into get the oauth tokens>",
     "smtp.password": "value not used",
-    "smtp.port": 587,
-    "from.address": "<from address used for sending>"
+    "smtp.port": 30465,
+    "from.address": "<from address used for sending>",
     "smtp.ssl": false,
     "smtp.starttls": true,
     "smtp.requiretls": true,

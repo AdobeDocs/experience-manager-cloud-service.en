@@ -52,7 +52,7 @@ To generate renditions, select the assets and follow these steps.
 
 You can check the generated FPO renditions after the workflow completes. In Experience Manager Assets user interface, click the asset to open a large preview. Open the left rail and select **[!UICONTROL Renditions]**. Alternatively, use the keyboard shortcut `Alt + 3` when the preview is open.
 
-Click **[!UICONTROL FPO rendition]** to load its preview. Optionally, you can right click the rendition and save it to your file system. Check for available renditions in the left rail.
+Click **[!UICONTROL FPO rendition]** to load its preview. Optionally, you can right-click the rendition and save it to your file system. Check for available renditions in the left rail.
 
 ![rendition_list](assets/list-renditions.png)
 
