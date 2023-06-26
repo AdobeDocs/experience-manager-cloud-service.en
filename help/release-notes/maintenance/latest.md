@@ -16,7 +16,7 @@ Summarized below are the continuous improvements for maintenance release 12441, 
 ### Enhancements {#enhancements-X}
 
 - SITES-8316: Content Policies: Cache the ContentPolicyManager
-- SITES-8769: [Styles] Improve StyleImpl calls in ResponsiveGrid
+- SITES-8769: Improve StyleImpl calls in ResponsiveGrid
 - SITES-13165: GraphQL - Ability to filter behavior for null values
 
 ### Known Issues {#known-issues-X}
