@@ -16,7 +16,7 @@ In AEM, full text queries are those using the following functions:
 
 Such queries cannot return results without using an index. Unlike a query containing only path or property restrictions, a query containing a full text restriction for which no index can be found (and thus a traversal is performed) will always return zero results.
 
-The generic Lucene index (`/oak:index/lucene-*`) has existed since AEM 6.0 / Oak 1.0 in order to provide a full text search across most of the repository hierarchy, although some paths, such as `/jcr:system` and `/var` have always been excluded from this. However this index has largely been superseded by indexes on more specific node types (for example `damAssetLucene-*` for the `dam:Asset` node type), which support both full text and property searches.
+The generic Lucene index (`/oak:index/lucene-*`) has existed since AEM 6.0 / Oak 1.0 to provide a full text search across most of the repository hierarchy, although some paths, such as `/jcr:system` and `/var` have always been excluded from this. However this index has largely been superseded by indexes on more specific node types (for example `damAssetLucene-*` for the `dam:Asset` node type), which support both full text and property searches.
 
 In AEM 6.5 the generic Lucene index was marked as deprecated, indicating that it would be removed in future versions. Since then, a WARN has been logged when the index has been used as illustrated by the following log snippet:
 
@@ -32,30 +32,30 @@ For example, reference lookup queries, such as in the following example, should 
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-In order to support larger customer data volumes, Adobe will no longer create the generic Lucene index on new AEM as a Cloud Service environments. Additionally, Adobe will begin removing the index from existing repositories. [See the timeline](#timeline) at the end of this document for more details.
+To support larger customer data volumes, Adobe no longer creates the generic Lucene index on new AEM as a Cloud Service environments. Additionally, Adobe removes the index from existing repositories. [See the timeline](#timeline) at the end of this document for more details.
 
 Adobe has already adjusted the index costings via the `costPerEntry` and `costPerExecution` properties to ensure that other indexes such as `/oak:index/pathreference` are used in preference wherever possible. 
 
-Customer applications which use queries which still depend on this index should be updated immediately to leverage other existing indexes, which can be customized if required. Alternatively new custom indexes can be added to the customer application. Full instructions for index management in AEM as a Cloud Service can be found in the [indexing documentation.](/help/operations/indexing.md)
+Customer applications which use queries which still depend on this index should be updated immediately to use other existing indexes, which can be customized if required. Alternatively new custom indexes can be added to the customer application. Full instructions for index management in AEM as a Cloud Service can be found in the [indexing documentation.](/help/operations/indexing.md)
 
 ## Are You Affected? {#are-you-affected}
 
-The generic Lucene index is currently used as a fallback if no other full text index can service a query. When this deprecated index is used, a message like this will be logged at WARN level:
+The generic Lucene index is currently used as a fallback if no other full text index can service a query. When this deprecated index is used, a message similar to the following is logged at the WARN level:
 
 ```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
 ```
 
-In some circumstances, Oak might attempt to use another full text index (such as `/oak:index/pathreference`) to support the full text query, but if the query string does not match the regular expression on the index definition, a message will be logged at WARN level and the query will likely not return results.
+In some circumstances, Oak might attempt to use another full text index (such as `/oak:index/pathreference`) to support the full text query, but if the query string does not match the regular expression on the index definition, a message is logged at WARN level and the query will likely not return results.
 
 ```text
 org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak:index/pathReference with queryFilterRegex (["']|^)/ to search for value "test"
 ```
 
-Once the generic Lucene index has been removed, a message as shown below will be logged at WARN level if a full text query is not able to locate any suitable index definition:
+Once the generic Lucene index has been removed, a message as shown below is logged at WARN level if a full text query is not able to locate any suitable index definition:
 
 ```text
-org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
+org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results are returned
 ```
 
 >[!IMPORTANT]
@@ -74,7 +74,7 @@ There are a number of areas where your applications and AEM installations may be
 
 #### Custom Application Queries {#custom-application-queries}
 
-The most common source of queries using the generic Lucene index on a publish instance will be custom application queries.
+The most common source of queries using the generic Lucene index on a publish instance are custom application queries.
 
 In the simplest cases these might be queries with no node type specified thus implying `nt:base` or `nt:base` specified explicitly, such as:
 
@@ -111,7 +111,7 @@ As such, the query falls back on the generic full text index where all the inclu
 >
 >**Customer Action Required**
 >
->Marking the `jcr:content/metadata/@cq:tags` property as analyzed in a custom version of the `damAssetLucene` index will result in this query being handled by this index, and no WARN will be logged.
+>Marking the `jcr:content/metadata/@cq:tags` property as analyzed in a custom version of the `damAssetLucene` index results in this query being handled by this index, and no WARN is logged.
 
 ### Author Instance {#author-instance}
 

@@ -26,7 +26,7 @@ The following release (2020.12.0) will be on December 17, 2020
 
 ### What is new in [!DNL Assets] and [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Bulk asset ingestion**: Provide customers with a scalable, cloud-native ingestion service that leverages [!DNL Experience Manager] as a Cloud Service architecture including asset microservices. Key use cases include ingestion at scale with monitoring, reporting, and scheduling, while allowing for initial transfer of assets to cloud data stores using common cloud upload tooling. See [asset bulk ingestor tool](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Bulk asset ingestion**: Provide customers with a scalable, cloud-native ingestion service that uses [!DNL Experience Manager] as a Cloud Service architecture including asset microservices. Key use cases include ingestion at scale with monitoring, reporting, and scheduling, while allowing for initial transfer of assets to cloud data stores using common cloud upload tooling. See [asset bulk ingestor tool](/help/assets/add-assets.md#asset-bulk-ingestor).
 
   This tool is for system administrator, consultant, or implementation partner personas. This feature allows for large scale ingestion and is ideally used during initial ingestion or occasional large ingestion. For smaller ingestion jobs, use the [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) or [upload using Assets user interface](/help/assets/add-assets.md#upload-assets).
 
@@ -93,7 +93,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is Novemb
 * The loading of dependencies done prior to build execution required downloading a Maven plugin.
 * The link from the Cloud Manager footer to select a language will now navigate to the correct location.
 * Sometimes during the code scanning, the SonarQube process would not start. This will now be auto-detected and a restart attempted.
-* All existing production pipelines will be automatically enabled with the Experience Audit step. 
+* All existing production pipelines are automatically enabled with the Experience Audit step. 
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
@@ -111,7 +111,7 @@ The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a
 
 ### Others {#others-foundation}
 
-New [“httpd -t” syntax](/help/implementing/dispatcher/disp-overview.md#local-validation) check for apache and dispatcher configuration executed during Cloud Manager build, which can also be run using AEM as a Cloud Service SDK’s Dispatcher Tools.
+New ["httpd -t" syntax](/help/implementing/dispatcher/disp-overview.md#local-validation) check for apache and dispatcher configuration executed during Cloud Manager build, which can also be run using AEM as a Cloud Service SDK's Dispatcher Tools.
 
 ## Content Transfer Tool {#content-transfer-tool}
 

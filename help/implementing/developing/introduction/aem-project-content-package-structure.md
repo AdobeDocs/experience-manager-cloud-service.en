@@ -68,7 +68,7 @@ The recommended application deployment structure is as follows:
 
 >[!NOTE]
 >
->The same code must be deployed to all environments. This is needed in order to ensure a level of confidence validations on the stage environment are also in production. For more information, see the section on [Runmodes](/help/implementing/deploying/overview.md#runmodes).
+>The same code must be deployed to all environments. This code is needed to ensure a level of confidence validations on the stage environment are also in production. For more information, see the section on [Runmodes](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Content Packages
@@ -217,7 +217,7 @@ To target AEM author, AEM publish, or both, the package is embedded in the `all`
 
   `/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
-Breaking this folder structure down:
+Breaking down this folder structure:
 
 + The 1st-level folder **must be** `/apps`.
 + The 2nd-level folder represents the application with `-packages` post-fixed to the folder name. Often there is only a single 2nd-level folder all sub-packages are embedded under, however any number of 2nd-level folders can be created to best represent the application's logical structure:
@@ -281,7 +281,7 @@ Adding Maven dependencies follow standard Maven practices, and embedding of 3rd 
 
 ## Package Dependencies between the `ui.apps` from `ui.content` Packages {#package-dependencies}
 
-In order to ensure proper installation of the packages, it is recommended inter-package dependencies are established.
+To ensure proper installation of the packages, it is recommended inter-package dependencies are established.
 
 The general rule is packages containing mutable content (`ui.content`) should depend on the immutable code (`ui.apps`) that supports the rendering and use of the mutable content.
 
@@ -544,7 +544,7 @@ If multiple `/apps/*-packages` are used in the embedded targets, then they all m
 
 >[!WARNING]
 >
->Adding more Maven repositories may extend maven build times as additional Maven repositories will be checked for dependencies.
+>Adding more Maven repositories may extend maven build times as additional Maven repositories are checked for dependencies.
 
 In the reactor project's `pom.xml`, add any necessary 3rd party public Maven repository directives. The full `<repository>` configuration should be available from the 3rd party repository provider.
 

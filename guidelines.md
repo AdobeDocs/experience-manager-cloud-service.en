@@ -2,7 +2,7 @@
 
 ## Documentation Philosophy
 
-We know that Adobe Experience Manager users are working in highly competitive environments, striving to create digital experiences that will set them apart from their competitors. Therefore it is vital that when Adobe delivers advanced new tools in AEM, that these tools are complemented with accurate and clear documentation to allow the customer to immediately leverage their AEM investment and maximize ROI.
+We know that Adobe Experience Manager users are working in highly competitive environments, striving to create digital experiences that will set them apart from their competitors. Therefore it is vital that when Adobe delivers advanced new tools in AEM, that these tools are complemented with accurate and clear documentation to allow the customer to immediately use their AEM investment and maximize ROI.
 
 The goal of the AEM documentation is to put documentation into the hands of AEM users as soon as possible. Therefore we prioritize accurate, usable documentation and strive to continually update and improve it.
 

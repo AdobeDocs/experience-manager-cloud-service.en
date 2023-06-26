@@ -116,7 +116,7 @@ Content fragments can be referenced from AEM pages, just as any other asset type
 >
 >When a content fragment is used on a page, the content fragment model that it is based on is referenced. 
 >
->This means that if the model has not been published at the time you publish the page, this will be flagged and the model added to the resources to be published with the page.
+>This means that if the model has not been published at the time you publish the page, this is flagged and the model added to the resources to be published with the page.
 
 ### Integration with other Frameworks {#integration-with-other-frameworks}
 
@@ -252,7 +252,7 @@ It should be noted that:
 
 * Tasks that might require additional effort:
 
-  * It is strongly recommended to create new variations from `ContentFragment`. This ensures that all elements will share this variation, and that appropriate global data structures will be updated as required to reflect the newly created variation in the content structure.
+  * It is strongly recommended to create new variations from `ContentFragment`. This ensures that all elements share this variation, and that appropriate global data structures are updated as required to reflect the newly created variation in the content structure.
 
   * Removing existing variations through an element, using `ContentElement.removeVariation()`, will not update the global data structures assigned to the variation. To ensure these data structures are kept in sync, use `ContentFragment.removeVariation()` instead, which removes a variation globally.
 

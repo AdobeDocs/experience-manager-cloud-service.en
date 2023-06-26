@@ -22,7 +22,7 @@ AEM is a cutting-edge web experience management solution and offers many potenti
 *   Configuring and rendering a custom UI component. For example, allow an author to drag and drop a video component and configure a specific video to play on the live site. 
 *   Acting on an asset with a partner service. For example, sending an asset to a video platform when a page is published.
 *   Analyzing a site, page, or asset in the AEM admin console. For example, making SEO recommendations for an existing or unpublished page.
-*   Page-level access to user data maintained by an external service. For example, leverage demographic information to personalize the site experience. Read about ContextHub, a framework for storing, manipulating, and presenting context data. 
+*   Page-level access to user data maintained by an external service. For example, use demographic information to personalize the site experience. Read about ContextHub, a framework for storing, manipulating, and presenting context data. 
 *   Translating site copy or asset metadata. See the [AEM Translation Framework Bootstrap Connector](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector) for sample code using the AEM Translation Framework, which is the preferred implementation of translation connectors.
 
 
@@ -46,7 +46,7 @@ In addition to the static documentation above, Adobe and the AEM community offer
 Package structure rules
 -----------------------
 
-In order to support rolling deployments, AEM as a Cloud Service packages, of which connectors are examples, have a strict separation between "immutable" and "mutable" content. Packages should be cleanly separated between those that include:
+To support rolling deployments, AEM as a Cloud Service packages, of which connectors are examples, have a strict separation between "immutable" and "mutable" content. Packages should be cleanly separated between those that include:
 
 *   `/apps`
 *   `/content` and `/conf`
@@ -68,7 +68,7 @@ One aspect of the connector implementation is code backing the configuration of 
 Context-Aware Configurations
 -----------------------------
 
-[Context-Aware Configurations](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) allows to layer configuration across different folders, including `/libs`, `/apps`, `/conf` and subfolders under `/conf`. It supports inheritance so a customer can configure global configuration while making specific changes for each microsite. Because it is possible to leverage this feature for Cloud Services Configurations, connector code should reference configuration using Context-Aware Configuration API instead of referencing a specific configuration node.
+[Context-Aware Configurations](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) allows to layer configuration across different folders, including `/libs`, `/apps`, `/conf` and subfolders under `/conf`. It supports inheritance so a customer can configure global configuration while making specific changes for each microsite. Because it is possible to use this feature for Cloud Services Configurations, connector code should reference configuration using Context-Aware Configuration API instead of referencing a specific configuration node.
 
 If modified configurations are used in the Connector, architect the Connector to handle including/merging any future updates to Connector-provided default configurations with any customer configurations. Remember that changing customized (as in changed by the customer) content or configuration without customer warning and consent may break (or create unexpected behavior) with their Connector. 
 

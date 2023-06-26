@@ -23,12 +23,12 @@ The content to copy is defined by a content set. A content set consists of a lis
 
 When copying content, the source environment is the source of truth.
 
-* If content has been modified in the destination environment, it will be overwritten by content in the source, if the paths are the same.
-* If the paths are different, content from the source will be merged with the content in the destination.
+* If content has been modified in the destination environment, it is overwritten by content in the source, if the paths are the same.
+* If the paths are different, content from the source is merged with the content in the destination.
 
 ## Permissions {#permissions}
 
-In order to use the content copy tool, certain permissions are required in both the source and target environments.
+To use the content copy tool, certain permissions are required in both the source and target environments.
 
 | Content Copy Feature | AEM Administrator Group | Deployment Manager Role |
 |---|---|---|
@@ -58,7 +58,7 @@ Before any content can be copied a content set must be defined. Once defined, co
    1. Enter the path in the **Add Include Path** field.
    1. Tap or click the **Add Path** button to add the path to the content set.
    1. Tap or click the **Add Path** button again as necessary.
-      * Up to fifty paths are allowed.
+      * Up to 50 paths are allowed.
 
    ![Add paths to content set](assets/add-content-set-paths.png)
 
@@ -177,7 +177,7 @@ The content copy tool has the following limitations.
 * Content can only be copied from and to authoring services.
 * Cross-program content copy is not possible.
 * Running concurrent content copy operations on the same environment is not possible.
-* Up to fifty paths can be specified per content set. There is no limitation on excluded paths.
+* Up to 50 paths can be specified per content set. There is no limitation on excluded paths.
 * The content copy tool should not be used as a cloning or mirroring tool because it cannot track moved or deleted content on the source.
 * The content copy tool has no versioning capability and cannot automatically detect modified content or newly created content on the source environment in a content set since the last content copy operation.
   * If you wish to update your destination environment with content changes only since the last content copy operation, you need to create a content set and specify the paths on the source instance where changes were made since the last content copy operation.

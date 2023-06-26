@@ -65,7 +65,7 @@ And that's just for starters. Depending on the complexity, an Award could be Com
 
 Representing these interrelationships can be achieved with Fragment References, as they are understood by both you (the author) and the headless applications.
 
-As an author you're not responsible for defining these relationships (that's done by the Content Architect when creating the Content Fragment Model), but you need to know how to recognize and edit the references.
+As an author you are not responsible for defining these relationships (that is done by the Content Architect when creating the Content Fragment Model), but you need to know how to recognize and edit the references.
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")

@@ -37,7 +37,7 @@ More details about enabling [GraphQL endpoints can be found here](/help/headless
 
 ## Query content using GraphQL with GraphiQL
 
-Information architects will need to design queries for their channel endpoints in order to deliver content. These queries will generally only need to be considered once per endpoint per model. For the purposes of this getting started guide we will only need to create one.
+Information architects need to design queries for their channel endpoints to deliver content. These queries will generally only need to be considered once per endpoint per model. For the purposes of this getting started guide we will only need to create one.
 
 GraphiQL is an IDE, included in your AEM environment; it is accessible/visible after you [configure your endpoints](#enable-graphql-endpoint). 
 

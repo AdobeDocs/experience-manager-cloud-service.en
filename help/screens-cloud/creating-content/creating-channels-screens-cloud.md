@@ -78,8 +78,8 @@ The following templates are available while using the **Create** channel wizard:
 
 |Available Templates|Description|
 |--- |--- |
-|Channels Folder|Allows to create a folder to store collection of channels.|
-|Sequence Channel|Allows to create a channel that plays the components sequentially (one by one in a slide show).|
+|Channels Folder|Lets you create a folder to store collection of channels.|
+|Sequence Channel|Lets you create a channel that plays the components sequentially (one by one in a slide show).|
 |Left or Right L-Bar Split Screen Channel|Allows content authors to view different types of assets in appropriately sized zones.|
 
 ## Use default assignment details for channels {#default-channels}
@@ -109,7 +109,7 @@ This tile displays the following information:
 
 ### Use the default assignment details when assigning to a display {#default-display}
 
-Channels having default assignment details can be assigned to displays the same way regular channels are, with the added option to leverage the default assignment details instead of manually defining custom ones each time.
+Channels having default assignment details can be assigned to displays the same way regular channels are, with the added option to use the default assignment details instead of manually defining custom ones each time.
 
 1. Navigate to the display details page you want to assign the channel to and click the **Assign channel**.
 alternatively, select the desired display in the inventory view and click the **Assign channel**.
@@ -135,7 +135,7 @@ alternatively, select the desired display in the inventory view and click the **
 
    ![image](/help/screens-cloud/assets/display/Assignments8.png)
 
-**Note:** A channel assignment that leverages the default assignment details will not be editable in the context of the display.
+**Note:** A channel assignment that uses the default assignment details will not be editable in the context of the display.
 
 * If you need to change it to a custom assignment, you'll have to first remove it and then re-add it using the **Set custom assignment details** option.
 * If you need to change the properties of the default assignment details, you'll have to do this directly from the channel details page.
@@ -148,7 +148,7 @@ alternatively, select the desired display in the inventory view and click the **
 
    ![image](/help/screens-cloud/assets/display/Assignments9.png)
 
-1. A confirmation dialog will be shown, and details will be match one of the following conditions:
+1. A confirmation dialog is shown, and details match one of the following conditions:
 **a.** Channel is not used in any display.
 
    ![image](/help/screens-cloud/assets/display/Assignments10.png)

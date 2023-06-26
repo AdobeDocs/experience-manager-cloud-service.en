@@ -18,7 +18,7 @@ Likewise, content authors not only need the ability to structure and arrange the
 The Style System provides a unified solution to both the template author's and content author's requirements:
 
 * Template authors can define style classes in the content policy of components.
-* Content authors can then select these classes from a drop-down when editing the component on a page in order to apply the corresponding styles.
+* Content authors can then select these classes from a drop-down list when editing the component on a page so they can apply the corresponding styles.
 
 The style class is then inserted on the decoration wrapper element of the component so that the component developer doesn't need to be concerned with handling the styles beyond providing their CSS rules.
 
@@ -98,7 +98,7 @@ If you wish to use the Style System for your own components do the following:
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/implementing/developing/introduction/clientlibs.md) in order to work.
+>The CSS classes &ndash; and any necessary Javascript &ndash; configured as style properties of a component's policy, must be deployed as [Client Libraries](/help/implementing/developing/introduction/clientlibs.md) to work.
 
 ## Setup {#setup}
 
@@ -116,7 +116,7 @@ For a component to work with AEM's Style System and show the style tab in its de
 >[!NOTE]
 >This uses [overlays](/help/implementing/developing/introduction/overlays.md), by means of the [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
-With the component configured, the styles configured by the page authors will be automatically inserted by AEM on the decoration element that AEM automatically wraps around every editable component. The component itself need not do anything else to make this happen.
+With the component configured, the styles configured by the page authors are automatically inserted by AEM on the decoration element that AEM automatically wraps around every editable component. The component itself need not do anything else to make this happen.
 
 ### Enable Styles Tab in Edit Dialog {#enable-styles-tab-edit}
 
@@ -148,9 +148,9 @@ This property is set on the `cq:Component` node. For example:
 >
 >1. HTL takes precedence over everything: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Then among multiple active styles, the first style in the list of styles configured in the component's policy is taken.
->1. Finally, the component's `cq:htmlTag`/ `cq:tagName` will be considered as a fallback value.
+>1. Finally, the component's `cq:htmlTag`/ `cq:tagName` is considered as a fallback value.
 >
 
-This ability to define style names is useful for very generic components, like the Layout Container, or the Content Fragment component, in order to provide them with additional meaning.
+This ability to define style names is useful for generic components, like the Layout Container, or the Content Fragment component, to provide them with additional meaning.
 
 For instance it allows a Layout Container to be given semantics like `<main>`, `<aside>`, `<nav>`, etc.

@@ -28,7 +28,7 @@ Below is a simple path for for creating, managing, and delivering experiences us
 
 The tasks described are necessary for a basic end-to-end demonstration of AEM's headless capabilities. Anyone with administrator access to a test AEM instance can follow these guides to understand headless delivery in AEM, though someone with developer experience is ideal.
 
-However in a production situation, the tasks will be performed by different personas a varying number of times. For example:
+However in a production situation, the tasks are performed by different personas a varying number of times. For example:
 
 * **Administrators** will need to set up the initial configuration and folder structure for the content normally only once or sporadically.
 * **Information architects** generally will add new models as the needs of the organization evolve.

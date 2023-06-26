@@ -85,7 +85,7 @@ Please refer to the [`aem-testing-clients` GitHub repo](https://github.com/adobe
 
 ### Prerequisites {#prerequisites}
 
-1. The tests in Cloud Manager will be executed using a technical admin user.
+1. The tests in Cloud Manager are run using a technical admin user.
 
 >[!NOTE]
 >
@@ -98,8 +98,8 @@ Please refer to the [`aem-testing-clients` GitHub repo](https://github.com/adobe
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU                  | 0.5   | Amount of CPU-time reserved per test execution                     |
 | Memory               | 0.5Gi | Amount of memory allocated the the test, value in gibibytes        |
-| Timeout              | 30m   | The duration after which the test will be terminated.              |
-| Recommended Duration | 15m   | We recommend to write the tests to not take longer than this time. |
+| Timeout              | 30m   | The duration after which the test is terminated.              |
+| Recommended Duration | 15m   | Adobe recommends writing the tests to not take longer than this time. |
 
 >[!NOTE]
 >
@@ -114,13 +114,13 @@ Before activating functional tests in a Cloud Manager pipeline, it's recommended
 
 Because test classes are JUnit tests, they can be run from mainstream Java IDEs like Eclipse, IntelliJ, and NetBeans. Because both product functional tests and custom functional tests are based on the same technology, both can be run locally by copying the product tests into your custom tests.
 
-However, when running these tests, it will be necessary to set a variety of system properties expected by the `aem-testing-clients` (and the underlying Sling Testing Clients) library.
+However, when running these tests, it is necessary to set a variety of system properties expected by the `aem-testing-clients` (and the underlying Sling Testing Clients) library.
 
 The system properties are as follows.
 
 | Property                            | Description                                                      | Example                 |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances`                | amount of instances, to match cloud service should be set to `2` | `2`                     |
+| `sling.it.instances`                | number of instances, to match cloud service should be set to `2` | `2`                     |
 | `sling.it.instance.url.1`           | should be set to the author URL                                  | `http://localhost:4502` | 
 | `sling.it.instance.runmode.1`       | runmode of the first instance, should be set to `author`         | `author`                | 
 | `sling.it.instance.adminUser.1`     | should be set to the author admin user.                          | `admin`                 | 
