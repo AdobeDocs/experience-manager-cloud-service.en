@@ -9,9 +9,9 @@ The following section outlines the technical release notes for the current maint
 
 ## Release X {#release-X}
  
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on June X, 2023. This maintenance release is an update from previous maintenance release 12255.
+Summarized below are the continuous improvements for maintenance release 12441, which was publicly released on June 28, 2023. This maintenance release is an update from previous maintenance release 12255.
 
-Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
+2023.7.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information
 
 ### Enhancements {#enhancements-X}
 
@@ -23,7 +23,7 @@ None.
 
 ### Fixed Issues {#fixed-issues-X}
 
-None.
+-
 
 ### Embedded Technologies {#embedded-tech-X}
 
