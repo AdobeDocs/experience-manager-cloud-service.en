@@ -25,7 +25,7 @@ None.
 
 ### Fixed Issues {#fixed-issues-X}
 
-- Various vulnerability and accesibility fixes
+- Various accessibility-related updates
 - SITES-14073: CSV Report fails with 500 when selecting no property to export
 - SITES-12577: Link checker transformer not rewriting links intermittently 
 - SITES-12688: Logical operator OR not properly working in Asset Finder search
