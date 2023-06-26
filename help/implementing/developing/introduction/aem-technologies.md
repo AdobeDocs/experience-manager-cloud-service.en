@@ -107,7 +107,7 @@ Using the principles of URL decomposition:
 * The mapping uses the content path extracted from the request to locate the resource.
 * When the appropriate resource is located, the sling resource type is extracted, and used to locate the script to be used for rendering the content.
 
-The following figure illustrates the mechanism used, which will be discussed in more detail in the following sections.
+The following figure illustrates the mechanism used, which is discussed in more detail in the following sections.
 
 ![URL mapping mechanism](assets/url-mapping.png)
 
@@ -136,11 +136,11 @@ The path specified by the `sling:resourceType` can be either:
 >
 >Relative paths are recommended by Adobe as they increase portability.
 
-All Sling scripts are stored in subfolders of either `/apps` (mutable, user scripts) or `/libs` (immutable, system scripts), which will be searched in this order.
+All Sling scripts are stored in subfolders of either `/apps` (mutable, user scripts) or `/libs` (immutable, system scripts), which is searched in this order.
 
 A few other points to note are:
 
-* When the method (GET, POST) is required, it will be specified in uppercase as according to the HTTP specification for example, `jobs.POST.esp`
+* When the method (GET, POST) is required, it is specified in uppercase as according to the HTTP specification for example, `jobs.POST.esp`
 * Various script engines are supported, but the common, recommended scripts are HTL and JavaScript.
 
 The list of script engines supported by the given instance of AEM are listed on the Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`).
@@ -148,22 +148,22 @@ The list of script engines supported by the given instance of AEM are listed on 
 Using the previous example, if the `sling:resourceType` is `hr/jobs` then for:
 
 * GET/HEAD requests and URLs ending in `.html` (default request types, default format)
-  * The script will be `/apps/hr/jobs/jobs.esp`; the last section of the `sling:resourceType` forms the file name.
+  * The script is `/apps/hr/jobs/jobs.esp`; the last section of the `sling:resourceType` forms the file name.
 * POST requests (all request types excluding GET/HEAD, the method name must be uppercase)
-  * POST will be used in the script name.
-  * The script will be `/apps/hr/jobs/jobs.POST.esp`.
+  * POST is used in the script name.
+  * The script is `/apps/hr/jobs/jobs.POST.esp`.
 * URLs in other formats, not ending with `.html`
   * For example `../content/corporate/jobs/developer.pdf`
-  * The script will be `/apps/hr/jobs/jobs.pdf.esp`; the suffix is added to the script name.
+  * The script is `/apps/hr/jobs/jobs.pdf.esp`; the suffix is added to the script name.
 * URLs with selectors
   * Selectors can be used to display the same content in an alternative format. For example a printer friendly version, an rss feed or a summary.
   * If we look at a printer friendly version where the selector could be `print`; as in `../content/corporate/jobs/developer.print.html`
-  * The script will be `/apps/hr/jobs/jobs.print.esp`; the selector is added to the script name.
+  * The script is `/apps/hr/jobs/jobs.print.esp`; the selector is added to the script name.
 * If no `sling:resourceType` has been defined then:
-  * The content path will be used to search for an appropriate script (if the path based `ResourceTypeProvider` is active).
+  * The content path is used to search for an appropriate script (if the path based `ResourceTypeProvider` is active).
   * For example, the script for `../content/corporate/jobs/developer.html` would generate a search in `/apps/content/corporate/jobs/`.
-  * The primary node type will be used.
-* If no script is found at all then the default script will be used.
+  * The primary node type is used.
+* If no script is found at all, then the default script is used.
   * The default rendition is currently supported as plain text (`.txt`), HTML (`.html`) and JSON (`.json`), all of which will list the node's properties (suitably formatted). The default rendition for the extension `.res`, or requests without a request extension, is to spool the resource (where possible).
 * For http error handling (codes 403 or 404) Sling will look for a script at either:
   * The location `/apps/sling/servlet/errorhandler` for customized scripts

@@ -26,7 +26,7 @@ Follow these steps view and manage repositories in Cloud Manager.
 
    ![Add Repository dialog](/help/implementing/cloud-manager/assets/repos/repo-1.png)
 
-When the wizard closes, your new repository will be displayed in the table.
+When the wizard closes, your new repository is displayed in the table.
 
 You can select the repository in the table and click on the ellipsis button and select **Copy Repository URL**, **View &amp; Update**, or **Delete**.
 
@@ -45,7 +45,7 @@ There is a single primary repository or a branch for any given pipeline. With [g
 Deleting a repository will:
 
 * Make the deleted repository name unusable for new repositories that may be created in the future.
-   * The error message `Repository name should be unique within organization.` will be shown in such cases.
+   * The error message `Repository name should be unique within organization.` is shown in such cases.
 * Make the deleted repository unavailable in Cloud Manager and unavailable for linking to a pipeline.
 
 Follow these to delete a repository in Cloud Manager.

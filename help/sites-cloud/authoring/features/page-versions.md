@@ -40,7 +40,7 @@ You can create a version of your resource from:
 
 1. Confirm the new version with **Create**.
 
-   The information in the timeline will be updated to indicate the new version.
+   The information in the timeline is updated to indicate the new version.
 
 ### Creating a New Version - Create with a Selected Resource {#creating-a-new-version-create-with-a-selected-resource}
 
@@ -50,7 +50,7 @@ You can create a version of your resource from:
 1. The same dialog will open. You can enter a **Label** and a **Comment** if required.
 1. Confirm the new version with **Create**.
 
-The timeline will be opened with the information updated to indicate the new version.
+The timeline is opened with the information updated to indicate the new version.
 
 ## Reinstating Versions {#reinstating-versions}
 
@@ -72,15 +72,15 @@ Once you have created a version of your page, there are various methods of reins
 
 >[!NOTE]
 >
->When reinstating a page, the version created will be part of a new branch.
+>When reinstating a page, the version created is part of a new branch.
 >
 >To illustrate:  
 >
 >1. Create versions of any page.
->1. The initial labels and version node names will be 1.0, 1.1, 1.2 and so forth.  
+>1. The initial labels and version node names are 1.0, 1.1, 1.2 and so forth.  
 >1. Reinstate the first version; i.e. 1.0.
 >1. Create new versions again.
->1. The generated labels and node names will now be 1.0.0, 1.0.1, 1.0.2, etc.
+>1. The generated labels and node names are now 1.0.0, 1.0.1, 1.0.2, and so on.
 
 ### Revert to a Version {#revert-to-a-version}
 
@@ -88,12 +88,12 @@ To **Revert** the selected page to a previous version:
 
 1. Navigate to show the page you want to revert to a previous version.
 1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Open the **Timeline** column and select either **Show All** or **Versions**. The page versions for the selected page will be listed.
-1. Select the version you want to revert to. The possible options will be shown:
+1. Open the **Timeline** column and select either **Show All** or **Versions**. The page versions for the selected page are listed.
+1. Select the version you want to revert to. The possible options are shown:
 
    ![Revert to this Version](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Select **Revert to this Version**. The selected version will be restored and the information in timeline will be updated.
+1. Select **Revert to this Version**. The selected version is restored and the information in timeline is updated.
 
 ### Restore Version {#restore-version}
 
@@ -106,12 +106,13 @@ This method can be used to restore versions of specified pages within the curren
    >[!NOTE]
    >
    >If, either:
+   >
    >* you have selected a single page, that has never had any child pages,
    >* or none of the pages in the folder have versions,
    >
-   >Then the display will be empty as there are no versions applicable.
+   >The display becomes empty because there are no applicable versions.
 
-1. The available versions will be listed:
+1. The available versions are listed:
 
    ![Restore Version - List of all pages in folder](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
@@ -135,7 +136,7 @@ This method can be used to restore a version of a tree as at a specified date an
 
 1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
 
-1. Select **Restore**, then **Restore Tree** from the top [actions toolbar](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar). The latest version of the tree will be shown:
+1. Select **Restore**, then **Restore Tree** from the top [actions toolbar](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar). The latest version of the tree is shown:
 
    ![Restore Tree](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
@@ -143,9 +144,9 @@ This method can be used to restore a version of a tree as at a specified date an
 
 1. Set the flag **Preserved Non Versioned Pages** as required:
 
-   * If active (selected), then any non-versioned pages will be maintained and not impacted by the restore. 
+   * If active (selected), any non-versioned pages are maintained and not impacted by the restore. 
 
-   * If inactive (unselected), then any non-versioned pages will be removed as they did not exist in the versioned tree.
+   * If inactive (unselected), any non-versioned pages are removed as they did not exist in the versioned tree.
 
 1. Select **Restore** for the selected version of the tree to be restored as the *current* version.
 
@@ -156,11 +157,11 @@ You can preview a specific version:
 1. Navigate to show the page you want to compare.
 1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
-1. The page versions will be listed. Select the version you want to preview:
+1. The page versions are listed. Select the version you want to preview:
 
    ![Preview version](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Select **Preview**. The page will be shown in a new tab.
+1. Select **Preview**. The page is shown in a new tab.
 
    >[!CAUTION]
    >
@@ -175,7 +176,7 @@ To compare a previous version with the current page:
 1. Navigate to show the page you want to compare.
 1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
-1. The page versions will be listed. Select the version you want to compare:
+1. The page versions are listed. Select the version you want to compare:
 
    ![Compare versions](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -189,7 +190,7 @@ Timewarp is a feature designed to simulate the *published* state of a page at sp
 >
 >[Timewarp can also be used with Launches to preview the future.](/help/sites-cloud/authoring/launches/preview.md)
 
-Because content creation is an ongoing and collaborative process, the purpose of Timewarp is to allow authors to track the published website over time in order to understand how the content has changed. This feature uses the page versions to determine the state of the publish environment.
+Because content creation is an ongoing and collaborative process, the purpose of Timewarp is to allow authors to track the published website over time so they can understand how the content has changed. This feature uses the page versions to determine the state of the publish environment.
 
 To do this:
 
@@ -219,7 +220,7 @@ Timewarp is a [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.
 Timewarp makes a best effort to reproduce a page at a selected point in time. However because of the complexities of the continuous authoring of content in AEM, this is not always possible. These limitations should be kept in mind as you use Timewarp.
 
 * **Timewarp works based on published pages** - Timewarp will only work fully if you have previously published the page. If not, timewarp will show the current page on the author environment.
-* **Timewarp uses page versions** - If you navigate to a page that has been removed/deleted from the repository it will be rendered properly if old versions of the page are still available in the repository.
+* **Timewarp uses page versions** - If you navigate to a page that has been removed/deleted from the repository it is rendered properly if old versions of the page are still available in the repository.
 * **Removed versions affect Timewarp** - If versions are removed from the repository then Timewarp cannot show the correct view.  
 * **Timewarp is read-only** - You cannot edit the old version of the page. It is only available for viewing. If you want to restore the older version you will have to do that manually using [restore](#revert-to-a-version).
 * **Timewarp is only based on page content** - If elements (such as code, css, assets/images, etc) for rendering the website have changed, the view will differ from what it originally was, as those items are not versioned in the repository.

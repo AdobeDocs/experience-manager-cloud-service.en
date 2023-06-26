@@ -43,7 +43,7 @@ Follow these steps to add a certificate using Cloud Manager.
 
 1. Navigate to **Environments** screen from the **Overview** page.
 
-1. Click on **SSL Certificates** from the left navigation panel. A table with details of any existing SSL certificates will be displayed on the main screen.
+1. Click on **SSL Certificates** from the left navigation panel. A table with details of any existing SSL certificates are displayed on the main screen.
 
    ![Adding an SSL cert](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
@@ -55,7 +55,7 @@ Follow these steps to add a certificate using Cloud Manager.
 
    ![Add SSL Certificate dialog](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
   
-   * Any errors detected will be displayed.
+   * Any errors detected are displayed.
      * You must address all errors before your certificate can be saved.
      * Refer to the [Certificate Errors](#certificate-errors) section to learn more about addressing common errors.
 
@@ -67,7 +67,7 @@ Once saved, you will see your certificate displayed as a new row in the table.
 
 >[!NOTE]
 >
->A user must be a member of the **Business Owner** or **Deployment Manager** role in order to install an SSL certificate in Cloud Manager.
+>A user must be a member of the **Business Owner** or **Deployment Manager** role to install an SSL certificate in Cloud Manager.
 
 ## Certificate Errors {#certificate-errors}
 
@@ -147,7 +147,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->The output of these two commands must be exactly the same. If you can not locate a matching private key for your `main/server` certificate, you will be required to re-key the certificate by generating a new CSR and/or requesting an updated certificate from your SSL vendor.
+>The output of these two commands must be exactly the same. If you can not locate a matching private key for your `main/server` certificate, you are required to re-key the certificate by generating a new CSR and/or requesting an updated certificate from your SSL vendor.
 
 ### Certificate Validity Dates {#certificate-validity-dates}
 

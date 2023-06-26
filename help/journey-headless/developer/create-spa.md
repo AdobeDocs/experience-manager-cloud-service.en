@@ -41,7 +41,7 @@ There are a number of requirements before you begin working with SPAs in AEM.
 
 * Development experience creating SPAs with React or Angular frameworks
 * Basic AEM skills creating Content Fragments and using the editor
-* Be sure to review the document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) in order to understand the various levels of SPA integration possible.
+* Be sure to review the document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) so you can understand the various levels of SPA integration possible.
 
 ### Tools {#tools}
 
@@ -66,7 +66,7 @@ For a full description of SPAs and why you would use them, see the [additional r
 
 ## How AEM Handles SPAs
 
-Developing single page applications on AEM assumes that the front-end developer observes standard best practices when creating an SPA. If as a front end developer you follow these general best practices as well as few AEM-specific principles, your SPA will be functional with AEM and its content-authoring capabilities.
+Developing single page applications on AEM assumes that the front-end developer observes standard best practices when creating an SPA. If as a front end developer you follow these general best practices as well as a few AEM-specific principles, your SPA becomes functional with AEM and its content-authoring capabilities.
 
 * **Portability** - As with any components, the SPA components should be built to be as portable as possible. The SPA should be built with portably and reusable components.
 * **AEM Drives Site Structure** - The front end developer creates components and owns their internal structure, but relies on AEM to define the content structure of the site.
@@ -87,7 +87,7 @@ For a full description of the AEM SPA Editor, see the [additional resources](#ad
 
 ## Accommodating Existing SPAs {#existing-spas}
 
-If you have an existing SPA, AEM supports embedding it into AEM so it is visible to your content authors in the AEM editor. This can be very useful to view the content they are creating via Content Fragments in context of the end application where it will be consumed.
+If you have an existing SPA, AEM supports embedding it into AEM so it is visible to your content authors in the AEM editor. This can be very useful to view the content they are creating by way of Content Fragments in context of the end application where it is consumed.
 
 Additionally, with only small changes, you can enable certain editing ability to the external SPA within the AEM editor.
 

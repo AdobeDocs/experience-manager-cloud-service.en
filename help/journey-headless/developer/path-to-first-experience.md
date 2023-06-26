@@ -42,7 +42,7 @@ Separate from AEM, you also want to make sure you have a proper development envi
 
 ### Defining Content Models and APIs {#defining-models}
 
-You want to drive a consistent experience and manage personalized campaigns across channels, so you can look at each individual channel and surface as its own distinct content structure to deliver to. However having each channel have its own content model will be challenging to maintain.
+You want to drive a consistent experience and manage personalized campaigns across channels, so you can look at each individual channel and surface as its own distinct content structure to deliver to. However, having each channel have its own content model is challenging to maintain.
 
 Instead, you should consider how content on different surfaces is related based on organizing principle such as brand and product hierarchies, categories of goods or surfaces, or steps in the customer journey. For example, if you have a set of surfaces that support a specific brand of cars you manufacture, you may want to start with a content model for general information that would be true for the entire car and then have more - specific elements such as content needed when the car is starting up to when there are service issues. Such a model will enforce inheritance of general car brand content while allow for shifts based on specific context needed. It also helps with future management of updates to this content as you can enforce control based on roles such as the overall marketer or product manager for the entire car brand vs an author who is responsible for the "starting car" experience.
 
@@ -80,7 +80,7 @@ You can also optionally refer to the [additional resources](#additional-resource
 
 ## Implementing Your First AEM Headless App
 
-This is an overview of what is needed to implement your first headless app using AEM to deliver your content. How to carry out these steps will be described in detail in later parts of the Headless Developer Journey.
+This is an overview of what is needed to implement your first headless app using AEM to deliver your content. How to carry out these steps ill be described in detail in later parts of the Headless Developer Journey.
 
 1. Create Content Fragment Models
 1. Create Content Fragments

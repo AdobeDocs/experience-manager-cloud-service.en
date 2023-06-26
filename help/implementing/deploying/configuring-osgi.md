@@ -54,7 +54,7 @@ For example, if AEM is using the runmodes author and dev, configuration nodes in
 
 If multiple configurations for the same PID are applicable, the configuration with the highest number of matching run modes is applied.
 
-This rule's granularity is at a PID level. This means you cannot define some properties for the same PID in `/apps/example/config.author/` and more specific ones in `/apps/example/config.author.dev/` for the same PID. The configuration with the highest number of matching runmodes will be effective for the entire PID.
+This rule's granularity is at a PID level. This means you cannot define some properties for the same PID in `/apps/example/config.author/` and more specific ones in `/apps/example/config.author.dev/` for the same PID. The configuration with the highest number of matching runmodes is effective for the entire PID.
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ The AEM SDK Quickstart Jar's AEM Web Console can be used configure OSGi componen
 
 >[!NOTE] 
 >
->The AEM Web Console's Configuration UI does write `.cfg.json` files into the repository. Therefore, be aware of this in order to avoid potential unexpected behavior during local development, when the AEM Project-defined OSGi configurations may differ from the generated configurations.
+>The AEM Web Console's Configuration UI does write `.cfg.json` files into the repository. Therefore, be aware of this workflow to avoid potential unexpected behavior during local development, when the AEM Project-defined OSGi configurations may differ from the generated configurations.
 
 1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user
 1. Navigate to **OSGi** &gt; **Configuration**
@@ -254,7 +254,7 @@ Values for the variables must not exceed 2048 characters.
 >
 >There are rules related to the use of certain prefixes for variable names:
 >
->1. Variable names prefixed with `INTERNAL_`, `ADOBE_`, or `CONST_` are reserved by Adobe. Any customer-set variables that start with these prefixes will be ignored.
+>1. Variable names prefixed with `INTERNAL_`, `ADOBE_`, or `CONST_` are reserved by Adobe. Any customer-set variables that start with these prefixes are ignored.
 >
 >1. Customers must not reference variables prefixed with `INTERNAL_` or `ADOBE_` either.
 >
@@ -510,7 +510,7 @@ See [this page](https://developer.adobe.com/experience-cloud/cloud-manager/docs/
 
 ### Setting Values via API {#setting-values-via-api}
 
-Calling the API deploys the new variables and values to a Cloud environment, similar to a typical customer code deployment pipeline. The author and publish services will be restarted and reference the new values, typically taking a few minutes.
+Calling the API deploys the new variables and values to a Cloud environment, similar to a typical customer code deployment pipeline. The author and publish services are restarted and reference the new values, typically taking a few minutes.
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -588,7 +588,7 @@ Up to 200 variables per environment can be declared.
 
 Because the secret and environment-specific configuration values live outside of Git, and therefore, are not part of the formal Adobe Experience Manager as a Cloud Service deployment mechanisms, the customer should manage, govern, and integrate into the Adobe Experience Manager as a Cloud Service deployment process.
 
-As mentioned above, calling the API deploys the new variables and values to Cloud environments, similar to a typical customer code deployment pipeline. The author and publish services will be restarted and reference the new values, typically taking a few minutes. Note that the quality gates and tests that are executed by Cloud Manager during a regular code deployment are not performed during this process.
+As mentioned above, calling the API deploys the new variables and values to Cloud environments, similar to a typical customer code deployment pipeline. The author and publish services are restarted and reference the new values, typically taking a few minutes. Note that the quality gates and tests that are executed by Cloud Manager during a regular code deployment are not performed during this process.
 
 Typically, customers would call the API to set environment variables before deploying code that relies on them in Cloud Manager. In some situations, one might want to modify an existing variable after code has already been deployed. 
 

@@ -294,13 +294,13 @@ To merge this data with the table at runtime, we need to point the adaptive form
 
 If you created an adaptive form based on an XFA form template, the XFA elements are available in the Data Model tab of AEM Content Finder. You can drag and drop these XFA elements, including tables, in the adaptive form.
 
-The XFA table element is mapped to the Table component and works out-of-the-box in adaptive forms. All properties and functionalities of XDP table are preserved when moved into adaptive form, and you can perform any operation on it just as you do with native adaptive form table. For example, if a row in an XDP table is marked repeatable, it will be repeated when dropped in adaptive forms as well.
+The XFA table element is mapped to the Table component and works out-of-the-box in adaptive forms. All properties and functionalities of XDP table are preserved when moved into adaptive form, and you can perform any operation on it just as you do with native adaptive form table. For example, if a row in an XDP table is marked repeatable, it is repeated when dropped in adaptive forms as well.
 
 In addition, you can drag-drop XDP subform to add a new row in the table. However, note that dropping a nested subform does not work.
 
 >[!NOTE]
 >
->An XDP table without a header row will not be mapped to the adaptive form Table component. Instead, it will be mapped to the adaptive form Panel component with fluid layout. Also, when you add a nested table from an XDP to an adaptive form, the outer table gets converted to a panel while retaining the inner table.
+>An XDP table without a header row will not be mapped to the adaptive form Table component. Instead, it is mapped to the adaptive form Panel component with fluid layout. Also, when you add a nested table from an XDP to an adaptive form, the outer table gets converted to a panel while retaining the inner table.
 
 In addition, you can drag-drop a group of XSD complex type elements to create a table row. A new row gets created just below the row on which you dropped the elements. The cells created using the XSD complex type elements maintain a binding reference to the XSD. You can also replace a body cell with an XSD complex type element by dropping the element onto the cell.
 
@@ -308,7 +308,7 @@ In addition, you can drag-drop a group of XSD complex type elements to create a 
 >
 >The number of elements in a XDP table component, a subform, or an XSD complex type cannot exceed the number of cells in a row. For example, you cannot drop four elements on a row that has only three cells. It will result in an error.
 >
->If the number of elements is less than the number of cells in a row, the new row first adds cells based on the elements, and then the default cells are added to fill in the remaining cells in the row. For example, if you drop a group of three elements in a row that has four cells, the first three cells are based on the elements you dropped and the remaining one cell will be the default table cell.
+>If the number of elements is less than the number of cells in a row, the new row first adds cells based on the elements, and then the default cells are added to fill in the remaining cells in the row. For example, if you drop a group of three elements in a row that has four cells, the first three cells are based on the elements you dropped and the remaining one cell is the default table cell.
 
 ## Key considerations {#key-considerations}
 

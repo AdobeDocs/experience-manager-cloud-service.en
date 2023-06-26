@@ -33,10 +33,10 @@ To configure [!DNL Experience Manager] to watermark assets:
 
    >[!NOTE]
    >
-   >If you have configured System Watermarking Profile using `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` configuration file (OSGi configuration), you can continue to use it, however, Adobe recommends to use the new method.
+   >If you have configured System Watermarking Profile using `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` configuration file (OSGi configuration), you can continue to use it, however, Adobe recommends using the new method.
 
    
-1. [Create a processing profile](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) to leverage asset microservices to apply the watermark.
+1. [Create a processing profile](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) to use asset microservices to apply the watermark.
 
    ![Asset processing profile to create watermark](assets/watermark-processing-profile.png)
 
