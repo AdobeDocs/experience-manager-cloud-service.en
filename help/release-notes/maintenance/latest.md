@@ -15,7 +15,9 @@ Summarized below are the continuous improvements for maintenance release 12441, 
 
 ### Enhancements {#enhancements-X}
 
-None.
+- SITES-8316: Content Policies: Cache the ContentPolicyManager
+- SITES-8769: [Styles] Improve StyleImpl calls in ResponsiveGrid
+- SITES-13165: GraphQL - Ability to filter behavior for null values
 
 ### Known Issues {#known-issues-X}
 
@@ -23,7 +25,17 @@ None.
 
 ### Fixed Issues {#fixed-issues-X}
 
--
+- Various vulnerability and accesibility fixes
+- SITES-14073: CSV Report fails with 500 when selecting no property to export
+- SITES-12577: Link checker transformer not rewriting links intermittently 
+- SITES-12688: Logical operator OR not properly working in Asset Finder search
+- SITES-4951: Tag-search in Page editor does not find sub-tags
+- SITES-13559: 'Is not modifiable' exception thrown when rolling out component
+- SITES-12715: Cloud service configs applied to Experience fragments folder do not persist
+- SITES-11757: Inherit rollout configuration from Parent does not get reverted back for child pages
+- SITES-12465: Arrow keys not working in Experience fragment component dialog
+- SITES-12893: Apply circular reference validation for Experience Fragments
+- SITES-13097: Not able to add experience fragments to a translation project
 
 ### Embedded Technologies {#embedded-tech-X}
 
