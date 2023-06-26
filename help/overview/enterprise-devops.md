@@ -80,7 +80,7 @@ Author instances are usually located behind the internal firewall. This is the e
 
 Content that was activated is packaged and placed in the author environment's replication queue. The replication process then transports that content to the publish environment.
 
-In order to reverse-replicate data generated in a publish environment back to the author environment, a replication listener in the author environment will poll the publish environment and retrieve such content from the publish environment's reverse-replication outbox.
+To reverse-replicate data generated in a publish environment back to the author environment, a replication listener in the author environment will poll the publish environment and retrieve such content from the publish environment's reverse-replication outbox.
 
 #### Publish {#publish}
 

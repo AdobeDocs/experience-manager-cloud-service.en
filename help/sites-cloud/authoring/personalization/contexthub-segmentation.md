@@ -65,7 +65,7 @@ The following segment comparisons are available out-of-the-box to evaluate segme
 >
 >Therefore when [creating a segment](#creating-a-new-segment), you should select a **data type** whenever the types of compared values are known. For example:
 >
->When comparing the property `profile/age`, you already know that the compared type will be **number**, so even if `profile/age` is not set, a comparison `profile/age` less-than 30 will return **false**, as you would expect.
+>When comparing the property `profile/age`, you already know that the compared type is a **number**, so even if `profile/age` is not set, a comparison `profile/age` less-than 30 is returned **false**, as you would expect.
 
 ### References {#references}
 
@@ -90,12 +90,12 @@ To define your new segment:
 
    ![New segment](../assets/contexthub-new-segment.png)
 
-   Each segment has a boost parameter that is used as a weighting factor. A higher number indicates that the segment will be selected in preference to a segment with a lower number in instances where multiple segments are valid.
+   Each segment has a boost parameter that is used as a weighting factor. A higher number indicates that the segment is selected in preference to a segment with a lower number in instances where multiple segments are valid.
 
     * Minimum value: `0`
     * Maximum value: `1000000`
 
-1. From the segments console, edit your newly-created segment to open it in the segment editor.
+1. From the segments console, edit your newly created segment to open it in the segment editor.
 1. Drag a comparison or reference to the segment editor it will appear in the default AND container.
 1. Double-click on or tap the configure option of the new reference or segment to edit the specific parameters. In this example, we are testing for people in Basel.
 
@@ -193,8 +193,8 @@ If you have many segments, they can become hard to manage as a flat list. In suc
 
 1. Provide a **Title** and a **Name** for your folder.
    * The **Title** should be descriptive.
-   * The **Name** will become the node name in the repository.
-      * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/implementing/developing/introduction/naming-conventions.md)
+   * The **Name** becomes the node name in the repository.
+      * It is automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/implementing/developing/introduction/naming-conventions.md)
       * It can be adjusted if necessary.
 
     ![Create folder](../assets/contexthub-create-folder.png)

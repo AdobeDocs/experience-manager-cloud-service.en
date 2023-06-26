@@ -62,7 +62,7 @@ The number of communication channels is increasing annually. Typically channels 
 
 However, you (probably) do not want to use exactly the same content for all channels - you need to optimize your content according to the specific channel.
 
-Content fragments allow you to:
+Content fragments let you:
 
 * Consider how to reach target audiences efficiently across channels.
 * Create and manage channel-neutral editorial content.
@@ -294,7 +294,7 @@ To use your Content Fragments for page authoring you also need:
 
 ## Example Usage {#example-usage}
 
-A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment you need to consider what will be used where.
+A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment, consider what  used where.
 
 ### WKND Sample {#wknd-sample}
 

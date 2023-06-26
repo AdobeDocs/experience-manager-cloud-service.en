@@ -11,14 +11,14 @@ This article presents important questions to consider when engaging a front-end 
 
 ## SPA Development Principles for AEM {#spa-development-principles-for-aem}
 
-Developing single page applications on AEM assumes that the front-end developer observes standard best practices when creating an SPA. If as a front end developer you follow these general best practices as well as few AEM-specific principles, your SPA will be functional with [AEM and its content-authoring capabilities](introduction.md#content-editing-experience-with-spa).
+Developing single page applications on AEM assumes that the front-end developer observes standard best practices when creating an SPA. If as a front end developer you follow these general best practices as well as a few AEM-specific principles, your SPA is functional with [AEM and its content-authoring capabilities](introduction.md#content-editing-experience-with-spa).
 
 * **[Portability](#portability)** - As with any components, the components should be built to be as portable as possible. The SPA should be built with portably and reusable components.
 * **[AEM Drives Site Structure](#aem-drives-site-structure)** - The front end developer creates components and owns their internal structure, but relies on AEM to define the content structure of the site.
 * **[Dynamic Rendering](#dynamic-rendering)** - All rendering should be dynamic.
 * **[Dynamic Routing](#dynamic-routing)** - The SPA is responsible for the routing and AEM listens to it and fetches based on it. Any routing should be dynamic as well.
 
-If you keep these principles in mind as you develop your SPA, it will be as flexible and as future proof as possible while enabling all supported AEM authoring functionality.
+If you keep these principles in mind as you develop your SPA, it becomes as flexible and as future proof as possible while enabling all supported AEM authoring functionality.
 
 If you do not need to support AEM authoring features, you may need to consider a different [SPA design model](#spa-design-models).
 
@@ -48,11 +48,11 @@ Any static routing works against the [principle of portability](#portability) an
 
 ## AEM Project Archetype {#aem-project-archetype}
 
-Any AEM project should leverage the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
+Any AEM project should use the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and uses the SPA SDK.
 
 ## SPA Design Models {#spa-design-models}
 
-If the [principles of developing SPAs in AEM](#spa-development-principles-for-aem) are followed, then your SPA will be functional with all supported AEM content authoring features.
+If the [principles of developing SPAs in AEM](#spa-development-principles-for-aem) are followed, then your SPA is functional with all supported AEM content authoring features.
 
 There may be cases however when this is not entirely necessary. The following table gives an overview of the various design models, their advantages, and their disadvantages.
 
@@ -66,7 +66,7 @@ There may be cases however when this is not entirely necessary. The following ta
   <tr>
    <td>AEM is used as a headless CMS without using the <a href="/help/implementing/developing/hybrid/reference-materials.md">SPA Editor SDK framework.</a></td>
    <td>The front end developer has full control over the app.</td>
-   <td><p>Content authors cannot leverage AEM's content authoring experience.</p> <p>The code is neither portable nor reusable if it contains static references or routing.</p> <p>Does not allow use of the template editor so the front end developer must maintain editable templates via the JCR.</p> </td>
+   <td><p>Content authors cannot use AEM's content authoring experience.</p> <p>The code is neither portable nor reusable if it contains static references or routing.</p> <p>Does not allow use of the template editor so the front end developer must maintain editable templates via the JCR.</p> </td>
   </tr>
   <tr>
    <td>The front end developer uses the SPA Editor SDK framework but only opens some areas to the content author.</td>
@@ -74,7 +74,7 @@ There may be cases however when this is not entirely necessary. The following ta
    <td><p>Content authors are restricted to a limited set of AEM's content authoring experience.</p> <p>The code risks being neither portable nor reusable if it contains static references or routing.</p> <p>Does not allow use of the template editor so the front end developer must maintain editable templates via the JCR.</p> </td>
   </tr>
   <tr>
-   <td>The project fully leverages the SPA Editor SDK and the frontend components are developed as a library and the content structure of the app is delegated to AEM.</td>
+   <td>The project fully uses the SPA Editor SDK and the frontend components are developed as a library and the content structure of the app is delegated to AEM.</td>
    <td><p>The app is reusable and portable.</p> <p>The content author can edit the app using AEM's content authoring experience.<br /> </p> <p>The SPA is compatible with the template editor.</p> </td>
    <td><p>The developer is not in control of the structure of the app and the portion of content delegated to AEM.</p> <p>The developer can still reserve areas of the app for the content that is not meant to be authored using AEM.</p> </td>
   </tr>
@@ -111,9 +111,9 @@ The following is an outline of the steps a front-end developer needs to follow w
 
    Once components are agreed and the JSON model is in place, the front-end developer is free to develop the SPA and can simply access the JSON model via `this.props.cqModel`.
 
-1. **Implement component’s `render()` method**
+1. **Implement component's `render()` method**
 
-   The front-end developer implements the `render()` method as they see fit and can use the fields of the `cqModel` property. This outputs the DOM and the HTML fragments that will be inserted into the page. This is the standard way of building an app in React.
+   The front-end developer implements the `render()` method as they see fit and can use the fields of the `cqModel` property. This outputs the DOM and the HTML fragments that are inserted into the page. This is the standard way of building an app in React.
 
 1. **Map the component to the AEM resource type via `MapTo()`**
 
@@ -123,7 +123,7 @@ The following is an outline of the steps a front-end developer needs to follow w
 
    The `Page` and `ResponsiveGrid` are good examples of classes extending the base `Container`.
 
-1. **Define the component’s `EditConfig` as parameter to `MapTo()`**
+1. **Define the component's `EditConfig` as parameter to `MapTo()`**
 
    This parameter is necessary to tell the editor how the component should be named as long at is not yet rendered or has no content to render.
 
@@ -148,7 +148,7 @@ These code blocks illustrate how your React and Angular components need nothing 
 
 ![AEM Agnostic approach](assets/aem-agnostic.png)
 
-The `MapTo` helper is the “glue” that allows the back-end and the front-end components to be matched together:
+The `MapTo` helper is the "glue" that allows the back-end and the front-end components to be matched together:
 
 * It tells the JS container (or JS paragraph system) what JS component is responsible for rendering each of the components that are present in the JSON.
 * It adds an HTML data attribute to the HTML that the JS component renders, so that the SPA Editor knows what dialog to display to the author when editing the component.
@@ -169,7 +169,7 @@ The general architecture of AEM including development, authoring, and publishing
   This is where the source for the SPA application source and component source are checked-out.
 
   * The NPM clientlib generator creates a client library from the SPA project.
-  * That library will be taken by Maven and deployed by the Maven Build plugin along with the component to the AEM Author.
+  * That library is taken by Maven and deployed by the Maven Build plugin along with the component to the AEM Author.
 
 * **AEM Author**
 

@@ -28,7 +28,7 @@ Before using the AEM Developer Tools, you need to:
 
 >[!NOTE]
 >
->On macOS, you need to right-click on **Eclipse.app** and then select **Show Package Contents** in order to find your `eclipse.ini`**.**
+>On macOS, you need to right-click on **Eclipse.app**, and then select **Show Package Contents** to find your `eclipse.ini`**.**
 
 ## How to Install the AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -50,7 +50,7 @@ When you have fulfilled the [requirements](#requirements) above, you can install
 1. Click **Next**.
 1. In the **Install Details** window, click **Next** again.
 1. Accept the license agreements and click **Finish**.
-1. Click **RestartNow** in order to restart Eclipse.
+1. Click **RestartNow** to restart Eclipse.
 
 ## The AEM Perspective {#the-aem-perspective}
 
@@ -98,7 +98,7 @@ Follow these steps to create the sample project:
 
 1. You then configure an AEM server to which Eclipse connects.
 
-   In order to use the debugger feature, you need to have started AEM in debug mode - which can be achieved, for by adding the following to the command line:
+   To use the debugger feature, you need to have started AEM in debug mode - which can be achieved, for by adding the following to the command line:
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123

@@ -341,7 +341,7 @@ Resumes eventing for this store so that events are triggered. This function defi
 
 Adds a key/value pair to the store.
 
-Triggers the `data` event only if the value for the key is different than the value that is currently stored for the key. You can optionally prevent the triggering of the `data` event.
+Triggers the `data` event only if the value for the key is different from the value that is currently stored for the key. You can optionally prevent the triggering of the `data` event.
 
 The event data includes the store name, the key, the previous value, the new value, and the action type of `set`.
 
@@ -691,7 +691,7 @@ Binds a function to an event. The function is called every time the event occurs
 
 When the `triggerForPastEvents` argument is `true`, this function returns a `boolean` value that indicates whether the event occurred in the past:
 
-* `true`: The event occurred in the past and the handler will be called.
+* `true`: The event occurred in the past and the handler is called.
 * `false`: The event has not occurred in the past.
 
 If `triggerForPastEvents` is `false`, this function returns no value.
@@ -731,7 +731,7 @@ Binds a function to an event. The function is called only once, for the first oc
 
 When the `triggerForPastEvents` argument is `true`, this function returns a `boolean` value that indicates whether the event occurred in the past:
 
-* `true`: The event occurred in the past and the handler will be called.
+* `true`: The event occurred in the past and the handler is called.
 * `false`: The event has not occurred in the past.
 
 If `triggerForPastEvents` is `false`, this function returns no value.

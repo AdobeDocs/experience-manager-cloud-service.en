@@ -45,7 +45,7 @@ Fixed background images may not be displayed as fixed when scrolling due to the 
 
 100% height is not supported on a page's body element.
 
-* A work-around is possible in order to implement a full screen body by "stretching" the body element as follows:
+* A work-around is possible to implement a full screen body by "stretching" the body element as follows:
 
 ```xml
 body {

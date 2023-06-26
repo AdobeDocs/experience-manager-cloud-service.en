@@ -33,7 +33,7 @@ In terms of authoring Content Fragments in AEM this means that:
 
 * You can use Content Fragments to author content that is not primarily intended to be directly published (1:1) on formatted pages.
 
-* The content of your Content Fragments will be structured in a predetermined manner - according to the Content Fragment Models. This simplifies access for your applications, which will further process your content. 
+* The content of your Content Fragments is structured in a predetermined manner - according to the Content Fragment Models. This simplifies access for your applications, which will further process your content. 
 
 ## GraphQL - An Overview {#graphql-overview}
 

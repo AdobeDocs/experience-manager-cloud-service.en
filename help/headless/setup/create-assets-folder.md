@@ -23,8 +23,8 @@ An administrator would only need to create folders occasionally to organize cont
 1. Tap or click **Create -&gt; Folder**.
 1. Provide a **Title** and a **Name** for your folder.
    * The **Title** should be descriptive.
-   * The **Name** will become the node name in the repository.
-      * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/implementing/developing/introduction/naming-conventions.md)
+   * The **Name** becomes the node name in the repository.
+      * It is automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/implementing/developing/introduction/naming-conventions.md)
       * It can be adjusted if necessary.
 
    ![Create folder](../assets/assets-folder-create.png)

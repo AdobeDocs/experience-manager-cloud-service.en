@@ -17,7 +17,7 @@ This document presents guidelines for developing on AEM as a Cloud Service and a
 
 Code running in AEM as a Cloud Service must be aware of the fact that it is always running in a cluster. This means that there is always more than one instance running. The code must be resilient especially as an instance might be stopped at any point in time.
 
-During the update of AEM as a Cloud Service, there will be instances with old and new code running in parallel. Therefore, old code must not break with content created by new code and new code must be able to deal with old content.
+During the update of AEM as a Cloud Service, there are instances with old and new code running in parallel. Therefore, old code must not break with content created by new code and new code must be able to deal with old content.
 
 If there is the need to identify the primary in the cluster, the Apache Sling Discovery API can be used to detect it.
 
@@ -27,13 +27,13 @@ State must not be kept in memory but persisted in the repository. Otherwise, thi
 
 ## State on the Filesystem {#state-on-the-filesystem}
 
-The instance's file system should not be used in AEM as a Cloud Service. The disk is ephemeral and will be disposed when instances are recycled. Limited use of the filesystem for temporary storage relating to the processing of single requests is possible, but should not be abused for huge files. This is because it may have a negative impact on the resource usage quota and run into disk limitations.
+The instance's file system should not be used in AEM as a Cloud Service. The disk is ephemeral and is disposed when instances are recycled. Limited use of the filesystem for temporary storage relating to the processing of single requests is possible, but should not be abused for huge files. This is because it may have a negative impact on the resource usage quota and run into disk limitations.
 
 As an example where file system usage is not supported, the Publish tier should ensure that any data that needs to be persisted is shipped off to an external service for longer term storage.
 
 ## Observation {#observation}
 
-Similar, with everything that is asynchronously happening like acting on observation events, it cannot be guaranteed to be executed locally and therefore must be used with care. This is true for both JCR events and Sling resource events. At the time a change is happening, the instance may be taken down and be replaced by a different instance. Other instances in the topology that are active at that time will be able to react to that event. In this case however, this will not be a local event and there might even be no active leader in case of an ongoing leader election when the event is issued.
+Similar, with everything that is asynchronously happening like acting on observation events, it cannot be guaranteed to be executed locally and therefore must be used with care. This is true for both JCR events and Sling resource events. At the time a change is happening, the instance may be taken down and be replaced by a different instance. Other instances in the topology that are active at that time are able to react to that event. In this case however, this will not be a local event and there might even be no active leader in case of an ongoing leader election when the event is issued.
 
 ## Background Tasks and Long Running Jobs {#background-tasks-and-long-running-jobs}
 
@@ -41,7 +41,7 @@ Code executed as a background tasks must assume that the instance it is running 
 
 To minimize the trouble, long running jobs should be avoided if possible, and they should be resumable at a minimum. For executing such jobs, use Sling Jobs, which have an at-least-once guarantee and hence if they get interrupted will get re-executed as soon as possible. But they should probably not start from the beginning again. For scheduling such jobs, it is best to use the [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler as this again ensures the at-least-once execution.
 
-The Sling Commons Scheduler should not be used for scheduling as execution cannot be guaranteed. It is just more likely that it will be scheduled.
+The Sling Commons Scheduler should not be used for scheduling as execution cannot be guaranteed. It is just more likely that it is scheduled.
 
 Similarly, with everything that is asynchronously happening, like acting on observation events, (being it JCR events or Sling resource events), can't be guaranteed to be executed and therefore must be used with care. This is already true for AEM deployments in the present.
 
@@ -65,9 +65,11 @@ Next to providing timeouts also a proper handling of such timeouts as well as un
 
 AEM as a Cloud Service only supports the Touch UI for 3rd party customer code. Classic UI is not available for customization.
 
-## Avoid Native Binaries {#avoid-native-binaries}
+## No Native Binaries or Native Libraries {#avoid-native-binaries}
 
-Code will not be able to download binaries at runtime nor modify them. For example, it will not be able to unpack `jar` or `tar` files.
+Native binaries and libraries must not be deployed to or installed in cloud environments.
+
+In addition, code should not attempt to download native binaries or native java extensions (e.g., JNI) at runtime.
 
 ## No Streaming Binaries through AEM as a Cloud Service {#no-streaming-binaries}
 
@@ -93,11 +95,11 @@ On Cloud environments, developers can download logs through Cloud Manager or use
 
 **Setting the Log Level**
 
-To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Since this is not instantaneous, be cautious about enabling verbose logs on production environments which receive a lot of traffic. In the future, it's possible that there will be mechanisms to more quickly change the log level.
+To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Because this is not instantaneous, be cautious about enabling verbose logs on production environments which receive lots of traffic. In the future, it is possible that there are mechanisms to more quickly change the log level.
 
 >[!NOTE]
 >
->In order to perform the configuration changes listed below, you need to create them on a local development environment and then push them to an AEM as a Cloud Service instance. For more information on how to do this, see [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md).
+>To perform the configuration changes listed below, you create them on a local development environment and then push them to an AEM as a Cloud Service instance. For more information on how to do this, see [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 **Activating the DEBUG Log Level**
 
@@ -186,7 +188,7 @@ Also useful for debugging, the Developer console has a link to the Explain Query
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-For Production programs, access to the Developer Console is defined by the "Cloud Manager - Developer Role" in the Admin Console, while for sandbox programs, the Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For all programs, "Cloud Manager - Developer Role" is needed for status dumps and the repository browser and users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services in order to view data from both services. For more information about setting up user permissions, see [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+For Production programs, access to the Developer Console is defined by the "Cloud Manager - Developer Role" in the Admin Console, while for sandbox programs, the Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For all programs, "Cloud Manager - Developer Role" is needed for status dumps and the repository browser and users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services to view data from both services. For more information about setting up user permissions, see [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Performance Monitoring {#performance-monitoring}
 

@@ -22,7 +22,7 @@ The name "root" is never used in a query, it's implicit.
 * **`p.hits`** - (only for the JSON servlet) select the way the hits are written as JSON, with these standard ones (extensible via the ResultHitWriter service):
   * **`simple`** - minimal items like `path`, `title`, `lastmodified`, `excerpt` (if set)
   * **`full`** - sling JSON rendering of the node, with `jcr:path` indicating the path of the hit: by default just lists the direct properties of the node, include a deeper tree with `p.nodedepth=N`, with 0 meaning the entire, infinite subtree; add `p.acls=true` to include the JCR permissions of the current session on the given result item (mappings: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
-  * **`selective`** - only properties specified in `p.properties`, which is a space separated (use `+` in URLs) list of relative paths; if the relative path has a depth `>1` these will be represented as child objects; the special `jcr:path` property includes the path of the hit
+  * **`selective`** - only properties specified in `p.properties`, which is a space separated (use `+` in URLs) list of relative paths; if the relative path has a depth `>1` these are represented as child objects; the special `jcr:path` property includes the path of the hit
 
 ### group {#group}
 
@@ -102,7 +102,7 @@ This predicate restricts the result to content fragments.
 
 This predicate compares two JCR date properties with each other. Can test if they are equal, unequal, greater than or greater-than-or-equal.
 
-This is a filtering-only predicate and cannot leverage a search index.
+This is a filtering-only predicate and cannot use a search index.
 
 #### Properties {#properties-2}
 
@@ -138,7 +138,7 @@ It does not support filtering.
 
 This predicate excludes nodes from the result where their path matches a regular expression.
 
-This is a filtering-only predicate and cannot leverage a search index.
+This is a filtering-only predicate and cannot use a search index.
 
 It does not support facet extraction.
 
@@ -163,7 +163,7 @@ It does not support facet extraction.
 
 This predicate restricts the result to items where the current session has the specified [JCR privileges.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
-This is a filtering-only predicate and cannot leverage a search index. It does not support facet extraction.
+This is a filtering-only predicate and cannot use a search index. It does not support facet extraction.
 
 #### Properties {#properties-7}
 
@@ -173,7 +173,7 @@ This is a filtering-only predicate and cannot leverage a search index. It does n
 
 This predicate finds AEM pages in a specific language. This looks at both the page language property and the page path which often includes the language or locale in a top level site structure.
 
-This is a filtering-only predicate and cannot leverage a search index.
+This is a filtering-only predicate and cannot use a search index.
 
 It supports facet extraction and provides buckets for each unique language code.
 
@@ -185,7 +185,7 @@ It supports facet extraction and provides buckets for each unique language code.
 
 This predicate checks if a node is a DAM main asset and not a sub asset. This is basically every node not inside a sub assets node. Note that this does not check for the `dam:Asset` node type. To use this predicate, simply set `mainasset=true` or `mainasset=false`. There are no further properties.
 
-This is a filtering-only predicate and cannot leverage a search index.
+This is a filtering-only predicate and cannot use a search index.
 
 It supports facet extraction and provides two buckets for main and sub assets.
 
@@ -197,7 +197,7 @@ It supports facet extraction and provides two buckets for main and sub assets.
 
 This predicate finds items that are member of a specific [sling resource collection](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
-This is a filtering-only predicate and cannot leverage a search index.
+This is a filtering-only predicate and cannot use a search index.
 
 It does not support facet extraction.
 
@@ -239,7 +239,7 @@ It does not support facet extraction.
 * **`path`** - This defines the path pattern.
   * Depending on the `exact` property, either the entire subtree will match (like appending `//*` in xpath, but note that this does not include the base path) or only an exact path matches, which can include wildcards (`*`).
     * Defaults to `true`
-<!---   * If the `self`property is set, the entire subtree including the base node will be searched.--->
+<!---   * If the `self`property is set, the entire subtree including the base node is searched.--->
 * **`exact`** - if `exact` is `true`, the exact path must match, but it can contain simple wildcards (`*`), that match names, but not `/`; if it is `false` (default) all descendants are included (optional)
 * **`flat`** - searches only the direct children (like appending `/*` in xpath) (only used if `exact` is not true, optional)
 * **`self`** - searches the subtree but includes the base node given as path (no wildcards).
@@ -261,7 +261,7 @@ It supports facet extraction and provides buckets for each unique property value
   * `equals` for exact match (default)
   * `unequals` for inequality comparison
   * `like` for using the `jcr:like` xpath function (optional)
-  * `not` for no match (for example, `not(@prop)` in xpath, value param will be ignored)
+  * `not` for no match (for example, `not(@prop)` in xpath, value param is ignored)
   * `exists` for existence check
     * `true` the property must exist
     * `false` is the same as `not` and is the default

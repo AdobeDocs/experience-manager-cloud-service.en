@@ -58,7 +58,7 @@ The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a
 
 A new analyzer has been recently added:
 
-* `content-packages-validation` - validates for well formed content syntax and structure for packages that will be installed during deployment
+* `content-packages-validation` - validates for well formed content syntax and structure for packages that is installed during deployment
 
 It is strongly recommended to update your maven project with the latest version of the analyzer or include the analyzer if you haven't yet done so. For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html).
 
@@ -66,7 +66,7 @@ It is strongly recommended to update your maven project with the latest version 
 
 ### TLS 1.0, 1.1 deprecation
 
-Starting June 30th 2022, Experience Manager as a Cloud Service will require a more secure network communication and data exchange with users systems. AEM will use exclusively Transport Layer Security (TLS), 1.2 protocol. Older TLS versions 1.0 and 1.1 will be deprecated.
+Starting June 30, 2022, Experience Manager as a Cloud Service will require a more secure network communication and data exchange with users systems. AEM intends to use exclusively Transport Layer Security (TLS), 1.2 protocol. Older TLS versions 1.0 and 1.1 are now deprecated.
 
 If you continue to use older versions of TLS as 1.0, 1.1, you could potentially lose access to Experience Manager as a Cloud Service.  
 

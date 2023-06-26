@@ -60,7 +60,7 @@ To enable the feature:
 
 >[!NOTE]
 >
->If you have configured Duplication Detector using `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` configuration file (OSGi configuration), you can continue to use it, however, Adobe recommends to use the new method.
+>If you have configured Duplication Detector using `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` configuration file (OSGi configuration), you can continue to use it, however, Adobe recommends using the new method.
  
 
 Once enabled, Experience Manager sends notifications of duplicate assets to the Experience Manager Inbox. It is an aggregated result for multiple duplicates. Users can choose to remove the assets based on the results.
@@ -479,7 +479,7 @@ You can view only one annotation at a time.
 
 >[!NOTE]
 >
->If you are selecting multiple annotations, the latest annotation will be visible on the user interface.
+>If you are selecting multiple annotations, the latest annotation is visible on the user interface.
 >
 >Multi-select is supported only for printing the annotated asset as PDF.
 

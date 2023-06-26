@@ -134,9 +134,9 @@ To design an efficient workflow between creative and marketing/line-of-business 
 
 ### Why assets are stored in DAM {#why-assets-are-stored-in-dam}
 
-Storing assets in DAM makes them easily accessible and findable. It ensures that the assets can be leveraged by numerous users across the organization or ecosystem, which includes partners, customers, and so on.
+Storing assets in DAM makes them easily accessible and findable. It ensures that the assets can be used by numerous users across the organization or ecosystem, which includes partners, customers, and so on.
 
-Most organizations choose to only store assets that are relevant to the downstream marketing/LOB processes (publishing to channels like web channel via Experience Manager Sites or other channels served by Adobe Experience Cloud - Marketing Cloud, Advertising Cloud, and measured by Analytics Cloud, providing to users/partners, and so on). In addition, organizations store assets that may be subjected to a review/approval process in DAM. This way, DAM stores mostly assets that have high chances of being leveraged, and avoids storing idle assets.
+Most organizations choose to only store assets that are relevant to the downstream marketing/LOB processes (publishing to channels like web channel via Experience Manager Sites or other channels served by Adobe Experience Cloud - Marketing Cloud, Advertising Cloud, and measured by Analytics Cloud, providing to users/partners, and so on). In addition, organizations store assets that may be subjected to a review/approval process in DAM. This way, DAM stores mostly assets that have high chances of being used, and avoids storing idle assets.
 
 Storing assets is also subject to technical and resource utilization considerations. DAM provides additional services around stored assets, including extracting metadata, versioning, generating previews/transcoding, managing references, and adding access control information. These services consume additional time and infrastructure resources.
 
@@ -202,7 +202,7 @@ Adobe Asset Link offers a good support for this use case:
 * Additionally, because the asset is in the Creative Cloud account, it is also available on other devices that the user might have (for example, can be opened or edited in a dedicated Creative Cloud mobile app), and can be shared with other Creative Cloud users for collaboration purposes.
 * When the creative user is done with the changes, they can execute a Check-in operation on that file in their Creative Cloud application, with an optional comment. The corresponding asset in Experience Manager are versioned and updated to with the new binary. Experience Manager users like Marketers or LOB users have access to major asset changes, or milestones, via Experience Manager asset timeline UI.
 
-Experience Manager desktop app provides a network share for assets opened in the native app. By default, all the changes done locally are uploaded to Experience Manager automatically after a brief while. With such a configuration, frequent saves during the work-in-progress phase would all be uploaded into Experience Manager and versioned, creating a lot of network traffic and potential scalability challenges - not to mention unnecessary versions in Experience Manager.
+Experience Manager desktop app provides a network share for assets opened in the native app. By default, all the changes done locally are uploaded to Experience Manager automatically after a brief while. With such a configuration, frequent saves during the work-in-progress phase would all be uploaded into Experience Manager and versioned, creating a large amount of network traffic and potential scalability challenges - not to mention unnecessary versions in Experience Manager.
 
 The recommended approach here is to use an option in Experience Manager desktop app to turn off automated updates, and upload changes to assets to Experience Manager manually, leveraging the upload changes action in the app's Asset Status UI.
 
@@ -216,7 +216,7 @@ You may have a requirement to simultaneously upload a larger number of files int
 
 Note that this description refers to uploading files operationally (for example, every week or with every  photoshoot ), as a normal part of desktop user's workflow. Large asset migrations are not covered here.
 
-You can leverage the following upload capabilities:
+You can use the following upload capabilities:
 
 * To upload large/hierarchical folders in bulk, use Experience Manager desktop app that provides [folder upload](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#bulk-upload-assets) functionality. You can also upload hierarchical folder structures. Assets are uploaded in background and, therefore, it is not tied to a web browser session
 * To upload a few files from a single folder, drag the files directly to the web interface or use the Create option in the Experience Manager Assets web interface.

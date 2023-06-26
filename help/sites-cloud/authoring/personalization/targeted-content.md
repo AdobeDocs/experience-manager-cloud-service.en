@@ -145,7 +145,7 @@ After you [start the targeting process](#the-targeting-process-create-target-and
 
 >[!CAUTION]
 >
->Be careful when you disable targeting for a component that is already targeted in the author instance. The respective activity will be automatically deleted from the publish instance as well.
+>Be careful when you disable targeting for a component that is already targeted in the author instance. The respective activity is automatically deleted from the publish instance as well.
 
 >[!NOTE]
 >
@@ -256,7 +256,7 @@ Perform the following procedure after [starting the targeting process](#the-targ
 
    ![Target button](../assets/targeted-target-button.png)
 
-   The component content is the offer for the Default experience. When a component is targeted, its default node will be replicated for each experience. This is needed for editing the correct content node during experience specific authoring. For these non-default experiences, either [add a custom offer](#adding-a-custom-offer) or [add a library offer](#adding-an-offer-from-an-offer-library).
+   The component content is the offer for the Default experience. When a component is targeted, its default node is replicated for each experience. This is needed for editing the correct content node during experience specific authoring. For these non-default experiences, either [add a custom offer](#adding-a-custom-offer) or [add a library offer](#adding-an-offer-from-an-offer-library).
 
 #### Creating an Offer By Adding a Target Component {#creating-an-offer-by-adding-a-target-component}
 
