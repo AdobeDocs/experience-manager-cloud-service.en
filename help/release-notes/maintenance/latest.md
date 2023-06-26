@@ -17,7 +17,6 @@ Summarized below are the continuous improvements for maintenance release 12441, 
 
 - SITES-8316: Content Policies: Cache the ContentPolicyManager
 - SITES-8769: Improve StyleImpl calls in ResponsiveGrid
-- SITES-13165: GraphQL - Ability to filter behavior for null values
 
 ### Known Issues {#known-issues-X}
 
@@ -36,6 +35,7 @@ None.
 - SITES-12465: Arrow keys not working in Experience fragment component dialog
 - SITES-12893: Apply circular reference validation for Experience Fragments
 - SITES-13097: Not able to add experience fragments to a translation project
+- SITES-13165: GraphQL: Restore default behavior for filtering of null values
 
 ### Embedded Technologies {#embedded-tech-X}
 
