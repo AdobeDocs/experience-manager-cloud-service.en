@@ -4,11 +4,11 @@ description: Edit images using [!DNL Adobe Photoshop Express] powered options an
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
 ---
-# Edit images in [!DNL Assets Essentials] {#edit-images}
+# Edit images in [!DNL Assets view] {#edit-images}
 
-[!DNL Assets Essentials] provides user-friendly editing options that are powered by [!DNL Adobe Photoshop Express]. The editing actions that are available are Spot healing, Crop and straighten, Resize image, and Adjust image.
+[!DNL Assets view] provides user-friendly editing options that are powered by [!DNL Adobe Photoshop Express]. The editing actions that are available are Spot healing, Crop and straighten, Resize image, and Adjust image.
 
-After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](/help/using/navigate-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
+After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](/help/assets/navigate-assets-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
 
 ![Options to edit an image](assets/edit-image2.png)
 
@@ -39,7 +39,7 @@ Many default options let you crop your image to the best proportions that fit va
 
 ## Resize image {#resize-image}
 
-Resizing an image to a specific size is a popular use case. [!DNL Assets Essentials] lets you quickly resize image to fit the common photo sizes by providing pre-calculated new resolutions for specific photo sizes. You can view the common photo sizes in centimeters or inches to know the dimensions. By default, the resizing method retains the aspect ratio. To manually override the aspect ratio, click ![](assets/do-not-localize/lock-closed-icon.png).
+Resizing an image to a specific size is a popular use case. [!DNL Assets view] lets you quickly resize image to fit the common photo sizes by providing pre-calculated new resolutions for specific photo sizes. You can view the common photo sizes in centimeters or inches to know the dimensions. By default, the resizing method retains the aspect ratio. To manually override the aspect ratio, click ![](assets/do-not-localize/lock-closed-icon.png).
 
 Enter the dimensions and click **[!UICONTROL Resize Image]** to resize the image. Before you save the changes as a version, you can either undo all the changes done before saving by clicking [!UICONTROL Undo] or you can change the specific step in the editing process by clicking [!UICONTROL Revert].
 
@@ -47,7 +47,7 @@ Enter the dimensions and click **[!UICONTROL Resize Image]** to resize the image
 
 ## Adjust image {#adjust-image}
 
-[!DNL Assets Essentials] lets you adjust the color, tone, contrast, and more, with just a few clicks. Click **[!UICONTROL Adjust image]** in the edit window. The following options are available in the right sidebar:
+[!DNL Assets view] lets you adjust the color, tone, contrast, and more, with just a few clicks. Click **[!UICONTROL Adjust image]** in the edit window. The following options are available in the right sidebar:
 
 * **Popular**: [!UICONTROL High Contrast & Detail], [!UICONTROL Desaturated Contrast], [!UICONTROL Aged Photo], [!UICONTROL B&W Soft], and [!UICONTROL B&W Sepia Tone].
 * **Color**: [!UICONTROL Natural], [!UICONTROL Bright], [!UICONTROL High Contrast], [!UICONTROL High Contrast & Detail], [!UICONTROL Vivid], and [!UICONTROL Matte].
@@ -63,12 +63,12 @@ TBD: Insert a video of the available social media options.
 
 ## Next Steps {#next-steps}
 
-* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets Essentials user interface
+* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface
 
-*  Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
+* Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
 
 * Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >
->* [View version history of an asset](/help/using/navigate-view.md)
+>* [View version history of an asset](/help/assets/navigate-assets-view.md)
