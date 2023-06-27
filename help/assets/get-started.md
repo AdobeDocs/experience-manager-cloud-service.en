@@ -48,7 +48,7 @@ The various digital asset management (DAM) tasks that you can accomplish using [
 | Search for assets in the repository | <ul> <li>[Search within a specific folder](/help/assets/search-assets-view.md#refine-search-results)</li> <li>[Saved searches](/help/assets/search-assets-view.md#saved-search)</li> <li>[Search for recently viewed assets](/help/assets/search-assets-view.md)</li> <li>[Full-text search](/help/assets/search-assets-view.md) |
 | Download assets | <ul> <li> [Preview asset](/help/assets/navigate-assets-view.md#preview-assets) </li> <li> [Download assets](/help/assets/manage-organize-assets-view.md#download) <li> [Download renditions](/help/assets/add-delete-assets-view.md#renditions) </li></ul> |
 | Metadata operations | <ul> <li>[View detailed metadata](/help/assets/metadata-assets-view.md) </li> <li> [Update metadata](/help/assets/metadata-assets-view.md#update-metadata)</li> <li> [Create new metadata form](/help/assets/metadata-assets-view.md#metadata-forms) </li> </ul> |
-| Integration with other solutions | <ul> <li>[Use Asset Selector in [!DNL Adobe Journey Optimizer]](/help/assets/integration-assets-view.md)</li> <li>[[!DNL Adobe Asset Link] for [!DNL Creative Cloud]](/help/assets/integration-assets-view.md)</li> <li>[Integration with [!DNL Adobe Workfront]](/help/assets/integration-assets-view.md)</li> </ul> |
+| Integration with other solutions | <ul> <li>[Use Asset Selector in [!DNL Adobe Journey Optimizer]](/help/assets/integration.md)</li> <li>[[!DNL Adobe Asset Link] for [!DNL Creative Cloud]](/help/assets/integration.md)</li> <li>[Integration with [!DNL Adobe Workfront]](/help/assets/integration.md)</li> </ul> |
 
 ## Next Steps {#next-steps}
 
