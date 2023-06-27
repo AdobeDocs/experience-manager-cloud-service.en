@@ -9,7 +9,7 @@ The content copy tool enables users to copy mutable content on-demand from their
 
 ## Introduction {#introduction}
 
-Current, real data is valuable for testing, validation, and user-acceptance purposes. The content copy tool allows you to copy content from a production AEM environment to a staging, development, or [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) environment for such testing.
+Current, real data is valuable for testing, validation, and user-acceptance purposes. The content copy tool allows you to copy content from a production AEM as a Cloud Service environment to a staging, development, or [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) environment for such testing.
 
 The content to copy is defined by a content set. A content set consists of a list of JCR paths that contain the mutable content to be copied from a source authoring service environment to a target authoring service environment within the same Cloud Manager program. The following paths are permitted in a content set.
 
