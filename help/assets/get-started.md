@@ -1,31 +1,31 @@
 ---
-title: Get started using [!DNL Assets View]
-description: How to access, login experience of, supported use cases of, and known issues of [!DNL Assets View].
+title: Get started using [!DNL Assets view]
+description: How to access, login experience of, supported use cases of, and known issues of [!DNL Assets view].
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
 ---
-# Get started using [!DNL Adobe Experience Manager Assets View] {#assets-view-get-started}
+# Get started using [!DNL Adobe Experience Manager Assets view] {#assets-view-get-started}
 
 <!-- TBD: Make links for these steps. -->
 
-Managing your digital assets using [!DNL Assets View] requires only three simple steps:
+Managing your digital assets using [!DNL Assets view] requires only three simple steps:
 
 * **Step 1**: [Upload](/help/assets/add-delete-assets-view.md) and [view](/help/assets/navigate-assets-view.md) assets.
 * **Step 2**: [Search](/help/assets/search-assets-view.md) and [download](/help/assets/manage-organize-assets-view.md#download) assets.
 * **Step 3**: [Manage and organize](/help/assets/manage-organize-assets-view.md) the assets.
 
-To use [!DNL Assets View], log in at [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets). When logging in, select `Company or School Account`. To receive access, contact your organization's administrator.
+To use [!DNL Assets view], log in at [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets). When logging in, select `Company or School Account`. To receive access, contact your organization's administrator.
 
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
 
-## Receive access to [!DNL Assets View] {#get-access}
+## Receive access to [!DNL Assets view] {#get-access}
 
 Adobe provisions the solution and adds the designated person from your organization as an administrator. The administrators can provide access to various users from the organization by using [[!DNL Admin Console]](https://helpx.adobe.com/enterprise/using/admin-console.html). For requests related to your access, contact your organization's administrator.
 
-When logging in, after providing the credentials, [!DNL Assets View] prompts you to select an account. In this case, select `Company or School Account` to proceed.
+When logging in, after providing the credentials, [!DNL Assets view] prompts you to select an account. In this case, select `Company or School Account` to proceed.
 
-## Configure [!DNL Assets View] {#configuration}
+## Configure [!DNL Assets view] {#configuration}
 
 To open preferences, click on the avatar in the upper-right corner of the user interface. You can switch between the light and the dark themes in the solution preferences.
 
@@ -35,9 +35,9 @@ To change your [!UICONTROL Experience Cloud preferences], Click [!UICONTROL Pref
 
 ![Preference to switch dark and light theme](assets/theme-change.png)
 
-## [!DNL Assets View] use cases {#use-cases}
+## [!DNL Assets view] use cases {#use-cases}
 
-The various digital asset management (DAM) tasks that you can accomplish using [!DNL Assets View] are below.
+The various digital asset management (DAM) tasks that you can accomplish using [!DNL Assets view] are below.
 
 | User tasks | Functionality and how-to information |
 |-----|------|
@@ -48,13 +48,12 @@ The various digital asset management (DAM) tasks that you can accomplish using [
 | Search for assets in the repository | <ul> <li>[Search within a specific folder](/help/assets/search-assets-view.md#refine-search-results)</li> <li>[Saved searches](/help/assets/search-assets-view.md#saved-search)</li> <li>[Search for recently viewed assets](/help/assets/search-assets-view.md)</li> <li>[Full-text search](/help/assets/search-assets-view.md) |
 | Download assets | <ul> <li> [Preview asset](/help/assets/navigate-assets-view.md#preview-assets) </li> <li> [Download assets](/help/assets/manage-organize-assets-view.md#download) <li> [Download renditions](/help/assets/add-delete-assets-view.md#renditions) </li></ul> |
 | Metadata operations | <ul> <li>[View detailed metadata](/help/assets/metadata-assets-view.md) </li> <li> [Update metadata](/help/assets/metadata-assets-view.md#update-metadata)</li> <li> [Create new metadata form](/help/assets/metadata-assets-view.md#metadata-forms) </li> </ul> |
-| Integration with other solutions | <ul> <li>[Use Asset Selector in [!DNL Adobe Journey Optimizer]](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/integration-with-other-solutions/integration.html)</li> <li>[[!DNL Adobe Asset Link] for [!DNL Creative Cloud]](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/integration-with-other-solutions/integrate-with-creative-cloud.html)</li> <li>[Integration with [!DNL Adobe Workfront]](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/integration-with-other-solutions/integrate-with-workfront.html)</li> </ul> |
 
 ## Next Steps {#next-steps}
 
-* [Watch a video to get started with Assets View](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html)
+* [Watch a video to get started with Assets view](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html)
 
-* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets View user interface
+* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface
 
 * Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
 
