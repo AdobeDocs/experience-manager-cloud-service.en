@@ -45,7 +45,7 @@ DAM librarians, developers, and super-users may continue to use the Admin view o
 
 ![add-tags](assets/newui-overview.svg)
 
-For information on how to access the Assets view and some of the simplications that it offers over Admin view, see [Assets View](). 
+For information on how to access the Assets view and some of the simplications that it offers over Admin view, see Assets view. 
 
 ## New Assets capabilities {#whats-new-assets}
 
