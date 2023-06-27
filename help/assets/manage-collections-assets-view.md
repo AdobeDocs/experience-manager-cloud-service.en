@@ -1,6 +1,6 @@
 ---
 title: Manage collections
-description: A collection is a set of assets within Experience Manager Assets Essentials. Use collections to share assets between users.
+description: A collection is a set of assets within Experience Manager Assets view. Use collections to share assets between users.
 exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
 ---
 # Manage collections {#manage-collections}
@@ -8,9 +8,9 @@ exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
 >[!CONTEXTUALHELP]
 >id="assets_collections"
 >title="Manage Collections"
->abstract="A collection is a set of assets, folders, or other collections within Assets Essentials. Use collections to share assets between users. Unlike folders, a collection can include assets from different locations. You can share multiple collections with a user. Each collection contains references to assets. The referential integrity of assets is maintained across collections."
+>abstract="A collection is a set of assets, folders, or other collections within Assets view. Use collections to share assets between users. Unlike folders, a collection can include assets from different locations. You can share multiple collections with a user. Each collection contains references to assets. The referential integrity of assets is maintained across collections."
 
-A collection is a set of assets, folders, or other collections within Adobe Experience Manager Assets Essentials. Use collections to share assets between users.
+A collection is a set of assets, folders, or other collections within Adobe Experience Manager Assets view. Use collections to share assets between users.
 
 Unlike folders, a collection can include assets from different locations. 
 
@@ -86,13 +86,13 @@ To remove assets from a collection:
 
 ## Manage a Smart Collection {#manage-smart-collection}
 
-Save your search results as a Smart Collection to dynamically update the collection contents. If there are assets added to the Assets Essentials repository that fit the search criteria defined while creating the Smart Collection, the contents of the Smart Collection get updated automatically when you open a Smart Collection.
+Save your search results as a Smart Collection to dynamically update the collection contents. If there are assets added to the Assets view repository that fit the search criteria defined while creating the Smart Collection, the contents of the Smart Collection get updated automatically when you open a Smart Collection.
 
 ### Create a Smart Collection {#create-smart-collection}
 
 To create a Smart Collection:
 
-1. Click **[!UICONTROL Filter]** and [define the search criteria](search.md##refine-search-results).
+1. Click **[!UICONTROL Filter]** and [define the search criteria](search-assets-view.md#refine-search-results).
 
 1. Click **[!UICONTROL Save as]** and then select **[!UICONTROL Smart Collection]**.
 
@@ -112,7 +112,7 @@ To edit a Smart Collection:
 
 1. Click **[!UICONTROL Edit Smart Collection]**.
 
-1. On the [!UICONTROL Edit Smart Collection Filters] dialog box, [update the search criteria](search.md##refine-search-results) for the Smart Collection.
+1. On the [!UICONTROL Edit Smart Collection Filters] dialog box, [update the search criteria](search-assets-view.md#refine-search-results) for the Smart Collection.
 
 1. Click **[!UICONTROL Save]**.
 
@@ -120,7 +120,7 @@ To edit a Smart Collection:
 
 ## Manage access to a Private collection {#manage-collection-access}
 
-The permission management for collections function in the same manner as folders in [!DNL Assets Essentials]. Administrators can manage the access levels for collections available in the repository. As an administrator, you can create user groups and assign permissions to those groups to manage access levels. You can also delegate the permission management privileges to user groups at the collection-level.
+The permission management for collections function in the same manner as folders in [!DNL Assets view]. Administrators can manage the access levels for collections available in the repository. As an administrator, you can create user groups and assign permissions to those groups to manage access levels. You can also delegate the permission management privileges to user groups at the collection-level.
 
 For more information, see [Manage permissions for folders and collections](manage-permissions.md).
 
@@ -130,11 +130,11 @@ For more information, see [Manage permissions for folders and collections](manag
 
 ## Search a collection {#search-collections}
 
-Click **[!UICONTROL Collections]** in the left rail and use the Search box to specify a text as the criteria to search for a collection. [!DNL Assets Essentials] uses the specified text to search collection names, metadata including tags defined for a collection and returns appropriate results.
+Click **[!UICONTROL Collections]** in the left rail and use the Search box to specify a text as the criteria to search for a collection. [!DNL Assets view] uses the specified text to search collection names, metadata including tags defined for a collection and returns appropriate results.
 
 >[!NOTE]
 >
->Assets Essentials performs search in collections available at the root level. It does not perform search in assets and folders available in collections.
+>Assets view performs search in collections available at the root level. It does not perform search in assets and folders available in collections.
 
 -->
 
@@ -152,11 +152,11 @@ To view and edit collection metadata:
 
 ## Share links for collections {#share-collection-links}
 
-[!DNL Assets Essentials] enables you to generate a link and share collections and assets within collections with external stakeholders, who do not have access to the [!DNL Assets Essentials] application. You can define an expiration date for the link and then share it with others using your preferred communication method like email or messaging services. Recipients of the link can preview assets and download them.
+[!DNL Assets view] enables you to generate a link and share collections and assets within collections with external stakeholders, who do not have access to the [!DNL Assets view] application. You can define an expiration date for the link and then share it with others using your preferred communication method like email or messaging services. Recipients of the link can preview assets and download them.
 
 ![Share link for assets](assets/share-link-collections.png)
 
-For more information on how to share collection links with external stakeholders, see [Share links for assets](share-links-for-assets.md).
+For more information on how to share collection links with external stakeholders, see [Share links for assets](help/assets/share-links-for-assets-view.md).
 
 ## Download a collection {#download-collection}
 
@@ -182,8 +182,8 @@ To delete a collection:
 
 ## Next Steps {#next-steps}
 
-* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets Essentials user interface
+* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface
 
-*  Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
+* Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
 
 * Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)

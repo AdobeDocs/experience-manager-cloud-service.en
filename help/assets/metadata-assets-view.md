@@ -1,6 +1,6 @@
 ---
 title: Manage metadata
-description: Manage metadata of assets in [!DNL Assets Essentials]
+description: Manage metadata of assets in [!DNL Assets view]
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
@@ -47,9 +47,9 @@ Smart tags also contain a confidence score as a percentage. It indicates the con
 
 ## Add or update keywords {#manually-tag}
 
-You may add more tags to your assets, in addition to the Smart Tags that are added automatically using the [!DNL Adobe Sensei] smart service. Open an asset for preview, click [!UICONTROL Tags], and type the desired keywords in the [!UICONTROL Keywords] field. To add the tag, press Return. [!DNL Assets Essentials] indexes the keyword in near real time and your team can soon search the updated assets using the new keywords.
+You may add more tags to your assets, in addition to the Smart Tags that are added automatically using the [!DNL Adobe Sensei] smart service. Open an asset for preview, click [!UICONTROL Tags], and type the desired keywords in the [!UICONTROL Keywords] field. To add the tag, press Return. [!DNL Assets view] indexes the keyword in near real time and your team can soon search the updated assets using the new keywords.
 
-You can also remove tags from the [!UICONTROL Smart Tags] section that are automatically added by [!DNL Assets Essentials] to all the uploaded assets.
+You can also remove tags from the [!UICONTROL Smart Tags] section that are automatically added by [!DNL Assets view] to all the uploaded assets.
 
 ## Taxonomy management {#taxonomy-management}
 
@@ -62,21 +62,21 @@ Tags can also be nested into a hierarchy to support relationships like category 
 >title="Metadata Forms"
 >abstract="[!DNL Experience Manager Assets] provides many standard metadata fields by default. Organizations have additional metadata needs and require more metadata fields to add business-specific metadata. Metadata forms let businesses add custom metadata fields to an asset's Details page. The business-specific metadata improves the governance and discovery of its assets."
 
-Assets Essentials provides many standard metadata fields by default. Organizations have additional metadata needs and need more metadata fields to add business-specific metadata. Metadata forms let businesses add custom metadata fields to an asset's [!UICONTROL Details] page. The business-specific metadata improves the governance and discovery of its assets. You can create forms from scratch or repurpose an existing form.
+Assets view provides many standard metadata fields by default. Organizations have additional metadata needs and need more metadata fields to add business-specific metadata. Metadata forms let businesses add custom metadata fields to an asset's [!UICONTROL Details] page. The business-specific metadata improves the governance and discovery of its assets. You can create forms from scratch or repurpose an existing form.
 
-You can configure metadata forms for different types of assets (different MIME types). Use the same form name as the file's MIME type. Assets Essentials automatically match uploaded assets MIME type to the name of the form and updates the metadata for the uploaded assets based on the form fields.
+You can configure metadata forms for different types of assets (different MIME types). Use the same form name as the file's MIME type. Assets view automatically match uploaded assets MIME type to the name of the form and updates the metadata for the uploaded assets based on the form fields.
 
 For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contain metadata fields as defined in the form.
 
-Assets Essentials uses the following sequence to search for existing metadata form names to apply the metadata fields to the uploaded assets of a particular type:
+Assets view uses the following sequence to search for existing metadata form names to apply the metadata fields to the uploaded assets of a particular type:
 
 MIME subtype > MIME type > `default` form > Out-of-the-box form
 
-For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contains metadata fields as defined in the form. If a metadata form by the name `PDF` or `pdf` does not exist, Assets Essentials match if there is a metadata form by the name `application`. If there is a metadata form by the name `application`, the uploaded PDF documents contain metadata fields as defined in the form. If Assets Essentials still does not find a matching metadata form, it searches for the `default` metadata form to apply metadata fields defined in the form to the uploaded PDF documents. If none of these steps work, Assets Essentials applies metadata fields defined in the out-of-the-box form to all the uploaded PDF documents.
+For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contains metadata fields as defined in the form. If a metadata form by the name `PDF` or `pdf` does not exist, Assets view match if there is a metadata form by the name `application`. If there is a metadata form by the name `application`, the uploaded PDF documents contain metadata fields as defined in the form. If Assets view still does not find a matching metadata form, it searches for the `default` metadata form to apply metadata fields defined in the form to the uploaded PDF documents. If none of these steps work, Assets view applies metadata fields defined in the out-of-the-box form to all the uploaded PDF documents.
 
 >[!IMPORTANT] 
 >
->The new metadata form for a specific file type completely replaces the default metadata form that [!DNL Assets Essentials] provides. If you delete or rename a metadata form, the default metadata fields are again available for new assets.
+>The new metadata form for a specific file type completely replaces the default metadata form that [!DNL Assets view] provides. If you delete or rename a metadata form, the default metadata fields are again available for new assets.
 
 To create a metadata form, follow these steps:
 
@@ -130,11 +130,11 @@ Below is an overview of each property type and how they are stored.
 
 ## Next Steps {#next-steps}
 
-* [Watch a video to manage metadata forms in Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
+* [Watch a video to manage metadata forms in Assets view](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
-* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets Essentials user interface
+* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface
 
-*  Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
+* Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
 
 * Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
 
