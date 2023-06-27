@@ -1,6 +1,6 @@
 ---
-title: Manage reports in Assets Essentials
-description: Access the data in the reports section of Assets Essentials to assess product and feature usage and derive insights on key success metrics.
+title: Manage reports in Assets view
+description: Access the data in the reports section of Assets view to assess product and feature usage and derive insights on key success metrics.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
 ---
 # Manage reports {#manage-reports}
@@ -8,31 +8,31 @@ exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
 >[!CONTEXTUALHELP]
 >id="assets_reports"
 >title="Reports"
->abstract="Asset reporting provides administrators with visibility into activity of the Adobe Experience Manager Assets Essentials environment. This data provides useful information about how users interact with content and the product. All users who are assigned to the Administrators product profile can access the Insights dashboard or create user-defined reports."
+>abstract="Asset reporting provides administrators with visibility into activity of the Adobe Experience Manager Assets view environment. This data provides useful information about how users interact with content and the product. All users who are assigned to the Administrators product profile can access the Insights dashboard or create user-defined reports."
 
-Asset reporting provides administrators with visibility into activity of the Adobe Experience Manager Assets Essentials environment. This data provides useful information about how users interact with content and the product. 
+Asset reporting provides administrators with visibility into activity of the Adobe Experience Manager Assets view environment. This data provides useful information about how users interact with content and the product. 
 
 ## Access reports {#access-reports}
 
-All users who are assigned to the [Assets Essentials Administrators product profile](deploy-administer.md) can access the Insights dashboard or create user-defined reports in Assets Essentials.
+All users who are assigned to the [Assets view Administrators product profile](deploy-administer.md) can access the Insights dashboard or create user-defined reports in Assets view.
 
 ## View Insights {#view-live-statistics}
 
-Assets Essentials enables you to view real-time data for your Assets Essentials environment with the Insights dashboard. You can view real-time event metrics during the last 30 days or for the last 12 months. 
+Assets view enables you to view real-time data for your Assets view environment with the Insights dashboard. You can view real-time event metrics during the last 30 days or for the last 12 months. 
 
 ![Toolbar options when you select an asset](assets/assets-essentials-live-statistics.png)
 
 Click **[!UICONTROL Insights]** available in the left navigation pane to view the following automatically generated charts:
 
-* **Downloads**: The number of assets downloaded from the Assets Essentials environment in the last 30 days or 12 months represented using a line chart.
+* **Downloads**: The number of assets downloaded from the Assets view environment in the last 30 days or 12 months represented using a line chart.
 
-* **Uploads**: The number of assets uploaded to the Assets Essentials environment in the last 30 days or 12 months represented using a line chart.
+* **Uploads**: The number of assets uploaded to the Assets view environment in the last 30 days or 12 months represented using a line chart.
 
-* **Top Searches**: View top searched terms along with the number of times those terms are searched within your Assets Essentials environment in the last 30 days or 12 months represented in a tabular format.
+* **Top Searches**: View top searched terms along with the number of times those terms are searched within your Assets view environment in the last 30 days or 12 months represented in a tabular format.
 
 <!--
 
-* **Storage usage**: The storage usage, in gigabytes (GB), for the Assets Essentials environment, for the last 30 days or 12 months represented using a bar chart.
+* **Storage usage**: The storage usage, in gigabytes (GB), for the Assets view environment, for the last 30 days or 12 months represented using a bar chart.
 
 -->
 
@@ -49,9 +49,10 @@ To create a Download report:
 1. Select the folder path, which comprises the assets to execute the report on, using the **[!UICONTROL Select Folder Path]** field.
 
 1. Select the date interval for the report.
+
    >[!NOTE]
    >
-   > Assets Essentials converts all local time zones to Coordinated Universal Time (UTC).
+   > Assets view converts all local time zones to Coordinated Universal Time (UTC).
 
 1. In the [!UICONTROL Columns] tab, select the column names that you need to display in the report.
 
@@ -73,7 +74,7 @@ The following table explains the use of all columns that you can add to the repo
      </tr>
      <tr>
       <td>Path</td>
-      <td>The folder path where the asset is available in Assets Essentials.</td>
+      <td>The folder path where the asset is available in Assets view.</td>
      </tr>
      <tr>
       <td>MIME Type</td>
@@ -97,7 +98,7 @@ The following table explains the use of all columns that you can add to the repo
      </tr>
      <tr>
       <td>Creation Date</td>
-      <td>The date when the asset is uploaded to Assets Essentials.</td>
+      <td>The date when the asset is uploaded to Assets view.</td>
      </tr>
      <tr>
       <td>Modified Date</td>
@@ -148,7 +149,7 @@ The following table explains the use of all columns that you can add to the repo
      </tr>
      <tr>
       <td>Path</td>
-      <td>The folder path where the asset is available in Assets Essentials.</td>
+      <td>The folder path where the asset is available in Assets view.</td>
      </tr>
      <tr>
       <td>MIME Type</td>
@@ -164,7 +165,7 @@ The following table explains the use of all columns that you can add to the repo
      </tr>
      <tr>
       <td>Creation Date</td>
-      <td>The date when the asset is uploaded to Assets Essentials.</td>
+      <td>The date when the asset is uploaded to Assets view.</td>
      </tr>
      <tr>
       <td>Modified Date</td>
