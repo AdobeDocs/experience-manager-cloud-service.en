@@ -1,5 +1,5 @@
 ---
-title: My Workspace for Assets
+title: My Workspace for Assets view
 description: My Workspace is a page that provides customizable visual modules for convenient access to key areas of the Assets user interface and information that is most relevant to the user.
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
 ---
@@ -42,7 +42,7 @@ To pin an asset, a folder, or a collection, select the item and click **[!UICONT
 
 Administrators can view a summary of the number of downloads and uploads performed on the Assets environment during the last 30 days. You can click **[!UICONTROL View all]** to quickly navigate to the Insights page for more detailed dashboards.
 
-You can also view top searched terms along with the number of times those terms are searched within your Assets Essentials deployment using the **Insights** section of My Workspace. You can also navigate to detailed Insights to view top searches during the last 30 days or 12 months.
+You can also view top searched terms along with the number of times those terms are searched within your Assets view deployment using the **Insights** section of My Workspace. You can also navigate to detailed Insights to view top searches during the last 30 days or 12 months.
 
 ![Insights in Workspace](assets/insights.png)
 
@@ -60,7 +60,7 @@ Displays the list of tasks currently assigned to you in the **[!UICONTROL My Tas
 
 Displays assorted views of assets including the list of assets that you have recently viewed. You can select to display assets in the widget in a List View, Grid View, Gallery View, or Waterfall View and sort the assets by name, size, and modified date. You can also select an asset to view the asset details or remove it from the list of recently viewed assets.
 
-The **[!UICONTROL Top Downloads]** tab displays the top ten most downloaded assets available in your Assets Essentials environment. You can select to display assets in the List View or Grid View. Both views display the format type and the number of downloads for each asset. You can also select an asset and click **[!UICONTROL Details]** to view its properties. 
+The **[!UICONTROL Top Downloads]** tab displays the top ten most downloaded assets available in your Assets view environment. You can select to display assets in the List View or Grid View. Both views display the format type and the number of downloads for each asset. You can also select an asset and click **[!UICONTROL Details]** to view its properties. 
 
 ![Content widget in Workspace](assets/workspace-content.png)
 
