@@ -1,15 +1,15 @@
 ---
 title: Manage notifications
-description: Monitor the operations performed on the assets or folders available in the repository using the Assets Essentials notifications.
+description: Monitor the operations performed on the assets or folders available in the repository using the Assets view notifications.
 exl-id: 5c0039a2-caa2-4b55-b963-0e7e9e542c47
 ---
 # Watch assets, folders, and collections {#watch-assets-folders}
 
-Assets Essentials notifications enable you to monitor the operations performed on the assets, folders, or collections available in the repository. You need to select and subscribe to the content for which the notifications are sent to you. You can also configure the categories for which the notifications are sent to you.
+Assets view notifications enable you to monitor the operations performed on the assets, folders, or collections available in the repository. You need to select and subscribe to the content for which the notifications are sent to you. You can also configure the categories for which the notifications are sent to you.
 
 ## Subscribe to notification categories {#subscribe-to-notification-categories}
 
-You can choose and subscribe from a list of categories to receive notifications. Assets Essentials sends the notifications to you only for the categories that you select from the available options:
+You can choose and subscribe from a list of categories to receive notifications. Assets view sends the notifications to you only for the categories that you select from the available options:
 
 <table>
     <tbody>
@@ -54,18 +54,18 @@ You can choose and subscribe from a list of categories to receive notifications.
 
 To subscribe to the notification categories:
 
-1. Click ![bell icon](assets/bell-icon.svg) at the right end of the menu bar on the Assets Essentials user interface.
+1. Click ![bell icon](assets/bell-icon.svg) at the right end of the menu bar on the Assets view user interface.
 
 1. Click ![settings icon](assets/settings-icon.svg) to view the [!UICONTROL Experience Cloud preferences] page.
 
 1. Click the **[!UICONTROL Notifications]** option available in the left pane.
 
-1. In the **[!UICONTROL Notifications]** section, navigate to the [!UICONTROL Assets Essentials] section and ensure that the toggle option is switched to the ON state.
+1. In the **[!UICONTROL Notifications]** section, navigate to the [!UICONTROL Assets view] section and ensure that the toggle option is switched to the ON state.
 
-   ![Notifications in Assets Essentials](assets/enable-notifications.png)
+   ![Notifications in Assets view](assets/enable-notifications.png)
 
 1. Click **[!UICONTROL Customize]** to view the notification categories.
-   ![Notifications in Assets Essentials](assets/enable-notification-categories.png)
+   ![Notifications in Assets view](assets/enable-notification-categories.png)
 
 1. Select the notification categories for which you need to be notified.
 
@@ -76,22 +76,22 @@ After [subscribing to the notification categories](#subscribe-to-notification-ca
 >[!NOTE]
 >
 >* For **[!UICONTROL Requests]** and **[!UICONTROL Assigned to me]** notification categories, you do not need to subscribe to the content after subscribing to the notification categories. Notifications are automatically sent to you for requests created by you and when a task is assigned to you.
->* Assets Essentials sends notifications only when other users perform actions on the subscribed content. You do not receive notifications for the actions that you perform on the subscribed content.
+>* Assets view sends notifications only when other users perform actions on the subscribed content. You do not receive notifications for the actions that you perform on the subscribed content.
 
 To subscribe to the content, select the folder, asset, or collection that you need to subscribe to and click **[!UICONTROL Watch]**.
 
-Assets Essentials displays a success message. You can click **[!UICONTROL Go to notification preferences]** available on the success message to edit your [subscription to notification categories](#subscribe-to-notification-categories).
+Assets view displays a success message. You can click **[!UICONTROL Go to notification preferences]** available on the success message to edit your [subscription to notification categories](#subscribe-to-notification-categories).
 
-![Notifications in Assets Essentials](assets/watch-assets.png)
+![Notifications in Assets view](assets/watch-assets.png)
 
-Assets Essentials now sends notifications for the subscribed categories. You can also select multiple assets, folders, or collections and click **[!UICONTROL Watch]** to save time. However, if you select multiple entities out of which some of them have already been subscribed, then the **[!UICONTROL Watch]** option does not display.
+Assets view now sends notifications for the subscribed categories. You can also select multiple assets, folders, or collections and click **[!UICONTROL Watch]** to save time. However, if you select multiple entities out of which some of them have already been subscribed, then the **[!UICONTROL Watch]** option does not display.
 
 Similarly, to unsubscribe, select the asset, folder, or collection that you have subscribed for and click **[!UICONTROL Unwatch]**.
 
 ## View notifications {#view-notifications}
 
-The notifications appear at the right end of the menu bar on the Assets Essentials user interface.
+The notifications appear at the right end of the menu bar on the Assets view user interface.
 
-![Notifications in Assets Essentials](assets/notifications-assets-essentials.png)
+![Notifications in Assets view](assets/notifications-assets-essentials.png)
 
-When you click a notification, Assets Essentials navigates you to the appropriate asset or folder that is referred to in the notification.
+When you click a notification, Assets view navigates you to the appropriate asset or folder that is referred to in the notification.

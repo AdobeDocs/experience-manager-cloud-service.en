@@ -52,18 +52,19 @@ Execute the following steps to create a Namespace:
 
     <!--
     >[!NOTE]
+    >
     >You can use `Name` as a primary key if you are using any other metadata management tool is the source of truth for taxonomy values, you can use the name as a primary key.
     >
     -->
 
-1.  Click `Save`.
+1. Click `Save`.
 
 ## Adding Tags to a Namespace {#adding-tags-to-namespace}
 
 Execute the following steps to add tags to a Namespace:
 
-1.  Go to `Taxonomy Management`.
-1.  Select the Namespace and click `Create` to create the tag at the top level under the Namespace. If you need to create a subtag under a tag that exists in a Namespace, select the tag and then click `Create`. 
+1. Go to `Taxonomy Management`.
+1. Select the Namespace and click `Create` to create the tag at the top level under the Namespace. If you need to create a subtag under a tag that exists in a Namespace, select the tag and then click `Create`. 
 ![Hierarchy of Tags](assets/hierarchy-of-tags.png)
 
     In this example, the image on the left represents the tag directly under the Namespace `automobile-four-wheeler` displayed in the `Path` field. The image on the right is an example of subtags added within a tag, as there are more tag names, `jeep` and `jeep-meridian`, displayed in the `Path` field in addition to the Namespace.
@@ -92,15 +93,15 @@ To create a standard tag, click `Create Tag` at the root-level. Specify title, n
 
 In case you store your tags under the wrong hierarchy or your taxonomy changes over the time, you can move the selected tags to maintain data integrity. The following conditions must be considered while moving tags:
 
-*   Tags can only move beneath existing namespaces or within an existing tag hierarchy.
-*   Tags cannot be moved to the root to become a namespace.
-*   Moving a parent tag also moves all child tags stored in the hierarchy.
+* Tags can only move beneath existing namespaces or within an existing tag hierarchy.
+* Tags cannot be moved to the root to become a namespace.
+* Moving a parent tag also moves all child tags stored in the hierarchy.
 
 Perform the following steps to move tags from one location to another:
 
-1.  Select the tag or the entire hierarchy of tags under the appropriate namespace and click `Move`.
-1.  On the Move dialog, select the new destination tag or Namespace using the `Select Tag` section.
-1.  Click `Save`. The tag displays at its new location.
+1. Select the tag or the entire hierarchy of tags under the appropriate namespace and click `Move`.
+1. On the Move dialog, select the new destination tag or Namespace using the `Select Tag` section.
+1. Click `Save`. The tag displays at its new location.
 
 ## Editing Tags {#editing-tags}
 
@@ -137,12 +138,12 @@ Watch this quick video to see how to add the Tags component to your metadata for
 
 ### Adding Tags to Assets {#adding-tags-to-assets}
 
-1.  Go to Asset details page and navigate to the `Tags` section of Metadata form.
-1.  Select the tag picker icon which is next to the Tags field or start typing in a tag name to see suggested results. 
+1. Go to Asset details page and navigate to the `Tags` section of Metadata form.
+1. Select the tag picker icon which is next to the Tags field or start typing in a tag name to see suggested results. 
 
     ![Tagging-assets](assets/adding-tags-to-assets.png)
 
-1.  Select one or more tags. The subtag is selected automatically along with the parent tag or namespace.
+1. Select one or more tags. The subtag is selected automatically along with the parent tag or namespace.
 Tags modified in the Assets view are applied in the Admin view as well.
 
 ## Limitations {#limitations}
