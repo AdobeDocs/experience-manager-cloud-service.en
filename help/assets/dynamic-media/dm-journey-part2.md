@@ -193,7 +193,7 @@ When you move the mouse pointer over the shoe, you zoom in to that image, and yo
 
 As you consider living as a consumer, or as you work in your day-to-day role, and as you go to different websites, you see things like this. Think about how that's being done, and how you can use the power of Dynamic Media in your own work and on your company's website. 
 
-You just read a little bit about image sets and viewers. Let's look at a couple of other viewers and try them out on single assets. To reset the viewer, click the **[!UICONTROL Refresh]** button in the lower-left corner.
+You just read about image sets and viewers. Let's look at a couple of other viewers and try them out on single assets. To reset the viewer, click the **[!UICONTROL Refresh]** button in the lower-left corner.
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 

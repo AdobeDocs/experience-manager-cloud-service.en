@@ -45,7 +45,7 @@ You will see a new sandbox program card on the landing page with a status indica
 
 You can view the detail of your sandbox setup as well as access the environment (once available) by viewing the program overview page.
 
-1. From the Cloud Manager landing page, click the ellipsis button on your newly-created program.
+1. From the Cloud Manager landing page, click the ellipsis button on your newly created program.
 
    ![Accessing program overview](assets/program-overview-sandbox.png)
 

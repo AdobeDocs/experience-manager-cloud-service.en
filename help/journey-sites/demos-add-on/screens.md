@@ -57,7 +57,7 @@ The We.Cafe coffee shop is comprised of three shops in three locations in the US
 >
 >The kiosk is not included in the current version of the demo. It will be included in a future version.
 
-The New-York location is assumed to be in a smaller shop that does not have a lot of space, and as such:
+The New-York location is assumed to be in a smaller shop that does not have much space, and as such:
 
 * The menu board only has two vertical panels instead of three for San Francisco and San Jose
 * The entrance display is positioned vertically instead of horizontally

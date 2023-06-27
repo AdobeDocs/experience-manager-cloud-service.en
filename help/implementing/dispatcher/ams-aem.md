@@ -289,7 +289,7 @@ This will start the container and expose Apache on local port 8080.
 ### Use your new Dispatcher configuration
 
 Congratulations! If the validator no longer reports any issue and the
-docker container starts up without any failures or warnings, you're
+docker container starts up without any failures or warnings, you are
 ready to move your configuration to a `dispatcher/src` subdirectory
 of your git repository.
 

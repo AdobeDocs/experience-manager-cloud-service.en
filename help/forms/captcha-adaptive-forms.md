@@ -23,11 +23,11 @@ CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Ap
 >* CAPTCHA in Adaptive Forms is not supported in offline mode on [!DNL AEM Forms] app.
 >
 
-## Configure ReCAPTCHA service by Google {#google-recaptcha}
+## Configure reCAPTCHA service by Google {#google-reCAPTCHA}
 
 Form authors can use the reCAPTCHA service by Google to implement CAPTCHA in Adaptive Forms. It offers advanced CAPTCHA capabilities to protect your site. For more information on how reCAPTCHA works, see [Google reCAPTCHA](https://developers.google.com/recaptcha/).
 
-![Recaptcha](assets/recaptcha_new.png)
+![reCAPTCHA](assets/recaptcha_new.png)
 
 To implement the reCAPTCHA service in [!DNL AEM Forms]:
 
@@ -62,30 +62,27 @@ To use CAPTCHA in Adaptive Forms:
 
 1. Open an Adaptive Form in edit mode.
 
-   >[!NOTE]
-   >
-   >Ensure that the configuration container selected when creating the Adaptive Form contains the reCAPTCHA cloud service. You can also edit Adaptive Form properties to change the configuration container associated with the form.
+    >[!NOTE]
+    >
+    > Ensure that the configuration container selected when creating the Adaptive Form contains the reCAPTCHA cloud service. You can also edit Adaptive Form properties to change the configuration container associated with the form.
 
 1. From the component browser, drag-drop the **[!UICONTROL Captcha]** component onto the Adaptive Form.
 
-   >[!NOTE]
-   >
-   >Using more than one Captcha component in an Adaptive Form is not supported. Also, it is not recommended to use CAPTCHA in a panel marked for lazy loading or in a fragment.
+    >[!NOTE]
+    >
+    > * Using more than one Captcha component in an Adaptive Form is not supported. Also, it is not recommended to use CAPTCHA in a panel marked for lazy loading or in a fragment.
+    > * Captcha is time-sensitive and expires in about a minute. Therefore, it is recommended to place the Captcha component just before the Submit button in the Adaptive Form.
 
-   >[!NOTE]
-   >
-   >Captcha is time-sensitive and expires in about a minute. Therefore, it is recommended to place the Captcha component just before the Submit button in the Adaptive Form.
-
-1. Select the Captcha component you added and tap ![cmppr](assets/configure-icon.svg) to edit its properties.
+1. Select the Captcha component that you added and tap ![cmppr](assets/configure-icon.svg) to edit its properties.
 1. Specify a title for the CAPTCHA widget. The default value is **[!UICONTROL Captcha]**. Select **[!UICONTROL Hide title]** if you do not want title to appear.
-1. From the **[!UICONTROL Captcha service]** drop-down, select **[!UICONTROL reCaptcha]** to enable reCAPTCHA service if you configured it as described in [ReCAPTCHA service by Google](#google-recaptcha). Select a configuration from the Settings drop-down.
-1. Select the type as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. You can also select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity. The protected by reCAPTCHA badge, displayed below, is displayed on the protected forms.  
+1. From the **[!UICONTROL Captcha service]** drop-down, select **[!UICONTROL reCAPTCHA]** to enable reCAPTCHA service if you configured it as described in [reCAPTCHA service by Google](#google-reCAPTCHA). Select a configuration from the Settings drop-down.
+1. Select the type as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. You can also select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity. The protected by reCAPTCHA badge, displayed below, is displayed on the protected forms.
 
     ![Google protected by reCAPTCHA badge](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >Do not select **[!UICONTROL Default]** from the Captcha service drop-down as the default Experience Manager CAPTCHA service is deprecated.
+   > Do not select **[!UICONTROL Default]** from the Captcha service drop-down as the default Experience Manager CAPTCHA service is deprecated.
 
 1. Save the properties.
 
@@ -100,6 +97,10 @@ For example, the CAPTCHA component must display in an Adaptive Form only if the 
 Tap the **[!UICONTROL Currency Value]** field in the form and create the following rules:
 
 ![Show or hide rules](assets/rules-show-hide-captcha.png)
+
+   >[!NOTE]
+   >
+   > If you select reCAPTCHA v2 configuration with size as [!UICONTROL Invisible] then show/hide option is not applicable.
 
 ### Validate CAPTCHA {#validate-captcha}
 
@@ -199,7 +200,7 @@ public interface GuideCaptchaValidator {
 
 `userResponseToken` refers to the `g_recaptcha_response` that gets generated after solving a CAPTCHA in a form.
 
-### Edit reCAPTCHA service domain {#recaptcha-service-domain}
+### Edit reCAPTCHA service domain {#reCAPTCHA-service-domain}
 
 reCAPTCHA service uses `https://www.recaptcha.net/` as the default domain. You can modify the settings to set `https://www.google.com/` or any custom domain name for loading, rendering, and validating the reCAPTCHA service.
 

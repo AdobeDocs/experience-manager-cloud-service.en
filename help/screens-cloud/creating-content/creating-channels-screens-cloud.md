@@ -78,8 +78,8 @@ The following templates are available while using the **Create** channel wizard:
 
 |Available Templates|Description|
 |--- |--- |
-|Channels Folder|Allows to create a folder to store collection of channels.|
-|Sequence Channel|Allows to create a channel that plays the components sequentially (one by one in a slide show).|
+|Channels Folder|Lets you create a folder to store collection of channels.|
+|Sequence Channel|Lets you create a channel that plays the components sequentially (one by one in a slide show).|
 |Left or Right L-Bar Split Screen Channel|Allows content authors to view different types of assets in appropriately sized zones.|
 
 ## Use default assignment details for channels {#default-channels}
