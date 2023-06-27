@@ -9,23 +9,23 @@ exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 
 **Screens Services Provider**, allows the content author, developers, and administrators to manage displays and players for content playback once the content is added to the channels. Once the users are given access to AEM Cloud Service, they should be able to log into Screens Services Provider.
 
-This section describes how to setup Screens Services Provider.
+This section describes how to set up Screens Services Provider.
 
 
 ## Objective {#objective}
 
-The following section how to configure and setup Screens Services Provider.
+The following section how to configure and set up Screens Services Provider.
 
-## Steps to Setup Screens Services Provider {#screens-services-provider}
+## Steps to Set up Screens Services Provider {#screens-services-provider}
 
-Follow the steps below to setup Screens Services Provider:
+Follow the steps below to set up Screens Services Provider:
 
 1. Navigate to Screens Services Provider from [here](https://experience.adobe.com/screens).
 
    >[!CAUTION]
-   >If you have access to multiple organizations, please ensure that you have logged into correct Organization. To change your organization, click on the Org name from the top right hand corner of the screen and choose the required organization to which you need access to.
+   >If you have access to multiple organizations, ensure that you have logged into correct Organization. To change your organization, click the Org name from the top right-hand corner of the screen and choose the required organization to which you need access.
 
-2. Click on the gear icon next to Project (top left corner)
+2. Click the gear icon next to Project (upper-left corner)
    
    ![image](/help/screens-cloud/assets/configure/configure-screens0.png)
 
@@ -35,9 +35,9 @@ Follow the steps below to setup Screens Services Provider:
    
     ![image](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4.  Click on **Save** to connect to Screens content provider
+4.  Click **Save** to connect to Screens content provider
 
-5. Select **Channels** from the left navigation bar and click on **open in content provider**. 
+5. Select **Channels** from the left navigation bar and click **open in content provider**. 
 
    ![image](/help/screens-cloud/assets/configure/configure-screens1.png)
 
@@ -47,4 +47,4 @@ Follow the steps below to setup Screens Services Provider:
 
 ## What's Next {#whats-next}
 
-Once you have learnt how to setup Screens Services  Provider you can navigate to, [Using Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) for more details.
+After you have learned how to set up Screens Services Provider, navigate to [Using Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end#screens-content-provider) for more details.
