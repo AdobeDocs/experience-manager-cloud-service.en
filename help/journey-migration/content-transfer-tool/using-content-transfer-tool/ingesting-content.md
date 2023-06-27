@@ -149,7 +149,7 @@ If Release Orchestrator is still running when an ingestion is being started, the
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-### Top-up Ingestion Failure
+### Top-up Ingestion Failure Due to Uniqueness Constraint Violation
 
 A common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a conflict in node ids. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
 
@@ -160,6 +160,18 @@ This can happen if a node is moved on the source between an extraction and a sub
 It can also happen if a node on the target is moved between an ingestion and a subsequent top-up ingestion.
 
 This conflict must be resolved manually. Someone familiar with the content must decide which of the two nodes must be deleted, keeping in mind other content that references it. The solution may require that the top-up extraction is done again without the offending node. 
+
+### Top-up Ingestion Failure Due to Unable to Delete Referenced Node
+
+Another common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a version conflict for a particular node on the target system.  To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e0976a8
+
+This can happen if a node on the target is modified between an ingestion and a subsequent top-up ingestion such that a new version has been created.  If the ingestion has "include versions" enabled, a conflict may occur since the target now has a more recent version that is being referenced by version history and other content.  The ingestion process will be unable to delete the offending version node due to it being referenced.
+
+The solution may require that the top-up extraction is done again without the offending node.  
+
+Best practices indicate that if an ingestion must be run with wipe=false and "include versions"=true it is crucial that content on the target is modified as little as possible, until the migration journey is complete.  Otherwise, these conflicts can occur.
+
 
 ## What's Next {#whats-next}
 
