@@ -72,7 +72,7 @@ The following release (2021.3.0) will be on March 25, 2021.
 
 * Extended product console properties to show linked Assets and Experience Fragments, including action to quickly navigaet to the associated content.
 
-* Released CIF Venia Reference Site - 2021.02.24 that includes the latest CIF Core Components version v1.8.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) for more details.
+* Released CIF Venia Reference Site - 2021.02.24 that includes the latest CIF Core Components version v1.8.0. See [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) for more details.
 
 * Released CIF Core Components v1.8.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) for more details.
 
@@ -85,7 +85,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is Februar
 ### What is New {#what-is-new-cloud-manager}
 
 
-* Assets customers will now be able to choose when and where to deploy their Brand Portal instance in a self-service way via Cloud Manager UI. For a regular (non sandbox) program with Assets solution, Brand Portal can now be provisioned on the Production environment. The provisioning can be done only once on Production environment.
+* Assets customers will now be able to choose when and where to deploy their Brand Portal instance in a self-service way via Cloud Manager UI. For a regular (non-sandbox) program with Assets solution, Brand Portal can now be provisioned on the Production environment. The provisioning can be done only once on Production environment.
 
 * The AEM Project Archetype used in Project and Sandbox Creation has been updated to version 25. 
 

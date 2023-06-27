@@ -1,13 +1,13 @@
 ---
 title: AEM Project Repository Structure Package  
-description: Adobe Experience Manager as a Cloud Service Maven projects requires a Repository Structure Sub-package definition whose sole purpose is to define the JCR repository roots in which the project's Code sub-packages deploy into.
+description: Maven projects on Adobe Experience Manager as a Cloud Service require a Repository Structure Subpackage definition whose sole purpose is to define the JCR repository roots in which the project's Code subpackages deploy into.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 ---
 # AEM Project Repository Structure Package
 
-Maven projects for Adobe Experience Manager as a Cloud Service require a repository structure sub-package definition whose sole purpose is to define the JCR repository roots in which the project's code sub-packages deploy into. This ensures the installation of packages in Experience Manager as a Cloud Service is automatically ordered by JCR resource dependencies. Missing dependencies may lead to scenarios where sub-structures would be installed ahead of their parent structures and therefore be unexpectedly removed, breaking the deployment.
+Maven projects for Adobe Experience Manager as a Cloud Service require a repository structure subpackage definition whose sole purpose is to define the JCR repository roots into which the project's code subpackages deploy. This method ensures the installation of packages in Experience Manager as a Cloud Service is automatically ordered by JCR resource dependencies. Missing dependencies may lead to scenarios where substructures would be installed ahead of their parent structures and therefore be unexpectedly removed, breaking the deployment.
 
-If your code package deploys into a location **not covered** by the code package, then any ancestor resources (JCR resources closer to the JCR root) must be enumerated in the repository structure package to establish these dependencies.
+If your code package deploys into a location **not covered** by the code package, then any ancestor resources (JCR resources closer to the JCR root) must be enumerated in the repository structure package. This process is necessary to establish these dependencies.
 
 ![Repository Structure Package](./assets/repository-structure-packages.png)
 
@@ -19,15 +19,15 @@ The most typical paths to include in the repository structure package are:
 + `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...`, and `/apps/sling/...` which provide common overlays for `/libs`.
 + `/apps/settings` which is the shared context-aware configuration root path
 
-Note that this sub-package **does not have** any content and is comprised solely of a `pom.xml` defining the filter roots.
+This subpackage **does not have** any content and is comprised solely of a `pom.xml` defining the filter roots.
 
 ## Creating the Repository Structure Package
 
-To create a repository structure package for you Maven project, create a new empty Maven sub-project, with the following `pom.xml`, updating the project metadata to conform with your parent Maven project.
+To create a repository structure package for your Maven project, create an empty Maven subproject, with the following `pom.xml`, updating the project metadata to conform with your parent Maven project.
 
 Update the `<filters>` to include all the JCR repository path roots your code packages deploy into.
 
-Make sure to add this new Maven sub-project to the parent projects `<modules>` list.
+Make sure to add this new Maven subproject to the parent projects `<modules>` list.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -110,7 +110,7 @@ Make sure to add this new Maven sub-project to the parent projects `<modules>` l
 
 ## Referencing the Repository Structure Package
 
-To use the repository structure package, reference it via all code package (the sub-packages that deploy to `/apps`) Maven projects via the FileVault content package Maven plug-ins `<repositoryStructurePackage>` configuration.
+To use the repository structure package, reference it via all code package (the subpackages that deploy to `/apps`) Maven projects via the FileVault content package Maven plug-ins `<repositoryStructurePackage>` configuration.
 
 In the `ui.apps/pom.xml`, and any other code package `pom.xml`s, add a reference to the project's repository structure package (#repository-structure-package) configuration to the FileVault package Maven plug-in.
 
@@ -156,7 +156,7 @@ For example:
 + Code package A deploys into `/apps/a`
 + Code package B deploys into `/apps/a/b`
 
-If a package-level dependency is not established from code package B on code package A, code package B may deploy first into `/apps/a`, followed by code package B, which deploys into `/apps/a`, resulting in a removal of the previously installed `/apps/a/b`.
+If a package-level dependency is not established from code package B on code package A, code package B may deploy first into `/apps/a`. It would then be followed by code package B, which deploys into `/apps/a`. The result is a removal of the previously installed `/apps/a/b`.
 
 In this case:
 
@@ -165,14 +165,14 @@ In this case:
 
 ## Errors and Debugging
 
-If the repository structure packages are not set-up correctly, at Maven build an error is reported:
+If the repository structure packages are not set up correctly, at Maven build an error is reported:
 
 ```
 1 error(s) detected during dependency analysis.
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-This indicates the breaking code package does not have a `<repositoryStructurePackage>` that lists `/apps/some/path` in its filter list.
+This error indicates that the breaking code package does not have a `<repositoryStructurePackage>` that lists `/apps/some/path` in its filter list.
 
 ## Additional Resources
 

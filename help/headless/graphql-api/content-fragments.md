@@ -745,7 +745,7 @@ The structure and syntax is:
   * `height`: the height of the dimension
 * `rotation`: an enumeration of all supported rotations: R90, R180, R270
 * `flip`: an enumeration of HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
-* `quality`: an integer between 1 and 100 notating the percentage of the image quality
+* `quality`: an integer from 1&ndash;100 notating the percentage of the image quality
 * `width`: an integer that defines the width of the output image but is ignored by the Image Generator
 * `preferWebp`: a boolean that indicates if webp is preferred (default value is false)
 
