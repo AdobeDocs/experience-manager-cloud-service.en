@@ -1,15 +1,15 @@
 ---
 title: Manage your digital assets
-description: Move, delete, copy, rename, update, and version your assets in [!DNL Assets Essentials].
+description: Move, delete, copy, rename, update, and version your assets in [!DNL Assets view].
 role: User,Leader
 contentOwner: AG
 exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
 ---
 # Manage assets {#manage-assets}
 
-You can do various digital asset management (DAM) tasks easily using the user-friendly interface of [!DNL Assets Essentials]. After you've added the assets, you can search, download, move, copy, rename, delete, update, and edit your assets. 
+You can do various digital asset management (DAM) tasks easily using the user-friendly interface of [!DNL Assets view]. After you've added the assets, you can search, download, move, copy, rename, delete, update, and edit your assets. 
 
-Use [!DNL Assets Essentials] to accomplish the following asset management tasks. When you select an asset, the following options display in the toolbar at the top.
+Use [!DNL Assets view] to accomplish the following asset management tasks. When you select an asset, the following options display in the toolbar at the top.
 
 ![Toolbar options when you select an asset](assets/toolbar-image-selected.png)
 
@@ -29,7 +29,7 @@ You can view the same options on assets thumbnails.
 
 ![Options on asset thumbnail to manage an asset](assets/options-on-thumbnail.png)
 
-[!DNL Assets Essentials] displays only the relevant options in the toolbar that depend on the type of the selected asset.
+[!DNL Assets view] displays only the relevant options in the toolbar that depend on the type of the selected asset.
 
 ![Toolbar options when you select an asset](assets/toolbar-folder-selected.png)
 
@@ -41,16 +41,16 @@ You can view the same options on assets thumbnails.
 
 ## Download and distribute assets {#download}
 
-You can select one or more assets or folders or a combination of both, and download the selection to your local file system. You can edit the assets and upload again or distribute the assets outside [!DNL Assets Essentials]. Also, you can [download the renditions](/help/using/add-delete.md#renditions) of an asset.
+You can select one or more assets or folders or a combination of both, and download the selection to your local file system. You can edit the assets and upload again or distribute the assets outside [!DNL Assets view]. Also, you can [download the renditions](/help/using/add-delete-assets-view.md#renditions) of an asset.
 
 ## Asset versioning {#versions-of-assets}
 
 <!-- 
 TBD: query for engineering: How many versions are maintained. What happens when we reach that limit? Are old versions automatically removed? -->
 
-[!DNL Assets Essentials] versions the assets when the assets are uploaded again that is updated or are edited. You can view version history, past versions, and can restore a past version of assets as the latest version, that is reverted to a previous version if needed. Asset versions are created in the following scenarios:
+[!DNL Assets view] versions the assets when the assets are uploaded again that is updated or are edited. You can view version history, past versions, and can restore a past version of assets as the latest version, that is reverted to a previous version if needed. Asset versions are created in the following scenarios:
 
-* Upload a new asset with the same filename as an existing asset and in the same folder as the existing asset. [!DNL Assets Essentials] prompts to either overwrite the previous asset or save the new asset as a version. See [upload duplicate assets](/help/using/add-delete.md#resolve-upload-fails).
+* Upload a new asset with the same filename as an existing asset and in the same folder as the existing asset. [!DNL Assets view] prompts to either overwrite the previous asset or save the new asset as a version. See [upload duplicate assets](/help/using/add-delete-assets-view.md#resolve-upload-fails).
 
   ![Create versions when uploading](assets/uploads-manage-duplicates.png)
 
@@ -82,7 +82,7 @@ You can also create versions from the versions timeline. Select the latest versi
 
 **Permissions required:**  `Can Edit`, `Owner`, or administrator permissions on an asset.
 
-Assets Essentials allows you to set status on assets available in the repository. Set an asset status to better govern and manage downstream consumption of digital assets.
+Assets view allows you to set status on assets available in the repository. Set an asset status to better govern and manage downstream consumption of digital assets.
 
 You can set the following status on assets:
 
@@ -105,7 +105,7 @@ To set asset status:
 
 ### Set asset expiration date {#set-asset-expiration-date}
 
-Assets Essentials also allows you to set expiration date on assets available in the repository. You can then [filter the search results](search.md#refine-search-results) based on an `Expired` asset status. In addition, you can specify an expiration date range for assets to further filter your search results.
+Assets view also allows you to set expiration date on assets available in the repository. You can then [filter the search results](search-assets-view.md#refine-search-results) based on an `Expired` asset status. In addition, you can specify an expiration date range for assets to further filter your search results.
 
 To set asset expiration date:
 
@@ -115,15 +115,15 @@ To set asset expiration date:
 
 The `Expired` asset card indicator overrides the `Approved` or `Rejected` indicator set for an asset.
 
-You can also filter assets based on an asset status, for more information, see [Search assets in Assets Essentials](search.md).
+You can also filter assets based on an asset status, for more information, see [Search assets in Assets view](search-assets-view.md).
 
 ## Customize metadata forms to include asset status field {#customize-asset-status-metadata-form}
 
 **Permissions required:** Administrator
 
-Assets Essentials provides many standard metadata fields by default. Organizations have additional metadata needs and need more metadata fields to add business-specific metadata. Metadata forms let businesses add custom metadata fields to an asset's [!UICONTROL Details] page. The business-specific metadata improves the governance and discovery of its assets.
+Assets view provides many standard metadata fields by default. Organizations have additional metadata needs and need more metadata fields to add business-specific metadata. Metadata forms let businesses add custom metadata fields to an asset's [!UICONTROL Details] page. The business-specific metadata improves the governance and discovery of its assets.
 
-For more information on how to add additional metadata fields to the metadata form, see [Metadata Forms](metadata.md##metadata-forms).
+For more information on how to add additional metadata fields to the metadata form, see [Metadata Forms](metadata-assets-view.md#metadata-forms).
 
 **Add Asset Status metadata field to the form**
 
@@ -135,11 +135,11 @@ To add Expiration Date metadata field to the form,  drag **[!UICONTROL Date]** c
 
 ## Next Steps {#next-steps}
 
-* [Watch a video to manage assets in Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html)
+* [Watch a video to manage assets in Assets view](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html)
 
-* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets Essentials user interface
+* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface
 
-*  Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
+* Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
 
 * Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
 

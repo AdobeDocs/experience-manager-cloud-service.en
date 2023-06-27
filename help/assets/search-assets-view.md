@@ -1,10 +1,10 @@
 ---
-title: Search and discover assets in [!DNL Assets Essentials]
-description: Search and discover assets in [!DNL Assets Essentials].
+title: Search and discover assets in [!DNL Assets view]
+description: Search and discover assets in [!DNL Assets view].
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
 ---
-# Search assets in [!DNL Assets Essentials] {#search-assets}
+# Search assets in [!DNL Assets view] {#search-assets}
 
 >[!CONTEXTUALHELP]
 >id="assets_search"
@@ -12,7 +12,7 @@ exl-id: be9597a3-056c-436c-a09e-15a03567c85a
 >abstract="Search for assets by specifying a keyword in the Search bar or by filtering assets based on their status, file type, MIME type, size, creation, modification, and expiration dates. You can also apply custom filters in addition to the standard filters. You can save the filtered results as a Saved Search or a Smart Collection."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=en#manage-smart-collection" text="Create Smart Collections"
 
-[!DNL Assets Essentials] provides effective search, that just works by default. The search is comprehensive as it is full-text search. The powerful search functionality lets you quickly discover the appropriate asset and help you improve your content velocity. [!DNL Assets Essentials] provides full-text search and even searches through the metadata such as smart tags, title, date created, and copyright.
+[!DNL Assets view] provides effective search, that just works by default. The search is comprehensive as it is full-text search. The powerful search functionality lets you quickly discover the appropriate asset and help you improve your content velocity. [!DNL Assets view] provides full-text search and even searches through the metadata such as smart tags, title, date created, and copyright.
 
 To search assets, 
 
@@ -35,14 +35,14 @@ You can filter the search results based on the following parameters.
 * Asset Status: Filter the search results using an `Approved`, `Rejected`, or `No Status` asset status.
 
 * File type: Filter the search results by the supported types of files that is, `Images`, `Documents`, and `Videos`.
-* MIME type: Filter for one or more of the supported file formats. <!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
+* MIME type: Filter for one or more of the supported file formats. <!-- TBD:  [supported file formats](/help/assets/supported-file-formats-assets-view.md). -->
 * Image size: Provide one of more of the minimum and maximum dimensions to filter images. Size is provided in dimensions in pixel and is not the file size of the images.
 * Created date: The creation date of the asset as provided in the metadata. The standard date format used is `yyyy-mm-dd`.
 * Modified date: The last modified date of the assets. The standard date format used is `yyyy-mm-dd`.
 
 * Expiration Date: Filter the search results based on an `Expired` asset status. In addition, you can specify an expiration date range for assets to further filter your search results.
 
-* Custom Filters: [Add custom filters](#custom-filters) to Assets Essentials user interface. Apply the custom filters in addition to the standard filters to refine your search results.
+* Custom Filters: [Add custom filters](#custom-filters) to Assets view user interface. Apply the custom filters in addition to the standard filters to refine your search results.
 
 You can sort the searched assets in increasing or decreasing order of `Name`, `Relevancy`, `Size`, `Modified`, and `Created`.
 
@@ -50,9 +50,9 @@ You can sort the searched assets in increasing or decreasing order of `Name`, `R
 
 **Permissions required:**  `Can Edit`, `Owner`, or Administrator.
 
-Assets Essentials also enables you to add custom filters to the user interface. You can then apply those custom filters in addition to the [standard filters](#refine-search-results) to refine your search results.
+Assets view also enables you to add custom filters to the user interface. You can then apply those custom filters in addition to the [standard filters](#refine-search-results) to refine your search results.
 
-Assets Essentials provides the following custom filters:
+Assets view provides the following custom filters:
 
 <table>
     <tbody>
@@ -80,11 +80,11 @@ Assets Essentials provides the following custom filters:
    </table>
 
    <!--
-   You can use a wildcard operator (*) to enable Assets Essentials to display assets in the results that partially match the search criteria. For example, if you define <b>ma*</b> as the search criteria, Assets Essentials displays assets with title, such as, market, marketing, man, manchester, and so on in the results.
+   You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. For example, if you define <b>ma*</b> as the search criteria, Assets view displays assets with title, such as, market, marketing, man, manchester, and so on in the results.
 
-   You can use a wildcard operator (*) to enable Assets Essentials to display assets in the results that partially match the search criteria.
+   You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria.
 
-   You can use a wildcard operator (*) to enable Assets Essentials to display assets in the results that partially match the search criteria. You can specify multiple smart tags separated by a comma in the search criteria.
+   You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. You can specify multiple smart tags separated by a comma in the search criteria.
 
    -->
 
@@ -117,11 +117,11 @@ To remove custom filters:
 
 ## Saved searches {#saved-search}
 
-Search functionality is quite easy to use in [!DNL Assets Essentials]. From within the search box, you can not only just type a keyword and press return to see the results, you can also quickly search again for your recently searched keywords in a single click.
+Search functionality is quite easy to use in [!DNL Assets view]. From within the search box, you can not only just type a keyword and press return to see the results, you can also quickly search again for your recently searched keywords in a single click.
 
-You can also filter the search results based on specific criteria around metadata and type of assets. For frequently used filters, to improve the search experience, [!DNL Assets Essentials] lets you save the search parameters. You can then select the saved search to search and apply the filter with just a single click as well.
+You can also filter the search results based on specific criteria around metadata and type of assets. For frequently used filters, to improve the search experience, [!DNL Assets view] lets you save the search parameters. You can then select the saved search to search and apply the filter with just a single click as well.
 
-To create a saved search, search for some asset, apply one or more filters, and click **[!UICONTROL Save as]** > **[!UICONTROL Saved Search]** in the [!UICONTROL Filters] panel. You can also click **[!UICONTROL Save as]** and select **[!UICONTROL Smart Collection]** to save the results as a Smart Collection. See [Create a Smart Collection](manage-collections.md#create-a-smart-collection) for more details.
+To create a saved search, search for some asset, apply one or more filters, and click **[!UICONTROL Save as]** > **[!UICONTROL Saved Search]** in the [!UICONTROL Filters] panel. You can also click **[!UICONTROL Save as]** and select **[!UICONTROL Smart Collection]** to save the results as a Smart Collection. See [Create a Smart Collection](manage-collections-assets-view.md#create-a-smart-collection) for more details.
 
 ![Create smart collection](assets/create-smart-collection.png)
 
@@ -138,9 +138,9 @@ When userA is searching and userB add an asset that matches search results, will
 
 ## Next Steps {#next-steps}
 
-* [Watch a video to search assets in Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
+* [Watch a video to search assets in Assets view](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
 
-* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets Essentials user interface
+* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface
 
 * Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
 
