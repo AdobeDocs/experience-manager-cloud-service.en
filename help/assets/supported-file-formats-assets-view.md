@@ -1,13 +1,13 @@
 ---
 title: Supported file formats
-description: Supported file formats for the various use cases of [!DNL Assets View]
+description: Supported file formats for the various use cases of [!DNL Assets view]
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: bc44e98d-446e-41ff-b5b4-9dc324834630
 ---
-# Files formats support in [!DNL Assets View] {#file-format-support}
+# Files formats support in [!DNL Assets view] {#file-format-support}
 
-[!DNL Assets View] supports a wide range of file formats and each functionality has varied support for different file types.
+[!DNL Assets view] supports a wide range of file formats and each functionality has varied support for different file types.
 
 * ![image file type icon](assets/image-icon.svg) Images: JPG, PNG, GIF, TIFF, and others
 * ![creative cloudtype icon](assets/creative-cloud-files.svg) Creative Cloud files: PSD, AI, and INDD
@@ -15,9 +15,9 @@ exl-id: bc44e98d-446e-41ff-b5b4-9dc324834630
 * ![document file type icon](assets/document-icon.svg) Documents: DOCX, PDF, PPTX, and XLSX
 * ![video file type icon](assets/video-icon.svg) Videos: MP4
 
-[!DNL Assets View] supports any binary file format with basic services, such as, storage, upload, copy, move, delete, and adding metadata.
+[!DNL Assets view] supports any binary file format with basic services, such as, storage, upload, copy, move, delete, and adding metadata.
 
-[!DNL Assets View] also supports camera RAW files from a wide range of leading camera manufacturers including Canon (CR2/CR3), Nikon (NEF), Sony (SRW/SRF), Fujifilm (RAF), Olympus (ORF), and others, powered by Adobe Camera Raw.
+[!DNL Assets view] also supports camera RAW files from a wide range of leading camera manufacturers including Canon (CR2/CR3), Nikon (NEF), Sony (SRW/SRF), Fujifilm (RAF), Olympus (ORF), and others, powered by Adobe Camera Raw.
 
 The various file types have different degrees of support for the use cases and features, as described below. Use the legend to understand the support level.
 
@@ -95,7 +95,7 @@ The various file types have different degrees of support for the use cases and f
 | PSD, AI, and INDD           | &#10003; | &minus;    | &#10003; | &#10003; | &#10003; |
 | Other binary files          | &#10003; | &minus;    |&#10003; | &#10003; | &#10003; |
 
-Users of [!DNL Adobe Asset Link] can upload and check-in (upload a new version) files into the [!DNL Assets View] repository from the supported [!DNL Adobe Creative Cloud] desktop applications.
+Users of [!DNL Adobe Asset Link] can upload and check-in (upload a new version) files into the [!DNL Assets view] repository from the supported [!DNL Adobe Creative Cloud] desktop applications.
 
 <!-- TBD: Saving the template table separately for later use.
 | Asset type    | Features |
@@ -116,7 +116,7 @@ Users of [!DNL Adobe Asset Link] can upload and check-in (upload a new version) 
 
 ## Next Steps {#next-steps}
 
-* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets View user interface
+* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface
 
 * Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
 

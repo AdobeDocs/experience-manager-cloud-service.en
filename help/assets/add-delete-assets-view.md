@@ -1,6 +1,6 @@
 ---
 title: Upload assets to the repository
-description: Upload assets to [!DNL Assets View], view upload statuses, and resolve upload issues.
+description: Upload assets to [!DNL Assets view], view upload statuses, and resolve upload issues.
 role: User
 exl-id: a85a4455-4456-48af-aee9-f05300677605
 ---
@@ -16,7 +16,7 @@ You can use the following methods to upload one or more assets or a folder conta
 <!-- TBD: Update this GIF
 ![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
 
-You can use any of these methods to upload assets after creating a folder. To create an empty folder, click **[!UICONTROL Create Folder]** from the toolbar. While [!DNL Assets View] offers a powerful, full-text search functionality, you can also use folders to organize your assets better.
+You can use any of these methods to upload assets after creating a folder. To create an empty folder, click **[!UICONTROL Create Folder]** from the toolbar. While [!DNL Assets view] offers a powerful, full-text search functionality, you can also use folders to organize your assets better.
 
 Once you have selected the files, you get a confirmation dialog to add more files or to remove already selected files. To add more files to a selection, click **[!UICONTROL Browse]** and the select **[!UICONTROL Browse files]** or **[!UICONTROL Browse folders]**. Add more files or folders from the same or from a different folder.
 
@@ -28,11 +28,11 @@ Once all files are queued, click **[!UICONTROL Upload]**.
 
 >[!TIP]
 >
->In case you upload a folder structure to Assets View, you do not need to create a .ZIP file with the folder structure, you can upload folder structures directly. A .ZIP file uploaded to Assets View is stored as one ZIP asset and is not extracted automatically after the upload. 
+>In case you upload a folder structure to Assets view, you do not need to create a .ZIP file with the folder structure, you can upload folder structures directly. A .ZIP file uploaded to Assets view is stored as one ZIP asset and is not extracted automatically after the upload. 
 
 ## View upload progress and status {#upload-progress}
 
-When you upload many assets or nested folders to [!DNL Assets View], some assets can fail to upload for various reasons such as duplicate asset and network issues.
+When you upload many assets or nested folders to [!DNL Assets view], some assets can fail to upload for various reasons such as duplicate asset and network issues.
 
 To track the upload progress, click **[!UICONTROL Upload Progress]** option on the toolbar. A panel displays the upload progress of all assets.
 
@@ -42,7 +42,7 @@ To view a subset of assets based on the upload progress or status, use the filte
 
 *Figure: Filter the assets that you attempted to upload based on their upload status or upload progress.*
 
-Immediately after the assets are uploaded, [!DNL Assets View] processes the assets to generate thumbnail and process metadata. For many assets, the processing takes some time. If do not see a thumbnail and see a processing message on the placeholder thumbnail, check the folder again after a few minutes. During processing, amongst other things, [!DNL Assets View] generates the renditions, adds smart tags, and indexes the asset details for search.
+Immediately after the assets are uploaded, [!DNL Assets view] processes the assets to generate thumbnail and process metadata. For many assets, the processing takes some time. If do not see a thumbnail and see a processing message on the placeholder thumbnail, check the folder again after a few minutes. During processing, amongst other things, [!DNL Assets view] generates the renditions, adds smart tags, and indexes the asset details for search.
 
 ![Assets are processes upon upload and the tile displays processing](assets/upload-processing.png)
 
@@ -50,7 +50,7 @@ Immediately after the assets are uploaded, [!DNL Assets View] processes the asse
 
 ## Asset renditions {#renditions}
 
-[!DNL Assets View] processes the uploaded assets in near real time and for many supported file types, it generates renditions. Created for images, the renditions are resized versions of the uploaded image. You can download not just the asset but also the renditions to use an appropriate version. You can view all the renditions of an asset when you [preview an asset](/help/assets/navigate-assets-view.md#preview-assets).
+[!DNL Assets view] processes the uploaded assets in near real time and for many supported file types, it generates renditions. Created for images, the renditions are resized versions of the uploaded image. You can download not just the asset but also the renditions to use an appropriate version. You can view all the renditions of an asset when you [preview an asset](/help/assets/navigate-assets-view.md#preview-assets).
 
 ![Renditions](assets/renditions-view-download.png)
 
@@ -76,7 +76,7 @@ If you attempt to upload duplicate assets, the assets are not uploaded until you
 
 >[!TIP]
 >
->You can upload assets to the DAM repository directly from within your [!DNL Creative Cloud] desktop applications. See how [[!DNL Assets View] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
+>You can upload assets to the DAM repository directly from within your [!DNL Creative Cloud] desktop applications. See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 
 ## Delete assets or folders {#delete-assets}
 
@@ -92,9 +92,9 @@ Users can delete individual assets or folders that are no longer required. To de
 
 ## Next Steps {#next-steps}
 
-* [Watch a video to upload assets in Assets View](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
+* [Watch a video to upload assets in Assets view](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
 
-* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets View user interface
+* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface
 
 * Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
 
