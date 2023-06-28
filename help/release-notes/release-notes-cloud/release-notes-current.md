@@ -32,7 +32,7 @@ Have a look at the June 2023 Release Overview video for a summary of the feature
 
 ### New features in [!DNL Assets] {#assets-features}
 
-**Availability of New Assets view in [!DNL Experience Manager Assets]**
+**Availability of New Assets view**
 
 The new Assets view is now available in Experience Manager Assets. Assets View provides simplified user interface, which makes it easy to manage, discover, and distribute your digital assets. The experience is targeted to creatives, read-only asset consumers, and lighter-weight DAM users.
 
@@ -90,7 +90,7 @@ Assets view now supports viewing top searched terms within your deployment using
 
 Assets view now enables you to add multi-value text and drop-down list property components to the metadata forms.
 
-### Feature in [!DNL Assets] prerelease {#prerelease-feature-assets}
+### Features in [!DNL Assets] prerelease {#prerelease-feature-assets}
 
 * Dynamic Media - The user interface for some Smart Crop-related fields in an Image Profile are now updated to reflect the current guidelines for defining a Smart Crop. See [Crop options](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
 
