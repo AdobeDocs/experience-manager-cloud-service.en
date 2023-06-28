@@ -7,36 +7,25 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 12441 {#release-12441}
+## Release X {#release-x}
  
-Summarized below are the continuous improvements for maintenance release 12441, which was publicly released on June 27, 2023. This maintenance release is an update from previous maintenance release 12255.
+Summarized below are the continuous improvements for maintenance release X, which was publicly released on July 11, 2023. This maintenance release is an update from previous maintenance release 12441.
 
 2023.7.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-12441}
-
-- SITES-8769: Improve StyleImpl calls in ResponsiveGrid
-
-### Fixed Issues {#fixed-issues-12441}
-
-- Various accessibility-related updates
-- SITES-12688: Page Editor: Logical operator OR not properly working in Asset Finder search
-- SITES-4951: Page Editor: Tag-search in Page editor does not find sub-tags
-- SITES-12465: Experience Fragments: Arrow keys not working in Experience fragment component dialog
-- SITES-12893: Experience Fragments: Apply circular reference validation for Experience Fragments
-- SITES-12715: Experience Fragments: Cloud service configs applied to Experience fragments folder do not persist
-- SITES-13097: Experience Fragments: Not able to add experience fragments to a translation project
-- SITES-13165: GraphQL: Restore default behavior for filtering of null values
-- SITES-12577: Link Checker: Transformer not rewriting links intermittently 
-- SITES-13559: MSM: 'Is not modifiable' exception thrown when rolling out component
-- SITES-11757: MSM: Inherit rollout configuration from Parent does not get reverted back for child pages
-- SITES-14073: Sites Admin: CSV Report fails with 500 when selecting no property to export
-
-### Known Issues {#known-issues-12441}
+### Enhancements {#enhancements-X}
 
 None.
 
-### Embedded Technologies {#embedded-tech-12441}
+### Fixed Issues {#fixed-issues-X}
+
+None.
+
+### Known Issues {#known-issues-X}
+
+None.
+
+### Embedded Technologies {#embedded-tech-X}
 
 |Technology|Version|Link|
 |---|---|---|
