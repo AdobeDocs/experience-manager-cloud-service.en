@@ -55,13 +55,13 @@ Knowing those properties can be also useful so you can query your repository and
 
 ## FAQ {#faq}
 
-Here are some frequently-asked questions related to MSM and Live Copy.
+Here are some frequently asked questions related to MSM and Live Copy.
 
 ### Why are some properties (for example, title, annotations) are not updated during an MSM rollout? {#missing-properties}
 
 MSM sync actions are highly configurable. Which properties or components are modified during rollouts directly depends on properties of those configurations.
 
-Please see [this article](best-practices.md) for more information on this topic.
+See [this article](best-practices.md) for more information on this topic.
 
 ### How can I remove rollout permissions for a group of authors? {#remove-rollout-permissions}
 

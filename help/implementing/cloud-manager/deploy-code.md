@@ -51,9 +51,9 @@ The **Stage Deployment** phase. involves these steps.
 
 * **Validation**  - This step ensures that the pipeline is configured to use the currently available resources. for example, testing that the configured branch exists and that the environments are available.
 * **Build &amp; Unit Testing** - This step runs a containerized build process.
-  * Please see the document [Build Environment Details](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for details on the build environment.
+  * See [Build Environment Details](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for details on the build environment.
 * **Code Scanning** - This step evaluates the quality of your application code.
-  * Please see the document [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md) for details on the testing process.
+  * See [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md) for details on the testing process.
 * **Build Images** - This process is responsible for transforming the content and dispatcher packages produced by the build step into Docker images and Kubernetes configurations.
 * **Deploy to Stage** - The image is deployed to the staging environment in preparation for the [Stage testing stage.](#stage-testing)
 
@@ -64,20 +64,20 @@ The **Stage Deployment** phase. involves these steps.
 The **Stage testing** phase involves these steps.
 
 * **Product Functional Testing** - Cloud Manager pipeline executes tests that run against the stage environment.
-   * Please refer to the document [Product Functional Testing](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) for more details.
+   * See [Product Functional Testing](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) for more details.
 
 * **Custom Functional Testing** - This step in the pipeline is always executed and cannot be skipped. If no test JAR is produced by the build, the test passes by default.  
-   * Please refer to the document [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) for more details.
+   * See [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) for more details.
 
 * **Custom UI Testing** - This step is an optional feature that automatically run UI tests created for custom applications.
    * UI tests are Selenium-based tests packaged in a Docker image to allow a wide choice in language and frameworks (such as Java and Maven, Node and WebDriver.io, or any other framework and technology built upon Selenium).
-   * Please refer to the document [Custom UI Testing](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) for more details.
+   * See [Custom UI Testing](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) for more details.
 
 * **Experience Audit** - This step in the pipeline is always executed and cannot be skipped. As a production pipeline is executed, an experience audit step is included after custom functional testing that will run the checks.
    * The pages that are configured are submitted to the service and evaluated. 
    * The results are informational and show the scores and the change between the current and previous scores.
    * This insight is valuable to determine if there is a regression that is introduced with the current deployment.
-   * Please refer to the document [Understanding Experience Audit results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+   * See [Understanding Experience Audit results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 
 ![Stage Testing](assets/stage-testing.png)
 
@@ -114,7 +114,7 @@ The following steps will timeout if left waiting for user feedback:
 
 ## Deployment Process {#deployment-process}
 
-All Cloud Service deployments follow a rolling process to ensure zero downtime. Please refer to the document [How Rolling Deployments Work](/help/implementing/deploying/overview.md#how-rolling-deployments-work) to learn more.
+All Cloud Service deployments follow a rolling process to ensure zero downtime. See [How Rolling Deployments Work](/help/implementing/deploying/overview.md#how-rolling-deployments-work) to learn more.
 
 >[!NOTE]
 >
@@ -149,7 +149,7 @@ To identify if an execution is a re-execute execution, the trigger  field can be
 
 To trigger a re-execution, a PUT request needs to be made to the HAL Link <(<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> on the production deploy step state. If this link is present, the execution can be restarted from that step. If it is absent, the execution cannot be restarted from that step. In the initial release, this link will only ever be present on the production deploy step but future releases may support starting the pipeline from other steps. Example:
 
-``` Javascript
+``` JavaScript
  {
   "_links": {
     "https://ns.adobe.com/adobecloud/rel/pipeline/logs": {

@@ -51,7 +51,7 @@ Before beginning the quick start guide, here is a small collection of general ti
 
 There are various aspects to finding a page; you can navigate and/or search:
 
-1. Open the **Sites** console (using the **Sites** option in the [Global Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - this is triggered (drop down) when you select the Adobe Experience Manager link (top left).  
+1. Open the **Sites** console (using the **Sites** option in the [Global Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - this is triggered (drop-down) when you select the Adobe Experience Manager link (top left).  
 
 1. Navigate down the tree by tapping/clicking on the appropriate page. How the page resources are represented depends on the view you are using - [Card, List, or Column](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
 
@@ -175,7 +175,7 @@ To edit your page:
 
         * Select **Preview** from the toolbar.
 
-    * Return to edit mode (or select another mode) using the **Edit** drop down selector.
+    * Return to edit mode (or select another mode) using the **Edit** drop-down selector.
 
    >[!NOTE]
    >
@@ -264,7 +264,7 @@ These actions can all be triggered by:
 [Locking a page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) prevents other authors from working on it while you are. The Lock (and Unlock) icon/button can be found:
 
 * The toolbar when your [page has been selected](#selecting-your-page-for-further-action).
-* The [Page Information drop down menu](#editing-the-page-properties) when editing a page.
+* The [Page Information drop-down menu](#editing-the-page-properties) when editing a page.
 * The page toolbar when editing a page (when the page is locked)
 
 For example, the lock icon looks like this:

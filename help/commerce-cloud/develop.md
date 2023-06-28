@@ -11,7 +11,7 @@ exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 ---
 # Develop AEM Commerce for AEM as a Cloud Service {#develop}
 
-Developing AEM Commerce projects based on Commerce Integration Framework (CIF) for AEM as a Cloud Service follows the same rules and best practices like other AEM projects on AEM as a Cloud Service as well. Please review these first:
+Developing AEM Commerce projects based on Commerce Integration Framework (CIF) for AEM as a Cloud Service follows the same rules and best practices like other AEM projects on AEM as a Cloud Service as well. Review these first:
 
 - [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
 - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
@@ -80,7 +80,7 @@ For local CIF Add-on development using the AEM as a Cloud Service SDK following
 
     This variable must be set up for the AEM as a Cloud Service environment as well. For more information on variables, see [Configuring OSGi for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
-1. (Optional) To enable staged catalog features, you must create an integration token for your Adobe Commerce instance. Please follow the steps at [Getting Started](./getting-started.md#staging) to create the token.
+1. (Optional) To enable staged catalog features, you must create an integration token for your Adobe Commerce instance. Follow the steps at [Getting Started](./getting-started.md#staging) to create the token.
 
     Set an OSGi secret  with the name `COMMERCE_AUTH_HEADER` to the following value:
 

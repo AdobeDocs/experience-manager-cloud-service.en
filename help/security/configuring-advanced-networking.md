@@ -19,7 +19,7 @@ AEM as a Cloud Service offers several types of advanced networking capabilities,
 * [Dedicated egress IP address](#dedicated-egress-IP-address) - configure traffic out of AEM as a Cloud Service to originate from a unique IP
 * [Virtual Private Network (VPN)](#vpn) - secure traffic between a customer's infrastructure and AEM as a Cloud Service, for customers who have VPN technology
 
-This article describes each of these options in detail, including how they can be configured. As a general configuration strategy, the `/networkInfrastructures` API endpoint is invoked at the program level to declare the desired type of advanced networking, followed by a call to the `/advancedNetworking` endpoint for each environment to enable the infrastructure and configure environment-specific parameters. Please reference the appropriate endpoints in the Cloud Manager API documentation for each formal syntax, as well as sample requests and responses.
+This article describes each of these options in detail, including how they can be configured. As a general configuration strategy, the `/networkInfrastructures` API endpoint is invoked at the program level to declare the desired type of advanced networking, followed by a call to the `/advancedNetworking` endpoint for each environment to enable the infrastructure and configure environment-specific parameters. Reference the appropriate endpoints in the Cloud Manager API documentation for each formal syntax, as well as sample requests and responses.
 
 A program can provision a single advanced networking variation. When deciding between flexible port egress and dedicated egress IP address, it is recommended you choose flexible port egress if a specific IP address is not required because Adobe can optimize performance of flexible port egress traffic.
 
@@ -30,7 +30,7 @@ A program can provision a single advanced networking variation. When deciding be
 
 >[!NOTE]
 >
->Customers already provisioned with legacy dedicated egress technology who need to configure one of these options should not do so or site connectivity may be impacted. Please contact Adobe Support for assistance.
+>Customers already provisioned with legacy dedicated egress technology who need to configure one of these options should not do so or site connectivity may be impacted. Contact Adobe Support for assistance.
 
 ## Flexible Port Egress {#flexible-port-egress}
 
