@@ -27,6 +27,7 @@ Before you begin using [!DNL AEM Forms] as a Cloud Service, review the following
 
     ![Forms Thumbnail known issue](/help/forms/assets/forms-tumbnail-known-issue.png)
 
+* When you use a schema with repeatable elements to create a Core Components based Adaptive Form, the option to drag-and-drop repeatable elements from data model tree in the Adaptive Forms Editor does not work.
 
 ## Limitations {#limitations}
 
