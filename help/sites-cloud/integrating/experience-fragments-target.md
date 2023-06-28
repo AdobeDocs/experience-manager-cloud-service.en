@@ -42,7 +42,7 @@ Experience Fragments can be exported to the default workspace in Adobe Target, o
 
 >[!NOTE]
 >
->For further information see also:
+>For more information, see the following:
 >
 >* [Adobe Target development](https://developers.adobetarget.com/)
 >* [Core Components - Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
@@ -171,7 +171,7 @@ You can now select the new configuration for editing.
 
    * **Tenant ID**: the tenant ID
 
-   * **IMS Configuration**: select the required configuration from the drop down list
+   * **IMS Configuration**: select the required configuration from the drop-down list
 
    * **API Type**: defaults to REST (XML is deprecated)
 
@@ -350,7 +350,7 @@ To export an experience fragment from AEM to Target (after specifying the Cloud 
 
 ## Using your Experience Fragments in Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-After performing the preceding tasks, the experience fragment displays on the Offers page in Target. Please have a look at the [specific Target documentation](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) to learn about what you can achieve there.
+After performing the preceding tasks, the experience fragment displays on the Offers page in Target. See [specific Target documentation](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) to learn about what you can achieve there.
 
 >[!NOTE]
 >

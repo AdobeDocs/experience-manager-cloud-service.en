@@ -116,10 +116,10 @@ AEM Screens has some interesting constraints that are not necessarily true for t
 
    */-->
 
-   <!--/* production: preview authoring mode + unspecified mode (i.e. on publish) */-->
+   <!--/* production: preview authoring mode + unspecified mode (that is, on publish) */-->
    <sly data-sly-test.production="${wcmmode.preview || wcmmode.disabled}" data-sly-include="production.html" />
 
-   <!--/* edit: any other authoring mode, i.e. edit, design, scaffolding, etc. */-->
+   <!--/* edit: any other authoring mode, that is, edit, design, scaffolding, etc. */-->
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 

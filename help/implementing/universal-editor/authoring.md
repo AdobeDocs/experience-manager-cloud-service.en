@@ -27,7 +27,7 @@ To author content for an app using the Universal Editor, the app must be instrum
 
 >[!TIP]
 >
->Please see the document [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of how to configure an AEM app to work with the Universal Editor.
+>See [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of how to configure an AEM app to work with the Universal Editor.
 
 ## Sign In {#sign-in}
 

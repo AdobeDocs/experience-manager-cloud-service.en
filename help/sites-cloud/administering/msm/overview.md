@@ -149,7 +149,7 @@ As an introduction, the following table provides an overview of the main terms u
 |Source|The original pages used as the basis for Live Copies|Synonymous with Blueprints and/or Blueprint pages|
 |Live Copy|The copy (of the source), maintained by synchronization actions as defined by the rollout configurations||
 Live Copy Configuration|Definition of the configuration details for a Live Copy||
-|Live Relationship|Effective definition of the inheritance for a given resource i.e. the connection(s) between the source and Live Copies|Ensures that changes to the source can be synchronized with the Live Copy|
+|Live Relationship|Effective definition of the inheritance for a given resource that is, the connection(s) between the source and Live Copies|Ensures that changes to the source can be synchronized with the Live Copy|
 |Blueprint|Synonymous with Source|Can be defined by a blueprint configuration|
 |Blueprint Configuration|Predefined configuration specifying a source path|When a blueprint page is referenced in a blueprint configuration the Rollout command becomes available|
 |Chapter|The sections of the blueprint to include in the Live Copy|These are generally sub-pages of the root|

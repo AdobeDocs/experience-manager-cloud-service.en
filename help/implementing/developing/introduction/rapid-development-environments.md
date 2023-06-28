@@ -271,7 +271,7 @@ then deploy the configuration by this command:
 
 >[!TIP]
 >
->The above command assumes you are deploying the [WKND](https://github.com/adobe/aem-guides-wknd) project's dispatcher configurations. Please make sure to replace the `X.X.X` with the corresponding WKND project version number or your project-specific version number when deploying your project's dispatcher configuration..
+>The above command assumes you are deploying the [WKND](https://github.com/adobe/aem-guides-wknd) project's dispatcher configurations. Make sure to replace the `X.X.X` with the corresponding WKND project version number or your project-specific version number when deploying your project's dispatcher configuration..
 
 >[!NOTE]
 >
@@ -413,7 +413,7 @@ You can use Cloud Manager to reset your RDE by following the below steps:
 
    ![Reset banner notification](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-Once the RDE reset process is started, it usually takes a few minutes to complete and and return the environment to its default state. The status of the reset process can be viewed at any time in the **Status** column of the **Environments** card or in the **Environments** window.
+Once the RDE reset process is started, it usually takes a few minutes to complete and return the environment to its default state. The status of the reset process can be viewed at any time in the **Status** column of the **Environments** card or in the **Environments** window.
 
 ![RDE reset status](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 

@@ -44,7 +44,7 @@ Cloud Manager has pre-configured product profiles which can be thought of as rol
 
 >[!TIP]
 >
->Please refer to the document [Role Based Permissions in Cloud Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions) for more details.
+>See [Role Based Permissions in Cloud Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions) for more details.
 
 Each of the product profiles have specific permissions associated with them.
 

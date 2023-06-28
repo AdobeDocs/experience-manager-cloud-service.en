@@ -31,7 +31,7 @@ When you are assigned a work item (for example, **Approve Content**) various ale
   * Any actions available to the current user for the current step of the workflow; for example, Complete, Delegate, View details.
   * The number of workflows that the page is subject to. You can:
     * use the left/right arrows to navigate through the status information of the various workflows.
-    * click/tap on the actual number to open a drop down list of all applicable workflows, then select the workflow you want displayed in the status bar.
+    * click/tap on the actual number to open a drop-down list of all applicable workflows, then select the workflow you want displayed in the status bar.
 
   ![Page with multiple workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
@@ -69,7 +69,7 @@ Use the following procedure to complete the work item:
 1. Open the **[AEM Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Complete** from the toolbar.
-1. The **Complete Work Item** dialog will open. Select the **Next Step** from the drop down selector and add a **Comment** if required.
+1. The **Complete Work Item** dialog will open. Select the **Next Step** from the drop-down selector and add a **Comment** if required.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
 
 #### Completing a Participant Step - Page Editor {#completing-a-participant-step-page-editor}
@@ -78,7 +78,7 @@ Use the following procedure to complete the work item:
 
 1. Open the [page for editing](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Select **Complete** from the status bar at the top.
-1. The **Complete Work Item** dialog will open. Select the **Next Step** from the drop down selector and add a **Comment** if required.
+1. The **Complete Work Item** dialog will open. Select the **Next Step** from the drop-down selector and add a **Comment** if required.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
 
 #### Completing a Participant Step - Timeline {#completing-a-participant-step-timeline}
@@ -128,7 +128,7 @@ Use the following procedure to delegate a work item:
 1. Open the **[AEM Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Delegate** from the toolbar.
-1. The dialog will open. Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
+1. The dialog will open. Specify the **User** from the drop-down selector (this can also be a group) and add a **Comment** if required.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
 
 #### Delegating a Participant Step - Page Editor {#delegating-a-participant-step-page-editor}
@@ -137,7 +137,7 @@ Use the following procedure to delegate a work item:
 
 1. Open the [page for editing](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Select **Delegate** from the status bar at the top.
-1. The dialog will open. Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
+1. The dialog will open. Specify the **User** from the drop-down selector (this can also be a group) and add a **Comment** if required.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
 
 #### Delegating a Participant Step - Timeline {#delegating-a-participant-step-timeline}

@@ -43,7 +43,7 @@ Product functional tests are a set of stable HTTP integration tests (ITs) of cor
 * [Production Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md): Product functional tests run automatically whenever you deploy new code to Cloud Manager and cannot be skipped.
 * [Non-Production Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md): Product functional tests can be optionally selected to run whenever you execute your non-production pipeline.
 
-Product functional tests are maintained as an open-source project. Please refer to [product functional tests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub for details.
+Product functional tests are maintained as an open-source project. See [product functional tests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub for details.
 
 ### Custom Functional Testing {#custom-functional-testing}
 
@@ -51,12 +51,12 @@ While product functional testing is defined by Adobe, you can write your own qua
 
 Custom functional testing is executed both for custom code deployments as well as push upgrades, which makes it especially important to write good functional tests which prevent AEM code changes from breaking your application code. The custom functional testing step is always present and cannot be skipped.
 
-Please refer to [Java Functional Tests](/help/implementing/cloud-manager/java-functional-testing.md) for more information.
+See [Java Functional Tests](/help/implementing/cloud-manager/java-functional-testing.md) for more information.
 
 
 ### Custom UI Testing {#custom-ui-testing}
 
 Custom UI testing is an optional feature that enables you to create and automatically run UI tests for your applications. UI tests are Selenium-based tests packaged in a Docker image to allow for a wide choice of language and frameworks such as Java and Maven, Node and WebDriver.io, or any other framework and technology built upon Selenium.
 
-Please refer to [Custom UI Testing](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) for more information.
+See [Custom UI Testing](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) for more information.
 
