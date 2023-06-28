@@ -9,7 +9,7 @@ exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 >
 >The contents of this document do not constitute legal advice and are not meant as a substitute for legal advice. 
 >
->Please consult your company's legal department for advice concerning Data Protection and Data Privacy regulations. 
+>Consult your company's legal department for advice concerning Data Protection and Data Privacy regulations. 
 
 >[!NOTE]
 >
@@ -17,7 +17,7 @@ exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 
 Adobe Experience Manager as a Cloud Service Sites is ready to help customers with their data privacy and protection compliance obligations. This page guides customers through the procedures to handle such requests in AEM Sites. It describes the location of private data stored, and how to remove them manually or with code.
 
-For further information see the [Adobe Privacy Center](https://www.adobe.com/privacy.html).
+For more information, see the [Adobe Privacy Center](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ User accounts and UGC content on the author server are covered in the [AEM Found
 
 User accounts used to authenticate visitors on the site, and UGC content on the publish server are covered in the [AEM Foundation documentation](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md).
 
-By default AEM Sites components do not store form-data entered by visitors on the  publish  server. It is recommended to forward the data to a third party system, or Adobe Campaign for further processing.
+By default AEM Sites components do not store form-data entered by visitors on the  publish  server. It is recommended to forward the data to a third-party system, or Adobe Campaign for further processing.
 
 ## Opt-In/Opt-Out {#opt-in-opt-out}
 
@@ -70,13 +70,13 @@ To Opt-out:
 
 AEM Sites includes an optional integration with Analytics Foundation which uses functionality within the Adobe Analytics On-demand Service.
 
-For further information on managing data subject requests related to Adobe Analytics see [Adobe Analytics and Data Privacy](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
+For more information on managing data subject requests related to Adobe Analytics see [Adobe Analytics and Data Privacy](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites includes an optional integration with Personalization Foundation by Target which uses functionality within the Adobe Target On-demand Service.
 
-For further information on managing data subject requests related to Adobe Target see [Adobe Target - Privacy and General Data Protection Regulation](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+For information on managing data subject requests related to Adobe Target see [Adobe Target - Privacy and General Data Protection Regulation](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 

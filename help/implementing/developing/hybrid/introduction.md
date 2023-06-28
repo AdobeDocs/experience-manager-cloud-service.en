@@ -40,7 +40,7 @@ The walkthrough is based on standard AEM functionality and the sample WKND SPA P
 
 ### What is a SPA? {#what-is-a-spa}
 
-A single-page application (SPA) differs from a conventional page in that it is rendered client-side and is primarily Javascript-driven, relying on Ajax calls to load data and dynamically update the page. Most or all content is retrieved once in a single page load with additional resources loaded asynchronously as needed based on user interaction with the page.
+A single-page application (SPA) differs from a conventional page in that it is rendered client-side and is primarily JavaScript-driven, relying on Ajax calls to load data and dynamically update the page. Most or all content is retrieved once in a single page load with additional resources loaded asynchronously as needed based on user interaction with the page.
 
 This reduces the need for page refreshes and presents an experience to the user that is seamless, fast, and feels more like a native app experience.
 
@@ -171,7 +171,7 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
 
 1. Switch to the Network tab in the Inspector and reload the page.
 
-   Ignoring image requests, note that the primary resources loaded for the page are the page itself, CSS, the React Javascript, its dependencies, as well as JSON data for the page.
+   Ignoring image requests, note that the primary resources loaded for the page are the page itself, CSS, the React JavaScript, its dependencies, as well as JSON data for the page.
 
    ![WKND SPA Project network activity](assets/wknd-network.png)
 
@@ -183,7 +183,7 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
 
    The AEM SPA Editor uses [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) to deliver the entire content of the page as a JSON model.
 
-   By implementing specific interfaces, Sling Models provide the information necessary to the SPA. The delivery of the JSON data is delegated downward to each component (from page, to paragraph, to component, etc.).
+   By implementing specific interfaces, Sling Models provide the information necessary to the SPA. The delivery of the JSON data is delegated downward to each component (from page, to paragraph, to component, and so on).
 
    Each component chooses what it exposes and how it is rendered (server-side with HTL or client-side with React or Angular). This article focuses on client-side rendering with React.
 

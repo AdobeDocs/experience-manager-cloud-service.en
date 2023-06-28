@@ -34,7 +34,7 @@ Configurations can be created for many different features within AEM.
 
 ### Example {#administrator-example}
 
-For example an administrator may create two configurations for Editable Templates.
+For example, an administrator may create two configurations for Editable Templates.
 
 * WKND-General
 * WKND-Magazine
@@ -149,7 +149,7 @@ Now let's have a look at the corresponding JCR content:
 
 In this example, we assume a WKND specific DAM folder here and a corresponding configuration. Starting at that folder `/content/dam/wknd`, we'll see that there is a string property named `cq:conf` that references the configuration that should apply for the subtree. The property will usually be set on the `jcr:content` of an asset folder or page. These `conf` links are explicit, so it is easy to follow them by just looking at the content in CRXDE.
 
-Jumping inside `/conf`, we follow the reference and see there is a `/conf/wknd` node. This is a configuration. Please note that its lookup is completely transparent to the application code. The example code never has a dedicated reference to it, it's hidden behind the `Conf` object. Which configuration applies is completely controlled through the JCR content.
+Jumping inside `/conf`, we follow the reference and see there is a `/conf/wknd` node. This is a configuration. Its lookup is completely transparent to the application code. The example code never has a dedicated reference to it, it's hidden behind the `Conf` object. Which configuration applies is completely controlled through the JCR content.
 
 We see the configuration contains a fixed-named `settings` node that contains the actual items, including the `dam/imageserver` we need in our case. Such an item can be thought of as a "settings document" and is usually represented by a `cq:Page` including a `jcr:content` holding the actual content.
 

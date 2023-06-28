@@ -59,7 +59,7 @@ The following segment comparisons are available out-of-the-box to evaluate segme
 
 >[!NOTE]
 >
->When comparing values, if the data type of the comparison is not set (i.e. set to auto detect), ContextHub's segmentation engine will simply compare the values as javascript would. It does not cast values to their expected types, which can lead to misleading results. For example:
+>When comparing values, if the data type of the comparison is not set (that is, set to auto detect), ContextHub's segmentation engine will simply compare the values as javascript would. It does not cast values to their expected types, which can lead to misleading results. For example:
 >
 >`null < 30 // will return true`
 >
@@ -169,7 +169,7 @@ By using the Script Reference component, the evaluation of a segment property ca
 
 1. Register the script with `ContextHub.SegmentEngine.ScriptManager.register`.
 
-If the script depends on additional properties, the script should call `this.dependOn()`. For example if the script depends on `profile/age`:
+If the script depends on additional properties, the script should call `this.dependOn()`. For example, if the script depends on `profile/age`:
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));

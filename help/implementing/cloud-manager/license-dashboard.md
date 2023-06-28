@@ -79,7 +79,7 @@ Content Requests will have variances with an organization's Analytics reporting 
 
 ### What if I would like to learn more about my content request volume? {#current-request-volumes}
 
-If you would like additional insights into the content request volume shown in the License Dashboard, your Adobe team can provide a report that shows the top volume drivers of content requests. Please reach out to your Adobe team or to Adobe Customer Care to request a top usage report.
+If you would like additional insights into the content request volume shown in the License Dashboard, your Adobe team can provide a report that shows the top volume drivers of content requests. Reach out to your Adobe team or to Adobe Customer Care to request a top usage report.
 
 ### What if I am using my own CDN? {#using-own-cdn}
 
