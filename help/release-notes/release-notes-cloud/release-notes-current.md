@@ -32,9 +32,11 @@ Have a look at the June 2023 Release Overview video for a summary of the feature
 
 ### New features in [!DNL Assets] {#assets-features}
 
-**New Assets view in [!DNL Experience Manager Assets]**
+**Availability of New Assets view in [!DNL Experience Manager Assets]**
 
 The new Assets view is now available in Experience Manager Assets. Assets View provides simplified user interface, which makes it easy to manage, discover, and distribute your digital assets. The experience is targeted to creatives, read-only asset consumers, and lighter-weight DAM users.
+
+![Tagging Management](/help/assets/assets/my-workspace.png)
 
 **Search experience enhancements**
 
