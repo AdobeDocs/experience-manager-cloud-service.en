@@ -34,7 +34,7 @@ Configurations can be created for many different features within AEM.
 
 ### Example {#administrator-example}
 
-For example an administrator may create two configurations for Editable Templates.
+For example, an administrator may create two configurations for Editable Templates.
 
 * WKND-General
 * WKND-Magazine
@@ -56,7 +56,7 @@ The Configuration Browser allows an administrator to easily create, manage, and 
 
 >[!NOTE]
 >
->It is only possible to create configurations using the Configuration Browser if your user has `admin` rights. `admin` rights are also required in order to assign access rights to the configuration or otherwise modify a configuration.
+>It is only possible to create configurations using the Configuration Browser if your user has `admin` rights. `admin` rights are also required to assign access rights to the configuration or otherwise modify a configuration.
 
 #### Creating a Configuration {#creating-a-configuration}
 
@@ -69,8 +69,8 @@ It is very simple to create a new configuration in AEM by using the Configuratio
    ![Create configuration](assets/configuration-create.png)
 
    * The **Title** should be descriptive.
-   * The **Name** will become the node name in the repository.
-     * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](naming-conventions.md)
+   * The **Name** becomes the node name in the repository.
+     * It is automatically generated based on the title and adjusted according to [AEM naming conventions.](naming-conventions.md)
      * It can be adjusted if necessary.
 1. Check the type of configurations you wish to allow.
    * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -85,7 +85,7 @@ It is very simple to create a new configuration in AEM by using the Configuratio
 
 #### Editing Configurations and Their Access Rights {#access-rights}
 
-If you think of configurations as workspaces, access rights can be set on those configurations in order to enforce who may and may not access those workspaces.
+If you think of configurations as workspaces, access rights can be set on those configurations to enforce who may and may not access those workspaces.
 
 1. Log into AEM as a Cloud Service and from the main menu select **Tools** -&gt; **General** -&gt; **Configuration Browser**.
 1. Select the configuration you wish to modify and then tap or click **Properties** in the tool bar.
@@ -149,7 +149,7 @@ Now let's have a look at the corresponding JCR content:
 
 In this example, we assume a WKND specific DAM folder here and a corresponding configuration. Starting at that folder `/content/dam/wknd`, we'll see that there is a string property named `cq:conf` that references the configuration that should apply for the subtree. The property will usually be set on the `jcr:content` of an asset folder or page. These `conf` links are explicit, so it is easy to follow them by just looking at the content in CRXDE.
 
-Jumping inside `/conf`, we follow the reference and see there is a `/conf/wknd` node. This is a configuration. Please note that its lookup is completely transparent to the application code. The example code never has a dedicated reference to it, it's hidden behind the `Conf` object. Which configuration applies is completely controlled through the JCR content.
+Jumping inside `/conf`, we follow the reference and see there is a `/conf/wknd` node. This is a configuration. Its lookup is completely transparent to the application code. The example code never has a dedicated reference to it, it's hidden behind the `Conf` object. Which configuration applies is completely controlled through the JCR content.
 
 We see the configuration contains a fixed-named `settings` node that contains the actual items, including the `dam/imageserver` we need in our case. Such an item can be thought of as a "settings document" and is usually represented by a `cq:Page` including a `jcr:content` holding the actual content.
 

@@ -34,13 +34,13 @@ Cloud Manager will verify domain ownership via the TXT value and displays one of
 * **Domain Verified & Deployed** - This status indicates that your custom domain name is ready to be used.
 
   * At this point, your custom domain name is ready for testing and to be pointed to the Cloud Manager domain name.
-  * Please refer to the document [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) to learn more.
+  * See [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) to learn more.
 
 * **Deleting** - The deletion of a custom domain name is in progress.
 
 * **Deletion Failed** - The deletion of custom domain name failed and must be retried.
 
-  * Please refer to the document [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more.
+  * See [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more.
 
 Cloud Manager will automatically trigger a TXT verification when you select **Save** on the verification step of the **Add Custom Domain** wizard. For subsequent verifications, you must actively select the verify again icon next to the status.
 
@@ -76,8 +76,8 @@ The error is fixed as follows:
 
 ## Pre-Existing CDN Configurations for Custom Domain Names {#pre-existing-cdn}
 
-If you have a pre-existing CDN configuration for your custom domain names, there will be an informative message on the the **Custom Domain Names** and **Environment** pages, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
+If you have a pre-existing CDN configuration for your custom domain names, there is an informative message on the the **Custom Domain Names** and **Environment** pages, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
 
 The message disappears once all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
 
-Please refer to the document [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) for more details.
+See [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) for more details.

@@ -38,11 +38,11 @@ An information architect would perform these tasks only sporadically as new mode
 
 1. When you are finished building your model, tap or click **Save**. 
 
-1. The mode of the newly-created model depends on whether you selected **Enable Model** when creating the model:
+1. The mode of the newly created model depends on whether you selected **Enable Model** when creating the model:
    * selected - the new model will already be **Enabled**
-   * not selected - the new model will be created in **Draft** mode
+   * not selected - the new model is created in **Draft** mode
 
-1. If not already enabled, the model must be **Enabled** in order to use it. 
+1. If not already enabled, the model must be **Enabled** to use it. 
    1. Select the model you just created and then tap or click **Enable**.
 
       ![Enabling the model](../assets/models-enable.png)

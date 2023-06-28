@@ -19,7 +19,7 @@ There are some accepted best practices in URLs.
 
 In your AEM project, when evaluating your URLs, ask yourself the following:
 
-*“If a user sees this URL and none of the content on the page, could they describe what this page was about?”*
+*"If a user sees this URL and none of the content on the page, could they describe what this page was about?"*
 
 If the answer is yes, then it is likely that the URL works well for a search engine.
 
@@ -71,9 +71,9 @@ Here are some general tips on how to construct your URLs for SEO:
 
 * Make sure that each page is only served from one protocol.
 
-  * Sometimes sites will be served over `http` until a user reaches a page with, for example, a checkout or login form, at which point it switches to `https`. When linking from this page, if the user can return to `http` pages and access them through `https`, the search engine tracks these as two separate pages.
+  * Sometimes sites are served over `http` until a user reaches a page with, for example, a checkout or login form, at which point it switches to `https`. When linking from this page, if the user can return to `http` pages and access them through `https`, the search engine tracks these as two separate pages.
 
-  * Google currently prefers `https` pages to `http` ones. For this reason, it often makes everyone’s life easier to serve the whole site over `https`.
+  * Google currently prefers `https` pages to `http` ones. For this reason, it often makes everyone's life easier to serve the whole site over `https`.
 
 ### Server configuration {#server-configuration}
 
@@ -145,7 +145,7 @@ There are a few points to be considered with this approach:
 The SCR annotation for this type of servlet would look something like this:
 
 ```
-@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
+@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 
 ```
 
@@ -186,7 +186,7 @@ You may want to display localized page names to users of translated content. For
 * It would be better for the URL to be:
   `www.mydomain.com/es/casa.html`.
 
-The challenge with localizing the name of the page is that many of the localization tools available on the AEM platform rely on having the page names match across locales in order to keep the content synchronized.
+The challenge with localizing the name of the page is that many of the localization tools available on the AEM platform rely on having the page names match across locales to keep the content synchronized.
 
 The `sling:alias` property allows you to have our cake and eat it too. `sling:alias` can be added as a property to any resource to allow for an alias name for the resource. In the previous example, you would have:
 
@@ -283,7 +283,7 @@ However, there is also a simpler way to manage this:
 
 So far, you have implemented mappings together with the logic in your components to use these mappings when outputting URLs onto our pages.
 
-The final piece to the puzzle is handling these shortened URLs when they come in to the Dispatcher, which is where `mod_rewrite` comes into play. The biggest benefit to using `mod_rewrite` is that the URLs are mapped back to their long form *before* they are sent to the Dispatcher module. This means that the Dispatcher requests the long URL from the publish server and cache it accordingly. Therefore, any Dispatcher flushes that come in from the publish server are able to successfully invalidate this content.
+The final piece to the puzzle is handling these shortened URLs when they come in to the Dispatcher, which is where `mod_rewrite` comes into play. The largest benefit to using `mod_rewrite` is that the URLs are mapped back to their long form *before* they are sent to the Dispatcher module. This means that the Dispatcher requests the long URL from the publish server and cache it accordingly. Therefore, any Dispatcher flushes that come in from the publish server are able to successfully invalidate this content.
 
 To implement these rules, you can add `RewriteRule` elements under your virtual host in the Apache HTTP Server configuration. If you want to expand the shortened URLs from the earlier example, you can implement a rule that looks like this:
 
@@ -311,7 +311,7 @@ Examples:
 Both would apply the following tag to the head of the page:
 
 ```xml
-<link rel=”canonical” href=”my-brand/my-page.html”/>
+<link rel="canonical" href="my-brand/my-page.html"/>
 
 ```
 
@@ -350,7 +350,7 @@ Disallow: /
 
 Alternately, on a live environment, you could choose to disallow certain paths that you do not want indexed.
 
-The caveat with placing the `robots.txt` file at the site root is that Dispatcher flush requests may clear this file out and URL mappings likely place the site root somewhere different from the `DOCROOT` as defined in the Apache HTTP Server configuration. For this reason, it is common to place this file on the author instance at the site root and replicate it to the publish instance.
+The caveat with placing the `robots.txt` file at the site root is that Dispatcher flush requests may clear out this file and URL mappings likely place the site root somewhere different from the `DOCROOT` as defined in the Apache HTTP Server configuration. For this reason, it is common to place this file on the author instance at the site root and replicate it to the publish instance.
 
 ### Building an XML sitemap on AEM {#building-an-xml-sitemap-on-aem}
 
@@ -372,7 +372,7 @@ For example, consider a site that defines a top-level sitemap root at `my-page` 
 
 In the default configuration, the Page Properties Dialog provides an option to mark a Page as a sitemap root and so, as described above, generate a sitemap of itself and its descendants. This behavior is implemented by implementations of the `SitemapGenerator` interface and may be extended by adding alternative implementations. However, as the frequency on which to regenerate the XML sitemaps highly depends on the content authoring workflows and workloads, the product does not ship any `SitemapScheduler` configuration. This makes the feature effectively opt-in. 
 
-In order to enable the background job that generates the XML sitemaps a `SitemapScheduler` must be configured. To do so, create an OSGI configuration for the PID `org.apache.sling.sitemap.impl.SitemapScheduler`. The scheduler expression `0 0 0 * * ?` can be used as a starting point to regenerate all XML sitemaps once a day at midnight. 
+To enable the background job that generates the XML sitemaps a `SitemapScheduler` must be configured. To do so, create an OSGI configuration for the PID `org.apache.sling.sitemap.impl.SitemapScheduler`. The scheduler expression `0 0 0 * * ?` can be used as a starting point to regenerate all XML sitemaps once a day at midnight. 
 
 ![Apache Sling Sitemap - Scheduler](assets/sling-sitemap-scheduler.png) 
 
@@ -461,7 +461,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 
 ```
 
-Furthermore, the functionality implemented for XML sitemaps can be used in different use cases as well, for example to add the canonical link or the language alternates to a page's head. Please refer to the [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
+Furthermore, the functionality implemented for XML sitemaps can be used in different use cases as well, for example to add the canonical link or the language alternates to a page's head. See the [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
 
 ### Creating 301 redirects for legacy URLs {#creating-redirects-for-legacy-urls}
 

@@ -45,11 +45,11 @@ You will see a new sandbox program card on the landing page with a status indica
 
 You can view the detail of your sandbox setup as well as access the environment (once available) by viewing the program overview page.
 
-1. From the Cloud Manager landing page, click the ellipsis button on your newly-created program.
+1. From the Cloud Manager landing page, click the ellipsis button on your newly created program.
 
    ![Accessing program overview](assets/program-overview-sandbox.png)
 
-1. Once the project creation step completes, you can access the **Access Repo Info** link in order to be able to use your git repo.
+1. After the project creation step completes, you can access the **Access Repo Info** link to be able to use your git repo.
 
    ![Program configuration](assets/create-program4.png)
    

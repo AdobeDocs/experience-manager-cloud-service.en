@@ -23,7 +23,7 @@ To respond to errors, AEM provides a `404.jsp` script under `/libs/sling/servlet
 
 ## How to Customize Pages Shown by the Error Handler {#how-to-customize-pages-shown-by-the-error-handler}
 
-You can develop your own scripts to customize the pages shown by the error handler when an error is encountered. To do this you will leverage [AEM's standard overlay mechanism](/help/implementing/developing/introduction/overlays.md) so that your customized pages are created under `/apps` and overlay the default pages that are under `/libs`.
+You can develop your own scripts to customize the pages shown by the error handler when an error is encountered. To do this you use [AEM's standard overlay mechanism](/help/implementing/developing/introduction/overlays.md) so that your customized pages are created under `/apps` and overlay the default pages that are under `/libs`.
 
 1. In the repository, copy the default script(s):
 
@@ -56,7 +56,7 @@ When request processing results in an exception, the Apache Sling framework (whi
   * The HTTP response code 500
   * The exception stack trace
 
-By [customizing the pages shown by the error handler](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` script can be created. However, it is only used if `HttpServletResponse.sendError(500)` is executed explicitly; i.e. from an exception catcher.
+By [customizing the pages shown by the error handler](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` script can be created. However, it is only used if `HttpServletResponse.sendError(500)` is executed explicitly; that is, from an exception catcher.
 
 Otherwise, the response code is set to 500, but the `500.jsp` script is not executed.
 
@@ -64,7 +64,7 @@ To handle 500 errors, the file name of the error handler script must be the same
 
 >[!NOTE]
 >
->In AEM as Cloud Service, the CDN serves a generic error page when a 5XX error is received from the backend. In order to allow the actual response of the backend to pass through you need to add the following header to the response: `x-aem-error-pass: true`.
+>In AEM as Cloud Service, the CDN serves a generic error page when a 5XX error is received from the backend. To allow the actual response of the backend to pass through you need to add the following header to the response: `x-aem-error-pass: true`.
 >This works only for responses coming from AEM or the Apache/Dispatcher layer. Other unexpected errors coming from intermediate infrastructure layers will still display the generic error page.
 
 >[!CAUTION]

@@ -39,7 +39,7 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
 1. In AEM open the **Tools** menu.
 1. In the **Security** section select **Adobe IMS Configurations**.
 1. Select **Create** to open the **Adobe IMS Technical Account Configuration**.
-1. Using the drop down under **Cloud Configuration**, select **Adobe Analytics**.
+1. Using the drop-down under **Cloud Configuration**, select **Adobe Analytics**.
 1. Activate **Create new certificate** and enter a new alias.
 1. Confirm with **Create certificate**.
 
@@ -49,7 +49,7 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
 
    >[!CAUTION]
    >
-   >Keep this configuration open, it will be needed again when [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
+   >Keep this configuration open, it is needed again when [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
    ![Download Certificate](assets/integrate-analytics-ims-02.png)
 
@@ -65,11 +65,11 @@ Open the Adobe Developer Console to create a Project with Adobe Analytics that A
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Any projects that you have will be shown. Select **Create New Project** - the location and usage will depend on:
+1. Any projects that you have are shown. Select **Create New Project** - the location and usage will depend on:
 
-   * If you do not have any project yet, **Create new project** will be center, bottom. 
+   * If you do not have any project yet, **Create new project** is center, bottom. 
      ![Create New Project - First Project](assets/integration-analytics-ims-02.png)
-   * If you already have existing projects these will be listed and **Create new project** will be top right. 
+   * If you already have existing projects, these are listed and **Create new project** is top right. 
      ![Create New Project - Multiple Projects](assets/integration-analytics-ims-03.png)
 
 
@@ -101,7 +101,7 @@ Open the Adobe Developer Console to create a Project with Adobe Analytics that A
 
    ![Select required product profiles](assets/integration-analytics-ims-16.png)
 
-1. The configuration will be confirmed.
+1. The configuration is confirmed.
 
 ### Assigning privileges to the Integration {#assigning-privileges-to-the-integration}
 
@@ -154,7 +154,7 @@ Returning to AEM you can complete the IMS configuration by adding required value
 
 1. Confirm with **Create**.
 
-1. Your Adobe Analytics configuration will be shown in the AEM console.
+1. Your Adobe Analytics configuration is shown in the AEM console.
 
    ![IMS Configuration](assets/integrate-analytics-ims-11.png)
 
@@ -191,7 +191,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
    The **Create Configuration** dialog will open.
 
-1. Enter a **Title** and, if you want, a **Name** (if left blank this will be generated from the title).
+1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
    You can also select the required template (if more than one is available).
 
@@ -213,5 +213,5 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
 1. Complete other parameters as required, followed by **OK** on the dialog to confirm the configuration.
 
-1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that will be sent to Adobe Analytics. 
+1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that are sent to Adobe Analytics. 
 -->

@@ -32,7 +32,7 @@ Perform a range of other actions depending on the data-type being edited; for ex
 
 ## Authoring your Content {#authoring-your-content}
 
-When you open your content fragment for editing, the **Variations** tab will be open by default. Here you can author the content, for Master or any variations you have. The structured fragment contains various fields, of various data-types, that were defined in the content model. 
+When you open your content fragment for editing, the **Variations** tab is open by default. Here you can author the content, for Master or any variations you have. The structured fragment contains various fields, of various data-types, that were defined in the content model. 
 
 For example:
 
@@ -82,7 +82,7 @@ The full screen text editor provides:
 
 ### Actions {#actions}
 
-The following actions are also available (for all the [formats](#formats)) when the full-screen editor (i.e. multi-line text) is open:
+The following actions are also available (for all the [formats](#formats)) when the full-screen editor (that is, multi-line text) is open:
 
 * Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text,](#plain-text) [Markdown](#markdown))
 
@@ -312,7 +312,7 @@ Annotations:
 
 To ease the process of authoring content fragments you can add [Assets](/help/assets/manage-digital-assets.md) (images) directly to the fragment.
 
-They will be added to the paragraph sequence of the fragment without any formatting; formatting can be done when the [fragment is used/referenced on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+They are added to the paragraph sequence of the fragment without any formatting; formatting can be done when the [fragment is used/referenced on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -341,14 +341,14 @@ They will be added to the paragraph sequence of the fragment without any formatt
    >[!CAUTION]
    >
    >If, after adding an asset, you change format to:
-   >* **Plain Text**: the asset will be completely lost from the fragment.
+   >* **Plain Text**: the asset is completely lost from the fragment.
    >* **Markdown**: the asset will not be visible, but will still be there when you return to **Rich Text**.
 
 ### Inserting a Content Fragment into your Fragment {#inserting-content-fragment-into-your-fragment}
 
 To ease the process of authoring content fragments you can also add another Content Fragment to your fragment.
 
-They will be added as a reference, in your current location in your fragment.
+They are added as a reference, in your current location in your fragment.
 
 >[!NOTE]
 >
@@ -381,7 +381,7 @@ They will be added as a reference, in your current location in your fragment.
    >[!CAUTION]
    >
    >If, after adding a reference to another fragment, you change format to:
-   >* **Plain Text**: the reference will be completely lost from the fragment.
+   >* **Plain Text**: the reference is completely lost from the fragment.
    >* **Markdown**: the reference will remain.
 
 ## Managing Variations {#managing-variations}
@@ -396,7 +396,7 @@ To create a new variation:
 1. Select **Variations** from the icon bar in the side panel.
 1. Select **Create Variation**.
 1. A dialog will open, specify the **Title** and **Description** for the new variation.
-1. Select **Add**; the fragment **Master** will be copied to the new variation, which is now open for [editing](#editing-a-variation).
+1. Select **Add**; the fragment **Master** is copied to the new variation, which is now open for [editing](#editing-a-variation).
 
    >[!NOTE]
    >
@@ -421,7 +421,7 @@ To rename an existing variation:
 
 1. Open your fragment and select **Variations** from the side panel.
 1. Select the required variation.
-1. Select **Rename** from the **Actions** drop down.
+1. Select **Rename** from the **Actions** drop-down.
 
 1. Enter the new **Title** and/or **Description** in the resulting dialog box.
 
@@ -437,7 +437,7 @@ To delete an existing variation:
 
 1. Open your fragment and select **Variations** from the side panel.
 1. Select the required variation.
-1. Select **Delete** from the **Actions** drop down.
+1. Select **Delete** from the **Actions** drop-down.
 
 1. Confirm the **Delete** action in the dialog.
 
@@ -455,7 +455,7 @@ When editing a variation you have access to the action for synchronizing the cur
 >
 >Synchronization is only available to copy changes *from **Master** to the variation*.
 >
->Only the current element of the variation will be synchronized.
+>Only the current element of the variation is synchronized.
 >
 >Synchronization only works on the **Multi line text** data-type.
 >
@@ -465,7 +465,7 @@ When editing a variation you have access to the action for synchronizing the cur
 
 1. Select a specific variation, then the appropriate synchronization action from either:
 
-   * the **Actions** drop down selector - **Sync current element with master**
+   * the **Actions** drop-down selector - **Sync current element with master**
 
       ![synchronizing with master](assets/cfm-variations-11a.png)
 
@@ -473,7 +473,7 @@ When editing a variation you have access to the action for synchronizing the cur
 
       ![synchronizing with master](assets/cfm-variations-11b.png)
 
-1. Master and the variation will be shown side-by-side:
+1. Master and the variation is shown side-by-side:
 
    * green indicates content added (to the variation)
    * red indicates content removed (from the variation)
@@ -481,4 +481,4 @@ When editing a variation you have access to the action for synchronizing the cur
 
    ![synchronizing with master](assets/cfm-variations-11c.png)
 
-1. Select **Synchronize**, the variation will be updated and shown.
+1. Select **Synchronize**, the variation is updated and shown.

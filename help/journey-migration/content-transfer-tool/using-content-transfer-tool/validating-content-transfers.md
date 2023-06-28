@@ -13,7 +13,7 @@ Users have the ability to reliably determine if all of the content that was extr
 >
 >This feature will be available as of the Content Transfer Tool (CTT) version 1.8.x release. The AEM Cloud Service target environment must be running at least version 6158 or greater. It also requires the source environment to be setup to run [pre-copy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). The validation feature looks for the azcopy.config file on the source. If it fails to find this file, validation will not run. To learn more about how to configure an azcopy.config file, see [this page](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-Validating a content transfer is an optional feature. Enabling this feature will increase both the time it takes to perform an extraction as well as an ingestion. In order to use the feature, enable it in the System Console of the source AEM environment by following these steps:
+Validating a content transfer is an optional feature. Enabling this feature will increase both the time it takes to perform an extraction as well as an ingestion. To use the feature, enable it in the System Console of the source AEM environment by following these steps:
 
 1. Navigate to the Adobe Experience Manager Web Console on your source instance, by going to **Tools - Operations - Web Console** or directly to the URL at *https://serveraddress:serverport/system/console/configMgr*
 1. Search for **Content Transfer Tool Extraction Service Configuration**
@@ -30,7 +30,7 @@ For more information on how to install the Content Transfer Tool, see [Getting S
 
 With migration validation enabled on the source AEM environment, begin an extraction.
 
-If **Overwrite staging container during extraction** is enabled, all the nodes which are involved with the extraction will be logged to the extraction path digest. When this setting is used, it is important to enable the **Wipe existing content on Cloud instance before ingestion** setting during ingestion, otherwise there may appear to be nodes missing from the ingestion digest. These are the nodes which are already present on the target from prior ingestions.
+If **Overwrite staging container during extraction** is enabled, all the nodes which are involved with the extraction are logged to the extraction path digest. When this setting is used, it is important to enable the **Wipe existing content on Cloud instance before ingestion** setting during ingestion, otherwise there may appear to be nodes missing from the ingestion digest. These are the nodes which are already present on the target from prior ingestions.
 
 For a graphical illustration of this, please refer to the examples below:
 
@@ -62,13 +62,13 @@ For a graphical illustration of this, please refer to the examples below:
 
   This combination of "Overwrite" and "Wipe" will result in consistent validation results for the initial ingestion.
 
-  If ingestion is repeated, the ingestion digest will be empty, and validation will appear to have failed. The ingestion digest will be empty because all the nodes from this extraction will already be present on the target.
+  If ingestion is repeated, the ingestion digest is empty, and validation appears to have failed. The ingestion digest is empty because all the nodes from this extraction will already be present on the target.
 
 Once extraction is complete, begin ingestion.
 
 The top of the ingestion log will contain an entry, similar to `aem-ethos/tools:1.2.438`. Ensure this version number is **1.2.438** or greater, otherwise validation is not supported by the release of AEM as a Cloud Service that you are using.
 
-Once ingestion is complete and validation is beginning, the following log entry will be noted in the ingestion log:
+After ingestion is complete and validation is beginning, the following log entry is noted in the ingestion log:
 
 ```
 Gathering artifacts for migration validation...
@@ -109,7 +109,7 @@ EXTRACTION: Number of nodes extracted: 4635
 INGESTION: Number of nodes ingested: 0
 ----------------------------------------------------------
 Validation failed. However, the following nodes may already be present in the target environment.
-Please refer to our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
+See our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
 There are 4635 entries present in the extraction digest that are missing from the ingestion digest.
 /content/dam/bruce
 /content/dam/bruce-assets
@@ -121,7 +121,7 @@ Migration validation took 0 minutes
 
 The above failure example was achieved by running an ingestion, and then re-running the same ingestion again with Wipe disabled, such that no nodes were involved during ingestion — everything was already present on the target.
 
-In addition to being included in the ingestion log, the validation report can also be accessed from the **Ingestion Jobs** user interface in Cloud Acceleration Manager. To do so, click on the three dots (**...**)  then click on **Validation report** in the drop down to view the validation report. 
+In addition to being included in the ingestion log, the validation report can also be accessed from the **Ingestion Jobs** user interface in Cloud Acceleration Manager. To do so, click on the three dots (**...**)  then click on **Validation report** in the drop-down to view the validation report. 
 
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
@@ -130,9 +130,9 @@ In addition to being included in the ingestion log, the validation report can al
 
 See [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) to read the principal migrations details and why it is necessary.
 
-Once the extraction and ingestion are successfully completed, a summary and report of the principal migration will be available. This information can be used to validate which users and groups were migrated successfully, and, perhaps, to determine why some were not.
+After the extraction and ingestion are successfully completed, a summary and report of the principal migration is available. This information can be used to validate which users and groups were migrated successfully, and, perhaps, to determine why some were not.
 
-To view this information, go to Cloud Acceleration Manager. Click on your project card and click on the Content Transfer card. Navigate to **Ingestion Jobs** and locate the ingestion that you want to verify. Click on the three dots (**...**) for that ingestion, then click on **View principal summary** in the drop down.
+To view this information, go to Cloud Acceleration Manager. Click on your project card and click on the Content Transfer card. Navigate to **Ingestion Jobs** and locate the ingestion that you want to verify. Click on the three dots (**...**) for that ingestion, then click on **View principal summary** in the drop-down.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
@@ -142,7 +142,7 @@ You will see a dialog with the summary information. Use the help icons to read a
 
 >[!NOTE]
 >
->If user mapping is disabled, another variant of this dialog will be shown. It will indicate that user mapping was disabled, and will not show the 3 fields giving user mapping values.
+>If user mapping is disabled, another variant of this dialog box is shown. It will indicate that user mapping was disabled, and will not show the 3 fields giving user mapping values.
 
 ## Troubleshooting {#troubleshooting}
 
@@ -150,7 +150,7 @@ You will see a dialog with the summary information. Use the help icons to read a
 
 The first step is to determine if ingestion really did fail, or if the extracted content is already present on the target environment. This can occur if an ingestion is repeated with the **Wipe existing content on Cloud instance before ingestion** option disabled.
 
-To verify, choose a path from the validation report and check if it is present on the target environment. If this is a publish environment, you may be limited to checking pages and assets directly. Please open a ticket with Customer Care if you need assistance with this step.
+To verify, choose a path from the validation report and check if it is present on the target environment. If this is a publish environment, you may be limited to checking pages and assets directly. Open a ticket with Customer Care if you need assistance with this step.
 
 ### The node count is lower than I was expecting. Why is that? {#node-count-lower-than-expected}
 

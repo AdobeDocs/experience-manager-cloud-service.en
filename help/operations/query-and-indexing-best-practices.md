@@ -26,7 +26,7 @@ Since queries can be one of the more taxing operations done on an AEM system, it
 
 ### Traversing Nodes {#traversing-nodes}
 
-If the repository is designed in such a way that allows prior knowledge of the location of the required data, code that retrieves this data from the necessary paths can be deployed without having to run queries in order to find it.
+If the repository is designed in a way that allows prior knowledge of the location of the required data, code that retrieves this data from the necessary paths can be deployed without having to run queries to find it.
 
 An example of this would be rendering content that fits within a certain category. One approach would be to organize the content with a category property that can be queried to populate a component that shows items in a category.
 
@@ -71,7 +71,7 @@ This chart illustrates the general flow to use the Query Performance Tool to opt
 
 Every query should use an index to deliver optimal performance. In the majority of cases, existing out-of-the-box indexes should be sufficient to handle queries.
 
-Sometimes custom properties need to be added to an existing index, so additional constraints can be queried using the index. See the document [Content Search and Indexing](/help/operations/indexing.md#changing-an-index) for more details. The [JCR Query Cheatsheet](#jcr-query-cheatsheet) section of this document describes how a property definition on an index has to look in order to support a specific query type.
+Sometimes custom properties need to be added to an existing index, so additional constraints can be queried using the index. See the document [Content Search and Indexing](/help/operations/indexing.md#changing-an-index) for more details. The [JCR Query Cheatsheet](#jcr-query-cheatsheet) section of this document describes how a property definition on an index has to look to support a specific query type.
 
 ### Use the Right Criteria {#use-the-right-criteria}
 

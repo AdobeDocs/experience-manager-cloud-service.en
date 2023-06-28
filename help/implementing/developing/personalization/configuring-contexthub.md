@@ -143,7 +143,7 @@ A contexthub.generic-jsonp store is configured so that it stores data for the se
 
 The contexthub.generic-jsonp sample store candidate enables you to retrieve data from a JSONP service or a web service that returns JSON data. For this store candidate, use the store configuration to provide details about the JSONP service to use.
 
-The [init](contexthub-api.md#init-name-config) function of the `ContextHub.Store.JSONPStore` Javascript class defines a `config` object that initializes this store candidate. The `config` object contains a `service` object that includes details about the JSONP service. To configure the store, you provide the `service` object in JSON format as the value for the Detail Configuration property.
+The [init](contexthub-api.md#init-name-config) function of the `ContextHub.Store.JSONPStore` JavaScript class defines a `config` object that initializes this store candidate. The `config` object contains a `service` object that includes details about the JSONP service. To configure the store, you provide the `service` object in JSON format as the value for the Detail Configuration property.
 
 To save data from the MD5 service of the jsontest.com site, use the procedure in [Creating a ContextHub Store](#creating-a-contexthub-store) using the following properties:
 

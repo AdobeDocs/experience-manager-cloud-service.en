@@ -84,7 +84,7 @@ Now that you have accessed Cloud Manager, you can create a pipeline for front-en
    * Make sure that the correct environment is selected under **Eligible Deployment Environments**.
    * Select the correct **Repository**.
    * Define which **Git Branch** the pipeline should be associated with.
-   * Define the **Code Location** if the front-end development is located under a particular path in the selected repository. The default value is the root of the repository, but often front-end development and back end will be under different paths.
+   * Define the **Code Location** if the front-end development is located under a particular path in the selected repository. The default value is the root of the repository, but often front-end development and back end are under different paths.
 
    ![Source code info for adding pipeline](assets/add-pipeline-source-code.png)
 

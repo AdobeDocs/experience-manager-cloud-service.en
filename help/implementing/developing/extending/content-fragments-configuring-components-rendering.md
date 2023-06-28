@@ -30,7 +30,7 @@ It is recommended to use the Core Components.
 
 The services that require the registration of a component are:
 
-* Determining dependencies correctly during publication (i.e. ensure that fragments & models can be automatically published with a page if they have changed since last publication).
+* Determining dependencies correctly during publication (that is, ensure that fragments & models can be automatically published with a page if they have changed since last publication).
 * Support for content fragments in full text search.
 * The management/handling of *in-between content.*
 * The management/handling of *mixed media assets.*
@@ -87,7 +87,7 @@ The OSGi configuration is:
  </tbody>
 </table>
 
-For some functionality your component will have to adhere to predefined conventions. The following table details the properties that need to be defined, by your component, for each paragraph (i.e. `jcr:paragraph` for each component instance) so that the services can detect and process them correctly. 
+For some functionality your component will have to adhere to predefined conventions. The following table details the properties that need to be defined, by your component, for each paragraph (that is, `jcr:paragraph` for each component instance) so that the services can detect and process them correctly. 
 
 <table>
  <thead>

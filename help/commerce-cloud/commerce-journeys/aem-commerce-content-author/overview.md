@@ -29,7 +29,7 @@ If you want to know how Adobe recommends how to solve sites business cases with 
 
 This journey is designed for the AEM Commerce content author. This journey lays out the requirements, steps, and approach to get started and manage catalog pages, templates and full product experiences.
 
-Information in this journey can of course be useful to other personas, but some information will be superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
+Information in this journey can of course be useful to other personas, but some information is superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
 
 ## The Journey {#the-journey}
 
