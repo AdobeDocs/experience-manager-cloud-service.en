@@ -48,7 +48,7 @@ To track the changes you have made, you can view the launch in **References** an
 
    ![Comparing launch to source](/help/sites-cloud/authoring/assets/launches-compare.png)
 
-1. The two pages (launch and source) will be opened side-by-side.
+1. The two pages (launch and source) are opened side-by-side.
 
    For full information about using this feature see [Page Diff](/help/sites-cloud/authoring/features/page-diff.md).
 
@@ -61,12 +61,12 @@ At any time you can either add or remove pages to/from the range of source pages
      * Select **Edit**.
    * [References (Sites console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) to show the available actions:
      * Select **Edit Launch**.
-     * The source pages will be shown.
+     * The source pages are shown.
 1. Make your required changes, then confirm with **Save**.
 
 >[!NOTE]
 >
->To add pages to a launch they must be below a common language root; i.e. within a single site.
+>To add pages to a launch they must be below a common language root; that is, within a single site.
 
 ## Editing a Launch Configuration {#editing-a-launch-configuration}
 
@@ -77,7 +77,7 @@ At any time you can edit the properties for a launch:
      * Select **Properties**.
    * [References (Sites console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) to show the available actions:
      * Select **Edit Properties**.
-     * The details will be shown.
+     * The details are shown.
 1. Make your required changes, then confirm with **Save**.
    * See [Launches - the Order of Events](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) for information about the purpose and interaction of the **Launch Date** and **Production Ready** fields.
 

@@ -27,7 +27,7 @@ There are two types of endpoints in AEM:
 >
 >The Content Fragment Editor can allow a Content Fragment of one Sites configuration to reference a Content Fragment of another Sites configuration (via polices). 
 >
->In such a case not all content will be retrievable using a Sites configuration specific endpoint. 
+>In such a case, not all content is retrievable using a Sites configuration specific endpoint. 
 >
 >The content author should control this scenario; for example, it may be useful to consider putting shared Content Fragment Models under the Global Sites configuration.
 
@@ -64,7 +64,7 @@ To enable the corresponding endpoint:
    >
    >The following warning is shown in the dialog:
    >
-   >* *GraphQL endpoints may introduce data security and performance issues if not managed carefully. Please ensure to set appropriate permissions after creating an endpoint.*
+   >* *GraphQL endpoints may introduce data security and performance issues if not managed carefully. Ensure that appropriate permissions are set after creating an endpoint.*
    
 1. Confirm with **Create**.
 1. The **Next steps** dialog will provide a direct link to the Security console so that you can ensure that newly created endpoint has suitable permissions.

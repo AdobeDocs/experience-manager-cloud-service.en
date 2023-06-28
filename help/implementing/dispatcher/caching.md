@@ -6,10 +6,10 @@ exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 ---
 # Introduction {#intro}
 
-Traffic passes through the CDN to an Apache web server layer, which supports modules including Dispatcher. In order to increase performance, Dispatcher is used primarily as a cache to limit processing on the publish nodes.
-Rules can be applied to the Dispatcher configuration to modify any default cache expiration settings, resulting in caching at the CDN. Note that Dispatcher also respects the resulting cache expiration headers if `enableTTL` is enabled in the Dispatcher configuration, implying that it will refresh specific content even outside of content being republished.
+Traffic passes through the CDN to an Apache web server layer, which supports modules including Dispatcher. To increase performance, Dispatcher is used primarily as a cache to limit processing on the publish nodes.
+Rules can be applied to the Dispatcher configuration to modify any default cache expiration settings, resulting in caching at the CDN. Dispatcher also respects the resulting cache expiration headers if `enableTTL` is enabled in the Dispatcher configuration, implying that it refreshes specific content even outside of content being republished.
 
-This page also describes how the Dispatcher cache is invalidated and how caching works at the browser level with regards to client-side libraries.
+This page also describes how the Dispatcher cache is invalidated and how caching works at the browser level regarding client-side libraries.
 
 ## Caching {#caching}
 
@@ -23,7 +23,7 @@ Define DISABLE_DEFAULT_CACHING
 
 ```
 
-This can be useful, for example, when your business logic requires fine tuning of the age header (with a value based on calendar day) since by default the age header is set to 0. That said, **please exercise caution when turning off default caching.**
+This method is useful, for example, when your business logic requires fine-tuning of the age header (with a value based on calendar day) since by default the age header is set to 0. That said, **exercise caution when turning off default caching.**
 
 * can be overridden for all HTML/Text content by defining the `EXPIRATION_TIME` variable in `global.vars` using the AEM as a Cloud Service SDK Dispatcher tools.
 * can be overridden on a finer grained level, including controlling CDN and browser cache independently, with the following Apache `mod_headers` directives:
@@ -37,9 +37,9 @@ This can be useful, for example, when your business logic requires fine tuning o
    ```
 
    >[!NOTE]
-   >The Surrogate-Control header applies to the Adobe managed CDN. If using a [customer managed CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), a different header may be required depending on your CDN provider.
+   >The Surrogate-Control header applies to the Adobe managed CDN. If using a [customer-managed CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), a different header may be required depending on your CDN provider.
 
-   Exercise caution when setting either global cache control headers or those that match a wide regex so they are not applied to content that you need to keep private. Consider using multiple directives to ensure rules are applied in a fine-grained manner. With that said, AEM as a Cloud Service will remove the cache header if it detects that it has been applied to what it detects to be uncacheable by Dispatcher, as described in Dispatcher documentation. In order to force AEM to always apply the caching headers, one can add the **always** option as follows:
+   Exercise caution when setting either global cache control headers or similar cache headers that match a wide regex so they are not applied to content that you must keep private. Consider using multiple directives to ensure rules are applied in a fine-grained manner. With that said, AEM as a Cloud Service removes the cache header if it detects that it has been applied to what it detects to be uncacheable by Dispatcher, as described in Dispatcher documentation. To force AEM to always apply the caching headers, one can add the **`always`** option as follows:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -51,7 +51,7 @@ This can be useful, for example, when your business logic requires fine tuning o
 
    ```
 
-   You must ensure that a file under `src/conf.dispatcher.d/cache` has the following rule (which is in the default configuration):
+   Ensure that a file under `src/conf.dispatcher.d/cache` has the following rule (which is in the default configuration):
 
    ```
    /0000
@@ -70,17 +70,17 @@ This can be useful, for example, when your business logic requires fine tuning o
 
    ```
 
-* While HTML content set to private will not be cached at the CDN, it can be cached at the dispatcher if [Permission Sensitive Caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) is configured, ensuring that only authorized users can be served the content.
+* While HTML content set to private is not cached at the CDN, it can be cached at the Dispatcher if [Permission Sensitive Caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) is configured, ensuring that only authorized users can be served the content.
 
    >[!NOTE]
-   >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+   >The other methods, including the [Dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), does not successfully override values.
 
    >[!NOTE]
-   >Please note that Dispatcher might still cache content according to its own [caching rules](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). To make the content truly private you should ensure that it is not cached by Dispatcher.
+   >The Dispatcher might still cache content according to its own [caching rules](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). To make the content truly private, ensure that it is not cached by Dispatcher.
 
 ### Client-Side libraries (js,css) {#client-side-libraries}
 
-* When using AEM's Client-Side library framework, JavaScript and CSS code is generated in such a way that browsers can cache it indefinitely, since any changes manifest as new files with a unique path.  In other words, HTML that references the client libraries will be produced as needed so customers can experience new content as it is published. The cache-control is set to "immutable" or 30 days for older browsers who don't respect the "immutable" value.
+* When using AEM's Client-Side library framework, JavaScript and CSS code is generated in such a way that browsers can cache it indefinitely, since any changes manifest as new files with a unique path. In other words, HTML that references the client libraries are produced as needed so customers can experience new content as it is published. The cache-control is set to "immutable" or 30 days for older browsers who don't respect the "immutable" value.
 * see the section [Client-side libraries and version consistency](#content-consistency) for additional details.
 
 ### Images and any content large enough to be stored in blob storage {#images}
@@ -97,11 +97,11 @@ In both cases, the caching headers can be overridden on a finer grained level at
 
    ```
 
-When modifying the caching headers at the Dispatcher layer, please be cautious not to cache too widely, see the discussion in the HTML/text section [above](#html-text). Also, make sure that assets that are meant to be kept private (rather than cached) are not part of the `LocationMatch` directive filters.
+When modifying the caching headers at the Dispatcher layer, be cautious not to cache too widely. See the discussion in the HTML/text section [above](#html-text). Also, make sure that assets that are meant to be kept private (rather than cached) are not part of the `LocationMatch` directive filters.
 
 #### New default caching behavior {#new-caching-behavior}
 
-The AEM layer will set cache headers depending on whether the cache header has already been set and the value of the request type. Please note that if no cache control header has been set, public content is cached and authenticated traffic is set to private. If a cache control header has been set, the cache headers will be left untouched.
+The AEM layer sets cache headers depending on whether the cache header has already been set and the value of the request type. If no cache control header is set, public content is cached, and authenticated traffic is set to private. If a cache control header is set, the cache headers are left untouched.
 
 | Cache control header exists? | Request type  | AEM sets cache headers to                      |
 |------------------------------|---------------|------------------------------------------------|
@@ -113,15 +113,15 @@ While not recommended, it is possible to change the new default behavior to foll
 
 #### Older default caching behavior {#old-caching-behavior}
 
-The AEM layer will not cache blob content by default.
+The AEM layer does not cache blob content by default.
 
 >[!NOTE]
->It is recommended to change the older default behavior to be consistent with the new behavior (program ids that are higher than 65000) by setting the Cloud Manager environment variable AEM_BLOB_ENABLE_CACHING_HEADERS to true. If the program is already live, make sure you verify that after the changes, content behaves as you expect.
+>Change the older default behavior to be consistent with the new behavior (program ids that are higher than 65000) by setting the Cloud Manager environment variable AEM_BLOB_ENABLE_CACHING_HEADERS to true. If the program is already live, make sure you verify that after the changes, content behaves as you expect.
 
-At present, images in blob storage that are marked private cannot be cached at the dispatcher using [Permission Sensitive Caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). The image is always requested from the AEM origin and served if the user is authorized.  
+Now, images in blob storage that are marked private cannot be cached at the Dispatcher using [Permission Sensitive Caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). The image is always requested from the AEM origin and served if the user is authorized.  
 
 >[!NOTE]
->The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override the values.
+>The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), do not successfully override the values.
 
 ### Other content file types in node store {#other-content}
 
@@ -131,15 +131,15 @@ At present, images in blob storage that are marked private cannot be cached at t
 
 ### Further Optimizations {#further-optimizations}
 
-* Avoid using `User-Agent` as part of the `Vary` header. Older versions of the default Dispatcher setup (prior to archetype version 28) included this and we recommend you removing it by using the steps below.
+* Avoid using `User-Agent` as part of the `Vary` header. Older versions of the default Dispatcher setup (before archetype version 28) included it and Adobe recommends that you remove it by using the steps below.
    * Locate the vhost files in `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
-   * Remove or comment out the line: `Header append Vary User-Agent env=!dont-vary` from all vhost files, with the exception of default.vhost, which is read-only
+   * Remove or comment out the line: `Header append Vary User-Agent env=!dont-vary` from all vhost files, except for default.vhost, which is read-only
 * Use the `Surrogate-Control` header to control CDN caching independent from browser caching
 * Consider applying [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) and [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) directives to allow background refresh and avoid cache misses, keeping your content fast and fresh for users.
-   * There are many ways to apply these directives, but adding a 30 minute `stale-while-revalidate` to all cache control headers is a good starting point.
-* Some examples follow for various content types, which can be used as a guide when setting up your own caching rules. Please carefully consider and test for your specific setup and requirements:
+   * There are many ways to apply these directives, but adding a 30-minute `stale-while-revalidate` to all cache control headers is a good starting point.
+* Some examples follow for various content types, which can be used as a guide when setting up your own caching rules. Carefully consider and test for your specific setup and requirements:
 
-   * Cache mutable client library resources for 12h and background refresh after 12h.
+   * Cache mutable client library resources for 12 hours and background refresh after 12 hours.
    
       ```
       <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
@@ -157,7 +157,7 @@ At present, images in blob storage that are marked private cannot be cached at t
       </LocationMatch>
       ```
 
-   * Cache HTML pages for 5min with background refresh 1h on browser and 12h on CDN. Cache-Control headers will always be added so it is important to ensure that matching html pages under /content/* are intended to be public. If not, consider using a more specific regex.
+   * Cache HTML pages for five minutes with background refresh one hour on browser and 12 hours on CDN. Cache-Control headers are always added so it is important to ensure that matching html pages under /content/* are intended to be public. If not, consider using a more specific regex.
 
       ```
       <LocationMatch "^/content/.*\.html$">
@@ -168,7 +168,7 @@ At present, images in blob storage that are marked private cannot be cached at t
       </LocationMatch>
       ```
 
-   * Cache content services/Sling model exporter json responses for 5min with background refresh 1h on browser and 12h on CDN.
+   * Cache content services/Sling model exporter json responses for five minutes with background refresh one hour on browser and 12 hours on CDN.
 
       ```
       <LocationMatch "^/content/.*\.model\.json$">
@@ -187,7 +187,7 @@ At present, images in blob storage that are marked private cannot be cached at t
       </LocationMatch>
       ```
 
-   * Cache mutable resources from the DAM like images and video for 24h and background refresh after 12h to avoid MISS
+   * Cache mutable resources from the DAM like images and video for 24 hours and background refresh after 12 hours to avoid MISS.
 
       ```
       <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
@@ -198,11 +198,11 @@ At present, images in blob storage that are marked private cannot be cached at t
 
 ### HEAD request behavior {#request-behavior}
 
-When a HEAD request is received at the Adobe CDN for a resource that is **not** cached, the request is transformed and received by the Dispatcher and/or AEM instance as a GET request. If the response is cacheable, then subsequent HEAD requests will be served from the CDN. If the response is not cacheable, then subsequent HEAD requests will be passed to the Dispatcher and/or AEM instance for a period of time that depends on the `Cache-Control` TTL.
+When a HEAD request is received at the Adobe CDN for a resource that is **not** cached, the request is transformed and received by the Dispatcher and/or AEM instance as a GET request. If the response is cacheable, then subsequent HEAD requests are served from the CDN. If the response is not cacheable, then subsequent HEAD requests are passed to the Dispatcher, or AEM instance, or both, for a time that depends on the `Cache-Control` TTL.
 
 ### Marketing campaign parameters {#marketing-parameters}
 
-Website URLs frequently include marketing campaign parameters that are used to track a campaign's success. In order to use the dispatcher cache effectively, it is recommended that you configure the dispatcher configuration's `ignoreUrlParams` property as [documented here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+Website URLs frequently include marketing campaign parameters that are used to track a campaign's success. To use the Dispatcher cache effectively, it is recommended that you configure the Dispatcher configuration's `ignoreUrlParams` property as [documented here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
 
 The `ignoreUrlParams` section must be uncommented and should reference the file `conf.dispatcher.d/cache/marketing_query_parameters.any`. The file can be modified by uncommenting the lines corresponding to the parameters that are relevant to your marketing channels. You may add other parameters as well.
 
@@ -215,20 +215,20 @@ The `ignoreUrlParams` section must be uncommented and should reference the file 
 
 ## Dispatcher Cache Invalidation {#disp}
 
-In general, it will not be necessary to invalidate the Dispatcher cache. Instead you should rely on the Dispatcher refreshing its cache when content is being republished and the CDN respecting cache expiration headers.
+In general, it is not necessary to invalidate the Dispatcher cache. Instead, you should rely on the Dispatcher refreshing its cache when content is being republished and the CDN respecting cache expiration headers.
 
 ### Dispatcher Cache Invalidation during Activation/Deactivation {#cache-activation-deactivation}
 
 Like previous versions of AEM, publishing or unpublishing pages clears the content from the Dispatcher cache. If a caching issue is suspected, you should republish the pages in question and ensure that a virtual host is available that matches the `ServerAlias` localhost, which is required for Dispatcher cache invalidation.
 
 >[!NOTE]
->For proper dispatcher invalidation, make sure that requests from "127.0.0.1", "localhost", ".local", ".adobeaemcloud.com", and ".adobeaemcloud.net" are all matched and handled by a vhost configuration so those request can be served. You can do this by either global matching "*" in a catch-all vhost configuration following the pattern in the reference [AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) or by ensuring that the previously mentioned list is caught by one of the vhosts.
+>For proper Dispatcher invalidation, make sure that requests from "127.0.0.1", "localhost", ".local", ".adobeaemcloud.com", and ".adobeaemcloud.net" are all matched and handled by a vhost configuration so the request can be served. You can do this task by global matching "*" in a catch-all vhost configuration following the pattern in the reference [AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). Or, you can ensure that the previously mentioned list is caught by one of the vhosts.
 
-When the publish instance receives a new version of a page or asset from the author, it uses the flush agent to invalidate appropriate paths on its Dispatcher. The updated path is removed from the Dispatcher cache, together with its parents, up to a level (you can configure this with the [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
+When the publish instance receives a new version of a page or asset from the author, it uses the flush agent to invalidate appropriate paths on its Dispatcher. The updated path is removed from the Dispatcher cache, together with its parents, up to a level (you can configure this level with the [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
 ## Explicit invalidation of the Dispatcher cache {#explicit-invalidation}
 
-Adobe recommends to rely on standard cache headers to control the content delivery life cycle. However, if needed, it is possible to invalidate content directly in Dispatcher.
+Adobe recommends that you rely on standard cache headers to control the content delivery life cycle. However, if needed, it is possible to invalidate content directly in Dispatcher.
 
 The following list contains scenarios where you might want to explicitly invalidate the cache (while optionally listening for the completion of the invalidation):
 
@@ -238,7 +238,7 @@ The following list contains scenarios where you might want to explicitly invalid
 There are two approaches to explicitly invalidate the cache:
 
 * The preferred approach is using Sling Content Distribution (SCD) from Author.  
-* By using the Replication API to invoke the publish Dispatcher flush replication agent.
+* The other approach is to use the Replication API to invoke the publish Dispatcher flush replication agent.
 
 The approaches differ in terms of tier availability, the ability to deduplicate events and event processing guarantee. The table below summarizes these options:
 
@@ -312,20 +312,20 @@ The approaches differ in terms of tier availability, the ability to deduplicate 
   </tbody>
 </table>
 
-Please note that the two actions directly related to cache invalidation are Sling Content Distribution (SCD) API Invalidate and Replication API Deactivate.
+The two actions directly related to cache invalidation are Sling Content Distribution (SCD) API Invalidate and Replication API Deactivate.
 
-Also, from the table, we observe that:
+Also, from the table, you can observe that:
 
-* SCD API is needed when every event must be guaranteed, for example, syncing with an external system that requires accurate knowledge. If there is a publish tier upscaling event at the time of the invalidation call, an additional event is raised when each new publish processes the invalidation.
+* SCD API is needed when every event must be guaranteed, for example, syncing with an external system that requires accurate knowledge. If there is a publish tier upscaling event at the time of the invalidation call, an extra event is raised when each new publish processes the invalidation.
 
-* Using the Replication API isn't a common use case, but should be used in cases where the trigger to invalidate the cache comes from the publish tier and not the author tier. This might be useful if dispatcher TTL is configured.
+* Using the Replication API isn't a common use case, but can be used in cases where the trigger to invalidate the cache comes from the publish tier and not the author tier. This method might be useful if Dispatcher TTL is configured.
 
-In conclusion, if you are looking to invalidate the Dispatcher cache, the recommended option is to use the SCD API Invalidate action from Author. Additionally, you can also listen for the event so you can then trigger further downstream actions.
+In conclusion, if you are looking to invalidate the Dispatcher cache, the recommended option is to use the SCD API Invalidate action from Author. Also, you can also listen for the event so you can then trigger further downstream actions.
 
 ### Sling Content Distribution (SCD) {#sling-distribution}
 
 >[!NOTE]
->When using the instructions presented below, please be aware that you should test the custom code in an AEM Cloud Service Dev environment and not locally.
+>When using the instructions presented below, test the custom code in an AEM Cloud Service Dev environment and not locally.
 
 When using the SCD action from Author, the implementation pattern is as follows:
 
@@ -455,15 +455,15 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 ## Client-Side libraries and Version Consistency {#content-consistency}
 
-Pages are composed of HTML, Javascript, CSS, and images. Customers are encouraged to leverage the [Client-Side Libraries (clientlibs) framework](/help/implementing/developing/introduction/clientlibs.md) to import Javascript and CSS resources into HTML pages, taking into account dependencies between JS libraries.
+Pages are composed of HTML, JavaScript, CSS, and images. Customers are encouraged to use the [Client-Side Libraries (clientlibs) framework](/help/implementing/developing/introduction/clientlibs.md) to import JavaScript and CSS resources into HTML pages, accounting for dependencies between JS libraries.
 
-The clientlibs framework provides automatic version management, meaning that developers can check in changes to JS libraries in source control and the latest version will be made available when a customer pushes their release. Without this, developers would need to manually change HTML with references to the new version of the library, which is especially onerous if many HTML templates share the same library.
+The clientlibs framework provides automatic version management. What this means is that developers can check in changes to JS libraries in source control and the latest version is made available when a customer pushes their release. Without this workflow, developers must manually change HTML with references to the new version of the library, which is especially onerous if the same library shares many HTML templates.
 
-When the new versions of libraries are released to production, the referencing HTML pages are updated with new links to those updated library versions. Once the browser cache has expired for a given HTML page, there is no concern that the old libraries will be loaded from the browser cache since the refreshed page (from AEM) now is guaranteed to reference the new versions of the libraries. In other words, a refreshed HTML page will include all the latest library versions.
+When the new versions of libraries are released to production, the referencing HTML pages are updated with new links to those updated library versions. After the browser cache expires for a given HTML page, there is no concern that the old libraries are loaded from the browser cache. The reason is because the refreshed page (from AEM) now is guaranteed to reference the new versions of the libraries. That is, a refreshed HTML page includes all the latest library versions.
 
-The mechanism for this is a serialized hash, which is appended to the client library link, ensuring a unique, versioned url for the browser to cache the CSS/JS. The serialized hash is only updated when the contents of the client library changes. This means that if unrelated updates occur (i.e no changes to the underlying css/js of the client library) even with a new deployment, the reference remains the same, ensuring less disruption to the browser cache.
+The mechanism behind this ability is a serialized hash, which is appended to the client library link. It ensures a unique, versioned url for the browser to cache the CSS/JS. The serialized hash is only updated when the contents of the client library changes. Which means that if unrelated updates occur (that is, no changes to the underlying css/js of the client library) even with a new deployment, the reference remains the same. In turn, it ensures less disruption to the browser cache.
 
-### Enabling Longcache versions of Client Side Libraries - AEM as a Cloud Service SDK Quickstart {#enabling-longcache}
+### Enabling Longcache versions of Client-Side Libraries - AEM as a Cloud Service SDK Quickstart {#enabling-longcache}
 
 Default clientlib includes on an HTML page look like the following example:
 
@@ -472,20 +472,20 @@ Default clientlib includes on an HTML page look like the following example:
 
 ```
 
-When strict clientlib versioning is enabled, a long term hash key is added as a selector to the client library. As a result, the clientlib reference look like this:
+When strict clientlib versioning is enabled, a long-term hash key is added as a selector to the client library. As a result, the clientlib reference look like this:
 
 ```
 <link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.lc-7c8c5d228445ff48ab49a8e3c865c562-lc.css" type="text/css">
 
 ```
 
-Strict clientlib versioning is enabled by default in all AEM as a Cloud Service environments.
+Strict clientlib versioning is enabled by default in all AEM as a Cloud Service environment.
 
-To enable strict clientlib versioning in the local SDK Quickstart perform the following actions:
+To enable strict clientlib versioning in the local SDK Quickstart, do the following:
 
 1. Navigate to the OSGi Configuration manager `<host>/system/console/configMgr`
 1. Find the OSGi Config for Adobe Granite HTML Library Manager:
-   * Check the checkbox to enable Strict Versioning
-   * In the field labeled Long term client side cache key, enter the value of /.*;hash
-1. Save the changes. It is not necessary to save this configuration in source control since AEM as a Cloud Service automatically enables this configuration in dev, stage and production environments.
-1. Any time the contents of the client library are changed, a new hash key is generated and the HTML reference will be updated.
+   * Check the checkbox so you enable Strict Versioning
+   * In the field labeled **Long term client side cache key**, enter the value of /.*;hash
+1. Save the changes. It is not necessary to save this configuration in source control since AEM as a Cloud Service automatically enables this configuration in dev, stage, and production environments.
+1. Anytime the contents of the client library are changed, a new hash key is generated and the HTML reference is updated.

@@ -17,7 +17,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 
 The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via [Package Manager](/help/implementing/developing/tools/package-manager.md) on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version. For more details on the latest version, refer to [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
-Only version 2.0.0 and higher will be supported, and it is advisable to use the most recent version.
+Only version 2.0.0 and higher is supported, and it is advisable to use the most recent version.
 
 >[!NOTE]
 >Download the Content Transfer Tool, from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
@@ -28,7 +28,7 @@ Only version 2.0.0 and higher will be supported, and it is advisable to use the 
 >
 >A connection error can also occur if a migration set has been deleted from Cloud Acceleration Manager.
 
-The source AEM instance may be running behind a firewall where it can only reach certain hosts which have been added to an Allow List. In order to successfully run an extraction, the following endpoints will need to be accessible from the instance that is running AEM:
+The source AEM instance may be running behind a firewall where it can only reach certain hosts which have been added to an Allow List. To successfully run an extraction, the following endpoints will need to be accessible from the instance that is running AEM:
 
 * The Azure blob storage service: `casstorageprod.blob.core.windows.net`
 
@@ -46,6 +46,8 @@ Understanding SSL/TLS connection problems can sometimes be difficult. To trouble
 
    ![image](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
+>[!NOTE]
+>This flag is only for debugging SSL issues. Ensure that the flag is disabled before running the extraction, as it may require a large amount of disk space. This could potentially fill the drive capacity and cause the extraction process to fail.
 
 ## Running the Content Transfer Tool {#running-tool}
 
@@ -82,7 +84,7 @@ The following section applies to the new version of the Content Transfer Tool. F
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   The following dialog will be presented. Notice that a migration set will expire after a prolonged period of inactivity. After warnings are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
+   The following dialog box is presented. Notice that a migration set will expire after a prolonged period of inactivity. After warnings are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
@@ -94,7 +96,7 @@ The following section applies to the new version of the Content Transfer Tool. F
 
    >[!NOTE]
    >
-   >The extraction key enables your source AEM environment to securely connect to the migration set. Please treat this key with the same care that you would a password, and never share it over an unsecured medium like email.
+   >The extraction key enables your source AEM environment to securely connect to the migration set. Treat this key with the same care that you would a password, and never share it over an unsecured medium like email.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
 
@@ -114,7 +116,7 @@ To populate the migration set you created in the Cloud Acceleration Manager, you
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. Paste the extraction key that was copied from CAM earlier into the Extraction key input field of **Create Migration Set** form. Once you do this, the Migration set name and Cloud Acceleration Manager (CAM) Project name fields will be automatically populated. These should match the Migration Set name in CAM and the CAM project name that you created. You can now add content paths. Once you've added content paths, you will be able to save the migration set. You can run the extraction with either versions included or excluded.
+1. Paste the extraction key that was copied from CAM earlier into the Extraction key input field of **Create Migration Set** form. After you do this, the Migration set name and Cloud Acceleration Manager (CAM) Project name fields are automatically populated. These should match the Migration Set name in CAM and the CAM project name that you created. You can now add content paths. After you've added content paths, save the migration set. You can run the extraction with either versions included or excluded.
 
    >[!NOTE]
    >
@@ -160,7 +162,8 @@ To populate the migration set you created in the Cloud Acceleration Manager, you
 ### Determining migration set size {#migration-set-size}
 
 After creating a migration set, it is highly recommended to run a size check on the migration set before starting an Extraction process. 
-By running a size check on the migration set, you will be able to:
+By running a size check on the migration set, you are able to:
+
 * Determine if there is sufficient disk space in the `crx-quickstart` subdirectory to complete extraction successfully.
 * Determine if the migration set size falls within supported product limits and avoid failed content ingestions.
 
@@ -178,11 +181,11 @@ Follow the steps below to run a size check:
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. Once **Check Size** process is completed, the status will change to **FINISHED**. Select the same migration set and click on **Check Size** to view results. Below is an example of **Check Size** results with no warnings.
+1. After **Check Size** process is completed, the status changes to **FINISHED**. Select the same migration set and click on **Check Size** to view results. Below is an example of **Check Size** results with no warnings.
  
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
    
- 1. If the **Check Size** results indicate that either there is insufficient disk space and/or the migration set exceeds product limits, **WARNING** status will be displayed.
+ 1. If the **Check Size** results indicate that either there is insufficient disk space, or the migration set exceeds product limits, or both, a **WARNING** status is displayed.
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    

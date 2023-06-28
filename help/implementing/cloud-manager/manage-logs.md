@@ -12,7 +12,7 @@ You can access a list of available log files for the selected environment using 
 
 ## Downloading Logs {#download-logs}
 
-Follow these steps to download logs.
+To download logs, do the following.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -34,7 +34,7 @@ You can also access your logs from the **Environments** page.
 
 ## Logs Via API {#logs-through-api}
 
-In addition to downloading logs through the UI, logs are available through the API and the command line interface. 
+In addition to downloading logs through the UI, logs are available through the API and the command-line interface. 
 
 To download the log files for a specific environment, the command would be similar to the following.
 
@@ -42,13 +42,13 @@ To download the log files for a specific environment, the command would be simil
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-You can also tail logs via the command line interface.
+Also, you can tail logs by way of the command-line interface.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-In order to obtain the environment Id (1884 in this example) and the available service or log name options you can use the following commands.
+To obtain the environment Id (1884 in this example) and the available service or log name options, you can use the following commands.
 
 ```shell
 $ aio cloudmanager:list-environments
@@ -75,5 +75,5 @@ Environment Id Service    Name
 
 Refer to the following additional resources to learn more about the Cloud Manager API and Adobe I/O CLI:
 
-* [Cloud Manager API Documentation](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [Cloud Manager API Documentation](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)

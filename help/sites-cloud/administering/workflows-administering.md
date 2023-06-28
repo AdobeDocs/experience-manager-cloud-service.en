@@ -23,12 +23,21 @@ A range of consoles are available for administering your workflows. Use the [glo
 1. Using Navigation select **Tools**, then **Workflow**.
 1. Select **Instances** to display the list of running workflow instances currently in progress.
 1. On the top rail, in the right corner, the workflow instances show **Running workflows**, **Status**, and **Details**.
-1. **Running workflows** shows the number of running workflows, and their status. for example, in the given images, shown are the number of **Running workflows** and the **Status** of AEM instance.
-      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
-      ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
-1. For **Status details** of workflow instances, click **Details**, to show the **number of running workflows instances**, **completed workflow instances**, **aborted workflow instances**, **failed workflow instances**, and so forth. for example, below are the given images that show **Status details** with **Status: Healthy** and **Status: Unhealthy**.
-      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
-      ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
+1. **Running workflows** shows the number of running workflows, and their status. for example, in the given images, shown are the number of **Running workflows** and the **Status** of AEM instance:
+
+   * **Status: Healthy** 
+     ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
+
+   * **Status: Unhealthy** 
+     ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
+
+1. For **Status details** of workflow instances, click **Details**, to show the **number of running workflows instances**, **completed workflow instances**, **aborted workflow instances**, **failed workflow instances**, and so forth. for example, below are the given images that show **Status details** with:
+
+   * **Status details: Healthy** 
+     ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
+
+   * **Status details: Unhealthy**
+     ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
@@ -184,9 +193,9 @@ Data processed by workflows is stored in the Adobe provided storage (JCR). This 
 
 At the level of workflow model, a flag is provided to indicate that the model (and its runtime instances) has external storage of metadata. Workflow variables will not be persisted in JCR for the workflow instances of the models marked for external storage. 
 
-The property *userMetadataPersistenceEnabled* will be stored on the *jcr:content node* of the workflow model. This flag will be persisted in workflow metadata as *cq:userMetaDataCustomPersistenceEnabled*.
+The property *userMetadataPersistenceEnabled* is stored on the *jcr:content node* of the workflow model. This flag is persisted in workflow metadata as *cq:userMetaDataCustomPersistenceEnabled*.
 
-The illustration below shows have to set the flag on a workflow.
+The illustration below shows how to set the flag on a workflow.
 
  ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 

@@ -29,7 +29,7 @@ AEM as a Cloud Service adheres to the latest best practices for package manageme
 
 >[!TIP]
 >
->For further details, see the [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) article in the AEM as a Cloud Service documentation as well as the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentation. Both of which are fully-supported for AEM 6.5.
+>For further details, see the [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) article in the AEM as a Cloud Service documentation as well as the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentation. Both of which are fully supported for AEM 6.5.
 
 ## Obtaining the Content Package Maven Plugin {#obtaining-the-content-package-maven-plugin}
 
@@ -88,7 +88,7 @@ The parameters in the following table are common to all goals except when noted 
 |`serverId`|`String`|No|The server ID from which to retrieve the user name and password for authentication|All goals except `package`|
 |`targetURL`|`String`|Yes|`http://localhost:4502/crx/packmgr/service.jsp`|The URL of the HTTP service API of the AEM package manager|All goals except `package`|
 |`timeout`|`int`|No|`5`|The connection timeout for communicating with the package manager service, in seconds|All goals except `package`|
-|`useProxy`|`boolean`|No|`true`|A value of `true` causes Maven to use the first active proxy configuration found in order to proxy requests to the Package Manager.|All goals except `package`|
+|`useProxy`|`boolean`|No|`true`|A value of `true` causes Maven to use the first active proxy configuration found to proxy requests to the Package Manager.|All goals except `package`|
 |`userId`|`String`|Yes|`admin`|The user name to authenticate with AEM|All goals except `package`|
 |`verbose`|`boolean`|No|`false`|Enables or disables verbose logging|All goals except `package`|
 
@@ -175,7 +175,7 @@ In addition to the following parameters, see the description of the `name` param
 |`prefix`|`java.lang.String`|No|None||
 |`project`|`org.apache.maven.project.MavenProject`|Yes|None|The Maven project|
 |`properties`|`java.util.Map`|No|None|These parameters define additional properties that you can set in the `properties.xml` file. These properties cannot overwrite the following predefined properties: `group` (use `group` parameter to set), `name` (use `name` parameter to set), `version` (use `version` parameter to set), `description` (set from the project description), `groupId` (`groupId` of the Maven project descriptor), `artifactId` (`artifactId` of the Maven project descriptor), `dependencies` (use `dependencies` parameter to set), `createdBy` (the value of the `user.name` system property), `created` (the current system time), `requiresRoot` (use `requiresRoot` parameter to set), `packagePath` (automatically generated from the group and package name)|
-|`requiresRoot`|`boolean`|Yes|false|Defines whether the package requires root. This will become the `requiresRoot` property of the `properties.xml` file.|
+|`requiresRoot`|`boolean`|Yes|false|Defines whether the package requires root. Becomes the `requiresRoot` property of the `properties.xml` file.|
 |`subPackages`|`java.util.List`|No|None||
 |`version`|`java.lang.String`|Yes|The version defined in the Maven project|The version of the content package|
 |`workDirectory`|`java.io.File`|Yes|The directory defined in the Maven project (build phase)|The directory that contains the content to include in the package|
@@ -206,7 +206,7 @@ The `mode` element defines how content is the repository is affected when the pa
 
 * **Merge:** Content in the package that is not already in the repository is added. Content that is in both the package and the repository is unchanged. No content is removed from the repository.
 * **Replace:** Content in the package that is not in the repository is added to the repository. Content in the repository is replaced with matching content in the package. Content is removed from the repository when it does not exist in the package.
-* **Update:** Content in the package that is not in the repository is added to the repository. Content in the repository is replaced with matching content in the package. Existing content gets removed from the repository.
+* **Update:** Content in the package that is not in the repository is added to the repository. Content in the repository is replaced with matching content in the package. 
 
 When the filter contains no `mode` element, the default value of `replace` is used.
 
@@ -232,7 +232,7 @@ The following POM code adds the files in the `META-INF` folder of the project so
 ```xml
 <build>
     <resources>
-        <!-- vault META-INF resources (thumbnail etc.) -->
+        <!-- vault META-INF resources (thumbnail and so on) -->
         <resource>
             <directory>${basedir}/src/main/content/META-INF</directory>
             <targetPath>../vault-work/META-INF</targetPath>
@@ -261,4 +261,4 @@ The latest AEM Project Archetype implements the best-practice package structure 
 
 >[!TIP]
 >
->For further details, see the [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) article in the AEM as a Cloud Service documentation as well as the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentation. Both of which are fully-supported for AEM 6.5.
+>For further details, see the [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) article in the AEM as a Cloud Service documentation as well as the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentation. Both of which are fully supported for AEM 6.5.

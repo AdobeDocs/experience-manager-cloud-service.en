@@ -36,11 +36,11 @@ The walkthrough is based on standard AEM functionality and the sample WKND SPA P
 
 >[!TIP]
 >
->Any AEM project should leverage the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
+>Any AEM project should use the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and uses the SPA SDK.
 
 ### What is a SPA? {#what-is-a-spa}
 
-A single-page application (SPA) differs from a conventional page in that it is rendered client-side and is primarily Javascript-driven, relying on Ajax calls to load data and dynamically update the page. Most or all content is retrieved once in a single page load with additional resources loaded asynchronously as needed based on user interaction with the page.
+A single-page application (SPA) differs from a conventional page in that it is rendered client-side and is primarily JavaScript-driven, relying on Ajax calls to load data and dynamically update the page. Most or all content is retrieved once in a single page load with additional resources loaded asynchronously as needed based on user interaction with the page.
 
 This reduces the need for page refreshes and presents an experience to the user that is seamless, fast, and feels more like a native app experience.
 
@@ -69,7 +69,7 @@ By being faster, fluid, and more like a native application, a SPA becomes a very
 
 ### How Does a SPA Work? {#how-does-a-spa-work}
 
-The primary idea behind a SPA is that calls to and dependency on a server are reduced in order to minimize delays caused by server latency so that the SPA approaches the responsiveness of a native application.
+The primary idea behind a SPA is that calls to, and dependency on, a server are reduced to minimize delays caused by server latency so that the SPA approaches the responsiveness of a native application.
 
 In a traditional, sequential webpage, only the data needed for the immediate page is loaded. This means that when the visitor moves to another page, the server is called for the additional resources. Additional calls might be necessary as the visitor interacts with elements on the page. These multiple calls can give a sense of lag or delay as the page has to catch up with the visitor's requests.
 
@@ -90,7 +90,7 @@ By rendering on the client side, page elements react faster, and interactions wi
 
 ## Content Editing Experience with SPA {#content-editing-experience-with-spa}
 
-When a SPA is built to leverage the AEM SPA Editor, the content author notices no difference when editing and creating content. Common AEM functionality is available and no changes to the author's workflow is required.
+When a SPA is built to use the AEM SPA Editor, the content author notices no difference when editing and creating content. Common AEM functionality is available and no changes to the author's workflow is required.
 
 1. Edit the WKND SPA Project app in AEM.
 
@@ -171,7 +171,7 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
 
 1. Switch to the Network tab in the Inspector and reload the page.
 
-   Ignoring image requests, note that the primary resources loaded for the page are the page itself, CSS, the React Javascript, its dependencies, as well as JSON data for the page.
+   Ignoring image requests, note that the primary resources loaded for the page are the page itself, CSS, the React JavaScript, its dependencies, as well as JSON data for the page.
 
    ![WKND SPA Project network activity](assets/wknd-network.png)
 
@@ -181,9 +181,9 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
 
    ![JSON of the WKND SPA Project home page](assets/wknd-json.png)
 
-   The AEM SPA Editor leverages [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) to deliver the entire content of the page as a JSON model.
+   The AEM SPA Editor uses [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) to deliver the entire content of the page as a JSON model.
 
-   By implementing specific interfaces, Sling Models provide the information necessary to the SPA. The delivery of the JSON data is delegated downward to each component (from page, to paragraph, to component, etc.).
+   By implementing specific interfaces, Sling Models provide the information necessary to the SPA. The delivery of the JSON data is delegated downward to each component (from page, to paragraph, to component, and so on).
 
    Each component chooses what it exposes and how it is rendered (server-side with HTL or client-side with React or Angular). This article focuses on client-side rendering with React.
 
@@ -235,7 +235,7 @@ In the following section we will explore the contract that allows the SPA Editor
 
 ## Headful and Headless in AEM {#headful-headless}
 
-SPAs can be enabled with flexible levels of integration within AEM including SPAs developed and maintained outside of AEM. Additionally, SPAs can be leveraged within AEM while also using AEM to deliver content to additional endpoints headlessly.
+SPAs can be enabled with flexible levels of integration within AEM including SPAs developed and maintained outside of AEM. Additionally, SPAs can be used within AEM while also using AEM to deliver content to additional endpoints headlessly.
 
 >[!TIP]
 >

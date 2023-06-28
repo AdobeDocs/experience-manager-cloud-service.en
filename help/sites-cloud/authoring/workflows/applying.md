@@ -116,7 +116,7 @@ You can specify details:
 
     * An existing resource to see additional actions:
 
-        * **Include children** to specify that children of that resource will be included in the workflow.
+        * **Include children** to specify that children of that resource are included in the workflow.
           A dialog will open allowing you to refine the selection according to:
 
             * Include only immediate children.
@@ -137,6 +137,6 @@ You can specify details:
 
 ## Starting a Workflow from the Page Editor {#starting-a-workflow-from-the-page-editor}
 
-When editing a page you can select **Page Information** from the toolbar. The drop down menu has the option **Start in Workflow**. This will open a dialog where you can specify the required workflow, together with a title if required:
+When editing a page you can select **Page Information** from the toolbar. The drop-down menu has the option **Start in Workflow**. This will open a dialog where you can specify the required workflow, together with a title if required:
 
 ![Starting a workflow from the page editor](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

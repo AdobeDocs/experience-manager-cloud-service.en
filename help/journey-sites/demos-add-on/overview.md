@@ -9,14 +9,14 @@ Start here for a guided journey through how to easily add the AEM Reference Demo
 
 ## Introduction {#introduction}
 
-AEM is a powerful tool set for creating and managing digital experiences. Content authors can easily create digital experiences using the sites editor and organize the content using the sites console, all while being able to see the content live as it will be delivered by AEM to your audiences across channels.
+AEM is a powerful tool set for creating and managing digital experiences. Content authors can easily create digital experiences using the sites editor and organize the content using the sites console, all while being able to see the content live as it is delivered by AEM to your audiences across channels.
 
 Without sample content and configuration, it can be difficult to test the powerful features of AEM for new and experienced clients alike. The AEM Reference Demos Add-On allows for the easy creation of sandbox environments pre-loaded with sample content and pre-configured using the latest Adobe best practices guidelines. With the add-on, you can easily evaluate AEM Sites and AEM Screens features in context and with hardly any configuration.
 
-* **If you are new to AEM**, following this journey is the easiest way to get up-and-running with real content in an actual, fully-functioning AEM environment to allow you to test functionality and get to know the capabilities of AEM.
+* **If you are new to AEM**, following this journey is the easiest way to get up-and-running with real content in an actual, fully functioning AEM environment to let you test functionality and get to know the capabilities of AEM.
 * **If you are an experienced AEM user**, following this journey is the easiest way to set up a separate demo environment for testing purposes or create a POC using new functionality.
 
-Whatever your particular need, if you need an AEM environment filled with realistic, fully-functioning, sample content, setting up a sandbox with the AEM Reference Demo Add-On is for you. Keep reading!
+Whatever your particular need, if you need an AEM environment filled with realistic, fully functioning, sample content, setting up a sandbox with the AEM Reference Demo Add-On is for you. Keep reading!
 
 ## AEM Documentation Journeys {#documentation-journeys}
 
@@ -28,7 +28,7 @@ If you want to know how Adobe recommends how to solve sites business cases with 
 
 ## Audience {#audience}
 
-This journey lays out the requirements, steps, and approach to create a new program and set up an AEM sandbox with the AEM Reference Demos Add-On including Sites and/or Screens demo content. Its primary audience is the **system administrator** who is assigned the role **Business Owner** in Cloud Manager. This is usually the same person who would be in charge of environment management. However once the Reference Demos Add-On is installed, that administrator may grant other users access to the AEM environment in order to test the features that have been enabled by the add-on.
+This journey lays out the requirements, steps, and approach to create a new program and set up an AEM sandbox with the AEM Reference Demos Add-On including Sites and/or Screens demo content. Its primary audience is the **system administrator** who is assigned the role **Business Owner** in Cloud Manager. This is usually the same person who would be in charge of environment management. However, after the Reference Demos Add-On is installed, that administrator may grant other users access to the AEM environment to test the features that have been enabled by the add-on.
 
 ## The AEM Reference Demo Add-On Journey {#the-journey}
 

@@ -38,7 +38,7 @@ From the **Content Fragments** console, you can also publish to the **Preview Se
 
 ### Signing In {#signing-in}
 
-As with most systems you will need to login. As an author you will be provided with:
+As with most systems, you need to log on. As an author you are provided with:
 
 * User (account) name
 * Password
@@ -50,7 +50,7 @@ Your account will have been configured with any privileges that you need. If you
 
 The first time you log in a small online tutorial will highlight some of the main features of the user interface.
 
-You can then use the Navigation Panel to access key areas of AEM. For Content Fragments you will be using the **Content Fragments** console (for some actions you will also use the **Assets** console). 
+You can then use the Navigation Panel to access key areas of AEM. For Content Fragments, you use the **Content Fragments** console (for some actions you will also use the **Assets** console). 
 
 The Navigation Panel can be opened by selecting the Adobe icon at the top left, followed by the small compass icon.
 
@@ -135,7 +135,7 @@ A dialog will open where you can enter the details, then confirm with **Create**
 
 #### Using Paths and Tags to limit Content Fragment Models available in the Folder {#tags-paths-for-models-in-folder}
 
-This section is slightly more advanced. You don't really need it if you're just starting out and trying things, but it is *very* useful when you have a lot of fragments. So it's good to know about - even if you don't use it quite yet.
+This section is slightly more advanced. You do not really need it if you are just starting out and trying things, but it is *very* useful when you have many fragments. So it is good to know about - even if you don't use it quite yet.
 
 Your Content Architect will have created all the Content Fragment Models required for your current project, and maybe some other projects too. To help keep things simple for yourself, and other authors, you can limit the list of models available for a specific folder.
 
@@ -182,7 +182,7 @@ Creating a Content Fragment is very similar - you just use the **Content Fragmen
 
 ![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
-This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
+This time a wizard opens. The first step is to select the Content Fragment Model that your fragment is based on:
 
 ![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
@@ -252,7 +252,7 @@ OK, this might seem a slightly strange section, but once you open the Content Fr
 
 * **Update page references**
 
-  This action is available from the **...** (ellipses) drop down. It is not interesting for headless authors as it relates to page authoring.
+  This action is available from the **...** (ellipses) drop-down. It is not interesting for headless authors as it relates to page authoring.
 
 ### Publishing {#publishing}
 

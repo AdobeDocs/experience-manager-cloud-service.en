@@ -9,18 +9,22 @@ The following section outlines the general Release Notes for [!DNL Workfront for
 
 ## Release Date {#release-date}
 
-The release date for the latest version 1.9.10 of [!DNL Workfront for Experience Manager enhanced connector] is May 18, 2023.
+The release date for the latest version 1.9.11 of [!DNL Workfront for Experience Manager enhanced connector] is June 19, 2023.
 
 ## Release highlights {#release-highlights}
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following updates:
 
-* Workfront returns a 409 HTTP response for duplicate event subscriptions based on a REST call from Experience Manager to Workfront, which leads to a null pointer exception.
+* When you have advanced networking configured, there are issues while sending content from Adobe Workfront to AEM as a Cloud Service.
+
+>[!NOTE]
+>
+>AEM 6.4 has reached the end of extended support. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/?lang=en).
 
 
 >[!IMPORTANT]
 >
->Adobe recommends you to [upgrade to the latest 1.9.10 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recommends you to [upgrade to the latest 1.9.11 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Known Issues {#known-issues}
 
@@ -29,6 +33,10 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** dropdown list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** dropdown list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** dropdown list as well as the **[!UICONTROL Document Actions]** dropdown list available in the new Workfront experience.
 
 ## Previous releases {#previous-releases}
+
+### May 2023 release {#may-2023-release}
+
+* Workfront returns a 409 HTTP response for duplicate event subscriptions based on a REST call from Experience Manager to Workfront, which leads to a null pointer exception.
 
 ### April 2023 release {#april-2023-release}
 
