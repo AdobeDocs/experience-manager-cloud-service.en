@@ -59,7 +59,7 @@ The following segment comparisons are available out-of-the-box to evaluate segme
 
 >[!NOTE]
 >
->When comparing values, if the data type of the comparison is not set (i.e. set to auto detect), ContextHub's segmentation engine will simply compare the values as javascript would. It does not cast values to their expected types, which can lead to misleading results. For example:
+>When comparing values, if the data type of the comparison is not set (that is, set to auto detect), ContextHub's segmentation engine will simply compare the values as javascript would. It does not cast values to their expected types, which can lead to misleading results. For example:
 >
 >`null < 30 // will return true`
 >
@@ -95,7 +95,7 @@ To define your new segment:
     * Minimum value: `0`
     * Maximum value: `1000000`
 
-1. From the segments console, edit your newly-created segment to open it in the segment editor.
+1. From the segments console, edit your newly created segment to open it in the segment editor.
 1. Drag a comparison or reference to the segment editor it will appear in the default AND container.
 1. Double-click on or tap the configure option of the new reference or segment to edit the specific parameters. In this example, we are testing for people in Basel.
 
@@ -169,7 +169,7 @@ By using the Script Reference component, the evaluation of a segment property ca
 
 1. Register the script with `ContextHub.SegmentEngine.ScriptManager.register`.
 
-If the script depends on additional properties, the script should call `this.dependOn()`. For example if the script depends on `profile/age`:
+If the script depends on additional properties, the script should call `this.dependOn()`. For example, if the script depends on `profile/age`:
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));

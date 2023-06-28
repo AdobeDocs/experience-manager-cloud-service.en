@@ -96,7 +96,7 @@ But to further add value to Dynamic Media beyond image presets, there is _Smart 
 
 Smart Imaging provides even better image asset delivery performance by automatically optimizing an image's format and file size based on a customer's browser capability. It works with your existing image presets (image presets is discussed in Part II of this journey) and uses intelligence at delivery. 
 
-This intelligence further reduces image file size based on browser and network connection speed. Because image assets make up most of a page’s load time, the performance improvement can have a thorough impact on key business indicators, such as:
+This intelligence further reduces image file size based on browser and network connection speed. Because image assets make up most of a page's load time, the performance improvement can have a thorough impact on key business indicators, such as:
 
 * Higher conversion
 * Time spent on site
@@ -122,7 +122,7 @@ You start with your original, primary video, which you upload into the system. D
 
 For example, on an iOS mobile device, it detects a bandwidth such as 4G, 5G, or Wi-Fi. Then, it automatically selects the right encoded video from among the various video bit rates within the Adaptive Video Set. The video is streamed to mobile devices, tablets, or desktop computers.
 
-In addition, video quality is dynamically switched automatically if network conditions change. And, if a customer enters full-screen mode on a desktop, the Adaptive Video Set responds by using a better resolution, improving the customer’s viewing experience. 
+In addition, video quality is dynamically switched automatically if network conditions change. And, if a customer enters full-screen mode on a desktop, the Adaptive Video Set responds by using a better resolution, improving the customer's viewing experience. 
 
 Using Adaptive Video Sets provides a smooth, high-quality playback for customers playing Dynamic Media video on multiple screens and devices. It truly takes the complexity out of video.
 
@@ -176,7 +176,7 @@ Another use case that Dynamic Media solves for is video. Video is complex. It is
 
 Customers come to Dynamic Media with the following issue that they are hoping to solve:
 
-"_We've got the video, and we spent a lot of money creating it. But we've shied away from placing it on pages, or delivering it, because from our testing, we really can't guarantee the quality of the video, or if it's really going to play. And ultimately, that affects our brands and potentially our role to even conversion._"
+"_We've got the video, and we spent a large amount of money creating it. But we've shied away from placing it on pages, or delivering it, because from our testing, we really can't guarantee the quality of the video, or if it's really going to play. And ultimately, that affects our brands and potentially our role to even conversion._"
 
 Dynamic Media's solution is to take that one primary video file, and let Dynamic Media make all the sizes through its transcoding process. Then, pair that with Dynamic Media's intelligent video player. This workflow guarantees that whether you are using that video on your main landing page, or on a category or product detail page, it is going to be consistent throughout and delivered with high quality.
 

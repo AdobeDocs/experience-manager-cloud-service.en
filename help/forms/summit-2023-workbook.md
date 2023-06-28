@@ -238,7 +238,7 @@ Set up local repository of the theme:
 
     ![](/help/forms/assets/screenshot2028116229.png)
 
-1.  To render the form hosted on your cloud service publish environment, rename the `env_template` file.  To rename the file, right click the **env_template** file and select the **Rename** option.
+1.  To render the form hosted on your cloud service publish environment, rename the `env_template` file.  To rename the file, right-click the **env_template** file and select the **Rename** option.
 
     ![](/help/forms/assets/screenshot2028116429.png)
 

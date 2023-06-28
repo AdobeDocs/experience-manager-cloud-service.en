@@ -262,7 +262,7 @@ and:
 
 **file included at unknown location: ...**
 
-There are four sections in your farm configuration where you're allowed to include your own file: `/clientheaders`, `filters`, `/rules` in `/cache` section and `/virtualhosts`. The included files need to be named as follows:
+There are four sections in your farm configuration where you are allowed to include your own file: `/clientheaders`, `filters`, `/rules` in `/cache` section and `/virtualhosts`. The included files need to be named as follows:
 
 | Section          | Include file name                    |
 |------------------|--------------------------------------|
@@ -315,7 +315,7 @@ The included files need to be named as follows:
 
 >[!TIP]
 >
->To be able to include more files in much less limited way, you might want to switch to flexible dispatcher config mode. Please see the document [Validating and Debugging using Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md) for more details on flexible mode.
+>To be able to include more files in much less limited way, you might want to switch to flexible dispatcher config mode. See [Validating and Debugging using Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md) for more details on flexible mode.
 
 Alternatively, you can include the **default** version of the rewrite rules, whose name is `conf.d/rewrites/default_rewrite.rules`.
 Note, that there is no default version of the variables files.
@@ -326,7 +326,7 @@ This message indicates that your configuration has the deprecated version 1 layo
 Apache configuration and files with `ams_` prefixes. While this is still supported for backwards
 compatibility, you should switch to the new layout.
 
-Please note that the first phase can also be **run separately**, rather than from the wrapper `validate.sh` script.
+The first phase can also be **run separately**, rather than from the wrapper `validate.sh` script.
 
 When run against your maven artifact or your `dispatcher/src` subdirectory, it will report validation failures:
 
@@ -391,7 +391,7 @@ This phase can also be run independently through `validator full -d out src/disp
 
 ## Debugging your Apache and Dispatcher configuration {#debugging-apache-and-dispatcher-configuration}
 
-Please note that you can run apache dispatcher locally by using `./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+You can run apache dispatcher locally by using `./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
 
 As stated previously, Docker must be installed locally and it is not necessary for AEM to be running. Windows users need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer.
 

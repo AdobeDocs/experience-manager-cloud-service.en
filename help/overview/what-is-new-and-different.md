@@ -256,7 +256,7 @@ For details, see [overview and introduction to Assets as a Cloud Service](/help/
 
 ## Getting to Know Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
 
-For further information see:
+For more information, see:
 
 * [An Introduction to Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 * The [Architecture](/help/overview/architecture.md) of Adobe Experience Manager as a Cloud Service

@@ -230,7 +230,7 @@ If the Docker image is implemented with other programming languages or test runn
 
 >[!NOTE]
 >
->The result of the UI testing step is evaluated only based on the test reports. Please ensure that you generate the report accordingly for your test execution.
+>The result of the UI testing step is evaluated only based on the test reports. Ensure that you generate the report accordingly for your test execution.
 >
 >Use assertions instead of just logging an error to STDERR or returning a non-zero exit code otherwise your deployment pipeline may proceed normally.
 

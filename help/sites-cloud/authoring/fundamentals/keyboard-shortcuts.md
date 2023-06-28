@@ -19,8 +19,8 @@ Various keyboard shortcuts are available throughout AEM. Some apply when editing
 |**Edit** mode|`Ctrl-z`|[Undo last change](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits)|
 ||`Ctrl-y`|[Redo last change](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits)|
 ||`Ctrl-Click`|Select multiple paragraphs|
-||`Ctrl-c`|Copy selected paragraph(s)|
-||`Ctrl-x`|Cut selected paragraph(s), (cut paragraphs will not disappear in the UI until it is pasted)|
+||`Ctrl-c`|Copy selected paragraphs|
+||`Ctrl-x`|Cut selected paragraphs, (cut paragraphs do not disappear in the user interface until it is pasted)|
 ||`Ctrl-v`|Paste paragraph(s) previously cut or copied|
 ||`Ctrl-Backspace`|Delete selected paragraph(s)|
 |**Edit** mode - Rich Text Editor|`Ctrl-b`|Bold|

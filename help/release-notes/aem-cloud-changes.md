@@ -15,7 +15,7 @@ AEM Cloud Service brings many new features and possibilities for managing your A
 
 
 >[!NOTE]
->This document highlights the notable changes to AEM as a whole. For further information and solution-specific changes see:
+>This document highlights the notable changes to AEM as a whole. For more information and solution-specific changes see:
 >
 >* [An Introduction to Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 >* [What is New and What is Different](/help/overview/what-is-new-and-different.md) between Adobe Experience Manager as a Cloud Service and previous versions
