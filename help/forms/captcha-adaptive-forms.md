@@ -100,7 +100,7 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 
    >[!NOTE]
    >
-   > If you select reCAPTCHA v2 configuration with size as [!UICONTROL Invisible] then show/hide option is not applicable.
+   > When you select a reCAPTCHA v2 configuration and the size is set to [!UICONTROL Invisible], the show/hide option remains disabled.
 
 ### Validate CAPTCHA {#validate-captcha}
 
