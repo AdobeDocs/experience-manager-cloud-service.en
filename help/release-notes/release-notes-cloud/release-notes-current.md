@@ -56,6 +56,10 @@ A new improved user experience for creating link shares along with a brand new s
 
 ![Tagging Management](/help/assets/assets/config-email-service.png)
 
+**Dynamic Media: Updated Smart Crop-related fields in Image profile**  
+
+The user interface for some Smart Crop-related fields in an Image Profile are now updated to reflect the current guidelines for defining a Smart Crop. See [Crop options](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
+
 ### New features in Assets view {#assets-view-features}
 
 **Hierarchical tagging of assets for faster search experience**
@@ -89,10 +93,6 @@ Assets view now supports viewing top searched terms within your deployment using
 **Metadata form enhancements**
 
 Assets view now enables you to add multi-value text and drop-down list property components to the metadata forms.
-
-### Features in [!DNL Assets] prerelease {#prerelease-feature-assets}
-
-* Dynamic Media - The user interface for some Smart Crop-related fields in an Image Profile are now updated to reflect the current guidelines for defining a Smart Crop. See [Crop options](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
 
 ## Maintenance Release Notes {#maintenance}
 
