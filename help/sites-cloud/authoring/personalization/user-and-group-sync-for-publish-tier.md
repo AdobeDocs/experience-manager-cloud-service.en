@@ -94,7 +94,7 @@ User profile information can be written and read in two ways:
 
 End-user data can be sent to third-party vendors such as CRMs and retrieved via APIs upon the user's login to AEM and persisted (or refreshed) on the AEM user's profile node, and used by AEM as needed.
 
-Real-time access to 3rd party services to retrieve profile attributes is possible, however, it is important to ensure this does not materially impact request processing in AEM.
+Real-time access to third-party services to retrieve profile attributes is possible, however, it is important to ensure this does not materially impact request processing in AEM.
 
 ## Permissions (Closed User Groups) {#permissions-closed-user-groups}
 

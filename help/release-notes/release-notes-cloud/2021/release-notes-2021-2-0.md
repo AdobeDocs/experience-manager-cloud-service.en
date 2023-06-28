@@ -74,7 +74,7 @@ The following release (2021.3.0) will be on March 25, 2021.
 
 * Released CIF Venia Reference Site - 2021.02.24 that includes the latest CIF Core Components version v1.8.0. See [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) for more details.
 
-* Released CIF Core Components v1.8.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) for more details.
+* Released CIF Core Components v1.8.0. See [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) for more details.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -130,7 +130,7 @@ The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
 ### What is new in Content Transfer Tool {#what-is-new-ctt}
 
 * New capability and UI added to Content Transfer Tool – User Mapping Tool. This features automatically maps existing user and groups to their Adobe Identity Management System IDs as part of the content migration activity. 
-    Refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
+    See [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
 * Content Transfer Tool now migrates all groups and users referenced in the migration set including children.
 * Users are allowed to select certain paths under `/etc` when creating migration sets.
 
@@ -153,9 +153,9 @@ The Release Date for Best Practices Analyzer v2.1.2 is February 18, 2021.
 ### What is new in Code Refactoring Tools {#what-is-new-crt}
 
 * New version of AIO-CLI plugin released. Latest version of this plugin includes several bug fixes for the Repository Modernizer. 
-   Refer to [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) to learn more about this plugin.
+   See [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) to learn more about this plugin.
 
 ### Bug Fixes {#bug-fixes-crt}
 
 * Several bug fixes done on the Repository Modernizer. 
-   Refer to [GitHub Resource: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) for more details.
+   See [GitHub Resource: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) for more details.

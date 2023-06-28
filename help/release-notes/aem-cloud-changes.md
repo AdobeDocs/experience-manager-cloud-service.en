@@ -43,7 +43,7 @@ The main differences are found in the following areas:
 
 ## /apps and /libs are immutable at runtime {#apps-libs-immutable}
 
- Any content and sub-folders in `/apps` and `/libs` is read-only. Any feature or custom code that expects to make changes there will fail to do so. An error is returned that such content is read-only and the write operation wasn't able to complete. This has an impact in a number of areas of AEM:
+ Any content and sub-folders in `/apps` and `/libs` is read-only. Any feature or custom code that expects to make changes there will fail to do so. An error is returned that such content is read-only and the write operation was not able to complete. This has an impact in a number of areas of AEM:
 
 * No changes in `/libs` are allowed at all.
   * This is not new rule, however this was not enforced in previous on-premise versions of AEM.

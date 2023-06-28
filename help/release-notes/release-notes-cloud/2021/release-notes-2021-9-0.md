@@ -176,7 +176,7 @@ The Release Date for Cloud Acceleration Manager is October 04, 2021.
  
 ### What is New {#what-is-new-cam}
 
-* Cloud Acceleration Manager now provides users with the ability to view the BPA reports in a printable preview, allowing simple printing or printing to PDF for easy shareability. Refer to Step 6 and 7 in [Using Best Practices Analysis Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+* Cloud Acceleration Manager now provides users with the ability to view the BPA reports in a printable preview, allowing simple printing or printing to PDF for easy shareability. See Step 6 and 7 in [Using Best Practices Analysis Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 ## Content Transfer Tool {#content-transfer-tool}
 
@@ -186,7 +186,7 @@ The Release Date for Content Transfer Tool v1.6.0 is October 04, 2021.
 
 ### What's New {#what-is-new-ctt}
 
-* Improved User Mapping with a simplified User Experience, including the following features listed below. For more details, refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+* Improved User Mapping with a simplified User Experience, including the following features listed below. For more details, see [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
   * Test connection to the User Management API before running the User Mapping
   * Gracefully skip errors and continue with the User Mapping activity
   * User Mapping no longer fails if Access Token expires (after 24 hours). User Mapping can be re-run from where it last stopped.

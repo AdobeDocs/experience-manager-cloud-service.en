@@ -110,7 +110,7 @@ To publish a page with Quick Publish:
 
 #### Manage Publication {#manage-publication}
 
-**Manage Publication** offers more options than **Quick Publish**, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows as well as offering the option to publish at a later date.
+**Manage Publication** offers more options than **Quick Publish**, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows and offering the option to publish at a later date.
 
 To publish or unpublish a page using Manage Publication:
 
@@ -197,7 +197,7 @@ To publish or unpublish a page using Manage Publication:
 
    >[!NOTE]
    >
-   >The **Workflows** step is shown based on what rights your user may or may not have. See the previous note on this page regarding publishing privileges as well as Managing Access to Workflows and [Applying Workflows to Pages](/help/sites-cloud/authoring/workflows/applying.md) for details.
+   >The **Workflows** step is shown based on what rights your user may or may not have. See the previous note on this page regarding publishing privileges and Managing Access to Workflows and [Applying Workflows to Pages](/help/sites-cloud/authoring/workflows/applying.md) for details.
 
    The resources are grouped by the workflows triggered and each given options to:
 

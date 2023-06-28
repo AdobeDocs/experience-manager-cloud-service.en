@@ -13,7 +13,7 @@ Learn how AEM as a Cloud Service uses continuous integration and delivery (CI/CD
 
 AEM as a Cloud Service uses continuous integration and continuous delivery (CI/CD) to ensure that your projects are on the most current AEM version. This means that production and staging instances are updated to the latest AEM version without any interruption of service for users.
 
-Version updates are applied automatically to production and staging instances only. [AEM updates must be applied manually to all other instances.](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)
+Version updates are applied automatically to production and staging instances only. [AEM updates must be applied manually to all other instances](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
 
 ## Type of Updates {#update-types}
 

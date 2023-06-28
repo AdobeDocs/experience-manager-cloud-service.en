@@ -46,7 +46,7 @@ The following action is required:
 
 1. You have to [integrate AEM with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-<!-- link rewriter - targets in content-fragments-customizing don't exist yet
+<!-- link rewriter - targets in content-fragments-customizing do not exist yet
 
 1. Content Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Content Fragment are externalized for web delivery.
 
@@ -318,7 +318,7 @@ To export a Content Fragment from AEM to Target (after specifying the Cloud Conf
 
    ![Export to Adobe Target](assets/cfm-export-target-01.png)
 
-   <!-- this note doesn't seem to be accurate for CFs -->
+   <!-- this note does not seem to be accurate for CFs -->
 
    <!--
    

@@ -11,7 +11,7 @@ Multilingual web sites generally provide some amount of content in multiple lang
 
 >[!TIP]
 >
->If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 The [WKND tutorial site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) includes several language branches and uses the following structure:
 
@@ -86,7 +86,7 @@ AEM provides a **References** rail that shows a list of language roots that have
 
 ![Language roots](../assets/language-roots.png)
 
-Use the following procedure view the language copies for a page using the [rail selector.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+Use the following procedure view the language copies for a page using the [rail selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 1. On the sites console, select a page of the site and then click or tap **References**.
 

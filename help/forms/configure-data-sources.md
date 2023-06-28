@@ -60,7 +60,7 @@ You can configure relational databases using [!DNL Experience Manager] Web Conso
 
    >[!NOTE]
    >
-   > Refer [SQL connections using JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) for more detailed information.
+   > See [SQL connections using JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) for more detailed information.
     
 1. Tap **[!UICONTROL Save]** to save the configuration.
 
@@ -164,7 +164,7 @@ Some of the operations not supported by RESTful services Open API Specification 
 * Links
 * Different request bodies for different MIME types for a single operation
 
-You can refer to [OpenAPI 3.0 Specification](https://swagger.io/specification/v3/) for detailed information. 
+See [OpenAPI 3.0 Specification](https://swagger.io/specification/v3/) for detailed information. 
 
 ### Form data model HTTP client configuration to optimize performance {#fdm-http-client-configuration}
 
