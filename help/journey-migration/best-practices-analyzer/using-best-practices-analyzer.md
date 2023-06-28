@@ -22,7 +22,7 @@ Follow the section below to understand the important considerations for running 
 * BPA is supported on AEM instances with version 6.1 and above.
 
    >[!NOTE]
-   >Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
+   >See [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
 
 * BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
 

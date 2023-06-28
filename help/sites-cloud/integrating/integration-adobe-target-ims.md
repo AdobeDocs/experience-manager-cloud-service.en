@@ -37,7 +37,7 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
 1. In AEM open the **Tools** menu.
 1. In the **Security** section select **Adobe IMS Configurations**.
 1. Select **Create** to open the **Adobe IMS Technical Account Configuration**.
-1. Using the drop down under **Cloud Configuration**, select **Adobe Target**.
+1. Using the drop-down under **Cloud Configuration**, select **Adobe Target**.
 1. Activate **Create new certificate** and enter a new alias.
 1. Confirm with **Create certificate**.
 

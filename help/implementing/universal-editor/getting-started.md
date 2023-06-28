@@ -26,7 +26,7 @@ This document will guide you through these steps.
 
 ## Request Access to the Universal Editor {#request-access}
 
-You first need to request access to the Universal Editor. Please go to [https://experience.adobe.com/#/aem/editor,](https://experience.adobe.com/#/aem/editor) sign in, and validate if you have access to the Universal Editor.
+You first need to request access to the Universal Editor. See [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), sign in, and validate if you have access to the Universal Editor.
 
 In case you do not have access, it can be requested via a form linked on the same page.
 
@@ -159,7 +159,7 @@ itemid="urn:<referenceName>:<resource>"
 
 Your app is now instrumented to use the Universal Editor!
 
-Please refer to the document [Authoring Content with the Universal Editor](authoring.md) to learn how easy and intuitive it is for content authors to create content using the Universal Editor.
+See [Authoring Content with the Universal Editor](authoring.md) to learn how easy and intuitive it is for content authors to create content using the Universal Editor.
 
 ## Additional Resources {#additional-resources}
 

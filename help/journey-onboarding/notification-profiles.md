@@ -66,7 +66,7 @@ Your two new notification profiles are created.
 
 >[!NOTE]
 >
->It is important that the Cloud Manager **product profile name** is exactly the same as provided. Please copy and paste the provided product profile name to avoid errors. Any deviations or typos will result in notifications not being sent as desired.
+>It is important that the Cloud Manager **product profile name** is exactly the same as provided. Copy and paste the provided product profile name to avoid errors. Any deviations or typos will result in notifications not being sent as desired.
 >
 >In case of error or if the profiles have not been defined, Adobe will default to notifying existing users assigned to the **Cloud Manager Developer** or **Deployment Manager** profiles.
 
