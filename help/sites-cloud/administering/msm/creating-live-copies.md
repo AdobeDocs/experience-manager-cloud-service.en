@@ -239,7 +239,7 @@ Roll out a blueprint page to push content changes to Live Copies. A **Rollout** 
 
    ![Define rollout time](../assets/rollout-now-later.png)
 
-Rollouts are processed as asynchronous jobs and can be checked on the [***Async Jobs Status** page](/help/operations/asynchronous-jobs).md#monitor-the-status-of-asynchronous-operations)
+Rollouts are processed as asynchronous jobs and can be checked on the [***Async Jobs Status** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Roll Out a Blueprint from the Reference Rail {#roll-out-a-blueprint-from-the-reference-rail}
 
