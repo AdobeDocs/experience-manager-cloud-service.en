@@ -25,7 +25,7 @@ You can select a component and drag it to the required location on your page. Yo
 * [Edit Content](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 * [Edit Content - Full Screen Mode](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-For further information about adding components to a page see the article [Editing Page Content](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+For more information about adding components to a page, see [Editing Page Content](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 ## Overview of All Components {#overview-of-all-components}
 

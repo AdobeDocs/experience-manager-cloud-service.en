@@ -544,7 +544,7 @@ Make sure that the text contrasts sufficiently with its background. Contrast rat
 
 >[!NOTE]
 >
->Please remember that fonts can differ in how they render the equivalent PT/PX/EM sizing. 
+>Remember that fonts can differ in how they render the equivalent PT/PX/EM sizing. 
 >
 >Use good judgment and err on the side of readability and usability when selecting appropriate fonts and sizing for web content.
 

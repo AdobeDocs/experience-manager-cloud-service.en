@@ -66,7 +66,7 @@ At any time you can either add or remove pages to/from the range of source pages
 
 >[!NOTE]
 >
->To add pages to a launch they must be below a common language root; i.e. within a single site.
+>To add pages to a launch they must be below a common language root; that is, within a single site.
 
 ## Editing a Launch Configuration {#editing-a-launch-configuration}
 

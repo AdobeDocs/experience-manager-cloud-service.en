@@ -1,12 +1,12 @@
 ---
 title: Referrer Filter configuration with AEM Headless
-description: Adobe Experience Manager's Referrer Filter enables access from third party hosts. An OSGi configuration for the Referrer Filter is needed to enable access to the GraphQL endpoint for headless applications.
+description: Adobe Experience Manager's Referrer Filter enables access from third-party hosts. An OSGi configuration for the Referrer Filter is needed to enable access to the GraphQL endpoint for headless applications.
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 ---
 # Referrer Filter {#referrer-filter}
 
- Adobe Experience Manager's Referrer Filter enables access from third party hosts. 
+ Adobe Experience Manager's Referrer Filter enables access from third-party hosts. 
  
 An OSGi configuration for the Referrer Filter is needed to enable access to the GraphQL endpoint for headless applications over HTTP POST. When using AEM Headless Persisted Queries which access AEM over HTTP GET, a Referrer Filter configuration is not needed.
  
