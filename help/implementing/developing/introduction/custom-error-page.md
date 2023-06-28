@@ -56,7 +56,7 @@ When request processing results in an exception, the Apache Sling framework (whi
   * The HTTP response code 500
   * The exception stack trace
 
-By [customizing the pages shown by the error handler](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` script can be created. However, it is only used if `HttpServletResponse.sendError(500)` is executed explicitly; i.e. from an exception catcher.
+By [customizing the pages shown by the error handler](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` script can be created. However, it is only used if `HttpServletResponse.sendError(500)` is executed explicitly; that is, from an exception catcher.
 
 Otherwise, the response code is set to 500, but the `500.jsp` script is not executed.
 

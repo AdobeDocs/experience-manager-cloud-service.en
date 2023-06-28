@@ -71,7 +71,7 @@ AEM provides:
 The default conflict handler is `ResourceNameRolloutConflictHandler`
 
 * With this handler the blueprint page is given precedence.
-* The service ranking for this handler is set low, i.e. below the default value for the `service.ranking` property, as the assumption is that customized handlers will need a higher ranking. However, the ranking is not the absolute minimum to ensure flexibility when required.
+* The service ranking for this handler is set low, that is, below the default value for the `service.ranking` property, as the assumption is that customized handlers will need a higher ranking. However, the ranking is not the absolute minimum to ensure flexibility when required.
 
 This conflict handler gives precedence to the blueprint. Fore example, the Live Copy page `/b` is moved within the Live Copy branch to `/b_msm_moved`.
 

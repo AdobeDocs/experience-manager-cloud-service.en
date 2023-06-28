@@ -156,7 +156,7 @@ Using the previous example, if the `sling:resourceType` is `hr/jobs` then for:
   * For example, `../content/corporate/jobs/developer.pdf`
   * The script is `/apps/hr/jobs/jobs.pdf.esp`; the suffix is added to the script name.
 * URLs with selectors
-  * Selectors can be used to display the same content in an alternative format. For example a printer-friendly version, an rss feed or a summary.
+  * Selectors can be used to display the same content in an alternative format. For example, a printer-friendly version, an rss feed or a summary.
   * If you look at a printer-friendly version where the selector could be `print`; as in `../content/corporate/jobs/developer.print.html`
   * The script is `/apps/hr/jobs/jobs.print.esp`; the selector is added to the script name.
 * If no, `sling:resourceType` is defined then:

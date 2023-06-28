@@ -260,7 +260,7 @@ When a component has been unlocked you can define the [initial content](#editing
 
 >[!NOTE]
 >
->In **Initial Content** mode as well as on the resultant pages, any unlocked components that have an accessible parent (i.e. components within a layout container) can be deleted.
+>In **Initial Content** mode as well as on the resultant pages, any unlocked components that have an accessible parent (that is, components within a layout container) can be deleted.
 
 #### Layout {#template-layout}
 
@@ -387,7 +387,7 @@ Under the **Properties** heading you can define the settings of the component. T
 
 On the **Main** tab, the most important settings of the component are defined.
 
-For example for an image component the allowed widths can be defined along with enabling lazy loading.
+For example, for an image component the allowed widths can be defined along with enabling lazy loading.
 
 If a setting allows for multiple configurations, click or tap the **Add** button to add another configuration.
 
@@ -403,7 +403,7 @@ To remove a configuration, click or tap the **Delete** button.
 
 The **Features** tab allows you to enable or disable additional features of the component.
 
-For example for an image component you can define the cropping proportions, allowed image orientations, and if uploads are allowed.
+For example, for an image component you can define the cropping proportions, allowed image orientations, and if uploads are allowed.
 
 ![Features tab](/help/sites-cloud/authoring/assets/templates-features-tab.png)
 

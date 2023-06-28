@@ -27,7 +27,7 @@ A **Convert to experience fragment variation** option, and workflow, has been im
 
 >[!NOTE]
 >
->This is is the recommended workflow to convert legacy offers to experience fragments.
+>This is the recommended workflow to convert legacy offers to experience fragments.
 
 >[!NOTE]
 >
