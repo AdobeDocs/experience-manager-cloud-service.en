@@ -12,6 +12,11 @@ exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 ---
 # Migrate from an [!DNL AEM Forms] (On-Premise and AMS environments) to [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 You can migrate or upgrade your Adaptive Forms, themes, templates, and cloud configurations from <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms on OSGi to [!DNL AEM] as a Cloud Service. Before migrating these assets, use the Migration Utility to convert the format used in the earlier versions to the format used in [!DNL AEM] as a Cloud Service. When you run Migration Utility, the following assets are updated:
 
 * Custom components for Adaptive Forms
@@ -156,9 +161,12 @@ To migrate AEM Workflow models, specify the following paths:
 
 ## Addtional Information
 
-The migration utility helps you to migrate Adative Forms based on foundation components. In addition, Forms as a Cloud Service supports Adaptive Forms Core Components. So, you can:
+The migration utility helps you to migrate Adaptive Forms based on foundation components. In addition, Forms as a Cloud Service supports Adaptive Forms Core Components. So, you can:
 
-* Create Core Component based standalone Adaptive Forms
-* Create Core component based Adaptive Form directly in an AEM Sites page
+* [Create Core Component based standalone Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)
+* [Create Core component based Adaptive Form directly in an AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
-to 
+To learn more about AEM Forms as a Cloud Service, you can refer:
+
+* [Introduction to AEM Forms Cloud Service](/help/forms/home.md)
+* [Innovations in AEM Forms Cloud Service](/help/forms/latest-innovations.md)
