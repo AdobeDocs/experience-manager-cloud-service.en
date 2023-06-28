@@ -29,7 +29,7 @@ Unlike custom functional tests, which are HTTP tests written in Java, UI tests c
 >
 >Adobe recommends using Cypress for UI testing, following the code provided in the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress). 
 > 
->Adobe also provides UI test module examples based on JavaScript with WebdriverIO (refer to the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) and  Java with WebDriver (refer to the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)). 
+>Adobe also provides UI test module examples based on JavaScript with WebdriverIO (see [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) and Java with WebDriver (see [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)). 
 
 ## Get Started with UI Tests {#get-started-ui-tests}
 
@@ -47,7 +47,7 @@ This section describes the steps required to set up UI tests for execution in Cl
 
     * For Java and WebDriver, use the sample code from the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
-    * For other programming languages, refer to the section [Building UI Tests](#building-ui-tests) in this document to set up the test project.
+    * For other programming languages, see the section [Building UI Tests](#building-ui-tests) in this document to set up the test project.
 
 1. Ensure that UI testing is activated as per the section [Customer Opt-In](#customer-opt-in) in this document.
 
@@ -63,7 +63,7 @@ This section describes the steps needed to add a UI tests project to your reposi
 
 >[!TIP]
 >
->The [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) can generate a UI Tests project for you, which is compliant to the following description, if you don't have special requirements for the programming language.
+>The [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) can generate a UI Tests project for you, which is compliant to the following description, if you do not have special requirements for the programming language.
 
 ### Generate a Docker Build Context {#generate-docker-build-context}
 
@@ -253,7 +253,7 @@ If the Docker image is implemented with other programming languages or test runn
 
 >[!NOTE]
 >
-> Should you need more resources, please create a Customer Care case and describe your use-case; Adobe will review your request and provide appropriate assistance.
+> Should you need more resources, create a Customer Care case and describe your use-case; Adobe will review your request and provide appropriate assistance.
 
 ## Selenium-specific details
 
@@ -339,7 +339,7 @@ Before activating UI tests in a Cloud Manager pipeline, it's recommended to run 
 >
 >The log files are stored in the `target/` folder of your repository.
 >
->For details, refer to the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
+>For details, see [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
 ### JavaScript WebdriverIO Test Sample {#javascript-sample}
 
@@ -363,7 +363,7 @@ Before activating UI tests in a Cloud Manager pipeline, it's recommended to run 
 >* The log files are stored in the `target/reports` folder of your repository
 >* You need to ensure that your machine is running the latest Chrome version as the test downloads the latest release of ChromeDriver automatically for testing.
 >
->For details, refer to the [AEM Project Archetype repository](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>For details, see [AEM Project Archetype repository](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
 ### Java Selenium WebDriver Test Sample {#java-sample}
 
@@ -386,4 +386,4 @@ Before activating UI tests in a Cloud Manager pipeline, it's recommended to run 
 >
 >The log files are stored in the `target/reports` folder of your repository.
 >
->For details, refer to the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>For details, see [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).

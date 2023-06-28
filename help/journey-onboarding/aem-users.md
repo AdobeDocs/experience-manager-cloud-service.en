@@ -65,7 +65,7 @@ Now that you have read this document you should know how to:
 * Access Cloud Manager.
 * Sign into an AEM as a Cloud Service instance.
 
-Congratulations! You are now ready to author and publish AEM content. Refer to the [Additional Resources](#additional-resources) section for more details on how to author content in AEM and how to administer it.
+Congratulations! You are now ready to author and publish AEM content. See [Additional Resources](#additional-resources) section for more details on how to author content in AEM and how to administer it.
 
 If you are interested in how developers and deployment managers create and manage custom applications for AEM as a Cloud service, continue on to second optional part of the onboarding journey, [AEM Developer Tasks.](developers.md)
 

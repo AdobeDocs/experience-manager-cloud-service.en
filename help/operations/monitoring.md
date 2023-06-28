@@ -29,7 +29,7 @@ With Custom monitoring, customers can optionally provide up to five distinct web
 
 >[!NOTE]
 >
-> This functionality is only offered for customers with [Advanced Cloud Support.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) If you have any questions, please contact your Adobe account team.
+> This functionality is only offered for customers with [Advanced Cloud Support.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) If you have any questions, contact your Adobe account team.
 
 ## Internal Module Monitoring {#module-monitoring}
 

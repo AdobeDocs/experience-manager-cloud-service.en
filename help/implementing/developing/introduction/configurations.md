@@ -23,7 +23,7 @@ Regardless from your perspective, configurations serve two main purposes in AEM:
 
 ## Configurations as an Administrator {#configurations-administrator}
 
-The AEM administrator as well as authors can consider configurations as workspaces. These workspaces can be used to gather groups of settings together as well as their associated content for organizational purposes by implementing access rights for those features.
+The AEM administrator and authors can consider configurations as workspaces. These workspaces can be used to gather groups of settings together and their associated content for organizational purposes by implementing access rights for those features.
 
 Configurations can be created for many different features within AEM.
 

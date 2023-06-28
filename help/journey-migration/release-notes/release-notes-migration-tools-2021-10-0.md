@@ -19,7 +19,7 @@ The Release Date for Cloud Acceleration Manager is October 25, 2021.
 
 ### What's New {#what-is-new-cam}
 
-Cloud Acceleration Manager now provides users with the ability to view historical BPA reports in a Trendline Report. With this Report, users can view the progress they are making in an easy to consume graphical representation. Refer to [Using View Trendline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) for more details.
+Cloud Acceleration Manager now provides users with the ability to view historical BPA reports in a Trendline Report. With this Report, users can view the progress they are making in an easy to consume graphical representation. See [Using View Trendline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) for more details.
 
 ### Release Date {#release-date-october-cam}
 
@@ -27,7 +27,7 @@ The Release Date for Cloud Acceleration Manager is October 04, 2021.
  
 ### What is New {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager now provides users with the ability to view the BPA reports in a printable preview, allowing simple printing or printing to PDF for easy shareability. Refer to Step 6 and 7 in [Using Best Practices Analysis Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+Cloud Acceleration Manager now provides users with the ability to view the BPA reports in a printable preview, allowing simple printing or printing to PDF for easy shareability. See Step 6 and 7 in [Using Best Practices Analysis Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 
 ## Content Transfer Tool {#ctt-release}
@@ -38,7 +38,7 @@ The Release Date for Content Transfer Tool v1.6.0 is October 04, 2021.
 
 ### What's New {#what-is-new-ctt-oct}
 
-* Improved User Mapping Tool with a simplified User Experience, including the following features listed below. For more details, refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en).
+* Improved User Mapping Tool with a simplified User Experience, including the following features listed below. For more details, see [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en).
   * Test connection to the User Management API before running the User Mapping
   * Gracefully skip errors and continue with the User Mapping activity
   * User Mapping no longer fails if **Access Token** expires after 24 hours. User Mapping can be rerun from where it last stopped.

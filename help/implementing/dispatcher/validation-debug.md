@@ -10,7 +10,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 ## Introduction {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->For more information about Dispatcher in the Cloud and how to download Dispatcher Tools, see the [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md) page. If your Dispatcher configuration is in legacy mode, refer to the [legacy mode documentation](/help/implementing/dispatcher/validation-debug-legacy.md).
+>For more information about Dispatcher in the Cloud and how to download Dispatcher Tools, see the [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md) page. If your Dispatcher configuration is in legacy mode, see [legacy mode documentation](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 The following sections describe the flexible mode file structure, local validation, debugging and migrating from legacy mode to the flexible mode.
 
@@ -243,7 +243,7 @@ Phase 3 finished
 
 The script has the following three phases:
 
-1. It runs the validator. If the configuration isn't valid, the script fails.
+1. It runs the validator. If the configuration is not valid, the script fails.
 2. It executes the `httpd -t` command to test if the syntax is correct such that Apache httpd can start. If successful, the configuration should be ready for deployment.
 3. Checks that the subset of the Dispatcher SDK configuration files, which are intended to be immutable as described in the [File structure section](##flexible-mode-file-structure), has not been modified and match the current SDK version.
 
@@ -319,7 +319,7 @@ to use the `$include` statement, for example, the following would generate this 
 
 **Allowed clients/renders are not included from: ...**
 
-This error is generated when you don't specify an "include" for `/renders` and `/allowedClients` in the `/cache` section. See the 
+This error is generated when you do not specify an "include" for `/renders` and `/allowedClients` in the `/cache` section. See the 
 **file included (...) must be named: ...** section for more information.
 
 **Filter must not use glob pattern to allow requests**

@@ -71,7 +71,7 @@ There are three types of environments available with AEM as a Cloud Service:
 
 * **Development environment**: allows developers to implement AEM applications under the same runtime conditions as the stage and production environments.
 
-   Refer to [Managing Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) for more details.
+   See [Managing Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) for more details.
 
 * **Rapid development environment**: allows for rapid development iterations for debugging new or existing code.
 
