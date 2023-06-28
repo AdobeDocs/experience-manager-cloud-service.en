@@ -76,7 +76,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 ### Adjust Your Dispatcher {#adjust-dispatcher}
 
-The PWA feature generates and uses `/content/<sitename>/manifest.webmanifest` files. By default, [the dispatcher](/help/implementing/dispatcher/overview.md) doesn't expose such files. To expose these files, the developer must add the following configuration to your site project.
+The PWA feature generates and uses `/content/<sitename>/manifest.webmanifest` files. By default, [the dispatcher](/help/implementing/dispatcher/overview.md) does not expose such files. To expose these files, the developer must add the following configuration to your site project.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -154,20 +154,20 @@ These settings allow your site behave like a native app by making it installable
   * **Minimal UI** - The browser is mostly hidden, like a native app, but basic navigation controls are exposed.
   * **Full Screen** - The browser is completely hidden, like a native app, but is rendered in full screen mode.
     * With this option, app navigation must be possible entirely through your content using links and components on the site's pages without using the browser's navigation controls.
-* **Screen orientation** - As a local app, the PWA needs to know how to handle [device orientations.](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)
+* **Screen orientation** - As a local app, the PWA needs to know how to handle [device orientations](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
   * **Any** - The app adjusts to the orientation of the user's device. This is the default value.
   * **Portrait** - This forces the app to open in portrait layout regardless of the orientation of the user's device.
   * **Landscape** - This forces the app to open in landscape layout regardless of the orientation of the user's device.
 * **Theme color** - This defines the [color of the app](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) that affects how the local user's operating system displays the native UI toolbar and navigation controls. Depending on the browser, it can affect other app presentation elements.
   * Use the color well pop-up to select a color.
   * The color can also be defined by hex or RGB value.
-* **Background color** - This defines the [background color of the app,](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) which is shown as the app loads.
+* **Background color** - This defines the [background color of the app](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color), which is shown as the app loads.
   * Use the color well pop-up to select a color.
   * The color can also be defined by hex or RGB value.
   * Certain browsers [build a splash screen automatically](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) from the app name, background color, and icon.
 * **Icon** - This defines [the icon](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) that represents the app on the user's device.
   * The icon must be a png file of size 512x512 pixels.
-  * The icon must be [stored in DAM.](/help/assets/overview.md)
+  * The icon must be [stored in DAM](/help/assets/overview.md).
 
 ### Cache Management (Advanced) {#offline-configuration}
 

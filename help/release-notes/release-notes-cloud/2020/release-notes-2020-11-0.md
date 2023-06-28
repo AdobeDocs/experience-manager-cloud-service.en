@@ -67,9 +67,9 @@ The following release (2020.12.0) will be on December 17, 2020
 
 ### What is New {#what-is-new-commerce}
 
-* Released CIF Venia Reference Site - 2020.11.05 that includes the lastest CIF Core Components version v1.5.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) for more details.
+* Released CIF Venia Reference Site - 2020.11.05 that includes the lastest CIF Core Components version v1.5.0. See [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) for more details.
 
-* Released CIF Core Components v1.5.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) for more details.
+* Released CIF Core Components v1.5.0. See [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) for more details.
 
 ### Bug Fixes {#bug-fixes-commerce}
 
@@ -84,7 +84,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is Novemb
 ### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * A new menu option **Local Login** is now be available to users from the environment menu options on the **Environments** card and **Environments** summary pages. 
-   Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md#login-locally) for more details.
+   See [Managing Environments](/help/implementing/cloud-manager/manage-environments.md#login-locally) for more details.
 
 * The **Learn** tab in Cloud Manager has been refreshed with new images in the UI.
 

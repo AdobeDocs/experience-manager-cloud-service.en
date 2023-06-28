@@ -24,17 +24,17 @@ Follow the section below to understand the important considerations before start
 
 * Source AEM version must be 6.3 - 6.5.
 
-* Source AEM's data store is configured to use Amazon S3 or Azure Blob Storage. For more details, refer [Configuring node stores and data stores in AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html).
+* Source AEM's data store is configured to use Amazon S3 or Azure Blob Storage. For more details, see [Configuring node stores and data stores in AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html).
 
 * Each migration set copies the entire data store, so only a single migration set should be used.
 
 * You need access to install [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) on the instance (or VM) running the source AEM instance.
 
-* Data Store Garbage Collection has been run within the previous seven days on the source. For more details, refer to [Data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).  
+* Data Store Garbage Collection has been run within the previous seven days on the source. For more details, see [Data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).  
 
 ### Additional Considerations if source AEM instance is configured to use an Amazon S3 or Azure Blob Storage Data Store {#additional-considerations-amazons3-azure}
 
-* There is a cost associated with transferring data out of Amazon S3 and Azure Blob Storage. The transfer cost is relative to the total amount of data in your existing storage container (whether referenced in AEM, or not). Refer to [Amazon S3](https://aws.amazon.com/s3/pricing/) and [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) for more details.
+* There is a cost associated with transferring data out of Amazon S3 and Azure Blob Storage. The transfer cost is relative to the total amount of data in your existing storage container (whether referenced in AEM, or not). See [Amazon S3](https://aws.amazon.com/s3/pricing/) and [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) for more details.
 
 * You need either an access key and secret key pair for the existing source Amazon S3 bucket, or a SAS URI for the existing source Azure Blob Storage container (read-only access is fine).
 
@@ -111,7 +111,7 @@ Your azcopy.config file should include the following properties (make sure to us
 
 >[!NOTE]
 >
-> If you'd rather not grant write access to the existing blob storage container, you can generate a new SAS URI which only has Read and List permissions.
+> If you do not want grant write access to the existing blob storage container, you can generate a new SAS URI which only has Read and List permissions.
 
 ```
 azCopyPath=/usr/bin/azcopy
@@ -156,7 +156,7 @@ With the above configuration file in place, the AzCopy pre-copy phase runs as pa
 >If AzCopy is not configured correctly, you would see the following message in the logs:
 >`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
-1. Begin an extraction from the CTT UI. Refer to [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) and the [Extraction Process](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) for more details.
+1. Begin an extraction from the CTT UI. See [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) and the [Extraction Process](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) for more details.
 
 1. Confirm that the following line is printed in the extraction log:
 
@@ -192,7 +192,7 @@ When AzCopy is running for source file dataStore, you should see messages like t
 
 ### 5. Ingesting with AzCopy {#ingesting-azcopy}
 
-Refer to [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+See [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
 for general information about ingesting content into the target from the Cloud Acceleration Manager (CAM), including
 instruction on how to use AzCopy (pre-copy), or not, in the "New Ingestion" dialog.
 
@@ -206,7 +206,7 @@ early on, and help you find a quick solution to any problems.
 *************** Beginning AzCopy pre-copy phase ***************
 INFO: Scanning...
 INFO: Failed to create one or more destination container(s). Your transfers may still succeed if the container already exists.
-INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+INFO: Any empty folders will not be processed, because source and/or destination does not have full folder support
 INFO: azcopy: A newer version 10.11.0 is available to download
  
 Job 419d98da-fc05-2a45-70cc-797fee632031 has started

@@ -38,7 +38,7 @@ A production pipeline is a purpose-built pipeline that includes a series of orch
 
 >[!TIP]
 >
->Refer to the document [Configuring a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) for more details.
+>See [Configuring a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) for more details.
 
 ## Non-Production Pipeline {#non-prod-pipeline}
 
@@ -46,7 +46,7 @@ A non-production pipeline mainly serves to run code quality scans or to deploy s
 
 >[!TIP]
 >
->Refer to the document [Configuring a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) for more details.
+>See [Configuring a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) for more details.
 
 ## Code Sources {#code-sources}
 
@@ -79,13 +79,13 @@ The following diagram illustrates Cloud Manager's pipeline configurations with t
 
 Full-stack pipelines deploy back-end code, front-end code, and web tier configurations to AEM runtime all at the same time.
 
-* Back-End Code - Immutable content such as Java code, OSGi configurations, repoinit, as well as mutable content
+* Back-End Code - Immutable content such as Java code, OSGi configurations, repoinit, and mutable content
 * Front-End Code - Application UI resources such as JavaScript, CSS, fonts
 * Web Tier Config - HTTPD/Dispatcher configurations
 
 The full-stack pipeline represents an 'uber' pipeline, doing everything at once, while giving users the options to exclusively deploy their front-end code or Dispatcher configurations via the front-end pipeline and the web tier config pipelines respectively.
 
-Full-stack pipelines package front-end code (JavaScript/CSS) as [AEM client libraries.](/help/implementing/developing/introduction/clientlibs.md)
+Full-stack pipelines package front-end code (JavaScript/CSS) as [AEM client libraries](/help/implementing/developing/introduction/clientlibs.md).
 
 Full-stack pipelines may deploy web tier configurations if a [web tier config pipeline](#web-tier-config-pipelines) is not configured.
 
@@ -121,11 +121,11 @@ Front-end pipelines can be code quality pipelines or deployment pipelines.
 
 ### Before you Configure Front-End Pipelines {#before-start}
 
-Before you configure front-end pipelines, please review the [AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) for an end-to-end guide through the easy-to-use AEM Quick Site Creation tool. This journey will help you streamline your front-end development and allow you to quickly customize your site with no back-end AEM knowledge.
+Before you configure front-end pipelines, review the [AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) for an end-to-end guide through the easy-to-use AEM Quick Site Creation tool. This journey will help you streamline your front-end development and allow you to quickly customize your site with no back-end AEM knowledge.
 
 ### Configure a Front-End Pipeline {#configure-front-end}
 
-To learn how to configure front-end pipelines, please refer to the following documents.
+To learn how to configure front-end pipelines, see the following:
 
 * [Adding a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Adding a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
@@ -138,7 +138,7 @@ See [Developing Sites with the Front-End Pipeline](/help/implementing/developing
 
 ### Configuring Full-Stack Pipelines {#configure-full-stack}
 
-To learn how to configure full-stack pipelines, please refer to the following documents.
+To learn how to configure full-stack pipelines, see the following documents:
 
 * [Adding a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Adding a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
@@ -159,7 +159,7 @@ The following restrictions apply.
 * A user must be logged with the **Deployment Manager** role to configure or run pipelines.
 * At any time, there can only be one web tier config pipeline per environment.
 * The user can not configure a web tier config pipeline when its corresponding full-stack pipeline is running.
-* The web tier structure must adhere to the flexible mode structure, as defined in the document [Dispatcher in the Cloud.](/help/implementing/dispatcher/disp-overview.md#validation-debug)
+* The web tier structure must adhere to the flexible mode structure, as defined in the document [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 In addition, be aware of how the [full stack pipeline](#full-stack-pipeline) behaves when introducing a web tier pipeline.
 
@@ -171,7 +171,7 @@ Web tier config pipelines can be of the type code quality or deployment.
 
 ### Configuring Web Tier Config Pipelines {#configure-web-tier-config-pipelines}
 
-To learn how to configure web tier config pipelines, please refer to the following documents.
+To learn how to configure web tier config pipelines, see the following documents:
 
 * [Adding a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Adding a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)

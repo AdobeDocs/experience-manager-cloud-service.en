@@ -140,7 +140,7 @@ The Release Date for Content Transfer Tool v1.4.6 is May 27, 2021.
 
 ### What's New {#what-is-new-ctt-latest}
 
-* New logging statement was added to the quickstart's error log, if the user doesn't have execute permission on the Java executable.
+* New logging statement was added to the quickstart's error log, if the user does not have run permission on the Java executable.
 
 * When a user deletes a migration set from the CTT user interface, where an extraction was performed, the `tmp` folder associated with that migration set is deleted to save space.
 

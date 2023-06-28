@@ -62,7 +62,7 @@ To subscribe to the events, follow these steps:
 1. Project status: Select the status for which the project must be set to create the linked folder.
 1. Create a linked folder in projects with portfolio: List of Portfolios that the project must belong to so you can create the linked folder. Leave this list empty to create the linked folder for all project portfolio.
 1. Create a linked folder in projects with custom form field: Custom form field and its corresponding value that the project has to have so you can create the linked folder. This configuration is ignored if left empty. Select `CUSTOM FORMS: Create DAM Linked Folder` for the field and input `Yes` for the value.
-1. Click on Enable automatic creation of linked folders. If you go back to the Event Subscriptions tab, you'll see there is now one create event.
+1. Click on Enable automatic creation of linked folders. If you go back to the Event Subscriptions tab, you see there is now one create event.
 
 ![linked folder configuration](/help/assets/assets/wf-linked-folder-config.png)
 

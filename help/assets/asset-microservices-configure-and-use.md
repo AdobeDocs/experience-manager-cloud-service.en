@@ -198,7 +198,7 @@ For details about which standard workflow step can be used in the post-processin
 
 Post-processing workflow models are regular [!DNL Experience Manager] workflow models. Create different models if you need different processing for different repository locations or asset types.
 
-The processing steps are added as required. You can use both, the supported steps that are available, as well as any custom-implemented workflow steps.
+The processing steps are added as required. You can use both, the supported steps that are available, and any custom-implemented workflow steps.
 
 Ensure that the last step of each post-processing workflows is `DAM Update Asset Workflow Completed Process`. The last step helps ensure that Experience Manager knows when asset processing is completed.
 

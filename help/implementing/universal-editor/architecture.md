@@ -22,7 +22,7 @@ This document outlines each of these building blocks and how they exchange data.
 
 >[!TIP]
 >
->If you'd like to see the Universal Editor and its architecture in action, please refer to the document [Getting Started with the Universal Editor in AEM](getting-started.md) to learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
+>To see the Universal Editor and its architecture in action, see [Getting Started with the Universal Editor in AEM](getting-started.md) to learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 
 ### Editors {#editors}
 

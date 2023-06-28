@@ -16,7 +16,7 @@ This section provides step-by-step instructions on how to convert an AMS configu
 
 1. **Extract the archive and remove an eventual prefix**
 
-   Extract the archive to a folder, and make sure the immediate subfolders start with conf, conf.d, conf.dispatcher.d, and conf.modules.d. If they don't, move them up in the hierarchy.
+   Extract the archive to a folder, and make sure the immediate subfolders start with conf, conf.d, conf.dispatcher.d, and conf.modules.d. If they do not, move them up in the hierarchy.
 
 1. **Get rid of unused subfolders and files**
 
@@ -43,7 +43,7 @@ This section provides step-by-step instructions on how to convert an AMS configu
 
    * Remove any file named base_rewrite.rules and xforwarded_forcessl_rewrite.rules and remember to remove Include statements in the virtual host files referring to them.
 
-   * If conf.d/rewrites now contains a single file, it should be renamed to rewrite.rules and don't forget to adapt the Include statements referring to that file in the virtual host files as well.
+   * If conf.d/rewrites now contains a single file, it should be renamed to rewrite.rules and do not forget to adapt the Include statements referring to that file in the virtual host files as well.
 
    * If the folder however contains multiple, virtual host-specific files, their contents should be copied to the Include statement referring to them in the virtual host files.
 
@@ -53,7 +53,7 @@ This section provides step-by-step instructions on how to convert an AMS configu
 
    1. Remove any file named ams_default.vars and remember to remove Include statements in the virtual host files referring to them.
 
-   1. If conf.d/variables now contains a single file, it should be renamed to custom.vars and don't forget to adapt the Include statements referring to that file in the virtual host files as well.
+   1. If conf.d/variables now contains a single file, it should be renamed to custom.vars and do not forget to adapt the Include statements referring to that file in the virtual host files as well.
 
    1. If the folder however contains multiple, virtual host-specific files, their contents should be copied to the Include statement referring to them in the virtual host files.
 

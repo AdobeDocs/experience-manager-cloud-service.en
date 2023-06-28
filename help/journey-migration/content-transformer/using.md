@@ -59,7 +59,7 @@ The Content Transformer is bundled with the [Content Transfer Tool](/help/journe
 1. An example of a backup package created for the move operation of the paths is shown below, click install to bring back the source paths. Note that the installation will only bring the source paths back to their original location and not delete the paths where they were moved during transformation. To delete the paths in the moved location, click **Add Paths** button to add the location (for example `/etc/packages/content-transformation/paths`), select the location and click **Remove**. 
 
    >[!CAUTION]
-   > Do not delete `/etc/packages/content-transformation` as this is the location where the backup packages reside. Only when you are sure that you don't need these packages anymore, you can delete this location to reduce the repository size.
+   > Do not delete `/etc/packages/content-transformation` as this is the location where the backup packages reside. Only when you are sure that you do not need these packages anymore, you can delete this location to reduce the repository size.
 
    ![image](/help/journey-migration/content-transformer/assets/ct-7.png)
    ![image](/help/journey-migration/content-transformer/assets/ct-8.png)
