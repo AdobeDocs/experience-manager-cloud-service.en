@@ -67,7 +67,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->Any content package containing index definitions should have the following property set in in the properties file of the content package, located at `/META-INF/vault/properties.xml`:
+>Any content package containing index definitions should have the following property set in the properties file of the content package, located at `/META-INF/vault/properties.xml`:
 >
 >`noIntermediateSaves=true`
 
@@ -333,6 +333,6 @@ If it is no longer needed to have a customization of an out-of-the-box index, th
 
 ## Index and Query Optimizations {#index-query-optimizations}
 
-Apache Jackrabbit Oak enables flexible index configurations to efficiently handle search queries. Indexes are especially important for larger repositories. Please ensure that all queries are backed by an appropriate index. Queries without a suitable index may read thousands of nodes, which is then logged as a warning.
+Apache Jackrabbit Oak enables flexible index configurations to efficiently handle search queries. Indexes are especially important for larger repositories. Ensure that all queries are backed by an appropriate index. Queries without a suitable index may read thousands of nodes, which is then logged as a warning.
 
-Please see [this document](query-and-indexing-best-practices.md) for information on how queries and indexes can be optimized.
+See [this document](query-and-indexing-best-practices.md) for information on how queries and indexes can be optimized.

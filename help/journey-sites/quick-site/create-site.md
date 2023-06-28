@@ -51,11 +51,11 @@ Once downloaded you can upload it to your AEM environment as you would any other
 
 >[!TIP]
 >
->The AEM Standard Site Template can be customized to meet your project's needs and can obviate the need for further customization. However this topic is beyond the scope of this journey. Please refer to the GitHub documentation of the Standard Site Template for more information.
+>The AEM Standard Site Template can be customized to meet your project's needs and can obviate the need for further customization. However this topic is beyond the scope of this journey. See the GitHub documentation of the Standard Site Template for more information.
 
 >[!TIP]
 >
->You can also choose to build the template from source as part of your project workflow. However this topic is beyond the scope of this journey. Please refer to the GitHub documentation of the Standard Site Template for more information.
+>You can also choose to build the template from source as part of your project workflow. However this topic is beyond the scope of this journey. See the GitHub documentation of the Standard Site Template for more information.
 
 ## Installing a Site Template {#installing-template}
 

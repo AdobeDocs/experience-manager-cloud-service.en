@@ -117,7 +117,7 @@ The following table describes the properties that you can configure:
 
 Several properties and node types are excluded by default, these are defined in the OSGi configuration of **CQ MSM Content Update Action**, under **Excluded Page Properties**.
 
-By default properties matching the following regular expressions are excluded (i.e. not updated) on rollout:
+By default properties matching the following regular expressions are excluded (that is, not updated) on rollout:
 
 ![Live Copy exclusion regexes](../assets/live-copy-exclude.png)
 
@@ -190,7 +190,7 @@ Note that the child pages of the blueprint page inherit the configuration. When 
 1. Use the **Sites** console to select the root page of the blueprint.
 1. Select **Properties** from the toolbar.
 1. Open the **Blueprint** tab.
-1. Select one or more **Rollout Configurations** using the drop down selector.
+1. Select one or more **Rollout Configurations** using the drop-down selector.
 1. Persist your updates with **Save**.
 
 ### Setting the System Default Rollout Configuration {#setting-the-system-default-rollout-configuration}

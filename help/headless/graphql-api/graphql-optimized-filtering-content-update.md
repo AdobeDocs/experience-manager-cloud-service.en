@@ -236,7 +236,7 @@ To run the procedure use the following steps:
 
 ## Limitations {#limitations}
 
-Please be aware of the following limitations:
+Be aware of the following limitations:
 
 * Optimization of the performance of GraphQL filters will only be possible after a complete update of all your Content Fragments (indicated by the presence of the `cfGlobalVersion` property for the JCR node `/content/dam`)
 

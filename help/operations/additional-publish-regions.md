@@ -34,11 +34,11 @@ Additional publish regions are applied to stage and production environments, but
 
 When an additional publish region is enabled on a program with advanced networking already configured, the traffic in the additional publish region that matches the advanced networking rules will by default route through the primary region. To take advantage of increased availability, it is recommended to enable advanced networking on the additional regions.
 
-Please refer to the [Advanced Networking Configuration for Additional Publish Regions](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) section in the Advanced Networking documentation for details, including how to add advanced networking configurations to additional regions without incurring loss of connectivity.
+See the [Advanced Networking Configuration for Additional Publish Regions](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) section in the Advanced Networking documentation for details, including how to add advanced networking configurations to additional regions without incurring loss of connectivity.
 
 ## Limitations {#limitations}
 
-Please keep these limitations in mind when considering using additional publish regions.
+Keep in mind the following limitations when considering using additional publish regions.
 
 * Additional publish regions may only be added to AEM Sites. Additional publish regions do not extend to other AEM solutions or related functionality deployed in the same program (e.g. AEM Forms or Adobe Learning Manager).
 * Additional regions can only be added if associated entitlements are available and unused in the tenant.
