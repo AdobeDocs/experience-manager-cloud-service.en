@@ -494,6 +494,23 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [HTTP2 Delivery of Content FAQ](/help/assets/dynamic-media/http2faq.md)
     + [Flash Viewers End-of-Life](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+  
++ Working with Assets view 
+  + [Getting started](/help/assets/get-started-assets-view.md)
+  + [My Workspace](/help/assets/my-workspace-assets-view.md)
+  + [Supported file types and use cases](/help/assets/supported-file-formats-assets-view.md)
+  + [View assets](/help/assets/navigate-assets-view.md)
+  + [Upload and add assets](/help/assets/add-delete-assets-view.md)
+  + [Search and discover assets](/help/assets/search-assets-view.md)
+  + [Asset management tasks](/help/assets/manage-organize-assets-view.md)
+  + [Edit images](/help/assets/edit-images-assets-view.md)
+  + [Manage asset metadata](/help/assets/metadata-assets-view.md)
+  + [Share assets](/help/assets/share-links-for-assets-view.md)
+  + [Manage collections](/help/assets/manage-collections-assets-view.md)
+  + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
+  + [Manage reports](/help/assets/manage-reports-assets-view.md)
+  + [Manage tags](/help/assets/tagging-management-assets-view.md)
+
   + Integration with Adobe Workfront {#integrations}
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
