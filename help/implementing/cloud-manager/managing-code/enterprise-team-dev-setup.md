@@ -84,7 +84,7 @@ This real-world setup can be used as a blueprint and then customized to the need
 
 >[!TIP]
 >
->Please refer to the document [Working with Multiple Source Git Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html#managing-code) to learn more about this setup.
+>See [Working with Multiple Source Git Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html#managing-code) to learn more about this setup.
 
 ### Considerations for a Multi-Team Setup {#considerations}
 

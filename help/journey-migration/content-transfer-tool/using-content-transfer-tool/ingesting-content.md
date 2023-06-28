@@ -122,7 +122,7 @@ You can initiate an ingestion to the destination environment only if you belong 
 
 ### Unable to reach migration service {#unable-to-reach-migration-service}
 
-After an ingestion is requested, a message like the following may be presented to the user: "The migration service on the destination environment is currently unreachable. Please try again later or contact Adobe support."
+After an ingestion is requested, a message like the following may be presented to the user: "The migration service on the destination environment is currently unreachable. If so, try again later or contact Adobe support."
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 

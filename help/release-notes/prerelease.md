@@ -27,7 +27,7 @@ This pattern ensures continuous releases with no interruption of service.
 
 The prerelease channel lets you preview features scheduled for the upcoming feature release so you can evaluate upcoming functionality and plan for its possible implementation for your own projects. It lets you plan ahead for the next feature release.
 
-For example if it is May and you are subscribed to the prerelease channel, you can evaluate features in the upcoming June release.
+For example, if it is May and you are subscribed to the prerelease channel, you can evaluate features in the upcoming June release.
 
 ![Prerelease cadence graphic](assets/prerelease-cadence.png)
 

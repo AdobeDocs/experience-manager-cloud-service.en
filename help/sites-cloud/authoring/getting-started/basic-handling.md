@@ -36,7 +36,7 @@ The overview will restart the next time you access a console unless you either v
 
 ## Global Navigation {#global-navigation}
 
-You can navigate between the consoles using the global navigation panel. This is triggered as a full-screen drop down when you click or tap the Adobe Experience Manager link at the top-left of the screen.
+You can navigate between the consoles using the global navigation panel. This is triggered as a full-screen drop-down when you click or tap the Adobe Experience Manager link at the top-left of the screen.
 
 You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
 
@@ -210,7 +210,7 @@ The action available in the toolbar change to reflect the actions you can take o
 
 How you [select a resource](#viewing-and-selecting-resources) depends on the view.
 
-Due to the space restrictions in some windows, the toolbar can quickly become longer than the space available. When this happens additional options appears. Clicking or tapping on the ellipsis (the three dots or **...**) opens a drop down selector holding all remaining actions. For example, after selecting a page in the **Sites** console:
+Due to the space restrictions in some windows, the toolbar can quickly become longer than the space available. When this happens additional options appears. Clicking or tapping on the ellipsis (the three dots or **...**) opens a drop-down selector holding all remaining actions. For example, after selecting a page in the **Sites** console:
 
 ![Additional options](/help/sites-cloud/authoring/assets/additional-options.png)
 
@@ -275,7 +275,7 @@ In all views, all items can be deselected by tapping escape on the keyboard if y
 
 #### Selecting Example {#selecting-example}
 
-1. For example in card view:
+1. For example, in card view:
 
    ![Card view select](/help/sites-cloud/authoring/assets/card-view-select.png)
 

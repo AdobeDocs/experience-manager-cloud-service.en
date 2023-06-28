@@ -171,7 +171,7 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
 
-Please refer to the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
+See [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
 
 ## Skip Dispatcher Packages {#skip-dispatcher-packages}
 

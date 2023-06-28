@@ -23,7 +23,7 @@ Activities are displayed with a label describing what kind of activity is define
 
 * XT - Adobe Target experience targeting
 * A/B - Adobe Target A/B testing
-* AEM - Adobe Experience Manager targeting (i.e. ContextHub driven)
+* AEM - Adobe Experience Manager targeting (that is, ContextHub driven)
 
 ![Activity types](/help/sites-cloud/authoring/assets/activities-types.png)
 

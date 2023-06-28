@@ -47,7 +47,7 @@ Understanding SSL/TLS connection problems can sometimes be difficult. To trouble
    ![image](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
 >[!NOTE]
->This flag is only for debugging SSL issues. Please ensure that the flag is disabled before running the extraction, as it may require a large amount of disk space. This could potentially fill the drive capacity and cause the extraction process to fail.
+>This flag is only for debugging SSL issues. Ensure that the flag is disabled before running the extraction, as it may require a large amount of disk space. This could potentially fill the drive capacity and cause the extraction process to fail.
 
 ## Running the Content Transfer Tool {#running-tool}
 
@@ -96,7 +96,7 @@ The following section applies to the new version of the Content Transfer Tool. F
 
    >[!NOTE]
    >
-   >The extraction key enables your source AEM environment to securely connect to the migration set. Please treat this key with the same care that you would a password, and never share it over an unsecured medium like email.
+   >The extraction key enables your source AEM environment to securely connect to the migration set. Treat this key with the same care that you would a password, and never share it over an unsecured medium like email.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
 
