@@ -13,7 +13,7 @@ The ContextHub allowing you to:
 * [Persist context data](#persistence) on your website as a data layer representation.
 * [Manage segments](#segmentation) for the selected context.
 
-The client-side Javascript API enables you to access the data for personalizing content.
+The client-side JavaScript API enables you to access the data for personalizing content.
 
 ## Presentation {#presentation}
 
@@ -29,15 +29,15 @@ Developers need to [add the ContextHub component to the page](configuring-contex
 
 ## Persistence {#persistence}
 
-ContextHub stores persist context data on the client. The ContextHub Javascript API enables you to access stores to create, update, and delete data as necessary. As such, ContextHub represents a data layer on your pages.
+ContextHub stores persist context data on the client. The ContextHub JavaScript API enables you to access stores to create, update, and delete data as necessary. As such, ContextHub represents a data layer on your pages.
 
 Each ContextHub store is an instance of a predefined store type:
 
 * ContextHub provides several [sample store types](sample-stores.md).
 * Use AEM consoles to [create stores](configuring-contexthub.md#creating-a-contexthub-store).
 * Developers can [create custom store types](extending-contexthub.md#creating-custom-store-candidates).
-* Developers can [access store data](adding-contexthub.md#interacting-with-contexthub-stores) via Javascript.
+* Developers can [access store data](adding-contexthub.md#interacting-with-contexthub-stores) by way of JavaScript.
 
 ## Segmentation {#segmentation}
 
-ContextHub includes a segmentation engine that manages segments and determines which segments are resolved for the current context. Several segments are defined. You can use the Javascript API to [determine resolved segments](adding-contexthub.md#determining-resolved-contexthub-segments).
+ContextHub includes a segmentation engine that manages segments and determines which segments are resolved for the current context. Several segments are defined. You can use the JavaScript API to [determine resolved segments](adding-contexthub.md#determining-resolved-contexthub-segments).

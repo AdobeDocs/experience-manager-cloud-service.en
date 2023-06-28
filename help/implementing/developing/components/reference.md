@@ -116,7 +116,7 @@ The icon or abbreviation for the component is defined via JCR properties of the 
 1. `abbreviation` - String property to customize the abbreviation of the component name in the component browser
     * The abbreviation should be limited to two characters.
     * Providing an empty string will build the abbreviation from first two characters of the `jcr:title` property.
-        * For example "Im" for "Image"
+        * For example, "Im" for "Image"
         * The localized title is used to build the abbreviation.
     * The abbreviation is only translated if the component has an `abbreviation_commentI18n` property, which is then used as translation hint.
 1. `cq:icon.png` or `cq:icon.svg` - Icon for this component, which is shown in the Component Browser
@@ -217,7 +217,7 @@ Within the dialog, individual fields are defined:
 
 Design dialogs are similar to the dialogs used to edit and configure content, but they provide the interface for template authors to pro-configure and provide design details for that component on a page template. Page templates are then used by the content authors to create content pages. See the [template documentation](/help/sites-cloud/authoring/features/templates.md) for details on how templates are created.
 
-[Design dialogs are used when editing a page template](/help/sites-cloud/authoring/features/templates.md), though they are not needed for all components. For example the **Title** and **Image Components** both have design dialogs, whereas the **Social Media Sharing Component** does not.
+[Design dialogs are used when editing a page template](/help/sites-cloud/authoring/features/templates.md), though they are not needed for all components. For example, the **Title** and **Image Components** both have design dialogs, whereas the **Social Media Sharing Component** does not.
 
 ### Coral UI and Granite UI {#coral-and-granite}
 
@@ -410,7 +410,7 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
 >* `aftermove`
 >* `aftercopy`
 
-The event handler can be implemented with a custom implementation. For example (where `project.customerAction` is a static method):
+The event handler can be implemented with a custom implementation. For example, (where `project.customerAction` is a static method):
 
 `afteredit = "project.customerAction"`
 

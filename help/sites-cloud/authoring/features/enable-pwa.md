@@ -16,7 +16,7 @@ Through a simple configuration, a content author can now enable progressive web 
 >* Understanding of caching strategies
 >* Support from your development team
 >
->Before using this feature is is recommended that you discuss this with your development team to define the best way to use it for your project.
+>Before using this feature is recommended that you discuss this with your development team to define the best way to use it for your project.
 
 ## Introduction {#introduction}
 
@@ -112,7 +112,7 @@ With [the prerequisites](#prerequisites) met, it is very easy for a content auth
       * `/content/<sitename>`
       * `/content/experiencefragements/<sitename>`
       * `/content/dam/<sitename>`
-      * Any third party font references
+      * Any third-party font references
       * `/etc/clientlibs/<sitename>`
 
       ![Define PWA offline paths](../assets/pwa-offline.png)

@@ -158,7 +158,7 @@ When you create the site, provide values for the following properties:
 
 To create a Live Copy of a site from a blueprint configuration:
 
-1. In the **Sites** console, select **Create**, then **Site** from the drop down selector.
+1. In the **Sites** console, select **Create**, then **Site** from the drop-down selector.
 1. Select the blueprint configuration to use as the source of the Live Copy and proceed with **Next**:
 
    ![Create site from blueprint](../assets/create-site-from-blueprint.png)
@@ -423,7 +423,7 @@ The [Resume action is also available from the Live Copy Overview](live-copy-over
 
 ### Changing Inheritance Depth (Shallow/Deep) {#changing-inheritance-depth-shallow-deep}
 
-On an existing Live Copy you can change the depth for a page, i.e. whether child pages are included.
+On an existing Live Copy you can change the depth for a page, that is, whether child pages are included.
 
 * Switching to a shallow Live Copy:
 

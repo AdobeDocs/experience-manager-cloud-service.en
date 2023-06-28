@@ -141,7 +141,7 @@ This is a more detailed overview focusing on the authoring experience.
 
 ## Requirements & Limitations {#requirements-limitations}
 
-To enable the author to use the page editor to edit the content of an SPA, your SPA application must be implemented to interact with the AEM SPA Editor SDK. Please see the [Getting Started with SPAs in AEM using React](getting-started-react.md) document for minimum that you need to know to get yours running.
+To enable the author to use the page editor to edit the content of an SPA, your SPA application must be implemented to interact with the AEM SPA Editor SDK. See the [Getting Started with SPAs in AEM using React](getting-started-react.md) document for minimum that you need to know to get yours running.
 
 ### Supported Frameworks {#supported-frameworks}
 
@@ -154,7 +154,7 @@ Previous versions of these frameworks may work with the AEM SPA Editor SDK, but 
 
 ### Additional Frameworks {#additional-frameworks}
 
-Additional SPA frameworks can be implemented to work with the AEM SPA Editor SDK. Please see the [SPA Blueprint](blueprint.md) document for the requirements that a framework must fulfill to create a framework-specific layer composed of modules, components, and services to work with the AEM SPA Editor.
+Additional SPA frameworks can be implemented to work with the AEM SPA Editor SDK. See the [SPA Blueprint](blueprint.md) document for the requirements that a framework must fulfill to create a framework-specific layer composed of modules, components, and services to work with the AEM SPA Editor.
 
 ### Using Multiple Selectors {#multiple-selectors}
 

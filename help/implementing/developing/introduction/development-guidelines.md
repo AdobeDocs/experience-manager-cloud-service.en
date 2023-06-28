@@ -276,7 +276,7 @@ Large MVPs can lead to errors due to the MongoDB document exceeding 16 MB, resul
 Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
 ```
 
-Please see the [Apache Oak documentation](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) for more details.
+See the [Apache Oak documentation](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) for more details.
 
 ## [!DNL Assets] development guidelines and use cases {#use-cases-assets}
 

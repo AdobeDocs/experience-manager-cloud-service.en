@@ -206,7 +206,7 @@ The `mode` element defines how content is the repository is affected when the pa
 
 * **Merge:** Content in the package that is not already in the repository is added. Content that is in both the package and the repository is unchanged. No content is removed from the repository.
 * **Replace:** Content in the package that is not in the repository is added to the repository. Content in the repository is replaced with matching content in the package. Content is removed from the repository when it does not exist in the package.
-* **Update:** Content in the package that is not in the repository is added to the repository. Content in the repository is replaced with matching content in the package. Existing content gets removed from the repository.
+* **Update:** Content in the package that is not in the repository is added to the repository. Content in the repository is replaced with matching content in the package. 
 
 When the filter contains no `mode` element, the default value of `replace` is used.
 
@@ -232,7 +232,7 @@ The following POM code adds the files in the `META-INF` folder of the project so
 ```xml
 <build>
     <resources>
-        <!-- vault META-INF resources (thumbnail etc.) -->
+        <!-- vault META-INF resources (thumbnail and so on) -->
         <resource>
             <directory>${basedir}/src/main/content/META-INF</directory>
             <targetPath>../vault-work/META-INF</targetPath>

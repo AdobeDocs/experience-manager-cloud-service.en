@@ -252,7 +252,7 @@ OK, this might seem a slightly strange section, but once you open the Content Fr
 
 * **Update page references**
 
-  This action is available from the **...** (ellipses) drop down. It is not interesting for headless authors as it relates to page authoring.
+  This action is available from the **...** (ellipses) drop-down. It is not interesting for headless authors as it relates to page authoring.
 
 ### Publishing {#publishing}
 

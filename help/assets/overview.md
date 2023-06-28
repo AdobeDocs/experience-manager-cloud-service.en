@@ -31,6 +31,22 @@ The following are the key benefits of Assets as a [!DNL Cloud Service]. To know 
 * **Constant monitoring**: The monitoring of the system is automated and built-in checks and triggers help maintain the performance, availability, and overall robustness.
 * **Hassle-free deployments**: Experience Manager in the Cloud operations are completely automated that require no manual intervention. For automated deployments, the Cloud Manager (CM) component automates the build of deployable Docker images containing your custom code.
 
+## Available persona-based experiences
+
+Adobe offers robust Digital Asset Management (DAM) solutions for you to get the most out of your digital assets. Adobe Experience Manager Assets has two separate experiences that use the same Cloud Services repository:
+
+* **Admin View**: The existing Assets as a Cloud Service user interface. Use the Admin View for all advanced asset management capabilities including integrations, workflows, content automation, publishing and more. 
+
+* **Assets View**: Adobe's lightweight asset management experience to store, manage, discover, and use digital assets. Streamlined user interface containing essential asset management capabilities. Designed for the light-weight DAM users with a focus on upload, metadata management, search, download, and sharing.
+
+Users with access to the Admin view can also access the Assets view. Assets View provides simplified user interface makes it easy to manage, discover, and distribute your digital assets. A broad set of users from across different functions, including creatives, marketing and line-of-business teams can collaborate on assets and access the right, approved assets when and where they need them. Many casual DAM users prefer the Assets view because it only contains a subset of features. The experience is targeted to creatives, read-only asset consumers, and lighter-weight DAM users.  
+
+DAM librarians, developers, and super-users may continue to use the Admin view or switch between the user interfaces, as needed. You can select the experience that works best for your role. 
+
+![add-tags](assets/newui-overview.svg)
+
+For information on how to access the Assets view and some of the simplications that it offers over Admin view, see Assets view. 
+
 ## New Assets capabilities {#whats-new-assets}
 
 The significant new capabilities are:
