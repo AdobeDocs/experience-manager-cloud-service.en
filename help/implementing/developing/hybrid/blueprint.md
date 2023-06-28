@@ -1,6 +1,6 @@
 ---
 title: SPA Blueprint
-description: This document describes the general, framework-independent contract that any SPA framework should fulfill in order to implement editable SPA components within AEM.
+description: This document describes the general, framework-independent contract that any SPA framework should fulfill so you can implement editable SPA components within AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 ---
 # SPA Blueprint {#spa-blueprint}
@@ -9,7 +9,7 @@ To enable the author to use the AEM SPA Editor to edit the content of an SPA, th
 
 ## Introduction {#introduction}
 
-This document describes the general contract that any SPA framework should fulfill (i.e. the kind of AEM support layer) in order to implement editable SPA components within AEM.
+This document describes the general contract that any SPA framework should fulfill (that is, the kind of AEM support layer) so you can implement editable SPA components within AEM.
 
 To enable the author to use the AEM Page Editor to edit the data exposed by an Single Page Application framework, a project must be able to interpret the structure of the model representing the semantic of the data stored for an application within the AEM repository. To achieve this goal, two framework-agnostic libraries are provided: the `PageModelManager` and the `ComponentMapping`.
 
@@ -43,7 +43,7 @@ Each items present in the model contains a `:type` field that exposes an AEM res
 
 #### Dynamic Model to Component Mapping {#dynamic-model-to-component-mapping}
 
-For details about how the dynamic model to component mapping occurs in the Javascript SPA SDK for AEM see the article [Dynamic Model to Component Mapping for SPAs](model-to-component-mapping.md).
+For details about how the dynamic model to component mapping occurs in the JavaScript SPA SDK for AEM see the article [Dynamic Model to Component Mapping for SPAs](model-to-component-mapping.md).
 
 ### Framework-Specific Layer {#framework-specific-layer}
 
@@ -61,7 +61,7 @@ The SPA components must be in sync with the page model and be updated with any c
 
 ### Meta Fields {#meta-fields}
 
-The page model leverages the JSON Model Exporter, which is itself based on the [Sling Model](https://sling.apache.org/documentation/bundles/models.html) API. The exportable sling models expose the following list of fields in order to enable the underlying libraries interpret the data model:
+The page model uses the JSON Model Exporter, which is itself based on the [Sling Model](https://sling.apache.org/documentation/bundles/models.html) API. The exportable sling models expose the following list of fields to enable the underlying libraries interpret the data model:
 
 * `:type`: Type of the AEM resource (default = resource type)
 * `:children`: Hierarchical children of the current resource. Children are not part of the inner content of the current resource (can be found on items representing a page)
@@ -100,7 +100,7 @@ The following entities should be implemented in accordance with the guidelines s
 
 Project components must delegate access to the fragments of a model to a Model Provider. The Model Provider is then in charge of listening for changes made to the specified fragment of the model and return the updated model to the delegating component.
 
-To do this, the Model Provider must register to the [`PageModelManager`](#pagemodelmanager). Then when a change occurs it receives and and pass the updated data to the delegating component. By convention, the property made available to the delegating component that will carry the fragment of model is named `cqModel`. The implementation is free to provide this property to the component but should consider aspects such as the integration with framework architecture, discoverability, and ease of use.
+To do this, the Model Provider must register to the [`PageModelManager`](#pagemodelmanager). Then when a change occurs it receives and pass the updated data to the delegating component. By convention, the property made available to the delegating component that will carry the fragment of model is named `cqModel`. The implementation is free to provide this property to the component but should consider aspects such as the integration with framework architecture, discoverability, and ease of use.
 
 ### The Component HTML Decorator {#the-component-html-decorator}
 
@@ -197,7 +197,7 @@ In the above implementation, the project component is extended with the emptines
 
 ```javascript
 /**
- * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
+ * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data is decorating the associated component
  *
  * @typedef {{}} EditConfig
  * @property {String} [dragDropName]       If defined, adds a specific class name enabling the drag and drop functionality

@@ -53,6 +53,7 @@ This and the following pages cover the tasks for creating, configuring, maintain
 >* [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
+>* [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md) (only available through the **Assets** console)
 
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 
@@ -61,7 +62,7 @@ The number of communication channels is increasing annually. Typically channels 
 
 However, you (probably) do not want to use exactly the same content for all channels - you need to optimize your content according to the specific channel.
 
-Content fragments allow you to:
+Content fragments let you:
 
 * Consider how to reach target audiences efficiently across channels.
 * Create and manage channel-neutral editorial content.
@@ -80,7 +81,7 @@ These content fragments can then be assembled to provide experiences over a vari
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
 >
->For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>For more information, see [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 ## Content Fragments and Content Services {#content-fragments-and-content-services}
 
@@ -106,6 +107,16 @@ Together with the JSON export capabilities of AEM core components, this structur
 >
 >AEM also supports the translation of fragment content. See [Translating Assets](/help/assets/translate-assets.md) for further information.
 
+## Publish and Preview {#publish-and-preview}
+
+As with all content, eventually you will want to publish your Content Fragments to the **[Publish Service](/help/overview/architecture.md#runtime-architecture)**.
+
+Prior to that, you can also preview an experience delivered using Content Fragments, by [publishing your Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) to the AEM **[Preview Service](/help/overview/architecture.md#runtime-architecture)**.
+
+>[!CAUTION]
+>
+>Publishing to the **Preview Service** is only available from the **Content Fragments** console.
+
 ## Content Type {#content-type}
 
 Content fragments are:
@@ -130,7 +141,7 @@ Content Fragments are a content structure that:
 * Can [contain, or be connected to, images](#fragments-with-visual-assets).
 * Can use [in-between content](#in-between-content-when-page-authoring-with-content-fragments) when referenced on a page.
 
-* Are independent from the delivery mechanism (i.e. page, channel).
+* Are independent from the delivery mechanism (that is, page, channel).
 
 ### Fragments with Visual Assets {#fragments-with-visual-assets}
 
@@ -277,13 +288,13 @@ To use your Content Fragments for page authoring you also need:
 
   * Instrumental to delivering the fragment in HTML and/or JSON format.
   * Required to [reference the fragment on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-  * Responsible for layout and delivery of a fragment; i.e. channels.
+  * Responsible for layout and delivery of a fragment; that is, channels.
   * Fragments need one or more dedicated components to define layout and deliver some or all elements/variations and associated content.
   * Dragging a fragment onto a page in authoring will automatically associate the required component.
 
 ## Example Usage {#example-usage}
 
-A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment you need to consider what will be used where.
+A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment, consider what  used where.
 
 ### WKND Sample {#wknd-sample}
 

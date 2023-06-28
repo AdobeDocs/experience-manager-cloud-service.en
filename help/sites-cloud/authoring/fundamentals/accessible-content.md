@@ -94,7 +94,7 @@ Specific types of non-text content that require text alternatives might include:
 * Icons: These are small pictograms (graphics) conveying specific information. They must be consistently used across a page and site. All instances of the icon on a page or site should have the same short and succinct text alternative, unless doing so results in unnecessary duplication of adjacent text.
 * Charts and graphs: These typically represent numerical data. So one option for providing a text alternative might be to include a brief summary of the main trends shown in the chart or graphic. If necessary, also provide a more detailed description in text using the **Description** field in the **Advanced** image properties tab. Also, you could provide the source data in tabular form elsewhere in the page or site.
 * Maps, diagrams, flowcharts: For graphics providing spatial data (for example, to support describing relationships between objects or a process), ensure that the key message is provided in text format, and that this text information is positioned near each associated data point. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image's alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
-* CAPTCHA: A CAPTCHA is a *Completely Automated Public Turing test to tell Computers and Humans Apart*. It is a security check used on web pages to distinguish humans from malicious software, but which can cause accessibility barriers. They are images that require users to describe what they see in order to pass a security test. Providing a text alternative for the image is not possible, so instead you must consider alternative non-graphic solutions. The W3C provides several suggestions. Each of these approaches has their own merits and drawbacks.
+* CAPTCHA: A CAPTCHA is a *Completely Automated Public Turing test to tell Computers and Humans Apart*. It is a security check used on web pages to distinguish humans from malicious software, but which can cause accessibility barriers. They are images that require users to describe what they see to pass a security test. Providing a text alternative for the image is not possible, so instead you must consider alternative non-graphic solutions. The W3C provides several suggestions. Each of these approaches has their own merits and drawbacks.
 
     * Logic puzzles
     * The use of sound output instead of images
@@ -219,7 +219,7 @@ There are two approaches that can be adopted to meet this success criterion. Eit
     * Provide a new, additional, and optional audio track containing the original soundtrack, but also including extra audio information about changes in the scene.
       * This allows users to switch between the existing audio track (which *does not* contain an audio description) and the new audio track (which *does* contain an audio description).
       * This prevents disruption to users who do not need the additional description.
-    * Create a second version of the video content to allow for extended audio descriptions. This reduces the difficulties associated with providing detailed audio descriptions within the gaps between existing dialogue, by temporarily pausing the audio and video at appropriate points. As a result, a much longer audio description can be given, before the action starts again. As in the previous example, this is best provided as an optional extra audio track in order to prevent disruption to users who do not need the additional description.
+    * Create a second version of the video content to allow for extended audio descriptions. This reduces the difficulties associated with providing detailed audio descriptions within the gaps between existing dialogue, by temporarily pausing the audio and video at appropriate points. As a result, a much longer audio description can be given, before the action starts again. As in the previous example, this is best provided as an optional extra audio track to prevent disruption to users who do not need the additional description.
 1. Provide a text transcript that is a suitable text equivalent of the audio and visual elements of the video or animation. This should include, where appropriate, an indication as to who is speaking, a description of the setting, any events, or information presented visually, and vocal expressions. Depending on its length, you can place the transcript on the same page as the video or animation, or on a separate page; if you choose the latter option, provide a link to the transcript next to the video or animation.
 
 Exact details of how to create audio-described video are beyond the scope of this guide. Creating videos and audio descriptions can be time consuming, but other Adobe products can help achieve these tasks. 
@@ -295,7 +295,7 @@ This guideline covers the requirements necessary to support people who:
 
 #### Purpose - Info and Relationships (1.3.1) {#purpose-info-and-relationships}
 
-Many assistive technologies used by people with disabilities rely on structural information in order to effectively display or *understand* content. This structural information can take the form of page headings, table row and column headings and list types. For example, a screen reader could allow a user to navigate through a page from heading to heading. However, when page content only appears to have structure through visual styling, rather than the underlying HTML, then there is no structural information available to assistive technologies, limiting their ability to support easier browsing.
+Many assistive technologies used by people with disabilities rely on structural information to effectively display or *understand* content. This structural information can take the form of page headings, table row and column headings and list types. For example, a screen reader could allow a user to navigate through a page from heading to heading. However, when page content only appears to have structure through visual styling, rather than the underlying HTML, then there is no structural information available to assistive technologies, limiting their ability to support easier browsing.
 
 This success criterion exists to make sure that such structural information is provided programmatically through HTML, or other coding techniques, so that browsers and assistive technologies can access and take advantage of the information.
 
@@ -544,7 +544,7 @@ Make sure that the text contrasts sufficiently with its background. Contrast rat
 
 >[!NOTE]
 >
->Please remember that fonts can differ in how they render the equivalent PT/PX/EM sizing. 
+>Remember that fonts can differ in how they render the equivalent PT/PX/EM sizing. 
 >
 >Use good judgment and err on the side of readability and usability when selecting appropriate fonts and sizing for web content.
 

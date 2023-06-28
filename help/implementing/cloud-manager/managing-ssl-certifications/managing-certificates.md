@@ -14,7 +14,7 @@ The status of your SSL certificates can be understood at a glance from the SSL c
 * **Green** - This status indicates that your certificate is valid for at least 60 days from the current date.
 
 * **Orange** - This status indicates that your certificate is due to expire in less than 60 days.
-  * It is time to ensure you have a plan to renew your certificate and replace it via Cloud Manager UI in order to avoid possible site access or outages.
+  * It is time to ensure you have a plan to renew your certificate and replace it by way of the Cloud Manager user interface to avoid possible site access or outages.
   * Cloud Manager will send regular notifications in the UI to alert you of an impending certificate expiration.
 
 * **Red** - This status indicates that the SSL certificate has expired.
@@ -31,7 +31,7 @@ When a certificate expires any domains that are in use with the expired certific
 
 >[!NOTE]
 >
->A user must be a member of the **Business Owner** or **Deployment Manager** role in order to update an SSL certificate in Cloud Manager.
+>A user must be a member of the **Business Owner** or **Deployment Manager** role to update an SSL certificate in Cloud Manager.
 
 ## Replacing an SSL Certificate {#replace-ssl-certificate}
 
@@ -41,7 +41,7 @@ An SSL certificate can be replaced by following the same steps as described in t
 
 Removing certificates from Cloud Manager is a permanent action that can not be undone. As a best practice, Adobe recommends to save SSL files locally before deleting them in Cloud Manager.
 
-Cloud Manager will not allow you to delete an SSL certificate that has one or more domains associated with it. All associated domains must be deleted before deleting the SSL certificate. Please refer to the document [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more.
+Cloud Manager will not allow you to delete an SSL certificate that has one or more domains associated with it. All associated domains must be deleted before deleting the SSL certificate. See [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more.
 
 Follow these steps to delete an SSL certificate.
 
@@ -53,14 +53,14 @@ Follow these steps to delete an SSL certificate.
 
 >[!NOTE]
 >
->A user must be a member of the **Business Owner** or **Deployment Manager** role in order to delete an SSL certificate in Cloud Manager.
+>A user must be a member of the **Business Owner** or **Deployment Manager** role to delete an SSL certificate in Cloud Manager.
 
 ## Pre-Existing CDN Configurations {#pre-existing-cdn}
 
-If you have a pre-existing CDN configuration for your SSL certificate, there will be an informative message on the the **SSL Certificates** page, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
+If you have a pre-existing CDN configuration for your SSL certificate, there is an informative message on the the **SSL Certificates** page, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
 
 The message disappears once all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
 
-Please refer to the document [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) for more details.
+See [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) for more details.
 
 A similar message is also provided on the **IP Allow List** and the **Environments** pages for environments that have pre-existing CDN configurations for IP allow lists or custom domain names.

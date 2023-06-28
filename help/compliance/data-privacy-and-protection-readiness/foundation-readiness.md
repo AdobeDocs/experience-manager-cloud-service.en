@@ -1,6 +1,6 @@
 ---
 title: Data Protection and Data Privacy Regulations - Adobe Experience Manager as a Cloud Service Foundation Readiness
-description: Learn about Adobe Experience Manager as a Cloud Service Foundation support for the various Data Protection and Data Privacy Regulations; including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act and how to comply when implementing a new AEM as a Cloud Service project.
+description: Learn about Adobe Experience Manager as a Cloud Service Foundation support for the various Data Protection and Data Privacy Regulations. This article includes the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act, and how to comply when implementing a new AEM as a Cloud Service project.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 ---
 # Adobe Experience Manager as a Cloud Service Foundation Readiness for Data Protection and Data Privacy Regulations {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
@@ -9,15 +9,15 @@ exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 >
 >The contents of this document do not constitute legal advice and are not meant as a substitute for legal advice. 
 >
->Please consult your company's legal department for advice concerning Data Protection and Data Privacy regulations. 
+>Consult your company's legal department for advice concerning Data Protection and Data Privacy regulations. 
 
 >[!NOTE]
 >
->For more information about Adobe's response to privacy issues, and what this means for you as an Adobe customer, see [Adobe's Privacy Center](https://www.adobe.com/privacy.html). 
+>For more information about Adobe's response to privacy issues, and what it means for you as an Adobe customer, see [Adobe's Privacy Center](https://www.adobe.com/privacy.html). 
 
 ## AEM Foundation Data Privacy and Protection support {#aem-foundation-data-privacy-and-protection-support}
 
-At the AEM Foundation level, the Personal Data that is stored is held in the User Profile. Therefore, the information in this article primarily addresses how to access and delete user profiles, to address the access and delete requests respectively.
+At the AEM Foundation level, the Personal Data that is stored is held in the User Profile. Therefore, the information in this article primarily addresses how to access and delete user profiles, so you can address the access, and delete requests, respectively.
 
 ## Accessing a User Profile {#accessing-a-user-profile}
 
@@ -39,7 +39,7 @@ At the AEM Foundation level, the Personal Data that is stored is held in the Use
 
 ### HTTP API {#http-api}
 
-As mentioned, Adobe provides APIs for accessing user data, in order to facilitate automation. There are several types of APIs which you can use:
+As mentioned, Adobe provides APIs for accessing user data, to facilitate automation. There are several types of APIs which you can use:
 
 **UserProperties API**
 
@@ -73,15 +73,15 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Disable User {#disable-user}
 
 1. Open the User Administration console and search for the user in question, as described above.
-2. Hover over the user and click the select icon. The profile will turn grey indicating that it is selected.  
+2. Hover over the user and click the select icon. The profile turns gray indicating that it is selected.  
 
-3. Press the **Disable** button in the upper menu to disable the user:
+3. In the upper menu, click **Disable** to disable (turn off) the user:
 
    ![disable account](assets/dpp-foundation-03.png)
 
 4. Finally, confirm the action.
 
-   The user interface will then indicate that the user account has been deactivated by greying out and adding a lock to the profile card:
+   The user interface indicates that the user account has been deactivated by graying out and adding a lock to the profile card:
 
    ![account disabled](assets/dpp-foundation-04.png)
 
@@ -89,11 +89,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
->For AEM as a Cloud Service there is no manual procedure available from the UI for the deletion of a user profile, as CRXDE is not accessible.
+>For AEM as a Cloud Service, there is no manual procedure available from the UI for the deletion of a user profile, as CRXDE is not accessible.
 
 ### HTTP API {#http-api-1}
 
-The following procedures use the `curl` command line tool to illustrate how to disable the user with the **[!UICONTROL cavery]** `userId` and delete her profiles available at the default location.
+The following procedures use the `curl` command-line tool to illustrate how to disable the user with the **[!UICONTROL cavery]** `userId` and delete the user's profiles available at the default location.
 
 **Discovering the user home:**
 
@@ -110,7 +110,7 @@ Using the node path from the home property of the JSON payload returned from the
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (Data Privacy in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
 ```
 
-**Deleting user profile(s)**
+**Deleting user profiles**
 
 Using the node path from the home property of the JSON payload returned from the account discovery command and the known out of the box profile node locations:
 

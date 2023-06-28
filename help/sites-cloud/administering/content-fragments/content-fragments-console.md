@@ -53,12 +53,12 @@ Here you can see that there are three main areas:
 * The main/right panel - from here you can:
   * See the list of all Content Fragments in the selected branch of the tree:
     * The location is indicated by the breadcrumbs; these can also be used to change the location
-    * Content Fragments from the selected folder, and all child folders will be shown:
+    * Content Fragments from the selected folder, and all child folders are shown:
       * [Various fields of information](#selectuse-available-columns) about a Content Fragment provide links; depending on the field, these can:
         * Open the appropriate fragment in the editor
         * Show information about references
         * Show information about language versions of the fragment
-    * By using mouse-over on the column headers a drop-down action selector, and width sliders, will be shown. These allow you to:
+    * By using mouse-over on the column headers, a drop-down action selector, and width sliders, are shown. These let you do the following:
       * Sort - select the appropriate action for either ascending or descending
         This will sort the entire table according to that column. Sorting is only available on appropriate columns.
       * Resize the column - using either the action, or width sliders
@@ -89,16 +89,16 @@ Certain actions are available from the console - without selecting a specific Co
 
 ### Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
 
-Selecting a specific fragment will open a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
+Selecting a specific fragment will open a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions are adjusted accordingly.
 
 ![Content Fragments console - toolbar for a selected fragment](assets/cfc-fragment-toolbar.png)
 
 * **Open**
-* **Publish** (and **Unpublish**)
+* **[Publish](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)** (and **[Unpublish](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#unpublishing-a-fragment)**)
 * **Copy**
 * **Move**
 * **Rename**
-* **Delete**
+* **[Delete](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#deleting-a-fragment)**
 
 >[!NOTE]
 >
@@ -117,6 +117,11 @@ The main/right panel (table view) of the console provides a range of information
     Hovering over the folder name will show the JCR path.
 * **Status**
   * Information only
+* **Preview**
+  * Information only:
+    * **In sync**: Content Fragment is in-sync on the **Author** and **Preview** services.
+    * **Out of sync**: Content Fragment is out-of-sync on the **Author** and **Preview** services. You need to **Publish** to **Preview** to ensure that the two instances return to being in-sync.
+    * blank: The Content Fragment does not exist on the **Preview** service.
 * **Modified**
   * Information only
 * **Modified By**
@@ -173,7 +178,7 @@ For example, select **Published** in the **Status** column:
 
 ![Content Fragments console - Filtering](assets/cfc-console-fast-filter-01.png)
 
-Once selected, this will be shown as a filter predicate, and the list will be filtered accordingly:
+After selection, it is shown as a filter predicate, and the list is filtered accordingly:
 
 ![Content Fragments console - Filtering](assets/cfc-console-fast-filter-02.png)
 

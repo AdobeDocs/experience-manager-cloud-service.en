@@ -73,13 +73,13 @@ Content Requests will have variances with an organization's Analytics reporting 
 |Report Suites|Pages that are part of the same AEM instance and domain may send data to different Analytics report suites.|
 |Third-Party Monitoring and Security Tools|Monitoring and security scanning tools may generate content requests for AEM that are not tracked in Analytics reports.|
 |Prefetch Requests|Using a prefetch service to pre-load pages to increase speed can cause significant content request traffic increases.|
-|DDOS|While Adobe makes every effort to automatically detect and filter out traffic from DDOS attacks, there is no guarantee that all possible DDOS attacks will be detected|
+|DDOS|While Adobe makes every effort to automatically detect and filter out traffic from DDOS attacks, there is no guarantee that all possible DDOS attacks are detected|
 |Traffic Blockers|Using a tracker blocker in a browser may opt out some requests from being tracked.|
 |Firewalls|Firewalls may block Analytics tracking. This is more frequent with corporate firewalls.|
 
 ### What if I would like to learn more about my content request volume? {#current-request-volumes}
 
-If you would like additional insights into the content request volume shown in the License Dashboard, your Adobe team can provide a report that shows the top volume drivers of content requests. Please reach out to your Adobe team or to Adobe Customer Care to request a top usage report.
+If you would like additional insights into the content request volume shown in the License Dashboard, your Adobe team can provide a report that shows the top volume drivers of content requests. Reach out to your Adobe team or to Adobe Customer Care to request a top usage report.
 
 ### What if I am using my own CDN? {#using-own-cdn}
 

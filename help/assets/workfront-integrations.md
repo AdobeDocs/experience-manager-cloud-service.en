@@ -7,6 +7,11 @@ exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 ---
 # [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] integration with [!DNL Adobe Workfront] {#assets-integration-overview}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 [!DNL Adobe Workfront] is a work management application that helps you manage the entire lifecycle of work in one place. The integration between [!DNL Workfront] and [!DNL Adobe Experience Manager Assets] lets organizations improve content velocity and time-to-market by intrinsically connecting work and digital asset management. Within the context of managing their work in Workfront, users have access to the required documents and images.
 
 Adobe offers to [integrate [!DNL Workfront] and [!DNL Adobe Experience Manager Assets] natively (supporting Assets Essentials and Assets as a Cloud Service) or using the Workfront for Experience Manager enhanced connector](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html). In case of a native integration, you do not need a connector to integrate the two solutions.
@@ -23,7 +28,10 @@ With the native Experience Manager integration and [!DNL Workfront for Experienc
 
 See the [supported features below for a comparison](#feature-parity-matrix) between native integration or an integration using connectors between the two solutions.
 
-
+>[!IMPORTANT]
+>
+>As of June 2022, Adobe released a new native integration for connecting Workfront with Adobe Experience Manager Assets as a Cloud Service. This integration has become the required method for connecting these two solutions. Any future new implementation of the enhanced connector (1.9.8 and later) to connect Workfront with AEM Assets as a Cloud Service is blocked. For more information on how to setup this integration, see [Configure the Experience Manager Assets as a Cloud Service integration](workfront-connector-configure.md). 
+>
 
 See the platform support and [prerequisites for the enhanced connector](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
@@ -45,7 +53,7 @@ The following are the details of the functionalities available through various t
 |----|----|----|-----|-----|
 | Deployment methods   | Appropriate for which [!DNL Assets] offering. | Assets Essentials| Adobe Managed Services, On-premise| Cloud Service|
 | **General** |
-| Send digital files from [!DNL Workfront] to [!DNL Assets]| Latest version of a WF document can be uploaded to AEM Assets which will be linked as a new version of the document.  | &#10003; | &#10003;  | &#10003; |
+| Send digital files from [!DNL Workfront] to [!DNL Assets]| Latest version of a WF document can be uploaded to AEM Assets which is linked as a new version of the document.  | &#10003; | &#10003;  | &#10003; |
 | Manually Link AEM Folders to Workfront Objects| Existing AEM folders can be linked as a Workfront folder and its child assets are linked as new Workfront documents.  | &#10003; | &#10003;  | &#10003; |
 | Link [!DNL Assets] to Workfront Objects | Existing assets in AEM can be linked to a new Workfront document or as a new version of an existing document. | &#10003; | &#10003;  | &#10003; |
 | Assets added to linked folders are automatically sent to AEM| If document is added to a linked folder, the associated asset is automatically uploaded to AEM Assets as a new asset. | &#10003; | &#10003;  | &#10003; |
@@ -64,7 +72,7 @@ The following are the details of the functionalities available through various t
 | Support multiple Workfront environments connecting to a single AEM environment| Users from multiple Workfront environments can connect to a single AEM environment. | &#10003; | No  | &#10003; |
 | Support multiple AEM environments connecting to a single Workfront environment| Users within a single Workfront environment can send or link assets between multiple AEM environments. | &#10003; | &#10003;  | &#10003; |
 | **Metadata** |
-| Map Workfront Asset Metadata to AEM Assets | Workfront object and custom form properties may be mapped to AEM asset metadata properties. Values will be pushed on initial upload/link.    | &#10003; | &#10003;  | &#10003; |
+| Map Workfront Asset Metadata to AEM Assets | Workfront object and custom form properties may be mapped to AEM asset metadata properties. Values are pushed on initial upload/link.    | &#10003; | &#10003;  | &#10003; |
 | Automatically Create Document Custom Forms in Workfront | Attach custom forms to Workfront documents, tasks, and issues using AEM workflows.| No  | &#10003; | No |
 | Bi-directional Automatic Updating of Metadata between AEM Assets and Workfront   | Automatically update metadata between AEM Assets and Workfront. The asset must be initially pushed from Workfront to AEM and the Workfront asset metadata must be mapped to AEM assets for bi-directional metadata updates to work appropriately.| No  | &#10003;  | No |
 |Real-time view in Workfront for mapped metadata to AEM | View the updated mapped metadata to AEM within Workfront Document Details and Document Summary panels.  | &#10003; | No  | &#10003; |

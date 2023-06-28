@@ -1,7 +1,6 @@
 ---
 title: Manage Publication
 description: Publish or unpublish assets to Experience Manager Assets, Dynamic Media, and Brand Portal
-contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
@@ -9,7 +8,7 @@ exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
 ---
 # Manage publication in Experience Manager Assets {#manage-publication-in-aem}
 
-As an [!DNL Adobe Experience Manager Assets] administrator, you can publish assets and folders containing assets from your author instance to [!DNL Experience Manager Assets], [!DNL Dynamic Media], and [!DNL Brand Portal]. Also, you can schedule the publish workflow of an asset or folder to a later date or time. Once published, the users can access and further distribute the assets to other users. By default, you can publish assets and folders to [!DNL Experience Manager Assets]. However, you can configure [!DNL Experience Manager Assets] to enable publishing to [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) and [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
+As an [!DNL Adobe Experience Manager Assets] administrator, you can publish assets and folders containing assets from your author instance to [!DNL Experience Manager Assets], [!DNL Dynamic Media], and [!DNL Brand Portal]. Also, you can schedule to publish an asset or folder at a later date or time. Once published, the users can access and further distribute the assets to other users. By default, you can publish assets and folders to [!DNL Experience Manager Assets]. However, you can configure [!DNL Experience Manager Assets] to enable publishing to [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) and [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
 You can publish or unpublish assets at the asset or folder level, using either **[!UICONTROL Quick Publish]** or **[!UICONTROL Manage Publication]** option available in the [!DNL Experience Manager Assets] interface. If you make subsequent modifications to the original asset or folder in [!DNL Experience Manager Assets], the changes are not reflected in the publish instance until you republish from [!DNL Experience Manager Assets]. It ensures that work-in-progress changes are not available in the publish instance. Only approved changes that are published by an administrator are available in the publish instance.
 
@@ -18,6 +17,7 @@ You can publish or unpublish assets at the asset or folder level, using either *
 * [Publish assets later](#publish-assets-later)
 * [Publish assets to Dynamic Media](#publish-assets-to-dynamic-media)
 * [Publish assets to Brand Portal](#publish-assets-to-brand-portal)
+* [Request Publication](#request-publication)
 * [Limitations and tips](#limitations-and-tips)
 
 ## Publish assets using Quick Publish {#quick-publish}
@@ -55,7 +55,7 @@ To continue, click **[!UICONTROL Next]**. Based on the selection, the **[!UICONT
 
 ### Add Content {#add-content}
 
-Publishing to [!DNL Experience Manager Assets] allows you to further add more content (assets and folders) to the publishing list. You can add more assets or folders to the list across the dam-repositories. Click on **[!UICONTROL Add Content]** button to add more content. 
+Publishing to [!DNL Experience Manager Assets] allows you to further add more content (assets and folders) to the publishing list. You can add more assets or folders to the list across the dam-repositories. Click **[!UICONTROL Add Content]** button to add more content. 
 
 You can add multiple assets from a folder or add multiple folders at a time. But you cannot add assets from multiple folders at a time. 
 
@@ -90,7 +90,7 @@ After applying the filters, click **[!UICONTROL OK]**, and then click **[!UICONT
 
 In the above Illustration, you can see different values for the **[!UICONTROL Publish Target]** attribute. Let us recollect the fact that you have opted for publishing to [!DNL Experience Manager Assets] (`Destination: Publish`). Then, why is it showing that only a folder and an asset are published to `AEM`, and the other two assets are published to both `AEM` and `Dynamic Media`?
 
-Here, you must understand the role of folder properties. A folder's **[!UICONTROL Dynamic Media Publishing mode]** property plays an important role in publication. To view a folder's properties, select a folder and click **[!UICONTROL Properties]** from the toolbar. For an asset, see the properties of its parent folder. 
+Here, you must understand the role of folder properties. A folder’s **[!UICONTROL Dynamic Media Publishing mode]** property plays an important role in publication. To view a folder’s properties, select a folder and click **[!UICONTROL Properties]** from the toolbar. For an asset, see the properties of its parent folder. 
 
 The following table explains how the publication occurs depending on the defined **[!UICONTROL Destination]** and **[!UICONTROL Dynamic Media Publish mode]**:
 
@@ -171,24 +171,28 @@ You can publish assets, folders, and collections to the [!DNL Experience Manager
 * [Publish folders to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-folders-to-brand-portal)
 * [Publish collections to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-collections-to-brand-portal)
 
+## Request Publication {#request-publication}
+
+The `Request Publication` option helps in authenticating workflow of Assets before getting them published on [!DNL AEM] Assets environment. [!DNL AEM] provides different level of permissions to various users. You can be a *contributor* who is uploading assets but cannot publish them until the uploads are verified. Additionally, being an *Admin* you can manage to read and write workflows of the Assets. 
+
+Request publication option is available to the following users:
+* **Contributor:** If you are a user who can contribute to [!DNL AEM] Assets, then you have limited access to the [!DNL AEM] Assets workflow. `Manage publication` button is hidden for you. As a contributor, you can only contribute by adding Assets but you cannot publish them or have read access to the workflow.
+
+* **Workflow User:** This user cannot publish assets but has read access to the workflow. Being a workflow user, you can: 
+  * request publication
+  * view `Manage publication` button
+  * schedule the workflow and see the options `schedule now` and `schedule later`
+
+* **Admin:** As an admin type of user, you can manage overall workflow steps for the Assets. `Manage publication` button is visible to you. If the destination `publish` is selected, you can schedule an Asset later for the workflow step.
+
+>[!NOTE]
+>
+>If [!DNL Dynamic Media] is selected as a destination, then workflow step is disabled for **workflow user** and **admin** users.
+>
+
 ## Limitations and tips {#limitations-and-tips}
 
-* The option to [!UICONTROL Manage Publication] is available only to the user accounts that have replication permissions.
+* `Manage publication` is available to the users who have atleast Read permissions to the workflow.
 * Empty folders are not published.
 * If you publish an asset that is being processed, only the original content is published. The renditions are missing. Either wait for the processing to complete and then publish or republish the asset once the processing completes.
 * While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because they may be referred by other published assets.
-
-**See also**
-
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)

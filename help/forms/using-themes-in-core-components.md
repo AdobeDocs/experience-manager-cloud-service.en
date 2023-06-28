@@ -11,7 +11,7 @@ When you [create an Adaptive Form](/help/forms/creating-adaptive-form.md) using 
 
 >[!NOTE]
 >
->An Adaptive Form theme should not be confused with [Adaptive Form templates.](/help/forms/template-editor.md) Adaptive Form themes only contain the styling information for an Adaptive Form. Adaptive Form templates define form structure and initial content and contain a theme in order to allow for the creation of new [Adaptive Form.](/help/forms/creating-adaptive-form.md)
+>An Adaptive Form theme should not be confused with [Adaptive Form templates.](/help/forms/template-editor.md) Adaptive Form themes only contain the styling information for an Adaptive Form. Adaptive Form templates define form structure and initial content and contain a theme to allow for the creation of new [Adaptive Form.](/help/forms/creating-adaptive-form.md)
 
 ## Using Canvas theme in Adaptive Forms using core components {#using-theme-in-adaptive-form}
 
@@ -43,6 +43,7 @@ To customize a theme,
 * You should have a [basic knowledge of Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git) and Cloud Service Git repositories.
 
 To customize a Canvas theme:
+
 1. [Clone the Canvas theme](#1-download-canvas-theme-download-canvas-theme)
 1. [Understand the structure of the theme](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
 1. [Change name in package.json and package_lock.json](#changename-packagelock-packagelockjson) 

@@ -15,17 +15,17 @@ Advantages of using clientlibs in AEM include:
 * Expose clientlibs via a path that is accessible through the [dispatcher](/help/implementing/dispatcher/disp-overview.md)
 * Allows the rewriting of paths for referenced files or images
 
-Clientlibs are the built-in solution for delivering CSS and Javascript from AEM.
+Clientlibs are the built-in solution for delivering CSS and JavaScript from AEM.
 
 >[!TIP]
 >
->Front-end developers who are creating CSS and Javascript for AEM projects should also familiarize themselves with the [AEM Project Archetype and its automated front-end build process.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>Front-end developers who are creating CSS and JavaScript for AEM projects should also familiarize themselves with the [AEM Project Archetype and its automated front-end build process.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
 
 ## What Are Client-Side Libraries {#what-are-clientlibs}
 
 Sites require JavaScript and CSS as well as static resources such as icons and web fonts to be processed client-side. A clientlib is AEM's mechanism to reference (by category if required) and serving such resources.
 
-AEM collects the site's CSS and Javascript into a single file, in a central location, to ensure that only one copy of any resource is included in the HTML output. This maximizes the efficiency of delivery and allows such resources to be maintained centrally in the repository via proxy, keeping access secure.
+AEM collects the site's CSS and JavaScript into a single file, in a central location, to ensure that only one copy of any resource is included in the HTML output. This maximizes the efficiency of delivery and allows such resources to be maintained centrally in the repository via proxy, keeping access secure.
 
 ## Front-End Development for AEM as a Cloud Service {#fed-for-aemaacs}
 
@@ -65,7 +65,7 @@ Client library folders contain the following items:
 
 ## Creating Client-Side Library Folders {#creating-clientlib-folders}
 
-Client libraries must be located under `/apps`. This is in order to better isolate code from content and configuration.
+Client libraries must be located under `/apps`. This rule necessary to better isolate code from content and configuration.
 
 In order for the client libraries under `/apps` to be accessible, a proxy servelt is used. The ACLs are still enforced on the client library folder, but the servlet allows for the content to be read via `/etc.clientlibs/` if the `allowProxy` property is set to `true`.
 
@@ -129,7 +129,7 @@ This is possible. Still need detail.
 
 ## Client Libraries on Author versus Publish {#clientlibs-author-publish}
 
-Most clientlibs will be required on the AEM publish instance. That is, most clientlibs' purposes are to produce the end-user experience of the content. For clientlibs on publish instances, [front-end build tools](#fed-for-aemaacs) can be used and deployed via [client library folders as described above.](#creating-clientlib-folders)
+Most clientlibs are required on the AEM publish instance. That is, most clientlibs' purposes are to produce the end-user experience of the content. For clientlibs on publish instances, [front-end build tools](#fed-for-aemaacs) can be used and deployed via [client library folders as described above.](#creating-clientlib-folders)
 
 However there are times when client libraries may be necessary to customize the authoring experience. For example, customizing a dialog might require deploying small bits of CSS or JS to the AEM authoring instance.
 
@@ -164,11 +164,11 @@ The `dumplibs` component includes a test selector that displays the source code 
 
 ## Additional Client Library Folder Features {#additional-features}
 
-There are a number of other features that are supported by client library folders in AEM. However, these are not required on AEM as a Cloud Service and as such their use is discouraged. They are are listed here for completeness.
+There are a number of other features that are supported by client library folders in AEM. However, these are not required on AEM as a Cloud Service and as such their use is discouraged. They are listed here for completeness.
 
 >[!WARNING]
 >
->These additional features of Client Library Folders are not required on AEM as a Cloud Service and as such their use is discouraged. They are are listed here for completeness.
+>These additional features of Client Library Folders are not required on AEM as a Cloud Service and as such their use is discouraged. They are listed here for completeness.
 
 ### Adobe Granite HTML LIbrary Manager {#html-library-manager}
 
@@ -178,8 +178,8 @@ Additional client library settings can be controlled through the **Adobe Granite
 
 Additional folder properties include allow control of dependencies and embeds, but are generally no longer needed and their use is discouraged:
 
-* `dependencies`: This is a list of other client library categories on which this library folder depends. For example, given two `cq:ClientLibraryFolder` nodes `F` and `G`, if a file in `F` requires another file in `G` in order to function properly, then at least one of the `categories` of `G` should be among the `dependencies` of `F`.
-* `embed`: Used to embed code from other libraries. If node `F` embeds nodes `G` and `H`, the resulting HTML will be a concatenation of content from nodes `G` and `H`.
+* `dependencies`: This is a list of other client library categories on which this library folder depends. For example, given two `cq:ClientLibraryFolder` nodes `F` and `G`, if a file in `F` requires another file in `G` to function properly, then at least one of the `categories` of `G` should be among the `dependencies` of `F`.
+* `embed`: Used to embed code from other libraries. If node `F` embeds nodes `G` and `H`, the resulting HTML is a concatenation of content from nodes `G` and `H`.
 
 ### Linking to Dependencies {#linking-to-dependencies}
 

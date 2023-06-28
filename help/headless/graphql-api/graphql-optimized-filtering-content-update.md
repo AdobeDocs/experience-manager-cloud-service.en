@@ -73,7 +73,7 @@ To run the procedure use the following steps:
       <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Size of the batch for saving number of Content Fragments after migration.<br>This is relevant to how many CFs will be saved to repository in one batch, and can be used to optimize number of writes to repository. </td>
+      <td>Size of the batch for saving number of Content Fragments after migration.<br>This is relevant to how many CFs are saved to repository in one batch, and can be used to optimize number of writes to repository. </td>
      </tr>
      <tr>
       <td>4</td>
@@ -236,7 +236,7 @@ To run the procedure use the following steps:
 
 ## Limitations {#limitations}
 
-Please be aware of the following limitations:
+Be aware of the following limitations:
 
 * Optimization of the performance of GraphQL filters will only be possible after a complete update of all your Content Fragments (indicated by the presence of the `cfGlobalVersion` property for the JCR node `/content/dam`)
 

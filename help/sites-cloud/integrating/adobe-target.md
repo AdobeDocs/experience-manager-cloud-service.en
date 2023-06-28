@@ -5,7 +5,7 @@ exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
 ---
 # Integrating with Adobe Target{#integrating-with-adobe-target}
 
-As part of the Adobe Marketing Cloud, [Adobe Target](https://www.adobe.com/solutions/testing-targeting/testandtarget.html) lets you increase content relevance through targeting and measuring across all channels. Adobe Target is used by marketers to design and execute online tests, create on-the-fly audience segments (based on behavior) and automate the targeting of content and online experiences. AEM as a Cloud Service has adopted the targeting workflow that is used in Adobe Target Standard. If you use Target, you will be familiar with the targeting editing environment in AEM as a Cloud Service.
+As part of the Adobe Marketing Cloud, [Adobe Target](https://www.adobe.com/solutions/testing-targeting/testandtarget.html) lets you increase content relevance through targeting and measuring across all channels. Adobe Target is used by marketers to design and execute online tests, create on-the-fly audience segments (based on behavior) and automate the targeting of content and online experiences. AEM as a Cloud Service has adopted the targeting workflow that is used in Adobe Target Standard. If you use Target, you are familiar with the targeting editing environment in AEM as a Cloud Service.
 
 Integrate your AEM sites with Adobe Target to personalize content in your pages:
 
@@ -38,7 +38,7 @@ To integrate with Target, perform the following tasks:
 
 >[!CAUTION]
 >
->In AEM as a Cloud Service, the replication agent that synchronizes Offers and Activities from AEM to Adobe Target is disabled by default. Please contact the [Adobe Support](https://experienceleague.adobe.com/?support-solution=General#support) team if you need to re-enable the replication agent.
+>In AEM as a Cloud Service, the replication agent that synchronizes Offers and Activities from AEM to Adobe Target is disabled by default. Contact the [Adobe Support](https://experienceleague.adobe.com/?support-solution=General#support) team if you need to reenable the replication agent.
 
 >[!NOTE]
 >
