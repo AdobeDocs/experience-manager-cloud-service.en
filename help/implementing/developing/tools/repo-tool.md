@@ -17,7 +17,7 @@ The tool does not support multiple filter paths or FileVault's `filter.xml`.
 
 >[!CAUTION]
 >
->Please note that the AEM Repo Tool will always overwrite the entire file or directory specified.
+>The AEM Repo Tool always overwrites the entire file or directory specified.
 
 ## Download and Documentation {#download-and-documentation}
 

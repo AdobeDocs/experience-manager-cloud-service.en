@@ -97,7 +97,7 @@ Then the correct solution is to remove the hardcoded password.
 
 >[!NOTE]
 >
->While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible, i.e. annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
+>While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible, that is, annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
 
 >[!NOTE]
 >While there is no explicit security testing step, there are security-related code quality rules evaluated during the code quality step. Refer to the document [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) to learn more about security in Cloud Service.

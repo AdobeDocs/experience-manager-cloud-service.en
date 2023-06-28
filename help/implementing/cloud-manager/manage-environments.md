@@ -80,7 +80,7 @@ When you add an environment, you can elect to configure additional regions in ad
 1. In the **Additional publish regions** drop-down, select an extra region.
 1. The region selected is added below the drop-down to indicate its selection.
    * Tap or click the `X` next to the selected region so you can de-select it.
-1. Select another region from the **Additional publish regions** drop down to add another region.
+1. Select another region from the **Additional publish regions** drop-down to add another region.
 1. Tap or click **Save** when you are ready to create your environment.
 
 ![Selecting multiple regions](assets/select-multiple-regions.png)

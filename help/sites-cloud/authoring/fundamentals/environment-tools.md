@@ -79,7 +79,7 @@ The actual appearance and handling is dependent on the device type you are using
   From the top toolbar in the **Components** browser you can:
 
   * Filter components by name.
-  * Limit the display to a specific group using the drop down selection.
+  * Limit the display to a specific group using the drop-down selection.
 
   For a more detailed description of the component, you can click or tap the information icon next to the component in the **Components** browser (if available). For example, for the **Content Fragment**:
 
@@ -146,7 +146,7 @@ The actual appearance and handling is dependent on the device type you are using
 
 >[!NOTE]
 >
->A mobile device is detected when the width is less than 1024px; i.e. also on a small desktop window.
+>A mobile device is detected when the width is less than 1024px; that is, also on a small desktop window.
 
 If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.
 

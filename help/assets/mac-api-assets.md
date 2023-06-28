@@ -32,7 +32,7 @@ The API response is a JSON file for some MIME types and a response code for all 
 
 A [Content Fragment](/help/assets/content-fragments/content-fragments.md) is a special type of asset. It can be used to access structured data, such as texts, numbers, dates, among others. As there are several differences to `standard` assets (such as images or documents), some additional rules apply to handling Content Fragments.
 
-For further information, see [Content Fragments support in the [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
+For more information, see [Content Fragments support in the [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 ## Data model {#data-model}
 

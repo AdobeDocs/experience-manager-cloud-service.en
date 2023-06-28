@@ -80,7 +80,7 @@ The We.Cafe locations have the following layouts.
 
 The entrance display is day-parted, and will just change the first image from morning to afternoon. On each pass of the sequence it will also advertise a different special coffee preparation, using a metered embedded sequence to play a different item each time.
 
-The last image on the entrance channels is also targeted (i.e. dynamically changed) based on outside temperature, which can be simulated as described in the [Create Simulated Data Source](#data-source) section.
+The last image on the entrance channels is also targeted (that is, dynamically changed) based on outside temperature, which can be simulated as described in the [Create Simulated Data Source](#data-source) section.
 
 ## Deploy a Demo Screens Project {#deploy-project}
 

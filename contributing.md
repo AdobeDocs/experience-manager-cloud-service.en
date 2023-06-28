@@ -6,11 +6,11 @@ This file describes how you can contribute as well as points out the guidelines 
 
 ## Adobe Open Source Code of Conduct
 
-This project has adopted the [Adobe Open Source Code of Conduct](code-of-conduct.md). By contributing to AEM documentation, you agree to adhere to this code of conduct. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+This project has adopted the [Adobe Open Source Code of Conduct](code-of-conduct.md). By contributing to AEM documentation, you agree to adhere to this code of conduct. Report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Guidelines for Contributing
 
-While we welcome any contributions to improve AEM documentation, we do ask that contributions adhere to certain guidelines and standards where possible. Please review the [Guidelines for Contributing to AEM Documentation](guidelines.md) for more information.
+While we welcome any contributions to improve AEM documentation, we do ask that contributions adhere to certain guidelines and standards where possible. Review the [Guidelines for Contributing to AEM Documentation](guidelines.md) for more information.
 
 ## How to Contribute
 
@@ -47,7 +47,7 @@ Have a look at the following video for a quick overview of how to create issues 
 
 If you are an Adobe employee and have a contribution, please use the `AdobeDocs` org in the corporate git.
 
-We of course are happy for any contribution and will review your contribution if it is made on the public repository, however pull requests from Adobe employees are easier to process and can be approved faster on the corporate repo. Please make sure that any proprietary information is only discussed on the corporate repo.
+We of course are happy for any contribution and will review your contribution if it is made on the public repository, however pull requests from Adobe employees are easier to process and can be approved faster on the corporate repo. Make sure that any proprietary information is only discussed on the corporate repo.
 
 ## Further Information
 
