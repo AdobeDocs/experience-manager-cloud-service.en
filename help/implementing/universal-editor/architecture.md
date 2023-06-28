@@ -26,12 +26,12 @@ This document outlines each of these building blocks and how they exchange data.
 
 ### Editors {#editors}
 
-* **Universal Editor** - The Universal Editor uses an instrumented DOM to allow in-place editing of content. Please see the document [Attributes and Types](attributes-types.md) for details regarding the necessary metadata. See the document [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of the instrumentation in AEM.
+* **Universal Editor** - The Universal Editor uses an instrumented DOM to allow in-place editing of content. See [Attributes and Types](attributes-types.md) for details regarding the necessary metadata. See the document [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of the instrumentation in AEM.
 * **Properties Rail** - Some properties of components can be not edited in-context, e.g. rotation time of a carousel or which accordion tab shall be always opened or closed. To allow for editing of such component information, a form-based editor is provided in the side rail of the editor.
 
 ### Remote App {#remote-app}
 
-To make an app in-context editable within the Universal Editor, the DOM must be instrumented. The remote app must render certain attributes in the DOM. Please see the document [Attributes and Types](attributes-types.md) for details regarding the necessary metadata. See the document [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of the instrumentation in AEM.
+To make an app in-context editable within the Universal Editor, the DOM must be instrumented. The remote app must render certain attributes in the DOM. See [Attributes and Types](attributes-types.md) for details regarding the necessary metadata. See the document [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of the instrumentation in AEM.
 
 The Universal Editor strives for a minimal SDK, thus the instrumentation is the responsibility of the remote app implementation.
 

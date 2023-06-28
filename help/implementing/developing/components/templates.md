@@ -322,7 +322,7 @@ Definitions for your customized templates types should be stored in user-defined
 
 >[!CAUTION]
 >
->The template types have to respect the correct folder structure (i.e. `/settings/wcm/...`), otherwise the template types will not be found.
+>The template types have to respect the correct folder structure (that is, `/settings/wcm/...`), otherwise the template types will not be found.
 
 <!--
 ### Template Type and Mobile Device Groups {#template-type-and-mobile-device-groups-br}
@@ -534,7 +534,7 @@ When rendering a page:
   * The page component will merge the `structure/jcr:content` tree of the template with the `jcr:content` tree of the page.
     * The page component will only allow the author to edit the nodes of the template structure that have been flagged as editable (as well as any children).
     * When rendering a component on a page, the relative path of that component is taken from the `jcr:content` node; the same path under the `policies/jcr:content` node of the template will then be searched.
-      * The `cq:policy` property of this node points to the actual content policy (i.e. it holds the design configuration for that component).
+      * The `cq:policy` property of this node points to the actual content policy (that is, it holds the design configuration for that component).
         * This allows you to have multiple templates that re-use the same content policy configurations.
 
 ### Template Availability {#template-availability}

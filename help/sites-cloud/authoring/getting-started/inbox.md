@@ -19,7 +19,7 @@ You receive these notifications in your own Inbox where you can view them and ta
 
 >[!NOTE]
 >
->For further information about the item types see also:
+>For more information about the item types, see the following:
 >
 >* [Projects](/help/sites-cloud/authoring/projects/overview.md)
 >* [Projects - working with Tasks](/help/sites-cloud/authoring/projects/tasks.md)
@@ -126,7 +126,7 @@ For both views (List and Calendar) you can define settings:
 
    >[!NOTE]
    >
-   >For further information see:
+   >For more information, see the following:
    >
    >* Workflow items - [Participating in Workflows](/help/sites-cloud/authoring/workflows/participating.md)
 

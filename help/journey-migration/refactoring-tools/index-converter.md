@@ -19,7 +19,7 @@ There are two ways to create Custom Oak Index Definitions:
 * `under /apps` (through any custom content package)
 * directly under `/oak:index` path
 
-If [Ensure Oak Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) was used, please note that Ensure Definitions are not supported on AEM as a Cloud Service, and hence they need to be converted to Oak Index Definitions first and then need to be migrated to Custom Oak Index Definitions that are compatible with AEM as a Cloud Service as per below guidelines:
+If [Ensure Oak Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) was used, Ensure Definitions are not supported on AEM as a Cloud Service. As such, they must be converted to Oak Index Definitions first, and then migrated to Custom Oak Index Definitions that are compatible with AEM as a Cloud Service, as per below guidelines:
 
 * If property ignore is set to `true`, ignore or skip the Ensure Definition
 * Update the `jcr:primaryType` to `oak:QueryIndexDefinition`
@@ -28,7 +28,7 @@ If [Ensure Oak Index](https://adobe-consulting-services.github.io/acs-aem-common
 
 ## Using the Index Converter {#using-index-converter}
 
-* Via Adobe I/O CLI : It is recommended to use the Index Converter via `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin for the Adobe I/O CLI).
+* By way of Adobe I/O CLI : It is recommended to use the Index Converter by way of `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin for the Adobe I/O CLI).
 
    Refer to **[Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** to learn how to install and use the plugin.
 
