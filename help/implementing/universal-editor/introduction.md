@@ -75,7 +75,7 @@ A marketing practitioner wants to create content that is tailored to the layout 
 
 It is important to note that the Universal Editor is a work in progress and some of the capabilities laid out in this document are a vision of the final editor and not necessarily representative of its current capabilities.
 
-Please speak with your Adobe contact for details on the upcoming features planned for the Universal Editor.
+Speak with your Adobe contact for details on the upcoming features planned for the Universal Editor.
 
 ## Additional Resources {#additional-resources}
 

@@ -180,7 +180,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    >[!NOTE]
    >
-   >* You can specify the same name for the asset if there is no asset with that name at the new location. However, you should use a different name if you move the asset to a location where an asset with the same name exists. If you use the same name, the system automatically generates a variation of the name. For example if your asset has the name Square, the system generates the name Square1 for its copy.
+   >* You can specify the same name for the asset if there is no asset with that name at the new location. However, you should use a different name if you move the asset to a location where an asset with the same name exists. If you use the same name, the system automatically generates a variation of the name. For example, if your asset has the name Square, the system generates the name Square1 for its copy.
    >* When renaming, whitespace is not allowed in the file name.
 
 1. On the **[!UICONTROL Select Destination]** dialog, do one of the following:

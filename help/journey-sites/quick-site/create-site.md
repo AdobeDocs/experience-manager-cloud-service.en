@@ -51,11 +51,11 @@ Once downloaded you can upload it to your AEM environment as you would any other
 
 >[!TIP]
 >
->The AEM Standard Site Template can be customized to meet your project's needs and can obviate the need for further customization. However this topic is beyond the scope of this journey. Please refer to the GitHub documentation of the Standard Site Template for more information.
+>The AEM Standard Site Template can be customized to meet your project's needs and can obviate the need for further customization. However this topic is beyond the scope of this journey. See the GitHub documentation of the Standard Site Template for more information.
 
 >[!TIP]
 >
->You can also choose to build the template from source as part of your project workflow. However this topic is beyond the scope of this journey. Please refer to the GitHub documentation of the Standard Site Template for more information.
+>You can also choose to build the template from source as part of your project workflow. However this topic is beyond the scope of this journey. See the GitHub documentation of the Standard Site Template for more information.
 
 ## Installing a Site Template {#installing-template}
 
@@ -178,3 +178,4 @@ While it is recommended that you move on to the next part of the Quick Site Crea
 * [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - This guide details how to manage pages of your AEM Site if you wish to customize it further after creating it from the template.
 * [How to Work with Package](/help/implementing/developing/tools/package-manager.md) - Packages enable the importing and exporting of repository content. This document explains how to work with packages in AEM 6.5, which also applies to AEMaaCS.
 * [Site Administration Documentation](/help/sites-cloud/administering/site-creation/create-site.md) - Check out the technical docs on site creation for more details on the Quick Site Creation tool's features.
+* [Create or add forms to an AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - Learn step-by-step techniques and best practices for integrating forms into your website, optimizing your digital experiences for maximum impact.

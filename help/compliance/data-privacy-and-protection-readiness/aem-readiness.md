@@ -9,7 +9,7 @@ exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 >
 >The contents of this document do not constitute legal advice and are not meant as a substitute for legal advice. 
 >
->Please consult your company's legal department for advice concerning Data Protection and Data Privacy regulations. 
+>Consult your company's legal department for advice concerning Data Protection and Data Privacy regulations. 
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Adobe is providing documentation and procedures (with APIs when available), for 
 >
 >Data from another Adobe On-demand Service, together with any related privacy requests, will require actions to be taken on that service.
 >
->For further information see [Adobe's Privacy Center](https://www.adobe.com/privacy.html).
+>For more information, see [Adobe's Privacy Center](https://www.adobe.com/privacy.html).
 
 ## Introduction {#introduction}
 
@@ -73,7 +73,7 @@ The following diagram illustrates what a privacy request workflow might look lik
 
 ## Adobe Experience Manager as a Cloud Service and Regulatory Readiness {#aem-as-a-cloud-service-and-regulatory-readiness}
 
-Please see the sections below for regulatory documentation for product areas of AEM as a Cloud Service.
+See the sections below for regulatory documentation for product areas of AEM as a Cloud Service.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#aem-foundation}
 
@@ -86,7 +86,7 @@ See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/hel
 ## Adobe Experience Manager as a Cloud Service Integration with Adobe Target & Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
 These Adobe Experience Manager as a Cloud Service integrations are with data protection and privacy (for example, GDPR) ready services. No personal data from Adobe Target or Adobe Analytics is stored in AEM in relation to the integrations.
-For further information see:
+For more information, see:
 
 * [Adobe Target - Privacy Overview](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)  
 

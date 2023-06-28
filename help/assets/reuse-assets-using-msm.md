@@ -357,7 +357,7 @@ In more scenarios, MSM for [!DNL Assets] matches the behavior of MSM for Sites f
 
 >[!NOTE]
 >
->Please remember that MSM for Content Fragments (accessed through the **[!UICONTROL Assets]** console) uses the Assets functionality; this is because they are stored as Assets (though considered a Sites feature). 
+>Remember that MSM for Content Fragments (accessed through the **[!UICONTROL Assets]** console) uses the Assets functionality; this is because they are stored as Assets (though considered a Sites feature). 
 
 ## Limitations and known issues of MSM for [!DNL Assets] {#limitations}
 
