@@ -76,7 +76,10 @@ If you attempt to upload duplicate assets, the assets are not uploaded until you
 
 >[!TIP]
 >
->You can upload assets to the DAM repository directly from within your [!DNL Creative Cloud] desktop applications. See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
+>You can upload assets to the DAM repository directly from within your [!DNL Creative Cloud] desktop applications. 
+<!--TBD
+See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
+-->
 
 ## Delete assets or folders {#delete-assets}
 

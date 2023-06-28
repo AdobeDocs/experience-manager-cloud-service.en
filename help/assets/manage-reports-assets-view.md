@@ -14,7 +14,7 @@ Asset reporting provides administrators with visibility into activity of the Ado
 
 ## Access reports {#access-reports}
 
-All users who are assigned to the [Assets view Administrators product profile](deploy-administer.md) can access the Insights dashboard or create user-defined reports in Assets view.
+All users who are assigned to the Assets view Administrators product profile can access the Insights dashboard or create user-defined reports in Assets view.
 
 ## View Insights {#view-live-statistics}
 

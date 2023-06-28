@@ -50,13 +50,13 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 [!DNL Assets view] versions the assets when the assets are uploaded again that is updated or are edited. You can view version history, past versions, and can restore a past version of assets as the latest version, that is reverted to a previous version if needed. Asset versions are created in the following scenarios:
 
-* Upload a new asset with the same filename as an existing asset and in the same folder as the existing asset. [!DNL Assets view] prompts to either overwrite the previous asset or save the new asset as a version. See [upload duplicate assets](/help/using/add-delete-assets-view.md#resolve-upload-fails).
+* Upload a new asset with the same filename as an existing asset and in the same folder as the existing asset. [!DNL Assets view] prompts to either overwrite the previous asset or save the new asset as a version. See [upload duplicate assets](/help/using/add-delete-assets-view.md).
 
   ![Create versions when uploading](assets/uploads-manage-duplicates.png)
 
   *Figure: When uploading an asset named the same as an existing asset, you can create a version of the asset.*
 
-* Edit an image and click **[!UICONTROL Save as Version]**. See [edit images](/help/using/edit-images.md).
+* Edit an image and click **[!UICONTROL Save as Version]**. See [edit images](/help/using/edit-images-assets-view.md).
 
   ![Save edited image as a version](assets/edit-image2.png)
 
@@ -142,7 +142,3 @@ To add Expiration Date metadata field to the form,  drag **[!UICONTROL Date]** c
 * Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
 
 * Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
-
-
-
-
