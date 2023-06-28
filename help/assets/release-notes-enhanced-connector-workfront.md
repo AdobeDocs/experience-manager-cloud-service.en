@@ -24,7 +24,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 >[!IMPORTANT]
 >
->Adobe recommends you to [upgrade to the latest 1.9.11 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recommends you [upgrade to the latest 1.9.11 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Known Issues {#known-issues}
 
@@ -133,7 +133,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 [!DNL Workfront for Experience Manager enhanced connector] version 1.9.4, released on October 07, includes the following updates:
 
-* Unable to view Event Subscriptions tab on the enhanced connector configuration page due to a large number of events.
+* Unable to view Event Subscriptions tab on the enhanced connector configuration page due to many events.
 
 * Workfront is not able to fetch the list of existing folders in a project, which is resulting in creation of duplicate folders.
 
@@ -141,7 +141,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 [!DNL Workfront for Experience Manager enhanced connector] version 1.9.3, released on September 16, includes the following updates:
 
-* Unable to upload a file that is more than 8 GB in size.
+* Unable to upload a file that is more than 8 GB.
 * Issues while auto-publishing assets that are sent from Workfront to AEM.
 * The Root path field is not available for the Tags field while editing a default Metadata Schema Form.
 * Issues while adding new versions in Workfront using AEM workflows.
@@ -172,7 +172,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 [!DNL Workfront for Experience Manager enhanced connector] now includes the following updates:
 
-* When you upload via a linked folder or use the `Send To` action available in Workfront to upload assets to Experience Manager as a Cloud Service, the asset(s) get corrupted and cannot be opened in Adobe Photoshop.
+* When you upload via a linked folder or use the `Send To` action available in Workfront to upload assets to Experience Manager as a Cloud Service, the assets get corrupted and cannot be opened in Adobe Photoshop.
 
 ### March 2022 release {#march-2022-release}
 
