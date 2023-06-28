@@ -28,8 +28,6 @@ Have a look at the June 2023 Release Overview video for a summary of the feature
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420971/?quality=12)
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
