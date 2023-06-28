@@ -156,7 +156,7 @@ To view and edit collection metadata:
 
 ![Share link for assets](assets/share-link-collections.png)
 
-For more information on how to share collection links with external stakeholders, see [Share links for assets](help/assets/share-links-for-assets-view.md).
+For more information on how to share collection links with external stakeholders, see [share links for assets](/help/assets/share-links-for-assets-view.md).
 
 ## Download a collection {#download-collection}
 
