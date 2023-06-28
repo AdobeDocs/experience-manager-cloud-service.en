@@ -32,24 +32,38 @@ Perform a range of other actions depending on the data-type being edited; for ex
 
 ## Authoring your Content {#authoring-your-content}
 
-When you open your content fragment for editing, the **Variations** tab will be open by default. Here you can author the content, for Master or any variations you have. The structured fragment contains various fields, of various data-types, that were defined in the content model. 
+When you open your content fragment for editing, the **Variations** tab is open by default. Here you can author the content, for Master or any variations you have. The structured fragment contains various fields, of various data-types, that were defined in the content model. 
 
 For example:
 
 ![full screen editor](assets/cfm-variations-02.png)
+
 You can:
 
-* make edits directly in the **Variations** tab
+* Make edits to your content directly in the **Variations** tab; each data type provides different editing options, for example:
 
-  * each data type provides different editing options
+  * for **Multi line text** fields you can also open the [full-screen editor](#full-screen-editor) to:
 
-* for **Multi line text** fields you can also open the [full-screen editor](#full-screen-editor) to:
+    * select the [Format](#formats)
+    * see more editing options (for [Rich Text](#rich-text) format)
+    * access a range of [actions](#actions)
 
-  * select the [Format](#formats)
-  * see more editing options (for [Rich Text](#rich-text) format)
-  * access a range of [actions](#actions)
+  * For **Fragment Reference** fields the [Edit Content Fragment](#fragment-references-edit-content-fragment) option can be available, depending on the model definition.
 
-* For **Fragment Reference** fields the **[Edit Content Fragment](#fragment-references-edit-content-fragment)** option can be available, depending on the model definition.
+* Assign **Tags** to the current variation; the tags can be added, updated and removed
+
+  * [Tags](/help/sites-cloud/authoring/features/tags.md) are particularly powerful when organizing your fragments as they can be used for content classification and taxonomy. Tags can be used for the purpose of finding content (by tags) and applying bulk operations. 
+
+    * Searches for a tag will return the fragment, with the tagged variation highlighted. 
+    * Variation tags can also be used to group variations for a specific Content Delivery Network (CDN) profile (for CDN caching), instead of using the variation name. 
+
+    For example, you can tag relevant fragments as "Christmas launch" to allow browsing only these as a subset, or to copy them for use with another future launch in a new folder.
+
+  >[!NOTE]
+  >
+  >**Tags** can also be added (to the **Master** variation) as part of the [Metadata](/help/assets/content-fragments/content-fragments-metadata.md)
+
+* [Create and manage variations](#managing-variations) of the **Master** content.
 
 ### Full Screen Editor {#full-screen-editor}
 
@@ -68,7 +82,7 @@ The full screen text editor provides:
 
 ### Actions {#actions}
 
-The following actions are also available (for all the [formats](#formats)) when the full-screen editor (i.e. multi-line text) is open:
+The following actions are also available (for all the [formats](#formats)) when the full-screen editor (that is, multi-line text) is open:
 
 * Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text,](#plain-text) [Markdown](#markdown))
 
@@ -298,7 +312,7 @@ Annotations:
 
 To ease the process of authoring content fragments you can add [Assets](/help/assets/manage-digital-assets.md) (images) directly to the fragment.
 
-They will be added to the paragraph sequence of the fragment without any formatting; formatting can be done when the [fragment is used/referenced on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+They are added to the paragraph sequence of the fragment without any formatting; formatting can be done when the [fragment is used/referenced on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -327,14 +341,14 @@ They will be added to the paragraph sequence of the fragment without any formatt
    >[!CAUTION]
    >
    >If, after adding an asset, you change format to:
-   >* **Plain Text**: the asset will be completely lost from the fragment.
+   >* **Plain Text**: the asset is completely lost from the fragment.
    >* **Markdown**: the asset will not be visible, but will still be there when you return to **Rich Text**.
 
 ### Inserting a Content Fragment into your Fragment {#inserting-content-fragment-into-your-fragment}
 
 To ease the process of authoring content fragments you can also add another Content Fragment to your fragment.
 
-They will be added as a reference, in your current location in your fragment.
+They are added as a reference, in your current location in your fragment.
 
 >[!NOTE]
 >
@@ -366,8 +380,8 @@ They will be added as a reference, in your current location in your fragment.
 
    >[!CAUTION]
    >
-   >If, after adding an reference to another fragment, you change format to:
-   >* **Plain Text**: the reference will be completely lost from the fragment.
+   >If, after adding a reference to another fragment, you change format to:
+   >* **Plain Text**: the reference is completely lost from the fragment.
    >* **Markdown**: the reference will remain.
 
 ## Managing Variations {#managing-variations}
@@ -382,11 +396,15 @@ To create a new variation:
 1. Select **Variations** from the icon bar in the side panel.
 1. Select **Create Variation**.
 1. A dialog will open, specify the **Title** and **Description** for the new variation.
-1. Select **Add**; the fragment **Master** will be copied to the new variation, which is now open for [editing](#editing-a-variation).
+1. Select **Add**; the fragment **Master** is copied to the new variation, which is now open for [editing](#editing-a-variation).
 
    >[!NOTE]
    >
    >When creating a new variation it is always **Master** that is copied, not the variation that is currently open.
+
+   >[!NOTE]
+   >
+   >When you create a new variation, all **Tags** currently assigned to the **Master** variation are copied to your new variation. 
 
 ### Editing a Variation {#editing-a-variation}
 
@@ -403,7 +421,7 @@ To rename an existing variation:
 
 1. Open your fragment and select **Variations** from the side panel.
 1. Select the required variation.
-1. Select **Rename** from the **Actions** drop down.
+1. Select **Rename** from the **Actions** drop-down.
 
 1. Enter the new **Title** and/or **Description** in the resulting dialog box.
 
@@ -419,7 +437,7 @@ To delete an existing variation:
 
 1. Open your fragment and select **Variations** from the side panel.
 1. Select the required variation.
-1. Select **Delete** from the **Actions** drop down.
+1. Select **Delete** from the **Actions** drop-down.
 
 1. Confirm the **Delete** action in the dialog.
 
@@ -437,7 +455,7 @@ When editing a variation you have access to the action for synchronizing the cur
 >
 >Synchronization is only available to copy changes *from **Master** to the variation*.
 >
->Only the current element of the variation will be synchronized.
+>Only the current element of the variation is synchronized.
 >
 >Synchronization only works on the **Multi line text** data-type.
 >
@@ -447,7 +465,7 @@ When editing a variation you have access to the action for synchronizing the cur
 
 1. Select a specific variation, then the appropriate synchronization action from either:
 
-   * the **Actions** drop down selector - **Sync current element with master**
+   * the **Actions** drop-down selector - **Sync current element with master**
 
       ![synchronizing with master](assets/cfm-variations-11a.png)
 
@@ -455,7 +473,7 @@ When editing a variation you have access to the action for synchronizing the cur
 
       ![synchronizing with master](assets/cfm-variations-11b.png)
 
-1. Master and the variation will be shown side-by-side:
+1. Master and the variation is shown side-by-side:
 
    * green indicates content added (to the variation)
    * red indicates content removed (from the variation)
@@ -463,4 +481,4 @@ When editing a variation you have access to the action for synchronizing the cur
 
    ![synchronizing with master](assets/cfm-variations-11c.png)
 
-1. Select **Synchronize**, the variation will updated and shown.
+1. Select **Synchronize**, the variation is updated and shown.

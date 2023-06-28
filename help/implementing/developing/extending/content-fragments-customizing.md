@@ -40,7 +40,7 @@ Content Fragment Management (CFM) is part of AEM Assets as:
 
 * Content fragments are assets.
 * They use existing Assets functionality.
-* They are fully integrated with Assets (admin consoles, etc.).
+* They are fully integrated with Assets (admin consoles, and so on).
 
 Content Fragments are considered a Sites feature as:
 
@@ -102,7 +102,7 @@ Content fragments can be referenced from AEM pages, just as any other asset type
 
 * The component allows in-between content:
 
-  * Here the component allows you to place other assets (images, etc.) in between the paragraphs of the referenced fragment.
+  * Here the component allows you to place other assets (images, and so on) in between the paragraphs of the referenced fragment.
 
   * For in-between content you need to:
 
@@ -116,7 +116,7 @@ Content fragments can be referenced from AEM pages, just as any other asset type
 >
 >When a content fragment is used on a page, the content fragment model that it is based on is referenced. 
 >
->This means that if the model has not been published at the time you publish the page, this will be flagged and the model added to the resources to be published with the page.
+>This means that if the model has not been published at the time you publish the page, this is flagged and the model added to the resources to be published with the page.
 
 ### Integration with other Frameworks {#integration-with-other-frameworks}
 
@@ -252,7 +252,7 @@ It should be noted that:
 
 * Tasks that might require additional effort:
 
-  * It is strongly recommended to create new variations from `ContentFragment`. This ensures that all elements will share this variation, and that appropriate global data structures will be updated as required to reflect the newly created variation in the content structure.
+  * It is strongly recommended to create new variations from `ContentFragment`. This ensures that all elements share this variation, and that appropriate global data structures are updated as required to reflect the newly created variation in the content structure.
 
   * Removing existing variations through an element, using `ContentElement.removeVariation()`, will not update the global data structures assigned to the variation. To ensure these data structures are kept in sync, use `ContentFragment.removeVariation()` instead, which removes a variation globally.
 
@@ -274,7 +274,7 @@ See the following:
 
 >[!CAUTION]
 >
->Please consider this background information. You are not supposed to change anything here (as it is marked as a *private area* in the repository), but it might help in some cases to understand how things work under the hood.
+>Consider this background information. You are not supposed to change anything here (as it is marked as a *private area* in the repository), but it might help in some cases to understand how things work under the hood.
 
 Editing a content fragment, which can span multiple views (= HTML pages), is atomic. As such atomic multi-view edit capabilities are not a typical AEM concept, content fragments use what is called an *editing session*.
 
@@ -340,6 +340,6 @@ If you want to set an auto save interval of 5 minutes you need to define the pro
 
 ## Components for Page Authoring {#components-for-page-authoring}
 
-For further information see
+For more information, see
 
 * [Core Components - Content Fragment Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) (recommended)

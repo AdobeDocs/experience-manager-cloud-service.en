@@ -1,6 +1,6 @@
 ---
 title: Page Templates
-description: Page Templates are used when creating a page which will be used as the base for the new page
+description: Page Templates are used when creating a page which is used as the base for the new page
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 ---
 # Page Templates {#page-templates}
@@ -322,7 +322,7 @@ Definitions for your customized templates types should be stored in user-defined
 
 >[!CAUTION]
 >
->The template types have to respect the correct folder structure (i.e. `/settings/wcm/...`), otherwise the template types will not be found.
+>The template types have to respect the correct folder structure (that is, `/settings/wcm/...`), otherwise the template types will not be found.
 
 <!--
 ### Template Type and Mobile Device Groups {#template-type-and-mobile-device-groups-br}
@@ -350,7 +350,7 @@ When creating a new editable template, the value is copied from the template typ
 If you have created a template that can serve as the basis of other templates, you can copy this template as a template type.
 
 1. Create a template as you would any Page Template [as documented here](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author), which will serve as the basis of your template type.
-1. Using CRXDE Lite, copy the newly-created template from the `templates` node to the `template-types` node under the [template folder](#template-folders).
+1. Using CRXDE Lite, copy the newly created template from the `templates` node to the `template-types` node under the [template folder](#template-folders).
 1. Delete the template from the `templates` node under the [template folder](#template-folders).
 1. In the copy of the template that is under the `template-types` node, delete all `cq:template` and `cq:templateType` properties from all `jcr:content` nodes.
 
@@ -427,11 +427,11 @@ This node holds properties for the template:
 Defines the structure of the resultant page:
 
 * Is merged with the initial content ( `/initial`) when creating a new page.
-* Changes made to the structure will be reflected in any pages created with the template.
-* The `root` ( `structure/jcr:content/root`) node defines the list of components that will be available in the resulting page.
+* Changes made to the structure are reflected in any pages created with the template.
+* The `root` ( `structure/jcr:content/root`) node defines the list of components that are available in the resulting page.
   * Components defined in the template structure cannot be moved on or deleted from any resultant pages.
-  * Once a component is unlocked the `editable` property is set to `true`.
-  * Once a component that already contains content is unlocked, this content will be moved to the `initial` branch.
+  * After a component is unlocked the `editable` property is set to `true`.
+  * After a component that already contains content is unlocked, this content is moved to the `initial` branch.
 
 * The `cq:responsive` node holds definitions for the responsive layout.
 
@@ -442,7 +442,7 @@ Defines the initial content that a new page will have upon creation:
 * Contains a `jcr:content` node that is copied to any new pages.
 * Is merged with the structure ( `/structure`) when creating a new page.
 * Any existing pages will not be updated if the initial content is changed after creation.
-* The `root` node holds a list of components to define what will be available in the resulting page.
+* The `root` node holds a list of components to define what is available in the resulting page.
 * If content is added to a component in structure mode and that component is subsequently unlocked (or vice versa), then this content is used as initial content.
 
 ### Layout {#layout}
@@ -527,14 +527,14 @@ When rendering a page:
 
 * **Templates**:
 
-  * The `cq:template` property of its `jcr:content` node will be referenced to access the template that corresponds to that page.
+  * The `cq:template` property of its `jcr:content` node is referenced to access the template that corresponds to that page.
 
 * **Components**:
 
   * The page component will merge the `structure/jcr:content` tree of the template with the `jcr:content` tree of the page.
     * The page component will only allow the author to edit the nodes of the template structure that have been flagged as editable (as well as any children).
-    * When rendering a component on a page, the relative path of that component will be taken from the `jcr:content` node; the same path under the `policies/jcr:content` node of the template will then be searched.
-      * The `cq:policy` property of this node points to the actual content policy (i.e. it holds the design configuration for that component).
+    * When rendering a component on a page, the relative path of that component is taken from the `jcr:content` node; the same path under the `policies/jcr:content` node of the template will then be searched.
+      * The `cq:policy` property of this node points to the actual content policy (that is, it holds the design configuration for that component).
         * This allows you to have multiple templates that re-use the same content policy configurations.
 
 ### Template Availability {#template-availability}

@@ -9,13 +9,28 @@ exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
 ---
 # Reuse assets using MSM for [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 Multi Site Manager (MSM) functionality in [!DNL Adobe Experience Manager] enables users to reuse content that is authored once and is reused across multiple web-locations. The same functionality is available for digital assets by the name MSM for [!DNL Assets]. Using MSM for [!DNL Assets], you can:
 
 * Create assets once and then make copies of these assets to reuse in other areas of the site.
 * Keep multiple copies in synchronization and update the original primary copy once to push the changes to the child copies.
 * Make local changes by temporarily or permanently suspending the linking between parent and child assets.
 
-## Understand the benefits and the concepts oF MSM {#concepts}
+>[!NOTE]
+>
+>The MSM for [!DNL Assets] functionality includes Content Fragments, which are stored as [!DNL Assets] (though considered a Sites feature).
+
+>[!CAUTION]
+>
+>MSM for Content Fragments is only available when using Content Fragments via the **[!UICONTROL Assets]** console. 
+>
+>MSM functionality is *not* available when using the **[!UICONTROL Content Fragments]** console.
+
+## Understand the benefits and the concepts of MSM {#concepts}
 
 ### How it works and the benefits {#how-it-works-and-the-benefits}
 
@@ -32,7 +47,7 @@ MSM maintains a live relationship between the source asset and its live copies s
 
 **Live copy:** The copy of the source assets/folders that is in synchronization with its source. Live copies can be a source of further live copies. See how to create LCs.
 
-**Inheritance:** A link/reference between a live copy asset/folder and its source that the system uses to remember where to send the updates. Inheritance exists at a granular level for metadata fields. Inheritance can be removed for selective metadata fields while preserving the live relationship between source and its live copy.
+**Inheritance:** A link/reference between a live copy asset/folder and its source that the system uses to remember where to send the updates. Inheritance exists at a granular level for metadata fields, also Content Fragment variations and fields. Inheritance can be removed for selected items while preserving the live relationship between source and its live copy.
 
 **Rollout:** An action that pushes the modifications made to the source downstream to its live copies. It is possible to update one or more live copies in one go using rollout action. See rollout.
 
@@ -55,7 +70,7 @@ To create live copy from one or more source assets or folders, follow either of 
 * Method 1: Select the source assets and click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]** from toolbar at the top.
 * Method 2: In [!DNL Experience Manager] user interface, click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]** from upper-right corner of the interface.
 
-You can create live copies of an asset or a folder one at a time. You can create live copies that are derived from an asset or a folder that is a live copy itself. Content Fragments (CFs) are not supported for the use case. When attempting to create their live copies, CFs are copied over as is without any relationship. The copied CFs are a snapshot in time and does not update when original CFs are updated.
+You can create live copies of an asset or a folder one at a time. You can create live copies that are derived from an asset or a folder that is a live copy itself.
 
 To create live copies using the first method, follow these steps:
 
@@ -222,6 +237,38 @@ To see the statuses and information related to a synchronize action, see [Inform
 >
 >If the relationship is suspended, the synchronize action is not available in the toolbar. While synchronize action is available in the References rail, the modifications are not propagated even upon a successful rollout.
 
+## Canceling, and re-enabling, inheritance for individual items {#canceling-reenabling-inheritance-individual-items}
+
+You can cancel the Live Copy inheritance for a:
+
+* metadata field
+* Content Fragment variation
+* Content Fragment data field
+
+This will mean that the item is no longer synchronized with the source component. You can enable inheritance at a later point if required.
+
+### Cancel Inheritance {#cancel-inheritance}
+
+To cancel inheritance:
+
+1. Select the **Cancel Inheritance** icon, next to the required item:
+
+   ![Synchronize action pulls the changes made to the source](assets/cancel-inheritance-icon.png)
+
+1. In the Cancel Inheritance dialog box, confirm the action with Yes.
+
+### Re-enable Inheritance {#reenable-inheritance}
+
+To re-enable inheritance:
+
+1. To enable inheritance for an item, select the **Re-enable Inheritance** icon next to the required item: 
+
+   ![Synchronize action pulls the changes made to the source](assets/re-enable-inheritance-icon.png)
+
+   >[!NOTE]
+   >
+   >When you re-enable inheritance, the item is not automatically synchronized with the source. You can manually request a synchronization if this is required.
+
 ## Suspend and resume relationship {#suspend-resume}
 
 You can temporarily suspend the relationship to prevent a live copy from receiving modifications made to the source asset or folder. The relationship can also be resumed for live copy to start receiving the modifications from source.
@@ -308,11 +355,13 @@ In more scenarios, MSM for [!DNL Assets] matches the behavior of MSM for Sites f
 * Configuring MSM locks on page properties is not supported in MSM for [!DNL Assets].
 * For MSM for [!DNL Assets], use only the **[!UICONTROL Standard rollout config]**. The other rollout configurations are not available for MSM for [!DNL Assets].
 
+>[!NOTE]
+>
+>Remember that MSM for Content Fragments (accessed through the **[!UICONTROL Assets]** console) uses the Assets functionality; this is because they are stored as Assets (though considered a Sites feature). 
+
 ## Limitations and known issues of MSM for [!DNL Assets] {#limitations}
 
 Following are limitations of MSM for [!DNL Assets].
-
-* Content Fragments are not supported. When attempting to create the live copies, Content Fragments are copied as is without any relationship. The copied Content Fragments are a snapshot in time and do not update when you update the original Content Fragments.
 
 * MSM does not work with metadata writeback enabled. Upon writeback, the inheritance breaks.
 
@@ -330,3 +379,4 @@ Following are limitations of MSM for [!DNL Assets].
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)

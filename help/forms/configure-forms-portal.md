@@ -33,8 +33,11 @@ AEM Forms provide the following portal components out of the box:
 * Link: This component allows you to create a link to a form anywhere on the page.
 
 You can [import the out-of-the-box Forms Portal components](#import-forms-portal-components-aem-archetype) from the AEM Project Archetype. After importing, perform the following configurations: 
+
 * [Configure an external storage](#configure-azure-storage-adaptive-forms)
+
 * [Enable the Forms Portal components](#enable-forms-portal-components) 
+
 * [Configure the Forms Portal components](#configure-forms-portal-components)
 
 ## Import Forms Portal Components {#import-forms-portal-components-aem-archetype}
@@ -88,7 +91,7 @@ Perform the following steps to configure Unified Storage Connector for AEM Workf
 
 ## Enable Forms Portal Components {#enable-forms-portal-components}
 
-In order to use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=en#create-proxy-components). 
+To use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=en#create-proxy-components). 
 
 Once a portal component is enabled, you can use it in the author instance of your sites page.
 

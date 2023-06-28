@@ -31,7 +31,7 @@ In this module you will create a new Content Fragment based on that model by usi
 
 1. Tap or click the **Create** button at the top-right of the console.
 
-1. The **New Content Fragment** dialog opens where you can  start creating a new Content Fragment. **Location** is automatically populated with where the new content will be saved.
+1. The **New Content Fragment** dialog box opens where you can start creating a new Content Fragment. **Location** is automatically populated with where the new content is saved.
 
 1. In the **Content Fragment model** drop-down, select the **Adventure** Content Fragment model you created previously.
 
@@ -56,7 +56,7 @@ Once you save and open your new Content Fragment, the Content Fragment editor op
 1. Provide a **Description** for your fragment by pasting in the following text.
 
    ```text
-   Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour will be rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality.  Tuscany’s natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
+   Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour are rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality. Tuscany's natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
    ```
 
 1. Provide a **Price** for your fragment by entering in `$700`.

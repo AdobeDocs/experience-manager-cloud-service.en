@@ -75,9 +75,9 @@ Your translated content is now published! It can now be accessed and consumed.
 
 >[!TIP]
 >
->You can select multiple items (i.e. multiple language folders) when publishing in order to publish multiple translations at one time.
+>You can select multiple items (that is, multiple language folders) when publishing to publish multiple translations at one time.
 
-There are additional options when publishing your content, such as scheduling a publication time, which are beyond the scope of this journey. Please see the [Additional Resources](#additional-resources) section at the end of the document for more information.
+There are additional options when publishing your content, such as scheduling a publication time, which are beyond the scope of this journey. See the [Additional Resources](#additional-resources) section at the end of the document for more information.
 
 ## Updating Your Translated Content {#updating-translations}
 

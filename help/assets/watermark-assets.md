@@ -8,6 +8,11 @@ exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
 ---
 # Watermark your assets {#watermark-assets}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 [!DNL Adobe Experience Manager Assets] lets you add a digital watermark to images. [!DNL Assets] supports applying an image as a watermark to other image files. Watermarks can help users verify the authenticity and copyright ownership of the assets. Also, a watermark can be used to indicate a document's state like confidential, draft, validity, and so on.
 
 To configure [!DNL Experience Manager] to watermark assets:
@@ -28,10 +33,10 @@ To configure [!DNL Experience Manager] to watermark assets:
 
    >[!NOTE]
    >
-   >If you have configured System Watermarking Profile using `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` configuration file (OSGi configuration), you can continue to use it, however, Adobe recommends to use the new method.
+   >If you have configured System Watermarking Profile using `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` configuration file (OSGi configuration), you can continue to use it, however, Adobe recommends using the new method.
 
    
-1. [Create a processing profile](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) to leverage asset microservices to apply the watermark.
+1. [Create a processing profile](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) to use asset microservices to apply the watermark.
 
    ![Asset processing profile to create watermark](assets/watermark-processing-profile.png)
 

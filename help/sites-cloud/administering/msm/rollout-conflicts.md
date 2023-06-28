@@ -16,7 +16,7 @@ When conflicting pages do exist (in the blueprint and Live Copy branches), MSM a
 To ensure that the rollout is not blocked, possible definitions can include:
 
 * Which page (blueprint or Live Copy) will have priority during rollout
-* Which pages will be renamed (and how)
+* Which pages are renamed, and how
 * How this will affect any published content
 
 The default behavior of AEM out-of-the-box is that published content will not be impacted. So if a page that was manually created in the Live Copy branch has been published, that content will still be published after the conflict handling and rollout.
@@ -71,7 +71,7 @@ AEM provides:
 The default conflict handler is `ResourceNameRolloutConflictHandler`
 
 * With this handler the blueprint page is given precedence.
-* The service ranking for this handler is set low, i.e. below the default value for the `service.ranking` property, as the assumption is that customized handlers will need a higher ranking. However, the ranking is not the absolute minimum to ensure flexibility when required.
+* The service ranking for this handler is set low, that is, below the default value for the `service.ranking` property, as the assumption is that customized handlers will need a higher ranking. However, the ranking is not the absolute minimum to ensure flexibility when required.
 
 This conflict handler gives precedence to the blueprint. Fore example, the Live Copy page `/b` is moved within the Live Copy branch to `/b_msm_moved`.
 

@@ -56,7 +56,7 @@ In this lesson, you familiarize yourself with AEM Forms as a Cloud Service envir
 
 1.  Open your browser and enter the URL of the Cloud Service author environment.
 
-1.  Log in to the Cloud Service author environment. The login credentials for your author environment will be shared with you during the lab. 
+1.  Log in to the Cloud Service author environment. The login credentials for your author environment are shared with you during the lab. 
 
 1.  After you are logged in, navigate to the AEM Forms UI. Click **Forms**.
 
@@ -238,7 +238,7 @@ Set up local repository of the theme:
 
     ![](/help/forms/assets/screenshot2028116229.png)
 
-1.  To render the form hosted on your cloud service publish environment, rename the `env_template` file.  To rename the file, right click the **env_template** file and select the **Rename** option.
+1.  To render the form hosted on your cloud service publish environment, rename the `env_template` file.  To rename the file, right-click the **env_template** file and select the **Rename** option.
 
     ![](/help/forms/assets/screenshot2028116429.png)
 

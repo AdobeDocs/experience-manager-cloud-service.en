@@ -40,6 +40,7 @@ This and the following pages cover the tasks for creating, configuring, maintain
 * [Using Associated Content](/help/assets/content-fragments/content-fragments-assoc-content.md) - adding associated content
 * [Metadata - Fragment Properties](/help/assets/content-fragments/content-fragments-metadata.md) - viewing and editing the fragment properties
 * Use [Content Fragments, together with GraphQL, to deliver content](/help/assets/content-fragments/content-fragments-graphql.md) for use in your applications. To help with this, you can preview [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md).
+* [Reuse Content Fragments using MSM for Assets](#reusing-content-fragments-with-msm-assets)
 
 >[!NOTE]
 >
@@ -77,7 +78,7 @@ These content fragments can then be assembled to provide experiences over a vari
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
 >
->For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>For more information, see also [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 ## Content Fragments and Content Services {#content-fragments-and-content-services}
 
@@ -103,6 +104,16 @@ Together with the JSON export capabilities of AEM core components, this structur
 >
 >AEM also supports the translation of fragment content. See [Translating Assets](/help/assets/translate-assets.md) for further information.
 
+## Reusing Content Fragments with MSM for Assets {#reusing-content-fragments-with-msm-assets}
+
+When accessed through the **Assets** console you can use MSM and create Live Copies for your fragments.
+
+For further details see [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md).
+
+>[!CAUTION]
+>
+>If you want to use MSM (which creates copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md).
+
 ## Content Type {#content-type}
 
 Content fragments are:
@@ -125,7 +136,7 @@ Content Fragments are a content structure that:
 * Can [contain, or be connected to, images](#fragments-with-visual-assets).
 * Can use [in-between content](#in-between-content-when-page-authoring-with-content-fragments) when referenced on a page.
 
-* Are independent from the delivery mechanism (i.e. page, channel).
+* Are independent from the delivery mechanism (that is, page, channel).
 
 ### Fragments with Visual Assets {#fragments-with-visual-assets}
 
@@ -272,13 +283,13 @@ To use your Content Fragments for page authoring you also need:
 
   * Instrumental to delivering the fragment in HTML and/or JSON format.
   * Required to [reference the fragment on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-  * Responsible for layout and delivery of a fragment; i.e. channels.
+  * Responsible for layout and delivery of a fragment; that is, channels.
   * Fragments need one or more dedicated components to define layout and deliver some or all elements/variations and associated content.
   * Dragging a fragment onto a page in authoring will automatically associate the required component.
 
 ## Example Usage {#example-usage}
 
-A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment you need to consider what will be used where.
+A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment, consider what is used and where.
 
 ### WKND Sample {#wknd-sample}
 

@@ -17,7 +17,6 @@ An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-o
 >[!NOTE]
 >You must have [configured your endpoints](/help/headless/graphql-api/graphql-endpoint.md) in the [configuration browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) before using the GraphiQL IDE.
 
-
 The **GraphiQL** tool allows you to test and debug your GraphQL queries by enabling you to:
 * select the **Endpoint** appropriate to the Sites configuration that you want to use for your queries
 * directly input new queries 
@@ -25,7 +24,7 @@ The **GraphiQL** tool allows you to test and debug your GraphQL queries by enabl
 * run your queries to immediately see the the results
 * manage **Query Variables** 
 * save, and manage **Persisted Queries**
-* publish, or unpublish, **Persisted Queries** (for example, to/from `dev-publish`)
+* publish, or unpublish, **Persisted Queries**, to either your **Publish** or **Preview** service; for example, to/from `dev-publish`
 * see the **History** of your previous queries
 * use the **Documentation Explorer** to access the documentation; helping you to learn and understand what methods are available.
 
@@ -69,13 +68,13 @@ Use **Save As** to persist your new query.
 
 Select the query you want to update from the list in the **Persisted Queries** panel (far left).
 
-The query will be shown in the editor panel. Make any changes you need, then use **Save** to commit your updates to the persisted query.
+The query is shown in the editor panel. Make any changes you need, then use **Save** to commit your updates to the persisted query.
 
 ## Running queries {#running-queries}
 
-You can run a new query immediately, or you can load and run a persisted query. To load a persisted query, select it from the list - the query will be shown in the editor panel.
+You can run a new query immediately, or you can load and run a persisted query. To load a persisted query, select it from the list - the query is shown in the editor panel.
 
-In either case, the query showing in the editor panel is the query that will be executed when you either:
+In either case, the query showing in the editor panel is the query that is run when you either:
 
 * click/tap on the **Execute Query** icon
 * use the keyboard combination `Control-Enter`
@@ -125,13 +124,27 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 1. Select **Save** to persist the changes.
 
-## Publishing persisted queries {#publishing-persisted-queries}
+## Publishing and previewing persisted queries {#publishing-previewing-persisted-queries}
 
-Once you have selected your persisted query from the list (left panel) you can use the **Publish** and **Unpublish** actions. This will activate them to your publish environment (for example, `dev-publish`) for easy access by your applications when testing.
+Once you have selected your persisted query from the list (left panel) you can use the **Publish** action. 
+
+This will activate the query to the environment you select. You can choose either your **Publish** environment (for example, `dev-publish`), or your **Preview** environment for easy access by your applications when testing.
+
+![GraphiQL -Published Persisted Query](assets/cfm-graphiql-publish.png "GraphiQL - Publish Persisted Query")
 
 >[!NOTE]
 >
 >The definition of the persisted query's cache `Time To Live` {"cache-control":"parameter":value} has a default value of 2 hours (7200 seconds).
+
+## Unpublishing persisted queries {#unpublishing-persisted-queries}
+
+As when publishing, once you have selected your persisted query from the list (left panel) you can use the **Unpublish** action. 
+
+This will deactivate the query from the environment you select; either your **Publish** environment, or your **Preview** environment.
+
+>[!NOTE]
+>
+>You should also ensure that you have made the necessary changes to your client application - to avoid potential issues.
 
 ## Copy URL to directly access the query {#copy-url}
 

@@ -86,4 +86,4 @@ Hopefully the **Errors** tab will always be empty (as above), but when problems 
 * A warning if the component writes an entry to the error log, together with details of the error and direct links to the appropriate code within CRXDE Lite.
 * A warning if the component opens an admin session.
 
-For example, if an undefined method is called, the resulting error will be shown in the **Errors** tab and the component entry in the tree of the **Components** tab will also be marked with an indicator when an error occurs.
+For example, if an undefined method is called, the resulting error is shown in the **Errors** tab and the component entry in the tree of the **Components** tab will also be marked with an indicator when an error occurs.
