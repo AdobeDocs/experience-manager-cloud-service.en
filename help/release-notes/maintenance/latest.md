@@ -7,44 +7,36 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 12255 {#release-12255}
+## Release 12441 {#release-12441}
  
-Summarized below are the continuous improvements for maintenance release 12255, which was publicly released on June 13, 2023. This maintenance release is an update from previous maintenance release 12142.
+Summarized below are the continuous improvements for maintenance release 12441, which was publicly released on June 27, 2023. This maintenance release is an update from previous maintenance release 12255.
 
-2023.6.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
+2023.7.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-12255}
+### Enhancements {#enhancements-12441}
+
+- SITES-8769: Improve StyleImpl calls in ResponsiveGrid
+
+### Fixed Issues {#fixed-issues-12441}
+
+- Various accessibility-related updates
+- SITES-12688: Page Editor: Logical operator OR not properly working in Asset Finder search
+- SITES-4951: Page Editor: Tag-search in Page editor does not find sub-tags
+- SITES-12465: Experience Fragments: Arrow keys not working in Experience fragment component dialog
+- SITES-12893: Experience Fragments: Apply circular reference validation for Experience Fragments
+- SITES-12715: Experience Fragments: Cloud service configs applied to Experience fragments folder do not persist
+- SITES-13097: Experience Fragments: Not able to add experience fragments to a translation project
+- SITES-13165: GraphQL: Restore default behavior for filtering of null values
+- SITES-12577: Link Checker: Transformer not rewriting links intermittently 
+- SITES-13559: MSM: 'Is not modifiable' exception thrown when rolling out component
+- SITES-11757: MSM: Inherit rollout configuration from Parent does not get reverted back for child pages
+- SITES-14073: Sites Admin: CSV Report fails with 500 when selecting no property to export
+
+### Known Issues {#known-issues-12441}
 
 None.
 
-### Fixed Issues {#fixed-issues-12255}
-
-- Various accessibility-related updates
-- ASSETS-15116 - "Go to location" option available in Assets search view 
-- ASSETS-17453 - (Dynamic Media) Unable to select a custom thumbnail for videos
-- ASSETS-19279 - Assets download archive for large files
-- ASSETS-19544 - Last modified by user for asset updates
-- ASSETS-20146 - (Touch UI) Assets Download Report Failed Reports due to validation errors show up always on the top of the list page for reports
-- ASSETS-21056 - Optimize Asset Reference Performance to minimize writes
-- ASSETS-21909 - Not able to see smart crop video when vtt fails to download
-- ASSETS-22261 - Linkshare downloads folder structure inconsistent with Assets UI downloads
-- ASSETS-22550 - Search filter panel now open by default 
-- ASSETS-22920 - Unpublishing folder from Brand Portal does not mark the assets within as unpublished
-- ASSETS-22922 - Disabled Viewer presets show up in Dynamic Media component
-- ASSETS-23461 - Brand Portal Quick Publish from Assets search view 
-- ASSETS-23466 - InDesign Server inaccessible link handling fails to resolve AAL links containing spaces
-- ASSETS-23469 - Default Asset Filters collide with custom filters
-- ASSETS-23981 - Sorting Function for Titles Not Working in Collection Links
-- ASSETS-24723 - Published Assets were reprocessed again without user intervention
-- GRANITE-45385 - Migrate Tree Activation to use sling job instead of workflow
-
-### Known Issues {#known-issues-12255}
-
-- ASSETS-25729 - View switcher menu is cut off 
-- ASSETS-25728 - Reprocess Asset option not available in search view
-- ASSETS-22603 - Some Download-type Asset Report columns display "null" values in the UI. Downloadable CSV is not affected.
-
-### Embedded Technologies {#embedded-tech-12255}
+### Embedded Technologies {#embedded-tech-12441}
 
 |Technology|Version|Link|
 |---|---|---|
