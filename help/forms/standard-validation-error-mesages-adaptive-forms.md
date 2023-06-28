@@ -169,11 +169,14 @@ Using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs
 
 >[!NOTE]
 >
-> To use error handlers with the Rule Editor's Invoke service action, configure Adaptive Forms with a form data model. 
+> * To use error handlers with the Rule Editor's Invoke service action, configure Adaptive Forms with a form data model. 
+> * A default error handler is provided by default to display error messages on fields if the error response is in the standard schema. The default error handler can also call the custom error handler if the error response doen not comply with the standard schema.
 
+<!-- 
 Using Rule Editor, you can:
 * [Add default error handler function](#add-default-errror-handler)
 * [Add custom error handler function](#add-custom-errror-handler)
+
 
 ### Add default error handler function {#add-default-errror-handler}
 
@@ -195,7 +198,8 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 
  ![display the default error message when you add a default error handler in a form to handle error responses](/help/forms/assets/default-error-message.png)
 
- 
+-->
+
 ### Add custom error handler function {#add-custom-errror-handler}
 
 You can add a custom error handler function to perform some of the actions like:
@@ -233,13 +237,12 @@ Let's add the following code to the JavaScript file to display the response and 
             console.log("Custom Error Handler processing start...");
             console.log("response:"+JSON.stringify(response));
             console.log("headers:"+JSON.stringify(headers));
-            guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
             console.log("Custom Error Handler processing end...");
         }
         ```
 
-    To call the default error handler after the custom error handler, the following line of the sample code is used:
-        `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+   <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
+        `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->
 1. Save the `function.js` file.
 1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
 1. Add a text file as `js.txt`. The file contains:
