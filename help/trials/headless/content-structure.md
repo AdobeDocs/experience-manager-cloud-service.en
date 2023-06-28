@@ -37,7 +37,7 @@ For the example, you create a model that represents the data structure of a trip
    * **Model Title** - A brief label of the model and usually indicates the purpose of the model. You can call the new model `Adventure`.
    * **Enable model** - This option is checked by default and must be checked to be able to create Content Fragments based on this model.
 
-1. After the mandatory fields are populated, click **Create** at the top-left to create the model. 
+1. After the mandatory fields are populated, click **Create** at the top-right to create the model. 
 
 1. The **Success** dialog box confirms that the model was created. Click **Open** in the dialog box so you can open your new Content Fragment Model in the editor in a new tab. Then continue to the next step to adding data fields to your model.
 

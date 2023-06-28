@@ -68,4 +68,4 @@ There are a number of limitations to using custom domain names with AEMaaCS.
 * The same domain name can not be used on more than one environment.
 * Only one domain name can be added at a time.
 * AEM as a Cloud Service does not support wildcard domains such as `*.example.com`.
-* Before adding a custom domain name, a valid SSL certificate that contains the custom domain name (wildcard certificates are valid) must be installed for your program. Please refer to [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) to learn more.
+* Before adding a custom domain name, a valid SSL certificate that contains the custom domain name (wildcard certificates are valid) must be installed for your program. See [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) to learn more.

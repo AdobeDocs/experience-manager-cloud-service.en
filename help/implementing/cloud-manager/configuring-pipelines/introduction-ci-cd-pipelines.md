@@ -11,7 +11,7 @@ Learn about Cloud Manager's CI/CD pipelines and how they can be used to efficien
 
 ## Introduction {#introduction}
 
-A CI/CD pipeline in Cloud Manager is a mechanism to build code from a source repository and deploy it to an environment. A pipeline can be triggered by an event, such as a pull request from a source code repository (i.e. a code change), or on a regular schedule to match a release cadence.
+A CI/CD pipeline in Cloud Manager is a mechanism to build code from a source repository and deploy it to an environment. A pipeline can be triggered by an event, such as a pull request from a source code repository (that is, a code change), or on a regular schedule to match a release cadence.
 
 To configure a pipeline, you must:
 
@@ -134,7 +134,7 @@ To learn how to configure front-end pipelines, please refer to the following doc
 
 With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
 
-Please refer to the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
+See [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
 
 ### Configuring Full-Stack Pipelines {#configure-full-stack}
 
