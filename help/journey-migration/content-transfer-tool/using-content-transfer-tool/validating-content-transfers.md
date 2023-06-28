@@ -109,7 +109,7 @@ EXTRACTION: Number of nodes extracted: 4635
 INGESTION: Number of nodes ingested: 0
 ----------------------------------------------------------
 Validation failed. However, the following nodes may already be present in the target environment.
-Please refer to our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
+See our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
 There are 4635 entries present in the extraction digest that are missing from the ingestion digest.
 /content/dam/bruce
 /content/dam/bruce-assets
@@ -121,7 +121,7 @@ Migration validation took 0 minutes
 
 The above failure example was achieved by running an ingestion, and then re-running the same ingestion again with Wipe disabled, such that no nodes were involved during ingestion — everything was already present on the target.
 
-In addition to being included in the ingestion log, the validation report can also be accessed from the **Ingestion Jobs** user interface in Cloud Acceleration Manager. To do so, click on the three dots (**...**)  then click on **Validation report** in the drop down to view the validation report. 
+In addition to being included in the ingestion log, the validation report can also be accessed from the **Ingestion Jobs** user interface in Cloud Acceleration Manager. To do so, click on the three dots (**...**)  then click on **Validation report** in the drop-down to view the validation report. 
 
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
@@ -132,7 +132,7 @@ See [User Mapping and Principal Migration](/help/journey-migration/content-trans
 
 After the extraction and ingestion are successfully completed, a summary and report of the principal migration is available. This information can be used to validate which users and groups were migrated successfully, and, perhaps, to determine why some were not.
 
-To view this information, go to Cloud Acceleration Manager. Click on your project card and click on the Content Transfer card. Navigate to **Ingestion Jobs** and locate the ingestion that you want to verify. Click on the three dots (**...**) for that ingestion, then click on **View principal summary** in the drop down.
+To view this information, go to Cloud Acceleration Manager. Click on your project card and click on the Content Transfer card. Navigate to **Ingestion Jobs** and locate the ingestion that you want to verify. Click on the three dots (**...**) for that ingestion, then click on **View principal summary** in the drop-down.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
@@ -150,7 +150,7 @@ You will see a dialog with the summary information. Use the help icons to read a
 
 The first step is to determine if ingestion really did fail, or if the extracted content is already present on the target environment. This can occur if an ingestion is repeated with the **Wipe existing content on Cloud instance before ingestion** option disabled.
 
-To verify, choose a path from the validation report and check if it is present on the target environment. If this is a publish environment, you may be limited to checking pages and assets directly. Please open a ticket with Customer Care if you need assistance with this step.
+To verify, choose a path from the validation report and check if it is present on the target environment. If this is a publish environment, you may be limited to checking pages and assets directly. Open a ticket with Customer Care if you need assistance with this step.
 
 ### The node count is lower than I was expecting. Why is that? {#node-count-lower-than-expected}
 

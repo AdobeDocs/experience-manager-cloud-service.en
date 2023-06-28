@@ -104,7 +104,7 @@ If the Assets REST API is used within an environment without specific authentica
 
 >[!NOTE]
 >
->For further information see:
+>For more information, see:
 >
 >* CORS/AEM explained
 >* Video - Developing for CORS with AEM
@@ -115,7 +115,7 @@ In environments with specific authentication requirements, OAuth is recommended.
 
 Content Fragments are a specific type of Asset, see Working with Content Fragments.
 
-For further information about features available through the API see:
+For more information about features available through the API see:
 
 * The Assets REST API (Additional Resources) 
 * Entity Types, where the features specific to each supported type (as relevant to Content Fragments) are explained 
@@ -131,7 +131,7 @@ The response will contain paging information as part of the `properties` section
 
 >[!NOTE]
 >
->Paging is typically applied on container entities (i.e. folders or assets with renditions), as it relates to the children of the requested entity.
+>Paging is typically applied on container entities (that is, folders or assets with renditions), as it relates to the children of the requested entity.
 
 #### Example: Paging {#example-paging}
 
@@ -186,7 +186,7 @@ Content fragments:
 * Do not expose any binary data.
 * Are completely contained in the JSON output (within the `properties` property).
 
-* Are also considered atomic, i.e. the elements and variations are exposed as part of the fragment's properties vs. as links or child entities. This allows for efficient access to the payload of a fragment.
+* Are also considered atomic, that is, the elements and variations are exposed as part of the fragment's properties vs. as links or child entities. This allows for efficient access to the payload of a fragment.
 
 ### Content Models and Content Fragments {#content-models-and-content-fragments}
 

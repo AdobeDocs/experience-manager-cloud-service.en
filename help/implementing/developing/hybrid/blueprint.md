@@ -43,7 +43,7 @@ Each items present in the model contains a `:type` field that exposes an AEM res
 
 #### Dynamic Model to Component Mapping {#dynamic-model-to-component-mapping}
 
-For details about how the dynamic model to component mapping occurs in the Javascript SPA SDK for AEM see the article [Dynamic Model to Component Mapping for SPAs](model-to-component-mapping.md).
+For details about how the dynamic model to component mapping occurs in the JavaScript SPA SDK for AEM see the article [Dynamic Model to Component Mapping for SPAs](model-to-component-mapping.md).
 
 ### Framework-Specific Layer {#framework-specific-layer}
 
@@ -100,7 +100,7 @@ The following entities should be implemented in accordance with the guidelines s
 
 Project components must delegate access to the fragments of a model to a Model Provider. The Model Provider is then in charge of listening for changes made to the specified fragment of the model and return the updated model to the delegating component.
 
-To do this, the Model Provider must register to the [`PageModelManager`](#pagemodelmanager). Then when a change occurs it receives and and pass the updated data to the delegating component. By convention, the property made available to the delegating component that will carry the fragment of model is named `cqModel`. The implementation is free to provide this property to the component but should consider aspects such as the integration with framework architecture, discoverability, and ease of use.
+To do this, the Model Provider must register to the [`PageModelManager`](#pagemodelmanager). Then when a change occurs it receives and pass the updated data to the delegating component. By convention, the property made available to the delegating component that will carry the fragment of model is named `cqModel`. The implementation is free to provide this property to the component but should consider aspects such as the integration with framework architecture, discoverability, and ease of use.
 
 ### The Component HTML Decorator {#the-component-html-decorator}
 

@@ -13,7 +13,7 @@ hidefromtoc: yes
 
 <!-- Alexandru: drafting this for now
 
-NOTE: "LEGACY" for user mapping includes everything before (i.e. not including) 2.0.16 of CTT.
+NOTE: "LEGACY" for user mapping includes everything before (that is, not including) 2.0.16 of CTT.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
@@ -26,13 +26,13 @@ NOTE: "LEGACY" for user mapping includes everything before (i.e. not including) 
 
 ## Introduction {#introduction}
 
-As part of the transition journey to Adobe Experience Manager (AEM) as a Cloud Service, you need to move users and groups from your existing AEM system to AEM as a Cloud Service. This is done by the Content Transfer Tool. 
+As part of the transition journey to Adobe Experience Manager (AEM) as a Cloud Service, you must move users and groups from your existing AEM system to AEM as a Cloud Service. This migration is done by the Content Transfer Tool. 
 
-A major change to AEM as a Cloud Service is the fully integrated use of Adobe IDs for accessing the author tier.  This requires use of the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) for managing users and user groups. The user-profile information is centralized in the Adobe Identity Management System (IMS) that provides single-sign-on across all Adobe cloud applications. For more details, refer to [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). Because of this change, existing users and groups need to be mapped to their IMS IDs to avoid duplicate users and groups on the Cloud Service author instance.
+A major change to AEM as a Cloud Service is the fully integrated use of Adobe IDs for accessing the author tier. This integration requires use of the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) for managing users and user groups. The user-profile information is centralized in the Adobe Identity Management System (IMS) that provides single sign-on across all Adobe cloud applications. For more details, see [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=en#identity-management). Because of this change, existing users and groups must be mapped to their IMS IDs to avoid duplicate users and groups on the Cloud Service author instance.
 
 ## User Mapping Tool {#mapping-tool}
 
-The Content Transfer Tool (without User Mapping) will migrate any users and groups associated with the content being migrated. The User Mapping Tool is a part of Content Transfer Tool, and its sole purpose is to modify the users so that they can be recognized correctly by IMS, the single-sign-on functionality used by AEM as a Cloud Service. Once these modifications are done, the Content Transfer Tool migrates the specified content's users and groups as usual.
+The Content Transfer Tool (without User Mapping) migrates any users and groups associated with the content being migrated. The User Mapping Tool is a part of Content Transfer Tool. Its sole purpose is to edit the users so that they are recognized correctly by IMS, the single sign-on functionality used by AEM as a Cloud Service. After these modifications are done, the Content Transfer Tool migrates the specified content's users and groups as usual.
 
 ### What's Next {#whats-next}
 
