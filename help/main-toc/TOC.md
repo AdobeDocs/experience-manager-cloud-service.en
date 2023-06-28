@@ -67,6 +67,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2023 {#2023}
+      + [Maintenance Release Notes for 2023.6.0](/help/release-notes/maintenance/2023/2023.6.0.md)
       + [Maintenance Release Notes for 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
       + [Maintenance Release Notes for 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
       + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
@@ -494,6 +495,23 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [HTTP2 Delivery of Content FAQ](/help/assets/dynamic-media/http2faq.md)
     + [Flash Viewers End-of-Life](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+  
++ Working with Assets view {#assets-view}
+  + [Getting started](/help/assets/get-started-assets-view.md)
+  + [My Workspace](/help/assets/my-workspace-assets-view.md)
+  + [Supported file types and use cases](/help/assets/supported-file-formats-assets-view.md)
+  + [View assets](/help/assets/navigate-assets-view.md)
+  + [Upload and add assets](/help/assets/add-delete-assets-view.md)
+  + [Search and discover assets](/help/assets/search-assets-view.md)
+  + [Asset management tasks](/help/assets/manage-organize-assets-view.md)
+  + [Edit images](/help/assets/edit-images-assets-view.md)
+  + [Manage asset metadata](/help/assets/metadata-assets-view.md)
+  + [Share assets](/help/assets/share-links-for-assets-view.md)
+  + [Manage collections](/help/assets/manage-collections-assets-view.md)
+  + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
+  + [Manage reports](/help/assets/manage-reports-assets-view.md)
+  + [Manage tags](/help/assets/tagging-management-assets-view.md)
+
   + Integration with Adobe Workfront {#integrations}
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
@@ -569,6 +587,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Apply inline CSS styles to individual Adaptive Form components](/help/forms/inline-style-adaptive-forms.md)
       + Add rules and use expressions in an Adaptive Form {#add-rules-and-use-expressions-in-an-adaptive-form}
         + [Add rules to an Adaptive Form](/help/forms/rule-editor.md)
+        + [Add custom error handler using Rule Editor's Invoke service](/help/forms/add-custom-error-handler-adaptive-forms.md)
       + Use [!DNL Adobe Sign] {#use-adobe-sign}
         + [Use Adobe Sign to e-sign an Adaptive Form](/help/forms/working-with-adobe-sign.md)
       + Configure Submit Actions and metadata submission {#configure-submit-actions-and-metadata-submission}
