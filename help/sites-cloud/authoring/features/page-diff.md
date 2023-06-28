@@ -35,7 +35,7 @@ Regardless of the content being compared, the presentation of the diff remains t
 * The content selected when you started the diff is displayed on the left (the diff entry point).
 * The compare-to content is displayed on the right (what the selected content is compared against).
 
-For example if comparing versions, the current version is displayed on the left and the previous version is displayed on the right.
+For example, if comparing versions, the current version is displayed on the left and the previous version is displayed on the right.
 
 The source of both pages is clearly displayed in the header bar at the top of the browser window.
 

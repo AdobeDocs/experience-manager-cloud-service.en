@@ -48,7 +48,7 @@ Typically, the `TagID` is a shorthand `TagID` starting with the namespace or it 
 
 When content is tagged, if it does not yet exist, the [`cq:tags`](#cq-tags-property) property is added to the content node and the `TagID` is added to the property's `String` array value.
 
-The `TagID` consists of a [namespace](#tag-namespace) followed by the local `TagID`. [Container tags](#container-tags) have subtags that represent a hierarchical order in the taxonomy. Subtags can be used to reference tags same as any local `TagID`. For example tagging content with `fruit` is allowed, even if it is a container tag with subtags, such as `fruit/apple` and `fruit/banana`.
+The `TagID` consists of a [namespace](#tag-namespace) followed by the local `TagID`. [Container tags](#container-tags) have subtags that represent a hierarchical order in the taxonomy. Subtags can be used to reference tags same as any local `TagID`. For example, tagging content with `fruit` is allowed, even if it is a container tag with subtags, such as `fruit/apple` and `fruit/banana`.
 
 ### Taxonomy Root Node {#taxonomy-root-node}
 

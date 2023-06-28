@@ -82,7 +82,7 @@ The full screen text editor provides:
 
 ### Actions {#actions}
 
-The following actions are also available (for all the [formats](#formats)) when the full-screen editor (i.e. multi-line text) is open:
+The following actions are also available (for all the [formats](#formats)) when the full-screen editor (that is, multi-line text) is open:
 
 * Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text,](#plain-text) [Markdown](#markdown))
 
@@ -421,7 +421,7 @@ To rename an existing variation:
 
 1. Open your fragment and select **Variations** from the side panel.
 1. Select the required variation.
-1. Select **Rename** from the **Actions** drop down.
+1. Select **Rename** from the **Actions** drop-down.
 
 1. Enter the new **Title** and/or **Description** in the resulting dialog box.
 
@@ -437,7 +437,7 @@ To delete an existing variation:
 
 1. Open your fragment and select **Variations** from the side panel.
 1. Select the required variation.
-1. Select **Delete** from the **Actions** drop down.
+1. Select **Delete** from the **Actions** drop-down.
 
 1. Confirm the **Delete** action in the dialog.
 
@@ -465,7 +465,7 @@ When editing a variation you have access to the action for synchronizing the cur
 
 1. Select a specific variation, then the appropriate synchronization action from either:
 
-   * the **Actions** drop down selector - **Sync current element with master**
+   * the **Actions** drop-down selector - **Sync current element with master**
 
       ![synchronizing with master](assets/cfm-variations-11a.png)
 

@@ -13,7 +13,7 @@ The ContextHub Diagnostics page provides information about the stores and UI mod
 
 >[!NOTE]
 >
->In order for diagnostic information to be returned, debug mode must be enabled, otherwise the diagnostics page is blank. Please see [this document](configuring-contexthub.md#debugging-contexthub) for details on how to enable debug mode.
+>In order for diagnostic information to be returned, debug mode must be enabled, otherwise the diagnostics page is blank. See [this document](configuring-contexthub.md#debugging-contexthub) for details on how to enable debug mode.
 
 ## Stores {#stores}
 
@@ -46,8 +46,8 @@ The Clientlibs section lists all of the [client library folders](/help/implement
 The URLs section contains links to ContextHub features:
 
 * **Configuration editor:** Opens the [ContextHub Configuration page](configuring-contexthub.md) where you can configure stores, UI modes, and UI modules.
-* **Configuration of ContextHub modules:** Opens the `/etc/cloudsettings/default/contexthub.config.kernel.js` file, which contains the Javascript object representation of the ContextHub store configurations.
-* **Configuration of ContextHub UI:** Opens the `/etc/cloudsettings/default/contexthub.config.ui.js` file, which contains the Javascript object representation of the ContextHub UI mode configurations.
+* **Configuration of ContextHub modules:** Opens the `/etc/cloudsettings/default/contexthub.config.kernel.js` file, which contains the JavaScript object representation of the ContextHub store configurations.
+* **Configuration of ContextHub UI:** Opens the `/etc/cloudsettings/default/contexthub.config.ui.js` file, which contains the JavaScript object representation of the ContextHub UI mode configurations.
 * **kernel.js:** Opens the `/etc/cloudsettings/default/contexthub.kernel.js` file, which contains the source code of the client libraries that implement the ContextHub framework, the segment engine, and store types.
 * **ui.js:** Opens the `/etc/cloudsettings/default/contexthub.ui.js` file, which contains the source code of the client libraries that implement the ContextHub UI and UI module types.
 * **style.css:** Opens the `/etc/cloudsettings/default/contexthub.styles.css` file, which contains the CSS styles for the ContextHub UI and UI modules.

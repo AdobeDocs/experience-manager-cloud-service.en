@@ -158,7 +158,7 @@ Your New Relic One account is attached to a primary Adobe-maintained account and
 * One application for the publish service per environment (including Golden Publish)
 * One application for the preview service per environment
 
-Please note:
+Note:
 
 * Each application uses one license key.
 * AEM as a Cloud Service environments report to only one New Relic One account.

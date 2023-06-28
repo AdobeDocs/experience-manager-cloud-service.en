@@ -74,7 +74,7 @@ Your translated headless content is now published! It can now be accessed and co
 >
 >You can select multiple items (that is, multiple language folders) when publishing so you can publish multiple translations at one time.
 
-There are additional options when publishing your content, such as scheduling a publication time, which are beyond the scope of this journey. Please see the [Additional Resources](#additional-resources) section at the end of the document for more information.
+There are additional options when publishing your content, such as scheduling a publication time, which are beyond the scope of this journey. See the [Additional Resources](#additional-resources) section at the end of the document for more information.
 
 ## Updating Your Translated Content {#updating-translations}
 

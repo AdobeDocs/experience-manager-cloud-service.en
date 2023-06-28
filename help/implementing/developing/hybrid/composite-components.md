@@ -35,7 +35,7 @@ The following sections give examples of implementing each case using the card co
 
 ### The component does not exist in your AEM project. {#component-does-not-exist}
 
-Start by creating the components that will make up the composite component, i.e. components for the image and its text.
+Start by creating the components that will make up the composite component, that is, components for the image and its text.
 
 1. Create the text component in your AEM project.
 1. Add the corresponding `resourceType` from the project in the component's `editConfig` node.
@@ -112,7 +112,7 @@ function Home() {
 }
 ```
 
-This will display an empty placeholder for a text and an image in the editor. When entering values for these using the editor, they are stored at the specified page path i.e `/content/wknd-spa/home`  at the root level with the names specified in `itemPath`.
+This will display an empty placeholder for a text and an image in the editor. When entering values for these using the editor, they are stored at the specified page path that is, `/content/wknd-spa/home`  at the root level with the names specified in `itemPath`.
 
 ![Composite card component in the editor](assets/composite-card.png)
 
