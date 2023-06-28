@@ -45,7 +45,7 @@ An index definition can fall into one of the following categories:
 
 2. Customization of an out-of-the-box index. These are indicated by appending `-custom-` followed by a numerical identifier to the original index name. For example: `/oak:index/damAssetLucene-8-custom-1`. 
 
-3. Fully custom index: It is possible to create an entirely new index from scratch. These custom indexes must have a prefix to avoid naming conflicts. For instance: `/oak:index/acme.product-1-custom-2`. In this case, the prefix is `acme.`
+3. Fully custom index: It is possible to create an entirely new index from scratch. Their name must have a prefix to avoid naming conflicts. For instance: `/oak:index/acme.product-1-custom-2`, where the prefix is `acme.`
 
 A complete set of guidelines is in the [Preparing the New Index Definition](#preparing-the-new-index-definition-preparing-the-new-index-definition) section. 
 
@@ -53,13 +53,15 @@ A complete set of guidelines is in the [Preparing the New Index Definition](#pre
 
 >[!NOTE]
 >
->If customizing an out-of-the-box index, for example `damAssetLucene-8`, please copy the latest out-of-the-box index definition from a *Cloud Service environment* using the CRX DE Package Manager (`/crx/packmgr/`) . Rename it to `damAssetLucene-8-custom-1` (or higher), and add your customizations inside the XML file. This ensures that required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-8/tika` is required in the customized index of the cloud service. It doesn't exist on the Cloud SDK.
+>If customizing an out-of-the-box index, for example `damAssetLucene-8`, please copy the latest out-of-the-box index definition from a *Cloud Service environment* using the CRX DE Package Manager (`/crx/packmgr/`) . Rename it to `damAssetLucene-8-custom-1` (or higher), and add your customizations inside the XML file. This ensures that the required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-8/tika` is required in the customized index of the cloud service. It doesn't exist on the Cloud SDK.
 
-You need to prepare a new index definition package that contains the actual index definition, following this naming pattern:
+For customizations of an OOTB index prepare a new index definition package that contains the actual index definition that follows this naming pattern:
 
-`<indexName>[-<productVersion>]-custom-<customVersion>`
+`<indexName>-<productVersion>-custom-<customVersion>`
 
-Only fully custom indexes must start with a prefix.
+For a fully customizsed index, prepare a new index definition package that contains the  index definition that follows this naming pattern:
+
+`<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 
@@ -148,7 +150,7 @@ To illustrate the deployment of a customized version of the out-of-the-box index
 
 ## Project Configuration
 
-It is recommended to utilize the latest version (1.3.2) of the Jackrabbit `filevault-package-maven-plugin`. To integrate this plugin, the below configurations must be added to the top-level `pom.xml` file if they are not already present:
+We strongly recommend to use `version >= 1.3.2` of the Jackrabbit `filevault-package-maven-plugin`. To incorporate it into your project, the below configurations must be added to the top-level `pom.xml` file if they are not already present:
 
 
 ```xml
@@ -322,7 +324,7 @@ The new version of the application uses the following (changed) configuration:
 
 ### Undoing a Change {#undoing-a-change}
 
-Sometimes, a change in an index definition needs to be reverted. The reasons could be that a change was made by mistake, or a change is no longer needed. For example, the index definition `damAssetLucene-8-custom-3` was created by mistake and is already deployed. Because of that you may want to revert to the previous index definition `damAssetLucene-8-custom-2`. To do that, you need to add a new index called `damAssetLucene-8-custom-4` that contains the definition of the previous index, `damAssetLucene-8-custom-2`.
+At times, it becomes necessary to undo a modification in an index definition. This could occur due to an inadvertent error or that the modification is no longer required. Take, for instance, the index definition `damAssetLucene-8-custom-3,` which was mistakenly created and has already been deployed. Consequently, you want to revert back to the previous index definition, `damAssetLucene-8-custom-2.` To accomplish this, you need to introduce a new index named `damAssetLucene-8-custom-4` that incorporates the definition from the prior index, `damAssetLucene-8-custom-2.`
 
 ### Removing an Index {#removing-an-index}
 
