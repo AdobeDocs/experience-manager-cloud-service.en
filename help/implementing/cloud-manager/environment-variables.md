@@ -82,7 +82,7 @@ After you have created environment variables, you can update them using the **Ad
 
    ![Edit variable](assets/edit-variable.png)
 
-1. Once you've made all of the required configuration changes, select **Save**.
+1. After you have made all of the required configuration changes, select **Save**.
 
 [As when adding variables,](#add-variables) an indicator with the status **Updating** is shown at the top of the table and next to the newly updated variable(s) to indicate that the environment is being updated with the configuration. After completion, the updated environment variables are visible in the table.
 
@@ -122,8 +122,8 @@ However environment variables can not be used in `IfDefine` directives.
 
 ### OSGi Configurations {#osgi}
 
-Both regular environment variables and secrets can be used in [OSGi configurations.](/help/implementing/deploying/configuring-osgi.md)
+Both regular environment variables and secrets can be used in [OSGi configurations](/help/implementing/deploying/configuring-osgi.md).
 
 ### Pipeline Variables {#pipeline}
 
-In addition to environment variables, there are also pipeline variables, which are exposed during the build phase. [Learn more about pipeline variables here.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
+In addition to environment variables, there are also pipeline variables, which are exposed during the build phase. [Learn more about pipeline variables here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).

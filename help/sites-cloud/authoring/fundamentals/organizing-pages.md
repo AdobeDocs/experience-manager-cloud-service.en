@@ -381,7 +381,7 @@ The status of asynchronous jobs can be checked in the [**Async Jobs Status** das
 
 >[!NOTE]
 >
->For more information about asynchronous job processing and how to configure the limit for page move/rename actions, please see the [Asynchronous Jobs](/help/operations/asynchronous-jobs.md) document in the Operations user guide.
+>For more information about asynchronous job processing and how to configure the limit for page move/rename actions, see [Asynchronous Jobs](/help/operations/asynchronous-jobs.md) document in the Operations user guide.
 
 ### Deleting a Page {#deleting-a-page}
 
@@ -399,7 +399,7 @@ The status of asynchronous jobs can be checked in the [**Async Jobs Status** das
    ![Delete dialog](/help/sites-cloud/authoring/assets/delete-page.png)
 
     * **Do you want to archive pages before deletion?** - If checked, versions of the pages selected for deletion are created on deletion.
-      * [Versions can be restored at a later date.](/help/sites-cloud/authoring/features/page-versions.md)
+      * [Versions can be restored at a later date](/help/sites-cloud/authoring/features/page-versions.md).
       * Pages deleted without previous versions can not be restored.
     * **Cancel** to abort the action
     * **Delete** to confirm the action:

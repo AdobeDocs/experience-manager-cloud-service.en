@@ -11,7 +11,7 @@ Create a configuration for the [Microsoft Translator](https://www.microsoft.com/
 
 >[!TIP]
 >
->If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ The following procedure creates a Microsoft Translator configuration.
 1. Tap or click the **Create** button.
 1. Define your configuration.
    1. Select **Microsoft Translator** in the drop-down.
-   1. Type a title for your configuration. The title identifies the configuration in the Cloud Services console as well as in page property drop-down lists.
+   1. Type a title for your configuration. The title identifies the configuration in the Cloud Services console and in page property drop-down lists.
    1. Optionally, type a name to use for the repository node that stores the configuration.
 
    ![Create translation configuration](../assets/create-translation-config.png)

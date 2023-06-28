@@ -15,7 +15,7 @@ AEM allows you to easily personalize your users' experiences. It also allows you
 
 ## Accessing Segments {#accessing-segments}
 
-The [Audiences](audiences.md) console is used to manage segments for ContextHub as well as audiences for your Adobe Target account. This documentation covers managing segments for ContextHub.
+The [Audiences](audiences.md) console is used to manage segments for ContextHub and audiences for your Adobe Target account. This documentation covers managing segments for ContextHub.
 
 To access your segments, in global navigation select **Navigation &gt; Personalization &gt; Audiences**. Select your configuration (for example, WKND Site) to see your segments:
 
@@ -86,7 +86,7 @@ To define your new segment:
 
    ![Add segment](../assets/contexthub-create-segment.png)
 
-1. In the **New ContextHub Segment**, enter a title for the segment as well as a boost value if required and then tap or click **Create**.
+1. In the **New ContextHub Segment**, enter a title for the segment and a boost value if required and then tap or click **Create**.
 
    ![New segment](../assets/contexthub-new-segment.png)
 
@@ -194,7 +194,7 @@ If you have many segments, they can become hard to manage as a flat list. In suc
 1. Provide a **Title** and a **Name** for your folder.
    * The **Title** should be descriptive.
    * The **Name** becomes the node name in the repository.
-      * It is automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/implementing/developing/introduction/naming-conventions.md)
+      * It is automatically generated based on the title and adjusted according to [AEM naming conventions](/help/implementing/developing/introduction/naming-conventions.md).
       * It can be adjusted if necessary.
 
     ![Create folder](../assets/contexthub-create-folder.png)
@@ -265,7 +265,7 @@ For example, our simple segment definition to identify users in Basel is based o
 
 Or if it is not resolved:
 
-![Segment that doesn't resolve](../assets/contexthub-segment-doesnt-resolve.png)
+![Segment that does not resolve](../assets/contexthub-segment-doesnt-resolve.png)
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ Or if it is not resolved:
 
 Such tests can also be performed on content pages and in combination with targeted content and related **Activities** and **Experiences**.
 
-If you have set up an activity and experience, you can easily test your segment with the activity. For details about setting up an activity, please see the related [documentation on authoring targeted content](targeted-content.md).
+If you have set up an activity and experience, you can easily test your segment with the activity. For details about setting up an activity, see the [documentation on authoring targeted content](targeted-content.md).
 
 1. In editing mode of a page where you have set up targeted content, you can see that the content is targeted via arrow icon on the content.
 1. Switch to preview mode and using the context hub, switch to a persona that does not match the segmentation configured for the experience.

@@ -12,7 +12,7 @@ The integration of non-Adobe Commerce solution is a common scenario for CIF. Thi
 
 The overall architecture is as follows:
 
-![AEM non-Magento/3rd Party Architecture Overview](../assets//AEM_nonMagento_Architecture.png)
+![AEM non-Magento/Third-Party Architecture Overview](../assets//AEM_nonMagento_Architecture.png)
 
 The purpose of this integration layer is to map 3rd-party APIs and schemas against the supported Adobe Commerce GraphQL APIs and schemas outside of the Experience Manager. Thanks to this encapsulation, the integration logic, and systems can get updated without changing code inside the Experience Manager.
 

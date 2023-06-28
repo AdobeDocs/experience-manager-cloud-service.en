@@ -22,7 +22,7 @@ The onboarding for AEM Commerce as a Cloud Service is a two-step process:
 
 The first onboarding step is done by Adobe. For more details on pricing and provisioning, you must reach out to your sales representative.
 
-After you are provisioned with the CIF add-on, it is applied to any existing Cloud Manager programs. In case, you do not have a Cloud Manager Program, you must create one. For more details, refer to [Set up your Program](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
+After you are provisioned with the CIF add-on, it is applied to any existing Cloud Manager programs. In case, you do not have a Cloud Manager Program, you must create one. For more details, see [Set up your Program](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
 
 The second step is self-service for each AEM as a Cloud Service environment. There are some additional configurations that you must do after the initial provisioning of the CIF add-on.
 

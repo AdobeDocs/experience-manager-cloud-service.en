@@ -8,7 +8,7 @@ exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
 This section describes how to run the pipeline and deploy your code for your program in Cloud Manager.
 
 >[!NOTE]
->Refer to [Configuring your CI-CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) and [Deploy your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) to learn how you can run the pipeline for your program in Cloud Manager.
+>See [Configuring your CI-CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) and [Deploy your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) to learn how you can run the pipeline for your program in Cloud Manager.
 
 ## Objective {#objective}
 
@@ -29,14 +29,14 @@ The following section describes how to configure the CI/CD pipeline and deploy y
 1. Select your options from the **Setup Pipeline** wizard. Click **Save**.
 
    >[!NOTE]
-   >To learn about the options in the Setup Pipeline wizard, refer to [Configuring the Pipeline Settings from Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) for more details.
+   >To learn about the options in the Setup Pipeline wizard, see [Configuring the Pipeline Settings from Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) for more details.
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. After setup pipeline is complete, the call-to-action card is updated.
 
    >[!NOTE]
-   >To learn about the stages in deployment in Cloud Manager, refer to [Deploying your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) for more details.
+   >To learn about the stages in deployment in Cloud Manager, see [Deploying your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) for more details.
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 
