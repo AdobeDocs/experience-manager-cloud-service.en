@@ -495,7 +495,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Flash Viewers End-of-Life](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
   
-+ Working with Assets view 
++ Working with Assets view {#assets-view}
   + [Getting started](/help/assets/get-started-assets-view.md)
   + [My Workspace](/help/assets/my-workspace-assets-view.md)
   + [Supported file types and use cases](/help/assets/supported-file-formats-assets-view.md)
