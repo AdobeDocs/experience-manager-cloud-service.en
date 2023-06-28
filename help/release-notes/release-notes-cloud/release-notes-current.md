@@ -40,9 +40,11 @@ The new Assets view is now available in Experience Manager Assets. Assets View p
 
 **Search experience enhancements**
 
+Experience Manager Assets now empowers you to do more from the search results user interface: You can now:
+
   * Perform search within the current repository location by default instead of searching for the keyword in the entire repository.
 
-  * Ability to navigate to the folder location for assets that display in the search results.
+  * Navigate to the folder location for assets that display in the search results.
 
 **Thumbnail previews for 3D assets**
 
@@ -50,7 +52,9 @@ The new Assets view is now available in Experience Manager Assets. Assets View p
 
 **Link share configuration**
 
-Administrators now have the ability to select the user groups that can use the **[!UICONTROL Share Link]** capability. The configuration also allows administrators to set the default validity period for all shared links and control the display of the [!UICONTROL Include Renditions] and [!UICONTROL Include Originals] fields.
+A new improved user experience for creating link shares along with a brand new set of configurations that let administrators customize the default behavior of this capability for your users.
+
+![Tagging Management](/help/assets/assets/config-email-service.png)
 
 ### New features in Assets view {#assets-view-features}
 
