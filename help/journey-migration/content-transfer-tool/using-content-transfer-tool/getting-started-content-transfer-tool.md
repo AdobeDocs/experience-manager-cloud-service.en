@@ -15,7 +15,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
-The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via [Package Manager](/help/implementing/developing/tools/package-manager.md) on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version. For more details on the latest version, refer to [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via [Package Manager](/help/implementing/developing/tools/package-manager.md) on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version. For more details on the latest version, see [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 Only version 2.0.0 and higher is supported, and it is advisable to use the most recent version.
 
@@ -47,7 +47,7 @@ Understanding SSL/TLS connection problems can sometimes be difficult. To trouble
    ![image](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
 >[!NOTE]
->This flag is only for debugging SSL issues. Please ensure that the flag is disabled before running the extraction, as it may require a large amount of disk space. This could potentially fill the drive capacity and cause the extraction process to fail.
+>This flag is only for debugging SSL issues. Ensure that the flag is disabled before running the extraction, as it may require a large amount of disk space. This could potentially fill the drive capacity and cause the extraction process to fail.
 
 ## Running the Content Transfer Tool {#running-tool}
 
@@ -96,7 +96,7 @@ The following section applies to the new version of the Content Transfer Tool. F
 
    >[!NOTE]
    >
-   >The extraction key enables your source AEM environment to securely connect to the migration set. Please treat this key with the same care that you would a password, and never share it over an unsecured medium like email.
+   >The extraction key enables your source AEM environment to securely connect to the migration set. Treat this key with the same care that you would a password, and never share it over an unsecured medium like email.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
 
@@ -116,11 +116,11 @@ To populate the migration set you created in the Cloud Acceleration Manager, you
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. Paste the extraction key that was copied from CAM earlier into the Extraction key input field of **Create Migration Set** form. After you do this, the Migration set name and Cloud Acceleration Manager (CAM) Project name fields are automatically populated. These should match the Migration Set name in CAM and the CAM project name that you created. You can now add content paths. After you've added content paths, save the migration set. You can run the extraction with either versions included or excluded.
+1. Paste the extraction key that was copied from CAM earlier into the Extraction key input field of **Create Migration Set** form. After you do this, the Migration set name and Cloud Acceleration Manager (CAM) Project name fields are automatically populated. These should match the Migration Set name in CAM and the CAM project name that you created. You can now add content paths. After you have added content paths, save the migration set. You can run the extraction with either versions included or excluded.
 
    >[!NOTE]
    >
-   >Make sure that the extraction key is valid and is not close to its expiration. You can get this information in the **Create Migration Set** dialog after you paste the extraction key. If you get a connection error, refer to [Source Environment Connectivity](#source-environment-connectivity) for more information.
+   >Make sure that the extraction key is valid and is not close to its expiration. You can get this information in the **Create Migration Set** dialog after you paste the extraction key. If you get a connection error, see [Source Environment Connectivity](#source-environment-connectivity) for more information.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 

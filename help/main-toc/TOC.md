@@ -29,8 +29,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2023 {#2023}
-      + [Release Notes for 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
+      + [Release Notes for 2023.4.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
       + [Release Notes for 2023.2.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
+      + [Release Notes for 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
     + 2022 {#2022}
       + [Release Notes for 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
       + [Release Notes for 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
@@ -67,6 +68,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2023 {#2023}
+      + [Maintenance Release Notes for 2023.6.0](/help/release-notes/maintenance/2023/2023.6.0.md)
       + [Maintenance Release Notes for 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
       + [Maintenance Release Notes for 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
       + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
@@ -494,13 +496,30 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [HTTP2 Delivery of Content FAQ](/help/assets/dynamic-media/http2faq.md)
     + [Flash Viewers End-of-Life](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+  + Working with Assets view {#assets-view}
+    + [Introduction](/help/assets/assets-view-introduction.md)
+    + [Getting started](/help/assets/get-started-assets-view.md)
+    + [My Workspace](/help/assets/my-workspace-assets-view.md)
+    + [Supported file types and use cases](/help/assets/supported-file-formats-assets-view.md)
+    + [View assets](/help/assets/navigate-assets-view.md)
+    + [Upload and add assets](/help/assets/add-delete-assets-view.md)
+    + [Search and discover assets](/help/assets/search-assets-view.md)
+    + [Asset management tasks](/help/assets/manage-organize-assets-view.md)
+    + [Edit images](/help/assets/edit-images-assets-view.md)
+    + [Manage asset metadata](/help/assets/metadata-assets-view.md)
+    + [Share assets](/help/assets/share-links-for-assets-view.md)
+    + [Manage collections](/help/assets/manage-collections-assets-view.md)
+    + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
+    + [Manage reports](/help/assets/manage-reports-assets-view.md)
+    + [Manage tags](/help/assets/tagging-management-assets-view.md)
   + Integration with Adobe Workfront {#integrations}
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
     + [Install [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
     + [Remove external dependencies for existing installations](/help/assets/remove-external-dependencies.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
-    + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)    
+    + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)  
+   
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
@@ -524,7 +543,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Integrate AEM Forms as a Cloud Service with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
       + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
       + [Embed an Adaptive Forms in an AEM Sites page](/help/forms/embed-adaptive-form-aem-sites.md)
-      + [Create or add an Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
     + Form Data Model {#use-form-data-model}
       + [Connect your data sources to Cloud Service](/help/forms/data-integration.md)
       + [Configure data sources](/help/forms/configure-data-sources.md)
@@ -535,6 +553,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
       + [Use Form Data Model](/help/forms/using-form-data-model.md)
   + Adaptive Forms {#adaptive-forms-authoring}
+    + [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
     + Authoring Adaptive Forms - Core Components {#authoring-adaptive-forms-core-components}
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
@@ -543,6 +562,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Create an Adaptive Forms - Core Components in an AEM Sites page](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
         + [Use machine translation or human translation to translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
         + [Configuring redirect page or thank you message](/help/forms/configure-redirect-page-or-thank-you-message.md)
+        + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
     + Authoring Adaptive Forms - Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -569,6 +589,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Apply inline CSS styles to individual Adaptive Form components](/help/forms/inline-style-adaptive-forms.md)
       + Add rules and use expressions in an Adaptive Form {#add-rules-and-use-expressions-in-an-adaptive-form}
         + [Add rules to an Adaptive Form](/help/forms/rule-editor.md)
+        + [Add custom error handler using Rule Editor's Invoke service](/help/forms/add-custom-error-handler-adaptive-forms.md)
       + Use [!DNL Adobe Sign] {#use-adobe-sign}
         + [Use Adobe Sign to e-sign an Adaptive Form](/help/forms/working-with-adobe-sign.md)
       + Configure Submit Actions and metadata submission {#configure-submit-actions-and-metadata-submission}
@@ -653,7 +674,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Building Product Experiences](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
   + Integrations {#integrations}
     + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-    + [3rd Party Commerce Solution](/help/commerce-cloud/integrating/third-party.md)
+    + [Third-Party Commerce Solution](/help/commerce-cloud/integrating/third-party.md)
     + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
   + AEM Storefront {#storefront}
     + [Getting Started](/help/commerce-cloud/getting-started.md)

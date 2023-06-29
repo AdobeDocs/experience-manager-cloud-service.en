@@ -36,7 +36,7 @@ To get your AEM headless application ready for launch, follow the best practices
 
 * Avoid creating queries that output more than 15kb of JSON (gzip compressed). Long JSON files are resource intensive for client application to parse.
 * Avoid more than five nested levels of fragment hierarchies. Additional levels make it hard for content authors to consider the impact of their changes.
-* Use multi-object queries instead of modeling queries with dependency hierarchies within the models. This allows more long-term flexibility to restructure JSON output without having to do a lot of content changes.
+* Use multi-object queries instead of modeling queries with dependency hierarchies within the models. This allows more long-term flexibility to restructure JSON output without having to do many content changes.
 
 ## Maximize CDN Cache-Hit Ratio {#maximize-cdn}
 
@@ -118,7 +118,7 @@ You have either already launched your first AEM Headless project or now have all
 
 ### Explore Single Page Applications {#explore-spa}
 
-The headless stores in AEM doesn't need to stop here, though. You might remember in the [Getting Started part of the journey](getting-started.md#integration-levels) we discussed briefly how AEM not only supports headless delivery and traditional full-stack models, but also can support hybrid models that combine the advantages of both.
+The headless stores in AEM does not need to stop here, though. You might remember in the [Getting Started part of the journey](getting-started.md#integration-levels) we discussed briefly how AEM not only supports headless delivery and traditional full-stack models, but also can support hybrid models that combine the advantages of both.
 
 If this kind of flexibility is something you need for your project, continue on to the optional, additional part of the journey, [How to Create Single Page Applications (SPAs) with AEM.](create-spa.md)
 

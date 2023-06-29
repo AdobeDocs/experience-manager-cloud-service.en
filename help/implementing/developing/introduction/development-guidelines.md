@@ -59,11 +59,11 @@ Alternatives that are known to work, but may require providing the dependency yo
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (not recommended as it is outdated and replaced by version 4.x)
 * [OK Http](https://square.github.io/okhttp/) (Not provided by AEM)
 
-Next to providing timeouts also a proper handling of such timeouts as well as unexpected HTTP status codes should be implemented.
+Next to providing timeouts also a proper handling of such timeouts and unexpected HTTP status codes should be implemented.
 
 ## No Classic UI Customizations {#no-classic-ui-customizations}
 
-AEM as a Cloud Service only supports the Touch UI for 3rd party customer code. Classic UI is not available for customization.
+AEM as a Cloud Service only supports the Touch UI for third-party customer code. Classic UI is not available for customization.
 
 ## No Native Binaries or Native Libraries {#avoid-native-binaries}
 
@@ -95,7 +95,7 @@ On Cloud environments, developers can download logs through Cloud Manager or use
 
 **Setting the Log Level**
 
-To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Since this is not instantaneous, be cautious about enabling verbose logs on production environments which receive a lot of traffic. In the future, it's possible that there are mechanisms to more quickly change the log level.
+To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Because this is not instantaneous, be cautious about enabling verbose logs on production environments which receive lots of traffic. In the future, it is possible that there are mechanisms to more quickly change the log level.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ The log levels are as follows:
 
 ### Thread Dumps {#thread-dumps}
 
-Thread dumps on Cloud environments are collected on an ongoing basis, but cannot be downloaded in a self-serve manner at this time. In the meanwhile, please contact AEM support if thread dumps are needed for debugging an issue, specifying the exact time window.
+Thread dumps on Cloud environments are collected on an ongoing basis, but cannot be downloaded in a self-serve manner at this time. In the meanwhile, contact AEM support if thread dumps are needed for debugging an issue, specifying the exact time window.
 
 ## CRX/DE Lite and Developer Console {#crxde-lite-and-developer-console}
 
@@ -276,8 +276,8 @@ Large MVPs can lead to errors due to the MongoDB document exceeding 16 MB, resul
 Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
 ```
 
-Please see the [Apache Oak documentation](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) for more details.
+See the [Apache Oak documentation](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) for more details.
 
 ## [!DNL Assets] development guidelines and use cases {#use-cases-assets}
 
-To learn about the development use cases, recommendations, and reference materials for Assets as a Cloud Service, see [Developer references for Assets.](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
+To learn about the development use cases, recommendations, and reference materials for Assets as a Cloud Service, see [Developer references for Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

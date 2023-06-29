@@ -27,7 +27,7 @@ To author content for an app using the Universal Editor, the app must be instrum
 
 >[!TIP]
 >
->Please see the document [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of how to configure an AEM app to work with the Universal Editor.
+>See [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of how to configure an AEM app to work with the Universal Editor.
 
 ## Sign In {#sign-in}
 
@@ -78,7 +78,7 @@ The help icon provides quick access to learning and support resources.
 
 #### Notifications {#notifications}
 
-This icon is badged with the number of currently assigned incomplete [notifications.](/help/implementing/cloud-manager/notifications.md)
+This icon is badged with the number of currently assigned incomplete [notifications](/help/implementing/cloud-manager/notifications.md).
 
 ![Notifications](assets/notifications.png)
 
@@ -90,7 +90,7 @@ Tap or click the icon representing your user to access your user settings. If yo
 
 ### The Universal Editor Header {#universal-editor-header}
 
-The Universal Editor header is always present at the top of the screen just below [the Experience Cloud header.](#experience-cloud-header) It gives you quick access to navigate to another page to edit as well as to publish the current page.
+The Universal Editor header is always present at the top of the screen just below [the Experience Cloud header.](#experience-cloud-header) It gives you quick access to navigate to another page to edit and to publish the current page.
 
 ![The Universal Editor header](assets/universal-editor-header.png)
 

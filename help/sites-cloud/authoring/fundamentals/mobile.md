@@ -13,7 +13,7 @@ Devices are grouped into the categories feature, smart, and touch according to t
 
 >[!NOTE]
 >
->To create a mobile site based on an existing standard site, create a live copy of the standard site. See [Creating Live Copies.](/help/sites-cloud/administering/msm/creating-live-copies.md)
+>To create a mobile site based on an existing standard site, create a live copy of the standard site. See [Creating Live Copies](/help/sites-cloud/administering/msm/creating-live-copies.md).
 >
 >AEM developers can create new device groups. See Creating Device Group Filters.
 

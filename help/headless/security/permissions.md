@@ -46,7 +46,7 @@ If using IMS for group membership, add the appropriate IMS Groups as members of 
 
 It is best not to modify permissions of an out of the box group directly. Instead, you can also create your own group(s) modeled after the **DAM Users** group permissions and further restrict access to different **folders** within AEM Assets.
 
-For more granular permissions use the **Permissions** console in AEM and update the path from `/content/dam` to a more specific path, i.e `/content/dam/mycontentfragments`.
+For more granular permissions use the **Permissions** console in AEM and update the path from `/content/dam` to a more specific path, that is, `/content/dam/mycontentfragments`.
 
 It may be desirable to give this group of users permissions to create and edit content fragments but not delete. To review and assign permissions for edit, but not delete see [Content Fragments - Delete Considerations](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
 

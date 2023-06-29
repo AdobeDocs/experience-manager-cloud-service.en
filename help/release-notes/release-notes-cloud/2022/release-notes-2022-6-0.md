@@ -31,7 +31,7 @@ Have a look at the June 2022 Release Overview video for a summary of the feature
 
 ### New features in [!DNL Sites] {#sites-features}
 
-* A new [user interface](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) is now available for content admins and content authors to efficiently manage (take actions such as publish, unpublish, copy, move, etc.), search/filter, and create content fragments for Headless use-cases.
+* A new [user interface](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) is now available for content admins and content authors to efficiently manage (take actions such as publish, unpublish, copy, move, and so on), search/filter, and create content fragments for Headless use-cases.
 
     ![Content Fragment Console](/help/release-notes/assets/cf-ui.png)
 
@@ -41,13 +41,13 @@ Have a look at the June 2022 Release Overview video for a summary of the feature
 
 ### New features in [!DNL Assets] {#assets-features}
 
-Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish between colors in an image and apply those as tags automatically on ingestion](/help/assets/color-tag-images.md). These tags enable enhanced Search experience, based on image color composition. You can configure the number of colors, within a range of one to forty, that are tagged to an image so that you can search for images based on those colors later.
+Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish between colors in an image and apply those as tags automatically on ingestion](/help/assets/color-tag-images.md). These tags enable enhanced Search experience, based on image color composition. You can configure the number of colors, within a range of one to 40, that are tagged to an image so that you can search for images based on those colors later.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### New features in [!DNL Forms] {#forms-features}
 
-* **[Integrate Adaptive Forms with Microsoft® Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)**: You can now configure an Adaptive Form to run a Microsoft® Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft® Power Automate to build business logics around captured data and automate customer workflows.
+* **[Integrate Adaptive Forms with Microsoft&reg; Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)**: You can now configure an Adaptive Form to run a Microsoft&reg; Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft&reg; Power Automate to build business logics around captured data and automate customer workflows.
 
 * **Wizard to create an Adaptive Form**: You can use business user friendly wizard to quickly author Adaptive Forms. The wizard provides a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form.
 
@@ -61,7 +61,7 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
  ![product cockpit properties overview](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* Improved compatibility and robustness for 3rd party connectors on I/O Runtime
+* Improved compatibility and robustness for third-party connectors on I/O Runtime
 
 * Improved support for GQL Client configuration overwrites (for example, set custom caching behavior)
 
@@ -88,11 +88,11 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 ### What is New {#what-is-new-foundation}
 
-* As mentioned in the May (2022.5.0) release notes, the "Add tree” option under the replication agent admin screen’s **Distribute** tab was removed. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) workflow.
+* As mentioned in the May (2022.5.0) release notes, the "Add tree" option under the replication agent admin screen's **Distribute** tab was removed. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) workflow.
 
 ## Cloud Manager {#cloud-manager}
 
-You can find a complete list of Cloud Manager monthly releases [here.](/help/implementing/cloud-manager/release-notes/current.md)
+You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Migration Tools {#migration-tools}
 

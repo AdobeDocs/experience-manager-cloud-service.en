@@ -17,7 +17,7 @@ For an overview of the content translation features in AEM, see [Translating Con
 
 >[!TIP]
 >
->If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 ## Connecting to a Translation Service Provider {#connecting-to-a-translation-service-provider}
 
@@ -67,7 +67,7 @@ A single configuration of the framework controls how page content and assets are
 1. Navigate to where you wish to create the configuration in your content structure. This is often based on a particular site or can be global.
 1. Provide the following information in the fields and then click or tap **Create**.:
    1. Select **Configuration Type** in the drop-down.
-   1. Enter a **Title** for your configuration. The **Title** identifies the configuration in the **Cloud Services** console as well as in page property drop-down lists.
+   1. Enter a **Title** for your configuration. The **Title** identifies the configuration in the **Cloud Services** console and in page property drop-down lists.
    1. Optionally, type a **Name** to use for the repository node that stores the configuration.
 1. In the **Edit Configuration** window, configure the properties on the **Sites** and **Assets** tabs, and then click or tap **Save &amp; Close**.
 

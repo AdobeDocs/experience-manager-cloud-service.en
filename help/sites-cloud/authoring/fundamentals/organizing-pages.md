@@ -170,7 +170,7 @@ Unless all pages have been created for you in advance, you must create a page be
 
 1. Open the Sites console (for example, `https://<host>:<port>/sites.html/content`.
 1. Navigate to the location where you want to create the new page.
-1. Open the drop down selector using **Create** in the toolbar, then select **Page** from the list:
+1. Open the drop-down selector using **Create** in the toolbar, then select **Page** from the list:
 
    ![Creating a page](/help/sites-cloud/authoring/assets/organizing-create-page.png)
 
@@ -214,7 +214,7 @@ Unless all pages have been created for you in advance, you must create a page be
 
    >[!NOTE]
    >
-   >If you create a page using a name that already exists at that location, the system will automatically generate a variation of the name by appending a number. For example if `beach` already exists, a new page becomes `beach1`.
+   >If you create a page using a name that already exists at that location, the system will automatically generate a variation of the name by appending a number. For example, if `beach` already exists, a new page becomes `beach1`.
 
 1. If you return to the console you will see your new page:
 
@@ -274,7 +274,7 @@ You can copy a page and all of its sub-pages to a new location:
 
 >[!NOTE]
 >
->If you copy the page to a location where a page with the same name as the original already exists, the system will automatically generate a variation of the name by appending a number. For example if `beach` already exists, a new page with the name `beach` becomes `beach1`.
+>If you copy the page to a location where a page with the same name as the original already exists, the system will automatically generate a variation of the name by appending a number. For example, if `beach` already exists, a new page with the name `beach` becomes `beach1`.
 
 >[!NOTE]
 >
@@ -381,7 +381,7 @@ The status of asynchronous jobs can be checked in the [**Async Jobs Status** das
 
 >[!NOTE]
 >
->For further information about asynchronous job processing and how to configure the limit for page move/rename actions, please see the [Asynchronous Jobs](/help/operations/asynchronous-jobs.md) document in the Operations user guide.
+>For more information about asynchronous job processing and how to configure the limit for page move/rename actions, see [Asynchronous Jobs](/help/operations/asynchronous-jobs.md) document in the Operations user guide.
 
 ### Deleting a Page {#deleting-a-page}
 
@@ -399,7 +399,7 @@ The status of asynchronous jobs can be checked in the [**Async Jobs Status** das
    ![Delete dialog](/help/sites-cloud/authoring/assets/delete-page.png)
 
     * **Do you want to archive pages before deletion?** - If checked, versions of the pages selected for deletion are created on deletion.
-      * [Versions can be restored at a later date.](/help/sites-cloud/authoring/features/page-versions.md)
+      * [Versions can be restored at a later date](/help/sites-cloud/authoring/features/page-versions.md).
       * Pages deleted without previous versions can not be restored.
     * **Cancel** to abort the action
     * **Delete** to confirm the action:

@@ -52,7 +52,7 @@ Before you can use the Admin Console to administer users within your team, you n
 
    ![The Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
-1. If you have access to multiple organizations, please ensure that you have logged into correct organization. To change your organization, click on the organization name from the top right corner and choose the required organization to which you need access.
+1. If you have access to multiple organizations, ensure that you have logged into correct organization. To change your organization, click the organization name from the top right corner and choose the required organization to which you need access.
 
    ![Change org](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 

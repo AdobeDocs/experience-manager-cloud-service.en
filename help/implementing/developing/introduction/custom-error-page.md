@@ -56,7 +56,7 @@ When request processing results in an exception, the Apache Sling framework (whi
   * The HTTP response code 500
   * The exception stack trace
 
-By [customizing the pages shown by the error handler](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` script can be created. However, it is only used if `HttpServletResponse.sendError(500)` is executed explicitly; i.e. from an exception catcher.
+By [customizing the pages shown by the error handler](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` script can be created. However, it is only used if `HttpServletResponse.sendError(500)` is executed explicitly; that is, from an exception catcher.
 
 Otherwise, the response code is set to 500, but the `500.jsp` script is not executed.
 
@@ -71,6 +71,6 @@ To handle 500 errors, the file name of the error handler script must be the same
 >
 >On an author instance, [CQ WCM Debug Filter](/help/implementing/deploying/configuring-osgi.md) is enabled by default. This always results in the response code 200. The default error handler responds by writing the full stack trace to the response.
 >
->For a custom error-handler, responses with code 500 are needed - so the [CQ WCM Debug Filter needs to be disabled.](/help/implementing/deploying/configuring-osgi.md) This ensures that the response code 500 is returned, which in turn triggers the correct Sling error-handler.
+>For a custom error-handler, responses with code 500 are needed - so the [CQ WCM Debug Filter needs to be disabled](/help/implementing/deploying/configuring-osgi.md). This ensures that the response code 500 is returned, which in turn triggers the correct Sling error-handler.
 >
 >On a publish instance, CQ WCM Debug Filter is **always** disabled (even if configured as enabled).

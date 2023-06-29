@@ -105,7 +105,7 @@ See the section [Queries with large results](#queries-with-large-result-sets) of
 
 To support the creation of efficient JCR queries and index definitions, the [JCR Query Cheat Sheet](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet) is available for download and use as a reference during development.
 
-It contains sample queries for QueryBuilder, XPath, and SQL-2, covering multiple scenarios which behave differently in terms of query performance. It also provides recommendations for how to build or customize Oak indexes. The content of this Cheat Sheet applies to AEM as a Cloud Service as well as AEM 6.5.
+It contains sample queries for QueryBuilder, XPath, and SQL-2, covering multiple scenarios which behave differently in terms of query performance. It also provides recommendations for how to build or customize Oak indexes. The content of this Cheat Sheet applies to AEM as a Cloud Service and AEM 6.5.
 
 ## Queries with Large Result Sets {#queries-with-large-result-sets}
 

@@ -24,7 +24,7 @@ New Relic One APM for AEM as a Cloud Service has many features.
 
 * Instrumented New Relic One APM agent that shows exact method calls with line numbers, including external dependencies and databases
 
-* Holistic performance optimization by combining key metrics from infrastructure-level monitoring as well as application (Adobe Experience Manager) monitoring
+* Holistic performance optimization by combining key metrics from infrastructure-level monitoring and application (Adobe Experience Manager) monitoring
 
 * Exposure of AEM as a Cloud Service JMX Mbeans and health checks directly within New Relic Insights metrics, allowing for deep inspection of application stack performance and health metrics.
 
@@ -78,7 +78,7 @@ Follow these steps to activate your account as a New Relic user.
 
 1. New Relic will send you an email containing a link to confirm the account.
 
-If you do not receive a confirmation email from New Relic, please see the [troubleshooting section.](#troubshooting)
+If you do not receive a confirmation email from New Relic, see [troubleshooting section.](#troubshooting)
 
 ## Accessing New Relic One {#accessing-new-relic}
 
@@ -108,9 +108,9 @@ To access New Relic One directly:
 
 If you are asked to verify your email during login to New Relic One, it means your email is associated with multiple accounts. This allows you to choose which account to access.
 
-If you do not verify your email address, New Relic will attempt to log you in with the most recently created user record associated with your email address. To avoid verifying your email during each login, click the **Remember Me** checkbox in the login screen.
+If you do not verify your email address, New Relic attempts to log you in with the most recently created user record associated with your email address. To avoid verifying your email during each login, click the **Remember Me** checkbox in the login screen.
 
-For more help, please open a support ticket via the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+For more help, open a support ticket by way of the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Troubleshooting New Relic One Access {#troubleshooting}
 
@@ -128,13 +128,13 @@ If you were added as a New Relic One user as described in the the section [Manag
 
 1. New Relic will send you an email containing a link to confirm the account.
 
-If you complete the sign up process and are unable to log in to your account due to email or password error messages, please log a support ticket via the [Admin Console.](https://adminconsole.adobe.com/)
+If you complete the sign up process and are unable to log in to your account due to email or password error messages, log a support ticket by way of the [Admin Console.](https://adminconsole.adobe.com/)
 
-If you don't receive an email from New Relic:
+If you do not receive an email from New Relic:
 
 * Check your [spam filters](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/).
 * If applicable, [add New Relic to your email allow list](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-* If neither suggestion help, please provide feedback on the support ticket and Adobe Support team will help you further.
+* If neither suggestion helps, provide feedback on the support ticket and Adobe Support team can help you.
 
 ## Limitations {#limitations}
 
@@ -144,7 +144,7 @@ The following limitations apply to adding users to New Relic One:
 * Users added to New Relic are of the type **Restricted**, see [the New Relic documentation for details.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service only offers the New Relic One APM solution and does not provide support for alerting, logging, or API integrations.
 
-For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, please open a support ticket via the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, open a support ticket via the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Frequently Asked Questions About New Relic One {#faqs}
 
@@ -158,7 +158,7 @@ Your New Relic One account is attached to a primary Adobe-maintained account and
 * One application for the publish service per environment (including Golden Publish)
 * One application for the preview service per environment
 
-Please note:
+Note:
 
 * Each application uses one license key.
 * AEM as a Cloud Service environments report to only one New Relic One account.

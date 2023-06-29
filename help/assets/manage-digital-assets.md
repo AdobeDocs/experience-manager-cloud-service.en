@@ -60,7 +60,7 @@ To enable the feature:
 
 >[!NOTE]
 >
->If you have configured Duplication Detector using `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` configuration file (OSGi configuration), you can continue to use it, however, Adobe recommends to use the new method.
+>If you have configured Duplication Detector using `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` configuration file (OSGi configuration), you can continue to use it, however, Adobe recommends using the new method.
  
 
 Once enabled, Experience Manager sends notifications of duplicate assets to the Experience Manager Inbox. It is an aggregated result for multiple duplicates. Users can choose to remove the assets based on the results.
@@ -180,7 +180,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    >[!NOTE]
    >
-   >* You can specify the same name for the asset if there is no asset with that name at the new location. However, you should use a different name if you move the asset to a location where an asset with the same name exists. If you use the same name, the system automatically generates a variation of the name. For example if your asset has the name Square, the system generates the name Square1 for its copy.
+   >* You can specify the same name for the asset if there is no asset with that name at the new location. However, you should use a different name if you move the asset to a location where an asset with the same name exists. If you use the same name, the system automatically generates a variation of the name. For example, if your asset has the name Square, the system generates the name Square1 for its copy.
    >* When renaming, whitespace is not allowed in the file name.
 
 1. On the **[!UICONTROL Select Destination]** dialog, do one of the following:

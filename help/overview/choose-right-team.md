@@ -14,9 +14,9 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 
 Chances are that in your organization several departments own different aspects of the digital experience. Without governance, the stage is set for endless debate, infighting, and confusion.
 
-Digital governance starts with figuring out who’s in charge of what and who’s doing which digitally focused job. You may need to do some strategic hiring to add needed skills. An even bigger challenge is driving a culture shift — building broad support for the new technology and helping people get used to new ways of doing things. A key part of that effort is creating a digital community, which lets people learn from and support each other.
+Digital governance starts with figuring out who's in charge of what and who's doing which digitally focused job. You may need to do some strategic hiring to add needed skills. An even larger challenge is driving a culture shift — building broad support for the new technology and helping people get used to new ways of doing things. A key part of that effort is creating a digital community, which lets people learn from and support each other.
 
-For now, we’ll focus on putting the right people in the right jobs to help drive your Adobe Experience Manager deployment. For each core product — Experience Manager Sites and Experience Manager Assets — we’ve provided a list of roles you’ll need to fill, along with the skills, levels of expertise, and attributes that make people effective in the various roles.
+For now, the focus is on putting the right people in the right jobs to help drive your Adobe Experience Manager deployment. For each core product — Experience Manager Sites and Experience Manager Assets — Adobe has provided a list of roles you must fill, along with the skills, levels of expertise, and attributes that make people effective in the various roles.
 
 Your assignment this week is to review both lists with your implementation team and make sure you have people with relevant qualifications in each role.
 
@@ -49,7 +49,7 @@ Now that you know what roles are required, look at the chart below to see when e
 
 From Architect to ScrumMaster, every role on this team is indispensable — including the DAM Librarian.
 
-You may already have most of the people you need to run a successful Adobe Experience Manager Assets implementation. This list is similar to the one for Adobe Experience Manager Sites, with one important addition: you’ll need a librarian to ensure your digital assets are organized and labeled in ways that make them easy to find.
+You may already have most of the people you need to run a successful Adobe Experience Manager Assets implementation. This list is similar to the one for Adobe Experience Manager Sites, with one important addition: you need a librarian to ensure that your digital assets are organized and labeled in ways that make them easy to find.
 
 |Role|Skills|Capability level|Qualities|
 |--- |--- |--- |--- |

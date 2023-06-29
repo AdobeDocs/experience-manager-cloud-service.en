@@ -36,7 +36,7 @@ Onboarding onto AEM as a Cloud Service starts with a signed contract between you
 * Your premier support level (if applicable).
 * Your contacts for onboarding.
 
-If you are not aware of these details, please contact the contracting team within your organization.
+If you are not aware of these details, contact the contracting team within your organization.
 
 Once the contract is signed, Adobe provisions your environments, a welcome email is sent to the onboarding contacts defined in the contract, and an onboarding call is organized by Adobe. This generally happens a couple days after contract close unless a future service start date is arranged.
 
@@ -82,4 +82,4 @@ You should now have a basic understanding of:
 * How that contract affects the onboarding process.
 * How to prepare for your onboarding call.
 
-Now that you are familiar with these preparation steps, you are almost ready to sign in to the system yourself. But first you will need a brief overview of how AEM as a Cloud Service is structured from a system administrator's point of view and get to know some important terminology. Please continue on to the next part of the journey, [AEM as a Cloud Service Terminology.](terminology.md)
+Now that you are familiar with these preparation steps, you are almost ready to sign in to the system yourself. But first you will need a brief overview of how AEM as a Cloud Service is structured from a system administrator's point of view and get to know some important terminology. Continue to the next part of the journey, [AEM as a Cloud Service Terminology](terminology.md).

@@ -19,13 +19,13 @@ Follow the steps below to create video renditions in Screens as a Cloud Service 
 1. Navigate to your channel in Screens Content Provider.
 
    >[!NOTE]
-   >Refer to [Using Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) for  more details.
+   >See [Using Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) for  more details.
 
-1. Click on the Tools section from the left navigation bar and click on **Assets** and then click on **Processing Profiles**.
+1. Click the Tools section from the left navigation bar and click **Assets** and then click **Processing Profiles**.
 
     ![Click on Processing Profiles](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
-1. Click on **Create** to create new processing profile.
+1. Click **Create** to create a processing profile.
 
    ![Click Create](/help/screens-cloud/assets/configure/screens-video-2.png)
 
@@ -33,7 +33,7 @@ Follow the steps below to create video renditions in Screens as a Cloud Service 
 
    ![](/help/screens-cloud/assets/configure/screens-video-3.png)
 
-1. Navigate to **Video** tab to add a video encoding and click on **Add New**.
+1. Navigate to **Video** tab so you can add a video encoding,  and then click **Add New**.
 
    ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
@@ -42,21 +42,22 @@ Follow the steps below to create video renditions in Screens as a Cloud Service 
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Please ensure to use the Encoding name that starts with "screens-", only these video renditions are considered to play the video experience in Screens as a Cloud Service. Enter the bitrate that works your videos (2500kbps for 720px video and 5000 kbps for 1080px).
+   >Use the Encoding name that starts with "screens-". Only these video renditions are considered to play the video experience in Screens as a Cloud Service. Enter the bitrate that works your videos (2500 kbps for 720-px video and 5000 kbps for 1080 px).
 
    >[!NOTE]
    >Multiple video renditions can be added with varying width/height/bitrate to work your videos. All the screens, renditions are downloaded by the Screens devices, even though the device plays only video rendition.
 
-1. Click on **Save**.
+1. Click **Save**.
 
-1. Select the Processing profile and click on **Apply Profile to Folder(s)**.
+1. Select the Processing profile and click **Apply Profile to Folders**.
 
    ![Apply Profile to Folder](/help/screens-cloud/assets/configure/screens-video-5.png)
 
-1. Select the folder(s) where Screens videos are kept and click on **Apply**.
+1. Select the folders where Screens videos are kept and click **Apply**.
 
    ![Click Apply](/help/screens-cloud/assets/configure/screens-video-6.png)
 
    >[!NOTE]
+   >
    >* You can create multiple Processing profiles and apply them to the corresponding folders, so that the videos in those folders get the specific video renditions.
-   >* When you upload any videos to the folder where Processing profile is applied, videos are processed and configured renditions are created, which are further used by the Screens devices to play the videos.
+   >* When you upload any videos to the folder where a Processing profile is applied, videos are processed. Configured renditions are created, which are used by the Screens devices to play the videos.

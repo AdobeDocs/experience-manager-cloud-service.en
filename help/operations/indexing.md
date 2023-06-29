@@ -11,21 +11,21 @@ With AEM as a Cloud Service, Adobe is moving away from an AEM instance-centric m
 
 Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
-1. Users will not have access to the Index Manager of a single AEM Instance to debug, configure or maintain indexing anymore. It is only used for local development and on-prem deployments.
-1. Users will not change Indexes on a single AEM Instance nor will they have to worry about consistency checks or reindexing anymore.
+1. Users do not have access to the Index Manager of a single AEM Instance to debug, configure, or maintain indexing anymore. It is only used for local development and on-prem deployments.
+1. Users do not change Indexes on a single AEM Instance nor do they have to worry about consistency checks or reindexing anymore.
 1. In general, index changes are initiated before going to production to not circumvent quality gateways in the Cloud Manager CI/CD pipelines and not impact Business KPIs in production.
-1. All related metrics including search performance in production is available for customers at runtime to provide the holistic view on the topics of Search and Indexing.
+1. All related metrics, including search performance in production, is available for customers at runtime to provide the holistic view on the topics of Search and Indexing.
 1. Customers are able to set up alerts according to their needs.
-1. SREs are monitoring system health 24/7 and will take action as needed and as early as possible.
+1. SREs are monitoring system health 24/7 and action is taken as early as possible.
 1. Index configuration is changed via deployments. Index definition changes are configured like other content changes.
-1. At a high level on AEM as a Cloud Service, with the introduction of the [rolling deployment model](#index-management-using-rolling-deployments) two sets of indexes will exist: one set for the old version, and one set for the new version.
-1. Customers can see whether the indexing job is complete on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
+1. At a high level on AEM as a Cloud Service, with the introduction of the [rolling deployment model](#index-management-using-rolling-deployments), two sets of indexes exist: one for the old version, and one for the new version.
+1. Customers can see whether the indexing job is complete on the Cloud Manager build page and receives a notification when the new version is ready to take traffic.
 
 Limitations:
 
 * Currently, index management on AEM as a Cloud Service is only supported for indexes of type `lucene`.
-* Only standard analyzers are supported (that is, those that are shipped with the product). Custom analyzers are not supported.
-* Internally, other indexes might be configured and used for queries. For example, queries that are written against the `damAssetLucene` index might, on Skyline,  in fact be executed against an Elasticsearch version of this index. This difference is typically not visible to the application and user, however certain tools such as the `explain` feature will report a different index. For differences between Lucene indexes and Elastic indexes, see [the Elastic documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers do not need to, and can not, configure Elasticsearch indexes directly.
+* Only standard analyzers are supported (that is, those analyzers that are shipped with the product). Custom analyzers are not supported.
+* Internally, other indexes might be configured and used for queries. For example, queries that are written against the `damAssetLucene` index might, on Skyline,  in fact be executed against an Elasticsearch version of this index. This difference is typically not visible to the application and user, however, certain tools such as the `explain` feature report a different index. For differences between Lucene indexes and Elastic indexes, see [the Elastic documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers do not need to, and cannot, configure Elasticsearch indexes directly.
 
 ## How to Use {#how-to-use}
 
@@ -46,8 +46,6 @@ An index definition can fall into one of the following categories:
 2. Customization of an OOTB index. These are indicated by appending `-custom-` followed by a numerical identifier to the original index name. For example: `/oak:index/damAssetLucene-8-custom-1`. 
 
 3. Fully custom index: It is possible to create an entirely new index from scratch. Their name must have a prefix to avoid naming conflicts. For instance: `/oak:index/acme.product-1-custom-2`, where the prefix is `acme.`
-
-A complete set of guidelines is in the [Preparing the New Index Definition](#preparing-the-new-index-definition-preparing-the-new-index-definition) section. 
 
 ## Preparing the New Index Definition {#preparing-the-new-index-definition}
 
@@ -83,7 +81,6 @@ To illustrate the deployment of a customized version of the out-of-the-box index
     * Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
 2. Add a configuration file `.content.xml` with the custom configurations inside the newly created folder. Below is an example of a customization:
-
     Filename: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
     ```xml
@@ -228,13 +225,13 @@ After adding the new index definition, deploy the new application using Cloud Ma
 
 >[!TIP]
 >
->For further details on the required package structure for AEM as a Cloud Service, see the document [AEM Project Structure.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+>For further details on the required package structure for AEM as a Cloud Service, see the document [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## Index Management using Rolling Deployments {#index-management-using-rolling-deployments}
 
 ### What is Index Management {#what-is-index-management}
 
-Index management is about adding, removing, and changing indexes. Changing the *definition* of an index is fast, but applying the change (often called "building an index", or, for existing indexes, "reindexing") requires time. It is not instantaneous: the repository has to be scanned for data to be indexed.
+Index management is about adding, removing, and changing indexes. Changing the *definition* of an index is fast, but applying the change (often called "building an index", or, for existing indexes, "reindexing") requires time. It is not instantaneous: the repository must be scanned for data to be indexed.
 
 ### What are Rolling Deployments {#what-are-rolling-deployments}
 
@@ -258,11 +255,11 @@ The read-write areas of the repository are shared between all versions of the ap
 
 ### Index Management Without Rolling Deployments {#index-management-without-rolling-deployments}
 
-During development, or when using on premise installations, indexes can be added, removed, or changed at runtime. Indexes are used as soon as they are available. If an index is not supposed to be used in the old version of the application yet, then the index is typically built during a scheduled downtime. The same occurs when removing an index, or changing an existing index. When removing an index, it becomes unavailable as soon as it is removed.
+During development, or when using on-premise installations, indexes can be added, removed, or changed at runtime. Indexes are used when they are available. If an index is not yet used in the old version of the application, then the index is typically built during a scheduled downtime. The same occurs when removing an index, or changing an existing index. When removing an index, it becomes unavailable when it is removed.
 
 ### Index Management With Rolling Deployments {#index-management-with-rolling-deployments}
 
-With rolling deployments, there is no downtime. For some time during an update, both the old version (for example, version 1) of the application, as well as the new version (version 2), run concurrently against the same repository. If version 1 requires a certain index to be available, then this index must not be removed in version 2. The index should be removed later, for example in version 3, at which point it is guaranteed that version 1 of the application is no longer running. Also, applications should be written such that version 1 works well, even if version 2 is running, and if indexes of version 2 are available.
+With rolling deployments, there is no downtime. For some time during an update, both the old version (for example, version 1) of the application, and the new version (version 2), run concurrently against the same repository. If version 1 requires a certain index to be available, then this index must not be removed in version 2. The index should be removed later, for example in version 3, at which point it is guaranteed that version 1 of the application is no longer running. Also, applications should be written such that version 1 works well, even if version 2 is running, and if indexes of version 2 are available.
 
 After upgrading to the new version is complete, old indexes can be garbage collected by the system. The old indexes might still stay for some time, to speed up rollbacks (if a rollback should be needed).
 
@@ -270,7 +267,7 @@ The following table shows five index definitions: index `cqPageLucene` is used i
 
 >[!NOTE]
 >
->`<indexName>-custom-<customerVersionNumber>` is needed for AEM as a Cloud Service to mark this as a replacement for an existing index.
+>The `<indexName>-custom-<customerVersionNumber>` is needed for AEM as a Cloud Service to mark it as a replacement for an existing index.
 
 | Index | Out-of-the-box Index  | Use in Version 1  | Use in Version 2  |
 |---|---|---|---|
@@ -280,11 +277,11 @@ The following table shows five index definitions: index `cqPageLucene` is used i
 | /oak:index/acme.product-custom-2  | No  | No  | Yes  |
 | /oak:index/cqPageLucene  | Yes  | Yes  | Yes  |
 
-The version number is incremented each time the index is changed. To avoid custom index names colliding with index names of the product itself, custom indexes, as well as changes to out of the box indexes must end with `-custom-<number>`.
+The version number is incremented each time the index is changed. To avoid custom index names colliding with index names of the product itself, custom indexes, and changes to out-of-the-box indexes must end with `-custom-<number>`.
 
 ### Changes to Out-of-the-Box Indexes {#changes-to-out-of-the-box-indexes}
 
-Once Adobe changes an out-of-the-box index like "damAssetLucene" or "cqPageLucene", a new index named `damAssetLucene-2` or `cqPageLucene-2` is created, or, if the index was already customized, the customized index definition is merged with the changes in the out-of-the-box index, as shown below. Merging of changes happens automatically. That means that you do not need to do anything if an out-of-the-box index changes. However, it is possible to customize the index again later.
+After Adobe changes an out-of-the-box index like "damAssetLucene" or "cqPageLucene", a new index named `damAssetLucene-2` or `cqPageLucene-2` is created. Or, if the index was already customized, the customized index definition is merged with the changes in the out-of-the-box index, as shown below. Merging of changes happens automatically. That means you do not need to do anything if an out-of-the-box index changes. However, it is possible to customize the index again later.
 
 | Index  | Out-of-the-box Index  | Use in Version 2  | Use in Version 3  |
 |---|---|---|---|
@@ -295,25 +292,25 @@ Once Adobe changes an out-of-the-box index like "damAssetLucene" or "cqPageLucen
 
 ### Current Limitations {#current-limitations}
 
-Index management is currently only supported for indexes of type `lucene`, with `compatVersion` set to `2`. Internally, other indexes might be configured and used for queries, for example Elasticsearch indexes. Queries that are written against the `damAssetLucene` index might, on AEM as a Cloud Service, in fact be executed against an Elasticsearch version of this index. This difference is invisible to the application end user, however certain tools such as the `explain` feature will report a different index. For differences between Lucene and Elasticsearch indexes, see [the Elasticsearch documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers cannot and do not need to configure Elasticsearch indexes directly.
+Index management is only supported for indexes of type `lucene`, with `compatVersion` set to `2`. Internally, other indexes might be configured and used for queries, for example Elasticsearch indexes. Queries that are written against the `damAssetLucene` index might, on AEM as a Cloud Service, in fact be executed against an Elasticsearch version of this index. This difference is invisible to the application end user, however certain tools such as the `explain` feature reports a different index. For differences between Lucene and Elasticsearch indexes, see [the Elasticsearch documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers cannot and do not need to configure Elasticsearch indexes directly.
 
-Only built-in analyzers are supported (that is, those that are shipped with the product). Custom analyzers are not supported.
+Only built-in analyzers are supported (that is, those analyzers that are shipped with the product). Custom analyzers are not supported.
 
-For best operational performance, indexes should not be excessively large. The total size of all indexes can be used as a guide: If this increases by more than 100%  after custom indexes have been added and standard indices have been adjusted on a development environment, custom index definitions should be adjusted. AEM as a Cloud Service can prevent the deployment of indexes that would negatively impact system stability and performance. 
+For best operational performance, indexes should not be excessively large. The total size of all indexes can be used as a guide. If this size increases by more than 100% after custom indexes have been added, and standard indices have been adjusted on a development environment, custom index definitions should be adjusted. AEM as a Cloud Service can prevent the deployment of indexes that would negatively impact system stability and performance. 
 
 ### Adding an Index {#adding-an-index}
 
-To add a fully custom index named `/oak:index/acme.product-custom-1` to be used in a new version of the application and later, the index must be configured as follows:
+To add a fully custom index named `/oak:index/acme.product-custom-1`, to be used in a new version of the application and later, the index must be configured as follows:
 
 `acme.product-1-custom-1`
 
-This works by prepending a custom identifier to the index name, followed by a dot (**`.`**). The identifier should be between 2 and 5 characters in length.
+This configuration works by prepending a custom identifier to the index name, followed by a dot (**`.`**). The identifier should be from 2 through 5 characters in length.
 
-As above, this ensures the index is only used by the new version of the application.
+As above, this configuration ensures that the index is only used by the new version of the application.
 
 ### Changing an Index {#changing-an-index}
 
-When an existing index is changed, a new index needs to be added with the changed index definition. For example, consider the existing index `/oak:index/acme.product-custom-1` is changed. The old index is stored under `/oak:index/acme.product-custom-1`, and the new index is stored under `/oak:index/acme.product-custom-2`.
+When an existing index is changed, a new index must be added with the changed index definition. For example, consider the existing index `/oak:index/acme.product-custom-1` is changed. The old index is stored under `/oak:index/acme.product-custom-1`, and the new index is stored under `/oak:index/acme.product-custom-2`.
 
 The old version of the application uses the following configuration:
 
@@ -325,7 +322,7 @@ The new version of the application uses the following (changed) configuration:
 
 >[!NOTE]
 >
->Index definitions on AEM as a Cloud Service may not fully match the index definitions on a local development instance. The development instance does not have a Tika configuration, while AEM as a Cloud Service instances do have one. If you customize an index with a Tika configuration, please retain the Tika configuration.
+>Index definitions on AEM as a Cloud Service may not fully match the index definitions on a local development instance. The development instance does not have a Tika configuration, while instances of AEM as a Cloud Service do have one. If you customize an index with a Tika configuration, retain the Tika configuration.
 
 ### Undoing a Change {#undoing-a-change}
 
@@ -335,7 +332,7 @@ At times, it becomes necessary to undo a modification in an index definition. Th
 
 The following only applies to custom indexes. Product indexes may not be removed as they are used by AEM.
 
-If an index is to be removed in a later version of the application, you can define an empty index (an empty index that is never used, and does not contain any data), with a new name. For the purpose of this example, you can name it `/oak:index/acme.product-custom-3`. This replaces the index `/oak:index/acme.product-custom-2`. Once `/oak:index/acme.product-custom-2` is removed by the system, the empty index `/oak:index/acme.product-custom-3` can then also be removed. An example of such an empty index is:
+If an index is removed in a later version of the application, you can define an empty index (an empty index that is never used, and does not contain any data), with a new name. For this example, you can name it `/oak:index/acme.product-custom-3`. This name replaces the index `/oak:index/acme.product-custom-2`. After `/oak:index/acme.product-custom-2` is removed by the system, the empty index `/oak:index/acme.product-custom-3` can then be removed. An example of such an empty index is:
 
 ```xml
 <acme.product-custom-3
@@ -362,6 +359,6 @@ If it is no longer needed to have a customization of an out-of-the-box index, th
 
 ## Index and Query Optimizations {#index-query-optimizations}
 
-Apache Jackrabbit Oak enables flexible index configurations to efficiently handle search queries. Indexes are especially important for larger repositories. Please ensure that all queries are backed by an appropriate index. Queries without a suitable index may read thousands of nodes, which is then logged as a warning.
+Apache Jackrabbit Oak enables flexible index configurations to efficiently handle search queries. Indexes are especially important for larger repositories. Ensure that all queries are backed by an appropriate index. Queries without a suitable index may read thousands of nodes, which are then logged as a warning.
 
-Please see [this document](query-and-indexing-best-practices.md) for information on how queries and indexes can be optimized.
+See [this document](query-and-indexing-best-practices.md) for information on how queries and indexes can be optimized.

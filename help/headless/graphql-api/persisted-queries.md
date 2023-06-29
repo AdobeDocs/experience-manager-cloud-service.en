@@ -1,6 +1,6 @@
 ---
 title: Persisted GraphQL queries
-description: Learn how to to persist GraphQL queries in Adobe Experience Manager as a Cloud Service to optimize performance. Persisted queries can be requested by client applications using HTTP GET method and the response can be cached at the dispatcher and CDN layers, ultimately improving the performance of the client applications.
+description: Learn how to persist GraphQL queries in Adobe Experience Manager as a Cloud Service to optimize performance. Persisted queries can be requested by client applications using HTTP GET method and the response can be cached at the dispatcher and CDN layers, ultimately improving the performance of the client applications.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 ---
@@ -190,7 +190,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 Where `PERSISTENT_PATH` is a shortened path to where the Persisted query is saved.
 
-1. For example `wknd` is the configuration name and `plain-article-query` is the name of the Persisted query. To execute the query:
+1. For example, `wknd` is the configuration name and `plain-article-query` is the name of the Persisted query. To execute the query:
 
    ```shell
    $ curl -X GET \
@@ -222,7 +222,7 @@ The pattern looks like the following:
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-For example the following query contains a variable `activity` to filter a list based on an activity value:
+For example, the following query contains a variable `activity` to filter a list based on an activity value:
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -394,7 +394,7 @@ The field `Respond with application/graphql-response+json` (`responseContentType
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
-For use by an application, any special characters used when constructing query variables (i.e semicolons (`;`), equal sign (`=`), slashes `/`) must be converted to use the corresponding UTF-8 encoding.
+For use by an application, any special characters used when constructing query variables (that is, semicolons (`;`), equal sign (`=`), slashes `/`) must be converted to use the corresponding UTF-8 encoding.
 
 For example:
 

@@ -5,7 +5,7 @@ exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
 ---
 # SPA Reference Materials {#spa-reference-materials}
 
-## SPA Javascript API References for NMP Modules {#api-references}
+## SPA JavaScript API References for NMP Modules {#api-references}
 
 The following are the available JavaScript API references of the NPM modules for the AEM SPA Editor SDK framework.
 

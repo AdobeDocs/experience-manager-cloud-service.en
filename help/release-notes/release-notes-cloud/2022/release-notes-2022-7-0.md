@@ -96,8 +96,8 @@ You can now configure Adobe Experience Manager Assets to [restrict the type of a
 ### What is New {#what-is-new-foundation}
 
 * The [Repository Browser](/help/implementing/developing/tools/repository-browser.md) now has a path input field, making it possible to jump directly to a specific folder in the repository hierarchy
-* Sling Content Distribution (SCD) now supports an explicit "invalidation" action to invalidate content without that content being published. Refer to the [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) page for further details.
-* mod_macro is now available in AEM as a Cloud Service. Refer to [this table](/help/implementing/dispatcher/disp-overview.md) for a list of supported Apache modules.
+* Sling Content Distribution (SCD) now supports an explicit "invalidation" action to invalidate content without that content being published. See [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) page for further details.
+* mod_macro is now available in AEM as a Cloud Service. See [this table](/help/implementing/dispatcher/disp-overview.md) for a list of supported Apache modules.
 
 ### AEM as a Cloud Service SDK Dispatcher Tools enhancements {#dispatcher-tools-enhancements}
 
@@ -106,7 +106,7 @@ You can now configure Adobe Experience Manager Assets to [restrict the type of a
 
 ### New features available in [!DNL Experience Manager] prerelease channel {#prerelease-features-foundation}
 
-* AEM as a Cloud Service is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Refer to [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
+* AEM as a Cloud Service is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. See [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
 
 ## Adobe Learning Manager Connectors {#learn-manage}
 
@@ -114,7 +114,7 @@ You can now configure Adobe Experience Manager Assets to [restrict the type of a
  
 ## Cloud Manager {#cloud-manager}
 
-You can find a complete list of Cloud Manager monthly releases [here.](/help/implementing/cloud-manager/release-notes/current.md)
+You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Migration Tools {#migration-tools}
 

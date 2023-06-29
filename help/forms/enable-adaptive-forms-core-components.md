@@ -18,7 +18,7 @@ Enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service, allows 
 
 *   If you have an older Forms as a Cloud Service program where Core Components are [not enabled](#enable-components), you can [add Adaptive Forms Core Components dependencies](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) to your AEM as a Cloud Service repository and deploy the repository to your Cloud Service environments to enable Headless Adaptive Forms.
 
-*   If your existing Cloud Service environment provides option to [create Core Components-based Adaptive Forms](creating-adaptive-form-core-components.md), Adaptive Forms Core Components and Headless Adaptive Forms are are already enabled for your environment and you can serve Core Component based Adaptive Forms as headless forms to channels such as mobile, web, native apps, and services that require a headless representation of Adaptive Forms.
+*   If your existing Cloud Service environment provides option to [create Core Components-based Adaptive Forms](creating-adaptive-form-core-components.md), Adaptive Forms Core Components and Headless Adaptive Forms are already enabled for your environment and you can serve Core Component based Adaptive Forms as headless forms to channels such as mobile, web, native apps, and services that require a headless representation of Adaptive Forms.
 
 
 ## Enable Adaptive Forms Core Components and Headless Adaptive Forms {#enable-headless-forms}

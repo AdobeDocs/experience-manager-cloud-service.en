@@ -16,7 +16,7 @@ Through a simple configuration, a content author can now enable progressive web 
 >* Understanding of caching strategies
 >* Support from your development team
 >
->Before using this feature is is recommended that you discuss this with your development team to define the best way to use it for your project.
+>Before using this feature is recommended that you discuss this with your development team to define the best way to use it for your project.
 
 ## Introduction {#introduction}
 
@@ -76,7 +76,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 ### Adjust Your Dispatcher {#adjust-dispatcher}
 
-The PWA feature generates and uses `/content/<sitename>/manifest.webmanifest` files. By default, [the dispatcher](/help/implementing/dispatcher/overview.md) doesn't expose such files. To expose these files, the developer must add the following configuration to your site project.
+The PWA feature generates and uses `/content/<sitename>/manifest.webmanifest` files. By default, [the dispatcher](/help/implementing/dispatcher/overview.md) does not expose such files. To expose these files, the developer must add the following configuration to your site project.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -112,7 +112,7 @@ With [the prerequisites](#prerequisites) met, it is very easy for a content auth
       * `/content/<sitename>`
       * `/content/experiencefragements/<sitename>`
       * `/content/dam/<sitename>`
-      * Any third party font references
+      * Any third-party font references
       * `/etc/clientlibs/<sitename>`
 
       ![Define PWA offline paths](../assets/pwa-offline.png)
@@ -154,20 +154,20 @@ These settings allow your site behave like a native app by making it installable
   * **Minimal UI** - The browser is mostly hidden, like a native app, but basic navigation controls are exposed.
   * **Full Screen** - The browser is completely hidden, like a native app, but is rendered in full screen mode.
     * With this option, app navigation must be possible entirely through your content using links and components on the site's pages without using the browser's navigation controls.
-* **Screen orientation** - As a local app, the PWA needs to know how to handle [device orientations.](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)
+* **Screen orientation** - As a local app, the PWA needs to know how to handle [device orientations](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
   * **Any** - The app adjusts to the orientation of the user's device. This is the default value.
   * **Portrait** - This forces the app to open in portrait layout regardless of the orientation of the user's device.
   * **Landscape** - This forces the app to open in landscape layout regardless of the orientation of the user's device.
 * **Theme color** - This defines the [color of the app](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) that affects how the local user's operating system displays the native UI toolbar and navigation controls. Depending on the browser, it can affect other app presentation elements.
   * Use the color well pop-up to select a color.
   * The color can also be defined by hex or RGB value.
-* **Background color** - This defines the [background color of the app,](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) which is shown as the app loads.
+* **Background color** - This defines the [background color of the app](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color), which is shown as the app loads.
   * Use the color well pop-up to select a color.
   * The color can also be defined by hex or RGB value.
   * Certain browsers [build a splash screen automatically](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) from the app name, background color, and icon.
 * **Icon** - This defines [the icon](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) that represents the app on the user's device.
   * The icon must be a png file of size 512x512 pixels.
-  * The icon must be [stored in DAM.](/help/assets/overview.md)
+  * The icon must be [stored in DAM](/help/assets/overview.md).
 
 ### Cache Management (Advanced) {#offline-configuration}
 
@@ -211,7 +211,7 @@ Client libraries are delivered with the addition of a cache selector observing t
 
 The Image Component of the AEM Core Components determines one the front end the best rendition to fetch. This mechanism also includes a timestamp that corresponds to the last modified time of that resource. This mechanism complicates the configuration of the PWA pre-cache.
 
-When configuring the pre-cache, the user needs to list all the path variations that can be fetched. These variations are composed of parameters like quality and width. It is strongly advised to reduce the number of these variations to a maximum of three - small, medium, large. You can do that via the content-policy dialog of the [Image Component.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)
+When configuring the pre-cache, the user needs to list all the path variations that can be fetched. These variations are composed of parameters like quality and width. It is advised reducing the number of these variations to a maximum of three - small, medium, large. You can do that via the content-policy dialog of the [Image Component.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)
 
 If not configured carefully, memory and network consumption can severely impact the performance of your PWA. Also if you intend to precache, say, 50 images, and have 3 widths per image, the user maintaining the site will have to maintain a list of up to 150 entries in the PWA pre-cache section of the page properties.
 
