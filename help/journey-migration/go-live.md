@@ -22,11 +22,11 @@ In the previous phases of the journey:
 
 ## Objective {#objective}
 
-This document will help you understand how to perform the migration to AEM as a Cloud Service once you are familiar with the previous steps of the journey. You will learn how to perform the initial production migration as well as the best practices to follow when migrating to AEM as a Cloud Service.
+This document helps you understand how to perform the migration to AEM as a Cloud Service once you are familiar with the previous steps of the journey. You learn how to perform the initial production migration and the best practices to follow when migrating to AEM as a Cloud Service.
 
 ## Initial Production Migration {#initial-migration}
 
-Before you can perform the production migration, please follow the fitment and proof of migration steps outlined in the [Content migration strategy and timeline](/help/journey-migration/implementation.md##strategy-timeline) section of the [Implementation phase](/help/journey-migration/implementation.md).
+Before you can perform the production migration, follow the fitment and proof of migration steps outlined in the [Content migration strategy and timeline](/help/journey-migration/implementation.md##strategy-timeline) section of the [Implementation phase](/help/journey-migration/implementation.md).
 
 * Initiate the migration from production based on the experience you gained during the AEM as a Cloud Service stage migration performed on clones:
   * Author-Author

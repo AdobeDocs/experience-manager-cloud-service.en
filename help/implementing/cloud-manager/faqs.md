@@ -52,11 +52,11 @@ This value allows subsequent deployment to still be installed when the version d
 
 You can also set the version to `-SNAPSHOT` for stage and production builds or deployments. Cloud Manager automatically sets a proper version number and creates a tag for you in git. This tag can be referred to later, if necessary.
 
-Further details about version handling are [documented here.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+Further details about version handling are [documented here](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## How does package and bundle versioning work for stage and production deployments? {#snapshot-version}
 
-In stage and production deployments, an automatic version is generated as [documented here.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+In stage and production deployments, an automatic version is generated as [documented here](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 For custom versioning in stage and production deployments, set a proper three-part maven version like `1.0.0`. Increase the version each time you deploy to production.
 

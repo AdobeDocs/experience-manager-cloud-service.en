@@ -272,4 +272,4 @@ To delete a variable:
 
 ## References {#references}
 
-For more examples on using variables in [!DNL AEM Forms] Workflow steps, refer to [Variables in AEM workflows](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).
+For more examples on using variables in [!DNL AEM Forms] Workflow steps, see [Variables in AEM workflows](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).

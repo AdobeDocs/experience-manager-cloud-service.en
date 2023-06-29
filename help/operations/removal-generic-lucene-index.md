@@ -36,7 +36,7 @@ To support larger customer data volumes, Adobe no longer creates the generic Luc
 
 Adobe has already adjusted the index costings via the `costPerEntry` and `costPerExecution` properties to ensure that other indexes such as `/oak:index/pathreference` are used in preference wherever possible. 
 
-Customer applications which use queries which still depend on this index should be updated immediately to use other existing indexes, which can be customized if required. Alternatively new custom indexes can be added to the customer application. Full instructions for index management in AEM as a Cloud Service can be found in the [indexing documentation.](/help/operations/indexing.md)
+Customer applications which use queries which still depend on this index should be updated immediately to use other existing indexes, which can be customized if required. Alternatively new custom indexes can be added to the customer application. Full instructions for index management in AEM as a Cloud Service can be found in the [indexing documentation](/help/operations/indexing.md).
 
 ## Are You Affected? {#are-you-affected}
 

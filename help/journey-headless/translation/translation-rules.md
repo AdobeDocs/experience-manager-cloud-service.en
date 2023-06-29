@@ -21,7 +21,7 @@ Now that your connector is set up, this article takes you through the next step 
 >This step of the documentation journey is only necessary if you are not using the **Translatable** flag on Content Fragments.
 >
 >* The **Translatable** flag automatically creates translation rules for you and requires no intervention.
->* The **Translatable** flag is only used if the Translation Integration Framework configuration is set to **[Enable Content Model Fields for Translation.](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* The **Translatable** flag is only used if the Translation Integration Framework configuration is set to **[Enable Content Model Fields for Translation](/help/sites-cloud/administering/translation/integration-framework.md)**.
 >* Enabling this option in the TIF configuration will supersede any manually-created translation rules.| 
 
 ## Objective {#objective}

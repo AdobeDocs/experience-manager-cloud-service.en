@@ -110,7 +110,7 @@ Follow these steps to create the sample project:
 
    >[!NOTE]
    >
-   >On a fresh installation (more specifically, when maven dependencies have never been downloaded) you might get the project created with errors. In this case, please follow the procedure describe in [Resolving Invalid Project Definition](#resolving-invalid-project-definition).
+   >On a fresh installation (more specifically, when maven dependencies have never been downloaded) you might get the project created with errors. In this case, follow the procedure describe in [Resolving Invalid Project Definition](#resolving-invalid-project-definition).
 
 ## How To Import Existing Projects {#how-to-import-existing-projects}
 

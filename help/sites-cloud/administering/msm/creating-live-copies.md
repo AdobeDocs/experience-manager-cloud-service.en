@@ -39,7 +39,7 @@ When your blueprint configuration is used, you can associate it with a rollout c
 
 Blueprint configurations are considered immutable data and as such are not editable at runtime. For this reason, any configuration changes must be deployed via Git using the CI/CD pipeline.
 
-More information can be found in the article [Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+More information can be found in the article [Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 The following steps are available to an administrator on a local development instance only for testing and development purposes. These options are not available in any AEMaaCS cloud instance.
 
@@ -239,7 +239,7 @@ Roll out a blueprint page to push content changes to Live Copies. A **Rollout** 
 
    ![Define rollout time](../assets/rollout-now-later.png)
 
-Rollouts are processed as asynchronous jobs and can be checked on the [***Async Jobs Status** page.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Rollouts are processed as asynchronous jobs and can be checked on the [***Async Jobs Status** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Roll Out a Blueprint from the Reference Rail {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -264,7 +264,7 @@ Rollouts are processed as asynchronous jobs and can be checked on the [***Async 
 
 1. After confirming these details, select **Rollout** to perform the action.
 
-Rollouts are processed as asynchronous jobs and can be checked on the [**Async Jobs Status** page.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Rollouts are processed as asynchronous jobs and can be checked on the [**Async Jobs Status** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Roll Out a Blueprint from the Live Copy Overview {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -283,7 +283,7 @@ The [**Rollout** action is also available from the Live Copy Overview](live-copy
 
    ![Define rollout schedule](../assets/rollout-now-later.png)
 
-Rollouts are processed as asynchronous jobs and can be checked on the [**Async Jobs Status** page.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Rollouts are processed as asynchronous jobs and can be checked on the [**Async Jobs Status** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 ### Synchronizing a Live Copy {#synchronizing-a-live-copy}
 
@@ -569,7 +569,7 @@ The [**Reset** action is also available from the Live Copy Overview](live-copy-o
 
 To track the changes you have made, you can view the blueprint page in **References** and compare it with its Live Copy page:
 
-1. In the **Sites** console, [navigate to a blueprint or Live Copy page and select it.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. In the **Sites** console, [navigate to a blueprint or Live Copy page and select it](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** panel and depending on context select either:
 
     * **Blueprint**

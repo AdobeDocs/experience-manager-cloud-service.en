@@ -28,7 +28,7 @@ There are two phases associated with content transfer:
 
 1. **Extraction**:  Extraction refers to extracting content from the source AEM instance into a temporary area called *migration set*. A *migration set* is a cloud storage area provided by Adobe to temporarily store the transferred content between the source AEM instance and the Cloud Service AEM instance. 
 
-   Refer to [Extraction Process in Content Transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) for more details. 
+   See [Extraction Process in Content Transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) for more details. 
 
     >[!NOTE]
     >User Mapping is now run automatically as part of the Extraction phase on author (but can optionally be disabled on author, or enabled on publish). See [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) for more details.
@@ -49,9 +49,9 @@ The Content Transfer Tool has a feature that supports differential content top-u
 >[!NOTE]
 >After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service. 
 
-In the extraction phase, to ***top-up*** an existing migration set, the *overwrite* option must be disabled. Refer to [Top Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) for more details.
+In the extraction phase, to ***top-up*** an existing migration set, the *overwrite* option must be disabled. See [Top Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) for more details.
 
-In the ingestion phase, to apply the delta content on top of the current content, the *wipe* option must be disabled. Refer to [Top Up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) for more details.
+In the ingestion phase, to apply the delta content on top of the current content, the *wipe* option must be disabled. See [Top Up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) for more details.
 
 ## Migration Set Expiry {#migration-set-expiry}
 
