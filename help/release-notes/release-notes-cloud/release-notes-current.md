@@ -117,6 +117,12 @@ Assets view now enables you to [add multi-value text and drop-down list property
 
 * [Enhanced authentication methods for Form Data Model](/help/forms/configure-data-sources.md): Experience heightened security with the introduction of Client Credentials based authentication for connecting AEM Forms with compatible data sources. This enhancement eliminates the need for impersonation or user login, bolstering the protection of your data. 
 
+* Make Adaptive Forms sections repeatable: You can now make [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), and [Horizontal Tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) components of an Adaptive Form repeatable. 
+
+    >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
+
+    These repeatable sections allow you to provide an unlimited number of entries without a fixed field count. It is useful when the required instances of data are unknown in advance. Forms users can easily add or remove sections, making forms adaptable to different data entry scenarios and simplifying collection of multiple occurrences of the same data.
+
 ### Headless Adaptive Forms early adopter program {#forms-early-adopter}
 
 Use [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) to enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. Headless adaptive forms help you: 
