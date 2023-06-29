@@ -4,7 +4,7 @@ description: How to access, login experience of, supported use cases of, and kno
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
 ---
-# Get started using [!DNL Adobe Experience Manager Assets View] {#assets-view-get-started}
+# Get started with Assets view {#assets-view-get-started}
 
 <!-- TBD: Make links for these steps. -->
 
@@ -19,11 +19,9 @@ To use [!DNL Assets View], log in at [https://experience.adobe.com/#/assets](htt
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
 
-## Receive access to [!DNL Assets View] {#get-access}
+## Access Assets view {#access-assets-view}
 
-Adobe provisions the solution and adds the designated person from your organization as an administrator. The administrators can provide access to various users from the organization by using [[!DNL Admin Console]](https://helpx.adobe.com/enterprise/using/admin-console.html). For requests related to your access, contact your organization's administrator.
-
-When logging in, after providing the credentials, [!DNL Assets View] prompts you to select an account. In this case, select `Company or School Account` to proceed.
+See [How to access Assets view](/help/assets/assets-view-introduction.md#how-to-access-assets-view) for the detailed instructions on how to access Assets view.
 
 ## Configure [!DNL Assets View] {#configuration}
 
