@@ -111,7 +111,7 @@ You see that a new job card was added to the project. In this example, another S
 
 ![Additional translation job added](assets/additional-translation-job.png)
 
-You may notice that the statistics listed on the new card is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes re-translation of updated content as well as the first-time translation of new content.
+You may notice that the statistics listed on the new card is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes re-translation of updated content and the first-time translation of new content.
 
 From this point, you [start and manage your translation job just as you did the original.](translate-content.md#using-translation-project)
 

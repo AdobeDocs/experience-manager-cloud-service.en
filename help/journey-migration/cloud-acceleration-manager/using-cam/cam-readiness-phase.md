@@ -23,7 +23,7 @@ Follow the steps below to navigate to the Readiness Phase:
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
-   >Refer to Creating and Managing a Project in Cloud Acceleration Manager to learn more.
+   >See Creating and Managing a Project in Cloud Acceleration Manager to learn more.
 
 ## Using Best Practices Analysis Card {#best-practices-analysis}
 
@@ -56,7 +56,7 @@ Follow the steps below to use Best Practices Analysis card:
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. Review and explore the Best Practices Analysis dashboard in CAM. Refer to the section below [Reviewing Best Practices Analysis Report](#analysis-report) for more details.
+1. Review and explore the Best Practices Analysis dashboard in CAM. See [Reviewing Best Practices Analysis Report](#analysis-report) for more details.
 
    >[!NOTE]
    >Uploading a new report resets all the assessments.
@@ -152,7 +152,7 @@ You can filter the report based on importance, sub-type, or count.
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Refer to [Interpreting the Best Practices Analyzer Report](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) to learn about findings categories and importance levels.
+>See [Interpreting the Best Practices Analyzer Report](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) to learn about findings categories and importance levels.
 
 #### Best Practices Assessment {#best-practices-assessment}
 

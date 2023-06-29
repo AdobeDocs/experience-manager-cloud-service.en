@@ -17,7 +17,7 @@ The following section describes how to use Screens Content Provider, once you ha
 
 >[!NOTE]
 >**Prerequisite**
->Before you start reading this section, refer to [Setting up Screens Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) to learn how to navigate to this user interface from Screens Services Provider.
+>Before you start reading this section, see [Setting up Screens Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) to learn how to navigate to this user interface from Screens Services Provider.
 
 Follow the steps below to log on to Screens Content Provider:
 

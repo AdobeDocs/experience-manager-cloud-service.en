@@ -100,7 +100,7 @@ More information about the new group features can be found [at this location](ht
 
 **User Sync Documentation**
 
-Refer to the [UST documentation](https://adobe-apiplatform.github.io/user-sync.py/en/) for more details.
+See [UST documentation](https://adobe-apiplatform.github.io/user-sync.py/en/) for more details.
 
 The User Sync Tool must register as an Adobe Developer client UMAPI using the procedure [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 
@@ -208,10 +208,10 @@ As shown below, the group **AEM-GRP_008** inherits the permissions and privilege
 
 To be able to access Cloud Manager or to environments on AEM as a Cloud Service, you must be assigned to Profiles of the Cloud Manager Product.
 
-Refer to Role Definitions to learn more about roles for users which govern the availability of specific features in Cloud Manager.
+See Role Definitions to learn more about roles for users which govern the availability of specific features in Cloud Manager.
 
 >[!NOTE]
->Cloud Manager has pre-configured roles with appropriate permissions. To learn about each of the roles with specific permissions, pre-configured tasks, or permissions, associated with each role, refer to [Role-Based Permissions](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en).
+>Cloud Manager has pre-configured roles with appropriate permissions. To learn about each of the roles with specific permissions, pre-configured tasks, or permissions, associated with each role, see [Role-Based Permissions](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en).
 
 **Steps for Adding a User**
 

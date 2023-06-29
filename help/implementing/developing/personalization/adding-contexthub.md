@@ -101,9 +101,9 @@ Note that custom store candidates can define additional functions that provide a
 
 >[!NOTE]
 >
->ContextHub is not by default aware of the currently logged in used on publish servers and such users are regarded by ContextHub as “Anonymous.”
+>ContextHub is not by default aware of the currently logged in used on publish servers and such users are regarded by ContextHub as "Anonymous."
 >
->You can make ContextHub aware of logged in users by loading the profile store. Refer to [sample code on GitHub here](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>You can make ContextHub aware of logged in users by loading the profile store. See [sample code on GitHub here](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### ContextHub Eventing {#contexthub-eventing}
 
@@ -121,7 +121,7 @@ The ContextHub segment engine enables you to determine which of the registered s
 
 ContextHub segments are installed below the `/conf/<site>/settings/wcm/segments` node.
 
-The following segments are installed with the [WKND tutorial site.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+The following segments are installed with the [WKND tutorial site](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * summer  
 * winter  

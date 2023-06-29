@@ -474,7 +474,7 @@ Make sure to check the additional resources section that follows for instruction
 
 ## Additional Resources {#additional-resources}
 
-For more information, please see the following additional resources:
+For more information, see the following additional resources:
 
 <!--
 * [Resource Mapping](/help/sites-deploying/resource-mapping.md)

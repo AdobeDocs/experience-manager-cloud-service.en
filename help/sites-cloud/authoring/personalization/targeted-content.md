@@ -439,7 +439,7 @@ You can change the percentages as long as they add up to 100 percent. An audienc
 
 ## Goals & Settings: Configuring the Activity and Setting Goals {#goals-settings-configuring-the-activity-and-setting-goals}
 
-The Goals & Settings step of [the targeting process](#the-targeting-process-create-target-and-goals-settings) involves configuring the behavior of the brand activity. Specify when the activity starts and ends, as well as the activity priority. In addition, you also track goals. Specifically you can decide what you want to measure with your activities.
+The Goals & Settings step of [the targeting process](#the-targeting-process-create-target-and-goals-settings) involves configuring the behavior of the brand activity. Specify when the activity starts and ends, and the activity priority. In addition, you also track goals. Specifically you can decide what you want to measure with your activities.
 
 Goal Metrics are only available if you use Adobe Target for your targeting engine. You must define at least one goal metric. If you have Adobe Analytics configured and have an A4T Analytics cloud configuration, you can select whether you want the reporting source to be Adobe Target or Adobe Analytics.
 
@@ -543,7 +543,7 @@ To configure goals and settings if using Adobe Target:
 1. If you want more control over how success metrics are counted, click or tap **Advanced Settings** to access those.
 1. Click **Save**.
 
-After configuring, you can [view the performance of your activities](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) that use Adobe Target (either experience or A/B test targeting). In addition, with A/B test targeting, you can [convert the winners.](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test)
+After configuring, you can [view the performance of your activities](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) that use Adobe Target (either experience or A/B test targeting). In addition, with A/B test targeting, you can [convert the winners](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test).
 
 ## Simulating an Experience {#simulating-an-experience}
 
@@ -628,4 +628,4 @@ If you select Adobe Target as the engine:
    >
    >Select **ContextHub** as the engine if you are using ContextHub for targeting. See Configuring ContextHub for more information.
    <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
-   <!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub.](/help/sites-administering/contexthub-config.md)-->
+   <!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->

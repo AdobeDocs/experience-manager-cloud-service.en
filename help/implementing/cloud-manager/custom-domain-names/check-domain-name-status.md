@@ -29,7 +29,7 @@ Cloud Manager will verify domain ownership via the TXT value and displays one of
 
 * **Verified, Deployment Failed** - The TXT verification was successful, but the CDN deployment failed. 
 
-  * In such cases, please contact your Adobe representative.
+  * In such cases, contact your Adobe representative.
 
 * **Domain Verified & Deployed** - This status indicates that your custom domain name is ready to be used.
 
@@ -50,7 +50,7 @@ The following are some common domain name errors and their typical resolutions.
 
 ### Domain Not Installed Error {#domain-not-installed}
 
- This error may occur during domain validation of the TXT record even after you've checked that the record has been updated appropriately.
+ This error may occur during domain validation of the TXT record even after you have checked that the record has been updated appropriately.
 
 #### Error Cause {#cause}
 
