@@ -42,7 +42,7 @@ To create a CSV export:
 
 1. Open the **Sites** console, navigate to the required location if required.
    * The create **CSV Report** option is available when browsing the **Sites** console (in List view)
-   * It is an option of the **Create** drop down menu:
+   * It is an option of the **Create** drop-down menu:
 
      ![Create CSV option](/help/sites-cloud/authoring/assets/csv-create.png)
 

@@ -42,7 +42,7 @@ The next release is planned for July 15, 2021.
 
 ### What's New {#what-is-new-junecm}
 
-* Preview Service will be deployed on a rolling basis to all Programs. Customers are notified in-product when their Program is enabled for Preview Service. Refer to [Accessing Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) for more details.
+* Preview Service will be deployed on a rolling basis to all Programs. Customers are notified in-product when their Program is enabled for Preview Service. See [Accessing Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) for more details.
 
 * Maven Dependencies downloaded during the build step will now be cached between pipeline executions. This feature will be enabled for customers over the next several weeks.
 
@@ -54,15 +54,15 @@ The next release is planned for July 15, 2021.
 
 * The quality rule `ImmutableMutableMixCheck` has been updated to classify `/oak:index` nodes as being immutable. 
 
-* The quality rules `CQBP-84` and `CQBP-84--dependencies` have been consolidated into a single rule. As part of this consolidation, the scanning of dependencies more accurately identifies issues in third party dependencies which are being deployed to the AEM runtime.
+* The quality rules `CQBP-84` and `CQBP-84--dependencies` have been consolidated into a single rule. As part of this consolidation, the scanning of dependencies more accurately identifies issues in third-party dependencies which are being deployed to the AEM runtime.
 
 * To avoid confusion, the Publish AEM and Publish Dispatcher segment rows on the Environment Details page have been consolidated.
 
    ![Dispatcher environments](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* A new code quality rule has been added to validate the structure of `damAssetLucene` indexes. Refer to [Custom DAM Asset Lucene Oak Indexes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) for more details.
+* A new code quality rule has been added to validate the structure of `damAssetLucene` indexes. See [Custom DAM Asset Lucene Oak Indexes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) for more details.
 
-* Environment details page will now display multiple domain names for Publish and Preview services (as applicable). Refer to [Environment Details](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) to more details.
+* Environment details page will now display multiple domain names for Publish and Preview services (as applicable). See [Environment Details](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) to more details.
 
 ### Bug Fixes {#bug-fixes-junecm}
 

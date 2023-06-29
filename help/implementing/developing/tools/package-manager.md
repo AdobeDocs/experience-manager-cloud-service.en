@@ -27,7 +27,7 @@ Content packages created for AEM as a Cloud Service applications must have a cle
 
 >[!NOTE]
 >
->Packages can only contain content. Any functionality (for example, content stored under `/apps`) must be [deployed using your CI/CD pipeline in Cloud Manager.](/help/implementing/cloud-manager/deploy-code.md)
+>Packages can only contain content. Any functionality (for example, content stored under `/apps`) must be [deployed using your CI/CD pipeline in Cloud Manager](/help/implementing/cloud-manager/deploy-code.md).
 
 >[!IMPORTANT]
 >
@@ -37,7 +37,7 @@ Content packages created for AEM as a Cloud Service applications must have a cle
 >
 >Do not retry the installation if you see such an error. The installation is proceeding correctly in the background. If you do restart the installation some conflicts could be introduced by multiple concurrent import processes.
 
-For more details on how to manage packages for AEMaaCS, please review the document [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md) in the deploying user guide.
+For more details on how to manage packages for AEMaaCS, see [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md) in the deploying user guide.
 
 ## Package Size {#package-size}
 
@@ -51,7 +51,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 Since network traffic is variable and is always less than the advertised maximum theoretical value, try using an online internet connection speed test tool.
 
-Internet speeds are almost always different for uploads and downloads. Assuming that you will need to both upload and download packages, you should use the lower value (usually upload speed) in you calculation.
+Internet speeds are almost always different for uploads and downloads. Assuming that you must both upload and download packages, you should use the lower value (usually upload speed) in you calculation.
 
 ### Example {#example}
 
@@ -104,7 +104,7 @@ Package Manager is divided into four main functional areas:
 * **Activity Log** - This panel is minimized at first and expands to detail the activity of Package Manager such as when a package is built or installed. There are additional buttons in the Activity Log tab to:
   * **Clear Log**
   * **Show/Hide**
-* **Toolbar** - The toolbar contains refresh buttons for the Left Navigation Panel and Package list as well as buttons for searching, creating, and uploading packages.
+* **Toolbar** - The toolbar contains refresh buttons for the Left Navigation Panel and Package list and buttons for searching, creating, and uploading packages.
 
 ![Package Manager UI](assets/package-manager-ui.png)
 
@@ -188,8 +188,8 @@ When creating filters, you can define a path or use a regular expression to spec
 
 |Rule Type|Description|
 |---|---|
-|include|Including a directory will include that directory and all the files and folders in that directory (i.e. the entire subtree) but **will not** include other files or folders from under the specified root path.|
-|exclude|Excluding a directory will exclude that directory and all files and folders in that directory (i.e. the entire subtree).|
+|include|Including a directory will include that directory and all the files and folders in that directory (that is, the entire subtree) but **will not** include other files or folders from under the specified root path.|
+|exclude|Excluding a directory will exclude that directory and all files and folders in that directory (that is, the entire subtree).|
 
 Package filters are most often defined when you first [create the package.](#creating-a-new-package) However they can also be edited later, after which the package should be rebuilt to update its content based on the new filter definitions.
 
@@ -238,7 +238,7 @@ There are many actions that can be taken on a package.
 
    >[!TIP]
    >
-   >If your instance has a lot of packages, there might be a folder structure in place. In such cases, it is easier to navigate to the required target folder before creating the new package.
+   >If your instance has many packages, there might be a folder structure in place. In such cases, it is easier to navigate to the required target folder before creating the new package.
 
 1. In the **New Package** dialog, enter the following fields:
 

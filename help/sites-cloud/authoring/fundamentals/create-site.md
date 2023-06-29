@@ -13,4 +13,4 @@ Learn how administrators use AEM create a new site using site templates to defin
 
 Before content authors can create pages with new content, the site must first be created. The success of a site depends greatly on the consideration and planning initially given to the site structure, styling, and initial content. For this reason, initial site creation is generally performed by an AEM administrator.
 
-To learn more about how the use of site templates makes the site creation process fast and flexible, please refer to the [Creating a New Site administrator documentation.](/help/sites-cloud/administering/site-creation/create-site.md)
+To learn more about how the use of site templates makes the site creation process fast and flexible, see [Creating a New Site administrator documentation](/help/sites-cloud/administering/site-creation/create-site.md).

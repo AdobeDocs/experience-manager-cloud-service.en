@@ -80,7 +80,7 @@ This method is useful, for example, when your business logic requires fine-tunin
 
 ### Client-Side libraries (js,css) {#client-side-libraries}
 
-* When using AEM's Client-Side library framework, JavaScript and CSS code is generated in such a way that browsers can cache it indefinitely, since any changes manifest as new files with a unique path. In other words, HTML that references the client libraries are produced as needed so customers can experience new content as it is published. The cache-control is set to "immutable" or 30 days for older browsers who don't respect the "immutable" value.
+* When using AEM's Client-Side library framework, JavaScript and CSS code is generated in such a way that browsers can cache it indefinitely, since any changes manifest as new files with a unique path. In other words, HTML that references the client libraries are produced as needed so customers can experience new content as it is published. The cache-control is set to "immutable" or 30 days for older browsers who do not respect the "immutable" value.
 * see the section [Client-side libraries and version consistency](#content-consistency) for additional details.
 
 ### Images and any content large enough to be stored in blob storage {#images}
@@ -318,7 +318,7 @@ Also, from the table, you can observe that:
 
 * SCD API is needed when every event must be guaranteed, for example, syncing with an external system that requires accurate knowledge. If there is a publish tier upscaling event at the time of the invalidation call, an extra event is raised when each new publish processes the invalidation.
 
-* Using the Replication API isn't a common use case, but can be used in cases where the trigger to invalidate the cache comes from the publish tier and not the author tier. This method might be useful if Dispatcher TTL is configured.
+* Using the Replication API is not a common use case, but can be used in cases where the trigger to invalidate the cache comes from the publish tier and not the author tier. This method might be useful if Dispatcher TTL is configured.
 
 In conclusion, if you are looking to invalidate the Dispatcher cache, the recommended option is to use the SCD API Invalidate action from Author. Also, you can also listen for the event so you can then trigger further downstream actions.
 
@@ -449,7 +449,7 @@ The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-If there is a concern that the dispatcher cache isn't clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
+If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
 The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 

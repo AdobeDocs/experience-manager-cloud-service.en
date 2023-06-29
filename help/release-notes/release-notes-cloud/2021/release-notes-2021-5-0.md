@@ -39,7 +39,7 @@ The following release (2021.6.0) will be on June 28, 2021.
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* You can download the assets shared using the Link Share functionality. This download now uses an asynchronous service that offers faster and and uninterrupted downloads, even for very large downloads. See [download assets](/help/assets/download-assets-from-aem.md#link-share-download).
+* You can download the assets shared using the Link Share functionality. This download now uses an asynchronous service that offers faster and uninterrupted downloads, even for very large downloads. See [download assets](/help/assets/download-assets-from-aem.md#link-share-download).
 
   ![Download inbox](/help/assets/assets/download-inbox.png)
 
@@ -100,7 +100,7 @@ The next release is planned for June 03, 2021.
 
 ### What's New {#what-is-new-may}
 
-* The PackageOverlaps quality rule now detects cases where the same package was deployed multiple times, i.e. in multiple embedded locations, in the same deployed package set.
+* The PackageOverlaps quality rule now detects cases where the same package was deployed multiple times, that is, in multiple embedded locations, in the same deployed package set.
 
 * The repository endpoint in the Public API now includes the Git URL.
 
@@ -140,7 +140,7 @@ The Release Date for Content Transfer Tool v1.4.6 is May 27, 2021.
 
 ### What's New {#what-is-new-ctt-latest}
 
-* New logging statement was added to the quickstart's error log, if the user doesn't have execute permission on the Java executable.
+* New logging statement was added to the quickstart's error log, if the user does not have run permission on the Java executable.
 
 * When a user deletes a migration set from the CTT user interface, where an extraction was performed, the `tmp` folder associated with that migration set is deleted to save space.
 

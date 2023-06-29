@@ -38,7 +38,7 @@ The following table illustrates the maintenance tasks that are available at the 
   <tr>
     <td>Version Purge</td>
     <td>Adobe</td>
-    <td>For existing environments (those created before June 1, 2023), purging is disabled and will not be enabled in the future unless explicitly enabled by the customer, at which time they may also configure it with custom values.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->New environments (those created starting June 1, 2023) will have purging enabled by default with the values below, with customers being able to configure with custom values.
+    <td>For existing environments (those created before June 1, 2023), purging is disabled and will not be enabled in the future unless explicitly enabled by the customer, at which time they may also configure it with custom values.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->New environments (those created starting June 1, 2023) will have purging enabled by default with the values below, with customers being able to configure with custom values.
      <ol>
        <li>Versions older than 30 days are removed</li>
        <li>The most recent 5 versions in the last 30 days are kept</li>
@@ -120,7 +120,7 @@ The following table illustrates the maintenance tasks that are available at the 
     <p><strong>windowStartTime=HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the weekly Maintenance Window should begin executing.</p>
     <p><strong>windowEndTime=HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Weekly Maintenance Window should stop executing if they haven't already completed.</p>
     <p>A maintenance task cannot be executed more than once during this timeframe.</p>
-    <p><strong>windowScheduleWeekdays= Array of 2 values from 1-7 (for example, [5,5])</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.</p>
+    <p><strong>windowScheduleWeekdays= Array of two values from 1&ndash;7 (for example, [5,5])</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.</p>
     </td>
   </tr>
   <tr>
@@ -132,7 +132,7 @@ The following table illustrates the maintenance tasks that are available at the 
     <p><strong>windowStartTime=HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Monthly Maintenance Window should begin executing.</p>
     <p><strong>windowEndTime=HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Monthly Maintenance Window should stop executing if they haven't already completed.</p>
     <p>A maintenance task cannot be executed more than once during this timeframe.</p>
-    <p><strong>windowScheduleWeekdays=Array of 2 values from 1-7 (for example, [5,5])</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.</p>
+    <p><strong>windowScheduleWeekdays=Array of two values from 1&ndash;7 (for example, [5,5])</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 to schedule on the first week of the month or 1 to schedule on the last week of the month. The absence of a value would effectively schedule jobs on the day governed by windowScheduleWeekdays (every month).</p>
     </td>
     </tr>

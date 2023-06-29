@@ -283,7 +283,7 @@ However, there is also a simpler way to manage this:
 
 So far, you have implemented mappings together with the logic in your components to use these mappings when outputting URLs onto our pages.
 
-The final piece to the puzzle is handling these shortened URLs when they come in to the Dispatcher, which is where `mod_rewrite` comes into play. The biggest benefit to using `mod_rewrite` is that the URLs are mapped back to their long form *before* they are sent to the Dispatcher module. This means that the Dispatcher requests the long URL from the publish server and cache it accordingly. Therefore, any Dispatcher flushes that come in from the publish server are able to successfully invalidate this content.
+The final piece to the puzzle is handling these shortened URLs when they come in to the Dispatcher, which is where `mod_rewrite` comes into play. The largest benefit to using `mod_rewrite` is that the URLs are mapped back to their long form *before* they are sent to the Dispatcher module. This means that the Dispatcher requests the long URL from the publish server and cache it accordingly. Therefore, any Dispatcher flushes that come in from the publish server are able to successfully invalidate this content.
 
 To implement these rules, you can add `RewriteRule` elements under your virtual host in the Apache HTTP Server configuration. If you want to expand the shortened URLs from the earlier example, you can implement a rule that looks like this:
 
@@ -350,7 +350,7 @@ Disallow: /
 
 Alternately, on a live environment, you could choose to disallow certain paths that you do not want indexed.
 
-The caveat with placing the `robots.txt` file at the site root is that Dispatcher flush requests may clear this file out and URL mappings likely place the site root somewhere different from the `DOCROOT` as defined in the Apache HTTP Server configuration. For this reason, it is common to place this file on the author instance at the site root and replicate it to the publish instance.
+The caveat with placing the `robots.txt` file at the site root is that Dispatcher flush requests may clear out this file and URL mappings likely place the site root somewhere different from the `DOCROOT` as defined in the Apache HTTP Server configuration. For this reason, it is common to place this file on the author instance at the site root and replicate it to the publish instance.
 
 ### Building an XML sitemap on AEM {#building-an-xml-sitemap-on-aem}
 
@@ -461,7 +461,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 
 ```
 
-Furthermore, the functionality implemented for XML sitemaps can be used in different use cases as well, for example to add the canonical link or the language alternates to a page's head. Please refer to the [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
+Furthermore, the functionality implemented for XML sitemaps can be used in different use cases as well, for example to add the canonical link or the language alternates to a page's head. See the [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
 
 ### Creating 301 redirects for legacy URLs {#creating-redirects-for-legacy-urls}
 
@@ -474,7 +474,7 @@ Make sure to check the additional resources section that follows for instruction
 
 ## Additional Resources {#additional-resources}
 
-For more information, please see the following additional resources:
+For more information, see the following additional resources:
 
 <!--
 * [Resource Mapping](/help/sites-deploying/resource-mapping.md)

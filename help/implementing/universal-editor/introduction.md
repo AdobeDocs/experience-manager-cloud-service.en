@@ -23,7 +23,7 @@ The Universal Editor can be instrumented for any implementation, for any content
 
 Because experiences can be built in many different ways, any implementation can use the Universal Editor so authors can perform in-context editing.
 
-Users often think that a headless implementation limits the authors to editing all content in a form-based UI, but his isn't true with the Universal Editor
+Users often think that a headless implementation limits the authors to editing all content in a form-based UI, but this is not true with the Universal Editor
 
 The requirements for an implementation to use the Universal Editor is straight-forward and supports the following:
 
@@ -75,7 +75,7 @@ A marketing practitioner wants to create content that is tailored to the layout 
 
 It is important to note that the Universal Editor is a work in progress and some of the capabilities laid out in this document are a vision of the final editor and not necessarily representative of its current capabilities.
 
-Please speak with your Adobe contact for details on the upcoming features planned for the Universal Editor.
+Speak with your Adobe contact for details on the upcoming features planned for the Universal Editor.
 
 ## Additional Resources {#additional-resources}
 

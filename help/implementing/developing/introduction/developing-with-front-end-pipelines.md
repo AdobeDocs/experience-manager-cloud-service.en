@@ -52,7 +52,7 @@ The following steps are generally recommended when it's necessary to perform cha
 
 1. The back-end team first sets up a development environment with the new HTML and/or JSON output.
    1. Via the full-stack pipeline, they deploy the code required to render the new HTML and/or JSON output that is desired.
-   1. If that's to an environment that the front-end team didn't previously have access to, then the following steps must be performed.
+   1. If that's to an environment that the front-end team did not previously have access to, then the following steps must be performed.
       1. URL: The front-end team must know the URL of that development environment.
       1. ACL: The front-end team must be given a local AEM user with something similar to "Contributors" rights.
       1. Git: The front-end team must have a separate Git location for the front-end module that specifically targets that development environment.

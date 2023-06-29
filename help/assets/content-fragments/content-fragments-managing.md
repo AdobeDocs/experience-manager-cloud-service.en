@@ -123,7 +123,7 @@ To open your fragment for editing:
 
 >[!CAUTION]
 >
->To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
+>To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues.
 
 1. Use the **Assets** console to navigate to the location of your content fragment.
 1. Open the fragment for editing, by either:
@@ -211,7 +211,7 @@ The editor has various options:
 
   >[!CAUTION]
   >
-  >To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
+  >To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues. 
 
   >[!NOTE]
   >
@@ -219,13 +219,13 @@ The editor has various options:
 
   >[!CAUTION]
   >
-  >In addition to simply saving your changes, the actions also update any references and ensures that the Dispatcher is flushed as required. These changes can take time to process. Due to this, there can be a performance impact on a large/complex/heavily-loaded system.
+  >In addition to simply saving your changes, the actions also update any references and ensures that the Dispatcher is flushed as required. These changes can take time to process. Due to this time, there can be a performance impact on a large/complex/heavily-loaded system.
   >
-  >Please bear this in mind when using **Save & close** and then quickly re-entering the fragment editor to make and save further changes.
+  >Keep this process in mind when using **Save & close** and then quickly reentering the fragment editor to make and save more changes.
 
 * **Close**
 
-  Will exit the editor without saving the latest changes (i.e made since the last **Save**).
+  Will exit the editor without saving the latest changes (that is, made since the last **Save**).
 
 While editing your content fragment AEM automatically creates versions to ensure that prior content can be restored if you cancel your changes (using **Close** without saving):
 
@@ -256,7 +256,7 @@ Once you have created the Master content, you can create, and manage, [Variation
 
 ## Associating Content with your Fragment {#associating-content-with-your-fragment}
 
-You can also [associate content](/help/assets/content-fragments/content-fragments-assoc-content.md) with a fragment. This provides a connection so that assets (i.e. images) can be (optionally) used with the fragment when it is added to a content page.
+You can also [associate content](/help/assets/content-fragments/content-fragments-assoc-content.md) with a fragment. This provides a connection so that assets (that is, images) can be (optionally) used with the fragment when it is added to a content page.
 
 ## Viewing and Editing the Metadata (Properties) of your Fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 

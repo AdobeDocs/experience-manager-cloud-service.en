@@ -37,25 +37,25 @@ Follow the steps below to use thumbnail in videos:
 1. Select the channel. On the action bar, click **Edit** to open the editor.
 
 
-   ![Edit button on action bar.](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+   ![Edit button on action bar](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png).
 
 1. Add or edit an existing video component, as shown in the figure below.
 
-   ![Highlighted image of a video asset.](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![Highlighted image of a video asset](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png).
 
 1. Add or edit an existing video component, as shown in the figure below.
 
 1. Select the video and click the Configure (*wrench*) icon to open the video properties.
 
-   ![Selected video asset image with arrow pointing to the Configure icon, portrayed as a wrench. on the toolbar.](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+   ![Selected video asset image with arrow pointing to the Configure icon, portrayed as a wrench. on the toolbar](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
 
 1. The **Video** dialog box opens where you can view the **Thumbnail** drop zone.
 
-   ![Video dialog box showing image of video asset and the Thumbnail drop box.](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![Video dialog box showing image of video asset and the Thumbnail drop box](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
 
 1. Drag and drop an image from the asset picker to the **Thumbnail** drop zone and click **Done**.
    
-   ![Asset image picker shown behind the Video dialog box with image asset shown in the Thumbnail drop box.](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+   ![Asset image picker shown behind the Video dialog box with image asset shown in the Thumbnail drop box](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
 
 1. Click **Preview**.
 

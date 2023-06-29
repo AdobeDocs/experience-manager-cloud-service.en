@@ -79,7 +79,7 @@ To modify your content headlessly, AEM offers two robust APIs.
 * The GraphQL API allows you to create requests to access and deliver Content Fragments.
 * The Assets REST API allows you to create and modify Content Fragments (and other assets).
 
-You will learn about these APIs and how to use them in a later part of the AEM headless journey. Or refer to the [additional resources](#additional-resources) section below for additional documentation.
+You will learn about these APIs and how to use them in a later part of the AEM headless journey. Or see [additional resources](#additional-resources) section below for additional documentation.
 
 ## Headless Integration Levels {#integration-levels}
 
@@ -139,7 +139,7 @@ For any successful project, it is important to clearly define not only the requi
 
 It is important to have a clearly defined scope for the project. Scope informs acceptance criteria and allows you to establish a definition of done.
 
-The first question you must ask is "What am I trying to achieve with AEM Headless?" The answer should in general be that you have or will have in the future an experience application that you've built with your own development tools not with AEM. This experience application could be a mobile app, a web site, or any other end-user customer facing experience application. The goal for using AEM Headless is to feed your experience application with content that is created, stored, and managed in AEM with state-of-the-art APIs that would call AEM Headless to fetch content or even fully CRUD content directly from your experience application. If this is not what you are looking to do, you probably want to [go back to the AEM documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) and find the section that better suits what you want to accomplish.
+The first question you must ask is "What am I trying to achieve with AEM Headless?" The answer should in general be that you have or will have in the future an experience application that you have built with your own development tools not with AEM. This experience application could be a mobile app, a web site, or any other end-user customer facing experience application. The goal for using AEM Headless is to feed your experience application with content that is created, stored, and managed in AEM with state-of-the-art APIs that would call AEM Headless to fetch content or even fully CRUD content directly from your experience application. If this is not what you are looking to do, you probably want to [go back to the AEM documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) and find the section that better suits what you want to accomplish.
 
 ### Roles and Responsibilities {#roles-responsibilities}
 
@@ -184,7 +184,7 @@ See the [additional resources](#additional-resources) section for additional doc
 Folder hierarchy can address two major concerns with regards to content management:
 
 * [Translation](#translation) - AEM manages translation of content by maintaining copies of content in locale-specific folders.
-* Organization - Folders are used to define a content hierarchy required to support translation needs as well as logically manage Content Fragments.
+* Organization - Folders are used to define a content hierarchy required to support translation needs and logically manage Content Fragments.
 
 AEM allows for a flexible content structure and a hierarchy can be arbitrarily large. However it is important to realize that any changes in folder structure may have unintended consequences for existing queries that [rely on the content path.](#developer) Therefore a well-defined hierarchy that is clearly set out in advance, can be helpful to your content authors.
 

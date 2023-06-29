@@ -28,21 +28,21 @@ In assessing your KPIs, make sure that:
 1.  The KPI specifically relates back to the solution (Experience Manager).
 1.  The KPI is closely tied to a goal that the executive team deems critically important.
 1.  That goal directly support a business objective championed by at least one C-level executive.
-1.  You have the baseline data you’ll need to compare the current situation with the results you’ll see after your Experience Manager launch.
+1.  You have the baseline data to compare the current situation with the results you see after your Experience Manager launch.
 1.  The KPI will track something that can feasibly be measured at regular intervals.
 
-Once you’ve confirmed that you have the right KPIs, you’ll need to figure out how and when you’ll report on each KPI to the relevant stakeholders.
+After you have confirmed that you have the right KPIs, you must figure out how and when you are going to report on each KPI to the relevant stakeholders.
 
 In defining your reporting process, consider the following questions:
 
-1.  Who is the audience for this KPI report? For each KPI, make sure you’ve identified an executive sponsor — someone who will hold you and the rest of the team accountable for that metric — as well as a broader list of people who should receive regular reports.
+1.  Who is the audience for this KPI report? For each KPI, make sure you have identified an executive sponsor — someone who can hold you and the rest of the team accountable for that metric — and a broader list of people who should receive regular reports.
 1.  How often will you report on this KPI?
 1.  How will this KPI be tracked? Who will pull the data? What data sources will that person or team use? Is there anything you can do right now to make that process easier?
 1.  What will the format of the report be?
 1.  How will the report be delivered?
 
-After your Experience Manager launch, a strong set of KPIs will quickly give you a sense of whether you’re on the right track. If you’re not meeting one of your KPIs, you’ll need to make adjustments in how your teams are using Experience Manager. If you quickly exceed one of your KPI targets, that’s something to celebrate — but then you’ll want to recalibrate your target to try to get an even better outcome.
+After your Experience Manager launch, a strong set of KPIs will quickly give you a sense of whether you are on the right track. If you are not meeting one of your KPIs, you must make adjustments in how your teams are using Experience Manager. If you quickly exceed one of your KPI targets, that is something to celebrate — but then you must recalibrate your target to try to get an even better outcome.
 
 >[!TIP]
 >
-> If you’d like additional help with your KPIs, please reach out to [Adobe Consulting Services](https://www.adobe.com/experience-cloud/consulting-services.html) or your implementation partner.
+> If need additional help with your KPIs, contact [Adobe Consulting Services](https://www.adobe.com/experience-cloud/consulting-services.html) or your implementation partner.

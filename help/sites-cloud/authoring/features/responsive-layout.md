@@ -12,7 +12,7 @@ This provides a paragraph system that allows you to position components within a
 The layout container:
 
 * Provides horizontal snap to grid, together with the ability to place components into the grid side-by-side and define when they should collapse/reflow.
-* Uses pre-defined breakpoints (for example, for phone, tablet, etc.) to allow you to define the required behavior of content for related devices/orientation.
+* Uses pre-defined breakpoints (for example, for phone, tablet, and so on) to allow you to define the required behavior of content for related devices/orientation.
   * For example, you can customize the component size or whether the component can be seen on specific devices.
 * Can be nested to allow column control.
 
@@ -62,7 +62,7 @@ AEM allows you to define layouts dependent on the width of the device:
   * The range of a breakpoint extends left until the next breakpoint.
   * You cannot select the breakpoint specifically, selecting a device and orientation will automatically select the appropriate breakpoint.
 
-The device **Desktop**, which does not have a specific width, relates to the default breakpoint (i.e. everything above the last configured breakpoint).
+The device **Desktop**, which does not have a specific width, relates to the default breakpoint (that is, everything above the last configured breakpoint).
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ To configure the layout of a responsive grid implemented with the Layout Contain
 * By using the [mode menu in the toolbar](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) and choosing **Layout** mode
   * Select the **Layout** mode just as you would switch to **Edit** mode or **Targeting** mode.
   * **Layout** mode remains persistent and you do not leave **Layout** mode until you select another mode via the mode selector.
-* When [editing an individual component.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
+* When [editing an individual component](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout).
   * By using the **Layout** option in the component's quick action menu, you can switch to **Layout** mode.
   * **Layout** mode persists while editing the component and reverts to **Edit** mode once focus changes to another component.
 

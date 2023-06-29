@@ -417,7 +417,7 @@ The flag can be set to any of the following values:
 
 * **FULL**: FDM performs the validation based on all constraints
 * **OFF**: No validation
-* **BASIC**: FDM performs the validation based on ‘required’ and ‘nullable’ constraints
+* **BASIC**: FDM performs the validation based on 'required' and 'nullable' constraints
 
 If no value is set for the `ValidationOptions`flag, **BASIC** validation is performed on the input data.
 
@@ -516,7 +516,7 @@ The following table lists the constraints for input data based on the data sourc
  </tbody> 
 </table>
 
-In this example, the input data is validated based on maximum, minimum, and required constraints defined in the Swagger file. The input data meets the validation criteria only if Order Id is present and its value is between 1 and 10.
+In this example, the input data is validated based on maximum, minimum, and required constraints defined in the Swagger file. The input data meets the validation criteria only if Order Id is present and its value is from 1&ndash;10.
 
 ```json
    parameters: [

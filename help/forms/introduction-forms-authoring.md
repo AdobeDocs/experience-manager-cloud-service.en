@@ -27,7 +27,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
-  Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
+  Adaptive Forms created with this option does not use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
 
   >[!NOTE]
   >

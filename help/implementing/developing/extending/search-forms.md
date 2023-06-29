@@ -129,7 +129,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Components</td>
-   <td>Allows an author to search/filter for pages that have a specific component on it. For example an image gallery.<br /> </td>
+   <td>Allows an author to search/filter for pages that have a specific component on it. For example, an image gallery.<br /> </td>
    <td>
     <ul>
      <li>Placeholder</li>

@@ -1,15 +1,15 @@
 ---
-title: ContextHub Javascript API Reference
-description: The ContextHub Javascript API is available to your scripts when the ContextHub component has been added to the page
+title: ContextHub JavaScript API Reference
+description: The ContextHub JavaScript API is available to your scripts when the ContextHub component has been added to the page
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 ---
-# ContextHub Javascript API Reference {#contexthub-javascript-api-reference}
+# ContextHub JavaScript API Reference {#contexthub-javascript-api-reference}
 
-The ContextHub Javascript API is available to your scripts when the [ContextHub component has been added to the page](adding-contexthub.md).
+The ContextHub JavaScript API is available to your scripts when the [ContextHub component has been added to the page](adding-contexthub.md).
 
 ## ContextHub Constants {#contexthub-constants}
 
-Constant values that the ContextHub Javascript API defines.
+Constant values that the ContextHub JavaScript API defines.
 
 ### Event Constants {#event-constants}
 
@@ -56,7 +56,7 @@ The following table lists the names of events that occur for the ContextHub UI.
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` |Fired when UI container gets initialized |`ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` |Indicates active UI mode |`/_/active-ui-mode` |
 
-## ContextHub Javascript API Reference {#contexthub-javascript-api-reference-2}
+## ContextHub JavaScript API Reference {#contexthub-javascript-api-reference-2}
 
 The ContextHub object provides access to all stores.
 
@@ -83,7 +83,7 @@ var geoloc = allStores.geolocation
 
 #### getStore(name) {#getstore-name}
 
-Retrieves a store as a Javascript object.
+Retrieves a store as a JavaScript object.
 
 ##### Parameters {#parameters-}
 
@@ -341,7 +341,7 @@ Resumes eventing for this store so that events are triggered. This function defi
 
 Adds a key/value pair to the store.
 
-Triggers the `data` event only if the value for the key is different than the value that is currently stored for the key. You can optionally prevent the triggering of the `data` event.
+Triggers the `data` event only if the value for the key is different from the value that is currently stored for the key. You can optionally prevent the triggering of the `data` event.
 
 The event data includes the store name, the key, the previous value, the new value, and the action type of `set`.
 
@@ -363,7 +363,7 @@ A `boolean` value:
 
 A store that contains JSON data. The data is retrieved from an external JSONP service, or optionally from a service that returns JSON data. Specify the service details using the [`init`](#init-name-config) function when you create an instance of this class.
 
-The store uses in-memory persistance (Javascript variable). Store data is available only during the lifetime of the page.
+The store uses in-memory persistance (JavaScript variable). Store data is available only during the lifetime of the page.
 
 ContextHub.Store.JSONPStore extends [ContextHub.Store.Core](#contexthub-store-core) and inherits the functions of that class.
 
@@ -435,7 +435,7 @@ initializes the `ContextHub.Store.JSONPStore` object.
 * **`config`:** (Object) An object that contains the service property. The JSONPStore object uses the properties of the `service` object to construct the URL of the JSONP service:
   * `eventDeferring`: 32.
   * `eventing`: The ContextHub.Utils.Eventing object for this store. The default value is the `ContextHub.eventing` object.
-  * `persistence`: The ContextHub.Utils.Persistence object for this store. By default, memory persistence is used (Javascript object).
+  * `persistence`: The ContextHub.Utils.Persistence object for this store. By default, memory persistence is used (JavaScript object).
   * `service`: (Object)
     * `host`: (String) The server name or IP address.
     * `jsonp`: (Boolean) A value of true indicates that the service is a JSONP service, false otherwise. When true, the `{callback: "ContextHub.Callbacks.*Object.name*}`object is added to `service.params`.
@@ -483,7 +483,7 @@ Resolves the given parameter.
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` extends [ContextHub.Store.Core](#contexthub-store-core) so it inherits all of the functions of that class. The data in this store is persisted using in-memory persistance (Javascript object).
+`ContextHub.Store.SessionStore` extends [ContextHub.Store.Core](#contexthub-store-core) so it inherits all of the functions of that class. The data in this store is persisted using in-memory persistance (JavaScript object).
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -767,7 +767,7 @@ Parses a string value as JSON and converts it into a javascript object.
 
 ##### Returns {#returns-parse}
 
-A Javascript object.
+A JavaScript object.
 
 ##### Example {#example-parse}
 
@@ -789,7 +789,7 @@ Object {
 
 #### stringify(data) {#stringify-data}
 
-Serializes Javascript values and objects into string values of JSON format.
+Serializes JavaScript values and objects into string values of JSON format.
 
 ##### Parameters {#parameters-stringify}
 
@@ -863,7 +863,7 @@ The value that corresponds with the key. When the key has child keys, this funct
 
 ##### Example {#example-getitem-2}
 
-Consider the following Javascript object:
+Consider the following JavaScript object:
 
 ```javascript
 myObject {
@@ -1039,7 +1039,7 @@ A copy of the `tree` object that includes the `key`/ `value` pair.
 
 ##### Example {#example-setitem-2}
 
-Consider the following Javascript code:
+Consider the following JavaScript code:
 
 ```javascript
 var myObject = {
