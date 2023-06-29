@@ -77,9 +77,9 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ## Deploying Custom Index Definitions {#deploying-custom-index-definitions}
 
-To illustrate the deployment of a customized version of the out-of-the-box index `damAssetLucene-8`, we will provide a step-by-step guide. In this example, we will rename it to `damAssetLucene-8-custom-1`. The deployment process involves the following steps:
+To illustrate the deployment of a customized version of the out-of-the-box index `damAssetLucene-8`, we will provide a step-by-step guide. In this example, we will rename it to `damAssetLucene-8-custom-1`. Then the process is as follows:
 
-1. Create a new folder with the updated index name within the ui.apps directory: 
+1. Create a new folder with the updated index name in the `ui.apps` directory: 
     * Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
 2. Add a configuration file `.content.xml` with the custom configurations inside the newly created folder. Below is an example of a customization:
