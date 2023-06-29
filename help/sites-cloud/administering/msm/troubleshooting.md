@@ -74,7 +74,7 @@ As an alternative you can either:
 
 ### Why do I see Live Copy pages with the suffix "_msm_moved"? {#moved-pages}
 
-If a blueprint page is rolled out, it will either update its Live Copy page or create a new Live Copy page if it didn't exist yet (for example, when it is rolled out for the first time or the Live Copy page was manually deleted).
+If a blueprint page is rolled out, it either updates its Live Copy page or creates a Live Copy page if it did not exist yet (for example, when it is rolled out for the first time or the Live Copy page was manually deleted).
 
 In this latter case however, if a page without a `cq:LiveRelationship` property exists with the same name, this page is renamed accordingly, before the Live Copy page is created.
 

@@ -73,7 +73,7 @@ This unique delivery method ensures that consistent quality experiences are sent
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media delivers the same primary image to different mediums in different sizes and formats.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+![Adobe Dynamic Media delivers the same primary image to different mediums in different sizes and formats](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
 _Adobe Dynamic Media ensures consistent, quality experiences are delivered to any screen, regardless of size or bandwidth._
 
 As you read on, you are going to learn more about why this concept of "one primary asset file, endless possibilities" is important.
@@ -176,7 +176,7 @@ Another use case that Dynamic Media solves for is video. Video is complex. It is
 
 Customers come to Dynamic Media with the following issue that they are hoping to solve:
 
-"_We've got the video, and we spent a large amount of money creating it. But we've shied away from placing it on pages, or delivering it, because from our testing, we really can't guarantee the quality of the video, or if it's really going to play. And ultimately, that affects our brands and potentially our role to even conversion._"
+"_We have the video, and we spent a large amount of money creating it. But we shied away from placing it on pages, or delivering it, because from our testing, we cannot guarantee the quality of the video, or if it's really going to play. And ultimately, that affects our brands and potentially our role to even conversion._"
 
 Dynamic Media's solution is to take that one primary video file, and let Dynamic Media make all the sizes through its transcoding process. Then, pair that with Dynamic Media's intelligent video player. This workflow guarantees that whether you are using that video on your main landing page, or on a category or product detail page, it is going to be consistent throughout and delivered with high quality.
 
@@ -259,7 +259,7 @@ The rendition above is live! [Try it](https://s7d1.scene7.com/s7viewers/html5/Zo
 
 ## Optional - Learn more
 
-Part I of this journey covered the basics of a variety of Dynamic Media topics. If you'd like to learn more about what you just read, use the materials below to explore concepts in greater detail. Otherwise, you can continue with Part II of your journey. See [What's next in this Dynamic Media Journey](#whats-next).  
+Part I of this journey covered the basics of a variety of Dynamic Media topics. If you want to learn more about what you just read, use the materials below to explore concepts in greater detail. Otherwise, you can continue with Part II of your journey. See [What's next in this Dynamic Media Journey](#whats-next).  
 
 _Dynamic Media Help topics_
 
@@ -285,7 +285,7 @@ _Dynamic Media viewers_
 
 ## What's next in this Dynamic Media Journey {#whats-next}
 
-In part II on this journey, you'll examine Dynamic Media URLs a little closer to better understand what is going on when an asset is delivered. You'll also learn more about the fundamentals behind creating image presets to render assets, and learn about Image sets, Spin sets, and Mixed Media sets and how they are created. 
+In part II on this journey, you examine Dynamic Media URLs a little closer to better understand what is going on when an asset is delivered. You also learn more about the fundamentals behind creating image presets to render assets, and learn about Image sets, Spin sets, and Mixed Media sets and how they are created. 
 
 Take me to [Dynamic Media Journey: The Basics, Part II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 

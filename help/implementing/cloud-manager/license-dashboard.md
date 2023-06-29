@@ -43,7 +43,7 @@ Each section summarizes what is available and how it is currently used, if at al
 
 >[!TIP]
 >
->Refer to [Admin Console overview](https://helpx.adobe.com/enterprise/using/admin-console.html) to learn how to manage your Adobe entitlements across your entire organization from Admin Console.
+>See [Admin Console overview](https://helpx.adobe.com/enterprise/using/admin-console.html) to learn how to manage your Adobe entitlements across your entire organization from Admin Console.
 
 ## Frequently Asked Questions {#faq}
 

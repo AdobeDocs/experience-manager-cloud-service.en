@@ -8,7 +8,7 @@ exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
 This section describes how to add Screens as an add-on to a new program in Cloud Manager.
 
 >[!NOTE]
->Refer to [Understanding Programs and Program Types](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) to learn more about Cloud Manager programs.
+>See [Understanding Programs and Program Types](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) to learn more about Cloud Manager programs.
 
 ## Objective {#objective}
 
@@ -21,7 +21,7 @@ Follow the steps below to add Screens as an add-on to a new program in Cloud Man
 1. Navigate to [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Refer to [Introduction to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en) to learn about Cloud Manager.
+   >See [Introduction to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en) to learn about Cloud Manager.
 
 1. Click on **Add Program** from the Cloud Manager landing page.
 

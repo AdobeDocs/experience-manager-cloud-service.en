@@ -14,7 +14,7 @@ Lean about AEM as a Cloud Service's support for integrations with Adobe Campaign
 >
 >This document describes integrating Adobe Campaign with AEM as a Cloud Service, the cloud-native AEM solution.
 >
->For details on integrating Adobe Campaign with AEM 6.5, the on premises or AMS-hosted AEM solution, [please see this document.](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html)
+>For details on integrating Adobe Campaign with AEM 6.5, the on premises or AMS-hosted AEM solution, [see this document](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html).
 
 ## Integrating with Adobe Campaign Classic {#acc}
 

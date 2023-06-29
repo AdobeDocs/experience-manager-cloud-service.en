@@ -20,7 +20,7 @@ The Style System provides a unified solution to both the template author's and c
 * Template authors can define style classes in the content policy of components.
 * Content authors can then select these classes from a drop-down list when editing the component on a page so they can apply the corresponding styles.
 
-The style class is then inserted on the decoration wrapper element of the component so that the component developer doesn't need to be concerned with handling the styles beyond providing their CSS rules.
+The style class is then inserted on the decoration wrapper element of the component so that the component developer does not need to be concerned with handling the styles beyond providing their CSS rules.
 
 ## Overview {#overview}
 
