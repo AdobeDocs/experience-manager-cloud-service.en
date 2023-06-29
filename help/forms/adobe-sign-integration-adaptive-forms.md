@@ -106,9 +106,6 @@ Now, you can [use add Adobe Acrobat Sign fields to an Adaptive Form](working-wit
 
 ## Connect AEM Forms with Adobe Acrobat Sign Solutions for Government {#adobe-acrobat-sign-for-government}
 
-[!BADGE pre-release documentation]{type=Caution tooltip="Yellow status"} 
-<span class="preview"> This section contains pre-release documentation and subject to change.</span>
-
 Connecting AEM Forms with Adobe Acrobat Sign Solutions for Government is a multi-step process. It involves: 
 
 * Creating redirect URL for your AEM instances
