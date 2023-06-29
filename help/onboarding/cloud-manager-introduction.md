@@ -7,7 +7,7 @@ exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 
 Cloud Manager is an essential component of AEM as a Cloud Service and serves as the single entry point for your team. Its purpose-built CI/CD pipelines are equipped to ensure thorough testing and highest code quality to deliver exceptional experiences. To ensure customers can quickly start their projects, Cloud Manager provides everything required in a self-service manner including the ability to create your cloud resources and environments and access your git repositories. These features support enterprise development setups so teams can work towards committing changes frequently, rapidly delivering exceptional digital experiences, and accelerating time-to-value.
 
-Your system administrator is responsible for setting up your Cloud Manager team which will include individuals that will create your cloud resources and developers. For more information about how to set up and scale your enterprise development team and see how AEM as a Cloud Service can support your development process, please refer to the document [Enterprise Team Development Setup for AEM as a Cloud Service.](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+Your system administrator is responsible for setting up your Cloud Manager team which will include individuals that will create your cloud resources and developers. For more information about how to set up and scale your enterprise development team and see how AEM as a Cloud Service can support your development process, see [Enterprise Team Development Setup for AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md).
 
 ## Navigating to Cloud Manager's Overview Page {#navigate-cloud-manager}
 
@@ -17,7 +17,7 @@ Follow these steps to navigate to Cloud Manager.
 
 1. Select the program from Cloud Manager's **Programs and Products** page to launch the **Overview** page.
 
-You can also navigate to Cloud Manager’s Programs and Products page from Adobe Experience Cloud home page by following these steps.
+You can also navigate to Cloud Manager's Programs and Products page from Adobe Experience Cloud home page by following these steps.
 
 1. Navigate to Adobe Experience Cloud at [`https://experience.adobe.com`](https://experience.adobe.com) and login using your Adobe ID.
 
@@ -77,9 +77,9 @@ Your cloud environments are created, accessed and viewed via Cloud Manager. Thes
 
 >[!TIP]
 >
-> Refer to the video [Using Adobe Cloud Manager Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) an overview of the available environments.
+> See the video [Using Adobe Cloud Manager Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) an overview of the available environments.
 >
->Refer to the document [Manage Environments](/help/implementing/cloud-manager/manage-environments.md) to learn more about types of environment a user can create and how the user can create an environment.
+>See [Manage Environments](/help/implementing/cloud-manager/manage-environments.md) to learn more about types of environment a user can create and how the user can create an environment.
 
 ### AEM Authoring Service {#author-services}
 

@@ -20,7 +20,7 @@ The Repository Modernizer creates a compatible AEM Cloud Service project structu
 * `all` package is a container package that contains the subpackages `ui.apps` and `ui.content`.
 
 >[!NOTE]
->The Project structure is based on *Archetype 24* for packages and their `pom.xml/filter.xml files`. Refer to [Archetype 24](https://github.com/adobe/aem-project-archetype) for more details.
+>The Project structure is based on *Archetype 24* for packages and their `pom.xml/filter.xml files`. See [Archetype 24](https://github.com/adobe/aem-project-archetype) for more details.
 
 ## Using the Repository Modernizer {#using-repo-modernizer}
 

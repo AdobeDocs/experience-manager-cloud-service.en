@@ -10,7 +10,7 @@ AEM offers a Sites preview service lets developers and content authors preview a
 
 It facilitates previewing page experiences that would not be otherwise visible from the author environment, like page transitions and other publish side only content.
 
-For more details about the preview environments, please see the document [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+For more details about the preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Publishing Content to Preview {#publishing-content-to-preview}
 

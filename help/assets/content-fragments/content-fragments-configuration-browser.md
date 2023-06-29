@@ -54,7 +54,7 @@ To use certain [Content Fragment functionality](#creating-a-content-fragment-mod
 
    1. Specify a **Title**.
    1. The **Name** becomes the node name in the repository.
-      * It is automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/implementing/developing/introduction/naming-conventions.md)
+      * It is automatically generated based on the title and adjusted according to [AEM naming conventions](/help/implementing/developing/introduction/naming-conventions.md).
       * You can adjust it if necessary.
    1. To enable their use select 
       * **Content Fragment Models** 

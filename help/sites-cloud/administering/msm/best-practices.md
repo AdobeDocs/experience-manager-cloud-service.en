@@ -81,7 +81,7 @@ When creating language masters keep in mind the following:
     * Check with your translation service provider for more information.
     * An alternative approach for creating and translating language masters is to use language copies in conjunction with AEM's out-of-the-box translation integration framework.
 
-For more information see [Translating Content for Multilingual Sites](/help/sites-cloud/administering/translation/overview.md) and the [Translation Best Practices.](/help/sites-cloud/administering/translation/best-practices.md)
+For more information see [Translating Content for Multilingual Sites](/help/sites-cloud/administering/translation/overview.md) and the [Translation Best Practices](/help/sites-cloud/administering/translation/best-practices.md).
 
 ## Structure Changes and Rollouts {#structure-changes-and-rollouts}
 
@@ -138,7 +138,7 @@ In addition to customizing rollout actions, MSM also allows you to customize nod
 
 ## Further Information {#further-information}
 
-Refer to the following articles for more details on MSM and Live Copy.
+See the following articles for more details on MSM and Live Copy.
 
 * [Creating and Synchronizing Live Copies](creating-live-copies.md)
 * [Live Copy Overview Console](live-copy-overview.md)

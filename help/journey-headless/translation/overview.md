@@ -47,7 +47,7 @@ The following are the personas that interact in this journey.
 |Administrator|Manages the base setup and configuration of AEM|The translation specialist works with the administrator to make configuration changes needed for translation such as installing a translation connector.|
 |Content Architect|Analyzes the requirements for the data that must be delivered headlessly and defines the structure for this data|Translation specialists work with the content architect to define the organization of the content so it can be easily translated.|
 
-Information in this journey can of course be useful to all personas, but some information may be superfluous to certain roles. Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/documentation-journeys.md#journeys)
+Information in this journey can of course be useful to all personas, but some information may be superfluous to certain roles. Stay tuned for [forthcoming journeys covering additional roles](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## The Headless Translation Journey {#the-journey}
 

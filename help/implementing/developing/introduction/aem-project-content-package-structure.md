@@ -553,7 +553,7 @@ In the reactor project's `pom.xml`, add any necessary third-party public Maven r
   ...
   <repository>
       <id>3rd-party-repository</id>
-      <name>Public 3rd Party Repository</name>
+      <name>Public Third-Party Repository</name>
       <url>https://repo.3rdparty.example.com/...</url>
       <releases>
           <enabled>true</enabled>

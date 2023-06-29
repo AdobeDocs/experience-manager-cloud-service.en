@@ -430,7 +430,7 @@ Similarly, information that requires distinguishing between different sounds (fo
 
 >[!NOTE]
 >
->For requirements related to alternatives to color, refer to [Use of Color](#use-of-color).
+>For requirements related to alternatives to color, see [Use of Color](#use-of-color).
 
 #### How to Meet - Sensory Characteristics (1.3.3) {#how-to-meet-sensory-characteristics}
 

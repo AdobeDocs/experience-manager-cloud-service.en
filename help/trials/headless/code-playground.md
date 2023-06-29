@@ -114,4 +114,4 @@ This query yields a JSON response that includes images, and the `resultToDom()` 
 
 ![Result of the adventures-all query and the resultToDom rendering function](assets/do-not-localize/adventures-all-query-result.png)
 
-Now that you've done the work to build the models and queries, your content team can take over with ease. In the next module, you show off the content author flow.
+Now that you have done the work to build the models and queries, your content team can take over with ease. In the next module, you show off the content author flow.
