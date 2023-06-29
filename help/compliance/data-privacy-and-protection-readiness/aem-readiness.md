@@ -1,6 +1,6 @@
 ---
 title: Data Protection and Data Privacy Regulations - Adobe Experience Manager as a Cloud Service Readiness
-description: Learn about Adobe Experience Manager as a Cloud Service support for the various Data Protection and Data Privacy Regulations. These regulations include the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act, and how to comply when implementing a new AEM as a Cloud Service project.
+description: Learn about Adobe Experience Manager as a Cloud Service support for the various Data Protection and Data Privacy Regulations, and how to comply when implementing a new AEM as a Cloud Service project. These regulations include the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 ---
 # Adobe Experience Manager as a Cloud Service Readiness for Data Protection and Data Privacy Regulations {#aem-readiness-for-data-protection-and-data-privacy-regulations}
@@ -13,9 +13,12 @@ exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 
 >[!NOTE]
 >
->For more information about Adobe's response to privacy issues, and what this privacy means for you as an Adobe customer, see [Adobe's Privacy Center](https://www.adobe.com/privacy.html). 
+>For more information about Adobe's responses to privacy issues, and what these responses mean for you as an Adobe customer, see [Adobe's Privacy Center](https://www.adobe.com/privacy.html). 
 
-Adobe is providing documentation and procedures (with APIs when available) for the customer privacy administrator or AEM administrator. This documentation helps administrators handle data protection and data privacy requests and help Adobe customers be compliant with these regulations. The procedures documented let customers run the regulatory requests manually or call into APIs, where available, from an external portal or service. 
+To help Adobe customers be compliant with these regulations, Adobe is providing documentation and procedures (with APIs when available) for the customer privacy administrators and AEM administrators:
+
+* The documentation helps administrators handle data protection, and data privacy requests. 
+* The procedures documented let customers run the regulatory requests manually or make API calls, where available, from an external portal or service. 
 
 >[!CAUTION]
 >
@@ -51,7 +54,7 @@ For Adobe Experience Manager as a Cloud Service:
 
 * The instances, and applications that run on them, are owned and operated by the customer. 
 
-  * This ownership effectively means that the customer manages the regulatory roles, including Business Entities and Service Provider, Data Controller, and Data Processor, among others. 
+  * Ownership effectively means that the customer manages the regulatory roles, including Business Entities and Service Provider, Data Controller, and Data Processor, among others. 
 
   * The Adobe Experience Platform Privacy Service is not part of the workflow for AEM, as illustrated in the diagram below. 
 
@@ -63,9 +66,9 @@ For Adobe Experience Manager as a Cloud Service:
 
 * AEM does not include any out-of-the-box tooling to support the privacy requests workflow. 
 
-  * Adobe provides documentation and procedures for the customer's privacy administrator, or AEM administrator, or both, enabling them to manually run requests related to the privacy regulations.
+  * Adobe provides documentation and procedures for the customer's privacy administrator, AEM administrator, or both, enabling them to manually run requests related to the privacy regulations.
 
-Adobe is providing procedures for handling privacy requests related to Access, Delete, and Opt-Out for Adobe Experience Manager as a Cloud Service. Sometimes, there are APIs available that can be called from a customer developed portal or scripts to help with automation.
+Adobe is providing procedures for handling privacy requests related to Access, Delete, and Opt-Out for Adobe Experience Manager as a Cloud Service. For some cases there are APIs available that can be called from a customer developed portal, or scripts to help with automation.
 
 The following diagram illustrates what a privacy request workflow might look like (illustrated using Adobe Experience Manager 6.5):
 
@@ -85,7 +88,7 @@ See [AEM Sites Readiness for Data Protection and Data Privacy Regulations](/help
 
 ## Adobe Experience Manager as a Cloud Service Integration with Adobe Target & Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-These integrations on Adobe Experience Manager as a Cloud Service are with data protection and privacy (for example, GDPR) ready services. No personal data from Adobe Target or Adobe Analytics is stored in AEM in relation to the integrations.
+Integrations of Adobe Experience Manager as a Cloud Service with Adobe Target and Adobe Analytics are implemented with data protection and privacy (for example, GDPR) ready services. No personal data from Adobe Target or Adobe Analytics is stored in AEM in relation to the integrations.
 For more information, see:
 
 * [Adobe Target - Privacy Overview](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)  

@@ -14,7 +14,7 @@ These environments interact to let you make content available on your website so
 
 The author environment provides the mechanisms for creating, updating, and reviewing this content before actually publishing it:
 
-* An author creates and reviews the content. Content can be of many different types such as pages, assets, and publications.
+* An author creates and reviews the content. Content can be of many different types, including pages, assets, and publications.
 * This content will, at some point, be published to your website.
 
 ![Diagram of author, publisher, and dispatchers](/help/sites-cloud/authoring/assets/author-publish.png)
