@@ -95,11 +95,11 @@ Perform the following steps to validate the connection between your Experience M
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-    ![](assets/test-bpconfig1.png)
+    ![Configure AEM Assets as a Cloud Service with Brand Portal](assets/test-bpconfig1.png)
 
    A Brand Portal distribution agent (**[!UICONTROL bpdistributionagent0]**) is created under **[!UICONTROL Publish to Brand Portal]**.
 
-   ![](assets/test-bpconfig2.png)
+   ![Create distribution agent](assets/test-bpconfig2.png)
 
 
 1. Click **[!UICONTROL Publish to Brand Portal]** to open the distribution agent. 
@@ -115,11 +115,11 @@ Perform the following steps to validate the connection between your Experience M
    >
    >It is recommended to review the failures and  clear the **error-queue** periodically.  
 
-   ![](assets/test-bpconfig3.png)
+   ![Processing queue for the distribution of assets](assets/test-bpconfig3.png)
 
 1. To verify the connection between Experience Manager Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
 
-   ![](assets/test-bpconfig4.png)
+   ![Verify connection between AEM and Brand Portal](assets/test-bpconfig4.png)
 
    A message appears that your *test package is successfully delivered*.
 
@@ -150,7 +150,7 @@ Let us now publish an asset from Experience Manager Assets to Brand Portal and s
 1. Follow the steps (from 1 to 4) as shown in the **Test connection** section and navigate to the distribution agent page.
 1. Click **[!UICONTROL Logs]** to view the processing and error logs.
 
-   ![](assets/test-bpconfig5.png)
+   ![Processing and error logs](assets/test-bpconfig5.png)
 
 The distribution agent has generated the following logs:
 
