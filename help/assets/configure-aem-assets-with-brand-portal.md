@@ -95,7 +95,7 @@ Perform the following steps to validate the connection between your Experience M
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-    ![Configure AEM Assets as a Cloud Service with Brand Portal](assets/test-bpconfig1.png)
+    ![Navigate to distribution](assets/test-bpconfig1.png)
 
    A Brand Portal distribution agent (**[!UICONTROL bpdistributionagent0]**) is created under **[!UICONTROL Publish to Brand Portal]**.
 
