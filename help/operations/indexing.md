@@ -29,11 +29,11 @@ Limitations:
 
 ## How to Use {#how-to-use}
 
-Defining indexes can comprise of these three use cases:
+Index definitions can be categorized into three primary use cases, as follows:
 
-1. Adding a new customer index definition.
-2. Updating an existing index definition. This effectively means adding a new version of an existing index definition.
-3. Removing an existing index that is redundant or obsolete.
+1. **Add** a new custom index definition.
+2. **Update** an existing index definition by adding a new version. 
+3. **Remove** an index definition that is no longer necessary.
 
 For both points 1 and 2 above, you need to create a new index definition as part of your custom code base in the respective Cloud Manager release schedule. For more information, see the [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md) documentation.
 
@@ -41,9 +41,9 @@ For both points 1 and 2 above, you need to create a new index definition as part
 
 An index definition can fall into one of the following categories:
 
-1. Out-of-the-box index. For instance: `/oak:index/cqPageLucene-2` or `/oak:index/damAssetLucene-8`.
+1. Out-of-the-box (OOTB) index. For instance: `/oak:index/cqPageLucene-2` or `/oak:index/damAssetLucene-8`.
 
-2. Customization of an out-of-the-box index. These are indicated by appending `-custom-` followed by a numerical identifier to the original index name. For example: `/oak:index/damAssetLucene-8-custom-1`. 
+2. Customization of an OOTB index. These are indicated by appending `-custom-` followed by a numerical identifier to the original index name. For example: `/oak:index/damAssetLucene-8-custom-1`. 
 
 3. Fully custom index: It is possible to create an entirely new index from scratch. Their name must have a prefix to avoid naming conflicts. For instance: `/oak:index/acme.product-1-custom-2`, where the prefix is `acme.`
 
@@ -55,7 +55,7 @@ A complete set of guidelines is in the [Preparing the New Index Definition](#pre
 >
 >If customizing an out-of-the-box index, for example `damAssetLucene-8`, please copy the latest out-of-the-box index definition from a *Cloud Service environment* using the CRX DE Package Manager (`/crx/packmgr/`) . Rename it to `damAssetLucene-8-custom-1` (or higher), and add your customizations inside the XML file. This ensures that the required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-8/tika` is required in the customized index of the cloud service. It doesn't exist on the Cloud SDK.
 
-For customizations of an OOTB index prepare a new index definition package that contains the actual index definition that follows this naming pattern:
+For customizations of an OOTB index prepare a new package that contains the actual index definition that follows this naming pattern:
 
 `<indexName>-<productVersion>-custom-<customVersion>`
 
@@ -82,7 +82,7 @@ To illustrate the deployment of a customized version of the out-of-the-box index
 1. Create a new folder with the updated index name within the ui.apps directory: 
     * Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. Add a configuration file named `.content.xml` with the custom configurations inside the newly created folder. Below is an example of a customization:
+2. Add a configuration file `.content.xml` with the custom configurations inside the newly created folder. Below is an example of a customization:
 
     Filename: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
@@ -150,7 +150,7 @@ To illustrate the deployment of a customized version of the out-of-the-box index
 
 ## Project Configuration
 
-We strongly recommend to use `version >= 1.3.2` of the Jackrabbit `filevault-package-maven-plugin`. To incorporate it into your project, the below configurations must be added to the top-level `pom.xml` file if they are not already present:
+We strongly recommend to use version >= `1.3.2` of the Jackrabbit `filevault-package-maven-plugin`. To incorporate it into your project, add the below configurations to the top-level `pom.xml` file if they are not already present:
 
 
 ```xml
